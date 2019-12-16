@@ -276,7 +276,7 @@
           \******************************/
         /*! no static exports found */
         /***/ (function (module, exports, __webpack_require__) {
-            module.exports = __webpack_require__(/*! C:\Users\13\Desktop\streethok\src\styles.css */ "./src/styles.css");
+            module.exports = __webpack_require__(/*! C:\Users\God\Desktop\street\src\styles.css */ "./src/styles.css");
             /***/ 
         })
     }, [[3, "runtime"]]]);
