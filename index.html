@@ -26,12 +26,22 @@
     $(document).ready(function() {
       $('.close-img').hide();
       $('.nav-div').hide();
+      $('.nav-div').slideUp();
       $('.open').click(function() {		
           $('.nav-div').slideDown("slow");
           $('.open').hide();
           $('.close-img').show();					
       });
-  
+      $('.nav-links-text').click(function(){
+      $('.nav-div').slideUp()
+    });
+    $('.imge-logo-header').click(function(){
+      $('.nav-div').slideUp()
+      $('.open').show();
+          $('.close-img').hide();	
+    });
+
+    
       $('.close-img').click(function() {		
           $('.nav-div').slideUp("slow");
           
@@ -43,11 +53,17 @@
           $('.close-img').hide();	
           $('.open').show();		
       });
+
+
+    
     });
     </script>
 
 </head>
 <body>
   <app-root></app-root>
+
+
+
 <script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
 </html>

@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-nav></app-nav>\n\n<router-outlet></router-outlet>\n<app-footer></app-footer>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-nav></app-nav>\n\n<router-outlet></router-outlet>\n<app-footer></app-footer>\n<!-- <app-dashboard></app-dashboard> -->");
 
 /***/ }),
 
@@ -59,6 +59,71 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container chats-main-container\">\n   <div class=\"wrapper-chat-container\">\n    <h3 class=\"property-detail-h3\">My Chats</h3>\n      <div class=\"chat-container\">\n          <img src=\"/assets/Images/Henrik_Urdal-removebg-preview.png\">\n          <p class=\"chat-p\">Jhon doe<br>\n         <span class=\"user-class\">Seller</span></p>\n      </div>\n\n\n   </div>\n\n\n\n\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/dashboard/dashboard.component.html":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/dashboard/dashboard.component.html ***!
+  \*****************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Top navigation -->\n<nav class=\"navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow\">\n  <a class=\"navbar-brand col-sm-3 col-md-2 mr-0\" routerLink=\"/register-student\">\n    <img\n      class=\"brand-logo\"\n      src=\"assets/Images/logo.png\"\n      alt=\"positronX.io Logo\"\n    />\n    <span class=\"dasboard-text\">Dashboard</span>\n  </a>\n</nav>\n<!-- Sidebar navigation -->\n<div class=\"container-fluid\">\n  <div class=\"row\">\n    <nav class=\"col-md-2 d-md-block bg-light sidebar\">\n      <div class=\"sidebar-sticky\">\n        <ul class=\"nav flex-column\">\n          <li class=\"nav-item\">\n            <a class=\"nav-link active\">\n              <i class=\"fas fa-user\"></i>User Profile\n            </a>\n          </li>\n          <!-- Calling SignOut() Api from AuthService -->\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" (click)=\"authService.GoogleAuth()\">\n              <i class=\"fas fa-sign-out-alt\"></i>Log in\n            </a>\n          </li>\n          <!-- Calling SignOut() Api from AuthService -->\n          <li class=\"nav-item\">\n            <a class=\"nav-link\" (click)=\"authService.SignOut()\">\n              <i class=\"fas fa-sign-out-alt\"></i>Log out\n            </a>\n          </li>\n        </ul>\n      </div>\n    </nav>\n    <!-- Main content -->\n    <main role=\"main\" class=\"col-md-9 ml-sm-auto col-lg-10 px-4\">\n      <div class=\"inner-adjust\">\n        <div class=\"pt-3 pb-2 mb-3 border-bottom\">\n          <h1 class=\"h2\">User Profile</h1>\n        </div>\n        <!-- Show user data when logged in -->\n        <div class=\"row\" *ngIf=\"authService.userData as user\">\n          <div class=\"col-md-12\">\n            <div class=\"media\">\n              <img\n                class=\"align-self-start mr-5 img-thumbnail rounded-circle\"\n                src=\"{{\n                  user.photoURL ? user.photoURL : '/assets/dummy-user.png'\n                }}\"\n                alt=\"{{ user.displayName }}\"\n              />\n              <div class=\"media-body\">\n                <h1>\n                  Hello:\n                  <strong>{{\n                    user.displayName ? user.displayName : \"User\"\n                  }}</strong>\n                </h1>\n                <p>\n                  User ID: <strong>{{ user.uid }}</strong>\n                </p>\n                <p>\n                  Email: <strong>{{ user.email }}</strong>\n                </p>\n                <p>\n                  Email Verified: <strong>{{ user.emailVerified }}</strong>\n                </p>\n              </div>\n            </div>\n          </div>\n        </div>\n      </div>\n    </main>\n  </div>\n</div>\n\n\n\n\n\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/forgot-password/forgot-password.component.html":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/forgot-password/forgot-password.component.html ***!
+  \*****************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"displayTable\">\n    <div class=\"displayTableCell\">\n      <div class=\"authBlock\">\n        <h3>Reset Password</h3>\n  \n        <p class=\"text-center\">Please enter your email address to request a password reset.</p>\n  \n        <div class=\"formGroup\">\n          <input type=\"email\" class=\"formControl\" placeholder=\"Email Address\" #passwordResetEmail required>\n        </div>\n  \n        <!-- Calling ForgotPassword from AuthService Api -->\n        <div class=\"formGroup\">\n          <input type=\"submit\" class=\"btn btnPrimary\" value=\"Reset Password\" (click)=\"authService.ForgotPassword(passwordResetEmail.value)\">\n        </div>\n      </div>\n  \n      <div class=\"redirectToLogin\">\n        <span>Go back to ? <span class=\"redirect\" routerLink=\"/sign-in\">Log In</span></span>\n      </div>\n  \n    </div>\n  </div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/sign-in/sign-in.component.html":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/sign-in/sign-in.component.html ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"displayTable\">\n    <div class=\"displayTableCell\">\n  \n      <div class=\"authBlock\">\n        <h3>Sign In</h3>\n        <div class=\"formGroup\">\n          <input type=\"text\" class=\"formControl\" placeholder=\"Username\" #userName required>\n        </div>\n  \n        <div class=\"formGroup\">\n          <input type=\"password\" class=\"formControl\" placeholder=\"Password\" #userPassword required>\n        </div>\n  \n        <!-- Calling SignIn Api from AuthService -->\n        <div class=\"formGroup\">\n          <input type=\"button\" class=\"btn btnPrimary\" value=\"Log in\" (click)=\"authService.SignIn(userName.value, userPassword.value)\">\n        </div>\n  \n        <div class=\"formGroup\">\n          <span class=\"or\"><span class=\"orInner\">Or</span></span>\n        </div>\n  \n        <!-- Calling GoogleAuth Api from AuthService -->\n        <div class=\"formGroup\">\n          <button type=\"button\" class=\"btn googleBtn\" (click)=\"authService.GoogleAuth()\">\n            <i class=\"fab fa-google-plus-g\"></i>\n            Log in with Google\n          </button>\n        </div>\n  \n        <div class=\"forgotPassword\">\n          <span routerLink=\"/forgot-password\">Forgot Password?</span>\n        </div>\n      </div>\n  \n      <div class=\"redirectToLogin\">\n        <span>Don't have an account?<span class=\"redirect\" routerLink=\"/register-user\"> Sign Up</span></span>\n      </div>\n  \n    </div>\n  </div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/sign-up/sign-up.component.html":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/sign-up/sign-up.component.html ***!
+  \*************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"displayTable\">\n    <div class=\"displayTableCell\">\n  \n      <div class=\"authBlock\">\n        <h3>Sign Up</h3>\n  \n        <div class=\"formGroup\">\n          <input type=\"email\" class=\"formControl\" placeholder=\"Email Address\" #userEmail required>\n        </div>\n  \n        <div class=\"formGroup\">\n          <input type=\"password\" class=\"formControl\" placeholder=\"Password\" #userPwd required>\n        </div>\n  \n        <div class=\"formGroup\">\n          <input type=\"button\" class=\"btn btnPrimary\" value=\"Sign Up\" (click)=\"authService.SignUp(userEmail.value, userPwd.value)\">\n        </div>\n  \n        <div class=\"formGroup\">\n          <span class=\"or\"><span class=\"orInner\">Or</span></span>\n        </div>\n  \n        <!-- Continue with Google -->\n        <div class=\"formGroup\">\n          <button type=\"button\" class=\"btn googleBtn\" (click)=\"authService.GoogleAuth()\">\n            <i class=\"fab fa-google-plus-g\"></i>\n            Continue with Google\n          </button>\n        </div>\n  \n        <!-- Continue with Facebook -->\n        <div class=\"formGroup\">\n          <button type=\"button\" class=\"btn facebookBtn\" (click)=\"authService.FacebookAuth()\">\n            <i class=\"fab fa-facebook\"></i>\n            Continue with Facebook\n          </button>\n        </div>\n      </div>\n  \n      <div class=\"redirectToLogin\">\n        <span>Already have an account? <span class=\"redirect\" routerLink=\"/sign-in\">Log In</span></span>\n      </div>\n    </div>\n  \n  </div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/verify-email/verify-email.component.html":
+/*!***********************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/components/verify-email/verify-email.component.html ***!
+  \***********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"displayTable\">\n    <div class=\"displayTableCell\">\n  \n      <div class=\"authBlock\">\n        <h3>Thank You for Registering</h3>\n  \n        <div class=\"formGroup\" *ngIf=\"authService.userData as user\">\n          <p class=\"text-center\">We have sent a confirmation email to <strong>{{user.email}}</strong>.</p>\n          <p class=\"text-center\">Please check your email and click on the link to verfiy your email address.</p>\n        </div>\n        \n        <!-- Calling SendVerificationMail() method using authService Api -->\n        <div class=\"formGroup\">\n          <button type=\"button\" class=\"btn btnPrimary\" (click)=\"authService.SendVerificationMail()\">\n            <i class=\"fas fa-redo-alt\"></i>\n            Resend Verification Email\n          </button>\n        </div>\n  \n      </div>\n  \n      <div class=\"redirectToLogin\">\n        <span>Go back to?<span class=\"redirect\" routerLink=\"/sign-in\"> Sign in</span></span>\n      </div>\n  \n    </div>\n  </div>\n");
 
 /***/ }),
 
@@ -110,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container form-containers  \">\n<div class=\"forms-container\">\n    <div class=\"row\">\n        <div class=\"col-12 \">\n            <nav>\n                <div class=\"nav nav-tabs nav-fill\" id=\"nav-tab\" role=\"tablist\">\n                    <a class=\"nav-item nav-link active\" id=\"nav-home-tab\" data-toggle=\"tab\" href=\"#nav-home\" role=\"tab\"\n                        aria-controls=\"nav-home\" aria-selected=\"true\">Personal<br> Details</a>\n                    <a class=\"nav-item nav-link\" id=\"nav-profile-tab\" data-toggle=\"tab\" href=\"#nav-profile\" role=\"tab\"\n                        aria-controls=\"nav-profile\" aria-selected=\"false\">Property <br>Details</a>\n                    <a class=\"nav-item nav-link\" id=\"nav-contact-tab\" data-toggle=\"tab\" href=\"#nav-contact\" role=\"tab\"\n                        aria-controls=\"nav-contact\" aria-selected=\"false\">Optional<br> Details</a>\n\n                </div>\n            </nav>\n            <!--Pesonal Detail Tab-->\n            <div class=\"tab-content py-3 px-3 mr-2 ml-2 \" id=\"nav-tabContent\">\n                <div class=\"tab-pane fade show active\" id=\"nav-home\" role=\"tabpanel\" aria-labelledby=\"nav-home-tab\">\n                    <h4 class=\"mt-4 forms-heading\">Personal Details</h4>\n                    <p class=\"forms-star\">*required</p>\n                    <form action=\"/action_page.php\">\n                        <div class=\"form-group\">\n                            <label for=\"email\">Tiitle*</label>\n                            <input type=\"text\" class=\"form-control\" id=\"Tittle\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">First Name*</label>\n                            <input type=\"text\" class=\"form-control\" id=\"Fname\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Last Name*</label>\n                            <input type=\"text\" class=\"form-control\" id=\"lname\" required>\n                        </div>\n\n\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Email Address*</label>\n                            <input type=\"email\" class=\"form-control\" id=\"email\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Date of Birth*</label>\n                            <input type=\"date\" class=\"form-control\" id=\"email\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Enter A Password*</label>\n                            <input type=\"password\" class=\"form-control\" id=\"psswd\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Enter Password Again*</label>\n                            <input type=\"password\" class=\"form-control\" id=\"psswd1\" required>\n                        </div>\n                        <div class=\"forms-or\">\n                             <p class=\"form-or-p\">or</p>\n\n                        </div>\n                        <div class=\"social-login text-center\">\n                            <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\n                            <div class=\"social-button mt-4\">\n                                <button type=\"button\" class=\"btn btn-facebook \">Facebook</button>\n                                <button type=\"button\" class=\"btn btn-google ml-4\">Google+</button>\n                            </div>\n                            <div class=\"input-group mb-3 mt-3\">\n                                <div class=\"input-group-prepend\">\n                                    <i class=\"fa fa-user input-group-text\" aria-hidden=\"true\"></i>\n                                </div>\n                                <input type=\"text\" class=\"form-control\" placeholder=\"Username\" id=\"usr\" name=\"username\">\n                            </div>\n\n                            <div class=\"input-group-prepend\">\n                                <i class=\"fa fa-lock input-group-text\" aria-hidden=\"true\"></i>\n                                <input type=\"Password\" class=\"form-control\" placeholder=\"Password\" id=\"usr\"\n                                    name=\"username\">\n                            </div>\n                        \n                            <div class=\"input-group-prepend other-option\">\n                                <label class=\"checkbox\">\n                                    <input type=\"checkbox\" value=\"remember-me\">Remember Me\n                                </label>\n                                <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n                            </div>\n                            <button type=\"button\" class=\"btn btn-social-login\">Login</button>\n\n                        </div>\n                        <div class=\"form-group mt-4\">\n                            <label for=\"pwd\">Financial Position*</label>\n                            <div class=\"dropdown\">\n\n                                <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                    <span class=\"text-dropdown\">Mortgage Free</span>\n                                </button>\n                                <div class=\"dropdown-menu\">\n                                    <a class=\"dropdown-item\" href=\"#\">Mortgage Free</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Mortgage to be Arranged</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Mortgage Arranged</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Cash Buyer</a>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"form-group mt-4\">\n                            <label for=\"pwd\">Chain Status*</label>\n                            <div class=\"dropdown\">\n\n                                <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                    <span class=\"text-dropdown\">First Time Buyer</span>\n                                </button>\n                                <div class=\"dropdown-menu\">\n                                    <a class=\"dropdown-item active\" href=\"#\">First Time Buyer</a>\n                                    <a class=\"dropdown-item\" href=\"#\">In Chain(Sellinng to buy)</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Chain-Free</a>\n\n                                </div>\n                            </div>\n                        </div>\n                      \n                    </form>\n                    <div class=\"endind-button mt-5\">\n                        <button type=\"button\" class=\"btn btn-back\" >Back</button>\n                        <button type=\"button\" class=\"btn btn-next\" routerLink=\"/confirmation\">Next</button>\n                    </div>\n                </div>\n               \n                <!--Property Detail Tab-->\n                <div class=\"tab-pane fade\" id=\"nav-profile\" role=\"tabpanel\" aria-labelledby=\"nav-profile-tab\">\n                   <p >Search by Address</p>\n                   <form action=\"/action_page.php\">\n                    <div class=\"form-group\">\n                        <label for=\"email\">Address 1*</label>\n                        <input type=\"text\" class=\"form-control\" id=\"Address\" required>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"pwd\">Town/City*</label>\n                        <input type=\"text\" class=\"form-control\" id=\"Town\" required>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"pwd\">State/Provience/Country</label>\n                        <input type=\"text\" class=\"form-control\" id=\"state\" >\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <label for=\"pwd\">Postcode*</label>\n                        <input type=\"number\" class=\"form-control\" id=\"postcode\" required>\n                    </div>\n                    <div class=\"form-group mt-4\">\n                            <label for=\"pwd\">Country*</label>\n                            <div class=\"dropdown\">\n\n                                <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                    <span class=\"text-dropdown\">United Kingdom</span>\n                                </button>\n                                <div class=\"dropdown-menu\">\n                                    <a class=\"dropdown-item active\" href=\"#\">Austria</a>\n                                    <a class=\"dropdown-item\" href=\"#\">India</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Australia</a>\n\n                                </div>\n                            </div>\n                        </div>\n\n                        <div class=\"form-group\">\n                                <label for=\"pwd\">Address Name</label>\n                                <input type=\"number\" class=\"form-control\" id=\"postcode\">\n                            </div>\n\n                            <div class=\"form-group mt-4\">\n                                    <label for=\"pwd\">Property type*</label>\n                                    <div class=\"dropdown\">\n        \n                                        <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                            <span class=\"text-dropdown\">Flat</span>\n                                        </button>\n                                        <div class=\"dropdown-menu\">\n                                            <a class=\"dropdown-item active\" href=\"#\">Flat</a>\n                                            <a class=\"dropdown-item\" href=\"#\">Farm</a>\n                                            <a class=\"dropdown-item\" href=\"#\">Cottage</a>\n        \n                                        </div>\n                                    </div>\n                                </div>\n        \n                       \n\n                         \n                \n            </form>\n        </div>\n\n\n\n\n\n\n\n\n\n\n\n                <!--Optional Detail tab-->\n                <div class=\"tab-pane fade\" id=\"nav-contact\" role=\"tabpanel\" aria-labelledby=\"nav-contact-tab\">\n                    <h4 class=\"mt-4 forms-heading\">Optional Details</h4>\n                    <div class=\"form-group mt-4\">\n                        <label for=\"pwd\">Type*</label>\n                        <div class=\"dropdown\">\n\n                            <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                <span class=\"text-dropdown\">Buying to Live</span>\n                            </button>\n                            <div class=\"dropdown-menu\">\n                                <a class=\"dropdown-item\" href=\"#\">Buying to Live</a>\n                                <a class=\"dropdown-item\" href=\"#\">Buying as Investment</a>\n                                <a class=\"dropdown-item\" href=\"#\">Buying to Let</a>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"form-group mt-4\">\n                        <label for=\"pwd\">Position*</label>\n                        <div class=\"dropdown\">\n\n                            <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                <span class=\"text-dropdown\">Cash Buyer</span>\n                            </button>\n                            <div class=\"dropdown-menu\">\n                                <a class=\"dropdown-item active\" href=\"#\">Cash Buyerr</a>\n                                <a class=\"dropdown-item active\" href=\"#\">First Time Buyer</a>\n                                <a class=\"dropdown-item\" href=\"#\">Selling To Move</a>\n                                <a class=\"dropdown-item\" href=\"#\">Mortgage To be Arranged</a>\n                                <a class=\"dropdown-item\" href=\"#\">Mortgage Arranged</a>\n                                <a class=\"dropdown-item\" href=\"#\">Mortgage Free</a>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"endind-button mt-5\">\n                        <button type=\"button\" class=\"btn btn-back\">Back</button>\n                        <button type=\"button\" class=\"btn btn-next\">Next</button>\n                    </div>\n                </div>\n\n            </div>\n\n        </div>\n    </div>\n\n</div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container form-containers  \">\n<div class=\"forms-container\">\n    <div class=\"row\">\n        <div class=\"col-12 \">\n            <nav>\n                <div class=\"nav nav-tabs nav-fill\" id=\"nav-tab\" role=\"tablist\">\n                    <a class=\"nav-item nav-link active\" id=\"nav-home-tab\" data-toggle=\"tab\" href=\"#nav-home\" role=\"tab\"\n                        aria-controls=\"nav-home\" aria-selected=\"true\">Personal<br> Details</a>\n                    <a class=\"nav-item nav-link\" id=\"nav-profile-tab\" data-toggle=\"tab\" href=\"#nav-profile\" role=\"tab\"\n                        aria-controls=\"nav-profile\" aria-selected=\"false\">Property <br>Details</a>\n                    <a class=\"nav-item nav-link\" id=\"nav-contact-tab\" data-toggle=\"tab\" href=\"#nav-contact\" role=\"tab\"\n                        aria-controls=\"nav-contact\" aria-selected=\"false\">Optional<br> Details</a>\n\n                </div>\n            </nav>\n            <div class=\"social-login text-center mt-3 p-2\" *ngIf=\"!isLoggedIn\">\n                <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\n                <div class=\"social-button mt-4\">\n                <button type=\"button\" class=\"btn btn-facebook \" (click)=\"authService.FacebookAuth()\">Facebook</button>\n                    <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">Google+</button>\n                </div>\n                <div class=\"input-group mb-3 mt-3\">\n                    <div class=\"input-group-prepend\">\n                        <i class=\"fa fa-user input-group-text\" aria-hidden=\"true\"></i>\n                    </div>\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Enter email\"  #userEmail required>\n                </div>\n\n                <div class=\"input-group-prepend\">\n                    <i class=\"fa fa-lock input-group-text\" aria-hidden=\"true\"></i>\n                    <input type=\"Password\" class=\"form-control\" placeholder=\"Password\" #userPassword required>\n                </div>\n            \n                <div class=\"input-group-prepend other-option\">\n                    <label class=\"checkbox\">\n                        <input type=\"checkbox\" value=\"remember-me\">Remember Me\n                    </label>\n                    <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n                </div>\n                <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignIn(userEmail.value,userPassword.value)\">Login</button>\n                <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignUp(userEmail.value,userPassword.value)\">Sign Up</button>\n\n            </div>\n            <!--Pesonal Detail Tab-->\n            <div class=\"tab-content py-3 px-3 mr-2 ml-2 \" id=\"nav-tabContent\">\n                <div class=\"tab-pane fade show active\" id=\"nav-home\" role=\"tabpanel\" aria-labelledby=\"nav-home-tab\">\n                    <h4 class=\"mt-4 forms-heading\">Personal Details</h4>\n                    <p class=\"forms-star\">*required</p>\n                    <form action=\"/action_page.php\">\n                        <div class=\"form-group\">\n                            <label for=\"email\">Tiitle*</label>\n                            <input type=\"text\" class=\"form-control\" id=\"Tittle\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">First Name*</label>\n                            <input type=\"text\" class=\"form-control\" id=\"Fname\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Last Name*</label>\n                            <input type=\"text\" class=\"form-control\" id=\"lname\" required>\n                        </div>\n\n\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Email Address*</label>\n                            <input type=\"email\" class=\"form-control\" id=\"email\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Date of Birth*</label>\n                            <input type=\"date\" class=\"form-control\" id=\"dob\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Enter A Password*</label>\n                            <input type=\"password\" class=\"form-control\" id=\"psswd\" required>\n                        </div>\n                        <div class=\"form-group\">\n                            <label for=\"pwd\">Enter Password Again*</label>\n                            <input type=\"password\" class=\"form-control\" id=\"psswd1\" required>\n                        </div>\n                        <!-- <div class=\"forms-or\" *ngIf=\"!isLoggedIn\">\n                             <p class=\"form-or-p\">or</p>\n\n                        </div> -->\n                        <!-- <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n                            <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\n                            <div class=\"social-button mt-4\">\n                            <button type=\"button\" class=\"btn btn-facebook \" (click)=\"authService.FacebookAuth()\">Facebook</button>\n                                <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">Google+</button>\n                            </div>\n                            <div class=\"input-group mb-3 mt-3\">\n                                <div class=\"input-group-prepend\">\n                                    <i class=\"fa fa-user input-group-text\" aria-hidden=\"true\"></i>\n                                </div>\n                                <input type=\"text\" class=\"form-control\" placeholder=\"Username\" id=\"suser\" name=\"username\">\n                            </div>\n\n                            <div class=\"input-group-prepend\">\n                                <i class=\"fa fa-lock input-group-text\" aria-hidden=\"true\"></i>\n                                <input type=\"Password\" class=\"form-control\" placeholder=\"Password\" id=\"passwd\"\n                                    name=\"username\">\n                            </div>\n                        \n                            <div class=\"input-group-prepend other-option\">\n                                <label class=\"checkbox\">\n                                    <input type=\"checkbox\" value=\"remember-me\">Remember Me\n                                </label>\n                                <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n                            </div>\n                            <button type=\"button\" class=\"btn btn-social-login\">Login</button>\n\n                        </div> -->\n                        <div class=\"form-group mt-4\">\n                            <label for=\"pwd\">Financial Position*</label>\n                            <div class=\"dropdown\">\n\n                                <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                    <span class=\"text-dropdown\">Mortgage Free</span>\n                                </button>\n                                <div class=\"dropdown-menu\">\n                                    <a class=\"dropdown-item\" href=\"#\">Mortgage Free</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Mortgage to be Arranged</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Mortgage Arranged</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Cash Buyer</a>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"form-group mt-4\">\n                            <label for=\"pwd\">Chain Status*</label>\n                            <div class=\"dropdown\">\n\n                                <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                    <span class=\"text-dropdown\">First Time Buyer</span>\n                                </button>\n                                <div class=\"dropdown-menu\">\n                                    <a class=\"dropdown-item active\" href=\"#\">First Time Buyer</a>\n                                    <a class=\"dropdown-item\" href=\"#\">In Chain(Sellinng to buy)</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Chain-Free</a>\n\n                                </div>\n                            </div>\n                        </div>\n                      \n                    </form>\n                    <div class=\"endind-button mt-5\">\n                        <button type=\"button\" class=\"btn btn-back\" >Back</button>\n                        <button type=\"button\" class=\"btn btn-next\" routerLink=\"/confirmation\">Next</button>\n                    </div>\n                </div>\n               \n                <!--Property Detail Tab-->\n                <div class=\"tab-pane fade\" id=\"nav-profile\" role=\"tabpanel\" aria-labelledby=\"nav-profile-tab\">\n                   <p >Search by Address</p>\n                   <form action=\"/action_page.php\">\n                    <div class=\"form-group\">\n                        <label for=\"email\">Address 1*</label>\n                        <input type=\"text\" class=\"form-control\" id=\"Address\" required>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"pwd\">Town/City*</label>\n                        <input type=\"text\" class=\"form-control\" id=\"Town\" required>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"pwd\">State/Provience/Country</label>\n                        <input type=\"text\" class=\"form-control\" id=\"state\" >\n                    </div>\n\n\n                    <div class=\"form-group\">\n                        <label for=\"pwd\">Postcode*</label>\n                        <input type=\"number\" class=\"form-control\" id=\"postcode\" required>\n                    </div>\n                    <div class=\"form-group mt-4\">\n                            <label for=\"pwd\">Country*</label>\n                            <div class=\"dropdown\">\n\n                                <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                    <span class=\"text-dropdown\">United Kingdom</span>\n                                </button>\n                                <div class=\"dropdown-menu\">\n                                    <a class=\"dropdown-item active\" href=\"#\">Austria</a>\n                                    <a class=\"dropdown-item\" href=\"#\">India</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Australia</a>\n\n                                </div>\n                            </div>\n                        </div>\n\n                        <div class=\"form-group\">\n                                <label for=\"pwd\">Address Name</label>\n                                <input type=\"number\" class=\"form-control\" id=\"addressname\">\n                            </div>\n\n                            <div class=\"form-group mt-4\">\n                                    <label for=\"pwd\">Property type*</label>\n                                    <div class=\"dropdown\">\n        \n                                        <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                            <span class=\"text-dropdown\">Flat</span>\n                                        </button>\n                                        <div class=\"dropdown-menu\">\n                                            <a class=\"dropdown-item active\" href=\"#\">Flat</a>\n                                            <a class=\"dropdown-item\" href=\"#\">Farm</a>\n                                            <a class=\"dropdown-item\" href=\"#\">Cottage</a>\n        \n                                        </div>\n                                    </div>\n                                </div>\n        \n                       \n\n                         \n                \n            </form>\n        </div>\n\n\n\n\n\n\n\n\n\n\n\n                <!--Optional Detail tab-->\n                <div class=\"tab-pane fade\" id=\"nav-contact\" role=\"tabpanel\" aria-labelledby=\"nav-contact-tab\">\n                    <h4 class=\"mt-4 forms-heading\">Optional Details</h4>\n                    <div class=\"form-group mt-4\">\n                        <label for=\"pwd\">Type*</label>\n                        <div class=\"dropdown\">\n\n                            <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                <span class=\"text-dropdown\">Buying to Live</span>\n                            </button>\n                            <div class=\"dropdown-menu\">\n                                <a class=\"dropdown-item\" href=\"#\">Buying to Live</a>\n                                <a class=\"dropdown-item\" href=\"#\">Buying as Investment</a>\n                                <a class=\"dropdown-item\" href=\"#\">Buying to Let</a>\n\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"form-group mt-4\">\n                        <label for=\"pwd\">Position*</label>\n                        <div class=\"dropdown\">\n\n                            <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                <span class=\"text-dropdown\">Cash Buyer</span>\n                            </button>\n                            <div class=\"dropdown-menu\">\n                                <a class=\"dropdown-item active\" href=\"#\">Cash Buyerr</a>\n                                <a class=\"dropdown-item active\" href=\"#\">First Time Buyer</a>\n                                <a class=\"dropdown-item\" href=\"#\">Selling To Move</a>\n                                <a class=\"dropdown-item\" href=\"#\">Mortgage To be Arranged</a>\n                                <a class=\"dropdown-item\" href=\"#\">Mortgage Arranged</a>\n                                <a class=\"dropdown-item\" href=\"#\">Mortgage Free</a>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"endind-button mt-5\">\n                        <button type=\"button\" class=\"btn btn-back\">Back</button>\n                        <button type=\"button\" class=\"btn btn-next\">Next</button>\n                    </div>\n                </div>\n\n            </div>\n\n        </div>\n    </div>\n\n</div>\n</div>");
 
 /***/ }),
 
@@ -175,7 +240,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"mobile-wrapper\">\n  <div class=\"mobile-container\">\n    <div class=\"content\">\n      <nav>\n        \n        <!-- <input type=\"checkbox\" id=\"hamburger1\" />\n        <label for=\"hamburger1\"></label> -->\n        <img src=\"/assets/Images/menu.png\" class=\"open\">\n\t\t\t\t<img src=\"/assets/Images/menu-close.png\" class=\"close-img\">\n        <p class=\"menu-text\">Menu</p>\n        <div class=\"imge-logo-header\">\n        <img src=\"assets/Images/logo1.png\" class=\"logo-nav\" routerLink=''>\n        <i class=\"fa fa-user\" aria-hidden=\"true\" ></i>\n    \n      </div>\n\n      <div class=\"nav-div\">\n        <div class=\"search-grid-conatiner\">\n          <div></div>\n          <div> <input type=\"text\" placeholder=\"Search..\"><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon-search\" ></div>\n          <div></div>\n         \n          \n        </div>\n        <ul class=\"nav-links\">\n          <div class=\"grid-container\" routerLink='/profile'>\n            <div>   <img src=\"assets/Images/my-profile-icon-png-1.png\"></div>\n            <div><li><a routerLink='/profile' class=\"nav-links-text\">My Profile</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" ></div>  \n          \n          </div>\n          <div class=\"grid-container\" routerLink='/myproperties'>\n            <div>   <img src=\"assets/Images/download-removebg-preview.png\"></div>\n            <div> <li><a routerLink='/myproperties' class=\"nav-links-text\">My Properties</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\"></div>  \n          \n          </div>\n          <div class=\"grid-container\" routerLink='/myrequirement'>\n            <div>   <img src=\"assets/Images/135-512-removebg-preview.png\"></div>\n            <div>       <li><a routerLink='/myrequirement'class=\"nav-links-text\">My Requirements</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\"></div>  \n          \n          </div>\n          <div class=\"grid-container\" routerLink='/prefrences'>\n            <div>   <img src=\"assets/Images/user_2-09-512-removebg-preview.png\"></div>\n            <div>        <li><a routerLink='/prefrences' class=\"nav-links-text\">Prefrences</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\"></div>  \n          \n          </div>\n          <div class=\"grid-container\" routerLink='/chats'>\n            <div>   <img src=\"assets/Images/31-512-removebg-preview.png\"></div>\n            <div>        <li><a routerLink='/chats' class=\"nav-links-text\">My chat</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\"></div>  \n          \n          </div>\n         \n        </ul>\n      </div>\n      </nav>\n\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"mobile-wrapper\">\n  <div class=\"mobile-container\">\n    <div class=\"content\">\n      <nav>\n        \n        <!-- <input type=\"checkbox\" id=\"hamburger1\" />\n        <label for=\"hamburger1\"></label> -->\n        <img src=\"/assets/Images/menu.png\" class=\"open\">\n\t\t\t\t<img src=\"/assets/Images/menu-close.png\" class=\"close-img\">\n        <p class=\"menu-text\">Menu</p>\n        <div class=\"imge-logo-header\" >\n        <img src=\"assets/Images/logo1.png\" class=\"logo-nav\" routerLink=''>\n     \n        <i class=\"fa fa-user\" aria-hidden=\"true\"  (click)=\"authService.SignOut()\" *ngIf=\"isLoggedIn\"><span class=\"log-out-text\">Logout</span></i>\n       \n    \n      </div>\n\n      <div class=\"nav-div\">\n        <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\">\n          <div></div>\n          <div> <input type=\"text\" placeholder=\"Search..\"><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon-search\" ></div>\n          <div></div>\n         \n          \n        </div>\n        <ul class=\"nav-links\" *ngIf=\"isLoggedIn show\">\n          <div class=\"grid-container\" routerLink='/profile'>\n            <div>   <img src=\"assets/Images/my-profile-icon-png-1.png\"></div>\n            <div><li><a routerLink='/profile' class=\"nav-links-text\">My Profile</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" ></div>  \n          \n          </div>\n          <div class=\"grid-container\" routerLink='/myproperties'>\n            <div>   <img src=\"assets/Images/download-removebg-preview.png\"></div>\n            <div> <li><a routerLink='/myproperties' class=\"nav-links-text\">My Properties</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\"></div>  \n          \n          </div>\n          <div class=\"grid-container\" routerLink='/myrequirement'>\n            <div>   <img src=\"assets/Images/135-512-removebg-preview.png\"></div>\n            <div>       <li><a routerLink='/myrequirement'class=\"nav-links-text\">My Requirements</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\"></div>  \n          \n          </div>\n          <div class=\"grid-container\" routerLink='/prefrences'>\n            <div>   <img src=\"assets/Images/user_2-09-512-removebg-preview.png\"></div>\n            <div>        <li><a routerLink='/prefrences' class=\"nav-links-text\">Prefrences</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\"></div>  \n          \n          </div>\n          <div class=\"grid-container\" routerLink='/chats'>\n            <div>   <img src=\"assets/Images/31-512-removebg-preview.png\"></div>\n            <div>        <li><a routerLink='/chats' class=\"nav-links-text\">My chat</a></li></div>\n            <div><img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\"></div>  \n          \n          </div>\n         \n        </ul>\n   <div  *ngIf=\"!isLoggedIn\">\n          <div class=\"social-login text-center\" >\n            <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\n            <div class=\"social-button mt-4\">\n            <button type=\"button\" class=\"btn btn-facebook \"  (click)=\"authService.FacebookAuth()\">Facebook</button>\n                <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">Google+</button>\n            </div>\n            <form action=\"\">\n            <div class=\"input-group mb-3 mt-3\">\n                <div class=\"input-group-prepend\">\n                    <!-- <i class=\"fa fa-user input-group-text nav-login-form\" aria-hidden=\"true\"></i> -->\n                </div>\n                <input type=\"email\" class=\"form-control\" placeholder=\"Enter email\" name=\"email\"  #userEmail required>\n            </div>\n\n            <div class=\"input-group-prepend\">\n                <!-- <i class=\"fa fa-lock input-group-text nav-login-form-password\" aria-hidden=\"true\"></i> -->\n                <input type=\"password\" class=\"form-control\" placeholder=\"Password\"  name=\"password\"\n                     #userPassword required>\n            </div>\n        \n            <div class=\"input-group-prepend other-option\">\n                <!-- <label class=\"checkbox\">\n                    <input type=\"checkbox\" value=\"remember-me\">Remember Me\n                </label> -->\n                <a href=\"#\" class=\"forgot-password\" (click)=\"authService.ForgotPassword()\">Forgot password?</a>\n            </div>\n            <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignIn(userEmail.value,userPassword.value)\">Login</button>\n            <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignUp(userEmail.value,userPassword.value)\">Sign Up</button>\n          </form>\n        </div>\n     \n      </div>\n  \n      </div>\n      </nav>\n\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -266,7 +331,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container form-containers  \">\n\n    <div class=\"row\">\n        <div class=\"col-12 \">\n            <nav>\n                <div class=\"nav nav-tabs nav-fill\" id=\"nav-tab\" role=\"tablist\">\n                    <a class=\"nav-item nav-link active\" id=\"nav-home-tab\" data-toggle=\"tab\" href=\"#nav-home\" role=\"tab\"\n                        aria-controls=\"nav-home\" aria-selected=\"true\">Personal<br> Details</a>\n                    <a class=\"nav-item nav-link\" id=\"nav-profile-tab\" data-toggle=\"tab\" href=\"#nav-profile\" role=\"tab\"\n                        aria-controls=\"nav-profile\" aria-selected=\"false\">Property <br>Details</a>\n                    <a class=\"nav-item nav-link\" id=\"nav-contact-tab\" data-toggle=\"tab\" href=\"#nav-contact\" role=\"tab\"\n                        aria-controls=\"nav-contact\" aria-selected=\"false\">Optional<br> Details</a>\n\n                </div>\n            </nav>\n            <!--Pesonal Detail Tab-->\n            <div class=\"tab-content mt-2 \" id=\"nav-tabContent\">\n\n                <div class=\"tab-pane fade show active\" id=\"nav-home\" role=\"tabpanel\" aria-labelledby=\"nav-home-tab\">\n                    <div class=\"seller-form-upper\">\n                        <p>List Your Property<br>\n                            <span>Please fill the form below to list your property</span> </p>\n                        <hr class=\"top-hr\">\n                    </div>\n                    <div class=\" container  forms-container\">\n                        <h4 class=\"mt-4 forms-heading pb-4\">Personal Details</h4>\n                        <!-- <p class=\"forms-star\">*required</p> -->\n                        <form action=\"/action_page.php\">\n                            <div class=\"form-group\">\n                                <label for=\"email\">Tiitle*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"Tittle\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">First Name*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"Fname\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Last Name*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"lname\" required>\n                            </div>\n\n\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Email Address*</label>\n                                <input type=\"email\" class=\"form-control\" id=\"email\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Date of Birth*</label>\n                                <input type=\"date\" class=\"form-control\" id=\"email\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Enter A Password*</label>\n                                <input type=\"password\" class=\"form-control\" id=\"psswd\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Enter Password Again*</label>\n                                <input type=\"password\" class=\"form-control\" id=\"psswd1\" required>\n                            </div>\n                            <div class=\"forms-or\">\n                                <p class=\"form-or-p\">or</p>\n\n                            </div>\n                            <div class=\"social-login text-center\">\n                                <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\n                                <div class=\"social-button mt-4\">\n                                    <button type=\"button\" class=\"btn btn-facebook \">Facebook</button>\n                                    <button type=\"button\" class=\"btn btn-google ml-4\">Google+</button>\n                                </div>\n                                <div class=\"input-group mb-3 mt-3\">\n                                    <div class=\"input-group-prepend\">\n                                        <i class=\"fa fa-user input-group-text\" aria-hidden=\"true\"></i>\n                                    </div>\n                                    <input type=\"text\" class=\"form-control\" placeholder=\"Username\" id=\"usr\"\n                                        name=\"username\">\n                                </div>\n\n                                <div class=\"input-group-prepend\">\n                                    <i class=\"fa fa-lock input-group-text\" aria-hidden=\"true\"></i>\n                                    <input type=\"Password\" class=\"form-control\" placeholder=\"Password\" id=\"usr\"\n                                        name=\"username\">\n                                </div>\n\n                                <div class=\"input-group-prepend other-option\">\n                                    <label class=\"checkbox\">\n                                        <input type=\"checkbox\" value=\"remember-me\">Remember Me\n                                    </label>\n                                    <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n                                </div>\n                                <button type=\"button\" class=\"btn btn-social-login\">Login</button>\n\n                            </div>\n\n\n                        </form>\n                        <div class=\"endind-button mt-5\">\n                            <button type=\"button\" class=\"btn btn-back\" routerLink=\"/ownaproperty\">Back</button>\n                            <button type=\"button\" class=\"btn btn-next\" routerLink=\"/sellermatches\">Next</button>\n                        </div>\n                    </div>\n                </div>\n                <!--Property Detail Tab-->\n                <div class=\"tab-pane fade\" id=\"nav-profile\" role=\"tabpanel\" aria-labelledby=\"nav-profile-tab\">\n                    <div class=\"seller-form-upper\">\n                        <p>Property Enquiry<br>\n                            <span>Please fill the form below to list your property</span> </p>\n                        <hr class=\"top-hr\">\n                    </div>\n                    <div class=\" container  forms-container\">\n                        <p>Search by Address</p>\n                        <form action=\"/action_page.php\">\n                            <div class=\"form-group\">\n                                <label for=\"email\">Address 1*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"Address\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Town/City*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"Town\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">State/Provience/Country</label>\n                                <input type=\"text\" class=\"form-control\" id=\"state\">\n                            </div>\n\n\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Postcode*</label>\n                                <input type=\"number\" class=\"form-control\" id=\"postcode\" required>\n                            </div>\n                            <div class=\"form-group mt-4\">\n                                <label for=\"pwd\">Country*</label>\n                                <div class=\"dropdown\">\n\n                                    <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                        <span class=\"text-dropdown\">United Kingdom</span>\n                                    </button>\n                                    <div class=\"dropdown-menu\">\n                                        <a class=\"dropdown-item active\" href=\"#\">Austria</a>\n                                        <a class=\"dropdown-item\" href=\"#\">India</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Australia</a>\n\n                                    </div>\n                                </div>\n                            </div>\n\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Address Name</label>\n                                <input type=\"number\" class=\"form-control\" id=\"postcode\">\n                            </div>\n\n                            <div class=\"form-group mt-4\">\n                                <label for=\"text\">Property type*</label>\n                                <div class=\"dropdown\">\n\n                                    <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                        <span class=\"text-dropdown\">Terrace House</span>\n                                    </button>\n                                    <div class=\"dropdown-menu\">\n                                        <a class=\"dropdown-item active\" href=\"#\">Terrace House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Semi Detached House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Detached House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Detached House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">End Of Terrace House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Masionette</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Purpose-Built Flat</a>\n\n                                    </div>\n                                </div>\n                                <div class=\"form-group mt-3\">\n                                    <label for=\"pwd\">Number of Rooms*</label>\n                                    <input type=\"number\" class=\"form-control\" id=\"postcode\">\n                                </div>\n                            </div>\n                            <div class=\"radio-main-container\">\n                            <div class=\"row\">\n                                <label class=\"col-6\" for=\"radio\">Property Condition:</label>\n                                <div class=\"form-check col-6 radio-align\">\n                                    <label class=\"form-check-label\" for=\"radio1\">\n                                        <input type=\"radio\" class=\"form-check-input\" id=\"radio1\" name=\"optradio\"\n                                            value=\"option1\" checked>Newly Refurbished\n                                    </label>\n\n                                    <label class=\"form-check-label\" for=\"radio2\">\n                                        <input type=\"radio\" class=\"form-check-input\" id=\"radio2\" name=\"optradio\"\n                                            value=\"option2\">Refurbished\n                                    </label>\n\n                                    <label class=\"form-check-label\">\n                                        <input type=\"radio\" class=\"form-check-input\">New Build\n                                    </label>\n\n                                    <label class=\"form-check-label\">\n                                        <input type=\"radio\" class=\"form-check-input\">Needs modernisation\n                                    </label>\n                                </div>\n                            </div>\n                        </div>\n                            <div class=\"dropdown mt-2\">\n\n                                <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                    <span class=\"text-dropdown\">Ownership*</span>\n                                </button>\n                                <div class=\"dropdown-menu\">\n                                    <a class=\"dropdown-item active\" href=\"#\">Freehold</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Leasehold</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Share of Freehold</a>\n\n\n                                </div>\n                            </div>\n\n                    \n                    <label for=\"text\" class=\"mt-3\">Select the Applicable Features:</label>\n                    <div class=\"row checkbox-check\">\n\n                        <div class=\"form-check col-6 row-check \">\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Driveway\n                            </label>\n\n\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Period features\n                            </label>\n\n\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Garage\n                            </label>\n                        </div>\n                        <div class=\"form-check col-6 row-check \">\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Wheelchair friendly\n                            </label>\n\n\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Gated community\n                            </label>\n\n\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>External Rear Garden\n                            </label>\n                        </div>\n\n\n\n\n\n\n\n\n\n\n\n                    </div>\n\n\n\n\n\n\n                    </form>\n                </div>\n\n\n            </div>\n\n\n\n\n\n\n\n\n            <!--Optional Detail tab-->\n            <div class=\"tab-pane fade\" id=\"nav-contact\" role=\"tabpanel\" aria-labelledby=\"nav-contact-tab\">\n                <div class=\"seller-form-upper\">\n                    <p>List Your Property<br>\n                        <span>Please fill the form below to list your property</span> </p>\n                    <hr class=\"top-hr\">\n                </div>\n                <div class=\" container  forms-container\">\n\n                    <p class=\"mt-4 forms-heading-optional\">Upload Property Images*</p>\n\n                    <div class=\"col-4 frmCaption\">Image 1*</div>\n                    <div class=\"col-12\">\n                        <label class=\"customUpload btnUpload btnM\"> <span>Choose files</span>\n\n                            <input type=\"file\" class=\"upload\" />\n                        </label>\n                    </div>\n                    <div class=\"col-4 frmCaption\">Image 2*</div>\n                    <div class=\"col-12\">\n                        <label class=\"customUpload btnUpload btnM\"> <span>Choose files</span>\n\n                            <input type=\"file\" class=\"upload\" />\n                        </label>\n                    </div>\n                    <div class=\"col-4 frmCaption\">Image 3*</div>\n                    <div class=\"col-12\">\n                        <label class=\"customUpload btnUpload btnM\"> <span>Choose files</span>\n\n                            <input type=\"file\" class=\"upload\" />\n                        </label>\n                    </div>\n                    <div class=\"col-4 frmCaption\">Image 4*</div>\n                    <div class=\"col-12\">\n                        <label class=\"customUpload btnUpload btnM\"> <span>Choose files</span>\n\n                            <input type=\"file\" class=\"upload\" />\n                        </label>\n                    </div>\n\n\n                    <!-- <form action=\"/action_page.php\">\n                            Image 1*: <br>\n                            <input type=\"file\" name=\"myFile\" class=\"upload-button\" multiple required><br><br>\n                        \n                          </form>\n                        <div class=\"endind-button mt-5\"> -->\n                    <div class=\"optional-button-group\">\n                        <button type=\"button\" class=\"btn btn-back\" routerLink=\"/sellermatches\">Back</button>\n                        <button type=\"button\" class=\"btn btn-next\" routerLink=\"/sellermatches\">Next</button>\n\n                    </div>\n                </div>\n            </div>\n\n\n\n        </div>\n    </div>\n\n</div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container form-containers  \">\n\n    <div class=\"row\">\n        <div class=\"col-12 \">\n            <nav>\n                <div class=\"nav nav-tabs nav-fill\" id=\"nav-tab\" role=\"tablist\">\n                    <a class=\"nav-item nav-link active\" id=\"nav-home-tab\" data-toggle=\"tab\" href=\"#nav-home\" role=\"tab\"\n                        aria-controls=\"nav-home\" aria-selected=\"true\">Personal<br> Details</a>\n                    <a class=\"nav-item nav-link\" id=\"nav-profile-tab\" data-toggle=\"tab\" href=\"#nav-profile\" role=\"tab\"\n                        aria-controls=\"nav-profile\" aria-selected=\"false\">Property <br>Details</a>\n                    <a class=\"nav-item nav-link\" id=\"nav-contact-tab\" data-toggle=\"tab\" href=\"#nav-contact\" role=\"tab\"\n                        aria-controls=\"nav-contact\" aria-selected=\"false\">Optional<br> Details</a>\n\n                </div>\n            </nav>\n        \n            <!--Pesonal Detail Tab-->\n            <div class=\"tab-content mt-2 \" id=\"nav-tabContent\">\n                <div class=\"social-login text-center p-3\" *ngIf=\"!isLoggedIn\">\n                    <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\n                    <div class=\"social-button mt-4\">\n                        <button type=\"button\" class=\"btn btn-facebook \"  (click)=\"authService.FacebookAuth()\">Facebook</button>\n                        <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">Google+</button>\n                    </div>\n                    <div class=\"input-group mb-3 mt-3\">\n                        <div class=\"input-group-prepend\">\n                            <i class=\"fa fa-user input-group-text\" aria-hidden=\"true\"></i>\n                        </div>\n                        <input type=\"text\" class=\"form-control\" placeholder=\"Enter email\"  #userEmail required>\n                    </div>\n    \n                    <div class=\"input-group-prepend\">\n                        <i class=\"fa fa-lock input-group-text\" aria-hidden=\"true\"></i>\n                        <input type=\"Password\" class=\"form-control\" placeholder=\"Password\" #userPassword required>\n                    </div>\n    \n                    <div class=\"input-group-prepend other-option\">\n                        <label class=\"checkbox\">\n                            <input type=\"checkbox\" value=\"remember-me\">Remember Me\n                        </label>\n                        <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n                    </div>\n                    <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignIn(userEmail.value,userPassword.value)\">Login</button>\n            <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignUp(userEmail.value,userPassword.value)\">Sign Up</button>\n    \n                </div>\n                <div class=\"tab-pane fade show active\" id=\"nav-home\" role=\"tabpanel\" aria-labelledby=\"nav-home-tab\">\n                   \n                   \n                    <div class=\"seller-form-upper\">\n                        <p>List Your Property<br>\n                            <span>Please fill the form below to list your property</span> </p>\n                        <hr class=\"top-hr\">\n                    </div>\n                    <div class=\" container  forms-container\">\n                        <h4 class=\"mt-4 forms-heading pb-4\">Personal Details</h4>\n                        <!-- <p class=\"forms-star\">*required</p> -->\n                        <form action=\"/action_page.php\">\n                            <div class=\"form-group\">\n                                <label for=\"email\">Tiitle*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"Tittle\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">First Name*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"Fname\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Last Name*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"lname\" required>\n                            </div>\n\n\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Email Address*</label>\n                                <input type=\"email\" class=\"form-control\" id=\"email\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Date of Birth*</label>\n                                <input type=\"date\" class=\"form-control\" id=\"email\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Enter A Password*</label>\n                                <input type=\"password\" class=\"form-control\" id=\"psswd\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Enter Password Again*</label>\n                                <input type=\"password\" class=\"form-control\" id=\"psswd1\" required>\n                            </div>\n                            <!-- <div class=\"forms-or\" *ngIf=\"!isLoggedIn\">\n                                <p class=\"form-or-p\">or</p>\n\n                            </div> -->\n                            <!-- <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n                                <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\n                                <div class=\"social-button mt-4\">\n                                    <button type=\"button\" class=\"btn btn-facebook \"  (click)=\"authService.FacebookAuth()\">Facebook</button>\n                                    <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">Google+</button>\n                                </div>\n                                <div class=\"input-group mb-3 mt-3\">\n                                    <div class=\"input-group-prepend\">\n                                        <i class=\"fa fa-user input-group-text\" aria-hidden=\"true\"></i>\n                                    </div>\n                                    <input type=\"text\" class=\"form-control\" placeholder=\"Username\" id=\"usr\"\n                                        name=\"username\">\n                                </div>\n\n                                <div class=\"input-group-prepend\">\n                                    <i class=\"fa fa-lock input-group-text\" aria-hidden=\"true\"></i>\n                                    <input type=\"Password\" class=\"form-control\" placeholder=\"Password\" id=\"usr\"\n                                        name=\"username\">\n                                </div>\n\n                                <div class=\"input-group-prepend other-option\">\n                                    <label class=\"checkbox\">\n                                        <input type=\"checkbox\" value=\"remember-me\">Remember Me\n                                    </label>\n                                    <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n                                </div>\n                                <button type=\"button\" class=\"btn btn-social-login\">Login</button>\n\n                            </div> -->\n\n\n                        </form>\n                        <div class=\"endind-button mt-5\">\n                            <button type=\"button\" class=\"btn btn-back\" routerLink=\"/ownaproperty\">Back</button>\n                            <button type=\"button\" class=\"btn btn-next\" routerLink=\"/sellermatches\">Next</button>\n                        </div>\n                    </div>\n                </div>\n                <!--Property Detail Tab-->\n                <div class=\"tab-pane fade\" id=\"nav-profile\" role=\"tabpanel\" aria-labelledby=\"nav-profile-tab\">\n                    <div class=\"seller-form-upper\">\n                        <p>Property Enquiry<br>\n                            <span>Please fill the form below to list your property</span> </p>\n                        <hr class=\"top-hr\">\n                    </div>\n                    <div class=\" container  forms-container\">\n                        <p>Search by Address</p>\n                        <form action=\"/action_page.php\">\n                            <div class=\"form-group\">\n                                <label for=\"email\">Address 1*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"Address\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Town/City*</label>\n                                <input type=\"text\" class=\"form-control\" id=\"Town\" required>\n                            </div>\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">State/Provience/Country</label>\n                                <input type=\"text\" class=\"form-control\" id=\"state\">\n                            </div>\n\n\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Postcode*</label>\n                                <input type=\"number\" class=\"form-control\" id=\"postcode\" required>\n                            </div>\n                            <div class=\"form-group mt-4\">\n                                <label for=\"pwd\">Country*</label>\n                                <div class=\"dropdown\">\n\n                                    <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                        <span class=\"text-dropdown\">United Kingdom</span>\n                                    </button>\n                                    <div class=\"dropdown-menu\">\n                                        <a class=\"dropdown-item active\" href=\"#\">Austria</a>\n                                        <a class=\"dropdown-item\" href=\"#\">India</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Australia</a>\n\n                                    </div>\n                                </div>\n                            </div>\n\n                            <div class=\"form-group\">\n                                <label for=\"pwd\">Address Name</label>\n                                <input type=\"number\" class=\"form-control\" id=\"postcode\">\n                            </div>\n\n                            <div class=\"form-group mt-4\">\n                                <label for=\"text\">Property type*</label>\n                                <div class=\"dropdown\">\n\n                                    <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                        <span class=\"text-dropdown\">Terrace House</span>\n                                    </button>\n                                    <div class=\"dropdown-menu\">\n                                        <a class=\"dropdown-item active\" href=\"#\">Terrace House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Semi Detached House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Detached House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Detached House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">End Of Terrace House</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Masionette</a>\n                                        <a class=\"dropdown-item\" href=\"#\">Purpose-Built Flat</a>\n\n                                    </div>\n                                </div>\n                                <div class=\"form-group mt-3\">\n                                    <label for=\"pwd\">Number of Rooms*</label>\n                                    <input type=\"number\" class=\"form-control\" id=\"postcode\">\n                                </div>\n                            </div>\n                            <div class=\"radio-main-container\">\n                            <div class=\"row\">\n                                <label class=\"col-6\" for=\"radio\">Property Condition:</label>\n                                <div class=\"form-check col-6 radio-align\">\n                                    <label class=\"form-check-label\" for=\"radio1\">\n                                        <input type=\"radio\" class=\"form-check-input\" id=\"radio1\" name=\"optradio\"\n                                            value=\"option1\" checked>Newly Refurbished\n                                    </label>\n\n                                    <label class=\"form-check-label\" for=\"radio2\">\n                                        <input type=\"radio\" class=\"form-check-input\" id=\"radio2\" name=\"optradio\"\n                                            value=\"option2\">Refurbished\n                                    </label>\n\n                                    <label class=\"form-check-label\">\n                                        <input type=\"radio\" class=\"form-check-input\">New Build\n                                    </label>\n\n                                    <label class=\"form-check-label\">\n                                        <input type=\"radio\" class=\"form-check-input\">Needs modernisation\n                                    </label>\n                                </div>\n                            </div>\n                        </div>\n                            <div class=\"dropdown mt-2\">\n\n                                <button type=\"button\" class=\"btn  dropdown-toggle\" data-toggle=\"dropdown\">\n                                    <span class=\"text-dropdown\">Ownership*</span>\n                                </button>\n                                <div class=\"dropdown-menu\">\n                                    <a class=\"dropdown-item active\" href=\"#\">Freehold</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Leasehold</a>\n                                    <a class=\"dropdown-item\" href=\"#\">Share of Freehold</a>\n\n\n                                </div>\n                            </div>\n\n                    \n                    <label for=\"text\" class=\"mt-3\">Select the Applicable Features:</label>\n                    <div class=\"row checkbox-check\">\n\n                        <div class=\"form-check col-6 row-check \">\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Driveway\n                            </label>\n\n\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Period features\n                            </label>\n\n\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Garage\n                            </label>\n                        </div>\n                        <div class=\"form-check col-6 row-check \">\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Wheelchair friendly\n                            </label>\n\n\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>Gated community\n                            </label>\n\n\n                            <label class=\"form-check-label\" for=\"check1\">\n                                <input type=\"checkbox\" class=\"form-check-input\" id=\"check1\" name=\"option1\"\n                                    value=\"something\" checked>External Rear Garden\n                            </label>\n                        </div>\n\n\n\n\n\n\n\n\n\n\n\n                    </div>\n\n\n\n\n\n\n                    </form>\n                </div>\n\n\n            </div>\n\n\n\n\n\n\n\n\n            <!--Optional Detail tab-->\n            <div class=\"tab-pane fade\" id=\"nav-contact\" role=\"tabpanel\" aria-labelledby=\"nav-contact-tab\">\n                <div class=\"seller-form-upper\">\n                    <p>List Your Property<br>\n                        <span>Please fill the form below to list your property</span> </p>\n                    <hr class=\"top-hr\">\n                </div>\n                <div class=\" container  forms-container\">\n\n                    <p class=\"mt-4 forms-heading-optional\">Upload Property Images*</p>\n\n                    <div class=\"col-4 frmCaption\">Image 1*</div>\n                    <div class=\"col-12\">\n                        <label class=\"customUpload btnUpload btnM\"> <span>Choose files</span>\n\n                            <input type=\"file\" class=\"upload\" />\n                        </label>\n                    </div>\n                    <div class=\"col-4 frmCaption\">Image 2*</div>\n                    <div class=\"col-12\">\n                        <label class=\"customUpload btnUpload btnM\"> <span>Choose files</span>\n\n                            <input type=\"file\" class=\"upload\" />\n                        </label>\n                    </div>\n                    <div class=\"col-4 frmCaption\">Image 3*</div>\n                    <div class=\"col-12\">\n                        <label class=\"customUpload btnUpload btnM\"> <span>Choose files</span>\n\n                            <input type=\"file\" class=\"upload\" />\n                        </label>\n                    </div>\n                    <div class=\"col-4 frmCaption\">Image 4*</div>\n                    <div class=\"col-12\">\n                        <label class=\"customUpload btnUpload btnM\"> <span>Choose files</span>\n\n                            <input type=\"file\" class=\"upload\" />\n                        </label>\n                    </div>\n\n\n                    <!-- <form action=\"/action_page.php\">\n                            Image 1*: <br>\n                            <input type=\"file\" name=\"myFile\" class=\"upload-button\" multiple required><br><br>\n                        \n                          </form>\n                        <div class=\"endind-button mt-5\"> -->\n                    <div class=\"optional-button-group\">\n                        <button type=\"button\" class=\"btn btn-back\" routerLink=\"/sellermatches\">Back</button>\n                        <button type=\"button\" class=\"btn btn-next\" routerLink=\"/sellermatches\">Next</button>\n\n                    </div>\n                </div>\n            </div>\n\n\n\n        </div>\n    </div>\n\n</div>\n</div>");
 
 /***/ }),
 
@@ -542,6 +607,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _requirementdetails_requirementdetails_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./requirementdetails/requirementdetails.component */ "./src/app/requirementdetails/requirementdetails.component.ts");
 /* harmony import */ var _prefrences_prefrences_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./prefrences/prefrences.component */ "./src/app/prefrences/prefrences.component.ts");
 /* harmony import */ var _chats_chats_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./chats/chats.component */ "./src/app/chats/chats.component.ts");
+/* harmony import */ var _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./components/sign-up/sign-up.component */ "./src/app/components/sign-up/sign-up.component.ts");
+/* harmony import */ var _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./components/dashboard/dashboard.component */ "./src/app/components/dashboard/dashboard.component.ts");
+/* harmony import */ var _components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./components/forgot-password/forgot-password.component */ "./src/app/components/forgot-password/forgot-password.component.ts");
+/* harmony import */ var _components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./components/verify-email/verify-email.component */ "./src/app/components/verify-email/verify-email.component.ts");
+
+
+
+
 
 
 
@@ -579,7 +652,12 @@ const routes = [
     { path: 'myrequirement', component: _myrequirement_myrequirement_component__WEBPACK_IMPORTED_MODULE_16__["MyrequirementComponent"] },
     { path: 'requirementdetails', component: _requirementdetails_requirementdetails_component__WEBPACK_IMPORTED_MODULE_17__["RequirementdetailsComponent"] },
     { path: 'prefrences', component: _prefrences_prefrences_component__WEBPACK_IMPORTED_MODULE_18__["PrefrencesComponent"] },
-    { path: 'chats', component: _chats_chats_component__WEBPACK_IMPORTED_MODULE_19__["ChatsComponent"] }
+    { path: 'chats', component: _chats_chats_component__WEBPACK_IMPORTED_MODULE_19__["ChatsComponent"] },
+    { path: 'sign-in', component: _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_20__["SignUpComponent"] },
+    { path: 'register-user', component: _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_20__["SignUpComponent"] },
+    { path: 'dashboard', component: _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_21__["DashboardComponent"] },
+    { path: 'forgot-password', component: _components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_22__["ForgotPasswordComponent"] },
+    { path: 'verify-email-address', component: _components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_23__["VerifyEmailComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -672,6 +750,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _requirementdetails_requirementdetails_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./requirementdetails/requirementdetails.component */ "./src/app/requirementdetails/requirementdetails.component.ts");
 /* harmony import */ var _prefrences_prefrences_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./prefrences/prefrences.component */ "./src/app/prefrences/prefrences.component.ts");
 /* harmony import */ var _chats_chats_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./chats/chats.component */ "./src/app/chats/chats.component.ts");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _angular_fire__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/fire */ "./node_modules/@angular/fire/es2015/index.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+/* harmony import */ var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! @angular/fire/storage */ "./node_modules/@angular/fire/storage/es2015/index.js");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/dashboard/dashboard.component */ "./src/app/components/dashboard/dashboard.component.ts");
+/* harmony import */ var _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./components/sign-in/sign-in.component */ "./src/app/components/sign-in/sign-in.component.ts");
+/* harmony import */ var _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./components/sign-up/sign-up.component */ "./src/app/components/sign-up/sign-up.component.ts");
+/* harmony import */ var _components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./components/forgot-password/forgot-password.component */ "./src/app/components/forgot-password/forgot-password.component.ts");
+/* harmony import */ var _components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./components/verify-email/verify-email.component */ "./src/app/components/verify-email/verify-email.component.ts");
 
 
 
@@ -686,6 +775,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// Firebase modules
 
 
 
@@ -721,15 +822,192 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _requirementdetails_requirementdetails_component__WEBPACK_IMPORTED_MODULE_21__["RequirementdetailsComponent"],
             _prefrences_prefrences_component__WEBPACK_IMPORTED_MODULE_22__["PrefrencesComponent"],
             _chats_chats_component__WEBPACK_IMPORTED_MODULE_23__["ChatsComponent"],
+            _components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_30__["DashboardComponent"],
+            _components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_31__["SignInComponent"],
+            _components_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_32__["SignUpComponent"],
+            _components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_33__["ForgotPasswordComponent"],
+            _components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_34__["VerifyEmailComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"]
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"],
+            _angular_fire__WEBPACK_IMPORTED_MODULE_25__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_29__["environment"].firebaseConfig, 'street'),
+            _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_26__["AngularFirestoreModule"],
+            _angular_fire_auth__WEBPACK_IMPORTED_MODULE_28__["AngularFireAuthModule"],
+            _angular_fire_storage__WEBPACK_IMPORTED_MODULE_27__["AngularFireStorageModule"] // Only required for storage features
         ],
-        providers: [],
+        providers: [_auth_service__WEBPACK_IMPORTED_MODULE_24__["AuthService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth.service.ts":
+/*!*********************************!*\
+  !*** ./src/app/auth.service.ts ***!
+  \*********************************/
+/*! exports provided: AuthService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthService", function() { return AuthService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/index.cjs.js");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
+
+
+
+
+
+let AuthService = class AuthService {
+    constructor(afs, // Inject Firestore service
+    afAuth, // Inject Firebase auth service
+    router, ngZone // NgZone service to remove outside scope warning
+    ) {
+        this.afs = afs;
+        this.afAuth = afAuth;
+        this.router = router;
+        this.ngZone = ngZone;
+        /* Saving user data in localstorage when
+       logged in and setting up null when logged out */
+        this.afAuth.authState.subscribe(user => {
+            if (user) {
+                this.userData = user;
+                localStorage.setItem('user', JSON.stringify(this.userData));
+                JSON.parse(localStorage.getItem('user'));
+            }
+            else {
+                localStorage.setItem('user', null);
+                JSON.parse(localStorage.getItem('home'));
+            }
+        });
+    }
+    logout() {
+        throw new Error("Method not implemented.");
+    }
+    // Sign in with email/password
+    SignIn(email, password) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            try {
+                const result = yield this.afAuth.auth.signInWithEmailAndPassword(email, password);
+                this.ngZone.run(() => {
+                    this.router.navigate(['profile']);
+                });
+                this.SetUserData(result.user);
+            }
+            catch (error) {
+                window.alert(error.message);
+            }
+        });
+    }
+    // Sign up with email/password
+    SignUp(email, password) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            try {
+                const result = yield this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+                /* Call the SendVerificaitonMail() function when new user sign
+                up and returns promise */
+                this.SendVerificationMail();
+                this.SetUserData(result.user);
+            }
+            catch (error) {
+                window.alert(error.message);
+            }
+        });
+    }
+    // Send email verfificaiton when new user sign up
+    SendVerificationMail() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            yield this.afAuth.auth.currentUser.sendEmailVerification();
+            this.router.navigate(['verify-email-address']);
+        });
+    }
+    // Reset Forggot password
+    ForgotPassword(passwordResetEmail) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            try {
+                yield this.afAuth.auth.sendPasswordResetEmail(passwordResetEmail);
+                window.alert('Password reset email sent, check your inbox.');
+            }
+            catch (error) {
+                window.alert(error);
+            }
+        });
+    }
+    // Returns true when user is looged in and email is verified
+    get isLoggedIn() {
+        const user = JSON.parse(localStorage.getItem('user'));
+        return (user !== null && user.emailVerified !== false) ? true : false;
+    }
+    // Sign in with Google
+    GoogleAuth() {
+        return this.AuthLogin(new firebase_app__WEBPACK_IMPORTED_MODULE_2__["auth"].GoogleAuthProvider());
+    }
+    // Sign in with Google
+    FacebookAuth() {
+        return this.AuthLogin(new firebase_app__WEBPACK_IMPORTED_MODULE_2__["auth"].FacebookAuthProvider());
+    }
+    // Auth logic to run auth providers
+    AuthLogin(provider) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            try {
+                const result = yield this.afAuth.auth.signInWithPopup(provider);
+                this.ngZone.run(() => {
+                    this.router.navigate(['profile']);
+                });
+                this.SetUserData(result.user);
+            }
+            catch (error) {
+                window.alert(error);
+            }
+        });
+    }
+    /* Setting up user data when sign in with username/password,
+    sign up with username/password and sign in with social auth
+    provider in Firestore database using AngularFirestore + AngularFirestoreDocument service */
+    SetUserData(user) {
+        const userRef = this.afs.doc(`users/${user.uid}`);
+        const userData = {
+            uid: user.uid,
+            email: user.email,
+            displayName: user.displayName,
+            photoURL: user.photoURL,
+            emailVerified: user.emailVerified
+        };
+        return userRef.set(userData, {
+            merge: true
+        });
+    }
+    // Sign out 
+    SignOut() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            yield this.afAuth.auth.signOut();
+            localStorage.removeItem('user');
+            this.router.navigate(['user']);
+        });
+    }
+};
+AuthService.ctorParameters = () => [
+    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestore"] },
+    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_5__["Router"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] // NgZone service to remove outside scope warning
+     }
+];
+AuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], AuthService);
 
 
 
@@ -818,6 +1096,254 @@ ChatsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./chats.component.css */ "./src/app/chats/chats.component.css")).default]
     })
 ], ChatsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/dashboard.component.css":
+/*!**************************************************************!*\
+  !*** ./src/app/components/dashboard/dashboard.component.css ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/dashboard/dashboard.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/components/dashboard/dashboard.component.ts ***!
+  \*************************************************************/
+/*! exports provided: DashboardComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardComponent", function() { return DashboardComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../auth.service */ "./src/app/auth.service.ts");
+
+
+
+let DashboardComponent = class DashboardComponent {
+    constructor(authService) {
+        this.authService = authService;
+    }
+    ngOnInit() {
+    }
+};
+DashboardComponent.ctorParameters = () => [
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
+];
+DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-dashboard',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./dashboard.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/dashboard/dashboard.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./dashboard.component.css */ "./src/app/components/dashboard/dashboard.component.css")).default]
+    })
+], DashboardComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/forgot-password/forgot-password.component.css":
+/*!**************************************************************************!*\
+  !*** ./src/app/components/forgot-password/forgot-password.component.css ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZm9yZ290LXBhc3N3b3JkL2ZvcmdvdC1wYXNzd29yZC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/forgot-password/forgot-password.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/components/forgot-password/forgot-password.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: ForgotPasswordComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ForgotPasswordComponent", function() { return ForgotPasswordComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../auth.service */ "./src/app/auth.service.ts");
+
+
+
+let ForgotPasswordComponent = class ForgotPasswordComponent {
+    constructor(authService) {
+        this.authService = authService;
+    }
+    ngOnInit() {
+    }
+};
+ForgotPasswordComponent.ctorParameters = () => [
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
+];
+ForgotPasswordComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-forgot-password',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./forgot-password.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/forgot-password/forgot-password.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./forgot-password.component.css */ "./src/app/components/forgot-password/forgot-password.component.css")).default]
+    })
+], ForgotPasswordComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/sign-in/sign-in.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/components/sign-in/sign-in.component.css ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvc2lnbi1pbi9zaWduLWluLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/sign-in/sign-in.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/sign-in/sign-in.component.ts ***!
+  \*********************************************************/
+/*! exports provided: SignInComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignInComponent", function() { return SignInComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../auth.service */ "./src/app/auth.service.ts");
+
+
+
+let SignInComponent = class SignInComponent {
+    constructor(authService) {
+        this.authService = authService;
+    }
+    ngOnInit() {
+    }
+};
+SignInComponent.ctorParameters = () => [
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
+];
+SignInComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-sign-in',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./sign-in.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/sign-in/sign-in.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./sign-in.component.css */ "./src/app/components/sign-in/sign-in.component.css")).default]
+    })
+], SignInComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/sign-up/sign-up.component.css":
+/*!**********************************************************!*\
+  !*** ./src/app/components/sign-up/sign-up.component.css ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvc2lnbi11cC9zaWduLXVwLmNvbXBvbmVudC5jc3MifQ== */");
+
+/***/ }),
+
+/***/ "./src/app/components/sign-up/sign-up.component.ts":
+/*!*********************************************************!*\
+  !*** ./src/app/components/sign-up/sign-up.component.ts ***!
+  \*********************************************************/
+/*! exports provided: SignUpComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignUpComponent", function() { return SignUpComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let SignUpComponent = class SignUpComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+SignUpComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-sign-up',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./sign-up.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/sign-up/sign-up.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./sign-up.component.css */ "./src/app/components/sign-up/sign-up.component.css")).default]
+    })
+], SignUpComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/components/verify-email/verify-email.component.css":
+/*!********************************************************************!*\
+  !*** ./src/app/components/verify-email/verify-email.component.css ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvdmVyaWZ5LWVtYWlsL3ZlcmlmeS1lbWFpbC5jb21wb25lbnQuY3NzIn0= */");
+
+/***/ }),
+
+/***/ "./src/app/components/verify-email/verify-email.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/components/verify-email/verify-email.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: VerifyEmailComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "VerifyEmailComponent", function() { return VerifyEmailComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../auth.service */ "./src/app/auth.service.ts");
+
+
+
+let VerifyEmailComponent = class VerifyEmailComponent {
+    constructor(authService) {
+        this.authService = authService;
+    }
+    ngOnInit() {
+    }
+};
+VerifyEmailComponent.ctorParameters = () => [
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] }
+];
+VerifyEmailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-verify-email',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./verify-email.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/components/verify-email/verify-email.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./verify-email.component.css */ "./src/app/components/verify-email/verify-email.component.css")).default]
+    })
+], VerifyEmailComponent);
 
 
 
@@ -980,13 +1506,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FormsComponent", function() { return FormsComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+
+
+
 
 
 let FormsComponent = class FormsComponent {
-    constructor() { }
+    constructor(authService, afs, // Inject Firestore service
+    afAuth) {
+        this.authService = authService;
+        this.afs = afs;
+        this.afAuth = afAuth;
+        this.isLoggedIn = true;
+    }
     ngOnInit() {
+        this.afAuth.authState.subscribe(user => {
+            if (user) {
+                this.userData = user;
+                localStorage.setItem('user', JSON.stringify(this.userData));
+                JSON.parse(localStorage.getItem('user'));
+                this.LoggedIn();
+            }
+            else {
+                localStorage.setItem('user', null);
+                JSON.parse(localStorage.getItem('user'));
+                this.LoggedOut();
+            }
+        });
+    }
+    LoggedIn() {
+        this.isLoggedIn = true;
+    }
+    LoggedOut() {
+        this.isLoggedIn = false;
     }
 };
+FormsComponent.ctorParameters = () => [
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
+    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestore"] },
+    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"] }
+];
 FormsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-forms',
@@ -1184,7 +1746,7 @@ MyrequirementComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700\");\r\n@font-face {\r\n  font-family: HelveticaNeueLight;\r\n  src: url('/assets/font/HelveticaNeueLight.ttf');\r\n}\r\nul{\r\n  list-style-type: none;\r\n}\r\n.nav-div\r\n{\r\n  height: 100vh;\r\n  width: 100%;\r\n  background-color: white;\r\n  position: absolute;\r\n  top: 72px;\r\n  left: 0;\r\n  z-index: 200;\r\n}\r\n.content {\r\n  padding: 19px;\r\n  background-color: #FBF4EF;\r\n}\r\nlabel {\r\n  background: none transparent;\r\n  border: 2px solid black;\r\n  border-left: 0 solid transparent;\r\n  border-right: 0 solid transparent;\r\n  cursor: pointer;\r\n  display: block;\r\n  height: 19px;\r\n  position: absolute;\r\n  top: 19px;\r\n  left: 20px; \r\n  width: 36px;\r\n  transition: all .2s;\r\n}\r\nlabel::before {\r\n  background: black;\r\n  content: '';\r\n  height: 2px;\r\n  width: 36px;\r\n  transition: all .2s;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  /* top: 18px; */\r\n  margin-top: 6.2px;\r\n\r\n}\r\nlabel::after {\r\n  background: black;\r\n  content: '';\r\n  height: 4px;\r\n  left: 0;\r\n  position: absolute;\r\n  top: 6px;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n  width: 100%;\r\n  transform: rotate(90deg);\r\n  transition: all .2s;\r\n}\r\n.menu-text{\r\n  position: absolute;\r\n  top: 40px;\r\n  left: 17px;\r\n  text-transform: uppercase;\r\n}\r\n.menu-text::after\r\n{\r\n  display: none;\r\n}\r\n.logo-nav\r\n{\r\n  width: 50%;\r\n}\r\n.imge-logo-header {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  padding-top: 0px;\r\n  padding-left: 0;\r\n}\r\n.fa {\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  font-size: 38px;\r\n  position: absolute;\r\n  top: 7px;\r\n  right: 19px;\r\n}\r\n.user-img\r\n{\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  font-size: 38px;\r\n \r\n}\r\nimg.open {\r\n  width: 17%;\r\n  position: absolute;\r\n  top: -7px;\r\n  left: 4px;\r\n}\r\nimg.close-img\r\n{\r\n  width: 6%;\r\n  position: absolute;\r\n  top: 17px;\r\n  left: 27px;\r\n}\r\n.has-search .form-control {\r\n  padding-left: 2.375rem;\r\n}\r\n.has-search .form-control-feedback {\r\n  position: absolute;\r\n  z-index: 2;\r\n  display: block;\r\n  width: 2.375rem;\r\n  height: 2.375rem;\r\n  line-height: 2.375rem;\r\n  text-align: center;\r\n  pointer-events: none;\r\n  color: #aaa;\r\n}\r\n.nav-links {\r\n  margin: 0;\r\n  padding: 0px;\r\n}\r\n.main {\r\n  width: 50%;\r\n  margin: 50px auto;\r\n}\r\n.grid-container {\r\n  display: grid;\r\n  grid-template-columns: 1fr 2fr 1fr;\r\n  /* padding: 10px; */\r\n  margin-left: calc(-50vw + 50%);\r\nmargin-right: calc(-50vw + 50%);\r\nmargin-top: calc(-50vw + 50%);\r\n}\r\n.grid-container > div {\r\n \r\n\r\n  text-align: Left;\r\n  font-size: 18.5px;\r\n  padding: 17px;\r\n\r\n\r\n}\r\n.grid-container:hover\r\n{\r\n  background-color: #EBEBEB;\r\n  text-decoration: none;\r\n}\r\nimg.nav-link-icon {\r\n  float: right;\r\n  /* text-align: right; */\r\n  /* display: flex; */\r\n}\r\n.nav-links-text {\r\n  color: black;\r\n  font-family: 'HelveticaNeueLight';\r\n}\r\ninput[type=text] {\r\n     /* float: right; */\r\n     padding: 15px;\r\n     border: 1px solid lightgrey;\r\n     /* margin-top: 8px; */\r\n     /* margin-right: 16px; */\r\n     font-size: 17px;\r\n     width: 87%;  \r\n     \r\n}\r\n.search-grid-conatiner\r\n{\r\n  display: grid;\r\n  grid-template-columns: 11fr  ;\r\n}\r\n.search-grid-conatiner > div\r\n{\r\n  font-size: 18.5px;\r\n  padding: 14px;\r\n  padding-top: 5px;\r\n  padding-bottom: 11px;\r\n  background-color: #FBF4EF;\r\n}\r\n.nav-link-icon-search {\r\n  width: 38px;\r\n  padding: 4px;\r\n  margin-top: -4px;\r\n  border: 1px solid lightgrey;\r\n  background-color: white;\r\n  height: 56.5px;\r\n}\r\n/*# sourceMappingURL=style.css.map */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2L25hdi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHFFQUFxRTtBQUNyRTtFQUNFLCtCQUErQjtFQUMvQiwrQ0FBK0M7QUFDakQ7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBOztFQUVFLGFBQWE7RUFDYixXQUFXO0VBQ1gsdUJBQXVCO0VBQ3ZCLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsT0FBTztFQUNQLFlBQVk7QUFDZDtBQUNBO0VBQ0UsYUFBYTtFQUNiLHlCQUF5QjtBQUMzQjtBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLHVCQUF1QjtFQUN2QixnQ0FBZ0M7RUFDaEMsaUNBQWlDO0VBQ2pDLGVBQWU7RUFDZixjQUFjO0VBQ2QsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFFWCxtQkFBbUI7QUFDckI7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLFdBQVc7RUFDWCxtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGlCQUFpQjs7QUFFbkI7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsV0FBVztFQUVILHdCQUF3QjtFQUVoQyxtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLHlCQUF5QjtBQUMzQjtBQUNBOztFQUVFLGFBQWE7QUFDZjtBQUNBOztFQUVFLFVBQVU7QUFDWjtBQUNBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLGVBQWU7QUFDakI7QUFDQTtFQUNFLHFCQUFxQjtFQUNyQiw2Q0FBNkM7RUFDN0Msa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFdBQVc7QUFDYjtBQUNBOztFQUVFLHFCQUFxQjtFQUNyQiw2Q0FBNkM7RUFDN0Msa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLGVBQWU7O0FBRWpCO0FBQ0E7RUFDRSxVQUFVO0VBQ1Ysa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxTQUFTO0FBQ1g7QUFDQTs7RUFFRSxTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0FBQ1o7QUFDQTtFQUNFLHNCQUFzQjtBQUN4QjtBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVixjQUFjO0VBQ2QsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixxQkFBcUI7RUFDckIsa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixXQUFXO0FBQ2I7QUFDQTtFQUNFLFNBQVM7RUFDVCxZQUFZO0FBQ2Q7QUFDQTtFQUNFLFVBQVU7RUFDVixpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLGFBQWE7RUFDYixrQ0FBa0M7RUFDbEMsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQywrQkFBK0I7QUFDL0IsNkJBQTZCO0FBQzdCO0FBRUE7OztFQUdFLGdCQUFnQjtFQUNoQixpQkFBaUI7RUFDakIsYUFBYTs7O0FBR2Y7QUFDQTs7RUFFRSx5QkFBeUI7RUFDekIscUJBQXFCO0FBQ3ZCO0FBQ0E7RUFDRSxZQUFZO0VBQ1osdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsWUFBWTtFQUNaLGlDQUFpQztBQUNuQztBQUNBO0tBQ0ssa0JBQWtCO0tBQ2xCLGFBQWE7S0FDYiwyQkFBMkI7S0FDM0IscUJBQXFCO0tBQ3JCLHdCQUF3QjtLQUN4QixlQUFlO0tBQ2YsVUFBVTs7QUFFZjtBQUNBOztFQUVFLGFBQWE7RUFDYiw2QkFBNkI7QUFDL0I7QUFDQTs7RUFFRSxpQkFBaUI7RUFDakIsYUFBYTtFQUNiLGdCQUFnQjtFQUNoQixvQkFBb0I7RUFDcEIseUJBQXlCO0FBQzNCO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQiwyQkFBMkI7RUFDM0IsdUJBQXVCO0VBQ3ZCLGNBQWM7QUFDaEI7QUFDQSxvQ0FBb0MiLCJmaWxlIjoic3JjL2FwcC9uYXYvbmF2LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybChcImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1OdW5pdG86NDAwLDcwMFwiKTtcclxuQGZvbnQtZmFjZSB7XHJcbiAgZm9udC1mYW1pbHk6IEhlbHZldGljYU5ldWVMaWdodDtcclxuICBzcmM6IHVybCgnL2Fzc2V0cy9mb250L0hlbHZldGljYU5ldWVMaWdodC50dGYnKTtcclxufVxyXG51bHtcclxuICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbn1cclxuLm5hdi1kaXZcclxue1xyXG4gIGhlaWdodDogMTAwdmg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogNzJweDtcclxuICBsZWZ0OiAwO1xyXG4gIHotaW5kZXg6IDIwMDtcclxufVxyXG4uY29udGVudCB7XHJcbiAgcGFkZGluZzogMTlweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkJGNEVGO1xyXG59XHJcblxyXG5sYWJlbCB7XHJcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcclxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcclxuICBib3JkZXItbGVmdDogMCBzb2xpZCB0cmFuc3BhcmVudDtcclxuICBib3JkZXItcmlnaHQ6IDAgc29saWQgdHJhbnNwYXJlbnQ7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIGhlaWdodDogMTlweDtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAxOXB4O1xyXG4gIGxlZnQ6IDIwcHg7IFxyXG4gIHdpZHRoOiAzNnB4O1xyXG4gIC13ZWJraXQtdHJhbnNpdGlvbjogYWxsIC4ycztcclxuICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xyXG59XHJcblxyXG5sYWJlbDo6YmVmb3JlIHtcclxuICBiYWNrZ3JvdW5kOiBibGFjaztcclxuICBjb250ZW50OiAnJztcclxuICBoZWlnaHQ6IDJweDtcclxuICB3aWR0aDogMzZweDtcclxuICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgLyogdG9wOiAxOHB4OyAqL1xyXG4gIG1hcmdpbi10b3A6IDYuMnB4O1xyXG5cclxufVxyXG5cclxubGFiZWw6OmFmdGVyIHtcclxuICBiYWNrZ3JvdW5kOiBibGFjaztcclxuICBjb250ZW50OiAnJztcclxuICBoZWlnaHQ6IDRweDtcclxuICBsZWZ0OiAwO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDZweDtcclxuICBvcGFjaXR5OiAwO1xyXG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcclxuICB3aWR0aDogMTAwJTtcclxuICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcclxuICAgICAgICAgIHRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcclxuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAuMnM7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC4ycztcclxufVxyXG4ubWVudS10ZXh0e1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDQwcHg7XHJcbiAgbGVmdDogMTdweDtcclxuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG59XHJcbi5tZW51LXRleHQ6OmFmdGVyXHJcbntcclxuICBkaXNwbGF5OiBub25lO1xyXG59XHJcbi5sb2dvLW5hdlxyXG57XHJcbiAgd2lkdGg6IDUwJTtcclxufVxyXG4uaW1nZS1sb2dvLWhlYWRlciB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIHBhZGRpbmctdG9wOiAwcHg7XHJcbiAgcGFkZGluZy1sZWZ0OiAwO1xyXG59XHJcbi5mYSB7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGZvbnQ6IG5vcm1hbCBub3JtYWwgbm9ybWFsIDE0cHgvMSBGb250QXdlc29tZTtcclxuICBmb250LXNpemU6IGluaGVyaXQ7XHJcbiAgdGV4dC1yZW5kZXJpbmc6IGF1dG87XHJcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XHJcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcclxuICBmb250LXNpemU6IDM4cHg7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogN3B4O1xyXG4gIHJpZ2h0OiAxOXB4O1xyXG59XHJcbi51c2VyLWltZ1xyXG57XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGZvbnQ6IG5vcm1hbCBub3JtYWwgbm9ybWFsIDE0cHgvMSBGb250QXdlc29tZTtcclxuICBmb250LXNpemU6IGluaGVyaXQ7XHJcbiAgdGV4dC1yZW5kZXJpbmc6IGF1dG87XHJcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XHJcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcclxuICBmb250LXNpemU6IDM4cHg7XHJcbiBcclxufVxyXG5pbWcub3BlbiB7XHJcbiAgd2lkdGg6IDE3JTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAtN3B4O1xyXG4gIGxlZnQ6IDRweDtcclxufVxyXG5pbWcuY2xvc2UtaW1nXHJcbntcclxuICB3aWR0aDogNiU7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogMTdweDtcclxuICBsZWZ0OiAyN3B4O1xyXG59XHJcbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wge1xyXG4gIHBhZGRpbmctbGVmdDogMi4zNzVyZW07XHJcbn1cclxuXHJcbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wtZmVlZGJhY2sge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB6LWluZGV4OiAyO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHdpZHRoOiAyLjM3NXJlbTtcclxuICBoZWlnaHQ6IDIuMzc1cmVtO1xyXG4gIGxpbmUtaGVpZ2h0OiAyLjM3NXJlbTtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XHJcbiAgY29sb3I6ICNhYWE7XHJcbn1cclxuLm5hdi1saW5rcyB7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIHBhZGRpbmc6IDBweDtcclxufVxyXG4ubWFpbiB7XHJcbiAgd2lkdGg6IDUwJTtcclxuICBtYXJnaW46IDUwcHggYXV0bztcclxufVxyXG4uZ3JpZC1jb250YWluZXIge1xyXG4gIGRpc3BsYXk6IGdyaWQ7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMmZyIDFmcjtcclxuICAvKiBwYWRkaW5nOiAxMHB4OyAqL1xyXG4gIG1hcmdpbi1sZWZ0OiBjYWxjKC01MHZ3ICsgNTAlKTtcclxubWFyZ2luLXJpZ2h0OiBjYWxjKC01MHZ3ICsgNTAlKTtcclxubWFyZ2luLXRvcDogY2FsYygtNTB2dyArIDUwJSk7XHJcbn1cclxuXHJcbi5ncmlkLWNvbnRhaW5lciA+IGRpdiB7XHJcbiBcclxuXHJcbiAgdGV4dC1hbGlnbjogTGVmdDtcclxuICBmb250LXNpemU6IDE4LjVweDtcclxuICBwYWRkaW5nOiAxN3B4O1xyXG5cclxuXHJcbn1cclxuLmdyaWQtY29udGFpbmVyOmhvdmVyXHJcbntcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUJFQkVCO1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxufVxyXG5pbWcubmF2LWxpbmstaWNvbiB7XHJcbiAgZmxvYXQ6IHJpZ2h0O1xyXG4gIC8qIHRleHQtYWxpZ246IHJpZ2h0OyAqL1xyXG4gIC8qIGRpc3BsYXk6IGZsZXg7ICovXHJcbn1cclxuLm5hdi1saW5rcy10ZXh0IHtcclxuICBjb2xvcjogYmxhY2s7XHJcbiAgZm9udC1mYW1pbHk6ICdIZWx2ZXRpY2FOZXVlTGlnaHQnO1xyXG59XHJcbmlucHV0W3R5cGU9dGV4dF0ge1xyXG4gICAgIC8qIGZsb2F0OiByaWdodDsgKi9cclxuICAgICBwYWRkaW5nOiAxNXB4O1xyXG4gICAgIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JleTtcclxuICAgICAvKiBtYXJnaW4tdG9wOiA4cHg7ICovXHJcbiAgICAgLyogbWFyZ2luLXJpZ2h0OiAxNnB4OyAqL1xyXG4gICAgIGZvbnQtc2l6ZTogMTdweDtcclxuICAgICB3aWR0aDogODclOyAgXHJcbiAgICAgXHJcbn1cclxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lclxyXG57XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDExZnIgIDtcclxufVxyXG4uc2VhcmNoLWdyaWQtY29uYXRpbmVyID4gZGl2XHJcbntcclxuICBmb250LXNpemU6IDE4LjVweDtcclxuICBwYWRkaW5nOiAxNHB4O1xyXG4gIHBhZGRpbmctdG9wOiA1cHg7XHJcbiAgcGFkZGluZy1ib3R0b206IDExcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI0ZCRjRFRjtcclxufVxyXG4ubmF2LWxpbmstaWNvbi1zZWFyY2gge1xyXG4gIHdpZHRoOiAzOHB4O1xyXG4gIHBhZGRpbmc6IDRweDtcclxuICBtYXJnaW4tdG9wOiAtNHB4O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JleTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICBoZWlnaHQ6IDU2LjVweDtcclxufVxyXG4vKiMgc291cmNlTWFwcGluZ1VSTD1zdHlsZS5jc3MubWFwICovIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700\");\r\n@font-face {\r\n  font-family: HelveticaNeueLight;\r\n  src: url('/assets/font/HelveticaNeueLight.ttf');\r\n}\r\nul{\r\n  list-style-type: none;\r\n}\r\n.nav-div\r\n{\r\n  height: 100vh;\r\n  width: 100%;\r\n  background-color: white;\r\n  position: absolute;\r\n  top: 70px;\r\n  left: 0;\r\n  z-index: 200;\r\n}\r\n.content {\r\n  padding: 19px;\r\n  background-color: #FBF4EF;\r\n}\r\nlabel {\r\n  background: none transparent;\r\n  border: 2px solid black;\r\n  border-left: 0 solid transparent;\r\n  border-right: 0 solid transparent;\r\n  cursor: pointer;\r\n  display: block;\r\n  height: 19px;\r\n  position: absolute;\r\n  top: 19px;\r\n  left: 20px; \r\n  width: 36px;\r\n  transition: all .2s;\r\n}\r\nlabel::before {\r\n  background: black;\r\n  content: '';\r\n  height: 2px;\r\n  width: 36px;\r\n  transition: all .2s;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  /* top: 18px; */\r\n  margin-top: 6.2px;\r\n\r\n}\r\nlabel::after {\r\n  background: black;\r\n  content: '';\r\n  height: 4px;\r\n  left: 0;\r\n  position: absolute;\r\n  top: 6px;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n  width: 100%;\r\n  transform: rotate(90deg);\r\n  transition: all .2s;\r\n}\r\n.menu-text{\r\n  position: absolute;\r\n  top: 40px;\r\n  left: 13px;\r\n  text-transform: uppercase;\r\n  margin-top: 2px;\r\n}\r\n.menu-text::after\r\n{\r\n  display: none;\r\n}\r\n.logo-nav\r\n{\r\n  width: 50%;\r\n}\r\n.imge-logo-header {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  padding-top: 0px;\r\n  padding-left: 0;\r\n}\r\n.fa {\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  font-size: 30px;\r\n  position: absolute;\r\n  top: 14px;\r\n  right: 0px;\r\n  margin-top: 0px;\r\n}\r\n.user-img\r\n{\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  font-size: 38px;\r\n \r\n}\r\nimg.open {\r\n  width: 17%;\r\n  position: absolute;\r\n  top: 0px;\r\n  left: 4px;\r\n}\r\nimg.close-img\r\n{\r\n  width: 6%;\r\n  position: absolute;\r\n  top: 17px;\r\n  left: 27px;\r\n}\r\n.has-search .form-control {\r\n  padding-left: 2.375rem;\r\n}\r\n.has-search .form-control-feedback {\r\n  position: absolute;\r\n  z-index: 2;\r\n  display: block;\r\n  width: 2.375rem;\r\n  height: 2.375rem;\r\n  line-height: 2.375rem;\r\n  text-align: center;\r\n  pointer-events: none;\r\n  color: #aaa;\r\n}\r\n.nav-links {\r\n  margin: 0;\r\n  padding: 0px;\r\n}\r\n.main {\r\n  width: 50%;\r\n  margin: 50px auto;\r\n}\r\n.grid-container {\r\n  display: grid;\r\n  grid-template-columns: 1fr 2fr 1fr;\r\n  /* padding: 10px; */\r\n  margin-left: calc(-50vw + 50%);\r\nmargin-right: calc(-50vw + 50%);\r\nmargin-top: calc(-50vw + 50%);\r\n}\r\n.grid-container > div {\r\n \r\n\r\n  text-align: Left;\r\n  font-size: 18.5px;\r\n  padding: 17px;\r\n\r\n\r\n}\r\n.grid-container:hover\r\n{\r\n  background-color: #EBEBEB;\r\n  text-decoration: none;\r\n}\r\nimg.nav-link-icon {\r\n  float: right;\r\n  /* text-align: right; */\r\n  /* display: flex; */\r\n}\r\n.nav-links-text {\r\n  color: black;\r\n  font-family: 'HelveticaNeueLight';\r\n}\r\ninput[type=text] {\r\n     /* float: right; */\r\n     padding: 15px;\r\n     border: 1px solid lightgrey;\r\n     /* margin-top: 8px; */\r\n     /* margin-right: 16px; */\r\n     font-size: 17px;\r\n     width: 87%;  \r\n     \r\n}\r\n.search-grid-conatiner\r\n{\r\n  display: grid;\r\n  grid-template-columns: 11fr  ;\r\n}\r\n.search-grid-conatiner > div\r\n{\r\n  font-size: 18.5px;\r\n  padding: 14px;\r\n  padding-top: 5px;\r\n  padding-bottom: 11px;\r\n  background-color: #FBF4EF;\r\n}\r\n.nav-link-icon-search {\r\n  width: 38px;\r\n  padding: 4px;\r\n  margin-top: -4px;\r\n  border: 1px solid lightgrey;\r\n  background-color: white;\r\n  height: 56.5px;\r\n}\r\ni.fa.fa-user {\r\n  display: flex;\r\n  flex-direction: column;\r\n \r\n}\r\nspan.log-out-text {\r\n  font-size: 12px;\r\n  position: relative;\r\n  right: 12px;\r\n  margin-top: 5px;\r\n  text-transform: uppercase;\r\n  font-family: HelveticaNeueLight;\r\n}\r\n.btn-facebook\r\n\r\n\r\n{\r\n background-color: #244D93;\r\n color: white;\r\n width: 30%;\r\n    height: 35px;\r\n    text-align: center;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    font-family: 'Open Sans', sans-serif;\r\n}\r\n.btn-google\r\n{\r\n    background-color: #DD4B33;\r\n    color: white;\r\n    width: 30%;\r\n    height: 35px;\r\n    text-align: center;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    font-family: 'Open Sans', sans-serif;\r\n}\r\n.social-login h4\r\n{\r\n    font-family: 'Open Sans', sans-serif;\r\n    font-weight: 700;\r\n}\r\n.social-button {\r\n    display: flex;\r\n    /* justify-content: center; */\r\n    justify-content: space-evenly;\r\n    align-items: center;\r\n\r\n}\r\n.color-signup\r\n{\r\n    color: #244D93;\r\n}\r\n.btn-social-login\r\n{\r\n    width: 100%;\r\n    background-color: #244D93;\r\n    color: white;\r\n    margin-top: 3%;\r\n    font-family: 'Open Sans', sans-serif;\r\n  \r\n}\r\ni.fa.fa-user.input-group-text.nav-login-form{\r\n  position: absolute;\r\n  font-size: 23px;\r\n  left: 0px;\r\n  width: 10%;\r\n  z-index: 10;\r\n  margin-top: -4%;\r\n}\r\n.social-login.text-center {\r\n  padding: 15px;\r\n}\r\n.checkbox\r\n{\r\n  background: none transparent;\r\n     border: none; \r\n     border-left: none; \r\n     border-right: none; \r\n    cursor: pointer;\r\n    /* display: block; */\r\n    height: auto;\r\n    position: absolute;\r\n    top: none; \r\n     left: none; \r\n    right: 9px;\r\n     width: none; \r\n    /* transition: all .2s; */\r\n    display: flex;\r\n    flex-direction: row;\r\n\r\n}\r\n/*# sourceMappingURL=style.css.map */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2L25hdi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHFFQUFxRTtBQUNyRTtFQUNFLCtCQUErQjtFQUMvQiwrQ0FBK0M7QUFDakQ7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBOztFQUVFLGFBQWE7RUFDYixXQUFXO0VBQ1gsdUJBQXVCO0VBQ3ZCLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsT0FBTztFQUNQLFlBQVk7QUFDZDtBQUNBO0VBQ0UsYUFBYTtFQUNiLHlCQUF5QjtBQUMzQjtBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLHVCQUF1QjtFQUN2QixnQ0FBZ0M7RUFDaEMsaUNBQWlDO0VBQ2pDLGVBQWU7RUFDZixjQUFjO0VBQ2QsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFFWCxtQkFBbUI7QUFDckI7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLFdBQVc7RUFDWCxtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGlCQUFpQjs7QUFFbkI7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsV0FBVztFQUVILHdCQUF3QjtFQUVoQyxtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLHlCQUF5QjtFQUN6QixlQUFlO0FBQ2pCO0FBQ0E7O0VBRUUsYUFBYTtBQUNmO0FBQ0E7O0VBRUUsVUFBVTtBQUNaO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLG1CQUFtQjtFQUNuQixnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLDZDQUE2QztFQUM3QyxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLG1DQUFtQztFQUNuQyxrQ0FBa0M7RUFDbEMsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLGVBQWU7QUFDakI7QUFDQTs7RUFFRSxxQkFBcUI7RUFDckIsNkNBQTZDO0VBQzdDLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsbUNBQW1DO0VBQ25DLGtDQUFrQztFQUNsQyxlQUFlOztBQUVqQjtBQUNBO0VBQ0UsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsU0FBUztBQUNYO0FBQ0E7O0VBRUUsU0FBUztFQUNULGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtBQUNaO0FBQ0E7RUFDRSxzQkFBc0I7QUFDeEI7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsY0FBYztFQUNkLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsV0FBVztBQUNiO0FBQ0E7RUFDRSxTQUFTO0VBQ1QsWUFBWTtBQUNkO0FBQ0E7RUFDRSxVQUFVO0VBQ1YsaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isa0NBQWtDO0VBQ2xDLG1CQUFtQjtFQUNuQiw4QkFBOEI7QUFDaEMsK0JBQStCO0FBQy9CLDZCQUE2QjtBQUM3QjtBQUVBOzs7RUFHRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGFBQWE7OztBQUdmO0FBQ0E7O0VBRUUseUJBQXlCO0VBQ3pCLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsWUFBWTtFQUNaLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLFlBQVk7RUFDWixpQ0FBaUM7QUFDbkM7QUFDQTtLQUNLLGtCQUFrQjtLQUNsQixhQUFhO0tBQ2IsMkJBQTJCO0tBQzNCLHFCQUFxQjtLQUNyQix3QkFBd0I7S0FDeEIsZUFBZTtLQUNmLFVBQVU7O0FBRWY7QUFDQTs7RUFFRSxhQUFhO0VBQ2IsNkJBQTZCO0FBQy9CO0FBQ0E7O0VBRUUsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsb0JBQW9CO0VBQ3BCLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsMkJBQTJCO0VBQzNCLHVCQUF1QjtFQUN2QixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCOztBQUV4QjtBQUNBO0VBQ0UsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsZUFBZTtFQUNmLHlCQUF5QjtFQUN6QiwrQkFBK0I7QUFDakM7QUFDQTs7OztDQUlDLHlCQUF5QjtDQUN6QixZQUFZO0NBQ1osVUFBVTtJQUNQLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsV0FBVztJQUNYLFlBQVk7SUFDWixvQ0FBb0M7QUFDeEM7QUFDQTs7SUFFSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBQ1osb0NBQW9DO0FBQ3hDO0FBQ0E7O0lBRUksb0NBQW9DO0lBQ3BDLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2QjtJQUM3Qiw2QkFBNkI7SUFDN0IsbUJBQW1COztBQUV2QjtBQUNBOztJQUVJLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxXQUFXO0lBQ1gseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixjQUFjO0lBQ2Qsb0NBQW9DOztBQUV4QztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7QUFDQTs7RUFFRSw0QkFBNEI7S0FDekIsWUFBWTtLQUNaLGlCQUFpQjtLQUNqQixrQkFBa0I7SUFDbkIsZUFBZTtJQUNmLG9CQUFvQjtJQUNwQixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFNBQVM7S0FDUixVQUFVO0lBQ1gsVUFBVTtLQUNULFdBQVc7SUFDWix5QkFBeUI7SUFDekIsYUFBYTtJQUNiLG1CQUFtQjs7QUFFdkI7QUFDQSxvQ0FBb0MiLCJmaWxlIjoic3JjL2FwcC9uYXYvbmF2LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybChcImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1OdW5pdG86NDAwLDcwMFwiKTtcclxuQGZvbnQtZmFjZSB7XHJcbiAgZm9udC1mYW1pbHk6IEhlbHZldGljYU5ldWVMaWdodDtcclxuICBzcmM6IHVybCgnL2Fzc2V0cy9mb250L0hlbHZldGljYU5ldWVMaWdodC50dGYnKTtcclxufVxyXG51bHtcclxuICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbn1cclxuLm5hdi1kaXZcclxue1xyXG4gIGhlaWdodDogMTAwdmg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogNzBweDtcclxuICBsZWZ0OiAwO1xyXG4gIHotaW5kZXg6IDIwMDtcclxufVxyXG4uY29udGVudCB7XHJcbiAgcGFkZGluZzogMTlweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkJGNEVGO1xyXG59XHJcblxyXG5sYWJlbCB7XHJcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcclxuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcclxuICBib3JkZXItbGVmdDogMCBzb2xpZCB0cmFuc3BhcmVudDtcclxuICBib3JkZXItcmlnaHQ6IDAgc29saWQgdHJhbnNwYXJlbnQ7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIGhlaWdodDogMTlweDtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAxOXB4O1xyXG4gIGxlZnQ6IDIwcHg7IFxyXG4gIHdpZHRoOiAzNnB4O1xyXG4gIC13ZWJraXQtdHJhbnNpdGlvbjogYWxsIC4ycztcclxuICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xyXG59XHJcblxyXG5sYWJlbDo6YmVmb3JlIHtcclxuICBiYWNrZ3JvdW5kOiBibGFjaztcclxuICBjb250ZW50OiAnJztcclxuICBoZWlnaHQ6IDJweDtcclxuICB3aWR0aDogMzZweDtcclxuICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgLyogdG9wOiAxOHB4OyAqL1xyXG4gIG1hcmdpbi10b3A6IDYuMnB4O1xyXG5cclxufVxyXG5cclxubGFiZWw6OmFmdGVyIHtcclxuICBiYWNrZ3JvdW5kOiBibGFjaztcclxuICBjb250ZW50OiAnJztcclxuICBoZWlnaHQ6IDRweDtcclxuICBsZWZ0OiAwO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDZweDtcclxuICBvcGFjaXR5OiAwO1xyXG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcclxuICB3aWR0aDogMTAwJTtcclxuICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcclxuICAgICAgICAgIHRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcclxuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAuMnM7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC4ycztcclxufVxyXG4ubWVudS10ZXh0e1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDQwcHg7XHJcbiAgbGVmdDogMTNweDtcclxuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gIG1hcmdpbi10b3A6IDJweDtcclxufVxyXG4ubWVudS10ZXh0OjphZnRlclxyXG57XHJcbiAgZGlzcGxheTogbm9uZTtcclxufVxyXG4ubG9nby1uYXZcclxue1xyXG4gIHdpZHRoOiA1MCU7XHJcbn1cclxuLmltZ2UtbG9nby1oZWFkZXIge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBwYWRkaW5nLXRvcDogMHB4O1xyXG4gIHBhZGRpbmctbGVmdDogMDtcclxufVxyXG4uZmEge1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBmb250OiBub3JtYWwgbm9ybWFsIG5vcm1hbCAxNHB4LzEgRm9udEF3ZXNvbWU7XHJcbiAgZm9udC1zaXplOiBpbmhlcml0O1xyXG4gIHRleHQtcmVuZGVyaW5nOiBhdXRvO1xyXG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xyXG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XHJcbiAgZm9udC1zaXplOiAzMHB4O1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDE0cHg7XHJcbiAgcmlnaHQ6IDBweDtcclxuICBtYXJnaW4tdG9wOiAwcHg7XHJcbn1cclxuLnVzZXItaW1nXHJcbntcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgZm9udDogbm9ybWFsIG5vcm1hbCBub3JtYWwgMTRweC8xIEZvbnRBd2Vzb21lO1xyXG4gIGZvbnQtc2l6ZTogaW5oZXJpdDtcclxuICB0ZXh0LXJlbmRlcmluZzogYXV0bztcclxuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcclxuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xyXG4gIGZvbnQtc2l6ZTogMzhweDtcclxuIFxyXG59XHJcbmltZy5vcGVuIHtcclxuICB3aWR0aDogMTclO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDBweDtcclxuICBsZWZ0OiA0cHg7XHJcbn1cclxuaW1nLmNsb3NlLWltZ1xyXG57XHJcbiAgd2lkdGg6IDYlO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDE3cHg7XHJcbiAgbGVmdDogMjdweDtcclxufVxyXG4uaGFzLXNlYXJjaCAuZm9ybS1jb250cm9sIHtcclxuICBwYWRkaW5nLWxlZnQ6IDIuMzc1cmVtO1xyXG59XHJcblxyXG4uaGFzLXNlYXJjaCAuZm9ybS1jb250cm9sLWZlZWRiYWNrIHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgei1pbmRleDogMjtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICB3aWR0aDogMi4zNzVyZW07XHJcbiAgaGVpZ2h0OiAyLjM3NXJlbTtcclxuICBsaW5lLWhlaWdodDogMi4zNzVyZW07XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIHBvaW50ZXItZXZlbnRzOiBub25lO1xyXG4gIGNvbG9yOiAjYWFhO1xyXG59XHJcbi5uYXYtbGlua3Mge1xyXG4gIG1hcmdpbjogMDtcclxuICBwYWRkaW5nOiAwcHg7XHJcbn1cclxuLm1haW4ge1xyXG4gIHdpZHRoOiA1MCU7XHJcbiAgbWFyZ2luOiA1MHB4IGF1dG87XHJcbn1cclxuLmdyaWQtY29udGFpbmVyIHtcclxuICBkaXNwbGF5OiBncmlkO1xyXG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDJmciAxZnI7XHJcbiAgLyogcGFkZGluZzogMTBweDsgKi9cclxuICBtYXJnaW4tbGVmdDogY2FsYygtNTB2dyArIDUwJSk7XHJcbm1hcmdpbi1yaWdodDogY2FsYygtNTB2dyArIDUwJSk7XHJcbm1hcmdpbi10b3A6IGNhbGMoLTUwdncgKyA1MCUpO1xyXG59XHJcblxyXG4uZ3JpZC1jb250YWluZXIgPiBkaXYge1xyXG4gXHJcblxyXG4gIHRleHQtYWxpZ246IExlZnQ7XHJcbiAgZm9udC1zaXplOiAxOC41cHg7XHJcbiAgcGFkZGluZzogMTdweDtcclxuXHJcblxyXG59XHJcbi5ncmlkLWNvbnRhaW5lcjpob3ZlclxyXG57XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI0VCRUJFQjtcclxuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XHJcbn1cclxuaW1nLm5hdi1saW5rLWljb24ge1xyXG4gIGZsb2F0OiByaWdodDtcclxuICAvKiB0ZXh0LWFsaWduOiByaWdodDsgKi9cclxuICAvKiBkaXNwbGF5OiBmbGV4OyAqL1xyXG59XHJcbi5uYXYtbGlua3MtdGV4dCB7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG4gIGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhTmV1ZUxpZ2h0JztcclxufVxyXG5pbnB1dFt0eXBlPXRleHRdIHtcclxuICAgICAvKiBmbG9hdDogcmlnaHQ7ICovXHJcbiAgICAgcGFkZGluZzogMTVweDtcclxuICAgICBib3JkZXI6IDFweCBzb2xpZCBsaWdodGdyZXk7XHJcbiAgICAgLyogbWFyZ2luLXRvcDogOHB4OyAqL1xyXG4gICAgIC8qIG1hcmdpbi1yaWdodDogMTZweDsgKi9cclxuICAgICBmb250LXNpemU6IDE3cHg7XHJcbiAgICAgd2lkdGg6IDg3JTsgIFxyXG4gICAgIFxyXG59XHJcbi5zZWFyY2gtZ3JpZC1jb25hdGluZXJcclxue1xyXG4gIGRpc3BsYXk6IGdyaWQ7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxMWZyICA7XHJcbn1cclxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lciA+IGRpdlxyXG57XHJcbiAgZm9udC1zaXplOiAxOC41cHg7XHJcbiAgcGFkZGluZzogMTRweDtcclxuICBwYWRkaW5nLXRvcDogNXB4O1xyXG4gIHBhZGRpbmctYm90dG9tOiAxMXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNGQkY0RUY7XHJcbn1cclxuLm5hdi1saW5rLWljb24tc2VhcmNoIHtcclxuICB3aWR0aDogMzhweDtcclxuICBwYWRkaW5nOiA0cHg7XHJcbiAgbWFyZ2luLXRvcDogLTRweDtcclxuICBib3JkZXI6IDFweCBzb2xpZCBsaWdodGdyZXk7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgaGVpZ2h0OiA1Ni41cHg7XHJcbn1cclxuaS5mYS5mYS11c2VyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiBcclxufVxyXG5zcGFuLmxvZy1vdXQtdGV4dCB7XHJcbiAgZm9udC1zaXplOiAxMnB4O1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICByaWdodDogMTJweDtcclxuICBtYXJnaW4tdG9wOiA1cHg7XHJcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxuICBmb250LWZhbWlseTogSGVsdmV0aWNhTmV1ZUxpZ2h0O1xyXG59XHJcbi5idG4tZmFjZWJvb2tcclxuXHJcblxyXG57XHJcbiBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gY29sb3I6IHdoaXRlO1xyXG4gd2lkdGg6IDMwJTtcclxuICAgIGhlaWdodDogMzVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbjogMHB4O1xyXG4gICAgcGFkZGluZzogMHB4O1xyXG4gICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG59XHJcbi5idG4tZ29vZ2xlXHJcbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICNERDRCMzM7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB3aWR0aDogMzAlO1xyXG4gICAgaGVpZ2h0OiAzNXB4O1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgbWFyZ2luOiAwcHg7XHJcbiAgICBwYWRkaW5nOiAwcHg7XHJcbiAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbn1cclxuLnNvY2lhbC1sb2dpbiBoNFxyXG57XHJcbiAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXdlaWdodDogNzAwO1xyXG59XHJcbi5zb2NpYWwtYnV0dG9uIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuXHJcbn1cclxuLmNvbG9yLXNpZ251cFxyXG57XHJcbiAgICBjb2xvcjogIzI0NEQ5MztcclxufVxyXG4uYnRuLXNvY2lhbC1sb2dpblxyXG57XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBtYXJnaW4tdG9wOiAzJTtcclxuICAgIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICBcclxufVxyXG5pLmZhLmZhLXVzZXIuaW5wdXQtZ3JvdXAtdGV4dC5uYXYtbG9naW4tZm9ybXtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgZm9udC1zaXplOiAyM3B4O1xyXG4gIGxlZnQ6IDBweDtcclxuICB3aWR0aDogMTAlO1xyXG4gIHotaW5kZXg6IDEwO1xyXG4gIG1hcmdpbi10b3A6IC00JTtcclxufVxyXG4uc29jaWFsLWxvZ2luLnRleHQtY2VudGVyIHtcclxuICBwYWRkaW5nOiAxNXB4O1xyXG59XHJcbi5jaGVja2JveFxyXG57XHJcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcclxuICAgICBib3JkZXI6IG5vbmU7IFxyXG4gICAgIGJvcmRlci1sZWZ0OiBub25lOyBcclxuICAgICBib3JkZXItcmlnaHQ6IG5vbmU7IFxyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG4gICAgLyogZGlzcGxheTogYmxvY2s7ICovXHJcbiAgICBoZWlnaHQ6IGF1dG87XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IG5vbmU7IFxyXG4gICAgIGxlZnQ6IG5vbmU7IFxyXG4gICAgcmlnaHQ6IDlweDtcclxuICAgICB3aWR0aDogbm9uZTsgXHJcbiAgICAvKiB0cmFuc2l0aW9uOiBhbGwgLjJzOyAqL1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcblxyXG59XHJcbi8qIyBzb3VyY2VNYXBwaW5nVVJMPXN0eWxlLmNzcy5tYXAgKi8iXX0= */");
 
 /***/ }),
 
@@ -1200,13 +1762,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavComponent", function() { return NavComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+
+
+
 
 
 let NavComponent = class NavComponent {
-    constructor() { }
+    constructor(authService, afs, // Inject Firestore service
+    afAuth) {
+        this.authService = authService;
+        this.afs = afs;
+        this.afAuth = afAuth;
+        this.isLoggedIn = true;
+    }
+    get user() {
+        return this._user;
+    }
+    set user(value) {
+        this._user = value;
+    }
     ngOnInit() {
+        this.afAuth.authState.subscribe(user => {
+            if (user) {
+                this.userData = user;
+                localStorage.setItem('user', JSON.stringify(this.userData));
+                JSON.parse(localStorage.getItem('user'));
+                this.LoggedIn();
+            }
+            else {
+                localStorage.setItem('user', null);
+                JSON.parse(localStorage.getItem('user'));
+                this.LoggedOut();
+            }
+        });
+    }
+    LoggedIn() {
+        this.isLoggedIn = true;
+    }
+    LoggedOut() {
+        this.isLoggedIn = false;
     }
 };
+NavComponent.ctorParameters = () => [
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
+    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_4__["AngularFirestore"] },
+    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"] }
+];
 NavComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-nav',
@@ -1508,13 +2112,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SellerformComponent", function() { return SellerformComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
+
+
+
 
 
 let SellerformComponent = class SellerformComponent {
-    constructor() { }
+    constructor(authService, afs, // Inject Firestore service
+    afAuth) {
+        this.authService = authService;
+        this.afs = afs;
+        this.afAuth = afAuth;
+        this.isLoggedIn = true;
+    }
     ngOnInit() {
+        this.afAuth.authState.subscribe(user => {
+            if (user) {
+                this.userData = user;
+                localStorage.setItem('user', JSON.stringify(this.userData));
+                JSON.parse(localStorage.getItem('user'));
+                this.LoggedIn();
+            }
+            else {
+                localStorage.setItem('user', null);
+                JSON.parse(localStorage.getItem('user'));
+                this.LoggedOut();
+            }
+        });
+    }
+    LoggedIn() {
+        this.isLoggedIn = true;
+    }
+    LoggedOut() {
+        this.isLoggedIn = false;
     }
 };
+SellerformComponent.ctorParameters = () => [
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"] },
+    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__["AngularFirestore"] },
+    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"] }
+];
 SellerformComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-sellerform',
@@ -1587,7 +2227,16 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 
 const environment = {
-    production: false
+    production: false,
+    firebaseConfig: {
+        apiKey: "AIzaSyAAyKY3KkG0l5LNzd1SDfOaF1FMpHWW0FA",
+        authDomain: "streethook-d1b9a.firebaseapp.com",
+        databaseURL: "https://streethook-d1b9a.firebaseio.com",
+        projectId: "streethook-d1b9a",
+        storageBucket: "streethook-d1b9a.appspot.com",
+        messagingSenderId: "462416760955",
+        appId: "1:462416760955:web:20980765f71edeefe292de"
+    }
 };
 /*
  * For easier debugging in development mode, you can import the following file
@@ -1642,4 +2291,3 @@ module.exports = __webpack_require__(/*! C:\Users\13\Desktop\streethok\src\main.
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main-es2015.js.map
