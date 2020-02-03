@@ -26,6 +26,9 @@
     
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/jquery.easy-autocomplete.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/easy-autocomplete/1.3.5/easy-autocomplete.min.css">
 </head>
 <body>
   <app-root></app-root>
@@ -75,6 +78,35 @@
 
 
     </script>
-
+<script>
+  $(function() {
+   var selectItem = function(event, ui) {
+    $("#tags").val(ui.item.value);
+    return false;
+   }
+   var options = {
+    url: function(phrase) {
+     return "https://api-full.addressian.co.uk/address/" + phrase;
+    },
+    ajaxSettings: {
+     headers: {
+      'x-api-key': '[BcLIABSb6J3HsvGTpI5jA8FrtOaQqR67736r1Hip]'
+     }
+    },
+    getValue: function(element) {
+     return element.address.join(", ") + ", " + element.citytown + ", " + element.postcode;
+    },
+    theme: "blue-light",
+    placeholder: "Type an address in here..",
+    list: {
+     maxNumberOfElements: 20,
+     onClickEvent: function() {
+      alert("The postcode of the item you clicked on was " + $("#tags").getSelectedItemData().postcode);
+     }
+    }
+   };
+   $("#tags").easyAutocomplete(options);
+  });
+ </script>
 <script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
 </html>
