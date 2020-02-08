@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n\r\n<div class=\"container confirm-main-container\">\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Personal Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Name:\r\n            <span class=\"output\">&nbsp;{{ Buyer.Firstname }} {{ Buyer.Lastname }}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Email Address:<span class=\"output\">&nbsp;{{Buyer.Email}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Date of Birth:<span class=\"output\">&nbsp;{{Buyer.DOB}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Chain status:<span class=\"output\">&nbsp;{{Buyer.ChainStatus}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Financial Position:<span\r\n              class=\"output\">&nbsp;{{Buyer.FinancialPosition}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Property Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Property Type:\r\n            <span class=\"output\">&nbsp;{{Buyer.Propertytype}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Search Radius:<span class=\"output\">&nbsp;{{Buyer.SearchRadius}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Price Range:<span class=\"output\">&nbsp;{{Buyer.PriceRange}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Offer validity:<span class=\"output\">&nbsp;{{Buyer.Validity}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Property Condition:<span class=\"output\">&nbsp;{{Buyer.Condition}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Operational Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Type:\r\n            <span class=\"output\">&nbsp;{{Buyer.Type}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Position:<span class=\"output\">&nbsp; {{Buyer.Position}}</span></td>\r\n\r\n        </tr>\r\n\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n\r\n\r\n  <div class=\"endind-button mt-5\">\r\n    <button type=\"button\" class=\"btn btn-back\">Back</button>\r\n    <button type=\"button\" class=\"btn btn-next\" (click)=\"submitForm()\" >Submit</button>\r\n  </div>\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n\r\n<div class=\"container confirm-main-container\">\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Personal Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Name:\r\n            <span class=\"output\">&nbsp;{{ Buyer.Firstname }} {{ Buyer.Lastname }}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Email Address:<span class=\"output\">&nbsp;{{Buyer.Email}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Date of Birth:<span class=\"output\">&nbsp;{{Buyer.DOB}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Chain status:<span class=\"output\">&nbsp;{{Buyer.ChainStatus}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Financial Position:<span\r\n              class=\"output\">&nbsp;{{Buyer.FinancialPosition}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Property Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Property Type:\r\n            <span class=\"output\">&nbsp;{{Buyer.Propertytype}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Search Radius:<span class=\"output\">&nbsp;{{Buyer.SearchRadius}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Price Range:<span class=\"output\">&nbsp;{{Buyer.PriceRange}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Offer validity:<span class=\"output\">&nbsp;{{Buyer.Validity}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Property Condition:<span class=\"output\">&nbsp;{{Buyer.Condition}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Operational Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Type:\r\n            <span class=\"output\">&nbsp;{{Buyer.Type}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Position:<span class=\"output\">&nbsp; {{Buyer.Position}}</span></td>\r\n\r\n        </tr>\r\n\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n\r\n\r\n  <div class=\"endind-button mt-5\">\r\n    <button type=\"button\" (click)=\"matgroup.forms.selectedIndex = 0\" class=\"btn btn-back\">Back</button>\r\n    <button type=\"button\" class=\"btn btn-next\" (click)=\"submitForm()\" >Submit</button>\r\n  </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -188,7 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<mat-dialog-content>\n\t<p>\n\t\t{{message}}\n\t</p>\n</mat-dialog-content>\n<mat-dialog-actions align=\"center\">\n\t<button mat-raised-button color=\"primary\" (click)=\"onConfirmClick()\" tabindex=\"1\">{{confirmButtonText}}</button>\n\t<button mat-raised-button mat-dialog-close tabindex=\"-1\">{{cancelButtonText}}</button>\n</mat-dialog-actions>");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-dialog-content>\r\n\t<p>\r\n\t\t{{message}}\r\n\t</p>\r\n</mat-dialog-content>\r\n<mat-dialog-actions align=\"center\">\r\n\t<button mat-raised-button color=\"primary\" (click)=\"onConfirmClick()\" tabindex=\"1\">{{confirmButtonText}}</button>\r\n\t<button mat-raised-button mat-dialog-close tabindex=\"-1\">{{cancelButtonText}}</button>\r\n</mat-dialog-actions>");
 
 /***/ }),
 
@@ -201,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- Loading spinner -->\r\n<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n<div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\r\n  <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\r\n  <div class=\"social-button mt-4\">\r\n    <button type=\"button\" class=\"btn btn-facebook \" (click)=\"authService.FacebookAuth()\">\r\n      Facebook\r\n    </button>\r\n    <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">\r\n      Google+\r\n    </button>\r\n  </div>\r\n  <div class=\"input-group mb-3 mt-3\">\r\n\r\n    <mat-form-field class=\"example-full-width\">\r\n      <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Enter email\" #userEmail></textarea>\r\n    </mat-form-field>\r\n\r\n  </div>\r\n  <mat-form-field class=\"example-full-width\">\r\n    <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Password\" #userPassword></textarea>\r\n  </mat-form-field>\r\n\r\n  <div class=\"input-group-prepend other-option\">\r\n    <label class=\"checkbox\">\r\n      <input type=\"checkbox\" value=\"remember-me\" />Remember Me\r\n    </label>\r\n    <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\r\n  </div>\r\n  <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignIn(userEmail.value, userPassword.value)\">\r\n    Login\r\n  </button>\r\n  <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignUp(userEmail.value, userPassword.value)\">\r\n    Sign Up\r\n  </button>\r\n</div>\r\n\r\n<form (ngSubmit)=\"onSubmit()\" *ngIf=\"isLoggedIn\">\r\n  <mat-tab-group #matgroup class=\"form-tab-conatiner\">\r\n    <mat-tab label=\"Personal Details \" class=\"tabs-align-padding\">\r\n      <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\r\n        <h4 class=\"mt-4 forms-heading\">Personal Details</h4>\r\n        <p class=\"forms-star\">*required</p>\r\n\r\n\r\n        <mat-form-field>\r\n          <mat-label>Title*</mat-label>\r\n          <mat-select name=\"title\" [(ngModel)]=\"Buyer.title\" class=\"drop-down-list\">\r\n            <mat-option value=\"Mr\">Mr</mat-option>\r\n            <mat-option value=\"Ms\">Ms</mat-option>\r\n            <mat-option value=\"Mrs\">Mrs</mat-option>\r\n\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"First Name\" [formControl]=\"firstnameFormControl\" id=\"name\" required\r\n            [(ngModel)]=\"Buyer.firstname\" name=\"First\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"firstnameFormControl.hasError('First Name') && !firstnameFormControl.hasError('required')\">\r\n            Please enter a valid email address\r\n          </mat-error>\r\n          <mat-error *ngIf=\"firstnameFormControl.hasError('required')\">\r\n            FirstName is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"LastName\" [formControl]=\"lastnameFormControl\" id=\"name\" required\r\n            [(ngModel)]=\"Buyer.Lastname\" name=\"Last\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"lastnameFormControl.hasError('LastName') && !lastnameFormControl.hasError('required')\">\r\n            Please enter a valid email address\r\n          </mat-error>\r\n          <mat-error *ngIf=\"lastnameFormControl.hasError('required')\">\r\n            LastName is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Email\" [formControl]=\"emailFormControl\" id=\"name\" [(ngModel)]=\"Buyer.Email\"\r\n            name=\"Email\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\r\n            Please enter a valid email address\r\n          </mat-error>\r\n          <mat-error *ngIf=\"emailFormControl.hasError('required')\">\r\n            Email is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput [matDatepicker]=\"picker\" placeholder=\"Date of Birth\" id=\"name\" required\r\n            [(ngModel)]=\"Buyer.DOB\" name=\"DOB\" class=\"mat-mail-input\" class=\"example-full-width\">\r\n          <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n          <mat-datepicker #picker></mat-datepicker>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Financial Position*</mat-label>\r\n          <mat-select name=\"FinancialPosition\" [(ngModel)]=\"Buyer.FinancialPosition\" value=\"FinancialPosition\"\r\n            class=\"example-full-width\">\r\n            <mat-option value=\"Mortgage Free\">Mortgage Free</mat-option>\r\n            <mat-option value=\"Mortgage to be Arranged\">Mortgage to be Arranged</mat-option>\r\n            <mat-option value=\"Mortgage Arrange\">Mortgage Arrange</mat-option>\r\n            <mat-option value=\"Cash Buyer\">Cash Buyer</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Chain Status*</mat-label>\r\n          <mat-select name=\"ChainStatus\" [(ngModel)]=\"Buyer.ChainStatus\" value=\"ChainStatus\" class=\"example-full-width\">\r\n            <mat-option value=\"First Time Buyer\">First Time Buyer</mat-option>\r\n            <mat-option value=\"In Chain(Sellinng to buy)\">In Chain(Sellinng to buy)</mat-option>\r\n            <mat-option value=\"Chain-Free\">Chain-Free</mat-option>\r\n\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n\r\n\r\n        <div class=\"button-next\">\r\n          <a (click)=\"matgroup.selectedIndex = 1\" class=\"btn btn-primary btnNext btn-next\">Next</a>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n\r\n    <mat-tab label=\"Property Details\" class=\"tabs-align-padding\">\r\n      <div class=\"tabs-align-padding\">\r\n        <p>Search by Postcode</p>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input type=\"text\" placeholder=\"Postcode\" aria-label=\"Postcode\" matInput [formControl]=\"myControl\"\r\n            [matAutocomplete]=\"auto\" [(ngModel)]=\"Buyer.postcode\">\r\n          <mat-autocomplete #auto=\"matAutocomplete\" [displayWith]=\"displayFn\">\r\n            <mat-option *ngFor=\"let option of filteredOptions | async\" [value]=\"option\">\r\n              {{option.postcode}}\r\n            </mat-option>\r\n          </mat-autocomplete>\r\n        </mat-form-field>\r\n\r\n\r\n        <div class=\"btn btnNext btn-next\" id=\"postcode-go\" (click)=\"showConfig()\">\r\n          Submit\r\n        </div>\r\n\r\n\r\n        <hr class=\"Line-form\">\r\n\r\n        <p>Search by Address</p>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Address\" [formControl]=\"AddressFormControl\" [(ngModel)]=\"Buyer.Address\"\r\n            name=\"Addressname\" id=\"name\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"AddressFormControl.hasError('Address') && !AddressFormControl.hasError('required')\">\r\n            Please enter a valid address\r\n          </mat-error>\r\n          <mat-error *ngIf=\"AddressFormControl.hasError('required')\">\r\n            Address is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Town/City\" [formControl]=\"TownFormControl\" [(ngModel)]=\"Buyer.Town\"\r\n            name=\"Towncity\" id=\"name\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"TownFormControl.hasError('Town/City') && !TownFormControl.hasError('required')\">\r\n            Please enter a valid Town/City\r\n          </mat-error>\r\n          <mat-error *ngIf=\"TownFormControl.hasError('required')\">\r\n            Town/City is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"State/Province/Country\" [formControl]=\"stateFormControl\" required\r\n            [(ngModel)]=\"Buyer.state\" name=\"state\" id=\"name\" class=\"mat-mail-input\" (keyup)=\"changeMyControl()\">\r\n        </mat-form-field>\r\n\r\n\r\n        <!-- <form [formGroup]=\"form\">\r\n\r\n          <mat-form-field class=\"example-full-width\" >\r\n              <input type=\"text\" placeholder=\"Postcode\" matInput formControlName=\"project\" [matAutocomplete]=\"projectAutoComplete\" [(ngModel)]=\"Buyer.postcode\">\r\n              <mat-autocomplete #projectAutoComplete=\"matAutocomplete\" [displayWith]=\"displayWith\">\r\n                  <mat-option *ngFor=\"let project of projects\" [value]=\"project\">\r\n                    <span>{{project.postcode}} </span>&nbsp;\r\n                    <span> {{project.latitude}} </span> |\r\n                    <span> {{project.longitude}}</span>\r\n                  </mat-option>\r\n              </mat-autocomplete>\r\n      \r\n              <mat-error *ngIf=\"form.controls['project'].hasError('required')\">\r\n                  Please enter a value\r\n              </mat-error>\r\n      \r\n              <mat-error *ngIf=\"form.controls['project'].hasError('incorrect')\">\r\n              select postcode from list    \r\n              </mat-error>\r\n          </mat-form-field>\r\n      \r\n      </form> \r\n      -->\r\n\r\n\r\n        <!-- <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Country*</mat-label>\r\n          <mat-select name=\"Country\" [(ngModel)]=\"Buyer.Country\" value=\"Country\" class=\"example-full-width\">\r\n            <mat-option value=\"Austria\">Austria</mat-option>\r\n            <mat-option value=\"India\">India</mat-option>\r\n            <mat-option value=\"USA\">USA</mat-option>\r\n            <mat-option value=\"Germany\">Germany</mat-option>\r\n            <mat-option value=\"France\">France</mat-option>\r\n            <mat-option value=\"Iataly\">Iataly</mat-option>\r\n            <mat-option value=\"Spain\">Spain</mat-option>\r\n            <mat-option value=\"Spain\">Scotland</mat-option>\r\n          </mat-select>\r\n        </mat-form-field> -->\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Address Name\" [formControl]=\"addressnameFormControl\"\r\n            [(ngModel)]=\"Buyer.addressname\" name=\"addressname\" id=\"name\" class=\"mat-mail-input\">\r\n          <mat-error\r\n            *ngIf=\"addressnameFormControl.hasError('Address Name') && !addressnameFormControl.hasError('required')\">\r\n            Please enter a valid Address Name\r\n          </mat-error>\r\n          <mat-error *ngIf=\"addressnameFormControl.hasError('required')\">\r\n            Address Name is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <div class=\"form-group\">\r\n          <label for=\"pwd\">Search Radius (KM)</label>\r\n          <mat-slider [(ngModel)]=\"Buyer.SearchRadius\" name=\"SearchRadius\" style=\"width: 100%\" min=\"5\" max=\"50\"\r\n            step=\"0.5\" thumbLabel tickInterval=\"1\">\r\n            <label for=\"pwd\">Search Radius</label>\r\n          </mat-slider>\r\n        </div>\r\n\r\n\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Property type*</mat-label>\r\n          <mat-select name=\"Propertytype\" [(ngModel)]=\"Buyer.Propertytype\" value=\"Propertytype\"\r\n            class=\"example-full-width\">\r\n            <mat-option value=\"Flat\">Flat</mat-option>\r\n            <mat-option value=\"Cottage\">Cottage</mat-option>\r\n            <mat-option value=\"Studio\">Studio</mat-option>\r\n            <mat-option value=\"Lodge\">Lodge</mat-option>\r\n            <mat-option value=\"Farm\">Farm</mat-option>\r\n            <mat-option value=\"Town House\">Town House</mat-option>\r\n            <mat-option value=\"Maisonette\">Maisonette</mat-option>\r\n            <mat-option value=\"Bungalow\">Bungalow</mat-option>\r\n            <mat-option value=\"Farmhouse\">Farmhouse</mat-option>\r\n            <mat-option value=\"Mews House\">Mews House</mat-option>\r\n            <mat-option value=\"Houseboat\">Houseboat</mat-option>\r\n            <mat-option value=\"Country house\">Country house</mat-option>\r\n            <mat-option value=\"Detached house\">Detached house</mat-option>\r\n            <mat-option value=\"Barn conversion\">Barn conversion</mat-option>\r\n            <mat-option value=\"Terraced House\">Terraced House</mat-option>\r\n            <mat-option value=\"Terraced Bungalow\">Terraced Bungalow</mat-option>\r\n            <mat-option value=\"Equestrian Property\">Equestrian Property</mat-option>\r\n            <mat-option value=\"End Terrace House\">End Terrace House</mat-option>\r\n            <mat-option value=\"Detached bungalow\">Detached bungalow</mat-option>\r\n\r\n            <mat-option value=\"Link-Detached House\">Link-Detached House</mat-option>\r\n            <mat-option value=\"Barn conversion/farmhouse\">Barn conversion/farmhouse</mat-option>\r\n            <mat-option value=\"Semi-Detached Bungalow\">Semi-Detached Bungalow</mat-option>\r\n            <mat-option value=\"Mobile/Park Home\">Mobile/Park Home</mat-option>\r\n            <mat-option value=\"Semi-Detached House\">Semi-Detached House</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n\r\n\r\n        <div class=\" mt-4\">\r\n          <label for=\"pwd\">Price Range (Offer) *</label>\r\n          <mat-slider style=\"width: 100%\" name=\"PriceRange\" [(ngModel)]=\"Buyer.PriceRange\" min=\"20\" max=\"120\" step=\"0.5\"\r\n            value=\"1.5\" thumbLabel tickInterval=\"1\">\r\n          </mat-slider>\r\n        </div>\r\n\r\n\r\n\r\n\r\n        <mat-radio-group aria-label=\"Select an option\" name=\"Validity\" [(ngModel)]=\"Buyer.Validity\" value=\"Validity\">\r\n          <label>Offer Validity:</label>\r\n          <mat-radio-button class=\"col-12\" value=\"0-2Months\">0-2Months</mat-radio-button>\r\n          <mat-radio-button value=\"2-6Months\" class=\"col-12\">2-6Months</mat-radio-button>\r\n        </mat-radio-group>\r\n\r\n\r\n\r\n        <mat-radio-group aria-label=\"Select an option\" [(ngModel)]=\"Buyer.Condition\" name=\"Condition\">\r\n          <label>Property Condition:</label>\r\n          <mat-radio-button value=\"NewlyRefurbished\" class=\"col-12\">Newly Refurbished</mat-radio-button>\r\n          <mat-radio-button value=\"Refurbished\" class=\"col-12\">Refurbished</mat-radio-button>\r\n\r\n          <mat-radio-button value=\"New Build\" class=\"col-12\">New Build</mat-radio-button>\r\n\r\n          <mat-radio-button value=\"Needs modernisation\" class=\"col-12\">Needs modernisation</mat-radio-button>\r\n        </mat-radio-group>\r\n\r\n\r\n\r\n\r\n        <div class=\"button-next-tab2\">\r\n          <a (click)=\"matgroup.selectedIndex = 0\" class=\"btn  btnPrevious btn-next\">Previous</a>\r\n          <a (click)=\"matgroup.selectedIndex = 2\" class=\"btn btn-primary btnNext btn-next\">Next</a>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n\r\n    <mat-tab label=\"Optional Details\">\r\n      <div class=\"tabs-align-padding\">\r\n        <h4 class=\"mt-4 forms-heading\">Optional Details</h4>\r\n\r\n        <mat-form-field class=\"example-full-width mt-4\">\r\n          <mat-label>Type*</mat-label>\r\n          <mat-select name=\"Type\" name=\"Type\" [(ngModel)]=\"Buyer.Type\" class=\"example-full-width\">\r\n            <mat-option value=\"Buying to Live\">Buying to Live</mat-option>\r\n            <mat-option value=\"Buying as Investment\">Buying as Investment</mat-option>\r\n            <mat-option value=\"Buying to Let\">Buying to Let</mat-option>\r\n\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Position*</mat-label>\r\n          <mat-select name=\"Position\" [(ngModel)]=\"Buyer.Position\" value=\"Position\" class=\"example-full-width\">\r\n            <mat-option value=\"Cash Buyer\">Cash Buyer</mat-option>\r\n            <mat-option value=\"First Time Buyer\">First Time Buyer</mat-option>\r\n            <mat-option value=\"Selling To Move\">Selling To Move</mat-option>\r\n            <mat-option value=\"Mortgage To be Arranged\">Mortgage To be Arranged</mat-option>\r\n            <mat-option value=\"Mortgage Arranged\">Mortgage Arranged</mat-option>\r\n            <mat-option value=\"Mortgage Free\">Mortgage Free</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        <div class=\"button-next-tab2\">\r\n          <a (click)=\"matgroup.selectedIndex = 1\" class=\"btn  btnPrevious btn-next\">Previous</a>\r\n          <button class=\"btn btn-primary btnNext btn-next\" type=\"submit\">\r\n            Submit\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n</form>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Loading spinner -->\r\n<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n<div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\r\n  <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\r\n  <div class=\"social-button mt-4\">\r\n    <button type=\"button\" class=\"btn btn-facebook \" (click)=\"authService.FacebookAuth()\">\r\n      Facebook\r\n    </button>\r\n    <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">\r\n      Google+\r\n    </button>\r\n  </div>\r\n  <div class=\"input-group mb-3 mt-3\">\r\n\r\n    <mat-form-field class=\"example-full-width\">\r\n      <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Enter email\" #userEmail></textarea>\r\n    </mat-form-field>\r\n\r\n  </div>\r\n  <mat-form-field class=\"example-full-width\">\r\n    <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Password\" #userPassword></textarea>\r\n  </mat-form-field>\r\n\r\n  <div class=\"input-group-prepend other-option\">\r\n    <label class=\"checkbox\">\r\n      <input type=\"checkbox\" value=\"remember-me\" />Remember Me\r\n    </label>\r\n    <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\r\n  </div>\r\n  <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignIn(userEmail.value, userPassword.value)\">\r\n    Login\r\n  </button>\r\n  <button type=\"button\" class=\"btn btn-social-login\" (click)=\"authService.SignUp(userEmail.value, userPassword.value)\">\r\n    Sign Up\r\n  </button>\r\n</div>\r\n\r\n<form (ngSubmit)=\"onSubmit()\" *ngIf=\"isLoggedIn\">\r\n  <mat-tab-group #matgroup class=\"form-tab-conatiner\">\r\n    <mat-tab label=\"Personal Details \" class=\"tabs-align-padding\">\r\n      <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\r\n        <h4 class=\"mt-4 forms-heading\">Personal Details</h4>\r\n        <p class=\"forms-star\">*required</p>\r\n\r\n        <mat-form-field>\r\n          <mat-label>Title*</mat-label>\r\n          <mat-select name=\"title\" [(ngModel)]=\"Buyer.title\" class=\"drop-down-list\">\r\n            <mat-option value=\"Mr\">Mr</mat-option>\r\n            <mat-option value=\"Ms\">Ms</mat-option>\r\n            <mat-option value=\"Mrs\">Mrs</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"First Name\" [formControl]=\"firstnameFormControl\" id=\"name\" required\r\n            [(ngModel)]=\"Buyer.firstname\" name=\"First\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"firstnameFormControl.hasError('First Name') && !firstnameFormControl.hasError('required')\">\r\n            Please enter a valid email address\r\n          </mat-error>\r\n          <mat-error *ngIf=\"firstnameFormControl.hasError('required')\">\r\n            FirstName is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"LastName\" [formControl]=\"lastnameFormControl\" id=\"name\" required\r\n            [(ngModel)]=\"Buyer.Lastname\" name=\"Last\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"lastnameFormControl.hasError('LastName') && !lastnameFormControl.hasError('required')\">\r\n            Please enter a valid email address\r\n          </mat-error>\r\n          <mat-error *ngIf=\"lastnameFormControl.hasError('required')\">\r\n            LastName is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Email\" [formControl]=\"emailFormControl\" id=\"name\" [(ngModel)]=\"Buyer.Email\"\r\n            name=\"Email\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\r\n            Please enter a valid email address\r\n          </mat-error>\r\n          <mat-error *ngIf=\"emailFormControl.hasError('required')\">\r\n            Email is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput [matDatepicker]=\"picker\" placeholder=\"MM/DD/YY\" id=\"name\" required\r\n            [(ngModel)]=\"Buyer.DOB\" name=\"DOB\" class=\"mat-mail-input\" class=\"example-full-width\">\r\n          <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n          <mat-datepicker #picker></mat-datepicker>\r\n        </mat-form-field>\r\n\r\n\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Chain Status*</mat-label>\r\n          <mat-select name=\"ChainStatus\" [(ngModel)]=\"Buyer.ChainStatus\" value=\"ChainStatus\" class=\"example-full-width\">\r\n            <mat-option value=\"First Time Buyer\">First Time Buyer</mat-option>\r\n            <mat-option value=\"In Chain(Sellinng to buy)\">In Chain(Sellinng to buy)</mat-option>\r\n            <mat-option value=\"Chain-Free\">Chain-Free</mat-option>\r\n\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n\r\n\r\n        <div class=\"button-next\">\r\n          <a (click)=\"matgroup.selectedIndex = 1\" class=\"btn btn-primary btnNext btn-next\">Next</a>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n\r\n    <mat-tab label=\"Property Details\" class=\"tabs-align-padding\">\r\n      <div class=\"tabs-align-padding\">\r\n        <p>Search by Postcode</p>\r\n\r\n        <mat-option>\r\n          <input [formControl]=\"autoCompleteControl\" type=\"text\" placeholder=\"Enter Postcode\" aria-label=\"Post Code\"\r\n            matInput [matAutocomplete]=\"auto\" [(ngModel)]=\"Buyer.postcode\">\r\n          <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\"\r\n            (optionSelected)='getPosts($event.option.value)'>\r\n            <mat-option *ngFor=\"let item of addressianAutoComplete$ | async; let index=index\" [value]=\"item\">\r\n              <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\r\n              </span> | <span>{{ item.citytown | titlecase}}</span>\r\n            </mat-option>\r\n          </mat-autocomplete>\r\n        </mat-option>\r\n\r\n        <hr class=\"Line-form\">\r\n\r\n        <p>Search by Address</p>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Address\" [formControl]=\"AddressFormControl\" name=\"Address\" id=\"name\"\r\n            class=\"mat-mail-input\" [(ngModel)]=\"Buyer.Address\">\r\n          <mat-error *ngIf=\"AddressFormControl.hasError('Address') && !AddressFormControl.hasError('required')\">\r\n            Please enter a valid address\r\n          </mat-error>\r\n          <mat-error *ngIf=\"AddressFormControl.hasError('required')\">\r\n            Address is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Town/City\" [formControl]=\"TownFormControl\" [(ngModel)]=\"Buyer.Town\"\r\n            name=\"Towncity\" id=\"name\" class=\"mat-mail-input\">\r\n          <mat-error *ngIf=\"TownFormControl.hasError('Town/City') && !TownFormControl.hasError('required')\">\r\n            Please enter a valid Town/City\r\n          </mat-error>\r\n          <mat-error *ngIf=\"TownFormControl.hasError('required')\">\r\n            Town/City is <strong>required</strong>\r\n          </mat-error>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"County\" [formControl]=\"stateFormControl\" required [(ngModel)]=\"Buyer.state\"\r\n            name=\"state\" id=\"name\" class=\"mat-mail-input\" (keyup)=\"changeMyControl()\">\r\n        </mat-form-field>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Financial Position*</mat-label>\r\n          <mat-select name=\"FinancialPosition\" [(ngModel)]=\"Buyer.FinancialPosition\" value=\"FinancialPosition\"\r\n            class=\"example-full-width\">\r\n            <mat-option value=\"Mortgage Free\">Mortgage Free</mat-option>\r\n            <mat-option value=\"Mortgage to be Arranged\">Mortgage to be Arranged</mat-option>\r\n            <mat-option value=\"Mortgage Arrange\">Mortgage Arrange</mat-option>\r\n            <mat-option value=\"Cash Buyer\">Cash Buyer</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n     \r\n\r\n        <div class=\"form-group\">\r\n          <label for=\"pwd\">Search Radius (Miles)</label>\r\n          <mat-slider [(ngModel)]=\"Buyer.SearchRadius\" name=\"SearchRadius\" style=\"width: 100%\" min=\"5\" max=\"50\"\r\n            step=\"0.5\" thumbLabel tickInterval=\"1\">\r\n            <label for=\"pwd\">Search Radius</label>\r\n          </mat-slider>\r\n        </div>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Property type*</mat-label>\r\n          <mat-select name=\"Propertytype\" [(ngModel)]=\"Buyer.Propertytype\" value=\"Propertytype\"\r\n            class=\"example-full-width\">\r\n            <mat-option value=\"Flat\">Flat</mat-option>\r\n            <mat-option value=\"Cottage\">Cottage</mat-option>\r\n            <mat-option value=\"Studio\">Studio</mat-option>\r\n            <mat-option value=\"Lodge\">Lodge</mat-option>\r\n            <mat-option value=\"Farm\">Farm</mat-option>\r\n            <mat-option value=\"Town House\">Town House</mat-option>\r\n            <mat-option value=\"Maisonette\">Maisonette</mat-option>\r\n            <mat-option value=\"Bungalow\">Bungalow</mat-option>\r\n            <mat-option value=\"Farmhouse\">Farmhouse</mat-option>\r\n            <mat-option value=\"Mews House\">Mews House</mat-option>\r\n            <mat-option value=\"Houseboat\">Houseboat</mat-option>\r\n            <mat-option value=\"Country house\">Country house</mat-option>\r\n            <mat-option value=\"Detached house\">Detached house</mat-option>\r\n            <mat-option value=\"Barn conversion\">Barn conversion</mat-option>\r\n            <mat-option value=\"Terraced House\">Terraced House</mat-option>\r\n            <mat-option value=\"Terraced Bungalow\">Terraced Bungalow</mat-option>\r\n            <mat-option value=\"Equestrian Property\">Equestrian Property</mat-option>\r\n            <mat-option value=\"End Terrace House\">End Terrace House</mat-option>\r\n            <mat-option value=\"Detached bungalow\">Detached bungalow</mat-option>\r\n\r\n            <mat-option value=\"Link-Detached House\">Link-Detached House</mat-option>\r\n            <mat-option value=\"Barn conversion/farmhouse\">Barn conversion/farmhouse</mat-option>\r\n            <mat-option value=\"Semi-Detached Bungalow\">Semi-Detached Bungalow</mat-option>\r\n            <mat-option value=\"Mobile/Park Home\">Mobile/Park Home</mat-option>\r\n            <mat-option value=\"Semi-Detached House\">Semi-Detached House</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        <div class=\" mt-4\">\r\n          <label for=\"pwd\">Price Range (Offer) *</label>\r\n          <mat-slider style=\"width: 100%\" name=\"PriceRange\" [(ngModel)]=\"Buyer.PriceRange\" min=\"20\" max=\"120\" step=\"0.5\"\r\n            value=\"1.5\" thumbLabel tickInterval=\"1\">\r\n          </mat-slider>\r\n        </div>\r\n\r\n        <mat-radio-group aria-label=\"Select an option\" name=\"Validity\" [(ngModel)]=\"Buyer.Validity\" value=\"Validity\">\r\n          <label>Offer Validity:</label>\r\n          <mat-radio-button class=\"col-12\" value=\"0-2Months\">0-2Months</mat-radio-button>\r\n          <mat-radio-button value=\"2-6Months\" class=\"col-12\">2-6Months</mat-radio-button>\r\n\r\n          <input matInput placeholder=\"Explain Validity\"  name=\"Explain\" id=\"name\" class=\"mat-mail-input mt-2 mb-3\">\r\n\r\n        </mat-radio-group>\r\n\r\n        <mat-radio-group aria-label=\"Select an option\" [(ngModel)]=\"Buyer.Condition\" name=\"Condition\">\r\n          <label>Property Condition:</label>\r\n         \r\n          <mat-radio-button value=\"Refurbished\" class=\"col-12\">Refurbished</mat-radio-button>\r\n          <mat-radio-button value=\"New Build\" class=\"col-12\">New Build</mat-radio-button>\r\n          <mat-radio-button value=\"Needs modernisation\" class=\"col-12\">Needs modernisation</mat-radio-button>\r\n        </mat-radio-group>\r\n\r\n        <div class=\"button-next-tab2\">\r\n          <a (click)=\"matgroup.selectedIndex = 0\" class=\"btn  btnPrevious btn-next\">Previous</a>\r\n          <a (click)=\"matgroup.selectedIndex = 2\" class=\"btn btn-primary btnNext btn-next\">Next</a>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n\r\n    <mat-tab label=\"Optional Details\">\r\n      <div class=\"tabs-align-padding\">\r\n        <h4 class=\"mt-4 forms-heading\">Optional Details</h4>\r\n\r\n        <mat-form-field class=\"example-full-width mt-4\">\r\n          <mat-label>Type*</mat-label>\r\n          <mat-select name=\"Type\" name=\"Type\" [(ngModel)]=\"Buyer.Type\" class=\"example-full-width\">\r\n            <mat-option value=\"Buying to Live\">Buying to Live</mat-option>\r\n            <mat-option value=\"Buying as Investment\">Buying as Investment</mat-option>\r\n            <mat-option value=\"Buying to Let\">Buying to Let</mat-option>\r\n\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Position*</mat-label>\r\n          <mat-select name=\"Position\" [(ngModel)]=\"Buyer.Position\" value=\"Position\" class=\"example-full-width\">\r\n            <mat-option value=\"Cash Buyer\">Cash Buyer</mat-option>\r\n            <mat-option value=\"First Time Buyer\">First Time Buyer</mat-option>\r\n            <mat-option value=\"Selling To Move\">Selling To Move</mat-option>\r\n            <mat-option value=\"Mortgage To be Arranged\">Mortgage To be Arranged</mat-option>\r\n            <mat-option value=\"Mortgage Arranged\">Mortgage Arranged</mat-option>\r\n            <mat-option value=\"Mortgage Free\">Mortgage Free</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        <div class=\"button-next-tab2\">\r\n          <a (click)=\"matgroup.selectedIndex = 1\" class=\"btn  btnPrevious btn-next\">Previous</a>\r\n          <button class=\"btn btn-primary btnNext btn-next\" type=\"submit\">\r\n            Submit\r\n          </button>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n</form>\r\n");
 
 /***/ }),
 
@@ -266,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n      <nav>\r\n        <img src=\"/assets/Images/menu.png\" class=\"open\" />\r\n        <img src=\"/assets/Images/menu-close.png\" class=\"close-img\" />\r\n        <p class=\"menu-text\">Menu</p>\r\n        <div class=\"imge-logo-header\">\r\n          <img src=\"assets/Images/logo1.png\" class=\"logo-nav\" routerLink=\"\" />\r\n\r\n          <i class=\"fa fa-user\" aria-hidden=\"true\" (click)=\"authService.SignOut()\" *ngIf=\"isLoggedIn\"\r\n            routerLink=\"\"><span class=\"log-out-text\">Logout</span></i>\r\n        </div>\r\n\r\n        <div class=\"nav-div\">\r\n          <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\">\r\n            <div></div>\r\n            <div>\r\n              <input type=\"text\" placeholder=\"Search..\" /><img src=\"assets/Images/asset1.png\"\r\n                class=\"nav-link-icon-search\" />\r\n            </div>\r\n            <div></div>\r\n          </div>\r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn; show\">\r\n            <div class=\"grid-container\" routerLink=\"/profile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">My Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myproperties\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myproperties\" class=\"nav-links-text\">My Properties</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myrequirement\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myrequirement\" class=\"nav-links-text\">My Requirements</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/prefrences\">\r\n              <div>\r\n                <img src=\"assets/Images/user_2-09-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/prefrences\" class=\"nav-links-text\">Prefrences</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/chats\">\r\n              <div><img src=\"assets/Images/31-512-removebg-preview.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/chats\" class=\"nav-links-text\">My chat</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n          </ul>\r\n          <div *ngIf=\"!isLoggedIn\">\r\n            <div class=\"social-login text-center\">\r\n              <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\r\n              <div class=\"social-button mt-4\">\r\n                <button type=\"button\" class=\"btn btn-facebook \" (click)=\"authService.FacebookAuth()\">\r\n                  Facebook\r\n                </button>\r\n                <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">\r\n                  Google+\r\n                </button>\r\n              </div>\r\n              \r\n                <mat-form-field class=\"example-full-width\">\r\n                  <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Enter email\" #userEmail></textarea>\r\n                </mat-form-field>\r\n                \r\n             \r\n              <mat-form-field class=\"example-full-width\">\r\n                <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Password\" #userPassword></textarea>\r\n              </mat-form-field>\r\n\r\n                <div class=\"input-group-prepend other-option\">\r\n                  <!-- <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" value=\"remember-me\">Remember Me\r\n                </label> -->\r\n                  <a href=\"#\" class=\"forgot-password\" routerLink=\"/forgot-password\">Forgot password?</a>\r\n                </div>\r\n                <button type=\"button\" class=\"btn btn-social-login\" (click)=\"\r\n                    authService.SignIn(userEmail.value, userPassword.value)\r\n                  \">\r\n                  Login\r\n                </button>\r\n                <button type=\"button\" class=\"btn btn-social-login\" (click)=\"\r\n                    authService.SignUp(userEmail.value, userPassword.value)\r\n                  \">\r\n                  Sign Up\r\n                </button>\r\n            \r\n            </div>\r\n          </div>\r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n      <nav>\r\n        <img src=\"/assets/Images/menu.png\" class=\"open\" />\r\n        <img src=\"/assets/Images/menu-close.png\" class=\"close-img\" />\r\n        <!-- <p class=\"menu-text\">Menu</p> -->\r\n        <div class=\"imge-logo-header\">\r\n          <img src=\"assets/Images/logo1.png\" class=\"logo-nav\" routerLink=\"\" />\r\n\r\n          <i class=\"fa fa-user\" aria-hidden=\"true\" (click)=\"authService.SignOut()\" *ngIf=\"isLoggedIn\"\r\n            routerLink=\"\"><span class=\"log-out-text\">Logout</span></i>\r\n        </div>\r\n\r\n        <div class=\"nav-div\">\r\n          <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\">\r\n            <div></div>\r\n            <div>\r\n              <input type=\"text\" placeholder=\"Search..\" /><img src=\"assets/Images/asset1.png\"\r\n                class=\"nav-link-icon-search\" />\r\n            </div>\r\n            <div></div>\r\n          </div>\r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn; show\">\r\n            <div class=\"grid-container\" routerLink=\"/profile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">My Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myproperties\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myproperties\" class=\"nav-links-text\">My Properties</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myrequirement\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myrequirement\" class=\"nav-links-text\">My Requirements</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/prefrences\">\r\n              <div>\r\n                <img src=\"assets/Images/user_2-09-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/prefrences\" class=\"nav-links-text\">Prefrences</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/chats\">\r\n              <div><img src=\"assets/Images/31-512-removebg-preview.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/chats\" class=\"nav-links-text\">My chat</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n          </ul>\r\n          <div *ngIf=\"!isLoggedIn\">\r\n            <div class=\"social-login text-center\">\r\n              <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\r\n              <div class=\"social-button mt-4\">\r\n                <button type=\"button\" class=\"btn btn-facebook \" (click)=\"authService.FacebookAuth()\">\r\n                  Facebook\r\n                </button>\r\n                <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">\r\n                  Google+\r\n                </button>\r\n              </div>\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Enter email\" #userEmail></textarea>\r\n              </mat-form-field>\r\n\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Password\" #userPassword></textarea>\r\n              </mat-form-field>\r\n\r\n              <div class=\"input-group-prepend other-option\">\r\n                <!-- <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" value=\"remember-me\">Remember Me\r\n                </label> -->\r\n                <a href=\"#\" class=\"forgot-password\" routerLink=\"/forgot-password\">Forgot password?</a>\r\n              </div>\r\n              <button type=\"button\" class=\"btn btn-social-login\" (click)=\"\r\n                    authService.SignIn(userEmail.value, userPassword.value)\r\n                  \">\r\n                Login\r\n              </button>\r\n              <button type=\"button\" class=\"btn btn-social-login\" (click)=\"\r\n                    authService.SignUp(userEmail.value, userPassword.value)\r\n                  \">\r\n                Sign Up\r\n              </button>\r\n\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>\r\n");
 
 /***/ }),
 
@@ -357,7 +357,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- Loading spinner -->\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"container forms-container\">\n  <div class=\"row\">\n    <section class=\"col\">\n      <div class=\"social-login text-center  p-2\" *ngIf=\"!isLoggedIn\">\n        <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\n        <div class=\"social-button mt-4\">\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"authService.FacebookAuth()\">\n            Facebook\n          </button>\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">\n            Google+\n          </button>\n        </div>\n        <div class=\"input-group mb-3 mt-3\">\n       \n          <mat-form-field class=\"example-full-width\">\n            <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Enter email\" #userEmail></textarea>\n          </mat-form-field>\n          \n        </div>\n        <mat-form-field class=\"example-full-width\">\n          <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Password\" #userPassword></textarea>\n        </mat-form-field>\n\n        <div class=\"input-group-prepend other-option\">\n          <label class=\"checkbox\">\n            <input type=\"checkbox\" value=\"remember-me\" />Remember Me\n          </label>\n          <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n        </div>\n        <button type=\"button\" class=\"btn btn-social-login\"\n          (click)=\"authService.SignIn(userEmail.value, userPassword.value)\">\n          Login\n        </button>\n        <button type=\"button\" class=\"btn btn-social-login\"\n          (click)=\"authService.SignUp(userEmail.value, userPassword.value)\">\n          Sign Up\n        </button>\n      </div>\n\n\n      <form role=\"form\" (ngSubmit)=\"onSubmit()\" *ngIf=\"isLoggedIn\">\n        <mat-tab-group #matgroup class=\"form-tab-conatiner\" mat-align-tabs=\"center\">\n          <mat-tab label=\"Personal Details\">\n            <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\n              <h4 class=\"mt-4 forms-heading\">Personal Details</h4>\n              <p class=\"forms-star\">*required</p>\n\n\n              <mat-form-field>\n                <mat-label>Title*</mat-label>\n                <mat-select name=\"title\" [(ngModel)]=\"Seller.Title\" Value=\"Title\" class=\"drop-down-list\">\n                  <mat-option value=\"Mr\">Mr</mat-option>\n                  <mat-option value=\"Ms\">Ms</mat-option>\n                  <mat-option value=\"Mrs\">Mrs</mat-option>\n\n                </mat-select>\n              </mat-form-field>\n\n\n\n              <form class=\"example-form\">\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput placeholder=\"First Name\" [formControl]=\"FirstnameFormControl\"\n                    [(ngModel)]=\"Seller.Firstname\" name=\"First\" class=\"mat-mail-input\">\n                  <mat-error\n                    *ngIf=\"FirstnameFormControl.hasError('First Name') && !FirstnameFormControl.hasError('required')\">\n                    Please enter a valid name\n                  </mat-error>\n                  <mat-error *ngIf=\"FirstnameFormControl.hasError('required')\">\n                    FirstName is <strong>required</strong>\n                  </mat-error>\n                </mat-form-field>\n              </form>\n\n\n              <form class=\"example-form\">\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput placeholder=\"LastName\" [formControl]=\"LastnameFormControl\" id=\"name\"\n                    [(ngModel)]=\"Seller.Lastname\" name=\"Last\" class=\"mat-mail-input\">\n                  <mat-error\n                    *ngIf=\"LastnameFormControl.hasError('LastName') && !LastnameFormControl.hasError('required')\">\n                    Please enter a valid email address\n                  </mat-error>\n                  <mat-error *ngIf=\"LastnameFormControl.hasError('required')\">\n                    LastName is <strong>required</strong>\n                  </mat-error>\n                </mat-form-field>\n              </form>\n\n\n              <form class=\"example-form\">\n                <mat-form-field class=\"example-full-width\">\n                  <input matInput placeholder=\"Email Address*\" [formControl]=\"EmailFormControl\" id=\"name\"\n                    [(ngModel)]=\"Seller.Email\" name=\"Email\" class=\"mat-mail-input\">\n                  <mat-error\n                    *ngIf=\"EmailFormControl.hasError('Email Address*') && !EmailFormControl.hasError('required')\">\n                    Please enter a valid email address\n                  </mat-error>\n                  <mat-error *ngIf=\"EmailFormControl.hasError('required')\">\n                    Email is <strong>required</strong>\n                  </mat-error>\n                </mat-form-field>\n              </form>\n\n\n              <mat-form-field class=\"example-full-width\">\n                <input matInput [matDatepicker]=\"picker\" placeholder=\"Date of Birth*\" [formControl]=\"DOBFormControl\" id=\"name\" [(ngModel)]=\"Seller.DOB\"\n                  name=\"DOB\" class=\"mat-mail-input\" class=\"example-full-width\">\n                <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n                <mat-datepicker #picker></mat-datepicker>\n                <mat-error\n                    *ngIf=\"DOBFormControl.hasError('DOB') && !DOBFormControl.hasError('required')\">\n                    Please enter a valid email address\n                  </mat-error>\n                  <mat-error *ngIf=\"DOBFormControl.hasError('required')\">\n                    DOB is <strong>required</strong>\n                  </mat-error>\n              </mat-form-field>\n\n\n              <div class=\"form-group\" *ngIf=\"!isLoggedIn\">\n                <label for=\"pwd\">Enter A Password*</label>\n                <input type=\"password\" class=\"form-control\" required [(ngModel)]=\"Seller.Password\" name=\"Password\"\n                  required />\n              </div>\n              <div class=\"form-group\" *ngIf=\"!isLoggedIn\">\n                <label for=\"pwd\">Enter Password Again*</label>\n                <input type=\"password\" class=\"form-control\" [(ngModel)]=\"Seller.Confirm\" name=\"Confirm\" required />\n              </div>\n              <ul class=\"submit-button\">\n                <div class=\"button-next\">\n                  <a (click)=\"matgroup.selectedIndex = 1\" class=\"btn btn-primary btnNext btn-next\">Next</a>\n                </div>\n              </ul>\n            </div>\n          </mat-tab>\n\n          <mat-tab label=\"Property Details\">\n            <div class=\"tab-pane tabs-align-padding\" role=\"tabpanel\" id=\"step2\">\n              <div class=\"seller-form-upper\">\n                <p>\n                  Property Enquiry<br />\n                  <span>Please fill the form below to list your property</span>\n                </p>\n                <hr class=\"top-hr\" />\n              </div>\n              <p class=\"mt-4\">Search by Postcode</p>\n        <mat-form-field class=\"example-full-width\">\n          <input type=\"text\" placeholder=\"Postcode\" aria-label=\"Postcode\" matInput [formControl]=\"myControl\"\n            [matAutocomplete]=\"auto\" [(ngModel)]=\"Seller.postcode\">\n          <mat-autocomplete #auto=\"matAutocomplete\" [displayWith]=\"displayFn\">\n            <mat-option *ngFor=\"let option of filteredOptions | async\" [value]=\"option\">\n              {{option.postcode}}\n            </mat-option>\n          </mat-autocomplete>\n        </mat-form-field>\n\n        \n\n        <div class=\"btn btnNext btn-next\" id=\"postcode-go\" (click)=\"showConfig()\">\n          Submit\n        </div>\n        <hr class=\"Line-form\">\n              <div class=\" container  forms-container\">\n                <p>Search by Address</p>\n\n\n\n                <form class=\"example-form\">\n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput placeholder=\"Address\" [formControl]=\"AddressFormControl\"\n                      [(ngModel)]=\"Seller.Address\" name=\"Address\" id=\"name\" class=\"mat-mail-input\">\n                    <mat-error\n                      *ngIf=\"AddressFormControl.hasError('Address') && !AddressFormControl.hasError('required')\">\n                      Please enter a valid address\n                    </mat-error>\n                    <mat-error *ngIf=\"AddressFormControl.hasError('required')\">\n                      Address is <strong>required</strong>\n                    </mat-error>\n                  </mat-form-field>\n                </form>\n\n\n\n\n                <form class=\"example-form\">\n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput placeholder=\"Town/City\" [formControl]=\"TownFormControl\" [(ngModel)]=\"Seller.Town\"\n                      name=\"Town\" id=\"name\" class=\"mat-mail-input\">\n                    <mat-error *ngIf=\"TownFormControl.hasError('Town/City') && !TownFormControl.hasError('required')\">\n                      Please enter a valid Town/City\n                    </mat-error>\n                    <mat-error *ngIf=\"TownFormControl.hasError('required')\">\n                      Town/City is <strong>required</strong>\n                    </mat-error>\n                  </mat-form-field>\n                </form>\n\n\n                <form class=\"example-form\">\n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput placeholder=\"State/Provience/Country\" [formControl]=\"stateFormControl\"\n                      [(ngModel)]=\"Seller.state\" name=\"state\" id=\"name\" class=\"mat-mail-input\">\n                    <mat-error\n                      *ngIf=\"stateFormControl.hasError('State/Provience/Country') && !stateFormControl.hasError('required')\">\n                      Please enter a valid State/Provience/Country\n                    </mat-error>\n                    <mat-error *ngIf=\"stateFormControl.hasError('required')\">\n                      State/Provience/Country is <strong>required</strong>\n                    </mat-error>\n                  </mat-form-field>\n                </form>\n\n           \n                <!-- <form [formGroup]=\"form\">\n\n                  <mat-form-field class=\"example-full-width\" >\n                      <input type=\"text\" placeholder=\"Postcode\" matInput formControlName=\"project\" [matAutocomplete]=\"projectAutoComplete\" [(ngModel)]=\"Seller.postcode\">\n                      <mat-autocomplete #projectAutoComplete=\"matAutocomplete\" [displayWith]=\"displayWith\">\n                          <mat-option *ngFor=\"let project of projects\" [value]=\"project\">\n                            <span>{{project.postcode}} </span>&nbsp;\n                            <span> {{project.latitude}} </span> |\n                            <span> {{project.longitude}}</span>\n                          </mat-option>\n                      </mat-autocomplete>\n              \n                      <mat-error *ngIf=\"form.controls['project'].hasError('required')\">\n                          Please enter a value\n                      </mat-error>\n              \n                      <mat-error *ngIf=\"form.controls['project'].hasError('incorrect')\">\n                      select postcode from list    \n                      </mat-error>\n                  </mat-form-field>\n              \n              </form> -->\n            \n\n\n\n                <!-- <mat-form-field class=\"example-full-width\">\n                  <mat-label>Country*</mat-label>\n                  <mat-select name=\"Country\" [(ngModel)]=\"Seller.Country\" value=\"Country\" class=\"example-full-width\" [ngModelOptions]=\"{standalone: true}\">\n                    <mat-option value=\"Austria\">Austria</mat-option>\n                    <mat-option value=\"India\">India</mat-option>\n                    <mat-option value=\"USA\">USA</mat-option>\n                    <mat-option value=\"Germany\">Germany</mat-option>\n                    <mat-option value=\"France\">France</mat-option>\n                    <mat-option value=\"Iataly\">Iataly</mat-option>\n                    <mat-option value=\"Spain\">Spain</mat-option>\n                  </mat-select>\n                </mat-form-field> -->\n                <label for=\"text\" class=\" \">Property Type*:</label>\n                <section class=\"example-section\" [(ngModel)]=\"Seller.PropertyType\" \n                  value=\"PropertyType\">\n\n                  <mat-checkbox class=\"example-margin\" value=\"Terrace House\">Terrace House</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Detached House\">Detached House</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Masionette\">Masionette</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Semi Detached House\">Semi Detached House</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"End Of Terrace House\">End Of Terrace House</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Purpose-Built Flat\">Purpose-Built Flat</mat-checkbox>\n                </section>\n\n\n\n\n\n\n                <form class=\"example-form\">\n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput placeholder=\"Address Name\" [formControl]=\"addressnameFormControl\"\n                      [(ngModel)]=\"Seller.Addressname\" name=\"addressname\" id=\"name\" class=\"mat-mail-input\">\n                    <mat-error\n                      *ngIf=\"addressnameFormControl.hasError('Address Name') && !addressnameFormControl.hasError('required')\">\n                      Please enter a valid Address Name\n                    </mat-error>\n                    <mat-error *ngIf=\"addressnameFormControl.hasError('required')\">\n                      Address Name is <strong>required</strong>\n                    </mat-error>\n                  </mat-form-field>\n                </form>\n\n\n\n                <form class=\"example-form\">\n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput placeholder=\"Number of Rooms\" [formControl]=\"noroomsFormControl\"\n                      [(ngModel)]=\"Seller.norooms\" name=\"norooms\" id=\"name\" class=\"mat-mail-input\">\n                    <mat-error\n                      *ngIf=\"noroomsFormControl.hasError('Number of Rooms') && !noroomsFormControl.hasError('required')\">\n                      Please enter a valid Number of Rooms\n                    </mat-error>\n                    <mat-error *ngIf=\"noroomsFormControl.hasError('required')\">\n                      Number of Rooms is <strong>required</strong>\n                    </mat-error>\n                  </mat-form-field>\n                </form>\n\n\n\n\n\n                <div class=\"\">\n                  <label for=\"pwd\">Expected Amount (Offer) *</label>\n                  <mat-slider style=\"width: 100%\" name=\"ExpectedAmount\" [(ngModel)]=\"Seller.ExpectedAmount\" min=\"0\"\n                    max=\"1000000\" step=\"1000\" value=\"50000\" thumbLabel tickInterval=\"1\">\n                  </mat-slider>\n                </div>\n\n\n                <mat-radio-group aria-label=\"Select an option\" [(ngModel)]=\"Seller.PropertyCondition\"\n                  name=\"PropertyCondition\">\n                  <label>Property Condition:</label>\n                  <mat-radio-button value=\"NewlyRefurbished\" class=\"col-12\">Newly Refurbished</mat-radio-button>\n                  <mat-radio-button value=\"Refurbished\" class=\"col-12\">Refurbished</mat-radio-button>\n\n                  <mat-radio-button value=\"New Build\" class=\"col-12\">New Build</mat-radio-button>\n\n                  <mat-radio-button value=\"Needs modernisation\" class=\"col-12\">Needs modernisation</mat-radio-button>\n                </mat-radio-group>\n\n                <mat-form-field class=\"example-full-width\">\n                  <mat-label>Ownership:</mat-label>\n                  <mat-select name=\"ownership\" [(ngModel)]=\"Seller.ownership\" value=\"ownership\"\n                    class=\"example-full-width\">\n                    <mat-option value=\"Freehold\">Freehold</mat-option>\n                    <mat-option value=\"Leasehold\">Leasehold</mat-option>\n                    <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n\n\n                  </mat-select>\n                </mat-form-field>\n\n                <label for=\"text\" class=\" \">Select the Applicable Features:</label>\n                <section class=\"example-section\" [(ngModel)]=\"Seller.ApplicableFeatures\" \n                  value=\"ApplicableFeatures\">\n\n                  <mat-checkbox class=\"example-margin\" value=\"Terrace House\">Terrace House</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Driveway\">Driveway</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Period features\">Period features</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Garage\">Garage</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Wheelchair friendly\">Wheelchair friendly</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"Gated community\">Gated community</mat-checkbox>\n                  <mat-checkbox class=\"example-margin\" value=\"External Rear Garden\">External Rear Garden</mat-checkbox>\n                </section>\n\n\n\n\n          \n\n                <div class=\"button-next-tab2\">\n                  <a (click)=\"matgroup.selectedIndex = 0\" class=\"btn  btnPrevious btn-next\">Previous</a>\n                  <a (click)=\"matgroup.selectedIndex = 2\" class=\"btn btn-primary btnNext btn-next\">Next</a>\n                </div>\n              </div>\n            </div>\n             \n          </mat-tab>\n\n          <mat-tab label=\"Optional Details\">\n            <div class=\"tab-pane tabs-align-padding\" role=\"tabpanel\" id=\"step3\">\n              <div class=\"seller-form-upper\">\n                <p>\n                  List Your Property<br />\n                  <span>Please fill the form below to list your property</span>\n                </p>\n                <hr class=\"top-hr\" />\n              </div>\n              <h4 class=\"mt-4 forms-heading\">Optional Details</h4>\n\n              <div class=\"forms-container\">\n                <p class=\"mt-4 forms-heading-optional\">\n                  Upload Property Images*\n                </p>\n\n                <div class=\"col-4 frmCaption\">Image 1*</div>\n                <div class=\"col-12\">\n                  <label class=\"customUpload btnUpload btnM\">\n                    <span>Choose files</span>\n                    <input type=\"file\" class=\"upload\" />\n                  </label>\n                </div>\n                <div class=\"col-4 frmCaption\">Image 2*</div>\n                <div class=\"col-12\">\n                  <label class=\"customUpload btnUpload btnM\">\n                    <span>Choose files</span>\n\n                    <input type=\"file\" class=\"upload\" />\n                  </label>\n                </div>\n                <div class=\"col-4 frmCaption\">Image 3*</div>\n                <div class=\"col-12\">\n                  <label class=\"customUpload btnUpload btnM\">\n                    <span>Choose files</span>\n\n                    <input type=\"file\" class=\"upload\" />\n                  </label>\n                </div>\n                <div class=\"col-4 frmCaption\">Image 4*</div>\n                <div class=\"col-12\">\n                  <label class=\"customUpload btnUpload btnM\">\n                    <span>Choose files</span>\n\n                    <input type=\"file\" class=\"upload\" />\n                  </label>\n                </div>\n                <div class=\"button-next-tab2\">\n                  <a (click)=\"matgroup.selectedIndex = 1\" class=\"btn  btnPrevious btn-next\">Previous</a>\n                  <button class=\"btn btn-primary btnNext btn-next\" (click)=\"onSubmit\">\n                    Submit\n                  </button>\n                </div>\n              </div>\n            </div>\n          </mat-tab>\n        </mat-tab-group>\n      </form>\n    </section>\n  </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- Loading spinner -->\r\n<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n<div class=\"container forms-container\">\r\n  <div class=\"row\">\r\n    <section class=\"col\">\r\n      <div class=\"social-login text-center  p-2\" *ngIf=\"!isLoggedIn\">\r\n        <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\r\n        <div class=\"social-button mt-4\">\r\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"authService.FacebookAuth()\">\r\n            Facebook\r\n          </button>\r\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"authService.GoogleAuth()\">\r\n            Google+\r\n          </button>\r\n        </div>\r\n        <div class=\"input-group mb-3 mt-3\">\r\n       \r\n          <mat-form-field class=\"example-full-width\">\r\n            <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Enter email\" #userEmail></textarea>\r\n          </mat-form-field>\r\n          \r\n        </div>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <textarea matInput placeholder=\"Leave a comment\" placeholder=\"Password\" #userPassword></textarea>\r\n        </mat-form-field>\r\n\r\n        <div class=\"input-group-prepend other-option\">\r\n          <label class=\"checkbox\">\r\n            <input type=\"checkbox\" value=\"remember-me\" />Remember Me\r\n          </label>\r\n          <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\r\n        </div>\r\n        <button type=\"button\" class=\"btn btn-social-login\"\r\n          (click)=\"authService.SignIn(userEmail.value, userPassword.value)\">\r\n          Login\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-social-login\"\r\n          (click)=\"authService.SignUp(userEmail.value, userPassword.value)\">\r\n          Sign Up\r\n        </button>\r\n      </div>\r\n\r\n\r\n      <form role=\"form\" (ngSubmit)=\"onSubmit()\" *ngIf=\"isLoggedIn\">\r\n        <mat-tab-group #matgroup class=\"form-tab-conatiner\" mat-align-tabs=\"center\">\r\n          <mat-tab label=\"Personal Details\">\r\n            <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\r\n              <h4 class=\"mt-4 forms-heading\">Personal Details</h4>\r\n              <p class=\"forms-star\">*required</p>\r\n\r\n\r\n              <mat-form-field>\r\n                <mat-label>Title*</mat-label>\r\n                <mat-select name=\"title\" [(ngModel)]=\"Seller.Title\" Value=\"Title\" class=\"drop-down-list\">\r\n                  <mat-option value=\"Mr\">Mr</mat-option>\r\n                  <mat-option value=\"Ms\">Ms</mat-option>\r\n                  <mat-option value=\"Mrs\">Mrs</mat-option>\r\n\r\n                </mat-select>\r\n              </mat-form-field>\r\n\r\n\r\n\r\n              <form class=\"example-form\">\r\n                <mat-form-field class=\"example-full-width\">\r\n                  <input matInput placeholder=\"First Name\" [formControl]=\"FirstnameFormControl\"\r\n                    [(ngModel)]=\"Seller.Firstname\" name=\"First\" class=\"mat-mail-input\">\r\n                  <mat-error\r\n                    *ngIf=\"FirstnameFormControl.hasError('First Name') && !FirstnameFormControl.hasError('required')\">\r\n                    Please enter a valid name\r\n                  </mat-error>\r\n                  <mat-error *ngIf=\"FirstnameFormControl.hasError('required')\">\r\n                    FirstName is <strong>required</strong>\r\n                  </mat-error>\r\n                </mat-form-field>\r\n              </form>\r\n\r\n\r\n              <form class=\"example-form\">\r\n                <mat-form-field class=\"example-full-width\">\r\n                  <input matInput placeholder=\"LastName\" [formControl]=\"LastnameFormControl\" id=\"name\"\r\n                    [(ngModel)]=\"Seller.Lastname\" name=\"Last\" class=\"mat-mail-input\">\r\n                  <mat-error\r\n                    *ngIf=\"LastnameFormControl.hasError('LastName') && !LastnameFormControl.hasError('required')\">\r\n                    Please enter a valid email address\r\n                  </mat-error>\r\n                  <mat-error *ngIf=\"LastnameFormControl.hasError('required')\">\r\n                    LastName is <strong>required</strong>\r\n                  </mat-error>\r\n                </mat-form-field>\r\n              </form>\r\n\r\n\r\n              <form class=\"example-form\">\r\n                <mat-form-field class=\"example-full-width\">\r\n                  <input matInput placeholder=\"Email Address*\" [formControl]=\"EmailFormControl\" id=\"name\"\r\n                    [(ngModel)]=\"Seller.Email\" name=\"Email\" class=\"mat-mail-input\">\r\n                  <mat-error\r\n                    *ngIf=\"EmailFormControl.hasError('Email Address*') && !EmailFormControl.hasError('required')\">\r\n                    Please enter a valid email address\r\n                  </mat-error>\r\n                  <mat-error *ngIf=\"EmailFormControl.hasError('required')\">\r\n                    Email is <strong>required</strong>\r\n                  </mat-error>\r\n                </mat-form-field>\r\n              </form>\r\n\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput [matDatepicker]=\"picker\" placeholder=\"DD/MM/YY*\" [formControl]=\"DOBFormControl\" id=\"name\" [(ngModel)]=\"Seller.DOB\"\r\n                  name=\"DOB\" class=\"mat-mail-input\" class=\"example-full-width\">\r\n                <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n                <mat-datepicker #picker></mat-datepicker>\r\n                <mat-error\r\n                    *ngIf=\"DOBFormControl.hasError('DOB') && !DOBFormControl.hasError('required')\">\r\n                    Please enter a valid Date of Birth\r\n                  </mat-error>\r\n                  <mat-error *ngIf=\"DOBFormControl.hasError('required')\">\r\n                    DOB is <strong>required</strong>\r\n                  </mat-error>\r\n              </mat-form-field>\r\n\r\n           \r\n              <ul class=\"submit-button\">\r\n                <div class=\"button-next\">\r\n                  <a (click)=\"matgroup.selectedIndex = 1\" class=\"btn btn-primary btnNext btn-next\">Next</a>\r\n                </div>\r\n              </ul>\r\n            </div>\r\n          </mat-tab>\r\n\r\n          <mat-tab label=\"Property Details\">\r\n            <div class=\"tab-pane tabs-align-padding\" role=\"tabpanel\" id=\"step2\">\r\n              <div class=\"seller-form-upper\">\r\n                <p>\r\n                  Property Enquiry<br />\r\n                  <span>Please fill the form below to list your property</span>\r\n                </p>\r\n                <hr class=\"top-hr\" />\r\n              </div>\r\n              <p class=\"mt-4\">Search by Postcode</p>\r\n         \r\n         \r\n              <mat-option>\r\n                <input [formControl]=\"autoCompleteControl\" type=\"text\" placeholder=\"Enter Postcode\" aria-label=\"Post Code\"\r\n                  matInput [matAutocomplete]=\"auto\" [(ngModel)]=\"Seller.postcode\">\r\n                <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\"\r\n                  (optionSelected)='getPosts($event.option.value)'>\r\n                  <mat-option *ngFor=\"let item of addressianAutoComplete$ | async; let index=index\" [value]=\"item\">\r\n                    <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\r\n                    </span> | <span>{{ item.citytown | titlecase}}</span>\r\n                  </mat-option>\r\n                </mat-autocomplete>\r\n              </mat-option>\r\n\r\n        \r\n\r\n        <hr class=\"Line-form\">\r\n              <div class=\" container  forms-container\">\r\n                <p>Search by Address</p>\r\n\r\n\r\n\r\n                <form class=\"example-form\">\r\n                  <mat-form-field class=\"example-full-width\">\r\n                    <input matInput placeholder=\"Address\" [formControl]=\"AddressFormControl\"\r\n                      [(ngModel)]=\"Seller.Address\" name=\"Address\" id=\"name\" class=\"mat-mail-input\">\r\n                    <mat-error\r\n                      *ngIf=\"AddressFormControl.hasError('Address') && !AddressFormControl.hasError('required')\">\r\n                      Please enter a valid address\r\n                    </mat-error>\r\n                    <mat-error *ngIf=\"AddressFormControl.hasError('required')\">\r\n                      Address is <strong>required</strong>\r\n                    </mat-error>\r\n                  </mat-form-field>\r\n                </form>\r\n\r\n\r\n\r\n\r\n                <form class=\"example-form\">\r\n                  <mat-form-field class=\"example-full-width\">\r\n                    <input matInput placeholder=\"Town/City\" [formControl]=\"TownFormControl\" [(ngModel)]=\"Seller.Town\"\r\n                      name=\"Town\" id=\"name\" class=\"mat-mail-input\">\r\n                    <mat-error *ngIf=\"TownFormControl.hasError('Town/City') && !TownFormControl.hasError('required')\">\r\n                      Please enter a valid Town/City\r\n                    </mat-error>\r\n                    <mat-error *ngIf=\"TownFormControl.hasError('required')\">\r\n                      Town/City is <strong>required</strong>\r\n                    </mat-error>\r\n                  </mat-form-field>\r\n                </form>\r\n\r\n\r\n                <form class=\"example-form\">\r\n                  <mat-form-field class=\"example-full-width\">\r\n                    <input matInput placeholder=\"State/Provience/Country\" [formControl]=\"stateFormControl\"\r\n                      [(ngModel)]=\"Seller.state\" name=\"state\" id=\"name\" class=\"mat-mail-input\">\r\n                    <mat-error\r\n                      *ngIf=\"stateFormControl.hasError('State/Provience/Country') && !stateFormControl.hasError('required')\">\r\n                      Please enter a valid State/Provience/Country\r\n                    </mat-error>\r\n                    <mat-error *ngIf=\"stateFormControl.hasError('required')\">\r\n                      State/Provience/Country is <strong>required</strong>\r\n                    </mat-error>\r\n                  </mat-form-field>\r\n                </form>\r\n\r\n                <label for=\"text\" class=\" \">Property Type*:</label>\r\n                <section class=\"example-section\" [(ngModel)]=\"Seller.PropertyType\" \r\n                  value=\"PropertyType\">\r\n\r\n                  <mat-radio-button class=\"example-margin\" value=\"Terrace House\">Terrace House</mat-radio-button>\r\n                  <mat-radio-button class=\"example-margin\" value=\"Detached House\">Detached House</mat-radio-button>\r\n                  <mat-radio-button class=\"example-margin\" value=\"Masionette\">Masionette</mat-radio-button>\r\n                  <mat-radio-button class=\"example-margin\" value=\"Semi Detached House\">Semi Detached House</mat-radio-button>\r\n                  <mat-radio-button class=\"example-margin\" value=\"End Of Terrace House\">End Of Terrace House</mat-radio-button>\r\n                  <mat-radio-button class=\"example-margin\" value=\"Purpose-Built Flat\">Purpose-Built Flat</mat-radio-button>\r\n                </section>\r\n\r\n            \r\n                <form class=\"example-form\">\r\n                  <mat-form-field class=\"example-full-width\">\r\n                    <input matInput placeholder=\"Number of Rooms\" [formControl]=\"noroomsFormControl\"\r\n                      [(ngModel)]=\"Seller.norooms\" name=\"norooms\" id=\"name\" class=\"mat-mail-input\" type=\"number\">\r\n                    <mat-error\r\n                      *ngIf=\"noroomsFormControl.hasError('Number of Rooms') && !noroomsFormControl.hasError('required')\">\r\n                      Please enter a valid Number of Rooms\r\n                    </mat-error>\r\n                    <mat-error *ngIf=\"noroomsFormControl.hasError('required')\">\r\n                      Number of Rooms is <strong>required</strong>\r\n                    </mat-error>\r\n                  </mat-form-field>\r\n                </form>\r\n                <div class=\"\">\r\n                  <label for=\"pwd\">Expected Amount (Offer) *</label>\r\n                  <mat-slider style=\"width: 100%\" name=\"ExpectedAmount\" [(ngModel)]=\"Seller.ExpectedAmount\" min=\"100000\"\r\n                    max=\"100000000\" step=\"1000\" value=\"50000\" thumbLabel tickInterval=\"1\">\r\n                  </mat-slider>\r\n                </div>\r\n                <mat-radio-group aria-label=\"Select an option\" [(ngModel)]=\"Seller.PropertyCondition\"\r\n                  name=\"PropertyCondition\">\r\n                  <label>Property Condition:</label>\r\n                 \r\n                  <mat-radio-button value=\"Refurbished\" class=\"col-12\">Refurbished</mat-radio-button>\r\n\r\n                  <mat-radio-button value=\"New Build\" class=\"col-12\">New Build</mat-radio-button>\r\n\r\n                  <mat-radio-button value=\"Needs modernisation\" class=\"col-12\">Needs modernisation</mat-radio-button>\r\n                </mat-radio-group>\r\n\r\n                <mat-radio-group aria-label=\"Select an option\" [(ngModel)]=\"Seller.ownership\" value=\"ownership\"\r\n                class=\"example-full-width\">\r\n                <mat-label>Ownership:</mat-label>\r\n               \r\n                <mat-radio-button value=\"Freehold\" class=\"col-12\">Freehold</mat-radio-button>\r\n\r\n                <mat-radio-button value=\"Leasehold\" class=\"col-12\">Leasehold</mat-radio-button>\r\n\r\n                <mat-radio-button value=\"Share of Freehold\" class=\"col-12\">Share of Freehold</mat-radio-button>\r\n              </mat-radio-group>\r\n\r\n          \r\n\r\n                <label for=\"text\" class=\" \">Select the Applicable Features:</label>\r\n                <section class=\"example-section\" [(ngModel)]=\"Seller.ApplicableFeatures\" \r\n                  value=\"ApplicableFeatures\">\r\n\r\n                  <mat-checkbox class=\"example-margin\" value=\"Terrace House\">Terrace House</mat-checkbox>\r\n                  <mat-checkbox class=\"example-margin\" value=\"Driveway\">Driveway</mat-checkbox>\r\n                  <mat-checkbox class=\"example-margin\" value=\"Period features\">Period features</mat-checkbox>\r\n                  <mat-checkbox class=\"example-margin\" value=\"Garage\">Garage</mat-checkbox>\r\n                  <mat-checkbox class=\"example-margin\" value=\"Wheelchair friendly\">Wheelchair friendly</mat-checkbox>\r\n                  <mat-checkbox class=\"example-margin\" value=\"Gated community\">Gated community</mat-checkbox>\r\n                  <mat-checkbox class=\"example-margin\" value=\"External Rear Garden\">External Rear Garden</mat-checkbox>\r\n                </section>\r\n\r\n\r\n\r\n\r\n          \r\n\r\n                <div class=\"button-next-tab2\">\r\n                  <a (click)=\"matgroup.selectedIndex = 0\" class=\"btn  btnPrevious btn-next\">Previous</a>\r\n                  <a (click)=\"matgroup.selectedIndex = 2\" class=\"btn btn-primary btnNext btn-next\">Next</a>\r\n                </div>\r\n              </div>\r\n            </div>\r\n             \r\n          </mat-tab>\r\n\r\n          <mat-tab label=\"Optional Details\">\r\n            <div class=\"tab-pane tabs-align-padding\" role=\"tabpanel\" id=\"step3\">\r\n              <div class=\"seller-form-upper\">\r\n                <p>\r\n                  List Your Property<br />\r\n                  <span>Please fill the form below to list your property</span>\r\n                </p>\r\n                <hr class=\"top-hr\" />\r\n              </div>\r\n              <h4 class=\"mt-4 forms-heading\">Optional Details</h4>\r\n\r\n              <div class=\"forms-container\">\r\n                <p class=\"mt-4 forms-heading-optional\">\r\n                  Upload Property Images*\r\n                </p>\r\n\r\n                <div class=\"col-4 frmCaption\">Image 1*</div>\r\n                <div class=\"col-12\">\r\n                  <label class=\"customUpload btnUpload btnM\">\r\n                    <span>Choose files</span>\r\n                    <input type=\"file\" class=\"upload\" />\r\n                  </label>\r\n                </div>\r\n                <div class=\"col-4 frmCaption\">Image 2*</div>\r\n                <div class=\"col-12\">\r\n                  <label class=\"customUpload btnUpload btnM\">\r\n                    <span>Choose files</span>\r\n\r\n                    <input type=\"file\" class=\"upload\" />\r\n                  </label>\r\n                </div>\r\n                <div class=\"col-4 frmCaption\">Image 3*</div>\r\n                <div class=\"col-12\">\r\n                  <label class=\"customUpload btnUpload btnM\">\r\n                    <span>Choose files</span>\r\n\r\n                    <input type=\"file\" class=\"upload\" />\r\n                  </label>\r\n                </div>\r\n                <div class=\"col-4 frmCaption\">Image 4*</div>\r\n                <div class=\"col-12\">\r\n                  <label class=\"customUpload btnUpload btnM\">\r\n                    <span>Choose files</span>\r\n\r\n                    <input type=\"file\" class=\"upload\" />\r\n                  </label>\r\n                </div>\r\n                <div class=\"button-next-tab2\">\r\n                  <a (click)=\"matgroup.selectedIndex = 1\" class=\"btn  btnPrevious btn-next\">Previous</a>\r\n                  <button class=\"btn btn-primary btnNext btn-next\" (click)=\"onSubmit\">\r\n                    Submit\r\n                  </button>\r\n                </div>\r\n              </div>\r\n            </div>\r\n          </mat-tab>\r\n        </mat-tab-group>\r\n      </form>\r\n    </section>\r\n  </div>\r\n</div>");
 
 /***/ }),
 
@@ -370,7 +370,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container matches-main-container\">\n  <p class=\"mt-3 main-heading\">You Have <span style=\"color:red\">3</span> Matches</p>\n\n  <div class=\"thanku-section\">\n    <p class=\"thanku-p-section\">Thank you for registering. You are now in our database\n      and we will share your property details with all the\n      interested buyers in you area</p>\n\n  </div>\n  <section class=\"\" id=\"matchproperties\">\n    <h3 class=\"mt-3 mb-3 font-headings\">Matched Buyers</h3>\n    <div class=\"match-section\"  routerLink='/selectedpropertydetail' *ngFor=\"let property of matchedProperties\">\n      <img src=\"assets/Images/My-Home-Insurance.png\" class=\"match-images float-left\">\n      <div class=\"match-content\">\n        <p routerLink='/buyerdetails'> <span class=\"area-p\">{{property.addressname}}</span><br>\n          <span class=\"discription-p\"> Serach Radius:{{property.SearchRadius}}</span><br>\n          <span class=\"discription-p property-type-color\">Type of Property:\n            {{property.Propertytype}}</span><br>\n          <span class=\"discription-p\">Post Code: {{property.postcode.postcode}}</span>\n\n          \n      </div>\n    </div>\n  </section>\n\n\n\n  <section id=\"youmaylike\">\n    <h3 class=\"mt-3 mb-3 font-headings\">Buyers with similar requirement</h3>\n    <!--First-section-->\n    <div class=\"match-section\"  *ngFor=\"let property of unmatchedProperties\">\n      <img src=\"assets/Images/property-1.png\" class=\"match-images float-left\">\n      <div class=\"match-content\">\n        <p routerLink='/buyerdetails'><span class=\"area-p\">{{property.detail.addressname}}</span><br>\n          <span class=\"discription-p\"> No. of Rooms:{{property.detail.SearchRadius}}</span><br>\n          <span class=\"discription-p property-type-color\">Type of Property:\n            {{property.detail.Propertytype}}</span><br>\n          <span class=\"discription-p\">Post Code:{{property.detail.postcode.postcode}}</span><br>\n          <span class=\"discription-p\"> Distance: {{property.distance | number:'1.1-1'}} (kms)</span></p>\n\n         \n\n      </div>\n    </div>\n  </section>\n\n\n\n\n\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container matches-main-container\">\r\n  <p class=\"mt-3 main-heading\">You Have <span style=\"color:red\">3</span> Matches</p>\r\n\r\n  <div class=\"thanku-section\">\r\n    <p class=\"thanku-p-section\">Thank you for registering. You are now in our database\r\n      and we will share your property details with all the\r\n      interested buyers in you area</p>\r\n\r\n  </div>\r\n  <section class=\"\" id=\"matchproperties\">\r\n    <h3 class=\"mt-3 mb-3 font-headings\">Matched Buyers</h3>\r\n    <div class=\"match-section\"  routerLink='/selectedpropertydetail' *ngFor=\"let property of matchedProperties\">\r\n      <img src=\"assets/Images/My-Home-Insurance.png\" class=\"match-images float-left\">\r\n      <div class=\"match-content\">\r\n        <p routerLink='/buyerdetails'> <span class=\"area-p\">{{property.addressname}}</span><br>\r\n          <span class=\"discription-p\"> Serach Radius:{{property.SearchRadius}}</span><br>\r\n          <span class=\"discription-p property-type-color\">Type of Property:\r\n            {{property.Propertytype}}</span><br>\r\n          <span class=\"discription-p\">Post Code: {{property.postcode.postcode}}</span>\r\n\r\n          \r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n\r\n\r\n  <section id=\"youmaylike\">\r\n    <h3 class=\"mt-3 mb-3 font-headings\">Buyers with similar requirement</h3>\r\n    <!--First-section-->\r\n    <div class=\"match-section\"  *ngFor=\"let property of unmatchedProperties\">\r\n      <img src=\"assets/Images/property-1.png\" class=\"match-images float-left\">\r\n      <div class=\"match-content\">\r\n        <p routerLink='/buyerdetails'><span class=\"area-p\">{{property.detail.addressname}}</span><br>\r\n          <span class=\"discription-p\"> No. of Rooms:{{property.detail.SearchRadius}}</span><br>\r\n          <span class=\"discription-p property-type-color\">Type of Property:\r\n            {{property.detail.Propertytype}}</span><br>\r\n          <span class=\"discription-p\">Post Code:{{property.detail.postcode.postcode}}</span><br>\r\n          <span class=\"discription-p\"> Distance: {{property.distance | number:'1.1-1'}} (kms)</span></p>\r\n\r\n         \r\n\r\n      </div>\r\n    </div>\r\n  </section>\r\n\r\n\r\n\r\n\r\n\r\n</div>\r\n");
 
 /***/ }),
 
@@ -1363,6 +1363,7 @@ let BuyerdetailsComponent = class BuyerdetailsComponent {
         this.snackBar = snackBar;
         this.route = route;
         this.isLoading = false;
+        this.selectedIndex = 0;
         this.version = _angular_material__WEBPACK_IMPORTED_MODULE_7__["VERSION"];
     }
     ngOnInit() {
@@ -1948,7 +1949,7 @@ ConfirmationDialog = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".form-containers {\n  width: auto;\n  padding-right: 8px;\n  padding-left: 8px;\n}\n.forms-container {\n  padding-bottom: 4%;\n}\n.row {\n  overflow-x: hidden;\n}\n.btn-facebook {\n  background-color: #244d93;\n  color: white;\n  width: 30%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  font-family: \"Open Sans\", sans-serif;\n}\n.btn-google {\n  background-color: #dd4b33;\n  color: white;\n  width: 30%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  font-family: \"Open Sans\", sans-serif;\n}\n.social-login h4 {\n  font-family: \"Open Sans\", sans-serif;\n  font-weight: 700;\n}\n.social-button {\n  display: flex;\n  /* justify-content: center; */\n  justify-content: space-evenly;\n  align-items: center;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n}\n.color-signup {\n  color: #244d93;\n}\n.btn-social-login {\n  width: 100%;\n  background-color: #244d93;\n  color: white;\n  margin-top: 3%;\n  font-family: \"Open Sans\", sans-serif;\n}\n.dropdown-toggle::after {\n  margin-left: 0.255em;\n  vertical-align: 2.255em;\n  content: \"\";\n  border-top: 0.4em solid;\n  border-right: 0.4em solid transparent;\n  border-bottom: 0;\n  border-left: 0.4em solid transparent;\n  float: right;\n  text-align: center;\n  margin-top: 3%;\n}\n.btn.btn-back {\n  width: 33%;\n  background-color: #244d93;\n  /* height: 35px; */\n  color: white;\n  font-family: \"Open Sans\", sans-serif;\n}\n.btn-next {\n  width: 33%;\n  background-color: #244d93;\n  /* height: 35px; */\n  color: white;\n  font-family: \"Open Sans\", sans-serif;\n}\n.or-text {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n}\n.second-container {\n  background-color: white;\n}\ninput#Tittle {\n  width: 20%;\n}\n.example-button-row button,\n.example-button-row a {\n  margin-right: 8px;\n}\n.button-next {\n  display: flex;\n  justify-content: center;\n  padding: 17px;\n}\n.button-next-tab2 {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  margin: 20px;\n}\n.form-check-input {\n  width: auto;\n}\n.last-radio-button {\n  margin-right: 0px;\n}\n.radio-align {\n\n  flex-direction: column;\n  margin: 0;\n  display: flex;\n}\n.input\n{\n  border: none;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.mat-mail-input {\n  border: none;\n}\n.tabs-align-padding {\n \n  padding: 17px;\n  background: white;\n  margin: 10px;\n}\n.mat-tab-label {\n  height: 48px;\n  padding: 0 14px;\n  cursor: pointer;\n  box-sizing: border-box;\n  opacity: .6;\n  min-width: 160px;\n  text-align: center;\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  white-space: nowrap;\n  position: relative;\n  font-size: 13px;\n}\n.social-login {\n  padding: 15px;\n}\n.social-login {\n  background-color: white;\n}\n.Line-form\n{\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9ybXMvZm9ybXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0QztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0QztBQUVBO0VBQ0Usb0NBQW9DO0VBQ3BDLGdCQUFnQjtBQUNsQjtBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjtBQUVBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxjQUFjO0FBQ2hCO0FBRUE7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixjQUFjO0VBQ2Qsb0NBQW9DO0FBQ3RDO0FBQ0E7RUFDRSxvQkFBb0I7RUFDcEIsdUJBQXVCO0VBQ3ZCLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIscUNBQXFDO0VBQ3JDLGdCQUFnQjtFQUNoQixvQ0FBb0M7RUFDcEMsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxVQUFVO0VBQ1YseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDO0FBRUE7RUFDRSxVQUFVO0VBQ1YseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDO0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLHFCQUFxQjtBQUN2QjtBQUVBO0VBQ0UsdUJBQXVCO0FBQ3pCO0FBRUE7RUFDRSxVQUFVO0FBQ1o7QUFDQTs7RUFFRSxpQkFBaUI7QUFDbkI7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsYUFBYTtBQUNmO0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLG1CQUFtQjtFQUNuQixZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7QUFDYjtBQUNBO0VBQ0UsaUJBQWlCO0FBQ25CO0FBRUE7O0VBRUUsc0JBQXNCO0VBQ3RCLFNBQVM7RUFDVCxhQUFhO0FBQ2Y7QUFDQTs7RUFFRSxZQUFZO0FBQ2Q7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsV0FBVztBQUNiO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkO0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7QUFDQTs7RUFFRSxhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDtBQUNBO0VBQ0UsWUFBWTtFQUNaLGVBQWU7RUFDZixlQUFlO0VBQ2Ysc0JBQXNCO0VBQ3RCLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsYUFBYTtBQUNmO0FBQ0E7RUFDRSx1QkFBdUI7QUFDekI7QUFDQTs7RUFFRSxrQkFBa0I7RUFDbEIscUJBQXFCO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvZm9ybXMvZm9ybXMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb3JtLWNvbnRhaW5lcnMge1xuICB3aWR0aDogYXV0bztcbiAgcGFkZGluZy1yaWdodDogOHB4O1xuICBwYWRkaW5nLWxlZnQ6IDhweDtcbn1cbi5mb3Jtcy1jb250YWluZXIge1xuICBwYWRkaW5nLWJvdHRvbTogNCU7XG59XG4ucm93IHtcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xufVxuLmJ0bi1mYWNlYm9vayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDRkOTM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgd2lkdGg6IDMwJTtcbiAgaGVpZ2h0OiAzNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjogMHB4O1xuICBwYWRkaW5nOiAwcHg7XG4gIGZvbnQtZmFtaWx5OiBcIk9wZW4gU2Fuc1wiLCBzYW5zLXNlcmlmO1xufVxuXG4uYnRuLWdvb2dsZSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNkZDRiMzM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgd2lkdGg6IDMwJTtcbiAgaGVpZ2h0OiAzNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjogMHB4O1xuICBwYWRkaW5nOiAwcHg7XG4gIGZvbnQtZmFtaWx5OiBcIk9wZW4gU2Fuc1wiLCBzYW5zLXNlcmlmO1xufVxuXG4uc29jaWFsLWxvZ2luIGg0IHtcbiAgZm9udC1mYW1pbHk6IFwiT3BlbiBTYW5zXCIsIHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG59XG5cbi5zb2NpYWwtYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmV4YW1wbGUtZm9ybSB7XG4gIG1pbi13aWR0aDogMTUwcHg7XG4gIG1heC13aWR0aDogNTAwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG59XG4uY29sb3Itc2lnbnVwIHtcbiAgY29sb3I6ICMyNDRkOTM7XG59XG5cbi5idG4tc29jaWFsLWxvZ2luIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDRkOTM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgbWFyZ2luLXRvcDogMyU7XG4gIGZvbnQtZmFtaWx5OiBcIk9wZW4gU2Fuc1wiLCBzYW5zLXNlcmlmO1xufVxuLmRyb3Bkb3duLXRvZ2dsZTo6YWZ0ZXIge1xuICBtYXJnaW4tbGVmdDogMC4yNTVlbTtcbiAgdmVydGljYWwtYWxpZ246IDIuMjU1ZW07XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIGJvcmRlci10b3A6IDAuNGVtIHNvbGlkO1xuICBib3JkZXItcmlnaHQ6IDAuNGVtIHNvbGlkIHRyYW5zcGFyZW50O1xuICBib3JkZXItYm90dG9tOiAwO1xuICBib3JkZXItbGVmdDogMC40ZW0gc29saWQgdHJhbnNwYXJlbnQ7XG4gIGZsb2F0OiByaWdodDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tdG9wOiAzJTtcbn1cbi5idG4uYnRuLWJhY2sge1xuICB3aWR0aDogMzMlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0ZDkzO1xuICAvKiBoZWlnaHQ6IDM1cHg7ICovXG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1mYW1pbHk6IFwiT3BlbiBTYW5zXCIsIHNhbnMtc2VyaWY7XG59XG5cbi5idG4tbmV4dCB7XG4gIHdpZHRoOiAzMyU7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDRkOTM7XG4gIC8qIGhlaWdodDogMzVweDsgKi9cbiAgY29sb3I6IHdoaXRlO1xuICBmb250LWZhbWlseTogXCJPcGVuIFNhbnNcIiwgc2Fucy1zZXJpZjtcbn1cblxuLm9yLXRleHQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xufVxuXG4uc2Vjb25kLWNvbnRhaW5lciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG5pbnB1dCNUaXR0bGUge1xuICB3aWR0aDogMjAlO1xufVxuLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sXG4uZXhhbXBsZS1idXR0b24tcm93IGEge1xuICBtYXJnaW4tcmlnaHQ6IDhweDtcbn1cblxuLmJ1dHRvbi1uZXh0IHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHBhZGRpbmc6IDE3cHg7XG59XG5cbi5idXR0b24tbmV4dC10YWIyIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG1hcmdpbjogMjBweDtcbn1cblxuLmZvcm0tY2hlY2staW5wdXQge1xuICB3aWR0aDogYXV0bztcbn1cbi5sYXN0LXJhZGlvLWJ1dHRvbiB7XG4gIG1hcmdpbi1yaWdodDogMHB4O1xufVxuXG4ucmFkaW8tYWxpZ24ge1xuXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIG1hcmdpbjogMDtcbiAgZGlzcGxheTogZmxleDtcbn1cbi5pbnB1dFxue1xuICBib3JkZXI6IG5vbmU7XG59XG4uZXhhbXBsZS1mb3JtIHtcbiAgbWluLXdpZHRoOiAxNTBweDtcbiAgbWF4LXdpZHRoOiA1MDBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJvcmRlcjogbm9uZTtcbn1cbi5tYXQtbWFpbC1pbnB1dCB7XG4gIGJvcmRlcjogbm9uZTtcbn1cbi50YWJzLWFsaWduLXBhZGRpbmcge1xuIFxuICBwYWRkaW5nOiAxN3B4O1xuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgbWFyZ2luOiAxMHB4O1xufVxuLm1hdC10YWItbGFiZWwge1xuICBoZWlnaHQ6IDQ4cHg7XG4gIHBhZGRpbmc6IDAgMTRweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICBvcGFjaXR5OiAuNjtcbiAgbWluLXdpZHRoOiAxNjBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZm9udC1zaXplOiAxM3B4O1xufVxuLnNvY2lhbC1sb2dpbiB7XG4gIHBhZGRpbmc6IDE1cHg7XG59XG4uc29jaWFsLWxvZ2luIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG4uTGluZS1mb3JtXG57XG4gIG1hcmdpbi10b3A6IDIuNXJlbTtcbiAgbWFyZ2luLWJvdHRvbTogMi41cmVtO1xufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = (".form-containers {\r\n  width: auto;\r\n  padding-right: 8px;\r\n  padding-left: 8px;\r\n}\r\n\r\n.forms-container {\r\n  padding-bottom: 4%;\r\n}\r\n\r\n.row {\r\n  overflow-x: hidden;\r\n}\r\n\r\n.btn-facebook {\r\n  background-color: #244d93;\r\n  color: white;\r\n  width: 30%;\r\n  height: 35px;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  font-family: \"Open Sans\", sans-serif;\r\n}\r\n\r\n.btn-google {\r\n  background-color: #dd4b33;\r\n  color: white;\r\n  width: 30%;\r\n  height: 35px;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  font-family: \"Open Sans\", sans-serif;\r\n}\r\n\r\n.social-login h4 {\r\n  font-family: \"Open Sans\", sans-serif;\r\n  font-weight: 700;\r\n}\r\n\r\n.social-button {\r\n  display: flex;\r\n  /* justify-content: center; */\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n}\r\n\r\n.example-form {\r\n  min-width: 150px;\r\n  max-width: 500px;\r\n  width: 100%;\r\n}\r\n\r\n.example-full-width {\r\n  width: 100%;\r\n}\r\n\r\n.color-signup {\r\n  color: #244d93;\r\n}\r\n\r\n.btn-social-login {\r\n  width: 100%;\r\n  background-color: #244d93;\r\n  color: white;\r\n  margin-top: 3%;\r\n  font-family: \"Open Sans\", sans-serif;\r\n}\r\n\r\n.dropdown-toggle::after {\r\n  margin-left: 0.255em;\r\n  vertical-align: 2.255em;\r\n  content: \"\";\r\n  border-top: 0.4em solid;\r\n  border-right: 0.4em solid transparent;\r\n  border-bottom: 0;\r\n  border-left: 0.4em solid transparent;\r\n  float: right;\r\n  text-align: center;\r\n  margin-top: 3%;\r\n}\r\n\r\n.btn.btn-back {\r\n  width: 33%;\r\n  background-color: #244d93;\r\n  /* height: 35px; */\r\n  color: white;\r\n  font-family: \"Open Sans\", sans-serif;\r\n}\r\n\r\n.btn-next {\r\n  width: 33%;\r\n  background-color: #244d93;\r\n  /* height: 35px; */\r\n  color: white;\r\n  font-family: \"Open Sans\", sans-serif;\r\n}\r\n\r\n.or-text {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-content: center;\r\n}\r\n\r\n.second-container {\r\n  background-color: white;\r\n}\r\n\r\ninput#Tittle {\r\n  width: 20%;\r\n}\r\n\r\n.example-button-row button,\r\n.example-button-row a {\r\n  margin-right: 8px;\r\n}\r\n\r\n.button-next {\r\n  display: flex;\r\n  justify-content: center;\r\n  padding: 17px;\r\n}\r\n\r\n.button-next-tab2 {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  margin: 20px;\r\n}\r\n\r\n.form-check-input {\r\n  width: auto;\r\n}\r\n\r\n.last-radio-button {\r\n  margin-right: 0px;\r\n}\r\n\r\n.radio-align {\r\n\r\n  flex-direction: column;\r\n  margin: 0;\r\n  display: flex;\r\n}\r\n\r\n.input {\r\n  border: none;\r\n}\r\n\r\n.example-form {\r\n  min-width: 150px;\r\n  max-width: 500px;\r\n  width: 100%;\r\n}\r\n\r\n.example-full-width {\r\n  width: 100%;\r\n  border: none;\r\n}\r\n\r\n.mat-mail-input {\r\n  border: none;\r\n}\r\n\r\n.tabs-align-padding {\r\n\r\n  padding: 17px;\r\n  background: white;\r\n  margin: 10px;\r\n}\r\n\r\n.mat-tab-label {\r\n  height: 48px;\r\n  padding: 0 14px;\r\n  cursor: pointer;\r\n  box-sizing: border-box;\r\n  opacity: .6;\r\n  min-width: 160px;\r\n  text-align: center;\r\n  display: inline-flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  white-space: nowrap;\r\n  position: relative;\r\n  font-size: 13px;\r\n}\r\n\r\n.social-login {\r\n  padding: 15px;\r\n}\r\n\r\n.social-login {\r\n  background-color: white;\r\n}\r\n\r\n.Line-form {\r\n  margin-top: 2.5rem;\r\n  margin-bottom: 2.5rem;\r\n}\r\n\r\n.mat-option {\r\n  margin: 1rem 0;\r\n  overflow: visible;\r\n  line-height: initial;\r\n  word-wrap: break-word;\r\n  white-space: pre-wrap;\r\n}\r\n\r\n.mat-option i {\r\n  display: block;\r\n  font-size: 1.5rem;\r\n  opacity: 0.6;\r\n  margin-left: 0.5rem;\r\n\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZm9ybXMvZm9ybXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7RUFDWixvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxjQUFjO0FBQ2hCOztBQUVBO0VBQ0UsV0FBVztFQUNYLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osY0FBYztFQUNkLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQix1QkFBdUI7RUFDdkIsV0FBVztFQUNYLHVCQUF1QjtFQUN2QixxQ0FBcUM7RUFDckMsZ0JBQWdCO0VBQ2hCLG9DQUFvQztFQUNwQyxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxVQUFVO0VBQ1YseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UsVUFBVTtFQUNWLHlCQUF5QjtFQUN6QixrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsVUFBVTtBQUNaOztBQUVBOztFQUVFLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsYUFBYTtBQUNmOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixtQkFBbUI7RUFDbkIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsV0FBVztBQUNiOztBQUVBO0VBQ0UsaUJBQWlCO0FBQ25COztBQUVBOztFQUVFLHNCQUFzQjtFQUN0QixTQUFTO0VBQ1QsYUFBYTtBQUNmOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBO0VBQ0UsWUFBWTtBQUNkOztBQUVBOztFQUVFLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGVBQWU7RUFDZixlQUFlO0VBQ2Ysc0JBQXNCO0VBQ3RCLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLG9CQUFvQjtFQUNwQixxQkFBcUI7RUFDckIscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osbUJBQW1COztBQUVyQiIsImZpbGUiOiJzcmMvYXBwL2Zvcm1zL2Zvcm1zLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZm9ybS1jb250YWluZXJzIHtcclxuICB3aWR0aDogYXV0bztcclxuICBwYWRkaW5nLXJpZ2h0OiA4cHg7XHJcbiAgcGFkZGluZy1sZWZ0OiA4cHg7XHJcbn1cclxuXHJcbi5mb3Jtcy1jb250YWluZXIge1xyXG4gIHBhZGRpbmctYm90dG9tOiA0JTtcclxufVxyXG5cclxuLnJvdyB7XHJcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xyXG59XHJcblxyXG4uYnRuLWZhY2Vib29rIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0ZDkzO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICB3aWR0aDogMzAlO1xyXG4gIGhlaWdodDogMzVweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luOiAwcHg7XHJcbiAgcGFkZGluZzogMHB4O1xyXG4gIGZvbnQtZmFtaWx5OiBcIk9wZW4gU2Fuc1wiLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG4uYnRuLWdvb2dsZSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2RkNGIzMztcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgd2lkdGg6IDMwJTtcclxuICBoZWlnaHQ6IDM1cHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbjogMHB4O1xyXG4gIHBhZGRpbmc6IDBweDtcclxuICBmb250LWZhbWlseTogXCJPcGVuIFNhbnNcIiwgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLnNvY2lhbC1sb2dpbiBoNCB7XHJcbiAgZm9udC1mYW1pbHk6IFwiT3BlbiBTYW5zXCIsIHNhbnMtc2VyaWY7XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxufVxyXG5cclxuLnNvY2lhbC1idXR0b24ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG5cclxuLmV4YW1wbGUtZm9ybSB7XHJcbiAgbWluLXdpZHRoOiAxNTBweDtcclxuICBtYXgtd2lkdGg6IDUwMHB4O1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmNvbG9yLXNpZ251cCB7XHJcbiAgY29sb3I6ICMyNDRkOTM7XHJcbn1cclxuXHJcbi5idG4tc29jaWFsLWxvZ2luIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0ZDkzO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBtYXJnaW4tdG9wOiAzJTtcclxuICBmb250LWZhbWlseTogXCJPcGVuIFNhbnNcIiwgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLmRyb3Bkb3duLXRvZ2dsZTo6YWZ0ZXIge1xyXG4gIG1hcmdpbi1sZWZ0OiAwLjI1NWVtO1xyXG4gIHZlcnRpY2FsLWFsaWduOiAyLjI1NWVtO1xyXG4gIGNvbnRlbnQ6IFwiXCI7XHJcbiAgYm9yZGVyLXRvcDogMC40ZW0gc29saWQ7XHJcbiAgYm9yZGVyLXJpZ2h0OiAwLjRlbSBzb2xpZCB0cmFuc3BhcmVudDtcclxuICBib3JkZXItYm90dG9tOiAwO1xyXG4gIGJvcmRlci1sZWZ0OiAwLjRlbSBzb2xpZCB0cmFuc3BhcmVudDtcclxuICBmbG9hdDogcmlnaHQ7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbi10b3A6IDMlO1xyXG59XHJcblxyXG4uYnRuLmJ0bi1iYWNrIHtcclxuICB3aWR0aDogMzMlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDRkOTM7XHJcbiAgLyogaGVpZ2h0OiAzNXB4OyAqL1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBmb250LWZhbWlseTogXCJPcGVuIFNhbnNcIiwgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLmJ0bi1uZXh0IHtcclxuICB3aWR0aDogMzMlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDRkOTM7XHJcbiAgLyogaGVpZ2h0OiAzNXB4OyAqL1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBmb250LWZhbWlseTogXCJPcGVuIFNhbnNcIiwgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLm9yLXRleHQge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4uc2Vjb25kLWNvbnRhaW5lciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbmlucHV0I1RpdHRsZSB7XHJcbiAgd2lkdGg6IDIwJTtcclxufVxyXG5cclxuLmV4YW1wbGUtYnV0dG9uLXJvdyBidXR0b24sXHJcbi5leGFtcGxlLWJ1dHRvbi1yb3cgYSB7XHJcbiAgbWFyZ2luLXJpZ2h0OiA4cHg7XHJcbn1cclxuXHJcbi5idXR0b24tbmV4dCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICBwYWRkaW5nOiAxN3B4O1xyXG59XHJcblxyXG4uYnV0dG9uLW5leHQtdGFiMiB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIG1hcmdpbjogMjBweDtcclxufVxyXG5cclxuLmZvcm0tY2hlY2staW5wdXQge1xyXG4gIHdpZHRoOiBhdXRvO1xyXG59XHJcblxyXG4ubGFzdC1yYWRpby1idXR0b24ge1xyXG4gIG1hcmdpbi1yaWdodDogMHB4O1xyXG59XHJcblxyXG4ucmFkaW8tYWxpZ24ge1xyXG5cclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIG1hcmdpbjogMDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG59XHJcblxyXG4uaW5wdXQge1xyXG4gIGJvcmRlcjogbm9uZTtcclxufVxyXG5cclxuLmV4YW1wbGUtZm9ybSB7XHJcbiAgbWluLXdpZHRoOiAxNTBweDtcclxuICBtYXgtd2lkdGg6IDUwMHB4O1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBib3JkZXI6IG5vbmU7XHJcbn1cclxuXHJcbi5tYXQtbWFpbC1pbnB1dCB7XHJcbiAgYm9yZGVyOiBub25lO1xyXG59XHJcblxyXG4udGFicy1hbGlnbi1wYWRkaW5nIHtcclxuXHJcbiAgcGFkZGluZzogMTdweDtcclxuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcclxuICBtYXJnaW46IDEwcHg7XHJcbn1cclxuXHJcbi5tYXQtdGFiLWxhYmVsIHtcclxuICBoZWlnaHQ6IDQ4cHg7XHJcbiAgcGFkZGluZzogMCAxNHB4O1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gIG9wYWNpdHk6IC42O1xyXG4gIG1pbi13aWR0aDogMTYwcHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgZm9udC1zaXplOiAxM3B4O1xyXG59XHJcblxyXG4uc29jaWFsLWxvZ2luIHtcclxuICBwYWRkaW5nOiAxNXB4O1xyXG59XHJcblxyXG4uc29jaWFsLWxvZ2luIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxufVxyXG5cclxuLkxpbmUtZm9ybSB7XHJcbiAgbWFyZ2luLXRvcDogMi41cmVtO1xyXG4gIG1hcmdpbi1ib3R0b206IDIuNXJlbTtcclxufVxyXG5cclxuLm1hdC1vcHRpb24ge1xyXG4gIG1hcmdpbjogMXJlbSAwO1xyXG4gIG92ZXJmbG93OiB2aXNpYmxlO1xyXG4gIGxpbmUtaGVpZ2h0OiBpbml0aWFsO1xyXG4gIHdvcmQtd3JhcDogYnJlYWstd29yZDtcclxuICB3aGl0ZS1zcGFjZTogcHJlLXdyYXA7XHJcbn1cclxuXHJcbi5tYXQtb3B0aW9uIGkge1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIGZvbnQtc2l6ZTogMS41cmVtO1xyXG4gIG9wYWNpdHk6IDAuNjtcclxuICBtYXJnaW4tbGVmdDogMC41cmVtO1xyXG5cclxufVxyXG4iXX0= */");
 
 /***/ }),
 
@@ -1974,7 +1975,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _state_service_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../state-service.service */ "./src/app/state-service.service.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
-/* harmony import */ var _postcode_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./postcode.service */ "./src/app/forms/postcode.service.ts");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
+
 
 
 
@@ -2002,6 +2007,8 @@ let FormsComponent = class FormsComponent {
         this.router = router;
         this.stateService = stateService;
         this.postcodeService = postcodeService;
+        this.addressianAutoComplete$ = null;
+        this.autoCompleteControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]();
         this.isLoggedIn = true;
         this.Buyer = new _forms__WEBPACK_IMPORTED_MODULE_3__["Buyer"]();
         this.submitted = false;
@@ -2012,1138 +2019,7 @@ let FormsComponent = class FormsComponent {
         this.maxNumberOfTabs = 2;
         this.isLoading = false;
         this.version = _angular_material__WEBPACK_IMPORTED_MODULE_7__["VERSION"];
-        this.postcodeFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]();
         this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]();
-        this.options = [
-            {
-                postcode: "AB10 1XG"
-            },
-            {
-                postcode: "AB10 6RN"
-            },
-            {
-                postcode: "AB10 7JB"
-            },
-            {
-                postcode: "AB11 5QN"
-            },
-            {
-                postcode: "AB11 6UL"
-            },
-            {
-                postcode: "AB11 8RQ"
-            },
-            {
-                postcode: "AB12 3FJ"
-            },
-            {
-                postcode: "AB12 4NA"
-            },
-            {
-                postcode: "AB12 5GL"
-            },
-            {
-                postcode: "AB12 9SP"
-            },
-            {
-                postcode: "AB14 0TQ"
-            },
-            {
-                postcode: "AB15 5HB"
-            },
-            {
-                postcode: "AB15 6NA"
-            },
-            {
-                postcode: "AB15 8UF"
-            },
-            {
-                postcode: "AB15 9SE"
-            },
-            {
-                postcode: "AB16 5ST"
-            },
-            {
-                postcode: "AB16 6SZ"
-            },
-            {
-                postcode: "AB16 7NX"
-            },
-            {
-                postcode: "AB21 0AL"
-            },
-            {
-                postcode: "AB21 0TF"
-            },
-            {
-                postcode: "AB21 7LD"
-            },
-            {
-                postcode: "AB21 7LE"
-            },
-            {
-                postcode: "AB21 7LF"
-            },
-            {
-                postcode: "AB21 7LG"
-            },
-            {
-                postcode: "AB21 7LH"
-            },
-            {
-                postcode: "AB21 7LJ"
-            },
-            {
-                postcode: "AB21 7LL"
-            },
-            {
-                postcode: "AB21 7LN"
-            },
-            {
-                postcode: "AB21 7LP"
-            },
-            {
-                postcode: "AB21 7LQ"
-            },
-            {
-                postcode: "AB21 7LR"
-            },
-            {
-                postcode: "AB21 7LS"
-            },
-            {
-                postcode: "AB21 7LT"
-            },
-            {
-                postcode: "AB21 7LU"
-            },
-            {
-                postcode: "AB21 7LW"
-            },
-            {
-                postcode: "AB21 7LX"
-            },
-            {
-                postcode: "AB21 7LY"
-            },
-            {
-                postcode: "AB21 7LZ"
-            },
-            {
-                postcode: "AB21 7NA"
-            },
-            {
-                postcode: "AB21 7NB"
-            },
-            {
-                postcode: "AB21 7ND"
-            },
-            {
-                postcode: "AB21 7NE"
-            },
-            {
-                postcode: "AB21 7NF"
-            },
-            {
-                postcode: "AB21 7NG"
-            },
-            {
-                postcode: "AB21 7NH"
-            },
-            {
-                postcode: "AB21 7NJ"
-            },
-            {
-                postcode: "AB21 7NP"
-            },
-            {
-                postcode: "AB21 7NQ"
-            },
-            {
-                postcode: "AB21 7NR"
-            },
-            {
-                postcode: "AB21 7NS"
-            },
-            {
-                postcode: "AB21 7NX"
-            },
-            {
-                postcode: "AB21 7NY"
-            },
-            {
-                postcode: "AB21 7PB"
-            },
-            {
-                postcode: "AB21 7PE"
-            },
-            {
-                postcode: "AB21 7PH"
-            },
-            {
-                postcode: "AB21 7PP"
-            },
-            {
-                postcode: "AB21 7PQ"
-            },
-            {
-                postcode: "AB21 7PR"
-            },
-            {
-                postcode: "AB21 7PS"
-            },
-            {
-                postcode: "AB21 7PU"
-            },
-            {
-                postcode: "AB21 7PW"
-            },
-            {
-                postcode: "AB21 7PY"
-            },
-            {
-                postcode: "AB21 7PZ"
-            },
-            {
-                postcode: "AB21 7QQ"
-            },
-            {
-                postcode: "AB21 7UU"
-            },
-            {
-                postcode: "AB21 7XA"
-            },
-            {
-                postcode: "AB21 7XB"
-            },
-            {
-                postcode: "AB21 7YS"
-            },
-            {
-                postcode: "AB21 9AB"
-            },
-            {
-                postcode: "AB21 9AD"
-            },
-            {
-                postcode: "AB21 9AE"
-            },
-            {
-                postcode: "AB21 9AG"
-            },
-            {
-                postcode: "AB21 9AH"
-            },
-            {
-                postcode: "AB21 9AJ"
-            },
-            {
-                postcode: "AB21 9AL"
-            },
-            {
-                postcode: "AB21 9AN"
-            },
-            {
-                postcode: "AB21 9AP"
-            },
-            {
-                postcode: "AB21 9AR"
-            },
-            {
-                postcode: "AB21 9AS"
-            },
-            {
-                postcode: "AB21 9AT"
-            },
-            {
-                postcode: "AB21 9AU"
-            },
-            {
-                postcode: "AB21 9AX"
-            },
-            {
-                postcode: "AB21 9AY"
-            },
-            {
-                postcode: "AB21 9BB"
-            },
-            {
-                postcode: "AB21 9BD"
-            },
-            {
-                postcode: "AB21 9BE"
-            },
-            {
-                postcode: "AB21 9BG"
-            },
-            {
-                postcode: "AB21 9BH"
-            },
-            {
-                postcode: "AB21 9BJ"
-            },
-            {
-                postcode: "AB21 9BL"
-            },
-            {
-                postcode: "AB21 9BN"
-            },
-            {
-                postcode: "AB21 9BP"
-            },
-            {
-                postcode: "AB21 9BQ"
-            },
-            {
-                postcode: "AB21 9BR"
-            },
-            {
-                postcode: "AB21 9BS"
-            },
-            {
-                postcode: "AB21 9BT"
-            },
-            {
-                postcode: "AB21 9BU"
-            },
-            {
-                postcode: "AB21 9BX"
-            },
-            {
-                postcode: "AB21 9BY"
-            },
-            {
-                postcode: "AB21 9DA"
-            },
-            {
-                postcode: "AB21 9DB"
-            },
-            {
-                postcode: "AB21 9DD"
-            },
-            {
-                postcode: "AB21 9DE"
-            },
-            {
-                postcode: "AB21 9DF"
-            },
-            {
-                postcode: "AB21 9DG"
-            },
-            {
-                postcode: "AB21 9DH"
-            },
-            {
-                postcode: "AB21 9DJ"
-            },
-            {
-                postcode: "AB21 9DL"
-            },
-            {
-                postcode: "AB21 9DN"
-            },
-            {
-                postcode: "AB21 9DP"
-            },
-            {
-                postcode: "AB21 9DQ"
-            },
-            {
-                postcode: "AB21 9DR"
-            },
-            {
-                postcode: "AB21 9DT"
-            },
-            {
-                postcode: "AB21 9DU"
-            },
-            {
-                postcode: "AB21 9DX"
-            },
-            {
-                postcode: "AB21 9DY"
-            },
-            {
-                postcode: "AB21 9EA"
-            },
-            {
-                postcode: "AB21 9EB"
-            },
-            {
-                postcode: "AB21 9ED"
-            },
-            {
-                postcode: "AB21 9EE"
-            },
-            {
-                postcode: "AB21 9EF"
-            },
-            {
-                postcode: "AB21 9EG"
-            },
-            {
-                postcode: "AB21 9EH"
-            },
-            {
-                postcode: "AB21 9EJ"
-            },
-            {
-                postcode: "AB21 9EL"
-            },
-            {
-                postcode: "AB21 9EN"
-            },
-            {
-                postcode: "AB21 9EP"
-            },
-            {
-                postcode: "AB21 9EQ"
-            },
-            {
-                postcode: "AB21 9ER"
-            },
-            {
-                postcode: "AB21 9ET"
-            },
-            {
-                postcode: "AB21 9EU"
-            },
-            {
-                postcode: "AB21 9EW"
-            },
-            {
-                postcode: "AB21 9EX"
-            },
-            {
-                postcode: "AB21 9EY"
-            },
-            {
-                postcode: "AB21 9HA"
-            },
-            {
-                postcode: "AB21 9HB"
-            },
-            {
-                postcode: "AB21 9HE"
-            },
-            {
-                postcode: "AB21 9HH"
-            },
-            {
-                postcode: "AB21 9HJ"
-            },
-            {
-                postcode: "AB21 9HN"
-            },
-            {
-                postcode: "AB21 9HQ"
-            },
-            {
-                postcode: "AB21 9HR"
-            },
-            {
-                postcode: "AB21 9HS"
-            },
-            {
-                postcode: "AB21 9HT"
-            },
-            {
-                postcode: "AB21 9HU"
-            },
-            {
-                postcode: "AB21 9HW"
-            },
-            {
-                postcode: "AB21 9HX"
-            },
-            {
-                postcode: "AB21 9HY"
-            },
-            {
-                postcode: "AB21 9HZ"
-            },
-            {
-                postcode: "AB21 9JB"
-            },
-            {
-                postcode: "AB21 9JD"
-            },
-            {
-                postcode: "AB21 9JE"
-            },
-            {
-                postcode: "AB21 9JH"
-            },
-            {
-                postcode: "AB21 9JJ"
-            },
-            {
-                postcode: "AB21 9JL"
-            },
-            {
-                postcode: "AB21 9JP"
-            },
-            {
-                postcode: "AB21 9JQ"
-            },
-            {
-                postcode: "AB21 9JR"
-            },
-            {
-                postcode: "AB21 9JS"
-            },
-            {
-                postcode: "AB21 9JT"
-            },
-            {
-                postcode: "AB21 9JU"
-            },
-            {
-                postcode: "AB21 9JX"
-            },
-            {
-                postcode: "AB21 9JY"
-            },
-            {
-                postcode: "AB21 9LA"
-            },
-            {
-                postcode: "AB21 9LB"
-            },
-            {
-                postcode: "AB21 9LD"
-            },
-            {
-                postcode: "AB21 9LE"
-            },
-            {
-                postcode: "AB21 9LF"
-            },
-            {
-                postcode: "AB21 9LG"
-            },
-            {
-                postcode: "AB21 9LJ"
-            },
-            {
-                postcode: "AB21 9LL"
-            },
-            {
-                postcode: "AB21 9LN"
-            },
-            {
-                postcode: "AB21 9LP"
-            },
-            {
-                postcode: "AB21 9LQ"
-            },
-            {
-                postcode: "AB21 9LR"
-            },
-            {
-                postcode: "AB21 9LS"
-            },
-            {
-                postcode: "AB21 9LT"
-            },
-            {
-                postcode: "AB21 9LU"
-            },
-            {
-                postcode: "AB21 9LW"
-            },
-            {
-                postcode: "AB21 9LX"
-            },
-            {
-                postcode: "AB21 9LZ"
-            },
-            {
-                postcode: "AB21 9NA"
-            },
-            {
-                postcode: "AB21 9NB"
-            },
-            {
-                postcode: "AB21 9ND"
-            },
-            {
-                postcode: "AB21 9NL"
-            },
-            {
-                postcode: "AB21 9NN"
-            },
-            {
-                postcode: "AB21 9NP"
-            },
-            {
-                postcode: "AB21 9NS"
-            },
-            {
-                postcode: "AB21 9NT"
-            },
-            {
-                postcode: "AB21 9NU"
-            },
-            {
-                postcode: "AB21 9NX"
-            },
-            {
-                postcode: "AB21 9NY"
-            },
-            {
-                postcode: "AB21 9PA"
-            },
-            {
-                postcode: "AB21 9PB"
-            },
-            {
-                postcode: "AB21 9PD"
-            },
-            {
-                postcode: "AB21 0TG"
-            },
-            {
-                postcode: "AB21 0TH"
-            },
-            {
-                postcode: "AB21 0TJ"
-            },
-            {
-                postcode: "AB21 0TL"
-            },
-            {
-                postcode: "AB21 0TN"
-            },
-            {
-                postcode: "AB21 0TP"
-            },
-            {
-                postcode: "AB21 0TQ"
-            },
-            {
-                postcode: "AB21 0TR"
-            },
-            {
-                postcode: "AB21 0TS"
-            },
-            {
-                postcode: "AB21 0TT"
-            },
-            {
-                postcode: "AB21 0TU"
-            },
-            {
-                postcode: "AB21 0TW"
-            },
-            {
-                postcode: "AB21 0TX"
-            },
-            {
-                postcode: "AB21 0TY"
-            },
-            {
-                postcode: "AB21 0TZ"
-            },
-            {
-                postcode: "AB21 0UA"
-            },
-            {
-                postcode: "AB21 0UB"
-            },
-            {
-                postcode: "AB21 0UD"
-            },
-            {
-                postcode: "AB21 0UE"
-            },
-            {
-                postcode: "AB21 0UF"
-            },
-            {
-                postcode: "AB21 0UG"
-            },
-            {
-                postcode: "AB21 0UL"
-            },
-            {
-                postcode: "AB21 0UN"
-            },
-            {
-                postcode: "AB21 0UP"
-            },
-            {
-                postcode: "AB21 0UQ"
-            },
-            {
-                postcode: "AB21 0UR"
-            },
-            {
-                postcode: "AB21 0US"
-            },
-            {
-                postcode: "AB21 0UT"
-            },
-            {
-                postcode: "AB21 0UU"
-            },
-            {
-                postcode: "AB21 0UW"
-            },
-            {
-                postcode: "AB21 0UX"
-            },
-            {
-                postcode: "AB21 0UY"
-            },
-            {
-                postcode: "AB21 0UZ"
-            },
-            {
-                postcode: "AB21 0WA"
-            },
-            {
-                postcode: "AB21 0WB"
-            },
-            {
-                postcode: "AB21 0WF"
-            },
-            {
-                postcode: "AB21 0WG"
-            },
-            {
-                postcode: "AB21 0WH"
-            },
-            {
-                postcode: "AB21 0WJ"
-            },
-            {
-                postcode: "AB21 0WL"
-            },
-            {
-                postcode: "AB21 0WN"
-            },
-            {
-                postcode: "AB21 0WP"
-            },
-            {
-                postcode: "AB21 0WQ"
-            },
-            {
-                postcode: "AB21 0WW"
-            },
-            {
-                postcode: "AB21 0WZ"
-            },
-            {
-                postcode: "AB21 0XA"
-            },
-            {
-                postcode: "AB21 0XB"
-            },
-            {
-                postcode: "AB21 0XD"
-            },
-            {
-                postcode: "AB21 0XF"
-            },
-            {
-                postcode: "AB21 0XG"
-            },
-            {
-                postcode: "AB21 0XN"
-            },
-            {
-                postcode: "AB21 0XP"
-            },
-            {
-                postcode: "AB21 0XQ"
-            },
-            {
-                postcode: "AB21 0XR"
-            },
-            {
-                postcode: "AB21 0XS"
-            },
-            {
-                postcode: "AB21 0XT"
-            },
-            {
-                postcode: "AB21 0XU"
-            },
-            {
-                postcode: "AB21 0XW"
-            },
-            {
-                postcode: "AB21 0XX"
-            },
-            {
-                postcode: "AB21 0XY"
-            },
-            {
-                postcode: "AB21 0XZ"
-            },
-            {
-                postcode: "AB21 0YA"
-            },
-            {
-                postcode: "AB21 0YB"
-            },
-            {
-                postcode: "AB21 0YD"
-            },
-            {
-                postcode: "AB21 0YE"
-            },
-            {
-                postcode: "AB21 0YF"
-            },
-            {
-                postcode: "AB21 0YG"
-            },
-            {
-                postcode: "AB21 0YL"
-            },
-            {
-                postcode: "AB21 0YN"
-            },
-            {
-                postcode: "AB21 0YP"
-            },
-            {
-                postcode: "AB21 0YQ"
-            },
-            {
-                postcode: "AB21 0YR"
-            },
-            {
-                postcode: "AB21 0YS"
-            },
-            {
-                postcode: "AB21 0YT"
-            },
-            {
-                postcode: "AB21 0YX"
-            },
-            {
-                postcode: "AB21 0ZR"
-            },
-            {
-                postcode: "AB21 0ZS"
-            },
-            {
-                postcode: "AB21 0ZT"
-            },
-            {
-                postcode: "AB21 7AA"
-            },
-            {
-                postcode: "AB21 7AB"
-            },
-            {
-                postcode: "AB21 7AD"
-            },
-            {
-                postcode: "AB21 7AE"
-            },
-            {
-                postcode: "AB21 7AF"
-            },
-            {
-                postcode: "AB21 7AG"
-            },
-            {
-                postcode: "AB21 7AH"
-            },
-            {
-                postcode: "AB21 7AJ"
-            },
-            {
-                postcode: "AB21 7AL"
-            },
-            {
-                postcode: "AB21 7AN"
-            },
-            {
-                postcode: "AB21 7AP"
-            },
-            {
-                postcode: "AB21 7AQ"
-            },
-            {
-                postcode: "AB21 7AR"
-            },
-            {
-                postcode: "AB21 7AS"
-            },
-            {
-                postcode: "AB21 7AT"
-            },
-            {
-                postcode: "AB21 7AU"
-            },
-            {
-                postcode: "AB21 7AX"
-            },
-            {
-                postcode: "AB21 7AY"
-            },
-            {
-                postcode: "AB21 7AZ"
-            },
-            {
-                postcode: "AB21 7BA"
-            },
-            {
-                postcode: "AB21 7BB"
-            },
-            {
-                postcode: "AB21 7BD"
-            },
-            {
-                postcode: "AB21 7BE"
-            },
-            {
-                postcode: "AB21 7BG"
-            },
-            {
-                postcode: "AB21 7BH"
-            },
-            {
-                postcode: "AB21 7BJ"
-            },
-            {
-                postcode: "AB21 7BL"
-            },
-            {
-                postcode: "AB21 7BN"
-            },
-            {
-                postcode: "AB21 7BP"
-            },
-            {
-                postcode: "AB21 7BQ"
-            },
-            {
-                postcode: "AB21 7BR"
-            },
-            {
-                postcode: "AB21 7BS"
-            },
-            {
-                postcode: "AB21 7BT"
-            },
-            {
-                postcode: "AB21 7BU"
-            },
-            {
-                postcode: "AB21 7BW"
-            },
-            {
-                postcode: "AB21 7BX"
-            },
-            {
-                postcode: "AB21 7BY"
-            },
-            {
-                postcode: "AB21 7DA"
-            },
-            {
-                postcode: "AB21 7DB"
-            },
-            {
-                postcode: "AB21 7DD"
-            },
-            {
-                postcode: "AB21 7DE"
-            },
-            {
-                postcode: "AB21 7DG"
-            },
-            {
-                postcode: "AB21 7DH"
-            },
-            {
-                postcode: "AB21 7DJ"
-            },
-            {
-                postcode: "AB21 7DL"
-            },
-            {
-                postcode: "AB21 7DN"
-            },
-            {
-                postcode: "AB21 7DQ"
-            },
-            {
-                postcode: "AB21 7DR"
-            },
-            {
-                postcode: "AB21 7DS"
-            },
-            {
-                postcode: "AB21 7DT"
-            },
-            {
-                postcode: "AB21 7DU"
-            },
-            {
-                postcode: "AB21 7DW"
-            },
-            {
-                postcode: "AB21 7DX"
-            },
-            {
-                postcode: "AB21 7DY"
-            },
-            {
-                postcode: "AB21 7DZ"
-            },
-            {
-                postcode: "AB21 7EA"
-            },
-            {
-                postcode: "AB21 7EB"
-            },
-            {
-                postcode: "AB21 7ED"
-            },
-            {
-                postcode: "AB21 7EE"
-            },
-            {
-                postcode: "AB21 7EG"
-            },
-            {
-                postcode: "AB21 7EH"
-            },
-            {
-                postcode: "AB21 7EJ"
-            },
-            {
-                postcode: "AB21 7EL"
-            },
-            {
-                postcode: "AB21 7EN"
-            },
-            {
-                postcode: "AB21 7EP"
-            },
-            {
-                postcode: "AB21 7EQ"
-            },
-            {
-                postcode: "AB21 7ER"
-            },
-            {
-                postcode: "AB21 7ES"
-            },
-            {
-                postcode: "AB21 7ET"
-            },
-            {
-                postcode: "AB21 7EW"
-            },
-            {
-                postcode: "AB21 7EX"
-            },
-            {
-                postcode: "AB21 7EY"
-            },
-            {
-                postcode: "AB21 7EZ"
-            },
-            {
-                postcode: "AB21 7FA"
-            },
-            {
-                postcode: "AB21 7FB"
-            },
-            {
-                postcode: "AB21 7FD"
-            },
-            {
-                postcode: "AB21 7FE"
-            },
-            {
-                postcode: "AB21 7FF"
-            },
-            {
-                postcode: "AB21 7FG"
-            },
-            {
-                postcode: "AB21 7FH"
-            },
-            {
-                postcode: "AB21 7FJ"
-            },
-            {
-                postcode: "AB21 7FL"
-            },
-            {
-                postcode: "AB21 7FN"
-            },
-            {
-                postcode: "AB21 7FP"
-            },
-            {
-                postcode: "AB21 7FQ"
-            },
-            {
-                postcode: "AB21 7FR"
-            },
-            {
-                postcode: "AB21 7FS"
-            },
-            {
-                postcode: "AB21 7FT"
-            },
-            {
-                postcode: "AB21 7FU"
-            },
-            {
-                postcode: "AB21 7FW"
-            },
-            {
-                postcode: "AB21 7FX"
-            },
-            {
-                postcode: "AB21 7FY"
-            },
-            {
-                postcode: "AB21 7FZ"
-            },
-            {
-                postcode: "AB21 7GA"
-            },
-            {
-                postcode: "AB21 7GB"
-            },
-            {
-                postcode: "AB21 7GD"
-            },
-            {
-                postcode: "AB21 7GF"
-            },
-            {
-                postcode: "AB21 7GH"
-            },
-            {
-                postcode: "AB21 7GJ"
-            },
-            {
-                postcode: "AB21 7GL"
-            },
-            {
-                postcode: "AB21 7GN"
-            },
-            {
-                postcode: "AB21 7GQ"
-            },
-            {
-                postcode: "AB21 7HF"
-            }
-        ];
         this.emailFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
             _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
             _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].email
@@ -3165,6 +2041,10 @@ let FormsComponent = class FormsComponent {
             _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(15)
         ]);
         this.stateFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(15)
+        ]);
+        this.postcodeFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
             _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
             _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(15)
         ]);
@@ -3191,14 +2071,30 @@ let FormsComponent = class FormsComponent {
                 this.LoggedOut();
             }
         });
-        this.filteredOptions = this.myControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["startWith"])(""), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["map"])(value => (typeof value === "string" ? value : value.postcode)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["map"])(postcode => postcode ? this._filter(postcode) : this.options.slice()));
-    }
-    displayFn(user) {
-        return user ? user.postcode : undefined;
-    }
-    _filter(postcode) {
-        const filterValue = postcode.toLowerCase();
-        return this.options.filter(option => option.postcode.toLowerCase().indexOf(filterValue) === 0);
+        // this.filteredOptions = this.myControl.valueChanges.pipe(
+        //   startWith(""),
+        //   map(value => (typeof value === "string" ? value : value.postcode)),
+        //   map(postcode =>
+        //     postcode ? this._filter(postcode) : this.options.slice()
+        //   )
+        // );
+        // The auto population of github method
+        this.addressianAutoComplete$ = this.autoCompleteControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["startWith"])(""), 
+        // delay emits
+        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["debounceTime"])(1000), 
+        // use switch map so as to cancel previous subscribed events, before creating new once
+        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["switchMap"])(value => {
+            if (value !== "") {
+                this.lookup(this.Buyer.postcode).subscribe(data => {
+                    this.data = data;
+                });
+                return this.lookup(this.Buyer.postcode);
+            }
+            else {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
+            }
+        }));
+        // End method
     }
     LoggedIn() {
         this.isLoggedIn = true;
@@ -3214,18 +2110,15 @@ let FormsComponent = class FormsComponent {
         this.stateService.Buyer = this.Buyer;
         this.router.navigate(["buyerdetails"]);
     }
-    showConfig() {
-        this.postcodeService
-            .getConfig(this.Buyer.postcode.postcode)
-            .subscribe(response => {
-            this.result = response;
-            this.Buyer.Town = this.result.result.nuts;
-            this.Buyer.state = this.result.result.country;
-            // Put lat/long
-            this.Buyer.latitude = this.result.result.latitude;
-            this.Buyer.longitude = this.result.result.longitude;
-            console.log(response);
-        });
+    lookup(value) {
+        return this.postcodeService.search(value);
+    }
+    getPosts(value) {
+        this.Buyer.Address = value.address;
+        this.Buyer.Town = value.citytown;
+        this.Buyer.state = value.county;
+        this.Buyer.postcode = value.postcode;
+        console.log(value);
     }
 };
 FormsComponent.ctorParameters = () => [
@@ -3240,7 +2133,7 @@ FormsComponent.ctorParameters = () => [
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_8__["ActivatedRoute"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_8__["Router"] },
     { type: _state_service_service__WEBPACK_IMPORTED_MODULE_9__["StateServiceService"] },
-    { type: _postcode_service__WEBPACK_IMPORTED_MODULE_12__["PostcodeService"] }
+    { type: _http_service__WEBPACK_IMPORTED_MODULE_12__["HttpService"] }
 ];
 FormsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -3380,44 +2273,6 @@ MaterialModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/forms/postcode.service.ts":
-/*!*******************************************!*\
-  !*** ./src/app/forms/postcode.service.ts ***!
-  \*******************************************/
-/*! exports provided: PostcodeService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostcodeService", function() { return PostcodeService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-
-
-
-let PostcodeService = class PostcodeService {
-    constructor(http) {
-        this.http = http;
-        this.configUrl = 'https://api.postcodes.io/postcodes/';
-    }
-    getConfig(url) {
-        return this.http.get(this.configUrl + url);
-    }
-};
-PostcodeService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
-];
-PostcodeService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: 'root'
-    })
-], PostcodeService);
-
-
-
-/***/ }),
-
 /***/ "./src/app/home/home.component.css":
 /*!*****************************************!*\
   !*** ./src/app/home/home.component.css ***!
@@ -3464,6 +2319,50 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/http.service.ts":
+/*!*********************************!*\
+  !*** ./src/app/http.service.ts ***!
+  \*********************************/
+/*! exports provided: HttpService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpService", function() { return HttpService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let HttpService = class HttpService {
+    constructor(http) {
+        this.http = http;
+        this.configUrl = "https://api-trial.addressian.co.uk/address/";
+    }
+    search(query) {
+        const headerDict = {
+            "x-api-key": "BcLIABSb6J3HsvGTpI5jA8FrtOaQqR67736r1Hip"
+        };
+        const url = "https://api-trial.addressian.co.uk/address/";
+        return this.http.get(url + query, {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"](headerDict)
+        });
+    }
+};
+HttpService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+HttpService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: "root"
+    })
+], HttpService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/matches/matches.component.css":
 /*!***********************************************!*\
   !*** ./src/app/matches/matches.component.css ***!
@@ -3473,7 +2372,7 @@ HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".matches-main-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n}\n.thanku-section {\n    background-color: white;\n    \n}\n.thanku-p-section\n{\n    font-size: 13px;\n    text-align: center;\n    padding: 18px;\n}\n.match-section\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    height: 150px;\n    background-color: white;\n    display: flex;\n    justify-content: flex-start;\n    /* align-content: flex-start; */\n    align-content: flex-start;\n    align-items: flex-start;\n}\n.match-images {\n    margin-top: 14px;\n    margin-right: 9px;\n    width: 36%;\n}\n.match-content {\n    padding-top: 26px;\n}\n/*===========================================================================================================\nFont-sizes\n=============================================================================================================*/\n.area-p\n{\n    font-size: 18px;\n    font-family: 'Open Sans', sans-serif;\n    font-weight: bold;\n}\n.discription-p\n{\n    font-size: 15px;\n    font-family: 'Segoe UI Regular';\n}\n.property-type-color{\n    color: #8BB440;\n}\n.font-headings\n{\n    font-family: 'Open Sans', sans-serif;\n    font-weight: bold;\n    font-size: 21px;\n}\n.thanku-p-section\n{\n    font-family: 'Roboto', sans-serif;\n    font-weight: medium;\n    color: black;\n    font-size: 14px;\n}\n.main-heading\n{\n    font-family: 'Open Sans', sans-serif;\n    font-weight: 400;\n    font-size: 24px;\n}\n@media screen and (max-width:375px)\n{\n    .match-images {\n        margin-top: 14px;\n        margin-right: 9px;\n        width: 34%;\n    }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWF0Y2hlcy9tYXRjaGVzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksdUJBQXVCOztBQUUzQjtBQUNBOztJQUVJLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsYUFBYTtBQUNqQjtBQUNBOztJQUVJLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2IsMkJBQTJCO0lBQzNCLCtCQUErQjtJQUMvQix5QkFBeUI7SUFDekIsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLFVBQVU7QUFDZDtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7OzhHQUU4RztBQUM5Rzs7SUFFSSxlQUFlO0lBQ2Ysb0NBQW9DO0lBQ3BDLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxvQ0FBb0M7SUFDcEMsaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUksb0NBQW9DO0lBQ3BDLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBVUE7O0lBRUk7UUFDSSxnQkFBZ0I7UUFDaEIsaUJBQWlCO1FBQ2pCLFVBQVU7SUFDZDtBQUNKIiwiZmlsZSI6InNyYy9hcHAvbWF0Y2hlcy9tYXRjaGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0Y2hlcy1tYWluLWNvbnRhaW5lclxue1xuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcbn1cbi50aGFua3Utc2VjdGlvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgXG59XG4udGhhbmt1LXAtc2VjdGlvblxue1xuICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMThweDtcbn1cbi5tYXRjaC1zZWN0aW9uXG57XG4gICAgcGFkZGluZy1yaWdodDogOHB4O1xuICAgIHBhZGRpbmctbGVmdDogOHB4O1xuICAgIGhlaWdodDogMTUwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XG4gICAgLyogYWxpZ24tY29udGVudDogZmxleC1zdGFydDsgKi9cbiAgICBhbGlnbi1jb250ZW50OiBmbGV4LXN0YXJ0O1xuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xufVxuLm1hdGNoLWltYWdlcyB7XG4gICAgbWFyZ2luLXRvcDogMTRweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDlweDtcbiAgICB3aWR0aDogMzYlO1xufVxuLm1hdGNoLWNvbnRlbnQge1xuICAgIHBhZGRpbmctdG9wOiAyNnB4O1xufVxuLyo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuRm9udC1zaXplc1xuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG4uYXJlYS1wXG57XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbn1cbi5kaXNjcmlwdGlvbi1wXG57XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgUmVndWxhcic7XG59XG4ucHJvcGVydHktdHlwZS1jb2xvcntcbiAgICBjb2xvcjogIzhCQjQ0MDtcbn1cbi5mb250LWhlYWRpbmdzXG57XG4gICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogMjFweDtcbn1cbi50aGFua3UtcC1zZWN0aW9uXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiBtZWRpdW07XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbn1cbi5tYWluLWhlYWRpbmdcbntcbiAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBmb250LXNpemU6IDI0cHg7XG59XG5cblxuXG5cblxuXG5cblxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjM3NXB4KVxue1xuICAgIC5tYXRjaC1pbWFnZXMge1xuICAgICAgICBtYXJnaW4tdG9wOiAxNHB4O1xuICAgICAgICBtYXJnaW4tcmlnaHQ6IDlweDtcbiAgICAgICAgd2lkdGg6IDM0JTtcbiAgICB9XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".matches-main-container\r\n{\r\n    padding-right: 8px;\r\n    padding-left: 8px;\r\n}\r\n.thanku-section {\r\n    background-color: white;\r\n    \r\n}\r\n.thanku-p-section\r\n{\r\n    font-size: 13px;\r\n    text-align: center;\r\n    padding: 18px;\r\n}\r\n.match-section\r\n{\r\n    padding-right: 8px;\r\n    padding-left: 8px;\r\n    height: 150px;\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    /* align-content: flex-start; */\r\n    align-content: flex-start;\r\n    align-items: flex-start;\r\n}\r\n.match-images {\r\n    margin-top: 14px;\r\n    margin-right: 9px;\r\n    width: 36%;\r\n}\r\n.match-content {\r\n    padding-top: 26px;\r\n}\r\n/*===========================================================================================================\r\nFont-sizes\r\n=============================================================================================================*/\r\n.area-p\r\n{\r\n    font-size: 18px;\r\n    font-family: 'Open Sans', sans-serif;\r\n    font-weight: bold;\r\n}\r\n.discription-p\r\n{\r\n    font-size: 15px;\r\n    font-family: 'Segoe UI Regular';\r\n}\r\n.property-type-color{\r\n    color: #8BB440;\r\n}\r\n.font-headings\r\n{\r\n    font-family: 'Open Sans', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 21px;\r\n}\r\n.thanku-p-section\r\n{\r\n    font-family: 'Roboto', sans-serif;\r\n    font-weight: medium;\r\n    color: black;\r\n    font-size: 14px;\r\n}\r\n.main-heading\r\n{\r\n    font-family: 'Open Sans', sans-serif;\r\n    font-weight: 400;\r\n    font-size: 24px;\r\n}\r\n@media screen and (max-width:375px)\r\n{\r\n    .match-images {\r\n        margin-top: 14px;\r\n        margin-right: 9px;\r\n        width: 34%;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbWF0Y2hlcy9tYXRjaGVzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksdUJBQXVCOztBQUUzQjtBQUNBOztJQUVJLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsYUFBYTtBQUNqQjtBQUNBOztJQUVJLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2IsMkJBQTJCO0lBQzNCLCtCQUErQjtJQUMvQix5QkFBeUI7SUFDekIsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLFVBQVU7QUFDZDtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7OzhHQUU4RztBQUM5Rzs7SUFFSSxlQUFlO0lBQ2Ysb0NBQW9DO0lBQ3BDLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxvQ0FBb0M7SUFDcEMsaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUksb0NBQW9DO0lBQ3BDLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBVUE7O0lBRUk7UUFDSSxnQkFBZ0I7UUFDaEIsaUJBQWlCO1FBQ2pCLFVBQVU7SUFDZDtBQUNKIiwiZmlsZSI6InNyYy9hcHAvbWF0Y2hlcy9tYXRjaGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0Y2hlcy1tYWluLWNvbnRhaW5lclxyXG57XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiA4cHg7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcclxufVxyXG4udGhhbmt1LXNlY3Rpb24ge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICBcclxufVxyXG4udGhhbmt1LXAtc2VjdGlvblxyXG57XHJcbiAgICBmb250LXNpemU6IDEzcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nOiAxOHB4O1xyXG59XHJcbi5tYXRjaC1zZWN0aW9uXHJcbntcclxuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcclxuICAgIHBhZGRpbmctbGVmdDogOHB4O1xyXG4gICAgaGVpZ2h0OiAxNTBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcclxuICAgIC8qIGFsaWduLWNvbnRlbnQ6IGZsZXgtc3RhcnQ7ICovXHJcbiAgICBhbGlnbi1jb250ZW50OiBmbGV4LXN0YXJ0O1xyXG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XHJcbn1cclxuLm1hdGNoLWltYWdlcyB7XHJcbiAgICBtYXJnaW4tdG9wOiAxNHB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiA5cHg7XHJcbiAgICB3aWR0aDogMzYlO1xyXG59XHJcbi5tYXRjaC1jb250ZW50IHtcclxuICAgIHBhZGRpbmctdG9wOiAyNnB4O1xyXG59XHJcbi8qPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cclxuRm9udC1zaXplc1xyXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cclxuLmFyZWEtcFxyXG57XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG4uZGlzY3JpcHRpb24tcFxyXG57XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFJlZ3VsYXInO1xyXG59XHJcbi5wcm9wZXJ0eS10eXBlLWNvbG9ye1xyXG4gICAgY29sb3I6ICM4QkI0NDA7XHJcbn1cclxuLmZvbnQtaGVhZGluZ3Ncclxue1xyXG4gICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LXNpemU6IDIxcHg7XHJcbn1cclxuLnRoYW5rdS1wLXNlY3Rpb25cclxue1xyXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC13ZWlnaHQ6IG1lZGl1bTtcclxuICAgIGNvbG9yOiBibGFjaztcclxuICAgIGZvbnQtc2l6ZTogMTRweDtcclxufVxyXG4ubWFpbi1oZWFkaW5nXHJcbntcclxuICAgIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcbiAgICBmb250LXNpemU6IDI0cHg7XHJcbn1cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDozNzVweClcclxue1xyXG4gICAgLm1hdGNoLWltYWdlcyB7XHJcbiAgICAgICAgbWFyZ2luLXRvcDogMTRweDtcclxuICAgICAgICBtYXJnaW4tcmlnaHQ6IDlweDtcclxuICAgICAgICB3aWR0aDogMzQlO1xyXG4gICAgfVxyXG59Il19 */");
 
 /***/ }),
 
@@ -3830,7 +2729,7 @@ MyrequirementService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700\");\r\n@font-face {\r\n  font-family: HelveticaNeueLight;\r\n  src: url('/assets/font/HelveticaNeueLight.ttf');\r\n}\r\nul{\r\n  list-style-type: none;\r\n}\r\n.nav-div\r\n{\r\n  height: 100vh;\r\n  width: 100%;\r\n  background-color: white;\r\n  position: absolute;\r\n  top: 70px;\r\n  left: 0;\r\n  z-index: 200;\r\n}\r\n.content {\r\n  padding: 19px;\r\n  background-color: #FBF4EF;\r\n}\r\nlabel {\r\n  background: none transparent;\r\n  border: 2px solid black;\r\n  border-left: 0 solid transparent;\r\n  border-right: 0 solid transparent;\r\n  cursor: pointer;\r\n  display: block;\r\n  height: 19px;\r\n  position: absolute;\r\n  top: 19px;\r\n  left: 20px; \r\n  width: 36px;\r\n  transition: all .2s;\r\n}\r\nlabel::before {\r\n  background: black;\r\n  content: '';\r\n  height: 2px;\r\n  width: 36px;\r\n  transition: all .2s;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  /* top: 18px; */\r\n  margin-top: 6.2px;\r\n\r\n}\r\nlabel::after {\r\n  background: black;\r\n  content: '';\r\n  height: 4px;\r\n  left: 0;\r\n  position: absolute;\r\n  top: 6px;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n  width: 100%;\r\n  transform: rotate(90deg);\r\n  transition: all .2s;\r\n}\r\n.menu-text{\r\n  position: absolute;\r\n  top: 40px;\r\n  left: 13px;\r\n  text-transform: uppercase;\r\n  margin-top: 2px;\r\n}\r\n.menu-text::after\r\n{\r\n  display: none;\r\n}\r\n.logo-nav\r\n{\r\n  width: 50%;\r\n}\r\n.imge-logo-header {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  padding-top: 0px;\r\n  padding-left: 0;\r\n}\r\n.fa {\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  font-size: 30px;\r\n  position: absolute;\r\n  top: 14px;\r\n  right: 0px;\r\n  margin-top: 0px;\r\n}\r\n.user-img\r\n{\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  font-size: 38px;\r\n \r\n}\r\nimg.open {\r\n  width: 17%;\r\n  position: absolute;\r\n  top: 0px;\r\n  left: 4px;\r\n}\r\nimg.close-img\r\n{\r\n  width: 6%;\r\n  position: absolute;\r\n  top: 17px;\r\n  left: 27px;\r\n}\r\n.has-search .form-control {\r\n  padding-left: 2.375rem;\r\n}\r\n.has-search .form-control-feedback {\r\n  position: absolute;\r\n  z-index: 2;\r\n  display: block;\r\n  width: 2.375rem;\r\n  height: 2.375rem;\r\n  line-height: 2.375rem;\r\n  text-align: center;\r\n  pointer-events: none;\r\n  color: #aaa;\r\n}\r\n.nav-links {\r\n  margin: 0;\r\n  padding: 0px;\r\n}\r\n.main {\r\n  width: 50%;\r\n  margin: 50px auto;\r\n}\r\n.grid-container {\r\n  display: grid;\r\n  grid-template-columns: 1fr 2fr 1fr;\r\n  /* padding: 10px; */\r\n  margin-left: calc(-50vw + 50%);\r\nmargin-right: calc(-50vw + 50%);\r\nmargin-top: calc(-50vw + 50%);\r\n}\r\n.grid-container > div {\r\n \r\n\r\n  text-align: Left;\r\n  font-size: 18.5px;\r\n  padding: 17px;\r\n\r\n\r\n}\r\n.grid-container:hover\r\n{\r\n  background-color: #EBEBEB;\r\n  text-decoration: none;\r\n}\r\nimg.nav-link-icon {\r\n  float: right;\r\n  /* text-align: right; */\r\n  /* display: flex; */\r\n}\r\n.nav-links-text {\r\n  color: black;\r\n  font-family: 'HelveticaNeueLight';\r\n}\r\ninput[type=text] {\r\n     /* float: right; */\r\n     padding: 15px;\r\n     border: 1px solid lightgrey;\r\n     /* margin-top: 8px; */\r\n     /* margin-right: 16px; */\r\n     font-size: 17px;\r\n     width: 87%;  \r\n     \r\n}\r\n.search-grid-conatiner\r\n{\r\n  display: grid;\r\n  grid-template-columns: 11fr  ;\r\n}\r\n.search-grid-conatiner > div\r\n{\r\n  font-size: 18.5px;\r\n  padding: 14px;\r\n  padding-top: 5px;\r\n  padding-bottom: 11px;\r\n  background-color: #FBF4EF;\r\n}\r\n.nav-link-icon-search {\r\n  width: 38px;\r\n  padding: 4px;\r\n  margin-top: -4px;\r\n  border: 1px solid lightgrey;\r\n  background-color: white;\r\n  height: 56.5px;\r\n}\r\ni.fa.fa-user {\r\n  display: flex;\r\n  flex-direction: column;\r\n \r\n}\r\nspan.log-out-text {\r\n  font-size: 12px;\r\n  position: relative;\r\n  right: 12px;\r\n  margin-top: 5px;\r\n  text-transform: uppercase;\r\n  font-family: HelveticaNeueLight;\r\n}\r\n.btn-facebook\r\n\r\n\r\n{\r\n background-color: #244D93;\r\n color: white;\r\n width: 30%;\r\n    height: 35px;\r\n    text-align: center;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    font-family: 'Open Sans', sans-serif;\r\n}\r\n.btn-google\r\n{\r\n    background-color: #DD4B33;\r\n    color: white;\r\n    width: 30%;\r\n    height: 35px;\r\n    text-align: center;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    font-family: 'Open Sans', sans-serif;\r\n}\r\n.social-login h4\r\n{\r\n    font-family: 'Open Sans', sans-serif;\r\n    font-weight: 700;\r\n}\r\n.social-button {\r\n    display: flex;\r\n    /* justify-content: center; */\r\n    justify-content: space-evenly;\r\n    align-items: center;\r\n\r\n}\r\n.color-signup\r\n{\r\n    color: #244D93;\r\n}\r\n.btn-social-login\r\n{\r\n    width: 100%;\r\n    background-color: #244D93;\r\n    color: white;\r\n    margin-top: 3%;\r\n    font-family: 'Open Sans', sans-serif;\r\n  \r\n}\r\ni.fa.fa-user.input-group-text.nav-login-form{\r\n  position: absolute;\r\n  font-size: 23px;\r\n  left: 0px;\r\n  width: 10%;\r\n  z-index: 10;\r\n  margin-top: -4%;\r\n}\r\n.social-login.text-center {\r\n  padding: 15px;\r\n}\r\n.checkbox\r\n{\r\n  background: none transparent;\r\n     border: none; \r\n     border-left: none; \r\n     border-right: none; \r\n    cursor: pointer;\r\n    /* display: block; */\r\n    height: auto;\r\n    position: absolute;\r\n    top: none; \r\n     left: none; \r\n    right: 9px;\r\n     width: none; \r\n    /* transition: all .2s; */\r\n    display: flex;\r\n    flex-direction: row;\r\n\r\n}\r\n.example-form {\r\n  min-width: 150px;\r\n  max-width: 500px;\r\n  width: 100%;\r\n}\r\n.example-full-width {\r\n  width: 100%;\r\n  border: none;\r\n}\r\n/*# sourceMappingURL=style.css.map */\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2L25hdi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHFFQUFxRTtBQUNyRTtFQUNFLCtCQUErQjtFQUMvQiwrQ0FBK0M7QUFDakQ7QUFDQTtFQUNFLHFCQUFxQjtBQUN2QjtBQUNBOztFQUVFLGFBQWE7RUFDYixXQUFXO0VBQ1gsdUJBQXVCO0VBQ3ZCLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsT0FBTztFQUNQLFlBQVk7QUFDZDtBQUNBO0VBQ0UsYUFBYTtFQUNiLHlCQUF5QjtBQUMzQjtBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLHVCQUF1QjtFQUN2QixnQ0FBZ0M7RUFDaEMsaUNBQWlDO0VBQ2pDLGVBQWU7RUFDZixjQUFjO0VBQ2QsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFFWCxtQkFBbUI7QUFDckI7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLFdBQVc7RUFDWCxtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsZUFBZTtFQUNmLGlCQUFpQjs7QUFFbkI7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsV0FBVztFQUVILHdCQUF3QjtFQUVoQyxtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLHlCQUF5QjtFQUN6QixlQUFlO0FBQ2pCO0FBQ0E7O0VBRUUsYUFBYTtBQUNmO0FBQ0E7O0VBRUUsVUFBVTtBQUNaO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLG1CQUFtQjtFQUNuQixnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjtBQUNBO0VBQ0UscUJBQXFCO0VBQ3JCLDZDQUE2QztFQUM3QyxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLG1DQUFtQztFQUNuQyxrQ0FBa0M7RUFDbEMsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLGVBQWU7QUFDakI7QUFDQTs7RUFFRSxxQkFBcUI7RUFDckIsNkNBQTZDO0VBQzdDLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsbUNBQW1DO0VBQ25DLGtDQUFrQztFQUNsQyxlQUFlOztBQUVqQjtBQUNBO0VBQ0UsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQixRQUFRO0VBQ1IsU0FBUztBQUNYO0FBQ0E7O0VBRUUsU0FBUztFQUNULGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtBQUNaO0FBQ0E7RUFDRSxzQkFBc0I7QUFDeEI7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsY0FBYztFQUNkLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsV0FBVztBQUNiO0FBQ0E7RUFDRSxTQUFTO0VBQ1QsWUFBWTtBQUNkO0FBQ0E7RUFDRSxVQUFVO0VBQ1YsaUJBQWlCO0FBQ25CO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isa0NBQWtDO0VBQ2xDLG1CQUFtQjtFQUNuQiw4QkFBOEI7QUFDaEMsK0JBQStCO0FBQy9CLDZCQUE2QjtBQUM3QjtBQUVBOzs7RUFHRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGFBQWE7OztBQUdmO0FBQ0E7O0VBRUUseUJBQXlCO0VBQ3pCLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsWUFBWTtFQUNaLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLFlBQVk7RUFDWixpQ0FBaUM7QUFDbkM7QUFDQTtLQUNLLGtCQUFrQjtLQUNsQixhQUFhO0tBQ2IsMkJBQTJCO0tBQzNCLHFCQUFxQjtLQUNyQix3QkFBd0I7S0FDeEIsZUFBZTtLQUNmLFVBQVU7O0FBRWY7QUFDQTs7RUFFRSxhQUFhO0VBQ2IsNkJBQTZCO0FBQy9CO0FBQ0E7O0VBRUUsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsb0JBQW9CO0VBQ3BCLHlCQUF5QjtBQUMzQjtBQUNBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixnQkFBZ0I7RUFDaEIsMkJBQTJCO0VBQzNCLHVCQUF1QjtFQUN2QixjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCOztBQUV4QjtBQUNBO0VBQ0UsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsZUFBZTtFQUNmLHlCQUF5QjtFQUN6QiwrQkFBK0I7QUFDakM7QUFDQTs7OztDQUlDLHlCQUF5QjtDQUN6QixZQUFZO0NBQ1osVUFBVTtJQUNQLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsV0FBVztJQUNYLFlBQVk7SUFDWixvQ0FBb0M7QUFDeEM7QUFDQTs7SUFFSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFdBQVc7SUFDWCxZQUFZO0lBQ1osb0NBQW9DO0FBQ3hDO0FBQ0E7O0lBRUksb0NBQW9DO0lBQ3BDLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2QjtJQUM3Qiw2QkFBNkI7SUFDN0IsbUJBQW1COztBQUV2QjtBQUNBOztJQUVJLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxXQUFXO0lBQ1gseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixjQUFjO0lBQ2Qsb0NBQW9DOztBQUV4QztBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7QUFDQTs7RUFFRSw0QkFBNEI7S0FDekIsWUFBWTtLQUNaLGlCQUFpQjtLQUNqQixrQkFBa0I7SUFDbkIsZUFBZTtJQUNmLG9CQUFvQjtJQUNwQixZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFNBQVM7S0FDUixVQUFVO0lBQ1gsVUFBVTtLQUNULFdBQVc7SUFDWix5QkFBeUI7SUFDekIsYUFBYTtJQUNiLG1CQUFtQjs7QUFFdkI7QUFDQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsV0FBVztBQUNiO0FBQ0E7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkO0FBQ0Esb0NBQW9DIiwiZmlsZSI6InNyYy9hcHAvbmF2L25hdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoXCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9TnVuaXRvOjQwMCw3MDBcIik7XHJcbkBmb250LWZhY2Uge1xyXG4gIGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2FOZXVlTGlnaHQ7XHJcbiAgc3JjOiB1cmwoJy9hc3NldHMvZm9udC9IZWx2ZXRpY2FOZXVlTGlnaHQudHRmJyk7XHJcbn1cclxudWx7XHJcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xyXG59XHJcbi5uYXYtZGl2XHJcbntcclxuICBoZWlnaHQ6IDEwMHZoO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDcwcHg7XHJcbiAgbGVmdDogMDtcclxuICB6LWluZGV4OiAyMDA7XHJcbn1cclxuLmNvbnRlbnQge1xyXG4gIHBhZGRpbmc6IDE5cHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI0ZCRjRFRjtcclxufVxyXG5cclxubGFiZWwge1xyXG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyOiAycHggc29saWQgYmxhY2s7XHJcbiAgYm9yZGVyLWxlZnQ6IDAgc29saWQgdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyLXJpZ2h0OiAwIHNvbGlkIHRyYW5zcGFyZW50O1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBoZWlnaHQ6IDE5cHg7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogMTlweDtcclxuICBsZWZ0OiAyMHB4OyBcclxuICB3aWR0aDogMzZweDtcclxuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAuMnM7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC4ycztcclxufVxyXG5cclxubGFiZWw6OmJlZm9yZSB7XHJcbiAgYmFja2dyb3VuZDogYmxhY2s7XHJcbiAgY29udGVudDogJyc7XHJcbiAgaGVpZ2h0OiAycHg7XHJcbiAgd2lkdGg6IDM2cHg7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC4ycztcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIC8qIHRvcDogMThweDsgKi9cclxuICBtYXJnaW4tdG9wOiA2LjJweDtcclxuXHJcbn1cclxuXHJcbmxhYmVsOjphZnRlciB7XHJcbiAgYmFja2dyb3VuZDogYmxhY2s7XHJcbiAgY29udGVudDogJyc7XHJcbiAgaGVpZ2h0OiA0cHg7XHJcbiAgbGVmdDogMDtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA2cHg7XHJcbiAgb3BhY2l0eTogMDtcclxuICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSg5MGRlZyk7XHJcbiAgICAgICAgICB0cmFuc2Zvcm06IHJvdGF0ZSg5MGRlZyk7XHJcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgLjJzO1xyXG4gIHRyYW5zaXRpb246IGFsbCAuMnM7XHJcbn1cclxuLm1lbnUtdGV4dHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA0MHB4O1xyXG4gIGxlZnQ6IDEzcHg7XHJcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxuICBtYXJnaW4tdG9wOiAycHg7XHJcbn1cclxuLm1lbnUtdGV4dDo6YWZ0ZXJcclxue1xyXG4gIGRpc3BsYXk6IG5vbmU7XHJcbn1cclxuLmxvZ28tbmF2XHJcbntcclxuICB3aWR0aDogNTAlO1xyXG59XHJcbi5pbWdlLWxvZ28taGVhZGVyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgcGFkZGluZy10b3A6IDBweDtcclxuICBwYWRkaW5nLWxlZnQ6IDA7XHJcbn1cclxuLmZhIHtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgZm9udDogbm9ybWFsIG5vcm1hbCBub3JtYWwgMTRweC8xIEZvbnRBd2Vzb21lO1xyXG4gIGZvbnQtc2l6ZTogaW5oZXJpdDtcclxuICB0ZXh0LXJlbmRlcmluZzogYXV0bztcclxuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcclxuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xyXG4gIGZvbnQtc2l6ZTogMzBweDtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAxNHB4O1xyXG4gIHJpZ2h0OiAwcHg7XHJcbiAgbWFyZ2luLXRvcDogMHB4O1xyXG59XHJcbi51c2VyLWltZ1xyXG57XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGZvbnQ6IG5vcm1hbCBub3JtYWwgbm9ybWFsIDE0cHgvMSBGb250QXdlc29tZTtcclxuICBmb250LXNpemU6IGluaGVyaXQ7XHJcbiAgdGV4dC1yZW5kZXJpbmc6IGF1dG87XHJcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XHJcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcclxuICBmb250LXNpemU6IDM4cHg7XHJcbiBcclxufVxyXG5pbWcub3BlbiB7XHJcbiAgd2lkdGg6IDE3JTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAwcHg7XHJcbiAgbGVmdDogNHB4O1xyXG59XHJcbmltZy5jbG9zZS1pbWdcclxue1xyXG4gIHdpZHRoOiA2JTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAxN3B4O1xyXG4gIGxlZnQ6IDI3cHg7XHJcbn1cclxuLmhhcy1zZWFyY2ggLmZvcm0tY29udHJvbCB7XHJcbiAgcGFkZGluZy1sZWZ0OiAyLjM3NXJlbTtcclxufVxyXG5cclxuLmhhcy1zZWFyY2ggLmZvcm0tY29udHJvbC1mZWVkYmFjayB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHotaW5kZXg6IDI7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgd2lkdGg6IDIuMzc1cmVtO1xyXG4gIGhlaWdodDogMi4zNzVyZW07XHJcbiAgbGluZS1oZWlnaHQ6IDIuMzc1cmVtO1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBwb2ludGVyLWV2ZW50czogbm9uZTtcclxuICBjb2xvcjogI2FhYTtcclxufVxyXG4ubmF2LWxpbmtzIHtcclxuICBtYXJnaW46IDA7XHJcbiAgcGFkZGluZzogMHB4O1xyXG59XHJcbi5tYWluIHtcclxuICB3aWR0aDogNTAlO1xyXG4gIG1hcmdpbjogNTBweCBhdXRvO1xyXG59XHJcbi5ncmlkLWNvbnRhaW5lciB7XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAyZnIgMWZyO1xyXG4gIC8qIHBhZGRpbmc6IDEwcHg7ICovXHJcbiAgbWFyZ2luLWxlZnQ6IGNhbGMoLTUwdncgKyA1MCUpO1xyXG5tYXJnaW4tcmlnaHQ6IGNhbGMoLTUwdncgKyA1MCUpO1xyXG5tYXJnaW4tdG9wOiBjYWxjKC01MHZ3ICsgNTAlKTtcclxufVxyXG5cclxuLmdyaWQtY29udGFpbmVyID4gZGl2IHtcclxuIFxyXG5cclxuICB0ZXh0LWFsaWduOiBMZWZ0O1xyXG4gIGZvbnQtc2l6ZTogMTguNXB4O1xyXG4gIHBhZGRpbmc6IDE3cHg7XHJcblxyXG5cclxufVxyXG4uZ3JpZC1jb250YWluZXI6aG92ZXJcclxue1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNFQkVCRUI7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG59XHJcbmltZy5uYXYtbGluay1pY29uIHtcclxuICBmbG9hdDogcmlnaHQ7XHJcbiAgLyogdGV4dC1hbGlnbjogcmlnaHQ7ICovXHJcbiAgLyogZGlzcGxheTogZmxleDsgKi9cclxufVxyXG4ubmF2LWxpbmtzLXRleHQge1xyXG4gIGNvbG9yOiBibGFjaztcclxuICBmb250LWZhbWlseTogJ0hlbHZldGljYU5ldWVMaWdodCc7XHJcbn1cclxuaW5wdXRbdHlwZT10ZXh0XSB7XHJcbiAgICAgLyogZmxvYXQ6IHJpZ2h0OyAqL1xyXG4gICAgIHBhZGRpbmc6IDE1cHg7XHJcbiAgICAgYm9yZGVyOiAxcHggc29saWQgbGlnaHRncmV5O1xyXG4gICAgIC8qIG1hcmdpbi10b3A6IDhweDsgKi9cclxuICAgICAvKiBtYXJnaW4tcmlnaHQ6IDE2cHg7ICovXHJcbiAgICAgZm9udC1zaXplOiAxN3B4O1xyXG4gICAgIHdpZHRoOiA4NyU7ICBcclxuICAgICBcclxufVxyXG4uc2VhcmNoLWdyaWQtY29uYXRpbmVyXHJcbntcclxuICBkaXNwbGF5OiBncmlkO1xyXG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMTFmciAgO1xyXG59XHJcbi5zZWFyY2gtZ3JpZC1jb25hdGluZXIgPiBkaXZcclxue1xyXG4gIGZvbnQtc2l6ZTogMTguNXB4O1xyXG4gIHBhZGRpbmc6IDE0cHg7XHJcbiAgcGFkZGluZy10b3A6IDVweDtcclxuICBwYWRkaW5nLWJvdHRvbTogMTFweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkJGNEVGO1xyXG59XHJcbi5uYXYtbGluay1pY29uLXNlYXJjaCB7XHJcbiAgd2lkdGg6IDM4cHg7XHJcbiAgcGFkZGluZzogNHB4O1xyXG4gIG1hcmdpbi10b3A6IC00cHg7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgbGlnaHRncmV5O1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gIGhlaWdodDogNTYuNXB4O1xyXG59XHJcbmkuZmEuZmEtdXNlciB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gXHJcbn1cclxuc3Bhbi5sb2ctb3V0LXRleHQge1xyXG4gIGZvbnQtc2l6ZTogMTJweDtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgcmlnaHQ6IDEycHg7XHJcbiAgbWFyZ2luLXRvcDogNXB4O1xyXG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XHJcbiAgZm9udC1mYW1pbHk6IEhlbHZldGljYU5ldWVMaWdodDtcclxufVxyXG4uYnRuLWZhY2Vib29rXHJcblxyXG5cclxue1xyXG4gYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcclxuIGNvbG9yOiB3aGl0ZTtcclxuIHdpZHRoOiAzMCU7XHJcbiAgICBoZWlnaHQ6IDM1cHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBtYXJnaW46IDBweDtcclxuICAgIHBhZGRpbmc6IDBweDtcclxuICAgIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxufVxyXG4uYnRuLWdvb2dsZVxyXG57XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjREQ0QjMzO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgd2lkdGg6IDMwJTtcclxuICAgIGhlaWdodDogMzVweDtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIG1hcmdpbjogMHB4O1xyXG4gICAgcGFkZGluZzogMHB4O1xyXG4gICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG59XHJcbi5zb2NpYWwtbG9naW4gaDRcclxue1xyXG4gICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcclxufVxyXG4uc29jaWFsLWJ1dHRvbiB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcblxyXG59XHJcbi5jb2xvci1zaWdudXBcclxue1xyXG4gICAgY29sb3I6ICMyNDREOTM7XHJcbn1cclxuLmJ0bi1zb2NpYWwtbG9naW5cclxue1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgbWFyZ2luLXRvcDogMyU7XHJcbiAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbiAgXHJcbn1cclxuaS5mYS5mYS11c2VyLmlucHV0LWdyb3VwLXRleHQubmF2LWxvZ2luLWZvcm17XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGZvbnQtc2l6ZTogMjNweDtcclxuICBsZWZ0OiAwcHg7XHJcbiAgd2lkdGg6IDEwJTtcclxuICB6LWluZGV4OiAxMDtcclxuICBtYXJnaW4tdG9wOiAtNCU7XHJcbn1cclxuLnNvY2lhbC1sb2dpbi50ZXh0LWNlbnRlciB7XHJcbiAgcGFkZGluZzogMTVweDtcclxufVxyXG4uY2hlY2tib3hcclxue1xyXG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XHJcbiAgICAgYm9yZGVyOiBub25lOyBcclxuICAgICBib3JkZXItbGVmdDogbm9uZTsgXHJcbiAgICAgYm9yZGVyLXJpZ2h0OiBub25lOyBcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxuICAgIC8qIGRpc3BsYXk6IGJsb2NrOyAqL1xyXG4gICAgaGVpZ2h0OiBhdXRvO1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiBub25lOyBcclxuICAgICBsZWZ0OiBub25lOyBcclxuICAgIHJpZ2h0OiA5cHg7XHJcbiAgICAgd2lkdGg6IG5vbmU7IFxyXG4gICAgLyogdHJhbnNpdGlvbjogYWxsIC4yczsgKi9cclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG5cclxufVxyXG4uZXhhbXBsZS1mb3JtIHtcclxuICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gIG1heC13aWR0aDogNTAwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYm9yZGVyOiBub25lO1xyXG59XHJcbi8qIyBzb3VyY2VNYXBwaW5nVVJMPXN0eWxlLmNzcy5tYXAgKi8iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700\");\r\n\r\n@font-face {\r\n  font-family: HelveticaNeueLight;\r\n  src: url('/assets/font/HelveticaNeueLight.ttf');\r\n}\r\n\r\nul {\r\n  list-style-type: none;\r\n}\r\n\r\n.nav-div {\r\n  height: 100vh;\r\n  width: 100%;\r\n  background-color: white;\r\n  position: absolute;\r\n  top: 70px;\r\n  left: 0;\r\n  z-index: 200;\r\n}\r\n\r\n.content {\r\n  padding: 19px;\r\n  background-color: #FBF4EF;\r\n}\r\n\r\nlabel {\r\n  background: none transparent;\r\n  border: 2px solid black;\r\n  border-left: 0 solid transparent;\r\n  border-right: 0 solid transparent;\r\n  cursor: pointer;\r\n  display: block;\r\n  height: 19px;\r\n  position: absolute;\r\n  top: 19px;\r\n  left: 20px;\r\n  width: 36px;\r\n  transition: all .2s;\r\n}\r\n\r\nlabel::before {\r\n  background: black;\r\n  content: '';\r\n  height: 2px;\r\n  width: 36px;\r\n  transition: all .2s;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  /* top: 18px; */\r\n  margin-top: 6.2px;\r\n\r\n}\r\n\r\nlabel::after {\r\n  background: black;\r\n  content: '';\r\n  height: 4px;\r\n  left: 0;\r\n  position: absolute;\r\n  top: 6px;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n  width: 100%;\r\n  transform: rotate(90deg);\r\n  transition: all .2s;\r\n}\r\n\r\n.menu-text {\r\n  position: absolute;\r\n  top: 40px;\r\n  left: 13px;\r\n  text-transform: uppercase;\r\n  margin-top: 2px;\r\n}\r\n\r\n.menu-text::after {\r\n  display: none;\r\n}\r\n\r\n.logo-nav {\r\n  width: 50%;\r\n}\r\n\r\n.imge-logo-header {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-items: center;\r\n  padding-top: 0px;\r\n  padding-left: 0;\r\n}\r\n\r\n.fa {\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  font-size: 30px;\r\n  position: absolute;\r\n  top: 14px;\r\n  right: 0px;\r\n  margin-top: 0px;\r\n}\r\n\r\n.user-img {\r\n  display: inline-block;\r\n  font: normal normal normal 14px/1 FontAwesome;\r\n  font-size: inherit;\r\n  text-rendering: auto;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n  font-size: 38px;\r\n\r\n}\r\n\r\nimg.open {\r\n  width: 17%;\r\n  position: absolute;\r\n  top: 4px;\r\n  left: 4px;\r\n}\r\n\r\nimg.close-img {\r\n  width: 6%;\r\n  position: absolute;\r\n  top: 26px;\r\n  left: 25px;\r\n}\r\n\r\n.has-search .form-control {\r\n  padding-left: 2.375rem;\r\n}\r\n\r\n.has-search .form-control-feedback {\r\n  position: absolute;\r\n  z-index: 2;\r\n  display: block;\r\n  width: 2.375rem;\r\n  height: 2.375rem;\r\n  line-height: 2.375rem;\r\n  text-align: center;\r\n  pointer-events: none;\r\n  color: #aaa;\r\n}\r\n\r\n.nav-links {\r\n  margin: 0;\r\n  padding: 0px;\r\n}\r\n\r\n.main {\r\n  width: 50%;\r\n  margin: 50px auto;\r\n}\r\n\r\n.grid-container {\r\n  display: grid;\r\n  grid-template-columns: 1fr 2fr 1fr;\r\n  /* padding: 10px; */\r\n  margin-left: calc(-50vw + 50%);\r\n  margin-right: calc(-50vw + 50%);\r\n  margin-top: calc(-50vw + 50%);\r\n}\r\n\r\n.grid-container>div {\r\n\r\n\r\n  text-align: Left;\r\n  font-size: 18.5px;\r\n  padding: 17px;\r\n\r\n\r\n}\r\n\r\n.grid-container:hover {\r\n  background-color: #EBEBEB;\r\n  text-decoration: none;\r\n}\r\n\r\nimg.nav-link-icon {\r\n  float: right;\r\n  /* text-align: right; */\r\n  /* display: flex; */\r\n}\r\n\r\n.nav-links-text {\r\n  color: black;\r\n  font-family: 'HelveticaNeueLight';\r\n}\r\n\r\ninput[type=text] {\r\n  /* float: right; */\r\n  padding: 15px;\r\n  border: 1px solid lightgrey;\r\n  /* margin-top: 8px; */\r\n  /* margin-right: 16px; */\r\n  font-size: 17px;\r\n  width: 87%;\r\n\r\n}\r\n\r\n.search-grid-conatiner {\r\n  display: grid;\r\n  grid-template-columns: 11fr;\r\n}\r\n\r\n.search-grid-conatiner>div {\r\n  font-size: 18.5px;\r\n  padding: 14px;\r\n  padding-top: 5px;\r\n  padding-bottom: 11px;\r\n  background-color: #FBF4EF;\r\n}\r\n\r\n.nav-link-icon-search {\r\n  width: 38px;\r\n  padding: 4px;\r\n  margin-top: -4px;\r\n  border: 1px solid lightgrey;\r\n  background-color: white;\r\n  height: 56.5px;\r\n}\r\n\r\ni.fa.fa-user {\r\n  display: flex;\r\n  flex-direction: column;\r\n\r\n}\r\n\r\nspan.log-out-text {\r\n  font-size: 12px;\r\n  position: relative;\r\n  right: 12px;\r\n  margin-top: 5px;\r\n  text-transform: uppercase;\r\n  font-family: HelveticaNeueLight;\r\n}\r\n\r\n.btn-facebook {\r\n  background-color: #244D93;\r\n  color: white;\r\n  width: 30%;\r\n  height: 35px;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.btn-google {\r\n  background-color: #DD4B33;\r\n  color: white;\r\n  width: 30%;\r\n  height: 35px;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.social-login h4 {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 700;\r\n}\r\n\r\n.social-button {\r\n  display: flex;\r\n  /* justify-content: center; */\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n\r\n}\r\n\r\n.color-signup {\r\n  color: #244D93;\r\n}\r\n\r\n.btn-social-login {\r\n  width: 100%;\r\n  background-color: #244D93;\r\n  color: white;\r\n  margin-top: 3%;\r\n  font-family: 'Open Sans', sans-serif;\r\n\r\n}\r\n\r\ni.fa.fa-user.input-group-text.nav-login-form {\r\n  position: absolute;\r\n  font-size: 23px;\r\n  left: 0px;\r\n  width: 10%;\r\n  z-index: 10;\r\n  margin-top: -4%;\r\n}\r\n\r\n.social-login.text-center {\r\n  padding: 15px;\r\n}\r\n\r\n.checkbox {\r\n  background: none transparent;\r\n  border: none;\r\n  border-left: none;\r\n  border-right: none;\r\n  cursor: pointer;\r\n  /* display: block; */\r\n  height: auto;\r\n  position: absolute;\r\n  top: none;\r\n  left: none;\r\n  right: 9px;\r\n  width: none;\r\n  /* transition: all .2s; */\r\n  display: flex;\r\n  flex-direction: row;\r\n\r\n}\r\n\r\n.example-form {\r\n  min-width: 150px;\r\n  max-width: 500px;\r\n  width: 100%;\r\n}\r\n\r\n.example-full-width {\r\n  width: 100%;\r\n  border: none;\r\n}\r\n\r\n/*# sourceMappingURL=style.css.map */\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvbmF2L25hdi5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHFFQUFxRTs7QUFFckU7RUFDRSwrQkFBK0I7RUFDL0IsK0NBQStDO0FBQ2pEOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxPQUFPO0VBQ1AsWUFBWTtBQUNkOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1Qix1QkFBdUI7RUFDdkIsZ0NBQWdDO0VBQ2hDLGlDQUFpQztFQUNqQyxlQUFlO0VBQ2YsY0FBYztFQUNkLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVixXQUFXO0VBRVgsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFdBQVc7RUFDWCxXQUFXO0VBQ1gsV0FBVztFQUNYLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsaUJBQWlCOztBQUVuQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsV0FBVztFQUVYLHdCQUF3QjtFQUV4QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVix5QkFBeUI7RUFDekIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IsbUJBQW1CO0VBQ25CLGdCQUFnQjtFQUNoQixlQUFlO0FBQ2pCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLDZDQUE2QztFQUM3QyxrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLG1DQUFtQztFQUNuQyxrQ0FBa0M7RUFDbEMsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsNkNBQTZDO0VBQzdDLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsbUNBQW1DO0VBQ25DLGtDQUFrQztFQUNsQyxlQUFlOztBQUVqQjs7QUFFQTtFQUNFLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7QUFDWDs7QUFFQTtFQUNFLFNBQVM7RUFDVCxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7QUFDWjs7QUFFQTtFQUNFLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsY0FBYztFQUNkLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsU0FBUztFQUNULFlBQVk7QUFDZDs7QUFFQTtFQUNFLFVBQVU7RUFDVixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isa0NBQWtDO0VBQ2xDLG1CQUFtQjtFQUNuQiw4QkFBOEI7RUFDOUIsK0JBQStCO0VBQy9CLDZCQUE2QjtBQUMvQjs7QUFFQTs7O0VBR0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixhQUFhOzs7QUFHZjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLFlBQVk7RUFDWixpQ0FBaUM7QUFDbkM7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLDJCQUEyQjtFQUMzQixxQkFBcUI7RUFDckIsd0JBQXdCO0VBQ3hCLGVBQWU7RUFDZixVQUFVOztBQUVaOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLG9CQUFvQjtFQUNwQix5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQiwyQkFBMkI7RUFDM0IsdUJBQXVCO0VBQ3ZCLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCOztBQUV4Qjs7QUFFQTtFQUNFLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLGVBQWU7RUFDZix5QkFBeUI7RUFDekIsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7RUFDWixvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsbUJBQW1COztBQUVyQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixjQUFjO0VBQ2Qsb0NBQW9DOztBQUV0Qzs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsU0FBUztFQUNULFVBQVU7RUFDVixXQUFXO0VBQ1gsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1QixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVixVQUFVO0VBQ1YsV0FBVztFQUNYLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2IsbUJBQW1COztBQUVyQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7QUFDZDs7QUFFQSxvQ0FBb0MiLCJmaWxlIjoic3JjL2FwcC9uYXYvbmF2LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybChcImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1OdW5pdG86NDAwLDcwMFwiKTtcclxuXHJcbkBmb250LWZhY2Uge1xyXG4gIGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2FOZXVlTGlnaHQ7XHJcbiAgc3JjOiB1cmwoJy9hc3NldHMvZm9udC9IZWx2ZXRpY2FOZXVlTGlnaHQudHRmJyk7XHJcbn1cclxuXHJcbnVsIHtcclxuICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XHJcbn1cclxuXHJcbi5uYXYtZGl2IHtcclxuICBoZWlnaHQ6IDEwMHZoO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDcwcHg7XHJcbiAgbGVmdDogMDtcclxuICB6LWluZGV4OiAyMDA7XHJcbn1cclxuXHJcbi5jb250ZW50IHtcclxuICBwYWRkaW5nOiAxOXB4O1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNGQkY0RUY7XHJcbn1cclxuXHJcbmxhYmVsIHtcclxuICBiYWNrZ3JvdW5kOiBub25lIHRyYW5zcGFyZW50O1xyXG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xyXG4gIGJvcmRlci1sZWZ0OiAwIHNvbGlkIHRyYW5zcGFyZW50O1xyXG4gIGJvcmRlci1yaWdodDogMCBzb2xpZCB0cmFuc3BhcmVudDtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgaGVpZ2h0OiAxOXB4O1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDE5cHg7XHJcbiAgbGVmdDogMjBweDtcclxuICB3aWR0aDogMzZweDtcclxuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAuMnM7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC4ycztcclxufVxyXG5cclxubGFiZWw6OmJlZm9yZSB7XHJcbiAgYmFja2dyb3VuZDogYmxhY2s7XHJcbiAgY29udGVudDogJyc7XHJcbiAgaGVpZ2h0OiAycHg7XHJcbiAgd2lkdGg6IDM2cHg7XHJcbiAgdHJhbnNpdGlvbjogYWxsIC4ycztcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIC8qIHRvcDogMThweDsgKi9cclxuICBtYXJnaW4tdG9wOiA2LjJweDtcclxuXHJcbn1cclxuXHJcbmxhYmVsOjphZnRlciB7XHJcbiAgYmFja2dyb3VuZDogYmxhY2s7XHJcbiAgY29udGVudDogJyc7XHJcbiAgaGVpZ2h0OiA0cHg7XHJcbiAgbGVmdDogMDtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA2cHg7XHJcbiAgb3BhY2l0eTogMDtcclxuICB2aXNpYmlsaXR5OiBoaWRkZW47XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgLXdlYmtpdC10cmFuc2Zvcm06IHJvdGF0ZSg5MGRlZyk7XHJcbiAgdHJhbnNmb3JtOiByb3RhdGUoOTBkZWcpO1xyXG4gIC13ZWJraXQtdHJhbnNpdGlvbjogYWxsIC4ycztcclxuICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xyXG59XHJcblxyXG4ubWVudS10ZXh0IHtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiA0MHB4O1xyXG4gIGxlZnQ6IDEzcHg7XHJcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxuICBtYXJnaW4tdG9wOiAycHg7XHJcbn1cclxuXHJcbi5tZW51LXRleHQ6OmFmdGVyIHtcclxuICBkaXNwbGF5OiBub25lO1xyXG59XHJcblxyXG4ubG9nby1uYXYge1xyXG4gIHdpZHRoOiA1MCU7XHJcbn1cclxuXHJcbi5pbWdlLWxvZ28taGVhZGVyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgcGFkZGluZy10b3A6IDBweDtcclxuICBwYWRkaW5nLWxlZnQ6IDA7XHJcbn1cclxuXHJcbi5mYSB7XHJcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xyXG4gIGZvbnQ6IG5vcm1hbCBub3JtYWwgbm9ybWFsIDE0cHgvMSBGb250QXdlc29tZTtcclxuICBmb250LXNpemU6IGluaGVyaXQ7XHJcbiAgdGV4dC1yZW5kZXJpbmc6IGF1dG87XHJcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XHJcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcclxuICBmb250LXNpemU6IDMwcHg7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogMTRweDtcclxuICByaWdodDogMHB4O1xyXG4gIG1hcmdpbi10b3A6IDBweDtcclxufVxyXG5cclxuLnVzZXItaW1nIHtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgZm9udDogbm9ybWFsIG5vcm1hbCBub3JtYWwgMTRweC8xIEZvbnRBd2Vzb21lO1xyXG4gIGZvbnQtc2l6ZTogaW5oZXJpdDtcclxuICB0ZXh0LXJlbmRlcmluZzogYXV0bztcclxuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcclxuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xyXG4gIGZvbnQtc2l6ZTogMzhweDtcclxuXHJcbn1cclxuXHJcbmltZy5vcGVuIHtcclxuICB3aWR0aDogMTclO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IDRweDtcclxuICBsZWZ0OiA0cHg7XHJcbn1cclxuXHJcbmltZy5jbG9zZS1pbWcge1xyXG4gIHdpZHRoOiA2JTtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgdG9wOiAyNnB4O1xyXG4gIGxlZnQ6IDI1cHg7XHJcbn1cclxuXHJcbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wge1xyXG4gIHBhZGRpbmctbGVmdDogMi4zNzVyZW07XHJcbn1cclxuXHJcbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wtZmVlZGJhY2sge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB6LWluZGV4OiAyO1xyXG4gIGRpc3BsYXk6IGJsb2NrO1xyXG4gIHdpZHRoOiAyLjM3NXJlbTtcclxuICBoZWlnaHQ6IDIuMzc1cmVtO1xyXG4gIGxpbmUtaGVpZ2h0OiAyLjM3NXJlbTtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XHJcbiAgY29sb3I6ICNhYWE7XHJcbn1cclxuXHJcbi5uYXYtbGlua3Mge1xyXG4gIG1hcmdpbjogMDtcclxuICBwYWRkaW5nOiAwcHg7XHJcbn1cclxuXHJcbi5tYWluIHtcclxuICB3aWR0aDogNTAlO1xyXG4gIG1hcmdpbjogNTBweCBhdXRvO1xyXG59XHJcblxyXG4uZ3JpZC1jb250YWluZXIge1xyXG4gIGRpc3BsYXk6IGdyaWQ7XHJcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMmZyIDFmcjtcclxuICAvKiBwYWRkaW5nOiAxMHB4OyAqL1xyXG4gIG1hcmdpbi1sZWZ0OiBjYWxjKC01MHZ3ICsgNTAlKTtcclxuICBtYXJnaW4tcmlnaHQ6IGNhbGMoLTUwdncgKyA1MCUpO1xyXG4gIG1hcmdpbi10b3A6IGNhbGMoLTUwdncgKyA1MCUpO1xyXG59XHJcblxyXG4uZ3JpZC1jb250YWluZXI+ZGl2IHtcclxuXHJcblxyXG4gIHRleHQtYWxpZ246IExlZnQ7XHJcbiAgZm9udC1zaXplOiAxOC41cHg7XHJcbiAgcGFkZGluZzogMTdweDtcclxuXHJcblxyXG59XHJcblxyXG4uZ3JpZC1jb250YWluZXI6aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNFQkVCRUI7XHJcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xyXG59XHJcblxyXG5pbWcubmF2LWxpbmstaWNvbiB7XHJcbiAgZmxvYXQ6IHJpZ2h0O1xyXG4gIC8qIHRleHQtYWxpZ246IHJpZ2h0OyAqL1xyXG4gIC8qIGRpc3BsYXk6IGZsZXg7ICovXHJcbn1cclxuXHJcbi5uYXYtbGlua3MtdGV4dCB7XHJcbiAgY29sb3I6IGJsYWNrO1xyXG4gIGZvbnQtZmFtaWx5OiAnSGVsdmV0aWNhTmV1ZUxpZ2h0JztcclxufVxyXG5cclxuaW5wdXRbdHlwZT10ZXh0XSB7XHJcbiAgLyogZmxvYXQ6IHJpZ2h0OyAqL1xyXG4gIHBhZGRpbmc6IDE1cHg7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgbGlnaHRncmV5O1xyXG4gIC8qIG1hcmdpbi10b3A6IDhweDsgKi9cclxuICAvKiBtYXJnaW4tcmlnaHQ6IDE2cHg7ICovXHJcbiAgZm9udC1zaXplOiAxN3B4O1xyXG4gIHdpZHRoOiA4NyU7XHJcblxyXG59XHJcblxyXG4uc2VhcmNoLWdyaWQtY29uYXRpbmVyIHtcclxuICBkaXNwbGF5OiBncmlkO1xyXG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMTFmcjtcclxufVxyXG5cclxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lcj5kaXYge1xyXG4gIGZvbnQtc2l6ZTogMTguNXB4O1xyXG4gIHBhZGRpbmc6IDE0cHg7XHJcbiAgcGFkZGluZy10b3A6IDVweDtcclxuICBwYWRkaW5nLWJvdHRvbTogMTFweDtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRkJGNEVGO1xyXG59XHJcblxyXG4ubmF2LWxpbmstaWNvbi1zZWFyY2gge1xyXG4gIHdpZHRoOiAzOHB4O1xyXG4gIHBhZGRpbmc6IDRweDtcclxuICBtYXJnaW4tdG9wOiAtNHB4O1xyXG4gIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JleTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxuICBoZWlnaHQ6IDU2LjVweDtcclxufVxyXG5cclxuaS5mYS5mYS11c2VyIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcblxyXG59XHJcblxyXG5zcGFuLmxvZy1vdXQtdGV4dCB7XHJcbiAgZm9udC1zaXplOiAxMnB4O1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICByaWdodDogMTJweDtcclxuICBtYXJnaW4tdG9wOiA1cHg7XHJcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcclxuICBmb250LWZhbWlseTogSGVsdmV0aWNhTmV1ZUxpZ2h0O1xyXG59XHJcblxyXG4uYnRuLWZhY2Vib29rIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICB3aWR0aDogMzAlO1xyXG4gIGhlaWdodDogMzVweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luOiAwcHg7XHJcbiAgcGFkZGluZzogMHB4O1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLmJ0bi1nb29nbGUge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICNERDRCMzM7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHdpZHRoOiAzMCU7XHJcbiAgaGVpZ2h0OiAzNXB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW46IDBweDtcclxuICBwYWRkaW5nOiAwcHg7XHJcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG4uc29jaWFsLWxvZ2luIGg0IHtcclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbiAgZm9udC13ZWlnaHQ6IDcwMDtcclxufVxyXG5cclxuLnNvY2lhbC1idXR0b24ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuXHJcbn1cclxuXHJcbi5jb2xvci1zaWdudXAge1xyXG4gIGNvbG9yOiAjMjQ0RDkzO1xyXG59XHJcblxyXG4uYnRuLXNvY2lhbC1sb2dpbiB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgbWFyZ2luLXRvcDogMyU7XHJcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG5cclxufVxyXG5cclxuaS5mYS5mYS11c2VyLmlucHV0LWdyb3VwLXRleHQubmF2LWxvZ2luLWZvcm0ge1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICBmb250LXNpemU6IDIzcHg7XHJcbiAgbGVmdDogMHB4O1xyXG4gIHdpZHRoOiAxMCU7XHJcbiAgei1pbmRleDogMTA7XHJcbiAgbWFyZ2luLXRvcDogLTQlO1xyXG59XHJcblxyXG4uc29jaWFsLWxvZ2luLnRleHQtY2VudGVyIHtcclxuICBwYWRkaW5nOiAxNXB4O1xyXG59XHJcblxyXG4uY2hlY2tib3gge1xyXG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyOiBub25lO1xyXG4gIGJvcmRlci1sZWZ0OiBub25lO1xyXG4gIGJvcmRlci1yaWdodDogbm9uZTtcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgLyogZGlzcGxheTogYmxvY2s7ICovXHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuICB0b3A6IG5vbmU7XHJcbiAgbGVmdDogbm9uZTtcclxuICByaWdodDogOXB4O1xyXG4gIHdpZHRoOiBub25lO1xyXG4gIC8qIHRyYW5zaXRpb246IGFsbCAuMnM7ICovXHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG5cclxufVxyXG5cclxuLmV4YW1wbGUtZm9ybSB7XHJcbiAgbWluLXdpZHRoOiAxNTBweDtcclxuICBtYXgtd2lkdGg6IDUwMHB4O1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBib3JkZXI6IG5vbmU7XHJcbn1cclxuXHJcbi8qIyBzb3VyY2VNYXBwaW5nVVJMPXN0eWxlLmNzcy5tYXAgKi9cclxuIl19 */");
 
 /***/ }),
 
@@ -4261,44 +3160,6 @@ SelectedpropertydetailService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]
 
 /***/ }),
 
-/***/ "./src/app/sellerform/seller.service.ts":
-/*!**********************************************!*\
-  !*** ./src/app/sellerform/seller.service.ts ***!
-  \**********************************************/
-/*! exports provided: SellerService */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SellerService", function() { return SellerService; });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-
-
-
-let SellerService = class SellerService {
-    constructor(http) {
-        this.http = http;
-        this.configUrl = 'https://api.postcodes.io/postcodes/';
-    }
-    getConfig(url) {
-        return this.http.get(this.configUrl + url);
-    }
-};
-SellerService.ctorParameters = () => [
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
-];
-SellerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: 'root'
-    })
-], SellerService);
-
-
-
-/***/ }),
-
 /***/ "./src/app/sellerform/seller.ts":
 /*!**************************************!*\
   !*** ./src/app/sellerform/seller.ts ***!
@@ -4334,7 +3195,7 @@ class Seller {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".form-containers {\n\n  width: auto;\n  background-color: white;\n\n}\n\n.forms-container {\n\n  padding-bottom: 4%;\n  padding-top: 1%;\n  padding-left: 8px;\n  padding-right: 8px;\n}\n\n.tab-content {\n  padding: 20px;\n}\n\n.row {\n  overflow-x: hidden;\n}\n\nnav {\n  background-color: #244D93;\n  padding-left: 20px;\n  padding-right: 20px;\n  border-radius: 11px;\n  margin-top: 62px;\n\n}\n\n.nav-link {\n  color: white;\n}\n\n.nav-tabs .nav-item.show .nav-link,\n.nav-tabs .nav-link.active {\n  color: #244D93;\n  background-color: #fff;\n  border-color: #dee2e6 #dee2e6 #fff;\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 700 !important;\n}\n\n.other-option {\n  display: flex;\n  justify-content: space-between;\n  align-content: center;\n}\n\n.nav-link {\n  display: block;\n  padding: 0rem 1rem;\n\n}\n\ndiv#nav-tabContent {\n  width: auto;\n}\n\n.seller-form-upper {\n  padding-top: 6px;\n}\n\n.seller-form-upper p {\n  font-family: 'Open Sans', sans-serif;\n  font-size: 14px;\n}\n\n.seller-form-upper span {\n  font-family: 'Roboto', sans-serif;\n  font-weight: 700;\n}\n\n.top-hr {\n  margin-top: -1rem;\n  margin-bottom: 0rem;\n  border: 0;\n  border-top: 2px solid grey\n}\n\n.btn-facebook {\n  background-color: #244D93;\n  color: white;\n  width: 30%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.btn-google {\n  background-color: #DD4B33;\n  color: white;\n  width: 30%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.social-login h4 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 700;\n}\n\n.social-button {\n  display: flex;\n  /* justify-content: center; */\n  justify-content: space-evenly;\n  align-items: center;\n\n}\n\n.color-signup {\n  color: #244D93;\n}\n\n.btn-social-login {\n  width: 100%;\n  background-color: #244D93;\n  color: white;\n  margin-top: 3%;\n  font-family: 'Open Sans', sans-serif;\n\n}\n\nbutton.btn.dropdown-toggle {\n  width: 100%;\n}\n\n.dropdown-menu.show {\n  width: 100%;\n}\n\n.dropdown-toggle::after {\n\n  margin-left: .255em;\n  vertical-align: 2.255em;\n  content: \"\";\n  border-top: .4em solid;\n  border-right: .4em solid transparent;\n  border-bottom: 0;\n  border-left: .4em solid transparent;\n  float: right;\n  text-align: center;\n  margin-top: 3%;\n}\n\n/* span.text-dropdown {\n    float: left;\n} */\n\n.dropdown-item {\n  text-align: center;\n}\n\nbutton.btn.dropdown-toggle {\n  width: 100%;\n  /* border: 1px solid grey; */\n  border: 1px solid #CED4DA;\n}\n\n.endind-button {\n  /* background-color: unset; */\n  display: flex;\n  justify-content: space-evenly;\n  align-content: center;\n}\n\n.btn.btn-back {\n  width: 33%;\n  background-color: #244D93;\n  /* height: 35px; */\n  color: white;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.btn-next {\n  background-color: #244D93;\n  color: white;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.or-text {\n  display: flex;\n  justify-content: center;\n  align-content: center;\n}\n\n.second-container {\n  background-color: white;\n\n}\n\ninput#Tittle {\n  width: 100%;\n}\n\n.forms-heading {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 700;\n  font-size: 18px;\n}\n\n.forms-star {\n  font-family: 'Open Sans', sans-serif;\n}\n\nlabel {\n  font-family: 'Open Sans', sans-serif;\n  color: #707070;\n}\n\n.dropdown-item {\n  font-family: 'Open Sans', sans-serif;\n  color: #707070;\n}\n\n.form-or-p {\n  border-radius: 50%;\n  width: 36px;\n  height: 26px;\n  /* padding: 8px; */\n  background: #fff;\n  border: 1px solid black;\n  color: #666;\n  text-align: center;\n  font: 19px 'Open Sans', sans-serif;\n  display: flex;\n  justify-content: center;\n  align-items: center\n}\n\n.forms-or {\n  display: flex;\n  justify-content: center;\n}\n\n.form-or-p:before,\n.form-or-p:after {\n  background-color: #333;\n  content: \"\";\n  display: inline-block;\n  height: 1px;\n  position: relative;\n  vertical-align: middle;\n  width: 100%;\n}\n\n.form-or-p:before {\n  right: .5em;\n  margin-left: -100%;\n}\n\n.form-or-p:after {\n  left: .5em;\n  margin-right: -100%;\n}\n\nbtnDefault,\n.btnUpload {\n  background-color: lightgrey;\n  border: 1px solid #CCCCCC;\n  color: #333333;\n  cursor: pointer;\n  font-weight: 400;\n  display: inline-block;\n  padding: 6px 12px;\n  text-align: center;\n  text-decoration: none;\n  vertical-align: middle;\n}\n\n.btnDefault:focus,\n.btnDefault:hover,\n.btnUpload:focus,\n.btnUpload:hover {\n  background-color: grey;\n}\n\n.btnM {\n  border-radius: 4px;\n  font-size: 14px;\n  padding: 6px 12px;\n}\n\n.customUpload {\n  overflow: hidden;\n  position: relative;\n  display: block;\n}\n\n.customUpload input.upload {\n  cursor: pointer;\n  margin: 0;\n  opacity: 0;\n  filter: alpha(opacity=0);\n  padding: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n}\n\n.forms-heading-optional {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 700;\n  font-size: 16px;\n\n  padding-left: 16px;\n}\n\n.optional-button-group {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  align-content: center;\n  margin-top: 40px;\n}\n\n.row-check {\n  display: flex;\n  flex-direction: column;\n}\n\n.checkbox-check {\n  margin: 0;\n  padding: 0;\n  width: 100%;\n  height: auto;\n}\n\n.radio-align {\n\n  flex-direction: column;\n  margin: 0;\n  display: flex;\n\n}\n\n.radio-main-container {\n  justify-content: space-between;\n  /* margin: 0; */\n  /* padding: 0; */\n\n  align-content: center;\n}\n\n.submit-button {\n  display: flex;\n  justify-content: center;\n  margin: 0;\n  padding: 0;\n  margin-top: 16px;\n}\n\n.step.finish {\n  background-color: #244D93\n}\n\na.nav-link.disabled {\n\n  color: white;\n}\n\n.button-next {\n  display: flex;\n  justify-content: center;\n}\n\n.button-next-tab2 {\n  display: flex;\n  justify-content: space-evenly;\n  align-items: center;\n  margin: 20px;\n}\n\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\n.mat-mail-input {\n  border: none;\n}\n\n.tabs-align-padding {\n \n  padding: 17px;\n}\n\n.mat-tab-label {\n  height: 48px;\n  padding: 0 14px;\n  cursor: pointer;\n  box-sizing: border-box;\n  opacity: .6;\n  min-width: 160px;\n  text-align: center;\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  white-space: nowrap;\n  position: relative;\n  font-size: 13px;\n}\n\n.mat-tab-header-pagination.mat-tab-header-pagination-before.mat-elevation-z4.mat-ripple.mat-tab-header-pagination-disabled {\n  display: none;\n}\n\n.example-section {\n  display: flex;\n  flex-direction: column;\n  \n}\n\n.example-margin {\n  margin: 0 10px;\n}\n\n.tabs-align-padding {\n \n  padding: 17px;\n}\n\n.mat-tab-group.mat-tab-header-pagination.mat-tab-header-pagination-before.mat-elevation-z4.mat-ripple.mat-tab-header-pagination-disabled {\n  display: none;\n}\n\n.tab-pane {\n  background: white;\n \n}\n\n.social-login {\n  background-color: white;\n}\n\n.mat-tab-label {\n  height: 48px;\n  padding: 0 20px !important;\n  cursor: pointer;\n  box-sizing: border-box;\n  opacity: .6;\n  min-width: 160px;\n  text-align: center;\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  white-space: nowrap;\n  position: relative;\n}\n\n.Line-form\n{\n  margin-top: 2.5rem;\n  margin-bottom: 2.5rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VsbGVyZm9ybS9zZWxsZXJmb3JtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUUsV0FBVztFQUNYLHVCQUF1Qjs7QUFFekI7O0FBRUE7O0VBRUUsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsbUJBQW1CO0VBQ25CLGdCQUFnQjs7QUFFbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7O0VBRUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQ0FBa0M7RUFDbEMsb0NBQW9DO0VBQ3BDLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGtCQUFrQjs7QUFFcEI7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGlDQUFpQztFQUNqQyxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsbUJBQW1CO0VBQ25CLFNBQVM7RUFDVDtBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7RUFDWixvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsbUJBQW1COztBQUVyQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixjQUFjO0VBQ2Qsb0NBQW9DOztBQUV0Qzs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTs7RUFFRSxtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLFdBQVc7RUFDWCxzQkFBc0I7RUFDdEIsb0NBQW9DO0VBQ3BDLGdCQUFnQjtFQUNoQixtQ0FBbUM7RUFDbkMsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixjQUFjO0FBQ2hCOztBQUVBOztHQUVHOztBQUNIO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsV0FBVztFQUNYLDRCQUE0QjtFQUM1Qix5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSw2QkFBNkI7RUFDN0IsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxVQUFVO0VBQ1YseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLHVCQUF1Qjs7QUFFekI7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0VBQ2hCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsY0FBYztBQUNoQjs7QUFFQTtFQUNFLG9DQUFvQztFQUNwQyxjQUFjO0FBQ2hCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQix1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixrQ0FBa0M7RUFDbEMsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QjtBQUNGOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHVCQUF1QjtBQUN6Qjs7QUFFQTs7RUFFRSxzQkFBc0I7RUFDdEIsV0FBVztFQUNYLHFCQUFxQjtFQUNyQixXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLHNCQUFzQjtFQUN0QixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLG1CQUFtQjtBQUNyQjs7QUFFQTs7RUFFRSwyQkFBMkI7RUFDM0IseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixzQkFBc0I7QUFDeEI7O0FBRUE7Ozs7RUFJRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLHdCQUF3QjtFQUN4QixVQUFVO0VBQ1Ysa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixNQUFNO0FBQ1I7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0VBQ2hCLGVBQWU7O0VBRWYsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixtQkFBbUI7RUFDbkIscUJBQXFCO0VBQ3JCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7O0VBRUUsc0JBQXNCO0VBQ3RCLFNBQVM7RUFDVCxhQUFhOztBQUVmOztBQUVBO0VBQ0UsOEJBQThCO0VBQzlCLGVBQWU7RUFDZixnQkFBZ0I7O0VBRWhCLHFCQUFxQjtBQUN2Qjs7QUFJQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsU0FBUztFQUNULFVBQVU7RUFDVixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRTtBQUNGOztBQUVBOztFQUVFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLG1CQUFtQjtFQUNuQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGVBQWU7RUFDZixRQUFRO0VBQ1IsU0FBUztFQUVULGFBQWE7RUFFYix1QkFBdUI7RUFFdkIsbUJBQW1CO0VBQ25CLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUNBO0VBQ0UsWUFBWTtBQUNkOztBQUNBOztFQUVFLGFBQWE7QUFDZjs7QUFDQTtFQUNFLFlBQVk7RUFDWixlQUFlO0VBQ2YsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLGVBQWU7QUFDakI7O0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7O0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCOztBQUV4Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBQ0E7O0VBRUUsYUFBYTtBQUNmOztBQUNBO0VBQ0UsYUFBYTtBQUNmOztBQUNBO0VBQ0UsaUJBQWlCOztBQUVuQjs7QUFDQTtFQUNFLHVCQUF1QjtBQUN6Qjs7QUFDQTtFQUNFLFlBQVk7RUFDWiwwQkFBMEI7RUFDMUIsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOztBQUNBOztFQUVFLGtCQUFrQjtFQUNsQixxQkFBcUI7QUFDdkIiLCJmaWxlIjoic3JjL2FwcC9zZWxsZXJmb3JtL3NlbGxlcmZvcm0uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mb3JtLWNvbnRhaW5lcnMge1xuXG4gIHdpZHRoOiBhdXRvO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcblxufVxuXG4uZm9ybXMtY29udGFpbmVyIHtcblxuICBwYWRkaW5nLWJvdHRvbTogNCU7XG4gIHBhZGRpbmctdG9wOiAxJTtcbiAgcGFkZGluZy1sZWZ0OiA4cHg7XG4gIHBhZGRpbmctcmlnaHQ6IDhweDtcbn1cblxuLnRhYi1jb250ZW50IHtcbiAgcGFkZGluZzogMjBweDtcbn1cblxuLnJvdyB7XG4gIG92ZXJmbG93LXg6IGhpZGRlbjtcbn1cblxubmF2IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgcGFkZGluZy1sZWZ0OiAyMHB4O1xuICBwYWRkaW5nLXJpZ2h0OiAyMHB4O1xuICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICBtYXJnaW4tdG9wOiA2MnB4O1xuXG59XG5cbi5uYXYtbGluayB7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLm5hdi10YWJzIC5uYXYtaXRlbS5zaG93IC5uYXYtbGluayxcbi5uYXYtdGFicyAubmF2LWxpbmsuYWN0aXZlIHtcbiAgY29sb3I6ICMyNDREOTM7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gIGJvcmRlci1jb2xvcjogI2RlZTJlNiAjZGVlMmU2ICNmZmY7XG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMCAhaW1wb3J0YW50O1xufVxuXG4ub3RoZXItb3B0aW9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5uYXYtbGluayB7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBwYWRkaW5nOiAwcmVtIDFyZW07XG5cbn1cblxuZGl2I25hdi10YWJDb250ZW50IHtcbiAgd2lkdGg6IGF1dG87XG59XG5cbi5zZWxsZXItZm9ybS11cHBlciB7XG4gIHBhZGRpbmctdG9wOiA2cHg7XG59XG5cbi5zZWxsZXItZm9ybS11cHBlciBwIHtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDE0cHg7XG59XG5cbi5zZWxsZXItZm9ybS11cHBlciBzcGFuIHtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xufVxuXG4udG9wLWhyIHtcbiAgbWFyZ2luLXRvcDogLTFyZW07XG4gIG1hcmdpbi1ib3R0b206IDByZW07XG4gIGJvcmRlcjogMDtcbiAgYm9yZGVyLXRvcDogMnB4IHNvbGlkIGdyZXlcbn1cblxuLmJ0bi1mYWNlYm9vayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgd2lkdGg6IDMwJTtcbiAgaGVpZ2h0OiAzNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjogMHB4O1xuICBwYWRkaW5nOiAwcHg7XG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbn1cblxuLmJ0bi1nb29nbGUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjREQ0QjMzO1xuICBjb2xvcjogd2hpdGU7XG4gIHdpZHRoOiAzMCU7XG4gIGhlaWdodDogMzVweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW46IDBweDtcbiAgcGFkZGluZzogMHB4O1xuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG59XG5cbi5zb2NpYWwtbG9naW4gaDQge1xuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG59XG5cbi5zb2NpYWwtYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG59XG5cbi5jb2xvci1zaWdudXAge1xuICBjb2xvcjogIzI0NEQ5Mztcbn1cblxuLmJ0bi1zb2NpYWwtbG9naW4ge1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgY29sb3I6IHdoaXRlO1xuICBtYXJnaW4tdG9wOiAzJTtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuXG59XG5cbmJ1dHRvbi5idG4uZHJvcGRvd24tdG9nZ2xlIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5kcm9wZG93bi1tZW51LnNob3cge1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmRyb3Bkb3duLXRvZ2dsZTo6YWZ0ZXIge1xuXG4gIG1hcmdpbi1sZWZ0OiAuMjU1ZW07XG4gIHZlcnRpY2FsLWFsaWduOiAyLjI1NWVtO1xuICBjb250ZW50OiBcIlwiO1xuICBib3JkZXItdG9wOiAuNGVtIHNvbGlkO1xuICBib3JkZXItcmlnaHQ6IC40ZW0gc29saWQgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlci1ib3R0b206IDA7XG4gIGJvcmRlci1sZWZ0OiAuNGVtIHNvbGlkIHRyYW5zcGFyZW50O1xuICBmbG9hdDogcmlnaHQ7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luLXRvcDogMyU7XG59XG5cbi8qIHNwYW4udGV4dC1kcm9wZG93biB7XG4gICAgZmxvYXQ6IGxlZnQ7XG59ICovXG4uZHJvcGRvd24taXRlbSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuYnV0dG9uLmJ0bi5kcm9wZG93bi10b2dnbGUge1xuICB3aWR0aDogMTAwJTtcbiAgLyogYm9yZGVyOiAxcHggc29saWQgZ3JleTsgKi9cbiAgYm9yZGVyOiAxcHggc29saWQgI0NFRDREQTtcbn1cblxuLmVuZGluZC1idXR0b24ge1xuICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiB1bnNldDsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuLmJ0bi5idG4tYmFjayB7XG4gIHdpZHRoOiAzMyU7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gIC8qIGhlaWdodDogMzVweDsgKi9cbiAgY29sb3I6IHdoaXRlO1xuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG59XG5cbi5idG4tbmV4dCB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xufVxuXG4ub3ItdGV4dCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5zZWNvbmQtY29udGFpbmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG5cbn1cblxuaW5wdXQjVGl0dGxlIHtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5mb3Jtcy1oZWFkaW5nIHtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xuICBmb250LXNpemU6IDE4cHg7XG59XG5cbi5mb3Jtcy1zdGFyIHtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xufVxuXG5sYWJlbCB7XG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgY29sb3I6ICM3MDcwNzA7XG59XG5cbi5kcm9wZG93bi1pdGVtIHtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuICBjb2xvcjogIzcwNzA3MDtcbn1cblxuLmZvcm0tb3ItcCB7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgd2lkdGg6IDM2cHg7XG4gIGhlaWdodDogMjZweDtcbiAgLyogcGFkZGluZzogOHB4OyAqL1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcbiAgY29sb3I6ICM2NjY7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udDogMTlweCAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXJcbn1cblxuLmZvcm1zLW9yIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5mb3JtLW9yLXA6YmVmb3JlLFxuLmZvcm0tb3ItcDphZnRlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMzMzM7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgaGVpZ2h0OiAxcHg7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5mb3JtLW9yLXA6YmVmb3JlIHtcbiAgcmlnaHQ6IC41ZW07XG4gIG1hcmdpbi1sZWZ0OiAtMTAwJTtcbn1cblxuLmZvcm0tb3ItcDphZnRlciB7XG4gIGxlZnQ6IC41ZW07XG4gIG1hcmdpbi1yaWdodDogLTEwMCU7XG59XG5cbmJ0bkRlZmF1bHQsXG4uYnRuVXBsb2FkIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogbGlnaHRncmV5O1xuICBib3JkZXI6IDFweCBzb2xpZCAjQ0NDQ0NDO1xuICBjb2xvcjogIzMzMzMzMztcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBmb250LXdlaWdodDogNDAwO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIHBhZGRpbmc6IDZweCAxMnB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbn1cblxuLmJ0bkRlZmF1bHQ6Zm9jdXMsXG4uYnRuRGVmYXVsdDpob3Zlcixcbi5idG5VcGxvYWQ6Zm9jdXMsXG4uYnRuVXBsb2FkOmhvdmVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogZ3JleTtcbn1cblxuLmJ0bk0ge1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgcGFkZGluZzogNnB4IDEycHg7XG59XG5cbi5jdXN0b21VcGxvYWQge1xuICBvdmVyZmxvdzogaGlkZGVuO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4uY3VzdG9tVXBsb2FkIGlucHV0LnVwbG9hZCB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgbWFyZ2luOiAwO1xuICBvcGFjaXR5OiAwO1xuICBmaWx0ZXI6IGFscGhhKG9wYWNpdHk9MCk7XG4gIHBhZGRpbmc6IDA7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDA7XG4gIHRvcDogMDtcbn1cblxuLmZvcm1zLWhlYWRpbmctb3B0aW9uYWwge1xuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGZvbnQtc2l6ZTogMTZweDtcblxuICBwYWRkaW5nLWxlZnQ6IDE2cHg7XG59XG5cbi5vcHRpb25hbC1idXR0b24tZ3JvdXAge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICBtYXJnaW4tdG9wOiA0MHB4O1xufVxuXG4ucm93LWNoZWNrIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cblxuLmNoZWNrYm94LWNoZWNrIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiBhdXRvO1xufVxuXG4ucmFkaW8tYWxpZ24ge1xuXG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIG1hcmdpbjogMDtcbiAgZGlzcGxheTogZmxleDtcblxufVxuXG4ucmFkaW8tbWFpbi1jb250YWluZXIge1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIC8qIG1hcmdpbjogMDsgKi9cbiAgLyogcGFkZGluZzogMDsgKi9cblxuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG59XG5cblxuXG4uc3VibWl0LWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDA7XG4gIG1hcmdpbi10b3A6IDE2cHg7XG59XG5cbi5zdGVwLmZpbmlzaCB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTNcbn1cblxuYS5uYXYtbGluay5kaXNhYmxlZCB7XG5cbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uYnV0dG9uLW5leHQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuLmJ1dHRvbi1uZXh0LXRhYjIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luOiAyMHB4O1xufVxuXG4ubG9hZGluZy1jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBsZWZ0OiAwcHg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB6LWluZGV4OiA5O1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgb3BhY2l0eTogMC41O1xufVxuXG4uZXhhbXBsZS1mb3JtIHtcbiAgbWluLXdpZHRoOiAxNTBweDtcbiAgbWF4LXdpZHRoOiA1MDBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyOiBub25lO1xufVxuLm1hdC1tYWlsLWlucHV0IHtcbiAgYm9yZGVyOiBub25lO1xufVxuLnRhYnMtYWxpZ24tcGFkZGluZyB7XG4gXG4gIHBhZGRpbmc6IDE3cHg7XG59XG4ubWF0LXRhYi1sYWJlbCB7XG4gIGhlaWdodDogNDhweDtcbiAgcGFkZGluZzogMCAxNHB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIG9wYWNpdHk6IC42O1xuICBtaW4td2lkdGg6IDE2MHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBmb250LXNpemU6IDEzcHg7XG59XG4ubWF0LXRhYi1oZWFkZXItcGFnaW5hdGlvbi5tYXQtdGFiLWhlYWRlci1wYWdpbmF0aW9uLWJlZm9yZS5tYXQtZWxldmF0aW9uLXo0Lm1hdC1yaXBwbGUubWF0LXRhYi1oZWFkZXItcGFnaW5hdGlvbi1kaXNhYmxlZCB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG4uZXhhbXBsZS1zZWN0aW9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgXG59XG5cbi5leGFtcGxlLW1hcmdpbiB7XG4gIG1hcmdpbjogMCAxMHB4O1xufVxuLnRhYnMtYWxpZ24tcGFkZGluZyB7XG4gXG4gIHBhZGRpbmc6IDE3cHg7XG59XG4ubWF0LXRhYi1ncm91cC5tYXQtdGFiLWhlYWRlci1wYWdpbmF0aW9uLm1hdC10YWItaGVhZGVyLXBhZ2luYXRpb24tYmVmb3JlLm1hdC1lbGV2YXRpb24tejQubWF0LXJpcHBsZS5tYXQtdGFiLWhlYWRlci1wYWdpbmF0aW9uLWRpc2FibGVkIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbi50YWItcGFuZSB7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuIFxufVxuLnNvY2lhbC1sb2dpbiB7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuLm1hdC10YWItbGFiZWwge1xuICBoZWlnaHQ6IDQ4cHg7XG4gIHBhZGRpbmc6IDAgMjBweCAhaW1wb3J0YW50O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIG9wYWNpdHk6IC42O1xuICBtaW4td2lkdGg6IDE2MHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xufVxuLkxpbmUtZm9ybVxue1xuICBtYXJnaW4tdG9wOiAyLjVyZW07XG4gIG1hcmdpbi1ib3R0b206IDIuNXJlbTtcbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".form-containers {\r\n\r\n  width: auto;\r\n  background-color: white;\r\n\r\n}\r\n\r\n.forms-container {\r\n\r\n  padding-bottom: 4%;\r\n  padding-top: 1%;\r\n  padding-left: 8px;\r\n  padding-right: 8px;\r\n}\r\n\r\n.tab-content {\r\n  padding: 20px;\r\n}\r\n\r\n.row {\r\n  overflow-x: hidden;\r\n}\r\n\r\nnav {\r\n  background-color: #244D93;\r\n  padding-left: 20px;\r\n  padding-right: 20px;\r\n  border-radius: 11px;\r\n  margin-top: 62px;\r\n\r\n}\r\n\r\n.nav-link {\r\n  color: white;\r\n}\r\n\r\n.nav-tabs .nav-item.show .nav-link,\r\n.nav-tabs .nav-link.active {\r\n  color: #244D93;\r\n  background-color: #fff;\r\n  border-color: #dee2e6 #dee2e6 #fff;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 700 !important;\r\n}\r\n\r\n.other-option {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-content: center;\r\n}\r\n\r\n.nav-link {\r\n  display: block;\r\n  padding: 0rem 1rem;\r\n\r\n}\r\n\r\ndiv#nav-tabContent {\r\n  width: auto;\r\n}\r\n\r\n.seller-form-upper {\r\n  padding-top: 6px;\r\n}\r\n\r\n.seller-form-upper p {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-size: 14px;\r\n}\r\n\r\n.seller-form-upper span {\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: 700;\r\n}\r\n\r\n.top-hr {\r\n  margin-top: -1rem;\r\n  margin-bottom: 0rem;\r\n  border: 0;\r\n  border-top: 2px solid grey\r\n}\r\n\r\n.btn-facebook {\r\n  background-color: #244D93;\r\n  color: white;\r\n  width: 30%;\r\n  height: 35px;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.btn-google {\r\n  background-color: #DD4B33;\r\n  color: white;\r\n  width: 30%;\r\n  height: 35px;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.social-login h4 {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 700;\r\n}\r\n\r\n.social-button {\r\n  display: flex;\r\n  /* justify-content: center; */\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n\r\n}\r\n\r\n.color-signup {\r\n  color: #244D93;\r\n}\r\n\r\n.btn-social-login {\r\n  width: 100%;\r\n  background-color: #244D93;\r\n  color: white;\r\n  margin-top: 3%;\r\n  font-family: 'Open Sans', sans-serif;\r\n\r\n}\r\n\r\nbutton.btn.dropdown-toggle {\r\n  width: 100%;\r\n}\r\n\r\n.dropdown-menu.show {\r\n  width: 100%;\r\n}\r\n\r\n.dropdown-toggle::after {\r\n\r\n  margin-left: .255em;\r\n  vertical-align: 2.255em;\r\n  content: \"\";\r\n  border-top: .4em solid;\r\n  border-right: .4em solid transparent;\r\n  border-bottom: 0;\r\n  border-left: .4em solid transparent;\r\n  float: right;\r\n  text-align: center;\r\n  margin-top: 3%;\r\n}\r\n\r\n/* span.text-dropdown {\r\n    float: left;\r\n} */\r\n\r\n.dropdown-item {\r\n  text-align: center;\r\n}\r\n\r\nbutton.btn.dropdown-toggle {\r\n  width: 100%;\r\n  /* border: 1px solid grey; */\r\n  border: 1px solid #CED4DA;\r\n}\r\n\r\n.endind-button {\r\n  /* background-color: unset; */\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-content: center;\r\n}\r\n\r\n.btn.btn-back {\r\n  width: 33%;\r\n  background-color: #244D93;\r\n  /* height: 35px; */\r\n  color: white;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.btn-next {\r\n  background-color: #244D93;\r\n  color: white;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.or-text {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-content: center;\r\n}\r\n\r\n.second-container {\r\n  background-color: white;\r\n\r\n}\r\n\r\ninput#Tittle {\r\n  width: 100%;\r\n}\r\n\r\n.forms-heading {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 700;\r\n  font-size: 18px;\r\n}\r\n\r\n.forms-star {\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\nlabel {\r\n  font-family: 'Open Sans', sans-serif;\r\n  color: #707070;\r\n}\r\n\r\n.dropdown-item {\r\n  font-family: 'Open Sans', sans-serif;\r\n  color: #707070;\r\n}\r\n\r\n.form-or-p {\r\n  border-radius: 50%;\r\n  width: 36px;\r\n  height: 26px;\r\n  /* padding: 8px; */\r\n  background: #fff;\r\n  border: 1px solid black;\r\n  color: #666;\r\n  text-align: center;\r\n  font: 19px 'Open Sans', sans-serif;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center\r\n}\r\n\r\n.forms-or {\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.form-or-p:before,\r\n.form-or-p:after {\r\n  background-color: #333;\r\n  content: \"\";\r\n  display: inline-block;\r\n  height: 1px;\r\n  position: relative;\r\n  vertical-align: middle;\r\n  width: 100%;\r\n}\r\n\r\n.form-or-p:before {\r\n  right: .5em;\r\n  margin-left: -100%;\r\n}\r\n\r\n.form-or-p:after {\r\n  left: .5em;\r\n  margin-right: -100%;\r\n}\r\n\r\nbtnDefault,\r\n.btnUpload {\r\n  background-color: lightgrey;\r\n  border: 1px solid #CCCCCC;\r\n  color: #333333;\r\n  cursor: pointer;\r\n  font-weight: 400;\r\n  display: inline-block;\r\n  padding: 6px 12px;\r\n  text-align: center;\r\n  text-decoration: none;\r\n  vertical-align: middle;\r\n}\r\n\r\n.btnDefault:focus,\r\n.btnDefault:hover,\r\n.btnUpload:focus,\r\n.btnUpload:hover {\r\n  background-color: grey;\r\n}\r\n\r\n.btnM {\r\n  border-radius: 4px;\r\n  font-size: 14px;\r\n  padding: 6px 12px;\r\n}\r\n\r\n.customUpload {\r\n  overflow: hidden;\r\n  position: relative;\r\n  display: block;\r\n}\r\n\r\n.customUpload input.upload {\r\n  cursor: pointer;\r\n  margin: 0;\r\n  opacity: 0;\r\n  filter: alpha(opacity=0);\r\n  padding: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n}\r\n\r\n.forms-heading-optional {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 700;\r\n  font-size: 16px;\r\n\r\n  padding-left: 16px;\r\n}\r\n\r\n.optional-button-group {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  align-content: center;\r\n  margin-top: 40px;\r\n}\r\n\r\n.row-check {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\n.checkbox-check {\r\n  margin: 0;\r\n  padding: 0;\r\n  width: 100%;\r\n  height: auto;\r\n}\r\n\r\n.radio-align {\r\n\r\n  flex-direction: column;\r\n  margin: 0;\r\n  display: flex;\r\n\r\n}\r\n\r\n.radio-main-container {\r\n  justify-content: space-between;\r\n  /* margin: 0; */\r\n  /* padding: 0; */\r\n\r\n  align-content: center;\r\n}\r\n\r\n.submit-button {\r\n  display: flex;\r\n  justify-content: center;\r\n  margin: 0;\r\n  padding: 0;\r\n  margin-top: 16px;\r\n}\r\n\r\n.step.finish {\r\n  background-color: #244D93\r\n}\r\n\r\na.nav-link.disabled {\r\n\r\n  color: white;\r\n}\r\n\r\n.button-next {\r\n  display: flex;\r\n  justify-content: center;\r\n}\r\n\r\n.button-next-tab2 {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n  margin: 20px;\r\n}\r\n\r\n.loading-container {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: fixed;\r\n  top: 0px;\r\n  left: 0px;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  z-index: 9;\r\n  background: black;\r\n  opacity: 0.5;\r\n}\r\n\r\n.example-form {\r\n  min-width: 150px;\r\n  max-width: 500px;\r\n  width: 100%;\r\n}\r\n\r\n.example-full-width {\r\n  width: 100%;\r\n  border: none;\r\n}\r\n\r\n.mat-mail-input {\r\n  border: none;\r\n}\r\n\r\n.tabs-align-padding {\r\n \r\n  padding: 17px;\r\n}\r\n\r\n.mat-tab-label {\r\n  height: 48px;\r\n  padding: 0 14px;\r\n  cursor: pointer;\r\n  box-sizing: border-box;\r\n  opacity: .6;\r\n  min-width: 160px;\r\n  text-align: center;\r\n  display: inline-flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  white-space: nowrap;\r\n  position: relative;\r\n  font-size: 13px;\r\n}\r\n\r\n.mat-tab-header-pagination.mat-tab-header-pagination-before.mat-elevation-z4.mat-ripple.mat-tab-header-pagination-disabled {\r\n  display: none;\r\n}\r\n\r\n.example-section {\r\n  display: flex;\r\n  flex-direction: column;\r\n  \r\n}\r\n\r\n.example-margin {\r\n  margin: 0 10px;\r\n}\r\n\r\n.tabs-align-padding {\r\n \r\n  padding: 17px;\r\n}\r\n\r\n.mat-tab-group.mat-tab-header-pagination.mat-tab-header-pagination-before.mat-elevation-z4.mat-ripple.mat-tab-header-pagination-disabled {\r\n  display: none;\r\n}\r\n\r\n.tab-pane {\r\n  background: white;\r\n \r\n}\r\n\r\n.social-login {\r\n  background-color: white;\r\n}\r\n\r\n.mat-tab-label {\r\n  height: 48px;\r\n  padding: 0 20px !important;\r\n  cursor: pointer;\r\n  box-sizing: border-box;\r\n  opacity: .6;\r\n  min-width: 160px;\r\n  text-align: center;\r\n  display: inline-flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  white-space: nowrap;\r\n  position: relative;\r\n}\r\n\r\n.Line-form\r\n{\r\n  margin-top: 2.5rem;\r\n  margin-bottom: 2.5rem;\r\n}\r\n\r\n.mat-option {\r\n  margin: 1rem 0;\r\n  overflow: visible;\r\n  line-height: initial;\r\n  word-wrap: break-word;\r\n  white-space: pre-wrap;\r\n}\r\n\r\n.mat-option i {\r\n  display: block;\r\n  font-size: 1.5rem;\r\n  opacity: 0.6;\r\n  margin-left: 0.5rem;\r\n\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VsbGVyZm9ybS9zZWxsZXJmb3JtLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUUsV0FBVztFQUNYLHVCQUF1Qjs7QUFFekI7O0FBRUE7O0VBRUUsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsbUJBQW1CO0VBQ25CLGdCQUFnQjs7QUFFbEI7O0FBRUE7RUFDRSxZQUFZO0FBQ2Q7O0FBRUE7O0VBRUUsY0FBYztFQUNkLHNCQUFzQjtFQUN0QixrQ0FBa0M7RUFDbEMsb0NBQW9DO0VBQ3BDLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGtCQUFrQjs7QUFFcEI7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGlDQUFpQztFQUNqQyxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsbUJBQW1CO0VBQ25CLFNBQVM7RUFDVDtBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7RUFDWixvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsbUJBQW1COztBQUVyQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixjQUFjO0VBQ2Qsb0NBQW9DOztBQUV0Qzs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7QUFFQTs7RUFFRSxtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLFdBQVc7RUFDWCxzQkFBc0I7RUFDdEIsb0NBQW9DO0VBQ3BDLGdCQUFnQjtFQUNoQixtQ0FBbUM7RUFDbkMsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixjQUFjO0FBQ2hCOztBQUVBOztHQUVHOztBQUNIO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsV0FBVztFQUNYLDRCQUE0QjtFQUM1Qix5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSw2QkFBNkI7RUFDN0IsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSxVQUFVO0VBQ1YseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLHVCQUF1Qjs7QUFFekI7O0FBRUE7RUFDRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0VBQ2hCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsY0FBYztBQUNoQjs7QUFFQTtFQUNFLG9DQUFvQztFQUNwQyxjQUFjO0FBQ2hCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQix1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixrQ0FBa0M7RUFDbEMsYUFBYTtFQUNiLHVCQUF1QjtFQUN2QjtBQUNGOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHVCQUF1QjtBQUN6Qjs7QUFFQTs7RUFFRSxzQkFBc0I7RUFDdEIsV0FBVztFQUNYLHFCQUFxQjtFQUNyQixXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLHNCQUFzQjtFQUN0QixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLG1CQUFtQjtBQUNyQjs7QUFFQTs7RUFFRSwyQkFBMkI7RUFDM0IseUJBQXlCO0VBQ3pCLGNBQWM7RUFDZCxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixzQkFBc0I7QUFDeEI7O0FBRUE7Ozs7RUFJRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLHdCQUF3QjtFQUN4QixVQUFVO0VBQ1Ysa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixNQUFNO0FBQ1I7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0VBQ2hCLGVBQWU7O0VBRWYsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixtQkFBbUI7RUFDbkIscUJBQXFCO0VBQ3JCLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7O0VBRUUsc0JBQXNCO0VBQ3RCLFNBQVM7RUFDVCxhQUFhOztBQUVmOztBQUVBO0VBQ0UsOEJBQThCO0VBQzlCLGVBQWU7RUFDZixnQkFBZ0I7O0VBRWhCLHFCQUFxQjtBQUN2Qjs7QUFJQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsU0FBUztFQUNULFVBQVU7RUFDVixnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRTtBQUNGOztBQUVBOztFQUVFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLG1CQUFtQjtFQUNuQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtFQUNaLGVBQWU7RUFDZixRQUFRO0VBQ1IsU0FBUztFQUVULGFBQWE7RUFFYix1QkFBdUI7RUFFdkIsbUJBQW1CO0VBQ25CLFVBQVU7RUFDVixpQkFBaUI7RUFDakIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUNBO0VBQ0UsWUFBWTtBQUNkOztBQUNBOztFQUVFLGFBQWE7QUFDZjs7QUFDQTtFQUNFLFlBQVk7RUFDWixlQUFlO0VBQ2YsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLGVBQWU7QUFDakI7O0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7O0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCOztBQUV4Qjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBQ0E7O0VBRUUsYUFBYTtBQUNmOztBQUNBO0VBQ0UsYUFBYTtBQUNmOztBQUNBO0VBQ0UsaUJBQWlCOztBQUVuQjs7QUFDQTtFQUNFLHVCQUF1QjtBQUN6Qjs7QUFDQTtFQUNFLFlBQVk7RUFDWiwwQkFBMEI7RUFDMUIsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixXQUFXO0VBQ1gsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixvQkFBb0I7RUFDcEIsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtFQUNuQixtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOztBQUNBOztFQUVFLGtCQUFrQjtFQUNsQixxQkFBcUI7QUFDdkI7O0FBQ0E7RUFDRSxjQUFjO0VBQ2QsaUJBQWlCO0VBQ2pCLG9CQUFvQjtFQUNwQixxQkFBcUI7RUFDckIscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsY0FBYztFQUNkLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osbUJBQW1COztBQUVyQiIsImZpbGUiOiJzcmMvYXBwL3NlbGxlcmZvcm0vc2VsbGVyZm9ybS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvcm0tY29udGFpbmVycyB7XHJcblxyXG4gIHdpZHRoOiBhdXRvO1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG5cclxufVxyXG5cclxuLmZvcm1zLWNvbnRhaW5lciB7XHJcblxyXG4gIHBhZGRpbmctYm90dG9tOiA0JTtcclxuICBwYWRkaW5nLXRvcDogMSU7XHJcbiAgcGFkZGluZy1sZWZ0OiA4cHg7XHJcbiAgcGFkZGluZy1yaWdodDogOHB4O1xyXG59XHJcblxyXG4udGFiLWNvbnRlbnQge1xyXG4gIHBhZGRpbmc6IDIwcHg7XHJcbn1cclxuXHJcbi5yb3cge1xyXG4gIG92ZXJmbG93LXg6IGhpZGRlbjtcclxufVxyXG5cclxubmF2IHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gIHBhZGRpbmctbGVmdDogMjBweDtcclxuICBwYWRkaW5nLXJpZ2h0OiAyMHB4O1xyXG4gIGJvcmRlci1yYWRpdXM6IDExcHg7XHJcbiAgbWFyZ2luLXRvcDogNjJweDtcclxuXHJcbn1cclxuXHJcbi5uYXYtbGluayB7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG59XHJcblxyXG4ubmF2LXRhYnMgLm5hdi1pdGVtLnNob3cgLm5hdi1saW5rLFxyXG4ubmF2LXRhYnMgLm5hdi1saW5rLmFjdGl2ZSB7XHJcbiAgY29sb3I6ICMyNDREOTM7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcclxuICBib3JkZXItY29sb3I6ICNkZWUyZTYgI2RlZTJlNiAjZmZmO1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICBmb250LXdlaWdodDogNzAwICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbi5vdGhlci1vcHRpb24ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLm5hdi1saW5rIHtcclxuICBkaXNwbGF5OiBibG9jaztcclxuICBwYWRkaW5nOiAwcmVtIDFyZW07XHJcblxyXG59XHJcblxyXG5kaXYjbmF2LXRhYkNvbnRlbnQge1xyXG4gIHdpZHRoOiBhdXRvO1xyXG59XHJcblxyXG4uc2VsbGVyLWZvcm0tdXBwZXIge1xyXG4gIHBhZGRpbmctdG9wOiA2cHg7XHJcbn1cclxuXHJcbi5zZWxsZXItZm9ybS11cHBlciBwIHtcclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbiAgZm9udC1zaXplOiAxNHB4O1xyXG59XHJcblxyXG4uc2VsbGVyLWZvcm0tdXBwZXIgc3BhbiB7XHJcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xyXG4gIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbn1cclxuXHJcbi50b3AtaHIge1xyXG4gIG1hcmdpbi10b3A6IC0xcmVtO1xyXG4gIG1hcmdpbi1ib3R0b206IDByZW07XHJcbiAgYm9yZGVyOiAwO1xyXG4gIGJvcmRlci10b3A6IDJweCBzb2xpZCBncmV5XHJcbn1cclxuXHJcbi5idG4tZmFjZWJvb2sge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHdpZHRoOiAzMCU7XHJcbiAgaGVpZ2h0OiAzNXB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW46IDBweDtcclxuICBwYWRkaW5nOiAwcHg7XHJcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG4uYnRuLWdvb2dsZSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI0RENEIzMztcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgd2lkdGg6IDMwJTtcclxuICBoZWlnaHQ6IDM1cHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbjogMHB4O1xyXG4gIHBhZGRpbmc6IDBweDtcclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi5zb2NpYWwtbG9naW4gaDQge1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICBmb250LXdlaWdodDogNzAwO1xyXG59XHJcblxyXG4uc29jaWFsLWJ1dHRvbiB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG5cclxufVxyXG5cclxuLmNvbG9yLXNpZ251cCB7XHJcbiAgY29sb3I6ICMyNDREOTM7XHJcbn1cclxuXHJcbi5idG4tc29jaWFsLWxvZ2luIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBtYXJnaW4tdG9wOiAzJTtcclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcblxyXG59XHJcblxyXG5idXR0b24uYnRuLmRyb3Bkb3duLXRvZ2dsZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5kcm9wZG93bi1tZW51LnNob3cge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcblxyXG4uZHJvcGRvd24tdG9nZ2xlOjphZnRlciB7XHJcblxyXG4gIG1hcmdpbi1sZWZ0OiAuMjU1ZW07XHJcbiAgdmVydGljYWwtYWxpZ246IDIuMjU1ZW07XHJcbiAgY29udGVudDogXCJcIjtcclxuICBib3JkZXItdG9wOiAuNGVtIHNvbGlkO1xyXG4gIGJvcmRlci1yaWdodDogLjRlbSBzb2xpZCB0cmFuc3BhcmVudDtcclxuICBib3JkZXItYm90dG9tOiAwO1xyXG4gIGJvcmRlci1sZWZ0OiAuNGVtIHNvbGlkIHRyYW5zcGFyZW50O1xyXG4gIGZsb2F0OiByaWdodDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgbWFyZ2luLXRvcDogMyU7XHJcbn1cclxuXHJcbi8qIHNwYW4udGV4dC1kcm9wZG93biB7XHJcbiAgICBmbG9hdDogbGVmdDtcclxufSAqL1xyXG4uZHJvcGRvd24taXRlbSB7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG59XHJcblxyXG5idXR0b24uYnRuLmRyb3Bkb3duLXRvZ2dsZSB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgLyogYm9yZGVyOiAxcHggc29saWQgZ3JleTsgKi9cclxuICBib3JkZXI6IDFweCBzb2xpZCAjQ0VENERBO1xyXG59XHJcblxyXG4uZW5kaW5kLWJ1dHRvbiB7XHJcbiAgLyogYmFja2dyb3VuZC1jb2xvcjogdW5zZXQ7ICovXHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcclxuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcbi5idG4uYnRuLWJhY2sge1xyXG4gIHdpZHRoOiAzMyU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcclxuICAvKiBoZWlnaHQ6IDM1cHg7ICovXHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLmJ0bi1uZXh0IHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi5vci10ZXh0IHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLnNlY29uZC1jb250YWluZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG5cclxufVxyXG5cclxuaW5wdXQjVGl0dGxlIHtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmZvcm1zLWhlYWRpbmcge1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICBmb250LXdlaWdodDogNzAwO1xyXG4gIGZvbnQtc2l6ZTogMThweDtcclxufVxyXG5cclxuLmZvcm1zLXN0YXIge1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxufVxyXG5cclxubGFiZWwge1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICBjb2xvcjogIzcwNzA3MDtcclxufVxyXG5cclxuLmRyb3Bkb3duLWl0ZW0ge1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICBjb2xvcjogIzcwNzA3MDtcclxufVxyXG5cclxuLmZvcm0tb3ItcCB7XHJcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xyXG4gIHdpZHRoOiAzNnB4O1xyXG4gIGhlaWdodDogMjZweDtcclxuICAvKiBwYWRkaW5nOiA4cHg7ICovXHJcbiAgYmFja2dyb3VuZDogI2ZmZjtcclxuICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcclxuICBjb2xvcjogIzY2NjtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZm9udDogMTlweCAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXJcclxufVxyXG5cclxuLmZvcm1zLW9yIHtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcblxyXG4uZm9ybS1vci1wOmJlZm9yZSxcclxuLmZvcm0tb3ItcDphZnRlciB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogIzMzMztcclxuICBjb250ZW50OiBcIlwiO1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBoZWlnaHQ6IDFweDtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcclxuICB3aWR0aDogMTAwJTtcclxufVxyXG5cclxuLmZvcm0tb3ItcDpiZWZvcmUge1xyXG4gIHJpZ2h0OiAuNWVtO1xyXG4gIG1hcmdpbi1sZWZ0OiAtMTAwJTtcclxufVxyXG5cclxuLmZvcm0tb3ItcDphZnRlciB7XHJcbiAgbGVmdDogLjVlbTtcclxuICBtYXJnaW4tcmlnaHQ6IC0xMDAlO1xyXG59XHJcblxyXG5idG5EZWZhdWx0LFxyXG4uYnRuVXBsb2FkIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBsaWdodGdyZXk7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgI0NDQ0NDQztcclxuICBjb2xvcjogIzMzMzMzMztcclxuICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbiAgcGFkZGluZzogNnB4IDEycHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xyXG59XHJcblxyXG4uYnRuRGVmYXVsdDpmb2N1cyxcclxuLmJ0bkRlZmF1bHQ6aG92ZXIsXHJcbi5idG5VcGxvYWQ6Zm9jdXMsXHJcbi5idG5VcGxvYWQ6aG92ZXIge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGdyZXk7XHJcbn1cclxuXHJcbi5idG5NIHtcclxuICBib3JkZXItcmFkaXVzOiA0cHg7XHJcbiAgZm9udC1zaXplOiAxNHB4O1xyXG4gIHBhZGRpbmc6IDZweCAxMnB4O1xyXG59XHJcblxyXG4uY3VzdG9tVXBsb2FkIHtcclxuICBvdmVyZmxvdzogaGlkZGVuO1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBkaXNwbGF5OiBibG9jaztcclxufVxyXG5cclxuLmN1c3RvbVVwbG9hZCBpbnB1dC51cGxvYWQge1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICBtYXJnaW46IDA7XHJcbiAgb3BhY2l0eTogMDtcclxuICBmaWx0ZXI6IGFscGhhKG9wYWNpdHk9MCk7XHJcbiAgcGFkZGluZzogMDtcclxuICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgdG9wOiAwO1xyXG59XHJcblxyXG4uZm9ybXMtaGVhZGluZy1vcHRpb25hbCB7XHJcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG4gIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbiAgZm9udC1zaXplOiAxNnB4O1xyXG5cclxuICBwYWRkaW5nLWxlZnQ6IDE2cHg7XHJcbn1cclxuXHJcbi5vcHRpb25hbC1idXR0b24tZ3JvdXAge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XHJcbiAgbWFyZ2luLXRvcDogNDBweDtcclxufVxyXG5cclxuLnJvdy1jaGVjayB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG59XHJcblxyXG4uY2hlY2tib3gtY2hlY2sge1xyXG4gIG1hcmdpbjogMDtcclxuICBwYWRkaW5nOiAwO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogYXV0bztcclxufVxyXG5cclxuLnJhZGlvLWFsaWduIHtcclxuXHJcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICBtYXJnaW46IDA7XHJcbiAgZGlzcGxheTogZmxleDtcclxuXHJcbn1cclxuXHJcbi5yYWRpby1tYWluLWNvbnRhaW5lciB7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gIC8qIG1hcmdpbjogMDsgKi9cclxuICAvKiBwYWRkaW5nOiAwOyAqL1xyXG5cclxuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuXHJcblxyXG5cclxuLnN1Ym1pdC1idXR0b24ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgbWFyZ2luOiAwO1xyXG4gIHBhZGRpbmc6IDA7XHJcbiAgbWFyZ2luLXRvcDogMTZweDtcclxufVxyXG5cclxuLnN0ZXAuZmluaXNoIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzXHJcbn1cclxuXHJcbmEubmF2LWxpbmsuZGlzYWJsZWQge1xyXG5cclxuICBjb2xvcjogd2hpdGU7XHJcbn1cclxuXHJcbi5idXR0b24tbmV4dCB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufVxyXG5cclxuLmJ1dHRvbi1uZXh0LXRhYjIge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICBtYXJnaW46IDIwcHg7XHJcbn1cclxuXHJcbi5sb2FkaW5nLWNvbnRhaW5lciB7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiAxMDAlO1xyXG4gIHBvc2l0aW9uOiBmaXhlZDtcclxuICB0b3A6IDBweDtcclxuICBsZWZ0OiAwcHg7XHJcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gIHotaW5kZXg6IDk7XHJcbiAgYmFja2dyb3VuZDogYmxhY2s7XHJcbiAgb3BhY2l0eTogMC41O1xyXG59XHJcblxyXG4uZXhhbXBsZS1mb3JtIHtcclxuICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gIG1heC13aWR0aDogNTAwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJvcmRlcjogbm9uZTtcclxufVxyXG4ubWF0LW1haWwtaW5wdXQge1xyXG4gIGJvcmRlcjogbm9uZTtcclxufVxyXG4udGFicy1hbGlnbi1wYWRkaW5nIHtcclxuIFxyXG4gIHBhZGRpbmc6IDE3cHg7XHJcbn1cclxuLm1hdC10YWItbGFiZWwge1xyXG4gIGhlaWdodDogNDhweDtcclxuICBwYWRkaW5nOiAwIDE0cHg7XHJcbiAgY3Vyc29yOiBwb2ludGVyO1xyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgb3BhY2l0eTogLjY7XHJcbiAgbWluLXdpZHRoOiAxNjBweDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZGlzcGxheTogaW5saW5lLWZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICB3aGl0ZS1zcGFjZTogbm93cmFwO1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICBmb250LXNpemU6IDEzcHg7XHJcbn1cclxuLm1hdC10YWItaGVhZGVyLXBhZ2luYXRpb24ubWF0LXRhYi1oZWFkZXItcGFnaW5hdGlvbi1iZWZvcmUubWF0LWVsZXZhdGlvbi16NC5tYXQtcmlwcGxlLm1hdC10YWItaGVhZGVyLXBhZ2luYXRpb24tZGlzYWJsZWQge1xyXG4gIGRpc3BsYXk6IG5vbmU7XHJcbn1cclxuLmV4YW1wbGUtc2VjdGlvbiB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gIFxyXG59XHJcblxyXG4uZXhhbXBsZS1tYXJnaW4ge1xyXG4gIG1hcmdpbjogMCAxMHB4O1xyXG59XHJcbi50YWJzLWFsaWduLXBhZGRpbmcge1xyXG4gXHJcbiAgcGFkZGluZzogMTdweDtcclxufVxyXG4ubWF0LXRhYi1ncm91cC5tYXQtdGFiLWhlYWRlci1wYWdpbmF0aW9uLm1hdC10YWItaGVhZGVyLXBhZ2luYXRpb24tYmVmb3JlLm1hdC1lbGV2YXRpb24tejQubWF0LXJpcHBsZS5tYXQtdGFiLWhlYWRlci1wYWdpbmF0aW9uLWRpc2FibGVkIHtcclxuICBkaXNwbGF5OiBub25lO1xyXG59XHJcbi50YWItcGFuZSB7XHJcbiAgYmFja2dyb3VuZDogd2hpdGU7XHJcbiBcclxufVxyXG4uc29jaWFsLWxvZ2luIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcclxufVxyXG4ubWF0LXRhYi1sYWJlbCB7XHJcbiAgaGVpZ2h0OiA0OHB4O1xyXG4gIHBhZGRpbmc6IDAgMjBweCAhaW1wb3J0YW50O1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gIG9wYWNpdHk6IC42O1xyXG4gIG1pbi13aWR0aDogMTYwcHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIGRpc3BsYXk6IGlubGluZS1mbGV4O1xyXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcclxuICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbn1cclxuLkxpbmUtZm9ybVxyXG57XHJcbiAgbWFyZ2luLXRvcDogMi41cmVtO1xyXG4gIG1hcmdpbi1ib3R0b206IDIuNXJlbTtcclxufVxyXG4ubWF0LW9wdGlvbiB7XHJcbiAgbWFyZ2luOiAxcmVtIDA7XHJcbiAgb3ZlcmZsb3c6IHZpc2libGU7XHJcbiAgbGluZS1oZWlnaHQ6IGluaXRpYWw7XHJcbiAgd29yZC13cmFwOiBicmVhay13b3JkO1xyXG4gIHdoaXRlLXNwYWNlOiBwcmUtd3JhcDtcclxufVxyXG5cclxuLm1hdC1vcHRpb24gaSB7XHJcbiAgZGlzcGxheTogYmxvY2s7XHJcbiAgZm9udC1zaXplOiAxLjVyZW07XHJcbiAgb3BhY2l0eTogMC42O1xyXG4gIG1hcmdpbi1sZWZ0OiAwLjVyZW07XHJcblxyXG59Il19 */");
 
 /***/ }),
 
@@ -4353,14 +3214,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
 /* harmony import */ var _seller__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./seller */ "./src/app/sellerform/seller.ts");
-/* harmony import */ var _sellerform_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./sellerform.service */ "./src/app/sellerform/sellerform.service.ts");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
-/* harmony import */ var _state_service_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../state-service.service */ "./src/app/state-service.service.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var _seller_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./seller.service */ "./src/app/sellerform/seller.service.ts");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _state_service_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../state-service.service */ "./src/app/state-service.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
 
 
 
@@ -4376,1188 +3239,55 @@ __webpack_require__.r(__webpack_exports__);
 
 let SellerformComponent = class SellerformComponent {
     constructor(authService, afs, // Inject Firestore service
-    afAuth, firestore, SellerformService, dialog, snackBar, route, router, stateService, sellerService) {
+    afAuth, router, stateService, sellerService) {
         this.authService = authService;
         this.afs = afs;
         this.afAuth = afAuth;
-        this.firestore = firestore;
-        this.SellerformService = SellerformService;
-        this.dialog = dialog;
-        this.snackBar = snackBar;
-        this.route = route;
         this.router = router;
         this.stateService = stateService;
         this.sellerService = sellerService;
+        this.addressianAutoComplete$ = null;
+        this.autoCompleteControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]();
         this.isLoggedIn = true;
         this.Seller = new _seller__WEBPACK_IMPORTED_MODULE_4__["Seller"]();
         this.submitted = false;
         this.isLoading = false;
-        this.version = _angular_material__WEBPACK_IMPORTED_MODULE_8__["VERSION"];
-        this.postcodeFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("");
-        this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
-        this.options = [
-            {
-                postcode: "AB10 1XG"
-            },
-            {
-                postcode: "AB10 6RN"
-            },
-            {
-                postcode: "AB10 7JB"
-            },
-            {
-                postcode: "AB11 5QN"
-            },
-            {
-                postcode: "AB11 6UL"
-            },
-            {
-                postcode: "AB11 8RQ"
-            },
-            {
-                postcode: "AB12 3FJ"
-            },
-            {
-                postcode: "AB12 4NA"
-            },
-            {
-                postcode: "AB12 5GL"
-            },
-            {
-                postcode: "AB12 9SP"
-            },
-            {
-                postcode: "AB14 0TQ"
-            },
-            {
-                postcode: "AB15 5HB"
-            },
-            {
-                postcode: "AB15 6NA"
-            },
-            {
-                postcode: "AB15 8UF"
-            },
-            {
-                postcode: "AB15 9SE"
-            },
-            {
-                postcode: "AB16 5ST"
-            },
-            {
-                postcode: "AB16 6SZ"
-            },
-            {
-                postcode: "AB16 7NX"
-            },
-            {
-                postcode: "AB21 0AL"
-            },
-            {
-                postcode: "AB21 0TF"
-            },
-            {
-                postcode: "AB21 7LD"
-            },
-            {
-                postcode: "AB21 7LE"
-            },
-            {
-                postcode: "AB21 7LF"
-            },
-            {
-                postcode: "AB21 7LG"
-            },
-            {
-                postcode: "AB21 7LH"
-            },
-            {
-                postcode: "AB21 7LJ"
-            },
-            {
-                postcode: "AB21 7LL"
-            },
-            {
-                postcode: "AB21 7LN"
-            },
-            {
-                postcode: "AB21 7LP"
-            },
-            {
-                postcode: "AB21 7LQ"
-            },
-            {
-                postcode: "AB21 7LR"
-            },
-            {
-                postcode: "AB21 7LS"
-            },
-            {
-                postcode: "AB21 7LT"
-            },
-            {
-                postcode: "AB21 7LU"
-            },
-            {
-                postcode: "AB21 7LW"
-            },
-            {
-                postcode: "AB21 7LX"
-            },
-            {
-                postcode: "AB21 7LY"
-            },
-            {
-                postcode: "AB21 7LZ"
-            },
-            {
-                postcode: "AB21 7NA"
-            },
-            {
-                postcode: "AB21 7NB"
-            },
-            {
-                postcode: "AB21 7ND"
-            },
-            {
-                postcode: "AB21 7NE"
-            },
-            {
-                postcode: "AB21 7NF"
-            },
-            {
-                postcode: "AB21 7NG"
-            },
-            {
-                postcode: "AB21 7NH"
-            },
-            {
-                postcode: "AB21 7NJ"
-            },
-            {
-                postcode: "AB21 7NP"
-            },
-            {
-                postcode: "AB21 7NQ"
-            },
-            {
-                postcode: "AB21 7NR"
-            },
-            {
-                postcode: "AB21 7NS"
-            },
-            {
-                postcode: "AB21 7NX"
-            },
-            {
-                postcode: "AB21 7NY"
-            },
-            {
-                postcode: "AB21 7PB"
-            },
-            {
-                postcode: "AB21 7PE"
-            },
-            {
-                postcode: "AB21 7PH"
-            },
-            {
-                postcode: "AB21 7PP"
-            },
-            {
-                postcode: "AB21 7PQ"
-            },
-            {
-                postcode: "AB21 7PR"
-            },
-            {
-                postcode: "AB21 7PS"
-            },
-            {
-                postcode: "AB21 7PU"
-            },
-            {
-                postcode: "AB21 7PW"
-            },
-            {
-                postcode: "AB21 7PY"
-            },
-            {
-                postcode: "AB21 7PZ"
-            },
-            {
-                postcode: "AB21 7QQ"
-            },
-            {
-                postcode: "AB21 7UU"
-            },
-            {
-                postcode: "AB21 7XA"
-            },
-            {
-                postcode: "AB21 7XB"
-            },
-            {
-                postcode: "AB21 7YS"
-            },
-            {
-                postcode: "AB21 9AB"
-            },
-            {
-                postcode: "AB21 9AD"
-            },
-            {
-                postcode: "AB21 9AE"
-            },
-            {
-                postcode: "AB21 9AG"
-            },
-            {
-                postcode: "AB21 9AH"
-            },
-            {
-                postcode: "AB21 9AJ"
-            },
-            {
-                postcode: "AB21 9AL"
-            },
-            {
-                postcode: "AB21 9AN"
-            },
-            {
-                postcode: "AB21 9AP"
-            },
-            {
-                postcode: "AB21 9AR"
-            },
-            {
-                postcode: "AB21 9AS"
-            },
-            {
-                postcode: "AB21 9AT"
-            },
-            {
-                postcode: "AB21 9AU"
-            },
-            {
-                postcode: "AB21 9AX"
-            },
-            {
-                postcode: "AB21 9AY"
-            },
-            {
-                postcode: "AB21 9BB"
-            },
-            {
-                postcode: "AB21 9BD"
-            },
-            {
-                postcode: "AB21 9BE"
-            },
-            {
-                postcode: "AB21 9BG"
-            },
-            {
-                postcode: "AB21 9BH"
-            },
-            {
-                postcode: "AB21 9BJ"
-            },
-            {
-                postcode: "AB21 9BL"
-            },
-            {
-                postcode: "AB21 9BN"
-            },
-            {
-                postcode: "AB21 9BP"
-            },
-            {
-                postcode: "AB21 9BQ"
-            },
-            {
-                postcode: "AB21 9BR"
-            },
-            {
-                postcode: "AB21 9BS"
-            },
-            {
-                postcode: "AB21 9BT"
-            },
-            {
-                postcode: "AB21 9BU"
-            },
-            {
-                postcode: "AB21 9BX"
-            },
-            {
-                postcode: "AB21 9BY"
-            },
-            {
-                postcode: "AB21 9DA"
-            },
-            {
-                postcode: "AB21 9DB"
-            },
-            {
-                postcode: "AB21 9DD"
-            },
-            {
-                postcode: "AB21 9DE"
-            },
-            {
-                postcode: "AB21 9DF"
-            },
-            {
-                postcode: "AB21 9DG"
-            },
-            {
-                postcode: "AB21 9DH"
-            },
-            {
-                postcode: "AB21 9DJ"
-            },
-            {
-                postcode: "AB21 9DL"
-            },
-            {
-                postcode: "AB21 9DN"
-            },
-            {
-                postcode: "AB21 9DP"
-            },
-            {
-                postcode: "AB21 9DQ"
-            },
-            {
-                postcode: "AB21 9DR"
-            },
-            {
-                postcode: "AB21 9DT"
-            },
-            {
-                postcode: "AB21 9DU"
-            },
-            {
-                postcode: "AB21 9DX"
-            },
-            {
-                postcode: "AB21 9DY"
-            },
-            {
-                postcode: "AB21 9EA"
-            },
-            {
-                postcode: "AB21 9EB"
-            },
-            {
-                postcode: "AB21 9ED"
-            },
-            {
-                postcode: "AB21 9EE"
-            },
-            {
-                postcode: "AB21 9EF"
-            },
-            {
-                postcode: "AB21 9EG"
-            },
-            {
-                postcode: "AB21 9EH"
-            },
-            {
-                postcode: "AB21 9EJ"
-            },
-            {
-                postcode: "AB21 9EL"
-            },
-            {
-                postcode: "AB21 9EN"
-            },
-            {
-                postcode: "AB21 9EP"
-            },
-            {
-                postcode: "AB21 9EQ"
-            },
-            {
-                postcode: "AB21 9ER"
-            },
-            {
-                postcode: "AB21 9ET"
-            },
-            {
-                postcode: "AB21 9EU"
-            },
-            {
-                postcode: "AB21 9EW"
-            },
-            {
-                postcode: "AB21 9EX"
-            },
-            {
-                postcode: "AB21 9EY"
-            },
-            {
-                postcode: "AB21 9HA"
-            },
-            {
-                postcode: "AB21 9HB"
-            },
-            {
-                postcode: "AB21 9HE"
-            },
-            {
-                postcode: "AB21 9HH"
-            },
-            {
-                postcode: "AB21 9HJ"
-            },
-            {
-                postcode: "AB21 9HN"
-            },
-            {
-                postcode: "AB21 9HQ"
-            },
-            {
-                postcode: "AB21 9HR"
-            },
-            {
-                postcode: "AB21 9HS"
-            },
-            {
-                postcode: "AB21 9HT"
-            },
-            {
-                postcode: "AB21 9HU"
-            },
-            {
-                postcode: "AB21 9HW"
-            },
-            {
-                postcode: "AB21 9HX"
-            },
-            {
-                postcode: "AB21 9HY"
-            },
-            {
-                postcode: "AB21 9HZ"
-            },
-            {
-                postcode: "AB21 9JB"
-            },
-            {
-                postcode: "AB21 9JD"
-            },
-            {
-                postcode: "AB21 9JE"
-            },
-            {
-                postcode: "AB21 9JH"
-            },
-            {
-                postcode: "AB21 9JJ"
-            },
-            {
-                postcode: "AB21 9JL"
-            },
-            {
-                postcode: "AB21 9JP"
-            },
-            {
-                postcode: "AB21 9JQ"
-            },
-            {
-                postcode: "AB21 9JR"
-            },
-            {
-                postcode: "AB21 9JS"
-            },
-            {
-                postcode: "AB21 9JT"
-            },
-            {
-                postcode: "AB21 9JU"
-            },
-            {
-                postcode: "AB21 9JX"
-            },
-            {
-                postcode: "AB21 9JY"
-            },
-            {
-                postcode: "AB21 9LA"
-            },
-            {
-                postcode: "AB21 9LB"
-            },
-            {
-                postcode: "AB21 9LD"
-            },
-            {
-                postcode: "AB21 9LE"
-            },
-            {
-                postcode: "AB21 9LF"
-            },
-            {
-                postcode: "AB21 9LG"
-            },
-            {
-                postcode: "AB21 9LJ"
-            },
-            {
-                postcode: "AB21 9LL"
-            },
-            {
-                postcode: "AB21 9LN"
-            },
-            {
-                postcode: "AB21 9LP"
-            },
-            {
-                postcode: "AB21 9LQ"
-            },
-            {
-                postcode: "AB21 9LR"
-            },
-            {
-                postcode: "AB21 9LS"
-            },
-            {
-                postcode: "AB21 9LT"
-            },
-            {
-                postcode: "AB21 9LU"
-            },
-            {
-                postcode: "AB21 9LW"
-            },
-            {
-                postcode: "AB21 9LX"
-            },
-            {
-                postcode: "AB21 9LZ"
-            },
-            {
-                postcode: "AB21 9NA"
-            },
-            {
-                postcode: "AB21 9NB"
-            },
-            {
-                postcode: "AB21 9ND"
-            },
-            {
-                postcode: "AB21 9NL"
-            },
-            {
-                postcode: "AB21 9NN"
-            },
-            {
-                postcode: "AB21 9NP"
-            },
-            {
-                postcode: "AB21 9NS"
-            },
-            {
-                postcode: "AB21 9NT"
-            },
-            {
-                postcode: "AB21 9NU"
-            },
-            {
-                postcode: "AB21 9NX"
-            },
-            {
-                postcode: "AB21 9NY"
-            },
-            {
-                postcode: "AB21 9PA"
-            },
-            {
-                postcode: "AB21 9PB"
-            },
-            {
-                postcode: "AB21 9PD"
-            },
-            {
-                postcode: "AB21 0TG"
-            },
-            {
-                postcode: "AB21 0TH"
-            },
-            {
-                postcode: "AB21 0TJ"
-            },
-            {
-                postcode: "AB21 0TL"
-            },
-            {
-                postcode: "AB21 0TN"
-            },
-            {
-                postcode: "AB21 0TP"
-            },
-            {
-                postcode: "AB21 0TQ"
-            },
-            {
-                postcode: "AB21 0TR"
-            },
-            {
-                postcode: "AB21 0TS"
-            },
-            {
-                postcode: "AB21 0TT"
-            },
-            {
-                postcode: "AB21 0TU"
-            },
-            {
-                postcode: "AB21 0TW"
-            },
-            {
-                postcode: "AB21 0TX"
-            },
-            {
-                postcode: "AB21 0TY"
-            },
-            {
-                postcode: "AB21 0TZ"
-            },
-            {
-                postcode: "AB21 0UA"
-            },
-            {
-                postcode: "AB21 0UB"
-            },
-            {
-                postcode: "AB21 0UD"
-            },
-            {
-                postcode: "AB21 0UE"
-            },
-            {
-                postcode: "AB21 0UF"
-            },
-            {
-                postcode: "AB21 0UG"
-            },
-            {
-                postcode: "AB21 0UL"
-            },
-            {
-                postcode: "AB21 0UN"
-            },
-            {
-                postcode: "AB21 0UP"
-            },
-            {
-                postcode: "AB21 0UQ"
-            },
-            {
-                postcode: "AB21 0UR"
-            },
-            {
-                postcode: "AB21 0US"
-            },
-            {
-                postcode: "AB21 0UT"
-            },
-            {
-                postcode: "AB21 0UU"
-            },
-            {
-                postcode: "AB21 0UW"
-            },
-            {
-                postcode: "AB21 0UX"
-            },
-            {
-                postcode: "AB21 0UY"
-            },
-            {
-                postcode: "AB21 0UZ"
-            },
-            {
-                postcode: "AB21 0WA"
-            },
-            {
-                postcode: "AB21 0WB"
-            },
-            {
-                postcode: "AB21 0WF"
-            },
-            {
-                postcode: "AB21 0WG"
-            },
-            {
-                postcode: "AB21 0WH"
-            },
-            {
-                postcode: "AB21 0WJ"
-            },
-            {
-                postcode: "AB21 0WL"
-            },
-            {
-                postcode: "AB21 0WN"
-            },
-            {
-                postcode: "AB21 0WP"
-            },
-            {
-                postcode: "AB21 0WQ"
-            },
-            {
-                postcode: "AB21 0WW"
-            },
-            {
-                postcode: "AB21 0WZ"
-            },
-            {
-                postcode: "AB21 0XA"
-            },
-            {
-                postcode: "AB21 0XB"
-            },
-            {
-                postcode: "AB21 0XD"
-            },
-            {
-                postcode: "AB21 0XF"
-            },
-            {
-                postcode: "AB21 0XG"
-            },
-            {
-                postcode: "AB21 0XN"
-            },
-            {
-                postcode: "AB21 0XP"
-            },
-            {
-                postcode: "AB21 0XQ"
-            },
-            {
-                postcode: "AB21 0XR"
-            },
-            {
-                postcode: "AB21 0XS"
-            },
-            {
-                postcode: "AB21 0XT"
-            },
-            {
-                postcode: "AB21 0XU"
-            },
-            {
-                postcode: "AB21 0XW"
-            },
-            {
-                postcode: "AB21 0XX"
-            },
-            {
-                postcode: "AB21 0XY"
-            },
-            {
-                postcode: "AB21 0XZ"
-            },
-            {
-                postcode: "AB21 0YA"
-            },
-            {
-                postcode: "AB21 0YB"
-            },
-            {
-                postcode: "AB21 0YD"
-            },
-            {
-                postcode: "AB21 0YE"
-            },
-            {
-                postcode: "AB21 0YF"
-            },
-            {
-                postcode: "AB21 0YG"
-            },
-            {
-                postcode: "AB21 0YL"
-            },
-            {
-                postcode: "AB21 0YN"
-            },
-            {
-                postcode: "AB21 0YP"
-            },
-            {
-                postcode: "AB21 0YQ"
-            },
-            {
-                postcode: "AB21 0YR"
-            },
-            {
-                postcode: "AB21 0YS"
-            },
-            {
-                postcode: "AB21 0YT"
-            },
-            {
-                postcode: "AB21 0YX"
-            },
-            {
-                postcode: "AB21 0ZR"
-            },
-            {
-                postcode: "AB21 0ZS"
-            },
-            {
-                postcode: "AB21 0ZT"
-            },
-            {
-                postcode: "AB21 7AA"
-            },
-            {
-                postcode: "AB21 7AB"
-            },
-            {
-                postcode: "AB21 7AD"
-            },
-            {
-                postcode: "AB21 7AE"
-            },
-            {
-                postcode: "AB21 7AF"
-            },
-            {
-                postcode: "AB21 7AG"
-            },
-            {
-                postcode: "AB21 7AH"
-            },
-            {
-                postcode: "AB21 7AJ"
-            },
-            {
-                postcode: "AB21 7AL"
-            },
-            {
-                postcode: "AB21 7AN"
-            },
-            {
-                postcode: "AB21 7AP"
-            },
-            {
-                postcode: "AB21 7AQ"
-            },
-            {
-                postcode: "AB21 7AR"
-            },
-            {
-                postcode: "AB21 7AS"
-            },
-            {
-                postcode: "AB21 7AT"
-            },
-            {
-                postcode: "AB21 7AU"
-            },
-            {
-                postcode: "AB21 7AX"
-            },
-            {
-                postcode: "AB21 7AY"
-            },
-            {
-                postcode: "AB21 7AZ"
-            },
-            {
-                postcode: "AB21 7BA"
-            },
-            {
-                postcode: "AB21 7BB"
-            },
-            {
-                postcode: "AB21 7BD"
-            },
-            {
-                postcode: "AB21 7BE"
-            },
-            {
-                postcode: "AB21 7BG"
-            },
-            {
-                postcode: "AB21 7BH"
-            },
-            {
-                postcode: "AB21 7BJ"
-            },
-            {
-                postcode: "AB21 7BL"
-            },
-            {
-                postcode: "AB21 7BN"
-            },
-            {
-                postcode: "AB21 7BP"
-            },
-            {
-                postcode: "AB21 7BQ"
-            },
-            {
-                postcode: "AB21 7BR"
-            },
-            {
-                postcode: "AB21 7BS"
-            },
-            {
-                postcode: "AB21 7BT"
-            },
-            {
-                postcode: "AB21 7BU"
-            },
-            {
-                postcode: "AB21 7BW"
-            },
-            {
-                postcode: "AB21 7BX"
-            },
-            {
-                postcode: "AB21 7BY"
-            },
-            {
-                postcode: "AB21 7DA"
-            },
-            {
-                postcode: "AB21 7DB"
-            },
-            {
-                postcode: "AB21 7DD"
-            },
-            {
-                postcode: "AB21 7DE"
-            },
-            {
-                postcode: "AB21 7DG"
-            },
-            {
-                postcode: "AB21 7DH"
-            },
-            {
-                postcode: "AB21 7DJ"
-            },
-            {
-                postcode: "AB21 7DL"
-            },
-            {
-                postcode: "AB21 7DN"
-            },
-            {
-                postcode: "AB21 7DQ"
-            },
-            {
-                postcode: "AB21 7DR"
-            },
-            {
-                postcode: "AB21 7DS"
-            },
-            {
-                postcode: "AB21 7DT"
-            },
-            {
-                postcode: "AB21 7DU"
-            },
-            {
-                postcode: "AB21 7DW"
-            },
-            {
-                postcode: "AB21 7DX"
-            },
-            {
-                postcode: "AB21 7DY"
-            },
-            {
-                postcode: "AB21 7DZ"
-            },
-            {
-                postcode: "AB21 7EA"
-            },
-            {
-                postcode: "AB21 7EB"
-            },
-            {
-                postcode: "AB21 7ED"
-            },
-            {
-                postcode: "AB21 7EE"
-            },
-            {
-                postcode: "AB21 7EG"
-            },
-            {
-                postcode: "AB21 7EH"
-            },
-            {
-                postcode: "AB21 7EJ"
-            },
-            {
-                postcode: "AB21 7EL"
-            },
-            {
-                postcode: "AB21 7EN"
-            },
-            {
-                postcode: "AB21 7EP"
-            },
-            {
-                postcode: "AB21 7EQ"
-            },
-            {
-                postcode: "AB21 7ER"
-            },
-            {
-                postcode: "AB21 7ES"
-            },
-            {
-                postcode: "AB21 7ET"
-            },
-            {
-                postcode: "AB21 7EW"
-            },
-            {
-                postcode: "AB21 7EX"
-            },
-            {
-                postcode: "AB21 7EY"
-            },
-            {
-                postcode: "AB21 7EZ"
-            },
-            {
-                postcode: "AB21 7FA"
-            },
-            {
-                postcode: "AB21 7FB"
-            },
-            {
-                postcode: "AB21 7FD"
-            },
-            {
-                postcode: "AB21 7FE"
-            },
-            {
-                postcode: "AB21 7FF"
-            },
-            {
-                postcode: "AB21 7FG"
-            },
-            {
-                postcode: "AB21 7FH"
-            },
-            {
-                postcode: "AB21 7FJ"
-            },
-            {
-                postcode: "AB21 7FL"
-            },
-            {
-                postcode: "AB21 7FN"
-            },
-            {
-                postcode: "AB21 7FP"
-            },
-            {
-                postcode: "AB21 7FQ"
-            },
-            {
-                postcode: "AB21 7FR"
-            },
-            {
-                postcode: "AB21 7FS"
-            },
-            {
-                postcode: "AB21 7FT"
-            },
-            {
-                postcode: "AB21 7FU"
-            },
-            {
-                postcode: "AB21 7FW"
-            },
-            {
-                postcode: "AB21 7FX"
-            },
-            {
-                postcode: "AB21 7FY"
-            },
-            {
-                postcode: "AB21 7FZ"
-            },
-            {
-                postcode: "AB21 7GA"
-            },
-            {
-                postcode: "AB21 7GB"
-            },
-            {
-                postcode: "AB21 7GD"
-            },
-            {
-                postcode: "AB21 7GF"
-            },
-            {
-                postcode: "AB21 7GH"
-            },
-            {
-                postcode: "AB21 7GJ"
-            },
-            {
-                postcode: "AB21 7GL"
-            },
-            {
-                postcode: "AB21 7GN"
-            },
-            {
-                postcode: "AB21 7GQ"
-            },
-            {
-                postcode: "AB21 7HF"
-            }
-        ];
-        this.FirstnameFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(15)
+        this.version = _angular_material__WEBPACK_IMPORTED_MODULE_7__["VERSION"];
+        this.postcodeFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("");
+        this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]();
+        this.FirstnameFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(15)
         ]);
-        this.LastnameFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(15)
+        this.LastnameFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(15)
         ]);
-        this.EmailFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].email
+        this.EmailFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].email
         ]);
-        this.AddressFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(15)
+        this.AddressFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(15)
         ]);
-        this.TownFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(15)
+        this.TownFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(15)
         ]);
-        this.stateFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(15)
+        this.stateFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(15)
         ]);
-        this.addressnameFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(6)
+        this.addressnameFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(6)
         ]);
-        this.noroomsFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
-            _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(2)
+        this.noroomsFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
+            _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].maxLength(2)
         ]);
-        this.DOBFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required]);
+        this.DOBFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required]);
     }
     ngOnInit() {
         this.afAuth.authState.subscribe(user => {
@@ -5573,14 +3303,23 @@ let SellerformComponent = class SellerformComponent {
                 this.LoggedOut();
             }
         });
-        this.filteredOptions = this.myControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["map"])(value => (typeof value === "string" ? value : value.postcode)), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["map"])(postcode => postcode ? this._filter(postcode) : this.options.slice()));
-    }
-    displayFn(user) {
-        return user ? user.postcode : undefined;
-    }
-    _filter(postcode) {
-        const filterValue = postcode.toLowerCase();
-        return this.options.filter(option => option.postcode.toLowerCase().indexOf(filterValue) === 0);
+        // The auto population of github method
+        this.addressianAutoComplete$ = this.autoCompleteControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["startWith"])(""), 
+        // delay emits
+        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["debounceTime"])(1000), 
+        // use switch map so as to cancel previous subscribed events, before creating new once
+        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["switchMap"])(value => {
+            if (value !== "") {
+                this.lookup(this.Seller.postcode).subscribe(data => {
+                    this.data = data;
+                });
+                return this.lookup(this.Seller.postcode);
+            }
+            else {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_12__["of"])(null);
+            }
+        }));
+        // End method
     }
     LoggedIn() {
         this.isLoggedIn = true;
@@ -5597,32 +3336,24 @@ let SellerformComponent = class SellerformComponent {
         this.stateService.Seller = this.Seller;
         this.router.navigate(["confirmation"]);
     }
-    showConfig() {
-        this.sellerService
-            .getConfig(this.Seller.postcode.postcode)
-            .subscribe(response => {
-            this.result = response;
-            this.Seller.Town = this.result.result.nuts;
-            this.Seller.state = this.result.result.country;
-            // Put lat/long
-            this.Seller.latitude = this.result.result.latitude;
-            this.Seller.longitude = this.result.result.longitude;
-            console.log(response);
-        });
+    lookup(value) {
+        return this.sellerService.search(value);
+    }
+    getPosts(value) {
+        this.Seller.Address = value.address;
+        this.Seller.Town = value.citytown;
+        this.Seller.state = value.county;
+        this.Seller.postcode = value.postcode;
+        console.log(value);
     }
 };
 SellerformComponent.ctorParameters = () => [
-    { type: _auth_service__WEBPACK_IMPORTED_MODULE_6__["AuthService"] },
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] },
     { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__["AngularFirestore"] },
     { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"] },
-    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__["AngularFirestore"] },
-    { type: _sellerform_service__WEBPACK_IMPORTED_MODULE_5__["SellerformService"] },
-    { type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialog"] },
-    { type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatSnackBar"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_10__["ActivatedRoute"] },
-    { type: _angular_router__WEBPACK_IMPORTED_MODULE_10__["Router"] },
-    { type: _state_service_service__WEBPACK_IMPORTED_MODULE_9__["StateServiceService"] },
-    { type: _seller_service__WEBPACK_IMPORTED_MODULE_12__["SellerService"] }
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_9__["Router"] },
+    { type: _state_service_service__WEBPACK_IMPORTED_MODULE_8__["StateServiceService"] },
+    { type: _http_service__WEBPACK_IMPORTED_MODULE_11__["HttpService"] }
 ];
 SellerformComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -5712,7 +3443,7 @@ SellerformService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".matches-main-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n}\n.thanku-section {\n    background-color: white;\n    \n}\n.thanku-p-section\n{\n    font-size: 13px;\n    text-align: center;\n    padding: 18px;\n}\n.match-section\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    height: 150px;\n    background-color: white;\n    display: flex;\n    justify-content: flex-start;\n    /* align-content: flex-start; */\n    align-content: flex-start;\n    align-items: flex-start;\n}\n.match-images {\n    margin-top: 18px;\n    margin-right: 9px;\n    width: 33%;\n}\n.match-content {\n    padding-top: 26px;\n}\n/*===========================================================================================================\nFont-sizes\n=============================================================================================================*/\n.area-p\n{\n    font-size: 18px;\n    font-family: 'Open Sans', sans-serif;\n    font-weight: bold;\n}\n.discription-p\n{\n    font-size: 15px;\n    font-family: 'Segoe UI Regular';\n}\n.property-type-color{\n    color: #8BB440;\n}\n.font-headings\n{\n    font-family: 'Open Sans', sans-serif;\n    font-weight: bold;\n    font-size: 21px;\n    text-transform: capitalize;\n}\n.thanku-p-section\n{\n    font-family: 'Roboto', sans-serif;\n    font-weight: medium;\n    color: black;\n    font-size: 14px;\n}\n.main-heading\n{\n    font-family: 'Open Sans', sans-serif;\n    font-weight: 400;\n    font-size: 24px;\n}\n@media screen and (max-width:375px)\n{\n    .match-images {\n        /* margin-top: 14px; */\n        margin-right: 9px;\n        width: 34%;\n    }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VsbGVybWF0Y2hlcy9zZWxsZXJtYXRjaGVzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksdUJBQXVCOztBQUUzQjtBQUNBOztJQUVJLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsYUFBYTtBQUNqQjtBQUNBOztJQUVJLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2IsMkJBQTJCO0lBQzNCLCtCQUErQjtJQUMvQix5QkFBeUI7SUFDekIsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLFVBQVU7QUFDZDtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7OzhHQUU4RztBQUM5Rzs7SUFFSSxlQUFlO0lBQ2Ysb0NBQW9DO0lBQ3BDLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxvQ0FBb0M7SUFDcEMsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZiwwQkFBMEI7QUFDOUI7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUksb0NBQW9DO0lBQ3BDLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBVUE7O0lBRUk7UUFDSSxzQkFBc0I7UUFDdEIsaUJBQWlCO1FBQ2pCLFVBQVU7SUFDZDtBQUNKIiwiZmlsZSI6InNyYy9hcHAvc2VsbGVybWF0Y2hlcy9zZWxsZXJtYXRjaGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0Y2hlcy1tYWluLWNvbnRhaW5lclxue1xuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcbn1cbi50aGFua3Utc2VjdGlvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgXG59XG4udGhhbmt1LXAtc2VjdGlvblxue1xuICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMThweDtcbn1cbi5tYXRjaC1zZWN0aW9uXG57XG4gICAgcGFkZGluZy1yaWdodDogOHB4O1xuICAgIHBhZGRpbmctbGVmdDogOHB4O1xuICAgIGhlaWdodDogMTUwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XG4gICAgLyogYWxpZ24tY29udGVudDogZmxleC1zdGFydDsgKi9cbiAgICBhbGlnbi1jb250ZW50OiBmbGV4LXN0YXJ0O1xuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xufVxuLm1hdGNoLWltYWdlcyB7XG4gICAgbWFyZ2luLXRvcDogMThweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDlweDtcbiAgICB3aWR0aDogMzMlO1xufVxuLm1hdGNoLWNvbnRlbnQge1xuICAgIHBhZGRpbmctdG9wOiAyNnB4O1xufVxuLyo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuRm9udC1zaXplc1xuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG4uYXJlYS1wXG57XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgICBmb250LXdlaWdodDogYm9sZDtcbn1cbi5kaXNjcmlwdGlvbi1wXG57XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgUmVndWxhcic7XG59XG4ucHJvcGVydHktdHlwZS1jb2xvcntcbiAgICBjb2xvcjogIzhCQjQ0MDtcbn1cbi5mb250LWhlYWRpbmdzXG57XG4gICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgIGZvbnQtc2l6ZTogMjFweDtcbiAgICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcbn1cbi50aGFua3UtcC1zZWN0aW9uXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiBtZWRpdW07XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbn1cbi5tYWluLWhlYWRpbmdcbntcbiAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBmb250LXNpemU6IDI0cHg7XG59XG5cblxuXG5cblxuXG5cblxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjM3NXB4KVxue1xuICAgIC5tYXRjaC1pbWFnZXMge1xuICAgICAgICAvKiBtYXJnaW4tdG9wOiAxNHB4OyAqL1xuICAgICAgICBtYXJnaW4tcmlnaHQ6IDlweDtcbiAgICAgICAgd2lkdGg6IDM0JTtcbiAgICB9XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".matches-main-container\r\n{\r\n    padding-right: 8px;\r\n    padding-left: 8px;\r\n}\r\n.thanku-section {\r\n    background-color: white;\r\n    \r\n}\r\n.thanku-p-section\r\n{\r\n    font-size: 13px;\r\n    text-align: center;\r\n    padding: 18px;\r\n}\r\n.match-section\r\n{\r\n    padding-right: 8px;\r\n    padding-left: 8px;\r\n    height: 150px;\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: flex-start;\r\n    /* align-content: flex-start; */\r\n    align-content: flex-start;\r\n    align-items: flex-start;\r\n}\r\n.match-images {\r\n    margin-top: 18px;\r\n    margin-right: 9px;\r\n    width: 33%;\r\n}\r\n.match-content {\r\n    padding-top: 26px;\r\n}\r\n/*===========================================================================================================\r\nFont-sizes\r\n=============================================================================================================*/\r\n.area-p\r\n{\r\n    font-size: 18px;\r\n    font-family: 'Open Sans', sans-serif;\r\n    font-weight: bold;\r\n}\r\n.discription-p\r\n{\r\n    font-size: 15px;\r\n    font-family: 'Segoe UI Regular';\r\n}\r\n.property-type-color{\r\n    color: #8BB440;\r\n}\r\n.font-headings\r\n{\r\n    font-family: 'Open Sans', sans-serif;\r\n    font-weight: bold;\r\n    font-size: 21px;\r\n    text-transform: capitalize;\r\n}\r\n.thanku-p-section\r\n{\r\n    font-family: 'Roboto', sans-serif;\r\n    font-weight: medium;\r\n    color: black;\r\n    font-size: 14px;\r\n}\r\n.main-heading\r\n{\r\n    font-family: 'Open Sans', sans-serif;\r\n    font-weight: 400;\r\n    font-size: 24px;\r\n}\r\n@media screen and (max-width:375px)\r\n{\r\n    .match-images {\r\n        /* margin-top: 14px; */\r\n        margin-right: 9px;\r\n        width: 34%;\r\n    }\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2VsbGVybWF0Y2hlcy9zZWxsZXJtYXRjaGVzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksdUJBQXVCOztBQUUzQjtBQUNBOztJQUVJLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsYUFBYTtBQUNqQjtBQUNBOztJQUVJLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2IsMkJBQTJCO0lBQzNCLCtCQUErQjtJQUMvQix5QkFBeUI7SUFDekIsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUJBQWlCO0lBQ2pCLFVBQVU7QUFDZDtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7OzhHQUU4RztBQUM5Rzs7SUFFSSxlQUFlO0lBQ2Ysb0NBQW9DO0lBQ3BDLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxvQ0FBb0M7SUFDcEMsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZiwwQkFBMEI7QUFDOUI7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUksb0NBQW9DO0lBQ3BDLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBVUE7O0lBRUk7UUFDSSxzQkFBc0I7UUFDdEIsaUJBQWlCO1FBQ2pCLFVBQVU7SUFDZDtBQUNKIiwiZmlsZSI6InNyYy9hcHAvc2VsbGVybWF0Y2hlcy9zZWxsZXJtYXRjaGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0Y2hlcy1tYWluLWNvbnRhaW5lclxyXG57XHJcbiAgICBwYWRkaW5nLXJpZ2h0OiA4cHg7XHJcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcclxufVxyXG4udGhhbmt1LXNlY3Rpb24ge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbiAgICBcclxufVxyXG4udGhhbmt1LXAtc2VjdGlvblxyXG57XHJcbiAgICBmb250LXNpemU6IDEzcHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nOiAxOHB4O1xyXG59XHJcbi5tYXRjaC1zZWN0aW9uXHJcbntcclxuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcclxuICAgIHBhZGRpbmctbGVmdDogOHB4O1xyXG4gICAgaGVpZ2h0OiAxNTBweDtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcclxuICAgIC8qIGFsaWduLWNvbnRlbnQ6IGZsZXgtc3RhcnQ7ICovXHJcbiAgICBhbGlnbi1jb250ZW50OiBmbGV4LXN0YXJ0O1xyXG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XHJcbn1cclxuLm1hdGNoLWltYWdlcyB7XHJcbiAgICBtYXJnaW4tdG9wOiAxOHB4O1xyXG4gICAgbWFyZ2luLXJpZ2h0OiA5cHg7XHJcbiAgICB3aWR0aDogMzMlO1xyXG59XHJcbi5tYXRjaC1jb250ZW50IHtcclxuICAgIHBhZGRpbmctdG9wOiAyNnB4O1xyXG59XHJcbi8qPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT1cclxuRm9udC1zaXplc1xyXG49PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ki9cclxuLmFyZWEtcFxyXG57XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXdlaWdodDogYm9sZDtcclxufVxyXG4uZGlzY3JpcHRpb24tcFxyXG57XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFJlZ3VsYXInO1xyXG59XHJcbi5wcm9wZXJ0eS10eXBlLWNvbG9ye1xyXG4gICAgY29sb3I6ICM4QkI0NDA7XHJcbn1cclxuLmZvbnQtaGVhZGluZ3Ncclxue1xyXG4gICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC13ZWlnaHQ6IGJvbGQ7XHJcbiAgICBmb250LXNpemU6IDIxcHg7XHJcbiAgICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZTtcclxufVxyXG4udGhhbmt1LXAtc2VjdGlvblxyXG57XHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XHJcbiAgICBmb250LXdlaWdodDogbWVkaXVtO1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG4gICAgZm9udC1zaXplOiAxNHB4O1xyXG59XHJcbi5tYWluLWhlYWRpbmdcclxue1xyXG4gICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgIGZvbnQtc2l6ZTogMjRweDtcclxufVxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG5cclxuXHJcblxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjM3NXB4KVxyXG57XHJcbiAgICAubWF0Y2gtaW1hZ2VzIHtcclxuICAgICAgICAvKiBtYXJnaW4tdG9wOiAxNHB4OyAqL1xyXG4gICAgICAgIG1hcmdpbi1yaWdodDogOXB4O1xyXG4gICAgICAgIHdpZHRoOiAzNCU7XHJcbiAgICB9XHJcbn0iXX0= */");
 
 /***/ }),
 
@@ -5958,7 +3689,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\13\Desktop\streethok\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\God\Desktop\streethok\src\main.ts */"./src/main.ts");
 
 
 /***/ })
