@@ -2338,13 +2338,13 @@ __webpack_require__.r(__webpack_exports__);
 let HttpService = class HttpService {
     constructor(http) {
         this.http = http;
-        this.configUrl = "https://api-trial.addressian.co.uk/address/";
+        this.configUrl = "https://api-full.addressian.co.uk/address/";
     }
     search(query) {
         const headerDict = {
-            "x-api-key": "BcLIABSb6J3HsvGTpI5jA8FrtOaQqR67736r1Hip"
+            "x-api-key": "nH1ogtqovl7R1Vr5MEk3u2XxcA1PQDNr3VpTeUvp"
         };
-        const url = "https://api-trial.addressian.co.uk/address/";
+        const url = "https://api-full.addressian.co.uk/address/";
         return this.http.get(url + query, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"](headerDict)
         });

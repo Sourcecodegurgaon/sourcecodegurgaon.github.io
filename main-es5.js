@@ -4319,16 +4319,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, HttpService);
 
         this.http = http;
-        this.configUrl = "https://api-trial.addressian.co.uk/address/";
+        this.configUrl = "https://api-full.addressian.co.uk/address/";
       }
 
       _createClass(HttpService, [{
         key: "search",
         value: function search(query) {
           var headerDict = {
-            "x-api-key": "BcLIABSb6J3HsvGTpI5jA8FrtOaQqR67736r1Hip"
+            "x-api-key": "nH1ogtqovl7R1Vr5MEk3u2XxcA1PQDNr3VpTeUvp"
           };
-          var url = "https://api-trial.addressian.co.uk/address/";
+          var url = "https://api-full.addressian.co.uk/address/";
           return this.http.get(url + query, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"](headerDict)
           });
