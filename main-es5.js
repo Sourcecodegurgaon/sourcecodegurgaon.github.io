@@ -61,7 +61,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"p-0\">\r\n  <div class=\"back\">\r\n    <div class=\"upper-back\"></div>\r\n  </div>\r\n</div>\r\n<div class=\"upper-button\">\r\n  <button mat-raised-button class=\"home-button\" routerLink=\"/Property/buy\">Buy/Rent</button>\r\n  <button mat-raised-button class=\"home-button\" routerLink=\"/Property/sell\">Sell/Let</button>\r\n\r\n</div>\r\n\r\n<mat-card>\r\n  <mat-card-title>What is Streetsnap ?</mat-card-title>\r\n  <mat-card-content>\r\n    <p class=\"text-center pt-2 pr-3 pl-3 home-text-font\">\r\n      Streetsnap is a platform that helps landlords get offers without listing\r\n      their property on the market.\r\n    </p>\r\n    <p class=\"text-center  pr-3 pl-3 home-text-font\">\r\n      Buyers get the chance to find properties they wouldn't otherwise find on\r\n      property portals\r\n    </p>\r\n  </mat-card-content>\r\n\r\n  <mat-card-title>How does it work ?</mat-card-title>\r\n  <mat-card-content>\r\n    <p class=\"text-center pt-2 pr-4 pl-4 home-text-font\">\r\n      Buyers fill requirements, providing details such as location, size,\r\n      amenities etc and their offer price.\r\n    </p>\r\n    <p class=\"text-center pr-4 pl-4 home-text-font\">\r\n      Registered property owners get matched offers, after which they decide if\r\n      they want to reveal property details and pursue the match further\r\n    </p>\r\n  </mat-card-content>\r\n</mat-card>\r\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n\r\n<div class=\"home_content_container\" *ngIf=\"isLoggedIn\">\r\n  <div class=\"p-0\">\r\n    <div class=\"back\">\r\n      <div class=\"upper-back\"></div>\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"upper-button\">\r\n    <button mat-raised-button class=\"home-button\" routerLink=\"/Property/buy\">Buy/Rent</button>\r\n    <button mat-raised-button class=\"home-button\" routerLink=\"/Property/sell\">Sell/Let</button>\r\n  </div>\r\n\r\n  <mat-card>\r\n    <mat-card-title>What is Streetsnap ?</mat-card-title>\r\n    <mat-card-content>\r\n      <p class=\"text-center pt-2 pr-3 pl-3 home-text-font\">\r\n        Streetsnap is a platform that helps landlords get offers without listing\r\n        their property on the market.\r\n      </p>\r\n      <p class=\"text-center  pr-3 pl-3 home-text-font\">\r\n        Buyers get the chance to find properties they wouldn't otherwise find on\r\n        property portals\r\n      </p>\r\n    </mat-card-content>\r\n\r\n    <mat-card-title>How does it work ?</mat-card-title>\r\n    <mat-card-content>\r\n      <p class=\"text-center pt-2 pr-4 pl-4 home-text-font\">\r\n        Buyers fill requirements, providing details such as location, size,\r\n        amenities etc and their offer price.\r\n      </p>\r\n      <p class=\"text-center pr-4 pl-4 home-text-font\">\r\n        Registered property owners get matched offers, after which they decide if\r\n        they want to reveal property details and pursue the match further\r\n      </p>\r\n    </mat-card-content>\r\n  </mat-card>\r\n</div>\r\n\r\n<div *ngIf=\"!isLoggedIn\">\r\n  <div class=\"social-login text-center\">\r\n    <h4>Login or <span class=\"color-signup\">Sign up</span></h4>\r\n    <div class=\"social-button mt-4\">\r\n      <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n        Facebook\r\n      </button>\r\n      <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\r\n        Google+\r\n      </button>\r\n    </div>\r\n\r\n    <mat-form-field class=\"example-full-width\">\r\n      <input matInput placeholder=\"Leave a comment\" placeholder=\"Enter email\" #userEmail />\r\n    </mat-form-field>\r\n\r\n\r\n    <mat-form-field class=\"example-full-width\">\r\n      <input matInput placeholder=\"Leave a comment\" placeholder=\"Password\" type=\"password\" #userPassword />\r\n    </mat-form-field>\r\n\r\n    <div class=\"input-group-prepend other-option\">\r\n      <!-- <label class=\"checkbox\">\r\n                    <input type=\"checkbox\" value=\"remember-me\">Remember Me\r\n                </label> -->\r\n      <a href=\"#\" class=\"forgot-password\" routerLink=\"/forgot-password\">Forgot password?</a>\r\n    </div>\r\n    <button type=\"button\" class=\"btn btn-social-login\" (click)=\"                    \r\n                    signIn(userEmail.value, userPassword.value)\r\n                  \">\r\n      Login\r\n    </button>\r\n    <button type=\"button\" class=\"btn btn-social-login\" (click)=\"\r\n                    signUp(userEmail.value, userPassword.value)\r\n                  \">\r\n      Sign Up\r\n    </button>\r\n\r\n  </div>\r\n</div>\r\n";
     /***/
   },
 
@@ -121,7 +121,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  <p class=\"mt-3 main-heading\">You Have <span style=\"color:red\">3</span> Matches</p>\r\n\r\n  <div class=\"thanku-section\">\r\n    <p class=\"thanku-p-section\">Thank you for registering. You are now in our database\r\n      and we will share your property details with all the\r\n      interested buyers in you area</p>\r\n  </div>\r\n\r\n  <h3 class=\"mt-3 mb-3 font-headings\">Matched Properties</h3>\r\n\r\n  <section id=\"matchproperties\">\r\n    <div class=\"match-section\" routerLink='/buyerSelectedpropertyDetail/\r\n    {{property.Lookingpostcode}}/\r\n    {{property.Lookingstate}}/\r\n    {{property.LookingTown}}/\r\n    {{property.norooms}}/\r\n    {{property.PropertyCondition}}/\r\n    {{property.MaxAmount}}/\r\n    {{property.LookingAddress}}/\r\n    {{property.ownership}}/\r\n    {{property.LookingTown}}/\r\n    {{property.PropertyType}}/\r\n    {{property.features}}/\r\n    {{property.Firstname}}/\r\n    {{property.Lastname}}/\r\n    {{property.Email}}/\r\n    {{property.DOB}}/\r\n{{property.UserId}}' *ngFor=\"let property of matchedProperties\">\r\n      <mat-card class=\"mat-card-matches\">\r\n        <img *ngIf=\"property.PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images float-left\">\r\n        <img *ngIf=\"property.PropertyType=='Terrace House'\" src=\"assets/Images/Terraced.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.PropertyType=='Park Home'\" src=\"assets/Images/Park Home.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images float-left\">\r\n        <div class=\"match-content\">\r\n          <p><span class=\"discription-p\">Streetname:{{property.LookingAddress}}</span><br>\r\n            <span class=\"discription-p\"> No. of Rooms:{{property.norooms}}</span><br>\r\n            <span class=\"discription-p property-type-color\">Type of Property:\r\n              {{property.PropertyType}}</span><br>\r\n            <span class=\"discription-p\">Post Code: {{property.Lookingpostcode }}</span></p>\r\n        </div>\r\n \r\n      </mat-card>\r\n    </div>\r\n  </section>\r\n\r\n\r\n\r\n  <h3 class=\"mt-3 mb-3 font-headings\">Other Properties in London</h3>\r\n\r\n  <section id=\"propertyinlondon\">\r\n    <div class=\"match-section\" routerLink='/buyerSelectedPropertyDetail/\r\n    {{property.detail.Lookingpostcode}}/\r\n    {{property.detail.Lookingstate}}/\r\n    {{property.detail.LookingTown}}/\r\n    {{property.detail.norooms}}/\r\n    {{property.detail.PropertyCondition}}/\r\n    {{property.detail.MaxAmount}}/\r\n    {{property.detail.LookingAddress}}/\r\n    {{property.detail.ownership}}/\r\n    {{property.detail.LookingTown}}/\r\n    {{property.detail.PropertyType}}/\r\n    {{property.detail.features}}/\r\n    {{property.detail.Firstname}}/\r\n    {{property.detail.Lastname}}/\r\n    {{property.detail.Email}}/\r\n    {{property.detail.DOB}}/\r\n    {{property.detail.UserId}}' *ngFor=\"let property of unmatchedProperties\">\r\n      <mat-card class=\"mat-card-matches\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images float-left\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Terrace House'\" src=\"assets/Images/Terraced.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Park Home'\" src=\"assets/Images/Park Home.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images float-left\">\r\n        <div class=\"match-content\">\r\n          <p><span class=\"discription-p\">Streetname:{{property.detail.LookingAddress}}</span><br>\r\n            <span class=\"discription-p\"> No. of Rooms:{{property.detail.norooms}}</span><br>\r\n            <span class=\"discription-p property-type-color\">Type of Property:\r\n              {{property.detail.PropertyType}}</span><br>\r\n            <span class=\"discription-p\">Post Code: {{property.detail.Lookingpostcode }}</span><br>\r\n            <span *ngIf=\"property.distance\" class=\"discription-p\">Distance: {{property.distance | number:'1.1-1'}}\r\n              (kms)</span></p>\r\n\r\n       \r\n        </div>\r\n      </mat-card>\r\n    </div>\r\n  </section>\r\n\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  <p class=\"mt-3 main-heading\">You Have <span style=\"color:red\">3</span> Matches</p>\r\n\r\n  <div class=\"thanku-section\">\r\n    <p class=\"thanku-p-section\">Thank you for registering. You are now in our database\r\n      and we will share your property details with all the\r\n      interested buyers in you area</p>\r\n  </div>\r\n\r\n  <h3 class=\"mt-3 mb-3 font-headings\">Matched Properties</h3>\r\n\r\n  <section id=\"matchproperties\">\r\n    <div class=\"match-section\" routerLink='/buyerSelectedpropertyDetail/\r\n    {{property.Lookingpostcode}}/\r\n    {{property.Lookingstate}}/\r\n    {{property.LookingTown}}/\r\n    {{property.norooms}}/\r\n    {{property.PropertyCondition}}/\r\n    {{property.MaxAmount}}/\r\n    {{property.LookingAddress}}/\r\n    {{property.ownership}}/\r\n    {{property.LookingTown}}/\r\n    {{property.PropertyType}}/\r\n    {{property.features}}/\r\n    {{property.Firstname}}/\r\n    {{property.Lastname}}/\r\n    {{property.Email}}/\r\n    {{property.DOB}}/\r\n{{property.UserId}}' *ngFor=\"let property of matchedProperties\">\r\n      <mat-card class=\"mat-card-matches\">\r\n        <img *ngIf=\"property.PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images float-left\">\r\n        <img *ngIf=\"property.PropertyType=='Terrace House'\" src=\"assets/Images/Terraced.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.PropertyType=='Park Home'\" src=\"assets/Images/Park Home.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images float-left\">\r\n        <div class=\"match-content\">\r\n          <p><span class=\"discription-p\">Streetname:{{property.LookingAddress}}</span><br>\r\n            <span class=\"discription-p\"> No. of Rooms:{{property.norooms}}</span><br>\r\n            <span class=\"discription-p property-type-color\">Type of Property:\r\n              {{property.PropertyType}}</span><br>\r\n            <span class=\"discription-p\">Post Code: {{property.Lookingpostcode }}</span></p>\r\n        </div>\r\n        {{property.Lookingpostcode}}/\r\n        {{property.Lookingstate}}/\r\n        {{property.LookingTown}}/\r\n        {{property.norooms}}/\r\n        {{property.PropertyCondition}}/\r\n        {{property.MaxAmount}}/\r\n        {{property.LookingAddress}}/\r\n        {{property.ownership}}/\r\n        {{property.LookingTown}}/\r\n        {{property.PropertyType}}/\r\n        {{property.features}}/\r\n        {{property.Firstname}}/\r\n        {{property.Lastname}}/\r\n        {{property.Email}}/\r\n        {{property.DOB}}/\r\n    {{property.UserId}}\r\n      </mat-card>\r\n    </div>\r\n  </section>\r\n\r\n\r\n\r\n  <h3 class=\"mt-3 mb-3 font-headings\">Other Properties in London</h3>\r\n\r\n  <section id=\"propertyinlondon\">\r\n    <div class=\"match-section\" routerLink='/buyerSelectedPropertyDetail/\r\n    {{property.detail.Lookingpostcode}}/\r\n    {{property.detail.Lookingstate}}/\r\n    {{property.detail.LookingTown}}/\r\n    {{property.detail.norooms}}/\r\n    {{property.detail.PropertyCondition}}/\r\n    {{property.detail.MaxAmount}}/\r\n    {{property.detail.LookingAddress}}/\r\n    {{property.detail.ownership}}/\r\n    {{property.detail.LookingTown}}/\r\n    {{property.detail.PropertyType}}/\r\n    {{property.detail.features}}/\r\n    {{property.detail.Firstname}}/\r\n    {{property.detail.Lastname}}/\r\n    {{property.detail.Email}}/\r\n    {{property.detail.DOB}}/\r\n    {{property.detail.UserId}}' *ngFor=\"let property of unmatchedProperties\">\r\n      <mat-card class=\"mat-card-matches\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images float-left\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Terrace House'\" src=\"assets/Images/Terraced.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Park Home'\" src=\"assets/Images/Park Home.svg\"\r\n          class=\"match-images float-left\">\r\n        <img *ngIf=\"property.detail.PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images float-left\">\r\n        <div class=\"match-content\">\r\n          <p><span class=\"discription-p\">Streetname:{{property.detail.LookingAddress}}</span><br>\r\n            <span class=\"discription-p\"> No. of Rooms:{{property.detail.norooms}}</span><br>\r\n            <span class=\"discription-p property-type-color\">Type of Property:\r\n              {{property.detail.PropertyType}}</span><br>\r\n            <span class=\"discription-p\">Post Code: {{property.detail.Lookingpostcode }}</span><br>\r\n            <span *ngIf=\"property.distance\" class=\"discription-p\">Distance: {{property.distance | number:'1.1-1'}}\r\n              (kms)</span></p>\r\n              {{property.detail.Lookingpostcode}}/\r\n              {{property.detail.Lookingstate}}/\r\n              {{property.detail.LookingTown}}/\r\n              {{property.detail.norooms}}/\r\n              {{property.detail.PropertyCondition}}/\r\n              {{property.detail.MaxAmount}}/\r\n              {{property.detail.LookingAddress}}/\r\n              {{property.detail.ownership}}/\r\n              {{property.detail.LookingTown}}/\r\n              {{property.detail.PropertyType}}/\r\n              {{property.detail.features}}/\r\n              {{property.detail.Firstname}}/\r\n              {{property.detail.Lastname}}/\r\n              {{property.detail.Email}}/\r\n              {{property.detail.DOB}}/\r\n              {{property.detail.UserId}}\r\n       \r\n        </div>\r\n      </mat-card>\r\n    </div>\r\n  </section>\r\n\r\n</div>\r\n";
     /***/
   },
 
@@ -161,7 +161,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyer\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n\r\n<div class=\"container confirm-main-container\">\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Personal Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Name:\r\n            <span class=\"output\">&nbsp;{{ listingBuyer.Firstname }} {{ listingBuyer.Lastname }}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Email Address:<span class=\"output\">&nbsp;{{listingBuyer.Email}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Date of Birth:<span class=\"output\">&nbsp;{{listingBuyer.DOB | date :'longDate'}} </span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Chain status:<span class=\"output\">&nbsp;{{listingBuyer.ChainStatus}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Financial Position:<span\r\n              class=\"output\">&nbsp;{{listingBuyer.FinancialPosition}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Property Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Property Type:\r\n            <span class=\"output\">&nbsp;{{listingBuyer.Propertytype}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Search Radius:<span class=\"output\">&nbsp;{{listingBuyer.SearchRadius}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Price Range:<span class=\"output\">&nbsp;{{listingBuyer.PriceRange}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Offer validity:<span class=\"output\">&nbsp;{{listingBuyer.Validity}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Property Condition:<span class=\"output\">&nbsp;{{listingBuyer.Condition}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Operational Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Type:\r\n            <span class=\"output\">&nbsp;{{listingBuyer.Type}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Position:<span class=\"output\">&nbsp; {{listingBuyer.Position}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n \r\n  </div>\r\n  <mat-card class=\"mt-3\">\r\n\r\n    <section class=\"example-section property-con-form\" \r\n     >\r\n\r\n      <mat-checkbox class=\"example-margin\" value=\"Email\">Email</mat-checkbox>\r\n      <mat-checkbox class=\"example-margin\" value=\"SMS\">SMS</mat-checkbox>\r\n      <mat-checkbox class=\"example-margin\" value=\"Post\">Post</mat-checkbox>\r\n      <mat-checkbox class=\"example-margin\" value=\"All\">Email,SMS and Post from acrefully selected third port</mat-checkbox>\r\n      <label for=\"text\" class=\" \">By clicking the sms box,you agreeing to recieve\"</label>\r\n      <label for=\"text\" class=\" \">By creating your account you agree to our Terms  & Find out more,Please read our Privacy Notice </label>\r\n    </section>\r\n</mat-card>\r\n\r\n  <div class=\"endind-button mt-5\">\r\n    <button type=\"button\"  class=\"btn btn-back\" (click)=\"backClicked()\">Back</button>\r\n    <button type=\"button\" class=\"btn btn-next\" (click)=\"submitForm()\" >Submit</button>\r\n  </div>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyer\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n\r\n<div class=\"container confirm-main-container\">\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Personal Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Name:\r\n            <span class=\"output\">&nbsp;{{ listingBuyer.Firstname }} {{ listingBuyer.Lastname }}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Email Address:<span class=\"output\">&nbsp;{{listingBuyer.Email}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Date of Birth:<span\r\n              class=\"output\">&nbsp;{{listingBuyer.DOB | date :'longDate'}} </span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Chain status:<span class=\"output\">&nbsp;{{listingBuyer.ChainStatus}}</span>\r\n          </td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Financial Position:<span\r\n              class=\"output\">&nbsp;{{listingBuyer.FinancialPosition}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Property Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Property Type:\r\n            <span class=\"output\">&nbsp;{{listingBuyer.Propertytype}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Search Radius:<span class=\"output\">&nbsp;{{listingBuyer.SearchRadius}}</span>\r\n          </td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Price Range:<span class=\"output\">&nbsp;{{listingBuyer.PriceRange}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Offer validity:<span class=\"output\">&nbsp;{{listingBuyer.Validity}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Property Condition:<span class=\"output\">&nbsp;{{listingBuyer.Condition}}</span>\r\n          </td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n  <div class=\"confirm-first-container mt-3\">\r\n    <p class=\"confirm-page-heading\">Operational Details</p>\r\n    <table class=\"table\">\r\n\r\n      <tbody>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Type:\r\n            <span class=\"output\">&nbsp;{{listingBuyer.Type}}</span></td>\r\n\r\n        </tr>\r\n        <tr>\r\n          <td class=\"details-p-headings\">Position:<span class=\"output\">&nbsp; {{listingBuyer.Position}}</span></td>\r\n\r\n        </tr>\r\n\r\n      </tbody>\r\n    </table>\r\n\r\n  </div>\r\n  <mat-card class=\"mt-3\">\r\n\r\n    <section class=\"example-section property-con-form\">\r\n\r\n      <mat-checkbox class=\"example-margin\" value=\"Email\">Email</mat-checkbox>\r\n      <mat-checkbox class=\"example-margin\" value=\"SMS\">SMS</mat-checkbox>\r\n      <mat-checkbox class=\"example-margin\" value=\"Post\">Post</mat-checkbox>\r\n      <mat-checkbox class=\"example-margin\" value=\"All\">Email,SMS and Post from acrefully selected third port\r\n      </mat-checkbox>\r\n      <label for=\"text\" class=\" \">By clicking the sms box,you agreeing to recieve\"</label>\r\n      <label for=\"text\" class=\" \">By creating your account you agree to our Terms & Find out more,Please read our\r\n        Privacy Notice </label>\r\n    </section>\r\n  </mat-card>\r\n\r\n  <div class=\"endind-button mt-5\">\r\n    <button type=\"button\" class=\"btn btn-back\" (click)=\"backClicked()\">Back</button>\r\n    <button type=\"button\" class=\"btn btn-next\" (click)=\"submitForm()\">Submit</button>\r\n  </div>\r\n</div>\r\n";
     /***/
   },
 
@@ -1337,7 +1337,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".back {\r\n  background-image: url(/assets/Images/handshake.jpg);\r\n  width: 100%;\r\n  height: auto;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.upper-back {\r\n  background-color: black;\r\n  width: 100%;\r\n  height: 250px;\r\n  opacity: 0.5;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.upper-button {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-content: center;\r\n  z-index: 100;\r\n\r\n  font-family: 'Open Sans', sans-serif;\r\n  position: relative;\r\n  top: -145px;\r\n}\r\n\r\n.home-button {\r\n  background-color: #244D93;\r\ncolor: white;\r\n  width: 35%;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Segoe UI Regular';\r\n  font-style: normal;\r\n  font-weight: normal;\r\n  src: local('Segoe UI Regular'), url('/assets/font/Segoe UI.woff') format('woff');\r\n}\r\n\r\n.home-text-font {\r\n  font-family: 'Segoe UI Regular';\r\n  color: #707070;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxtREFBbUQ7RUFDbkQsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsdUJBQXVCO0VBQ3ZCLFdBQVc7RUFDWCxhQUFhO0VBQ2IsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7O0VBRVosb0NBQW9DO0VBQ3BDLGtCQUFrQjtFQUNsQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSx5QkFBeUI7QUFDM0IsWUFBWTtFQUNWLFVBQVU7QUFDWjs7QUFFQTtFQUNFLCtCQUErQjtFQUMvQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLGdGQUFnRjtBQUNsRjs7QUFFQTtFQUNFLCtCQUErQjtFQUMvQixjQUFjO0VBQ2QscUJBQXFCO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFjayB7XHJcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvSW1hZ2VzL2hhbmRzaGFrZS5qcGcpO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogYXV0bztcclxuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xyXG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbn1cclxuXHJcbi51cHBlci1iYWNrIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDI1MHB4O1xyXG4gIG9wYWNpdHk6IDAuNTtcclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi51cHBlci1idXR0b24ge1xyXG4gIGRpc3BsYXk6IGZsZXg7XHJcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XHJcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xyXG4gIHotaW5kZXg6IDEwMDtcclxuXHJcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICB0b3A6IC0xNDVweDtcclxufVxyXG5cclxuLmhvbWUtYnV0dG9uIHtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG5jb2xvcjogd2hpdGU7XHJcbiAgd2lkdGg6IDM1JTtcclxufVxyXG5cclxuQGZvbnQtZmFjZSB7XHJcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBSZWd1bGFyJztcclxuICBmb250LXN0eWxlOiBub3JtYWw7XHJcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcclxuICBzcmM6IGxvY2FsKCdTZWdvZSBVSSBSZWd1bGFyJyksIHVybCgnL2Fzc2V0cy9mb250L1NlZ29lIFVJLndvZmYnKSBmb3JtYXQoJ3dvZmYnKTtcclxufVxyXG5cclxuLmhvbWUtdGV4dC1mb250IHtcclxuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFJlZ3VsYXInO1xyXG4gIGNvbG9yOiAjNzA3MDcwO1xyXG4gIG1hcmdpbi1ib3R0b206IDAuNXJlbTtcclxufVxyXG4iXX0= */";
+    __webpack_exports__["default"] = ".back {\r\n  background-image: url(/assets/Images/handshake.jpg);\r\n  width: 100%;\r\n  height: auto;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n}\r\n\r\n.upper-back {\r\n  background-color: black;\r\n  width: 100%;\r\n  height: 250px;\r\n  opacity: 0.5;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.upper-button {\r\n  display: flex;\r\n  justify-content: space-around;\r\n  align-content: center;\r\n  z-index: 100;\r\n\r\n  font-family: 'Open Sans', sans-serif;\r\n  position: relative;\r\n  top: -145px;\r\n}\r\n\r\n.home-button {\r\n  background-color: #244D93;\r\n  color: white;\r\n  width: 35%;\r\n}\r\n\r\n@font-face {\r\n  font-family: 'Segoe UI Regular';\r\n  font-style: normal;\r\n  font-weight: normal;\r\n  src: local('Segoe UI Regular'), url('/assets/font/Segoe UI.woff') format('woff');\r\n}\r\n\r\n.home-text-font {\r\n  font-family: 'Segoe UI Regular';\r\n  color: #707070;\r\n  margin-bottom: 0.5rem;\r\n}\r\n\r\n.btn-facebook {\r\n  background-color: #244D93;\r\n  color: white;\r\n  width: 30%;\r\n  height: 35px;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.btn-google {\r\n  background-color: #DD4B33;\r\n  color: white;\r\n  width: 30%;\r\n  height: 35px;\r\n  text-align: center;\r\n  margin: 0px;\r\n  padding: 0px;\r\n  font-family: 'Open Sans', sans-serif;\r\n}\r\n\r\n.social-login h4 {\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight: 700;\r\n}\r\n\r\n.social-button {\r\n  display: flex;\r\n  /* justify-content: center; */\r\n  justify-content: space-evenly;\r\n  align-items: center;\r\n\r\n}\r\n\r\n.color-signup {\r\n  color: #244D93;\r\n}\r\n\r\n.btn-social-login {\r\n  width: 100%;\r\n  background-color: #244D93;\r\n  color: white;\r\n  margin-top: 3%;\r\n  font-family: 'Open Sans', sans-serif;\r\n\r\n}\r\n\r\ni.fa.fa-user.input-group-text.nav-login-form {\r\n  position: absolute;\r\n  font-size: 23px;\r\n  left: 0px;\r\n  width: 10%;\r\n  z-index: 10;\r\n  margin-top: -4%;\r\n}\r\n\r\n.social-login.text-center {\r\n  padding: 15px;\r\n}\r\n\r\n.checkbox {\r\n  background: none transparent;\r\n  border: none;\r\n  border-left: none;\r\n  border-right: none;\r\n  cursor: pointer;\r\n  /* display: block; */\r\n  height: auto;\r\n  position: absolute;\r\n  top: none;\r\n  left: none;\r\n  right: 9px;\r\n  width: none;\r\n  /* transition: all .2s; */\r\n  display: flex;\r\n  flex-direction: row;\r\n\r\n}\r\n\r\n.example-form {\r\n  min-width: 150px;\r\n  max-width: 500px;\r\n  width: 100%;\r\n}\r\n\r\n.example-full-width {\r\n  width: 100%;\r\n  border: none;\r\n}\r\n\r\n.loading-container {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: fixed;\r\n  top: 0px;\r\n  left: 0px;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  z-index: 9;\r\n  background: black;\r\n  opacity: 0.5;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxtREFBbUQ7RUFDbkQsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCOztBQUVBO0VBQ0UsdUJBQXVCO0VBQ3ZCLFdBQVc7RUFDWCxhQUFhO0VBQ2IsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7O0VBRVosb0NBQW9DO0VBQ3BDLGtCQUFrQjtFQUNsQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLFVBQVU7QUFDWjs7QUFFQTtFQUNFLCtCQUErQjtFQUMvQixrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLGdGQUFnRjtBQUNsRjs7QUFFQTtFQUNFLCtCQUErQjtFQUMvQixjQUFjO0VBQ2QscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7RUFDWixvQ0FBb0M7QUFDdEM7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3Qiw2QkFBNkI7RUFDN0IsbUJBQW1COztBQUVyQjs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixjQUFjO0VBQ2Qsb0NBQW9DOztBQUV0Qzs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsU0FBUztFQUNULFVBQVU7RUFDVixXQUFXO0VBQ1gsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1QixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2Ysb0JBQW9CO0VBQ3BCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVixVQUFVO0VBQ1YsV0FBVztFQUNYLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2IsbUJBQW1COztBQUVyQjs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsV0FBVztBQUNiOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7QUFDZDs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixZQUFZO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9Ib21lL0hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcclxuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoL2Fzc2V0cy9JbWFnZXMvaGFuZHNoYWtlLmpwZyk7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgaGVpZ2h0OiBhdXRvO1xyXG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbiAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxufVxyXG5cclxuLnVwcGVyLWJhY2sge1xyXG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMjUwcHg7XHJcbiAgb3BhY2l0eTogMC41O1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxufVxyXG5cclxuLnVwcGVyLWJ1dHRvbiB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcclxuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XHJcbiAgei1pbmRleDogMTAwO1xyXG5cclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG4gIHRvcDogLTE0NXB4O1xyXG59XHJcblxyXG4uaG9tZS1idXR0b24ge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHdpZHRoOiAzNSU7XHJcbn1cclxuXHJcbkBmb250LWZhY2Uge1xyXG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgUmVndWxhcic7XHJcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xyXG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XHJcbiAgc3JjOiBsb2NhbCgnU2Vnb2UgVUkgUmVndWxhcicpLCB1cmwoJy9hc3NldHMvZm9udC9TZWdvZSBVSS53b2ZmJykgZm9ybWF0KCd3b2ZmJyk7XHJcbn1cclxuXHJcbi5ob21lLXRleHQtZm9udCB7XHJcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBSZWd1bGFyJztcclxuICBjb2xvcjogIzcwNzA3MDtcclxuICBtYXJnaW4tYm90dG9tOiAwLjVyZW07XHJcbn1cclxuXHJcbi5idG4tZmFjZWJvb2sge1xyXG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XHJcbiAgY29sb3I6IHdoaXRlO1xyXG4gIHdpZHRoOiAzMCU7XHJcbiAgaGVpZ2h0OiAzNXB4O1xyXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICBtYXJnaW46IDBweDtcclxuICBwYWRkaW5nOiAwcHg7XHJcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xyXG59XHJcblxyXG4uYnRuLWdvb2dsZSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI0RENEIzMztcclxuICBjb2xvcjogd2hpdGU7XHJcbiAgd2lkdGg6IDMwJTtcclxuICBoZWlnaHQ6IDM1cHg7XHJcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gIG1hcmdpbjogMHB4O1xyXG4gIHBhZGRpbmc6IDBweDtcclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi5zb2NpYWwtbG9naW4gaDQge1xyXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcclxuICBmb250LXdlaWdodDogNzAwO1xyXG59XHJcblxyXG4uc29jaWFsLWJ1dHRvbiB7XHJcbiAgZGlzcGxheTogZmxleDtcclxuICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cclxuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcclxuICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG5cclxufVxyXG5cclxuLmNvbG9yLXNpZ251cCB7XHJcbiAgY29sb3I6ICMyNDREOTM7XHJcbn1cclxuXHJcbi5idG4tc29jaWFsLWxvZ2luIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gIGNvbG9yOiB3aGl0ZTtcclxuICBtYXJnaW4tdG9wOiAzJTtcclxuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XHJcblxyXG59XHJcblxyXG5pLmZhLmZhLXVzZXIuaW5wdXQtZ3JvdXAtdGV4dC5uYXYtbG9naW4tZm9ybSB7XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIGZvbnQtc2l6ZTogMjNweDtcclxuICBsZWZ0OiAwcHg7XHJcbiAgd2lkdGg6IDEwJTtcclxuICB6LWluZGV4OiAxMDtcclxuICBtYXJnaW4tdG9wOiAtNCU7XHJcbn1cclxuXHJcbi5zb2NpYWwtbG9naW4udGV4dC1jZW50ZXIge1xyXG4gIHBhZGRpbmc6IDE1cHg7XHJcbn1cclxuXHJcbi5jaGVja2JveCB7XHJcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcclxuICBib3JkZXI6IG5vbmU7XHJcbiAgYm9yZGVyLWxlZnQ6IG5vbmU7XHJcbiAgYm9yZGVyLXJpZ2h0OiBub25lO1xyXG4gIGN1cnNvcjogcG9pbnRlcjtcclxuICAvKiBkaXNwbGF5OiBibG9jazsgKi9cclxuICBoZWlnaHQ6IGF1dG87XHJcbiAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gIHRvcDogbm9uZTtcclxuICBsZWZ0OiBub25lO1xyXG4gIHJpZ2h0OiA5cHg7XHJcbiAgd2lkdGg6IG5vbmU7XHJcbiAgLyogdHJhbnNpdGlvbjogYWxsIC4yczsgKi9cclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XHJcblxyXG59XHJcblxyXG4uZXhhbXBsZS1mb3JtIHtcclxuICBtaW4td2lkdGg6IDE1MHB4O1xyXG4gIG1heC13aWR0aDogNTAwcHg7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGJvcmRlcjogbm9uZTtcclxufVxyXG5cclxuLmxvYWRpbmctY29udGFpbmVyIHtcclxuICB3aWR0aDogMTAwJTtcclxuICBoZWlnaHQ6IDEwMCU7XHJcbiAgcG9zaXRpb246IGZpeGVkO1xyXG4gIHRvcDogMHB4O1xyXG4gIGxlZnQ6IDBweDtcclxuICBkaXNwbGF5OiAtd2Via2l0LWJveDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcclxuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgei1pbmRleDogOTtcclxuICBiYWNrZ3JvdW5kOiBibGFjaztcclxuICBvcGFjaXR5OiAwLjU7XHJcbn1cclxuIl19 */";
     /***/
   },
 
@@ -1372,24 +1372,122 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! .././auth.service */
+    "./src/app/auth.service.ts");
+    /* harmony import */
+
+
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/auth/es2015/index.js");
 
     var HomeComponent =
     /*#__PURE__*/
     function () {
-      function HomeComponent() {
+      function HomeComponent(authService, afAuth) {
         _classCallCheck(this, HomeComponent);
 
+        this.authService = authService;
+        this.afAuth = afAuth;
         this.selectedIndex = 0;
         this.maxNumberOfTabs = 2;
+        this.isLoggedIn = true;
+        this.isLoading = false;
       }
 
       _createClass(HomeComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          var _this = this;
+
+          this.afAuth.authState.subscribe(function (user) {
+            if (user) {
+              _this.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this.userData));
+
+              _this.LoggedIn();
+            } else {
+              localStorage.setItem("user", null);
+              JSON.parse(localStorage.getItem("user"));
+
+              _this.LoggedOut();
+            }
+          });
+        }
+      }, {
+        key: "LoggedIn",
+        value: function LoggedIn() {
+          this.isLoggedIn = true;
+        }
+      }, {
+        key: "LoggedOut",
+        value: function LoggedOut() {
+          this.isLoggedIn = false;
+        }
+      }, {
+        key: "facebookLogin",
+        value: function facebookLogin() {
+          var _this2 = this;
+
+          this.isLoading = true;
+          this.authService.FacebookAuth().then(function (data) {
+            _this2.isLoading = false;
+          });
+        }
+      }, {
+        key: "googleLogin",
+        value: function googleLogin() {
+          var _this3 = this;
+
+          this.isLoading = true;
+          this.authService.GoogleAuth().then(function (data) {
+            _this3.isLoading = false;
+          });
+        }
+      }, {
+        key: "signIn",
+        value: function signIn(email, pass) {
+          var _this4 = this;
+
+          this.isLoading = true;
+          this.authService.SignIn(email, pass).then(function (data) {
+            _this4.isLoading = false;
+          });
+        }
+      }, {
+        key: "signUp",
+        value: function signUp(email, pass) {
+          var _this5 = this;
+
+          this.isLoading = true;
+          this.authService.SignUp(email, pass).then(function (data) {
+            _this5.isLoading = false;
+          });
+        }
+      }, {
+        key: "user",
+        get: function get() {
+          return this._user;
+        },
+        set: function set(value) {
+          this._user = value;
+        }
       }]);
 
       return HomeComponent;
     }();
+
+    HomeComponent.ctorParameters = function () {
+      return [{
+        type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]
+      }, {
+        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"]
+      }];
+    };
 
     HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: "app-Home",
@@ -1475,18 +1573,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(PropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this = this;
+          var _this6 = this;
 
           this.route.params.subscribe(function (params) {
-            _this.useCase = params["use"];
+            _this6.useCase = params["use"];
 
-            if (_this.useCase == "buy") {
-              _this.activeTab = 0;
-            } else if (_this.useCase == "sell") {
-              _this.activeTab = 1;
+            if (_this6.useCase == "buy") {
+              _this6.activeTab = 0;
+            } else if (_this6.useCase == "sell") {
+              _this6.activeTab = 1;
             }
 
-            console.log(_this.useCase);
+            console.log(_this6.useCase);
           });
         }
       }]);
@@ -1689,35 +1787,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerMatcheListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this2 = this;
+          var _this7 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (item.data().Lookingpostcode == _this2.stateService.listingBuyer.Lookingpostcode.postcode) {
+              if (item.data().Lookingpostcode == _this7.stateService.listingBuyer.Lookingpostcode.postcode) {
                 console.log(item.data());
 
-                _this2.matchedProperties.push(item.data()); //Use this object to populate html
+                _this7.matchedProperties.push(item.data()); //Use this object to populate html
 
               } else if (item.data().latitude && item.data().longitude) {
-                _this2.distanceInKm = _this2.getDistanceFromLatLonInKm(_this2.stateService.listingBuyer.latitude, _this2.stateService.listingBuyer.longitude, item.data().latitude, item.data().longitude);
+                _this7.distanceInKm = _this7.getDistanceFromLatLonInKm(_this7.stateService.listingBuyer.latitude, _this7.stateService.listingBuyer.longitude, item.data().latitude, item.data().longitude);
 
-                _this2.unmatchedProperties.push({
+                _this7.unmatchedProperties.push({
                   detail: item.data(),
-                  distance: _this2.distanceInKm
+                  distance: _this7.distanceInKm
                 });
               } else {
-                _this2.unmatchedProperties.push({
+                _this7.unmatchedProperties.push({
                   detail: item.data()
                 });
               }
             });
 
-            _this2.unmatchedProperties.sort(_this2.compare);
+            _this7.unmatchedProperties.sort(_this7.compare);
 
-            console.log(_this2.unmatchedProperties);
+            console.log(_this7.unmatchedProperties);
           });
         }
       }, {
@@ -1960,34 +2058,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerSelectedPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this3 = this;
+          var _this8 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this3.Lookingpostcode = params.get("Lookingpostcode");
-            _this3.Lookingstate = params.get("Lookingstate");
-            _this3.LookingTown = params.get("LookingTown");
-            _this3.norooms = params.get("norooms");
-            _this3.PropertyCondition = params.get("PropertyCondition");
-            _this3.MaxAmount = params.get("MaxAmount");
-            _this3.LookingAddress = params.get("LookingAddress");
-            _this3.ownership = params.get("ownership");
-            _this3.LookingTown = params.get("LookingTown");
-            _this3.PropertyType = params.get("PropertyType");
-            _this3.features = params.get("features");
-            _this3.Firstname = params.get("Firstname");
-            _this3.Lastname = params.get("Lastname");
-            _this3.Email = params.get("Email");
-            _this3.DOB = params.get("DOB");
-            _this3.UserId = params.get("UserId");
+            _this8.Lookingpostcode = params.get("Lookingpostcode");
+            _this8.Lookingstate = params.get("Lookingstate");
+            _this8.LookingTown = params.get("LookingTown");
+            _this8.norooms = params.get("norooms");
+            _this8.PropertyCondition = params.get("PropertyCondition");
+            _this8.MaxAmount = params.get("MaxAmount");
+            _this8.LookingAddress = params.get("LookingAddress");
+            _this8.ownership = params.get("ownership");
+            _this8.LookingTown = params.get("LookingTown");
+            _this8.PropertyType = params.get("PropertyType");
+            _this8.features = params.get("features");
+            _this8.Firstname = params.get("Firstname");
+            _this8.Lastname = params.get("Lastname");
+            _this8.Email = params.get("Email");
+            _this8.DOB = params.get("DOB");
+            _this8.UserId = params.get("UserId");
           });
         } //Create Database BuyerMatches
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this4 = this;
+          var _this9 = this;
 
           this.matchesBuyer = {
             Lookingpostcode: this.Lookingpostcode,
@@ -2009,9 +2107,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isBuyerSelected = true;
           this.return = this.Selected_propertydetail_Service.matchesBuyerCreate(this.uid, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this4.isBuyerSelected = false;
+              _this9.isBuyerSelected = false;
 
-              var dialogRef = _this4.dialog.open(_Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_5__["SelectedPropertyDialogComponent"], {
+              var dialogRef = _this9.dialog.open(_Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_5__["SelectedPropertyDialogComponent"], {
                 data: {
                   buttonText: {
                     cancel: "Done"
@@ -2040,7 +2138,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isBuyerSelected = true;
           this.return = this.Selected_propertydetail_Service.matchesSellerCreate(this.matchesBuyer.userId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this4.isBuyerSelected = false;
+              _this9.isBuyerSelected = false;
               console.log("Done");
             }
           });
@@ -2347,31 +2445,31 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this5 = this;
+          var _this10 = this;
 
           // Auth
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this5.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this5.userData));
+              _this10.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this10.userData));
 
-              _this5.LoggedIn();
+              _this10.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this5.LoggedOut();
+              _this10.LoggedOut();
             }
           });
           this.listingBuyer = this.stateService.listingBuyer; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode).subscribe(function (data) {
-            _this5.postcodeCoordinates = data;
-            _this5.listingBuyer.longitude = _this5.postcodeCoordinates.result.longitude, _this5.listingBuyer.latitude = _this5.postcodeCoordinates.result.latitude, _this5.listingBuyer.UserId = _this5.userData.uid, _this5.isBuyer = true;
-            _this5.return = _this5.formsService.createCustomer(_this5.userData.uid, _this5.listingBuyer).then(function (data) {
+            _this10.postcodeCoordinates = data;
+            _this10.listingBuyer.longitude = _this10.postcodeCoordinates.result.longitude, _this10.listingBuyer.latitude = _this10.postcodeCoordinates.result.latitude, _this10.listingBuyer.UserId = _this10.userData.uid, _this10.isBuyer = true;
+            _this10.return = _this10.formsService.createCustomer(_this10.userData.uid, _this10.listingBuyer).then(function (data) {
               if (data == true) {
-                _this5.isBuyer = false;
-                console.log(_this5.listingBuyer.latitude);
-                console.log(_this5.userData.uid);
+                _this10.isBuyer = false;
+                console.log(_this10.listingBuyer.latitude);
+                console.log(_this10.userData.uid);
               }
             });
           });
@@ -2380,15 +2478,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this6 = this;
+          var _this11 = this;
 
           this.listingBuyer.UserId = this.userData.uid;
           this.isLoading = true;
           this.return = this.formsService.createCustomer(this.userData.uid, this.listingBuyer).then(function (data) {
             if (data == true) {
-              _this6.isLoading = false;
+              _this11.isLoading = false;
 
-              var dialogRef = _this6.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogBuyerDataSubmissionComponent"], {
+              var dialogRef = _this11.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogBuyerDataSubmissionComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -2656,29 +2754,29 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this12 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this7.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this7.userData));
+              _this12.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this12.userData));
 
-              _this7.LoggedIn();
+              _this12.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this7.LoggedOut();
+              _this12.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["switchMap"])(function (value) {
             if (value !== "") {
-              _this7.lookup(_this7.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this7.data = data;
+              _this12.lookup(_this12.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this12.data = data;
               });
 
-              return _this7.lookup(_this7.listingBuyer.Lookingpostcode);
+              return _this12.lookup(_this12.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -2688,11 +2786,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["switchMap"])(function (value) {
             if (value !== "") {
-              _this7.lookup(_this7.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this7.data = data;
+              _this12.lookup(_this12.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this12.data = data;
               });
 
-              return _this7.lookup(_this7.listingBuyer.Currentpostcode);
+              return _this12.lookup(_this12.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -3185,30 +3283,30 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ConfirmSellerDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this8 = this;
+          var _this13 = this;
 
           // Auth
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this8.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this8.userData));
+              _this13.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this13.userData));
 
-              _this8.LoggedIn();
+              _this13.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this8.LoggedOut();
+              _this13.LoggedOut();
             }
           });
           this.listingSeller = this.stateService.listingSeller; //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode).subscribe(function (data) {
-            _this8.postcodeCoordinates = data;
-            _this8.listingSeller.longitude = _this8.postcodeCoordinates.result.longitude, _this8.listingSeller.latitude = _this8.postcodeCoordinates.result.latitude, _this8.listingSeller.UserId = _this8.userData.uid, _this8.isBuyer = true;
-            _this8.return = _this8.SellerformService.createCustomer(_this8.userData.uid, _this8.listingSeller).then(function (data) {
+            _this13.postcodeCoordinates = data;
+            _this13.listingSeller.longitude = _this13.postcodeCoordinates.result.longitude, _this13.listingSeller.latitude = _this13.postcodeCoordinates.result.latitude, _this13.listingSeller.UserId = _this13.userData.uid, _this13.isBuyer = true;
+            _this13.return = _this13.SellerformService.createCustomer(_this13.userData.uid, _this13.listingSeller).then(function (data) {
               if (data == true) {
-                _this8.isBuyer = false;
-                console.log(_this8.listingSeller.latitude);
+                _this13.isBuyer = false;
+                console.log(_this13.listingSeller.latitude);
               }
             });
           });
@@ -3216,15 +3314,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this9 = this;
+          var _this14 = this;
 
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
           this.return = this.SellerformService.createCustomer(this.userData.uid, this.listingSeller).then(function (data) {
             if (data == true) {
-              _this9.isLoading = false;
+              _this14.isLoading = false;
 
-              var dialogRef = _this9.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
+              var dialogRef = _this14.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -3372,31 +3470,31 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this10 = this;
+          var _this15 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details
 
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (res) {
             res.forEach(function (item) {
-              if (item.data().Lookingpostcode == _this10.stateService.listingSeller.Lookingpostcode) {
-                _this10.matchedProperties.push(item.data()); //Use this object to populate html
+              if (item.data().Lookingpostcode == _this15.stateService.listingSeller.Lookingpostcode) {
+                _this15.matchedProperties.push(item.data()); //Use this object to populate html
 
               } else if (item.data().latitude && item.data().longitude) {
                 // console.log(item.data().postcode.latitude);
-                _this10.distanceInKm = _this10.getDistanceFromLatLonInKm(_this10.stateService.listingSeller.latitude, _this10.stateService.listingSeller.longitude, item.data().latitude, item.data().longitude);
+                _this15.distanceInKm = _this15.getDistanceFromLatLonInKm(_this15.stateService.listingSeller.latitude, _this15.stateService.listingSeller.longitude, item.data().latitude, item.data().longitude);
 
-                _this10.unmatchedProperties.push({
+                _this15.unmatchedProperties.push({
                   detail: item.data(),
-                  distance: _this10.distanceInKm
+                  distance: _this15.distanceInKm
                 });
 
                 console.log({
                   detail: item.data(),
-                  distance: _this10.distanceInKm
+                  distance: _this15.distanceInKm
                 });
               } else {
-                _this10.unmatchedProperties.push({
+                _this15.unmatchedProperties.push({
                   detail: item.data()
                 });
 
@@ -3406,7 +3504,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               }
             });
 
-            _this10.unmatchedProperties.sort(_this10.compare); // console.log(this.matchedProperties);
+            _this15.unmatchedProperties.sort(_this15.compare); // console.log(this.matchedProperties);
 
           });
         }
@@ -3817,35 +3915,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this11 = this;
+          var _this16 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this11.LookingStreetname = params.get("LookingStreetname");
-            _this11.Lookingpostcode = params.get('Lookingpostcode');
-            _this11.PropertyType = params.get('PropertyType');
-            _this11.Conditions = params.get('Conditions');
-            _this11.ChainStatus = params.get('ChainStatus');
-            _this11.Firstname = params.get('Firstname');
-            _this11.Lastname = params.get('Lastname');
-            _this11.Email = params.get("Email");
-            _this11.DOB = params.get("DOB");
-            _this11.FinancialPosition = params.get("FinancialPosition");
-            _this11.SearchRadius = params.get("SearchRadius");
-            _this11.PriceRange = params.get("PriceRange");
-            _this11.Validity = params.get("Validity");
-            _this11.Type = params.get("Type");
-            _this11.Position = params.get("Position");
-            _this11.UserId = params.get("UserId");
-            _this11.norooms = params.get("norooms");
+            _this16.LookingStreetname = params.get("LookingStreetname");
+            _this16.Lookingpostcode = params.get('Lookingpostcode');
+            _this16.PropertyType = params.get('PropertyType');
+            _this16.Conditions = params.get('Conditions');
+            _this16.ChainStatus = params.get('ChainStatus');
+            _this16.Firstname = params.get('Firstname');
+            _this16.Lastname = params.get('Lastname');
+            _this16.Email = params.get("Email");
+            _this16.DOB = params.get("DOB");
+            _this16.FinancialPosition = params.get("FinancialPosition");
+            _this16.SearchRadius = params.get("SearchRadius");
+            _this16.PriceRange = params.get("PriceRange");
+            _this16.Validity = params.get("Validity");
+            _this16.Type = params.get("Type");
+            _this16.Position = params.get("Position");
+            _this16.UserId = params.get("UserId");
+            _this16.norooms = params.get("norooms");
           });
         } //Create Database match Seller
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this12 = this;
+          var _this17 = this;
 
           this.matchesSeller = {
             LookingStreetname: this.LookingStreetname,
@@ -3870,9 +3968,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isSellerSelected = true;
           this.return = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this12.isSellerSelected = false;
+              _this17.isSellerSelected = false;
 
-              var dialogRef = _this12.dialog.open(_Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_5__["SelectedPropertyDialogComponent"], {
+              var dialogRef = _this17.dialog.open(_Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_5__["SelectedPropertyDialogComponent"], {
                 data: {
                   buttonText: {
                     cancel: "Done"
@@ -3904,7 +4002,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isSellerSelected = true;
           this.return = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this12.isSellerSelected = false;
+              _this17.isSellerSelected = false;
               console.log('Buyer Done');
             }
           });
@@ -4245,20 +4343,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this13 = this;
+          var _this18 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this13.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this13.userData));
+              _this18.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this18.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this13.LoggedIn();
+              _this18.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this13.LoggedOut();
+              _this18.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -4266,11 +4364,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["switchMap"])(function (value) {
             if (value !== "") {
-              _this13.lookup(_this13.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this13.data = data;
+              _this18.lookup(_this18.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this18.data = data;
               });
 
-              return _this13.lookup(_this13.listingSeller.Lookingpostcode);
+              return _this18.lookup(_this18.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_12__["of"])(null);
             }
@@ -4280,11 +4378,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_10__["switchMap"])(function (value) {
             if (value !== "") {
-              _this13.lookup(_this13.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this13.data = data;
+              _this18.lookup(_this18.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this18.data = data;
               });
 
-              return _this13.lookup(_this13.listingSeller.Currentpostcode);
+              return _this18.lookup(_this18.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_12__["of"])(null);
             }
@@ -4662,18 +4760,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this14 = this;
+          var _this19 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this14.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this14.userData));
+              _this19.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this19.userData));
 
-              _this14.LoggedIn();
+              _this19.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this14.LoggedOut();
+              _this19.LoggedOut();
             }
           });
         }
@@ -4687,13 +4785,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this15 = this;
+          var _this20 = this;
 
           this.stateService.agentSignup = this.agentSignup;
           this.isAgentSelected = true;
           this.return = this.AgentSignupServicee.createAgentCustomer(this.userData.uid, this.agentSignup).then(function (data) {
             if (data == true) {
-              _this15.isAgentSelected = false;
+              _this20.isAgentSelected = false;
             }
           });
         }
@@ -5147,7 +5245,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this21 = this;
 
           // User ID
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -5157,14 +5255,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             res.forEach(function (element) {
               console.log(element.data());
 
-              _this16.propertyDetails.push(element.data());
+              _this21.propertyDetails.push(element.data());
             });
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this16.propertyDetails.push(element.data());
+              _this21.propertyDetails.push(element.data());
             });
-            console.log(_this16.propertyDetails);
+            console.log(_this21.propertyDetails);
           });
         }
       }]);
@@ -5424,20 +5522,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this17 = this;
+          var _this22 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details Seller
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this17.property = element.data();
+              _this22.property = element.data();
             });
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this17.buyerProperty = element.data();
+              _this22.buyerProperty = element.data();
             });
           });
         }
@@ -5730,19 +5828,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this18 = this;
+          var _this23 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this18.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this18.userData));
+              _this23.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this23.userData));
 
-              _this18.LoggedIn();
+              _this23.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this18.LoggedOut();
+              _this23.LoggedOut();
             }
           });
         }
@@ -7579,7 +7677,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone // NgZone service to remove outside scope warning
       ) {
-        var _this19 = this;
+        var _this24 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -7592,8 +7690,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this19.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this19.userData));
+            _this24.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this24.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -7612,7 +7710,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee8() {
-            var _this20 = this;
+            var _this25 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee8$(_context8) {
@@ -7626,7 +7724,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 3:
                     result = _context8.sent;
                     this.ngZone.run(function () {
-                      _this20.router.navigate(["profile"]);
+                      _this25.router.navigate(["home"]);
                     });
                     this.SetUserData(result.user);
                     _context8.next = 11;
