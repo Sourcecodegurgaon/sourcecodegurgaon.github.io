@@ -39,6 +39,7 @@
     $(document).ready(function() {
       $('.close-img').hide();
       $('.nav-div').hide();
+
       $('.nav-div').slideUp();
       $('.open').click(function() {		
           $('.nav-div').slideDown("slow");
@@ -71,8 +72,13 @@
       });
 
 
-    
+     
+       $('.select-condition-button').click(function() {		
+       $('.button-cross').toggle();	
+       });
     });
+
+
 
 
 
