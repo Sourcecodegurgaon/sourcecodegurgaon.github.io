@@ -321,7 +321,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isAgentSelected\" class=\"loading-container\">\r\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n<div class=\"container property-detail-container\">\r\n    <h3 class=\"property-detail-h3\">Agent Signup</h3>\r\n    <div class=\"wrapper-detail-container\">\r\n      <form #addressForm=\"ngForm\"  (ngSubmit)=\"logValue()\" [formGroup]=\"myForm\">\r\n     <mat-card >\r\n            <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Name of Agent\" required\r\n                   name=\"name\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.Name\">\r\n              </mat-form-field>\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Contact Person\" \r\n                   name=\"ContactPerson\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.ContactPerson\" >\r\n              </mat-form-field>\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Phone Number\" \r\n                   name=\"Phone Number\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.PhoneNumber\" >\r\n              </mat-form-field>\r\n         \r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Email\" required\r\n                   name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.Email\">\r\n              </mat-form-field>\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Address\" required\r\n                   name=\"Address\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.Address\">\r\n              </mat-form-field>\r\n            </mat-card>\r\n        <mat-card class=\"mt-2\">     <mat-card-title class=\"signup-caution\">In which areas do you deal?</mat-card-title> </mat-card>\r\n        <mat-card class=\"mt-2\" >\r\n         <div class=\"search-postcode-field\" *ngFor=\"let Postcode of Postcodes; let i = index;\">\r\n            <mat-form-field class=\"\">\r\n                <input matInput placeholder=\"Search Postcode\" required\r\n                   name=\"SearchPostcode_{{i}}\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.SearchPostcode\" >\r\n              </mat-form-field>\r\n              <button mat-raised-button color=\"primary\" class=\"button-agent-signup\" (click)=\"addPostcodes()\">Add Postcode</button>\r\n         </div>\r\n        </mat-card>\r\n    <mat-card class=\"mt-2\">   <mat-card-title class=\"signup-caution-last\">*If your are national agent mail us at contactus@snapstreet.com</mat-card-title> </mat-card>\r\n    \r\n  <mat-card class=\" mt-2 button-card\">\r\n\r\n    <button mat-raised-button color=\"primary\" class=\"submit-agent-signup\" (click)=\"submitForm()\">Submit</button>\r\n\r\n  </mat-card>\r\n</form>\r\n  </div>\r\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isAgentSelected\" class=\"loading-container\">\r\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n\r\n<div class=\"container property-detail-container\">\r\n    <h3 class=\"property-detail-h3\">Agent Signup</h3>\r\n    <div class=\"wrapper-detail-container\">\r\n      <form #addressForm=\"ngForm\"  (ngSubmit)=\"logValue()\" >\r\n     <mat-card >\r\n            <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Name of Agent\" required\r\n                   name=\"name\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.Name\">\r\n              </mat-form-field>\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Contact Person\" \r\n                   name=\"ContactPerson\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.ContactPerson\" >\r\n              </mat-form-field>\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Phone Number\" \r\n                   name=\"Phone Number\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.PhoneNumber\" >\r\n              </mat-form-field>\r\n         \r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Email\" required\r\n                   name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.Email\">\r\n              </mat-form-field>\r\n\r\n              <mat-form-field class=\"example-full-width\">\r\n                <input matInput placeholder=\"Address\" required\r\n                   name=\"Address\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.Address\">\r\n              </mat-form-field>\r\n            \r\n            <mat-form-field class=\"example-full-width\">\r\n              <input matInput placeholder=\"Commission\" required\r\n                 name=\"Commission\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.commission\">\r\n            </mat-form-field>\r\n          </mat-card>\r\n\r\n\r\n        <mat-card class=\"mt-2\">     <mat-card-title class=\"signup-caution\">In which areas do you deal?</mat-card-title> </mat-card>\r\n        <mat-card class=\"mt-2\" >\r\n         <div class=\"search-postcode-field\" *ngFor=\"let Postcode of Postcodes; let i = index;\">\r\n            <mat-form-field class=\"\">\r\n                <input matInput placeholder=\"Search Postcode\" required\r\n                   name=\"SearchPostcode_{{i}}\" class=\"mat-mail-input\" [(ngModel)]=\"agentSignup.SearchPostcode\" >\r\n              </mat-form-field>\r\n              <button mat-raised-button color=\"primary\" class=\"button-agent-signup\" (click)=\"addPostcodes()\">Add Postcode</button>\r\n         </div>\r\n        </mat-card>\r\n    <mat-card class=\"mt-2\">   <mat-card-title class=\"signup-caution-last\">*If your are national agent mail us at contactus@snapstreet.com</mat-card-title> </mat-card>\r\n    \r\n  <mat-card class=\" mt-2 button-card\">\r\n\r\n    <button mat-raised-button color=\"primary\" class=\"submit-agent-signup\" (click)=\"submitForm()\">Submit</button>\r\n\r\n  </mat-card>\r\n</form>\r\n  </div>\r\n</div>";
     /***/
   },
 
@@ -401,7 +401,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"container property-detail-container\">\n    <h3 class=\"property-detail-h3\">{{LookingAddress}}</h3>\n    <div class=\"wrapper-detail-container\">\n      <div id=\"demo\" >\n        <img *ngIf=\"PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images\">\n        <img *ngIf=\"PropertyType=='TerraceHouse'\" src=\"assets/Images/Terraced.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='Park Home'\" src=\"assets/Images/Park Home.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images  \">\n        <!-- Left and right controls -->\n      </div>\n      <div class=\"streetname\">\n        <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings\">Pincode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p\">{{Lookingpostcode}}</mat-card-subtitle>\n        </mat-card>\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings\">County</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p\">{{Lookingstate}}</mat-card-subtitle>\n      </mat-card>\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings\">Address</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p\">{{LookingAddress}}</mat-card-subtitle>\n    </mat-card>\n    <mat-card class=\"Mat-card-div\">\n      <mat-card-title class=\"details-p-headings\">No of Rooms</mat-card-title>\n      <mat-card-subtitle class=\"details-output-p\">{{norooms}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Property Condition</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{PropertyCondition}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Price Range(offer)</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{MinAmount}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Ownership</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{ownership}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Property Type</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{PropertyType}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Applicable Feature</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{features}}</mat-card-subtitle>\n  </mat-card>\n      </div>\n      <div class=\"selected-button\">\n        <button mat-raised-button color=\"primary\">Express Interest</button>\n      </div>\n    </div>\n  </div>\n  \n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"container property-detail-container\">\n    <h3 class=\"property-detail-h3\">{{LookingAddress}}</h3>\n    <div class=\"wrapper-detail-container\">\n      <div id=\"demo\" >\n        <img *ngIf=\"PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images\">\n        <img *ngIf=\"PropertyType=='TerraceHouse'\" src=\"assets/Images/Terraced.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='ParkHome'\" src=\"assets/Images/Park Home.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images  \">\n        <!-- Left and right controls -->\n      </div>\n      <div class=\"streetname\">\n        <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings\">Pincode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p\">{{Lookingpostcode}}</mat-card-subtitle>\n        </mat-card>\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings\">County</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p\">{{Lookingstate}}</mat-card-subtitle>\n      </mat-card>\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings\">Address</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p\">{{LookingAddress}}</mat-card-subtitle>\n    </mat-card>\n    <mat-card class=\"Mat-card-div\">\n      <mat-card-title class=\"details-p-headings\">No of Rooms</mat-card-title>\n      <mat-card-subtitle class=\"details-output-p\">{{norooms}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Property Condition</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{PropertyCondition}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Price Range(offer)</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{MinAmount}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Ownership</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{ownership}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Property Type</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{PropertyType}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Applicable Feature</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{features}}</mat-card-subtitle>\n  </mat-card>\n\n  <div class=\"selected-button\">\n    <button mat-raised-button color=\"primary\" *ngIf=\"matchStatus=='pending'\" disabled>Pending</button>\n    <button mat-raised-button color=\"primary\" *ngIf=\"matchStatus=='confirm_interest'\">Confirm  Interest</button>\n  </div>\n\n      </div>\n   \n    </div>\n  </div>\n  \n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.html":
+  /*!***********************************************************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.html ***!
+    \***********************************************************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppMenuMyMatchesMyMatchesToSellSelectedDetailMyMatchesToSellSelectedDetailComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"container property-detail-container\">\n    <h3 class=\"property-detail-h3\">{{LookingAddress}}</h3>\n    <div class=\"wrapper-detail-container\">\n      <div id=\"demo\" >\n        <img *ngIf=\"PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images\">\n        <img *ngIf=\"PropertyType=='TerraceHouse'\" src=\"assets/Images/Terraced.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='ParkHome'\" src=\"assets/Images/Park Home.svg\" class=\"match-images  \">\n        <img *ngIf=\"PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images  \">\n        <!-- Left and right controls -->\n      </div>\n      <div class=\"streetname\">\n        <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings\">Pincode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p\">{{Lookingpostcode}}</mat-card-subtitle>\n        </mat-card>\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings\">County</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p\">{{Lookingstate}}</mat-card-subtitle>\n      </mat-card>\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings\">Address</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p\">{{LookingAddress}}</mat-card-subtitle>\n    </mat-card>\n    <mat-card class=\"Mat-card-div\">\n      <mat-card-title class=\"details-p-headings\">No of Rooms</mat-card-title>\n      <mat-card-subtitle class=\"details-output-p\">{{norooms}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Property Condition</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{PropertyCondition}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Price Range(offer)</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{MinAmount}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Ownership</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{ownership}}</mat-card-subtitle>\n  </mat-card>\n  <mat-card class=\"Mat-card-div\">\n    <mat-card-title class=\"details-p-headings\">Property Type</mat-card-title>\n    <mat-card-subtitle class=\"details-output-p\">{{PropertyType}}</mat-card-subtitle>\n  </mat-card>\n\n\n  <div class=\"selected-button\">\n    <button mat-raised-button color=\"primary\" *ngIf=\"matchStatus=='pending'\" disabled>Pending</button>\n    <button mat-raised-button color=\"primary\"  *ngIf=\"matchStatus=='confirm_interest'\" >Confirm  Interest</button>\n  </div>\n\n      </div>\n   \n    </div>\n  </div>\n  \n\n";
     /***/
   },
 
@@ -421,7 +441,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\r\n    <mat-tab label=\"To Sell\" class=\"mat-tab-label\" *ngIf=\"sellerProperty\">\r\n      <mat-card-title class=\"pending-matches-title\">Pending Matches</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.norooms}}/{{property.PropertyCondition}}/{{property.MinAmount}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.ownership}}/{{property.features}}' *ngFor=\"let property of sellerProperty\">\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img *ngIf=\"property.PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images float-left\">\r\n            <img *ngIf=\"property.PropertyType=='TerraceHouse'\" src=\"assets/Images/Terraced.svg\"\r\n              class=\"match-images float-left\">\r\n            <img *ngIf=\"property.PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\"\r\n              class=\"match-images float-left\">\r\n            <img *ngIf=\"property.PropertyType=='ParkHome'\" src=\"assets/Images/Park Home.svg\"\r\n              class=\"match-images float-left\">\r\n            <img *ngIf=\"property.PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images float-left\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:{{property.LookingTown}}</span><br>\r\n                <span class=\"discription-p\"> Position:{{property.Position}}</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:{{property.PropertyType}}\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:{{property.Lookingpostcode}}</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n      <mat-card-title class=\"pending-matches-title\">Confirmed Matches</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n\r\n      <mat-card-title class=\"pending-matches-title\">Confirmed Agent</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n    </mat-tab>\r\n\r\n\r\n\r\n    <mat-tab label=\"To Buy\" class=\"mat-tab-label\" *ngIf=\"buyerProperty\">\r\n\r\n      <mat-card-title class=\"pending-matches-title\">Pending Matches</mat-card-title> \r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail'  >\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img *ngIf=\"buyerProperty.PropertyType =='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images float-left\">\r\n      <img *ngIf=\"buyerProperty.PropertyType=='TerraceHouse'\" src=\"assets/Images/Terraced.svg\" class=\"match-images float-left\">\r\n      <img *ngIf=\"buyerProperty.PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\" class=\"match-images float-left\">\r\n      <img *ngIf=\"buyerProperty.PropertyType=='ParkHome'\" src=\"assets/Images/Park Home.svg\" class=\"match-images float-left\">\r\n      <img *ngIf=\"buyerProperty.PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images float-left\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:{{buyerProperty.LookingStreetname}}</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:{{buyerProperty.norooms}}</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:{{buyerProperty.PropertyType}}\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:{{buyerProperty.Lookingpostcode}}</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section> \r\n\r\n\r\n      <mat-card-title class=\"pending-matches-title\">Confirmed Matches</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/selectedpropertydetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/selectedpropertydetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n      <mat-card-title class=\"pending-matches-title\">Confirmed Agent</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/selectedpropertydetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/selectedpropertydetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\r\n    <mat-tab label=\"To Buy\" class=\"mat-tab-label\" *ngIf=\"sellerProperty\">\r\n      <mat-card-title class=\"pending-matches-title\">Pending Matches</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.norooms}}/{{property.PropertyCondition}}/{{property.MinAmount}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.ownership}}/{{property.features}}/{{property.matchStatus}}' *ngFor=\"let property of sellerProperty\">\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img *ngIf=\"property.PropertyType=='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images float-left\">\r\n            <img *ngIf=\"property.PropertyType=='TerraceHouse'\" src=\"assets/Images/Terraced.svg\"\r\n              class=\"match-images float-left\">\r\n            <img *ngIf=\"property.PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\"\r\n              class=\"match-images float-left\">\r\n            <img *ngIf=\"property.PropertyType=='ParkHome'\" src=\"assets/Images/Park Home.svg\"\r\n              class=\"match-images float-left\">\r\n            <img *ngIf=\"property.PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images float-left\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:{{property.LookingTown}}</span><br>\r\n                <span class=\"discription-p\"> Position:{{property.Position}}</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:{{property.PropertyType}}\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:{{property.Lookingpostcode}}</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n      <mat-card-title class=\"pending-matches-title\">Confirmed Matches</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n\r\n      <mat-card-title class=\"pending-matches-title\">Confirmed Agent</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/mymatchesselecteddetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n    </mat-tab>\r\n\r\n\r\n\r\n    \r\n\r\n    <mat-tab label=\"To Sell\" class=\"mat-tab-label\" *ngIf=\"buyerProperty\">\r\n\r\n      <mat-card-title class=\"pending-matches-title\">Pending Matches</mat-card-title> \r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/MyMatchesseller/{{buyerProperty.Lookingpostcode}}/{{buyerProperty.Lookingstate}}/{{buyerProperty.LookingAddress}}/{{buyerProperty.norooms}}/{{buyerProperty.PropertyCondition}}/{{buyerProperty.MinAmount}}/{{buyerProperty.PropertyType}}/{{buyerProperty.ownership}}/{{buyerProperty.matchStatus}}'  >\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img *ngIf=\"buyerProperty.PropertyType =='Flat'\" src=\"assets/Images/Flat.svg\" class=\"match-images float-left\">\r\n      <img *ngIf=\"buyerProperty.PropertyType=='TerraceHouse'\" src=\"assets/Images/Terraced.svg\" class=\"match-images float-left\">\r\n      <img *ngIf=\"buyerProperty.PropertyType=='Semi-detached'\" src=\"assets/Images/Semi-detached.svg\" class=\"match-images float-left\">\r\n      <img *ngIf=\"buyerProperty.PropertyType=='ParkHome'\" src=\"assets/Images/Park Home.svg\" class=\"match-images float-left\">\r\n      <img *ngIf=\"buyerProperty.PropertyType=='Land'\" src=\"assets/Images/Land.svg\" class=\"match-images float-left\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:{{buyerProperty.LookingAddress}}</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:{{buyerProperty.norooms}}</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:{{buyerProperty.PropertyType}}\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:{{buyerProperty.Lookingpostcode}}</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section> \r\n\r\n\r\n      <mat-card-title class=\"pending-matches-title\">Confirmed Matches</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/selectedpropertydetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/selectedpropertydetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n      <mat-card-title class=\"pending-matches-title\">Confirmed Agent</mat-card-title>\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/selectedpropertydetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/selectedpropertydetail'>\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img src=\"assets/Images/Flat.svg\" class=\"match-images\">\r\n            <div class=\"match-content\">\r\n              <p>\r\n                <span class=\"discription-p\">Street Name:Tes</span><br>\r\n                <span class=\"discription-p\">No of bedrooms:</span><br>\r\n                <span class=\"discription-p\"> Serach Radius:</span><br>\r\n                <span class=\"discription-p property-type-color\">Type of Property:\r\n                </span><br>\r\n                <span class=\"discription-p\">Post Code:</span>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n\r\n    </mat-tab>\r\n  </mat-tab-group>\r\n</div>\r\n";
     /***/
   },
 
@@ -681,7 +701,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n  <mat-card>\n    <h4>Login</h4>\n    <div class=\"social-button mt-4\">\n      <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n        Facebook\n      </button>\n      <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\n        Google+\n      </button>\n    </div>\n    <div class=\"input-group mb-3 mt-3\">\n\n      <mat-form-field class=\"example-full-width\">\n        <input matInput placeholder=\"Enter email\" #userEmailLogin type=\"email\">\n      </mat-form-field>\n\n    </div>\n    <mat-form-field class=\"example-full-width\">\n      <input matInput placeholder=\"Password\" #userPasswordLogin type=\"password\">\n    </mat-form-field>\n\n    <div class=\"input-group-prepend other-option\">\n      <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n    </div>\n    <button type=\"button\" class=\"btn btn-social-login\" (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\n      Login\n    </button>\n  </mat-card>\n  <mat-card class=\"mt-4\">\n\n    <div class=\"sign-up\">\n      <div class=\"signup-heading\">\n        <h4>or <span class=\"color-signup\">Sign up</span></h4><br>\n      </div>\n      <div class=\"social-button mt-2\">\n        <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n          Facebook\n        </button>\n        <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\n          Google+\n        </button>\n      </div>\n      <div class=\"input-group mb-3 mt-3\">\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Name\" #Name>\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Enter email\" #userEmailRegister type=\"email\">\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Password\" #userPasswordRegister type=\"password\">\n        </mat-form-field>\n\n      </div>\n    </div>\n    <button type=\"button\" class=\"btn btn-social-login\"\n      (click)=\"signUp(userEmailRegister.value, userPasswordRegister.value)\">\n      Sign Up\n    </button>\n  </mat-card>\n</div>\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n<div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n  <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\n    <h4>Login</h4>\n    <div class=\"social-button mt-4\">\n      <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n        Facebook\n      </button>\n      <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\n        Google+\n      </button>\n    </div>\n    <div class=\"input-group mb-3 mt-3\">\n\n      <mat-form-field class=\"example-full-width\">\n        <input matInput placeholder=\"Enter email\" #userEmailLogin type=\"email\">\n      </mat-form-field>\n\n    </div>\n    <mat-form-field class=\"example-full-width\">\n      <input matInput placeholder=\"Password\" #userPasswordLogin type=\"password\">\n    </mat-form-field>\n\n    <div class=\"input-group-prepend other-option\">\n      <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n    </div>\n    <button type=\"button\" class=\"btn btn-social-login\" (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\n      Login\n    </button>\n    <p class=\"dont-have-account pt-2\" id=\"#dont-have-account\"  (click)=\"NewUser()\">Dont have an account?Click here to register</p>\n  </mat-card>\n  <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\n\n    <div class=\"sign-up\">\n      <div class=\"signup-heading\">\n        <h4>or <span class=\"color-signup\">Sign up</span></h4><br>\n      </div>\n      <div class=\"social-button mt-2\">\n        <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n          Facebook\n        </button>\n        <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\n          Google+\n        </button>\n      </div>\n      <div class=\"input-group mb-3 mt-3\">\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Name\" #Name>\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Enter email\" #userEmailRegister type=\"email\">\n        </mat-form-field>\n\n        <mat-form-field class=\"example-full-width\">\n          <input matInput placeholder=\"Password\" #userPasswordRegister type=\"password\">\n        </mat-form-field>\n\n      </div>\n      <button type=\"button\" class=\"btn btn-social-login\"\n      (click)=\"signUp(userEmailRegister.value, userPasswordRegister.value)\">\n      Sign Up\n    </button>\n    <p class=\"dont-have-account pt-2\" (click)=\"OldUser()\">Already have an account? Click here to sign in</p>\n    </div>\n \n  </mat-card>\n</div>\n";
     /***/
   },
 
@@ -2144,7 +2164,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             Email: this.Email,
             DOB: this.DOB,
             UserId: this.UserId,
-            MinAmount: this.MinAmount
+            MinAmount: this.MinAmount,
+            matchStatus: "pending"
           };
           this.isBuyerSelected = true;
           this.return = this.Selected_propertydetail_Service.matchesBuyerCreate(this.uid, this.matchesBuyer).then(function (data) {
@@ -2176,7 +2197,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             Email: this.Email,
             DOB: this.DOB,
             UserId: this.UserId,
-            MinAmount: this.MinAmount
+            MinAmount: this.MinAmount,
+            matchStatus: 'confirm_interest'
           };
           this.isBuyerSelected = true;
           this.return = this.Selected_propertydetail_Service.matchesSellerCreate(this.UserId, this.matchesSeller).then(function (data) {
@@ -4010,7 +4032,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             Type: this.Type,
             Position: this.Position,
             UserId: this.UserId,
-            norooms: this.norooms
+            norooms: this.norooms,
+            matchStatus: 'Pending'
           };
           console.log(this.UserId);
           this.isSellerSelected = true;
@@ -4044,7 +4067,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             Type: this.Type,
             Position: this.Position,
             UserId: this.UserId,
-            norooms: this.norooms
+            norooms: this.norooms,
+            matchStatus: 'Confirm_interest'
           };
           console.log(this.UserId);
           this.isSellerSelected = true;
@@ -5423,6 +5447,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             _this22.PropertyType = params.get("PropertyType");
             _this22.ownership = params.get("ownership");
             _this22.features = params.get("features");
+            _this22.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -5447,6 +5472,116 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       /*! ./my-matches-selected-details.component.css */
       "./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.css")).default]
     })], MyMatchesSelectedDetailsComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.css":
+  /*!********************************************************************************************************************!*\
+    !*** ./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.css ***!
+    \********************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppMenuMyMatchesMyMatchesToSellSelectedDetailMyMatchesToSellSelectedDetailComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "img.match-images {\r\n    height: 18vh;\r\n}\r\ndiv#demo {\r\n    display: flex;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n    margin: 10px;\r\n}\r\nh3.property-detail-h3 {\r\n    text-align: center;\r\n}\r\n.Mat-card-div {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    margin-bottom: 2vh;\r\n}\r\n.details-p-headings{\r\n    font-size: 16px;\r\n}\r\n.selected-button {\r\n    display: flex;\r\n    justify-content: center;\r\n    margin: 1em;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvbXktbWF0Y2hlcy10by1zZWxsLXNlbGVjdGVkLWRldGFpbC9teS1tYXRjaGVzLXRvLXNlbGwtc2VsZWN0ZWQtZGV0YWlsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtJQUNuQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9NZW51L215TWF0Y2hlcy9teS1tYXRjaGVzLXRvLXNlbGwtc2VsZWN0ZWQtZGV0YWlsL215LW1hdGNoZXMtdG8tc2VsbC1zZWxlY3RlZC1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImltZy5tYXRjaC1pbWFnZXMge1xyXG4gICAgaGVpZ2h0OiAxOHZoO1xyXG59XHJcbmRpdiNkZW1vIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBtYXJnaW46IDEwcHg7XHJcbn1cclxuaDMucHJvcGVydHktZGV0YWlsLWgzIHtcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxufVxyXG4uTWF0LWNhcmQtZGl2IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMnZoO1xyXG59XHJcbi5kZXRhaWxzLXAtaGVhZGluZ3N7XHJcbiAgICBmb250LXNpemU6IDE2cHg7XHJcbn1cclxuLnNlbGVjdGVkLWJ1dHRvbiB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBtYXJnaW46IDFlbTtcclxufVxyXG4iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.ts":
+  /*!*******************************************************************************************************************!*\
+    !*** ./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.ts ***!
+    \*******************************************************************************************************************/
+
+  /*! exports provided: MyMatchesToSellSelectedDetailComponent */
+
+  /***/
+  function srcAppMenuMyMatchesMyMatchesToSellSelectedDetailMyMatchesToSellSelectedDetailComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MyMatchesToSellSelectedDetailComponent", function () {
+      return MyMatchesToSellSelectedDetailComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+
+    var MyMatchesToSellSelectedDetailComponent =
+    /*#__PURE__*/
+    function () {
+      function MyMatchesToSellSelectedDetailComponent(_Activatedroute, _router) {
+        _classCallCheck(this, MyMatchesToSellSelectedDetailComponent);
+
+        this._Activatedroute = _Activatedroute;
+        this._router = _router;
+      }
+
+      _createClass(MyMatchesToSellSelectedDetailComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this23 = this;
+
+          this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
+            _this23.Lookingpostcode = params.get("Lookingpostcode");
+            _this23.Lookingstate = params.get("Lookingstate");
+            _this23.LookingAddress = params.get("LookingAddress");
+            _this23.norooms = params.get("norooms");
+            _this23.PropertyCondition = params.get("PropertyCondition");
+            _this23.MinAmount = params.get("MinAmount");
+            _this23.PropertyType = params.get("PropertyType");
+            _this23.ownership = params.get("ownership");
+            _this23.matchStatus = params.get("matchStatus");
+          });
+        }
+      }]);
+
+      return MyMatchesToSellSelectedDetailComponent;
+    }();
+
+    MyMatchesToSellSelectedDetailComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }];
+    };
+
+    MyMatchesToSellSelectedDetailComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-my-matches-to-sell-selected-detail',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./my-matches-to-sell-selected-detail.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./my-matches-to-sell-selected-detail.component.css */
+      "./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.css")).default]
+    })], MyMatchesToSellSelectedDetailComponent);
     /***/
   },
 
@@ -5538,7 +5673,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this23 = this;
+          var _this24 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -5548,17 +5683,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             res.forEach(function (element) {
               console.log("Seller " + element);
 
-              _this23.sellerProperty.push(element.data());
+              _this24.sellerProperty.push(element.data());
 
-              console.log("Seller matches " + JSON.stringify(_this23.sellerProperty));
+              console.log("Seller matches " + JSON.stringify(_this24.sellerProperty));
             });
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               console.log("Buyer " + element);
-              _this23.buyerProperty = element.data();
-              console.log("Buyer matches " + JSON.stringify(_this23.buyerProperty));
+              _this24.buyerProperty = element.data();
+              console.log("Buyer matches " + JSON.stringify(_this24.buyerProperty));
             });
           });
         }
@@ -5932,19 +6067,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this24 = this;
+          var _this25 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this24.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this24.userData));
+              _this25.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this25.userData));
 
-              _this24.LoggedIn();
+              _this25.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this24.LoggedOut();
+              _this25.LoggedOut();
             }
           });
         }
@@ -7079,6 +7214,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! ./Misc/privacy-policy/privacy-policy.component */
     "./src/app/Misc/privacy-policy/privacy-policy.component.ts");
+    /* harmony import */
+
+
+    var _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    /*! ./Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component */
+    "./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.ts");
 
     var routes = [{
       path: "Property/:use",
@@ -7141,7 +7282,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       path: "verify-email-address",
       component: _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_20__["VerifyEmailComponent"]
     }, {
-      path: "mymatchesselecteddetail/:Lookingpostcode/:LookingAddress/:norooms/:PropertyCondition/:MinAmount/:Lookingstate/:PropertyType/:ownership/:features",
+      path: "mymatchesselecteddetail/:Lookingpostcode/:LookingAddress/:norooms/:PropertyCondition/:MinAmount/:Lookingstate/:PropertyType/:ownership/:features/:matchStatus",
       component: _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_24__["MyMatchesSelectedDetailsComponent"]
     }, {
       path: "agentSignup",
@@ -7152,6 +7293,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     }, {
       path: "PrivacyPolicy",
       component: _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_27__["PrivacyPolicyComponent"]
+    }, {
+      path: "MyMatchesseller/:Lookingpostcode/:Lookingstate/:LookingAddress/:norooms/:PropertyCondition/:MinAmount/:PropertyType/:ownership/:matchStatus",
+      component: _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_28__["MyMatchesToSellSelectedDetailComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -7792,7 +7936,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
     var _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(
     /*! ./Misc/privacy-policy/privacy-policy.component */
-    "./src/app/Misc/privacy-policy/privacy-policy.component.ts"); // Firebase modules
+    "./src/app/Misc/privacy-policy/privacy-policy.component.ts");
+    /* harmony import */
+
+
+    var _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(
+    /*! ./Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component */
+    "./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.ts"); // Firebase modules
 
 
     var AppModule = function AppModule() {
@@ -7800,7 +7950,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_83__["MyMatchesSelectedDetailsComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_84__["AgentSignupComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_agentSelection_agentSelection_component__WEBPACK_IMPORTED_MODULE_85__["AgentSelectionComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_86__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_87__["PrivacyPolicyComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_83__["MyMatchesSelectedDetailsComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_84__["AgentSignupComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_agentSelection_agentSelection_component__WEBPACK_IMPORTED_MODULE_85__["AgentSelectionComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_86__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_87__["PrivacyPolicyComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_88__["MyMatchesToSellSelectedDetailComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_24__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_28__["environment"].firebaseConfig, 'street'), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_27__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_26__["AngularFireStorageModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_23__["AngularFireDatabaseModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_34__["BrowserAnimationsModule"], _Misc_material__WEBPACK_IMPORTED_MODULE_77__["MaterialModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_35__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_39__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_40__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_41__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_36__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_42__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_43__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_44__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_45__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_46__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_47__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_48__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_49__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_50__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_51__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_52__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_53__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_54__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_55__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_56__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_57__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_58__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_59__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_61__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_62__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_63__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_64__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_65__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_66__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_67__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_68__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_69__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_70__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_71__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_73__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_74__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_75__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_37__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_38__["ScrollingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_79__["HttpClientModule"]],
       entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_22__["AuthService"], {
@@ -7881,7 +8031,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone // NgZone service to remove outside scope warning
       ) {
-        var _this25 = this;
+        var _this26 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -7894,8 +8044,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this25.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this25.userData));
+            _this26.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this26.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -7914,7 +8064,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee8() {
-            var _this26 = this;
+            var _this27 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee8$(_context8) {
@@ -7928,7 +8078,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 3:
                     result = _context8.sent;
                     this.ngZone.run(function () {
-                      _this26.router.navigate(["home"]);
+                      _this27.router.navigate(["home"]);
                     });
                     this.SetUserData(result.user);
                     _context8.next = 11;
@@ -8337,7 +8487,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".back {\n  background-image: url(/assets/Images/handshake.jpg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n\n  font-family: 'Open Sans', sans-serif;\n  position: relative;\n  top: -145px;\n}\n\n.home-button {\n  background-color: #244D93;\n  color: white;\n  width: 35%;\n}\n\n@font-face {\n  font-family: 'Segoe UI Regular';\n  font-style: normal;\n  font-weight: normal;\n  src: local('Segoe UI Regular'), url('/assets/font/Segoe UI.woff') format('woff');\n}\n\n.home-text-font {\n  font-family: 'Segoe UI Regular';\n  color: #707070;\n  margin-bottom: 0.5rem;\n}\n\n.btn-facebook {\n  background-color: #244D93;\n  color: white;\n  width: 30%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.btn-google {\n  background-color: #DD4B33;\n  color: white;\n  width: 30%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.social-login h4 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 700;\n}\n\n.social-button {\n  display: flex;\n  /* justify-content: center; */\n  justify-content: space-evenly;\n  align-items: center;\n\n}\n\n.color-signup {\n  color: #244D93;\n}\n\n.btn-social-login {\n  width: 100%;\n  background-color: #244D93;\n  color: white;\n  margin-top: 3%;\n  font-family: 'Open Sans', sans-serif;\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGVtcGxhdGUvdGVtcGxhdGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1EQUFtRDtFQUNuRCxXQUFXO0VBQ1gsWUFBWTtFQUNaLDRCQUE0QjtFQUM1QixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixxQkFBcUI7RUFDckIsWUFBWTs7RUFFWixvQ0FBb0M7RUFDcEMsa0JBQWtCO0VBQ2xCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtBQUNaOztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsZ0ZBQWdGO0FBQ2xGOztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLFVBQVU7RUFDVixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLG9DQUFvQztFQUNwQyxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLDZCQUE2QjtFQUM3QixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGNBQWM7RUFDZCxvQ0FBb0M7O0FBRXRDOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFVBQVU7RUFDVixXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixlQUFlO0VBQ2YsUUFBUTtFQUNSLFNBQVM7RUFFVCxhQUFhO0VBRWIsdUJBQXVCO0VBRXZCLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZCIsImZpbGUiOiJzcmMvYXBwL3RlbXBsYXRlL3RlbXBsYXRlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFjayB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgvYXNzZXRzL0ltYWdlcy9oYW5kc2hha2UuanBnKTtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cblxuLnVwcGVyLWJhY2sge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMjUwcHg7XG4gIG9wYWNpdHk6IDAuNTtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xufVxuXG4udXBwZXItYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgei1pbmRleDogMTAwO1xuXG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xNDVweDtcbn1cblxuLmhvbWUtYnV0dG9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBSZWd1bGFyJztcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBzcmM6IGxvY2FsKCdTZWdvZSBVSSBSZWd1bGFyJyksIHVybCgnL2Fzc2V0cy9mb250L1NlZ29lIFVJLndvZmYnKSBmb3JtYXQoJ3dvZmYnKTtcbn1cblxuLmhvbWUtdGV4dC1mb250IHtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBSZWd1bGFyJztcbiAgY29sb3I6ICM3MDcwNzA7XG4gIG1hcmdpbi1ib3R0b206IDAuNXJlbTtcbn1cblxuLmJ0bi1mYWNlYm9vayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgd2lkdGg6IDMwJTtcbiAgaGVpZ2h0OiAzNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjogMHB4O1xuICBwYWRkaW5nOiAwcHg7XG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbn1cblxuLmJ0bi1nb29nbGUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjREQ0QjMzO1xuICBjb2xvcjogd2hpdGU7XG4gIHdpZHRoOiAzMCU7XG4gIGhlaWdodDogMzVweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW46IDBweDtcbiAgcGFkZGluZzogMHB4O1xuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG59XG5cbi5zb2NpYWwtbG9naW4gaDQge1xuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG59XG5cbi5zb2NpYWwtYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG59XG5cbi5jb2xvci1zaWdudXAge1xuICBjb2xvcjogIzI0NEQ5Mztcbn1cblxuLmJ0bi1zb2NpYWwtbG9naW4ge1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgY29sb3I6IHdoaXRlO1xuICBtYXJnaW4tdG9wOiAzJTtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuXG59XG5cbmkuZmEuZmEtdXNlci5pbnB1dC1ncm91cC10ZXh0Lm5hdi1sb2dpbi1mb3JtIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBmb250LXNpemU6IDIzcHg7XG4gIGxlZnQ6IDBweDtcbiAgd2lkdGg6IDEwJTtcbiAgei1pbmRleDogMTA7XG4gIG1hcmdpbi10b3A6IC00JTtcbn1cblxuLnNvY2lhbC1sb2dpbi50ZXh0LWNlbnRlciB7XG4gIHBhZGRpbmc6IDE1cHg7XG59XG5cbi5jaGVja2JveCB7XG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLWxlZnQ6IG5vbmU7XG4gIGJvcmRlci1yaWdodDogbm9uZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICAvKiBkaXNwbGF5OiBibG9jazsgKi9cbiAgaGVpZ2h0OiBhdXRvO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogbm9uZTtcbiAgbGVmdDogbm9uZTtcbiAgcmlnaHQ6IDlweDtcbiAgd2lkdGg6IG5vbmU7XG4gIC8qIHRyYW5zaXRpb246IGFsbCAuMnM7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG5cbn1cblxuLmV4YW1wbGUtZm9ybSB7XG4gIG1pbi13aWR0aDogMTUwcHg7XG4gIG1heC13aWR0aDogNTAwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJvcmRlcjogbm9uZTtcbn1cblxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgcG9zaXRpb246IGZpeGVkO1xuICB0b3A6IDBweDtcbiAgbGVmdDogMHB4O1xuICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgZGlzcGxheTogZmxleDtcbiAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgei1pbmRleDogOTtcbiAgYmFja2dyb3VuZDogYmxhY2s7XG4gIG9wYWNpdHk6IDAuNTtcbn1cbiJdfQ== */";
+    __webpack_exports__["default"] = ".back {\n  background-image: url(/assets/Images/handshake.jpg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n\n  font-family: 'Open Sans', sans-serif;\n  position: relative;\n  top: -145px;\n}\n\n.home-button {\n  background-color: #244D93;\n  color: white;\n  width: 35%;\n}\n\n@font-face {\n  font-family: 'Segoe UI Regular';\n  font-style: normal;\n  font-weight: normal;\n  src: local('Segoe UI Regular'), url('/assets/font/Segoe UI.woff') format('woff');\n}\n\n.home-text-font {\n  font-family: 'Segoe UI Regular';\n  color: #707070;\n  margin-bottom: 0.5rem;\n}\n\n.btn-facebook {\n  background-color: #244D93;\n  color: white;\n  width: 30%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.btn-google {\n  background-color: #DD4B33;\n  color: white;\n  width: 30%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.social-login h4 {\n  font-family: 'Open Sans', sans-serif;\n  font-weight: 700;\n}\n\n.social-button {\n  display: flex;\n  /* justify-content: center; */\n  justify-content: space-evenly;\n  align-items: center;\n\n}\n\n.color-signup {\n  color: #244D93;\n}\n\n.btn-social-login {\n  width: 100%;\n  background-color: #244D93;\n  color: white;\n  margin-top: 3%;\n  font-family: 'Open Sans', sans-serif;\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n\n.sign-in-main\n{\n  display: block;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdGVtcGxhdGUvdGVtcGxhdGUuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLG1EQUFtRDtFQUNuRCxXQUFXO0VBQ1gsWUFBWTtFQUNaLDRCQUE0QjtFQUM1QixzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UsYUFBYTtFQUNiLDZCQUE2QjtFQUM3QixxQkFBcUI7RUFDckIsWUFBWTs7RUFFWixvQ0FBb0M7RUFDcEMsa0JBQWtCO0VBQ2xCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtBQUNaOztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsZ0ZBQWdGO0FBQ2xGOztBQUVBO0VBQ0UsK0JBQStCO0VBQy9CLGNBQWM7RUFDZCxxQkFBcUI7QUFDdkI7O0FBRUE7RUFDRSx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLFVBQVU7RUFDVixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0VBQ1osb0NBQW9DO0FBQ3RDOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTtFQUNaLG9DQUFvQztBQUN0Qzs7QUFFQTtFQUNFLG9DQUFvQztFQUNwQyxnQkFBZ0I7QUFDbEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLDZCQUE2QjtFQUM3QixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGNBQWM7RUFDZCxvQ0FBb0M7O0FBRXRDOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFVBQVU7RUFDVixXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixlQUFlO0VBQ2YsUUFBUTtFQUNSLFNBQVM7RUFFVCxhQUFhO0VBRWIsdUJBQXVCO0VBRXZCLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDs7QUFFQTs7RUFFRSxjQUFjO0FBQ2hCIiwiZmlsZSI6InNyYy9hcHAvdGVtcGxhdGUvdGVtcGxhdGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvSW1hZ2VzL2hhbmRzaGFrZS5qcGcpO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiBhdXRvO1xuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuXG4udXBwZXItYmFjayB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgb3BhY2l0eTogMC41O1xuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG59XG5cbi51cHBlci1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICB6LWluZGV4OiAxMDA7XG5cbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRvcDogLTE0NXB4O1xufVxuXG4uaG9tZS1idXR0b24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICBjb2xvcjogd2hpdGU7XG4gIHdpZHRoOiAzNSU7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFJlZ3VsYXInO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIHNyYzogbG9jYWwoJ1NlZ29lIFVJIFJlZ3VsYXInKSwgdXJsKCcvYXNzZXRzL2ZvbnQvU2Vnb2UgVUkud29mZicpIGZvcm1hdCgnd29mZicpO1xufVxuXG4uaG9tZS10ZXh0LWZvbnQge1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFJlZ3VsYXInO1xuICBjb2xvcjogIzcwNzA3MDtcbiAgbWFyZ2luLWJvdHRvbTogMC41cmVtO1xufVxuXG4uYnRuLWZhY2Vib29rIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzAlO1xuICBoZWlnaHQ6IDM1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAwcHg7XG4gIHBhZGRpbmc6IDBweDtcbiAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmO1xufVxuXG4uYnRuLWdvb2dsZSB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNERDRCMzM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgd2lkdGg6IDMwJTtcbiAgaGVpZ2h0OiAzNXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbjogMHB4O1xuICBwYWRkaW5nOiAwcHg7XG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbn1cblxuLnNvY2lhbC1sb2dpbiBoNCB7XG4gIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbn1cblxuLnNvY2lhbC1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cbn1cblxuLmNvbG9yLXNpZ251cCB7XG4gIGNvbG9yOiAjMjQ0RDkzO1xufVxuXG4uYnRuLXNvY2lhbC1sb2dpbiB7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICBjb2xvcjogd2hpdGU7XG4gIG1hcmdpbi10b3A6IDMlO1xuICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7XG5cbn1cblxuaS5mYS5mYS11c2VyLmlucHV0LWdyb3VwLXRleHQubmF2LWxvZ2luLWZvcm0ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGZvbnQtc2l6ZTogMjNweDtcbiAgbGVmdDogMHB4O1xuICB3aWR0aDogMTAlO1xuICB6LWluZGV4OiAxMDtcbiAgbWFyZ2luLXRvcDogLTQlO1xufVxuXG4uc29jaWFsLWxvZ2luLnRleHQtY2VudGVyIHtcbiAgcGFkZGluZzogMTVweDtcbn1cblxuLmNoZWNrYm94IHtcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItbGVmdDogbm9uZTtcbiAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIC8qIGRpc3BsYXk6IGJsb2NrOyAqL1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiBub25lO1xuICBsZWZ0OiBub25lO1xuICByaWdodDogOXB4O1xuICB3aWR0aDogbm9uZTtcbiAgLyogdHJhbnNpdGlvbjogYWxsIC4yczsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuXG4uZXhhbXBsZS1mb3JtIHtcbiAgbWluLXdpZHRoOiAxNTBweDtcbiAgbWF4LXdpZHRoOiA1MDBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyOiBub25lO1xufVxuXG4ubG9hZGluZy1jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBsZWZ0OiAwcHg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB6LWluZGV4OiA5O1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgb3BhY2l0eTogMC41O1xufVxuXG4uc2lnbi1pbi1tYWluXG57XG4gIGRpc3BsYXk6IGJsb2NrO1xufSJdfQ== */";
     /***/
   },
 
@@ -8397,24 +8547,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.maxNumberOfTabs = 2;
         this.isLoggedIn = true;
         this.isLoading = false;
+        this.newUser = false;
       }
 
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this27 = this;
+          var _this28 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this27.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this27.userData));
+              _this28.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this28.userData));
 
-              _this27.LoggedIn();
+              _this28.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this27.LoggedOut();
+              _this28.LoggedOut();
             }
           });
         }
@@ -8431,43 +8582,53 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this28 = this;
+          var _this29 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this28.isLoading = false;
+            _this29.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this29 = this;
+          var _this30 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this29.isLoading = false;
+            _this30.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this30 = this;
+          var _this31 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this30.isLoading = false;
+            _this31.isLoading = false;
           });
         }
       }, {
         key: "signUp",
         value: function signUp(email, pass) {
-          var _this31 = this;
+          var _this32 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this31.isLoading = false;
+            _this32.isLoading = false;
           });
+        }
+      }, {
+        key: "NewUser",
+        value: function NewUser() {
+          this.newUser = true;
+        }
+      }, {
+        key: "OldUser",
+        value: function OldUser() {
+          this.newUser = false;
         }
       }, {
         key: "user",
