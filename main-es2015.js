@@ -318,7 +318,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n\r\n      <nav>\r\n        <div class=\"main-navigation-bar\">\r\n          <div class=\"menu-toogle\">\r\n            <img src=\"/assets/Images/menu.png\" class=\"open\" />\r\n            <img src=\"/assets/Images/menu-close.png\" class=\"close-img\" />\r\n          </div>\r\n          <div class=\"imge-logo-header\">\r\n            <img src=\"assets/Images/logo1.png\" class=\"logo-nav\" routerLink=\"\" />\r\n          </div>\r\n\r\n\r\n          <div class=\"logout\">\r\n            <i class=\"fa fa-user\" aria-hidden=\"true\" (click)=\"authService.SignOut()\" *ngIf=\"isLoggedIn\"\r\n              routerLink=\"\"><span class=\"log-out-text\">Logout</span></i>\r\n\r\n             \r\n              \r\n          </div>\r\n          <div class=\"notification\">\r\n            <p class=\"nitification-red\" >{{matches}}</p>\r\n            <img src=\"assets/Images/alarm.png\" class=\"notification-image\">\r\n          </div>\r\n        </div>\r\n        <div class=\"nav-div\">\r\n          <app-template></app-template>\r\n          <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\">\r\n            <div></div>\r\n            <div>\r\n              <input type=\"text\" placeholder=\"Search..\" /><img src=\"assets/Images/asset1.png\"\r\n                class=\"nav-link-icon-search\" />\r\n            </div>\r\n            <div></div>\r\n          </div>\r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn; show\">\r\n            <div class=\"grid-container\" routerLink=\"/\">\r\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/profile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">My Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">My Matches</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myrequirement\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Listing</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/prefrences\">\r\n              <div>\r\n                <img src=\"assets/Images/user_2-09-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/prefrences\" class=\"nav-links-text\">Prefrences</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/chats\">\r\n              <div><img src=\"assets/Images/31-512-removebg-preview.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/chats\" class=\"nav-links-text\">My chat</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n          </ul>\r\n\r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n\r\n      <nav>\r\n        <div class=\"main-navigation-bar\">\r\n          <div class=\"menu-toogle\">\r\n            <img src=\"/assets/Images/menu.png\" class=\"open\" />\r\n            <img src=\"/assets/Images/menu-close.png\" class=\"close-img\" />\r\n          </div>\r\n          <div class=\"imge-logo-header\">\r\n            <img src=\"assets/Images/logo1.png\" class=\"logo-nav\" routerLink=\"\" />\r\n          </div>\r\n\r\n\r\n          <div class=\"logout\">\r\n            <i class=\"fa fa-user\" aria-hidden=\"true\" (click)=\"authService.SignOut()\" *ngIf=\"isLoggedIn\"\r\n              routerLink=\"\"><span class=\"log-out-text\">Logout</span></i>\r\n\r\n             \r\n              \r\n          </div>\r\n          <div class=\"notification\" *ngIf=\"matches>0\">\r\n            <p class=\"nitification-red\" >{{matches}}</p>\r\n            <img src=\"assets/Images/alarm.png\" class=\"notification-image\">\r\n          </div>\r\n        </div>\r\n        <div class=\"nav-div\">\r\n          <app-template></app-template>\r\n          <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\">\r\n            <div></div>\r\n            <div>\r\n              <input type=\"text\" placeholder=\"Search..\" /><img src=\"assets/Images/asset1.png\"\r\n                class=\"nav-link-icon-search\" />\r\n            </div>\r\n            <div></div>\r\n          </div>\r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\">\r\n            <div class=\"grid-container\" routerLink=\"/\">\r\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/profile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">My Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">My Matches</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myrequirement\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Listing</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/prefrences\">\r\n              <div>\r\n                <img src=\"assets/Images/user_2-09-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/prefrences\" class=\"nav-links-text\">Prefrences</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/chats\">\r\n              <div><img src=\"assets/Images/31-512-removebg-preview.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/chats\" class=\"nav-links-text\">My chat</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n          </ul>\r\n\r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>");
 
 /***/ }),
 
@@ -3738,15 +3738,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.buyerProperty = [];
         this.sellerProperty = [];
     }
-    get user() {
-        return this._user;
-    }
-    set user(value) {
-        this._user = value;
-    }
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem("user"));
-        this.uid = this.user.uid;
         this.afAuth.authState.subscribe(user => {
             if (user) {
                 this.userData = user;
@@ -3759,6 +3751,12 @@ let NavigationBarComponent = class NavigationBarComponent {
                 this.LoggedOut();
             }
         });
+        this.Logged();
+    }
+    LoggedIn() {
+        this.isLoggedIn = true;
+        this.user = JSON.parse(localStorage.getItem("user"));
+        this.uid = this.user.uid;
         // Fetch details Seller
         this.MatchesService.getMatchesSellerProperties(this.uid).then((res) => {
             res.forEach((element) => {
@@ -3767,6 +3765,9 @@ let NavigationBarComponent = class NavigationBarComponent {
                 }
             });
             this.noSellerOfMatche = this.sellerProperty.length;
+            console.log(this.noSellerOfMatche);
+            this.matches = this.buyerProperty.length + this.sellerProperty.length;
+            console.log(this.matches);
         });
         // Fetch details Seller
         this.MatchesService.getMatchesBuyerProperties(this.uid).then((res) => {
@@ -3776,15 +3777,15 @@ let NavigationBarComponent = class NavigationBarComponent {
                 }
             });
             this.noBuyerMatches = this.buyerProperty.length;
+            console.log(this.noBuyerMatches);
+            this.matches = this.buyerProperty.length + this.sellerProperty.length;
+            console.log(this.matches);
         });
-        this.matches = this.buyerProperty.length + this.sellerProperty.length;
-        console.log(this.matches);
-    }
-    LoggedIn() {
-        this.isLoggedIn = true;
     }
     LoggedOut() {
         this.isLoggedIn = false;
+    }
+    Logged() {
     }
 };
 NavigationBarComponent.ctorParameters = () => [

@@ -501,7 +501,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n\r\n      <nav>\r\n        <div class=\"main-navigation-bar\">\r\n          <div class=\"menu-toogle\">\r\n            <img src=\"/assets/Images/menu.png\" class=\"open\" />\r\n            <img src=\"/assets/Images/menu-close.png\" class=\"close-img\" />\r\n          </div>\r\n          <div class=\"imge-logo-header\">\r\n            <img src=\"assets/Images/logo1.png\" class=\"logo-nav\" routerLink=\"\" />\r\n          </div>\r\n\r\n\r\n          <div class=\"logout\">\r\n            <i class=\"fa fa-user\" aria-hidden=\"true\" (click)=\"authService.SignOut()\" *ngIf=\"isLoggedIn\"\r\n              routerLink=\"\"><span class=\"log-out-text\">Logout</span></i>\r\n\r\n             \r\n              \r\n          </div>\r\n          <div class=\"notification\">\r\n            <p class=\"nitification-red\" >{{matches}}</p>\r\n            <img src=\"assets/Images/alarm.png\" class=\"notification-image\">\r\n          </div>\r\n        </div>\r\n        <div class=\"nav-div\">\r\n          <app-template></app-template>\r\n          <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\">\r\n            <div></div>\r\n            <div>\r\n              <input type=\"text\" placeholder=\"Search..\" /><img src=\"assets/Images/asset1.png\"\r\n                class=\"nav-link-icon-search\" />\r\n            </div>\r\n            <div></div>\r\n          </div>\r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn; show\">\r\n            <div class=\"grid-container\" routerLink=\"/\">\r\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/profile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">My Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">My Matches</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myrequirement\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Listing</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/prefrences\">\r\n              <div>\r\n                <img src=\"assets/Images/user_2-09-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/prefrences\" class=\"nav-links-text\">Prefrences</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/chats\">\r\n              <div><img src=\"assets/Images/31-512-removebg-preview.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/chats\" class=\"nav-links-text\">My chat</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n          </ul>\r\n\r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n\r\n      <nav>\r\n        <div class=\"main-navigation-bar\">\r\n          <div class=\"menu-toogle\">\r\n            <img src=\"/assets/Images/menu.png\" class=\"open\" />\r\n            <img src=\"/assets/Images/menu-close.png\" class=\"close-img\" />\r\n          </div>\r\n          <div class=\"imge-logo-header\">\r\n            <img src=\"assets/Images/logo1.png\" class=\"logo-nav\" routerLink=\"\" />\r\n          </div>\r\n\r\n\r\n          <div class=\"logout\">\r\n            <i class=\"fa fa-user\" aria-hidden=\"true\" (click)=\"authService.SignOut()\" *ngIf=\"isLoggedIn\"\r\n              routerLink=\"\"><span class=\"log-out-text\">Logout</span></i>\r\n\r\n             \r\n              \r\n          </div>\r\n          <div class=\"notification\" *ngIf=\"matches>0\">\r\n            <p class=\"nitification-red\" >{{matches}}</p>\r\n            <img src=\"assets/Images/alarm.png\" class=\"notification-image\">\r\n          </div>\r\n        </div>\r\n        <div class=\"nav-div\">\r\n          <app-template></app-template>\r\n          <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\">\r\n            <div></div>\r\n            <div>\r\n              <input type=\"text\" placeholder=\"Search..\" /><img src=\"assets/Images/asset1.png\"\r\n                class=\"nav-link-icon-search\" />\r\n            </div>\r\n            <div></div>\r\n          </div>\r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\">\r\n            <div class=\"grid-container\" routerLink=\"/\">\r\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/profile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">My Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">My Matches</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myrequirement\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Listing</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/prefrences\">\r\n              <div>\r\n                <img src=\"assets/Images/user_2-09-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/prefrences\" class=\"nav-links-text\">Prefrences</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/chats\">\r\n              <div><img src=\"assets/Images/31-512-removebg-preview.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/chats\" class=\"nav-links-text\">My chat</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n          </ul>\r\n\r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>";
     /***/
   },
 
@@ -6106,8 +6106,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ngOnInit() {
           var _this25 = this;
 
-          this.user = JSON.parse(localStorage.getItem("user"));
-          this.uid = this.user.uid;
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
               _this25.userData = user;
@@ -6120,32 +6118,41 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
               _this25.LoggedOut();
             }
-          }); // Fetch details Seller
+          });
+          this.Logged();
+        }
+      }, {
+        key: "LoggedIn",
+        value: function LoggedIn() {
+          var _this26 = this;
+
+          this.isLoggedIn = true;
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.uid = this.user.uid; // Fetch details Seller
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this25.sellerProperty.push(element.data());
+                _this26.sellerProperty.push(element.data());
               }
             });
-            _this25.noSellerOfMatche = _this25.sellerProperty.length;
+            _this26.noSellerOfMatche = _this26.sellerProperty.length;
+            console.log(_this26.noSellerOfMatche);
+            _this26.matches = _this26.buyerProperty.length + _this26.sellerProperty.length;
+            console.log(_this26.matches);
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this25.buyerProperty.push(element.data());
+                _this26.buyerProperty.push(element.data());
               }
             });
-            _this25.noBuyerMatches = _this25.buyerProperty.length;
+            _this26.noBuyerMatches = _this26.buyerProperty.length;
+            console.log(_this26.noBuyerMatches);
+            _this26.matches = _this26.buyerProperty.length + _this26.sellerProperty.length;
+            console.log(_this26.matches);
           });
-          this.matches = this.buyerProperty.length + this.sellerProperty.length;
-          console.log(this.matches);
-        }
-      }, {
-        key: "LoggedIn",
-        value: function LoggedIn() {
-          this.isLoggedIn = true;
         }
       }, {
         key: "LoggedOut",
@@ -6153,13 +6160,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isLoggedIn = false;
         }
       }, {
-        key: "user",
-        get: function get() {
-          return this._user;
-        },
-        set: function set(value) {
-          this._user = value;
-        }
+        key: "Logged",
+        value: function Logged() {}
       }]);
 
       return NavigationBarComponent;
@@ -8183,7 +8185,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone // NgZone service to remove outside scope warning
       ) {
-        var _this26 = this;
+        var _this27 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -8196,8 +8198,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this26.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this26.userData));
+            _this27.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this27.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -8216,7 +8218,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee8() {
-            var _this27 = this;
+            var _this28 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee8$(_context8) {
@@ -8230,7 +8232,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 3:
                     result = _context8.sent;
                     this.ngZone.run(function () {
-                      _this27.router.navigate(["home"]);
+                      _this28.router.navigate(["home"]);
                     });
                     this.SetUserData(result.user);
                     _context8.next = 11;
@@ -8705,19 +8707,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this28 = this;
+          var _this29 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this28.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this28.userData));
+              _this29.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this29.userData));
 
-              _this28.LoggedIn();
+              _this29.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this28.LoggedOut();
+              _this29.LoggedOut();
             }
           });
         }
@@ -8734,42 +8736,42 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this29 = this;
+          var _this30 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this29.isLoading = false;
+            _this30.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this30 = this;
+          var _this31 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this30.isLoading = false;
+            _this31.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this31 = this;
+          var _this32 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this31.isLoading = false;
+            _this32.isLoading = false;
           });
         }
       }, {
         key: "signUp",
         value: function signUp(email, pass) {
-          var _this32 = this;
+          var _this33 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this32.isLoading = false;
+            _this33.isLoading = false;
           });
         }
       }, {
