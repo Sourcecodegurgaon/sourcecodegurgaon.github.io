@@ -21,7 +21,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n\n<ion-header>\n  <ion-toolbar>\n    <ion-title>chat</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"tabs\">\n      <ion-icon name=\"search-sharp\"></ion-icon>\n      <ion-label>Search</ion-label>\n    </ion-tab-button>\n    <ion-tab-button tab=\"tabs2\">\n      <ion-icon name=\"chatbubble-sharp\"></ion-icon>\n      <ion-label>Chat</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"notificationchat\" routerLink=\"/notificationchat\">\n      <ion-icon name=\"notifications-sharp\"></ion-icon>\n      <ion-label>Notification</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n  \n\n</ion-tabs>";
+    __webpack_exports__["default"] = "\n<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"tabs\">\n      <ion-icon name=\"search-sharp\"></ion-icon>\n      <ion-label>Search</ion-label>\n    </ion-tab-button>\n    <ion-tab-button tab=\"tabs2\">\n      <ion-icon name=\"chatbubble-sharp\"></ion-icon>\n      <ion-label>Chat</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"notificationchat\" routerLink=\"/notificationchat\">\n      <ion-icon name=\"notifications-sharp\"></ion-icon>\n      <ion-label>Notification</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n  \n\n</ion-tabs>";
     /***/
   },
 

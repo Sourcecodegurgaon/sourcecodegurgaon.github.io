@@ -166,7 +166,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n\n<ion-app>\n\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n";
+    __webpack_exports__["default"] = "<!-- <ion-app>\n\n</ion-app> -->\n<app-navigationbar></app-navigationbar>\n<ion-router-outlet></ion-router-outlet>";
     /***/
   },
 
@@ -186,7 +186,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>\n  navigationbar works!\n</p>\n";
+    __webpack_exports__["default"] = "<ion-header>\n  <div class=\"navigation\">\n    <div class=\"main-logo\">\n    <img src=\"../../assets/Images/header-logo.png\" alt=\"\" srcset=\"\" class=\"header-logo\">\n    </div>\n    \n    <div class=\"account-status\">\n    \n      <img src=\"../../assets/Images/user-12.png\" class=\"status-check\">\n    </div>\n    \n    <div class=\"humburger-menu\">\n      <img src=\"../../assets/Images/cross.png\" class=\"hum-burger-menu-cross\" *ngIf=\"crossSign\" (click)=\"humBurgerCross()\">\n      <img src=\"../../assets/Images/hum.png\" class=\"hum-burger-menu\" (click)=\"humburgereffect()\" *ngIf=\"humBurger\" >\n    </div>\n    \n    </div>\n    \n    <div class=\"main-menu\" *ngIf=\"mainMenu\">\n      <ul class=\"main-list\">\n        <li><a href=\"#\">Home</a></li>\n        <li><a href=\"#\">About</a></li>\n        <li><a href=\"#\">My Profile</a></li>\n        <li><a href=\"#\">My Chats</a></li>\n        <li><a href=\"#\">FAQ</a></li>\n        <li><a href=\"#\">Contact</a></li>\n        <li><a href=\"#\">LogOut</a></li>\n      </ul>\n    </div>\n  </ion-header>";
     /***/
   },
 
@@ -1198,7 +1198,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL25hdmlnYXRpb25iYXIvbmF2aWdhdGlvbmJhci5jb21wb25lbnQuc2NzcyJ9 */";
+    __webpack_exports__["default"] = ".navigation {\n  display: grid;\n  grid-template-columns: 6fr 1fr 1fr;\n  align-items: center;\n  border-bottom: 1px solid;\n  background-color: white;\n}\n\nimg.hum-burger-menu {\n  height: 5vh;\n}\n\n.main-logo {\n  margin: 0.8em;\n}\n\n.account-status {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\nimg.hum-burger-menu-cross {\n  position: absolute;\n  top: 2vh;\n  right: 3vw;\n  z-index: 1;\n  height: 6vh;\n}\n\nul.main-list {\n  list-style: none;\n  font-size: 25px;\n  color: black;\n}\n\na {\n  color: black;\n  font-size: 20px;\n  text-transform: uppercase;\n}\n\nli {\n  padding: 4px 0em;\n  font-family: \"Open Sans\", sans-serif;\n  font-weight: 600;\n}\n\n.main-menu {\n  background-color: white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9tZWRpYS9nb2QvTWFpbiBEYXRhL0FuZ3VsYXIgUHJvamVjdC9ub3Q0RGF0aW5nL3NyYy9hcHAvbmF2aWdhdGlvbmJhci9uYXZpZ2F0aW9uYmFyLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9uYXZpZ2F0aW9uYmFyL25hdmlnYXRpb25iYXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxhQUFBO0VBQ0Esa0NBQUE7RUFDQSxtQkFBQTtFQUNBLHdCQUFBO0VBQ0EsdUJBQUE7QUNDSjs7QURDQTtFQUNJLFdBQUE7QUNFSjs7QURBQTtFQUNJLGFBQUE7QUNHSjs7QUREQTtFQUNJLGFBQUE7RUFDQSx1QkFBQTtFQUNBLG1CQUFBO0FDSUo7O0FERkE7RUFDSSxrQkFBQTtFQUNBLFFBQUE7RUFDQSxVQUFBO0VBQ0EsVUFBQTtFQUNBLFdBQUE7QUNLSjs7QURIQTtFQUNJLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLFlBQUE7QUNNSjs7QURKQTtFQUNJLFlBQUE7RUFDQSxlQUFBO0VBQ0EseUJBQUE7QUNPSjs7QURMQTtFQUNJLGdCQUFBO0VBQ0Esb0NBQUE7RUFDQSxnQkFBQTtBQ1FKOztBRE5BO0VBQ0ksdUJBQUE7QUNTSiIsImZpbGUiOiJzcmMvYXBwL25hdmlnYXRpb25iYXIvbmF2aWdhdGlvbmJhci5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uYXZpZ2F0aW9uIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogNmZyIDFmciAxZnI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG5pbWcuaHVtLWJ1cmdlci1tZW51IHtcbiAgICBoZWlnaHQ6IDV2aDtcbn1cbi5tYWluLWxvZ28ge1xuICAgIG1hcmdpbjogMC44ZW07XG59XG4uYWNjb3VudC1zdGF0dXMge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmltZy5odW0tYnVyZ2VyLW1lbnUtY3Jvc3Mge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB0b3A6IDJ2aDtcbiAgICByaWdodDogM3Z3O1xuICAgIHotaW5kZXg6IDE7XG4gICAgaGVpZ2h0OiA2dmg7XG59XG51bC5tYWluLWxpc3Qge1xuICAgIGxpc3Qtc3R5bGU6IG5vbmU7XG4gICAgZm9udC1zaXplOiAyNXB4O1xuICAgIGNvbG9yOiBibGFjaztcbn1cbmEge1xuICAgIGNvbG9yOiBibGFjaztcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbn1cbmxpIHtcbiAgICBwYWRkaW5nOiA0cHggMGVtO1xuICAgIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjtcbiAgICBmb250LXdlaWdodDogNjAwO1xufVxuLm1haW4tbWVudSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59IiwiLm5hdmlnYXRpb24ge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDZmciAxZnIgMWZyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG5pbWcuaHVtLWJ1cmdlci1tZW51IHtcbiAgaGVpZ2h0OiA1dmg7XG59XG5cbi5tYWluLWxvZ28ge1xuICBtYXJnaW46IDAuOGVtO1xufVxuXG4uYWNjb3VudC1zdGF0dXMge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuaW1nLmh1bS1idXJnZXItbWVudS1jcm9zcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAydmg7XG4gIHJpZ2h0OiAzdnc7XG4gIHotaW5kZXg6IDE7XG4gIGhlaWdodDogNnZoO1xufVxuXG51bC5tYWluLWxpc3Qge1xuICBsaXN0LXN0eWxlOiBub25lO1xuICBmb250LXNpemU6IDI1cHg7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuYSB7XG4gIGNvbG9yOiBibGFjaztcbiAgZm9udC1zaXplOiAyMHB4O1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xufVxuXG5saSB7XG4gIHBhZGRpbmc6IDRweCAwZW07XG4gIGZvbnQtZmFtaWx5OiBcIk9wZW4gU2Fuc1wiLCBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogNjAwO1xufVxuXG4ubWFpbi1tZW51IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59Il19 */";
     /***/
   },
 
@@ -1237,11 +1237,29 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var NavigationbarComponent = /*#__PURE__*/function () {
       function NavigationbarComponent() {
         _classCallCheck(this, NavigationbarComponent);
+
+        this.crossSign = false;
+        this.humBurger = true;
+        this.mainMenu = false;
       }
 
       _createClass(NavigationbarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "humburgereffect",
+        value: function humburgereffect() {
+          this.crossSign = true;
+          this.humBurger = false;
+          this.mainMenu = true;
+        }
+      }, {
+        key: "humBurgerCross",
+        value: function humBurgerCross() {
+          this.crossSign = false;
+          this.humBurger = true;
+          this.mainMenu = false;
+        }
       }]);
 
       return NavigationbarComponent;

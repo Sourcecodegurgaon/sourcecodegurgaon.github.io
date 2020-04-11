@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n\n<ion-header>\n  <ion-toolbar>\n    <ion-title>chat</ion-title>\n  </ion-toolbar>\n</ion-header>\n<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"tabs\">\n      <ion-icon name=\"search-sharp\"></ion-icon>\n      <ion-label>Search</ion-label>\n    </ion-tab-button>\n    <ion-tab-button tab=\"tabs2\">\n      <ion-icon name=\"chatbubble-sharp\"></ion-icon>\n      <ion-label>Chat</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"notificationchat\" routerLink=\"/notificationchat\">\n      <ion-icon name=\"notifications-sharp\"></ion-icon>\n      <ion-label>Notification</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n  \n\n</ion-tabs>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<ion-tabs>\n  <ion-tab-bar slot=\"bottom\">\n    <ion-tab-button tab=\"tabs\">\n      <ion-icon name=\"search-sharp\"></ion-icon>\n      <ion-label>Search</ion-label>\n    </ion-tab-button>\n    <ion-tab-button tab=\"tabs2\">\n      <ion-icon name=\"chatbubble-sharp\"></ion-icon>\n      <ion-label>Chat</ion-label>\n    </ion-tab-button>\n\n    <ion-tab-button tab=\"notificationchat\" routerLink=\"/notificationchat\">\n      <ion-icon name=\"notifications-sharp\"></ion-icon>\n      <ion-label>Notification</ion-label>\n    </ion-tab-button>\n  </ion-tab-bar>\n\n  \n\n</ion-tabs>");
 
 /***/ }),
 
@@ -93,7 +93,7 @@ ChatPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _angular_common__WEBPACK_IMPORTED_MODULE_2__["CommonModule"],
             _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"],
-            _chat_routing_module__WEBPACK_IMPORTED_MODULE_5__["ChatPageRoutingModule"]
+            _chat_routing_module__WEBPACK_IMPORTED_MODULE_5__["ChatPageRoutingModule"],
         ],
         declarations: [_chat_page__WEBPACK_IMPORTED_MODULE_6__["ChatPage"]]
     })
