@@ -161,7 +161,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<div class=\"property-selected-detail-background\">\r\n<div class=\"container property-detail-container\">\r\n  <h3 class=\"property-detail-h3\">{{Lookingstate}}</h3>\r\n  <div class=\"wrapper-detail-container\">\r\n    <div id=\"demo\">\r\n      <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\r\n    </div>\r\n\r\n\r\n    <div class=\"streetname\">\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Desired  Price</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{MaxAmount}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Postcode</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingpostcode}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Streetname</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\r\n      </mat-card>\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bedrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxrooms}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{ownership}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bathrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxbathrooms}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Reception Rooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxreception}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Features</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{features}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n\r\n\r\n    <div class=\"selected-button m-3\">\r\n      <button mat-raised-button color=\"primary\" (click)=\"Overlayopen()\">Express Interest</button>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n\r\n\r\n<div class=\"continue-form\" *ngIf=\"overlay\">\r\n\r\n  <div class=\"continue-form-data\">\r\n  <div class=\"nestimate-logo\">\r\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\r\n\r\n  </div>\r\n  <div class=\"continue-text\">\r\n    <p class=\"overlay-text\">Thank you.Please sit back as the seller will now receive a notificationof your Nestimate.depending upon their decision to pursue or decline,we will send you an update.Your personal details will not be sahred will the seller however they will be shared with an estate agent selected  by seller,if they are interested to pursue your Nestimate</p>\r\n\r\n    \r\n  </div>\r\n  <div class=\"continue-button\">\r\n\r\n    <div class=\"continue-button-container\" (click)=\"submitForm()\">\r\n      OK\r\n    </div> \r\n <div class=\"continue-button mt-2\" (click)=\"continueClose()\">\r\n    \r\n    <div class=\"continue-button-container\">\r\n      CANCEL\r\n    </div> \r\n  </div>\r\n</div>\r\n\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<div class=\"property-selected-detail-background\">\r\n<div class=\"container property-detail-container\">\r\n  <h3 class=\"property-detail-h3\">{{Lookingstate}}</h3>\r\n  <div class=\"wrapper-detail-container\">\r\n    <div id=\"demo\">\r\n      <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\r\n    </div>\r\n\r\n\r\n    <div class=\"streetname\">\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Desired  Price</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{MaxAmount}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Postcode</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingpostcode}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Streetname</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\r\n      </mat-card>\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bedrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxrooms}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{ownership}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bathrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxbathrooms}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Reception Rooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxreception}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Features</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{features}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n\r\n\r\n    <div class=\"selected-button m-3\">\r\n      <button mat-raised-button color=\"primary\" (click)=\"Overlayopen()\">Express Interest</button>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n\r\n\r\n<div class=\"continue-form\" *ngIf=\"overlay\">\r\n\r\n  <div class=\"continue-form-data\">\r\n  <div class=\"nestimate-logo\">\r\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\r\n\r\n  </div>\r\n  <div class=\"continue-text\">\r\n    <p class=\"overlay-text\">Thank you.Please sit back as the seller will now receive a notificationof your Nestimate.depending upon their decision to pursue or decline,we will send you an update.Your personal details will not be sahred will the seller however they will be shared with an estate agent selected  by seller,if they are interested to pursue your Nestimate</p>\r\n\r\n    \r\n  </div>\r\n  <div class=\"continue-button\">\r\n\r\n    <div class=\"continue-button-container\" (click)=\"submitForm()\">\r\n      OK\r\n    </div> \r\n <div class=\"continue-button mt-2\" (click)=\"register()\">\r\n    \r\n    <div class=\"continue-button-container\">\r\n      CANCEL\r\n    </div> \r\n  </div>\r\n</div>\r\n\r\n</div>\r\n";
     /***/
   },
 
@@ -201,7 +201,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- Loading spinner -->\r\n<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<app-template></app-template>\r\n\r\n<form  *ngIf=\"isLoggedIn\">\r\n  <mat-tab-group #matgroup class=\"form-tab-conatiner\" [selectedIndex]=\"selectedIndex\">\r\n    <mat-tab label=\"Personal Details \" class=\"tabs-align-padding\">\r\n      <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\r\n        <mat-card class=\"card-margin\">\r\n          <mat-card-title class=\"mat_card_title\">\r\n\r\n            \r\n            <p class=\"forms-heading heading-nestimate\">Personal Details</p>\r\n          </mat-card-title>\r\n          <p class=\"forms-star heading-nestimate\">*required</p>\r\n       \r\n  \r\n        \r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Full Name\" required\r\n              name=\"Name\" class=\"mat-mail-input\"   [(ngModel)]=\"user.Name\">\r\n          </mat-form-field>\r\n\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n\r\n            <input matInput  placeholder=\"Email\" \r\n             name=\"Email\" class=\"mat-mail-input\"   [(ngModel)]=\"user.email\" [formControl]=\"emailFormControl\" >\r\n        \r\n             <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\r\n              Please enter a valid email address\r\n            </mat-error>\r\n            <mat-error *ngIf=\"emailFormControl.hasError('required')\">\r\n              Email is <strong>required</strong>\r\n            </mat-error>\r\n        \r\n        \r\n        \r\n        \r\n            </mat-form-field>\r\n\r\n\r\n\r\n\r\n          <!--Date Of Birth Field-->\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput [matDatepicker]=\"picker\" placeholder=\"DD/MM/YY*\" name=\"DOB\"\r\n              class=\"mat-mail-input\"  value=\"DOB\"    [(ngModel)]=\"user.DOB\">\r\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n            <mat-datepicker #picker></mat-datepicker>\r\n         \r\n          </mat-form-field>\r\n          <!--Date Of Birth Field End-->\r\n\r\n\r\n          <!--Phone Number field-->\r\n          <mat-form-field class=\"example-full-width\">\r\n            <span matPrefix>+44 &nbsp;</span>\r\n            <input matInput placeholder=\"Phone Number\" name=\"phonenumber\" class=\"mat-mail-input\"   [(ngModel)]=\"user.Phone\" type=”tel”  [formControl]=\"phoneFormControl\" maxlength=\"10\">\r\n            <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\r\n              Please enter a valid Phone Number\r\n            </mat-error>\r\n            <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\r\n              Phone Number is <strong>required</strong>\r\n            </mat-error>\r\n            <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\r\n              Phone Number is <strong>not valid</strong>\r\n          \r\n            </mat-error>\r\n          </mat-form-field>\r\n         \r\n          <!--Phone Number field-->\r\n    \r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label>Your Buying Position*</mat-label>\r\n            <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\r\n              class=\"example-full-width\">\r\n              <mat-option value=\"First Time Buyer\" (click)=\"otherOption()\">First Time Buyer</mat-option>\r\n              <mat-option value=\"In Chain\" (click)=\"otherOption()\">In Chain</mat-option>\r\n              <mat-option value=\"Cash Buyer\" (click)=\"otherOption()\">Cash Buyer</mat-option>\r\n              <mat-option value=\"Other (Please specify)\" (click)=\"otherChain()\">Other (Please specify)</mat-option>\r\n            </mat-select>\r\n            \r\n          </mat-form-field>\r\n          <mat-form-field class=\"example-full-width\" *ngIf=\"other\">\r\n          <input matInput placeholder=\"other\" name=\"other\" class=\"mat-mail-input\"   >\r\n          </mat-form-field>\r\n       \r\n        </mat-card>\r\n        <mat-card class=\"card-margin\">\r\n          <label class=\"heading-nestimate\">\"Please fill your present address</label>\r\n         \r\n\r\n          <p class=\"paragraph-color\">Search by Postcode</p>\r\n\r\n          <mat-option class=\"postcode-background\" style=\"background-color: #F5F5F5;\">\r\n            <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" placeholder=\"Enter Postcode\"\r\n              aria-label=\"Post-Code\" matInput [matAutocomplete]=\"auto\" [(ngModel)]=\"listingBuyer.Currentpostcode\">\r\n            <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\"\r\n              (optionSelected)='getPost($event.option.value)'>\r\n              <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\" [value]=\"item\">\r\n                <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\r\n                </span> | <span>{{ item.citytown | titlecase}}</span>\r\n              </mat-option>\r\n            </mat-autocomplete>\r\n          </mat-option>\r\n\r\n         \r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Town/City\" [(ngModel)]=\"listingBuyer.CurrentTown\" name=\"CurrentTowncity\"\r\n              class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n          \r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Full Address\" [formControl]=\"AddressFormControl\" name=\"CurrentAddress\"\r\n              class=\"mat-mail-input\" [(ngModel)]=\"listingBuyer.CurrentAddress\">\r\n            <mat-error *ngIf=\"AddressFormControl.hasError('Address') && !AddressFormControl.hasError('required')\">\r\n              Please enter a valid address\r\n            </mat-error>\r\n            <mat-error *ngIf=\"AddressFormControl.hasError('required')\">\r\n              Address is <strong>required</strong>\r\n            </mat-error>\r\n          </mat-form-field>\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"County\" required [(ngModel)]=\"listingBuyer.Currentstate\" name=\"state\"\r\n              class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n\r\n        </mat-card>\r\n        <div class=\"button-next\">\r\n          <a (click)=\"selectTab(1, 0)\" class=\" btn btn-primary btnNext btn-next\">Next</a>\r\n        </div>\r\n\r\n      </div>\r\n\r\n    </mat-tab>\r\n\r\n    <mat-tab label=\"Property Details\" class=\"tabs-align-padding\">\r\n      <div class=\"tabs-align-padding\">\r\n\r\n     \r\n\r\n        <mat-card class=\"card-margin\">\r\n\r\n          <mat-card-title class=\"mat_card_title heading-nestimate\">\"Please fill in the details of your desired property</mat-card-title>\r\n          <p class=\"mt-4 paragraph-color\">Search by Postcode</p>\r\n          <mat-option style=\"background-color: #F5F5F5;\">\r\n            <input [formControl]=\"autoCompleteControlLooking\" type=\"text\" placeholder=\"Enter Postcode\"\r\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\r\n              [(ngModel)]=\"listingBuyer.Lookingpostcode\" name=\"Lookingpostcode\">\r\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\"\r\n              (optionSelected)='getPosts($event.option.value)'>\r\n              <mat-option *ngFor=\"let item of addressianAutoCompleteLooking$ | async; let index=index\" [value]=\"item\">\r\n                <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\r\n                </span> | <span>{{ item.citytown | titlecase}}</span>\r\n              </mat-option>\r\n            </mat-autocomplete>\r\n          </mat-option>\r\n\r\n\r\n\r\n          <p class=\"mt-4\" class=\"paragraph-color\">Search by Address</p>\r\n          <mat-form-field class=\"example-full-width mb-3\">\r\n            <input matInput placeholder=\"Street Name\" class=\"mat-mail-input\" [(ngModel)]=\"listingBuyer.LookingStreetname\" name=\"LookingStreetname\">\r\n          </mat-form-field>\r\n\r\n\r\n          <mat-form-field class=\"example-full-width mb-3\">\r\n            <input matInput placeholder=\"Town/City\" [formControl]=\"TownFormControl\" [(ngModel)]=\"listingBuyer.LookingTown\" name=\"LookingTown\" class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"County\" [formControl]=\"stateFormControl\" required  [(ngModel)]=\"listingBuyer.Lookingstate\" name=\"Lookingstate\" class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Country\" [formControl]=\"stateFormControl\" required  [(ngModel)]=\"listingBuyer.Country\" name=\"Country\" class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n        </mat-card>\r\n\r\n\r\n\r\n\r\n\r\n        <mat-card class=\"card-margin\">\r\n          <div id=\"finanacial\">\r\n            <mat-form-field class=\"example-full-width\">\r\n              <mat-label>Financial Position*</mat-label>\r\n              <mat-select name=\"FinancialPosition\" [(ngModel)]=\"listingBuyer.FinancialPosition\"\r\n                value=\"FinancialPosition\" class=\"example-full-width\">\r\n                <mat-option value=\"Mortgate to be arranged\" name=\"Mortgate to be arranged\" (click)=\"removefinancialPostion()\">Mortgate to be arranged</mat-option>\r\n                <mat-option value=\"Mortgage arranged \" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">Mortgage arranged </mat-option>\r\n                <mat-option value=\"Cash Buyer\" name=\"Cash Buyer\" (click)=\"removefinancialPostion()\">Cash Buyer</mat-option>\r\n                <mat-option value=\"Please specify\" name=\"Please specify\" (click)=\"financialPostion()\">Other</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n          </div>\r\n      \r\n\r\n\r\n        <mat-form-field class=\"example-full-width\" *ngIf=\"finanacial\">\r\n        <input matInput placeholder=\"other\" name=\"other\" class=\"mat-mail-input\"   >\r\n        </mat-form-field>\r\n\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label class=\"mb-2\">Search Radius (Miles)</mat-label>\r\n            <mat-select [(ngModel)]=\"listingBuyer.SearchRadius\" name=\"SearchRadius\" value=\"SearchRadius\"\r\n              class=\"example-full-width\">\r\n              <mat-option value=\"This postcode only\">This postcode only</mat-option>\r\n              <mat-option value=\"0.25\">Within ¼ mile</mat-option>\r\n              <mat-option value=\"0.5\">Within ½ mile</mat-option>\r\n              <mat-option value=\"1.0\">Within 1 mile</mat-option>\r\n              <mat-option value=\"3.0\">Within 3 miles</mat-option>\r\n              <mat-option value=\"5.0\">Within 5 miles</mat-option>\r\n              <mat-option value=\"10.0\">Within 10 miles</mat-option>\r\n              <mat-option value=\"15.0\">Within 15 miles</mat-option>\r\n              <mat-option value=\"20.0\">Within 20 miles</mat-option>\r\n              <mat-option value=\"30.0\">Within 30 miles</mat-option>\r\n              <mat-option value=\"40.0\">Within 40 miles</mat-option>\r\n            </mat-select>\r\n          </mat-form-field>\r\n\r\n          <div id=\"Property-type\">\r\n            <mat-form-field class=\"example-full-width\">\r\n              <mat-label>Property type*</mat-label>\r\n              <mat-select name=\"Propertytype\" [(ngModel)]=\"listingBuyer.PropertyType\" value=\"Propertytype\"\r\n                class=\"example-full-width\">\r\n                <mat-option value=\"Flat\">Flat</mat-option>\r\n                <mat-option value=\"Studio\">Studio</mat-option>\r\n                <mat-option value=\"Terracedhouse\">Terraced house</mat-option>\r\n                <mat-option value=\"Semi-detached\">Semi-detached house</mat-option>\r\n                <mat-option value=\"Bungalow\">Bungalow</mat-option>\r\n                <mat-option value=\"Detachedhouse\">Detached house</mat-option>\r\n                <mat-option value=\"Cottage\">Cottage</mat-option>\r\n                <mat-option value=\"Townhouse\">Town house</mat-option>\r\n                <mat-option value=\"Countryhouse\">Country house</mat-option>\r\n                <mat-option value=\"Barnconversion\">Barn conversion</mat-option>\r\n                <mat-option value=\"Farm\">Farm</mat-option>\r\n                <mat-option value=\"Houseboat\">Houseboat</mat-option>\r\n                <mat-option value=\"Lodge\">Lodge</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n          </div>\r\n\r\n\r\n <!--Min Max Amount-->\r\n <label class=\"heading-nestimate\">Number of Rooms</label>\r\n <div class=\"price-selection\">\r\n   <mat-form-field class=\"filed-width\" >\r\n     <mat-label>Min  Rooms</mat-label>\r\n     <mat-select [(value)]=\"Roommin\" name=\"Roommin\" [(ngModel)]=\"listingBuyer.Roommin\">\r\n      <mat-option value=\"Studio\">Studio</mat-option>\r\n       <mat-option value=\"1\">1</mat-option>\r\n       <mat-option value=\"2\">2</mat-option>\r\n       <mat-option value=\"3\">3</mat-option>\r\n       <mat-option value=\"4\">4</mat-option>\r\n       <mat-option value=\"5\">5</mat-option>\r\n     </mat-select>\r\n   </mat-form-field>\r\n   <mat-form-field class=\"filed-width\">\r\n     <mat-label>Max  Rooms</mat-label>\r\n     <mat-select [(value)]=\"Roomsmax\" name=\"Roomsmax\" [(ngModel)]=\"listingBuyer.Roomsmax\">\r\n       <mat-option value=\"Studio\">Studio</mat-option>\r\n       <mat-option value=\"1\">1</mat-option>\r\n       <mat-option value=\"2\">2</mat-option>\r\n       <mat-option value=\"3\">3</mat-option>\r\n       <mat-option value=\"4\">4</mat-option>\r\n       <mat-option value=\"5\">5</mat-option>\r\n     </mat-select>\r\n   </mat-form-field>\r\n </div>\r\n<!--Max-No of Rooms-->\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n          <!--Min Max Amount-->\r\n          <label class=\"heading-nestimate\">Price Range</label>\r\n          <div class=\"price-selection\">\r\n            <mat-form-field class=\"filed-width\">\r\n              <mat-label>MinAmount</mat-label>\r\n              <mat-select [(value)]=\"min\" name=\"MinAmount\" [(ngModel)]=\"listingBuyer.MinAmount\">\r\n                <mat-option value=\"50000\">50,000</mat-option>\r\n                <mat-option value=\"60000\">60,000</mat-option>\r\n                <mat-option value=\"70000\">70,000</mat-option>\r\n                <mat-option value=\"80000\">80,000</mat-option>\r\n                <mat-option value=\"90000\">90,000</mat-option>\r\n                <mat-option value=\"100000\">100,000</mat-option>\r\n                <mat-option value=\"110000\">110,000</mat-option>\r\n                <mat-option value=\"120000\">120,000</mat-option>\r\n                <mat-option value=\"125000\">125,000</mat-option>\r\n                <mat-option value=\"130000\">130,000</mat-option>\r\n                <mat-option value=\"140000\">140,000</mat-option>\r\n                <mat-option value=\"150000\">150,000</mat-option>\r\n                <mat-option value=\"160000\">160,000</mat-option>\r\n                <mat-option value=\"170000\">170,000</mat-option>\r\n                <mat-option value=\"175000\">175,000</mat-option>\r\n                <mat-option value=\"180000\">180,000</mat-option>\r\n                <mat-option value=\"190000\">190,000</mat-option>\r\n                <mat-option value=\"200000\">200,000</mat-option>\r\n                <mat-option value=\"210000\">210,000</mat-option>\r\n                <mat-option value=\"220000\">220,000</mat-option>\r\n                <mat-option value=\"230000\">230,000</mat-option>\r\n                <mat-option value=\"240000\">240,000</mat-option>\r\n                <mat-option value=\"250000\">250,000</mat-option>\r\n                <mat-option value=\"260000\">260,000</mat-option>\r\n                <mat-option value=\"270000\">270,000</mat-option>\r\n                <mat-option value=\"280000\">280,000</mat-option>\r\n                <mat-option value=\"290000\">290,000</mat-option>\r\n                <mat-option value=\"300000\">300,000</mat-option>\r\n                <mat-option value=\"325000\">325,000</mat-option>\r\n                <mat-option value=\"350000\">350,000</mat-option>\r\n                <mat-option value=\"375000\">375,000</mat-option>\r\n                <mat-option value=\"400000\">400,000</mat-option>\r\n                <mat-option value=\"425000\">425,000</mat-option>\r\n                <mat-option value=\"450000\">450,000</mat-option>\r\n                <mat-option value=\"475000\">475,000</mat-option>\r\n                <mat-option value=\"500000\">500,000</mat-option>\r\n                <mat-option value=\"525000\">525,000</mat-option>\r\n                <mat-option value=\"550000\">550,000</mat-option>\r\n                <mat-option value=\"575000\">575,000</mat-option>\r\n                <mat-option value=\"600000\">600,000</mat-option>\r\n                <mat-option value=\"625000\">625,000</mat-option>\r\n                <mat-option value=\"650000\">650,000</mat-option>\r\n                <mat-option value=\"675000\">675,000</mat-option>\r\n                <mat-option value=\"700000\">700,000</mat-option>\r\n                <mat-option value=\"725000\">725,000</mat-option>\r\n                <mat-option value=\"750000\">750,000</mat-option>\r\n                <mat-option value=\"775000\">775,000</mat-option>\r\n                <mat-option value=\"800000\">800,000</mat-option>\r\n                <mat-option value=\"825000\">825,000</mat-option>\r\n                <mat-option value=\"850000\">850,000</mat-option>\r\n                <mat-option value=\"875000\">875,000</mat-option>\r\n                <mat-option value=\"900000\">900,000</mat-option>\r\n                <mat-option value=\"925000\">925,000</mat-option>\r\n                <mat-option value=\"950000\">950,000</mat-option>\r\n                <mat-option value=\"975000\">975,000</mat-option>\r\n                <mat-option value=\"1000000\">1,000,000</mat-option>\r\n                <mat-option value=\"1250000\">1,250,000</mat-option>\r\n                <mat-option value=\"1500000\">1,500,000</mat-option>\r\n                <mat-option value=\"1750000\">1,750,000</mat-option>\r\n                <mat-option value=\"2000000\">2,000,000</mat-option>\r\n                <mat-option value=\"2250000\">2,250,000</mat-option>\r\n                <mat-option value=\"2500000\">2,500,000</mat-option>\r\n                <mat-option value=\"3000000\">3,000,000</mat-option>\r\n                <mat-option value=\"4000000\">4,000,000</mat-option>\r\n                <mat-option value=\"5000000\">5,000,000</mat-option>\r\n                <mat-option value=\"6000000\">6,000,000</mat-option>\r\n                <mat-option value=\"7000000\">7,000,000</mat-option>\r\n                <mat-option value=\"8000000\">8,000,000</mat-option>\r\n                <mat-option value=\"10000000\">10,000,000</mat-option>\r\n                <mat-option value=\"15000000\">15,000,000</mat-option>\r\n                <mat-option value=\"20000000\">20,000,000</mat-option>\r\n                <mat-option value=\"\">No min</mat-option>\r\n\r\n              </mat-select>\r\n            </mat-form-field>\r\n            <mat-form-field class=\"filed-width\">\r\n              <mat-label>MaxAmount</mat-label>\r\n              <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingBuyer.MaxAmount\">\r\n                <mat-option value=\"50000\">50,000</mat-option>\r\n                <mat-option value=\"60000\">60,000</mat-option>\r\n                <mat-option value=\"70000\">70,000</mat-option>\r\n                <mat-option value=\"80000\">80,000</mat-option>\r\n                <mat-option value=\"90000\">90,000</mat-option>\r\n                <mat-option value=\"100000\">100,000</mat-option>\r\n                <mat-option value=\"110000\">110,000</mat-option>\r\n                <mat-option value=\"120000\">120,000</mat-option>\r\n                <mat-option value=\"125000\">125,000</mat-option>\r\n                <mat-option value=\"130000\">130,000</mat-option>\r\n                <mat-option value=\"140000\">140,000</mat-option>\r\n                <mat-option value=\"150000\">150,000</mat-option>\r\n                <mat-option value=\"160000\">160,000</mat-option>\r\n                <mat-option value=\"170000\">170,000</mat-option>\r\n                <mat-option value=\"175000\">175,000</mat-option>\r\n                <mat-option value=\"180000\">180,000</mat-option>\r\n                <mat-option value=\"190000\">190,000</mat-option>\r\n                <mat-option value=\"200000\">200,000</mat-option>\r\n                <mat-option value=\"210000\">210,000</mat-option>\r\n                <mat-option value=\"220000\">220,000</mat-option>\r\n                <mat-option value=\"230000\">230,000</mat-option>\r\n                <mat-option value=\"240000\">240,000</mat-option>\r\n                <mat-option value=\"250000\">250,000</mat-option>\r\n                <mat-option value=\"260000\">260,000</mat-option>\r\n                <mat-option value=\"270000\">270,000</mat-option>\r\n                <mat-option value=\"280000\">280,000</mat-option>\r\n                <mat-option value=\"290000\">290,000</mat-option>\r\n                <mat-option value=\"300000\">300,000</mat-option>\r\n                <mat-option value=\"325000\">325,000</mat-option>\r\n                <mat-option value=\"350000\">350,000</mat-option>\r\n                <mat-option value=\"375000\">375,000</mat-option>\r\n                <mat-option value=\"400000\">400,000</mat-option>\r\n                <mat-option value=\"425000\">425,000</mat-option>\r\n                <mat-option value=\"450000\">450,000</mat-option>\r\n                <mat-option value=\"475000\">475,000</mat-option>\r\n                <mat-option value=\"500000\">500,000</mat-option>\r\n                <mat-option value=\"525000\">525,000</mat-option>\r\n                <mat-option value=\"550000\">550,000</mat-option>\r\n                <mat-option value=\"575000\">575,000</mat-option>\r\n                <mat-option value=\"600000\">600,000</mat-option>\r\n                <mat-option value=\"625000\">625,000</mat-option>\r\n                <mat-option value=\"650000\">650,000</mat-option>\r\n                <mat-option value=\"675000\">675,000</mat-option>\r\n                <mat-option value=\"700000\">700,000</mat-option>\r\n                <mat-option value=\"725000\">725,000</mat-option>\r\n                <mat-option value=\"750000\">750,000</mat-option>\r\n                <mat-option value=\"775000\">775,000</mat-option>\r\n                <mat-option value=\"800000\">800,000</mat-option>\r\n                <mat-option value=\"825000\">825,000</mat-option>\r\n                <mat-option value=\"850000\">850,000</mat-option>\r\n                <mat-option value=\"875000\">875,000</mat-option>\r\n                <mat-option value=\"900000\">900,000</mat-option>\r\n                <mat-option value=\"925000\">925,000</mat-option>\r\n                <mat-option value=\"950000\">950,000</mat-option>\r\n                <mat-option value=\"975000\">975,000</mat-option>\r\n                <mat-option value=\"1000000\">1,000,000</mat-option>\r\n                <mat-option value=\"1250000\">1,250,000</mat-option>\r\n                <mat-option value=\"1500000\">1,500,000</mat-option>\r\n                <mat-option value=\"1750000\">1,750,000</mat-option>\r\n                <mat-option value=\"2000000\">2,000,000</mat-option>\r\n                <mat-option value=\"2250000\">2,250,000</mat-option>\r\n                <mat-option value=\"2500000\">2,500,000</mat-option>\r\n                <mat-option value=\"3000000\">3,000,000</mat-option>\r\n                <mat-option value=\"4000000\">4,000,000</mat-option>\r\n                <mat-option value=\"5000000\">5,000,000</mat-option>\r\n                <mat-option value=\"6000000\">6,000,000</mat-option>\r\n                <mat-option value=\"7000000\">7,000,000</mat-option>\r\n                <mat-option value=\"8000000\">8,000,000</mat-option>\r\n                <mat-option value=\"10000000\">10,000,000</mat-option>\r\n                <mat-option value=\"15000000\">15,000,000</mat-option>\r\n                <mat-option value=\"20000000\">20,000,000</mat-option>\r\n                <mat-option value=\"\">No max</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n          </div>\r\n          <!--Min Max Amount End-->\r\n\r\n\r\n          <!--Offer validity Group-->\r\n\r\n          <mat-radio-group aria-label=\"Select an option\" id=\"name \" name=\"Validity\" [(ngModel)]=\"listingBuyer.Validity\"\r\n            value=\"Validity\">\r\n            <label>How long should your Nestimate be active?</label><br>\r\n            <div class=\"radio-button-align\">\r\n              <mat-radio-button value=\"1\" class=\"mr-2\">1 Month</mat-radio-button>\r\n              <mat-radio-button value=\"3\">3 Months</mat-radio-button>\r\n              <mat-radio-button value=\"6\">6 Months</mat-radio-button>\r\n              <mat-radio-button value=\"Indefinite\">Indefinite\r\n              </mat-radio-button>\r\n            </div>\r\n          </mat-radio-group>\r\n          <p class=\"Label-notes heading-nestimate\">*Note: Your offer will automatically expire after the given time period</p>\r\n          <!--Offer validity Group End-->\r\n          \r\n\r\n\r\n\r\n\r\n\r\n\r\n        </mat-card>\r\n\r\n        <mat-card class=\"card-margin\">\r\n          <label class=\"heading-nestimate\">Optional Details</label><br>\r\n <!--No of Bathrooms-->\r\n <label class=\"heading-nestimate\">No of Bathrooms</label>\r\n <div class=\"price-selection\">\r\n   <mat-form-field class=\"filed-width\" >\r\n     <mat-label>Min</mat-label>\r\n     <mat-select [(value)]=\"Minbathroom\" name=\"Minbathroom\" [(ngModel)]=\"listingBuyer.Minbathroom\">\r\n      <mat-option value=\"1\">1</mat-option>\r\n       <mat-option value=\"2\">2</mat-option>\r\n       <mat-option value=\"3 or more\">3 or more</mat-option>\r\n     </mat-select>\r\n   </mat-form-field>\r\n   <mat-form-field class=\"filed-width\">\r\n     <mat-label>Max</mat-label>\r\n     <mat-select [(value)]=\"Maxbathroom\" name=\"Maxbathroom\" [(ngModel)]=\"listingBuyer.Maxbathroom\">\r\n       <mat-option value=\"1\">1</mat-option>\r\n       <mat-option value=\"2\">2</mat-option>\r\n       <mat-option value=\"3 or more\">3 or more</mat-option>\r\n     </mat-select>\r\n   </mat-form-field>\r\n </div>\r\n      \r\n\r\n\r\n\r\n  <!--No of reception-->\r\n  <label class=\"heading-nestimate\">No of Reception Rooms</label>\r\n  <div class=\"price-selection\">\r\n    <mat-form-field class=\"filed-width\" >\r\n      <mat-label>Min</mat-label>\r\n      <mat-select [(value)]=\"Minreception\" name=\"Minreception\" [(ngModel)]=\"listingBuyer.Minreception\">\r\n        <mat-option value=\"1\">1</mat-option>\r\n        <mat-option value=\"2\">2</mat-option>\r\n        <mat-option value=\"3 or more\">3 or more</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n    <mat-form-field class=\"filed-width\">\r\n      <mat-label>Max</mat-label>\r\n      <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingBuyer.Maxreception\">\r\n        <mat-option value=\"1\">1</mat-option>\r\n        <mat-option value=\"2\">2</mat-option>\r\n        <mat-option value=\"3 or more\">3 or more</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n  </div>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Property Condition</mat-label>\r\n          <mat-select [(value)]=\"Conditions\" name=\"Conditions\" [(ngModel)]=\"listingBuyer.Conditions\">\r\n            <mat-option value=\"New Build\">New Build</mat-option>\r\n            <mat-option value=\"Needs Modernisation\">Needs Modernisation</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        \r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label>Ownership</mat-label>\r\n            <mat-select name=\"Ownership\" [(ngModel)]=\"listingBuyer.Ownership\" value=\"Ownership\"\r\n              class=\"example-full-width\">\r\n              <mat-option value=\"Leasehold\">Leasehold</mat-option>\r\n              <mat-option value=\"Freehold\">Freehold</mat-option>\r\n              <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\r\n            </mat-select>\r\n          </mat-form-field>\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label>Property Features</mat-label>\r\n            <mat-select placeholder=\"Select Condition\" [formControl]=\"Condition\" multiple\r\n              [(ngModel)]=\"listingBuyer.features\" #sl class=\"mat-select-edit\">\r\n  \r\n              <div class=\"select-constion\">\r\n                <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\r\n              </div>\r\n              <mat-option *ngFor=\"let Conditions of ConditionsList\" [value]=\"Conditions\">{{Conditions}}</mat-option>\r\n  \r\n            </mat-select>\r\n          </mat-form-field>\r\n\r\n\r\n        </mat-card>\r\n\r\n\r\n        <div class=\"button-next-tab2\">\r\n          <a (click)=\"selectTab(0, 1)\" class=\"btn  btnPrevious btn-next\">Previous</a>\r\n          <a (click)=\"onSubmit()\" class=\"btn btn-primary btnNext btn-next\">Submit</a>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n\r\n  </mat-tab-group>\r\n</form>\r\n\r\n";
+    __webpack_exports__["default"] = "<!-- Loading spinner -->\r\n<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<app-template></app-template>\r\n\r\n<form  *ngIf=\"isLoggedIn\">\r\n  <mat-tab-group #matgroup class=\"form-tab-conatiner\" [selectedIndex]=\"selectedIndex\">\r\n    <mat-tab label=\"Personal Details \" class=\"tabs-align-padding\">\r\n      <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\r\n        <mat-card class=\"card-margin\">\r\n          <mat-card-title class=\"mat_card_title\">\r\n\r\n            \r\n            <p class=\"forms-heading heading-nestimate\">Personal Details</p>\r\n          </mat-card-title>\r\n          <p class=\"forms-star heading-nestimate\">*required</p>\r\n       \r\n  \r\n        \r\n            <mat-form-field>\r\n              <mat-label>Title*</mat-label>\r\n              <mat-select name=\"title\" [(ngModel)]=\"user.title\" class=\"drop-down-list\">\r\n                <mat-option value=\"Mr\">Mr</mat-option>\r\n                <mat-option value=\"Ms\">Ms</mat-option>\r\n                <mat-option value=\"Mrs\">Mrs</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Full Name\" required\r\n              name=\"Name\" class=\"mat-mail-input\"   [(ngModel)]=\"user.Name\">\r\n          </mat-form-field>\r\n\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n\r\n            <input matInput  placeholder=\"Email\" \r\n             name=\"Email\" class=\"mat-mail-input\"   [(ngModel)]=\"user.email\" [formControl]=\"emailFormControl\" >\r\n        \r\n             <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\r\n              Please enter a valid email address\r\n            </mat-error>\r\n            <mat-error *ngIf=\"emailFormControl.hasError('required')\">\r\n              Email is <strong>required</strong>\r\n            </mat-error>\r\n        \r\n        \r\n        \r\n        \r\n            </mat-form-field>\r\n\r\n\r\n\r\n\r\n          <!--Date Of Birth Field-->\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput [matDatepicker]=\"picker\" placeholder=\"DD/MM/YY*\" name=\"DOB\"\r\n              class=\"mat-mail-input\"  value=\"DOB\"    [(ngModel)]=\"user.DOB\">\r\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n            <mat-datepicker #picker></mat-datepicker>\r\n         \r\n          </mat-form-field>\r\n          <!--Date Of Birth Field End-->\r\n\r\n\r\n          <!--Phone Number field-->\r\n          <mat-form-field class=\"example-full-width\">\r\n            <span matPrefix>+44 &nbsp;</span>\r\n            <input matInput placeholder=\"Phone Number\" name=\"phonenumber\" class=\"mat-mail-input\"   [(ngModel)]=\"user.Phone\" type=”tel”  [formControl]=\"phoneFormControl\" maxlength=\"10\">\r\n            <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\r\n              Please enter a valid Phone Number\r\n            </mat-error>\r\n            <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\r\n              Phone Number is <strong>required</strong>\r\n            </mat-error>\r\n            <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\r\n              Phone Number is <strong>not valid</strong>\r\n          \r\n            </mat-error>\r\n          </mat-form-field>\r\n         \r\n          <!--Phone Number field-->\r\n    \r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label>Your Buying Position*</mat-label>\r\n            <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\r\n              class=\"example-full-width\">\r\n              <mat-option value=\"First Time Buyer\" (click)=\"otherOption()\">First Time Buyer</mat-option>\r\n              <mat-option value=\"In Chain\" (click)=\"otherOption()\">In Chain</mat-option>\r\n              <mat-option value=\"Cash Buyer\" (click)=\"otherOption()\">Cash Buyer</mat-option>\r\n              <mat-option value=\"Other (Please specify)\" (click)=\"otherChain()\">Other (Please specify)</mat-option>\r\n            </mat-select>\r\n            \r\n          </mat-form-field>\r\n          <mat-form-field class=\"example-full-width\" *ngIf=\"other\">\r\n          <input matInput placeholder=\"other\" name=\"other\" class=\"mat-mail-input\"   >\r\n          </mat-form-field>\r\n       \r\n        </mat-card>\r\n        <mat-card class=\"card-margin\">\r\n          <label class=\"heading-nestimate\">\"Please fill your present address</label>\r\n         \r\n\r\n          <p class=\"paragraph-color\">Search by Postcode</p>\r\n\r\n          <mat-option class=\"postcode-background\" style=\"background-color: #F5F5F5;\">\r\n            <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" placeholder=\"Enter Postcode\"\r\n              aria-label=\"Post-Code\" matInput [matAutocomplete]=\"auto\" [(ngModel)]=\"listingBuyer.Currentpostcode\">\r\n            <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\"\r\n              (optionSelected)='getPost($event.option.value)'>\r\n              <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\" [value]=\"item\">\r\n                <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\r\n                </span> | <span>{{ item.citytown | titlecase}}</span>\r\n              </mat-option>\r\n            </mat-autocomplete>\r\n          </mat-option>\r\n\r\n         \r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Town/City\" [(ngModel)]=\"listingBuyer.CurrentTown\" name=\"CurrentTowncity\"\r\n              class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n          \r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Full Address\" [formControl]=\"AddressFormControl\" name=\"CurrentAddress\"\r\n              class=\"mat-mail-input\" [(ngModel)]=\"listingBuyer.CurrentAddress\">\r\n            <mat-error *ngIf=\"AddressFormControl.hasError('Address') && !AddressFormControl.hasError('required')\">\r\n              Please enter a valid address\r\n            </mat-error>\r\n            <mat-error *ngIf=\"AddressFormControl.hasError('required')\">\r\n              Address is <strong>required</strong>\r\n            </mat-error>\r\n          </mat-form-field>\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"County\" required [(ngModel)]=\"listingBuyer.Currentstate\" name=\"state\"\r\n              class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n\r\n        </mat-card>\r\n        <div class=\"button-next\">\r\n          <a (click)=\"selectTab(1, 0)\" class=\" btn btn-primary btnNext btn-next\">Next</a>\r\n        </div>\r\n\r\n      </div>\r\n\r\n    </mat-tab>\r\n\r\n    <mat-tab label=\"Property Details\" class=\"tabs-align-padding\">\r\n      <div class=\"tabs-align-padding\">\r\n\r\n     \r\n\r\n        <mat-card class=\"card-margin\">\r\n\r\n          <mat-card-title class=\"mat_card_title heading-nestimate\">\"Please fill in the details of your desired property</mat-card-title>\r\n          <p class=\"mt-4 paragraph-color\">Search by Postcode</p>\r\n          <mat-option style=\"background-color: #F5F5F5;\">\r\n            <input [formControl]=\"autoCompleteControlLooking\" type=\"text\" placeholder=\"Enter Postcode\"\r\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\r\n              [(ngModel)]=\"listingBuyer.Lookingpostcode\" name=\"Lookingpostcode\">\r\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\"\r\n              (optionSelected)='getPosts($event.option.value)'>\r\n              <mat-option *ngFor=\"let item of addressianAutoCompleteLooking$ | async; let index=index\" [value]=\"item\">\r\n                <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\r\n                </span> | <span>{{ item.citytown | titlecase}}</span>\r\n              </mat-option>\r\n            </mat-autocomplete>\r\n          </mat-option>\r\n\r\n\r\n\r\n          <p class=\"mt-4\" class=\"paragraph-color\">Search by Address</p>\r\n          <mat-form-field class=\"example-full-width mb-3\">\r\n            <input matInput placeholder=\"Street Name\" class=\"mat-mail-input\" [(ngModel)]=\"listingBuyer.LookingStreetname\" name=\"LookingStreetname\">\r\n          </mat-form-field>\r\n\r\n\r\n          <mat-form-field class=\"example-full-width mb-3\">\r\n            <input matInput placeholder=\"Town/City\" [formControl]=\"TownFormControl\" [(ngModel)]=\"listingBuyer.LookingTown\" name=\"LookingTown\" class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"County\" [formControl]=\"stateFormControl\" required  [(ngModel)]=\"listingBuyer.Lookingstate\" name=\"Lookingstate\" class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Country\" [formControl]=\"stateFormControl\" required  [(ngModel)]=\"listingBuyer.Country\" name=\"Country\" class=\"mat-mail-input\">\r\n          </mat-form-field>\r\n        </mat-card>\r\n\r\n\r\n\r\n\r\n\r\n        <mat-card class=\"card-margin\">\r\n          <div id=\"finanacial\">\r\n            <mat-form-field class=\"example-full-width\">\r\n              <mat-label>Financial Position*</mat-label>\r\n              <mat-select name=\"FinancialPosition\" [(ngModel)]=\"listingBuyer.FinancialPosition\"\r\n                value=\"FinancialPosition\" class=\"example-full-width\">\r\n                <mat-option value=\"Mortgate to be arranged\" name=\"Mortgate to be arranged\" (click)=\"removefinancialPostion()\">Mortgate to be arranged</mat-option>\r\n                <mat-option value=\"Mortgage arranged \" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">Mortgage arranged </mat-option>\r\n                <mat-option value=\"Cash Buyer\" name=\"Cash Buyer\" (click)=\"removefinancialPostion()\">Cash Buyer</mat-option>\r\n                <mat-option value=\"Please specify\" name=\"Please specify\" (click)=\"financialPostion()\">Other</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n          </div>\r\n      \r\n\r\n\r\n        <mat-form-field class=\"example-full-width\" *ngIf=\"finanacial\">\r\n        <input matInput placeholder=\"other\" name=\"other\" class=\"mat-mail-input\"   >\r\n        </mat-form-field>\r\n\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label class=\"mb-2\">Search Radius (Miles)</mat-label>\r\n            <mat-select [(ngModel)]=\"listingBuyer.SearchRadius\" name=\"SearchRadius\" value=\"SearchRadius\"\r\n              class=\"example-full-width\">\r\n              <mat-option value=\"This postcode only\">This postcode only</mat-option>\r\n              <mat-option value=\"0.25\">Within ¼ mile</mat-option>\r\n              <mat-option value=\"0.5\">Within ½ mile</mat-option>\r\n              <mat-option value=\"1.0\">Within 1 mile</mat-option>\r\n              <mat-option value=\"3.0\">Within 3 miles</mat-option>\r\n              <mat-option value=\"5.0\">Within 5 miles</mat-option>\r\n              <mat-option value=\"10.0\">Within 10 miles</mat-option>\r\n              <mat-option value=\"15.0\">Within 15 miles</mat-option>\r\n              <mat-option value=\"20.0\">Within 20 miles</mat-option>\r\n              <mat-option value=\"30.0\">Within 30 miles</mat-option>\r\n              <mat-option value=\"40.0\">Within 40 miles</mat-option>\r\n            </mat-select>\r\n          </mat-form-field>\r\n\r\n          <div id=\"Property-type\">\r\n            <mat-form-field class=\"example-full-width\">\r\n              <mat-label>Property type*</mat-label>\r\n              <mat-select name=\"Propertytype\" [(ngModel)]=\"listingBuyer.PropertyType\" value=\"Propertytype\"\r\n                class=\"example-full-width\">\r\n                <mat-option value=\"Flat\">Flat</mat-option>\r\n                <mat-option value=\"Studio\">Studio</mat-option>\r\n                <mat-option value=\"Terracedhouse\">Terraced house</mat-option>\r\n                <mat-option value=\"Semi-detached\">Semi-detached house</mat-option>\r\n                <mat-option value=\"Bungalow\">Bungalow</mat-option>\r\n                <mat-option value=\"Detachedhouse\">Detached house</mat-option>\r\n                <mat-option value=\"Cottage\">Cottage</mat-option>\r\n                <mat-option value=\"Townhouse\">Town house</mat-option>\r\n                <mat-option value=\"Countryhouse\">Country house</mat-option>\r\n                <mat-option value=\"Barnconversion\">Barn conversion</mat-option>\r\n                <mat-option value=\"Farm\">Farm</mat-option>\r\n                <mat-option value=\"Houseboat\">Houseboat</mat-option>\r\n                <mat-option value=\"Lodge\">Lodge</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n          </div>\r\n\r\n\r\n <!--Min Max Amount-->\r\n <label class=\"heading-nestimate\">Number of Rooms</label>\r\n <div class=\"price-selection\">\r\n   <mat-form-field class=\"filed-width\" >\r\n     <mat-label>Min  Rooms</mat-label>\r\n     <mat-select [(value)]=\"Roommin\" name=\"Roommin\" [(ngModel)]=\"listingBuyer.Roommin\">\r\n      <mat-option value=\"Studio\">Studio</mat-option>\r\n       <mat-option value=\"1\">1</mat-option>\r\n       <mat-option value=\"2\">2</mat-option>\r\n       <mat-option value=\"3\">3</mat-option>\r\n       <mat-option value=\"4\">4</mat-option>\r\n       <mat-option value=\"5\">5</mat-option>\r\n     </mat-select>\r\n   </mat-form-field>\r\n   <mat-form-field class=\"filed-width\">\r\n     <mat-label>Max  Rooms</mat-label>\r\n     <mat-select [(value)]=\"Roomsmax\" name=\"Roomsmax\" [(ngModel)]=\"listingBuyer.Roomsmax\">\r\n       <mat-option value=\"Studio\">Studio</mat-option>\r\n       <mat-option value=\"1\">1</mat-option>\r\n       <mat-option value=\"2\">2</mat-option>\r\n       <mat-option value=\"3\">3</mat-option>\r\n       <mat-option value=\"4\">4</mat-option>\r\n       <mat-option value=\"5\">5</mat-option>\r\n     </mat-select>\r\n   </mat-form-field>\r\n </div>\r\n<!--Max-No of Rooms-->\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n          <!--Min Max Amount-->\r\n          <label class=\"heading-nestimate\">Price Range</label>\r\n          <div class=\"price-selection\">\r\n            <mat-form-field class=\"filed-width\">\r\n              <mat-label>MinAmount</mat-label>\r\n              <mat-select [(value)]=\"min\" name=\"MinAmount\" [(ngModel)]=\"listingBuyer.MinAmount\">\r\n                <mat-option value=\"50000\">50,000</mat-option>\r\n                <mat-option value=\"60000\">60,000</mat-option>\r\n                <mat-option value=\"70000\">70,000</mat-option>\r\n                <mat-option value=\"80000\">80,000</mat-option>\r\n                <mat-option value=\"90000\">90,000</mat-option>\r\n                <mat-option value=\"100000\">100,000</mat-option>\r\n                <mat-option value=\"110000\">110,000</mat-option>\r\n                <mat-option value=\"120000\">120,000</mat-option>\r\n                <mat-option value=\"125000\">125,000</mat-option>\r\n                <mat-option value=\"130000\">130,000</mat-option>\r\n                <mat-option value=\"140000\">140,000</mat-option>\r\n                <mat-option value=\"150000\">150,000</mat-option>\r\n                <mat-option value=\"160000\">160,000</mat-option>\r\n                <mat-option value=\"170000\">170,000</mat-option>\r\n                <mat-option value=\"175000\">175,000</mat-option>\r\n                <mat-option value=\"180000\">180,000</mat-option>\r\n                <mat-option value=\"190000\">190,000</mat-option>\r\n                <mat-option value=\"200000\">200,000</mat-option>\r\n                <mat-option value=\"210000\">210,000</mat-option>\r\n                <mat-option value=\"220000\">220,000</mat-option>\r\n                <mat-option value=\"230000\">230,000</mat-option>\r\n                <mat-option value=\"240000\">240,000</mat-option>\r\n                <mat-option value=\"250000\">250,000</mat-option>\r\n                <mat-option value=\"260000\">260,000</mat-option>\r\n                <mat-option value=\"270000\">270,000</mat-option>\r\n                <mat-option value=\"280000\">280,000</mat-option>\r\n                <mat-option value=\"290000\">290,000</mat-option>\r\n                <mat-option value=\"300000\">300,000</mat-option>\r\n                <mat-option value=\"325000\">325,000</mat-option>\r\n                <mat-option value=\"350000\">350,000</mat-option>\r\n                <mat-option value=\"375000\">375,000</mat-option>\r\n                <mat-option value=\"400000\">400,000</mat-option>\r\n                <mat-option value=\"425000\">425,000</mat-option>\r\n                <mat-option value=\"450000\">450,000</mat-option>\r\n                <mat-option value=\"475000\">475,000</mat-option>\r\n                <mat-option value=\"500000\">500,000</mat-option>\r\n                <mat-option value=\"525000\">525,000</mat-option>\r\n                <mat-option value=\"550000\">550,000</mat-option>\r\n                <mat-option value=\"575000\">575,000</mat-option>\r\n                <mat-option value=\"600000\">600,000</mat-option>\r\n                <mat-option value=\"625000\">625,000</mat-option>\r\n                <mat-option value=\"650000\">650,000</mat-option>\r\n                <mat-option value=\"675000\">675,000</mat-option>\r\n                <mat-option value=\"700000\">700,000</mat-option>\r\n                <mat-option value=\"725000\">725,000</mat-option>\r\n                <mat-option value=\"750000\">750,000</mat-option>\r\n                <mat-option value=\"775000\">775,000</mat-option>\r\n                <mat-option value=\"800000\">800,000</mat-option>\r\n                <mat-option value=\"825000\">825,000</mat-option>\r\n                <mat-option value=\"850000\">850,000</mat-option>\r\n                <mat-option value=\"875000\">875,000</mat-option>\r\n                <mat-option value=\"900000\">900,000</mat-option>\r\n                <mat-option value=\"925000\">925,000</mat-option>\r\n                <mat-option value=\"950000\">950,000</mat-option>\r\n                <mat-option value=\"975000\">975,000</mat-option>\r\n                <mat-option value=\"1000000\">1,000,000</mat-option>\r\n                <mat-option value=\"1250000\">1,250,000</mat-option>\r\n                <mat-option value=\"1500000\">1,500,000</mat-option>\r\n                <mat-option value=\"1750000\">1,750,000</mat-option>\r\n                <mat-option value=\"2000000\">2,000,000</mat-option>\r\n                <mat-option value=\"2250000\">2,250,000</mat-option>\r\n                <mat-option value=\"2500000\">2,500,000</mat-option>\r\n                <mat-option value=\"3000000\">3,000,000</mat-option>\r\n                <mat-option value=\"4000000\">4,000,000</mat-option>\r\n                <mat-option value=\"5000000\">5,000,000</mat-option>\r\n                <mat-option value=\"6000000\">6,000,000</mat-option>\r\n                <mat-option value=\"7000000\">7,000,000</mat-option>\r\n                <mat-option value=\"8000000\">8,000,000</mat-option>\r\n                <mat-option value=\"10000000\">10,000,000</mat-option>\r\n                <mat-option value=\"15000000\">15,000,000</mat-option>\r\n                <mat-option value=\"20000000\">20,000,000</mat-option>\r\n                <mat-option value=\"\">No min</mat-option>\r\n\r\n              </mat-select>\r\n            </mat-form-field>\r\n            <mat-form-field class=\"filed-width\">\r\n              <mat-label>MaxAmount</mat-label>\r\n              <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingBuyer.MaxAmount\">\r\n                <mat-option value=\"50000\">50,000</mat-option>\r\n                <mat-option value=\"60000\">60,000</mat-option>\r\n                <mat-option value=\"70000\">70,000</mat-option>\r\n                <mat-option value=\"80000\">80,000</mat-option>\r\n                <mat-option value=\"90000\">90,000</mat-option>\r\n                <mat-option value=\"100000\">100,000</mat-option>\r\n                <mat-option value=\"110000\">110,000</mat-option>\r\n                <mat-option value=\"120000\">120,000</mat-option>\r\n                <mat-option value=\"125000\">125,000</mat-option>\r\n                <mat-option value=\"130000\">130,000</mat-option>\r\n                <mat-option value=\"140000\">140,000</mat-option>\r\n                <mat-option value=\"150000\">150,000</mat-option>\r\n                <mat-option value=\"160000\">160,000</mat-option>\r\n                <mat-option value=\"170000\">170,000</mat-option>\r\n                <mat-option value=\"175000\">175,000</mat-option>\r\n                <mat-option value=\"180000\">180,000</mat-option>\r\n                <mat-option value=\"190000\">190,000</mat-option>\r\n                <mat-option value=\"200000\">200,000</mat-option>\r\n                <mat-option value=\"210000\">210,000</mat-option>\r\n                <mat-option value=\"220000\">220,000</mat-option>\r\n                <mat-option value=\"230000\">230,000</mat-option>\r\n                <mat-option value=\"240000\">240,000</mat-option>\r\n                <mat-option value=\"250000\">250,000</mat-option>\r\n                <mat-option value=\"260000\">260,000</mat-option>\r\n                <mat-option value=\"270000\">270,000</mat-option>\r\n                <mat-option value=\"280000\">280,000</mat-option>\r\n                <mat-option value=\"290000\">290,000</mat-option>\r\n                <mat-option value=\"300000\">300,000</mat-option>\r\n                <mat-option value=\"325000\">325,000</mat-option>\r\n                <mat-option value=\"350000\">350,000</mat-option>\r\n                <mat-option value=\"375000\">375,000</mat-option>\r\n                <mat-option value=\"400000\">400,000</mat-option>\r\n                <mat-option value=\"425000\">425,000</mat-option>\r\n                <mat-option value=\"450000\">450,000</mat-option>\r\n                <mat-option value=\"475000\">475,000</mat-option>\r\n                <mat-option value=\"500000\">500,000</mat-option>\r\n                <mat-option value=\"525000\">525,000</mat-option>\r\n                <mat-option value=\"550000\">550,000</mat-option>\r\n                <mat-option value=\"575000\">575,000</mat-option>\r\n                <mat-option value=\"600000\">600,000</mat-option>\r\n                <mat-option value=\"625000\">625,000</mat-option>\r\n                <mat-option value=\"650000\">650,000</mat-option>\r\n                <mat-option value=\"675000\">675,000</mat-option>\r\n                <mat-option value=\"700000\">700,000</mat-option>\r\n                <mat-option value=\"725000\">725,000</mat-option>\r\n                <mat-option value=\"750000\">750,000</mat-option>\r\n                <mat-option value=\"775000\">775,000</mat-option>\r\n                <mat-option value=\"800000\">800,000</mat-option>\r\n                <mat-option value=\"825000\">825,000</mat-option>\r\n                <mat-option value=\"850000\">850,000</mat-option>\r\n                <mat-option value=\"875000\">875,000</mat-option>\r\n                <mat-option value=\"900000\">900,000</mat-option>\r\n                <mat-option value=\"925000\">925,000</mat-option>\r\n                <mat-option value=\"950000\">950,000</mat-option>\r\n                <mat-option value=\"975000\">975,000</mat-option>\r\n                <mat-option value=\"1000000\">1,000,000</mat-option>\r\n                <mat-option value=\"1250000\">1,250,000</mat-option>\r\n                <mat-option value=\"1500000\">1,500,000</mat-option>\r\n                <mat-option value=\"1750000\">1,750,000</mat-option>\r\n                <mat-option value=\"2000000\">2,000,000</mat-option>\r\n                <mat-option value=\"2250000\">2,250,000</mat-option>\r\n                <mat-option value=\"2500000\">2,500,000</mat-option>\r\n                <mat-option value=\"3000000\">3,000,000</mat-option>\r\n                <mat-option value=\"4000000\">4,000,000</mat-option>\r\n                <mat-option value=\"5000000\">5,000,000</mat-option>\r\n                <mat-option value=\"6000000\">6,000,000</mat-option>\r\n                <mat-option value=\"7000000\">7,000,000</mat-option>\r\n                <mat-option value=\"8000000\">8,000,000</mat-option>\r\n                <mat-option value=\"10000000\">10,000,000</mat-option>\r\n                <mat-option value=\"15000000\">15,000,000</mat-option>\r\n                <mat-option value=\"20000000\">20,000,000</mat-option>\r\n                <mat-option value=\"\">No max</mat-option>\r\n              </mat-select>\r\n            </mat-form-field>\r\n          </div>\r\n          <!--Min Max Amount End-->\r\n\r\n\r\n          <!--Offer validity Group-->\r\n\r\n          <mat-radio-group aria-label=\"Select an option\" id=\"name \" name=\"Validity\" [(ngModel)]=\"listingBuyer.Validity\"\r\n            value=\"Validity\">\r\n            <label>How long should your Nestimate be active?</label><br>\r\n            <div class=\"radio-button-align\">\r\n              <mat-radio-button value=\"1\" class=\"mr-2\">1 Month</mat-radio-button>\r\n              <mat-radio-button value=\"3\">3 Months</mat-radio-button>\r\n              <mat-radio-button value=\"6\">6 Months</mat-radio-button>\r\n              <mat-radio-button value=\"Indefinite\">Indefinite\r\n              </mat-radio-button>\r\n            </div>\r\n          </mat-radio-group>\r\n          <p class=\"Label-notes heading-nestimate\">*Note: Your offer will automatically expire after the given time period</p>\r\n          <!--Offer validity Group End-->\r\n          \r\n\r\n\r\n\r\n\r\n\r\n\r\n        </mat-card>\r\n\r\n        <mat-card class=\"card-margin\">\r\n          <label class=\"heading-nestimate\">Optional Details</label><br>\r\n <!--No of Bathrooms-->\r\n <label class=\"heading-nestimate\">No of Bathrooms</label>\r\n <div class=\"price-selection\">\r\n   <mat-form-field class=\"filed-width\" >\r\n     <mat-label>Min</mat-label>\r\n     <mat-select [(value)]=\"Minbathroom\" name=\"Minbathroom\" [(ngModel)]=\"listingBuyer.Minbathroom\">\r\n      <mat-option value=\"1\">1</mat-option>\r\n       <mat-option value=\"2\">2</mat-option>\r\n       <mat-option value=\"3 or more\">3 or more</mat-option>\r\n     </mat-select>\r\n   </mat-form-field>\r\n   <mat-form-field class=\"filed-width\">\r\n     <mat-label>Max</mat-label>\r\n     <mat-select [(value)]=\"Maxbathroom\" name=\"Maxbathroom\" [(ngModel)]=\"listingBuyer.Maxbathroom\">\r\n       <mat-option value=\"1\">1</mat-option>\r\n       <mat-option value=\"2\">2</mat-option>\r\n       <mat-option value=\"3 or more\">3 or more</mat-option>\r\n     </mat-select>\r\n   </mat-form-field>\r\n </div>\r\n      \r\n\r\n\r\n\r\n  <!--No of reception-->\r\n  <label class=\"heading-nestimate\">No of Reception Rooms</label>\r\n  <div class=\"price-selection\">\r\n    <mat-form-field class=\"filed-width\" >\r\n      <mat-label>Min</mat-label>\r\n      <mat-select [(value)]=\"Minreception\" name=\"Minreception\" [(ngModel)]=\"listingBuyer.Minreception\">\r\n        <mat-option value=\"1\">1</mat-option>\r\n        <mat-option value=\"2\">2</mat-option>\r\n        <mat-option value=\"3 or more\">3 or more</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n    <mat-form-field class=\"filed-width\">\r\n      <mat-label>Max</mat-label>\r\n      <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingBuyer.Maxreception\">\r\n        <mat-option value=\"1\">1</mat-option>\r\n        <mat-option value=\"2\">2</mat-option>\r\n        <mat-option value=\"3 or more\">3 or more</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n  </div>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <mat-label>Property Condition</mat-label>\r\n          <mat-select [(value)]=\"Conditions\" name=\"Conditions\" [(ngModel)]=\"listingBuyer.Conditions\">\r\n            <mat-option value=\"New Build\">New Build</mat-option>\r\n            <mat-option value=\"Needs Modernisation\">Needs Modernisation</mat-option>\r\n          </mat-select>\r\n        </mat-form-field>\r\n\r\n        \r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label>Ownership</mat-label>\r\n            <mat-select name=\"Ownership\" [(ngModel)]=\"listingBuyer.Ownership\" value=\"Ownership\"\r\n              class=\"example-full-width\">\r\n              <mat-option value=\"Leasehold\">Leasehold</mat-option>\r\n              <mat-option value=\"Freehold\">Freehold</mat-option>\r\n              <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\r\n            </mat-select>\r\n          </mat-form-field>\r\n\r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label>Property Features</mat-label>\r\n            <mat-select placeholder=\"Select Condition\" [formControl]=\"Condition\" multiple\r\n              [(ngModel)]=\"listingBuyer.features\" #sl class=\"mat-select-edit\">\r\n  \r\n              <div class=\"select-constion\">\r\n                <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\r\n              </div>\r\n              <mat-option *ngFor=\"let Conditions of ConditionsList\" [value]=\"Conditions\">{{Conditions}}</mat-option>\r\n  \r\n            </mat-select>\r\n          </mat-form-field>\r\n\r\n\r\n        </mat-card>\r\n\r\n\r\n        <div class=\"button-next-tab2\">\r\n          <a (click)=\"selectTab(0, 1)\" class=\"btn  btnPrevious btn-next\">Previous</a>\r\n          <a (click)=\"onSubmit()\" class=\"btn btn-primary btnNext btn-next\">Submit</a>\r\n        </div>\r\n      </div>\r\n    </mat-tab>\r\n\r\n  </mat-tab-group>\r\n</form>\r\n\r\n";
     /***/
   },
 
@@ -321,7 +321,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n \r\n\r\n  <mat-card class=\"thanku-section\" >\r\n    <img mat-card-image src=\"../../../../../../assets/Images/matchpages.jpg\"  class=\"match-image\">  \r\n  </mat-card >\r\n\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span class=\"outputText\"></span>&nbsp;No Match Listing</p>\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\"><span class=\"outputText\">{{matchedProperties.length}}</span>&nbsp;Match Listing(s)</p>\r\n  <div >\r\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"matchedProperties.length\">\r\n            <div class=\"match-section\" routerLink='/SellerSelectedProperty/\r\n            {{property.MaxAmount}}\r\n            /{{property.Lookingpostcode}}\r\n            /{{property.LookingStreetname}}\r\n            /{{property.Position}}\r\n            /{{property.PropertyType}}\r\n            /{{property.Roomsmax}}\r\n            /{{property.Ownership}}\r\n            /{{property.Conditions}}\r\n              /{{property.Maxbathroom}}\r\n               /{{property.Maxreception}}\r\n              /{{property.features}}\r\n            /{{property.UserId}}\r\n            /{{property.FinancialPosition}}' *ngFor=\"let property of matchedProperties\">\r\n        <mat-card class=\"mat-card-matches\">\r\n          <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n          <div class=\"match-content\">\r\n           <span class=\"heading-nestimate\">Nestimate by {{Names}}</span> \r\n            <p><span class=\"match-heading heading-nestimate\">Price Range:</span><span class=\"match-outuput outputText\">{{property.MaxAmount}}</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Chain Status:</span><span class=\"match-outuput outputText\">{{property.ChainStatus}}</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Property Type:</span><span class=\"match-outuput outputText\">{{property.PropertyType}}</span></p>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n\r\n    </section>\r\n\r\n\r\n    <section id=\"youmaylike\">\r\n      <p class=\"mt-3 main-heading heading-nestimate\"><span clas=\"outputText\">{{noOfUnmatched}}</span>&nbsp;&nbsp;Other listings that may interest</p>\r\n      <!--First-section-->\r\n      <div class=\"match-section\" routerLink='/SellerSelectedProperty/\r\n      {{property.detail.MaxAmount}}\r\n      /{{property.detail.Lookingpostcode}}\r\n      /{{property.detail.LookingStreetname}}\r\n      /{{property.detail.Position}}\r\n      /{{property.detail.PropertyType}}\r\n      /{{property.detail.Roomsmax}}\r\n      /{{property.detail.Ownership}}\r\n      /{{property.detail.Conditions}}\r\n        /{{property.detail.Maxbathroom}}\r\n         /{{property.detail.Maxreception}}\r\n        /{{property.detail.features}}\r\n      /{{property.detail.UserId}}\r\n      /{{property.detail.FinancialPosition}}' *ngFor=\"let property of unmatchedProperties\">\r\n     \r\n        <mat-card class=\"mat-card-matches\">\r\n          <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n          <div class=\"match-content\">\r\n            <span class=\"heading-nestimate\">Nestimate by {{unNamed}}</span> \r\n            <p><span class=\"match-heading heading-nestimate\">Price Range:</span><span class=\"match-outuput outputText\">{{property.detail.MaxAmount}}</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Distance:</span><span class=\"match-outuput outputText\">{{property.distance | number:'1.1-1'}} (kms)</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Chain Status:</span><span class=\"match-outuput outputText\">{{property.detail.ChainStatus}}</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Property Type:</span><span class=\"match-outuput outputText\">{{property.detail.PropertyType}}</span></p>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n\r\n\r\n    </section>\r\n  </div>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n \r\n\r\n  <mat-card class=\"thanku-section\" >\r\n    <img mat-card-image src=\"../../../../../../assets/Images/matchpages.jpg\"  class=\"match-image\">  \r\n  </mat-card >\r\n\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span class=\"outputText\"></span>&nbsp;No Match Listing</p>\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\"><span class=\"outputText\">{{matchedProperties.length}}</span>&nbsp;Match Listing(s)</p>\r\n  <div >\r\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"matchedProperties.length\">\r\n            <div class=\"match-section\" routerLink='/SellerSelectedProperty/\r\n            {{property.MaxAmount}}\r\n            /{{property.Lookingpostcode}}\r\n            /{{property.LookingStreetname}}\r\n            /{{property.Position}}\r\n            /{{property.PropertyType}}\r\n            /{{property.Roomsmax}}\r\n            /{{property.Ownership}}\r\n            /{{property.Conditions}}\r\n              /{{property.Maxbathroom}}\r\n               /{{property.Maxreception}}\r\n              /{{property.features}}\r\n            /{{property.UserId}}\r\n            /{{property.FinancialPosition}}' *ngFor=\"let property of matchedProperties\">\r\n        <mat-card class=\"mat-card-matches\">\r\n          <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n          <div class=\"match-content\">\r\n           <span class=\"heading-nestimate\">Nestimate by {{title}} {{Names |  shortName}}</span> \r\n            <p><span class=\"match-heading heading-nestimate\">Price Range:</span><span class=\"match-outuput outputText\">{{property.MaxAmount}}</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Chain Status:</span><span class=\"match-outuput outputText\">{{property.ChainStatus}}</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Property Type:</span><span class=\"match-outuput outputText\">{{property.PropertyType}}</span></p>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n\r\n    </section>\r\n\r\n\r\n    <section id=\"youmaylike\">\r\n      <p class=\"mt-3 main-heading heading-nestimate\"><span clas=\"outputText\">{{noOfUnmatched}}</span>&nbsp;&nbsp;Other listings that may interest</p>\r\n      <!--First-section-->\r\n      <div class=\"match-section\" routerLink='/SellerSelectedProperty/\r\n      {{property.detail.MaxAmount}}\r\n      /{{property.detail.Lookingpostcode}}\r\n      /{{property.detail.LookingStreetname}}\r\n      /{{property.detail.Position}}\r\n      /{{property.detail.PropertyType}}\r\n      /{{property.detail.Roomsmax}}\r\n      /{{property.detail.Ownership}}\r\n      /{{property.detail.Conditions}}\r\n        /{{property.detail.Maxbathroom}}\r\n         /{{property.detail.Maxreception}}\r\n        /{{property.detail.features}}\r\n      /{{property.detail.UserId}}\r\n      /{{property.detail.FinancialPosition}}' *ngFor=\"let property of unmatchedProperties\">\r\n     \r\n        <mat-card class=\"mat-card-matches\">\r\n          <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n          <div class=\"match-content\">\r\n            <span class=\"heading-nestimate\">Nestimate by {{title}} {{unNamed |  shortName}}</span> \r\n            <p><span class=\"match-heading heading-nestimate\">Price Range:</span><span class=\"match-outuput outputText\">{{property.detail.MaxAmount}}</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Distance:</span><span class=\"match-outuput outputText\">{{property.distance | number:'1.1-1'}} (kms)</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Chain Status:</span><span class=\"match-outuput outputText\">{{property.detail.ChainStatus}}</span><br>\r\n              <span class=\"match-heading heading-nestimate\">Property Type:</span><span class=\"match-outuput outputText\">{{property.detail.PropertyType}}</span></p>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n\r\n\r\n    </section>\r\n  </div>\r\n</div>\r\n";
     /***/
   },
 
@@ -461,7 +461,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"my-requirement-container container\">\r\n  <p class=\"my-requirement-heading heading-nestimate\">\r\n    My Listing\r\n  </p>\r\n\r\n  <mat-tab-group>\r\n    <mat-tab label=\"My Requirements\" class=\"mat-label-align\" *ngIf=\"propertyRequirementDetails.length > 0\">\r\n      <mat-card *ngFor=\"let requirement of propertyRequirementDetails\" class=\"my-requirement-one mt-3\">\r\n        <div id=\"demo\">\r\n          <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n      <div class=\"listing\">\r\n    <span class=\"heading-nestimate\">Radius:</span><span class=\"outputText\">{{requirement.SearchRadius}}</span><br>\r\n    <span class=\"heading-nestimate\">Postcode:</span><span class=\"outputText\">{{requirement.Lookingpostcode}}</span><br>\r\n    <span class=\"heading-nestimate\">Street Name:</span><span class=\"outputText\">{{requirement.LookingStreetname}}</span><br>\r\n    <span class=\"heading-nestimate\">Price Range:</span><span class=\"outputText\">{{requirement.MinAmount}}</span><br>\r\n\r\n      </div>\r\n      </div>\r\n    </mat-card>\r\n\r\n\r\n\r\n\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"My Properties\" class=\"mat-label-align\" *ngIf=\"propertyDetails.length > 0\">\r\n      \r\n      <section class=\"mt-4\" id=\"MyListing\" >\r\n        <mat-card style=\"margin-top: 10px;\" *ngFor=\"let property of propertyDetails\" class=\"match-section\">\r\n          <div id=\"demo\">\r\n            <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n       <div class=\"listing\">\r\n        <span class=\"heading-nestimate\">Address:</span><span class=\"outputText\">{{property.LookingStreetname}}</span><br>\r\n        <span class=\"heading-nestimate\">Expected Amount:</span><span class=\"outputText\">{{property.MaxAmount}}</span><br>\r\n        <span class=\"heading-nestimate\">Property Type:</span><span class=\"outputText\">{{property.PropertyType}}</span><br>\r\n        <span class=\"heading-nestimate\">Post Code:</span><span class=\"outputText\">{{property.Lookingpostcode}}</span><br>\r\n\r\n\r\n       </div>\r\n           \r\n      \r\n        </div>\r\n        </mat-card>\r\n      </section>\r\n    \r\n    \r\n    \r\n    </mat-tab>\r\n  \r\n  </mat-tab-group>\r\n\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"my-requirement-container container\">\r\n  <p class=\"my-requirement-heading heading-nestimate\">\r\n    My Nestimates\r\n  </p>\r\n\r\n  <mat-tab-group>\r\n    <mat-tab label=\"My Requirements\" class=\"mat-label-align\" *ngIf=\"propertyRequirementDetails.length > 0\">\r\n      <mat-card *ngFor=\"let requirement of propertyRequirementDetails\" class=\"my-requirement-one mt-3\">\r\n        <div id=\"demo\">\r\n          <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n      <div class=\"listing\">\r\n    <span class=\"heading-nestimate\">Radius:</span><span class=\"outputText\">{{requirement.SearchRadius}}</span><br>\r\n    <span class=\"heading-nestimate\">Postcode:</span><span class=\"outputText\">{{requirement.Lookingpostcode}}</span><br>\r\n    <span class=\"heading-nestimate\">Street Name:</span><span class=\"outputText\">{{requirement.LookingStreetname}}</span><br>\r\n    <span class=\"heading-nestimate\">Price Range:</span><span class=\"outputText\">{{requirement.MinAmount}}</span><br>\r\n\r\n      </div>\r\n      </div>\r\n    </mat-card>\r\n\r\n\r\n\r\n\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"My Properties\" class=\"mat-label-align\" *ngIf=\"propertyDetails.length > 0\">\r\n      \r\n      <section class=\"mt-4\" id=\"MyListing\" >\r\n        <mat-card style=\"margin-top: 10px;\" *ngFor=\"let property of propertyDetails\" class=\"match-section\">\r\n          <div id=\"demo\">\r\n            <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n       <div class=\"listing\">\r\n        <span class=\"heading-nestimate\">Address:</span><span class=\"outputText\">{{property.LookingStreetname}}</span><br>\r\n        <span class=\"heading-nestimate\">Expected Amount:</span><span class=\"outputText\">{{property.MaxAmount}}</span><br>\r\n        <span class=\"heading-nestimate\">Property Type:</span><span class=\"outputText\">{{property.PropertyType}}</span><br>\r\n        <span class=\"heading-nestimate\">Post Code:</span><span class=\"outputText\">{{property.Lookingpostcode}}</span><br>\r\n\r\n\r\n       </div>\r\n           \r\n      \r\n        </div>\r\n        </mat-card>\r\n      </section>\r\n    \r\n    \r\n    \r\n    </mat-tab>\r\n  \r\n  </mat-tab-group>\r\n\r\n</div>\r\n";
     /***/
   },
 
@@ -541,7 +541,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<mat-card>\r\n  <div *ngIf=\"user\">\r\n    <div class=\"profile-wrapper-content\">\r\n      <p class=\"profile-heading heading-nestimate\">My Profile</p>\r\n      <div class=\"profile-name-image mt-4\">\r\n        <img src=\"{{user.photoURL}}\" class=\"rounded-circle Profile-pic\" />\r\n        <p class=\"profile-name heading-nestimate\">{{ user.Name }}</p>\r\n        \r\n      </div>\r\n    </div>\r\n    <div class=\"profile-name-field-option\">\r\n      <div class=\"grid-container\">\r\n        <div>\r\n          <p class=\"fname-text1 heading-nestimate\">Name</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText\" *ngIf=\"user\">{{ user.Name }}</p>\r\n          <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n      <div>\r\n      \r\n      </div>\r\n      </div>\r\n\r\n      <div class=\"grid-container\">\r\n        <div>\r\n          <p class=\"fname-text1 heading-nestimate\">Phone No</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText\">{{user.Phone}}</p>\r\n          <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n  \r\n      </div>\r\n      <div class=\"grid-container\">\r\n        <div>\r\n          <p class=\"fname-text1 heading-nestimate\">Email Id</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText\">\r\n\r\n            {{user.Email}} </p>\r\n            <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n      \r\n      </div>\r\n      <div class=\"grid-container\">\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text1 heading-nestimate\">Date of Birth</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText \" >{{user.DOB | date :'longDate' }}</p>\r\n          <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n      \r\n      </div>\r\n\r\n      <div class=\"grid-container\">\r\n        <div>\r\n          <p class=\"fname-text1 heading-nestimate\">Address</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText \" >{{user.Address}}</p>\r\n          <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n       \r\n      </div>\r\n    </div>\r\n  </div>\r\n</mat-card>\r\n\r\n<mat-card>\r\n  <div class=\"prefrence-notification\">\r\n    <h5 class=\"text-center notification-heading\">Notification Prefrences</h5>\r\n    <div class=\"prefrence-radio\">\r\n<form>\r\n<div class=\"form-check\">\r\n    <label class=\"form-check-label\">\r\n      <input type=\"radio\" class=\"form-check-input\" name=\"optradio\"><p class=\"radio-text\">Email for every match\r\n    </p></label>\r\n  </div>\r\n  <div class=\"form-check\">\r\n    <label class=\"form-check-label\">\r\n      <input type=\"radio\" class=\"form-check-input\" name=\"optradio\"><p class=\"radio-text\">Email me once a week with all the matches \r\n      that I have\r\n    </p> </label>\r\n  </div>\r\n</form>\r\n</div>\r\n\r\n\r\n</div>\r\n</mat-card>";
+    __webpack_exports__["default"] = "<mat-card>\r\n  <div *ngIf=\"user\">\r\n    <div class=\"profile-wrapper-content\">\r\n      <p class=\"profile-heading heading-nestimate\">My Profile</p>\r\n      <div class=\"profile-name-image mt-4\">\r\n        <img src=\"{{user.photoURL}}\" class=\"rounded-circle Profile-pic\" />\r\n        <p class=\"profile-name heading-nestimate\">{{ user.Name }}</p>\r\n        \r\n      </div>\r\n    </div>\r\n    <div class=\"profile-name-field-option\">\r\n      <div class=\"grid-container\">\r\n        <div>\r\n          <p class=\"fname-text1 heading-nestimate\">Name</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText\" *ngIf=\"user\">{{ user.Name }}</p>\r\n          <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n      <div>\r\n      \r\n      </div>\r\n      </div>\r\n\r\n      <div class=\"grid-container\">\r\n        <div>\r\n          <p class=\"fname-text1 heading-nestimate\">Phone No</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText\">{{user.Phone}}</p>\r\n          <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n  \r\n      </div>\r\n      <div class=\"grid-container\">\r\n        <div>\r\n          <p class=\"fname-text1 heading-nestimate\">Email Id</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText\">\r\n\r\n            {{user.Email}} </p>\r\n            <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n      \r\n      </div>\r\n      <div class=\"grid-container\">\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text1 heading-nestimate\">Date of Birth</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText \" >{{user.DOB | date :'longDate' }}</p>\r\n          <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n      \r\n      </div>\r\n\r\n      <div class=\"grid-container\">\r\n        <div>\r\n          <p class=\"fname-text1 heading-nestimate\">Address</p>\r\n        </div>\r\n        <div class=\"profile-output\">\r\n          <p class=\"fname-text2 outputText \" >{{user.Address}}</p>\r\n          <a routerLink=\"/editprofile\" class=\"outputText\">Edit</a>\r\n        </div>\r\n       \r\n      </div>\r\n    </div>\r\n  </div>\r\n</mat-card>\r\n\r\n<mat-card>\r\n  <div class=\"prefrence-notification\">\r\n    <h5 class=\"text-center notification-heading\">Notification Prefrences</h5>\r\n    <div class=\"prefrence-radio\">\r\n<form>\r\n<div class=\"form-check\">\r\n    <label class=\"form-check-label\">\r\n      <input type=\"radio\" class=\"form-check-input\" name=\"optradio\"><p class=\"radio-text\">Email for every match\r\n    </p></label>\r\n  </div>\r\n  <div class=\"form-check\">\r\n    <label class=\"form-check-label\">\r\n      <input type=\"radio\" class=\"form-check-input\" name=\"optradio\"><p class=\"radio-text\">Email me once a week with all the matches \r\n      that I have\r\n    </p> </label>\r\n  </div>\r\n</form> \r\n</div> \r\n\r\n\r\n</div>\r\n\r\n\r\n</mat-card>";
     /***/
   },
 
@@ -581,7 +581,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\r\n<div class=\"login-button-main\">\r\n  \r\n  <p class=\"Login-buton-text\">Log In</p></div>\r\n</div>\r\n\r\n\r\n<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n\r\n      <nav>\r\n        <div class=\"main-navigation-bar\">\r\n          <div class=\"menu-toogle\">\r\n            <img src= \"../../../assets/Images/menu.svg\" class=\"icon-size\" *ngIf=\"open\" (click)=\"openMenu()\">\r\n            <img src= \"../../../assets/Images/close-outline.svg\" class=\"icon-size\"  *ngIf=\"close\" (click)=\"closeMenu()\">\r\n\r\n          </div>\r\n\r\n          <div class=\"plus-icon\">\r\n            <img src= \"../../../assets/Images/add-outline.svg\" class=\"icon-size\"  (click)=\"plusmenu()\" *ngIf=\"plusOpenMenu\">\r\n            <img src= \"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"plusclose\" (click)=\"plusCloseMenu()\">\r\n \r\n           </div>\r\n          <div class=\"imge-logo-header\">\r\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" (click)=\"closeMenu()\" />\r\n          </div>\r\n\r\n          <div class=\"notification\" (click)=\"notificationoverlayopen()\" >\r\n            <div class=\"notification\" *ngIf=\"isLoggedIn\">\r\n              <img src= \"../../../assets/Images/notifications.svg\" class=\"icon-size\" *ngIf=\"matches >0\">\r\n           \r\n            <span class=\"log-out-text red-text\" *ngIf=\"matches > 0\" >{{matches}}</span>\r\n          </div>\r\n          </div>\r\n\r\n          \r\n\r\n          <div class=\"logout\">\r\n\r\n            <div class=\"logout-icon\" *ngIf=\"!isLoggedIn\" (click)=\" openLogIn()\">\r\n              <img src= \"../../../assets/Images/person-outline.svg\" class=\"icon-size\" >\r\n             <span class=\"log-out-text heading-nestimate\">LogIn</span>\r\n            </div>\r\n             <div class=\"logout-icon\" *ngIf=\"isLoggedIn\">\r\n              <img src= \"../../../assets/Images/person.svg\" class=\"icon-size\" (click)=\"authService.SignOut()\">\r\n           <span class=\"log-out-text heading-nestimate\">Logout</span>\r\n          </div>\r\n             \r\n              \r\n          </div>\r\n        </div>\r\n        <div class=\"nav-div\" *ngIf=\"menuItem\" >\r\n          <app-template></app-template>\r\n          <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\" (click)=\"Itemmenu()\" >\r\n            <div></div>\r\n            <div>\r\n              <input type=\"text\" placeholder=\"Search..\" /><img src=\"assets/Images/asset1.png\"\r\n                class=\"nav-link-icon-search\" />\r\n            </div>\r\n            <div></div>\r\n          </div> \r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\"  (click)=\"Itemmenu()\">\r\n            <div class=\"grid-container\" routerLink=\"/\" >\r\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/profile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">My Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">My Nestimates</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myListing\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Listing</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n      \r\n        \r\n          </ul>\r\n       \r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\r\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\r\n  </div>\r\n\r\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\r\n<div class=\"nav-login\"  >\r\n  <div *ngIf=\"isLoading\" class=\"loading-container\">\r\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n  </div>\r\n  <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\r\n    <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\r\n      <div class=\"user-cross\">\r\n      <h4 class=\"heading-nestimate\">Login</h4>\r\n      <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\r\n    </div>\r\n      <div class=\"social-button mt-4\">\r\n        <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n          Facebook\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\" >\r\n          Google+\r\n        </button>\r\n      </div>\r\n      <div class=\"input-group mb-3 mt-3\"></div>\r\n  <form (keydown.enter)=\"save()\">\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Enter email\" #userEmailLogin type=\"email\" name=\"email\" [(ngModel)]=\"email\">\r\n        </mat-form-field>\r\n  \r\n      \r\n      <mat-form-field class=\"example-full-width\">\r\n        <input matInput placeholder=\"Password\" #userPasswordLogin type=\"password\" name=\"password\" [(ngModel)]=\"password\">\r\n      </mat-form-field>\r\n    </form>\r\n      <div class=\"input-group-prepend other-option\">\r\n        <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\r\n      </div>\r\n      <button type=\"button\" class=\"btn btn-social-login\" (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\r\n        Login\r\n      </button>\r\n      <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\"  (click)=\"NewUser()\">Dont have an account?Click here to register</p>\r\n    </mat-card>\r\n    <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\r\n  \r\n      <div class=\"sign-up\">\r\n        <div class=\"signup-heading\">\r\n  \r\n          <div class=\"user-cross\">\r\n            <h4 class=\"heading-nestimate\">Sign up</h4>\r\n            <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\r\n          </div>\r\n        </div>\r\n        <div class=\"social-button mt-2\">\r\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n            Facebook\r\n          </button>\r\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\r\n            Google+\r\n          </button>\r\n        </div>\r\n        <div class=\"input-group mb-3 mt-3\">\r\n         <form (keydown)=\"keyDownFunction($event)\">\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"FullName\" name=\"name\"  class=\"mat-mail-input\" #displayName [(ngModel)]=\"name\" >\r\n          </mat-form-field >\r\n       \r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Enter email\" name=\"email\"  #userEmailRegister type=\"email\" [(ngModel)]=\"email\">\r\n          </mat-form-field>\r\n  \r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Password\" name=\"password\" #userPasswordRegister type=\"password\" [(ngModel)]=\"password\">\r\n          </mat-form-field>\r\n        </form>\r\n        </div>\r\n        <section class=\"example-section property-con-form\">\r\n    \r\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\r\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\r\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\r\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully selected<br> third port\r\n          </mat-checkbox>\r\n          <p class=\"heading-nestimate m-0 \">By clicking the sms box,you agreeing to recieve\"</p>\r\n          <p class=\"heading-nestimate \">By creating your account you agree to our Terms & Find out more,Please read our\r\n            Privacy Notice </p>\r\n        </section>\r\n   \r\n        <button type=\"button\" class=\"btn btn-social-login\"(click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\r\n        Sign Up\r\n      </button>\r\n      <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account? Click here to sign in</p>\r\n      </div>\r\n   \r\n    </mat-card>\r\n  </div>\r\n  \r\n</div>\r\n</div>\r\n<div class=\"notification-overlay\" *ngIf=\"notificationoverlay\">\r\n\r\n\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\r\n<div class=\"login-button-main\">\r\n  \r\n  <p class=\"Login-buton-text\">Log In</p></div>\r\n</div>\r\n\r\n\r\n<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n\r\n      <nav>\r\n        <div class=\"main-navigation-bar\">\r\n          <div class=\"menu-toogle\">\r\n            <img src= \"../../../assets/Images/menu.svg\" class=\"icon-size\" *ngIf=\"open\" (click)=\"openMenu()\">\r\n            <img src= \"../../../assets/Images/close-outline.svg\" class=\"icon-size\"  *ngIf=\"close\" (click)=\"closeMenu()\">\r\n\r\n          </div>\r\n\r\n          <div class=\"plus-icon\">\r\n            <img src= \"../../../assets/Images/add-outline.svg\" class=\"icon-size\"  (click)=\"plusmenu()\" *ngIf=\"plusOpenMenu\">\r\n            <img src= \"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"plusclose\" (click)=\"plusCloseMenu()\">\r\n \r\n           </div>\r\n          <div class=\"imge-logo-header\">\r\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" (click)=\"closeMenu()\" />\r\n          </div>\r\n\r\n          <div class=\"notification\" (click)=\"notificationoverlayopen()\" >\r\n            <div class=\"notification\" *ngIf=\"isLoggedIn\">\r\n              <img src= \"../../../assets/Images/notifications.svg\" class=\"icon-size\" >\r\n           \r\n            <span class=\"log-out-text red-text\"  >{{matches}}</span>\r\n          </div>\r\n          </div>\r\n\r\n          \r\n\r\n          <div class=\"logout\">\r\n\r\n            <div class=\"logout-icon\" *ngIf=\"!isLoggedIn\" (click)=\" openLogIn()\">\r\n              <img src= \"../../../assets/Images/person-outline.svg\" class=\"icon-size\" >\r\n             <span class=\"log-out-text heading-nestimate\">LogIn</span>\r\n            </div>\r\n             <div class=\"logout-icon\" *ngIf=\"isLoggedIn\">\r\n              <img src= \"../../../assets/Images/person.svg\" class=\"icon-size\" (click)=\"authService.SignOut()\">\r\n           <span class=\"log-out-text heading-nestimate\">Logout</span>\r\n          </div>\r\n             \r\n              \r\n          </div>\r\n        </div>\r\n        <div class=\"nav-div\" *ngIf=\"menuItem\" >\r\n          <app-template></app-template>\r\n          <div class=\"search-grid-conatiner\" *ngIf=\"isLoggedIn\" (click)=\"Itemmenu()\" >\r\n            <div></div>\r\n            <div>\r\n              <input type=\"text\" placeholder=\"Search..\" /><img src=\"assets/Images/asset1.png\"\r\n                class=\"nav-link-icon-search\" />\r\n            </div>\r\n            <div></div>\r\n          </div> \r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\"  (click)=\"Itemmenu()\">\r\n            <div class=\"grid-container\" routerLink=\"/\" >\r\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/profile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">My Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myListing\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Nestimates</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">Activity</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            \r\n      \r\n        \r\n          </ul>\r\n       \r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\r\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\r\n  </div>\r\n\r\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\r\n<div class=\"nav-login\"  >\r\n  <div *ngIf=\"isLoading\" class=\"loading-container\">\r\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n  </div>\r\n  <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\r\n    <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\r\n      <div class=\"user-cross\">\r\n      <h4 class=\"heading-nestimate\">Login</h4>\r\n      <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\r\n    </div>\r\n      <div class=\"social-button mt-4\">\r\n        <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n          Facebook\r\n        </button>\r\n        <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\" >\r\n          Google+\r\n        </button>\r\n      </div>\r\n      <div class=\"input-group mb-3 mt-3\"></div>\r\n  <form (keydown.enter)=\"save()\">\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput placeholder=\"Enter email\" #userEmailLogin type=\"email\" name=\"email\" [(ngModel)]=\"email\">\r\n        </mat-form-field>\r\n  \r\n      \r\n      <mat-form-field class=\"example-full-width\">\r\n        <input matInput placeholder=\"Password\" #userPasswordLogin type=\"password\" name=\"password\" [(ngModel)]=\"password\">\r\n      </mat-form-field>\r\n    </form>\r\n      <div class=\"input-group-prepend other-option\">\r\n        <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\r\n      </div>\r\n      <button type=\"button\" class=\"btn btn-social-login\" (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\r\n        Login\r\n      </button>\r\n      <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\"  (click)=\"NewUser()\">Dont have an account?Click here to register</p>\r\n    </mat-card>\r\n    <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\r\n  \r\n      <div class=\"sign-up\">\r\n        <div class=\"signup-heading\">\r\n  \r\n          <div class=\"user-cross\">\r\n            <h4 class=\"heading-nestimate\">Sign up</h4>\r\n            <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\r\n          </div>\r\n        </div>\r\n        <div class=\"social-button mt-2\">\r\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n            Facebook\r\n          </button>\r\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\r\n            Google+\r\n          </button>\r\n        </div>\r\n        <div class=\"input-group mb-3 mt-3\">\r\n         <form (keydown)=\"keyDownFunction($event)\">\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"FullName\" name=\"name\"  class=\"mat-mail-input\" #displayName [(ngModel)]=\"name\" >\r\n          </mat-form-field >\r\n       \r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Enter email\" name=\"email\"  #userEmailRegister type=\"email\" [(ngModel)]=\"email\">\r\n          </mat-form-field>\r\n  \r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput placeholder=\"Password\" name=\"password\" #userPasswordRegister type=\"password\" [(ngModel)]=\"password\">\r\n          </mat-form-field>\r\n        </form>\r\n        </div>\r\n        <section class=\"example-section property-con-form\">\r\n    \r\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\r\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\r\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\r\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully selected<br> third port\r\n          </mat-checkbox>\r\n          <p class=\"heading-nestimate m-0 \">By clicking the sms box,you agreeing to recieve\"</p>\r\n          <p class=\"heading-nestimate \">By creating your account you agree to our Terms & Find out more,Please read our\r\n            Privacy Notice </p>\r\n        </section>\r\n   \r\n        <button type=\"button\" class=\"btn btn-social-login\"(click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\r\n        Sign Up\r\n      </button>\r\n      <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account? Click here to sign in</p>\r\n      </div>\r\n   \r\n    </mat-card>\r\n  </div>\r\n  \r\n</div>\r\n</div>\r\n<div  *ngIf=\"notificationoverlay\">\r\n\r\n<app-notification></app-notification>\r\n</div>";
     /***/
   },
 
@@ -601,7 +601,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>notification works!</p>\r\n";
+    __webpack_exports__["default"] = "\r\n\r\n<div class=\"grid-item\">\r\n\r\n<div class=\"notification\">\r\n <div class=\"notification-icon\">\r\n<img src=\"../../../assets/Images/file.png\" class=\"icon\">\r\n </div>\r\n <div class=\"text heading-nestimate\">\r\nA seller expressed insterest on your Nestimate.Click Review<br>\r\n\r\n22 hrsago\r\n</div>\r\n\r\n</div>\r\n\r\n\r\n<div class=\"notification\">\r\n    <div class=\"notification-icon\">\r\n   <img src=\"../../../assets/Images/interface.png\" class=\"icon\">\r\n    </div>\r\n    <div class=\"text heading-nestimate\">\r\n   Your Nestimate was accepted<br>\r\n   \r\n   1 Dayago\r\n   </div>\r\n   \r\n   </div>\r\n\r\n   \r\n   <div class=\"notification\">\r\n    <div class=\"notification-icon\">\r\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\r\n    </div>\r\n    <div class=\"text heading-nestimate\">\r\n   Your Nestimate was not accepted<br>\r\n   \r\n   22 hrsago\r\n   </div>\r\n   \r\n   </div>\r\n\r\n   <div class=\"notification\">\r\n    <div class=\"notification-icon\">\r\n   <img src=\"../../../assets/Images/file.png\" class=\"icon\">\r\n    </div>\r\n    <div class=\"text heading-nestimate\">\r\n   A seller expressed insterest on your Nestimate.Click Review<br>\r\n   \r\n   22 hrsago\r\n   </div>\r\n   \r\n   </div>\r\n   \r\n</div>";
     /***/
   },
 
@@ -1576,6 +1576,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _http_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../http.service */
+    "./src/app/http.service.ts");
 
     var home = function home() {
       _classCallCheck(this, home);
@@ -1584,12 +1590,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var HomeComponent =
     /*#__PURE__*/
     function () {
-      function HomeComponent(authService, afAuth, Router) {
+      function HomeComponent(authService, afAuth, Router, HttpService) {
         _classCallCheck(this, HomeComponent);
 
         this.authService = authService;
         this.afAuth = afAuth;
         this.Router = Router;
+        this.HttpService = HttpService;
         this.selectedIndex = 0;
         this.maxNumberOfTabs = 2;
         this.isLoggedIn = true;
@@ -1675,6 +1682,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           console.log(home);
         }
       }, {
+        key: "register",
+        value: function register() {}
+      }, {
         key: "user",
         get: function get() {
           return this._user;
@@ -1694,6 +1704,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }, {
+        type: _http_service__WEBPACK_IMPORTED_MODULE_5__["HttpService"]
       }];
     };
 
@@ -2424,11 +2436,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _http_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../../../../../../http.service */
+    "./src/app/http.service.ts");
 
     var BuyerSelectedPropertyDetailComponent =
     /*#__PURE__*/
     function () {
-      function BuyerSelectedPropertyDetailComponent(Selected_propertydetail_Service, stateService, dialog, snackBar, MatchesService, _Activatedroute, _router) {
+      function BuyerSelectedPropertyDetailComponent(Selected_propertydetail_Service, stateService, dialog, snackBar, MatchesService, _Activatedroute, _router, HttpService) {
         _classCallCheck(this, BuyerSelectedPropertyDetailComponent);
 
         this.Selected_propertydetail_Service = Selected_propertydetail_Service;
@@ -2438,6 +2456,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.MatchesService = MatchesService;
         this._Activatedroute = _Activatedroute;
         this._router = _router;
+        this.HttpService = HttpService;
         this.isLoading = false;
         this.version = _angular_material__WEBPACK_IMPORTED_MODULE_5__["VERSION"];
         this.isBuyerSelected = false;
@@ -2535,6 +2554,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function continueClose() {
           this.overlay = false;
         }
+      }, {
+        key: "register",
+        value: function register() {
+          this.HttpService.sentEmail("http://localhost:3000/sendmail", this.user).subscribe(function (data) {
+            var res = data;
+            console.log('{user.email} is successfully send');
+          }, function (err) {
+            console.log(err);
+          }, function () {});
+        }
       }]);
 
       return BuyerSelectedPropertyDetailComponent;
@@ -2555,6 +2584,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["ActivatedRoute"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]
+      }, {
+        type: _http_service__WEBPACK_IMPORTED_MODULE_7__["HttpService"]
       }];
     };
 
@@ -2828,6 +2859,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.maxNumberOfTabs = 2;
         this.Needsmodernisation = String;
         this.isBuyer = false;
+        this.Date = new Date();
       }
 
       _createClass(ConfirmBuyerDetailComponent, [{
@@ -2906,6 +2938,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               });
             }
           });
+          this.notification = {
+            time: new Date(),
+            viewed: "no"
+          };
+          this.return = this.formsService.notificationCustomer(this.userData.uid, this.notification).then(function (data) {
+            console.log("notification" + data);
+          });
         }
       }, {
         key: "LoggedIn",
@@ -2926,6 +2965,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "Lat",
         value: function Lat() {
           this.listingBuyer.latitude = this.data;
+        }
+      }, {
+        key: "userDetail",
+        value: function userDetail() {
+          var _this11 = this;
+
+          console.log(this.user);
+          this.return = this.formsService.createUserCustomer(this.user).then(function (data) {
+            console.log(_this11.user);
+          });
         }
       }]);
 
@@ -3208,6 +3257,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ./alertDialogBuyerDataSubmission.component */
     "./src/app/Home/Property/fillFormBuyer/alertDialogBuyerDataSubmission.component.ts");
+    /* harmony import */
+
+
+    var _Model_notification__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    /*! ../../../Model/notification */
+    "./src/app/Model/notification.ts");
 
     var FillFormBuyerComponent =
     /*#__PURE__*/
@@ -3235,6 +3290,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.autoCompleteControlLooking = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
         this.isLoggedIn = false;
         this.listingBuyer = new _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_3__["listingBuyer"]();
+        this.notification = new _Model_notification__WEBPACK_IMPORTED_MODULE_18__["notification"]();
         this.buyerUser = new _Model_user__WEBPACK_IMPORTED_MODULE_4__["user"]();
         this.submitted = false;
         this.links = ["First", "Second", "Third"];
@@ -3274,29 +3330,29 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this11 = this;
+          var _this12 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this11.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this11.userData));
+              _this12.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this12.userData));
 
-              _this11.LoggedIn();
+              _this12.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this11.LoggedOut();
+              _this12.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this11.lookup(_this11.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this11.data = data;
+              _this12.lookup(_this12.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this12.data = data;
               });
 
-              return _this11.lookup(_this11.listingBuyer.Lookingpostcode);
+              return _this12.lookup(_this12.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -3306,11 +3362,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this11.lookup(_this11.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this11.data = data;
+              _this12.lookup(_this12.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this12.data = data;
               });
 
-              return _this11.lookup(_this11.listingBuyer.Currentpostcode);
+              return _this12.lookup(_this12.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -3319,7 +3375,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this12 = this;
+          var _this13 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -3327,12 +3383,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this12.uid) {
-                _this12.user.Name = element.data().Name;
-                _this12.user.email = element.data().email;
-                _this12.user.DOB = element.data().DOB.toDate();
-                _this12.user.Phone = element.data().Phone;
-                console.log(_this12.user.DOB);
+              if (element.data().uid == _this13.uid) {
+                _this13.user.Name = element.data().Name;
+                _this13.user.email = element.data().email;
+                _this13.user.DOB = element.data().DOB.toDate();
+                _this13.user.Phone = element.data().Phone;
+                _this13.user.title = element.data().title;
+                console.log(_this13.user.DOB);
               }
             });
           });
@@ -3525,11 +3582,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this13 = this;
+          var _this14 = this;
 
           console.log(this.user);
           this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
-            console.log(_this13.user);
+            console.log(_this14.user);
           });
         }
       }, {
@@ -3555,12 +3612,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this14 = this;
+          var _this15 = this;
 
           // //Lookup Declared Function
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode).subscribe(function (data) {
-            _this14.postcodeCoordinates = data;
-            _this14.listingBuyer.longitude = _this14.postcodeCoordinates.result.longitude, _this14.listingBuyer.latitude = _this14.postcodeCoordinates.result.latitude, _this14.listingBuyer.UserId = _this14.userData.uid, _this14.return = _this14.fillFormsService.createCustomer(_this14.userData.uid, _this14.listingBuyer).then(function (data) {
+            _this15.postcodeCoordinates = data;
+            _this15.listingBuyer.longitude = _this15.postcodeCoordinates.result.longitude, _this15.listingBuyer.latitude = _this15.postcodeCoordinates.result.latitude, _this15.listingBuyer.UserId = _this15.userData.uid, _this15.return = _this15.fillFormsService.createCustomer(_this15.userData.uid, _this15.listingBuyer).then(function (data) {
               if (data == true) {}
             });
           });
@@ -3568,9 +3625,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isLoading = true;
           this.return = this.fillFormsService.createCustomer(this.userData.uid, this.listingBuyer).then(function (data) {
             if (data == true) {
-              _this14.isLoading = false;
+              _this15.isLoading = false;
 
-              var dialogRef = _this14.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
+              var dialogRef = _this15.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
                 data: {}
               });
             }
@@ -3679,19 +3736,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.db = db;
         this.dbPath = "listingBuyer";
         this.dbUserPath = "buyerUser";
+        this.dbnotification = "notification";
         this.dataSavedEventEmitter = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.customersRef = null;
         this.listingUserRef = null;
+        this.notificationref = null;
         this.customersRef = db.collection(this.dbPath);
         this.listingUserRef = db.collection(this.dbUserPath);
         this.userCollection = db.collection("users");
-        this.userDetail = db.collectionGroup("${user.uid}");
-      } //Create Customer ListingBuyer
+        this.userDetail = db.collectionGroup("${user.uid}"); //Notification DB
+
+        this.notificationref = db.collection(this.dbnotification);
+      } //Create Customer Notification
 
 
       _createClass(FormsService, [{
-        key: "createCustomer",
-        value: function createCustomer(key, customer) {
+        key: "notificationCustomer",
+        value: function notificationCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee3() {
@@ -3700,7 +3761,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 switch (_context3.prev = _context3.next) {
                   case 0:
                     _context3.next = 2;
-                    return this.customersRef.doc(key).collection("requirements").add(Object.assign({}, customer)).then(function (data) {
+                    return this.notificationref.doc(key).collection("").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
@@ -3715,6 +3776,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               }
             }, _callee3, this);
           }));
+        } //Create Customer ListingBuyer
+
+      }, {
+        key: "createCustomer",
+        value: function createCustomer(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee4() {
+            return regeneratorRuntime.wrap(function _callee4$(_context4) {
+              while (1) {
+                switch (_context4.prev = _context4.next) {
+                  case 0:
+                    _context4.next = 2;
+                    return this.customersRef.doc(key).collection("requirements").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context4.sent;
+                    return _context4.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context4.stop();
+                }
+              }
+            }, _callee4, this);
+          }));
         }
       }, {
         key: "createUserCustomer",
@@ -3725,7 +3814,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             email: user.email,
             Name: user.Name,
             DOB: user.DOB,
-            Phone: user.Phone
+            Phone: user.Phone,
+            title: user.title
           };
           return userRef.set(userData, {
             merge: true
@@ -4019,7 +4109,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MatchesNestimateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this15 = this;
+          var _this16 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details
@@ -4027,26 +4117,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               console.log("from the db " + item.data().Lookingpostcode);
-              console.log("from the localStorage " + JSON.stringify(_this15.listingBuyer.Lookingpostcode));
+              console.log("from the localStorage " + JSON.stringify(_this16.listingBuyer.Lookingpostcode));
 
-              if (item.data().Lookingpostcode == _this15.listingBuyer.Lookingpostcode) {
-                _this15.matchedProperties.push(item.data()); //Use this object to populate html
+              if (item.data().Lookingpostcode == _this16.listingBuyer.Lookingpostcode) {
+                _this16.matchedProperties.push(item.data()); //Use this object to populate html
 
               } else if (item.data().latitude && item.data().longitude) {
-                _this15.distanceInKm = _this15.getDistanceFromLatLonInKm(_this15.listingBuyer.latitude, _this15.listingBuyer.longitude, item.data().latitude, item.data().longitude);
+                _this16.distanceInKm = _this16.getDistanceFromLatLonInKm(_this16.listingBuyer.latitude, _this16.listingBuyer.longitude, item.data().latitude, item.data().longitude);
 
-                _this15.unmatchedProperties.push({
+                _this16.unmatchedProperties.push({
                   detail: item.data(),
-                  distance: _this15.distanceInKm
+                  distance: _this16.distanceInKm
                 });
               } else {
-                _this15.unmatchedProperties.push({
+                _this16.unmatchedProperties.push({
                   detail: item.data()
                 });
               }
             });
 
-            _this15.unmatchedProperties.sort(_this15.compare);
+            _this16.unmatchedProperties.sort(_this16.compare);
           });
         }
       }, {
@@ -4274,7 +4364,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(UnMatchesNestimateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details
@@ -4282,26 +4372,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               console.log("from the db " + item.data().Lookingpostcode);
-              console.log("from the localStorage " + JSON.stringify(_this16.listingBuyer.Lookingpostcode));
+              console.log("from the localStorage " + JSON.stringify(_this17.listingBuyer.Lookingpostcode));
 
-              if (item.data().Lookingpostcode == _this16.listingBuyer.Lookingpostcode) {
-                _this16.matchedProperties.push(item.data()); //Use this object to populate html
+              if (item.data().Lookingpostcode == _this17.listingBuyer.Lookingpostcode) {
+                _this17.matchedProperties.push(item.data()); //Use this object to populate html
 
               } else if (item.data().latitude && item.data().longitude) {
-                _this16.distanceInKm = _this16.getDistanceFromLatLonInKm(_this16.listingBuyer.latitude, _this16.listingBuyer.longitude, item.data().latitude, item.data().longitude);
+                _this17.distanceInKm = _this17.getDistanceFromLatLonInKm(_this17.listingBuyer.latitude, _this17.listingBuyer.longitude, item.data().latitude, item.data().longitude);
 
-                _this16.unmatchedProperties.push({
+                _this17.unmatchedProperties.push({
                   detail: item.data(),
-                  distance: _this16.distanceInKm
+                  distance: _this17.distanceInKm
                 });
               } else {
-                _this16.unmatchedProperties.push({
+                _this17.unmatchedProperties.push({
                   detail: item.data()
                 });
               }
             });
 
-            _this16.unmatchedProperties.sort(_this16.compare);
+            _this17.unmatchedProperties.sort(_this17.compare);
           });
         }
       }, {
@@ -4596,17 +4686,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ConfirmSellerDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this17 = this;
+          var _this18 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.ConfirmsellerDetailService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this17.uid) {
-                _this17.user.Name = element.data().Name;
-                _this17.user.Email = element.data().email;
-                _this17.user.DOB = element.data().DOB.toDate();
-                _this17.user.Phone = element.data().Phone;
+              if (element.data().uid == _this18.uid) {
+                _this18.user.Name = element.data().Name;
+                _this18.user.Email = element.data().email;
+                _this18.user.DOB = element.data().DOB.toDate();
+                _this18.user.Phone = element.data().Phone;
                 console.log(element.data().Name);
               }
             });
@@ -4614,25 +4704,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this17.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this17.userData));
+              _this18.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this18.userData));
 
-              _this17.LoggedIn();
+              _this18.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this17.LoggedOut();
+              _this18.LoggedOut();
             }
           });
           this.listingSeller = this.stateService.listingSeller; //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode).subscribe(function (data) {
-            _this17.postcodeCoordinates = data;
-            _this17.listingSeller.longitude = _this17.postcodeCoordinates.result.longitude, _this17.listingSeller.latitude = _this17.postcodeCoordinates.result.latitude, _this17.listingSeller.UserId = _this17.userData.uid, _this17.isBuyer = true;
-            _this17.return = _this17.SellerformService.createCustomer(_this17.userData.uid, _this17.listingSeller).then(function (data) {
+            _this18.postcodeCoordinates = data;
+            _this18.listingSeller.longitude = _this18.postcodeCoordinates.result.longitude, _this18.listingSeller.latitude = _this18.postcodeCoordinates.result.latitude, _this18.listingSeller.UserId = _this18.userData.uid, _this18.isBuyer = true;
+            _this18.return = _this18.SellerformService.createCustomer(_this18.userData.uid, _this18.listingSeller).then(function (data) {
               if (data == true) {
-                _this17.isBuyer = false;
-                console.log(_this17.listingSeller.latitude);
+                _this18.isBuyer = false;
+                console.log(_this18.listingSeller.latitude);
               }
             });
           });
@@ -4640,15 +4730,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this18 = this;
+          var _this19 = this;
 
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
           this.return = this.SellerformService.createCustomer(this.userData.uid, this.listingSeller).then(function (data) {
             if (data == true) {
-              _this18.isLoading = false;
+              _this19.isLoading = false;
 
-              var dialogRef = _this18.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
+              var dialogRef = _this19.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -4657,6 +4747,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               });
             }
+          });
+          this.notification = {
+            time: new Date(),
+            viewed: "no"
+          };
+          this.return = this.SellerformService.notificationCustomer(this.userData.uid, this.notification).then(function (data) {
+            console.log("notification" + data);
           });
         }
       }, {
@@ -4870,74 +4967,75 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this19 = this;
+          var _this20 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details
 
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (res) {
             res.forEach(function (item) {
-              if (item.data().Lookingpostcode == _this19.stateService.listingSeller.Lookingpostcode) {
-                _this19.matchedProperties.push(item.data()); //Use this object to populate html
+              if (item.data().Lookingpostcode == _this20.stateService.listingSeller.Lookingpostcode) {
+                _this20.matchedProperties.push(item.data()); //Use this object to populate html
 
 
                 var _loop = function _loop(i) {
-                  _this19.SellermatchesService.getUser(_this19.matchedProperties[i].UserId).subscribe(function (ref) {
+                  _this20.SellermatchesService.getUser(_this20.matchedProperties[i].UserId).subscribe(function (ref) {
                     ref.forEach(function (elements) {
-                      if (_this19.matchedProperties[i].UserId == elements.data().uid) {
-                        _this19.Names = elements.data().Name;
-                        console.log(_this19.Names);
+                      if (_this20.matchedProperties[i].UserId == elements.data().uid) {
+                        _this20.Names = elements.data().Name;
+                        _this20.title = elements.data().title;
+                        console.log(_this20.Names);
                       }
                     });
                   });
                 };
 
-                for (var i = 0; i < _this19.matchedProperties.length; i++) {
+                for (var i = 0; i < _this20.matchedProperties.length; i++) {
                   _loop(i);
                 }
               } else if (item.data().latitude && item.data().longitude) {
                 // console.log(item.data().postcode.latitude);
-                _this19.distanceInKm = _this19.getDistanceFromLatLonInKm(_this19.stateService.listingSeller.latitude, _this19.stateService.listingSeller.longitude, item.data().latitude, item.data().longitude);
+                _this20.distanceInKm = _this20.getDistanceFromLatLonInKm(_this20.stateService.listingSeller.latitude, _this20.stateService.listingSeller.longitude, item.data().latitude, item.data().longitude);
 
-                _this19.unmatchedProperties.push({
+                _this20.unmatchedProperties.push({
                   detail: item.data(),
-                  distance: _this19.distanceInKm
+                  distance: _this20.distanceInKm
                 }); //console.log({ detail: item.data(), distance: this.distanceInKm });
 
 
-                console.log(_this19.unmatchedProperties);
+                console.log(_this20.unmatchedProperties);
               } else {
-                _this19.unmatchedProperties.push({
+                _this20.unmatchedProperties.push({
                   detail: item.data()
                 });
 
                 console.log({
                   detail: item.data()
                 });
-                console.log(_this19.unmatchedProperties[0].detail.UserId);
+                console.log(_this20.unmatchedProperties[0].detail.UserId);
 
                 var _loop2 = function _loop2(_i) {
-                  _this19.SellermatchesService.getUser(_this19.unmatchedProperties[_i].detail.UserId).subscribe(function (dref) {
+                  _this20.SellermatchesService.getUser(_this20.unmatchedProperties[_i].detail.UserId).subscribe(function (dref) {
                     dref.forEach(function (element) {
-                      if (_this19.unmatchedProperties[_i].detail.UserId == element.data().uid) {
-                        _this19.unNamed = element.data().Name;
-                        console.log(_this19.unNamed);
+                      if (_this20.unmatchedProperties[_i].detail.UserId == element.data().uid) {
+                        _this20.unNamed = element.data().Name;
+                        console.log(_this20.unNamed);
                       }
                     });
                   });
                 };
 
-                for (var _i = 0; _i < _this19.unmatchedProperties.length; _i++) {
+                for (var _i = 0; _i < _this20.unmatchedProperties.length; _i++) {
                   _loop2(_i);
                 }
               }
             });
 
-            _this19.unmatchedProperties.sort(_this19.compare);
+            _this20.unmatchedProperties.sort(_this20.compare);
 
-            _this19.noOfMatches = _this19.matchedProperties.length;
-            _this19.noOfUnmatched = _this19.unmatchedProperties.length;
-            console.log(_this19.matchedProperties[0]);
+            _this20.noOfMatches = _this20.matchedProperties.length;
+            _this20.noOfUnmatched = _this20.unmatchedProperties.length;
+            console.log(_this20.matchedProperties[0]);
           });
         }
       }, {
@@ -5353,24 +5451,24 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this20 = this;
+          var _this21 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this20.PriceRange = params.get("MaxAmount");
-            _this20.Lookingpostcode = params.get("Lookingpostcode");
-            _this20.LookingStreetname = params.get("LookingStreetname");
-            _this20.Position = params.get("Position");
-            _this20.PropertyType = params.get("PropertyType");
-            _this20.Roomsmax = params.get("Roomsmax");
-            _this20.ownership = params.get("Ownership");
-            _this20.Conditions = params.get("Conditions");
-            _this20.Maxbathroom = params.get("Maxbathroom");
-            _this20.Maxreception = params.get("Maxreception");
-            _this20.features = params.get("features");
-            _this20.UserId = params.get("UserId").replace(/\s/g, "");
-            _this20.FinancialPosition = params.get("FinancialPosition"); //   this.ChainStatus = params.get("ChainStatus");
+            _this21.PriceRange = params.get("MaxAmount");
+            _this21.Lookingpostcode = params.get("Lookingpostcode");
+            _this21.LookingStreetname = params.get("LookingStreetname");
+            _this21.Position = params.get("Position");
+            _this21.PropertyType = params.get("PropertyType");
+            _this21.Roomsmax = params.get("Roomsmax");
+            _this21.ownership = params.get("Ownership");
+            _this21.Conditions = params.get("Conditions");
+            _this21.Maxbathroom = params.get("Maxbathroom");
+            _this21.Maxreception = params.get("Maxreception");
+            _this21.features = params.get("features");
+            _this21.UserId = params.get("UserId").replace(/\s/g, "");
+            _this21.FinancialPosition = params.get("FinancialPosition"); //   this.ChainStatus = params.get("ChainStatus");
             // this.FinancialPosition = params.get("FinancialPosition");
             // this.SearchRadius = params.get("SearchRadius");
             // this.PriceRange = params.get("PriceRange");
@@ -5384,7 +5482,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this21 = this;
+          var _this22 = this;
 
           this.matchesSeller = {
             PriceRange: this.PriceRange,
@@ -5406,8 +5504,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isSellerSelected = true;
           this.return = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this21.isSellerSelected = false;
-              _this21.overlay = false;
+              _this22.isSellerSelected = false;
+              _this22.overlay = false;
             }
           });
           this.matchesBuyer = {
@@ -5429,7 +5527,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isSellerSelected = true;
           this.return = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this21.isSellerSelected = false;
+              _this22.isSellerSelected = false;
               console.log("Buyer Done");
             }
           });
@@ -5536,40 +5634,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function matchesSellerCreate(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee4() {
-            return regeneratorRuntime.wrap(function _callee4$(_context4) {
-              while (1) {
-                switch (_context4.prev = _context4.next) {
-                  case 0:
-                    _context4.next = 2;
-                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context4.sent;
-                    return _context4.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context4.stop();
-                }
-              }
-            }, _callee4, this);
-          }));
-        }
-      }, {
-        key: "matchesBuyerCreate",
-        value: function matchesBuyerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee5() {
             return regeneratorRuntime.wrap(function _callee5$(_context5) {
               while (1) {
                 switch (_context5.prev = _context5.next) {
                   case 0:
                     _context5.next = 2;
-                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
@@ -5583,6 +5654,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee5, this);
+          }));
+        }
+      }, {
+        key: "matchesBuyerCreate",
+        value: function matchesBuyerCreate(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee6() {
+            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+              while (1) {
+                switch (_context6.prev = _context6.next) {
+                  case 0:
+                    _context6.next = 2;
+                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context6.sent;
+                    return _context6.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context6.stop();
+                }
+              }
+            }, _callee6, this);
           }));
         }
       }]);
@@ -5791,20 +5889,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this22 = this;
+          var _this23 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this22.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this22.userData));
+              _this23.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this23.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this22.LoggedIn();
+              _this23.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this22.LoggedOut();
+              _this23.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -5812,11 +5910,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this22.lookup(_this22.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this22.data = data;
+              _this23.lookup(_this23.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this23.data = data;
               });
 
-              return _this22.lookup(_this22.listingSeller.Lookingpostcode);
+              return _this23.lookup(_this23.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -5826,11 +5924,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this22.lookup(_this22.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this22.data = data;
+              _this23.lookup(_this23.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this23.data = data;
               });
 
-              return _this22.lookup(_this22.listingSeller.Currentpostcode);
+              return _this23.lookup(_this23.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -5839,17 +5937,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this23 = this;
+          var _this24 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this23.uid) {
-                _this23.user.Name = element.data().Name;
-                _this23.user.Email = element.data().email;
-                _this23.user.DOB = element.data().DOB.toDate();
-                _this23.user.Phone = element.data().Phone;
+              if (element.data().uid == _this24.uid) {
+                _this24.user.Name = element.data().Name;
+                _this24.user.Email = element.data().email;
+                _this24.user.DOB = element.data().DOB.toDate();
+                _this24.user.Phone = element.data().Phone;
                 console.log(element.data().Name);
               }
             });
@@ -6155,36 +6253,68 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.dbPath = "listingSeller";
         this.selleruserdbPath = "user";
         this.customersRef = null;
+        this.dbnotification = "notification";
+        this.notificationref = null;
         this.customersRef = db.collection(this.dbPath);
         this.userCollection = db.collection("users");
-        this.userDetail = db.collectionGroup("${user.uid}");
-      }
+        this.userDetail = db.collectionGroup("${user.uid}"); //Notification DB
+
+        this.notificationref = db.collection(this.dbnotification);
+      } //Create Customer Notification
+
 
       _createClass(SellerformService, [{
+        key: "notificationCustomer",
+        value: function notificationCustomer(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee7() {
+            return regeneratorRuntime.wrap(function _callee7$(_context7) {
+              while (1) {
+                switch (_context7.prev = _context7.next) {
+                  case 0:
+                    _context7.next = 2;
+                    return this.notificationref.doc(key).collection("seller").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context7.sent;
+                    return _context7.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context7.stop();
+                }
+              }
+            }, _callee7, this);
+          }));
+        }
+      }, {
         key: "createCustomer",
         value: function createCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee6() {
-            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+          regeneratorRuntime.mark(function _callee8() {
+            return regeneratorRuntime.wrap(function _callee8$(_context8) {
               while (1) {
-                switch (_context6.prev = _context6.next) {
+                switch (_context8.prev = _context8.next) {
                   case 0:
-                    _context6.next = 2;
+                    _context8.next = 2;
                     return this.customersRef.doc(key).collection("properties").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this.return = _context6.sent;
-                    return _context6.abrupt("return", true);
+                    this.return = _context8.sent;
+                    return _context8.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context6.stop();
+                    return _context8.stop();
                 }
               }
-            }, _callee6, this);
+            }, _callee8, this);
           }));
         }
       }, {
@@ -6364,18 +6494,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this24 = this;
+          var _this25 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this24.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this24.userData));
+              _this25.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this25.userData));
 
-              _this24.LoggedIn();
+              _this25.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this24.LoggedOut();
+              _this25.LoggedOut();
             }
           });
         }
@@ -6389,13 +6519,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this25 = this;
+          var _this26 = this;
 
           this.stateService.agentSignup = this.agentSignup;
           this.isAgentSelected = true;
           this.return = this.AgentSignupServicee.createAgentCustomer(this.userData.uid, this.agentSignup).then(function (data) {
             if (data == true) {
-              _this25.isAgentSelected = false;
+              _this26.isAgentSelected = false;
             }
           });
         }
@@ -6502,26 +6632,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createAgentCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee7() {
-            return regeneratorRuntime.wrap(function _callee7$(_context7) {
+          regeneratorRuntime.mark(function _callee9() {
+            return regeneratorRuntime.wrap(function _callee9$(_context9) {
               while (1) {
-                switch (_context7.prev = _context7.next) {
+                switch (_context9.prev = _context9.next) {
                   case 0:
-                    _context7.next = 2;
+                    _context9.next = 2;
                     return this.customersRef.doc(key).collection("agents").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Agents Written Successfully");
                     });
 
                   case 2:
-                    this.return = _context7.sent;
-                    return _context7.abrupt("return", true);
+                    this.return = _context9.sent;
+                    return _context9.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context7.stop();
+                    return _context9.stop();
                 }
               }
-            }, _callee7, this);
+            }, _callee9, this);
           }));
         }
       }]);
@@ -6771,7 +6901,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this26 = this;
+          var _this27 = this;
 
           // User ID
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -6779,14 +6909,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this26.propertyRequirementDetails.push(element.data());
+              _this27.propertyRequirementDetails.push(element.data());
             });
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this26.propertyDetails.push(element.data());
+              _this27.propertyDetails.push(element.data());
 
-              console.log(_this26.propertyDetails);
+              console.log(_this27.propertyDetails);
             });
           });
         }
@@ -6960,19 +7090,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesSelectedDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this27 = this;
+          var _this28 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this27.Lookingpostcode = params.get("Lookingpostcode");
-            _this27.Lookingstate = params.get("Lookingstate");
-            _this27.LookingAddress = params.get("LookingAddress");
-            _this27.norooms = params.get("norooms");
-            _this27.PropertyCondition = params.get("PropertyCondition");
-            _this27.MinAmount = params.get("MinAmount");
-            _this27.PropertyType = params.get("PropertyType");
-            _this27.ownership = params.get("ownership");
-            _this27.features = params.get("features");
-            _this27.matchStatus = params.get("matchStatus");
+            _this28.Lookingpostcode = params.get("Lookingpostcode");
+            _this28.Lookingstate = params.get("Lookingstate");
+            _this28.LookingAddress = params.get("LookingAddress");
+            _this28.norooms = params.get("norooms");
+            _this28.PropertyCondition = params.get("PropertyCondition");
+            _this28.MinAmount = params.get("MinAmount");
+            _this28.PropertyType = params.get("PropertyType");
+            _this28.ownership = params.get("ownership");
+            _this28.features = params.get("features");
+            _this28.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -7071,17 +7201,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this28 = this;
+          var _this29 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this28.Lookingpostcode = params.get("Lookingpostcode");
-            _this28.ChainStatus = params.get("ChainStatus");
-            _this28.FinancialPosition = params.get("FinancialPosition");
-            _this28.Type = params.get("Type");
-            _this28.Position = params.get("Position");
-            _this28.SearchRadius = params.get("SearchRadius");
-            _this28.PriceRange = params.get("PriceRange");
-            _this28.matchStatus = params.get("matchStatus");
+            _this29.Lookingpostcode = params.get("Lookingpostcode");
+            _this29.ChainStatus = params.get("ChainStatus");
+            _this29.FinancialPosition = params.get("FinancialPosition");
+            _this29.Type = params.get("Type");
+            _this29.Position = params.get("Position");
+            _this29.SearchRadius = params.get("SearchRadius");
+            _this29.PriceRange = params.get("PriceRange");
+            _this29.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -7198,7 +7328,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this29 = this;
+          var _this30 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -7208,9 +7338,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             res.forEach(function (element) {
               console.log("Seller " + element);
 
-              _this29.sellerProperty.push(element.data());
+              _this30.sellerProperty.push(element.data());
 
-              console.log("Seller matches " + JSON.stringify(_this29.sellerProperty));
+              console.log("Seller matches " + JSON.stringify(_this30.sellerProperty));
             });
           }); // Fetch details Seller
 
@@ -7218,9 +7348,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             res.forEach(function (element) {
               console.log("Buyer " + element);
 
-              _this29.buyerProperty.push(element.data());
+              _this30.buyerProperty.push(element.data());
 
-              console.log("Buyer matches " + JSON.stringify(_this29.buyerProperty));
+              console.log("Buyer matches " + JSON.stringify(_this30.buyerProperty));
             });
           });
         }
@@ -7384,32 +7514,39 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _Home_Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ../../Home/Property/fillFormBuyer/fillFormBuyer.service */
     "./src/app/Home/Property/fillFormBuyer/fillFormBuyer.service.ts");
+    /* harmony import */
+
+
+    var _http_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../http.service */
+    "./src/app/http.service.ts");
 
     var MyProfileComponent =
     /*#__PURE__*/
     function () {
-      function MyProfileComponent(fillFormsService) {
+      function MyProfileComponent(fillFormsService, HttpService) {
         _classCallCheck(this, MyProfileComponent);
 
         this.fillFormsService = fillFormsService;
+        this.HttpService = HttpService;
       }
 
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this30 = this;
+          var _this31 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this30.uid) {
-                _this30.user.Name = element.data().Name;
-                _this30.user.Email = element.data().email;
-                _this30.user.Phone = element.data().Phone;
-                _this30.user.DOB = element.data().DOB.toDate();
-                _this30.user.Phone = element.data().Phone;
-                _this30.user.Address = element.data().Currentaddress;
+              if (element.data().uid == _this31.uid) {
+                _this31.user.Name = element.data().Name;
+                _this31.user.Email = element.data().email;
+                _this31.user.Phone = element.data().Phone;
+                _this31.user.DOB = element.data().DOB.toDate();
+                _this31.user.Phone = element.data().Phone;
+                _this31.user.Address = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -7423,6 +7560,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     MyProfileComponent.ctorParameters = function () {
       return [{
         type: _Home_Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_2__["FormsService"]
+      }, {
+        type: _http_service__WEBPACK_IMPORTED_MODULE_3__["HttpService"]
       }];
     };
 
@@ -7518,19 +7657,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this31 = this;
+          var _this32 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this31.uid) {
-                _this31.user.Name = element.data().Name;
-                _this31.user.Email = element.data().email;
-                _this31.user.Phone = element.data().Phone;
-                _this31.user.DOB = element.data().DOB.toDate();
-                _this31.user.Address = element.data().Currentaddress;
-                console.log(_this31.user.Phone);
+              if (element.data().uid == _this32.uid) {
+                _this32.user.Name = element.data().Name;
+                _this32.user.Email = element.data().email;
+                _this32.user.Phone = element.data().Phone;
+                _this32.user.DOB = element.data().DOB.toDate();
+                _this32.user.Address = element.data().Currentaddress;
+                console.log(_this32.user.Phone);
               }
             });
           });
@@ -7538,13 +7677,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this32 = this;
+          var _this33 = this;
 
           console.log(this.user);
           this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
-            console.log(_this32.user);
+            console.log(_this33.user);
 
-            _this32.router.navigate(["/profile"]);
+            _this33.router.navigate(["/profile"]);
           });
         }
       }]);
@@ -7714,19 +7853,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this33 = this;
+          var _this34 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this33.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this33.userData));
+              _this34.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this34.userData));
 
-              _this33.LoggedIn();
+              _this34.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this33.LoggedOut();
+              _this34.LoggedOut();
             }
           });
         }
@@ -7748,27 +7887,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this34 = this;
+          var _this35 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this34.sellerProperty.push(element.data());
+                _this35.sellerProperty.push(element.data());
               }
             });
-            _this34.noSellerOfMatche = _this34.sellerProperty.length;
-            _this34.matches = _this34.buyerProperty.length + _this34.sellerProperty.length;
+            _this35.noSellerOfMatche = _this35.sellerProperty.length;
+            _this35.matches = _this35.buyerProperty.length + _this35.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this34.buyerProperty.push(element.data());
+                _this35.buyerProperty.push(element.data());
               }
             });
-            _this34.noBuyerMatches = _this34.buyerProperty.length;
-            _this34.matches = _this34.buyerProperty.length + _this34.sellerProperty.length;
+            _this35.noBuyerMatches = _this35.buyerProperty.length;
+            _this35.matches = _this35.buyerProperty.length + _this35.sellerProperty.length;
           });
         }
       }, {
@@ -7823,44 +7962,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this35 = this;
+          var _this36 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this35.isLoading = false;
+            _this36.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this36 = this;
+          var _this37 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this36.isLoading = false;
+            _this37.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this37 = this;
+          var _this38 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this37.isLoading = false;
+            _this38.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this38 = this;
+          var _this39 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this38.isLoading = false;
+            _this39.isLoading = false;
           });
         }
       }, {
@@ -7883,14 +8022,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this39 = this;
+          var _this40 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this39.user.Name = displayName;
-            _this39.user.DOB = null;
-            _this39.user.Phone = null;
-            _this39.return = _this39.FormsService.createUserCustomer(_this39.user).then(function (data) {
+            _this40.user.Name = displayName;
+            _this40.user.DOB = null;
+            _this40.user.Phone = null;
+            _this40.return = _this40.FormsService.createUserCustomer(_this40.user).then(function (data) {
               console.log(data);
             });
           });
@@ -7988,7 +8127,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbm90aWZpY2F0aW9uL25vdGlmaWNhdGlvbi5jb21wb25lbnQuY3NzIn0= */";
+    __webpack_exports__["default"] = ".grid-item {\r\n    height: 100vh;\r\n    z-index: 1;\r\n    background-color: white;\r\n}\r\n.notification {\r\n    display: grid;\r\n    grid-template-columns: 1fr 3fr;\r\n    align-items: center;\r\n    padding: 1em 0em;\r\n}\r\nimg.icon {\r\n    width: 40%;\r\n    text-align: center;\r\n}\r\n.notification-icon {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9ub3RpZmljYXRpb24vbm90aWZpY2F0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2IsVUFBVTtJQUNWLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCO0FBRUE7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0FBQzNCIiwiZmlsZSI6InNyYy9hcHAvTWVudS9ub3RpZmljYXRpb24vbm90aWZpY2F0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZ3JpZC1pdGVtIHtcclxuICAgIGhlaWdodDogMTAwdmg7XHJcbiAgICB6LWluZGV4OiAxO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XHJcbn1cclxuLm5vdGlmaWNhdGlvbiB7XHJcbiAgICBkaXNwbGF5OiBncmlkO1xyXG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgM2ZyO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIHBhZGRpbmc6IDFlbSAwZW07XHJcbn1cclxuXHJcbmltZy5pY29uIHtcclxuICAgIHdpZHRoOiA0MCU7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbn1cclxuLm5vdGlmaWNhdGlvbi1pY29uIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufSJdfQ== */";
     /***/
   },
 
@@ -9023,6 +9162,39 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       this.Title = "Mr";
       this.ownership = "Freehold";
       this.active = true;
+    };
+    /***/
+
+  },
+
+  /***/
+  "./src/app/Model/notification.ts":
+  /*!***************************************!*\
+    !*** ./src/app/Model/notification.ts ***!
+    \***************************************/
+
+  /*! exports provided: notification */
+
+  /***/
+  function srcAppModelNotificationTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "notification", function () {
+      return notification;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+
+    var notification = function notification() {
+      _classCallCheck(this, notification);
     };
     /***/
 
@@ -10088,7 +10260,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
     var _Home_Property_fillFormBuyer_matched_nestimates_un_matches_nestimate_un_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(
     /*! ./Home/Property/fillFormBuyer/matched-nestimates/un-matches-nestimate/un-matches-nestimate.component */
-    "./src/app/Home/Property/fillFormBuyer/matched-nestimates/un-matches-nestimate/un-matches-nestimate.component.ts"); // Firebase modules
+    "./src/app/Home/Property/fillFormBuyer/matched-nestimates/un-matches-nestimate/un-matches-nestimate.component.ts");
+    /* harmony import */
+
+
+    var _short_name_pipe__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(
+    /*! ./short-name.pipe */
+    "./src/app/short-name.pipe.ts"); // Firebase modules
 
 
     var AppModule = function AppModule() {
@@ -10096,7 +10274,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_83__["MyMatchesSelectedDetailsComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_84__["AgentSignupComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_agentSelection_agentSelection_component__WEBPACK_IMPORTED_MODULE_85__["AgentSelectionComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_86__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_87__["PrivacyPolicyComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_88__["MyMatchesToSellSelectedDetailComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_89__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_90__["PlusComponent"], _Home_Property_fillFormBuyer_matched_nestimates_matched_nestimates_component__WEBPACK_IMPORTED_MODULE_91__["MatchedNestimatesComponent"], _Home_Property_fillFormBuyer_matched_nestimates_matches_nestimate_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_92__["MatchesNestimateComponent"], _Home_Property_fillFormBuyer_matched_nestimates_un_matches_nestimate_un_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_93__["UnMatchesNestimateComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_83__["MyMatchesSelectedDetailsComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_84__["AgentSignupComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_agentSelection_agentSelection_component__WEBPACK_IMPORTED_MODULE_85__["AgentSelectionComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_86__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_87__["PrivacyPolicyComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_88__["MyMatchesToSellSelectedDetailComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_89__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_90__["PlusComponent"], _Home_Property_fillFormBuyer_matched_nestimates_matched_nestimates_component__WEBPACK_IMPORTED_MODULE_91__["MatchedNestimatesComponent"], _Home_Property_fillFormBuyer_matched_nestimates_matches_nestimate_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_92__["MatchesNestimateComponent"], _Home_Property_fillFormBuyer_matched_nestimates_un_matches_nestimate_un_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_93__["UnMatchesNestimateComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_94__["ShortNamePipe"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_24__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_28__["environment"].firebaseConfig, "street"), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_27__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_26__["AngularFireStorageModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_23__["AngularFireDatabaseModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_34__["BrowserAnimationsModule"], _Misc_material__WEBPACK_IMPORTED_MODULE_77__["MaterialModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_35__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_39__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_40__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_41__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_36__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_42__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_43__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_44__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_45__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_46__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_47__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_48__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_49__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_50__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_51__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_52__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_53__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_54__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_55__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_56__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_57__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_58__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_59__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_61__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_62__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_63__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_64__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_65__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_66__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_67__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_68__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_69__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_70__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_71__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_73__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_74__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_75__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_37__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_38__["ScrollingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_79__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"]],
       entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_22__["AuthService"], {
@@ -10183,7 +10361,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this40 = this;
+        var _this41 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -10197,8 +10375,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this40.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this40.userData));
+            _this41.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this41.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -10216,34 +10394,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignIn(email, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee8() {
+          regeneratorRuntime.mark(function _callee10() {
             var result;
-            return regeneratorRuntime.wrap(function _callee8$(_context8) {
+            return regeneratorRuntime.wrap(function _callee10$(_context10) {
               while (1) {
-                switch (_context8.prev = _context8.next) {
+                switch (_context10.prev = _context10.next) {
                   case 0:
-                    _context8.prev = 0;
-                    _context8.next = 3;
+                    _context10.prev = 0;
+                    _context10.next = 3;
                     return this.afAuth.auth.signInWithEmailAndPassword(email, password);
 
                   case 3:
-                    result = _context8.sent;
+                    result = _context10.sent;
                     this.ngZone.run(function () {}); // this.SetUserData(result.user);
 
-                    _context8.next = 10;
+                    _context10.next = 10;
                     break;
 
                   case 7:
-                    _context8.prev = 7;
-                    _context8.t0 = _context8["catch"](0);
-                    window.alert(_context8.t0.message);
+                    _context10.prev = 7;
+                    _context10.t0 = _context10["catch"](0);
+                    window.alert(_context10.t0.message);
 
                   case 10:
                   case "end":
-                    return _context8.stop();
+                    return _context10.stop();
                 }
               }
-            }, _callee8, this, [[0, 7]]);
+            }, _callee10, this, [[0, 7]]);
           }));
         } // Sign up with email/password
 
@@ -10252,33 +10430,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignUp(email, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee9() {
+          regeneratorRuntime.mark(function _callee11() {
             var result;
-            return regeneratorRuntime.wrap(function _callee9$(_context9) {
+            return regeneratorRuntime.wrap(function _callee11$(_context11) {
               while (1) {
-                switch (_context9.prev = _context9.next) {
+                switch (_context11.prev = _context11.next) {
                   case 0:
-                    _context9.prev = 0;
-                    _context9.next = 3;
+                    _context11.prev = 0;
+                    _context11.next = 3;
                     return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
 
                   case 3:
-                    result = _context9.sent;
+                    result = _context11.sent;
                     this.SetUserData(result.user);
-                    _context9.next = 10;
+                    _context11.next = 10;
                     break;
 
                   case 7:
-                    _context9.prev = 7;
-                    _context9.t0 = _context9["catch"](0);
-                    window.alert(_context9.t0.message);
+                    _context11.prev = 7;
+                    _context11.t0 = _context11["catch"](0);
+                    window.alert(_context11.t0.message);
 
                   case 10:
                   case "end":
-                    return _context9.stop();
+                    return _context11.stop();
                 }
               }
-            }, _callee9, this, [[0, 7]]);
+            }, _callee11, this, [[0, 7]]);
           }));
         } // Send email verfificaiton when new user sign up
         // async SendVerificationMail() {
@@ -10292,31 +10470,31 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ForgotPassword(passwordResetEmail) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee10() {
-            return regeneratorRuntime.wrap(function _callee10$(_context10) {
+          regeneratorRuntime.mark(function _callee12() {
+            return regeneratorRuntime.wrap(function _callee12$(_context12) {
               while (1) {
-                switch (_context10.prev = _context10.next) {
+                switch (_context12.prev = _context12.next) {
                   case 0:
-                    _context10.prev = 0;
-                    _context10.next = 3;
+                    _context12.prev = 0;
+                    _context12.next = 3;
                     return this.afAuth.auth.sendPasswordResetEmail(passwordResetEmail);
 
                   case 3:
                     window.alert("Password reset email sent, check your inbox.");
-                    _context10.next = 9;
+                    _context12.next = 9;
                     break;
 
                   case 6:
-                    _context10.prev = 6;
-                    _context10.t0 = _context10["catch"](0);
-                    window.alert(_context10.t0);
+                    _context12.prev = 6;
+                    _context12.t0 = _context12["catch"](0);
+                    window.alert(_context12.t0);
 
                   case 9:
                   case "end":
-                    return _context10.stop();
+                    return _context12.stop();
                 }
               }
-            }, _callee10, this, [[0, 6]]);
+            }, _callee12, this, [[0, 6]]);
           }));
         } // Returns true when user is looged in and email is verified
 
@@ -10344,33 +10522,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee11() {
+          regeneratorRuntime.mark(function _callee13() {
             var result;
-            return regeneratorRuntime.wrap(function _callee11$(_context11) {
+            return regeneratorRuntime.wrap(function _callee13$(_context13) {
               while (1) {
-                switch (_context11.prev = _context11.next) {
+                switch (_context13.prev = _context13.next) {
                   case 0:
-                    _context11.prev = 0;
-                    _context11.next = 3;
+                    _context13.prev = 0;
+                    _context13.next = 3;
                     return this.afAuth.auth.signInWithPopup(provider);
 
                   case 3:
-                    result = _context11.sent;
+                    result = _context13.sent;
                     this.ngZone.run(function () {});
-                    _context11.next = 10;
+                    _context13.next = 10;
                     break;
 
                   case 7:
-                    _context11.prev = 7;
-                    _context11.t0 = _context11["catch"](0);
-                    window.alert(_context11.t0);
+                    _context13.prev = 7;
+                    _context13.t0 = _context13["catch"](0);
+                    window.alert(_context13.t0);
 
                   case 10:
                   case "end":
-                    return _context11.stop();
+                    return _context13.stop();
                 }
               }
-            }, _callee11, this, [[0, 7]]);
+            }, _callee13, this, [[0, 7]]);
           }));
         }
       }, {
@@ -10378,37 +10556,37 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee12() {
-            var _this41 = this;
+          regeneratorRuntime.mark(function _callee14() {
+            var _this42 = this;
 
             var result;
-            return regeneratorRuntime.wrap(function _callee12$(_context12) {
+            return regeneratorRuntime.wrap(function _callee14$(_context14) {
               while (1) {
-                switch (_context12.prev = _context12.next) {
+                switch (_context14.prev = _context14.next) {
                   case 0:
-                    _context12.prev = 0;
-                    _context12.next = 3;
+                    _context14.prev = 0;
+                    _context14.next = 3;
                     return this.afAuth.auth.signInWithPopup(provider);
 
                   case 3:
-                    result = _context12.sent;
+                    result = _context14.sent;
                     this.ngZone.run(function () {
-                      _this41.SetUserData(result.user);
+                      _this42.SetUserData(result.user);
                     });
-                    _context12.next = 10;
+                    _context14.next = 10;
                     break;
 
                   case 7:
-                    _context12.prev = 7;
-                    _context12.t0 = _context12["catch"](0);
-                    window.alert(_context12.t0);
+                    _context14.prev = 7;
+                    _context14.t0 = _context14["catch"](0);
+                    window.alert(_context14.t0);
 
                   case 10:
                   case "end":
-                    return _context12.stop();
+                    return _context14.stop();
                 }
               }
-            }, _callee12, this, [[0, 7]]);
+            }, _callee14, this, [[0, 7]]);
           }));
         }
         /* Setting up user data when sign in with username/password,
@@ -10434,12 +10612,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignOut() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee13() {
-            return regeneratorRuntime.wrap(function _callee13$(_context13) {
+          regeneratorRuntime.mark(function _callee15() {
+            return regeneratorRuntime.wrap(function _callee15$(_context15) {
               while (1) {
-                switch (_context13.prev = _context13.next) {
+                switch (_context15.prev = _context15.next) {
                   case 0:
-                    _context13.next = 2;
+                    _context15.next = 2;
                     return this.afAuth.auth.signOut();
 
                   case 2:
@@ -10448,10 +10626,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 4:
                   case "end":
-                    return _context13.stop();
+                    return _context15.stop();
                 }
               }
-            }, _callee13, this);
+            }, _callee15, this);
           }));
         }
       }, {
@@ -10578,6 +10756,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           console.log(Lookingpostcode);
           return this.http.get(this.latUrl + Lookingpostcode);
         }
+      }, {
+        key: "sentEmail",
+        value: function sentEmail(url, data) {
+          return this.http.post(url, data);
+        }
       }]);
 
       return HttpService;
@@ -10592,6 +10775,63 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     HttpService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: "root"
     })], HttpService);
+    /***/
+  },
+
+  /***/
+  "./src/app/short-name.pipe.ts":
+  /*!************************************!*\
+    !*** ./src/app/short-name.pipe.ts ***!
+    \************************************/
+
+  /*! exports provided: ShortNamePipe */
+
+  /***/
+  function srcAppShortNamePipeTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ShortNamePipe", function () {
+      return ShortNamePipe;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var ShortNamePipe =
+    /*#__PURE__*/
+    function () {
+      function ShortNamePipe() {
+        _classCallCheck(this, ShortNamePipe);
+      }
+
+      _createClass(ShortNamePipe, [{
+        key: "transform",
+        value: function transform(fullName) {
+          return fullName.split(" ").map(function (n) {
+            return n[0];
+          }).join(".");
+        }
+      }]);
+
+      return ShortNamePipe;
+    }();
+
+    ShortNamePipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+      name: "shortName"
+    })], ShortNamePipe);
     /***/
   },
 
@@ -10737,19 +10977,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this42 = this;
+          var _this43 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this42.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this42.userData));
+              _this43.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this43.userData));
 
-              _this42.LoggedIn();
+              _this43.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this42.LoggedOut();
+              _this43.LoggedOut();
             }
           });
         }
@@ -10768,44 +11008,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this43 = this;
+          var _this44 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this43.isLoading = false;
+            _this44.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this44 = this;
+          var _this45 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this44.isLoading = false;
+            _this45.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this45 = this;
+          var _this46 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this45.isLoading = false;
+            _this46.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this46 = this;
+          var _this47 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this46.isLoading = false;
+            _this47.isLoading = false;
           });
         }
       }, {
@@ -10827,17 +11067,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this47 = this;
+          var _this48 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this47.isLoading = false;
-            _this47.user.Name = displayName;
-            _this47.user.DOB = null;
-            _this47.user.Phone = null;
-            _this47.return = _this47.FormService.createUserCustomer(_this47.user).then(function (data) {
+            _this48.isLoading = false;
+            _this48.user.Name = displayName;
+            _this48.user.DOB = null;
+            _this48.user.Phone = null;
+            _this48.return = _this48.FormService.createUserCustomer(_this48.user).then(function (data) {
               console.log(data);
-              _this47.overlay = true;
+              _this48.overlay = true;
             });
           });
         }
