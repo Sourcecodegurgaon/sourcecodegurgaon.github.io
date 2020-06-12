@@ -266,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"login-background\" *ngIf=\"!loggedIn\">\n \n<app-template></app-template>\n\n</div>\n<div class=\"agent-form\" *ngIf=\"loggedIn\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>First name</mat-label>\n          <input matInput #first >\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"Lookingpostcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">\n          <button mat-raised-button color=\"primary\">Upload Image</button>\n</div>\n          \n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\">Submit</button>\n</div>\n    </form>\n</mat-card>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"login-background\" *ngIf=\"!loggedIn\">\n \n<app-template></app-template>\n\n</div>\n<div class=\"agent-form\" *ngIf=\"loggedIn\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>Full name</mat-label>\n          <input matInput #first  name=fullname [(ngModel)]=\"agentSignup.fullname\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first  [(ngModel)]=\"agentSignup.company\">\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"postcode\"  [(ngModel)]=\"agentSignup.postcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first  name=\"address\" [(ngModel)]=\"agentSignup.address\">\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\">\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first name=\"phone\" [(ngModel)]=\"agentSignup.phone\" >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            <input matInput #first name=\"email\"  [(ngModel)]=\"agentSignup.email\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\">\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">\n          <button mat-raised-button color=\"primary\">Upload Image</button>\n</div>\n          \n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\" (click)=\"submitForm()\">Submit</button>\n</div>\n    </form>\n</mat-card>\n</div>");
 
 /***/ }),
 
@@ -4526,13 +4526,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgentSignupComponent", function() { return AgentSignupComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var _agentSignup_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./agentSignup.service */ "./src/app/Home/agent-signup/agentSignup.service.ts");
-/* harmony import */ var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../Model/agentSignup */ "./src/app/Model/agentSignup.ts");
-/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
-/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../auth.service */ "./src/app/auth.service.ts");
-/* harmony import */ var _state_service_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../state-service.service */ "./src/app/state-service.service.ts");
-/* harmony import */ var _Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../Property/fillFormBuyer/fillFormBuyer.service */ "./src/app/Home/Property/fillFormBuyer/fillFormBuyer.service.ts");
-
+/* harmony import */ var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../Model/agentSignup */ "./src/app/Model/agentSignup.ts");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
+/* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _state_service_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../state-service.service */ "./src/app/state-service.service.ts");
+/* harmony import */ var _Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../Property/fillFormBuyer/fillFormBuyer.service */ "./src/app/Home/Property/fillFormBuyer/fillFormBuyer.service.ts");
 
 
 
@@ -4541,15 +4539,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AgentSignupComponent = class AgentSignupComponent {
-    constructor(AgentSignupServicee, authService, afAuth, stateService, formsService) {
-        this.AgentSignupServicee = AgentSignupServicee;
+    constructor(authService, afAuth, stateService, formsService) {
         this.authService = authService;
         this.afAuth = afAuth;
         this.stateService = stateService;
         this.formsService = formsService;
         this.Postcodes = [{ Postcode: '' }];
         this.isAgentSelected = false;
-        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_3__["agentSignup"]();
+        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_2__["agentSignup"]();
         this.isLoggedIn = true;
     }
     ngOnInit() {
@@ -4565,36 +4562,33 @@ let AgentSignupComponent = class AgentSignupComponent {
             }
         });
     }
-    addPostcodes() {
-        this.Postcodes.push({ Postcode: "" });
-    }
-    submitForm() {
-        this.stateService.agentSignup = this.agentSignup;
-        this.isAgentSelected = true;
-        this.return = this.AgentSignupServicee
-            .createAgentCustomer(this.userData.uid, this.agentSignup)
-            .then(data => {
-            if (data == true) {
-                this.isAgentSelected = false;
-            }
-        });
-    }
+    // addPostcodes()
+    // {
+    //   this.Postcodes.push({Postcode:""});
+    // }
+    // submitForm() {
+    //   this.stateService.agentSignup = this.agentSignup;
+    //   this.isAgentSelected = true;
+    //   this.return = this.AgentSignupServicee
+    //     .createAgentCustomer(this.userData.uid, this.agentSignup)
+    //     .then(data => {
+    //       if (data == true) {
+    //         this.isAgentSelected = false;
+    //       }
+    //     });
+    // }
     LoggedIn() {
         this.isLoggedIn = true;
     }
     LoggedOut() {
         this.isLoggedIn = false;
     }
-    logValue() {
-        console.log(this.Postcodes);
-    }
 };
 AgentSignupComponent.ctorParameters = () => [
-    { type: _agentSignup_service__WEBPACK_IMPORTED_MODULE_2__["AgentSignupService"] },
-    { type: _auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"] },
-    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_4__["AngularFireAuth"] },
-    { type: _state_service_service__WEBPACK_IMPORTED_MODULE_6__["StateServiceService"] },
-    { type: _Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_7__["FormsService"] }
+    { type: _auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"] },
+    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"] },
+    { type: _state_service_service__WEBPACK_IMPORTED_MODULE_5__["StateServiceService"] },
+    { type: _Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_6__["FormsService"] }
 ];
 AgentSignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4608,10 +4602,10 @@ AgentSignupComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/Home/agent-signup/agentSignup.service.ts":
-/*!**********************************************************!*\
-  !*** ./src/app/Home/agent-signup/agentSignup.service.ts ***!
-  \**********************************************************/
+/***/ "./src/app/Home/agentsignupform/agentSignup.service.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/Home/agentsignupform/agentSignup.service.ts ***!
+  \*************************************************************/
 /*! exports provided: AgentSignupService */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -4686,17 +4680,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
 /* harmony import */ var _auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../auth.service */ "./src/app/auth.service.ts");
+/* harmony import */ var _agentsignupform_agentSignup_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../agentsignupform/agentSignup.service */ "./src/app/Home/agentsignupform/agentSignup.service.ts");
+/* harmony import */ var _state_service_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../state-service.service */ "./src/app/state-service.service.ts");
+/* harmony import */ var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Model/agentSignup */ "./src/app/Model/agentSignup.ts");
+
+
+
 
 
 
 
 let AgentsignupformComponent = class AgentsignupformComponent {
-    constructor(authService, afAuth) {
+    constructor(authService, afAuth, stateService, AgentSignupService) {
         this.authService = authService;
         this.afAuth = afAuth;
+        this.stateService = stateService;
+        this.AgentSignupService = AgentSignupService;
         this.loggedIn = false;
+        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__["agentSignup"]();
     }
     ngOnInit() {
+        this.user = JSON.parse(localStorage.getItem("user"));
+        this.uid = this.user.uid;
         this.afAuth.authState.subscribe(user => {
             if (user) {
                 this.userData = user;
@@ -4716,10 +4721,21 @@ let AgentsignupformComponent = class AgentsignupformComponent {
     LoggedOut() {
         this.loggedIn = false;
     }
+    submitForm() {
+        this.stateService.agentSignup = this.agentSignup;
+        this.return = this.AgentSignupService
+            .createAgentCustomer(this.uid, this.agentSignup)
+            .then(data => {
+            if (data == true) {
+            }
+        });
+    }
 };
 AgentsignupformComponent.ctorParameters = () => [
     { type: _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"] },
-    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"] }
+    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"] },
+    { type: _state_service_service__WEBPACK_IMPORTED_MODULE_5__["StateServiceService"] },
+    { type: _agentsignupform_agentSignup_service__WEBPACK_IMPORTED_MODULE_4__["AgentSignupService"] }
 ];
 AgentsignupformComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -6188,7 +6204,6 @@ __webpack_require__.r(__webpack_exports__);
 
 class agentSignup {
     constructor() {
-        this.SearchPostcode = [''];
         this.active = true;
     }
 }
@@ -6892,7 +6907,7 @@ let AuthService = class AuthService {
                 // this.SetUserData(result.user);
             }
             catch (error) {
-                window.alert(" incorrect username/password needs to change");
+                window.alert("incorrect username/password");
             }
         });
     }

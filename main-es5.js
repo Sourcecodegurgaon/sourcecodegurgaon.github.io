@@ -421,7 +421,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"login-background\" *ngIf=\"!loggedIn\">\n \n<app-template></app-template>\n\n</div>\n<div class=\"agent-form\" *ngIf=\"loggedIn\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>First name</mat-label>\n          <input matInput #first >\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"Lookingpostcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first >\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">\n          <button mat-raised-button color=\"primary\">Upload Image</button>\n</div>\n          \n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\">Submit</button>\n</div>\n    </form>\n</mat-card>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"login-background\" *ngIf=\"!loggedIn\">\n \n<app-template></app-template>\n\n</div>\n<div class=\"agent-form\" *ngIf=\"loggedIn\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>Full name</mat-label>\n          <input matInput #first  name=fullname [(ngModel)]=\"agentSignup.fullname\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first  [(ngModel)]=\"agentSignup.company\">\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"postcode\"  [(ngModel)]=\"agentSignup.postcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first  name=\"address\" [(ngModel)]=\"agentSignup.address\">\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\">\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first name=\"phone\" [(ngModel)]=\"agentSignup.phone\" >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            <input matInput #first name=\"email\"  [(ngModel)]=\"agentSignup.email\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\">\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">\n          <button mat-raised-button color=\"primary\">Upload Image</button>\n</div>\n          \n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\" (click)=\"submitForm()\">Submit</button>\n</div>\n    </form>\n</mat-card>\n</div>";
     /***/
   },
 
@@ -7103,47 +7103,40 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony import */
 
 
-    var _agentSignup_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./agentSignup.service */
-    "./src/app/Home/agent-signup/agentSignup.service.ts");
-    /* harmony import */
-
-
-    var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ../../Model/agentSignup */
     "./src/app/Model/agentSignup.ts");
     /* harmony import */
 
 
-    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! @angular/fire/auth */
     "./node_modules/@angular/fire/auth/es2015/index.js");
     /* harmony import */
 
 
-    var _auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./../../auth.service */
     "./src/app/auth.service.ts");
     /* harmony import */
 
 
-    var _state_service_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _state_service_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./../../state-service.service */
     "./src/app/state-service.service.ts");
     /* harmony import */
 
 
-    var _Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./../Property/fillFormBuyer/fillFormBuyer.service */
     "./src/app/Home/Property/fillFormBuyer/fillFormBuyer.service.ts");
 
     var AgentSignupComponent =
     /*#__PURE__*/
     function () {
-      function AgentSignupComponent(AgentSignupServicee, authService, afAuth, stateService, formsService) {
+      function AgentSignupComponent(authService, afAuth, stateService, formsService) {
         _classCallCheck(this, AgentSignupComponent);
 
-        this.AgentSignupServicee = AgentSignupServicee;
         this.authService = authService;
         this.afAuth = afAuth;
         this.stateService = stateService;
@@ -7152,7 +7145,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Postcode: ''
         }];
         this.isAgentSelected = false;
-        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_3__["agentSignup"]();
+        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_2__["agentSignup"]();
         this.isLoggedIn = true;
       }
 
@@ -7173,27 +7166,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               _this35.LoggedOut();
             }
           });
-        }
-      }, {
-        key: "addPostcodes",
-        value: function addPostcodes() {
-          this.Postcodes.push({
-            Postcode: ""
-          });
-        }
-      }, {
-        key: "submitForm",
-        value: function submitForm() {
-          var _this36 = this;
+        } // addPostcodes()
+        // {
+        //   this.Postcodes.push({Postcode:""});
+        // }
+        // submitForm() {
+        //   this.stateService.agentSignup = this.agentSignup;
+        //   this.isAgentSelected = true;
+        //   this.return = this.AgentSignupServicee
+        //     .createAgentCustomer(this.userData.uid, this.agentSignup)
+        //     .then(data => {
+        //       if (data == true) {
+        //         this.isAgentSelected = false;
+        //       }
+        //     });
+        // }
 
-          this.stateService.agentSignup = this.agentSignup;
-          this.isAgentSelected = true;
-          this.return = this.AgentSignupServicee.createAgentCustomer(this.userData.uid, this.agentSignup).then(function (data) {
-            if (data == true) {
-              _this36.isAgentSelected = false;
-            }
-          });
-        }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
@@ -7204,11 +7192,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function LoggedOut() {
           this.isLoggedIn = false;
         }
-      }, {
-        key: "logValue",
-        value: function logValue() {
-          console.log(this.Postcodes);
-        }
       }]);
 
       return AgentSignupComponent;
@@ -7216,15 +7199,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
     AgentSignupComponent.ctorParameters = function () {
       return [{
-        type: _agentSignup_service__WEBPACK_IMPORTED_MODULE_2__["AgentSignupService"]
+        type: _auth_service__WEBPACK_IMPORTED_MODULE_4__["AuthService"]
       }, {
-        type: _auth_service__WEBPACK_IMPORTED_MODULE_5__["AuthService"]
+        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"]
       }, {
-        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_4__["AngularFireAuth"]
+        type: _state_service_service__WEBPACK_IMPORTED_MODULE_5__["StateServiceService"]
       }, {
-        type: _state_service_service__WEBPACK_IMPORTED_MODULE_6__["StateServiceService"]
-      }, {
-        type: _Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_7__["FormsService"]
+        type: _Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_6__["FormsService"]
       }];
     };
 
@@ -7241,15 +7222,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
-  "./src/app/Home/agent-signup/agentSignup.service.ts":
-  /*!**********************************************************!*\
-    !*** ./src/app/Home/agent-signup/agentSignup.service.ts ***!
-    \**********************************************************/
+  "./src/app/Home/agentsignupform/agentSignup.service.ts":
+  /*!*************************************************************!*\
+    !*** ./src/app/Home/agentsignupform/agentSignup.service.ts ***!
+    \*************************************************************/
 
   /*! exports provided: AgentSignupService */
 
   /***/
-  function srcAppHomeAgentSignupAgentSignupServiceTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppHomeAgentsignupformAgentSignupServiceTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -7399,34 +7380,57 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
     /*! ../../auth.service */
     "./src/app/auth.service.ts");
+    /* harmony import */
+
+
+    var _agentsignupform_agentSignup_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../agentsignupform/agentSignup.service */
+    "./src/app/Home/agentsignupform/agentSignup.service.ts");
+    /* harmony import */
+
+
+    var _state_service_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./../../state-service.service */
+    "./src/app/state-service.service.ts");
+    /* harmony import */
+
+
+    var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../../Model/agentSignup */
+    "./src/app/Model/agentSignup.ts");
 
     var AgentsignupformComponent =
     /*#__PURE__*/
     function () {
-      function AgentsignupformComponent(authService, afAuth) {
+      function AgentsignupformComponent(authService, afAuth, stateService, AgentSignupService) {
         _classCallCheck(this, AgentsignupformComponent);
 
         this.authService = authService;
         this.afAuth = afAuth;
+        this.stateService = stateService;
+        this.AgentSignupService = AgentSignupService;
         this.loggedIn = false;
+        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__["agentSignup"]();
       }
 
       _createClass(AgentsignupformComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this37 = this;
+          var _this36 = this;
 
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.uid = this.user.uid;
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this37.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this37.userData));
+              _this36.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this36.userData));
 
-              _this37.LoggedIn();
+              _this36.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this37.LoggedOut();
+              _this36.LoggedOut();
             }
           });
         }
@@ -7440,6 +7444,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function LoggedOut() {
           this.loggedIn = false;
         }
+      }, {
+        key: "submitForm",
+        value: function submitForm() {
+          this.stateService.agentSignup = this.agentSignup;
+          this.return = this.AgentSignupService.createAgentCustomer(this.uid, this.agentSignup).then(function (data) {
+            if (data == true) {}
+          });
+        }
       }]);
 
       return AgentsignupformComponent;
@@ -7450,6 +7462,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         type: _auth_service__WEBPACK_IMPORTED_MODULE_3__["AuthService"]
       }, {
         type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"]
+      }, {
+        type: _state_service_service__WEBPACK_IMPORTED_MODULE_5__["StateServiceService"]
+      }, {
+        type: _agentsignupform_agentSignup_service__WEBPACK_IMPORTED_MODULE_4__["AgentSignupService"]
       }];
     };
 
@@ -7695,7 +7711,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this38 = this;
+          var _this37 = this;
 
           // User ID
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -7703,14 +7719,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this38.propertyRequirementDetails.push(element.data());
+              _this37.propertyRequirementDetails.push(element.data());
             });
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this38.propertyDetails.push(element.data());
+              _this37.propertyDetails.push(element.data());
 
-              console.log(_this38.propertyDetails);
+              console.log(_this37.propertyDetails);
             });
           });
         }
@@ -7884,19 +7900,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesSelectedDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this39 = this;
+          var _this38 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this39.Lookingpostcode = params.get("Lookingpostcode");
-            _this39.Lookingstate = params.get("Lookingstate");
-            _this39.LookingAddress = params.get("LookingAddress");
-            _this39.norooms = params.get("Roomsmax");
-            _this39.PropertyCondition = params.get("PropertyCondition");
-            _this39.MaxAmount = params.get("MaxAmount");
-            _this39.PropertyType = params.get("PropertyType");
-            _this39.ownership = params.get("ownership");
-            _this39.features = params.get("features");
-            _this39.matchStatus = params.get("matchStatus");
+            _this38.Lookingpostcode = params.get("Lookingpostcode");
+            _this38.Lookingstate = params.get("Lookingstate");
+            _this38.LookingAddress = params.get("LookingAddress");
+            _this38.norooms = params.get("Roomsmax");
+            _this38.PropertyCondition = params.get("PropertyCondition");
+            _this38.MaxAmount = params.get("MaxAmount");
+            _this38.PropertyType = params.get("PropertyType");
+            _this38.ownership = params.get("ownership");
+            _this38.features = params.get("features");
+            _this38.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -7995,17 +8011,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this40 = this;
+          var _this39 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this40.Lookingpostcode = params.get("Lookingpostcode");
-            _this40.ChainStatus = params.get("ChainStatus");
-            _this40.FinancialPosition = params.get("FinancialPosition");
-            _this40.Type = params.get("Type");
-            _this40.Position = params.get("Position");
-            _this40.SearchRadius = params.get("SearchRadius");
-            _this40.PriceRange = params.get("PriceRange");
-            _this40.matchStatus = params.get("matchStatus");
+            _this39.Lookingpostcode = params.get("Lookingpostcode");
+            _this39.ChainStatus = params.get("ChainStatus");
+            _this39.FinancialPosition = params.get("FinancialPosition");
+            _this39.Type = params.get("Type");
+            _this39.Position = params.get("Position");
+            _this39.SearchRadius = params.get("SearchRadius");
+            _this39.PriceRange = params.get("PriceRange");
+            _this39.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -8122,20 +8138,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this41 = this;
+          var _this40 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details Seller
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this41.sellerProperty.push(element.data());
+              _this40.sellerProperty.push(element.data());
             });
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this41.buyerProperty.push(element.data());
+              _this40.buyerProperty.push(element.data());
             });
           });
         }
@@ -8398,19 +8414,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this42 = this;
+          var _this41 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this42.uid) {
-                _this42.user.Name = element.data().Name;
-                _this42.user.Email = element.data().email;
-                _this42.user.Phone = element.data().Phone;
-                _this42.user.DOB = element.data().DOB.toDate();
-                _this42.user.Phone = element.data().Phone;
-                _this42.user.Address = element.data().Currentaddress;
+              if (element.data().uid == _this41.uid) {
+                _this41.user.Name = element.data().Name;
+                _this41.user.Email = element.data().email;
+                _this41.user.Phone = element.data().Phone;
+                _this41.user.DOB = element.data().DOB.toDate();
+                _this41.user.Phone = element.data().Phone;
+                _this41.user.Address = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -8521,19 +8537,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this43 = this;
+          var _this42 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this43.uid) {
-                _this43.user.Name = element.data().Name;
-                _this43.user.Email = element.data().email;
-                _this43.user.Phone = element.data().Phone;
-                _this43.user.DOB = element.data().DOB.toDate();
-                _this43.user.Address = element.data().Currentaddress;
-                console.log(_this43.user.Phone);
+              if (element.data().uid == _this42.uid) {
+                _this42.user.Name = element.data().Name;
+                _this42.user.Email = element.data().email;
+                _this42.user.Phone = element.data().Phone;
+                _this42.user.DOB = element.data().DOB.toDate();
+                _this42.user.Address = element.data().Currentaddress;
+                console.log(_this42.user.Phone);
               }
             });
           });
@@ -8541,13 +8557,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this44 = this;
+          var _this43 = this;
 
           console.log(this.user);
           this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
-            console.log(_this44.user);
+            console.log(_this43.user);
 
-            _this44.router.navigate(["/profile"]);
+            _this43.router.navigate(["/profile"]);
           });
         }
       }]);
@@ -8717,19 +8733,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this45 = this;
+          var _this44 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this45.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this45.userData));
+              _this44.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this44.userData));
 
-              _this45.LoggedIn();
+              _this44.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this45.LoggedOut();
+              _this44.LoggedOut();
             }
           });
         }
@@ -8751,27 +8767,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this46 = this;
+          var _this45 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this46.sellerProperty.push(element.data());
+                _this45.sellerProperty.push(element.data());
               }
             });
-            _this46.noSellerOfMatche = _this46.sellerProperty.length;
-            _this46.matches = _this46.buyerProperty.length + _this46.sellerProperty.length;
+            _this45.noSellerOfMatche = _this45.sellerProperty.length;
+            _this45.matches = _this45.buyerProperty.length + _this45.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this46.buyerProperty.push(element.data());
+                _this45.buyerProperty.push(element.data());
               }
             });
-            _this46.noBuyerMatches = _this46.buyerProperty.length;
-            _this46.matches = _this46.buyerProperty.length + _this46.sellerProperty.length;
+            _this45.noBuyerMatches = _this45.buyerProperty.length;
+            _this45.matches = _this45.buyerProperty.length + _this45.sellerProperty.length;
           });
         }
       }, {
@@ -8828,44 +8844,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this47 = this;
+          var _this46 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this47.isLoading = false;
+            _this46.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this48 = this;
+          var _this47 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this48.isLoading = false;
+            _this47.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this49 = this;
+          var _this48 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this49.isLoading = false;
+            _this48.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this50 = this;
+          var _this49 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this50.isLoading = false;
+            _this49.isLoading = false;
           });
         }
       }, {
@@ -8888,14 +8904,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this51 = this;
+          var _this50 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this51.user.Name = displayName;
-            _this51.user.DOB = null;
-            _this51.user.Phone = null;
-            _this51.return = _this51.FormsService.createUserCustomer(_this51.user).then(function (data) {
+            _this50.user.Name = displayName;
+            _this50.user.DOB = null;
+            _this50.user.Phone = null;
+            _this50.return = _this50.FormsService.createUserCustomer(_this50.user).then(function (data) {
               console.log(data);
             });
           });
@@ -9946,7 +9962,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var agentSignup = function agentSignup() {
       _classCallCheck(this, agentSignup);
 
-      this.SearchPostcode = [''];
       this.active = true;
     };
     /***/
@@ -11271,7 +11286,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this52 = this;
+        var _this51 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -11285,8 +11300,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this52.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this52.userData));
+            _this51.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this51.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -11324,7 +11339,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 7:
                     _context10.prev = 7;
                     _context10.t0 = _context10["catch"](0);
-                    window.alert(" incorrect username/password needs to change");
+                    window.alert("incorrect username/password");
 
                   case 10:
                   case "end":
@@ -11467,7 +11482,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee14() {
-            var _this53 = this;
+            var _this52 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee14$(_context14) {
@@ -11481,7 +11496,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 3:
                     result = _context14.sent;
                     this.ngZone.run(function () {
-                      _this53.SetUserData(result.user);
+                      _this52.SetUserData(result.user);
                     });
                     _context14.next = 10;
                     break;
@@ -11887,19 +11902,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this54 = this;
+          var _this53 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this54.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this54.userData));
+              _this53.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this53.userData));
 
-              _this54.LoggedIn();
+              _this53.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this54.LoggedOut();
+              _this53.LoggedOut();
             }
           });
         }
@@ -11918,44 +11933,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this55 = this;
+          var _this54 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this55.isLoading = false;
+            _this54.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this56 = this;
+          var _this55 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this56.isLoading = false;
+            _this55.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this57 = this;
+          var _this56 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this57.isLoading = false;
+            _this56.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this58 = this;
+          var _this57 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this58.isLoading = false;
+            _this57.isLoading = false;
           });
         }
       }, {
@@ -11977,16 +11992,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this59 = this;
+          var _this58 = this;
 
           console.log(displayName);
           this.overlay = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this59.isLoading = false;
-            _this59.user.Name = displayName;
-            _this59.user.DOB = null;
-            _this59.user.Phone = null;
-            _this59.return = _this59.FormService.createUserCustomer(_this59.user).then(function (data) {
+            _this58.isLoading = false;
+            _this58.user.Name = displayName;
+            _this58.user.DOB = null;
+            _this58.user.Phone = null;
+            _this58.return = _this58.FormService.createUserCustomer(_this58.user).then(function (data) {
               console.log(data);
             });
           });
