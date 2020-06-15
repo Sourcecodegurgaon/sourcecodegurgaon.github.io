@@ -421,7 +421,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"login-background\" *ngIf=\"!loggedIn\">\n \n<app-template></app-template>\n\n</div>\n<div class=\"agent-form\" *ngIf=\"loggedIn\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>Full name</mat-label>\n          <input matInput #first  name=fullname [(ngModel)]=\"agentSignup.fullname\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first  [(ngModel)]=\"agentSignup.company\">\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"postcode\"  [(ngModel)]=\"agentSignup.postcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first  name=\"address\" [(ngModel)]=\"agentSignup.address\">\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\">\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first name=\"phone\" [(ngModel)]=\"agentSignup.phone\" >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            <input matInput #first name=\"email\"  [(ngModel)]=\"agentSignup.email\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\">\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">\n          <button mat-raised-button color=\"primary\">Upload Image</button>\n</div>\n          \n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\" (click)=\"submitForm()\">Submit</button>\n</div>\n    </form>\n</mat-card>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"login-background\" *ngIf=\"!loggedIn\">\n \n<app-template></app-template>\n\n</div>\n<div class=\"agent-form\" *ngIf=\"loggedIn\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>Full name</mat-label>\n          <input matInput #first  name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first name=\"company\"  [(ngModel)]=\"agentSignup.company\">\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"postcode\"  [(ngModel)]=\"agentSignup.postcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first  name=\"address\" [(ngModel)]=\"agentSignup.address\">\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\">\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first name=\"phone\" [(ngModel)]=\"agentSignup.phone\" >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            <input matInput #first name=\"email\"  [(ngModel)]=\"agentSignup.email\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\">\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">\n          <button mat-raised-button color=\"primary\">Upload Image</button>\n</div>\n          \n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\" (click)=\"submitForm()\">Submit</button>\n</div>\n    </form>\n</mat-card>\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/Home/agentsignupform/alertDialogAgent.component.html":
+  /*!************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Home/agentsignupform/alertDialogAgent.component.html ***!
+    \************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppHomeAgentsignupformAlertDialogAgentComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<mat-dialog-content>\r\n  Thanks Your details has been submitted \r\n\r\n</mat-dialog-content>\r\n<mat-dialog-actions align=\"center\">\r\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\"\r\n    routerLink=\"/editprofile\">{{cancelButtonText}}</button>\r\n</mat-dialog-actions>\r\n";
     /***/
   },
 
@@ -541,7 +561,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  <p class=\"nestimate-heading heading-nestimate\">Nestimates Activity</p>\r\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\r\n\r\n    <mat-tab label=\"Your action\r\n    needed\">\r\n\r\n    <!-- <div class=\"heading-nestimate actvity-headings\"> Confirmed By you </div> -->\r\n      <div class=\"mat-card-content-new\"  *ngFor=\"let property of sellerProperty\">\r\n        <!-- <mat-card>\r\n          <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\r\n        </mat-card> -->\r\n        <mat-card class=\"mat-card mt-2\" *ngIf=\"property.matchStatus=='confirm_interest'\">\r\n          <div class=\"mat-card-content-new-content\">\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n            </div>\r\n            <div class=\"mat-card-content-text\">\r\n              <div class=\"price-range\">\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\r\n              </div>\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate\">Postcode:<span\r\n                    class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate\">Poperty Type:<span\r\n                    class=\"outputText\">{{property.PropertyType}}</span></p>\r\n              </div>\r\n              <div class=\"button-container\">\r\n               <button type=\"button\" class=\"btn btn-primary\"  routerLink='/mymatchesselecteddetail/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.Roomsmax}}/{{property.PropertyCondition}}/{{property.MaxAmount}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.ownership}}/{{property.features}}/{{property.matchStatus}}'>See Details</button>\r\n            </div>\r\n            </div>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n \r\n      <!-- <div class=\"heading-nestimate actvity-headings\">Awaiting your confirmation</div> -->\r\n\r\n      <div class=\"mat-card-content-new\"  *ngFor=\"let buyerProperty of buyerProperty\">\r\n        <!-- <mat-card>\r\n          <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\r\n        </mat-card> -->\r\n        <mat-card class=\"mat-card mt-2\" *ngIf=\"buyerProperty.matchStatus=='confirm_interest'\">\r\n          <div class=\"mat-card-content-new-content\">\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n            </div>\r\n            <div class=\"mat-card-content-text\">\r\n              <div class=\"price-range\">\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{buyerProperty.MaxAmount}}</span>\r\n              </div>\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate\">Postcode:<span\r\n                    class=\"outputText\">{{buyerProperty.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate\">Poperty Type:<span\r\n                    class=\"outputText\">{{buyerProperty.PropertyType}}</span></p>\r\n              </div>\r\n              <div class=\"button-container\">\r\n               <button type=\"button\" class=\"btn btn-primary\"  routerLink='/MyMatchesseller/{{buyerProperty.Lookingpostcode}}/{{buyerProperty.ChainStatus}}/{{buyerProperty.FinancialPosition}}/{{buyerProperty.Type}}/{{buyerProperty.Position}}/{{buyerProperty.SearchRadius}}/{{buyerProperty.PriceRange}}/{{buyerProperty.matchStatus}}'>See Details</button>\r\n            </div>\r\n            </div>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n    </mat-tab>\r\n\r\n\r\n\r\n<mat-tab label=\"Awaiting Response\">\r\n  <!-- <div class=\"heading-nestimate actvity-headings\">Awaiting confirmation from other party</div> -->\r\n  <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerProperty\">\r\n    <!-- <mat-card>\r\n      <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\r\n    </mat-card> -->\r\n    <mat-card class=\"mat-card mt-2\">\r\n      <div class=\"mat-card-content-new-content\">\r\n        <div class=\"mat-card-content-image\">\r\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n        </div>\r\n        <div class=\"mat-card-content-text\">\r\n          <div class=\"price-range\">\r\n            <span class=\"heading-nestimate\">Their Desired Price</span> <br>\r\n            <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\r\n          </div>\r\n          <div class=\"other-text\">\r\n            <p class=\"heading-nestimate\">Postcode:<span\r\n                class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n            <p class=\"heading-nestimate\">Poperty Type:<span\r\n                class=\"outputText\">{{property.PropertyType}}</span></p>\r\n          </div>\r\n          <div class=\"button-container\">\r\n           <button type=\"button\" class=\"btn btn-primary\" routerLink='/mymatchesselecteddetail/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.norooms}}/{{property.PropertyCondition}}/{{property.MinAmount}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.ownership}}/{{property.features}}/{{property.matchStatus}}'>See Details</button>\r\n        </div>\r\n        </div>\r\n      </div>\r\n    </mat-card>\r\n  </div>\t\r\n\r\n  <!-- <div class=\"heading-nestimate actvity-headings\">Confirmed by other party</div> -->\r\n  <div class=\"mat-card-content-new\"  *ngFor=\"let buyerProperty of buyerProperty\">\r\n    <!-- <mat-card>\r\n      <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\r\n    </mat-card> -->\r\n    <mat-card class=\"mat-card mt-2\">\r\n      <div class=\"mat-card-content-new-content\">\r\n        <div class=\"mat-card-content-image\">\r\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n        </div>\r\n        <div class=\"mat-card-content-text\">\r\n          <div class=\"price-range\">\r\n            <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n            <span class=\"outputText price-font\">&pound;{{buyerProperty.MinAmount}}  - &pound;{{buyerProperty.MaxAmount}}</span>\r\n          </div>\r\n          <div class=\"other-text\">\r\n            <p class=\"heading-nestimate\">Postcode:<span\r\n                class=\"outputText\">{{buyerProperty.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n            <p class=\"heading-nestimate\">Poperty Type:<span\r\n                class=\"outputText\">{{buyerProperty.PropertyType}}</span></p>\r\n          </div>\r\n          <div class=\"button-container\">\r\n           <button type=\"button\" class=\"btn btn-primary\"  routerLink='/MyMatchesseller/{{buyerProperty.Lookingpostcode}}/{{buyerProperty.ChainStatus}}/{{buyerProperty.FinancialPosition}}/{{buyerProperty.Type}}/{{buyerProperty.Position}}/{{buyerProperty.SearchRadius}}/{{buyerProperty.MaxAmount}}/{{buyerProperty.matchStatus}}'>See Details</button>\r\n        </div>\r\n        </div>\r\n      </div>\r\n    </mat-card>\r\n  </div>\t\r\n\r\n</mat-tab>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n   \r\n  </mat-tab-group>\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  <p class=\"nestimate-heading heading-nestimate\">Nestimates Activity</p>\r\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\r\n\r\n    <mat-tab label=\"Your action\r\n    needed\">\r\n\r\n    <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\r\n      <div class=\"mat-card-content-new\"  *ngFor=\"let property of sellerProperty\">\r\n        <!-- <mat-card>\r\n          <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\r\n        </mat-card> -->\r\n        <mat-card class=\"mat-card mt-2\" *ngIf=\"property.matchStatus=='confirm_interest'\">\r\n          <div class=\"mat-card-content-new-content\">\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n              \r\n            </div>\r\n            <div class=\"mat-card-content-text\">\r\n              <div class=\"price-range\">\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\r\n              </div>\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate\">Postcode:<span\r\n                    class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate\">Poperty Type:<span\r\n                    class=\"outputText\">{{property.PropertyType}}</span></p>\r\n\r\n\r\n                    \r\n              </div>\r\n              <div class=\"button-container\">\r\n               <button type=\"button\" class=\"btn btn-primary\"  routerLink='/mymatchesselecteddetail/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.Roomsmax}}/{{property.PropertyCondition}}/{{property.MaxAmount}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.ownership}}/{{property.features}}/{{property.matchStatus}}'>See Details</button>\r\n            </div>\r\n            </div>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n \r\n      <!-- <div class=\"heading-nestimate actvity-headings\">Awaiting your confirmation</div> -->\r\n\r\n      <div class=\"mat-card-content-new\"  *ngFor=\"let buyerProperty of buyerProperty\">\r\n        <!-- <mat-card>\r\n          <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\r\n        </mat-card> -->\r\n        <mat-card class=\"mat-card mt-2\" *ngIf=\"buyerProperty.matchStatus=='confirm_interest'\">\r\n          <div class=\"mat-card-content-new-content\">\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n            </div>\r\n            <div class=\"mat-card-content-text\">\r\n              <div class=\"price-range\">\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{buyerProperty.MaxAmount}}</span>\r\n              </div>\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate\">Postcode:<span\r\n                    class=\"outputText\">{{buyerProperty.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate\">Poperty Type:<span\r\n                    class=\"outputText\">{{buyerProperty.PropertyType}}</span></p>\r\n              </div>\r\n              <div class=\"button-container\">\r\n               <button type=\"button\" class=\"btn btn-primary\"  routerLink='/MyMatchesseller/{{buyerProperty.Lookingpostcode}}/{{buyerProperty.ChainStatus}}/{{buyerProperty.FinancialPosition}}/{{buyerProperty.Type}}/{{buyerProperty.Position}}/{{buyerProperty.SearchRadius}}/{{buyerProperty.MaxAmount}}/{{buyerProperty.matchStatus}}'>See Details</button>\r\n            </div>\r\n            </div>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n    </mat-tab>\r\n\r\n\r\n\r\n<mat-tab label=\"Awaiting Response\">\r\n  <!-- <div class=\"heading-nestimate actvity-headings\">Awaiting confirmation from other party</div> -->\r\n  <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerProperty\">\r\n    <!-- <mat-card>\r\n      <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\r\n    </mat-card> -->\r\n    <mat-card class=\"mat-card mt-2\">\r\n      <div class=\"mat-card-content-new-content\" >\r\n        <div class=\"mat-card-content-image\">\r\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n        </div>\r\n        <div class=\"mat-card-content-text\">\r\n          <div class=\"price-range\">\r\n            <span class=\"heading-nestimate\">Their Desired Price</span> <br>\r\n            <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\r\n          </div>\r\n          <div class=\"other-text\">\r\n            <p class=\"heading-nestimate\">Postcode:<span\r\n                class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n            <p class=\"heading-nestimate\">Poperty Type:<span\r\n                class=\"outputText\">{{property.PropertyType}}</span></p>\r\n          </div>\r\n          <div class=\"button-container\">\r\n           <button type=\"button\" class=\"btn btn-primary\" routerLink='/mymatchesselecteddetail/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.norooms}}/{{property.PropertyCondition}}/{{property.MinAmount}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.ownership}}/{{property.features}}/{{property.matchStatus}}'>See Details</button>\r\n        </div>\r\n        </div>\r\n      </div>\r\n    </mat-card>\r\n  </div>\t\r\n\r\n  <!-- <div class=\"heading-nestimate actvity-headings\">Confirmed by other party</div> -->\r\n  <div class=\"mat-card-content-new\"  *ngFor=\"let buyerProperty of buyerProperty\">\r\n    <!-- <mat-card>\r\n      <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\r\n    </mat-card> -->\r\n    <mat-card class=\"mat-card mt-2\" *ngIf=\"buyerProperty.matchStatus=='confirm_interest'\">\r\n      <div class=\"mat-card-content-new-content\">\r\n        <div class=\"mat-card-content-image\">\r\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n        </div>\r\n        <div class=\"mat-card-content-text\">\r\n          <div class=\"price-range\">\r\n            <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n            <span class=\"outputText price-font\">&pound;{{buyerProperty.MinAmount}}  - &pound;{{buyerProperty.MaxAmount}}</span>\r\n          </div>\r\n          <div class=\"other-text\">\r\n            <p class=\"heading-nestimate\">Postcode:<span\r\n                class=\"outputText\">{{buyerProperty.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n            <p class=\"heading-nestimate\">Poperty Type:<span\r\n                class=\"outputText\">{{buyerProperty.PropertyType}}</span></p>\r\n          </div>\r\n          <div class=\"button-container\">\r\n           <button type=\"button\" class=\"btn btn-primary\"  routerLink='/MyMatchesseller/{{buyerProperty.Lookingpostcode}}/{{buyerProperty.ChainStatus}}/{{buyerProperty.FinancialPosition}}/{{buyerProperty.PropertyType}}/{{buyerProperty.Position}}/{{buyerProperty.SearchRadius}}/{{buyerProperty.MaxAmount}}/{{buyerProperty.matchStatus}}'>See Details</button>\r\n        </div>\r\n        </div>\r\n      </div>\r\n    </mat-card>\r\n  </div>\t\r\n\r\n</mat-tab>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n   \r\n  </mat-tab-group>\r\n</div>\r\n";
     /***/
   },
 
@@ -561,7 +581,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\">\n    <mat-card-title class=\"title-agent-selection heading-nestimate\">Agent Selection</mat-card-title>\n\n\n    <mat-card class=\"mt-2 dark-background\">\n        <mat-card-title class=\"note-agent-selection heading-nestimate\">\n            You are nearly there! To complete the final step - select a local estate agent from the list below. They\n            will be in touch after receiving details of the Nestimate\n        </mat-card-title>\n\n\n        <div class=\"mandatory\">\n\n\n            <div class=\"mandatory-text heading-nestimate\">I consent my details being sent to the selected estate agent\n                and their partners to they can contact me.</div>\n\n            <div class=\"mandatory-slide\">\n                <mat-slide-toggle></mat-slide-toggle>\n            </div>\n\n\n\n\n        </div>\n\n    </mat-card>\n\n\n\n    <mat-card class=\"mt-2 p-0 dark-background mb-2\">\n        <div class=\"agent-selection-radiobutton-container\">\n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"../../../../assets/Images/dexter.png\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">Dexters London </div>\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        1.50%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        1.75%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\">Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card>\n\n    <mat-card class=\"mt-2 p-0 dark-background mb-2\">\n        <div class=\"agent-selection-radiobutton-container\">\n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"../../../../assets/Images/brinkley.jpg\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">Brinkle</div>\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        1.50%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        1.75%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\">Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\">\n    <mat-card-title class=\"title-agent-selection heading-nestimate\">Agent Selection</mat-card-title>\n\n\n    <mat-card class=\"mt-2 dark-background\">\n        <mat-card-title class=\"note-agent-selection heading-nestimate\">\n            You are nearly there! To complete the final step - select a local estate agent from the list below. They\n            will be in touch after receiving details of the Nestimate\n        </mat-card-title>\n\n\n        <div class=\"mandatory\">\n\n\n            <div class=\"mandatory-text heading-nestimate\">I consent my details being sent to the selected estate agent\n                and their partners to they can contact me.</div>\n\n            <div class=\"mandatory-slide\">\n                <mat-slide-toggle></mat-slide-toggle>\n            </div>\n\n\n\n\n        </div>\n\n    </mat-card>\n\n\n  \n    <mat-card class=\"mt-2 p-0 dark-background mb-2\">\n        <div class=\"agent-selection-radiobutton-container\">\n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"../../../../assets/Images/dexter.png\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">Dexters London </div>\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        1.50%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        1.75%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\">Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card>\n\n    <mat-card class=\"mt-2 p-0 dark-background mb-2\">\n        <div class=\"agent-selection-radiobutton-container\">\n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"../../../../assets/Images/brinkley.jpg\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">Brinkle</div>\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        1.50%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        1.75%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\">Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card>\n</div>";
     /***/
   },
 
@@ -7398,17 +7418,30 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ../../Model/agentSignup */
     "./src/app/Model/agentSignup.ts");
+    /* harmony import */
+
+
+    var _alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ./alertDialogagent.component */
+    "./src/app/Home/agentsignupform/alertDialogagent.component.ts");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @angular/material */
+    "./node_modules/@angular/material/esm2015/material.js");
 
     var AgentsignupformComponent =
     /*#__PURE__*/
     function () {
-      function AgentsignupformComponent(authService, afAuth, stateService, AgentSignupService) {
+      function AgentsignupformComponent(authService, afAuth, stateService, AgentSignupService, dialog) {
         _classCallCheck(this, AgentsignupformComponent);
 
         this.authService = authService;
         this.afAuth = afAuth;
         this.stateService = stateService;
         this.AgentSignupService = AgentSignupService;
+        this.dialog = dialog;
         this.loggedIn = false;
         this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__["agentSignup"]();
       }
@@ -7447,9 +7480,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
+          var _this37 = this;
+
           this.stateService.agentSignup = this.agentSignup;
           this.return = this.AgentSignupService.createAgentCustomer(this.uid, this.agentSignup).then(function (data) {
-            if (data == true) {}
+            if (data == true) {
+              var dialogRef = _this37.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__["AlertDialogAgentComponent"], {
+                data: {
+                  message: "HelloWorld",
+                  buttonText: {
+                    cancel: "Done"
+                  }
+                }
+              });
+            }
           });
         }
       }]);
@@ -7466,6 +7510,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         type: _state_service_service__WEBPACK_IMPORTED_MODULE_5__["StateServiceService"]
       }, {
         type: _agentsignupform_agentSignup_service__WEBPACK_IMPORTED_MODULE_4__["AgentSignupService"]
+      }, {
+        type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialog"]
       }];
     };
 
@@ -7478,6 +7524,100 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       /*! ./agentsignupform.component.css */
       "./src/app/Home/agentsignupform/agentsignupform.component.css")).default]
     })], AgentsignupformComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/Home/agentsignupform/alertDialogagent.component.ts":
+  /*!********************************************************************!*\
+    !*** ./src/app/Home/agentsignupform/alertDialogagent.component.ts ***!
+    \********************************************************************/
+
+  /*! exports provided: AlertDialogAgentComponent */
+
+  /***/
+  function srcAppHomeAgentsignupformAlertDialogagentComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AlertDialogAgentComponent", function () {
+      return AlertDialogAgentComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/material */
+    "./node_modules/@angular/material/esm2015/material.js");
+
+    var AlertDialogAgentComponent =
+    /*#__PURE__*/
+    function () {
+      function AlertDialogAgentComponent(data, dialogRef) {
+        _classCallCheck(this, AlertDialogAgentComponent);
+
+        this.data = data;
+        this.dialogRef = dialogRef;
+        this.message = "";
+        this.cancelButtonText = "Cancel";
+
+        if (data) {
+          this.message = data.message || this.message;
+
+          if (data.buttonText) {
+            this.cancelButtonText = data.buttonText.cancel || this.cancelButtonText;
+          }
+        }
+
+        this.dialogRef.updateSize('300vw', '300vw');
+      }
+
+      _createClass(AlertDialogAgentComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "onConfirmClick",
+        value: function onConfirmClick() {
+          this.dialogRef.close(true);
+        }
+      }]);
+
+      return AlertDialogAgentComponent;
+    }();
+
+    AlertDialogAgentComponent.ctorParameters = function () {
+      return [{
+        type: undefined,
+        decorators: [{
+          type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"],
+          args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]]
+        }]
+      }, {
+        type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"]
+      }];
+    };
+
+    AlertDialogAgentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-alertDialogAgent',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./alertDialogAgent.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/Home/agentsignupform/alertDialogAgent.component.html")).default
+    }), tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))], AlertDialogAgentComponent);
     /***/
   },
 
@@ -7711,7 +7851,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this37 = this;
+          var _this38 = this;
 
           // User ID
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -7719,14 +7859,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this37.propertyRequirementDetails.push(element.data());
+              _this38.propertyRequirementDetails.push(element.data());
             });
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this37.propertyDetails.push(element.data());
+              _this38.propertyDetails.push(element.data());
 
-              console.log(_this37.propertyDetails);
+              console.log(_this38.propertyDetails);
             });
           });
         }
@@ -7900,19 +8040,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesSelectedDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this38 = this;
+          var _this39 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this38.Lookingpostcode = params.get("Lookingpostcode");
-            _this38.Lookingstate = params.get("Lookingstate");
-            _this38.LookingAddress = params.get("LookingAddress");
-            _this38.norooms = params.get("Roomsmax");
-            _this38.PropertyCondition = params.get("PropertyCondition");
-            _this38.MaxAmount = params.get("MaxAmount");
-            _this38.PropertyType = params.get("PropertyType");
-            _this38.ownership = params.get("ownership");
-            _this38.features = params.get("features");
-            _this38.matchStatus = params.get("matchStatus");
+            _this39.Lookingpostcode = params.get("Lookingpostcode");
+            _this39.Lookingstate = params.get("Lookingstate");
+            _this39.LookingAddress = params.get("LookingAddress");
+            _this39.norooms = params.get("Roomsmax");
+            _this39.PropertyCondition = params.get("PropertyCondition");
+            _this39.MaxAmount = params.get("MaxAmount");
+            _this39.PropertyType = params.get("PropertyType");
+            _this39.ownership = params.get("ownership");
+            _this39.features = params.get("features");
+            _this39.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -7956,7 +8096,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".property-detail-container\r\n{\r\n    padding-right: 8px;\r\n    padding-left: 8px;\r\n    padding-bottom: 9px;\r\n}\r\n.property-selected-detail-background\r\n{\r\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\r\n    background-position: center;\r\n    background-size: contain;\r\n}\r\n.wrapper-detail-container\r\n{\r\n   \r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n}\r\n.property-detail-h3\r\n{\r\n    font-size: 24px;\r\n    text-align: center;\r\n    padding: 1em;\r\n}\r\n.streetname {\r\n    padding-top: 20px;\r\n}\r\n.details-p-headings\r\n{   \r\n    font-size: 17px;\r\n    margin-bottom: 0px !important;\r\n}\r\n.details-output-p\r\n{\r\n    font-size: 15px;\r\n}\r\n.table td, .table th {\r\n    padding: .75rem;\r\n    vertical-align: top;\r\n border-top: none;\r\n}\r\n.button-details {\r\n    display: flex;\r\n    /* justify-content: center; */\r\n  \r\n  \r\n    align-content: center;\r\n    margin-top: 70px;\r\n    flex-direction: column;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n}\r\n.btn-chat {\r\n    background-color: #244D93;\r\n    color: white;\r\n    width: 44%;\r\n    height: 35px;\r\n    font-size: 15px;\r\n}\r\n.button-ask\r\n{\r\n    background-color: #244D93;\r\n    color: white;\r\n    width: 50%;\r\n    height: 35px;\r\n    font-size: 13px;\r\n    margin-bottom: 18px;\r\n}\r\n.carousel-item {\r\n    height: 170px;\r\n    background-size: cover;\r\n}\r\n.carousel-indicators li {\r\n    width: 13px;\r\n    height: 13px;\r\n    border-radius: 100%;\r\n}\r\n.selected-button {\r\n    display: flex;\r\n    justify-content: space-evenly;\r\n    align-items: center;\r\n}\r\ndiv#demo {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\nimg.match-images {\r\n    width: 30%;\r\n}\r\n.Mat-card-div {\r\n    display: flex;\r\n    flex-direction: row;\r\n   \r\n    align-items: center;\r\n    justify-content: space-between;\r\n    margin: 10px\r\n}\r\n.loading-container {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    z-index: 9;\r\n    background: black;\r\n    opacity: 0.5;\r\n  }\r\n.continue-form {\r\n    background-color: var(--light-blue-color);\r\n    height: 100vh;\r\n    width: 100vw;\r\n    top: 0vh;\r\n    position: fixed;\r\n    bottom: 0px;\r\n  }\r\n.nestimate-logo {\r\n    display: flex;\r\n    justify-content: center;\r\n  }\r\nimg.nestimate-logo {\r\n    height: 22vh;\r\n    }\r\n.overlay-text{\r\n    color: white;\r\n    font-family: 'Roboto-Medium';\r\n  }\r\n.overlay-text-third{\r\n    color: white;\r\n    font-family: 'Roboto-Medium';\r\n  }\r\n.continue-text {\r\n    margin: 2em;\r\n    font-size: 17px;\r\n    text-align: left;\r\n  }\r\n.continue-button-container\r\n  {\r\n    color: white;\r\n    font-family: 'Roboto-Medium';\r\n    font-size: 18px;\r\n  }\r\n.continue-button-container {\r\n    display: flex;\r\n    justify-content: center;\r\n    border: 3px solid white;\r\n    margin: 0vh 15vw;\r\n    padding: 0.6em\r\n  }\r\n.continue-form-data {\r\n    display: flex;\r\n    flex-direction: column;\r\n    /* justify-content: center; */\r\n    height: 100%;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    width: 100%;\r\n    justify-content: center;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvbXktbWF0Y2hlcy10by1zZWxsLXNlbGVjdGVkLWRldGFpbC9teS1tYXRjaGVzLXRvLXNlbGwtc2VsZWN0ZWQtZGV0YWlsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxzRUFBc0U7SUFDdEUsMkJBQTJCO0lBQzNCLHdCQUF3QjtBQUM1QjtBQUVBOzs7SUFHSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTs7SUFFSSxlQUFlO0lBQ2YsNkJBQTZCO0FBQ2pDO0FBQ0E7O0lBRUksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtDQUN0QixnQkFBZ0I7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7OztJQUc3QixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osZUFBZTtBQUNuQjtBQUNBOztJQUVJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0lBQ2YsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjs7SUFFbkIsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QjtBQUNKO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGVBQWU7SUFDZixRQUFRO0lBQ1IsU0FBUztJQUVULGFBQWE7SUFFYix1QkFBdUI7SUFFdkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixpQkFBaUI7SUFDakIsWUFBWTtFQUNkO0FBQ0E7SUFDRSx5Q0FBeUM7SUFDekMsYUFBYTtJQUNiLFlBQVk7SUFDWixRQUFRO0lBQ1IsZUFBZTtJQUNmLFdBQVc7RUFDYjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtFQUN6QjtBQUNBO0lBQ0UsWUFBWTtJQUNaO0FBQ0Y7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBRUE7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBQ0E7SUFDRSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtFQUNsQjtBQUNBOztJQUVFLFlBQVk7SUFDWiw0QkFBNEI7SUFDNUIsZUFBZTtFQUNqQjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCO0VBQ0Y7QUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsNkJBQTZCO0lBQzdCLFlBQVk7SUFDWixXQUFXO0lBQ1gsWUFBWTtJQUNaLFdBQVc7SUFDWCx1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC9NZW51L215TWF0Y2hlcy9teS1tYXRjaGVzLXRvLXNlbGwtc2VsZWN0ZWQtZGV0YWlsL215LW1hdGNoZXMtdG8tc2VsbC1zZWxlY3RlZC1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9wZXJ0eS1kZXRhaWwtY29udGFpbmVyXHJcbntcclxuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcclxuICAgIHBhZGRpbmctbGVmdDogOHB4O1xyXG4gICAgcGFkZGluZy1ib3R0b206IDlweDtcclxufVxyXG4ucHJvcGVydHktc2VsZWN0ZWQtZGV0YWlsLWJhY2tncm91bmRcclxue1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL0ltYWdlcy9zZWxlY3RlZFByb3BlcnR5YmFja2dyb3VuZy5qcGcnKTtcclxuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcclxufVxyXG5cclxuLndyYXBwZXItZGV0YWlsLWNvbnRhaW5lclxyXG57XHJcbiAgIFxyXG4gICAgcGFkZGluZy10b3A6IDVweDtcclxuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XHJcbn1cclxuLnByb3BlcnR5LWRldGFpbC1oM1xyXG57XHJcbiAgICBmb250LXNpemU6IDI0cHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nOiAxZW07XHJcbn1cclxuLnN0cmVldG5hbWUge1xyXG4gICAgcGFkZGluZy10b3A6IDIwcHg7XHJcbn1cclxuLmRldGFpbHMtcC1oZWFkaW5nc1xyXG57ICAgXHJcbiAgICBmb250LXNpemU6IDE3cHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcclxufVxyXG4uZGV0YWlscy1vdXRwdXQtcFxyXG57XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbn1cclxuLnRhYmxlIHRkLCAudGFibGUgdGgge1xyXG4gICAgcGFkZGluZzogLjc1cmVtO1xyXG4gICAgdmVydGljYWwtYWxpZ246IHRvcDtcclxuIGJvcmRlci10b3A6IG5vbmU7XHJcbn1cclxuLmJ1dHRvbi1kZXRhaWxzIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cclxuICBcclxuICBcclxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIG1hcmdpbi10b3A6IDcwcHg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcbi5idG4tY2hhdCB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgd2lkdGg6IDQ0JTtcclxuICAgIGhlaWdodDogMzVweDtcclxuICAgIGZvbnQtc2l6ZTogMTVweDtcclxufVxyXG4uYnV0dG9uLWFza1xyXG57XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgd2lkdGg6IDUwJTtcclxuICAgIGhlaWdodDogMzVweDtcclxuICAgIGZvbnQtc2l6ZTogMTNweDtcclxuICAgIG1hcmdpbi1ib3R0b206IDE4cHg7XHJcbn1cclxuLmNhcm91c2VsLWl0ZW0ge1xyXG4gICAgaGVpZ2h0OiAxNzBweDtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcbn1cclxuLmNhcm91c2VsLWluZGljYXRvcnMgbGkge1xyXG4gICAgd2lkdGg6IDEzcHg7XHJcbiAgICBoZWlnaHQ6IDEzcHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiAxMDAlO1xyXG59XHJcbi5zZWxlY3RlZC1idXR0b24ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxufVxyXG5cclxuZGl2I2RlbW8ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59XHJcbmltZy5tYXRjaC1pbWFnZXMge1xyXG4gICAgd2lkdGg6IDMwJTtcclxufVxyXG5cclxuLk1hdC1jYXJkLWRpdiB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgXHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgbWFyZ2luOiAxMHB4XHJcbn1cclxuLmxvYWRpbmctY29udGFpbmVyIHtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgdG9wOiAwcHg7XHJcbiAgICBsZWZ0OiAwcHg7XHJcbiAgICBkaXNwbGF5OiAtd2Via2l0LWJveDtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgei1pbmRleDogOTtcclxuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xyXG4gICAgb3BhY2l0eTogMC41O1xyXG4gIH1cclxuICAuY29udGludWUtZm9ybSB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcclxuICAgIGhlaWdodDogMTAwdmg7XHJcbiAgICB3aWR0aDogMTAwdnc7XHJcbiAgICB0b3A6IDB2aDtcclxuICAgIHBvc2l0aW9uOiBmaXhlZDtcclxuICAgIGJvdHRvbTogMHB4O1xyXG4gIH1cclxuICAubmVzdGltYXRlLWxvZ28ge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gIH1cclxuICBpbWcubmVzdGltYXRlLWxvZ28ge1xyXG4gICAgaGVpZ2h0OiAyMnZoO1xyXG4gICAgfVxyXG4gIC5vdmVybGF5LXRleHR7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xyXG4gIH1cclxuICBcclxuICAub3ZlcmxheS10ZXh0LXRoaXJke1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcclxuICB9XHJcbiAgLmNvbnRpbnVlLXRleHQge1xyXG4gICAgbWFyZ2luOiAyZW07XHJcbiAgICBmb250LXNpemU6IDE3cHg7XHJcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xyXG4gIH1cclxuICAuY29udGludWUtYnV0dG9uLWNvbnRhaW5lclxyXG4gIHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgfVxyXG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuICAgIGJvcmRlcjogM3B4IHNvbGlkIHdoaXRlO1xyXG4gICAgbWFyZ2luOiAwdmggMTV2dztcclxuICAgIHBhZGRpbmc6IDAuNmVtXHJcbiAgfVxyXG4gIC5jb250aW51ZS1mb3JtLWRhdGEge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIG1hcmdpbjogMHB4O1xyXG4gICAgcGFkZGluZzogMHB4O1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxufSJdfQ== */";
+    __webpack_exports__["default"] = ".property-detail-container\r\n{\r\n    padding-right: 8px;\r\n    padding-left: 8px;\r\n    padding-bottom: 9px;\r\n}\r\n.property-selected-detail-background\r\n{\r\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\r\n    background-position: center;\r\n    background-size: contain;\r\n}\r\n.wrapper-detail-container\r\n{\r\n   \r\n    padding-top: 5px;\r\n    padding-bottom: 5px;\r\n}\r\n.property-detail-h3\r\n{\r\n    font-size: 24px;\r\n    text-align: center;\r\n    padding: 1em;\r\n}\r\n.streetname {\r\n    padding-top: 20px;\r\n}\r\n.details-p-headings\r\n{   \r\n    font-size: 17px;\r\n    margin-bottom: 0px !important;\r\n}\r\n.details-output-p\r\n{\r\n    font-size: 15px;\r\n    text-align: right;\r\n}\r\n.table td, .table th {\r\n    padding: .75rem;\r\n    vertical-align: top;\r\n border-top: none;\r\n}\r\n.button-details {\r\n    display: flex;\r\n    /* justify-content: center; */\r\n  \r\n  \r\n    align-content: center;\r\n    margin-top: 70px;\r\n    flex-direction: column;\r\n    justify-content: space-around;\r\n    align-items: center;\r\n}\r\n.btn-chat {\r\n    background-color: #244D93;\r\n    color: white;\r\n    width: 44%;\r\n    height: 35px;\r\n    font-size: 15px;\r\n}\r\n.button-ask\r\n{\r\n    background-color: #244D93;\r\n    color: white;\r\n    width: 50%;\r\n    height: 35px;\r\n    font-size: 13px;\r\n    margin-bottom: 18px;\r\n}\r\n.carousel-item {\r\n    height: 170px;\r\n    background-size: cover;\r\n}\r\n.carousel-indicators li {\r\n    width: 13px;\r\n    height: 13px;\r\n    border-radius: 100%;\r\n}\r\n.selected-button {\r\n    display: flex;\r\n    justify-content: space-evenly;\r\n    align-items: center;\r\n}\r\ndiv#demo {\r\n    display: flex;\r\n    justify-content: center;\r\n}\r\nimg.match-images {\r\n    width: 30%;\r\n}\r\n.Mat-card-div {\r\n    display: flex;\r\n    flex-direction: row;\r\n   \r\n    align-items: center;\r\n    justify-content: space-between;\r\n    margin: 10px\r\n}\r\n.loading-container {\r\n    width: 100%;\r\n    height: 100%;\r\n    position: fixed;\r\n    top: 0px;\r\n    left: 0px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    z-index: 9;\r\n    background: black;\r\n    opacity: 0.5;\r\n  }\r\n.continue-form {\r\n    background-color: var(--light-blue-color);\r\n    height: 100vh;\r\n    width: 100vw;\r\n    top: 0vh;\r\n    position: fixed;\r\n    bottom: 0px;\r\n  }\r\n.nestimate-logo {\r\n    display: flex;\r\n    justify-content: center;\r\n  }\r\nimg.nestimate-logo {\r\n    height: 22vh;\r\n    }\r\n.overlay-text{\r\n    color: white;\r\n    font-family: 'Roboto-Medium';\r\n  }\r\n.overlay-text-third{\r\n    color: white;\r\n    font-family: 'Roboto-Medium';\r\n  }\r\n.continue-text {\r\n    margin: 2em;\r\n    font-size: 17px;\r\n    text-align: left;\r\n  }\r\n.continue-button-container\r\n  {\r\n    color: white;\r\n    font-family: 'Roboto-Medium';\r\n    font-size: 18px;\r\n  }\r\n.continue-button-container {\r\n    display: flex;\r\n    justify-content: center;\r\n    border: 3px solid white;\r\n    margin: 0vh 15vw;\r\n    padding: 0.6em\r\n  }\r\n.continue-form-data {\r\n    display: flex;\r\n    flex-direction: column;\r\n    /* justify-content: center; */\r\n    height: 100%;\r\n    margin: 0px;\r\n    padding: 0px;\r\n    width: 100%;\r\n    justify-content: center;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvbXktbWF0Y2hlcy10by1zZWxsLXNlbGVjdGVkLWRldGFpbC9teS1tYXRjaGVzLXRvLXNlbGwtc2VsZWN0ZWQtZGV0YWlsLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxzRUFBc0U7SUFDdEUsMkJBQTJCO0lBQzNCLHdCQUF3QjtBQUM1QjtBQUVBOzs7SUFHSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTs7SUFFSSxlQUFlO0lBQ2YsNkJBQTZCO0FBQ2pDO0FBQ0E7O0lBRUksZUFBZTtJQUNmLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtDQUN0QixnQkFBZ0I7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7OztJQUc3QixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osZUFBZTtBQUNuQjtBQUNBOztJQUVJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0lBQ2YsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjs7SUFFbkIsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QjtBQUNKO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGVBQWU7SUFDZixRQUFRO0lBQ1IsU0FBUztJQUVULGFBQWE7SUFFYix1QkFBdUI7SUFFdkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixpQkFBaUI7SUFDakIsWUFBWTtFQUNkO0FBQ0E7SUFDRSx5Q0FBeUM7SUFDekMsYUFBYTtJQUNiLFlBQVk7SUFDWixRQUFRO0lBQ1IsZUFBZTtJQUNmLFdBQVc7RUFDYjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtFQUN6QjtBQUNBO0lBQ0UsWUFBWTtJQUNaO0FBQ0Y7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBRUE7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBQ0E7SUFDRSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtFQUNsQjtBQUNBOztJQUVFLFlBQVk7SUFDWiw0QkFBNEI7SUFDNUIsZUFBZTtFQUNqQjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCO0VBQ0Y7QUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsNkJBQTZCO0lBQzdCLFlBQVk7SUFDWixXQUFXO0lBQ1gsWUFBWTtJQUNaLFdBQVc7SUFDWCx1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC9NZW51L215TWF0Y2hlcy9teS1tYXRjaGVzLXRvLXNlbGwtc2VsZWN0ZWQtZGV0YWlsL215LW1hdGNoZXMtdG8tc2VsbC1zZWxlY3RlZC1kZXRhaWwuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9wZXJ0eS1kZXRhaWwtY29udGFpbmVyXHJcbntcclxuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcclxuICAgIHBhZGRpbmctbGVmdDogOHB4O1xyXG4gICAgcGFkZGluZy1ib3R0b206IDlweDtcclxufVxyXG4ucHJvcGVydHktc2VsZWN0ZWQtZGV0YWlsLWJhY2tncm91bmRcclxue1xyXG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL0ltYWdlcy9zZWxlY3RlZFByb3BlcnR5YmFja2dyb3VuZy5qcGcnKTtcclxuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcclxuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcclxufVxyXG5cclxuLndyYXBwZXItZGV0YWlsLWNvbnRhaW5lclxyXG57XHJcbiAgIFxyXG4gICAgcGFkZGluZy10b3A6IDVweDtcclxuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XHJcbn1cclxuLnByb3BlcnR5LWRldGFpbC1oM1xyXG57XHJcbiAgICBmb250LXNpemU6IDI0cHg7XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBwYWRkaW5nOiAxZW07XHJcbn1cclxuLnN0cmVldG5hbWUge1xyXG4gICAgcGFkZGluZy10b3A6IDIwcHg7XHJcbn1cclxuLmRldGFpbHMtcC1oZWFkaW5nc1xyXG57ICAgXHJcbiAgICBmb250LXNpemU6IDE3cHg7XHJcbiAgICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcclxufVxyXG4uZGV0YWlscy1vdXRwdXQtcFxyXG57XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICB0ZXh0LWFsaWduOiByaWdodDtcclxufVxyXG4udGFibGUgdGQsIC50YWJsZSB0aCB7XHJcbiAgICBwYWRkaW5nOiAuNzVyZW07XHJcbiAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xyXG4gYm9yZGVyLXRvcDogbm9uZTtcclxufVxyXG4uYnV0dG9uLWRldGFpbHMge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xyXG4gIFxyXG4gIFxyXG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xyXG4gICAgbWFyZ2luLXRvcDogNzBweDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuLmJ0bi1jaGF0IHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB3aWR0aDogNDQlO1xyXG4gICAgaGVpZ2h0OiAzNXB4O1xyXG4gICAgZm9udC1zaXplOiAxNXB4O1xyXG59XHJcbi5idXR0b24tYXNrXHJcbntcclxuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICB3aWR0aDogNTAlO1xyXG4gICAgaGVpZ2h0OiAzNXB4O1xyXG4gICAgZm9udC1zaXplOiAxM3B4O1xyXG4gICAgbWFyZ2luLWJvdHRvbTogMThweDtcclxufVxyXG4uY2Fyb3VzZWwtaXRlbSB7XHJcbiAgICBoZWlnaHQ6IDE3MHB4O1xyXG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3ZlcjtcclxufVxyXG4uY2Fyb3VzZWwtaW5kaWNhdG9ycyBsaSB7XHJcbiAgICB3aWR0aDogMTNweDtcclxuICAgIGhlaWdodDogMTNweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDEwMCU7XHJcbn1cclxuLnNlbGVjdGVkLWJ1dHRvbiB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG59XHJcblxyXG5kaXYjZGVtbyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbn1cclxuaW1nLm1hdGNoLWltYWdlcyB7XHJcbiAgICB3aWR0aDogMzAlO1xyXG59XHJcblxyXG4uTWF0LWNhcmQtZGl2IHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICBcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XHJcbiAgICBtYXJnaW46IDEwcHhcclxufVxyXG4ubG9hZGluZy1jb250YWluZXIge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICB0b3A6IDBweDtcclxuICAgIGxlZnQ6IDBweDtcclxuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICB6LWluZGV4OiA5O1xyXG4gICAgYmFja2dyb3VuZDogYmxhY2s7XHJcbiAgICBvcGFjaXR5OiAwLjU7XHJcbiAgfVxyXG4gIC5jb250aW51ZS1mb3JtIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xyXG4gICAgaGVpZ2h0OiAxMDB2aDtcclxuICAgIHdpZHRoOiAxMDB2dztcclxuICAgIHRvcDogMHZoO1xyXG4gICAgcG9zaXRpb246IGZpeGVkO1xyXG4gICAgYm90dG9tOiAwcHg7XHJcbiAgfVxyXG4gIC5uZXN0aW1hdGUtbG9nbyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgfVxyXG4gIGltZy5uZXN0aW1hdGUtbG9nbyB7XHJcbiAgICBoZWlnaHQ6IDIydmg7XHJcbiAgICB9XHJcbiAgLm92ZXJsYXktdGV4dHtcclxuICAgIGNvbG9yOiB3aGl0ZTtcclxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XHJcbiAgfVxyXG4gIFxyXG4gIC5vdmVybGF5LXRleHQtdGhpcmR7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xyXG4gIH1cclxuICAuY29udGludWUtdGV4dCB7XHJcbiAgICBtYXJnaW46IDJlbTtcclxuICAgIGZvbnQtc2l6ZTogMTdweDtcclxuICAgIHRleHQtYWxpZ246IGxlZnQ7XHJcbiAgfVxyXG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyXHJcbiAge1xyXG4gICAgY29sb3I6IHdoaXRlO1xyXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxuICB9XHJcbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYm9yZGVyOiAzcHggc29saWQgd2hpdGU7XHJcbiAgICBtYXJnaW46IDB2aCAxNXZ3O1xyXG4gICAgcGFkZGluZzogMC42ZW1cclxuICB9XHJcbiAgLmNvbnRpbnVlLWZvcm0tZGF0YSB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG4gICAgbWFyZ2luOiAwcHg7XHJcbiAgICBwYWRkaW5nOiAwcHg7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG59Il19 */";
     /***/
   },
 
@@ -8011,17 +8151,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this39 = this;
+          var _this40 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this39.Lookingpostcode = params.get("Lookingpostcode");
-            _this39.ChainStatus = params.get("ChainStatus");
-            _this39.FinancialPosition = params.get("FinancialPosition");
-            _this39.Type = params.get("Type");
-            _this39.Position = params.get("Position");
-            _this39.SearchRadius = params.get("SearchRadius");
-            _this39.PriceRange = params.get("PriceRange");
-            _this39.matchStatus = params.get("matchStatus");
+            _this40.Lookingpostcode = params.get("Lookingpostcode");
+            _this40.ChainStatus = params.get("ChainStatus");
+            _this40.FinancialPosition = params.get("FinancialPosition");
+            _this40.Type = params.get("PropertyType");
+            _this40.Position = params.get("Position");
+            _this40.SearchRadius = params.get("SearchRadius");
+            _this40.MaxAmount = params.get("MaxAmount");
+            _this40.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -8138,20 +8278,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this40 = this;
+          var _this41 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details Seller
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this40.sellerProperty.push(element.data());
+              _this41.sellerProperty.push(element.data());
             });
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this40.buyerProperty.push(element.data());
+              _this41.buyerProperty.push(element.data());
             });
           });
         }
@@ -8309,21 +8449,41 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _select_agent_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./select-agent.service */
+    "./src/app/Menu/myMatches/select-agent/select-agent.service.ts");
 
     var SelectAgentComponent =
     /*#__PURE__*/
     function () {
-      function SelectAgentComponent() {
+      function SelectAgentComponent(AgentService) {
         _classCallCheck(this, SelectAgentComponent);
+
+        this.AgentService = AgentService;
       }
 
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {}
+        value: function ngOnInit() {
+          this.AgentService.agentRef().then(function (res) {
+            res.forEach(function (element) {
+              console.log(element);
+            });
+          });
+        }
       }]);
 
       return SelectAgentComponent;
     }();
+
+    SelectAgentComponent.ctorParameters = function () {
+      return [{
+        type: _select_agent_service__WEBPACK_IMPORTED_MODULE_2__["SelectAgentService"]
+      }];
+    };
 
     SelectAgentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-select-agent',
@@ -8334,6 +8494,75 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       /*! ./select-agent.component.css */
       "./src/app/Menu/myMatches/select-agent/select-agent.component.css")).default]
     })], SelectAgentComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/Menu/myMatches/select-agent/select-agent.service.ts":
+  /*!*********************************************************************!*\
+    !*** ./src/app/Menu/myMatches/select-agent/select-agent.service.ts ***!
+    \*********************************************************************/
+
+  /*! exports provided: SelectAgentService */
+
+  /***/
+  function srcAppMenuMyMatchesSelectAgentSelectAgentServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SelectAgentService", function () {
+      return SelectAgentService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/fire/firestore */
+    "./node_modules/@angular/fire/firestore/es2015/index.js");
+
+    var SelectAgentService =
+    /*#__PURE__*/
+    function () {
+      function SelectAgentService(db) {
+        _classCallCheck(this, SelectAgentService);
+
+        this.db = db;
+      }
+
+      _createClass(SelectAgentService, [{
+        key: "getAgentsDetail",
+        value: function getAgentsDetail(uid) {
+          return this.db.collection("agentSignup").doc(uid).collection("agents").ref.get();
+        }
+      }]);
+
+      return SelectAgentService;
+    }();
+
+    SelectAgentService.ctorParameters = function () {
+      return [{
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]
+      }];
+    };
+
+    SelectAgentService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], SelectAgentService);
     /***/
   },
 
@@ -8414,19 +8643,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this41 = this;
+          var _this42 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this41.uid) {
-                _this41.user.Name = element.data().Name;
-                _this41.user.Email = element.data().email;
-                _this41.user.Phone = element.data().Phone;
-                _this41.user.DOB = element.data().DOB.toDate();
-                _this41.user.Phone = element.data().Phone;
-                _this41.user.Address = element.data().Currentaddress;
+              if (element.data().uid == _this42.uid) {
+                _this42.user.Name = element.data().Name;
+                _this42.user.Email = element.data().email;
+                _this42.user.Phone = element.data().Phone;
+                _this42.user.DOB = element.data().DOB.toDate();
+                _this42.user.Phone = element.data().Phone;
+                _this42.user.Address = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -8537,19 +8766,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this42 = this;
+          var _this43 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this42.uid) {
-                _this42.user.Name = element.data().Name;
-                _this42.user.Email = element.data().email;
-                _this42.user.Phone = element.data().Phone;
-                _this42.user.DOB = element.data().DOB.toDate();
-                _this42.user.Address = element.data().Currentaddress;
-                console.log(_this42.user.Phone);
+              if (element.data().uid == _this43.uid) {
+                _this43.user.Name = element.data().Name;
+                _this43.user.Email = element.data().email;
+                _this43.user.Phone = element.data().Phone;
+                _this43.user.DOB = element.data().DOB.toDate();
+                _this43.user.Address = element.data().Currentaddress;
+                console.log(_this43.user.Phone);
               }
             });
           });
@@ -8557,13 +8786,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this43 = this;
+          var _this44 = this;
 
           console.log(this.user);
           this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
-            console.log(_this43.user);
+            console.log(_this44.user);
 
-            _this43.router.navigate(["/profile"]);
+            _this44.router.navigate(["/profile"]);
           });
         }
       }]);
@@ -8733,19 +8962,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this44 = this;
+          var _this45 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this44.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this44.userData));
+              _this45.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this45.userData));
 
-              _this44.LoggedIn();
+              _this45.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this44.LoggedOut();
+              _this45.LoggedOut();
             }
           });
         }
@@ -8767,27 +8996,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this45 = this;
+          var _this46 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this45.sellerProperty.push(element.data());
+                _this46.sellerProperty.push(element.data());
               }
             });
-            _this45.noSellerOfMatche = _this45.sellerProperty.length;
-            _this45.matches = _this45.buyerProperty.length + _this45.sellerProperty.length;
+            _this46.noSellerOfMatche = _this46.sellerProperty.length;
+            _this46.matches = _this46.buyerProperty.length + _this46.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this45.buyerProperty.push(element.data());
+                _this46.buyerProperty.push(element.data());
               }
             });
-            _this45.noBuyerMatches = _this45.buyerProperty.length;
-            _this45.matches = _this45.buyerProperty.length + _this45.sellerProperty.length;
+            _this46.noBuyerMatches = _this46.buyerProperty.length;
+            _this46.matches = _this46.buyerProperty.length + _this46.sellerProperty.length;
           });
         }
       }, {
@@ -8844,44 +9073,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this46 = this;
+          var _this47 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this46.isLoading = false;
+            _this47.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this47 = this;
+          var _this48 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this47.isLoading = false;
+            _this48.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this48 = this;
+          var _this49 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this48.isLoading = false;
+            _this49.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this49 = this;
+          var _this50 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this49.isLoading = false;
+            _this50.isLoading = false;
           });
         }
       }, {
@@ -8904,14 +9133,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this50 = this;
+          var _this51 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this50.user.Name = displayName;
-            _this50.user.DOB = null;
-            _this50.user.Phone = null;
-            _this50.return = _this50.FormsService.createUserCustomer(_this50.user).then(function (data) {
+            _this51.user.Name = displayName;
+            _this51.user.DOB = null;
+            _this51.user.Phone = null;
+            _this51.return = _this51.FormsService.createUserCustomer(_this51.user).then(function (data) {
               console.log(data);
             });
           });
@@ -10465,7 +10694,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       path: "PrivacyPolicy",
       component: _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_27__["PrivacyPolicyComponent"]
     }, {
-      path: "MyMatchesseller/:Lookingpostcode/:ChainStatus/:FinancialPosition/:Type/:Position/:SearchRadius/:PriceRange:/:matchStatus",
+      path: "MyMatchesseller/:Lookingpostcode/:ChainStatus/:FinancialPosition/:PropertyType/:Position/:SearchRadius/:MaxAmount/:matchStatus",
       component: _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_28__["MyMatchesToSellSelectedDetailComponent"]
     }, {
       path: "checkLogin",
@@ -11191,7 +11420,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
     var _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(
     /*! ./Home/agentsignupform/agentsignupform.component */
-    "./src/app/Home/agentsignupform/agentsignupform.component.ts"); // Firebase modules
+    "./src/app/Home/agentsignupform/agentsignupform.component.ts");
+    /* harmony import */
+
+
+    var _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(
+    /*! ./Home/agentsignupform/alertDialogagent.component */
+    "./src/app/Home/agentsignupform/alertDialogagent.component.ts"); // Firebase modules
 
 
     var AppModule = function AppModule() {
@@ -11199,9 +11434,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_83__["MyMatchesSelectedDetailsComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_84__["AgentSignupComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_agentSelection_agentSelection_component__WEBPACK_IMPORTED_MODULE_85__["AgentSelectionComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_86__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_87__["PrivacyPolicyComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_88__["MyMatchesToSellSelectedDetailComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_89__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_90__["PlusComponent"], _Home_Property_fillFormBuyer_matched_nestimates_matched_nestimates_component__WEBPACK_IMPORTED_MODULE_91__["MatchedNestimatesComponent"], _Home_Property_fillFormBuyer_matched_nestimates_matches_nestimate_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_92__["MatchesNestimateComponent"], _Home_Property_fillFormBuyer_matched_nestimates_un_matches_nestimate_un_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_93__["UnMatchesNestimateComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_94__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_95__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_96__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_97__["AgentsignupformComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_98__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_83__["MyMatchesSelectedDetailsComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_84__["AgentSignupComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_agentSelection_agentSelection_component__WEBPACK_IMPORTED_MODULE_85__["AgentSelectionComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_86__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_87__["PrivacyPolicyComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_88__["MyMatchesToSellSelectedDetailComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_89__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_90__["PlusComponent"], _Home_Property_fillFormBuyer_matched_nestimates_matched_nestimates_component__WEBPACK_IMPORTED_MODULE_91__["MatchedNestimatesComponent"], _Home_Property_fillFormBuyer_matched_nestimates_matches_nestimate_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_92__["MatchesNestimateComponent"], _Home_Property_fillFormBuyer_matched_nestimates_un_matches_nestimate_un_matches_nestimate_component__WEBPACK_IMPORTED_MODULE_93__["UnMatchesNestimateComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_94__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_95__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_96__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_97__["AgentsignupformComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_24__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_28__["environment"].firebaseConfig, "street"), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_27__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_26__["AngularFireStorageModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_23__["AngularFireDatabaseModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_34__["BrowserAnimationsModule"], _Misc_material__WEBPACK_IMPORTED_MODULE_77__["MaterialModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_35__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_39__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_40__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_41__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_36__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_42__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_43__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_44__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_45__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_46__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_47__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_48__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_49__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_50__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_51__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_52__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_53__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_54__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_55__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_56__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_57__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_58__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_59__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_61__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_62__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_63__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_64__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_65__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_66__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_67__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_68__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_69__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_70__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_71__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_73__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_74__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_75__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_37__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_38__["ScrollingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_79__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"]],
-      entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"]],
+      entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_98__["AlertDialogAgentComponent"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_22__["AuthService"], {
         provide: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["FirestoreSettingsToken"],
         useValue: {}
@@ -11286,7 +11521,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this51 = this;
+        var _this52 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -11300,8 +11535,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this51.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this51.userData));
+            _this52.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this52.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -11482,7 +11717,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee14() {
-            var _this52 = this;
+            var _this53 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee14$(_context14) {
@@ -11496,7 +11731,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 3:
                     result = _context14.sent;
                     this.ngZone.run(function () {
-                      _this52.SetUserData(result.user);
+                      _this53.SetUserData(result.user);
                     });
                     _context14.next = 10;
                     break;
@@ -11902,19 +12137,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this53 = this;
+          var _this54 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this53.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this53.userData));
+              _this54.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this54.userData));
 
-              _this53.LoggedIn();
+              _this54.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this53.LoggedOut();
+              _this54.LoggedOut();
             }
           });
         }
@@ -11933,44 +12168,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this54 = this;
+          var _this55 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this54.isLoading = false;
+            _this55.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this55 = this;
+          var _this56 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this55.isLoading = false;
+            _this56.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this56 = this;
+          var _this57 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this56.isLoading = false;
+            _this57.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this57 = this;
+          var _this58 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this57.isLoading = false;
+            _this58.isLoading = false;
           });
         }
       }, {
@@ -11992,16 +12227,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this58 = this;
+          var _this59 = this;
 
           console.log(displayName);
           this.overlay = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this58.isLoading = false;
-            _this58.user.Name = displayName;
-            _this58.user.DOB = null;
-            _this58.user.Phone = null;
-            _this58.return = _this58.FormService.createUserCustomer(_this58.user).then(function (data) {
+            _this59.isLoading = false;
+            _this59.user.Name = displayName;
+            _this59.user.DOB = null;
+            _this59.user.Phone = null;
+            _this59.return = _this59.FormService.createUserCustomer(_this59.user).then(function (data) {
               console.log(data);
             });
           });
