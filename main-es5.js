@@ -4011,14 +4011,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function signUp(displayName, email, pass) {
           var _this20 = this;
 
-          console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
             _this20.isLoading = false;
             _this20.user.Name = displayName;
             _this20.user.DOB = null;
             _this20.user.Phone = null;
-            _this20.return = _this20.fillFormsService.createUserCustomer(_this20.user).then(function (data) {
-              _this20.overlay = true;
+            _this20.return = _this20.fillFormsService.createUserCustomer(_this20.user).then(function (user) {
+              if (_this20.user != null) {
+                _this20.isLoading = false;
+                _this20.overlay = true;
+              }
             });
           });
         }

@@ -2493,14 +2493,16 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
         this.newUser = false;
     }
     signUp(displayName, email, pass) {
-        console.log(displayName);
         this.authService.SignUp(email, pass).then((data) => {
             this.isLoading = false;
             this.user.Name = displayName;
             this.user.DOB = null;
             this.user.Phone = null;
-            this.return = this.fillFormsService.createUserCustomer(this.user).then((data) => {
-                this.overlay = true;
+            this.return = this.fillFormsService.createUserCustomer(this.user).then((user) => {
+                if (this.user != null) {
+                    this.isLoading = false;
+                    this.overlay = true;
+                }
             });
         });
     }
@@ -2632,7 +2634,7 @@ let FormsService = class FormsService {
             title: user.title = "Mr",
         };
         return userRef.set(userData, {
-            merge: true
+            merge: true,
         });
     }
     getUser(uid) {
