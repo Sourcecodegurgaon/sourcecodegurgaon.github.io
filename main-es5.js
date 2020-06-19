@@ -141,7 +141,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  \r\n\r\n  <mat-card class=\"thanku-section\">\r\n    <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\r\n  </mat-card>\r\n  \r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span class=\"outputText\" ></span>&nbsp;No Match Listing(s)</p>\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\">You have<span\r\n    style=\"color:red\">{{matchedProperties.length}}</span>&nbsp;&nbsp;Matched Nestimates created by<span style=\"color:red\"> Home Owner</span></p>\r\n \r\n \r\n  <mat-form-field class=\"example-full-width\">\r\n    <mat-label>Sort By</mat-label>\r\n    <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\r\n      class=\"example-full-width select-sortby\">\r\n      <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\r\n      <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\r\n      <mat-option value='date'>Listed date</mat-option>\r\n      <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  \r\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\r\n    <mat-card>\r\n      <span class=\"heading-nestimate card-heading-font\">Nestimate by  {{property.usertitle}} {{property.username | shortName}}</span>\r\n    </mat-card>\r\n    <mat-card class=\"mat-card mt-2\">\r\n      <div class=\"mat-card-content-new-content\">\r\n        <div class=\"mat-card-content-image\">\r\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n        </div>\r\n        <div class=\"mat-card-content-text\">\r\n          <div class=\"price-range\">\r\n            <span class=\"heading-nestimate\">Their Desired Price</span> <br>\r\n            <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\r\n          </div>\r\n          <div class=\"other-text\">\r\n            <p class=\"heading-nestimate\">Post Code:<span\r\n                class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n            <p class=\"heading-nestimate\">Poperty Type:<span\r\n                class=\"outputText\">{{property.PropertyType}}</span></p>\r\n          </div>\r\n          <div class=\"button-container\">\r\n            <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/\r\n            {{property.Lookingpostcode}}/\r\n            {{property.Lookingstate}}/\r\n            {{property.LookingTown}}/\r\n            {{property.norooms}}/\r\n            {{property.PropertyCondition}}/\r\n            {{property.MaxAmount}}/\r\n            {{property.LookingAddress}}/\r\n            {{property.ownership}}/\r\n            {{property.PropertyType}}/\r\n            {{property.features}}/\r\n            {{property.UserId}}/\r\n            {{property.MinAmount}}/\r\n            {{property.Maxbathrooms}}/\r\n            {{property.Maxrooms}}/\r\n            {{property.Maxreception}}'>See Details</button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </mat-card>\r\n  </div>\r\n  \r\n  \r\n\r\n  <div *ngIf=\"unmatchedProperties.length\">\r\n    <div class=\"other-container\">\r\n    <p class=\"mt-3 main-heading heading-nestimate\"><span class=\"outputText\"></span>Other Nestimates that may be of interest to you</p>\r\n     </div>\r\n  <mat-form-field class=\"example-full-width\">\r\n    <mat-label>Sort By</mat-label>\r\n    <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\r\n      class=\"example-full-width\">\r\n      <mat-option value='low' (click)=\"unmatchedlowtohigh()\">Price Range - Low to High</mat-option>\r\n      <mat-option value='high' (click)=\"unmatchedhightoLow()\">Price Range - High to Low</mat-option>\r\n      <mat-option value='date'>Listed date</mat-option>\r\n      <mat-option value='rooms' (click)=\"unmatchedroomshightolow()\">No of Rooms</mat-option>\r\n      <mat-option value='Distance' (click)=\"unmatchedDistance()\">Distance</mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n  \r\n    <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\r\n    <mat-card>\r\n      <span class=\"heading-nestimate card-heading-font\">Nestimate by  {{property.detail.usertitle}} {{property.detail.username | shortName}}</span>\r\n    </mat-card>\r\n    <mat-card class=\"mat-card mt-2\">\r\n      <div class=\"mat-card-content-new-content\">\r\n        <div class=\"mat-card-content-image\">\r\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n        </div>\r\n        <div class=\"mat-card-content-text\">\r\n          <div class=\"price-range\">\r\n            <span class=\"heading-nestimate\">Their Desired Price</span> <br>\r\n            <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\r\n          </div>\r\n          <div class=\"other-text\">\r\n            <p class=\"heading-nestimate\">Distance:<span\r\n                class=\"outputText\">{{property.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\r\n            <p class=\"heading-nestimate\">Poperty Type:<span\r\n                class=\"outputText\">{{property.detail.PropertyType}}</span></p>\r\n          </div>\r\n          <div class=\"button-container\">\r\n            <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{property.detail.Lookingpostcode}}/\r\n            {{property.detail.Lookingstate}}/\r\n            {{property.detail.LookingTown}}/\r\n            {{property.detail.norooms}}/\r\n            {{property.detail.PropertyCondition}}/\r\n            {{property.detail.MaxAmount}}/\r\n            {{property.detail.LookingAddress}}/\r\n            {{property.detail.ownership}}/\r\n            {{property.detail.PropertyType}}/\r\n            {{property.detail.features}}/\r\n        {{property.detail.UserId}}/\r\n        {{property.detail.MinAmount}}/\r\n        {{property.detail.Maxbathrooms}}/\r\n        {{property.detail.Maxrooms}}/\r\n        {{property.detail.Maxreception}}'>See Details</button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </mat-card>\r\n  </div>\r\n\r\n\r\n</div>\r\n\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n\r\n\r\n  <mat-card class=\"thanku-section\">\r\n    <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\r\n  </mat-card>\r\n\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\r\n      class=\"outputText\"></span>&nbsp;No Match Listing(s)</p>\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\">You have<span\r\n      style=\"color:red\">{{matchedProperties.length}}</span>&nbsp;&nbsp;Matched Nestimates created by<span\r\n      style=\"color:red\"> Home Owner</span></p>\r\n\r\n\r\n  <mat-form-field class=\"example-full-width\">\r\n    <mat-label>Sort By</mat-label>\r\n    <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\r\n      class=\"example-full-width select-sortby\">\r\n      <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\r\n      <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\r\n      <mat-option value='date'>Listed date</mat-option>\r\n      <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\r\n    </mat-select>\r\n  </mat-form-field>\r\n\r\n\r\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\r\n    <mat-card>\r\n      <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\r\n        {{property.detail.username | shortName}}</span>\r\n    </mat-card>\r\n    <mat-card class=\"mat-card mt-2\">\r\n      <div class=\"mat-card-content-new-content\">\r\n        <div class=\"mat-card-content-image\">\r\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n        </div>\r\n        <div class=\"mat-card-content-text\">\r\n          <div class=\"price-range\">\r\n            <span class=\"heading-nestimate\">Their Desired Price</span> <br>\r\n            <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\r\n          </div>\r\n          <div class=\"other-text\">\r\n            <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\r\n            </p>\r\n            &nbsp; &nbsp;\r\n            <p class=\"heading-nestimate\">Poperty Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\r\n            </p>\r\n          </div>\r\n          <div class=\"button-container\">\r\n            <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/\r\n            {{property.detail.Lookingpostcode}}/\r\n            {{property.detail.Lookingstate}}/\r\n            {{property.detail.LookingTown}}/\r\n            {{property.detail.norooms}}/\r\n            {{property.detail.PropertyCondition}}/\r\n            {{property.detail.MaxAmount}}/\r\n            {{property.detail.LookingAddress}}/\r\n            {{property.detail.ownership}}/\r\n            {{property.detail.PropertyType}}/\r\n            {{property.detail.features}}/\r\n            {{property.detail.UserId}}/\r\n            {{property.detail.MinAmount}}/\r\n            {{property.detail.Maxbathrooms}}/\r\n            {{property.detail.Maxrooms}}/\r\n            {{property.detail.Maxreception}}/\r\n            {{property.propertyId}}'>See Details</button>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </mat-card>\r\n  </div>\r\n\r\n\r\n\r\n  <div *ngIf=\"unmatchedProperties.length\">\r\n    <div class=\"other-container\">\r\n      <p class=\"mt-3 main-heading heading-nestimate\"><span class=\"outputText\"></span>Other Nestimates that may be of\r\n        interest to you</p>\r\n    </div>\r\n    <mat-form-field class=\"example-full-width\">\r\n      <mat-label>Sort By</mat-label>\r\n      <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\r\n        class=\"example-full-width\">\r\n        <mat-option value='low' (click)=\"unmatchedlowtohigh()\">Price Range - Low to High</mat-option>\r\n        <mat-option value='high' (click)=\"unmatchedhightoLow()\">Price Range - High to Low</mat-option>\r\n        <mat-option value='date'>Listed date</mat-option>\r\n        <mat-option value='rooms' (click)=\"unmatchedroomshightolow()\">No of Rooms</mat-option>\r\n        <mat-option value='Distance' (click)=\"unmatchedDistance()\">Distance</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n\r\n\r\n    <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\r\n      <p *ngIf=\"checkExpressForValue(property.propertyId)\">Already expressed</p>\r\n      <mat-card>\r\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\r\n          {{property.detail.username | shortName}}</span>\r\n      </mat-card>\r\n      <mat-card class=\"mat-card mt-2\">\r\n        <div class=\"mat-card-content-new-content\">\r\n          <div class=\"mat-card-content-image\">\r\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n          </div>\r\n          <div class=\"mat-card-content-text\">\r\n            <div class=\"price-range\">\r\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\r\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\r\n            </div>\r\n            <div class=\"other-text\">\r\n              <p class=\"heading-nestimate\">Distance:<span\r\n                  class=\"outputText\">{{property.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\r\n              <p class=\"heading-nestimate\">Poperty Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\r\n              </p>\r\n            </div>\r\n            <div class=\"button-container\">\r\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{property.detail.Lookingpostcode}}/\r\n            {{property.detail.Lookingstate}}/\r\n            {{property.detail.LookingTown}}/\r\n            {{property.detail.norooms}}/\r\n            {{property.detail.PropertyCondition}}/\r\n            {{property.detail.MaxAmount}}/\r\n            {{property.detail.LookingAddress}}/\r\n            {{property.detail.ownership}}/\r\n            {{property.detail.PropertyType}}/\r\n            {{property.detail.features}}/\r\n        {{property.detail.UserId}}/\r\n        {{property.detail.MinAmount}}/\r\n        {{property.detail.Maxbathrooms}}/\r\n        {{property.detail.Maxrooms}}/\r\n        {{property.detail.Maxreception}}/\r\n        {{property.propertyId}}'>See Details</button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </mat-card>\r\n    </div>\r\n\r\n\r\n  </div>\r\n\r\n</div>\r\n";
     /***/
   },
 
@@ -161,7 +161,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<div class=\"property-selected-detail-background\">\r\n<div class=\"container property-detail-container\">\r\n  <h3 class=\"property-detail-h3\">{{title}} {{unNamed | shortName}}</h3>\r\n  <div class=\"wrapper-detail-container\">\r\n    <div id=\"demo\">\r\n      <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\r\n    </div>\r\n\r\n\r\n    <div class=\"streetname\">\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Desired  Price</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{MaxAmount}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Postcode</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingpostcode}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Streetname</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\r\n      </mat-card>\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bedrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxrooms}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{ownership}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bathrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxbathrooms}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Reception Rooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{Maxreception}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Features</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p outputText\">{{features}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n\r\n\r\n    <div class=\"selected-button m-3\">\r\n      <button mat-raised-button color=\"primary\" (click)=\"backClicked()\">Back</button>\r\n      <button mat-raised-button color=\"primary\" (click)=\"Overlayopen()\" *ngIf=\"express\">Express Interest</button>\r\n      <button mat-raised-button color=\"primary\"(click)=\"Disablebutton\"disabled *ngIf=\"datastored\">You have</button>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n</div>\r\n\r\n\r\n<div class=\"continue-form\" *ngIf=\"overlay\">\r\n\r\n  <div class=\"continue-form-data\">\r\n  <div class=\"nestimate-logo\">\r\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\r\n\r\n  </div>\r\n  <div class=\"continue-text\">\r\n    <p class=\"overlay-text\">Thank you.Please sit back as the seller will now receive a notificationof your Nestimate.Depending upon their decision to pursue or decline,we will send you an update.Your personal details will not be sahred will the seller however they will be shared with an estate agent selected  by seller,if they are interested to pursue your Nestimate</p>\r\n\r\n    \r\n  </div>\r\n  <div class=\"continue-button\">\r\n\r\n    <div class=\"continue-button-container\" (click)=\"submitForm()\">\r\n      OK\r\n    </div> \r\n <div class=\"continue-button mt-2\" (click)=\"continueClose()\">\r\n    \r\n    <div class=\"continue-button-container\">\r\n      CANCEL\r\n    </div> \r\n  </div>\r\n</div>\r\n\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<div class=\"property-selected-detail-background\">\r\n  <div class=\"container property-detail-container\">\r\n    <h3 class=\"property-detail-h3\">{{title}} {{unNamed | shortName}}</h3>\r\n    <div class=\"wrapper-detail-container\">\r\n      <div id=\"demo\">\r\n        <img src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\r\n      </div>\r\n\r\n\r\n      <div class=\"streetname\">\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Desired Price</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{MaxAmount}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Postcode</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingpostcode}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Streetname</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\r\n        </mat-card>\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bedrooms</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{Maxrooms}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{ownership}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bathrooms</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{Maxbathrooms}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">No of Reception Rooms</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{Maxreception}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n        <mat-card class=\"Mat-card-div\">\r\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property Features</mat-card-title>\r\n          <mat-card-subtitle class=\"details-output-p outputText\">{{features}}</mat-card-subtitle>\r\n        </mat-card>\r\n\r\n\r\n\r\n\r\n        <div class=\"selected-button m-3\">\r\n          <button mat-raised-button color=\"primary\" (click)=\"backClicked()\">Back</button>\r\n          <button mat-raised-button color=\"primary\" (click)=\"Overlayopen()\" *ngIf=\"express\">Express Interest</button>\r\n          <button mat-raised-button color=\"primary\"   *ngIf=\"datastored\">You\r\n            have</button>\r\n        </div>\r\n\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n\r\n  <div class=\"continue-form\" *ngIf=\"overlay\">\r\n\r\n    <div class=\"continue-form-data\">\r\n      <div class=\"nestimate-logo\">\r\n        <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\r\n\r\n      </div>\r\n      <div class=\"continue-text\">\r\n        <p class=\"overlay-text\">Thank you.Please sit back as the seller will now receive a notificationof your\r\n          Nestimate.Depending upon their decision to pursue or decline,we will send you an update.Your personal details\r\n          will not be sahred will the seller however they will be shared with an estate agent selected by seller,if they\r\n          are interested to pursue your Nestimate</p>\r\n\r\n\r\n      </div>\r\n      <div class=\"continue-button\" (click)=\"submitForm()\">\r\n        <div class=\"continue-button-container\">\r\n          OK\r\n        </div>\r\n\r\n        <div class=\" continue-button mt-2\" (click)=\"continueClose()\">\r\n          <div class=\"continue-button-container\">\r\n            CANCEL\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n";
     /***/
   },
 
@@ -221,7 +221,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"nestimate-matches\">\n\n<div class=\"button\">\n\n<div class=\"matched\">\n<div class=\"matched-text heading-nestimate\" routerLink=\"/MatchesNestimate\">Matched <br>Nestimates</div>\n</div>\n<div class=\"unmatvhed\">\n    <div class=\"matched-text heading-nestimate\" routerLink=\"/Unmatched\">Nestimates that may interest you</div>\n\n</div>\n</div>\n\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"nestimate-matches\">\r\n\r\n<div class=\"button\">\r\n\r\n<div class=\"matched\">\r\n<div class=\"matched-text heading-nestimate\" routerLink=\"/MatchesNestimate\">Matched <br>Nestimates</div>\r\n</div>\r\n<div class=\"unmatvhed\">\r\n    <div class=\"matched-text heading-nestimate\" routerLink=\"/Unmatched\">Nestimates that may interest you</div>\r\n\r\n</div>\r\n</div>\r\n\r\n</div>\r\n";
     /***/
   },
 
@@ -241,7 +241,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n  \n\n    <mat-card class=\"thanku-section\" >\n      <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\"  class=\"match-image\">  \n    </mat-card >\n    \n    <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span class=\"outputText\" ></span>&nbsp;No Match Listing(s)</p>\n   \n    <div *ngIf=\"matchedProperties.length\">\n    \n      <section id=\"matchproperties\">\n        <div class=\"match-section\" routerLink='/buyerSelectedPropertyDetail/\n      {{property.Lookingpostcode}}/\n      {{property.Lookingstate}}/\n      {{property.LookingTown}}/\n      {{property.norooms}}/\n      {{property.PropertyCondition}}/\n      {{property.MaxAmount}}/\n      {{property.LookingAddress}}/\n      {{property.ownership}}/\n      {{property.PropertyType}}/\n      {{property.features}}/\n      {{property.UserId}}/\n      {{property.MinAmount}}/\n      {{property.Maxbathrooms}}/\n      {{property.Maxrooms}}/\n      {{property.Maxreception}}\n      ' *ngFor=\"let property of matchedProperties\">\n     \n          <mat-card class=\"mat-card-matches\">\n            <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\n            \n            <div class=\"match-content\">\n              <p><span class=\"heading-nestimate\">Streetname:</span><span class=\"paragraph-color\">{{property.LookingAddress}}</span><br>\n                 <span class=\"heading-nestimate\">Post Code:</span><span class=\"paragraph-color\"> {{property.Lookingpostcode }}</span><br>\n                 <span class=\"heading-nestimate\">Price Range:</span><span class=\"paragraph-color\">{{property.MaxAmount}}</span><br>\n                 <span class=\"heading-nestimater\">Property Type:</span><span class=\"paragraph-color\">{{property.PropertyType}}</span></p>\n            </div>\n          </mat-card>\n        </div>\n      </section>\n    </div>\n \n  </div>\n  \n";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  \r\n\r\n    <mat-card class=\"thanku-section\" >\r\n      <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\"  class=\"match-image\">  \r\n    </mat-card >\r\n    \r\n    <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span class=\"outputText\" ></span>&nbsp;No Match Listing(s)</p>\r\n   \r\n    <div *ngIf=\"matchedProperties.length\">\r\n    \r\n      <section id=\"matchproperties\">\r\n        <div class=\"match-section\" routerLink='/buyerSelectedPropertyDetail/\r\n      {{property.Lookingpostcode}}/\r\n      {{property.Lookingstate}}/\r\n      {{property.LookingTown}}/\r\n      {{property.norooms}}/\r\n      {{property.PropertyCondition}}/\r\n      {{property.MaxAmount}}/\r\n      {{property.LookingAddress}}/\r\n      {{property.ownership}}/\r\n      {{property.PropertyType}}/\r\n      {{property.features}}/\r\n      {{property.UserId}}/\r\n      {{property.MinAmount}}/\r\n      {{property.Maxbathrooms}}/\r\n      {{property.Maxrooms}}/\r\n      {{property.Maxreception}}\r\n      ' *ngFor=\"let property of matchedProperties\">\r\n     \r\n          <mat-card class=\"mat-card-matches\">\r\n            <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n            \r\n            <div class=\"match-content\">\r\n              <p><span class=\"heading-nestimate\">Streetname:</span><span class=\"paragraph-color\">{{property.LookingAddress}}</span><br>\r\n                 <span class=\"heading-nestimate\">Post Code:</span><span class=\"paragraph-color\"> {{property.Lookingpostcode }}</span><br>\r\n                 <span class=\"heading-nestimate\">Price Range:</span><span class=\"paragraph-color\">{{property.MaxAmount}}</span><br>\r\n                 <span class=\"heading-nestimater\">Property Type:</span><span class=\"paragraph-color\">{{property.PropertyType}}</span></p>\r\n            </div>\r\n          </mat-card>\r\n        </div>\r\n      </section>\r\n    </div>\r\n \r\n  </div>\r\n  \r\n";
     /***/
   },
 
@@ -261,7 +261,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n  \n\n    <mat-card class=\"thanku-section\" >\n      <img mat-card-image src=\"../../../../../../assets/Images/unmatchedtop.jpg\"  class=\"match-image\">  \n    </mat-card >\n    \n   \n    <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\" ><span class=\"outputText\">{{matchedProperties.length}}</span>&nbsp;Match Listing(s)</p>\n \n    <div *ngIf=\"unmatchedProperties.length\">\n      <p class=\"mt-3 main-heading heading-nestimate\"><span class=\"outputText\">{{unmatchedProperties.length}}</span> &nbsp;Other listings that may interest</p>\n   \n      <section id=\"propertyinlondon\">\n        <div class=\"match-section\" routerLink='/buyerSelectedPropertyDetail/{{property.detail.Lookingpostcode}}/\n      {{property.detail.Lookingstate}}/\n      {{property.detail.LookingTown}}/\n      {{property.detail.norooms}}/\n      {{property.detail.PropertyCondition}}/\n      {{property.detail.MaxAmount}}/\n      {{property.detail.LookingAddress}}/\n      {{property.detail.ownership}}/\n      {{property.detail.PropertyType}}/\n      {{property.detail.features}}/\n  {{property.detail.UserId}}/\n  {{property.detail.MinAmount}}/\n  {{property.detail.Maxbathrooms}}/\n  {{property.detail.Maxrooms}}/\n  {{property.detail.Maxreception}}\n  \n      ' *ngFor=\"let property of unmatchedProperties\">\n          <mat-card class=\"mat-card-matches\">\n            <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\n            <div class=\"match-content\">\n              <p><span class=\"heading-nestimate\">Streetname:</span><span class=\"paragraph-color\">{{property.detail.LookingAddress}}</span><br>\n                 <span class=\"heading-nestimate\">Post Code:</span><span class=\"paragraph-color\"> {{property.detail.Lookingpostcode }}</span><br>\n                 <span  class=\"heading-nestimate\">Distance:</span><span class=\"paragraph-color\">{{property.distance | number:'1.1-1'}}\n                  (kms)</span><br>\n                  <span class=\"heading-nestimate\">Price Range:</span><span class=\"paragraph-color\">{{property.detail.MaxAmount}}</span><br>\n                  <span class=\"heading-nestimater\">Property Type:</span><span class=\"paragraph-color\">{{property.detail.PropertyType}}</span></p>\n            </div>\n          </mat-card>\n  \n  \n  \n        </div>\n      </section>\n    </div>\n  </div>\n  \n\n";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n  \r\n\r\n    <mat-card class=\"thanku-section\" >\r\n      <img mat-card-image src=\"../../../../../../assets/Images/unmatchedtop.jpg\"  class=\"match-image\">  \r\n    </mat-card >\r\n    \r\n   \r\n    <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\" ><span class=\"outputText\">{{matchedProperties.length}}</span>&nbsp;Match Listing(s)</p>\r\n \r\n    <div *ngIf=\"unmatchedProperties.length\">\r\n      <p class=\"mt-3 main-heading heading-nestimate\"><span class=\"outputText\">{{unmatchedProperties.length}}</span> &nbsp;Other listings that may interest</p>\r\n   \r\n      <section id=\"propertyinlondon\">\r\n        <div class=\"match-section\" routerLink='/buyerSelectedPropertyDetail/{{property.detail.Lookingpostcode}}/\r\n      {{property.detail.Lookingstate}}/\r\n      {{property.detail.LookingTown}}/\r\n      {{property.detail.norooms}}/\r\n      {{property.detail.PropertyCondition}}/\r\n      {{property.detail.MaxAmount}}/\r\n      {{property.detail.LookingAddress}}/\r\n      {{property.detail.ownership}}/\r\n      {{property.detail.PropertyType}}/\r\n      {{property.detail.features}}/\r\n  {{property.detail.UserId}}/\r\n  {{property.detail.MinAmount}}/\r\n  {{property.detail.Maxbathrooms}}/\r\n  {{property.detail.Maxrooms}}/\r\n  {{property.detail.Maxreception}}\r\n  \r\n      ' *ngFor=\"let property of unmatchedProperties\">\r\n          <mat-card class=\"mat-card-matches\">\r\n            <img  src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images \">\r\n            <div class=\"match-content\">\r\n              <p><span class=\"heading-nestimate\">Streetname:</span><span class=\"paragraph-color\">{{property.detail.LookingAddress}}</span><br>\r\n                 <span class=\"heading-nestimate\">Post Code:</span><span class=\"paragraph-color\"> {{property.detail.Lookingpostcode }}</span><br>\r\n                 <span  class=\"heading-nestimate\">Distance:</span><span class=\"paragraph-color\">{{property.distance | number:'1.1-1'}}\r\n                  (kms)</span><br>\r\n                  <span class=\"heading-nestimate\">Price Range:</span><span class=\"paragraph-color\">{{property.detail.MaxAmount}}</span><br>\r\n                  <span class=\"heading-nestimater\">Property Type:</span><span class=\"paragraph-color\">{{property.detail.PropertyType}}</span></p>\r\n            </div>\r\n          </mat-card>\r\n  \r\n  \r\n  \r\n        </div>\r\n      </section>\r\n    </div>\r\n  </div>\r\n  \r\n\r\n";
     /***/
   },
 
@@ -321,7 +321,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n\r\n\r\n  <mat-card class=\"thanku-section\">\r\n    <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\r\n  </mat-card>\r\n\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\r\n      class=\"outputText\"></span>&nbsp;No Match Listing</p>\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\">You have<span\r\n      style=\"color:red\">{{matchedProperties.length}}</span>&nbsp;&nbsp;Matched Nestimates created by<span style=\"color:red\"> Home Seekers</span></p>\r\n  <div>\r\n    <mat-form-field class=\"example-full-width\">\r\n      <mat-label>Sort By</mat-label>\r\n      <mat-select name=\"ChainStatus\"  value=\"ChainStatus\"\r\n        class=\"example-full-width\">\r\n        <mat-option value='Search Radius' (click)=\"matchedsearch()\">Search Radius</mat-option>\r\n        <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\r\n        <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\r\n        <mat-option value='date'>Listed date</mat-option>\r\n        <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n  \r\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"matchedProperties.length\">\r\n    <div class=\"mat-card-content-new\" *ngFor=\"let property of matchedProperties\">\r\n      <mat-card>\r\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.title}} {{property.username  | shortName}}</span>\r\n      </mat-card>\r\n      <mat-card>\r\n        <div class=\"mat-card-content-new-content\">\r\n\r\n          <div class=\"mat-card-content-image\">\r\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n\r\n          </div>\r\n\r\n          <div class=\"mat-card-content-text\">\r\n\r\n            <div class=\"price-range\">\r\n\r\n              <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n              <span class=\"outputText price-font\">&pound;{{property.MinAmount}} -\r\n                &pound;{{property.MaxAmount}}</span>\r\n            </div>\r\n\r\n            <div class=\"other-text\">\r\n              <p class=\"heading-nestimate\">Chain Status:<span\r\n                  class=\"outputText\">{{property.ChainStatus}}</span></p>&nbsp; &nbsp;\r\n              <p class=\"heading-nestimate\">Poperty Type:<span\r\n                  class=\"outputText\">{{property.PropertyType}}</span></p>\r\n            </div>\r\n\r\n            <div class=\"button-container\">\r\n\r\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\r\n              {{property.MaxAmount}}\r\n              /{{property.Lookingpostcode}}\r\n              /{{property.LookingStreetname}}\r\n              /{{property.Position}}\r\n              /{{property.PropertyType}}\r\n              /{{property.Roomsmax}}\r\n              /{{property.Ownership}}\r\n              /{{property.Conditions}}\r\n                /{{property.Maxbathroom}}\r\n                 /{{property.Maxreception}}\r\n                /{{property.features}}\r\n              /{{property.UserId}}\r\n              /{{property.FinancialPosition}}'>See Details</button>\r\n            </div>\r\n\r\n\r\n\r\n\r\n\r\n          </div>\r\n\r\n\r\n\r\n\r\n\r\n        </div>\r\n\r\n      </mat-card>\r\n\r\n\r\n    </div>\r\n  </section><br><br>\r\n\r\n    <section id=\"youmaylike\">\r\n      <div class=\"other-container\">\r\n      <p class=\"mt-3 main-heading heading-nestimate\"><span clas=\"outputText\"></span>Other Nestimates that may be of interest to you</p>\r\n    </div>\r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label>Sort By</mat-label>\r\n            <mat-select name=\"ChainStatus\" \r\n              class=\"example-full-width\">\r\n              \r\n              <mat-option value='Search Radius' (click)=\"unmatchedmatchedsearch()\">Search Radius</mat-option>\r\n              <mat-option value='low' (click)=\"unmatchedlowtohigh()\">Price Range - Low to High</mat-option>\r\n              <mat-option value='high' (click)=\"unmatchedhightoLow()\">Price Range - High to Low</mat-option>\r\n              <mat-option value='date'>Listed date</mat-option>\r\n              <mat-option value='rooms' (click)=\"unmatchedroomshightolow()\">No of Rooms</mat-option>\r\n              <mat-option value='distance' (click)=\"unmatcheddistance()\">Distance</mat-option>\r\n            </mat-select>\r\n          </mat-form-field>\r\n     \r\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\r\n        <mat-card>\r\n          <span class=\"heading-nestimate card-heading-font\">Nestimate by \r\n          {{property.detail.title}} {{property.detail.username | shortName}}\r\n            \r\n            </span>\r\n        </mat-card>\r\n      \r\n        <mat-card>\r\n          <div class=\"mat-card-content-new-content\">\r\n\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n\r\n            </div>\r\n\r\n            <div class=\"mat-card-content-text\">\r\n\r\n              <div class=\"price-range\">\r\n\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\r\n                  &pound;{{property.detail.MaxAmount}}</span>\r\n              </div>\r\n\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate\">Chain Status:<span\r\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate\">Poperty Type:<span\r\n                    class=\"outputText\">{{property.detail.PropertyType}}</span></p>\r\n              </div>\r\n\r\n              <div class=\"button-container\">\r\n\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\r\n      {{property.detail.MaxAmount}}\r\n      /{{property.detail.Lookingpostcode}}\r\n      /{{property.detail.LookingStreetname}}\r\n      /{{property.detail.Position}}\r\n      /{{property.detail.PropertyType}}\r\n      /{{property.detail.Roomsmax}}\r\n      /{{property.detail.Ownership}}\r\n      /{{property.detail.Conditions}}\r\n        /{{property.detail.Maxbathroom}}\r\n         /{{property.detail.Maxreception}}\r\n        /{{property.detail.features}}\r\n      /{{property.detail.UserId}}\r\n      /{{property.detail.FinancialPosition}}'>See Details</button>\r\n              </div>\r\n\r\n\r\n\r\n\r\n\r\n            </div>\r\n\r\n\r\n\r\n\r\n\r\n          </div>\r\n\r\n        </mat-card>\r\n\r\n\r\n\r\n\r\n\r\n\r\n      </div>\r\n    </section>\r\n  </div>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\r\n\r\n\r\n  <mat-card class=\"thanku-section\">\r\n    <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\r\n  </mat-card>\r\n\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\r\n      class=\"outputText\"></span>&nbsp;No Match Listing</p>\r\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\">You have<span\r\n      style=\"color:red\">{{matchedProperties.length}}</span>&nbsp;&nbsp;Matched Nestimates created by<span style=\"color:red\"> Home Seekers</span></p>\r\n  <div>\r\n    <mat-form-field class=\"example-full-width\">\r\n      <mat-label>Sort By</mat-label>\r\n      <mat-select name=\"ChainStatus\"  value=\"ChainStatus\"\r\n        class=\"example-full-width\">\r\n        <mat-option value='Search Radius' (click)=\"matchedsearch()\">Search Radius</mat-option>\r\n        <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\r\n        <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\r\n        <mat-option value='date'>Listed date</mat-option>\r\n        <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\r\n      </mat-select>\r\n    </mat-form-field>\r\n  \r\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"matchedProperties.length\">\r\n    <div class=\"mat-card-content-new\" *ngFor=\"let property of matchedProperties\">\r\n      <mat-card>\r\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.title}} {{property.detail.username  | shortName}}</span>\r\n      </mat-card>\r\n      <mat-card>\r\n        <div class=\"mat-card-content-new-content\">\r\n\r\n          <div class=\"mat-card-content-image\">\r\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n\r\n          </div>\r\n\r\n          <div class=\"mat-card-content-text\">\r\n\r\n            <div class=\"price-range\">\r\n\r\n              <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n              <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\r\n                &pound;{{property.detail.MaxAmount}}</span>\r\n            </div>\r\n\r\n            <div class=\"other-text\">\r\n              <p class=\"heading-nestimate\">Chain Status:<span\r\n                  class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\r\n              <p class=\"heading-nestimate\">Poperty Type:<span\r\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></p>\r\n            </div>\r\n\r\n            <div class=\"button-container\">\r\n\r\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\r\n              {{property.detail.MaxAmount}}\r\n              /{{property.detail.Lookingpostcode}}\r\n              /{{property.detail.LookingStreetname}}\r\n              /{{property.detail.Position}}\r\n              /{{property.detail.PropertyType}}\r\n              /{{property.detail.Roomsmax}}\r\n              /{{property.detail.Ownership}}\r\n              /{{property.detail.Conditions}}\r\n                /{{property.detail.Maxbathroom}}\r\n                 /{{property.detail.Maxreception}}\r\n                /{{property.detail.features}}\r\n              /{{property.detail.UserId}}\r\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}'>See Details</button>\r\n            </div>\r\n\r\n\r\n\r\n\r\n\r\n          </div>\r\n\r\n\r\n\r\n\r\n\r\n        </div>\r\n\r\n      </mat-card>\r\n\r\n\r\n    </div>\r\n  </section><br><br>\r\n\r\n    <section id=\"youmaylike\">\r\n      <div class=\"other-container\">\r\n      <p class=\"mt-3 main-heading heading-nestimate\"><span clas=\"outputText\"></span>Other Nestimates that may be of interest to you</p>\r\n    </div>\r\n          <mat-form-field class=\"example-full-width\">\r\n            <mat-label>Sort By</mat-label>\r\n            <mat-select name=\"ChainStatus\" \r\n              class=\"example-full-width\">\r\n              \r\n              <mat-option value='Search Radius' (click)=\"unmatchedmatchedsearch()\">Search Radius</mat-option>\r\n              <mat-option value='low' (click)=\"unmatchedlowtohigh()\">Price Range - Low to High</mat-option>\r\n              <mat-option value='high' (click)=\"unmatchedhightoLow()\">Price Range - High to Low</mat-option>\r\n              <mat-option value='date'>Listed date</mat-option>\r\n              <mat-option value='rooms' (click)=\"unmatchedroomshightolow()\">No of Rooms</mat-option>\r\n              <mat-option value='distance' (click)=\"unmatcheddistance()\">Distance</mat-option>\r\n            </mat-select>\r\n          </mat-form-field>\r\n     \r\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\r\n        <mat-card>\r\n          <span class=\"heading-nestimate card-heading-font\">Nestimate by \r\n          {{property.detail.title}} {{property.detail.username | shortName}}\r\n            \r\n            </span>\r\n        </mat-card>\r\n      \r\n        <mat-card>\r\n          <div class=\"mat-card-content-new-content\">\r\n\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n\r\n            </div>\r\n\r\n            <div class=\"mat-card-content-text\">\r\n\r\n              <div class=\"price-range\">\r\n\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\r\n                  &pound;{{property.detail.MaxAmount}}</span>\r\n              </div>\r\n\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate\">Chain Status:<span\r\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate\">Poperty Type:<span\r\n                    class=\"outputText\">{{property.detail.PropertyType}}</span></p>\r\n              </div>\r\n\r\n              <div class=\"button-container\">\r\n\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\r\n      {{property.detail.MaxAmount}}\r\n      /{{property.detail.Lookingpostcode}}\r\n      /{{property.detail.LookingStreetname}}\r\n      /{{property.detail.Position}}\r\n      /{{property.detail.PropertyType}}\r\n      /{{property.detail.Roomsmax}}\r\n      /{{property.detail.Ownership}}\r\n      /{{property.detail.Conditions}}\r\n        /{{property.detail.Maxbathroom}}\r\n         /{{property.detail.Maxreception}}\r\n        /{{property.detail.features}}\r\n      /{{property.detail.UserId}}\r\n      /{{property.detail.FinancialPosition}}/{{property.propertyId}}'>See Details</button>\r\n              </div>\r\n\r\n\r\n\r\n\r\n\r\n            </div>\r\n\r\n\r\n\r\n\r\n\r\n          </div>\r\n\r\n        </mat-card>\r\n\r\n\r\n\r\n\r\n\r\n\r\n      </div>\r\n    </section>\r\n  </div>\r\n</div>";
     /***/
   },
 
@@ -361,7 +361,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isSellerSelected\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<div class=\"property-selected-detail-background\">\r\n<div class=\"container property-detail-container\">\r\n  <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3>\r\n  <div class=\"wrapper-detail-container\">\r\n    <div id=\"demo\">\r\n      <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\r\n    </div>\r\n\r\n\r\n    <div class=\"streetname\">\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Buyer Price Range</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PriceRange}}</mat-card-subtitle>\r\n      </mat-card>\r\n      \r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Post Code</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Street Name</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{LookingStreetname}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n   <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Buying Position</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Financial Position</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{FinancialPosition}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PropertyType}}</mat-card-subtitle>\r\n      </mat-card>\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bedrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Roomsmax}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ownership}}</mat-card-subtitle>\r\n      </mat-card>\r\n      \r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bathrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Maxbathroom}} </mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Reception Rooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Maxreception}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Features</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{features}}</mat-card-subtitle>\r\n      </mat-card>\r\n    </div>\r\n    <div class=\"selected-button m-3\">\r\n      <button mat-raised-button color=\"primary\" (click)=\"backClicked()\">Back</button>\r\n      <button mat-raised-button color=\"primary\"(click)=\"Overlayopen()\" >Express Interest</button>\r\n      <button mat-raised-button color=\"primary\"(click)=\"Disablebutton\" >You have</button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n</div>\r\n\r\n<div class=\"continue-form\" *ngIf=\"overlay\">\r\n\r\n  <div class=\"continue-form-data\">\r\n  <div class=\"nestimate-logo\">\r\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\r\n\r\n  </div>\r\n  <div class=\"continue-text\">\r\n    <p class=\"overlay-text\">Thank you  for expressing</p>\r\n\r\n    <p class=\"overlay-text-third\">interest in this buyers Nestimate.Please Sit back while we notify the buyer and await their rsponse.If they confirm their interest  you will be required to select a local estate agent who will contact both parties and start the process </p>\r\n  </div>\r\n  <div class=\"continue-button\">\r\n\r\n    <div class=\"continue-button-container\" (click)=\"submitForm()\">\r\n      OK\r\n    </div> \r\n <div class=\"continue-button mt-2\" (click)=\"continueClose()\">\r\n    \r\n    <div class=\"continue-button-container\">\r\n      CANCEL\r\n    </div> \r\n  </div>\r\n</div>\r\n\r\n</div>\r\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isSellerSelected\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<div class=\"property-selected-detail-background\">\r\n<div class=\"container property-detail-container\">\r\n  <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3>\r\n  <div class=\"wrapper-detail-container\">\r\n    <div id=\"demo\">\r\n      <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\r\n    </div>\r\n\r\n\r\n    <div class=\"streetname\">\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Buyer Price Range</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PriceRange}}</mat-card-subtitle>\r\n      </mat-card>\r\n      \r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Post Code</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Street Name</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{LookingStreetname}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n   <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Buying Position</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Financial Position</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{FinancialPosition}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PropertyType}}</mat-card-subtitle>\r\n      </mat-card>\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bedrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Roomsmax}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ownership}}</mat-card-subtitle>\r\n      </mat-card>\r\n      \r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bathrooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Maxbathroom}} </mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Reception Rooms</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Maxreception}}</mat-card-subtitle>\r\n      </mat-card>\r\n\r\n\r\n      <mat-card class=\"Mat-card-div\">\r\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Features</mat-card-title>\r\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{features}}</mat-card-subtitle>\r\n      </mat-card>\r\n    </div>\r\n    <div class=\"selected-button m-3\">\r\n      <button mat-raised-button color=\"primary\" (click)=\"backClicked()\">Back</button>\r\n      <button mat-raised-button color=\"primary\"(click)=\"Overlayopen()\" *ngIf=\"express\" >Express Interest</button>\r\n      <button mat-raised-button color=\"primary\"(click)=\"Disablebutton\" *ngIf=\"datastored\">You have</button>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n</div>\r\n\r\n<div class=\"continue-form\" *ngIf=\"overlay\">\r\n\r\n  <div class=\"continue-form-data\">\r\n  <div class=\"nestimate-logo\">\r\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\r\n\r\n  </div>\r\n  <div class=\"continue-text\">\r\n    <p class=\"overlay-text\">Thank you  for expressing</p>\r\n\r\n    <p class=\"overlay-text-third\">interest in this buyers Nestimate.Please Sit back while we notify the buyer and await their rsponse.If they confirm their interest  you will be required to select a local estate agent who will contact both parties and start the process </p>\r\n  </div>\r\n  <div class=\"continue-button\">\r\n\r\n    <div class=\"continue-button-container\" (click)=\"submitForm()\">\r\n      OK\r\n    </div> \r\n <div class=\"continue-button mt-2\" (click)=\"continueClose()\">\r\n    \r\n    <div class=\"continue-button-container\">\r\n      CANCEL\r\n    </div> \r\n  </div>\r\n</div>\r\n\r\n</div>\r\n";
     /***/
   },
 
@@ -421,7 +421,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"login-background\" *ngIf=\"!loggedIn\">\n \n<app-template></app-template>\n\n</div>\n<div class=\"agent-form\" *ngIf=\"loggedIn\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>Full name</mat-label>\n          <input matInput #first  name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first name=\"company\"  [(ngModel)]=\"agentSignup.company\">\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"postcode\"  [(ngModel)]=\"agentSignup.postcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first  name=\"address\" [(ngModel)]=\"agentSignup.address\">\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\">\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first name=\"phone\" [(ngModel)]=\"agentSignup.phone\" >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            <input matInput #first name=\"email\"  [(ngModel)]=\"agentSignup.email\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\">\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">\n          <button mat-raised-button color=\"primary\">Upload Image</button>\n</div>\n          \n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\" (click)=\"submitForm()\">Submit</button>\n</div>\n    </form>\n</mat-card>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"login-background\" *ngIf=\"!loggedIn\">\r\n \r\n<app-template></app-template>\r\n\r\n</div>\r\n<div class=\"agent-form\" *ngIf=\"loggedIn\">\r\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\r\n <mat-card class=\"mat-card-item\">\r\n\r\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \r\n </mat-card>   \r\n<mat-card class=\"mat-card-item\">\r\n    <form>\r\n        <mat-form-field class=\"full-width\">\r\n          <mat-label>Full name</mat-label>\r\n          <input matInput #first  name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\">\r\n        </mat-form-field>\r\n\r\n\r\n        <mat-form-field class=\"full-width\">\r\n            <mat-label>Company Name</mat-label>\r\n            <input matInput #first name=\"company\"  [(ngModel)]=\"agentSignup.company\">\r\n          </mat-form-field>\r\n\r\n\r\n          <div class=\"full-width mb-4\">\r\n          <mat-option style=\"background-color: #F5F5F5;\">\r\n            <input type=\"text\" placeholder=\"Enter Postcode\"\r\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\r\n             name=\"postcode\"  [(ngModel)]=\"agentSignup.postcode\">\r\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\r\n              <mat-option  [value]=\"item\">\r\n              </mat-option>\r\n            </mat-autocomplete>\r\n          </mat-option>\r\n        </div>\r\n\r\n\r\n          <mat-form-field class=\"full-width\">\r\n            <mat-label>Address</mat-label>\r\n            <input matInput #first  name=\"address\" [(ngModel)]=\"agentSignup.address\">\r\n          </mat-form-field>\r\n\r\n\r\n          <mat-form-field class=\"full-width\">\r\n            <mat-label>Job title</mat-label>\r\n            <input matInput #first  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\">\r\n          </mat-form-field>\r\n         \r\n\r\n          <mat-form-field class=\"full-width\">\r\n            <mat-label>Phone Number</mat-label>\r\n            <input matInput #first name=\"phone\" [(ngModel)]=\"agentSignup.phone\" >\r\n          </mat-form-field>\r\n\r\n         \r\n          <mat-form-field class=\"full-width\">\r\n            <mat-label>Email address</mat-label>\r\n            <input matInput #first name=\"email\"  [(ngModel)]=\"agentSignup.email\">\r\n          </mat-form-field>\r\n\r\n          <mat-form-field class=\"full-width\">\r\n            <mat-label>Sole Agency Fees</mat-label>\r\n            <input matInput #first  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\">\r\n          </mat-form-field>\r\n\r\n          <mat-form-field class=\"full-width\">\r\n            <mat-label>Multiple Agency Fees</mat-label>\r\n            <input matInput #first  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\">\r\n          </mat-form-field>\r\n          <label style=\"color:white\">Upload Image</label>\r\n<div class=\"file-upload\">\r\n    \r\n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\">\r\n          <button mat-raised-button color=\"primary\">Upload Image</button>\r\n</div>\r\n          \r\n<div class=\"submit-button\">\r\n<button mat-raised-button color=\"primary\" (click)=\"submitForm()\">Submit</button>\r\n</div>\r\n    </form>\r\n</mat-card>\r\n</div>";
     /***/
   },
 
@@ -581,7 +581,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\">\n    <mat-card-title class=\"title-agent-selection heading-nestimate\">Agent Selection</mat-card-title>\n\n\n    <mat-card class=\"mt-2 dark-background\">\n        <mat-card-title class=\"note-agent-selection heading-nestimate\">\n            You are nearly there! To complete the final step - select a local estate agent from the list below. They\n            will be in touch after receiving details of the Nestimate\n        </mat-card-title>\n\n\n        <div class=\"mandatory\">\n\n\n            <div class=\"mandatory-text heading-nestimate\">I consent my details being sent to the selected estate agent\n                and their partners to they can contact me.</div>\n\n            <div class=\"mandatory-slide\">\n                <mat-slide-toggle></mat-slide-toggle>\n            </div>\n\n\n\n\n        </div>\n\n    </mat-card>\n\n\n  \n    <mat-card class=\"mt-2 p-0 dark-background mb-2\">\n        <div class=\"agent-selection-radiobutton-container\">\n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"../../../../assets/Images/dexter.png\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">Dexters London </div>\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        1.50%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        1.75%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\">Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card>\n\n    <mat-card class=\"mt-2 p-0 dark-background mb-2\">\n        <div class=\"agent-selection-radiobutton-container\">\n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"../../../../assets/Images/brinkley.jpg\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">Brinkle</div>\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        1.50%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        1.75%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\">Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\">\r\n    <mat-card-title class=\"title-agent-selection heading-nestimate\">Agent Selection</mat-card-title>\r\n\r\n\r\n    <mat-card class=\"mt-2 dark-background\">\r\n        <mat-card-title class=\"note-agent-selection heading-nestimate\">\r\n            You are nearly there! To complete the final step - select a local estate agent from the list below. They\r\n            will be in touch after receiving details of the Nestimate\r\n        </mat-card-title>\r\n\r\n\r\n        <div class=\"mandatory\">\r\n\r\n\r\n            <div class=\"mandatory-text heading-nestimate\">I consent my details being sent to the selected estate agent\r\n                and their partners to they can contact me.</div>\r\n\r\n            <div class=\"mandatory-slide\">\r\n                <mat-slide-toggle></mat-slide-toggle>\r\n            </div>\r\n\r\n\r\n\r\n\r\n        </div>\r\n\r\n    </mat-card>\r\n\r\n\r\n  \r\n    <mat-card class=\"mt-2 p-0 dark-background mb-2\">\r\n        <div class=\"agent-selection-radiobutton-container\">\r\n\r\n            <div class=\"agent-selection-name\">\r\n                <div class=\"image-agent-section\">\r\n                    <img src=\"../../../../assets/Images/dexter.png\" class=\"agent-image\">\r\n                </div>\r\n                <div class=\"agent-address-section\">\r\n                    <div class=\"company-name heading-nestimate\">Dexters London </div>\r\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\r\n                </div>\r\n            </div>\r\n            <div class=\"agent-selection-commision\">\r\n\r\n                <div class=\"agency-text mb-1\">\r\n                    <div class=\"sole-agency-fees heading-nestimate\">\r\n                        Sole agency Fees</div>\r\n\r\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\r\n                        Multiple agency Fees</div>\r\n                </div>\r\n\r\n                <div class=\"agency-percentage mb-1\">\r\n                    <div class=\"sole-agency-percen heading-nestimate\">\r\n                        1.50%</div>\r\n\r\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\r\n                        1.75%</div>\r\n                </div>\r\n\r\n            </div>\r\n\r\n            <div class=\"agent-selction buttons\">\r\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\r\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\">Select Agent</button>\r\n\r\n            </div>\r\n        </div>\r\n\r\n    </mat-card>\r\n\r\n    <mat-card class=\"mt-2 p-0 dark-background mb-2\">\r\n        <div class=\"agent-selection-radiobutton-container\">\r\n\r\n            <div class=\"agent-selection-name\">\r\n                <div class=\"image-agent-section\">\r\n                    <img src=\"../../../../assets/Images/brinkley.jpg\" class=\"agent-image\">\r\n                </div>\r\n                <div class=\"agent-address-section\">\r\n                    <div class=\"company-name heading-nestimate\">Brinkle</div>\r\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\r\n                </div>\r\n            </div>\r\n            <div class=\"agent-selection-commision\">\r\n\r\n                <div class=\"agency-text mb-1\">\r\n                    <div class=\"sole-agency-fees heading-nestimate\">\r\n                        Sole agency Fees</div>\r\n\r\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\r\n                        Multiple agency Fees</div>\r\n                </div>\r\n\r\n                <div class=\"agency-percentage mb-1\">\r\n                    <div class=\"sole-agency-percen heading-nestimate\">\r\n                        1.50%</div>\r\n\r\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\r\n                        1.75%</div>\r\n                </div>\r\n\r\n            </div>\r\n\r\n            <div class=\"agent-selction buttons\">\r\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\r\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\">Select Agent</button>\r\n\r\n            </div>\r\n        </div>\r\n\r\n    </mat-card>\r\n</div>";
     /***/
   },
 
@@ -901,7 +901,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<p>terms-condition works!</p>\n";
+    __webpack_exports__["default"] = "<p>terms-condition works!</p>\r\n";
     /***/
   },
 
@@ -2269,6 +2269,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.unmatchedProperties = [];
         this.listingBuyer = new _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_4__["listingBuyer"]();
         this.isThanku = true;
+        this.distinctExpressedUid = [];
       }
 
       _createClass(BuyerMatcheListingComponent, [{
@@ -2281,21 +2282,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              // console.log("from the db " + item.data().Lookingpostcode);
-              // console.log(
-              //   "from the localStorage " +
-              //   JSON.stringify(this.stateService.listingBuyer.Lookingpostcode));
               _this6.less = item.data().MaxAmount - item.data().MaxAmount * 3 / 100;
               _this6.more = item.data().MaxAmount * 1 + item.data().MaxAmount * 10 / 100 * 1;
 
               if (item.data().Lookingpostcode == _this6.stateService.listingBuyer.Lookingpostcode && item.data().PropertyType == _this6.stateService.listingBuyer.PropertyType && _this6.more >= _this6.stateService.listingBuyer.MinAmount && _this6.less <= _this6.stateService.listingBuyer.MaxAmount) {
-                _this6.matchedProperties.push(item.data()); //Use this object to populate html
+                _this6.matchedProperties.push({
+                  detail: item.data(),
+                  propertyId: item.id
+                }); //Use this object to populate html
 
               } else if (item.data().PropertyType == _this6.stateService.listingBuyer.PropertyType && item.data().MaxAmount >= _this6.stateService.listingBuyer.MinAmount && item.data().MaxAmount <= _this6.stateService.listingBuyer.MaxAmount && item.data().latitude && item.data().longitude) {
                 _this6.distanceInKm = _this6.getDistanceFromLatLonInKm(_this6.listingBuyer.latitude, _this6.listingBuyer.longitude, item.data().latitude, item.data().longitude);
 
                 _this6.unmatchedProperties.push({
                   detail: item.data(),
+                  propertyId: item.id,
                   distance: _this6.distanceInKm
                 });
               } // else {
@@ -2303,9 +2304,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               // }
 
             });
+            console.log(_this6.unmatchedProperties);
+            console.log(_this6.matchedProperties);
 
             _this6.unmatchedProperties.sort(_this6.compare);
           });
+          this.getExpressedListingIds();
         }
       }, {
         key: "getDistanceFromLatLonInKm",
@@ -2396,6 +2400,29 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             return a.distance - b.distance;
           });
         }
+      }, {
+        key: "getExpressedListingIds",
+        value: function getExpressedListingIds() {
+          var _this7 = this;
+
+          this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
+            ref.forEach(function (item) {
+              if (_this7.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this7.distinctExpressedUid.push(item.data().propertyId);
+              }
+            });
+            console.log(_this7.distinctExpressedUid);
+          });
+        }
+      }, {
+        key: "checkExpressForValue",
+        value: function checkExpressForValue(uid) {
+          if (this.distinctExpressedUid.includes(uid)) {
+            return true;
+          } else {
+            false;
+          }
+        }
       }]);
 
       return BuyerMatcheListingComponent;
@@ -2469,7 +2496,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.customersRef = db.collection("listingSeller"); // Collection Group
 
         this.propertiesRef = db.collectionGroup("properties");
-        this.Userref = db.collection("users");
+        this.Userref = db.collection("users"); //Express Interest
+
+        this.InterestRef = db.collection("expressInterest");
+        this.Interest = db.collectionGroup("Express");
       }
 
       _createClass(MatchesService, [{
@@ -2481,6 +2511,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "getUser",
         value: function getUser(uid) {
           return this.Userref.get();
+        }
+      }, {
+        key: "getInterest",
+        value: function getInterest(uid) {
+          return this.InterestRef.get();
+        }
+      }, {
+        key: "ExpressInterest",
+        value: function ExpressInterest(uid) {
+          return this.db.collection("expressInterest").doc(uid).collection("Express").get();
         }
       }]);
 
@@ -2619,45 +2659,50 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerSelectedPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this7 = this;
+          var _this8 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this7.Lookingpostcode = params.get("Lookingpostcode");
-            _this7.Lookingstate = params.get("Lookingstate");
-            _this7.LookingTown = params.get("LookingTown");
-            _this7.norooms = params.get("norooms");
-            _this7.PropertyCondition = params.get("PropertyCondition");
-            _this7.MaxAmount = params.get("MaxAmount");
-            _this7.LookingAddress = params.get("LookingAddress");
-            _this7.ownership = params.get("ownership");
-            _this7.PropertyType = params.get("PropertyType").replace(/\s/g, "");
-            _this7.features = params.get("features");
-            _this7.UserId = params.get("UserId").replace(/\s/g, "");
-            _this7.MinAmount = params.get("MinAmount");
-            _this7.Maxbathrooms = params.get("Maxbathrooms");
-            _this7.Maxrooms = params.get("Maxrooms");
-            _this7.Maxreception = params.get("Maxreception");
-            console.log(_this7.UserId);
+            _this8.Lookingpostcode = params.get("Lookingpostcode");
+            _this8.Lookingstate = params.get("Lookingstate");
+            _this8.LookingTown = params.get("LookingTown");
+            _this8.norooms = params.get("norooms");
+            _this8.PropertyCondition = params.get("PropertyCondition");
+            _this8.MaxAmount = params.get("MaxAmount");
+            _this8.LookingAddress = params.get("LookingAddress");
+            _this8.ownership = params.get("ownership");
+            _this8.PropertyType = params.get("PropertyType").replace(/\s/g, "");
+            _this8.features = params.get("features");
+            _this8.UserId = params.get("UserId").replace(/\s/g, "");
+            _this8.MinAmount = params.get("MinAmount");
+            _this8.Maxbathrooms = params.get("Maxbathrooms");
+            _this8.Maxrooms = params.get("Maxrooms");
+            _this8.Maxreception = params.get("Maxreception");
+            _this8.propertyId = params.get("propertyId");
           });
           this.Selected_propertydetail_Service.getUser(this.UserId).subscribe(function (dref) {
             dref.forEach(function (element) {
-              if (_this7.UserId == element.data().uid) {
-                _this7.title = element.data().title;
-                _this7.unNamed = element.data().Name;
-                console.log(element.data().Name);
+              if (_this8.UserId == element.data().uid) {
+                _this8.title = element.data().title;
+                _this8.unNamed = element.data().Name;
               }
             });
           });
-          console.log("user id" + this.userId);
-          console.log(this.Email);
+          this.Selected_propertydetail_Service.getExpressed(this.uid).subscribe(function (status) {
+            status.forEach(function (elements) {
+              if (_this8.propertyId.trim() == elements.data().propertyId) {
+                _this8.datastored = true;
+                _this8.express = false;
+              }
+            });
+          });
         } //Create Database BuyerMatches
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this8 = this;
+          var _this9 = this;
 
           this.matchesBuyer = {
             Lookingpostcode: this.Lookingpostcode,
@@ -2680,8 +2725,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isBuyerSelected = true;
           this.return = this.Selected_propertydetail_Service.matchesBuyerCreate(this.uid, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this8.isBuyerSelected = false;
-              _this8.overlay = false;
+              _this9.isBuyerSelected = false;
+              _this9.overlay = false;
             }
           });
           this.matchesSeller = {
@@ -2703,12 +2748,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isBuyerSelected = true;
           this.return = this.Selected_propertydetail_Service.matchesSellerCreate(this.UserId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this8.isBuyerSelected = false;
-              _this8.datastored = true;
-              _this8.express = false;
+              _this9.isBuyerSelected = false;
+              _this9.datastored = true;
+              _this9.express = false;
             }
           });
-          this.backClicked();
+          this.isBuyerSelected = true;
+          this.addToExpressCollection();
+        }
+      }, {
+        key: "addToExpressCollection",
+        value: function addToExpressCollection() {
+          var _this10 = this;
+
+          this.return = this.Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
+            if (data == true) {
+              _this10.isBuyerSelected = false;
+              _this10.datastored = true;
+              _this10.express = false;
+
+              _this10.backClicked();
+            }
+          });
         }
       }, {
         key: "Overlayopen",
@@ -2725,7 +2786,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function register() {
           this.HttpService.sentEmail("http://localhost:3000/sendmail", this.user).subscribe(function (data) {
             var res = data;
-            console.log('{user.email} is successfully send');
           }, function (err) {
             console.log(err);
           }, function () {});
@@ -2811,19 +2871,36 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/fire/firestore */
     "./node_modules/@angular/fire/firestore/es2015/index.js");
+    /* harmony import */
+
+
+    var _state_service_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../../../../../state-service.service */
+    "./src/app/state-service.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var SelectedpropertydetailService =
     /*#__PURE__*/
     function () {
-      function SelectedpropertydetailService(db) {
+      function SelectedpropertydetailService(db, StateServiceService, _Activatedroute) {
         _classCallCheck(this, SelectedpropertydetailService);
 
         this.db = db;
+        this.StateServiceService = StateServiceService;
+        this._Activatedroute = _Activatedroute;
         this.dataSavedEventEmitter = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.matcheBuyerRef = null;
         this.matcheSellerRef = null;
+        this.expressInterestRef = null;
         this.customersRef = db.collection("listingSeller");
         this.Userref = db.collection("users");
+        this.expressInterestRef = db.collection("expressInterest");
+        this.Interest = db.collectionGroup("Express");
       } //create Database Buyer Matches
 
 
@@ -2882,9 +2959,48 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           }));
         }
       }, {
+        key: "ExpressInterest",
+        value: function ExpressInterest(uid, propertyId) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee3() {
+            return regeneratorRuntime.wrap(function _callee3$(_context3) {
+              while (1) {
+                switch (_context3.prev = _context3.next) {
+                  case 0:
+                    _context3.next = 2;
+                    return this.db.collection("expressInterest").doc(uid).collection("Express").add({
+                      propertyId: propertyId
+                    }).then(function (data) {
+                      console.log("expressInterest Document seller successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context3.sent;
+                    return _context3.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context3.stop();
+                }
+              }
+            }, _callee3, this);
+          }));
+        }
+      }, {
         key: "getUser",
         value: function getUser(uid) {
           return this.Userref.get();
+        }
+      }, {
+        key: "getExpress",
+        value: function getExpress(uid) {
+          return this.expressInterestRef.get();
+        }
+      }, {
+        key: "getExpressed",
+        value: function getExpressed(uid) {
+          return this.Interest.get();
         }
       }]);
 
@@ -2894,6 +3010,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     SelectedpropertydetailService.ctorParameters = function () {
       return [{
         type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]
+      }, {
+        type: _state_service_service__WEBPACK_IMPORTED_MODULE_3__["StateServiceService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"]
       }];
     };
 
@@ -3051,18 +3171,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this9 = this;
+          var _this11 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.BuyerdetailService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this9.uid) {
-                _this9.user.Name = element.data().Name;
-                _this9.user.Email = element.data().email;
-                _this9.user.DOB = element.data().DOB.toDate();
-                _this9.user.Phone = element.data().Phone;
-                _this9.user.title = element.data().title;
+              if (element.data().uid == _this11.uid) {
+                _this11.user.Name = element.data().Name;
+                _this11.user.Email = element.data().email;
+                _this11.user.DOB = element.data().DOB.toDate();
+                _this11.user.Phone = element.data().Phone;
+                _this11.user.title = element.data().title;
                 console.log(element.data().Name);
               }
             });
@@ -3070,28 +3190,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this9.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this9.userData));
+              _this11.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this11.userData));
 
-              _this9.LoggedIn();
+              _this11.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this9.LoggedOut();
+              _this11.LoggedOut();
             }
           });
           this.listingBuyer = this.stateService.listingBuyer; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode).subscribe(function (data) {
-            _this9.postcodeCoordinates = data;
-            _this9.listingBuyer.longitude = _this9.postcodeCoordinates.result.longitude, _this9.listingBuyer.latitude = _this9.postcodeCoordinates.result.latitude, _this9.listingBuyer.UserId = _this9.userData.uid, _this9.isBuyer = true;
-            _this9.isBuyer = false; //   this.return = this.formsService
-            //     .createCustomer(this.userData.uid, this.listingBuyer)
-            //     .then(data => {
-            //       if (data == true) {
-            //         this.isBuyer = false;
-            //       }
-            //     });
+            _this11.postcodeCoordinates = data;
+            _this11.listingBuyer.longitude = _this11.postcodeCoordinates.result.longitude, _this11.listingBuyer.latitude = _this11.postcodeCoordinates.result.latitude, _this11.listingBuyer.UserId = _this11.userData.uid, _this11.isBuyer = true;
+            _this11.isBuyer = false;
           });
         }
       }, {
@@ -3102,7 +3216,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this10 = this;
+          var _this12 = this;
 
           this.listingBuyer.UserId = this.userData.uid;
           this.isLoading = true;
@@ -3114,9 +3228,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.listingBuyer.LookingTown;
           this.return = this.formsService.createCustomer(this.userData.uid, this.listingBuyer).then(function (data) {
             if (data == true) {
-              _this10.isLoading = false;
+              _this12.isLoading = false;
 
-              var dialogRef = _this10.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogBuyerDataSubmissionComponent"], {
+              var dialogRef = _this12.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogBuyerDataSubmissionComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -3125,13 +3239,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               });
             }
-          });
-          this.notification = {
-            time: new Date(),
-            viewed: "no"
-          };
-          this.return = this.formsService.notificationCustomer(this.userData.uid, this.notification).then(function (data) {
-            console.log("notification" + data);
           });
         }
       }, {
@@ -3157,11 +3264,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this11 = this;
+          var _this13 = this;
 
           console.log(this.user);
           this.return = this.formsService.createUserCustomer(this.user).then(function (data) {
-            console.log(_this11.user);
+            console.log(_this13.user);
           });
         }
       }]);
@@ -3519,29 +3626,29 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this14 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this12.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this12.userData));
+              _this14.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this14.userData));
 
-              _this12.LoggedIn();
+              _this14.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this12.LoggedOut();
+              _this14.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this12.lookup(_this12.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this12.data = data;
+              _this14.lookup(_this14.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this14.data = data;
               });
 
-              return _this12.lookup(_this12.listingBuyer.Lookingpostcode);
+              return _this14.lookup(_this14.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -3551,40 +3658,40 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this12.lookup(_this12.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this12.data = data;
+              _this14.lookup(_this14.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this14.data = data;
               });
 
-              return _this12.lookup(_this12.listingBuyer.Currentpostcode);
+              return _this14.lookup(_this14.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
           }));
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this12.Cpostcode = params.get("Currentpostcode");
-            _this12.Ctown = params.get("CurrentTown");
-            _this12.Cstate = params.get("Currentstate");
-            _this12.Ccountry = params.get("Currentcountry");
-            _this12.Lpostcode = params.get("Lookingpostcode");
-            _this12.Lstreetname = params.get("LookingStreetname"); // this.Ltown = params.get("LookingTown");
+            _this14.Cpostcode = params.get("Currentpostcode");
+            _this14.Ctown = params.get("CurrentTown");
+            _this14.Cstate = params.get("Currentstate");
+            _this14.Ccountry = params.get("Currentcountry");
+            _this14.Lpostcode = params.get("Lookingpostcode");
+            _this14.Lstreetname = params.get("LookingStreetname"); // this.Ltown = params.get("LookingTown");
 
-            _this12.Lstate = params.get("Lookingstate");
-            _this12.Lcountry = params.get("Country");
-            _this12.Financial = params.get("FinancialPosition");
-            _this12.radius = params.get("SearchRadius");
-            _this12.Type = params.get("PropertyType");
-            _this12.Minroom = params.get("Roommin");
-            _this12.Maxroom = params.get("Roomsmax");
-            _this12.AmountMin = params.get("MinAmount");
-            _this12.amountmax = params.get("MaxAmount");
-            _this12.offer = params.get("Validity");
-            _this12.bathroommin = params.get("Minbathroom");
-            _this12.bathroommax = params.get("Maxbathroom");
-            _this12.receptionmin = params.get("Minreception");
-            _this12.receptionmax = params.get("Maxreception");
-            _this12.condition = params.get("Conditions");
-            _this12.ownership = params.get("Ownership");
-            _this12.Caddress = params.get("CurrentAddress"); //  this.Ltown = params.get("LookingTown"); 
+            _this14.Lstate = params.get("Lookingstate");
+            _this14.Lcountry = params.get("Country");
+            _this14.Financial = params.get("FinancialPosition");
+            _this14.radius = params.get("SearchRadius");
+            _this14.Type = params.get("PropertyType");
+            _this14.Minroom = params.get("Roommin");
+            _this14.Maxroom = params.get("Roomsmax");
+            _this14.AmountMin = params.get("MinAmount");
+            _this14.amountmax = params.get("MaxAmount");
+            _this14.offer = params.get("Validity");
+            _this14.bathroommin = params.get("Minbathroom");
+            _this14.bathroommax = params.get("Maxbathroom");
+            _this14.receptionmin = params.get("Minreception");
+            _this14.receptionmax = params.get("Maxreception");
+            _this14.condition = params.get("Conditions");
+            _this14.ownership = params.get("Ownership");
+            _this14.Caddress = params.get("CurrentAddress"); //  this.Ltown = params.get("LookingTown"); 
           });
 
           if (this.Cpostcode != ":Currentpostcode") {
@@ -3688,7 +3795,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this13 = this;
+          var _this15 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -3696,13 +3803,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this13.uid) {
-                _this13.user.Name = element.data().Name;
-                _this13.user.email = element.data().email;
-                _this13.user.DOB = element.data().DOB.toDate();
-                _this13.user.Phone = element.data().Phone;
-                _this13.user.title = element.data().title;
-                console.log(_this13.user.DOB);
+              if (element.data().uid == _this15.uid) {
+                _this15.user.Name = element.data().Name;
+                _this15.user.email = element.data().email;
+                _this15.user.DOB = element.data().DOB.toDate();
+                _this15.user.Phone = element.data().Phone;
+                _this15.user.title = element.data().title;
+                console.log(_this15.user.DOB);
               }
             });
           });
@@ -3895,11 +4002,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this14 = this;
+          var _this16 = this;
 
           console.log(this.user);
           this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
-            console.log(_this14.user);
+            console.log(_this16.user);
           });
         }
       }, {
@@ -3925,12 +4032,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this15 = this;
+          var _this17 = this;
 
           // //Lookup Declared Function
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode).subscribe(function (data) {
-            _this15.postcodeCoordinates = data;
-            _this15.listingBuyer.longitude = _this15.postcodeCoordinates.result.longitude, _this15.listingBuyer.latitude = _this15.postcodeCoordinates.result.latitude, _this15.listingBuyer.UserId = _this15.userData.uid, _this15.return = _this15.fillFormsService.createCustomer(_this15.userData.uid, _this15.listingBuyer).then(function (data) {
+            _this17.postcodeCoordinates = data;
+            _this17.listingBuyer.longitude = _this17.postcodeCoordinates.result.longitude, _this17.listingBuyer.latitude = _this17.postcodeCoordinates.result.latitude, _this17.listingBuyer.UserId = _this17.userData.uid, _this17.return = _this17.fillFormsService.createCustomer(_this17.userData.uid, _this17.listingBuyer).then(function (data) {
               if (data == true) {}
             });
           });
@@ -3938,9 +4045,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isLoading = true;
           this.return = this.fillFormsService.createCustomer(this.userData.uid, this.listingBuyer).then(function (data) {
             if (data == true) {
-              _this15.isLoading = false;
+              _this17.isLoading = false;
 
-              var dialogRef = _this15.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
+              var dialogRef = _this17.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
                 data: {}
               });
             }
@@ -3950,44 +4057,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this16 = this;
+          var _this18 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this16.isLoading = false;
+            _this18.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this17 = this;
+          var _this19 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this17.isLoading = false;
+            _this19.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this18 = this;
+          var _this20 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this18.isLoading = false;
+            _this20.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this19 = this;
+          var _this21 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this19.isLoading = false;
+            _this21.isLoading = false;
           });
         }
       }, {
@@ -4009,17 +4116,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this20 = this;
+          var _this22 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this20.isLoading = false;
-            _this20.user.Name = displayName;
-            _this20.user.DOB = null;
-            _this20.user.Phone = null;
-            _this20.return = _this20.fillFormsService.createUserCustomer(_this20.user).then(function (user) {
-              if (_this20.user != null) {
-                _this20.isLoading = false;
-                _this20.overlay = true;
+            _this22.isLoading = false;
+            _this22.user.Name = displayName;
+            _this22.user.DOB = null;
+            _this22.user.Phone = null;
+            _this22.return = _this22.fillFormsService.createUserCustomer(_this22.user).then(function (user) {
+              if (_this22.user != null) {
+                _this22.isLoading = false;
+                _this22.overlay = true;
               }
             });
           });
@@ -4173,41 +4280,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function notificationCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee3() {
-            return regeneratorRuntime.wrap(function _callee3$(_context3) {
-              while (1) {
-                switch (_context3.prev = _context3.next) {
-                  case 0:
-                    _context3.next = 2;
-                    return this.notificationref.doc(key).collection("").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context3.sent;
-                    return _context3.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context3.stop();
-                }
-              }
-            }, _callee3, this);
-          }));
-        } //Create Customer ListingBuyer
-
-      }, {
-        key: "createCustomer",
-        value: function createCustomer(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee4() {
             return regeneratorRuntime.wrap(function _callee4$(_context4) {
               while (1) {
                 switch (_context4.prev = _context4.next) {
                   case 0:
                     _context4.next = 2;
-                    return this.customersRef.doc(key).collection("requirements").add(Object.assign({}, customer)).then(function (data) {
+                    return this.notificationref.doc(key).collection("").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
@@ -4221,6 +4300,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee4, this);
+          }));
+        } //Create Customer ListingBuyer
+
+      }, {
+        key: "createCustomer",
+        value: function createCustomer(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee5() {
+            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+              while (1) {
+                switch (_context5.prev = _context5.next) {
+                  case 0:
+                    _context5.next = 2;
+                    return this.customersRef.doc(key).collection("requirements").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context5.sent;
+                    return _context5.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context5.stop();
+                }
+              }
+            }, _callee5, this);
           }));
         }
       }, {
@@ -4527,7 +4634,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MatchesNestimateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this21 = this;
+          var _this23 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details
@@ -4535,26 +4642,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               console.log("from the db " + item.data().Lookingpostcode);
-              console.log("from the localStorage " + JSON.stringify(_this21.listingBuyer.Lookingpostcode));
+              console.log("from the localStorage " + JSON.stringify(_this23.listingBuyer.Lookingpostcode));
 
-              if (item.data().Lookingpostcode == _this21.listingBuyer.Lookingpostcode) {
-                _this21.matchedProperties.push(item.data()); //Use this object to populate html
+              if (item.data().Lookingpostcode == _this23.listingBuyer.Lookingpostcode) {
+                _this23.matchedProperties.push(item.data()); //Use this object to populate html
 
               } else if (item.data().latitude && item.data().longitude) {
-                _this21.distanceInKm = _this21.getDistanceFromLatLonInKm(_this21.listingBuyer.latitude, _this21.listingBuyer.longitude, item.data().latitude, item.data().longitude);
+                _this23.distanceInKm = _this23.getDistanceFromLatLonInKm(_this23.listingBuyer.latitude, _this23.listingBuyer.longitude, item.data().latitude, item.data().longitude);
 
-                _this21.unmatchedProperties.push({
+                _this23.unmatchedProperties.push({
                   detail: item.data(),
-                  distance: _this21.distanceInKm
+                  distance: _this23.distanceInKm
                 });
               } else {
-                _this21.unmatchedProperties.push({
+                _this23.unmatchedProperties.push({
                   detail: item.data()
                 });
               }
             });
 
-            _this21.unmatchedProperties.sort(_this21.compare);
+            _this23.unmatchedProperties.sort(_this23.compare);
           });
         }
       }, {
@@ -4782,7 +4889,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(UnMatchesNestimateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this22 = this;
+          var _this24 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details
@@ -4790,26 +4897,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               console.log("from the db " + item.data().Lookingpostcode);
-              console.log("from the localStorage " + JSON.stringify(_this22.listingBuyer.Lookingpostcode));
+              console.log("from the localStorage " + JSON.stringify(_this24.listingBuyer.Lookingpostcode));
 
-              if (item.data().Lookingpostcode == _this22.listingBuyer.Lookingpostcode) {
-                _this22.matchedProperties.push(item.data()); //Use this object to populate html
+              if (item.data().Lookingpostcode == _this24.listingBuyer.Lookingpostcode) {
+                _this24.matchedProperties.push(item.data()); //Use this object to populate html
 
               } else if (item.data().latitude && item.data().longitude) {
-                _this22.distanceInKm = _this22.getDistanceFromLatLonInKm(_this22.listingBuyer.latitude, _this22.listingBuyer.longitude, item.data().latitude, item.data().longitude);
+                _this24.distanceInKm = _this24.getDistanceFromLatLonInKm(_this24.listingBuyer.latitude, _this24.listingBuyer.longitude, item.data().latitude, item.data().longitude);
 
-                _this22.unmatchedProperties.push({
+                _this24.unmatchedProperties.push({
                   detail: item.data(),
-                  distance: _this22.distanceInKm
+                  distance: _this24.distanceInKm
                 });
               } else {
-                _this22.unmatchedProperties.push({
+                _this24.unmatchedProperties.push({
                   detail: item.data()
                 });
               }
             });
 
-            _this22.unmatchedProperties.sort(_this22.compare);
+            _this24.unmatchedProperties.sort(_this24.compare);
           });
         }
       }, {
@@ -5105,41 +5212,41 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ConfirmSellerDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this23 = this;
+          var _this25 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.ConfirmsellerDetailService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this23.uid) {
-                _this23.user.Name = element.data().Name;
-                _this23.user.Email = element.data().email;
-                _this23.user.DOB = element.data().DOB.toDate();
-                _this23.user.Phone = element.data().Phone;
-                _this23.user.Currentpostcode = element.data().Currentpostcode;
-                _this23.user.title = element.data().title;
+              if (element.data().uid == _this25.uid) {
+                _this25.user.Name = element.data().Name;
+                _this25.user.Email = element.data().email;
+                _this25.user.DOB = element.data().DOB.toDate();
+                _this25.user.Phone = element.data().Phone;
+                _this25.user.Currentpostcode = element.data().Currentpostcode;
+                _this25.user.title = element.data().title;
               }
             });
           }); // Auth
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this23.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this23.userData));
+              _this25.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this25.userData));
 
-              _this23.LoggedIn();
+              _this25.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this23.LoggedOut();
+              _this25.LoggedOut();
             }
           });
           this.listingSeller = this.stateService.listingSeller; //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode).subscribe(function (data) {
-            _this23.postcodeCoordinates = data;
-            _this23.listingSeller.longitude = _this23.postcodeCoordinates.result.longitude, _this23.listingSeller.latitude = _this23.postcodeCoordinates.result.latitude, _this23.listingSeller.UserId = _this23.userData.uid, _this23.isBuyer = true;
-            _this23.isBuyer = false; // this.return = this.SellerformService.createCustomer(this.userData.uid,this.listingSeller)
+            _this25.postcodeCoordinates = data;
+            _this25.listingSeller.longitude = _this25.postcodeCoordinates.result.longitude, _this25.listingSeller.latitude = _this25.postcodeCoordinates.result.latitude, _this25.listingSeller.UserId = _this25.userData.uid, _this25.isBuyer = true;
+            _this25.isBuyer = false; // this.return = this.SellerformService.createCustomer(this.userData.uid,this.listingSeller)
             // .then(data => {
             //   if (data == true) {
             //     
@@ -5151,7 +5258,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this24 = this;
+          var _this26 = this;
 
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
@@ -5159,9 +5266,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.listingSeller.usertitle = this.user.title;
           this.return = this.SellerformService.createCustomer(this.userData.uid, this.listingSeller).then(function (data) {
             if (data == true) {
-              _this24.isLoading = false;
+              _this26.isLoading = false;
 
-              var dialogRef = _this24.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
+              var dialogRef = _this26.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -5393,38 +5500,39 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this25 = this;
+          var _this27 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details
 
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (res) {
             res.forEach(function (item) {
-              if (item.data().Lookingpostcode == _this25.stateService.listingSeller.Lookingpostcode) {
-                _this25.matchedProperties.push(item.data()); //Use this object to populate html
+              _this27.less = item.data().MaxAmount - item.data().MinAmount * 3 / 100;
+              _this27.more = item.data().MaxAmount * 1 + item.data().MaxAmount * 10 / 100 * 1;
 
-              } else if (item.data().latitude && item.data().longitude) {
-                _this25.distanceInKm = _this25.getDistanceFromLatLonInKm(_this25.stateService.listingSeller.latitude, _this25.stateService.listingSeller.longitude, item.data().latitude, item.data().longitude);
-
-                _this25.unmatchedProperties.push({
+              if (item.data().Lookingpostcode == _this27.stateService.listingSeller.Lookingpostcode && item.data().PropertyType == _this27.stateService.listingSeller.PropertyType && _this27.more >= _this27.stateService.listingSeller.MaxAmount && _this27.less <= _this27.stateService.listingSeller.MaxAmount) {
+                _this27.matchedProperties.push({
                   detail: item.data(),
-                  distance: _this25.distanceInKm
-                }); //console.log({ detail: item.data(), distance: this.distanceInKm });
+                  propertyId: item.id
+                }); //Use this object to populate html
 
+              } else if (item.data().PropertyType == _this27.stateService.listingSeller.PropertyType && item.data().MinAmount >= _this27.stateService.listingSeller.MaxAmount && item.data().MaxAmount <= _this27.stateService.listingSeller.MaxAmount && item.data().latitude && item.data().longitude) {
+                _this27.distanceInKm = _this27.getDistanceFromLatLonInKm(_this27.stateService.listingSeller.latitude, _this27.stateService.listingSeller.longitude, item.data().latitude, item.data().longitude);
 
-                console.log(_this25.unmatchedProperties.length);
-              } else {
-                _this25.unmatchedProperties.push({
-                  detail: item.data()
+                _this27.unmatchedProperties.push({
+                  detail: item.data(),
+                  propertyId: item.id,
+                  distance: _this27.distanceInKm
                 });
               }
             });
 
-            _this25.unmatchedProperties.sort(_this25.compare);
+            _this27.unmatchedProperties.sort(_this27.compare);
 
-            _this25.noOfMatches = _this25.matchedProperties.length;
-            _this25.noOfUnmatched = _this25.unmatchedProperties.length; //console.log(this.matchedProperties[0]);
+            _this27.noOfMatches = _this27.matchedProperties.length;
+            _this27.noOfUnmatched = _this27.unmatchedProperties.length; //console.log(this.matchedProperties[0]);
           });
+          this.getExpressedListingIds();
         }
       }, {
         key: "getDistanceFromLatLonInKm",
@@ -5543,6 +5651,29 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             return a.distance - b.distance;
           });
         }
+      }, {
+        key: "getExpressedListingIds",
+        value: function getExpressedListingIds() {
+          var _this28 = this;
+
+          this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
+            ref.forEach(function (item) {
+              if (_this28.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this28.distinctExpressedUid.push(item.data().propertyId);
+              }
+            });
+            console.log(_this28.distinctExpressedUid);
+          });
+        }
+      }, {
+        key: "checkExpressForValue",
+        value: function checkExpressForValue(uid) {
+          if (this.distinctExpressedUid.includes(uid)) {
+            return true;
+          } else {
+            false;
+          }
+        }
       }]);
 
       return SellerMatchListingComponent;
@@ -5616,7 +5747,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.customersRef = db.collection("listingSeller"); // Collection Group
 
         this.propertiesRef = db.collectionGroup("requirements");
-        this.Userref = db.collection("users");
+        this.Userref = db.collection("users"); //Express Interest
+
+        this.InterestRef = db.collection("expressInterest");
+        this.Interest = db.collectionGroup("Express");
       }
 
       _createClass(SellerMatchListingService, [{
@@ -5628,6 +5762,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "getUser",
         value: function getUser(uid) {
           return this.Userref.get();
+        }
+      }, {
+        key: "ExpressInterest",
+        value: function ExpressInterest(uid) {
+          return this.db.collection("expressInterest").doc(uid).collection("Express").get();
         }
       }]);
 
@@ -5919,52 +6058,62 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.version = _angular_material__WEBPACK_IMPORTED_MODULE_5__["VERSION"];
         this.isSellerSelected = false;
         this.overlay = false;
+        this.datastored = false;
+        this.express = true;
       }
 
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this26 = this;
+          var _this29 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this26.PriceRange = params.get("MaxAmount");
-            _this26.Lookingpostcode = params.get("Lookingpostcode");
-            _this26.LookingStreetname = params.get("LookingStreetname");
-            _this26.Position = params.get("Position");
-            _this26.PropertyType = params.get("PropertyType");
-            _this26.Roomsmax = params.get("Roomsmax");
-            _this26.ownership = params.get("Ownership");
-            _this26.Conditions = params.get("Conditions");
-            _this26.Maxbathroom = params.get("Maxbathroom");
-            _this26.Maxreception = params.get("Maxreception");
-            _this26.features = params.get("features");
-            _this26.UserId = params.get("UserId").replace(/\s/g, "");
-            _this26.FinancialPosition = params.get("FinancialPosition"); //   this.ChainStatus = params.get("ChainStatus");
+            _this29.PriceRange = params.get("MaxAmount");
+            _this29.Lookingpostcode = params.get("Lookingpostcode");
+            _this29.LookingStreetname = params.get("LookingStreetname");
+            _this29.Position = params.get("Position");
+            _this29.PropertyType = params.get("PropertyType");
+            _this29.Roomsmax = params.get("Roomsmax");
+            _this29.ownership = params.get("Ownership");
+            _this29.Conditions = params.get("Conditions");
+            _this29.Maxbathroom = params.get("Maxbathroom");
+            _this29.Maxreception = params.get("Maxreception");
+            _this29.features = params.get("features");
+            _this29.UserId = params.get("UserId").replace(/\s/g, "");
+            _this29.FinancialPosition = params.get("FinancialPosition"); //   this.ChainStatus = params.get("ChainStatus");
             // this.FinancialPosition = params.get("FinancialPosition");
             // this.SearchRadius = params.get("SearchRadius");
             // this.PriceRange = params.get("PriceRange");
             // this.Validity = params.get("Validity");
             // this.Type = params.get("Type");
             // this.Position = params.get("Position");
+
+            _this29.propertyId = params.get("propertyId");
           });
           this.seller_Selected_propertydetail_Service.getUser(this.UserId).subscribe(function (dref) {
             dref.forEach(function (element) {
-              if (_this26.UserId == element.data().uid) {
-                _this26.title = element.data().title;
-                _this26.unNamed = element.data().Name;
-                console.log(element.data().Name);
+              if (_this29.UserId == element.data().uid) {
+                _this29.title = element.data().title;
+                _this29.unNamed = element.data().Name;
               }
             });
           });
-          console.log("user id" + this.UserId);
+          this.seller_Selected_propertydetail_Service.getExpressed(this.uid).subscribe(function (status) {
+            status.forEach(function (elements) {
+              if (_this29.propertyId.trim() == elements.data().propertyId) {
+                _this29.datastored = true;
+                _this29.express = false;
+              }
+            });
+          });
         } //Create Database match Seller
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this27 = this;
+          var _this30 = this;
 
           this.matchesSeller = {
             PriceRange: this.PriceRange,
@@ -5986,8 +6135,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isSellerSelected = true;
           this.return = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this27.isSellerSelected = false;
-              _this27.overlay = false;
+              _this30.isSellerSelected = false;
+              _this30.overlay = false;
             }
           });
           this.matchesBuyer = {
@@ -6008,10 +6157,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isSellerSelected = true;
           this.return = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this27.isSellerSelected = false;
+              _this30.isSellerSelected = false;
+              _this30.datastored = true;
+              _this30.express = false;
             }
           });
-          this.backClicked();
+          this.isSellerSelected = true;
+          this.addToExpressCollection();
         }
       }, {
         key: "Overlayopen",
@@ -6027,6 +6179,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "backClicked",
         value: function backClicked() {
           this._location.back();
+        }
+      }, {
+        key: "addToExpressCollection",
+        value: function addToExpressCollection() {
+          var _this31 = this;
+
+          this.return = this.seller_Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
+            if (data == true) {
+              _this31.isSellerSelected = false;
+              _this31.datastored = true;
+              _this31.express = false;
+
+              _this31.backClicked();
+            }
+          });
         }
       }]);
 
@@ -6113,8 +6280,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.dataSavedEventEmitter = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.matcheBuyerRef = null;
         this.matcheSellerRef = null;
+        this.expressInterestRef = null;
         this.customersRef = db.collection("listingBuyer");
         this.Userref = db.collection("users");
+        this.expressInterestRef = db.collection("expressInterest");
+        this.Interest = db.collectionGroup("Express");
       } //create Database Seller Matches
 
 
@@ -6123,40 +6293,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function matchesSellerCreate(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee5() {
-            return regeneratorRuntime.wrap(function _callee5$(_context5) {
-              while (1) {
-                switch (_context5.prev = _context5.next) {
-                  case 0:
-                    _context5.next = 2;
-                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context5.sent;
-                    return _context5.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context5.stop();
-                }
-              }
-            }, _callee5, this);
-          }));
-        }
-      }, {
-        key: "matchesBuyerCreate",
-        value: function matchesBuyerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee6() {
             return regeneratorRuntime.wrap(function _callee6$(_context6) {
               while (1) {
                 switch (_context6.prev = _context6.next) {
                   case 0:
                     _context6.next = 2;
-                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
@@ -6173,9 +6316,70 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           }));
         }
       }, {
+        key: "matchesBuyerCreate",
+        value: function matchesBuyerCreate(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee7() {
+            return regeneratorRuntime.wrap(function _callee7$(_context7) {
+              while (1) {
+                switch (_context7.prev = _context7.next) {
+                  case 0:
+                    _context7.next = 2;
+                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context7.sent;
+                    return _context7.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context7.stop();
+                }
+              }
+            }, _callee7, this);
+          }));
+        }
+      }, {
+        key: "ExpressInterest",
+        value: function ExpressInterest(uid, propertyId) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee8() {
+            return regeneratorRuntime.wrap(function _callee8$(_context8) {
+              while (1) {
+                switch (_context8.prev = _context8.next) {
+                  case 0:
+                    _context8.next = 2;
+                    return this.db.collection("expressInterest").doc(uid).collection("Express").add({
+                      propertyId: propertyId
+                    }).then(function (data) {
+                      console.log("expressInterest Document seller successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context8.sent;
+                    return _context8.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context8.stop();
+                }
+              }
+            }, _callee8, this);
+          }));
+        }
+      }, {
         key: "getUser",
         value: function getUser(uid) {
           return this.Userref.get();
+        }
+      }, {
+        key: "getExpressed",
+        value: function getExpressed(uid) {
+          return this.Interest.get();
         }
       }]);
 
@@ -6396,20 +6600,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this28 = this;
+          var _this32 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this28.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this28.userData));
+              _this32.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this32.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this28.LoggedIn();
+              _this32.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this28.LoggedOut();
+              _this32.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -6417,11 +6621,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this28.lookup(_this28.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this28.data = data;
+              _this32.lookup(_this32.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this32.data = data;
               });
 
-              return _this28.lookup(_this28.listingSeller.Lookingpostcode);
+              return _this32.lookup(_this32.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -6431,30 +6635,30 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this28.lookup(_this28.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this28.data = data;
+              _this32.lookup(_this32.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this32.data = data;
               });
 
-              return _this28.lookup(_this28.listingSeller.Currentpostcode);
+              return _this32.lookup(_this32.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this28.Lookpostcode = params.get("Lookingpostcode");
-            _this28.Lookaddress = params.get("LookingAddress");
-            _this28.LookTown = params.get("LookingTown");
-            _this28.Lookstate = params.get("Lookingstate");
-            _this28.Country = params.get("Country");
-            _this28.Property = params.get("PropertyType");
-            _this28.Rooms = params.get("Maxrooms");
-            _this28.Amount = params.get("MaxAmount");
-            _this28.Ownership = params.get("ownership");
-            _this28.Bathrooms = params.get("Maxbathrooms");
-            _this28.Reception = params.get("Maxreception");
-            _this28.Condition = params.get("PropertyCondition");
-            _this28.Features = params.get("features");
-            _this28.country = params.get("Country");
+            _this32.Lookpostcode = params.get("Lookingpostcode");
+            _this32.Lookaddress = params.get("LookingAddress");
+            _this32.LookTown = params.get("LookingTown");
+            _this32.Lookstate = params.get("Lookingstate");
+            _this32.Country = params.get("Country");
+            _this32.Property = params.get("PropertyType");
+            _this32.Rooms = params.get("Maxrooms");
+            _this32.Amount = params.get("MaxAmount");
+            _this32.Ownership = params.get("ownership");
+            _this32.Bathrooms = params.get("Maxbathrooms");
+            _this32.Reception = params.get("Maxreception");
+            _this32.Condition = params.get("PropertyCondition");
+            _this32.Features = params.get("features");
+            _this32.country = params.get("Country");
           });
 
           if (this.Lookpostcode != ":Lookingpostcode") {
@@ -6516,22 +6720,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this29 = this;
+          var _this33 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this29.uid) {
-                _this29.user.Name = element.data().Name;
-                _this29.user.Email = element.data().email;
-                _this29.user.DOB = element.data().DOB.toDate();
-                _this29.user.Phone = element.data().Phone;
-                _this29.user.title = element.data().title;
-                _this29.user.Currentpostcode = element.data().Currentpostcode;
-                _this29.user.CurrentAddress = element.data().Currentaddress;
-                _this29.user.CurrentTown = element.data().CurrentTowncity;
-                _this29.user.Currentstate = element.data().Currentstate;
+              if (element.data().uid == _this33.uid) {
+                _this33.user.Name = element.data().Name;
+                _this33.user.Email = element.data().email;
+                _this33.user.DOB = element.data().DOB.toDate();
+                _this33.user.Phone = element.data().Phone;
+                _this33.user.title = element.data().title;
+                _this33.user.Currentpostcode = element.data().Currentpostcode;
+                _this33.user.CurrentAddress = element.data().Currentaddress;
+                _this33.user.CurrentTown = element.data().CurrentTowncity;
+                _this33.user.Currentstate = element.data().Currentstate;
                 console.log(element.data().Name);
               }
             });
@@ -6745,44 +6949,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this30 = this;
+          var _this34 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this30.isLoading = false;
+            _this34.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this31 = this;
+          var _this35 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this31.isLoading = false;
+            _this35.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this32 = this;
+          var _this36 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this32.isLoading = false;
+            _this36.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this33 = this;
+          var _this37 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this33.isLoading = false;
+            _this37.isLoading = false;
           });
         }
       }, {
@@ -6804,16 +7008,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this34 = this;
+          var _this38 = this;
 
           console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
-            _this34.isLoading = false;
-            _this34.user.Name = displayName;
-            _this34.user.DOB = null;
-            _this34.user.Phone = null;
-            _this34.return = _this34.fillFormsService.createUserCustomer(_this34.user).then(function (data) {
-              _this34.overlay = true;
+            _this38.isLoading = false;
+            _this38.user.Name = displayName;
+            _this38.user.DOB = null;
+            _this38.user.Phone = null;
+            _this38.return = _this38.fillFormsService.createUserCustomer(_this38.user).then(function (data) {
+              _this38.overlay = true;
               console.log(data);
             });
           });
@@ -6958,26 +7162,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function notificationCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee7() {
-            return regeneratorRuntime.wrap(function _callee7$(_context7) {
+          regeneratorRuntime.mark(function _callee9() {
+            return regeneratorRuntime.wrap(function _callee9$(_context9) {
               while (1) {
-                switch (_context7.prev = _context7.next) {
+                switch (_context9.prev = _context9.next) {
                   case 0:
-                    _context7.next = 2;
+                    _context9.next = 2;
                     return this.notificationref.doc(key).collection("seller").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this.return = _context7.sent;
-                    return _context7.abrupt("return", true);
+                    this.return = _context9.sent;
+                    return _context9.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context7.stop();
+                    return _context9.stop();
                 }
               }
-            }, _callee7, this);
+            }, _callee9, this);
           }));
         }
       }, {
@@ -6985,26 +7189,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee8() {
-            return regeneratorRuntime.wrap(function _callee8$(_context8) {
+          regeneratorRuntime.mark(function _callee10() {
+            return regeneratorRuntime.wrap(function _callee10$(_context10) {
               while (1) {
-                switch (_context8.prev = _context8.next) {
+                switch (_context10.prev = _context10.next) {
                   case 0:
-                    _context8.next = 2;
+                    _context10.next = 2;
                     return this.customersRef.doc(key).collection("properties").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this.return = _context8.sent;
-                    return _context8.abrupt("return", true);
+                    this.return = _context10.sent;
+                    return _context10.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context8.stop();
+                    return _context10.stop();
                 }
               }
-            }, _callee8, this);
+            }, _callee10, this);
           }));
         }
       }, {
@@ -7178,18 +7382,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this35 = this;
+          var _this39 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this35.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this35.userData));
+              _this39.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this39.userData));
 
-              _this35.LoggedIn();
+              _this39.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this35.LoggedOut();
+              _this39.LoggedOut();
             }
           });
         } // addPostcodes()
@@ -7304,26 +7508,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createAgentCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee9() {
-            return regeneratorRuntime.wrap(function _callee9$(_context9) {
+          regeneratorRuntime.mark(function _callee11() {
+            return regeneratorRuntime.wrap(function _callee11$(_context11) {
               while (1) {
-                switch (_context9.prev = _context9.next) {
+                switch (_context11.prev = _context11.next) {
                   case 0:
-                    _context9.next = 2;
+                    _context11.next = 2;
                     return this.customersRef.doc(key).collection("agents").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Agents Written Successfully");
                     });
 
                   case 2:
-                    this.return = _context9.sent;
-                    return _context9.abrupt("return", true);
+                    this.return = _context11.sent;
+                    return _context11.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context9.stop();
+                    return _context11.stop();
                 }
               }
-            }, _callee9, this);
+            }, _callee11, this);
           }));
         }
       }]);
@@ -7455,7 +7659,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgentsignupformComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this36 = this;
+          var _this40 = this;
 
           this.loggedIn = false;
           this.users = JSON.parse(localStorage.getItem("user"));
@@ -7468,15 +7672,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this36.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this36.userData));
+              _this40.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this40.userData));
 
-              _this36.LoggedIn();
+              _this40.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this36.LoggedOut();
+              _this40.LoggedOut();
             }
           });
         }
@@ -7493,12 +7697,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this37 = this;
+          var _this41 = this;
 
           this.stateService.agentSignup = this.agentSignup;
           this.return = this.AgentSignupService.createAgentCustomer(this.uid, this.agentSignup).then(function (data) {
             if (data == true) {
-              var dialogRef = _this37.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__["AlertDialogAgentComponent"], {
+              var dialogRef = _this41.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__["AlertDialogAgentComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -7864,7 +8068,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this38 = this;
+          var _this42 = this;
 
           // User ID
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -7872,14 +8076,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this38.propertyRequirementDetails.push(element.data());
+              _this42.propertyRequirementDetails.push(element.data());
             });
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this38.propertyDetails.push(element.data());
+              _this42.propertyDetails.push(element.data());
 
-              console.log(_this38.propertyDetails);
+              console.log(_this42.propertyDetails);
             });
           });
         }
@@ -8053,19 +8257,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesSelectedDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this39 = this;
+          var _this43 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this39.Lookingpostcode = params.get("Lookingpostcode");
-            _this39.Lookingstate = params.get("Lookingstate");
-            _this39.LookingAddress = params.get("LookingAddress");
-            _this39.norooms = params.get("Roomsmax");
-            _this39.PropertyCondition = params.get("PropertyCondition");
-            _this39.MaxAmount = params.get("MaxAmount");
-            _this39.PropertyType = params.get("PropertyType");
-            _this39.ownership = params.get("ownership");
-            _this39.features = params.get("features");
-            _this39.matchStatus = params.get("matchStatus");
+            _this43.Lookingpostcode = params.get("Lookingpostcode");
+            _this43.Lookingstate = params.get("Lookingstate");
+            _this43.LookingAddress = params.get("LookingAddress");
+            _this43.norooms = params.get("Roomsmax");
+            _this43.PropertyCondition = params.get("PropertyCondition");
+            _this43.MaxAmount = params.get("MaxAmount");
+            _this43.PropertyType = params.get("PropertyType");
+            _this43.ownership = params.get("ownership");
+            _this43.features = params.get("features");
+            _this43.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -8164,17 +8368,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this40 = this;
+          var _this44 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this40.Lookingpostcode = params.get("Lookingpostcode");
-            _this40.ChainStatus = params.get("ChainStatus");
-            _this40.FinancialPosition = params.get("FinancialPosition");
-            _this40.Type = params.get("PropertyType");
-            _this40.Position = params.get("Position");
-            _this40.SearchRadius = params.get("SearchRadius");
-            _this40.MaxAmount = params.get("MaxAmount");
-            _this40.matchStatus = params.get("matchStatus");
+            _this44.Lookingpostcode = params.get("Lookingpostcode");
+            _this44.ChainStatus = params.get("ChainStatus");
+            _this44.FinancialPosition = params.get("FinancialPosition");
+            _this44.Type = params.get("PropertyType");
+            _this44.Position = params.get("Position");
+            _this44.SearchRadius = params.get("SearchRadius");
+            _this44.MaxAmount = params.get("MaxAmount");
+            _this44.matchStatus = params.get("matchStatus");
           });
         }
       }]);
@@ -8291,20 +8495,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this41 = this;
+          var _this45 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid; // Fetch details Seller
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this41.sellerProperty.push(element.data());
+              _this45.sellerProperty.push(element.data());
             });
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this41.buyerProperty.push(element.data());
+              _this45.buyerProperty.push(element.data());
             });
           });
         }
@@ -8656,19 +8860,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this42 = this;
+          var _this46 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this42.uid) {
-                _this42.user.Name = element.data().Name;
-                _this42.user.Email = element.data().email;
-                _this42.user.Phone = element.data().Phone;
-                _this42.user.DOB = element.data().DOB.toDate();
-                _this42.user.Phone = element.data().Phone;
-                _this42.user.Address = element.data().Currentaddress;
+              if (element.data().uid == _this46.uid) {
+                _this46.user.Name = element.data().Name;
+                _this46.user.Email = element.data().email;
+                _this46.user.Phone = element.data().Phone;
+                _this46.user.DOB = element.data().DOB.toDate();
+                _this46.user.Phone = element.data().Phone;
+                _this46.user.Address = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -8779,19 +8983,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this43 = this;
+          var _this47 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this43.uid) {
-                _this43.user.Name = element.data().Name;
-                _this43.user.Email = element.data().email;
-                _this43.user.Phone = element.data().Phone;
-                _this43.user.DOB = element.data().DOB.toDate();
-                _this43.user.Address = element.data().Currentaddress;
-                console.log(_this43.user.Phone);
+              if (element.data().uid == _this47.uid) {
+                _this47.user.Name = element.data().Name;
+                _this47.user.Email = element.data().email;
+                _this47.user.Phone = element.data().Phone;
+                _this47.user.DOB = element.data().DOB.toDate();
+                _this47.user.Address = element.data().Currentaddress;
+                console.log(_this47.user.Phone);
               }
             });
           });
@@ -8799,13 +9003,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this44 = this;
+          var _this48 = this;
 
           console.log(this.user);
           this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
-            console.log(_this44.user);
+            console.log(_this48.user);
 
-            _this44.router.navigate(["/profile"]);
+            _this48.router.navigate(["/profile"]);
           });
         }
       }]);
@@ -8975,19 +9179,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this45 = this;
+          var _this49 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this45.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this45.userData));
+              _this49.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this49.userData));
 
-              _this45.LoggedIn();
+              _this49.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this45.LoggedOut();
+              _this49.LoggedOut();
             }
           });
         }
@@ -9009,27 +9213,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this46 = this;
+          var _this50 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this46.sellerProperty.push(element.data());
+                _this50.sellerProperty.push(element.data());
               }
             });
-            _this46.noSellerOfMatche = _this46.sellerProperty.length;
-            _this46.matches = _this46.buyerProperty.length + _this46.sellerProperty.length;
+            _this50.noSellerOfMatche = _this50.sellerProperty.length;
+            _this50.matches = _this50.buyerProperty.length + _this50.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this46.buyerProperty.push(element.data());
+                _this50.buyerProperty.push(element.data());
               }
             });
-            _this46.noBuyerMatches = _this46.buyerProperty.length;
-            _this46.matches = _this46.buyerProperty.length + _this46.sellerProperty.length;
+            _this50.noBuyerMatches = _this50.buyerProperty.length;
+            _this50.matches = _this50.buyerProperty.length + _this50.sellerProperty.length;
           });
         }
       }, {
@@ -9086,44 +9290,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this47 = this;
+          var _this51 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this47.isLoading = false;
+            _this51.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this48 = this;
+          var _this52 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this48.isLoading = false;
+            _this52.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this49 = this;
+          var _this53 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this49.isLoading = false;
+            _this53.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this50 = this;
+          var _this54 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this50.isLoading = false;
+            _this54.isLoading = false;
           });
         }
       }, {
@@ -9146,14 +9350,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this51 = this;
+          var _this55 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this51.user.Name = displayName;
-            _this51.user.DOB = null;
-            _this51.user.Phone = null;
-            _this51.return = _this51.FormsService.createUserCustomer(_this51.user).then(function (data) {
+            _this55.user.Name = displayName;
+            _this55.user.DOB = null;
+            _this55.user.Phone = null;
+            _this55.return = _this55.FormsService.createUserCustomer(_this55.user).then(function (data) {
               console.log(data);
             });
           });
@@ -10650,7 +10854,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       path: "buyerMatchlisting",
       component: _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_7__["BuyerMatcheListingComponent"]
     }, {
-      path: "SellerSelectedProperty/:MaxAmount/:Lookingpostcode/:LookingStreetname/:Position/:PropertyType/:Roomsmax/:Ownership/:Conditions/:Maxbathroom/:Maxreception/:features/:UserId/:FinancialPosition",
+      path: "SellerSelectedProperty/:MaxAmount/:Lookingpostcode/:LookingStreetname/:Position/:PropertyType/:Roomsmax/:Ownership/:Conditions/:Maxbathroom/:Maxreception/:features/:UserId/:FinancialPosition/:propertyId",
       component: _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_8__["SellerSelectedPropertyComponent"]
     }, {
       path: "fillformseller/:Lookingpostcode/:LookingAddress/:LookingTown/:Lookingstate/:PropertyType/:Maxrooms/:MaxAmount/:ownership/:Maxbathrooms/:Maxreception/:PropertyCondition/:features/:Country",
@@ -10671,7 +10875,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       path: "editprofile",
       component: _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_13__["EditProfileComponent"]
     }, {
-      path: "buyerSelectedPropertyDetail/:Lookingpostcode/:Lookingstate/:LookingTown/:norooms/:PropertyCondition/:MaxAmount/:LookingAddress/:ownership/:PropertyType/:features/:UserId/:MinAmount/:Maxbathrooms/:Maxrooms/:Maxreception",
+      path: "buyerSelectedPropertyDetail/:Lookingpostcode/:Lookingstate/:LookingTown/:norooms/:PropertyCondition/:MaxAmount/:LookingAddress/:ownership/:PropertyType/:features/:UserId/:MinAmount/:Maxbathrooms/:Maxrooms/:Maxreception/:propertyId",
       component: _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_14__["BuyerSelectedPropertyDetailComponent"]
     }, {
       path: "myListing",
@@ -11534,7 +11738,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this52 = this;
+        var _this56 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -11548,8 +11752,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this52.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this52.userData));
+            _this56.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this56.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -11567,34 +11771,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignIn(email, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee10() {
+          regeneratorRuntime.mark(function _callee12() {
             var result;
-            return regeneratorRuntime.wrap(function _callee10$(_context10) {
+            return regeneratorRuntime.wrap(function _callee12$(_context12) {
               while (1) {
-                switch (_context10.prev = _context10.next) {
+                switch (_context12.prev = _context12.next) {
                   case 0:
-                    _context10.prev = 0;
-                    _context10.next = 3;
+                    _context12.prev = 0;
+                    _context12.next = 3;
                     return this.afAuth.auth.signInWithEmailAndPassword(email, password);
 
                   case 3:
-                    result = _context10.sent;
+                    result = _context12.sent;
                     this.ngZone.run(function () {}); // this.SetUserData(result.user);
 
-                    _context10.next = 10;
+                    _context12.next = 10;
                     break;
 
                   case 7:
-                    _context10.prev = 7;
-                    _context10.t0 = _context10["catch"](0);
+                    _context12.prev = 7;
+                    _context12.t0 = _context12["catch"](0);
                     window.alert("incorrect username/password");
 
                   case 10:
                   case "end":
-                    return _context10.stop();
+                    return _context12.stop();
                 }
               }
-            }, _callee10, this, [[0, 7]]);
+            }, _callee12, this, [[0, 7]]);
           }));
         } // Sign up with email/password
 
@@ -11603,33 +11807,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignUp(email, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee11() {
+          regeneratorRuntime.mark(function _callee13() {
             var result;
-            return regeneratorRuntime.wrap(function _callee11$(_context11) {
+            return regeneratorRuntime.wrap(function _callee13$(_context13) {
               while (1) {
-                switch (_context11.prev = _context11.next) {
+                switch (_context13.prev = _context13.next) {
                   case 0:
-                    _context11.prev = 0;
-                    _context11.next = 3;
+                    _context13.prev = 0;
+                    _context13.next = 3;
                     return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
 
                   case 3:
-                    result = _context11.sent;
+                    result = _context13.sent;
                     this.SetUserData(result.user);
-                    _context11.next = 10;
+                    _context13.next = 10;
                     break;
 
                   case 7:
-                    _context11.prev = 7;
-                    _context11.t0 = _context11["catch"](0);
-                    window.alert(_context11.t0.message);
+                    _context13.prev = 7;
+                    _context13.t0 = _context13["catch"](0);
+                    window.alert(_context13.t0.message);
 
                   case 10:
                   case "end":
-                    return _context11.stop();
+                    return _context13.stop();
                 }
               }
-            }, _callee11, this, [[0, 7]]);
+            }, _callee13, this, [[0, 7]]);
           }));
         } // Send email verfificaiton when new user sign up
         // async SendVerificationMail() {
@@ -11643,31 +11847,31 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ForgotPassword(passwordResetEmail) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee12() {
-            return regeneratorRuntime.wrap(function _callee12$(_context12) {
+          regeneratorRuntime.mark(function _callee14() {
+            return regeneratorRuntime.wrap(function _callee14$(_context14) {
               while (1) {
-                switch (_context12.prev = _context12.next) {
+                switch (_context14.prev = _context14.next) {
                   case 0:
-                    _context12.prev = 0;
-                    _context12.next = 3;
+                    _context14.prev = 0;
+                    _context14.next = 3;
                     return this.afAuth.auth.sendPasswordResetEmail(passwordResetEmail);
 
                   case 3:
                     window.alert("Password reset email sent, check your inbox.");
-                    _context12.next = 9;
+                    _context14.next = 9;
                     break;
 
                   case 6:
-                    _context12.prev = 6;
-                    _context12.t0 = _context12["catch"](0);
-                    window.alert(_context12.t0);
+                    _context14.prev = 6;
+                    _context14.t0 = _context14["catch"](0);
+                    window.alert(_context14.t0);
 
                   case 9:
                   case "end":
-                    return _context12.stop();
+                    return _context14.stop();
                 }
               }
-            }, _callee12, this, [[0, 6]]);
+            }, _callee14, this, [[0, 6]]);
           }));
         } // Returns true when user is looged in and email is verified
 
@@ -11695,33 +11899,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee13() {
+          regeneratorRuntime.mark(function _callee15() {
             var result;
-            return regeneratorRuntime.wrap(function _callee13$(_context13) {
+            return regeneratorRuntime.wrap(function _callee15$(_context15) {
               while (1) {
-                switch (_context13.prev = _context13.next) {
+                switch (_context15.prev = _context15.next) {
                   case 0:
-                    _context13.prev = 0;
-                    _context13.next = 3;
+                    _context15.prev = 0;
+                    _context15.next = 3;
                     return this.afAuth.auth.signInWithPopup(provider);
 
                   case 3:
-                    result = _context13.sent;
+                    result = _context15.sent;
                     this.ngZone.run(function () {});
-                    _context13.next = 10;
+                    _context15.next = 10;
                     break;
 
                   case 7:
-                    _context13.prev = 7;
-                    _context13.t0 = _context13["catch"](0);
-                    window.alert(_context13.t0);
+                    _context15.prev = 7;
+                    _context15.t0 = _context15["catch"](0);
+                    window.alert(_context15.t0);
 
                   case 10:
                   case "end":
-                    return _context13.stop();
+                    return _context15.stop();
                 }
               }
-            }, _callee13, this, [[0, 7]]);
+            }, _callee15, this, [[0, 7]]);
           }));
         }
       }, {
@@ -11729,37 +11933,37 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee14() {
-            var _this53 = this;
+          regeneratorRuntime.mark(function _callee16() {
+            var _this57 = this;
 
             var result;
-            return regeneratorRuntime.wrap(function _callee14$(_context14) {
+            return regeneratorRuntime.wrap(function _callee16$(_context16) {
               while (1) {
-                switch (_context14.prev = _context14.next) {
+                switch (_context16.prev = _context16.next) {
                   case 0:
-                    _context14.prev = 0;
-                    _context14.next = 3;
+                    _context16.prev = 0;
+                    _context16.next = 3;
                     return this.afAuth.auth.signInWithPopup(provider);
 
                   case 3:
-                    result = _context14.sent;
+                    result = _context16.sent;
                     this.ngZone.run(function () {
-                      _this53.SetUserData(result.user);
+                      _this57.SetUserData(result.user);
                     });
-                    _context14.next = 10;
+                    _context16.next = 10;
                     break;
 
                   case 7:
-                    _context14.prev = 7;
-                    _context14.t0 = _context14["catch"](0);
+                    _context16.prev = 7;
+                    _context16.t0 = _context16["catch"](0);
                     window.alert(" incorrect username/password needs to change");
 
                   case 10:
                   case "end":
-                    return _context14.stop();
+                    return _context16.stop();
                 }
               }
-            }, _callee14, this, [[0, 7]]);
+            }, _callee16, this, [[0, 7]]);
           }));
         }
         /* Setting up user data when sign in with username/password,
@@ -11785,12 +11989,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignOut() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee15() {
-            return regeneratorRuntime.wrap(function _callee15$(_context15) {
+          regeneratorRuntime.mark(function _callee17() {
+            return regeneratorRuntime.wrap(function _callee17$(_context17) {
               while (1) {
-                switch (_context15.prev = _context15.next) {
+                switch (_context17.prev = _context17.next) {
                   case 0:
-                    _context15.next = 2;
+                    _context17.next = 2;
                     return this.afAuth.auth.signOut();
 
                   case 2:
@@ -11799,10 +12003,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 4:
                   case "end":
-                    return _context15.stop();
+                    return _context17.stop();
                 }
               }
-            }, _callee15, this);
+            }, _callee17, this);
           }));
         }
       }, {
@@ -12150,19 +12354,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this54 = this;
+          var _this58 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this54.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this54.userData));
+              _this58.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this58.userData));
 
-              _this54.LoggedIn();
+              _this58.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this54.LoggedOut();
+              _this58.LoggedOut();
             }
           });
         }
@@ -12181,44 +12385,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this55 = this;
+          var _this59 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this55.isLoading = false;
+            _this59.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this56 = this;
+          var _this60 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this56.isLoading = false;
+            _this60.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this57 = this;
+          var _this61 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this57.isLoading = false;
+            _this61.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this58 = this;
+          var _this62 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this58.isLoading = false;
+            _this62.isLoading = false;
           });
         }
       }, {
@@ -12240,16 +12444,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this59 = this;
+          var _this63 = this;
 
           console.log(displayName);
           this.overlay = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this59.isLoading = false;
-            _this59.user.Name = displayName;
-            _this59.user.DOB = null;
-            _this59.user.Phone = null;
-            _this59.return = _this59.FormService.createUserCustomer(_this59.user).then(function (data) {
+            _this63.isLoading = false;
+            _this63.user.Name = displayName;
+            _this63.user.DOB = null;
+            _this63.user.Phone = null;
+            _this63.return = _this63.FormService.createUserCustomer(_this63.user).then(function (data) {
               console.log(data);
             });
           });
