@@ -681,7 +681,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<div class=\"container profile-main-container\">\r\n  <div class=\"profile-wrapper-content\">\r\n    <p class=\"profile-heading heading-nestimate\"></p>\r\n    <div class=\"profile-name-image mt-4\">\r\n      <!-- <img src=\"{{user.photoURL}}\" class=\"rounded-circle Profile-pic\" alt=\"Cinque Terre\"> -->\r\n      <p class=\"profile-name\">{{user.Name}}</p>\r\n    </div>\r\n  </div>\r\n  <mat-card class=\"profile-name-field-option\">\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Name</span>\r\n      </div>\r\n      <div>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput  required name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\">\r\n        </mat-form-field>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Phone No</span>\r\n      </div>\r\n      <div>\r\n         <!--Phone Number field-->\r\n         <mat-form-field class=\"example-full-width\">\r\n          <span matPrefix>+44 &nbsp;</span>\r\n          <input matInput  name=\"phonenumber\" class=\"mat-mail-input\"   [(ngModel)]=\"user.Phone\" type=”tel”  >\r\n        </mat-form-field>\r\n       \r\n        <!--Phone Number field-->\r\n      </div>\r\n    </div>\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Email Id</span>\r\n      </div>\r\n      <div>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput  name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.email\"\r\n            >\r\n        </mat-form-field>\r\n\r\n\r\n      </div>\r\n    </div>\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Date of Birth</span>\r\n      </div>\r\n      <div>\r\n        <p class=\"fname-text2\">\r\n          <!--Date Of Birth Field-->\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput [matDatepicker]=\"picker\" name=\"DOB\" class=\"mat-mail-input\" value=\"DOB\"\r\n              [(ngModel)]=\"user.DOB\">\r\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n            <mat-datepicker #picker></mat-datepicker>\r\n          </mat-form-field>\r\n          <!--Date Of Birth Field End-->\r\n\r\n\r\n        </p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Address</span>\r\n      </div>\r\n      <div>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput  required name=\"Address\" class=\"mat-mail-input\"  [(ngModel)]=\"user.Address\">\r\n        </mat-form-field>\r\n  \r\n      </div>\r\n    </div>\r\n\r\n\r\n  </mat-card>\r\n\r\n  <mat-card class=\"mt-2\">\r\n    <div class=\"prefrence-notification \">\r\n      <h5 class=\"text-center notification-heading\">Notification Prefrences</h5>\r\n      <div class=\"prefrence-radio\">\r\n  <form>\r\n  <div class=\"form-check\">\r\n      <label class=\"form-check-label\">\r\n        <input type=\"radio\" class=\"form-check-input\" name=\"optradio\"><p class=\"radio-text\">Email for every match\r\n      </p></label>\r\n    </div>\r\n    <div class=\"form-check\">\r\n      <label class=\"form-check-label\">\r\n        <input type=\"radio\" class=\"form-check-input\" name=\"optradio\"><p class=\"radio-text\">Email me once a week with all the matches \r\n        that I have\r\n      </p> </label>\r\n    </div>\r\n  </form> \r\n  </div> \r\n  \r\n  \r\n  </div>\r\n  \r\n  \r\n  </mat-card>\r\n\r\n\r\n\r\n  <div class=\"edit-profile-submitbutton\">\r\n    <!-- <button type=\"button\" class=\"btn btn-back heading-nestimate\" routerLink=\"/profile\">BACK</button> -->\r\n    <button type=\"button\" class=\"btn btn-back heading-nestimate\" (click)=\"userDetail()\">Save</button>\r\n\r\n  </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\r\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n</div>\r\n<div class=\"container profile-main-container\">\r\n  <div class=\"profile-wrapper-content\">\r\n    <p class=\"profile-heading heading-nestimate\"></p>\r\n    <div class=\"profile-name-image mt-4\">\r\n      <!-- <img src=\"{{user.photoURL}}\" class=\"rounded-circle Profile-pic\" alt=\"Cinque Terre\"> -->\r\n      <p class=\"profile-name\">{{user.Name}}</p>\r\n    </div>\r\n  </div>\r\n  <mat-card class=\"profile-name-field-option\">\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Name</span>\r\n      </div>\r\n      <div>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput  required name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\">\r\n        </mat-form-field>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Phone No</span>\r\n      </div>\r\n      <div>\r\n         <!--Phone Number field-->\r\n         <mat-form-field class=\"example-full-width\">\r\n          <span matPrefix>+44 &nbsp;</span>\r\n          <input matInput  name=\"phonenumber\" class=\"mat-mail-input\"   [(ngModel)]=\"user.Phone\" type=”tel”  >\r\n        </mat-form-field>\r\n       \r\n        <!--Phone Number field-->\r\n      </div>\r\n    </div>\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Email Id</span>\r\n      </div>\r\n      <div>\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput  name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.email\"\r\n            >\r\n        </mat-form-field>\r\n\r\n\r\n      </div>\r\n    </div>\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Date of Birth</span>\r\n      </div>\r\n      <div>\r\n        <p class=\"fname-text2\">\r\n          <!--Date Of Birth Field-->\r\n          <mat-form-field class=\"example-full-width\">\r\n            <input matInput [matDatepicker]=\"picker\" name=\"DOB\" class=\"mat-mail-input\" value=\"DOB\"\r\n              [(ngModel)]=\"user.DOB\">\r\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\r\n            <mat-datepicker #picker></mat-datepicker>\r\n          </mat-form-field>\r\n          <!--Date Of Birth Field End-->\r\n\r\n\r\n        </p>\r\n      </div>\r\n    </div>\r\n\r\n    <div class=\"grid-container\">\r\n      <div>\r\n        <span class=\"fname-text1 heading-nestimate\">Address</span>\r\n      </div>\r\n      <div>\r\n\r\n        <mat-form-field class=\"example-full-width\">\r\n          <input matInput  required name=\"Address\" class=\"mat-mail-input\"  [(ngModel)]=\"user.Currentaddress\">\r\n        </mat-form-field>\r\n  \r\n      </div>\r\n    </div>\r\n\r\n\r\n  </mat-card>\r\n\r\n  <mat-card class=\"mt-2\">\r\n    <div class=\"prefrence-notification \">\r\n      <h5 class=\"text-center notification-heading\">Notification Prefrences</h5>\r\n      <div class=\"prefrence-radio\">\r\n  <form>\r\n  <div class=\"form-check\">\r\n      <label class=\"form-check-label\">\r\n        <input type=\"radio\" class=\"form-check-input\" name=\"optradio\"><p class=\"radio-text\">Email for every match\r\n      </p></label>\r\n    </div>\r\n    <div class=\"form-check\">\r\n      <label class=\"form-check-label\">\r\n        <input type=\"radio\" class=\"form-check-input\" name=\"optradio\"><p class=\"radio-text\">Email me once a week with all the matches \r\n        that I have\r\n      </p> </label>\r\n    </div>\r\n  </form> \r\n  </div> \r\n  \r\n  \r\n  </div>\r\n  \r\n  \r\n  </mat-card>\r\n\r\n\r\n\r\n  <div class=\"edit-profile-submitbutton\">\r\n    <!-- <button type=\"button\" class=\"btn btn-back heading-nestimate\" routerLink=\"/profile\">BACK</button> -->\r\n    <button type=\"button\" class=\"btn btn-back heading-nestimate\" (click)=\"userDetail()\">Save</button>\r\n\r\n  </div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</div>";
     /***/
   },
 
@@ -4419,6 +4419,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             DOB: user.DOB,
             Phone: user.Phone,
             title: user.title = "Mr"
+          };
+          return userRef.set(userData, {
+            merge: true
+          });
+        }
+      }, {
+        key: "userupate",
+        value: function userupate(user) {
+          var userRef = this.db.doc("users/".concat(user.uid));
+          var userData = {
+            uid: user.uid,
+            email: user.email,
+            Name: user.Name,
+            DOB: user.DOB,
+            Phone: user.Phone,
+            title: user.title = "Mr",
+            Currentaddress: user.Currentaddress
           };
           return userRef.set(userData, {
             merge: true
@@ -9638,7 +9655,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 _this51.user.Email = element.data().email;
                 _this51.user.Phone = element.data().Phone;
                 _this51.user.DOB = element.data().DOB.toDate();
-                _this51.user.Address = element.data().Currentaddress;
+                _this51.user.Currentaddress = element.data().Currentaddress;
               }
             });
           });
@@ -9649,7 +9666,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           var _this52 = this;
 
           this.isLoading = true;
-          this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
+          this.return = this.fillFormsService.userupate(this.user).then(function (data) {
             _this52.isLoading = false;
 
             _this52.alert();
@@ -13515,7 +13532,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! K:\Angular Project\streethok\src\main.ts */
+    /*! /media/god/Main Data/Angular Project/streethok/src/main.ts */
     "./src/main.ts");
     /***/
   }
