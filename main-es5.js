@@ -2451,7 +2451,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   propertyId: item.id
                 }); //Use this object to populate html
 
-              } else if (item.data().PropertyType == _this6.stateService.listingBuyer.PropertyType && item.data().MaxAmount >= _this6.stateService.listingBuyer.MinAmount && item.data().MaxAmount <= _this6.stateService.listingBuyer.MaxAmount && item.data().latitude && item.data().longitude) {
+              } else if (item.data().PropertyType == _this6.stateService.listingBuyer.PropertyType && item.data().latitude && item.data().longitude) {
                 _this6.distanceInKm = _this6.getDistanceFromLatLonInKm(_this6.listingBuyer.latitude, _this6.listingBuyer.longitude, item.data().latitude, item.data().longitude);
 
                 _this6.unmatchedProperties.push({

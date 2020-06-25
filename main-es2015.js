@@ -1398,8 +1398,6 @@ let BuyerMatcheListingComponent = class BuyerMatcheListingComponent {
                 }
                 else if (item.data().PropertyType ==
                     this.stateService.listingBuyer.PropertyType &&
-                    item.data().MaxAmount >= this.stateService.listingBuyer.MinAmount &&
-                    item.data().MaxAmount <= this.stateService.listingBuyer.MaxAmount &&
                     item.data().latitude &&
                     item.data().longitude) {
                     this.distanceInKm = this.getDistanceFromLatLonInKm(this.listingBuyer.latitude, this.listingBuyer.longitude, item.data().latitude, item.data().longitude);
