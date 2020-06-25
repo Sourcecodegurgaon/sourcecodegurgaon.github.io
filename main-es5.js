@@ -12048,7 +12048,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function signIn(email, pass) {
           var _this79 = this;
 
-          console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
             _this79.isLoading = false;
@@ -12076,12 +12075,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function signUp(displayName, email, pass) {
           var _this80 = this;
 
-          this.isLoading = true;
+          this.isLoading = false;
           this.authService.SignUp(email, pass).then(function (data) {
             _this80.user.Name = displayName;
             _this80.user.DOB = null;
             _this80.user.Phone = null;
-            _this80.return = _this80.FormsService.createUserCustomer(_this80.user).then(function (data) {});
+            _this80.return = _this80.FormsService.createUserCustomer(_this80.user).then(function (data) {
+              if (_this80.user != null) {
+                _this80.isLoading = false;
+              }
+            });
           });
         }
       }, {

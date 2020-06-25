@@ -7763,7 +7763,6 @@ let NavigationBarComponent = class NavigationBarComponent {
         });
     }
     signIn(email, pass) {
-        console.log(email + pass);
         this.isLoading = true;
         this.authService.SignIn(email, pass).then(data => {
             this.isLoading = false;
@@ -7781,13 +7780,16 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.navLogin = false;
     }
     signUp(displayName, email, pass) {
-        this.isLoading = true;
+        this.isLoading = false;
         this.authService.SignUp(email, pass).then(data => {
             this.user.Name = displayName;
             this.user.DOB = null;
             this.user.Phone = null;
             this.return = this.FormsService.createUserCustomer(this.user)
                 .then(data => {
+                if (this.user != null) {
+                    this.isLoading = false;
+                }
             });
         });
     }
