@@ -322,6 +322,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myListings/edit-listing-buyer/editDataSubmission.component.html":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myListings/edit-listing-buyer/editDataSubmission.component.html ***!
+  \****************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-dialog-content>\r\n  Data has been submited successfully\r\n\r\n</mat-dialog-content>\r\n<mat-dialog-actions align=\"center\">\r\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\"\r\n    (click)=\"backClicked()\">{{cancelButtonText}}</button>\r\n</mat-dialog-actions>\r\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myListings/edit-listing-seller/edit-listing-seller.component.html":
 /*!******************************************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myListings/edit-listing-seller/edit-listing-seller.component.html ***!
@@ -332,6 +345,19 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ("<!-- Loading spinner -->\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <!--Login Form-->\n  \n  <div class=\"continue-form\" \n  *ngIf=\"overlay\">\n    <div class=\"nestimate-logo\">\n      <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n  \n    </div>\n    <div class=\"continue-text\">\n      <p class=\"overlay-text\">Thanks for registering!</p>\n      <p class=\"overlay-text\">Next Step: Register your home and see what’s possible. Complete the questionnaire to create your Nestimate.\n      </p>\n  \n      <p class=\"overlay-text-third\">\n      \n  Based on the answers provided by you on the questionnaire, our system will match the most relevant home seeker created Nestimates with yours.\n  Once you've finished, sit back, relax and let us do the hard work for you!</p>\n    </div>\n    <div class=\"continue-button\" (click)=\"continueClose()\">\n      <div class=\"continue-button-container\">\n        CONTINUE\n      </div>\n  \n    </div>\n  \n  \n  </div>\n  <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n    <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\n      <div class=\"user-cross\">\n        <h4 class=\"heading-nestimate\">Login</h4>\n  \n      </div>\n      <div class=\"social-button mt-4\">\n        <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n          Facebook\n        </button>\n        <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\n          Google+\n        </button>\n      </div>\n      <div class=\"input-group mb-3 mt-3\"></div>\n       <form (keydown.enter)=\"save()\">\n  \n        <div class=\"form-group has-search\">\n          <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n          <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\"  #userEmailLogin  [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n        </div>\n   \n        <div class=\"form-group has-search\">\n          <span class=\"fa fa-lock form-control-feedback\"></span>\n          <input type=\"password\" class=\"form-control custom-field\" name=\"passs\"  #userPasswordLogin type=\"password\" [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n        </div>\n        \n   \n  \n  \n  \n  \n  \n  \n      \n   \n    </form>\n      <div class=\"input-group-prepend other-option\">\n        <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n      </div>\n      <button type=\"button\" class=\"btn btn-social-login\" (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\n        Login\n      </button>\n      <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\" (click)=\"NewUser()\">Don't have an account? <span class=\"hyper outputText\">Sign up</span></p>\n    </mat-card>\n    <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\n  \n      <div class=\"sign-up\">\n        <div class=\"signup-heading\">\n  \n          <div class=\"user-cross\">\n            <h4 class=\"heading-nestimate\">Sign up</h4>\n  \n          </div>\n        </div>\n        <div class=\"social-button mt-2\">\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n            Facebook\n          </button>\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\n            Google+\n          </button>\n        </div>\n        <div class=\"input-group mb-3 mt-3\">\n          <form (keydown)=\"keyDownFunction($event)\">\n  \n  \n            <div class=\"form-group has-search\">\n              <span class=\"fa fa-user-circle-o form-control-feedback\"></span>\n              <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\"  [(ngModel)]=\"name\" #displayName>\n            </div>\n       \n            <div class=\"form-group has-search\">\n              <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n              <input  class=\"form-control custom-field\" type=\"email\" placeholder=\"Email\" #userEmailRegister type=\"email\" name=\"email\" [(ngModel)]=\"email\">\n            </div>\n  \n  \n            <div class=\"form-group has-search\">\n              <span class=\"fa fa-lock form-control-feedback\"></span>\n              <input  class=\"form-control custom-field\" placeholder=\"Password\" #userPasswordRegister type=\"password\" name=\"password\"\n              [(ngModel)]=\"password\">\n            </div>\n  \n    \n         \n         \n          </form>\n        </div>\n  \n  \n        <section class=\"example-section property-con-form\">\n  \n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\n          <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully\n            selected<br> third port\n          </mat-checkbox>\n          <label for=\"text\" class=\"heading-nestimate \">By clicking the sms box,you agreeing to recieve\"</label>\n          <label for=\"text\" class=\"heading-nestimate policy\">By clicking below to register, you confirm that you agree to our<span routerLink=\"/terms\"> Terms & Conditions </span>and you have read and understood our <span routerLink=\"/PrivacyPolicy\">Privacy Policy</span> </label>\n        </section>\n  \n        <button type=\"button\" class=\"btn btn-social-login\"\n          (click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\n          Sign Up\n        </button>\n      <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account?\n        <span class=\"hyper outputText\">Sign In</span></p> \n      </div>\n  \n    </mat-card>\n  \n  </div>\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  <!--Login Form End-->\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  <div class=\"container forms-container\" *ngIf=\"isLoggedIn\">\n    <div class=\"row\">\n      <section class=\"col\">\n        <form role=\"form\"  *ngIf=\"isLoggedIn\">\n          <mat-tab-group #matgroup class=\"form-tab-conatiner\" mat-align-tabs=\"center\" [selectedIndex]=\"selectedIndex\">\n            <mat-tab label=\"Personal Details\">\n              <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\n                <mat-card class=\"card-margin background-new-form\">\n                  <mat-card-title class=\"mat_card_title\">\n                    <p class=\"forms-heading new-heading-nestimate\">Personal Details</p>\n                  </mat-card-title>\n                  <p class=\"forms-star new-heading-nestimate\">*required</p>\n                </mat-card>\n                <mat-card class=\"card-margin background-new-form\">\n  \n                  <label class=\"new-heading-nestimate\">Title*</label><br>\n                  <mat-form-field>\n                    <mat-select name=\"title\" [(ngModel)]=\"user.title\" class=\"drop-down-list\">\n                      <mat-option value=\"Mr\">Mr</mat-option>\n                      <mat-option value=\"Ms\">Ms</mat-option>\n                      <mat-option value=\"Mrs\">Mrs</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                  <!--First Name-->\n                  <form class=\"example-form\">\n                    <mat-form-field class=\"example-full-width\">\n                      <input matInput placeholder=\"Full Name\" [formControl]=\"FirstnameFormControl\"\n                        name=\"First\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\">\n                      <mat-error\n                        *ngIf=\"FirstnameFormControl.hasError('First Name') && !FirstnameFormControl.hasError('required')\">\n                        Please enter a valid name\n                      </mat-error>\n                      <mat-error *ngIf=\"FirstnameFormControl.hasError('required')\">\n                        FirstName is <strong>required</strong>\n                      </mat-error>\n                    </mat-form-field>\n                  </form>\n                  <!--First Name End-->\n  \n  \n                  <!--Email Field End-->\n                  <form class=\"example-form\">\n                    <mat-form-field class=\"example-full-width\">\n                      <input matInput placeholder=\"Email Address*\" \n                         name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.Email\" [formControl]=\"emailFormControl\" >\n          \n                         <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\n                          Please enter a valid email address\n                        </mat-error>\n                        <mat-error *ngIf=\"emailFormControl.hasError('required')\">\n                          Email is <strong>required</strong>\n                        </mat-error>\n                    </mat-form-field>\n                  </form>\n                  <!--Email Field End-->\n  \n  \n                  <!--Date Of Birth Field-->\n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput [matDatepicker]=\"picker\" placeholder=\"DD/MM/YYYY*\"\n                      name=\"DOB\" class=\"mat-mail-input\" [(ngModel)]=\"user.DOB\">\n                    <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n                    <mat-datepicker #picker></mat-datepicker>\n                  </mat-form-field>\n                  <!--Date Of Birth Field End-->\n  \n  \n                  <!--Phone Number field-->\n                  <mat-form-field class=\"example-full-width\">\n                    <span matPrefix>+44 &nbsp;</span>\n                    <input matInput placeholder=\"Phone Number\"  name=\"phonenumber\"\n                      class=\"mat-mail-input\" [(ngModel)]=\"user.Phone\" type=”tel”  [formControl]=\"phoneFormControl\" maxlength=\"10\"> \n                      <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n                        Please enter a valid Phone Number\n                      </mat-error>\n                      <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n                        Phone Number is <strong>required</strong>\n                      </mat-error>\n                      <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n                        Phone Number is <strong>not valid</strong>\n                    \n                      </mat-error>\n                  </mat-form-field>\n                  \n                  <!--Phone Number field-->\n  \n             \n  \n                </mat-card>\n                   <!--Current Living-->\n                   <mat-card class=\"card-margin background-new-form\">\n                    <mat-card-title class=\"mat_card_title\">\n                      <p class=\"forms-heading new-heading-nestimate\">Your Address</p>\n                    </mat-card-title>\n                    <p class=\"paragraph-color new-heading-nestimate\">Area - Search by Postcode</p>\n                    <mat-option style=\"background-color: #F5F5F5;\">\n                      <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" placeholder=\"Enter Postcode\"\n                        aria-label=\"Post Code\" matInput [matAutocomplete]=\"autoCurrent\"\n                        [(ngModel)]=\"user.Currentpostcode\">\n                      <mat-autocomplete autoActiveFirstOption #autoCurrent=\"matAutocomplete\"\n                        (optionSelected)='getPosts($event.option.value)'>\n                        <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\"\n                          [value]=\"item\">\n                          <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                          </span> | <span>{{ item.citytown | titlecase}}</span>\n                        </mat-option>\n                      </mat-autocomplete>\n                    </mat-option>\n                    <p class=\"paragraph-color new-heading-nestimate\">Area - Search by Address</p>\n                    <mat-form-field class=\"example-full-width\">\n                      <input matInput placeholder=\"Address\" [formControl]=\"AddressFormControl\" name=\"CurrentAddress\"\n                        class=\"mat-mail-input\" [(ngModel)]=\"user.CurrentAddress\">\n    \n                    </mat-form-field>\n    \n                    <mat-form-field class=\"example-full-width\">\n                      <input matInput placeholder=\"Town/City\" [formControl]=\"TownFormControl\"\n                        [(ngModel)]=\"user.CurrentTown\" name=\"CurrentTown\" class=\"mat-mail-input\">\n    \n                    </mat-form-field>\n    \n                    <mat-form-field class=\"example-full-width\">\n                      <input matInput placeholder=\"County\" [formControl]=\"stateFormControl\" required\n                        [(ngModel)]=\"user.Currentstate\" name=\"Currentstate\" class=\"mat-mail-input\">\n                    </mat-form-field>\n                  </mat-card>\n                  <!--Current Living  End-->\n                <ul class=\"submit-button\">\n                  <div class=\"button-next\">\n                    <a (click)=\"selectTab(1, 0)\" class=\"btn btn-primary btnNext btn-next\">Next</a>\n                  </div>\n                </ul>\n              </div>\n            </mat-tab>\n  \n            <mat-tab label=\"Property Details\">\n              <div class=\"tab-pane tabs-align-padding\" role=\"tabpanel\" id=\"step2\">\n    \n  \n  \n            \n  \n  \n  \n                <!--Where Are Looking for property-->\n                <mat-card class=\"card-margin background-new-form\">\n                  <mat-card-title class=\"mat_card_title new-heading-nestimate\">are you looking to</mat-card-title>\n                  <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\">\n                    <mat-radio-button value=\"sell\">sell</mat-radio-button>\n                    <mat-radio-button value=\"let\">let</mat-radio-button>\n                  </mat-radio-group>\n                  <p class=\"forms-heading new-heading-nestimate pb-2\">Please fill in details of the property for sale</p>\n                  <mat-checkbox (change)='getSame(Seller)' class=\"paragraph-color\" style=\"color:white\">Same as residential address</mat-checkbox>\n                  <mat-card-title class=\"mat_card_title\">\n                    <p class=\"forms-heading new-heading-nestimate\">Address of property for sale</p>\n                  </mat-card-title>\n  \n                  <p class=\"mt-4 new-heading-nestimate\">Search by Postcode</p>\n  \n                  <mat-option style=\"background-color: #F5F5F5;\">\n                    <input [formControl]=\"autoCompleteControlLooking\" type=\"text\" placeholder=\"Enter Postcode\"\n                      aria-label=\"Post-Code\" matInput [matAutocomplete]=\"autoLooking\"\n                      [(ngModel)]=\"listingSeller.Lookingpostcode\">\n                    <mat-autocomplete autoActiveSecondOption #autoLooking=\"matAutocomplete\"\n                      (optionSelected)='getPost($event.option.value)'>\n                      <mat-option *ngFor=\"let item of addressianAutoCompleteLooking$ | async; let index=index\"\n                        [value]=\"item\">\n                        <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                        </span> | <span>{{ item.citytown | titlecase}}</span>\n                      </mat-option>\n                    </mat-autocomplete>\n                  </mat-option>\n  \n  \n  \n                  <p class=\"mt-4 new-heading-nestimate\">Search by Address</p>\n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput placeholder=\"Address\" name=\"LookingAddress\" class=\"mat-mail-input\"\n                      [(ngModel)]=\"listingSeller.LookingAddress\">\n  \n                  </mat-form-field>\n                  <mat-form-field class=\"example-full-width mb-3\">\n                    <input matInput placeholder=\"Town/City\" [(ngModel)]=\"listingSeller.LookingTown\" name=\"LookingTowncity\"\n                      class=\"mat-mail-input\">\n                  </mat-form-field>\n  \n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput placeholder=\"County\" required [(ngModel)]=\"listingSeller.Lookingstate\"\n                      name=\"Lookingstate\" class=\"mat-mail-input\">\n                  </mat-form-field>\n  \n                  <mat-form-field class=\"example-full-width\">\n                    <input matInput placeholder=\"Country\" required [(ngModel)]=\"listingSeller.Country\"\n                      name=\"Country\" class=\"mat-mail-input\">\n                  </mat-form-field>\n                </mat-card>\n                <!--Where Are Looking for property End-->\n  \n  \n  \n                <mat-card class=\"card-margin background-new-form\">\n  \n                  <label for=\"text\" class=\"new-heading-nestimate \">Property Type*:</label><br>\n    \n                    <mat-form-field class=\"example-full-width\">\n                      <mat-select [(ngModel)]=\"listingSeller.PropertyType\" value=\"PropertyType\"\n                      name=\"PropertyType\">\n                        <mat-option value=\"Flat\">Flat</mat-option>\n                        <mat-option class=\"example-margin\" value=\"Studio\">Studio</mat-option>\n                        <mat-option class=\"example-margin\" value=\"Terracedhouse\">Terraced house</mat-option>\n                     \n                        <mat-option class=\"example-margin\" value=\"Maisonette\">Maisonette</mat-option>\n                        <mat-option class=\"example-margin\" value=\"Semi-detached\">Semi-detached house</mat-option>\n                          <mat-option class=\"example-margin\" value=\"Bungalow\">Bungalow</mat-option>\n                            <mat-option class=\"example-margin\" value=\"Detachedhouse\">Detached house</mat-option>\n                              <mat-option class=\"example-margin\" value=\"Town house\">Town house</mat-option>\n                                <mat-option class=\"example-margin\" value=\"Country house\">Country house</mat-option>\n                                  <mat-option class=\"example-margin\" value=\"Barn conversion\">Barn conversion</mat-option>\n                                    <mat-option class=\"example-margin\" value=\"Farm\">Farm</mat-option>\n                                    <mat-option class=\"example-margin\" value=\"Houseboat\">Houseboat</mat-option>\n                                    <mat-option class=\"example-margin\" value=\"Lodge\">Lodge</mat-option>\n  \n                      </mat-select>\n                    </mat-form-field><br>\n           \n  \n  \n  \n  \n                \n  \n                  <!--Min Max Rooms-->\n                  <label class=\"new-heading-nestimate\">No of Bedrooms</label>\n                  <div class=\"price-selection\">\n                    <mat-form-field class=\"example-full-width\">\n                   \n                      <mat-select [(value)]=\"Maxrooms\" name=\"Maxrooms\" [(ngModel)]=\"listingSeller.Maxrooms\">\n                        <mat-option value=\"Studio\">Studio</mat-option>\n                        <mat-option value=\"1\">1</mat-option>\n                        <mat-option value=\"2\">2</mat-option>\n                        <mat-option value=\"3\">3</mat-option>\n                        <mat-option value=\"4\">4</mat-option>\n                        <mat-option value=\"5\">5 or More</mat-option> \n                      </mat-select>\n                    </mat-form-field>\n                  </div>\n                  <!--Min Max Rooms End-->\n  \n  \n                  <!--Min Max Amount-->\n                  <label class=\"new-heading-nestimate\">Desired Price</label>\n                  <div class=\"price-selection\">\n                \n  \n                    <mat-form-field class=\"example-full-width\">\n                    \n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\">\n                        <mat-option value=\"50,000\">50,000</mat-option>\n                        <mat-option value=\"60,000\">60,000</mat-option>\n                        <mat-option value=\"70,000\">70,000</mat-option>\n                        <mat-option value=\"80,000\">80,000</mat-option>\n                        <mat-option value=\"90,000\">90,000</mat-option>\n                        <mat-option value=\"100,000\">100,000</mat-option>\n                        <mat-option value=\"110,000\">110,000</mat-option>\n                        <mat-option value=\"120,000\">120,000</mat-option>\n                        <mat-option value=\"125,000\">125,000</mat-option>\n                        <mat-option value=\"130,000\">130,000</mat-option>\n                        <mat-option value=\"140,000\">140,000</mat-option>\n                        <mat-option value=\"150,000\">150,000</mat-option>\n                        <mat-option value=\"160,000\">160,000</mat-option>\n                        <mat-option value=\"170,000\">170,000</mat-option>\n                        <mat-option value=\"175,000\">175,000</mat-option>\n                        <mat-option value=\"180,000\">180,000</mat-option>\n                        <mat-option value=\"190,000\">190,000</mat-option>\n                        <mat-option value=\"200,000\">200,000</mat-option>\n                        <mat-option value=\"210,000\">210,000</mat-option>\n                        <mat-option value=\"220,000\">220,000</mat-option>\n                        <mat-option value=\"230,000\">230,000</mat-option>\n                        <mat-option value=\"240,000\">240,000</mat-option>\n                        <mat-option value=\"250,000\">250,000</mat-option>\n                        <mat-option value=\"260,000\">260,000</mat-option>\n                        <mat-option value=\"270,000\">270,000</mat-option>\n                        <mat-option value=\"280,000\">280,000</mat-option>\n                        <mat-option value=\"290,000\">290,000</mat-option>\n                        <mat-option value=\"300,000\">300,000</mat-option>\n                        <mat-option value=\"325,000\">325,000</mat-option>\n                        <mat-option value=\"350,000\">350,000</mat-option>\n                        <mat-option value=\"375000\">375,000</mat-option>\n                        <mat-option value=\"400,000\">400,000</mat-option>\n                        <mat-option value=\"425,000\">425,000</mat-option>\n                        <mat-option value=\"450,000\">450,000</mat-option>\n                        <mat-option value=\"475,000\">475,000</mat-option>\n                        <mat-option value=\"500,000\">500,000</mat-option>\n                        <mat-option value=\"525,000\">525,000</mat-option>\n                        <mat-option value=\"550,000\">550,000</mat-option>\n                        <mat-option value=\"575,000\">575,000</mat-option>\n                        <mat-option value=\"600,000\">600,000</mat-option>\n                        <mat-option value=\"625,000\">625,000</mat-option>\n                        <mat-option value=\"650,000\">650,000</mat-option>\n                        <mat-option value=\"675,000\">675,000</mat-option>\n                        <mat-option value=\"700,000\">700,000</mat-option>\n                        <mat-option value=\"725,000\">725,000</mat-option>\n                        <mat-option value=\"750,000\">750,000</mat-option>\n                        <mat-option value=\"775,000\">775,000</mat-option>\n                        <mat-option value=\"800,000\">800,000</mat-option>\n                        <mat-option value=\"825,000\">825,000</mat-option>\n                        <mat-option value=\"850,000\">850,000</mat-option>\n                        <mat-option value=\"875,000\">875,000</mat-option>\n                        <mat-option value=\"900,000\">900,000</mat-option>\n                        <mat-option value=\"925,000\">925,000</mat-option>\n                        <mat-option value=\"950,000\">950,000</mat-option>\n                        <mat-option value=\"975,000\">975,000</mat-option>\n                        <mat-option value=\"1,000,000\">1,000,000</mat-option>\n                        <mat-option value=\"1,250,000\">1,250,000</mat-option>\n                        <mat-option value=\"1,500,000\">1,500,000</mat-option>\n                        <mat-option value=\"1,750,000\">1,750,000</mat-option>\n                        <mat-option value=\"2,000,000\">2,000,000</mat-option>\n                        <mat-option value=\"2,250,000\">2,250,000</mat-option>\n                        <mat-option value=\"2,500,000\">2,500,000</mat-option>\n                        <mat-option value=\"30,00,000\">3,000,000</mat-option>\n                        <mat-option value=\"40,00,000\">4,000,000</mat-option>\n                        <mat-option value=\"50,00,000\">5,000,000</mat-option>\n                        <mat-option value=\"60,00,000\">6,000,000</mat-option>\n                        <mat-option value=\"70,00,000\">7,000,000</mat-option>\n                        <mat-option value=\"80,00,000\">8,000,000</mat-option>\n                        <mat-option value=\"10,000,000\">10,000,000</mat-option>\n                        <mat-option value=\"15,000,000\">15,000,000</mat-option>\n                        <mat-option value=\"20,000,000\">20,000,000</mat-option>\n                      </mat-select>\n                    </mat-form-field>\n                  </div>\n                  <!--Min Max Amount End-->\n  \n  \n                  <!--Ownership Field-->\n                  <mat-form-field class=\"example-full-width\" style=\"width: 100%;\">\n                    <mat-label class=\"new-heading-nestimate\">Ownership</mat-label>\n                    <mat-select placeholder=\"Ownership\" [(ngModel)]=\"listingSeller.ownership\" value=\"ownership\" name=\"ownership\">\n                      <mat-option value=\"Leasehold\">Leasehold</mat-option>\n                      <mat-option value=\"Freehold\">Freehold</mat-option>\n                      <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                  <!--Ownership Field End-->\n  \n  \n                 \n  \n                </mat-card>\n    \n  <mat-card class=\"card-margin background-new-form\">\n  \n    <p class=\"forms-heading new-heading-nestimate pb-2\">Optional Details</p>\n  \n    <!--Min Max No of Bathrooms-->\n    <label class=\"new-heading-nestimate\">No of Bathrooms</label>\n    <div class=\"price-selection\">\n      <mat-form-field class=\"example-full-width\">\n        <mat-select [(value)]=\"Maxbathrooms\" name=\"Maxbathrooms\" [(ngModel)]=\"listingSeller.Maxbathrooms\">\n          <mat-option value=\"1\">1</mat-option>\n          <mat-option value=\"2\">2</mat-option>\n          <mat-option value=\"3\">3 or more</mat-option>\n        </mat-select>\n      </mat-form-field>\n    </div>\n    <!--Min Max No of Bathrooms End-->\n  <!--Min Max No of Reception Rooms-->\n  <label class=\"new-heading-nestimate\">No of Reception Rooms</label>\n  <div class=\"price-selection\">\n  \n    <mat-form-field class=\"example-full-width\">\n  \n      <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingSeller.Maxreception\">\n        <mat-option value=\"1\">1</mat-option>\n        <mat-option value=\"2\">2</mat-option>\n        <mat-option value=\"3\">3 or more</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n  <!--Min Max No of Reception Rooms End-->\n  \n                  <!--PropertyCondition Field-->\n                  <label class=\"new-heading-nestimate\">Property Condition</label>\n                  <mat-form-field class=\"example-full-width\" style=\"width: 100%;\">\n                   \n                    <mat-select  [(ngModel)]=\"listingSeller.PropertyCondition\"\n                       value=\"PropertyCondition\" name=\"PropertyCondition\">\n                      <mat-option value=\"Refurbished\">Refurbished</mat-option>\n                      <mat-option value=\"NewBuild\">New Build</mat-option>\n                      <mat-option value=\"Needsmodernisation\">Needs modernisation</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                  <!--PropertyCondition Field End-->\n                  <!--Aplicable Features-->\n                  <label class=\"new-heading-nestimate\">Property Features</label>\n                  <mat-form-field class=\"example-full-width\">\n                    \n                    <mat-select [formControl]=\"features\" multiple [(ngModel)]=\"listingSeller.features\" #sl>\n                      <div class=\"select-constion\">\n                        <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n                      </div>\n                      <mat-option *ngFor=\"let features of applicable\" [value]=\"features\" class=\"select-check mat-check\">{{features}}</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                  <!--Aplicable Feature End-->\n  \n  </mat-card>\n    \n  \n                <div class=\"button-next-tab2\">\n                  <a (click)=\"selectTab(0, 1)\" class=\"btn  btnPrevious btn-next\">Previous</a>\n                  <a (click)=\"selectTab(2, 1)\" class=\"btn btn-primary btnNext btn-next\" (click)=\"onSubmit()\">Next</a>\n                </div>\n              </div>\n  \n  \n            </mat-tab>\n  \n      \n          </mat-tab-group>\n        </form>\n      </section>\n    </div>\n  </div>\n  \n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myListings/edit-listing-seller/editSellerSubmission.component.html":
+/*!*******************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myListings/edit-listing-seller/editSellerSubmission.component.html ***!
+  \*******************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-dialog-content>\r\n  Data has been submited successfully\r\n\r\n</mat-dialog-content>\r\n<mat-dialog-actions align=\"center\">\r\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\"\r\n    routerLink=\"/buyerMatchlisting\">{{cancelButtonText}}</button>\r\n</mat-dialog-actions>\r\n");
 
 /***/ }),
 
@@ -370,7 +396,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"my-requirement-container container\">\r\n  <p class=\"my-requirement-heading heading-nestimate\">\r\n    My Nestimates\r\n  </p>\r\n\r\n  <mat-tab-group>\r\n    <mat-tab label=\"To Buy\" class=\"mat-label-align\" *ngIf=\"propertyRequirementDetails.length > 0\">\r\n      <div class=\"mat-card-content-new\" *ngFor=\"let requirement of propertyRequirementDetails\" >\r\n        <mat-card class=\"mat-card\">\r\n          <div class=\"mat-card-content-new-content\">\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n            </div>\r\n            <div class=\"mat-card-content-text\">\r\n              <div class=\"price-range\">\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{requirement.MinAmount}}     -     \t&pound;{{requirement.MaxAmount}}</span>\r\n              </div>\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate\">Search SearchRadius:<span\r\n                    class=\"outputText\">{{requirement.SearchRadius}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate\">Poperty Type:<span\r\n                    class=\"outputText\">{{requirement.PropertyType}}</span></p>\r\n              </div>\r\n              <div class=\"button-container\">\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/EditListingBuyer/{{requirement.Currentpostcode}}\r\n                /{{requirement.CurrentTown}}\r\n                /{{requirement.CurrentAddress}}\r\n                /{{requirement.Currentstate}}\r\n                /{{requirement.Currentcountry}}\r\n                /{{requirement.Lookingpostcode}}\r\n                /{{requirement.LookingStreetname}}\r\n                /{{requirement.LookingTown}}\r\n                /{{requirement.Lookingstate}}\r\n                /{{requirement.Country}}\r\n                /{{requirement.FinancialPosition}}\r\n                /{{requirement.SearchRadius}}\r\n                /{{requirement.PropertyType}}\r\n                /{{requirement.Roommin}}\r\n                /{{requirement.Roomsmax}}\r\n                /{{requirement.MinAmount}}\r\n                /{{requirement.MaxAmount}}\r\n                /{{requirement.Validity}}\r\n                /{{requirement.Minbathroom}}\r\n                /{{requirement.Maxbathroom}}\r\n                /{{requirement.Minreception}}\r\n                /{{requirement.Maxreception}}\r\n                /{{requirement.Conditions}}\r\n                /{{requirement.Ownership}}\r\n                /{{requirement.features}}\r\n                /{{docid}}\r\n                \">Edit</button>\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/listingpropertydetail/{{requirement.MinAmount}}/{{requirement.MaxAmount}}/{{requirement.Lookingpostcode}}/{{requirement.ChainStatus}}/{{requirement.FinancialPosition}}/{{requirement.PropertyType}}/{{requirement.Position}}/{{requirement.SearchRadius}}/{{requirement.MaxAmount}}\">See Details</button>\r\n                \r\n              </div>\r\n            </div>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n\r\n\r\n\r\n\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"To Sell\" class=\"mat-label-align\" *ngIf=\"propertyDetails.length > 0\">\r\n      \r\n      <div class=\"mat-card-content-new\"  *ngFor=\"let property of propertyDetails\"  >\r\n        <mat-card class=\"mat-card\">\r\n          <div class=\"mat-card-content-new-content\">\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n            </div>\r\n            <div class=\"mat-card-content-text\">\r\n              <div class=\"price-range\">\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\r\n              </div>\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate overflow-setting\">Postcode:<span\r\n                    class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate overflow-setting\">Poperty Type:<span\r\n                    class=\"outputText\">{{property.PropertyType}}</span></p>\r\n              </div>\r\n              <div class=\"button-container\">\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/editListingSeller/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.LookingTown}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.Maxrooms}}/{{property.MaxAmount}}/{{property.ownership}}/{{property.Maxbathrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.features}}/{{property.Country}}\">Edit</button>\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/propertypropertydetail/{{property.MaxAmount}}/{{property.PropertyType}}/{{property.Lookingpostcode}}/{{property.Maxrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.Maxbathrooms}}\">See Details</button>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n\r\n\r\n\r\n   \r\n    \r\n    \r\n    \r\n    </mat-tab>\r\n  \r\n  </mat-tab-group>\r\n\r\n</div>\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"my-requirement-container container\">\r\n  <p class=\"my-requirement-heading heading-nestimate\">\r\n    My Nestimates\r\n  </p>\r\n\r\n  <mat-tab-group>\r\n    <mat-tab label=\"To Buy\" class=\"mat-label-align\" *ngIf=\"propertyRequirementDetails.length > 0\">\r\n      <div class=\"mat-card-content-new\" *ngFor=\"let requirement of propertyRequirementDetails\" >\r\n        <mat-card class=\"mat-card\">\r\n          <div class=\"mat-card-content-new-content\">\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n            </div>\r\n            <div class=\"mat-card-content-text\">\r\n              <div class=\"price-range\">\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{requirement.MinAmount}}     -     \t&pound;{{requirement.MaxAmount}}</span>\r\n              </div>\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate\">Search SearchRadius:<span\r\n                    class=\"outputText\">{{requirement.SearchRadius}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate\">Poperty Type:<span\r\n                    class=\"outputText\">{{requirement.PropertyType}}</span></p>\r\n              </div>\r\n              <div class=\"button-container\">\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/EditListingBuyer/{{requirement.Currentpostcode}}\r\n                /{{requirement.CurrentTown}}\r\n                /{{requirement.CurrentAddress}}\r\n                /{{requirement.Currentstate}}\r\n                /{{requirement.Currentcountry}}\r\n                /{{requirement.Lookingpostcode}}\r\n                /{{requirement.LookingStreetname}}\r\n                /{{requirement.LookingTown}}\r\n                /{{requirement.Lookingstate}}\r\n                /{{requirement.Country}}\r\n                /{{requirement.FinancialPosition}}\r\n                /{{requirement.SearchRadius}}\r\n                /{{requirement.PropertyType}}\r\n                /{{requirement.Roommin}}\r\n                /{{requirement.Roomsmax}}\r\n                /{{requirement.MinAmount}}\r\n                /{{requirement.MaxAmount}}\r\n                /{{requirement.Validity}}\r\n                /{{requirement.Minbathroom}}\r\n                /{{requirement.Maxbathroom}}\r\n                /{{requirement.Minreception}}\r\n                /{{requirement.Maxreception}}\r\n                /{{requirement.Conditions}}\r\n                /{{requirement.Ownership}}\r\n                /{{requirement.features}}\r\n                /{{docid}}\">Edit</button>\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/listingpropertydetail/{{requirement.MinAmount}}/{{requirement.MaxAmount}}/{{requirement.Lookingpostcode}}/{{requirement.ChainStatus}}/{{requirement.FinancialPosition}}/{{requirement.PropertyType}}/{{requirement.Position}}/{{requirement.SearchRadius}}/{{requirement.MaxAmount}}\">See Details</button>\r\n                \r\n              </div>\r\n            </div>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n\r\n\r\n\r\n\r\n\r\n    </mat-tab>\r\n    <mat-tab label=\"To Sell\" class=\"mat-label-align\" *ngIf=\"propertyDetails.length > 0\">\r\n      \r\n      <div class=\"mat-card-content-new\"  *ngFor=\"let property of propertyDetails\"  >\r\n        <mat-card class=\"mat-card\">\r\n          <div class=\"mat-card-content-new-content\">\r\n            <div class=\"mat-card-content-image\">\r\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\r\n            </div>\r\n            <div class=\"mat-card-content-text\">\r\n              <div class=\"price-range\">\r\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\r\n                <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\r\n              </div>\r\n              <div class=\"other-text\">\r\n                <p class=\"heading-nestimate overflow-setting\">Postcode:<span\r\n                    class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\r\n                <p class=\"heading-nestimate overflow-setting\">Poperty Type:<span\r\n                    class=\"outputText\">{{property.PropertyType}}</span></p>\r\n              </div>\r\n              <div class=\"button-container\">\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/editListingSeller/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.LookingTown}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.Maxrooms}}/{{property.MaxAmount}}/{{property.ownership}}/{{property.Maxbathrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.features}}/{{property.Country}}\">Edit</button>\r\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/propertypropertydetail/{{property.MaxAmount}}/{{property.PropertyType}}/{{property.Lookingpostcode}}/{{property.Maxrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.Maxbathrooms}}\">See Details</button>\r\n              </div>\r\n            </div>\r\n          </div>\r\n        </mat-card>\r\n      </div>\r\n\r\n\r\n\r\n   \r\n    \r\n    \r\n    \r\n    </mat-tab>\r\n  \r\n  </mat-tab-group>\r\n\r\n</div>\r\n");
 
 /***/ }),
 
@@ -500,7 +526,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\r\n  <div class=\"login-button-main\">\r\n\r\n    <p class=\"Login-buton-text\">Log In</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n\r\n      <nav>\r\n        <div class=\"main-navigation-bar\">\r\n          <div class=\"menu-toogle\">\r\n            <img src=\"../../../assets/Images/menu.svg\" class=\"icon-size\" *ngIf=\"open\" (click)=\"openMenu()\">\r\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"close\" (click)=\"closeMenu()\">\r\n          </div>\r\n\r\n          <div class=\"plus-icon\">\r\n            <img src=\"../../../assets/Images/add-outline.svg\" class=\"icon-size\" (click)=\"plusmenu()\"\r\n              *ngIf=\"plusOpenMenu\">\r\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"plusclose\"\r\n              (click)=\"plusCloseMenu()\">\r\n\r\n          </div>\r\n          <div class=\"imge-logo-header\">\r\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" (click)=\"closeMenu()\" />\r\n          </div>\r\n\r\n          <div class=\"notification\" (click)=\"notificationoverlayopen()\">\r\n            <div class=\"notification\" *ngIf=\"isLoggedIn\">\r\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size\">\r\n\r\n              <span class=\"log-out-text red-text\" *ngIf=\"matches>0\">{{matches}}</span>\r\n            </div>\r\n          </div>\r\n          <div class=\"logout\">\r\n            <div class=\"logout-icon\" *ngIf=\"!isLoggedIn\" (click)=\" openLogIn()\">\r\n              <img src=\"../../../assets/Images/person-outline.svg\" class=\"icon-size\">\r\n              <span class=\"log-out-text heading-nestimate\">LogIn</span>\r\n            </div>\r\n            <div class=\"logout-icon\" *ngIf=\"isLoggedIn\">\r\n              <img src=\"../../../assets/Images/person.svg\" class=\"icon-size\" (click)=\"authService.SignOut()\">\r\n              <span class=\"log-out-text heading-nestimate\">Logout</span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"nav-div\" *ngIf=\"menuItem\">\r\n          <app-template></app-template>\r\n\r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\" (click)=\"Itemmenu()\">\r\n            <div class=\"grid-container\" routerLink=\"/\">\r\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/editprofile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">Edit Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myListing\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Nestimates</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">Activity</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n          </ul>\r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\r\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\r\n</div>\r\n\r\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\r\n  <div class=\"nav-login\">\r\n    <div *ngIf=\"isLoading\" class=\"loading-container\">\r\n      <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n    </div>\r\n    <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\r\n      <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\r\n        <div class=\"user-cross\">\r\n          <h4 class=\"heading-nestimate\">Login</h4>\r\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\r\n        </div>\r\n        <div class=\"social-button mt-4\">\r\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n            Facebook\r\n          </button>\r\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\r\n            Google+\r\n          </button>\r\n        </div>\r\n        <div class=\"input-group mb-3 mt-3\"></div>\r\n        <form (keydown.enter)=\"save()\">\r\n\r\n          <div class=\"form-group has-search\">\r\n            <span class=\"fa fa-envelope-o form-control-feedback\"></span>\r\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\r\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\r\n          </div>\r\n\r\n          <div class=\"form-group has-search\">\r\n            <span class=\"fa fa-lock form-control-feedback\"></span>\r\n            <input type=\"password\" class=\"form-control custom-field\" name=\"passs\" #userPasswordLogin type=\"password\"\r\n              [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\r\n          </div>\r\n        </form>\r\n        <div class=\"input-group-prepend other-option\">\r\n          <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\r\n        </div>\r\n        <button type=\"button\" class=\"btn btn-social-login\"\r\n          (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\r\n          Login\r\n        </button>\r\n        <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\" (click)=\"NewUser()\">Don't have an\r\n          account?<span class=\"hyper outputText\">Sign up</span></p>\r\n      </mat-card>\r\n      <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\r\n\r\n        <div class=\"sign-up\">\r\n          <div class=\"signup-heading\">\r\n            <div class=\"user-cross\">\r\n              <h4 class=\"heading-nestimate\">Sign up</h4>\r\n              <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"social-button mt-2\">\r\n            <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n              Facebook\r\n            </button>\r\n            <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\r\n              Google+\r\n            </button>\r\n          </div>\r\n          <div class=\"input-group mb-3 mt-3\">\r\n            <form (keydown)=\"keyDownFunction($event)\">\r\n              <div class=\"form-group has-search\">\r\n                <span class=\"fa fa-user-circle-o form-control-feedback\"></span>\r\n                <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\"\r\n                  [(ngModel)]=\"name\" #displayName>\r\n              </div>\r\n\r\n              <div class=\"form-group has-search\">\r\n                <span class=\"fa fa-envelope-o form-control-feedback\"></span>\r\n                <input class=\"form-control custom-field\" type=\"email\" placeholder=\"Email\" #userEmailRegister\r\n                  type=\"email\" name=\"email\" [(ngModel)]=\"email\">\r\n              </div>\r\n              <div class=\"form-group has-search\">\r\n                <span class=\"fa fa-lock form-control-feedback\"></span>\r\n                <input class=\"form-control custom-field\" placeholder=\"Password\" #userPasswordRegister type=\"password\"\r\n                  name=\"password\" [(ngModel)]=\"password\">\r\n              </div>\r\n            </form>\r\n          </div>\r\n          <section class=\"example-section property-con-form\">\r\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\r\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\r\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\r\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully\r\n              selected<br> third port\r\n            </mat-checkbox>\r\n            <p class=\"heading-nestimate m-0 \">By clicking the sms box,you agreeing to recieve\"</p>\r\n            <p for=\"text\" class=\"heading-nestimate policy\">By clicking below to register, you confirm that you agree to\r\n              our<span routerLink=\"/terms\"> Terms & Conditions </span>and you have read and understood our <span\r\n                routerLink=\"/PrivacyPolicy\">Privacy Policy</span> </p>\r\n          </section>\r\n          <button type=\"button\" class=\"btn btn-social-login\"\r\n            (click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\r\n            Sign Up\r\n          </button>\r\n          <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account?\r\n            <span class=\"hyper outputText\">Sign In</span></p>\r\n        </div>\r\n\r\n      </mat-card>\r\n    </div>\r\n\r\n  </div>\r\n</div>\r\n<div *ngIf=\"notificationoverlay\">\r\n\r\n  <app-notification></app-notification>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\r\n  <div class=\"login-button-main\">\r\n\r\n    <p class=\"Login-buton-text\">Log In</p>\r\n  </div>\r\n</div>\r\n\r\n\r\n<div class=\"mobile-wrapper\">\r\n  <div class=\"mobile-container\">\r\n    <div class=\"content\">\r\n\r\n      <nav>\r\n        <div class=\"main-navigation-bar\">\r\n          <div class=\"menu-toogle\">\r\n            <img src=\"../../../assets/Images/menu.svg\" class=\"icon-size\" *ngIf=\"open\" (click)=\"openMenu()\">\r\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"close\" (click)=\"closeMenu()\">\r\n          </div>\r\n\r\n          <div class=\"plus-icon\">\r\n            <img src=\"../../../assets/Images/add-outline.svg\" class=\"icon-size\" (click)=\"plusmenu()\"\r\n              *ngIf=\"plusOpenMenu\">\r\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"plusclose\"\r\n              (click)=\"plusCloseMenu()\">\r\n\r\n          </div>\r\n          <div class=\"imge-logo-header\">\r\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" (click)=\"closeMenu()\" />\r\n          </div>\r\n\r\n          <div class=\"notification\" (click)=\"notificationoverlayopen()\">\r\n            <div class=\"notification\" *ngIf=\"isLoggedIn\">\r\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size\">\r\n\r\n              <span class=\"log-out-text red-text\" *ngIf=\"matches>0\">{{matches}}</span>\r\n            </div>\r\n          </div>\r\n          <div class=\"logout\">\r\n            <div class=\"logout-icon\" *ngIf=\"!isLoggedIn\" (click)=\" openLogIn()\">\r\n              <img src=\"../../../assets/Images/person-outline.svg\" class=\"icon-size\">\r\n              <span class=\"log-out-text heading-nestimate\">LogIn</span>\r\n            </div>\r\n            <div class=\"logout-icon\" *ngIf=\"isLoggedIn\">\r\n              <img src=\"../../../assets/Images/person.svg\" class=\"icon-size\" (click)=\"authService.SignOut()\">\r\n              <span class=\"log-out-text heading-nestimate\">Logout</span>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"nav-div\" *ngIf=\"menuItem\">\r\n          <app-template></app-template>\r\n\r\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\" (click)=\"Itemmenu()\">\r\n            <div class=\"grid-container\" routerLink=\"/\">\r\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/editprofile\">\r\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">Edit Profile</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/myListing\">\r\n              <div>\r\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Nestimates</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\r\n              <div>\r\n                <img src=\"assets/Images/download-removebg-preview.png\" />\r\n              </div>\r\n              <div>\r\n                <li>\r\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">Activity</a>\r\n                </li>\r\n              </div>\r\n              <div>\r\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\r\n              </div>\r\n            </div>\r\n          </ul>\r\n        </div>\r\n      </nav>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\r\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\r\n</div>\r\n\r\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\r\n  <div class=\"nav-login\">\r\n  <div *ngIf=\"isLoading\" class=\"loading-container\">\r\n      <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\r\n    </div>\r\n    <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\r\n      <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\r\n        <div class=\"user-cross\">\r\n          <h4 class=\"heading-nestimate\">Login</h4>\r\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\r\n        </div>\r\n        <div class=\"social-button mt-4\">\r\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n            Facebook\r\n          </button>\r\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\r\n            Google+\r\n          </button>\r\n        </div>\r\n        <div class=\"input-group mb-3 mt-3\"></div>\r\n        <form (keydown.enter)=\"save()\">\r\n\r\n          <div class=\"form-group has-search\">\r\n            <span class=\"fa fa-envelope-o form-control-feedback\"></span>\r\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\r\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\r\n          </div>\r\n\r\n          <div class=\"form-group has-search\">\r\n            <span class=\"fa fa-lock form-control-feedback\"></span>\r\n            <input type=\"password\" class=\"form-control custom-field\" name=\"passs\" #userPasswordLogin type=\"password\"\r\n              [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\r\n          </div>\r\n        </form>\r\n        <div class=\"input-group-prepend other-option\">\r\n          <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\r\n        </div>\r\n        <button type=\"button\" class=\"btn btn-social-login\"\r\n          (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\r\n          Login\r\n        </button>\r\n        <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\" (click)=\"NewUser()\">Don't have an\r\n          account?<span class=\"hyper outputText\">Sign up</span></p>\r\n      </mat-card>\r\n      <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\r\n\r\n        <div class=\"sign-up\">\r\n          <div class=\"signup-heading\">\r\n            <div class=\"user-cross\">\r\n              <h4 class=\"heading-nestimate\">Sign up</h4>\r\n              <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\r\n            </div>\r\n          </div>\r\n          <div class=\"social-button mt-2\">\r\n            <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\r\n              Facebook\r\n            </button>\r\n            <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\r\n              Google+\r\n            </button>\r\n          </div>\r\n          <div class=\"input-group mb-3 mt-3\">\r\n            <form (keydown)=\"keyDownFunction($event)\">\r\n              <div class=\"form-group has-search\">\r\n                <span class=\"fa fa-user-circle-o form-control-feedback\"></span>\r\n                <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\"\r\n                  [(ngModel)]=\"name\" #displayName>\r\n              </div>\r\n\r\n              <div class=\"form-group has-search\">\r\n                <span class=\"fa fa-envelope-o form-control-feedback\"></span>\r\n                <input class=\"form-control custom-field\" type=\"email\" placeholder=\"Email\" #userEmailRegister\r\n                  type=\"email\" name=\"email\" [(ngModel)]=\"email\">\r\n              </div>\r\n              <div class=\"form-group has-search\">\r\n                <span class=\"fa fa-lock form-control-feedback\"></span>\r\n                <input class=\"form-control custom-field\" placeholder=\"Password\" #userPasswordRegister type=\"password\"\r\n                  name=\"password\" [(ngModel)]=\"password\">\r\n              </div>\r\n            </form>\r\n          </div>\r\n          <section class=\"example-section property-con-form\">\r\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\r\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\r\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\r\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully\r\n              selected<br> third port\r\n            </mat-checkbox>\r\n            <p class=\"heading-nestimate m-0 \">By clicking the sms box,you agreeing to recieve\"</p>\r\n            <p for=\"text\" class=\"heading-nestimate policy\">By clicking below to register, you confirm that you agree to\r\n              our<span routerLink=\"/terms\"> Terms & Conditions </span>and you have read and understood our <span\r\n                routerLink=\"/PrivacyPolicy\">Privacy Policy</span> </p>\r\n          </section>\r\n          <button type=\"button\" class=\"btn btn-social-login\"\r\n            (click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\r\n            Sign Up\r\n          </button>\r\n          <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account?\r\n            <span class=\"hyper outputText\">Sign In</span></p>\r\n        </div>\r\n\r\n      </mat-card>\r\n    </div> \r\n\r\n\r\n  </div>\r\n</div>\r\n<div *ngIf=\"notificationoverlay\">\r\n\r\n  <app-notification></app-notification>\r\n</div>");
 
 /***/ }),
 
@@ -1009,6 +1035,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var _Menu_myMatches_myMatches_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Menu/myMatches/myMatches.service */ "./src/app/Menu/myMatches/myMatches.service.ts");
+
 
 
 
@@ -1018,16 +1046,20 @@ __webpack_require__.r(__webpack_exports__);
 class home {
 }
 let HomeComponent = class HomeComponent {
-    constructor(authService, afAuth, Router, HttpService) {
+    constructor(authService, afAuth, Router, HttpService, MatchesService) {
         this.authService = authService;
         this.afAuth = afAuth;
         this.Router = Router;
         this.HttpService = HttpService;
+        this.MatchesService = MatchesService;
         this.selectedIndex = 0;
         this.maxNumberOfTabs = 2;
         this.isLoggedIn = true;
         this.isLoading = false;
         this.cookie = true;
+        this.buyerProperty = [];
+        this.sellerProperty = [];
+        this.checkMatches = false;
     }
     get user() {
         return this._user;
@@ -1036,6 +1068,10 @@ let HomeComponent = class HomeComponent {
         this._user = value;
     }
     ngOnInit() {
+        this.user = JSON.parse(localStorage.getItem("user"));
+        if (this.user != null) {
+            this.uid = this.user.uid;
+        }
         this.checkPolicy = JSON.parse(localStorage.getItem("Policy"));
         if (this.checkPolicy == false) {
             this.cookie = false;
@@ -1045,11 +1081,13 @@ let HomeComponent = class HomeComponent {
                 this.userData = user;
                 localStorage.setItem("user", JSON.stringify(this.userData));
                 this.LoggedIn();
+                console.log(this.propertyLength);
             }
             else {
                 localStorage.setItem("user", null);
                 JSON.parse(localStorage.getItem("user"));
                 this.LoggedOut();
+                this.checkMatches = false;
             }
         });
     }
@@ -1096,7 +1134,8 @@ HomeComponent.ctorParameters = () => [
     { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
     { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
-    { type: _http_service__WEBPACK_IMPORTED_MODULE_5__["HttpService"] }
+    { type: _http_service__WEBPACK_IMPORTED_MODULE_5__["HttpService"] },
+    { type: _Menu_myMatches_myMatches_service__WEBPACK_IMPORTED_MODULE_6__["MyMatchesService"] }
 ];
 HomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -4213,7 +4252,6 @@ let FillFormSellerComponent = class FillFormSellerComponent {
         this.selectedIndex = 0;
         this.maxNumberOfTabs = 2;
         this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
-        this.features = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
         this.applicable = [
             "Garden",
             "Driveway",
@@ -5247,6 +5285,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../http.service */ "./src/app/http.service.ts");
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var _Model_notification__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../Model/notification */ "./src/app/Model/notification.ts");
+/* harmony import */ var _editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./editDataSubmission.component */ "./src/app/Menu/myListings/edit-listing-buyer/editDataSubmission.component.ts");
+/* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+
+
 
 
 
@@ -5354,7 +5396,7 @@ let EditListingBuyerComponent = class EditListingBuyerComponent {
             this.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
             this.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
             this.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            this.listingBuyer.LookingTown = params.get("LookingTown");
+            this.listingBuyer.LookingTown = params.get("LookingTown").trim();
             console.log(this.listingBuyer.LookingTown);
             this.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
             this.listingBuyer.Country = params.get("Country").trim();
@@ -5374,7 +5416,7 @@ let EditListingBuyerComponent = class EditListingBuyerComponent {
             this.listingBuyer.Ownership = params.get("Ownership").trim();
             this.listingBuyer.features = params.get("features").trim();
             this.docid = params.get("docid").trim();
-            console.log(this.docid);
+            console.log(this.listingBuyer.features);
         });
         this.afAuth.authState.subscribe((user) => {
             if (user) {
@@ -5464,47 +5506,106 @@ let EditListingBuyerComponent = class EditListingBuyerComponent {
     selectTab(nextIndex, presentIndex) {
         if (presentIndex == 0) {
             if (this.user.Name == null) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Please enter valid fulll name" }
+                });
             }
             else if (this.user.email == null) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Please enter valid email" }
+                });
             }
             else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25)
                 < 18) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Age Must be 18+" }
+                });
             }
             else if (this.user.Phone == null) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Please enter valid phone number" }
+                });
             }
             else if (this.listingBuyer.ChainStatus == null) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Please fill Listing Buyer" }
+                });
             }
             else if (this.listingBuyer.Currentpostcode == null) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Please fill Current Postcode" }
+                });
             }
             else if (this.listingBuyer.CurrentAddress == null) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Please fill Current Address" }
+                });
             }
             else if (this.listingBuyer.Currentstate == null) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Please fill Current Sate" }
+                });
             }
             else if (this.listingBuyer.CurrentTown == null) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                    data: { message: "Please fill Current Town" }
+                });
             }
             else {
+                this.userDetail();
                 this.selectedIndex = nextIndex;
             }
         }
         else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
-                // if (this.listingBuyer.Lookingpostcode == null) {
-                // }
-                // else if (this.listingBuyer.LookingStreetname == null) {
-                // }
-                // else if (this.listingBuyer.Lookingstate == null) {
-                // }
-                // else if (this.listingBuyer.FinancialPosition == null) {
-                // }
-                // else if (this.listingBuyer.PropertyType == null) {
-                // }
-                // else if (this.listingBuyer.MinAmount == null) {
-                // }
-                // else if (this.listingBuyer.MaxAmount == null) {
-                // }
-                // else if (this.listingBuyer.Validity == null) {
-                // }
-                this.selectedIndex = nextIndex;
+                if (this.listingBuyer.Lookingpostcode == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please fill LookingPostcode" }
+                    });
+                }
+                else if (this.listingBuyer.LookingStreetname == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please fill LookingStreetname" }
+                    });
+                }
+                else if (this.listingBuyer.Lookingstate == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please fill Looking State" }
+                    });
+                }
+                else if (this.listingBuyer.FinancialPosition == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please fill Financial Position" }
+                    });
+                }
+                else if (this.listingBuyer.SearchRadius == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please fill Select Radius" }
+                    });
+                }
+                else if (this.listingBuyer.PropertyType == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please Select Property Type" }
+                    });
+                }
+                else if (this.listingBuyer.MinAmount == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please Select MinAmount" }
+                    });
+                }
+                else if (this.listingBuyer.MaxAmount == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please Select MaxAmount" }
+                    });
+                }
+                else if (this.listingBuyer.Validity == null) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                        data: { message: "Please Select Validity" }
+                    });
+                }
+                else {
+                    this.selectedIndex = nextIndex;
+                }
             }
             else {
                 this.selectedIndex = nextIndex;
@@ -5515,8 +5616,10 @@ let EditListingBuyerComponent = class EditListingBuyerComponent {
                 if (this.listingBuyer.Type == null ||
                     this.listingBuyer.Position == null ||
                     this.listingBuyer.otherInfo == null) {
+                    this.openAlertDialog();
                 }
                 else {
+                    this.onSubmit();
                 }
             }
             else {
@@ -5528,13 +5631,19 @@ let EditListingBuyerComponent = class EditListingBuyerComponent {
         this.isLoading = true;
         this.return = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(data => {
             this.isLoading = false;
+            const dialogRef = this.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"], {
+                data: {
+                    message: "HelloWorld",
+                    buttonText: {
+                        cancel: "Done"
+                    }
+                }
+            });
         });
     }
     userDetail() {
-        console.log(this.user);
         this.return = this.EditListingBuyerService.createUserCustomer(this.user)
             .then(data => {
-            console.log(this.user);
         });
     }
     otherOption() {
@@ -5645,6 +5754,13 @@ let EditListingBuyerComponent = class EditListingBuyerComponent {
     }
     saves() {
         this.signIn(this.emails, this.passs);
+    }
+    openAlertDialog() {
+        const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+            data: {
+                message: "Please Fill form  fields before proceeding",
+            },
+        });
     }
 };
 EditListingBuyerComponent.ctorParameters = () => [
@@ -5802,6 +5918,65 @@ EditListingBuyerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/Menu/myListings/edit-listing-buyer/editDataSubmission.component.ts":
+/*!************************************************************************************!*\
+  !*** ./src/app/Menu/myListings/edit-listing-buyer/editDataSubmission.component.ts ***!
+  \************************************************************************************/
+/*! exports provided: EditDataSubmissionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditDataSubmissionComponent", function() { return EditDataSubmissionComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+
+
+
+
+let EditDataSubmissionComponent = class EditDataSubmissionComponent {
+    constructor(data, _location, dialogRef) {
+        this.data = data;
+        this._location = _location;
+        this.dialogRef = dialogRef;
+        this.message = "";
+        this.cancelButtonText = "Cancel";
+        if (data) {
+            this.message = data.message || this.message;
+            if (data.buttonText) {
+                this.cancelButtonText = data.buttonText.cancel || this.cancelButtonText;
+            }
+        }
+        this.dialogRef.updateSize('300vw', '300vw');
+    }
+    ngOnInit() {
+    }
+    onConfirmClick() {
+        this.dialogRef.close(true);
+    }
+    backClicked() {
+        this._location.back();
+    }
+};
+EditDataSubmissionComponent.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_3__["Location"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"] }
+];
+EditDataSubmissionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-editDataSubmission',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./editDataSubmission.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myListings/edit-listing-buyer/editDataSubmission.component.html")).default
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
+], EditDataSubmissionComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/Menu/myListings/edit-listing-seller/edit-listing-seller.component.css":
 /*!***************************************************************************************!*\
   !*** ./src/app/Menu/myListings/edit-listing-seller/edit-listing-seller.component.css ***!
@@ -5842,6 +6017,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
 /* harmony import */ var _edit_listing_seller_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./edit-listing-seller.service */ "./src/app/Menu/myListings/edit-listing-seller/edit-listing-seller.service.ts");
 /* harmony import */ var _Home_Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../Home/Property/fillFormBuyer/fillFormBuyer.service */ "./src/app/Home/Property/fillFormBuyer/fillFormBuyer.service.ts");
+/* harmony import */ var _editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./editSellerSubmission.component */ "./src/app/Menu/myListings/edit-listing-seller/editSellerSubmission.component.ts");
+
 
 
 
@@ -6085,6 +6262,14 @@ let EditListingSellerComponent = class EditListingSellerComponent {
         this.isLoading = true;
         this.return = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(data => {
             this.isLoading = false;
+            const dialogRef = this.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+                data: {
+                    message: "HelloWorld",
+                    buttonText: {
+                        cancel: "Done"
+                    }
+                }
+            });
         });
     }
     lookup(value) {
@@ -6458,6 +6643,65 @@ EditListingSellerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/Menu/myListings/edit-listing-seller/editSellerSubmission.component.ts":
+/*!***************************************************************************************!*\
+  !*** ./src/app/Menu/myListings/edit-listing-seller/editSellerSubmission.component.ts ***!
+  \***************************************************************************************/
+/*! exports provided: EditSellerSubmissionComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditSellerSubmissionComponent", function() { return EditSellerSubmissionComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+
+
+
+
+let EditSellerSubmissionComponent = class EditSellerSubmissionComponent {
+    constructor(data, _location, dialogRef) {
+        this.data = data;
+        this._location = _location;
+        this.dialogRef = dialogRef;
+        this.message = "";
+        this.cancelButtonText = "Cancel";
+        if (data) {
+            this.message = data.message || this.message;
+            if (data.buttonText) {
+                this.cancelButtonText = data.buttonText.cancel || this.cancelButtonText;
+            }
+        }
+        this.dialogRef.updateSize('300vw', '300vw');
+    }
+    ngOnInit() {
+    }
+    onConfirmClick() {
+        this.dialogRef.close(true);
+    }
+    backClicked() {
+        this._location.back();
+    }
+};
+EditSellerSubmissionComponent.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"], args: [_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"],] }] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_3__["Location"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"] }
+];
+EditSellerSubmissionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-editSellerSubmission',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./editSellerSubmission.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myListings/edit-listing-seller/editSellerSubmission.component.html")).default
+    }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__param"](0, Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Inject"])(_angular_material__WEBPACK_IMPORTED_MODULE_2__["MAT_DIALOG_DATA"]))
+], EditSellerSubmissionComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/Menu/myListings/listing-property-detail/listing-property-detail.component.css":
 /*!***********************************************************************************************!*\
   !*** ./src/app/Menu/myListings/listing-property-detail/listing-property-detail.component.css ***!
@@ -6631,7 +6875,6 @@ let MyListingComponent = class MyListingComponent {
         this.myrequirement_service = myrequirement_service;
         this.propertyDetails = [];
         this.propertyRequirementDetails = [];
-        this.docid = [];
     }
     ngOnInit() {
         // User ID
@@ -6640,12 +6883,13 @@ let MyListingComponent = class MyListingComponent {
         // Fetch details
         this.myrequirement_service.getBuyerRequirement(this.uid).then(res => {
             res.forEach(element => {
+                this.docid = element.id;
                 this.propertyRequirementDetails.push(element.data());
             });
         });
         this.myrequirement_service.getSellerProperties(this.uid).then(res => {
             res.forEach(element => {
-                console.log(element.id);
+                this.docid = element.id;
                 this.propertyDetails.push(element.data());
             });
         });
@@ -7086,7 +7330,6 @@ let MyMatchesComponent = class MyMatchesComponent {
                     this.distinctExpressedUid.push(item.data().propertyId);
                 }
             });
-            console.log(this.distinctExpressedUid);
         });
     }
     checkExpressForValue(uid) {
@@ -7778,14 +8021,17 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.navLogin = false;
     }
     signUp(displayName, email, pass) {
-        this.isLoading = false;
         this.authService.SignUp(email, pass).then(data => {
             this.user.Name = displayName;
             this.user.DOB = null;
             this.user.Phone = null;
+            this.isLoading = true;
             this.return = this.FormsService.createUserCustomer(this.user)
                 .then(data => {
                 if (this.user != null) {
+                    this.isLoading = false;
+                }
+                else {
                     this.isLoading = false;
                 }
             });
@@ -8889,6 +9135,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Menu_myMatches_buyer_selected_property_buyer_selected_property_component__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(/*! ./Menu/myMatches/buyer-selected-property/buyer-selected-property.component */ "./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.ts");
 /* harmony import */ var _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_105__ = __webpack_require__(/*! ./Menu/myListings/edit-listing-buyer/edit-listing-buyer.component */ "./src/app/Menu/myListings/edit-listing-buyer/edit-listing-buyer.component.ts");
 /* harmony import */ var _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(/*! ./Menu/myListings/edit-listing-seller/edit-listing-seller.component */ "./src/app/Menu/myListings/edit-listing-seller/edit-listing-seller.component.ts");
+/* harmony import */ var _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(/*! ./Menu/myListings/edit-listing-buyer/editDataSubmission.component */ "./src/app/Menu/myListings/edit-listing-buyer/editDataSubmission.component.ts");
+/* harmony import */ var _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_108__ = __webpack_require__(/*! ./Menu/myListings/edit-listing-seller/editSellerSubmission.component */ "./src/app/Menu/myListings/edit-listing-seller/editSellerSubmission.component.ts");
 
 
 
@@ -8914,6 +9162,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Firebase modules
+
+
 
 
 
@@ -9053,7 +9303,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _Menu_myMatches_selected_pending_from_other_selected_pending_from_other_component__WEBPACK_IMPORTED_MODULE_103__["SelectedPendingFromOtherComponent"],
             _Menu_myMatches_buyer_selected_property_buyer_selected_property_component__WEBPACK_IMPORTED_MODULE_104__["BuyerSelectedPropertyComponent"],
             _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_105__["EditListingBuyerComponent"],
-            _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_106__["EditListingSellerComponent"]
+            _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_106__["EditListingSellerComponent"],
+            _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_107__["EditDataSubmissionComponent"],
+            _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_108__["EditSellerSubmissionComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -9119,7 +9371,9 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"],
             _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"],
             _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_98__["AlertDialogAgentComponent"],
-            _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EdiProfileComponent"]
+            _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EdiProfileComponent"],
+            _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_107__["EditDataSubmissionComponent"],
+            _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_108__["EditSellerSubmissionComponent"]
         ],
         providers: [_auth_service__WEBPACK_IMPORTED_MODULE_22__["AuthService"], { provide: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["FirestoreSettingsToken"], useValue: {} }],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]],
@@ -9716,7 +9970,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /media/god/Main Data/Angular Project/streethok/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! K:\Angular Project\streethok\src\main.ts */"./src/main.ts");
 
 
 /***/ })
