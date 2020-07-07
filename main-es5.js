@@ -61,7 +61,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<app-myMatches *ngIf=\"isLoggedIn\"></app-myMatches>\n\n\n\n<div class=\"home_content_container\" *ngIf=\"!isLoggedIn\">\n\n\n  <div class=\"slider\">\n    <img src=\"../../assets/Images/baby-touching-woman-s-face-1257110 (1).jpg\" alt=\"\"  class=\"slider-image\">\n\n     <div class=\"text-over-image heading-nestimate\">Join <span class=\"light\">Free</span> Today!</div>\n   \n    </div>\n\n<mat-card class=\"radio-cn\">\n  <div class=\"custom-buttons\">\n    <p class=\"i-am\">I am</p>\n    <div class=\"upper-custom-button\">\n    \n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home owner\n        <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    </div>\n  \n    </div>\n\n  <div class=\"upper-custom-button mt-2\">\n\n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home seeker\n        <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home2\">\n        <span class=\"checkmark\"></span>\n      </label>\n    \n    </div>\n  </div>\n      <div class=\"large-button mt-3\">\n      \n        <div class=\"create-nestimate\" (click)=\"homeradio()\">\n          <span class=\"text-create-nestimate mr-1\">Create Your</span>\n          <img src=\"../../assets/Images/Nestimatelogobutton.png\" class=\"button-image\" >\n        </div>\n\n\n      </div>\n\n\n\n  </div>\n\n\n\n\n</mat-card>\n<mat-card class=\"second-card\">\n <div class=\"image-over\">\n\n   <img mat-card-image src=\"../../assets/Images/buyer.jpg\" class=\"buyer-jpg\">\n   <p class=\"text-over-image-second\">Introducing:a unique property platform</p>\n </div>\n\n  <mat-card-content>\n    <p class=\"text-center pt-2 pr-3 pl-3 home-text-font heading-nestimate\">\n      Create Your Nestimate free of any committment, to answer an immediate need or gently explore the possibilities of dreams\n    </p>\n\n  </mat-card-content>\n</mat-card>\n  <!-- <mat-card>\n    <mat-card-title class=\"title heading-nestimate\">Welcome to Nestimate!</mat-card-title>\n\n    <mat-card-content>\n      <p class=\"text-center pt-2 pr-3 pl-3 home-text-font paragraph-color\">\n        A platform that matches people and homes - both owners and buyers/tenants - based on a mutually agreed price.\n      </p>\n      <p class=\"text-center pt-2 pr-3 pl-3 home-text-font paragraph-color\">Free of any commitment or investment. </p>\n      <p class=\"text-center pt-2 pr-3 pl-3 home-text-font paragraph-color\">To answer an immediate need, or gently explore the\n        possibilities of dreams.</p>\n    </mat-card-content>\n  </mat-card> -->\n\n\n\n\n  <mat-card class=\"card-steps\">\n    <mat-card-title class=\"title heading-nestimate heading-nestimate-font\">How does Nestimate work ?</mat-card-title>\n\n      <div class=\"steps-container\">\n\n           <div class=\"step\">\n            <img src=\"../../assets/Images/firststep1.png\" class=\"step-mage\">\n        \n            <p class=\"step-text \"><b class=\"outputText\">1.Create your Nestimate </b><br> <span class=\"slider-text  heading-nestimate\">Open a world of possibilities! Create Nestimates on our platform by defining your home requirements through our simple online questionnaire.</span></p>\n\n           </div>\n\n           <div class=\"step\">\n            <img src=\"/assets/Images/secondstep.png\" class=\"step-mage\">\n         \n            <p class=\"step-text\"><b class=\"outputText\">2.Review matched Nestimates</b><br><span class=\"slider-text heading-nestimate\">If you are a home owner, our unique algorithm will match you with the most relevant Nestimates by home seekers.\n            </span></p>\n            \n            \n            <p class=\"slider-text heading-nestimate\">If you are a home seeker we will match you with Nestimates created by home owners, who may not be actively on the market but might consider selling or renting their property if the right offer came along. \n             .</p>\n           \n\n           \n\n           </div>\n\n\n           <div class=\"step\">\n            <img src=\"/assets/Images/thirdstep.png\" class=\"step-mage\">\n        \n            <p class=\"step-text\"><b class=\"outputText\">3.Express Interest</b><br><span class=\"slider-text heading-nestimate\">Should you want to take things further, you can express interest on matched Nestimates. If the match is mutually agreed, a local estate agent of your choice will sort out the formalities.</span></p>\n           </div>\n      </div>\n  </mat-card>\n</div>\n<div  class=\"agent-form\">\n  <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/agentSignup\">Agent</button>\n\n</div>\n\n<div class=\"cookies-policy\" *ngIf=\"cookie\"> \n<div class=\"cookies-policy-text\">\n<div class=\"policy-heading outputText\">\n\n  <p clas=\"policy-heading \">Cookie Policy</p>\n  <!-- <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"closeCookie()\"> -->\n</div>\n\n  <div class=\"policy-content outputText\">\n    <p>We use cookies to provide you with a better service. Continue browsing if you are happy with this, otherwise you can find out how to manage cookies here.</p>\n  </div>\n\n  <div class=\"cookies-button\">\n \n    <div class=\"top-button-cookies\" routerLink=\"/cookies\">Manage Settings</div>\n\n    <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\">Allow all Cookies</div>\n\n  </div>\n</div>\n\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<!-- <app-myMatches *ngIf=\"isLoggedIn\"></app-myMatches>  -->\n\n\n\n<div class=\"home_content_container\" >\n\n\n  <div class=\"slider\">\n    <img src=\"../../assets/Images/baby-touching-woman-s-face-1257110 (1).jpg\" alt=\"\"  class=\"slider-image\">\n\n     <div class=\"text-over-image heading-nestimate\">Join <span class=\"light\">Free</span> Today!</div>\n   \n    </div>\n\n<mat-card class=\"radio-cn\">\n  <div class=\"custom-buttons\">\n    <p class=\"i-am\">I am</p>\n    <div class=\"upper-custom-button\">\n    \n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home owner\n        <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    </div>\n  \n    </div>\n\n  <div class=\"upper-custom-button mt-2\">\n\n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home seeker\n        <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home2\">\n        <span class=\"checkmark\"></span>\n      </label>\n    \n    </div>\n  </div>\n      <div class=\"large-button mt-3\">\n      \n        <div class=\"create-nestimate\" (click)=\"homeradio()\">\n          <span class=\"text-create-nestimate mr-1\">Create Your</span>\n          <img src=\"../../assets/Images/Nestimatelogobutton.png\" class=\"button-image\" >\n        </div>\n\n\n      </div>\n\n\n\n  </div>\n\n\n\n\n</mat-card>\n<mat-card class=\"second-card\">\n <div class=\"image-over\">\n\n   <img mat-card-image src=\"../../assets/Images/buyer.jpg\" class=\"buyer-jpg\">\n   <p class=\"text-over-image-second\">Introducing:a unique property platform</p>\n </div>\n\n  <mat-card-content>\n    <p class=\"text-center pt-2 pr-3 pl-3 home-text-font heading-nestimate\">\n      Create Your Nestimate free of any committment, to answer an immediate need or gently explore the possibilities of dreams\n    </p>\n\n  </mat-card-content>\n</mat-card>\n  \n<mat-card *ngIf=\"isLoggedIn\" style=\"background-color:rgba(0, 0, 0, 0.04);\" class=\"nestimate-by-me\">\n  <mat-card-title class=\"heading-nestimate listing-heading\">My Nestimates</mat-card-title>\n<app-nestimates-home></app-nestimates-home>\n</mat-card>\n\n\n\n  <mat-card class=\"card-steps\">\n    <mat-card-title class=\"title heading-nestimate heading-nestimate-font\">How does Nestimate work ?</mat-card-title>\n\n      <div class=\"steps-container\">\n\n           <div class=\"step\">\n            <img src=\"../../assets/Images/firststep1.png\" class=\"step-mage\">\n        \n            <p class=\"step-text \"><b class=\"outputText\">1.Create your Nestimate </b><br> <span class=\"slider-text  heading-nestimate\">Open a world of possibilities! Create Nestimates on our platform by defining your home requirements through our simple online questionnaire.</span></p>\n\n           </div>\n\n           <div class=\"step\">\n            <img src=\"/assets/Images/secondstep.png\" class=\"step-mage\">\n         \n            <p class=\"step-text\"><b class=\"outputText\">2.Review matched Nestimates</b><br><span class=\"slider-text heading-nestimate\">If you are a home owner, our unique algorithm will match you with the most relevant Nestimates by home seekers.\n            </span></p>\n            \n            \n            <p class=\"slider-text heading-nestimate\">If you are a home seeker we will match you with Nestimates created by home owners, who may not be actively on the market but might consider selling or renting their property if the right offer came along. .</p>\n      </div>\n\n\n           <div class=\"step\">\n            <img src=\"/assets/Images/thirdstep.png\" class=\"step-mage\">\n        \n            <p class=\"step-text\"><b class=\"outputText\">3.Express Interest</b><br><span class=\"slider-text heading-nestimate\">Should you want to take things further, you can express interest on matched Nestimates. If the match is mutually agreed, a local estate agent of your choice will sort out the formalities.</span></p>\n           </div>\n      </div>\n  </mat-card>\n\n\n\n\n</div>\n\n\n<div  class=\"agent-form\">\n  <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/agentSignup\">Agent</button>\n</div>\n\n<div class=\"cookies-policy\" *ngIf=\"cookie\"> \n<div class=\"cookies-policy-text\">\n<div class=\"policy-heading outputText\">\n\n  <p clas=\"policy-heading \">Cookie Policy</p>\n  <!-- <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"closeCookie()\"> -->\n</div>\n\n  <div class=\"policy-content outputText\">\n    <p>We use cookies to provide you with a better service. Continue browsing if you are happy with this, otherwise you can find out how to manage cookies here.</p>\n  </div>\n\n  <div class=\"cookies-button\">\n \n    <div class=\"top-button-cookies\" routerLink=\"/cookies\">Manage Settings</div>\n\n    <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\">Allow all Cookies</div>\n\n  </div>\n</div>\n\n</div>";
     /***/
   },
 
@@ -121,7 +121,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<mat-dialog-content>\n  Thanks for completing the first step! You are on your way to finding your perfect home! \n\n</mat-dialog-content>\n<mat-dialog-actions align=\"center\">\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\"\n    routerLink=\"/buyerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MinAmount/MaxAmount/latitude/longitude/{{newUser}}/PropertyFor:LookingStreetname/Conditions/FinancialPosition/SearchRadius/Validity/Position/UserId/ChainStatus\">{{cancelButtonText}}</button>\n</mat-dialog-actions>\n";
+    __webpack_exports__["default"] = "<mat-dialog-content>\n  Thanks for completing the first step! You are on your way to finding your perfect home! \n\n</mat-dialog-content>\n<mat-dialog-actions align=\"center\">\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\"\n    routerLink=\"/buyerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MinAmount/MaxAmount/latitude/longitude/{{newUser}}/PropertyFor/LookingStreetname/Conditions/FinancialPosition/SearchRadius/Validity/Position/UserId/ChainStatus\">{{cancelButtonText}}</button>\n</mat-dialog-actions>\n";
     /***/
   },
 
@@ -141,7 +141,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n\n\n  <mat-card class=\"thanku-section\">\n    <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\n  </mat-card>\n\n  <!-- <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\n      class=\"outputText\"></span>&nbsp;No Match Listing(s)</p> -->\n  <p class=\"mt-3 main-heading heading-nestimate\" >You have<span\n      style=\"color:red\"></span>&nbsp;&nbsp;Matched Nestimates created by<span\n      style=\"color:red\"> Home Owner</span></p>\n\n\n  <mat-form-field class=\"example-full-width\">\n    <mat-label>Sort By</mat-label>\n    <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n      class=\"example-full-width select-sortby\">\n      <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n      <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n      <mat-option value='date'>Listed date</mat-option>\n      <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <!--Result Set One with Price Range-->\n  <!--Not Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <mat-card>\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</span>\n        <div class=\"heading-nestimate \">Result Set One with Price Range</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2\">\n        <div class=\"mat-card-content-new-content\">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">Poperty Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/\n            {{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n            {{property.detail.UserId}}/\n            {{property.detail.MinAmount}}/\n            {{property.detail.Maxbathrooms}}/\n            {{property.detail.Maxrooms}}/\n            {{property.detail.Maxreception}}/\n            {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <mat-card class=\"flex-expresses\">\n        <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n        <div class=\"Already heading-nestimate \">Interest Expressed</div>\n        <div class=\"Already heading-nestimate \">Result Set One with Price Range</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2 expressed-card\">\n        <div class=\"mat-card-content-new-content \">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">Poperty Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/\n              {{property.detail.Lookingpostcode}}/\n              {{property.detail.Lookingstate}}/\n              {{property.detail.LookingTown}}/\n              {{property.detail.norooms}}/\n              {{property.detail.PropertyCondition}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.LookingAddress}}/\n              {{property.detail.ownership}}/\n              {{property.detail.PropertyType}}/\n              {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.MinAmount}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Result Set One with Price Range-->\n\n\n  <!--Price Math Logic-->\n  <!--Not Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of prceMathLogic\">\n    <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <mat-card>\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</span>\n        <div class=\"heading-nestimate \">Result Set One with Price Math Logic</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2\">\n        <div class=\"mat-card-content-new-content\">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">Poperty Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/\n          {{property.detail.Lookingpostcode}}/\n          {{property.detail.Lookingstate}}/\n          {{property.detail.LookingTown}}/\n          {{property.detail.norooms}}/\n          {{property.detail.PropertyCondition}}/\n          {{property.detail.MaxAmount}}/\n          {{property.detail.LookingAddress}}/\n          {{property.detail.ownership}}/\n          {{property.detail.PropertyType}}/\n          {{property.detail.features}}/\n          {{property.detail.UserId}}/\n          {{property.detail.MinAmount}}/\n          {{property.detail.Maxbathrooms}}/\n          {{property.detail.Maxrooms}}/\n          {{property.detail.Maxreception}}/\n          {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of prceMathLogic\">\n    <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <mat-card class=\"flex-expresses\">\n        <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n        <div class=\"Already heading-nestimate \">Interest Expressed</div>\n        <div class=\"Already heading-nestimate \">Result Set One with Price Math Logic</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2 expressed-card\">\n        <div class=\"mat-card-content-new-content \">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">Poperty Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/\n            {{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n            {{property.detail.UserId}}/\n            {{property.detail.MinAmount}}/\n            {{property.detail.Maxbathrooms}}/\n            {{property.detail.Maxrooms}}/\n            {{property.detail.Maxreception}}/\n            {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Price Math Logic End-->\n\n\n  <!--Result Set 2 with Matches-->\n  <!--Not Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of settwo\">\n    <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <mat-card>\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</span>\n        <div class=\"heading-nestimate \">Result Set 2 with Matches</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2\">\n        <div class=\"mat-card-content-new-content\">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">Poperty Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/\n          {{property.detail.Lookingpostcode}}/\n          {{property.detail.Lookingstate}}/\n          {{property.detail.LookingTown}}/\n          {{property.detail.norooms}}/\n          {{property.detail.PropertyCondition}}/\n          {{property.detail.MaxAmount}}/\n          {{property.detail.LookingAddress}}/\n          {{property.detail.ownership}}/\n          {{property.detail.PropertyType}}/\n          {{property.detail.features}}/\n          {{property.detail.UserId}}/\n          {{property.detail.MinAmount}}/\n          {{property.detail.Maxbathrooms}}/\n          {{property.detail.Maxrooms}}/\n          {{property.detail.Maxreception}}/\n          {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of settwo\">\n    <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <mat-card class=\"flex-expresses\">\n        <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n        <div class=\"Already heading-nestimate \">Interest Expressed</div>\n        <div class=\"Already heading-nestimate \">Result Set 2 with Matches</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2 expressed-card\">\n        <div class=\"mat-card-content-new-content \">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">Poperty Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/\n            {{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n            {{property.detail.UserId}}/\n            {{property.detail.MinAmount}}/\n            {{property.detail.Maxbathrooms}}/\n            {{property.detail.Maxrooms}}/\n            {{property.detail.Maxreception}}/\n            {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Result Set 2 with Matches End-->\n\n\n\n\n\n\n  <div >\n    <div class=\"other-container\">\n      <p class=\"mt-3 main-heading heading-nestimate\"><span class=\"outputText\"></span>Other Nestimates that may be of\n        interest to you</p>\n    </div>\n    <mat-form-field class=\"example-full-width\">\n      <mat-label>Sort By</mat-label>\n      <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n        class=\"example-full-width\">\n        <mat-option value='low' (click)=\"unmatchedlowtohigh()\">Price Range - Low to High</mat-option>\n        <mat-option value='high' (click)=\"unmatchedhightoLow()\">Price Range - High to Low</mat-option>\n        <mat-option value='date'>Listed date</mat-option>\n        <mat-option value='rooms' (click)=\"unmatchedroomshightolow()\">No of Rooms</mat-option>\n        <mat-option value='Distance' (click)=\"unmatchedDistance()\">Distance</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n\n<!--Result Set No Matches 1-->\n    <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n              <div class=\"Already heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Distance:<span\n                      class=\"outputText\">{{property.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span>\n                  </p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/{{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n        {{property.detail.UserId}}/\n        {{property.detail.MinAmount}}/\n        {{property.detail.Maxbathrooms}}/\n        {{property.detail.Maxrooms}}/\n        {{property.detail.Maxreception}}/\n        {{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"Already heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2 expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Distance:<span\n                      class=\"outputText\">{{property.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span>\n                  </p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/{{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n        {{property.detail.UserId}}/\n        {{property.detail.MinAmount}}/\n        {{property.detail.Maxbathrooms}}/\n        {{property.detail.Maxrooms}}/\n        {{property.detail.Maxreception}}/\n        {{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n   <!--Result Set No Matches End-->\n\n<!--Result Set No Matches 1-->\n    <!--not Expressed-->\n    <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n      <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyPrice.propertyId)\">\n        <mat-card>\n          <div class=\"heading-nestimate card-heading-font\">Nestimate by {{propertyPrice.detail.usertitle}}\n            {{propertyPrice.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Result Set 2 No Matches With Price Logic 2</div>\n        </mat-card>\n        <mat-card class=\"mat-card mt-2\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Distance:<span\n                    class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{propertyPrice.detail.PropertyType}}</span>\n                </p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n          {{propertyPrice.detail.Lookingstate}}/\n          {{propertyPrice.detail.LookingTown}}/\n          {{propertyPrice.detail.norooms}}/\n          {{propertyPrice.detail.PropertyCondition}}/\n          {{propertyPrice.detail.MaxAmount}}/\n          {{propertyPrice.detail.LookingAddress}}/\n          {{propertyPrice.detail.ownership}}/\n          {{propertyPrice.detail.PropertyType}}/\n          {{propertyPrice.detail.features}}/\n      {{propertyPrice.detail.UserId}}/\n      {{propertyPrice.detail.MinAmount}}/\n      {{propertyPrice.detail.Maxbathrooms}}/\n      {{propertyPrice.detail.Maxrooms}}/\n      {{propertyPrice.detail.Maxreception}}/\n      {{propertyPrice.propertyId}}/{{expressed}}'>See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n    </div>\n\n    <!--Expressed Interest-->\n    <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n      <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyPrice.propertyId)\">\n        <mat-card class=\"flex-expresses\">\n          <div class=\"heading-nestimate card-heading-font\">Nestimate by {{propertyPrice.detail.usertitle}}\n            {{propertyPrice.detail.username | shortName}}</div>\n          <div class=\"Already heading-nestimate \">Interest Expressed</div>\n          <div class=\"Already heading-nestimate \">Result Set 2 No Matches With Price Logic 2</div>\n        </mat-card>\n        <mat-card class=\"mat-card mt-2 expressed-card\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Distance:<span\n                    class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{propertyPrice.detail.PropertyType}}</span>\n                </p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n          {{propertyPrice.detail.Lookingstate}}/\n          {{propertyPrice.detail.LookingTown}}/\n          {{propertyPrice.detail.norooms}}/\n          {{propertyPrice.detail.PropertyCondition}}/\n          {{propertyPrice.detail.MaxAmount}}/\n          {{propertyPrice.detail.LookingAddress}}/\n          {{propertyPrice.detail.ownership}}/\n          {{propertyPrice.detail.PropertyType}}/\n          {{propertyPrice.detail.features}}/\n      {{propertyPrice.detail.UserId}}/\n      {{propertyPrice.detail.MinAmount}}/\n      {{propertyPrice.detail.Maxbathrooms}}/\n      {{propertyPrice.detail.Maxrooms}}/\n      {{propertyPrice.detail.Maxreception}}/\n      {{propertyPrice.propertyId}}/{{expressed}}'>See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n    </div>\n <!-- unmatchedPriceLogic End-->\n\n<!-- lookTown Set No Matches 4-->\n    <!--not Expressed-->\n    <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n      <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyTown.propertyId)\">\n        <mat-card>\n          <div class=\"heading-nestimate card-heading-font\">Nestimate by {{propertyTown.detail.usertitle}}\n            {{propertyTown.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Result Set 4 No Matches With  lookTown</div>\n        </mat-card>\n        <mat-card class=\"mat-card mt-2\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{propertyTown.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{propertyTown.detail.PropertyType}}</span>\n                </p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n          {{propertyTown.detail.Lookingstate}}/\n          {{propertyTown.detail.LookingTown}}/\n          {{propertyTown.detail.norooms}}/\n          {{propertyTown.detail.PropertyCondition}}/\n          {{propertyTown.detail.MaxAmount}}/\n          {{propertyTown.detail.LookingAddress}}/\n          {{propertyTown.detail.ownership}}/\n          {{propertyTown.detail.PropertyType}}/\n          {{propertyTown.detail.features}}/\n      {{propertyTown.detail.UserId}}/\n      {{propertyTown.detail.MinAmount}}/\n      {{propertyTown.detail.Maxbathrooms}}/\n      {{propertyTown.detail.Maxrooms}}/\n      {{propertyTown.detail.Maxreception}}/\n      {{propertyTown.propertyId}}/{{expressed}}'>See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n    </div>\n\n    <!--Expressed Interest-->\n    <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n      <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyTown.propertyId)\">\n        <mat-card class=\"flex-expresses\">\n          <div class=\"heading-nestimate card-heading-font\">Nestimate by {{propertyTown.detail.usertitle}}\n            {{propertyTown.detail.username | shortName}}</div>\n          <div class=\"Already heading-nestimate \">Interest Expressed</div>\n          <div class=\"Already heading-nestimate \">Result Set 4 No Matches With Price  lookTown</div>\n        </mat-card>\n        <mat-card class=\"mat-card mt-2 expressed-card\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{propertyTown.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{propertyTown.detail.PropertyType}}</span>\n                </p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Min_Amount}}/{{Max_Amount}}/{{Look_Validity}}/{{Property_Type}}/{{Look_Position}}/{{UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n          {{propertyTown.detail.Lookingstate}}/\n          {{propertyTown.detail.LookingTown}}/\n          {{propertyTown.detail.norooms}}/\n          {{propertyTown.detail.PropertyCondition}}/\n          {{propertyTown.detail.MaxAmount}}/\n          {{propertyTown.detail.LookingAddress}}/\n          {{propertyTown.detail.ownership}}/\n          {{propertyTown.detail.PropertyType}}/\n          {{propertyTown.detail.features}}/\n      {{propertyTown.detail.UserId}}/\n      {{propertyTown.detail.MinAmount}}/\n      {{propertyTown.detail.Maxbathrooms}}/\n      {{propertyTown.detail.Maxrooms}}/\n      {{propertyTown.detail.Maxreception}}/\n      {{propertyTown.propertyId}}/{{expressed}}'>See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n    </div>\n <!-- lookTown Set  Matches End-->\n  \n\n\n\n\n  </div>";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n\n\n  <mat-card class=\"thanku-section\">\n    <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\n  </mat-card>\n\n  <!-- <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\n      class=\"outputText\"></span>&nbsp;No Match Listing(s)</p> -->\n  <p class=\"mt-3 main-heading heading-nestimate\" >You have<span\n      style=\"color:red\"></span>&nbsp;&nbsp;Matched Nestimates created by<span\n      style=\"color:red\"> Home Owner</span></p>\n\n\n  <mat-form-field class=\"example-full-width\">\n    <mat-label>Sort By</mat-label>\n    <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n      class=\"example-full-width select-sortby\">\n      <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n      <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n      <mat-option value='date'>Listed date</mat-option>\n      <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n    </mat-select>\n  </mat-form-field>\n\n  <!--Result Set One with Price Range-->\n  <!--Not Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <mat-card>\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</span>\n        <div class=\"heading-nestimate \">Result Set One with Price Range</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2\">\n        <div class=\"mat-card-content-new-content\">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">property Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/\n            {{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n            {{property.detail.UserId}}/\n            {{property.detail.MinAmount}}/\n            {{property.detail.Maxbathrooms}}/\n            {{property.detail.Maxrooms}}/\n            {{property.detail.Maxreception}}/\n            {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <mat-card class=\"flex-expresses\">\n        <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n        <div class=\"Already heading-nestimate \">Interest Expressed</div>\n        <div class=\"Already heading-nestimate \">Result Set One with Price Range</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2 expressed-card\">\n        <div class=\"mat-card-content-new-content \">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">property Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/\n              {{property.detail.Lookingpostcode}}/\n              {{property.detail.Lookingstate}}/\n              {{property.detail.LookingTown}}/\n              {{property.detail.norooms}}/\n              {{property.detail.PropertyCondition}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.LookingAddress}}/\n              {{property.detail.ownership}}/\n              {{property.detail.PropertyType}}/\n              {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.MinAmount}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Result Set One with Price Range-->\n\n\n  <!--Price Math Logic-->\n  <!--Not Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of prceMathLogic\">\n    <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <mat-card>\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</span>\n        <div class=\"heading-nestimate \">Result Set One with Price Math Logic</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2\">\n        <div class=\"mat-card-content-new-content\">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">property Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/\n          {{property.detail.Lookingpostcode}}/\n          {{property.detail.Lookingstate}}/\n          {{property.detail.LookingTown}}/\n          {{property.detail.norooms}}/\n          {{property.detail.PropertyCondition}}/\n          {{property.detail.MaxAmount}}/\n          {{property.detail.LookingAddress}}/\n          {{property.detail.ownership}}/\n          {{property.detail.PropertyType}}/\n          {{property.detail.features}}/\n          {{property.detail.UserId}}/\n          {{property.detail.MinAmount}}/\n          {{property.detail.Maxbathrooms}}/\n          {{property.detail.Maxrooms}}/\n          {{property.detail.Maxreception}}/\n          {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of prceMathLogic\">\n    <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <mat-card class=\"flex-expresses\">\n        <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n        <div class=\"Already heading-nestimate \">Interest Expressed</div>\n        <div class=\"Already heading-nestimate \">Result Set One with Price Math Logic</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2 expressed-card\">\n        <div class=\"mat-card-content-new-content \">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">property Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/\n            {{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n            {{property.detail.UserId}}/\n            {{property.detail.MinAmount}}/\n            {{property.detail.Maxbathrooms}}/\n            {{property.detail.Maxrooms}}/\n            {{property.detail.Maxreception}}/\n            {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Price Math Logic End-->\n\n\n  <!--Result Set 2 with Matches-->\n  <!--Not Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of settwo\">\n    <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <mat-card>\n        <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</span>\n        <div class=\"heading-nestimate \">Result Set 2 with Matches</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2\">\n        <div class=\"mat-card-content-new-content\">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">property Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/\n          {{property.detail.Lookingpostcode}}/\n          {{property.detail.Lookingstate}}/\n          {{property.detail.LookingTown}}/\n          {{property.detail.norooms}}/\n          {{property.detail.PropertyCondition}}/\n          {{property.detail.MaxAmount}}/\n          {{property.detail.LookingAddress}}/\n          {{property.detail.ownership}}/\n          {{property.detail.PropertyType}}/\n          {{property.detail.features}}/\n          {{property.detail.UserId}}/\n          {{property.detail.MinAmount}}/\n          {{property.detail.Maxbathrooms}}/\n          {{property.detail.Maxrooms}}/\n          {{property.detail.Maxreception}}/\n          {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of settwo\">\n    <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <mat-card class=\"flex-expresses\">\n        <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n        <div class=\"Already heading-nestimate \">Interest Expressed</div>\n        <div class=\"Already heading-nestimate \">Result Set 2 with Matches</div>\n      </mat-card>\n      <mat-card class=\"mat-card mt-2 expressed-card\">\n        <div class=\"mat-card-content-new-content \">\n          <div class=\"mat-card-content-image\">\n            <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n          </div>\n          <div class=\"mat-card-content-text\">\n            <div class=\"price-range\">\n              <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n              <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"other-text\">\n              <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{property.detail.Lookingpostcode}}</span>\n              </p>\n              &nbsp; &nbsp;\n              <p class=\"heading-nestimate\">property Type:<span class=\"outputText\">{{property.detail.PropertyType}}</span>\n              </p>\n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/\n            {{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n            {{property.detail.UserId}}/\n            {{property.detail.MinAmount}}/\n            {{property.detail.Maxbathrooms}}/\n            {{property.detail.Maxrooms}}/\n            {{property.detail.Maxreception}}/\n            {{property.propertyId}}/{{expressed}}'>See Details</button>\n            </div>\n          </div>\n        </div>\n      </mat-card>\n    </div>\n  </div>\n  <!--Result Set 2 with Matches End-->\n\n\n\n\n\n\n  <div >\n    <div class=\"other-container\">\n      <p class=\"mt-3 main-heading heading-nestimate\"><span class=\"outputText\"></span>Other Nestimates that may be of\n        interest to you</p>\n    </div>\n    <mat-form-field class=\"example-full-width\">\n      <mat-label>Sort By</mat-label>\n      <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n        class=\"example-full-width\">\n        <mat-option value='low' (click)=\"unmatchedlowtohigh()\">Price Range - Low to High</mat-option>\n        <mat-option value='high' (click)=\"unmatchedhightoLow()\">Price Range - High to Low</mat-option>\n        <mat-option value='date'>Listed date</mat-option>\n        <mat-option value='rooms' (click)=\"unmatchedroomshightolow()\">No of Rooms</mat-option>\n        <mat-option value='Distance' (click)=\"unmatchedDistance()\">Distance</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n\n<!--Result Set No Matches 1-->\n    <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n              <div class=\"Already heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Distance:<span\n                      class=\"outputText\">{{property.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">property Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span>\n                  </p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n        {{property.detail.UserId}}/\n        {{property.detail.MinAmount}}/\n        {{property.detail.Maxbathrooms}}/\n        {{property.detail.Maxrooms}}/\n        {{property.detail.Maxreception}}/\n        {{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"Already heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2 expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Distance:<span\n                      class=\"outputText\">{{property.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">property Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span>\n                  </p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n            {{property.detail.Lookingstate}}/\n            {{property.detail.LookingTown}}/\n            {{property.detail.norooms}}/\n            {{property.detail.PropertyCondition}}/\n            {{property.detail.MaxAmount}}/\n            {{property.detail.LookingAddress}}/\n            {{property.detail.ownership}}/\n            {{property.detail.PropertyType}}/\n            {{property.detail.features}}/\n        {{property.detail.UserId}}/\n        {{property.detail.MinAmount}}/\n        {{property.detail.Maxbathrooms}}/\n        {{property.detail.Maxrooms}}/\n        {{property.detail.Maxreception}}/\n        {{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n   <!--Result Set No Matches End-->\n\n<!--Result Set No Matches 1-->\n    <!--not Expressed-->\n    <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n      <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyPrice.propertyId)\">\n        <mat-card>\n          <div class=\"heading-nestimate card-heading-font\">Nestimate by {{propertyPrice.detail.usertitle}}\n            {{propertyPrice.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Result Set 2 No Matches With Price Logic 2</div>\n        </mat-card>\n        <mat-card class=\"mat-card mt-2\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Distance:<span\n                    class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">property Type:<span\n                    class=\"outputText\">{{propertyPrice.detail.PropertyType}}</span>\n                </p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n          {{propertyPrice.detail.Lookingstate}}/\n          {{propertyPrice.detail.LookingTown}}/\n          {{propertyPrice.detail.norooms}}/\n          {{propertyPrice.detail.PropertyCondition}}/\n          {{propertyPrice.detail.MaxAmount}}/\n          {{propertyPrice.detail.LookingAddress}}/\n          {{propertyPrice.detail.ownership}}/\n          {{propertyPrice.detail.PropertyType}}/\n          {{propertyPrice.detail.features}}/\n      {{propertyPrice.detail.UserId}}/\n      {{propertyPrice.detail.MinAmount}}/\n      {{propertyPrice.detail.Maxbathrooms}}/\n      {{propertyPrice.detail.Maxrooms}}/\n      {{propertyPrice.detail.Maxreception}}/\n      {{propertyPrice.propertyId}}/{{expressed}}'>See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n    </div>\n\n    <!--Expressed Interest-->\n    <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n      <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyPrice.propertyId)\">\n        <mat-card class=\"flex-expresses\">\n          <div class=\"heading-nestimate card-heading-font\">Nestimate by {{propertyPrice.detail.usertitle}}\n            {{propertyPrice.detail.username | shortName}}</div>\n          <div class=\"Already heading-nestimate \">Interest Expressed</div>\n          <div class=\"Already heading-nestimate \">Result Set 2 No Matches With Price Logic 2</div>\n        </mat-card>\n        <mat-card class=\"mat-card mt-2 expressed-card\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Distance:<span\n                    class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Property Type:<span\n                    class=\"outputText\">{{propertyPrice.detail.PropertyType}}</span>\n                </p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n          {{propertyPrice.detail.Lookingstate}}/\n          {{propertyPrice.detail.LookingTown}}/\n          {{propertyPrice.detail.norooms}}/\n          {{propertyPrice.detail.PropertyCondition}}/\n          {{propertyPrice.detail.MaxAmount}}/\n          {{propertyPrice.detail.LookingAddress}}/\n          {{propertyPrice.detail.ownership}}/\n          {{propertyPrice.detail.PropertyType}}/\n          {{propertyPrice.detail.features}}/\n      {{propertyPrice.detail.UserId}}/\n      {{propertyPrice.detail.MinAmount}}/\n      {{propertyPrice.detail.Maxbathrooms}}/\n      {{propertyPrice.detail.Maxrooms}}/\n      {{propertyPrice.detail.Maxreception}}/\n      {{propertyPrice.propertyId}}/{{expressed}}'>See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n    </div>\n <!-- unmatchedPriceLogic End-->\n\n<!-- lookTown Set No Matches 4-->\n    <!--not Expressed-->\n    <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n      <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyTown.propertyId)\">\n        <mat-card>\n          <div class=\"heading-nestimate card-heading-font\">Nestimate by {{propertyTown.detail.usertitle}}\n            {{propertyTown.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Result Set 4 No Matches With  lookTown</div>\n        </mat-card>\n        <mat-card class=\"mat-card mt-2\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{propertyTown.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Property Type:<span\n                    class=\"outputText\">{{propertyTown.detail.PropertyType}}</span>\n                </p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n          {{propertyTown.detail.Lookingstate}}/\n          {{propertyTown.detail.LookingTown}}/\n          {{propertyTown.detail.norooms}}/\n          {{propertyTown.detail.PropertyCondition}}/\n          {{propertyTown.detail.MaxAmount}}/\n          {{propertyTown.detail.LookingAddress}}/\n          {{propertyTown.detail.ownership}}/\n          {{propertyTown.detail.PropertyType}}/\n          {{propertyTown.detail.features}}/\n      {{propertyTown.detail.UserId}}/\n      {{propertyTown.detail.MinAmount}}/\n      {{propertyTown.detail.Maxbathrooms}}/\n      {{propertyTown.detail.Maxrooms}}/\n      {{propertyTown.detail.Maxreception}}/\n      {{propertyTown.propertyId}}/{{expressed}}'>See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n    </div>\n\n    <!--Expressed Interest-->\n    <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n      <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyTown.propertyId)\">\n        <mat-card class=\"flex-expresses\">\n          <div class=\"heading-nestimate card-heading-font\">Nestimate by {{propertyTown.detail.usertitle}}\n            {{propertyTown.detail.username | shortName}}</div>\n          <div class=\"Already heading-nestimate \">Interest Expressed</div>\n          <div class=\"Already heading-nestimate \">Result Set 4 No Matches With Price  lookTown</div>\n        </mat-card>\n        <mat-card class=\"mat-card mt-2 expressed-card\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Post Code:<span class=\"outputText\">{{propertyTown.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">property Type:<span\n                    class=\"outputText\">{{propertyTown.detail.PropertyType}}</span>\n                </p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n          {{propertyTown.detail.Lookingstate}}/\n          {{propertyTown.detail.LookingTown}}/\n          {{propertyTown.detail.norooms}}/\n          {{propertyTown.detail.PropertyCondition}}/\n          {{propertyTown.detail.MaxAmount}}/\n          {{propertyTown.detail.LookingAddress}}/\n          {{propertyTown.detail.ownership}}/\n          {{propertyTown.detail.PropertyType}}/\n          {{propertyTown.detail.features}}/\n      {{propertyTown.detail.UserId}}/\n      {{propertyTown.detail.MinAmount}}/\n      {{propertyTown.detail.Maxbathrooms}}/\n      {{propertyTown.detail.Maxrooms}}/\n      {{propertyTown.detail.Maxreception}}/\n      {{propertyTown.propertyId}}/{{expressed}}'>See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n    </div>\n <!-- lookTown Set  Matches End-->\n  \n\n\n\n\n  </div>";
     /***/
   },
 
@@ -221,7 +221,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<mat-dialog-content>\n  Thanks for completing the first step! Your journey to finding the best offers for your property starts here.\n\n</mat-dialog-content>\n<mat-dialog-actions align=\"center\">\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\" routerLink=\"/sellerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MaxAmount/latitude/longitude/{{newUser}}/PropertyFor\">{{cancelButtonText}}</button>\n</mat-dialog-actions>\n";
+    __webpack_exports__["default"] = "<mat-dialog-content>\n  Thanks for completing the first step! Your journey to finding the best offers for your property starts here.\n\n</mat-dialog-content>\n<mat-dialog-actions align=\"center\">\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\" routerLink=\"/sellerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MaxAmount/latitude/longitude/{{newUser}}/PropertyFor/Lookingstate/Maxrooms/PropertyCondition/LookingAddress/ownership/features/UserId/Maxbathrooms/Maxreception/ownership/Maxrooms\">{{cancelButtonText}}</button>\n</mat-dialog-actions>\n";
     /***/
   },
 
@@ -261,7 +261,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n\n\n  <mat-card class=\"thanku-section\">\n    <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\n  </mat-card>\n\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\n      class=\"outputText\"></span>&nbsp;No Match Listing</p>\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\">You have<span\n      style=\"color:red\">{{matchedProperties.length}}</span>&nbsp;&nbsp;Matched Nestimates created by<span\n      style=\"color:red\"> Home Seekers</span></p>\n  <div>\n    <mat-form-field class=\"example-full-width\">\n      <mat-label>Sort By</mat-label>\n      <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width\">\n        <mat-option value='Search Radius' (click)=\"matchedsearch()\">Search Radius</mat-option>\n        <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n        <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n        <mat-option value='date'>Listed date</mat-option>\n        <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n\n    <!--Result Set One Price Match-->\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"matchedProperties.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of matchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.title}}\n              {{property.detail.username  | shortName}}</span>\n            <div class=\"heading-nestimate \">Result Set One with Price Range</div>\n          </mat-card>\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n              {{property.detail.MaxAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"matchedProperties.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of matchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"heading-nestimate \">Result Set One with Price Range</div>\n          </mat-card>\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n              {{property.detail.MaxAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <!--Result Set One Price Match-->\n\n\n    <!--Price Math Logic-->\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"prceMathLogic.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of prceMathLogic\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.title}}\n              {{property.detail.username  | shortName}}</span>\n            <div class=\"heading-nestimate \">Result Set One with Price Math Logic</div>\n          </mat-card>\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n          {{property.detail.MaxAmount}}\n          /{{property.detail.Lookingpostcode}}\n          /{{property.detail.LookingStreetname}}\n          /{{property.detail.Position}}\n          /{{property.detail.PropertyType}}\n          /{{property.detail.Roomsmax}}\n          /{{property.detail.Ownership}}\n          /{{property.detail.Conditions}}\n            /{{property.detail.Maxbathroom}}\n             /{{property.detail.Maxreception}}\n            /{{property.detail.features}}\n          /{{property.detail.UserId}}\n          /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"prceMathLogic.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of prceMathLogic\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"heading-nestimate \">Result Set One with Price Math Logic</div>\n          </mat-card>\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n          {{property.detail.MaxAmount}}\n          /{{property.detail.Lookingpostcode}}\n          /{{property.detail.LookingStreetname}}\n          /{{property.detail.Position}}\n          /{{property.detail.PropertyType}}\n          /{{property.detail.Roomsmax}}\n          /{{property.detail.Ownership}}\n          /{{property.detail.Conditions}}\n            /{{property.detail.Maxbathroom}}\n             /{{property.detail.Maxreception}}\n            /{{property.detail.features}}\n          /{{property.detail.UserId}}\n          /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <!--Price Math Logic-->\n\n\n    <!--Result Set 2 with Matches-->\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"settwo.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of settwo\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.title}}\n              {{property.detail.username  | shortName}}</span>\n            <div class=\"heading-nestimate \">Result Set 2 with Matches</div>\n          </mat-card>\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n          {{property.detail.MaxAmount}}\n          /{{property.detail.Lookingpostcode}}\n          /{{property.detail.LookingStreetname}}\n          /{{property.detail.Position}}\n          /{{property.detail.PropertyType}}\n          /{{property.detail.Roomsmax}}\n          /{{property.detail.Ownership}}\n          /{{property.detail.Conditions}}\n            /{{property.detail.Maxbathroom}}\n             /{{property.detail.Maxreception}}\n            /{{property.detail.features}}\n          /{{property.detail.UserId}}\n          /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"settwo.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of settwo\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"heading-nestimate \">Result Set 2 with Matches</div>\n          </mat-card>\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n          {{property.detail.MaxAmount}}\n          /{{property.detail.Lookingpostcode}}\n          /{{property.detail.LookingStreetname}}\n          /{{property.detail.Position}}\n          /{{property.detail.PropertyType}}\n          /{{property.detail.Roomsmax}}\n          /{{property.detail.Ownership}}\n          /{{property.detail.Conditions}}\n            /{{property.detail.Maxbathroom}}\n             /{{property.detail.Maxreception}}\n            /{{property.detail.features}}\n          /{{property.detail.UserId}}\n          /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <!--Result Set 2 with Matches-->\n\n\n\n\n\n\n\n\n    <section id=\"youmaylike\">\n      <div class=\"other-container\">\n        <p class=\"mt-3 main-heading heading-nestimate\"><span clas=\"outputText\"></span>Other Nestimates that may be of\n          interest to you</p>\n      </div>\n      <mat-form-field class=\"example-full-width\">\n        <mat-label>Sort By</mat-label>\n        <mat-select name=\"ChainStatus\" class=\"example-full-width\">\n\n          <mat-option value='Search Radius' (click)=\"unmatchedmatchedsearch()\">Search Radius</mat-option>\n          <mat-option value='low' (click)=\"unmatchedlowtohigh()\">Price Range - Low to High</mat-option>\n          <mat-option value='high' (click)=\"unmatchedhightoLow()\">Price Range - High to Low</mat-option>\n          <mat-option value='date'>Listed date</mat-option>\n          <mat-option value='rooms' (click)=\"unmatchedroomshightolow()\">No of Rooms</mat-option>\n          <mat-option value='distance' (click)=\"unmatcheddistance()\">Distance</mat-option>\n        </mat-select>\n      </mat-form-field>\n\n\n\n\n\n<!--Result Set No Matches 1-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by\n              {{property.detail.title}} {{property.detail.username | shortName}}\n            </span>\n            <div class=\"heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n      {{property.detail.MaxAmount}}\n      /{{property.detail.Lookingpostcode}}\n      /{{property.detail.LookingStreetname}}\n      /{{property.detail.Position}}\n      /{{property.detail.PropertyType}}\n      /{{property.detail.Roomsmax}}\n      /{{property.detail.Ownership}}\n      /{{property.detail.Conditions}}\n        /{{property.detail.Maxbathroom}}\n         /{{property.detail.Maxreception}}\n        /{{property.detail.features}}\n      /{{property.detail.UserId}}\n      /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"Already heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n\n\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n      {{property.detail.MaxAmount}}\n      /{{property.detail.Lookingpostcode}}\n      /{{property.detail.LookingStreetname}}\n      /{{property.detail.Position}}\n      /{{property.detail.PropertyType}}\n      /{{property.detail.Roomsmax}}\n      /{{property.detail.Ownership}}\n      /{{property.detail.Conditions}}\n        /{{property.detail.Maxbathroom}}\n         /{{property.detail.Maxreception}}\n        /{{property.detail.features}}\n      /{{property.detail.UserId}}\n      /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n<!--Result Set No Matches 1-->\n\n\n<!--Result Set No Matches 2-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedPriceLogic\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by\n              {{property.detail.title}} {{property.detail.username | shortName}}\n            </span>\n            <div class=\"heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n      {{property.detail.MaxAmount}}\n      /{{property.detail.Lookingpostcode}}\n      /{{property.detail.LookingStreetname}}\n      /{{property.detail.Position}}\n      /{{property.detail.PropertyType}}\n      /{{property.detail.Roomsmax}}\n      /{{property.detail.Ownership}}\n      /{{property.detail.Conditions}}\n        /{{property.detail.Maxbathroom}}\n         /{{property.detail.Maxreception}}\n        /{{property.detail.features}}\n      /{{property.detail.UserId}}\n      /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedPriceLogic\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"Already heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n\n\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n      {{property.detail.MaxAmount}}\n      /{{property.detail.Lookingpostcode}}\n      /{{property.detail.LookingStreetname}}\n      /{{property.detail.Position}}\n      /{{property.detail.PropertyType}}\n      /{{property.detail.Roomsmax}}\n      /{{property.detail.Ownership}}\n      /{{property.detail.Conditions}}\n        /{{property.detail.Maxbathroom}}\n         /{{property.detail.Maxreception}}\n        /{{property.detail.features}}\n      /{{property.detail.UserId}}\n      /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n<!--Result Set No Matches 2-->\n\n<!--Result Set No Matches 4-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of lookTown\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by\n              {{property.detail.title}} {{property.detail.username | shortName}}\n            </span>\n            <div class=\"heading-nestimate \">Result Set 4 No Matches With Price  lookTown</div>\n          </mat-card>\n\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n      {{property.detail.MaxAmount}}\n      /{{property.detail.Lookingpostcode}}\n      /{{property.detail.LookingStreetname}}\n      /{{property.detail.Position}}\n      /{{property.detail.PropertyType}}\n      /{{property.detail.Roomsmax}}\n      /{{property.detail.Ownership}}\n      /{{property.detail.Conditions}}\n        /{{property.detail.Maxbathroom}}\n         /{{property.detail.Maxreception}}\n        /{{property.detail.features}}\n      /{{property.detail.UserId}}\n      /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of lookTown\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"Already heading-nestimate \">Result Set 4 No Matches With Price  lookTown</div>\n          </mat-card>\n\n\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/\n      {{property.detail.MaxAmount}}\n      /{{property.detail.Lookingpostcode}}\n      /{{property.detail.LookingStreetname}}\n      /{{property.detail.Position}}\n      /{{property.detail.PropertyType}}\n      /{{property.detail.Roomsmax}}\n      /{{property.detail.Ownership}}\n      /{{property.detail.Conditions}}\n        /{{property.detail.Maxbathroom}}\n         /{{property.detail.Maxreception}}\n        /{{property.detail.features}}\n      /{{property.detail.UserId}}\n      /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n<!--Result Set No Matches 4-->\n\n\n\n    </section>\n  </div>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n\n\n  <mat-card class=\"thanku-section\">\n    <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\n  </mat-card>\n\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\n      class=\"outputText\"></span>&nbsp;No Match Listing</p>\n  <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length > 0\">You have<span\n      style=\"color:red\">{{matchedProperties.length}}</span>&nbsp;&nbsp;Matched Nestimates created by<span\n      style=\"color:red\"> Home Seekers</span></p>\n  <div>\n    <mat-form-field class=\"example-full-width\">\n      <mat-label>Sort By</mat-label>\n      <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width\">\n        <mat-option value='Search Radius' (click)=\"matchedsearch()\">Search Radius</mat-option>\n        <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n        <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n        <mat-option value='date'>Listed date</mat-option>\n        <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n      </mat-select>\n    </mat-form-field>\n\n\n    <!--Result Set One Price Match-->\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"matchedProperties.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of matchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.title}}\n              {{property.detail.username  | shortName}}</span>\n            <div class=\"heading-nestimate \">Result Set One with Price Range</div>\n          </mat-card>\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n                \n              </div>\n            </div>\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"matchedProperties.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of matchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"heading-nestimate \">Result Set One with Price Range</div>\n          </mat-card>\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n              </div>\n\n              \n\n\n            </div>\n\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <!--Result Set One Price Match-->\n\n\n    <!--Price Math Logic-->\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"prceMathLogic.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of prceMathLogic\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.title}}\n              {{property.detail.username  | shortName}}</span>\n            <div class=\"heading-nestimate \">Result Set One with Price Math Logic</div>\n          </mat-card>\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n              \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}\n              /{{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"prceMathLogic.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of prceMathLogic\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"heading-nestimate \">Result Set One with Price Math Logic</div>\n          </mat-card>\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                 \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <!--Price Math Logic-->\n\n\n    <!--Result Set 2 with Matches-->\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"settwo.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of settwo\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.title}}\n              {{property.detail.username  | shortName}}</span>\n            <div class=\"heading-nestimate \">Result Set 2 with Matches</div>\n          </mat-card>\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <section class=\"\" id=\"matchproperties\" *ngIf=\"settwo.length\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of settwo\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"heading-nestimate \">Result Set 2 with Matches</div>\n          </mat-card>\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n\n          </mat-card>\n        </div>\n\n      </div>\n    </section>\n    <!--Result Set 2 with Matches-->\n\n\n\n\n\n\n\n\n    <section id=\"youmaylike\">\n      <div class=\"other-container\">\n        <p class=\"mt-3 main-heading heading-nestimate\"><span clas=\"outputText\"></span>Other Nestimates that may be of\n          interest to you</p>\n      </div>\n      <mat-form-field class=\"example-full-width\">\n        <mat-label>Sort By</mat-label>\n        <mat-select name=\"ChainStatus\" class=\"example-full-width\">\n\n          <mat-option value='Search Radius' (click)=\"unmatchedmatchedsearch()\">Search Radius</mat-option>\n          <mat-option value='low' (click)=\"unmatchedlowtohigh()\">Price Range - Low to High</mat-option>\n          <mat-option value='high' (click)=\"unmatchedhightoLow()\">Price Range - High to Low</mat-option>\n          <mat-option value='date'>Listed date</mat-option>\n          <mat-option value='rooms' (click)=\"unmatchedroomshightolow()\">No of Rooms</mat-option>\n          <mat-option value='distance' (click)=\"unmatcheddistance()\">Distance</mat-option>\n        </mat-select>\n      </mat-form-field>\n\n\n\n\n\n<!--Result Set No Matches 1-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by\n              {{property.detail.title}} {{property.detail.username | shortName}}\n            </span>\n            <div class=\"heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/\n              {{property.detail.MaxAmount}}\n              /{{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"Already heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n\n\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n<!--Result Set No Matches 1-->\n\n\n<!--Result Set No Matches 2-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedPriceLogic\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by\n              {{property.detail.title}} {{property.detail.username | shortName}}\n            </span>\n            <div class=\"heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedPriceLogic\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"Already heading-nestimate \">Result Set 1 No Matches With Price Logic 1</div>\n          </mat-card>\n\n\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n<!--Result Set No Matches 2-->\n\n<!--Result Set No Matches 4-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of lookTown\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card>\n            <span class=\"heading-nestimate card-heading-font\">Nestimate by\n              {{property.detail.title}} {{property.detail.username | shortName}}\n            </span>\n            <div class=\"heading-nestimate \">Result Set 4 No Matches With Price  lookTown</div>\n          </mat-card>\n\n          <mat-card>\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of lookTown\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <mat-card class=\"flex-expresses\">\n            <div class=\"heading-nestimate card-heading-font\">Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"Already heading-nestimate \">Interest Expressed</div>\n            <div class=\"Already heading-nestimate \">Result Set 4 No Matches With Price  lookTown</div>\n          </mat-card>\n\n\n          <mat-card class=\"expressed-card\">\n            <div class=\"mat-card-content-new-content\">\n\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n\n              </div>\n\n              <div class=\"mat-card-content-text\">\n\n                <div class=\"price-range\">\n\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Chain Status:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n\n                <div class=\"button-container\">\n\n                  \n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n                /{{property.detail.features}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}'>See Details</button>\n                </div>\n\n\n\n\n\n              </div>\n\n\n\n\n\n            </div>\n\n          </mat-card>\n        </div>\n      </div>\n<!--Result Set No Matches 4-->\n\n\n\n    </section>\n  </div>\n</div>";
     /***/
   },
 
@@ -362,6 +362,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
     __webpack_exports__["default"] = "<mat-dialog-content>\n  Thanks Your details has been submitted \n\n</mat-dialog-content>\n<mat-dialog-actions align=\"center\">\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\"\n    routerLink=\"/editprofile\">{{cancelButtonText}}</button>\n</mat-dialog-actions>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/Home/nestimates-home/nestimates-home.component.html":
+  /*!***********************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Home/nestimates-home/nestimates-home.component.html ***!
+    \***********************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppHomeNestimatesHomeNestimatesHomeComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"my-requirement-container container\">\n  \n  \n  <div class=\"nsetimate-home\">\n    <div class=\"to-buy\" *ngIf=\"propertyRequirementDetails.length>0\">\n      <mat-card-title class=\"to-buy-title heading-nestimate\">To Buy</mat-card-title>\n        <div class=\"mat-card-content-new\" *ngFor=\"let requirement of propertyRequirementDetails\" >\n       \n          <mat-card class=\"mat-card\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{requirement.MinAmount}}     -     \t&pound;{{requirement.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">SearchRadius:<br><span\n                      class=\"outputText\">{{requirement.SearchRadius}}</span></p>\n                  <p class=\"heading-nestimate\">Poperty Type:<br><span\n                      class=\"outputText\">{{requirement.PropertyType}}</span></p>\n                </div>\n             \n               \n              </div>\n            \n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/EditListingBuyer/{{requirement.Currentpostcode}}\n              /{{requirement.CurrentTown}}\n              /{{requirement.CurrentAddress}}\n              /{{requirement.Currentstate}}\n              /{{requirement.Currentcountry}}\n              /{{requirement.Lookingpostcode}}\n              /{{requirement.LookingStreetname}}\n              /{{requirement.LookingTown}}\n              /{{requirement.Lookingstate}}\n              /{{requirement.Country}}\n              /{{requirement.FinancialPosition}}\n              /{{requirement.SearchRadius}}\n              /{{requirement.PropertyType}}\n              /{{requirement.Roommin}}\n              /{{requirement.Roomsmax}}\n              /{{requirement.MinAmount}}\n              /{{requirement.MaxAmount}}\n              /{{requirement.Validity}}\n              /{{requirement.Minbathroom}}\n              /{{requirement.Maxbathroom}}\n              /{{requirement.Minreception}}\n              /{{requirement.Maxreception}}\n              /{{requirement.Conditions}}\n              /{{requirement.Ownership}}\n              /{{requirement.features}}\n              /{{docid}}\">Edit</button>\n              <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/buyerMatchlisting/{{requirement.Lookingpostcode}}/\n              {{requirement.PropertyType}}\n              /{{requirement.LookingTown}}\n              /{{requirement.MinAmount}}\n              /{{requirement.MaxAmount}}\n              /{{requirement.latitude}}\n              /{{requirement.longitude}}\n              /{{newUser}}\n              /{{requirement.PropertyFor}}\n              /{{requirement.LookingStreetname}}\n              /{{requirement.Conditions}}\n              /{{requirement.FinancialPosition}}\n              /{{requirement.SearchRadius}}\n              /{{requirement.Validity}}\n              /{{requirement.Position}}\n              /{{requirement.UserId}}\n              /{{requirement.ChainStatus}}\">Potential</button>\n              <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/listingpropertydetail/{{requirement.MinAmount}}/{{requirement.MaxAmount}}/{{requirement.Lookingpostcode}}/{{requirement.ChainStatus}}/{{requirement.FinancialPosition}}/{{requirement.PropertyType}}/{{requirement.Position}}/{{requirement.SearchRadius}}/{{requirement.MaxAmount}}\">See Details</button>\n              \n            </div>\n          </mat-card>\n        </div>\n      </div>\n  \n  \n  \n  \n       <div class=\"to-sell\" *ngIf=\"propertyDetails.length>0\">\n       \n<mat-card-title class=\"to-sell-text\">To Sell</mat-card-title>\n      \n        <div class=\"mat-card-content-new\"  *ngFor=\"let property of propertyDetails\"  >\n          \n          <mat-card class=\"mat-card\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Desired</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate overflow-setting\">Postcode:<br><span\n                      class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp;\n                  <p class=\"heading-nestimate overflow-setting\">Poperty Type:<br><span\n                      class=\"outputText\">{{property.PropertyType}}</span></p>\n                </div>\n               \n     \n              </div>\n           \n            </div>\n            <div class=\"button-container\">\n              <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/editListingSeller/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.LookingTown}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.Maxrooms}}/{{property.MaxAmount}}/{{property.ownership}}/{{property.Maxbathrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.features}}/{{property.Country}}\">Edit</button>\n              <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/sellerMatchlisting/{{property.Lookingpostcode}}/{{property.PropertyType}}/{{property.LookingTown}}/{{property.MaxAmount}}/{{property.latitude}}/{{property.longitude}}/{{newUser}}/{{property.PropertyFor}}/{{property.Lookingstate}}/{{property.Maxrooms}}/{{property.PropertyCondition}}/{{property.LookingAddress}}/{{property.ownership}}/{{property.features}}/{{property.UserId}}/{{property.Maxbathrooms}}/{{property.Maxreception}}/{{property.ownership}}/{{property.Maxrooms}}\">Potential</button>\n              <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/listingsellerpropertydetail/{{property.MaxAmount}}/{{property.PropertyType}}/{{property.Lookingpostcode}}/{{property.Maxrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.Maxbathrooms}}\">See Details</button>\n            </div>\n          </mat-card>\n        </div>\n  \n      </div>\n  \n    </div>\n      \n      \n      \n \n  \n  </div>\n  \n";
     /***/
   },
 
@@ -541,47 +561,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"my-requirement-container container\">\n  <p class=\"my-requirement-heading heading-nestimate\">\n    My Nestimates\n  </p>\n\n  <mat-tab-group>\n    <mat-tab label=\"To Buy\" class=\"mat-label-align\" *ngIf=\"propertyRequirementDetails.length > 0\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let requirement of propertyRequirementDetails\" >\n        <mat-card class=\"mat-card\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                <span class=\"outputText price-font\">&pound;{{requirement.MinAmount}}     -     \t&pound;{{requirement.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Search SearchRadius:<span\n                    class=\"outputText\">{{requirement.SearchRadius}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{requirement.PropertyType}}</span></p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/EditListingBuyer/{{requirement.Currentpostcode}}\n                /{{requirement.CurrentTown}}\n                /{{requirement.CurrentAddress}}\n                /{{requirement.Currentstate}}\n                /{{requirement.Currentcountry}}\n                /{{requirement.Lookingpostcode}}\n                /{{requirement.LookingStreetname}}\n                /{{requirement.LookingTown}}\n                /{{requirement.Lookingstate}}\n                /{{requirement.Country}}\n                /{{requirement.FinancialPosition}}\n                /{{requirement.SearchRadius}}\n                /{{requirement.PropertyType}}\n                /{{requirement.Roommin}}\n                /{{requirement.Roomsmax}}\n                /{{requirement.MinAmount}}\n                /{{requirement.MaxAmount}}\n                /{{requirement.Validity}}\n                /{{requirement.Minbathroom}}\n                /{{requirement.Maxbathroom}}\n                /{{requirement.Minreception}}\n                /{{requirement.Maxreception}}\n                /{{requirement.Conditions}}\n                /{{requirement.Ownership}}\n                /{{requirement.features}}\n                /{{docid}}\">Edit</button>\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/buyerMatchlisting/{{requirement.Lookingpostcode}}/\n                {{requirement.PropertyType}}\n                /{{requirement.LookingTown}}\n                /{{requirement.MinAmount}}\n                /{{requirement.MaxAmount}}\n                /{{requirement.latitude}}\n                /{{requirement.longitude}}\n                /{{newUser}}\n                /{{requirement.PropertyFor}}\n                /{{requirement.LookingStreetname}}\n                /{{requirement.Conditions}}\n                /{{requirement.FinancialPosition}}\n                /{{requirement.SearchRadius}}\n                /{{requirement.Validity}}\n                /{{requirement.Position}}\n                /{{requirement.UserId}}\n                /{{requirement.ChainStatus}}\">Potential</button>\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/listingpropertydetail/{{requirement.MinAmount}}/{{requirement.MaxAmount}}/{{requirement.Lookingpostcode}}/{{requirement.ChainStatus}}/{{requirement.FinancialPosition}}/{{requirement.PropertyType}}/{{requirement.Position}}/{{requirement.SearchRadius}}/{{requirement.MaxAmount}}\">See Details</button>\n                \n              </div>\n              {{requirement.PropertyFor}}\n            </div>\n          </div>\n        </mat-card>\n      </div>\n\n\n\n\n\n    </mat-tab>\n    <mat-tab label=\"To Sell\" class=\"mat-label-align\" *ngIf=\"propertyDetails.length > 0\">\n      \n      <div class=\"mat-card-content-new\"  *ngFor=\"let property of propertyDetails\"  >\n        <mat-card class=\"mat-card\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Desired</span> <br>\n                <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate overflow-setting\">Postcode:<span\n                    class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate overflow-setting\">Poperty Type:<span\n                    class=\"outputText\">{{property.PropertyType}}</span></p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/editListingSeller/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.LookingTown}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.Maxrooms}}/{{property.MaxAmount}}/{{property.ownership}}/{{property.Maxbathrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.features}}/{{property.Country}}\">Edit</button>\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/sellerMatchlisting/{{property.Lookingpostcode}}/{{property.PropertyType}}/{{property.LookingTown}}/{{property.MaxAmount}}/{{property.latitude}}/{{property.longitude}}/{{newUser}}/{{property.PropertyFor}}/{{property.Looksingtate}}/{{property.Maxrooms}}/{{property.PropertyCondition}}/{{property.LookingAddress}}/{{property.ownership}}/{{property.features}}/{{property.UserId}}\">Potential</button>\n                <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/listingsellerpropertydetail/{{property.MaxAmount}}/{{property.PropertyType}}/{{property.Lookingpostcode}}/{{property.Maxrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.Maxbathrooms}}\">See Details</button>\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n\n\n\n   \n    \n    \n    \n    </mat-tab>\n  \n  </mat-tab-group>\n\n</div>\n";
-    /***/
-  },
-
-  /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.html":
-  /*!*******************************************************************************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.html ***!
-    \*******************************************************************************************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppMenuMyMatchesBuyerConfirmedSelectedMatchesBuyerConfirmedSelectedMatchesComponentHtml(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"property-selected-detail-background\">\n    <div class=\"container property-detail-container\">\n      <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n      <div class=\"wrapper-detail-container\">\n        <div id=\"demo\">\n          <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n        </div>\n    \n    \n        <div class=\"streetname\">\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Desired Price</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">&pound;{{MaxAmount}}</mat-card-subtitle>\n          </mat-card>\n        \n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Type}}</mat-card-subtitle>\n          </mat-card>\n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">ChainStatus</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ChainStatus}}</mat-card-subtitle>\n            \n          </mat-card>\n  \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Conditions</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\n            \n          </mat-card>\n  \n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">SearchRadius</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{SearchRadius}}</mat-card-subtitle>\n            \n          </mat-card>\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Position</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\n            \n          </mat-card>\n          \n          \n        \n        </div>\n        <div class=\"selected-button m-3\">\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true'\" disabled>Expressed</button>\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false'\" (click)=\"addToExpressCollection()\">Confirm  Interest</button>\n          <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n        </div>\n      </div>\n    </div>\n    \n    </div>\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  ";
-    /***/
-  },
-
-  /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.html":
-  /*!*************************************************************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.html ***!
-    \*************************************************************************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppMenuMyMatchesBuyerSelectedPropertyBuyerSelectedPropertyComponentHtml(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"property-selected-detail-background\">\n  <div class=\"container property-detail-container\">\n    <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n    <div class=\"wrapper-detail-container\">\n      <div id=\"demo\">\n        <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n      </div>\n  \n  \n      <div class=\"streetname\">\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n        </mat-card>\n        \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Desired Price</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">&pound;{{MinAmount}}-&pound;{{MaxAmount}}</mat-card-subtitle>\n        </mat-card>\n      \n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Type}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">ChainStatus</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ChainStatus}}</mat-card-subtitle>\n          \n        </mat-card>\n\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Conditions</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\n          \n        </mat-card>\n\n        \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">SearchRadius</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{SearchRadius}}</mat-card-subtitle>\n          \n        </mat-card>\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Position</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\n          \n        </mat-card>\n        \n        \n      \n      </div>\n      <div class=\"selected-button m-3\">\n        <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true'\" disabled>Expressed</button>\n        <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false'\" (click)=\"addToExpressCollection()\">Confirm  Interest</button>\n        <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n      </div>\n    </div>\n  </div>\n  \n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+    __webpack_exports__["default"] = "<div class=\"my-requirement-container container\">\n  <p class=\"my-requirement-heading heading-nestimate\">\n    My Nestimates\n  </p>\n\n  <mat-tab-group>\n    <mat-tab label=\"To Buy\" class=\"mat-label-align\" *ngIf=\"propertyRequirementDetails.length > 0\">\n      <div class=\"mat-card-content-new\" *ngFor=\"let requirement of propertyRequirementDetails\" >\n        <mat-card class=\"mat-card\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                <span class=\"outputText price-font\">&pound;{{requirement.MinAmount}}     -     \t&pound;{{requirement.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Search SearchRadius:<span\n                    class=\"outputText\">{{requirement.SearchRadius}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{requirement.PropertyType}}</span></p>\n              </div>\n           \n             \n            </div>\n          </div>\n          <div class=\"button-container\">\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/EditListingBuyer/{{requirement.Currentpostcode}}\n            /{{requirement.CurrentTown}}\n            /{{requirement.CurrentAddress}}\n            /{{requirement.Currentstate}}\n            /{{requirement.Currentcountry}}\n            /{{requirement.Lookingpostcode}}\n            /{{requirement.LookingStreetname}}\n            /{{requirement.LookingTown}}\n            /{{requirement.Lookingstate}}\n            /{{requirement.Country}}\n            /{{requirement.FinancialPosition}}\n            /{{requirement.SearchRadius}}\n            /{{requirement.PropertyType}}\n            /{{requirement.Roommin}}\n            /{{requirement.Roomsmax}}\n            /{{requirement.MinAmount}}\n            /{{requirement.MaxAmount}}\n            /{{requirement.Validity}}\n            /{{requirement.Minbathroom}}\n            /{{requirement.Maxbathroom}}\n            /{{requirement.Minreception}}\n            /{{requirement.Maxreception}}\n            /{{requirement.Conditions}}\n            /{{requirement.Ownership}}\n            /{{requirement.features}}\n            /{{docid}}\">Edit</button>\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/buyerMatchlisting/{{requirement.Lookingpostcode}}/\n            {{requirement.PropertyType}}\n            /{{requirement.LookingTown}}\n            /{{requirement.MinAmount}}\n            /{{requirement.MaxAmount}}\n            /{{requirement.latitude}}\n            /{{requirement.longitude}}\n            /{{newUser}}\n            /{{requirement.PropertyFor}}\n            /{{requirement.LookingStreetname}}\n            /{{requirement.Conditions}}\n            /{{requirement.FinancialPosition}}\n            /{{requirement.SearchRadius}}\n            /{{requirement.Validity}}\n            /{{requirement.Position}}\n            /{{requirement.UserId}}\n            /{{requirement.ChainStatus}}\">Potential</button>\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/listingpropertydetail/{{requirement.MinAmount}}/{{requirement.MaxAmount}}/{{requirement.Lookingpostcode}}/{{requirement.ChainStatus}}/{{requirement.FinancialPosition}}/{{requirement.PropertyType}}/{{requirement.Position}}/{{requirement.SearchRadius}}/{{requirement.MaxAmount}}\">See Details</button>\n            \n          </div>\n        </mat-card>\n      </div>\n\n\n\n\n\n    </mat-tab>\n    <mat-tab label=\"To Sell\" class=\"mat-label-align\" *ngIf=\"propertyDetails.length > 0\">\n      \n      <div class=\"mat-card-content-new\"  *ngFor=\"let property of propertyDetails\"  >\n        <mat-card class=\"mat-card\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Desired</span> <br>\n                <span class=\"outputText price-font\">&pound;{{property.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate overflow-setting\">Postcode:<span\n                    class=\"outputText\">{{property.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate overflow-setting\">Poperty Type:<span\n                    class=\"outputText\">{{property.PropertyType}}</span></p>\n              </div>\n             \n              \n            </div>\n          </div>\n          <div class=\"button-container\">\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/editListingSeller/{{property.Lookingpostcode}}/{{property.LookingAddress}}/{{property.LookingTown}}/{{property.Lookingstate}}/{{property.PropertyType}}/{{property.Maxrooms}}/{{property.MaxAmount}}/{{property.ownership}}/{{property.Maxbathrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.features}}/{{property.Country}}\">Edit</button>\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/sellerMatchlisting/{{property.Lookingpostcode}}/{{property.PropertyType}}/{{property.LookingTown}}/{{property.MaxAmount}}/{{property.latitude}}/{{property.longitude}}/{{newUser}}/{{property.PropertyFor}}/{{property.Lookingstate}}/{{property.Maxrooms}}/{{property.PropertyCondition}}/{{property.LookingAddress}}/{{property.ownership}}/{{property.features}}/{{property.UserId}}/{{property.Maxbathrooms}}/{{property.Maxreception}}/{{property.ownership}}/{{property.Maxrooms}}\">Potential</button>\n            <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/listingsellerpropertydetail/{{property.MaxAmount}}/{{property.PropertyType}}/{{property.Lookingpostcode}}/{{property.Maxrooms}}/{{property.Maxreception}}/{{property.PropertyCondition}}/{{property.Maxbathrooms}}\">See Details</button>\n          </div>\n        </mat-card>\n      </div>\n\n\n\n   \n    \n    \n    \n    </mat-tab>\n  \n  </mat-tab-group>\n\n</div>\n";
     /***/
   },
 
@@ -606,22 +586,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.html":
-  /*!*********************************************************************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.html ***!
-    \*********************************************************************************************************************************************/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.html":
+  /*!*****************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.html ***!
+    \*****************************************************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppMenuMyMatchesMyMatchesSelectedDetailsMyMatchesSelectedDetailsComponentHtml(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesRawLoaderDistCjsJsSrcAppMenuMyMatchesMatchesBuyerMatchesBuyerComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"property-selected-detail-background\">\n    <div class=\"container property-detail-container\">\n      <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n      <div class=\"wrapper-detail-container\">\n        <div id=\"demo\">\n          <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n        </div>\n    \n    \n        <div class=\"streetname\">\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">County</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}}</mat-card-subtitle>\n          </mat-card>\n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Address</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">{{LookingAddress}}</mat-card-subtitle>\n          </mat-card>\n    \n    \n       <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}}</mat-card-subtitle>\n          </mat-card>\n    \n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">{{ownership}}</mat-card-subtitle>\n          </mat-card>\n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PropertyType}}</mat-card-subtitle>\n          </mat-card>\n      \n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ownership}}</mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\n          </mat-card>\n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Applicable Feature</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">{{features}}</mat-card-subtitle>\n          </mat-card>\n    \n    \n    \n        </div>\n        <div class=\"selected-button m-3\">\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true'\" disabled>Expressed</button>\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false'\" (click)=\"addToExpressCollection()\" >Confirm  Interest</button>\n          <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n        </div>\n      </div>\n    </div>\n    \n    </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"property-selected-detail-background\">\n  <div class=\"container property-detail-container\">\n    <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n    <div class=\"wrapper-detail-container\">\n      <div id=\"demo\">\n        <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n      </div>\n  \n  \n      <div class=\"streetname\">\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n        </mat-card>\n        \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">County</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Address</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{LookingAddress}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n     <mat-card class=\"Mat-card-div\">\n      <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\n      <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{ownership}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PropertyType}}</mat-card-subtitle>\n        </mat-card>\n    \n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ownership}}</mat-card-subtitle>\n        </mat-card>\n        \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Applicable Feature</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{features}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n  \n      </div>\n      <div class=\"selected-button m-3\">\n        <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true'\" disabled>Expressed</button>\n        <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false'\" (click)=\"addToExpressCollection()\" >Confirm  Interest</button>\n        <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n      </div>\n    </div>\n  </div>\n  \n  </div>\n\n\n";
     /***/
   },
 
@@ -661,7 +641,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n  <p class=\"nestimate-heading heading-nestimate\">Nestimates Activity</p>\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\n\n    <mat-tab label=\"Your action needed\">\n\n\n      <!--expressed-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"expressed\">\n            <div class=\"expressed-text heading-nestimate\">Interest Confirmed</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2 expressed\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest' && property.detail.Entry=='Seller'\">\n            <div class=\"mat-card-content-new-content\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{property.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\"\n                    routerLink='/mymatchesselecteddetail/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}/{{property.detail.UserId}}'>See\n                    Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n      <!-- Not expressed-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> --> \n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerProperty\">\n\n        <div class=\"not_expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"mat-card mt-2\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest' && property.detail.Entry=='Seller'\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{property.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\"\n                    routerLink='/mymatchesselecteddetail/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}//{{property.detail.UserId}}'>See\n                    Details</button>\n\n\n\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n\n      <!--expressed  Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"expressed\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest' && property.detail.Entry=='Buyer'\">\n            <div class=\"expressed-text heading-nestimate\">Interest Confirmed</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2 expressed\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest' && property.detail.Entry=='Buyer'\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}-\n                    &pound;{{property.detail.MinAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{property.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelcted/\n                {{property.detail.Lookingpostcode}}\n                /{{property.detail.ChainStatus}}\n                /{{property.detail.Conditions}}\n                /{{property.detail.SearchRadius}}\n                /{{property.detail.Position}}\n                /{{property.detail.MinAmount}}\n                /{{property.detail.MaxAmount}}\n                /{{property.detail.PropertyType}}\n                /{{property.propertyId}}\n                /{{expressed}}//{{property.detail.UserId}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n      <!-- Not expressed  Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"not_expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"mat-card mt-2\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest' && property.detail.Entry=='Buyer' \">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Rangeed</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{property.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/buyerSelcted/\n                 {{property.detail.Lookingpostcode}}\n                /{{property.detail.ChainStatus}}\n                /{{property.detail.Conditions}}\n                /{{property.detail.SearchRadius}}\n                /{{property.detail.Position}}\n                /{{property.detail.MinAmount}}\n                /{{property.detail.MaxAmount}}\n                /{{property.detail.PropertyType}}\n                /{{property.propertyId}}\n                /{{expressed}}/{{property.detail.UserId}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n\n\n\n    <!--When Seller confirm in from nestimates-->\n      <!-- Not expressed  Buyer-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertys of buyerProperty\">\n        <div class=\"not_expressed\" *ngIf=\"!checkExpressForValue(propertys.propertyId)\">\n          <mat-card class=\"mat-card mt-2\" *ngIf=\"propertys.detail.matchStatuss=='confirm_interest'\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{propertys.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{propertys.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{propertys.detail.Position}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\"\n                    routerLink=\"/BuyerConfirmedSelectedMatches/{{propertys.detail.Lookingpostcode}}/{{propertys.detail.MaxAmount}}/{{propertys.detail.Position}}/{{propertys.detail.ChainStatus}}/{{propertys.detail.Conditions}}/{{propertys.detail.SearchRadius}}/{{propertys.detail.Type}}/{{propertys.propertyId}}/{{expressed}}/{{propertys.detail.UserId}}\">See\n                    Details</button>\n\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n      <!--expressed  Buyer-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertys of buyerProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertys.propertyId)\">\n          <mat-card class=\"expressed\" *ngIf=\"propertys.detail.matchStatuss=='confirm_interest'\">\n            <div class=\"expressed-text heading-nestimate\">Interest Confirmed</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2 expressed\" *ngIf=\"propertys.detail.matchStatuss=='confirm_interest'\" >\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{propertys.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{propertys.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{propertys.detail.Position}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\"\n                    routerLink=\"/BuyerConfirmedSelectedMatches/{{propertys.detail.Lookingpostcode}}/{{propertys.detail.MaxAmount}}/{{propertys.detail.Position}}/{{propertys.detail.ChainStatus}}/{{propertys.detail.Conditions}}/{{propertys.detail.SearchRadius}}/{{propertys.detail.Type}}/{{propertys.propertyId}}/{{expressed}}/{{propertys.detail.UserId}}\">See\n                    Details</button>\n\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n\n\n      <!--When Buyer confirm in from nestimates-->\n      <!-- Not expressed  Buyer-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertys of buyerProperty\">\n        <div class=\"not_expressed\" *ngIf=\"!checkExpressForValue(propertys.propertyId)\">\n          <mat-card class=\"mat-card mt-2\" *ngIf=\"propertys.detail.matchStatu=='confirm_interest'\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{propertys.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{propertys.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{propertys.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\"\n                    routerLink=\"/SellerConfirmedProperty/{{propertys.detail.LookingAddress}}/{{propertys.detail.Lookingpostcode}}/{{propertys.detail.Lookingstate}}/{{propertys.detail.MaxAmount}}/{{propertys.detail.PropertyCondition}}/{{propertys.detail.PropertyType}}/{{propertys.detail.UserId}}/{{propertys.detail.matchStatu}}/{{propertys.detail.ownership}}/{{propertys.propertyId}}/{{expressed}}\">See\n                    Details</button>\n\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n      <!--expressed  Buyer-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertys of buyerProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertys.propertyId)\">\n          <mat-card class=\"expressed\"*ngIf=\"propertys.detail.matchStatu=='confirm_interest'\">\n            <div class=\"expressed-text heading-nestimate\">Interest Confirmed</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2 expressed\" *ngIf=\"propertys.detail.matchStatu=='confirm_interest'\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Desired Priceggg</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{propertys.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{propertys.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{propertys.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\"\n                  routerLink=\"/SellerConfirmedProperty/{{propertys.detail.LookingAddress}}/{{propertys.detail.Lookingpostcode}}/{{propertys.detail.Lookingstate}}/{{propertys.detail.MaxAmount}}/{{propertys.detail.PropertyCondition}}/{{propertys.detail.PropertyType}}/{{propertys.detail.UserId}}/{{propertys.detail.matchStatu}}/{{propertys.detail.ownership}}/{{propertys.propertyId}}/{{expressed}}\">See\n                    Details</button>\n\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n\n\n\n\n    </mat-tab>\n\n    <mat-tab label=\"Awaiting Response\">\n\n\n\n\n      <!-- <div class=\"heading-nestimate actvity-headings\">Confirmed by other party</div>  -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let buyerProperty of buyerProperty\">\n        <!-- <mat-card>\n      <span class=\"heading-nestimate card-heading-font\">Nestimate by</span>\n    </mat-card> -->\n        <mat-card class=\"mat-card mt-2\" *ngIf=\"buyerProperty.detail.matchStatus=='pending'\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                <span class=\"outputText price-font\">&pound;{{buyerProperty.detail.PriceRange}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Postcode:<span\n                    class=\"outputText\">{{buyerProperty.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{buyerProperty.detail.PropertyType}}</span></p>\n\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/MyMatchesseller/\n           \n           {{buyerProperty.detail.Lookingpostcode}}\n           /{{buyerProperty.detail.FinancialPosition}}\n           /{{buyerProperty.detail.PropertyType}}\n           /{{buyerProperty.detail.Position}} \n           /{{buyerProperty.detail.matchStatus}}'>See Details</button>\n\n\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n\n\n\n\n\n\n\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerProperty\">\n        <mat-card class=\"mat-card mt-2\" *ngIf=\"property.detail.matchStatus=='pending'\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Postcode:<span\n                    class=\"outputText\">{{property.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\"\n                  routerLink='/awaitingResponse/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}'>See\n                  Details</button>\n\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n\n\n\n    </mat-tab>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  </mat-tab-group>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n  <p class=\"nestimate-heading heading-nestimate\">Nestimates Activity</p>\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\n\n    <mat-tab label=\"Your action needed\">\n\n\n\n\n\n      \n      <!--Matches Buyer Start-->\n      <!--expressed Matches Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"expressed\">\n            <div class=\"expressed-text heading-nestimate\">Interest Confirmed</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2 expressed\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"mat-card-content-new-content\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{property.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\"\n                    routerLink='/myMtachesBuyer/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}/{{property.detail.UserId}}'>See\n                    Details</button>\n\n  \n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n      <!-- Not expressed Matches Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerProperty\">\n\n        <div class=\"not_expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"mat-card mt-2\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{property.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\"\n                    routerLink='/myMtachesBuyer/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}//{{property.detail.UserId}}'>See\n                    Details</button>\n\n\n\n                </div>\n                \n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n      <!--Matches Buyer End-->\n\n\n\n\n\n\n\n\n\n\n\n\n\n      <!--expressed  Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"expressed\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"expressed-text heading-nestimate\">Interest Confirmed</div>\n          </mat-card>\n          <mat-card class=\"mat-card mt-2 expressed\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}-\n                    &pound;{{property.detail.MinAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{property.detail.Lookinpostcode}}</span></p>&nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/matchesSeller/\n                {{property.detail.Lookinpostcode}}\n                /{{property.detail.ChainStatus}}\n                /{{property.detail.Conditions}}\n                /{{property.detail.SearchRadius}}\n                /{{property.detail.Position}}\n                /{{property.detail.MinAmount}}\n                /{{property.detail.MaxAmount}}\n                /{{property.detail.PropertyType}}\n                /{{property.propertyId}}\n                /{{expressed}}//{{property.detail.UserId}}'>See Details</button>\n                </div>\n              \n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n      <!-- Not expressed  Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"not_expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <mat-card class=\"mat-card mt-2\"\n            *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate\">Their Price Rangeed</span> <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}} - &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"other-text\">\n                  <p class=\"heading-nestimate\">Postcode:<span\n                      class=\"outputText\">{{property.detail.Lookinpostcode}}</span></p>&nbsp; &nbsp;\n                  <p class=\"heading-nestimate\">Poperty Type:<span\n                      class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n\n                </div>\n                <div class=\"button-container\">\n                  <button type=\"button\" class=\"btn btn-primary\" routerLink='/matchesSeller/\n                 {{property.detail.Lookinpostcode}}\n                /{{property.detail.ChainStatus}}\n                /{{property.detail.Conditions}}\n                /{{property.detail.SearchRadius}}\n                /{{property.detail.Position}}\n                /{{property.detail.MinAmount}}\n                /{{property.detail.MaxAmount}}\n                /{{property.detail.PropertyType}}\n                /{{property.propertyId}}\n                /{{expressed}}/{{property.detail.UserId}}'>See Details</button>\n                </div>\n              </div>\n            </div>\n          </mat-card>\n        </div>\n      </div>\n\n\n\n\n\n\n\n    </mat-tab>\n\n    <mat-tab label=\"Awaiting Response\">\n\n\n\n\n      <!-- <div class=\"heading-nestimate actvity-headings\">Confirmed by other party</div>  -->\n      <div class=\"mat-card-content-new\" *ngFor=\"let buyerProperty of buyerProperty\">\n      \n        <mat-card class=\"mat-card mt-2\" *ngIf=\"buyerProperty.detail.matchStatus=='pending'\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                <span class=\"outputText price-font\">&pound;{{buyerProperty.detail.MinAmount}}-&pound;{{buyerProperty.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Postcode:<span\n                    class=\"outputText\">{{buyerProperty.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{buyerProperty.detail.PropertyType}}</span></p>\n\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\" routerLink='/MyMatchesseller/\n           {{buyerProperty.detail.Lookingpostcode}}\n           /{{buyerProperty.detail.FinancialPosition}}\n           /{{buyerProperty.detail.PropertyType}}\n           /{{buyerProperty.detail.Position}} \n           /{{buyerProperty.detail.matchStatus}}'>See Details</button>\n\n\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n\n\n\n\n\n\n\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerProperty\">\n        <mat-card class=\"mat-card mt-2\" *ngIf=\"property.detail.matchStatus=='pending'\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-range\">\n                <span class=\"heading-nestimate\">Their Desired Price</span> <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"other-text\">\n                <p class=\"heading-nestimate\">Postcode:<span\n                    class=\"outputText\">{{property.detail.Lookingpostcode}}</span></p>&nbsp; &nbsp;\n                <p class=\"heading-nestimate\">Poperty Type:<span\n                    class=\"outputText\">{{property.detail.PropertyType}}</span></p>\n              </div>\n              <div class=\"button-container\">\n                <button type=\"button\" class=\"btn btn-primary\"\n                  routerLink='/awaitingResponse/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}'>See\n                  Details</button>\n\n              </div>\n            </div>\n          </div>\n        </mat-card>\n      </div>\n\n\n\n    </mat-tab>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  </mat-tab-group>\n</div>";
     /***/
   },
 
@@ -686,22 +666,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
-  "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.html":
-  /*!*****************************************************************************************************************************************!*\
-    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.html ***!
-    \*****************************************************************************************************************************************/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/seller-matches/seller-matches.component.html":
+  /*!*******************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/seller-matches/seller-matches.component.html ***!
+    \*******************************************************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function node_modulesRawLoaderDistCjsJsSrcAppMenuMyMatchesSellerConfirmedPropertySellerConfirmedPropertyComponentHtml(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesRawLoaderDistCjsJsSrcAppMenuMyMatchesSellerMatchesSellerMatchesComponentHtml(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"property-selected-detail-background\">\n    <div class=\"container property-detail-container\">\n      <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n      <div class=\"wrapper-detail-container\">\n        <div id=\"demo\">\n          <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n        </div>\n    \n    \n        <div class=\"streetname\">\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Desired Price</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{MaxAmount}} </mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Address</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{LookingAddress}} </mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Postcode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingpostcode}} </mat-card-subtitle>\n          </mat-card>\n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">State</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}} </mat-card-subtitle>\n          </mat-card>\n    \n    \n       <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}} </mat-card-subtitle>\n          </mat-card>\n    \n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\"> </mat-card-subtitle>\n          </mat-card>\n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\"> {{PropertyType}}</mat-card-subtitle>\n          </mat-card>\n      \n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\"> {{ownership}}</mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\n          </mat-card>\n    \n       \n    \n    \n    \n        </div>\n        <div class=\"selected-button m-3\">\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true'\" disabled>Expressed</button>\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false'\" (click)=\"addToExpressCollection()\" >Confirm  Interest</button>\n          <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n        </div>\n      </div>\n    </div>\n    \n    </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n ";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"property-selected-detail-background\">\n    <div class=\"container property-detail-container\">\n      <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n      <div class=\"wrapper-detail-container\">\n        <div id=\"demo\">\n          <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n        </div>\n    \n    \n        <div class=\"streetname\">\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Desired Price</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">&pound;{{MinAmount}}-&pound;{{MaxAmount}}</mat-card-subtitle>\n          </mat-card>\n        \n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Type}}</mat-card-subtitle>\n          </mat-card>\n    \n          <!-- <mat-card class=\"Mat-card-div\" *ngIf= \"ChainStatus != \" \">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">ChainStatus</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ChainStatus}}</mat-card-subtitle>\n            \n          </mat-card> -->\n  \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Conditions</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\n            \n          </mat-card>\n  \n          \n          <!-- <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">SearchRadius</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{SearchRadius}}</mat-card-subtitle>\n            \n          </mat-card> -->\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Position</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\n            \n          </mat-card>\n          \n          \n        \n        </div>\n        <div class=\"selected-button m-3\">\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true'\" disabled>Expressed</button>\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false'\" (click)=\"addToExpressCollection()\">Confirm  Interest</button>\n          <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n        </div>\n      </div>\n    </div>  \n    </div>\n    \n";
     /***/
   },
 
@@ -1777,7 +1757,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".back {\n  background-image: url(/assets/Images/home.jpeg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n}\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n  position: relative;\n  top: -145px;\n}\n.home-button {\n  background-color:var(--light-blue-color);\n  color: white;\n  width: 35%;\n}\n.home-button-SELL\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  width: 35%;\n}\n.home-text-font {\n \n\n  margin-bottom: 0.5rem;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n.how_does_it_work_steps {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n}\nimg.step-mage {\n  width: 33%;\n  margin: 14px;\n}\np.step-text {\n  text-align: center;\n  color: var(--DARK-BLUE-COLOR)\n}\n.steps-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.step {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 1em 0px;\n}\n@media only screen and (min-width:768px)\n{\n  .icon-size\n  {\n    width: 50% !important;\n  }\n}\n.cookies-policy {\n  background-color: RGB( 80 80 90);\nposition: absolute;\n  padding: 3px;\n  position: fixed;\nbottom: 0px;\nz-index: 1;\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n}\n.policy-heading {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 13px;\n}\np\n{\n  margin-bottom: 0px;\n}\nimg.button-cross {\n  width: 17px;\n}\n.custom-button-first {\n  border: 2px solid  var(--light-blue-color);\n  padding: 8px;\n  border-radius: 5px;\n  width: 50%;\n  flex-direction: inherit;\n    display: flex;\n    justify-content: space-around;\n   \n}\n.blue-circle {\n  padding: 5px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n  width: 17%;\n}\n.custom-text {\n  font-size: 16px;\n  font-family: 'Roboto-Bold';\n}\n.upper-custom-button {\n  display: flex;\n  justify-content: center;\n}\n.create-nestimate {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  justify-content: center;\n  background-color:var(--DARK-BLUE-COLOR);\n  padding: 7px;\n  border-radius: 5px;\n  width: 90%;\n}\nimg.button-image {\n  width: 50%;\n}\n.text-create-nestimate\n{\n  color: white;\n}\n.large-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\np.i-am {\n  /* text-align: center; */\n  width: 60%;\n  text-align: center;\n  margin-bottom: 5px;\n  font-family: 'Roboto-Bold';\n}\n.custom-button-first:hover\n{\n  cursor: pointer;\n}\n.radio-container {\n  display: block;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  font-size: 15px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n/* Hide the browser's default radio button */\n.radio-container input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n}\n/* Create a custom radio button */\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n}\n/* On mouse-over, add a grey background color */\n.radio-container:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n/* When the radio button is checked, add a blue background */\n.radio-container input:checked ~ .checkmark {\n  background-color: var(--DARK-BLUE-COLOR);\n}\n/* Create the indicator (the dot/circle - hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n/* Show the indicator (dot/circle) when checked */\n.radio-container input:checked ~ .checkmark:after {\n  display: block;\n}\n/* Style the indicator (dot/circle) */\n.radio-container .checkmark:after {\n \ttop: 9px;\n\tleft: 9px;\n\twidth: 8px;\n\theight: 8px;\n  border-radius: 50%;\n}\nlabel\n{\n  margin-bottom: 0px !important;\n}\n.slider-image\n{\n  width: 100%;\n  height: 250px;\n}\n@media screen and (min-width:701px)\n{\n  .slider-image\n{\n\n  height: 82vh;\n}\n.radio-cn {\n  position: absolute;\n  bottom: 18vh;\n  right: 3vw;\n}\n.cookies-policy {\n\n  width: 100vw;\n}\n}\n.light{\n  font-style: italic;\n  color: var(--light-blue-color);\n}\n.text-over-image {\n  /* position: absolute; */\n  position: relative;\n  /* bottom: 50vh; */\n  top: -8vh;\n  /* bottom: 50vh; */\n  text-align: center;\n  z-index: 1;\n  font-size: 20px;\n}\n.radio-cn.mat-card {\n\n  background-color: var(--BAckground-dark-color);\n}\np.text-over-image-second {\n  position: absolute;\n  top: 2vh;\n  color: white;\n  font-size: 22px;\n  font-family: 'Roboto-Bold';\n}\n.second-card\n{\n  background-color: var(--BAckground-dark-color); \n}\np.slider-text.heading-nestimate {\n  text-align: center;\n  margin-top: 4px;\n}\n.card-steps\n{\n  background-color:  var(--BAckground-dark-color);\n}\n.heading-nestimate-font{\n  font-size: 22px;\n}\n.top-button-cookies {\n  text-align: center;\n  /* height: 7vh; */\n  color: white;\n  border: 4px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 1em;\n  margin: 1em;\n  border-radius: 5px;\n\n}\n.lower-button\n{\n  background-color: #6DDDB7;\n  border: none;\n  color: black;\n}\n.agent-form {\n  display: flex;\n  /* width: 100%; */\n  justify-content: center;\n  margin: 1em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQ0FBK0M7RUFDL0MsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBRUE7RUFDRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLHdDQUF3QztFQUN4QyxZQUFZO0VBQ1osVUFBVTtBQUNaO0FBRUE7OztFQUdFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQztBQUNBO0VBQ0UsVUFBVTtFQUNWLFlBQVk7QUFDZDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCO0FBQ0Y7QUFHQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtBQUN6QjtBQUNBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLGVBQWU7QUFDakI7QUFDQTs7RUFFRTs7SUFFRSxxQkFBcUI7RUFDdkI7QUFDRjtBQUNBO0VBQ0UsZ0NBQWdDO0FBQ2xDLGtCQUFrQjtFQUNoQixZQUFZO0VBQ1osZUFBZTtBQUNqQixXQUFXO0FBQ1gsVUFBVTtBQUNWO0FBQ0E7RUFDRSxZQUFZO0VBQ1osbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixZQUFZO0FBQ2Q7QUFDQTs7RUFFRSxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLFdBQVc7QUFDYjtBQUNBO0VBQ0UsMENBQTBDO0VBQzFDLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLHVCQUF1QjtJQUNyQixhQUFhO0lBQ2IsNkJBQTZCOztBQUVqQztBQUNBO0VBQ0UsWUFBWTtFQUNaLHlDQUF5QztFQUN6QyxrQkFBa0I7RUFDbEIsVUFBVTtBQUNaO0FBQ0E7RUFDRSxlQUFlO0VBQ2YsMEJBQTBCO0FBQzVCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0FBQ3pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsdUJBQXVCO0VBQ3ZCLHVDQUF1QztFQUN2QyxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFVBQVU7QUFDWjtBQUNBO0VBQ0UsVUFBVTtBQUNaO0FBQ0E7O0VBRUUsWUFBWTtBQUNkO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0Usd0JBQXdCO0VBQ3hCLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLDBCQUEwQjtBQUM1QjtBQUNBOztFQUVFLGVBQWU7QUFDakI7QUFDQTtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixlQUFlO0VBQ2YseUJBQXlCO0VBQ3pCLHNCQUFzQjtFQUN0QixxQkFBcUI7RUFDckIsaUJBQWlCO0FBQ25CO0FBRUEsNENBQTRDO0FBQzVDO0VBQ0Usa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVixlQUFlO0FBQ2pCO0FBRUEsaUNBQWlDO0FBQ2pDO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsWUFBWTtFQUNaLFdBQVc7RUFDWCx5Q0FBeUM7RUFDekMsa0JBQWtCO0FBQ3BCO0FBRUEsK0NBQStDO0FBQy9DO0VBQ0Usc0JBQXNCO0FBQ3hCO0FBRUEsNERBQTREO0FBQzVEO0VBQ0Usd0NBQXdDO0FBQzFDO0FBRUEsb0VBQW9FO0FBQ3BFO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixhQUFhO0FBQ2Y7QUFFQSxpREFBaUQ7QUFDakQ7RUFDRSxjQUFjO0FBQ2hCO0FBRUEscUNBQXFDO0FBQ3JDO0VBQ0UsUUFBUTtDQUNULFNBQVM7Q0FDVCxVQUFVO0NBQ1YsV0FBVztFQUNWLGtCQUFrQjtBQUNwQjtBQUNBOztFQUVFLDZCQUE2QjtBQUMvQjtBQUNBOztFQUVFLFdBQVc7RUFDWCxhQUFhO0FBQ2Y7QUFFQTs7RUFFRTs7O0VBR0EsWUFBWTtBQUNkO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLFlBQVk7QUFDZDtBQUNBO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsOEJBQThCO0FBQ2hDO0FBQ0E7RUFDRSx3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsZUFBZTtBQUNqQjtBQUNBOztFQUVFLDhDQUE4QztBQUNoRDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixZQUFZO0VBQ1osZUFBZTtFQUNmLDBCQUEwQjtBQUM1QjtBQUNBOztFQUVFLDhDQUE4QztBQUNoRDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7QUFDakI7QUFDQTs7RUFFRSwrQ0FBK0M7QUFDakQ7QUFDRTtFQUNBLGVBQWU7QUFDakI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixXQUFXO0VBQ1gsa0JBQWtCOztBQUVwQjtBQUNBOztFQUVFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osWUFBWTtBQUNkO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLHVCQUF1QjtFQUN2QixXQUFXO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9Ib21lL0hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvSW1hZ2VzL2hvbWUuanBlZyk7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4udXBwZXItYmFjayB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgb3BhY2l0eTogMC41O1xufVxuLnVwcGVyLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gIHotaW5kZXg6IDEwMDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xNDVweDtcbn1cblxuLmhvbWUtYnV0dG9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuLmhvbWUtYnV0dG9uLVNFTExcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuXG4uaG9tZS10ZXh0LWZvbnQge1xuIFxuXG4gIG1hcmdpbi1ib3R0b206IDAuNXJlbTtcbn1cbi5leGFtcGxlLWZvcm0ge1xuICBtaW4td2lkdGg6IDE1MHB4O1xuICBtYXgtd2lkdGg6IDUwMHB4O1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwcHg7XG4gIGxlZnQ6IDBweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHotaW5kZXg6IDk7XG4gIGJhY2tncm91bmQ6IGJsYWNrO1xuICBvcGFjaXR5OiAwLjU7XG59XG4uaG93X2RvZXNfaXRfd29ya19zdGVwcyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2Vlbjtcbn1cbmltZy5zdGVwLW1hZ2Uge1xuICB3aWR0aDogMzMlO1xuICBtYXJnaW46IDE0cHg7XG59XG5wLnN0ZXAtdGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUilcbn1cblxuXG4uc3RlcHMtY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG4uc3RlcCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBtYXJnaW46IDFlbSAwcHg7XG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzY4cHgpXG57XG4gIC5pY29uLXNpemVcbiAge1xuICAgIHdpZHRoOiA1MCUgIWltcG9ydGFudDtcbiAgfVxufVxuLmNvb2tpZXMtcG9saWN5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogUkdCKCA4MCA4MCA5MCk7XG5wb3NpdGlvbjogYWJzb2x1dGU7XG4gIHBhZGRpbmc6IDNweDtcbiAgcG9zaXRpb246IGZpeGVkO1xuYm90dG9tOiAwcHg7XG56LWluZGV4OiAxO1xufVxuLnBvbGljeS1jb250ZW50IHtcbiAgbWFyZ2luOiAxM3B4O1xuICB0ZXh0LWFsaWduOiBqdXN0aWZ5O1xufVxuLnBvbGljeS1oZWFkaW5nIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBtYXJnaW46IDEzcHg7XG59XG5wXG57XG4gIG1hcmdpbi1ib3R0b206IDBweDtcbn1cbmltZy5idXR0b24tY3Jvc3Mge1xuICB3aWR0aDogMTdweDtcbn1cbi5jdXN0b20tYnV0dG9uLWZpcnN0IHtcbiAgYm9yZGVyOiAycHggc29saWQgIHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICBwYWRkaW5nOiA4cHg7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgd2lkdGg6IDUwJTtcbiAgZmxleC1kaXJlY3Rpb246IGluaGVyaXQ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgIFxufVxuLmJsdWUtY2lyY2xlIHtcbiAgcGFkZGluZzogNXB4O1xuICBib3JkZXI6IDJweCBzb2xpZCB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICB3aWR0aDogMTclO1xufVxuLmN1c3RvbS10ZXh0IHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbn1cbi51cHBlci1jdXN0b20tYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG4uY3JlYXRlLW5lc3RpbWF0ZSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBwYWRkaW5nOiA3cHg7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgd2lkdGg6IDkwJTtcbn1cbmltZy5idXR0b24taW1hZ2Uge1xuICB3aWR0aDogNTAlO1xufVxuLnRleHQtY3JlYXRlLW5lc3RpbWF0ZVxue1xuICBjb2xvcjogd2hpdGU7XG59XG4ubGFyZ2UtYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5wLmktYW0ge1xuICAvKiB0ZXh0LWFsaWduOiBjZW50ZXI7ICovXG4gIHdpZHRoOiA2MCU7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbn1cbi5jdXN0b20tYnV0dG9uLWZpcnN0OmhvdmVyXG57XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5yYWRpby1jb250YWluZXIge1xuICBkaXNwbGF5OiBibG9jaztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLWxlZnQ6IDM1cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZm9udC1zaXplOiAxNXB4O1xuICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lO1xuICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIHVzZXItc2VsZWN0OiBub25lO1xufVxuXG4vKiBIaWRlIHRoZSBicm93c2VyJ3MgZGVmYXVsdCByYWRpbyBidXR0b24gKi9cbi5yYWRpby1jb250YWluZXIgaW5wdXQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIG9wYWNpdHk6IDA7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLyogQ3JlYXRlIGEgY3VzdG9tIHJhZGlvIGJ1dHRvbiAqL1xuLmNoZWNrbWFyayB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICBoZWlnaHQ6IDI1cHg7XG4gIHdpZHRoOiAyNXB4O1xuICBib3JkZXI6IDJweCBzb2xpZCB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xufVxuXG4vKiBPbiBtb3VzZS1vdmVyLCBhZGQgYSBncmV5IGJhY2tncm91bmQgY29sb3IgKi9cbi5yYWRpby1jb250YWluZXI6aG92ZXIgaW5wdXQgfiAuY2hlY2ttYXJrIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2NjYztcbn1cblxuLyogV2hlbiB0aGUgcmFkaW8gYnV0dG9uIGlzIGNoZWNrZWQsIGFkZCBhIGJsdWUgYmFja2dyb3VuZCAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dDpjaGVja2VkIH4gLmNoZWNrbWFyayB7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG59XG5cbi8qIENyZWF0ZSB0aGUgaW5kaWNhdG9yICh0aGUgZG90L2NpcmNsZSAtIGhpZGRlbiB3aGVuIG5vdCBjaGVja2VkKSAqL1xuLmNoZWNrbWFyazphZnRlciB7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuLyogU2hvdyB0aGUgaW5kaWNhdG9yIChkb3QvY2lyY2xlKSB3aGVuIGNoZWNrZWQgKi9cbi5yYWRpby1jb250YWluZXIgaW5wdXQ6Y2hlY2tlZCB+IC5jaGVja21hcms6YWZ0ZXIge1xuICBkaXNwbGF5OiBibG9jaztcbn1cblxuLyogU3R5bGUgdGhlIGluZGljYXRvciAoZG90L2NpcmNsZSkgKi9cbi5yYWRpby1jb250YWluZXIgLmNoZWNrbWFyazphZnRlciB7XG4gXHR0b3A6IDlweDtcblx0bGVmdDogOXB4O1xuXHR3aWR0aDogOHB4O1xuXHRoZWlnaHQ6IDhweDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xufVxubGFiZWxcbntcbiAgbWFyZ2luLWJvdHRvbTogMHB4ICFpbXBvcnRhbnQ7XG59XG4uc2xpZGVyLWltYWdlXG57XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDI1MHB4O1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOjcwMXB4KVxue1xuICAuc2xpZGVyLWltYWdlXG57XG5cbiAgaGVpZ2h0OiA4MnZoO1xufVxuLnJhZGlvLWNuIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IDE4dmg7XG4gIHJpZ2h0OiAzdnc7XG59XG4uY29va2llcy1wb2xpY3kge1xuXG4gIHdpZHRoOiAxMDB2dztcbn1cbn1cbi5saWdodHtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG59XG4udGV4dC1vdmVyLWltYWdlIHtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIC8qIGJvdHRvbTogNTB2aDsgKi9cbiAgdG9wOiAtOHZoO1xuICAvKiBib3R0b206IDUwdmg7ICovXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgei1pbmRleDogMTtcbiAgZm9udC1zaXplOiAyMHB4O1xufVxuLnJhZGlvLWNuLm1hdC1jYXJkIHtcblxuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1CQWNrZ3JvdW5kLWRhcmstY29sb3IpO1xufVxucC50ZXh0LW92ZXItaW1hZ2Utc2Vjb25kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDJ2aDtcbiAgY29sb3I6IHdoaXRlO1xuICBmb250LXNpemU6IDIycHg7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xufVxuLnNlY29uZC1jYXJkXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7IFxufVxucC5zbGlkZXItdGV4dC5oZWFkaW5nLW5lc3RpbWF0ZSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luLXRvcDogNHB4O1xufVxuLmNhcmQtc3RlcHNcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogIHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7XG59XG4gIC5oZWFkaW5nLW5lc3RpbWF0ZS1mb250e1xuICBmb250LXNpemU6IDIycHg7XG59XG4udG9wLWJ1dHRvbi1jb29raWVzIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAvKiBoZWlnaHQ6IDd2aDsgKi9cbiAgY29sb3I6IHdoaXRlO1xuICBib3JkZXI6IDRweCBzb2xpZCAjODFDMkZEO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgcGFkZGluZzogMWVtO1xuICBtYXJnaW46IDFlbTtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuXG59XG4ubG93ZXItYnV0dG9uXG57XG4gIGJhY2tncm91bmQtY29sb3I6ICM2REREQjc7XG4gIGJvcmRlcjogbm9uZTtcbiAgY29sb3I6IGJsYWNrO1xufVxuLmFnZW50LWZvcm0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICAvKiB3aWR0aDogMTAwJTsgKi9cbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMWVtO1xufSJdfQ== */";
+    __webpack_exports__["default"] = ".back {\n  background-image: url(/assets/Images/home.jpeg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n}\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n  position: relative;\n  top: -145px;\n}\n.home-button {\n  background-color:var(--light-blue-color);\n  color: white;\n  width: 35%;\n}\n.home-button-SELL\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  width: 35%;\n}\n.home-text-font {\n \n\n  margin-bottom: 0.5rem;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n.how_does_it_work_steps {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n}\nimg.step-mage {\n  width: 33%;\n  margin: 14px;\n}\np.step-text {\n  text-align: center;\n  color: var(--DARK-BLUE-COLOR)\n}\n.steps-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.step {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  margin: 1em 0px;\n}\n@media only screen and (min-width:768px)\n{\n  .icon-size\n  {\n    width: 50% !important;\n  }\n}\n.cookies-policy {\n  background-color: RGB( 80 80 90);\nposition: absolute;\n  padding: 3px;\n  position: fixed;\nbottom: 0px;\nz-index: 1;\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n}\n.policy-heading {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 13px;\n}\np\n{\n  margin-bottom: 0px;\n}\nimg.button-cross {\n  width: 17px;\n}\n.custom-button-first {\n  border: 2px solid  var(--light-blue-color);\n  padding: 8px;\n  border-radius: 5px;\n  width: 50%;\n  flex-direction: inherit;\n    display: flex;\n    justify-content: space-around;\n   \n}\n.blue-circle {\n  padding: 5px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n  width: 17%;\n}\n.custom-text {\n  font-size: 16px;\n  font-family: 'Roboto-Bold';\n}\n.upper-custom-button {\n  display: flex;\n  justify-content: center;\n}\n.create-nestimate {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  justify-content: center;\n  background-color:var(--DARK-BLUE-COLOR);\n  padding: 7px;\n  border-radius: 5px;\n  width: 90%;\n}\nimg.button-image {\n  width: 50%;\n}\n.text-create-nestimate\n{\n  color: white;\n}\n.large-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\np.i-am {\n  /* text-align: center; */\n  width: 60%;\n  text-align: center;\n  margin-bottom: 5px;\n  font-family: 'Roboto-Bold';\n}\n.custom-button-first:hover\n{\n  cursor: pointer;\n}\n.radio-container {\n  display: block;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  font-size: 15px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n}\n/* Hide the browser's default radio button */\n.radio-container input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n}\n/* Create a custom radio button */\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n}\n/* On mouse-over, add a grey background color */\n.radio-container:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n/* When the radio button is checked, add a blue background */\n.radio-container input:checked ~ .checkmark {\n  background-color: var(--DARK-BLUE-COLOR);\n}\n/* Create the indicator (the dot/circle - hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n/* Show the indicator (dot/circle) when checked */\n.radio-container input:checked ~ .checkmark:after {\n  display: block;\n}\n/* Style the indicator (dot/circle) */\n.radio-container .checkmark:after {\n \ttop: 9px;\n\tleft: 9px;\n\twidth: 8px;\n\theight: 8px;\n  border-radius: 50%;\n}\nlabel\n{\n  margin-bottom: 0px !important;\n}\n.slider-image\n{\n  width: 100%;\n  height: 250px;\n}\n@media screen and (min-width:701px)\n{\n  .slider-image\n{\n\n  height: 82vh;\n}\n.radio-cn {\n  position: absolute;\n  bottom: 18vh;\n  right: 3vw;\n}\n.cookies-policy {\n\n  width: 100vw;\n}\n}\n.light{\n  font-style: italic;\n  color: var(--light-blue-color);\n}\n.text-over-image {\n  /* position: absolute; */\n  position: relative;\n  /* bottom: 50vh; */\n  top: -8vh;\n  /* bottom: 50vh; */\n  text-align: center;\n  z-index: 1;\n  font-size: 20px;\n}\n.radio-cn.mat-card {\n\n  background-color: var(--BAckground-dark-color);\n}\np.text-over-image-second {\n  position: absolute;\n  top: 2vh;\n  color: white;\n  font-size: 22px;\n  font-family: 'Roboto-Bold';\n}\n.second-card\n{\n  background-color: var(--BAckground-dark-color); \n}\np.slider-text.heading-nestimate {\n  text-align: center;\n  margin-top: 4px;\n}\n.card-steps\n{\n  background-color:  var(--BAckground-dark-color);\n}\n.heading-nestimate-font{\n  font-size: 22px;\n}\n.top-button-cookies {\n  text-align: center;\n  /* height: 7vh; */\n  color: white;\n  border: 4px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 1em;\n  margin: 1em;\n  border-radius: 5px;\n\n}\n.lower-button\n{\n  background-color: #6DDDB7;\n  border: none;\n  color: black;\n}\n.agent-form {\n  display: flex;\n  /* width: 100%; */\n  justify-content: center;\n  margin: 1em;\n}\n.listing-heading {\n  margin: 1em;\n}\n.to-buy {\n  margin: 0em 0.5em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQ0FBK0M7RUFDL0MsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBRUE7RUFDRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLHdDQUF3QztFQUN4QyxZQUFZO0VBQ1osVUFBVTtBQUNaO0FBRUE7OztFQUdFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGlCQUFpQjtFQUNqQixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQztBQUNBO0VBQ0UsVUFBVTtFQUNWLFlBQVk7QUFDZDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCO0FBQ0Y7QUFHQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtBQUN6QjtBQUNBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsbUJBQW1CO0VBQ25CLGVBQWU7QUFDakI7QUFDQTs7RUFFRTs7SUFFRSxxQkFBcUI7RUFDdkI7QUFDRjtBQUNBO0VBQ0UsZ0NBQWdDO0FBQ2xDLGtCQUFrQjtFQUNoQixZQUFZO0VBQ1osZUFBZTtBQUNqQixXQUFXO0FBQ1gsVUFBVTtBQUNWO0FBQ0E7RUFDRSxZQUFZO0VBQ1osbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixZQUFZO0FBQ2Q7QUFDQTs7RUFFRSxrQkFBa0I7QUFDcEI7QUFDQTtFQUNFLFdBQVc7QUFDYjtBQUNBO0VBQ0UsMENBQTBDO0VBQzFDLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLHVCQUF1QjtJQUNyQixhQUFhO0lBQ2IsNkJBQTZCOztBQUVqQztBQUNBO0VBQ0UsWUFBWTtFQUNaLHlDQUF5QztFQUN6QyxrQkFBa0I7RUFDbEIsVUFBVTtBQUNaO0FBQ0E7RUFDRSxlQUFlO0VBQ2YsMEJBQTBCO0FBQzVCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0FBQ3pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQix1QkFBdUI7RUFDdkIsdUJBQXVCO0VBQ3ZCLHVDQUF1QztFQUN2QyxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFVBQVU7QUFDWjtBQUNBO0VBQ0UsVUFBVTtBQUNaO0FBQ0E7O0VBRUUsWUFBWTtBQUNkO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0Usd0JBQXdCO0VBQ3hCLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLDBCQUEwQjtBQUM1QjtBQUNBOztFQUVFLGVBQWU7QUFDakI7QUFDQTtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixlQUFlO0VBQ2YseUJBQXlCO0VBQ3pCLHNCQUFzQjtFQUN0QixxQkFBcUI7RUFDckIsaUJBQWlCO0FBQ25CO0FBRUEsNENBQTRDO0FBQzVDO0VBQ0Usa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVixlQUFlO0FBQ2pCO0FBRUEsaUNBQWlDO0FBQ2pDO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsWUFBWTtFQUNaLFdBQVc7RUFDWCx5Q0FBeUM7RUFDekMsa0JBQWtCO0FBQ3BCO0FBRUEsK0NBQStDO0FBQy9DO0VBQ0Usc0JBQXNCO0FBQ3hCO0FBRUEsNERBQTREO0FBQzVEO0VBQ0Usd0NBQXdDO0FBQzFDO0FBRUEsb0VBQW9FO0FBQ3BFO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixhQUFhO0FBQ2Y7QUFFQSxpREFBaUQ7QUFDakQ7RUFDRSxjQUFjO0FBQ2hCO0FBRUEscUNBQXFDO0FBQ3JDO0VBQ0UsUUFBUTtDQUNULFNBQVM7Q0FDVCxVQUFVO0NBQ1YsV0FBVztFQUNWLGtCQUFrQjtBQUNwQjtBQUNBOztFQUVFLDZCQUE2QjtBQUMvQjtBQUNBOztFQUVFLFdBQVc7RUFDWCxhQUFhO0FBQ2Y7QUFFQTs7RUFFRTs7O0VBR0EsWUFBWTtBQUNkO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLFlBQVk7QUFDZDtBQUNBO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsOEJBQThCO0FBQ2hDO0FBQ0E7RUFDRSx3QkFBd0I7RUFDeEIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsZUFBZTtBQUNqQjtBQUNBOztFQUVFLDhDQUE4QztBQUNoRDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixZQUFZO0VBQ1osZUFBZTtFQUNmLDBCQUEwQjtBQUM1QjtBQUNBOztFQUVFLDhDQUE4QztBQUNoRDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7QUFDakI7QUFDQTs7RUFFRSwrQ0FBK0M7QUFDakQ7QUFDRTtFQUNBLGVBQWU7QUFDakI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixXQUFXO0VBQ1gsa0JBQWtCOztBQUVwQjtBQUNBOztFQUVFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osWUFBWTtBQUNkO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsaUJBQWlCO0VBQ2pCLHVCQUF1QjtFQUN2QixXQUFXO0FBQ2I7QUFDQTtFQUNFLFdBQVc7QUFDYjtBQUNBO0VBQ0UsaUJBQWlCO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYmFjayB7XG4gIGJhY2tncm91bmQtaW1hZ2U6IHVybCgvYXNzZXRzL0ltYWdlcy9ob21lLmpwZWcpO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiBhdXRvO1xuICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuLnVwcGVyLWJhY2sge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMjUwcHg7XG4gIG9wYWNpdHk6IDAuNTtcbn1cbi51cHBlci1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICB6LWluZGV4OiAxMDA7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgdG9wOiAtMTQ1cHg7XG59XG5cbi5ob21lLWJ1dHRvbiB7XG4gIGJhY2tncm91bmQtY29sb3I6dmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgd2lkdGg6IDM1JTtcbn1cbi5ob21lLWJ1dHRvbi1TRUxMXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgd2lkdGg6IDM1JTtcbn1cblxuLmhvbWUtdGV4dC1mb250IHtcbiBcblxuICBtYXJnaW4tYm90dG9tOiAwLjVyZW07XG59XG4uZXhhbXBsZS1mb3JtIHtcbiAgbWluLXdpZHRoOiAxNTBweDtcbiAgbWF4LXdpZHRoOiA1MDBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyOiBub25lO1xufVxuXG4ubG9hZGluZy1jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBsZWZ0OiAwcHg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB6LWluZGV4OiA5O1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgb3BhY2l0eTogMC41O1xufVxuLmhvd19kb2VzX2l0X3dvcmtfc3RlcHMge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5pbWcuc3RlcC1tYWdlIHtcbiAgd2lkdGg6IDMzJTtcbiAgbWFyZ2luOiAxNHB4O1xufVxucC5zdGVwLXRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpXG59XG5cblxuLnN0ZXBzLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLnN0ZXAge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luOiAxZW0gMHB4O1xufVxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOjc2OHB4KVxue1xuICAuaWNvbi1zaXplXG4gIHtcbiAgICB3aWR0aDogNTAlICFpbXBvcnRhbnQ7XG4gIH1cbn1cbi5jb29raWVzLXBvbGljeSB7XG4gIGJhY2tncm91bmQtY29sb3I6IFJHQiggODAgODAgOTApO1xucG9zaXRpb246IGFic29sdXRlO1xuICBwYWRkaW5nOiAzcHg7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbmJvdHRvbTogMHB4O1xuei1pbmRleDogMTtcbn1cbi5wb2xpY3ktY29udGVudCB7XG4gIG1hcmdpbjogMTNweDtcbiAgdGV4dC1hbGlnbjoganVzdGlmeTtcbn1cbi5wb2xpY3ktaGVhZGluZyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luOiAxM3B4O1xufVxucFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHg7XG59XG5pbWcuYnV0dG9uLWNyb3NzIHtcbiAgd2lkdGg6IDE3cHg7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdCB7XG4gIGJvcmRlcjogMnB4IHNvbGlkICB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgcGFkZGluZzogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIHdpZHRoOiA1MCU7XG4gIGZsZXgtZGlyZWN0aW9uOiBpbmhlcml0O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICBcbn1cbi5ibHVlLWNpcmNsZSB7XG4gIHBhZGRpbmc6IDVweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgd2lkdGg6IDE3JTtcbn1cbi5jdXN0b20tdGV4dCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG4udXBwZXItY3VzdG9tLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLmNyZWF0ZS1uZXN0aW1hdGUge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6dmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgcGFkZGluZzogN3B4O1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIHdpZHRoOiA5MCU7XG59XG5pbWcuYnV0dG9uLWltYWdlIHtcbiAgd2lkdGg6IDUwJTtcbn1cbi50ZXh0LWNyZWF0ZS1uZXN0aW1hdGVcbntcbiAgY29sb3I6IHdoaXRlO1xufVxuLmxhcmdlLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxucC5pLWFtIHtcbiAgLyogdGV4dC1hbGlnbjogY2VudGVyOyAqL1xuICB3aWR0aDogNjAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDVweDtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdDpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ucmFkaW8tY29udGFpbmVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAzNXB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGZvbnQtc2l6ZTogMTVweDtcbiAgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTtcbiAgLW1vei11c2VyLXNlbGVjdDogbm9uZTtcbiAgLW1zLXVzZXItc2VsZWN0OiBub25lO1xuICB1c2VyLXNlbGVjdDogbm9uZTtcbn1cblxuLyogSGlkZSB0aGUgYnJvd3NlcidzIGRlZmF1bHQgcmFkaW8gYnV0dG9uICovXG4ucmFkaW8tY29udGFpbmVyIGlucHV0IHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBvcGFjaXR5OiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi8qIENyZWF0ZSBhIGN1c3RvbSByYWRpbyBidXR0b24gKi9cbi5jaGVja21hcmsge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgaGVpZ2h0OiAyNXB4O1xuICB3aWR0aDogMjVweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cblxuLyogT24gbW91c2Utb3ZlciwgYWRkIGEgZ3JleSBiYWNrZ3JvdW5kIGNvbG9yICovXG4ucmFkaW8tY29udGFpbmVyOmhvdmVyIGlucHV0IH4gLmNoZWNrbWFyayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNjY2M7XG59XG5cbi8qIFdoZW4gdGhlIHJhZGlvIGJ1dHRvbiBpcyBjaGVja2VkLCBhZGQgYSBibHVlIGJhY2tncm91bmQgKi9cbi5yYWRpby1jb250YWluZXIgaW5wdXQ6Y2hlY2tlZCB+IC5jaGVja21hcmsge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xufVxuXG4vKiBDcmVhdGUgdGhlIGluZGljYXRvciAodGhlIGRvdC9jaXJjbGUgLSBoaWRkZW4gd2hlbiBub3QgY2hlY2tlZCkgKi9cbi5jaGVja21hcms6YWZ0ZXIge1xuICBjb250ZW50OiBcIlwiO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIFNob3cgdGhlIGluZGljYXRvciAoZG90L2NpcmNsZSkgd2hlbiBjaGVja2VkICovXG4ucmFkaW8tY29udGFpbmVyIGlucHV0OmNoZWNrZWQgfiAuY2hlY2ttYXJrOmFmdGVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi8qIFN0eWxlIHRoZSBpbmRpY2F0b3IgKGRvdC9jaXJjbGUpICovXG4ucmFkaW8tY29udGFpbmVyIC5jaGVja21hcms6YWZ0ZXIge1xuIFx0dG9wOiA5cHg7XG5cdGxlZnQ6IDlweDtcblx0d2lkdGg6IDhweDtcblx0aGVpZ2h0OiA4cHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cbmxhYmVsXG57XG4gIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50O1xufVxuLnNsaWRlci1pbWFnZVxue1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAyNTBweDtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgLnNsaWRlci1pbWFnZVxue1xuXG4gIGhlaWdodDogODJ2aDtcbn1cbi5yYWRpby1jbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgYm90dG9tOiAxOHZoO1xuICByaWdodDogM3Z3O1xufVxuLmNvb2tpZXMtcG9saWN5IHtcblxuICB3aWR0aDogMTAwdnc7XG59XG59XG4ubGlnaHR7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xufVxuLnRleHQtb3Zlci1pbWFnZSB7XG4gIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAvKiBib3R0b206IDUwdmg7ICovXG4gIHRvcDogLTh2aDtcbiAgLyogYm90dG9tOiA1MHZoOyAqL1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHotaW5kZXg6IDE7XG4gIGZvbnQtc2l6ZTogMjBweDtcbn1cbi5yYWRpby1jbi5tYXQtY2FyZCB7XG5cbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tQkFja2dyb3VuZC1kYXJrLWNvbG9yKTtcbn1cbnAudGV4dC1vdmVyLWltYWdlLXNlY29uZCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAydmg7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAyMnB4O1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbn1cbi5zZWNvbmQtY2FyZFxue1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1CQWNrZ3JvdW5kLWRhcmstY29sb3IpOyBcbn1cbnAuc2xpZGVyLXRleHQuaGVhZGluZy1uZXN0aW1hdGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi10b3A6IDRweDtcbn1cbi5jYXJkLXN0ZXBzXG57XG4gIGJhY2tncm91bmQtY29sb3I6ICB2YXIoLS1CQWNrZ3JvdW5kLWRhcmstY29sb3IpO1xufVxuICAuaGVhZGluZy1uZXN0aW1hdGUtZm9udHtcbiAgZm9udC1zaXplOiAyMnB4O1xufVxuLnRvcC1idXR0b24tY29va2llcyB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgLyogaGVpZ2h0OiA3dmg7ICovXG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyOiA0cHggc29saWQgIzgxQzJGRDtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHBhZGRpbmc6IDFlbTtcbiAgbWFyZ2luOiAxZW07XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcblxufVxuLmxvd2VyLWJ1dHRvblxue1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjNkREREI3O1xuICBib3JkZXI6IG5vbmU7XG4gIGNvbG9yOiBibGFjaztcbn1cbi5hZ2VudC1mb3JtIHtcbiAgZGlzcGxheTogZmxleDtcbiAgLyogd2lkdGg6IDEwMCU7ICovXG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW46IDFlbTtcbn1cbi5saXN0aW5nLWhlYWRpbmcge1xuICBtYXJnaW46IDFlbTtcbn1cbi50by1idXkge1xuICBtYXJnaW46IDBlbSAwLjVlbTtcbn0iXX0= */";
     /***/
   },
 
@@ -2328,15 +2308,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/material */
     "./node_modules/@angular/material/esm2015/material.js");
+    /* harmony import */
+
+
+    var _state_service_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../.././../state-service.service */
+    "./src/app/state-service.service.ts");
 
     var AlertDialogBuyerDataSubmissionComponent =
     /*#__PURE__*/
     function () {
-      function AlertDialogBuyerDataSubmissionComponent(data, dialogRef) {
+      function AlertDialogBuyerDataSubmissionComponent(data, dialogRef, stateService) {
         _classCallCheck(this, AlertDialogBuyerDataSubmissionComponent);
 
         this.data = data;
         this.dialogRef = dialogRef;
+        this.stateService = stateService;
         this.message = "";
         this.cancelButtonText = "Cancel";
         this.newUser = true;
@@ -2374,6 +2361,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         }]
       }, {
         type: _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatDialogRef"]
+      }, {
+        type: _state_service_service__WEBPACK_IMPORTED_MODULE_3__["StateServiceService"]
       }];
     };
 
@@ -3007,17 +2996,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             _this8.expressed = params.get("expressed"); //Buyer Params
 
             _this8.Look_postcodes = params.get("Look_postcodes");
-            _this8.Look_streetName = params.get("LookingStreetname");
-            _this8.Look_condition = params.get("Conditions");
-            _this8.Look_ChaonStatus = params.get("ChainStatus");
-            _this8.Look_Position = params.get("FinancialPosition");
-            _this8.Look_Radius = params.get("SearchRadius");
-            _this8.Look_Minamount = params.get("Min_Amount");
-            _this8.Look_Maxamount = params.get("Max_Amount");
-            _this8.Look_Validity = params.get("Validity");
-            _this8.Look_PropertyType = params.get("Property_Type");
-            _this8.Look_Position = params.get("Position");
-            _this8.Look_UserId = params.get("UserId");
+            _this8.Look_streetName = params.get("Look_Streetname");
+            _this8.Look_condition = params.get("Look_condition");
+            _this8.Look_ChaonStatus = params.get("Look_chainstatus");
+            _this8.Look_Position = params.get("Look_FinancialPosition");
+            _this8.Look_Radius = params.get("Look_Radius");
+            _this8.Look_Minamount = params.get("Look_minamount");
+            _this8.Look_Maxamount = params.get("Look_maxamount");
+            _this8.Look_Validity = params.get("Look_Validity");
+            _this8.Look_PropertyType = params.get("Look_propertytype");
+            _this8.Look_Position = params.get("Look_Position");
+            _this8.Look_UserId = params.get("Look_UserId");
+            console.log(_this8.Look_postcodes + _this8.Look_streetName);
           });
           this.Selected_propertydetail_Service.getUser(this.UserId).subscribe(function (dref) {
             dref.forEach(function (element) {
@@ -4354,14 +4344,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                     message: "Please Select MinAmount"
                   }
                 });
-              } else if (this.listingBuyer.MaxAmount == null) {
+              } else if (this.listingBuyer.MinAmount > this.listingBuyer.MaxAmount) {
                 var _dialogRef18 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                  data: {
+                    message: "Minimum price should be less than max price"
+                  }
+                });
+              } else if (this.listingBuyer.MaxAmount > this.listingBuyer.MinAmount) {
+                var _dialogRef19 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                  data: {
+                    message: "Maximum price should be more than minimum price"
+                  }
+                });
+              } else if (this.listingBuyer.MaxAmount == null) {
+                var _dialogRef20 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MaxAmount"
                   }
                 });
               } else if (this.listingBuyer.Validity == null) {
-                var _dialogRef19 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef21 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Validity"
                   }
@@ -5357,7 +5359,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             _this25.New_latitude = params.get("latitude");
             _this25.New_longitude = params.get("longitude");
             _this25.newUser = params.get("newUser");
-            _this25.Property_For = params.get("PropertyFor");
+            _this25.Property_For = params.get("PropertyFor"); //Seller Params
+
+            _this25.New_state = params.get("Lookingstate");
+            _this25.New_rooms = params.get("Maxrooms");
+            _this25.New_Propertycondition = params.get("PropertyCondition");
+            _this25.New_Address = params.get("LookingAddress");
+            _this25.New_ownership = params.get("ownership");
+            _this25.New_features = params.get("features");
+            _this25.New_userId = params.get("UserId");
+            _this25.New_Maxbathrooms = params.get("Maxbathrooms");
+            _this25.New_Maxreception = params.get("Maxreception");
+            _this25.New_ownership = params.get("ownership");
+            _this25.New_Maxrooms = params.get("Maxrooms");
+            console.log(_this25.New_Maxrooms);
           });
 
           if (this.newUser == "false") {
@@ -5368,7 +5383,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             this.Look_latitude = this.New_latitude;
             this.Look_longitude = this.New_longitude;
             this.Look_PropertyFor = this.Property_For;
-            console.log(this.Look_postcode + " " + this.Look_PropertyType + " " + this.Look_Town + " " + this.Look_maxAmount + " " + this.Look_latitude + " " + this.Look_longitude);
+            this.Look_state = this.New_state;
+            this.Look_rooms = this.New_rooms;
+            this.Look_Propertycondition = this.New_Propertycondition;
+            this.Look_Address = this.New_Address;
+            this.Look_ownership = this.New_ownership;
+            this.Look_features = this.New_features;
+            this.Look_userId = this.New_userId;
+            this.Look_Maxbathrooms = this.New_Maxbathrooms;
+            this.Look_Maxreceptions = this.New_Maxreception;
+            this.Look_ownership = this.New_ownership;
+            this.Look_Maxrooms = this.New_Maxrooms;
+            console.log(this.Look_Maxrooms);
           }
 
           if (this.newUser == "true") {
@@ -5379,7 +5405,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             this.Look_latitude = this.stateService.listingSeller.latitude;
             this.Look_longitude = this.stateService.listingSeller.longitude;
             this.Look_PropertyFor = this.stateService.listingSeller.PropertyFor;
-            console.log(this.Look_postcode + " " + this.Look_PropertyType + " " + this.Look_Town + " " + this.Look_maxAmount + " " + this.Look_latitude + " " + this.Look_longitude);
+            this.Look_state = this.stateService.listingSeller.Lookingstate;
+            this.Look_rooms = this.stateService.listingSeller.Maxrooms;
+            this.Look_Propertycondition = this.stateService.listingSeller.PropertyCondition;
+            this.Look_Address = this.stateService.listingSeller.LookingAddress;
+            this.Look_ownership = this.stateService.listingSeller.ownership;
+            this.Look_features = this.stateService.listingSeller.features;
+            this.Look_userId = this.stateService.listingSeller.UserId;
+            this.Look_Maxbathrooms = this.stateService.listingSeller.Maxbathrooms;
+            this.Look_Maxreceptions = this.stateService.listingSeller.Maxreception;
+            this.Look_ownership = this.stateService.listingSeller.ownership;
+            this.Look_Maxrooms = this.stateService.listingSeller.Maxrooms;
           } // Fetch details
 
 
@@ -5836,6 +5872,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             _this27.PriceRange = params.get("MaxAmount");
+            _this27.MinAmount = params.get("MinAmount");
             _this27.Lookingpostcode = params.get("Lookingpostcode");
             _this27.LookingStreetname = params.get("LookingStreetname");
             _this27.Position = params.get("Position");
@@ -5847,16 +5884,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             _this27.Maxreception = params.get("Maxreception");
             _this27.features = params.get("features");
             _this27.UserId = params.get("UserId").replace(/\s/g, "");
-            _this27.FinancialPosition = params.get("FinancialPosition"); //   this.ChainStatus = params.get("ChainStatus");
-            // this.FinancialPosition = params.get("FinancialPosition");
-            // this.SearchRadius = params.get("SearchRadius");
-            // this.PriceRange = params.get("PriceRange");
+            _this27.FinancialPosition = params.get("FinancialPosition");
+            _this27.ChainStatus = params.get("ChainStatus"); // this.FinancialPosition = params.get("FinancialPosition");
+
+            _this27.SearchRadius = params.get("SearchRadius"); // this.PriceRange = params.get("PriceRange");
             // this.Validity = params.get("Validity");
             // this.Type = params.get("Type");
             // this.Position = params.get("Position");
 
             _this27.propertyId = params.get("propertyId");
-            _this27.expressed = params.get("expressed");
+            _this27.expressed = params.get("expressed"); //SelectedSeller Params
+
+            _this27.Look_State = params.get("Look_state");
+            _this27.Look_rooms = params.get("Look_rooms");
+            _this27.Look_Propertycondition = params.get("Look_Propertycondition");
+            _this27.Look_Address = params.get("Look_Address");
+            _this27.Look_ownership = params.get("Look_ownership");
+            _this27.Look_features = params.get("Look_features");
+            _this27.Look_userId = params.get("Look_userId");
+            _this27.Look_postcode = params.get("Look_postcode");
+            _this27.Look_PropertyType = params.get("Look_PropertyType");
+            _this27.Look_maxAmount = params.get("Look_maxAmount");
+            _this27.Look_Town = params.get("Look_Town");
+            _this27.Look_Address = params.get("Look_Address");
+            _this27.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
+            _this27.Look_Maxreceptions = params.get("Look_Maxreceptions");
+            _this27.Look_ownership = params.get("Look_ownership");
+            _this27.Look_Maxrooms = params.get("Look_Maxrooms");
+            console.log(_this27.Look_Maxrooms);
           });
           this.seller_Selected_propertydetail_Service.getUser(this.UserId).subscribe(function (dref) {
             dref.forEach(function (element) {
@@ -5882,7 +5937,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           var _this28 = this;
 
           this.matchesSeller = {
-            PriceRange: this.PriceRange,
+            MinAmount: this.MinAmount,
+            MaxAmount: this.PriceRange,
             Lookingpostcode: this.Lookingpostcode,
             LookingStreetname: this.LookingStreetname,
             Position: this.Position,
@@ -5895,6 +5951,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             features: this.features,
             FinancialPosition: this.FinancialPosition,
             UserId: this.UserId,
+            ChainStatus: this.ChainStatus,
             matchStatus: "pending",
             Entry: "Seller"
           };
@@ -5907,17 +5964,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             }
           });
           this.matchesBuyer = {
-            Lookingpostcode: this.stateService.listingSeller.Lookingpostcode,
-            Lookingstate: this.stateService.listingSeller.Lookingstate,
-            LookingTown: this.stateService.listingSeller.LookingTown,
-            Roomsmax: this.stateService.listingSeller.Maxrooms,
-            PropertyCondition: this.stateService.listingSeller.PropertyCondition,
-            MaxAmount: this.stateService.listingSeller.MaxAmount,
-            LookingAddress: this.stateService.listingSeller.LookingAddress,
-            ownership: this.stateService.listingSeller.ownership,
-            PropertyType: this.stateService.listingSeller.PropertyType,
-            features: this.stateService.listingSeller.features,
-            UserId: this.stateService.listingSeller.UserId,
+            Lookingpostcode: this.Look_postcode,
+            Lookingstate: this.Look_State,
+            LookingTown: this.Look_Town,
+            PropertyCondition: this.Look_Propertycondition,
+            MaxAmount: this.Look_maxAmount,
+            LookingAddress: this.Look_Address,
+            ownership: this.Look_ownership,
+            PropertyType: this.Look_PropertyType,
+            features: this.Look_features,
+            UserId: this.Look_userId,
+            Maxbathrooms: this.Look_Maxbathrooms,
+            Maxreception: this.Look_Maxreceptions,
+            Maxrooms: this.Look_Maxrooms,
+            Roomsmax: this.Look_Maxrooms,
             matchStatus: "confirm_interest",
             Entry: "Seller"
           };
@@ -6577,19 +6637,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               });
             } else if (this.user.Email == null) {
-              var _dialogRef20 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef22 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Email"
                 }
               });
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef21 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef23 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "You need to be over 18 to register on this website"
                 }
               });
             } else if (this.user.Phone == null) {
-              var _dialogRef22 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef24 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter Phone number"
                 }
@@ -6601,7 +6661,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           } else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
               if (this.maxamounts == false) {
-                var _dialogRef23 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef25 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select property"
                   }
@@ -6609,73 +6669,73 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               }
 
               if (this.user.Currentpostcode == null) {
-                var _dialogRef24 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef26 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Current Postcode"
                   }
                 });
               } else if (this.user.CurrentAddress == null) {
-                var _dialogRef25 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef27 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Current Address"
                   }
                 });
               } else if (this.user.CurrentTown == null) {
-                var _dialogRef26 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef28 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Current Town"
                   }
                 });
               } else if (this.user.Currentstate == null) {
-                var _dialogRef27 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef29 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Current State"
                   }
                 });
               } else if (this.listingSeller.Lookingpostcode == null) {
-                var _dialogRef28 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef30 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Postcodes"
                   }
                 });
               } else if (this.listingSeller.LookingAddress == null) {
-                var _dialogRef29 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef31 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Address"
                   }
                 });
               } else if (this.listingSeller.LookingTown == null) {
-                var _dialogRef30 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef32 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Town"
                   }
                 });
               } else if (this.listingSeller.Lookingstate == null) {
-                var _dialogRef31 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef33 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking State"
                   }
                 });
               } else if (this.listingSeller.PropertyType == null) {
-                var _dialogRef32 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef34 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Property Type"
                   }
                 });
               } else if (this.listingSeller.Maxrooms == null) {
-                var _dialogRef33 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef35 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum of Rooms"
                   }
                 });
               } else if (this.listingSeller.MaxAmount == null) {
-                var _dialogRef34 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef36 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum Amount"
                   }
                 });
               } else if (this.listingSeller.ownership == null) {
-                var _dialogRef35 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef37 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Ownership"
                   }
@@ -7662,6 +7722,199 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
+  "./src/app/Home/nestimates-home/nestimates-home.component.css":
+  /*!********************************************************************!*\
+    !*** ./src/app/Home/nestimates-home/nestimates-home.component.css ***!
+    \********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppHomeNestimatesHomeNestimatesHomeComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".my-requirement-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n}\n.my-requirement-one\n{\n    background-color: white;\n \n}\n.my-requirement-heading\n{\n    text-align: center;\n    font-size: 22px;\n}\n.area-p\n{\n    font-size:20px;\n    text-align: center;\n}\n.discription-p\n{\n    font-size: 12px;\n    margin-bottom: 0px !important;\n}\n.my-requirement-one {\n    text-align: center;\n}\n.mat-tab-label\n{\n    height: 48px;\n    padding: 0 24px;\n    cursor: pointer;\n    box-sizing: border-box;\n    opacity: .6;\n    min-width: 160px;\n    text-align: center;\n    display: inline-flex;\n    justify-content: center;\n    align-items: center;\n    white-space: nowrap;\n    position: relative;\n    width: 100% !important;\n}\ndiv#demo {\n    display: flex;\n    align-items: center;\n    margin: 10px;\n    text-align: justify;\n}\n.match-images\n{\n    height: 16vh;\n}\n.mat-card-content-new-content {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: center;\n}\nspan.outputText.price-font {\n    font-size: 1.6em;\n}\n.other-text {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: center;\n}\n.button-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\nspan.heading-nestimate.card-heading-font {\n    text-align: left;\n    width: 100%;\n    font-size: 20px;\n}\n.mat-card-content-new {\n    margin-top: 1em;\n}\n/* .overflow-setting {\n\n    font-size: 14px;\n} */\np.heading-nestimate.overflow-setting {\n    /* white-space: nowrap; */\n    /* overflow: hidden; */\n    font-size: 14px;\n    /* text-overflow: ellipsis; */\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9uZXN0aW1hdGVzLWhvbWUvbmVzdGltYXRlcy1ob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLHVCQUF1Qjs7QUFFM0I7QUFDQTs7SUFFSSxrQkFBa0I7SUFDbEIsZUFBZTtBQUNuQjtBQUNBOztJQUVJLGNBQWM7SUFDZCxrQkFBa0I7QUFDdEI7QUFDQTs7SUFFSSxlQUFlO0lBQ2YsNkJBQTZCO0FBQ2pDO0FBRUE7SUFDSSxrQkFBa0I7QUFDdEI7QUFFQTs7SUFFSSxZQUFZO0lBQ1osZUFBZTtJQUNmLGVBQWU7SUFDZixzQkFBc0I7SUFDdEIsV0FBVztJQUNYLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsb0JBQW9CO0lBQ3BCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLGtCQUFrQjtJQUNsQixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLFlBQVk7QUFDaEI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsV0FBVztJQUNYLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTs7O0dBR0c7QUFDSDtJQUNJLHlCQUF5QjtJQUN6QixzQkFBc0I7SUFDdEIsZUFBZTtJQUNmLDZCQUE2QjtBQUNqQyIsImZpbGUiOiJzcmMvYXBwL0hvbWUvbmVzdGltYXRlcy1ob21lL25lc3RpbWF0ZXMtaG9tZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm15LXJlcXVpcmVtZW50LWNvbnRhaW5lclxue1xuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcbn1cbi5teS1yZXF1aXJlbWVudC1vbmVcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiBcbn1cbi5teS1yZXF1aXJlbWVudC1oZWFkaW5nXG57XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMjJweDtcbn1cbi5hcmVhLXBcbntcbiAgICBmb250LXNpemU6MjBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4uZGlzY3JpcHRpb24tcFxue1xuICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcbn1cblxuLm15LXJlcXVpcmVtZW50LW9uZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4ubWF0LXRhYi1sYWJlbFxue1xuICAgIGhlaWdodDogNDhweDtcbiAgICBwYWRkaW5nOiAwIDI0cHg7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgb3BhY2l0eTogLjY7XG4gICAgbWluLXdpZHRoOiAxNjBweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZGlzcGxheTogaW5saW5lLWZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB3aWR0aDogMTAwJSAhaW1wb3J0YW50O1xufVxuZGl2I2RlbW8ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW46IDEwcHg7XG4gICAgdGV4dC1hbGlnbjoganVzdGlmeTtcbn1cbi5tYXRjaC1pbWFnZXNcbntcbiAgICBoZWlnaHQ6IDE2dmg7XG59XG5cbi5tYXQtY2FyZC1jb250ZW50LW5ldy1jb250ZW50IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbnNwYW4ub3V0cHV0VGV4dC5wcmljZS1mb250IHtcbiAgICBmb250LXNpemU6IDEuNmVtO1xufVxuLm90aGVyLXRleHQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLmJ1dHRvbi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5zcGFuLmhlYWRpbmctbmVzdGltYXRlLmNhcmQtaGVhZGluZy1mb250IHtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbn1cbi5tYXQtY2FyZC1jb250ZW50LW5ldyB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLyogLm92ZXJmbG93LXNldHRpbmcge1xuXG4gICAgZm9udC1zaXplOiAxNHB4O1xufSAqL1xucC5oZWFkaW5nLW5lc3RpbWF0ZS5vdmVyZmxvdy1zZXR0aW5nIHtcbiAgICAvKiB3aGl0ZS1zcGFjZTogbm93cmFwOyAqL1xuICAgIC8qIG92ZXJmbG93OiBoaWRkZW47ICovXG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIC8qIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzOyAqL1xufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/Home/nestimates-home/nestimates-home.component.ts":
+  /*!*******************************************************************!*\
+    !*** ./src/app/Home/nestimates-home/nestimates-home.component.ts ***!
+    \*******************************************************************/
+
+  /*! exports provided: NestimatesHomeComponent */
+
+  /***/
+  function srcAppHomeNestimatesHomeNestimatesHomeComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "NestimatesHomeComponent", function () {
+      return NestimatesHomeComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _nestimates_home_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./nestimates-home.service */
+    "./src/app/Home/nestimates-home/nestimates-home.service.ts");
+
+    var NestimatesHomeComponent =
+    /*#__PURE__*/
+    function () {
+      function NestimatesHomeComponent(myrequirement_service) {
+        _classCallCheck(this, NestimatesHomeComponent);
+
+        this.myrequirement_service = myrequirement_service;
+        this.propertyDetails = [];
+        this.propertyRequirementDetails = [];
+        this.newUser = false;
+      }
+
+      _createClass(NestimatesHomeComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this40 = this;
+
+          // User ID
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.uid = this.user.uid; // Fetch details
+
+          this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
+            res.forEach(function (element) {
+              _this40.docid = element.id;
+
+              _this40.propertyRequirementDetails.push(element.data());
+            });
+          });
+          this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
+            res.forEach(function (element) {
+              _this40.docid = element.id;
+
+              _this40.propertyDetails.push(element.data());
+            });
+          });
+        }
+      }]);
+
+      return NestimatesHomeComponent;
+    }();
+
+    NestimatesHomeComponent.ctorParameters = function () {
+      return [{
+        type: _nestimates_home_service__WEBPACK_IMPORTED_MODULE_2__["NestimatesHomeService"]
+      }];
+    };
+
+    NestimatesHomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-nestimates-home',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./nestimates-home.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/Home/nestimates-home/nestimates-home.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./nestimates-home.component.css */
+      "./src/app/Home/nestimates-home/nestimates-home.component.css")).default]
+    })], NestimatesHomeComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/Home/nestimates-home/nestimates-home.service.ts":
+  /*!*****************************************************************!*\
+    !*** ./src/app/Home/nestimates-home/nestimates-home.service.ts ***!
+    \*****************************************************************/
+
+  /*! exports provided: NestimatesHomeService */
+
+  /***/
+  function srcAppHomeNestimatesHomeNestimatesHomeServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "NestimatesHomeService", function () {
+      return NestimatesHomeService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/fire/firestore */
+    "./node_modules/@angular/fire/firestore/es2015/index.js");
+
+    var NestimatesHomeService =
+    /*#__PURE__*/
+    function () {
+      function NestimatesHomeService(db) {
+        _classCallCheck(this, NestimatesHomeService);
+
+        this.db = db;
+        this.customersRef = db.collection("listingBuyer");
+        this.SellerRef = db.collection("listingSeller");
+      }
+
+      _createClass(NestimatesHomeService, [{
+        key: "getBuyerRequirement",
+        value: function getBuyerRequirement(uid) {
+          return this.customersRef.doc(uid).collection("requirements").ref.get();
+        }
+      }, {
+        key: "getSellerProperties",
+        value: function getSellerProperties(uid) {
+          return this.SellerRef.doc(uid).collection("properties").ref.get();
+        }
+      }]);
+
+      return NestimatesHomeService;
+    }();
+
+    NestimatesHomeService.ctorParameters = function () {
+      return [{
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]
+      }];
+    };
+
+    NestimatesHomeService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], NestimatesHomeService);
+    /***/
+  },
+
+  /***/
   "./src/app/Menu/Chats/chats.component.css":
   /*!************************************************!*\
     !*** ./src/app/Menu/Chats/chats.component.css ***!
@@ -8034,61 +8287,61 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this40 = this;
+          var _this41 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this40.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
-            _this40.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
-            _this40.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
-            _this40.listingBuyer.Currentstate = params.get("Currentstate").trim();
-            _this40.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
-            _this40.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this40.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            _this40.listingBuyer.LookingTown = params.get("LookingTown").trim();
-            console.log(_this40.listingBuyer.LookingTown);
-            _this40.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
-            _this40.listingBuyer.Country = params.get("Country").trim();
-            _this40.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
-            _this40.listingBuyer.SearchRadius = params.get("SearchRadius").trim();
-            _this40.listingBuyer.PropertyType = params.get("PropertyType").trim();
-            _this40.listingBuyer.Roommin = params.get("Roommin").trim();
-            _this40.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
-            _this40.listingBuyer.MinAmount = params.get("MinAmount").trim();
-            _this40.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
-            _this40.listingBuyer.Validity = params.get("Validity").trim();
-            _this40.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
-            _this40.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
-            _this40.listingBuyer.Minreception = params.get("Minreception").trim();
-            _this40.listingBuyer.Maxreception = params.get("Maxreception").trim();
-            _this40.listingBuyer.Conditions = params.get("Conditions").trim();
-            _this40.listingBuyer.Ownership = params.get("Ownership").trim();
-            _this40.listingBuyer.features = params.get("features").trim();
-            _this40.docid = params.get("docid");
-            console.log(_this40.docid);
+            _this41.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
+            _this41.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
+            _this41.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
+            _this41.listingBuyer.Currentstate = params.get("Currentstate").trim();
+            _this41.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
+            _this41.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this41.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
+            _this41.listingBuyer.LookingTown = params.get("LookingTown").trim();
+            console.log(_this41.listingBuyer.LookingTown);
+            _this41.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
+            _this41.listingBuyer.Country = params.get("Country").trim();
+            _this41.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
+            _this41.listingBuyer.SearchRadius = params.get("SearchRadius").trim();
+            _this41.listingBuyer.PropertyType = params.get("PropertyType").trim();
+            _this41.listingBuyer.Roommin = params.get("Roommin").trim();
+            _this41.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
+            _this41.listingBuyer.MinAmount = params.get("MinAmount").trim();
+            _this41.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
+            _this41.listingBuyer.Validity = params.get("Validity").trim();
+            _this41.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
+            _this41.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
+            _this41.listingBuyer.Minreception = params.get("Minreception").trim();
+            _this41.listingBuyer.Maxreception = params.get("Maxreception").trim();
+            _this41.listingBuyer.Conditions = params.get("Conditions").trim();
+            _this41.listingBuyer.Ownership = params.get("Ownership").trim();
+            _this41.listingBuyer.features = params.get("features").trim();
+            _this41.docid = params.get("docid");
+            console.log(_this41.docid);
           });
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this40.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this40.userData));
+              _this41.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this41.userData));
 
-              _this40.LoggedIn();
+              _this41.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this40.LoggedOut();
+              _this41.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this40.lookup(_this40.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this40.data = data;
+              _this41.lookup(_this41.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this41.data = data;
               });
 
-              return _this40.lookup(_this40.listingBuyer.Lookingpostcode);
+              return _this41.lookup(_this41.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -8098,11 +8351,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this40.lookup(_this40.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this40.data = data;
+              _this41.lookup(_this41.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this41.data = data;
               });
 
-              return _this40.lookup(_this40.listingBuyer.Currentpostcode);
+              return _this41.lookup(_this41.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -8111,7 +8364,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this41 = this;
+          var _this42 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -8119,13 +8372,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.EditListingBuyerService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this41.uid) {
-                _this41.user.Name = element.data().Name;
-                _this41.user.email = element.data().email;
-                _this41.user.DOB = element.data().DOB.toDate();
-                _this41.user.Phone = element.data().Phone;
-                _this41.user.title = element.data().title;
-                console.log(_this41.user.DOB);
+              if (element.data().uid == _this42.uid) {
+                _this42.user.Name = element.data().Name;
+                _this42.user.email = element.data().email;
+                _this42.user.DOB = element.data().DOB.toDate();
+                _this42.user.Phone = element.data().Phone;
+                _this42.user.title = element.data().title;
+                console.log(_this42.user.DOB);
               }
             });
           });
@@ -8175,49 +8428,49 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               });
             } else if (this.user.email == null) {
-              var _dialogRef36 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef38 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
               });
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef37 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef39 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age Must be 18+"
                 }
               });
             } else if (this.user.Phone == null) {
-              var _dialogRef38 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef40 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid phone number"
                 }
               });
             } else if (this.listingBuyer.ChainStatus == null) {
-              var _dialogRef39 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef41 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Listing Buyer"
                 }
               });
             } else if (this.listingBuyer.Currentpostcode == null) {
-              var _dialogRef40 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Postcode"
                 }
               });
             } else if (this.listingBuyer.CurrentAddress == null) {
-              var _dialogRef41 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef43 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Address"
                 }
               });
             } else if (this.listingBuyer.Currentstate == null) {
-              var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef44 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Sate"
                 }
               });
             } else if (this.listingBuyer.CurrentTown == null) {
-              var _dialogRef43 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef45 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Town"
                 }
@@ -8229,55 +8482,55 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           } else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
               if (this.listingBuyer.Lookingpostcode == null) {
-                var _dialogRef44 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef46 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill LookingPostcode"
                   }
                 });
               } else if (this.listingBuyer.LookingStreetname == null) {
-                var _dialogRef45 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef47 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill LookingStreetname"
                   }
                 });
               } else if (this.listingBuyer.Lookingstate == null) {
-                var _dialogRef46 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef48 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Looking State"
                   }
                 });
               } else if (this.listingBuyer.FinancialPosition == null) {
-                var _dialogRef47 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef49 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Financial Position"
                   }
                 });
               } else if (this.listingBuyer.SearchRadius == null) {
-                var _dialogRef48 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef50 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Select Radius"
                   }
                 });
               } else if (this.listingBuyer.PropertyType == null) {
-                var _dialogRef49 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef51 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Property Type"
                   }
                 });
               } else if (this.listingBuyer.MinAmount == null) {
-                var _dialogRef50 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef52 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MinAmount"
                   }
                 });
               } else if (this.listingBuyer.MaxAmount == null) {
-                var _dialogRef51 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef53 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MaxAmount"
                   }
                 });
               } else if (this.listingBuyer.Validity == null) {
-                var _dialogRef52 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef54 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Validity"
                   }
@@ -8303,13 +8556,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this42 = this;
+          var _this43 = this;
 
           this.isLoading = true;
           this.return = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(function (data) {
-            _this42.isLoading = false;
+            _this43.isLoading = false;
 
-            var dialogRef = _this42.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"], {
+            var dialogRef = _this43.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -8374,44 +8627,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this43 = this;
+          var _this44 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this43.isLoading = false;
+            _this44.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this44 = this;
+          var _this45 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this44.isLoading = false;
+            _this45.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this45 = this;
+          var _this46 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this45.isLoading = false;
+            _this46.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this46 = this;
+          var _this47 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this46.isLoading = false;
+            _this47.isLoading = false;
           });
         }
       }, {
@@ -8433,17 +8686,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this47 = this;
+          var _this48 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this47.isLoading = false;
-            _this47.user.Name = displayName;
-            _this47.user.DOB = null;
-            _this47.user.Phone = null;
-            _this47.return = _this47.EditListingBuyerService.createUserCustomer(_this47.user).then(function (user) {
-              if (_this47.user != null) {
-                _this47.isLoading = false;
-                _this47.overlay = true;
+            _this48.isLoading = false;
+            _this48.user.Name = displayName;
+            _this48.user.DOB = null;
+            _this48.user.Phone = null;
+            _this48.return = _this48.EditListingBuyerService.createUserCustomer(_this48.user).then(function (user) {
+              if (_this48.user != null) {
+                _this48.isLoading = false;
+                _this48.overlay = true;
               }
             });
           });
@@ -9036,20 +9289,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this48 = this;
+          var _this49 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this48.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this48.userData));
+              _this49.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this49.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this48.LoggedIn();
+              _this49.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this48.LoggedOut();
+              _this49.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -9057,11 +9310,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this48.lookup(_this48.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this48.data = data;
+              _this49.lookup(_this49.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this49.data = data;
               });
 
-              return _this48.lookup(_this48.listingSeller.Lookingpostcode);
+              return _this49.lookup(_this49.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -9071,30 +9324,30 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this48.lookup(_this48.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this48.data = data;
+              _this49.lookup(_this49.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this49.data = data;
               });
 
-              return _this48.lookup(_this48.listingSeller.Currentpostcode);
+              return _this49.lookup(_this49.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this48.Lookpostcode = params.get("Lookingpostcode");
-            _this48.Lookaddress = params.get("LookingAddress");
-            _this48.LookTown = params.get("LookingTown");
-            _this48.Lookstate = params.get("Lookingstate");
-            _this48.Country = params.get("Country");
-            _this48.Property = params.get("PropertyType");
-            _this48.Rooms = params.get("Maxrooms");
-            _this48.Amount = params.get("MaxAmount");
-            _this48.Ownership = params.get("ownership");
-            _this48.Bathrooms = params.get("Maxbathrooms");
-            _this48.Reception = params.get("Maxreception");
-            _this48.Condition = params.get("PropertyCondition");
-            _this48.Features = params.get("features");
-            _this48.country = params.get("Country");
+            _this49.Lookpostcode = params.get("Lookingpostcode");
+            _this49.Lookaddress = params.get("LookingAddress");
+            _this49.LookTown = params.get("LookingTown");
+            _this49.Lookstate = params.get("Lookingstate");
+            _this49.Country = params.get("Country");
+            _this49.Property = params.get("PropertyType");
+            _this49.Rooms = params.get("Maxrooms");
+            _this49.Amount = params.get("MaxAmount");
+            _this49.Ownership = params.get("ownership");
+            _this49.Bathrooms = params.get("Maxbathrooms");
+            _this49.Reception = params.get("Maxreception");
+            _this49.Condition = params.get("PropertyCondition");
+            _this49.Features = params.get("features");
+            _this49.country = params.get("Country");
           });
 
           if (this.Lookpostcode != ":Lookingpostcode") {
@@ -9156,22 +9409,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this49 = this;
+          var _this50 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this49.uid) {
-                _this49.user.Name = element.data().Name;
-                _this49.user.Email = element.data().email;
-                _this49.user.DOB = element.data().DOB.toDate();
-                _this49.user.Phone = element.data().Phone;
-                _this49.user.title = element.data().title;
-                _this49.user.Currentpostcode = element.data().Currentpostcode;
-                _this49.user.CurrentAddress = element.data().Currentaddress;
-                _this49.user.CurrentTown = element.data().CurrentTowncity;
-                _this49.user.Currentstate = element.data().Currentstate;
+              if (element.data().uid == _this50.uid) {
+                _this50.user.Name = element.data().Name;
+                _this50.user.Email = element.data().email;
+                _this50.user.DOB = element.data().DOB.toDate();
+                _this50.user.Phone = element.data().Phone;
+                _this50.user.title = element.data().title;
+                _this50.user.Currentpostcode = element.data().Currentpostcode;
+                _this50.user.CurrentAddress = element.data().Currentaddress;
+                _this50.user.CurrentTown = element.data().CurrentTowncity;
+                _this50.user.Currentstate = element.data().Currentstate;
                 console.log(element.data().Name);
               }
             });
@@ -9192,13 +9445,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this50 = this;
+          var _this51 = this;
 
           this.isLoading = true;
           this.return = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(function (data) {
-            _this50.isLoading = false;
+            _this51.isLoading = false;
 
-            var dialogRef = _this50.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+            var dialogRef = _this51.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -9224,19 +9477,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               });
             } else if (this.user.Email == null) {
-              var _dialogRef53 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef55 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Email"
                 }
               });
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef54 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef56 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "You need to be over 18 to register on this website"
                 }
               });
             } else if (this.user.Phone == null) {
-              var _dialogRef55 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef57 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter Phone number"
                 }
@@ -9248,67 +9501,67 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           } else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
               if (this.user.Currentpostcode == null) {
-                var _dialogRef56 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef58 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Current Postcode"
                   }
                 });
               } else if (this.user.CurrentAddress == null) {
-                var _dialogRef57 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef59 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Current Address"
                   }
                 });
               } else if (this.user.CurrentTown == null) {
-                var _dialogRef58 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef60 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Current Town"
                   }
                 });
               } else if (this.user.Currentstate == null) {
-                var _dialogRef59 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef61 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Current State"
                   }
                 });
               } else if (this.listingSeller.Lookingpostcode == null) {
-                var _dialogRef60 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef62 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Postcodes"
                   }
                 });
               } else if (this.listingSeller.LookingAddress == null) {
-                var _dialogRef61 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef63 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Address"
                   }
                 });
               } else if (this.listingSeller.LookingTown == null) {
-                var _dialogRef62 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef64 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Town"
                   }
                 });
               } else if (this.listingSeller.Lookingstate == null) {
-                var _dialogRef63 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef65 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking State"
                   }
                 });
               } else if (this.listingSeller.PropertyType == null) {
-                var _dialogRef64 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef66 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Property Type"
                   }
                 });
               } else if (this.listingSeller.Maxrooms == null) {
-                var _dialogRef65 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef67 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum of Rooms"
                   }
                 });
               } else if (this.listingSeller.MaxAmount == null) {
-                var _dialogRef66 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef68 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum Amount"
                   }
@@ -9319,7 +9572,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               //   });
               // }
               else if (this.listingSeller.ownership == null) {
-                  var _dialogRef67 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                  var _dialogRef69 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                     data: {
                       message: "Please Select Ownership"
                     }
@@ -9397,44 +9650,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this51 = this;
+          var _this52 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this51.isLoading = false;
+            _this52.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this52 = this;
+          var _this53 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this52.isLoading = false;
+            _this53.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this53 = this;
+          var _this54 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this53.isLoading = false;
+            _this54.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this54 = this;
+          var _this55 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this54.isLoading = false;
+            _this55.isLoading = false;
           });
         }
       }, {
@@ -9456,16 +9709,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this55 = this;
+          var _this56 = this;
 
           console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
-            _this55.isLoading = false;
-            _this55.user.Name = displayName;
-            _this55.user.DOB = null;
-            _this55.user.Phone = null;
-            _this55.return = _this55.fillFormsService.createUserCustomer(_this55.user).then(function (data) {
-              _this55.overlay = true;
+            _this56.isLoading = false;
+            _this56.user.Name = displayName;
+            _this56.user.DOB = null;
+            _this56.user.Phone = null;
+            _this56.return = _this56.fillFormsService.createUserCustomer(_this56.user).then(function (data) {
+              _this56.overlay = true;
               console.log(data);
             });
           });
@@ -9902,17 +10155,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this56 = this;
+          var _this57 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this56.Lookingpostcode = params.get("Lookingpostcode");
-            _this56.ChainStatus = params.get("ChainStatus");
-            _this56.FinancialPosition = params.get("FinancialPosition");
-            _this56.Type = params.get("PropertyType");
-            _this56.Position = params.get("Position");
-            _this56.SearchRadius = params.get("SearchRadius");
-            _this56.MaxAmount = params.get("MaxAmount");
-            _this56.MinAmount = params.get("MinAmount");
+            _this57.Lookingpostcode = params.get("Lookingpostcode");
+            _this57.ChainStatus = params.get("ChainStatus");
+            _this57.FinancialPosition = params.get("FinancialPosition");
+            _this57.Type = params.get("PropertyType");
+            _this57.Position = params.get("Position");
+            _this57.SearchRadius = params.get("SearchRadius");
+            _this57.MaxAmount = params.get("MaxAmount");
+            _this57.MinAmount = params.get("MinAmount");
           });
         }
       }, {
@@ -10025,16 +10278,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this57 = this;
+          var _this58 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this57.Lookingpostcode = params.get("Lookingpostcode");
-            _this57.Type = params.get("PropertyType");
-            _this57.MaxAmount = params.get("MaxAmount");
-            _this57.Maxrooms = params.get("Maxrooms");
-            _this57.Maxreception = params.get("Maxreception");
-            _this57.PropertyCondition = params.get("PropertyCondition");
-            _this57.Maxbathrooms = params.get("Maxbathrooms");
+            _this58.Lookingpostcode = params.get("Lookingpostcode");
+            _this58.Type = params.get("PropertyType");
+            _this58.MaxAmount = params.get("MaxAmount");
+            _this58.Maxrooms = params.get("Maxrooms");
+            _this58.Maxreception = params.get("Maxreception");
+            _this58.PropertyCondition = params.get("PropertyCondition");
+            _this58.Maxbathrooms = params.get("Maxbathrooms");
           });
         }
       }, {
@@ -10142,7 +10395,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this58 = this;
+          var _this59 = this;
 
           // User ID
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -10150,16 +10403,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this58.docid = element.id;
+              _this59.docid = element.id;
 
-              _this58.propertyRequirementDetails.push(element.data());
+              _this59.propertyRequirementDetails.push(element.data());
             });
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this58.docid = element.id;
+              _this59.docid = element.id;
 
-              _this58.propertyDetails.push(element.data());
+              _this59.propertyDetails.push(element.data());
             });
           });
         }
@@ -10263,474 +10516,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
-  "./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.css":
-  /*!****************************************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.css ***!
-    \****************************************************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function srcAppMenuMyMatchesBuyerConfirmedSelectedMatchesBuyerConfirmedSelectedMatchesComponentCss(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvYnV5ZXItY29uZmlybWVkLXNlbGVjdGVkLW1hdGNoZXMvYnV5ZXItY29uZmlybWVkLXNlbGVjdGVkLW1hdGNoZXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLHNFQUFzRTtJQUN0RSwyQkFBMkI7SUFDM0Isd0JBQXdCO0FBQzVCO0FBRUE7OztJQUdJLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiw2QkFBNkI7QUFDakM7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0NBQ3RCLGdCQUFnQjtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2Qjs7O0lBRzdCLHFCQUFxQjtJQUNyQixnQkFBZ0I7SUFDaEIsc0JBQXNCO0lBQ3RCLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixVQUFVO0lBQ1YsWUFBWTtJQUNaLGVBQWU7SUFDZixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1COztJQUVuQixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCO0FBQ0o7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osZUFBZTtJQUNmLFFBQVE7SUFDUixTQUFTO0lBRVQsYUFBYTtJQUViLHVCQUF1QjtJQUV2QixtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQixZQUFZO0VBQ2Q7QUFDQTtJQUNFLHlDQUF5QztJQUN6QyxhQUFhO0lBQ2IsWUFBWTtJQUNaLFFBQVE7SUFDUixlQUFlO0lBQ2YsV0FBVztFQUNiO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0VBQ3pCO0FBQ0E7SUFDRSxZQUFZO0lBQ1o7QUFDRjtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFFQTtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFDQTtJQUNFLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0VBQ2xCO0FBQ0E7O0lBRUUsWUFBWTtJQUNaLDRCQUE0QjtJQUM1QixlQUFlO0VBQ2pCO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEI7RUFDRjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osV0FBVztJQUNYLHVCQUF1QjtBQUMzQiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbXlNYXRjaGVzL2J1eWVyLWNvbmZpcm1lZC1zZWxlY3RlZC1tYXRjaGVzL2J1eWVyLWNvbmZpcm1lZC1zZWxlY3RlZC1tYXRjaGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJvcGVydHktZGV0YWlsLWNvbnRhaW5lclxue1xuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcbiAgICBwYWRkaW5nLWJvdHRvbTogOXB4O1xufVxuLnByb3BlcnR5LXNlbGVjdGVkLWRldGFpbC1iYWNrZ3JvdW5kXG57XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL0ltYWdlcy9zZWxlY3RlZFByb3BlcnR5YmFja2dyb3VuZy5qcGcnKTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xufVxuXG4ud3JhcHBlci1kZXRhaWwtY29udGFpbmVyXG57XG4gICBcbiAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG59XG4ucHJvcGVydHktZGV0YWlsLWgzXG57XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW07XG59XG4uc3RyZWV0bmFtZSB7XG4gICAgcGFkZGluZy10b3A6IDIwcHg7XG59XG4uZGV0YWlscy1wLWhlYWRpbmdzXG57ICAgXG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50O1xufVxuLmRldGFpbHMtb3V0cHV0LXBcbntcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4udGFibGUgdGQsIC50YWJsZSB0aCB7XG4gICAgcGFkZGluZzogLjc1cmVtO1xuICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XG4gYm9yZGVyLXRvcDogbm9uZTtcbn1cbi5idXR0b24tZGV0YWlscyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgXG4gIFxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiA3MHB4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5idG4tY2hhdCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDQ0JTtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xufVxuLmJ1dHRvbi1hc2tcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogNTAlO1xuICAgIGhlaWdodDogMzVweDtcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMThweDtcbn1cbi5jYXJvdXNlbC1pdGVtIHtcbiAgICBoZWlnaHQ6IDE3MHB4O1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uY2Fyb3VzZWwtaW5kaWNhdG9ycyBsaSB7XG4gICAgd2lkdGg6IDEzcHg7XG4gICAgaGVpZ2h0OiAxM3B4O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwMCU7XG59XG4uc2VsZWN0ZWQtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmRpdiNkZW1vIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuaW1nLm1hdGNoLWltYWdlcyB7XG4gICAgd2lkdGg6IDMwJTtcbn1cblxuLk1hdC1jYXJkLWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxMHB4XG59XG4ubG9hZGluZy1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwcHg7XG4gICAgbGVmdDogMHB4O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB6LWluZGV4OiA5O1xuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgIG9wYWNpdHk6IDAuNTtcbiAgfVxuICAuY29udGludWUtZm9ybSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgdG9wOiAwdmg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMHB4O1xuICB9XG4gIC5uZXN0aW1hdGUtbG9nbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxuICBpbWcubmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogMjJ2aDtcbiAgICB9XG4gIC5vdmVybGF5LXRleHR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgXG4gIC5vdmVybGF5LXRleHQtdGhpcmR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgLmNvbnRpbnVlLXRleHQge1xuICAgIG1hcmdpbjogMmVtO1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICB9XG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyXG4gIHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gIH1cbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYm9yZGVyOiAzcHggc29saWQgd2hpdGU7XG4gICAgbWFyZ2luOiAwdmggMTV2dztcbiAgICBwYWRkaW5nOiAwLjZlbVxuICB9XG4gIC5jb250aW51ZS1mb3JtLWRhdGEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgcGFkZGluZzogMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufSJdfQ== */";
-    /***/
-  },
-
-  /***/
-  "./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.ts":
-  /*!***************************************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.ts ***!
-    \***************************************************************************************************************/
-
-  /*! exports provided: BuyerConfirmedSelectedMatchesComponent */
-
-  /***/
-  function srcAppMenuMyMatchesBuyerConfirmedSelectedMatchesBuyerConfirmedSelectedMatchesComponentTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "BuyerConfirmedSelectedMatchesComponent", function () {
-      return BuyerConfirmedSelectedMatchesComponent;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/router */
-    "./node_modules/@angular/router/fesm2015/router.js");
-    /* harmony import */
-
-
-    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! @angular/common */
-    "./node_modules/@angular/common/fesm2015/common.js");
-    /* harmony import */
-
-
-    var _my_matches_selected_details_selected_my_matches_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ../my-matches-selected-details/selected-my-matches.service */
-    "./src/app/Menu/myMatches/my-matches-selected-details/selected-my-matches.service.ts");
-    /* harmony import */
-
-
-    var _state_service_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! ../../../state-service.service */
-    "./src/app/state-service.service.ts");
-
-    var BuyerConfirmedSelectedMatchesComponent =
-    /*#__PURE__*/
-    function () {
-      function BuyerConfirmedSelectedMatchesComponent(_Activatedroute, _router, _location, SelectedMyMatchesService, stateService) {
-        _classCallCheck(this, BuyerConfirmedSelectedMatchesComponent);
-
-        this._Activatedroute = _Activatedroute;
-        this._router = _router;
-        this._location = _location;
-        this.SelectedMyMatchesService = SelectedMyMatchesService;
-        this.stateService = stateService;
-        this.now = new Date();
-      }
-
-      _createClass(BuyerConfirmedSelectedMatchesComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this59 = this;
-
-          this.user = JSON.parse(localStorage.getItem("user"));
-          this.uid = this.user.uid;
-          this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this59.Lookingpostcode = params.get("Lookingpostcode");
-            _this59.MaxAmount = params.get("MaxAmount");
-            _this59.ChainStatus = params.get("ChainStatus");
-            _this59.Conditions = params.get("Conditions");
-            _this59.SearchRadius = params.get("SearchRadius");
-            _this59.Position = params.get("Position"); // this.MinAmount = params.get("MinAmount");
-
-            _this59.Type = params.get("Type"); // this.matchStatus = params.get("matchStatus");
-
-            _this59.propertyId = params.get("propertyId");
-            _this59.expressed = params.get("expressed");
-            _this59.UserId = params.get("UserId");
-          });
-        }
-      }, {
-        key: "backClicked",
-        value: function backClicked() {
-          this._location.back();
-        }
-      }, {
-        key: "addToExpressCollection",
-        value: function addToExpressCollection() {
-          var _this60 = this;
-
-          this.return = this.SelectedMyMatchesService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
-            if (data == true) {}
-
-            _this60.createSellerNotification();
-
-            _this60.backClicked();
-          });
-        }
-      }, {
-        key: "createSellerNotification",
-        value: function createSellerNotification() {
-          this.notification = {
-            time: this.now,
-            viewed: "Confirmed",
-            userId: this.uid,
-            Type: "Buyer_Matches_Confirmed",
-            propertyId: this.propertyId.trim()
-          };
-          this.return = this.SelectedMyMatchesService.createNotification(this.UserId, this.notification).then(function (data) {});
-        }
-      }]);
-
-      return BuyerConfirmedSelectedMatchesComponent;
-    }();
-
-    BuyerConfirmedSelectedMatchesComponent.ctorParameters = function () {
-      return [{
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
-      }, {
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
-      }, {
-        type: _angular_common__WEBPACK_IMPORTED_MODULE_3__["Location"]
-      }, {
-        type: _my_matches_selected_details_selected_my_matches_service__WEBPACK_IMPORTED_MODULE_4__["SelectedMyMatchesService"]
-      }, {
-        type: _state_service_service__WEBPACK_IMPORTED_MODULE_5__["StateServiceService"]
-      }];
-    };
-
-    BuyerConfirmedSelectedMatchesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-buyer-confirmed-selected-matches',
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./buyer-confirmed-selected-matches.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.html")).default,
-      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./buyer-confirmed-selected-matches.component.css */
-      "./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.css")).default]
-    })], BuyerConfirmedSelectedMatchesComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.css":
-  /*!**********************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.css ***!
-    \**********************************************************************************************/
-
-  /*! exports provided: default */
-
-  /***/
-  function srcAppMenuMyMatchesBuyerSelectedPropertyBuyerSelectedPropertyComponentCss(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony default export */
-
-
-    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvYnV5ZXItc2VsZWN0ZWQtcHJvcGVydHkvYnV5ZXItc2VsZWN0ZWQtcHJvcGVydHkuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLHNFQUFzRTtJQUN0RSwyQkFBMkI7SUFDM0Isd0JBQXdCO0FBQzVCO0FBRUE7OztJQUdJLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiw2QkFBNkI7QUFDakM7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0NBQ3RCLGdCQUFnQjtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2Qjs7O0lBRzdCLHFCQUFxQjtJQUNyQixnQkFBZ0I7SUFDaEIsc0JBQXNCO0lBQ3RCLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixVQUFVO0lBQ1YsWUFBWTtJQUNaLGVBQWU7SUFDZixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1COztJQUVuQixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCO0FBQ0o7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osZUFBZTtJQUNmLFFBQVE7SUFDUixTQUFTO0lBRVQsYUFBYTtJQUViLHVCQUF1QjtJQUV2QixtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQixZQUFZO0VBQ2Q7QUFDQTtJQUNFLHlDQUF5QztJQUN6QyxhQUFhO0lBQ2IsWUFBWTtJQUNaLFFBQVE7SUFDUixlQUFlO0lBQ2YsV0FBVztFQUNiO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0VBQ3pCO0FBQ0E7SUFDRSxZQUFZO0lBQ1o7QUFDRjtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFFQTtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFDQTtJQUNFLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0VBQ2xCO0FBQ0E7O0lBRUUsWUFBWTtJQUNaLDRCQUE0QjtJQUM1QixlQUFlO0VBQ2pCO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEI7RUFDRjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osV0FBVztJQUNYLHVCQUF1QjtBQUMzQiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbXlNYXRjaGVzL2J1eWVyLXNlbGVjdGVkLXByb3BlcnR5L2J1eWVyLXNlbGVjdGVkLXByb3BlcnR5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJvcGVydHktZGV0YWlsLWNvbnRhaW5lclxue1xuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcbiAgICBwYWRkaW5nLWJvdHRvbTogOXB4O1xufVxuLnByb3BlcnR5LXNlbGVjdGVkLWRldGFpbC1iYWNrZ3JvdW5kXG57XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL0ltYWdlcy9zZWxlY3RlZFByb3BlcnR5YmFja2dyb3VuZy5qcGcnKTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xufVxuXG4ud3JhcHBlci1kZXRhaWwtY29udGFpbmVyXG57XG4gICBcbiAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG59XG4ucHJvcGVydHktZGV0YWlsLWgzXG57XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW07XG59XG4uc3RyZWV0bmFtZSB7XG4gICAgcGFkZGluZy10b3A6IDIwcHg7XG59XG4uZGV0YWlscy1wLWhlYWRpbmdzXG57ICAgXG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50O1xufVxuLmRldGFpbHMtb3V0cHV0LXBcbntcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4udGFibGUgdGQsIC50YWJsZSB0aCB7XG4gICAgcGFkZGluZzogLjc1cmVtO1xuICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XG4gYm9yZGVyLXRvcDogbm9uZTtcbn1cbi5idXR0b24tZGV0YWlscyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgXG4gIFxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiA3MHB4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5idG4tY2hhdCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDQ0JTtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xufVxuLmJ1dHRvbi1hc2tcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogNTAlO1xuICAgIGhlaWdodDogMzVweDtcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMThweDtcbn1cbi5jYXJvdXNlbC1pdGVtIHtcbiAgICBoZWlnaHQ6IDE3MHB4O1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uY2Fyb3VzZWwtaW5kaWNhdG9ycyBsaSB7XG4gICAgd2lkdGg6IDEzcHg7XG4gICAgaGVpZ2h0OiAxM3B4O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwMCU7XG59XG4uc2VsZWN0ZWQtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmRpdiNkZW1vIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuaW1nLm1hdGNoLWltYWdlcyB7XG4gICAgd2lkdGg6IDMwJTtcbn1cblxuLk1hdC1jYXJkLWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxMHB4XG59XG4ubG9hZGluZy1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwcHg7XG4gICAgbGVmdDogMHB4O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB6LWluZGV4OiA5O1xuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgIG9wYWNpdHk6IDAuNTtcbiAgfVxuICAuY29udGludWUtZm9ybSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgdG9wOiAwdmg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMHB4O1xuICB9XG4gIC5uZXN0aW1hdGUtbG9nbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxuICBpbWcubmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogMjJ2aDtcbiAgICB9XG4gIC5vdmVybGF5LXRleHR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgXG4gIC5vdmVybGF5LXRleHQtdGhpcmR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgLmNvbnRpbnVlLXRleHQge1xuICAgIG1hcmdpbjogMmVtO1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICB9XG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyXG4gIHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gIH1cbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYm9yZGVyOiAzcHggc29saWQgd2hpdGU7XG4gICAgbWFyZ2luOiAwdmggMTV2dztcbiAgICBwYWRkaW5nOiAwLjZlbVxuICB9XG4gIC5jb250aW51ZS1mb3JtLWRhdGEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgcGFkZGluZzogMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufSJdfQ== */";
-    /***/
-  },
-
-  /***/
-  "./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.ts":
-  /*!*********************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.ts ***!
-    \*********************************************************************************************/
-
-  /*! exports provided: BuyerSelectedPropertyComponent */
-
-  /***/
-  function srcAppMenuMyMatchesBuyerSelectedPropertyBuyerSelectedPropertyComponentTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "BuyerSelectedPropertyComponent", function () {
-      return BuyerSelectedPropertyComponent;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/router */
-    "./node_modules/@angular/router/fesm2015/router.js");
-    /* harmony import */
-
-
-    var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! @angular/common */
-    "./node_modules/@angular/common/fesm2015/common.js");
-    /* harmony import */
-
-
-    var _my_matches_selected_details_selected_my_matches_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ../my-matches-selected-details/selected-my-matches.service */
-    "./src/app/Menu/myMatches/my-matches-selected-details/selected-my-matches.service.ts");
-    /* harmony import */
-
-
-    var _buyer_selected_property_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
-    /*! ./buyer-selected-property.service */
-    "./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.service.ts");
-    /* harmony import */
-
-
-    var _state_service_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
-    /*! ../../../state-service.service */
-    "./src/app/state-service.service.ts");
-
-    var BuyerSelectedPropertyComponent =
-    /*#__PURE__*/
-    function () {
-      function BuyerSelectedPropertyComponent(_Activatedroute, _router, _location, SelectedMyMatchesService, BuyerSelectedPropertyService, stateService) {
-        _classCallCheck(this, BuyerSelectedPropertyComponent);
-
-        this._Activatedroute = _Activatedroute;
-        this._router = _router;
-        this._location = _location;
-        this.SelectedMyMatchesService = SelectedMyMatchesService;
-        this.BuyerSelectedPropertyService = BuyerSelectedPropertyService;
-        this.stateService = stateService;
-        this.now = new Date();
-      }
-
-      _createClass(BuyerSelectedPropertyComponent, [{
-        key: "ngOnInit",
-        value: function ngOnInit() {
-          var _this61 = this;
-
-          this.user = JSON.parse(localStorage.getItem("user"));
-          this.uid = this.user.uid;
-          this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this61.Lookingpostcode = params.get("Lookingpostcode");
-            _this61.ChainStatus = params.get("ChainStatus");
-            _this61.Conditions = params.get("Conditions");
-            _this61.SearchRadius = params.get("SearchRadius");
-            _this61.Position = params.get("Position");
-            _this61.MinAmount = params.get("MinAmount");
-            _this61.MaxAmount = params.get("MaxAmount");
-            _this61.Type = params.get("PropertyType");
-            _this61.matchStatus = params.get("matchStatus");
-            _this61.propertyId = params.get("propertyId");
-            _this61.expressed = params.get("expressed");
-            _this61.UserId = params.get("UserId");
-            console.log(_this61.UserId);
-          });
-        }
-      }, {
-        key: "backClicked",
-        value: function backClicked() {
-          this._location.back();
-        }
-      }, {
-        key: "addToExpressCollection",
-        value: function addToExpressCollection() {
-          var _this62 = this;
-
-          this.return = this.SelectedMyMatchesService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
-            if (data == true) {}
-
-            _this62.createSellerNotification();
-
-            _this62.createEntry();
-
-            _this62._router.navigate(["/selectAgent/" + _this62.Lookingpostcode + "/" + _this62.Lookingstate + "/" + _this62.LookingAddress + "/" + _this62.norooms + "/" + _this62.PropertyCondition + "/" + _this62.MaxAmount + "/" + _this62.PropertyType + "/" + _this62.ownership + "/" + _this62.features + "/" + _this62.propertyId + "/" + _this62.UserId]);
-          });
-        }
-      }, {
-        key: "createSellerNotification",
-        value: function createSellerNotification() {
-          this.notification = {
-            time: this.now,
-            viewed: "Confirmed",
-            userId: this.uid,
-            Type: "Buyer_Matches_Confirmed",
-            propertyId: this.propertyId.trim()
-          };
-          this.return = this.SelectedMyMatchesService.createNotification(this.UserId, this.notification).then(function (data) {});
-        }
-      }, {
-        key: "createEntry",
-        value: function createEntry() {
-          this.matchesSeller = {
-            Lookingpostcode: this.Lookingpostcode.trim(),
-            ChainStatus: this.ChainStatus.trim(),
-            Conditions: this.Conditions.trim(),
-            SearchRadius: this.SearchRadius.trim(),
-            Position: this.Position.trim(),
-            MinAmount: this.MinAmount.trim(),
-            MaxAmount: this.MaxAmount.trim(),
-            Type: this.Type.trim(),
-            UserId: this.UserId.trim(),
-            matchStatuss: "confirm_interest",
-            Entry: "Seller"
-          };
-          this.return = this.BuyerSelectedPropertyService.matchesSellerCreate(this.UserId, this.matchesSeller).then(function (data) {});
-        }
-      }]);
-
-      return BuyerSelectedPropertyComponent;
-    }();
-
-    BuyerSelectedPropertyComponent.ctorParameters = function () {
-      return [{
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
-      }, {
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
-      }, {
-        type: _angular_common__WEBPACK_IMPORTED_MODULE_3__["Location"]
-      }, {
-        type: _my_matches_selected_details_selected_my_matches_service__WEBPACK_IMPORTED_MODULE_4__["SelectedMyMatchesService"]
-      }, {
-        type: _buyer_selected_property_service__WEBPACK_IMPORTED_MODULE_5__["BuyerSelectedPropertyService"]
-      }, {
-        type: _state_service_service__WEBPACK_IMPORTED_MODULE_6__["StateServiceService"]
-      }];
-    };
-
-    BuyerSelectedPropertyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-buyer-selected-property',
-      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./buyer-selected-property.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.html")).default,
-      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./buyer-selected-property.component.css */
-      "./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.css")).default]
-    })], BuyerSelectedPropertyComponent);
-    /***/
-  },
-
-  /***/
-  "./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.service.ts":
-  /*!*******************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.service.ts ***!
-    \*******************************************************************************************/
-
-  /*! exports provided: BuyerSelectedPropertyService */
-
-  /***/
-  function srcAppMenuMyMatchesBuyerSelectedPropertyBuyerSelectedPropertyServiceTs(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "BuyerSelectedPropertyService", function () {
-      return BuyerSelectedPropertyService;
-    });
-    /* harmony import */
-
-
-    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! tslib */
-    "./node_modules/tslib/tslib.es6.js");
-    /* harmony import */
-
-
-    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! @angular/core */
-    "./node_modules/@angular/core/fesm2015/core.js");
-    /* harmony import */
-
-
-    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/fire/firestore */
-    "./node_modules/@angular/fire/firestore/es2015/index.js");
-
-    var BuyerSelectedPropertyService =
-    /*#__PURE__*/
-    function () {
-      function BuyerSelectedPropertyService(db) {
-        _classCallCheck(this, BuyerSelectedPropertyService);
-
-        this.db = db;
-      } //create Database Buyer Matches
-
-
-      _createClass(BuyerSelectedPropertyService, [{
-        key: "matchesSellerCreate",
-        value: function matchesSellerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee19() {
-            return regeneratorRuntime.wrap(function _callee19$(_context19) {
-              while (1) {
-                switch (_context19.prev = _context19.next) {
-                  case 0:
-                    _context19.next = 2;
-                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context19.sent;
-                    return _context19.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context19.stop();
-                }
-              }
-            }, _callee19, this);
-          }));
-        }
-      }]);
-
-      return BuyerSelectedPropertyService;
-    }();
-
-    BuyerSelectedPropertyService.ctorParameters = function () {
-      return [{
-        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]
-      }];
-    };
-
-    BuyerSelectedPropertyService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-      providedIn: 'root'
-    })], BuyerSelectedPropertyService);
-    /***/
-  },
-
-  /***/
   "./src/app/Menu/myMatches/buyerAwaitingDetail/buyerAwaitingDetail.component.css":
   /*!**************************************************************************************!*\
     !*** ./src/app/Menu/myMatches/buyerAwaitingDetail/buyerAwaitingDetail.component.css ***!
@@ -10815,23 +10600,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerAwaitingDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this63 = this;
+          var _this60 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this63.Lookingpostcode = params.get("Lookingpostcode");
-            _this63.Lookingstate = params.get("Lookingstate");
-            _this63.LookingAddress = params.get("LookingAddress");
-            _this63.norooms = params.get("Roomsmax");
-            _this63.PropertyCondition = params.get("PropertyCondition");
-            _this63.MaxAmount = params.get("MaxAmount");
-            _this63.PropertyType = params.get("PropertyType");
-            _this63.ownership = params.get("ownership");
-            _this63.features = params.get("features");
-            _this63.matchStatus = params.get("matchStatus");
-            _this63.propertyId = params.get("propertyId");
-            _this63.expressed = params.get("expressed");
+            _this60.Lookingpostcode = params.get("Lookingpostcode");
+            _this60.Lookingstate = params.get("Lookingstate");
+            _this60.LookingAddress = params.get("LookingAddress");
+            _this60.norooms = params.get("Roomsmax");
+            _this60.PropertyCondition = params.get("PropertyCondition");
+            _this60.MaxAmount = params.get("MaxAmount");
+            _this60.PropertyType = params.get("PropertyType");
+            _this60.ownership = params.get("ownership");
+            _this60.features = params.get("features");
+            _this60.matchStatus = params.get("matchStatus");
+            _this60.propertyId = params.get("propertyId");
+            _this60.expressed = params.get("expressed");
           });
         }
       }, {
@@ -10869,43 +10654,43 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
-  "./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.css":
-  /*!******************************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.css ***!
-    \******************************************************************************************************/
+  "./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.css":
+  /*!**************************************************************************!*\
+    !*** ./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.css ***!
+    \**************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppMenuMyMatchesMyMatchesSelectedDetailsMyMatchesSelectedDetailsComponentCss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppMenuMyMatchesMatchesBuyerMatchesBuyerComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvbXktbWF0Y2hlcy1zZWxlY3RlZC1kZXRhaWxzL215LW1hdGNoZXMtc2VsZWN0ZWQtZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksc0VBQXNFO0lBQ3RFLDJCQUEyQjtJQUMzQix3QkFBd0I7QUFDNUI7QUFFQTs7O0lBR0ksZ0JBQWdCO0lBQ2hCLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLGVBQWU7SUFDZixrQkFBa0I7SUFDbEIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7O0lBRUksZUFBZTtJQUNmLDZCQUE2QjtBQUNqQztBQUNBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7Q0FDdEIsZ0JBQWdCO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCOzs7SUFHN0IscUJBQXFCO0lBQ3JCLGdCQUFnQjtJQUNoQixzQkFBc0I7SUFDdEIsNkJBQTZCO0lBQzdCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixVQUFVO0lBQ1YsWUFBWTtJQUNaLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osZUFBZTtJQUNmLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxVQUFVO0FBQ2Q7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7O0lBRW5CLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUI7QUFDSjtBQUNBO0lBQ0ksV0FBVztJQUNYLFlBQVk7SUFDWixlQUFlO0lBQ2YsUUFBUTtJQUNSLFNBQVM7SUFFVCxhQUFhO0lBRWIsdUJBQXVCO0lBRXZCLG1CQUFtQjtJQUNuQixVQUFVO0lBQ1YsaUJBQWlCO0lBQ2pCLFlBQVk7RUFDZDtBQUNBO0lBQ0UseUNBQXlDO0lBQ3pDLGFBQWE7SUFDYixZQUFZO0lBQ1osUUFBUTtJQUNSLGVBQWU7SUFDZixXQUFXO0VBQ2I7QUFDQTtJQUNFLGFBQWE7SUFDYix1QkFBdUI7RUFDekI7QUFDQTtJQUNFLFlBQVk7SUFDWjtBQUNGO0lBQ0UsWUFBWTtJQUNaLDRCQUE0QjtFQUM5QjtBQUVBO0lBQ0UsWUFBWTtJQUNaLDRCQUE0QjtFQUM5QjtBQUNBO0lBQ0UsV0FBVztJQUNYLGVBQWU7SUFDZixnQkFBZ0I7RUFDbEI7QUFDQTs7SUFFRSxZQUFZO0lBQ1osNEJBQTRCO0lBQzVCLGVBQWU7RUFDakI7QUFDQTtJQUNFLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsdUJBQXVCO0lBQ3ZCLGdCQUFnQjtJQUNoQjtFQUNGO0FBQ0E7SUFDRSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDZCQUE2QjtJQUM3QixZQUFZO0lBQ1osV0FBVztJQUNYLFlBQVk7SUFDWixXQUFXO0lBQ1gsdUJBQXVCO0FBQzNCIiwiZmlsZSI6InNyYy9hcHAvTWVudS9teU1hdGNoZXMvbXktbWF0Y2hlcy1zZWxlY3RlZC1kZXRhaWxzL215LW1hdGNoZXMtc2VsZWN0ZWQtZGV0YWlscy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByb3BlcnR5LWRldGFpbC1jb250YWluZXJcbntcbiAgICBwYWRkaW5nLXJpZ2h0OiA4cHg7XG4gICAgcGFkZGluZy1sZWZ0OiA4cHg7XG4gICAgcGFkZGluZy1ib3R0b206IDlweDtcbn1cbi5wcm9wZXJ0eS1zZWxlY3RlZC1kZXRhaWwtYmFja2dyb3VuZFxue1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnL2Fzc2V0cy9JbWFnZXMvc2VsZWN0ZWRQcm9wZXJ0eWJhY2tncm91bmcuanBnJyk7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcbn1cblxuLndyYXBwZXItZGV0YWlsLWNvbnRhaW5lclxue1xuICAgXG4gICAgcGFkZGluZy10b3A6IDVweDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xufVxuLnByb3BlcnR5LWRldGFpbC1oM1xue1xuICAgIGZvbnQtc2l6ZTogMjRweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMWVtO1xufVxuLnN0cmVldG5hbWUge1xuICAgIHBhZGRpbmctdG9wOiAyMHB4O1xufVxuLmRldGFpbHMtcC1oZWFkaW5nc1xueyAgIFxuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcbn1cbi5kZXRhaWxzLW91dHB1dC1wXG57XG4gICAgZm9udC1zaXplOiAxNXB4O1xufVxuLnRhYmxlIHRkLCAudGFibGUgdGgge1xuICAgIHBhZGRpbmc6IC43NXJlbTtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuIGJvcmRlci10b3A6IG5vbmU7XG59XG4uYnV0dG9uLWRldGFpbHMge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXG4gIFxuICBcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogNzBweDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uYnRuLWNoYXQge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiA0NCU7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbn1cbi5idXR0b24tYXNrXG57XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDUwJTtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgZm9udC1zaXplOiAxM3B4O1xuICAgIG1hcmdpbi1ib3R0b206IDE4cHg7XG59XG4uY2Fyb3VzZWwtaXRlbSB7XG4gICAgaGVpZ2h0OiAxNzBweDtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuLmNhcm91c2VsLWluZGljYXRvcnMgbGkge1xuICAgIHdpZHRoOiAxM3B4O1xuICAgIGhlaWdodDogMTNweDtcbiAgICBib3JkZXItcmFkaXVzOiAxMDAlO1xufVxuLnNlbGVjdGVkLWJ1dHRvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG5kaXYjZGVtbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbmltZy5tYXRjaC1pbWFnZXMge1xuICAgIHdpZHRoOiAzMCU7XG59XG5cbi5NYXQtY2FyZC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgIFxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMTBweFxufVxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMHB4O1xuICAgIGxlZnQ6IDBweDtcbiAgICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgei1pbmRleDogOTtcbiAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICBvcGFjaXR5OiAwLjU7XG4gIH1cbiAgLmNvbnRpbnVlLWZvcm0ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIHRvcDogMHZoO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDBweDtcbiAgfVxuICAubmVzdGltYXRlLWxvZ28ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cbiAgaW1nLm5lc3RpbWF0ZS1sb2dvIHtcbiAgICBoZWlnaHQ6IDIydmg7XG4gICAgfVxuICAub3ZlcmxheS10ZXh0e1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICB9XG4gIFxuICAub3ZlcmxheS10ZXh0LXRoaXJke1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICB9XG4gIC5jb250aW51ZS10ZXh0IHtcbiAgICBtYXJnaW46IDJlbTtcbiAgICBmb250LXNpemU6IDE3cHg7XG4gICAgdGV4dC1hbGlnbjogbGVmdDtcbiAgfVxuICAuY29udGludWUtYnV0dG9uLWNvbnRhaW5lclxuICB7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICB9XG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGJvcmRlcjogM3B4IHNvbGlkIHdoaXRlO1xuICAgIG1hcmdpbjogMHZoIDE1dnc7XG4gICAgcGFkZGluZzogMC42ZW1cbiAgfVxuICAuY29udGludWUtZm9ybS1kYXRhIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIG1hcmdpbjogMHB4O1xuICAgIHBhZGRpbmc6IDBweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn0iXX0= */";
+    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvbWF0Y2hlcy1idXllci9tYXRjaGVzLWJ1eWVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxzRUFBc0U7SUFDdEUsMkJBQTJCO0lBQzNCLHdCQUF3QjtBQUM1QjtBQUVBOzs7SUFHSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTs7SUFFSSxlQUFlO0lBQ2YsNkJBQTZCO0FBQ2pDO0FBQ0E7O0lBRUksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtDQUN0QixnQkFBZ0I7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7OztJQUc3QixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osZUFBZTtBQUNuQjtBQUNBOztJQUVJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0lBQ2YsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjs7SUFFbkIsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QjtBQUNKO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGVBQWU7SUFDZixRQUFRO0lBQ1IsU0FBUztJQUVULGFBQWE7SUFFYix1QkFBdUI7SUFFdkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixpQkFBaUI7SUFDakIsWUFBWTtFQUNkO0FBQ0E7SUFDRSx5Q0FBeUM7SUFDekMsYUFBYTtJQUNiLFlBQVk7SUFDWixRQUFRO0lBQ1IsZUFBZTtJQUNmLFdBQVc7RUFDYjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtFQUN6QjtBQUNBO0lBQ0UsWUFBWTtJQUNaO0FBQ0Y7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBRUE7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBQ0E7SUFDRSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtFQUNsQjtBQUNBOztJQUVFLFlBQVk7SUFDWiw0QkFBNEI7SUFDNUIsZUFBZTtFQUNqQjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCO0VBQ0Y7QUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsNkJBQTZCO0lBQzdCLFlBQVk7SUFDWixXQUFXO0lBQ1gsWUFBWTtJQUNaLFdBQVc7SUFDWCx1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC9NZW51L215TWF0Y2hlcy9tYXRjaGVzLWJ1eWVyL21hdGNoZXMtYnV5ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9wZXJ0eS1kZXRhaWwtY29udGFpbmVyXG57XG4gICAgcGFkZGluZy1yaWdodDogOHB4O1xuICAgIHBhZGRpbmctbGVmdDogOHB4O1xuICAgIHBhZGRpbmctYm90dG9tOiA5cHg7XG59XG4ucHJvcGVydHktc2VsZWN0ZWQtZGV0YWlsLWJhY2tncm91bmRcbntcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvSW1hZ2VzL3NlbGVjdGVkUHJvcGVydHliYWNrZ3JvdW5nLmpwZycpO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvbnRhaW47XG59XG5cbi53cmFwcGVyLWRldGFpbC1jb250YWluZXJcbntcbiAgIFxuICAgIHBhZGRpbmctdG9wOiA1cHg7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbn1cbi5wcm9wZXJ0eS1kZXRhaWwtaDNcbntcbiAgICBmb250LXNpemU6IDI0cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cbi5zdHJlZXRuYW1lIHtcbiAgICBwYWRkaW5nLXRvcDogMjBweDtcbn1cbi5kZXRhaWxzLXAtaGVhZGluZ3NcbnsgICBcbiAgICBmb250LXNpemU6IDE3cHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMHB4ICFpbXBvcnRhbnQ7XG59XG4uZGV0YWlscy1vdXRwdXQtcFxue1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbn1cbi50YWJsZSB0ZCwgLnRhYmxlIHRoIHtcbiAgICBwYWRkaW5nOiAuNzVyZW07XG4gICAgdmVydGljYWwtYWxpZ246IHRvcDtcbiBib3JkZXItdG9wOiBub25lO1xufVxuLmJ1dHRvbi1kZXRhaWxzIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICBcbiAgXG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDcwcHg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmJ0bi1jaGF0IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogNDQlO1xuICAgIGhlaWdodDogMzVweDtcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4uYnV0dG9uLWFza1xue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiA1MCU7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxOHB4O1xufVxuLmNhcm91c2VsLWl0ZW0ge1xuICAgIGhlaWdodDogMTcwcHg7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5jYXJvdXNlbC1pbmRpY2F0b3JzIGxpIHtcbiAgICB3aWR0aDogMTNweDtcbiAgICBoZWlnaHQ6IDEzcHg7XG4gICAgYm9yZGVyLXJhZGl1czogMTAwJTtcbn1cbi5zZWxlY3RlZC1idXR0b24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuZGl2I2RlbW8ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5pbWcubWF0Y2gtaW1hZ2VzIHtcbiAgICB3aWR0aDogMzAlO1xufVxuXG4uTWF0LWNhcmQtZGl2IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICBcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW46IDEwcHhcbn1cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDBweDtcbiAgICBsZWZ0OiAwcHg7XG4gICAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHotaW5kZXg6IDk7XG4gICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgb3BhY2l0eTogMC41O1xuICB9XG4gIC5jb250aW51ZS1mb3JtIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICB0b3A6IDB2aDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiAwcHg7XG4gIH1cbiAgLm5lc3RpbWF0ZS1sb2dvIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB9XG4gIGltZy5uZXN0aW1hdGUtbG9nbyB7XG4gICAgaGVpZ2h0OiAyMnZoO1xuICAgIH1cbiAgLm92ZXJsYXktdGV4dHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgfVxuICBcbiAgLm92ZXJsYXktdGV4dC10aGlyZHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgfVxuICAuY29udGludWUtdGV4dCB7XG4gICAgbWFyZ2luOiAyZW07XG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gIH1cbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXJcbiAge1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgfVxuICAuY29udGludWUtYnV0dG9uLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBib3JkZXI6IDNweCBzb2xpZCB3aGl0ZTtcbiAgICBtYXJnaW46IDB2aCAxNXZ3O1xuICAgIHBhZGRpbmc6IDAuNmVtXG4gIH1cbiAgLmNvbnRpbnVlLWZvcm0tZGF0YSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBtYXJnaW46IDBweDtcbiAgICBwYWRkaW5nOiAwcHg7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59Il19 */";
     /***/
   },
 
   /***/
-  "./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.ts":
-  /*!*****************************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.ts ***!
-    \*****************************************************************************************************/
+  "./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.ts":
+  /*!*************************************************************************!*\
+    !*** ./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.ts ***!
+    \*************************************************************************/
 
-  /*! exports provided: MyMatchesSelectedDetailsComponent */
+  /*! exports provided: MatchesBuyerComponent */
 
   /***/
-  function srcAppMenuMyMatchesMyMatchesSelectedDetailsMyMatchesSelectedDetailsComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppMenuMyMatchesMatchesBuyerMatchesBuyerComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "MyMatchesSelectedDetailsComponent", function () {
-      return MyMatchesSelectedDetailsComponent;
+    __webpack_require__.d(__webpack_exports__, "MatchesBuyerComponent", function () {
+      return MatchesBuyerComponent;
     });
     /* harmony import */
 
@@ -10922,15 +10707,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! @angular/router */
-    "./node_modules/@angular/router/fesm2015/router.js");
+    var _matches_buyer_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./matches-buyer.service */
+    "./src/app/Menu/myMatches/matches-buyer/matches-buyer.service.ts");
     /* harmony import */
 
 
-    var _selected_my_matches_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
-    /*! ./selected-my-matches.service */
-    "./src/app/Menu/myMatches/my-matches-selected-details/selected-my-matches.service.ts");
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
     /* harmony import */
 
 
@@ -10938,51 +10723,61 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /*! @angular/common */
     "./node_modules/@angular/common/fesm2015/common.js");
 
-    var MyMatchesSelectedDetailsComponent =
+    var MatchesBuyerComponent =
     /*#__PURE__*/
     function () {
-      function MyMatchesSelectedDetailsComponent(_Activatedroute, _router, SelectedMyMatchesService, _location) {
-        _classCallCheck(this, MyMatchesSelectedDetailsComponent);
+      function MatchesBuyerComponent(MatchesBuyerService, _Activatedroute, _router, _location) {
+        _classCallCheck(this, MatchesBuyerComponent);
 
+        this.MatchesBuyerService = MatchesBuyerService;
         this._Activatedroute = _Activatedroute;
         this._router = _router;
-        this.SelectedMyMatchesService = SelectedMyMatchesService;
         this._location = _location;
         this.now = new Date();
       }
 
-      _createClass(MyMatchesSelectedDetailsComponent, [{
+      _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this64 = this;
+          var _this61 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this64.Lookingpostcode = params.get("Lookingpostcode");
-            _this64.Lookingstate = params.get("Lookingstate");
-            _this64.LookingAddress = params.get("LookingAddress");
-            _this64.norooms = params.get("Roomsmax");
-            _this64.PropertyCondition = params.get("PropertyCondition");
-            _this64.MaxAmount = params.get("MaxAmount");
-            _this64.PropertyType = params.get("PropertyType");
-            _this64.ownership = params.get("ownership");
-            _this64.features = params.get("features");
-            _this64.matchStatus = params.get("matchStatus");
-            _this64.propertyId = params.get("propertyId");
-            _this64.expressed = params.get("expressed");
-            _this64.userId = params.get("UserId");
-            console.log(_this64.userId);
+            _this61.Lookingpostcode = params.get("Lookingpostcode");
+            _this61.Lookingstate = params.get("Lookingstate");
+            _this61.LookingAddress = params.get("LookingAddress");
+            _this61.norooms = params.get("Roomsmax");
+            _this61.PropertyCondition = params.get("PropertyCondition");
+            _this61.MaxAmount = params.get("MaxAmount");
+            _this61.PropertyType = params.get("PropertyType");
+            _this61.ownership = params.get("ownership");
+            _this61.features = params.get("features");
+            _this61.matchStatus = params.get("matchStatus");
+            _this61.propertyId = params.get("propertyId");
+            _this61.expressed = params.get("expressed");
+            _this61.userId = params.get("UserId");
+            console.log(_this61.userId);
+          });
+          this.MatchesBuyerService.getMatchesSellerProperties(this.userId).then(function (res) {
+            res.forEach(function (element) {
+              _this61.sellerProperty = element.data();
+              console.log(_this61.sellerProperty);
+            });
           });
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this65 = this;
+          var _this62 = this;
 
-          this.return = this.SelectedMyMatchesService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
+          this.return = this.MatchesBuyerService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this65._router.navigate(["/selectAgent/" + _this65.Lookingpostcode + "/" + _this65.Lookingstate + "/" + _this65.LookingAddress + "/" + _this65.norooms + "/" + _this65.PropertyCondition + "/" + _this65.MaxAmount + "/" + _this65.PropertyType + "/" + _this65.ownership + "/" + _this65.features + "/" + _this65.propertyId + "/" + _this65.userId]);
+              _this62.createSellerNotification();
+
+              _this62.createOther();
+
+              _this62.backClicked();
             }
           });
         }
@@ -11001,34 +10796,216 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             Type: "Seller_Matches_Confirmed",
             propertyId: this.propertyId
           };
-          this.return = this.SelectedMyMatchesService.createNotification(this.userId, this.notification).then(function (data) {});
+          this.return = this.MatchesBuyerService.createNotification(this.userId, this.notification).then(function (data) {});
+        }
+      }, {
+        key: "createOther",
+        value: function createOther() {
+          this.matchesSeller = {
+            Conditions: this.sellerProperty.Conditions.trim(),
+            FinancialPosition: this.sellerProperty.FinancialPosition.trim(),
+            LookingStreetname: this.sellerProperty.LookingStreetname.trim(),
+            Lookinpostcode: this.sellerProperty.Lookingpostcode.trim(),
+            MaxAmount: this.sellerProperty.MaxAmount.trim(),
+            Maxbathroom: this.sellerProperty.Maxbathroom.trim(),
+            Maxreception: this.sellerProperty.Maxreception.trim(),
+            MinAmount: this.sellerProperty.MinAmount.trim(),
+            Ownership: this.sellerProperty.Ownership.trim(),
+            Position: this.sellerProperty.Position.trim(),
+            PropertyType: this.sellerProperty.PropertyType.trim(),
+            Roomsmax: this.sellerProperty.Roomsmax.trim(),
+            UserId: this.sellerProperty.UserId.trim(),
+            features: this.sellerProperty.features.trim(),
+            matchStatus: "confirm_interest"
+          };
+          this.return = this.MatchesBuyerService.matchesBuyerCreate(this.userId, this.matchesSeller).then(function (data) {
+            if (data == true) {}
+          });
         }
       }]);
 
-      return MyMatchesSelectedDetailsComponent;
+      return MatchesBuyerComponent;
     }();
 
-    MyMatchesSelectedDetailsComponent.ctorParameters = function () {
+    MatchesBuyerComponent.ctorParameters = function () {
       return [{
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+        type: _matches_buyer_service__WEBPACK_IMPORTED_MODULE_2__["MatchesBuyerService"]
       }, {
-        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
       }, {
-        type: _selected_my_matches_service__WEBPACK_IMPORTED_MODULE_3__["SelectedMyMatchesService"]
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
       }, {
         type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]
       }];
     };
 
-    MyMatchesSelectedDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-my-matches-selected-details',
+    MatchesBuyerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-matches-buyer',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./my-matches-selected-details.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.html")).default,
+      /*! raw-loader!./matches-buyer.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.html")).default,
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./my-matches-selected-details.component.css */
-      "./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.css")).default]
-    })], MyMatchesSelectedDetailsComponent);
+      /*! ./matches-buyer.component.css */
+      "./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.css")).default]
+    })], MatchesBuyerComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/Menu/myMatches/matches-buyer/matches-buyer.service.ts":
+  /*!***********************************************************************!*\
+    !*** ./src/app/Menu/myMatches/matches-buyer/matches-buyer.service.ts ***!
+    \***********************************************************************/
+
+  /*! exports provided: MatchesBuyerService */
+
+  /***/
+  function srcAppMenuMyMatchesMatchesBuyerMatchesBuyerServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "MatchesBuyerService", function () {
+      return MatchesBuyerService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/fire/firestore */
+    "./node_modules/@angular/fire/firestore/es2015/index.js");
+
+    var MatchesBuyerService =
+    /*#__PURE__*/
+    function () {
+      function MatchesBuyerService(db) {
+        _classCallCheck(this, MatchesBuyerService);
+
+        this.db = db;
+        this.expressInterestRef = null;
+        this.notificationMatchesRef = null;
+        this.dbnotification = "notification";
+        this.expressInterestRef = db.collection("expressMatches");
+        this.Interest = db.collectionGroup("MatchesExpress");
+        this.customersRef = db.collection(this.dbnotification);
+      }
+
+      _createClass(MatchesBuyerService, [{
+        key: "ExpressInterest",
+        value: function ExpressInterest(uid, propertyId) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee19() {
+            return regeneratorRuntime.wrap(function _callee19$(_context19) {
+              while (1) {
+                switch (_context19.prev = _context19.next) {
+                  case 0:
+                    _context19.next = 2;
+                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
+                      propertyId: propertyId
+                    }).then(function (data) {
+                      console.log("expressInterest Document Buyer successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context19.sent;
+                    return _context19.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context19.stop();
+                }
+              }
+            }, _callee19, this);
+          }));
+        }
+      }, {
+        key: "createNotification",
+        value: function createNotification(UserId, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee20() {
+            return regeneratorRuntime.wrap(function _callee20$(_context20) {
+              while (1) {
+                switch (_context20.prev = _context20.next) {
+                  case 0:
+                    _context20.next = 2;
+                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context20.sent;
+                    return _context20.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context20.stop();
+                }
+              }
+            }, _callee20, this);
+          }));
+        }
+      }, {
+        key: "getMatchesSellerProperties",
+        value: function getMatchesSellerProperties(uid) {
+          return this.db.collection("matchesSeller").doc(uid).collection("matches").ref.get();
+        }
+      }, {
+        key: "matchesBuyerCreate",
+        value: function matchesBuyerCreate(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee21() {
+            return regeneratorRuntime.wrap(function _callee21$(_context21) {
+              while (1) {
+                switch (_context21.prev = _context21.next) {
+                  case 0:
+                    _context21.next = 2;
+                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("matchesBuyer successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context21.sent;
+                    return _context21.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context21.stop();
+                }
+              }
+            }, _callee21, this);
+          }));
+        }
+      }]);
+
+      return MatchesBuyerService;
+    }();
+
+    MatchesBuyerService.ctorParameters = function () {
+      return [{
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]
+      }];
+    };
+
+    MatchesBuyerService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: 'root'
+    })], MatchesBuyerService);
     /***/
   },
 
@@ -11090,12 +11067,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ExpressInterest(uid, propertyId) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee20() {
-            return regeneratorRuntime.wrap(function _callee20$(_context20) {
+          regeneratorRuntime.mark(function _callee22() {
+            return regeneratorRuntime.wrap(function _callee22$(_context22) {
               while (1) {
-                switch (_context20.prev = _context20.next) {
+                switch (_context22.prev = _context22.next) {
                   case 0:
-                    _context20.next = 2;
+                    _context22.next = 2;
                     return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
                       propertyId: propertyId
                     }).then(function (data) {
@@ -11103,15 +11080,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                     });
 
                   case 2:
-                    this.return = _context20.sent;
-                    return _context20.abrupt("return", true);
+                    this.return = _context22.sent;
+                    return _context22.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context20.stop();
+                    return _context22.stop();
                 }
               }
-            }, _callee20, this);
+            }, _callee22, this);
           }));
         }
       }, {
@@ -11119,26 +11096,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createNotification(UserId, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee21() {
-            return regeneratorRuntime.wrap(function _callee21$(_context21) {
+          regeneratorRuntime.mark(function _callee23() {
+            return regeneratorRuntime.wrap(function _callee23$(_context23) {
               while (1) {
-                switch (_context21.prev = _context21.next) {
+                switch (_context23.prev = _context23.next) {
                   case 0:
-                    _context21.next = 2;
+                    _context23.next = 2;
                     return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this.return = _context21.sent;
-                    return _context21.abrupt("return", true);
+                    this.return = _context23.sent;
+                    return _context23.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context21.stop();
+                    return _context23.stop();
                 }
               }
-            }, _callee21, this);
+            }, _callee23, this);
           }));
         }
       }]);
@@ -11236,15 +11213,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this66 = this;
+          var _this63 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this66.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
+            _this63.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
 
-            _this66.FinancialPosition = params.get("FinancialPosition");
-            _this66.Type = params.get("PropertyType");
-            _this66.Position = params.get("Position");
-            _this66.matchStatus = params.get("matchStatus");
+            _this63.FinancialPosition = params.get("FinancialPosition");
+            _this63.Type = params.get("PropertyType");
+            _this63.Position = params.get("Position");
+            _this63.matchStatus = params.get("matchStatus");
           });
         }
       }, {
@@ -11369,7 +11346,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this67 = this;
+          var _this64 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -11380,43 +11357,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this67.sellerProperty.push({
+              _this64.sellerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this67.propertyLength = _this67.sellerProperty.length;
+              _this64.propertyLength = _this64.sellerProperty.length;
             });
 
-            if (_this67.propertyLength > 0) {
-              _this67.getExpressedListingIds();
+            if (_this64.propertyLength > 0) {
+              _this64.getExpressedListingIds();
             }
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this67.buyerProperty.push({
+              _this64.buyerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this67.sellerLength = _this67.buyerProperty.length;
+              console.log(_this64.buyerProperty);
+              _this64.sellerLength = _this64.buyerProperty.length;
             });
 
-            if (_this67.sellerLength > 0) {
-              _this67.getExpressedListingIds();
+            if (_this64.sellerLength > 0) {
+              _this64.getExpressedListingIds();
             }
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this68 = this;
+          var _this65 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this68.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this68.distinctExpressedUid.push(item.data().propertyId);
+              if (_this65.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this65.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -11531,26 +11509,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createNotification(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee22() {
-            return regeneratorRuntime.wrap(function _callee22$(_context22) {
+          regeneratorRuntime.mark(function _callee24() {
+            return regeneratorRuntime.wrap(function _callee24$(_context24) {
               while (1) {
-                switch (_context22.prev = _context22.next) {
+                switch (_context24.prev = _context24.next) {
                   case 0:
-                    _context22.next = 2;
+                    _context24.next = 2;
                     return this.customersRef.doc(key).collection("notification").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this.return = _context22.sent;
-                    return _context22.abrupt("return", true);
+                    this.return = _context24.sent;
+                    return _context24.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context22.stop();
+                    return _context24.stop();
                 }
               }
-            }, _callee22, this);
+            }, _callee24, this);
           }));
         }
       }, {
@@ -11674,26 +11652,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this69 = this;
+          var _this66 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this69.Lookingpostcode = params.get("Lookingpostcode");
-            _this69.Lookingstate = params.get("Lookingstate");
-            _this69.LookingAddress = params.get("LookingAddress");
-            _this69.norooms = params.get("Roomsmax");
-            _this69.PropertyCondition = params.get("PropertyCondition");
-            _this69.MaxAmount = params.get("MaxAmount");
-            _this69.PropertyType = params.get("PropertyType");
-            _this69.ownership = params.get("ownership");
-            _this69.features = params.get("features");
-            _this69.propertyId = params.get("propertyId");
-            _this69.UserId = params.get("userId");
+            _this66.Lookingpostcode = params.get("Lookingpostcode");
+            _this66.Lookingstate = params.get("Lookingstate");
+            _this66.LookingAddress = params.get("LookingAddress");
+            _this66.norooms = params.get("Roomsmax");
+            _this66.PropertyCondition = params.get("PropertyCondition");
+            _this66.MaxAmount = params.get("MaxAmount");
+            _this66.PropertyType = params.get("PropertyType");
+            _this66.ownership = params.get("ownership");
+            _this66.features = params.get("features");
+            _this66.propertyId = params.get("propertyId");
+            _this66.UserId = params.get("userId").trim();
+            console.log(_this66.UserId);
           });
           this.AgentService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this69.agents.push(elements.data());
+              _this66.agents.push(elements.data());
+            });
+          });
+          this.AgentService.getMatchesSellerProperties(this.UserId).then(function (res) {
+            res.forEach(function (element) {
+              _this66.sellerProperty = element.data();
+              console.log(_this66.sellerProperty);
+              _this66.Amount = _this66.sellerProperty.MaxAmount;
+              console.log(_this66.Amount);
             });
           });
         }
@@ -11712,13 +11699,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this70 = this;
+          var _this67 = this;
 
           this.return = this.AgentService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this70.createSellerNotification();
-
-              _this70.createEntry();
+              _this67.createSellerNotification();
             }
           });
         }
@@ -11730,7 +11715,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
-          var _this71 = this;
+          var _this68 = this;
 
           console.log(this.UserId);
           this.notification = {
@@ -11741,28 +11726,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             propertyId: this.propertyId.trim()
           };
           this.return = this.AgentService.createNotification(this.UserId, this.notification).then(function (data) {
-            _this71.createEntry();
+            _this68.createBuyerEntry();
 
-            _this71._router.navigate(["/mymatches"]);
+            _this68._router.navigate(["/mymatches"]);
           });
         }
       }, {
-        key: "createEntry",
-        value: function createEntry() {
-          this.matchesSeller = {
-            Lookingpostcode: this.Lookingpostcode,
-            Lookingstate: this.Lookingstate,
-            LookingAddress: this.LookingAddress,
-            Roomsmax: this.norooms,
-            PropertyCondition: this.PropertyCondition,
-            MaxAmount: this.MaxAmount,
-            PropertyType: this.PropertyType,
-            ownership: this.ownership,
-            features: this.features,
-            UserId: this.UserId,
-            matchStatu: "confirm_interest"
+        key: "createBuyerEntry",
+        value: function createBuyerEntry() {
+          this.matchesBuyer = {
+            LookingAddress: this.sellerProperty.LookingAddress,
+            LookingTown: this.sellerProperty.LookingTown,
+            Lookingpostcode: this.sellerProperty.Lookingpostcode,
+            Lookingstate: this.sellerProperty.Lookingstate,
+            MaxAmount: this.sellerProperty.MaxAmount,
+            Maxbathrooms: this.sellerProperty.Maxbathrooms,
+            Maxreception: this.sellerProperty.Maxreception,
+            Roomsmax: this.sellerProperty.Maxrooms,
+            PropertyCondition: this.sellerProperty.PropertyCondition,
+            PropertyType: this.sellerProperty.PropertyType,
+            UserId: this.sellerProperty.UserId,
+            features: this.sellerProperty.features,
+            matchStatus: "confirm_interest",
+            ownership: this.sellerProperty.ownership
           };
-          this.return = this.AgentService.matchesSellerCreate(this.UserId, this.matchesSeller).then(function (data) {});
+          this.return = this.AgentService.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
+            if (data == true) {}
+          });
         }
       }]);
 
@@ -11859,71 +11849,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ExpressInterest(uid, propertyId) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee23() {
-            return regeneratorRuntime.wrap(function _callee23$(_context23) {
-              while (1) {
-                switch (_context23.prev = _context23.next) {
-                  case 0:
-                    _context23.next = 2;
-                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
-                      propertyId: propertyId
-                    }).then(function (data) {
-                      console.log("expressInterest Document seller successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context23.sent;
-                    return _context23.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context23.stop();
-                }
-              }
-            }, _callee23, this);
-          }));
-        }
-      }, {
-        key: "createNotification",
-        value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee24() {
-            return regeneratorRuntime.wrap(function _callee24$(_context24) {
-              while (1) {
-                switch (_context24.prev = _context24.next) {
-                  case 0:
-                    _context24.next = 2;
-                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context24.sent;
-                    return _context24.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context24.stop();
-                }
-              }
-            }, _callee24, this);
-          }));
-        } //create Database Buyer Matches
-
-      }, {
-        key: "matchesSellerCreate",
-        value: function matchesSellerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee25() {
             return regeneratorRuntime.wrap(function _callee25$(_context25) {
               while (1) {
                 switch (_context25.prev = _context25.next) {
                   case 0:
                     _context25.next = 2;
-                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
+                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
+                      propertyId: propertyId
+                    }).then(function (data) {
+                      console.log("expressInterest Document seller successfully written!");
                     });
 
                   case 2:
@@ -11936,6 +11871,93 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee25, this);
+          }));
+        }
+      }, {
+        key: "createNotification",
+        value: function createNotification(UserId, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee26() {
+            return regeneratorRuntime.wrap(function _callee26$(_context26) {
+              while (1) {
+                switch (_context26.prev = _context26.next) {
+                  case 0:
+                    _context26.next = 2;
+                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context26.sent;
+                    return _context26.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context26.stop();
+                }
+              }
+            }, _callee26, this);
+          }));
+        } //create Database Buyer Matches
+
+      }, {
+        key: "matchesSellerCreate",
+        value: function matchesSellerCreate(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee27() {
+            return regeneratorRuntime.wrap(function _callee27$(_context27) {
+              while (1) {
+                switch (_context27.prev = _context27.next) {
+                  case 0:
+                    _context27.next = 2;
+                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context27.sent;
+                    return _context27.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context27.stop();
+                }
+              }
+            }, _callee27, this);
+          }));
+        }
+      }, {
+        key: "getMatchesSellerProperties",
+        value: function getMatchesSellerProperties(uid) {
+          return this.db.collection("matchesBuyer").doc(uid).collection("matches").ref.get();
+        }
+      }, {
+        key: "matchesBuyerCreate",
+        value: function matchesBuyerCreate(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee28() {
+            return regeneratorRuntime.wrap(function _callee28$(_context28) {
+              while (1) {
+                switch (_context28.prev = _context28.next) {
+                  case 0:
+                    _context28.next = 2;
+                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("matchesBuyer successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context28.sent;
+                    return _context28.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context28.stop();
+                }
+              }
+            }, _callee28, this);
           }));
         }
       }]);
@@ -11956,43 +11978,43 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
-  "./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.css":
-  /*!**************************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.css ***!
-    \**************************************************************************************************/
+  "./src/app/Menu/myMatches/seller-matches/seller-matches.component.css":
+  /*!****************************************************************************!*\
+    !*** ./src/app/Menu/myMatches/seller-matches/seller-matches.component.css ***!
+    \****************************************************************************/
 
   /*! exports provided: default */
 
   /***/
-  function srcAppMenuMyMatchesSellerConfirmedPropertySellerConfirmedPropertyComponentCss(module, __webpack_exports__, __webpack_require__) {
+  function srcAppMenuMyMatchesSellerMatchesSellerMatchesComponentCss(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvc2VsbGVyLWNvbmZpcm1lZC1wcm9wZXJ0eS9zZWxsZXItY29uZmlybWVkLXByb3BlcnR5LmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxzRUFBc0U7SUFDdEUsMkJBQTJCO0lBQzNCLHdCQUF3QjtBQUM1QjtBQUVBOzs7SUFHSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTs7SUFFSSxlQUFlO0lBQ2YsNkJBQTZCO0FBQ2pDO0FBQ0E7O0lBRUksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtDQUN0QixnQkFBZ0I7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7OztJQUc3QixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osZUFBZTtBQUNuQjtBQUNBOztJQUVJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0lBQ2YsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjs7SUFFbkIsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QjtBQUNKO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGVBQWU7SUFDZixRQUFRO0lBQ1IsU0FBUztJQUVULGFBQWE7SUFFYix1QkFBdUI7SUFFdkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixpQkFBaUI7SUFDakIsWUFBWTtFQUNkO0FBQ0E7SUFDRSx5Q0FBeUM7SUFDekMsYUFBYTtJQUNiLFlBQVk7SUFDWixRQUFRO0lBQ1IsZUFBZTtJQUNmLFdBQVc7RUFDYjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtFQUN6QjtBQUNBO0lBQ0UsWUFBWTtJQUNaO0FBQ0Y7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBRUE7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBQ0E7SUFDRSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtFQUNsQjtBQUNBOztJQUVFLFlBQVk7SUFDWiw0QkFBNEI7SUFDNUIsZUFBZTtFQUNqQjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCO0VBQ0Y7QUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsNkJBQTZCO0lBQzdCLFlBQVk7SUFDWixXQUFXO0lBQ1gsWUFBWTtJQUNaLFdBQVc7SUFDWCx1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC9NZW51L215TWF0Y2hlcy9zZWxsZXItY29uZmlybWVkLXByb3BlcnR5L3NlbGxlci1jb25maXJtZWQtcHJvcGVydHkuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9wZXJ0eS1kZXRhaWwtY29udGFpbmVyXG57XG4gICAgcGFkZGluZy1yaWdodDogOHB4O1xuICAgIHBhZGRpbmctbGVmdDogOHB4O1xuICAgIHBhZGRpbmctYm90dG9tOiA5cHg7XG59XG4ucHJvcGVydHktc2VsZWN0ZWQtZGV0YWlsLWJhY2tncm91bmRcbntcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvSW1hZ2VzL3NlbGVjdGVkUHJvcGVydHliYWNrZ3JvdW5nLmpwZycpO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvbnRhaW47XG59XG5cbi53cmFwcGVyLWRldGFpbC1jb250YWluZXJcbntcbiAgIFxuICAgIHBhZGRpbmctdG9wOiA1cHg7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbn1cbi5wcm9wZXJ0eS1kZXRhaWwtaDNcbntcbiAgICBmb250LXNpemU6IDI0cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cbi5zdHJlZXRuYW1lIHtcbiAgICBwYWRkaW5nLXRvcDogMjBweDtcbn1cbi5kZXRhaWxzLXAtaGVhZGluZ3NcbnsgICBcbiAgICBmb250LXNpemU6IDE3cHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMHB4ICFpbXBvcnRhbnQ7XG59XG4uZGV0YWlscy1vdXRwdXQtcFxue1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbn1cbi50YWJsZSB0ZCwgLnRhYmxlIHRoIHtcbiAgICBwYWRkaW5nOiAuNzVyZW07XG4gICAgdmVydGljYWwtYWxpZ246IHRvcDtcbiBib3JkZXItdG9wOiBub25lO1xufVxuLmJ1dHRvbi1kZXRhaWxzIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICBcbiAgXG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDcwcHg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmJ0bi1jaGF0IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogNDQlO1xuICAgIGhlaWdodDogMzVweDtcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4uYnV0dG9uLWFza1xue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiA1MCU7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxOHB4O1xufVxuLmNhcm91c2VsLWl0ZW0ge1xuICAgIGhlaWdodDogMTcwcHg7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5jYXJvdXNlbC1pbmRpY2F0b3JzIGxpIHtcbiAgICB3aWR0aDogMTNweDtcbiAgICBoZWlnaHQ6IDEzcHg7XG4gICAgYm9yZGVyLXJhZGl1czogMTAwJTtcbn1cbi5zZWxlY3RlZC1idXR0b24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuZGl2I2RlbW8ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5pbWcubWF0Y2gtaW1hZ2VzIHtcbiAgICB3aWR0aDogMzAlO1xufVxuXG4uTWF0LWNhcmQtZGl2IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICBcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW46IDEwcHhcbn1cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDBweDtcbiAgICBsZWZ0OiAwcHg7XG4gICAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHotaW5kZXg6IDk7XG4gICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgb3BhY2l0eTogMC41O1xuICB9XG4gIC5jb250aW51ZS1mb3JtIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICB0b3A6IDB2aDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiAwcHg7XG4gIH1cbiAgLm5lc3RpbWF0ZS1sb2dvIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB9XG4gIGltZy5uZXN0aW1hdGUtbG9nbyB7XG4gICAgaGVpZ2h0OiAyMnZoO1xuICAgIH1cbiAgLm92ZXJsYXktdGV4dHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgfVxuICBcbiAgLm92ZXJsYXktdGV4dC10aGlyZHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgfVxuICAuY29udGludWUtdGV4dCB7XG4gICAgbWFyZ2luOiAyZW07XG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gIH1cbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXJcbiAge1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgfVxuICAuY29udGludWUtYnV0dG9uLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBib3JkZXI6IDNweCBzb2xpZCB3aGl0ZTtcbiAgICBtYXJnaW46IDB2aCAxNXZ3O1xuICAgIHBhZGRpbmc6IDAuNmVtXG4gIH1cbiAgLmNvbnRpbnVlLWZvcm0tZGF0YSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBtYXJnaW46IDBweDtcbiAgICBwYWRkaW5nOiAwcHg7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59Il19 */";
+    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvc2VsbGVyLW1hdGNoZXMvc2VsbGVyLW1hdGNoZXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLHNFQUFzRTtJQUN0RSwyQkFBMkI7SUFDM0Isd0JBQXdCO0FBQzVCO0FBRUE7OztJQUdJLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiw2QkFBNkI7QUFDakM7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0NBQ3RCLGdCQUFnQjtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2Qjs7O0lBRzdCLHFCQUFxQjtJQUNyQixnQkFBZ0I7SUFDaEIsc0JBQXNCO0lBQ3RCLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixVQUFVO0lBQ1YsWUFBWTtJQUNaLGVBQWU7SUFDZixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1COztJQUVuQixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCO0FBQ0o7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osZUFBZTtJQUNmLFFBQVE7SUFDUixTQUFTO0lBRVQsYUFBYTtJQUViLHVCQUF1QjtJQUV2QixtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQixZQUFZO0VBQ2Q7QUFDQTtJQUNFLHlDQUF5QztJQUN6QyxhQUFhO0lBQ2IsWUFBWTtJQUNaLFFBQVE7SUFDUixlQUFlO0lBQ2YsV0FBVztFQUNiO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0VBQ3pCO0FBQ0E7SUFDRSxZQUFZO0lBQ1o7QUFDRjtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFFQTtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFDQTtJQUNFLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0VBQ2xCO0FBQ0E7O0lBRUUsWUFBWTtJQUNaLDRCQUE0QjtJQUM1QixlQUFlO0VBQ2pCO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEI7RUFDRjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osV0FBVztJQUNYLHVCQUF1QjtBQUMzQiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbXlNYXRjaGVzL3NlbGxlci1tYXRjaGVzL3NlbGxlci1tYXRjaGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJvcGVydHktZGV0YWlsLWNvbnRhaW5lclxue1xuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcbiAgICBwYWRkaW5nLWJvdHRvbTogOXB4O1xufVxuLnByb3BlcnR5LXNlbGVjdGVkLWRldGFpbC1iYWNrZ3JvdW5kXG57XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL0ltYWdlcy9zZWxlY3RlZFByb3BlcnR5YmFja2dyb3VuZy5qcGcnKTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xufVxuXG4ud3JhcHBlci1kZXRhaWwtY29udGFpbmVyXG57XG4gICBcbiAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG59XG4ucHJvcGVydHktZGV0YWlsLWgzXG57XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW07XG59XG4uc3RyZWV0bmFtZSB7XG4gICAgcGFkZGluZy10b3A6IDIwcHg7XG59XG4uZGV0YWlscy1wLWhlYWRpbmdzXG57ICAgXG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50O1xufVxuLmRldGFpbHMtb3V0cHV0LXBcbntcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4udGFibGUgdGQsIC50YWJsZSB0aCB7XG4gICAgcGFkZGluZzogLjc1cmVtO1xuICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XG4gYm9yZGVyLXRvcDogbm9uZTtcbn1cbi5idXR0b24tZGV0YWlscyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgXG4gIFxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiA3MHB4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5idG4tY2hhdCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDQ0JTtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xufVxuLmJ1dHRvbi1hc2tcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogNTAlO1xuICAgIGhlaWdodDogMzVweDtcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMThweDtcbn1cbi5jYXJvdXNlbC1pdGVtIHtcbiAgICBoZWlnaHQ6IDE3MHB4O1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uY2Fyb3VzZWwtaW5kaWNhdG9ycyBsaSB7XG4gICAgd2lkdGg6IDEzcHg7XG4gICAgaGVpZ2h0OiAxM3B4O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwMCU7XG59XG4uc2VsZWN0ZWQtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmRpdiNkZW1vIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuaW1nLm1hdGNoLWltYWdlcyB7XG4gICAgd2lkdGg6IDMwJTtcbn1cblxuLk1hdC1jYXJkLWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxMHB4XG59XG4ubG9hZGluZy1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwcHg7XG4gICAgbGVmdDogMHB4O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB6LWluZGV4OiA5O1xuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgIG9wYWNpdHk6IDAuNTtcbiAgfVxuICAuY29udGludWUtZm9ybSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgdG9wOiAwdmg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMHB4O1xuICB9XG4gIC5uZXN0aW1hdGUtbG9nbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxuICBpbWcubmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogMjJ2aDtcbiAgICB9XG4gIC5vdmVybGF5LXRleHR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgXG4gIC5vdmVybGF5LXRleHQtdGhpcmR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgLmNvbnRpbnVlLXRleHQge1xuICAgIG1hcmdpbjogMmVtO1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICB9XG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyXG4gIHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gIH1cbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYm9yZGVyOiAzcHggc29saWQgd2hpdGU7XG4gICAgbWFyZ2luOiAwdmggMTV2dztcbiAgICBwYWRkaW5nOiAwLjZlbVxuICB9XG4gIC5jb250aW51ZS1mb3JtLWRhdGEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgcGFkZGluZzogMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufSJdfQ== */";
     /***/
   },
 
   /***/
-  "./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.ts":
-  /*!*************************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.ts ***!
-    \*************************************************************************************************/
+  "./src/app/Menu/myMatches/seller-matches/seller-matches.component.ts":
+  /*!***************************************************************************!*\
+    !*** ./src/app/Menu/myMatches/seller-matches/seller-matches.component.ts ***!
+    \***************************************************************************/
 
-  /*! exports provided: SellerConfirmedPropertyComponent */
+  /*! exports provided: SellerMatchesComponent */
 
   /***/
-  function srcAppMenuMyMatchesSellerConfirmedPropertySellerConfirmedPropertyComponentTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppMenuMyMatchesSellerMatchesSellerMatchesComponentTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "SellerConfirmedPropertyComponent", function () {
-      return SellerConfirmedPropertyComponent;
+    __webpack_require__.d(__webpack_exports__, "SellerMatchesComponent", function () {
+      return SellerMatchesComponent;
     });
     /* harmony import */
 
@@ -12021,48 +12043,59 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony import */
 
 
-    var _seller_confirmed_property_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! ./seller-confirmed-property.service */
-    "./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.service.ts");
+    var _state_service_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../../state-service.service */
+    "./src/app/state-service.service.ts");
+    /* harmony import */
 
-    var SellerConfirmedPropertyComponent =
+
+    var _seller_matches_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ./seller-matches.service */
+    "./src/app/Menu/myMatches/seller-matches/seller-matches.service.ts");
+
+    var SellerMatchesComponent =
     /*#__PURE__*/
     function () {
-      function SellerConfirmedPropertyComponent(_Activatedroute, _router, _location, SellerConfirmedPropertyService) {
-        _classCallCheck(this, SellerConfirmedPropertyComponent);
+      function SellerMatchesComponent(_Activatedroute, _router, _location, SelectedMyMatchesService, stateService) {
+        _classCallCheck(this, SellerMatchesComponent);
 
         this._Activatedroute = _Activatedroute;
         this._router = _router;
         this._location = _location;
-        this.SellerConfirmedPropertyService = SellerConfirmedPropertyService;
-        this.color = 'accent';
-        this.checked = true;
-        this.disabled = false;
-        this.accepted = false;
-        this.disable = true;
-        this.agents = [];
+        this.SelectedMyMatchesService = SelectedMyMatchesService;
+        this.stateService = stateService;
         this.now = new Date();
+        this.sellerProperty = [];
       }
 
-      _createClass(SellerConfirmedPropertyComponent, [{
+      _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this72 = this;
+          var _this69 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this72.LookingAddress = params.get("LookingAddress");
-            _this72.Lookingpostcode = params.get("Lookingpostcode");
-            _this72.Lookingstate = params.get("Lookingstate");
-            _this72.MaxAmount = params.get("MaxAmount");
-            _this72.PropertyCondition = params.get("PropertyCondition");
-            _this72.PropertyType = params.get("PropertyType");
-            _this72.UserId = params.get("UserId");
-            _this72.matchStatu = params.get("matchStatu");
-            _this72.ownership = params.get("ownership");
-            _this72.propertyId = params.get("propertyId");
-            _this72.expressed = params.get("expressed");
+            _this69.Lookingpostcode = params.get("Lookinpostcode");
+            _this69.ChainStatus = params.get("ChainStatus");
+            _this69.Conditions = params.get("Conditions");
+            _this69.SearchRadius = params.get("SearchRadius");
+            _this69.Position = params.get("Position");
+            _this69.MinAmount = params.get("MinAmount");
+            _this69.MaxAmount = params.get("MaxAmount");
+            _this69.Type = params.get("PropertyType");
+            _this69.matchStatus = params.get("matchStatus");
+            _this69.propertyId = params.get("propertyId");
+            _this69.expressed = params.get("expressed");
+            _this69.UserId = params.get("UserId");
+            console.log(_this69.UserId);
+          });
+          this.SelectedMyMatchesService.getMatchesSellerProperties(this.UserId).then(function (res) {
+            res.forEach(function (element) {
+              _this69.sellerProperty.push(element.data());
+
+              console.log(element.data().UserId);
+            });
           });
         }
       }, {
@@ -12073,20 +12106,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this73 = this;
+          var _this70 = this;
 
-          this.return = this.SellerConfirmedPropertyService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
-            if (data == true) {
-              _this73._router.navigate(["/mymatches"]);
-            }
+          this.return = this.SelectedMyMatchesService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
+            if (data == true) {}
+
+            _this70.createSellerNotification();
+
+            _this70._router.navigate(["/selectAgent/" + _this70.Lookingpostcode + "/" + _this70.Lookingstate + "/" + _this70.LookingAddress + "/" + _this70.norooms + "/" + _this70.PropertyCondition + "/" + _this70.MaxAmount + "/" + _this70.PropertyType + "/" + _this70.ownership + "/" + _this70.features + "/" + _this70.propertyId + "/" + _this70.UserId]);
           });
+        }
+      }, {
+        key: "createSellerNotification",
+        value: function createSellerNotification() {
+          this.notification = {
+            time: this.now,
+            viewed: "Confirmed",
+            userId: this.uid,
+            Type: "Buyer_Matches_Confirmed",
+            propertyId: this.propertyId.trim()
+          };
+          this.return = this.SelectedMyMatchesService.createNotification(this.UserId, this.notification).then(function (data) {});
         }
       }]);
 
-      return SellerConfirmedPropertyComponent;
+      return SellerMatchesComponent;
     }();
 
-    SellerConfirmedPropertyComponent.ctorParameters = function () {
+    SellerMatchesComponent.ctorParameters = function () {
       return [{
         type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
       }, {
@@ -12094,40 +12141,42 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         type: _angular_common__WEBPACK_IMPORTED_MODULE_3__["Location"]
       }, {
-        type: _seller_confirmed_property_service__WEBPACK_IMPORTED_MODULE_4__["SellerConfirmedPropertyService"]
+        type: _seller_matches_service__WEBPACK_IMPORTED_MODULE_5__["SellerMatchesService"]
+      }, {
+        type: _state_service_service__WEBPACK_IMPORTED_MODULE_4__["StateServiceService"]
       }];
     };
 
-    SellerConfirmedPropertyComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-      selector: 'app-seller-confirmed-property',
+    SellerMatchesComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-seller-matches',
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! raw-loader!./seller-confirmed-property.component.html */
-      "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.html")).default,
+      /*! raw-loader!./seller-matches.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/Menu/myMatches/seller-matches/seller-matches.component.html")).default,
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
-      /*! ./seller-confirmed-property.component.css */
-      "./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.css")).default]
-    })], SellerConfirmedPropertyComponent);
+      /*! ./seller-matches.component.css */
+      "./src/app/Menu/myMatches/seller-matches/seller-matches.component.css")).default]
+    })], SellerMatchesComponent);
     /***/
   },
 
   /***/
-  "./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.service.ts":
-  /*!***********************************************************************************************!*\
-    !*** ./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.service.ts ***!
-    \***********************************************************************************************/
+  "./src/app/Menu/myMatches/seller-matches/seller-matches.service.ts":
+  /*!*************************************************************************!*\
+    !*** ./src/app/Menu/myMatches/seller-matches/seller-matches.service.ts ***!
+    \*************************************************************************/
 
-  /*! exports provided: SellerConfirmedPropertyService */
+  /*! exports provided: SellerMatchesService */
 
   /***/
-  function srcAppMenuMyMatchesSellerConfirmedPropertySellerConfirmedPropertyServiceTs(module, __webpack_exports__, __webpack_require__) {
+  function srcAppMenuMyMatchesSellerMatchesSellerMatchesServiceTs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
     /* harmony export (binding) */
 
 
-    __webpack_require__.d(__webpack_exports__, "SellerConfirmedPropertyService", function () {
-      return SellerConfirmedPropertyService;
+    __webpack_require__.d(__webpack_exports__, "SellerMatchesService", function () {
+      return SellerMatchesService;
     });
     /* harmony import */
 
@@ -12148,26 +12197,54 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /*! @angular/fire/firestore */
     "./node_modules/@angular/fire/firestore/es2015/index.js");
 
-    var SellerConfirmedPropertyService =
+    var SellerMatchesService =
     /*#__PURE__*/
     function () {
-      function SellerConfirmedPropertyService(db) {
-        _classCallCheck(this, SellerConfirmedPropertyService);
+      function SellerMatchesService(db) {
+        _classCallCheck(this, SellerMatchesService);
 
         this.db = db;
-      }
+      } //create Database Buyer Matches
 
-      _createClass(SellerConfirmedPropertyService, [{
+
+      _createClass(SellerMatchesService, [{
+        key: "matchesSellerCreate",
+        value: function matchesSellerCreate(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee29() {
+            return regeneratorRuntime.wrap(function _callee29$(_context29) {
+              while (1) {
+                switch (_context29.prev = _context29.next) {
+                  case 0:
+                    _context29.next = 2;
+                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context29.sent;
+                    return _context29.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context29.stop();
+                }
+              }
+            }, _callee29, this);
+          }));
+        }
+      }, {
         key: "ExpressInterest",
         value: function ExpressInterest(uid, propertyId) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee26() {
-            return regeneratorRuntime.wrap(function _callee26$(_context26) {
+          regeneratorRuntime.mark(function _callee30() {
+            return regeneratorRuntime.wrap(function _callee30$(_context30) {
               while (1) {
-                switch (_context26.prev = _context26.next) {
+                switch (_context30.prev = _context30.next) {
                   case 0:
-                    _context26.next = 2;
+                    _context30.next = 2;
                     return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
                       propertyId: propertyId
                     }).then(function (data) {
@@ -12175,31 +12252,63 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                     });
 
                   case 2:
-                    this.return = _context26.sent;
-                    return _context26.abrupt("return", true);
+                    this.return = _context30.sent;
+                    return _context30.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context26.stop();
+                    return _context30.stop();
                 }
               }
-            }, _callee26, this);
+            }, _callee30, this);
           }));
+        }
+      }, {
+        key: "createNotification",
+        value: function createNotification(UserId, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee31() {
+            return regeneratorRuntime.wrap(function _callee31$(_context31) {
+              while (1) {
+                switch (_context31.prev = _context31.next) {
+                  case 0:
+                    _context31.next = 2;
+                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context31.sent;
+                    return _context31.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context31.stop();
+                }
+              }
+            }, _callee31, this);
+          }));
+        }
+      }, {
+        key: "getMatchesSellerProperties",
+        value: function getMatchesSellerProperties(uid) {
+          return this.db.collection("matchesBuyer").doc(uid).collection("matches").ref.get();
         }
       }]);
 
-      return SellerConfirmedPropertyService;
+      return SellerMatchesService;
     }();
 
-    SellerConfirmedPropertyService.ctorParameters = function () {
+    SellerMatchesService.ctorParameters = function () {
       return [{
         type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__["AngularFirestore"]
       }];
     };
 
-    SellerConfirmedPropertyService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+    SellerMatchesService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
       providedIn: 'root'
-    })], SellerConfirmedPropertyService);
+    })], SellerMatchesService);
     /***/
   },
 
@@ -12280,19 +12389,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this74 = this;
+          var _this71 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this74.uid) {
-                _this74.user.Name = element.data().Name;
-                _this74.user.Email = element.data().email;
-                _this74.user.Phone = element.data().Phone;
-                _this74.user.DOB = element.data().DOB.toDate();
-                _this74.user.Phone = element.data().Phone;
-                _this74.user.Address = element.data().Currentaddress;
+              if (element.data().uid == _this71.uid) {
+                _this71.user.Name = element.data().Name;
+                _this71.user.Email = element.data().email;
+                _this71.user.Phone = element.data().Phone;
+                _this71.user.DOB = element.data().DOB.toDate();
+                _this71.user.Phone = element.data().Phone;
+                _this71.user.Address = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -12507,19 +12616,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this75 = this;
+          var _this72 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this75.uid) {
-                _this75.user.Name = element.data().Name;
-                _this75.user.Email = element.data().email;
-                _this75.user.Phone = element.data().Phone;
-                _this75.user.DOB = element.data().DOB.toDate();
-                _this75.user.Currentaddress = element.data().Currentaddress;
-                _this75.user.prefrence = element.data().prefrence;
+              if (element.data().uid == _this72.uid) {
+                _this72.user.Name = element.data().Name;
+                _this72.user.Email = element.data().email;
+                _this72.user.Phone = element.data().Phone;
+                _this72.user.DOB = element.data().DOB.toDate();
+                _this72.user.Currentaddress = element.data().Currentaddress;
+                _this72.user.prefrence = element.data().prefrence;
               }
             });
           });
@@ -12527,13 +12636,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this76 = this;
+          var _this73 = this;
 
           this.isLoading = true;
           this.return = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this76.isLoading = false;
+            _this73.isLoading = false;
 
-            _this76.alert();
+            _this73.alert();
           });
         }
       }, {
@@ -12715,7 +12824,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this77 = this;
+          var _this74 = this;
 
           this.users = JSON.parse(localStorage.getItem("user"));
 
@@ -12725,15 +12834,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this77.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this77.userData));
+              _this74.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this74.userData));
 
-              _this77.LoggedIn();
+              _this74.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this77.LoggedOut();
+              _this74.LoggedOut();
             }
           });
         }
@@ -12755,38 +12864,38 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this78 = this;
+          var _this75 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this78.sellerProperty.push(element.data());
+                _this75.sellerProperty.push(element.data());
               }
             });
-            _this78.noSellerOfMatche = _this78.sellerProperty.length;
-            _this78.matches = _this78.buyerProperty.length + _this78.sellerProperty.length;
+            _this75.noSellerOfMatche = _this75.sellerProperty.length;
+            _this75.matches = _this75.buyerProperty.length + _this75.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this78.buyerProperty.push(element.data());
+              _this75.buyerProperty.push(element.data());
             });
-            _this78.noBuyerMatches = _this78.buyerProperty.length;
-            _this78.matches = _this78.buyerProperty.length + _this78.sellerProperty.length;
+            _this75.noBuyerMatches = _this75.buyerProperty.length;
+            _this75.matches = _this75.buyerProperty.length + _this75.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this79 = this;
+          var _this76 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this79.confirmInterest.push(item.data());
+              _this76.confirmInterest.push(item.data());
             });
-            _this79.notification = _this79.confirmInterest.length;
-            console.log(_this79.notification);
+            _this76.notification = _this76.confirmInterest.length;
+            console.log(_this76.notification);
           });
         }
       }, {
@@ -12844,43 +12953,43 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this80 = this;
+          var _this77 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this80.isLoading = false;
+            _this77.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this81 = this;
+          var _this78 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this81.isLoading = false;
+            _this78.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this82 = this;
+          var _this79 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this82.isLoading = false;
+            _this79.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this83 = this;
+          var _this80 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this83.isLoading = false;
+            _this80.isLoading = false;
           });
         }
       }, {
@@ -12903,18 +13012,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this84 = this;
+          var _this81 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this84.user.Name = displayName;
-            _this84.user.DOB = null;
-            _this84.user.Phone = null;
-            _this84.isLoading = true;
-            _this84.return = _this84.FormsService.createUserCustomer(_this84.user).then(function (data) {
-              if (_this84.user != null) {
-                _this84.isLoading = false;
+            _this81.user.Name = displayName;
+            _this81.user.DOB = null;
+            _this81.user.Phone = null;
+            _this81.isLoading = true;
+            _this81.return = _this81.FormsService.createUserCustomer(_this81.user).then(function (data) {
+              if (_this81.user != null) {
+                _this81.isLoading = false;
               } else {
-                _this84.isLoading = false;
+                _this81.isLoading = false;
               }
             });
           });
@@ -13072,13 +13181,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this85 = this;
+          var _this82 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this85.confirmInterest.push(item.data());
+              _this82.confirmInterest.push(item.data());
             });
           });
         }
@@ -14505,117 +14614,111 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony import */
 
 
-    var _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
-    /*! ./Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component */
-    "./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.ts");
-    /* harmony import */
-
-
-    var _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    var _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! ./Home/agent-signup/agent-signup.component */
     "./src/app/Home/agent-signup/agent-signup.component.ts");
     /* harmony import */
 
 
-    var _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    var _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
     /*! ./Misc/privacy-policy/privacy-policy.component */
     "./src/app/Misc/privacy-policy/privacy-policy.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
-    /*! ./Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component */
-    "./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.ts");
-    /* harmony import */
-
-
-    var _template_template_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
+    var _template_template_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
     /*! ./template/template.component */
     "./src/app/template/template.component.ts");
     /* harmony import */
 
 
-    var _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
+    var _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(
     /*! ./Menu/plus/plus.component */
     "./src/app/Menu/plus/plus.component.ts");
     /* harmony import */
 
 
-    var _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
+    var _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(
     /*! ./terms-condition/terms-condition.component */
     "./src/app/terms-condition/terms-condition.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
+    var _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(
     /*! ./Menu/myMatches/select-agent/select-agent.component */
     "./src/app/Menu/myMatches/select-agent/select-agent.component.ts");
     /* harmony import */
 
 
-    var _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
+    var _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(
     /*! ./Home/agentsignupform/agentsignupform.component */
     "./src/app/Home/agentsignupform/agentsignupform.component.ts");
     /* harmony import */
 
 
-    var _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
+    var _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(
     /*! ./Menu/myListings/listing-property-detail/listing-property-detail.component */
     "./src/app/Menu/myListings/listing-property-detail/listing-property-detail.component.ts");
     /* harmony import */
 
 
-    var _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
+    var _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(
     /*! ./Menu/myListings/listing-selling-property-detail/listing-selling-property-detail.component */
     "./src/app/Menu/myListings/listing-selling-property-detail/listing-selling-property-detail.component.ts");
     /* harmony import */
 
 
-    var _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
+    var _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(
     /*! ./Misc/cookies/cookies.component */
     "./src/app/Misc/cookies/cookies.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
+    var _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(
     /*! ./Menu/myMatches/buyerAwaitingDetail/buyerAwaitingDetail.component */
     "./src/app/Menu/myMatches/buyerAwaitingDetail/buyerAwaitingDetail.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_buyer_selected_property_buyer_selected_property_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
-    /*! ./Menu/myMatches/buyer-selected-property/buyer-selected-property.component */
-    "./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.ts");
-    /* harmony import */
-
-
-    var _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(
+    var _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(
     /*! ./Menu/myListings/edit-listing-buyer/edit-listing-buyer.component */
     "./src/app/Menu/myListings/edit-listing-buyer/edit-listing-buyer.component.ts");
     /* harmony import */
 
 
-    var _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(
+    var _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(
     /*! ./Menu/myListings/edit-listing-seller/edit-listing-seller.component */
     "./src/app/Menu/myListings/edit-listing-seller/edit-listing-seller.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_buyer_confirmed_selected_matches_buyer_confirmed_selected_matches_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(
-    /*! ./Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component */
-    "./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.ts");
-    /* harmony import */
-
-
-    var _Menu_myMatches_seller_confirmed_property_seller_confirmed_property_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(
-    /*! ./Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component */
-    "./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.ts");
-    /* harmony import */
-
-
-    var _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(
+    var _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(
     /*! ./property-matches/property-matches.component */
     "./src/app/property-matches/property-matches.component.ts");
+    /* harmony import */
+
+
+    var _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(
+    /*! ./Menu/myMatches/matches-buyer/matches-buyer.component */
+    "./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.ts");
+    /* harmony import */
+
+
+    var _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(
+    /*! ./Menu/myMatches/seller-matches/seller-matches.component */
+    "./src/app/Menu/myMatches/seller-matches/seller-matches.component.ts");
+    /* harmony import */
+
+
+    var _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(
+    /*! ./Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component */
+    "./src/app/Menu/myMatches/my-matches-to-sell-selected-detail/my-matches-to-sell-selected-detail.component.ts");
+    /* harmony import */
+
+
+    var _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(
+    /*! ./Home/nestimates-home/nestimates-home.component */
+    "./src/app/Home/nestimates-home/nestimates-home.component.ts");
 
     var routes = [{
       path: "Property/:use",
@@ -14633,13 +14736,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       path: "buyerMatchlisting/:Lookingpostcode/:PropertyType/:LookingTown/:MinAmount/:MaxAmount/:latitude/:longitude/:newUser/:PropertyFor/:LookingStreetname/:Conditions/:FinancialPosition/:SearchRadius/:Validity/:Position/:UserId/:ChainStatus",
       component: _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_7__["BuyerMatcheListingComponent"]
     }, {
-      path: "SellerSelectedProperty/:MaxAmount/:Lookingpostcode/:LookingStreetname/:Position/:PropertyType/:Roomsmax/:Ownership/:Conditions/:Maxbathroom/:Maxreception/:features/:UserId/:FinancialPosition/:propertyId/:expressed",
+      path: "SellerSelectedProperty/:Look_state/:Look_rooms/:Look_Propertycondition/:Look_Address/:Look_ownership/:Look_features/:Look_userId/:Look_postcode/:Look_PropertyType/:Look_maxAmount/:Look_Town/:Look_Address/:Look_Maxbathrooms/:Look_Maxreceptions/:Look_ownership/:Look_Maxrooms/:MaxAmount/:MinAmount/:Lookingpostcode/:LookingStreetname/:Position/:PropertyType/:Roomsmax/:Ownership/:Conditions/:Maxbathroom/:Maxreception/:features/:UserId/:FinancialPosition/:propertyId/:expressed",
       component: _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_8__["SellerSelectedPropertyComponent"]
     }, {
       path: "fillformseller/:Lookingpostcode/:LookingAddress/:LookingTown/:Lookingstate/:PropertyType/:Maxrooms/:MaxAmount/:ownership/:Maxbathrooms/:Maxreception/:PropertyCondition/:features/:Country",
       component: _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_9__["FillFormSellerComponent"]
     }, {
-      path: "sellerMatchlisting/:Lookingpostcode/:PropertyType/:LookingTown/:MaxAmount/:latitude/:longitude/:newUser/:PropertyFor",
+      path: "sellerMatchlisting/:Lookingpostcode/:PropertyType/:LookingTown/:MaxAmount/:latitude/:longitude/:newUser/:PropertyFor/:Lookingstate/:Maxrooms/:PropertyCondition/:LookingAddress/:ownership/:features/:UserId/:Maxbathrooms/:Maxreception/:ownership/:Maxrooms",
       component: _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["SellerMatchListingComponent"]
     }, {
       path: "confirmbuyerdetail",
@@ -14654,7 +14757,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       path: "editprofile",
       component: _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_13__["EditProfileComponent"]
     }, {
-      path: "buyerSelectedPropertyDetail/:Look_postcodes/:LookingStreetname/:Conditions/:ChainStatus/:FinancialPosition/:SearchRadius/:Min_Amount/:Max_Amount/:Validity/:Property_Type/:Position/:UserId/:Lookingpostcode/:Lookingstate/:LookingTown/:norooms/:PropertyCondition/:MaxAmount/:LookingAddress/:ownership/:PropertyType/:features/:UserId/:MinAmount/:Maxbathrooms/:Maxrooms/:Maxreception/:propertyId/:expressed",
+      path: "buyerSelectedPropertyDetail/:Look_postcodes/:Look_Streetname/:Look_condition/:Look_chainstatus/:Look_FinancialPosition/:Look_Radius/:Look_minamount/:Look_maxamount/:Look_Validity/:Look_propertytype/:Look_Position/:Look_UserId/:Lookingpostcode/:Lookingstate/:LookingTown/:norooms/:PropertyCondition/:MaxAmount/:LookingAddress/:ownership/:PropertyType/:features/:UserId/:MinAmount/:Maxbathrooms/:Maxrooms/:Maxreception/:propertyId/:expressed",
       component: _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_14__["BuyerSelectedPropertyDetailComponent"]
     }, {
       path: "myListing",
@@ -14678,62 +14781,59 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       path: "verify-email-address",
       component: _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_20__["VerifyEmailComponent"]
     }, {
-      path: "mymatchesselecteddetail/:Lookingpostcode/:LookingAddress/:Roomsmax/:PropertyCondition/:MaxAmount/:Lookingstate/:PropertyType/:ownership/:features/:matchStatus/:propertyId/:expressed/:UserId",
-      component: _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_24__["MyMatchesSelectedDetailsComponent"]
-    }, {
       path: "agentSignup",
-      component: _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_25__["AgentSignupComponent"]
+      component: _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_24__["AgentSignupComponent"]
     }, {
       path: "PrivacyPolicy",
-      component: _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_26__["PrivacyPolicyComponent"]
-    }, {
-      path: "MyMatchesseller/:Lookingpostcode/:FinancialPosition/:PropertyType/:Position/:matchStatus",
-      component: _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_27__["MyMatchesToSellSelectedDetailComponent"]
+      component: _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_25__["PrivacyPolicyComponent"]
     }, {
       path: "checkLogin",
-      component: _template_template_component__WEBPACK_IMPORTED_MODULE_28__["TemplateComponent"]
+      component: _template_template_component__WEBPACK_IMPORTED_MODULE_26__["TemplateComponent"]
     }, {
       path: "Plus",
-      component: _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_29__["PlusComponent"]
+      component: _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_27__["PlusComponent"]
     }, {
       path: "terms",
-      component: _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_30__["TermsConditionComponent"]
+      component: _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_28__["TermsConditionComponent"]
     }, {
       path: "selectAgent/:Lookingpostcode/:Lookingstate/:LookingAddress/:norooms/:PropertyCondition/:MaxAmount/:PropertyType/:ownership/:features/:propertyId/:userId",
-      component: _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_31__["SelectAgentComponent"]
+      component: _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_29__["SelectAgentComponent"]
     }, {
       path: "Agentsignupform",
-      component: _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_32__["AgentsignupformComponent"]
+      component: _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_30__["AgentsignupformComponent"]
     }, {
       path: "listingpropertydetail/:MinAmount/:MaxAmount/:Lookingpostcode/:ChainStatus/:FinancialPosition/:PropertyType/:Position/:SearchRadius/:requirement",
-      component: _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_33__["ListingPropertyDetailComponent"]
+      component: _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_31__["ListingPropertyDetailComponent"]
     }, {
       path: "listingsellerpropertydetail/:MaxAmount/:PropertyType/:Lookingpostcode/:Maxrooms/:Maxreception/:PropertyCondition/:Maxbathrooms",
-      component: _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_34__["ListingSellingPropertyDetailComponent"]
+      component: _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_32__["ListingSellingPropertyDetailComponent"]
     }, {
       path: "cookies",
-      component: _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_35__["CookiesComponent"]
+      component: _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_33__["CookiesComponent"]
     }, {
       path: "awaitingResponse/:Lookingpostcode/:LookingAddress/:PropertyCondition/:MaxAmount/:Lookingstate/:PropertyType/:ownership/:features/:matchStatus",
-      component: _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_36__["BuyerAwaitingDetailComponent"]
-    }, {
-      path: "buyerSelcted/:Lookingpostcode/:ChainStatus/:Conditions/:SearchRadius/:Position/:MinAmount/:MaxAmount/:PropertyType/:propertyId/:expressed/:UserId",
-      component: _Menu_myMatches_buyer_selected_property_buyer_selected_property_component__WEBPACK_IMPORTED_MODULE_37__["BuyerSelectedPropertyComponent"]
+      component: _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_34__["BuyerAwaitingDetailComponent"]
     }, {
       path: "EditListingBuyer/:Currentpostcode/:CurrentTown/:CurrentAddress/:Currentstate/:Currentcountry/:Lookingpostcode/:LookingStreetname/:LookingTown/:Lookingstate/:Country/:FinancialPosition/:SearchRadius/:PropertyType/:Roommin/:Roomsmax/:MinAmount/:MaxAmount/:Validity/:Minbathroom/:Maxbathroom/:Minreception/:Maxreception/:Conditions/:Ownership/:features/:docid",
-      component: _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_38__["EditListingBuyerComponent"]
+      component: _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_35__["EditListingBuyerComponent"]
     }, {
       path: "editListingSeller/:Lookingpostcode/:LookingAddress/:LookingTown/:Lookingstate/:PropertyType/:Maxrooms/:MaxAmount/:ownership/:Maxbathrooms/:Maxreception/:PropertyCondition/:features/:Country",
-      component: _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_39__["EditListingSellerComponent"]
-    }, {
-      path: "BuyerConfirmedSelectedMatches/:Lookingpostcode/:MaxAmount/:Position/:ChainStatus/:Conditions/:SearchRadius/:Type/:propertyId/:expressed/:UserId",
-      component: _Menu_myMatches_buyer_confirmed_selected_matches_buyer_confirmed_selected_matches_component__WEBPACK_IMPORTED_MODULE_40__["BuyerConfirmedSelectedMatchesComponent"]
-    }, {
-      path: "SellerConfirmedProperty/:LookingAddress/:Lookingpostcode/:Lookingstate/:MaxAmount/:PropertyCondition/:PropertyType/:UserId/:matchStatu/:ownership/:propertyId/:expressed",
-      component: _Menu_myMatches_seller_confirmed_property_seller_confirmed_property_component__WEBPACK_IMPORTED_MODULE_41__["SellerConfirmedPropertyComponent"]
+      component: _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_36__["EditListingSellerComponent"]
     }, {
       path: "potentialMatches/:Lookingpostcode/:PropertyType/:LookingTown/:MinAmount/:MaxAmount/:latitude/:longitude/:newUser",
-      component: _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_42__["PropertyMatchesComponent"]
+      component: _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_37__["PropertyMatchesComponent"]
+    }, {
+      path: "myMtachesBuyer/:Lookingpostcode/:LookingAddress/:Roomsmax/:PropertyCondition/:MaxAmount/:Lookingstate/:PropertyType/:ownership/:features/:matchStatus/:propertyId/:expressed/:UserId",
+      component: _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_38__["MatchesBuyerComponent"]
+    }, {
+      path: "matchesSeller/:Lookinpostcode/:ChainStatus/:Conditions/:SearchRadius/:Position/:MinAmount/:MaxAmount/:PropertyType/:propertyId/:expressed/:UserId",
+      component: _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_39__["SellerMatchesComponent"]
+    }, {
+      path: "MyMatchesseller/:Lookingpostcode/:FinancialPosition/:PropertyType/:Position/:matchStatus",
+      component: _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_40__["MyMatchesToSellSelectedDetailComponent"]
+    }, {
+      path: "nestimatesHome",
+      component: _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_41__["NestimatesHomeComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -15348,135 +15448,135 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony import */
 
 
-    var _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(
-    /*! ./Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component */
-    "./src/app/Menu/myMatches/my-matches-selected-details/my-matches-selected-details.component.ts");
-    /* harmony import */
-
-
-    var _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(
+    var _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(
     /*! ./Home/agent-signup/agent-signup.component */
     "./src/app/Home/agent-signup/agent-signup.component.ts");
     /* harmony import */
 
 
-    var _template_template_component__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(
+    var _template_template_component__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(
     /*! ./template/template.component */
     "./src/app/template/template.component.ts");
     /* harmony import */
 
 
-    var _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(
+    var _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_85__ = __webpack_require__(
     /*! ./Misc/privacy-policy/privacy-policy.component */
     "./src/app/Misc/privacy-policy/privacy-policy.component.ts");
     /* harmony import */
 
 
-    var _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(
+    var _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_86__ = __webpack_require__(
     /*! ./Menu/notification/notification.component */
     "./src/app/Menu/notification/notification.component.ts");
     /* harmony import */
 
 
-    var _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(
+    var _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(
     /*! ./Menu/plus/plus.component */
     "./src/app/Menu/plus/plus.component.ts");
     /* harmony import */
 
 
-    var _short_name_pipe__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(
+    var _short_name_pipe__WEBPACK_IMPORTED_MODULE_88__ = __webpack_require__(
     /*! ./short-name.pipe */
     "./src/app/short-name.pipe.ts");
     /* harmony import */
 
 
-    var _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(
+    var _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_89__ = __webpack_require__(
     /*! ./terms-condition/terms-condition.component */
     "./src/app/terms-condition/terms-condition.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(
+    var _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_90__ = __webpack_require__(
     /*! ./Menu/myMatches/select-agent/select-agent.component */
     "./src/app/Menu/myMatches/select-agent/select-agent.component.ts");
     /* harmony import */
 
 
-    var _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(
+    var _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(
     /*! ./Home/agentsignupform/agentsignupform.component */
     "./src/app/Home/agentsignupform/agentsignupform.component.ts");
     /* harmony import */
 
 
-    var _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(
+    var _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__ = __webpack_require__(
     /*! ./Home/agentsignupform/alertDialogagent.component */
     "./src/app/Home/agentsignupform/alertDialogagent.component.ts");
     /* harmony import */
 
 
-    var _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(
+    var _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_93__ = __webpack_require__(
     /*! ./Menu/myListings/listing-property-detail/listing-property-detail.component */
     "./src/app/Menu/myListings/listing-property-detail/listing-property-detail.component.ts");
     /* harmony import */
 
 
-    var _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(
+    var _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_94__ = __webpack_require__(
     /*! ./Menu/myListings/listing-selling-property-detail/listing-selling-property-detail.component */
     "./src/app/Menu/myListings/listing-selling-property-detail/listing-selling-property-detail.component.ts");
     /* harmony import */
 
 
-    var _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(
+    var _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__ = __webpack_require__(
     /*! ./Menu/myProfile/editProfile/ediProfileSubmission.component */
     "./src/app/Menu/myProfile/editProfile/ediProfileSubmission.component.ts");
     /* harmony import */
 
 
-    var _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(
+    var _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_96__ = __webpack_require__(
     /*! ./Misc/cookies/cookies.component */
     "./src/app/Misc/cookies/cookies.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(
+    var _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_97__ = __webpack_require__(
     /*! ./Menu/myMatches/buyerAwaitingDetail/buyerAwaitingDetail.component */
     "./src/app/Menu/myMatches/buyerAwaitingDetail/buyerAwaitingDetail.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_buyer_selected_property_buyer_selected_property_component__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(
-    /*! ./Menu/myMatches/buyer-selected-property/buyer-selected-property.component */
-    "./src/app/Menu/myMatches/buyer-selected-property/buyer-selected-property.component.ts");
-    /* harmony import */
-
-
-    var _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(
+    var _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_98__ = __webpack_require__(
     /*! ./Menu/myListings/edit-listing-buyer/edit-listing-buyer.component */
     "./src/app/Menu/myListings/edit-listing-buyer/edit-listing-buyer.component.ts");
     /* harmony import */
 
 
-    var _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(
+    var _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_99__ = __webpack_require__(
     /*! ./Menu/myListings/edit-listing-seller/edit-listing-seller.component */
     "./src/app/Menu/myListings/edit-listing-seller/edit-listing-seller.component.ts");
     /* harmony import */
 
 
-    var _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(
+    var _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__ = __webpack_require__(
     /*! ./Menu/myListings/edit-listing-buyer/editDataSubmission.component */
     "./src/app/Menu/myListings/edit-listing-buyer/editDataSubmission.component.ts");
     /* harmony import */
 
 
-    var _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(
+    var _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__ = __webpack_require__(
     /*! ./Menu/myListings/edit-listing-seller/editSellerSubmission.component */
     "./src/app/Menu/myListings/edit-listing-seller/editSellerSubmission.component.ts");
     /* harmony import */
 
 
-    var _Menu_myMatches_buyer_confirmed_selected_matches_buyer_confirmed_selected_matches_component__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(
-    /*! ./Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component */
-    "./src/app/Menu/myMatches/buyer-confirmed-selected-matches/buyer-confirmed-selected-matches.component.ts");
+    var _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_102__ = __webpack_require__(
+    /*! ./property-matches/property-matches.component */
+    "./src/app/property-matches/property-matches.component.ts");
+    /* harmony import */
+
+
+    var _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_103__ = __webpack_require__(
+    /*! ./Menu/myMatches/matches-buyer/matches-buyer.component */
+    "./src/app/Menu/myMatches/matches-buyer/matches-buyer.component.ts");
+    /* harmony import */
+
+
+    var _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_104__ = __webpack_require__(
+    /*! ./Menu/myMatches/seller-matches/seller-matches.component */
+    "./src/app/Menu/myMatches/seller-matches/seller-matches.component.ts");
     /* harmony import */
 
 
@@ -15486,15 +15586,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony import */
 
 
-    var _Menu_myMatches_seller_confirmed_property_seller_confirmed_property_component__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(
-    /*! ./Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component */
-    "./src/app/Menu/myMatches/seller-confirmed-property/seller-confirmed-property.component.ts");
-    /* harmony import */
-
-
-    var _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_107__ = __webpack_require__(
-    /*! ./property-matches/property-matches.component */
-    "./src/app/property-matches/property-matches.component.ts"); // Firebase modules
+    var _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_106__ = __webpack_require__(
+    /*! ./Home/nestimates-home/nestimates-home.component */
+    "./src/app/Home/nestimates-home/nestimates-home.component.ts"); // Firebase modules
 
 
     var AppModule = function AppModule() {
@@ -15502,9 +15596,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_96__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_93__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_selected_details_my_matches_selected_details_component__WEBPACK_IMPORTED_MODULE_83__["MyMatchesSelectedDetailsComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_84__["AgentSignupComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_85__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_86__["PrivacyPolicyComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_105__["MyMatchesToSellSelectedDetailComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_87__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_88__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_89__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_90__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_91__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_92__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_94__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_95__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_97__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_98__["BuyerAwaitingDetailComponent"], _Menu_myMatches_buyer_selected_property_buyer_selected_property_component__WEBPACK_IMPORTED_MODULE_99__["BuyerSelectedPropertyComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_100__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_101__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_102__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_103__["EditSellerSubmissionComponent"], _Menu_myMatches_buyer_confirmed_selected_matches_buyer_confirmed_selected_matches_component__WEBPACK_IMPORTED_MODULE_104__["BuyerConfirmedSelectedMatchesComponent"], _Menu_myMatches_seller_confirmed_property_seller_confirmed_property_component__WEBPACK_IMPORTED_MODULE_106__["SellerConfirmedPropertyComponent"], _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_107__["PropertyMatchesComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_105__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_83__["AgentSignupComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_84__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_85__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_86__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_87__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_88__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_89__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_90__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_91__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_93__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_94__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_96__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_97__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_98__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_99__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EditSellerSubmissionComponent"], _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_102__["PropertyMatchesComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_103__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_104__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_106__["NestimatesHomeComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_24__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_28__["environment"].firebaseConfig, "street"), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_27__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_26__["AngularFireStorageModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_23__["AngularFireDatabaseModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_34__["BrowserAnimationsModule"], _Misc_material__WEBPACK_IMPORTED_MODULE_77__["MaterialModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_35__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_39__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_40__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_41__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_36__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_42__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_43__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_44__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_45__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_46__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_47__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_48__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_49__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_50__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_51__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_52__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_53__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_54__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_55__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_56__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_57__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_58__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_59__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_61__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_62__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_63__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_64__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_65__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_66__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_67__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_68__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_69__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_70__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_71__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_73__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_74__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_75__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_37__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_38__["ScrollingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_79__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"]],
-      entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_93__["AlertDialogAgentComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_96__["EdiProfileComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_102__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_103__["EditSellerSubmissionComponent"]],
+      entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__["AlertDialogAgentComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__["EdiProfileComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EditSellerSubmissionComponent"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_22__["AuthService"], {
         provide: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["FirestoreSettingsToken"],
         useValue: {}
@@ -15589,7 +15683,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this86 = this;
+        var _this83 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -15603,8 +15697,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this86.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this86.userData));
+            _this83.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this83.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -15622,34 +15716,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignIn(email, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee27() {
+          regeneratorRuntime.mark(function _callee32() {
             var result;
-            return regeneratorRuntime.wrap(function _callee27$(_context27) {
+            return regeneratorRuntime.wrap(function _callee32$(_context32) {
               while (1) {
-                switch (_context27.prev = _context27.next) {
+                switch (_context32.prev = _context32.next) {
                   case 0:
-                    _context27.prev = 0;
-                    _context27.next = 3;
+                    _context32.prev = 0;
+                    _context32.next = 3;
                     return this.afAuth.auth.signInWithEmailAndPassword(email, password);
 
                   case 3:
-                    result = _context27.sent;
+                    result = _context32.sent;
                     this.ngZone.run(function () {}); // this.SetUserData(result.user);
 
-                    _context27.next = 10;
+                    _context32.next = 10;
                     break;
 
                   case 7:
-                    _context27.prev = 7;
-                    _context27.t0 = _context27["catch"](0);
+                    _context32.prev = 7;
+                    _context32.t0 = _context32["catch"](0);
                     window.alert("incorrect username/password");
 
                   case 10:
                   case "end":
-                    return _context27.stop();
+                    return _context32.stop();
                 }
               }
-            }, _callee27, this, [[0, 7]]);
+            }, _callee32, this, [[0, 7]]);
           }));
         } // Sign up with email/password
 
@@ -15658,33 +15752,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignUp(email, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee28() {
+          regeneratorRuntime.mark(function _callee33() {
             var result;
-            return regeneratorRuntime.wrap(function _callee28$(_context28) {
+            return regeneratorRuntime.wrap(function _callee33$(_context33) {
               while (1) {
-                switch (_context28.prev = _context28.next) {
+                switch (_context33.prev = _context33.next) {
                   case 0:
-                    _context28.prev = 0;
-                    _context28.next = 3;
+                    _context33.prev = 0;
+                    _context33.next = 3;
                     return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
 
                   case 3:
-                    result = _context28.sent;
+                    result = _context33.sent;
                     this.SetUserData(result.user);
-                    _context28.next = 10;
+                    _context33.next = 10;
                     break;
 
                   case 7:
-                    _context28.prev = 7;
-                    _context28.t0 = _context28["catch"](0);
-                    window.alert(_context28.t0.message);
+                    _context33.prev = 7;
+                    _context33.t0 = _context33["catch"](0);
+                    window.alert(_context33.t0.message);
 
                   case 10:
                   case "end":
-                    return _context28.stop();
+                    return _context33.stop();
                 }
               }
-            }, _callee28, this, [[0, 7]]);
+            }, _callee33, this, [[0, 7]]);
           }));
         } // Send email verfificaiton when new user sign up
         // async SendVerificationMail() {
@@ -15698,31 +15792,31 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ForgotPassword(passwordResetEmail) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee29() {
-            return regeneratorRuntime.wrap(function _callee29$(_context29) {
+          regeneratorRuntime.mark(function _callee34() {
+            return regeneratorRuntime.wrap(function _callee34$(_context34) {
               while (1) {
-                switch (_context29.prev = _context29.next) {
+                switch (_context34.prev = _context34.next) {
                   case 0:
-                    _context29.prev = 0;
-                    _context29.next = 3;
+                    _context34.prev = 0;
+                    _context34.next = 3;
                     return this.afAuth.auth.sendPasswordResetEmail(passwordResetEmail);
 
                   case 3:
                     window.alert("Password reset email sent, check your inbox.");
-                    _context29.next = 9;
+                    _context34.next = 9;
                     break;
 
                   case 6:
-                    _context29.prev = 6;
-                    _context29.t0 = _context29["catch"](0);
-                    window.alert(_context29.t0);
+                    _context34.prev = 6;
+                    _context34.t0 = _context34["catch"](0);
+                    window.alert(_context34.t0);
 
                   case 9:
                   case "end":
-                    return _context29.stop();
+                    return _context34.stop();
                 }
               }
-            }, _callee29, this, [[0, 6]]);
+            }, _callee34, this, [[0, 6]]);
           }));
         } // Returns true when user is looged in and email is verified
 
@@ -15750,33 +15844,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee30() {
+          regeneratorRuntime.mark(function _callee35() {
             var result;
-            return regeneratorRuntime.wrap(function _callee30$(_context30) {
+            return regeneratorRuntime.wrap(function _callee35$(_context35) {
               while (1) {
-                switch (_context30.prev = _context30.next) {
+                switch (_context35.prev = _context35.next) {
                   case 0:
-                    _context30.prev = 0;
-                    _context30.next = 3;
+                    _context35.prev = 0;
+                    _context35.next = 3;
                     return this.afAuth.auth.signInWithPopup(provider);
 
                   case 3:
-                    result = _context30.sent;
+                    result = _context35.sent;
                     this.ngZone.run(function () {});
-                    _context30.next = 10;
+                    _context35.next = 10;
                     break;
 
                   case 7:
-                    _context30.prev = 7;
-                    _context30.t0 = _context30["catch"](0);
-                    window.alert(_context30.t0);
+                    _context35.prev = 7;
+                    _context35.t0 = _context35["catch"](0);
+                    window.alert(_context35.t0);
 
                   case 10:
                   case "end":
-                    return _context30.stop();
+                    return _context35.stop();
                 }
               }
-            }, _callee30, this, [[0, 7]]);
+            }, _callee35, this, [[0, 7]]);
           }));
         }
       }, {
@@ -15784,37 +15878,37 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee31() {
-            var _this87 = this;
+          regeneratorRuntime.mark(function _callee36() {
+            var _this84 = this;
 
             var result;
-            return regeneratorRuntime.wrap(function _callee31$(_context31) {
+            return regeneratorRuntime.wrap(function _callee36$(_context36) {
               while (1) {
-                switch (_context31.prev = _context31.next) {
+                switch (_context36.prev = _context36.next) {
                   case 0:
-                    _context31.prev = 0;
-                    _context31.next = 3;
+                    _context36.prev = 0;
+                    _context36.next = 3;
                     return this.afAuth.auth.signInWithPopup(provider);
 
                   case 3:
-                    result = _context31.sent;
+                    result = _context36.sent;
                     this.ngZone.run(function () {
-                      _this87.SetUserData(result.user);
+                      _this84.SetUserData(result.user);
                     });
-                    _context31.next = 10;
+                    _context36.next = 10;
                     break;
 
                   case 7:
-                    _context31.prev = 7;
-                    _context31.t0 = _context31["catch"](0);
+                    _context36.prev = 7;
+                    _context36.t0 = _context36["catch"](0);
                     window.alert(" incorrect username/password needs to change");
 
                   case 10:
                   case "end":
-                    return _context31.stop();
+                    return _context36.stop();
                 }
               }
-            }, _callee31, this, [[0, 7]]);
+            }, _callee36, this, [[0, 7]]);
           }));
         }
         /* Setting up user data when sign in with username/password,
@@ -15840,12 +15934,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignOut() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee32() {
-            return regeneratorRuntime.wrap(function _callee32$(_context32) {
+          regeneratorRuntime.mark(function _callee37() {
+            return regeneratorRuntime.wrap(function _callee37$(_context37) {
               while (1) {
-                switch (_context32.prev = _context32.next) {
+                switch (_context37.prev = _context37.next) {
                   case 0:
-                    _context32.next = 2;
+                    _context37.next = 2;
                     return this.afAuth.auth.signOut();
 
                   case 2:
@@ -15854,10 +15948,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 4:
                   case "end":
-                    return _context32.stop();
+                    return _context37.stop();
                 }
               }
-            }, _callee32, this);
+            }, _callee37, this);
           }));
         }
       }, {
@@ -16099,35 +16193,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(PropertyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this88 = this;
+          var _this85 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this88.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this88.PropertyType = params.get("PropertyType").trim();
-            _this88.LookingTown = params.get("LookingTown").trim();
-            _this88.MinAmount = params.get("MinAmount").trim();
-            _this88.MaxAmount = params.get("MaxAmount").trim();
-            _this88.latitude = params.get("latitude");
-            _this88.longitude = params.get("longitude");
-            console.log(_this88.Lookingpostcode + " " + _this88.PropertyType + " " + _this88.LookingTown + " " + _this88.MinAmount + " " + _this88.MaxAmount);
+            _this85.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this85.PropertyType = params.get("PropertyType").trim();
+            _this85.LookingTown = params.get("LookingTown").trim();
+            _this85.MinAmount = params.get("MinAmount").trim();
+            _this85.MaxAmount = params.get("MaxAmount").trim();
+            _this85.latitude = params.get("latitude");
+            _this85.longitude = params.get("longitude");
+            console.log(_this85.Lookingpostcode + " " + _this85.PropertyType + " " + _this85.LookingTown + " " + _this85.MinAmount + " " + _this85.MaxAmount);
           }); // Fetch details
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this88.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              console.log(_this88.maxAmount);
-              _this88.less = _this88.maxAmount - _this88.maxAmount * 3 / 100;
-              _this88.more = _this88.maxAmount * 1 + _this88.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
+              _this85.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              console.log(_this85.maxAmount);
+              _this85.less = _this85.maxAmount - _this85.maxAmount * 3 / 100;
+              _this85.more = _this85.maxAmount * 1 + _this85.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
 
-              _this88.removespace = _this88.Lookingpostcode.replace(/\s/g, "");
-              _this88.listing = _this88.Lookingpostcode.replace(/\s/g, "");
-              _this88.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
+              _this85.removespace = _this85.Lookingpostcode.replace(/\s/g, "");
+              _this85.listing = _this85.Lookingpostcode.replace(/\s/g, "");
+              _this85.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this88.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this88.PropertyType && _this88.maxAmount >= _this88.MinAmount.replace(/,/g, "") && _this88.maxAmount <= _this88.MaxAmount.replace(/,/g, "")) {
-                _this88.matchedProperties.push({
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this85.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this85.PropertyType && _this85.maxAmount >= _this85.MinAmount.replace(/,/g, "") && _this85.maxAmount <= _this85.MaxAmount.replace(/,/g, "")) {
+                _this85.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id
                 }); //Use this object to populate html
@@ -16135,59 +16229,59 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (item.data().Lookingpostcode == _this88.Lookingpostcode && _this88.maxAmount != _this88.MinAmount.replace(/,/g, "") && _this88.maxAmount != _this88.MaxAmount.replace(/,/g, "") && _this88.maxAmount < _this88.MinAmount.replace(/,/g, "") && _this88.maxAmount < _this88.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this88.PropertyType && _this88.more >= _this88.MinAmount.replace(/,/g, "")) {
-                  _this88.prceMathLogic.push({
+              else if (item.data().Lookingpostcode == _this85.Lookingpostcode && _this85.maxAmount != _this85.MinAmount.replace(/,/g, "") && _this85.maxAmount != _this85.MaxAmount.replace(/,/g, "") && _this85.maxAmount < _this85.MinAmount.replace(/,/g, "") && _this85.maxAmount < _this85.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this85.PropertyType && _this85.more >= _this85.MinAmount.replace(/,/g, "")) {
+                  _this85.prceMathLogic.push({
                     detail: item.data(),
                     propertyId: item.id
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this88.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this88.PropertyType && _this88.maxAmount >= _this88.MinAmount.replace(/,/g, "") && _this88.maxAmount <= _this88.MaxAmount.replace(/,/g, "") && _this88.removespace.substring(0, 3) == _this88.listing.substring(0, 3)) {
-                    _this88.settwo.push({
+                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this85.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this85.PropertyType && _this85.maxAmount >= _this85.MinAmount.replace(/,/g, "") && _this85.maxAmount <= _this85.MaxAmount.replace(/,/g, "") && _this85.removespace.substring(0, 3) == _this85.listing.substring(0, 3)) {
+                    _this85.settwo.push({
                       detail: item.data(),
                       propertyId: item.id
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (item.data().Lookingpostcode != _this88.Lookingpostcode && item.data().PropertyType == _this88.PropertyType && _this88.more <= _this88.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                      _this88.distanceInKm = _this88.getDistanceFromLatLonInKm(_this88.latitude, _this88.longitude, item.data().latitude, item.data().longitude);
+                  else if (item.data().Lookingpostcode != _this85.Lookingpostcode && item.data().PropertyType == _this85.PropertyType && _this85.more <= _this85.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                      _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.latitude, _this85.longitude, item.data().latitude, item.data().longitude);
 
-                      _this88.unmatchedProperties.push({
+                      _this85.unmatchedProperties.push({
                         detail: item.data(),
                         propertyId: item.id,
-                        distance: _this88.distanceInKm
+                        distance: _this85.distanceInKm
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (item.data().Lookingpostcode != _this88.Lookingpostcode && item.data().PropertyType == _this88.PropertyType && _this88.less >= _this88.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                        _this88.distanceInKm = _this88.getDistanceFromLatLonInKm(_this88.latitude, _this88.longitude, item.data().latitude, item.data().longitude);
+                    else if (item.data().Lookingpostcode != _this85.Lookingpostcode && item.data().PropertyType == _this85.PropertyType && _this85.less >= _this85.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                        _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.latitude, _this85.longitude, item.data().latitude, item.data().longitude);
 
-                        _this88.unmatchedPriceLogic.push({
+                        _this85.unmatchedPriceLogic.push({
                           detail: item.data(),
                           propertyId: item.id,
-                          distance: _this88.distanceInKm
+                          distance: _this85.distanceInKm
                         });
 
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (item.data().Lookingpostcode != _this88.Lookingpostcode && item.data().PropertyType != _this88.PropertyType && item.data().LookingTown == _this88.LookingTown && item.data().latitude && item.data().longitude) {
-                          _this88.distanceInKm = _this88.getDistanceFromLatLonInKm(_this88.latitude, _this88.longitude, item.data().latitude, item.data().longitude);
-                          console.log(_this88.latitude + _this88.longitude);
+                      else if (item.data().Lookingpostcode != _this85.Lookingpostcode && item.data().PropertyType != _this85.PropertyType && item.data().LookingTown == _this85.LookingTown && item.data().latitude && item.data().longitude) {
+                          _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.latitude, _this85.longitude, item.data().latitude, item.data().longitude);
+                          console.log(_this85.latitude + _this85.longitude);
 
-                          _this88.lookTown.push({
+                          _this85.lookTown.push({
                             detail: item.data(),
                             propertyId: item.id,
-                            distance: _this88.distanceInKm
+                            distance: _this85.distanceInKm
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this88.unmatchedProperties.sort(_this88.compare);
+            _this85.unmatchedProperties.sort(_this85.compare);
           });
           this.getExpressedListingIds();
         }
@@ -16283,15 +16377,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this89 = this;
+          var _this86 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this89.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this89.distinctExpressedUid.push(item.data().propertyId);
+              if (_this86.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this86.distinctExpressedUid.push(item.data().propertyId);
               }
             });
-            console.log(_this89.distinctExpressedUid);
+            console.log(_this86.distinctExpressedUid);
           });
         }
       }, {
@@ -16531,19 +16625,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this90 = this;
+          var _this87 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this90.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this90.userData));
+              _this87.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this87.userData));
 
-              _this90.LoggedIn();
+              _this87.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this90.LoggedOut();
+              _this87.LoggedOut();
             }
           });
         }
@@ -16562,44 +16656,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this91 = this;
+          var _this88 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this91.isLoading = false;
+            _this88.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this92 = this;
+          var _this89 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this92.isLoading = false;
+            _this89.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this93 = this;
+          var _this90 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this93.isLoading = false;
+            _this90.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this94 = this;
+          var _this91 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this94.isLoading = false;
+            _this91.isLoading = false;
           });
         }
       }, {
@@ -16621,16 +16715,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this95 = this;
+          var _this92 = this;
 
           console.log(displayName);
           this.overlay = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this95.isLoading = false;
-            _this95.user.Name = displayName;
-            _this95.user.DOB = null;
-            _this95.user.Phone = null;
-            _this95.return = _this95.FormService.createUserCustomer(_this95.user).then(function (data) {
+            _this92.isLoading = false;
+            _this92.user.Name = displayName;
+            _this92.user.DOB = null;
+            _this92.user.Phone = null;
+            _this92.return = _this92.FormService.createUserCustomer(_this92.user).then(function (data) {
               console.log(data);
             });
           });
