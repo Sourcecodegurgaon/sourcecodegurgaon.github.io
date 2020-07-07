@@ -2738,16 +2738,6 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                         data: { message: "Please Select MinAmount" }
                     });
                 }
-                else if (this.listingBuyer.MinAmount > this.listingBuyer.MaxAmount) {
-                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Minimum price should be less than max price" }
-                    });
-                }
-                else if (this.listingBuyer.MaxAmount > this.listingBuyer.MinAmount) {
-                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Maximum price should be more than minimum price" }
-                    });
-                }
                 else if (this.listingBuyer.MaxAmount == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                         data: { message: "Please Select MaxAmount" }
