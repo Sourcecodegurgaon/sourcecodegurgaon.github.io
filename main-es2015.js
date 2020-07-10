@@ -1057,7 +1057,7 @@ let HomeComponent = class HomeComponent {
         this.myrequirement_service = myrequirement_service;
         this.selectedIndex = 0;
         this.maxNumberOfTabs = 2;
-        this.isLoggedIn = true;
+        this.isLoggedIn = false;
         this.isLoading = false;
         this.cookie = true;
         this.propertyRequirementDetails = [];
@@ -1085,12 +1085,13 @@ let HomeComponent = class HomeComponent {
                 this.userData = user;
                 localStorage.setItem("user", JSON.stringify(this.userData));
                 this.LoggedIn();
+                this.isLoggedIn = true;
             }
             else {
                 localStorage.setItem("user", null);
                 JSON.parse(localStorage.getItem("user"));
                 this.LoggedOut();
-                this.checkMatches = false;
+                this.isLoggedIn = false;
             }
         });
     }

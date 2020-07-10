@@ -1893,7 +1893,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.myrequirement_service = myrequirement_service;
         this.selectedIndex = 0;
         this.maxNumberOfTabs = 2;
-        this.isLoggedIn = true;
+        this.isLoggedIn = false;
         this.isLoading = false;
         this.cookie = true;
         this.propertyRequirementDetails = [];
@@ -1925,13 +1925,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               localStorage.setItem("user", JSON.stringify(_this.userData));
 
               _this.LoggedIn();
+
+              _this.isLoggedIn = true;
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
               _this.LoggedOut();
 
-              _this.checkMatches = false;
+              _this.isLoggedIn = false;
             }
           });
         }
