@@ -13918,6 +13918,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.getMatchCases();
           this.navLogin = false;
+          this._router.navigate["/"];
         }
       }, {
         key: "LoggedOut",
@@ -14035,6 +14036,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
             _this85.isLoading = false;
+            window.location.reload();
           });
         } //Signup Google
 
@@ -14048,6 +14050,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             _this86.isLoading = false;
 
             _this86.initProfile();
+
+            window.location.reload();
           });
         }
       }, {
@@ -14060,6 +14064,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             _this87.isLoading = false;
 
             _this87.initProfile();
+
+            window.location.reload();
           });
         }
       }, {
@@ -14094,6 +14100,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 _this88.isLoading = false;
 
                 _this88.initProfile();
+
+                window.location.reload();
               } else {
                 _this88.isLoading = false;
               }
@@ -17058,9 +17066,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 2:
                     localStorage.removeItem("user");
+                    window.location.reload();
                     this.router.navigate(["/"]);
 
-                  case 4:
+                  case 5:
                   case "end":
                     return _context37.stop();
                 }

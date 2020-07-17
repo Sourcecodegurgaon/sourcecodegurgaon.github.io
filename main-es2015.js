@@ -9214,6 +9214,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.uid = this.user.uid;
         this.getMatchCases();
         this.navLogin = false;
+        this._router.navigate["/"];
     }
     LoggedOut() {
         this.isLoggedIn = false;
@@ -9299,6 +9300,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.isLoading = true;
         this.authService.GoogleAuth().then(data => {
             this.isLoading = false;
+            window.location.reload();
         });
     }
     //Signup Google
@@ -9307,6 +9309,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.authService.GoogleAuthSignup().then(data => {
             this.isLoading = false;
             this.initProfile();
+            window.location.reload();
         });
     }
     signIn(email, pass) {
@@ -9314,6 +9317,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.authService.SignIn(email, pass).then(data => {
             this.isLoading = false;
             this.initProfile();
+            window.location.reload();
         });
     }
     NewUser() {
@@ -9338,6 +9342,7 @@ let NavigationBarComponent = class NavigationBarComponent {
                 if (this.user != null) {
                     this.isLoading = false;
                     this.initProfile();
+                    window.location.reload();
                 }
                 else {
                     this.isLoading = false;
@@ -10913,6 +10918,7 @@ let AuthService = class AuthService {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             yield this.afAuth.auth.signOut();
             localStorage.removeItem("user");
+            window.location.reload();
             this.router.navigate(["/"]);
         });
     }
