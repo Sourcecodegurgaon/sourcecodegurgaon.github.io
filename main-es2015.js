@@ -8527,23 +8527,24 @@ let SelectAgentComponent = class SelectAgentComponent {
         this.disable = true;
         this.agents = [];
         this.now = new Date();
+        this.sellerProperty = [];
     }
     ngOnInit() {
         this.user = JSON.parse(localStorage.getItem("user"));
         this.uid = this.user.uid;
         this.sub = this._Activatedroute.paramMap.subscribe((params) => {
-            this.Lookingpostcode = params.get("Lookingpostcode");
+            this.Lookingpostcode = params.get("Lookingpostcode").trim();
             this.Lookingstate = params.get("Lookingstate");
             this.LookingAddress = params.get("LookingAddress");
             this.norooms = params.get("Roomsmax");
             this.PropertyCondition = params.get("PropertyCondition");
             this.MaxAmount = params.get("MaxAmount");
-            this.PropertyType = params.get("PropertyType");
+            this.PropertyType = params.get("PropertyType").trim();
             this.ownership = params.get("ownership");
             this.features = params.get("features");
             this.propertyId = params.get("propertyId");
             this.UserId = params.get("userId").trim();
-            console.log(this.UserId);
+            console.log(this.Lookingpostcode);
         });
         this.AgentService.getAgent(this.uid).subscribe((ref) => {
             ref.forEach(elements => {
@@ -8552,9 +8553,23 @@ let SelectAgentComponent = class SelectAgentComponent {
         });
         this.AgentService.getMatchesSellerProperties(this.UserId).then((res) => {
             res.forEach((element) => {
-                this.sellerProperty = element.data();
-                // this.Amount = this.sellerProperty.MaxAmount
-                // console.log(this.Amount)
+                this.sellerProperty.push(element.data());
+                console.log(element.data().Lookingpostcode.replace(/\s/g, ""));
+                if (this.Lookingpostcode == element.data().Lookingpostcode.replace(/\s/g, "") && this.PropertyType == element.data().PropertyType) {
+                    this.sellerPropertyLookingAddress = element.data().LookingAddress.replace(/\s/g, "");
+                    this.sellerPropertyLookingTown = element.data().LookingTown.replace(/\s/g, "");
+                    this.sellerPropertyLookingpostcode = element.data().Lookingpostcode.replace(/\s/g, "");
+                    this.sellerPropertyLookingstate = element.data().Lookingstate.replace(/\s/g, "");
+                    this.sellerPropertyMaxAmount = element.data().MaxAmount.replace(/\s/g, "");
+                    this.sellerPropertyMaxbathrooms = element.data().Maxbathrooms.replace(/\s/g, "");
+                    this.sellerPropertyMaxreception = element.data().Maxreception.replace(/\s/g, "");
+                    this.sellerPropertyMaxrooms = element.data().Maxrooms.replace(/\s/g, "");
+                    this.sellerPropertyPropertyCondition = element.data().PropertyCondition.replace(/\s/g, "");
+                    this.sellerPropertyPropertyType = element.data().PropertyType;
+                    this.sellerPropertyUserId = element.data().UserId;
+                    this.sellerPropertyfeatures = element.data().features.replace(/\s/g, "");
+                    this.sellerPropertyownership = element.data().ownership.replace(/\s/g, "");
+                }
             });
         });
     }
@@ -8593,22 +8608,23 @@ let SelectAgentComponent = class SelectAgentComponent {
         });
     }
     createBuyerEntry() {
-        // this.matchesBuyer = {
-        //   LookingAddress: this.sellerProperty.LookingAddress,
-        //   LookingTown: this.sellerProperty.LookingTown,
-        //   Lookingpostcode: this.sellerProperty.Lookingpostcode,
-        //   Lookingstate: this.sellerProperty.Lookingstate,
-        //   MaxAmount: this.sellerProperty.MaxAmount,
-        //   Maxbathrooms: this.sellerProperty.Maxbathrooms,
-        //   Maxreception: this.sellerProperty.Maxreception,
-        //   Roomsmax: this.sellerProperty.Maxrooms,
-        //   PropertyCondition: this.sellerProperty.PropertyCondition,
-        //   PropertyType: this.sellerProperty.PropertyType,
-        //   UserId: this.sellerProperty.UserId,
-        //   features: this.sellerProperty.features,
-        //   matchStatus: "confirm_interest",
-        //   ownership: this.sellerProperty.ownership, 
-        // };
+        this.matchesBuyer = {
+            LookingAddress: this.sellerPropertyLookingAddress,
+            LookingTown: this.sellerPropertyLookingTown,
+            Lookingpostcode: this.sellerPropertyLookingpostcode,
+            Lookingstate: this.sellerPropertyLookingstate,
+            MaxAmount: this.sellerPropertyMaxAmount,
+            Maxbathrooms: this.sellerPropertyMaxbathrooms,
+            Maxbathroom: this.sellerPropertyMaxbathrooms,
+            Maxreception: this.sellerPropertyMaxreception,
+            Roomsmax: this.sellerPropertyMaxrooms,
+            PropertyCondition: this.sellerPropertyPropertyCondition,
+            PropertyType: this.sellerPropertyPropertyType,
+            UserId: this.sellerPropertyUserId,
+            features: this.sellerPropertyfeatures,
+            matchStatus: "confirm_interest",
+            ownership: this.sellerPropertyownership,
+        };
         this.return = this.AgentService
             .matchesBuyerCreate(this.UserId, this.matchesBuyer)
             .then((data) => {
@@ -8818,7 +8834,7 @@ let SellerMatchesComponent = class SellerMatchesComponent {
             if (data == true) {
             }
             this.createSellerNotification();
-            this._router.navigate(["/selectAgent/" + this.Lookingpostcode + "/" + this.Lookingstate + "/" + this.LookingAddress + "/" + this.norooms + "/" + this.PropertyCondition + "/" + this.MaxAmount + "/" + this.PropertyType + "/" + this.ownership + "/" + this.features + "/" + this.propertyId + "/" + this.UserId]);
+            this._router.navigate(["/selectAgent/" + this.Lookingpostcode + "/" + this.Lookingstate + "/" + this.LookingAddress + "/" + this.norooms + "/" + this.PropertyCondition + "/" + this.MaxAmount + "/" + this.Type + "/" + this.ownership + "/" + this.features + "/" + this.propertyId + "/" + this.UserId]);
         });
     }
     createSellerNotification() {

@@ -12742,6 +12742,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.disable = true;
         this.agents = [];
         this.now = new Date();
+        this.sellerProperty = [];
       }
 
       _createClass(SelectAgentComponent, [{
@@ -12752,18 +12753,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this73.Lookingpostcode = params.get("Lookingpostcode");
+            _this73.Lookingpostcode = params.get("Lookingpostcode").trim();
             _this73.Lookingstate = params.get("Lookingstate");
             _this73.LookingAddress = params.get("LookingAddress");
             _this73.norooms = params.get("Roomsmax");
             _this73.PropertyCondition = params.get("PropertyCondition");
             _this73.MaxAmount = params.get("MaxAmount");
-            _this73.PropertyType = params.get("PropertyType");
+            _this73.PropertyType = params.get("PropertyType").trim();
             _this73.ownership = params.get("ownership");
             _this73.features = params.get("features");
             _this73.propertyId = params.get("propertyId");
             _this73.UserId = params.get("userId").trim();
-            console.log(_this73.UserId);
+            console.log(_this73.Lookingpostcode);
           });
           this.AgentService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
@@ -12772,8 +12773,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           });
           this.AgentService.getMatchesSellerProperties(this.UserId).then(function (res) {
             res.forEach(function (element) {
-              _this73.sellerProperty = element.data(); // this.Amount = this.sellerProperty.MaxAmount
-              // console.log(this.Amount)
+              _this73.sellerProperty.push(element.data());
+
+              console.log(element.data().Lookingpostcode.replace(/\s/g, ""));
+
+              if (_this73.Lookingpostcode == element.data().Lookingpostcode.replace(/\s/g, "") && _this73.PropertyType == element.data().PropertyType) {
+                _this73.sellerPropertyLookingAddress = element.data().LookingAddress.replace(/\s/g, "");
+                _this73.sellerPropertyLookingTown = element.data().LookingTown.replace(/\s/g, "");
+                _this73.sellerPropertyLookingpostcode = element.data().Lookingpostcode.replace(/\s/g, "");
+                _this73.sellerPropertyLookingstate = element.data().Lookingstate.replace(/\s/g, "");
+                _this73.sellerPropertyMaxAmount = element.data().MaxAmount.replace(/\s/g, "");
+                _this73.sellerPropertyMaxbathrooms = element.data().Maxbathrooms.replace(/\s/g, "");
+                _this73.sellerPropertyMaxreception = element.data().Maxreception.replace(/\s/g, "");
+                _this73.sellerPropertyMaxrooms = element.data().Maxrooms.replace(/\s/g, "");
+                _this73.sellerPropertyPropertyCondition = element.data().PropertyCondition.replace(/\s/g, "");
+                _this73.sellerPropertyPropertyType = element.data().PropertyType;
+                _this73.sellerPropertyUserId = element.data().UserId;
+                _this73.sellerPropertyfeatures = element.data().features.replace(/\s/g, "");
+                _this73.sellerPropertyownership = element.data().ownership.replace(/\s/g, "");
+              }
             });
           });
         }
@@ -12827,22 +12845,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "createBuyerEntry",
         value: function createBuyerEntry() {
-          // this.matchesBuyer = {
-          //   LookingAddress: this.sellerProperty.LookingAddress,
-          //   LookingTown: this.sellerProperty.LookingTown,
-          //   Lookingpostcode: this.sellerProperty.Lookingpostcode,
-          //   Lookingstate: this.sellerProperty.Lookingstate,
-          //   MaxAmount: this.sellerProperty.MaxAmount,
-          //   Maxbathrooms: this.sellerProperty.Maxbathrooms,
-          //   Maxreception: this.sellerProperty.Maxreception,
-          //   Roomsmax: this.sellerProperty.Maxrooms,
-          //   PropertyCondition: this.sellerProperty.PropertyCondition,
-          //   PropertyType: this.sellerProperty.PropertyType,
-          //   UserId: this.sellerProperty.UserId,
-          //   features: this.sellerProperty.features,
-          //   matchStatus: "confirm_interest",
-          //   ownership: this.sellerProperty.ownership, 
-          // };
+          this.matchesBuyer = {
+            LookingAddress: this.sellerPropertyLookingAddress,
+            LookingTown: this.sellerPropertyLookingTown,
+            Lookingpostcode: this.sellerPropertyLookingpostcode,
+            Lookingstate: this.sellerPropertyLookingstate,
+            MaxAmount: this.sellerPropertyMaxAmount,
+            Maxbathrooms: this.sellerPropertyMaxbathrooms,
+            Maxbathroom: this.sellerPropertyMaxbathrooms,
+            Maxreception: this.sellerPropertyMaxreception,
+            Roomsmax: this.sellerPropertyMaxrooms,
+            PropertyCondition: this.sellerPropertyPropertyCondition,
+            PropertyType: this.sellerPropertyPropertyType,
+            UserId: this.sellerPropertyUserId,
+            features: this.sellerPropertyfeatures,
+            matchStatus: "confirm_interest",
+            ownership: this.sellerPropertyownership
+          };
           this.return = this.AgentService.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {}
           });
@@ -13206,7 +13225,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
             _this77.createSellerNotification();
 
-            _this77._router.navigate(["/selectAgent/" + _this77.Lookingpostcode + "/" + _this77.Lookingstate + "/" + _this77.LookingAddress + "/" + _this77.norooms + "/" + _this77.PropertyCondition + "/" + _this77.MaxAmount + "/" + _this77.PropertyType + "/" + _this77.ownership + "/" + _this77.features + "/" + _this77.propertyId + "/" + _this77.UserId]);
+            _this77._router.navigate(["/selectAgent/" + _this77.Lookingpostcode + "/" + _this77.Lookingstate + "/" + _this77.LookingAddress + "/" + _this77.norooms + "/" + _this77.PropertyCondition + "/" + _this77.MaxAmount + "/" + _this77.Type + "/" + _this77.ownership + "/" + _this77.features + "/" + _this77.propertyId + "/" + _this77.UserId]);
           });
         }
       }, {
