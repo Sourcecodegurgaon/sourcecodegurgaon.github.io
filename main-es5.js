@@ -61,7 +61,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<app-home-matches *ngIf=\"appMatches\"></app-home-matches>  \n\n\n\n<div class=\"home_content_container\" *ngIf=\"!isLoggedIn\">\n\n\n  <div class=\"slider\">\n    <img src=\"../../assets/Images/baby-touching-woman-s-face-1257110 (1).jpg\" alt=\"\"  class=\"slider-image\">\n\n     <div class=\"text-over-image heading-nestimate\">Join <span class=\"light\">Free</span> Today!</div>\n   \n    </div>\n  \n\n<mat-card class=\"radio-cn\">\n  <div class=\"custom-buttons\">\n    <p class=\"i-am\">I am</p>\n    <div class=\"upper-custom-button\">\n    \n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home owner\n        <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    </div>\n  \n    </div>\n\n  <div class=\"upper-custom-button mt-2\">\n\n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home seeker\n        <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home2\">\n        <span class=\"checkmark\"></span>\n      </label>\n    \n    </div>\n  </div>\n      <div class=\"large-button mt-3\">\n      \n        <div class=\"create-nestimate\" (click)=\"homeradio()\">\n          <span class=\"text-create-nestimate mr-1\">Create Your</span>\n          <img src=\"../../assets/Images/Nestimatelogobutton.png\" class=\"button-image\" >\n        </div>\n      </div>\n  </div>\n</mat-card>\n\n<mat-card class=\"second-card\" *ngIf=\"!isLoggedIn\">\n <div class=\"image-over\">\n\n   <img mat-card-image src=\"../../assets/Images/buyer.jpg\" class=\"buyer-jpg\">\n   <p class=\"text-over-image-second\">Introducing:a unique property platform</p>\n </div>\n\n  <mat-card-content>\n    <p class=\"text-center pt-2 pr-3 pl-3 home-text-font heading-nestimate\">\n      Create Your Nestimate free of any committment, to answer an immediate need or gently explore the possibilities of dreams\n    </p>\n\n  </mat-card-content>\n</mat-card>\n  \n\n\n\n\n  <mat-card class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n    <mat-card-title class=\"title heading-nestimate heading-nestimate-font\">How does Nestimate work ?</mat-card-title>\n\n      <div class=\"steps-container\">\n\n           <div class=\"step\">\n            <img src=\"../../assets/Images/firststep1.png\" class=\"step-mage\">\n        \n            <p class=\"step-text \"><b class=\"outputText\">1.Create your Nestimate </b><br> <span class=\"slider-text  heading-nestimate\">Open a world of possibilities! Create Nestimates on our platform by defining your home requirements through our simple online questionnaire.</span></p>\n\n           </div>\n\n           <div class=\"step\">\n            <img src=\"/assets/Images/secondstep.png\" class=\"step-mage\">\n         \n            <p class=\"step-text\"><b class=\"outputText\">2.Review matched Nestimates</b><br><span class=\"slider-text heading-nestimate\">If you are a home owner, our unique algorithm will match you with the most relevant Nestimates by home seekers.\n            </span></p>\n            \n            \n            <p class=\"slider-text heading-nestimate\">If you are a home seeker we will match you with Nestimates created by home owners, who may not be actively on the market but might consider selling or renting their property if the right offer came along. .</p>\n      </div>\n\n\n           <div class=\"step\">\n            <img src=\"/assets/Images/thirdstep.png\" class=\"step-mage\">\n        \n            <p class=\"step-text\"><b class=\"outputText\">3.Express Interest</b><br><span class=\"slider-text heading-nestimate\">Should you want to take things further, you can express interest on matched Nestimates. If the match is mutually agreed, a local estate agent of your choice will sort out the formalities.</span></p>\n           </div>\n      </div>\n  </mat-card>\n\n\n\n\n</div>\n\n\n<div  class=\"agent-form\" >\n  <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/agentSignup\">Agent</button>\n</div>\n\n<div class=\"cookies-policy\" *ngIf=\"cookie\"> \n<div class=\"cookies-policy-text\">\n<div class=\"policy-heading outputText\">\n\n  <p clas=\"policy-heading \">Cookie Policy</p>\n  <!-- <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"closeCookie()\"> -->\n</div>\n\n  <div class=\"policy-content outputText\">\n    <p>We use cookies to provide you with a better service. Continue browsing if you are happy with this, otherwise you can find out how to manage cookies here.</p>\n  </div>\n\n  <div class=\"cookies-button\">\n \n    <div class=\"top-button-cookies\" routerLink=\"/cookies\">Manage Settings</div>\n\n    <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\">Allow all Cookies</div>\n\n  </div>\n</div>\n\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<app-home-matches *ngIf=\"appMatches\"></app-home-matches>  \n\n\n<div class=\"home_content_container\" *ngIf=\"!isLoggedIn\">\n\n\n  <div class=\"slider\">\n    <img src=\"../../assets/Images/baby-touching-woman-s-face-1257110 (1).jpg\" alt=\"\"  class=\"slider-image\">\n\n     <div class=\"text-over-image heading-nestimate\">Join <span class=\"light\">Free</span> Today!</div>\n   \n    </div>\n  \n\n<mat-card class=\"radio-cn\">\n  <div class=\"custom-buttons\">\n    <p class=\"i-am\">I am</p>\n    <div class=\"upper-custom-button\">\n    \n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home owner\n        <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    </div>\n  \n    </div>\n\n  <div class=\"upper-custom-button mt-2\">\n\n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home seeker\n        <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home2\">\n        <span class=\"checkmark\"></span>\n      </label>\n    \n    </div>\n  </div>\n      <div class=\"large-button mt-3\">\n      \n        <div class=\"create-nestimate\" (click)=\"homeradio()\">\n          <span class=\"text-create-nestimate mr-1\">Create Your</span>\n          <img src=\"../../assets/Images/Nestimatelogobutton.png\" class=\"button-image\" >\n        </div>\n      </div>\n  </div>\n</mat-card>\n\n<mat-card class=\"second-card\" *ngIf=\"!isLoggedIn\">\n <div class=\"image-over\">\n\n   <img mat-card-image src=\"../../assets/Images/buyer.jpg\" class=\"buyer-jpg\">\n   <p class=\"text-over-image-second\">Introducing:a unique property platform</p>\n </div>\n\n  <mat-card-content>\n    <p class=\"text-center pt-2 pr-3 pl-3 home-text-font heading-nestimate\">\n      Create Your Nestimate free of any committment, to answer an immediate need or gently explore the possibilities of dreams\n    </p>\n\n  </mat-card-content>\n</mat-card>\n  \n\n\n\n\n  <mat-card class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n    <mat-card-title class=\"title heading-nestimate heading-nestimate-font\">How does Nestimate work ?</mat-card-title>\n\n      <div class=\"steps-container\">\n\n           <div class=\"step\">\n            <img src=\"../../assets/Images/firststep1.png\" class=\"step-mage\">\n        \n            <p class=\"step-text \"><b class=\"outputText\">1.Create your Nestimate </b><br> <span class=\"slider-text  heading-nestimate\">Open a world of possibilities! Create Nestimates on our platform by defining your home requirements through our simple online questionnaire.</span></p>\n\n           </div>\n\n           <div class=\"step\">\n            <img src=\"/assets/Images/secondstep.png\" class=\"step-mage\">\n         \n            <p class=\"step-text\"><b class=\"outputText\">2.Review matched Nestimates</b><br><span class=\"slider-text heading-nestimate\">If you are a home owner, our unique algorithm will match you with the most relevant Nestimates by home seekers.\n            </span></p>\n            \n            \n            <p class=\"slider-text heading-nestimate\">If you are a home seeker we will match you with Nestimates created by home owners, who may not be actively on the market but might consider selling or renting their property if the right offer came along. .</p>\n      </div>\n\n\n           <div class=\"step\">\n            <img src=\"/assets/Images/thirdstep.png\" class=\"step-mage\">\n        \n            <p class=\"step-text\"><b class=\"outputText\">3.Express Interest</b><br><span class=\"slider-text heading-nestimate\">Should you want to take things further, you can express interest on matched Nestimates. If the match is mutually agreed, a local estate agent of your choice will sort out the formalities.</span></p>\n           </div>\n      </div>\n  </mat-card>\n\n\n\n\n</div>\n\n\n<div  class=\"agent-form\" >\n  <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/agentSignup\">Agent</button>\n</div>\n\n<div class=\"cookies-policy\" *ngIf=\"cookie\"> \n<div class=\"cookies-policy-text\">\n<div class=\"policy-heading outputText\">\n\n  <p clas=\"policy-heading \">Cookie Policy</p>\n  <!-- <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"closeCookie()\"> -->\n</div>\n\n  <div class=\"policy-content outputText\">\n    <p>We use cookies to provide you with a better service. Continue browsing if you are happy with this, otherwise you can find out how to manage cookies here.</p>\n  </div>\n\n  <div class=\"cookies-button\">\n \n    <div class=\"top-button-cookies\" routerLink=\"/cookies\">Manage Settings</div>\n\n    <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\">Allow all Cookies</div>\n\n  </div>\n</div>\n\n</div>";
     /***/
   },
 
@@ -341,7 +341,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>Full name</mat-label>\n          <input matInput #first  name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first name=\"company\"  [(ngModel)]=\"agentSignup.company\">\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"postcode\"  [(ngModel)]=\"agentSignup.postcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first  name=\"address\" [(ngModel)]=\"agentSignup.address\">\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\">\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first name=\"phone\" [(ngModel)]=\"agentSignup.phone\" >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            <input matInput #first name=\"email\"  [(ngModel)]=\"agentSignup.email\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\">\n          </mat-form-field>\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\">\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n      \n          \n</div>\n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\" (click)=\"submitForm()\">Start My Free 3-Month Trial Now</button>\n</div>\n    </form>\n</mat-card>\n</div>";
+    __webpack_exports__["default"] = "\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n <mat-card class=\"mat-card-item\">\n\n  <div class=\"heading-signup heading-nestimate\">Please fill your company details</div> \n </mat-card>   \n<mat-card class=\"mat-card-item\">\n    <form>\n        <mat-form-field class=\"full-width\">\n          <mat-label>Full name</mat-label>\n          <input matInput   name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\">\n            <mat-label>Company Name</mat-label>\n            <input matInput #first name=\"company\"  [(ngModel)]=\"agentSignup.company\">\n          </mat-form-field>\n\n\n          <div class=\"full-width mb-4\">\n          <mat-option style=\"background-color: #F5F5F5;\">\n            <input type=\"text\" placeholder=\"Enter Postcode\"\n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\"\n             name=\"postcode\"  [(ngModel)]=\"agentSignup.postcode\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\">\n              <mat-option  [value]=\"item\">\n              </mat-option>\n            </mat-autocomplete>\n          </mat-option>\n        </div>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Address</mat-label>\n            <input matInput #first  name=\"address\" [(ngModel)]=\"agentSignup.address\">\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Job title</mat-label>\n            <input matInput #first  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\">\n          </mat-form-field>\n         \n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Phone Number</mat-label>\n            <input matInput #first name=\"phone\" [(ngModel)]=\"agentSignup.phone\" >\n          </mat-form-field>\n\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Email address</mat-label>\n            \n            <input matInput  placeholder=\"Ex. pat@example.com\" [(ngModel)]=\"agentSignup.email\" name=\"email\">\n          </mat-form-field>\n\n\n          <mat-form-field class=\"full-width\">\n            <mat-label>Enter your password</mat-label>\n            <input matInput [type]=\"hide ? 'password' : 'text'\"   name=\"password\"  [(ngModel)]=\"agentSignup.password\">\n            <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            </button>\n          </mat-form-field>\n         \n          <mat-form-field class=\"full-width\">\n            <mat-label>Sole Agency Fees</mat-label>\n            <input matInput #first  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\">\n          </mat-form-field>\n          \n          <mat-form-field class=\"full-width\">\n            <mat-label>Multiple Agency Fees</mat-label>\n            <input matInput #first  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\">\n          </mat-form-field>\n          <label style=\"color:white\">Upload Image</label>\n<div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg,.jpeg\"  name=\"image\" >\n      \n\n          \n</div>\n<div class=\"submit-button\">\n<button mat-raised-button color=\"primary\" (click)=\"submitForm(agentSignup.fullname,agentSignup.email,agentSignup.password)\">Start My Free 3-Month Trial Now</button>\n</div>\n    </form>\n</mat-card>\n</div>";
     /***/
   },
 
@@ -701,7 +701,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container\">\n    <mat-card-title class=\"title-agent-selection heading-nestimate\">Agent Selection</mat-card-title>\n\n\n    <mat-card class=\"mt-2 dark-background\">\n        <mat-card-title class=\"note-agent-selection heading-nestimate\">\n            You are nearly there! To complete the final step - select a local estate agent from the list below. They\n            will be in touch after receiving details of the Nestimate\n        </mat-card-title>\n\n\n        <div class=\"mandatory\">\n\n\n            <div class=\"mandatory-text heading-nestimate\">I consent my details being sent to the selected estate agent\n                and their partners to they can contact me.</div>\n\n            <div class=\"mandatory-slide\">\n                <mat-slide-toggle (click)=\"Acceptterms()\" *ngIf=\"disable\"></mat-slide-toggle>\n                <mat-slide-toggle (click)=\"uncheckterms()\" checked *ngIf=\"!disable\"></mat-slide-toggle>\n        </div>\n    </div>\n    </mat-card>\n\n\n  \n    <mat-card class=\"mt-4 p-0 dark-background mb-3\" *ngFor=\"let agent of agents\">\n        <div class=\"agent-selection-radiobutton-container\">\n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"{{agent.image}}\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">{{agent.company}}</div>\n                    <div class=\"dexter-address heading-nestimate\">{{agent.address}}</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        {{agent.solefees}}%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        {{agent.multiplefees}}%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\"   *ngIf=\"accepted\" (click)=\"createSellerNotification()\" >Select Agent</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\" *ngIf=\"!accepted\" disabled>Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card>\n\n    <!-- <mat-card class=\"mt-2 p-0 dark-background mb-2\">\n        <div class=\"agent-selection-radiobutton-container\">\n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"../../../../assets/Images/brinkley.jpg\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">Brinkle</div>\n                    <div class=\"dexter-address heading-nestimate\">C-131, Ashok Vihar, Phase</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        1.50%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        1.75%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\"  *ngIf=\"accepted\">Select Agent</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\" *ngIf=\"!accepted\" disabled>Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card> -->\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container\">\n    <mat-card-title class=\"title-agent-selection heading-nestimate\">Agent Selection</mat-card-title>\n\n\n    <mat-card class=\"mt-2 dark-background\">\n        <mat-card-title class=\"note-agent-selection heading-nestimate\">\n            You are nearly there! To complete the final step - select a local estate agent from the list below. They\n            will be in touch after receiving details of the Nestimate\n        </mat-card-title>\n\n\n        <div class=\"mandatory\">\n\n\n            <div class=\"mandatory-text heading-nestimate\">I consent my details being sent to the selected estate agent\n                and their partners to they can contact me.</div>\n\n            <div class=\"mandatory-slide\">\n                <mat-slide-toggle (click)=\"Acceptterms()\" *ngIf=\"disable\"></mat-slide-toggle>\n                <mat-slide-toggle (click)=\"uncheckterms()\" checked *ngIf=\"!disable\"></mat-slide-toggle>\n        </div>\n    </div>\n    </mat-card>\n\n\n  \n    <mat-card class=\"mt-4 p-0 dark-background mb-3\" *ngFor=\"let agent of agents\">\n        <div class=\"agent-selection-radiobutton-container\" *ngIf=\"agent.verified == true\">\n       \n\n            <div class=\"agent-selection-name\">\n                <div class=\"image-agent-section\">\n                    <img src=\"{{agent.image}}\" class=\"agent-image\">\n                </div>\n                <div class=\"agent-address-section\">\n                    <div class=\"company-name heading-nestimate\">{{agent.company}}</div>\n                    <div class=\"dexter-address heading-nestimate\">{{agent.address}}</div>\n                </div>\n            </div>\n            <div class=\"agent-selection-commision\">\n\n                <div class=\"agency-text mb-1\">\n                    <div class=\"sole-agency-fees heading-nestimate\">\n                        Sole agency Fees</div>\n\n                    <div class=\"Multiple-agency-fees heading-nestimate\">\n                        Multiple agency Fees</div>\n                </div>\n\n                <div class=\"agency-percentage mb-1\">\n                    <div class=\"sole-agency-percen heading-nestimate\">\n                        {{agent.solefees}}%</div>\n\n                    <div class=\"Multiple-agency-percen  heading-nestimate\">\n                        {{agent.multiplefees}}%</div>\n                </div>\n\n            </div>\n\n            <div class=\"agent-selction buttons\">\n                <button mat-raised-button color=\"primary\">Read Reviews</button>\n                <button mat-raised-button color=\"primary\"   *ngIf=\"accepted\" (click)=\"createSellerNotification()\" >Select Agent</button>\n                <button mat-raised-button color=\"primary\" routerLink=\"/mymatches\" *ngIf=\"!accepted\" disabled>Select Agent</button>\n\n            </div>\n        </div>\n\n    </mat-card>\n\n  \n      \n</div>";
     /***/
   },
 
@@ -1042,6 +1042,46 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
     __webpack_exports__["default"] = "<div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <div class=\"nestimate_by\">\n\n        <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n      </div>\n\n\n      <div class=\"netimate-content\">\n        <div class=\"nestimate-image\">\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n        </div>\n        <span class=\"buy-option\" >\n          <div class=\"nestimate-price-range\">\n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n            <br>\n            <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n          </div>\n          <div class=\"nestimate-content\">\n            <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                class=\"outputText\">{{property.distance | number:'1.1-1'}}</span></div>\n            <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n          </div>\n        </span>\n\n\n        <div class=\"button-container\">\n          <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n              {{property.detail.Lookingstate}}/\n              {{property.detail.LookingTown}}/\n              {{property.detail.PropertyCondition}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.LookingAddress}}/\n              {{property.detail.ownership}}/\n              {{property.detail.PropertyType}}/\n              {{property.detail.features}}/\n          {{property.detail.UserId}}/\n          {{property.detail.Maxbathrooms}}/\n          {{property.detail.Maxrooms}}/\n          {{property.detail.Maxreception}}/\n          {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n              &gt;</span></div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n\n  <!--Expressed-->\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <div class=\"nestimate_by\">\n\n        <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n      </div>\n      <div class=\"netimate-content-expressed\">\n\n        <div class=\"nestimate-image\">\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n        </div>\n        <span class=\"buy-option\">\n          <div class=\"nestimate-price-range\">\n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n            <br>\n            <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n          </div>\n          <div class=\"nestimate-content\">\n            <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                class=\"outputText\">{{property.distance | number:'1.1-1'}}</span></div>\n            <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n          </div>\n        </span>\n        <div class=\"button-container\">\n          <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_Radius}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n              {{property.detail.Lookingstate}}/\n              {{property.detail.LookingTown}}/\n              {{property.detail.PropertyCondition}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.LookingAddress}}/\n              {{property.detail.ownership}}/\n              {{property.detail.PropertyType}}/\n              {{property.detail.features}}/\n          {{property.detail.UserId}}/\n          {{property.detail.Maxbathrooms}}/\n          {{property.detail.Maxrooms}}/\n          {{property.detail.Maxreception}}/\n          {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n              &gt;</span></div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/agenthome/agenthome.component.html":
+  /*!******************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/agenthome/agenthome.component.html ***!
+    \******************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAgenthomeAgenthomeComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<!--Top Area started-->\n<div class=\"agent-top-heading-area\">\n\n    <div class=\"top-area-content-agent\">\n\n        <div class=\"top-area-agent-photo\">\n            <img src=\"../../assets/Images/unnamed.jpg\" class=\"image-agent\">\n        </div>\n\n        <div class=\"top-agent-heading\">\n            <span class=\"outputText compnay-name-text\">Company Name</span>\n\n        </div>\n    </div>\n</div>\n<!--Top Area Ended-->\n\n\n<!--Detail Area started-->\n\n<div class=\"details-user-agent\">\n\n    <div class=\"heading-item-detail-user\">\n   \n        <span class=\"outputText\">Name :</span>\n\n    </div>\n\n    <div class=\"heading-detail-user-output\">\n\n        <span class=\"outputText\">Company Name</span>\n\n    </div>\n\n</div>\n<div class=\"details-user-agent\">\n\n    <div class=\"heading-item-detail-user\">\n   \n        <span class=\"outputText\">Address :</span>\n\n    </div>\n\n    <div class=\"heading-detail-user-output\">\n\n        <span class=\"outputText\">Ashok Vihar</span>\n\n    </div>\n\n</div>\n<div class=\"details-user-agent\">\n\n    <div class=\"heading-item-detail-user\">\n   \n        <span class=\"outputText\">Postcode :</span>\n\n    </div>\n\n    <div class=\"heading-detail-user-output\">\n\n        <span class=\"outputText\">PO167GZ</span>\n\n    </div>\n\n</div>\n<div class=\"details-user-agent\">\n\n    <div class=\"heading-item-detail-user\">\n   \n        <span class=\"outputText\">Phone Number :</span>\n\n    </div>\n\n    <div class=\"heading-detail-user-output\">\n\n        <span class=\"outputText\">7838298988</span>\n\n    </div>\n\n</div>\n<div class=\"details-user-agent\">\n\n    <div class=\"heading-item-detail-user\">\n   \n        <span class=\"outputText\">Job title :</span>\n\n    </div>\n\n    <div class=\"heading-detail-user-output\">\n\n        <span class=\"outputText\">Broker</span>\n\n    </div>\n\n</div>\n<div class=\"details-user-agent\">\n\n    <div class=\"heading-item-detail-user\">\n   \n        <span class=\"outputText\">Sole Agency Fees :</span>\n\n    </div>\n\n    <div class=\"heading-detail-user-output\">\n\n        <span class=\"outputText\">5%</span>\n\n    </div>\n\n</div>\n<div class=\"details-user-agent\">\n\n    <div class=\"heading-item-detail-user\">\n   \n        <span class=\"outputText\">Multiple Agency Fees :</span>\n\n    </div>\n\n    <div class=\"heading-detail-user-output\">\n\n        <span class=\"outputText\">5%\n        </span>\n\n    </div>\n\n</div>\n\n<div class=\"edit-detail-button\">\n\n    <span class=\"edit-button-span\">Edit</span>\n\n</div>\n\n\n\n\n\n\n<div class=\"tab-area\">\n    <mat-tab-group mat-align-tabs=\"start\" class=\"agent-tabs\" >\n        <!-- #enddocregion align-start -->\n          <mat-tab label=\"Buyer\">\n\n              \n      <div class=\"mat-card-content-new m\">\n        <div class=\"not-expressed\" >\n          <div class=\"nestimate_by\">\n    \n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by R.N</div>\n          </div>\n    \n    \n          <div class=\"netimate-content\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\" >\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" >Desired Price</span> \n               \n                <br>\n                <span class=\"outputText price-font\">&pound;6000 - &pound;70000</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">Cash Buyer</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                    class=\"outputText\">First Time Buyer</span></div>\n              </div>\n            </span>\n    \n    \n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" >See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n\n\n\n      <div class=\"mat-card-content-new m\">\n        <div class=\"not-expressed\" >\n          <div class=\"nestimate_by\">\n    \n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by R.N</div>\n          </div>\n    \n    \n          <div class=\"netimate-content\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\" >\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" >Desired Price</span> \n               \n                <br>\n                <span class=\"outputText price-font\">&pound;6000 - &pound;70000</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">Cash Buyer</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                    class=\"outputText\">First Time Buyer</span></div>\n              </div>\n            </span>\n    \n    \n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" >See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n\n\n          </mat-tab>\n          <mat-tab label=\"Seller\">\n\n\n            <div class=\"mat-card-content-new m\">\n                <div class=\"not-expressed\" >\n                  <div class=\"nestimate_by\">\n            \n                    <div class=\"card-heading-font outputText\">&nbsp;Nestimate by R.N</div>\n                  </div>\n            \n            \n                  <div class=\"netimate-content\">\n                    <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div>\n                    <span class=\"buy-option\" >\n                      <div class=\"nestimate-price-range\">\n                        <span class=\"heading-nestimate\" >Desired Price</span> \n                       \n                        <br>\n                        <span class=\"outputText price-font\">&pound;6000</span>\n                      </div>\n                      <div class=\"nestimate-content\">\n                        <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                            class=\"outputText\">5.0</span></div>\n                        <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                            class=\"outputText\">2</span></div>\n                      </div>\n                    </span>\n            \n            \n                    <div class=\"button-container\">\n                      <div class=\"dark-blue-button\" >See Details<span class=\"entity-see-deatil outputText\">\n                          &gt;</span></div>\n                    </div>\n            \n            \n                  </div>\n                </div>\n              </div>\n\n\n\n            <div class=\"mat-card-content-new m\">\n                <div class=\"not-expressed\" >\n                  <div class=\"nestimate_by\">\n            \n                    <div class=\"card-heading-font outputText\">&nbsp;Nestimate by R.N</div>\n                  </div>\n            \n            \n                  <div class=\"netimate-content\">\n                    <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div>\n                    <span class=\"buy-option\" >\n                      <div class=\"nestimate-price-range\">\n                        <span class=\"heading-nestimate\" >Desired Price</span> \n                       \n                        <br>\n                        <span class=\"outputText price-font\">&pound;6000</span>\n                      </div>\n                      <div class=\"nestimate-content\">\n                        <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                            class=\"outputText\">5.0</span></div>\n                        <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                            class=\"outputText\">2</span></div>\n                      </div>\n                    </span>\n            \n            \n                    <div class=\"button-container\">\n                      <div class=\"dark-blue-button\" >See Details<span class=\"entity-see-deatil outputText\">\n                          &gt;</span></div>\n                    </div>\n            \n            \n                  </div>\n                </div>\n              </div>\n\n          </mat-tab>\n       \n        </mat-tab-group>\n\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.html":
+  /*!**********************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.html ***!
+    \**********************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAgenthomeSelecteddetailareaSelecteddetailareaComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div class=\"agent-selected-detail-componet\">\n\n<div class=\"agent-selected-detail-top-image\">\n    <img src=\"assets/Images/sidelogo.png\" class=\"match-images\">\n \n\n</div>\n\n\n\n<div class=\"seller-detail-component mt-5\">\n\n    <span class=\"heading-nestimate\">\n    Seller Detail\n    </span>\n\n\n    <div class=\"seller-main-details\">\n   \n        <div class=\"seller-left-side heading-nestimate\">\n            Desired Price:       \n\n        </div>\n\n\n        <div class=\"seller-right-side outputText\">\n            &pound;60000\n\n        </div>\n    </div>\n\n\n    <div class=\"seller-main-details\">\n   \n        <div class=\"seller-left-side heading-nestimate\" >\n            Postcode:             \n\n        </div>\n\n\n        <div class=\"seller-right-side outputText\">\n            PO167GZ\n\n        </div>\n    </div>\n    <div class=\"seller-main-details\">\n   \n        <div class=\"seller-left-side heading-nestimate\">\n            No of Rooms:                   \n\n        </div>\n\n\n        <div class=\"seller-right-side outputText\">\n           3\n\n        </div>\n    </div>\n\n  \n    <div class=\"address-field\">\n        <div class=\"address-heading heading-nestimate\">\n            Seller Address\n        </div>\n    \n        <div class=\"adddress-output outputText\">\n            Hno Ak-47 Nirman Vihar \n    Delhi. \n        </div>\n    \n    \n        </div>\n</div>\n\n\n\n<div class=\"seller-detail-component mt-5 pb-3\">\n\n    <span class=\"heading-nestimate\">\n    Buyer Detail\n    </span>\n\n\n    <div class=\"seller-main-details\">\n   \n        <div class=\"seller-left-side heading-nestimate\">\n             Price Range:       \n\n        </div>\n\n\n        <div class=\"seller-right-side outputText\">\n            &pound;60000 -   &pound;70000\n\n        </div>\n    </div>\n\n\n    <div class=\"seller-main-details\">\n   \n        <div class=\"seller-left-side heading-nestimate\" >\n            Postcode:             \n\n        </div>\n\n\n        <div class=\"seller-right-side outputText\">\n            PO167GZ\n\n        </div>\n    </div>\n    <div class=\"seller-main-details\">\n   \n        <div class=\"seller-left-side heading-nestimate\">\n            No of Rooms:                   \n\n        </div>\n\n\n        <div class=\"seller-right-side outputText\">\n           3\n\n        </div>\n    </div>\n\n  \n    <div class=\"address-field\">\n        <div class=\"address-heading heading-nestimate\">\n            Seller Address\n        </div>\n    \n        <div class=\"adddress-output outputText\">\n            Hno Ak-47 Nirman Vihar \n    Delhi. \n        </div>\n    \n    \n        </div>\n</div>\n<div class=\"button-container\">\n    <div class=\"dark-blue-button\" >Back</div>\n  </div>\n</div>\n\n";
     /***/
   },
 
@@ -4414,8 +4454,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             }
           } else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
-              var Min = parseInt(this.listingBuyer.MinAmount);
-              var Max = parseInt(this.listingBuyer.MaxAmount);
+              var Min = parseInt(this.listingBuyer.MinAmount.replace(/,/g, ""));
+              var Max = parseInt(this.listingBuyer.MaxAmount.replace(/,/g, ""));
 
               if (this.amounts == false) {
                 var _dialogRef8 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
@@ -7590,6 +7630,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             }, _callee14, this);
           }));
         }
+      }, {
+        key: "createUserCustomer",
+        value: function createUserCustomer(user) {
+          var userRef = this.db.doc("users/".concat(user.uid));
+          var userData = {
+            uid: user.uid,
+            email: user.email,
+            Name: user.Name,
+            DOB: user.DOB,
+            Phone: user.Phone,
+            title: user.title = "Mr"
+          };
+          return userRef.set(userData, {
+            merge: true
+          });
+        }
       }]);
 
       return AgentSignupService;
@@ -7721,6 +7777,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.afStorage = afStorage;
         this.loggedIn = false;
         this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__["agentSignup"]();
+        this.hide = true;
+        this.verified = false;
+        this.basePath = '/images'; //  <<<<<<<
       }
 
       _createClass(AgentsignupformComponent, [{
@@ -7729,12 +7788,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           var _this39 = this;
 
           this.loggedIn = false;
-          this.users = JSON.parse(localStorage.getItem("user"));
+          this.user = JSON.parse(localStorage.getItem("user"));
 
-          if (this.users == null) {
+          if (this.user == null) {
             this.loggedIn = false;
           } else {
-            this.uid = this.users.uid;
+            this.uid = this.user.uid;
           }
 
           this.afAuth.authState.subscribe(function (user) {
@@ -7763,11 +7822,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         }
       }, {
         key: "submitForm",
-        value: function submitForm() {
+        value: function submitForm(displayName, email, pass) {
           var _this40 = this;
 
+          console.log(this.downloadableURL);
           this.stateService.agentSignup = this.agentSignup;
-          this.image = this.task.uploadUrl_;
+          this.agentSignup.image = this.downloadableURL;
           this.return = this.AgentSignupService.createAgentCustomer(this.uid, this.agentSignup).then(function (data) {
             if (data == true) {
               var dialogRef = _this40.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__["AlertDialogAgentComponent"], {
@@ -7784,11 +7844,67 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "upload",
         value: function upload(event) {
-          var id = Math.random().toString(36).substring(2);
-          this.ref = this.afStorage.ref(id);
-          this.task = this.ref.put(event.target.files[0]);
-          console.log(this.task.uploadUrl_);
-          console.log(this.task);
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee15() {
+            var _this41 = this;
+
+            var file, filePath;
+            return regeneratorRuntime.wrap(function _callee15$(_context15) {
+              while (1) {
+                switch (_context15.prev = _context15.next) {
+                  case 0:
+                    file = event.target.files[0];
+
+                    if (!file) {
+                      _context15.next = 8;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context15.next = 6;
+                    return this.task;
+
+                  case 6:
+                    _context15.t0 = function (url) {
+                      _this41.downloadableURL = url;
+                    };
+
+                    _context15.sent.ref.getDownloadURL().then(_context15.t0);
+
+                  case 8:
+                  case "end":
+                    return _context15.stop();
+                }
+              }
+            }, _callee15, this);
+          }));
+        } //   const id = Math.random().toString(36).substring(2);
+        //   this.ref= this.afStorage.ref(id);
+        //   this.task = this.ref.put(event.target.files[0]);
+        //   console.log(this.task.task.uploadUrl_)
+        //   console.log(this.task)
+        // }
+
+      }, {
+        key: "signUp",
+        value: function signUp(displayName, email, pass) {
+          var _this42 = this;
+
+          console.log(displayName);
+          this.authService.SignUp(email, pass).then(function (data) {
+            _this42.user.Name = displayName;
+            _this42.user.DOB = null;
+            _this42.user.Phone = null;
+            _this42.Type = "agent";
+            _this42.return = _this42.AgentSignupService.createUserCustomer(_this42.user).then(function (data) {
+              console.log(data);
+            });
+          });
         }
       }]);
 
@@ -8056,7 +8172,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId) {
-          var _this41 = this;
+          var _this43 = this;
 
           this.buyer = false;
           this.seller = false;
@@ -8066,116 +8182,116 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this41.buyer = false;
-              _this41.seller = false;
-              _this41.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this41.Look_PropertyFor = PropertyFor;
-              _this41.Look_propertytype = PropertyType;
-              _this41.Look_minamount = MinAmount.replace(/,/g, "");
-              _this41.Look_maxamount = MaxAmount.replace(/,/g, "");
-              _this41.LookingTown = LookingTown;
-              _this41.Look_latitude = latitude;
-              _this41.Look_longitude = longitude;
-              _this41.Look_Streetname = Streetname;
-              _this41.Look_condition = condition;
-              _this41.Look_chainstatus = ChainStatus;
-              _this41.Look_FinancialPosition = FinancialPosition;
-              _this41.Look_Radius = SearchRadius;
-              _this41.Look_Validity = Validity;
-              _this41.Look_Position = Position;
-              _this41.Look_UserId = UserId; //Price Formula
+              _this43.buyer = false;
+              _this43.seller = false;
+              _this43.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this43.Look_PropertyFor = PropertyFor;
+              _this43.Look_propertytype = PropertyType;
+              _this43.Look_minamount = MinAmount.replace(/,/g, "");
+              _this43.Look_maxamount = MaxAmount.replace(/,/g, "");
+              _this43.LookingTown = LookingTown;
+              _this43.Look_latitude = latitude;
+              _this43.Look_longitude = longitude;
+              _this43.Look_Streetname = Streetname;
+              _this43.Look_condition = condition;
+              _this43.Look_chainstatus = ChainStatus;
+              _this43.Look_FinancialPosition = FinancialPosition;
+              _this43.Look_Radius = SearchRadius;
+              _this43.Look_Validity = Validity;
+              _this43.Look_Position = Position;
+              _this43.Look_UserId = UserId; //Price Formula
 
-              _this41.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              _this41.less = _this41.maxAmount - _this41.maxAmount * 3 / 100;
-              _this41.more = _this41.maxAmount * 1 + _this41.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
+              _this43.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              _this43.less = _this43.maxAmount - _this43.maxAmount * 3 / 100;
+              _this43.more = _this43.maxAmount * 1 + _this43.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
 
-              _this41.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this41.listing = _this41.Look_postcodes;
-              _this41.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this41.isLoading = false;
-              _this41.buyer = true; //Result Set 1 Matches
+              _this43.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this43.listing = _this43.Look_postcodes;
+              _this43.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this43.isLoading = false;
+              _this43.buyer = true; //Result Set 1 Matches
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this41.Look_postcodes && item.data().PropertyFor == _this41.Look_PropertyFor && item.data().PropertyType == _this41.Look_propertytype && _this41.maxAmount >= _this41.Look_minamount && _this41.maxAmount <= _this41.Look_maxamount && item.data().latitude && item.data().longitude) {
-                _this41.distanceInKm = _this41.getDistanceFromLatLonInKm(_this41.Look_latitude, _this41.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this43.Look_postcodes && item.data().PropertyFor == _this43.Look_PropertyFor && item.data().PropertyType == _this43.Look_propertytype && _this43.maxAmount >= _this43.Look_minamount && _this43.maxAmount <= _this43.Look_maxamount && item.data().latitude && item.data().longitude) {
+                _this43.distanceInKm = _this43.getDistanceFromLatLonInKm(_this43.Look_latitude, _this43.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this41.matchedProperties.push({
+                _this43.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this41.distanceInKm * 0.6214
+                  distance: _this43.distanceInKm * 0.6214
                 }); //Use this object to populate html
 
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (item.data().Lookingpostcode.replace(/\s/g, "") == _this41.Look_postcodes && item.data().PropertyFor == _this41.Look_PropertyFor && _this41.maxAmount != _this41.Look_minamount && _this41.maxAmount != _this41.Look_maxamount && _this41.maxAmount < _this41.Look_minamount && _this41.maxAmount < _this41.Look_maxamount && item.data().PropertyType == _this41.Look_propertytype && _this41.more >= _this41.Look_minamount && item.data().latitude && item.data().longitude) {
-                  _this41.distanceInKm = _this41.getDistanceFromLatLonInKm(_this41.Look_latitude, _this41.Look_longitude, item.data().latitude, item.data().longitude);
+              else if (item.data().Lookingpostcode.replace(/\s/g, "") == _this43.Look_postcodes && item.data().PropertyFor == _this43.Look_PropertyFor && _this43.maxAmount != _this43.Look_minamount && _this43.maxAmount != _this43.Look_maxamount && _this43.maxAmount < _this43.Look_minamount && _this43.maxAmount < _this43.Look_maxamount && item.data().PropertyType == _this43.Look_propertytype && _this43.more >= _this43.Look_minamount && item.data().latitude && item.data().longitude) {
+                  _this43.distanceInKm = _this43.getDistanceFromLatLonInKm(_this43.Look_latitude, _this43.Look_longitude, item.data().latitude, item.data().longitude);
 
-                  _this41.prceMathLogic.push({
+                  _this43.prceMathLogic.push({
                     detail: item.data(),
                     propertyId: item.id,
-                    distance: _this41.distanceInKm * 0.6214
+                    distance: _this43.distanceInKm * 0.6214
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this41.Look_postcodes && item.data().PropertyFor == _this41.Look_PropertyFor && item.data().PropertyType == _this41.Look_propertytype && _this41.maxAmount >= _this41.Look_minamount && _this41.maxAmount <= _this41.Look_maxamount && _this41.removespace.substring(0, 3) == _this41.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                    _this41.distanceInKm = _this41.getDistanceFromLatLonInKm(_this41.Look_latitude, _this41.Look_longitude, item.data().latitude, item.data().longitude);
+                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this43.Look_postcodes && item.data().PropertyFor == _this43.Look_PropertyFor && item.data().PropertyType == _this43.Look_propertytype && _this43.maxAmount >= _this43.Look_minamount && _this43.maxAmount <= _this43.Look_maxamount && _this43.removespace.substring(0, 3) == _this43.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                    _this43.distanceInKm = _this43.getDistanceFromLatLonInKm(_this43.Look_latitude, _this43.Look_longitude, item.data().latitude, item.data().longitude);
 
-                    _this41.settwo.push({
+                    _this43.settwo.push({
                       detail: item.data(),
                       propertyId: item.id,
-                      distance: _this41.distanceInKm * 0.6214
+                      distance: _this43.distanceInKm * 0.6214
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (item.data().Lookingpostcode != _this41.Look_postcodes && item.data().PropertyFor == _this41.Look_PropertyFor && item.data().PropertyType == _this41.Look_propertytype && _this41.more <= _this41.Look_minamount && item.data().latitude && item.data().longitude) {
-                      console.log("Latitude" + _this41.Look_latitude + "Longitude" + _this41.Look_longitude);
-                      _this41.distanceInKm = _this41.getDistanceFromLatLonInKm(_this41.Look_latitude, _this41.Look_longitude, item.data().latitude, item.data().longitude);
+                  else if (item.data().Lookingpostcode != _this43.Look_postcodes && item.data().PropertyFor == _this43.Look_PropertyFor && item.data().PropertyType == _this43.Look_propertytype && _this43.more <= _this43.Look_minamount && item.data().latitude && item.data().longitude) {
+                      console.log("Latitude" + _this43.Look_latitude + "Longitude" + _this43.Look_longitude);
+                      _this43.distanceInKm = _this43.getDistanceFromLatLonInKm(_this43.Look_latitude, _this43.Look_longitude, item.data().latitude, item.data().longitude);
 
-                      _this41.unmatchedProperties.push({
+                      _this43.unmatchedProperties.push({
                         detail: item.data(),
                         propertyId: item.id,
-                        distance: _this41.distanceInKm * 0.6214
+                        distance: _this43.distanceInKm * 0.6214
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this41.Look_postcodes && item.data().PropertyFor == _this41.Look_PropertyFor && item.data().PropertyType == _this41.Look_propertytype && _this41.less >= _this41.Look_maxamount && item.data().latitude && item.data().longitude) {
-                        _this41.distanceInKm = _this41.getDistanceFromLatLonInKm(_this41.Look_latitude, _this41.Look_longitude, item.data().latitude, item.data().longitude);
+                    else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this43.Look_postcodes && item.data().PropertyFor == _this43.Look_PropertyFor && item.data().PropertyType == _this43.Look_propertytype && _this43.less >= _this43.Look_maxamount && item.data().latitude && item.data().longitude) {
+                        _this43.distanceInKm = _this43.getDistanceFromLatLonInKm(_this43.Look_latitude, _this43.Look_longitude, item.data().latitude, item.data().longitude);
 
-                        _this41.unmatchedPriceLogic.push({
+                        _this43.unmatchedPriceLogic.push({
                           detail: item.data(),
                           propertyId: item.id,
-                          distance: _this41.distanceInKm * 0.6214
+                          distance: _this43.distanceInKm * 0.6214
                         });
 
-                        console.log(_this41.distanceInKm * 0.6214);
+                        console.log(_this43.distanceInKm * 0.6214);
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this41.Look_postcodes && item.data().PropertyType != _this41.Look_propertytype && item.data().PropertyFor == _this41.Look_PropertyFor && item.data().LookingTown == _this41.Look_Town && item.data().latitude && item.data().longitude) {
+                      else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this43.Look_postcodes && item.data().PropertyType != _this43.Look_propertytype && item.data().PropertyFor == _this43.Look_PropertyFor && item.data().LookingTown == _this43.Look_Town && item.data().latitude && item.data().longitude) {
                           console.log(item.data());
-                          _this41.distanceInKm = _this41.getDistanceFromLatLonInKm(_this41.Look_latitude, _this41.Look_longitude, item.data().latitude, item.data().longitude);
-                          console.log(_this41.listingBuyer.latitude + _this41.listingBuyer.longitude);
+                          _this43.distanceInKm = _this43.getDistanceFromLatLonInKm(_this43.Look_latitude, _this43.Look_longitude, item.data().latitude, item.data().longitude);
+                          console.log(_this43.listingBuyer.latitude + _this43.listingBuyer.longitude);
 
-                          _this41.lookTown.push({
+                          _this43.lookTown.push({
                             detail: item.data(),
                             propertyId: item.id,
-                            distance: _this41.distanceInKm * 0.6214
+                            distance: _this43.distanceInKm * 0.6214
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this41.unmatchedProperties.sort(_this41.compare);
+            _this43.unmatchedProperties.sort(_this43.compare);
           });
           this.getExpressedListingIds();
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude) {
-          var _this42 = this;
+          var _this44 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -8201,80 +8317,80 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this42.maxAmount = _this42.Look_maxAmount.replace(/,/g, "");
-              _this42.less = _this42.maxAmount - _this42.maxAmount * 3 / 100;
-              _this42.more = _this42.maxAmount * 1 + _this42.maxAmount * 10 / 100 * 1;
-              _this42.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              _this42.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, ""); //Remove Postcode Spaces
+              _this44.maxAmount = _this44.Look_maxAmount.replace(/,/g, "");
+              _this44.less = _this44.maxAmount - _this44.maxAmount * 3 / 100;
+              _this44.more = _this44.maxAmount * 1 + _this44.maxAmount * 10 / 100 * 1;
+              _this44.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              _this44.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, ""); //Remove Postcode Spaces
 
-              _this42.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this42.listing = _this42.Lookpostcode;
-              _this42.isLoading = false; //Result Set 1 Matches
+              _this44.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this44.listing = _this44.Lookpostcode;
+              _this44.isLoading = false; //Result Set 1 Matches
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this42.Look_postcode && Mean.data().PropertyFor == _this42.Look_PropertyFor && Mean.data().PropertyType == _this42.Look_PropertyType && _this42.maxAmount >= _this42.Look_minamount && _this42.maxAmount <= _this42.Look_maxamount) {
-                _this42.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this44.Look_postcode && Mean.data().PropertyFor == _this44.Look_PropertyFor && Mean.data().PropertyType == _this44.Look_PropertyType && _this44.maxAmount >= _this44.Look_minamount && _this44.maxAmount <= _this44.Look_maxamount) {
+                _this44.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this42.Look_postcode && Mean.data().PropertyFor == _this42.Look_PropertyFor && _this42.maxAmount != _this42.Look_minamount && _this42.maxAmount != _this42.Look_maxamount && _this42.maxAmount < _this42.Look_minamount && _this42.maxAmount < _this42.Look_maxamount && Mean.data().PropertyType == _this42.Look_PropertyType && _this42.more >= _this42.Look_minamount) {
-                  _this42.sellerprceMathLogic.push({
+              else if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this44.Look_postcode && Mean.data().PropertyFor == _this44.Look_PropertyFor && _this44.maxAmount != _this44.Look_minamount && _this44.maxAmount != _this44.Look_maxamount && _this44.maxAmount < _this44.Look_minamount && _this44.maxAmount < _this44.Look_maxamount && Mean.data().PropertyType == _this44.Look_PropertyType && _this44.more >= _this44.Look_minamount) {
+                  _this44.sellerprceMathLogic.push({
                     detail: Mean.data(),
                     propertyId: Mean.id
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this42.Look_postcode && Mean.data().PropertyType == _this42.Look_PropertyType && Mean.data().PropertyFor == _this42.Look_PropertyFor && _this42.maxAmount >= _this42.Look_minamount && _this42.maxAmount <= _this42.Look_maxamount && _this42.removespace.substring(0, 3) == _this42.Look_postcode.substring(0, 3)) {
-                    _this42.sellersettwo.push({
+                else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this44.Look_postcode && Mean.data().PropertyType == _this44.Look_PropertyType && Mean.data().PropertyFor == _this44.Look_PropertyFor && _this44.maxAmount >= _this44.Look_minamount && _this44.maxAmount <= _this44.Look_maxamount && _this44.removespace.substring(0, 3) == _this44.Look_postcode.substring(0, 3)) {
+                    _this44.sellersettwo.push({
                       detail: Mean.data(),
                       propertyId: Mean.id
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (Mean.data().Lookingpostcode != _this42.Look_postcode && Mean.data().PropertyType == _this42.Look_PropertyType && Mean.data().PropertyFor == _this42.Look_PropertyFor && _this42.more <= _this42.Look_minamount && Mean.data().latitude && Mean.data().longitude) {
-                      _this42.distanceInKm = _this42.getDistanceFromLatLonInKm(_this42.Look_latitude, _this42.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                  else if (Mean.data().Lookingpostcode != _this44.Look_postcode && Mean.data().PropertyType == _this44.Look_PropertyType && Mean.data().PropertyFor == _this44.Look_PropertyFor && _this44.more <= _this44.Look_minamount && Mean.data().latitude && Mean.data().longitude) {
+                      _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                      _this42.sellerunmatchedProperties.push({
+                      _this44.sellerunmatchedProperties.push({
                         detail: Mean.data(),
                         propertyId: Mean.id,
-                        distance: _this42.distanceInKm * 0.6214
+                        distance: _this44.distanceInKm * 0.6214
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this42.Look_postcode && Mean.data().PropertyType == _this42.Look_PropertyType && Mean.data().PropertyFor == _this42.Look_PropertyFor && _this42.less >= _this42.Look_maxamount && Mean.data().latitude && Mean.data().longitude) {
-                        _this42.distanceInKm = _this42.getDistanceFromLatLonInKm(_this42.Look_latitude, _this42.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                    else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this44.Look_postcode && Mean.data().PropertyType == _this44.Look_PropertyType && Mean.data().PropertyFor == _this44.Look_PropertyFor && _this44.less >= _this44.Look_maxamount && Mean.data().latitude && Mean.data().longitude) {
+                        _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                        _this42.unmatchedPriceLogic.push({
+                        _this44.unmatchedPriceLogic.push({
                           detail: Mean.data(),
                           propertyId: Mean.id,
-                          distance: _this42.distanceInKm * 0.6214
+                          distance: _this44.distanceInKm * 0.6214
                         });
 
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this42.Look_postcode && Mean.data().PropertyFor == _this42.Look_PropertyFor && Mean.data().PropertyType != _this42.Look_PropertyType && Mean.data().LookingTown == _this42.Look_Town && Mean.data().latitude && Mean.data().longitude) {
+                      else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this44.Look_postcode && Mean.data().PropertyFor == _this44.Look_PropertyFor && Mean.data().PropertyType != _this44.Look_PropertyType && Mean.data().LookingTown == _this44.Look_Town && Mean.data().latitude && Mean.data().longitude) {
                           console.log(Mean.data());
-                          _this42.distanceInKm = _this42.getDistanceFromLatLonInKm(_this42.Look_latitude, _this42.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                          _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                          _this42.sellerlookTown.push({
+                          _this44.sellerlookTown.push({
                             detail: Mean.data(),
                             propertyId: Mean.id,
-                            distance: _this42.distanceInKm * 0.6214
+                            distance: _this44.distanceInKm * 0.6214
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this42.unmatchedProperties.sort(_this42.compare);
+            _this44.unmatchedProperties.sort(_this44.compare);
 
-            _this42.noOfMatches = _this42.sellermatchedProperties.length;
-            _this42.noOfUnmatched = _this42.sellerunmatchedProperties.length; //console.log(this.matchedProperties[0]);
+            _this44.noOfMatches = _this44.sellermatchedProperties.length;
+            _this44.noOfUnmatched = _this44.sellerunmatchedProperties.length; //console.log(this.matchedProperties[0]);
           });
           this.getExpressedListingIds();
         }
@@ -8371,12 +8487,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this43 = this;
+          var _this45 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this43.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this43.distinctExpressedUid.push(item.data().propertyId);
+              if (_this45.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this45.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -8400,12 +8516,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this44 = this;
+          var _this46 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this44.propertyRequirementDetails.push({
+              _this46.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -8414,109 +8530,109 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this44.propertyDetails.push({
+              _this46.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
             });
-            _this44.MatchesItem = _this44.propertyRequirementDetails.length + _this44.propertyDetails.length;
+            _this46.MatchesItem = _this46.propertyRequirementDetails.length + _this46.propertyDetails.length;
 
-            if (_this44.MatchesItem < 2) {
-              if (_this44.propertyRequirementDetails.length > _this44.propertyDetails.length) {
-                _this44.buyer = true;
-                _this44.buyerItems = true;
-                _this44.buyerVal = _this44.propertyRequirementDetails[0].data.Lookingpostcode;
-                var Lookingpostcode = _this44.propertyRequirementDetails[0].data.Lookingpostcode;
-                var MinAmount = _this44.propertyRequirementDetails[0].data.MinAmount;
-                var MaxAmount = _this44.propertyRequirementDetails[0].data.MaxAmount;
-                var PropertyFor = _this44.propertyRequirementDetails[0].data.PropertyFor;
-                var PropertyType = _this44.propertyRequirementDetails[0].data.PropertyType;
-                var LookingTown = _this44.propertyRequirementDetails[0].data.LookingTown;
-                var latitude = _this44.propertyRequirementDetails[0].data.latitude;
-                var longitude = _this44.propertyRequirementDetails[0].data.longitude;
-                var Streetname = _this44.propertyRequirementDetails[0].data.LookingStreetname;
-                var condition = _this44.propertyRequirementDetails[0].data.Conditions;
-                var ChainStatus = _this44.propertyRequirementDetails[0].data.ChainStatus;
-                var FinancialPosition = _this44.propertyRequirementDetails[0].data.FinancialPosition;
-                var SearchRadius = _this44.propertyRequirementDetails[0].data.SearchRadius;
-                var Validity = _this44.propertyRequirementDetails[0].data.Validity;
-                var Position = _this44.propertyRequirementDetails[0].data.Position;
-                var UserId = _this44.propertyRequirementDetails[0].data.UserId;
+            if (_this46.MatchesItem < 2) {
+              if (_this46.propertyRequirementDetails.length > _this46.propertyDetails.length) {
+                _this46.buyer = true;
+                _this46.buyerItems = true;
+                _this46.buyerVal = _this46.propertyRequirementDetails[0].data.Lookingpostcode;
+                var Lookingpostcode = _this46.propertyRequirementDetails[0].data.Lookingpostcode;
+                var MinAmount = _this46.propertyRequirementDetails[0].data.MinAmount;
+                var MaxAmount = _this46.propertyRequirementDetails[0].data.MaxAmount;
+                var PropertyFor = _this46.propertyRequirementDetails[0].data.PropertyFor;
+                var PropertyType = _this46.propertyRequirementDetails[0].data.PropertyType;
+                var LookingTown = _this46.propertyRequirementDetails[0].data.LookingTown;
+                var latitude = _this46.propertyRequirementDetails[0].data.latitude;
+                var longitude = _this46.propertyRequirementDetails[0].data.longitude;
+                var Streetname = _this46.propertyRequirementDetails[0].data.LookingStreetname;
+                var condition = _this46.propertyRequirementDetails[0].data.Conditions;
+                var ChainStatus = _this46.propertyRequirementDetails[0].data.ChainStatus;
+                var FinancialPosition = _this46.propertyRequirementDetails[0].data.FinancialPosition;
+                var SearchRadius = _this46.propertyRequirementDetails[0].data.SearchRadius;
+                var Validity = _this46.propertyRequirementDetails[0].data.Validity;
+                var Position = _this46.propertyRequirementDetails[0].data.Position;
+                var UserId = _this46.propertyRequirementDetails[0].data.UserId;
 
-                _this44.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId);
+                _this46.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId);
               } else {
-                _this44.sellerItem = true;
-                _this44.seller = true;
-                _this44.sellerVal = _this44.propertyDetails[0].seller.Lookingpostcode;
-                var _Lookingpostcode = _this44.propertyDetails[0].seller.Lookingpostcode;
-                var _PropertyFor = _this44.propertyDetails[0].seller.PropertyFor;
-                var _PropertyType = _this44.propertyDetails[0].seller.PropertyType;
-                var _MaxAmount = _this44.propertyDetails[0].seller.MaxAmount;
-                var _LookingTown = _this44.propertyDetails[0].seller.LookinTown;
-                var Lookingstate = _this44.propertyDetails[0].seller.Lookingstate;
-                var Maxbathrooms = _this44.propertyDetails[0].seller.Maxbathrooms;
-                var PropertyCondition = _this44.propertyDetails[0].seller.PropertyCondition;
-                var LookingAddress = _this44.propertyDetails[0].seller.LookingAddress;
-                var ownership = _this44.propertyDetails[0].seller.ownership;
-                var features = _this44.propertyDetails[0].seller.features;
-                var _UserId = _this44.propertyDetails[0].seller.UserId;
-                var Maxreception = _this44.propertyDetails[0].seller.Maxreception;
-                var Maxrooms = _this44.propertyDetails[0].seller.Maxrooms;
-                var _latitude = _this44.propertyDetails[0].seller.latitude;
-                var _longitude = _this44.propertyDetails[0].seller.longitude;
+                _this46.sellerItem = true;
+                _this46.seller = true;
+                _this46.sellerVal = _this46.propertyDetails[0].seller.Lookingpostcode;
+                var _Lookingpostcode = _this46.propertyDetails[0].seller.Lookingpostcode;
+                var _PropertyFor = _this46.propertyDetails[0].seller.PropertyFor;
+                var _PropertyType = _this46.propertyDetails[0].seller.PropertyType;
+                var _MaxAmount = _this46.propertyDetails[0].seller.MaxAmount;
+                var _LookingTown = _this46.propertyDetails[0].seller.LookinTown;
+                var Lookingstate = _this46.propertyDetails[0].seller.Lookingstate;
+                var Maxbathrooms = _this46.propertyDetails[0].seller.Maxbathrooms;
+                var PropertyCondition = _this46.propertyDetails[0].seller.PropertyCondition;
+                var LookingAddress = _this46.propertyDetails[0].seller.LookingAddress;
+                var ownership = _this46.propertyDetails[0].seller.ownership;
+                var features = _this46.propertyDetails[0].seller.features;
+                var _UserId = _this46.propertyDetails[0].seller.UserId;
+                var Maxreception = _this46.propertyDetails[0].seller.Maxreception;
+                var Maxrooms = _this46.propertyDetails[0].seller.Maxrooms;
+                var _latitude = _this46.propertyDetails[0].seller.latitude;
+                var _longitude = _this46.propertyDetails[0].seller.longitude;
 
-                _this44.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude);
+                _this46.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude);
               }
-            } else if (_this44.MatchesItem > 1) {
-              if (_this44.propertyRequirementDetails.length > _this44.propertyDetails.length) {
-                _this44.buyer = true;
-                _this44.buyerVal = _this44.propertyRequirementDetails[0].data.Lookingpostcode;
-                _this44.test = _this44.buyerVal;
-                var _Lookingpostcode2 = _this44.propertyRequirementDetails[0].data.Lookingpostcode;
-                var _MinAmount = _this44.propertyRequirementDetails[0].data.MinAmount;
-                var _MaxAmount2 = _this44.propertyRequirementDetails[0].data.MaxAmount;
-                var _PropertyFor2 = _this44.propertyRequirementDetails[0].data.PropertyFor;
-                var _PropertyType2 = _this44.propertyRequirementDetails[0].data.PropertyType;
-                var _LookingTown2 = _this44.propertyRequirementDetails[0].data.LookingTown;
-                var _latitude2 = _this44.propertyRequirementDetails[0].data.latitude;
-                var _longitude2 = _this44.propertyRequirementDetails[0].data.longitude;
-                var _Streetname = _this44.propertyRequirementDetails[0].data.LookingStreetname;
-                var _condition = _this44.propertyRequirementDetails[0].data.Conditions;
-                var _ChainStatus = _this44.propertyRequirementDetails[0].data.ChainStatus;
-                var _FinancialPosition = _this44.propertyRequirementDetails[0].data.FinancialPosition;
-                var _SearchRadius = _this44.propertyRequirementDetails[0].data.SearchRadius;
-                var _Validity = _this44.propertyRequirementDetails[0].data.Validity;
-                var _Position = _this44.propertyRequirementDetails[0].data.Position;
-                var _UserId2 = _this44.propertyRequirementDetails[0].data.UserId;
+            } else if (_this46.MatchesItem > 1) {
+              if (_this46.propertyRequirementDetails.length > _this46.propertyDetails.length) {
+                _this46.buyer = true;
+                _this46.buyerVal = _this46.propertyRequirementDetails[0].data.Lookingpostcode;
+                _this46.test = _this46.buyerVal;
+                var _Lookingpostcode2 = _this46.propertyRequirementDetails[0].data.Lookingpostcode;
+                var _MinAmount = _this46.propertyRequirementDetails[0].data.MinAmount;
+                var _MaxAmount2 = _this46.propertyRequirementDetails[0].data.MaxAmount;
+                var _PropertyFor2 = _this46.propertyRequirementDetails[0].data.PropertyFor;
+                var _PropertyType2 = _this46.propertyRequirementDetails[0].data.PropertyType;
+                var _LookingTown2 = _this46.propertyRequirementDetails[0].data.LookingTown;
+                var _latitude2 = _this46.propertyRequirementDetails[0].data.latitude;
+                var _longitude2 = _this46.propertyRequirementDetails[0].data.longitude;
+                var _Streetname = _this46.propertyRequirementDetails[0].data.LookingStreetname;
+                var _condition = _this46.propertyRequirementDetails[0].data.Conditions;
+                var _ChainStatus = _this46.propertyRequirementDetails[0].data.ChainStatus;
+                var _FinancialPosition = _this46.propertyRequirementDetails[0].data.FinancialPosition;
+                var _SearchRadius = _this46.propertyRequirementDetails[0].data.SearchRadius;
+                var _Validity = _this46.propertyRequirementDetails[0].data.Validity;
+                var _Position = _this46.propertyRequirementDetails[0].data.Position;
+                var _UserId2 = _this46.propertyRequirementDetails[0].data.UserId;
 
-                _this44.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _SearchRadius, _Validity, _Position, _UserId2);
+                _this46.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _SearchRadius, _Validity, _Position, _UserId2);
               } else {
-                _this44.seller = true;
-                _this44.sellerVal = _this44.propertyDetails[0].seller.Lookingpostcode;
-                _this44.test = _this44.sellerVal;
-                var _Lookingpostcode3 = _this44.propertyDetails[0].seller.Lookingpostcode;
-                var _PropertyFor3 = _this44.propertyDetails[0].seller.PropertyFor;
-                var _PropertyType3 = _this44.propertyDetails[0].seller.PropertyType;
-                var _MaxAmount3 = _this44.propertyDetails[0].seller.MaxAmount;
-                var _LookingTown3 = _this44.propertyDetails[0].seller.LookingTown;
-                var _Lookingstate = _this44.propertyDetails[0].seller.Lookingstate;
-                var _Maxbathrooms = _this44.propertyDetails[0].seller.Maxbathrooms;
-                var _PropertyCondition = _this44.propertyDetails[0].seller.PropertyCondition;
-                var _LookingAddress = _this44.propertyDetails[0].seller.LookingAddress;
-                var _ownership = _this44.propertyDetails[0].seller.ownership;
-                var _features = _this44.propertyDetails[0].seller.features;
-                var _UserId3 = _this44.propertyDetails[0].seller.UserId;
-                var _Maxreception = _this44.propertyDetails[0].seller.Maxreception;
-                var _Maxrooms = _this44.propertyDetails[0].seller.Maxrooms;
-                var _latitude3 = _this44.propertyDetails[0].seller.latitude;
-                var _longitude3 = _this44.propertyDetails[0].seller.longitude;
-                console.log(_this44.propertyDetails[0].seller.usertitle);
+                _this46.seller = true;
+                _this46.sellerVal = _this46.propertyDetails[0].seller.Lookingpostcode;
+                _this46.test = _this46.sellerVal;
+                var _Lookingpostcode3 = _this46.propertyDetails[0].seller.Lookingpostcode;
+                var _PropertyFor3 = _this46.propertyDetails[0].seller.PropertyFor;
+                var _PropertyType3 = _this46.propertyDetails[0].seller.PropertyType;
+                var _MaxAmount3 = _this46.propertyDetails[0].seller.MaxAmount;
+                var _LookingTown3 = _this46.propertyDetails[0].seller.LookingTown;
+                var _Lookingstate = _this46.propertyDetails[0].seller.Lookingstate;
+                var _Maxbathrooms = _this46.propertyDetails[0].seller.Maxbathrooms;
+                var _PropertyCondition = _this46.propertyDetails[0].seller.PropertyCondition;
+                var _LookingAddress = _this46.propertyDetails[0].seller.LookingAddress;
+                var _ownership = _this46.propertyDetails[0].seller.ownership;
+                var _features = _this46.propertyDetails[0].seller.features;
+                var _UserId3 = _this46.propertyDetails[0].seller.UserId;
+                var _Maxreception = _this46.propertyDetails[0].seller.Maxreception;
+                var _Maxrooms = _this46.propertyDetails[0].seller.Maxrooms;
+                var _latitude3 = _this46.propertyDetails[0].seller.latitude;
+                var _longitude3 = _this46.propertyDetails[0].seller.longitude;
+                console.log(_this46.propertyDetails[0].seller.usertitle);
 
-                _this44.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3);
+                _this46.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3);
               }
             }
 
-            console.log(_this44.MatchesItem);
+            console.log(_this46.MatchesItem);
           });
         }
       }]);
@@ -8737,12 +8853,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this45 = this;
+          var _this47 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this45.propertyRequirementDetails.push({
+              _this47.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -8751,7 +8867,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this45.propertyDetails.push({
+              _this47.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -9352,62 +9468,62 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this46 = this;
+          var _this48 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this46.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
-            _this46.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
-            _this46.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
-            _this46.listingBuyer.Currentstate = params.get("Currentstate").trim();
-            _this46.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
-            _this46.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this46.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            _this46.listingBuyer.LookingTown = params.get("LookingTown").trim();
-            console.log(_this46.listingBuyer.LookingTown);
-            _this46.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
-            _this46.listingBuyer.Country = params.get("Country").trim();
-            _this46.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
-            console.log(_this46.listingBuyer.FinancialPosition);
-            _this46.listingBuyer.SearchRadius = params.get("SearchRadius").trim();
-            _this46.listingBuyer.PropertyType = params.get("PropertyType").trim();
-            _this46.listingBuyer.Roommin = params.get("Roommin").trim();
-            _this46.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
-            _this46.listingBuyer.MinAmount = params.get("MinAmount").trim();
-            _this46.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
-            _this46.listingBuyer.Validity = params.get("Validity").trim();
-            _this46.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
-            _this46.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
-            _this46.listingBuyer.Minreception = params.get("Minreception").trim();
-            _this46.listingBuyer.Maxreception = params.get("Maxreception").trim();
-            _this46.listingBuyer.Conditions = params.get("Conditions").trim();
-            _this46.listingBuyer.Ownership = params.get("Ownership").trim();
-            _this46.listingBuyer.features = params.get("features").trim();
-            _this46.docid = params.get("docid");
-            console.log(_this46.docid);
+            _this48.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
+            _this48.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
+            _this48.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
+            _this48.listingBuyer.Currentstate = params.get("Currentstate").trim();
+            _this48.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
+            _this48.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this48.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
+            _this48.listingBuyer.LookingTown = params.get("LookingTown").trim();
+            console.log(_this48.listingBuyer.LookingTown);
+            _this48.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
+            _this48.listingBuyer.Country = params.get("Country").trim();
+            _this48.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
+            console.log(_this48.listingBuyer.FinancialPosition);
+            _this48.listingBuyer.SearchRadius = params.get("SearchRadius").trim();
+            _this48.listingBuyer.PropertyType = params.get("PropertyType").trim();
+            _this48.listingBuyer.Roommin = params.get("Roommin").trim();
+            _this48.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
+            _this48.listingBuyer.MinAmount = params.get("MinAmount").trim();
+            _this48.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
+            _this48.listingBuyer.Validity = params.get("Validity").trim();
+            _this48.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
+            _this48.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
+            _this48.listingBuyer.Minreception = params.get("Minreception").trim();
+            _this48.listingBuyer.Maxreception = params.get("Maxreception").trim();
+            _this48.listingBuyer.Conditions = params.get("Conditions").trim();
+            _this48.listingBuyer.Ownership = params.get("Ownership").trim();
+            _this48.listingBuyer.features = params.get("features").trim();
+            _this48.docid = params.get("docid");
+            console.log(_this48.docid);
           });
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this46.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this46.userData));
+              _this48.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this48.userData));
 
-              _this46.LoggedIn();
+              _this48.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this46.LoggedOut();
+              _this48.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this46.lookup(_this46.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this46.data = data;
+              _this48.lookup(_this48.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this48.data = data;
               });
 
-              return _this46.lookup(_this46.listingBuyer.Lookingpostcode);
+              return _this48.lookup(_this48.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -9417,11 +9533,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this46.lookup(_this46.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this46.data = data;
+              _this48.lookup(_this48.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this48.data = data;
               });
 
-              return _this46.lookup(_this46.listingBuyer.Currentpostcode);
+              return _this48.lookup(_this48.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -9430,7 +9546,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this47 = this;
+          var _this49 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -9438,13 +9554,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.EditListingBuyerService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this47.uid) {
-                _this47.user.Name = element.data().Name;
-                _this47.user.email = element.data().email;
-                _this47.user.DOB = element.data().DOB.toDate();
-                _this47.user.Phone = element.data().Phone;
-                _this47.user.title = element.data().title;
-                console.log(_this47.user.DOB);
+              if (element.data().uid == _this49.uid) {
+                _this49.user.Name = element.data().Name;
+                _this49.user.email = element.data().email;
+                _this49.user.DOB = element.data().DOB.toDate();
+                _this49.user.Phone = element.data().Phone;
+                _this49.user.title = element.data().title;
+                console.log(_this49.user.DOB);
               }
             });
           });
@@ -9622,20 +9738,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this48 = this;
+          var _this50 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this48.postcodeCoordinates = data;
-            _this48.listingBuyer.longitude = _this48.postcodeCoordinates.result.longitude, _this48.listingBuyer.latitude = _this48.postcodeCoordinates.result.latitude, _this48.listingBuyer.UserId = _this48.userData.uid;
+            _this50.postcodeCoordinates = data;
+            _this50.listingBuyer.longitude = _this50.postcodeCoordinates.result.longitude, _this50.listingBuyer.latitude = _this50.postcodeCoordinates.result.latitude, _this50.listingBuyer.UserId = _this50.userData.uid;
           });
           this.listingBuyer.UserId = this.userData.uid;
           this.listingBuyer.longitude, this.listingBuyer.latitude, this.return = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(function (data) {
-            _this48.lookuplatlong();
+            _this50.lookuplatlong();
 
-            _this48.isLoading = false;
+            _this50.isLoading = false;
 
-            var dialogRef = _this48.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+            var dialogRef = _this50.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
           });
         }
       }, {
@@ -9693,44 +9809,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this49 = this;
+          var _this51 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this49.isLoading = false;
+            _this51.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this50 = this;
+          var _this52 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this50.isLoading = false;
+            _this52.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this51 = this;
+          var _this53 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this51.isLoading = false;
+            _this53.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this52 = this;
+          var _this54 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this52.isLoading = false;
+            _this54.isLoading = false;
           });
         }
       }, {
@@ -9752,17 +9868,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this53 = this;
+          var _this55 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this53.isLoading = false;
-            _this53.user.Name = displayName;
-            _this53.user.DOB = null;
-            _this53.user.Phone = null;
-            _this53.return = _this53.EditListingBuyerService.createUserCustomer(_this53.user).then(function (user) {
-              if (_this53.user != null) {
-                _this53.isLoading = false;
-                _this53.overlay = true;
+            _this55.isLoading = false;
+            _this55.user.Name = displayName;
+            _this55.user.DOB = null;
+            _this55.user.Phone = null;
+            _this55.return = _this55.EditListingBuyerService.createUserCustomer(_this55.user).then(function (user) {
+              if (_this55.user != null) {
+                _this55.isLoading = false;
+                _this55.overlay = true;
               }
             });
           });
@@ -9823,12 +9939,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "lookuplatlong",
         value: function lookuplatlong() {
-          var _this54 = this;
+          var _this56 = this;
 
           //Lookup Declared Function
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this54.postcodeCoordinates = data;
-            _this54.listingBuyer.longitude = _this54.postcodeCoordinates.result.longitude, _this54.listingBuyer.latitude = _this54.postcodeCoordinates.result.latitude, _this54.listingBuyer.UserId = _this54.userData.uid;
+            _this56.postcodeCoordinates = data;
+            _this56.listingBuyer.longitude = _this56.postcodeCoordinates.result.longitude, _this56.listingBuyer.latitude = _this56.postcodeCoordinates.result.latitude, _this56.listingBuyer.UserId = _this56.userData.uid;
           });
         }
       }]);
@@ -9946,26 +10062,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function notificationCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee15() {
-            return regeneratorRuntime.wrap(function _callee15$(_context15) {
+          regeneratorRuntime.mark(function _callee16() {
+            return regeneratorRuntime.wrap(function _callee16$(_context16) {
               while (1) {
-                switch (_context15.prev = _context15.next) {
+                switch (_context16.prev = _context16.next) {
                   case 0:
-                    _context15.next = 2;
+                    _context16.next = 2;
                     return this.notificationref.doc(key).collection("").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this.return = _context15.sent;
-                    return _context15.abrupt("return", true);
+                    this.return = _context16.sent;
+                    return _context16.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context15.stop();
+                    return _context16.stop();
                 }
               }
-            }, _callee15, this);
+            }, _callee16, this);
           }));
         } //Create Customer ListingBuyer
 
@@ -9974,21 +10090,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createCustomer(uid, docid, listingBuyer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee16() {
-            return regeneratorRuntime.wrap(function _callee16$(_context16) {
+          regeneratorRuntime.mark(function _callee17() {
+            return regeneratorRuntime.wrap(function _callee17$(_context17) {
               while (1) {
-                switch (_context16.prev = _context16.next) {
+                switch (_context17.prev = _context17.next) {
                   case 0:
-                    return _context16.abrupt("return", this.db.collection("listingBuyer").doc(uid).collection("requirements").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
+                    return _context17.abrupt("return", this.db.collection("listingBuyer").doc(uid).collection("requirements").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
                       console.log("Document successfully written!");
                     }));
 
                   case 2:
                   case "end":
-                    return _context16.stop();
+                    return _context17.stop();
                 }
               }
-            }, _callee16, this);
+            }, _callee17, this);
           }));
         }
       }, {
@@ -10386,22 +10502,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this55 = this;
+          var _this57 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this55.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this55.userData));
+              _this57.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this57.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this55.LoggedIn();
+              _this57.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this55.LoggedOut();
+              _this57.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -10409,11 +10525,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this55.lookup(_this55.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this55.data = data;
+              _this57.lookup(_this57.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this57.data = data;
               });
 
-              return _this55.lookup(_this55.listingSeller.Lookingpostcode);
+              return _this57.lookup(_this57.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -10423,54 +10539,54 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this55.lookup(_this55.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this55.data = data;
+              _this57.lookup(_this57.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this57.data = data;
               });
 
-              return _this55.lookup(_this55.listingSeller.Currentpostcode);
+              return _this57.lookup(_this57.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this55.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
-            _this55.listingSeller.LookingAddress = params.get("LookingAddress");
-            _this55.listingSeller.LookingTown = params.get("LookingTown");
-            _this55.listingSeller.Lookingstate = params.get("Lookingstate");
-            _this55.listingSeller.Country = params.get("Country");
-            _this55.listingSeller.PropertyType = params.get("PropertyType");
-            _this55.listingSeller.Maxrooms = params.get("Maxrooms");
-            _this55.listingSeller.MaxAmount = params.get("MaxAmount");
-            _this55.listingSeller.ownership = params.get("ownership");
-            _this55.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
-            _this55.listingSeller.Maxreception = params.get("Maxreception");
-            _this55.listingSeller.PropertyCondition = params.get("PropertyCondition");
-            _this55.Features = params.get("features");
-            _this55.listingSeller.Country = params.get("Country");
-            _this55.docid = params.get("sellerId");
-            _this55.listingSeller.PropertyFor = params.get("PropertyFor");
+            _this57.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
+            _this57.listingSeller.LookingAddress = params.get("LookingAddress");
+            _this57.listingSeller.LookingTown = params.get("LookingTown");
+            _this57.listingSeller.Lookingstate = params.get("Lookingstate");
+            _this57.listingSeller.Country = params.get("Country");
+            _this57.listingSeller.PropertyType = params.get("PropertyType");
+            _this57.listingSeller.Maxrooms = params.get("Maxrooms");
+            _this57.listingSeller.MaxAmount = params.get("MaxAmount");
+            _this57.listingSeller.ownership = params.get("ownership");
+            _this57.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
+            _this57.listingSeller.Maxreception = params.get("Maxreception");
+            _this57.listingSeller.PropertyCondition = params.get("PropertyCondition");
+            _this57.Features = params.get("features");
+            _this57.listingSeller.Country = params.get("Country");
+            _this57.docid = params.get("sellerId");
+            _this57.listingSeller.PropertyFor = params.get("PropertyFor");
           });
           this.lookingLatLong();
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this56 = this;
+          var _this58 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this56.uid) {
-                _this56.user.Name = element.data().Name;
-                _this56.user.Email = element.data().email;
-                _this56.user.DOB = element.data().DOB.toDate();
-                _this56.user.Phone = element.data().Phone;
-                _this56.user.title = element.data().title;
-                _this56.user.Currentpostcode = element.data().Currentpostcode;
-                _this56.user.CurrentAddress = element.data().Currentaddress;
-                _this56.user.CurrentTown = element.data().CurrentTowncity;
-                _this56.user.Currentstate = element.data().Currentstate;
+              if (element.data().uid == _this58.uid) {
+                _this58.user.Name = element.data().Name;
+                _this58.user.Email = element.data().email;
+                _this58.user.DOB = element.data().DOB.toDate();
+                _this58.user.Phone = element.data().Phone;
+                _this58.user.title = element.data().title;
+                _this58.user.Currentpostcode = element.data().Currentpostcode;
+                _this58.user.CurrentAddress = element.data().Currentaddress;
+                _this58.user.CurrentTown = element.data().CurrentTowncity;
+                _this58.user.Currentstate = element.data().Currentstate;
                 console.log(element.data().Name);
               }
             });
@@ -10491,21 +10607,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this57 = this;
+          var _this59 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this57.postcodeCoordinates = data;
-            _this57.listingSeller.longitude = _this57.postcodeCoordinates.result.longitude, _this57.listingSeller.latitude = _this57.postcodeCoordinates.result.latitude, _this57.listingSeller.UserId = _this57.userData.uid;
-            console.log(_this57.postcodeCoordinates);
+            _this59.postcodeCoordinates = data;
+            _this59.listingSeller.longitude = _this59.postcodeCoordinates.result.longitude, _this59.listingSeller.latitude = _this59.postcodeCoordinates.result.latitude, _this59.listingSeller.UserId = _this59.userData.uid;
+            console.log(_this59.postcodeCoordinates);
           });
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
           this.listingSeller.longitude, this.listingSeller.latitude, this.listingSeller.username = this.user.Name, this.listingSeller.usertitle = this.user.title;
           this.return = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(function (data) {
-            _this57.isLoading = false;
+            _this59.isLoading = false;
 
-            var dialogRef = _this57.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+            var dialogRef = _this59.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -10696,44 +10812,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this58 = this;
+          var _this60 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this58.isLoading = false;
+            _this60.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this59 = this;
+          var _this61 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this59.isLoading = false;
+            _this61.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this60 = this;
+          var _this62 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this60.isLoading = false;
+            _this62.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this61 = this;
+          var _this63 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this61.isLoading = false;
+            _this63.isLoading = false;
           });
         }
       }, {
@@ -10755,16 +10871,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this62 = this;
+          var _this64 = this;
 
           console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
-            _this62.isLoading = false;
-            _this62.user.Name = displayName;
-            _this62.user.DOB = null;
-            _this62.user.Phone = null;
-            _this62.return = _this62.fillFormsService.createUserCustomer(_this62.user).then(function (data) {
-              _this62.overlay = true;
+            _this64.isLoading = false;
+            _this64.user.Name = displayName;
+            _this64.user.DOB = null;
+            _this64.user.Phone = null;
+            _this64.return = _this64.fillFormsService.createUserCustomer(_this64.user).then(function (data) {
+              _this64.overlay = true;
               console.log(data);
             });
           });
@@ -10816,12 +10932,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "lookingLatLong",
         value: function lookingLatLong() {
-          var _this63 = this;
+          var _this65 = this;
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this63.postcodeCoordinates = data;
-            _this63.listingSeller.longitude = _this63.postcodeCoordinates.result.longitude, _this63.listingSeller.latitude = _this63.postcodeCoordinates.result.latitude, _this63.listingSeller.UserId = _this63.userData.uid;
-            console.log(_this63.postcodeCoordinates);
+            _this65.postcodeCoordinates = data;
+            _this65.listingSeller.longitude = _this65.postcodeCoordinates.result.longitude, _this65.listingSeller.latitude = _this65.postcodeCoordinates.result.latitude, _this65.listingSeller.UserId = _this65.userData.uid;
+            console.log(_this65.postcodeCoordinates);
           });
         }
       }]);
@@ -10932,26 +11048,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function notificationCustomer(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee17() {
-            return regeneratorRuntime.wrap(function _callee17$(_context17) {
+          regeneratorRuntime.mark(function _callee18() {
+            return regeneratorRuntime.wrap(function _callee18$(_context18) {
               while (1) {
-                switch (_context17.prev = _context17.next) {
+                switch (_context18.prev = _context18.next) {
                   case 0:
-                    _context17.next = 2;
+                    _context18.next = 2;
                     return this.notificationref.doc(key).collection("seller").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this.return = _context17.sent;
-                    return _context17.abrupt("return", true);
+                    this.return = _context18.sent;
+                    return _context18.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context17.stop();
+                    return _context18.stop();
                 }
               }
-            }, _callee17, this);
+            }, _callee18, this);
           }));
         }
       }, {
@@ -11011,21 +11127,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createCustomer(uid, docid, listingBuyer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee18() {
-            return regeneratorRuntime.wrap(function _callee18$(_context18) {
+          regeneratorRuntime.mark(function _callee19() {
+            return regeneratorRuntime.wrap(function _callee19$(_context19) {
               while (1) {
-                switch (_context18.prev = _context18.next) {
+                switch (_context19.prev = _context19.next) {
                   case 0:
-                    return _context18.abrupt("return", this.db.collection("listingSeller").doc(uid).collection("properties").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
+                    return _context19.abrupt("return", this.db.collection("listingSeller").doc(uid).collection("properties").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
                       console.log("Document successfully written!");
                     }));
 
                   case 2:
                   case "end":
-                    return _context18.stop();
+                    return _context19.stop();
                 }
               }
-            }, _callee18, this);
+            }, _callee19, this);
           }));
         }
       }]);
@@ -11231,17 +11347,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this64 = this;
+          var _this66 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this64.Lookingpostcode = params.get("Lookingpostcode");
-            _this64.ChainStatus = params.get("ChainStatus");
-            _this64.FinancialPosition = params.get("FinancialPosition");
-            _this64.Type = params.get("PropertyType");
-            _this64.Position = params.get("Position");
-            _this64.SearchRadius = params.get("SearchRadius");
-            _this64.MaxAmount = params.get("MaxAmount");
-            _this64.MinAmount = params.get("MinAmount");
+            _this66.Lookingpostcode = params.get("Lookingpostcode");
+            _this66.ChainStatus = params.get("ChainStatus");
+            _this66.FinancialPosition = params.get("FinancialPosition");
+            _this66.Type = params.get("PropertyType");
+            _this66.Position = params.get("Position");
+            _this66.SearchRadius = params.get("SearchRadius");
+            _this66.MaxAmount = params.get("MaxAmount");
+            _this66.MinAmount = params.get("MinAmount");
           });
         }
       }, {
@@ -11354,16 +11470,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this65 = this;
+          var _this67 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this65.Lookingpostcode = params.get("Lookingpostcode");
-            _this65.Type = params.get("PropertyType");
-            _this65.MaxAmount = params.get("MaxAmount");
-            _this65.Maxrooms = params.get("Maxrooms");
-            _this65.Maxreception = params.get("Maxreception");
-            _this65.PropertyCondition = params.get("PropertyCondition");
-            _this65.Maxbathrooms = params.get("Maxbathrooms");
+            _this67.Lookingpostcode = params.get("Lookingpostcode");
+            _this67.Type = params.get("PropertyType");
+            _this67.MaxAmount = params.get("MaxAmount");
+            _this67.Maxrooms = params.get("Maxrooms");
+            _this67.Maxreception = params.get("Maxreception");
+            _this67.PropertyCondition = params.get("PropertyCondition");
+            _this67.Maxbathrooms = params.get("Maxbathrooms");
           });
         }
       }, {
@@ -11507,22 +11623,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this66 = this;
+          var _this68 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this66.propertyRequirementDetails.push({
+              _this68.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
-            console.log(_this66.propertyRequirementDetails);
+            console.log(_this68.propertyRequirementDetails);
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this66.propertyDetails.push({
+              _this68.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -11725,23 +11841,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerAwaitingDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this67 = this;
+          var _this69 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this67.Lookingpostcode = params.get("Lookingpostcode");
-            _this67.Lookingstate = params.get("Lookingstate");
-            _this67.LookingAddress = params.get("LookingAddress");
-            _this67.norooms = params.get("Roomsmax");
-            _this67.PropertyCondition = params.get("PropertyCondition");
-            _this67.MaxAmount = params.get("MaxAmount");
-            _this67.PropertyType = params.get("PropertyType");
-            _this67.ownership = params.get("ownership");
-            _this67.features = params.get("features");
-            _this67.matchStatus = params.get("matchStatus");
-            _this67.propertyId = params.get("propertyId");
-            _this67.expressed = params.get("expressed");
+            _this69.Lookingpostcode = params.get("Lookingpostcode");
+            _this69.Lookingstate = params.get("Lookingstate");
+            _this69.LookingAddress = params.get("LookingAddress");
+            _this69.norooms = params.get("Roomsmax");
+            _this69.PropertyCondition = params.get("PropertyCondition");
+            _this69.MaxAmount = params.get("MaxAmount");
+            _this69.PropertyType = params.get("PropertyType");
+            _this69.ownership = params.get("ownership");
+            _this69.features = params.get("features");
+            _this69.matchStatus = params.get("matchStatus");
+            _this69.propertyId = params.get("propertyId");
+            _this69.expressed = params.get("expressed");
           });
         }
       }, {
@@ -11865,45 +11981,45 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this68 = this;
+          var _this70 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this68.Lookingpostcode = params.get("Lookingpostcode");
-            _this68.Lookingstate = params.get("Lookingstate");
-            _this68.LookingAddress = params.get("LookingAddress");
-            _this68.norooms = params.get("Roomsmax");
-            _this68.PropertyCondition = params.get("PropertyCondition");
-            _this68.MaxAmount = params.get("MaxAmount");
-            _this68.PropertyType = params.get("PropertyType");
-            _this68.ownership = params.get("ownership");
-            _this68.features = params.get("features");
-            _this68.matchStatus = params.get("matchStatus");
-            _this68.propertyId = params.get("propertyId");
-            _this68.expressed = params.get("expressed");
-            _this68.userId = params.get("UserId");
-            console.log(_this68.userId);
+            _this70.Lookingpostcode = params.get("Lookingpostcode");
+            _this70.Lookingstate = params.get("Lookingstate");
+            _this70.LookingAddress = params.get("LookingAddress");
+            _this70.norooms = params.get("Roomsmax");
+            _this70.PropertyCondition = params.get("PropertyCondition");
+            _this70.MaxAmount = params.get("MaxAmount");
+            _this70.PropertyType = params.get("PropertyType");
+            _this70.ownership = params.get("ownership");
+            _this70.features = params.get("features");
+            _this70.matchStatus = params.get("matchStatus");
+            _this70.propertyId = params.get("propertyId");
+            _this70.expressed = params.get("expressed");
+            _this70.userId = params.get("UserId");
+            console.log(_this70.userId);
           });
           this.MatchesBuyerService.getMatchesSellerProperties(this.userId).then(function (res) {
             res.forEach(function (element) {
               console.log(element.data());
-              _this68.sellerProperty = element.data();
+              _this70.sellerProperty = element.data();
             });
           });
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this69 = this;
+          var _this71 = this;
 
           this.return = this.MatchesBuyerService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this69.createSellerNotification();
+              _this71.createSellerNotification();
 
-              _this69.createOther();
+              _this71.createOther();
 
-              _this69.backClicked();
+              _this71.backClicked();
             }
           });
         }
@@ -12035,43 +12151,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ExpressInterest(uid, propertyId) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee19() {
-            return regeneratorRuntime.wrap(function _callee19$(_context19) {
-              while (1) {
-                switch (_context19.prev = _context19.next) {
-                  case 0:
-                    _context19.next = 2;
-                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
-                      propertyId: propertyId
-                    }).then(function (data) {
-                      console.log("expressInterest Document Buyer successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context19.sent;
-                    return _context19.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context19.stop();
-                }
-              }
-            }, _callee19, this);
-          }));
-        }
-      }, {
-        key: "createNotification",
-        value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee20() {
             return regeneratorRuntime.wrap(function _callee20$(_context20) {
               while (1) {
                 switch (_context20.prev = _context20.next) {
                   case 0:
                     _context20.next = 2;
-                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
+                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
+                      propertyId: propertyId
+                    }).then(function (data) {
+                      console.log("expressInterest Document Buyer successfully written!");
                     });
 
                   case 2:
@@ -12087,13 +12176,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           }));
         }
       }, {
-        key: "getMatchesSellerProperties",
-        value: function getMatchesSellerProperties(uid) {
-          return this.db.collection("matchesSeller").doc(uid).collection("matches").ref.get();
-        }
-      }, {
-        key: "matchesBuyerCreate",
-        value: function matchesBuyerCreate(key, customer) {
+        key: "createNotification",
+        value: function createNotification(UserId, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee21() {
@@ -12102,8 +12186,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 switch (_context21.prev = _context21.next) {
                   case 0:
                     _context21.next = 2;
-                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("matchesBuyer successfully written!");
+                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
                     });
 
                   case 2:
@@ -12116,6 +12200,38 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee21, this);
+          }));
+        }
+      }, {
+        key: "getMatchesSellerProperties",
+        value: function getMatchesSellerProperties(uid) {
+          return this.db.collection("matchesSeller").doc(uid).collection("matches").ref.get();
+        }
+      }, {
+        key: "matchesBuyerCreate",
+        value: function matchesBuyerCreate(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee22() {
+            return regeneratorRuntime.wrap(function _callee22$(_context22) {
+              while (1) {
+                switch (_context22.prev = _context22.next) {
+                  case 0:
+                    _context22.next = 2;
+                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("matchesBuyer successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context22.sent;
+                    return _context22.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context22.stop();
+                }
+              }
+            }, _callee22, this);
           }));
         }
       }]);
@@ -12193,43 +12309,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ExpressInterest(uid, propertyId) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee22() {
-            return regeneratorRuntime.wrap(function _callee22$(_context22) {
-              while (1) {
-                switch (_context22.prev = _context22.next) {
-                  case 0:
-                    _context22.next = 2;
-                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
-                      propertyId: propertyId
-                    }).then(function (data) {
-                      console.log("expressInterest Document seller successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context22.sent;
-                    return _context22.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context22.stop();
-                }
-              }
-            }, _callee22, this);
-          }));
-        }
-      }, {
-        key: "createNotification",
-        value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee23() {
             return regeneratorRuntime.wrap(function _callee23$(_context23) {
               while (1) {
                 switch (_context23.prev = _context23.next) {
                   case 0:
                     _context23.next = 2;
-                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
+                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
+                      propertyId: propertyId
+                    }).then(function (data) {
+                      console.log("expressInterest Document seller successfully written!");
                     });
 
                   case 2:
@@ -12242,6 +12331,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee23, this);
+          }));
+        }
+      }, {
+        key: "createNotification",
+        value: function createNotification(UserId, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee24() {
+            return regeneratorRuntime.wrap(function _callee24$(_context24) {
+              while (1) {
+                switch (_context24.prev = _context24.next) {
+                  case 0:
+                    _context24.next = 2;
+                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context24.sent;
+                    return _context24.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context24.stop();
+                }
+              }
+            }, _callee24, this);
           }));
         }
       }]);
@@ -12339,15 +12455,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this70 = this;
+          var _this72 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this70.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
+            _this72.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
 
-            _this70.FinancialPosition = params.get("FinancialPosition");
-            _this70.Type = params.get("PropertyType");
-            _this70.Position = params.get("Position");
-            _this70.matchStatus = params.get("matchStatus");
+            _this72.FinancialPosition = params.get("FinancialPosition");
+            _this72.Type = params.get("PropertyType");
+            _this72.Position = params.get("Position");
+            _this72.matchStatus = params.get("matchStatus");
           });
         }
       }, {
@@ -12472,7 +12588,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this71 = this;
+          var _this73 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -12483,16 +12599,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this71.sellerProperty.push({
+              _this73.sellerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this71.propertyLength = _this71.sellerProperty.length;
+              _this73.propertyLength = _this73.sellerProperty.length;
             });
 
-            if (_this71.propertyLength > 0) {
-              _this71.getExpressedListingIds();
+            if (_this73.propertyLength > 0) {
+              _this73.getExpressedListingIds();
             }
           }); // Fetch details Seller
 
@@ -12500,28 +12616,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             res.forEach(function (element) {
               console.log(element.data());
 
-              _this71.buyerProperty.push({
+              _this73.buyerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this71.sellerLength = _this71.buyerProperty.length;
+              _this73.sellerLength = _this73.buyerProperty.length;
             });
 
-            if (_this71.sellerLength > 0) {
-              _this71.getExpressedListingIds();
+            if (_this73.sellerLength > 0) {
+              _this73.getExpressedListingIds();
             }
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this72 = this;
+          var _this74 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this72.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this72.distinctExpressedUid.push(item.data().propertyId);
+              if (_this74.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this74.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -12636,26 +12752,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createNotification(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee24() {
-            return regeneratorRuntime.wrap(function _callee24$(_context24) {
+          regeneratorRuntime.mark(function _callee25() {
+            return regeneratorRuntime.wrap(function _callee25$(_context25) {
               while (1) {
-                switch (_context24.prev = _context24.next) {
+                switch (_context25.prev = _context25.next) {
                   case 0:
-                    _context24.next = 2;
+                    _context25.next = 2;
                     return this.customersRef.doc(key).collection("notification").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this.return = _context24.sent;
-                    return _context24.abrupt("return", true);
+                    this.return = _context25.sent;
+                    return _context25.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context24.stop();
+                    return _context25.stop();
                 }
               }
-            }, _callee24, this);
+            }, _callee25, this);
           }));
         }
       }, {
@@ -12780,50 +12896,50 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this73 = this;
+          var _this75 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this73.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this73.Lookingstate = params.get("Lookingstate");
-            _this73.LookingAddress = params.get("LookingAddress");
-            _this73.norooms = params.get("Roomsmax");
-            _this73.PropertyCondition = params.get("PropertyCondition");
-            _this73.MaxAmount = params.get("MaxAmount");
-            _this73.PropertyType = params.get("PropertyType").trim();
-            _this73.ownership = params.get("ownership");
-            _this73.features = params.get("features");
-            _this73.propertyId = params.get("propertyId");
-            _this73.UserId = params.get("userId").trim();
-            console.log(_this73.Lookingpostcode);
+            _this75.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this75.Lookingstate = params.get("Lookingstate");
+            _this75.LookingAddress = params.get("LookingAddress");
+            _this75.norooms = params.get("Roomsmax");
+            _this75.PropertyCondition = params.get("PropertyCondition");
+            _this75.MaxAmount = params.get("MaxAmount");
+            _this75.PropertyType = params.get("PropertyType").trim();
+            _this75.ownership = params.get("ownership");
+            _this75.features = params.get("features");
+            _this75.propertyId = params.get("propertyId");
+            _this75.UserId = params.get("userId").trim();
+            console.log(_this75.Lookingpostcode);
           });
           this.AgentService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this73.agents.push(elements.data());
+              _this75.agents.push(elements.data());
             });
           });
           this.AgentService.getMatchesSellerProperties(this.UserId).then(function (res) {
             res.forEach(function (element) {
-              _this73.sellerProperty.push(element.data());
+              _this75.sellerProperty.push(element.data());
 
               console.log(element.data().Lookingpostcode.replace(/\s/g, ""));
 
-              if (_this73.Lookingpostcode == element.data().Lookingpostcode.replace(/\s/g, "") && _this73.PropertyType == element.data().PropertyType) {
+              if (_this75.Lookingpostcode == element.data().Lookingpostcode.replace(/\s/g, "") && _this75.PropertyType == element.data().PropertyType) {
                 console.log(element.data().LookingAddress);
-                _this73.sellerPropertyLookingAddress = element.data().LookingAddress.replace(/\s/g, "");
-                _this73.sellerPropertyLookingTown = element.data().LookingTown.replace(/\s/g, "");
-                _this73.sellerPropertyLookingpostcode = element.data().Lookingpostcode.replace(/\s/g, "");
-                _this73.sellerPropertyLookingstate = element.data().Lookingstate.replace(/\s/g, "");
-                _this73.sellerPropertyMaxAmount = element.data().MaxAmount.replace(/\s/g, "");
-                _this73.sellerPropertyMaxbathrooms = element.data().Maxbathrooms.replace(/\s/g, "");
-                _this73.sellerPropertyMaxreception = element.data().Maxreception.replace(/\s/g, "");
-                _this73.sellerPropertyMaxrooms = element.data().Maxrooms.replace(/\s/g, "");
-                _this73.sellerPropertyPropertyCondition = element.data().PropertyCondition.replace(/\s/g, "");
-                _this73.sellerPropertyPropertyType = element.data().PropertyType;
-                _this73.sellerPropertyUserId = element.data().UserId;
-                _this73.sellerPropertyfeatures = element.data().features.replace(/\s/g, "");
-                _this73.sellerPropertyownership = element.data().ownership.replace(/\s/g, "");
+                _this75.sellerPropertyLookingAddress = element.data().LookingAddress.replace(/\s/g, "");
+                _this75.sellerPropertyLookingTown = element.data().LookingTown.replace(/\s/g, "");
+                _this75.sellerPropertyLookingpostcode = element.data().Lookingpostcode.replace(/\s/g, "");
+                _this75.sellerPropertyLookingstate = element.data().Lookingstate.replace(/\s/g, "");
+                _this75.sellerPropertyMaxAmount = element.data().MaxAmount.replace(/\s/g, "");
+                _this75.sellerPropertyMaxbathrooms = element.data().Maxbathrooms.replace(/\s/g, "");
+                _this75.sellerPropertyMaxreception = element.data().Maxreception.replace(/\s/g, "");
+                _this75.sellerPropertyMaxrooms = element.data().Maxrooms.replace(/\s/g, "");
+                _this75.sellerPropertyPropertyCondition = element.data().PropertyCondition.replace(/\s/g, "");
+                _this75.sellerPropertyPropertyType = element.data().PropertyType;
+                _this75.sellerPropertyUserId = element.data().UserId;
+                _this75.sellerPropertyfeatures = element.data().features.replace(/\s/g, "");
+                _this75.sellerPropertyownership = element.data().ownership.replace(/\s/g, "");
               }
             });
           });
@@ -12843,11 +12959,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this74 = this;
+          var _this76 = this;
 
           this.return = this.AgentService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this74.createSellerNotification();
+              _this76.createSellerNotification();
             }
           });
         }
@@ -12859,7 +12975,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
-          var _this75 = this;
+          var _this77 = this;
 
           console.log(this.UserId);
           this.notification = {
@@ -12870,9 +12986,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             propertyId: this.propertyId.trim()
           };
           this.return = this.AgentService.createNotification(this.UserId, this.notification).then(function (data) {
-            _this75.createBuyerEntry();
+            _this77.createBuyerEntry();
 
-            _this75._router.navigate(["/mymatches"]);
+            _this77._router.navigate(["/mymatches"]);
           });
         }
       }, {
@@ -12994,43 +13110,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ExpressInterest(uid, propertyId) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee25() {
-            return regeneratorRuntime.wrap(function _callee25$(_context25) {
-              while (1) {
-                switch (_context25.prev = _context25.next) {
-                  case 0:
-                    _context25.next = 2;
-                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
-                      propertyId: propertyId
-                    }).then(function (data) {
-                      console.log("expressInterest Document seller successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context25.sent;
-                    return _context25.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context25.stop();
-                }
-              }
-            }, _callee25, this);
-          }));
-        }
-      }, {
-        key: "createNotification",
-        value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee26() {
             return regeneratorRuntime.wrap(function _callee26$(_context26) {
               while (1) {
                 switch (_context26.prev = _context26.next) {
                   case 0:
                     _context26.next = 2;
-                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
+                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
+                      propertyId: propertyId
+                    }).then(function (data) {
+                      console.log("expressInterest Document seller successfully written!");
                     });
 
                   case 2:
@@ -13044,11 +13133,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               }
             }, _callee26, this);
           }));
-        } //create Database Buyer Matches
-
+        }
       }, {
-        key: "matchesSellerCreate",
-        value: function matchesSellerCreate(key, customer) {
+        key: "createNotification",
+        value: function createNotification(UserId, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee27() {
@@ -13057,7 +13145,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 switch (_context27.prev = _context27.next) {
                   case 0:
                     _context27.next = 2;
-                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
@@ -13072,15 +13160,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               }
             }, _callee27, this);
           }));
-        }
+        } //create Database Buyer Matches
+
       }, {
-        key: "getMatchesSellerProperties",
-        value: function getMatchesSellerProperties(uid) {
-          return this.db.collection("matchesBuyer").doc(uid).collection("matches").ref.get();
-        }
-      }, {
-        key: "matchesBuyerCreate",
-        value: function matchesBuyerCreate(key, customer) {
+        key: "matchesSellerCreate",
+        value: function matchesSellerCreate(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee28() {
@@ -13089,8 +13173,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 switch (_context28.prev = _context28.next) {
                   case 0:
                     _context28.next = 2;
-                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("matchesBuyer successfully written!");
+                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
                     });
 
                   case 2:
@@ -13103,6 +13187,38 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee28, this);
+          }));
+        }
+      }, {
+        key: "getMatchesSellerProperties",
+        value: function getMatchesSellerProperties(uid) {
+          return this.db.collection("matchesBuyer").doc(uid).collection("matches").ref.get();
+        }
+      }, {
+        key: "matchesBuyerCreate",
+        value: function matchesBuyerCreate(key, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee29() {
+            return regeneratorRuntime.wrap(function _callee29$(_context29) {
+              while (1) {
+                switch (_context29.prev = _context29.next) {
+                  case 0:
+                    _context29.next = 2;
+                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("matchesBuyer successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context29.sent;
+                    return _context29.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context29.stop();
+                }
+              }
+            }, _callee29, this);
           }));
         }
       }]);
@@ -13216,28 +13332,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this76 = this;
+          var _this78 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this76.Lookingpostcode = params.get("Lookingpostcode");
-            _this76.ChainStatus = params.get("ChainStatus");
-            _this76.Conditions = params.get("Conditions");
-            _this76.SearchRadius = params.get("SearchRadius");
-            _this76.Position = params.get("Position");
-            _this76.MinAmount = params.get("MinAmount");
-            _this76.MaxAmount = params.get("MaxAmount");
-            _this76.Type = params.get("PropertyType");
-            _this76.matchStatus = params.get("matchStatus");
-            _this76.propertyId = params.get("propertyId");
-            _this76.expressed = params.get("expressed");
-            _this76.UserId = params.get("UserId");
-            console.log(_this76.UserId);
+            _this78.Lookingpostcode = params.get("Lookingpostcode");
+            _this78.ChainStatus = params.get("ChainStatus");
+            _this78.Conditions = params.get("Conditions");
+            _this78.SearchRadius = params.get("SearchRadius");
+            _this78.Position = params.get("Position");
+            _this78.MinAmount = params.get("MinAmount");
+            _this78.MaxAmount = params.get("MaxAmount");
+            _this78.Type = params.get("PropertyType");
+            _this78.matchStatus = params.get("matchStatus");
+            _this78.propertyId = params.get("propertyId");
+            _this78.expressed = params.get("expressed");
+            _this78.UserId = params.get("UserId");
+            console.log(_this78.UserId);
           });
           this.SelectedMyMatchesService.getMatchesSellerProperties(this.UserId).then(function (res) {
             res.forEach(function (element) {
-              _this76.sellerProperty.push(element.data());
+              _this78.sellerProperty.push(element.data());
 
               console.log(element.data().UserId);
             });
@@ -13251,14 +13367,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this77 = this;
+          var _this79 = this;
 
           this.return = this.SelectedMyMatchesService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {}
 
-            _this77.createSellerNotification();
+            _this79.createSellerNotification();
 
-            _this77._router.navigate(["/selectAgent/" + _this77.Lookingpostcode + "/" + _this77.Lookingstate + "/" + _this77.LookingAddress + "/" + _this77.norooms + "/" + _this77.PropertyCondition + "/" + _this77.MaxAmount + "/" + _this77.Type + "/" + _this77.ownership + "/" + _this77.features + "/" + _this77.propertyId + "/" + _this77.UserId]);
+            _this79._router.navigate(["/selectAgent/" + _this79.Lookingpostcode + "/" + _this79.Lookingstate + "/" + _this79.LookingAddress + "/" + _this79.norooms + "/" + _this79.PropertyCondition + "/" + _this79.MaxAmount + "/" + _this79.Type + "/" + _this79.ownership + "/" + _this79.features + "/" + _this79.propertyId + "/" + _this79.UserId]);
           });
         }
       }, {
@@ -13357,43 +13473,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function matchesSellerCreate(key, customer) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee29() {
-            return regeneratorRuntime.wrap(function _callee29$(_context29) {
-              while (1) {
-                switch (_context29.prev = _context29.next) {
-                  case 0:
-                    _context29.next = 2;
-                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
-                    });
-
-                  case 2:
-                    this.return = _context29.sent;
-                    return _context29.abrupt("return", true);
-
-                  case 4:
-                  case "end":
-                    return _context29.stop();
-                }
-              }
-            }, _callee29, this);
-          }));
-        }
-      }, {
-        key: "ExpressInterest",
-        value: function ExpressInterest(uid, propertyId) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee30() {
             return regeneratorRuntime.wrap(function _callee30$(_context30) {
               while (1) {
                 switch (_context30.prev = _context30.next) {
                   case 0:
                     _context30.next = 2;
-                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
-                      propertyId: propertyId
-                    }).then(function (data) {
-                      console.log("expressInterest Document seller successfully written!");
+                    return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
                     });
 
                   case 2:
@@ -13409,8 +13496,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           }));
         }
       }, {
-        key: "createNotification",
-        value: function createNotification(UserId, customer) {
+        key: "ExpressInterest",
+        value: function ExpressInterest(uid, propertyId) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee31() {
@@ -13419,8 +13506,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 switch (_context31.prev = _context31.next) {
                   case 0:
                     _context31.next = 2;
-                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document successfully written!");
+                    return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
+                      propertyId: propertyId
+                    }).then(function (data) {
+                      console.log("expressInterest Document seller successfully written!");
                     });
 
                   case 2:
@@ -13433,6 +13522,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee31, this);
+          }));
+        }
+      }, {
+        key: "createNotification",
+        value: function createNotification(UserId, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee32() {
+            return regeneratorRuntime.wrap(function _callee32$(_context32) {
+              while (1) {
+                switch (_context32.prev = _context32.next) {
+                  case 0:
+                    _context32.next = 2;
+                    return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    });
+
+                  case 2:
+                    this.return = _context32.sent;
+                    return _context32.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context32.stop();
+                }
+              }
+            }, _callee32, this);
           }));
         }
       }, {
@@ -13534,19 +13650,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this78 = this;
+          var _this80 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this78.uid) {
-                _this78.user.Name = element.data().Name;
-                _this78.user.Email = element.data().email;
-                _this78.user.Phone = element.data().Phone;
-                _this78.user.DOB = element.data().DOB.toDate();
-                _this78.user.Phone = element.data().Phone;
-                _this78.user.Address = element.data().Currentaddress;
+              if (element.data().uid == _this80.uid) {
+                _this80.user.Name = element.data().Name;
+                _this80.user.Email = element.data().email;
+                _this80.user.Phone = element.data().Phone;
+                _this80.user.DOB = element.data().DOB.toDate();
+                _this80.user.Phone = element.data().Phone;
+                _this80.user.Address = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -13761,19 +13877,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this79 = this;
+          var _this81 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this79.uid) {
-                _this79.user.Name = element.data().Name;
-                _this79.user.Email = element.data().email;
-                _this79.user.Phone = element.data().Phone;
-                _this79.user.DOB = element.data().DOB.toDate();
-                _this79.user.Currentaddress = element.data().Currentaddress;
-                _this79.user.prefrence = element.data().prefrence;
+              if (element.data().uid == _this81.uid) {
+                _this81.user.Name = element.data().Name;
+                _this81.user.Email = element.data().email;
+                _this81.user.Phone = element.data().Phone;
+                _this81.user.DOB = element.data().DOB.toDate();
+                _this81.user.Currentaddress = element.data().Currentaddress;
+                _this81.user.prefrence = element.data().prefrence;
               }
             });
           });
@@ -13781,13 +13897,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this80 = this;
+          var _this82 = this;
 
           this.isLoading = true;
           this.return = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this80.isLoading = false;
+            _this82.isLoading = false;
 
-            _this80.alert();
+            _this82.alert();
           });
         }
       }, {
@@ -13969,20 +14085,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this81 = this;
+          var _this83 = this;
 
           this.initProfile();
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this81.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this81.userData));
+              _this83.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this83.userData));
 
-              _this81.LoggedIn();
+              _this83.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this81.LoggedOut();
+              _this83.LoggedOut();
             }
           });
         }
@@ -14007,38 +14123,38 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this82 = this;
+          var _this84 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this82.sellerProperty.push(element.data());
+                _this84.sellerProperty.push(element.data());
               }
             });
-            _this82.noSellerOfMatche = _this82.sellerProperty.length;
-            _this82.matches = _this82.buyerProperty.length + _this82.sellerProperty.length;
+            _this84.noSellerOfMatche = _this84.sellerProperty.length;
+            _this84.matches = _this84.buyerProperty.length + _this84.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this82.buyerProperty.push(element.data());
+              _this84.buyerProperty.push(element.data());
             });
-            _this82.noBuyerMatches = _this82.buyerProperty.length;
-            _this82.matches = _this82.buyerProperty.length + _this82.sellerProperty.length;
+            _this84.noBuyerMatches = _this84.buyerProperty.length;
+            _this84.matches = _this84.buyerProperty.length + _this84.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this83 = this;
+          var _this85 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this83.confirmInterest.push(item.data());
+              _this85.confirmInterest.push(item.data());
             });
-            _this83.notification = _this83.confirmInterest.length;
-            console.log(_this83.notification);
+            _this85.notification = _this85.confirmInterest.length;
+            console.log(_this85.notification);
           });
         }
       }, {
@@ -14096,22 +14212,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this84 = this;
+          var _this86 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this84.isLoading = false;
+            _this86.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this85 = this;
+          var _this87 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this85.isLoading = false;
+            _this87.isLoading = false;
             window.location.reload();
           });
         } //Signup Google
@@ -14119,13 +14235,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this86 = this;
+          var _this88 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this86.isLoading = false;
+            _this88.isLoading = false;
 
-            _this86.initProfile();
+            _this88.initProfile();
 
             window.location.reload();
           });
@@ -14133,13 +14249,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this87 = this;
+          var _this89 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this87.isLoading = false;
+            _this89.isLoading = false;
 
-            _this87.initProfile();
+            _this89.initProfile();
 
             window.location.reload();
           });
@@ -14164,22 +14280,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this88 = this;
+          var _this90 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this88.user.Name = displayName;
-            _this88.user.DOB = null;
-            _this88.user.Phone = null;
-            _this88.isLoading = true;
-            _this88.return = _this88.FormsService.createUserCustomer(_this88.user).then(function (data) {
-              if (_this88.user != null) {
-                _this88.isLoading = false;
+            _this90.user.Name = displayName;
+            _this90.user.DOB = null;
+            _this90.user.Phone = null;
+            _this90.isLoading = true;
+            _this90.return = _this90.FormsService.createUserCustomer(_this90.user).then(function (data) {
+              if (_this90.user != null) {
+                _this90.isLoading = false;
 
-                _this88.initProfile();
+                _this90.initProfile();
 
                 window.location.reload();
               } else {
-                _this88.isLoading = false;
+                _this90.isLoading = false;
               }
             });
           });
@@ -14347,13 +14463,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this89 = this;
+          var _this91 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this89.confirmInterest.push(item.data());
+              _this91.confirmInterest.push(item.data());
 
               console.log(item.data().time);
             });
@@ -15708,6 +15824,164 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
+  "./src/app/agenthome/agenthome.component.css":
+  /*!***************************************************!*\
+    !*** ./src/app/agenthome/agenthome.component.css ***!
+    \***************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAgenthomeAgenthomeComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".agent-top-heading-area\n{\n    height: 30vh;\n    background-color: var(--DARK-BLUE-COLOR);\n}\nimg.image-agent {\n    width: 25%;\n    border-radius: 50%;\n}\n.top-area-content-agent {\n    display: flex;\n    justify-content: space-evenly;\n    flex-direction: column;\n    align-items: center;\n    width: 100%;\n    height: 100%;\n}\n.top-area-agent-photo {\n    display: contents;\n}\nspan.compnay-name-text{\n    font-size: 1.3em;\n}\n.details-user-agent {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    margin: 2em 2em;\n}\n.edit-detail-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 2em;\n}\nspan.edit-button-span {\n    background-color: var(--DARK-BLUE-COLOR);;\n    color: white;\n    padding: 0.4em 3em;\n    font-family: 'Roboto-Bold';\n}\n/* cards Css */\n.matches-main-container\n{\n  \n    background-color: white;\n}\n.thanku-section {\n    background-color: white;\n    flex-direction: column;\n    align-items: center;\n    margin: 0px !important;\n    padding-bottom: 0px !important;\n}\n.thanku-p-section\n{\n    font-size: 13px;\n    text-align: center;\n}\n.match-section\n{\n  \n    display: flex;\n    justify-content: center;\n    align-items: center;\n    \n}\n.thank-text {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    position: absolute;\n    top: 12vh;\n    background-color: whie;\n    background: #ffffffdb;\n    padding: 20px;\n    margin-right: 8px;\n}\n.mat-card-content-new-content {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: center;\n    \n}\nspan.outputText.price-font {\n    font-size: 1.6em;\n\n}\n.other-text {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: center;\n}\n.button-container {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    margin-top: 0.8em;\n}\nspan.heading-nestimate.card-heading-font {\n    text-align: left;\n    width: 100%;\n    font-size: 20px;\n}\n.mat-card-content-new {\n    margin-top: 1em;\n    margin-bottom: 2em;\n}\n/*===========================================================================================================\nFont-sizes\n=============================================================================================================*/\n.area-p\n{\n    font-size: 18px;\n}\n.discription-p\n{\n    font-size: 15px;\n}\n.property-type-color{\n    color: #8BB440;\n}\n.font-headings\n{\n    font-size: 21px;\n}\n.thanku-p-section\n{\n    font-size: 14px;\n}\n.main-heading\n{\n    font-size: 22px;\n}\n.btn-secondary\n{\n    background-color: var(--DARK-BLUE-COLOR);\n}\n.mat-card-matches\n{\n    display: flex !important;\n    margin: 10px !important;\n}\n.mat-card {\n    display: flex !important;\n    align-items: center;\n    width: 100%;\n}\n.match-images { \n    height: 19vh;\n}\n.mat-card\n{\n    padding: 10px 5px;\n}\nselect#country {\n    float: right;\n    height: 2em;\n    border: 1px solid;\n    background-color: transparent;\n    color: var(--DARK-BLUE-COLOR );\n    border: transparent;\n}\n.example-full-width{\n  \n    background-color: transparent;\n \n}\n.other-container {\n    width: 100%;\n    display: inline-block;\n    text-align: justify;\n    /* font-size: 5px; */\n}\n.flex-expresses {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    font-size: 18px;\n    background-color: rgba(0, 0, 0, 0.04);\n}\n.expressed-card\n{\n    background-color: rgba(0, 0, 0, 0.04);\n}\n.home_Matches {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n    margin: 1em;\n}\n/* .example-full-width\n{\n    width: 100%;\n} */\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\np.buyer-value {\n    border-bottom: 1px solid black;\n    padding: 0.9em;\n    background-color: white;\n}\n.nestimate-image {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  \n    padding-top: 1em;\n\n    width: 100%;\n}\n.netimate-content {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;    \n    background-color: #e9f9ff;\n    padding-bottom: 2em;\n}\n.netimate-content-expressed {\n    display: flex;\n    flex-direction: column;\n    align-items: flex-start;    \n    background-color:  #ced8ea;;\n    padding-bottom: 2em;\n}\n.nestimate-price-range {\n    padding: 1em;\n    padding-bottom: 0.3em;\n    padding-left: 2.5em;\n    /* display: flex; */\n    /* flex-direction: column; */\n}\n.nestimate-content {\n    padding-left: 2.5em;\n}\n.heading-nestimate.nestimate-content-p1 {\n    padding-bottom: 1em;\n}\n.dark-blue-button {\n    background-color: var(--DARK-BLUE-COLOR);\n    color: white;\n    padding: 0.3em 1em;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\nspan.entity-see-deatil.outputText {\n    padding-left: 0.6em;\n    text-align: center;\n    font-size: 1.4em;\n}\n.nestimate_by {\n    /* padding-bottom: 1em; */\n    padding: 1em;\n}\n.card-heading-font {\n    border-bottom: 1px solid black;\n    font-size: 1.3em;\n    width: 94%;\n}\n.font-main-nestimate {\n    font-size: 1.3em;\n    text-align: center;\n    padding: 2em 2em;\n}\n.nestiamte-dropdown-asearch-result {\n    display: flex;\n    justify-content: center;\n}\n.matches-main-container {\n    background-color: white;\n    padding-bottom: 1em;\n}\n.Main-showing-div-buyer {\n    padding-bottom: 2em;\n    background-color: white;\n}\n.home-matches.mat-form-field-flex {\n    background-color: var(--BAckground-dark-color) !important;;\n  }\n.new-drop-down {\n    display: flex;\n    justify-content: center;\n    /* width: 34vw; */\n}\n.form-group.drop-down-new {\n    width: 56vw;\n    border: none;\n}\nspan.outputText {\n    padding-left: 0.5em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWdlbnRob21lL2FnZW50aG9tZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLFlBQVk7SUFDWix3Q0FBd0M7QUFDNUM7QUFDQTtJQUNJLFVBQVU7SUFDVixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7SUFDN0Isc0JBQXNCO0lBQ3RCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFdBQVc7QUFDZjtBQUNBO0lBQ0ksd0NBQXdDO0lBQ3hDLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsMEJBQTBCO0FBQzlCO0FBSUEsY0FBYztBQUdkOzs7SUFHSSx1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0Qiw4QkFBOEI7QUFDbEM7QUFDQTs7SUFFSSxlQUFlO0lBQ2Ysa0JBQWtCO0FBQ3RCO0FBQ0E7OztJQUdJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1COztBQUV2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsa0JBQWtCO0lBQ2xCLFNBQVM7SUFDVCxzQkFBc0I7SUFDdEIscUJBQXFCO0lBQ3JCLGFBQWE7SUFDYixpQkFBaUI7QUFDckI7QUFHQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7QUFFM0I7QUFDQTtJQUNJLGdCQUFnQjs7QUFFcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixXQUFXO0lBQ1gsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsV0FBVztJQUNYLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7QUFDQTs7OEdBRThHO0FBQzlHOztJQUVJLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksZUFBZTtBQUNuQjtBQUNBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7O0lBRUksd0NBQXdDO0FBQzVDO0FBVUE7O0lBRUksd0JBQXdCO0lBQ3hCLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksd0JBQXdCO0lBQ3hCLG1CQUFtQjtJQUNuQixXQUFXO0FBQ2Y7QUFDQTtJQUNJLFlBQVk7QUFDaEI7QUFDQTs7SUFFSSxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLFlBQVk7SUFDWixXQUFXO0lBQ1gsaUJBQWlCO0lBQ2pCLDZCQUE2QjtJQUM3Qiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksNkJBQTZCOztBQUVqQztBQUNBO0lBQ0ksV0FBVztJQUNYLHFCQUFxQjtJQUNyQixtQkFBbUI7SUFDbkIsb0JBQW9CO0FBQ3hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YscUNBQXFDO0FBQ3pDO0FBQ0E7O0lBRUkscUNBQXFDO0FBQ3pDO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtJQUNuQixXQUFXO0FBQ2Y7QUFDQTs7O0dBR0c7QUFJSDtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osZUFBZTtJQUNmLFFBQVE7SUFDUixTQUFTO0lBRVQsYUFBYTtJQUViLHVCQUF1QjtJQUV2QixtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQixZQUFZO0VBQ2Q7QUFDQTtJQUNFLDhCQUE4QjtJQUM5QixjQUFjO0lBQ2QsdUJBQXVCO0FBQzNCO0FBS0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjs7SUFFbkIsZ0JBQWdCOztJQUVoQixXQUFXO0FBQ2Y7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLHlCQUF5QjtJQUN6QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLDBCQUEwQjtJQUMxQixtQkFBbUI7QUFDdkI7QUFHQTtJQUNJLFlBQVk7SUFDWixxQkFBcUI7SUFDckIsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQiw0QkFBNEI7QUFDaEM7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx3Q0FBd0M7SUFDeEMsWUFBWTtJQUNaLGtCQUFrQjtJQUNsQixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLGtCQUFrQjtJQUNsQixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSw4QkFBOEI7SUFDOUIsZ0JBQWdCO0lBQ2hCLFVBQVU7QUFDZDtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGtCQUFrQjtJQUNsQixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLHlEQUF5RDtFQUMzRDtBQUVBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkIiLCJmaWxlIjoic3JjL2FwcC9hZ2VudGhvbWUvYWdlbnRob21lLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYWdlbnQtdG9wLWhlYWRpbmctYXJlYVxue1xuICAgIGhlaWdodDogMzB2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xufVxuaW1nLmltYWdlLWFnZW50IHtcbiAgICB3aWR0aDogMjUlO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cbi50b3AtYXJlYS1jb250ZW50LWFnZW50IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4udG9wLWFyZWEtYWdlbnQtcGhvdG8ge1xuICAgIGRpc3BsYXk6IGNvbnRlbnRzO1xufVxuc3Bhbi5jb21wbmF5LW5hbWUtdGV4dHtcbiAgICBmb250LXNpemU6IDEuM2VtO1xufVxuLmRldGFpbHMtdXNlci1hZ2VudCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW46IDJlbSAyZW07XG59XG4uZWRpdC1kZXRhaWwtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luOiAyZW07XG59XG5zcGFuLmVkaXQtYnV0dG9uLXNwYW4ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7O1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAwLjRlbSAzZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG5cblxuXG4vKiBjYXJkcyBDc3MgKi9cblxuXG4ubWF0Y2hlcy1tYWluLWNvbnRhaW5lclxue1xuICBcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn1cbi50aGFua3Utc2VjdGlvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbjogMHB4ICFpbXBvcnRhbnQ7XG4gICAgcGFkZGluZy1ib3R0b206IDBweCAhaW1wb3J0YW50O1xufVxuLnRoYW5rdS1wLXNlY3Rpb25cbntcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLm1hdGNoLXNlY3Rpb25cbntcbiAgXG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIFxufVxuXG4udGhhbmstdGV4dCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogMTJ2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGllO1xuICAgIGJhY2tncm91bmQ6ICNmZmZmZmZkYjtcbiAgICBwYWRkaW5nOiAyMHB4O1xuICAgIG1hcmdpbi1yaWdodDogOHB4O1xufVxuXG5cbi5tYXQtY2FyZC1jb250ZW50LW5ldy1jb250ZW50IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBcbn1cbnNwYW4ub3V0cHV0VGV4dC5wcmljZS1mb250IHtcbiAgICBmb250LXNpemU6IDEuNmVtO1xuXG59XG4ub3RoZXItdGV4dCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG4uYnV0dG9uLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAwLjhlbTtcbn1cbnNwYW4uaGVhZGluZy1uZXN0aW1hdGUuY2FyZC1oZWFkaW5nLWZvbnQge1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgZm9udC1zaXplOiAyMHB4O1xufVxuLm1hdC1jYXJkLWNvbnRlbnQtbmV3IHtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luLWJvdHRvbTogMmVtO1xufVxuLyo9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PVxuRm9udC1zaXplc1xuPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSovXG4uYXJlYS1wXG57XG4gICAgZm9udC1zaXplOiAxOHB4O1xufVxuLmRpc2NyaXB0aW9uLXBcbntcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4ucHJvcGVydHktdHlwZS1jb2xvcntcbiAgICBjb2xvcjogIzhCQjQ0MDtcbn1cbi5mb250LWhlYWRpbmdzXG57XG4gICAgZm9udC1zaXplOiAyMXB4O1xufVxuLnRoYW5rdS1wLXNlY3Rpb25cbntcbiAgICBmb250LXNpemU6IDE0cHg7XG59XG4ubWFpbi1oZWFkaW5nXG57XG4gICAgZm9udC1zaXplOiAyMnB4O1xufVxuLmJ0bi1zZWNvbmRhcnlcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xufVxuXG5cblxuXG5cblxuXG5cblxuLm1hdC1jYXJkLW1hdGNoZXNcbntcbiAgICBkaXNwbGF5OiBmbGV4ICFpbXBvcnRhbnQ7XG4gICAgbWFyZ2luOiAxMHB4ICFpbXBvcnRhbnQ7XG59XG4ubWF0LWNhcmQge1xuICAgIGRpc3BsYXk6IGZsZXggIWltcG9ydGFudDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLm1hdGNoLWltYWdlcyB7IFxuICAgIGhlaWdodDogMTl2aDtcbn1cbi5tYXQtY2FyZFxue1xuICAgIHBhZGRpbmc6IDEwcHggNXB4O1xufVxuc2VsZWN0I2NvdW50cnkge1xuICAgIGZsb2F0OiByaWdodDtcbiAgICBoZWlnaHQ6IDJlbTtcbiAgICBib3JkZXI6IDFweCBzb2xpZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SICk7XG4gICAgYm9yZGVyOiB0cmFuc3BhcmVudDtcbn1cbi5leGFtcGxlLWZ1bGwtd2lkdGh7XG4gIFxuICAgIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuIFxufVxuLm90aGVyLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gICAgLyogZm9udC1zaXplOiA1cHg7ICovXG59XG4uZmxleC1leHByZXNzZXMge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMCwgMC4wNCk7XG59XG4uZXhwcmVzc2VkLWNhcmRcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDAsIDAsIDAsIDAuMDQpO1xufVxuLmhvbWVfTWF0Y2hlcyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLyogLmV4YW1wbGUtZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufSAqL1xuXG5cblxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMHB4O1xuICAgIGxlZnQ6IDBweDtcbiAgICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgei1pbmRleDogOTtcbiAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICBvcGFjaXR5OiAwLjU7XG4gIH1cbiAgcC5idXllci12YWx1ZSB7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xuICAgIHBhZGRpbmc6IDAuOWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xufVxuXG5cblxuXG4ubmVzdGltYXRlLWltYWdlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIFxuICAgIHBhZGRpbmctdG9wOiAxZW07XG5cbiAgICB3aWR0aDogMTAwJTtcbn1cblxuLm5ldGltYXRlLWNvbnRlbnQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogZmxleC1zdGFydDsgICAgXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2U5ZjlmZjtcbiAgICBwYWRkaW5nLWJvdHRvbTogMmVtO1xufVxuLm5ldGltYXRlLWNvbnRlbnQtZXhwcmVzc2VkIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7ICAgIFxuICAgIGJhY2tncm91bmQtY29sb3I6ICAjY2VkOGVhOztcbiAgICBwYWRkaW5nLWJvdHRvbTogMmVtO1xufVxuIFxuXG4ubmVzdGltYXRlLXByaWNlLXJhbmdlIHtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgcGFkZGluZy1ib3R0b206IDAuM2VtO1xuICAgIHBhZGRpbmctbGVmdDogMi41ZW07XG4gICAgLyogZGlzcGxheTogZmxleDsgKi9cbiAgICAvKiBmbGV4LWRpcmVjdGlvbjogY29sdW1uOyAqL1xufVxuLm5lc3RpbWF0ZS1jb250ZW50IHtcbiAgICBwYWRkaW5nLWxlZnQ6IDIuNWVtO1xufVxuLmhlYWRpbmctbmVzdGltYXRlLm5lc3RpbWF0ZS1jb250ZW50LXAxIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xufVxuLmRhcmstYmx1ZS1idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDAuM2VtIDFlbTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5zcGFuLmVudGl0eS1zZWUtZGVhdGlsLm91dHB1dFRleHQge1xuICAgIHBhZGRpbmctbGVmdDogMC42ZW07XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMS40ZW07XG59XG4ubmVzdGltYXRlX2J5IHtcbiAgICAvKiBwYWRkaW5nLWJvdHRvbTogMWVtOyAqL1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cbi5jYXJkLWhlYWRpbmctZm9udCB7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMS4zZW07XG4gICAgd2lkdGg6IDk0JTtcbn1cbi5mb250LW1haW4tbmVzdGltYXRlIHtcbiAgICBmb250LXNpemU6IDEuM2VtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAyZW0gMmVtO1xufVxuLm5lc3RpYW10ZS1kcm9wZG93bi1hc2VhcmNoLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5tYXRjaGVzLW1haW4tY29udGFpbmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xufVxuLk1haW4tc2hvd2luZy1kaXYtYnV5ZXIge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59XG4uaG9tZS1tYXRjaGVzLm1hdC1mb3JtLWZpZWxkLWZsZXgge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcikgIWltcG9ydGFudDs7XG4gIH1cblxuICAubmV3LWRyb3AtZG93biB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAvKiB3aWR0aDogMzR2dzsgKi9cbn1cbi5mb3JtLWdyb3VwLmRyb3AtZG93bi1uZXcge1xuICAgIHdpZHRoOiA1NnZ3O1xuICAgIGJvcmRlcjogbm9uZTtcbn1cbnNwYW4ub3V0cHV0VGV4dCB7XG4gICAgcGFkZGluZy1sZWZ0OiAwLjVlbTtcbn0iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/agenthome/agenthome.component.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/agenthome/agenthome.component.ts ***!
+    \**************************************************/
+
+  /*! exports provided: AgenthomeComponent */
+
+  /***/
+  function srcAppAgenthomeAgenthomeComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AgenthomeComponent", function () {
+      return AgenthomeComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var AgenthomeComponent =
+    /*#__PURE__*/
+    function () {
+      function AgenthomeComponent() {
+        _classCallCheck(this, AgenthomeComponent);
+      }
+
+      _createClass(AgenthomeComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return AgenthomeComponent;
+    }();
+
+    AgenthomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-agenthome',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./agenthome.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/agenthome/agenthome.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./agenthome.component.css */
+      "./src/app/agenthome/agenthome.component.css")).default]
+    })], AgenthomeComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.css":
+  /*!*******************************************************************************!*\
+    !*** ./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.css ***!
+    \*******************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAgenthomeSelecteddetailareaSelecteddetailareaComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "img.match-images {\n    width: 30%;\n    margin: 2em;\n\n    margin-bottom: 0em;\n\n}\n\n.agent-selected-detail-top-image {\n    display: flex;\n    /* justify-content: center; */\n    align-items: center;\n    justify-content: center;\n \n}\n\n.seller-main-details {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em;\n}\n\n.address-field {\n    display: flex;\n    flex-direction: column;\n    margin-left: 1em;\n}\n\n.address-heading {\n    margin-bottom: 0.5em;\n}\n\nspan.heading-nestimate {\n    margin-left: 1em;\n}\n\n.adddress-output\n{\n    margin-bottom: 0.5em;\n}\n\n.agent-selected-detail-componet {\n    background-color: #E9F8FF;\n}\n\n.button-container {\n    display: flex;\n    justify-content: center;\n    width: 100%;\n    margin-top: 0.8em;\n    padding-bottom: 1em;\n}\n\n.dark-blue-button {\n    background-color: var(--DARK-BLUE-COLOR);\n    color: white;\n    padding: 0.3em 1em;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYWdlbnRob21lL3NlbGVjdGVkZGV0YWlsYXJlYS9zZWxlY3RlZGRldGFpbGFyZWEuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFVBQVU7SUFDVixXQUFXOztJQUVYLGtCQUFrQjs7QUFFdEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtJQUNuQix1QkFBdUI7O0FBRTNCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixXQUFXO0FBQ2Y7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLG9CQUFvQjtBQUN4Qjs7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFDQTs7SUFFSSxvQkFBb0I7QUFDeEI7O0FBRUE7SUFDSSx5QkFBeUI7QUFDN0I7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxpQkFBaUI7SUFDakIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksd0NBQXdDO0lBQ3hDLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC9hZ2VudGhvbWUvc2VsZWN0ZWRkZXRhaWxhcmVhL3NlbGVjdGVkZGV0YWlsYXJlYS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiaW1nLm1hdGNoLWltYWdlcyB7XG4gICAgd2lkdGg6IDMwJTtcbiAgICBtYXJnaW46IDJlbTtcblxuICAgIG1hcmdpbi1ib3R0b206IDBlbTtcblxufVxuXG4uYWdlbnQtc2VsZWN0ZWQtZGV0YWlsLXRvcC1pbWFnZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuIFxufVxuLnNlbGxlci1tYWluLWRldGFpbHMge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLmFkZHJlc3MtZmllbGQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBtYXJnaW4tbGVmdDogMWVtO1xufVxuLmFkZHJlc3MtaGVhZGluZyB7XG4gICAgbWFyZ2luLWJvdHRvbTogMC41ZW07XG59XG5zcGFuLmhlYWRpbmctbmVzdGltYXRlIHtcbiAgICBtYXJnaW4tbGVmdDogMWVtO1xufVxuLmFkZGRyZXNzLW91dHB1dFxue1xuICAgIG1hcmdpbi1ib3R0b206IDAuNWVtO1xufVxuXG4uYWdlbnQtc2VsZWN0ZWQtZGV0YWlsLWNvbXBvbmV0IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRTlGOEZGO1xufVxuLmJ1dHRvbi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWFyZ2luLXRvcDogMC44ZW07XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcbn1cbi5kYXJrLWJsdWUtYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAwLjNlbSAxZW07XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.ts":
+  /*!******************************************************************************!*\
+    !*** ./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.ts ***!
+    \******************************************************************************/
+
+  /*! exports provided: SelecteddetailareaComponent */
+
+  /***/
+  function srcAppAgenthomeSelecteddetailareaSelecteddetailareaComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "SelecteddetailareaComponent", function () {
+      return SelecteddetailareaComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+
+    var SelecteddetailareaComponent =
+    /*#__PURE__*/
+    function () {
+      function SelecteddetailareaComponent() {
+        _classCallCheck(this, SelecteddetailareaComponent);
+      }
+
+      _createClass(SelecteddetailareaComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }]);
+
+      return SelecteddetailareaComponent;
+    }();
+
+    SelecteddetailareaComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-selecteddetailarea',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./selecteddetailarea.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./selecteddetailarea.component.css */
+      "./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.css")).default]
+    })], SelecteddetailareaComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/app-routing.module.ts":
   /*!***************************************!*\
     !*** ./src/app/app-routing.module.ts ***!
@@ -15990,6 +16264,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(
     /*! ./Potential/price-matches/price-matches.component */
     "./src/app/Potential/price-matches/price-matches.component.ts");
+    /* harmony import */
+
+
+    var _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(
+    /*! ./agenthome/agenthome.component */
+    "./src/app/agenthome/agenthome.component.ts");
+    /* harmony import */
+
+
+    var _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(
+    /*! ./agenthome/selecteddetailarea/selecteddetailarea.component */
+    "./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.ts");
 
     var routes = [{
       path: "Property/:use",
@@ -16111,6 +16397,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     }, {
       path: "PriceMatches",
       component: _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_43__["PriceMatchesComponent"]
+    }, {
+      path: "Agenthome",
+      component: _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_44__["AgenthomeComponent"]
+    }, {
+      path: "selectedAgentddetail",
+      component: _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_45__["SelecteddetailareaComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -16883,7 +17175,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
     var _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_109__ = __webpack_require__(
     /*! ./Potential/price-matches/price-matches.component */
-    "./src/app/Potential/price-matches/price-matches.component.ts"); // Firebase modules
+    "./src/app/Potential/price-matches/price-matches.component.ts");
+    /* harmony import */
+
+
+    var _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_110__ = __webpack_require__(
+    /*! ./agenthome/agenthome.component */
+    "./src/app/agenthome/agenthome.component.ts");
+    /* harmony import */
+
+
+    var _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_111__ = __webpack_require__(
+    /*! ./agenthome/selecteddetailarea/selecteddetailarea.component */
+    "./src/app/agenthome/selecteddetailarea/selecteddetailarea.component.ts"); // Firebase modules
 
 
     var AppModule = function AppModule() {
@@ -16891,7 +17195,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_105__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_83__["AgentSignupComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_84__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_85__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_86__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_87__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_88__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_89__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_90__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_91__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_93__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_94__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_96__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_97__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_98__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_99__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_107__["DeleteDataComponent"], _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_102__["PropertyMatchesComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_103__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_104__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_106__["NestimatesHomeComponent"], _Home_home_matches_home_matches_component__WEBPACK_IMPORTED_MODULE_108__["HomeMatchesComponent"], _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_109__["PriceMatchesComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_105__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_83__["AgentSignupComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_84__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_85__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_86__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_87__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_88__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_89__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_90__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_91__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_93__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_94__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_96__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_97__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_98__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_99__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_107__["DeleteDataComponent"], _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_102__["PropertyMatchesComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_103__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_104__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_106__["NestimatesHomeComponent"], _Home_home_matches_home_matches_component__WEBPACK_IMPORTED_MODULE_108__["HomeMatchesComponent"], _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_109__["PriceMatchesComponent"], _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_110__["AgenthomeComponent"], _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_111__["SelecteddetailareaComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_24__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_28__["environment"].firebaseConfig, "street"), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_27__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_26__["AngularFireStorageModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_23__["AngularFireDatabaseModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_34__["BrowserAnimationsModule"], _Misc_material__WEBPACK_IMPORTED_MODULE_77__["MaterialModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_35__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_39__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_40__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_41__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_36__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_42__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_43__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_44__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_45__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_46__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_47__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_48__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_49__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_50__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_51__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_52__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_53__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_54__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_55__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_56__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_57__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_58__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_59__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_61__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_62__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_63__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_64__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_65__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_66__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_67__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_68__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_69__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_70__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_71__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_73__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_74__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_75__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_37__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_38__["ScrollingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_79__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"]],
       entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__["AlertDialogAgentComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__["EdiProfileComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_107__["DeleteDataComponent"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_22__["AuthService"], {
@@ -16978,7 +17282,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this90 = this;
+        var _this92 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -16992,8 +17296,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this90.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this90.userData));
+            _this92.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this92.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -17011,42 +17315,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignIn(email, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee32() {
-            var result;
-            return regeneratorRuntime.wrap(function _callee32$(_context32) {
-              while (1) {
-                switch (_context32.prev = _context32.next) {
-                  case 0:
-                    _context32.prev = 0;
-                    _context32.next = 3;
-                    return this.afAuth.auth.signInWithEmailAndPassword(email, password);
-
-                  case 3:
-                    result = _context32.sent;
-                    this.ngZone.run(function () {}); // this.SetUserData(result.user);
-
-                    _context32.next = 10;
-                    break;
-
-                  case 7:
-                    _context32.prev = 7;
-                    _context32.t0 = _context32["catch"](0);
-                    window.alert("incorrect username/password");
-
-                  case 10:
-                  case "end":
-                    return _context32.stop();
-                }
-              }
-            }, _callee32, this, [[0, 7]]);
-          }));
-        } // Sign up with email/password
-
-      }, {
-        key: "SignUp",
-        value: function SignUp(email, password) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee33() {
             var result;
             return regeneratorRuntime.wrap(function _callee33$(_context33) {
@@ -17055,18 +17323,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 0:
                     _context33.prev = 0;
                     _context33.next = 3;
-                    return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+                    return this.afAuth.auth.signInWithEmailAndPassword(email, password);
 
                   case 3:
                     result = _context33.sent;
-                    this.SetUserData(result.user);
+                    this.ngZone.run(function () {}); // this.SetUserData(result.user);
+
                     _context33.next = 10;
                     break;
 
                   case 7:
                     _context33.prev = 7;
                     _context33.t0 = _context33["catch"](0);
-                    window.alert(_context33.t0.message);
+                    window.alert("incorrect username/password");
 
                   case 10:
                   case "end":
@@ -17074,6 +17343,41 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee33, this, [[0, 7]]);
+          }));
+        } // Sign up with email/password
+
+      }, {
+        key: "SignUp",
+        value: function SignUp(email, password) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee34() {
+            var result;
+            return regeneratorRuntime.wrap(function _callee34$(_context34) {
+              while (1) {
+                switch (_context34.prev = _context34.next) {
+                  case 0:
+                    _context34.prev = 0;
+                    _context34.next = 3;
+                    return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+
+                  case 3:
+                    result = _context34.sent;
+                    this.SetUserData(result.user);
+                    _context34.next = 10;
+                    break;
+
+                  case 7:
+                    _context34.prev = 7;
+                    _context34.t0 = _context34["catch"](0);
+                    window.alert(_context34.t0.message);
+
+                  case 10:
+                  case "end":
+                    return _context34.stop();
+                }
+              }
+            }, _callee34, this, [[0, 7]]);
           }));
         } // Send email verfificaiton when new user sign up
         // async SendVerificationMail() {
@@ -17087,31 +17391,31 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ForgotPassword(passwordResetEmail) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee34() {
-            return regeneratorRuntime.wrap(function _callee34$(_context34) {
+          regeneratorRuntime.mark(function _callee35() {
+            return regeneratorRuntime.wrap(function _callee35$(_context35) {
               while (1) {
-                switch (_context34.prev = _context34.next) {
+                switch (_context35.prev = _context35.next) {
                   case 0:
-                    _context34.prev = 0;
-                    _context34.next = 3;
+                    _context35.prev = 0;
+                    _context35.next = 3;
                     return this.afAuth.auth.sendPasswordResetEmail(passwordResetEmail);
 
                   case 3:
                     window.alert("Password reset email sent, check your inbox.");
-                    _context34.next = 9;
+                    _context35.next = 9;
                     break;
 
                   case 6:
-                    _context34.prev = 6;
-                    _context34.t0 = _context34["catch"](0);
-                    window.alert(_context34.t0);
+                    _context35.prev = 6;
+                    _context35.t0 = _context35["catch"](0);
+                    window.alert(_context35.t0);
 
                   case 9:
                   case "end":
-                    return _context34.stop();
+                    return _context35.stop();
                 }
               }
-            }, _callee34, this, [[0, 6]]);
+            }, _callee35, this, [[0, 6]]);
           }));
         } // Returns true when user is looged in and email is verified
 
@@ -17139,43 +17443,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee35() {
-            var result;
-            return regeneratorRuntime.wrap(function _callee35$(_context35) {
-              while (1) {
-                switch (_context35.prev = _context35.next) {
-                  case 0:
-                    _context35.prev = 0;
-                    _context35.next = 3;
-                    return this.afAuth.auth.signInWithPopup(provider);
-
-                  case 3:
-                    result = _context35.sent;
-                    this.ngZone.run(function () {});
-                    _context35.next = 10;
-                    break;
-
-                  case 7:
-                    _context35.prev = 7;
-                    _context35.t0 = _context35["catch"](0);
-                    window.alert(_context35.t0);
-
-                  case 10:
-                  case "end":
-                    return _context35.stop();
-                }
-              }
-            }, _callee35, this, [[0, 7]]);
-          }));
-        }
-      }, {
-        key: "AuthSignup",
-        value: function AuthSignup(provider) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee36() {
-            var _this91 = this;
-
             var result;
             return regeneratorRuntime.wrap(function _callee36$(_context36) {
               while (1) {
@@ -17187,16 +17455,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 3:
                     result = _context36.sent;
-                    this.ngZone.run(function () {
-                      _this91.SetUserData(result.user);
-                    });
+                    this.ngZone.run(function () {});
                     _context36.next = 10;
                     break;
 
                   case 7:
                     _context36.prev = 7;
                     _context36.t0 = _context36["catch"](0);
-                    window.alert(" incorrect username/password needs to change");
+                    window.alert(_context36.t0);
 
                   case 10:
                   case "end":
@@ -17204,6 +17470,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee36, this, [[0, 7]]);
+          }));
+        }
+      }, {
+        key: "AuthSignup",
+        value: function AuthSignup(provider) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee37() {
+            var _this93 = this;
+
+            var result;
+            return regeneratorRuntime.wrap(function _callee37$(_context37) {
+              while (1) {
+                switch (_context37.prev = _context37.next) {
+                  case 0:
+                    _context37.prev = 0;
+                    _context37.next = 3;
+                    return this.afAuth.auth.signInWithPopup(provider);
+
+                  case 3:
+                    result = _context37.sent;
+                    this.ngZone.run(function () {
+                      _this93.SetUserData(result.user);
+                    });
+                    _context37.next = 10;
+                    break;
+
+                  case 7:
+                    _context37.prev = 7;
+                    _context37.t0 = _context37["catch"](0);
+                    window.alert(" incorrect username/password needs to change");
+
+                  case 10:
+                  case "end":
+                    return _context37.stop();
+                }
+              }
+            }, _callee37, this, [[0, 7]]);
           }));
         }
         /* Setting up user data when sign in with username/password,
@@ -17229,12 +17533,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignOut() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee37() {
-            return regeneratorRuntime.wrap(function _callee37$(_context37) {
+          regeneratorRuntime.mark(function _callee38() {
+            return regeneratorRuntime.wrap(function _callee38$(_context38) {
               while (1) {
-                switch (_context37.prev = _context37.next) {
+                switch (_context38.prev = _context38.next) {
                   case 0:
-                    _context37.next = 2;
+                    _context38.next = 2;
                     return this.afAuth.auth.signOut();
 
                   case 2:
@@ -17244,10 +17548,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 5:
                   case "end":
-                    return _context37.stop();
+                    return _context38.stop();
                 }
               }
-            }, _callee37, this);
+            }, _callee38, this);
           }));
         }
       }, {
@@ -17489,35 +17793,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(PropertyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this92 = this;
+          var _this94 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this92.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this92.PropertyType = params.get("PropertyType").trim();
-            _this92.LookingTown = params.get("LookingTown").trim();
-            _this92.MinAmount = params.get("MinAmount").trim();
-            _this92.MaxAmount = params.get("MaxAmount").trim();
-            _this92.latitude = params.get("latitude");
-            _this92.longitude = params.get("longitude");
-            console.log(_this92.Lookingpostcode + " " + _this92.PropertyType + " " + _this92.LookingTown + " " + _this92.MinAmount + " " + _this92.MaxAmount);
+            _this94.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this94.PropertyType = params.get("PropertyType").trim();
+            _this94.LookingTown = params.get("LookingTown").trim();
+            _this94.MinAmount = params.get("MinAmount").trim();
+            _this94.MaxAmount = params.get("MaxAmount").trim();
+            _this94.latitude = params.get("latitude");
+            _this94.longitude = params.get("longitude");
+            console.log(_this94.Lookingpostcode + " " + _this94.PropertyType + " " + _this94.LookingTown + " " + _this94.MinAmount + " " + _this94.MaxAmount);
           }); // Fetch details
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this92.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              console.log(_this92.maxAmount);
-              _this92.less = _this92.maxAmount - _this92.maxAmount * 3 / 100;
-              _this92.more = _this92.maxAmount * 1 + _this92.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
+              _this94.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              console.log(_this94.maxAmount);
+              _this94.less = _this94.maxAmount - _this94.maxAmount * 3 / 100;
+              _this94.more = _this94.maxAmount * 1 + _this94.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
 
-              _this92.removespace = _this92.Lookingpostcode.replace(/\s/g, "");
-              _this92.listing = _this92.Lookingpostcode.replace(/\s/g, "");
-              _this92.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
+              _this94.removespace = _this94.Lookingpostcode.replace(/\s/g, "");
+              _this94.listing = _this94.Lookingpostcode.replace(/\s/g, "");
+              _this94.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this92.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this92.PropertyType && _this92.maxAmount >= _this92.MinAmount.replace(/,/g, "") && _this92.maxAmount <= _this92.MaxAmount.replace(/,/g, "")) {
-                _this92.matchedProperties.push({
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this94.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this94.PropertyType && _this94.maxAmount >= _this94.MinAmount.replace(/,/g, "") && _this94.maxAmount <= _this94.MaxAmount.replace(/,/g, "")) {
+                _this94.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id
                 }); //Use this object to populate html
@@ -17525,59 +17829,59 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (item.data().Lookingpostcode == _this92.Lookingpostcode && _this92.maxAmount != _this92.MinAmount.replace(/,/g, "") && _this92.maxAmount != _this92.MaxAmount.replace(/,/g, "") && _this92.maxAmount < _this92.MinAmount.replace(/,/g, "") && _this92.maxAmount < _this92.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this92.PropertyType && _this92.more >= _this92.MinAmount.replace(/,/g, "")) {
-                  _this92.prceMathLogic.push({
+              else if (item.data().Lookingpostcode == _this94.Lookingpostcode && _this94.maxAmount != _this94.MinAmount.replace(/,/g, "") && _this94.maxAmount != _this94.MaxAmount.replace(/,/g, "") && _this94.maxAmount < _this94.MinAmount.replace(/,/g, "") && _this94.maxAmount < _this94.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this94.PropertyType && _this94.more >= _this94.MinAmount.replace(/,/g, "")) {
+                  _this94.prceMathLogic.push({
                     detail: item.data(),
                     propertyId: item.id
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this92.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this92.PropertyType && _this92.maxAmount >= _this92.MinAmount.replace(/,/g, "") && _this92.maxAmount <= _this92.MaxAmount.replace(/,/g, "") && _this92.removespace.substring(0, 3) == _this92.listing.substring(0, 3)) {
-                    _this92.settwo.push({
+                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this94.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this94.PropertyType && _this94.maxAmount >= _this94.MinAmount.replace(/,/g, "") && _this94.maxAmount <= _this94.MaxAmount.replace(/,/g, "") && _this94.removespace.substring(0, 3) == _this94.listing.substring(0, 3)) {
+                    _this94.settwo.push({
                       detail: item.data(),
                       propertyId: item.id
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (item.data().Lookingpostcode != _this92.Lookingpostcode && item.data().PropertyType == _this92.PropertyType && _this92.more <= _this92.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                      _this92.distanceInKm = _this92.getDistanceFromLatLonInKm(_this92.latitude, _this92.longitude, item.data().latitude, item.data().longitude);
+                  else if (item.data().Lookingpostcode != _this94.Lookingpostcode && item.data().PropertyType == _this94.PropertyType && _this94.more <= _this94.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                      _this94.distanceInKm = _this94.getDistanceFromLatLonInKm(_this94.latitude, _this94.longitude, item.data().latitude, item.data().longitude);
 
-                      _this92.unmatchedProperties.push({
+                      _this94.unmatchedProperties.push({
                         detail: item.data(),
                         propertyId: item.id,
-                        distance: _this92.distanceInKm
+                        distance: _this94.distanceInKm
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (item.data().Lookingpostcode != _this92.Lookingpostcode && item.data().PropertyType == _this92.PropertyType && _this92.less >= _this92.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                        _this92.distanceInKm = _this92.getDistanceFromLatLonInKm(_this92.latitude, _this92.longitude, item.data().latitude, item.data().longitude);
+                    else if (item.data().Lookingpostcode != _this94.Lookingpostcode && item.data().PropertyType == _this94.PropertyType && _this94.less >= _this94.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                        _this94.distanceInKm = _this94.getDistanceFromLatLonInKm(_this94.latitude, _this94.longitude, item.data().latitude, item.data().longitude);
 
-                        _this92.unmatchedPriceLogic.push({
+                        _this94.unmatchedPriceLogic.push({
                           detail: item.data(),
                           propertyId: item.id,
-                          distance: _this92.distanceInKm
+                          distance: _this94.distanceInKm
                         });
 
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (item.data().Lookingpostcode != _this92.Lookingpostcode && item.data().PropertyType != _this92.PropertyType && item.data().LookingTown == _this92.LookingTown && item.data().latitude && item.data().longitude) {
-                          _this92.distanceInKm = _this92.getDistanceFromLatLonInKm(_this92.latitude, _this92.longitude, item.data().latitude, item.data().longitude);
-                          console.log(_this92.latitude + _this92.longitude);
+                      else if (item.data().Lookingpostcode != _this94.Lookingpostcode && item.data().PropertyType != _this94.PropertyType && item.data().LookingTown == _this94.LookingTown && item.data().latitude && item.data().longitude) {
+                          _this94.distanceInKm = _this94.getDistanceFromLatLonInKm(_this94.latitude, _this94.longitude, item.data().latitude, item.data().longitude);
+                          console.log(_this94.latitude + _this94.longitude);
 
-                          _this92.lookTown.push({
+                          _this94.lookTown.push({
                             detail: item.data(),
                             propertyId: item.id,
-                            distance: _this92.distanceInKm
+                            distance: _this94.distanceInKm
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this92.unmatchedProperties.sort(_this92.compare);
+            _this94.unmatchedProperties.sort(_this94.compare);
           });
           this.getExpressedListingIds();
         }
@@ -17673,15 +17977,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this93 = this;
+          var _this95 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this93.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this93.distinctExpressedUid.push(item.data().propertyId);
+              if (_this95.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this95.distinctExpressedUid.push(item.data().propertyId);
               }
             });
-            console.log(_this93.distinctExpressedUid);
+            console.log(_this95.distinctExpressedUid);
           });
         }
       }, {
@@ -17921,19 +18225,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this94 = this;
+          var _this96 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this94.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this94.userData));
+              _this96.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this96.userData));
 
-              _this94.LoggedIn();
+              _this96.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this94.LoggedOut();
+              _this96.LoggedOut();
             }
           });
         }
@@ -17952,44 +18256,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this95 = this;
+          var _this97 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this95.isLoading = false;
+            _this97.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this96 = this;
+          var _this98 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this96.isLoading = false;
+            _this98.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this97 = this;
+          var _this99 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this97.isLoading = false;
+            _this99.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this98 = this;
+          var _this100 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this98.isLoading = false;
+            _this100.isLoading = false;
           });
         }
       }, {
@@ -18011,16 +18315,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this99 = this;
+          var _this101 = this;
 
           console.log(displayName);
           this.overlay = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this99.isLoading = false;
-            _this99.user.Name = displayName;
-            _this99.user.DOB = null;
-            _this99.user.Phone = null;
-            _this99.return = _this99.FormService.createUserCustomer(_this99.user).then(function (data) {
+            _this101.isLoading = false;
+            _this101.user.Name = displayName;
+            _this101.user.DOB = null;
+            _this101.user.Phone = null;
+            _this101.return = _this101.FormService.createUserCustomer(_this101.user).then(function (data) {
               console.log(data);
             });
           });
