@@ -1663,7 +1663,6 @@ let BuyerMatcheListingComponent = class BuyerMatcheListingComponent {
                     more <= Look_minamount &&
                     item.data().latitude &&
                     item.data().longitude) {
-                    console.log("Latitude" + this.Look_latitude + "Longitude" + this.Look_longitude);
                     this.distanceInKm = this.getDistanceFromLatLonInKm(this.Look_latitude, this.Look_longitude, item.data().latitude, item.data().longitude);
                     this.unmatchedProperties.push({
                         detail: item.data(),
@@ -3073,13 +3072,15 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
     signUp(displayName, email, pass) {
         this.authService.SignUp(email, pass).then((data) => {
             this.isLoading = false;
+            this.isLoggedIn = false;
             this.user.Name = displayName;
             this.user.DOB = null;
             this.user.Phone = null;
             this.return = this.fillFormsService.createUserCustomer(this.user).then((user) => {
+                this.isLoggedIn = false;
                 if (this.user != null) {
-                    this.isLoading = false;
                     this.overlay = true;
+                    this.isLoggedIn = false;
                 }
             });
         });
@@ -3094,6 +3095,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
     }
     continueClose() {
         this.overlay = false;
+        this.isLoggedIn = true;
     }
     keyDownFunction(event) {
         if (event.keyCode == 13) {
@@ -4755,11 +4757,13 @@ let FillFormSellerComponent = class FillFormSellerComponent {
     }
     signUp(displayName, email, pass) {
         this.authService.SignUp(email, pass).then((data) => {
+            this.isLoggedIn = false;
             this.isLoading = false;
             this.user.Name = displayName;
             this.user.DOB = null;
             this.user.Phone = null;
             this.return = this.fillFormsService.createUserCustomer(this.user).then((user) => {
+                this.isLoggedIn = false;
                 if (this.user != null) {
                     this.isLoading = false;
                     this.overlay = true;
@@ -4777,6 +4781,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
     }
     continueClose() {
         this.overlay = false;
+        this.isLoggedIn = true;
     }
     keyDownFunction(event) {
         if (event.keyCode == 13) {

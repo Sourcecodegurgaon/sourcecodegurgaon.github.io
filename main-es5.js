@@ -2782,7 +2782,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
                   else if (item.data().Lookingpostcode != _this7.Look_postcodes && item.data().PropertyFor == _this7.Look_PropertyFor && item.data().PropertyType == _this7.Look_propertytype && more <= Look_minamount && item.data().latitude && item.data().longitude) {
-                      console.log("Latitude" + _this7.Look_latitude + "Longitude" + _this7.Look_longitude);
                       _this7.distanceInKm = _this7.getDistanceFromLatLonInKm(_this7.Look_latitude, _this7.Look_longitude, item.data().latitude, item.data().longitude);
 
                       _this7.unmatchedProperties.push({
@@ -4784,13 +4783,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.authService.SignUp(email, pass).then(function (data) {
             _this23.isLoading = false;
+            _this23.isLoggedIn = false;
             _this23.user.Name = displayName;
             _this23.user.DOB = null;
             _this23.user.Phone = null;
             _this23.return = _this23.fillFormsService.createUserCustomer(_this23.user).then(function (user) {
+              _this23.isLoggedIn = false;
+
               if (_this23.user != null) {
-                _this23.isLoading = false;
                 _this23.overlay = true;
+                _this23.isLoggedIn = false;
               }
             });
           });
@@ -4809,6 +4811,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "continueClose",
         value: function continueClose() {
           this.overlay = false;
+          this.isLoggedIn = true;
         }
       }, {
         key: "keyDownFunction",
@@ -7146,11 +7149,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           var _this37 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
+            _this37.isLoggedIn = false;
             _this37.isLoading = false;
             _this37.user.Name = displayName;
             _this37.user.DOB = null;
             _this37.user.Phone = null;
             _this37.return = _this37.fillFormsService.createUserCustomer(_this37.user).then(function (user) {
+              _this37.isLoggedIn = false;
+
               if (_this37.user != null) {
                 _this37.isLoading = false;
                 _this37.overlay = true;
@@ -7172,6 +7178,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "continueClose",
         value: function continueClose() {
           this.overlay = false;
+          this.isLoggedIn = true;
         }
       }, {
         key: "keyDownFunction",
