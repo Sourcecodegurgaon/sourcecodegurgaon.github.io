@@ -526,7 +526,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"main-grid-notifucation\">\n<div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterest\" routerLink=\"/mymatches\">\n\n<div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Buyer_Confirmed'\" >\n    <div class=\"notification-icon\" >\n<img src=\"../../../assets/Images/file.png\" class=\"icon\">\n </div>\n <div class=\"text heading-nestimate\" routerLink=\"/mymatches\">\nA Buyer expressed insterest on your Nestimate.Click to review<br>\n<span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n</div>\n\n\n\n\n\n</div>\n\n\n<div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Buyer_Matches_Confirmed'\">\n\n   \n   </div>\n\n   \n    <div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Seller_Matches_Confirmed'\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n        A Seller confirmed insterest on your Nestimate.Click Review<br>\n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') < 24\">\n            {{confirmInterest.time.seconds * 1000 | date:'H'}} hours ago</span> \n           <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') > 25\">\n              {{confirmInterest.time.seconds * 1000 | date:'dd/MM'}} </span> \n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                  {{confirmInterest.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n\n   <div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Seller_Confirmed'\">\n    <div class=\"notification-icon\">\n   <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n   A seller expressed interest on your Nestimate.Click to Review<br>\n   \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n\n   </div> \n    <div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Agent_Matches_Confirmed'\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n\n        A Seller confirmed interest on your Nestimate.Click to review<br>\n         <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') < 24\">\n  {{confirmInterest.time.seconds * 1000 | date:'H'}} hours ago</span> \n <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') > 25\">\n    {{confirmInterest.time.seconds * 1000 | date:'dd/MM'}} </span> \n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n        {{confirmInterest.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n</div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"main-grid-notifucation\">\n<div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterest\" >\n\n<div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n<img src=\"../../../assets/Images/file.png\" class=\"icon\">\n </div>\n <div class=\"text heading-nestimate\" >\nA Buyer expressed insterest on your Nestimate.Click to review<br>\n<span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n</div>\n\n\n\n\n\n</div>\n\n\n<div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n  <div class=\"notification-icon\" >\n<img src=\"../../../assets/Images/file.png\" class=\"icon\">\n</div>\n<div class=\"text heading-nestimate\" >\nA Buyer expressed insterest on your Nestimate.Click to review<br>\n<span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n  {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n</div>\n\n\n\n\n\n</div>\n\n\n\n   \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n        A Seller confirmed insterest on your Nestimate.Click Review<br>\n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n           <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                  {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n   <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n        A Seller confirmed insterest on your Nestimate.Click Review<br>\n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n           <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                  {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n\n\n\n   \n   <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\">\n   <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n   A seller expressed interest on your Nestimate.Click to Review<br>\n   \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n\n   </div> \n   <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed' && confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\">\n   <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n   A seller expressed interest on your Nestimate.Click to Review<br>\n   \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n\n   </div> \n\n\n\n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed' &&  confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n\n        A Seller confirmed interest on your Nestimate.Click to review<br>\n         <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n  {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n\n\n   <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed'  &&  confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate \">\n\n        A Seller confirmed interest on your Nestimate.Click to review<br>\n         <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n  {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n</div>\n</div>");
 
 /***/ }),
 
@@ -2583,6 +2583,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
         this.overlay = false;
         this.message = "";
         this.cancelButtonText = "Cancel";
+        this.now = new Date();
         this.newUser = false;
         this.buyOption = false;
         this.amounts = false;
@@ -2984,7 +2985,6 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
         this.router.navigate(["confirmbuyerdetail"]);
     }
     userDetail() {
-        console.log(this.user);
         this.return = this.fillFormsService.createUserCustomer(this.user)
             .then(data => {
             console.log(this.user);
@@ -3035,6 +3035,10 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
     facebookLogin() {
         this.isLoading = true;
         this.authService.FacebookAuth().then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.fillFormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -3042,6 +3046,10 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
     googleLogin() {
         this.isLoading = true;
         this.authService.GoogleAuth().then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.fillFormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -3049,13 +3057,20 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
     googleSignup() {
         this.isLoading = true;
         this.authService.GoogleAuthSignup().then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.fillFormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
     signIn(email, pass) {
-        console.log(email + pass);
         this.isLoading = true;
         this.authService.SignIn(email, pass).then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.fillFormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -3079,6 +3094,10 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             this.return = this.fillFormsService.createUserCustomer(this.user).then((user) => {
                 this.isLoggedIn = false;
                 if (this.user != null) {
+                    this.user.Lastseen = this.now;
+                    this.return = this.fillFormsService.createUserTime(this.user)
+                        .then(data => {
+                    });
                     this.overlay = true;
                     this.isLoggedIn = false;
                 }
@@ -3119,6 +3138,13 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             this.buyOption = false;
             this.rentOption = true;
         }
+    }
+    timeuserDetail() {
+        this.user.Lastseen = this.now;
+        this.return = this.fillFormsService.createUserTime(this.user)
+            .then(data => {
+            console.log(this.user.Lastseen);
+        });
     }
 };
 FillFormBuyerComponent.ctorParameters = () => [
@@ -3184,6 +3210,7 @@ let FormsService = class FormsService {
         this.dataSavedEventEmitter = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.customersRef = null;
         this.listingUserRef = null;
+        this.now = new Date();
         this.notificationref = null;
         this.customersRef = db.collection(this.dbPath);
         this.listingUserRef = db.collection(this.dbUserPath);
@@ -3227,6 +3254,16 @@ let FormsService = class FormsService {
             DOB: user.DOB,
             Phone: user.Phone,
             title: user.title = "Mr",
+            Lastseen: this.now
+        };
+        return userRef.set(userData, {
+            merge: true,
+        });
+    }
+    createUserTime(user) {
+        const userRef = this.db.doc(`users/${user.uid}`);
+        const userData = {
+            Lastseen: user.Lastseen
         };
         return userRef.set(userData, {
             merge: true,
@@ -3242,7 +3279,7 @@ let FormsService = class FormsService {
             Phone: user.Phone,
             title: user.title = "Mr",
             Currentaddress: user.Currentaddress,
-            prefrence: user.prefrence
+            prefrence: user.prefrence,
         };
         return userRef.set(userData, {
             merge: true,
@@ -4400,6 +4437,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
         this.overlay = false;
         this.sellOption = true;
         this.maxamounts = false;
+        this.now = new Date();
         this.emailFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
             _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
             _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].email,
@@ -4728,6 +4766,10 @@ let FillFormSellerComponent = class FillFormSellerComponent {
     googleLogin() {
         this.isLoading = true;
         this.authService.GoogleAuth().then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.fillFormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -4735,6 +4777,10 @@ let FillFormSellerComponent = class FillFormSellerComponent {
     googleSignup() {
         this.isLoading = true;
         this.authService.GoogleAuthSignup().then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.fillFormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -4742,6 +4788,10 @@ let FillFormSellerComponent = class FillFormSellerComponent {
         console.log(email + pass);
         this.isLoading = true;
         this.authService.SignIn(email, pass).then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.fillFormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -4765,6 +4815,10 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             this.return = this.fillFormsService.createUserCustomer(this.user).then((user) => {
                 this.isLoggedIn = false;
                 if (this.user != null) {
+                    this.user.Lastseen = this.now;
+                    this.return = this.fillFormsService.createUserTime(this.user)
+                        .then(data => {
+                    });
                     this.isLoading = false;
                     this.overlay = true;
                 }
@@ -4932,6 +4986,15 @@ let SellerformService = class SellerformService {
             });
         }, error => {
             console.log("Error: ", error);
+        });
+    }
+    createUserTime(user) {
+        const userRef = this.db.doc(`users/${user.uid}`);
+        const userData = {
+            Lastseen: user.Lastseen
+        };
+        return userRef.set(userData, {
+            merge: true,
         });
     }
 };
@@ -9485,6 +9548,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.newUser = false;
         this.isLoading = false;
         this.confirmInterest = [];
+        this.now = new Date();
         this.formVar = this.fb.group({
             Name: '',
             email: '',
@@ -9539,6 +9603,7 @@ let NavigationBarComponent = class NavigationBarComponent {
             this.noBuyerMatches = this.buyerProperty.length;
             this.matches = this.buyerProperty.length + this.sellerProperty.length;
         });
+        this.getNotification();
     }
     getNotification() {
         this.MatchesService.getnotifications(this.uid).subscribe((ref) => {
@@ -9597,6 +9662,10 @@ let NavigationBarComponent = class NavigationBarComponent {
     googleLogin() {
         this.isLoading = true;
         this.authService.GoogleAuth().then(data => {
+            this.user.Lastseen = this.now;
+            this.return = this.FormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
             window.location.reload();
         });
@@ -9605,6 +9674,10 @@ let NavigationBarComponent = class NavigationBarComponent {
     googleSignup() {
         this.isLoading = true;
         this.authService.GoogleAuthSignup().then(data => {
+            this.user.Lastseen = this.now;
+            this.return = this.FormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
             this.initProfile();
             window.location.reload();
@@ -9613,6 +9686,10 @@ let NavigationBarComponent = class NavigationBarComponent {
     signIn(email, pass) {
         this.isLoading = true;
         this.authService.SignIn(email, pass).then(data => {
+            this.user.Lastseen = this.now;
+            this.return = this.FormsService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
             this.initProfile();
             window.location.reload();
@@ -9637,6 +9714,10 @@ let NavigationBarComponent = class NavigationBarComponent {
             this.isLoading = true;
             this.return = this.FormsService.createUserCustomer(this.user)
                 .then(data => {
+                this.user.Lastseen = this.now;
+                this.return = this.FormsService.createUserTime(this.user)
+                    .then(data => {
+                });
                 if (this.user != null) {
                     this.isLoading = false;
                     this.initProfile();
@@ -9720,7 +9801,7 @@ NavigationBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("/* .grid-item {\n    height: 100vh;\n    z-index: 1;\n    background-color: white;\n} */\n.notification {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items: center;\n    padding: 0.4em 0em;\n}\nimg.icon {\n    width: 40%;\n    text-align: center;\n}\n.notification-icon {\n    display: flex;\n    justify-content: center;\n}\n.main-grid-notifucation {\n    /* height: 100vh; */\n    background-color: white;\n    position: absolute;\n    z-index: 3;\n    height: 100%;\n \n    top: 10vh;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9ub3RpZmljYXRpb24vbm90aWZpY2F0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7R0FJRztBQUNIO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1YsWUFBWTs7SUFFWixTQUFTO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9NZW51L25vdGlmaWNhdGlvbi9ub3RpZmljYXRpb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIC5ncmlkLWl0ZW0ge1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgei1pbmRleDogMTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn0gKi9cbi5ub3RpZmljYXRpb24ge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgM2ZyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMC40ZW0gMGVtO1xufVxuXG5pbWcuaWNvbiB7XG4gICAgd2lkdGg6IDQwJTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4ubm90aWZpY2F0aW9uLWljb24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG4ubWFpbi1ncmlkLW5vdGlmdWNhdGlvbiB7XG4gICAgLyogaGVpZ2h0OiAxMDB2aDsgKi9cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogMztcbiAgICBoZWlnaHQ6IDEwMCU7XG4gXG4gICAgdG9wOiAxMHZoO1xufVxuXG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = ("/* .grid-item {\n    height: 100vh;\n    z-index: 1;\n    background-color: white;\n} */\n.notification {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items: center;\n    padding: 0.4em 0em;\n}\nimg.icon {\n    width: 40%;\n    text-align: center;\n}\n.notification-icon {\n    display: flex;\n    justify-content: center;\n}\n.main-grid-notifucation {\n    /* height: 100vh; */\n    background-color: white;\n    position: absolute;\n    z-index: 3;\n    height: 100%;\n \n    top: 10vh;\n}\n.read-notfication{\n    background-color: aquamarine;\n\n    margin-bottom: 4px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9ub3RpZmljYXRpb24vbm90aWZpY2F0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7R0FJRztBQUNIO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1YsWUFBWTs7SUFFWixTQUFTO0FBQ2I7QUFDQTtJQUNJLDRCQUE0Qjs7SUFFNUIsa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvTWVudS9ub3RpZmljYXRpb24vbm90aWZpY2F0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiAuZ3JpZC1pdGVtIHtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHotaW5kZXg6IDE7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59ICovXG4ubm90aWZpY2F0aW9uIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDNmcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDAuNGVtIDBlbTtcbn1cblxuaW1nLmljb24ge1xuICAgIHdpZHRoOiA0MCU7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLm5vdGlmaWNhdGlvbi1pY29uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLm1haW4tZ3JpZC1ub3RpZnVjYXRpb24ge1xuICAgIC8qIGhlaWdodDogMTAwdmg7ICovXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHotaW5kZXg6IDM7XG4gICAgaGVpZ2h0OiAxMDAlO1xuIFxuICAgIHRvcDogMTB2aDtcbn1cbi5yZWFkLW5vdGZpY2F0aW9ue1xuICAgIGJhY2tncm91bmQtY29sb3I6IGFxdWFtYXJpbmU7XG5cbiAgICBtYXJnaW4tYm90dG9tOiA0cHg7XG59XG4iXX0= */");
 
 /***/ }),
 
@@ -9751,9 +9832,22 @@ let NotificationComponent = class NotificationComponent {
         this.uid = this.user.uid;
         this.NotificationService.getnotifications(this.uid).subscribe((ref) => {
             ref.forEach((item) => {
-                this.confirmInterest.push(item.data());
-                console.log(item.data().time);
+                this.confirmInterest.push({ Detail: item.data(), id: item.id });
             });
+            console.log(this.confirmInterest);
+        });
+    }
+    getDocid(id, propertyId, time, userId, viewed, now, Type) {
+        this.Notification = {
+            propertyId: propertyId,
+            time: time,
+            userId: userId,
+            viewed: viewed,
+            Lastseen: now,
+            Type: Type
+        };
+        this.Notification.Lastseen = this.now;
+        this.return = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(data => {
         });
     }
 };
@@ -9795,6 +9889,22 @@ let NotificationService = class NotificationService {
     }
     getnotifications(uid) {
         return this.db.collection("notification").doc(uid).collection("Received").get();
+    }
+    //Create Customer ListingBuyer
+    createDateCustomer(uid, docid, notification) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            //Create Customer ListingBuyer
+            return this.db
+                .collection("notification")
+                .doc(uid)
+                .collection("Received")
+                .doc(docid)
+                .set(Object.assign({}, notification))
+                .then(function (data) {
+                console.log("Document successfully written!");
+            });
+            return true;
+        });
     }
 };
 NotificationService.ctorParameters = () => [
@@ -12187,6 +12297,7 @@ let TemplateComponent = class TemplateComponent {
         this.model = {};
         this.loading = false;
         this.overlay = false;
+        this.now = new Date();
     }
     ngOnInit() {
         this.afAuth.authState.subscribe((user) => {
@@ -12213,6 +12324,10 @@ let TemplateComponent = class TemplateComponent {
     facebookLogin() {
         this.isLoading = true;
         this.authService.FacebookAuth().then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.FormService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -12220,6 +12335,10 @@ let TemplateComponent = class TemplateComponent {
     googleLogin() {
         this.isLoading = true;
         this.authService.GoogleAuth().then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.FormService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -12227,6 +12346,10 @@ let TemplateComponent = class TemplateComponent {
     googleSignup() {
         this.isLoading = true;
         this.authService.GoogleAuthSignup().then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.FormService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -12234,6 +12357,10 @@ let TemplateComponent = class TemplateComponent {
         console.log(email + pass);
         this.isLoading = true;
         this.authService.SignIn(email, pass).then((data) => {
+            this.user.Lastseen = this.now;
+            this.return = this.FormService.createUserTime(this.user)
+                .then(data => {
+            });
             this.isLoading = false;
         });
     }
@@ -12256,6 +12383,10 @@ let TemplateComponent = class TemplateComponent {
             this.user.DOB = null;
             this.user.Phone = null;
             this.return = this.FormService.createUserCustomer(this.user).then((data) => {
+                this.user.Lastseen = this.now;
+                this.return = this.FormService.createUserTime(this.user)
+                    .then(data => {
+                });
                 console.log(data);
             });
         });

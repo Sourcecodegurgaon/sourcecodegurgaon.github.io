@@ -821,7 +821,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n<div class=\"main-grid-notifucation\">\n<div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterest\" routerLink=\"/mymatches\">\n\n<div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Buyer_Confirmed'\" >\n    <div class=\"notification-icon\" >\n<img src=\"../../../assets/Images/file.png\" class=\"icon\">\n </div>\n <div class=\"text heading-nestimate\" routerLink=\"/mymatches\">\nA Buyer expressed insterest on your Nestimate.Click to review<br>\n<span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n</div>\n\n\n\n\n\n</div>\n\n\n<div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Buyer_Matches_Confirmed'\">\n\n   \n   </div>\n\n   \n    <div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Seller_Matches_Confirmed'\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n        A Seller confirmed insterest on your Nestimate.Click Review<br>\n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') < 24\">\n            {{confirmInterest.time.seconds * 1000 | date:'H'}} hours ago</span> \n           <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') > 25\">\n              {{confirmInterest.time.seconds * 1000 | date:'dd/MM'}} </span> \n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                  {{confirmInterest.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n\n   <div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Seller_Confirmed'\">\n    <div class=\"notification-icon\">\n   <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n   A seller expressed interest on your Nestimate.Click to Review<br>\n   \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n\n   </div> \n    <div class=\"notification\" *ngIf=\"confirmInterest.Type == 'Agent_Matches_Confirmed'\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n\n        A Seller confirmed interest on your Nestimate.Click to review<br>\n         <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') < 24\">\n  {{confirmInterest.time.seconds * 1000 | date:'H'}} hours ago</span> \n <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'H') > 25\">\n    {{confirmInterest.time.seconds * 1000 | date:'dd/MM'}} </span> \n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n        {{confirmInterest.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n</div>\n</div>";
+    __webpack_exports__["default"] = "\n<div class=\"main-grid-notifucation\">\n<div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterest\" >\n\n<div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n<img src=\"../../../assets/Images/file.png\" class=\"icon\">\n </div>\n <div class=\"text heading-nestimate\" >\nA Buyer expressed insterest on your Nestimate.Click to review<br>\n<span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n</div>\n\n\n\n\n\n</div>\n\n\n<div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n  <div class=\"notification-icon\" >\n<img src=\"../../../assets/Images/file.png\" class=\"icon\">\n</div>\n<div class=\"text heading-nestimate\" >\nA Buyer expressed insterest on your Nestimate.Click to review<br>\n<span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n  {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n</div>\n\n\n\n\n\n</div>\n\n\n\n   \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n        A Seller confirmed insterest on your Nestimate.Click Review<br>\n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n           <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                  {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n   <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n        A Seller confirmed insterest on your Nestimate.Click Review<br>\n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n           <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                  {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n\n\n\n   \n   <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\">\n   <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n   A seller expressed interest on your Nestimate.Click to Review<br>\n   \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n\n   </div> \n   <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed' && confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\">\n   <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n   A seller expressed interest on your Nestimate.Click to Review<br>\n   \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n\n   </div> \n\n\n\n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed' &&  confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\">\n\n        A Seller confirmed interest on your Nestimate.Click to review<br>\n         <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n  {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n\n\n   <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed'  &&  confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n   <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate \">\n\n        A Seller confirmed interest on your Nestimate.Click to review<br>\n         <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n  {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n   </div>\n   \n   </div>\n</div>\n</div>";
     /***/
   },
 
@@ -4209,6 +4209,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.overlay = false;
         this.message = "";
         this.cancelButtonText = "Cancel";
+        this.now = new Date();
         this.newUser = false;
         this.buyOption = false;
         this.amounts = false;
@@ -4667,7 +4668,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function userDetail() {
           var _this17 = this;
 
-          console.log(this.user);
           this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
             console.log(_this17.user);
           });
@@ -4724,6 +4724,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
+            _this19.user.Lastseen = _this19.now;
+            _this19.return = _this19.fillFormsService.createUserTime(_this19.user).then(function (data) {});
             _this19.isLoading = false;
           });
         } //SignIn Google
@@ -4735,6 +4737,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
+            _this20.user.Lastseen = _this20.now;
+            _this20.return = _this20.fillFormsService.createUserTime(_this20.user).then(function (data) {});
             _this20.isLoading = false;
           });
         } //Signup Google
@@ -4746,6 +4750,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
+            _this21.user.Lastseen = _this21.now;
+            _this21.return = _this21.fillFormsService.createUserTime(_this21.user).then(function (data) {});
             _this21.isLoading = false;
           });
         }
@@ -4754,9 +4760,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function signIn(email, pass) {
           var _this22 = this;
 
-          console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
+            _this22.user.Lastseen = _this22.now;
+            _this22.return = _this22.fillFormsService.createUserTime(_this22.user).then(function (data) {});
             _this22.isLoading = false;
           });
         }
@@ -4791,6 +4798,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               _this23.isLoggedIn = false;
 
               if (_this23.user != null) {
+                _this23.user.Lastseen = _this23.now;
+                _this23.return = _this23.fillFormsService.createUserTime(_this23.user).then(function (data) {});
                 _this23.overlay = true;
                 _this23.isLoggedIn = false;
               }
@@ -4844,6 +4853,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             this.buyOption = false;
             this.rentOption = true;
           }
+        }
+      }, {
+        key: "timeuserDetail",
+        value: function timeuserDetail() {
+          var _this24 = this;
+
+          this.user.Lastseen = this.now;
+          this.return = this.fillFormsService.createUserTime(this.user).then(function (data) {
+            console.log(_this24.user.Lastseen);
+          });
         }
       }]);
 
@@ -4952,6 +4971,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.dataSavedEventEmitter = new _angular_core__WEBPACK_IMPORTED_MODULE_1__["EventEmitter"]();
         this.customersRef = null;
         this.listingUserRef = null;
+        this.now = new Date();
         this.notificationref = null;
         this.customersRef = db.collection(this.dbPath);
         this.listingUserRef = db.collection(this.dbUserPath);
@@ -5027,7 +5047,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             Name: user.Name,
             DOB: user.DOB,
             Phone: user.Phone,
-            title: user.title = "Mr"
+            title: user.title = "Mr",
+            Lastseen: this.now
+          };
+          return userRef.set(userData, {
+            merge: true
+          });
+        }
+      }, {
+        key: "createUserTime",
+        value: function createUserTime(user) {
+          var userRef = this.db.doc("users/".concat(user.uid));
+          var userData = {
+            Lastseen: user.Lastseen
           };
           return userRef.set(userData, {
             merge: true
@@ -5329,47 +5361,47 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ConfirmSellerDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this24 = this;
+          var _this25 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.ConfirmsellerDetailService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this24.uid) {
-                _this24.user.Name = element.data().Name;
-                _this24.user.Email = element.data().email;
-                _this24.user.DOB = element.data().DOB.toDate();
-                _this24.user.Phone = element.data().Phone;
-                _this24.user.Currentpostcode = element.data().Currentpostcode;
-                _this24.user.title = element.data().title;
+              if (element.data().uid == _this25.uid) {
+                _this25.user.Name = element.data().Name;
+                _this25.user.Email = element.data().email;
+                _this25.user.DOB = element.data().DOB.toDate();
+                _this25.user.Phone = element.data().Phone;
+                _this25.user.Currentpostcode = element.data().Currentpostcode;
+                _this25.user.title = element.data().title;
               }
             });
           }); // Auth
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this24.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this24.userData));
+              _this25.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this25.userData));
 
-              _this24.LoggedIn();
+              _this25.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this24.LoggedOut();
+              _this25.LoggedOut();
             }
           });
           this.listingSeller = this.stateService.listingSeller; //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this24.postcodeCoordinates = data;
-            _this24.listingSeller.longitude = _this24.postcodeCoordinates.result.longitude, _this24.listingSeller.latitude = _this24.postcodeCoordinates.result.latitude, _this24.listingSeller.UserId = _this24.userData.uid, _this24.isBuyer = true;
-            _this24.isBuyer = false;
+            _this25.postcodeCoordinates = data;
+            _this25.listingSeller.longitude = _this25.postcodeCoordinates.result.longitude, _this25.listingSeller.latitude = _this25.postcodeCoordinates.result.latitude, _this25.listingSeller.UserId = _this25.userData.uid, _this25.isBuyer = true;
+            _this25.isBuyer = false;
           });
         }
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this25 = this;
+          var _this26 = this;
 
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
@@ -5377,9 +5409,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.listingSeller.usertitle = this.user.title;
           this.return = this.SellerformService.createCustomer(this.userData.uid, this.listingSeller).then(function (data) {
             if (data == true) {
-              _this25.isLoading = false;
+              _this26.isLoading = false;
 
-              var dialogRef = _this25.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
+              var dialogRef = _this26.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -5624,32 +5656,32 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this26 = this;
+          var _this27 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this26.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
-            _this26.Property_Type = params.get("PropertyType");
-            _this26.Looking_Town = params.get("LookingTown");
-            _this26.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
-            _this26.New_latitude = params.get("latitude");
-            _this26.New_longitude = params.get("longitude");
-            _this26.newUser = params.get("newUser");
-            _this26.Property_For = params.get("PropertyFor"); //Seller Params
+            _this27.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
+            _this27.Property_Type = params.get("PropertyType");
+            _this27.Looking_Town = params.get("LookingTown");
+            _this27.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
+            _this27.New_latitude = params.get("latitude");
+            _this27.New_longitude = params.get("longitude");
+            _this27.newUser = params.get("newUser");
+            _this27.Property_For = params.get("PropertyFor"); //Seller Params
 
-            _this26.New_state = params.get("Lookingstate");
-            _this26.New_rooms = params.get("Maxrooms");
-            _this26.New_Propertycondition = params.get("PropertyCondition");
-            _this26.New_Address = params.get("LookingAddress");
-            _this26.New_ownership = params.get("ownership");
-            _this26.New_features = params.get("features");
-            _this26.New_userId = params.get("UserId");
-            _this26.New_Maxbathrooms = params.get("Maxbathrooms");
-            _this26.New_Maxreception = params.get("Maxreception");
-            _this26.New_ownership = params.get("ownership");
-            _this26.New_Maxrooms = params.get("Maxrooms");
-            console.log(_this26.New_Maxrooms);
+            _this27.New_state = params.get("Lookingstate");
+            _this27.New_rooms = params.get("Maxrooms");
+            _this27.New_Propertycondition = params.get("PropertyCondition");
+            _this27.New_Address = params.get("LookingAddress");
+            _this27.New_ownership = params.get("ownership");
+            _this27.New_features = params.get("features");
+            _this27.New_userId = params.get("UserId");
+            _this27.New_Maxbathrooms = params.get("Maxbathrooms");
+            _this27.New_Maxreception = params.get("Maxreception");
+            _this27.New_ownership = params.get("ownership");
+            _this27.New_Maxrooms = params.get("Maxrooms");
+            console.log(_this27.New_Maxrooms);
           });
 
           if (this.newUser == "false") {
@@ -5701,84 +5733,84 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this26.maxAmount = _this26.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this26.maxAmount);
-              _this26.less = _this26.maxAmount - _this26.maxAmount * 3 / 100;
-              var less = parseInt(_this26.less);
-              _this26.more = _this26.maxAmount * 1 + _this26.maxAmount * 10 / 100 * 1;
-              var more = _this26.more;
-              _this26.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this26.Look_minamount);
-              _this26.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this26.Look_maxamount); //Remove Postcode Spaces
+              _this27.maxAmount = _this27.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this27.maxAmount);
+              _this27.less = _this27.maxAmount - _this27.maxAmount * 3 / 100;
+              var less = parseInt(_this27.less);
+              _this27.more = _this27.maxAmount * 1 + _this27.maxAmount * 10 / 100 * 1;
+              var more = _this27.more;
+              _this27.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this27.Look_minamount);
+              _this27.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this27.Look_maxamount); //Remove Postcode Spaces
 
-              _this26.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this26.listing = _this26.Look_postcode; //Result Set 1 Matches
+              _this27.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this27.listing = _this27.Look_postcode; //Result Set 1 Matches
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this26.Look_postcode && Mean.data().PropertyFor == _this26.Look_PropertyFor && Mean.data().PropertyType == _this26.Look_PropertyType && maxAmount >= Look_minamount && maxAmount <= Look_maxamount) {
-                _this26.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this27.Look_postcode && Mean.data().PropertyFor == _this27.Look_PropertyFor && Mean.data().PropertyType == _this27.Look_PropertyType && maxAmount >= Look_minamount && maxAmount <= Look_maxamount) {
+                _this27.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this26.Look_postcode && Mean.data().PropertyFor == _this26.Look_PropertyFor && maxAmount != Look_minamount && maxAmount != Look_maxamount && maxAmount < Look_minamount && maxAmount < Look_maxamount && Mean.data().PropertyType == _this26.Look_PropertyType && _this26.more >= _this26.Look_minamount) {
-                  _this26.sellerprceMathLogic.push({
+              else if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this27.Look_postcode && Mean.data().PropertyFor == _this27.Look_PropertyFor && maxAmount != Look_minamount && maxAmount != Look_maxamount && maxAmount < Look_minamount && maxAmount < Look_maxamount && Mean.data().PropertyType == _this27.Look_PropertyType && _this27.more >= _this27.Look_minamount) {
+                  _this27.sellerprceMathLogic.push({
                     detail: Mean.data(),
                     propertyId: Mean.id
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this26.Look_postcode && Mean.data().PropertyType == _this26.Look_PropertyType && Mean.data().PropertyFor == _this26.Look_PropertyFor && maxAmount >= Look_minamount && maxAmount <= Look_maxamount && _this26.removespace.substring(0, 3) == _this26.Look_postcode.substring(0, 3)) {
-                    _this26.sellersettwo.push({
+                else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this27.Look_postcode && Mean.data().PropertyType == _this27.Look_PropertyType && Mean.data().PropertyFor == _this27.Look_PropertyFor && maxAmount >= Look_minamount && maxAmount <= Look_maxamount && _this27.removespace.substring(0, 3) == _this27.Look_postcode.substring(0, 3)) {
+                    _this27.sellersettwo.push({
                       detail: Mean.data(),
                       propertyId: Mean.id
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (Mean.data().Lookingpostcode != _this26.Look_postcode && Mean.data().PropertyType == _this26.Look_PropertyType && Mean.data().PropertyFor == _this26.Look_PropertyFor && more <= Look_minamount && Mean.data().latitude && Mean.data().longitude) {
-                      _this26.distanceInKm = _this26.getDistanceFromLatLonInKm(_this26.Look_latitude, _this26.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                  else if (Mean.data().Lookingpostcode != _this27.Look_postcode && Mean.data().PropertyType == _this27.Look_PropertyType && Mean.data().PropertyFor == _this27.Look_PropertyFor && more <= Look_minamount && Mean.data().latitude && Mean.data().longitude) {
+                      _this27.distanceInKm = _this27.getDistanceFromLatLonInKm(_this27.Look_latitude, _this27.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                      _this26.sellerunmatchedProperties.push({
+                      _this27.sellerunmatchedProperties.push({
                         detail: Mean.data(),
                         propertyId: Mean.id,
-                        distance: _this26.distanceInKm * 0.6214
+                        distance: _this27.distanceInKm * 0.6214
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this26.Look_postcode && Mean.data().PropertyType == _this26.Look_PropertyType && Mean.data().PropertyFor == _this26.Look_PropertyFor && less >= Look_maxamount && Mean.data().latitude && Mean.data().longitude) {
-                        _this26.distanceInKm = _this26.getDistanceFromLatLonInKm(_this26.Look_latitude, _this26.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                    else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this27.Look_postcode && Mean.data().PropertyType == _this27.Look_PropertyType && Mean.data().PropertyFor == _this27.Look_PropertyFor && less >= Look_maxamount && Mean.data().latitude && Mean.data().longitude) {
+                        _this27.distanceInKm = _this27.getDistanceFromLatLonInKm(_this27.Look_latitude, _this27.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                        _this26.sellerunmatchedPriceLogic.push({
+                        _this27.sellerunmatchedPriceLogic.push({
                           detail: Mean.data(),
                           propertyId: Mean.id,
-                          distance: _this26.distanceInKm * 0.6214
+                          distance: _this27.distanceInKm * 0.6214
                         });
 
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this26.Look_postcode && Mean.data().PropertyFor == _this26.Look_PropertyFor && Mean.data().PropertyType != _this26.Look_PropertyType && Mean.data().LookingTown == _this26.Look_Town && Mean.data().latitude && Mean.data().longitude) {
+                      else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this27.Look_postcode && Mean.data().PropertyFor == _this27.Look_PropertyFor && Mean.data().PropertyType != _this27.Look_PropertyType && Mean.data().LookingTown == _this27.Look_Town && Mean.data().latitude && Mean.data().longitude) {
                           console.log(Mean.data());
-                          _this26.distanceInKm = _this26.getDistanceFromLatLonInKm(_this26.Look_latitude, _this26.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                          _this27.distanceInKm = _this27.getDistanceFromLatLonInKm(_this27.Look_latitude, _this27.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                          _this26.sellerlookTown.push({
+                          _this27.sellerlookTown.push({
                             detail: Mean.data(),
                             propertyId: Mean.id,
-                            distance: _this26.distanceInKm * 0.6214
+                            distance: _this27.distanceInKm * 0.6214
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this26.sellerunmatchedProperties.sort(_this26.compare);
+            _this27.sellerunmatchedProperties.sort(_this27.compare);
 
-            _this26.noOfMatches = _this26.sellermatchedProperties.length;
-            _this26.noOfUnmatched = _this26.sellerunmatchedProperties.length; //console.log(this.matchedProperties[0]);
+            _this27.noOfMatches = _this27.sellermatchedProperties.length;
+            _this27.noOfUnmatched = _this27.sellerunmatchedProperties.length; //console.log(this.matchedProperties[0]);
           });
           this.getExpressedListingIds();
         }
@@ -5902,15 +5934,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this27 = this;
+          var _this28 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this27.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this27.distinctExpressedUid.push(item.data().propertyId);
+              if (_this28.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this28.distinctExpressedUid.push(item.data().propertyId);
               }
             });
-            console.log(_this27.distinctExpressedUid);
+            console.log(_this28.distinctExpressedUid);
           });
         }
       }, {
@@ -6151,69 +6183,69 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this28 = this;
+          var _this29 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this28.PriceRange = params.get("MaxAmount");
-            _this28.MinAmount = params.get("MinAmount");
-            _this28.Lookingpostcode = params.get("Lookingpostcode");
-            _this28.LookingStreetname = params.get("LookingStreetname");
-            _this28.Position = params.get("Position");
-            _this28.PropertyType = params.get("PropertyType");
-            _this28.Roomsmax = params.get("Roomsmax");
-            _this28.ownership = params.get("Ownership");
-            _this28.Conditions = params.get("Conditions");
-            _this28.Maxbathroom = params.get("Maxbathroom");
-            _this28.Maxreception = params.get("Maxreception");
-            _this28.features = params.get("features");
-            _this28.UserId = params.get("UserId").replace(/\s/g, "");
-            _this28.FinancialPosition = params.get("FinancialPosition");
-            _this28.ChainStatus = params.get("ChainStatus");
-            console.log(_this28.ChainStatus); // this.FinancialPosition = params.get("FinancialPosition");
+            _this29.PriceRange = params.get("MaxAmount");
+            _this29.MinAmount = params.get("MinAmount");
+            _this29.Lookingpostcode = params.get("Lookingpostcode");
+            _this29.LookingStreetname = params.get("LookingStreetname");
+            _this29.Position = params.get("Position");
+            _this29.PropertyType = params.get("PropertyType");
+            _this29.Roomsmax = params.get("Roomsmax");
+            _this29.ownership = params.get("Ownership");
+            _this29.Conditions = params.get("Conditions");
+            _this29.Maxbathroom = params.get("Maxbathroom");
+            _this29.Maxreception = params.get("Maxreception");
+            _this29.features = params.get("features");
+            _this29.UserId = params.get("UserId").replace(/\s/g, "");
+            _this29.FinancialPosition = params.get("FinancialPosition");
+            _this29.ChainStatus = params.get("ChainStatus");
+            console.log(_this29.ChainStatus); // this.FinancialPosition = params.get("FinancialPosition");
 
-            _this28.SearchRadius = params.get("SearchRadius"); // this.PriceRange = params.get("PriceRange");
+            _this29.SearchRadius = params.get("SearchRadius"); // this.PriceRange = params.get("PriceRange");
             // this.Validity = params.get("Validity");
             // this.Type = params.get("Type");
             // this.Position = params.get("Position");
 
-            _this28.propertyId = params.get("propertyId");
-            _this28.expressed = params.get("expressed");
-            _this28.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
+            _this29.propertyId = params.get("propertyId");
+            _this29.expressed = params.get("expressed");
+            _this29.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
 
-            _this28.Look_State = params.get("Look_state");
-            _this28.Look_rooms = params.get("Look_rooms");
-            _this28.Look_Propertycondition = params.get("Look_Propertycondition");
-            _this28.Look_Address = params.get("Look_Address");
-            _this28.Look_ownership = params.get("Look_ownership");
-            _this28.Look_features = params.get("Look_features");
-            _this28.Look_userId = params.get("Look_userId");
-            _this28.Look_postcode = params.get("Look_postcode");
-            _this28.Look_PropertyType = params.get("Look_PropertyType");
-            _this28.Look_maxAmount = params.get("Look_maxAmount");
-            _this28.Look_Town = params.get("Look_Town");
-            _this28.Look_Address = params.get("Look_Address");
-            _this28.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
-            _this28.Look_Maxreceptions = params.get("Look_Maxreceptions");
-            _this28.Look_ownership = params.get("Look_ownership");
-            _this28.Look_Maxrooms = params.get("Look_Maxrooms");
-            _this28.Look_Propertyfor = params.get("Look_PropertyFor");
-            console.log(_this28.Look_Maxrooms);
+            _this29.Look_State = params.get("Look_state");
+            _this29.Look_rooms = params.get("Look_rooms");
+            _this29.Look_Propertycondition = params.get("Look_Propertycondition");
+            _this29.Look_Address = params.get("Look_Address");
+            _this29.Look_ownership = params.get("Look_ownership");
+            _this29.Look_features = params.get("Look_features");
+            _this29.Look_userId = params.get("Look_userId");
+            _this29.Look_postcode = params.get("Look_postcode");
+            _this29.Look_PropertyType = params.get("Look_PropertyType");
+            _this29.Look_maxAmount = params.get("Look_maxAmount");
+            _this29.Look_Town = params.get("Look_Town");
+            _this29.Look_Address = params.get("Look_Address");
+            _this29.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
+            _this29.Look_Maxreceptions = params.get("Look_Maxreceptions");
+            _this29.Look_ownership = params.get("Look_ownership");
+            _this29.Look_Maxrooms = params.get("Look_Maxrooms");
+            _this29.Look_Propertyfor = params.get("Look_PropertyFor");
+            console.log(_this29.Look_Maxrooms);
           });
           this.seller_Selected_propertydetail_Service.getUser(this.UserId).subscribe(function (dref) {
             dref.forEach(function (element) {
-              if (_this28.UserId == element.data().uid) {
-                _this28.title = element.data().title;
-                _this28.unNamed = element.data().Name;
+              if (_this29.UserId == element.data().uid) {
+                _this29.title = element.data().title;
+                _this29.unNamed = element.data().Name;
               }
             });
           });
           this.seller_Selected_propertydetail_Service.getExpressed(this.uid).subscribe(function (status) {
             status.forEach(function (elements) {
-              if (_this28.propertyId.trim() == elements.data().propertyId) {
-                _this28.datastored = true;
-                _this28.express = false;
+              if (_this29.propertyId.trim() == elements.data().propertyId) {
+                _this29.datastored = true;
+                _this29.express = false;
               }
             });
           });
@@ -6222,7 +6254,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this29 = this;
+          var _this30 = this;
 
           this.matchesSeller = {
             MinAmount: this.MinAmount,
@@ -6248,8 +6280,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isSellerSelected = true;
           this.return = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this29.isSellerSelected = false;
-              _this29.overlay = false;
+              _this30.isSellerSelected = false;
+              _this30.overlay = false;
             }
           });
           this.matchesBuyer = {
@@ -6275,11 +6307,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isSellerSelected = true;
           this.return = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this29.isSellerSelected = false;
-              _this29.datastored = true;
-              _this29.express = false;
+              _this30.isSellerSelected = false;
+              _this30.datastored = true;
+              _this30.express = false;
 
-              _this29.createSellerNotification();
+              _this30.createSellerNotification();
             }
           });
           this.isSellerSelected = true;
@@ -6303,15 +6335,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this30 = this;
+          var _this31 = this;
 
           this.return = this.seller_Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this30.isSellerSelected = false;
-              _this30.datastored = true;
-              _this30.express = false;
+              _this31.isSellerSelected = false;
+              _this31.datastored = true;
+              _this31.express = false;
 
-              _this30.backClicked();
+              _this31.backClicked();
             }
           });
         }
@@ -6746,6 +6778,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.overlay = false;
         this.sellOption = true;
         this.maxamounts = false;
+        this.now = new Date();
         this.emailFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].email]);
         this.phoneFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(10), _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].pattern("^((\\+91-?)|0)?[0-9]{10}$")]);
         this.FirstnameFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(15)]);
@@ -6762,20 +6795,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this31 = this;
+          var _this32 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this31.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this31.userData));
+              _this32.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this32.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this31.LoggedIn();
+              _this32.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this31.LoggedOut();
+              _this32.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -6783,11 +6816,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this31.lookup(_this31.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this31.data = data;
+              _this32.lookup(_this32.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this32.data = data;
               });
 
-              return _this31.lookup(_this31.listingSeller.Lookingpostcode);
+              return _this32.lookup(_this32.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -6797,30 +6830,30 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this31.lookup(_this31.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this31.data = data;
+              _this32.lookup(_this32.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this32.data = data;
               });
 
-              return _this31.lookup(_this31.listingSeller.Currentpostcode);
+              return _this32.lookup(_this32.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this31.Lookpostcode = params.get("Lookingpostcode");
-            _this31.Lookaddress = params.get("LookingAddress");
-            _this31.LookTown = params.get("LookingTown");
-            _this31.Lookstate = params.get("Lookingstate");
-            _this31.Country = params.get("Country");
-            _this31.Property = params.get("PropertyType");
-            _this31.Rooms = params.get("Maxrooms");
-            _this31.Amount = params.get("MaxAmount");
-            _this31.Ownership = params.get("ownership");
-            _this31.Bathrooms = params.get("Maxbathrooms");
-            _this31.Reception = params.get("Maxreception");
-            _this31.Condition = params.get("PropertyCondition");
-            _this31.Features = params.get("features");
-            _this31.country = params.get("Country");
+            _this32.Lookpostcode = params.get("Lookingpostcode");
+            _this32.Lookaddress = params.get("LookingAddress");
+            _this32.LookTown = params.get("LookingTown");
+            _this32.Lookstate = params.get("Lookingstate");
+            _this32.Country = params.get("Country");
+            _this32.Property = params.get("PropertyType");
+            _this32.Rooms = params.get("Maxrooms");
+            _this32.Amount = params.get("MaxAmount");
+            _this32.Ownership = params.get("ownership");
+            _this32.Bathrooms = params.get("Maxbathrooms");
+            _this32.Reception = params.get("Maxreception");
+            _this32.Condition = params.get("PropertyCondition");
+            _this32.Features = params.get("features");
+            _this32.country = params.get("Country");
           });
 
           if (this.Lookpostcode != ":Lookingpostcode") {
@@ -6866,22 +6899,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this32 = this;
+          var _this33 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this32.uid) {
-                _this32.user.Name = element.data().Name;
-                _this32.user.Email = element.data().email;
-                _this32.user.DOB = element.data().DOB.toDate();
-                _this32.user.Phone = element.data().Phone;
-                _this32.user.title = element.data().title;
-                _this32.user.Currentpostcode = element.data().Currentpostcode;
-                _this32.user.CurrentAddress = element.data().Currentaddress;
-                _this32.user.CurrentTown = element.data().CurrentTowncity;
-                _this32.user.Currentstate = element.data().Currentstate;
+              if (element.data().uid == _this33.uid) {
+                _this33.user.Name = element.data().Name;
+                _this33.user.Email = element.data().email;
+                _this33.user.DOB = element.data().DOB.toDate();
+                _this33.user.Phone = element.data().Phone;
+                _this33.user.title = element.data().title;
+                _this33.user.Currentpostcode = element.data().Currentpostcode;
+                _this33.user.CurrentAddress = element.data().Currentaddress;
+                _this33.user.CurrentTown = element.data().CurrentTowncity;
+                _this33.user.Currentstate = element.data().Currentstate;
                 console.log(element.data().Name);
               }
             });
@@ -7087,44 +7120,50 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this33 = this;
+          var _this34 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this33.isLoading = false;
+            _this34.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this34 = this;
+          var _this35 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this34.isLoading = false;
+            _this35.user.Lastseen = _this35.now;
+            _this35.return = _this35.fillFormsService.createUserTime(_this35.user).then(function (data) {});
+            _this35.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this35 = this;
+          var _this36 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this35.isLoading = false;
+            _this36.user.Lastseen = _this36.now;
+            _this36.return = _this36.fillFormsService.createUserTime(_this36.user).then(function (data) {});
+            _this36.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this36 = this;
+          var _this37 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this36.isLoading = false;
+            _this37.user.Lastseen = _this37.now;
+            _this37.return = _this37.fillFormsService.createUserTime(_this37.user).then(function (data) {});
+            _this37.isLoading = false;
           });
         }
       }, {
@@ -7146,20 +7185,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this37 = this;
+          var _this38 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this37.isLoggedIn = false;
-            _this37.isLoading = false;
-            _this37.user.Name = displayName;
-            _this37.user.DOB = null;
-            _this37.user.Phone = null;
-            _this37.return = _this37.fillFormsService.createUserCustomer(_this37.user).then(function (user) {
-              _this37.isLoggedIn = false;
+            _this38.isLoggedIn = false;
+            _this38.isLoading = false;
+            _this38.user.Name = displayName;
+            _this38.user.DOB = null;
+            _this38.user.Phone = null;
+            _this38.return = _this38.fillFormsService.createUserCustomer(_this38.user).then(function (user) {
+              _this38.isLoggedIn = false;
 
-              if (_this37.user != null) {
-                _this37.isLoading = false;
-                _this37.overlay = true;
+              if (_this38.user != null) {
+                _this38.user.Lastseen = _this38.now;
+                _this38.return = _this38.fillFormsService.createUserTime(_this38.user).then(function (data) {});
+                _this38.isLoading = false;
+                _this38.overlay = true;
               }
             });
           });
@@ -7422,6 +7463,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             console.log("Error: ", error);
           });
         }
+      }, {
+        key: "createUserTime",
+        value: function createUserTime(user) {
+          var userRef = this.db.doc("users/".concat(user.uid));
+          var userData = {
+            Lastseen: user.Lastseen
+          };
+          return userRef.set(userData, {
+            merge: true
+          });
+        }
       }]);
 
       return SellerformService;
@@ -7542,18 +7594,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this38 = this;
+          var _this39 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this38.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this38.userData));
+              _this39.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this39.userData));
 
-              _this38.LoggedIn();
+              _this39.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this38.LoggedOut();
+              _this39.LoggedOut();
             }
           });
         } // addPostcodes()
@@ -7889,7 +7941,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this39 = this;
+          var _this40 = this;
 
           console.log(this.downloadableURL);
           this.stateService.agentSignup = this.agentSignup;
@@ -7897,7 +7949,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.agentSignup.uid = this.uid;
           this.return = this.AgentSignupService.createAgentCustomer(this.uid, this.agentSignup).then(function (data) {
             if (data == true) {
-              var dialogRef = _this39.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__["AlertDialogAgentComponent"], {
+              var dialogRef = _this40.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__["AlertDialogAgentComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -7914,7 +7966,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee15() {
-            var _this40 = this;
+            var _this41 = this;
 
             var file, filePath;
             return regeneratorRuntime.wrap(function _callee15$(_context15) {
@@ -7939,7 +7991,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 7:
                     _context15.t0 = function (url) {
-                      _this40.downloadableURL = url;
+                      _this41.downloadableURL = url;
                     };
 
                     _context15.sent.ref.getDownloadURL().then(_context15.t0);
@@ -7964,34 +8016,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this41 = this;
+          var _this42 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this41.isLoading = false;
+            _this42.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this42 = this;
+          var _this43 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this42.isLoading = false;
+            _this43.isLoading = false;
           });
         }
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this43 = this;
+          var _this44 = this;
 
           console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
-            _this43.isLoading = false;
+            _this44.isLoading = false;
 
-            _this43.getUserDetail(); // this.user.Name = displayName;
+            _this44.getUserDetail(); // this.user.Name = displayName;
             // this.user.DOB = null;
             // this.user.Phone = null;
             // this.return = this.FormService.createUserCustomer(this.user).then(
@@ -8296,7 +8348,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId) {
-          var _this44 = this;
+          var _this45 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -8305,122 +8357,122 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this44.buyer = true;
-              _this44.seller = false;
-              _this44.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this44.Look_PropertyFor = PropertyFor;
-              _this44.Look_propertytype = PropertyType;
-              _this44.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this44.Look_minamount);
-              _this44.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this44.Look_maxamount);
-              _this44.LookingTown = LookingTown;
-              _this44.Look_latitude = latitude;
-              _this44.Look_longitude = longitude;
-              _this44.Look_Streetname = Streetname;
-              _this44.Look_condition = condition;
-              _this44.Look_chainstatus = ChainStatus;
-              _this44.Look_FinancialPosition = FinancialPosition;
-              _this44.Look_Radius = SearchRadius;
-              _this44.Look_Validity = Validity;
-              _this44.Look_Position = Position;
-              _this44.Look_UserId = UserId; //Price Formula
+              _this45.buyer = true;
+              _this45.seller = false;
+              _this45.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this45.Look_PropertyFor = PropertyFor;
+              _this45.Look_propertytype = PropertyType;
+              _this45.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this45.Look_minamount);
+              _this45.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this45.Look_maxamount);
+              _this45.LookingTown = LookingTown;
+              _this45.Look_latitude = latitude;
+              _this45.Look_longitude = longitude;
+              _this45.Look_Streetname = Streetname;
+              _this45.Look_condition = condition;
+              _this45.Look_chainstatus = ChainStatus;
+              _this45.Look_FinancialPosition = FinancialPosition;
+              _this45.Look_Radius = SearchRadius;
+              _this45.Look_Validity = Validity;
+              _this45.Look_Position = Position;
+              _this45.Look_UserId = UserId; //Price Formula
 
-              _this44.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this44.maxAmount);
-              _this44.less = _this44.maxAmount - _this44.maxAmount * 3 / 100;
-              var less = parseInt(_this44.less);
-              _this44.more = _this44.maxAmount * 1 + _this44.maxAmount * 10 / 100 * 1;
-              var more = parseInt(_this44.more); //Remove Postcode Spaces
+              _this45.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this45.maxAmount);
+              _this45.less = _this45.maxAmount - _this45.maxAmount * 3 / 100;
+              var less = parseInt(_this45.less);
+              _this45.more = _this45.maxAmount * 1 + _this45.maxAmount * 10 / 100 * 1;
+              var more = parseInt(_this45.more); //Remove Postcode Spaces
 
-              _this44.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this44.listing = _this44.Look_postcodes;
-              _this44.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this44.isLoading = false;
-              _this44.buyer = true; //Result Set 1 Matches
+              _this45.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this45.listing = _this45.Look_postcodes;
+              _this45.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this45.isLoading = false;
+              _this45.buyer = true; //Result Set 1 Matches
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this44.Look_postcodes && item.data().PropertyFor == _this44.Look_PropertyFor && item.data().PropertyType == _this44.Look_propertytype && maxAmount >= Look_minamount && maxAmount <= Look_maxamount && item.data().latitude && item.data().longitude) {
-                _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && maxAmount >= Look_minamount && maxAmount <= Look_maxamount && item.data().latitude && item.data().longitude) {
+                _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this44.matchedProperties.push({
+                _this45.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this44.distanceInKm * 0.6214
+                  distance: _this45.distanceInKm * 0.6214
                 }); //Use this object to populate html
 
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (item.data().Lookingpostcode.replace(/\s/g, "") == _this44.Look_postcodes && item.data().PropertyFor == _this44.Look_PropertyFor && maxAmount != Look_minamount && maxAmount != Look_maxamount && maxAmount < Look_minamount && maxAmount < Look_maxamount && item.data().PropertyType == _this44.Look_propertytype && more >= Look_minamount && item.data().latitude && item.data().longitude) {
-                  console.log(_this44.Look_latitude, _this44.Look_longitude);
-                  _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, item.data().latitude, item.data().longitude);
+              else if (item.data().Lookingpostcode.replace(/\s/g, "") == _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && maxAmount != Look_minamount && maxAmount != Look_maxamount && maxAmount < Look_minamount && maxAmount < Look_maxamount && item.data().PropertyType == _this45.Look_propertytype && more >= Look_minamount && item.data().latitude && item.data().longitude) {
+                  console.log(_this45.Look_latitude, _this45.Look_longitude);
+                  _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
 
-                  _this44.prceMathLogic.push({
+                  _this45.prceMathLogic.push({
                     detail: item.data(),
                     propertyId: item.id,
-                    distance: _this44.distanceInKm * 0.6214
+                    distance: _this45.distanceInKm * 0.6214
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this44.Look_postcodes && item.data().PropertyFor == _this44.Look_PropertyFor && item.data().PropertyType == _this44.Look_propertytype && maxAmount >= Look_minamount && maxAmount <= Look_maxamount && _this44.removespace.substring(0, 3) == _this44.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                    _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, item.data().latitude, item.data().longitude);
+                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && maxAmount >= Look_minamount && maxAmount <= Look_maxamount && _this45.removespace.substring(0, 3) == _this45.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                    _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
 
-                    _this44.settwo.push({
+                    _this45.settwo.push({
                       detail: item.data(),
                       propertyId: item.id,
-                      distance: _this44.distanceInKm * 0.6214
+                      distance: _this45.distanceInKm * 0.6214
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (item.data().Lookingpostcode != _this44.Look_postcodes && item.data().PropertyFor == _this44.Look_PropertyFor && item.data().PropertyType == _this44.Look_propertytype && more <= Look_minamount && item.data().latitude && item.data().longitude) {
-                      console.log("Latitude" + _this44.Look_latitude + "Longitude" + _this44.Look_longitude);
-                      _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, item.data().latitude, item.data().longitude);
+                  else if (item.data().Lookingpostcode != _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && more <= Look_minamount && item.data().latitude && item.data().longitude) {
+                      console.log("Latitude" + _this45.Look_latitude + "Longitude" + _this45.Look_longitude);
+                      _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
 
-                      _this44.unmatchedProperties.push({
+                      _this45.unmatchedProperties.push({
                         detail: item.data(),
                         propertyId: item.id,
-                        distance: _this44.distanceInKm * 0.6214
+                        distance: _this45.distanceInKm * 0.6214
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this44.Look_postcodes && item.data().PropertyFor == _this44.Look_PropertyFor && item.data().PropertyType == _this44.Look_propertytype && less >= Look_maxamount && item.data().latitude && item.data().longitude) {
-                        _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, item.data().latitude, item.data().longitude);
+                    else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && less >= Look_maxamount && item.data().latitude && item.data().longitude) {
+                        _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
 
-                        _this44.unmatchedPriceLogic.push({
+                        _this45.unmatchedPriceLogic.push({
                           detail: item.data(),
                           propertyId: item.id,
-                          distance: _this44.distanceInKm * 0.6214
+                          distance: _this45.distanceInKm * 0.6214
                         });
 
-                        console.log(_this44.distanceInKm * 0.6214);
+                        console.log(_this45.distanceInKm * 0.6214);
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this44.Look_postcodes && item.data().PropertyType != _this44.Look_propertytype && item.data().PropertyFor == _this44.Look_PropertyFor && item.data().LookingTown == _this44.Look_Town && item.data().latitude && item.data().longitude) {
+                      else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcodes && item.data().PropertyType != _this45.Look_propertytype && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().LookingTown == _this45.Look_Town && item.data().latitude && item.data().longitude) {
                           console.log(item.data());
-                          _this44.distanceInKm = _this44.getDistanceFromLatLonInKm(_this44.Look_latitude, _this44.Look_longitude, item.data().latitude, item.data().longitude);
-                          console.log(_this44.listingBuyer.latitude + _this44.listingBuyer.longitude);
+                          _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
+                          console.log(_this45.listingBuyer.latitude + _this45.listingBuyer.longitude);
 
-                          _this44.lookTown.push({
+                          _this45.lookTown.push({
                             detail: item.data(),
                             propertyId: item.id,
-                            distance: _this44.distanceInKm * 0.6214
+                            distance: _this45.distanceInKm * 0.6214
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this44.unmatchedProperties.sort(_this44.compare);
+            _this45.unmatchedProperties.sort(_this45.compare);
           });
           this.getExpressedListingIds();
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude) {
-          var _this45 = this;
+          var _this46 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -8448,85 +8500,85 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this45.maxAmount = _this45.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this45.maxAmount);
-              _this45.less = _this45.maxAmount - _this45.maxAmount * 3 / 100;
-              var less = parseInt(_this45.less);
-              _this45.more = _this45.maxAmount * 1 + _this45.maxAmount * 10 / 100 * 1;
-              var more = parseInt(_this45.more);
-              _this45.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this45.Look_minamount);
-              _this45.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this45.Look_maxamount); //Remove Postcode Spaces
+              _this46.maxAmount = _this46.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this46.maxAmount);
+              _this46.less = _this46.maxAmount - _this46.maxAmount * 3 / 100;
+              var less = parseInt(_this46.less);
+              _this46.more = _this46.maxAmount * 1 + _this46.maxAmount * 10 / 100 * 1;
+              var more = parseInt(_this46.more);
+              _this46.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this46.Look_minamount);
+              _this46.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this46.Look_maxamount); //Remove Postcode Spaces
 
-              _this45.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this45.listing = _this45.Lookpostcode;
-              _this45.isLoading = false; //Result Set 1 Matches
+              _this46.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this46.listing = _this46.Lookpostcode;
+              _this46.isLoading = false; //Result Set 1 Matches
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this45.Look_postcode && Mean.data().PropertyFor == _this45.Look_PropertyFor && Mean.data().PropertyType == _this45.Look_PropertyType && maxAmount >= Look_minamount && maxAmount <= Look_maxamount) {
-                _this45.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this46.Look_postcode && Mean.data().PropertyFor == _this46.Look_PropertyFor && Mean.data().PropertyType == _this46.Look_PropertyType && maxAmount >= Look_minamount && maxAmount <= Look_maxamount) {
+                _this46.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this45.Look_postcode && Mean.data().PropertyFor == _this45.Look_PropertyFor && maxAmount != Look_minamount && maxAmount != Look_maxamount && maxAmount < Look_minamount && maxAmount < Look_maxamount && Mean.data().PropertyType == _this45.Look_PropertyType && more >= Look_minamount) {
-                  _this45.sellerprceMathLogic.push({
+              else if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this46.Look_postcode && Mean.data().PropertyFor == _this46.Look_PropertyFor && maxAmount != Look_minamount && maxAmount != Look_maxamount && maxAmount < Look_minamount && maxAmount < Look_maxamount && Mean.data().PropertyType == _this46.Look_PropertyType && more >= Look_minamount) {
+                  _this46.sellerprceMathLogic.push({
                     detail: Mean.data(),
                     propertyId: Mean.id
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcode && Mean.data().PropertyType == _this45.Look_PropertyType && Mean.data().PropertyFor == _this45.Look_PropertyFor && maxAmount >= Look_minamount && maxAmount <= Look_maxamount && _this45.removespace.substring(0, 3) == _this45.Look_postcode.substring(0, 3)) {
-                    _this45.sellersettwo.push({
+                else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && maxAmount >= Look_minamount && maxAmount <= Look_maxamount && _this46.removespace.substring(0, 3) == _this46.Look_postcode.substring(0, 3)) {
+                    _this46.sellersettwo.push({
                       detail: Mean.data(),
                       propertyId: Mean.id
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (Mean.data().Lookingpostcode != _this45.Look_postcode && Mean.data().PropertyType == _this45.Look_PropertyType && Mean.data().PropertyFor == _this45.Look_PropertyFor && more <= Look_minamount && Mean.data().latitude && Mean.data().longitude) {
-                      _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                  else if (Mean.data().Lookingpostcode != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && more <= Look_minamount && Mean.data().latitude && Mean.data().longitude) {
+                      _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                      _this45.sellerunmatchedProperties.push({
+                      _this46.sellerunmatchedProperties.push({
                         detail: Mean.data(),
                         propertyId: Mean.id,
-                        distance: _this45.distanceInKm * 0.6214
+                        distance: _this46.distanceInKm * 0.6214
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcode && Mean.data().PropertyType == _this45.Look_PropertyType && Mean.data().PropertyFor == _this45.Look_PropertyFor && less >= Look_maxamount && Mean.data().latitude && Mean.data().longitude) {
-                        _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                    else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less >= Look_maxamount && Mean.data().latitude && Mean.data().longitude) {
+                        _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                        _this45.unmatchedPriceLogic.push({
+                        _this46.unmatchedPriceLogic.push({
                           detail: Mean.data(),
                           propertyId: Mean.id,
-                          distance: _this45.distanceInKm * 0.6214
+                          distance: _this46.distanceInKm * 0.6214
                         });
 
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcode && Mean.data().PropertyFor == _this45.Look_PropertyFor && Mean.data().PropertyType != _this45.Look_PropertyType && Mean.data().LookingTown == _this45.Look_Town && Mean.data().latitude && Mean.data().longitude) {
+                      else if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyFor == _this46.Look_PropertyFor && Mean.data().PropertyType != _this46.Look_PropertyType && Mean.data().LookingTown == _this46.Look_Town && Mean.data().latitude && Mean.data().longitude) {
                           console.log(Mean.data());
-                          _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                          _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                          _this45.sellerlookTown.push({
+                          _this46.sellerlookTown.push({
                             detail: Mean.data(),
                             propertyId: Mean.id,
-                            distance: _this45.distanceInKm * 0.6214
+                            distance: _this46.distanceInKm * 0.6214
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this45.unmatchedProperties.sort(_this45.compare);
+            _this46.unmatchedProperties.sort(_this46.compare);
 
-            _this45.noOfMatches = _this45.sellermatchedProperties.length;
-            _this45.noOfUnmatched = _this45.sellerunmatchedProperties.length; //console.log(this.matchedProperties[0]);
+            _this46.noOfMatches = _this46.sellermatchedProperties.length;
+            _this46.noOfUnmatched = _this46.sellerunmatchedProperties.length; //console.log(this.matchedProperties[0]);
           });
           this.getExpressedListingIds();
         }
@@ -8623,12 +8675,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this46 = this;
+          var _this47 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this46.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this46.distinctExpressedUid.push(item.data().propertyId);
+              if (_this47.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this47.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -8647,12 +8699,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this47 = this;
+          var _this48 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this47.propertyRequirementDetails.push({
+              _this48.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -8661,110 +8713,110 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this47.propertyDetails.push({
+              _this48.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
             });
-            _this47.MatchesItem = _this47.propertyRequirementDetails.length + _this47.propertyDetails.length;
+            _this48.MatchesItem = _this48.propertyRequirementDetails.length + _this48.propertyDetails.length;
 
-            if (_this47.MatchesItem < 2) {
-              if (_this47.propertyRequirementDetails.length > _this47.propertyDetails.length) {
-                _this47.buyer = true;
-                _this47.seller = false;
-                _this47.buyerItems = true;
-                _this47.buyerVal = _this47.propertyRequirementDetails[0].data.Lookingpostcode;
-                var Lookingpostcode = _this47.propertyRequirementDetails[0].data.Lookingpostcode;
-                var MinAmount = _this47.propertyRequirementDetails[0].data.MinAmount;
-                var MaxAmount = _this47.propertyRequirementDetails[0].data.MaxAmount;
-                var PropertyFor = _this47.propertyRequirementDetails[0].data.PropertyFor;
-                var PropertyType = _this47.propertyRequirementDetails[0].data.PropertyType;
-                var LookingTown = _this47.propertyRequirementDetails[0].data.LookingTown;
-                var latitude = _this47.propertyRequirementDetails[0].data.latitude;
-                var longitude = _this47.propertyRequirementDetails[0].data.longitude;
-                var Streetname = _this47.propertyRequirementDetails[0].data.LookingStreetname;
-                var condition = _this47.propertyRequirementDetails[0].data.Conditions;
-                var ChainStatus = _this47.propertyRequirementDetails[0].data.ChainStatus;
-                var FinancialPosition = _this47.propertyRequirementDetails[0].data.FinancialPosition;
-                var SearchRadius = _this47.propertyRequirementDetails[0].data.SearchRadius;
-                var Validity = _this47.propertyRequirementDetails[0].data.Validity;
-                var Position = _this47.propertyRequirementDetails[0].data.Position;
-                var UserId = _this47.propertyRequirementDetails[0].data.UserId;
+            if (_this48.MatchesItem < 2) {
+              if (_this48.propertyRequirementDetails.length > _this48.propertyDetails.length) {
+                _this48.buyer = true;
+                _this48.seller = false;
+                _this48.buyerItems = true;
+                _this48.buyerVal = _this48.propertyRequirementDetails[0].data.Lookingpostcode;
+                var Lookingpostcode = _this48.propertyRequirementDetails[0].data.Lookingpostcode;
+                var MinAmount = _this48.propertyRequirementDetails[0].data.MinAmount;
+                var MaxAmount = _this48.propertyRequirementDetails[0].data.MaxAmount;
+                var PropertyFor = _this48.propertyRequirementDetails[0].data.PropertyFor;
+                var PropertyType = _this48.propertyRequirementDetails[0].data.PropertyType;
+                var LookingTown = _this48.propertyRequirementDetails[0].data.LookingTown;
+                var latitude = _this48.propertyRequirementDetails[0].data.latitude;
+                var longitude = _this48.propertyRequirementDetails[0].data.longitude;
+                var Streetname = _this48.propertyRequirementDetails[0].data.LookingStreetname;
+                var condition = _this48.propertyRequirementDetails[0].data.Conditions;
+                var ChainStatus = _this48.propertyRequirementDetails[0].data.ChainStatus;
+                var FinancialPosition = _this48.propertyRequirementDetails[0].data.FinancialPosition;
+                var SearchRadius = _this48.propertyRequirementDetails[0].data.SearchRadius;
+                var Validity = _this48.propertyRequirementDetails[0].data.Validity;
+                var Position = _this48.propertyRequirementDetails[0].data.Position;
+                var UserId = _this48.propertyRequirementDetails[0].data.UserId;
 
-                _this47.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId);
+                _this48.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId);
               } else {
-                _this47.seller = true;
-                _this47.buyer = false;
-                _this47.sellerItem = true;
-                _this47.sellerVal = _this47.propertyDetails[0].seller.Lookingpostcode;
-                var _Lookingpostcode = _this47.propertyDetails[0].seller.Lookingpostcode;
-                var _PropertyFor = _this47.propertyDetails[0].seller.PropertyFor;
-                var _PropertyType = _this47.propertyDetails[0].seller.PropertyType;
-                var _MaxAmount = _this47.propertyDetails[0].seller.MaxAmount;
-                var _LookingTown = _this47.propertyDetails[0].seller.LookingTown;
-                var Lookingstate = _this47.propertyDetails[0].seller.Lookingstate;
-                var Maxbathrooms = _this47.propertyDetails[0].seller.Maxbathrooms;
-                var PropertyCondition = _this47.propertyDetails[0].seller.PropertyCondition;
-                var LookingAddress = _this47.propertyDetails[0].seller.LookingAddress;
-                var ownership = _this47.propertyDetails[0].seller.ownership;
-                var features = _this47.propertyDetails[0].seller.features;
-                var _UserId = _this47.propertyDetails[0].seller.UserId;
-                var Maxreception = _this47.propertyDetails[0].seller.Maxreception;
-                var Maxrooms = _this47.propertyDetails[0].seller.Maxrooms;
-                var _latitude = _this47.propertyDetails[0].seller.latitude;
-                var _longitude = _this47.propertyDetails[0].seller.longitude;
+                _this48.seller = true;
+                _this48.buyer = false;
+                _this48.sellerItem = true;
+                _this48.sellerVal = _this48.propertyDetails[0].seller.Lookingpostcode;
+                var _Lookingpostcode = _this48.propertyDetails[0].seller.Lookingpostcode;
+                var _PropertyFor = _this48.propertyDetails[0].seller.PropertyFor;
+                var _PropertyType = _this48.propertyDetails[0].seller.PropertyType;
+                var _MaxAmount = _this48.propertyDetails[0].seller.MaxAmount;
+                var _LookingTown = _this48.propertyDetails[0].seller.LookingTown;
+                var Lookingstate = _this48.propertyDetails[0].seller.Lookingstate;
+                var Maxbathrooms = _this48.propertyDetails[0].seller.Maxbathrooms;
+                var PropertyCondition = _this48.propertyDetails[0].seller.PropertyCondition;
+                var LookingAddress = _this48.propertyDetails[0].seller.LookingAddress;
+                var ownership = _this48.propertyDetails[0].seller.ownership;
+                var features = _this48.propertyDetails[0].seller.features;
+                var _UserId = _this48.propertyDetails[0].seller.UserId;
+                var Maxreception = _this48.propertyDetails[0].seller.Maxreception;
+                var Maxrooms = _this48.propertyDetails[0].seller.Maxrooms;
+                var _latitude = _this48.propertyDetails[0].seller.latitude;
+                var _longitude = _this48.propertyDetails[0].seller.longitude;
 
-                _this47.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude);
+                _this48.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude);
               }
-            } else if (_this47.MatchesItem > 1) {
-              if (_this47.propertyRequirementDetails.length > _this47.propertyDetails.length) {
-                _this47.buyer = true;
-                _this47.buyerVal = _this47.propertyRequirementDetails[0].data.Lookingpostcode;
-                _this47.test = _this47.buyerVal;
-                var _Lookingpostcode2 = _this47.propertyRequirementDetails[0].data.Lookingpostcode;
-                var _MinAmount = _this47.propertyRequirementDetails[0].data.MinAmount;
-                var _MaxAmount2 = _this47.propertyRequirementDetails[0].data.MaxAmount;
-                var _PropertyFor2 = _this47.propertyRequirementDetails[0].data.PropertyFor;
-                var _PropertyType2 = _this47.propertyRequirementDetails[0].data.PropertyType;
-                var _LookingTown2 = _this47.propertyRequirementDetails[0].data.LookingTown;
-                var _latitude2 = _this47.propertyRequirementDetails[0].data.latitude;
-                var _longitude2 = _this47.propertyRequirementDetails[0].data.longitude;
-                var _Streetname = _this47.propertyRequirementDetails[0].data.LookingStreetname;
-                var _condition = _this47.propertyRequirementDetails[0].data.Conditions;
-                var _ChainStatus = _this47.propertyRequirementDetails[0].data.ChainStatus;
-                var _FinancialPosition = _this47.propertyRequirementDetails[0].data.FinancialPosition;
-                var _SearchRadius = _this47.propertyRequirementDetails[0].data.SearchRadius;
-                var _Validity = _this47.propertyRequirementDetails[0].data.Validity;
-                var _Position = _this47.propertyRequirementDetails[0].data.Position;
-                var _UserId2 = _this47.propertyRequirementDetails[0].data.UserId;
+            } else if (_this48.MatchesItem > 1) {
+              if (_this48.propertyRequirementDetails.length > _this48.propertyDetails.length) {
+                _this48.buyer = true;
+                _this48.buyerVal = _this48.propertyRequirementDetails[0].data.Lookingpostcode;
+                _this48.test = _this48.buyerVal;
+                var _Lookingpostcode2 = _this48.propertyRequirementDetails[0].data.Lookingpostcode;
+                var _MinAmount = _this48.propertyRequirementDetails[0].data.MinAmount;
+                var _MaxAmount2 = _this48.propertyRequirementDetails[0].data.MaxAmount;
+                var _PropertyFor2 = _this48.propertyRequirementDetails[0].data.PropertyFor;
+                var _PropertyType2 = _this48.propertyRequirementDetails[0].data.PropertyType;
+                var _LookingTown2 = _this48.propertyRequirementDetails[0].data.LookingTown;
+                var _latitude2 = _this48.propertyRequirementDetails[0].data.latitude;
+                var _longitude2 = _this48.propertyRequirementDetails[0].data.longitude;
+                var _Streetname = _this48.propertyRequirementDetails[0].data.LookingStreetname;
+                var _condition = _this48.propertyRequirementDetails[0].data.Conditions;
+                var _ChainStatus = _this48.propertyRequirementDetails[0].data.ChainStatus;
+                var _FinancialPosition = _this48.propertyRequirementDetails[0].data.FinancialPosition;
+                var _SearchRadius = _this48.propertyRequirementDetails[0].data.SearchRadius;
+                var _Validity = _this48.propertyRequirementDetails[0].data.Validity;
+                var _Position = _this48.propertyRequirementDetails[0].data.Position;
+                var _UserId2 = _this48.propertyRequirementDetails[0].data.UserId;
 
-                _this47.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _SearchRadius, _Validity, _Position, _UserId2);
+                _this48.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _SearchRadius, _Validity, _Position, _UserId2);
               } else {
-                _this47.seller = true;
-                _this47.sellerVal = _this47.propertyDetails[0].seller.Lookingpostcode;
-                _this47.test = _this47.sellerVal;
-                var _Lookingpostcode3 = _this47.propertyDetails[0].seller.Lookingpostcode;
-                var _PropertyFor3 = _this47.propertyDetails[0].seller.PropertyFor;
-                var _PropertyType3 = _this47.propertyDetails[0].seller.PropertyType;
-                var _MaxAmount3 = _this47.propertyDetails[0].seller.MaxAmount;
-                var _LookingTown3 = _this47.propertyDetails[0].seller.LookingTown;
-                var _Lookingstate = _this47.propertyDetails[0].seller.Lookingstate;
-                var _Maxbathrooms = _this47.propertyDetails[0].seller.Maxbathrooms;
-                var _PropertyCondition = _this47.propertyDetails[0].seller.PropertyCondition;
-                var _LookingAddress = _this47.propertyDetails[0].seller.LookingAddress;
-                var _ownership = _this47.propertyDetails[0].seller.ownership;
-                var _features = _this47.propertyDetails[0].seller.features;
-                var _UserId3 = _this47.propertyDetails[0].seller.UserId;
-                var _Maxreception = _this47.propertyDetails[0].seller.Maxreception;
-                var _Maxrooms = _this47.propertyDetails[0].seller.Maxrooms;
-                var _latitude3 = _this47.propertyDetails[0].seller.latitude;
-                var _longitude3 = _this47.propertyDetails[0].seller.longitude;
+                _this48.seller = true;
+                _this48.sellerVal = _this48.propertyDetails[0].seller.Lookingpostcode;
+                _this48.test = _this48.sellerVal;
+                var _Lookingpostcode3 = _this48.propertyDetails[0].seller.Lookingpostcode;
+                var _PropertyFor3 = _this48.propertyDetails[0].seller.PropertyFor;
+                var _PropertyType3 = _this48.propertyDetails[0].seller.PropertyType;
+                var _MaxAmount3 = _this48.propertyDetails[0].seller.MaxAmount;
+                var _LookingTown3 = _this48.propertyDetails[0].seller.LookingTown;
+                var _Lookingstate = _this48.propertyDetails[0].seller.Lookingstate;
+                var _Maxbathrooms = _this48.propertyDetails[0].seller.Maxbathrooms;
+                var _PropertyCondition = _this48.propertyDetails[0].seller.PropertyCondition;
+                var _LookingAddress = _this48.propertyDetails[0].seller.LookingAddress;
+                var _ownership = _this48.propertyDetails[0].seller.ownership;
+                var _features = _this48.propertyDetails[0].seller.features;
+                var _UserId3 = _this48.propertyDetails[0].seller.UserId;
+                var _Maxreception = _this48.propertyDetails[0].seller.Maxreception;
+                var _Maxrooms = _this48.propertyDetails[0].seller.Maxrooms;
+                var _latitude3 = _this48.propertyDetails[0].seller.latitude;
+                var _longitude3 = _this48.propertyDetails[0].seller.longitude;
 
-                _this47.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3);
+                _this48.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3);
               }
             }
 
-            console.log(_this47.MatchesItem);
+            console.log(_this48.MatchesItem);
           });
         }
       }]);
@@ -8985,12 +9037,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this48 = this;
+          var _this49 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this48.propertyRequirementDetails.push({
+              _this49.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -8999,7 +9051,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this48.propertyDetails.push({
+              _this49.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -9600,62 +9652,62 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this49 = this;
+          var _this50 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this49.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
-            _this49.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
-            _this49.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
-            _this49.listingBuyer.Currentstate = params.get("Currentstate").trim();
-            _this49.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
-            _this49.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this49.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            _this49.listingBuyer.LookingTown = params.get("LookingTown").trim();
-            console.log(_this49.listingBuyer.LookingTown);
-            _this49.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
-            _this49.listingBuyer.Country = params.get("Country").trim();
-            _this49.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
-            console.log(_this49.listingBuyer.FinancialPosition);
-            _this49.listingBuyer.SearchRadius = params.get("SearchRadius").trim();
-            _this49.listingBuyer.PropertyType = params.get("PropertyType").trim();
-            _this49.listingBuyer.Roommin = params.get("Roommin").trim();
-            _this49.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
-            _this49.listingBuyer.MinAmount = params.get("MinAmount").trim();
-            _this49.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
-            _this49.listingBuyer.Validity = params.get("Validity").trim();
-            _this49.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
-            _this49.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
-            _this49.listingBuyer.Minreception = params.get("Minreception").trim();
-            _this49.listingBuyer.Maxreception = params.get("Maxreception").trim();
-            _this49.listingBuyer.Conditions = params.get("Conditions").trim();
-            _this49.listingBuyer.Ownership = params.get("Ownership").trim();
-            _this49.listingBuyer.features = params.get("features").trim();
-            _this49.docid = params.get("docid");
-            console.log(_this49.docid);
+            _this50.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
+            _this50.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
+            _this50.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
+            _this50.listingBuyer.Currentstate = params.get("Currentstate").trim();
+            _this50.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
+            _this50.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this50.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
+            _this50.listingBuyer.LookingTown = params.get("LookingTown").trim();
+            console.log(_this50.listingBuyer.LookingTown);
+            _this50.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
+            _this50.listingBuyer.Country = params.get("Country").trim();
+            _this50.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
+            console.log(_this50.listingBuyer.FinancialPosition);
+            _this50.listingBuyer.SearchRadius = params.get("SearchRadius").trim();
+            _this50.listingBuyer.PropertyType = params.get("PropertyType").trim();
+            _this50.listingBuyer.Roommin = params.get("Roommin").trim();
+            _this50.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
+            _this50.listingBuyer.MinAmount = params.get("MinAmount").trim();
+            _this50.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
+            _this50.listingBuyer.Validity = params.get("Validity").trim();
+            _this50.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
+            _this50.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
+            _this50.listingBuyer.Minreception = params.get("Minreception").trim();
+            _this50.listingBuyer.Maxreception = params.get("Maxreception").trim();
+            _this50.listingBuyer.Conditions = params.get("Conditions").trim();
+            _this50.listingBuyer.Ownership = params.get("Ownership").trim();
+            _this50.listingBuyer.features = params.get("features").trim();
+            _this50.docid = params.get("docid");
+            console.log(_this50.docid);
           });
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this49.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this49.userData));
+              _this50.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this50.userData));
 
-              _this49.LoggedIn();
+              _this50.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this49.LoggedOut();
+              _this50.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this49.lookup(_this49.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this49.data = data;
+              _this50.lookup(_this50.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this50.data = data;
               });
 
-              return _this49.lookup(_this49.listingBuyer.Lookingpostcode);
+              return _this50.lookup(_this50.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -9665,11 +9717,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this49.lookup(_this49.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this49.data = data;
+              _this50.lookup(_this50.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this50.data = data;
               });
 
-              return _this49.lookup(_this49.listingBuyer.Currentpostcode);
+              return _this50.lookup(_this50.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -9678,7 +9730,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this50 = this;
+          var _this51 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -9686,13 +9738,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.EditListingBuyerService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this50.uid) {
-                _this50.user.Name = element.data().Name;
-                _this50.user.email = element.data().email;
-                _this50.user.DOB = element.data().DOB.toDate();
-                _this50.user.Phone = element.data().Phone;
-                _this50.user.title = element.data().title;
-                console.log(_this50.user.DOB);
+              if (element.data().uid == _this51.uid) {
+                _this51.user.Name = element.data().Name;
+                _this51.user.email = element.data().email;
+                _this51.user.DOB = element.data().DOB.toDate();
+                _this51.user.Phone = element.data().Phone;
+                _this51.user.title = element.data().title;
+                console.log(_this51.user.DOB);
               }
             });
           });
@@ -9870,20 +9922,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this51 = this;
+          var _this52 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this51.postcodeCoordinates = data;
-            _this51.listingBuyer.longitude = _this51.postcodeCoordinates.result.longitude, _this51.listingBuyer.latitude = _this51.postcodeCoordinates.result.latitude, _this51.listingBuyer.UserId = _this51.userData.uid;
+            _this52.postcodeCoordinates = data;
+            _this52.listingBuyer.longitude = _this52.postcodeCoordinates.result.longitude, _this52.listingBuyer.latitude = _this52.postcodeCoordinates.result.latitude, _this52.listingBuyer.UserId = _this52.userData.uid;
           });
           this.listingBuyer.UserId = this.userData.uid;
           this.listingBuyer.longitude, this.listingBuyer.latitude, this.return = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(function (data) {
-            _this51.lookuplatlong();
+            _this52.lookuplatlong();
 
-            _this51.isLoading = false;
+            _this52.isLoading = false;
 
-            var dialogRef = _this51.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+            var dialogRef = _this52.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
           });
         }
       }, {
@@ -9941,44 +9993,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this52 = this;
+          var _this53 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this52.isLoading = false;
+            _this53.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this53 = this;
+          var _this54 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this53.isLoading = false;
+            _this54.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this54 = this;
+          var _this55 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this54.isLoading = false;
+            _this55.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this55 = this;
+          var _this56 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this55.isLoading = false;
+            _this56.isLoading = false;
           });
         }
       }, {
@@ -10000,17 +10052,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this56 = this;
+          var _this57 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this56.isLoading = false;
-            _this56.user.Name = displayName;
-            _this56.user.DOB = null;
-            _this56.user.Phone = null;
-            _this56.return = _this56.EditListingBuyerService.createUserCustomer(_this56.user).then(function (user) {
-              if (_this56.user != null) {
-                _this56.isLoading = false;
-                _this56.overlay = true;
+            _this57.isLoading = false;
+            _this57.user.Name = displayName;
+            _this57.user.DOB = null;
+            _this57.user.Phone = null;
+            _this57.return = _this57.EditListingBuyerService.createUserCustomer(_this57.user).then(function (user) {
+              if (_this57.user != null) {
+                _this57.isLoading = false;
+                _this57.overlay = true;
               }
             });
           });
@@ -10071,12 +10123,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "lookuplatlong",
         value: function lookuplatlong() {
-          var _this57 = this;
+          var _this58 = this;
 
           //Lookup Declared Function
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this57.postcodeCoordinates = data;
-            _this57.listingBuyer.longitude = _this57.postcodeCoordinates.result.longitude, _this57.listingBuyer.latitude = _this57.postcodeCoordinates.result.latitude, _this57.listingBuyer.UserId = _this57.userData.uid;
+            _this58.postcodeCoordinates = data;
+            _this58.listingBuyer.longitude = _this58.postcodeCoordinates.result.longitude, _this58.listingBuyer.latitude = _this58.postcodeCoordinates.result.latitude, _this58.listingBuyer.UserId = _this58.userData.uid;
           });
         }
       }]);
@@ -10634,22 +10686,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this58 = this;
+          var _this59 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this58.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this58.userData));
+              _this59.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this59.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this58.LoggedIn();
+              _this59.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this58.LoggedOut();
+              _this59.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -10657,11 +10709,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this58.lookup(_this58.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this58.data = data;
+              _this59.lookup(_this59.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this59.data = data;
               });
 
-              return _this58.lookup(_this58.listingSeller.Lookingpostcode);
+              return _this59.lookup(_this59.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -10671,54 +10723,54 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this58.lookup(_this58.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this58.data = data;
+              _this59.lookup(_this59.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this59.data = data;
               });
 
-              return _this58.lookup(_this58.listingSeller.Currentpostcode);
+              return _this59.lookup(_this59.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this58.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
-            _this58.listingSeller.LookingAddress = params.get("LookingAddress");
-            _this58.listingSeller.LookingTown = params.get("LookingTown");
-            _this58.listingSeller.Lookingstate = params.get("Lookingstate");
-            _this58.listingSeller.Country = params.get("Country");
-            _this58.listingSeller.PropertyType = params.get("PropertyType");
-            _this58.listingSeller.Maxrooms = params.get("Maxrooms");
-            _this58.listingSeller.MaxAmount = params.get("MaxAmount");
-            _this58.listingSeller.ownership = params.get("ownership");
-            _this58.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
-            _this58.listingSeller.Maxreception = params.get("Maxreception");
-            _this58.listingSeller.PropertyCondition = params.get("PropertyCondition");
-            _this58.Features = params.get("features");
-            _this58.listingSeller.Country = params.get("Country");
-            _this58.docid = params.get("sellerId");
-            _this58.listingSeller.PropertyFor = params.get("PropertyFor");
+            _this59.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
+            _this59.listingSeller.LookingAddress = params.get("LookingAddress");
+            _this59.listingSeller.LookingTown = params.get("LookingTown");
+            _this59.listingSeller.Lookingstate = params.get("Lookingstate");
+            _this59.listingSeller.Country = params.get("Country");
+            _this59.listingSeller.PropertyType = params.get("PropertyType");
+            _this59.listingSeller.Maxrooms = params.get("Maxrooms");
+            _this59.listingSeller.MaxAmount = params.get("MaxAmount");
+            _this59.listingSeller.ownership = params.get("ownership");
+            _this59.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
+            _this59.listingSeller.Maxreception = params.get("Maxreception");
+            _this59.listingSeller.PropertyCondition = params.get("PropertyCondition");
+            _this59.Features = params.get("features");
+            _this59.listingSeller.Country = params.get("Country");
+            _this59.docid = params.get("sellerId");
+            _this59.listingSeller.PropertyFor = params.get("PropertyFor");
           });
           this.lookingLatLong();
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this59 = this;
+          var _this60 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this59.uid) {
-                _this59.user.Name = element.data().Name;
-                _this59.user.Email = element.data().email;
-                _this59.user.DOB = element.data().DOB.toDate();
-                _this59.user.Phone = element.data().Phone;
-                _this59.user.title = element.data().title;
-                _this59.user.Currentpostcode = element.data().Currentpostcode;
-                _this59.user.CurrentAddress = element.data().Currentaddress;
-                _this59.user.CurrentTown = element.data().CurrentTowncity;
-                _this59.user.Currentstate = element.data().Currentstate;
+              if (element.data().uid == _this60.uid) {
+                _this60.user.Name = element.data().Name;
+                _this60.user.Email = element.data().email;
+                _this60.user.DOB = element.data().DOB.toDate();
+                _this60.user.Phone = element.data().Phone;
+                _this60.user.title = element.data().title;
+                _this60.user.Currentpostcode = element.data().Currentpostcode;
+                _this60.user.CurrentAddress = element.data().Currentaddress;
+                _this60.user.CurrentTown = element.data().CurrentTowncity;
+                _this60.user.Currentstate = element.data().Currentstate;
                 console.log(element.data().Name);
               }
             });
@@ -10739,21 +10791,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this60 = this;
+          var _this61 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this60.postcodeCoordinates = data;
-            _this60.listingSeller.longitude = _this60.postcodeCoordinates.result.longitude, _this60.listingSeller.latitude = _this60.postcodeCoordinates.result.latitude, _this60.listingSeller.UserId = _this60.userData.uid;
-            console.log(_this60.postcodeCoordinates);
+            _this61.postcodeCoordinates = data;
+            _this61.listingSeller.longitude = _this61.postcodeCoordinates.result.longitude, _this61.listingSeller.latitude = _this61.postcodeCoordinates.result.latitude, _this61.listingSeller.UserId = _this61.userData.uid;
+            console.log(_this61.postcodeCoordinates);
           });
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
           this.listingSeller.longitude, this.listingSeller.latitude, this.listingSeller.username = this.user.Name, this.listingSeller.usertitle = this.user.title;
           this.return = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(function (data) {
-            _this60.isLoading = false;
+            _this61.isLoading = false;
 
-            var dialogRef = _this60.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+            var dialogRef = _this61.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -10944,44 +10996,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this61 = this;
+          var _this62 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this61.isLoading = false;
+            _this62.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this62 = this;
+          var _this63 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this62.isLoading = false;
+            _this63.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this63 = this;
+          var _this64 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this63.isLoading = false;
+            _this64.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this64 = this;
+          var _this65 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this64.isLoading = false;
+            _this65.isLoading = false;
           });
         }
       }, {
@@ -11003,16 +11055,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this65 = this;
+          var _this66 = this;
 
           console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
-            _this65.isLoading = false;
-            _this65.user.Name = displayName;
-            _this65.user.DOB = null;
-            _this65.user.Phone = null;
-            _this65.return = _this65.fillFormsService.createUserCustomer(_this65.user).then(function (data) {
-              _this65.overlay = true;
+            _this66.isLoading = false;
+            _this66.user.Name = displayName;
+            _this66.user.DOB = null;
+            _this66.user.Phone = null;
+            _this66.return = _this66.fillFormsService.createUserCustomer(_this66.user).then(function (data) {
+              _this66.overlay = true;
               console.log(data);
             });
           });
@@ -11064,12 +11116,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "lookingLatLong",
         value: function lookingLatLong() {
-          var _this66 = this;
+          var _this67 = this;
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this66.postcodeCoordinates = data;
-            _this66.listingSeller.longitude = _this66.postcodeCoordinates.result.longitude, _this66.listingSeller.latitude = _this66.postcodeCoordinates.result.latitude, _this66.listingSeller.UserId = _this66.userData.uid;
-            console.log(_this66.postcodeCoordinates);
+            _this67.postcodeCoordinates = data;
+            _this67.listingSeller.longitude = _this67.postcodeCoordinates.result.longitude, _this67.listingSeller.latitude = _this67.postcodeCoordinates.result.latitude, _this67.listingSeller.UserId = _this67.userData.uid;
+            console.log(_this67.postcodeCoordinates);
           });
         }
       }]);
@@ -11479,17 +11531,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this67 = this;
+          var _this68 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this67.Lookingpostcode = params.get("Lookingpostcode");
-            _this67.ChainStatus = params.get("ChainStatus");
-            _this67.FinancialPosition = params.get("FinancialPosition");
-            _this67.Type = params.get("PropertyType");
-            _this67.Position = params.get("Position");
-            _this67.SearchRadius = params.get("SearchRadius");
-            _this67.MaxAmount = params.get("MaxAmount");
-            _this67.MinAmount = params.get("MinAmount");
+            _this68.Lookingpostcode = params.get("Lookingpostcode");
+            _this68.ChainStatus = params.get("ChainStatus");
+            _this68.FinancialPosition = params.get("FinancialPosition");
+            _this68.Type = params.get("PropertyType");
+            _this68.Position = params.get("Position");
+            _this68.SearchRadius = params.get("SearchRadius");
+            _this68.MaxAmount = params.get("MaxAmount");
+            _this68.MinAmount = params.get("MinAmount");
           });
         }
       }, {
@@ -11602,16 +11654,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this68 = this;
+          var _this69 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this68.Lookingpostcode = params.get("Lookingpostcode");
-            _this68.Type = params.get("PropertyType");
-            _this68.MaxAmount = params.get("MaxAmount");
-            _this68.Maxrooms = params.get("Maxrooms");
-            _this68.Maxreception = params.get("Maxreception");
-            _this68.PropertyCondition = params.get("PropertyCondition");
-            _this68.Maxbathrooms = params.get("Maxbathrooms");
+            _this69.Lookingpostcode = params.get("Lookingpostcode");
+            _this69.Type = params.get("PropertyType");
+            _this69.MaxAmount = params.get("MaxAmount");
+            _this69.Maxrooms = params.get("Maxrooms");
+            _this69.Maxreception = params.get("Maxreception");
+            _this69.PropertyCondition = params.get("PropertyCondition");
+            _this69.Maxbathrooms = params.get("Maxbathrooms");
           });
         }
       }, {
@@ -11755,22 +11807,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this69 = this;
+          var _this70 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this69.propertyRequirementDetails.push({
+              _this70.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
-            console.log(_this69.propertyRequirementDetails);
+            console.log(_this70.propertyRequirementDetails);
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this69.propertyDetails.push({
+              _this70.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -11973,23 +12025,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerAwaitingDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this70 = this;
+          var _this71 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this70.Lookingpostcode = params.get("Lookingpostcode");
-            _this70.Lookingstate = params.get("Lookingstate");
-            _this70.LookingAddress = params.get("LookingAddress");
-            _this70.norooms = params.get("Roomsmax");
-            _this70.PropertyCondition = params.get("PropertyCondition");
-            _this70.MaxAmount = params.get("MaxAmount");
-            _this70.PropertyType = params.get("PropertyType");
-            _this70.ownership = params.get("ownership");
-            _this70.features = params.get("features");
-            _this70.matchStatus = params.get("matchStatus");
-            _this70.propertyId = params.get("propertyId");
-            _this70.expressed = params.get("expressed");
+            _this71.Lookingpostcode = params.get("Lookingpostcode");
+            _this71.Lookingstate = params.get("Lookingstate");
+            _this71.LookingAddress = params.get("LookingAddress");
+            _this71.norooms = params.get("Roomsmax");
+            _this71.PropertyCondition = params.get("PropertyCondition");
+            _this71.MaxAmount = params.get("MaxAmount");
+            _this71.PropertyType = params.get("PropertyType");
+            _this71.ownership = params.get("ownership");
+            _this71.features = params.get("features");
+            _this71.matchStatus = params.get("matchStatus");
+            _this71.propertyId = params.get("propertyId");
+            _this71.expressed = params.get("expressed");
           });
         }
       }, {
@@ -12113,45 +12165,45 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this71 = this;
+          var _this72 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this71.Lookingpostcode = params.get("Lookingpostcode");
-            _this71.Lookingstate = params.get("Lookingstate");
-            _this71.LookingAddress = params.get("LookingAddress");
-            _this71.norooms = params.get("Roomsmax");
-            _this71.PropertyCondition = params.get("PropertyCondition");
-            _this71.MaxAmount = params.get("MaxAmount");
-            _this71.PropertyType = params.get("PropertyType");
-            _this71.ownership = params.get("ownership");
-            _this71.features = params.get("features");
-            _this71.matchStatus = params.get("matchStatus");
-            _this71.propertyId = params.get("propertyId");
-            _this71.expressed = params.get("expressed");
-            _this71.userId = params.get("UserId");
-            console.log(_this71.userId);
+            _this72.Lookingpostcode = params.get("Lookingpostcode");
+            _this72.Lookingstate = params.get("Lookingstate");
+            _this72.LookingAddress = params.get("LookingAddress");
+            _this72.norooms = params.get("Roomsmax");
+            _this72.PropertyCondition = params.get("PropertyCondition");
+            _this72.MaxAmount = params.get("MaxAmount");
+            _this72.PropertyType = params.get("PropertyType");
+            _this72.ownership = params.get("ownership");
+            _this72.features = params.get("features");
+            _this72.matchStatus = params.get("matchStatus");
+            _this72.propertyId = params.get("propertyId");
+            _this72.expressed = params.get("expressed");
+            _this72.userId = params.get("UserId");
+            console.log(_this72.userId);
           });
           this.MatchesBuyerService.getMatchesSellerProperties(this.userId).then(function (res) {
             res.forEach(function (element) {
               console.log(element.data());
-              _this71.sellerProperty = element.data();
+              _this72.sellerProperty = element.data();
             });
           });
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this72 = this;
+          var _this73 = this;
 
           this.return = this.MatchesBuyerService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this72.createSellerNotification();
+              _this73.createSellerNotification();
 
-              _this72.createOther();
+              _this73.createOther();
 
-              _this72.backClicked();
+              _this73.backClicked();
             }
           });
         }
@@ -12587,15 +12639,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this73 = this;
+          var _this74 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this73.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
+            _this74.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
 
-            _this73.FinancialPosition = params.get("FinancialPosition");
-            _this73.Type = params.get("PropertyType");
-            _this73.Position = params.get("Position");
-            _this73.matchStatus = params.get("matchStatus");
+            _this74.FinancialPosition = params.get("FinancialPosition");
+            _this74.Type = params.get("PropertyType");
+            _this74.Position = params.get("Position");
+            _this74.matchStatus = params.get("matchStatus");
           });
         }
       }, {
@@ -12720,7 +12772,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this74 = this;
+          var _this75 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -12731,16 +12783,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this74.sellerProperty.push({
+              _this75.sellerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this74.propertyLength = _this74.sellerProperty.length;
+              _this75.propertyLength = _this75.sellerProperty.length;
             });
 
-            if (_this74.propertyLength > 0) {
-              _this74.getExpressedListingIds();
+            if (_this75.propertyLength > 0) {
+              _this75.getExpressedListingIds();
             }
           }); // Fetch details Seller
 
@@ -12748,28 +12800,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             res.forEach(function (element) {
               console.log(element.data());
 
-              _this74.buyerProperty.push({
+              _this75.buyerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this74.sellerLength = _this74.buyerProperty.length;
+              _this75.sellerLength = _this75.buyerProperty.length;
             });
 
-            if (_this74.sellerLength > 0) {
-              _this74.getExpressedListingIds();
+            if (_this75.sellerLength > 0) {
+              _this75.getExpressedListingIds();
             }
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this75 = this;
+          var _this76 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this75.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this75.distinctExpressedUid.push(item.data().propertyId);
+              if (_this76.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this76.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -13029,50 +13081,50 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this76 = this;
+          var _this77 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this76.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this76.ChainStatus = params.get("ChainStatus");
-            _this76.norooms = params.get("Roomsmax");
-            _this76.PropertyCondition = params.get("PropertyCondition");
-            _this76.Conditions = params.get("Conditions");
-            _this76.SearchRadius = params.get("SearchRadius");
-            _this76.MinAmount = params.get("MinAmount");
-            _this76.Type = params.get("Type");
-            _this76.MaxAmount = params.get("MaxAmount");
-            _this76.propertyId = params.get("propertyId");
-            _this76.UserId = params.get("UserId");
+            _this77.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this77.ChainStatus = params.get("ChainStatus");
+            _this77.norooms = params.get("Roomsmax");
+            _this77.PropertyCondition = params.get("PropertyCondition");
+            _this77.Conditions = params.get("Conditions");
+            _this77.SearchRadius = params.get("SearchRadius");
+            _this77.MinAmount = params.get("MinAmount");
+            _this77.Type = params.get("Type");
+            _this77.MaxAmount = params.get("MaxAmount");
+            _this77.propertyId = params.get("propertyId");
+            _this77.UserId = params.get("UserId");
           });
           this.AgentService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this76.agents.push(elements.data());
+              _this77.agents.push(elements.data());
 
-              _this76.testagents.push(elements.data().uid);
+              _this77.testagents.push(elements.data().uid);
             });
           });
           this.AgentService.getMatchesSellerProperties(this.UserId).then(function (res) {
             res.forEach(function (element) {
-              _this76.sellerProperty.push(element.data());
+              _this77.sellerProperty.push(element.data());
 
               console.log(element.data().Maxrooms.replace(/\s/g, ""));
 
-              if (_this76.Lookingpostcode == element.data().Lookingpostcode.replace(/\s/g, "") && _this76.Type.replace(/\s/g, "") == element.data().PropertyType) {
-                _this76.sellerPropertyLookingAddress = element.data().LookingAddress.trim();
-                _this76.sellerPropertyLookingTown = element.data().LookingTown.replace(/\s/g, "");
-                _this76.sellerPropertyLookingpostcode = element.data().Lookingpostcode.replace(/\s/g, "");
-                _this76.sellerPropertyLookingstate = element.data().Lookingstate.replace(/\s/g, "");
-                _this76.sellerPropertyMaxAmount = element.data().MaxAmount.replace(/\s/g, "");
-                _this76.sellerPropertyMaxbathrooms = element.data().Maxbathrooms.replace(/\s/g, "");
-                _this76.sellerPropertyMaxreception = element.data().Maxreception.replace(/\s/g, "");
-                _this76.sellerPropertyMaxrooms = element.data().Maxrooms.trim();
-                _this76.sellerPropertyPropertyCondition = element.data().PropertyCondition.replace(/\s/g, "");
-                _this76.sellerPropertyPropertyType = element.data().PropertyType;
-                _this76.sellerPropertyUserId = element.data().UserId;
-                _this76.sellerPropertyfeatures = element.data().features.replace(/\s/g, "");
-                _this76.sellerPropertyownership = element.data().ownership.replace(/\s/g, "");
+              if (_this77.Lookingpostcode == element.data().Lookingpostcode.replace(/\s/g, "") && _this77.Type.replace(/\s/g, "") == element.data().PropertyType) {
+                _this77.sellerPropertyLookingAddress = element.data().LookingAddress.trim();
+                _this77.sellerPropertyLookingTown = element.data().LookingTown.replace(/\s/g, "");
+                _this77.sellerPropertyLookingpostcode = element.data().Lookingpostcode.replace(/\s/g, "");
+                _this77.sellerPropertyLookingstate = element.data().Lookingstate.replace(/\s/g, "");
+                _this77.sellerPropertyMaxAmount = element.data().MaxAmount.replace(/\s/g, "");
+                _this77.sellerPropertyMaxbathrooms = element.data().Maxbathrooms.replace(/\s/g, "");
+                _this77.sellerPropertyMaxreception = element.data().Maxreception.replace(/\s/g, "");
+                _this77.sellerPropertyMaxrooms = element.data().Maxrooms.trim();
+                _this77.sellerPropertyPropertyCondition = element.data().PropertyCondition.replace(/\s/g, "");
+                _this77.sellerPropertyPropertyType = element.data().PropertyType;
+                _this77.sellerPropertyUserId = element.data().UserId;
+                _this77.sellerPropertyfeatures = element.data().features.replace(/\s/g, "");
+                _this77.sellerPropertyownership = element.data().ownership.replace(/\s/g, "");
               }
             });
           });
@@ -13092,11 +13144,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this77 = this;
+          var _this78 = this;
 
           this.return = this.AgentService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this77.createSellerNotification();
+              _this78.createSellerNotification();
             }
           });
         }
@@ -13108,7 +13160,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
-          var _this78 = this;
+          var _this79 = this;
 
           console.log(this.UserId);
           this.notification = {
@@ -13119,7 +13171,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             propertyId: this.propertyId.trim()
           };
           this.return = this.AgentService.createNotification(this.UserId, this.notification).then(function (data) {
-            _this78._router.navigate(["/mymatches"]);
+            _this79._router.navigate(["/mymatches"]);
           });
         }
       }, {
@@ -13564,27 +13616,27 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this79 = this;
+          var _this80 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this79.Lookingpostcode = params.get("Lookingpostcode");
-            _this79.ChainStatus = params.get("ChainStatus");
-            _this79.Conditions = params.get("Conditions");
-            _this79.SearchRadius = params.get("SearchRadius");
-            _this79.Position = params.get("Position");
-            _this79.MinAmount = params.get("MinAmount");
-            _this79.MaxAmount = params.get("MaxAmount");
-            _this79.Type = params.get("PropertyType");
-            _this79.matchStatus = params.get("matchStatus");
-            _this79.propertyId = params.get("propertyId");
-            _this79.expressed = params.get("expressed");
-            _this79.UserId = params.get("UserId");
+            _this80.Lookingpostcode = params.get("Lookingpostcode");
+            _this80.ChainStatus = params.get("ChainStatus");
+            _this80.Conditions = params.get("Conditions");
+            _this80.SearchRadius = params.get("SearchRadius");
+            _this80.Position = params.get("Position");
+            _this80.MinAmount = params.get("MinAmount");
+            _this80.MaxAmount = params.get("MaxAmount");
+            _this80.Type = params.get("PropertyType");
+            _this80.matchStatus = params.get("matchStatus");
+            _this80.propertyId = params.get("propertyId");
+            _this80.expressed = params.get("expressed");
+            _this80.UserId = params.get("UserId");
           });
           this.SelectedMyMatchesService.getMatchesSellerProperties(this.UserId).then(function (res) {
             res.forEach(function (element) {
-              _this79.sellerProperty.push(element.data());
+              _this80.sellerProperty.push(element.data());
 
               console.log(element.data().UserId);
             });
@@ -13598,12 +13650,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this80 = this;
+          var _this81 = this;
 
           this.return = this.SelectedMyMatchesService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {}
 
-            _this80.createSellerNotification();
+            _this81.createSellerNotification();
           });
         }
       }, {
@@ -13879,19 +13931,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this81 = this;
+          var _this82 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this81.uid) {
-                _this81.user.Name = element.data().Name;
-                _this81.user.Email = element.data().email;
-                _this81.user.Phone = element.data().Phone;
-                _this81.user.DOB = element.data().DOB.toDate();
-                _this81.user.Phone = element.data().Phone;
-                _this81.user.Address = element.data().Currentaddress;
+              if (element.data().uid == _this82.uid) {
+                _this82.user.Name = element.data().Name;
+                _this82.user.Email = element.data().email;
+                _this82.user.Phone = element.data().Phone;
+                _this82.user.DOB = element.data().DOB.toDate();
+                _this82.user.Phone = element.data().Phone;
+                _this82.user.Address = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -14106,19 +14158,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this82 = this;
+          var _this83 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this82.uid) {
-                _this82.user.Name = element.data().Name;
-                _this82.user.Email = element.data().email;
-                _this82.user.Phone = element.data().Phone;
-                _this82.user.DOB = element.data().DOB.toDate();
-                _this82.user.Currentaddress = element.data().Currentaddress;
-                _this82.user.prefrence = element.data().prefrence;
+              if (element.data().uid == _this83.uid) {
+                _this83.user.Name = element.data().Name;
+                _this83.user.Email = element.data().email;
+                _this83.user.Phone = element.data().Phone;
+                _this83.user.DOB = element.data().DOB.toDate();
+                _this83.user.Currentaddress = element.data().Currentaddress;
+                _this83.user.prefrence = element.data().prefrence;
               }
             });
           });
@@ -14126,13 +14178,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this83 = this;
+          var _this84 = this;
 
           this.isLoading = true;
           this.return = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this83.isLoading = false;
+            _this84.isLoading = false;
 
-            _this83.alert();
+            _this84.alert();
           });
         }
       }, {
@@ -14304,6 +14356,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.newUser = false;
         this.isLoading = false;
         this.confirmInterest = [];
+        this.now = new Date();
         this.formVar = this.fb.group({
           Name: '',
           email: '',
@@ -14314,20 +14367,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this84 = this;
+          var _this85 = this;
 
           this.initProfile();
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this84.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this84.userData));
+              _this85.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this85.userData));
 
-              _this84.LoggedIn();
+              _this85.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this84.LoggedOut();
+              _this85.LoggedOut();
             }
           });
         }
@@ -14352,38 +14405,39 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this85 = this;
+          var _this86 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this85.sellerProperty.push(element.data());
+                _this86.sellerProperty.push(element.data());
               }
             });
-            _this85.noSellerOfMatche = _this85.sellerProperty.length;
-            _this85.matches = _this85.buyerProperty.length + _this85.sellerProperty.length;
+            _this86.noSellerOfMatche = _this86.sellerProperty.length;
+            _this86.matches = _this86.buyerProperty.length + _this86.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this85.buyerProperty.push(element.data());
+              _this86.buyerProperty.push(element.data());
             });
-            _this85.noBuyerMatches = _this85.buyerProperty.length;
-            _this85.matches = _this85.buyerProperty.length + _this85.sellerProperty.length;
+            _this86.noBuyerMatches = _this86.buyerProperty.length;
+            _this86.matches = _this86.buyerProperty.length + _this86.sellerProperty.length;
           });
+          this.getNotification();
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this86 = this;
+          var _this87 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this86.confirmInterest.push(item.data());
+              _this87.confirmInterest.push(item.data());
             });
-            _this86.notification = _this86.confirmInterest.length;
-            console.log(_this86.notification);
+            _this87.notification = _this87.confirmInterest.length;
+            console.log(_this87.notification);
           });
         }
       }, {
@@ -14441,22 +14495,24 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this87 = this;
+          var _this88 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this87.isLoading = false;
+            _this88.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this88 = this;
+          var _this89 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this88.isLoading = false;
+            _this89.user.Lastseen = _this89.now;
+            _this89.return = _this89.FormsService.createUserTime(_this89.user).then(function (data) {});
+            _this89.isLoading = false;
             window.location.reload();
           });
         } //Signup Google
@@ -14464,13 +14520,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this89 = this;
+          var _this90 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this89.isLoading = false;
+            _this90.user.Lastseen = _this90.now;
+            _this90.return = _this90.FormsService.createUserTime(_this90.user).then(function (data) {});
+            _this90.isLoading = false;
 
-            _this89.initProfile();
+            _this90.initProfile();
 
             window.location.reload();
           });
@@ -14478,13 +14536,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this90 = this;
+          var _this91 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this90.isLoading = false;
+            _this91.user.Lastseen = _this91.now;
+            _this91.return = _this91.FormsService.createUserTime(_this91.user).then(function (data) {});
+            _this91.isLoading = false;
 
-            _this90.initProfile();
+            _this91.initProfile();
 
             window.location.reload();
           });
@@ -14509,22 +14569,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this91 = this;
+          var _this92 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this91.user.Name = displayName;
-            _this91.user.DOB = null;
-            _this91.user.Phone = null;
-            _this91.isLoading = true;
-            _this91.return = _this91.FormsService.createUserCustomer(_this91.user).then(function (data) {
-              if (_this91.user != null) {
-                _this91.isLoading = false;
+            _this92.user.Name = displayName;
+            _this92.user.DOB = null;
+            _this92.user.Phone = null;
+            _this92.isLoading = true;
+            _this92.return = _this92.FormsService.createUserCustomer(_this92.user).then(function (data) {
+              _this92.user.Lastseen = _this92.now;
+              _this92.return = _this92.FormsService.createUserTime(_this92.user).then(function (data) {});
 
-                _this91.initProfile();
+              if (_this92.user != null) {
+                _this92.isLoading = false;
+
+                _this92.initProfile();
 
                 window.location.reload();
               } else {
-                _this91.isLoading = false;
+                _this92.isLoading = false;
               }
             });
           });
@@ -14636,7 +14699,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "/* .grid-item {\n    height: 100vh;\n    z-index: 1;\n    background-color: white;\n} */\n.notification {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items: center;\n    padding: 0.4em 0em;\n}\nimg.icon {\n    width: 40%;\n    text-align: center;\n}\n.notification-icon {\n    display: flex;\n    justify-content: center;\n}\n.main-grid-notifucation {\n    /* height: 100vh; */\n    background-color: white;\n    position: absolute;\n    z-index: 3;\n    height: 100%;\n \n    top: 10vh;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9ub3RpZmljYXRpb24vbm90aWZpY2F0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7R0FJRztBQUNIO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1YsWUFBWTs7SUFFWixTQUFTO0FBQ2IiLCJmaWxlIjoic3JjL2FwcC9NZW51L25vdGlmaWNhdGlvbi9ub3RpZmljYXRpb24uY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIC5ncmlkLWl0ZW0ge1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgei1pbmRleDogMTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbn0gKi9cbi5ub3RpZmljYXRpb24ge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgM2ZyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMC40ZW0gMGVtO1xufVxuXG5pbWcuaWNvbiB7XG4gICAgd2lkdGg6IDQwJTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4ubm90aWZpY2F0aW9uLWljb24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG4ubWFpbi1ncmlkLW5vdGlmdWNhdGlvbiB7XG4gICAgLyogaGVpZ2h0OiAxMDB2aDsgKi9cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgei1pbmRleDogMztcbiAgICBoZWlnaHQ6IDEwMCU7XG4gXG4gICAgdG9wOiAxMHZoO1xufVxuXG4iXX0= */";
+    __webpack_exports__["default"] = "/* .grid-item {\n    height: 100vh;\n    z-index: 1;\n    background-color: white;\n} */\n.notification {\n    display: grid;\n    grid-template-columns: 1fr 3fr;\n    align-items: center;\n    padding: 0.4em 0em;\n}\nimg.icon {\n    width: 40%;\n    text-align: center;\n}\n.notification-icon {\n    display: flex;\n    justify-content: center;\n}\n.main-grid-notifucation {\n    /* height: 100vh; */\n    background-color: white;\n    position: absolute;\n    z-index: 3;\n    height: 100%;\n \n    top: 10vh;\n}\n.read-notfication{\n    background-color: aquamarine;\n\n    margin-bottom: 4px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9ub3RpZmljYXRpb24vbm90aWZpY2F0aW9uLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7R0FJRztBQUNIO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1YsWUFBWTs7SUFFWixTQUFTO0FBQ2I7QUFDQTtJQUNJLDRCQUE0Qjs7SUFFNUIsa0JBQWtCO0FBQ3RCIiwiZmlsZSI6InNyYy9hcHAvTWVudS9ub3RpZmljYXRpb24vbm90aWZpY2F0aW9uLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiAuZ3JpZC1pdGVtIHtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHotaW5kZXg6IDE7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG59ICovXG4ubm90aWZpY2F0aW9uIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDNmcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDAuNGVtIDBlbTtcbn1cblxuaW1nLmljb24ge1xuICAgIHdpZHRoOiA0MCU7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLm5vdGlmaWNhdGlvbi1pY29uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLm1haW4tZ3JpZC1ub3RpZnVjYXRpb24ge1xuICAgIC8qIGhlaWdodDogMTAwdmg7ICovXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHotaW5kZXg6IDM7XG4gICAgaGVpZ2h0OiAxMDAlO1xuIFxuICAgIHRvcDogMTB2aDtcbn1cbi5yZWFkLW5vdGZpY2F0aW9ue1xuICAgIGJhY2tncm91bmQtY29sb3I6IGFxdWFtYXJpbmU7XG5cbiAgICBtYXJnaW4tYm90dG9tOiA0cHg7XG59XG4iXX0= */";
     /***/
   },
 
@@ -14692,17 +14755,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this92 = this;
+          var _this93 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this92.confirmInterest.push(item.data());
-
-              console.log(item.data().time);
+              _this93.confirmInterest.push({
+                Detail: item.data(),
+                id: item.id
+              });
             });
+            console.log(_this93.confirmInterest);
           });
+        }
+      }, {
+        key: "getDocid",
+        value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
+          this.Notification = {
+            propertyId: propertyId,
+            time: time,
+            userId: userId,
+            viewed: viewed,
+            Lastseen: now,
+            Type: Type
+          };
+          this.Notification.Lastseen = this.now;
+          this.return = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(function (data) {});
         }
       }]);
 
@@ -14779,6 +14858,29 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "getnotifications",
         value: function getnotifications(uid) {
           return this.db.collection("notification").doc(uid).collection("Received").get();
+        } //Create Customer ListingBuyer
+
+      }, {
+        key: "createDateCustomer",
+        value: function createDateCustomer(uid, docid, notification) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee35() {
+            return regeneratorRuntime.wrap(function _callee35$(_context35) {
+              while (1) {
+                switch (_context35.prev = _context35.next) {
+                  case 0:
+                    return _context35.abrupt("return", this.db.collection("notification").doc(uid).collection("Received").doc(docid).set(Object.assign({}, notification)).then(function (data) {
+                      console.log("Document successfully written!");
+                    }));
+
+                  case 2:
+                  case "end":
+                    return _context35.stop();
+                }
+              }
+            }, _callee35, this);
+          }));
         }
       }]);
 
@@ -16141,17 +16243,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this93 = this;
+          var _this94 = this;
 
           this.userLogged();
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this93.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this93.userData));
-              _this93.loggedIn = true;
+              _this94.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this94.userData));
+              _this94.loggedIn = true;
             } else {
               localStorage.setItem("user", null);
-              _this93.loggedIn = false;
+              _this94.loggedIn = false;
             }
           });
           this.items();
@@ -16160,42 +16262,42 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this94 = this;
+          var _this95 = this;
 
           this.authService.GoogleAuth().then(function (data) {
-            _this94.loggedIn = true;
+            _this95.loggedIn = true;
 
-            _this94.userLogged();
+            _this95.userLogged();
 
-            _this94.items();
+            _this95.items();
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this95 = this;
+          var _this96 = this;
 
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this95.loggedIn = true;
+            _this96.loggedIn = true;
 
-            _this95.items();
+            _this96.items();
 
-            _this95.userLogged();
+            _this96.userLogged();
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this96 = this;
+          var _this97 = this;
 
           console.log(email + pass);
           this.authService.SignIn(email, pass).then(function (data) {
-            _this96.items();
+            _this97.items();
 
-            _this96.loggedIn = true;
+            _this97.loggedIn = true;
 
-            _this96.userLogged();
+            _this97.userLogged();
           });
         }
       }, {
@@ -16208,28 +16310,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "items",
         value: function items() {
-          var _this97 = this;
+          var _this98 = this;
 
           this.AgenthomeService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this97.agentNew.push(elements.data());
+              _this98.agentNew.push(elements.data());
 
-              if (_this97.uid == elements.data().uid) {
-                _this97.agents = elements.data();
+              if (_this98.uid == elements.data().uid) {
+                _this98.agents = elements.data();
               }
             });
           });
           this.AgenthomeService.getAgentBuyer(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (_this97.uid == element.data().uid) {
-                _this97.agentsBuyer.push(element.data());
+              if (_this98.uid == element.data().uid) {
+                _this98.agentsBuyer.push(element.data());
               }
             });
           });
           this.AgenthomeService.getAgentSeller(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (_this97.uid == element.data().uid) {
-                _this97.agentsSeller.push(element.data());
+              if (_this98.uid == element.data().uid) {
+                _this98.agentsSeller.push(element.data());
               }
             });
           });
@@ -16332,21 +16434,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function createCustomer(uid, docid, agentSignup) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee35() {
-            return regeneratorRuntime.wrap(function _callee35$(_context35) {
+          regeneratorRuntime.mark(function _callee36() {
+            return regeneratorRuntime.wrap(function _callee36$(_context36) {
               while (1) {
-                switch (_context35.prev = _context35.next) {
+                switch (_context36.prev = _context36.next) {
                   case 0:
-                    return _context35.abrupt("return", this.db.collection("agentSignup").doc(uid).collection("agents").doc(docid).set(Object.assign({}, agentSignup)).then(function (data) {
+                    return _context36.abrupt("return", this.db.collection("agentSignup").doc(uid).collection("agents").doc(docid).set(Object.assign({}, agentSignup)).then(function (data) {
                       console.log("Document successfully written!");
                     }));
 
                   case 2:
                   case "end":
-                    return _context35.stop();
+                    return _context36.stop();
                 }
               }
-            }, _callee35, this);
+            }, _callee36, this);
           }));
         }
       }, {
@@ -16449,7 +16551,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this98 = this;
+          var _this99 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -16459,10 +16561,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.AgenthomeService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              if (_this98.uid = elements.data().uid) {
-                _this98.docid = elements.id;
-                _this98.agents = elements.data();
-                console.log(_this98.agents);
+              if (_this99.uid = elements.data().uid) {
+                _this99.docid = elements.id;
+                _this99.agents = elements.data();
+                console.log(_this99.agents);
               }
             });
           });
@@ -16574,15 +16676,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelecteddetailareaComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this99 = this;
+          var _this100 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this99.Minamount = params.get("MinAmount");
-            _this99.MaxAmount = params.get("MaxAmount");
-            _this99.ChainStatus = params.get("ChainStatus");
-            _this99.Conditions = params.get("Conditions");
-            _this99.Lookinpostcode = params.get("Lookinpostcode");
-            _this99.SearchRadius = params.get("SearchRadius");
+            _this100.Minamount = params.get("MinAmount");
+            _this100.MaxAmount = params.get("MaxAmount");
+            _this100.ChainStatus = params.get("ChainStatus");
+            _this100.Conditions = params.get("Conditions");
+            _this100.Lookinpostcode = params.get("Lookinpostcode");
+            _this100.SearchRadius = params.get("SearchRadius");
           });
         }
       }, {
@@ -16736,20 +16838,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelecteddetailsellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this100 = this;
+          var _this101 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this100.LookingAddress = params.get("LookingAddress");
-            _this100.LookingTown = params.get("LookingTown");
-            _this100.Lookingpostcode = params.get("Lookingpostcode");
-            _this100.Lookingstate = params.get("Lookingstate");
-            _this100.MaxAmount = params.get("MaxAmount");
-            _this100.Maxbathroom = params.get("Maxbathrooms");
-            _this100.Maxreception = params.get("Maxreception");
-            _this100.PropertyCondition = params.get("PropertyCondition");
-            _this100.PropertyType = params.get("PropertyType");
-            _this100.Roomsmax = params.get("Roomsmax");
-            _this100.ownership = params.get("ownership");
+            _this101.LookingAddress = params.get("LookingAddress");
+            _this101.LookingTown = params.get("LookingTown");
+            _this101.Lookingpostcode = params.get("Lookingpostcode");
+            _this101.Lookingstate = params.get("Lookingstate");
+            _this101.MaxAmount = params.get("MaxAmount");
+            _this101.Maxbathroom = params.get("Maxbathrooms");
+            _this101.Maxreception = params.get("Maxreception");
+            _this101.PropertyCondition = params.get("PropertyCondition");
+            _this101.PropertyType = params.get("PropertyType");
+            _this101.Roomsmax = params.get("Roomsmax");
+            _this101.ownership = params.get("ownership");
           });
         }
       }, {
@@ -18113,7 +18215,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this101 = this;
+        var _this102 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -18127,8 +18229,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this101.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this101.userData));
+            _this102.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this102.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -18146,42 +18248,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignIn(email, password) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee36() {
-            var result;
-            return regeneratorRuntime.wrap(function _callee36$(_context36) {
-              while (1) {
-                switch (_context36.prev = _context36.next) {
-                  case 0:
-                    _context36.prev = 0;
-                    _context36.next = 3;
-                    return this.afAuth.auth.signInWithEmailAndPassword(email, password);
-
-                  case 3:
-                    result = _context36.sent;
-                    this.ngZone.run(function () {}); // this.SetUserData(result.user);
-
-                    _context36.next = 10;
-                    break;
-
-                  case 7:
-                    _context36.prev = 7;
-                    _context36.t0 = _context36["catch"](0);
-                    window.alert("incorrect username/password");
-
-                  case 10:
-                  case "end":
-                    return _context36.stop();
-                }
-              }
-            }, _callee36, this, [[0, 7]]);
-          }));
-        } // Sign up with email/password
-
-      }, {
-        key: "SignUp",
-        value: function SignUp(email, password) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee37() {
             var result;
             return regeneratorRuntime.wrap(function _callee37$(_context37) {
@@ -18190,18 +18256,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 0:
                     _context37.prev = 0;
                     _context37.next = 3;
-                    return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+                    return this.afAuth.auth.signInWithEmailAndPassword(email, password);
 
                   case 3:
                     result = _context37.sent;
-                    this.SetUserData(result.user);
+                    this.ngZone.run(function () {}); // this.SetUserData(result.user);
+
                     _context37.next = 10;
                     break;
 
                   case 7:
                     _context37.prev = 7;
                     _context37.t0 = _context37["catch"](0);
-                    window.alert(_context37.t0.message);
+                    window.alert("incorrect username/password");
 
                   case 10:
                   case "end":
@@ -18209,6 +18276,41 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee37, this, [[0, 7]]);
+          }));
+        } // Sign up with email/password
+
+      }, {
+        key: "SignUp",
+        value: function SignUp(email, password) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee38() {
+            var result;
+            return regeneratorRuntime.wrap(function _callee38$(_context38) {
+              while (1) {
+                switch (_context38.prev = _context38.next) {
+                  case 0:
+                    _context38.prev = 0;
+                    _context38.next = 3;
+                    return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+
+                  case 3:
+                    result = _context38.sent;
+                    this.SetUserData(result.user);
+                    _context38.next = 10;
+                    break;
+
+                  case 7:
+                    _context38.prev = 7;
+                    _context38.t0 = _context38["catch"](0);
+                    window.alert(_context38.t0.message);
+
+                  case 10:
+                  case "end":
+                    return _context38.stop();
+                }
+              }
+            }, _callee38, this, [[0, 7]]);
           }));
         } // Send email verfificaiton when new user sign up
         // async SendVerificationMail() {
@@ -18222,31 +18324,31 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ForgotPassword(passwordResetEmail) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee38() {
-            return regeneratorRuntime.wrap(function _callee38$(_context38) {
+          regeneratorRuntime.mark(function _callee39() {
+            return regeneratorRuntime.wrap(function _callee39$(_context39) {
               while (1) {
-                switch (_context38.prev = _context38.next) {
+                switch (_context39.prev = _context39.next) {
                   case 0:
-                    _context38.prev = 0;
-                    _context38.next = 3;
+                    _context39.prev = 0;
+                    _context39.next = 3;
                     return this.afAuth.auth.sendPasswordResetEmail(passwordResetEmail);
 
                   case 3:
                     window.alert("Password reset email sent, check your inbox.");
-                    _context38.next = 9;
+                    _context39.next = 9;
                     break;
 
                   case 6:
-                    _context38.prev = 6;
-                    _context38.t0 = _context38["catch"](0);
-                    window.alert(_context38.t0);
+                    _context39.prev = 6;
+                    _context39.t0 = _context39["catch"](0);
+                    window.alert(_context39.t0);
 
                   case 9:
                   case "end":
-                    return _context38.stop();
+                    return _context39.stop();
                 }
               }
-            }, _callee38, this, [[0, 6]]);
+            }, _callee39, this, [[0, 6]]);
           }));
         } // Returns true when user is looged in and email is verified
 
@@ -18274,43 +18376,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee39() {
-            var result;
-            return regeneratorRuntime.wrap(function _callee39$(_context39) {
-              while (1) {
-                switch (_context39.prev = _context39.next) {
-                  case 0:
-                    _context39.prev = 0;
-                    _context39.next = 3;
-                    return this.afAuth.auth.signInWithPopup(provider);
-
-                  case 3:
-                    result = _context39.sent;
-                    this.ngZone.run(function () {});
-                    _context39.next = 10;
-                    break;
-
-                  case 7:
-                    _context39.prev = 7;
-                    _context39.t0 = _context39["catch"](0);
-                    window.alert(_context39.t0);
-
-                  case 10:
-                  case "end":
-                    return _context39.stop();
-                }
-              }
-            }, _callee39, this, [[0, 7]]);
-          }));
-        }
-      }, {
-        key: "AuthSignup",
-        value: function AuthSignup(provider) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
-          /*#__PURE__*/
           regeneratorRuntime.mark(function _callee40() {
-            var _this102 = this;
-
             var result;
             return regeneratorRuntime.wrap(function _callee40$(_context40) {
               while (1) {
@@ -18322,16 +18388,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 3:
                     result = _context40.sent;
-                    this.ngZone.run(function () {
-                      _this102.SetUserData(result.user);
-                    });
+                    this.ngZone.run(function () {});
                     _context40.next = 10;
                     break;
 
                   case 7:
                     _context40.prev = 7;
                     _context40.t0 = _context40["catch"](0);
-                    window.alert(" incorrect username/password needs to change");
+                    window.alert(_context40.t0);
 
                   case 10:
                   case "end":
@@ -18339,6 +18403,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 }
               }
             }, _callee40, this, [[0, 7]]);
+          }));
+        }
+      }, {
+        key: "AuthSignup",
+        value: function AuthSignup(provider) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
+          /*#__PURE__*/
+          regeneratorRuntime.mark(function _callee41() {
+            var _this103 = this;
+
+            var result;
+            return regeneratorRuntime.wrap(function _callee41$(_context41) {
+              while (1) {
+                switch (_context41.prev = _context41.next) {
+                  case 0:
+                    _context41.prev = 0;
+                    _context41.next = 3;
+                    return this.afAuth.auth.signInWithPopup(provider);
+
+                  case 3:
+                    result = _context41.sent;
+                    this.ngZone.run(function () {
+                      _this103.SetUserData(result.user);
+                    });
+                    _context41.next = 10;
+                    break;
+
+                  case 7:
+                    _context41.prev = 7;
+                    _context41.t0 = _context41["catch"](0);
+                    window.alert(" incorrect username/password needs to change");
+
+                  case 10:
+                  case "end":
+                    return _context41.stop();
+                }
+              }
+            }, _callee41, this, [[0, 7]]);
           }));
         }
         /* Setting up user data when sign in with username/password,
@@ -18364,12 +18466,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function SignOut() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
-          regeneratorRuntime.mark(function _callee41() {
-            return regeneratorRuntime.wrap(function _callee41$(_context41) {
+          regeneratorRuntime.mark(function _callee42() {
+            return regeneratorRuntime.wrap(function _callee42$(_context42) {
               while (1) {
-                switch (_context41.prev = _context41.next) {
+                switch (_context42.prev = _context42.next) {
                   case 0:
-                    _context41.next = 2;
+                    _context42.next = 2;
                     return this.afAuth.auth.signOut();
 
                   case 2:
@@ -18379,10 +18481,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 5:
                   case "end":
-                    return _context41.stop();
+                    return _context42.stop();
                 }
               }
-            }, _callee41, this);
+            }, _callee42, this);
           }));
         }
       }, {
@@ -18624,35 +18726,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(PropertyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this103 = this;
+          var _this104 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this103.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this103.PropertyType = params.get("PropertyType").trim();
-            _this103.LookingTown = params.get("LookingTown").trim();
-            _this103.MinAmount = params.get("MinAmount").trim();
-            _this103.MaxAmount = params.get("MaxAmount").trim();
-            _this103.latitude = params.get("latitude");
-            _this103.longitude = params.get("longitude");
-            console.log(_this103.Lookingpostcode + " " + _this103.PropertyType + " " + _this103.LookingTown + " " + _this103.MinAmount + " " + _this103.MaxAmount);
+            _this104.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this104.PropertyType = params.get("PropertyType").trim();
+            _this104.LookingTown = params.get("LookingTown").trim();
+            _this104.MinAmount = params.get("MinAmount").trim();
+            _this104.MaxAmount = params.get("MaxAmount").trim();
+            _this104.latitude = params.get("latitude");
+            _this104.longitude = params.get("longitude");
+            console.log(_this104.Lookingpostcode + " " + _this104.PropertyType + " " + _this104.LookingTown + " " + _this104.MinAmount + " " + _this104.MaxAmount);
           }); // Fetch details
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this103.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              console.log(_this103.maxAmount);
-              _this103.less = _this103.maxAmount - _this103.maxAmount * 3 / 100;
-              _this103.more = _this103.maxAmount * 1 + _this103.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
+              _this104.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              console.log(_this104.maxAmount);
+              _this104.less = _this104.maxAmount - _this104.maxAmount * 3 / 100;
+              _this104.more = _this104.maxAmount * 1 + _this104.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
 
-              _this103.removespace = _this103.Lookingpostcode.replace(/\s/g, "");
-              _this103.listing = _this103.Lookingpostcode.replace(/\s/g, "");
-              _this103.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
+              _this104.removespace = _this104.Lookingpostcode.replace(/\s/g, "");
+              _this104.listing = _this104.Lookingpostcode.replace(/\s/g, "");
+              _this104.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this103.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this103.PropertyType && _this103.maxAmount >= _this103.MinAmount.replace(/,/g, "") && _this103.maxAmount <= _this103.MaxAmount.replace(/,/g, "")) {
-                _this103.matchedProperties.push({
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this104.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this104.PropertyType && _this104.maxAmount >= _this104.MinAmount.replace(/,/g, "") && _this104.maxAmount <= _this104.MaxAmount.replace(/,/g, "")) {
+                _this104.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id
                 }); //Use this object to populate html
@@ -18660,59 +18762,59 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (item.data().Lookingpostcode == _this103.Lookingpostcode && _this103.maxAmount != _this103.MinAmount.replace(/,/g, "") && _this103.maxAmount != _this103.MaxAmount.replace(/,/g, "") && _this103.maxAmount < _this103.MinAmount.replace(/,/g, "") && _this103.maxAmount < _this103.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this103.PropertyType && _this103.more >= _this103.MinAmount.replace(/,/g, "")) {
-                  _this103.prceMathLogic.push({
+              else if (item.data().Lookingpostcode == _this104.Lookingpostcode && _this104.maxAmount != _this104.MinAmount.replace(/,/g, "") && _this104.maxAmount != _this104.MaxAmount.replace(/,/g, "") && _this104.maxAmount < _this104.MinAmount.replace(/,/g, "") && _this104.maxAmount < _this104.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this104.PropertyType && _this104.more >= _this104.MinAmount.replace(/,/g, "")) {
+                  _this104.prceMathLogic.push({
                     detail: item.data(),
                     propertyId: item.id
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this103.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this103.PropertyType && _this103.maxAmount >= _this103.MinAmount.replace(/,/g, "") && _this103.maxAmount <= _this103.MaxAmount.replace(/,/g, "") && _this103.removespace.substring(0, 3) == _this103.listing.substring(0, 3)) {
-                    _this103.settwo.push({
+                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this104.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this104.PropertyType && _this104.maxAmount >= _this104.MinAmount.replace(/,/g, "") && _this104.maxAmount <= _this104.MaxAmount.replace(/,/g, "") && _this104.removespace.substring(0, 3) == _this104.listing.substring(0, 3)) {
+                    _this104.settwo.push({
                       detail: item.data(),
                       propertyId: item.id
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (item.data().Lookingpostcode != _this103.Lookingpostcode && item.data().PropertyType == _this103.PropertyType && _this103.more <= _this103.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                      _this103.distanceInKm = _this103.getDistanceFromLatLonInKm(_this103.latitude, _this103.longitude, item.data().latitude, item.data().longitude);
+                  else if (item.data().Lookingpostcode != _this104.Lookingpostcode && item.data().PropertyType == _this104.PropertyType && _this104.more <= _this104.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                      _this104.distanceInKm = _this104.getDistanceFromLatLonInKm(_this104.latitude, _this104.longitude, item.data().latitude, item.data().longitude);
 
-                      _this103.unmatchedProperties.push({
+                      _this104.unmatchedProperties.push({
                         detail: item.data(),
                         propertyId: item.id,
-                        distance: _this103.distanceInKm
+                        distance: _this104.distanceInKm
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (item.data().Lookingpostcode != _this103.Lookingpostcode && item.data().PropertyType == _this103.PropertyType && _this103.less >= _this103.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                        _this103.distanceInKm = _this103.getDistanceFromLatLonInKm(_this103.latitude, _this103.longitude, item.data().latitude, item.data().longitude);
+                    else if (item.data().Lookingpostcode != _this104.Lookingpostcode && item.data().PropertyType == _this104.PropertyType && _this104.less >= _this104.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                        _this104.distanceInKm = _this104.getDistanceFromLatLonInKm(_this104.latitude, _this104.longitude, item.data().latitude, item.data().longitude);
 
-                        _this103.unmatchedPriceLogic.push({
+                        _this104.unmatchedPriceLogic.push({
                           detail: item.data(),
                           propertyId: item.id,
-                          distance: _this103.distanceInKm
+                          distance: _this104.distanceInKm
                         });
 
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (item.data().Lookingpostcode != _this103.Lookingpostcode && item.data().PropertyType != _this103.PropertyType && item.data().LookingTown == _this103.LookingTown && item.data().latitude && item.data().longitude) {
-                          _this103.distanceInKm = _this103.getDistanceFromLatLonInKm(_this103.latitude, _this103.longitude, item.data().latitude, item.data().longitude);
-                          console.log(_this103.latitude + _this103.longitude);
+                      else if (item.data().Lookingpostcode != _this104.Lookingpostcode && item.data().PropertyType != _this104.PropertyType && item.data().LookingTown == _this104.LookingTown && item.data().latitude && item.data().longitude) {
+                          _this104.distanceInKm = _this104.getDistanceFromLatLonInKm(_this104.latitude, _this104.longitude, item.data().latitude, item.data().longitude);
+                          console.log(_this104.latitude + _this104.longitude);
 
-                          _this103.lookTown.push({
+                          _this104.lookTown.push({
                             detail: item.data(),
                             propertyId: item.id,
-                            distance: _this103.distanceInKm
+                            distance: _this104.distanceInKm
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this103.unmatchedProperties.sort(_this103.compare);
+            _this104.unmatchedProperties.sort(_this104.compare);
           });
           this.getExpressedListingIds();
         }
@@ -18808,15 +18910,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this104 = this;
+          var _this105 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this104.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this104.distinctExpressedUid.push(item.data().propertyId);
+              if (_this105.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this105.distinctExpressedUid.push(item.data().propertyId);
               }
             });
-            console.log(_this104.distinctExpressedUid);
+            console.log(_this105.distinctExpressedUid);
           });
         }
       }, {
@@ -19051,24 +19153,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.model = {};
         this.loading = false;
         this.overlay = false;
+        this.now = new Date();
       }
 
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this105 = this;
+          var _this106 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this105.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this105.userData));
+              _this106.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this106.userData));
 
-              _this105.LoggedIn();
+              _this106.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this105.LoggedOut();
+              _this106.LoggedOut();
             }
           });
         }
@@ -19087,44 +19190,52 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this106 = this;
+          var _this107 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this106.isLoading = false;
+            _this107.user.Lastseen = _this107.now;
+            _this107.return = _this107.FormService.createUserTime(_this107.user).then(function (data) {});
+            _this107.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this107 = this;
+          var _this108 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this107.isLoading = false;
+            _this108.user.Lastseen = _this108.now;
+            _this108.return = _this108.FormService.createUserTime(_this108.user).then(function (data) {});
+            _this108.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this108 = this;
+          var _this109 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this108.isLoading = false;
+            _this109.user.Lastseen = _this109.now;
+            _this109.return = _this109.FormService.createUserTime(_this109.user).then(function (data) {});
+            _this109.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this109 = this;
+          var _this110 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this109.isLoading = false;
+            _this110.user.Lastseen = _this110.now;
+            _this110.return = _this110.FormService.createUserTime(_this110.user).then(function (data) {});
+            _this110.isLoading = false;
           });
         }
       }, {
@@ -19146,16 +19257,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this110 = this;
+          var _this111 = this;
 
           console.log(displayName);
           this.overlay = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this110.isLoading = false;
-            _this110.user.Name = displayName;
-            _this110.user.DOB = null;
-            _this110.user.Phone = null;
-            _this110.return = _this110.FormService.createUserCustomer(_this110.user).then(function (data) {
+            _this111.isLoading = false;
+            _this111.user.Name = displayName;
+            _this111.user.DOB = null;
+            _this111.user.Phone = null;
+            _this111.return = _this111.FormService.createUserCustomer(_this111.user).then(function (data) {
+              _this111.user.Lastseen = _this111.now;
+              _this111.return = _this111.FormService.createUserTime(_this111.user).then(function (data) {});
               console.log(data);
             });
           });
