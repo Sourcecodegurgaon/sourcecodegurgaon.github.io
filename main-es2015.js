@@ -1622,7 +1622,7 @@ let BuyerMatcheListingComponent = class BuyerMatcheListingComponent {
                     console.log("Result Set 1");
                 }
                 // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
-                if (item.data().Lookingpostcode != this.Look_postcodes &&
+                if (item.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcodes &&
                     item.data().PropertyFor == this.Look_PropertyFor &&
                     item.data().PropertyType == this.Look_propertytype &&
                     this.removespace.substring(0, 5) == this.listing.substring(0, 5) &&
@@ -3707,7 +3707,8 @@ let SellerMatchListingComponent = class SellerMatchListingComponent {
                 }
                 console.log(Mean.data().PropertyFor.replace(/\s/g, "") + " " + this.Look_PropertyFor);
                 // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
-                if (this.Look_PropertyFor == Mean.data().PropertyFor &&
+                if (Mean.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcode &&
+                    this.Look_PropertyFor == Mean.data().PropertyFor &&
                     Mean.data().PropertyType == this.Look_PropertyType &&
                     less <= maxAmount &&
                     more >= maxAmount &&
@@ -3722,7 +3723,7 @@ let SellerMatchListingComponent = class SellerMatchListingComponent {
                     });
                 }
                 // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
-                if (Mean.data().Lookingpostcode != this.Look_postcode &&
+                if (Mean.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcode &&
                     Mean.data().PropertyType == this.Look_PropertyType &&
                     Mean.data().PropertyFor == this.Look_PropertyFor &&
                     less <= maxAmount &&
@@ -5524,7 +5525,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                     console.log("Result Set 1");
                 }
                 // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
-                if (item.data().Lookingpostcode != this.Look_postcodes &&
+                if (item.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcodes &&
                     item.data().PropertyFor == this.Look_PropertyFor &&
                     item.data().PropertyType == this.Look_propertytype &&
                     this.removespace.substring(0, 5) == this.listing.substring(0, 5) &&
@@ -5647,7 +5648,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                 }
                 //No Matching Result Set 1
                 // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
-                if (Mean.data().Lookingpostcode != this.Look_postcode &&
+                if (Mean.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcode &&
                     Mean.data().PropertyType == this.Look_PropertyType &&
                     Mean.data().PropertyFor == this.Look_PropertyFor &&
                     less <= maxAmount &&
@@ -5655,6 +5656,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                     this.removespace.substring(0, 5) == this.listing.substring(0, 5) &&
                     Mean.data().latitude &&
                     Mean.data().longitude) {
+                    console.log(Mean.data().Lookingpostcode + " " + this.Look_postcode);
                     this.distanceInKm = this.getDistanceFromLatLonInKm(this.Look_latitude, this.Look_longitude, Mean.data().latitude, Mean.data().longitude);
                     this.sellerunmatchedProperties.push({
                         detail: Mean.data(),
@@ -5663,7 +5665,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                     });
                 }
                 // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
-                if (Mean.data().Lookingpostcode != this.Look_postcode &&
+                if (Mean.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcode &&
                     Mean.data().PropertyType == this.Look_PropertyType &&
                     Mean.data().PropertyFor == this.Look_PropertyFor &&
                     less <= maxAmount &&
@@ -5699,7 +5701,6 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                     Mean.data().PropertyFor == this.Look_PropertyFor &&
                     Mean.data().latitude &&
                     Mean.data().longitude) {
-                    console.log(Mean.data());
                     this.distanceInKm = this.getDistanceFromLatLonInKm(this.Look_latitude, this.Look_longitude, Mean.data().latitude, Mean.data().longitude);
                     this.sellerlookTown.push({
                         detail: Mean.data(),

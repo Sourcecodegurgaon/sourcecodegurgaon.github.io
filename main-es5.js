@@ -2762,7 +2762,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode != _this7.Look_postcodes && item.data().PropertyFor == _this7.Look_PropertyFor && item.data().PropertyType == _this7.Look_propertytype && _this7.removespace.substring(0, 5) == _this7.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this7.Look_postcodes && item.data().PropertyFor == _this7.Look_PropertyFor && item.data().PropertyType == _this7.Look_propertytype && _this7.removespace.substring(0, 5) == _this7.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
                 _this7.distanceInKm = _this7.getDistanceFromLatLonInKm(_this7.Look_latitude, _this7.Look_longitude, item.data().latitude, item.data().longitude);
 
                 _this7.unmatchedProperties.push({
@@ -5747,7 +5747,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
               console.log(Mean.data().PropertyFor.replace(/\s/g, "") + " " + _this27.Look_PropertyFor); // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (_this27.Look_PropertyFor == Mean.data().PropertyFor && Mean.data().PropertyType == _this27.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this27.removespace.substring(0, 5) == _this27.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this27.Look_postcode && _this27.Look_PropertyFor == Mean.data().PropertyFor && Mean.data().PropertyType == _this27.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this27.removespace.substring(0, 5) == _this27.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
                 _this27.distanceInKm = _this27.getDistanceFromLatLonInKm(_this27.Look_latitude, _this27.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
                 _this27.sellerunmatchedProperties.push({
@@ -5758,7 +5758,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode != _this27.Look_postcode && Mean.data().PropertyType == _this27.Look_PropertyType && Mean.data().PropertyFor == _this27.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this27.removespace.substring(0, 3) == _this27.listing.substring(0, 3)) {
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this27.Look_postcode && Mean.data().PropertyType == _this27.Look_PropertyType && Mean.data().PropertyFor == _this27.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this27.removespace.substring(0, 3) == _this27.listing.substring(0, 3)) {
                 _this27.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
@@ -8389,7 +8389,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode != _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && _this45.removespace.substring(0, 5) == _this45.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && _this45.removespace.substring(0, 5) == _this45.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
                 _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
 
                 _this45.unmatchedProperties.push({
@@ -8499,7 +8499,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 5) == _this46.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 5) == _this46.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+                console.log(Mean.data().Lookingpostcode + " " + _this46.Look_postcode);
                 _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
                 _this46.sellerunmatchedProperties.push({
@@ -8510,7 +8511,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 3) == _this46.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 3) == _this46.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
                 _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
                 _this46.sellerunmatchedPropertiesFirst.push({
@@ -8535,7 +8536,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
               if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyFor == _this46.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
-                console.log(Mean.data());
                 _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
                 _this46.sellerlookTown.push({
