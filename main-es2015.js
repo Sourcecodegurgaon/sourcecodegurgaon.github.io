@@ -9750,12 +9750,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _notification_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./notification.service */ "./src/app/Menu/notification/notification.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+
 
 
 
 let NotificationComponent = class NotificationComponent {
-    constructor(NotificationService) {
+    constructor(NotificationService, Router) {
         this.NotificationService = NotificationService;
+        this.Router = Router;
         this.confirmInterest = [];
         this.now = new Date();
     }
@@ -9770,6 +9773,7 @@ let NotificationComponent = class NotificationComponent {
         });
     }
     getDocid(id, propertyId, time, userId, viewed, now, Type) {
+        this.Router.navigate(["/mymatches"]);
         this.Notification = {
             propertyId: propertyId,
             time: time,
@@ -9784,7 +9788,8 @@ let NotificationComponent = class NotificationComponent {
     }
 };
 NotificationComponent.ctorParameters = () => [
-    { type: _notification_service__WEBPACK_IMPORTED_MODULE_2__["NotificationService"] }
+    { type: _notification_service__WEBPACK_IMPORTED_MODULE_2__["NotificationService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] }
 ];
 NotificationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({

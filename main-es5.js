@@ -14715,14 +14715,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _notification_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ./notification.service */
     "./src/app/Menu/notification/notification.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
 
     var NotificationComponent =
     /*#__PURE__*/
     function () {
-      function NotificationComponent(NotificationService) {
+      function NotificationComponent(NotificationService, Router) {
         _classCallCheck(this, NotificationComponent);
 
         this.NotificationService = NotificationService;
+        this.Router = Router;
         this.confirmInterest = [];
         this.now = new Date();
       }
@@ -14747,6 +14754,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getDocid",
         value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
+          this.Router.navigate(["/mymatches"]);
           this.Notification = {
             propertyId: propertyId,
             time: time,
@@ -14766,6 +14774,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     NotificationComponent.ctorParameters = function () {
       return [{
         type: _notification_service__WEBPACK_IMPORTED_MODULE_2__["NotificationService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]
       }];
     };
 
