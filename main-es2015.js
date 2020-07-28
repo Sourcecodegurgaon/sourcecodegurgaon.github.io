@@ -5656,7 +5656,6 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                     this.removespace.substring(0, 5) == this.listing.substring(0, 5) &&
                     Mean.data().latitude &&
                     Mean.data().longitude) {
-                    console.log(Mean.data().Lookingpostcode + " " + this.Look_postcode);
                     this.distanceInKm = this.getDistanceFromLatLonInKm(this.Look_latitude, this.Look_longitude, Mean.data().latitude, Mean.data().longitude);
                     this.sellerunmatchedProperties.push({
                         detail: Mean.data(),
@@ -5670,14 +5669,10 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                     Mean.data().PropertyFor == this.Look_PropertyFor &&
                     less <= maxAmount &&
                     more >= maxAmount &&
-                    this.removespace.substring(0, 3) == this.listing.substring(0, 3) &&
-                    Mean.data().latitude &&
-                    Mean.data().longitude) {
-                    this.distanceInKm = this.getDistanceFromLatLonInKm(this.Look_latitude, this.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+                    this.removespace.substring(0, 3) == this.listing.substring(0, 3)) {
                     this.sellerunmatchedPropertiesFirst.push({
                         detail: Mean.data(),
                         propertyId: Mean.id,
-                        distance: this.distanceInKm * 0.6214,
                     });
                 }
                 //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types

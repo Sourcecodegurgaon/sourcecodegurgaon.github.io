@@ -8500,7 +8500,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
               if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 5) == _this46.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
-                console.log(Mean.data().Lookingpostcode + " " + _this46.Look_postcode);
                 _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
                 _this46.sellerunmatchedProperties.push({
@@ -8511,13 +8510,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 3) == _this46.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
-                _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
-
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 3) == _this46.listing.substring(0, 3)) {
                 _this46.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
-                  propertyId: Mean.id,
-                  distance: _this46.distanceInKm * 0.6214
+                  propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
