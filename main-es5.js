@@ -801,7 +801,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\n  <div class=\"login-button-main\">\n\n    <p class=\"Login-buton-text\">Log In</p>\n  </div>\n</div>\n\n\n<div class=\"mobile-wrapper\">\n  <div class=\"mobile-container\">\n    <div class=\"content\">\n\n      <nav>\n        <div class=\"main-navigation-bar\">\n          <div class=\"menu-toogle\">\n            <img src=\"../../../assets/Images/menu.svg\" class=\"icon-size\" *ngIf=\"open\" (click)=\"openMenu()\">\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"close\" (click)=\"closeMenu()\">\n          </div>\n\n          <div class=\"plus-icon\">\n        \n        <img src=\"../../../assets/Images/add-outline.svg\" class=\"icon-size\" (click)=\"plusmenu()\"\n              *ngIf=\"plusOpenMenu\">\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"plusclose\"\n              (click)=\"plusCloseMenu()\"> \n\n          </div>\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" (click)=\"closeMenu()\" />\n          </div>\n\n          <div class=\"notification-upper\" (click)=\"notificationoverlayopen()\" >\n            <div class=\"notification-upper\" *ngIf=\"isLoggedIn\">\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size\"  *ngIf=\"matches>0\">\n\n          <span class=\"log-out-text red-text\" *ngIf=\"notification>0\">{{notification}}</span> \n            </div>\n          </div>\n          <div class=\"logout\">\n            <div class=\"logout-icon\" *ngIf=\"!isLoggedIn\" (click)=\" openLogIn()\">\n              <img src=\"../../../assets/Images/person-outline.svg\" class=\"icon-size\">\n              <span class=\"log-out-text heading-nestimate\">LogIn</span>\n            </div>\n            <div class=\"logout-icon\" *ngIf=\"isLoggedIn\">\n              <img src=\"../../../assets/Images/person.svg\" class=\"icon-size\" (click)=\"authService.SignOut()\">\n              <span class=\"log-out-text heading-nestimate\">Logout</span>\n            </div>\n          </div>\n        </div>\n        <div class=\"nav-div\" *ngIf=\"menuItem\">\n          <div class=\"menu-login\">\n          <app-template></app-template>\n        </div>\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\" (click)=\"Itemmenu()\">\n            <!-- <div class=\"grid-container\" routerLink=\"/\">\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\n              <div>\n                <li>\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div> -->\n            <div class=\"grid-container\" routerLink=\"/editprofile\">\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\n              <div>\n                <li>\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">Edit Profile</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n            <div class=\"grid-container\" routerLink=\"/myListing\">\n              <div>\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\n              </div>\n              <div>\n                <li>\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Nestimates</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\n              <div>\n                <img src=\"assets/Images/download-removebg-preview.png\" />\n              </div>\n              <div>\n                <li>\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">Activity</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n          </ul>\n        </div>\n      </nav>\n    </div>\n  </div>\n</div>\n\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\n</div>\n\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\n  <div class=\"nav-login\">\n  <div *ngIf=\"isLoading\" class=\"loading-container\">\n      <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n    </div>\n    <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n      <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\n        <div class=\"user-cross\">\n          <h4 class=\"heading-nestimate\">Login</h4>\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\n        </div>\n        <div class=\"social-button mt-4\">\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n            Facebook\n          </button>\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\n            Google+\n          </button>\n        </div>\n        <div class=\"input-group mb-3 mt-3\"></div>\n        <form (keydown.enter)=\"save()\">\n\n          <div class=\"form-group has-search\">\n            <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n          </div>\n\n          <div class=\"form-group has-search\">\n            <span class=\"fa fa-lock form-control-feedback\"></span>\n            <input type=\"password\" class=\"form-control custom-field\" name=\"passs\" #userPasswordLogin type=\"password\"\n              [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n          </div>\n        </form>\n        <div class=\"input-group-prepend other-option\">\n          <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n        </div>\n        <button type=\"button\" class=\"btn btn-social-login\"\n          (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\n          Login\n        </button>\n        <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\" (click)=\"NewUser()\">Don't have an\n          account?<span class=\"hyper outputText\">Sign up</span></p>\n      </mat-card>\n      <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\n\n        <div class=\"sign-up\">\n          <div class=\"signup-heading\">\n            <div class=\"user-cross\">\n              <h4 class=\"heading-nestimate\">Sign up</h4>\n              <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\n            </div>\n          </div>\n          <div class=\"social-button mt-2\">\n            <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n              Facebook\n            </button>\n            <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\n              Google+\n            </button>\n          </div>\n          <div class=\"input-group mb-3 mt-3\">\n            <form (keydown)=\"keyDownFunction($event)\">\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-user-circle-o form-control-feedback\"></span>\n                <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\"\n                  [(ngModel)]=\"name\" #displayName>\n              </div>\n\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n                <input class=\"form-control custom-field\" type=\"email\" placeholder=\"Email\" #userEmailRegister\n                  type=\"email\" name=\"email\" [(ngModel)]=\"email\">\n              </div>\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-lock form-control-feedback\"></span>\n                <input class=\"form-control custom-field\" placeholder=\"Password\" #userPasswordRegister type=\"password\"\n                  name=\"password\" [(ngModel)]=\"password\">\n              </div>\n            </form>\n          </div>\n          <section class=\"example-section property-con-form\">\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n            <p class=\"heading-nestimate m-0 \">By clicking the sms box,you agreeing to recieve\"</p>\n            <p for=\"text\" class=\"heading-nestimate policy\">By clicking below to register, you confirm that you agree to\n              our<span routerLink=\"/terms\"> Terms & Conditions </span>and you have read and understood our <span\n                routerLink=\"/PrivacyPolicy\">Privacy Policy</span> </p>\n          </section>\n          <button type=\"button\" class=\"btn btn-social-login\"\n            (click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\n            Sign Up\n          </button>\n          <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account?\n            <span class=\"hyper outputText\">Sign In</span></p>\n        </div>\n\n      </mat-card>\n    </div> \n\n\n  </div>\n</div>\n\n\n<div *ngIf=\"notificationoverlay\">\n  <div class=\"main-grid-notifucation\">\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterests\" >\n    \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n    <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n     </div>\n     <div class=\"text heading-nestimate\" >\n    A Buyer expressed insterest on your Nestimate.Click to review<br>\n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n    </div>\n    \n    \n    \n    \n    \n    </div>\n    \n    \n    <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n      <div class=\"notification-icon\" >\n    <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\" >\n    A Buyer expressed insterest on your Nestimate.Click to review<br>\n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n      <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n    </div>\n    \n    \n    \n    \n    \n    </div>\n    \n    \n    \n       \n        <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n            A Buyer confirmed insterest on your Nestimate.Click Review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n               <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n                  {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n                <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n       </div>\n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n            A Buyer confirmed insterest on your Nestimate.Click Review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n               <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n                  {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n                <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n       </div>\n    \n    \n    \n       \n       <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n       <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n       A seller expressed interest on your Nestimate.Click to Review<br>\n       \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n    \n       </div> \n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed' && confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n       <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n       A seller expressed interest on your Nestimate.Click to Review<br>\n       \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n    \n       </div> \n    \n    \n    \n        <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed' &&  confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n    \n            A Seller confirmed interest on your Nestimate.Click to review<br>\n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n      <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n       </div>\n    \n    \n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed'  &&  confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate \">\n    \n            A Seller confirmed interest on your Nestimate.Click to review<br>\n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n      <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n       </div>\n    </div>\n    </div>\n  <!-- <app-notification (click)=\"closenotifiation()\"></app-notification> -->\n</div>";
+    __webpack_exports__["default"] = "<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\n  <div class=\"login-button-main\">\n\n    <p class=\"Login-buton-text\">Log In</p>\n  </div>\n</div>\n\n\n<div class=\"mobile-wrapper\">\n  <div class=\"mobile-container\">\n    <div class=\"content\">\n\n      <nav>\n        <div class=\"main-navigation-bar\">\n          <div class=\"menu-toogle\">\n            <img src=\"../../../assets/Images/menu.svg\" class=\"icon-size\" *ngIf=\"open\" (click)=\"openMenu()\">\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"close\" (click)=\"closeMenu()\">\n          </div>\n\n          <div class=\"plus-icon\">\n        \n        <img src=\"../../../assets/Images/add-outline.svg\" class=\"icon-size\" (click)=\"plusmenu()\"\n              *ngIf=\"plusOpenMenu\">\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"plusclose\"\n              (click)=\"plusCloseMenu()\"> \n\n          </div>\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" (click)=\"closeMenu()\" />\n          </div>\n\n          <div class=\"notification-upper\"  >\n            <div class=\"notification-upper\" *ngIf=\"isLoggedIn\">\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size new\"  *ngIf=\"!bellicontwo\" (click)=\"bellone()\"  >\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size\"  *ngIf=\"bellicontwo\" (click)=\"belltwo()\">\n          <span class=\"log-out-text red-text\" *ngIf=\"notification>0\">{{notification}}</span> \n            </div>\n          </div>\n          <div class=\"logout\">\n            <div class=\"logout-icon\" *ngIf=\"!isLoggedIn\" (click)=\" openLogIn()\">\n              <img src=\"../../../assets/Images/person-outline.svg\" class=\"icon-size\">\n              <span class=\"log-out-text heading-nestimate\">LogIn</span>\n            </div>\n            <div class=\"logout-icon\" *ngIf=\"isLoggedIn\">\n              <img src=\"../../../assets/Images/person.svg\" class=\"icon-size\" (click)=\"authService.SignOut()\">\n              <span class=\"log-out-text heading-nestimate\">Logout</span>\n            </div>\n          </div>\n        </div>\n        <div class=\"nav-div\" *ngIf=\"menuItem\">\n          <div class=\"menu-login\">\n          <app-template></app-template>\n        </div>\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\" (click)=\"Itemmenu()\">\n            <!-- <div class=\"grid-container\" routerLink=\"/\">\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\n              <div>\n                <li>\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div> -->\n            <div class=\"grid-container\" routerLink=\"/editprofile\">\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\n              <div>\n                <li>\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">Edit Profile</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n            <div class=\"grid-container\" routerLink=\"/myListing\">\n              <div>\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\n              </div>\n              <div>\n                <li>\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Nestimates</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\n              <div>\n                <img src=\"assets/Images/download-removebg-preview.png\" />\n              </div>\n              <div>\n                <li>\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">Activity</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n          </ul>\n        </div>\n      </nav>\n    </div>\n  </div>\n</div>\n\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\n</div>\n\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\n  <div class=\"nav-login\">\n  <div *ngIf=\"isLoading\" class=\"loading-container\">\n      <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n    </div>\n    <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n      <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\n        <div class=\"user-cross\">\n          <h4 class=\"heading-nestimate\">Login</h4>\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\n        </div>\n        <div class=\"social-button mt-4\">\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n            Facebook\n          </button>\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\n            Google+\n          </button>\n        </div>\n        <div class=\"input-group mb-3 mt-3\"></div>\n        <form (keydown.enter)=\"save()\">\n\n          <div class=\"form-group has-search\">\n            <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n          </div>\n\n          <div class=\"form-group has-search\">\n            <span class=\"fa fa-lock form-control-feedback\"></span>\n            <input type=\"password\" class=\"form-control custom-field\" name=\"passs\" #userPasswordLogin type=\"password\"\n              [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n          </div>\n        </form>\n        <div class=\"input-group-prepend other-option\">\n          <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n        </div>\n        <button type=\"button\" class=\"btn btn-social-login\"\n          (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\n          Login\n        </button>\n        <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\" (click)=\"NewUser()\">Don't have an\n          account?<span class=\"hyper outputText\">Sign up</span></p>\n      </mat-card>\n      <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\n\n        <div class=\"sign-up\">\n          <div class=\"signup-heading\">\n            <div class=\"user-cross\">\n              <h4 class=\"heading-nestimate\">Sign up</h4>\n              <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\n            </div>\n          </div>\n          <div class=\"social-button mt-2\">\n            <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n              Facebook\n            </button>\n            <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\n              Google+\n            </button>\n          </div>\n          <div class=\"input-group mb-3 mt-3\">\n            <form (keydown)=\"keyDownFunction($event)\">\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-user-circle-o form-control-feedback\"></span>\n                <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\"\n                  [(ngModel)]=\"name\" #displayName>\n              </div>\n\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n                <input class=\"form-control custom-field\" type=\"email\" placeholder=\"Email\" #userEmailRegister\n                  type=\"email\" name=\"email\" [(ngModel)]=\"email\">\n              </div>\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-lock form-control-feedback\"></span>\n                <input class=\"form-control custom-field\" placeholder=\"Password\" #userPasswordRegister type=\"password\"\n                  name=\"password\" [(ngModel)]=\"password\">\n              </div>\n            </form>\n          </div>\n          <section class=\"example-section property-con-form\">\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n            <p class=\"heading-nestimate m-0 \">By clicking the sms box,you agreeing to recieve\"</p>\n            <p for=\"text\" class=\"heading-nestimate policy\">By clicking below to register, you confirm that you agree to\n              our<span routerLink=\"/terms\"> Terms & Conditions </span>and you have read and understood our <span\n                routerLink=\"/PrivacyPolicy\">Privacy Policy</span> </p>\n          </section>\n          <button type=\"button\" class=\"btn btn-social-login\"\n            (click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\n            Sign Up\n          </button>\n          <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account?\n            <span class=\"hyper outputText\">Sign In</span></p>\n        </div>\n\n      </mat-card>\n    </div> \n\n\n  </div>\n</div>\n\n\n<div *ngIf=\"notificationoverlay\">\n  <div class=\"main-grid-notifucation\">\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterests\" >\n    \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n    <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n     </div>\n     <div class=\"text heading-nestimate\" >\n    A Buyer expressed insterest on your Nestimate.Click to review<br>\n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n    </div>\n    \n    \n    \n    \n    \n    </div>\n    \n    \n    <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n      <div class=\"notification-icon\" >\n    <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\" >\n    A Buyer expressed insterest on your Nestimate.Click to review<br>\n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n      <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n    </div>\n    \n    \n    \n    \n    \n    </div>\n    \n      \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Matches_Confirmed' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n      <div class=\"notification-icon\" >\n  <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n   </div>\n   <div class=\"text heading-nestimate\" >\n  A Buyer expressed insterest on your Nestimate.Click to review<br>\n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n      <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n  </div>\n  \n  \n  \n  \n  \n  </div>\n  \n  \n  <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Matches_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n  <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n  </div>\n  <div class=\"text heading-nestimate\" >\n  A Buyer expressed insterest on your Nestimate.Click to review<br>\n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n  </div>\n  \n  \n  \n  \n  \n  </div>\n  \n    \n       \n        <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n            A Buyer confirmed insterest on your Nestimate.Click Review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n                {{confirmInterest.Detail.time.seconds * 1000 }} hours ago</span> \n               <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n                  {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n                <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n       </div>\n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n            A Buyer confirmed insterest on your Nestimate.Click Review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n\n\n               <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n                  {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n                <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n                      {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n       </div>\n    \n    \n    \n       \n       <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n       <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n       A seller expressed interest on your Nestimate.Click to Review<br>\n       \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n    \n       </div> \n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed' && confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n       <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n       A seller expressed interest on your Nestimate.Click to Review<br>\n       \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n        <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n              {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n    \n       </div> \n    \n    \n    \n        <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed' &&  confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n    \n            A Seller confirmed interest on your Nestimate.Click to review<br>\n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n      <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n       </div>\n    \n    \n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed'  &&  confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate \">\n    \n            A Seller confirmed interest on your Nestimate.Click to review<br>\n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') < 24\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'H'}} hours ago</span> \n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'H') > 25\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM'}} </span> \n      <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date:'yyy') != (now | date:'yyyy') \">\n            {{confirmInterest.Detail.time.seconds * 1000 | date:'dd/MM/yyy'}} </span> \n       </div>\n       \n       </div>\n    </div>\n    </div>\n  <!-- <app-notification (click)=\"closenotifiation()\"></app-notification> -->\n</div>";
     /***/
   },
 
@@ -13120,9 +13120,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "createBuyerEntry",
         value: function createBuyerEntry(agentuid) {
-          console.log(agentuid);
           this.agentBuyerEntry(agentuid);
           this.agentSellerEntry(agentuid);
+
+          this._router.navigate(["/mymatches"]);
+
           this.matchesBuyer = {
             LookingAddress: this.sellerPropertyLookingAddress,
             LookingTown: this.sellerPropertyLookingTown,
@@ -14182,7 +14184,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700\");\n\n@font-face {\n  font-family: HelveticaNeueLight;\n  src: url('/assets/font/HelveticaNeueLight.ttf');\n}\n\n.main-navigation-bar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 3fr 1fr 1fr\n}\n\nul {\n  list-style-type: none;\n}\n\n.nav-div {\n  height: 100vh;\n  width: 100%;\n  background-color: white;\n  position: absolute;\n  top: 4em;\n  left: 0;\n  z-index: 200;\n}\n\n.content {\n  padding: 10px;\n  background-color: rgb(223,223,223);\n}\n\nlabel {\n  background: none transparent;\n  border: 2px solid black;\n  border-left: 0 solid transparent;\n  border-right: 0 solid transparent;\n  cursor: pointer;\n  display: block;\n  height: 19px;\n  position: absolute;\n  top: 19px;\n  left: 20px;\n  width: 36px;\n  transition: all .2s;\n}\n\nlabel::before {\n  background: black;\n  content: '';\n  height: 2px;\n  width: 36px;\n  transition: all .2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  /* top: 18px; */\n  margin-top: 6.2px;\n\n}\n\nlabel::after {\n  background: black;\n  content: '';\n  height: 4px;\n  left: 0;\n  position: absolute;\n  top: 6px;\n  opacity: 0;\n  visibility: hidden;\n  width: 100%;\n  transform: rotate(90deg);\n  transition: all .2s;\n}\n\n.menu-text {\n  position: absolute;\n  top: 40px;\n  left: 13px;\n  text-transform: uppercase;\n  margin-top: 2px;\n}\n\n.menu-text::after {\n  display: none;\n}\n\n.logo-nav {\n  width: 80%;\n}\n\n.notification-upper{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.user-img {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 38px;\n\n}\n\n.logout-icon {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.icon-size {\n  width: 70%;\n}\n\nimg.close-img {\n  width: 6%;\n  position: absolute;\n  top: 26px;\n  left: 25px;\n}\n\n.has-search .form-control {\n  padding-left: 2.375rem;\n}\n\n.has-search .form-control-feedback {\n  position: absolute;\n  z-index: 2;\n  display: block;\n  width: 2.375rem;\n  height: 2.375rem;\n  line-height: 2.375rem;\n  text-align: center;\n  pointer-events: none;\n  color: #aaa;\n}\n\n.nav-links {\n  margin: 0;\n  padding: 0px;\n}\n\n.main {\n  width: 50%;\n  margin: 50px auto;\n}\n\n.grid-container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  /* padding: 10px; */\n  margin-left: calc(-50vw + 50%);\n  margin-right: calc(-50vw + 50%);\n  margin-top: calc(-50vw + 50%);\n  align-items: center;\n}\n\n.grid-container>div {\n\n\n  text-align: Left;\n  font-size: 18.5px;\n  padding: 17px;\n\n\n}\n\n.grid-container:hover {\n  background-color: #EBEBEB;\n  text-decoration: none;\n}\n\nimg.nav-link-icon {\n  float: right;\n}\n\n.nav-links-text {\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Bold';\n}\n\n.search-grid-conatiner {\n  display: grid;\n  grid-template-columns: 11fr;\n}\n\n.search-grid-conatiner>div {\n  font-size: 18.5px;\n  padding: 14px;\n  padding-top: 5px;\n  padding-bottom: 11px;\n  background-color: #FBF4EF;\n}\n\n.nav-link-icon-search {\n  width: 38px;\n  padding: 4px;\n  margin-top: -4px;\n  border: 1px solid lightgrey;\n  background-color: white;\n  height: 56.5px;\n}\n\ni.fa.fa-user {\n  display: flex;\n  flex-direction: column;\n\n}\n\nspan.log-out-text {\n  font-size: 12px;\n  text-transform: uppercase;\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\nimg.home-menu-image {\n  height: 4vh;\n  margin: 6px;\n}\n\np.nitification-red {\n  position: absolute;\n  background: red;\n  border-radius: 50%;\n  top: 4vh;\n  right: 21vw;\n  height: 3vh;\n  width: 4vw;\n  text-align: center;\n  z-index: 1;\n  color: white\n}\n\nimg.plus-img {\n  width: 50%;\n  margin-left: 3vw;\n}\n\n/*# sourceMappingURL=style.css.map */\n\nspan.red-text {\n  background-color: red;\n  width: 50%;\n  text-align: center;\n  border-radius: 50%;\n  color: white;\n}\n\n.menu-toogle,\n.plus-icon,\n.icon-size,\n.imge-logo-header,\n.notification-upper,\n.logout {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.modal-backdrop.show {\n  display: none;\n  z-index: -1;\n}\n\n.nav-login {\n  position: absolute;\n  z-index: 1000;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  background: white;\n  top: 0px;\n  position: fixed;\n}\n\n@media only screen and (min-width:768px) {\n  .icon-size {\n    width: 50% !important;\n  }\n\n  .logo-nav {\n    width: 60%;\n  }\n\n  .content {\n    padding: 0px;\n  }\n}\n\n.btn-google {\n  background-color: #DD4B33;\n  color: white;\n  width: 36%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n\n}\n\n.btn-facebook {\n  background-color: #244D93;\n  color: white;\n  width: 36%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n\n}\n\n.social-button {\n  display: flex;\n  /* justify-content: center; */\n  justify-content: space-evenly;\n  align-items: center;\n\n}\n\n.color-signup {\n  color: #244D93;\n}\n\n.btn-social-login {\n  width: 100%;\n  background-color: #244D93;\n  color: white;\n  margin-top: 3%;\n  border-radius: 19px;\n  padding: 0.5em;\n\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n\n.sign-in-main {\n  display: block;\n}\n\n.user-cross {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\nimg.button-cross {\n  position: absolute;\n  right: 10px;\n  margin: 0px 10px;\n  width: 16px;\n}\n\n.property-con-form {\n  display: flex;\n  flex-direction: column;\n  font-size: 14px;\n  text-align: left;\n \n}\n\n.login-desktop-button\n{\n  display: none;\n}\n\n@media screen and (min-width:701px)\n{\n  .mobile-wrapper {\n    display: none;\n}\n.login-desktop-button\n{\n  display: block;\n}\n.login-button-main {\n  position: absolute;\n  top: 12vh;\n  z-index: 1000;\n  right: 3vw;\n  background-color: #00737D;\n    color: white;\n    padding: 10px 20px;\n}\n.Login-buton-text\n{\n  margin-bottom: 0px;\n  border: 1px solid white;\n  padding: 7px 15px;\n    text-transform: uppercase;\n}\n}\n\n.notification-overlay\n{\n  background-color: white;\n  height: 100vh;\n  width: 100%;\n}\n\n.mobile-wrapper {\n  background-color: rgb(223,223,223);\n}\n\n.input-container { /* IE10 */\n  display: flex;\n  width: 100%;\n  margin-bottom: 1em;\n}\n\n.icon {\n  padding: 10px;\n  background: var( --DARK-BLUE-COLOR);\n  color: white;\n  min-width: 50px;\n  text-align: center;\n}\n\n.input-field {\n  width: 100%;\n  padding: 10px;\n  outline: none;\n}\n\n.input-field:focus {\n  border: 2px solid var( --DARK-BLUE-COLOR);\n}\n\n.input-group {\n \n\n  display: block;\n \n}\n\n.input-field:hover {\n  border: 2px solid var( --DARK-BLUE-COLOR);\n}\n\n.hyper:hover\n{\n  cursor: pointer;\n}\n\n.policy\n{\n  text-align: center;\n}\n\n.has-search .form-control {\n  padding-left: 2.375rem;\n}\n\n.has-search .form-control-feedback {\n  position: absolute;\n  z-index: 2;\n  display: block;\n  width: 2.375rem;\n\n  line-height: 3rem;\n\n\n  pointer-events: none;\n  display: flex;\n  color: #aaa;\n  font-size: 22px;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n\n}\n\n.form-control\n{\n  height: 7vh;\n}\n\n.form-group {\n  margin-bottom: 1rem;\n  margin-top: 1.5em;\n    margin-bottom: 1rem;\n    margin-top: 1.5em;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: flex-start;\n\n}\n\n.notification {\n  display: grid;\n  grid-template-columns: 1fr 3fr;\n  align-items: center;\n  padding: 0.4em 0em;\n}\n\nimg.icon {\n  width: 40%;\n  text-align: center;\n}\n\n.notification-icon {\n  display: flex;\n  justify-content: center;\n}\n\n.main-grid-notifucation {\n  background-color: white;\n  /* position: absolute; */\n  z-index: 3;\n  height: 100vh;\n  /* top: 10vh; */\n  overflow: hidden;\n}\n\n.read-notfication{\n  background-color: aquamarine;\n\n  margin-bottom: 4px;\n} \n\n\n\n\n\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9uYXZpZ2F0aW9uQmFyL25hdmlnYXRpb25CYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxRUFBcUU7O0FBRXJFO0VBQ0UsK0JBQStCO0VBQy9CLCtDQUErQztBQUNqRDs7QUFFQTtFQUNFLGFBQWE7RUFDYjtBQUNGOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixPQUFPO0VBQ1AsWUFBWTtBQUNkOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1Qix1QkFBdUI7RUFDdkIsZ0NBQWdDO0VBQ2hDLGlDQUFpQztFQUNqQyxlQUFlO0VBQ2YsY0FBYztFQUNkLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVixXQUFXO0VBRVgsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFdBQVc7RUFDWCxXQUFXO0VBQ1gsV0FBVztFQUNYLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsaUJBQWlCOztBQUVuQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsV0FBVztFQUVYLHdCQUF3QjtFQUV4QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVix5QkFBeUI7RUFDekIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1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QkFBbUI7RUFDbkIsdUJBQXVCOztBQUV6Qjs7QUFDQTs7RUFFRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsaUJBQWlCO0lBQ2YsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQiwyQkFBMkI7O0FBRS9COztBQUNBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7QUFDekI7O0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsd0JBQXdCO0VBQ3hCLFVBQVU7RUFDVixhQUFhO0VBQ2IsZUFBZTtFQUNmLGdCQUFnQjtBQUNsQjs7QUFDQTtFQUNFLDRCQUE0Qjs7RUFFNUIsa0JBQWtCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvTWVudS9uYXZpZ2F0aW9uQmFyL25hdmlnYXRpb25CYXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkBpbXBvcnQgdXJsKFwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PU51bml0bzo0MDAsNzAwXCIpO1xuXG5AZm9udC1mYWNlIHtcbiAgZm9udC1mYW1pbHk6IEhlbHZldGljYU5ldWVMaWdodDtcbiAgc3JjOiB1cmwoJy9hc3NldHMvZm9udC9IZWx2ZXRpY2FOZXVlTGlnaHQudHRmJyk7XG59XG5cbi5tYWluLW5hdmlnYXRpb24tYmFyIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDNmciAxZnIgMWZyXG59XG5cbnVsIHtcbiAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xufVxuXG4ubmF2LWRpdiB7XG4gIGhlaWdodDogMTAwdmg7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDRlbTtcbiAgbGVmdDogMDtcbiAgei1pbmRleDogMjAwO1xufVxuXG4uY29udGVudCB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6IHJnYigyMjMsMjIzLDIyMyk7XG59XG5cbmxhYmVsIHtcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcbiAgYm9yZGVyOiAycHggc29saWQgYmxhY2s7XG4gIGJvcmRlci1sZWZ0OiAwIHNvbGlkIHRyYW5zcGFyZW50O1xuICBib3JkZXItcmlnaHQ6IDAgc29saWQgdHJhbnNwYXJlbnQ7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGhlaWdodDogMTlweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDE5cHg7XG4gIGxlZnQ6IDIwcHg7XG4gIHdpZHRoOiAzNnB4O1xuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAuMnM7XG4gIHRyYW5zaXRpb246IGFsbCAuMnM7XG59XG5cbmxhYmVsOjpiZWZvcmUge1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgY29udGVudDogJyc7XG4gIGhlaWdodDogMnB4O1xuICB3aWR0aDogMzZweDtcbiAgdHJhbnNpdGlvbjogYWxsIC4ycztcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAvKiB0b3A6IDE4cHg7ICovXG4gIG1hcmdpbi10b3A6IDYuMnB4O1xuXG59XG5cbmxhYmVsOjphZnRlciB7XG4gIGJhY2tncm91bmQ6IGJsYWNrO1xuICBjb250ZW50OiAnJztcbiAgaGVpZ2h0OiA0cHg7XG4gIGxlZnQ6IDA7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA2cHg7XG4gIG9wYWNpdHk6IDA7XG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAgd2lkdGg6IDEwMCU7XG4gIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoOTBkZWcpO1xuICB0cmFuc2Zvcm06IHJvdGF0ZSg5MGRlZyk7XG4gIC13ZWJraXQtdHJhbnNpdGlvbjogYWxsIC4ycztcbiAgdHJhbnNpdGlvbjogYWxsIC4ycztcbn1cblxuLm1lbnUtdGV4dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0MHB4O1xuICBsZWZ0OiAxM3B4O1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuICBtYXJnaW4tdG9wOiAycHg7XG59XG5cbi5tZW51LXRleHQ6OmFmdGVyIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuLmxvZ28tbmF2IHtcbiAgd2lkdGg6IDgwJTtcbn1cblxuLm5vdGlmaWNhdGlvbi11cHBlcntcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi51c2VyLWltZyB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgZm9udDogbm9ybWFsIG5vcm1hbCBub3JtYWwgMTRweC8xIEZvbnRBd2Vzb21lO1xuICBmb250LXNpemU6IGluaGVyaXQ7XG4gIHRleHQtcmVuZGVyaW5nOiBhdXRvO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgZm9udC1zaXplOiAzOHB4O1xuXG59XG5cbi5sb2dvdXQtaWNvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5pY29uLXNpemUge1xuICB3aWR0aDogNzAlO1xufVxuXG5pbWcuY2xvc2UtaW1nIHtcbiAgd2lkdGg6IDYlO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMjZweDtcbiAgbGVmdDogMjVweDtcbn1cblxuLmhhcy1zZWFyY2ggLmZvcm0tY29udHJvbCB7XG4gIHBhZGRpbmctbGVmdDogMi4zNzVyZW07XG59XG5cbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wtZmVlZGJhY2sge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDI7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMi4zNzVyZW07XG4gIGhlaWdodDogMi4zNzVyZW07XG4gIGxpbmUtaGVpZ2h0OiAyLjM3NXJlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgY29sb3I6ICNhYWE7XG59XG5cbi5uYXYtbGlua3Mge1xuICBtYXJnaW46IDA7XG4gIHBhZGRpbmc6IDBweDtcbn1cblxuLm1haW4ge1xuICB3aWR0aDogNTAlO1xuICBtYXJnaW46IDUwcHggYXV0bztcbn1cblxuLmdyaWQtY29udGFpbmVyIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMmZyIDFmcjtcbiAgLyogcGFkZGluZzogMTBweDsgKi9cbiAgbWFyZ2luLWxlZnQ6IGNhbGMoLTUwdncgKyA1MCUpO1xuICBtYXJnaW4tcmlnaHQ6IGNhbGMoLTUwdncgKyA1MCUpO1xuICBtYXJnaW4tdG9wOiBjYWxjKC01MHZ3ICsgNTAlKTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmdyaWQtY29udGFpbmVyPmRpdiB7XG5cblxuICB0ZXh0LWFsaWduOiBMZWZ0O1xuICBmb250LXNpemU6IDE4LjVweDtcbiAgcGFkZGluZzogMTdweDtcblxuXG59XG5cbi5ncmlkLWNvbnRhaW5lcjpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNFQkVCRUI7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuaW1nLm5hdi1saW5rLWljb24ge1xuICBmbG9hdDogcmlnaHQ7XG59XG5cbi5uYXYtbGlua3MtdGV4dCB7XG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbn1cblxuXG4uc2VhcmNoLWdyaWQtY29uYXRpbmVyIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxMWZyO1xufVxuXG4uc2VhcmNoLWdyaWQtY29uYXRpbmVyPmRpdiB7XG4gIGZvbnQtc2l6ZTogMTguNXB4O1xuICBwYWRkaW5nOiAxNHB4O1xuICBwYWRkaW5nLXRvcDogNXB4O1xuICBwYWRkaW5nLWJvdHRvbTogMTFweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0ZCRjRFRjtcbn1cblxuLm5hdi1saW5rLWljb24tc2VhcmNoIHtcbiAgd2lkdGg6IDM4cHg7XG4gIHBhZGRpbmc6IDRweDtcbiAgbWFyZ2luLXRvcDogLTRweDtcbiAgYm9yZGVyOiAxcHggc29saWQgbGlnaHRncmV5O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgaGVpZ2h0OiA1Ni41cHg7XG59XG5cbmkuZmEuZmEtdXNlciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG5cbn1cblxuc3Bhbi5sb2ctb3V0LXRleHQge1xuICBmb250LXNpemU6IDEycHg7XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG5cbn1cblxuXG5cblxuaS5mYS5mYS11c2VyLmlucHV0LWdyb3VwLXRleHQubmF2LWxvZ2luLWZvcm0ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGZvbnQtc2l6ZTogMjNweDtcbiAgbGVmdDogMHB4O1xuICB3aWR0aDogMTAlO1xuICB6LWluZGV4OiAxMDtcbiAgbWFyZ2luLXRvcDogLTQlO1xufVxuXG4uc29jaWFsLWxvZ2luLnRleHQtY2VudGVyIHtcbiAgcGFkZGluZzogMTVweDtcbn1cblxuLmNoZWNrYm94IHtcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItbGVmdDogbm9uZTtcbiAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIC8qIGRpc3BsYXk6IGJsb2NrOyAqL1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiBub25lO1xuICBsZWZ0OiBub25lO1xuICByaWdodDogOXB4O1xuICB3aWR0aDogbm9uZTtcbiAgLyogdHJhbnNpdGlvbjogYWxsIC4yczsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuXG4uZXhhbXBsZS1mb3JtIHtcbiAgbWluLXdpZHRoOiAxNTBweDtcbiAgbWF4LXdpZHRoOiA1MDBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyOiBub25lO1xufVxuXG5pbWcuaG9tZS1tZW51LWltYWdlIHtcbiAgaGVpZ2h0OiA0dmg7XG4gIG1hcmdpbjogNnB4O1xufVxuXG5wLm5pdGlmaWNhdGlvbi1yZWQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJhY2tncm91bmQ6IHJlZDtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xuICB0b3A6IDR2aDtcbiAgcmlnaHQ6IDIxdnc7XG4gIGhlaWdodDogM3ZoO1xuICB3aWR0aDogNHZ3O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHotaW5kZXg6IDE7XG4gIGNvbG9yOiB3aGl0ZVxufVxuXG5pbWcucGx1cy1pbWcge1xuICB3aWR0aDogNTAlO1xuICBtYXJnaW4tbGVmdDogM3Z3O1xufVxuXG4vKiMgc291cmNlTWFwcGluZ1VSTD1zdHlsZS5jc3MubWFwICovXG5zcGFuLnJlZC10ZXh0IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmVkO1xuICB3aWR0aDogNTAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4ubWVudS10b29nbGUsXG4ucGx1cy1pY29uLFxuLmljb24tc2l6ZSxcbi5pbWdlLWxvZ28taGVhZGVyLFxuLm5vdGlmaWNhdGlvbi11cHBlcixcbi5sb2dvdXQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLm1vZGFsLWJhY2tkcm9wLnNob3cge1xuICBkaXNwbGF5OiBub25lO1xuICB6LWluZGV4OiAtMTtcbn1cblxuLm5hdi1sb2dpbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMTAwMDtcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgdG9wOiAwcHg7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOjc2OHB4KSB7XG4gIC5pY29uLXNpemUge1xuICAgIHdpZHRoOiA1MCUgIWltcG9ydGFudDtcbiAgfVxuXG4gIC5sb2dvLW5hdiB7XG4gICAgd2lkdGg6IDYwJTtcbiAgfVxuXG4gIC5jb250ZW50IHtcbiAgICBwYWRkaW5nOiAwcHg7XG4gIH1cbn1cblxuLmJ0bi1nb29nbGUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjREQ0QjMzO1xuICBjb2xvcjogd2hpdGU7XG4gIHdpZHRoOiAzNiU7XG4gIGhlaWdodDogMzVweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW46IDBweDtcbiAgcGFkZGluZzogMHB4O1xuXG59XG5cbi5idG4tZmFjZWJvb2sge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICBjb2xvcjogd2hpdGU7XG4gIHdpZHRoOiAzNiU7XG4gIGhlaWdodDogMzVweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW46IDBweDtcbiAgcGFkZGluZzogMHB4O1xuXG59XG5cbi5zb2NpYWwtYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG59XG5cbi5jb2xvci1zaWdudXAge1xuICBjb2xvcjogIzI0NEQ5Mztcbn1cblxuLmJ0bi1zb2NpYWwtbG9naW4ge1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgY29sb3I6IHdoaXRlO1xuICBtYXJnaW4tdG9wOiAzJTtcbiAgYm9yZGVyLXJhZGl1czogMTlweDtcbiAgcGFkZGluZzogMC41ZW07XG5cblxufVxuXG5pLmZhLmZhLXVzZXIuaW5wdXQtZ3JvdXAtdGV4dC5uYXYtbG9naW4tZm9ybSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgZm9udC1zaXplOiAyM3B4O1xuICBsZWZ0OiAwcHg7XG4gIHdpZHRoOiAxMCU7XG4gIHotaW5kZXg6IDEwO1xuICBtYXJnaW4tdG9wOiAtNCU7XG59XG5cbi5zb2NpYWwtbG9naW4udGV4dC1jZW50ZXIge1xuICBwYWRkaW5nOiAxNXB4O1xufVxuXG4uY2hlY2tib3gge1xuICBiYWNrZ3JvdW5kOiBub25lIHRyYW5zcGFyZW50O1xuICBib3JkZXI6IG5vbmU7XG4gIGJvcmRlci1sZWZ0OiBub25lO1xuICBib3JkZXItcmlnaHQ6IG5vbmU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgLyogZGlzcGxheTogYmxvY2s7ICovXG4gIGhlaWdodDogYXV0bztcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IG5vbmU7XG4gIGxlZnQ6IG5vbmU7XG4gIHJpZ2h0OiA5cHg7XG4gIHdpZHRoOiBub25lO1xuICAvKiB0cmFuc2l0aW9uOiBhbGwgLjJzOyAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuXG59XG5cbi5leGFtcGxlLWZvcm0ge1xuICBtaW4td2lkdGg6IDE1MHB4O1xuICBtYXgtd2lkdGg6IDUwMHB4O1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwcHg7XG4gIGxlZnQ6IDBweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHotaW5kZXg6IDk7XG4gIGJhY2tncm91bmQ6IGJsYWNrO1xuICBvcGFjaXR5OiAwLjU7XG59XG5cbi5zaWduLWluLW1haW4ge1xuICBkaXNwbGF5OiBibG9jaztcbn1cblxuLnVzZXItY3Jvc3Mge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuaW1nLmJ1dHRvbi1jcm9zcyB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IDEwcHg7XG4gIG1hcmdpbjogMHB4IDEwcHg7XG4gIHdpZHRoOiAxNnB4O1xufVxuLnByb3BlcnR5LWNvbi1mb3JtIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgZm9udC1zaXplOiAxNHB4O1xuICB0ZXh0LWFsaWduOiBsZWZ0O1xuIFxufVxuLmxvZ2luLWRlc2t0b3AtYnV0dG9uXG57XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOjcwMXB4KVxue1xuICAubW9iaWxlLXdyYXBwZXIge1xuICAgIGRpc3BsYXk6IG5vbmU7XG59XG4ubG9naW4tZGVza3RvcC1idXR0b25cbntcbiAgZGlzcGxheTogYmxvY2s7XG59XG4ubG9naW4tYnV0dG9uLW1haW4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMTJ2aDtcbiAgei1pbmRleDogMTAwMDtcbiAgcmlnaHQ6IDN2dztcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwNzM3RDtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzogMTBweCAyMHB4O1xufVxuLkxvZ2luLWJ1dG9uLXRleHRcbntcbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xuICBib3JkZXI6IDFweCBzb2xpZCB3aGl0ZTtcbiAgcGFkZGluZzogN3B4IDE1cHg7XG4gICAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbn1cbn1cbi5ub3RpZmljYXRpb24tb3ZlcmxheVxue1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgd2lkdGg6IDEwMCU7XG59XG4ubW9iaWxlLXdyYXBwZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjIzLDIyMywyMjMpO1xufVxuLmlucHV0LWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IC1tcy1mbGV4Ym94OyAvKiBJRTEwICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIHdpZHRoOiAxMDAlO1xuICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG5cbi5pY29uIHtcbiAgcGFkZGluZzogMTBweDtcbiAgYmFja2dyb3VuZDogdmFyKCAtLURBUkstQkxVRS1DT0xPUik7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgbWluLXdpZHRoOiA1MHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5pbnB1dC1maWVsZCB7XG4gIHdpZHRoOiAxMDAlO1xuICBwYWRkaW5nOiAxMHB4O1xuICBvdXRsaW5lOiBub25lO1xufVxuXG4uaW5wdXQtZmllbGQ6Zm9jdXMge1xuICBib3JkZXI6IDJweCBzb2xpZCB2YXIoIC0tREFSSy1CTFVFLUNPTE9SKTtcbn1cbi5pbnB1dC1ncm91cCB7XG4gXG5cbiAgZGlzcGxheTogYmxvY2s7XG4gXG59XG5cbi5pbnB1dC1maWVsZDpob3ZlciB7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhciggLS1EQVJLLUJMVUUtQ09MT1IpO1xufVxuLmh5cGVyOmhvdmVyXG57XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5wb2xpY3lcbntcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLmhhcy1zZWFyY2ggLmZvcm0tY29udHJvbCB7XG4gIHBhZGRpbmctbGVmdDogMi4zNzVyZW07XG59XG5cbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wtZmVlZGJhY2sge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDI7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICB3aWR0aDogMi4zNzVyZW07XG5cbiAgbGluZS1oZWlnaHQ6IDNyZW07XG5cblxuICBwb2ludGVyLWV2ZW50czogbm9uZTtcbiAgZGlzcGxheTogZmxleDtcbiAgY29sb3I6ICNhYWE7XG4gIGZvbnQtc2l6ZTogMjJweDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG5cbn1cbi5mb3JtLWNvbnRyb2xcbntcbiAgaGVpZ2h0OiA3dmg7XG59XG5cbi5mb3JtLWdyb3VwIHtcbiAgbWFyZ2luLWJvdHRvbTogMXJlbTtcbiAgbWFyZ2luLXRvcDogMS41ZW07XG4gICAgbWFyZ2luLWJvdHRvbTogMXJlbTtcbiAgICBtYXJnaW4tdG9wOiAxLjVlbTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGZsZXgtc3RhcnQ7XG5cbn1cbi5ub3RpZmljYXRpb24ge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAzZnI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBhZGRpbmc6IDAuNGVtIDBlbTtcbn1cblxuaW1nLmljb24ge1xuICB3aWR0aDogNDAlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG4ubm90aWZpY2F0aW9uLWljb24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5tYWluLWdyaWQtbm90aWZ1Y2F0aW9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgei1pbmRleDogMztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgLyogdG9wOiAxMHZoOyAqL1xuICBvdmVyZmxvdzogaGlkZGVuO1xufVxuLnJlYWQtbm90ZmljYXRpb257XG4gIGJhY2tncm91bmQtY29sb3I6IGFxdWFtYXJpbmU7XG5cbiAgbWFyZ2luLWJvdHRvbTogNHB4O1xufSBcblxuXG5cblxuXG5cbiJdfQ== */";
+    __webpack_exports__["default"] = "@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700\");\n\n@font-face {\n  font-family: HelveticaNeueLight;\n  src: url('/assets/font/HelveticaNeueLight.ttf');\n}\n\n.main-navigation-bar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 3fr 1fr 1fr\n}\n\nul {\n  list-style-type: none;\n}\n\n.nav-div {\n  height: 100vh;\n  width: 100%;\n  background-color: white;\n  position: absolute;\n  top: 4em;\n  left: 0;\n  z-index: 200;\n}\n\n.content {\n  padding: 10px;\n  background-color: rgb(223,223,223);\n}\n\nlabel {\n  background: none transparent;\n  border: 2px solid black;\n  border-left: 0 solid transparent;\n  border-right: 0 solid transparent;\n  cursor: pointer;\n  display: block;\n  height: 19px;\n  position: absolute;\n  top: 19px;\n  left: 20px;\n  width: 36px;\n  transition: all .2s;\n}\n\nlabel::before {\n  background: black;\n  content: '';\n  height: 2px;\n  width: 36px;\n  transition: all .2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  /* top: 18px; */\n  margin-top: 6.2px;\n\n}\n\nlabel::after {\n  background: black;\n  content: '';\n  height: 4px;\n  left: 0;\n  position: absolute;\n  top: 6px;\n  opacity: 0;\n  visibility: hidden;\n  width: 100%;\n  transform: rotate(90deg);\n  transition: all .2s;\n}\n\n.menu-text {\n  position: absolute;\n  top: 40px;\n  left: 13px;\n  text-transform: uppercase;\n  margin-top: 2px;\n}\n\n.menu-text::after {\n  display: none;\n}\n\n.logo-nav {\n  width: 80%;\n}\n\n.notification-upper{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.user-img {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 38px;\n\n}\n\n.logout-icon {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.icon-size {\n  width: 70%;\n}\n\nimg.close-img {\n  width: 6%;\n  position: absolute;\n  top: 26px;\n  left: 25px;\n}\n\n.has-search .form-control {\n  padding-left: 2.375rem;\n}\n\n.has-search .form-control-feedback {\n  position: absolute;\n  z-index: 2;\n  display: block;\n  width: 2.375rem;\n  height: 2.375rem;\n  line-height: 2.375rem;\n  text-align: center;\n  pointer-events: none;\n  color: #aaa;\n}\n\n.nav-links {\n  margin: 0;\n  padding: 0px;\n}\n\n.main {\n  width: 50%;\n  margin: 50px auto;\n}\n\n.grid-container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  /* padding: 10px; */\n  margin-left: calc(-50vw + 50%);\n  margin-right: calc(-50vw + 50%);\n  margin-top: calc(-50vw + 50%);\n  align-items: center;\n}\n\n.grid-container>div {\n\n\n  text-align: Left;\n  font-size: 18.5px;\n  padding: 17px;\n\n\n}\n\n.grid-container:hover {\n  background-color: #EBEBEB;\n  text-decoration: none;\n}\n\nimg.nav-link-icon {\n  float: right;\n}\n\n.nav-links-text {\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Bold';\n}\n\n.search-grid-conatiner {\n  display: grid;\n  grid-template-columns: 11fr;\n}\n\n.search-grid-conatiner>div {\n  font-size: 18.5px;\n  padding: 14px;\n  padding-top: 5px;\n  padding-bottom: 11px;\n  background-color: #FBF4EF;\n}\n\n.nav-link-icon-search {\n  width: 38px;\n  padding: 4px;\n  margin-top: -4px;\n  border: 1px solid lightgrey;\n  background-color: white;\n  height: 56.5px;\n}\n\ni.fa.fa-user {\n  display: flex;\n  flex-direction: column;\n\n}\n\nspan.log-out-text {\n  font-size: 12px;\n  text-transform: uppercase;\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\nimg.home-menu-image {\n  height: 4vh;\n  margin: 6px;\n}\n\np.nitification-red {\n  position: absolute;\n  background: red;\n  border-radius: 50%;\n  top: 4vh;\n  right: 21vw;\n  height: 3vh;\n  width: 4vw;\n  text-align: center;\n  z-index: 1;\n  color: white\n}\n\nimg.plus-img {\n  width: 50%;\n  margin-left: 3vw;\n}\n\n/*# sourceMappingURL=style.css.map */\n\nspan.red-text {\n  background-color: red;\n  width: 50%;\n  text-align: center;\n  border-radius: 50%;\n  color: white;\n}\n\n.menu-toogle,\n.plus-icon,\n.icon-size,\n.imge-logo-header,\n.notification-upper,\n.logout {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.modal-backdrop.show {\n  display: none;\n  z-index: -1;\n}\n\n.nav-login {\n  position: absolute;\n  z-index: 1000;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  background: white;\n  top: 0px;\n  position: fixed;\n}\n\n@media only screen and (min-width:768px) {\n  .icon-size {\n    width: 50% !important;\n  }\n\n  .logo-nav {\n    width: 60%;\n  }\n\n  .content {\n    padding: 0px;\n  }\n}\n\n.btn-google {\n  background-color: #DD4B33;\n  color: white;\n  width: 36%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n\n}\n\n.btn-facebook {\n  background-color: #244D93;\n  color: white;\n  width: 36%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n\n}\n\n.social-button {\n  display: flex;\n  /* justify-content: center; */\n  justify-content: space-evenly;\n  align-items: center;\n\n}\n\n.color-signup {\n  color: #244D93;\n}\n\n.btn-social-login {\n  width: 100%;\n  background-color: #244D93;\n  color: white;\n  margin-top: 3%;\n  border-radius: 19px;\n  padding: 0.5em;\n\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n\n.sign-in-main {\n  display: block;\n}\n\n.user-cross {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\nimg.button-cross {\n  position: absolute;\n  right: 10px;\n  margin: 0px 10px;\n  width: 16px;\n}\n\n.property-con-form {\n  display: flex;\n  flex-direction: column;\n  font-size: 14px;\n  text-align: left;\n \n}\n\n.login-desktop-button\n{\n  display: none;\n}\n\n@media screen and (min-width:701px)\n{\n  .mobile-wrapper {\n    display: none;\n}\n.login-desktop-button\n{\n  display: block;\n}\n.login-button-main {\n  position: absolute;\n  top: 12vh;\n  z-index: 1000;\n  right: 3vw;\n  background-color: #00737D;\n    color: white;\n    padding: 10px 20px;\n}\n.Login-buton-text\n{\n  margin-bottom: 0px;\n  border: 1px solid white;\n  padding: 7px 15px;\n    text-transform: uppercase;\n}\n}\n\n.notification-overlay\n{\n  background-color: white;\n  height: 100vh;\n  width: 100%;\n}\n\n.mobile-wrapper {\n  background-color: rgb(223,223,223);\n}\n\n.input-container { /* IE10 */\n  display: flex;\n  width: 100%;\n  margin-bottom: 1em;\n}\n\n.icon {\n  padding: 10px;\n  background: var( --DARK-BLUE-COLOR);\n  color: white;\n  min-width: 50px;\n  text-align: center;\n}\n\n.input-field {\n  width: 100%;\n  padding: 10px;\n  outline: none;\n}\n\n.input-field:focus {\n  border: 2px solid var( --DARK-BLUE-COLOR);\n}\n\n.input-group {\n \n\n  display: block;\n \n}\n\n.input-field:hover {\n  border: 2px solid var( --DARK-BLUE-COLOR);\n}\n\n.hyper:hover\n{\n  cursor: pointer;\n}\n\n.policy\n{\n  text-align: center;\n}\n\n.has-search .form-control {\n  padding-left: 2.375rem;\n}\n\n.has-search .form-control-feedback {\n  position: absolute;\n  z-index: 2;\n  display: block;\n  width: 2.375rem;\n\n  line-height: 3rem;\n\n\n  pointer-events: none;\n  display: flex;\n  color: #aaa;\n  font-size: 22px;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n\n}\n\n.form-control\n{\n  height: 7vh;\n}\n\n.form-group {\n  margin-bottom: 1rem;\n  margin-top: 1.5em;\n    margin-bottom: 1rem;\n    margin-top: 1.5em;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: flex-start;\n\n}\n\n.notification {\n  display: grid;\n  grid-template-columns: 1fr 3fr;\n  align-items: center;\n  padding: 0.4em 0em;\n}\n\nimg.icon {\n  width: 40%;\n  text-align: center;\n  background-color: transparent;\n}\n\n.notification-icon {\n  display: flex;\n  justify-content: center;\n}\n\n.main-grid-notifucation {\n  background-color: white;\n  /* position: absolute; */\n  z-index: 3;\n  height: 100vh;\n  /* top: 10vh; */\n  overflow: hidden;\n}\n\n.read-notfication{\n  background-color: aquamarine;\n\n  margin-bottom: 4px;\n} \n\n\n\n\n\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9uYXZpZ2F0aW9uQmFyL25hdmlnYXRpb25CYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxRUFBcUU7O0FBRXJFO0VBQ0UsK0JBQStCO0VBQy9CLCtDQUErQztBQUNqRDs7QUFFQTtFQUNFLGFBQWE7RUFDYjtBQUNGOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixPQUFPO0VBQ1AsWUFBWTtBQUNkOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1Qix1QkFBdUI7RUFDdkIsZ0NBQWdDO0VBQ2hDLGlDQUFpQztFQUNqQyxlQUFlO0VBQ2YsY0FBYztFQUNkLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVixXQUFXO0VBRVgsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFdBQVc7RUFDWCxXQUFXO0VBQ1gsV0FBVztFQUNYLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsaUJBQWlCOztBQUVuQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsV0FBVztFQUVYLHdCQUF3QjtFQUV4QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVix5QkFBeUI7RUFDekIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQiw2Q0FBNkM7RUFDN0Msa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLGVBQWU7O0FBRWpCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLGNBQWM7RUFDZCxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFNBQVM7RUFDVCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtDQUFrQztFQUNsQyxtQkFBbUI7RUFDbkIsOEJBQThCO0VBQzlCLCtCQUErQjtFQUMvQiw2QkFBNkI7RUFDN0IsbUJBQW1CO0FBQ3JCOztBQUVBOzs7RUFHRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGFBQWE7OztBQUdmOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QiwwQkFBMEI7QUFDNUI7O0FBR0E7RUFDRSxhQUFhO0VBQ2IsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsb0JBQW9CO0VBQ3BCLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLDJCQUEyQjtFQUMzQix1QkFBdUI7RUFDdkIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7O0FBRXhCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLHlCQUF5Qjs7QUFFM0I7O0FBS0E7RUFDRSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLFNBQVM7RUFDVCxVQUFVO0VBQ1YsV0FBVztFQUNYLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIsWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLG9CQUFvQjtFQUNwQixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0VBQ1YsVUFBVTtFQUNWLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsYUFBYTtFQUNiLG1CQUFtQjs7QUFFckI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsV0FBVztBQUNiOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFdBQVc7RUFDWCxXQUFXO0VBQ1gsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1Y7QUFDRjs7QUFFQTtFQUNFLFVBQVU7RUFDVixnQkFBZ0I7QUFDbEI7O0FBRUEsb0NBQW9DOztBQUNwQztFQUNFLHFCQUFxQjtFQUNyQixVQUFVO0VBQ1Ysa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixZQUFZO0FBQ2Q7O0FBRUE7Ozs7OztFQU1FLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2IsYUFBYTtFQUViLGFBQWE7RUFFYix1QkFBdUI7RUFFdkIsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxpQkFBaUI7RUFDakIsUUFBUTtFQUNSLGVBQWU7QUFDakI7O0FBRUE7RUFDRTtJQUNFLHFCQUFxQjtFQUN2Qjs7RUFFQTtJQUNFLFVBQVU7RUFDWjs7RUFFQTtJQUNFLFlBQVk7RUFDZDtBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTs7QUFFZDs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7O0FBRWQ7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLDZCQUE2QjtFQUM3QixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIsY0FBYzs7O0FBR2hCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFVBQVU7RUFDVixXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixlQUFlO0VBQ2YsUUFBUTtFQUNSLFNBQVM7RUFFVCxhQUFhO0VBRWIsdUJBQXVCO0VBRXZCLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGVBQWU7RUFDZixnQkFBZ0I7O0FBRWxCOztBQUNBOztFQUVFLGFBQWE7QUFDZjs7QUFDQTs7RUFFRTtJQUNFLGFBQWE7QUFDakI7QUFDQTs7RUFFRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULGFBQWE7RUFDYixVQUFVO0VBQ1YseUJBQXlCO0lBQ3ZCLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7QUFDQTs7RUFFRSxrQkFBa0I7RUFDbEIsdUJBQXVCO0VBQ3ZCLGlCQUFpQjtJQUNmLHlCQUF5QjtBQUM3QjtBQUNBOztBQUNBOztFQUVFLHVCQUF1QjtFQUN2QixhQUFhO0VBQ2IsV0FBVztBQUNiOztBQUNBO0VBQ0Usa0NBQWtDO0FBQ3BDOztBQUNBLG1CQUN3QixTQUFTO0VBQy9CLGFBQWE7RUFDYixXQUFXO0VBQ1gsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1DQUFtQztFQUNuQyxZQUFZO0VBQ1osZUFBZTtFQUNmLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2IsYUFBYTtBQUNmOztBQUVBO0VBQ0UseUNBQXlDO0FBQzNDOztBQUNBOzs7RUFHRSxjQUFjOztBQUVoQjs7QUFFQTtFQUNFLHlDQUF5QztBQUMzQzs7QUFDQTs7RUFFRSxlQUFlO0FBQ2pCOztBQUNBOztFQUVFLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsY0FBYztFQUNkLGVBQWU7O0VBRWYsaUJBQWlCOzs7RUFHakIsb0JBQW9CO0VBQ3BCLGFBQWE7RUFDYixXQUFXO0VBQ1gsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsdUJBQXVCOztBQUV6Qjs7QUFDQTs7RUFFRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsaUJBQWlCO0lBQ2YsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQiwyQkFBMkI7O0FBRS9COztBQUNBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQiw2QkFBNkI7QUFDL0I7O0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0FBQ3pCOztBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLHdCQUF3QjtFQUN4QixVQUFVO0VBQ1YsYUFBYTtFQUNiLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7O0FBQ0E7RUFDRSw0QkFBNEI7O0VBRTVCLGtCQUFrQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbmF2aWdhdGlvbkJhci9uYXZpZ2F0aW9uQmFyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybChcImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1OdW5pdG86NDAwLDcwMFwiKTtcblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2FOZXVlTGlnaHQ7XG4gIHNyYzogdXJsKCcvYXNzZXRzL2ZvbnQvSGVsdmV0aWNhTmV1ZUxpZ2h0LnR0ZicpO1xufVxuXG4ubWFpbi1uYXZpZ2F0aW9uLWJhciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAzZnIgMWZyIDFmclxufVxuXG51bCB7XG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcbn1cblxuLm5hdi1kaXYge1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0ZW07XG4gIGxlZnQ6IDA7XG4gIHotaW5kZXg6IDIwMDtcbn1cblxuLmNvbnRlbnQge1xuICBwYWRkaW5nOiAxMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjIzLDIyMywyMjMpO1xufVxuXG5sYWJlbCB7XG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xuICBib3JkZXItbGVmdDogMCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgYm9yZGVyLXJpZ2h0OiAwIHNvbGlkIHRyYW5zcGFyZW50O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDE5cHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAxOXB4O1xuICBsZWZ0OiAyMHB4O1xuICB3aWR0aDogMzZweDtcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgLjJzO1xuICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xufVxuXG5sYWJlbDo6YmVmb3JlIHtcbiAgYmFja2dyb3VuZDogYmxhY2s7XG4gIGNvbnRlbnQ6ICcnO1xuICBoZWlnaHQ6IDJweDtcbiAgd2lkdGg6IDM2cHg7XG4gIHRyYW5zaXRpb246IGFsbCAuMnM7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgLyogdG9wOiAxOHB4OyAqL1xuICBtYXJnaW4tdG9wOiA2LjJweDtcblxufVxuXG5sYWJlbDo6YWZ0ZXIge1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgY29udGVudDogJyc7XG4gIGhlaWdodDogNHB4O1xuICBsZWZ0OiAwO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNnB4O1xuICBvcGFjaXR5OiAwO1xuICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gIHdpZHRoOiAxMDAlO1xuICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcbiAgdHJhbnNmb3JtOiByb3RhdGUoOTBkZWcpO1xuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAuMnM7XG4gIHRyYW5zaXRpb246IGFsbCAuMnM7XG59XG5cbi5tZW51LXRleHQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDBweDtcbiAgbGVmdDogMTNweDtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luLXRvcDogMnB4O1xufVxuXG4ubWVudS10ZXh0OjphZnRlciB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5sb2dvLW5hdiB7XG4gIHdpZHRoOiA4MCU7XG59XG5cbi5ub3RpZmljYXRpb24tdXBwZXJ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4udXNlci1pbWcge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGZvbnQ6IG5vcm1hbCBub3JtYWwgbm9ybWFsIDE0cHgvMSBGb250QXdlc29tZTtcbiAgZm9udC1zaXplOiBpbmhlcml0O1xuICB0ZXh0LXJlbmRlcmluZzogYXV0bztcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIGZvbnQtc2l6ZTogMzhweDtcblxufVxuXG4ubG9nb3V0LWljb24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uaWNvbi1zaXplIHtcbiAgd2lkdGg6IDcwJTtcbn1cblxuaW1nLmNsb3NlLWltZyB7XG4gIHdpZHRoOiA2JTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDI2cHg7XG4gIGxlZnQ6IDI1cHg7XG59XG5cbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wge1xuICBwYWRkaW5nLWxlZnQ6IDIuMzc1cmVtO1xufVxuXG4uaGFzLXNlYXJjaCAuZm9ybS1jb250cm9sLWZlZWRiYWNrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAyO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDIuMzc1cmVtO1xuICBoZWlnaHQ6IDIuMzc1cmVtO1xuICBsaW5lLWhlaWdodDogMi4zNzVyZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIGNvbG9yOiAjYWFhO1xufVxuXG4ubmF2LWxpbmtzIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwcHg7XG59XG5cbi5tYWluIHtcbiAgd2lkdGg6IDUwJTtcbiAgbWFyZ2luOiA1MHB4IGF1dG87XG59XG5cbi5ncmlkLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDJmciAxZnI7XG4gIC8qIHBhZGRpbmc6IDEwcHg7ICovXG4gIG1hcmdpbi1sZWZ0OiBjYWxjKC01MHZ3ICsgNTAlKTtcbiAgbWFyZ2luLXJpZ2h0OiBjYWxjKC01MHZ3ICsgNTAlKTtcbiAgbWFyZ2luLXRvcDogY2FsYygtNTB2dyArIDUwJSk7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5ncmlkLWNvbnRhaW5lcj5kaXYge1xuXG5cbiAgdGV4dC1hbGlnbjogTGVmdDtcbiAgZm9udC1zaXplOiAxOC41cHg7XG4gIHBhZGRpbmc6IDE3cHg7XG5cblxufVxuXG4uZ3JpZC1jb250YWluZXI6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUJFQkVCO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59XG5cbmltZy5uYXYtbGluay1pY29uIHtcbiAgZmxvYXQ6IHJpZ2h0O1xufVxuXG4ubmF2LWxpbmtzLXRleHQge1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG5cblxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMTFmcjtcbn1cblxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lcj5kaXYge1xuICBmb250LXNpemU6IDE4LjVweDtcbiAgcGFkZGluZzogMTRweDtcbiAgcGFkZGluZy10b3A6IDVweDtcbiAgcGFkZGluZy1ib3R0b206IDExcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNGQkY0RUY7XG59XG5cbi5uYXYtbGluay1pY29uLXNlYXJjaCB7XG4gIHdpZHRoOiAzOHB4O1xuICBwYWRkaW5nOiA0cHg7XG4gIG1hcmdpbi10b3A6IC00cHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JleTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGhlaWdodDogNTYuNXB4O1xufVxuXG5pLmZhLmZhLXVzZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuXG59XG5cbnNwYW4ubG9nLW91dC10ZXh0IHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuXG59XG5cblxuXG5cbmkuZmEuZmEtdXNlci5pbnB1dC1ncm91cC10ZXh0Lm5hdi1sb2dpbi1mb3JtIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBmb250LXNpemU6IDIzcHg7XG4gIGxlZnQ6IDBweDtcbiAgd2lkdGg6IDEwJTtcbiAgei1pbmRleDogMTA7XG4gIG1hcmdpbi10b3A6IC00JTtcbn1cblxuLnNvY2lhbC1sb2dpbi50ZXh0LWNlbnRlciB7XG4gIHBhZGRpbmc6IDE1cHg7XG59XG5cbi5jaGVja2JveCB7XG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLWxlZnQ6IG5vbmU7XG4gIGJvcmRlci1yaWdodDogbm9uZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICAvKiBkaXNwbGF5OiBibG9jazsgKi9cbiAgaGVpZ2h0OiBhdXRvO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogbm9uZTtcbiAgbGVmdDogbm9uZTtcbiAgcmlnaHQ6IDlweDtcbiAgd2lkdGg6IG5vbmU7XG4gIC8qIHRyYW5zaXRpb246IGFsbCAuMnM7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG5cbn1cblxuLmV4YW1wbGUtZm9ybSB7XG4gIG1pbi13aWR0aDogMTUwcHg7XG4gIG1heC13aWR0aDogNTAwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJvcmRlcjogbm9uZTtcbn1cblxuaW1nLmhvbWUtbWVudS1pbWFnZSB7XG4gIGhlaWdodDogNHZoO1xuICBtYXJnaW46IDZweDtcbn1cblxucC5uaXRpZmljYXRpb24tcmVkIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBiYWNrZ3JvdW5kOiByZWQ7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgdG9wOiA0dmg7XG4gIHJpZ2h0OiAyMXZ3O1xuICBoZWlnaHQ6IDN2aDtcbiAgd2lkdGg6IDR2dztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB6LWluZGV4OiAxO1xuICBjb2xvcjogd2hpdGVcbn1cblxuaW1nLnBsdXMtaW1nIHtcbiAgd2lkdGg6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IDN2dztcbn1cblxuLyojIHNvdXJjZU1hcHBpbmdVUkw9c3R5bGUuY3NzLm1hcCAqL1xuc3Bhbi5yZWQtdGV4dCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbiAgd2lkdGg6IDUwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLm1lbnUtdG9vZ2xlLFxuLnBsdXMtaWNvbixcbi5pY29uLXNpemUsXG4uaW1nZS1sb2dvLWhlYWRlcixcbi5ub3RpZmljYXRpb24tdXBwZXIsXG4ubG9nb3V0IHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5tb2RhbC1iYWNrZHJvcC5zaG93IHtcbiAgZGlzcGxheTogbm9uZTtcbiAgei1pbmRleDogLTE7XG59XG5cbi5uYXYtbG9naW4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDEwMDA7XG4gIGhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZDogd2hpdGU7XG4gIHRvcDogMHB4O1xuICBwb3NpdGlvbjogZml4ZWQ7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3NjhweCkge1xuICAuaWNvbi1zaXplIHtcbiAgICB3aWR0aDogNTAlICFpbXBvcnRhbnQ7XG4gIH1cblxuICAubG9nby1uYXYge1xuICAgIHdpZHRoOiA2MCU7XG4gIH1cblxuICAuY29udGVudCB7XG4gICAgcGFkZGluZzogMHB4O1xuICB9XG59XG5cbi5idG4tZ29vZ2xlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0RENEIzMztcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzYlO1xuICBoZWlnaHQ6IDM1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAwcHg7XG4gIHBhZGRpbmc6IDBweDtcblxufVxuXG4uYnRuLWZhY2Vib29rIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzYlO1xuICBoZWlnaHQ6IDM1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAwcHg7XG4gIHBhZGRpbmc6IDBweDtcblxufVxuXG4uc29jaWFsLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxufVxuXG4uY29sb3Itc2lnbnVwIHtcbiAgY29sb3I6ICMyNDREOTM7XG59XG5cbi5idG4tc29jaWFsLWxvZ2luIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgbWFyZ2luLXRvcDogMyU7XG4gIGJvcmRlci1yYWRpdXM6IDE5cHg7XG4gIHBhZGRpbmc6IDAuNWVtO1xuXG5cbn1cblxuaS5mYS5mYS11c2VyLmlucHV0LWdyb3VwLXRleHQubmF2LWxvZ2luLWZvcm0ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGZvbnQtc2l6ZTogMjNweDtcbiAgbGVmdDogMHB4O1xuICB3aWR0aDogMTAlO1xuICB6LWluZGV4OiAxMDtcbiAgbWFyZ2luLXRvcDogLTQlO1xufVxuXG4uc29jaWFsLWxvZ2luLnRleHQtY2VudGVyIHtcbiAgcGFkZGluZzogMTVweDtcbn1cblxuLmNoZWNrYm94IHtcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItbGVmdDogbm9uZTtcbiAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIC8qIGRpc3BsYXk6IGJsb2NrOyAqL1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiBub25lO1xuICBsZWZ0OiBub25lO1xuICByaWdodDogOXB4O1xuICB3aWR0aDogbm9uZTtcbiAgLyogdHJhbnNpdGlvbjogYWxsIC4yczsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuXG4uZXhhbXBsZS1mb3JtIHtcbiAgbWluLXdpZHRoOiAxNTBweDtcbiAgbWF4LXdpZHRoOiA1MDBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyOiBub25lO1xufVxuXG4ubG9hZGluZy1jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBsZWZ0OiAwcHg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB6LWluZGV4OiA5O1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgb3BhY2l0eTogMC41O1xufVxuXG4uc2lnbi1pbi1tYWluIHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi51c2VyLWNyb3NzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbmltZy5idXR0b24tY3Jvc3Mge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAxMHB4O1xuICBtYXJnaW46IDBweCAxMHB4O1xuICB3aWR0aDogMTZweDtcbn1cbi5wcm9wZXJ0eS1jb24tZm9ybSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiBcbn1cbi5sb2dpbi1kZXNrdG9wLWJ1dHRvblxue1xuICBkaXNwbGF5OiBub25lO1xufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgLm1vYmlsZS13cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuLmxvZ2luLWRlc2t0b3AtYnV0dG9uXG57XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuLmxvZ2luLWJ1dHRvbi1tYWluIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDEydmg7XG4gIHotaW5kZXg6IDEwMDA7XG4gIHJpZ2h0OiAzdnc7XG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDczN0Q7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDEwcHggMjBweDtcbn1cbi5Mb2dpbi1idXRvbi10ZXh0XG57XG4gIG1hcmdpbi1ib3R0b206IDBweDtcbiAgYm9yZGVyOiAxcHggc29saWQgd2hpdGU7XG4gIHBhZGRpbmc6IDdweCAxNXB4O1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG59XG59XG4ubm90aWZpY2F0aW9uLW92ZXJsYXlcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGhlaWdodDogMTAwdmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLm1vYmlsZS13cmFwcGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyMywyMjMsMjIzKTtcbn1cbi5pbnB1dC1jb250YWluZXIge1xuICBkaXNwbGF5OiAtbXMtZmxleGJveDsgLyogSUUxMCAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMTAwJTtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuXG4uaWNvbiB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQ6IHZhciggLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBjb2xvcjogd2hpdGU7XG4gIG1pbi13aWR0aDogNTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaW5wdXQtZmllbGQge1xuICB3aWR0aDogMTAwJTtcbiAgcGFkZGluZzogMTBweDtcbiAgb3V0bGluZTogbm9uZTtcbn1cblxuLmlucHV0LWZpZWxkOmZvY3VzIHtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKCAtLURBUkstQkxVRS1DT0xPUik7XG59XG4uaW5wdXQtZ3JvdXAge1xuIFxuXG4gIGRpc3BsYXk6IGJsb2NrO1xuIFxufVxuXG4uaW5wdXQtZmllbGQ6aG92ZXIge1xuICBib3JkZXI6IDJweCBzb2xpZCB2YXIoIC0tREFSSy1CTFVFLUNPTE9SKTtcbn1cbi5oeXBlcjpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ucG9saWN5XG57XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wge1xuICBwYWRkaW5nLWxlZnQ6IDIuMzc1cmVtO1xufVxuXG4uaGFzLXNlYXJjaCAuZm9ybS1jb250cm9sLWZlZWRiYWNrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAyO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDIuMzc1cmVtO1xuXG4gIGxpbmUtaGVpZ2h0OiAzcmVtO1xuXG5cbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGNvbG9yOiAjYWFhO1xuICBmb250LXNpemU6IDIycHg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuXG59XG4uZm9ybS1jb250cm9sXG57XG4gIGhlaWdodDogN3ZoO1xufVxuXG4uZm9ybS1ncm91cCB7XG4gIG1hcmdpbi1ib3R0b206IDFyZW07XG4gIG1hcmdpbi10b3A6IDEuNWVtO1xuICAgIG1hcmdpbi1ib3R0b206IDFyZW07XG4gICAgbWFyZ2luLXRvcDogMS41ZW07XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xuXG59XG4ubm90aWZpY2F0aW9uIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgM2ZyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBwYWRkaW5nOiAwLjRlbSAwZW07XG59XG5cbmltZy5pY29uIHtcbiAgd2lkdGg6IDQwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbn1cbi5ub3RpZmljYXRpb24taWNvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLm1haW4tZ3JpZC1ub3RpZnVjYXRpb24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICB6LWluZGV4OiAzO1xuICBoZWlnaHQ6IDEwMHZoO1xuICAvKiB0b3A6IDEwdmg7ICovXG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG4ucmVhZC1ub3RmaWNhdGlvbntcbiAgYmFja2dyb3VuZC1jb2xvcjogYXF1YW1hcmluZTtcblxuICBtYXJnaW4tYm90dG9tOiA0cHg7XG59IFxuXG5cblxuXG5cblxuIl19 */";
     /***/
   },
 
@@ -14308,6 +14310,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.confirmInterest = [];
         this.now = new Date();
         this.confirmInterests = [];
+        this.bellicon = [];
         this.formVar = this.fb.group({
           Name: '',
           email: '',
@@ -14327,8 +14330,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               localStorage.setItem("user", JSON.stringify(_this85.userData));
 
               _this85.LoggedIn();
-
-              _this85.notificationItems();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
@@ -14378,7 +14379,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             _this86.noBuyerMatches = _this86.buyerProperty.length;
             _this86.matches = _this86.buyerProperty.length + _this86.sellerProperty.length;
           });
-          this.getNotification();
         }
       }, {
         key: "getNotification",
@@ -14387,11 +14387,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
+              _this87.bellicon.push(item.data());
+
+              if (_this87.bellicon.length > 0) {
+                _this87.belliconone = false;
+              }
+
               if (item.data().Lastseen == null) {
                 _this87.confirmInterest.push(item.data());
+
+                _this87.notification = _this87.confirmInterest.length;
+              } else {
+                _this87.notification = 0;
               }
             });
-            _this87.notification = _this87.confirmInterest.length;
           });
         }
       }, {
@@ -14579,7 +14588,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
+          var _this93 = this;
+
           if (this.notificationoverlay == false) {
+            this.user = JSON.parse(localStorage.getItem("user"));
+            this.uid = this.user.uid;
+            this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
+              ref.forEach(function (item) {
+                _this93.confirmInterests.push({
+                  Detail: item.data(),
+                  id: item.id
+                });
+              });
+            });
             this.notificationoverlay = true;
           } else if (this.notificationoverlay == true) {
             this.notificationoverlay = false;
@@ -14597,30 +14618,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           if (this.users != null) {
             this.uid = this.users.uid;
+            this.getNotification();
           }
-        }
-      }, {
-        key: "notificationItems",
-        value: function notificationItems() {
-          var _this93 = this;
-
-          this.user = JSON.parse(localStorage.getItem("user"));
-          this.uid = this.user.uid;
-          this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
-            ref.forEach(function (item) {
-              _this93.confirmInterests.push({
-                Detail: item.data(),
-                id: item.id
-              });
-            });
-            console.log(_this93.confirmInterests);
-          });
         }
       }, {
         key: "getDocid",
         value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
-          this._router.navigate(["/mymatches"]);
-
+          this.notificationoverlay = false;
+          this.getNotification();
           this.Notification = {
             propertyId: propertyId,
             time: time,
@@ -14628,10 +14633,64 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             viewed: viewed,
             Lastseen: now,
             Type: Type
-          }; // this.getNotification()
+          };
+
+          this._router.navigate(["/mymatches"]);
 
           this.Notification.Lastseen = this.now;
           this.return = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(function (data) {});
+        }
+      }, {
+        key: "notificationItems",
+        value: function notificationItems() {
+          var _this94 = this;
+
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.uid = this.user.uid;
+          this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
+            ref.forEach(function (item) {
+              _this94.confirmInterests.push({
+                Detail: item.data(),
+                id: item.id
+              });
+            });
+          });
+        }
+      }, {
+        key: "bellone",
+        value: function bellone() {
+          var _this95 = this;
+
+          this.notificationoverlay = true;
+          this.bellicontwo = true;
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.uid = this.user.uid;
+          this.confirmInterests = [];
+          this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
+            ref.forEach(function (item) {
+              _this95.confirmInterests.push({
+                Detail: item.data(),
+                id: item.id
+              });
+            });
+            console.log(_this95.confirmInterests);
+          });
+        }
+      }, {
+        key: "belltwo",
+        value: function belltwo() {
+          var _this96 = this;
+
+          this.notificationoverlay = false;
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.uid = this.user.uid;
+          this.confirmInterests = null;
+          this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
+            ref.forEach(function (item) {
+              _this96.confirmInterests = null;
+            });
+          });
+          this.bellicontwo = false;
         }
       }]);
 
@@ -14753,18 +14812,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this94 = this;
+          var _this97 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this94.confirmInterest.push({
+              _this97.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this94.confirmInterest);
+            console.log(_this97.confirmInterest);
           });
         }
       }, {
@@ -16244,17 +16303,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this95 = this;
+          var _this98 = this;
 
           this.userLogged();
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this95.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this95.userData));
-              _this95.loggedIn = true;
+              _this98.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this98.userData));
+              _this98.loggedIn = true;
             } else {
               localStorage.setItem("user", null);
-              _this95.loggedIn = false;
+              _this98.loggedIn = false;
             }
           });
           this.items();
@@ -16263,40 +16322,40 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this96 = this;
+          var _this99 = this;
 
           this.authService.GoogleAuth().then(function (data) {
-            _this96.loggedIn = true;
+            _this99.loggedIn = true;
 
-            _this96.userLogged();
+            _this99.userLogged();
 
-            _this96.items();
+            _this99.items();
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this97 = this;
+          var _this100 = this;
 
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this97.loggedIn = true;
+            _this100.loggedIn = true;
 
-            _this97.items();
+            _this100.items();
 
-            _this97.userLogged();
+            _this100.userLogged();
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this98 = this;
+          var _this101 = this;
 
           console.log(email + pass);
           this.authService.SignIn(email, pass).then(function (data) {
-            _this98.items();
+            _this101.items();
 
-            _this98.userLogged();
+            _this101.userLogged();
           });
         }
       }, {
@@ -16309,28 +16368,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "items",
         value: function items() {
-          var _this99 = this;
+          var _this102 = this;
 
           this.AgenthomeService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this99.agentNew.push(elements.data());
+              _this102.agentNew.push(elements.data());
 
-              if (_this99.uid == elements.data().uid) {
-                _this99.agents = elements.data();
+              if (_this102.uid == elements.data().uid) {
+                _this102.agents = elements.data();
               }
             });
           });
           this.AgenthomeService.getAgentBuyer(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (_this99.uid == element.data().uid) {
-                _this99.agentsBuyer.push(element.data());
+              if (_this102.uid == element.data().uid) {
+                _this102.agentsBuyer.push(element.data());
               }
             });
           });
           this.AgenthomeService.getAgentSeller(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (_this99.uid == element.data().uid) {
-                _this99.agentsSeller.push(element.data());
+              if (_this102.uid == element.data().uid) {
+                _this102.agentsSeller.push(element.data());
               }
             });
           });
@@ -16550,7 +16609,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this100 = this;
+          var _this103 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -16560,10 +16619,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.AgenthomeService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              if (_this100.uid = elements.data().uid) {
-                _this100.docid = elements.id;
-                _this100.agents = elements.data();
-                console.log(_this100.agents);
+              if (_this103.uid = elements.data().uid) {
+                _this103.docid = elements.id;
+                _this103.agents = elements.data();
+                console.log(_this103.agents);
               }
             });
           });
@@ -16675,15 +16734,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelecteddetailareaComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this101 = this;
+          var _this104 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this101.Minamount = params.get("MinAmount");
-            _this101.MaxAmount = params.get("MaxAmount");
-            _this101.ChainStatus = params.get("ChainStatus");
-            _this101.Conditions = params.get("Conditions");
-            _this101.Lookinpostcode = params.get("Lookinpostcode");
-            _this101.SearchRadius = params.get("SearchRadius");
+            _this104.Minamount = params.get("MinAmount");
+            _this104.MaxAmount = params.get("MaxAmount");
+            _this104.ChainStatus = params.get("ChainStatus");
+            _this104.Conditions = params.get("Conditions");
+            _this104.Lookinpostcode = params.get("Lookinpostcode");
+            _this104.SearchRadius = params.get("SearchRadius");
           });
         }
       }, {
@@ -16837,20 +16896,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelecteddetailsellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this102 = this;
+          var _this105 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this102.LookingAddress = params.get("LookingAddress");
-            _this102.LookingTown = params.get("LookingTown");
-            _this102.Lookingpostcode = params.get("Lookingpostcode");
-            _this102.Lookingstate = params.get("Lookingstate");
-            _this102.MaxAmount = params.get("MaxAmount");
-            _this102.Maxbathroom = params.get("Maxbathrooms");
-            _this102.Maxreception = params.get("Maxreception");
-            _this102.PropertyCondition = params.get("PropertyCondition");
-            _this102.PropertyType = params.get("PropertyType");
-            _this102.Roomsmax = params.get("Roomsmax");
-            _this102.ownership = params.get("ownership");
+            _this105.LookingAddress = params.get("LookingAddress");
+            _this105.LookingTown = params.get("LookingTown");
+            _this105.Lookingpostcode = params.get("Lookingpostcode");
+            _this105.Lookingstate = params.get("Lookingstate");
+            _this105.MaxAmount = params.get("MaxAmount");
+            _this105.Maxbathroom = params.get("Maxbathrooms");
+            _this105.Maxreception = params.get("Maxreception");
+            _this105.PropertyCondition = params.get("PropertyCondition");
+            _this105.PropertyType = params.get("PropertyType");
+            _this105.Roomsmax = params.get("Roomsmax");
+            _this105.ownership = params.get("ownership");
           });
         }
       }, {
@@ -18214,7 +18273,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this103 = this;
+        var _this106 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -18228,8 +18287,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this103.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this103.userData));
+            _this106.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this106.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -18410,7 +18469,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee41() {
-            var _this104 = this;
+            var _this107 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee41$(_context41) {
@@ -18424,7 +18483,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 3:
                     result = _context41.sent;
                     this.ngZone.run(function () {
-                      _this104.SetUserData(result.user);
+                      _this107.SetUserData(result.user);
                     });
                     _context41.next = 10;
                     break;
@@ -18725,35 +18784,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(PropertyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this105 = this;
+          var _this108 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this105.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this105.PropertyType = params.get("PropertyType").trim();
-            _this105.LookingTown = params.get("LookingTown").trim();
-            _this105.MinAmount = params.get("MinAmount").trim();
-            _this105.MaxAmount = params.get("MaxAmount").trim();
-            _this105.latitude = params.get("latitude");
-            _this105.longitude = params.get("longitude");
-            console.log(_this105.Lookingpostcode + " " + _this105.PropertyType + " " + _this105.LookingTown + " " + _this105.MinAmount + " " + _this105.MaxAmount);
+            _this108.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this108.PropertyType = params.get("PropertyType").trim();
+            _this108.LookingTown = params.get("LookingTown").trim();
+            _this108.MinAmount = params.get("MinAmount").trim();
+            _this108.MaxAmount = params.get("MaxAmount").trim();
+            _this108.latitude = params.get("latitude");
+            _this108.longitude = params.get("longitude");
+            console.log(_this108.Lookingpostcode + " " + _this108.PropertyType + " " + _this108.LookingTown + " " + _this108.MinAmount + " " + _this108.MaxAmount);
           }); // Fetch details
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this105.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              console.log(_this105.maxAmount);
-              _this105.less = _this105.maxAmount - _this105.maxAmount * 3 / 100;
-              _this105.more = _this105.maxAmount * 1 + _this105.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
+              _this108.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              console.log(_this108.maxAmount);
+              _this108.less = _this108.maxAmount - _this108.maxAmount * 3 / 100;
+              _this108.more = _this108.maxAmount * 1 + _this108.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
 
-              _this105.removespace = _this105.Lookingpostcode.replace(/\s/g, "");
-              _this105.listing = _this105.Lookingpostcode.replace(/\s/g, "");
-              _this105.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
+              _this108.removespace = _this108.Lookingpostcode.replace(/\s/g, "");
+              _this108.listing = _this108.Lookingpostcode.replace(/\s/g, "");
+              _this108.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this105.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this105.PropertyType && _this105.maxAmount >= _this105.MinAmount.replace(/,/g, "") && _this105.maxAmount <= _this105.MaxAmount.replace(/,/g, "")) {
-                _this105.matchedProperties.push({
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this108.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this108.PropertyType && _this108.maxAmount >= _this108.MinAmount.replace(/,/g, "") && _this108.maxAmount <= _this108.MaxAmount.replace(/,/g, "")) {
+                _this108.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id
                 }); //Use this object to populate html
@@ -18761,59 +18820,59 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (item.data().Lookingpostcode == _this105.Lookingpostcode && _this105.maxAmount != _this105.MinAmount.replace(/,/g, "") && _this105.maxAmount != _this105.MaxAmount.replace(/,/g, "") && _this105.maxAmount < _this105.MinAmount.replace(/,/g, "") && _this105.maxAmount < _this105.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this105.PropertyType && _this105.more >= _this105.MinAmount.replace(/,/g, "")) {
-                  _this105.prceMathLogic.push({
+              else if (item.data().Lookingpostcode == _this108.Lookingpostcode && _this108.maxAmount != _this108.MinAmount.replace(/,/g, "") && _this108.maxAmount != _this108.MaxAmount.replace(/,/g, "") && _this108.maxAmount < _this108.MinAmount.replace(/,/g, "") && _this108.maxAmount < _this108.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this108.PropertyType && _this108.more >= _this108.MinAmount.replace(/,/g, "")) {
+                  _this108.prceMathLogic.push({
                     detail: item.data(),
                     propertyId: item.id
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this105.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this105.PropertyType && _this105.maxAmount >= _this105.MinAmount.replace(/,/g, "") && _this105.maxAmount <= _this105.MaxAmount.replace(/,/g, "") && _this105.removespace.substring(0, 3) == _this105.listing.substring(0, 3)) {
-                    _this105.settwo.push({
+                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this108.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this108.PropertyType && _this108.maxAmount >= _this108.MinAmount.replace(/,/g, "") && _this108.maxAmount <= _this108.MaxAmount.replace(/,/g, "") && _this108.removespace.substring(0, 3) == _this108.listing.substring(0, 3)) {
+                    _this108.settwo.push({
                       detail: item.data(),
                       propertyId: item.id
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (item.data().Lookingpostcode != _this105.Lookingpostcode && item.data().PropertyType == _this105.PropertyType && _this105.more <= _this105.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                      _this105.distanceInKm = _this105.getDistanceFromLatLonInKm(_this105.latitude, _this105.longitude, item.data().latitude, item.data().longitude);
+                  else if (item.data().Lookingpostcode != _this108.Lookingpostcode && item.data().PropertyType == _this108.PropertyType && _this108.more <= _this108.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                      _this108.distanceInKm = _this108.getDistanceFromLatLonInKm(_this108.latitude, _this108.longitude, item.data().latitude, item.data().longitude);
 
-                      _this105.unmatchedProperties.push({
+                      _this108.unmatchedProperties.push({
                         detail: item.data(),
                         propertyId: item.id,
-                        distance: _this105.distanceInKm
+                        distance: _this108.distanceInKm
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (item.data().Lookingpostcode != _this105.Lookingpostcode && item.data().PropertyType == _this105.PropertyType && _this105.less >= _this105.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                        _this105.distanceInKm = _this105.getDistanceFromLatLonInKm(_this105.latitude, _this105.longitude, item.data().latitude, item.data().longitude);
+                    else if (item.data().Lookingpostcode != _this108.Lookingpostcode && item.data().PropertyType == _this108.PropertyType && _this108.less >= _this108.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                        _this108.distanceInKm = _this108.getDistanceFromLatLonInKm(_this108.latitude, _this108.longitude, item.data().latitude, item.data().longitude);
 
-                        _this105.unmatchedPriceLogic.push({
+                        _this108.unmatchedPriceLogic.push({
                           detail: item.data(),
                           propertyId: item.id,
-                          distance: _this105.distanceInKm
+                          distance: _this108.distanceInKm
                         });
 
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (item.data().Lookingpostcode != _this105.Lookingpostcode && item.data().PropertyType != _this105.PropertyType && item.data().LookingTown == _this105.LookingTown && item.data().latitude && item.data().longitude) {
-                          _this105.distanceInKm = _this105.getDistanceFromLatLonInKm(_this105.latitude, _this105.longitude, item.data().latitude, item.data().longitude);
-                          console.log(_this105.latitude + _this105.longitude);
+                      else if (item.data().Lookingpostcode != _this108.Lookingpostcode && item.data().PropertyType != _this108.PropertyType && item.data().LookingTown == _this108.LookingTown && item.data().latitude && item.data().longitude) {
+                          _this108.distanceInKm = _this108.getDistanceFromLatLonInKm(_this108.latitude, _this108.longitude, item.data().latitude, item.data().longitude);
+                          console.log(_this108.latitude + _this108.longitude);
 
-                          _this105.lookTown.push({
+                          _this108.lookTown.push({
                             detail: item.data(),
                             propertyId: item.id,
-                            distance: _this105.distanceInKm
+                            distance: _this108.distanceInKm
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this105.unmatchedProperties.sort(_this105.compare);
+            _this108.unmatchedProperties.sort(_this108.compare);
           });
           this.getExpressedListingIds();
         }
@@ -18909,15 +18968,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this106 = this;
+          var _this109 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this106.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this106.distinctExpressedUid.push(item.data().propertyId);
+              if (_this109.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this109.distinctExpressedUid.push(item.data().propertyId);
               }
             });
-            console.log(_this106.distinctExpressedUid);
+            console.log(_this109.distinctExpressedUid);
           });
         }
       }, {
@@ -19158,19 +19217,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this107 = this;
+          var _this110 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this107.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this107.userData));
+              _this110.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this110.userData));
 
-              _this107.LoggedIn();
+              _this110.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this107.LoggedOut();
+              _this110.LoggedOut();
             }
           });
         }
@@ -19189,53 +19248,53 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this108 = this;
+          var _this111 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this108.user.Lastseen = _this108.now;
-            _this108.return = _this108.FormService.createUserTime(_this108.user).then(function (data) {});
-            _this108.isLoading = false;
+            _this111.user.Lastseen = _this111.now;
+            _this111.return = _this111.FormService.createUserTime(_this111.user).then(function (data) {});
+            _this111.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this109 = this;
+          var _this112 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this109.user.Lastseen = _this109.now;
-            _this109.return = _this109.FormService.createUserTime(_this109.user).then(function (data) {});
-            _this109.isLoading = false;
+            _this112.user.Lastseen = _this112.now;
+            _this112.return = _this112.FormService.createUserTime(_this112.user).then(function (data) {});
+            _this112.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this110 = this;
+          var _this113 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this110.user.Lastseen = _this110.now;
-            _this110.return = _this110.FormService.createUserTime(_this110.user).then(function (data) {});
-            _this110.isLoading = false;
+            _this113.user.Lastseen = _this113.now;
+            _this113.return = _this113.FormService.createUserTime(_this113.user).then(function (data) {});
+            _this113.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this111 = this;
+          var _this114 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this111.isLoading = false;
-            _this111.user.Lastseen = _this111.now;
-            _this111.return = _this111.FormService.createUserTime(_this111.user).then(function (data) {});
-            _this111.isLoading = false;
+            _this114.isLoading = false;
+            _this114.user.Lastseen = _this114.now;
+            _this114.return = _this114.FormService.createUserTime(_this114.user).then(function (data) {});
+            _this114.isLoading = false;
           });
         }
       }, {
@@ -19257,18 +19316,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this112 = this;
+          var _this115 = this;
 
           console.log(displayName);
           this.overlay = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this112.isLoading = false;
-            _this112.user.Name = displayName;
-            _this112.user.DOB = null;
-            _this112.user.Phone = null;
-            _this112.return = _this112.FormService.createUserCustomer(_this112.user).then(function (data) {
-              _this112.user.Lastseen = _this112.now;
-              _this112.return = _this112.FormService.createUserTime(_this112.user).then(function (data) {});
+            _this115.isLoading = false;
+            _this115.user.Name = displayName;
+            _this115.user.DOB = null;
+            _this115.user.Phone = null;
+            _this115.return = _this115.FormService.createUserCustomer(_this115.user).then(function (data) {
+              _this115.user.Lastseen = _this115.now;
+              _this115.return = _this115.FormService.createUserTime(_this115.user).then(function (data) {});
               console.log(data);
             });
           });
