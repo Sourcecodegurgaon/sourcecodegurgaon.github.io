@@ -281,7 +281,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isSellerSelected\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n<div class=\"property-selected-detail-background\">\n<div class=\"container property-detail-container\">\n  <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3>\n  <div class=\"wrapper-detail-container\">\n    <div id=\"demo\">\n      <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n    </div>\n\n\n    <div class=\"streetname\">\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Buyer Price Range</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">&pound;{{MinAmount}} - &pound;{{PriceRange}}</mat-card-subtitle>\n      </mat-card>\n      \n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Post Code</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n      </mat-card>\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Street Name</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{LookingStreetname}}</mat-card-subtitle>\n      </mat-card>\n\n\n   <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Buying Position</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\n      </mat-card>\n\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Financial Position</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{FinancialPosition}}</mat-card-subtitle>\n      </mat-card>\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PropertyType}}</mat-card-subtitle>\n      </mat-card>\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bedrooms</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Roomsmax}}</mat-card-subtitle>\n      </mat-card>\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ownership}}</mat-card-subtitle>\n      </mat-card>\n      \n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\n      </mat-card>\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bathrooms</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Maxbathroom}} </mat-card-subtitle>\n      </mat-card>\n\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Reception Rooms</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Maxreception}}</mat-card-subtitle>\n      </mat-card>\n\n\n      <!-- <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Features</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{features}}</mat-card-subtitle>\n      </mat-card> -->\n    </div>\n    <div class=\"selected-button m-3\">\n      <button mat-raised-button color=\"primary\" (click)=\"backClicked()\">Back</button>\n      <button mat-raised-button color=\"primary\"(click)=\"Overlayopen()\" *ngIf=\"express\" >Express Interest</button>\n      <!-- <button mat-raised-button color=\"primary\"(click)=\"Disablebutton\" *ngIf=\"datastored\">You have</button> -->\n    </div>\n  </div>\n</div>\n\n</div>\n\n<div class=\"continue-form\" *ngIf=\"overlay\">\n\n  <div class=\"continue-form-data\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\">Thank you  for expressing</p>\n\n    <p class=\"overlay-text-third\">interest in this buyers Nestimate.Please Sit back while we notify the buyer and await their rsponse.If they confirm their interest  you will be required to select a local estate agent who will contact both parties and start the process </p>\n  </div>\n  <div class=\"continue-button\">\n\n    <div class=\"continue-button-container\" (click)=\"submitForm()\">\n      OK\n    </div> \n <div class=\"continue-button mt-2\" (click)=\"continueClose()\">\n    \n    <div class=\"continue-button-container\">\n      CANCEL\n    </div> \n  </div>\n</div>\n\n</div>\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isSellerSelected\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n<div class=\"property-selected-detail-background\">\n<div class=\"container property-detail-container\">\n  <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3>\n  <div class=\"wrapper-detail-container\">\n    <div id=\"demo\">\n      <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n    </div>\n\n\n    <div class=\"streetname\">\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Buyer Price Range</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">&pound;{{MinAmount}} - &pound;{{PriceRange}}</mat-card-subtitle>\n      </mat-card>\n      \n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Post Code</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n      </mat-card>\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Street Name</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{LookingStreetname}}</mat-card-subtitle>\n      </mat-card>\n\n\n   <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Buying Position</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\n      </mat-card>\n\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Financial Position</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{FinancialPosition}}</mat-card-subtitle>\n      </mat-card>\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PropertyType}}</mat-card-subtitle>\n      </mat-card>\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bedrooms</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Roomsmax}}</mat-card-subtitle>\n      </mat-card>\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ownership}}</mat-card-subtitle>\n      </mat-card>\n      \n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\n      </mat-card>\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Bathrooms</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Maxbathroom}} </mat-card-subtitle>\n      </mat-card>\n\n\n      <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">No of Reception Rooms</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Maxreception}}</mat-card-subtitle>\n      </mat-card>\n\n\n      <!-- <mat-card class=\"Mat-card-div\">\n        <mat-card-title class=\"details-p-headings heading-nestimate\">Property Features</mat-card-title>\n        <mat-card-subtitle class=\"details-output-p paragraph-color\">{{features}}</mat-card-subtitle>\n      </mat-card> -->\n    </div>\n    <div class=\"selected-button m-3\">\n      <button mat-raised-button color=\"primary\" (click)=\"backClicked()\">Back</button>\n      <button mat-raised-button color=\"primary\"(click)=\"Overlayopen()\" *ngIf=\"expressed=='false'\" >Express Interest</button>\n      <!-- <button mat-raised-button color=\"primary\"(click)=\"Disablebutton\" *ngIf=\"datastored\">You have</button> -->\n    </div>\n  </div>\n</div>\n\n</div>\n\n<div class=\"continue-form\" *ngIf=\"overlay\">\n\n  <div class=\"continue-form-data\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\">Thank you  for expressing</p>\n\n    <p class=\"overlay-text-third\">interest in this buyers Nestimate.Please Sit back while we notify the buyer and await their rsponse.If they confirm their interest  you will be required to select a local estate agent who will contact both parties and start the process </p>\n  </div>\n  <div class=\"continue-button\">\n\n    <div class=\"continue-button-container\" (click)=\"submitForm()\">\n      OK\n    </div> \n <div class=\"continue-button mt-2\" (click)=\"continueClose()\">\n    \n    <div class=\"continue-button-container\">\n      CANCEL\n    </div> \n  </div>\n</div>\n\n</div>\n";
     /***/
   },
 
@@ -362,6 +362,26 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
     __webpack_exports__["default"] = "<mat-dialog-content>\n  Thanks Your details has been submitted \n\n</mat-dialog-content>\n<mat-dialog-actions align=\"center\">\n  <button mat-raised-button color=\"primary\" mat-dialog-close tabindex=\"-1\"\n    routerLink=\"/editprofile\">{{cancelButtonText}}</button>\n</mat-dialog-actions>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/Home/clickhome/clickhome.component.html":
+  /*!***********************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/Home/clickhome/clickhome.component.html ***!
+    \***********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppHomeClickhomeClickhomeComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n\n  \n  \n  \n<div class=\"home_content_container\" >\n\n\n    <div class=\"slider\">\n      <img src=\"../../assets/Images/baby-touching-woman-s-face-1257110 (1).jpg\" alt=\"\"  class=\"slider-image\">\n  \n       <div class=\"text-over-image heading-nestimate\">Join <span class=\"light\">Free</span> Today!</div>\n     \n      </div>\n    \n  <div class=\"home-card-components\">\n  <mat-card class=\"radio-cn\">\n    <div class=\"custom-buttons\">\n      <p class=\"i-am\">I am</p>\n      <div class=\"upper-custom-button\">\n      \n      <div class=\"custom-button-first\" >\n        <label class=\"radio-container custom-text\">a home owner\n          <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n          <span class=\"checkmark\"></span>\n        </label>\n      </div>\n    \n      </div>\n  \n    <div class=\"upper-custom-button mt-2\">\n  \n      <div class=\"custom-button-first\" >\n        <label class=\"radio-container custom-text\">a home seeker\n          <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home2\">\n          <span class=\"checkmark\"></span>\n        </label>\n      \n      </div>\n    </div>\n        <div class=\"large-button mt-3\">\n        \n          <div class=\"create-nestimate\" (click)=\"homeradio()\">\n            <span class=\"text-create-nestimate mr-1\">Create Your</span>\n            <img src=\"../../assets/Images/Nestimatelogobutton.png\" class=\"button-image\" >\n          </div>\n        </div>\n    </div>\n  </mat-card>\n</div>\n<div class=\"home-card-components\">\n  <mat-card class=\"second-card\" >\n   <div class=\"image-over\">\n  \n     <img mat-card-image src=\"../../assets/Images/buyer.jpg\" class=\"buyer-jpg\">\n     <p class=\"text-over-image-second\">Introducing:a unique property platform</p>\n   </div>\n  \n    <mat-card-content>\n      <p class=\"text-center pt-2 pr-3 pl-3 home-text-font heading-nestimate\">\n        Create Your Nestimate free of any committment, to answer an immediate need or gently explore the possibilities of dreams\n      </p>\n  \n    </mat-card-content>\n  </mat-card>\n </div>   \n  \n  \n <div class=\"home-card-components\">\n  \n    <mat-card class=\"card-steps\" >\n      <mat-card-title class=\"title heading-nestimate heading-nestimate-font\">How does Nestimate work ?</mat-card-title>\n  \n        <div class=\"steps-container\">\n  \n             <div class=\"step\">\n              <img src=\"../../assets/Images/firststep1.png\" class=\"step-mage\">\n          \n              <p class=\"step-text \"><b class=\"outputText\">1.Create your Nestimate </b><br> <span class=\"slider-text  heading-nestimate\">Open a world of possibilities! Create Nestimates on our platform by defining your home requirements through our simple online questionnaire.</span></p>\n  \n             </div>\n  \n             <div class=\"step\">\n              <img src=\"/assets/Images/secondstep.png\" class=\"step-mage\">\n           \n              <p class=\"step-text\"><b class=\"outputText\">2.Review matched Nestimates</b><br><span class=\"slider-text heading-nestimate\">If you are a home owner, our unique algorithm will match you with the most relevant Nestimates by home seekers.\n              </span></p>\n              \n              \n              <p class=\"slider-text heading-nestimate\">If you are a home seeker we will match you with Nestimates created by home owners, who may not be actively on the market but might consider selling or renting their property if the right offer came along. .</p>\n        </div>\n  \n  \n             <div class=\"step\">\n              <img src=\"/assets/Images/thirdstep.png\" class=\"step-mage\">\n          \n              <p class=\"step-text\"><b class=\"outputText\">3.Express Interest</b><br><span class=\"slider-text heading-nestimate\">Should you want to take things further, you can express interest on matched Nestimates. If the match is mutually agreed, a local estate agent of your choice will sort out the formalities.</span></p>\n             </div>\n        </div>\n    </mat-card>\n  </div>\n  \n  \n  \n  </div>\n  \n  \n  <div  class=\"agent-form\" >\n    <button type=\"button\" class=\"btn btn-primary\" routerLink=\"/agentSignup\">Agent</button>\n  </div>\n  \n  <div class=\"cookies-policy\" *ngIf=\"cookie\"> \n  <div class=\"cookies-policy-text\">\n  <div class=\"policy-heading outputText\">\n  \n    <p clas=\"policy-heading \">Cookie Policy</p>\n    <!-- <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"closeCookie()\"> -->\n  </div>\n  \n    <div class=\"policy-content outputText\">\n      <p>We use cookies to provide you with a better service. Continue browsing if you are happy with this, otherwise you can find out how to manage cookies here.</p>\n    </div>\n  \n    <div class=\"cookies-button\">\n   \n      <div class=\"top-button-cookies\" routerLink=\"/cookies\">Manage Settings</div>\n  \n      <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\">Allow all Cookies</div>\n  \n    </div>\n  </div>\n  \n  </div>";
     /***/
   },
 
@@ -641,7 +661,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"property-selected-detail-background\">\n  <div class=\"container property-detail-container\">\n    <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n    <div class=\"wrapper-detail-container\">\n      <div id=\"demo\">\n        <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n      </div>\n  \n  \n      <div class=\"streetname\">\n\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Price Range</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\"> &pound;{{MaxAmount}}</mat-card-subtitle>\n        </mat-card>\n\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n        </mat-card>\n        \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">County</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Address</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{LookingAddress}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n     <mat-card class=\"Mat-card-div\">\n      <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\n      <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{ownership}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PropertyType}}</mat-card-subtitle>\n        </mat-card>\n    \n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ownership}}</mat-card-subtitle>\n        </mat-card>\n        \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Applicable Feature</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{features}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n  \n      </div>\n      <div class=\"selected-button m-3\">\n      \n        <button mat-stroked-button disabled  *ngIf=\"matchStatus=='confirmed'\">Confirmed</button>\n\n        <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true' && matchStatus!='confirmed'\" disabled>Expressed</button>\n        <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false' && matchStatus!='confirmed'\" (click)=\"addToExpressCollection()\" >Confirm  Interest</button>\n        <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n      </div>\n    </div>\n  </div>\n  \n  </div>\n\n\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"property-selected-detail-background\">\n  <div class=\"container property-detail-container\">\n    <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n    <div class=\"wrapper-detail-container\">\n      <div id=\"demo\">\n        <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n      </div>\n  \n  \n      <div class=\"streetname\">\n\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Price Range</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\"> &pound;{{MaxAmount}}</mat-card-subtitle>\n        </mat-card>\n\n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n        </mat-card>\n        \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">County</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{Lookingstate}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Address</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{LookingAddress}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n     <mat-card class=\"Mat-card-div\">\n      <mat-card-title class=\"details-p-headings heading-nestimate\">Property Condition</mat-card-title>\n      <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyCondition}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{ownership}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{PropertyType}}</mat-card-subtitle>\n        </mat-card>\n    \n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Ownership</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ownership}}</mat-card-subtitle>\n        </mat-card>\n        \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Property Type</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{PropertyType}}</mat-card-subtitle>\n        </mat-card>\n  \n        <mat-card class=\"Mat-card-div\">\n          <mat-card-title class=\"details-p-headings heading-nestimate\">Applicable Feature</mat-card-title>\n          <mat-card-subtitle class=\"details-output-p outputText\">{{features}}</mat-card-subtitle>\n        </mat-card>\n  \n  \n  \n      </div>\n      <div class=\"selected-button m-3\">\n      \n        <button mat-stroked-button disabled  *ngIf=\"matchStatus=='confirmed'\">Confirmed</button>\n\n        <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true' && matchStatus!='confirmed'\" disabled>Expressed</button>\n        <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false' && matchStatus!='confirmed'\"  (click)=\"connfirmOverLay()\">Confirm  Interest</button>\n        <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n      </div>\n    </div>\n  </div>\n  \n  </div>\n\n\n  <div class=\"continue-form\" *ngIf=\"overLay\">\n\n    <div class=\"continue-form-data\">\n      <div class=\"nestimate-logo\">\n        <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n\n      </div>\n      <div class=\"continue-text\">\n        <p class=\"overlay-text\">Thank you for confirming interest.We will process and send your details to an agent if both parties confirm interest.</p>\n\n        <p class=\"overlay-text\">By clicking continue you giving us consent to send details to an agent.</p>\n\n      </div>\n      <div class=\"continue-button\" (click)=\"submitForm()\">\n        <div class=\"new-buttons-dark-continue\" (click)=\"addToExpressCollection()\">\n          Continue \t<span class=\"greater-sign\">&gt;</span>\n        </div>\n    \n        <div class=\"new-buttons-dark-continue\" (click)=\"backOverlay()\">\n          <span class=\"lessthan-sign\">&lt;</span>  Back\t\n        </div>\n    \n      </div>\n    </div>\n\n    </div>";
     /***/
   },
 
@@ -721,7 +741,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"property-selected-detail-background\">\n    <div class=\"container property-detail-container\">\n      <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n      <div class=\"wrapper-detail-container\">\n        <div id=\"demo\">\n          <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n        </div>\n    \n    \n        <div class=\"streetname\">\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Desired Price</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">&pound;{{MinAmount}}-&pound;{{MaxAmount}}</mat-card-subtitle>\n          </mat-card>\n        \n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Type}}</mat-card-subtitle>\n          </mat-card>\n    \n          <!-- <mat-card class=\"Mat-card-div\" *ngIf= \"ChainStatus != \" \">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">ChainStatus</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ChainStatus}}</mat-card-subtitle>\n            \n          </mat-card> -->\n  \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Conditions</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\n            \n          </mat-card>\n  \n          \n          <!-- <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">SearchRadius</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{SearchRadius}}</mat-card-subtitle>\n            \n          </mat-card> -->\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Position</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\n     \n          </mat-card>\n          \n        \n        </div>\n        <div class=\"selected-button m-3\">\n   \n          <button mat-stroked-button disabled  *ngIf=\"matchStatus=='confirmed'\">Confirmed</button>\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true'\" disabled>Expressed</button>\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false'\" routerLink=\"/selectAgent/{{Lookingpostcode}}/{{ChainStatus}}/{{Conditions}}/{{SearchRadius}}/{{Position}}/{{MinAmount}}/{{MaxAmount}}/{{Type}}/{{propertyId}}/{{UserId}}\" (click)=\"addToExpressCollection()\">Confirm  Interest</button>\n          <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n        </div>\n      </div>\n    </div>  \n    </div>\n    \n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n    <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n  </div>\n  \n  <div class=\"property-selected-detail-background\">\n    <div class=\"container property-detail-container\">\n      <!-- <h3 class=\"property-detail-h3 heading-nestimate\">{{title}} {{unNamed | shortName}}</h3> -->\n      <div class=\"wrapper-detail-container\">\n        <div id=\"demo\">\n          <img  src=\"assets/Images/single-nestimate.jpg\" class=\"match-images\">\n        </div>\n    \n    \n        <div class=\"streetname\">\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Pincode</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Lookingpostcode}}</mat-card-subtitle>\n          </mat-card>\n          \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Desired Price</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p outputText\">&pound;{{MinAmount}}-&pound;{{MaxAmount}}</mat-card-subtitle>\n          </mat-card>\n        \n    \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Property type</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Type}}</mat-card-subtitle>\n          </mat-card>\n    \n          <!-- <mat-card class=\"Mat-card-div\" *ngIf= \"ChainStatus != \" \">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">ChainStatus</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{ChainStatus}}</mat-card-subtitle>\n            \n          </mat-card> -->\n  \n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Conditions</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Conditions}}</mat-card-subtitle>\n            \n          </mat-card>\n  \n          \n          <!-- <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">SearchRadius</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{SearchRadius}}</mat-card-subtitle>\n            \n          </mat-card> -->\n          <mat-card class=\"Mat-card-div\">\n            <mat-card-title class=\"details-p-headings heading-nestimate\">Position</mat-card-title>\n            <mat-card-subtitle class=\"details-output-p paragraph-color\">{{Position}}</mat-card-subtitle>\n     \n          </mat-card>\n          \n        \n        </div>\n        <div class=\"selected-button m-3\">\n   \n          <button mat-stroked-button disabled  *ngIf=\"matchStatus=='confirmed'\">Confirmed</button>\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='true'\" disabled>Expressed</button>\n          <button mat-raised-button color=\"primary\" *ngIf=\"expressed=='false'\" (click)=\"connfirmOverLay()\" >Confirm  Interest</button>\n          <button mat-raised-button color=\"primary\"  (click)=\"backClicked()\">Back</button>\n        </div>\n      </div>\n    </div>  \n    </div>\n    \n\n    <div class=\"continue-form\" *ngIf=\"overLay\">\n\n      <div class=\"continue-form-data\">\n        <div class=\"nestimate-logo\">\n          <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n  \n        </div>\n        <div class=\"continue-text\">\n          <p class=\"overlay-text\">Thank you for confirming interest.We will process and send your details to an agent if both parties confirm interest.</p>\n  \n          <p class=\"overlay-text\">By clicking continue you giving us consent to send details to an agent.</p>\n  \n        </div>\n        <div class=\"continue-button\" (click)=\"submitForm()\">\n          <div class=\"new-buttons-dark-continue\" routerLink=\"/selectAgent/{{Lookingpostcode}}/{{ChainStatus}}/{{Conditions}}/{{SearchRadius}}/{{Position}}/{{MinAmount}}/{{MaxAmount}}/{{Type}}/{{propertyId}}/{{UserId}}\" (click)=\"addToExpressCollection()\" >\n            Continue \t<span class=\"greater-sign\">&gt;</span>\n          </div>\n      \n          <div class=\"new-buttons-dark-continue\" (click)=\"backOverlay()\">\n            <span class=\"lessthan-sign\">&lt;</span>  Back\t\n          </div>\n      \n        </div>\n      </div>\n  \n      </div>\n";
     /***/
   },
 
@@ -801,7 +821,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\n  <div class=\"login-button-main\">\n\n    <p class=\"Login-buton-text\">Log In</p>\n  </div>\n</div>\n\n\n<div class=\"mobile-wrapper\">\n  <div class=\"mobile-container\">\n    <div class=\"content\">\n\n      <nav>\n        <div class=\"main-navigation-bar\">\n          <div class=\"menu-toogle\">\n            <img src=\"../../../assets/Images/menu.svg\" class=\"icon-size\" *ngIf=\"open\" (click)=\"openMenu()\">\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"close\" (click)=\"closeMenu()\">\n          </div>\n\n          <div class=\"plus-icon\">\n        \n        <img src=\"../../../assets/Images/add-outline.svg\" class=\"icon-size\" (click)=\"plusmenu()\"\n              *ngIf=\"plusOpenMenu\">\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"plusclose\"\n              (click)=\"plusCloseMenu()\"> \n\n          </div>\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" (click)=\"closeMenu()\" />\n          </div>\n\n          <div class=\"notification-upper\"  >\n            <div class=\"notification-upper\" *ngIf=\"isLoggedIn\">\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size new\"  *ngIf=\"!bellicontwo\" (click)=\"bellone()\"  >\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size\"  *ngIf=\"bellicontwo\" (click)=\"belltwo()\">\n          <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\">{{notifications}}</span> \n\n\n            </div>\n          </div>\n          <div class=\"logout\">\n            <div class=\"logout-icon\" *ngIf=\"!isLoggedIn\" (click)=\" openLogIn()\">\n              <img src=\"../../../assets/Images/person-outline.svg\" class=\"icon-size\">\n              <span class=\"log-out-text heading-nestimate\">LogIn</span>\n            </div>\n            <div class=\"logout-icon\" *ngIf=\"isLoggedIn\">\n              <img src=\"../../../assets/Images/person.svg\" class=\"icon-size\" (click)=\"authService.SignOut()\">\n              <span class=\"log-out-text heading-nestimate\">Logout</span>\n            </div>\n          </div>\n        </div>\n        <div class=\"nav-div\" *ngIf=\"menuItem\">\n          <div class=\"menu-login\">\n          <app-template></app-template>\n        </div>\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\" (click)=\"Itemmenu()\">\n            <!-- <div class=\"grid-container\" routerLink=\"/\">\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\n              <div>\n                <li>\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div> -->\n            <div class=\"grid-container\" routerLink=\"/editprofile\">\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\n              <div>\n                <li>\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">Edit Profile</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n            <div class=\"grid-container\" routerLink=\"/myListing\">\n              <div>\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\n              </div>\n              <div>\n                <li>\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Nestimates</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\n              <div>\n                <img src=\"assets/Images/download-removebg-preview.png\" />\n              </div>\n              <div>\n                <li>\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">Activity</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n          </ul>\n        </div>\n      </nav>\n    </div>\n  </div>\n</div>\n\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\n</div>\n\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\n  <div class=\"nav-login\">\n  <div *ngIf=\"isLoading\" class=\"loading-container\">\n      <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n    </div>\n    <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n      <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\n        <div class=\"user-cross\">\n          <h4 class=\"heading-nestimate\">Login</h4>\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\n        </div>\n        <div class=\"social-button mt-4\">\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n            Facebook\n          </button>\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\n            Google+\n          </button>\n        </div>\n        <div class=\"input-group mb-3 mt-3\"></div>\n        <form (keydown.enter)=\"save()\">\n\n          <div class=\"form-group has-search\">\n            <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n          </div>\n\n          <div class=\"form-group has-search\">\n            <span class=\"fa fa-lock form-control-feedback\"></span>\n            <input type=\"password\" class=\"form-control custom-field\" name=\"passs\" #userPasswordLogin type=\"password\"\n              [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n          </div>\n        </form>\n        <div class=\"input-group-prepend other-option\">\n          <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n        </div>\n        <button type=\"button\" class=\"btn btn-social-login\"\n          (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\n          Login\n        </button>\n        <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\" (click)=\"NewUser()\">Don't have an\n          account?<span class=\"hyper outputText\">Sign up</span></p>\n      </mat-card>\n      <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\n\n        <div class=\"sign-up\">\n          <div class=\"signup-heading\">\n            <div class=\"user-cross\">\n              <h4 class=\"heading-nestimate\">Sign up</h4>\n              <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\n            </div>\n          </div>\n          <div class=\"social-button mt-2\">\n            <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n              Facebook\n            </button>\n            <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\n              Google+\n            </button>\n          </div>\n          <div class=\"input-group mb-3 mt-3\">\n            <form (keydown)=\"keyDownFunction($event)\">\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-user-circle-o form-control-feedback\"></span>\n                <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\"\n                  [(ngModel)]=\"name\" #displayName>\n              </div>\n\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n                <input class=\"form-control custom-field\" type=\"email\" placeholder=\"Email\" #userEmailRegister\n                  type=\"email\" name=\"email\" [(ngModel)]=\"email\">\n              </div>\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-lock form-control-feedback\"></span>\n                <input class=\"form-control custom-field\" placeholder=\"Password\" #userPasswordRegister type=\"password\"\n                  name=\"password\" [(ngModel)]=\"password\">\n              </div>\n            </form>\n          </div>\n          <section class=\"example-section property-con-form\">\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n            <p class=\"heading-nestimate m-0 \">By clicking the sms box,you agreeing to recieve\"</p>\n            <p for=\"text\" class=\"heading-nestimate policy\">By clicking below to register, you confirm that you agree to\n              our<span routerLink=\"/terms\"> Terms & Conditions </span>and you have read and understood our <span\n                routerLink=\"/PrivacyPolicy\">Privacy Policy</span> </p>\n          </section>\n          <button type=\"button\" class=\"btn btn-social-login\"\n            (click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\n            Sign Up\n          </button>\n          <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account?\n            <span class=\"hyper outputText\">Sign In</span></p>\n        </div>\n\n      </mat-card>\n    </div> \n\n\n  </div>\n</div>\n\n\n<div *ngIf=\"notificationoverlay\">\n  <div class=\"main-grid-notifucation\">\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterests\" >\n    \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n    <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n     </div>\n     <div class=\"text heading-nestimate\" >\n    A Buyer expressed insterest on your Nestimate.Click to review<br>\n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n\n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n    </div>\n    \n    \n    \n    \n    \n    </div>\n    \n    \n    <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n      <div class=\"notification-icon\" >\n    <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\" >\n    A Buyer expressed insterest on your Nestimate.Click to review<br>\n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n\n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n      \n    </div>\n    \n    \n    \n    \n    \n    </div>\n    \n      \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n      <div class=\"notification-icon\" >\n  <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n   </div>\n   <div class=\"text heading-nestimate\" >\n  A Buyer expressed insterest on your Nestimate.Click to review<br>\n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n\n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n  </div>\n  \n  \n  \n  \n  \n  </div>\n  \n  \n  <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n  <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n  </div>\n  <div class=\"text heading-nestimate\" >\n  A Buyer expressed insterest on your Nestimate.Click to review<br>\n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n\n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n  </div>\n  \n  \n  \n  \n  \n  </div>\n  \n    \n       \n        <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n            A Buyer confirmed insterest on your Nestimate.Click Review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n        \n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n       </div>\n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n            A Buyer confirmed insterest on your Nestimate.Click Review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n        \n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n       </div>\n    \n    \n    \n       \n       <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n       <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n       A seller expressed interest on your Nestimate.Click to Review<br>\n       \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n  \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n    \n       </div> \n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n       <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n       A seller expressed interest on your Nestimate.Click to Review<br>\n       \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n  \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n    \n       </div> \n    \n    \n    \n        <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity' &&  confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n    \n            A Seller confirmed interest on your Nestimate.Click to review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n        \n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n       </div>\n    \n    \n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity'  &&  confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate \">\n    \n            A Seller confirmed interest on your Nestimate.Click to review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n        \n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n       </div>\n    </div>\n    </div>\n  <!-- <app-notification (click)=\"closenotifiation()\"></app-notification> -->\n</div>";
+    __webpack_exports__["default"] = "<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\n  <div class=\"login-button-main\">\n\n    <p class=\"Login-buton-text\">Log In</p>\n  </div>\n</div>\n\n\n<div class=\"mobile-wrapper\">\n  <div class=\"mobile-container\">\n    <div class=\"content\">\n\n      <nav>\n        <div class=\"main-navigation-bar\">\n          <div class=\"menu-toogle\">\n            <img src=\"../../../assets/Images/menu.svg\" class=\"icon-size\" *ngIf=\"open\" (click)=\"openMenu()\">\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"close\" (click)=\"closeMenu()\">\n          </div>\n\n          <div class=\"plus-icon\">\n            <img src=\"../../../assets/Images/home.svg\" class=\"icon-size\" routerLink=\"/homenew\" *ngIf=\"isLoggedIn\">\n            \n<!--          \n        <img src=\"../../../assets/Images/add-outline.svg\" class=\"icon-size\" (click)=\"plusmenu()\"\n              *ngIf=\"plusOpenMenu\">\n            <img src=\"../../../assets/Images/close-outline.svg\" class=\"icon-size\" *ngIf=\"plusclose\"\n              (click)=\"plusCloseMenu()\">  -->\n\n          </div>\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" (click)=\"closeMenu()\" />\n          </div>\n\n          <div class=\"notification-upper\"  >\n            <div class=\"notification-upper\" *ngIf=\"isLoggedIn\">\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size new\"  *ngIf=\"!bellicontwo\" (click)=\"bellone()\"  >\n              <img src=\"../../../assets/Images/notifications.svg\" class=\"icon-size\"  *ngIf=\"bellicontwo\" (click)=\"belltwo()\">\n          <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\">{{notifications}}</span> \n\n\n            </div>\n          </div>\n          <div class=\"logout\">\n            <div class=\"logout-icon\" *ngIf=\"!isLoggedIn\" (click)=\" openLogIn()\">\n              <img src=\"../../../assets/Images/person-outline.svg\" class=\"icon-size\">\n              <span class=\"log-out-text heading-nestimate\">LogIn</span>\n            </div>\n            <div class=\"logout-icon\" *ngIf=\"isLoggedIn\">\n              <img src=\"../../../assets/Images/person.svg\" class=\"icon-size\" (click)=\"authService.SignOut()\">\n              <span class=\"log-out-text heading-nestimate\">Logout</span>\n            </div>\n          </div>\n        </div>\n        <div class=\"nav-div\" *ngIf=\"menuItem\">\n          <div class=\"menu-login\">\n          <app-template></app-template>\n        </div>\n          <ul class=\"nav-links\" *ngIf=\"isLoggedIn\" (click)=\"Itemmenu()\">\n            <!-- <div class=\"grid-container\" routerLink=\"/\">\n              <div><img src=\"assets/Images/homemenu.png\" class=\"home-menu-image\"></div>\n              <div>\n                <li>\n                  <a routerLink=\"/\" class=\"nav-links-text\">Home</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div> -->\n            <div class=\"grid-container\" routerLink=\"/editprofile\">\n              <div><img src=\"assets/Images/my-profile-icon-png-1.png\" /></div>\n              <div>\n                <li>\n                  <a routerLink=\"/profile\" class=\"nav-links-text\">Edit Profile</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n            <div class=\"grid-container\" routerLink=\"/myListing\">\n              <div>\n                <img src=\"assets/Images/135-512-removebg-preview.png\" />\n              </div>\n              <div>\n                <li>\n                  <a routerLink=\"/myListing\" class=\"nav-links-text\">My Nestimates</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n            <div class=\"grid-container\" routerLink=\"/mymatches\">\n              <div>\n                <img src=\"assets/Images/download-removebg-preview.png\" />\n              </div>\n              <div>\n                <li>\n                  <a routerLink=\"/mymatches\" class=\"nav-links-text\">Activity</a>\n                </li>\n              </div>\n              <div>\n                <img src=\"assets/Images/asset1.png\" class=\"nav-link-icon\" />\n              </div>\n            </div>\n          </ul>\n        </div>\n      </nav>\n    </div>\n  </div>\n</div>\n\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\n</div>\n\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\n  <div class=\"nav-login\">\n  <div *ngIf=\"isLoading\" class=\"loading-container\">\n      <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n    </div>\n    <div class=\"social-login text-center\" *ngIf=\"!isLoggedIn\">\n      <mat-card class=\"sign-in-main\" *ngIf=\"!newUser\">\n        <div class=\"user-cross\">\n          <h4 class=\"heading-nestimate\">Login</h4>\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\n        </div>\n        <div class=\"social-button mt-4\">\n          <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n            Facebook\n          </button>\n          <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleLogin()\">\n            Google+\n          </button>\n        </div>\n        <div class=\"input-group mb-3 mt-3\"></div>\n        <form (keydown.enter)=\"save()\">\n\n          <div class=\"form-group has-search\">\n            <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n          </div>\n\n          <div class=\"form-group has-search\">\n            <span class=\"fa fa-lock form-control-feedback\"></span>\n            <input type=\"password\" class=\"form-control custom-field\" name=\"passs\" #userPasswordLogin type=\"password\"\n              [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n          </div>\n        </form>\n        <div class=\"input-group-prepend other-option\">\n          <a href=\"#\" class=\"forgot-password\">Forgot password?</a>\n        </div>\n        <button type=\"button\" class=\"btn btn-social-login\"\n          (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\">\n          Login\n        </button>\n        <p class=\"dont-have-account pt-2 heading-nestimate\" id=\"#dont-have-account\" (click)=\"NewUser()\">Don't have an\n          account?<span class=\"hyper outputText\">Sign up</span></p>\n      </mat-card>\n      <mat-card class=\"mt-4 sign-up-main\" *ngIf=\"newUser\">\n\n        <div class=\"sign-up\">\n          <div class=\"signup-heading\">\n            <div class=\"user-cross\">\n              <h4 class=\"heading-nestimate\">Sign up</h4>\n              <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"newclose()\">\n            </div>\n          </div>\n          <div class=\"social-button mt-2\">\n            <button type=\"button\" class=\"btn btn-facebook \" (click)=\"facebookLogin()\">\n              Facebook\n            </button>\n            <button type=\"button\" class=\"btn btn-google ml-4\" (click)=\"googleSignup()\">\n              Google+\n            </button>\n          </div>\n          <div class=\"input-group mb-3 mt-3\">\n            <form (keydown)=\"keyDownFunction($event)\">\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-user-circle-o form-control-feedback\"></span>\n                <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\"\n                  [(ngModel)]=\"name\" #displayName>\n              </div>\n\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-envelope-o form-control-feedback\"></span>\n                <input class=\"form-control custom-field\" type=\"email\" placeholder=\"Email\" #userEmailRegister\n                  type=\"email\" name=\"email\" [(ngModel)]=\"email\">\n              </div>\n              <div class=\"form-group has-search\">\n                <span class=\"fa fa-lock form-control-feedback\"></span>\n                <input class=\"form-control custom-field\" placeholder=\"Password\" #userPasswordRegister type=\"password\"\n                  name=\"password\" [(ngModel)]=\"password\">\n              </div>\n            </form>\n          </div>\n          <section class=\"example-section property-con-form\">\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Email\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"SMS\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"Post\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin heading-nestimate\" value=\"All\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n            <p class=\"heading-nestimate m-0 \">By clicking the sms box,you agreeing to recieve\"</p>\n            <p for=\"text\" class=\"heading-nestimate policy\">By clicking below to register, you confirm that you agree to\n              our<span routerLink=\"/terms\"> Terms & Conditions </span>and you have read and understood our <span\n                routerLink=\"/PrivacyPolicy\">Privacy Policy</span> </p>\n          </section>\n          <button type=\"button\" class=\"btn btn-social-login\"\n            (click)=\"signUp(displayName.value,userEmailRegister.value,userPasswordRegister.value)\">\n            Sign Up\n          </button>\n          <p class=\"dont-have-account pt-2 heading-nestimate\" (click)=\"OldUser()\">Already have an account?\n            <span class=\"hyper outputText\">Sign In</span></p>\n        </div>\n\n      </mat-card>\n    </div> \n\n\n  </div>\n</div>\n\n\n<div *ngIf=\"notificationoverlay\">\n  <div class=\"main-grid-notifucation\">\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterests\" >\n    \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n    <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n     </div>\n     <div class=\"text heading-nestimate\" >\n    A Buyer expressed insterest on your Nestimate.Click to review<br>\n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n\n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n    </div>\n    \n    \n    \n    \n    \n    </div>\n    \n    \n    <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n      <div class=\"notification-icon\" >\n    <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n    </div>\n    <div class=\"text heading-nestimate\" >\n    A Buyer expressed insterest on your Nestimate.Click to review<br>\n    <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n\n     <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n      \n    </div>\n    \n    \n    \n    \n    \n    </div>\n    \n      \n    <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen == null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n      <div class=\"notification-icon\" >\n  <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n   </div>\n   <div class=\"text heading-nestimate\" >\n  A Buyer expressed insterest on your Nestimate.Click to review<br>\n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n\n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n  </div>\n  \n  \n  \n  \n  \n  </div>\n  \n  \n  <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n    <div class=\"notification-icon\" >\n  <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n  </div>\n  <div class=\"text heading-nestimate\" >\n  A Buyer expressed insterest on your Nestimate.Click to review<br>\n  <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n    {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n\n   <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n      {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n  </div>\n  \n  \n  \n  \n  \n  </div>\n  \n    \n       \n        <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n            A Buyer confirmed insterest on your Nestimate.Click Review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n        \n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n       </div>\n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Matches_Confirmed' && confirmInterest.Detail.Lastseen != null\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n            A Buyer confirmed insterest on your Nestimate.Click Review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n        \n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n       </div>\n    \n    \n    \n       \n       <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n       <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n       A seller expressed interest on your Nestimate.Click to Review<br>\n       \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n  \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n    \n       </div> \n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n       <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n       A seller expressed interest on your Nestimate.Click to Review<br>\n       \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n        {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n  \n       <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n          {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n    \n       </div> \n    \n    \n    \n        <div class=\"notification read-notfication\" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity' &&  confirmInterest.Detail.Lastseen == null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate\">\n    \n            A Seller confirmed interest on your Nestimate.Click to review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n        \n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n       </div>\n    \n    \n       <div class=\"notification \" *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity'  &&  confirmInterest.Detail.Lastseen != null\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\" >\n       <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text heading-nestimate \">\n    \n            A Seller confirmed interest on your Nestimate.Click to review<br>\n            <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) == (now | date)\">\n              {{confirmInterest.Detail.time.seconds * 1000 | date: 'shortTime'}}</span>\n        \n             <span class=\"timing-in-hours\" *ngIf=\"(confirmInterest.Detail.time.seconds * 1000 | date) != (now | date)\">\n                {{confirmInterest.Detail.time.seconds * 1000 | date:'medium'}} </span> \n       </div>\n       \n       </div>\n    </div>\n    </div>\n  <!-- <app-notification (click)=\"closenotifiation()\"></app-notification> -->\n</div>";
     /***/
   },
 
@@ -2007,6 +2027,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         value: function ngOnInit() {
           var _this = this;
 
+          this.Componame = this.constructor.name;
           this.user = JSON.parse(localStorage.getItem("user"));
 
           if (this.user != null) {
@@ -2034,6 +2055,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               _this.isLoggedIn = false;
             }
           });
+          console.log(this.constructor.name);
         }
       }, {
         key: "LoggedIn",
@@ -8209,6 +8231,299 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
   },
 
   /***/
+  "./src/app/Home/clickhome/clickhome.component.css":
+  /*!********************************************************!*\
+    !*** ./src/app/Home/clickhome/clickhome.component.css ***!
+    \********************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppHomeClickhomeClickhomeComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".back {\n    background-image: url(/assets/Images/home.jpeg);\n    width: 100%;\n    height: auto;\n    background-repeat: no-repeat;\n    background-size: cover;\n  }\n  .upper-back {\n    background-color: black;\n    width: 100%;\n    height: 250px;\n    opacity: 0.5;\n  }\n  .upper-button {\n    display: flex;\n    justify-content: space-around;\n    align-content: center;\n    z-index: 100;\n    position: relative;\n    top: -145px;\n  }\n  .home-button {\n    background-color:var(--light-blue-color);\n    color: white;\n    width: 35%;\n  }\n  .home-button-SELL\n  {\n    background-color: var(--DARK-BLUE-COLOR);\n    color: white;\n    width: 35%;\n  }\n  .home-text-font {\n   \n  \n    margin-bottom: 0.5rem;\n  }\n  .example-form {\n    min-width: 150px;\n    max-width: 500px;\n    width: 100%;\n  }\n  .example-full-width {\n    width: 100%;\n    border: none;\n  }\n  .loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n  .how_does_it_work_steps {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-between;\n  }\n  img.step-mage {\n    width: 33%;\n    margin: 14px;\n  }\n  p.step-text {\n    text-align: center;\n    color: var(--DARK-BLUE-COLOR)\n  }\n  .steps-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n  }\n  .step {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin: 1em 0px;\n  }\n  @media only screen and (min-width:768px)\n  {\n    .icon-size\n    {\n      width: 50% !important;\n    }\n  }\n  .cookies-policy {\n    background-color: RGB( 80 80 90);\n  position: absolute;\n    padding: 3px;\n    position: fixed;\n  bottom: 0px;\n  z-index: 1;\n  }\n  .policy-content {\n    margin: 13px;\n    text-align: justify;\n  }\n  .policy-heading {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 13px;\n  }\n  p\n  {\n    margin-bottom: 0px;\n  }\n  img.button-cross {\n    width: 17px;\n  }\n  .custom-button-first {\n    border: 2px solid  var(--light-blue-color);\n    padding: 8px;\n    border-radius: 5px;\n    width: 50%;\n    flex-direction: inherit;\n      display: flex;\n      justify-content: space-around;\n     \n  }\n  .blue-circle {\n    padding: 5px;\n    border: 2px solid var(--light-blue-color);\n    border-radius: 50%;\n    width: 17%;\n  }\n  .custom-text {\n    font-size: 16px;\n    font-family: 'Roboto-Bold';\n  }\n  .upper-custom-button {\n    display: flex;\n    justify-content: center;\n  }\n  .create-nestimate {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: center;\n    justify-content: center;\n    background-color:var(--DARK-BLUE-COLOR);\n    padding: 7px;\n    border-radius: 5px;\n    width: 90%;\n  }\n  img.button-image {\n    width: 50%;\n  }\n  .text-create-nestimate\n  {\n    color: white;\n  }\n  .large-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n  }\n  p.i-am {\n    /* text-align: center; */\n    width: 60%;\n    text-align: center;\n    margin-bottom: 5px;\n    font-family: 'Roboto-Bold';\n  }\n  .custom-button-first:hover\n  {\n    cursor: pointer;\n  }\n  .radio-container {\n    display: block;\n    position: relative;\n    padding-left: 35px;\n    cursor: pointer;\n    font-size: 15px;\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n  }\n  /* Hide the browser's default radio button */\n  .radio-container input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n  }\n  /* Create a custom radio button */\n  .checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 25px;\n    width: 25px;\n    border: 2px solid var(--light-blue-color);\n    border-radius: 50%;\n  }\n  /* On mouse-over, add a grey background color */\n  .radio-container:hover input ~ .checkmark {\n    background-color: #ccc;\n  }\n  /* When the radio button is checked, add a blue background */\n  .radio-container input:checked ~ .checkmark {\n    background-color: var(--DARK-BLUE-COLOR);\n  }\n  /* Create the indicator (the dot/circle - hidden when not checked) */\n  .checkmark:after {\n    content: \"\";\n    position: absolute;\n    display: none;\n  }\n  /* Show the indicator (dot/circle) when checked */\n  .radio-container input:checked ~ .checkmark:after {\n    display: block;\n  }\n  /* Style the indicator (dot/circle) */\n  .radio-container .checkmark:after {\n       top: 9px;\n      left: 9px;\n      width: 8px;\n      height: 8px;\n    border-radius: 50%;\n  }\n  label\n  {\n    margin-bottom: 0px !important;\n  }\n  .slider-image\n  {\n    width: 100%;\n    height: 250px;\n  }\n  @media screen and (min-width:701px)\n  {\n    .slider-image\n  {\n  \n    height: 82vh;\n  }\n  .radio-cn {\n    position: absolute;\n    bottom: 18vh;\n    right: 3vw;\n  }\n  .cookies-policy {\n  \n    width: 100vw;\n  }\n  }\n  .light{\n    font-style: italic;\n    color: var(--light-blue-color);\n  }\n  .text-over-image {\n    /* position: absolute; */\n    position: relative;\n    /* bottom: 50vh; */\n    top: -8vh;\n    /* bottom: 50vh; */\n    text-align: center;\n    z-index: 1;\n    font-size: 20px;\n  }\n  .radio-cn.mat-card {\n  \n    background-color: var(--BAckground-dark-color);\n  }\n  p.text-over-image-second {\n    position: absolute;\n    top: 2vh;\n    color: white;\n    font-size: 22px;\n    font-family: 'Roboto-Bold';\n  }\n  .second-card\n  {\n    background-color: var(--BAckground-dark-color); \n  }\n  p.slider-text.heading-nestimate {\n    text-align: center;\n    margin-top: 4px;\n  }\n  .card-steps\n  {\n    background-color:  var(--BAckground-dark-color);\n  }\n  .heading-nestimate-font{\n    font-size: 22px;\n  }\n  .top-button-cookies {\n    text-align: center;\n    /* height: 7vh; */\n    color: white;\n    border: 4px solid #81C2FD;\n    display: flex;\n    justify-content: center;\n    padding: 1em;\n    margin: 1em;\n    border-radius: 5px;\n  \n  }\n  .lower-button\n  {\n    background-color: #6DDDB7;\n    border: none;\n    color: black;\n  }\n  .agent-form {\n    display: flex;\n    /* width: 100%; */\n    justify-content: center;\n    margin: 1em;\n  }\n  .listing-heading {\n    margin: 1em;\n  }\n  .to-buy {\n    margin: 0em 0.5em;\n  }\n  .home-card-components {\n    margin: 1em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9jbGlja2hvbWUvY2xpY2tob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSwrQ0FBK0M7SUFDL0MsV0FBVztJQUNYLFlBQVk7SUFDWiw0QkFBNEI7SUFDNUIsc0JBQXNCO0VBQ3hCO0VBQ0E7SUFDRSx1QkFBdUI7SUFDdkIsV0FBVztJQUNYLGFBQWE7SUFDYixZQUFZO0VBQ2Q7RUFDQTtJQUNFLGFBQWE7SUFDYiw2QkFBNkI7SUFDN0IscUJBQXFCO0lBQ3JCLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsV0FBVztFQUNiO0VBRUE7SUFDRSx3Q0FBd0M7SUFDeEMsWUFBWTtJQUNaLFVBQVU7RUFDWjtFQUNBOztJQUVFLHdDQUF3QztJQUN4QyxZQUFZO0lBQ1osVUFBVTtFQUNaO0VBRUE7OztJQUdFLHFCQUFxQjtFQUN2QjtFQUNBO0lBQ0UsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixXQUFXO0VBQ2I7RUFFQTtJQUNFLFdBQVc7SUFDWCxZQUFZO0VBQ2Q7RUFFQTtJQUNFLFdBQVc7SUFDWCxZQUFZO0lBQ1osZUFBZTtJQUNmLFFBQVE7SUFDUixTQUFTO0lBRVQsYUFBYTtJQUViLHVCQUF1QjtJQUV2QixtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQixZQUFZO0VBQ2Q7RUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLDhCQUE4QjtFQUNoQztFQUNBO0lBQ0UsVUFBVTtJQUNWLFlBQVk7RUFDZDtFQUNBO0lBQ0Usa0JBQWtCO0lBQ2xCO0VBQ0Y7RUFHQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLHVCQUF1QjtFQUN6QjtFQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGVBQWU7RUFDakI7RUFDQTs7SUFFRTs7TUFFRSxxQkFBcUI7SUFDdkI7RUFDRjtFQUNBO0lBQ0UsZ0NBQWdDO0VBQ2xDLGtCQUFrQjtJQUNoQixZQUFZO0lBQ1osZUFBZTtFQUNqQixXQUFXO0VBQ1gsVUFBVTtFQUNWO0VBQ0E7SUFDRSxZQUFZO0lBQ1osbUJBQW1CO0VBQ3JCO0VBQ0E7SUFDRSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixZQUFZO0VBQ2Q7RUFDQTs7SUFFRSxrQkFBa0I7RUFDcEI7RUFDQTtJQUNFLFdBQVc7RUFDYjtFQUNBO0lBQ0UsMENBQTBDO0lBQzFDLFlBQVk7SUFDWixrQkFBa0I7SUFDbEIsVUFBVTtJQUNWLHVCQUF1QjtNQUNyQixhQUFhO01BQ2IsNkJBQTZCOztFQUVqQztFQUNBO0lBQ0UsWUFBWTtJQUNaLHlDQUF5QztJQUN6QyxrQkFBa0I7SUFDbEIsVUFBVTtFQUNaO0VBQ0E7SUFDRSxlQUFlO0lBQ2YsMEJBQTBCO0VBQzVCO0VBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0VBQ3pCO0VBQ0E7SUFDRSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQix1QkFBdUI7SUFDdkIsdUJBQXVCO0lBQ3ZCLHVDQUF1QztJQUN2QyxZQUFZO0lBQ1osa0JBQWtCO0lBQ2xCLFVBQVU7RUFDWjtFQUNBO0lBQ0UsVUFBVTtFQUNaO0VBQ0E7O0lBRUUsWUFBWTtFQUNkO0VBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtFQUNyQjtFQUNBO0lBQ0Usd0JBQXdCO0lBQ3hCLFVBQVU7SUFDVixrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLDBCQUEwQjtFQUM1QjtFQUNBOztJQUVFLGVBQWU7RUFDakI7RUFDQTtJQUNFLGNBQWM7SUFDZCxrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZixlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLHNCQUFzQjtJQUN0QixxQkFBcUI7SUFDckIsaUJBQWlCO0VBQ25CO0VBRUEsNENBQTRDO0VBQzVDO0lBQ0Usa0JBQWtCO0lBQ2xCLFVBQVU7SUFDVixlQUFlO0VBQ2pCO0VBRUEsaUNBQWlDO0VBQ2pDO0lBQ0Usa0JBQWtCO0lBQ2xCLE1BQU07SUFDTixPQUFPO0lBQ1AsWUFBWTtJQUNaLFdBQVc7SUFDWCx5Q0FBeUM7SUFDekMsa0JBQWtCO0VBQ3BCO0VBRUEsK0NBQStDO0VBQy9DO0lBQ0Usc0JBQXNCO0VBQ3hCO0VBRUEsNERBQTREO0VBQzVEO0lBQ0Usd0NBQXdDO0VBQzFDO0VBRUEsb0VBQW9FO0VBQ3BFO0lBQ0UsV0FBVztJQUNYLGtCQUFrQjtJQUNsQixhQUFhO0VBQ2Y7RUFFQSxpREFBaUQ7RUFDakQ7SUFDRSxjQUFjO0VBQ2hCO0VBRUEscUNBQXFDO0VBQ3JDO09BQ0ssUUFBUTtNQUNULFNBQVM7TUFDVCxVQUFVO01BQ1YsV0FBVztJQUNiLGtCQUFrQjtFQUNwQjtFQUNBOztJQUVFLDZCQUE2QjtFQUMvQjtFQUNBOztJQUVFLFdBQVc7SUFDWCxhQUFhO0VBQ2Y7RUFFQTs7SUFFRTs7O0lBR0EsWUFBWTtFQUNkO0VBQ0E7SUFDRSxrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFVBQVU7RUFDWjtFQUNBOztJQUVFLFlBQVk7RUFDZDtFQUNBO0VBQ0E7SUFDRSxrQkFBa0I7SUFDbEIsOEJBQThCO0VBQ2hDO0VBQ0E7SUFDRSx3QkFBd0I7SUFDeEIsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixTQUFTO0lBQ1Qsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQixVQUFVO0lBQ1YsZUFBZTtFQUNqQjtFQUNBOztJQUVFLDhDQUE4QztFQUNoRDtFQUNBO0lBQ0Usa0JBQWtCO0lBQ2xCLFFBQVE7SUFDUixZQUFZO0lBQ1osZUFBZTtJQUNmLDBCQUEwQjtFQUM1QjtFQUNBOztJQUVFLDhDQUE4QztFQUNoRDtFQUNBO0lBQ0Usa0JBQWtCO0lBQ2xCLGVBQWU7RUFDakI7RUFDQTs7SUFFRSwrQ0FBK0M7RUFDakQ7RUFDRTtJQUNBLGVBQWU7RUFDakI7RUFDQTtJQUNFLGtCQUFrQjtJQUNsQixpQkFBaUI7SUFDakIsWUFBWTtJQUNaLHlCQUF5QjtJQUN6QixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixXQUFXO0lBQ1gsa0JBQWtCOztFQUVwQjtFQUNBOztJQUVFLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osWUFBWTtFQUNkO0VBQ0E7SUFDRSxhQUFhO0lBQ2IsaUJBQWlCO0lBQ2pCLHVCQUF1QjtJQUN2QixXQUFXO0VBQ2I7RUFDQTtJQUNFLFdBQVc7RUFDYjtFQUNBO0lBQ0UsaUJBQWlCO0VBQ25CO0VBQ0E7SUFDRSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9Ib21lL2NsaWNraG9tZS9jbGlja2hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoL2Fzc2V0cy9JbWFnZXMvaG9tZS5qcGVnKTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IGF1dG87XG4gICAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xuICB9XG4gIC51cHBlci1iYWNrIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBibGFjaztcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDI1MHB4O1xuICAgIG9wYWNpdHk6IDAuNTtcbiAgfVxuICAudXBwZXItYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICB6LWluZGV4OiAxMDA7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIHRvcDogLTE0NXB4O1xuICB9XG4gIFxuICAuaG9tZS1idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6dmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiAzNSU7XG4gIH1cbiAgLmhvbWUtYnV0dG9uLVNFTExcbiAge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiAzNSU7XG4gIH1cbiAgXG4gIC5ob21lLXRleHQtZm9udCB7XG4gICBcbiAgXG4gICAgbWFyZ2luLWJvdHRvbTogMC41cmVtO1xuICB9XG4gIC5leGFtcGxlLWZvcm0ge1xuICAgIG1pbi13aWR0aDogMTUwcHg7XG4gICAgbWF4LXdpZHRoOiA1MDBweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuICBcbiAgLmV4YW1wbGUtZnVsbC13aWR0aCB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYm9yZGVyOiBub25lO1xuICB9XG4gIFxuICAubG9hZGluZy1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwcHg7XG4gICAgbGVmdDogMHB4O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB6LWluZGV4OiA5O1xuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgIG9wYWNpdHk6IDAuNTtcbiAgfVxuICAuaG93X2RvZXNfaXRfd29ya19zdGVwcyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICB9XG4gIGltZy5zdGVwLW1hZ2Uge1xuICAgIHdpZHRoOiAzMyU7XG4gICAgbWFyZ2luOiAxNHB4O1xuICB9XG4gIHAuc3RlcC10ZXh0IHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUilcbiAgfVxuICBcbiAgXG4gIC5zdGVwcy1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB9XG4gIC5zdGVwIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW46IDFlbSAwcHg7XG4gIH1cbiAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOjc2OHB4KVxuICB7XG4gICAgLmljb24tc2l6ZVxuICAgIHtcbiAgICAgIHdpZHRoOiA1MCUgIWltcG9ydGFudDtcbiAgICB9XG4gIH1cbiAgLmNvb2tpZXMtcG9saWN5IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiBSR0IoIDgwIDgwIDkwKTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHBhZGRpbmc6IDNweDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gIGJvdHRvbTogMHB4O1xuICB6LWluZGV4OiAxO1xuICB9XG4gIC5wb2xpY3ktY29udGVudCB7XG4gICAgbWFyZ2luOiAxM3B4O1xuICAgIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gIH1cbiAgLnBvbGljeS1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbjogMTNweDtcbiAgfVxuICBwXG4gIHtcbiAgICBtYXJnaW4tYm90dG9tOiAwcHg7XG4gIH1cbiAgaW1nLmJ1dHRvbi1jcm9zcyB7XG4gICAgd2lkdGg6IDE3cHg7XG4gIH1cbiAgLmN1c3RvbS1idXR0b24tZmlyc3Qge1xuICAgIGJvcmRlcjogMnB4IHNvbGlkICB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgICBwYWRkaW5nOiA4cHg7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHdpZHRoOiA1MCU7XG4gICAgZmxleC1kaXJlY3Rpb246IGluaGVyaXQ7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgIFxuICB9XG4gIC5ibHVlLWNpcmNsZSB7XG4gICAgcGFkZGluZzogNXB4O1xuICAgIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICB3aWR0aDogMTclO1xuICB9XG4gIC5jdXN0b20tdGV4dCB7XG4gICAgZm9udC1zaXplOiAxNnB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICB9XG4gIC51cHBlci1jdXN0b20tYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB9XG4gIC5jcmVhdGUtbmVzdGltYXRlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOnZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gICAgcGFkZGluZzogN3B4O1xuICAgIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgICB3aWR0aDogOTAlO1xuICB9XG4gIGltZy5idXR0b24taW1hZ2Uge1xuICAgIHdpZHRoOiA1MCU7XG4gIH1cbiAgLnRleHQtY3JlYXRlLW5lc3RpbWF0ZVxuICB7XG4gICAgY29sb3I6IHdoaXRlO1xuICB9XG4gIC5sYXJnZS1idXR0b24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuICBwLmktYW0ge1xuICAgIC8qIHRleHQtYWxpZ246IGNlbnRlcjsgKi9cbiAgICB3aWR0aDogNjAlO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBtYXJnaW4tYm90dG9tOiA1cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG4gIH1cbiAgLmN1c3RvbS1idXR0b24tZmlyc3Q6aG92ZXJcbiAge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgfVxuICAucmFkaW8tY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgcGFkZGluZy1sZWZ0OiAzNXB4O1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBmb250LXNpemU6IDE1cHg7XG4gICAgLXdlYmtpdC11c2VyLXNlbGVjdDogbm9uZTtcbiAgICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAgIC1tcy11c2VyLXNlbGVjdDogbm9uZTtcbiAgICB1c2VyLXNlbGVjdDogbm9uZTtcbiAgfVxuICBcbiAgLyogSGlkZSB0aGUgYnJvd3NlcidzIGRlZmF1bHQgcmFkaW8gYnV0dG9uICovXG4gIC5yYWRpby1jb250YWluZXIgaW5wdXQge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBvcGFjaXR5OiAwO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgfVxuICBcbiAgLyogQ3JlYXRlIGEgY3VzdG9tIHJhZGlvIGJ1dHRvbiAqL1xuICAuY2hlY2ttYXJrIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAwO1xuICAgIGxlZnQ6IDA7XG4gICAgaGVpZ2h0OiAyNXB4O1xuICAgIHdpZHRoOiAyNXB4O1xuICAgIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgfVxuICBcbiAgLyogT24gbW91c2Utb3ZlciwgYWRkIGEgZ3JleSBiYWNrZ3JvdW5kIGNvbG9yICovXG4gIC5yYWRpby1jb250YWluZXI6aG92ZXIgaW5wdXQgfiAuY2hlY2ttYXJrIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjY2NjO1xuICB9XG4gIFxuICAvKiBXaGVuIHRoZSByYWRpbyBidXR0b24gaXMgY2hlY2tlZCwgYWRkIGEgYmx1ZSBiYWNrZ3JvdW5kICovXG4gIC5yYWRpby1jb250YWluZXIgaW5wdXQ6Y2hlY2tlZCB+IC5jaGVja21hcmsge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIH1cbiAgXG4gIC8qIENyZWF0ZSB0aGUgaW5kaWNhdG9yICh0aGUgZG90L2NpcmNsZSAtIGhpZGRlbiB3aGVuIG5vdCBjaGVja2VkKSAqL1xuICAuY2hlY2ttYXJrOmFmdGVyIHtcbiAgICBjb250ZW50OiBcIlwiO1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG4gIFxuICAvKiBTaG93IHRoZSBpbmRpY2F0b3IgKGRvdC9jaXJjbGUpIHdoZW4gY2hlY2tlZCAqL1xuICAucmFkaW8tY29udGFpbmVyIGlucHV0OmNoZWNrZWQgfiAuY2hlY2ttYXJrOmFmdGVyIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgfVxuICBcbiAgLyogU3R5bGUgdGhlIGluZGljYXRvciAoZG90L2NpcmNsZSkgKi9cbiAgLnJhZGlvLWNvbnRhaW5lciAuY2hlY2ttYXJrOmFmdGVyIHtcbiAgICAgICB0b3A6IDlweDtcbiAgICAgIGxlZnQ6IDlweDtcbiAgICAgIHdpZHRoOiA4cHg7XG4gICAgICBoZWlnaHQ6IDhweDtcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIH1cbiAgbGFiZWxcbiAge1xuICAgIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50O1xuICB9XG4gIC5zbGlkZXItaW1hZ2VcbiAge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMjUwcHg7XG4gIH1cbiAgXG4gIEBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzAxcHgpXG4gIHtcbiAgICAuc2xpZGVyLWltYWdlXG4gIHtcbiAgXG4gICAgaGVpZ2h0OiA4MnZoO1xuICB9XG4gIC5yYWRpby1jbiB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGJvdHRvbTogMTh2aDtcbiAgICByaWdodDogM3Z3O1xuICB9XG4gIC5jb29raWVzLXBvbGljeSB7XG4gIFxuICAgIHdpZHRoOiAxMDB2dztcbiAgfVxuICB9XG4gIC5saWdodHtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG4gICAgY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICB9XG4gIC50ZXh0LW92ZXItaW1hZ2Uge1xuICAgIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgLyogYm90dG9tOiA1MHZoOyAqL1xuICAgIHRvcDogLTh2aDtcbiAgICAvKiBib3R0b206IDUwdmg7ICovXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIHotaW5kZXg6IDE7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICB9XG4gIC5yYWRpby1jbi5tYXQtY2FyZCB7XG4gIFxuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7XG4gIH1cbiAgcC50ZXh0LW92ZXItaW1hZ2Utc2Vjb25kIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgdG9wOiAydmg7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtc2l6ZTogMjJweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgfVxuICAuc2Vjb25kLWNhcmRcbiAge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7IFxuICB9XG4gIHAuc2xpZGVyLXRleHQuaGVhZGluZy1uZXN0aW1hdGUge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiA0cHg7XG4gIH1cbiAgLmNhcmQtc3RlcHNcbiAge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICB2YXIoLS1CQWNrZ3JvdW5kLWRhcmstY29sb3IpO1xuICB9XG4gICAgLmhlYWRpbmctbmVzdGltYXRlLWZvbnR7XG4gICAgZm9udC1zaXplOiAyMnB4O1xuICB9XG4gIC50b3AtYnV0dG9uLWNvb2tpZXMge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICAvKiBoZWlnaHQ6IDd2aDsgKi9cbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm9yZGVyOiA0cHggc29saWQgIzgxQzJGRDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBtYXJnaW46IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIFxuICB9XG4gIC5sb3dlci1idXR0b25cbiAge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICM2REREQjc7XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGNvbG9yOiBibGFjaztcbiAgfVxuICAuYWdlbnQtZm9ybSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAvKiB3aWR0aDogMTAwJTsgKi9cbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDFlbTtcbiAgfVxuICAubGlzdGluZy1oZWFkaW5nIHtcbiAgICBtYXJnaW46IDFlbTtcbiAgfVxuICAudG8tYnV5IHtcbiAgICBtYXJnaW46IDBlbSAwLjVlbTtcbiAgfVxuICAuaG9tZS1jYXJkLWNvbXBvbmVudHMge1xuICAgIG1hcmdpbjogMWVtO1xufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/Home/clickhome/clickhome.component.ts":
+  /*!*******************************************************!*\
+    !*** ./src/app/Home/clickhome/clickhome.component.ts ***!
+    \*******************************************************/
+
+  /*! exports provided: home, ClickhomeComponent */
+
+  /***/
+  function srcAppHomeClickhomeClickhomeComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "home", function () {
+      return home;
+    });
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "ClickhomeComponent", function () {
+      return ClickhomeComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _auth_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../auth.service */
+    "./src/app/auth.service.ts");
+    /* harmony import */
+
+
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/auth/es2015/index.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _http_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../../http.service */
+    "./src/app/http.service.ts");
+    /* harmony import */
+
+
+    var _Menu_myMatches_myMatches_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../../Menu/myMatches/myMatches.service */
+    "./src/app/Menu/myMatches/myMatches.service.ts");
+    /* harmony import */
+
+
+    var _nestimates_home_nestimates_home_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../nestimates-home/nestimates-home.service */
+    "./src/app/Home/nestimates-home/nestimates-home.service.ts");
+
+    var home = function home() {
+      _classCallCheck(this, home);
+    };
+
+    var ClickhomeComponent =
+    /*#__PURE__*/
+    function () {
+      function ClickhomeComponent(authService, afAuth, Router, HttpService, MatchesService, myrequirement_service) {
+        _classCallCheck(this, ClickhomeComponent);
+
+        this.authService = authService;
+        this.afAuth = afAuth;
+        this.Router = Router;
+        this.HttpService = HttpService;
+        this.MatchesService = MatchesService;
+        this.myrequirement_service = myrequirement_service;
+        this.selectedIndex = 0;
+        this.maxNumberOfTabs = 2;
+        this.isLoggedIn = false;
+        this.isLoading = false;
+        this.cookie = true;
+        this.propertyRequirementDetails = [];
+        this.propertyDetails = [];
+        this.checkMatches = false;
+        this.appMatches = false;
+      }
+
+      _createClass(ClickhomeComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this45 = this;
+
+          this.Componame = this.constructor.name;
+          this.user = JSON.parse(localStorage.getItem("user"));
+
+          if (this.user != null) {
+            this.uid = this.user.uid;
+          }
+
+          this.checkPolicy = JSON.parse(localStorage.getItem("Policy"));
+
+          if (this.checkPolicy == false) {
+            this.cookie = false;
+          }
+
+          this.afAuth.authState.subscribe(function (user) {
+            if (user) {
+              _this45.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this45.userData));
+              _this45.isLoggedIn = true;
+            } else {
+              localStorage.setItem("user", null);
+              JSON.parse(localStorage.getItem("user"));
+
+              _this45.LoggedOut();
+
+              _this45.isLoggedIn = false;
+            }
+          });
+          console.log(this.constructor.name);
+        }
+      }, {
+        key: "LoggedIn",
+        value: function LoggedIn() {
+          this.isLoggedIn = true;
+          this.cookie = false;
+        }
+      }, {
+        key: "LoggedOut",
+        value: function LoggedOut() {
+          this.isLoggedIn = false;
+        }
+      }, {
+        key: "facebookLogin",
+        value: function facebookLogin() {
+          var _this46 = this;
+
+          this.isLoading = true;
+          this.authService.FacebookAuth().then(function (data) {
+            _this46.isLoading = false;
+          });
+        }
+      }, {
+        key: "googleLogin",
+        value: function googleLogin() {
+          var _this47 = this;
+
+          this.isLoading = true;
+          this.authService.GoogleAuth().then(function (data) {
+            _this47.isLoading = false;
+            _this47.isLoggedIn = true;
+          });
+        }
+      }, {
+        key: "signIn",
+        value: function signIn(email, pass) {
+          var _this48 = this;
+
+          this.isLoading = true;
+          this.authService.SignIn(email, pass).then(function (data) {
+            _this48.isLoading = false;
+            _this48.isLoggedIn = true;
+          });
+        }
+      }, {
+        key: "closeCookie",
+        value: function closeCookie() {
+          this.cookie = false;
+          this.Policy = localStorage.setItem("Policy", JSON.stringify(this.cookie));
+        }
+      }, {
+        key: "homeradio",
+        value: function homeradio(value) {
+          if (value == this.home) {
+            this.Router.navigate(["/fillFormBuyer/:Currentpostcode/:CurrentTown/:Currentstate/:Currentcountry/:Lookingpostcode/:LookingStreetname/:LookingTown/:Lookingstate/:Country/:FinancialPosition/:SearchRadius/:PropertyType/:Roommin/:Roomsmax/:MinAmount/:MaxAmount/:Validity/:Minbathroom/:Maxbathroom/:Minreception/:Maxreception/:Conditions/:Ownership/:CurrentAddress"]);
+          }
+
+          if (value == this.home2) {
+            this.Router.navigate(["/fillformseller/:Lookingpostcode/:LookingAddress/:LookingTown/:Lookingstate/:PropertyType/:Maxrooms/:MaxAmount/:ownership/:Maxbathrooms/:Maxreception/:PropertyCondition/:Country"]);
+          }
+
+          console.log(home);
+        }
+      }, {
+        key: "getallitems",
+        value: function getallitems() {
+          var _this49 = this;
+
+          // Fetch details
+          this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
+            res.forEach(function (element) {
+              _this49.propertyRequirementDetails.push({
+                data: element.data(),
+                id: element.id
+              });
+            });
+            _this49.buyerPoperty = _this49.propertyRequirementDetails.length;
+            console.log(); //this.checkNumberNestimates = this.propertyRequirementDetails.length + this.propertyDetails.length
+          });
+          this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
+            res.forEach(function (element) {
+              _this49.propertyDetails.push({
+                seller: element.data(),
+                sellerId: element.id
+              });
+            });
+            _this49.sellerProperty = _this49.propertyDetails.length;
+            _this49.checkNumberNestimates = _this49.sellerProperty + _this49.buyerPoperty;
+            console.log(_this49.checkNumberNestimates);
+
+            if (_this49.checkNumberNestimates > 0) {
+              _this49.appMatches = true;
+              _this49.isLoggedIn = true;
+            } else {
+              _this49.isLoggedIn = false;
+            }
+          });
+        }
+      }, {
+        key: "user",
+        get: function get() {
+          return this._user;
+        },
+        set: function set(value) {
+          this._user = value;
+        }
+      }]);
+
+      return ClickhomeComponent;
+    }();
+
+    ClickhomeComponent.ctorParameters = function () {
+      return [{
+        type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]
+      }, {
+        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_3__["AngularFireAuth"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }, {
+        type: _http_service__WEBPACK_IMPORTED_MODULE_5__["HttpService"]
+      }, {
+        type: _Menu_myMatches_myMatches_service__WEBPACK_IMPORTED_MODULE_6__["MyMatchesService"]
+      }, {
+        type: _nestimates_home_nestimates_home_service__WEBPACK_IMPORTED_MODULE_7__["NestimatesHomeService"]
+      }];
+    };
+
+    ClickhomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-clickhome',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./clickhome.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/Home/clickhome/clickhome.component.html")).default,
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./clickhome.component.css */
+      "./src/app/Home/clickhome/clickhome.component.css")).default]
+    })], ClickhomeComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/Home/home-matches/home-matches.component.css":
   /*!**************************************************************!*\
     !*** ./src/app/Home/home-matches/home-matches.component.css ***!
@@ -8348,7 +8663,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId) {
-          var _this45 = this;
+          var _this50 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -8357,104 +8672,104 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this45.buyer = true;
-              _this45.seller = false;
-              _this45.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this45.Look_PropertyFor = PropertyFor;
-              _this45.Look_propertytype = PropertyType;
-              _this45.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this45.Look_minamount);
-              _this45.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this45.Look_maxamount);
-              _this45.LookingTown = LookingTown;
-              _this45.Look_latitude = latitude;
-              _this45.Look_longitude = longitude;
-              _this45.Look_Streetname = Streetname;
-              _this45.Look_condition = condition;
-              _this45.Look_chainstatus = ChainStatus;
-              _this45.Look_FinancialPosition = FinancialPosition;
-              _this45.Look_Radius = SearchRadius;
-              _this45.Look_Validity = Validity;
-              _this45.Look_Position = Position;
-              _this45.Look_UserId = UserId; //Price Formula
+              _this50.buyer = true;
+              _this50.seller = false;
+              _this50.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this50.Look_PropertyFor = PropertyFor;
+              _this50.Look_propertytype = PropertyType;
+              _this50.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this50.Look_minamount);
+              _this50.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this50.Look_maxamount);
+              _this50.LookingTown = LookingTown;
+              _this50.Look_latitude = latitude;
+              _this50.Look_longitude = longitude;
+              _this50.Look_Streetname = Streetname;
+              _this50.Look_condition = condition;
+              _this50.Look_chainstatus = ChainStatus;
+              _this50.Look_FinancialPosition = FinancialPosition;
+              _this50.Look_Radius = SearchRadius;
+              _this50.Look_Validity = Validity;
+              _this50.Look_Position = Position;
+              _this50.Look_UserId = UserId; //Price Formula
 
-              _this45.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this45.maxAmount);
-              _this45.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this45.less);
-              _this45.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this45.more); //Remove Postcode Spaces
+              _this50.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this50.maxAmount);
+              _this50.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this50.less);
+              _this50.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this50.more); //Remove Postcode Spaces
 
-              _this45.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this45.listing = _this45.Look_postcodes;
-              _this45.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this45.isLoading = false;
-              _this45.buyer = true; //- Same postcode only Matches price criteria (min reduce 3% max +10%) - Same property type
+              _this50.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this50.listing = _this50.Look_postcodes;
+              _this50.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this50.isLoading = false;
+              _this50.buyer = true; //- Same postcode only Matches price criteria (min reduce 3% max +10%) - Same property type
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this50.Look_postcodes && item.data().PropertyFor == _this50.Look_PropertyFor && item.data().PropertyType == _this50.Look_propertytype && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this50.distanceInKm = _this50.getDistanceFromLatLonInKm(_this50.Look_latitude, _this50.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this45.matchedProperties.push({
+                _this50.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this45.distanceInKm * 0.6214
+                  distance: _this50.distanceInKm * 0.6214
                 }); //Use this object to populate html
 
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && _this45.removespace.substring(0, 5) == _this45.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this50.Look_postcodes && item.data().PropertyFor == _this50.Look_PropertyFor && item.data().PropertyType == _this50.Look_propertytype && _this50.removespace.substring(0, 5) == _this50.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this50.distanceInKm = _this50.getDistanceFromLatLonInKm(_this50.Look_latitude, _this50.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this45.unmatchedProperties.push({
+                _this50.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this45.distanceInKm * 0.6214
+                  distance: _this50.distanceInKm * 0.6214
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType == _this45.Look_propertytype && _this45.removespace.substring(0, 5) != _this45.listing.substring(0, 5) && _this45.removespace.substring(0, 3) == _this45.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this50.Look_postcodes && item.data().PropertyFor == _this50.Look_PropertyFor && item.data().PropertyType == _this50.Look_propertytype && _this50.removespace.substring(0, 5) != _this50.listing.substring(0, 5) && _this50.removespace.substring(0, 3) == _this50.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this50.distanceInKm = _this50.getDistanceFromLatLonInKm(_this50.Look_latitude, _this50.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this45.unmatchedPriceLogic.push({
+                _this50.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this45.distanceInKm * 0.6214
+                  distance: _this50.distanceInKm * 0.6214
                 });
 
-                _this45.unmatchedchecked = _this45.unmatchedPriceLogic;
+                _this50.unmatchedchecked = _this50.unmatchedPriceLogic;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcodes && item.data().PropertyFor == _this45.Look_PropertyFor && item.data().PropertyType != _this45.Look_propertytype && _this45.removespace.substring(0, 5) != _this45.listing.substring(0, 5) && _this45.removespace.substring(0, 3) == _this45.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this50.Look_postcodes && item.data().PropertyFor == _this50.Look_PropertyFor && item.data().PropertyType != _this50.Look_propertytype && _this50.removespace.substring(0, 5) != _this50.listing.substring(0, 5) && _this50.removespace.substring(0, 3) == _this50.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this50.distanceInKm = _this50.getDistanceFromLatLonInKm(_this50.Look_latitude, _this50.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this45.unmatchedallProperty.push({
+                _this50.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this45.distanceInKm * 0.6214
+                  distance: _this50.distanceInKm * 0.6214
                 });
               } //- All other properties - Nationwide
-              else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this45.Look_postcodes && item.data().PropertyType != _this45.Look_propertytype && item.data().PropertyFor == _this45.Look_PropertyFor && _this45.removespace.substring(0, 5) != _this45.listing.substring(0, 5) && _this45.removespace.substring(0, 3) != _this45.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                  _this45.distanceInKm = _this45.getDistanceFromLatLonInKm(_this45.Look_latitude, _this45.Look_longitude, item.data().latitude, item.data().longitude);
+              else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this50.Look_postcodes && item.data().PropertyType != _this50.Look_propertytype && item.data().PropertyFor == _this50.Look_PropertyFor && _this50.removespace.substring(0, 5) != _this50.listing.substring(0, 5) && _this50.removespace.substring(0, 3) != _this50.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                  _this50.distanceInKm = _this50.getDistanceFromLatLonInKm(_this50.Look_latitude, _this50.Look_longitude, item.data().latitude, item.data().longitude);
 
-                  _this45.lookTown.push({
+                  _this50.lookTown.push({
                     detail: item.data(),
                     propertyId: item.id,
-                    distance: _this45.distanceInKm * 1 / 1.609344
+                    distance: _this50.distanceInKm * 1 / 1.609344
                   });
                 }
             });
 
-            _this45.unmatchedProperties.sort(_this45.compare);
+            _this50.unmatchedProperties.sort(_this50.compare);
           });
           this.getExpressedListingIds();
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude) {
-          var _this46 = this;
+          var _this51 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -8481,23 +8796,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this46.maxAmount = _this46.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this46.maxAmount);
-              _this46.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this46.Look_minamount);
-              _this46.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this46.Look_maxamount);
-              _this46.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this46.less);
-              _this46.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this46.more); //Remove Postcode Spaces
+              _this51.maxAmount = _this51.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this51.maxAmount);
+              _this51.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this51.Look_minamount);
+              _this51.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this51.Look_maxamount);
+              _this51.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this51.less);
+              _this51.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this51.more); //Remove Postcode Spaces
 
-              _this46.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this46.listing = _this46.Look_postcode;
-              _this46.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this51.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this51.listing = _this51.Look_postcode;
+              _this51.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this46.Look_postcode && Mean.data().PropertyFor == _this46.Look_PropertyFor && Mean.data().PropertyType == _this46.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this46.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this51.Look_postcode && Mean.data().PropertyFor == _this51.Look_PropertyFor && Mean.data().PropertyType == _this51.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this51.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
@@ -8505,51 +8820,51 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 5) == _this46.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
-                _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this51.Look_postcode && Mean.data().PropertyType == _this51.Look_PropertyType && Mean.data().PropertyFor == _this51.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this51.removespace.substring(0, 5) == _this51.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+                _this51.distanceInKm = _this51.getDistanceFromLatLonInKm(_this51.Look_latitude, _this51.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this46.sellerunmatchedProperties.push({
+                _this51.sellerunmatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this46.distanceInKm * 1 / 1.609344
+                  distance: _this51.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType == _this46.Look_PropertyType && Mean.data().PropertyFor == _this46.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 5) != _this46.listing.substring(0, 5) && _this46.removespace.substring(0, 3) == _this46.listing.substring(0, 3)) {
-                _this46.sellerunmatchedPropertiesFirst.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this51.Look_postcode && Mean.data().PropertyType == _this51.Look_PropertyType && Mean.data().PropertyFor == _this51.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this51.removespace.substring(0, 5) != _this51.listing.substring(0, 5) && _this51.removespace.substring(0, 3) == _this51.listing.substring(0, 3)) {
+                _this51.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyType != _this46.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this46.removespace.substring(0, 5) != _this46.listing.substring(0, 5) && _this46.removespace.substring(0, 3) == _this46.listing.substring(0, 3) && Mean.data().PropertyFor == _this46.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
-                _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this51.Look_postcode && Mean.data().PropertyType != _this51.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this51.removespace.substring(0, 5) != _this51.listing.substring(0, 5) && _this51.removespace.substring(0, 3) == _this51.listing.substring(0, 3) && Mean.data().PropertyFor == _this51.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
+                _this51.distanceInKm = _this51.getDistanceFromLatLonInKm(_this51.Look_latitude, _this51.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this46.sellerunmatchedPriceLogic.push({
+                _this51.sellerunmatchedPriceLogic.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this46.distanceInKm * 1 / 1.609344
+                  distance: _this51.distanceInKm * 1 / 1.609344
                 });
               } //All other properties - Nationwide
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this46.Look_postcode && Mean.data().PropertyFor == _this46.Look_PropertyFor && _this46.removespace.substring(0, 5) != _this46.listing.substring(0, 5) && _this46.removespace.substring(0, 3) != _this46.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
-                _this46.distanceInKm = _this46.getDistanceFromLatLonInKm(_this46.Look_latitude, _this46.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this51.Look_postcode && Mean.data().PropertyFor == _this51.Look_PropertyFor && _this51.removespace.substring(0, 5) != _this51.listing.substring(0, 5) && _this51.removespace.substring(0, 3) != _this51.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
+                _this51.distanceInKm = _this51.getDistanceFromLatLonInKm(_this51.Look_latitude, _this51.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this46.sellerlookTown.push({
+                _this51.sellerlookTown.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this46.distanceInKm * 1 / 1.609344
+                  distance: _this51.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this46.unmatchedProperties.sort(_this46.compare);
+            _this51.unmatchedProperties.sort(_this51.compare);
 
-            _this46.noOfMatches = _this46.sellermatchedProperties.length;
-            _this46.noOfUnmatched = _this46.sellerunmatchedProperties.length;
+            _this51.noOfMatches = _this51.sellermatchedProperties.length;
+            _this51.noOfUnmatched = _this51.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -8646,12 +8961,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this47 = this;
+          var _this52 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this47.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this47.distinctExpressedUid.push(item.data().propertyId);
+              if (_this52.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this52.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -8670,12 +8985,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this48 = this;
+          var _this53 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this48.propertyRequirementDetails.push({
+              _this53.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -8684,106 +8999,106 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this48.propertyDetails.push({
+              _this53.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
             });
-            _this48.MatchesItem = _this48.propertyRequirementDetails.length + _this48.propertyDetails.length;
+            _this53.MatchesItem = _this53.propertyRequirementDetails.length + _this53.propertyDetails.length;
 
-            if (_this48.MatchesItem < 2) {
-              if (_this48.propertyRequirementDetails.length > _this48.propertyDetails.length) {
-                _this48.buyer = true;
-                _this48.seller = false;
-                _this48.buyerItems = true;
-                _this48.buyerVal = _this48.propertyRequirementDetails[0].data.Lookingpostcode;
-                var Lookingpostcode = _this48.propertyRequirementDetails[0].data.Lookingpostcode;
-                var MinAmount = _this48.propertyRequirementDetails[0].data.MinAmount;
-                var MaxAmount = _this48.propertyRequirementDetails[0].data.MaxAmount;
-                var PropertyFor = _this48.propertyRequirementDetails[0].data.PropertyFor;
-                var PropertyType = _this48.propertyRequirementDetails[0].data.PropertyType;
-                var LookingTown = _this48.propertyRequirementDetails[0].data.LookingTown;
-                var latitude = _this48.propertyRequirementDetails[0].data.latitude;
-                var longitude = _this48.propertyRequirementDetails[0].data.longitude;
-                var Streetname = _this48.propertyRequirementDetails[0].data.LookingStreetname;
-                var condition = _this48.propertyRequirementDetails[0].data.Conditions;
-                var ChainStatus = _this48.propertyRequirementDetails[0].data.ChainStatus;
-                var FinancialPosition = _this48.propertyRequirementDetails[0].data.FinancialPosition;
-                var SearchRadius = _this48.propertyRequirementDetails[0].data.SearchRadius;
-                var Validity = _this48.propertyRequirementDetails[0].data.Validity;
-                var Position = _this48.propertyRequirementDetails[0].data.Position;
-                var UserId = _this48.propertyRequirementDetails[0].data.UserId;
+            if (_this53.MatchesItem < 2) {
+              if (_this53.propertyRequirementDetails.length > _this53.propertyDetails.length) {
+                _this53.buyer = true;
+                _this53.seller = false;
+                _this53.buyerItems = true;
+                _this53.buyerVal = _this53.propertyRequirementDetails[0].data.Lookingpostcode;
+                var Lookingpostcode = _this53.propertyRequirementDetails[0].data.Lookingpostcode;
+                var MinAmount = _this53.propertyRequirementDetails[0].data.MinAmount;
+                var MaxAmount = _this53.propertyRequirementDetails[0].data.MaxAmount;
+                var PropertyFor = _this53.propertyRequirementDetails[0].data.PropertyFor;
+                var PropertyType = _this53.propertyRequirementDetails[0].data.PropertyType;
+                var LookingTown = _this53.propertyRequirementDetails[0].data.LookingTown;
+                var latitude = _this53.propertyRequirementDetails[0].data.latitude;
+                var longitude = _this53.propertyRequirementDetails[0].data.longitude;
+                var Streetname = _this53.propertyRequirementDetails[0].data.LookingStreetname;
+                var condition = _this53.propertyRequirementDetails[0].data.Conditions;
+                var ChainStatus = _this53.propertyRequirementDetails[0].data.ChainStatus;
+                var FinancialPosition = _this53.propertyRequirementDetails[0].data.FinancialPosition;
+                var SearchRadius = _this53.propertyRequirementDetails[0].data.SearchRadius;
+                var Validity = _this53.propertyRequirementDetails[0].data.Validity;
+                var Position = _this53.propertyRequirementDetails[0].data.Position;
+                var UserId = _this53.propertyRequirementDetails[0].data.UserId;
 
-                _this48.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId);
+                _this53.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, SearchRadius, Validity, Position, UserId);
               } else {
-                _this48.seller = true;
-                _this48.buyer = false;
-                _this48.sellerItem = true;
-                _this48.sellerVal = _this48.propertyDetails[0].seller.Lookingpostcode;
-                var _Lookingpostcode = _this48.propertyDetails[0].seller.Lookingpostcode;
-                var _PropertyFor = _this48.propertyDetails[0].seller.PropertyFor;
-                var _PropertyType = _this48.propertyDetails[0].seller.PropertyType;
-                var _MaxAmount = _this48.propertyDetails[0].seller.MaxAmount;
-                var _LookingTown = _this48.propertyDetails[0].seller.LookingTown;
-                var Lookingstate = _this48.propertyDetails[0].seller.Lookingstate;
-                var Maxbathrooms = _this48.propertyDetails[0].seller.Maxbathrooms;
-                var PropertyCondition = _this48.propertyDetails[0].seller.PropertyCondition;
-                var LookingAddress = _this48.propertyDetails[0].seller.LookingAddress;
-                var ownership = _this48.propertyDetails[0].seller.ownership;
-                var features = _this48.propertyDetails[0].seller.features;
-                var _UserId = _this48.propertyDetails[0].seller.UserId;
-                var Maxreception = _this48.propertyDetails[0].seller.Maxreception;
-                var Maxrooms = _this48.propertyDetails[0].seller.Maxrooms;
-                var _latitude = _this48.propertyDetails[0].seller.latitude;
-                var _longitude = _this48.propertyDetails[0].seller.longitude;
+                _this53.seller = true;
+                _this53.buyer = false;
+                _this53.sellerItem = true;
+                _this53.sellerVal = _this53.propertyDetails[0].seller.Lookingpostcode;
+                var _Lookingpostcode = _this53.propertyDetails[0].seller.Lookingpostcode;
+                var _PropertyFor = _this53.propertyDetails[0].seller.PropertyFor;
+                var _PropertyType = _this53.propertyDetails[0].seller.PropertyType;
+                var _MaxAmount = _this53.propertyDetails[0].seller.MaxAmount;
+                var _LookingTown = _this53.propertyDetails[0].seller.LookingTown;
+                var Lookingstate = _this53.propertyDetails[0].seller.Lookingstate;
+                var Maxbathrooms = _this53.propertyDetails[0].seller.Maxbathrooms;
+                var PropertyCondition = _this53.propertyDetails[0].seller.PropertyCondition;
+                var LookingAddress = _this53.propertyDetails[0].seller.LookingAddress;
+                var ownership = _this53.propertyDetails[0].seller.ownership;
+                var features = _this53.propertyDetails[0].seller.features;
+                var _UserId = _this53.propertyDetails[0].seller.UserId;
+                var Maxreception = _this53.propertyDetails[0].seller.Maxreception;
+                var Maxrooms = _this53.propertyDetails[0].seller.Maxrooms;
+                var _latitude = _this53.propertyDetails[0].seller.latitude;
+                var _longitude = _this53.propertyDetails[0].seller.longitude;
 
-                _this48.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude);
+                _this53.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude);
               }
-            } else if (_this48.MatchesItem > 1) {
-              if (_this48.propertyRequirementDetails.length > _this48.propertyDetails.length) {
-                _this48.buyer = true;
-                _this48.buyerVal = _this48.propertyRequirementDetails[0].data.Lookingpostcode;
-                _this48.test = _this48.buyerVal;
-                var _Lookingpostcode2 = _this48.propertyRequirementDetails[0].data.Lookingpostcode;
-                var _MinAmount = _this48.propertyRequirementDetails[0].data.MinAmount;
-                var _MaxAmount2 = _this48.propertyRequirementDetails[0].data.MaxAmount;
-                var _PropertyFor2 = _this48.propertyRequirementDetails[0].data.PropertyFor;
-                var _PropertyType2 = _this48.propertyRequirementDetails[0].data.PropertyType;
-                var _LookingTown2 = _this48.propertyRequirementDetails[0].data.LookingTown;
-                var _latitude2 = _this48.propertyRequirementDetails[0].data.latitude;
-                var _longitude2 = _this48.propertyRequirementDetails[0].data.longitude;
-                var _Streetname = _this48.propertyRequirementDetails[0].data.LookingStreetname;
-                var _condition = _this48.propertyRequirementDetails[0].data.Conditions;
-                var _ChainStatus = _this48.propertyRequirementDetails[0].data.ChainStatus;
-                var _FinancialPosition = _this48.propertyRequirementDetails[0].data.FinancialPosition;
-                var _SearchRadius = _this48.propertyRequirementDetails[0].data.SearchRadius;
-                var _Validity = _this48.propertyRequirementDetails[0].data.Validity;
-                var _Position = _this48.propertyRequirementDetails[0].data.Position;
-                var _UserId2 = _this48.propertyRequirementDetails[0].data.UserId;
+            } else if (_this53.MatchesItem > 1) {
+              if (_this53.propertyRequirementDetails.length > _this53.propertyDetails.length) {
+                _this53.buyer = true;
+                _this53.buyerVal = _this53.propertyRequirementDetails[0].data.Lookingpostcode;
+                _this53.test = _this53.buyerVal;
+                var _Lookingpostcode2 = _this53.propertyRequirementDetails[0].data.Lookingpostcode;
+                var _MinAmount = _this53.propertyRequirementDetails[0].data.MinAmount;
+                var _MaxAmount2 = _this53.propertyRequirementDetails[0].data.MaxAmount;
+                var _PropertyFor2 = _this53.propertyRequirementDetails[0].data.PropertyFor;
+                var _PropertyType2 = _this53.propertyRequirementDetails[0].data.PropertyType;
+                var _LookingTown2 = _this53.propertyRequirementDetails[0].data.LookingTown;
+                var _latitude2 = _this53.propertyRequirementDetails[0].data.latitude;
+                var _longitude2 = _this53.propertyRequirementDetails[0].data.longitude;
+                var _Streetname = _this53.propertyRequirementDetails[0].data.LookingStreetname;
+                var _condition = _this53.propertyRequirementDetails[0].data.Conditions;
+                var _ChainStatus = _this53.propertyRequirementDetails[0].data.ChainStatus;
+                var _FinancialPosition = _this53.propertyRequirementDetails[0].data.FinancialPosition;
+                var _SearchRadius = _this53.propertyRequirementDetails[0].data.SearchRadius;
+                var _Validity = _this53.propertyRequirementDetails[0].data.Validity;
+                var _Position = _this53.propertyRequirementDetails[0].data.Position;
+                var _UserId2 = _this53.propertyRequirementDetails[0].data.UserId;
 
-                _this48.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _SearchRadius, _Validity, _Position, _UserId2);
+                _this53.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _SearchRadius, _Validity, _Position, _UserId2);
               } else {
-                _this48.seller = true;
-                _this48.sellerVal = _this48.propertyDetails[0].seller.Lookingpostcode;
-                _this48.test = _this48.sellerVal;
-                var _Lookingpostcode3 = _this48.propertyDetails[0].seller.Lookingpostcode;
-                var _PropertyFor3 = _this48.propertyDetails[0].seller.PropertyFor;
-                var _PropertyType3 = _this48.propertyDetails[0].seller.PropertyType;
-                var _MaxAmount3 = _this48.propertyDetails[0].seller.MaxAmount;
-                var _LookingTown3 = _this48.propertyDetails[0].seller.LookingTown;
-                var _Lookingstate = _this48.propertyDetails[0].seller.Lookingstate;
-                var _Maxbathrooms = _this48.propertyDetails[0].seller.Maxbathrooms;
-                var _PropertyCondition = _this48.propertyDetails[0].seller.PropertyCondition;
-                var _LookingAddress = _this48.propertyDetails[0].seller.LookingAddress;
-                var _ownership = _this48.propertyDetails[0].seller.ownership;
-                var _features = _this48.propertyDetails[0].seller.features;
-                var _UserId3 = _this48.propertyDetails[0].seller.UserId;
-                var _Maxreception = _this48.propertyDetails[0].seller.Maxreception;
-                var _Maxrooms = _this48.propertyDetails[0].seller.Maxrooms;
-                var _latitude3 = _this48.propertyDetails[0].seller.latitude;
-                var _longitude3 = _this48.propertyDetails[0].seller.longitude;
+                _this53.seller = true;
+                _this53.sellerVal = _this53.propertyDetails[0].seller.Lookingpostcode;
+                _this53.test = _this53.sellerVal;
+                var _Lookingpostcode3 = _this53.propertyDetails[0].seller.Lookingpostcode;
+                var _PropertyFor3 = _this53.propertyDetails[0].seller.PropertyFor;
+                var _PropertyType3 = _this53.propertyDetails[0].seller.PropertyType;
+                var _MaxAmount3 = _this53.propertyDetails[0].seller.MaxAmount;
+                var _LookingTown3 = _this53.propertyDetails[0].seller.LookingTown;
+                var _Lookingstate = _this53.propertyDetails[0].seller.Lookingstate;
+                var _Maxbathrooms = _this53.propertyDetails[0].seller.Maxbathrooms;
+                var _PropertyCondition = _this53.propertyDetails[0].seller.PropertyCondition;
+                var _LookingAddress = _this53.propertyDetails[0].seller.LookingAddress;
+                var _ownership = _this53.propertyDetails[0].seller.ownership;
+                var _features = _this53.propertyDetails[0].seller.features;
+                var _UserId3 = _this53.propertyDetails[0].seller.UserId;
+                var _Maxreception = _this53.propertyDetails[0].seller.Maxreception;
+                var _Maxrooms = _this53.propertyDetails[0].seller.Maxrooms;
+                var _latitude3 = _this53.propertyDetails[0].seller.latitude;
+                var _longitude3 = _this53.propertyDetails[0].seller.longitude;
 
-                _this48.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3);
+                _this53.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3);
               }
             }
           });
@@ -9006,12 +9321,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this49 = this;
+          var _this54 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this49.propertyRequirementDetails.push({
+              _this54.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -9020,7 +9335,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this49.propertyDetails.push({
+              _this54.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -9621,62 +9936,62 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this50 = this;
+          var _this55 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this50.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
-            _this50.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
-            _this50.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
-            _this50.listingBuyer.Currentstate = params.get("Currentstate").trim();
-            _this50.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
-            _this50.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this50.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            _this50.listingBuyer.LookingTown = params.get("LookingTown").trim();
-            console.log(_this50.listingBuyer.LookingTown);
-            _this50.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
-            _this50.listingBuyer.Country = params.get("Country").trim();
-            _this50.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
-            console.log(_this50.listingBuyer.FinancialPosition);
-            _this50.listingBuyer.SearchRadius = params.get("SearchRadius").trim();
-            _this50.listingBuyer.PropertyType = params.get("PropertyType").trim();
-            _this50.listingBuyer.Roommin = params.get("Roommin").trim();
-            _this50.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
-            _this50.listingBuyer.MinAmount = params.get("MinAmount").trim();
-            _this50.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
-            _this50.listingBuyer.Validity = params.get("Validity").trim();
-            _this50.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
-            _this50.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
-            _this50.listingBuyer.Minreception = params.get("Minreception").trim();
-            _this50.listingBuyer.Maxreception = params.get("Maxreception").trim();
-            _this50.listingBuyer.Conditions = params.get("Conditions").trim();
-            _this50.listingBuyer.Ownership = params.get("Ownership").trim();
-            _this50.listingBuyer.features = params.get("features").trim();
-            _this50.docid = params.get("docid");
-            console.log(_this50.docid);
+            _this55.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
+            _this55.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
+            _this55.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
+            _this55.listingBuyer.Currentstate = params.get("Currentstate").trim();
+            _this55.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
+            _this55.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this55.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
+            _this55.listingBuyer.LookingTown = params.get("LookingTown").trim();
+            console.log(_this55.listingBuyer.LookingTown);
+            _this55.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
+            _this55.listingBuyer.Country = params.get("Country").trim();
+            _this55.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
+            console.log(_this55.listingBuyer.FinancialPosition);
+            _this55.listingBuyer.SearchRadius = params.get("SearchRadius").trim();
+            _this55.listingBuyer.PropertyType = params.get("PropertyType").trim();
+            _this55.listingBuyer.Roommin = params.get("Roommin").trim();
+            _this55.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
+            _this55.listingBuyer.MinAmount = params.get("MinAmount").trim();
+            _this55.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
+            _this55.listingBuyer.Validity = params.get("Validity").trim();
+            _this55.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
+            _this55.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
+            _this55.listingBuyer.Minreception = params.get("Minreception").trim();
+            _this55.listingBuyer.Maxreception = params.get("Maxreception").trim();
+            _this55.listingBuyer.Conditions = params.get("Conditions").trim();
+            _this55.listingBuyer.Ownership = params.get("Ownership").trim();
+            _this55.listingBuyer.features = params.get("features").trim();
+            _this55.docid = params.get("docid");
+            console.log(_this55.docid);
           });
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this50.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this50.userData));
+              _this55.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this55.userData));
 
-              _this50.LoggedIn();
+              _this55.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this50.LoggedOut();
+              _this55.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this50.lookup(_this50.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this50.data = data;
+              _this55.lookup(_this55.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this55.data = data;
               });
 
-              return _this50.lookup(_this50.listingBuyer.Lookingpostcode);
+              return _this55.lookup(_this55.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -9686,11 +10001,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this50.lookup(_this50.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this50.data = data;
+              _this55.lookup(_this55.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this55.data = data;
               });
 
-              return _this50.lookup(_this50.listingBuyer.Currentpostcode);
+              return _this55.lookup(_this55.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -9699,7 +10014,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this51 = this;
+          var _this56 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -9707,13 +10022,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.EditListingBuyerService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this51.uid) {
-                _this51.user.Name = element.data().Name;
-                _this51.user.email = element.data().email;
-                _this51.user.DOB = element.data().DOB.toDate();
-                _this51.user.Phone = element.data().Phone;
-                _this51.user.title = element.data().title;
-                console.log(_this51.user.DOB);
+              if (element.data().uid == _this56.uid) {
+                _this56.user.Name = element.data().Name;
+                _this56.user.email = element.data().email;
+                _this56.user.DOB = element.data().DOB.toDate();
+                _this56.user.Phone = element.data().Phone;
+                _this56.user.title = element.data().title;
+                console.log(_this56.user.DOB);
               }
             });
           });
@@ -9891,20 +10206,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this52 = this;
+          var _this57 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this52.postcodeCoordinates = data;
-            _this52.listingBuyer.longitude = _this52.postcodeCoordinates.result.longitude, _this52.listingBuyer.latitude = _this52.postcodeCoordinates.result.latitude, _this52.listingBuyer.UserId = _this52.userData.uid;
+            _this57.postcodeCoordinates = data;
+            _this57.listingBuyer.longitude = _this57.postcodeCoordinates.result.longitude, _this57.listingBuyer.latitude = _this57.postcodeCoordinates.result.latitude, _this57.listingBuyer.UserId = _this57.userData.uid;
           });
           this.listingBuyer.UserId = this.userData.uid;
           this.listingBuyer.longitude, this.listingBuyer.latitude, this.return = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(function (data) {
-            _this52.lookuplatlong();
+            _this57.lookuplatlong();
 
-            _this52.isLoading = false;
+            _this57.isLoading = false;
 
-            var dialogRef = _this52.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+            var dialogRef = _this57.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
           });
         }
       }, {
@@ -9962,44 +10277,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this53 = this;
+          var _this58 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this53.isLoading = false;
+            _this58.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this54 = this;
+          var _this59 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this54.isLoading = false;
+            _this59.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this55 = this;
+          var _this60 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this55.isLoading = false;
+            _this60.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this56 = this;
+          var _this61 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this56.isLoading = false;
+            _this61.isLoading = false;
           });
         }
       }, {
@@ -10021,17 +10336,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this57 = this;
+          var _this62 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this57.isLoading = false;
-            _this57.user.Name = displayName;
-            _this57.user.DOB = null;
-            _this57.user.Phone = null;
-            _this57.return = _this57.EditListingBuyerService.createUserCustomer(_this57.user).then(function (user) {
-              if (_this57.user != null) {
-                _this57.isLoading = false;
-                _this57.overlay = true;
+            _this62.isLoading = false;
+            _this62.user.Name = displayName;
+            _this62.user.DOB = null;
+            _this62.user.Phone = null;
+            _this62.return = _this62.EditListingBuyerService.createUserCustomer(_this62.user).then(function (user) {
+              if (_this62.user != null) {
+                _this62.isLoading = false;
+                _this62.overlay = true;
               }
             });
           });
@@ -10092,12 +10407,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "lookuplatlong",
         value: function lookuplatlong() {
-          var _this58 = this;
+          var _this63 = this;
 
           //Lookup Declared Function
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this58.postcodeCoordinates = data;
-            _this58.listingBuyer.longitude = _this58.postcodeCoordinates.result.longitude, _this58.listingBuyer.latitude = _this58.postcodeCoordinates.result.latitude, _this58.listingBuyer.UserId = _this58.userData.uid;
+            _this63.postcodeCoordinates = data;
+            _this63.listingBuyer.longitude = _this63.postcodeCoordinates.result.longitude, _this63.listingBuyer.latitude = _this63.postcodeCoordinates.result.latitude, _this63.listingBuyer.UserId = _this63.userData.uid;
           });
         }
       }]);
@@ -10655,22 +10970,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this59 = this;
+          var _this64 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this59.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this59.userData));
+              _this64.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this64.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this59.LoggedIn();
+              _this64.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this59.LoggedOut();
+              _this64.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -10678,11 +10993,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this59.lookup(_this59.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this59.data = data;
+              _this64.lookup(_this64.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this64.data = data;
               });
 
-              return _this59.lookup(_this59.listingSeller.Lookingpostcode);
+              return _this64.lookup(_this64.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -10692,54 +11007,54 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this59.lookup(_this59.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this59.data = data;
+              _this64.lookup(_this64.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this64.data = data;
               });
 
-              return _this59.lookup(_this59.listingSeller.Currentpostcode);
+              return _this64.lookup(_this64.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this59.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
-            _this59.listingSeller.LookingAddress = params.get("LookingAddress");
-            _this59.listingSeller.LookingTown = params.get("LookingTown");
-            _this59.listingSeller.Lookingstate = params.get("Lookingstate");
-            _this59.listingSeller.Country = params.get("Country");
-            _this59.listingSeller.PropertyType = params.get("PropertyType");
-            _this59.listingSeller.Maxrooms = params.get("Maxrooms");
-            _this59.listingSeller.MaxAmount = params.get("MaxAmount");
-            _this59.listingSeller.ownership = params.get("ownership");
-            _this59.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
-            _this59.listingSeller.Maxreception = params.get("Maxreception");
-            _this59.listingSeller.PropertyCondition = params.get("PropertyCondition");
-            _this59.Features = params.get("features");
-            _this59.listingSeller.Country = params.get("Country");
-            _this59.docid = params.get("sellerId");
-            _this59.listingSeller.PropertyFor = params.get("PropertyFor");
+            _this64.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
+            _this64.listingSeller.LookingAddress = params.get("LookingAddress");
+            _this64.listingSeller.LookingTown = params.get("LookingTown");
+            _this64.listingSeller.Lookingstate = params.get("Lookingstate");
+            _this64.listingSeller.Country = params.get("Country");
+            _this64.listingSeller.PropertyType = params.get("PropertyType");
+            _this64.listingSeller.Maxrooms = params.get("Maxrooms");
+            _this64.listingSeller.MaxAmount = params.get("MaxAmount");
+            _this64.listingSeller.ownership = params.get("ownership");
+            _this64.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
+            _this64.listingSeller.Maxreception = params.get("Maxreception");
+            _this64.listingSeller.PropertyCondition = params.get("PropertyCondition");
+            _this64.Features = params.get("features");
+            _this64.listingSeller.Country = params.get("Country");
+            _this64.docid = params.get("sellerId");
+            _this64.listingSeller.PropertyFor = params.get("PropertyFor");
           });
           this.lookingLatLong();
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this60 = this;
+          var _this65 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this60.uid) {
-                _this60.user.Name = element.data().Name;
-                _this60.user.Email = element.data().email;
-                _this60.user.DOB = element.data().DOB.toDate();
-                _this60.user.Phone = element.data().Phone;
-                _this60.user.title = element.data().title;
-                _this60.user.Currentpostcode = element.data().Currentpostcode;
-                _this60.user.CurrentAddress = element.data().Currentaddress;
-                _this60.user.CurrentTown = element.data().CurrentTowncity;
-                _this60.user.Currentstate = element.data().Currentstate;
+              if (element.data().uid == _this65.uid) {
+                _this65.user.Name = element.data().Name;
+                _this65.user.Email = element.data().email;
+                _this65.user.DOB = element.data().DOB.toDate();
+                _this65.user.Phone = element.data().Phone;
+                _this65.user.title = element.data().title;
+                _this65.user.Currentpostcode = element.data().Currentpostcode;
+                _this65.user.CurrentAddress = element.data().Currentaddress;
+                _this65.user.CurrentTown = element.data().CurrentTowncity;
+                _this65.user.Currentstate = element.data().Currentstate;
                 console.log(element.data().Name);
               }
             });
@@ -10760,21 +11075,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this61 = this;
+          var _this66 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this61.postcodeCoordinates = data;
-            _this61.listingSeller.longitude = _this61.postcodeCoordinates.result.longitude, _this61.listingSeller.latitude = _this61.postcodeCoordinates.result.latitude, _this61.listingSeller.UserId = _this61.userData.uid;
-            console.log(_this61.postcodeCoordinates);
+            _this66.postcodeCoordinates = data;
+            _this66.listingSeller.longitude = _this66.postcodeCoordinates.result.longitude, _this66.listingSeller.latitude = _this66.postcodeCoordinates.result.latitude, _this66.listingSeller.UserId = _this66.userData.uid;
+            console.log(_this66.postcodeCoordinates);
           });
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
           this.listingSeller.longitude, this.listingSeller.latitude, this.listingSeller.username = this.user.Name, this.listingSeller.usertitle = this.user.title;
           this.return = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(function (data) {
-            _this61.isLoading = false;
+            _this66.isLoading = false;
 
-            var dialogRef = _this61.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+            var dialogRef = _this66.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -10965,44 +11280,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this62 = this;
+          var _this67 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this62.isLoading = false;
+            _this67.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this63 = this;
+          var _this68 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this63.isLoading = false;
+            _this68.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this64 = this;
+          var _this69 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this64.isLoading = false;
+            _this69.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this65 = this;
+          var _this70 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this65.isLoading = false;
+            _this70.isLoading = false;
           });
         }
       }, {
@@ -11024,16 +11339,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this66 = this;
+          var _this71 = this;
 
           console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
-            _this66.isLoading = false;
-            _this66.user.Name = displayName;
-            _this66.user.DOB = null;
-            _this66.user.Phone = null;
-            _this66.return = _this66.fillFormsService.createUserCustomer(_this66.user).then(function (data) {
-              _this66.overlay = true;
+            _this71.isLoading = false;
+            _this71.user.Name = displayName;
+            _this71.user.DOB = null;
+            _this71.user.Phone = null;
+            _this71.return = _this71.fillFormsService.createUserCustomer(_this71.user).then(function (data) {
+              _this71.overlay = true;
               console.log(data);
             });
           });
@@ -11085,12 +11400,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "lookingLatLong",
         value: function lookingLatLong() {
-          var _this67 = this;
+          var _this72 = this;
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this67.postcodeCoordinates = data;
-            _this67.listingSeller.longitude = _this67.postcodeCoordinates.result.longitude, _this67.listingSeller.latitude = _this67.postcodeCoordinates.result.latitude, _this67.listingSeller.UserId = _this67.userData.uid;
-            console.log(_this67.postcodeCoordinates);
+            _this72.postcodeCoordinates = data;
+            _this72.listingSeller.longitude = _this72.postcodeCoordinates.result.longitude, _this72.listingSeller.latitude = _this72.postcodeCoordinates.result.latitude, _this72.listingSeller.UserId = _this72.userData.uid;
+            console.log(_this72.postcodeCoordinates);
           });
         }
       }]);
@@ -11500,17 +11815,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this68 = this;
+          var _this73 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this68.Lookingpostcode = params.get("Lookingpostcode");
-            _this68.ChainStatus = params.get("ChainStatus");
-            _this68.FinancialPosition = params.get("FinancialPosition");
-            _this68.Type = params.get("PropertyType");
-            _this68.Position = params.get("Position");
-            _this68.SearchRadius = params.get("SearchRadius");
-            _this68.MaxAmount = params.get("MaxAmount");
-            _this68.MinAmount = params.get("MinAmount");
+            _this73.Lookingpostcode = params.get("Lookingpostcode");
+            _this73.ChainStatus = params.get("ChainStatus");
+            _this73.FinancialPosition = params.get("FinancialPosition");
+            _this73.Type = params.get("PropertyType");
+            _this73.Position = params.get("Position");
+            _this73.SearchRadius = params.get("SearchRadius");
+            _this73.MaxAmount = params.get("MaxAmount");
+            _this73.MinAmount = params.get("MinAmount");
           });
         }
       }, {
@@ -11623,16 +11938,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this69 = this;
+          var _this74 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this69.Lookingpostcode = params.get("Lookingpostcode");
-            _this69.Type = params.get("PropertyType");
-            _this69.MaxAmount = params.get("MaxAmount");
-            _this69.Maxrooms = params.get("Maxrooms");
-            _this69.Maxreception = params.get("Maxreception");
-            _this69.PropertyCondition = params.get("PropertyCondition");
-            _this69.Maxbathrooms = params.get("Maxbathrooms");
+            _this74.Lookingpostcode = params.get("Lookingpostcode");
+            _this74.Type = params.get("PropertyType");
+            _this74.MaxAmount = params.get("MaxAmount");
+            _this74.Maxrooms = params.get("Maxrooms");
+            _this74.Maxreception = params.get("Maxreception");
+            _this74.PropertyCondition = params.get("PropertyCondition");
+            _this74.Maxbathrooms = params.get("Maxbathrooms");
           });
         }
       }, {
@@ -11776,12 +12091,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this70 = this;
+          var _this75 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this70.propertyRequirementDetails.push({
+              _this75.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -11790,13 +12105,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this70.propertyDetails.push({
+              _this75.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
             });
-            _this70.listingLength = _this70.propertyDetails.length + _this70.propertyRequirementDetails.length;
-            console.log(_this70.listingLength);
+            _this75.listingLength = _this75.propertyDetails.length + _this75.propertyRequirementDetails.length;
+            console.log(_this75.listingLength);
           });
         }
       }]);
@@ -11995,23 +12310,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerAwaitingDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this71 = this;
+          var _this76 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this71.Lookingpostcode = params.get("Lookingpostcode");
-            _this71.Lookingstate = params.get("Lookingstate");
-            _this71.LookingAddress = params.get("LookingAddress");
-            _this71.norooms = params.get("Roomsmax");
-            _this71.PropertyCondition = params.get("PropertyCondition");
-            _this71.MaxAmount = params.get("MaxAmount");
-            _this71.PropertyType = params.get("PropertyType");
-            _this71.ownership = params.get("ownership");
-            _this71.features = params.get("features");
-            _this71.matchStatus = params.get("matchStatus");
-            _this71.propertyId = params.get("propertyId");
-            _this71.expressed = params.get("expressed");
+            _this76.Lookingpostcode = params.get("Lookingpostcode");
+            _this76.Lookingstate = params.get("Lookingstate");
+            _this76.LookingAddress = params.get("LookingAddress");
+            _this76.norooms = params.get("Roomsmax");
+            _this76.PropertyCondition = params.get("PropertyCondition");
+            _this76.MaxAmount = params.get("MaxAmount");
+            _this76.PropertyType = params.get("PropertyType");
+            _this76.ownership = params.get("ownership");
+            _this76.features = params.get("features");
+            _this76.matchStatus = params.get("matchStatus");
+            _this76.propertyId = params.get("propertyId");
+            _this76.expressed = params.get("expressed");
           });
         }
       }, {
@@ -12064,7 +12379,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvbWF0Y2hlcy1idXllci9tYXRjaGVzLWJ1eWVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxzRUFBc0U7SUFDdEUsMkJBQTJCO0lBQzNCLHdCQUF3QjtBQUM1QjtBQUVBOzs7SUFHSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTs7SUFFSSxlQUFlO0lBQ2YsNkJBQTZCO0FBQ2pDO0FBQ0E7O0lBRUksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtDQUN0QixnQkFBZ0I7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7OztJQUc3QixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osZUFBZTtBQUNuQjtBQUNBOztJQUVJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0lBQ2YsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjs7SUFFbkIsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QjtBQUNKO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGVBQWU7SUFDZixRQUFRO0lBQ1IsU0FBUztJQUVULGFBQWE7SUFFYix1QkFBdUI7SUFFdkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixpQkFBaUI7SUFDakIsWUFBWTtFQUNkO0FBQ0E7SUFDRSx5Q0FBeUM7SUFDekMsYUFBYTtJQUNiLFlBQVk7SUFDWixRQUFRO0lBQ1IsZUFBZTtJQUNmLFdBQVc7RUFDYjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtFQUN6QjtBQUNBO0lBQ0UsWUFBWTtJQUNaO0FBQ0Y7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBRUE7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBQ0E7SUFDRSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtFQUNsQjtBQUNBOztJQUVFLFlBQVk7SUFDWiw0QkFBNEI7SUFDNUIsZUFBZTtFQUNqQjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCO0VBQ0Y7QUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsNkJBQTZCO0lBQzdCLFlBQVk7SUFDWixXQUFXO0lBQ1gsWUFBWTtJQUNaLFdBQVc7SUFDWCx1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC9NZW51L215TWF0Y2hlcy9tYXRjaGVzLWJ1eWVyL21hdGNoZXMtYnV5ZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9wZXJ0eS1kZXRhaWwtY29udGFpbmVyXG57XG4gICAgcGFkZGluZy1yaWdodDogOHB4O1xuICAgIHBhZGRpbmctbGVmdDogOHB4O1xuICAgIHBhZGRpbmctYm90dG9tOiA5cHg7XG59XG4ucHJvcGVydHktc2VsZWN0ZWQtZGV0YWlsLWJhY2tncm91bmRcbntcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoJy9hc3NldHMvSW1hZ2VzL3NlbGVjdGVkUHJvcGVydHliYWNrZ3JvdW5nLmpwZycpO1xuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvbnRhaW47XG59XG5cbi53cmFwcGVyLWRldGFpbC1jb250YWluZXJcbntcbiAgIFxuICAgIHBhZGRpbmctdG9wOiA1cHg7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbn1cbi5wcm9wZXJ0eS1kZXRhaWwtaDNcbntcbiAgICBmb250LXNpemU6IDI0cHg7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cbi5zdHJlZXRuYW1lIHtcbiAgICBwYWRkaW5nLXRvcDogMjBweDtcbn1cbi5kZXRhaWxzLXAtaGVhZGluZ3NcbnsgICBcbiAgICBmb250LXNpemU6IDE3cHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMHB4ICFpbXBvcnRhbnQ7XG59XG4uZGV0YWlscy1vdXRwdXQtcFxue1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbn1cbi50YWJsZSB0ZCwgLnRhYmxlIHRoIHtcbiAgICBwYWRkaW5nOiAuNzVyZW07XG4gICAgdmVydGljYWwtYWxpZ246IHRvcDtcbiBib3JkZXItdG9wOiBub25lO1xufVxuLmJ1dHRvbi1kZXRhaWxzIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICBcbiAgXG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDcwcHg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmJ0bi1jaGF0IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogNDQlO1xuICAgIGhlaWdodDogMzVweDtcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4uYnV0dG9uLWFza1xue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiA1MCU7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIGZvbnQtc2l6ZTogMTNweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxOHB4O1xufVxuLmNhcm91c2VsLWl0ZW0ge1xuICAgIGhlaWdodDogMTcwcHg7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi5jYXJvdXNlbC1pbmRpY2F0b3JzIGxpIHtcbiAgICB3aWR0aDogMTNweDtcbiAgICBoZWlnaHQ6IDEzcHg7XG4gICAgYm9yZGVyLXJhZGl1czogMTAwJTtcbn1cbi5zZWxlY3RlZC1idXR0b24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuZGl2I2RlbW8ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5pbWcubWF0Y2gtaW1hZ2VzIHtcbiAgICB3aWR0aDogMzAlO1xufVxuXG4uTWF0LWNhcmQtZGl2IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICBcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW46IDEwcHhcbn1cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDBweDtcbiAgICBsZWZ0OiAwcHg7XG4gICAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHotaW5kZXg6IDk7XG4gICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgb3BhY2l0eTogMC41O1xuICB9XG4gIC5jb250aW51ZS1mb3JtIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICB0b3A6IDB2aDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiAwcHg7XG4gIH1cbiAgLm5lc3RpbWF0ZS1sb2dvIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB9XG4gIGltZy5uZXN0aW1hdGUtbG9nbyB7XG4gICAgaGVpZ2h0OiAyMnZoO1xuICAgIH1cbiAgLm92ZXJsYXktdGV4dHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgfVxuICBcbiAgLm92ZXJsYXktdGV4dC10aGlyZHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgfVxuICAuY29udGludWUtdGV4dCB7XG4gICAgbWFyZ2luOiAyZW07XG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIHRleHQtYWxpZ246IGxlZnQ7XG4gIH1cbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXJcbiAge1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgfVxuICAuY29udGludWUtYnV0dG9uLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBib3JkZXI6IDNweCBzb2xpZCB3aGl0ZTtcbiAgICBtYXJnaW46IDB2aCAxNXZ3O1xuICAgIHBhZGRpbmc6IDAuNmVtXG4gIH1cbiAgLmNvbnRpbnVlLWZvcm0tZGF0YSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBtYXJnaW46IDBweDtcbiAgICBwYWRkaW5nOiAwcHg7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59Il19 */";
+    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n.new-buttons-dark-continue {\n  background-color: var(--DARK-BLUE-COLOR);\n  padding: 0.4em;\n  width: 40vw;\n color:white;\n margin: 0.5em;\n text-align: center;\n display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n.greater-sign\n{\n  color: var(--light-blue-color);\n  padding-left: 10px;\n  font-size: 1.5em;\n}\n.lessthan-sign\n{\n  color: var(--light-blue-color);\n  padding-right: 10px;\n  font-size: 1.5em;\n}\n.continue-button {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvbWF0Y2hlcy1idXllci9tYXRjaGVzLWJ1eWVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksa0JBQWtCO0lBQ2xCLGlCQUFpQjtJQUNqQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxzRUFBc0U7SUFDdEUsMkJBQTJCO0lBQzNCLHdCQUF3QjtBQUM1QjtBQUVBOzs7SUFHSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTs7SUFFSSxlQUFlO0lBQ2YsNkJBQTZCO0FBQ2pDO0FBQ0E7O0lBRUksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtDQUN0QixnQkFBZ0I7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7OztJQUc3QixxQkFBcUI7SUFDckIsZ0JBQWdCO0lBQ2hCLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixZQUFZO0lBQ1osZUFBZTtBQUNuQjtBQUNBOztJQUVJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0lBQ2YsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7QUFDM0I7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjs7SUFFbkIsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QjtBQUNKO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsWUFBWTtJQUNaLGVBQWU7SUFDZixRQUFRO0lBQ1IsU0FBUztJQUVULGFBQWE7SUFFYix1QkFBdUI7SUFFdkIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixpQkFBaUI7SUFDakIsWUFBWTtFQUNkO0FBQ0E7SUFDRSx5Q0FBeUM7SUFDekMsYUFBYTtJQUNiLFlBQVk7SUFDWixRQUFRO0lBQ1IsZUFBZTtJQUNmLFdBQVc7RUFDYjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtFQUN6QjtBQUNBO0lBQ0UsWUFBWTtJQUNaO0FBQ0Y7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBRUE7SUFDRSxZQUFZO0lBQ1osNEJBQTRCO0VBQzlCO0FBQ0E7SUFDRSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtFQUNsQjtBQUNBOztJQUVFLFlBQVk7SUFDWiw0QkFBNEI7SUFDNUIsZUFBZTtFQUNqQjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0lBQ2hCO0VBQ0Y7QUFDQTtJQUNFLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsNkJBQTZCO0lBQzdCLFlBQVk7SUFDWixXQUFXO0lBQ1gsWUFBWTtJQUNaLFdBQVc7SUFDWCx1QkFBdUI7QUFDM0I7QUFDQTtFQUNFLHdDQUF3QztFQUN4QyxjQUFjO0VBQ2QsV0FBVztDQUNaLFdBQVc7Q0FDWCxhQUFhO0NBQ2Isa0JBQWtCO0NBQ2xCLGFBQWE7SUFDViw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0VBRUUsOEJBQThCO0VBQzlCLGtCQUFrQjtFQUNsQixnQkFBZ0I7QUFDbEI7QUFDQTs7RUFFRSw4QkFBOEI7RUFDOUIsbUJBQW1CO0VBQ25CLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0Qix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvTWVudS9teU1hdGNoZXMvbWF0Y2hlcy1idXllci9tYXRjaGVzLWJ1eWVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJvcGVydHktZGV0YWlsLWNvbnRhaW5lclxue1xuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcbiAgICBwYWRkaW5nLWJvdHRvbTogOXB4O1xufVxuLnByb3BlcnR5LXNlbGVjdGVkLWRldGFpbC1iYWNrZ3JvdW5kXG57XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL0ltYWdlcy9zZWxlY3RlZFByb3BlcnR5YmFja2dyb3VuZy5qcGcnKTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xufVxuXG4ud3JhcHBlci1kZXRhaWwtY29udGFpbmVyXG57XG4gICBcbiAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG59XG4ucHJvcGVydHktZGV0YWlsLWgzXG57XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW07XG59XG4uc3RyZWV0bmFtZSB7XG4gICAgcGFkZGluZy10b3A6IDIwcHg7XG59XG4uZGV0YWlscy1wLWhlYWRpbmdzXG57ICAgXG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50O1xufVxuLmRldGFpbHMtb3V0cHV0LXBcbntcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4udGFibGUgdGQsIC50YWJsZSB0aCB7XG4gICAgcGFkZGluZzogLjc1cmVtO1xuICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XG4gYm9yZGVyLXRvcDogbm9uZTtcbn1cbi5idXR0b24tZGV0YWlscyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgXG4gIFxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiA3MHB4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5idG4tY2hhdCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDQ0JTtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xufVxuLmJ1dHRvbi1hc2tcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogNTAlO1xuICAgIGhlaWdodDogMzVweDtcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMThweDtcbn1cbi5jYXJvdXNlbC1pdGVtIHtcbiAgICBoZWlnaHQ6IDE3MHB4O1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uY2Fyb3VzZWwtaW5kaWNhdG9ycyBsaSB7XG4gICAgd2lkdGg6IDEzcHg7XG4gICAgaGVpZ2h0OiAxM3B4O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwMCU7XG59XG4uc2VsZWN0ZWQtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmRpdiNkZW1vIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuaW1nLm1hdGNoLWltYWdlcyB7XG4gICAgd2lkdGg6IDMwJTtcbn1cblxuLk1hdC1jYXJkLWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxMHB4XG59XG4ubG9hZGluZy1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwcHg7XG4gICAgbGVmdDogMHB4O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB6LWluZGV4OiA5O1xuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgIG9wYWNpdHk6IDAuNTtcbiAgfVxuICAuY29udGludWUtZm9ybSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgdG9wOiAwdmg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMHB4O1xuICB9XG4gIC5uZXN0aW1hdGUtbG9nbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxuICBpbWcubmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogMjJ2aDtcbiAgICB9XG4gIC5vdmVybGF5LXRleHR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgXG4gIC5vdmVybGF5LXRleHQtdGhpcmR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgLmNvbnRpbnVlLXRleHQge1xuICAgIG1hcmdpbjogMmVtO1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICB9XG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyXG4gIHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gIH1cbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYm9yZGVyOiAzcHggc29saWQgd2hpdGU7XG4gICAgbWFyZ2luOiAwdmggMTV2dztcbiAgICBwYWRkaW5nOiAwLjZlbVxuICB9XG4gIC5jb250aW51ZS1mb3JtLWRhdGEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgcGFkZGluZzogMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLm5ldy1idXR0b25zLWRhcmstY29udGludWUge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBwYWRkaW5nOiAwLjRlbTtcbiAgd2lkdGg6IDQwdnc7XG4gY29sb3I6d2hpdGU7XG4gbWFyZ2luOiAwLjVlbTtcbiB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmdyZWF0ZXItc2lnblxue1xuICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gIHBhZGRpbmctbGVmdDogMTBweDtcbiAgZm9udC1zaXplOiAxLjVlbTtcbn1cbi5sZXNzdGhhbi1zaWduXG57XG4gIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgcGFkZGluZy1yaWdodDogMTBweDtcbiAgZm9udC1zaXplOiAxLjVlbTtcbn1cbi5jb250aW51ZS1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbiJdfQ== */";
     /***/
   },
 
@@ -12130,50 +12445,51 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this._location = _location;
         this.now = new Date();
         this.sellerPropertys = [];
+        this.overLay = false;
       }
 
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this72 = this;
+          var _this77 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this72.Lookingpostcode = params.get("Lookingpostcode");
-            _this72.Lookingstate = params.get("Lookingstate");
-            _this72.LookingAddress = params.get("LookingAddress");
-            _this72.norooms = params.get("Roomsmax");
-            _this72.PropertyCondition = params.get("PropertyCondition");
-            _this72.MaxAmount = params.get("MaxAmount");
-            _this72.PropertyType = params.get("PropertyType");
-            _this72.ownership = params.get("ownership");
-            _this72.features = params.get("features");
-            _this72.matchStatus = params.get("matchStatus");
-            _this72.propertyId = params.get("propertyId");
-            _this72.expressed = params.get("expressed");
-            _this72.userId = params.get("UserId");
-            console.log(_this72.userId);
+            _this77.Lookingpostcode = params.get("Lookingpostcode");
+            _this77.Lookingstate = params.get("Lookingstate");
+            _this77.LookingAddress = params.get("LookingAddress");
+            _this77.norooms = params.get("Roomsmax");
+            _this77.PropertyCondition = params.get("PropertyCondition");
+            _this77.MaxAmount = params.get("MaxAmount");
+            _this77.PropertyType = params.get("PropertyType");
+            _this77.ownership = params.get("ownership");
+            _this77.features = params.get("features");
+            _this77.matchStatus = params.get("matchStatus");
+            _this77.propertyId = params.get("propertyId");
+            _this77.expressed = params.get("expressed");
+            _this77.userId = params.get("UserId");
+            console.log(_this77.userId);
           });
           this.MatchesBuyerService.getMatchesSellerProperties(this.userId).then(function (res) {
             res.forEach(function (element) {
               console.log(element.data());
-              _this72.sellerProperty = element.data();
+              _this77.sellerProperty = element.data();
             });
           });
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this73 = this;
+          var _this78 = this;
 
           this.return = this.MatchesBuyerService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this73.createSellerNotification();
+              _this78.createSellerNotification();
 
-              _this73.createOther();
+              _this78.createOther();
 
-              _this73.backClicked();
+              _this78.backClicked();
             }
           });
         }
@@ -12217,6 +12533,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.return = this.MatchesBuyerService.matchesBuyerCreate(this.userId, this.matchesSeller).then(function (data) {
             if (data == true) {}
           });
+        }
+      }, {
+        key: "backOverlay",
+        value: function backOverlay() {
+          this.overLay = false;
+        }
+      }, {
+        key: "connfirmOverLay",
+        value: function connfirmOverLay() {
+          this.overLay = true;
         }
       }]);
 
@@ -12609,15 +12935,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this74 = this;
+          var _this79 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this74.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
+            _this79.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
 
-            _this74.FinancialPosition = params.get("FinancialPosition");
-            _this74.Type = params.get("PropertyType");
-            _this74.Position = params.get("Position");
-            _this74.matchStatus = params.get("matchStatus");
+            _this79.FinancialPosition = params.get("FinancialPosition");
+            _this79.Type = params.get("PropertyType");
+            _this79.Position = params.get("Position");
+            _this79.matchStatus = params.get("matchStatus");
           });
         }
       }, {
@@ -12742,7 +13068,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this75 = this;
+          var _this80 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -12753,17 +13079,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this75.sellerProperty.push({
+              _this80.sellerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this75.propertyLength = _this75.sellerProperty.length;
-              console.log(_this75.sellerProperty);
+              _this80.propertyLength = _this80.sellerProperty.length;
+              console.log(_this80.sellerProperty);
             });
 
-            if (_this75.propertyLength > 0) {
-              _this75.getExpressedListingIds();
+            if (_this80.propertyLength > 0) {
+              _this80.getExpressedListingIds();
             }
           }); // Fetch details Seller
 
@@ -12771,28 +13097,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             res.forEach(function (element) {
               console.log(element.data());
 
-              _this75.buyerProperty.push({
+              _this80.buyerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this75.sellerLength = _this75.buyerProperty.length;
+              _this80.sellerLength = _this80.buyerProperty.length;
             });
 
-            if (_this75.sellerLength > 0) {
-              _this75.getExpressedListingIds();
+            if (_this80.sellerLength > 0) {
+              _this80.getExpressedListingIds();
             }
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this76 = this;
+          var _this81 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this76.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this76.distinctExpressedUid.push(item.data().propertyId);
+              if (_this81.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this81.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -13052,48 +13378,48 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this77 = this;
+          var _this82 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this77.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this77.ChainStatus = params.get("ChainStatus");
-            _this77.norooms = params.get("Roomsmax");
-            _this77.PropertyCondition = params.get("PropertyCondition");
-            _this77.Conditions = params.get("Conditions");
-            _this77.SearchRadius = params.get("SearchRadius");
-            _this77.MinAmount = params.get("MinAmount");
-            _this77.Type = params.get("Type");
-            _this77.MaxAmount = params.get("MaxAmount");
-            _this77.propertyId = params.get("propertyId");
-            _this77.UserId = params.get("UserId");
+            _this82.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this82.ChainStatus = params.get("ChainStatus");
+            _this82.norooms = params.get("Roomsmax");
+            _this82.PropertyCondition = params.get("PropertyCondition");
+            _this82.Conditions = params.get("Conditions");
+            _this82.SearchRadius = params.get("SearchRadius");
+            _this82.MinAmount = params.get("MinAmount");
+            _this82.Type = params.get("Type");
+            _this82.MaxAmount = params.get("MaxAmount");
+            _this82.propertyId = params.get("propertyId");
+            _this82.UserId = params.get("UserId");
           });
           this.AgentService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this77.agents.push(elements.data());
+              _this82.agents.push(elements.data());
 
-              _this77.testagents.push(elements.data().uid);
+              _this82.testagents.push(elements.data().uid);
             });
           });
           this.AgentService.getMatchesSellerProperties(this.UserId).then(function (res) {
             res.forEach(function (element) {
-              _this77.sellerProperty.push(element.data());
+              _this82.sellerProperty.push(element.data());
 
-              if (_this77.Lookingpostcode == element.data().Lookingpostcode.replace(/\s/g, "") && _this77.Type.replace(/\s/g, "") == element.data().PropertyType) {
-                _this77.sellerPropertyLookingAddress = element.data().LookingAddress.trim();
-                _this77.sellerPropertyLookingTown = element.data().LookingTown.replace(/\s/g, "");
-                _this77.sellerPropertyLookingpostcode = element.data().Lookingpostcode.replace(/\s/g, "");
-                _this77.sellerPropertyLookingstate = element.data().Lookingstate.replace(/\s/g, "");
-                _this77.sellerPropertyMaxAmount = element.data().MaxAmount.replace(/\s/g, "");
-                _this77.sellerPropertyMaxbathrooms = element.data().Maxbathrooms.replace(/\s/g, "");
-                _this77.sellerPropertyMaxreception = element.data().Maxreception.replace(/\s/g, "");
-                _this77.sellerPropertyMaxrooms = element.data().Maxrooms;
-                _this77.sellerPropertyPropertyCondition = element.data().PropertyCondition.replace(/\s/g, "");
-                _this77.sellerPropertyPropertyType = element.data().PropertyType;
-                _this77.sellerPropertyUserId = element.data().UserId;
-                _this77.sellerPropertyfeatures = element.data().features.replace(/\s/g, "");
-                _this77.sellerPropertyownership = element.data().ownership.replace(/\s/g, "");
+              if (_this82.Lookingpostcode == element.data().Lookingpostcode.replace(/\s/g, "") && _this82.Type.replace(/\s/g, "") == element.data().PropertyType) {
+                _this82.sellerPropertyLookingAddress = element.data().LookingAddress.trim();
+                _this82.sellerPropertyLookingTown = element.data().LookingTown.replace(/\s/g, "");
+                _this82.sellerPropertyLookingpostcode = element.data().Lookingpostcode.replace(/\s/g, "");
+                _this82.sellerPropertyLookingstate = element.data().Lookingstate.replace(/\s/g, "");
+                _this82.sellerPropertyMaxAmount = element.data().MaxAmount.replace(/\s/g, "");
+                _this82.sellerPropertyMaxbathrooms = element.data().Maxbathrooms.replace(/\s/g, "");
+                _this82.sellerPropertyMaxreception = element.data().Maxreception.replace(/\s/g, "");
+                _this82.sellerPropertyMaxrooms = element.data().Maxrooms;
+                _this82.sellerPropertyPropertyCondition = element.data().PropertyCondition.replace(/\s/g, "");
+                _this82.sellerPropertyPropertyType = element.data().PropertyType;
+                _this82.sellerPropertyUserId = element.data().UserId;
+                _this82.sellerPropertyfeatures = element.data().features.replace(/\s/g, "");
+                _this82.sellerPropertyownership = element.data().ownership.replace(/\s/g, "");
               }
             });
           });
@@ -13113,11 +13439,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this78 = this;
+          var _this83 = this;
 
           this.return = this.AgentService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this78.createSellerNotification();
+              _this83.createSellerNotification();
             }
           });
         }
@@ -13129,7 +13455,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
-          var _this79 = this;
+          var _this84 = this;
 
           console.log(this.UserId);
           this.notification = {
@@ -13140,7 +13466,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             propertyId: this.propertyId.trim()
           };
           this.return = this.AgentService.createNotification(this.UserId, this.notification).then(function (data) {
-            _this79._router.navigate(["/mymatches"]);
+            _this84._router.navigate(["/mymatches"]);
           });
         }
       }, {
@@ -13511,7 +13837,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvc2VsbGVyLW1hdGNoZXMvc2VsbGVyLW1hdGNoZXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLHNFQUFzRTtJQUN0RSwyQkFBMkI7SUFDM0Isd0JBQXdCO0FBQzVCO0FBRUE7OztJQUdJLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiw2QkFBNkI7QUFDakM7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0NBQ3RCLGdCQUFnQjtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2Qjs7O0lBRzdCLHFCQUFxQjtJQUNyQixnQkFBZ0I7SUFDaEIsc0JBQXNCO0lBQ3RCLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixVQUFVO0lBQ1YsWUFBWTtJQUNaLGVBQWU7SUFDZixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1COztJQUVuQixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCO0FBQ0o7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osZUFBZTtJQUNmLFFBQVE7SUFDUixTQUFTO0lBRVQsYUFBYTtJQUViLHVCQUF1QjtJQUV2QixtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQixZQUFZO0VBQ2Q7QUFDQTtJQUNFLHlDQUF5QztJQUN6QyxhQUFhO0lBQ2IsWUFBWTtJQUNaLFFBQVE7SUFDUixlQUFlO0lBQ2YsV0FBVztFQUNiO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0VBQ3pCO0FBQ0E7SUFDRSxZQUFZO0lBQ1o7QUFDRjtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFFQTtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFDQTtJQUNFLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0VBQ2xCO0FBQ0E7O0lBRUUsWUFBWTtJQUNaLDRCQUE0QjtJQUM1QixlQUFlO0VBQ2pCO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEI7RUFDRjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osV0FBVztJQUNYLHVCQUF1QjtBQUMzQiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbXlNYXRjaGVzL3NlbGxlci1tYXRjaGVzL3NlbGxlci1tYXRjaGVzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucHJvcGVydHktZGV0YWlsLWNvbnRhaW5lclxue1xuICAgIHBhZGRpbmctcmlnaHQ6IDhweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDhweDtcbiAgICBwYWRkaW5nLWJvdHRvbTogOXB4O1xufVxuLnByb3BlcnR5LXNlbGVjdGVkLWRldGFpbC1iYWNrZ3JvdW5kXG57XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKCcvYXNzZXRzL0ltYWdlcy9zZWxlY3RlZFByb3BlcnR5YmFja2dyb3VuZy5qcGcnKTtcbiAgICBiYWNrZ3JvdW5kLXBvc2l0aW9uOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xufVxuXG4ud3JhcHBlci1kZXRhaWwtY29udGFpbmVyXG57XG4gICBcbiAgICBwYWRkaW5nLXRvcDogNXB4O1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG59XG4ucHJvcGVydHktZGV0YWlsLWgzXG57XG4gICAgZm9udC1zaXplOiAyNHB4O1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW07XG59XG4uc3RyZWV0bmFtZSB7XG4gICAgcGFkZGluZy10b3A6IDIwcHg7XG59XG4uZGV0YWlscy1wLWhlYWRpbmdzXG57ICAgXG4gICAgZm9udC1zaXplOiAxN3B4O1xuICAgIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50O1xufVxuLmRldGFpbHMtb3V0cHV0LXBcbntcbiAgICBmb250LXNpemU6IDE1cHg7XG59XG4udGFibGUgdGQsIC50YWJsZSB0aCB7XG4gICAgcGFkZGluZzogLjc1cmVtO1xuICAgIHZlcnRpY2FsLWFsaWduOiB0b3A7XG4gYm9yZGVyLXRvcDogbm9uZTtcbn1cbi5idXR0b24tZGV0YWlscyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgXG4gIFxuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiA3MHB4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5idG4tY2hhdCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDQ0JTtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xufVxuLmJ1dHRvbi1hc2tcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMjQ0RDkzO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogNTAlO1xuICAgIGhlaWdodDogMzVweDtcbiAgICBmb250LXNpemU6IDEzcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMThweDtcbn1cbi5jYXJvdXNlbC1pdGVtIHtcbiAgICBoZWlnaHQ6IDE3MHB4O1xuICAgIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4uY2Fyb3VzZWwtaW5kaWNhdG9ycyBsaSB7XG4gICAgd2lkdGg6IDEzcHg7XG4gICAgaGVpZ2h0OiAxM3B4O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwMCU7XG59XG4uc2VsZWN0ZWQtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmRpdiNkZW1vIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuaW1nLm1hdGNoLWltYWdlcyB7XG4gICAgd2lkdGg6IDMwJTtcbn1cblxuLk1hdC1jYXJkLWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxMHB4XG59XG4ubG9hZGluZy1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwcHg7XG4gICAgbGVmdDogMHB4O1xuICAgIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICB6LWluZGV4OiA5O1xuICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgIG9wYWNpdHk6IDAuNTtcbiAgfVxuICAuY29udGludWUtZm9ybSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgaGVpZ2h0OiAxMDB2aDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgdG9wOiAwdmg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMHB4O1xuICB9XG4gIC5uZXN0aW1hdGUtbG9nbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgfVxuICBpbWcubmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogMjJ2aDtcbiAgICB9XG4gIC5vdmVybGF5LXRleHR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgXG4gIC5vdmVybGF5LXRleHQtdGhpcmR7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gIH1cbiAgLmNvbnRpbnVlLXRleHQge1xuICAgIG1hcmdpbjogMmVtO1xuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICB0ZXh0LWFsaWduOiBsZWZ0O1xuICB9XG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyXG4gIHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gIH1cbiAgLmNvbnRpbnVlLWJ1dHRvbi1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYm9yZGVyOiAzcHggc29saWQgd2hpdGU7XG4gICAgbWFyZ2luOiAwdmggMTV2dztcbiAgICBwYWRkaW5nOiAwLjZlbVxuICB9XG4gIC5jb250aW51ZS1mb3JtLWRhdGEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAvKiBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgKi9cbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgbWFyZ2luOiAwcHg7XG4gICAgcGFkZGluZzogMHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufSJdfQ== */";
+    __webpack_exports__["default"] = ".property-detail-container\n{\n    padding-right: 8px;\n    padding-left: 8px;\n    padding-bottom: 9px;\n}\n.property-selected-detail-background\n{\n    background-image: url('/assets/Images/selectedPropertybackgroung.jpg');\n    background-position: center;\n    background-size: contain;\n}\n.wrapper-detail-container\n{\n   \n    padding-top: 5px;\n    padding-bottom: 5px;\n}\n.property-detail-h3\n{\n    font-size: 24px;\n    text-align: center;\n    padding: 1em;\n}\n.streetname {\n    padding-top: 20px;\n}\n.details-p-headings\n{   \n    font-size: 17px;\n    margin-bottom: 0px !important;\n}\n.details-output-p\n{\n    font-size: 15px;\n}\n.table td, .table th {\n    padding: .75rem;\n    vertical-align: top;\n border-top: none;\n}\n.button-details {\n    display: flex;\n    /* justify-content: center; */\n  \n  \n    align-content: center;\n    margin-top: 70px;\n    flex-direction: column;\n    justify-content: space-around;\n    align-items: center;\n}\n.btn-chat {\n    background-color: #244D93;\n    color: white;\n    width: 44%;\n    height: 35px;\n    font-size: 15px;\n}\n.button-ask\n{\n    background-color: #244D93;\n    color: white;\n    width: 50%;\n    height: 35px;\n    font-size: 13px;\n    margin-bottom: 18px;\n}\n.carousel-item {\n    height: 170px;\n    background-size: cover;\n}\n.carousel-indicators li {\n    width: 13px;\n    height: 13px;\n    border-radius: 100%;\n}\n.selected-button {\n    display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\ndiv#demo {\n    display: flex;\n    justify-content: center;\n}\nimg.match-images {\n    width: 30%;\n}\n.Mat-card-div {\n    display: flex;\n    flex-direction: row;\n   \n    align-items: center;\n    justify-content: space-between;\n    margin: 10px\n}\n.loading-container {\n    width: 100%;\n    height: 100%;\n    position: fixed;\n    top: 0px;\n    left: 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 9;\n    background: black;\n    opacity: 0.5;\n  }\n.continue-form {\n    background-color: var(--light-blue-color);\n    height: 100vh;\n    width: 100vw;\n    top: 0vh;\n    position: fixed;\n    bottom: 0px;\n  }\n.nestimate-logo {\n    display: flex;\n    justify-content: center;\n  }\nimg.nestimate-logo {\n    height: 22vh;\n    }\n.overlay-text{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.overlay-text-third{\n    color: white;\n    font-family: 'Roboto-Medium';\n  }\n.continue-text {\n    margin: 2em;\n    font-size: 17px;\n    text-align: left;\n  }\n.continue-button-container\n  {\n    color: white;\n    font-family: 'Roboto-Medium';\n    font-size: 18px;\n  }\n.continue-button-container {\n    display: flex;\n    justify-content: center;\n    border: 3px solid white;\n    margin: 0vh 15vw;\n    padding: 0.6em\n  }\n.continue-form-data {\n    display: flex;\n    flex-direction: column;\n    /* justify-content: center; */\n    height: 100%;\n    margin: 0px;\n    padding: 0px;\n    width: 100%;\n    justify-content: center;\n}\n.new-buttons-dark-continue {\n  background-color: var(--DARK-BLUE-COLOR);\n  padding: 0.4em;\n  width: 40vw;\n color:white;\n margin: 0.5em;\n text-align: center;\n display: flex;\n    justify-content: space-evenly;\n    align-items: center;\n}\n.greater-sign\n{\n  color: var(--light-blue-color);\n  padding-left: 10px;\n  font-size: 1.5em;\n}\n.lessthan-sign\n{\n  color: var(--light-blue-color);\n  padding-right: 10px;\n  font-size: 1.5em;\n}\n.continue-button {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teU1hdGNoZXMvc2VsbGVyLW1hdGNoZXMvc2VsbGVyLW1hdGNoZXMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7SUFFSSxrQkFBa0I7SUFDbEIsaUJBQWlCO0lBQ2pCLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLHNFQUFzRTtJQUN0RSwyQkFBMkI7SUFDM0Isd0JBQXdCO0FBQzVCO0FBRUE7OztJQUdJLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGVBQWU7SUFDZiw2QkFBNkI7QUFDakM7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0NBQ3RCLGdCQUFnQjtBQUNqQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDZCQUE2Qjs7O0lBRzdCLHFCQUFxQjtJQUNyQixnQkFBZ0I7SUFDaEIsc0JBQXNCO0lBQ3RCLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osVUFBVTtJQUNWLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixVQUFVO0lBQ1YsWUFBWTtJQUNaLGVBQWU7SUFDZixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1COztJQUVuQixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCO0FBQ0o7QUFDQTtJQUNJLFdBQVc7SUFDWCxZQUFZO0lBQ1osZUFBZTtJQUNmLFFBQVE7SUFDUixTQUFTO0lBRVQsYUFBYTtJQUViLHVCQUF1QjtJQUV2QixtQkFBbUI7SUFDbkIsVUFBVTtJQUNWLGlCQUFpQjtJQUNqQixZQUFZO0VBQ2Q7QUFDQTtJQUNFLHlDQUF5QztJQUN6QyxhQUFhO0lBQ2IsWUFBWTtJQUNaLFFBQVE7SUFDUixlQUFlO0lBQ2YsV0FBVztFQUNiO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0VBQ3pCO0FBQ0E7SUFDRSxZQUFZO0lBQ1o7QUFDRjtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFFQTtJQUNFLFlBQVk7SUFDWiw0QkFBNEI7RUFDOUI7QUFDQTtJQUNFLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0VBQ2xCO0FBQ0E7O0lBRUUsWUFBWTtJQUNaLDRCQUE0QjtJQUM1QixlQUFlO0VBQ2pCO0FBQ0E7SUFDRSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7SUFDaEI7RUFDRjtBQUNBO0lBQ0UsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw2QkFBNkI7SUFDN0IsWUFBWTtJQUNaLFdBQVc7SUFDWCxZQUFZO0lBQ1osV0FBVztJQUNYLHVCQUF1QjtBQUMzQjtBQUNBO0VBQ0Usd0NBQXdDO0VBQ3hDLGNBQWM7RUFDZCxXQUFXO0NBQ1osV0FBVztDQUNYLGFBQWE7Q0FDYixrQkFBa0I7Q0FDbEIsYUFBYTtJQUNWLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFDQTs7RUFFRSw4QkFBOEI7RUFDOUIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtBQUNsQjtBQUNBOztFQUVFLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7QUFDckIiLCJmaWxlIjoic3JjL2FwcC9NZW51L215TWF0Y2hlcy9zZWxsZXItbWF0Y2hlcy9zZWxsZXItbWF0Y2hlcy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnByb3BlcnR5LWRldGFpbC1jb250YWluZXJcbntcbiAgICBwYWRkaW5nLXJpZ2h0OiA4cHg7XG4gICAgcGFkZGluZy1sZWZ0OiA4cHg7XG4gICAgcGFkZGluZy1ib3R0b206IDlweDtcbn1cbi5wcm9wZXJ0eS1zZWxlY3RlZC1kZXRhaWwtYmFja2dyb3VuZFxue1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgnL2Fzc2V0cy9JbWFnZXMvc2VsZWN0ZWRQcm9wZXJ0eWJhY2tncm91bmcuanBnJyk7XG4gICAgYmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xuICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcbn1cblxuLndyYXBwZXItZGV0YWlsLWNvbnRhaW5lclxue1xuICAgXG4gICAgcGFkZGluZy10b3A6IDVweDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xufVxuLnByb3BlcnR5LWRldGFpbC1oM1xue1xuICAgIGZvbnQtc2l6ZTogMjRweDtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMWVtO1xufVxuLnN0cmVldG5hbWUge1xuICAgIHBhZGRpbmctdG9wOiAyMHB4O1xufVxuLmRldGFpbHMtcC1oZWFkaW5nc1xueyAgIFxuICAgIGZvbnQtc2l6ZTogMTdweDtcbiAgICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcbn1cbi5kZXRhaWxzLW91dHB1dC1wXG57XG4gICAgZm9udC1zaXplOiAxNXB4O1xufVxuLnRhYmxlIHRkLCAudGFibGUgdGgge1xuICAgIHBhZGRpbmc6IC43NXJlbTtcbiAgICB2ZXJ0aWNhbC1hbGlnbjogdG9wO1xuIGJvcmRlci10b3A6IG5vbmU7XG59XG4uYnV0dG9uLWRldGFpbHMge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXG4gIFxuICBcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogNzBweDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uYnRuLWNoYXQge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiA0NCU7XG4gICAgaGVpZ2h0OiAzNXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbn1cbi5idXR0b24tYXNrXG57XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDUwJTtcbiAgICBoZWlnaHQ6IDM1cHg7XG4gICAgZm9udC1zaXplOiAxM3B4O1xuICAgIG1hcmdpbi1ib3R0b206IDE4cHg7XG59XG4uY2Fyb3VzZWwtaXRlbSB7XG4gICAgaGVpZ2h0OiAxNzBweDtcbiAgICBiYWNrZ3JvdW5kLXNpemU6IGNvdmVyO1xufVxuLmNhcm91c2VsLWluZGljYXRvcnMgbGkge1xuICAgIHdpZHRoOiAxM3B4O1xuICAgIGhlaWdodDogMTNweDtcbiAgICBib3JkZXItcmFkaXVzOiAxMDAlO1xufVxuLnNlbGVjdGVkLWJ1dHRvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG5kaXYjZGVtbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbmltZy5tYXRjaC1pbWFnZXMge1xuICAgIHdpZHRoOiAzMCU7XG59XG5cbi5NYXQtY2FyZC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgIFxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMTBweFxufVxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMHB4O1xuICAgIGxlZnQ6IDBweDtcbiAgICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgei1pbmRleDogOTtcbiAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICBvcGFjaXR5OiAwLjU7XG4gIH1cbiAgLmNvbnRpbnVlLWZvcm0ge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICAgIGhlaWdodDogMTAwdmg7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIHRvcDogMHZoO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDBweDtcbiAgfVxuICAubmVzdGltYXRlLWxvZ28ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cbiAgaW1nLm5lc3RpbWF0ZS1sb2dvIHtcbiAgICBoZWlnaHQ6IDIydmg7XG4gICAgfVxuICAub3ZlcmxheS10ZXh0e1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICB9XG4gIFxuICAub3ZlcmxheS10ZXh0LXRoaXJke1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICB9XG4gIC5jb250aW51ZS10ZXh0IHtcbiAgICBtYXJnaW46IDJlbTtcbiAgICBmb250LXNpemU6IDE3cHg7XG4gICAgdGV4dC1hbGlnbjogbGVmdDtcbiAgfVxuICAuY29udGludWUtYnV0dG9uLWNvbnRhaW5lclxuICB7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICB9XG4gIC5jb250aW51ZS1idXR0b24tY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGJvcmRlcjogM3B4IHNvbGlkIHdoaXRlO1xuICAgIG1hcmdpbjogMHZoIDE1dnc7XG4gICAgcGFkZGluZzogMC42ZW1cbiAgfVxuICAuY29udGludWUtZm9ybS1kYXRhIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgLyoganVzdGlmeS1jb250ZW50OiBjZW50ZXI7ICovXG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIG1hcmdpbjogMHB4O1xuICAgIHBhZGRpbmc6IDBweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5uZXctYnV0dG9ucy1kYXJrLWNvbnRpbnVlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgcGFkZGluZzogMC40ZW07XG4gIHdpZHRoOiA0MHZ3O1xuIGNvbG9yOndoaXRlO1xuIG1hcmdpbjogMC41ZW07XG4gdGV4dC1hbGlnbjogY2VudGVyO1xuIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5ncmVhdGVyLXNpZ25cbntcbiAgY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG59XG4ubGVzc3RoYW4tc2lnblxue1xuICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gIHBhZGRpbmctcmlnaHQ6IDEwcHg7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG59XG4uY29udGludWUtYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4iXX0= */";
     /***/
   },
 
@@ -13584,33 +13910,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.stateService = stateService;
         this.now = new Date();
         this.sellerProperty = [];
+        this.overLay = false;
       }
 
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this80 = this;
+          var _this85 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this80.Lookingpostcode = params.get("Lookingpostcode");
-            _this80.ChainStatus = params.get("ChainStatus");
-            _this80.Conditions = params.get("Conditions");
-            _this80.SearchRadius = params.get("SearchRadius");
-            _this80.Position = params.get("Position");
-            _this80.MinAmount = params.get("MinAmount");
-            _this80.MaxAmount = params.get("MaxAmount");
-            _this80.Type = params.get("PropertyType");
-            _this80.matchStatus = params.get("matchStatus");
-            console.log(_this80.matchStatus);
-            _this80.propertyId = params.get("propertyId");
-            _this80.expressed = params.get("expressed");
-            _this80.UserId = params.get("UserId");
+            _this85.Lookingpostcode = params.get("Lookingpostcode");
+            _this85.ChainStatus = params.get("ChainStatus");
+            _this85.Conditions = params.get("Conditions");
+            _this85.SearchRadius = params.get("SearchRadius");
+            _this85.Position = params.get("Position");
+            _this85.MinAmount = params.get("MinAmount");
+            _this85.MaxAmount = params.get("MaxAmount");
+            _this85.Type = params.get("PropertyType");
+            _this85.matchStatus = params.get("matchStatus");
+            console.log(_this85.matchStatus);
+            _this85.propertyId = params.get("propertyId");
+            _this85.expressed = params.get("expressed");
+            _this85.UserId = params.get("UserId");
           });
           this.SelectedMyMatchesService.getMatchesSellerProperties(this.UserId).then(function (res) {
             res.forEach(function (element) {
-              _this80.sellerProperty.push(element.data());
+              _this85.sellerProperty.push(element.data());
 
               console.log(element.data());
             });
@@ -13640,6 +13967,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             propertyId: this.propertyId.trim()
           };
           this.return = this.SelectedMyMatchesService.createNotification(this.UserId, this.notification).then(function (data) {});
+        }
+      }, {
+        key: "backOverlay",
+        value: function backOverlay() {
+          this.overLay = false;
+        }
+      }, {
+        key: "connfirmOverLay",
+        value: function connfirmOverLay() {
+          this.overLay = true;
         }
       }]);
 
@@ -13902,19 +14239,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this81 = this;
+          var _this86 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this81.uid) {
-                _this81.user.Name = element.data().Name;
-                _this81.user.Email = element.data().email;
-                _this81.user.Phone = element.data().Phone;
-                _this81.user.DOB = element.data().DOB.toDate();
-                _this81.user.Phone = element.data().Phone;
-                _this81.user.Address = element.data().Currentaddress;
+              if (element.data().uid == _this86.uid) {
+                _this86.user.Name = element.data().Name;
+                _this86.user.Email = element.data().email;
+                _this86.user.Phone = element.data().Phone;
+                _this86.user.DOB = element.data().DOB.toDate();
+                _this86.user.Phone = element.data().Phone;
+                _this86.user.Address = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -14129,19 +14466,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this82 = this;
+          var _this87 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this82.uid) {
-                _this82.user.Name = element.data().Name;
-                _this82.user.Email = element.data().email;
-                _this82.user.Phone = element.data().Phone;
-                _this82.user.DOB = element.data().DOB.toDate();
-                _this82.user.Currentaddress = element.data().Currentaddress;
-                _this82.user.prefrence = element.data().prefrence;
+              if (element.data().uid == _this87.uid) {
+                _this87.user.Name = element.data().Name;
+                _this87.user.Email = element.data().email;
+                _this87.user.Phone = element.data().Phone;
+                _this87.user.DOB = element.data().DOB.toDate();
+                _this87.user.Currentaddress = element.data().Currentaddress;
+                _this87.user.prefrence = element.data().prefrence;
               }
             });
           });
@@ -14149,13 +14486,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this83 = this;
+          var _this88 = this;
 
           this.isLoading = true;
           this.return = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this83.isLoading = false;
+            _this88.isLoading = false;
 
-            _this83.alert();
+            _this88.alert();
           });
         }
       }, {
@@ -14210,7 +14547,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700\");\n\n@font-face {\n  font-family: HelveticaNeueLight;\n  src: url('/assets/font/HelveticaNeueLight.ttf');\n}\n\n.main-navigation-bar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 3fr 1fr 1fr\n}\n\nul {\n  list-style-type: none;\n}\n\n.nav-div {\n  height: 100vh;\n  width: 100%;\n  background-color: white;\n  position: absolute;\n  top: 4em;\n  left: 0;\n  z-index: 200;\n}\n\n.content {\n  padding: 10px;\n  background-color: rgb(223,223,223);\n}\n\nlabel {\n  background: none transparent;\n  border: 2px solid black;\n  border-left: 0 solid transparent;\n  border-right: 0 solid transparent;\n  cursor: pointer;\n  display: block;\n  height: 19px;\n  position: absolute;\n  top: 19px;\n  left: 20px;\n  width: 36px;\n  transition: all .2s;\n}\n\nlabel::before {\n  background: black;\n  content: '';\n  height: 2px;\n  width: 36px;\n  transition: all .2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  /* top: 18px; */\n  margin-top: 6.2px;\n\n}\n\nlabel::after {\n  background: black;\n  content: '';\n  height: 4px;\n  left: 0;\n  position: absolute;\n  top: 6px;\n  opacity: 0;\n  visibility: hidden;\n  width: 100%;\n  transform: rotate(90deg);\n  transition: all .2s;\n}\n\n.menu-text {\n  position: absolute;\n  top: 40px;\n  left: 13px;\n  text-transform: uppercase;\n  margin-top: 2px;\n}\n\n.menu-text::after {\n  display: none;\n}\n\n.logo-nav {\n  width: 80%;\n}\n\n.notification-upper{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.user-img {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 38px;\n\n}\n\n.logout-icon {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.icon-size {\n  width: 70%;\n}\n\nimg.close-img {\n  width: 6%;\n  position: absolute;\n  top: 26px;\n  left: 25px;\n}\n\n.has-search .form-control {\n  padding-left: 2.375rem;\n}\n\n.has-search .form-control-feedback {\n  position: absolute;\n  z-index: 2;\n  display: block;\n  width: 2.375rem;\n  height: 2.375rem;\n  line-height: 2.375rem;\n  text-align: center;\n  pointer-events: none;\n  color: #aaa;\n}\n\n.nav-links {\n  margin: 0;\n  padding: 0px;\n}\n\n.main {\n  width: 50%;\n  margin: 50px auto;\n}\n\n.grid-container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  /* padding: 10px; */\n  margin-left: calc(-50vw + 50%);\n  margin-right: calc(-50vw + 50%);\n  margin-top: calc(-50vw + 50%);\n  align-items: center;\n}\n\n.grid-container>div {\n\n\n  text-align: Left;\n  font-size: 18.5px;\n  padding: 17px;\n\n\n}\n\n.grid-container:hover {\n  background-color: #EBEBEB;\n  text-decoration: none;\n}\n\nimg.nav-link-icon {\n  float: right;\n}\n\n.nav-links-text {\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Bold';\n}\n\n.search-grid-conatiner {\n  display: grid;\n  grid-template-columns: 11fr;\n}\n\n.search-grid-conatiner>div {\n  font-size: 18.5px;\n  padding: 14px;\n  padding-top: 5px;\n  padding-bottom: 11px;\n  background-color: #FBF4EF;\n}\n\n.nav-link-icon-search {\n  width: 38px;\n  padding: 4px;\n  margin-top: -4px;\n  border: 1px solid lightgrey;\n  background-color: white;\n  height: 56.5px;\n}\n\ni.fa.fa-user {\n  display: flex;\n  flex-direction: column;\n\n}\n\nspan.log-out-text {\n  font-size: 12px;\n  text-transform: uppercase;\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\nimg.home-menu-image {\n  height: 4vh;\n  margin: 6px;\n}\n\np.nitification-red {\n  position: absolute;\n  background: red;\n  border-radius: 50%;\n  top: 4vh;\n  right: 21vw;\n  height: 3vh;\n  width: 4vw;\n  text-align: center;\n  z-index: 1;\n  color: white\n}\n\nimg.plus-img {\n  width: 50%;\n  margin-left: 3vw;\n}\n\n/*# sourceMappingURL=style.css.map */\n\nspan.red-text {\n  background-color: red;\n  width: 50%;\n  text-align: center;\n  border-radius: 50%;\n  color: white;\n}\n\n.menu-toogle,\n.plus-icon,\n.icon-size,\n.imge-logo-header,\n.notification-upper,\n.logout {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.modal-backdrop.show {\n  display: none;\n  z-index: -1;\n}\n\n.nav-login {\n  position: absolute;\n  z-index: 1000;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  background: white;\n  top: 0px;\n  position: fixed;\n}\n\n@media only screen and (min-width:768px) {\n  .icon-size {\n    width: 50% !important;\n  }\n\n  .logo-nav {\n    width: 60%;\n  }\n\n  .content {\n    padding: 0px;\n  }\n}\n\n.btn-google {\n  background-color: #DD4B33;\n  color: white;\n  width: 36%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n\n}\n\n.btn-facebook {\n  background-color: #244D93;\n  color: white;\n  width: 36%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n\n}\n\n.social-button {\n  display: flex;\n  /* justify-content: center; */\n  justify-content: space-evenly;\n  align-items: center;\n\n}\n\n.color-signup {\n  color: #244D93;\n}\n\n.btn-social-login {\n  width: 100%;\n  background-color: #244D93;\n  color: white;\n  margin-top: 3%;\n  border-radius: 19px;\n  padding: 0.5em;\n\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n\n.sign-in-main {\n  display: block;\n}\n\n.user-cross {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\nimg.button-cross {\n  position: absolute;\n  right: 10px;\n  margin: 0px 10px;\n  width: 16px;\n}\n\n.property-con-form {\n  display: flex;\n  flex-direction: column;\n  font-size: 14px;\n  text-align: left;\n \n}\n\n.login-desktop-button\n{\n  display: none;\n}\n\n@media screen and (min-width:701px)\n{\n  .mobile-wrapper {\n    display: none;\n}\n.login-desktop-button\n{\n  display: block;\n}\n.login-button-main {\n  position: absolute;\n  top: 12vh;\n  z-index: 1000;\n  right: 3vw;\n  background-color: #00737D;\n    color: white;\n    padding: 10px 20px;\n}\n.Login-buton-text\n{\n  margin-bottom: 0px;\n  border: 1px solid white;\n  padding: 7px 15px;\n    text-transform: uppercase;\n}\n}\n\n.notification-overlay\n{\n  background-color: white;\n  height: 100vh;\n  width: 100%;\n}\n\n.mobile-wrapper {\n  background-color: rgb(223,223,223);\n}\n\n.input-container { /* IE10 */\n  display: flex;\n  width: 100%;\n  margin-bottom: 1em;\n}\n\n.icon {\n  padding: 10px;\n  background: var( --DARK-BLUE-COLOR);\n  color: white;\n  min-width: 50px;\n  text-align: center;\n}\n\n.input-field {\n  width: 100%;\n  padding: 10px;\n  outline: none;\n}\n\n.input-field:focus {\n  border: 2px solid var( --DARK-BLUE-COLOR);\n}\n\n.input-group {\n \n\n  display: block;\n \n}\n\n.input-field:hover {\n  border: 2px solid var( --DARK-BLUE-COLOR);\n}\n\n.hyper:hover\n{\n  cursor: pointer;\n}\n\n.policy\n{\n  text-align: center;\n}\n\n.has-search .form-control {\n  padding-left: 2.375rem;\n}\n\n.has-search .form-control-feedback {\n  position: absolute;\n  z-index: 2;\n  display: block;\n  width: 2.375rem;\n\n  line-height: 3rem;\n\n\n  pointer-events: none;\n  display: flex;\n  color: #aaa;\n  font-size: 22px;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n\n}\n\n.form-control\n{\n  height: 7vh;\n}\n\n.form-group {\n  margin-bottom: 1rem;\n  margin-top: 1.5em;\n    margin-bottom: 1rem;\n    margin-top: 1.5em;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: flex-start;\n\n}\n\n.notification {\n  display: grid;\n  grid-template-columns: 1fr 3fr;\n  align-items: center;\n  padding: 0.4em 0em;\n}\n\nimg.icon {\n  width: 40%;\n  text-align: center;\n  background-color: transparent;\n}\n\n.notification-icon {\n  display: flex;\n  justify-content: center;\n}\n\n.main-grid-notifucation {\n  background-color: white;\n  /* position: absolute; */\n  z-index: 3;\n  height: 100vh;\n  /* top: 10vh; */\n  overflow: hidden;\n}\n\n.read-notfication{\n  background-color: aquamarine;\n\n  margin-bottom: 4px;\n} \n\n\n\n\n\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9uYXZpZ2F0aW9uQmFyL25hdmlnYXRpb25CYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxRUFBcUU7O0FBRXJFO0VBQ0UsK0JBQStCO0VBQy9CLCtDQUErQztBQUNqRDs7QUFFQTtFQUNFLGFBQWE7RUFDYjtBQUNGOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixPQUFPO0VBQ1AsWUFBWTtBQUNkOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1Qix1QkFBdUI7RUFDdkIsZ0NBQWdDO0VBQ2hDLGlDQUFpQztFQUNqQyxlQUFlO0VBQ2YsY0FBYztFQUNkLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVixXQUFXO0VBRVgsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFdBQVc7RUFDWCxXQUFXO0VBQ1gsV0FBVztFQUNYLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsaUJBQWlCOztBQUVuQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsV0FBVztFQUVYLHdCQUF3QjtFQUV4QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVix5QkFBeUI7RUFDekIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQiw2Q0FBNkM7RUFDN0Msa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLGVBQWU7O0FBRWpCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLGNBQWM7RUFDZCxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFNBQVM7RUFDVCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtDQUFrQztFQUNsQyxtQkFBbUI7RUFDbkIsOEJBQThCO0VBQzlCLCtCQUErQjtFQUMvQiw2QkFBNkI7RUFDN0IsbUJBQW1CO0FBQ3JCOztBQUVBOzs7RUFHRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGFBQWE7OztBQUdmOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QiwwQkFBMEI7QUFDNUI7O0FBR0E7RUFDRSxhQUFhO0VBQ2IsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsb0JBQW9CO0VBQ3BCLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLDJCQUEyQjtFQUMzQix1QkFBdUI7RUFDdkIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7O0FBRXhCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLHlCQUF5Qjs7QUFFM0I7O0FBS0E7RUFDRSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLFNBQVM7RUFDVCxVQUFVO0VBQ1YsV0FBVztFQUNYLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIsWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLG9CQUFvQjtFQUNwQixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0VBQ1YsVUFBVTtFQUNWLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsYUFBYTtFQUNiLG1CQUFtQjs7QUFFckI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsV0FBVztBQUNiOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFdBQVc7RUFDWCxXQUFXO0VBQ1gsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1Y7QUFDRjs7QUFFQTtFQUNFLFVBQVU7RUFDVixnQkFBZ0I7QUFDbEI7O0FBRUEsb0NBQW9DOztBQUNwQztFQUNFLHFCQUFxQjtFQUNyQixVQUFVO0VBQ1Ysa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixZQUFZO0FBQ2Q7O0FBRUE7Ozs7OztFQU1FLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2IsYUFBYTtFQUViLGFBQWE7RUFFYix1QkFBdUI7RUFFdkIsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxpQkFBaUI7RUFDakIsUUFBUTtFQUNSLGVBQWU7QUFDakI7O0FBRUE7RUFDRTtJQUNFLHFCQUFxQjtFQUN2Qjs7RUFFQTtJQUNFLFVBQVU7RUFDWjs7RUFFQTtJQUNFLFlBQVk7RUFDZDtBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTs7QUFFZDs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7O0FBRWQ7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLDZCQUE2QjtFQUM3QixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIsY0FBYzs7O0FBR2hCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFVBQVU7RUFDVixXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixlQUFlO0VBQ2YsUUFBUTtFQUNSLFNBQVM7RUFFVCxhQUFhO0VBRWIsdUJBQXVCO0VBRXZCLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGVBQWU7RUFDZixnQkFBZ0I7O0FBRWxCOztBQUNBOztFQUVFLGFBQWE7QUFDZjs7QUFDQTs7RUFFRTtJQUNFLGFBQWE7QUFDakI7QUFDQTs7RUFFRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULGFBQWE7RUFDYixVQUFVO0VBQ1YseUJBQXlCO0lBQ3ZCLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7QUFDQTs7RUFFRSxrQkFBa0I7RUFDbEIsdUJBQXVCO0VBQ3ZCLGlCQUFpQjtJQUNmLHlCQUF5QjtBQUM3QjtBQUNBOztBQUNBOztFQUVFLHVCQUF1QjtFQUN2QixhQUFhO0VBQ2IsV0FBVztBQUNiOztBQUNBO0VBQ0Usa0NBQWtDO0FBQ3BDOztBQUNBLG1CQUN3QixTQUFTO0VBQy9CLGFBQWE7RUFDYixXQUFXO0VBQ1gsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1DQUFtQztFQUNuQyxZQUFZO0VBQ1osZUFBZTtFQUNmLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2IsYUFBYTtBQUNmOztBQUVBO0VBQ0UseUNBQXlDO0FBQzNDOztBQUNBOzs7RUFHRSxjQUFjOztBQUVoQjs7QUFFQTtFQUNFLHlDQUF5QztBQUMzQzs7QUFDQTs7RUFFRSxlQUFlO0FBQ2pCOztBQUNBOztFQUVFLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsY0FBYztFQUNkLGVBQWU7O0VBRWYsaUJBQWlCOzs7RUFHakIsb0JBQW9CO0VBQ3BCLGFBQWE7RUFDYixXQUFXO0VBQ1gsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsdUJBQXVCOztBQUV6Qjs7QUFDQTs7RUFFRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsaUJBQWlCO0lBQ2YsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQiwyQkFBMkI7O0FBRS9COztBQUNBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQiw2QkFBNkI7QUFDL0I7O0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0FBQ3pCOztBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLHdCQUF3QjtFQUN4QixVQUFVO0VBQ1YsYUFBYTtFQUNiLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7O0FBQ0E7RUFDRSw0QkFBNEI7O0VBRTVCLGtCQUFrQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbmF2aWdhdGlvbkJhci9uYXZpZ2F0aW9uQmFyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybChcImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1OdW5pdG86NDAwLDcwMFwiKTtcblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2FOZXVlTGlnaHQ7XG4gIHNyYzogdXJsKCcvYXNzZXRzL2ZvbnQvSGVsdmV0aWNhTmV1ZUxpZ2h0LnR0ZicpO1xufVxuXG4ubWFpbi1uYXZpZ2F0aW9uLWJhciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAzZnIgMWZyIDFmclxufVxuXG51bCB7XG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcbn1cblxuLm5hdi1kaXYge1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0ZW07XG4gIGxlZnQ6IDA7XG4gIHotaW5kZXg6IDIwMDtcbn1cblxuLmNvbnRlbnQge1xuICBwYWRkaW5nOiAxMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjIzLDIyMywyMjMpO1xufVxuXG5sYWJlbCB7XG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xuICBib3JkZXItbGVmdDogMCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgYm9yZGVyLXJpZ2h0OiAwIHNvbGlkIHRyYW5zcGFyZW50O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDE5cHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAxOXB4O1xuICBsZWZ0OiAyMHB4O1xuICB3aWR0aDogMzZweDtcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgLjJzO1xuICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xufVxuXG5sYWJlbDo6YmVmb3JlIHtcbiAgYmFja2dyb3VuZDogYmxhY2s7XG4gIGNvbnRlbnQ6ICcnO1xuICBoZWlnaHQ6IDJweDtcbiAgd2lkdGg6IDM2cHg7XG4gIHRyYW5zaXRpb246IGFsbCAuMnM7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgLyogdG9wOiAxOHB4OyAqL1xuICBtYXJnaW4tdG9wOiA2LjJweDtcblxufVxuXG5sYWJlbDo6YWZ0ZXIge1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgY29udGVudDogJyc7XG4gIGhlaWdodDogNHB4O1xuICBsZWZ0OiAwO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNnB4O1xuICBvcGFjaXR5OiAwO1xuICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gIHdpZHRoOiAxMDAlO1xuICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcbiAgdHJhbnNmb3JtOiByb3RhdGUoOTBkZWcpO1xuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAuMnM7XG4gIHRyYW5zaXRpb246IGFsbCAuMnM7XG59XG5cbi5tZW51LXRleHQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDBweDtcbiAgbGVmdDogMTNweDtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luLXRvcDogMnB4O1xufVxuXG4ubWVudS10ZXh0OjphZnRlciB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5sb2dvLW5hdiB7XG4gIHdpZHRoOiA4MCU7XG59XG5cbi5ub3RpZmljYXRpb24tdXBwZXJ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4udXNlci1pbWcge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGZvbnQ6IG5vcm1hbCBub3JtYWwgbm9ybWFsIDE0cHgvMSBGb250QXdlc29tZTtcbiAgZm9udC1zaXplOiBpbmhlcml0O1xuICB0ZXh0LXJlbmRlcmluZzogYXV0bztcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIGZvbnQtc2l6ZTogMzhweDtcblxufVxuXG4ubG9nb3V0LWljb24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uaWNvbi1zaXplIHtcbiAgd2lkdGg6IDcwJTtcbn1cblxuaW1nLmNsb3NlLWltZyB7XG4gIHdpZHRoOiA2JTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDI2cHg7XG4gIGxlZnQ6IDI1cHg7XG59XG5cbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wge1xuICBwYWRkaW5nLWxlZnQ6IDIuMzc1cmVtO1xufVxuXG4uaGFzLXNlYXJjaCAuZm9ybS1jb250cm9sLWZlZWRiYWNrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAyO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDIuMzc1cmVtO1xuICBoZWlnaHQ6IDIuMzc1cmVtO1xuICBsaW5lLWhlaWdodDogMi4zNzVyZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIGNvbG9yOiAjYWFhO1xufVxuXG4ubmF2LWxpbmtzIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwcHg7XG59XG5cbi5tYWluIHtcbiAgd2lkdGg6IDUwJTtcbiAgbWFyZ2luOiA1MHB4IGF1dG87XG59XG5cbi5ncmlkLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDJmciAxZnI7XG4gIC8qIHBhZGRpbmc6IDEwcHg7ICovXG4gIG1hcmdpbi1sZWZ0OiBjYWxjKC01MHZ3ICsgNTAlKTtcbiAgbWFyZ2luLXJpZ2h0OiBjYWxjKC01MHZ3ICsgNTAlKTtcbiAgbWFyZ2luLXRvcDogY2FsYygtNTB2dyArIDUwJSk7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5ncmlkLWNvbnRhaW5lcj5kaXYge1xuXG5cbiAgdGV4dC1hbGlnbjogTGVmdDtcbiAgZm9udC1zaXplOiAxOC41cHg7XG4gIHBhZGRpbmc6IDE3cHg7XG5cblxufVxuXG4uZ3JpZC1jb250YWluZXI6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUJFQkVCO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59XG5cbmltZy5uYXYtbGluay1pY29uIHtcbiAgZmxvYXQ6IHJpZ2h0O1xufVxuXG4ubmF2LWxpbmtzLXRleHQge1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG5cblxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMTFmcjtcbn1cblxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lcj5kaXYge1xuICBmb250LXNpemU6IDE4LjVweDtcbiAgcGFkZGluZzogMTRweDtcbiAgcGFkZGluZy10b3A6IDVweDtcbiAgcGFkZGluZy1ib3R0b206IDExcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNGQkY0RUY7XG59XG5cbi5uYXYtbGluay1pY29uLXNlYXJjaCB7XG4gIHdpZHRoOiAzOHB4O1xuICBwYWRkaW5nOiA0cHg7XG4gIG1hcmdpbi10b3A6IC00cHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JleTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGhlaWdodDogNTYuNXB4O1xufVxuXG5pLmZhLmZhLXVzZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuXG59XG5cbnNwYW4ubG9nLW91dC10ZXh0IHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuXG59XG5cblxuXG5cbmkuZmEuZmEtdXNlci5pbnB1dC1ncm91cC10ZXh0Lm5hdi1sb2dpbi1mb3JtIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBmb250LXNpemU6IDIzcHg7XG4gIGxlZnQ6IDBweDtcbiAgd2lkdGg6IDEwJTtcbiAgei1pbmRleDogMTA7XG4gIG1hcmdpbi10b3A6IC00JTtcbn1cblxuLnNvY2lhbC1sb2dpbi50ZXh0LWNlbnRlciB7XG4gIHBhZGRpbmc6IDE1cHg7XG59XG5cbi5jaGVja2JveCB7XG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLWxlZnQ6IG5vbmU7XG4gIGJvcmRlci1yaWdodDogbm9uZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICAvKiBkaXNwbGF5OiBibG9jazsgKi9cbiAgaGVpZ2h0OiBhdXRvO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogbm9uZTtcbiAgbGVmdDogbm9uZTtcbiAgcmlnaHQ6IDlweDtcbiAgd2lkdGg6IG5vbmU7XG4gIC8qIHRyYW5zaXRpb246IGFsbCAuMnM7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG5cbn1cblxuLmV4YW1wbGUtZm9ybSB7XG4gIG1pbi13aWR0aDogMTUwcHg7XG4gIG1heC13aWR0aDogNTAwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJvcmRlcjogbm9uZTtcbn1cblxuaW1nLmhvbWUtbWVudS1pbWFnZSB7XG4gIGhlaWdodDogNHZoO1xuICBtYXJnaW46IDZweDtcbn1cblxucC5uaXRpZmljYXRpb24tcmVkIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBiYWNrZ3JvdW5kOiByZWQ7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgdG9wOiA0dmg7XG4gIHJpZ2h0OiAyMXZ3O1xuICBoZWlnaHQ6IDN2aDtcbiAgd2lkdGg6IDR2dztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB6LWluZGV4OiAxO1xuICBjb2xvcjogd2hpdGVcbn1cblxuaW1nLnBsdXMtaW1nIHtcbiAgd2lkdGg6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IDN2dztcbn1cblxuLyojIHNvdXJjZU1hcHBpbmdVUkw9c3R5bGUuY3NzLm1hcCAqL1xuc3Bhbi5yZWQtdGV4dCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbiAgd2lkdGg6IDUwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLm1lbnUtdG9vZ2xlLFxuLnBsdXMtaWNvbixcbi5pY29uLXNpemUsXG4uaW1nZS1sb2dvLWhlYWRlcixcbi5ub3RpZmljYXRpb24tdXBwZXIsXG4ubG9nb3V0IHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5tb2RhbC1iYWNrZHJvcC5zaG93IHtcbiAgZGlzcGxheTogbm9uZTtcbiAgei1pbmRleDogLTE7XG59XG5cbi5uYXYtbG9naW4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDEwMDA7XG4gIGhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZDogd2hpdGU7XG4gIHRvcDogMHB4O1xuICBwb3NpdGlvbjogZml4ZWQ7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3NjhweCkge1xuICAuaWNvbi1zaXplIHtcbiAgICB3aWR0aDogNTAlICFpbXBvcnRhbnQ7XG4gIH1cblxuICAubG9nby1uYXYge1xuICAgIHdpZHRoOiA2MCU7XG4gIH1cblxuICAuY29udGVudCB7XG4gICAgcGFkZGluZzogMHB4O1xuICB9XG59XG5cbi5idG4tZ29vZ2xlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0RENEIzMztcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzYlO1xuICBoZWlnaHQ6IDM1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAwcHg7XG4gIHBhZGRpbmc6IDBweDtcblxufVxuXG4uYnRuLWZhY2Vib29rIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzYlO1xuICBoZWlnaHQ6IDM1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAwcHg7XG4gIHBhZGRpbmc6IDBweDtcblxufVxuXG4uc29jaWFsLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxufVxuXG4uY29sb3Itc2lnbnVwIHtcbiAgY29sb3I6ICMyNDREOTM7XG59XG5cbi5idG4tc29jaWFsLWxvZ2luIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgbWFyZ2luLXRvcDogMyU7XG4gIGJvcmRlci1yYWRpdXM6IDE5cHg7XG4gIHBhZGRpbmc6IDAuNWVtO1xuXG5cbn1cblxuaS5mYS5mYS11c2VyLmlucHV0LWdyb3VwLXRleHQubmF2LWxvZ2luLWZvcm0ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGZvbnQtc2l6ZTogMjNweDtcbiAgbGVmdDogMHB4O1xuICB3aWR0aDogMTAlO1xuICB6LWluZGV4OiAxMDtcbiAgbWFyZ2luLXRvcDogLTQlO1xufVxuXG4uc29jaWFsLWxvZ2luLnRleHQtY2VudGVyIHtcbiAgcGFkZGluZzogMTVweDtcbn1cblxuLmNoZWNrYm94IHtcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItbGVmdDogbm9uZTtcbiAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIC8qIGRpc3BsYXk6IGJsb2NrOyAqL1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiBub25lO1xuICBsZWZ0OiBub25lO1xuICByaWdodDogOXB4O1xuICB3aWR0aDogbm9uZTtcbiAgLyogdHJhbnNpdGlvbjogYWxsIC4yczsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuXG4uZXhhbXBsZS1mb3JtIHtcbiAgbWluLXdpZHRoOiAxNTBweDtcbiAgbWF4LXdpZHRoOiA1MDBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyOiBub25lO1xufVxuXG4ubG9hZGluZy1jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBsZWZ0OiAwcHg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB6LWluZGV4OiA5O1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgb3BhY2l0eTogMC41O1xufVxuXG4uc2lnbi1pbi1tYWluIHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi51c2VyLWNyb3NzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbmltZy5idXR0b24tY3Jvc3Mge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAxMHB4O1xuICBtYXJnaW46IDBweCAxMHB4O1xuICB3aWR0aDogMTZweDtcbn1cbi5wcm9wZXJ0eS1jb24tZm9ybSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiBcbn1cbi5sb2dpbi1kZXNrdG9wLWJ1dHRvblxue1xuICBkaXNwbGF5OiBub25lO1xufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgLm1vYmlsZS13cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuLmxvZ2luLWRlc2t0b3AtYnV0dG9uXG57XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuLmxvZ2luLWJ1dHRvbi1tYWluIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDEydmg7XG4gIHotaW5kZXg6IDEwMDA7XG4gIHJpZ2h0OiAzdnc7XG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDczN0Q7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDEwcHggMjBweDtcbn1cbi5Mb2dpbi1idXRvbi10ZXh0XG57XG4gIG1hcmdpbi1ib3R0b206IDBweDtcbiAgYm9yZGVyOiAxcHggc29saWQgd2hpdGU7XG4gIHBhZGRpbmc6IDdweCAxNXB4O1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG59XG59XG4ubm90aWZpY2F0aW9uLW92ZXJsYXlcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGhlaWdodDogMTAwdmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLm1vYmlsZS13cmFwcGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyMywyMjMsMjIzKTtcbn1cbi5pbnB1dC1jb250YWluZXIge1xuICBkaXNwbGF5OiAtbXMtZmxleGJveDsgLyogSUUxMCAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMTAwJTtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuXG4uaWNvbiB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQ6IHZhciggLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBjb2xvcjogd2hpdGU7XG4gIG1pbi13aWR0aDogNTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaW5wdXQtZmllbGQge1xuICB3aWR0aDogMTAwJTtcbiAgcGFkZGluZzogMTBweDtcbiAgb3V0bGluZTogbm9uZTtcbn1cblxuLmlucHV0LWZpZWxkOmZvY3VzIHtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKCAtLURBUkstQkxVRS1DT0xPUik7XG59XG4uaW5wdXQtZ3JvdXAge1xuIFxuXG4gIGRpc3BsYXk6IGJsb2NrO1xuIFxufVxuXG4uaW5wdXQtZmllbGQ6aG92ZXIge1xuICBib3JkZXI6IDJweCBzb2xpZCB2YXIoIC0tREFSSy1CTFVFLUNPTE9SKTtcbn1cbi5oeXBlcjpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ucG9saWN5XG57XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wge1xuICBwYWRkaW5nLWxlZnQ6IDIuMzc1cmVtO1xufVxuXG4uaGFzLXNlYXJjaCAuZm9ybS1jb250cm9sLWZlZWRiYWNrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAyO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDIuMzc1cmVtO1xuXG4gIGxpbmUtaGVpZ2h0OiAzcmVtO1xuXG5cbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGNvbG9yOiAjYWFhO1xuICBmb250LXNpemU6IDIycHg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuXG59XG4uZm9ybS1jb250cm9sXG57XG4gIGhlaWdodDogN3ZoO1xufVxuXG4uZm9ybS1ncm91cCB7XG4gIG1hcmdpbi1ib3R0b206IDFyZW07XG4gIG1hcmdpbi10b3A6IDEuNWVtO1xuICAgIG1hcmdpbi1ib3R0b206IDFyZW07XG4gICAgbWFyZ2luLXRvcDogMS41ZW07XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xuXG59XG4ubm90aWZpY2F0aW9uIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgM2ZyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBwYWRkaW5nOiAwLjRlbSAwZW07XG59XG5cbmltZy5pY29uIHtcbiAgd2lkdGg6IDQwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbn1cbi5ub3RpZmljYXRpb24taWNvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLm1haW4tZ3JpZC1ub3RpZnVjYXRpb24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICB6LWluZGV4OiAzO1xuICBoZWlnaHQ6IDEwMHZoO1xuICAvKiB0b3A6IDEwdmg7ICovXG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG4ucmVhZC1ub3RmaWNhdGlvbntcbiAgYmFja2dyb3VuZC1jb2xvcjogYXF1YW1hcmluZTtcblxuICBtYXJnaW4tYm90dG9tOiA0cHg7XG59IFxuXG5cblxuXG5cblxuIl19 */";
+    __webpack_exports__["default"] = "@import url(\"https://fonts.googleapis.com/css?family=Nunito:400,700\");\n\n@font-face {\n  font-family: HelveticaNeueLight;\n  src: url('/assets/font/HelveticaNeueLight.ttf');\n}\n\n.main-navigation-bar {\n  display: grid;\n  grid-template-columns: 1fr 1fr 3fr 1fr 1fr\n}\n\nul {\n  list-style-type: none;\n}\n\n.nav-div {\n  height: 100vh;\n  width: 100%;\n  background-color: white;\n  position: absolute;\n  top: 4em;\n  left: 0;\n  z-index: 200;\n}\n\n.content {\n  padding: 10px;\n  background-color: rgb(223,223,223);\n}\n\nlabel {\n  background: none transparent;\n  border: 2px solid black;\n  border-left: 0 solid transparent;\n  border-right: 0 solid transparent;\n  cursor: pointer;\n  display: block;\n  height: 19px;\n  position: absolute;\n  top: 19px;\n  left: 20px;\n  width: 36px;\n  transition: all .2s;\n}\n\nlabel::before {\n  background: black;\n  content: '';\n  height: 2px;\n  width: 36px;\n  transition: all .2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  /* top: 18px; */\n  margin-top: 6.2px;\n\n}\n\nlabel::after {\n  background: black;\n  content: '';\n  height: 4px;\n  left: 0;\n  position: absolute;\n  top: 6px;\n  opacity: 0;\n  visibility: hidden;\n  width: 100%;\n  transform: rotate(90deg);\n  transition: all .2s;\n}\n\n.menu-text {\n  position: absolute;\n  top: 40px;\n  left: 13px;\n  text-transform: uppercase;\n  margin-top: 2px;\n}\n\n.menu-text::after {\n  display: none;\n}\n\n.logo-nav {\n  width: 80%;\n}\n\n.notification-upper{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.user-img {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n  font-size: 38px;\n\n}\n\n.logout-icon {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.icon-size {\n  width: 60%;\n}\n\nimg.close-img {\n  width: 6%;\n  position: absolute;\n  top: 26px;\n  left: 25px;\n}\n\n.has-search .form-control {\n  padding-left: 2.375rem;\n}\n\n.has-search .form-control-feedback {\n  position: absolute;\n  z-index: 2;\n  display: block;\n  width: 2.375rem;\n  height: 2.375rem;\n  line-height: 2.375rem;\n  text-align: center;\n  pointer-events: none;\n  color: #aaa;\n}\n\n.nav-links {\n  margin: 0;\n  padding: 0px;\n}\n\n.main {\n  width: 50%;\n  margin: 50px auto;\n}\n\n.grid-container {\n  display: grid;\n  grid-template-columns: 1fr 2fr 1fr;\n  /* padding: 10px; */\n  margin-left: calc(-50vw + 50%);\n  margin-right: calc(-50vw + 50%);\n  margin-top: calc(-50vw + 50%);\n  align-items: center;\n}\n\n.grid-container>div {\n\n\n  text-align: Left;\n  font-size: 18.5px;\n  padding: 17px;\n\n\n}\n\n.grid-container:hover {\n  background-color: #EBEBEB;\n  text-decoration: none;\n}\n\nimg.nav-link-icon {\n  float: right;\n}\n\n.nav-links-text {\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Bold';\n}\n\n.search-grid-conatiner {\n  display: grid;\n  grid-template-columns: 11fr;\n}\n\n.search-grid-conatiner>div {\n  font-size: 18.5px;\n  padding: 14px;\n  padding-top: 5px;\n  padding-bottom: 11px;\n  background-color: #FBF4EF;\n}\n\n.nav-link-icon-search {\n  width: 38px;\n  padding: 4px;\n  margin-top: -4px;\n  border: 1px solid lightgrey;\n  background-color: white;\n  height: 56.5px;\n}\n\ni.fa.fa-user {\n  display: flex;\n  flex-direction: column;\n\n}\n\nspan.log-out-text {\n  font-size: 12px;\n  text-transform: uppercase;\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\nimg.home-menu-image {\n  height: 4vh;\n  margin: 6px;\n}\n\np.nitification-red {\n  position: absolute;\n  background: red;\n  border-radius: 50%;\n  top: 4vh;\n  right: 21vw;\n  height: 3vh;\n  width: 4vw;\n  text-align: center;\n  z-index: 1;\n  color: white\n}\n\nimg.plus-img {\n  width: 50%;\n  margin-left: 3vw;\n}\n\n/*# sourceMappingURL=style.css.map */\n\nspan.red-text {\n  background-color: red;\n  width: 50%;\n  text-align: center;\n  border-radius: 50%;\n  color: white;\n}\n\n.menu-toogle,\n.plus-icon,\n.icon-size,\n.imge-logo-header,\n.notification-upper,\n.logout {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.modal-backdrop.show {\n  display: none;\n  z-index: -1;\n}\n\n.nav-login {\n  position: absolute;\n  z-index: 1000;\n  height: 100vh;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  width: 100%;\n  background: white;\n  top: 0px;\n  position: fixed;\n}\n\n@media only screen and (min-width:768px) {\n  .icon-size {\n    width: 50% !important;\n  }\n\n  .logo-nav {\n    width: 60%;\n  }\n\n  .content {\n    padding: 0px;\n  }\n}\n\n.btn-google {\n  background-color: #DD4B33;\n  color: white;\n  width: 36%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n\n}\n\n.btn-facebook {\n  background-color: #244D93;\n  color: white;\n  width: 36%;\n  height: 35px;\n  text-align: center;\n  margin: 0px;\n  padding: 0px;\n\n}\n\n.social-button {\n  display: flex;\n  /* justify-content: center; */\n  justify-content: space-evenly;\n  align-items: center;\n\n}\n\n.color-signup {\n  color: #244D93;\n}\n\n.btn-social-login {\n  width: 100%;\n  background-color: #244D93;\n  color: white;\n  margin-top: 3%;\n  border-radius: 19px;\n  padding: 0.5em;\n\n\n}\n\ni.fa.fa-user.input-group-text.nav-login-form {\n  position: absolute;\n  font-size: 23px;\n  left: 0px;\n  width: 10%;\n  z-index: 10;\n  margin-top: -4%;\n}\n\n.social-login.text-center {\n  padding: 15px;\n}\n\n.checkbox {\n  background: none transparent;\n  border: none;\n  border-left: none;\n  border-right: none;\n  cursor: pointer;\n  /* display: block; */\n  height: auto;\n  position: absolute;\n  top: none;\n  left: none;\n  right: 9px;\n  width: none;\n  /* transition: all .2s; */\n  display: flex;\n  flex-direction: row;\n\n}\n\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background: black;\n  opacity: 0.5;\n}\n\n.sign-in-main {\n  display: block;\n}\n\n.user-cross {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\nimg.button-cross {\n  position: absolute;\n  right: 10px;\n  margin: 0px 10px;\n  width: 16px;\n}\n\n.property-con-form {\n  display: flex;\n  flex-direction: column;\n  font-size: 14px;\n  text-align: left;\n \n}\n\n.login-desktop-button\n{\n  display: none;\n}\n\n@media screen and (min-width:701px)\n{\n  .mobile-wrapper {\n    display: none;\n}\n.login-desktop-button\n{\n  display: block;\n}\n.login-button-main {\n  position: absolute;\n  top: 12vh;\n  z-index: 1000;\n  right: 3vw;\n  background-color: #00737D;\n    color: white;\n    padding: 10px 20px;\n}\n.Login-buton-text\n{\n  margin-bottom: 0px;\n  border: 1px solid white;\n  padding: 7px 15px;\n    text-transform: uppercase;\n}\n}\n\n.notification-overlay\n{\n  background-color: white;\n  height: 100vh;\n  width: 100%;\n}\n\n.mobile-wrapper {\n  background-color: rgb(223,223,223);\n}\n\n.input-container { /* IE10 */\n  display: flex;\n  width: 100%;\n  margin-bottom: 1em;\n}\n\n.icon {\n  padding: 10px;\n  background: var( --DARK-BLUE-COLOR);\n  color: white;\n  min-width: 50px;\n  text-align: center;\n}\n\n.input-field {\n  width: 100%;\n  padding: 10px;\n  outline: none;\n}\n\n.input-field:focus {\n  border: 2px solid var( --DARK-BLUE-COLOR);\n}\n\n.input-group {\n \n\n  display: block;\n \n}\n\n.input-field:hover {\n  border: 2px solid var( --DARK-BLUE-COLOR);\n}\n\n.hyper:hover\n{\n  cursor: pointer;\n}\n\n.policy\n{\n  text-align: center;\n}\n\n.has-search .form-control {\n  padding-left: 2.375rem;\n}\n\n.has-search .form-control-feedback {\n  position: absolute;\n  z-index: 2;\n  display: block;\n  width: 2.375rem;\n\n  line-height: 3rem;\n\n\n  pointer-events: none;\n  display: flex;\n  color: #aaa;\n  font-size: 22px;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n\n}\n\n.form-control\n{\n  height: 7vh;\n}\n\n.form-group {\n  margin-bottom: 1rem;\n  margin-top: 1.5em;\n    margin-bottom: 1rem;\n    margin-top: 1.5em;\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: flex-start;\n\n}\n\n.notification {\n  display: grid;\n  grid-template-columns: 1fr 3fr;\n  align-items: center;\n  padding: 0.4em 0em;\n}\n\nimg.icon {\n  width: 40%;\n  text-align: center;\n  background-color: transparent;\n}\n\n.notification-icon {\n  display: flex;\n  justify-content: center;\n}\n\n.main-grid-notifucation {\n  background-color: white;\n  /* position: absolute; */\n  z-index: 3;\n  height: 100vh;\n  /* top: 10vh; */\n  overflow: hidden;\n}\n\n.read-notfication{\n  background-color: aquamarine;\n\n  margin-bottom: 4px;\n} \n\n\n\n\n\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9uYXZpZ2F0aW9uQmFyL25hdmlnYXRpb25CYXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxxRUFBcUU7O0FBRXJFO0VBQ0UsK0JBQStCO0VBQy9CLCtDQUErQztBQUNqRDs7QUFFQTtFQUNFLGFBQWE7RUFDYjtBQUNGOztBQUVBO0VBQ0UscUJBQXFCO0FBQ3ZCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7RUFDWCx1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLFFBQVE7RUFDUixPQUFPO0VBQ1AsWUFBWTtBQUNkOztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtDQUFrQztBQUNwQzs7QUFFQTtFQUNFLDRCQUE0QjtFQUM1Qix1QkFBdUI7RUFDdkIsZ0NBQWdDO0VBQ2hDLGlDQUFpQztFQUNqQyxlQUFlO0VBQ2YsY0FBYztFQUNkLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVixXQUFXO0VBRVgsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLFdBQVc7RUFDWCxXQUFXO0VBQ1gsV0FBVztFQUNYLG1CQUFtQjtFQUNuQixhQUFhO0VBQ2IsOEJBQThCO0VBQzlCLG1CQUFtQjtFQUNuQixlQUFlO0VBQ2YsaUJBQWlCOztBQUVuQjs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixXQUFXO0VBQ1gsV0FBVztFQUNYLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFVBQVU7RUFDVixrQkFBa0I7RUFDbEIsV0FBVztFQUVYLHdCQUF3QjtFQUV4QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULFVBQVU7RUFDVix5QkFBeUI7RUFDekIsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQiw2Q0FBNkM7RUFDN0Msa0JBQWtCO0VBQ2xCLG9CQUFvQjtFQUNwQixtQ0FBbUM7RUFDbkMsa0NBQWtDO0VBQ2xDLGVBQWU7O0FBRWpCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLHNCQUFzQjtFQUN0QixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0FBQ1o7O0FBRUE7RUFDRSxzQkFBc0I7QUFDeEI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLGNBQWM7RUFDZCxlQUFlO0VBQ2YsZ0JBQWdCO0VBQ2hCLHFCQUFxQjtFQUNyQixrQkFBa0I7RUFDbEIsb0JBQW9CO0VBQ3BCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFNBQVM7RUFDVCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxVQUFVO0VBQ1YsaUJBQWlCO0FBQ25COztBQUVBO0VBQ0UsYUFBYTtFQUNiLGtDQUFrQztFQUNsQyxtQkFBbUI7RUFDbkIsOEJBQThCO0VBQzlCLCtCQUErQjtFQUMvQiw2QkFBNkI7RUFDN0IsbUJBQW1CO0FBQ3JCOztBQUVBOzs7RUFHRSxnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGFBQWE7OztBQUdmOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLHFCQUFxQjtBQUN2Qjs7QUFFQTtFQUNFLFlBQVk7QUFDZDs7QUFFQTtFQUNFLDZCQUE2QjtFQUM3QiwwQkFBMEI7QUFDNUI7O0FBR0E7RUFDRSxhQUFhO0VBQ2IsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGFBQWE7RUFDYixnQkFBZ0I7RUFDaEIsb0JBQW9CO0VBQ3BCLHlCQUF5QjtBQUMzQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLDJCQUEyQjtFQUMzQix1QkFBdUI7RUFDdkIsY0FBYztBQUNoQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7O0FBRXhCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLHlCQUF5Qjs7QUFFM0I7O0FBS0E7RUFDRSxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLFNBQVM7RUFDVCxVQUFVO0VBQ1YsV0FBVztFQUNYLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRSw0QkFBNEI7RUFDNUIsWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLG9CQUFvQjtFQUNwQixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxVQUFVO0VBQ1YsVUFBVTtFQUNWLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsYUFBYTtFQUNiLG1CQUFtQjs7QUFFckI7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLFdBQVc7QUFDYjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsV0FBVztBQUNiOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFdBQVc7RUFDWCxXQUFXO0VBQ1gsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1Y7QUFDRjs7QUFFQTtFQUNFLFVBQVU7RUFDVixnQkFBZ0I7QUFDbEI7O0FBRUEsb0NBQW9DOztBQUNwQztFQUNFLHFCQUFxQjtFQUNyQixVQUFVO0VBQ1Ysa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixZQUFZO0FBQ2Q7O0FBRUE7Ozs7OztFQU1FLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLFdBQVc7QUFDYjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2IsYUFBYTtFQUViLGFBQWE7RUFFYix1QkFBdUI7RUFFdkIsbUJBQW1CO0VBQ25CLFdBQVc7RUFDWCxpQkFBaUI7RUFDakIsUUFBUTtFQUNSLGVBQWU7QUFDakI7O0FBRUE7RUFDRTtJQUNFLHFCQUFxQjtFQUN2Qjs7RUFFQTtJQUNFLFVBQVU7RUFDWjs7RUFFQTtJQUNFLFlBQVk7RUFDZDtBQUNGOztBQUVBO0VBQ0UseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixVQUFVO0VBQ1YsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsWUFBWTs7QUFFZDs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osVUFBVTtFQUNWLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztFQUNYLFlBQVk7O0FBRWQ7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLDZCQUE2QjtFQUM3QixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsY0FBYztBQUNoQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGNBQWM7RUFDZCxtQkFBbUI7RUFDbkIsY0FBYzs7O0FBR2hCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixTQUFTO0VBQ1QsVUFBVTtFQUNWLFdBQVc7RUFDWCxlQUFlO0FBQ2pCOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUVBO0VBQ0UsNEJBQTRCO0VBQzVCLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixvQkFBb0I7RUFDcEIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixTQUFTO0VBQ1QsVUFBVTtFQUNWLFVBQVU7RUFDVixXQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYixtQkFBbUI7O0FBRXJCOztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsWUFBWTtBQUNkOztBQUVBO0VBQ0UsV0FBVztFQUNYLFlBQVk7RUFDWixlQUFlO0VBQ2YsUUFBUTtFQUNSLFNBQVM7RUFFVCxhQUFhO0VBRWIsdUJBQXVCO0VBRXZCLG1CQUFtQjtFQUNuQixVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGNBQWM7QUFDaEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1CQUFtQjtFQUNuQix1QkFBdUI7QUFDekI7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7O0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLGVBQWU7RUFDZixnQkFBZ0I7O0FBRWxCOztBQUNBOztFQUVFLGFBQWE7QUFDZjs7QUFDQTs7RUFFRTtJQUNFLGFBQWE7QUFDakI7QUFDQTs7RUFFRSxjQUFjO0FBQ2hCO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsU0FBUztFQUNULGFBQWE7RUFDYixVQUFVO0VBQ1YseUJBQXlCO0lBQ3ZCLFlBQVk7SUFDWixrQkFBa0I7QUFDdEI7QUFDQTs7RUFFRSxrQkFBa0I7RUFDbEIsdUJBQXVCO0VBQ3ZCLGlCQUFpQjtJQUNmLHlCQUF5QjtBQUM3QjtBQUNBOztBQUNBOztFQUVFLHVCQUF1QjtFQUN2QixhQUFhO0VBQ2IsV0FBVztBQUNiOztBQUNBO0VBQ0Usa0NBQWtDO0FBQ3BDOztBQUNBLG1CQUN3QixTQUFTO0VBQy9CLGFBQWE7RUFDYixXQUFXO0VBQ1gsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsYUFBYTtFQUNiLG1DQUFtQztFQUNuQyxZQUFZO0VBQ1osZUFBZTtFQUNmLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLFdBQVc7RUFDWCxhQUFhO0VBQ2IsYUFBYTtBQUNmOztBQUVBO0VBQ0UseUNBQXlDO0FBQzNDOztBQUNBOzs7RUFHRSxjQUFjOztBQUVoQjs7QUFFQTtFQUNFLHlDQUF5QztBQUMzQzs7QUFDQTs7RUFFRSxlQUFlO0FBQ2pCOztBQUNBOztFQUVFLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLHNCQUFzQjtBQUN4Qjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsY0FBYztFQUNkLGVBQWU7O0VBRWYsaUJBQWlCOzs7RUFHakIsb0JBQW9CO0VBQ3BCLGFBQWE7RUFDYixXQUFXO0VBQ1gsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixtQkFBbUI7RUFDbkIsdUJBQXVCOztBQUV6Qjs7QUFDQTs7RUFFRSxXQUFXO0FBQ2I7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsaUJBQWlCO0lBQ2YsbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQiwyQkFBMkI7O0FBRS9COztBQUNBO0VBQ0UsYUFBYTtFQUNiLDhCQUE4QjtFQUM5QixtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsVUFBVTtFQUNWLGtCQUFrQjtFQUNsQiw2QkFBNkI7QUFDL0I7O0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0FBQ3pCOztBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLHdCQUF3QjtFQUN4QixVQUFVO0VBQ1YsYUFBYTtFQUNiLGVBQWU7RUFDZixnQkFBZ0I7QUFDbEI7O0FBQ0E7RUFDRSw0QkFBNEI7O0VBRTVCLGtCQUFrQjtBQUNwQiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbmF2aWdhdGlvbkJhci9uYXZpZ2F0aW9uQmFyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybChcImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1OdW5pdG86NDAwLDcwMFwiKTtcblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiBIZWx2ZXRpY2FOZXVlTGlnaHQ7XG4gIHNyYzogdXJsKCcvYXNzZXRzL2ZvbnQvSGVsdmV0aWNhTmV1ZUxpZ2h0LnR0ZicpO1xufVxuXG4ubWFpbi1uYXZpZ2F0aW9uLWJhciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAzZnIgMWZyIDFmclxufVxuXG51bCB7XG4gIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcbn1cblxuLm5hdi1kaXYge1xuICBoZWlnaHQ6IDEwMHZoO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0ZW07XG4gIGxlZnQ6IDA7XG4gIHotaW5kZXg6IDIwMDtcbn1cblxuLmNvbnRlbnQge1xuICBwYWRkaW5nOiAxMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjIzLDIyMywyMjMpO1xufVxuXG5sYWJlbCB7XG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xuICBib3JkZXItbGVmdDogMCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgYm9yZGVyLXJpZ2h0OiAwIHNvbGlkIHRyYW5zcGFyZW50O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBoZWlnaHQ6IDE5cHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAxOXB4O1xuICBsZWZ0OiAyMHB4O1xuICB3aWR0aDogMzZweDtcbiAgLXdlYmtpdC10cmFuc2l0aW9uOiBhbGwgLjJzO1xuICB0cmFuc2l0aW9uOiBhbGwgLjJzO1xufVxuXG5sYWJlbDo6YmVmb3JlIHtcbiAgYmFja2dyb3VuZDogYmxhY2s7XG4gIGNvbnRlbnQ6ICcnO1xuICBoZWlnaHQ6IDJweDtcbiAgd2lkdGg6IDM2cHg7XG4gIHRyYW5zaXRpb246IGFsbCAuMnM7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgLyogdG9wOiAxOHB4OyAqL1xuICBtYXJnaW4tdG9wOiA2LjJweDtcblxufVxuXG5sYWJlbDo6YWZ0ZXIge1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgY29udGVudDogJyc7XG4gIGhlaWdodDogNHB4O1xuICBsZWZ0OiAwO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNnB4O1xuICBvcGFjaXR5OiAwO1xuICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gIHdpZHRoOiAxMDAlO1xuICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDkwZGVnKTtcbiAgdHJhbnNmb3JtOiByb3RhdGUoOTBkZWcpO1xuICAtd2Via2l0LXRyYW5zaXRpb246IGFsbCAuMnM7XG4gIHRyYW5zaXRpb246IGFsbCAuMnM7XG59XG5cbi5tZW51LXRleHQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDBweDtcbiAgbGVmdDogMTNweDtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbWFyZ2luLXRvcDogMnB4O1xufVxuXG4ubWVudS10ZXh0OjphZnRlciB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi5sb2dvLW5hdiB7XG4gIHdpZHRoOiA4MCU7XG59XG5cbi5ub3RpZmljYXRpb24tdXBwZXJ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4udXNlci1pbWcge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGZvbnQ6IG5vcm1hbCBub3JtYWwgbm9ybWFsIDE0cHgvMSBGb250QXdlc29tZTtcbiAgZm9udC1zaXplOiBpbmhlcml0O1xuICB0ZXh0LXJlbmRlcmluZzogYXV0bztcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIGZvbnQtc2l6ZTogMzhweDtcblxufVxuXG4ubG9nb3V0LWljb24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uaWNvbi1zaXplIHtcbiAgd2lkdGg6IDYwJTtcbn1cblxuaW1nLmNsb3NlLWltZyB7XG4gIHdpZHRoOiA2JTtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDI2cHg7XG4gIGxlZnQ6IDI1cHg7XG59XG5cbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wge1xuICBwYWRkaW5nLWxlZnQ6IDIuMzc1cmVtO1xufVxuXG4uaGFzLXNlYXJjaCAuZm9ybS1jb250cm9sLWZlZWRiYWNrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAyO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDIuMzc1cmVtO1xuICBoZWlnaHQ6IDIuMzc1cmVtO1xuICBsaW5lLWhlaWdodDogMi4zNzVyZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIGNvbG9yOiAjYWFhO1xufVxuXG4ubmF2LWxpbmtzIHtcbiAgbWFyZ2luOiAwO1xuICBwYWRkaW5nOiAwcHg7XG59XG5cbi5tYWluIHtcbiAgd2lkdGg6IDUwJTtcbiAgbWFyZ2luOiA1MHB4IGF1dG87XG59XG5cbi5ncmlkLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDJmciAxZnI7XG4gIC8qIHBhZGRpbmc6IDEwcHg7ICovXG4gIG1hcmdpbi1sZWZ0OiBjYWxjKC01MHZ3ICsgNTAlKTtcbiAgbWFyZ2luLXJpZ2h0OiBjYWxjKC01MHZ3ICsgNTAlKTtcbiAgbWFyZ2luLXRvcDogY2FsYygtNTB2dyArIDUwJSk7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5ncmlkLWNvbnRhaW5lcj5kaXYge1xuXG5cbiAgdGV4dC1hbGlnbjogTGVmdDtcbiAgZm9udC1zaXplOiAxOC41cHg7XG4gIHBhZGRpbmc6IDE3cHg7XG5cblxufVxuXG4uZ3JpZC1jb250YWluZXI6aG92ZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjRUJFQkVCO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59XG5cbmltZy5uYXYtbGluay1pY29uIHtcbiAgZmxvYXQ6IHJpZ2h0O1xufVxuXG4ubmF2LWxpbmtzLXRleHQge1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG5cblxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMTFmcjtcbn1cblxuLnNlYXJjaC1ncmlkLWNvbmF0aW5lcj5kaXYge1xuICBmb250LXNpemU6IDE4LjVweDtcbiAgcGFkZGluZzogMTRweDtcbiAgcGFkZGluZy10b3A6IDVweDtcbiAgcGFkZGluZy1ib3R0b206IDExcHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICNGQkY0RUY7XG59XG5cbi5uYXYtbGluay1pY29uLXNlYXJjaCB7XG4gIHdpZHRoOiAzOHB4O1xuICBwYWRkaW5nOiA0cHg7XG4gIG1hcmdpbi10b3A6IC00cHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JleTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGhlaWdodDogNTYuNXB4O1xufVxuXG5pLmZhLmZhLXVzZXIge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuXG59XG5cbnNwYW4ubG9nLW91dC10ZXh0IHtcbiAgZm9udC1zaXplOiAxMnB4O1xuICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xuXG59XG5cblxuXG5cbmkuZmEuZmEtdXNlci5pbnB1dC1ncm91cC10ZXh0Lm5hdi1sb2dpbi1mb3JtIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBmb250LXNpemU6IDIzcHg7XG4gIGxlZnQ6IDBweDtcbiAgd2lkdGg6IDEwJTtcbiAgei1pbmRleDogMTA7XG4gIG1hcmdpbi10b3A6IC00JTtcbn1cblxuLnNvY2lhbC1sb2dpbi50ZXh0LWNlbnRlciB7XG4gIHBhZGRpbmc6IDE1cHg7XG59XG5cbi5jaGVja2JveCB7XG4gIGJhY2tncm91bmQ6IG5vbmUgdHJhbnNwYXJlbnQ7XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLWxlZnQ6IG5vbmU7XG4gIGJvcmRlci1yaWdodDogbm9uZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICAvKiBkaXNwbGF5OiBibG9jazsgKi9cbiAgaGVpZ2h0OiBhdXRvO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogbm9uZTtcbiAgbGVmdDogbm9uZTtcbiAgcmlnaHQ6IDlweDtcbiAgd2lkdGg6IG5vbmU7XG4gIC8qIHRyYW5zaXRpb246IGFsbCAuMnM7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG5cbn1cblxuLmV4YW1wbGUtZm9ybSB7XG4gIG1pbi13aWR0aDogMTUwcHg7XG4gIG1heC13aWR0aDogNTAwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJvcmRlcjogbm9uZTtcbn1cblxuaW1nLmhvbWUtbWVudS1pbWFnZSB7XG4gIGhlaWdodDogNHZoO1xuICBtYXJnaW46IDZweDtcbn1cblxucC5uaXRpZmljYXRpb24tcmVkIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBiYWNrZ3JvdW5kOiByZWQ7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgdG9wOiA0dmg7XG4gIHJpZ2h0OiAyMXZ3O1xuICBoZWlnaHQ6IDN2aDtcbiAgd2lkdGg6IDR2dztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB6LWluZGV4OiAxO1xuICBjb2xvcjogd2hpdGVcbn1cblxuaW1nLnBsdXMtaW1nIHtcbiAgd2lkdGg6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IDN2dztcbn1cblxuLyojIHNvdXJjZU1hcHBpbmdVUkw9c3R5bGUuY3NzLm1hcCAqL1xuc3Bhbi5yZWQtdGV4dCB7XG4gIGJhY2tncm91bmQtY29sb3I6IHJlZDtcbiAgd2lkdGg6IDUwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuLm1lbnUtdG9vZ2xlLFxuLnBsdXMtaWNvbixcbi5pY29uLXNpemUsXG4uaW1nZS1sb2dvLWhlYWRlcixcbi5ub3RpZmljYXRpb24tdXBwZXIsXG4ubG9nb3V0IHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5tb2RhbC1iYWNrZHJvcC5zaG93IHtcbiAgZGlzcGxheTogbm9uZTtcbiAgei1pbmRleDogLTE7XG59XG5cbi5uYXYtbG9naW4ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHotaW5kZXg6IDEwMDA7XG4gIGhlaWdodDogMTAwdmg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZDogd2hpdGU7XG4gIHRvcDogMHB4O1xuICBwb3NpdGlvbjogZml4ZWQ7XG59XG5cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3NjhweCkge1xuICAuaWNvbi1zaXplIHtcbiAgICB3aWR0aDogNTAlICFpbXBvcnRhbnQ7XG4gIH1cblxuICAubG9nby1uYXYge1xuICAgIHdpZHRoOiA2MCU7XG4gIH1cblxuICAuY29udGVudCB7XG4gICAgcGFkZGluZzogMHB4O1xuICB9XG59XG5cbi5idG4tZ29vZ2xlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0RENEIzMztcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzYlO1xuICBoZWlnaHQ6IDM1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAwcHg7XG4gIHBhZGRpbmc6IDBweDtcblxufVxuXG4uYnRuLWZhY2Vib29rIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzI0NEQ5MztcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzYlO1xuICBoZWlnaHQ6IDM1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luOiAwcHg7XG4gIHBhZGRpbmc6IDBweDtcblxufVxuXG4uc29jaWFsLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC8qIGp1c3RpZnktY29udGVudDogY2VudGVyOyAqL1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxufVxuXG4uY29sb3Itc2lnbnVwIHtcbiAgY29sb3I6ICMyNDREOTM7XG59XG5cbi5idG4tc29jaWFsLWxvZ2luIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJhY2tncm91bmQtY29sb3I6ICMyNDREOTM7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgbWFyZ2luLXRvcDogMyU7XG4gIGJvcmRlci1yYWRpdXM6IDE5cHg7XG4gIHBhZGRpbmc6IDAuNWVtO1xuXG5cbn1cblxuaS5mYS5mYS11c2VyLmlucHV0LWdyb3VwLXRleHQubmF2LWxvZ2luLWZvcm0ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGZvbnQtc2l6ZTogMjNweDtcbiAgbGVmdDogMHB4O1xuICB3aWR0aDogMTAlO1xuICB6LWluZGV4OiAxMDtcbiAgbWFyZ2luLXRvcDogLTQlO1xufVxuXG4uc29jaWFsLWxvZ2luLnRleHQtY2VudGVyIHtcbiAgcGFkZGluZzogMTVweDtcbn1cblxuLmNoZWNrYm94IHtcbiAgYmFja2dyb3VuZDogbm9uZSB0cmFuc3BhcmVudDtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItbGVmdDogbm9uZTtcbiAgYm9yZGVyLXJpZ2h0OiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIC8qIGRpc3BsYXk6IGJsb2NrOyAqL1xuICBoZWlnaHQ6IGF1dG87XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiBub25lO1xuICBsZWZ0OiBub25lO1xuICByaWdodDogOXB4O1xuICB3aWR0aDogbm9uZTtcbiAgLyogdHJhbnNpdGlvbjogYWxsIC4yczsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuXG4uZXhhbXBsZS1mb3JtIHtcbiAgbWluLXdpZHRoOiAxNTBweDtcbiAgbWF4LXdpZHRoOiA1MDBweDtcbiAgd2lkdGg6IDEwMCU7XG59XG5cbi5leGFtcGxlLWZ1bGwtd2lkdGgge1xuICB3aWR0aDogMTAwJTtcbiAgYm9yZGVyOiBub25lO1xufVxuXG4ubG9hZGluZy1jb250YWluZXIge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHRvcDogMHB4O1xuICBsZWZ0OiAwcHg7XG4gIGRpc3BsYXk6IC13ZWJraXQtYm94O1xuICBkaXNwbGF5OiBmbGV4O1xuICAtd2Via2l0LWJveC1wYWNrOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAtd2Via2l0LWJveC1hbGlnbjogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB6LWluZGV4OiA5O1xuICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgb3BhY2l0eTogMC41O1xufVxuXG4uc2lnbi1pbi1tYWluIHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi51c2VyLWNyb3NzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbmltZy5idXR0b24tY3Jvc3Mge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHJpZ2h0OiAxMHB4O1xuICBtYXJnaW46IDBweCAxMHB4O1xuICB3aWR0aDogMTZweDtcbn1cbi5wcm9wZXJ0eS1jb24tZm9ybSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgdGV4dC1hbGlnbjogbGVmdDtcbiBcbn1cbi5sb2dpbi1kZXNrdG9wLWJ1dHRvblxue1xuICBkaXNwbGF5OiBub25lO1xufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgLm1vYmlsZS13cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBub25lO1xufVxuLmxvZ2luLWRlc2t0b3AtYnV0dG9uXG57XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuLmxvZ2luLWJ1dHRvbi1tYWluIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDEydmg7XG4gIHotaW5kZXg6IDEwMDA7XG4gIHJpZ2h0OiAzdnc7XG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDczN0Q7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDEwcHggMjBweDtcbn1cbi5Mb2dpbi1idXRvbi10ZXh0XG57XG4gIG1hcmdpbi1ib3R0b206IDBweDtcbiAgYm9yZGVyOiAxcHggc29saWQgd2hpdGU7XG4gIHBhZGRpbmc6IDdweCAxNXB4O1xuICAgIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG59XG59XG4ubm90aWZpY2F0aW9uLW92ZXJsYXlcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIGhlaWdodDogMTAwdmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLm1vYmlsZS13cmFwcGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyMywyMjMsMjIzKTtcbn1cbi5pbnB1dC1jb250YWluZXIge1xuICBkaXNwbGF5OiAtbXMtZmxleGJveDsgLyogSUUxMCAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMTAwJTtcbiAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuXG4uaWNvbiB7XG4gIHBhZGRpbmc6IDEwcHg7XG4gIGJhY2tncm91bmQ6IHZhciggLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBjb2xvcjogd2hpdGU7XG4gIG1pbi13aWR0aDogNTBweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4uaW5wdXQtZmllbGQge1xuICB3aWR0aDogMTAwJTtcbiAgcGFkZGluZzogMTBweDtcbiAgb3V0bGluZTogbm9uZTtcbn1cblxuLmlucHV0LWZpZWxkOmZvY3VzIHtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKCAtLURBUkstQkxVRS1DT0xPUik7XG59XG4uaW5wdXQtZ3JvdXAge1xuIFxuXG4gIGRpc3BsYXk6IGJsb2NrO1xuIFxufVxuXG4uaW5wdXQtZmllbGQ6aG92ZXIge1xuICBib3JkZXI6IDJweCBzb2xpZCB2YXIoIC0tREFSSy1CTFVFLUNPTE9SKTtcbn1cbi5oeXBlcjpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ucG9saWN5XG57XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5oYXMtc2VhcmNoIC5mb3JtLWNvbnRyb2wge1xuICBwYWRkaW5nLWxlZnQ6IDIuMzc1cmVtO1xufVxuXG4uaGFzLXNlYXJjaCAuZm9ybS1jb250cm9sLWZlZWRiYWNrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAyO1xuICBkaXNwbGF5OiBibG9jaztcbiAgd2lkdGg6IDIuMzc1cmVtO1xuXG4gIGxpbmUtaGVpZ2h0OiAzcmVtO1xuXG5cbiAgcG9pbnRlci1ldmVudHM6IG5vbmU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGNvbG9yOiAjYWFhO1xuICBmb250LXNpemU6IDIycHg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuXG59XG4uZm9ybS1jb250cm9sXG57XG4gIGhlaWdodDogN3ZoO1xufVxuXG4uZm9ybS1ncm91cCB7XG4gIG1hcmdpbi1ib3R0b206IDFyZW07XG4gIG1hcmdpbi10b3A6IDEuNWVtO1xuICAgIG1hcmdpbi1ib3R0b206IDFyZW07XG4gICAgbWFyZ2luLXRvcDogMS41ZW07XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xuXG59XG4ubm90aWZpY2F0aW9uIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgM2ZyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBwYWRkaW5nOiAwLjRlbSAwZW07XG59XG5cbmltZy5pY29uIHtcbiAgd2lkdGg6IDQwJTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbn1cbi5ub3RpZmljYXRpb24taWNvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLm1haW4tZ3JpZC1ub3RpZnVjYXRpb24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICB6LWluZGV4OiAzO1xuICBoZWlnaHQ6IDEwMHZoO1xuICAvKiB0b3A6IDEwdmg7ICovXG4gIG92ZXJmbG93OiBoaWRkZW47XG59XG4ucmVhZC1ub3RmaWNhdGlvbntcbiAgYmFja2dyb3VuZC1jb2xvcjogYXF1YW1hcmluZTtcblxuICBtYXJnaW4tYm90dG9tOiA0cHg7XG59IFxuXG5cblxuXG5cblxuIl19 */";
     /***/
   },
 
@@ -14347,23 +14684,24 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this84 = this;
+          var _this89 = this;
 
           this.initProfile();
           new Date().getTime() / 1000;
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this84.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this84.userData));
+              _this89.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this89.userData));
 
-              _this84.LoggedIn();
+              _this89.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this84.LoggedOut();
+              _this89.LoggedOut();
             }
           });
+          console.log(this.constructor.name);
         }
       }, {
         key: "LoggedIn",
@@ -14386,48 +14724,48 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this85 = this;
+          var _this90 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this85.sellerProperty.push(element.data());
+                _this90.sellerProperty.push(element.data());
               }
             });
-            _this85.noSellerOfMatche = _this85.sellerProperty.length;
-            _this85.matches = _this85.buyerProperty.length + _this85.sellerProperty.length;
+            _this90.noSellerOfMatche = _this90.sellerProperty.length;
+            _this90.matches = _this90.buyerProperty.length + _this90.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this85.buyerProperty.push(element.data());
+              _this90.buyerProperty.push(element.data());
             });
-            _this85.noBuyerMatches = _this85.buyerProperty.length;
-            _this85.matches = _this85.buyerProperty.length + _this85.sellerProperty.length;
+            _this90.noBuyerMatches = _this90.buyerProperty.length;
+            _this90.matches = _this90.buyerProperty.length + _this90.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this86 = this;
+          var _this91 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this86.bellicon.push(item.data());
+              _this91.bellicon.push(item.data());
 
-              _this86.confirmInterest.push(item.data());
+              _this91.confirmInterest.push(item.data());
 
-              if (_this86.bellicon.length > 0) {
-                _this86.belliconone = false;
+              if (_this91.bellicon.length > 0) {
+                _this91.belliconone = false;
               }
 
               if (item.data().Lastseen == undefined) {
                 console.log(item.data().Lastseen);
-                _this86.notifications = _this86.confirmInterest.length;
+                _this91.notifications = _this91.confirmInterest.length;
               } else {
                 console.log(item.data().Lastseen);
-                _this86.notifications = 0;
+                _this91.notifications = 0;
               }
             });
           });
@@ -14487,24 +14825,24 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this87 = this;
+          var _this92 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this87.isLoading = false;
+            _this92.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this88 = this;
+          var _this93 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this88.user.Lastseen = _this88.now;
-            _this88.return = _this88.FormsService.createUserTime(_this88.user).then(function (data) {});
-            _this88.isLoading = false;
+            _this93.user.Lastseen = _this93.now;
+            _this93.return = _this93.FormsService.createUserTime(_this93.user).then(function (data) {});
+            _this93.isLoading = false;
             window.location.reload();
           });
         } //Signup Google
@@ -14512,15 +14850,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this89 = this;
+          var _this94 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this89.user.Lastseen = _this89.now;
-            _this89.return = _this89.FormsService.createUserTime(_this89.user).then(function (data) {});
-            _this89.isLoading = false;
+            _this94.user.Lastseen = _this94.now;
+            _this94.return = _this94.FormsService.createUserTime(_this94.user).then(function (data) {});
+            _this94.isLoading = false;
 
-            _this89.initProfile();
+            _this94.initProfile();
 
             window.location.reload();
           });
@@ -14528,16 +14866,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this90 = this;
+          var _this95 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this90.isLoading = false;
-            _this90.user.Lastseen = _this90.now;
-            _this90.return = _this90.FormsService.createUserTime(_this90.user).then(function (data) {});
-            _this90.isLoading = false;
+            _this95.isLoading = false;
+            _this95.user.Lastseen = _this95.now;
+            _this95.return = _this95.FormsService.createUserTime(_this95.user).then(function (data) {});
+            _this95.isLoading = false;
 
-            _this90.initProfile();
+            _this95.initProfile();
 
             window.location.reload();
           });
@@ -14562,25 +14900,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this91 = this;
+          var _this96 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this91.user.Name = displayName;
-            _this91.user.DOB = null;
-            _this91.user.Phone = null;
-            _this91.isLoading = true;
-            _this91.return = _this91.FormsService.createUserCustomer(_this91.user).then(function (data) {
-              _this91.user.Lastseen = _this91.now;
-              _this91.return = _this91.FormsService.createUserTime(_this91.user).then(function (data) {});
+            _this96.user.Name = displayName;
+            _this96.user.DOB = null;
+            _this96.user.Phone = null;
+            _this96.isLoading = true;
+            _this96.return = _this96.FormsService.createUserCustomer(_this96.user).then(function (data) {
+              _this96.user.Lastseen = _this96.now;
+              _this96.return = _this96.FormsService.createUserTime(_this96.user).then(function (data) {});
 
-              if (_this91.user != null) {
-                _this91.isLoading = false;
+              if (_this96.user != null) {
+                _this96.isLoading = false;
 
-                _this91.initProfile();
+                _this96.initProfile();
 
                 window.location.reload();
               } else {
-                _this91.isLoading = false;
+                _this96.isLoading = false;
               }
             });
           });
@@ -14617,14 +14955,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this92 = this;
+          var _this97 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(localStorage.getItem("user"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this92.confirmInterests.push({
+                _this97.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -14672,13 +15010,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this93 = this;
+          var _this98 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this93.confirmInterests.push({
+              _this98.confirmInterests.push({
                 Detail: item.data(),
                 id: item.id
               });
@@ -14688,7 +15026,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this94 = this;
+          var _this99 = this;
 
           this.notificationoverlay = true;
           this.bellicontwo = true;
@@ -14697,20 +15035,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.confirmInterests = [];
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this94.confirmInterests.push({
+              _this99.confirmInterests.push({
                 Detail: item.data(),
                 id: item.id
               });
-
-              _this94.getNotification();
             });
-            console.log(_this94.confirmInterests);
+            console.log(_this99.confirmInterests);
           });
         }
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this95 = this;
+          var _this100 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -14718,9 +15054,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.confirmInterests = null;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this95.confirmInterests = null;
-
-              _this95.getNotification();
+              _this100.confirmInterests = null;
             });
           });
           this.bellicontwo = false;
@@ -14845,18 +15179,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this96 = this;
+          var _this101 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this96.confirmInterest.push({
+              _this101.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this96.confirmInterest);
+            console.log(_this101.confirmInterest);
           });
         }
       }, {
@@ -16336,17 +16670,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this97 = this;
+          var _this102 = this;
 
           this.userLogged();
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this97.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this97.userData));
-              _this97.loggedIn = true;
+              _this102.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this102.userData));
+              _this102.loggedIn = true;
             } else {
               localStorage.setItem("user", null);
-              _this97.loggedIn = false;
+              _this102.loggedIn = false;
             }
           });
           this.items();
@@ -16355,40 +16689,40 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this98 = this;
+          var _this103 = this;
 
           this.authService.GoogleAuth().then(function (data) {
-            _this98.loggedIn = true;
+            _this103.loggedIn = true;
 
-            _this98.userLogged();
+            _this103.userLogged();
 
-            _this98.items();
+            _this103.items();
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this99 = this;
+          var _this104 = this;
 
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this99.loggedIn = true;
+            _this104.loggedIn = true;
 
-            _this99.items();
+            _this104.items();
 
-            _this99.userLogged();
+            _this104.userLogged();
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this100 = this;
+          var _this105 = this;
 
           console.log(email + pass);
           this.authService.SignIn(email, pass).then(function (data) {
-            _this100.items();
+            _this105.items();
 
-            _this100.userLogged();
+            _this105.userLogged();
           });
         }
       }, {
@@ -16401,28 +16735,28 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "items",
         value: function items() {
-          var _this101 = this;
+          var _this106 = this;
 
           this.AgenthomeService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this101.agentNew.push(elements.data());
+              _this106.agentNew.push(elements.data());
 
-              if (_this101.uid == elements.data().uid) {
-                _this101.agents = elements.data();
+              if (_this106.uid == elements.data().uid) {
+                _this106.agents = elements.data();
               }
             });
           });
           this.AgenthomeService.getAgentBuyer(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (_this101.uid == element.data().uid) {
-                _this101.agentsBuyer.push(element.data());
+              if (_this106.uid == element.data().uid) {
+                _this106.agentsBuyer.push(element.data());
               }
             });
           });
           this.AgenthomeService.getAgentSeller(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (_this101.uid == element.data().uid) {
-                _this101.agentsSeller.push(element.data());
+              if (_this106.uid == element.data().uid) {
+                _this106.agentsSeller.push(element.data());
               }
             });
           });
@@ -16642,7 +16976,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this102 = this;
+          var _this107 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -16652,10 +16986,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.AgenthomeService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              if (_this102.uid = elements.data().uid) {
-                _this102.docid = elements.id;
-                _this102.agents = elements.data();
-                console.log(_this102.agents);
+              if (_this107.uid = elements.data().uid) {
+                _this107.docid = elements.id;
+                _this107.agents = elements.data();
+                console.log(_this107.agents);
               }
             });
           });
@@ -16767,15 +17101,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelecteddetailareaComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this103 = this;
+          var _this108 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this103.Minamount = params.get("MinAmount");
-            _this103.MaxAmount = params.get("MaxAmount");
-            _this103.ChainStatus = params.get("ChainStatus");
-            _this103.Conditions = params.get("Conditions");
-            _this103.Lookinpostcode = params.get("Lookinpostcode");
-            _this103.SearchRadius = params.get("SearchRadius");
+            _this108.Minamount = params.get("MinAmount");
+            _this108.MaxAmount = params.get("MaxAmount");
+            _this108.ChainStatus = params.get("ChainStatus");
+            _this108.Conditions = params.get("Conditions");
+            _this108.Lookinpostcode = params.get("Lookinpostcode");
+            _this108.SearchRadius = params.get("SearchRadius");
           });
         }
       }, {
@@ -16929,20 +17263,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelecteddetailsellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this104 = this;
+          var _this109 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this104.LookingAddress = params.get("LookingAddress");
-            _this104.LookingTown = params.get("LookingTown");
-            _this104.Lookingpostcode = params.get("Lookingpostcode");
-            _this104.Lookingstate = params.get("Lookingstate");
-            _this104.MaxAmount = params.get("MaxAmount");
-            _this104.Maxbathroom = params.get("Maxbathrooms");
-            _this104.Maxreception = params.get("Maxreception");
-            _this104.PropertyCondition = params.get("PropertyCondition");
-            _this104.PropertyType = params.get("PropertyType");
-            _this104.Roomsmax = params.get("Roomsmax");
-            _this104.ownership = params.get("ownership");
+            _this109.LookingAddress = params.get("LookingAddress");
+            _this109.LookingTown = params.get("LookingTown");
+            _this109.Lookingpostcode = params.get("Lookingpostcode");
+            _this109.Lookingstate = params.get("Lookingstate");
+            _this109.MaxAmount = params.get("MaxAmount");
+            _this109.Maxbathroom = params.get("Maxbathrooms");
+            _this109.Maxreception = params.get("Maxreception");
+            _this109.PropertyCondition = params.get("PropertyCondition");
+            _this109.PropertyType = params.get("PropertyType");
+            _this109.Roomsmax = params.get("Roomsmax");
+            _this109.ownership = params.get("ownership");
           });
         }
       }, {
@@ -17282,6 +17616,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     var _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(
     /*! ./agenthome/selecteddetailseller/selecteddetailseller.component */
     "./src/app/agenthome/selecteddetailseller/selecteddetailseller.component.ts");
+    /* harmony import */
+
+
+    var _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(
+    /*! ./Home/clickhome/clickhome.component */
+    "./src/app/Home/clickhome/clickhome.component.ts");
 
     var routes = [{
       path: "Property/:use",
@@ -17415,6 +17755,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     }, {
       path: "sellerSelectedagent/:LookingAddress/:LookingTown/:Lookingpostcode/:Lookingstate/:MaxAmount/:Maxbathroom/:Maxbathrooms/:Maxreception/:PropertyCondition/:PropertyType/:Roomsmax/:ownership",
       component: _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_47__["SelecteddetailsellerComponent"]
+    }, {
+      path: "homenew",
+      component: _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_48__["ClickhomeComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -18211,7 +18554,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
     var _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_113__ = __webpack_require__(
     /*! ./agenthome/selecteddetailseller/selecteddetailseller.component */
-    "./src/app/agenthome/selecteddetailseller/selecteddetailseller.component.ts"); // Firebase modules
+    "./src/app/agenthome/selecteddetailseller/selecteddetailseller.component.ts");
+    /* harmony import */
+
+
+    var _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_114__ = __webpack_require__(
+    /*! ./Home/clickhome/clickhome.component */
+    "./src/app/Home/clickhome/clickhome.component.ts"); // Firebase modules
 
 
     var AppModule = function AppModule() {
@@ -18219,7 +18568,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_105__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_83__["AgentSignupComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_84__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_85__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_86__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_87__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_88__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_89__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_90__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_91__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_93__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_94__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_96__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_97__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_98__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_99__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_107__["DeleteDataComponent"], _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_102__["PropertyMatchesComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_103__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_104__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_106__["NestimatesHomeComponent"], _Home_home_matches_home_matches_component__WEBPACK_IMPORTED_MODULE_108__["HomeMatchesComponent"], _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_109__["PriceMatchesComponent"], _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_110__["AgenthomeComponent"], _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_111__["SelecteddetailareaComponent"], _agenthome_edit_details_edit_details_component__WEBPACK_IMPORTED_MODULE_112__["EditDetailsComponent"], _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_113__["SelecteddetailsellerComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_confirmSellerDetail_component__WEBPACK_IMPORTED_MODULE_12__["ConfirmSellerDetailComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_13__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_14__["SellerMatchListingComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_confirmBuyerDetail_component__WEBPACK_IMPORTED_MODULE_15__["ConfirmBuyerDetailComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_17__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_16__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_18__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_19__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_20__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_21__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_29__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_30__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_31__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_32__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_81__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_105__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_83__["AgentSignupComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_84__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_85__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_86__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_87__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_88__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_89__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_90__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_91__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_93__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_94__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_96__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_97__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_98__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_99__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_107__["DeleteDataComponent"], _property_matches_property_matches_component__WEBPACK_IMPORTED_MODULE_102__["PropertyMatchesComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_103__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_104__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_106__["NestimatesHomeComponent"], _Home_home_matches_home_matches_component__WEBPACK_IMPORTED_MODULE_108__["HomeMatchesComponent"], _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_109__["PriceMatchesComponent"], _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_110__["AgenthomeComponent"], _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_111__["SelecteddetailareaComponent"], _agenthome_edit_details_edit_details_component__WEBPACK_IMPORTED_MODULE_112__["EditDetailsComponent"], _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_113__["SelecteddetailsellerComponent"], _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_114__["ClickhomeComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_24__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_28__["environment"].firebaseConfig, "street"), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_25__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_27__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_26__["AngularFireStorageModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_23__["AngularFireDatabaseModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_34__["BrowserAnimationsModule"], _Misc_material__WEBPACK_IMPORTED_MODULE_77__["MaterialModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_35__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_39__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_40__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_41__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_36__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_42__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_43__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_44__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_45__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_46__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_47__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_48__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_49__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_50__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_51__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_52__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_53__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_54__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_55__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_56__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_57__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_58__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_59__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_61__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_62__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_63__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_64__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_60__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_65__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_66__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_67__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_68__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_69__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_70__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_71__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_72__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_73__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_74__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_75__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_37__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_38__["ScrollingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_79__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_33__["ReactiveFormsModule"]],
       entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_78__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_80__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_82__["AltertFormDialogComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_92__["AlertDialogAgentComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_95__["EdiProfileComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_100__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_101__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_107__["DeleteDataComponent"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_22__["AuthService"], {
@@ -18306,7 +18655,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this105 = this;
+        var _this110 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -18320,8 +18669,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this105.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this105.userData));
+            _this110.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this110.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -18502,7 +18851,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee41() {
-            var _this106 = this;
+            var _this111 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee41$(_context41) {
@@ -18516,7 +18865,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                   case 3:
                     result = _context41.sent;
                     this.ngZone.run(function () {
-                      _this106.SetUserData(result.user);
+                      _this111.SetUserData(result.user);
                     });
                     _context41.next = 10;
                     break;
@@ -18817,35 +19166,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(PropertyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this107 = this;
+          var _this112 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this107.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this107.PropertyType = params.get("PropertyType").trim();
-            _this107.LookingTown = params.get("LookingTown").trim();
-            _this107.MinAmount = params.get("MinAmount").trim();
-            _this107.MaxAmount = params.get("MaxAmount").trim();
-            _this107.latitude = params.get("latitude");
-            _this107.longitude = params.get("longitude");
-            console.log(_this107.Lookingpostcode + " " + _this107.PropertyType + " " + _this107.LookingTown + " " + _this107.MinAmount + " " + _this107.MaxAmount);
+            _this112.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this112.PropertyType = params.get("PropertyType").trim();
+            _this112.LookingTown = params.get("LookingTown").trim();
+            _this112.MinAmount = params.get("MinAmount").trim();
+            _this112.MaxAmount = params.get("MaxAmount").trim();
+            _this112.latitude = params.get("latitude");
+            _this112.longitude = params.get("longitude");
+            console.log(_this112.Lookingpostcode + " " + _this112.PropertyType + " " + _this112.LookingTown + " " + _this112.MinAmount + " " + _this112.MaxAmount);
           }); // Fetch details
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this107.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              console.log(_this107.maxAmount);
-              _this107.less = _this107.maxAmount - _this107.maxAmount * 3 / 100;
-              _this107.more = _this107.maxAmount * 1 + _this107.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
+              _this112.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              console.log(_this112.maxAmount);
+              _this112.less = _this112.maxAmount - _this112.maxAmount * 3 / 100;
+              _this112.more = _this112.maxAmount * 1 + _this112.maxAmount * 10 / 100 * 1; //Remove Postcode Spaces
 
-              _this107.removespace = _this107.Lookingpostcode.replace(/\s/g, "");
-              _this107.listing = _this107.Lookingpostcode.replace(/\s/g, "");
-              _this107.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
+              _this112.removespace = _this112.Lookingpostcode.replace(/\s/g, "");
+              _this112.listing = _this112.Lookingpostcode.replace(/\s/g, "");
+              _this112.amount = item.data().MaxAmount.replace(/,/g, ""); //Result Set 1 Matches
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this107.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this107.PropertyType && _this107.maxAmount >= _this107.MinAmount.replace(/,/g, "") && _this107.maxAmount <= _this107.MaxAmount.replace(/,/g, "")) {
-                _this107.matchedProperties.push({
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this112.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this112.PropertyType && _this112.maxAmount >= _this112.MinAmount.replace(/,/g, "") && _this112.maxAmount <= _this112.MaxAmount.replace(/,/g, "")) {
+                _this112.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id
                 }); //Use this object to populate html
@@ -18853,59 +19202,59 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                 console.log("Result Set 1");
               } //Result Set 1 Matches
-              else if (item.data().Lookingpostcode == _this107.Lookingpostcode && _this107.maxAmount != _this107.MinAmount.replace(/,/g, "") && _this107.maxAmount != _this107.MaxAmount.replace(/,/g, "") && _this107.maxAmount < _this107.MinAmount.replace(/,/g, "") && _this107.maxAmount < _this107.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this107.PropertyType && _this107.more >= _this107.MinAmount.replace(/,/g, "")) {
-                  _this107.prceMathLogic.push({
+              else if (item.data().Lookingpostcode == _this112.Lookingpostcode && _this112.maxAmount != _this112.MinAmount.replace(/,/g, "") && _this112.maxAmount != _this112.MaxAmount.replace(/,/g, "") && _this112.maxAmount < _this112.MinAmount.replace(/,/g, "") && _this112.maxAmount < _this112.MaxAmount.replace(/,/g, "") && item.data().PropertyType == _this112.PropertyType && _this112.more >= _this112.MinAmount.replace(/,/g, "")) {
+                  _this112.prceMathLogic.push({
                     detail: item.data(),
                     propertyId: item.id
                   });
 
                   console.log("Result Set 1/2");
                 } //Result Set 2 Matches
-                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this107.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this107.PropertyType && _this107.maxAmount >= _this107.MinAmount.replace(/,/g, "") && _this107.maxAmount <= _this107.MaxAmount.replace(/,/g, "") && _this107.removespace.substring(0, 3) == _this107.listing.substring(0, 3)) {
-                    _this107.settwo.push({
+                else if (item.data().Lookingpostcode.replace(/\s/g, "") != _this112.Lookingpostcode.replace(/\s/g, "") && item.data().PropertyType == _this112.PropertyType && _this112.maxAmount >= _this112.MinAmount.replace(/,/g, "") && _this112.maxAmount <= _this112.MaxAmount.replace(/,/g, "") && _this112.removespace.substring(0, 3) == _this112.listing.substring(0, 3)) {
+                    _this112.settwo.push({
                       detail: item.data(),
                       propertyId: item.id
                     });
 
                     console.log("result Set 2 Matches");
                   } //No Matching Result Set 1
-                  else if (item.data().Lookingpostcode != _this107.Lookingpostcode && item.data().PropertyType == _this107.PropertyType && _this107.more <= _this107.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                      _this107.distanceInKm = _this107.getDistanceFromLatLonInKm(_this107.latitude, _this107.longitude, item.data().latitude, item.data().longitude);
+                  else if (item.data().Lookingpostcode != _this112.Lookingpostcode && item.data().PropertyType == _this112.PropertyType && _this112.more <= _this112.MinAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                      _this112.distanceInKm = _this112.getDistanceFromLatLonInKm(_this112.latitude, _this112.longitude, item.data().latitude, item.data().longitude);
 
-                      _this107.unmatchedProperties.push({
+                      _this112.unmatchedProperties.push({
                         detail: item.data(),
                         propertyId: item.id,
-                        distance: _this107.distanceInKm
+                        distance: _this112.distanceInKm
                       });
 
                       console.log("Result Set No Matches 1");
                     } //More tha Maxamount No Matching Result Set 1
-                    else if (item.data().Lookingpostcode != _this107.Lookingpostcode && item.data().PropertyType == _this107.PropertyType && _this107.less >= _this107.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
-                        _this107.distanceInKm = _this107.getDistanceFromLatLonInKm(_this107.latitude, _this107.longitude, item.data().latitude, item.data().longitude);
+                    else if (item.data().Lookingpostcode != _this112.Lookingpostcode && item.data().PropertyType == _this112.PropertyType && _this112.less >= _this112.MaxAmount.replace(/,/g, "") && item.data().latitude && item.data().longitude) {
+                        _this112.distanceInKm = _this112.getDistanceFromLatLonInKm(_this112.latitude, _this112.longitude, item.data().latitude, item.data().longitude);
 
-                        _this107.unmatchedPriceLogic.push({
+                        _this112.unmatchedPriceLogic.push({
                           detail: item.data(),
                           propertyId: item.id,
-                          distance: _this107.distanceInKm
+                          distance: _this112.distanceInKm
                         });
 
                         console.log("result Set Maxmount More than Min");
                       } //Result Set-4 Other Matches
-                      else if (item.data().Lookingpostcode != _this107.Lookingpostcode && item.data().PropertyType != _this107.PropertyType && item.data().LookingTown == _this107.LookingTown && item.data().latitude && item.data().longitude) {
-                          _this107.distanceInKm = _this107.getDistanceFromLatLonInKm(_this107.latitude, _this107.longitude, item.data().latitude, item.data().longitude);
-                          console.log(_this107.latitude + _this107.longitude);
+                      else if (item.data().Lookingpostcode != _this112.Lookingpostcode && item.data().PropertyType != _this112.PropertyType && item.data().LookingTown == _this112.LookingTown && item.data().latitude && item.data().longitude) {
+                          _this112.distanceInKm = _this112.getDistanceFromLatLonInKm(_this112.latitude, _this112.longitude, item.data().latitude, item.data().longitude);
+                          console.log(_this112.latitude + _this112.longitude);
 
-                          _this107.lookTown.push({
+                          _this112.lookTown.push({
                             detail: item.data(),
                             propertyId: item.id,
-                            distance: _this107.distanceInKm
+                            distance: _this112.distanceInKm
                           });
 
                           console.log("Result Set 4");
                         }
             });
 
-            _this107.unmatchedProperties.sort(_this107.compare);
+            _this112.unmatchedProperties.sort(_this112.compare);
           });
           this.getExpressedListingIds();
         }
@@ -19001,15 +19350,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this108 = this;
+          var _this113 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this108.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this108.distinctExpressedUid.push(item.data().propertyId);
+              if (_this113.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this113.distinctExpressedUid.push(item.data().propertyId);
               }
             });
-            console.log(_this108.distinctExpressedUid);
+            console.log(_this113.distinctExpressedUid);
           });
         }
       }, {
@@ -19250,19 +19599,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this109 = this;
+          var _this114 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this109.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this109.userData));
+              _this114.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this114.userData));
 
-              _this109.LoggedIn();
+              _this114.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this109.LoggedOut();
+              _this114.LoggedOut();
             }
           });
         }
@@ -19281,53 +19630,53 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this110 = this;
+          var _this115 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this110.user.Lastseen = _this110.now;
-            _this110.return = _this110.FormService.createUserTime(_this110.user).then(function (data) {});
-            _this110.isLoading = false;
+            _this115.user.Lastseen = _this115.now;
+            _this115.return = _this115.FormService.createUserTime(_this115.user).then(function (data) {});
+            _this115.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this111 = this;
+          var _this116 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this111.user.Lastseen = _this111.now;
-            _this111.return = _this111.FormService.createUserTime(_this111.user).then(function (data) {});
-            _this111.isLoading = false;
+            _this116.user.Lastseen = _this116.now;
+            _this116.return = _this116.FormService.createUserTime(_this116.user).then(function (data) {});
+            _this116.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this112 = this;
+          var _this117 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this112.user.Lastseen = _this112.now;
-            _this112.return = _this112.FormService.createUserTime(_this112.user).then(function (data) {});
-            _this112.isLoading = false;
+            _this117.user.Lastseen = _this117.now;
+            _this117.return = _this117.FormService.createUserTime(_this117.user).then(function (data) {});
+            _this117.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this113 = this;
+          var _this118 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this113.isLoading = false;
-            _this113.user.Lastseen = _this113.now;
-            _this113.return = _this113.FormService.createUserTime(_this113.user).then(function (data) {});
-            _this113.isLoading = false;
+            _this118.isLoading = false;
+            _this118.user.Lastseen = _this118.now;
+            _this118.return = _this118.FormService.createUserTime(_this118.user).then(function (data) {});
+            _this118.isLoading = false;
           });
         }
       }, {
@@ -19349,18 +19698,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this114 = this;
+          var _this119 = this;
 
           console.log(displayName);
           this.overlay = true;
           this.authService.SignUp(email, pass).then(function (data) {
-            _this114.isLoading = false;
-            _this114.user.Name = displayName;
-            _this114.user.DOB = null;
-            _this114.user.Phone = null;
-            _this114.return = _this114.FormService.createUserCustomer(_this114.user).then(function (data) {
-              _this114.user.Lastseen = _this114.now;
-              _this114.return = _this114.FormService.createUserTime(_this114.user).then(function (data) {});
+            _this119.isLoading = false;
+            _this119.user.Name = displayName;
+            _this119.user.DOB = null;
+            _this119.user.Phone = null;
+            _this119.return = _this119.FormService.createUserCustomer(_this119.user).then(function (data) {
+              _this119.user.Lastseen = _this119.now;
+              _this119.return = _this119.FormService.createUserTime(_this119.user).then(function (data) {});
               console.log(data);
             });
           });
