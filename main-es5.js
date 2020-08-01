@@ -14420,14 +14420,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 _this86.belliconone = false;
               }
 
-              if (item.data().Lastseen == null) {
+              if (item.data().Lastseen != undefined) {
+                console.log(item.data().Lastseen);
+                _this86.confirmInterest = [];
+                _this86.notification = 0;
+              } else {
                 _this86.confirmInterest.push(item.data());
 
                 _this86.notification = _this86.confirmInterest.length;
-              } // else if (item.data().Lastseen != null) {
-              //   this.notification = 0
-              // }
-
+                console.log(_this86.confirmInterest.length);
+              }
             });
           });
         }
@@ -14700,6 +14702,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 Detail: item.data(),
                 id: item.id
               });
+
+              _this94.getNotification();
             });
             console.log(_this94.confirmInterests);
           });
@@ -14716,6 +14720,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               _this95.confirmInterests = null;
+
+              _this95.getNotification();
             });
           });
           this.bellicontwo = false;

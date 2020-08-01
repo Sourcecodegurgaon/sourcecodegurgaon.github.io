@@ -9573,13 +9573,16 @@ let NavigationBarComponent = class NavigationBarComponent {
                 if (this.bellicon.length > 0) {
                     this.belliconone = false;
                 }
-                if (item.data().Lastseen == null) {
+                if (item.data().Lastseen != undefined) {
+                    console.log(item.data().Lastseen);
+                    this.confirmInterest = [];
+                    this.notification = 0;
+                }
+                else {
                     this.confirmInterest.push(item.data());
                     this.notification = this.confirmInterest.length;
+                    console.log(this.confirmInterest.length);
                 }
-                // else if (item.data().Lastseen != null) {
-                //   this.notification = 0
-                // }
             });
         });
     }
@@ -9780,6 +9783,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.NotificationService.getnotifications(this.uid).subscribe((ref) => {
             ref.forEach((item) => {
                 this.confirmInterests.push({ Detail: item.data(), id: item.id });
+                this.getNotification();
             });
             console.log(this.confirmInterests);
         });
@@ -9792,6 +9796,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.NotificationService.getnotifications(this.uid).subscribe((ref) => {
             ref.forEach((item) => {
                 this.confirmInterests = null;
+                this.getNotification();
             });
         });
         this.bellicontwo = false;
