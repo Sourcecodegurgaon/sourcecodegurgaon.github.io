@@ -9573,13 +9573,13 @@ let NavigationBarComponent = class NavigationBarComponent {
                 if (this.bellicon.length > 0) {
                     this.belliconone = false;
                 }
-                if (item.data().Lastseen == undefined) {
+                if (item.data().Lastseen == null) {
                     this.confirmInterest.push(item.data());
                     this.notification = this.confirmInterest.length;
                 }
-                if (item.data().Lastseen != undefined) {
-                    this.notification = 0;
-                }
+                // else if (item.data().Lastseen != null) {
+                //   this.notification = 0
+                // }
             });
         });
     }

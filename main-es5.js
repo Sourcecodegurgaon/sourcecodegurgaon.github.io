@@ -14420,15 +14420,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 _this86.belliconone = false;
               }
 
-              if (item.data().Lastseen == undefined) {
+              if (item.data().Lastseen == null) {
                 _this86.confirmInterest.push(item.data());
 
                 _this86.notification = _this86.confirmInterest.length;
-              }
+              } // else if (item.data().Lastseen != null) {
+              //   this.notification = 0
+              // }
 
-              if (item.data().Lastseen != undefined) {
-                _this86.notification = 0;
-              }
             });
           });
         }
