@@ -141,7 +141,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"Main-showing-div-buyer\">\n  <!-- <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\n      class=\"outputText\"></span>&nbsp;No Match Listing(s)</p> -->\n  <div class=\"heading-nestimate font-main-nestimate \">Your search has the\n    following results</div>\n\n\n  <div class=\"nestiamte-dropdown-asearch-result\">\n    <mat-form-field class=\"example-full-width home-matches\">\n      <mat-label style=\"color:white\">Sort By</mat-label>\n      <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width home-matches\">\n        <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n        <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n        <mat-option value='date'>Listed date</mat-option>\n        <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n  <!--Result Set One with Price Range-->\n  <!--Not Expressed-->\n\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <div class=\"nestimate_by\" >\n\n        <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n          <div class=\"matches-mame\">Same postcode only,PropertyType,PropertyFor,Matches price criteria (min reduce 3% max +10%)            </div>\n        </div>\n      \n\n      <div class=\"netimate-content\">\n        <div class=\"nestimate-image\">\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n        </div>\n        <span class=\"buy-option\" >\n          <div class=\"nestimate-price-range\">\n            <span class=\"heading-nestimate\" *ngIf=\"property.PropertyFor == 'buy'\">Desired Price</span> \n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n            <br>\n            <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n          </div>\n          <div class=\"nestimate-content\">\n            <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n            <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n          </div>\n        </span>\n\n\n        <div class=\"button-container\">\n          <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/{{property.detail.Lookingstate}}/{{property.detail.LookingTown}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.LookingAddress}}/{{property.detail.ownership}}/{{property.detail.PropertyType}}/{{property.detail.features}}/{{property.detail.UserId}}/{{property.detail.Maxbathrooms}}/{{property.detail.Maxrooms}}/{{property.detail.Maxreception}}/{{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n              &gt;</span></div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n\n  <!--Expressed-->\n <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <div class=\"nestimate_by\">\n\n        <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n          <div class=\"matches-mame\">Same postcode only,PropertyType,PropertyFor,Matches price criteria (min reduce 3% max +10%)            </div>\n\n      </div>\n      <div class=\"netimate-content-expressed\">\n\n        <div class=\"nestimate-image\">\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n        </div>\n        <span class=\"buy-option\">\n          <div class=\"nestimate-price-range\">\n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n            <br>\n            <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n          </div>\n          <div class=\"nestimate-content\">\n            <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n            <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n          </div>\n        </span>\n        <div class=\"button-container\">\n          <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n              {{property.detail.Lookingstate}}/\n              {{property.detail.LookingTown}}/\n              {{property.detail.PropertyCondition}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.LookingAddress}}/\n              {{property.detail.ownership}}/\n              {{property.detail.PropertyType}}/\n              {{property.detail.features}}/\n          {{property.detail.UserId}}/\n          {{property.detail.Maxbathrooms}}/\n          {{property.detail.Maxrooms}}/\n          {{property.detail.Maxreception}}/\n          {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n              &gt;</span></div>\n        </div>\n\n\n      </div>\n    </div>\n  </div> \n\n  <!--Result Set One with Price Range-->\n  <div>\n\n\n\n\n\n\n\n\n    <div class=\"other-container No-Matches\">\n\n    </div>\n  \n\n    <div class=\"main-div-result\">\n      <!--Result Set No Matches 1-->\n      <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">   POSTCODE MATCH - FIRST 5 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>          </div>\n          <div class=\"netimate-content-no-matches\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                  {{property.detail.Lookingstate}}/\n                  {{property.detail.LookingTown}}/\n                  {{property.detail.PropertyCondition}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.LookingAddress}}/\n                  {{property.detail.ownership}}/\n                  {{property.detail.PropertyType}}/\n                  {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n\n\n\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">   POSTCODE MATCH - FIRST 5 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n           \n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                  {{property.detail.Lookingstate}}/\n                  {{property.detail.LookingTown}}/\n                  {{property.detail.PropertyCondition}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.LookingAddress}}/\n                  {{property.detail.ownership}}/\n                  {{property.detail.PropertyType}}/\n                  {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches End-->\n    </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    <div class=\"main-div-result\">\n      <!--Result Set No Matches 1-->\n      <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyPrice.propertyId)\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n\n         \n          </div>\n          <div class=\"netimate-content-no-matches\">\n            <!-- \n                <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">Desired Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'rent'\">Desired Rent</span>  <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyPrice.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n    {{propertyPrice.detail.Lookingstate}}/\n    {{propertyPrice.detail.LookingTown}}/\n    {{propertyPrice.detail.PropertyCondition}}/\n    {{propertyPrice.detail.MaxAmount}}/\n    {{propertyPrice.detail.LookingAddress}}/\n    {{propertyPrice.detail.ownership}}/\n    {{propertyPrice.detail.PropertyType}}/\n    {{propertyPrice.detail.features}}/\n{{propertyPrice.detail.UserId}}/\n{{propertyPrice.detail.Maxbathrooms}}/\n{{propertyPrice.detail.Maxrooms}}/\n{{propertyPrice.detail.Maxreception}}/\n{{propertyPrice.propertyId}}/{{expressed}}/{{propertyPrice.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyPrice.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">Desired Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'rent'\">Desired Rent</span>  <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyPrice.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n    {{propertyPrice.detail.Lookingstate}}/\n    {{propertyPrice.detail.LookingTown}}/\n    {{propertyPrice.detail.PropertyCondition}}/\n    {{propertyPrice.detail.MaxAmount}}/\n    {{propertyPrice.detail.LookingAddress}}/\n    {{propertyPrice.detail.ownership}}/\n    {{propertyPrice.detail.PropertyType}}/\n    {{propertyPrice.detail.features}}/\n{{propertyPrice.detail.UserId}}/\n{{propertyPrice.detail.Maxbathrooms}}/\n{{propertyPrice.detail.Maxrooms}}/\n{{propertyPrice.detail.Maxreception}}/\n{{propertyPrice.propertyId}}/{{expressed}}/{{propertyPrice.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!-- unmatchedPriceLogic End-->\n    </div>\n\n\n<!---->\n\n    <div class=\"main-div-result\">\n      <!-- lookTown Set No Matches 4-->\n      <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of unmatchedallProperty\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyTown.propertyId)\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">\n              - POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - ALL property types\n              </div>\n          </div>\n          <div class=\"netimate-content-no-matches\">\n            <!-- \n                <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown.detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                  {{propertyTown.detail.Lookingstate}}/\n                  {{propertyTown.detail.LookingTown}}/\n                  {{propertyTown.detail.PropertyCondition}}/\n                  {{propertyTown.detail.MaxAmount}}/\n                  {{propertyTown.detail.LookingAddress}}/\n                  {{propertyTown.detail.ownership}}/\n                  {{propertyTown.detail.PropertyType}}/\n                  {{propertyTown.detail.features}}/\n              {{propertyTown.detail.UserId}}/\n              {{propertyTown.detail.Maxbathrooms}}/\n              {{propertyTown.detail.Maxrooms}}/\n              {{propertyTown.detail.Maxreception}}/\n              {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of unmatchedallProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyTown.propertyId)\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">\n              - POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - ALL property types\n              </div>\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                  {{propertyTown.detail.Lookingstate}}/\n                  {{propertyTown.detail.LookingTown}}/\n                  {{propertyTown.detail.PropertyCondition}}/\n                  {{propertyTown.detail.MaxAmount}}/\n                  {{propertyTown.detail.LookingAddress}}/\n                  {{propertyTown.detail.ownership}}/\n                  {{propertyTown.detail.PropertyType}}/\n                  {{propertyTown.detail.features}}/\n              {{propertyTown.detail.UserId}}/\n              {{propertyTown.detail.Maxbathrooms}}/\n              {{propertyTown.detail.Maxrooms}}/\n              {{propertyTown.detail.Maxreception}}/\n              {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!-- lookTown Set  Matches End-->\n    </div>\n\n\n\n\n\n\n\n\n\n\n\n\n    <div class=\"main-div-result\">\n      <!-- lookTown Set No Matches 4-->\n      <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyTown.propertyId)\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">\n              - All other properties - Nationwide\n              </div>\n          </div>\n          <div class=\"netimate-content-no-matches\">\n            <!-- \n                <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                  {{propertyTown.detail.Lookingstate}}/\n                  {{propertyTown.detail.LookingTown}}/\n                  {{propertyTown.detail.PropertyCondition}}/\n                  {{propertyTown.detail.MaxAmount}}/\n                  {{propertyTown.detail.LookingAddress}}/\n                  {{propertyTown.detail.ownership}}/\n                  {{propertyTown.detail.PropertyType}}/\n                  {{propertyTown.detail.features}}/\n              {{propertyTown.detail.UserId}}/\n              {{propertyTown.detail.Maxbathrooms}}/\n              {{propertyTown.detail.Maxrooms}}/\n              {{propertyTown.detail.Maxreception}}/\n              {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyTown.propertyId)\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">\n              - All other properties - Nationwide\n              </div>\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                  {{propertyTown.detail.Lookingstate}}/\n                  {{propertyTown.detail.LookingTown}}/\n                  {{propertyTown.detail.PropertyCondition}}/\n                  {{propertyTown.detail.MaxAmount}}/\n                  {{propertyTown.detail.LookingAddress}}/\n                  {{propertyTown.detail.ownership}}/\n                  {{propertyTown.detail.PropertyType}}/\n                  {{propertyTown.detail.features}}/\n              {{propertyTown.detail.UserId}}/\n              {{propertyTown.detail.Maxbathrooms}}/\n              {{propertyTown.detail.Maxrooms}}/\n              {{propertyTown.detail.Maxreception}}/\n              {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!-- lookTown Set  Matches End-->\n    </div>\n\n  </div>\n\n</div>";
+    __webpack_exports__["default"] = "<div class=\"Main-showing-div-buyer\">\n  <!-- <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\n      class=\"outputText\"></span>&nbsp;No Match Listing(s)</p> -->\n  <div class=\"heading-nestimate font-main-nestimate \">Your search has the\n    following results</div>\n\n\n  <div class=\"nestiamte-dropdown-asearch-result\">\n    <mat-form-field class=\"example-full-width home-matches\">\n      <mat-label style=\"color:white\">Sort By</mat-label>\n      <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width home-matches\">\n        <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n        <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n        <mat-option value='date'>Listed date</mat-option>\n        <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n  <!--Result Set One with Price Range-->\n  <!--Not Expressed-->\n\n  <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != propety.propertyId\">\n      <div class=\"nestimate_by\" >\n\n        <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n          <div class=\"matches-mame\">Same postcode only,PropertyType,PropertyFor,Matches price criteria (min reduce 3% max +10%)            </div>\n        </div>\n      \n\n      <div class=\"netimate-content\">\n        <div class=\"nestimate-image\">\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n        </div>\n        <span class=\"buy-option\" >\n          <div class=\"nestimate-price-range\">\n            <span class=\"heading-nestimate\" *ngIf=\"property.PropertyFor == 'buy'\">Desired Price</span> \n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n            <br>\n            <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n          </div>\n          <div class=\"nestimate-content\">\n            <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n            <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n          </div>\n        </span>\n\n\n        <div class=\"button-container\">\n          <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/{{property.detail.Lookingstate}}/{{property.detail.LookingTown}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.LookingAddress}}/{{property.detail.ownership}}/{{property.detail.PropertyType}}/{{property.detail.features}}/{{property.detail.UserId}}/{{property.detail.Maxbathrooms}}/{{property.detail.Maxrooms}}/{{property.detail.Maxreception}}/{{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n              &gt;</span></div>\n        </div>\n\n\n      </div>\n    </div>\n  </div>\n\n  <!--Expressed-->\n <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n    <div class=\"expressed\" *ngIf=\"distinctExpressedUid == propety.propertyId\">\n      <div class=\"nestimate_by\">\n\n        <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n          {{property.detail.username | shortName}}</div>\n          <div class=\"matches-mame\">Same postcode only,PropertyType,PropertyFor,Matches price criteria (min reduce 3% max +10%)            </div>\n\n      </div>\n      <div class=\"netimate-content-expressed\">\n\n        <div class=\"nestimate-image\">\n          <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n        </div>\n        <span class=\"buy-option\">\n          <div class=\"nestimate-price-range\">\n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n            <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n            <br>\n            <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n          </div>\n          <div class=\"nestimate-content\">\n            <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n            <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n          </div>\n        </span>\n        <div class=\"button-container\">\n          <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n              {{property.detail.Lookingstate}}/\n              {{property.detail.LookingTown}}/\n              {{property.detail.PropertyCondition}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.LookingAddress}}/\n              {{property.detail.ownership}}/\n              {{property.detail.PropertyType}}/\n              {{property.detail.features}}/\n          {{property.detail.UserId}}/\n          {{property.detail.Maxbathrooms}}/\n          {{property.detail.Maxrooms}}/\n          {{property.detail.Maxreception}}/\n          {{property.propertyId}}/true/{{property.detail.PropertyFor}}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n              &gt;</span></div>\n        </div>\n\n\n      </div>\n    </div>\n  </div> \n\n  <!--Result Set One with Price Range-->\n  <div>\n\n\n\n\n\n\n\n\n    <div class=\"other-container No-Matches\">\n\n    </div>\n  \n\n    <div class=\"main-div-result\">\n      <!--Result Set No Matches 1-->\n      <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != propety.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">   POSTCODE MATCH - FIRST 5 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>          </div>\n          <div class=\"netimate-content-no-matches\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                  {{property.detail.Lookingstate}}/\n                  {{property.detail.LookingTown}}/\n                  {{property.detail.PropertyCondition}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.LookingAddress}}/\n                  {{property.detail.ownership}}/\n                  {{property.detail.PropertyType}}/\n                  {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n\n\n\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == propety.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">   POSTCODE MATCH - FIRST 5 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n           \n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                  {{property.detail.Lookingstate}}/\n                  {{property.detail.LookingTown}}/\n                  {{property.detail.PropertyCondition}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.LookingAddress}}/\n                  {{property.detail.ownership}}/\n                  {{property.detail.PropertyType}}/\n                  {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/true/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches End-->\n    </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    <div class=\"main-div-result\">\n      <!--Result Set No Matches 1-->\n      <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != propertyPrice.propertyId\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n\n         \n          </div>\n          <div class=\"netimate-content-no-matches\">\n            <!-- \n                <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">Desired Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'rent'\">Desired Rent</span>  <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyPrice.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n    {{propertyPrice.detail.Lookingstate}}/\n    {{propertyPrice.detail.LookingTown}}/\n    {{propertyPrice.detail.PropertyCondition}}/\n    {{propertyPrice.detail.MaxAmount}}/\n    {{propertyPrice.detail.LookingAddress}}/\n    {{propertyPrice.detail.ownership}}/\n    {{propertyPrice.detail.PropertyType}}/\n    {{propertyPrice.detail.features}}/\n{{propertyPrice.detail.UserId}}/\n{{propertyPrice.detail.Maxbathrooms}}/\n{{propertyPrice.detail.Maxrooms}}/\n{{propertyPrice.detail.Maxreception}}/\n{{propertyPrice.propertyId}}/{{expressed}}/{{propertyPrice.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == propertyPrice.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">Desired Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'rent'\">Desired Rent</span>  <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyPrice.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n    {{propertyPrice.detail.Lookingstate}}/\n    {{propertyPrice.detail.LookingTown}}/\n    {{propertyPrice.detail.PropertyCondition}}/\n    {{propertyPrice.detail.MaxAmount}}/\n    {{propertyPrice.detail.LookingAddress}}/\n    {{propertyPrice.detail.ownership}}/\n    {{propertyPrice.detail.PropertyType}}/\n    {{propertyPrice.detail.features}}/\n{{propertyPrice.detail.UserId}}/\n{{propertyPrice.detail.Maxbathrooms}}/\n{{propertyPrice.detail.Maxrooms}}/\n{{propertyPrice.detail.Maxreception}}/\n{{propertyPrice.propertyId}}/true/{{propertyPrice.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!-- unmatchedPriceLogic End-->\n    </div>\n\n\n<!---->\n\n    <div class=\"main-div-result\">\n      <!-- lookTown Set No Matches 4-->\n      <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of unmatchedallProperty\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != propertyTown.propertyId\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">\n              - POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - ALL property types\n              </div>\n          </div>\n          <div class=\"netimate-content-no-matches\">\n            <!-- \n                <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown.detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                  {{propertyTown.detail.Lookingstate}}/\n                  {{propertyTown.detail.LookingTown}}/\n                  {{propertyTown.detail.PropertyCondition}}/\n                  {{propertyTown.detail.MaxAmount}}/\n                  {{propertyTown.detail.LookingAddress}}/\n                  {{propertyTown.detail.ownership}}/\n                  {{propertyTown.detail.PropertyType}}/\n                  {{propertyTown.detail.features}}/\n              {{propertyTown.detail.UserId}}/\n              {{propertyTown.detail.Maxbathrooms}}/\n              {{propertyTown.detail.Maxrooms}}/\n              {{propertyTown.detail.Maxreception}}/\n              {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of unmatchedallProperty\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == propertyTown.propertyId\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">\n              - POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - ALL property types\n              </div>\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                  {{propertyTown.detail.Lookingstate}}/\n                  {{propertyTown.detail.LookingTown}}/\n                  {{propertyTown.detail.PropertyCondition}}/\n                  {{propertyTown.detail.MaxAmount}}/\n                  {{propertyTown.detail.LookingAddress}}/\n                  {{propertyTown.detail.ownership}}/\n                  {{propertyTown.detail.PropertyType}}/\n                  {{propertyTown.detail.features}}/\n              {{propertyTown.detail.UserId}}/\n              {{propertyTown.detail.Maxbathrooms}}/\n              {{propertyTown.detail.Maxrooms}}/\n              {{propertyTown.detail.Maxreception}}/\n              {{propertyTown.propertyId}}/true/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!-- lookTown Set  Matches End-->\n    </div>\n\n\n\n\n\n\n\n\n\n\n\n\n    <div class=\"main-div-result\">\n      <!-- lookTown Set No Matches 4-->\n      <!--not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != propertyTown.propertyId\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">\n              - All other properties - Nationwide \n              </div>\n          </div>\n          <div class=\"netimate-content-no-matches\">\n            <!-- \n                <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n               \n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                  {{propertyTown.detail.Lookingstate}}/\n                  {{propertyTown.detail.LookingTown}}/\n                  {{propertyTown.detail.PropertyCondition}}/\n                  {{propertyTown.detail.MaxAmount}}/\n                  {{propertyTown.detail.LookingAddress}}/\n                  {{propertyTown.detail.ownership}}/\n                  {{propertyTown.detail.PropertyType}}/\n                  {{propertyTown.detail.features}}/\n              {{propertyTown.detail.UserId}}/\n              {{propertyTown.detail.Maxbathrooms}}/\n              {{propertyTown.detail.Maxrooms}}/\n              {{propertyTown.detail.Maxreception}}/\n              {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!--Expressed Interest-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == propertyTown.propertyId\">\n\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">\n              - All other properties - Nationwide \n              </div>\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n                <span class=\"buy-option\" >\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired Price</span> \n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent </span> \n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                 \n                </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                  {{propertyTown.detail.Lookingstate}}/\n                  {{propertyTown.detail.LookingTown}}/\n                  {{propertyTown.detail.PropertyCondition}}/\n                  {{propertyTown.detail.MaxAmount}}/\n                  {{propertyTown.detail.LookingAddress}}/\n                  {{propertyTown.detail.ownership}}/\n                  {{propertyTown.detail.PropertyType}}/\n                  {{propertyTown.detail.features}}/\n              {{propertyTown.detail.UserId}}/\n              {{propertyTown.detail.Maxbathrooms}}/\n              {{propertyTown.detail.Maxrooms}}/\n              {{propertyTown.detail.Maxreception}}/\n              {{propertyTown.propertyId}}/true/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n      <!-- lookTown Set  Matches End-->\n    </div>\n\n  </div>\n\n</div>";
     /***/
   },
 
@@ -261,7 +261,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"matches-main-container\">\n  <div class=\"heading-nestimate font-main-nestimate \">Your search has the\n  following results</div>\n\n  <div class=\"nestiamte-dropdown-asearch-result\">\n    <mat-form-field class=\"example-full-width home-matches\">\n      <mat-label style=\"color:white\">Sort By</mat-label>\n      <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width home-matches\">\n        <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n        <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n        <mat-option value='date'>Listed date</mat-option>\n        <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n      </mat-select>\n    </mat-form-field> \n  </div>\n\n  <div>\n  \n    <!--Result Set One Price Match-->\n    <section class=\"\" id=\"matchproperties\" >\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellermatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n              <div class=\"matches-mame\">- Same postcode only\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n           </div>\n            <div class=\"netimate-content\">\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                    class=\"outputText pl-1 \">{{property.detail.FinancialPosition}}</span></div>\n                </div> \n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText pl-1\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                {{property.detail.MaxAmount}}/\n                {{property.detail.MinAmount}}\n                /{{property.detail.Lookingpostcode}}\n                /{{property.detail.LookingStreetname}}\n                /{{property.detail.Position}}\n                /{{property.detail.PropertyType}}\n                /{{property.detail.Roomsmax}}\n                /{{property.detail.Ownership}}\n                /{{property.detail.Conditions}}\n                  /{{property.detail.Maxbathroom}}\n                   /{{property.detail.Maxreception}}\n                /{{property.detail.UserId}}\n                /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n              </div>\n            </div>\n\n\n        \n           \n  \n      \n          </div>\n\n        </div>\n      </section>\n\n    <section class=\"\" id=\"matchproperties\" >\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellermatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n           </div>\n           <div class=\"matches-mame\">- Same postcode only\n            - Matches price criteria (min reduce 3% max +10%)\n            - Same property type</div>\n            <div class=\"netimate-content-expressed\">\n\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n                <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n            <div class=\"nestimate-price-range\">\n              <span class=\"heading-nestimate\">Price Range </span> <br>\n              <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                &pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"nestimate-content\">\n              <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                  class=\"outputText pl-1 \">{{property.detail.ChainStatus}}</span></div>\n              <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                class=\"outputText pl-1\">{{property.detail.FinancialPosition}}</span></div>\n            </div>\n          </span>\n          <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n            <div class=\"nestimate-price-range\">\n              <span class=\"heading-nestimate\">Rent Range</span> <br>\n              <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                &pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"nestimate-content\">\n              <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                  class=\"outputText pl-1 \">{{property.detail.ChainStatus}}</span></div>\n            </div>\n          </span>\n              <div class=\"button-container\">\n\n                <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                {{property.detail.MaxAmount}}/\n                {{property.detail.MinAmount}}\n                /{{property.detail.Lookingpostcode}}\n                /{{property.detail.LookingStreetname}}\n                /{{property.detail.Position}}\n                /{{property.detail.PropertyType}}\n                /{{property.detail.Roomsmax}}\n                /{{property.detail.Ownership}}\n                /{{property.detail.Conditions}}\n                  /{{property.detail.Maxbathroom}}\n                   /{{property.detail.Maxreception}}\n                /{{property.detail.UserId}}\n                /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n    <!--Result Set One Price Match-->\n\n\n\n\n\n\n\n\n\n\n    <section id=\"youmaylike\">\n      <div class=\"other-container\">\n       \n      </div>\n\n\n\n\n\n      <!--Result Set No Matches 1 done-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type </div>\n           </div>\n           <div class=\"netimate-content-no-matches\">\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <div class=\"nestimate_by\">\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches 1 done-->\n\n\n      <!--Result Set No Matches 1 done-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPropertiesFirst\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n           </div>\n           <div class=\"netimate-content-no-matches\">\n\n            <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPropertiesFirst\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <div class=\"nestimate_by\">\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches 1 done-->\n\n\n\n\n\n      \n\n      <!--Result Set No Matches 2-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPriceLogic\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">- POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - ALL property types</div>\n\n\n          </div>\n          <div class=\"netimate-content-no-matches\">\n\n            <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPriceLogic\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n          <div class=\"nestimate_by\">\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">- POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - ALL property types</div>\n\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n           <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches 2-->\n\n\n\n\n\n\n\n\n      <!--Result Set No Matches 4 Done-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerlookTown\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">All other properties - Nationwide</div>\n\n          </div>\n          <div class=\"netimate-content-no-matches\">\n\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerlookTown\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n     <div class=\"nestimate_by\">\n\n      <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n      <div class=\"matches-mame\">All other properties - Nationwide</div>\n    </div>\n    <div class=\"netimate-content-expressed\">\n<!-- \n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches 4 Done-->\n\n\n\n    </section>\n  </div>\n</div>\n";
+    __webpack_exports__["default"] = "<div class=\"matches-main-container\">\n  <div class=\"heading-nestimate font-main-nestimate \">Your search has the\n  following results</div>\n\n  <div class=\"nestiamte-dropdown-asearch-result\">\n    <mat-form-field class=\"example-full-width home-matches\">\n      <mat-label style=\"color:white\">Sort By</mat-label>\n      <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width home-matches\">\n        <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n        <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n        <mat-option value='date'>Listed date</mat-option>\n        <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n      </mat-select>\n    </mat-form-field> \n  </div>\n\n  <div>\n  \n    <!--Result Set One Price Match-->\n    <section class=\"\" id=\"matchproperties\" >\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellermatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n          <div class=\"nestimate_by\">\n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n              <div class=\"matches-mame\">- Same postcode only\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n           </div>\n            <div class=\"netimate-content\">\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                    class=\"outputText pl-1 \">{{property.detail.FinancialPosition}}</span></div>\n                </div> \n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText pl-1\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                {{property.detail.MaxAmount}}/\n                {{property.detail.MinAmount}}\n                /{{property.detail.Lookingpostcode}}\n                /{{property.detail.LookingStreetname}}\n                /{{property.detail.Position}}\n                /{{property.detail.PropertyType}}\n                /{{property.detail.Roomsmax}}\n                /{{property.detail.Ownership}}\n                /{{property.detail.Conditions}}\n                  /{{property.detail.Maxbathroom}}\n                   /{{property.detail.Maxreception}}\n                /{{property.detail.UserId}}\n                /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n              </div>\n            </div>\n\n\n        \n           \n  \n      \n          </div>\n\n        </div>\n      </section>\n\n    <section class=\"\" id=\"matchproperties\" >\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellermatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n           </div>\n           <div class=\"matches-mame\">- Same postcode only\n            - Matches price criteria (min reduce 3% max +10%)\n            - Same property type</div>\n            <div class=\"netimate-content-expressed\">\n\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n                <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n            <div class=\"nestimate-price-range\">\n              <span class=\"heading-nestimate\">Price Range </span> <br>\n              <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                &pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"nestimate-content\">\n              <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                  class=\"outputText pl-1 \">{{property.detail.ChainStatus}}</span></div>\n              <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                class=\"outputText pl-1\">{{property.detail.FinancialPosition}}</span></div>\n            </div>\n          </span>\n          <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n            <div class=\"nestimate-price-range\">\n              <span class=\"heading-nestimate\">Rent Range</span> <br>\n              <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                &pound;{{property.detail.MaxAmount}}</span>\n            </div>\n            <div class=\"nestimate-content\">\n              <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                  class=\"outputText pl-1 \">{{property.detail.ChainStatus}}</span></div>\n            </div>\n          </span>\n              <div class=\"button-container\">\n\n                <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                {{property.detail.MaxAmount}}/\n                {{property.detail.MinAmount}}\n                /{{property.detail.Lookingpostcode}}\n                /{{property.detail.LookingStreetname}}\n                /{{property.detail.Position}}\n                /{{property.detail.PropertyType}}\n                /{{property.detail.Roomsmax}}\n                /{{property.detail.Ownership}}\n                /{{property.detail.Conditions}}\n                  /{{property.detail.Maxbathroom}}\n                   /{{property.detail.Maxreception}}\n                /{{property.detail.UserId}}\n                /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n      </section>\n    <!--Result Set One Price Match-->\n\n\n\n\n\n\n\n\n\n\n    <section id=\"youmaylike\">\n      <div class=\"other-container\">\n       \n      </div>\n\n\n\n\n\n      <!--Result Set No Matches 1 done-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type </div>\n           </div>\n           <div class=\"netimate-content-no-matches\">\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedProperties\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n\n          <div class=\"nestimate_by\">\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches 1 done-->\n\n\n      <!--Result Set No Matches 1 done-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPropertiesFirst\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n           </div>\n           <div class=\"netimate-content-no-matches\">\n\n            <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPropertiesFirst\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n\n          <div class=\"nestimate_by\">\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches 1 done-->\n\n\n\n\n\n      \n\n      <!--Result Set No Matches 2-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPriceLogic\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">- POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - ALL property types</div>\n\n\n          </div>\n          <div class=\"netimate-content-no-matches\">\n\n            <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPriceLogic\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n\n          <div class=\"nestimate_by\">\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">- POSTCODE MATCH - FIRST 3 LETTERS ONLY\n              - Matches price criteria (min reduce 3% max +10%)\n              - ALL property types</div>\n\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n           <!-- <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches 2-->\n\n\n\n\n\n\n\n\n      <!--Result Set No Matches 4 Done-->\n      <!--Not Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerlookTown\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n            <div class=\"matches-mame\">All other properties - Nationwide </div>\n\n          </div>\n          <div class=\"netimate-content-no-matches\">\n\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Expressed-->\n      <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerlookTown\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n     <div class=\"nestimate_by\">\n\n      <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n      <div class=\"matches-mame\">All other properties - Nationwide</div>\n    </div>\n    <div class=\"netimate-content-expressed\">\n<!-- \n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div> -->\n\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range </span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                  &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n              {{property.detail.MaxAmount}}/\n              {{property.detail.MinAmount}}\n              /{{property.detail.Lookingpostcode}}\n              /{{property.detail.LookingStreetname}}\n              /{{property.detail.Position}}\n              /{{property.detail.PropertyType}}\n              /{{property.detail.Roomsmax}}\n              /{{property.detail.Ownership}}\n              /{{property.detail.Conditions}}\n                /{{property.detail.Maxbathroom}}\n                 /{{property.detail.Maxreception}}\n              /{{property.detail.UserId}}\n              /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\t&gt;</span></div>\n            </div>\n          </div>\n        </div>\n      </div>\n      <!--Result Set No Matches 4 Done-->\n\n\n\n    </section>\n  </div>\n</div>\n";
     /***/
   },
 
@@ -401,7 +401,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- Loading spinner -->\n<!-- <div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div> -->\n\n<div class=\"no-neestimate-found\">\n\n  <div class=\"matches-main-container\" *ngIf=\"Nestimate\">\n\n\n    <mat-card class=\"thanku-section\">\n      <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\n    </mat-card>\n    <div class=\"home_Matches\">\n      <div class=\"potential-things\" *ngIf=\"MatchesItem < 2\">\n        <!-- <p class=\"buyer-value heading-nestimate\" *ngIf=\"buyerItems\">{{buyerVal}}</p>\n      <p class=\"buyer-value heading-nestimate\" *ngIf=\"sellerItem\">{{sellerVal}}</p> -->\n      </div>\n      <mat-form-field class=\"example-full-width home-matches\" *ngIf=\"MatchesItem > 1\">\n        <mat-label style=\"color: white;\"> Select Nestimates</mat-label>\n        <mat-select name=\"ChainStatus\" class=\"example-full-width home-matches\" value=\"selected\" [(ngModel)]=\"test\"\n          (click)=\"checkvalue()\">\n          <mat-option [value]='buyerVal' *ngFor=\"let buyerproperty of propertyRequirementDetails\"\n            (click)=\"getDetails(buyerproperty.data.Lookingpostcode,buyerproperty.data.PropertyFor,buyerproperty.data.PropertyType,buyerproperty.data.MinAmount,buyerproperty.data.MaxAmount,buyerproperty.data.LookingTown,buyerproperty.data.latitude,buyerproperty.data.longitude,buyerproperty.data.LookingStreetname,buyerproperty.data.Conditions,buyerproperty.data.ChainStatus,buyerproperty.data.FinancialPosition,buyerproperty.data.Validity,buyerproperty.data.Position,buyerproperty.data.UserId)\">\n            Buyer _ {{buyerproperty.data.usertitle}}.{{buyerproperty.data.username | shortName}} _\n            {{buyerproperty.data.Lookingpostcode}}\n          </mat-option>\n\n\n\n\n          <mat-option [value]='sellerVal' value=\"selected\" *ngFor=\"let sellerproperty of propertyDetails\" (click)=\"getSellerDetails(sellerproperty.seller.Lookingpostcode,sellerproperty.seller.PropertyFor,sellerproperty.seller.PropertyType,\n          sellerproperty.seller.MaxAmount,sellerproperty.seller.LookingTown,\n          sellerproperty.seller.Lookingstate,sellerproperty.seller.Maxbathrooms,\n          sellerproperty.seller.PropertyCondition,sellerproperty.seller.LookingAddress,\n          sellerproperty.seller.ownership,sellerproperty.seller.features,\n          sellerproperty.seller.UserId,\n          sellerproperty.seller.Maxreception,\n          sellerproperty.seller.Maxrooms,\n          sellerproperty.seller.latitude,\n          sellerproperty.seller.longitude)\">\n            Seller _ {{sellerproperty.seller.usertitle}}.{{sellerproperty.seller.username | shortName}} _\n            {{sellerproperty.seller.Lookingpostcode}}</mat-option>\n\n\n\n        </mat-select>\n      </mat-form-field>\n    </div>\n\n    <div class=\"Main-showing-div-buyer\" *ngIf=\"buyer\">\n      <!-- <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\n          class=\"outputText\"></span>&nbsp;No Match Listing(s)</p> -->\n      <div class=\"heading-nestimate font-main-nestimate \">Your search has the\n        following results</div>\n\n\n      <div class=\"nestiamte-dropdown-asearch-result\">\n        <mat-form-field class=\"example-full-width home-matches\">\n          <mat-label style=\"color:white\">Sort By</mat-label>\n          <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width home-matches\">\n            <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n            <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n            <mat-option value='date'>Listed date</mat-option>\n            <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n          </mat-select>\n        </mat-form-field>\n      </div>\n\n      <!--Result Set One with Price Range-->\n      <!--Not Expressed-->\n<div class=\"main-desktop-grid\">\n\n\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"matches-mame\">Same postcode only,PropertyType,PropertyFor,Matches price criteria (min reduce 3%\n              max +10%) </div>\n          </div>\n\n\n          <div class=\"netimate-content\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span>\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span>\n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                    class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n              </div>\n            </span>\n\n\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                  {{property.detail.Lookingstate}}/\n                  {{property.detail.LookingTown}}/\n                  {{property.detail.PropertyCondition}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.LookingAddress}}/\n                  {{property.detail.ownership}}/\n                  {{property.detail.PropertyType}}/\n                  {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n  \n      <!--Expressed-->\n   \n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"matches-mame\">Same postcode only,PropertyType,PropertyFor,Matches price criteria (min reduce 3%\n              max +10%) </div>\n\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span>\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span>\n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                    class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                  {{property.detail.Lookingstate}}/\n                  {{property.detail.LookingTown}}/\n                  {{property.detail.PropertyCondition}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.LookingAddress}}/\n                  {{property.detail.ownership}}/\n                  {{property.detail.PropertyType}}/\n                  {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}}/{{Look_PropertyFor}}'>See\n                Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n   \n      <!--Result Set One with Price Range-->\n   \n\n\n\n\n\n\n\n\n       \n\n\n\n          <!--Result Set No Matches 1-->\n          <!--not Expressed-->\n        \n          <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n            <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - Same property type</div>\n              </div>\n              <div class=\"netimate-content-no-matches\">\n\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                      {{property.detail.Lookingstate}}/\n                      {{property.detail.LookingTown}}/\n                      {{property.detail.PropertyCondition}}/\n                      {{property.detail.MaxAmount}}/\n                      {{property.detail.LookingAddress}}/\n                      {{property.detail.ownership}}/\n                      {{property.detail.PropertyType}}/\n                      {{property.detail.features}}/\n                  {{property.detail.UserId}}/\n                  {{property.detail.Maxbathrooms}}/\n                  {{property.detail.Maxrooms}}/\n                  {{property.detail.Maxreception}}/\n                  {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                    Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n         \n            <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - Same property type</div>\n              </div>\n              <div class=\"netimate-content-expressed\">\n\n                <!-- <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                      {{property.detail.Lookingstate}}/\n                      {{property.detail.LookingTown}}/\n                      {{property.detail.PropertyCondition}}/\n                      {{property.detail.MaxAmount}}/\n                      {{property.detail.LookingAddress}}/\n                      {{property.detail.ownership}}/\n                      {{property.detail.PropertyType}}/\n                      {{property.detail.features}}/\n                  {{property.detail.UserId}}/\n                  {{property.detail.Maxbathrooms}}/\n                  {{property.detail.Maxrooms}}/\n                  {{property.detail.Maxreception}}/\n                  {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                    Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n          </div>\n    \n          <!--Result Set No Matches End-->\n     \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n          <!--Result Set No Matches 1-->\n          <!--not Expressed-->\n          <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n            <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyPrice.propertyId)\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - Same property type</div>\n\n\n              </div>\n              <div class=\"netimate-content-no-matches\">\n                <!-- \n                    <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'rent'\">Desired\n                      Rent</span> <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyPrice.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n        {{propertyPrice.detail.Lookingstate}}/\n        {{propertyPrice.detail.LookingTown}}/\n        {{propertyPrice.detail.PropertyCondition}}/\n        {{propertyPrice.detail.MaxAmount}}/\n        {{propertyPrice.detail.LookingAddress}}/\n        {{propertyPrice.detail.ownership}}/\n        {{propertyPrice.detail.PropertyType}}/\n        {{propertyPrice.detail.features}}/\n    {{propertyPrice.detail.UserId}}/\n    {{propertyPrice.detail.Maxbathrooms}}/\n    {{propertyPrice.detail.Maxrooms}}/\n    {{propertyPrice.detail.Maxreception}}/\n    {{propertyPrice.propertyId}}/{{expressed}}/{{propertyPrice.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                    Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n         \n            <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyPrice.propertyId)\">\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - Same property type</div>\n              </div>\n              <div class=\"netimate-content-expressed\">\n\n                <!-- <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'rent'\">Desired\n                      Rent</span> <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyPrice.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n        {{propertyPrice.detail.Lookingstate}}/\n        {{propertyPrice.detail.LookingTown}}/\n        {{propertyPrice.detail.PropertyCondition}}/\n        {{propertyPrice.detail.MaxAmount}}/\n        {{propertyPrice.detail.LookingAddress}}/\n        {{propertyPrice.detail.ownership}}/\n        {{propertyPrice.detail.PropertyType}}/\n        {{propertyPrice.detail.features}}/\n    {{propertyPrice.detail.UserId}}/\n    {{propertyPrice.detail.Maxbathrooms}}/\n    {{propertyPrice.detail.Maxrooms}}/\n    {{propertyPrice.detail.Maxreception}}/\n    {{propertyPrice.propertyId}}/{{expressed}}/{{propertyPrice.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                    Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n          </div>\n          <!-- unmatchedPriceLogic End-->\n        \n\n\n    \n\n          <!-- lookTown Set No Matches 4-->\n          <!--not Expressed-->\n \n          <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of unmatchedallProperty\">\n            <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyTown.propertyId)\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">\n                  - POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - ALL property types\n                </div>\n              </div>\n              <div class=\"netimate-content-no-matches\">\n                <!-- \n                    <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown.detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown.detail.PropertyFor == 'rent'\">Desired Rent\n                    </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                      {{propertyTown.detail.Lookingstate}}/\n                      {{propertyTown.detail.LookingTown}}/\n                      {{propertyTown.detail.PropertyCondition}}/\n                      {{propertyTown.detail.MaxAmount}}/\n                      {{propertyTown.detail.LookingAddress}}/\n                      {{propertyTown.detail.ownership}}/\n                      {{propertyTown.detail.PropertyType}}/\n                      {{propertyTown.detail.features}}/\n                  {{propertyTown.detail.UserId}}/\n                  {{propertyTown.detail.Maxbathrooms}}/\n                  {{propertyTown.detail.Maxrooms}}/\n                  {{propertyTown.detail.Maxreception}}/\n                  {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>\n                    See Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n   \n            <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyTown.propertyId)\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">\n                  - POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - ALL property types\n                </div>\n              </div>\n              <div class=\"netimate-content-expressed\">\n\n                <!-- <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent\n                    </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                      {{propertyTown.detail.Lookingstate}}/\n                      {{propertyTown.detail.LookingTown}}/\n                      {{propertyTown.detail.PropertyCondition}}/\n                      {{propertyTown.detail.MaxAmount}}/\n                      {{propertyTown.detail.LookingAddress}}/\n                      {{propertyTown.detail.ownership}}/\n                      {{propertyTown.detail.PropertyType}}/\n                      {{propertyTown.detail.features}}/\n                  {{propertyTown.detail.UserId}}/\n                  {{propertyTown.detail.Maxbathrooms}}/\n                  {{propertyTown.detail.Maxrooms}}/\n                  {{propertyTown.detail.Maxreception}}/\n                  {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>\n                    See Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n\n          </div>\n          <!-- lookTown Set  Matches End-->\n        \n  \n\n\n\n\n\n\n\n\n\n\n\n  \n          <!-- lookTown Set No Matches 4-->\n          <!--not Expressed-->\n          <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n            <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(propertyTown.propertyId)\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">\n                  - All other properties - Nationwide\n                </div>\n              </div>\n              <div class=\"netimate-content-no-matches\">\n                <!-- \n                    <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent\n                    </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                      {{propertyTown.detail.Lookingstate}}/\n                      {{propertyTown.detail.LookingTown}}/\n                      {{propertyTown.detail.PropertyCondition}}/\n                      {{propertyTown.detail.MaxAmount}}/\n                      {{propertyTown.detail.LookingAddress}}/\n                      {{propertyTown.detail.ownership}}/\n                      {{propertyTown.detail.PropertyType}}/\n                      {{propertyTown.detail.features}}/\n                  {{propertyTown.detail.UserId}}/\n                  {{propertyTown.detail.Maxbathrooms}}/\n                  {{propertyTown.detail.Maxrooms}}/\n                  {{propertyTown.detail.Maxreception}}/\n                  {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>\n                    See Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n         \n            <div class=\"expressed\" *ngIf=\"checkExpressForValue(propertyTown.propertyId)\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">\n                  - All other properties - Nationwide\n                </div>\n              </div>\n              <div class=\"netimate-content-expressed\">\n\n                <!-- <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent\n                    </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                      {{propertyTown.detail.Lookingstate}}/\n                      {{propertyTown.detail.LookingTown}}/\n                      {{propertyTown.detail.PropertyCondition}}/\n                      {{propertyTown.detail.MaxAmount}}/\n                      {{propertyTown.detail.LookingAddress}}/\n                      {{propertyTown.detail.ownership}}/\n                      {{propertyTown.detail.PropertyType}}/\n                      {{propertyTown.detail.features}}/\n                  {{propertyTown.detail.UserId}}/\n                  {{propertyTown.detail.Maxbathrooms}}/\n                  {{propertyTown.detail.Maxrooms}}/\n                  {{propertyTown.detail.Maxreception}}/\n                  {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>\n                    See Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n          </div>\n          <!-- lookTown Set  Matches End-->\n   \n   \n      </div>\n   \n    </div>\n\n\n    <!------------------------------Buyer Detail------------------------------------------------------------------------------------->\n\n\n\n\n\n\n    <!----------------------------------------------------Seller details----------------------------------------------------->\n    <div class=\"matches-main-container\" *ngIf=\"seller\">\n      <div class=\"heading-nestimate font-main-nestimate \">Your search has the\n        following results</div>\n\n      <div class=\"nestiamte-dropdown-asearch-result\">\n        <mat-form-field class=\"example-full-width home-matches\">\n          <mat-label style=\"color:white\">Sort By</mat-label>\n          <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width home-matches\">\n            <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n            <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n            <mat-option value='date'>Listed date</mat-option>\n            <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n          </mat-select>\n        </mat-form-field>\n      </div>\n\n\n\n\n      <div class=\"main-desktop-grid\">\n\n      <!--Result Set One Price Match-->\n   \n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellermatchedProperties\">\n          <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n            <div class=\"nestimate_by\">\n              <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n                {{property.detail.username | shortName}}</div>\n              <div class=\"matches-mame\">- Same postcode only\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n            </div>\n            <div class=\"netimate-content\">\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText pl-1 \">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText pl-1\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                    {{property.detail.MaxAmount}}/\n                    {{property.detail.MinAmount}}\n                    /{{property.detail.Lookingpostcode}}\n                    /{{property.detail.LookingStreetname}}\n                    /{{property.detail.Position}}\n                    /{{property.detail.PropertyType}}\n                    /{{property.detail.Roomsmax}}\n                    /{{property.detail.Ownership}}\n                    /{{property.detail.Conditions}}\n                      /{{property.detail.Maxbathroom}}\n                       /{{property.detail.Maxreception}}\n                    /{{property.detail.UserId}}\n                    /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>   \n          <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n                {{property.detail.username | shortName}}</div>\n            </div>\n            <div class=\"matches-mame\">- Same postcode only\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n            <div class=\"netimate-content-expressed\">\n\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText pl-1 \">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText pl-1\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText pl-1 \">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                    {{property.detail.MaxAmount}}/\n                    {{property.detail.MinAmount}}\n                    /{{property.detail.Lookingpostcode}}\n                    /{{property.detail.LookingStreetname}}\n                    /{{property.detail.Position}}\n                    /{{property.detail.PropertyType}}\n                    /{{property.detail.Roomsmax}}\n                    /{{property.detail.Ownership}}\n                    /{{property.detail.Conditions}}\n                      /{{property.detail.Maxbathroom}}\n                       /{{property.detail.Maxreception}}\n                    /{{property.detail.UserId}}\n                    /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n     \n      <!--Result Set One Price Match-->\n\n\n\n\n\n\n\n\n\n\n    \n  \n\n\n\n\n\n        <!--Result Set No Matches 1 done-->\n        <!--Not Expressed-->\n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedProperties\">\n          <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n            </div>\n            <div class=\"netimate-content-no-matches\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n     \n        <!--Expressed-->\n          <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n            <div class=\"nestimate_by\">\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n\n            </div>\n            <div class=\"netimate-content-expressed\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--Result Set No Matches 1 done-->\n\n\n\n\n        <!--Result Set No Matches 1 done-->\n        <!--Not Expressed-->\n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPropertiesFirst\">\n          <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n            </div>\n            <div class=\"netimate-content-no-matches\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n  \n        <!--Expressed-->\n          <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n            <div class=\"nestimate_by\">\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n\n            </div>\n            <div class=\"netimate-content-expressed\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--Result Set No Matches 1 done-->\n\n\n\n\n\n        <!--Result Set No Matches 2-->\n        <!--Not Expressed-->\n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPriceLogic\">\n          <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\">- POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - ALL property types</div>\n\n\n            </div>\n            <div class=\"netimate-content-no-matches\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n     \n        <!--Expressed-->\n          <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n\n            <div class=\"nestimate_by\">\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\">- POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - ALL property types</div>\n\n            </div>\n            <div class=\"netimate-content-expressed\">\n\n\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--Result Set No Matches 2-->\n\n\n\n\n\n\n\n\n        <!--Result Set No Matches 4 Done-->\n        <!--Not Expressed-->\n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerlookTown\">\n          <div class=\"not-expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\">All other properties - Nationwide</div>\n\n            </div>\n            <div class=\"netimate-content-no-matches\">\n\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n\n        <!--Expressed-->\n          <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\">All other properties - Nationwide</div>\n            </div>\n            <div class=\"netimate-content-expressed\">\n              <!-- \n                <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--Result Set No Matches 4 Done-->\n\n\n\n    \n    </div>\n\n  </div>\n\n    </div>\n    </div>\n\n\n\n\n    <!----------------------------------------------------Seller details----------------------------------------------------->";
+    __webpack_exports__["default"] = "<!-- Loading spinner -->\n<!-- <div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div> -->\n\n<div class=\"no-neestimate-found\">\n\n  <div class=\"matches-main-container\" *ngIf=\"Nestimate\">\n\n\n    <mat-card class=\"thanku-section\">\n      <img mat-card-image src=\"../../../../../../assets/Images/matched.jpg\" class=\"match-image\">\n    </mat-card>\n    <div class=\"home_Matches\">\n      <div class=\"potential-things\" *ngIf=\"MatchesItem < 2\">\n        <!-- <p class=\"buyer-value heading-nestimate\" *ngIf=\"buyerItems\">{{buyerVal}}</p>\n      <p class=\"buyer-value heading-nestimate\" *ngIf=\"sellerItem\">{{sellerVal}}</p> -->\n      </div>\n      <mat-form-field class=\"example-full-width home-matches\" *ngIf=\"MatchesItem > 1\">\n        <mat-label style=\"color: white;\"> Select Nestimates</mat-label>\n        <mat-select name=\"ChainStatus\" class=\"example-full-width home-matches\" value=\"selected\" [(ngModel)]=\"test\"\n          (click)=\"checkvalue()\">\n          <mat-option [value]='buyerVal' *ngFor=\"let buyerproperty of propertyRequirementDetails\"\n            (click)=\"getDetails(buyerproperty.data.Lookingpostcode,buyerproperty.data.PropertyFor,buyerproperty.data.PropertyType,buyerproperty.data.MinAmount,buyerproperty.data.MaxAmount,buyerproperty.data.LookingTown,buyerproperty.data.latitude,buyerproperty.data.longitude,buyerproperty.data.LookingStreetname,buyerproperty.data.Conditions,buyerproperty.data.ChainStatus,buyerproperty.data.FinancialPosition,buyerproperty.data.Validity,buyerproperty.data.Position,buyerproperty.data.UserId)\">\n            Buyer _ {{buyerproperty.data.usertitle}}.{{buyerproperty.data.username | shortName}} _\n            {{buyerproperty.data.Lookingpostcode}}\n          </mat-option>\n\n\n\n\n          <mat-option [value]='sellerVal' value=\"selected\" *ngFor=\"let sellerproperty of propertyDetails\" (click)=\"getSellerDetails(sellerproperty.seller.Lookingpostcode,sellerproperty.seller.PropertyFor,sellerproperty.seller.PropertyType,\n          sellerproperty.seller.MaxAmount,sellerproperty.seller.LookingTown,\n          sellerproperty.seller.Lookingstate,sellerproperty.seller.Maxbathrooms,\n          sellerproperty.seller.PropertyCondition,sellerproperty.seller.LookingAddress,\n          sellerproperty.seller.ownership,sellerproperty.seller.features,\n          sellerproperty.seller.UserId,\n          sellerproperty.seller.Maxreception,\n          sellerproperty.seller.Maxrooms,\n          sellerproperty.seller.latitude,\n          sellerproperty.seller.longitude)\">\n            Seller _ {{sellerproperty.seller.usertitle}}.{{sellerproperty.seller.username | shortName}} _\n            {{sellerproperty.seller.Lookingpostcode}}</mat-option>\n\n\n\n        </mat-select>\n      </mat-form-field>\n    </div>\n\n    <div class=\"Main-showing-div-buyer\" *ngIf=\"buyer\">\n      <!-- <p class=\"mt-3 main-heading heading-nestimate\" *ngIf=\"matchedProperties.length < 1\"><span\n          class=\"outputText\"></span>&nbsp;No Match Listing(s)</p> -->\n      <div class=\"heading-nestimate font-main-nestimate \">Your search has the\n        following results</div>\n\n\n      <div class=\"nestiamte-dropdown-asearch-result\">\n        <mat-form-field class=\"example-full-width home-matches\">\n          <mat-label style=\"color:white\">Sort By</mat-label>\n          <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width home-matches\">\n            <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n            <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n            <mat-option value='date'>Listed date</mat-option>\n            <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n          </mat-select>\n        </mat-form-field>\n      </div>\n\n      <!--Result Set One with Price Range-->\n      <!--Not Expressed-->\n<div class=\"main-desktop-grid\">\n\n\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of matchedProperties\">\n        <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"matches-mame\">Same postcode only,PropertyType,PropertyFor,Matches price criteria (min reduce 3%\n              max +10%) </div>\n          </div>\n\n\n          <div class=\"netimate-content\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span>\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span>\n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                    class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n              </div>\n            </span>\n\n\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                  {{property.detail.Lookingstate}}/\n                  {{property.detail.LookingTown}}/\n                  {{property.detail.PropertyCondition}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.LookingAddress}}/\n                  {{property.detail.ownership}}/\n                  {{property.detail.PropertyType}}/\n                  {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n  \n      <!--Expressed-->\n   \n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n          <div class=\"nestimate_by\">\n\n            <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n              {{property.detail.username | shortName}}</div>\n            <div class=\"matches-mame\">Same postcode only,PropertyType,PropertyFor,Matches price criteria (min reduce 3%\n              max +10%) </div>\n\n          </div>\n          <div class=\"netimate-content-expressed\">\n\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span>\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span>\n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                    class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                  {{property.detail.Lookingstate}}/\n                  {{property.detail.LookingTown}}/\n                  {{property.detail.PropertyCondition}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.LookingAddress}}/\n                  {{property.detail.ownership}}/\n                  {{property.detail.PropertyType}}/\n                  {{property.detail.features}}/\n              {{property.detail.UserId}}/\n              {{property.detail.Maxbathrooms}}/\n              {{property.detail.Maxrooms}}/\n              {{property.detail.Maxreception}}/\n              {{property.propertyId}}/true/{{property.detail.PropertyFor}}}/{{Look_PropertyFor}}'>See\n                Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n\n\n          </div>\n        </div>\n      </div>\n   \n      <!--Result Set One with Price Range-->\n   \n\n\n\n\n\n\n\n\n       \n\n\n\n          <!--Result Set No Matches 1-->\n          <!--not Expressed-->\n        \n          <div class=\"mat-card-content-new\" *ngFor=\"let property of unmatchedProperties\">\n            <div class=\"not-expressed\" *ngIf=\"!distinctExpressedUid != property.propertyId\">\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - Same property type</div>\n              </div>\n              <div class=\"netimate-content-no-matches\">\n\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                      {{property.detail.Lookingstate}}/\n                      {{property.detail.LookingTown}}/\n                      {{property.detail.PropertyCondition}}/\n                      {{property.detail.MaxAmount}}/\n                      {{property.detail.LookingAddress}}/\n                      {{property.detail.ownership}}/\n                      {{property.detail.PropertyType}}/\n                      {{property.detail.features}}/\n                  {{property.detail.UserId}}/\n                  {{property.detail.Maxbathrooms}}/\n                  {{property.detail.Maxrooms}}/\n                  {{property.detail.Maxreception}}/\n                  {{property.propertyId}}/{{expressed}}/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                    Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n         \n            <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - Same property type</div>\n              </div>\n              <div class=\"netimate-content-expressed\">\n\n                <!-- <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{property.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{property.detail.Lookingpostcode}}/\n                      {{property.detail.Lookingstate}}/\n                      {{property.detail.LookingTown}}/\n                      {{property.detail.PropertyCondition}}/\n                      {{property.detail.MaxAmount}}/\n                      {{property.detail.LookingAddress}}/\n                      {{property.detail.ownership}}/\n                      {{property.detail.PropertyType}}/\n                      {{property.detail.features}}/\n                  {{property.detail.UserId}}/\n                  {{property.detail.Maxbathrooms}}/\n                  {{property.detail.Maxrooms}}/\n                  {{property.detail.Maxreception}}/\n                  {{property.propertyId}}/true/{{property.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                    Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n          </div>\n    \n          <!--Result Set No Matches End-->\n     \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n    \n          <!--Result Set No Matches 1-->\n          <!--not Expressed-->\n          <div class=\"mat-card-content-new\" *ngFor=\"let propertyPrice of unmatchedPriceLogic\">\n            <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != propertyPrice.propertyId\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - Same property type</div>\n\n\n              </div>\n              <div class=\"netimate-content-no-matches\">\n                <!-- \n                    <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'rent'\">Desired\n                      Rent</span> <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyPrice.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n        {{propertyPrice.detail.Lookingstate}}/\n        {{propertyPrice.detail.LookingTown}}/\n        {{propertyPrice.detail.PropertyCondition}}/\n        {{propertyPrice.detail.MaxAmount}}/\n        {{propertyPrice.detail.LookingAddress}}/\n        {{propertyPrice.detail.ownership}}/\n        {{propertyPrice.detail.PropertyType}}/\n        {{propertyPrice.detail.features}}/\n    {{propertyPrice.detail.UserId}}/\n    {{propertyPrice.detail.Maxbathrooms}}/\n    {{propertyPrice.detail.Maxrooms}}/\n    {{propertyPrice.detail.Maxreception}}/\n    {{propertyPrice.propertyId}}/{{expressed}}/{{propertyPrice.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                    Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n         \n            <div class=\"expressed\" *ngIf=\"distinctExpressedUid == propertyPrice.propertyId\">\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - Same property type</div>\n              </div>\n              <div class=\"netimate-content-expressed\">\n\n                <!-- <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyPrice.detail.PropertyFor == 'rent'\">Desired\n                      Rent</span> <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyPrice.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyPrice.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyPrice.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyPrice.detail.Lookingpostcode}}/\n        {{propertyPrice.detail.Lookingstate}}/\n        {{propertyPrice.detail.LookingTown}}/\n        {{propertyPrice.detail.PropertyCondition}}/\n        {{propertyPrice.detail.MaxAmount}}/\n        {{propertyPrice.detail.LookingAddress}}/\n        {{propertyPrice.detail.ownership}}/\n        {{propertyPrice.detail.PropertyType}}/\n        {{propertyPrice.detail.features}}/\n    {{propertyPrice.detail.UserId}}/\n    {{propertyPrice.detail.Maxbathrooms}}/\n    {{propertyPrice.detail.Maxrooms}}/\n    {{propertyPrice.detail.Maxreception}}/\n    {{propertyPrice.propertyId}}/true/{{propertyPrice.detail.PropertyFor}}/{{Look_PropertyFor}}'>See\n                    Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n          </div>\n          <!-- unmatchedPriceLogic End-->\n        \n\n\n    \n\n          <!-- lookTown Set No Matches 4-->\n          <!--not Expressed-->\n \n          <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of unmatchedallProperty\">\n            <div class=\"not-expressed\" *ngIf=\"!distinctExpressedUid != propertyTown.propertyId\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">\n                  - POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - ALL property types\n                </div>\n              </div>\n              <div class=\"netimate-content-no-matches\">\n                <!-- \n                    <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown.detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown.detail.PropertyFor == 'rent'\">Desired Rent\n                    </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                      {{propertyTown.detail.Lookingstate}}/\n                      {{propertyTown.detail.LookingTown}}/\n                      {{propertyTown.detail.PropertyCondition}}/\n                      {{propertyTown.detail.MaxAmount}}/\n                      {{propertyTown.detail.LookingAddress}}/\n                      {{propertyTown.detail.ownership}}/\n                      {{propertyTown.detail.PropertyType}}/\n                      {{propertyTown.detail.features}}/\n                  {{propertyTown.detail.UserId}}/\n                  {{propertyTown.detail.Maxbathrooms}}/\n                  {{propertyTown.detail.Maxrooms}}/\n                  {{propertyTown.detail.Maxreception}}/\n                  {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>\n                    See Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n   \n            <div class=\"expressed\" *ngIf=\"distinctExpressedUid == propertyTown.propertyId\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">\n                  - POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                  - Matches price criteria (min reduce 3% max +10%)\n                  - ALL property types\n                </div>\n              </div>\n              <div class=\"netimate-content-expressed\">\n\n                <!-- <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent\n                    </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                      {{propertyTown.detail.Lookingstate}}/\n                      {{propertyTown.detail.LookingTown}}/\n                      {{propertyTown.detail.PropertyCondition}}/\n                      {{propertyTown.detail.MaxAmount}}/\n                      {{propertyTown.detail.LookingAddress}}/\n                      {{propertyTown.detail.ownership}}/\n                      {{propertyTown.detail.PropertyType}}/\n                      {{propertyTown.detail.features}}/\n                  {{propertyTown.detail.UserId}}/\n                  {{propertyTown.detail.Maxbathrooms}}/\n                  {{propertyTown.detail.Maxrooms}}/\n                  {{propertyTown.detail.Maxreception}}/\n                  {{propertyTown.propertyId}}/true/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>\n                    See Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n\n          </div>\n          <!-- lookTown Set  Matches End-->\n        \n  \n\n\n\n\n\n\n\n\n\n\n\n  \n          <!-- lookTown Set No Matches 4-->\n          <!--not Expressed-->\n          <div class=\"mat-card-content-new\" *ngFor=\"let propertyTown of lookTown\">\n            <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != propertyTown.propertyId\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">\n                  - All other properties - Nationwide\n                </div>\n              </div>\n              <div class=\"netimate-content-no-matches\">\n                <!-- \n                    <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent\n                    </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                      {{propertyTown.detail.Lookingstate}}/\n                      {{propertyTown.detail.LookingTown}}/\n                      {{propertyTown.detail.PropertyCondition}}/\n                      {{propertyTown.detail.MaxAmount}}/\n                      {{propertyTown.detail.LookingAddress}}/\n                      {{propertyTown.detail.ownership}}/\n                      {{propertyTown.detail.PropertyType}}/\n                      {{propertyTown.detail.features}}/\n                  {{propertyTown.detail.UserId}}/\n                  {{propertyTown.detail.Maxbathrooms}}/\n                  {{propertyTown.detail.Maxrooms}}/\n                  {{propertyTown.detail.Maxreception}}/\n                  {{propertyTown.propertyId}}/{{expressed}}/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>\n                    See Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n         \n            <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n\n              <div class=\"nestimate_by\">\n\n                <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n                <div class=\"matches-mame\">\n                  - All other properties - Nationwide\n                </div>\n              </div>\n              <div class=\"netimate-content-expressed\">\n\n                <!-- <div class=\"nestimate-image\">\n                      <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                    </div> -->\n                <span class=\"buy-option\">\n                  <div class=\"nestimate-price-range\">\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'buy'\">Desired\n                      Price</span>\n                    <span class=\"heading-nestimate\" *ngIf=\"propertyTown .detail.PropertyFor == 'rent'\">Desired Rent\n                    </span>\n                    <br>\n                    <span class=\"outputText price-font\">&pound;{{propertyTown.detail.MaxAmount}}</span>\n                  </div>\n                  <div class=\"nestimate-content\">\n                    <div class=\"heading-nestimate nestimate-content-p1\">Distance from Postcode:<span\n                        class=\"outputText\">{{propertyTown.distance | number:'1.1-1'}} Miles</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\">No of Rooms:<span\n                        class=\"outputText\">{{propertyTown.detail.Maxrooms}}</span></div>\n                  </div>\n                </span>\n                <div class=\"button-container\">\n                  <div class=\"dark-blue-button\" routerLink='/buyerSelectedPropertyDetail/{{Look_postcodes}}/{{Look_Streetname}}/{{Look_condition}}/{{Look_chainstatus}}/{{Look_FinancialPosition}}/{{Look_minamount}}/{{Look_maxamount}}/{{Look_Validity}}/{{Look_propertytype}}/{{Look_Position}}/{{Look_UserId}}/{{propertyTown.detail.Lookingpostcode}}/\n                      {{propertyTown.detail.Lookingstate}}/\n                      {{propertyTown.detail.LookingTown}}/\n                      {{propertyTown.detail.PropertyCondition}}/\n                      {{propertyTown.detail.MaxAmount}}/\n                      {{propertyTown.detail.LookingAddress}}/\n                      {{propertyTown.detail.ownership}}/\n                      {{propertyTown.detail.PropertyType}}/\n                      {{propertyTown.detail.features}}/\n                  {{propertyTown.detail.UserId}}/\n                  {{propertyTown.detail.Maxbathrooms}}/\n                  {{propertyTown.detail.Maxrooms}}/\n                  {{propertyTown.detail.Maxreception}}/\n                  {{propertyTown.propertyId}}/true/{{propertyTown.detail.PropertyFor}}/{{Look_PropertyFor}}'>\n                    See Details<span class=\"entity-see-deatil outputText\">\n                      &gt;</span></div>\n                </div>\n\n\n              </div>\n            </div>\n          </div>\n          <!-- lookTown Set  Matches End-->\n   \n   \n      </div>\n   \n    </div>\n\n\n    <!------------------------------Buyer Detail------------------------------------------------------------------------------------->\n\n\n\n\n\n\n    <!----------------------------------------------------Seller details----------------------------------------------------->\n    <div class=\"matches-main-container\" *ngIf=\"seller\">\n      <div class=\"heading-nestimate font-main-nestimate \">Your search has the\n        following results</div>\n\n      <div class=\"nestiamte-dropdown-asearch-result\">\n        <mat-form-field class=\"example-full-width home-matches\">\n          <mat-label style=\"color:white\">Sort By</mat-label>\n          <mat-select name=\"ChainStatus\" value=\"ChainStatus\" class=\"example-full-width home-matches\">\n            <mat-option value='low' (click)=\"lowtohigh()\">Price Range - Low to High</mat-option>\n            <mat-option value='high' (click)=\"hightoLow()\">Price Range - High to Low</mat-option>\n            <mat-option value='date'>Listed date</mat-option>\n            <mat-option value='rooms' (click)=\"roomshightolow()\">No of Rooms</mat-option>\n          </mat-select>\n        </mat-form-field>\n      </div>\n\n\n\n\n      <div class=\"main-desktop-grid\">\n\n      <!--Result Set One Price Match-->\n   \n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellermatchedProperties\">\n          <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n            <div class=\"nestimate_by\">\n              <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n                {{property.detail.username | shortName}}</div>\n              <div class=\"matches-mame\">- Same postcode only\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n            </div>\n            <div class=\"netimate-content\">\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText pl-1 \">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText pl-1\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                    {{property.detail.MaxAmount}}/\n                    {{property.detail.MinAmount}}\n                    /{{property.detail.Lookingpostcode}}\n                    /{{property.detail.LookingStreetname}}\n                    /{{property.detail.Position}}\n                    /{{property.detail.PropertyType}}\n                    /{{property.detail.Roomsmax}}\n                    /{{property.detail.Ownership}}\n                    /{{property.detail.Conditions}}\n                      /{{property.detail.Maxbathroom}}\n                       /{{property.detail.Maxreception}}\n                    /{{property.detail.UserId}}\n                    /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>   \n          <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Nestimate by {{property.detail.usertitle}}\n                {{property.detail.username | shortName}}</div>\n            </div>\n            <div class=\"matches-mame\">- Same postcode only\n              - Matches price criteria (min reduce 3% max +10%)\n              - Same property type</div>\n            <div class=\"netimate-content-expressed\">\n\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText pl-1 \">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText pl-1\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText pl-1 \">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                    {{property.detail.MaxAmount}}/\n                    {{property.detail.MinAmount}}\n                    /{{property.detail.Lookingpostcode}}\n                    /{{property.detail.LookingStreetname}}\n                    /{{property.detail.Position}}\n                    /{{property.detail.PropertyType}}\n                    /{{property.detail.Roomsmax}}\n                    /{{property.detail.Ownership}}\n                    /{{property.detail.Conditions}}\n                      /{{property.detail.Maxbathroom}}\n                       /{{property.detail.Maxreception}}\n                    /{{property.detail.UserId}}\n                    /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n     \n      <!--Result Set One Price Match-->\n\n\n\n\n\n\n\n\n\n\n    \n  \n\n\n\n\n\n        <!--Result Set No Matches 1 done-->\n        <!--Not Expressed-->\n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedProperties\">\n          <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n            </div>\n            <div class=\"netimate-content-no-matches\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n     \n        <!--Expressed-->\n          <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n\n            <div class=\"nestimate_by\">\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 5 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n\n            </div>\n            <div class=\"netimate-content-expressed\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--Result Set No Matches 1 done-->\n\n\n\n\n        <!--Result Set No Matches 1 done-->\n        <!--Not Expressed-->\n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPropertiesFirst\">\n          <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n            </div>\n            <div class=\"netimate-content-no-matches\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n  \n        <!--Expressed-->\n          <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n\n            <div class=\"nestimate_by\">\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\"> POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - Same property type</div>\n\n            </div>\n            <div class=\"netimate-content-expressed\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--Result Set No Matches 1 done-->\n\n\n\n\n\n        <!--Result Set No Matches 2-->\n        <!--Not Expressed-->\n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerunmatchedPriceLogic\">\n          <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\">- POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - ALL property types</div>\n\n\n            </div>\n            <div class=\"netimate-content-no-matches\">\n\n              <!-- <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n     \n        <!--Expressed-->\n          <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n\n            <div class=\"nestimate_by\">\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\">- POSTCODE MATCH - FIRST 3 LETTERS ONLY\n                - Matches price criteria (min reduce 3% max +10%)\n                - ALL property types</div>\n\n            </div>\n            <div class=\"netimate-content-expressed\">\n\n\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--Result Set No Matches 2-->\n\n\n\n\n\n\n\n\n        <!--Result Set No Matches 4 Done-->\n        <!--Not Expressed-->\n        <div class=\"mat-card-content-new\" *ngFor=\"let property of sellerlookTown\">\n          <div class=\"not-expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\">All other properties - Nationwide</div>\n\n            </div>\n            <div class=\"netimate-content-no-matches\">\n\n              <div class=\"nestimate-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/{{expressed}}/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n\n        <!--Expressed-->\n          <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n            <div class=\"nestimate_by\">\n\n              <div class=\"card-heading-font outputText\">&nbsp;Other Results</div>\n              <div class=\"matches-mame\">All other properties - Nationwide</div>\n            </div>\n            <div class=\"netimate-content-expressed\">\n              <!-- \n                <div class=\"nestimate-image\">\n                  <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n                </div> -->\n\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'buy'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Price Range </span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                  <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                      class=\"outputText\">{{property.detail.FinancialPosition}}</span></div>\n                </div>\n              </span>\n              <span class=\"seller-buyer-property\" *ngIf=\"property.detail.PropertyFor == 'rent'\">\n                <div class=\"nestimate-price-range\">\n                  <span class=\"heading-nestimate\">Rent Range</span> <br>\n                  <span class=\"outputText pl-1 price-font\">&pound;{{property.detail.MinAmount}} -\n                    &pound;{{property.detail.MaxAmount}}</span>\n                </div>\n                <div class=\"nestimate-content\">\n                  <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                      class=\"outputText\">{{property.detail.ChainStatus}}</span></div>\n                </div>\n              </span>\n              <div class=\"button-container\">\n                <div class=\"dark-blue-button\"\n                  routerLink='/SellerSelectedProperty/{{Look_state}}/{{Look_rooms}}/{{Look_Propertycondition}}/{{Look_Address}}/{{Look_ownership}}/{{Look_features}}/{{Look_userId}}/{{Look_postcode}}/{{Look_PropertyType}}/{{Look_maxAmount}}/{{Look_Town}}/{{Look_Address}}/{{Look_Maxbathrooms}}/{{Look_Maxreceptions}}/{{Look_ownership}}/{{Look_Maxrooms}}/\n                  {{property.detail.MaxAmount}}/\n                  {{property.detail.MinAmount}}\n                  /{{property.detail.Lookingpostcode}}\n                  /{{property.detail.LookingStreetname}}\n                  /{{property.detail.Position}}\n                  /{{property.detail.PropertyType}}\n                  /{{property.detail.Roomsmax}}\n                  /{{property.detail.Ownership}}\n                  /{{property.detail.Conditions}}\n                    /{{property.detail.Maxbathroom}}\n                     /{{property.detail.Maxreception}}\n                  /{{property.detail.UserId}}\n                  /{{property.detail.FinancialPosition}}/{{property.propertyId}}/true/{{Look_PropertyFor}}/{{property.detail.PropertyFor}}/{{property.detail.ChainStatus}}'>\n                  See Details<span class=\"entity-see-deatil outputText\"> &gt;</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n        <!--Result Set No Matches 4 Done-->\n\n\n\n    \n    </div>\n\n  </div>\n\n    </div>\n    </div>\n\n\n\n\n    <!----------------------------------------------------Seller details----------------------------------------------------->";
     /***/
   },
 
@@ -701,7 +701,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n  <p class=\"nestimate-heading heading-nestimate\">Nestimates Activity</p>\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\n\n    <mat-tab label=\"Your action needed\">\n\n\n\n\n\n      \n      <!--Matches Buyer Start-->\n      <!--expressed Matches Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n       \n          <div class=\"netimate-content-expressed\"  *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\" >\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms != null\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms == null\">No of Rooms:<span\n                      class=\"outputText\">{{property.detail.Roomsmax}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/myMtachesBuyer/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}/{{property.detail.UserId}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n    \n\n      <!-- Not expressed Matches Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\" >\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms != null\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms == null\">No of Rooms:<span\n                      class=\"outputText\">{{property.detail.Roomsmax}}</span></div>\n               \n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/myMtachesBuyer/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}/{{property.detail.UserId}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n    \n      <!--Matches Buyer End-->\n\n     <!--Confirmed-->\n\n      <!--Matches Buyer Start-->\n \n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" >\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='confirmed'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\" >\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms != null\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms == null\">No of Rooms:<span\n                      class=\"outputText\">{{property.detail.Roomsmax}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/myMtachesBuyer/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}/{{property.detail.UserId}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n    \n      <!--Matches Buyer End-->\n\n\n\n\n\n\n\n\n     <!--Confirmed-->\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      <!--expressed  Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n   \n\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"expressed\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n       \n          <div class=\"netimate-content-expressed\"  *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Price Range</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Rent Range </span> \n                <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}}-\n                    &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Poperty Type:<span\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></div>\n              </div>\n             \n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/matchesSeller/\n              {{property.detail.Lookingpostcode}}\n              /{{property.detail.ChainStatus}}\n              /{{property.detail.Conditions}}\n\n              /{{property.detail.Position}}\n              /{{property.detail.MinAmount}}\n              /{{property.detail.MaxAmount}}\n              /{{property.detail.PropertyType}}\n              /{{property.propertyId}}\n              /{{expressed}}/{{property.detail.matchStatus}}/{{property.detail.UserId}}/{{property.detail.id}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n\n\n      <!-- Not expressed  Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Price Range</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Rent Range </span> \n                <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}}-\n                    &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Poperty Type:<span\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></div>\n              </div>\n             \n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/matchesSeller/\n              {{property.detail.Lookingpostcode}}\n              /{{property.detail.ChainStatus}}\n              /{{property.detail.Conditions}}\n              /{{property.detail.Position}}\n              /{{property.detail.MinAmount}}\n              /{{property.detail.MaxAmount}}\n              /{{property.detail.PropertyType}}\n              /{{property.propertyId}}\n              /{{expressed}}/{{property.detail.matchStatus}}/{{property.detail.UserId}}/{{property.detail.id}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n \n<!--Confirmed-->\n      <!-- <div class=\"mat-card-content-new m\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"expressed\" >\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='confirmed'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Price Range</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Rent Range </span> \n                <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}}-\n                    &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Poperty Type:<span\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></div>\n\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/matchesSeller/\n              {{property.detail.Lookingpostcode}}\n              /{{property.detail.ChainStatus}}\n              /{{property.detail.Conditions}}\n\n              /{{property.detail.Position}}\n              /{{property.detail.MinAmount}}\n              /{{property.detail.MaxAmount}}\n              /{{property.detail.PropertyType}}\n              /{{property.propertyId}}\n              /{{expressed}}/{{property.detail.matchStatus}}/{{property.detail.UserId}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div> -->\n\n\n\n\n    </mat-tab>\n\n    <mat-tab label=\"Awaiting Response\">\n\n\n\n\n      <!-- <div class=\"heading-nestimate actvity-headings\">Confirmed by other party</div>  -->\n      <div class=\"mat-card-content-new m\" *ngFor=\"let buyerProperty of buyerProperty\">\n        <div class=\"expressed\" >\n       \n          <div class=\"netimate-content\"  *ngIf=\"buyerProperty.detail.matchStatus=='pending'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"seller-buyer-property\" *ngIf=\"buyerProperty.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{buyerProperty.detail.MinAmount}} -\n                  &pound;{{buyerProperty.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{buyerProperty.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText pl-1 \">{{buyerProperty.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"buyerProperty.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{buyerProperty.detail.MinAmount}} -\n                  &pound;{{buyerProperty.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText pl-1\">{{buyerProperty.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n         \n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/MyMatchesseller/\n              {{buyerProperty.detail.Lookingpostcode}}\n              /{{buyerProperty.detail.FinancialPosition}}\n              /{{buyerProperty.detail.PropertyType}}\n              /{{buyerProperty.detail.Position}} \n              /{{buyerProperty.detail.matchStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n\n    \n\n\n\n\n\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='pending'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Poperty Type:<span\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\"routerLink='/awaitingResponse/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n\n     \n\n\n\n    </mat-tab>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  </mat-tab-group>\n</div>";
+    __webpack_exports__["default"] = "<div class=\"container matches-main-container\">\n  <p class=\"nestimate-heading heading-nestimate\">Nestimates Activity</p>\n  <mat-tab-group mat-stretch-tabs class=\"example-stretched-tabs mat-elevation-z4\">\n\n    <mat-tab label=\"Your action needed\">\n\n\n\n\n\n      \n      <!--Matches Buyer Start-->\n      <!--expressed Matches Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n       \n          <div class=\"netimate-content-expressed\"  *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\" >\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms != null\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms == null\">No of Rooms:<span\n                      class=\"outputText\">{{property.detail.Roomsmax}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/myMtachesBuyer/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/true/{{property.detail.UserId}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n    \n\n      <!-- Not expressed Matches Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\" >\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms != null\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms == null\">No of Rooms:<span\n                      class=\"outputText\">{{property.detail.Roomsmax}}</span></div>\n               \n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/myMtachesBuyer/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}/{{property.detail.UserId}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n    \n      <!--Matches Buyer End-->\n\n     <!--Confirmed-->\n\n      <!--Matches Buyer Start-->\n \n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" >\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='confirmed'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\" >\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Desired Price</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Desired Rent </span> \n                <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms != null\">No of Rooms:<span\n                    class=\"outputText\">{{property.detail.Maxrooms}}</span></div>\n                    <div class=\"heading-nestimate nestimate-content-p1\" *ngIf=\"property.detail.Maxrooms == null\">No of Rooms:<span\n                      class=\"outputText\">{{property.detail.Roomsmax}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/myMtachesBuyer/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.Roomsmax}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}/{{property.propertyId}}/{{expressed}}/{{property.detail.UserId}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n    \n      <!--Matches Buyer End-->\n\n\n\n\n\n\n\n\n     <!--Confirmed-->\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      <!--expressed  Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n   \n\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid == property.propertyId\">\n\n          <div class=\"netimate-content-expressed\"  *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Price Range</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Rent Range </span> \n                <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}}-\n                    &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Poperty Type:<span\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></div>\n              </div>\n             \n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/matchesSeller/\n              {{property.detail.Lookingpostcode}}\n              /{{property.detail.ChainStatus}}\n              /{{property.detail.Conditions}}\n              /{{property.detail.Position}}\n              /{{property.detail.MinAmount}}\n              /{{property.detail.MaxAmount}}\n              /{{property.detail.PropertyType}}\n              /{{property.propertyId}}\n              /true/{{property.detail.matchStatus}}/{{property.detail.UserId}}/{{property.detail.id}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n\n\n      <!-- Not expressed  Buyer-->\n      <!-- <div class=\"heading-nestimate actvity-headings\" *ngIf=\"sellerProperty\"> Confirmed By you </div> -->\n\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"expressed\" *ngIf=\"distinctExpressedUid != property.propertyId\">\n\n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='confirm_interest'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Price Range</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Rent Range </span> \n                <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}}-\n                    &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Poperty Type:<span\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></div>\n              </div>\n             \n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/matchesSeller/\n              {{property.detail.Lookingpostcode}}\n              /{{property.detail.ChainStatus}}\n              /{{property.detail.Conditions}}\n              /{{property.detail.Position}}\n              /{{property.detail.MinAmount}}\n              /{{property.detail.MaxAmount}}\n              /{{property.detail.PropertyType}}\n              /{{property.propertyId}}\n              /{{expressed}}/{{property.detail.matchStatus}}/{{property.detail.UserId}}/{{property.detail.id}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n \n<!--Confirmed-->\n      <!-- <div class=\"mat-card-content-new m\" *ngFor=\"let property of buyerProperty\">\n        <div class=\"expressed\" >\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='confirmed'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'buy'\">Price Range</span> \n                <span class=\"heading-nestimate\" *ngIf=\"property.detail.PropertyFor == 'rent'\">Rent Range </span> \n                <br>\n                  <span class=\"outputText price-font\">&pound;{{property.detail.MinAmount}}-\n                    &pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Poperty Type:<span\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></div>\n\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/matchesSeller/\n              {{property.detail.Lookingpostcode}}\n              /{{property.detail.ChainStatus}}\n              /{{property.detail.Conditions}}\n\n              /{{property.detail.Position}}\n              /{{property.detail.MinAmount}}\n              /{{property.detail.MaxAmount}}\n              /{{property.detail.PropertyType}}\n              /{{property.propertyId}}\n              /{{expressed}}/{{property.detail.matchStatus}}/{{property.detail.UserId}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div> -->\n\n\n\n\n    </mat-tab>\n\n    <mat-tab label=\"Awaiting Response\">\n\n\n\n\n      <!-- <div class=\"heading-nestimate actvity-headings\">Confirmed by other party</div>  -->\n      <div class=\"mat-card-content-new m\" *ngFor=\"let buyerProperty of buyerProperty\">\n        <div class=\"expressed\" >\n       \n          <div class=\"netimate-content\"  *ngIf=\"buyerProperty.detail.matchStatus=='pending'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"seller-buyer-property\" *ngIf=\"buyerProperty.detail.PropertyFor == 'buy'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Price Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{buyerProperty.detail.MinAmount}} -\n                  &pound;{{buyerProperty.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Buyer Position:<span\n                    class=\"outputText\">{{buyerProperty.detail.ChainStatus}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Financial Status:<span\n                  class=\"outputText pl-1 \">{{buyerProperty.detail.FinancialPosition}}</span></div>\n              </div>\n            </span>\n            <span class=\"seller-buyer-property\" *ngIf=\"buyerProperty.detail.PropertyFor == 'rent'\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Rent Range</span> <br>\n                <span class=\"outputText pl-1 price-font\">&pound;{{buyerProperty.detail.MinAmount}} -\n                  &pound;{{buyerProperty.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Tenant Position:<span\n                    class=\"outputText pl-1\">{{buyerProperty.detail.ChainStatus}}</span></div>\n              </div>\n            </span>\n         \n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\" routerLink='/MyMatchesseller/\n              {{buyerProperty.detail.Lookingpostcode}}\n              /{{buyerProperty.detail.FinancialPosition}}\n              /{{buyerProperty.detail.PropertyType}}\n              /{{buyerProperty.detail.Position}} \n              /{{buyerProperty.detail.matchStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n\n    \n\n\n\n\n\n      <div class=\"mat-card-content-new m\" *ngFor=\"let property of sellerProperty\">\n        <div class=\"expressed\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n       \n          <div class=\"netimate-content\"  *ngIf=\"property.detail.matchStatus=='pending'\">\n            <div class=\"nestimate-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <span class=\"buy-option\">\n              <div class=\"nestimate-price-range\">\n                <span class=\"heading-nestimate\">Their Price Range</span> <br>\n                <span class=\"outputText price-font\">&pound;{{property.detail.MaxAmount}}</span>\n              </div>\n              <div class=\"nestimate-content\">\n                <div class=\"heading-nestimate nestimate-content-p1\">Postcode:<span\n                  class=\"outputText\">{{property.detail.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate nestimate-content-p1\">Poperty Type:<span\n                  class=\"outputText\">{{property.detail.PropertyType}}</span></div>\n              </div>\n            </span>\n            <div class=\"button-container\">\n              <div class=\"dark-blue-button\"routerLink='/awaitingResponse/{{property.detail.Lookingpostcode}}/{{property.detail.LookingAddress}}/{{property.detail.PropertyCondition}}/{{property.detail.MaxAmount}}/{{property.detail.Lookingstate}}/{{property.detail.PropertyType}}/{{property.detail.ownership}}/{{property.detail.features}}/{{property.detail.matchStatus}}'>See Details<span class=\"entity-see-deatil outputText\">\n                  &gt;</span></div>\n            </div>\n    \n    \n          </div>\n        </div>\n      </div>\n\n     \n\n\n\n    </mat-tab>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  </mat-tab-group>\n</div>";
     /***/
   },
 
@@ -2687,6 +2687,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.listingBuyer = new _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_4__["listingBuyer"]();
         this.isThanku = true;
         this.distinctExpressedUid = [];
+        this.expressed = false;
         this.unmatchedallProperty = [];
       }
 
@@ -2830,6 +2831,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
             _this7.unmatchedProperties.sort(_this7.compare);
           });
           this.getPropertyIds();
+          this.getExpressedListingIds();
         }
       }, {
         key: "getDistanceFromLatLonInKm",
@@ -2919,16 +2921,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.unmatchedProperties.sort(function (a, b) {
             return a.distance - b.distance;
           });
-        } // getExpressedListingIds() {
-        //   this.MatchesService.ExpressInterest(this.uid).subscribe((ref) => {
-        //     ref.forEach((item) => {
-        //       if (this.distinctExpressedUid.indexOf(item.propertyId) === -1) {
-        //         this.distinctExpressedUid.push(item.propertyId);
-        //       }
-        //     });
-        //   });
-        // }
+        }
+      }, {
+        key: "getExpressedListingIds",
+        value: function getExpressedListingIds() {
+          var _this8 = this;
 
+          this.HttpService.getExpressedInterest(this.uid).subscribe(function (data) {
+            data.forEach(function (buyerMatch) {
+              if (_this8.distinctExpressedUid.indexOf(buyerMatch.propertyId) === -1) {
+                _this8.distinctExpressedUid = buyerMatch.propertyId;
+                console.log(_this8.distinctExpressedUid);
+              }
+            });
+          });
+        }
       }, {
         key: "checkExpressForValue",
         value: function checkExpressForValue(uid) {
@@ -2943,12 +2950,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getPropertyIds",
         value: function getPropertyIds() {
-          var _this8 = this;
+          var _this9 = this;
 
           this.HttpService.getPropertyId().subscribe(function (data) {
             data.forEach(function (element) {
-              _this8.distinctExpressedUid = element.propertyId.trim();
-              console.log(_this8.distinctExpressedUid);
+              _this9.distinctExpressedUid = element.propertyId.trim();
+              console.log(_this9.distinctExpressedUid);
             });
           });
         }
@@ -3200,56 +3207,56 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerSelectedPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this9 = this;
+          var _this10 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this9.Lookingpostcode = params.get("Lookingpostcode");
-            _this9.Lookingstate = params.get("Lookingstate");
-            _this9.LookingTown = params.get("LookingTown");
-            _this9.norooms = params.get("norooms");
-            _this9.PropertyCondition = params.get("PropertyCondition");
-            _this9.MaxAmount = params.get("MaxAmount");
-            _this9.LookingAddress = params.get("LookingAddress");
-            _this9.ownership = params.get("ownership");
-            _this9.PropertyType = params.get("PropertyType").replace(/\s/g, "");
-            _this9.features = params.get("features");
-            _this9.UserId = params.get("UserId").replace(/\s/g, "");
-            _this9.MinAmount = params.get("MinAmount");
-            _this9.Maxbathrooms = params.get("Maxbathrooms");
-            _this9.Maxrooms = params.get("Maxrooms");
-            _this9.Maxreception = params.get("Maxreception");
-            _this9.propertyId = params.get("propertyId");
-            _this9.expressed = params.get("expressed");
-            _this9.propertyFor = params.get("PropertyFor"); //Buyer Params
+            _this10.Lookingpostcode = params.get("Lookingpostcode");
+            _this10.Lookingstate = params.get("Lookingstate");
+            _this10.LookingTown = params.get("LookingTown");
+            _this10.norooms = params.get("norooms");
+            _this10.PropertyCondition = params.get("PropertyCondition");
+            _this10.MaxAmount = params.get("MaxAmount");
+            _this10.LookingAddress = params.get("LookingAddress");
+            _this10.ownership = params.get("ownership");
+            _this10.PropertyType = params.get("PropertyType").replace(/\s/g, "");
+            _this10.features = params.get("features");
+            _this10.UserId = params.get("UserId").replace(/\s/g, "");
+            _this10.MinAmount = params.get("MinAmount");
+            _this10.Maxbathrooms = params.get("Maxbathrooms");
+            _this10.Maxrooms = params.get("Maxrooms");
+            _this10.Maxreception = params.get("Maxreception");
+            _this10.propertyId = params.get("propertyId");
+            _this10.expressed = params.get("expressed");
+            _this10.propertyFor = params.get("PropertyFor"); //Buyer Params
 
-            _this9.Look_postcodes = params.get("Look_postcodes");
-            _this9.Look_streetName = params.get("Look_Streetname");
-            _this9.Look_condition = params.get("Look_condition");
-            _this9.Look_ChaonStatus = params.get("Look_chainstatus");
-            _this9.Look_Position = params.get("Look_FinancialPosition");
-            _this9.Look_Minamount = params.get("Look_minamount");
-            _this9.Look_Maxamount = params.get("Look_maxamount");
-            _this9.Look_Validity = params.get("Look_Validity");
-            _this9.Look_PropertyType = params.get("Look_propertytype");
-            _this9.Look_Position = params.get("Look_Position");
-            _this9.Look_UserId = params.get("Look_UserId");
-            _this9.Look_PropertyFor = params.get("Look_PropertyFor");
+            _this10.Look_postcodes = params.get("Look_postcodes");
+            _this10.Look_streetName = params.get("Look_Streetname");
+            _this10.Look_condition = params.get("Look_condition");
+            _this10.Look_ChaonStatus = params.get("Look_chainstatus");
+            _this10.Look_Position = params.get("Look_FinancialPosition");
+            _this10.Look_Minamount = params.get("Look_minamount");
+            _this10.Look_Maxamount = params.get("Look_maxamount");
+            _this10.Look_Validity = params.get("Look_Validity");
+            _this10.Look_PropertyType = params.get("Look_propertytype");
+            _this10.Look_Position = params.get("Look_Position");
+            _this10.Look_UserId = params.get("Look_UserId");
+            _this10.Look_PropertyFor = params.get("Look_PropertyFor");
           });
           this.Selected_propertydetail_Service.getUser(this.UserId).subscribe(function (dref) {
             dref.forEach(function (element) {
-              if (_this9.UserId == element.data().uid) {
-                _this9.title = element.data().title;
-                _this9.unNamed = element.data().Name;
+              if (_this10.UserId == element.data().uid) {
+                _this10.title = element.data().title;
+                _this10.unNamed = element.data().Name;
               }
             });
           });
           this.HttpService.getPropertyId().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this9.uid && element.propertyId == _this9.propertyId && element.Type == "Buyerproperty") {
-                _this9.datastored = true;
-                _this9.express = false;
+              if (element.UserId == _this10.uid && element.propertyId == _this10.propertyId && element.Type == "Buyerproperty") {
+                _this10.datastored = true;
+                _this10.express = false;
               }
             });
           }); // this.Selected_propertydetail_Service.getExpressed(this.uid).subscribe((status) => {
@@ -3265,34 +3272,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this10 = this;
+          var _this11 = this;
 
           this.isBuyerSelected = true;
           this.HttpService.matchesBuyer(this.Lookingpostcode, this.Lookingstate, this.LookingTown, this.PropertyCondition, this.MaxAmount, this.LookingAddress, this.ownership, this.PropertyType, this.features, this.UserId, this.Maxrooms, this.Maxreception, this.propertyFor, "pending", this.Maxbathrooms, this.MinAmount, this.Look_UserId).subscribe(function (data) {
             console.log(data);
-            _this10.isBuyerSelected = false;
-            _this10.overlay = false;
+            _this11.isBuyerSelected = false;
+            _this11.overlay = false;
           }), this.HttpService.matchesSeller(this.Look_postcodes, this.Look_streetName, this.Look_PropertyType, this.Look_condition, this.Look_ChaonStatus, this.Look_Position, this.Look_Minamount, this.Look_Maxamount, this.Look_Validity, this.Look_PropertyType, this.Look_Position, this.Look_UserId, this.Look_PropertyFor, 'confirm_interest', this.UserId).subscribe(function (data) {
-            _this10.isBuyerSelected = false;
-            _this10.datastored = true;
-            _this10.express = false;
-
-            _this10.createSellerNotification();
-
-            _this10.backClicked();
-          }); // this.addToExpressCollection();
-        }
-      }, {
-        key: "addToExpressCollection",
-        value: function addToExpressCollection() {
-          var _this11 = this;
-
-          this.HttpService.propertyId(this.propertyId, this.uid, "Sellerproperty").subscribe(function (data) {
             _this11.isBuyerSelected = false;
             _this11.datastored = true;
             _this11.express = false;
 
+            _this11.createSellerNotification();
+
             _this11.backClicked();
+          });
+          this.addToExpressCollection();
+        }
+      }, {
+        key: "addToExpressCollection",
+        value: function addToExpressCollection() {
+          var _this12 = this;
+
+          this.HttpService.propertyId(this.propertyId, this.uid, "Sellerproperty").subscribe(function (data) {
+            _this12.isBuyerSelected = false;
+            _this12.datastored = true;
+            _this12.express = false;
+
+            _this12.backClicked();
           });
         }
       }, {
@@ -3746,41 +3754,41 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this12 = this;
+          var _this13 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.BuyerdetailService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this12.uid) {
-                _this12.user.Name = element.data().Name;
-                _this12.user.Email = element.data().email;
-                _this12.user.DOB = element.data().DOB.toDate();
-                _this12.user.Phone = element.data().Phone;
-                _this12.user.title = element.data().title;
+              if (element.data().uid == _this13.uid) {
+                _this13.user.Name = element.data().Name;
+                _this13.user.Email = element.data().email;
+                _this13.user.DOB = element.data().DOB.toDate();
+                _this13.user.Phone = element.data().Phone;
+                _this13.user.title = element.data().title;
               }
             });
           }); // Auth
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this12.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this12.userData));
+              _this13.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this13.userData));
 
-              _this12.LoggedIn();
+              _this13.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this12.LoggedOut();
+              _this13.LoggedOut();
             }
           });
           this.listingBuyer = this.stateService.listingBuyer; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this12.postcodeCoordinates = data;
-            _this12.listingBuyer.longitude = _this12.postcodeCoordinates.result.longitude, _this12.listingBuyer.latitude = _this12.postcodeCoordinates.result.latitude, _this12.listingBuyer.UserId = _this12.userData.uid, _this12.isBuyer = true;
-            _this12.isBuyer = false;
-            console.log(_this12.listingBuyer.longitude + " " + _this12.listingBuyer.latitude);
+            _this13.postcodeCoordinates = data;
+            _this13.listingBuyer.longitude = _this13.postcodeCoordinates.result.longitude, _this13.listingBuyer.latitude = _this13.postcodeCoordinates.result.latitude, _this13.listingBuyer.UserId = _this13.userData.uid, _this13.isBuyer = true;
+            _this13.isBuyer = false;
+            console.log(_this13.listingBuyer.longitude + " " + _this13.listingBuyer.latitude);
           });
         }
       }, {
@@ -3791,7 +3799,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this13 = this;
+          var _this14 = this;
 
           this.listingBuyer.UserId = this.userData.uid;
           this.isLoading = true;
@@ -3802,9 +3810,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.listingBuyer.latitude;
           this.return = this.formsService.createCustomer(this.userData.uid, this.listingBuyer).then(function (data) {
             if (data == true) {
-              _this13.isLoading = false;
+              _this14.isLoading = false;
 
-              var dialogRef = _this13.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogBuyerDataSubmissionComponent"], {
+              var dialogRef = _this14.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogBuyerDataSubmissionComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -3844,64 +3852,64 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "lookuplatlong",
         value: function lookuplatlong() {
-          var _this14 = this;
+          var _this15 = this;
 
           //Lookup Declared Function
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this14.postcodeCoordinates = data;
-            _this14.listingBuyer.longitude = _this14.postcodeCoordinates.result.longitude, _this14.listingBuyer.latitude = _this14.postcodeCoordinates.result.latitude, _this14.listingBuyer.UserId = _this14.userData.uid, _this14.isBuyer = true;
-            _this14.isBuyer = false;
+            _this15.postcodeCoordinates = data;
+            _this15.listingBuyer.longitude = _this15.postcodeCoordinates.result.longitude, _this15.listingBuyer.latitude = _this15.postcodeCoordinates.result.latitude, _this15.listingBuyer.UserId = _this15.userData.uid, _this15.isBuyer = true;
+            _this15.isBuyer = false;
           });
         }
       }, {
         key: "submitBuyer",
         value: function submitBuyer() {
-          var _this15 = this;
+          var _this16 = this;
 
           this.isLoading = true; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this15.postcodeCoordinates = data;
-            _this15.listingBuyer.longitude = _this15.postcodeCoordinates.result.longitude, _this15.listingBuyer.latitude = _this15.postcodeCoordinates.result.latitude, _this15.listingBuyer.UserId = _this15.userData.uid, _this15.isBuyer = true;
-            _this15.isBuyer = false;
+            _this16.postcodeCoordinates = data;
+            _this16.listingBuyer.longitude = _this16.postcodeCoordinates.result.longitude, _this16.listingBuyer.latitude = _this16.postcodeCoordinates.result.latitude, _this16.listingBuyer.UserId = _this16.userData.uid, _this16.isBuyer = true;
+            _this16.isBuyer = false;
 
-            _this15.http.post("http://139.59.62.119:1337/listing-buyers", {
-              usertitle: _this15.user.title,
-              username: _this15.user.Name,
-              longitude: _this15.listingBuyer.longitude,
-              latitude: _this15.listingBuyer.longitude,
-              features: _this15.postcodeCoordinates.result.features,
-              Validity: _this15.stateService.listingBuyer.Validity,
-              UserId: _this15.uid,
-              Roomsmax: _this15.stateService.listingBuyer.Roomsmax,
-              Roommin: _this15.stateService.listingBuyer.Roommin,
-              PropertyType: _this15.stateService.listingBuyer.PropertyType,
-              PropertyFor: _this15.stateService.listingBuyer.PropertyFor,
-              Position: _this15.stateService.listingBuyer.Position,
-              Ownership: _this15.stateService.listingBuyer.Ownership,
-              Minreception: _this15.stateService.listingBuyer.Minreception,
-              Minbathroom: _this15.stateService.listingBuyer.Minbathroom,
-              MinAmount: _this15.stateService.listingBuyer.MinAmount,
-              Maxreception: _this15.stateService.listingBuyer.Maxreception,
-              Maxbathroom: _this15.stateService.listingBuyer.Maxbathroom,
-              MaxAmount: _this15.stateService.listingBuyer.MaxAmount,
-              Lookingstate: _this15.stateService.listingBuyer.Lookingstate,
-              Lookingpostcode: _this15.stateService.listingBuyer.Lookingpostcode,
-              LookingTown: _this15.stateService.listingBuyer.LookingTown,
-              LookingStreetname: _this15.stateService.listingBuyer.LookingStreetname,
-              FinancialPosition: _this15.stateService.listingBuyer.FinancialPosition,
-              Currentstate: _this15.stateService.listingBuyer.Currentstate,
-              Currentpostcode: _this15.stateService.listingBuyer.Currentpostcode,
-              Currentcountry: _this15.stateService.listingBuyer.Currentcountry,
-              CurrentAddress: _this15.stateService.listingBuyer.CurrentAddress,
-              Country: _this15.stateService.listingBuyer.Country,
-              Conditions: _this15.stateService.listingBuyer.Conditions,
-              ChainStatus: _this15.stateService.listingBuyer.ChainStatus,
-              CurrentTown: _this15.stateService.listingBuyer.CurrentTown
+            _this16.http.post("http://139.59.62.119:1337/listing-buyers", {
+              usertitle: _this16.user.title,
+              username: _this16.user.Name,
+              longitude: _this16.listingBuyer.longitude,
+              latitude: _this16.listingBuyer.longitude,
+              features: _this16.postcodeCoordinates.result.features,
+              Validity: _this16.stateService.listingBuyer.Validity,
+              UserId: _this16.uid,
+              Roomsmax: _this16.stateService.listingBuyer.Roomsmax,
+              Roommin: _this16.stateService.listingBuyer.Roommin,
+              PropertyType: _this16.stateService.listingBuyer.PropertyType,
+              PropertyFor: _this16.stateService.listingBuyer.PropertyFor,
+              Position: _this16.stateService.listingBuyer.Position,
+              Ownership: _this16.stateService.listingBuyer.Ownership,
+              Minreception: _this16.stateService.listingBuyer.Minreception,
+              Minbathroom: _this16.stateService.listingBuyer.Minbathroom,
+              MinAmount: _this16.stateService.listingBuyer.MinAmount,
+              Maxreception: _this16.stateService.listingBuyer.Maxreception,
+              Maxbathroom: _this16.stateService.listingBuyer.Maxbathroom,
+              MaxAmount: _this16.stateService.listingBuyer.MaxAmount,
+              Lookingstate: _this16.stateService.listingBuyer.Lookingstate,
+              Lookingpostcode: _this16.stateService.listingBuyer.Lookingpostcode,
+              LookingTown: _this16.stateService.listingBuyer.LookingTown,
+              LookingStreetname: _this16.stateService.listingBuyer.LookingStreetname,
+              FinancialPosition: _this16.stateService.listingBuyer.FinancialPosition,
+              Currentstate: _this16.stateService.listingBuyer.Currentstate,
+              Currentpostcode: _this16.stateService.listingBuyer.Currentpostcode,
+              Currentcountry: _this16.stateService.listingBuyer.Currentcountry,
+              CurrentAddress: _this16.stateService.listingBuyer.CurrentAddress,
+              Country: _this16.stateService.listingBuyer.Country,
+              Conditions: _this16.stateService.listingBuyer.Conditions,
+              ChainStatus: _this16.stateService.listingBuyer.ChainStatus,
+              CurrentTown: _this16.stateService.listingBuyer.CurrentTown
             }).subscribe(function (data) {
-              _this15.isLoading = false;
+              _this16.isLoading = false;
 
-              var dialogRef = _this15.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogBuyerDataSubmissionComponent"], {
+              var dialogRef = _this16.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogBuyerDataSubmissionComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -4300,29 +4308,29 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this16.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this16.userData));
+              _this17.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this17.userData));
 
-              _this16.LoggedIn();
+              _this17.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this16.LoggedOut();
+              _this17.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this16.lookup(_this16.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this16.data = data;
+              _this17.lookup(_this17.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this17.data = data;
               });
 
-              return _this16.lookup(_this16.listingBuyer.Lookingpostcode);
+              return _this17.lookup(_this17.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -4332,39 +4340,39 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this16.lookup(_this16.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this16.data = data;
+              _this17.lookup(_this17.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this17.data = data;
               });
 
-              return _this16.lookup(_this16.listingBuyer.Currentpostcode);
+              return _this17.lookup(_this17.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
           }));
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this16.Cpostcode = params.get("Currentpostcode");
-            _this16.Ctown = params.get("CurrentTown");
-            _this16.Cstate = params.get("Currentstate");
-            _this16.Ccountry = params.get("Currentcountry");
-            _this16.Lpostcode = params.get("Lookingpostcode");
-            _this16.Lstreetname = params.get("LookingStreetname");
-            _this16.Ltown = params.get("LookingTown");
-            _this16.Lstate = params.get("Lookingstate");
-            _this16.Lcountry = params.get("Country");
-            _this16.Financial = params.get("FinancialPosition");
-            _this16.Type = params.get("PropertyType");
-            _this16.Minroom = params.get("Roommin");
-            _this16.Maxroom = params.get("Roomsmax");
-            _this16.AmountMin = params.get("MinAmount");
-            _this16.amountmax = params.get("MaxAmount");
-            _this16.offer = params.get("Validity");
-            _this16.bathroommin = params.get("Minbathroom");
-            _this16.bathroommax = params.get("Maxbathroom");
-            _this16.receptionmin = params.get("Minreception");
-            _this16.receptionmax = params.get("Maxreception");
-            _this16.condition = params.get("Conditions");
-            _this16.ownership = params.get("Ownership");
-            _this16.Caddress = params.get("CurrentAddress");
+            _this17.Cpostcode = params.get("Currentpostcode");
+            _this17.Ctown = params.get("CurrentTown");
+            _this17.Cstate = params.get("Currentstate");
+            _this17.Ccountry = params.get("Currentcountry");
+            _this17.Lpostcode = params.get("Lookingpostcode");
+            _this17.Lstreetname = params.get("LookingStreetname");
+            _this17.Ltown = params.get("LookingTown");
+            _this17.Lstate = params.get("Lookingstate");
+            _this17.Lcountry = params.get("Country");
+            _this17.Financial = params.get("FinancialPosition");
+            _this17.Type = params.get("PropertyType");
+            _this17.Minroom = params.get("Roommin");
+            _this17.Maxroom = params.get("Roomsmax");
+            _this17.AmountMin = params.get("MinAmount");
+            _this17.amountmax = params.get("MaxAmount");
+            _this17.offer = params.get("Validity");
+            _this17.bathroommin = params.get("Minbathroom");
+            _this17.bathroommax = params.get("Maxbathroom");
+            _this17.receptionmin = params.get("Minreception");
+            _this17.receptionmax = params.get("Maxreception");
+            _this17.condition = params.get("Conditions");
+            _this17.ownership = params.get("Ownership");
+            _this17.Caddress = params.get("CurrentAddress");
           });
 
           if (this.Cpostcode != ":Currentpostcode") {
@@ -4448,7 +4456,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this17 = this;
+          var _this18 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -4456,13 +4464,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this17.uid) {
-                _this17.user.Name = element.data().Name;
-                _this17.user.email = element.data().email;
-                _this17.user.DOB = element.data().DOB.toDate();
-                _this17.user.Phone = element.data().Phone;
-                _this17.user.title = element.data().title;
-                console.log(_this17.user.DOB);
+              if (element.data().uid == _this18.uid) {
+                _this18.user.Name = element.data().Name;
+                _this18.user.email = element.data().email;
+                _this18.user.DOB = element.data().DOB.toDate();
+                _this18.user.Phone = element.data().Phone;
+                _this18.user.title = element.data().title;
+                console.log(_this18.user.DOB);
               }
             });
           });
@@ -4738,10 +4746,10 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this18 = this;
+          var _this19 = this;
 
           this.return = this.fillFormsService.createUserCustomer(this.user).then(function (data) {
-            console.log(_this18.user);
+            console.log(_this19.user);
           });
         }
       }, {
@@ -4767,12 +4775,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this19 = this;
+          var _this20 = this;
 
           // //Lookup Declared Function
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode).subscribe(function (data) {
-            _this19.postcodeCoordinates = data;
-            _this19.listingBuyer.longitude = _this19.postcodeCoordinates.result.longitude, _this19.listingBuyer.latitude = _this19.postcodeCoordinates.result.latitude, _this19.listingBuyer.UserId = _this19.userData.uid, _this19.return = _this19.fillFormsService.createCustomer(_this19.userData.uid, _this19.listingBuyer).then(function (data) {
+            _this20.postcodeCoordinates = data;
+            _this20.listingBuyer.longitude = _this20.postcodeCoordinates.result.longitude, _this20.listingBuyer.latitude = _this20.postcodeCoordinates.result.latitude, _this20.listingBuyer.UserId = _this20.userData.uid, _this20.return = _this20.fillFormsService.createCustomer(_this20.userData.uid, _this20.listingBuyer).then(function (data) {
               if (data == true) {}
             });
           });
@@ -4780,9 +4788,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.isLoading = true;
           this.return = this.fillFormsService.createCustomer(this.userData.uid, this.listingBuyer).then(function (data) {
             if (data == true) {
-              _this19.isLoading = false;
+              _this20.isLoading = false;
 
-              var dialogRef = _this19.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
+              var dialogRef = _this20.dialog.open(_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
                 data: {}
               });
             }
@@ -4792,52 +4800,52 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this20 = this;
+          var _this21 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this20.user.Lastseen = _this20.now;
-            _this20.return = _this20.fillFormsService.createUserTime(_this20.user).then(function (data) {});
-            _this20.isLoading = false;
+            _this21.user.Lastseen = _this21.now;
+            _this21.return = _this21.fillFormsService.createUserTime(_this21.user).then(function (data) {});
+            _this21.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this21 = this;
+          var _this22 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this21.user.Lastseen = _this21.now;
-            _this21.return = _this21.fillFormsService.createUserTime(_this21.user).then(function (data) {});
-            _this21.isLoading = false;
+            _this22.user.Lastseen = _this22.now;
+            _this22.return = _this22.fillFormsService.createUserTime(_this22.user).then(function (data) {});
+            _this22.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this22 = this;
+          var _this23 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this22.user.Lastseen = _this22.now;
-            _this22.return = _this22.fillFormsService.createUserTime(_this22.user).then(function (data) {});
-            _this22.isLoading = false;
+            _this23.user.Lastseen = _this23.now;
+            _this23.return = _this23.fillFormsService.createUserTime(_this23.user).then(function (data) {});
+            _this23.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this23 = this;
+          var _this24 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this23.isLoading = false;
-            _this23.user.Lastseen = _this23.now;
-            _this23.return = _this23.fillFormsService.createUserTime(_this23.user).then(function (data) {});
-            _this23.isLoading = false;
+            _this24.isLoading = false;
+            _this24.user.Lastseen = _this24.now;
+            _this24.return = _this24.fillFormsService.createUserTime(_this24.user).then(function (data) {});
+            _this24.isLoading = false;
           });
         }
       }, {
@@ -4859,22 +4867,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this24 = this;
+          var _this25 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this24.isLoading = false;
-            _this24.isLoggedIn = false;
-            _this24.user.Name = displayName;
-            _this24.user.DOB = null;
-            _this24.user.Phone = null;
-            _this24.return = _this24.fillFormsService.createUserCustomer(_this24.user).then(function (user) {
-              _this24.isLoggedIn = false;
+            _this25.isLoading = false;
+            _this25.isLoggedIn = false;
+            _this25.user.Name = displayName;
+            _this25.user.DOB = null;
+            _this25.user.Phone = null;
+            _this25.return = _this25.fillFormsService.createUserCustomer(_this25.user).then(function (user) {
+              _this25.isLoggedIn = false;
 
-              if (_this24.user != null) {
-                _this24.user.Lastseen = _this24.now;
-                _this24.return = _this24.fillFormsService.createUserTime(_this24.user).then(function (data) {});
-                _this24.overlay = true;
-                _this24.isLoggedIn = false;
+              if (_this25.user != null) {
+                _this25.user.Lastseen = _this25.now;
+                _this25.return = _this25.fillFormsService.createUserTime(_this25.user).then(function (data) {});
+                _this25.overlay = true;
+                _this25.isLoggedIn = false;
               }
             });
           });
@@ -4930,11 +4938,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "timeuserDetail",
         value: function timeuserDetail() {
-          var _this25 = this;
+          var _this26 = this;
 
           this.user.Lastseen = this.now;
           this.return = this.fillFormsService.createUserTime(this.user).then(function (data) {
-            console.log(_this25.user.Lastseen);
+            console.log(_this26.user.Lastseen);
           });
         }
       }, {
@@ -5451,51 +5459,51 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ConfirmSellerDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this26 = this;
+          var _this27 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.ConfirmsellerDetailService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this26.uid) {
-                _this26.user.Name = element.data().Name;
-                _this26.user.Email = element.data().email;
-                _this26.user.DOB = element.data().DOB.toDate();
-                _this26.user.Phone = element.data().Phone;
-                _this26.user.Currentpostcode = element.data().Currentpostcode;
-                _this26.user.title = element.data().title;
-                _this26.user.Currentpostcode = element.data().Currentpostcode;
-                _this26.user.Currentstate = element.data().Currentstate;
-                _this26.user.CurrentTown = element.data().CurrentTowncity;
-                _this26.user.CurrentAddress = element.data().Currentaddress;
+              if (element.data().uid == _this27.uid) {
+                _this27.user.Name = element.data().Name;
+                _this27.user.Email = element.data().email;
+                _this27.user.DOB = element.data().DOB.toDate();
+                _this27.user.Phone = element.data().Phone;
+                _this27.user.Currentpostcode = element.data().Currentpostcode;
+                _this27.user.title = element.data().title;
+                _this27.user.Currentpostcode = element.data().Currentpostcode;
+                _this27.user.Currentstate = element.data().Currentstate;
+                _this27.user.CurrentTown = element.data().CurrentTowncity;
+                _this27.user.CurrentAddress = element.data().Currentaddress;
               }
             });
           }); // Auth
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this26.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this26.userData));
+              _this27.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this27.userData));
 
-              _this26.LoggedIn();
+              _this27.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this26.LoggedOut();
+              _this27.LoggedOut();
             }
           });
           this.listingSeller = this.stateService.listingSeller; //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this26.postcodeCoordinates = data;
-            _this26.listingSeller.longitude = _this26.postcodeCoordinates.result.longitude, _this26.listingSeller.latitude = _this26.postcodeCoordinates.result.latitude, _this26.listingSeller.UserId = _this26.userData.uid, _this26.isBuyer = true;
-            _this26.isBuyer = false;
+            _this27.postcodeCoordinates = data;
+            _this27.listingSeller.longitude = _this27.postcodeCoordinates.result.longitude, _this27.listingSeller.latitude = _this27.postcodeCoordinates.result.latitude, _this27.listingSeller.UserId = _this27.userData.uid, _this27.isBuyer = true;
+            _this27.isBuyer = false;
           });
         }
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this27 = this;
+          var _this28 = this;
 
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
@@ -5503,9 +5511,9 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.listingSeller.usertitle = this.user.title;
           this.return = this.SellerformService.createCustomer(this.userData.uid, this.listingSeller).then(function (data) {
             if (data == true) {
-              _this27.isLoading = false;
+              _this28.isLoading = false;
 
-              var dialogRef = _this27.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
+              var dialogRef = _this28.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -5534,45 +5542,45 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this28 = this;
+          var _this29 = this;
 
           this.isLoading = true;
           console.log(this.stateService.listingSeller.ownership); //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this28.postcodeCoordinates = data;
-            _this28.listingSeller.longitude = _this28.postcodeCoordinates.result.longitude, _this28.listingSeller.latitude = _this28.postcodeCoordinates.result.latitude, _this28.listingSeller.UserId = _this28.userData.uid, _this28.isBuyer = true;
-            _this28.isBuyer = false;
+            _this29.postcodeCoordinates = data;
+            _this29.listingSeller.longitude = _this29.postcodeCoordinates.result.longitude, _this29.listingSeller.latitude = _this29.postcodeCoordinates.result.latitude, _this29.listingSeller.UserId = _this29.userData.uid, _this29.isBuyer = true;
+            _this29.isBuyer = false;
 
-            _this28.http.post("http://139.59.62.119:1337/listing-sellers", {
-              Country: _this28.stateService.listingSeller.Country,
-              LookingAddress: _this28.stateService.listingSeller.LookingAddress,
-              LookingStreetname: _this28.stateService.listingSeller.LookingTown,
-              LookingTown: _this28.stateService.listingSeller.LookingTown,
-              Lookingpostcode: _this28.stateService.listingSeller.Lookingpostcode,
-              Lookingstate: _this28.stateService.listingSeller.Lookingstate,
-              MaxAmount: _this28.stateService.listingSeller.MaxAmount,
-              Maxbathrooms: _this28.stateService.listingSeller.Maxbathrooms,
-              Maxreception: _this28.stateService.listingSeller.Maxreception,
-              PropertyCondition: _this28.stateService.listingSeller.PropertyCondition,
-              PropertyFor: _this28.stateService.listingSeller.PropertyFor,
-              PropertyType: _this28.stateService.listingSeller.PropertyType,
-              features: _this28.stateService.listingSeller.features,
-              latitude: _this28.listingSeller.latitude,
-              longitude: _this28.listingSeller.longitude,
-              ownership: _this28.stateService.listingSeller.ownership,
-              username: _this28.user.Name,
-              usertitle: _this28.user.title,
-              UserId: _this28.uid,
-              Maxrooms: _this28.stateService.listingSeller.Maxrooms,
-              Currentpostcode: _this28.user.Currentpostcode,
-              Currentstate: _this28.user.Currentstate,
-              CurrentTowncity: _this28.user.CurrentTown,
-              Currentaddress: _this28.user.CurrentAddress
+            _this29.http.post("http://139.59.62.119:1337/listing-sellers", {
+              Country: _this29.stateService.listingSeller.Country,
+              LookingAddress: _this29.stateService.listingSeller.LookingAddress,
+              LookingStreetname: _this29.stateService.listingSeller.LookingTown,
+              LookingTown: _this29.stateService.listingSeller.LookingTown,
+              Lookingpostcode: _this29.stateService.listingSeller.Lookingpostcode,
+              Lookingstate: _this29.stateService.listingSeller.Lookingstate,
+              MaxAmount: _this29.stateService.listingSeller.MaxAmount,
+              Maxbathrooms: _this29.stateService.listingSeller.Maxbathrooms,
+              Maxreception: _this29.stateService.listingSeller.Maxreception,
+              PropertyCondition: _this29.stateService.listingSeller.PropertyCondition,
+              PropertyFor: _this29.stateService.listingSeller.PropertyFor,
+              PropertyType: _this29.stateService.listingSeller.PropertyType,
+              features: _this29.stateService.listingSeller.features,
+              latitude: _this29.listingSeller.latitude,
+              longitude: _this29.listingSeller.longitude,
+              ownership: _this29.stateService.listingSeller.ownership,
+              username: _this29.user.Name,
+              usertitle: _this29.user.title,
+              UserId: _this29.uid,
+              Maxrooms: _this29.stateService.listingSeller.Maxrooms,
+              Currentpostcode: _this29.user.Currentpostcode,
+              Currentstate: _this29.user.Currentstate,
+              CurrentTowncity: _this29.user.CurrentTown,
+              Currentaddress: _this29.user.CurrentAddress
             }).subscribe(function (data) {
-              _this28.isLoading = false;
+              _this29.isLoading = false;
 
-              var dialogRef = _this28.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
+              var dialogRef = _this29.dialog.open(_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AlertDialogComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -5794,6 +5802,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.isThanku = true;
         this.hello = false;
         this.distinctExpressedUid = [];
+        this.expressed = false;
         this.sellerprceMathLogic = [];
         this.sellersettwo = [];
         this.sellerunmatchedPriceLogic = [];
@@ -5804,31 +5813,31 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this29 = this;
+          var _this30 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this29.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
-            _this29.Property_Type = params.get("PropertyType");
-            _this29.Looking_Town = params.get("LookingTown");
-            _this29.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
-            _this29.New_latitude = params.get("latitude");
-            _this29.New_longitude = params.get("longitude");
-            _this29.newUser = params.get("newUser");
-            _this29.Property_For = params.get("PropertyFor"); //Seller Params
+            _this30.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
+            _this30.Property_Type = params.get("PropertyType");
+            _this30.Looking_Town = params.get("LookingTown");
+            _this30.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
+            _this30.New_latitude = params.get("latitude");
+            _this30.New_longitude = params.get("longitude");
+            _this30.newUser = params.get("newUser");
+            _this30.Property_For = params.get("PropertyFor"); //Seller Params
 
-            _this29.New_state = params.get("Lookingstate");
-            _this29.New_rooms = params.get("Maxrooms");
-            _this29.New_Propertycondition = params.get("PropertyCondition");
-            _this29.New_Address = params.get("LookingAddress");
-            _this29.New_ownership = params.get("ownership");
-            _this29.New_features = params.get("features");
-            _this29.New_userId = params.get("UserId");
-            _this29.New_Maxbathrooms = params.get("Maxbathrooms");
-            _this29.New_Maxreception = params.get("Maxreception");
-            _this29.New_ownership = params.get("ownership");
-            _this29.New_Maxrooms = params.get("Maxrooms");
+            _this30.New_state = params.get("Lookingstate");
+            _this30.New_rooms = params.get("Maxrooms");
+            _this30.New_Propertycondition = params.get("PropertyCondition");
+            _this30.New_Address = params.get("LookingAddress");
+            _this30.New_ownership = params.get("ownership");
+            _this30.New_features = params.get("features");
+            _this30.New_userId = params.get("UserId");
+            _this30.New_Maxbathrooms = params.get("Maxbathrooms");
+            _this30.New_Maxreception = params.get("Maxreception");
+            _this30.New_ownership = params.get("ownership");
+            _this30.New_Maxrooms = params.get("Maxrooms");
           });
 
           if (this.newUser == "false") {
@@ -5879,73 +5888,73 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (element) {
               //Min-MAx Amount Removed Comas and Formula
-              _this29.maxAmount = _this29.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this29.maxAmount);
-              _this29.Look_minamount = element.MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this29.Look_minamount);
-              _this29.Look_maxamount = element.MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this29.Look_maxamount);
-              _this29.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this29.less);
-              _this29.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this29.more); //Remove Postcode Spaces
+              _this30.maxAmount = _this30.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this30.maxAmount);
+              _this30.Look_minamount = element.MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this30.Look_minamount);
+              _this30.Look_maxamount = element.MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this30.Look_maxamount);
+              _this30.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this30.less);
+              _this30.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this30.more); //Remove Postcode Spaces
 
-              _this29.removespace = element.Lookingpostcode.replace(/\s/g, "");
-              _this29.listing = _this29.Look_postcode; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this30.removespace = element.Lookingpostcode.replace(/\s/g, "");
+              _this30.listing = _this30.Look_postcode; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (element.Lookingpostcode.replace(/\s/g, "") == _this29.Look_postcode && element.PropertyFor == _this29.Look_PropertyFor && element.PropertyType == _this29.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this29.sellermatchedProperties.push({
+              if (element.Lookingpostcode.replace(/\s/g, "") == _this30.Look_postcode && element.PropertyFor == _this30.Look_PropertyFor && element.PropertyType == _this30.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this30.sellermatchedProperties.push({
                   detail: element,
                   propertyId: element.id
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.Lookingpostcode.replace(/\s/g, "") != _this29.Look_postcode && _this29.Look_PropertyFor == element.PropertyFor && element.PropertyType == _this29.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this29.removespace.substring(0, 5) == _this29.listing.substring(0, 5) && element.latitude && element.longitude) {
-                _this29.distanceInKm = _this29.getDistanceFromLatLonInKm(_this29.Look_latitude, _this29.Look_longitude, element.latitude, element.longitude);
+              if (element.Lookingpostcode.replace(/\s/g, "") != _this30.Look_postcode && _this30.Look_PropertyFor == element.PropertyFor && element.PropertyType == _this30.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this30.removespace.substring(0, 5) == _this30.listing.substring(0, 5) && element.latitude && element.longitude) {
+                _this30.distanceInKm = _this30.getDistanceFromLatLonInKm(_this30.Look_latitude, _this30.Look_longitude, element.latitude, element.longitude);
 
-                _this29.sellerunmatchedProperties.push({
+                _this30.sellerunmatchedProperties.push({
                   detail: element,
                   propertyId: element.id,
-                  distance: _this29.distanceInKm * 0.6214
+                  distance: _this30.distanceInKm * 0.6214
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.Lookingpostcode.replace(/\s/g, "") != _this29.Look_postcode && element.PropertyType == _this29.Look_PropertyType && element.PropertyFor == _this29.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this29.removespace.substring(0, 5) != _this29.listing.substring(0, 5) && _this29.removespace.substring(0, 3) == _this29.listing.substring(0, 3)) {
-                _this29.sellerunmatchedPropertiesFirst.push({
+              if (element.Lookingpostcode.replace(/\s/g, "") != _this30.Look_postcode && element.PropertyType == _this30.Look_PropertyType && element.PropertyFor == _this30.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this30.removespace.substring(0, 5) != _this30.listing.substring(0, 5) && _this30.removespace.substring(0, 3) == _this30.listing.substring(0, 3)) {
+                _this30.sellerunmatchedPropertiesFirst.push({
                   detail: element,
                   propertyId: element.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (element.Lookingpostcode.replace(/\s/g, "") != _this29.Look_postcode && element.PropertyType != _this29.Look_PropertyType && element.PropertyFor == _this29.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this29.removespace.substring(0, 5) != _this29.listing.substring(0, 5) && _this29.removespace.substring(0, 3) == _this29.listing.substring(0, 3) && element.latitude && element.longitude) {
-                _this29.distanceInKm = _this29.getDistanceFromLatLonInKm(_this29.Look_latitude, _this29.Look_longitude, element.latitude, element.longitude);
+              if (element.Lookingpostcode.replace(/\s/g, "") != _this30.Look_postcode && element.PropertyType != _this30.Look_PropertyType && element.PropertyFor == _this30.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this30.removespace.substring(0, 5) != _this30.listing.substring(0, 5) && _this30.removespace.substring(0, 3) == _this30.listing.substring(0, 3) && element.latitude && element.longitude) {
+                _this30.distanceInKm = _this30.getDistanceFromLatLonInKm(_this30.Look_latitude, _this30.Look_longitude, element.latitude, element.longitude);
 
-                _this29.sellerunmatchedPriceLogic.push({
+                _this30.sellerunmatchedPriceLogic.push({
                   detail: element,
                   propertyId: element.id,
-                  distance: _this29.distanceInKm * 0.6214
+                  distance: _this30.distanceInKm * 0.6214
                 });
               } //All other properties - Nationwide
 
 
-              if (element.Lookingpostcode.replace(/\s/g, "") != _this29.Look_postcode && element.PropertyFor == _this29.Look_PropertyFor && _this29.removespace.substring(0, 5) != _this29.listing.substring(0, 5) && _this29.removespace.substring(0, 3) != _this29.listing.substring(0, 3) && element.latitude && element.longitude) {
-                _this29.distanceInKm = _this29.getDistanceFromLatLonInKm(_this29.Look_latitude, _this29.Look_longitude, element.latitude, element.longitude);
+              if (element.Lookingpostcode.replace(/\s/g, "") != _this30.Look_postcode && element.PropertyFor == _this30.Look_PropertyFor && _this30.removespace.substring(0, 5) != _this30.listing.substring(0, 5) && _this30.removespace.substring(0, 3) != _this30.listing.substring(0, 3) && element.latitude && element.longitude) {
+                _this30.distanceInKm = _this30.getDistanceFromLatLonInKm(_this30.Look_latitude, _this30.Look_longitude, element.latitude, element.longitude);
 
-                _this29.sellerlookTown.push({
+                _this30.sellerlookTown.push({
                   detail: element,
                   propertyId: element.id,
-                  distance: _this29.distanceInKm * 0.6214
+                  distance: _this30.distanceInKm * 0.6214
                 });
               }
             });
 
-            _this29.sellerunmatchedProperties.sort(_this29.compare);
+            _this30.sellerunmatchedProperties.sort(_this30.compare);
 
-            _this29.noOfMatches = _this29.sellermatchedProperties.length;
-            _this29.noOfUnmatched = _this29.sellerunmatchedProperties.length;
+            _this30.noOfMatches = _this30.sellermatchedProperties.length;
+            _this30.noOfUnmatched = _this30.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -6055,22 +6064,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this30 = this;
+          var _this31 = this;
 
-          // this.HttpService.getPropertyId().subscribe((data)=>{
-          //   data.forEach(element => {
-          //     if(element.UserId == this.uid && element.propertyId == this.propertyId && element.Type == "Buyerproperty")
-          //     {
-          //       console.log(element)
-          //     }
-          //   });  
-          this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
-            ref.forEach(function (item) {
-              if (_this30.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this30.distinctExpressedUid.push(item.data().propertyId);
+          this.HttpService.getExpressedInterest(this.uid).subscribe(function (data) {
+            data.forEach(function (buyerMatch) {
+              if (_this31.distinctExpressedUid.indexOf(buyerMatch.propertyId) === -1) {
+                _this31.distinctExpressedUid = buyerMatch.propertyId;
+                console.log(_this31.distinctExpressedUid);
               }
             });
-            console.log(_this30.distinctExpressedUid);
           });
         }
       }, {
@@ -6327,59 +6329,59 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this31 = this;
+          var _this32 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this31.PriceRange = params.get("MaxAmount");
-            _this31.MinAmount = params.get("MinAmount");
-            _this31.Lookingpostcode = params.get("Lookingpostcode");
-            _this31.LookingStreetname = params.get("LookingStreetname");
-            _this31.Position = params.get("Position");
-            _this31.PropertyType = params.get("PropertyType");
-            _this31.Roomsmax = params.get("Roomsmax");
-            _this31.ownership = params.get("Ownership");
-            _this31.Conditions = params.get("Conditions");
-            _this31.Maxbathroom = params.get("Maxbathroom");
-            _this31.Maxreception = params.get("Maxreception");
-            _this31.features = params.get("features");
-            _this31.UserId = params.get("UserId").replace(/\s/g, "");
-            _this31.FinancialPosition = params.get("FinancialPosition");
-            _this31.ChainStatus = params.get("ChainStatus");
-            console.log(_this31.ChainStatus); // this.FinancialPosition = params.get("FinancialPosition");
+            _this32.PriceRange = params.get("MaxAmount");
+            _this32.MinAmount = params.get("MinAmount");
+            _this32.Lookingpostcode = params.get("Lookingpostcode");
+            _this32.LookingStreetname = params.get("LookingStreetname");
+            _this32.Position = params.get("Position");
+            _this32.PropertyType = params.get("PropertyType");
+            _this32.Roomsmax = params.get("Roomsmax");
+            _this32.ownership = params.get("Ownership");
+            _this32.Conditions = params.get("Conditions");
+            _this32.Maxbathroom = params.get("Maxbathroom");
+            _this32.Maxreception = params.get("Maxreception");
+            _this32.features = params.get("features");
+            _this32.UserId = params.get("UserId").replace(/\s/g, "");
+            _this32.FinancialPosition = params.get("FinancialPosition");
+            _this32.ChainStatus = params.get("ChainStatus");
+            console.log(_this32.ChainStatus); // this.FinancialPosition = params.get("FinancialPosition");
             // this.PriceRange = params.get("PriceRange");
             // this.Validity = params.get("Validity");
             // this.Type = params.get("Type");
             // this.Position = params.get("Position");
 
-            _this31.propertyId = params.get("propertyId");
-            _this31.expressed = params.get("expressed");
-            _this31.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
+            _this32.propertyId = params.get("propertyId");
+            _this32.expressed = params.get("expressed");
+            _this32.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
 
-            _this31.Look_State = params.get("Look_state");
-            _this31.Look_rooms = params.get("Look_rooms");
-            _this31.Look_Propertycondition = params.get("Look_Propertycondition");
-            _this31.Look_Address = params.get("Look_Address");
-            _this31.Look_ownership = params.get("Look_ownership");
-            _this31.Look_features = params.get("Look_features");
-            _this31.Look_userId = params.get("Look_userId");
-            _this31.Look_postcode = params.get("Look_postcode");
-            _this31.Look_PropertyType = params.get("Look_PropertyType");
-            _this31.Look_maxAmount = params.get("Look_maxAmount");
-            _this31.Look_Town = params.get("Look_Town");
-            _this31.Look_Address = params.get("Look_Address");
-            _this31.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
-            _this31.Look_Maxreceptions = params.get("Look_Maxreceptions");
-            _this31.Look_ownership = params.get("Look_ownership");
-            _this31.Look_Maxrooms = params.get("Look_Maxrooms");
-            _this31.Look_Propertyfor = params.get("Look_PropertyFor");
+            _this32.Look_State = params.get("Look_state");
+            _this32.Look_rooms = params.get("Look_rooms");
+            _this32.Look_Propertycondition = params.get("Look_Propertycondition");
+            _this32.Look_Address = params.get("Look_Address");
+            _this32.Look_ownership = params.get("Look_ownership");
+            _this32.Look_features = params.get("Look_features");
+            _this32.Look_userId = params.get("Look_userId");
+            _this32.Look_postcode = params.get("Look_postcode");
+            _this32.Look_PropertyType = params.get("Look_PropertyType");
+            _this32.Look_maxAmount = params.get("Look_maxAmount");
+            _this32.Look_Town = params.get("Look_Town");
+            _this32.Look_Address = params.get("Look_Address");
+            _this32.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
+            _this32.Look_Maxreceptions = params.get("Look_Maxreceptions");
+            _this32.Look_ownership = params.get("Look_ownership");
+            _this32.Look_Maxrooms = params.get("Look_Maxrooms");
+            _this32.Look_Propertyfor = params.get("Look_PropertyFor");
           });
           this.seller_Selected_propertydetail_Service.getUser(this.UserId).subscribe(function (dref) {
             dref.forEach(function (element) {
-              if (_this31.UserId == element.data().uid) {
-                _this31.title = element.data().title;
-                _this31.unNamed = element.data().Name;
+              if (_this32.UserId == element.data().uid) {
+                _this32.title = element.data().title;
+                _this32.unNamed = element.data().Name;
               }
             });
           }); //   this.HttpService.getPropertyId().subscribe((data)=>{
@@ -6413,19 +6415,19 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this32 = this;
+          var _this33 = this;
 
           this.isSellerSelected = true;
           this.HttpService.matchesSellerSeller(this.Lookingpostcode, this.LookingStreetname, this.PropertyType, this.Conditions, this.ChainStatus, this.FinancialPosition, this.MinAmount, this.PriceRange, this.PropertyFor, this.PropertyType, this.Position, this.UserId, this.PropertyFor, "pending", this.Look_userId, this.Roomsmax, this.ownership, this.Maxbathroom, this.Maxreception, this.features).subscribe(function (data) {
-            _this32.isSellerSelected = false;
-            _this32.overlay = false;
+            _this33.isSellerSelected = false;
+            _this33.overlay = false;
           });
           this.HttpService.matchesSellerBuyer(this.Look_postcode, this.Look_State, this.Look_Town, this.Look_Propertycondition, this.Look_maxAmount, this.Look_Address, this.Look_ownership, this.Look_PropertyType, this.Look_features, this.Look_userId, this.Look_Maxrooms, this.Look_Maxreceptions, this.Look_Propertyfor, 'confirm_interest', this.Look_Maxbathrooms, this.Look_maxAmount, this.UserId, this.Look_Maxrooms).subscribe(function (data) {
-            _this32.isSellerSelected = false;
-            _this32.datastored = true;
-            _this32.express = false;
+            _this33.isSellerSelected = false;
+            _this33.datastored = true;
+            _this33.express = false;
 
-            _this32.createSellerNotification();
+            _this33.createSellerNotification();
           });
           this.isSellerSelected = true;
           this.addToExpressCollection();
@@ -6448,14 +6450,14 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this33 = this;
+          var _this34 = this;
 
           this.HttpService.propertyId(this.propertyId, this.uid, "Buyerproperty").subscribe(function (data) {
-            _this33.isSellerSelected = false;
-            _this33.datastored = true;
-            _this33.express = false;
+            _this34.isSellerSelected = false;
+            _this34.datastored = true;
+            _this34.express = false;
 
-            _this33.backClicked();
+            _this34.backClicked();
           }); // this.return = this.seller_Selected_propertydetail_Service.ExpressInterest(
           //   this.uid,
           //   this.propertyId.trim()
@@ -6913,20 +6915,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this34 = this;
+          var _this35 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this34.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this34.userData));
+              _this35.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this35.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this34.LoggedIn();
+              _this35.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this34.LoggedOut();
+              _this35.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -6934,11 +6936,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this34.lookup(_this34.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this34.data = data;
+              _this35.lookup(_this35.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this35.data = data;
               });
 
-              return _this34.lookup(_this34.listingSeller.Lookingpostcode);
+              return _this35.lookup(_this35.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -6948,30 +6950,30 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this34.lookup(_this34.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this34.data = data;
+              _this35.lookup(_this35.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this35.data = data;
               });
 
-              return _this34.lookup(_this34.listingSeller.Currentpostcode);
+              return _this35.lookup(_this35.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this34.Lookpostcode = params.get("Lookingpostcode");
-            _this34.Lookaddress = params.get("LookingAddress");
-            _this34.LookTown = params.get("LookingTown");
-            _this34.Lookstate = params.get("Lookingstate");
-            _this34.Country = params.get("Country");
-            _this34.Property = params.get("PropertyType");
-            _this34.Rooms = params.get("Maxrooms");
-            _this34.Amount = params.get("MaxAmount");
-            _this34.Ownership = params.get("ownership");
-            _this34.Bathrooms = params.get("Maxbathrooms");
-            _this34.Reception = params.get("Maxreception");
-            _this34.Condition = params.get("PropertyCondition");
-            _this34.Features = params.get("features");
-            _this34.country = params.get("Country");
+            _this35.Lookpostcode = params.get("Lookingpostcode");
+            _this35.Lookaddress = params.get("LookingAddress");
+            _this35.LookTown = params.get("LookingTown");
+            _this35.Lookstate = params.get("Lookingstate");
+            _this35.Country = params.get("Country");
+            _this35.Property = params.get("PropertyType");
+            _this35.Rooms = params.get("Maxrooms");
+            _this35.Amount = params.get("MaxAmount");
+            _this35.Ownership = params.get("ownership");
+            _this35.Bathrooms = params.get("Maxbathrooms");
+            _this35.Reception = params.get("Maxreception");
+            _this35.Condition = params.get("PropertyCondition");
+            _this35.Features = params.get("features");
+            _this35.country = params.get("Country");
           });
 
           if (this.Lookpostcode != ":Lookingpostcode") {
@@ -7017,22 +7019,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this35 = this;
+          var _this36 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this35.uid) {
-                _this35.user.Name = element.data().Name;
-                _this35.user.Email = element.data().email;
-                _this35.user.DOB = element.data().DOB.toDate();
-                _this35.user.Phone = element.data().Phone;
-                _this35.user.title = element.data().title;
-                _this35.user.Currentpostcode = element.data().Currentpostcode;
-                _this35.user.CurrentAddress = element.data().Currentaddress;
-                _this35.user.CurrentTown = element.data().CurrentTowncity;
-                _this35.user.Currentstate = element.data().Currentstate;
+              if (element.data().uid == _this36.uid) {
+                _this36.user.Name = element.data().Name;
+                _this36.user.Email = element.data().email;
+                _this36.user.DOB = element.data().DOB.toDate();
+                _this36.user.Phone = element.data().Phone;
+                _this36.user.title = element.data().title;
+                _this36.user.Currentpostcode = element.data().Currentpostcode;
+                _this36.user.CurrentAddress = element.data().Currentaddress;
+                _this36.user.CurrentTown = element.data().CurrentTowncity;
+                _this36.user.Currentstate = element.data().Currentstate;
                 console.log(element.data().Name);
               }
             });
@@ -7252,50 +7254,50 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this36 = this;
+          var _this37 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this36.isLoading = false;
+            _this37.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this37 = this;
+          var _this38 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this37.user.Lastseen = _this37.now;
-            _this37.return = _this37.fillFormsService.createUserTime(_this37.user).then(function (data) {});
-            _this37.isLoading = false;
+            _this38.user.Lastseen = _this38.now;
+            _this38.return = _this38.fillFormsService.createUserTime(_this38.user).then(function (data) {});
+            _this38.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this38 = this;
+          var _this39 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this38.user.Lastseen = _this38.now;
-            _this38.return = _this38.fillFormsService.createUserTime(_this38.user).then(function (data) {});
-            _this38.isLoading = false;
+            _this39.user.Lastseen = _this39.now;
+            _this39.return = _this39.fillFormsService.createUserTime(_this39.user).then(function (data) {});
+            _this39.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this39 = this;
+          var _this40 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this39.isLoading = false;
-            _this39.user.Lastseen = _this39.now;
-            _this39.return = _this39.fillFormsService.createUserTime(_this39.user).then(function (data) {});
-            _this39.isLoading = false;
+            _this40.isLoading = false;
+            _this40.user.Lastseen = _this40.now;
+            _this40.return = _this40.fillFormsService.createUserTime(_this40.user).then(function (data) {});
+            _this40.isLoading = false;
           });
         }
       }, {
@@ -7317,22 +7319,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this40 = this;
+          var _this41 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this40.isLoggedIn = false;
-            _this40.isLoading = false;
-            _this40.user.Name = displayName;
-            _this40.user.DOB = null;
-            _this40.user.Phone = null;
-            _this40.return = _this40.fillFormsService.createUserCustomer(_this40.user).then(function (user) {
-              _this40.isLoggedIn = false;
+            _this41.isLoggedIn = false;
+            _this41.isLoading = false;
+            _this41.user.Name = displayName;
+            _this41.user.DOB = null;
+            _this41.user.Phone = null;
+            _this41.return = _this41.fillFormsService.createUserCustomer(_this41.user).then(function (user) {
+              _this41.isLoggedIn = false;
 
-              if (_this40.user != null) {
-                _this40.user.Lastseen = _this40.now;
-                _this40.return = _this40.fillFormsService.createUserTime(_this40.user).then(function (data) {});
-                _this40.isLoading = false;
-                _this40.overlay = true;
+              if (_this41.user != null) {
+                _this41.user.Lastseen = _this41.now;
+                _this41.return = _this41.fillFormsService.createUserTime(_this41.user).then(function (data) {});
+                _this41.isLoading = false;
+                _this41.overlay = true;
               }
             });
           });
@@ -7748,18 +7750,18 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this41 = this;
+          var _this42 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this41.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this41.userData));
+              _this42.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this42.userData));
 
-              _this41.LoggedIn();
+              _this42.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this41.LoggedOut();
+              _this42.LoggedOut();
             }
           });
         } // addPostcodes()
@@ -8124,7 +8126,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this42 = this;
+          var _this43 = this;
 
           console.log(this.downloadableURL);
           this.stateService.agentSignup = this.agentSignup;
@@ -8132,7 +8134,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.agentSignup.uid = this.uid;
           this.return = this.AgentSignupService.createAgentCustomer(this.uid, this.agentSignup).then(function (data) {
             if (data == true) {
-              var dialogRef = _this42.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__["AlertDialogAgentComponent"], {
+              var dialogRef = _this43.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_7__["AlertDialogAgentComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -8149,7 +8151,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0,
           /*#__PURE__*/
           regeneratorRuntime.mark(function _callee15() {
-            var _this43 = this;
+            var _this44 = this;
 
             var file, filePath;
             return regeneratorRuntime.wrap(function _callee15$(_context15) {
@@ -8173,7 +8175,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
                   case 7:
                     _context15.t0 = function (url) {
-                      _this43.downloadableURL = url;
+                      _this44.downloadableURL = url;
                     };
 
                     _context15.sent.ref.getDownloadURL().then(_context15.t0);
@@ -8192,34 +8194,34 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this44 = this;
+          var _this45 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this44.isLoading = false;
+            _this45.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this45 = this;
+          var _this46 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this45.isLoading = false;
+            _this46.isLoading = false;
           });
         }
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this46 = this;
+          var _this47 = this;
 
           console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
-            _this46.isLoading = false;
+            _this47.isLoading = false;
 
-            _this46.getUserDetail(); // this.user.Name = displayName;
+            _this47.getUserDetail(); // this.user.Name = displayName;
             // this.user.DOB = null;
             // this.user.Phone = null;
             // this.return = this.FormService.createUserCustomer(this.user).then(
@@ -8546,7 +8548,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ClickhomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this47 = this;
+          var _this48 = this;
 
           this.Componame = this.constructor.name;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -8563,16 +8565,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this47.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this47.userData));
-              _this47.isLoggedIn = true;
+              _this48.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this48.userData));
+              _this48.isLoggedIn = true;
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this47.LoggedOut();
+              _this48.LoggedOut();
 
-              _this47.isLoggedIn = false;
+              _this48.isLoggedIn = false;
             }
           });
           console.log(this.constructor.name);
@@ -8591,33 +8593,33 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this48 = this;
+          var _this49 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this48.isLoading = false;
+            _this49.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this49 = this;
+          var _this50 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this49.isLoading = false;
-            _this49.isLoggedIn = true;
+            _this50.isLoading = false;
+            _this50.isLoggedIn = true;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this50 = this;
+          var _this51 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this50.isLoading = false;
-            _this50.isLoggedIn = true;
+            _this51.isLoading = false;
+            _this51.isLoggedIn = true;
           });
         }
       }, {
@@ -8642,35 +8644,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this51 = this;
+          var _this52 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this51.propertyRequirementDetails.push({
+              _this52.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
-            _this51.buyerPoperty = _this51.propertyRequirementDetails.length;
+            _this52.buyerPoperty = _this52.propertyRequirementDetails.length;
             console.log(); //this.checkNumberNestimates = this.propertyRequirementDetails.length + this.propertyDetails.length
           });
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this51.propertyDetails.push({
+              _this52.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
             });
-            _this51.sellerProperty = _this51.propertyDetails.length;
-            _this51.checkNumberNestimates = _this51.sellerProperty + _this51.buyerPoperty;
-            console.log(_this51.checkNumberNestimates);
+            _this52.sellerProperty = _this52.propertyDetails.length;
+            _this52.checkNumberNestimates = _this52.sellerProperty + _this52.buyerPoperty;
+            console.log(_this52.checkNumberNestimates);
 
-            if (_this51.checkNumberNestimates > 0) {
-              _this51.appMatches = true;
-              _this51.isLoggedIn = true;
+            if (_this52.checkNumberNestimates > 0) {
+              _this52.appMatches = true;
+              _this52.isLoggedIn = true;
             } else {
-              _this51.isLoggedIn = false;
+              _this52.isLoggedIn = false;
             }
           });
         }
@@ -8832,6 +8834,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         this.listingBuyer = new _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_4__["listingBuyer"]();
         this.isThanku = true;
         this.distinctExpressedUid = [];
+        this.expressed = false;
         this.getList = false;
         this.propertyRequirementDetails = [];
         this.buyer = false;
@@ -8862,7 +8865,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId) {
-          var _this52 = this;
+          var _this53 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -8871,102 +8874,102 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (item) {
-              _this52.buyer = true;
-              _this52.seller = false;
-              _this52.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this52.Look_PropertyFor = PropertyFor;
-              _this52.Look_propertytype = PropertyType;
-              _this52.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this52.Look_minamount);
-              _this52.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this52.Look_maxamount);
-              _this52.LookingTown = LookingTown;
-              _this52.Look_latitude = latitude;
-              _this52.Look_longitude = longitude;
-              _this52.Look_Streetname = Streetname;
-              _this52.Look_condition = condition;
-              _this52.Look_chainstatus = ChainStatus;
-              _this52.Look_FinancialPosition = FinancialPosition;
-              _this52.Look_Validity = Validity;
-              _this52.Look_Position = Position;
-              _this52.Look_UserId = UserId; //Price Formula
+              _this53.buyer = true;
+              _this53.seller = false;
+              _this53.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this53.Look_PropertyFor = PropertyFor;
+              _this53.Look_propertytype = PropertyType;
+              _this53.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this53.Look_minamount);
+              _this53.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this53.Look_maxamount);
+              _this53.LookingTown = LookingTown;
+              _this53.Look_latitude = latitude;
+              _this53.Look_longitude = longitude;
+              _this53.Look_Streetname = Streetname;
+              _this53.Look_condition = condition;
+              _this53.Look_chainstatus = ChainStatus;
+              _this53.Look_FinancialPosition = FinancialPosition;
+              _this53.Look_Validity = Validity;
+              _this53.Look_Position = Position;
+              _this53.Look_UserId = UserId; //Price Formula
 
-              _this52.maxAmount = item.MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this52.maxAmount);
-              _this52.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this52.less);
-              _this52.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this52.more); //Remove Postcode Spaces
+              _this53.maxAmount = item.MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this53.maxAmount);
+              _this53.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this53.less);
+              _this53.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this53.more); //Remove Postcode Spaces
 
-              _this52.removespace = item.Lookingpostcode.replace(/\s/g, "");
-              _this52.listing = _this52.Look_postcodes;
-              _this52.amount = item.MaxAmount.replace(/,/g, "");
-              _this52.isLoading = false;
-              _this52.buyer = true;
+              _this53.removespace = item.Lookingpostcode.replace(/\s/g, "");
+              _this53.listing = _this53.Look_postcodes;
+              _this53.amount = item.MaxAmount.replace(/,/g, "");
+              _this53.isLoading = false;
+              _this53.buyer = true;
 
-              if (item.Lookingpostcode.replace(/\s/g, "") == _this52.Look_postcodes && item.PropertyFor == _this52.Look_PropertyFor && item.PropertyType == _this52.Look_propertytype && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this52.distanceInKm = _this52.getDistanceFromLatLonInKm(_this52.Look_latitude, _this52.Look_longitude, item.latitude, item.longitude);
+              if (item.Lookingpostcode.replace(/\s/g, "") == _this53.Look_postcodes && item.PropertyFor == _this53.Look_PropertyFor && item.PropertyType == _this53.Look_propertytype && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this53.distanceInKm = _this53.getDistanceFromLatLonInKm(_this53.Look_latitude, _this53.Look_longitude, item.latitude, item.longitude);
 
-                _this52.matchedProperties.push({
+                _this53.matchedProperties.push({
                   detail: item,
                   propertyId: item.id,
-                  distance: _this52.distanceInKm * 1 / 1.609344
+                  distance: _this53.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.Lookingpostcode.replace(/\s/g, "") != _this52.Look_postcodes && item.PropertyFor == _this52.Look_PropertyFor && item.PropertyType == _this52.Look_propertytype && item.Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this52.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this52.distanceInKm = _this52.getDistanceFromLatLonInKm(_this52.Look_latitude, _this52.Look_longitude, item.latitude, item.longitude);
+              if (item.Lookingpostcode.replace(/\s/g, "") != _this53.Look_postcodes && item.PropertyFor == _this53.Look_PropertyFor && item.PropertyType == _this53.Look_propertytype && item.Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this53.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this53.distanceInKm = _this53.getDistanceFromLatLonInKm(_this53.Look_latitude, _this53.Look_longitude, item.latitude, item.longitude);
 
-                _this52.unmatchedProperties.push({
+                _this53.unmatchedProperties.push({
                   detail: item,
                   propertyId: item.id,
-                  distance: _this52.distanceInKm * 1 / 1.609344
+                  distance: _this53.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.Lookingpostcode.replace(/\s/g, "") != _this52.Look_postcodes && item.PropertyFor == _this52.Look_PropertyFor && item.PropertyType == _this52.Look_propertytype && item.Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this52.listing.substring(0, 5) && item.Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this52.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.latitude && item.longitude) {
-                _this52.distanceInKm = _this52.getDistanceFromLatLonInKm(_this52.Look_latitude, _this52.Look_longitude, item.latitude, item.longitude);
+              if (item.Lookingpostcode.replace(/\s/g, "") != _this53.Look_postcodes && item.PropertyFor == _this53.Look_PropertyFor && item.PropertyType == _this53.Look_propertytype && item.Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this53.listing.substring(0, 5) && item.Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this53.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.latitude && item.longitude) {
+                _this53.distanceInKm = _this53.getDistanceFromLatLonInKm(_this53.Look_latitude, _this53.Look_longitude, item.latitude, item.longitude);
 
-                _this52.unmatchedPriceLogic.push({
+                _this53.unmatchedPriceLogic.push({
                   detail: item,
                   propertyId: item.id,
-                  distance: _this52.distanceInKm * 1 / 1.609344
+                  distance: _this53.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.Lookingpostcode.replace(/\s/g, "") != _this52.Look_postcodes && item.PropertyFor == _this52.Look_PropertyFor && item.PropertyType != _this52.Look_propertytype && item.Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this52.listing.substring(0, 5) && item.Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this52.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this52.distanceInKm = _this52.getDistanceFromLatLonInKm(_this52.Look_latitude, _this52.Look_longitude, item.latitude, item.longitude);
+              if (item.Lookingpostcode.replace(/\s/g, "") != _this53.Look_postcodes && item.PropertyFor == _this53.Look_PropertyFor && item.PropertyType != _this53.Look_propertytype && item.Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this53.listing.substring(0, 5) && item.Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this53.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this53.distanceInKm = _this53.getDistanceFromLatLonInKm(_this53.Look_latitude, _this53.Look_longitude, item.latitude, item.longitude);
 
-                _this52.unmatchedallProperty.push({
+                _this53.unmatchedallProperty.push({
                   detail: item,
                   propertyId: item.id,
-                  distance: _this52.distanceInKm * 1 / 1.609344
+                  distance: _this53.distanceInKm * 1 / 1.609344
                 });
               } //- All other properties - Nationwide
 
 
-              if (item.Lookingpostcode.replace(/\s/g, "") != _this52.Look_postcodes && item.PropertyFor == _this52.Look_PropertyFor && item.Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this52.listing.substring(0, 5) && item.Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this52.listing.substring(0, 3) && item.latitude && item.longitude) {
-                _this52.distanceInKm = _this52.getDistanceFromLatLonInKm(_this52.Look_latitude, _this52.Look_longitude, item.latitude, item.longitude);
+              if (item.Lookingpostcode.replace(/\s/g, "") != _this53.Look_postcodes && item.PropertyFor == _this53.Look_PropertyFor && item.Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this53.listing.substring(0, 5) && item.Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this53.listing.substring(0, 3) && item.latitude && item.longitude) {
+                _this53.distanceInKm = _this53.getDistanceFromLatLonInKm(_this53.Look_latitude, _this53.Look_longitude, item.latitude, item.longitude);
 
-                _this52.lookTown.push({
+                _this53.lookTown.push({
                   detail: item,
                   propertyId: item.id,
-                  distance: _this52.distanceInKm * 1 / 1.609344
+                  distance: _this53.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this52.unmatchedProperties.sort(_this52.compare);
+            _this53.unmatchedProperties.sort(_this53.compare);
           });
           this.getExpressedListingIds();
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude) {
-          var _this53 = this;
+          var _this54 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -8993,23 +8996,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this53.maxAmount = _this53.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this53.maxAmount);
-              _this53.Look_minamount = Mean.MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this53.Look_minamount);
-              _this53.Look_maxamount = Mean.MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this53.Look_maxamount);
-              _this53.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this53.less);
-              _this53.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this53.more); //Remove Postcode Spaces
+              _this54.maxAmount = _this54.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this54.maxAmount);
+              _this54.Look_minamount = Mean.MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this54.Look_minamount);
+              _this54.Look_maxamount = Mean.MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this54.Look_maxamount);
+              _this54.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this54.less);
+              _this54.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this54.more); //Remove Postcode Spaces
 
-              _this53.removespace = Mean.Lookingpostcode.replace(/\s/g, "");
-              _this53.listing = _this53.Look_postcode;
-              _this53.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this54.removespace = Mean.Lookingpostcode.replace(/\s/g, "");
+              _this54.listing = _this54.Look_postcode;
+              _this54.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (Mean.Lookingpostcode.replace(/\s/g, "") == _this53.Look_postcode && Mean.PropertyFor == _this53.Look_PropertyFor && Mean.PropertyType == _this53.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this53.sellermatchedProperties.push({
+              if (Mean.Lookingpostcode.replace(/\s/g, "") == _this54.Look_postcode && Mean.PropertyFor == _this54.Look_PropertyFor && Mean.PropertyType == _this54.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this54.sellermatchedProperties.push({
                   detail: Mean,
                   propertyId: Mean.id
                 });
@@ -9017,51 +9020,51 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.Lookingpostcode.replace(/\s/g, "") != _this53.Look_postcode && Mean.PropertyType == _this53.Look_PropertyType && Mean.PropertyFor == _this53.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this53.removespace.substring(0, 5) == _this53.listing.substring(0, 5) && Mean.latitude && Mean.longitude) {
-                _this53.distanceInKm = _this53.getDistanceFromLatLonInKm(_this53.Look_latitude, _this53.Look_longitude, Mean.latitude, Mean.longitude);
+              if (Mean.Lookingpostcode.replace(/\s/g, "") != _this54.Look_postcode && Mean.PropertyType == _this54.Look_PropertyType && Mean.PropertyFor == _this54.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this54.removespace.substring(0, 5) == _this54.listing.substring(0, 5) && Mean.latitude && Mean.longitude) {
+                _this54.distanceInKm = _this54.getDistanceFromLatLonInKm(_this54.Look_latitude, _this54.Look_longitude, Mean.latitude, Mean.longitude);
 
-                _this53.sellerunmatchedProperties.push({
+                _this54.sellerunmatchedProperties.push({
                   detail: Mean,
                   propertyId: Mean.id,
-                  distance: _this53.distanceInKm * 1 / 1.609344
+                  distance: _this54.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.Lookingpostcode.replace(/\s/g, "") != _this53.Look_postcode && Mean.PropertyType == _this53.Look_PropertyType && Mean.PropertyFor == _this53.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this53.removespace.substring(0, 5) != _this53.listing.substring(0, 5) && _this53.removespace.substring(0, 3) == _this53.listing.substring(0, 3)) {
-                _this53.sellerunmatchedPropertiesFirst.push({
+              if (Mean.Lookingpostcode.replace(/\s/g, "") != _this54.Look_postcode && Mean.PropertyType == _this54.Look_PropertyType && Mean.PropertyFor == _this54.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this54.removespace.substring(0, 5) != _this54.listing.substring(0, 5) && _this54.removespace.substring(0, 3) == _this54.listing.substring(0, 3)) {
+                _this54.sellerunmatchedPropertiesFirst.push({
                   detail: Mean,
                   propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (Mean.Lookingpostcode.replace(/\s/g, "") != _this53.Look_postcode && Mean.PropertyType != _this53.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this53.removespace.substring(0, 5) != _this53.listing.substring(0, 5) && _this53.removespace.substring(0, 3) == _this53.listing.substring(0, 3) && Mean.PropertyFor == _this53.Look_PropertyFor && Mean.latitude && Mean.longitude) {
-                _this53.distanceInKm = _this53.getDistanceFromLatLonInKm(_this53.Look_latitude, _this53.Look_longitude, Mean.latitude, Mean.longitude);
+              if (Mean.Lookingpostcode.replace(/\s/g, "") != _this54.Look_postcode && Mean.PropertyType != _this54.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this54.removespace.substring(0, 5) != _this54.listing.substring(0, 5) && _this54.removespace.substring(0, 3) == _this54.listing.substring(0, 3) && Mean.PropertyFor == _this54.Look_PropertyFor && Mean.latitude && Mean.longitude) {
+                _this54.distanceInKm = _this54.getDistanceFromLatLonInKm(_this54.Look_latitude, _this54.Look_longitude, Mean.latitude, Mean.longitude);
 
-                _this53.sellerunmatchedPriceLogic.push({
+                _this54.sellerunmatchedPriceLogic.push({
                   detail: Mean,
                   propertyId: Mean.id,
-                  distance: _this53.distanceInKm * 1 / 1.609344
+                  distance: _this54.distanceInKm * 1 / 1.609344
                 });
               } //All other properties - Nationwide
 
 
-              if (Mean.Lookingpostcode.replace(/\s/g, "") != _this53.Look_postcode && Mean.PropertyFor == _this53.Look_PropertyFor && _this53.removespace.substring(0, 5) != _this53.listing.substring(0, 5) && _this53.removespace.substring(0, 3) != _this53.listing.substring(0, 3) && Mean.latitude && Mean.longitude) {
-                _this53.distanceInKm = _this53.getDistanceFromLatLonInKm(_this53.Look_latitude, _this53.Look_longitude, Mean.latitude, Mean.longitude);
+              if (Mean.Lookingpostcode.replace(/\s/g, "") != _this54.Look_postcode && Mean.PropertyFor == _this54.Look_PropertyFor && _this54.removespace.substring(0, 5) != _this54.listing.substring(0, 5) && _this54.removespace.substring(0, 3) != _this54.listing.substring(0, 3) && Mean.latitude && Mean.longitude) {
+                _this54.distanceInKm = _this54.getDistanceFromLatLonInKm(_this54.Look_latitude, _this54.Look_longitude, Mean.latitude, Mean.longitude);
 
-                _this53.sellerlookTown.push({
+                _this54.sellerlookTown.push({
                   detail: Mean,
                   propertyId: Mean.id,
-                  distance: _this53.distanceInKm * 1 / 1.609344
+                  distance: _this54.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this53.unmatchedProperties.sort(_this53.compare);
+            _this54.unmatchedProperties.sort(_this54.compare);
 
-            _this53.noOfMatches = _this53.sellermatchedProperties.length;
-            _this53.noOfUnmatched = _this53.sellerunmatchedProperties.length;
+            _this54.noOfMatches = _this54.sellermatchedProperties.length;
+            _this54.noOfUnmatched = _this54.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -9158,12 +9161,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this54 = this;
+          var _this55 = this;
 
-          this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
-            ref.forEach(function (item) {
-              if (_this54.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this54.distinctExpressedUid.push(item.data().propertyId);
+          this.HttpService.getExpressedInterest(this.uid).subscribe(function (data) {
+            data.forEach(function (buyerMatch) {
+              if (_this55.distinctExpressedUid.indexOf(buyerMatch.propertyId) === -1) {
+                _this55.distinctExpressedUid = buyerMatch.propertyId;
               }
             });
           });
@@ -9182,7 +9185,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this55 = this;
+          var _this56 = this;
 
           // Fetch details
           // this.myrequirement_service.getBuyerRequirement(this.uid).then(res => {
@@ -9192,20 +9195,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           // });
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this55.uid) {
-                _this55.propertyRequirementDetails.push({
+              if (element.UserId == _this56.uid) {
+                _this56.propertyRequirementDetails.push({
                   data: element,
                   id: element.id
                 });
 
-                console.log(_this55.propertyRequirementDetails);
+                console.log(_this56.propertyRequirementDetails);
               }
             });
           });
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this55.uid) {
-                _this55.propertyDetails.push({
+              if (element.UserId == _this56.uid) {
+                _this56.propertyDetails.push({
                   seller: element,
                   sellerId: element.id
                 });
@@ -9214,106 +9217,106 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           });
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this55.uid) {
-                _this55.propertyDetails.push({
+              if (element.UserId == _this56.uid) {
+                _this56.propertyDetails.push({
                   seller: element,
                   sellerId: element.id
                 });
               }
             });
-            _this55.MatchesItem = _this55.propertyRequirementDetails.length + _this55.propertyDetails.length;
+            _this56.MatchesItem = _this56.propertyRequirementDetails.length + _this56.propertyDetails.length;
 
-            if (_this55.MatchesItem < 2) {
-              if (_this55.propertyRequirementDetails.length > _this55.propertyDetails.length) {
-                _this55.buyer = true;
-                _this55.seller = false;
-                _this55.buyerItems = true;
-                _this55.buyerVal = _this55.propertyRequirementDetails[0].data.Lookingpostcode;
-                var Lookingpostcode = _this55.propertyRequirementDetails[0].data.Lookingpostcode;
-                var MinAmount = _this55.propertyRequirementDetails[0].data.MinAmount;
-                var MaxAmount = _this55.propertyRequirementDetails[0].data.MaxAmount;
-                var PropertyFor = _this55.propertyRequirementDetails[0].data.PropertyFor;
-                var PropertyType = _this55.propertyRequirementDetails[0].data.PropertyType;
-                var LookingTown = _this55.propertyRequirementDetails[0].data.LookingTown;
-                var latitude = _this55.propertyRequirementDetails[0].data.latitude;
-                var longitude = _this55.propertyRequirementDetails[0].data.longitude;
-                var Streetname = _this55.propertyRequirementDetails[0].data.LookingStreetname;
-                var condition = _this55.propertyRequirementDetails[0].data.Conditions;
-                var ChainStatus = _this55.propertyRequirementDetails[0].data.ChainStatus;
-                var FinancialPosition = _this55.propertyRequirementDetails[0].data.FinancialPosition;
-                var Validity = _this55.propertyRequirementDetails[0].data.Validity;
-                var Position = _this55.propertyRequirementDetails[0].data.Position;
-                var UserId = _this55.propertyRequirementDetails[0].data.UserId;
+            if (_this56.MatchesItem < 2) {
+              if (_this56.propertyRequirementDetails.length > _this56.propertyDetails.length) {
+                _this56.buyer = true;
+                _this56.seller = false;
+                _this56.buyerItems = true;
+                _this56.buyerVal = _this56.propertyRequirementDetails[0].data.Lookingpostcode;
+                var Lookingpostcode = _this56.propertyRequirementDetails[0].data.Lookingpostcode;
+                var MinAmount = _this56.propertyRequirementDetails[0].data.MinAmount;
+                var MaxAmount = _this56.propertyRequirementDetails[0].data.MaxAmount;
+                var PropertyFor = _this56.propertyRequirementDetails[0].data.PropertyFor;
+                var PropertyType = _this56.propertyRequirementDetails[0].data.PropertyType;
+                var LookingTown = _this56.propertyRequirementDetails[0].data.LookingTown;
+                var latitude = _this56.propertyRequirementDetails[0].data.latitude;
+                var longitude = _this56.propertyRequirementDetails[0].data.longitude;
+                var Streetname = _this56.propertyRequirementDetails[0].data.LookingStreetname;
+                var condition = _this56.propertyRequirementDetails[0].data.Conditions;
+                var ChainStatus = _this56.propertyRequirementDetails[0].data.ChainStatus;
+                var FinancialPosition = _this56.propertyRequirementDetails[0].data.FinancialPosition;
+                var Validity = _this56.propertyRequirementDetails[0].data.Validity;
+                var Position = _this56.propertyRequirementDetails[0].data.Position;
+                var UserId = _this56.propertyRequirementDetails[0].data.UserId;
 
-                _this55.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId);
+                _this56.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId);
               } else {
-                _this55.seller = true;
-                _this55.buyer = false;
-                _this55.sellerItem = true;
-                _this55.sellerVal = _this55.propertyDetails[0].seller.Lookingpostcode;
-                var _Lookingpostcode = _this55.propertyDetails[0].seller.Lookingpostcode;
-                var _PropertyFor = _this55.propertyDetails[0].seller.PropertyFor;
-                var _PropertyType = _this55.propertyDetails[0].seller.PropertyType;
-                var _MaxAmount = _this55.propertyDetails[0].seller.MaxAmount;
-                var _LookingTown = _this55.propertyDetails[0].seller.LookingTown;
-                var Lookingstate = _this55.propertyDetails[0].seller.Lookingstate;
-                var Maxbathrooms = _this55.propertyDetails[0].seller.Maxbathrooms;
-                var PropertyCondition = _this55.propertyDetails[0].seller.PropertyCondition;
-                var LookingAddress = _this55.propertyDetails[0].seller.LookingAddress;
-                var ownership = _this55.propertyDetails[0].seller.ownership;
-                var features = _this55.propertyDetails[0].seller.features;
-                var _UserId = _this55.propertyDetails[0].seller.UserId;
-                var Maxreception = _this55.propertyDetails[0].seller.Maxreception;
-                var Maxrooms = _this55.propertyDetails[0].seller.Maxrooms;
-                var _latitude = _this55.propertyDetails[0].seller.latitude;
-                var _longitude = _this55.propertyDetails[0].seller.longitude;
+                _this56.seller = true;
+                _this56.buyer = false;
+                _this56.sellerItem = true;
+                _this56.sellerVal = _this56.propertyDetails[0].seller.Lookingpostcode;
+                var _Lookingpostcode = _this56.propertyDetails[0].seller.Lookingpostcode;
+                var _PropertyFor = _this56.propertyDetails[0].seller.PropertyFor;
+                var _PropertyType = _this56.propertyDetails[0].seller.PropertyType;
+                var _MaxAmount = _this56.propertyDetails[0].seller.MaxAmount;
+                var _LookingTown = _this56.propertyDetails[0].seller.LookingTown;
+                var Lookingstate = _this56.propertyDetails[0].seller.Lookingstate;
+                var Maxbathrooms = _this56.propertyDetails[0].seller.Maxbathrooms;
+                var PropertyCondition = _this56.propertyDetails[0].seller.PropertyCondition;
+                var LookingAddress = _this56.propertyDetails[0].seller.LookingAddress;
+                var ownership = _this56.propertyDetails[0].seller.ownership;
+                var features = _this56.propertyDetails[0].seller.features;
+                var _UserId = _this56.propertyDetails[0].seller.UserId;
+                var Maxreception = _this56.propertyDetails[0].seller.Maxreception;
+                var Maxrooms = _this56.propertyDetails[0].seller.Maxrooms;
+                var _latitude = _this56.propertyDetails[0].seller.latitude;
+                var _longitude = _this56.propertyDetails[0].seller.longitude;
 
-                _this55.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude);
+                _this56.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude);
               }
-            } else if (_this55.MatchesItem > 1) {
-              if (_this55.propertyRequirementDetails.length > _this55.propertyDetails.length) {
-                _this55.buyer = true;
-                _this55.buyerVal = _this55.propertyRequirementDetails[0].data.Lookingpostcode;
-                _this55.test = _this55.buyerVal;
-                var _Lookingpostcode2 = _this55.propertyRequirementDetails[0].data.Lookingpostcode;
-                var _MinAmount = _this55.propertyRequirementDetails[0].data.MinAmount;
-                var _MaxAmount2 = _this55.propertyRequirementDetails[0].data.MaxAmount;
-                var _PropertyFor2 = _this55.propertyRequirementDetails[0].data.PropertyFor;
-                var _PropertyType2 = _this55.propertyRequirementDetails[0].data.PropertyType;
-                var _LookingTown2 = _this55.propertyRequirementDetails[0].data.LookingTown;
-                var _latitude2 = _this55.propertyRequirementDetails[0].data.latitude;
-                var _longitude2 = _this55.propertyRequirementDetails[0].data.longitude;
-                var _Streetname = _this55.propertyRequirementDetails[0].data.LookingStreetname;
-                var _condition = _this55.propertyRequirementDetails[0].data.Conditions;
-                var _ChainStatus = _this55.propertyRequirementDetails[0].data.ChainStatus;
-                var _FinancialPosition = _this55.propertyRequirementDetails[0].data.FinancialPosition;
-                var _Validity = _this55.propertyRequirementDetails[0].data.Validity;
-                var _Position = _this55.propertyRequirementDetails[0].data.Position;
-                var _UserId2 = _this55.propertyRequirementDetails[0].data.UserId;
+            } else if (_this56.MatchesItem > 1) {
+              if (_this56.propertyRequirementDetails.length > _this56.propertyDetails.length) {
+                _this56.buyer = true;
+                _this56.buyerVal = _this56.propertyRequirementDetails[0].data.Lookingpostcode;
+                _this56.test = _this56.buyerVal;
+                var _Lookingpostcode2 = _this56.propertyRequirementDetails[0].data.Lookingpostcode;
+                var _MinAmount = _this56.propertyRequirementDetails[0].data.MinAmount;
+                var _MaxAmount2 = _this56.propertyRequirementDetails[0].data.MaxAmount;
+                var _PropertyFor2 = _this56.propertyRequirementDetails[0].data.PropertyFor;
+                var _PropertyType2 = _this56.propertyRequirementDetails[0].data.PropertyType;
+                var _LookingTown2 = _this56.propertyRequirementDetails[0].data.LookingTown;
+                var _latitude2 = _this56.propertyRequirementDetails[0].data.latitude;
+                var _longitude2 = _this56.propertyRequirementDetails[0].data.longitude;
+                var _Streetname = _this56.propertyRequirementDetails[0].data.LookingStreetname;
+                var _condition = _this56.propertyRequirementDetails[0].data.Conditions;
+                var _ChainStatus = _this56.propertyRequirementDetails[0].data.ChainStatus;
+                var _FinancialPosition = _this56.propertyRequirementDetails[0].data.FinancialPosition;
+                var _Validity = _this56.propertyRequirementDetails[0].data.Validity;
+                var _Position = _this56.propertyRequirementDetails[0].data.Position;
+                var _UserId2 = _this56.propertyRequirementDetails[0].data.UserId;
 
-                _this55.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2);
+                _this56.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2);
               } else {
-                _this55.seller = true;
-                _this55.sellerVal = _this55.propertyDetails[0].seller.Lookingpostcode;
-                _this55.test = _this55.sellerVal;
-                var _Lookingpostcode3 = _this55.propertyDetails[0].seller.Lookingpostcode;
-                var _PropertyFor3 = _this55.propertyDetails[0].seller.PropertyFor;
-                var _PropertyType3 = _this55.propertyDetails[0].seller.PropertyType;
-                var _MaxAmount3 = _this55.propertyDetails[0].seller.MaxAmount;
-                var _LookingTown3 = _this55.propertyDetails[0].seller.LookingTown;
-                var _Lookingstate = _this55.propertyDetails[0].seller.Lookingstate;
-                var _Maxbathrooms = _this55.propertyDetails[0].seller.Maxbathrooms;
-                var _PropertyCondition = _this55.propertyDetails[0].seller.PropertyCondition;
-                var _LookingAddress = _this55.propertyDetails[0].seller.LookingAddress;
-                var _ownership = _this55.propertyDetails[0].seller.ownership;
-                var _features = _this55.propertyDetails[0].seller.features;
-                var _UserId3 = _this55.propertyDetails[0].seller.UserId;
-                var _Maxreception = _this55.propertyDetails[0].seller.Maxreception;
-                var _Maxrooms = _this55.propertyDetails[0].seller.Maxrooms;
-                var _latitude3 = _this55.propertyDetails[0].seller.latitude;
-                var _longitude3 = _this55.propertyDetails[0].seller.longitude;
+                _this56.seller = true;
+                _this56.sellerVal = _this56.propertyDetails[0].seller.Lookingpostcode;
+                _this56.test = _this56.sellerVal;
+                var _Lookingpostcode3 = _this56.propertyDetails[0].seller.Lookingpostcode;
+                var _PropertyFor3 = _this56.propertyDetails[0].seller.PropertyFor;
+                var _PropertyType3 = _this56.propertyDetails[0].seller.PropertyType;
+                var _MaxAmount3 = _this56.propertyDetails[0].seller.MaxAmount;
+                var _LookingTown3 = _this56.propertyDetails[0].seller.LookingTown;
+                var _Lookingstate = _this56.propertyDetails[0].seller.Lookingstate;
+                var _Maxbathrooms = _this56.propertyDetails[0].seller.Maxbathrooms;
+                var _PropertyCondition = _this56.propertyDetails[0].seller.PropertyCondition;
+                var _LookingAddress = _this56.propertyDetails[0].seller.LookingAddress;
+                var _ownership = _this56.propertyDetails[0].seller.ownership;
+                var _features = _this56.propertyDetails[0].seller.features;
+                var _UserId3 = _this56.propertyDetails[0].seller.UserId;
+                var _Maxreception = _this56.propertyDetails[0].seller.Maxreception;
+                var _Maxrooms = _this56.propertyDetails[0].seller.Maxrooms;
+                var _latitude3 = _this56.propertyDetails[0].seller.latitude;
+                var _longitude3 = _this56.propertyDetails[0].seller.longitude;
 
-                _this55.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3);
+                _this56.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3);
               }
             }
           });
@@ -9538,12 +9541,12 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this56 = this;
+          var _this57 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this56.propertyRequirementDetails.push({
+              _this57.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -9552,7 +9555,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this56.propertyDetails.push({
+              _this57.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -10160,40 +10163,40 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this57 = this;
+          var _this58 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this57.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
-            _this57.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
-            _this57.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
-            _this57.listingBuyer.Currentstate = params.get("Currentstate").trim();
-            _this57.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
-            _this57.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this57.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            _this57.listingBuyer.LookingTown = params.get("LookingTown").trim();
-            console.log(_this57.listingBuyer.LookingTown);
-            _this57.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
-            _this57.listingBuyer.Country = params.get("Country").trim();
-            _this57.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
-            console.log(_this57.listingBuyer.FinancialPosition);
-            _this57.listingBuyer.PropertyType = params.get("PropertyType").trim();
-            _this57.listingBuyer.Roommin = params.get("Roommin").trim();
-            _this57.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
-            _this57.listingBuyer.MinAmount = params.get("MinAmount").trim();
-            _this57.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
-            _this57.listingBuyer.Validity = params.get("Validity").trim();
-            _this57.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
-            _this57.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
-            _this57.listingBuyer.Minreception = params.get("Minreception").trim();
-            _this57.listingBuyer.Maxreception = params.get("Maxreception").trim();
-            _this57.listingBuyer.Conditions = params.get("Conditions").trim();
-            _this57.listingBuyer.Ownership = params.get("Ownership").trim();
-            _this57.listingBuyer.features = params.get("features").trim();
-            _this57.docid = params.get("docid");
-            _this57.listingBuyer.PropertyFor = params.get("PropertyFor");
-            _this57.listingBuyer.ChainStatus = params.get("ChainStatus");
+            _this58.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
+            _this58.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
+            _this58.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
+            _this58.listingBuyer.Currentstate = params.get("Currentstate").trim();
+            _this58.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
+            _this58.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this58.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
+            _this58.listingBuyer.LookingTown = params.get("LookingTown").trim();
+            console.log(_this58.listingBuyer.LookingTown);
+            _this58.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
+            _this58.listingBuyer.Country = params.get("Country").trim();
+            _this58.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
+            console.log(_this58.listingBuyer.FinancialPosition);
+            _this58.listingBuyer.PropertyType = params.get("PropertyType").trim();
+            _this58.listingBuyer.Roommin = params.get("Roommin").trim();
+            _this58.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
+            _this58.listingBuyer.MinAmount = params.get("MinAmount").trim();
+            _this58.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
+            _this58.listingBuyer.Validity = params.get("Validity").trim();
+            _this58.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
+            _this58.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
+            _this58.listingBuyer.Minreception = params.get("Minreception").trim();
+            _this58.listingBuyer.Maxreception = params.get("Maxreception").trim();
+            _this58.listingBuyer.Conditions = params.get("Conditions").trim();
+            _this58.listingBuyer.Ownership = params.get("Ownership").trim();
+            _this58.listingBuyer.features = params.get("features").trim();
+            _this58.docid = params.get("docid");
+            _this58.listingBuyer.PropertyFor = params.get("PropertyFor");
+            _this58.listingBuyer.ChainStatus = params.get("ChainStatus");
           });
 
           if (this.listingBuyer.PropertyFor == 'buy') {
@@ -10207,25 +10210,25 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this57.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this57.userData));
+              _this58.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this58.userData));
 
-              _this57.LoggedIn();
+              _this58.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this57.LoggedOut();
+              _this58.LoggedOut();
             }
           });
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this57.lookup(_this57.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this57.data = data;
+              _this58.lookup(_this58.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this58.data = data;
               });
 
-              return _this57.lookup(_this57.listingBuyer.Lookingpostcode);
+              return _this58.lookup(_this58.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -10235,11 +10238,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this57.lookup(_this57.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this57.data = data;
+              _this58.lookup(_this58.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this58.data = data;
               });
 
-              return _this57.lookup(_this57.listingBuyer.Currentpostcode);
+              return _this58.lookup(_this58.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -10248,7 +10251,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this58 = this;
+          var _this59 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -10256,13 +10259,13 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.uid = this.user.uid;
           this.EditListingBuyerService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this58.uid) {
-                _this58.user.Name = element.data().Name;
-                _this58.user.email = element.data().email;
-                _this58.user.DOB = element.data().DOB.toDate();
-                _this58.user.Phone = element.data().Phone;
-                _this58.user.title = element.data().title;
-                console.log(_this58.user.DOB);
+              if (element.data().uid == _this59.uid) {
+                _this59.user.Name = element.data().Name;
+                _this59.user.email = element.data().email;
+                _this59.user.DOB = element.data().DOB.toDate();
+                _this59.user.Phone = element.data().Phone;
+                _this59.user.title = element.data().title;
+                console.log(_this59.user.DOB);
               }
             });
           });
@@ -10434,20 +10437,20 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this59 = this;
+          var _this60 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this59.postcodeCoordinates = data;
-            _this59.listingBuyer.longitude = _this59.postcodeCoordinates.result.longitude, _this59.listingBuyer.latitude = _this59.postcodeCoordinates.result.latitude, _this59.listingBuyer.UserId = _this59.userData.uid;
+            _this60.postcodeCoordinates = data;
+            _this60.listingBuyer.longitude = _this60.postcodeCoordinates.result.longitude, _this60.listingBuyer.latitude = _this60.postcodeCoordinates.result.latitude, _this60.listingBuyer.UserId = _this60.userData.uid;
           });
           this.listingBuyer.UserId = this.userData.uid;
           this.listingBuyer.longitude, this.listingBuyer.latitude, this.return = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(function (data) {
-            _this59.lookuplatlong();
+            _this60.lookuplatlong();
 
-            _this59.isLoading = false;
+            _this60.isLoading = false;
 
-            var dialogRef = _this59.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+            var dialogRef = _this60.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
           });
         }
       }, {
@@ -10505,44 +10508,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this60 = this;
+          var _this61 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this60.isLoading = false;
+            _this61.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this61 = this;
+          var _this62 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this61.isLoading = false;
+            _this62.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this62 = this;
+          var _this63 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this62.isLoading = false;
+            _this63.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this63 = this;
+          var _this64 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this63.isLoading = false;
+            _this64.isLoading = false;
           });
         }
       }, {
@@ -10564,17 +10567,17 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this64 = this;
+          var _this65 = this;
 
           this.authService.SignUp(email, pass).then(function (data) {
-            _this64.isLoading = false;
-            _this64.user.Name = displayName;
-            _this64.user.DOB = null;
-            _this64.user.Phone = null;
-            _this64.return = _this64.EditListingBuyerService.createUserCustomer(_this64.user).then(function (user) {
-              if (_this64.user != null) {
-                _this64.isLoading = false;
-                _this64.overlay = true;
+            _this65.isLoading = false;
+            _this65.user.Name = displayName;
+            _this65.user.DOB = null;
+            _this65.user.Phone = null;
+            _this65.return = _this65.EditListingBuyerService.createUserCustomer(_this65.user).then(function (user) {
+              if (_this65.user != null) {
+                _this65.isLoading = false;
+                _this65.overlay = true;
               }
             });
           });
@@ -10635,61 +10638,61 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "lookuplatlong",
         value: function lookuplatlong() {
-          var _this65 = this;
+          var _this66 = this;
 
           //Lookup Declared Function
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this65.postcodeCoordinates = data;
-            _this65.listingBuyer.longitude = _this65.postcodeCoordinates.result.longitude, _this65.listingBuyer.latitude = _this65.postcodeCoordinates.result.latitude, _this65.listingBuyer.UserId = _this65.userData.uid;
+            _this66.postcodeCoordinates = data;
+            _this66.listingBuyer.longitude = _this66.postcodeCoordinates.result.longitude, _this66.listingBuyer.latitude = _this66.postcodeCoordinates.result.latitude, _this66.listingBuyer.UserId = _this66.userData.uid;
           });
         }
       }, {
         key: "buyerEditing",
         value: function buyerEditing() {
-          var _this66 = this;
+          var _this67 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this66.postcodeCoordinates = data;
-            _this66.listingBuyer.longitude = _this66.postcodeCoordinates.result.longitude, _this66.listingBuyer.latitude = _this66.postcodeCoordinates.result.latitude, _this66.listingBuyer.UserId = _this66.userData.uid;
+            _this67.postcodeCoordinates = data;
+            _this67.listingBuyer.longitude = _this67.postcodeCoordinates.result.longitude, _this67.listingBuyer.latitude = _this67.postcodeCoordinates.result.latitude, _this67.listingBuyer.UserId = _this67.userData.uid;
 
-            _this66.HttpClient.put("http://139.59.62.119:1337/listing-buyers/" + _this66.docid, {
-              usertitle: _this66.user.title,
-              username: _this66.user.Name,
-              longitude: _this66.listingBuyer.longitude,
-              latitude: _this66.listingBuyer.longitude,
-              features: _this66.listingBuyer.features,
-              Validity: _this66.listingBuyer.Validity,
-              UserId: _this66.uid,
-              Roomsmax: _this66.listingBuyer.Roomsmax,
-              Roommin: _this66.listingBuyer.Roommin,
-              PropertyType: _this66.listingBuyer.PropertyType,
-              PropertyFor: _this66.listingBuyer.PropertyFor,
-              Position: _this66.listingBuyer.Position,
-              Ownership: _this66.listingBuyer.Ownership,
-              Minreception: _this66.listingBuyer.Minreception,
-              Minbathroom: _this66.listingBuyer.Minbathroom,
-              MinAmount: _this66.listingBuyer.MinAmount,
-              Maxreception: _this66.listingBuyer.Maxreception,
-              Maxbathroom: _this66.listingBuyer.Maxbathroom,
-              MaxAmount: _this66.listingBuyer.MaxAmount,
-              Lookingstate: _this66.listingBuyer.Lookingstate,
-              Lookingpostcode: _this66.listingBuyer.Lookingpostcode,
-              LookingTown: _this66.listingBuyer.LookingTown,
-              LookingStreetname: _this66.listingBuyer.LookingStreetname,
-              FinancialPosition: _this66.listingBuyer.FinancialPosition,
-              Currentstate: _this66.listingBuyer.Currentstate,
-              Currentpostcode: _this66.listingBuyer.Currentpostcode,
-              Currentcountry: _this66.listingBuyer.Currentcountry,
-              CurrentAddress: _this66.listingBuyer.CurrentAddress,
-              Country: _this66.listingBuyer.Country,
-              Conditions: _this66.listingBuyer.Conditions,
-              ChainStatus: _this66.listingBuyer.ChainStatus,
-              CurrentTown: _this66.listingBuyer.CurrentTown
+            _this67.HttpClient.put("http://139.59.62.119:1337/listing-buyers/" + _this67.docid, {
+              usertitle: _this67.user.title,
+              username: _this67.user.Name,
+              longitude: _this67.listingBuyer.longitude,
+              latitude: _this67.listingBuyer.longitude,
+              features: _this67.listingBuyer.features,
+              Validity: _this67.listingBuyer.Validity,
+              UserId: _this67.uid,
+              Roomsmax: _this67.listingBuyer.Roomsmax,
+              Roommin: _this67.listingBuyer.Roommin,
+              PropertyType: _this67.listingBuyer.PropertyType,
+              PropertyFor: _this67.listingBuyer.PropertyFor,
+              Position: _this67.listingBuyer.Position,
+              Ownership: _this67.listingBuyer.Ownership,
+              Minreception: _this67.listingBuyer.Minreception,
+              Minbathroom: _this67.listingBuyer.Minbathroom,
+              MinAmount: _this67.listingBuyer.MinAmount,
+              Maxreception: _this67.listingBuyer.Maxreception,
+              Maxbathroom: _this67.listingBuyer.Maxbathroom,
+              MaxAmount: _this67.listingBuyer.MaxAmount,
+              Lookingstate: _this67.listingBuyer.Lookingstate,
+              Lookingpostcode: _this67.listingBuyer.Lookingpostcode,
+              LookingTown: _this67.listingBuyer.LookingTown,
+              LookingStreetname: _this67.listingBuyer.LookingStreetname,
+              FinancialPosition: _this67.listingBuyer.FinancialPosition,
+              Currentstate: _this67.listingBuyer.Currentstate,
+              Currentpostcode: _this67.listingBuyer.Currentpostcode,
+              Currentcountry: _this67.listingBuyer.Currentcountry,
+              CurrentAddress: _this67.listingBuyer.CurrentAddress,
+              Country: _this67.listingBuyer.Country,
+              Conditions: _this67.listingBuyer.Conditions,
+              ChainStatus: _this67.listingBuyer.ChainStatus,
+              CurrentTown: _this67.listingBuyer.CurrentTown
             }).subscribe(function (data) {
-              _this66.isLoading = false;
+              _this67.isLoading = false;
 
-              var dialogRef = _this66.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+              var dialogRef = _this67.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
             });
           });
         }
@@ -11257,22 +11260,22 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this67 = this;
+          var _this68 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this67.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this67.userData));
+              _this68.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this68.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this67.LoggedIn();
+              _this68.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this67.LoggedOut();
+              _this68.LoggedOut();
             }
           }); // The auto population of github method
 
@@ -11280,11 +11283,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this67.lookup(_this67.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this67.data = data;
+              _this68.lookup(_this68.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this68.data = data;
               });
 
-              return _this67.lookup(_this67.listingSeller.Lookingpostcode);
+              return _this68.lookup(_this68.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -11294,32 +11297,32 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this67.lookup(_this67.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this67.data = data;
+              _this68.lookup(_this68.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this68.data = data;
               });
 
-              return _this67.lookup(_this67.listingSeller.Currentpostcode);
+              return _this68.lookup(_this68.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this67.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
-            _this67.listingSeller.LookingAddress = params.get("LookingAddress");
-            _this67.listingSeller.LookingTown = params.get("LookingTown");
-            _this67.listingSeller.Lookingstate = params.get("Lookingstate");
-            _this67.listingSeller.Country = params.get("Country");
-            _this67.listingSeller.PropertyType = params.get("PropertyType");
-            _this67.listingSeller.Maxrooms = params.get("Maxrooms");
-            _this67.listingSeller.MaxAmount = params.get("MaxAmount");
-            _this67.listingSeller.ownership = params.get("ownership");
-            _this67.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
-            _this67.listingSeller.Maxreception = params.get("Maxreception");
-            _this67.listingSeller.PropertyCondition = params.get("PropertyCondition");
-            _this67.Features = params.get("features");
-            _this67.listingSeller.Country = params.get("Country");
-            _this67.docid = params.get("sellerId");
-            _this67.listingSeller.PropertyFor = params.get("PropertyFor");
+            _this68.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
+            _this68.listingSeller.LookingAddress = params.get("LookingAddress");
+            _this68.listingSeller.LookingTown = params.get("LookingTown");
+            _this68.listingSeller.Lookingstate = params.get("Lookingstate");
+            _this68.listingSeller.Country = params.get("Country");
+            _this68.listingSeller.PropertyType = params.get("PropertyType");
+            _this68.listingSeller.Maxrooms = params.get("Maxrooms");
+            _this68.listingSeller.MaxAmount = params.get("MaxAmount");
+            _this68.listingSeller.ownership = params.get("ownership");
+            _this68.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
+            _this68.listingSeller.Maxreception = params.get("Maxreception");
+            _this68.listingSeller.PropertyCondition = params.get("PropertyCondition");
+            _this68.Features = params.get("features");
+            _this68.listingSeller.Country = params.get("Country");
+            _this68.docid = params.get("sellerId");
+            _this68.listingSeller.PropertyFor = params.get("PropertyFor");
           });
 
           if (this.listingSeller.PropertyFor == "buy") {
@@ -11334,23 +11337,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this68 = this;
+          var _this69 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this68.uid) {
-                _this68.user.Name = element.data().Name;
-                _this68.user.Email = element.data().email;
-                _this68.user.DOB = element.data().DOB.toDate();
-                _this68.user.Phone = element.data().Phone;
-                _this68.user.title = element.data().title;
-                _this68.user.title = element.data().title;
-                _this68.user.Currentpostcode = element.data().Currentpostcode;
-                _this68.user.Currentstate = element.data().Currentstate;
-                _this68.user.CurrentTown = element.data().CurrentTowncity;
-                _this68.user.CurrentAddress = element.data().Currentaddress;
+              if (element.data().uid == _this69.uid) {
+                _this69.user.Name = element.data().Name;
+                _this69.user.Email = element.data().email;
+                _this69.user.DOB = element.data().DOB.toDate();
+                _this69.user.Phone = element.data().Phone;
+                _this69.user.title = element.data().title;
+                _this69.user.title = element.data().title;
+                _this69.user.Currentpostcode = element.data().Currentpostcode;
+                _this69.user.Currentstate = element.data().Currentstate;
+                _this69.user.CurrentTown = element.data().CurrentTowncity;
+                _this69.user.CurrentAddress = element.data().Currentaddress;
                 console.log(element.data().Name);
               }
             });
@@ -11371,21 +11374,21 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "onSubmit",
         value: function onSubmit() {
-          var _this69 = this;
+          var _this70 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this69.postcodeCoordinates = data;
-            _this69.listingSeller.longitude = _this69.postcodeCoordinates.result.longitude, _this69.listingSeller.latitude = _this69.postcodeCoordinates.result.latitude, _this69.listingSeller.UserId = _this69.userData.uid;
-            console.log(_this69.postcodeCoordinates);
+            _this70.postcodeCoordinates = data;
+            _this70.listingSeller.longitude = _this70.postcodeCoordinates.result.longitude, _this70.listingSeller.latitude = _this70.postcodeCoordinates.result.latitude, _this70.listingSeller.UserId = _this70.userData.uid;
+            console.log(_this70.postcodeCoordinates);
           });
           this.listingSeller.UserId = this.userData.uid;
           this.isLoading = true;
           this.listingSeller.longitude, this.listingSeller.latitude, this.listingSeller.username = this.user.Name, this.listingSeller.usertitle = this.user.title;
           this.return = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(function (data) {
-            _this69.isLoading = false;
+            _this70.isLoading = false;
 
-            var dialogRef = _this69.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+            var dialogRef = _this70.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -11576,44 +11579,44 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this70 = this;
+          var _this71 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this70.isLoading = false;
+            _this71.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this71 = this;
+          var _this72 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this71.isLoading = false;
+            _this72.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this72 = this;
+          var _this73 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this72.isLoading = false;
+            _this73.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this73 = this;
+          var _this74 = this;
 
           console.log(email + pass);
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this73.isLoading = false;
+            _this74.isLoading = false;
           });
         }
       }, {
@@ -11635,16 +11638,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass) {
-          var _this74 = this;
+          var _this75 = this;
 
           console.log(displayName);
           this.authService.SignUp(email, pass).then(function (data) {
-            _this74.isLoading = false;
-            _this74.user.Name = displayName;
-            _this74.user.DOB = null;
-            _this74.user.Phone = null;
-            _this74.return = _this74.fillFormsService.createUserCustomer(_this74.user).then(function (data) {
-              _this74.overlay = true;
+            _this75.isLoading = false;
+            _this75.user.Name = displayName;
+            _this75.user.DOB = null;
+            _this75.user.Phone = null;
+            _this75.return = _this75.fillFormsService.createUserCustomer(_this75.user).then(function (data) {
+              _this75.overlay = true;
               console.log(data);
             });
           });
@@ -11696,45 +11699,45 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this75 = this;
+          var _this76 = this;
 
           this.isLoading = true;
           console.log(this.listingSeller.ownership); //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this75.postcodeCoordinates = data;
-            _this75.listingSeller.longitude = _this75.postcodeCoordinates.result.longitude, _this75.listingSeller.latitude = _this75.postcodeCoordinates.result.latitude, _this75.listingSeller.UserId = _this75.userData.uid;
+            _this76.postcodeCoordinates = data;
+            _this76.listingSeller.longitude = _this76.postcodeCoordinates.result.longitude, _this76.listingSeller.latitude = _this76.postcodeCoordinates.result.latitude, _this76.listingSeller.UserId = _this76.userData.uid;
 
-            _this75.HttpClient.put("http://139.59.62.119:1337/listing-sellers/" + _this75.docid, {
-              Country: _this75.listingSeller.Country,
-              LookingAddress: _this75.listingSeller.LookingAddress,
-              LookingStreetname: _this75.listingSeller.LookingTown,
-              LookingTown: _this75.listingSeller.LookingTown,
-              Lookingpostcode: _this75.listingSeller.Lookingpostcode,
-              Lookingstate: _this75.listingSeller.Lookingstate,
-              MaxAmount: _this75.listingSeller.MaxAmount,
-              Maxbathrooms: _this75.listingSeller.Maxbathrooms,
-              Maxreception: _this75.listingSeller.Maxreception,
-              PropertyCondition: _this75.listingSeller.PropertyCondition,
-              PropertyFor: _this75.listingSeller.PropertyFor,
-              PropertyType: _this75.listingSeller.PropertyType,
-              features: _this75.listingSeller.features,
-              latitude: _this75.listingSeller.latitude,
-              longitude: _this75.listingSeller.longitude,
-              ownership: _this75.listingSeller.ownership,
-              username: _this75.user.Name,
-              usertitle: _this75.user.title,
-              UserId: _this75.uid,
-              Maxrooms: _this75.listingSeller.Maxrooms,
-              Currentpostcode: _this75.user.Currentpostcode,
-              Currentstate: _this75.user.Currentstate,
-              CurrentTowncity: _this75.user.CurrentTown,
-              Currentaddress: _this75.user.CurrentAddress
+            _this76.HttpClient.put("http://139.59.62.119:1337/listing-sellers/" + _this76.docid, {
+              Country: _this76.listingSeller.Country,
+              LookingAddress: _this76.listingSeller.LookingAddress,
+              LookingStreetname: _this76.listingSeller.LookingTown,
+              LookingTown: _this76.listingSeller.LookingTown,
+              Lookingpostcode: _this76.listingSeller.Lookingpostcode,
+              Lookingstate: _this76.listingSeller.Lookingstate,
+              MaxAmount: _this76.listingSeller.MaxAmount,
+              Maxbathrooms: _this76.listingSeller.Maxbathrooms,
+              Maxreception: _this76.listingSeller.Maxreception,
+              PropertyCondition: _this76.listingSeller.PropertyCondition,
+              PropertyFor: _this76.listingSeller.PropertyFor,
+              PropertyType: _this76.listingSeller.PropertyType,
+              features: _this76.listingSeller.features,
+              latitude: _this76.listingSeller.latitude,
+              longitude: _this76.listingSeller.longitude,
+              ownership: _this76.listingSeller.ownership,
+              username: _this76.user.Name,
+              usertitle: _this76.user.title,
+              UserId: _this76.uid,
+              Maxrooms: _this76.listingSeller.Maxrooms,
+              Currentpostcode: _this76.user.Currentpostcode,
+              Currentstate: _this76.user.Currentstate,
+              CurrentTowncity: _this76.user.CurrentTown,
+              Currentaddress: _this76.user.CurrentAddress
             }).subscribe(function (data) {
               console.log(data);
-              _this75.isLoading = false;
+              _this76.isLoading = false;
 
-              var dialogRef = _this75.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+              var dialogRef = _this76.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -12137,16 +12140,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this76 = this;
+          var _this77 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this76.Lookingpostcode = params.get("Lookingpostcode");
-            _this76.ChainStatus = params.get("ChainStatus");
-            _this76.FinancialPosition = params.get("FinancialPosition");
-            _this76.Type = params.get("PropertyType");
-            _this76.Position = params.get("Position");
-            _this76.MaxAmount = params.get("MaxAmount");
-            _this76.MinAmount = params.get("MinAmount");
+            _this77.Lookingpostcode = params.get("Lookingpostcode");
+            _this77.ChainStatus = params.get("ChainStatus");
+            _this77.FinancialPosition = params.get("FinancialPosition");
+            _this77.Type = params.get("PropertyType");
+            _this77.Position = params.get("Position");
+            _this77.MaxAmount = params.get("MaxAmount");
+            _this77.MinAmount = params.get("MinAmount");
           });
         }
       }, {
@@ -12259,16 +12262,16 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this77 = this;
+          var _this78 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this77.Lookingpostcode = params.get("Lookingpostcode");
-            _this77.Type = params.get("PropertyType");
-            _this77.MaxAmount = params.get("MaxAmount");
-            _this77.Maxrooms = params.get("Maxrooms");
-            _this77.Maxreception = params.get("Maxreception");
-            _this77.PropertyCondition = params.get("PropertyCondition");
-            _this77.Maxbathrooms = params.get("Maxbathrooms");
+            _this78.Lookingpostcode = params.get("Lookingpostcode");
+            _this78.Type = params.get("PropertyType");
+            _this78.MaxAmount = params.get("MaxAmount");
+            _this78.Maxrooms = params.get("Maxrooms");
+            _this78.Maxreception = params.get("Maxreception");
+            _this78.PropertyCondition = params.get("PropertyCondition");
+            _this78.Maxbathrooms = params.get("Maxbathrooms");
           });
         }
       }, {
@@ -12419,7 +12422,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this78 = this;
+          var _this79 = this;
 
           // Fetch details
           // this.myrequirement_service.getBuyerRequirement(this.uid).then(res => {
@@ -12430,35 +12433,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this78.propertyDetails.push({
+              _this79.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
             });
-            _this78.listingLength = _this78.propertyDetails.length + _this78.propertyRequirementDetails.length;
-            console.log(_this78.listingLength);
+            _this79.listingLength = _this79.propertyDetails.length + _this79.propertyRequirementDetails.length;
+            console.log(_this79.listingLength);
           });
         }
       }, {
         key: "getBuyerEntries",
         value: function getBuyerEntries() {
-          var _this79 = this;
+          var _this80 = this;
 
           this.HttpService.buyerEntries(this.uid).subscribe(function (element) {
-            _this79.propertyRequirementDetails = element;
-            _this79.buyerItemLength = _this79.propertyRequirementDetails.length;
-            console.log(_this79.propertyRequirementDetails.length);
+            _this80.propertyRequirementDetails = element;
+            _this80.buyerItemLength = _this80.propertyRequirementDetails.length;
+            console.log(_this80.propertyRequirementDetails.length);
           });
         }
       }, {
         key: "getSellerEntries",
         value: function getSellerEntries() {
-          var _this80 = this;
+          var _this81 = this;
 
           this.HttpService.sellerEntries(this.uid).subscribe(function (element) {
-            _this80.propertyDetails = element;
-            _this80.sellerLength = _this80.propertyDetails.length;
-            console.log(_this80.propertyDetails);
+            _this81.propertyDetails = element;
+            _this81.sellerLength = _this81.propertyDetails.length;
+            console.log(_this81.propertyDetails);
           });
         }
       }]);
@@ -12659,23 +12662,23 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(BuyerAwaitingDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this81 = this;
+          var _this82 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this81.Lookingpostcode = params.get("Lookingpostcode");
-            _this81.Lookingstate = params.get("Lookingstate");
-            _this81.LookingAddress = params.get("LookingAddress");
-            _this81.norooms = params.get("Roomsmax");
-            _this81.PropertyCondition = params.get("PropertyCondition");
-            _this81.MaxAmount = params.get("MaxAmount");
-            _this81.PropertyType = params.get("PropertyType");
-            _this81.ownership = params.get("ownership");
-            _this81.features = params.get("features");
-            _this81.matchStatus = params.get("matchStatus");
-            _this81.propertyId = params.get("propertyId");
-            _this81.expressed = params.get("expressed");
+            _this82.Lookingpostcode = params.get("Lookingpostcode");
+            _this82.Lookingstate = params.get("Lookingstate");
+            _this82.LookingAddress = params.get("LookingAddress");
+            _this82.norooms = params.get("Roomsmax");
+            _this82.PropertyCondition = params.get("PropertyCondition");
+            _this82.MaxAmount = params.get("MaxAmount");
+            _this82.PropertyType = params.get("PropertyType");
+            _this82.ownership = params.get("ownership");
+            _this82.features = params.get("features");
+            _this82.matchStatus = params.get("matchStatus");
+            _this82.propertyId = params.get("propertyId");
+            _this82.expressed = params.get("expressed");
           });
         }
       }, {
@@ -12807,30 +12810,30 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this82 = this;
+          var _this83 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this82.Lookingpostcode = params.get("Lookingpostcode");
-            _this82.Lookingstate = params.get("Lookingstate");
-            _this82.LookingAddress = params.get("LookingAddress");
-            _this82.norooms = params.get("Roomsmax");
-            _this82.PropertyCondition = params.get("PropertyCondition");
-            _this82.MaxAmount = params.get("MaxAmount");
-            _this82.PropertyType = params.get("PropertyType");
-            _this82.ownership = params.get("ownership");
-            _this82.features = params.get("features");
-            _this82.matchStatus = params.get("matchStatus");
-            _this82.propertyId = params.get("propertyId");
-            _this82.expressed = params.get("expressed");
-            _this82.userId = params.get("UserId");
-            console.log(_this82.expressed);
+            _this83.Lookingpostcode = params.get("Lookingpostcode");
+            _this83.Lookingstate = params.get("Lookingstate");
+            _this83.LookingAddress = params.get("LookingAddress");
+            _this83.norooms = params.get("Roomsmax");
+            _this83.PropertyCondition = params.get("PropertyCondition");
+            _this83.MaxAmount = params.get("MaxAmount");
+            _this83.PropertyType = params.get("PropertyType");
+            _this83.ownership = params.get("ownership");
+            _this83.features = params.get("features");
+            _this83.matchStatus = params.get("matchStatus");
+            _this83.propertyId = params.get("propertyId");
+            _this83.expressed = params.get("expressed");
+            _this83.userId = params.get("UserId");
+            console.log(_this83.expressed);
           });
           this.HttpService.getMatchesSeller().subscribe(function (sellerData) {
             sellerData.forEach(function (element) {
-              if (element.myId == _this82.userId && element.matchStatus == "pending") {
-                _this82.buyerProperty = {
+              if (element.myId == _this83.userId && element.matchStatus == "pending") {
+                _this83.buyerProperty = {
                   detail: element,
                   propertyId: element.id
                 };
@@ -12839,8 +12842,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           });
           this.HttpService.getPropertyIdMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this82.uid && element.propertyId == _this82.propertyId && element.Type == "BuyerSelected") {
-                _this82.expressed = "true";
+              if (element.UserId == _this83.uid && element.propertyId == _this83.propertyId && element.Type == "BuyerSelected") {
+                _this83.expressed = "true";
               }
             });
           }); // this.MatchesBuyerService.getMatchesSellerProperties(this.userId).then((res) => {
@@ -12852,7 +12855,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          this.HttpService.postPropertyIdMatches(this.propertyId, this.userId, "BuyerSelected").subscribe(function (data) {});
+          this.HttpService.postPropertyIdMatches(this.propertyId, this.uid, "BuyerSelected").subscribe(function (data) {});
         }
       }, {
         key: "backClicked",
@@ -12862,7 +12865,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
-          this.HttpService.createNotification(this.now, "Buyer_Confirmed_my_activity", this.userId).subscribe(function (data) {});
+          this.HttpService.createNotification(this.now, "Buyer_Confirmed_my_activity", this.uid).subscribe(function (data) {});
         }
       }, {
         key: "createOther",
@@ -13277,15 +13280,15 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this83 = this;
+          var _this84 = this;
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this83.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
+            _this84.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
 
-            _this83.FinancialPosition = params.get("FinancialPosition");
-            _this83.Type = params.get("PropertyType");
-            _this83.Position = params.get("Position");
-            _this83.matchStatus = params.get("matchStatus");
+            _this84.FinancialPosition = params.get("FinancialPosition");
+            _this84.Type = params.get("PropertyType");
+            _this84.Position = params.get("Position");
+            _this84.matchStatus = params.get("matchStatus");
           });
         }
       }, {
@@ -13418,57 +13421,39 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this84 = this;
+          var _this85 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
           if (this.user != null) {
             this.uid = this.user.uid;
+            this.getExpressedListingIds();
           }
 
           this.HttpService.getMatchesBuyer().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.myId == _this84.uid) {
-                _this84.sellerProperty.push({
+              if (element.myId == _this85.uid) {
+                _this85.sellerProperty.push({
                   detail: element,
                   propertyId: element.id
                 });
               }
             });
+
+            _this85.checkExpressForValue(_this85.uid);
           });
           this.HttpService.getMatchesSeller().subscribe(function (sellerData) {
             sellerData.forEach(function (element) {
-              if (element.myId == _this84.uid) {
-                _this84.buyerProperty.push({
+              if (element.myId == _this85.uid) {
+                _this85.buyerProperty.push({
                   detail: element,
                   propertyId: element.id
                 });
               }
             });
-          });
-        }
-      }, {
-        key: "getExpressedListingIds",
-        value: function getExpressedListingIds() {
-          var _this85 = this;
 
-          this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
-            ref.forEach(function (item) {
-              if (_this85.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this85.distinctExpressedUid.push(item.data().propertyId);
-              }
-            });
+            _this85.getExpressedListingIds();
           });
-        }
-      }, {
-        key: "checkExpressForValue",
-        value: function checkExpressForValue(uid) {// if (this.distinctExpressedUid.includes(uid)) {
-          //   this.expressed =true
-          //   return true;
-          // } else {
-          //   this.expressed = false
-          //   false;
-          // }
         }
       }, {
         key: "chckProperty",
@@ -13481,7 +13466,35 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
                 _this86.expressed = "true";
               }
             });
+
+            _this86.getExpressedListingIds();
           });
+        }
+      }, {
+        key: "getExpressedListingIds",
+        value: function getExpressedListingIds() {
+          var _this87 = this;
+
+          this.HttpService.getExpressedMatches(this.uid).subscribe(function (express) {
+            express.forEach(function (element) {
+              if (_this87.distinctExpressedUid.indexOf(element.propertyId) === -1) {
+                _this87.distinctExpressedUid.push(element.propertyId);
+
+                console.log(_this87.distinctExpressedUid);
+              }
+            });
+          });
+        }
+      }, {
+        key: "checkExpressForValue",
+        value: function checkExpressForValue(uid) {
+          if (this.distinctExpressedUid.includes(uid)) {
+            this.expressed = true;
+            return true;
+          } else {
+            this.expressed = false;
+            false;
+          }
         }
       }]);
 
@@ -13743,50 +13756,50 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this87 = this;
+          var _this88 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           console.log(this.uid);
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this87.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this87.ChainStatus = params.get("ChainStatus");
-            _this87.norooms = params.get("Roomsmax");
-            console.log(_this87.norooms);
-            _this87.PropertyCondition = params.get("PropertyCondition");
-            _this87.Conditions = params.get("Conditions");
-            _this87.MinAmount = params.get("MinAmount");
-            _this87.Type = params.get("Type");
-            _this87.MaxAmount = params.get("MaxAmount");
-            _this87.propertyId = params.get("propertyId");
-            _this87.UserId = params.get("UserId");
-            _this87.id = params.get("id");
-            console.log(_this87.propertyId);
+            _this88.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this88.ChainStatus = params.get("ChainStatus");
+            _this88.norooms = params.get("Roomsmax");
+            console.log(_this88.norooms);
+            _this88.PropertyCondition = params.get("PropertyCondition");
+            _this88.Conditions = params.get("Conditions");
+            _this88.MinAmount = params.get("MinAmount");
+            _this88.Type = params.get("Type");
+            _this88.MaxAmount = params.get("MaxAmount");
+            _this88.propertyId = params.get("propertyId");
+            _this88.UserId = params.get("UserId");
+            _this88.id = params.get("id");
+            console.log(_this88.propertyId);
           });
           this.HttpService.getAgents().subscribe(function (agent) {
             agent.forEach(function (elements) {
-              _this87.agents.push(elements);
+              _this88.agents.push(elements);
             });
           });
           this.HttpService.getMatchesBuyer().subscribe(function (data) {
             data.forEach(function (element) {
-              if (_this87.Lookingpostcode == element.Lookingpostcode && _this87.Type == element.PropertyType && _this87.UserId == _this87.uid) _this87.sellerPropertyLookingAddress = element.LookingAddress.trim();
+              if (_this88.Lookingpostcode == element.Lookingpostcode && _this88.Type == element.PropertyType && _this88.UserId == _this88.uid) _this88.sellerPropertyLookingAddress = element.LookingAddress.trim();
               var mnew = element.LookingAddress;
-              _this87.newItem = mnew;
-              _this87.sellerPropertyLookingTown = element.LookingTown;
-              _this87.sellerPropertyLookingpostcode = element.Lookingpostcode;
-              _this87.sellerPropertyLookingstate = element.Lookingstate;
-              _this87.sellerPropertyMaxbathrooms = element.Maxbathrooms;
-              _this87.newItem1 = element.Maxreception;
-              _this87.sellerPropertyMaxreception = element.Maxreception;
-              _this87.sellerPropertyMaxrooms = element.Maxrooms;
-              _this87.sellerPropertyPropertyCondition = element.PropertyCondition;
-              _this87.sellerPropertyPropertyType = element.PropertyType;
-              _this87.sellerPropertyUserId = element.UserId;
-              _this87.sellerPropertyfeatures = element.features;
-              _this87.sellerPropertyownership = element.ownership;
-              _this87.sellerPropertyPropertyfor = element.propertyFor;
-              _this87.sellerPropertyMaxAmount = element.MaxAmount;
+              _this88.newItem = mnew;
+              _this88.sellerPropertyLookingTown = element.LookingTown;
+              _this88.sellerPropertyLookingpostcode = element.Lookingpostcode;
+              _this88.sellerPropertyLookingstate = element.Lookingstate;
+              _this88.sellerPropertyMaxbathrooms = element.Maxbathrooms;
+              _this88.newItem1 = element.Maxreception;
+              _this88.sellerPropertyMaxreception = element.Maxreception;
+              _this88.sellerPropertyMaxrooms = element.Maxrooms;
+              _this88.sellerPropertyPropertyCondition = element.PropertyCondition;
+              _this88.sellerPropertyPropertyType = element.PropertyType;
+              _this88.sellerPropertyUserId = element.UserId;
+              _this88.sellerPropertyfeatures = element.features;
+              _this88.sellerPropertyownership = element.ownership;
+              _this88.sellerPropertyPropertyfor = element.propertyFor;
+              _this88.sellerPropertyMaxAmount = element.MaxAmount;
             });
           });
         }
@@ -13805,14 +13818,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this88 = this;
-
           this.HttpService.postPropertyIdMatches(this.propertyId, this.uid, "Agent_Expressed").subscribe(function (data) {});
-          this.return = this.AgentService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
-            if (data == true) {
-              _this88.createSellerNotification();
-            }
-          });
         }
       }, {
         key: "backClicked",
@@ -13831,6 +13837,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
           var _this89 = this;
 
           this.createSellerNotification();
+          this.addToExpressCollection();
           this.agentBuyerEntry(agentuid);
           this.agentSellerEntry(agentuid);
           this.HttpService.matchesSellerBuyer(this.sellerPropertyLookingpostcode, this.sellerPropertyLookingstate, this.sellerPropertyLookingTown, this.sellerPropertyPropertyCondition, this.sellerPropertyMaxAmount, this.newItem, this.sellerPropertyownership, this.sellerPropertyPropertyType, this.sellerPropertyfeatures, this.uid, this.sellerPropertyMaxrooms, this.sellerPropertyMaxreception, this.sellerPropertyPropertyfor, "confirmed", this.sellerPropertyMaxbathrooms, this.sellerPropertyMaxAmount, this.UserId, this.sellerPropertyMaxrooms).subscribe(function (data) {
@@ -14278,11 +14285,6 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "backClicked",
         value: function backClicked() {
           this._location.back();
-        }
-      }, {
-        key: "addToExpressCollection",
-        value: function addToExpressCollection() {
-          this.HttpService.postPropertyIdMatches(this.propertyId, this.uid, "Agent_confirmed").subscribe(function (data) {});
         }
       }, {
         key: "backOverlay",
@@ -19779,6 +19781,11 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
         key: "getExpressedMatches",
         value: function getExpressedMatches(uid) {
           return this.http.get("http://139.59.62.119:1337/expressmatches?&UserId=" + uid);
+        }
+      }, {
+        key: "getExpressedInterest",
+        value: function getExpressedInterest(uid) {
+          return this.http.get("http://139.59.62.119:1337/expressed-interests?&UserId=" + uid);
         }
       }]);
 
