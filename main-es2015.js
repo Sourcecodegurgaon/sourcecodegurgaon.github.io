@@ -23,6 +23,19 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/add-user/add-user.component.html":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/add-user/add-user.component.html ***!
+  \***************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n<div class=\"top-bar-container\">\n\n   <div class=\"left-container\">\n\n    <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n<div class=\"aarow-left-container\">\t&#8592;</div>\n<div class=\"right-text-left-container\">Back to Users</div>\n    </div>\n   </div>\n    <div class=\"right-text-container\">\n        <div class=\"top-bar-user-heading\">\n            <img src=\"{{image}}\" class=\"image-people\">\n        </div>\n        <div class=\"lower-text-heading\">\n            {{username}}\n        </div>\n    </div>\n</div>\n\n\n<mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;margin-top: 1em;\">\n  <div class=\"profile-heading\">\n      Personal Info\n  </div>\n  \n  <div class=\"fields-profile-info\">\n  \n      <div class=\"field-set\">\n        <mat-form-field appearance=\"outline\">\n          <mat-label class=\"fixed-Label\">\n           <span id=\"title\">Title</span>\n  \n           </mat-label>\n   \n          <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.title\">\n            <mat-option value=\"Mr\">Mr</mat-option>\n            <mat-option value=\"Ms\">Ms</mat-option>\n            <mat-option value=\"Mrs\">Mrs</mat-option>\n          </mat-select>\n       \n        </mat-form-field>\n\n          <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label  class=\"fixed-Label\" >\n              <span id=\"FullName\">Name</span>\n            </mat-label>\n            <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n          </mat-form-field>\n        \n  \n\n          <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Job\">Job title</span></mat-label>\n            <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n          </mat-form-field>\n\n  \n     \n  \n      </div>\n  \n  \n      <div class=\"field-set\">\n  \n\n\n          \n        \n  \n         \n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Email\">Email</span></mat-label>\n              <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Password\">Password</span></mat-label>\n              <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd>\n              <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">\n                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n              </button>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\" >\n              <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode</span></mat-label>\n              <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n            </mat-form-field>\n       \n    \n            \n\n  \n         \n            \n      \n            \n  \n  \n          \n      \n           \n          </div>\n      \n          <div class=\"field-set\">\n  \n  \n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Office Phone Number</span></mat-label>\n                <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.officephone\" #Phone   maxlength=\"10\">\n              </mat-form-field>\n   \n      \n\n                  <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number</span></mat-label>\n                    <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n                  </mat-form-field>\n \n\n                  <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n                    <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n                  </mat-form-field>\n     \n           \n                \n       \n  \n          \n            \n  \n              </div>\n  \n              <div class=\"field-set\">\n               \n                <mat-form-field class=\"full-width\"  appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n                  <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n                </mat-form-field>\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n                  <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n                </mat-form-field>\n            \n\n                      <mat-form-field class=\"full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n                        <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n                      </mat-form-field>\n                   \n                 \n            \n  \n  \n  \n  \n  \n  \n              </div>\n  \n        \n  </div>\n  \n  \n  <div class=\"agent-image-upload\">\n  \n    <div class=\"upload-image-first-container\">\n    <div class=\"profile-heading\">\n      Images\n  </div>\n  <div class=\"edit-image-part\" >\n    <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n  </div>\n  \n  \n  \n  </div>\n  <div class=\"image-user\" >\n    <img src=\"{{agentSignup.image}}\" class=\"image-agent\" *ngIf=\"!imageUplaod\">\n  \n    <div class=\"file-upload\" *ngIf=\"imageUplaod\">\n      \n      <input type=\"file\"  (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n      \n  </div>\n  </div>\n  \n  <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n  </div>\n  \n  <div class=\"update-button\" \n  (click)=\"userDetails()\">\n  \n      <button mat-button color=\"primary\" class=\"button-color\">Create Agent</button>\n  </div>\n  \n      </mat-card>\n\n\n\n\n</div>\n");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/admin-header/admin-header.component.html":
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/admin-header/admin-header.component.html ***!
@@ -32,7 +45,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"admin-heaher-main\">\n    <div class=\"nestimate-logo-container\">\n    <img src=\"../../../assets/Images/Nestimatelogo1.png\" class=\"nestimate-logo-header\">\n</div>\n\n<div class=\"nestimate-admin-heading\">\n    Administrator\n</div>\n\n</div>\n\n<div class=\"admin-side-bar\">\n\n    <div class=\"dashboard-div\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/dashboard.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Dashboard\n        </div>\n    </div>\n    <div class=\"dashboard-div\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/user.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            User\n        </div>\n    </div>\n    <div class=\"dashboard-div\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/palette.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            UI Elements\n        </div>\n    </div>\n\n\n\n\n    <div class=\"sign-out-div\">\n    <div class=\"sign-out-dashboard\">\n      <img src=\"../../../assets/Images/signout.png\"  class=\"dashboard-icon\">\n    </div>\n    <div class=\"dashboard-container\">\n        Log Out\n    </div>\n\n    </div>\n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"admin-heaher-main\">\n    <div class=\"nestimate-logo-container\">\n    <img src=\"../../../assets/Images/Nestimatelogo1.png\" class=\"nestimate-logo-header\">\n</div>\n\n<div class=\"nestimate-admin-heading\">\n    Administrator\n</div>\n\n</div>\n\n<div class=\"admin-side-bar\"  >\n\n    <div class=\"dashboard-div\" *ngIf=\"!dashboard\" routerLink=\"/AdminPanel\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/dashboard.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Dashboard\n        </div>\n    </div>\n    <div class=\"dashboard-div\" *ngIf=\"dashboard\">\n        <div class=\"active-dashboard\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/Activedashboard.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n            Dashboard\n        </div>\n    </div>\n    </div>\n\n\n\n\n\n\n\n    <div class=\"dashboard-div\"  *ngIf=\"!ActiveUser\"  routerLink=\"/UsersAgentTab\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/user.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            User\n        </div>\n    </div>\n\n    <div class=\"dashboard-div\"  *ngIf=\"ActiveUser\">\n        <div class=\"active-dashboard user-active\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/activeuser.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n            User \n        </div>\n        \n    </div>\n    </div>\n    <div class=\"dashboard-div\"  routerLink=\"/UIElements\" *ngIf=\"!UI\">\n        \n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/palette.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            UI Elements\n        </div>\n    </div>\n\n    <div class=\"dashboard-div\"  *ngIf=\"UI\">\n        <div class=\"active-dashboard\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/activepalette.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n            UI Elements\n        </div>\n    </div>\n\n  \n\n    </div>\n\n    <div class=\"sign-out-div\" (click)=\"signOut()\">\n        <div class=\"sign-out-dashboard\">\n          <img src=\"../../../assets/Images/signout.png\"  class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Log Out\n        </div>\n\n</div>");
 
 /***/ }),
 
@@ -45,7 +58,72 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"admin-login\" *ngIf=\"!LoggedIn\">\n\n    <div class=\"admin-login-wrapper\">\n\n        <img src=\"../../assets/Images/Nestimatelogo.png\"  class=\"image-nestimate-logo\">\n<div class=\"Login-Text\">Log In</div>\n<div class=\"div-content-field\">\n<mat-form-field class=\"example-full-width\">\n    <mat-label>Username</mat-label>\n    <input matInput placeholder=\"Enter Email\"  name=\"emails\"  [(ngModel)]=\"emails\">\n  </mat-form-field>\n\n  \n  <mat-form-field >\n    <mat-label>Enter your password</mat-label>\n    <input matInput [type]=\"hide ? 'password' : 'text'\"  name=\"password\"  [(ngModel)]=\"password\">\n    <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\n    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n    </button>\n  </mat-form-field>\n</div>\n\n\n<div class=\"remmber-me\">\n  <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\"><span class=\"Checkbox-text\">Remember Me</span></mat-checkbox>\n</div>\n\n\n  \n    </div>\n\n  <div class=\"login-buttons\" (click)=\"signIn(emails, password)\">\n    <button mat-button class=\"button-align\">Log In</button>\n  </div>\n<div class=\"forgot-password\">\n<div class=\"forgot-password-text\">\n  <div>\n<img src=\"../../assets/Images/lock-open.svg\" class=\"lock-icon\"></div>\n<div class=\"text-forgot-password\">\n  Forgot your Password?\n</div>\n\n\n</div>\n<div class=\"text-forgot-password back-to-webiste\" routerLink=\"/\">\n  <div>\n  <img src=\"../../assets/Images/arrow-back.svg\" class=\"back-arrow\">\n</div>\n<div>Back To The Website</div>\n</div>\n</div>\n</div>\n\n<div *ngIf=\"LoggedIn\">\n  <app-admin-header></app-admin-header>\n</div>\n\n<div  class=\"text-right\">\n\n</div>\n\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"admin-login\" *ngIf=\"!LoggedIn\">\n\n  <div class=\"admin-login-wrapper\">\n\n    <img src=\"../../assets/Images/Nestimatelogo.png\" class=\"image-nestimate-logo\">\n    <div class=\"Login-Text\">Log In</div>\n    <div class=\"div-content-field\">\n      <mat-form-field class=\"example-full-width\">\n        <mat-label>Username</mat-label>\n        <input matInput placeholder=\"Enter Email\" name=\"emails\" [(ngModel)]=\"emails\">\n      </mat-form-field>\n\n\n      <mat-form-field>\n        <mat-label>Enter your password</mat-label>\n        <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"password\">\n        <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n          [attr.aria-pressed]=\"hide\">\n          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n        </button>\n      </mat-form-field>\n    </div>\n\n\n    <div class=\"remmber-me\">\n      <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\"><span class=\"Checkbox-text\">Remember Me</span>\n      </mat-checkbox>\n    </div>\n\n\n\n  </div>\n\n  <div class=\"login-buttons\" (click)=\"signIn(emails, password)\">\n    <button mat-button class=\"button-align\">Log In</button>\n  </div>\n  <div class=\"forgot-password\">\n    <div class=\"forgot-password-text\">\n      <div>\n        <img src=\"../../assets/Images/lock-open.svg\" class=\"lock-icon\"></div>\n      <div class=\"text-forgot-password\">\n        Forgot your Password?\n      </div>\n\n\n    </div>\n    <div class=\"text-forgot-password back-to-webiste\" routerLink=\"/\">\n      <div>\n        <img src=\"../../assets/Images/arrow-back.svg\" class=\"back-arrow\">\n      </div>\n      <div>Back To The Website</div>\n    </div>\n  </div>\n</div>\n\n<div *ngIf=\"LoggedIn\">\n  <app-admin-header></app-admin-header>\n</div>\n\n<div class=\"user-agent-tab-main-container\" *ngIf=\"LoggedIn\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n\n      <div class=\"top-bar-user-heading\">\n        Dashboard\n      </div>\n      <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n      </div>\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n\n\n\n  <div class=\"top-card\">\n    <mat-card class=\"left-nestimate-dashboard\">\n      <div class=\"wrapper-total-nestimate\">\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{NestimateLength}}</span>\n          <span class=\"total-netiamte-text\"> Total Nestimates</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">\n            <img src=\"../../../assets/Images/person.svg\" class=\"person-dashboard\">\n            {{numberOfUser}}</span>\n          <span class=\"total-netiamte-text\"> Total No. of Users</span>\n        </div>\n      </div>\n    </mat-card>\n    <mat-card class=\"right-nestimate-dashboard\">\n      <div class=\"wrapper-total-nestimate\">\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">2,300</span>\n          <span class=\"total-netiamte-text\">Total Matches</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{ExpressedIneterest}}</span>\n          <span class=\"total-netiamte-text\"> Total Express Interest</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{ConfirmInterest}}</span>\n          <span class=\"total-netiamte-text\">Total Confirm Interest</span>\n        </div>\n      </div>\n    </mat-card>\n  </div>\n\n\n\n  <div class=\"second-color-container\">\n    Users\n  </div>\n  <mat-card class=\"second-part-container\">\n\n\n\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Nestimate by Listing Type</div>\n\n\n\n\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Sell</span>\n            <span class=\"second-part-container-number\">{{countingSellerTypeSell}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Let</span>\n            <span class=\"second-part-container-number\">{{countingSellerTypeRent}}</span>\n          </div>\n\n        </div>\n\n        <div class=\"right-line\"></div>\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Buy</span>\n            <span class=\"second-part-container-number\">{{countListingTypeBuy}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Rent</span>\n            <span class=\"second-part-container-number\">{{countListingTypeRent}}</span>\n\n          </div>\n\n        </div>\n\n\n\n      </div>\n\n\n\n\n\n    </mat-card>\n\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\"> Nestimate by Property Type</div>\n\n\n \n  \n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Flat</span>\n            <span class=\"second-part-container-number\">{{FlatpropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Studio</span>\n            <span class=\"second-part-container-number\">{{studiopropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Terraced house</span>\n            <span class=\"second-part-container-number\">{{TerracedhouseType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Maisonette</span>\n            <span class=\"second-part-container-number\">{{MaisonetteType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Semi-detached house</span>\n            <span class=\"second-part-container-number\">{{SemidetachedType}}</span>\n          </div>\n\n            <div class=\"top-second-part-container\">\n              <span class=\"second-part-container-text\">Bungalow</span>\n              <span class=\"second-part-container-number\">{{BungalowType}}</span>\n  \n            </div>\n  \n            <div class=\"lower-second-part-container\">\n              <span class=\"second-part-container-text\">Detached house</span>\n              <span class=\"second-part-container-number\">{{DetachedhousType}}</span>\n            </div>\n\n        </div>\n\n        <div class=\"right-line\"></div>\n\n        <div class=\"right-side-second-part-container\">\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Cottage</span>\n            <span class=\"second-part-container-number\">{{CottagePropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Town House</span>\n            <span class=\"second-part-container-number\">{{TownhouseType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Country house</span>\n            <span class=\"second-part-container-number\">{{CountryhouseType}}</span>\n          </div>\n\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Barn conversion</span>\n            <span class=\"second-part-container-number\">{{BarnconversionType}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Farm</span>\n            <span class=\"second-part-container-number\">{{FarmPropertyType}}</span>\n          </div>\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Houseboat</span>\n            <span class=\"second-part-container-number\">{{HouseboaType}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Lodge</span>\n            <span class=\"second-part-container-number\">{{LodgeType}}</span>\n          </div>\n        \n\n        </div>\n\n\n\n      </div>\n\n\n\n    </mat-card>\n  </mat-card>\n\n  <div class=\"mat-card-bottom\"></div>\n\n\n  <mat-card class=\"third-mat-card\">\n    <div class=\"wrapper-total-nestimate third-matcard-align\">\n\n      <div class=\"total-nestimate total-postcode\">\n        <span class=\"total-nestimate-number\">\n          <img src=\"../../../assets/Images/person.svg\" class=\"person-dashboard\">\n          {{agentLength}}</span>\n        <span class=\"total-netiamte-text\"> Total No. of Agents</span>\n      </div>\n      <div class=\"right-line\"></div>\n      <div class=\"total-nestimate total-postcode\">\n        <span class=\"total-nestimate-number\">2,344</span>\n        <span class=\"total-netiamte-text\"> Total No. of Postcodes</span>\n      </div>\n     \n    </div>\n\n  </mat-card>\n\n\n  <div class=\"second-color-container\">\n    Agents\n  </div>\n  <mat-card class=\"second-part-container\">\n\n\n\n    <div class=\"fourth-part-container\">\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Agents by Sole Agency Fees</div>\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">1% to 2%</span>\n            <span class=\"second-part-container-number\">{{firstSole}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">2% to 3%</span>\n            <span class=\"second-part-container-number\">{{secondSole}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">3% to 4%</span>\n            <span class=\"second-part-container-number\">{{thirdSole}}</span>\n          </div>\n\n        </div>\n      </div>\n    </mat-card>\n   \n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Agents by Multiple Agency Fees</div>\n\n\n\n\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">1% to 2%</span>\n            <span class=\"second-part-container-number\">{{multiFirst}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">2% to 3%</span>\n            <span class=\"second-part-container-number\">{{multiSecond}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">3% to 4%</span>\n            <span class=\"second-part-container-number\">{{multiThird}}</span>\n          </div>\n        </div>\n      </div>\n\n\n\n    </mat-card>\n  </div>\n  </mat-card>\n  <div class=\"mat-card-bottom\"></div>\n\n\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.html":
+/*!*****************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.html ***!
+  \*****************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating Nestimate...</p>\n      </div>\n\n</div>\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#8592;</div>\n                <div class=\"right-text-left-container\">Back to Users</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n\n\n\n\n<div class=\"profile-info-card\">\n    <mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;\">\n<div class=\"profile-heading\">\n    Personal Info\n</div>\n\n<div class=\"fields-profile-info\">\n\n    <div class=\"field-set\">\n      <mat-form-field appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n         <span id=\"title\">Title</span>\n\n         </mat-label>\n \n        <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.title\">\n          <mat-option value=\"Mr\">Mr</mat-option>\n          <mat-option value=\"Ms\">Ms</mat-option>\n          <mat-option value=\"Mrs\">Mrs</mat-option>\n        </mat-select>\n     \n      </mat-form-field>\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Name</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n        </mat-form-field>\n      </div>\n\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n            <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n          </mat-form-field>\n        </div>\n\n   \n\n    </div>\n\n\n    <div class=\"field-set\">\n\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n          </mat-form-field>\n        </div>\n\n       \n      </div>\n        <div class=\"extra-field-two\" >\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n              <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n            </mat-form-field>\n          </div>\n     \n\n        <div class=\"extra-field-two\">\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Job\">Job title</span></mat-label>\n              <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n            </mat-form-field>\n          </div>\n\n       \n          \n    \n          \n\n\n        \n    \n         \n        </div>\n    \n        <div class=\"field-set\">\n\n          <div class=\"extra-field-two\" >\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Office Phone Number</span></mat-label>\n              <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.officephone\" #Phone   maxlength=\"10\">\n            </mat-form-field>\n          </div>\n    \n            <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number</span></mat-label>\n                  <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n                </mat-form-field>\n              </div>\n            <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Email\">Email</span></mat-label>\n                  <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n                </mat-form-field>\n              </div>\n\n        \n          \n\n            </div>\n\n            <div class=\"field-set\">\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">Status</mat-label>\n                <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.Status\">\n                  <mat-option [value]=\"true\">Verified</mat-option>\n                  <mat-option [value]=\"false\">Not Verfied</mat-option>\n                </mat-select>\n             \n              </mat-form-field>\n                <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n                      <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n                    </mat-form-field>\n                  </div>\n                  <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n                      <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n                    </mat-form-field>\n                  </div>\n\n\n\n\n\n\n            </div>\n\n      \n</div>\n\n\n<div class=\"agent-image-upload\">\n\n  <div class=\"upload-image-first-container\">\n  <div class=\"profile-heading\">\n    Images\n</div>\n<div class=\"edit-image-part\" >\n  <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n</div>\n\n\n\n</div>\n<div class=\"image-user\" >\n  <img src=\"{{agentSignup.image}}\" class=\"image-agent\" *ngIf=\"!imageUplaod\">\n  <div class=\"file-upload\" *ngIf=\"imageUplaod\">\n    <input type=\"file\"  (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n</div>\n</div>\n\n<span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n</div>\n\n<div class=\"update-button\"  (click)=\"updateAgent()\">\n\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n</div>\n\n    </mat-card>\n\n\n\n\n\n\n    <!--User List MatCard-->\n<div class=\"main-listing-container\">\n    <mat-card class=\"user-Listing-mat-card\">\n        <div class=\"profile-heading\">\n            Listings\n        </div>\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-heading-tab-content\">Id</div>\n                <div class=\"text-heading-tab-content\">Property </div>\n                <div class=\"text-heading-tab-content\">Postcode</div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result\" *ngFor=\"let agentProperties of agentProperties\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{agentProperties.uid}}</div> \n                <div class=\"text-output-tab-content\">{{agentProperties.details.Buyer.PropertyType}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{agentProperties.details.Buyer.Lookingpostcode}}</div>\n                <div class=\"text-output-tab-content\">\n    \n                    <span class=\"cursor-show\">\n                        <img src=\"../../../assets/Images/dustbin.png\" class=\"icon-action\"> Delete </span> \n                        \n                        <span class=\"line-height\"></span>\n                    <span class=\"cursor-show\" routerLink=\"/AgentPropertyEditPage/{{agentProperties.details.UserId}}/{{agentProperties.uid}}\"  > <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n    \n                </div>\n            </div>\n    \n\n    \n\n\n\n            \n        </div>\n\n\n\n\n        \n\n    </mat-card>\n</div>\n\n\n</div>\n\n\n\n\n    </div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.html":
+/*!***********************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.html ***!
+  \***********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#8592;</div>\n                <div class=\"right-text-left-container\">Back to Users</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n\n\n    <div class=\"profile-info-card\" >\n\n        <div class=\"mat-card-top-area\"> {{propertyFor}} at {{Lookingpostcode}}</div>\n        <div class=\"main-mat-card-container\">\n\n\n        <mat-card class=\"mat-card-edit\">\n\n          <div class=\"property-for-container\">\n            <span class=\"second-part-container-text\">Looking to</span>\n            <span class=\"second-part-container-number\">{{propertyFor}}</span>\n          </div>\n\n            <div class=\"main-container-area\">\n                <!--Card One-->\n                <div class=\"mat-cards-container\">\n\n                   <div class=\"profile-heading-two\">\n                    Seller Details\n                   </div>\n       \n                   <div class=\"second-part-container-two-sides-container\">\n\n                    <div class=\"right-side-second-part-container\">\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Desired Price</span>\n                        <span class=\"second-part-container-number\">{{DesiredPrice}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Postcode</span>\n                        <span class=\"second-part-container-number\">{{Postcode}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">No of Rooms</span>\n                        <span class=\"second-part-container-number\">{{Maxrooms}}</span>\n                      </div>\n\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Email</span>\n                        <span class=\"second-part-container-number\">{{selleremail}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Phone Number</span>\n                        <span class=\"second-part-container-number\">{{sellerPhone}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Address</span>\n                        <span class=\"second-part-container-number\">{{selleraddress}}</span>\n                      </div>\n\n                    </div>\n                  </div>\n       \n                </div>\n       \n                <div class=\"mat-cards-container\">\n                   <div class=\"profile-heading-two\">\n                       Property Details\n                   </div>\n       \n                   <div class=\"second-part-container-two-sides-container\">\n\n                    <div class=\"right-side-second-part-container\">\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Price Range</span>\n                        <span class=\"second-part-container-number\">{{BuyerMinamount}}-{{BuyerMaxamount}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Postcode</span>\n                        <span class=\"second-part-container-number\">{{Buyerpostcode}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">No of Rooms</span>\n                        <span class=\"second-part-container-number\">{{BuyerRoomsmin}}-{{BuyerRoomsmax}}</span>\n                      </div>\n\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Email</span>\n                        <span class=\"second-part-container-number\">{{buyeremail}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Phone Number</span>\n                        <span class=\"second-part-container-number\">{{buyerPhone}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Address</span>\n                        <span class=\"second-part-container-number\">{{buyeraddress}}</span>\n                      </div>\n\n                    </div>\n                  </div>\n               </div>\n       \n            \n       \n       \n               </div>\n\n            \n       \n\n               <div class=\"update-button\" (click)=\"backClicked()\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Back</button>\n            </div>\n\n        </mat-card>\n\n    </div>\n\n\n\n\n\n\n\n    </div>\n\n\n\n\n\n\n    </div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.html":
+/*!*********************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.html ***!
+  \*********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#8592;</div>\n                <div class=\"right-text-left-container\">Back to Users</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n    <!--Profile Info-->\n\n    <div class=\"profile-info-card\" *ngFor=\"let BuyerUserDetail of BuyerUserDetail\">\n\n        <div class=\"mat-card-top-area\"> {{BuyerUserDetail.PropertyType}} at {{BuyerUserDetail.Lookingpostcode}}</div>\n        <div class=\"main-mat-card-container\">\n        <mat-card class=\"mat-card-edit\">\n\n            <div class=\"mat-wrapper-card\">\n\n                <div class=\"top-card-area\">\n\n                <div  class=\"right-side-area\">\n                    <div class=\"sub-heading-user-type\"> </div>\n                    <div class=\"profile-heading\">\n                        User Type\n                    </div>\n                    <div class=\"sub-heading-user-type\">\n                        Seeker\n                    </div>\n\n                    <div class=\"profile-heading\">\n                        User Address\n                    </div>\n\n                    <div class=\"field-one\">\n                    <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                        <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Postcode</span></mat-label>\n                        <input type=\"text\" aria-label=\"Post Code\" matInput name=\"Currentpostcode\"  [(ngModel)]=\"listingBuyer.Currentpostcode\" #postcodes>\n                      </mat-form-field>\n                    </div>\n\n                </div >\n\n                 <div  class=\"middle-side-area\">\n               \n                    <div class=\"sub-heading-user-type\">\n                      \n                    </div>\n\n                    <div class=\"sub-heading-user-type\">\n                      \n                    </div>\n                      <mat-form-field class=\"full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">StreetName</mat-label>\n                        <input matInput  name=\"CurrentAddress\"  [(ngModel)]=\"listingBuyer.CurrentAddress\">\n                      </mat-form-field>\n                      <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                        <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Town/City</span></mat-label>\n                        <input type=\"text\"  matInput name=\"CurrentTown\"  [(ngModel)]=\"listingBuyer.CurrentTown\" #postcodes>\n                      </mat-form-field>\n                 </div >\n\n\n\n                 <div  class=\"middle-side-area\">\n        \n\n                    <div class=\"sub-heading-user-type\">\n                      \n                    </div>\n\n                    <div class=\"sub-heading-user-type\">\n                      \n                    </div>\n\n\n                      <mat-form-field class=\"full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">County</mat-label>\n                        <input type=\"text\" name=\"Currentstate\"  [(ngModel)]=\"listingBuyer.Currentstate\" matInput>\n                      </mat-form-field>\n\n                      <mat-form-field class=\"full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">Country</mat-label>\n                        <input type=\"text\" name=\"Currentcountry\"  [(ngModel)]=\"listingBuyer.Currentcountry\" matInput>\n                      </mat-form-field>\n                 </div >\n\n                </div>\n\n            </div>\n\n            <div class=\"main-container-area\">\n                <!--Card One-->\n                <div class=\"mat-cards-container\">\n\n                    <div class=\"profile-heading\">\n                        Looking to\n                    </div>\n\n                    <div class=\"radio-button\">\n\n                        <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\"\n                            (change)=\"radioChange($event)\"  [(ngModel)]=\"listingBuyer.PropertyFor\">\n                            <mat-radio-button value=\"buy\">Buy</mat-radio-button>\n                            <mat-radio-button value=\"rent\">Rent</mat-radio-button>\n                        </mat-radio-group>\n                    </div>\n\n                   <div class=\"profile-heading-two\">\n                       Property Address\n                   </div>\n       \n                   <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Postcode</span></mat-label>\n                       <input type=\"text\"  matInput name=\"Lookingpostcode\"  [(ngModel)]=\"listingBuyer.Lookingpostcode\" #postcodes>\n                     </mat-form-field>\n       \n       \n                     <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Streetname</span></mat-label>\n                       <input type=\"text\"  matInput name=\"LookingStreetname\"  [(ngModel)]=\"listingBuyer.LookingStreetname\" #postcodes>\n                     </mat-form-field>\n       \n                     <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Town/City</span></mat-label>\n                       <input type=\"text\"  matInput name=\"LookingTown\"  [(ngModel)]=\"listingBuyer.LookingTown\" #postcodes>\n                     </mat-form-field>\n       \n                     <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">County</span></mat-label>\n                       <input type=\"text\"  matInput name=\"Lookingstate\"  [(ngModel)]=\"listingBuyer.Lookingstate\" #postcodes>\n                     </mat-form-field>\n                     <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Country</span></mat-label>\n                       <input type=\"text\"  matInput name=\"Country\"  [(ngModel)]=\"listingBuyer.Country\" #postcodes>\n                     </mat-form-field>\n       \n       \n                </div>\n       \n                <div class=\"mat-cards-container\">\n                   <div class=\"profile-heading-two\">\n                       Property Details\n                   </div>\n       \n                   <div class=\"card-margin background-new-form\">\n       \n       \n              \n                       <div class=\"extra-field-two\"  *ngIf=\"rentOption\">\n                        <mat-form-field class=\"full-width\"  appearance=\"outline\">\n                         <mat-label class=\"fixed-Label\"><span id=\"chain\">Your Renting Position</span></mat-label>\n             \n                         <mat-select name=\"ChainStatus\"  [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n                           class=\"full-width\"   >\n                           <mat-option value=\"Ready to move in now\" (click)=\"otherOption()\">Ready to move in now</mat-option>\n                           <mat-option value=\"Looking to move in short-term\" (click)=\"otherOption()\">Looking to move in short-term</mat-option>\n                         </mat-select>\n                       </mat-form-field>\n                       </div>\n             \n             \n                       <div class=\"extra-field-two\"  *ngIf=\"buyOption\">\n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"chain\">Your Buying Position</span></mat-label>\n             \n                           <mat-select name=\"ChainStatus\"  [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n                             class=\"full-width\"  >\n                             <mat-option value=\"First Time Buyer\" (click)=\"otherOption()\">First Time Buyer</mat-option>\n                             <mat-option value=\"In Chain\" (click)=\"otherOption()\">In Chain</mat-option>\n                             <mat-option value=\"Cash Buyer\" (click)=\"otherOption()\">Cash Buyer</mat-option>\n                             <mat-option value=\"Other (Please specify)\" (click)=\"otherChain()\">Other (Please specify)</mat-option>\n                           </mat-select>\n                         </mat-form-field> \n                       </div>\n             \n             \n              <div  *ngIf=\"!rentOption\" >\n                    \n                         <div class=\"extra-field-two\" >\n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"finanacial\">Financial Position</span></mat-label>\n             \n                           <mat-select name=\"FinancialPosition\"  [(ngModel)]=\"listingBuyer.FinancialPosition\"\n                     value=\"FinancialPosition\" class=\"full-width\" >\n                             <mat-option value=\"any\" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">\n                             </mat-option>\n                             <mat-option value=\"Mortgate to be arranged\" name=\"Mortgate to be arranged\"\n                               (click)=\"removefinancialPostion()\">Mortgate to be arranged</mat-option>\n                             <mat-option value=\"Mortgage arranged \" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">\n                               Mortgage arranged </mat-option>\n                             <mat-option value=\"Cash Buyer\" name=\"Cash Buyer\" (click)=\"removefinancialPostion()\">Cash Buyer\n                             </mat-option>\n                             <mat-option value=\"Please specify\" name=\"Please specify\" (click)=\"financialPostion()\">Other</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                         </div>\n                       </div> \n             \n             \n             \n                      <mat-form-field class=\"full-width\" *ngIf=\"finanacial\">\n                         <input matInput placeholder=\"other\" name=\"other\" class=\"mat-mail-input\">\n                       </mat-form-field> \n             \n                 \n             \n                       <div >\n             \n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"Property-type\">Property Type</span></mat-label>\n                  \n                           <mat-select name=\"Propertytype\"  [(ngModel)]=\"listingBuyer.PropertyType\" value=\"Propertytype\"\n                             class=\"full-width\"  >\n                             <mat-option value=\"Flat\">Flat</mat-option>\n                             <mat-option value=\"Studio\">Studio</mat-option>\n                             <mat-option value=\"Terracedhouse\">Terraced house</mat-option>\n                             <mat-option class=\"margin\" value=\"Maisonette\">Maisonette</mat-option>\n                             <mat-option value=\"Semi-detached\">Semi-detached house</mat-option>\n                             <mat-option value=\"Bungalow\">Bungalow</mat-option>\n                             <mat-option value=\"Detachedhouse\">Detached house</mat-option>\n                             <mat-option value=\"Cottage\">Cottage</mat-option>\n                             <mat-option value=\"Townhouse\">Town house</mat-option>\n                             <mat-option value=\"Countryhouse\">Country house</mat-option>\n                             <mat-option value=\"Barnconversion\">Barn conversion</mat-option>\n                             <mat-option value=\"Farm\">Farm</mat-option>\n                             <mat-option value=\"Houseboat\">Houseboat</mat-option>\n                             <mat-option value=\"Lodge\">Lodge</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                       </div> \n             \n             \n                       <!--Min Max Amount-->\n                       \n                       <!-- <label class=\"new-heading-nestimate\">Number of Rooms</label> -->\n                   \n                       <div class=\"price-selection\">\n                        <label class=\"new-heading-nestimate\">Number of Rooms</label>\n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\">Min</mat-label>     \n                           <mat-select [(value)]=\"Roommin\" name=\"Roommin\"  [(ngModel)]=\"listingBuyer.Roommin\"  #Roommins>\n                             <mat-option value=\"Studio\">Studio</mat-option>\n                             <mat-option value=\"1\">1</mat-option>\n                             <mat-option value=\"2\">2</mat-option>\n                             <mat-option value=\"3\">3</mat-option>\n                             <mat-option value=\"4\">4</mat-option>\n                             <mat-option value=\"5\">5</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                     \n                     \n                         <mat-form-field class=\"full-width\"  appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"roomMax\">Max*</span></mat-label>\n                           <mat-select [(value)]=\"Roomsmax\" name=\"Roomsmax\"  [(ngModel)]=\"listingBuyer.Roomsmax\"  >\n                             <mat-option value=\"Studio\">Studio</mat-option>\n                             <mat-option value=\"1\">1</mat-option>\n                             <mat-option value=\"2\">2</mat-option>\n                             <mat-option value=\"3\">3</mat-option>\n                             <mat-option value=\"4\">4</mat-option>\n                             <mat-option value=\"5\">5</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                         \n                       </div> \n                       <!--Max-No of Rooms-->\n             <div class=\"amounts\" *ngIf=\"amounts\">\n                       <!--New Values-->\n                       <!--Min Max Amount-->\n                    \n                       <div class=\"price-selection\" *ngIf=\"rentOption\">\n                        <label class=\"new-heading-nestimate\" *ngIf=\"rentOption\">Rent Range</label>\n                         <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                           <mat-label class=\"fixed-Label\"><span id=\"MinAmount\">Min</span></mat-label>\n             \n                           <mat-select [(value)]=\"min\" name=\"MinAmount\"  [(ngModel)]=\"listingBuyer.MinAmount\"  >\n                             <mat-option value=\"100\">100 pcm</mat-option>\n                             <mat-option value=\"200\">200 pcm</mat-option>\n                             <mat-option value=\"300\">300 pcm</mat-option>\n                             <mat-option value=\"400\">400 pcm</mat-option>\n                             <mat-option value=\"500\">500 pcm</mat-option>\n                             <mat-option value=\"600\">600 pcm</mat-option>\n                             <mat-option value=\"700\">700 pcm</mat-option>\n                             <mat-option value=\"800\">800 pcm</mat-option>\n                             <mat-option value=\"900\">900 pcm</mat-option>\n                             <mat-option value=\"1000\">1000 pcm</mat-option>\n                             <mat-option value=\"1250\">1250 pcm</mat-option>\n                             <mat-option value=\"1500\">1500 pcm</mat-option>\n                             <mat-option value=\"1750\">1750 pcm</mat-option>\n                             <mat-option value=\"2000\">2000 pcm</mat-option>\n                             <mat-option value=\"2250\">2250 pcm</mat-option>\n                             <mat-option value=\"2500\">2500 pcm</mat-option>\n                             <mat-option value=\"2750\">2750 pcm</mat-option>\n                             <mat-option value=\"3000\">3000 pcm</mat-option>\n                             <mat-option value=\"3250\">3250 pcm</mat-option>\n                             <mat-option value=\"3500\">3500 pcm</mat-option>\n                             <mat-option value=\"3750\">3750 pcm</mat-option>\n                             <mat-option value=\"4000\">4000 pcm</mat-option>\n                             <mat-option value=\"4250\">4250 pcm</mat-option>\n                             <mat-option value=\"4500\">4500 pcm</mat-option>\n                             <mat-option value=\"5000\">5000 pcm</mat-option>\n                             <mat-option value=\"5500\">5500 pcm</mat-option>\n                             <mat-option value=\"6000\">6000 pcm</mat-option>\n                             <mat-option value=\"6500\">6500 pcm</mat-option>\n                             <mat-option value=\"7000\">7000 pcm</mat-option>\n                             <mat-option value=\"7500\">7500 pcm</mat-option>\n                             <mat-option value=\"8000\">8500 pcm</mat-option>\n                             <mat-option value=\"9000\">9000 pcm</mat-option>\n                             <mat-option value=\"9500\">9500 pcm</mat-option>\n                             <mat-option value=\"10000\">10000 pcm</mat-option>\n                             <mat-option value=\"12500\">125000 pcm</mat-option>\n                             <mat-option value=\"15000\">15000 pcm</mat-option>\n                             <mat-option value=\"17500\">17500 pcm</mat-option>\n                             <mat-option value=\"20000\">20000 pcm</mat-option>\n                             <mat-option value=\"25000\">25000 pcm</mat-option>\n             \n             \n             \n                           </mat-select>\n                         </mat-form-field>\n                         \n                    \n                          <mat-form-field class=\"full-width\"   appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"MaxAmount\">Max</span></mat-label>\n             \n                           <mat-select [(value)]=\"max\" name=\"MaxAmount\"  [(ngModel)]=\"listingBuyer.MaxAmount\"  >\n                             <mat-option value=\"100\">100 pcm</mat-option>\n                             <mat-option value=\"200\">200 pcm</mat-option>\n                             <mat-option value=\"300\">300 pcm</mat-option>\n                             <mat-option value=\"400\">400 pcm</mat-option>\n                             <mat-option value=\"500\">500 pcm</mat-option>\n                             <mat-option value=\"600\">600 pcm</mat-option>\n                             <mat-option value=\"700\">700 pcm</mat-option>\n                             <mat-option value=\"800\">800 pcm</mat-option>\n                             <mat-option value=\"900\">900 pcm</mat-option>\n                             <mat-option value=\"1000\">1000 pcm</mat-option>\n                             <mat-option value=\"1250\">1250 pcm</mat-option>\n                             <mat-option value=\"1500\">1500 pcm</mat-option>\n                             <mat-option value=\"1750\">1750 pcm</mat-option>\n                             <mat-option value=\"2000\">2000 pcm</mat-option>\n                             <mat-option value=\"2250\">2250 pcm</mat-option>\n                             <mat-option value=\"2500\">2500 pcm</mat-option>\n                             <mat-option value=\"2750\">2750 pcm</mat-option>\n                             <mat-option value=\"3000\">3000 pcm</mat-option>\n                             <mat-option value=\"3250\">3250 pcm</mat-option>\n                             <mat-option value=\"3500\">3500 pcm</mat-option>\n                             <mat-option value=\"3750\">3750 pcm</mat-option>\n                             <mat-option value=\"4000\">4000 pcm</mat-option>\n                             <mat-option value=\"4250\">4250 pcm</mat-option>\n                             <mat-option value=\"4500\">4500 pcm</mat-option>\n                             <mat-option value=\"5000\">5000 pcm</mat-option>\n                             <mat-option value=\"5500\">5500 pcm</mat-option>\n                             <mat-option value=\"6000\">6000 pcm</mat-option>\n                             <mat-option value=\"6500\">6500 pcm</mat-option>\n                             <mat-option value=\"7000\">7000 pcm</mat-option>\n                             <mat-option value=\"7500\">7500 pcm</mat-option>\n                             <mat-option value=\"8000\">8500 pcm</mat-option>\n                             <mat-option value=\"9000\">9000 pcm</mat-option>\n                             <mat-option value=\"9500\">9500 pcm</mat-option>\n                             <mat-option value=\"10000\">10000 pcm</mat-option>\n                             <mat-option value=\"12500\">125000 pcm</mat-option>\n                             <mat-option value=\"15000\">15000 pcm</mat-option>\n                             <mat-option value=\"17500\">17500 pcm</mat-option>\n                             <mat-option value=\"20000\">20000 pcm</mat-option>\n                             <mat-option value=\"25000\">25000 pcm</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                       \n                       </div> \n                       <!--New Values Ended-->\n             \n             <!--Old Value-->\n                       <!--Min Max Amount-->\n                  <div class=\"price-selection\" *ngIf=\"buyOption\">\n                    <label class=\"new-heading-nestimate\" *ngIf=\"buyOption\">Price Range</label>\n\n                         <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                           <mat-label class=\"fixed-Label\"><span id=\"MinAmount\">Min</span></mat-label>\n             \n                           <mat-select [(value)]=\"min\" name=\"MinAmount\"  [(ngModel)]=\"listingBuyer.MinAmount\"  >\n                             <mat-option value=\"50,000\">50,000</mat-option>\n                             <mat-option value=\"60,000\">60,000</mat-option>\n                             <mat-option value=\"70,000\">70,000</mat-option>\n                             <mat-option value=\"80,000\">80,000</mat-option>\n                             <mat-option value=\"90,000\">90,000</mat-option>\n                             <mat-option value=\"100,000\">100,000</mat-option>\n                             <mat-option value=\"110,000\">110,000</mat-option>\n                             <mat-option value=\"120,000\">120,000</mat-option>\n                             <mat-option value=\"125,000\">125,000</mat-option>\n                             <mat-option value=\"130,000\">130,000</mat-option>\n                             <mat-option value=\"140,000\">140,000</mat-option>\n                             <mat-option value=\"150,000\">150,000</mat-option>\n                             <mat-option value=\"160,000\">160,000</mat-option>\n                             <mat-option value=\"170,000\">170,000</mat-option>\n                             <mat-option value=\"175,000\">175,000</mat-option>\n                             <mat-option value=\"180,000\">180,000</mat-option>\n                             <mat-option value=\"190,000\">190,000</mat-option>\n                             <mat-option value=\"200,000\">200,000</mat-option>\n                             <mat-option value=\"210,000\">210,000</mat-option>\n                             <mat-option value=\"220,000\">220,000</mat-option>\n                             <mat-option value=\"230,000\">230,000</mat-option>\n                             <mat-option value=\"240,000\">240,000</mat-option>\n                             <mat-option value=\"250,000\">250,000</mat-option>\n                             <mat-option value=\"260,000\">260,000</mat-option>\n                             <mat-option value=\"270,000\">270,000</mat-option>\n                             <mat-option value=\"280,000\">280,000</mat-option>\n                             <mat-option value=\"290,000\">290,000</mat-option>\n                             <mat-option value=\"300,000\">300,000</mat-option>\n                             <mat-option value=\"325,000\">325,000</mat-option>\n                             <mat-option value=\"350,000\">350,000</mat-option>\n                             <mat-option value=\"375000\">375,000</mat-option>\n                             <mat-option value=\"400,000\">400,000</mat-option>\n                             <mat-option value=\"425,000\">425,000</mat-option>\n                             <mat-option value=\"450,000\">450,000</mat-option>\n                             <mat-option value=\"475,000\">475,000</mat-option>\n                             <mat-option value=\"500,000\">500,000</mat-option>\n                             <mat-option value=\"525,000\">525,000</mat-option>\n                             <mat-option value=\"550,000\">550,000</mat-option>\n                             <mat-option value=\"575,000\">575,000</mat-option>\n                             <mat-option value=\"600,000\">600,000</mat-option>\n                             <mat-option value=\"625,000\">625,000</mat-option>\n                             <mat-option value=\"650,000\">650,000</mat-option>\n                             <mat-option value=\"675,000\">675,000</mat-option>\n                             <mat-option value=\"700,000\">700,000</mat-option>\n                             <mat-option value=\"725,000\">725,000</mat-option>\n                             <mat-option value=\"750,000\">750,000</mat-option>\n                             <mat-option value=\"775,000\">775,000</mat-option>\n                             <mat-option value=\"800,000\">800,000</mat-option>\n                             <mat-option value=\"825,000\">825,000</mat-option>\n                             <mat-option value=\"850,000\">850,000</mat-option>\n                             <mat-option value=\"875,000\">875,000</mat-option>\n                             <mat-option value=\"900,000\">900,000</mat-option>\n                             <mat-option value=\"925,000\">925,000</mat-option>\n                             <mat-option value=\"950,000\">950,000</mat-option>\n                             <mat-option value=\"975,000\">975,000</mat-option>\n                             <mat-option value=\"1000,000\">1000,000</mat-option>\n                             <mat-option value=\"1250,000\">1250,000</mat-option>\n                             <mat-option value=\"1500,000\">1500,000</mat-option>\n                             <mat-option value=\"1750,000\">1750,000</mat-option>\n                             <mat-option value=\"2000,000\">2000,000</mat-option>\n                             <mat-option value=\"2250,000\">2250,000</mat-option>\n                             <mat-option value=\"2500,000\">2500,000</mat-option>\n                             <mat-option value=\"3000,000\">3000,000</mat-option>\n                             <mat-option value=\"4000,000\">4000,000</mat-option>\n                             <mat-option value=\"5000,000\">5000,000</mat-option>\n                             <mat-option value=\"6000,000\">6000,000</mat-option>\n                             <mat-option value=\"7000,000\">7000,000</mat-option>\n                             <mat-option value=\"8000,000\">8000,000</mat-option>\n                             <mat-option value=\"10000,000\">10000,000</mat-option>\n                             <mat-option value=\"15000,000\">15000,000</mat-option>\n                             <mat-option value=\"20000,000\">20000,000</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                       \n             \n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"MaxAmount\">Max</span></mat-label>\n             \n                           <mat-select [(value)]=\"max\" name=\"MaxAmount\"  [(ngModel)]=\"listingBuyer.MaxAmount\"  MaxAmounts>\n                             <mat-option value=\"50,000\">50,000</mat-option>\n                             <mat-option value=\"60,000\">60,000</mat-option>\n                             <mat-option value=\"70,000\">70,000</mat-option>\n                             <mat-option value=\"80,000\">80,000</mat-option>\n                             <mat-option value=\"90,000\">90,000</mat-option>\n                             <mat-option value=\"100,000\">100,000</mat-option>\n                             <mat-option value=\"110,000\">110,000</mat-option>\n                             <mat-option value=\"120,000\">120,000</mat-option>\n                             <mat-option value=\"125,000\">125,000</mat-option>\n                             <mat-option value=\"130,000\">130,000</mat-option>\n                             <mat-option value=\"140,000\">140,000</mat-option>\n                             <mat-option value=\"150,000\">150,000</mat-option>\n                             <mat-option value=\"160,000\">160,000</mat-option>\n                             <mat-option value=\"170,000\">170,000</mat-option>\n                             <mat-option value=\"175,000\">175,000</mat-option>\n                             <mat-option value=\"180,000\">180,000</mat-option>\n                             <mat-option value=\"190,000\">190,000</mat-option>\n                             <mat-option value=\"200,000\">200,000</mat-option>\n                             <mat-option value=\"210,000\">210,000</mat-option>\n                             <mat-option value=\"220,000\">220,000</mat-option>\n                             <mat-option value=\"230,000\">230,000</mat-option>\n                             <mat-option value=\"240,000\">240,000</mat-option>\n                             <mat-option value=\"250,000\">250,000</mat-option>\n                             <mat-option value=\"260,000\">260,000</mat-option>\n                             <mat-option value=\"270,000\">270,000</mat-option>\n                             <mat-option value=\"280,000\">280,000</mat-option>\n                             <mat-option value=\"290,000\">290,000</mat-option>\n                             <mat-option value=\"300,000\">300,000</mat-option>\n                             <mat-option value=\"325,000\">325,000</mat-option>\n                             <mat-option value=\"350,000\">350,000</mat-option>\n                             <mat-option value=\"375000\">375,000</mat-option>\n                             <mat-option value=\"400,000\">400,000</mat-option>\n                             <mat-option value=\"425,000\">425,000</mat-option>\n                             <mat-option value=\"450,000\">450,000</mat-option>\n                             <mat-option value=\"475,000\">475,000</mat-option>\n                             <mat-option value=\"500,000\">500,000</mat-option>\n                             <mat-option value=\"525,000\">525,000</mat-option>\n                             <mat-option value=\"550,000\">550,000</mat-option>\n                             <mat-option value=\"575,000\">575,000</mat-option>\n                             <mat-option value=\"600,000\">600,000</mat-option>\n                             <mat-option value=\"625,000\">625,000</mat-option>\n                             <mat-option value=\"650,000\">650,000</mat-option>\n                             <mat-option value=\"675,000\">675,000</mat-option>\n                             <mat-option value=\"700,000\">700,000</mat-option>\n                             <mat-option value=\"725,000\">725,000</mat-option>\n                             <mat-option value=\"750,000\">750,000</mat-option>\n                             <mat-option value=\"775,000\">775,000</mat-option>\n                             <mat-option value=\"800,000\">800,000</mat-option>\n                             <mat-option value=\"825,000\">825,000</mat-option>\n                             <mat-option value=\"850,000\">850,000</mat-option>\n                             <mat-option value=\"875,000\">875,000</mat-option>\n                             <mat-option value=\"900,000\">900,000</mat-option>\n                             <mat-option value=\"925,000\">925,000</mat-option>\n                             <mat-option value=\"950,000\">950,000</mat-option>\n                             <mat-option value=\"975,000\">975,000</mat-option>\n                             <mat-option value=\"1000,000\">1000,000</mat-option>\n                             <mat-option value=\"1250,000\">1250,000</mat-option>\n                             <mat-option value=\"1500,000\">1500,000</mat-option>\n                             <mat-option value=\"1750,000\">1750,000</mat-option>\n                             <mat-option value=\"2000,000\">2000,000</mat-option>\n                             <mat-option value=\"2250,000\">2250,000</mat-option>\n                             <mat-option value=\"2500,000\">2500,000</mat-option>\n                             <mat-option value=\"3000,000\">3000,000</mat-option>\n                             <mat-option value=\"4000,000\">4000,000</mat-option>\n                             <mat-option value=\"5000,000\">5000,000</mat-option>\n                             <mat-option value=\"6000,000\">6000,000</mat-option>\n                             <mat-option value=\"7000,000\">7000,000</mat-option>\n                             <mat-option value=\"8000,000\">8000,000</mat-option>\n                             <mat-option value=\"10000,000\">10000,000</mat-option>\n                             <mat-option value=\"15000,000\">15000,000</mat-option>\n                             <mat-option value=\"20000,000\">20000,000</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                   \n                       </div> \n             <!--Old Value End-->\n             </div>\n             \n             \n             \n             \n             \n             \n             \n             \n             \n             \n             \n             \n                       <!--Offer validity Group-->\n             \n                  <mat-radio-group aria-label=\"Select an option\" name=\"Validity\"  [(ngModel)]=\"listingBuyer.Validity\"\n                         value=\"Validity\" >\n                         <label class=\"new-heading-nestimate \"><span id=\"val\">How long should your Nestimate be active?</span></label><br>\n                         <div class=\"radio-button-align\"   >\n                           <mat-radio-button value=\"1\" class=\"mr-2\">1 Month</mat-radio-button>\n                           <mat-radio-button value=\"3\">3 Months</mat-radio-button>\n                           <mat-radio-button value=\"6\">6 Months</mat-radio-button>\n                           <mat-radio-button value=\"Indefinite\">Indefinite\n                           </mat-radio-button>\n                         </div>\n                       </mat-radio-group>\n                           <!--  <p class=\"Label-notes new-heading-nestimate\">*Note:Your Nestimate will remain active for the selected time\n                         period above</p> -->\n                       <!--Offer validity Group End-->\n             \n             \n             \n             \n             \n             \n             \n                       </div>\n               </div>\n       \n               <div class=\"mat-cards-container\">\n                   <div class=\"profile-heading-two\">\n                       Optional Details\n                   </div>\n       \n                   <label class=\"new-heading-nestimate\">No of Bathrooms</label>\n                   <div class=\"price-selection\" >\n                     <mat-form-field class=\"full-width\" id=\"minBathroom\" appearance=\"outline\">\n                       <mat-label class=\"fixed-Label\">Min</mat-label>\n                       <mat-select [(value)]=\"Minbathroom\" name=\"Minbathroom\"  [(ngModel)]=\"listingBuyer.Minbathroom\">\n                         <mat-option value=\"any\">Any</mat-option>\n                         <mat-option value=\"1\">1</mat-option>\n                         <mat-option value=\"2\">2</mat-option>\n                         <mat-option value=\"3\">3 or more</mat-option>\n                       </mat-select>\n                     </mat-form-field>\n                \n                     <mat-form-field class=\"full-width\" id=\"maxBathroom\" appearance=\"outline\">\n                       <mat-label class=\"fixed-Label\">Max</mat-label>\n                       <mat-select [(value)]=\"Maxbathroom\" name=\"Maxbathroom\"  [(ngModel)]=\"listingBuyer.Maxbathroom\">\n                         <mat-option value=\"any\">Any</mat-option>\n                         <mat-option value=\"1\">1</mat-option>\n                         <mat-option value=\"2\">2</mat-option>\n                         <mat-option value=\"3\">3 or more</mat-option>\n                       </mat-select>\n                     </mat-form-field>\n                  \n                   </div>\n         \n         \n         \n         \n                   <!--No of reception-->\n                   <label class=\"new-heading-nestimate\">No of Reception Rooms</label>\n                   <div class=\"price-selection\">\n                     <mat-form-field class=\"full-width\" id=\"Minreception\" appearance=\"outline\">\n                       <mat-label class=\"fixed-Label\">Min</mat-label>\n         \n                       <mat-select [(value)]=\"Minreception\" name=\"Minreception\"  [(ngModel)]=\"listingBuyer.Minreception\">\n                         <mat-option value=\"any\">Any</mat-option>\n                         <mat-option value=\"1\">1</mat-option>\n                         <mat-option value=\"2\">2</mat-option>\n                         <mat-option value=\"3\">3 or more</mat-option>\n                       </mat-select>\n                     </mat-form-field>\n                     <mat-form-field class=\"full-width\" id=\"MaxReception\" appearance=\"outline\">\n                       <mat-label class=\"fixed-Label\">Max</mat-label>\n            \n                       <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\"  [(ngModel)]=\"listingBuyer.Maxreception\">\n                         <mat-option value=\"any\">Any</mat-option>\n                         <mat-option value=\"1\">1</mat-option>\n                         <mat-option value=\"2\">2</mat-option>\n                         <mat-option value=\"3\">3 or more</mat-option>\n                       </mat-select>\n                     </mat-form-field>\n                   </div>\n         \n              \n                   <div class=\"extra-field-two\" id=\"condition\">\n                   <mat-form-field class=\"full-width\" appearance=\"outline\">\n                     <mat-label class=\"fixed-Label\">Property Condition</mat-label>\n         \n                     <mat-select [(value)]=\"Conditions\" name=\"Conditions\"  [(ngModel)]=\"listingBuyer.Conditions\">\n                       <mat-option value=\"any\">Any</mat-option>\n                       <mat-option value=\"New Build\">New Build</mat-option>\n                       <mat-option value=\"Needs Modernisation\">Needs Modernisation</mat-option>\n                     </mat-select>\n                   </mat-form-field>\n                   </div>\n         \n                   <div class=\"extra-field-two\" id=\"ownership\" *ngIf=\"!rentOption\">\n                   <mat-form-field class=\"full-width\" appearance=\"outline\">\n                     <mat-label class=\"fixed-Label\">Ownership</mat-label>\n         \n                     <mat-select name=\"Ownership\"  [(ngModel)]=\"listingBuyer.Ownership\" value=\"Ownership\"\n                       class=\"full-width\">\n                       <mat-option value=\"any\">Any</mat-option>\n                       <mat-option value=\"Leasehold\">Leasehold</mat-option>\n                       <mat-option value=\"Freehold\">Freehold</mat-option>\n                       <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n                     </mat-select>\n                   </mat-form-field>\n                   </div>\n                   <div class=\"extra-field-two\" id=\"features\">\n                   <mat-form-field class=\"full-width\" appearance=\"outline\">\n                     <mat-label class=\"fixed-Label\">Property Features</mat-label>\n                     <mat-select [formControl]=\"Condition\" multiple  [(ngModel)]=\"listingBuyer.features\" #sl\n                       class=\"mat-select-edit mat-check\">\n                       <div class=\"select-constion\">\n                         <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n                       </div>\n                       <mat-option *ngFor=\"let Conditions of ConditionsList\" [value]=\"Conditions\" class=\"mat-check\">\n                         {{Conditions}}</mat-option>\n                     </mat-select>\n                   </mat-form-field>\n               \n         \n         \n               </div>\n            </div>\n       \n       \n       \n               </div>\n       \n\n               <div class=\"update-button\" (click)=\"updateUser()\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n            </div>\n\n        </mat-card>\n\n    </div>\n\n\n\n\n\n\n\n    </div>\n\n\n\n   \n\n\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.html":
+/*!***********************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.html ***!
+  \***********************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating User Details...</p>\n  </div>\n\n</div>\n<div class=\"user-agent-tab-main-container\">\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n\n      <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n        <div class=\"aarow-left-container\"> &#8592;</div>\n        <div class=\"right-text-left-container\">Back to Users</div>\n      </div>\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n\n  <div class=\"profile-info-card\">\n\n    <div class=\"mat-card-top-area\"> {{listingSeller.PropertyType}} at {{listingSeller.Lookingpostcode}}</div>\n    <div class=\"main-mat-card-container\">\n      <mat-card class=\"mat-card-edit\">\n\n        <div class=\"mat-wrapper-card\">\n\n          <div class=\"top-card-area\">\n\n            <div class=\"right-side-area\">\n              <div class=\"sub-heading-user-type\"> </div>\n              <div class=\"profile-heading\">\n                User Type\n              </div>\n              <div class=\"sub-heading-user-type\">\n                Owner\n              </div>\n\n              <div class=\"profile-heading\">\n                User Address\n              </div>\n\n              <div class=\"field-one\">\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Postcode</span></mat-label>\n                  <input type=\"text\" aria-label=\"Post Code\" matInput name=\"Currentpostcode\"\n                    [(ngModel)]=\"listingSeller.Currentpostcode\" #postcodes>\n                </mat-form-field>\n              </div>\n\n            </div>\n\n            <div class=\"middle-side-area\">\n\n              <div class=\"sub-heading-user-type\">\n\n              </div>\n\n              <div class=\"sub-heading-user-type\">\n\n              </div>\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">Address</mat-label>\n                <input matInput name=\"CurrentAddress\" [(ngModel)]=\"listingSeller.CurrentAddress\">\n              </mat-form-field>\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Town/City</span></mat-label>\n                <input type=\"text\" matInput name=\"CurrentTown\" [(ngModel)]=\"listingSeller.CurrentTown\" #postcodes>\n              </mat-form-field>\n            </div>\n\n\n\n            <div class=\"middle-side-area\">\n\n\n              <div class=\"sub-heading-user-type\">\n\n              </div>\n\n              <div class=\"sub-heading-user-type\">\n\n              </div>\n\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">County</mat-label>\n                <input type=\"text\" name=\"Currentstate\" [(ngModel)]=\"listingSeller.Currentstate\" matInput>\n              </mat-form-field>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">Country</mat-label>\n                <input type=\"text\" name=\"Currentcountry\" [(ngModel)]=\"listingSeller.Currentcountry\" matInput>\n              </mat-form-field>\n            </div>\n\n          </div>\n\n        </div>\n\n        <div class=\"main-container-area\">\n          <!--Card One-->\n          <div class=\"mat-cards-container\">\n\n            <div class=\"profile-heading\">\n              Looking to\n            </div>\n\n            <div class=\"radio-button\">\n              <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\"\n                [(ngModel)]=\"listingSeller.PropertyFor\" id=\"propfor\" (change)=\"radioChange($event)\">\n                <mat-radio-button value=\"buy\">Sell</mat-radio-button>\n                <mat-radio-button value=\"rent\">Let</mat-radio-button>\n              </mat-radio-group>\n\n            </div>\n\n            <div class=\"profile-heading-two\">\n              Property Address\n            </div>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Postcode</span></mat-label>\n              <input type=\"text\" matInput name=\"Lookingpostcode\" [(ngModel)]=\"listingSeller.Lookingpostcode\" #postcodes>\n            </mat-form-field>\n\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Address</span></mat-label>\n              <input type=\"text\" matInput name=\"LookingStreetname\" [(ngModel)]=\"listingSeller.LookingAddress\"\n                #postcodes>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Town/City</span></mat-label>\n              <input type=\"text\" matInput name=\"LookingTown\" [(ngModel)]=\"listingSeller.LookingTown\" #postcodes>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">County</span></mat-label>\n              <input type=\"text\" matInput name=\"Lookingstate\" [(ngModel)]=\"listingSeller.Lookingstate\" #postcodes>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Country</span></mat-label>\n              <input type=\"text\" matInput name=\"Country\" [(ngModel)]=\"listingSeller.Country\" #postcodes>\n            </mat-form-field>\n\n\n          </div>\n\n          <div class=\"mat-cards-container\">\n            <div class=\"profile-heading-two\">\n              Property Details\n            </div>\n\n            <div class=\"card-margin background-new-form\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              <div>\n\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Property-type\">Property Type</span></mat-label>\n\n                  <mat-select name=\"Propertytype\" [(ngModel)]=\"listingSeller.PropertyType\" value=\"Propertytype\"\n                    class=\"full-width\">\n                    <mat-option value=\"Flat\">Flat</mat-option>\n                    <mat-option value=\"Studio\">Studio</mat-option>\n                    <mat-option value=\"Terracedhouse\">Terraced house</mat-option>\n                    <mat-option class=\"margin\" value=\"Maisonette\">Maisonette</mat-option>\n                    <mat-option value=\"Semi-detached\">Semi-detached house</mat-option>\n                    <mat-option value=\"Bungalow\">Bungalow</mat-option>\n                    <mat-option value=\"Detachedhouse\">Detached house</mat-option>\n                    <mat-option value=\"Cottage\">Cottage</mat-option>\n                    <mat-option value=\"Townhouse\">Town house</mat-option>\n                    <mat-option value=\"Countryhouse\">Country house</mat-option>\n                    <mat-option value=\"Barnconversion\">Barn conversion</mat-option>\n                    <mat-option value=\"Farm\">Farm</mat-option>\n                    <mat-option value=\"Houseboat\">Houseboat</mat-option>\n                    <mat-option value=\"Lodge\">Lodge</mat-option>\n                  </mat-select>\n                </mat-form-field>\n              </div>\n\n\n              <!--Min Max Amount-->\n\n              <!-- <label class=\"new-heading-nestimate\">Number of Rooms</label> -->\n\n              <div class=\"price-selection\">\n                <div class=\"extra-field-two\" id=\"bedroom\">\n                  <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\">No of Bedrooms</mat-label>\n                    <mat-select [(value)]=\"Maxrooms\" name=\"Maxrooms\" [(ngModel)]=\"listingSeller.Maxrooms\">\n                      <mat-option value=\"Studio\">Studio</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3</mat-option>\n                      <mat-option value=\"4\">4</mat-option>\n                      <mat-option value=\"5\">5 or More</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </div>\n              </div>\n              <!--Max-No of Rooms-->\n              <div class=\"max-amounts\" *ngIf=\"maxamounts\">\n                <!--Min Max Rooms End-->\n                <div class=\"price-selection\" *ngIf=\"letOption\">\n                  <div class=\"extra-field-two\" id=\"maxamount\">\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\">Desired Rent</mat-label>\n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\"\n                        placeholder=\"Desired Rent\">\n                        <mat-option value=\"100\">100 pcm</mat-option>\n                        <mat-option value=\"200\">200 pcm</mat-option>\n                        <mat-option value=\"300\">300 pcm</mat-option>\n                        <mat-option value=\"400\">400 pcm</mat-option>\n                        <mat-option value=\"500\">500 pcm</mat-option>\n                        <mat-option value=\"600\">600 pcm</mat-option>\n                        <mat-option value=\"700\">700 pcm</mat-option>\n                        <mat-option value=\"800\">800 pcm</mat-option>\n                        <mat-option value=\"900\">900 pcm</mat-option>\n                        <mat-option value=\"100\">1000 pcm</mat-option>\n                        <mat-option value=\"1250\">1250 pcm</mat-option>\n                        <mat-option value=\"1500\">1500 pcm</mat-option>\n                        <mat-option value=\"1750\">1750 pcm</mat-option>\n                        <mat-option value=\"2000\">2000 pcm</mat-option>\n                        <mat-option value=\"2250\">2250 pcm</mat-option>\n                        <mat-option value=\"2500\">2500 pcm</mat-option>\n                        <mat-option value=\"2750\">2750 pcm</mat-option>\n                        <mat-option value=\"3000\">3000 pcm</mat-option>\n                        <mat-option value=\"3250\">3250 pcm</mat-option>\n                        <mat-option value=\"3500\">3500 pcm</mat-option>\n                        <mat-option value=\"3750\">3750 pcm</mat-option>\n                        <mat-option value=\"4000\">4000 pcm</mat-option>\n                        <mat-option value=\"4250\">4250 pcm</mat-option>\n                        <mat-option value=\"4500\">4500 pcm</mat-option>\n                        <mat-option value=\"5000\">5000 pcm</mat-option>\n                        <mat-option value=\"5500\">5500 pcm</mat-option>\n                        <mat-option value=\"6000\">6000 pcm</mat-option>\n                        <mat-option value=\"6500\">6500 pcm</mat-option>\n                        <mat-option value=\"7000\">7000 pcm</mat-option>\n                        <mat-option value=\"7500\">7500 pcm</mat-option>\n                        <mat-option value=\"8000\">8500 pcm</mat-option>\n                        <mat-option value=\"9000\">9000 pcm</mat-option>\n                        <mat-option value=\"9500\">9500 pcm</mat-option>\n                        <mat-option value=\"10000\">10000 pcm</mat-option>\n                        <mat-option value=\"12500\">125000 pcm</mat-option>\n                        <mat-option value=\"15000\">15000 pcm</mat-option>\n                        <mat-option value=\"17500\">17500 pcm</mat-option>\n                        <mat-option value=\"20000\">20000 pcm</mat-option>\n                        <mat-option value=\"25000\">25000 pcm</mat-option>\n                      </mat-select>\n                    </mat-form-field>\n                  </div>\n                </div>\n\n                <!--Min Max Amount-->\n                <div class=\"price-selection\" *ngIf=\"sellOption\">\n                  <div class=\"extra-field-two\" id=\"maxamount\">\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\">Desired Price</mat-label>\n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\">\n                        <mat-option value=\"50,000\">50,000</mat-option>\n                        <mat-option value=\"60,000\">60,000</mat-option>\n                        <mat-option value=\"70,000\">70,000</mat-option>\n                        <mat-option value=\"80,000\">80,000</mat-option>\n                        <mat-option value=\"90,000\">90,000</mat-option>\n                        <mat-option value=\"100,000\">100,000</mat-option>\n                        <mat-option value=\"110,000\">110,000</mat-option>\n                        <mat-option value=\"120,000\">120,000</mat-option>\n                        <mat-option value=\"125,000\">125,000</mat-option>\n                        <mat-option value=\"130,000\">130,000</mat-option>\n                        <mat-option value=\"140,000\">140,000</mat-option>\n                        <mat-option value=\"150,000\">150,000</mat-option>\n                        <mat-option value=\"160,000\">160,000</mat-option>\n                        <mat-option value=\"170,000\">170,000</mat-option>\n                        <mat-option value=\"175,000\">175,000</mat-option>\n                        <mat-option value=\"180,000\">180,000</mat-option>\n                        <mat-option value=\"190,000\">190,000</mat-option>\n                        <mat-option value=\"200,000\">200,000</mat-option>\n                        <mat-option value=\"210,000\">210,000</mat-option>\n                        <mat-option value=\"220,000\">220,000</mat-option>\n                        <mat-option value=\"230,000\">230,000</mat-option>\n                        <mat-option value=\"240,000\">240,000</mat-option>\n                        <mat-option value=\"250,000\">250,000</mat-option>\n                        <mat-option value=\"260,000\">260,000</mat-option>\n                        <mat-option value=\"270,000\">270,000</mat-option>\n                        <mat-option value=\"280,000\">280,000</mat-option>\n                        <mat-option value=\"290,000\">290,000</mat-option>\n                        <mat-option value=\"300,000\">300,000</mat-option>\n                        <mat-option value=\"325,000\">325,000</mat-option>\n                        <mat-option value=\"350,000\">350,000</mat-option>\n                        <mat-option value=\"375000\">375,000</mat-option>\n                        <mat-option value=\"400,000\">400,000</mat-option>\n                        <mat-option value=\"425,000\">425,000</mat-option>\n                        <mat-option value=\"450,000\">450,000</mat-option>\n                        <mat-option value=\"475,000\">475,000</mat-option>\n                        <mat-option value=\"500,000\">500,000</mat-option>\n                        <mat-option value=\"525,000\">525,000</mat-option>\n                        <mat-option value=\"550,000\">550,000</mat-option>\n                        <mat-option value=\"575,000\">575,000</mat-option>\n                        <mat-option value=\"600,000\">600,000</mat-option>\n                        <mat-option value=\"625,000\">625,000</mat-option>\n                        <mat-option value=\"650,000\">650,000</mat-option>\n                        <mat-option value=\"675,000\">675,000</mat-option>\n                        <mat-option value=\"700,000\">700,000</mat-option>\n                        <mat-option value=\"725,000\">725,000</mat-option>\n                        <mat-option value=\"750,000\">750,000</mat-option>\n                        <mat-option value=\"775,000\">775,000</mat-option>\n                        <mat-option value=\"800,000\">800,000</mat-option>\n                        <mat-option value=\"825,000\">825,000</mat-option>\n                        <mat-option value=\"850,000\">850,000</mat-option>\n                        <mat-option value=\"875,000\">875,000</mat-option>\n                        <mat-option value=\"900,000\">900,000</mat-option>\n                        <mat-option value=\"925,000\">925,000</mat-option>\n                        <mat-option value=\"950,000\">950,000</mat-option>\n                        <mat-option value=\"975,000\">975,000</mat-option>\n                        <mat-option value=\"1000,000\">1000,000</mat-option>\n                        <mat-option value=\"1250,000\">1250,000</mat-option>\n                        <mat-option value=\"1500,000\">1500,000</mat-option>\n                        <mat-option value=\"1750,000\">1750,000</mat-option>\n                        <mat-option value=\"2000,000\">2000,000</mat-option>\n                        <mat-option value=\"2250,000\">2250,000</mat-option>\n                        <mat-option value=\"2500,000\">2500,000</mat-option>\n                        <mat-option value=\"3000,000\">3000,000</mat-option>\n                        <mat-option value=\"4000,000\">4000,000</mat-option>\n                        <mat-option value=\"5000,000\">5000,000</mat-option>\n                        <mat-option value=\"6000,000\">6000,000</mat-option>\n                        <mat-option value=\"7000,000\">7000,000</mat-option>\n                        <mat-option value=\"8000,000\">8000,000</mat-option>\n                        <mat-option value=\"10000,000\">10000,000</mat-option>\n                        <mat-option value=\"15000,000\">15000,000</mat-option>\n                        <mat-option value=\"20000,000\">20000,000</mat-option>\n                      </mat-select>\n                    </mat-form-field>\n                  </div>\n                </div>\n                <!--Min Max Amount End-->\n\n              </div>\n\n\n\n\n\n\n\n\n\n              <div class=\"owner-ship\" *ngIf=\"sellOption\">\n                <!--Ownership Field-->\n                <div class=\"extra-field-two\" id=\"owner\">\n                  <mat-form-field class=\"example-full-width\" style=\"width: 100%;\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\">Ownership</mat-label>\n                    <mat-select [(ngModel)]=\"listingSeller.ownership\" value=\"ownership\" name=\"ownership\">\n                      <mat-option value=\"Leasehold\">Leasehold</mat-option>\n                      <mat-option value=\"Freehold\">Freehold</mat-option>\n                      <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </div>\n                <!--Ownership Field End-->\n              </div>\n\n\n\n\n\n\n\n            </div>\n          </div>\n\n          <div class=\"mat-cards-container\">\n            <div class=\"profile-heading-two\">\n              Optional Details\n            </div>\n\n            <div class=\"price-selection\">\n              <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">No of Bathrooms</mat-label>\n                <mat-select [(value)]=\"Maxbathrooms\" name=\"Maxbathrooms\" [(ngModel)]=\"listingSeller.Maxbathrooms\">\n                  <mat-option value=\"any\">Any</mat-option>\n                  <mat-option value=\"1\">1</mat-option>\n                  <mat-option value=\"2\">2</mat-option>\n                  <mat-option value=\"3\">3 or more</mat-option>\n                </mat-select>\n              </mat-form-field>\n            </div>\n\n\n\n\n            <div class=\"price-selection\">\n\n              <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">No of Reception</mat-label>\n                <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingSeller.Maxreception\">\n                  <mat-option value=\"any\">Any</mat-option>\n                  <mat-option value=\"1\">1</mat-option>\n                  <mat-option value=\"2\">2</mat-option>\n                  <mat-option value=\"3\">3 or more</mat-option>\n                </mat-select>\n              </mat-form-field>\n            </div>\n\n\n            <mat-form-field class=\"example-full-width\" style=\"width: 100%;\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Property Condition</mat-label>\n              <mat-select name=\"PropertyCondition\" [(ngModel)]=\"listingSeller.PropertyCondition\"\n                [(value)]=\"PropertyCondition\">\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"Refurbished\">Refurbished</mat-option>\n                <mat-option value=\"NewBuild\">New Build</mat-option>\n                <mat-option value=\"Needsmodernisation\">Needs modernisation</mat-option>\n              </mat-select>\n            </mat-form-field>\n\n\n\n            <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Property Features</mat-label>\n              <mat-select multiple [(ngModel)]=\"listingSeller.features\" name=\"features\" #sl>\n                <div class=\"select-constion\">\n                  <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n                </div>\n                <mat-option *ngFor=\"let features of applicable\" [value]=\"features\" class=\"select-check mat-check\">\n                  {{features}}</mat-option>\n              </mat-select>\n            </mat-form-field>\n          </div>\n\n\n\n        </div>\n\n\n\n        <mat-card class=\"image-card\">\n          <div class=\"image-contatiner-top\">\n            <div class=\"profile-heading\">Images</div>\n            <div class=\"add-more-area\" (click)=\"addMoreImages()\"><img src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Add More</div>\n          </div>\n\n\n          <div class=\"image-show\" >\n            <div *ngFor=\"let FirstImage of FirstImage\"   (click)=\"deleteField(FirstImage)\">\n              <img src=\"{{FirstImage}}\" class=\"image-eight\">\n              <!-- <img src=\"../../../../assets/Images/cross.png\" class=\"button-image-cross\"> -->\n\n            </div>\n          </div>\n\n          <div class=\"upload-images-area\" *ngIf=\"uploadImage\">\n          <h2>UPLOADING IMAGES</h2>\n          <div *ngFor=\"let upload of uploads\">\n            <h3>Upload of {{upload.fileName}}</h3>\n          </div>\n          <input type=\"file\" multiple=true (change)=\"importImages($event)\">\n        </div>\n        </mat-card>\n\n\n\n\n\n\n\n        <div class=\"update-button\" (click)=\"updateSellerDetails()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n\n      </mat-card>\n\n    </div>\n\n\n\n\n\n\n\n  </div>\n\n\n\n</div>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html":
+/*!*******************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html ***!
+  \*******************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n\n</div>\n\n<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n\n      <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n        <div class=\"aarow-left-container\"> &#8592;</div>\n        <div class=\"right-text-left-container\">Back to Users</div>\n      </div>\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"main-container-uielements\">\n\n    <div class=\"mat-card-ui-elelment\">\n      <div class=\"top-tab-bar\">\n        <div class=\"tab-text\" (click)=\"homePages()\" id=\"home\">Home Page</div>\n        <div class=\"tab-text\" (click)=\"Notifications()\" id=\"notification\">Blue Notification</div>\n        <div class=\"tab-text\" id=\"seller\" (click)=\"SellerDetail()\">Seller Details</div>\n        <div class=\"tab-text\" id=\"buyer\" (click)=\"BuyerDetail()\">Buyer Details</div>\n        <div class=\"tab-text\" id=\"privacy\" (click)=\"privacy()\">Privacy Policy</div>\n        <div class=\"tab-text\" id=\"terms\" (click)=\"terms()\">Terms & Conditon</div>\n\n      </div>\n\n\n      <div class=\"mat-home-page-card\" *ngIf=\"homePage\">\n\n\n\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading\">\n            Banner Photo\n          </div>\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{bannerUrl}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uploadTopBannerImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n\n\n\n                <img src=\"{{bannerUrl}}\" class=\"image-agent\" *ngIf=\"bannerUpload\">\n\n                <div class=\"file-upload\" *ngIf=\"!bannerUpload\">\n                  <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"topimage\"\n                    [(ngModel)]=\"topimage\">\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n\n\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{SecondBannerImage}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uplodSecondImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n                <img src=\"{{SecondBannerImage}}\" class=\"image-agent\" *ngIf=\"BannerTwo\">\n                <div class=\"file-upload\" *ngIf=\"!BannerTwo\">\n                  <form #form class=\"upload-form\">\n                    <input type=\"file\" (change)=\"LoweBanner($event)\" accept=\".png,.jpg\" >\n                  </form>\n\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n        </mat-card>\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Start Your Home Journey Now\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step1UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step1Image}}\" class=\"image-agent\" *ngIf=\"step1NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step1NotUpload\">\n\n                    <input type=\"file\" (change)=\"step1upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"Step1ImageText\" [(ngModel)]=\"Step1ImageText \">\n          </textarea>\n\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step2UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step2Image}}\" class=\"image-agent\" *ngIf=\"step2NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step2NotUpload\">\n\n                    <input type=\"file\" (change)=\"step2upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Review Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"Step2ImageText\" [(ngModel)]=\"Step2ImageText\">\n                </textarea>\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step3UploadImag()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step3Image}}\" class=\"image-agent\" *ngIf=\"step3NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step3NotUpload\">\n\n                    <input type=\"file\" (change)=\"step3upload($event)\" accept=\".png,.jpg\" name=\"step3ImageNew\"\n                      [(ngModel)]=\"step3ImageNew\">\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"Step3ImageText\" [(ngModel)]=\"Step3ImageText\">\n                </textarea>\n            </div>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Blogs\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngFor=\"let allBlogs of allBlogs\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\"\n                        class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{allBlogs.BlogImage}}\" class=\"image-agent\" *ngIf=\"imageUplaod\">\n\n                  <div class=\"file-upload\" *ngIf=\"!imageUplaod\">\n\n                    <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"image\">\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"allBlogs.TextBlog\">\n          </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"allBlogs.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngIf=\"addNewBlog\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\"></div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <div class=\"file-upload\">\n                    <input type=\"file\" (change)=\"newBlogPicture($event)\" accept=\".png,.jpg\" name=\"BlogImage\"\n                      [(ngModel)]=\"blog.BlogImage\">\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"blog.TextBlog\">\n            </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"blog.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n          </div>\n\n          <div class=\"update-button\" (click)=\"addMoreBlog()\">\n\n            <button mat-button color=\"primary\" class=\"button-color\">Add More</button>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Footer\n          </div>\n\n          <div class=\"main-contianer-journey footer-area\">\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Facebook</span></mat-label>\n              <input matInput name=\"Facebook\" [(ngModel)]=\"footer.Facebook\" #Phone>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Instagram Link</span></mat-label>\n              <input matInput name=\"Instragram\" [(ngModel)]=\"footer.Instragram\" #Phone>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Twitter</span></mat-label>\n              <input matInput name=\"Twitter\" [(ngModel)]=\"footer.Twitter\" #Phone>\n            </mat-form-field>\n          </div>\n        </mat-card>\n\n\n        <div class=\"update-button\" (click)=\"updateDetails()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </div>\n\n\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"Notification\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          MynestimateBuyerDetails\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"MynestimateBuyerDetails\"\n            [(ngModel)]=\"MynestimateBuyerDetails\">\n      </textarea>\n        </div>\n\n\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          SingupFromMenu\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SingupFromMenu\" [(ngModel)]=\"SingupFromMenu\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div class=\"update-button\" (click)=\"updateNotification()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"SellerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{SellerPropertyRightImage}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{SellerPropertyRightImage}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"sellerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"BuyerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{BuyerPropertyRightImages}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{BuyerPropertyRightImages}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"buyerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"PrivacyPolicy\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Privacy Policy\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Privacy\" [(ngModel)]=\"Privacy\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updatePrivacyTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"TermConditon\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Terms & Condition\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Terms\" [(ngModel)]=\"Terms\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n  </div>\n\n\n\n\n\n</div>");
 
 /***/ }),
 
@@ -58,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-header\">\n\n        <div class=\"left-main-container\">\n            <div class=\"top-bar-user-heading\">\n                Users\n            </div>\n            <div class=\"lower-text-heading\">\n                Welcome back, {{name}}\n            </div>\n        </div>\n\n        <div class=\"right-text-container\">\n            <div class=\"add_more_button\">\n                <span class=\"button-size\"> + Add User </span>\n            </div>\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{name}}\n            </div>\n        </div>\n    </div>\n    <!--[color]=\"colorToggle.value\" [backgroundColor]=\"backgroundColorToggle.value\"-->\n\n\n    <!--Tab Area-->\n    <div class=\"Main-tab-area-container\">\n        <div class=\"tab-area\">\n            <div class=\"user-tab\">Users</div>\n            <div class=\"agent-tab\">Agents</div>\n        </div>\n        <div class=\"search-field\">\n            <mat-form-field class=\"example-full-width\">\n                <input matInput>\n            </mat-form-field>\n        </div>\n\n        <div class=\"user-counter\">\n            <div class=\"user-count-heading\">Overview</div>\n\n            <div class=\"user-count-area-main\">\n                <div class=\"user-area-count\">\n                    <div class=\"user-count\">\n                        <div> <img src=\"../../../assets/Images/personnew.png\" class=\"user-image\"></div>\n\n                        <div class=\"user-count-text\">\n                            <span>{{allUser.length}}</span></div>\n\n                    </div>\n                    <div class=\"heading-count-text\">\n                        Users\n                    </div>\n                </div>\n                <span class=\"border-right\"></span>\n                <div class=\"agent-area-count\">\n                    <div class=\"user-count\">\n                        <div> <img src=\"../../../assets/Images/personnew.png\" class=\"user-image\"></div>\n\n                        <div class=\"user-count-text\"> <span>{{allAgent.length}}</span></div>\n\n                    </div>\n                    <div class=\"heading-count-text\">\n                        <span class=\"span-count-text\">Agents</span></div>\n                </div>\n            </div>\n\n\n\n        </div>\n\n\n    </div>\n\n    <!--Content-Area-->\n\n\n    <div class=\"user-content-area\">\n        <div class=\"user-content-top-heading\">\n            <mat-checkbox class=\"example-margin\"></mat-checkbox>\n            <div class=\"text-heading-tab-content\">Id</div>\n            <div class=\"text-heading-tab-content\">Name </div>\n            <div class=\"text-heading-tab-content\">Email </div>\n            <div class=\"text-heading-tab-content\">Action </div>\n        </div>\n    </div>\n\n\n    <div class=\"main-container-result-users\">\n\n        <div class=\"user-content-lower-result\" *ngFor=\"let allUser of allUser\">\n            <mat-checkbox class=\"example-margin\"></mat-checkbox>\n            <div class=\"text-output-tab-content uid-content\"> {{allUser.uid}}</div>\n            <div class=\"text-output-tab-content\">{{allUser.detail.Name}}</div>\n            <div class=\"text-output-tab-content tab-content-email\">{{allUser.detail.email}}</div>\n            <div class=\"text-output-tab-content\">\n\n                <span class=\"cursor-show\">\n                    <img src=\"../../../assets/Images/dustbin.png\" class=\"icon-action\"> Delete </span> |\n\n                <span class=\"cursor-show\" routerLink=\"/UsersEditPage/{{allUser.uid}}\"> <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n\n            </div>\n        </div>\n\n    </div>\n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-header\">\n\n        <div class=\"left-main-container\">\n            <div class=\"top-bar-user-heading\">\n                Users\n            </div>\n            <div class=\"lower-text-heading\">\n                Welcome back, {{name}}\n            </div>\n        </div>\n\n        <div class=\"right-text-container\">\n            <div class=\"add_more_button\" (click)=\"addUserPopup()\" *ngIf=\"usersTab\">\n                <span class=\"button-size\"> + Add User </span>\n            </div>\n            <div class=\"add_more_button\" *ngIf=\"!usersTab\" routerLink=\"/AddUser\">\n                <span class=\"button-size\"> + Add Agent </span>\n            </div>\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{name}}\n            </div>\n        </div>\n    </div>\n\n    <!--Tab Area-->\n    <div class=\"Main-tab-area-container\">\n        <div class=\"tab-area\">\n            <div class=\"user-tab\" id=\"users-tab\" (click)=\"activeUserTab()\">Users</div>\n            <div class=\"agent-tab\" id=\"agent-tab\" (click)=\"activeUserAgentTab()\">Agents</div>\n        </div>\n        <div class=\"search-field\">\n            <div class=\"search-field-area\">\n                  <form class=\"example-form\" *ngIf=\"usersTab\">\n                    <mat-form-field class=\"example-full-width\" appearance=\"none\" >\n                      <input type=\"text\" placeholder=\"Search Email\" aria-label=\"Number\" matInput [formControl]=\"myControl\" [matAutocomplete]=\"auto\" name=\"searchEmail\"  [(ngModel)]=\"searchEmail\" >\n                      <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\">\n                        <mat-option *ngFor=\"let option of filteredOptions | async\" [value]=\"option\" >\n                          {{option}}\n                        </mat-option>\n                      </mat-autocomplete>\n                    </mat-form-field>\n                  </form>\n\n\n                  <form class=\"example-form\" *ngIf=\"!usersTab\">\n                    <mat-form-field class=\"example-full-width\" appearance=\"none\" >\n                      <input type=\"text\" placeholder=\"Search Email\" aria-label=\"Number\" matInput [formControl]=\"agentFormControl\" [matAutocomplete]=\"auto\" name=\"searchEmail\"  [(ngModel)]=\"searchEmail\" >\n                      <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\">\n                        <mat-option *ngFor=\"let option of agentfilteredOptions | async\" [value]=\"option\" >\n                          {{option}}\n                        </mat-option>\n                      </mat-autocomplete>\n                    </mat-form-field>\n                  </form>\n            </div>\n           <div *ngIf=\"usersTab\">\n            <div class=\"search-icon\" (click)=\"getSearchValue()\" *ngIf=\"!crossSearch\">\n                <img src=\"../../../assets/Images/loupe.png\" class=\"serach-icon-image\" >\n            </div>\n        </div>\n        <div *ngIf=\"!usersTab\">\n            <div class=\"search-icon\" (click)=\"getGentSearchValue()\" *ngIf=\"!crossSearch\">\n                <img src=\"../../../assets/Images/loupe.png\" class=\"serach-icon-image\" >\n            </div>\n        </div>\n\n        <div *ngIf=\"usersTab\">\n            <div class=\"search-icon\" (click)=\"removeUserSearch()\" *ngIf=\"crossSearch\">\n                <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image\" >\n            </div>\n        </div>\n\n        <div *ngIf=\"!usersTab\">\n            <div class=\"search-icon\" (click)=\"removeAgentSearch()\" *ngIf=\"crossSearch\">\n                <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image\" >\n            </div>\n        </div>\n            \n        </div>\n\n        <div class=\"user-counter\">\n            <div class=\"user-count-heading\">Overview</div>\n\n            <div class=\"user-count-area-main\">\n                <div class=\"user-area-count\">\n                    <div class=\"user-count\">\n                        <div> <img src=\"../../../assets/Images/personnew.png\" class=\"user-image\"></div>\n\n                        <div class=\"user-count-text\">\n                            <span>{{allUser.length}}</span></div>\n\n                    </div>\n                    <div class=\"heading-count-text\">\n                        Users\n                    </div>\n                </div>\n                <span class=\"border-right\"></span>\n                <div class=\"agent-area-count\">\n                    <div class=\"user-count\">\n                        <div> <img src=\"../../../assets/Images/personnew.png\" class=\"user-image\"></div>\n\n                        <div class=\"user-count-text\"> <span>{{allAgent.length}}</span></div>\n\n                    </div>\n                    <div class=\"heading-count-text\">\n                        <span class=\"span-count-text\">Agents</span></div>\n                </div>\n            </div>\n\n\n\n        </div>\n\n\n    </div>\n\n    <!--Content-Area-->\n\n\n    <div class=\"user-container\" *ngIf=\"usersTab\">\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading\">\n                <div class=\"checkbox-image\">\n                    <mat-checkbox class=\"example-margin\"></mat-checkbox>  \n                    <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\" *ngIf=\"dustbin\" (click)=\"deleteMultiple(value)\"> \n                </div>\n                \n                <div class=\"text-heading-tab-content\">Id<img src=\"../../../assets/Images/back.png\" class=\"down-side-arrow\" (click)=\"ascDesc()\"></div>\n                <div class=\"text-heading-tab-content\">Name </div>\n                <div class=\"text-heading-tab-content\">Email </div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result\" *ngFor=\"let allUser of allUser\">\n                <mat-checkbox class=\"example-margin\" [value]=\"allUser.uid\" (click)=\"getValue(allUser.uid)\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{allUser.uid}}</div>\n                <div class=\"text-output-tab-content\">{{allUser.detail.Name}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{allUser.detail.email}}</div>\n                <div class=\"text-output-tab-content\">\n\n                    <span class=\"cursor-show\"  (click)=\"deleteUser(allUser.uid)\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span>   <span class=\"line-height\"></span>\n\n                    <span class=\"cursor-show\" routerLink=\"/UsersEditPage/{{allUser.uid}}\"> <img\n                            src=\"../../../assets/Images/edit.png\" class=\"icon-action\">Edit </span>\n\n                </div>\n            </div>\n\n        </div>\n\n    </div>\n\n    <div class=\"agent-container\" *ngIf=\"!usersTab\">\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading agent-content-top-heading\">\n                <div class=\"checkbox-image\">\n                    <mat-checkbox class=\"example-margin\"></mat-checkbox>  \n                    <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\" *ngIf=\"dustbin\">\n                </div>\n                <div class=\"text-heading-tab-content\">Id<img src=\"../../../assets/Images/back.png\" class=\"down-side-arrow\" (click)=\"agentascDesc()\"></div>\n                <div class=\"text-heading-tab-content\">Name </div>\n                <div class=\"text-heading-tab-content\">Postcode</div>\n                <div class=\"text-heading-tab-content\">Job Title\n                    <img src=\"../../../assets/Images/back.png\" class=\"down-side-arrow\" (click)=\"overLayJob()\" *ngIf=\"!jobTitleSearch\">\n                    <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image-job-title\" *ngIf=\"jobTitleSearch\" (click)=\"retrieveTutorials()\">\n                </div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n   \n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result agent-content-lower-result\" *ngFor=\"let allAgent of tutorials\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{allAgent.uid}}</div>\n                <div class=\"text-output-tab-content\">{{allAgent.fullname}}</div>\n                <div class=\"text-output-tab-content\">{{allAgent.postcode}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{allAgent.jobtitle}}</div>\n                <div class=\"text-output-tab-content\">\n\n                    <span class=\"cursor-show\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span> \n                        <span class=\"line-height\"></span>\n                    <span class=\"cursor-show\" routerLink=\"/AgentEditPage/{{allAgent.id}}/{{allAgent.uid}}\"> <img\n                            src=\"../../../assets/Images/edit.png\" class=\"icon-action\">Edit </span>\n\n                </div>\n            </div>\n\n        </div>\n\n    </div>\n\n\n\n\n\n\n\n</div>\n<div class=\"add-agent-overlay\" *ngIf=\"addNewUser\">\n\n\n    <div class=\"add-agent-background\">\n\n        <div class=\"wrapper-add-agent\">\n            <div class=\"add-agent-top-headin\">\n                <div class=\"profile-heading\">\n                    Add User\n                </div>\n\n                <div class=\"image-cross\" (click)=\"addUserPopupClose()\">\n                    <img src=\"../../../assets/Images/cross.png\" class=\"image-cross-image\">\n                </div>\n\n            </div>\n            <div class=\"extra-field-two\">\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Number\">Name</span></mat-label>\n                    <input matInput name=\"Name\" [(ngModel)]=\"Name\" #Phone maxlength=\"10\">\n                </mat-form-field>\n            </div>\n\n            <div class=\"extra-field-two\">\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address</span></mat-label>\n                    <input matInput [(ngModel)]=\"email\" name=\"email\" #Emails>\n                </mat-form-field>\n            </div>\n\n            <div class=\"extra-field-two\">\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password</span></mat-label>\n                    <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"password\"\n                        #Passowrd>\n                    <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                        [attr.aria-pressed]=\"hide\">\n                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n                    </button>\n                </mat-form-field>\n            </div>\n\n\n            <div class=\"update-button\" (click)=\"createUser(Name,email,password, Type)\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Create User</button>\n            </div>\n        </div>\n    </div>\n\n</div>\n\n\n<div class=\"add-agent-overlay\" *ngIf=\"overLayJobTitle\">\n    <div class=\"overlay-black-back\">\n        <div class=\"overlay-job\">\n            <div class=\"inner-job-title\">\n                <div class=\"select-job-title-container\">\n\n                    <div class=\"selct-job-title-text\">\n                     Select Job Title\n                    </div>\n                    <div class=\"select-job-title-image-close\" (click)=\"closeroverLayJob()\">\n                <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image-job-title\" >\n                    </div>\n                </div>\n              <div  *ngFor=\"let allAgent of AllAgentJob\">\n                  <div  class=\"job-title-content\" (click)=\"showJobTiltle(allAgent.jobtitle)\">\n               {{allAgent.jobtitle}}\n\n                  </div>\n              </div>\n            </div>\n           </div>\n        </div>\n\n  \n\n</div>\n\n");
 
 /***/ }),
 
@@ -71,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n<div class=\"top-bar-container\">\n\n   <div class=\"left-container\">\n\n    <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n<div class=\"aarow-left-container\">\t&#8592;</div>\n<div class=\"right-text-left-container\">Back to Users</div>\n    </div>\n   </div>\n    <div class=\"right-text-container\">\n        <div class=\"top-bar-user-heading\">\n            <img src=\"{{image}}\" class=\"image-people\">\n        </div>\n        <div class=\"lower-text-heading\">\n            {{name}}\n        </div>\n    </div>\n\n\n\n\n\n\n\n\n</div>\n    <!--Profile Info-->\n\n<div class=\"profile-info-card\">\n    <mat-card>\n<div class=\"profile-heading\">\n    Personal Info\n</div>\n\n<div class=\"fields-profile-info\">\n\n    <div class=\"field-set\">\n    <mat-form-field appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n         <span id=\"title\">Title</span>\n\n         </mat-label>\n \n        <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"title\">\n          <mat-option value=\"Mr\">Mr</mat-option>\n          <mat-option value=\"Ms\">Ms</mat-option>\n          <mat-option value=\"Mrs\">Mrs</mat-option>\n        </mat-select>\n     \n      </mat-form-field>\n      <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n        <span id=\"Name\">Full Name*</span>\n        </mat-label>\n    \n        <input matInput  name=\"username\" class=\"mat-mail-input\"  #Names  [(ngModel)]=\"username\">\n      </mat-form-field>\n      <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n          <span id=\"email\">Email Address*</span></mat-label>\n\n        <input matInput  name=\"email\" class=\"mat-mail-input\" [(ngModel)]=\"email\"\n           #emails>\n      </mat-form-field>\n    </div>\n\n\n    <div class=\"field-set\">\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"dob\">DD/MM/YYYY</span></mat-label>\n            <input matInput [matDatepicker]=\"picker\"  name=\"DOB\" class=\"mat-mail-input\"\n              value=\"DOB\"   #dobs  [(ngModel)]=\"DOB\" >\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n          </mat-form-field>\n\n\n           <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n             <span id=\"tele\">Phone Number*</span>\n            </mat-label>\n\n            <span matPrefix>+44&nbsp;</span>\n            <input matInput name=\"Phone\"    maxlength=\"10\" #tele [(ngModel)]=\"Phone\">\n          </mat-form-field>\n\n\n\n       \n\n\n          <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n            <span id=\"Name\">Postcode</span>\n            </mat-label>\n        \n            <input matInput  name=\"Currentpostcode\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"Currentpostcode\">\n          </mat-form-field>\n        </div>\n    \n        <div class=\"field-set\">\n            <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">\n                <span id=\"Name\">Country*</span>\n                </mat-label>\n                <input matInput  name=\"Currentstate\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"Currentstate\">\n              </mat-form-field>\n\n              <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">\n                <span id=\"Name\">Town/City</span>\n                </mat-label>\n                <input matInput  name=\"CurrentTowncity\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"CurrentTowncity\">\n              </mat-form-field>\n\n              <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                <textarea matInput placeholder=\"Street name\" name=\"Currentaddress\" [(ngModel)]=\"Currentaddress\"></textarea>\n              </mat-form-field>\n\n\n\n            </div>\n\n\n      \n</div>\n\n\n<div class=\"update-button\">\n\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n</div>\n\n    </mat-card>\n\n\n\n\n\n\n    <!--User List MatCard-->\n\n    <mat-card class=\"user-Listing-mat-card\">\n        <div class=\"profile-heading\">\n            Listings\n        </div>\n    </mat-card>\n\n\n\n</div>\n\n\n    \n\n\n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n<div class=\"top-bar-container\">\n\n   <div class=\"left-container\">\n\n    <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n<div class=\"aarow-left-container\">\t&#8592;</div>\n<div class=\"right-text-left-container\">Back to Users</div>\n    </div>\n   </div>\n    <div class=\"right-text-container\">\n        <div class=\"top-bar-user-heading\">\n            <img src=\"{{image}}\" class=\"image-people\">\n        </div>\n        <div class=\"lower-text-heading\">\n            {{username}}\n        </div>\n    </div>\n\n\n\n\n\n\n\n\n</div>\n    <!--Profile Info-->\n\n<div class=\"profile-info-card\">\n    <mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;\">\n<div class=\"profile-heading\">\n    Personal Info\n</div>\n\n<div class=\"fields-profile-info\">\n\n    <div class=\"field-set\">\n    <mat-form-field appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n         <span id=\"title\">Title</span>\n\n         </mat-label>\n \n        <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"title\">\n          <mat-option value=\"Mr\">Mr</mat-option>\n          <mat-option value=\"Ms\">Ms</mat-option>\n          <mat-option value=\"Mrs\">Mrs</mat-option>\n        </mat-select>\n     \n      </mat-form-field>\n      <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n        <span id=\"Name\">Full Name*</span>\n        </mat-label>\n    \n        <input matInput  name=\"Name\" class=\"mat-mail-input\"    [(ngModel)]=\"Name\">\n      </mat-form-field>\n      <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n          <span id=\"email\">Email Address*</span></mat-label>\n\n        <input matInput  name=\"email\" class=\"mat-mail-input\" [(ngModel)]=\"email\"\n           #emails>\n      </mat-form-field>\n    </div>\n\n\n    <div class=\"field-set\">\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"dob\">DD/MM/YYYY</span></mat-label>\n            <input matInput [matDatepicker]=\"picker\"  name=\"DOB\" class=\"mat-mail-input\"\n              value=\"DOB\"   #dobs  [(ngModel)]=\"DOB\" >\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n          </mat-form-field>\n\n\n           <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n             <span id=\"tele\">Phone Number*</span>\n            </mat-label>\n\n            <span matPrefix>+44&nbsp;</span>\n            <input matInput name=\"Phone\"    maxlength=\"10\" #tele [(ngModel)]=\"Phone\">\n          </mat-form-field>\n\n\n\n       \n\n\n          <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n            <span id=\"Name\">Postcode</span>\n            </mat-label>\n        \n            <input matInput  name=\"Currentpostcode\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"Currentpostcode\">\n          </mat-form-field>\n        </div>\n    \n        <div class=\"field-set\">\n            <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">\n                <span id=\"Name\">Country*</span>\n                </mat-label>\n                <input matInput  name=\"Currentstate\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"Currentstate\">\n              </mat-form-field>\n\n              <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">\n                <span id=\"Name\">Town/City</span>\n                </mat-label>\n                <input matInput  name=\"CurrentTowncity\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"CurrentTowncity\">\n              </mat-form-field>\n\n              <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                <textarea matInput placeholder=\"Street name\" name=\"Currentaddress\" [(ngModel)]=\"Currentaddress\"></textarea>\n              </mat-form-field>\n\n\n\n            </div>\n\n\n      \n</div>\n\n\n<div class=\"update-button\" \n(click)=\"userDetails()\">\n\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n</div>\n\n    </mat-card>\n\n\n\n\n\n\n    <!--User List MatCard-->\n<div class=\"main-listing-container\">\n    <mat-card class=\"user-Listing-mat-card\">\n        <div class=\"profile-heading\">\n            Listings\n        </div>\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-heading-tab-content\">Id</div>\n                <div class=\"text-heading-tab-content\">Property </div>\n                <div class=\"text-heading-tab-content\">Listing Type</div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result\" *ngFor=\"let BuyerUserDetails of BuyerUserDetails\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{BuyerUserDetails.id}}</div> \n                <div class=\"text-output-tab-content\">{{BuyerUserDetails.detail.PropertyType}} at {{BuyerUserDetails.detail.Lookingpostcode}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{BuyerUserDetails.detail.PropertyFor}}</div>\n                <div class=\"text-output-tab-content\">\n    \n                    <span class=\"cursor-show\" (click)=\"deleteBuyer(BuyerUserDetails.detail.UserId,BuyerUserDetails.id)\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span> \n                        \n                        <span class=\"line-height\"></span>\n    \n                    <span class=\"cursor-show\" routerLink=\"/EditBuyerUserDetails/{{BuyerUserDetails.detail.UserId}}/{{BuyerUserDetails.id}}\" > <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n    \n                </div>\n            </div>\n    \n\n            <div class=\"user-content-lower-result\" *ngFor=\"let SellerUserDetail of SellerUserDetails\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{SellerUserDetail.id}}</div> \n                <div class=\"text-output-tab-content\">{{SellerUserDetail.detail.PropertyType}} at {{SellerUserDetail.detail.Lookingpostcode}}</div>\n                <div class=\"text-output-tab-content tab-content-email\" *ngIf=\"SellerUserDetail.detail.PropertyFor == 'buy'\">\n                    Sell\n                \n                </div>\n                <div class=\"text-output-tab-content tab-content-email\" *ngIf=\"SellerUserDetail.detail.PropertyFor == 'rent'\">\n                    Let\n                \n                </div>\n                <div class=\"text-output-tab-content\" (click)=\"deleteSeller(SellerUserDetail.detail.UserId,SellerUserDetail.id)\">\n    \n                    <span class=\"cursor-show\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span> <span class=\"line-height\"></span>\n    \n                    <span class=\"cursor-show\"  routerLink=\"/EditSellerUserDetails/{{SellerUserDetail.detail.UserId}}/{{SellerUserDetail.id}}\"> <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n    \n                </div>\n            </div>\n    \n\n\n\n            \n        </div>\n\n\n\n\n        \n\n    </mat-card>\n</div>\n\n\n</div>\n\n\n    \n\n\n\n</div>");
 
 /***/ }),
 
@@ -227,7 +305,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n      </div>\n\n</div>\n\n<div *ngIf=\"isRegister\" class=\"register-user-loading-container\">\n  <div class=\"progress-background\">\n    <h2 class=\"loader-text fixed-Label\">{{status}}</h2>\n  <mat-progress-spinner mode=\"indeterminate\" ></mat-progress-spinner>\n  </div>\n</div>\n\n\n\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n\n\n  <div class=\"mat-card-item\">\n    <div class=\"heading-signup heading-nestimate\">Please fill your company details</div>\n  </div>\n\n\n\n  <div class=\"mat-card-item\">\n    <form>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Full Name*</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\"  appearance=\"outline\">\n          <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name*</span></mat-label>\n          <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode*</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n          </mat-form-field>\n        </div>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Address\">Address*</span></mat-label>\n          <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\">\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Job\"> Job title* </span></mat-label>\n          <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number*</span></mat-label>\n          <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address* </span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password*</span></mat-label>\n          <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd>\n          <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n            [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n          </button>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees* </span></mat-label>\n          <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees*</span></mat-label>\n          <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\"  *ngIf=\"!imageUploaded\">\n        <mat-label class=\"fixed-Label\"><span id=\"Image\">Upload Logo*</span></mat-label>\n        <div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n      \n          \n</div>\n        <!-- <form #form class=\"upload-form\">\n          <input type=\"file\" name=\"files\" [(ngModel)]=\"files\" class=\"image-file\" #file >\n          <button mat-raised-button color=\"primary\" (click)=\"UploadImage()\" >Upload</button>\n        </form> -->\n      </div>\n     <div class=\"image-container\" *ngIf=\"imageUploaded\">\n       <div>\n       <p class=\"fixed-Label\">Preview</p>\n       \n      </div>\n      <div class=\"image-and-remove\">\n        <img src=\"http://134.209.93.8{{ImageUrl}}\"  class=\"image-uploaded\"/>\n       <span class=\"fixed-Label remove-button\" (click)=\"RemoveImage()\">Remove</span>\n\n      </div>\n     </div> \n      <div class=\"submit-button\">\n          <button mat-raised-button color=\"primary\"\n          (click)=\"submitForm(displayName.value, agentSignup.email, agentSignup.password,this.type)\">Start\n          My Free 3-Month Trial Now</button>\n          \n      </div>\n\n\n\n    </form>\n  </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n      </div>\n\n</div>\n\n<div *ngIf=\"isRegister\" class=\"register-user-loading-container\">\n  <div class=\"progress-background\">\n    <h2 class=\"loader-text fixed-Label\">{{status}}</h2>\n  <mat-progress-spinner mode=\"indeterminate\" ></mat-progress-spinner>\n  </div>\n</div>\n\n\n\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n\n\n  <div class=\"mat-card-item\">\n    <div class=\"heading-signup heading-nestimate\">Please fill your company details</div>\n  </div>\n\n\n\n  <div class=\"mat-card-item\">\n    <form>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Full Name*</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n        </mat-form-field>\n      </div>\n\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name*</span></mat-label>\n            <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n          </mat-form-field>\n        </div>\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode*</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n          </mat-form-field>\n        </div>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Address\">Address*</span></mat-label>\n          <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\">\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Job\"> Job title* </span></mat-label>\n          <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number*</span></mat-label>\n          <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address* </span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password*</span></mat-label>\n          <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd>\n          <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n            [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n          </button>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees* </span></mat-label>\n          <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees*</span></mat-label>\n          <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\"  *ngIf=\"!imageUploaded\">\n        <mat-label class=\"fixed-Label\"><span id=\"Image\">Upload Logo*</span></mat-label>\n        <div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n      \n          \n</div>\n        <!-- <form #form class=\"upload-form\">\n          <input type=\"file\" name=\"files\" [(ngModel)]=\"files\" class=\"image-file\" #file >\n          <button mat-raised-button color=\"primary\" (click)=\"UploadImage()\" >Upload</button>\n        </form> -->\n      </div>\n     <div class=\"image-container\" *ngIf=\"imageUploaded\">\n       <div>\n       <p class=\"fixed-Label\">Preview</p>\n       \n      </div>\n      <div class=\"image-and-remove\">\n        <img src=\"http://134.209.93.8{{ImageUrl}}\"  class=\"image-uploaded\"/>\n       <span class=\"fixed-Label remove-button\" (click)=\"RemoveImage()\">Remove</span>\n\n      </div>\n     </div> \n      <div class=\"submit-button\">\n          <button mat-raised-button color=\"primary\"\n          (click)=\"submitForm(displayName.value, agentSignup.email, agentSignup.password,this.type)\">Start\n          My Free 3-Month Trial Now</button>\n          \n      </div>\n\n\n\n    </form>\n  </div>\n</div>");
 
 /***/ }),
 
@@ -1109,6 +1187,105 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 /***/ }),
 
+/***/ "./src/app/AdminPanel/Admin-common.css":
+/*!*********************************************!*\
+  !*** ./src/app/AdminPanel/Admin-common.css ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.fixed-Label{\ncolor: #B1A9A9;\n}\n\n.left-container:hover\n{\n    cursor: pointer;\n}\n\n.add_more_button:hover\n{\n    cursor: pointer;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 1em;\n    font-size: 20px;\n    padding-left: 10px;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.sub-heading-user-type\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    margin-top: 5px;\n    font-size: 18px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9BZG1pbi1jb21tb24uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCOztJQUVsQixpQkFBaUI7O0lBRWpCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUNBOztBQUVBLGNBQWM7QUFDZCxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGVBQWU7QUFDZjs7QUFDQTtJQUNJLFdBQVc7SUFDWCxtQkFBbUI7SUFDbkIsa0JBQWtCO0lBQ2xCLGdDQUFnQztBQUNwQzs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix1QkFBdUI7O0lBRXZCLDhCQUE4QjtJQUM5QixrQkFBa0I7SUFDbEIsbUJBQW1COztBQUV2Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZ0JBQWdCO0FBQ3BCOztBQUVBO0FBQ0EsY0FBYztBQUNkOztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQjs7QUFTQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLHdCQUF3QjtJQUN4QixtQkFBbUI7SUFDbkIsMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLGdDQUFnQztJQUNoQyxlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBR0E7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL0FkbWluLWNvbW1vbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcblxuICAgIHBhZGRpbmctdG9wOiAxMHZoO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDExcHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG59XG5pbWcuaW1hZ2UtcGVvcGxlIHtcbiAgICBoZWlnaHQ6IDV2aDtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC10ZXh0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG5zcGFuLmJ1dHRvbi1zaXplIHtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG4ubGVmdC1jb250YWluZXItd3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDAuNWVtIDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuXG59XG4udG9wLWJhci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucmlnaHQtdGV4dC1sZWZ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5hYXJvdy1sZWZ0LWNvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiAxLjllbTtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG4uZml4ZWQtTGFiZWx7XG5jb2xvcjogI0IxQTlBOTtcbn1cbi5sZWZ0LWNvbnRhaW5lcjpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b246aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cblxuXG5cblxuXG5cblxuLnByb2ZpbGUtaGVhZGluZyB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IG1heC1jb250ZW50O1xuICAgIHBhZGRpbmctcmlnaHQ6IDFlbTtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cblxuLnN1Yi1oZWFkaW5nLXVzZXItdHlwZVxue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICBmb250LXNpemU6IDE4cHg7XG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/add-user/add-user.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/AdminPanel/add-user/add-user.component.css ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n    margin-right: 2em;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n\nimg.pen-image {\n    height: 1.5vh;\n    margin-right: 10px;\n}\n\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    padding: 1em;\n}\n\nimg.image-agent {\n    height: 12vh;\n}\n\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n}\n\n.agent-image-upload {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border: 1px solid #707070;\n    margin: 1em 28vw;\n    border-radius: 10px;\n}\n\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\n\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\n\nimg.cross-image {\n    height: 1.5vh;\n}\n\n.add-more-area\n{\n    cursor: pointer;\n}\n\n.file-upload {\n    margin-left: -5em;\n}\n\n.full-width\n{\n    width: 100%;\n}\n\n.update-button {\n    padding: 10px;\n}\n\nbutton.button-color {\n    padding: 0em 1em !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZGQtdXNlci9hZGQtdXNlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCOztJQUVsQixpQkFBaUI7O0lBRWpCLHlCQUF5QjtJQUN6QixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztFQUNuQyxnQkFBZ0I7RUFDaEIsY0FBYztBQUNoQjs7QUFDQTs7QUFFQSxjQUFjO0FBQ2QsaUNBQWlDO0FBQ2pDLGdCQUFnQjtBQUNoQixlQUFlO0FBQ2Y7O0FBQ0E7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0lBQ25CLGtCQUFrQjtJQUNsQixnQ0FBZ0M7QUFDcEM7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0lBQ2pDLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCOztJQUV2Qiw4QkFBOEI7SUFDOUIsa0JBQWtCO0lBQ2xCLG1CQUFtQjs7QUFFdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixjQUFjO0lBQ2QsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtBQUNwQjs7QUFJQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtBQUN2Qjs7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLHdCQUF3QjtJQUN4QixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxlQUFlO0FBQ25COztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixnQ0FBZ0M7SUFDaEMsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtJQUNuQixnQ0FBZ0M7QUFDcEM7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0RBQWtEO0lBQ2xELGVBQWU7SUFDZix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsZ0JBQWdCO0FBQ3BCOztBQWFBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYixrREFBa0Q7SUFDbEQsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix3QkFBd0I7SUFDeEIsdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLHVCQUF1QjtBQUMzQjs7QUFDQTtJQUNJLGFBQWE7SUFDYixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0JBQWtCO0FBQ3RCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixZQUFZO0FBQ2hCOztBQUNBO0lBQ0ksWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsV0FBVztBQUNmOztBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLHlCQUF5QjtJQUN6QixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjs7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixvQkFBb0I7SUFDcEIseUJBQXlCO0FBQzdCOztBQUNBO0lBQ0ksYUFBYTtBQUNqQjs7QUFDQTs7SUFFSSxlQUFlO0FBQ25COztBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUNBOztJQUVJLFdBQVc7QUFDZjs7QUFDQTtJQUNJLGFBQWE7QUFDakI7O0FBQ0E7SUFDSSwyQkFBMkI7QUFDL0IiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL2FkZC11c2VyL2FkZC11c2VyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcblxuICAgIHBhZGRpbmctdG9wOiAxMHZoO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDExcHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG59XG5pbWcuaW1hZ2UtcGVvcGxlIHtcbiAgICBoZWlnaHQ6IDV2aDtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC10ZXh0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG5zcGFuLmJ1dHRvbi1zaXplIHtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG4ubGVmdC1jb250YWluZXItd3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDAuNWVtIDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuXG59XG4udG9wLWJhci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucmlnaHQtdGV4dC1sZWZ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5hYXJvdy1sZWZ0LWNvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiAxLjllbTtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG5cblxuLmZpZWxkLXNldCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmV4YW1wbGUtZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG59XG5cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBwYWRkaW5nOiAwZW0gNWVtO1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbiAgICB3aWR0aDogMTF2dztcbiAgICBmb250LXNpemU6IDIwcHg7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1MaXN0aW5nLW1hdC1jYXJkIHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLm1haW4tbGlzdGluZy1jb250YWluZXIge1xuICAgIHBhZGRpbmc6IDJlbSAwZW07XG59XG5zcGFuLmxpbmUtaGVpZ2h0IHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjQzFCQkJCO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG59XG5cblxuXG5cblxuXG5cblxuXG5cblxuXG4udWlkLWNvbnRlbnQge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5jdXJzb3Itc2hvd1xue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuM2ZyIDFmciAxLjJmciAwLjlmciAwLjZmcjtcbiAgICBtYXJnaW4tbGVmdDogMGVtO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICAvKiBtYXJnaW4tYm90dG9tOiAxZW07ICovXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAganVzdGlmeS1pdGVtczogYmFzZWxpbmU7XG59XG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG4uYWRkLW1vcmUtYXJlYSB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG5pbWcucGVuLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi51cGxvYWQtaW1hZ2UtZmlyc3QtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgd2lkdGg6IDg1JTtcbiAgICBwYWRkaW5nOiAxZW07XG59XG5pbWcuaW1hZ2UtYWdlbnQge1xuICAgIGhlaWdodDogMTJ2aDtcbn1cbi5pbWFnZS11c2VyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLmFnZW50LWltYWdlLXVwbG9hZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyOiAxcHggc29saWQgIzcwNzA3MDtcbiAgICBtYXJnaW46IDFlbSAyOHZ3O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5zcGFuLm5vdGUtYXJlYSB7XG4gICAgY29sb3I6ICNCMUE5QTk7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBtYXJnaW46IDAuN2VtIC0xLjVlbTtcbiAgICAvKiBib3JkZXItcmFkaXVzOiAxN3B4OyAqL1xufVxuaW1nLmNyb3NzLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xufVxuLmFkZC1tb3JlLWFyZWFcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4uZmlsZS11cGxvYWQge1xuICAgIG1hcmdpbi1sZWZ0OiAtNWVtO1xufVxuLmZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvciB7XG4gICAgcGFkZGluZzogMGVtIDFlbSAhaW1wb3J0YW50O1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/add-user/add-user.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/AdminPanel/add-user/add-user.component.ts ***!
+  \***********************************************************/
+/*! exports provided: AddUserComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddUserComponent", function() { return AddUserComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _admin_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../admin.auth.service */ "./src/app/AdminPanel/admin.auth.service.ts");
+/* harmony import */ var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Model/agentSignup */ "./src/app/Model/agentSignup.ts");
+
+
+
+
+
+
+
+let AddUserComponent = class AddUserComponent {
+    constructor(adminPanelService, _Activatedroute, _location, AdminAuthService) {
+        this.adminPanelService = adminPanelService;
+        this._Activatedroute = _Activatedroute;
+        this._location = _location;
+        this.AdminAuthService = AdminAuthService;
+        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__["agentSignup"]();
+        this.imageUplaod = true;
+    }
+    ngOnInit() {
+        this.user = JSON.parse(localStorage.getItem("user"));
+        this.getUserDetails();
+    }
+    getUserDetails() {
+        if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then((element) => {
+                this.username = element.data().Name;
+                this.image = element.data().Image;
+            });
+        }
+    }
+    backClicked() {
+        this._location.back();
+    }
+    createUser(title, Name, email, password, DOB, postcode, country, Town, streetname) {
+        this.AdminAuthService.adminSignUp(Name, email, password, DOB);
+    }
+};
+AddUserComponent.ctorParameters = () => [
+    { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"] },
+    { type: _admin_auth_service__WEBPACK_IMPORTED_MODULE_5__["AdminAuthService"] }
+];
+AddUserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-add-user',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./add-user.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/add-user/add-user.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./add-user.component.css */ "./src/app/AdminPanel/add-user/add-user.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], AddUserComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/AdminPanel/admin-header/admin-header.component.css":
 /*!********************************************************************!*\
   !*** ./src/app/AdminPanel/admin-header/admin-header.component.css ***!
@@ -1118,7 +1295,7 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".nestimate-admin-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 23px;\n    padding-left: 12px;\n}\n\nimg.nestimate-logo-header {\n    height: 3.6vh;\n}\n\n.admin-heaher-main {\n    display: flex;\n    align-items: center;\n    padding: 10px;\n    background-color: white;\n    position: fixed;\n    z-index: 1;\n    width: 100%;\n\n}\n\n.nestimate-logo-container {\n    border-right: 1px solid black;\n}\n\n.admin-side-bar {\n    background-color: white;\n    width: 9em;\n    height: 94%;\n    box-shadow: 6px 0 5px -2px #888;\n    position: fixed;\n    margin-top: 6vh;\n}\n\nimg.dashboard-icon {\n   \n    height: 5vh;\n\n}\n\n.dashboard-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 15px;\n    padding-right: 0px;\n    padding-left: 0px;\n}\n\n.dashboard-container\n{\n    color: #C1BFBF;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 500;\n}\n\n.sign-out-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    /* position: relative; */\n    /* bottom: 0px; */\n    position: absolute;\n    bottom: 10px;\n    left: 3em;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGFBQWE7QUFDakI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsZUFBZTtJQUNmLFVBQVU7SUFDVixXQUFXOztBQUVmOztBQUNBO0lBQ0ksNkJBQTZCO0FBQ2pDOztBQUVBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFVBQVU7SUFDVixXQUFXO0lBQ1gsK0JBQStCO0lBQy9CLGVBQWU7SUFDZixlQUFlO0FBQ25COztBQUVBOztJQUVJLFdBQVc7O0FBRWY7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixzQkFBc0I7SUFDdEIsYUFBYTtJQUNiLGtCQUFrQjtJQUNsQixpQkFBaUI7QUFDckI7O0FBRUE7O0lBRUksY0FBYztJQUNkLGlDQUFpQztFQUNuQyxnQkFBZ0I7QUFDbEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsd0JBQXdCO0lBQ3hCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFNBQVM7QUFDYiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvYWRtaW4taGVhZGVyL2FkbWluLWhlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5lc3RpbWF0ZS1hZG1pbi1oZWFkaW5nXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAyM3B4O1xuICAgIHBhZGRpbmctbGVmdDogMTJweDtcbn1cblxuaW1nLm5lc3RpbWF0ZS1sb2dvLWhlYWRlciB7XG4gICAgaGVpZ2h0OiAzLjZ2aDtcbn1cbi5hZG1pbi1oZWFoZXItbWFpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHotaW5kZXg6IDE7XG4gICAgd2lkdGg6IDEwMCU7XG5cbn1cbi5uZXN0aW1hdGUtbG9nby1jb250YWluZXIge1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGJsYWNrO1xufVxuXG4uYWRtaW4tc2lkZS1iYXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiA5ZW07XG4gICAgaGVpZ2h0OiA5NCU7XG4gICAgYm94LXNoYWRvdzogNnB4IDAgNXB4IC0ycHggIzg4ODtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgbWFyZ2luLXRvcDogNnZoO1xufVxuXG5pbWcuZGFzaGJvYXJkLWljb24ge1xuICAgXG4gICAgaGVpZ2h0OiA1dmg7XG5cbn1cblxuLmRhc2hib2FyZC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIHBhZGRpbmc6IDE1cHg7XG4gICAgcGFkZGluZy1yaWdodDogMHB4O1xuICAgIHBhZGRpbmctbGVmdDogMHB4O1xufVxuXG4uZGFzaGJvYXJkLWNvbnRhaW5lclxue1xuICAgIGNvbG9yOiAjQzFCRkJGO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cblxuLnNpZ24tb3V0LWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgLyogcG9zaXRpb246IHJlbGF0aXZlOyAqL1xuICAgIC8qIGJvdHRvbTogMHB4OyAqL1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBib3R0b206IDEwcHg7XG4gICAgbGVmdDogM2VtO1xufVxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".nestimate-admin-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 23px;\n    padding-left: 12px;\n\n}\n\nimg.nestimate-logo-header {\n    height: 3.8vh;\n}\n\n.admin-heaher-main {\n    display: flex;\n    align-items: center;\n    padding: 10px;\n    background-color: white;\n    position: fixed;\n    z-index: 1;\n    width: 100%;\n    box-shadow: 3px 3px 5px 3px #ccc;\n\n}\n\n.nestimate-logo-container {\n    border-right: 1px solid black;\n}\n\n.admin-side-bar {\n    background-color: white;\n    float: left;\n    height: 94%;\n    box-shadow: 7px 0 5px -2px #00000029;\n    position: fixed;\n    margin-top: 6vh;\n    padding: 0em 1em;\n}\n\nimg.dashboard-icon {\n   \n    height: 5vh;\n\n}\n\n.dashboard-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 1.3em;\n    padding-right: 0px;\n    padding-left: 0px;\n}\n\n.dashboard-container\n{\n    color: #C1BFBF;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 500;\n}\n\n.sign-out-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    /* position: relative; */\n    /* bottom: 0px; */\n    position: absolute;\n    bottom: 10px;\n    left: 3em;\n}\n\n.active-dashboard {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: 8px 8px 5px -1px #00000029;\n\n    padding: 7px;\n    width: 6.5vw;\n}\n\n.dashboard-div:hover\n{\n   cursor: pointer;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGVBQWU7SUFDZixVQUFVO0lBQ1YsV0FBVztJQUNYLGdDQUFnQzs7QUFFcEM7O0FBQ0E7SUFDSSw2QkFBNkI7QUFDakM7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIsV0FBVztJQUNYLFdBQVc7SUFDWCxvQ0FBb0M7SUFDcEMsZUFBZTtJQUNmLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBRUE7O0lBRUksV0FBVzs7QUFFZjs7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0QixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjs7QUFFQTs7SUFFSSxjQUFjO0lBQ2QsaUNBQWlDO0VBQ25DLGdCQUFnQjtBQUNsQjs7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQix3QkFBd0I7SUFDeEIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osU0FBUztBQUNiOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsc0NBQXNDOztJQUV0QyxZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFDQTs7R0FFRyxlQUFlO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmVzdGltYXRlLWFkbWluLWhlYWRpbmdcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXNpemU6IDIzcHg7XG4gICAgcGFkZGluZy1sZWZ0OiAxMnB4O1xuXG59XG5cbmltZy5uZXN0aW1hdGUtbG9nby1oZWFkZXIge1xuICAgIGhlaWdodDogMy44dmg7XG59XG4uYWRtaW4taGVhaGVyLW1haW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB6LWluZGV4OiAxO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuXG59XG4ubmVzdGltYXRlLWxvZ28tY29udGFpbmVyIHtcbiAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCBibGFjaztcbn1cblxuLmFkbWluLXNpZGUtYmFyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmbG9hdDogbGVmdDtcbiAgICBoZWlnaHQ6IDk0JTtcbiAgICBib3gtc2hhZG93OiA3cHggMCA1cHggLTJweCAjMDAwMDAwMjk7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIG1hcmdpbi10b3A6IDZ2aDtcbiAgICBwYWRkaW5nOiAwZW0gMWVtO1xufVxuXG5pbWcuZGFzaGJvYXJkLWljb24ge1xuICAgXG4gICAgaGVpZ2h0OiA1dmg7XG5cbn1cblxuLmRhc2hib2FyZC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIHBhZGRpbmc6IDEuM2VtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDBweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDBweDtcbn1cblxuLmRhc2hib2FyZC1jb250YWluZXJcbntcbiAgICBjb2xvcjogI0MxQkZCRjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG5cbi5zaWduLW91dC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIC8qIHBvc2l0aW9uOiByZWxhdGl2ZTsgKi9cbiAgICAvKiBib3R0b206IDBweDsgKi9cbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgYm90dG9tOiAxMHB4O1xuICAgIGxlZnQ6IDNlbTtcbn1cblxuLmFjdGl2ZS1kYXNoYm9hcmQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJveC1zaGFkb3c6IDhweCA4cHggNXB4IC0xcHggIzAwMDAwMDI5O1xuXG4gICAgcGFkZGluZzogN3B4O1xuICAgIHdpZHRoOiA2LjV2dztcbn1cbi5kYXNoYm9hcmQtZGl2OmhvdmVyXG57XG4gICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbiJdfQ== */");
 
 /***/ }),
 
@@ -1134,17 +1311,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminHeaderComponent", function() { return AdminHeaderComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _admin_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../admin.auth.service */ "./src/app/AdminPanel/admin.auth.service.ts");
+
+
 
 
 let AdminHeaderComponent = class AdminHeaderComponent {
-    constructor() { }
+    constructor(_router, route, AdminAuthService) {
+        this._router = _router;
+        this.route = route;
+        this.AdminAuthService = AdminAuthService;
+    }
     ngOnInit() {
-        if (this.constructor.name == "AdminHeaderComponent") {
-            document.getElementById("appfooter").style.display = "none";
-            document.getElementById("header-main").style.display = "none";
+        document.getElementById("appfooter").style.display = "none";
+        document.getElementById("header-main").style.display = "none";
+        if (this.route.routeConfig.component.name == "AdminPanelComponent") {
+            this.dashboard = true;
+            this.ActiveUser = false;
+            this.UI = false;
+        }
+        if (this.route.routeConfig.component.name == "UsersAgentTabComponent" || this.route.routeConfig.component.name == "EditSellerUserDetailsComponent" || this.route.routeConfig.component.name == "UsersEditPageComponent" || this.route.routeConfig.component.name == "AgentEditPageComponent" ||
+            this.route.routeConfig.component.name == "EditBuyerUserDetailsComponent") {
+            this.ActiveUser = true;
+            this.dashboard = false;
+            this.UI = false;
+        }
+        if (this.route.routeConfig.component.name == "UIElementsComponent") {
+            console.log("test");
+            this.dashboard = false;
+            this.ActiveUser = false;
+            this.UI = true;
         }
     }
+    signOut() {
+        this.AdminAuthService.SignOut();
+    }
 };
+AdminHeaderComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+    { type: _admin_auth_service__WEBPACK_IMPORTED_MODULE_3__["AdminAuthService"] }
+];
 AdminHeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-admin-header',
@@ -1166,7 +1374,7 @@ AdminHeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".admin-login {\n  \n    height: 100%;\n\n    background-color: white;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.admin-login-wrapper {\n  \n}\n\nimg.image-nestimate-logo {\n    height: 8vh;\n}\n\n.Login-Text {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 2em;\n    text-align: center;\n    color: #0F3C73;\n    margin: 10px;\n}\n\n.div-content-field {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    justify-content: center;\n    margin: 10px 0px;\n}\n\nbutton.button-align {\n    background-color: #1EAAFA;\n    color: white;\n    width: 25%;\n    border-radius: 50px;\n\n    font-size: 20px;\n\n}\n\n.login-buttons {\n    margin: 12px;\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.forgot-password-text {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\nimg.lock-icon {\n    width: 1em;\n    margin-right: 10px;\n}\n\n.text-forgot-password {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n\n.Checkbox-text\n{\nfont-family: 'Roboto Slab', serif;\nfont-weight: 400;\ncolor: #0F3C73;\n}\n\n.text-forgot-password.back-to-webiste {\n    text-align: center;\n    margin: 10px 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\nimg.back-arrow {\n    width: 1.3em;\n    margin-right: 4px;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLFlBQVk7O0lBRVosdUJBQXVCO0lBQ3ZCLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFFQTs7QUFFQTs7QUFDQTtJQUNJLFdBQVc7QUFDZjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGtCQUFrQjtJQUNsQixjQUFjO0lBQ2QsWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixtQkFBbUI7O0lBRW5CLGVBQWU7O0FBRW5COztBQUNBO0lBQ0ksWUFBWTtJQUNaLFdBQVc7SUFDWCxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0FBQzNCOztBQUNBO0lBQ0ksVUFBVTtJQUNWLGtCQUFrQjtBQUN0Qjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztBQUNsQjs7QUFDQTs7QUFFQSxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGNBQWM7QUFDZDs7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFkbWluLWxvZ2luIHtcbiAgXG4gICAgaGVpZ2h0OiAxMDAlO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5hZG1pbi1sb2dpbi13cmFwcGVyIHtcbiAgXG59XG5pbWcuaW1hZ2UtbmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogOHZoO1xufVxuLkxvZ2luLVRleHQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMmVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBtYXJnaW46IDEwcHg7XG59XG4uZGl2LWNvbnRlbnQtZmllbGQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDEwcHggMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1hbGlnbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFFQUFGQTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDI1JTtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuXG4gICAgZm9udC1zaXplOiAyMHB4O1xuXG59XG4ubG9naW4tYnV0dG9ucyB7XG4gICAgbWFyZ2luOiAxMnB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmZvcmdvdC1wYXNzd29yZC10ZXh0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5pbWcubG9jay1pY29uIHtcbiAgICB3aWR0aDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi50ZXh0LWZvcmdvdC1wYXNzd29yZCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG4uQ2hlY2tib3gtdGV4dFxue1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDQwMDtcbmNvbG9yOiAjMEYzQzczO1xufVxuLnRleHQtZm9yZ290LXBhc3N3b3JkLmJhY2stdG8td2ViaXN0ZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIG1hcmdpbjogMTBweCAwcHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuaW1nLmJhY2stYXJyb3cge1xuICAgIHdpZHRoOiAxLjNlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDRweDtcbn1cblxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".admin-login {\n    height: 100%;\n    background-color: white;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\nimg.image-nestimate-logo {\n    height: 8vh;\n}\n.Login-Text {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 2em;\n    text-align: center;\n    color: #0F3C73;\n    margin: 10px;\n}\n.div-content-field {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    justify-content: center;\n    margin: 10px 0px;\n}\nbutton.button-align {\n    background-color: #1EAAFA;\n    color: white;\n    width: 25%;\n    border-radius: 50px;\n\n    font-size: 20px;\n\n}\n.login-buttons {\n    margin: 12px;\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.forgot-password-text {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\nimg.lock-icon {\n    width: 1em;\n    margin-right: 10px;\n}\n.text-forgot-password {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n.Checkbox-text\n{\nfont-family: 'Roboto Slab', serif;\nfont-weight: 400;\ncolor: #0F3C73;\n}\n.text-forgot-password.back-to-webiste {\n    text-align: center;\n    margin: 10px 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\nimg.back-arrow {\n    width: 1.3em;\n    margin-right: 4px;\n}\n.top-card {\n    margin-right: 2em;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 9em;\n    margin-top: 3em;\n}\n.total-nestimate {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 100%;\n    align-items: center;\n    padding-bottom: 15px;\n    border-bottom: 1px solid #CBC7C7;\n    margin-bottom: 20px;\n}\nspan.total-netiamte-text {\n    font-size: 1.6em;\n    font-family: 'Roboto', sans-serif;\n    font-weight: 700;\n    color: #787575;\n}\nspan.total-nestimate-number {\n    font-size: 1.6em;\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    display: flex;\n    align-items: center;\n}\n.wrapper-total-nestimate {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    height: 100%;\n}\n.left-nestimate-dashboard {\n    padding: 2em 4em;\n    padding-bottom: 1em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.right-nestimate-dashboard\n{\n    padding: 2em 4em;\n    padding-bottom: 1em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\nimg.person-dashboard {\n    height: 3.5vh;\n    margin-left: -1.5em;\n    padding-right: 10px;\n}\n.second-color-container {\n    background-color: #0F3C73;\n    margin-top: 2em;\n    margin-right: 1.5em;\n    padding: 0.5em;\n    color: white;\n    font-size: 1.5em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    padding-left: 1em;\n}\n.second-part-container{\n  \n    margin-right: 2em;\n\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.profile-heading.dashboard-heading {\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    padding-right: 10px;\n}\nspan.second-part-container-text {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n}\nspan.second-part-container-number {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n\n}\n.top-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n    width: 32vw;\n\n    padding-top: 1em;\n\n\n}\n.lower-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n\n    padding-top: 1em;\n\n\n\n}\n.wrapper-one-second-part-container{\n    margin: 2em 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.right-line\n{\n    border-right: 1px solid lightgray;\n\n    height: 9vh;\n\n}\n.second-part-container-two-sides-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  \n}\n.mat-card-bottom {\n    height: 5vh;\n}\n.third-matcard-align {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.third-mat-card {\n    margin-right: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.total-nestimate.total-postcode {\n\n    padding-bottom: 0px;\n    padding: 7px;\n    padding-bottom: 10px;\n    margin: 1em 3em;\n  \n}\n.fourth-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: baseline;\n}\n.wrapper-one-second-part-container {\n    padding-bottom: 2em;\n    padding: 2em 1em;\n}\n.wrapper-total-nestimate.third-matcard-align {\n    padding: 0em 2em;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLGNBQWM7SUFDZCxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixtQkFBbUI7O0lBRW5CLGVBQWU7O0FBRW5CO0FBQ0E7SUFDSSxZQUFZO0lBQ1osV0FBVztJQUNYLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksVUFBVTtJQUNWLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7O0FBRUEsaUNBQWlDO0FBQ2pDLGdCQUFnQjtBQUNoQixjQUFjO0FBQ2Q7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLFlBQVk7SUFDWixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixXQUFXO0lBQ1gsbUJBQW1CO0lBQ25CLG9CQUFvQjtJQUNwQixnQ0FBZ0M7SUFDaEMsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQztBQUNBOztJQUVJLGdCQUFnQjtJQUNoQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBR0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsY0FBYztJQUNkLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGtDQUFrQztJQUNsQyxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlCQUFpQjs7SUFFakIsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQztBQUNBO0lBQ0kscUNBQTZCO0lBQTdCLGtDQUE2QjtJQUE3Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlOztBQUVuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1COztJQUVuQixrQ0FBa0M7SUFDbEMsb0JBQW9CO0lBQ3BCLFdBQVc7O0lBRVgsZ0JBQWdCOzs7QUFHcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjs7SUFFbkIsa0NBQWtDO0lBQ2xDLG9CQUFvQjs7SUFFcEIsZ0JBQWdCOzs7O0FBSXBCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsZ0NBQWdDO0FBQ3BDO0FBQ0E7O0lBRUksaUNBQWlDOztJQUVqQyxXQUFXOztBQUVmO0FBRUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjs7QUFFdkI7QUFFQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsZ0NBQWdDO0FBQ3BDO0FBQ0E7O0lBRUksbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixvQkFBb0I7SUFDcEIsZUFBZTs7QUFFbkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsNkJBQTZCO0lBQzdCLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFkbWluLWxvZ2luIHtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5pbWcuaW1hZ2UtbmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogOHZoO1xufVxuLkxvZ2luLVRleHQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMmVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBtYXJnaW46IDEwcHg7XG59XG4uZGl2LWNvbnRlbnQtZmllbGQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDEwcHggMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1hbGlnbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFFQUFGQTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDI1JTtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuXG4gICAgZm9udC1zaXplOiAyMHB4O1xuXG59XG4ubG9naW4tYnV0dG9ucyB7XG4gICAgbWFyZ2luOiAxMnB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmZvcmdvdC1wYXNzd29yZC10ZXh0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5pbWcubG9jay1pY29uIHtcbiAgICB3aWR0aDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi50ZXh0LWZvcmdvdC1wYXNzd29yZCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG4uQ2hlY2tib3gtdGV4dFxue1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDQwMDtcbmNvbG9yOiAjMEYzQzczO1xufVxuLnRleHQtZm9yZ290LXBhc3N3b3JkLmJhY2stdG8td2ViaXN0ZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIG1hcmdpbjogMTBweCAwcHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuaW1nLmJhY2stYXJyb3cge1xuICAgIHdpZHRoOiAxLjNlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDRweDtcbn1cbi50b3AtY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XG4gICAgZ3JpZC1nYXA6IDllbTtcbiAgICBtYXJnaW4tdG9wOiAzZW07XG59XG4udG90YWwtbmVzdGltYXRlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZy1ib3R0b206IDE1cHg7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNDQkM3Qzc7XG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cbnNwYW4udG90YWwtbmV0aWFtdGUtdGV4dCB7XG4gICAgZm9udC1zaXplOiAxLjZlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzc4NzU3NTtcbn1cbnNwYW4udG90YWwtbmVzdGltYXRlLW51bWJlciB7XG4gICAgZm9udC1zaXplOiAxLjZlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ud3JhcHBlci10b3RhbC1uZXN0aW1hdGUge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuLmxlZnQtbmVzdGltYXRlLWRhc2hib2FyZCB7XG4gICAgcGFkZGluZzogMmVtIDRlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLnJpZ2h0LW5lc3RpbWF0ZS1kYXNoYm9hcmRcbntcbiAgICBwYWRkaW5nOiAyZW0gNGVtO1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG5cblxuaW1nLnBlcnNvbi1kYXNoYm9hcmQge1xuICAgIGhlaWdodDogMy41dmg7XG4gICAgbWFyZ2luLWxlZnQ6IC0xLjVlbTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuLnNlY29uZC1jb2xvci1jb250YWluZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIG1hcmdpbi1yaWdodDogMS41ZW07XG4gICAgcGFkZGluZzogMC41ZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgcGFkZGluZy1sZWZ0OiAxZW07XG59XG4uc2Vjb25kLXBhcnQtY29udGFpbmVye1xuICBcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcblxuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucHJvZmlsZS1oZWFkaW5nLmRhc2hib2FyZC1oZWFkaW5nIHtcbiAgICB3aWR0aDogZml0LWNvbnRlbnQgIWltcG9ydGFudDtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItdGV4dCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbn1cbnNwYW4uc2Vjb25kLXBhcnQtY29udGFpbmVyLW51bWJlciB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcblxufVxuLnRvcC1zZWNvbmQtcGFydC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gICAgcGFkZGluZy1ib3R0b206IDExcHg7XG4gICAgd2lkdGg6IDMydnc7XG5cbiAgICBwYWRkaW5nLXRvcDogMWVtO1xuXG5cbn1cbi5sb3dlci1zZWNvbmQtcGFydC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gICAgcGFkZGluZy1ib3R0b206IDExcHg7XG5cbiAgICBwYWRkaW5nLXRvcDogMWVtO1xuXG5cblxufVxuLndyYXBwZXItb25lLXNlY29uZC1wYXJ0LWNvbnRhaW5lcntcbiAgICBtYXJnaW46IDJlbSAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucmlnaHQtbGluZVxue1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcblxuICAgIGhlaWdodDogOXZoO1xuXG59XG5cbi5zZWNvbmQtcGFydC1jb250YWluZXItdHdvLXNpZGVzLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgXG59XG5cbi5tYXQtY2FyZC1ib3R0b20ge1xuICAgIGhlaWdodDogNXZoO1xufVxuLnRoaXJkLW1hdGNhcmQtYWxpZ24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi50aGlyZC1tYXQtY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4udG90YWwtbmVzdGltYXRlLnRvdGFsLXBvc3Rjb2RlIHtcblxuICAgIHBhZGRpbmctYm90dG9tOiAwcHg7XG4gICAgcGFkZGluZzogN3B4O1xuICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgIG1hcmdpbjogMWVtIDNlbTtcbiAgXG59XG4uZm91cnRoLXBhcnQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgYWxpZ24taXRlbXM6IGJhc2VsaW5lO1xufVxuLndyYXBwZXItb25lLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbiAgICBwYWRkaW5nOiAyZW0gMWVtO1xufVxuLndyYXBwZXItdG90YWwtbmVzdGltYXRlLnRoaXJkLW1hdGNhcmQtYWxpZ24ge1xuICAgIHBhZGRpbmc6IDBlbSAyZW07XG59XG5cbiJdfQ== */");
 
 /***/ }),
 
@@ -1187,6 +1395,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Misc/alert-user-type/alert-user-type.component */ "./src/app/Misc/alert-user-type/alert-user-type.component.ts");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+
 
 
 
@@ -1205,14 +1415,108 @@ let AdminPanelComponent = class AdminPanelComponent {
         this.KnowUser = [];
         this.type = "Admin";
         this.LoggedIn = false;
+        this.CountAllUser = [];
+        this.listingType = [];
+        this.listingTypeBuy = [];
+        this.listingSellerRent = [];
+        this.listingSellerSell = [];
+        this.listingBuyerFlatPropertyType = [];
+        this.lsitingSellerFlatPropertyType = [];
+        this.listingBuyerStudioPropertyType = [];
+        this.listingSellerStudioPropertyType = [];
+        this.listingBuyerTerracedhousePropertyType = [];
+        this.listingSellerTerracedhousePropertyType = [];
+        this.listingBuyerMaisonettePropertyType = [];
+        this.listingSellerMaisonettePropertyType = [];
+        this.listingBuyerSemidetachedPropertyType = [];
+        this.listingSellerSemidetachedPropertyType = [];
+        this.listingBuyerBungalowPropertyType = [];
+        this.listingSellerBungalowPropertyType = [];
+        this.listingBuyerDetachedhousePropertyType = [];
+        this.listingSellerDetachedhousePropertyType = [];
+        this.listingBuyerCottagePropertyType = [];
+        this.listingSellerCottagePropertyType = [];
+        this.listingBuyerTownhousePropertyType = [];
+        this.listingSellerTownhousePropertyType = [];
+        this.listingBuyerCountryhousePropertyType = [];
+        this.listingSellerCountryhousePropertyType = [];
+        this.listingBuyerBarnconversionPropertyType = [];
+        this.listingSellerBarnconversionPropertyType = [];
+        this.listingBuyerFarmPropertyType = [];
+        this.listingSellerFarmPropertyType = [];
+        this.listingBuyerHouseboatPropertyType = [];
+        this.listingSellerHouseboatPropertyType = [];
+        this.listingBuyerLodgePropertyType = [];
+        this.listingSellerLodgePropertyType = [];
+        this.AllAgents = [];
+        this.soleFeesThird = [];
+        this.soleFeesSecond = [];
+        this.soleFeesFirst = [];
+        this.firstSole = 0;
+        this.secondSole = 0;
+        this.thirdSole = 0;
+        this.multipleFeesOne = [];
+        this.multipleFeesTwo = [];
+        this.multipleFeesThree = [];
+        this.multiFirst = 0;
+        this.multiSecond = 0;
+        this.multiThird = 0;
+        this.hide = true;
     }
     ngOnInit() {
         this.getUser = JSON.parse(localStorage.getItem("user"));
         this.getUserDetails();
+        this.getAdminDetails();
+        this.dashboardDetails();
+        this.getMatches();
+        this.getAllUsers();
+        this.getCountUser();
+        this.getAgentfees();
         if (this.constructor.name == "AdminPanelComponent") {
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
         }
+    }
+    getAgentfees() {
+        this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(data => {
+            data.forEach((fees) => {
+                this.agentFees = fees;
+                if (this.agentFees.solefees >= 1 && this.agentFees.solefees <= 2) {
+                    this.soleFeesFirst.push(this.agentFees);
+                }
+                if (this.agentFees.solefees > 2 && this.agentFees.solefees <= 3) {
+                    this.soleFeesSecond.push(this.agentFees);
+                }
+                if (this.agentFees.solefees > 3 && this.agentFees.solefees <= 4) {
+                    this.soleFeesThird.push(this.agentFees);
+                }
+                if (this.agentFees.multiplefees >= 1 && this.agentFees.multiplefees <= 2) {
+                    this.multipleFeesOne.push(this.agentFees);
+                }
+                if (this.agentFees.multiplefees > 2 && this.agentFees.multiplefees <= 3) {
+                    this.multipleFeesTwo.push(this.agentFees);
+                }
+                if (this.agentFees.multiplefees > 3 && this.agentFees.multiplefees <= 4) {
+                    this.multipleFeesThree.push(this.agentFees);
+                }
+            });
+            this.firstSole = this.soleFeesFirst.length;
+            this.secondSole = this.soleFeesSecond.length;
+            this.thirdSole = this.soleFeesThird.length;
+            this.multiFirst = this.multipleFeesOne.length;
+            this.multiSecond = this.multipleFeesTwo.length;
+            this.multiThird = this.multipleFeesThree.length;
+        });
+    }
+    getCountUser() {
+        this.adminPanelService.getAllUser().then((element) => {
+            element.forEach(elements => {
+                if (elements.data().UserType == "Agent") {
+                    this.AllAgents.push(elements.data());
+                    this.agentLength = this.AllAgents.length;
+                }
+            });
+        });
     }
     getUserDetails() {
         if (this.getUser != null) {
@@ -1229,6 +1533,147 @@ let AdminPanelComponent = class AdminPanelComponent {
                 }
             });
         }
+    }
+    getAllUsers() {
+        this.adminPanelService.getAllUser().then((data) => {
+            data.forEach(element => {
+                this.CountAllUser.push(element.data());
+            });
+            this.numberOfUser = this.CountAllUser.length;
+        });
+    }
+    getMatches() {
+        this.adminPanelService.getcountExpressInterest().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(data => {
+            this.ExpressedIneterest = data.length;
+            this.adminPanelService.getcountExpressMatches().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(seller => { this.ConfirmInterest = seller.length; });
+        });
+    }
+    dashboardDetails() {
+        this.adminPanelService.getAllBuyer().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(data => {
+            this.allBuyer = data;
+            data.forEach((element) => {
+                if (element.PropertyFor == "buy") {
+                    this.listingTypeBuy.push(element);
+                    this.countListingTypeBuy = this.listingTypeBuy.length;
+                }
+                if (element.PropertyFor == "rent") {
+                    this.listingType.push(element);
+                    this.countListingTypeRent = this.listingType.length;
+                }
+                if (element.PropertyType == "Flat") {
+                    this.listingBuyerFlatPropertyType.push(element);
+                }
+                if (element.PropertyType == "Studio") {
+                    this.listingBuyerStudioPropertyType.push(element);
+                }
+                if (element.PropertyType == "Terracedhouse") {
+                    this.listingBuyerTerracedhousePropertyType.push(element);
+                }
+                if (element.PropertyType == "Maisonette") {
+                    this.listingBuyerMaisonettePropertyType.push(element);
+                }
+                if (element.PropertyType == "Semi-detached") {
+                    this.listingBuyerSemidetachedPropertyType.push(element);
+                }
+                if (element.PropertyType == "Bungalow") {
+                    this.listingBuyerBungalowPropertyType.push(element);
+                }
+                if (element.PropertyType == "Detachedhouse") {
+                    this.listingBuyerDetachedhousePropertyType.push(element);
+                }
+                if (element.PropertyType == "Cottage") {
+                    this.listingBuyerCottagePropertyType.push(element);
+                }
+                if (element.PropertyType == "Townhouse") {
+                    this.listingBuyerTownhousePropertyType.push(element);
+                }
+                if (element.PropertyType == "Countryhouse") {
+                    this.listingBuyerCountryhousePropertyType.push(element);
+                }
+                if (element.PropertyType == "Barnconversion") {
+                    this.listingBuyerBarnconversionPropertyType.push(element);
+                }
+                if (element.PropertyType == "Farm") {
+                    this.listingBuyerFarmPropertyType.push(element);
+                }
+                if (element.PropertyType == "Houseboat") {
+                    this.listingBuyerHouseboatPropertyType.push(element);
+                }
+                if (element.PropertyType == "Lodge") {
+                    this.listingBuyerLodgePropertyType.push(element);
+                }
+            });
+            this.adminPanelService.getAllCountSeller().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(seller => {
+                this.allSeller = seller;
+                this.NestimateLength = this.allBuyer.length + this.allSeller.length;
+                seller.forEach((sellerData) => {
+                    if (sellerData.PropertyFor == "rent") {
+                        this.listingSellerRent.push(sellerData);
+                        this.countingSellerTypeRent = this.listingSellerRent.length;
+                    }
+                    if (sellerData.PropertyFor == "buy") {
+                        this.listingSellerSell.push(sellerData);
+                        this.countingSellerTypeSell = this.listingSellerSell.length;
+                    }
+                    if (sellerData.PropertyType == "Flat") {
+                        this.lsitingSellerFlatPropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Studio") {
+                        this.listingSellerStudioPropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Terracedhouse") {
+                        this.listingSellerTerracedhousePropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Maisonette") {
+                        this.listingSellerMaisonettePropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Semi-detached") {
+                        this.listingSellerSemidetachedPropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Bungalow") {
+                        this.listingSellerBungalowPropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Detachedhouse") {
+                        this.listingSellerDetachedhousePropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Cottage") {
+                        this.listingSellerCottagePropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Townhouse") {
+                        this.listingSellerTownhousePropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Countryhouse") {
+                        this.listingSellerCountryhousePropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Barnconversion") {
+                        this.listingSellerBarnconversionPropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Farm") {
+                        this.listingSellerFarmPropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Houseboat") {
+                        this.listingSellerHouseboatPropertyType.push(sellerData);
+                    }
+                    if (sellerData.PropertyType == "Lodge") {
+                        this.listingSellerLodgePropertyType.push(sellerData);
+                    }
+                });
+            });
+            this.FlatpropertyType = this.listingBuyerFlatPropertyType.length + this.lsitingSellerFlatPropertyType.length;
+            this.studiopropertyType = this.listingSellerStudioPropertyType.length + this.listingBuyerStudioPropertyType.length;
+            this.TerracedhouseType = this.listingBuyerTerracedhousePropertyType.length + this.listingSellerTerracedhousePropertyType.length;
+            this.MaisonetteType = this.listingBuyerMaisonettePropertyType.length + this.listingSellerMaisonettePropertyType.length;
+            this.SemidetachedType = this.listingBuyerSemidetachedPropertyType.length + this.listingSellerSemidetachedPropertyType.length;
+            this.BungalowType = this.listingBuyerBungalowPropertyType.length + this.listingSellerBungalowPropertyType.length;
+            this.DetachedhousType = this.listingBuyerDetachedhousePropertyType.length + this.listingSellerDetachedhousePropertyType.length;
+            this.CottagePropertyType = this.listingBuyerCottagePropertyType.length + this.listingSellerCottagePropertyType.length;
+            this.TownhouseType = this.listingBuyerTownhousePropertyType.length + this.listingSellerTownhousePropertyType.length;
+            this.CountryhouseType = this.listingBuyerCountryhousePropertyType.length + this.listingSellerCountryhousePropertyType.length;
+            this.BarnconversionType = this.listingBuyerBarnconversionPropertyType.length + this.listingSellerBarnconversionPropertyType.length;
+            this.FarmPropertyType = this.listingBuyerFarmPropertyType.length + this.listingSellerFarmPropertyType.length;
+            this.HouseboaType = this.listingBuyerHouseboatPropertyType.length + this.listingSellerHouseboatPropertyType.length;
+            this.LodgeType = this.listingBuyerLodgePropertyType.length + this.listingSellerLodgePropertyType.length;
+        });
     }
     //getUser(uid)
     signIn(email, pass) {
@@ -1251,6 +1696,20 @@ let AdminPanelComponent = class AdminPanelComponent {
             });
         });
     }
+    getAdminDetails() {
+        if (this.getUser != null) {
+            this.uid = this.getUser.uid;
+            this.adminPanelService.getUser(this.uid).then((element) => {
+                this.username = element.data().Name;
+                this.image = element.data().Image;
+            });
+        }
+    }
+    getTotalNestimate() {
+        this.adminPanelService.getAllSeller().snapshotChanges().forEach((data) => {
+            console.log(data);
+        });
+    }
 };
 AdminPanelComponent.ctorParameters = () => [
     { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
@@ -1262,7 +1721,7 @@ AdminPanelComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-admin-panel',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./admin-panel.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/admin-panel/admin-panel.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-panel.component.css */ "./src/app/AdminPanel/admin-panel/admin-panel.component.css")).default]
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin-panel.component.css */ "./src/app/AdminPanel/admin-panel/admin-panel.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
     })
 ], AdminPanelComponent);
 
@@ -1283,21 +1742,224 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase */ "./node_modules/firebase/dist/index.cjs.js");
+/* harmony import */ var firebase__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 
 let AdminPanelService = class AdminPanelService {
     constructor(db) {
         this.db = db;
+        this.customersRef = null;
+        this.dbPath = "listingSeller";
         this.userCollection = db.collection("users");
+        this.buyer = db.collection("listingBuyer");
+        this.seller = db.collection("listingSeller");
+        this.sellerUser = db.collectionGroup("properties");
+        this.customersRef = db.collection(this.dbPath);
+        this.Agents = db.collectionGroup("agents");
+        this.agentRef = db.collection("agentSignup");
+        this.agentPrperties = db.collection("agentSeller");
+        this.buyerListing = db.collectionGroup("requirements");
+        this.sellerListing = db.collectionGroup("properties");
+        this.expressMatches = db.collectionGroup("MatchesExpress");
+        this.expressInterest = db.collectionGroup("Express");
+    }
+    deleteImageSeller(uid, docid) {
+        return this.db
+            .collection("listingSeller")
+            .doc(uid)
+            .collection("properties")
+            .doc(docid)
+            .set({ Images: firebase__WEBPACK_IMPORTED_MODULE_3__["firestore"].FieldValue.delete() }, { merge: true });
+    }
+    multipledeleteUser(uid) {
+        return this.db
+            .collection("users")
+            .doc(uid)
+            .delete();
+    }
+    getcountExpressInterest() {
+        return this.expressInterest;
+    }
+    getcountExpressMatches() {
+        return this.expressMatches;
+    }
+    getAllCountSeller() {
+        return this.sellerListing;
+    }
+    getAllBuyer() {
+        return this.buyerListing;
+    }
+    //Create Customer ListingBuyer
+    updateAgentListing(uid, docid, agents) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            return this.db
+                .collection("agentSignup")
+                .doc(uid)
+                .collection("agents")
+                .doc(docid)
+                .set(Object.assign({}, agents))
+                .then(function (data) {
+                console.log("agent update!");
+            });
+            return true;
+        });
+    }
+    deleteAgent(uid) {
+        return this.db
+            .collection("agentSignup")
+            .doc(uid)
+            .delete();
+    }
+    deleteUser(uid) {
+        return this.db
+            .collection("users")
+            .doc(uid)
+            .delete();
+    }
+    deleteBuyer(uid, docid) {
+        return this.db
+            .collection("listingBuyer")
+            .doc(uid)
+            .collection("requirements")
+            .doc(docid)
+            .delete();
+    }
+    deleteSeller(uid, docid) {
+        return this.db
+            .collection("listingSeller")
+            .doc(uid)
+            .collection("properties")
+            .doc(docid)
+            .delete();
     }
     getUser(uid) {
         return this.userCollection
             .doc(uid)
             .ref.get();
     }
+    getAllAgent() {
+        return this.Agents;
+    }
     getAllUser() {
         return this.userCollection.ref.get();
+    }
+    getSelectedAgent(uid, propertyId) {
+        return this.agentRef
+            .doc(uid)
+            .collection("agents")
+            .ref.get();
+    }
+    getagentProperties(uid) {
+        return this.agentPrperties
+            .doc(uid)
+            .collection("PropertyDetails")
+            .ref.get();
+    }
+    getselectedagentProperties(uid, propId) {
+        return this.agentPrperties
+            .doc(uid)
+            .collection("PropertyDetails")
+            .doc(propId)
+            .ref.get();
+    }
+    getBuyerEntries(uid) {
+        return this.buyer
+            .doc(uid)
+            .collection("requirements")
+            .ref.get();
+    }
+    getSellerEntries(uid) {
+        return this.seller
+            .doc(uid)
+            .collection("properties")
+            .ref.get();
+    }
+    getAllSeller() {
+        return this.seller
+            .collection("properties")
+            .ref.get();
+    }
+    getCustomersList() {
+        return this.customersRef;
+    }
+    userupate(user) {
+        const userRef = this.db.doc(`users/` + user.uid);
+        const userData = {
+            uid: user.uid,
+            email: user.email,
+            Name: user.Name,
+            DOB: user.DOB,
+            Phone: user.Phone,
+            title: user.title,
+            Currentaddress: user.Currentaddress,
+            Currentpostcode: user.Currentpostcode,
+            Currentstate: user.Currentstate,
+            CurrentTowncity: user.CurrentTowncity,
+        };
+        return userRef.set(userData, {
+            merge: true,
+        });
+    }
+    getBuyerPrpertyDetails(uid, propertyId) {
+        return this.buyer
+            .doc(uid)
+            .collection("requirements")
+            .doc(propertyId)
+            .ref.get();
+    }
+    //Create Customer ListingBuyer
+    updateBuyerListing(uid, docid, listingBuyer) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            return this.db
+                .collection("listingBuyer")
+                .doc(uid)
+                .collection("requirements")
+                .doc(docid)
+                .set(Object.assign({}, listingBuyer))
+                .then(function (data) {
+                console.log("Document successfully written!");
+            });
+            return true;
+        });
+    }
+    //Get Seller Selected
+    getSellerPrpertyDetails(uid, propertyId) {
+        return this.seller
+            .doc(uid)
+            .collection("properties")
+            .doc(propertyId)
+            .ref.get();
+    }
+    //Create Customer ListingBuyer
+    updateSellerListing(uid, docid, listingSeller) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            return this.db
+                .collection("listingSeller")
+                .doc(uid)
+                .collection("properties")
+                .doc(docid)
+                .set(Object.assign({}, listingSeller))
+                .then(function (data) {
+                console.log("Document successfully written!");
+            });
+            return true;
+        });
+    }
+    usersellerupate(user) {
+        const userRef = this.db.doc(`users/` + user.uid);
+        const userData = {
+            Currentaddress: user.Currentaddress,
+            Currentpostcode: user.Currentpostcode,
+            Currentstate: user.Currentstate,
+            CurrentTowncity: user.CurrentTowncity,
+            Currentcountry: user.Currentcountry
+        };
+        return userRef.set(userData, {
+            merge: true,
+        });
     }
 };
 AdminPanelService.ctorParameters = () => [
@@ -1313,6 +1975,1489 @@ AdminPanelService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/AdminPanel/admin.auth.service.ts":
+/*!**************************************************!*\
+  !*** ./src/app/AdminPanel/admin.auth.service.ts ***!
+  \**************************************************/
+/*! exports provided: AdminAuthService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminAuthService", function() { return AdminAuthService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+
+
+
+
+
+
+let AdminAuthService = class AdminAuthService {
+    constructor(afs, // Inject Firestore service
+    afAuth, // Inject Firebase auth service
+    router, ngZone, // NgZone service to remove outside scope warning
+    _location) {
+        this.afs = afs;
+        this.afAuth = afAuth;
+        this.router = router;
+        this.ngZone = ngZone;
+        this._location = _location;
+    }
+    // Admin User Sign up with email/password
+    adminSignUp(displayName, email, password, Users) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            try {
+                const result = yield this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+                this.SetUserDatas(result.user, displayName, Users);
+            }
+            catch (error) {
+                window.alert(error.message);
+            }
+        });
+    }
+    SetUserDatas(user, displayName, Users) {
+        const userRef = this.afs.doc(`users/` + user.uid);
+        const userData = {
+            uid: user.uid,
+            email: user.email,
+            Name: displayName,
+            UserType: Users
+        };
+        return userRef.set(userData, {
+            merge: true
+        });
+    }
+    // Send email verfificaiton when new user sign up
+    // async SendVerificationMail(user,displayName,Users) {
+    //   await this.afAuth.auth.currentUser.sendEmailVerification();
+    //   this.SetUserDatas(user,displayName,Users);
+    // }
+    SignOut() {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            yield this.afAuth.auth.signOut();
+            localStorage.removeItem("user");
+            this.router.navigate(["/AdminPanel"]);
+            //window.location.reload()
+        });
+    }
+};
+AdminAuthService.ctorParameters = () => [
+    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__["AngularFirestore"] },
+    { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
+    { type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_5__["Location"] }
+];
+AdminAuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: "root"
+    })
+], AdminAuthService);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.css":
+/*!**************************************************************************!*\
+  !*** ./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.css ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n\nimg.pen-image {\n    height: 1.5vh;\n    margin-right: 10px;\n}\n\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    padding: 1em;\n}\n\nimg.image-agent {\n    height: 12vh;\n}\n\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n}\n\n.agent-image-upload {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border: 1px solid #707070;\n    margin: 1em 28vw;\n    border-radius: 10px;\n}\n\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\n\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\n\nimg.cross-image {\n    height: 1.5vh;\n}\n\n.add-more-area\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1lZGl0LXBhZ2UvYWdlbnQtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7O0lBRWxCLGlCQUFpQjs7SUFFakIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmOztBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBSUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtEQUFrRDtJQUNsRCxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtBQUNwQjs7QUFhQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0RBQWtEO0lBQ2xELGdCQUFnQjtJQUNoQixlQUFlO0lBQ2Ysd0JBQXdCO0lBQ3hCLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyx1QkFBdUI7QUFDM0I7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtCQUFrQjtBQUN0Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixVQUFVO0lBQ1YsWUFBWTtBQUNoQjs7QUFDQTtJQUNJLFlBQVk7QUFDaEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7QUFDZjs7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQix5QkFBeUI7SUFDekIsZ0JBQWdCO0lBQ2hCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGNBQWM7SUFDZCxhQUFhO0lBQ2IsaUNBQWlDO0FBQ3JDLGdCQUFnQjs7QUFFaEI7O0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsb0JBQW9CO0lBQ3BCLHlCQUF5QjtBQUM3Qjs7QUFDQTtJQUNJLGFBQWE7QUFDakI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvYWdlbnQtZWRpdC1wYWdlL2FnZW50LWVkaXQtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG5cbiAgICBwYWRkaW5nLXRvcDogMTB2aDtcblxuICAgIGJhY2tncm91bmQtY29sb3I6ICNGOUY5Rjk7XG59XG5cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbi50b3AtYmFyLWhlYWRlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4udG9wLWJhci11c2VyLWhlYWRpbmcge1xuICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGNvbG9yOiAjMEYzQzczO1xufVxuLmxvd2VyLXRleHQtaGVhZGluZ1xue1xuY29sb3I6ICMxRUFBRkE7XG5mb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuZm9udC1zaXplOiAyMHB4O1xufVxuaW1nLmltYWdlLXBlb3BsZSB7XG4gICAgaGVpZ2h0OiA1dmg7XG4gICAgYm9yZGVyLXJhZGl1czogNTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDE1cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucmlnaHQtdGV4dC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuc3Bhbi5idXR0b24tc2l6ZSB7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xufVxuLmxlZnQtY29udGFpbmVyLXdyYXBwZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcblxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBwYWRkaW5nOiAwLjVlbSAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxufVxuLnRvcC1iYXItY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnJpZ2h0LXRleHQtbGVmdC1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMmVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4uYWFyb3ctbGVmdC1jb250YWluZXIge1xuICAgIGZvbnQtc2l6ZTogMS45ZW07XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbn1cblxuXG5cbi5maWVsZC1zZXQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5leGFtcGxlLWZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5wcm9maWxlLWluZm8tY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xufVxuXG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgcGFkZGluZzogMGVtIDVlbTtcbn1cblxuLnByb2ZpbGUtaGVhZGluZyB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IDExdnc7XG4gICAgZm9udC1zaXplOiAyMHB4O1xufVxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbn1cbmJ1dHRvbi5idXR0b24tY29sb3J7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIHBhZGRpbmc6IDBlbSAyZW07XG59XG4udXBkYXRlLWJ1dHRvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnVzZXItTGlzdGluZy1tYXQtY2FyZCB7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC4zZnIgMWZyIDEuMmZyIDAuOWZyIDAuNmZyO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4O1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xufVxuLnRleHQtaGVhZGluZy10YWItY29udGVudCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5tYWluLWxpc3RpbmctY29udGFpbmVyIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuc3Bhbi5saW5lLWhlaWdodCB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI0MxQkJCQjtcbiAgICBtYXJnaW46IDBlbSAxMHB4O1xufVxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLnVpZC1jb250ZW50IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuLnRleHQtb3V0cHV0LXRhYi1jb250ZW50e1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4uY3Vyc29yLXNob3dcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubWFpbi1jb250YWluZXItcmVzdWx0LXVzZXJzIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMmVtO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLWxlZnQ6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgLyogbWFyZ2luLWJvdHRvbTogMWVtOyAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGp1c3RpZnktaXRlbXM6IGJhc2VsaW5lO1xufVxuaW1nLmljb24tYWN0aW9uIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xufVxuLmFkZC1tb3JlLWFyZWEge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGNvbG9yOiAjMEYzQzczO1xufVxuaW1nLnBlbi1pbWFnZSB7XG4gICAgaGVpZ2h0OiAxLjV2aDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG4udXBsb2FkLWltYWdlLWZpcnN0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHdpZHRoOiA4NSU7XG4gICAgcGFkZGluZzogMWVtO1xufVxuaW1nLmltYWdlLWFnZW50IHtcbiAgICBoZWlnaHQ6IDEydmg7XG59XG4uaW1hZ2UtdXNlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDFlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICM3MDcwNzA7XG4gICAgbWFyZ2luOiAxZW0gMjh2dztcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuc3Bhbi5ub3RlLWFyZWEge1xuICAgIGNvbG9yOiAjQjFBOUE5O1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcblxufVxuaW1nLmNyb3NzLWltYWdlIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luOiAwLjdlbSAtMS41ZW07XG4gICAgLyogYm9yZGVyLXJhZGl1czogMTdweDsgKi9cbn1cbmltZy5jcm9zcy1pbWFnZSB7XG4gICAgaGVpZ2h0OiAxLjV2aDtcbn1cbi5hZGQtbW9yZS1hcmVhXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts ***!
+  \*************************************************************************/
+/*! exports provided: AgentEditPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgentEditPageComponent", function() { return AgentEditPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Model/agentSignup */ "./src/app/Model/agentSignup.ts");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+/* harmony import */ var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/fire/storage */ "./node_modules/@angular/fire/storage/es2015/index.js");
+/* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+
+
+
+
+
+
+
+
+
+
+let AgentEditPageComponent = class AgentEditPageComponent {
+    constructor(adminPanelService, _Activatedroute, _location, afs, afStorage, dialog) {
+        this.adminPanelService = adminPanelService;
+        this._Activatedroute = _Activatedroute;
+        this._location = _location;
+        this.afs = afs;
+        this.afStorage = afStorage;
+        this.dialog = dialog;
+        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_5__["agentSignup"]();
+        this.agentProperties = [];
+        this.downloadableURL = null;
+        this.isLoading = false;
+        this.basePath = '/agent';
+        this.imageUplaod = false;
+    }
+    ngOnInit() {
+        this.user = JSON.parse(localStorage.getItem("user"));
+        this.sub = this._Activatedroute.paramMap.subscribe((params) => {
+            this.agentPropertyId = params.get("agentPropertyId");
+            this.agentUserId = params.get("agentUserId");
+        });
+        this.getUserDetails();
+        this.getAgentDetails();
+        this.getAgentProperties();
+    }
+    updateAgent(uid, docid) {
+        console.log(this.image);
+        if (this.downloadableURL != null) {
+            this.agentSignup.image = this.downloadableURL;
+        }
+        else {
+            this.agentSignup.image;
+        }
+        this.agentSignup.uid = this.agentUserId;
+        this.adminPanelService.updateAgentListing(this.agentUserId, this.agentPropertyId, this.agentSignup).then((data) => {
+            const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__["AltertFormDialogComponent"], {
+                data: { message: "User detail updated" }
+            });
+        });
+    }
+    editImage() {
+        this.imageUplaod = true;
+        this.filename = " ";
+    }
+    upload(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        console.log(url);
+                        this.downloadableURL = url;
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    getAgentProperties() {
+        this.adminPanelService.getagentProperties(this.agentUserId).then((data) => {
+            data.forEach(element => {
+                this.agentProperties.push({ details: element.data(), uid: element.id });
+            });
+        });
+    }
+    getAgentDetails() {
+        this.adminPanelService.getSelectedAgent(this.agentUserId, this.agentPropertyId).then((data) => {
+            data.forEach(element => {
+                this.agentSignup.fullname = element.data().fullname;
+                this.agentSignup.company = element.data().company;
+                this.agentSignup.postcode = element.data().postcode;
+                this.agentSignup.address = element.data().address;
+                this.agentSignup.jobtitle = element.data().jobtitle;
+                this.agentSignup.officephone = element.data().officephone;
+                this.agentSignup.phone = element.data().phone;
+                this.agentSignup.email = element.data().email;
+                this.agentSignup.multiplefees = element.data().multiplefees;
+                this.agentSignup.solefees = element.data().solefees;
+                this.agentSignup.Status = element.data().Status;
+                this.agentSignup.image = element.data().image;
+                this.agentSignup.title = element.data().title;
+            });
+        });
+    }
+    backClicked() {
+        this._location.back();
+    }
+    getUserDetails() {
+        if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then((element) => {
+                this.username = element.data().Name;
+                this.image = element.data().Image;
+            });
+        }
+    }
+};
+AgentEditPageComponent.ctorParameters = () => [
+    { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"] },
+    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__["AngularFirestore"] },
+    { type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_7__["AngularFireStorage"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatDialog"] }
+];
+AgentEditPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-agent-edit-page',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./agent-edit-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./agent-edit-page.component.css */ "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], AgentEditPageComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.css":
+/*!********************************************************************************************!*\
+  !*** ./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.css ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.second-part-container-two-sides-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  \n}\n.top-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n    width: 32vw;\n\n    padding-top: 1em;\n\n\n}\nspan.second-part-container-text {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n}\nspan.second-part-container-number {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n\n}\n.property-for-container {\n    display: flex;\n    justify-content: -3em 2em;\n    width: 15%;\n    margin: 0em 1em;\n    width: 15%;\n    justify-content: space-between;\n    align-items: center;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em 1.5em;\n    border-radius: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1wcm9wZXJ0eS1lZGl0LXBhZ2UvYWdlbnQtcHJvcGVydHktZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUkseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLG9DQUFvQztJQUNwQyxxQ0FBcUM7SUFDckMsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7QUFDQTtJQUNFLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7QUFDM0I7QUFFQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdDQUFnQztJQUNoQyxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7QUFFQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0lBQ2Ysa0JBQWtCOztBQUV0QjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLFlBQVk7SUFDWixtQkFBbUI7O0FBRXZCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjs7QUFFdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjs7SUFFbkIsa0NBQWtDO0lBQ2xDLG9CQUFvQjtJQUNwQixXQUFXOztJQUVYLGdCQUFnQjs7O0FBR3BCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlOztBQUVuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHlCQUF5QjtJQUN6QixVQUFVO0lBQ1YsZUFBZTtJQUNmLFVBQVU7SUFDViw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1wcm9wZXJ0eS1lZGl0LXBhZ2UvYWdlbnQtcHJvcGVydHktZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0LWNhcmQtdG9wLWFyZWFcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDAuN2VtO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIG1hcmdpbi1yaWdodDogMS43ZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4ubWF0LWNhcmQtZWRpdFxue1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4ucmFkaW8tdG9wLWJ1eWVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gIH1cbiAgLnN1Yi1oZWFkaW5nLXVzZXItdHlwZSB7XG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuLnRvcC1jYXJkLWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMWVtIDJlbTtcblxufVxuXG4ubWlkZGxlLXNpZGUtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4ubWF0LXdyYXBwZXItY2FyZFxue1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLm1haW4tY29udGFpbmVyLWFyZWEge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ucHJpY2Utc2VsZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ucmFkaW8tYnV0dG9uLWFsaWduIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nLXR3b1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMnZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG5cbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubmV3LWhlYWRpbmctbmVzdGltYXRlIHtcblxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuLmZpZWxkLW9uZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cbi5yYWRpby1idXR0b24ge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59XG5cbi5zZWNvbmQtcGFydC1jb250YWluZXItdHdvLXNpZGVzLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgXG59XG4udG9wLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTFweDtcbiAgICB3aWR0aDogMzJ2dztcblxuICAgIHBhZGRpbmctdG9wOiAxZW07XG5cblxufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItdGV4dCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbn1cbnNwYW4uc2Vjb25kLXBhcnQtY29udGFpbmVyLW51bWJlciB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcblxufVxuLnByb3BlcnR5LWZvci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiAtM2VtIDJlbTtcbiAgICB3aWR0aDogMTUlO1xuICAgIG1hcmdpbjogMGVtIDFlbTtcbiAgICB3aWR0aDogMTUlO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIHBhZGRpbmc6IDFlbSAxLjVlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufSJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts ***!
+  \*******************************************************************************************/
+/*! exports provided: AgentPropertyEditPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgentPropertyEditPageComponent", function() { return AgentPropertyEditPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+
+
+
+
+
+let AgentPropertyEditPageComponent = class AgentPropertyEditPageComponent {
+    constructor(adminPanelService, _Activatedroute, _location) {
+        this.adminPanelService = adminPanelService;
+        this._Activatedroute = _Activatedroute;
+        this._location = _location;
+    }
+    ngOnInit() {
+        this.user = JSON.parse(localStorage.getItem("user"));
+        this.sub = this._Activatedroute.paramMap.subscribe((params) => {
+            this.propertyID = params.get("propertyID");
+            this.propertyuserId = params.get("propertyuserId");
+        });
+        this.getUserDetails();
+        this.getAgentPropertyDetail();
+    }
+    backClicked() {
+        this._location.back();
+    }
+    getAgentPropertyDetail() {
+        this.adminPanelService.getselectedagentProperties(this.propertyuserId, this.propertyID).then((agent) => {
+            console.log(agent.data());
+            this.propertyFor = agent.data().Buyer.PropertyType;
+            this.Lookingpostcode = agent.data().Buyer.Lookingpostcode;
+            this.DesiredPrice = agent.data().Seller.MaxAmount;
+            this.Postcode = agent.data().Seller.Lookingpostcode;
+            this.Maxrooms = agent.data().Seller.Maxrooms;
+            this.SellerUserId = agent.data().Seller.UserId;
+            this.BuyerMinamount = agent.data().Buyer.MinAmount;
+            this.BuyerMaxamount = agent.data().Buyer.MaxAmount;
+            this.Buyerpostcode = agent.data().Buyer.Lookingpostcode;
+            this.BuyerRoomsmin = agent.data().Buyer.Roommin;
+            this.BuyerRoomsmax = agent.data().Buyer.Roomsmax;
+            this.BuyerUserId = agent.data().Buyer.UserId;
+            this.adminPanelService.getUser(this.SellerUserId).then((agentUser) => {
+                this.selleraddress = agentUser.data().Currentaddress;
+                this.selleremail = agentUser.data().email;
+                this.sellerPhone = agentUser.data().Phone;
+            });
+            this.adminPanelService.getUser(this.BuyerUserId).then((agentUser) => {
+                this.buyeraddress = agentUser.data().Currentaddress;
+                this.buyeremail = agentUser.data().email;
+                this.buyerPhone = agentUser.data().Phone;
+            });
+        });
+        //getselectedagentProperties(uid,propId)
+    }
+    getUserDetails() {
+        if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then((element) => {
+                this.username = element.data().Name;
+                this.image = element.data().Image;
+            });
+        }
+    }
+};
+AgentPropertyEditPageComponent.ctorParameters = () => [
+    { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"] }
+];
+AgentPropertyEditPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-agent-property-edit-page',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./agent-property-edit-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./agent-property-edit-page.component.css */ "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], AgentPropertyEditPageComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.css":
+/*!******************************************************************************************!*\
+  !*** ./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.css ***!
+  \******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9lZGl0LWJ1eWVyLXVzZXItZGV0YWlscy9lZGl0LWJ1eWVyLXVzZXItZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2QsaUNBQWlDO0lBQ2pDLGtDQUFrQztJQUNsQyxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCO0FBQ0E7O0lBRUksbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxvQ0FBb0M7SUFDcEMscUNBQXFDO0lBQ3JDLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixhQUFhO0lBQ2IsZ0JBQWdCO0VBQ2xCO0FBQ0E7SUFDRSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsZUFBZTs7QUFFbkI7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0FBQzNCO0FBRUE7O0lBRUksZ0NBQWdDO0lBQ2hDLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLGtDQUFrQztJQUNsQyxhQUFhO0lBQ2IsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixnQ0FBZ0M7SUFDaEMsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBRUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsd0JBQXdCO0lBQ3hCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixZQUFZO0lBQ1osbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvZWRpdC1idXllci11c2VyLWRldGFpbHMvZWRpdC1idXllci11c2VyLWRldGFpbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXQtY2FyZC10b3AtYXJlYVxue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMC43ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxLjdlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5tYXQtY2FyZC1lZGl0XG57XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi5yYWRpby10b3AtYnV5ZXIge1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgfVxuICAuc3ViLWhlYWRpbmctdXNlci10eXBlIHtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG4udG9wLWNhcmQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxZW0gMmVtO1xuXG59XG5cbi5taWRkbGUtc2lkZS1hcmVhIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5tYXQtd3JhcHBlci1jYXJkXG57XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgbWFyZ2luOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItYXJlYSB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ucHJpY2Utc2VsZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ucmFkaW8tYnV0dG9uLWFsaWduIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nLXR3b1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMnZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG5cbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubmV3LWhlYWRpbmctbmVzdGltYXRlIHtcblxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuLmZpZWxkLW9uZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cbi5yYWRpby1idXR0b24ge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59Il19 */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts":
+/*!*****************************************************************************************!*\
+  !*** ./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts ***!
+  \*****************************************************************************************/
+/*! exports provided: EditBuyerUserDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditBuyerUserDetailsComponent", function() { return EditBuyerUserDetailsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Model/listingBuyer */ "./src/app/Model/listingBuyer.ts");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+
+
+
+
+
+
+
+
+
+
+let EditBuyerUserDetailsComponent = class EditBuyerUserDetailsComponent {
+    constructor(_Activatedroute, adminPanelService, postcodeService, dialog, _location) {
+        this._Activatedroute = _Activatedroute;
+        this.adminPanelService = adminPanelService;
+        this.postcodeService = postcodeService;
+        this.dialog = dialog;
+        this._location = _location;
+        this.BuyerUserDetail = [];
+        this.amounts = false;
+        this.buyOption = false;
+        this.Condition = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]();
+        this.ConditionsList = ["any", "Garden", "Driveway", "Period Features", "Garage", "Gated Community", "Loft Conversion", "Conservatory/Sun room", "Granny Annexe", "Rear Extension"];
+        this.features = [];
+        this.listingBuyer = new _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_5__["listingBuyer"]();
+    }
+    ngOnInit() {
+        this.user = JSON.parse(localStorage.getItem("user"));
+        this.sub = this._Activatedroute.paramMap.subscribe((params) => {
+            this.BuyerPropertyId = params.get("BuyerPropertyId");
+            this.BuyerUserID = params.get("BuyerUserID");
+        });
+        this.getUserDetails();
+        this.getBuyerProperty();
+    }
+    getUserDetails() {
+        if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then((element) => {
+                this.username = element.data().Name;
+                this.image = element.data().Image;
+            });
+        }
+    }
+    backClicked() {
+        this._location.back();
+    }
+    getBuyerProperty() {
+        this.adminPanelService.getBuyerPrpertyDetails(this.BuyerUserID, this.BuyerPropertyId).then((buyer) => {
+            this.BuyerUserDetail.push(buyer.data());
+            this.listingBuyer.Currentpostcode = buyer.data().Currentpostcode;
+            this.listingBuyer.PropertyFor = buyer.data().PropertyFor;
+            this.listingBuyer.CurrentTown = buyer.data().CurrentTown;
+            this.listingBuyer.CurrentAddress = buyer.data().CurrentAddress;
+            this.listingBuyer.Currentstate = buyer.data().Currentstate;
+            this.listingBuyer.Currentcountry = buyer.data().Currentcountry;
+            this.listingBuyer.Lookingpostcode = buyer.data().Lookingpostcode;
+            this.listingBuyer.LookingStreetname = buyer.data().LookingStreetname;
+            this.listingBuyer.LookingTown = buyer.data().LookingTown;
+            this.listingBuyer.Lookingstate = buyer.data().Lookingstate;
+            this.listingBuyer.Country = buyer.data().Country;
+            if (buyer.data().FinancialPosition != null) {
+                this.listingBuyer.FinancialPosition = buyer.data().FinancialPosition;
+            }
+            this.listingBuyer.PropertyType = buyer.data().PropertyType;
+            this.radio(this.listingBuyer.PropertyFor);
+            this.listingBuyer.Roommin = buyer.data().Roommin;
+            this.listingBuyer.Roomsmax = buyer.data().Roomsmax;
+            this.listingBuyer.MaxAmount = buyer.data().MaxAmount;
+            this.listingBuyer.MinAmount = buyer.data().MinAmount;
+            this.listingBuyer.Validity = buyer.data().Validity;
+            this.listingBuyer.Maxbathroom = buyer.data().Maxbathroom;
+            this.listingBuyer.Minbathroom = buyer.data().Minbathroom;
+            this.listingBuyer.Maxreception = buyer.data().Maxreception;
+            this.listingBuyer.Minreception = buyer.data().Minreception;
+            this.listingBuyer.Conditions = buyer.data().Conditions;
+            this.listingBuyer.Ownership = buyer.data().Ownership;
+            this.listingBuyer.ChainStatus = buyer.data().ChainStatus;
+            //this.listingBuyer.features = buyer.data().features
+        });
+    }
+    radioChange(event) {
+        this.filter = event.value;
+        if (this.filter == "buy") {
+            this.amounts = true;
+            this.rentOption = false;
+            this.buyOption = true;
+        }
+        if (this.filter == "rent") {
+            this.amounts = true;
+            this.buyOption = false;
+            this.rentOption = true;
+        }
+    }
+    radio(event) {
+        this.filter = event;
+        if (this.filter == "buy") {
+            this.amounts = true;
+            this.rentOption = false;
+            this.buyOption = true;
+        }
+        if (this.filter == "rent") {
+            this.amounts = true;
+            this.buyOption = false;
+            this.rentOption = true;
+        }
+    }
+    updateUser() {
+        this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(data => {
+            this.postcodeCoordinates = data;
+            (this.listingBuyer.longitude = this.postcodeCoordinates.result.longitude),
+                (this.listingBuyer.latitude = this.postcodeCoordinates.result.latitude),
+                (this.listingBuyer.UserId = this.BuyerUserID);
+        });
+        this.listingBuyer.UserId = this.BuyerUserID;
+        this.listingBuyer.longitude,
+            this.listingBuyer.latitude,
+            this.adminPanelService.updateBuyerListing(this.BuyerUserID, this.BuyerPropertyId, this.listingBuyer).then((data) => {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "User Detail Updated" }
+                });
+            });
+    }
+};
+EditBuyerUserDetailsComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+    { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_3__["AdminPanelService"] },
+    { type: _http_service__WEBPACK_IMPORTED_MODULE_6__["HttpService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialog"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"] }
+];
+EditBuyerUserDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-edit-buyer-user-details',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./edit-buyer-user-details.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./edit-buyer-user-details.component.css */ "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], EditBuyerUserDetailsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.css":
+/*!********************************************************************************************!*\
+  !*** ./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.css ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n    height: -webkit-max-content;\n    height: -moz-max-content;\n    height: max-content;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.image-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin-right: 1em;\n    margin-left: 1em;\n}\n.image-contatiner-top {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\nimg.pen-image {\n    height: 2vh;\n}\nimg.image-eight {\n    width: 70%;\n}\n.image-show {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 2em;\n}\nimg.button-image-cross {\n    position: absolute;\n    height: 1vh;\n    margin-top: 1em;\n}\n.update-button {\n    margin-top: 1em;\n    margin-bottom: 2em;\n}\n.update-button:hover {\n    cursor: pointer;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9lZGl0LXNlbGxlci11c2VyLWRldGFpbHMvZWRpdC1zZWxsZXItdXNlci1kZXRhaWxzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUkseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLG9DQUFvQztJQUNwQyxxQ0FBcUM7SUFDckMsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7QUFDQTtJQUNFLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7QUFDM0I7QUFFQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0NBQWtDO0lBQ2xDLGFBQWE7SUFDYixlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdDQUFnQztJQUNoQyxZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLDJCQUFtQjtJQUFuQix3QkFBbUI7SUFBbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7QUFFQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0lBQ2Ysa0JBQWtCOztBQUV0QjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLFlBQVk7SUFDWixtQkFBbUI7O0FBRXZCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZ0NBQWdDO0lBQ2hDLGlCQUFpQjtJQUNqQixnQkFBZ0I7QUFDcEI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtBQUN2QjtBQUdBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNDQUFzQztJQUN0QyxhQUFhO0lBQ2IsV0FBVztBQUNmO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsV0FBVztJQUNYLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL2VkaXQtc2VsbGVyLXVzZXItZGV0YWlscy9lZGl0LXNlbGxlci11c2VyLWRldGFpbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXQtY2FyZC10b3AtYXJlYVxue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMC43ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxLjdlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5tYXQtY2FyZC1lZGl0XG57XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi5yYWRpby10b3AtYnV5ZXIge1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgfVxuICAuc3ViLWhlYWRpbmctdXNlci10eXBlIHtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG4udG9wLWNhcmQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxZW0gMmVtO1xuXG59XG5cbi5taWRkbGUtc2lkZS1hcmVhIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5tYXQtd3JhcHBlci1jYXJkXG57XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgbWFyZ2luOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItYXJlYSB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgaGVpZ2h0OiBtYXgtY29udGVudDtcbn1cbi5wcmljZS1zZWxlY3Rpb24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi5yYWRpby1idXR0b24tYWxpZ24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgcGFkZGluZy10b3A6IDEwcHg7XG59XG5cbi5wcm9maWxlLWhlYWRpbmctdHdvXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IDEydnc7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcblxufVxuLmZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5uZXctaGVhZGluZy1uZXN0aW1hdGUge1xuXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGNvbG9yOiBibGFjaztcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuXG59XG4ucHJvZmlsZS1pbmZvLWNhcmQge1xuICAgIHBhZGRpbmc6IDJlbSAwZW07XG59XG4uZmllbGQtb25lIHtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuLnJhZGlvLWJ1dHRvbiB7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcbn1cbi5pbWFnZS1jYXJkXG57XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgbWFyZ2luLXJpZ2h0OiAxZW07XG4gICAgbWFyZ2luLWxlZnQ6IDFlbTtcbn1cblxuLmltYWdlLWNvbnRhdGluZXItdG9wIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cblxuLmFkZC1tb3JlLWFyZWEge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGNvbG9yOiAjMEYzQzczO1xufVxuaW1nLnBlbi1pbWFnZSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG5pbWcuaW1hZ2UtZWlnaHQge1xuICAgIHdpZHRoOiA3MCU7XG59XG5cbi5pbWFnZS1zaG93IHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiAyZW07XG4gICAgbWFyZ2luOiAyZW07XG59XG5pbWcuYnV0dG9uLWltYWdlLWNyb3NzIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgaGVpZ2h0OiAxdmg7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLnVwZGF0ZS1idXR0b24ge1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBtYXJnaW4tYm90dG9tOiAyZW07XG59XG5cbi51cGRhdGUtYnV0dG9uOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4iXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts":
+/*!*******************************************************************************************!*\
+  !*** ./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts ***!
+  \*******************************************************************************************/
+/*! exports provided: EditSellerUserDetailsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditSellerUserDetailsComponent", function() { return EditSellerUserDetailsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+/* harmony import */ var _Model_listingSeller__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../Model/listingSeller */ "./src/app/Model/listingSeller.ts");
+/* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../http.service */ "./src/app/http.service.ts");
+/* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/fire/storage */ "./node_modules/@angular/fire/storage/es2015/index.js");
+
+
+
+
+
+
+
+
+
+
+let EditSellerUserDetailsComponent = class EditSellerUserDetailsComponent {
+    constructor(_Activatedroute, adminPanelService, postcodeService, dialog, _location, afStorage) {
+        this._Activatedroute = _Activatedroute;
+        this.adminPanelService = adminPanelService;
+        this.postcodeService = postcodeService;
+        this.dialog = dialog;
+        this._location = _location;
+        this.afStorage = afStorage;
+        this.listingSeller = new _Model_listingSeller__WEBPACK_IMPORTED_MODULE_4__["listingSeller"]();
+        this.applicable = [
+            "any",
+            "Garden",
+            "Driveway",
+            "Period Features",
+            "Garage",
+            "Gated Community",
+            "Loft Conversion",
+            "Conservatory/Sun room",
+            "Granny Annexe",
+            "Rear Extension"
+        ];
+        this.basePath = '/sellerimages';
+        this.isLoading = false;
+        this.sellerImages = [];
+        this.uploadImage = false;
+    }
+    ngOnInit() {
+        this.user = JSON.parse(localStorage.getItem("user"));
+        this.getUserDetails();
+        this.sub = this._Activatedroute.paramMap.subscribe((params) => {
+            this.sellerPropertyId = params.get("sellerPropertyId");
+            this.sellerUserId = params.get("sellerUserId");
+        });
+        this.getSellerAllDetails();
+    }
+    addMoreImages() {
+        this.uploadImage = true;
+    }
+    deleteField(FirstImage) {
+        console.log(FirstImage);
+        this.adminPanelService.deleteImageSeller(this.sellerUserId, this.sellerUserId);
+    }
+    importImages(event) {
+        this.isLoading = true;
+        this.uploads = [];
+        const filelist = event.target.files;
+        console.log(filelist);
+        if (filelist.length > 8) {
+            const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+                data: { message: "Upload Maximum  8 Images" }
+            });
+        }
+        else {
+            for (const file of filelist) {
+                if (file.size > 2000000) {
+                    const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+                        data: { message: "Images Size must be 2MB" }
+                    });
+                    this.isLoading = false;
+                }
+                else {
+                    const path = `files/${file.name}`;
+                    const ref = this.afStorage.ref(path);
+                    const task = this.afStorage.upload(path, file);
+                    const _percentage$ = task.percentageChanges();
+                    // create composed objects with different information. ADAPT THIS ACCORDING to YOUR NEED
+                    const uploadTrack = {
+                        fileName: file.name,
+                    };
+                    // push each upload into the array
+                    this.uploads.push(uploadTrack);
+                    if (this.uploads > 8) {
+                        const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+                            data: { message: "Upload Max 8 Images" }
+                        });
+                        this.isLoading = false;
+                    }
+                    else {
+                        // for every upload do whatever you want in firestore with the uploaded file
+                        const _t = task.then((f) => {
+                            return f.ref.getDownloadURL().then((url) => {
+                                this.sellerImages.push(url);
+                                // return this.afs.collection('files').add({
+                                //   name: f.metadata.name,
+                                // });
+                            });
+                        });
+                    }
+                }
+            }
+        }
+        this.isLoading = false;
+    }
+    chckImage(imageName) {
+        console.log(imageName);
+    }
+    backClicked() {
+        this._location.back();
+    }
+    getUserDetails() {
+        if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then((element) => {
+                this.username = element.data().Name;
+                this.image = element.data().Image;
+            });
+        }
+    }
+    getSellerAllDetails() {
+        this.adminPanelService.getSellerPrpertyDetails(this.sellerUserId, this.sellerPropertyId).then((elements) => {
+            this.SellerUserDetail = (elements.data());
+            this.listingSeller.Currentpostcode = elements.data().Currentpostcode;
+            this.listingSeller.CurrentAddress = elements.data().CurrentAddress;
+            this.listingSeller.CurrentTown = elements.data().CurrentTown;
+            this.listingSeller.Currentstate = elements.data().Currentstate;
+            this.listingSeller.PropertyFor = elements.data().PropertyFor;
+            this.listingSeller.LookingTown = elements.data().LookingTown;
+            this.listingSeller.Lookingstate = elements.data().Lookingstate;
+            this.listingSeller.Country = elements.data().Country;
+            this.listingSeller.LookingAddress = elements.data().LookingAddress;
+            this.listingSeller.PropertyType = elements.data().PropertyType;
+            this.listingSeller.Maxrooms = elements.data().Maxrooms;
+            this.listingSeller.Lookingpostcode = elements.data().Lookingpostcode;
+            this.listingSeller.MaxAmount = elements.data().MaxAmount;
+            this.listingSeller.ownership = elements.data().ownership;
+            this.listingSeller.Maxbathrooms = elements.data().Maxbathrooms;
+            this.listingSeller.Maxreception = elements.data().Maxreception;
+            this.listingSeller.PropertyCondition = elements.data().PropertyCondition;
+            this.listingSeller.Currentcountry = elements.data().Currentcountry;
+            this.FirstImage = elements.data().Images;
+            console.log(elements.data().Images.uid);
+            //this.listingSeller.features = elements.data().features
+        });
+    }
+    radio(event) {
+        this.filter = event;
+        if (this.filter == "buy") {
+            this.maxamounts = true;
+            this.letOption = false;
+            this.sellOption = true;
+        }
+        if (this.filter == "rent") {
+            this.maxamounts = true;
+            this.sellOption = false;
+            this.letOption = true;
+        }
+    }
+    radioChange(event) {
+        this.filter = event.value;
+        if (this.filter == "buy") {
+            this.maxamounts = true;
+            this.letOption = false;
+            this.sellOption = true;
+        }
+        if (this.filter == "rent") {
+            this.maxamounts = true;
+            this.sellOption = false;
+            this.letOption = true;
+        }
+    }
+    updateSellerDetails() {
+        this.sellerUSerUpdate();
+        this.postcodeService.getLat(this.listingSeller.Lookingpostcode.replace(/\s/g, "")).subscribe(data => {
+            this.postcodeCoordinates = data;
+            (this.listingSeller.longitude = this.postcodeCoordinates.result.longitude),
+                (this.listingSeller.latitude = this.postcodeCoordinates.result.latitude),
+                (this.listingSeller.UserId = this.sellerUserId);
+        });
+        this.listingSeller.UserId = this.sellerUserId;
+        this.listingSeller.longitude,
+            this.listingSeller.latitude,
+            this.listingSeller.Images = this.sellerImages;
+        this.adminPanelService.updateSellerListing(this.sellerUserId, this.sellerPropertyId, this.listingSeller).then(seller => {
+            this.isLoading = false;
+            const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+                data: { message: "User Detail Updated" }
+            });
+        });
+    }
+    sellerUSerUpdate() {
+        this.isLoading = true;
+        this.users = {
+            uid: this.sellerUserId,
+            Currentaddress: this.listingSeller.CurrentAddress,
+            Currentpostcode: this.listingSeller.Currentpostcode,
+            Currentstate: this.listingSeller.Currentstate,
+            CurrentTowncity: this.listingSeller.CurrentTown,
+            Currentcountry: this.listingSeller.Currentcountry
+        };
+        this.adminPanelService.usersellerupate(this.users).then((seller) => {
+            console.log(seller);
+        });
+    }
+    upload(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file) {
+                const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                this.task = this.afStorage.upload(filePath, file); // upload task
+                // this.progress = this.snapTask.percentageChanges();
+                (yield this.task).ref.getDownloadURL().then(url => {
+                    console.log(url);
+                    this.downloadableURL = url;
+                }); // <<< url is found here
+            }
+            this.isLoading = false;
+        });
+    }
+};
+EditSellerUserDetailsComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
+    { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_3__["AdminPanelService"] },
+    { type: _http_service__WEBPACK_IMPORTED_MODULE_5__["HttpService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatDialog"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_8__["Location"] },
+    { type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_9__["AngularFireStorage"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('file', { static: false })
+], EditSellerUserDetailsComponent.prototype, "FileView", void 0);
+EditSellerUserDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-edit-seller-user-details',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./edit-seller-user-details.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./edit-seller-user-details.component.css */ "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], EditSellerUserDetailsComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/uielements.component.css":
+/*!****************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/uielements.component.css ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".top-tab-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\n    text-align: center;\n    align-content: center;\n    /* background-color: #E8E8E8; */\n}\nspan.tab-text {\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    background-color: #E8E8E8;\n    font-size: 18px;\n\n}\n.mat-card-ui-elelment{\n    margin-top: 2em;\n  \n}\nimg.left-image-container {\n    height: 32vh;\n    margin: 1em 0em;\n    border: 1px solid;\n}\nimg.image-agent {\n    height: 18vh;\n}\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n    margin-top: 0em;\n}\n.agent-image-upload {\n\n    border: 1px solid #CBC7C7;;\n    border-radius: 10px;\n\n    padding-bottom: 1em;\n\n}\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\nimg.cross-image {\n    height: 1.5vh;\n}\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    padding: 1em;\n}\n.main-container-banner-image {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    align-items: center;\n}\nimg.pen-image {\n    height: 1.3vh;\n    padding-right: 10px;\n}\n.home-page-banner\n{\n    box-shadow: 3px 3px 5px 3px #ccc;\n    border-radius: 10px;\n}\n.mat-home-page-card {\n    margin: 1em 0em;\n    border-radius: 10px;\n    padding: 0em 1em;\n}\n.profile-heading.profile-heading-two {\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 13px;\n}\n.main-container-banner-image.image-journey-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1em;\n    margin-right: -3px;\n}\n.main-contianer-journey {\n    display: flex;\n    flex-direction: row;\n    margin-top: 1em;\n}\n.agent-image-upload.journey-image-container {\n    border-radius: 0px;\n}\n.main-contianer-journey {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 0em 0em;;\n}\n.agent-image-upload.journey-image-container {\n    width: 25vw;\n    border-radius: 10px;\n}\n.outputText {\n    color: var(--light-blue-color);\n    font-family: 'Roboto-Medium';\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-size: 1.2em;\n    font-weight: 500;\n}\ntextarea#w3review {\n    color: #0F3C73;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1em;\n\n    padding: 1em 6px;\n\n    border-radius: 10px;\n    border-color: #CBC7C7;\n}\n.full-width\n{\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 1em;\n}\n.main-container-uielements {\n    margin-right: 2em;\n    padding-top: 0em;\n    margin-top: 2em;\n    background-color: white;\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n \n}\n.tab-text {\n    padding: 0.5em;\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.1em;\n}\n.tab-text:hover\n{\n    cursor: pointer;\n}\n.highlight {\n    background: #E8E8E8;\n    height: 1vh;\n    /* position: relative; */\n    top: 18vh;\n    /* z-index: 1; */\n    width: 100%;\n}\n.mat-Notification {\n    margin: 0em 1em;\n}\n.text-area {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 1em 0em;\n}\n.notificationCard{\n    margin: 0em 2em;\n}\n.update-button {\n    margin: 2em;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3VpZWxlbWVudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsa0JBQWtCO0lBQ2xCLHFCQUFxQjtJQUNyQiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtJQUN6QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksZUFBZTs7QUFFbkI7QUFDQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCO0FBRUE7SUFDSSxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLG1CQUFtQjs7SUFFbkIsbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLG9CQUFvQjtJQUNwQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixZQUFZO0FBQ2hCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjtBQUdBO0lBQ0ksMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLFdBQVc7SUFDWCxhQUFhO0lBQ2Isa0NBQWtDO0lBQ2xDLGFBQWE7SUFDYixlQUFlO0FBQ25CO0FBRUE7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSw4QkFBOEI7SUFDOUIsNEJBQTRCO0lBQzVCLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYzs7SUFFZCxnQkFBZ0I7O0lBRWhCLG1CQUFtQjtJQUNuQixxQkFBcUI7QUFDekI7QUFDQTs7SUFFSSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQzs7QUFFcEM7QUFDQTtJQUNJLGNBQWM7O0lBRWQsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsV0FBVztJQUNYLHdCQUF3QjtJQUN4QixTQUFTO0lBQ1QsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCO0FBR0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VpZWxlbWVudHMvdWllbGVtZW50cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRvcC10YWItYmFyIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnIgMWZyIDFmciAxZnI7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4OyAqL1xufVxuc3Bhbi50YWItdGV4dCB7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuXG59XG5cbi5tYXQtY2FyZC11aS1lbGVsbWVudHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gIFxufVxuaW1nLmxlZnQtaW1hZ2UtY29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDMydmg7XG4gICAgbWFyZ2luOiAxZW0gMGVtO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkO1xufVxuXG5pbWcuaW1hZ2UtYWdlbnQge1xuICAgIGhlaWdodDogMTh2aDtcbn1cbi5pbWFnZS11c2VyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbjogMWVtO1xuICAgIG1hcmdpbi10b3A6IDBlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQge1xuXG4gICAgYm9yZGVyOiAxcHggc29saWQgI0NCQzdDNzs7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cbnNwYW4ubm90ZS1hcmVhIHtcbiAgICBjb2xvcjogI0IxQTlBOTtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5cbn1cbmltZy5jcm9zcy1pbWFnZSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1hcmdpbjogMC43ZW0gLTEuNWVtO1xuICAgIC8qIGJvcmRlci1yYWRpdXM6IDE3cHg7ICovXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIGhlaWdodDogMS41dmg7XG59XG4udXBsb2FkLWltYWdlLWZpcnN0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cblxuLm1haW4tY29udGFpbmVyLWJhbm5lci1pbWFnZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmltZy5wZW4taW1hZ2Uge1xuICAgIGhlaWdodDogMS4zdmg7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cbi5ob21lLXBhZ2UtYmFubmVyXG57XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbi5tYXQtaG9tZS1wYWdlLWNhcmQge1xuICAgIG1hcmdpbjogMWVtIDBlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIHBhZGRpbmc6IDBlbSAxZW07XG59XG5cblxuLnByb2ZpbGUtaGVhZGluZy5wcm9maWxlLWhlYWRpbmctdHdvIHtcbiAgICB3aWR0aDogbWF4LWNvbnRlbnQ7XG4gICAgcGFkZGluZy1yaWdodDogMTNweDtcbn1cblxuLm1haW4tY29udGFpbmVyLWJhbm5lci1pbWFnZS5pbWFnZS1qb3VybmV5LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogLTNweDtcbn1cbi5tYWluLWNvbnRpYW5lci1qb3VybmV5IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLmFnZW50LWltYWdlLXVwbG9hZC5qb3VybmV5LWltYWdlLWNvbnRhaW5lciB7XG4gICAgYm9yZGVyLXJhZGl1czogMHB4O1xufVxuXG4ubWFpbi1jb250aWFuZXItam91cm5leSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiAyZW07XG4gICAgbWFyZ2luOiAwZW0gMGVtOztcbn1cblxuLmFnZW50LWltYWdlLXVwbG9hZC5qb3VybmV5LWltYWdlLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDI1dnc7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLm91dHB1dFRleHQge1xuICAgIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBmb250LXdlaWdodDogNTAwO1xufVxudGV4dGFyZWEjdzNyZXZpZXcge1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMWVtO1xuXG4gICAgcGFkZGluZzogMWVtIDZweDtcblxuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm9yZGVyLWNvbG9yOiAjQ0JDN0M3O1xufVxuLmZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItdWllbGVtZW50cyB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgcGFkZGluZy10b3A6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiBcbn1cbi50YWItdGV4dCB7XG4gICAgcGFkZGluZzogMC41ZW07XG5cbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMWVtO1xufVxuLnRhYi10ZXh0OmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmhpZ2hsaWdodCB7XG4gICAgYmFja2dyb3VuZDogI0U4RThFODtcbiAgICBoZWlnaHQ6IDF2aDtcbiAgICAvKiBwb3NpdGlvbjogcmVsYXRpdmU7ICovXG4gICAgdG9wOiAxOHZoO1xuICAgIC8qIHotaW5kZXg6IDE7ICovXG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubWF0LU5vdGlmaWNhdGlvbiB7XG4gICAgbWFyZ2luOiAwZW0gMWVtO1xufVxuLnRleHQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG5cblxuLm5vdGlmaWNhdGlvbkNhcmR7XG4gICAgbWFyZ2luOiAwZW0gMmVtO1xufVxuLnVwZGF0ZS1idXR0b24ge1xuICAgIG1hcmdpbjogMmVtO1xufVxuIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/uielements.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/uielements.component.ts ***!
+  \***************************************************************/
+/*! exports provided: UIElementsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UIElementsComponent", function() { return UIElementsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../cms.service */ "./src/app/cms.service.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/fire/storage */ "./node_modules/@angular/fire/storage/es2015/index.js");
+/* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+/* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _Model_blog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../Model/blog */ "./src/app/Model/blog.ts");
+/* harmony import */ var _Model_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../Model/footer */ "./src/app/Model/footer.ts");
+
+
+
+
+
+
+
+
+
+
+
+let UIElementsComponent = class UIElementsComponent {
+    constructor(adminPanelService, CMSSERVICE, _location, afs, afStorage, dialog) {
+        this.adminPanelService = adminPanelService;
+        this.CMSSERVICE = CMSSERVICE;
+        this._location = _location;
+        this.afs = afs;
+        this.afStorage = afStorage;
+        this.dialog = dialog;
+        this.homePage = true;
+        this.Notification = false;
+        this.SellerDetails = false;
+        this.BuyerDetails = false;
+        this.PrivacyPolicy = false;
+        this.TermConditon = false;
+        this.imageUplaod = true;
+        this.Step3Image = null;
+        this.allBlogs = [];
+        this.isLoading = false;
+        this.basePath = '/images';
+        this.bannerUpload = true;
+        this.filename = " ";
+        this.BannerTwo = true;
+        this.topBannerImage = null;
+        this.secondBanner = null;
+        this.step1ImageNew = null;
+        this.step2ImageNew = null;
+        this.step3ImageNew = null;
+        this.step1NotUpload = true;
+        this.step2NotUpload = true;
+        this.step3NotUpload = true;
+        this.newBlogImage = null;
+        this.addNewBlog = false;
+        this.sellerFormRight = false;
+        this.blog = new _Model_blog__WEBPACK_IMPORTED_MODULE_9__["blog"]();
+        this.footer = new _Model_footer__WEBPACK_IMPORTED_MODULE_10__["footer"]();
+        this.seller = null;
+        this.buyer = null;
+    }
+    ngOnInit() {
+        this.user = JSON.parse(localStorage.getItem("user"));
+        document.getElementById("home").style.background = "white";
+        document.getElementById("home").style.border = "none";
+        document.getElementById("home").style.borderTop = "3px solid #E8E8E8";
+        document.getElementById("notification").style.border = "1px solid #707070";
+        document.getElementById("seller").style.border = "1px solid #707070";
+        document.getElementById("privacy").style.border = "1px solid #707070";
+        document.getElementById("buyer").style.border = "1px solid #707070";
+        document.getElementById("terms").style.border = "1px solid #707070";
+        document.getElementById("notification").style.background = "#E8E8E8";
+        document.getElementById("seller").style.background = "#E8E8E8";
+        document.getElementById("privacy").style.background = "#E8E8E8";
+        document.getElementById("buyer").style.background = "#E8E8E8";
+        document.getElementById("terms").style.background = "#E8E8E8";
+        this.getUserDetails();
+        this.bannerImages();
+        this.getBlogs();
+        this.getFooter();
+        this.getNotification();
+        this.getFormImage();
+        this.getPrivacyPolicy();
+        this.getTerms();
+    }
+    updateTerms() {
+        this.isLoading = true;
+        this.noti = {
+            Terms: this.Terms
+        };
+        this.CMSSERVICE.updateTerms(this.noti);
+        this.isLoading = false;
+        const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: { message: "User Detail Updated" }
+        });
+    }
+    updatePrivacyTerms() {
+        this.isLoading = true;
+        this.noti = {
+            Privacy: this.Privacy
+        };
+        this.CMSSERVICE.updatePrivacy(this.noti);
+        this.isLoading = false;
+        const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: { message: "User Detail Updated" }
+        });
+    }
+    sellerEdit() {
+        this.sellerFormRight = true;
+    }
+    updateSellerBuyer() {
+        this.isLoading = true;
+        if (this.seller != null) {
+            this.seller;
+        }
+        else {
+            this.seller = this.SellerPropertyRightImage;
+        }
+        if (this.buyer != null) {
+            this.buyer;
+        }
+        else {
+            this.buyer = this.BuyerPropertyRightImages;
+        }
+        this.noti = {
+            BuyerPropertyRightImages: this.buyer,
+            SellerPropertyRightImage: this.seller
+        };
+        this.CMSSERVICE.updateSellerBuyerImage(this.noti);
+        this.isLoading = false;
+        const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: { message: "User Detail Updated" }
+        });
+    }
+    buyerupload(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        this.buyer = url;
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    sellerupload(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        this.seller = url;
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    updateNotification() {
+        this.isLoading = true;
+        this.noti = {
+            SingupFromMenu: this.SingupFromMenu,
+            MynestimateBuyerDetails: this.MynestimateBuyerDetails
+        };
+        this.CMSSERVICE.updateBlueNotifiaction(this.noti);
+        this.isLoading = false;
+        const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: { message: "User Detail Updated" }
+        });
+    }
+    updateDetails() {
+        this.updateHomeBannerImage();
+    }
+    updateHomeBannerImage() {
+        this.isLoading = true;
+        if (this.topBannerImage != null) {
+            this.topBannerImage;
+        }
+        else {
+            this.topBannerImage = this.bannerUrl;
+        }
+        if (this.secondBanner != null) {
+            this.secondBanner;
+        }
+        else {
+            this.secondBanner = this.SecondBannerImage;
+        }
+        if (this.step1ImageNew != null) {
+            this.step1ImageNew;
+        }
+        else {
+            this.step1ImageNew = this.Step1Image;
+        }
+        if (this.step2ImageNew != null) {
+            this.step2ImageNew;
+        }
+        else {
+            this.step2ImageNew = this.Step2Image;
+        }
+        if (this.step3ImageNew != null) {
+            this.step3ImageNew;
+        }
+        else {
+            this.step3ImageNew = this.Step3Image;
+        }
+        this.homeupdate = {
+            BannerImageUrl: this.topBannerImage,
+            SecondBannerImage: this.secondBanner,
+            Step1Image: this.step1ImageNew,
+            Step1ImageText: this.Step1ImageText,
+            Step2ImageText: this.Step2ImageText,
+            Step2Image: this.step2ImageNew,
+            Step3Image: this.step3ImageNew,
+            Step3ImageText: this.Step3ImageText
+        };
+        this.CMSSERVICE.updateHomePageImages("1", this.homeupdate);
+        this.addBlog();
+        this.updateFooter();
+        this.isLoading = false;
+        const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: { message: "User Detail Updated" }
+        });
+    }
+    updateFooter() {
+        this.footers = {
+            Facebook: this.footer.Facebook,
+            Instragram: this.footer.Instragram,
+            Twitter: this.footer.Twitter
+        };
+        this.CMSSERVICE.updateFooter("1", this.footers);
+    }
+    addMoreBlog() {
+        this.addNewBlog = true;
+    }
+    addBlog() {
+        if (this.newBlogImage != null) {
+            this.blog.BlogImage = this.newBlogImage;
+            this.CMSSERVICE.createBlog(this.user.uid, this.blog);
+        }
+    }
+    step3UploadImag() {
+        this.step3NotUpload = false;
+    }
+    step2UploadImage() {
+        this.step2NotUpload = false;
+    }
+    step1UploadImage() {
+        this.step1NotUpload = false;
+    }
+    uploadTopBannerImage() {
+        this.bannerUpload = false;
+    }
+    uplodSecondImage() {
+        this.BannerTwo = false;
+    }
+    newBlogPicture(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        console.log(url);
+                        this.newBlogImage = url;
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    step3upload(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        this.step3ImageNew = url;
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    step2upload(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        this.step2ImageNew = url;
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    step1upload(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        this.step1ImageNew = url;
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    upload(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        this.topBannerImage = url;
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    LoweBanner(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                this.task = this.afStorage.upload(filePath, file); // upload task
+                // this.progress = this.snapTask.percentageChanges();
+                (yield this.task).ref.getDownloadURL().then(url => {
+                    this.secondBanner = url;
+                }); // <<< url is found here
+            }
+            this.isLoading = false;
+        });
+    }
+    backClicked() {
+        this._location.back();
+    }
+    getSelected() {
+        this.CMSSERVICE.getUserBlog(this.user.uid).then((data) => {
+            data.forEach(element => {
+                this.allBlogs.push(element.data());
+            });
+        });
+    }
+    getTerms() {
+        this.CMSSERVICE.getTermsCondition().then((data) => {
+            data.forEach(element => {
+                this.Terms = element.data().Terms;
+            });
+        });
+    }
+    getPrivacyPolicy() {
+        this.CMSSERVICE.getPrivacyPolicy().then((data) => {
+            data.forEach(element => {
+                this.Privacy = element.data().Privacy;
+            });
+        });
+    }
+    getFormImage() {
+        this.CMSSERVICE.getFormImages().then((data) => {
+            data.forEach(element => {
+                this.BuyerPropertyRightImages = element.data().BuyerPropertyRightImages;
+                this.SellerPropertyRightImage = element.data().SellerPropertyRightImage;
+            });
+        });
+    }
+    getNotification() {
+        this.CMSSERVICE.getBlueNotification(this.user.uid).then((element) => {
+            this.MynestimateBuyerDetails = element.data().MynestimateBuyerDetails;
+            this.SingupFromMenu = element.data().SingupFromMenu;
+        });
+    }
+    getFooter() {
+        this.CMSSERVICE.getFooter().then((footer) => {
+            footer.forEach(element => {
+                this.footer.Facebook = element.data().Facebook;
+                this.footer.Instragram = element.data().Instragram;
+                this.footer.Twitter = element.data().Twitter;
+            });
+        });
+    }
+    getBlogs() {
+        this.CMSSERVICE.getUserBlog(this.user.uid).then((data) => {
+            data.forEach(element => {
+                this.allBlogs.push(element.data());
+            });
+        });
+    }
+    bannerImages() {
+        this.CMSSERVICE.getHomePage(this.user.uid).then((banner) => {
+            banner.forEach(element => {
+                this.homePageData = element.data();
+                this.bannerUrl = element.data().BannerImageUrl;
+                this.SecondBannerImage = element.data().SecondBannerImage;
+                this.Step1Image = element.data().Step1Image;
+                this.Step1ImageText = element.data().Step1ImageText;
+                this.Step2ImageText = element.data().Step2ImageText;
+                this.Step2Image = element.data().Step2Image;
+                this.Step3Image = element.data().Step3Image;
+                this.Step3ImageText = element.data().Step3ImageText;
+            });
+        });
+    }
+    homePages() {
+        this.homePage = true;
+        this.Notification = false;
+        this.SellerDetails = false;
+        this.BuyerDetails = false;
+        this.PrivacyPolicy = false;
+        this.TermConditon = false;
+        document.getElementById("home").style.background = "white";
+        document.getElementById("notification").style.background = "#E8E8E8";
+        document.getElementById("seller").style.background = "#E8E8E8";
+        document.getElementById("privacy").style.background = "#E8E8E8";
+        document.getElementById("buyer").style.background = "#E8E8E8";
+        document.getElementById("terms").style.background = "#E8E8E8";
+        document.getElementById("home").style.border = "none";
+        document.getElementById("notification").style.border = "1px solid #707070";
+        document.getElementById("seller").style.border = "1px solid #707070";
+        document.getElementById("privacy").style.border = "1px solid #707070";
+        document.getElementById("buyer").style.border = "1px solid #707070";
+        document.getElementById("terms").style.border = "1px solid #707070";
+        document.getElementById("home").style.borderTop = "3px solid #E8E8E8";
+    }
+    Notifications() {
+        this.homePage = false;
+        this.Notification = true;
+        this.SellerDetails = false;
+        this.BuyerDetails = false;
+        this.PrivacyPolicy = false;
+        this.TermConditon = false;
+        document.getElementById("home").style.background = "#E8E8E8";
+        document.getElementById("notification").style.background = "white";
+        document.getElementById("seller").style.background = "#E8E8E8";
+        document.getElementById("buyer").style.background = "#E8E8E8";
+        document.getElementById("privacy").style.background = "#E8E8E8";
+        document.getElementById("terms").style.background = "#E8E8E8";
+        document.getElementById("home").style.border = "1px solid #707070";
+        document.getElementById("notification").style.border = "none";
+        document.getElementById("seller").style.border = "1px solid #707070";
+        document.getElementById("privacy").style.border = "1px solid #707070";
+        document.getElementById("buyer").style.border = "1px solid #707070";
+        document.getElementById("terms").style.border = "1px solid #707070";
+        document.getElementById("notification").style.borderTop = "3px solid #E8E8E8";
+    }
+    SellerDetail() {
+        this.homePage = false;
+        this.Notification = false;
+        this.SellerDetails = true;
+        this.BuyerDetails = false;
+        this.PrivacyPolicy = false;
+        this.TermConditon = false;
+        document.getElementById("home").style.background = "#E8E8E8";
+        document.getElementById("notification").style.background = "#E8E8E8";
+        document.getElementById("seller").style.background = "white";
+        document.getElementById("buyer").style.background = "#E8E8E8";
+        document.getElementById("privacy").style.background = "#E8E8E8";
+        document.getElementById("terms").style.background = "#E8E8E8";
+        document.getElementById("home").style.border = "1px solid #707070";
+        document.getElementById("notification").style.border = "1px solid #707070";
+        document.getElementById("seller").style.border = "none";
+        document.getElementById("privacy").style.border = "1px solid #707070";
+        document.getElementById("buyer").style.border = "1px solid #707070";
+        document.getElementById("terms").style.border = "1px solid #707070";
+        document.getElementById("seller").style.borderTop = "3px solid #E8E8E8";
+    }
+    BuyerDetail() {
+        this.homePage = false;
+        this.Notification = false;
+        this.SellerDetails = false;
+        this.BuyerDetails = true;
+        this.PrivacyPolicy = false;
+        this.TermConditon = false;
+        document.getElementById("home").style.background = "#E8E8E8";
+        document.getElementById("notification").style.background = "#E8E8E8";
+        document.getElementById("seller").style.background = "#E8E8E8";
+        document.getElementById("buyer").style.background = "white";
+        document.getElementById("privacy").style.background = "#E8E8E8";
+        document.getElementById("terms").style.background = "#E8E8E8";
+        document.getElementById("home").style.border = "1px solid #707070";
+        document.getElementById("notification").style.border = "1px solid #707070";
+        document.getElementById("seller").style.border = "1px solid #707070";
+        document.getElementById("privacy").style.border = "1px solid #707070";
+        document.getElementById("buyer").style.border = "none";
+        document.getElementById("terms").style.border = "1px solid #707070";
+        document.getElementById("buyer").style.borderTop = "3px solid #E8E8E8";
+    }
+    privacy() {
+        this.homePage = false;
+        this.Notification = false;
+        this.SellerDetails = false;
+        this.BuyerDetails = false;
+        this.PrivacyPolicy = true;
+        this.TermConditon = false;
+        document.getElementById("home").style.background = "#E8E8E8";
+        document.getElementById("notification").style.background = "#E8E8E8";
+        document.getElementById("seller").style.background = "#E8E8E8";
+        document.getElementById("buyer").style.background = "#E8E8E8";
+        document.getElementById("privacy").style.background = "white";
+        document.getElementById("terms").style.background = "#E8E8E8";
+        document.getElementById("home").style.border = "1px solid #707070";
+        document.getElementById("notification").style.border = "1px solid #707070";
+        document.getElementById("seller").style.border = "1px solid #707070";
+        document.getElementById("privacy").style.border = "none";
+        document.getElementById("buyer").style.border = "1px solid #707070";
+        document.getElementById("terms").style.border = "1px solid #707070";
+        document.getElementById("privacy").style.borderTop = "3px solid #E8E8E8";
+    }
+    terms() {
+        this.homePage = false;
+        this.Notification = false;
+        this.SellerDetails = false;
+        this.BuyerDetails = false;
+        this.PrivacyPolicy = false;
+        this.TermConditon = true;
+        document.getElementById("home").style.background = "#E8E8E8";
+        document.getElementById("notification").style.background = "#E8E8E8";
+        document.getElementById("seller").style.background = "#E8E8E8";
+        document.getElementById("buyer").style.background = "#E8E8E8";
+        document.getElementById("privacy").style.background = "#E8E8E8";
+        document.getElementById("terms").style.background = "white";
+        document.getElementById("home").style.border = "1px solid #707070";
+        document.getElementById("notification").style.border = "1px solid #707070";
+        document.getElementById("seller").style.border = "1px solid #707070";
+        document.getElementById("privacy").style.border = "1px solid #707070";
+        document.getElementById("buyer").style.border = "1px solid #707070";
+        document.getElementById("terms").style.border = "none";
+        document.getElementById("terms").style.borderTop = "3px solid #E8E8E8";
+    }
+    getUserDetails() {
+        if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then((element) => {
+                this.username = element.data().Name;
+                this.image = element.data().Image;
+            });
+        }
+    }
+};
+UIElementsComponent.ctorParameters = () => [
+    { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"] },
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_3__["CMSSERVICE"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"] },
+    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__["AngularFirestore"] },
+    { type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_5__["AngularFireStorage"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialog"] }
+];
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('file', { static: false })
+], UIElementsComponent.prototype, "FileView", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('form', { static: false })
+], UIElementsComponent.prototype, "form", void 0);
+UIElementsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-uielements',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./uielements.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./uielements.component.css */ "./src/app/AdminPanel/uielements/uielements.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], UIElementsComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.css":
 /*!**************************************************************************!*\
   !*** ./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.css ***!
@@ -1322,7 +3467,7 @@ AdminPanelService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n.user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n}\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\nspan.button-size {\n    font-size: 20px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n.tab-area {\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n\n}\n.search-field\n{\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n}\n.user-tab {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n    border-bottom: 2px solid #000000;\n    padding: 0px 1em;\n}\n.agent-tab{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n   margin-left: 3em;\n    border-bottom: 2px solid #000000;\n    padding: 0px 1em;\n}\nimg.user-image {\n    height: 4vh;\n}\n.user-count {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.user-counter {\n    display: flex;\n    justify-content: space-evenly;\n    padding: 0.5em;\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 3px 3px 5px 6px #ccc;\n    margin-right: 2em;\n    flex-direction: column;\n}\n.user-count-text {\n    text-align: center;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    color: var(--light-blue-color);\n    font-size: 2.7em;\n    padding-left: 10px;\n\n}\n.Main-tab-area-container {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    align-content: center;\n    justify-content: center;\n    margin-top: 2em;\n}\n.heading-count-text {\n    text-align: right;\n    color: #0F3C73;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    padding-left: 2em;\n}\n.user-count-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 1.5em;\n    padding-left: 10px;\n}\n.user-count-area-main {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}\nspan.border-right {\n    border: 1px solid #00000029;\n    height: 3em;\n    margin-bottom: 10px;\n}\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.4fr;\n    margin-right: 2em;\n    margin-top: 2em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n}\n.user-details {\n    display: grid;\n    grid-template-columns: 1.3fr 1fr 1fr 1fr;\n}\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.example-margin {\n    padding-right: 10px;\n}\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n.tab-content-email {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    margin-right: 2em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n.cursor-show\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1hZ2VudC10YWIvdXNlcnMtYWdlbnQtdGFiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCO0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0lBQ25CLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsbUJBQW1COztBQUV2QjtBQUNBOztJQUVJLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZ0NBQWdDO0lBQ2hDLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztHQUNmLGdCQUFnQjtJQUNmLGdDQUFnQztJQUNoQyxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7SUFDN0IsY0FBYztJQUNkLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLGlCQUFpQjtJQUNqQixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLDhCQUE4QjtJQUM5QixnQkFBZ0I7SUFDaEIsa0JBQWtCOztBQUV0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLGtDQUFrQztJQUNsQyxxQkFBcUI7SUFDckIsdUJBQXVCO0lBQ3ZCLGVBQWU7QUFDbkI7QUFHQTtJQUNJLGlCQUFpQjtJQUNqQixjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsaUJBQWlCO0FBQ3JCO0FBQ0E7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsNkJBQTZCO0FBQ2pDO0FBQ0E7SUFDSSwyQkFBMkI7SUFDM0IsV0FBVztJQUNYLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLDhDQUE4QztJQUM5QyxpQkFBaUI7SUFDakIsZUFBZTtJQUNmLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isd0NBQXdDO0FBQzVDO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLHVCQUF1QjtJQUN2QixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixpQkFBaUI7QUFDckI7QUFFQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix3QkFBd0I7SUFDeEIsdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQztBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvdXNlcnMtYWdlbnQtdGFiL3VzZXJzLWFnZW50LXRhYi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG4udXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcbiAgICBwYWRkaW5nLXRvcDogOHZoO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNGOUY5Rjk7XG59XG4udG9wLWJhci1oZWFkZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuLnRvcC1iYXItdXNlci1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xuICBjb2xvcjogIzBGM0M3Mztcbn1cbi5sb3dlci10ZXh0LWhlYWRpbmdcbntcbmNvbG9yOiAjMUVBQUZBO1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcbmZvbnQtc2l6ZTogMjBweDtcbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi50YWItYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuLnNlYXJjaC1maWVsZFxue1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtZW5kO1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG5cbi51c2VyLXRhYiB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjVlbTtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgIzAwMDAwMDtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xufVxuLmFnZW50LXRhYntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgbWFyZ2luLWxlZnQ6IDNlbTtcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgIzAwMDAwMDtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xufVxuaW1nLnVzZXItaW1hZ2Uge1xuICAgIGhlaWdodDogNHZoO1xufVxuLnVzZXItY291bnQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnVzZXItY291bnRlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgICBwYWRkaW5nOiAwLjVlbTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxNnB4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDZweCAjY2NjO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4udXNlci1jb3VudC10ZXh0IHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICAgIGZvbnQtc2l6ZTogMi43ZW07XG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xuXG59XG4uTWFpbi10YWItYXJlYS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAyZnIgMWZyIDFmcjtcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xufVxuXG5cbi5oZWFkaW5nLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtc2l6ZTogMS4zZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG59XG4udXNlci1jb3VudC1oZWFkaW5nXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAxLjVlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG4udXNlci1jb3VudC1hcmVhLW1haW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuc3Bhbi5ib3JkZXItcmlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDAyOTtcbiAgICBoZWlnaHQ6IDNlbTtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuXG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC40ZnI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLnVzZXItZGV0YWlscyB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDEuM2ZyIDFmciAxZnIgMWZyO1xufVxuLnVpZC1jb250ZW50IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuLmV4YW1wbGUtbWFyZ2luIHtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuXG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG5cbi50YWItY29udGVudC1lbWFpbCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi51c2VyLWNvbnRlbnQtbG93ZXItcmVzdWx0IHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC41ZnI7XG4gICAgbWFyZ2luLWxlZnQ6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgLyogbWFyZ2luLWJvdHRvbTogMWVtOyAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLm1haW4tY29udGFpbmVyLXJlc3VsdC11c2VycyB7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbn1cbi50ZXh0LW91dHB1dC10YWItY29udGVudHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLmN1cnNvci1zaG93XG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n.user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n\n}\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n}\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\nspan.button-size {\n    font-size: 20px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n.tab-area {\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n\n}\n.search-field\n{\n    display: flex;\n    align-items: center;\n    justify-content: unset;\n    border-bottom: 1px solid black;\n    width: 16vw;\n\n}\n.user-tab {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\n.agent-tab{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n   margin-left: 3em;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\nimg.user-image {\n    height: 4vh;\n}\n.user-count {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.user-counter {\n    display: flex;\n    justify-content: space-evenly;\n    padding: 0.5em;\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 3px 3px 5px 6px #ccc;\n    margin-right: 2em;\n    flex-direction: column;\n}\n.user-count-text {\n    text-align: center;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    color: var(--light-blue-color);\n    font-size: 2.7em;\n    padding-left: 10px;\n\n}\n.Main-tab-area-container {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    align-content: center;\n    justify-content: center;\n    margin-top: 2em;\n    align-items: flex-end;\n}\n.heading-count-text {\n    text-align: right;\n    color: #0F3C73;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    padding-left: 2em;\n}\n.user-count-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 1.5em;\n    padding-left: 10px;\n}\n.user-count-area-main {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}\nspan.border-right {\n    border: 1px solid #00000029;\n    height: 3em;\n    margin-bottom: 10px;\n}\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.4fr;\n    margin-right: 2em;\n    margin-top: 2em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n    display: flex;\n    align-items: center;\n}\n.user-details {\n    display: grid;\n    grid-template-columns: 1.3fr 1fr 1fr 1fr;\n}\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.example-margin {\n    padding-right: 10px;\n}\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n.tab-content-email {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    margin-right: 2em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1em;\n    color: #030303;\n}\n.cursor-show\n{\n    cursor: pointer;\n}\n.user-content-top-heading.agent-content-top-heading {\n    grid-template-columns: 0.5fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr;\n}\n.user-content-lower-result.agent-content-lower-result{\n    grid-template-columns: 0.5fr 0.8fr 0.8fr 1fr 1fr 0.7fr;\n}\n.add-agent-overlay{\n    position: fixed;\n    background-color: #0000008c;\n    width: 100vw;\n    top: 0;\n    height: 100vh;\n}\n.add-agent-background {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.full-width\n{\n    width: 100%;\n}\n.wrapper-add-agent {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n}\nimg.image-cross-image {\n    height: 2vh;\n}\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.add-agent-top-headin {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 1em;\n}\n.add_more_button{\n    padding: 0.7em !important;\n}\nimg.serach-icon-image {\n    height: 2vh;\n}\n.search-icon {\n    margin-left: 2em;\n    margin-top: 10px;\n}\n.agent-tab:hover\n{\n    cursor: pointer;\n}\n.user-tab:hover{\n    cursor: pointer;\n}\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\nimg.down-side-arrow {\n    /* height: 1.5vh; */\n    margin-left: 10px;\n    width: 1em;\n}\n.checkbox-image {\n    display: flex;\n    align-items: center;\n}\nform.example-form {\n    margin-bottom: -1em;\n}\n.search-icon:hover\n{\n    cursor:pointer;\n}\n.inner-job-title {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n    width: 200px;\n    height: 200px;\n    overflow: overlay;\n}\n.job-title-content {\n    text-align: center;\n    font-size: 1.2em;\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n}\n.overlay-black-back {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.select-job-title-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n}\nimg.serach-icon-image-job-title {\n    height: 2vh;\n}\n.selct-job-title-text\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n    font-size: 16px;\n}\n.text-heading-tab-content:hover\n{\n    cursor:pointer;\n}\n.select-job-title-image-close:hover\n{\n    cursor:pointer;\n}\n.job-title-content:hover\n{\n    cursor:pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1hZ2VudC10YWIvdXNlcnMtYWdlbnQtdGFiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCO0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTs7QUFFZjtBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLG1CQUFtQjs7QUFFdkI7QUFDQTs7SUFFSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsV0FBVzs7QUFFZjtBQUVBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7R0FDZixnQkFBZ0I7SUFDZixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLGNBQWM7SUFDZCx1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxpQkFBaUI7SUFDakIsc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQiw4QkFBOEI7SUFDOUIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixrQ0FBa0M7SUFDbEMscUJBQXFCO0lBQ3JCLHVCQUF1QjtJQUN2QixlQUFlO0lBQ2YscUJBQXFCO0FBQ3pCO0FBR0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYix3Q0FBd0M7QUFDNUM7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhDQUE4QztJQUM5QyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHdCQUF3QjtJQUN4Qix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSx3REFBd0Q7QUFDNUQ7QUFDQTtJQUNJLHNEQUFzRDtBQUMxRDtBQUNBO0lBQ0ksZUFBZTtJQUNmLDJCQUEyQjtJQUMzQixZQUFZO0lBQ1osTUFBTTtJQUNOLGFBQWE7QUFDakI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxXQUFXO0FBQ2Y7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSx5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUVBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsVUFBVTtBQUNkO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBSUE7SUFDSSx1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZUFBZTtJQUNmLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksY0FBYztBQUNsQjtBQUNBOztJQUVJLGNBQWM7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VzZXJzLWFnZW50LXRhYi91c2Vycy1hZ2VudC10YWIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG4gICAgcGFkZGluZy10b3A6IDh2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG5cbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi50YWItYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuLnNlYXJjaC1maWVsZFxue1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2V0O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICB3aWR0aDogMTZ2dztcblxufVxuXG4udXNlci10YWIge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgcGFkZGluZzogMHB4IDFlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogN3B4O1xufVxuLmFnZW50LXRhYntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgbWFyZ2luLWxlZnQ6IDNlbTtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xuICAgIHBhZGRpbmctYm90dG9tOiA3cHg7XG59XG5pbWcudXNlci1pbWFnZSB7XG4gICAgaGVpZ2h0OiA0dmg7XG59XG4udXNlci1jb3VudCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1jb3VudGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIHBhZGRpbmc6IDAuNWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggNnB4ICNjY2M7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi51c2VyLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgZm9udC1zaXplOiAyLjdlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG5cbn1cbi5NYWluLXRhYi1hcmVhLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDJmciAxZnIgMWZyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtZW5kO1xufVxuXG5cbi5oZWFkaW5nLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtc2l6ZTogMS4zZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG59XG4udXNlci1jb3VudC1oZWFkaW5nXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAxLjVlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG4udXNlci1jb3VudC1hcmVhLW1haW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuc3Bhbi5ib3JkZXItcmlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDAyOTtcbiAgICBoZWlnaHQ6IDNlbTtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuXG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC40ZnI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi51c2VyLWRldGFpbHMge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxLjNmciAxZnIgMWZyIDFmcjtcbn1cbi51aWQtY29udGVudCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi5leGFtcGxlLW1hcmdpbiB7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cblxuaW1nLmljb24tYWN0aW9uIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xufVxuXG4udGFiLWNvbnRlbnQtZW1haWwge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuNWZyIDFmciAxZnIgMWZyIDAuNWZyO1xuICAgIG1hcmdpbi1sZWZ0OiAwZW07XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIC8qIG1hcmdpbi1ib3R0b206IDFlbTsgKi9cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTNweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4uY3Vyc29yLXNob3dcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nLmFnZW50LWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMC43ZnIgMC44ZnIgMWZyIDEuMmZyIDAuNGZyO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQuYWdlbnQtY29udGVudC1sb3dlci1yZXN1bHR7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjVmciAwLjhmciAwLjhmciAxZnIgMWZyIDAuN2ZyO1xufVxuLmFkZC1hZ2VudC1vdmVybGF5e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwOGM7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIHRvcDogMDtcbiAgICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uYWRkLWFnZW50LWJhY2tncm91bmQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4uZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLndyYXBwZXItYWRkLWFnZW50IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuaW1nLmltYWdlLWNyb3NzLWltYWdlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cblxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uYWRkLWFnZW50LXRvcC1oZWFkaW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG5cbi5hZGRfbW9yZV9idXR0b257XG4gICAgcGFkZGluZzogMC43ZW0gIWltcG9ydGFudDtcbn1cbmltZy5zZXJhY2gtaWNvbi1pbWFnZSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG4uc2VhcmNoLWljb24ge1xuICAgIG1hcmdpbi1sZWZ0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cblxuLmFnZW50LXRhYjpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi51c2VyLXRhYjpob3ZlcntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5zcGFuLmxpbmUtaGVpZ2h0IHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjQzFCQkJCO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG59XG5pbWcuZG93bi1zaWRlLWFycm93IHtcbiAgICAvKiBoZWlnaHQ6IDEuNXZoOyAqL1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgIHdpZHRoOiAxZW07XG59XG4uY2hlY2tib3gtaW1hZ2Uge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmZvcm0uZXhhbXBsZS1mb3JtIHtcbiAgICBtYXJnaW4tYm90dG9tOiAtMWVtO1xufVxuLnNlYXJjaC1pY29uOmhvdmVyXG57XG4gICAgY3Vyc29yOnBvaW50ZXI7XG59XG5cblxuXG4uaW5uZXItam9iLXRpdGxlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICB3aWR0aDogMjAwcHg7XG4gICAgaGVpZ2h0OiAyMDBweDtcbiAgICBvdmVyZmxvdzogb3ZlcmxheTtcbn1cbi5qb2ItdGl0bGUtY29udGVudCB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDo1MDA7XG59XG4ub3ZlcmxheS1ibGFjay1iYWNrIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuLnNlbGVjdC1qb2ItdGl0bGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuaW1nLnNlcmFjaC1pY29uLWltYWdlLWpvYi10aXRsZSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG4uc2VsY3Qtam9iLXRpdGxlLXRleHRcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6NTAwO1xuICAgIGZvbnQtc2l6ZTogMTZweDtcbn1cbi50ZXh0LWhlYWRpbmctdGFiLWNvbnRlbnQ6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn1cbi5zZWxlY3Qtam9iLXRpdGxlLWltYWdlLWNsb3NlOmhvdmVyXG57XG4gICAgY3Vyc29yOnBvaW50ZXI7XG59XG4uam9iLXRpdGxlLWNvbnRlbnQ6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn0iXX0= */");
 
 /***/ }),
 
@@ -1339,21 +3484,157 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var _admin_auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../admin.auth.service */ "./src/app/AdminPanel/admin.auth.service.ts");
+/* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
+
+
+
 
 
 
 let UsersAgentTabComponent = class UsersAgentTabComponent {
-    constructor(adminPanelService) {
+    constructor(adminPanelService, AdminAuthService, dialog) {
         this.adminPanelService = adminPanelService;
+        this.AdminAuthService = AdminAuthService;
+        this.dialog = dialog;
         this.allUser = [];
         this.allAgent = [];
         this.allUserDetails = [];
+        this.usersTab = true;
+        this.addNewUser = false;
+        this.hide = true;
+        this.Type = "User";
+        this.dustbin = false;
+        this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
+        this.options = [];
+        this.agentFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
+        this.agentOptions = [];
+        this.crossSearch = false;
+        this.overLayJobTitle = false;
+        this.jobTitleSearch = false;
+        this.asc = [];
     }
     ngOnInit() {
         this.getUser = JSON.parse(localStorage.getItem("user"));
+        document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
         this.getUserDetails();
         this.getCountUser();
         this.getAllUsers();
+        this.retrieveTutorials();
+        this.filteredOptions = this.myControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(value => this._filter(value)));
+        this.agentfilteredOptions = this.agentFormControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(value => this._agent(value)));
+    }
+    _filter(value) {
+        const filterValue = value;
+        return this.options.filter(option => option.indexOf(filterValue) === 0);
+    }
+    _agent(value) {
+        const filterValue = value;
+        return this.agentOptions.filter(option => option.indexOf(filterValue) === 0);
+    }
+    deleteMultiple(value) {
+        console.log(value);
+        this.adminPanelService.multipledeleteUser(value);
+    }
+    getValue(value) {
+        this.dustbin = true;
+        this.deleteMultiple(value);
+    }
+    showJobTiltle(item) {
+        this.jobTitleSearch = true;
+        this.overLayJobTitle = false;
+        this.tutorials = [];
+        this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(data => {
+            this.AllAgentJob = data;
+            data.forEach((element) => {
+                if (element.jobtitle == item) {
+                    this.tutorials.push(element);
+                }
+            });
+        });
+    }
+    overLayJob() {
+        this.overLayJobTitle = true;
+    }
+    closeroverLayJob() {
+        this.overLayJobTitle = false;
+    }
+    removeAgentSearch() {
+        this.searchEmail = null;
+        this.crossSearch = false;
+        this.retrieveTutorials();
+        this.getCountUser();
+    }
+    removeUserSearch() {
+        this.searchEmail = null;
+        this.crossSearch = false;
+        this.retrieveTutorials();
+        this.getCountUser();
+    }
+    getGentSearchValue() {
+        this.crossSearch = true;
+        this.tutorials = [];
+        this.allAgent = [];
+        this.adminPanelService.getAllUser().then((element) => {
+            element.forEach(elements => {
+                if (elements.data().UserType == "Agent" && elements.data().email == this.searchEmail) {
+                    this.allAgent.push(elements.data());
+                }
+            });
+        });
+        this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(data => {
+            data.forEach((element) => {
+                if (element.email == this.searchEmail) {
+                    this.tutorials.push(element);
+                }
+            });
+        });
+    }
+    getSearchValue() {
+        this.crossSearch = true;
+        this.allUser = [];
+        this.adminPanelService.getAllUser().then((element) => {
+            element.forEach(elements => {
+                if (elements.data().UserType != "Agent" && elements.data().email == this.searchEmail) {
+                    this.allUser.push({ detail: elements.data(), uid: elements.data().uid });
+                }
+            });
+        });
+    }
+    agentascDesc() {
+        this.tutorials.sort(function (a, b) {
+            return 0 - (a.fullname > b.fullname ? -1 : 1);
+        });
+    }
+    ascDesc() {
+        this.allUser.sort(function (a, b) {
+            return 0 - (a.detail.uid > b.detail.Name ? -1 : 1);
+        });
+    }
+    deleteUser(uid) {
+        this.adminPanelService.deleteUser(uid).then((data) => {
+            const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+                data: { message: "User Deleted" }
+            });
+        });
+        this.allUser = [];
+        this.getCountUser();
+    }
+    deleteAgent(uid) {
+        this.adminPanelService.deleteAgent(uid).then((data) => {
+            this.deleteUser(uid);
+        });
+    }
+    addUserPopup() {
+        this.addNewUser = true;
+    }
+    addUserPopupClose() {
+        this.addNewUser = false;
     }
     getUserDetails() {
         if (this.getUser != null) {
@@ -1365,10 +3646,14 @@ let UsersAgentTabComponent = class UsersAgentTabComponent {
         }
     }
     getCountUser() {
-        this.adminPanelService.getAllUser().then((element) => {
-            element.forEach(elements => {
+        this.allUser = [];
+        this.allAgent = [];
+        this.crossSearch = false;
+        this.adminPanelService.getAllUser().then((data) => {
+            data.forEach(elements => {
                 if (elements.data().UserType != "Agent") {
                     this.allUser.push({ detail: elements.data(), uid: elements.data().uid });
+                    this.options.push(elements.data().email);
                 }
                 if (elements.data().UserType == "Agent") {
                     this.allAgent.push(elements.data());
@@ -1383,15 +3668,45 @@ let UsersAgentTabComponent = class UsersAgentTabComponent {
             });
         });
     }
+    retrieveTutorials() {
+        this.jobTitleSearch = false;
+        this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(data => {
+            this.tutorials = data;
+            this.AllAgentJob = data;
+            data.forEach((element) => {
+                this.agentOptions.push(element.email);
+            });
+        });
+    }
+    activeUserAgentTab() {
+        this.usersTab = false;
+        document.getElementById("agent-tab").style.borderBottom = "2px solid #000000";
+        document.getElementById("users-tab").style.borderBottom = "none";
+    }
+    activeUserTab() {
+        this.usersTab = true;
+        document.getElementById("agent-tab").style.borderBottom = "none";
+        document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
+    }
+    createUser(Name, email, password, Type) {
+        console.log(Name, email, password, Type);
+        this.AdminAuthService.adminSignUp(Name, email, password, Type).then((data) => {
+            const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+                data: { message: "Account Created and Verification Email send" }
+            });
+        });
+    }
 };
 UsersAgentTabComponent.ctorParameters = () => [
-    { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"] }
+    { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"] },
+    { type: _admin_auth_service__WEBPACK_IMPORTED_MODULE_4__["AdminAuthService"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatDialog"] }
 ];
 UsersAgentTabComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-users-agent-tab',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./users-agent-tab.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./users-agent-tab.component.css */ "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.css")).default]
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./users-agent-tab.component.css */ "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
     })
 ], UsersAgentTabComponent);
 
@@ -1408,7 +3723,7 @@ UsersAgentTabComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1lZGl0LXBhZ2UvdXNlcnMtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUNBOztBQUVBLGNBQWM7QUFDZCxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGVBQWU7QUFDZjs7QUFDQTtJQUNJLFdBQVc7SUFDWCxtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsV0FBVztJQUNYLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxlQUFlO0FBQ25COztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixnQ0FBZ0M7SUFDaEMsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvdXNlcnMtZWRpdC1wYWdlL3VzZXJzLWVkaXQtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG4gICAgcGFkZGluZy10b3A6IDh2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuXG4uYWRkX21vcmVfYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm9yZGVyLXJhZGl1czogMTFweDtcbiAgICBmb250LXNpemU6IDE1cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxZW07XG59XG4udG9wLWJhci1oZWFkZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuLnRvcC1iYXItdXNlci1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xuICBjb2xvcjogIzBGM0M3Mztcbn1cbi5sb3dlci10ZXh0LWhlYWRpbmdcbntcbmNvbG9yOiAjMUVBQUZBO1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcbmZvbnQtc2l6ZTogMjBweDtcbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi5sZWZ0LWNvbnRhaW5lci13cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG5cbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgcGFkZGluZzogMC41ZW0gMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG5cbn1cbi50b3AtYmFyLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5yaWdodC10ZXh0LWxlZnQtY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDJlbTtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xufVxuLmFhcm93LWxlZnQtY29udGFpbmVyIHtcbiAgICBmb250LXNpemU6IDEuOWVtO1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG59XG4uZmllbGQtc2V0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZXhhbXBsZS1mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ucHJvZmlsZS1pbmZvLWNhcmQge1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbn1cblxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIHBhZGRpbmc6IDBlbSA1ZW07XG59XG5cbi5wcm9maWxlLWhlYWRpbmcge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICB3aWR0aDogMTF2dztcbiAgICBmb250LXNpemU6IDIwcHg7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1MaXN0aW5nLW1hdC1jYXJkIHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1lZGl0LXBhZ2UvdXNlcnMtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7O0lBRWxCLGlCQUFpQjs7SUFFakIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmOztBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBSUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtEQUFrRDtJQUNsRCxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtBQUNwQjs7QUFhQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0RBQWtEO0lBQ2xELGdCQUFnQjtJQUNoQixlQUFlO0lBQ2Ysd0JBQXdCO0lBQ3hCLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyx1QkFBdUI7QUFDM0I7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1lZGl0LXBhZ2UvdXNlcnMtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcblxuICAgIHBhZGRpbmctdG9wOiAxMHZoO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDExcHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG59XG5pbWcuaW1hZ2UtcGVvcGxlIHtcbiAgICBoZWlnaHQ6IDV2aDtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC10ZXh0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG5zcGFuLmJ1dHRvbi1zaXplIHtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG4ubGVmdC1jb250YWluZXItd3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDAuNWVtIDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuXG59XG4udG9wLWJhci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucmlnaHQtdGV4dC1sZWZ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5hYXJvdy1sZWZ0LWNvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiAxLjllbTtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG5cblxuLmZpZWxkLXNldCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmV4YW1wbGUtZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG59XG5cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBwYWRkaW5nOiAwZW0gNWVtO1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbiAgICB3aWR0aDogMTF2dztcbiAgICBmb250LXNpemU6IDIwcHg7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1MaXN0aW5nLW1hdC1jYXJkIHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLm1haW4tbGlzdGluZy1jb250YWluZXIge1xuICAgIHBhZGRpbmc6IDJlbSAwZW07XG59XG5zcGFuLmxpbmUtaGVpZ2h0IHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjQzFCQkJCO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG59XG5cblxuXG5cblxuXG5cblxuXG5cblxuXG4udWlkLWNvbnRlbnQge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5jdXJzb3Itc2hvd1xue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuM2ZyIDFmciAxLjJmciAwLjlmciAwLjZmcjtcbiAgICBtYXJnaW4tbGVmdDogMGVtO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICAvKiBtYXJnaW4tYm90dG9tOiAxZW07ICovXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAganVzdGlmeS1pdGVtczogYmFzZWxpbmU7XG59XG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG4iXX0= */");
 
 /***/ }),
 
@@ -1427,32 +3742,59 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../admin-panel/admin-panel.service.ts.service */ "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
+
+
 
 
 
 
 
 let UsersEditPageComponent = class UsersEditPageComponent {
-    constructor(adminPanelService, _Activatedroute, _location) {
+    constructor(adminPanelService, _Activatedroute, _location, dialog) {
         this.adminPanelService = adminPanelService;
         this._Activatedroute = _Activatedroute;
         this._location = _location;
+        this.dialog = dialog;
+        this.BuyerUserDetails = [];
+        this.SellerUserDetails = [];
     }
     ngOnInit() {
-        this.getUser = JSON.parse(localStorage.getItem("user"));
+        this.user = JSON.parse(localStorage.getItem("user"));
         this.sub = this._Activatedroute.paramMap.subscribe((params) => {
             this.UserUid = params.get("uid");
         });
         this.getUserDetails();
         this.getSelectedUserDetail();
+        this.getBuyerEntries();
+        this.getSellerEnteries();
+    }
+    deleteBuyer(uid, docid) {
+        this.adminPanelService.deleteBuyer(uid, docid).then((data) => {
+            const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+                data: { message: "User Deleted" }
+            });
+        });
+        this.BuyerUserDetails = [];
+        this.getBuyerEntries();
+    }
+    deleteSeller(uid, docid) {
+        this.adminPanelService.deleteSeller(uid, docid).then((data) => {
+            const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+                data: { message: "User Deleted" }
+            });
+        });
+        this.SellerUserDetails = [];
+        this.getSellerEnteries();
     }
     getUserDetails() {
-        if (this.getUser != null) {
-            this.uid = this.getUser.uid;
+        if (this.user != null) {
+            this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then((element) => {
-                this.name = element.data().Name;
+                this.username = element.data().Name;
                 this.image = element.data().Image;
             });
         }
@@ -1462,7 +3804,7 @@ let UsersEditPageComponent = class UsersEditPageComponent {
     }
     getSelectedUserDetail() {
         this.adminPanelService.getUser(this.UserUid).then((user) => {
-            this.username = user.data().Name;
+            this.Name = user.data().Name;
             this.email = user.data().email;
             if (user.data().title != null) {
                 this.title = user.data().title;
@@ -1487,17 +3829,89 @@ let UsersEditPageComponent = class UsersEditPageComponent {
             }
         });
     }
+    getBuyerEntries() {
+        this.adminPanelService.getBuyerEntries(this.UserUid).then(user => {
+            user.forEach(UserDetail => {
+                this.BuyerUserDetails.push({ detail: UserDetail.data(), id: UserDetail.id });
+            });
+        });
+    }
+    getSellerEnteries() {
+        this.adminPanelService.getSellerEntries(this.UserUid).then(user => {
+            user.forEach(UserDetail => {
+                this.SellerUserDetails.push({ detail: UserDetail.data(), id: UserDetail.id });
+            });
+        });
+    }
+    userDetails() {
+        this.user.uid = this.UserUid;
+        this.user.Name = this.Name;
+        this.user.email = this.email;
+        if (this.title != undefined) {
+            this.user.title = this.title;
+        }
+        else {
+            this.user.title = null;
+        }
+        if (this.DOB != undefined) {
+            this.user.DOB = this.DOB;
+        }
+        else {
+            this.user.DOB = null;
+        }
+        if (this.Phone != undefined) {
+            this.user.Phone = this.Phone;
+        }
+        else {
+            this.user.Phone = null;
+        }
+        if (this.title != undefined) {
+            this.user.title = this.title;
+        }
+        else {
+            this.user.title = null;
+        }
+        if (this.Currentaddress != undefined) {
+            this.user.Currentaddress = this.Currentaddress;
+        }
+        else {
+            this.user.Currentaddress = null;
+        }
+        if (this.Currentpostcode != undefined) {
+            this.user.Currentpostcode = this.Currentpostcode;
+        }
+        else {
+            this.user.Currentpostcode = null;
+        }
+        console.log(this.Currentstate);
+        if (this.Currentstate != undefined) {
+            this.user.Currentstate = this.Currentstate;
+        }
+        else {
+            this.user.Currentstate = null;
+        }
+        if (this.CurrentTowncity != undefined) {
+            this.user.CurrentTowncity = this.CurrentTowncity;
+        }
+        else {
+            this.user.CurrentTowncity = null;
+        }
+        this.return = this.adminPanelService.userupate(this.user)
+            .then(data => {
+        });
+    }
 };
 UsersEditPageComponent.ctorParameters = () => [
     { type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
-    { type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"] }
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"] },
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatDialog"] }
 ];
 UsersEditPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-users-edit-page',
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./users-edit-page.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/users-edit-page/users-edit-page.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./users-edit-page.component.css */ "./src/app/AdminPanel/users-edit-page/users-edit-page.component.css")).default]
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./users-edit-page.component.css */ "./src/app/AdminPanel/users-edit-page/users-edit-page.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
     })
 ], UsersEditPageComponent);
 
@@ -4926,18 +7340,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../Misc/alertFormdialog/alertFormdialog.component */ "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
 /* harmony import */ var _fillFormSeller_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./fillFormSeller.service */ "./src/app/Home/Property/fillFormSeller/fillFormSeller.service.ts");
 /* harmony import */ var _fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../fillFormBuyer/fillFormBuyer.service */ "./src/app/Home/Property/fillFormBuyer/fillFormBuyer.service.ts");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var _strapi_auth_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../strapi-auth.service */ "./src/app/strapi-auth.service.ts");
-/* harmony import */ var _Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../../Misc/alert-login/alert-login.component */ "./src/app/Misc/alert-login/alert-login.component.ts");
-/* harmony import */ var _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../../Misc/alert-user-type/alert-user-type.component */ "./src/app/Misc/alert-user-type/alert-user-type.component.ts");
-/* harmony import */ var _confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./confirmSellerDetail/alertDialogSellerDataSubmission.component */ "./src/app/Home/Property/fillFormSeller/confirmSellerDetail/alertDialogSellerDataSubmission.component.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
-/* harmony import */ var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @angular/fire/storage */ "./node_modules/@angular/fire/storage/es2015/index.js");
-/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ../../../cms.service */ "./src/app/cms.service.ts");
-
-
+/* harmony import */ var _strapi_auth_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../strapi-auth.service */ "./src/app/strapi-auth.service.ts");
+/* harmony import */ var _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../Misc/alert-user-type/alert-user-type.component */ "./src/app/Misc/alert-user-type/alert-user-type.component.ts");
+/* harmony import */ var _confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./confirmSellerDetail/alertDialogSellerDataSubmission.component */ "./src/app/Home/Property/fillFormSeller/confirmSellerDetail/alertDialogSellerDataSubmission.component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @angular/fire/storage */ "./node_modules/@angular/fire/storage/es2015/index.js");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../../../cms.service */ "./src/app/cms.service.ts");
 
 
 
@@ -5602,45 +8011,6 @@ let FillFormSellerComponent = class FillFormSellerComponent {
     nextStep() {
         this.selectedIndex += 1;
     }
-    newUsers(displayName, email, pass) {
-        axios__WEBPACK_IMPORTED_MODULE_18___default.a
-            .post('http://134.209.93.8/auth/local/register', {
-            username: displayName,
-            email: email,
-            password: pass,
-        })
-            .then(response => {
-            this.loginNew(email, pass);
-        })
-            .catch(error => {
-            // Handle error.
-            const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_20__["AlertLoginComponent"], {
-                data: {
-                    message: error.response.data.message[0].messages[0].message,
-                }
-            });
-        });
-    }
-    login(username, password) {
-        // stop here if form is invalid
-        // if (this.loginForm.invalid) {
-        //     return;
-        // }
-        this.StrapiAuthService.login(username, password)
-            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["first"])())
-            .subscribe(data => {
-            location.reload();
-            this.LoggedIn();
-        }, error => {
-            if (error && error.error && error.error.message && error.error.message.length > 0) {
-                alert(error.error.message[0].messages[0].message);
-            }
-            else {
-                alert('error');
-            }
-            //this.alertService.error(error);
-        });
-    }
     loginNew(username, password) {
         // stop here if form is invalid
         // if (this.loginForm.invalid) {
@@ -5675,7 +8045,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                     if (this.emailData[0].AgentType != null) {
                         this.emailField = false;
                         this.notValidEmail = true;
-                        const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                        const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
                             data: {
                                 message: "Please Login as User",
                             }
@@ -5747,12 +8117,16 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                     this.listingSeller.username = this.user.Name;
                 this.listingSeller.usertitle = this.user.title;
                 this.listingSeller.UserId = this.uid;
+                this.listingSeller.Currentpostcode = this.user.Currentpostcode;
+                this.listingSeller.CurrentAddress = this.user.CurrentAddress;
+                this.listingSeller.CurrentTown = this.user.CurrentTown;
+                this.listingSeller.Currentstate = this.user.Currentstate;
                 this.return = this.SellerformService.createCustomer(this.userData.uid, this.listingSeller).then(data => {
                     console.log(data);
                     if (data == true) {
                         localStorage.setItem("sellerUserDetails", JSON.stringify(this.listingSeller));
                         this.isLoading = false;
-                        const dialogRef = this.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_22__["AlertDialogComponent"], {
+                        const dialogRef = this.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__["AlertDialogComponent"], {
                             data: {
                                 message: "HelloWorld",
                                 id: this.uid,
@@ -5794,7 +8168,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             data.forEach(element => {
                 this.KnowUser.push(element.data());
                 if (element.data().email == email && element.data().UserType != "User") {
-                    const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                    const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
                         data: { message: "Please Login as User" }
                     });
                     this.isLoading = false;
@@ -5835,11 +8209,11 @@ FillFormSellerComponent.ctorParameters = () => [
     { type: _fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_17__["FormsService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_10__["ActivatedRoute"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_10__["Router"] },
-    { type: _strapi_auth_service__WEBPACK_IMPORTED_MODULE_19__["StrapiAuthService"] },
-    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_23__["HttpClient"] },
-    { type: _angular_common__WEBPACK_IMPORTED_MODULE_24__["Location"] },
-    { type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_25__["AngularFireStorage"] },
-    { type: _cms_service__WEBPACK_IMPORTED_MODULE_26__["CMSSERVICE"] }
+    { type: _strapi_auth_service__WEBPACK_IMPORTED_MODULE_18__["StrapiAuthService"] },
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_21__["HttpClient"] },
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_22__["Location"] },
+    { type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_23__["AngularFireStorage"] },
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_24__["CMSSERVICE"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('titles', { static: false })
@@ -12958,6 +15332,42 @@ class agentSignup {
 
 /***/ }),
 
+/***/ "./src/app/Model/blog.ts":
+/*!*******************************!*\
+  !*** ./src/app/Model/blog.ts ***!
+  \*******************************/
+/*! exports provided: blog */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blog", function() { return blog; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class blog {
+}
+
+
+/***/ }),
+
+/***/ "./src/app/Model/footer.ts":
+/*!*********************************!*\
+  !*** ./src/app/Model/footer.ts ***!
+  \*********************************/
+/*! exports provided: footer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "footer", function() { return footer; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+
+class footer {
+}
+
+
+/***/ }),
+
 /***/ "./src/app/Model/listingBuyer.ts":
 /*!***************************************!*\
   !*** ./src/app/Model/listingBuyer.ts ***!
@@ -12982,7 +15392,7 @@ class listingBuyer {
         this.Maxbathroom = "any";
         this.Minreception = "any";
         this.Maxreception = "any";
-        this.features = "any";
+        this.features = ["any"];
     }
 }
 
@@ -13007,10 +15417,11 @@ class listingSeller {
         this.PropertyCondition = "any";
         this.ownership = "Freehold";
         this.active = true;
-        this.features = "any";
+        this.features = ["any"];
         this.Maxbathrooms = "any";
         this.Minreception = "any";
         this.Maxreception = "any";
+        this.Images = [];
     }
 }
 
@@ -13742,6 +16153,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./AdminPanel/admin-header/admin-header.component */ "./src/app/AdminPanel/admin-header/admin-header.component.ts");
 /* harmony import */ var _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./AdminPanel/users-agent-tab/users-agent-tab.component */ "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.ts");
 /* harmony import */ var _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./AdminPanel/users-edit-page/users-edit-page.component */ "./src/app/AdminPanel/users-edit-page/users-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component */ "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts");
+/* harmony import */ var _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./AdminPanel/add-user/add-user.component */ "./src/app/AdminPanel/add-user/add-user.component.ts");
+/* harmony import */ var _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./AdminPanel/edit-seller-user-details/edit-seller-user-details.component */ "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts");
+/* harmony import */ var _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./AdminPanel/agent-edit-page/agent-edit-page.component */ "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./AdminPanel/agent-property-edit-page/agent-property-edit-page.component */ "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./AdminPanel/uielements/uielements.component */ "./src/app/AdminPanel/uielements/uielements.component.ts");
+
+
+
+
+
+
 
 
 
@@ -13863,7 +16286,13 @@ const routes = [
     { path: "AdminPanel", component: _AdminPanel_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_50__["AdminPanelComponent"] },
     { path: "AdminHeader", component: _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_51__["AdminHeaderComponent"] },
     { path: "UsersAgentTab", component: _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_52__["UsersAgentTabComponent"] },
-    { path: "UsersEditPage/:uid", component: _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_53__["UsersEditPageComponent"] }
+    { path: "UsersEditPage/:uid", component: _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_53__["UsersEditPageComponent"] },
+    { path: "EditBuyerUserDetails/:BuyerUserID/:BuyerPropertyId", component: _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_54__["EditBuyerUserDetailsComponent"] },
+    { path: "AddUser", component: _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_55__["AddUserComponent"] },
+    { path: "EditSellerUserDetails/:sellerUserId/:sellerPropertyId", component: _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_56__["EditSellerUserDetailsComponent"] },
+    { path: "AgentEditPage/:agentPropertyId/:agentUserId", component: _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_57__["AgentEditPageComponent"] },
+    { path: "AgentPropertyEditPage/:propertyuserId/:propertyID", component: _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_58__["AgentPropertyEditPageComponent"] },
+    { path: "UIElements", component: _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_59__["UIElementsComponent"] }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -14056,6 +16485,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_119__ = __webpack_require__(/*! ./AdminPanel/admin-header/admin-header.component */ "./src/app/AdminPanel/admin-header/admin-header.component.ts");
 /* harmony import */ var _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_120__ = __webpack_require__(/*! ./AdminPanel/users-agent-tab/users-agent-tab.component */ "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.ts");
 /* harmony import */ var _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_121__ = __webpack_require__(/*! ./AdminPanel/users-edit-page/users-edit-page.component */ "./src/app/AdminPanel/users-edit-page/users-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_122__ = __webpack_require__(/*! ./AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component */ "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts");
+/* harmony import */ var _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_123__ = __webpack_require__(/*! ./AdminPanel/add-user/add-user.component */ "./src/app/AdminPanel/add-user/add-user.component.ts");
+/* harmony import */ var _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_124__ = __webpack_require__(/*! ./AdminPanel/edit-seller-user-details/edit-seller-user-details.component */ "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts");
+/* harmony import */ var _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_125__ = __webpack_require__(/*! ./AdminPanel/agent-edit-page/agent-edit-page.component */ "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_126__ = __webpack_require__(/*! ./AdminPanel/agent-property-edit-page/agent-property-edit-page.component */ "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_127__ = __webpack_require__(/*! ./AdminPanel/uielements/uielements.component */ "./src/app/AdminPanel/uielements/uielements.component.ts");
 
 
 
@@ -14079,6 +16514,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Firebase modules
+
+
+
+
+
+
 
 
 
@@ -14250,6 +16691,12 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_119__["AdminHeaderComponent"],
             _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_120__["UsersAgentTabComponent"],
             _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_121__["UsersEditPageComponent"],
+            _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_122__["EditBuyerUserDetailsComponent"],
+            _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_123__["AddUserComponent"],
+            _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_124__["EditSellerUserDetailsComponent"],
+            _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_125__["AgentEditPageComponent"],
+            _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_126__["AgentPropertyEditPageComponent"],
+            _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_127__["UIElementsComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -14551,9 +16998,96 @@ let CMSSERVICE = class CMSSERVICE {
         this.BlueNotification = db.collection("BlueNotification");
         this.SignupTerms = db.collection("SingupTerms");
         this.allUser = db.collection("users");
+        this.FormIamge = db.collection("UserFormImages");
+        this.privacyPolicy = db.collection("PrivacyPolicy");
+        this.TermsCondition = db.collection("TermsCondition");
+    }
+    updateTerms(noti) {
+        return this.db
+            .collection("TermsCondition")
+            .doc("Yok0I3mxCYGJ9fb6pPnM")
+            .set(Object.assign({}, noti))
+            .then(function (data) {
+            console.log("privacy");
+        });
+    }
+    updatePrivacy(noti) {
+        return this.db
+            .collection("PrivacyPolicy")
+            .doc("1Li6cufv2AmieDVQBbnV")
+            .set(Object.assign({}, noti))
+            .then(function (data) {
+            console.log("privacy");
+        });
+    }
+    updateSellerBuyerImage(noti) {
+        return this.db
+            .collection("UserFormImages")
+            .doc("Ejqjv3kJ7j1P1FR1vf1o")
+            .set(Object.assign({}, noti))
+            .then(function (data) {
+            console.log("sellerBuyer");
+        });
+    }
+    updateBlueNotifiaction(noti) {
+        return this.db
+            .collection("BlueNotification")
+            .doc("1")
+            .set(Object.assign({}, noti))
+            .then(function (data) {
+            console.log("Notification");
+        });
+    }
+    updateFooter(uid, footer) {
+        return this.db
+            .collection("Footer")
+            .doc(uid)
+            .set(Object.assign({}, footer))
+            .then(function (data) {
+            console.log("Document successfully written!");
+        });
+        return true;
+    }
+    createBlog(uid, customer) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.return = yield this.blogRef
+                .doc(uid)
+                .collection("AllBlogs")
+                .add(Object.assign({}, customer))
+                .then(function (element) {
+            });
+            return true;
+        });
+    }
+    updateHomePageImages(uid, home) {
+        return this.db
+            .collection("HomepageImages")
+            .doc(uid)
+            .set(Object.assign({}, home))
+            .then(function (data) {
+            console.log("Document successfully written!");
+        });
+        return true;
+    }
+    getUserBlog(uid) {
+        return this.blogRef
+            .doc(uid)
+            .collection("AllBlogs")
+            .ref.get();
+    }
+    getTermsCondition() {
+        return this.TermsCondition.ref.get();
+    }
+    getPrivacyPolicy() {
+        return this.privacyPolicy.ref.get();
+    }
+    getFormImages() {
+        return this.FormIamge.ref.get();
     }
     getBlueNotification(uid) {
-        return this.BlueNotification.ref.get();
+        return this.BlueNotification
+            .doc("1")
+            .ref.get();
     }
     getsignUpTerms() {
         return this.SignupTerms.ref.get();
@@ -14566,6 +17100,9 @@ let CMSSERVICE = class CMSSERVICE {
     }
     getBlogs(uid) {
         return this.blogRef.ref.get();
+    }
+    getFooter() {
+        return this.FooterRef.ref.get();
     }
     getlistingBuyer(uid) {
         return this.buyerRef

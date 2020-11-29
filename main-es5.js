@@ -12,6 +12,12 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -50,6 +56,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/add-user/add-user.component.html":
+  /*!***************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/add-user/add-user.component.html ***!
+    \***************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminPanelAddUserAddUserComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n<div class=\"top-bar-container\">\n\n   <div class=\"left-container\">\n\n    <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n<div class=\"aarow-left-container\">\t&#8592;</div>\n<div class=\"right-text-left-container\">Back to Users</div>\n    </div>\n   </div>\n    <div class=\"right-text-container\">\n        <div class=\"top-bar-user-heading\">\n            <img src=\"{{image}}\" class=\"image-people\">\n        </div>\n        <div class=\"lower-text-heading\">\n            {{username}}\n        </div>\n    </div>\n</div>\n\n\n<mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;margin-top: 1em;\">\n  <div class=\"profile-heading\">\n      Personal Info\n  </div>\n  \n  <div class=\"fields-profile-info\">\n  \n      <div class=\"field-set\">\n        <mat-form-field appearance=\"outline\">\n          <mat-label class=\"fixed-Label\">\n           <span id=\"title\">Title</span>\n  \n           </mat-label>\n   \n          <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.title\">\n            <mat-option value=\"Mr\">Mr</mat-option>\n            <mat-option value=\"Ms\">Ms</mat-option>\n            <mat-option value=\"Mrs\">Mrs</mat-option>\n          </mat-select>\n       \n        </mat-form-field>\n\n          <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label  class=\"fixed-Label\" >\n              <span id=\"FullName\">Name</span>\n            </mat-label>\n            <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n          </mat-form-field>\n        \n  \n\n          <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Job\">Job title</span></mat-label>\n            <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n          </mat-form-field>\n\n  \n     \n  \n      </div>\n  \n  \n      <div class=\"field-set\">\n  \n\n\n          \n        \n  \n         \n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Email\">Email</span></mat-label>\n              <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Password\">Password</span></mat-label>\n              <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd>\n              <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">\n                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n              </button>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\" >\n              <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode</span></mat-label>\n              <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n            </mat-form-field>\n       \n    \n            \n\n  \n         \n            \n      \n            \n  \n  \n          \n      \n           \n          </div>\n      \n          <div class=\"field-set\">\n  \n  \n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Office Phone Number</span></mat-label>\n                <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.officephone\" #Phone   maxlength=\"10\">\n              </mat-form-field>\n   \n      \n\n                  <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number</span></mat-label>\n                    <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n                  </mat-form-field>\n \n\n                  <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n                    <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n                  </mat-form-field>\n     \n           \n                \n       \n  \n          \n            \n  \n              </div>\n  \n              <div class=\"field-set\">\n               \n                <mat-form-field class=\"full-width\"  appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n                  <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n                </mat-form-field>\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n                  <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n                </mat-form-field>\n            \n\n                      <mat-form-field class=\"full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n                        <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n                      </mat-form-field>\n                   \n                 \n            \n  \n  \n  \n  \n  \n  \n              </div>\n  \n        \n  </div>\n  \n  \n  <div class=\"agent-image-upload\">\n  \n    <div class=\"upload-image-first-container\">\n    <div class=\"profile-heading\">\n      Images\n  </div>\n  <div class=\"edit-image-part\" >\n    <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n  </div>\n  \n  \n  \n  </div>\n  <div class=\"image-user\" >\n    <img src=\"{{agentSignup.image}}\" class=\"image-agent\" *ngIf=\"!imageUplaod\">\n  \n    <div class=\"file-upload\" *ngIf=\"imageUplaod\">\n      \n      <input type=\"file\"  (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n      \n  </div>\n  </div>\n  \n  <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n  </div>\n  \n  <div class=\"update-button\" \n  (click)=\"userDetails()\">\n  \n      <button mat-button color=\"primary\" class=\"button-color\">Create Agent</button>\n  </div>\n  \n      </mat-card>\n\n\n\n\n</div>\n";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/admin-header/admin-header.component.html":
   /*!***********************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/admin-header/admin-header.component.html ***!
@@ -65,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"admin-heaher-main\">\n    <div class=\"nestimate-logo-container\">\n    <img src=\"../../../assets/Images/Nestimatelogo1.png\" class=\"nestimate-logo-header\">\n</div>\n\n<div class=\"nestimate-admin-heading\">\n    Administrator\n</div>\n\n</div>\n\n<div class=\"admin-side-bar\">\n\n    <div class=\"dashboard-div\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/dashboard.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Dashboard\n        </div>\n    </div>\n    <div class=\"dashboard-div\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/user.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            User\n        </div>\n    </div>\n    <div class=\"dashboard-div\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/palette.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            UI Elements\n        </div>\n    </div>\n\n\n\n\n    <div class=\"sign-out-div\">\n    <div class=\"sign-out-dashboard\">\n      <img src=\"../../../assets/Images/signout.png\"  class=\"dashboard-icon\">\n    </div>\n    <div class=\"dashboard-container\">\n        Log Out\n    </div>\n\n    </div>\n\n</div>";
+    __webpack_exports__["default"] = "<div class=\"admin-heaher-main\">\n    <div class=\"nestimate-logo-container\">\n    <img src=\"../../../assets/Images/Nestimatelogo1.png\" class=\"nestimate-logo-header\">\n</div>\n\n<div class=\"nestimate-admin-heading\">\n    Administrator\n</div>\n\n</div>\n\n<div class=\"admin-side-bar\"  >\n\n    <div class=\"dashboard-div\" *ngIf=\"!dashboard\" routerLink=\"/AdminPanel\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/dashboard.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Dashboard\n        </div>\n    </div>\n    <div class=\"dashboard-div\" *ngIf=\"dashboard\">\n        <div class=\"active-dashboard\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/Activedashboard.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n            Dashboard\n        </div>\n    </div>\n    </div>\n\n\n\n\n\n\n\n    <div class=\"dashboard-div\"  *ngIf=\"!ActiveUser\"  routerLink=\"/UsersAgentTab\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/user.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            User\n        </div>\n    </div>\n\n    <div class=\"dashboard-div\"  *ngIf=\"ActiveUser\">\n        <div class=\"active-dashboard user-active\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/activeuser.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n            User \n        </div>\n        \n    </div>\n    </div>\n    <div class=\"dashboard-div\"  routerLink=\"/UIElements\" *ngIf=\"!UI\">\n        \n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/palette.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            UI Elements\n        </div>\n    </div>\n\n    <div class=\"dashboard-div\"  *ngIf=\"UI\">\n        <div class=\"active-dashboard\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/activepalette.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n            UI Elements\n        </div>\n    </div>\n\n  \n\n    </div>\n\n    <div class=\"sign-out-div\" (click)=\"signOut()\">\n        <div class=\"sign-out-dashboard\">\n          <img src=\"../../../assets/Images/signout.png\"  class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Log Out\n        </div>\n\n</div>";
     /***/
   },
 
@@ -85,7 +111,107 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"admin-login\" *ngIf=\"!LoggedIn\">\n\n    <div class=\"admin-login-wrapper\">\n\n        <img src=\"../../assets/Images/Nestimatelogo.png\"  class=\"image-nestimate-logo\">\n<div class=\"Login-Text\">Log In</div>\n<div class=\"div-content-field\">\n<mat-form-field class=\"example-full-width\">\n    <mat-label>Username</mat-label>\n    <input matInput placeholder=\"Enter Email\"  name=\"emails\"  [(ngModel)]=\"emails\">\n  </mat-form-field>\n\n  \n  <mat-form-field >\n    <mat-label>Enter your password</mat-label>\n    <input matInput [type]=\"hide ? 'password' : 'text'\"  name=\"password\"  [(ngModel)]=\"password\">\n    <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\n    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n    </button>\n  </mat-form-field>\n</div>\n\n\n<div class=\"remmber-me\">\n  <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\"><span class=\"Checkbox-text\">Remember Me</span></mat-checkbox>\n</div>\n\n\n  \n    </div>\n\n  <div class=\"login-buttons\" (click)=\"signIn(emails, password)\">\n    <button mat-button class=\"button-align\">Log In</button>\n  </div>\n<div class=\"forgot-password\">\n<div class=\"forgot-password-text\">\n  <div>\n<img src=\"../../assets/Images/lock-open.svg\" class=\"lock-icon\"></div>\n<div class=\"text-forgot-password\">\n  Forgot your Password?\n</div>\n\n\n</div>\n<div class=\"text-forgot-password back-to-webiste\" routerLink=\"/\">\n  <div>\n  <img src=\"../../assets/Images/arrow-back.svg\" class=\"back-arrow\">\n</div>\n<div>Back To The Website</div>\n</div>\n</div>\n</div>\n\n<div *ngIf=\"LoggedIn\">\n  <app-admin-header></app-admin-header>\n</div>\n\n<div  class=\"text-right\">\n\n</div>\n\n\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"admin-login\" *ngIf=\"!LoggedIn\">\n\n  <div class=\"admin-login-wrapper\">\n\n    <img src=\"../../assets/Images/Nestimatelogo.png\" class=\"image-nestimate-logo\">\n    <div class=\"Login-Text\">Log In</div>\n    <div class=\"div-content-field\">\n      <mat-form-field class=\"example-full-width\">\n        <mat-label>Username</mat-label>\n        <input matInput placeholder=\"Enter Email\" name=\"emails\" [(ngModel)]=\"emails\">\n      </mat-form-field>\n\n\n      <mat-form-field>\n        <mat-label>Enter your password</mat-label>\n        <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"password\">\n        <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n          [attr.aria-pressed]=\"hide\">\n          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n        </button>\n      </mat-form-field>\n    </div>\n\n\n    <div class=\"remmber-me\">\n      <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\"><span class=\"Checkbox-text\">Remember Me</span>\n      </mat-checkbox>\n    </div>\n\n\n\n  </div>\n\n  <div class=\"login-buttons\" (click)=\"signIn(emails, password)\">\n    <button mat-button class=\"button-align\">Log In</button>\n  </div>\n  <div class=\"forgot-password\">\n    <div class=\"forgot-password-text\">\n      <div>\n        <img src=\"../../assets/Images/lock-open.svg\" class=\"lock-icon\"></div>\n      <div class=\"text-forgot-password\">\n        Forgot your Password?\n      </div>\n\n\n    </div>\n    <div class=\"text-forgot-password back-to-webiste\" routerLink=\"/\">\n      <div>\n        <img src=\"../../assets/Images/arrow-back.svg\" class=\"back-arrow\">\n      </div>\n      <div>Back To The Website</div>\n    </div>\n  </div>\n</div>\n\n<div *ngIf=\"LoggedIn\">\n  <app-admin-header></app-admin-header>\n</div>\n\n<div class=\"user-agent-tab-main-container\" *ngIf=\"LoggedIn\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n\n      <div class=\"top-bar-user-heading\">\n        Dashboard\n      </div>\n      <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n      </div>\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n\n\n\n  <div class=\"top-card\">\n    <mat-card class=\"left-nestimate-dashboard\">\n      <div class=\"wrapper-total-nestimate\">\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{NestimateLength}}</span>\n          <span class=\"total-netiamte-text\"> Total Nestimates</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">\n            <img src=\"../../../assets/Images/person.svg\" class=\"person-dashboard\">\n            {{numberOfUser}}</span>\n          <span class=\"total-netiamte-text\"> Total No. of Users</span>\n        </div>\n      </div>\n    </mat-card>\n    <mat-card class=\"right-nestimate-dashboard\">\n      <div class=\"wrapper-total-nestimate\">\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">2,300</span>\n          <span class=\"total-netiamte-text\">Total Matches</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{ExpressedIneterest}}</span>\n          <span class=\"total-netiamte-text\"> Total Express Interest</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{ConfirmInterest}}</span>\n          <span class=\"total-netiamte-text\">Total Confirm Interest</span>\n        </div>\n      </div>\n    </mat-card>\n  </div>\n\n\n\n  <div class=\"second-color-container\">\n    Users\n  </div>\n  <mat-card class=\"second-part-container\">\n\n\n\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Nestimate by Listing Type</div>\n\n\n\n\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Sell</span>\n            <span class=\"second-part-container-number\">{{countingSellerTypeSell}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Let</span>\n            <span class=\"second-part-container-number\">{{countingSellerTypeRent}}</span>\n          </div>\n\n        </div>\n\n        <div class=\"right-line\"></div>\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Buy</span>\n            <span class=\"second-part-container-number\">{{countListingTypeBuy}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Rent</span>\n            <span class=\"second-part-container-number\">{{countListingTypeRent}}</span>\n\n          </div>\n\n        </div>\n\n\n\n      </div>\n\n\n\n\n\n    </mat-card>\n\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\"> Nestimate by Property Type</div>\n\n\n \n  \n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Flat</span>\n            <span class=\"second-part-container-number\">{{FlatpropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Studio</span>\n            <span class=\"second-part-container-number\">{{studiopropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Terraced house</span>\n            <span class=\"second-part-container-number\">{{TerracedhouseType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Maisonette</span>\n            <span class=\"second-part-container-number\">{{MaisonetteType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Semi-detached house</span>\n            <span class=\"second-part-container-number\">{{SemidetachedType}}</span>\n          </div>\n\n            <div class=\"top-second-part-container\">\n              <span class=\"second-part-container-text\">Bungalow</span>\n              <span class=\"second-part-container-number\">{{BungalowType}}</span>\n  \n            </div>\n  \n            <div class=\"lower-second-part-container\">\n              <span class=\"second-part-container-text\">Detached house</span>\n              <span class=\"second-part-container-number\">{{DetachedhousType}}</span>\n            </div>\n\n        </div>\n\n        <div class=\"right-line\"></div>\n\n        <div class=\"right-side-second-part-container\">\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Cottage</span>\n            <span class=\"second-part-container-number\">{{CottagePropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Town House</span>\n            <span class=\"second-part-container-number\">{{TownhouseType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Country house</span>\n            <span class=\"second-part-container-number\">{{CountryhouseType}}</span>\n          </div>\n\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Barn conversion</span>\n            <span class=\"second-part-container-number\">{{BarnconversionType}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Farm</span>\n            <span class=\"second-part-container-number\">{{FarmPropertyType}}</span>\n          </div>\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Houseboat</span>\n            <span class=\"second-part-container-number\">{{HouseboaType}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Lodge</span>\n            <span class=\"second-part-container-number\">{{LodgeType}}</span>\n          </div>\n        \n\n        </div>\n\n\n\n      </div>\n\n\n\n    </mat-card>\n  </mat-card>\n\n  <div class=\"mat-card-bottom\"></div>\n\n\n  <mat-card class=\"third-mat-card\">\n    <div class=\"wrapper-total-nestimate third-matcard-align\">\n\n      <div class=\"total-nestimate total-postcode\">\n        <span class=\"total-nestimate-number\">\n          <img src=\"../../../assets/Images/person.svg\" class=\"person-dashboard\">\n          {{agentLength}}</span>\n        <span class=\"total-netiamte-text\"> Total No. of Agents</span>\n      </div>\n      <div class=\"right-line\"></div>\n      <div class=\"total-nestimate total-postcode\">\n        <span class=\"total-nestimate-number\">2,344</span>\n        <span class=\"total-netiamte-text\"> Total No. of Postcodes</span>\n      </div>\n     \n    </div>\n\n  </mat-card>\n\n\n  <div class=\"second-color-container\">\n    Agents\n  </div>\n  <mat-card class=\"second-part-container\">\n\n\n\n    <div class=\"fourth-part-container\">\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Agents by Sole Agency Fees</div>\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">1% to 2%</span>\n            <span class=\"second-part-container-number\">{{firstSole}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">2% to 3%</span>\n            <span class=\"second-part-container-number\">{{secondSole}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">3% to 4%</span>\n            <span class=\"second-part-container-number\">{{thirdSole}}</span>\n          </div>\n\n        </div>\n      </div>\n    </mat-card>\n   \n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Agents by Multiple Agency Fees</div>\n\n\n\n\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">1% to 2%</span>\n            <span class=\"second-part-container-number\">{{multiFirst}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">2% to 3%</span>\n            <span class=\"second-part-container-number\">{{multiSecond}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">3% to 4%</span>\n            <span class=\"second-part-container-number\">{{multiThird}}</span>\n          </div>\n        </div>\n      </div>\n\n\n\n    </mat-card>\n  </div>\n  </mat-card>\n  <div class=\"mat-card-bottom\"></div>\n\n\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.html":
+  /*!*****************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.html ***!
+    \*****************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminPanelAgentEditPageAgentEditPageComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating Nestimate...</p>\n      </div>\n\n</div>\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#8592;</div>\n                <div class=\"right-text-left-container\">Back to Users</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n\n\n\n\n<div class=\"profile-info-card\">\n    <mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;\">\n<div class=\"profile-heading\">\n    Personal Info\n</div>\n\n<div class=\"fields-profile-info\">\n\n    <div class=\"field-set\">\n      <mat-form-field appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n         <span id=\"title\">Title</span>\n\n         </mat-label>\n \n        <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.title\">\n          <mat-option value=\"Mr\">Mr</mat-option>\n          <mat-option value=\"Ms\">Ms</mat-option>\n          <mat-option value=\"Mrs\">Mrs</mat-option>\n        </mat-select>\n     \n      </mat-form-field>\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Name</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n        </mat-form-field>\n      </div>\n\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n            <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n          </mat-form-field>\n        </div>\n\n   \n\n    </div>\n\n\n    <div class=\"field-set\">\n\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n          </mat-form-field>\n        </div>\n\n       \n      </div>\n        <div class=\"extra-field-two\" >\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n              <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n            </mat-form-field>\n          </div>\n     \n\n        <div class=\"extra-field-two\">\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Job\">Job title</span></mat-label>\n              <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n            </mat-form-field>\n          </div>\n\n       \n          \n    \n          \n\n\n        \n    \n         \n        </div>\n    \n        <div class=\"field-set\">\n\n          <div class=\"extra-field-two\" >\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Office Phone Number</span></mat-label>\n              <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.officephone\" #Phone   maxlength=\"10\">\n            </mat-form-field>\n          </div>\n    \n            <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number</span></mat-label>\n                  <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n                </mat-form-field>\n              </div>\n            <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Email\">Email</span></mat-label>\n                  <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n                </mat-form-field>\n              </div>\n\n        \n          \n\n            </div>\n\n            <div class=\"field-set\">\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">Status</mat-label>\n                <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.Status\">\n                  <mat-option [value]=\"true\">Verified</mat-option>\n                  <mat-option [value]=\"false\">Not Verfied</mat-option>\n                </mat-select>\n             \n              </mat-form-field>\n                <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n                      <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n                    </mat-form-field>\n                  </div>\n                  <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n                      <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n                    </mat-form-field>\n                  </div>\n\n\n\n\n\n\n            </div>\n\n      \n</div>\n\n\n<div class=\"agent-image-upload\">\n\n  <div class=\"upload-image-first-container\">\n  <div class=\"profile-heading\">\n    Images\n</div>\n<div class=\"edit-image-part\" >\n  <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n</div>\n\n\n\n</div>\n<div class=\"image-user\" >\n  <img src=\"{{agentSignup.image}}\" class=\"image-agent\" *ngIf=\"!imageUplaod\">\n  <div class=\"file-upload\" *ngIf=\"imageUplaod\">\n    <input type=\"file\"  (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n</div>\n</div>\n\n<span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n</div>\n\n<div class=\"update-button\"  (click)=\"updateAgent()\">\n\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n</div>\n\n    </mat-card>\n\n\n\n\n\n\n    <!--User List MatCard-->\n<div class=\"main-listing-container\">\n    <mat-card class=\"user-Listing-mat-card\">\n        <div class=\"profile-heading\">\n            Listings\n        </div>\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-heading-tab-content\">Id</div>\n                <div class=\"text-heading-tab-content\">Property </div>\n                <div class=\"text-heading-tab-content\">Postcode</div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result\" *ngFor=\"let agentProperties of agentProperties\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{agentProperties.uid}}</div> \n                <div class=\"text-output-tab-content\">{{agentProperties.details.Buyer.PropertyType}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{agentProperties.details.Buyer.Lookingpostcode}}</div>\n                <div class=\"text-output-tab-content\">\n    \n                    <span class=\"cursor-show\">\n                        <img src=\"../../../assets/Images/dustbin.png\" class=\"icon-action\"> Delete </span> \n                        \n                        <span class=\"line-height\"></span>\n                    <span class=\"cursor-show\" routerLink=\"/AgentPropertyEditPage/{{agentProperties.details.UserId}}/{{agentProperties.uid}}\"  > <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n    \n                </div>\n            </div>\n    \n\n    \n\n\n\n            \n        </div>\n\n\n\n\n        \n\n    </mat-card>\n</div>\n\n\n</div>\n\n\n\n\n    </div>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.html":
+  /*!***********************************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.html ***!
+    \***********************************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminPanelAgentPropertyEditPageAgentPropertyEditPageComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#8592;</div>\n                <div class=\"right-text-left-container\">Back to Users</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n\n\n    <div class=\"profile-info-card\" >\n\n        <div class=\"mat-card-top-area\"> {{propertyFor}} at {{Lookingpostcode}}</div>\n        <div class=\"main-mat-card-container\">\n\n\n        <mat-card class=\"mat-card-edit\">\n\n          <div class=\"property-for-container\">\n            <span class=\"second-part-container-text\">Looking to</span>\n            <span class=\"second-part-container-number\">{{propertyFor}}</span>\n          </div>\n\n            <div class=\"main-container-area\">\n                <!--Card One-->\n                <div class=\"mat-cards-container\">\n\n                   <div class=\"profile-heading-two\">\n                    Seller Details\n                   </div>\n       \n                   <div class=\"second-part-container-two-sides-container\">\n\n                    <div class=\"right-side-second-part-container\">\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Desired Price</span>\n                        <span class=\"second-part-container-number\">{{DesiredPrice}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Postcode</span>\n                        <span class=\"second-part-container-number\">{{Postcode}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">No of Rooms</span>\n                        <span class=\"second-part-container-number\">{{Maxrooms}}</span>\n                      </div>\n\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Email</span>\n                        <span class=\"second-part-container-number\">{{selleremail}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Phone Number</span>\n                        <span class=\"second-part-container-number\">{{sellerPhone}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Address</span>\n                        <span class=\"second-part-container-number\">{{selleraddress}}</span>\n                      </div>\n\n                    </div>\n                  </div>\n       \n                </div>\n       \n                <div class=\"mat-cards-container\">\n                   <div class=\"profile-heading-two\">\n                       Property Details\n                   </div>\n       \n                   <div class=\"second-part-container-two-sides-container\">\n\n                    <div class=\"right-side-second-part-container\">\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Price Range</span>\n                        <span class=\"second-part-container-number\">{{BuyerMinamount}}-{{BuyerMaxamount}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Postcode</span>\n                        <span class=\"second-part-container-number\">{{Buyerpostcode}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">No of Rooms</span>\n                        <span class=\"second-part-container-number\">{{BuyerRoomsmin}}-{{BuyerRoomsmax}}</span>\n                      </div>\n\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Email</span>\n                        <span class=\"second-part-container-number\">{{buyeremail}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Phone Number</span>\n                        <span class=\"second-part-container-number\">{{buyerPhone}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Address</span>\n                        <span class=\"second-part-container-number\">{{buyeraddress}}</span>\n                      </div>\n\n                    </div>\n                  </div>\n               </div>\n       \n            \n       \n       \n               </div>\n\n            \n       \n\n               <div class=\"update-button\" (click)=\"backClicked()\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Back</button>\n            </div>\n\n        </mat-card>\n\n    </div>\n\n\n\n\n\n\n\n    </div>\n\n\n\n\n\n\n    </div>\n";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.html":
+  /*!*********************************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.html ***!
+    \*********************************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminPanelEditBuyerUserDetailsEditBuyerUserDetailsComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#8592;</div>\n                <div class=\"right-text-left-container\">Back to Users</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n    <!--Profile Info-->\n\n    <div class=\"profile-info-card\" *ngFor=\"let BuyerUserDetail of BuyerUserDetail\">\n\n        <div class=\"mat-card-top-area\"> {{BuyerUserDetail.PropertyType}} at {{BuyerUserDetail.Lookingpostcode}}</div>\n        <div class=\"main-mat-card-container\">\n        <mat-card class=\"mat-card-edit\">\n\n            <div class=\"mat-wrapper-card\">\n\n                <div class=\"top-card-area\">\n\n                <div  class=\"right-side-area\">\n                    <div class=\"sub-heading-user-type\"> </div>\n                    <div class=\"profile-heading\">\n                        User Type\n                    </div>\n                    <div class=\"sub-heading-user-type\">\n                        Seeker\n                    </div>\n\n                    <div class=\"profile-heading\">\n                        User Address\n                    </div>\n\n                    <div class=\"field-one\">\n                    <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                        <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Postcode</span></mat-label>\n                        <input type=\"text\" aria-label=\"Post Code\" matInput name=\"Currentpostcode\"  [(ngModel)]=\"listingBuyer.Currentpostcode\" #postcodes>\n                      </mat-form-field>\n                    </div>\n\n                </div >\n\n                 <div  class=\"middle-side-area\">\n               \n                    <div class=\"sub-heading-user-type\">\n                      \n                    </div>\n\n                    <div class=\"sub-heading-user-type\">\n                      \n                    </div>\n                      <mat-form-field class=\"full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">StreetName</mat-label>\n                        <input matInput  name=\"CurrentAddress\"  [(ngModel)]=\"listingBuyer.CurrentAddress\">\n                      </mat-form-field>\n                      <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                        <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Town/City</span></mat-label>\n                        <input type=\"text\"  matInput name=\"CurrentTown\"  [(ngModel)]=\"listingBuyer.CurrentTown\" #postcodes>\n                      </mat-form-field>\n                 </div >\n\n\n\n                 <div  class=\"middle-side-area\">\n        \n\n                    <div class=\"sub-heading-user-type\">\n                      \n                    </div>\n\n                    <div class=\"sub-heading-user-type\">\n                      \n                    </div>\n\n\n                      <mat-form-field class=\"full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">County</mat-label>\n                        <input type=\"text\" name=\"Currentstate\"  [(ngModel)]=\"listingBuyer.Currentstate\" matInput>\n                      </mat-form-field>\n\n                      <mat-form-field class=\"full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">Country</mat-label>\n                        <input type=\"text\" name=\"Currentcountry\"  [(ngModel)]=\"listingBuyer.Currentcountry\" matInput>\n                      </mat-form-field>\n                 </div >\n\n                </div>\n\n            </div>\n\n            <div class=\"main-container-area\">\n                <!--Card One-->\n                <div class=\"mat-cards-container\">\n\n                    <div class=\"profile-heading\">\n                        Looking to\n                    </div>\n\n                    <div class=\"radio-button\">\n\n                        <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\"\n                            (change)=\"radioChange($event)\"  [(ngModel)]=\"listingBuyer.PropertyFor\">\n                            <mat-radio-button value=\"buy\">Buy</mat-radio-button>\n                            <mat-radio-button value=\"rent\">Rent</mat-radio-button>\n                        </mat-radio-group>\n                    </div>\n\n                   <div class=\"profile-heading-two\">\n                       Property Address\n                   </div>\n       \n                   <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Postcode</span></mat-label>\n                       <input type=\"text\"  matInput name=\"Lookingpostcode\"  [(ngModel)]=\"listingBuyer.Lookingpostcode\" #postcodes>\n                     </mat-form-field>\n       \n       \n                     <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Streetname</span></mat-label>\n                       <input type=\"text\"  matInput name=\"LookingStreetname\"  [(ngModel)]=\"listingBuyer.LookingStreetname\" #postcodes>\n                     </mat-form-field>\n       \n                     <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Town/City</span></mat-label>\n                       <input type=\"text\"  matInput name=\"LookingTown\"  [(ngModel)]=\"listingBuyer.LookingTown\" #postcodes>\n                     </mat-form-field>\n       \n                     <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">County</span></mat-label>\n                       <input type=\"text\"  matInput name=\"Lookingstate\"  [(ngModel)]=\"listingBuyer.Lookingstate\" #postcodes>\n                     </mat-form-field>\n                     <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                       <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Country</span></mat-label>\n                       <input type=\"text\"  matInput name=\"Country\"  [(ngModel)]=\"listingBuyer.Country\" #postcodes>\n                     </mat-form-field>\n       \n       \n                </div>\n       \n                <div class=\"mat-cards-container\">\n                   <div class=\"profile-heading-two\">\n                       Property Details\n                   </div>\n       \n                   <div class=\"card-margin background-new-form\">\n       \n       \n              \n                       <div class=\"extra-field-two\"  *ngIf=\"rentOption\">\n                        <mat-form-field class=\"full-width\"  appearance=\"outline\">\n                         <mat-label class=\"fixed-Label\"><span id=\"chain\">Your Renting Position</span></mat-label>\n             \n                         <mat-select name=\"ChainStatus\"  [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n                           class=\"full-width\"   >\n                           <mat-option value=\"Ready to move in now\" (click)=\"otherOption()\">Ready to move in now</mat-option>\n                           <mat-option value=\"Looking to move in short-term\" (click)=\"otherOption()\">Looking to move in short-term</mat-option>\n                         </mat-select>\n                       </mat-form-field>\n                       </div>\n             \n             \n                       <div class=\"extra-field-two\"  *ngIf=\"buyOption\">\n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"chain\">Your Buying Position</span></mat-label>\n             \n                           <mat-select name=\"ChainStatus\"  [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n                             class=\"full-width\"  >\n                             <mat-option value=\"First Time Buyer\" (click)=\"otherOption()\">First Time Buyer</mat-option>\n                             <mat-option value=\"In Chain\" (click)=\"otherOption()\">In Chain</mat-option>\n                             <mat-option value=\"Cash Buyer\" (click)=\"otherOption()\">Cash Buyer</mat-option>\n                             <mat-option value=\"Other (Please specify)\" (click)=\"otherChain()\">Other (Please specify)</mat-option>\n                           </mat-select>\n                         </mat-form-field> \n                       </div>\n             \n             \n              <div  *ngIf=\"!rentOption\" >\n                    \n                         <div class=\"extra-field-two\" >\n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"finanacial\">Financial Position</span></mat-label>\n             \n                           <mat-select name=\"FinancialPosition\"  [(ngModel)]=\"listingBuyer.FinancialPosition\"\n                     value=\"FinancialPosition\" class=\"full-width\" >\n                             <mat-option value=\"any\" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">\n                             </mat-option>\n                             <mat-option value=\"Mortgate to be arranged\" name=\"Mortgate to be arranged\"\n                               (click)=\"removefinancialPostion()\">Mortgate to be arranged</mat-option>\n                             <mat-option value=\"Mortgage arranged \" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">\n                               Mortgage arranged </mat-option>\n                             <mat-option value=\"Cash Buyer\" name=\"Cash Buyer\" (click)=\"removefinancialPostion()\">Cash Buyer\n                             </mat-option>\n                             <mat-option value=\"Please specify\" name=\"Please specify\" (click)=\"financialPostion()\">Other</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                         </div>\n                       </div> \n             \n             \n             \n                      <mat-form-field class=\"full-width\" *ngIf=\"finanacial\">\n                         <input matInput placeholder=\"other\" name=\"other\" class=\"mat-mail-input\">\n                       </mat-form-field> \n             \n                 \n             \n                       <div >\n             \n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"Property-type\">Property Type</span></mat-label>\n                  \n                           <mat-select name=\"Propertytype\"  [(ngModel)]=\"listingBuyer.PropertyType\" value=\"Propertytype\"\n                             class=\"full-width\"  >\n                             <mat-option value=\"Flat\">Flat</mat-option>\n                             <mat-option value=\"Studio\">Studio</mat-option>\n                             <mat-option value=\"Terracedhouse\">Terraced house</mat-option>\n                             <mat-option class=\"margin\" value=\"Maisonette\">Maisonette</mat-option>\n                             <mat-option value=\"Semi-detached\">Semi-detached house</mat-option>\n                             <mat-option value=\"Bungalow\">Bungalow</mat-option>\n                             <mat-option value=\"Detachedhouse\">Detached house</mat-option>\n                             <mat-option value=\"Cottage\">Cottage</mat-option>\n                             <mat-option value=\"Townhouse\">Town house</mat-option>\n                             <mat-option value=\"Countryhouse\">Country house</mat-option>\n                             <mat-option value=\"Barnconversion\">Barn conversion</mat-option>\n                             <mat-option value=\"Farm\">Farm</mat-option>\n                             <mat-option value=\"Houseboat\">Houseboat</mat-option>\n                             <mat-option value=\"Lodge\">Lodge</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                       </div> \n             \n             \n                       <!--Min Max Amount-->\n                       \n                       <!-- <label class=\"new-heading-nestimate\">Number of Rooms</label> -->\n                   \n                       <div class=\"price-selection\">\n                        <label class=\"new-heading-nestimate\">Number of Rooms</label>\n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\">Min</mat-label>     \n                           <mat-select [(value)]=\"Roommin\" name=\"Roommin\"  [(ngModel)]=\"listingBuyer.Roommin\"  #Roommins>\n                             <mat-option value=\"Studio\">Studio</mat-option>\n                             <mat-option value=\"1\">1</mat-option>\n                             <mat-option value=\"2\">2</mat-option>\n                             <mat-option value=\"3\">3</mat-option>\n                             <mat-option value=\"4\">4</mat-option>\n                             <mat-option value=\"5\">5</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                     \n                     \n                         <mat-form-field class=\"full-width\"  appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"roomMax\">Max*</span></mat-label>\n                           <mat-select [(value)]=\"Roomsmax\" name=\"Roomsmax\"  [(ngModel)]=\"listingBuyer.Roomsmax\"  >\n                             <mat-option value=\"Studio\">Studio</mat-option>\n                             <mat-option value=\"1\">1</mat-option>\n                             <mat-option value=\"2\">2</mat-option>\n                             <mat-option value=\"3\">3</mat-option>\n                             <mat-option value=\"4\">4</mat-option>\n                             <mat-option value=\"5\">5</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                         \n                       </div> \n                       <!--Max-No of Rooms-->\n             <div class=\"amounts\" *ngIf=\"amounts\">\n                       <!--New Values-->\n                       <!--Min Max Amount-->\n                    \n                       <div class=\"price-selection\" *ngIf=\"rentOption\">\n                        <label class=\"new-heading-nestimate\" *ngIf=\"rentOption\">Rent Range</label>\n                         <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                           <mat-label class=\"fixed-Label\"><span id=\"MinAmount\">Min</span></mat-label>\n             \n                           <mat-select [(value)]=\"min\" name=\"MinAmount\"  [(ngModel)]=\"listingBuyer.MinAmount\"  >\n                             <mat-option value=\"100\">100 pcm</mat-option>\n                             <mat-option value=\"200\">200 pcm</mat-option>\n                             <mat-option value=\"300\">300 pcm</mat-option>\n                             <mat-option value=\"400\">400 pcm</mat-option>\n                             <mat-option value=\"500\">500 pcm</mat-option>\n                             <mat-option value=\"600\">600 pcm</mat-option>\n                             <mat-option value=\"700\">700 pcm</mat-option>\n                             <mat-option value=\"800\">800 pcm</mat-option>\n                             <mat-option value=\"900\">900 pcm</mat-option>\n                             <mat-option value=\"1000\">1000 pcm</mat-option>\n                             <mat-option value=\"1250\">1250 pcm</mat-option>\n                             <mat-option value=\"1500\">1500 pcm</mat-option>\n                             <mat-option value=\"1750\">1750 pcm</mat-option>\n                             <mat-option value=\"2000\">2000 pcm</mat-option>\n                             <mat-option value=\"2250\">2250 pcm</mat-option>\n                             <mat-option value=\"2500\">2500 pcm</mat-option>\n                             <mat-option value=\"2750\">2750 pcm</mat-option>\n                             <mat-option value=\"3000\">3000 pcm</mat-option>\n                             <mat-option value=\"3250\">3250 pcm</mat-option>\n                             <mat-option value=\"3500\">3500 pcm</mat-option>\n                             <mat-option value=\"3750\">3750 pcm</mat-option>\n                             <mat-option value=\"4000\">4000 pcm</mat-option>\n                             <mat-option value=\"4250\">4250 pcm</mat-option>\n                             <mat-option value=\"4500\">4500 pcm</mat-option>\n                             <mat-option value=\"5000\">5000 pcm</mat-option>\n                             <mat-option value=\"5500\">5500 pcm</mat-option>\n                             <mat-option value=\"6000\">6000 pcm</mat-option>\n                             <mat-option value=\"6500\">6500 pcm</mat-option>\n                             <mat-option value=\"7000\">7000 pcm</mat-option>\n                             <mat-option value=\"7500\">7500 pcm</mat-option>\n                             <mat-option value=\"8000\">8500 pcm</mat-option>\n                             <mat-option value=\"9000\">9000 pcm</mat-option>\n                             <mat-option value=\"9500\">9500 pcm</mat-option>\n                             <mat-option value=\"10000\">10000 pcm</mat-option>\n                             <mat-option value=\"12500\">125000 pcm</mat-option>\n                             <mat-option value=\"15000\">15000 pcm</mat-option>\n                             <mat-option value=\"17500\">17500 pcm</mat-option>\n                             <mat-option value=\"20000\">20000 pcm</mat-option>\n                             <mat-option value=\"25000\">25000 pcm</mat-option>\n             \n             \n             \n                           </mat-select>\n                         </mat-form-field>\n                         \n                    \n                          <mat-form-field class=\"full-width\"   appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"MaxAmount\">Max</span></mat-label>\n             \n                           <mat-select [(value)]=\"max\" name=\"MaxAmount\"  [(ngModel)]=\"listingBuyer.MaxAmount\"  >\n                             <mat-option value=\"100\">100 pcm</mat-option>\n                             <mat-option value=\"200\">200 pcm</mat-option>\n                             <mat-option value=\"300\">300 pcm</mat-option>\n                             <mat-option value=\"400\">400 pcm</mat-option>\n                             <mat-option value=\"500\">500 pcm</mat-option>\n                             <mat-option value=\"600\">600 pcm</mat-option>\n                             <mat-option value=\"700\">700 pcm</mat-option>\n                             <mat-option value=\"800\">800 pcm</mat-option>\n                             <mat-option value=\"900\">900 pcm</mat-option>\n                             <mat-option value=\"1000\">1000 pcm</mat-option>\n                             <mat-option value=\"1250\">1250 pcm</mat-option>\n                             <mat-option value=\"1500\">1500 pcm</mat-option>\n                             <mat-option value=\"1750\">1750 pcm</mat-option>\n                             <mat-option value=\"2000\">2000 pcm</mat-option>\n                             <mat-option value=\"2250\">2250 pcm</mat-option>\n                             <mat-option value=\"2500\">2500 pcm</mat-option>\n                             <mat-option value=\"2750\">2750 pcm</mat-option>\n                             <mat-option value=\"3000\">3000 pcm</mat-option>\n                             <mat-option value=\"3250\">3250 pcm</mat-option>\n                             <mat-option value=\"3500\">3500 pcm</mat-option>\n                             <mat-option value=\"3750\">3750 pcm</mat-option>\n                             <mat-option value=\"4000\">4000 pcm</mat-option>\n                             <mat-option value=\"4250\">4250 pcm</mat-option>\n                             <mat-option value=\"4500\">4500 pcm</mat-option>\n                             <mat-option value=\"5000\">5000 pcm</mat-option>\n                             <mat-option value=\"5500\">5500 pcm</mat-option>\n                             <mat-option value=\"6000\">6000 pcm</mat-option>\n                             <mat-option value=\"6500\">6500 pcm</mat-option>\n                             <mat-option value=\"7000\">7000 pcm</mat-option>\n                             <mat-option value=\"7500\">7500 pcm</mat-option>\n                             <mat-option value=\"8000\">8500 pcm</mat-option>\n                             <mat-option value=\"9000\">9000 pcm</mat-option>\n                             <mat-option value=\"9500\">9500 pcm</mat-option>\n                             <mat-option value=\"10000\">10000 pcm</mat-option>\n                             <mat-option value=\"12500\">125000 pcm</mat-option>\n                             <mat-option value=\"15000\">15000 pcm</mat-option>\n                             <mat-option value=\"17500\">17500 pcm</mat-option>\n                             <mat-option value=\"20000\">20000 pcm</mat-option>\n                             <mat-option value=\"25000\">25000 pcm</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                       \n                       </div> \n                       <!--New Values Ended-->\n             \n             <!--Old Value-->\n                       <!--Min Max Amount-->\n                  <div class=\"price-selection\" *ngIf=\"buyOption\">\n                    <label class=\"new-heading-nestimate\" *ngIf=\"buyOption\">Price Range</label>\n\n                         <mat-form-field class=\"full-width\" appearance=\"outline\" >\n                           <mat-label class=\"fixed-Label\"><span id=\"MinAmount\">Min</span></mat-label>\n             \n                           <mat-select [(value)]=\"min\" name=\"MinAmount\"  [(ngModel)]=\"listingBuyer.MinAmount\"  >\n                             <mat-option value=\"50,000\">50,000</mat-option>\n                             <mat-option value=\"60,000\">60,000</mat-option>\n                             <mat-option value=\"70,000\">70,000</mat-option>\n                             <mat-option value=\"80,000\">80,000</mat-option>\n                             <mat-option value=\"90,000\">90,000</mat-option>\n                             <mat-option value=\"100,000\">100,000</mat-option>\n                             <mat-option value=\"110,000\">110,000</mat-option>\n                             <mat-option value=\"120,000\">120,000</mat-option>\n                             <mat-option value=\"125,000\">125,000</mat-option>\n                             <mat-option value=\"130,000\">130,000</mat-option>\n                             <mat-option value=\"140,000\">140,000</mat-option>\n                             <mat-option value=\"150,000\">150,000</mat-option>\n                             <mat-option value=\"160,000\">160,000</mat-option>\n                             <mat-option value=\"170,000\">170,000</mat-option>\n                             <mat-option value=\"175,000\">175,000</mat-option>\n                             <mat-option value=\"180,000\">180,000</mat-option>\n                             <mat-option value=\"190,000\">190,000</mat-option>\n                             <mat-option value=\"200,000\">200,000</mat-option>\n                             <mat-option value=\"210,000\">210,000</mat-option>\n                             <mat-option value=\"220,000\">220,000</mat-option>\n                             <mat-option value=\"230,000\">230,000</mat-option>\n                             <mat-option value=\"240,000\">240,000</mat-option>\n                             <mat-option value=\"250,000\">250,000</mat-option>\n                             <mat-option value=\"260,000\">260,000</mat-option>\n                             <mat-option value=\"270,000\">270,000</mat-option>\n                             <mat-option value=\"280,000\">280,000</mat-option>\n                             <mat-option value=\"290,000\">290,000</mat-option>\n                             <mat-option value=\"300,000\">300,000</mat-option>\n                             <mat-option value=\"325,000\">325,000</mat-option>\n                             <mat-option value=\"350,000\">350,000</mat-option>\n                             <mat-option value=\"375000\">375,000</mat-option>\n                             <mat-option value=\"400,000\">400,000</mat-option>\n                             <mat-option value=\"425,000\">425,000</mat-option>\n                             <mat-option value=\"450,000\">450,000</mat-option>\n                             <mat-option value=\"475,000\">475,000</mat-option>\n                             <mat-option value=\"500,000\">500,000</mat-option>\n                             <mat-option value=\"525,000\">525,000</mat-option>\n                             <mat-option value=\"550,000\">550,000</mat-option>\n                             <mat-option value=\"575,000\">575,000</mat-option>\n                             <mat-option value=\"600,000\">600,000</mat-option>\n                             <mat-option value=\"625,000\">625,000</mat-option>\n                             <mat-option value=\"650,000\">650,000</mat-option>\n                             <mat-option value=\"675,000\">675,000</mat-option>\n                             <mat-option value=\"700,000\">700,000</mat-option>\n                             <mat-option value=\"725,000\">725,000</mat-option>\n                             <mat-option value=\"750,000\">750,000</mat-option>\n                             <mat-option value=\"775,000\">775,000</mat-option>\n                             <mat-option value=\"800,000\">800,000</mat-option>\n                             <mat-option value=\"825,000\">825,000</mat-option>\n                             <mat-option value=\"850,000\">850,000</mat-option>\n                             <mat-option value=\"875,000\">875,000</mat-option>\n                             <mat-option value=\"900,000\">900,000</mat-option>\n                             <mat-option value=\"925,000\">925,000</mat-option>\n                             <mat-option value=\"950,000\">950,000</mat-option>\n                             <mat-option value=\"975,000\">975,000</mat-option>\n                             <mat-option value=\"1000,000\">1000,000</mat-option>\n                             <mat-option value=\"1250,000\">1250,000</mat-option>\n                             <mat-option value=\"1500,000\">1500,000</mat-option>\n                             <mat-option value=\"1750,000\">1750,000</mat-option>\n                             <mat-option value=\"2000,000\">2000,000</mat-option>\n                             <mat-option value=\"2250,000\">2250,000</mat-option>\n                             <mat-option value=\"2500,000\">2500,000</mat-option>\n                             <mat-option value=\"3000,000\">3000,000</mat-option>\n                             <mat-option value=\"4000,000\">4000,000</mat-option>\n                             <mat-option value=\"5000,000\">5000,000</mat-option>\n                             <mat-option value=\"6000,000\">6000,000</mat-option>\n                             <mat-option value=\"7000,000\">7000,000</mat-option>\n                             <mat-option value=\"8000,000\">8000,000</mat-option>\n                             <mat-option value=\"10000,000\">10000,000</mat-option>\n                             <mat-option value=\"15000,000\">15000,000</mat-option>\n                             <mat-option value=\"20000,000\">20000,000</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                       \n             \n                         <mat-form-field class=\"full-width\" appearance=\"outline\">\n                           <mat-label class=\"fixed-Label\"><span id=\"MaxAmount\">Max</span></mat-label>\n             \n                           <mat-select [(value)]=\"max\" name=\"MaxAmount\"  [(ngModel)]=\"listingBuyer.MaxAmount\"  MaxAmounts>\n                             <mat-option value=\"50,000\">50,000</mat-option>\n                             <mat-option value=\"60,000\">60,000</mat-option>\n                             <mat-option value=\"70,000\">70,000</mat-option>\n                             <mat-option value=\"80,000\">80,000</mat-option>\n                             <mat-option value=\"90,000\">90,000</mat-option>\n                             <mat-option value=\"100,000\">100,000</mat-option>\n                             <mat-option value=\"110,000\">110,000</mat-option>\n                             <mat-option value=\"120,000\">120,000</mat-option>\n                             <mat-option value=\"125,000\">125,000</mat-option>\n                             <mat-option value=\"130,000\">130,000</mat-option>\n                             <mat-option value=\"140,000\">140,000</mat-option>\n                             <mat-option value=\"150,000\">150,000</mat-option>\n                             <mat-option value=\"160,000\">160,000</mat-option>\n                             <mat-option value=\"170,000\">170,000</mat-option>\n                             <mat-option value=\"175,000\">175,000</mat-option>\n                             <mat-option value=\"180,000\">180,000</mat-option>\n                             <mat-option value=\"190,000\">190,000</mat-option>\n                             <mat-option value=\"200,000\">200,000</mat-option>\n                             <mat-option value=\"210,000\">210,000</mat-option>\n                             <mat-option value=\"220,000\">220,000</mat-option>\n                             <mat-option value=\"230,000\">230,000</mat-option>\n                             <mat-option value=\"240,000\">240,000</mat-option>\n                             <mat-option value=\"250,000\">250,000</mat-option>\n                             <mat-option value=\"260,000\">260,000</mat-option>\n                             <mat-option value=\"270,000\">270,000</mat-option>\n                             <mat-option value=\"280,000\">280,000</mat-option>\n                             <mat-option value=\"290,000\">290,000</mat-option>\n                             <mat-option value=\"300,000\">300,000</mat-option>\n                             <mat-option value=\"325,000\">325,000</mat-option>\n                             <mat-option value=\"350,000\">350,000</mat-option>\n                             <mat-option value=\"375000\">375,000</mat-option>\n                             <mat-option value=\"400,000\">400,000</mat-option>\n                             <mat-option value=\"425,000\">425,000</mat-option>\n                             <mat-option value=\"450,000\">450,000</mat-option>\n                             <mat-option value=\"475,000\">475,000</mat-option>\n                             <mat-option value=\"500,000\">500,000</mat-option>\n                             <mat-option value=\"525,000\">525,000</mat-option>\n                             <mat-option value=\"550,000\">550,000</mat-option>\n                             <mat-option value=\"575,000\">575,000</mat-option>\n                             <mat-option value=\"600,000\">600,000</mat-option>\n                             <mat-option value=\"625,000\">625,000</mat-option>\n                             <mat-option value=\"650,000\">650,000</mat-option>\n                             <mat-option value=\"675,000\">675,000</mat-option>\n                             <mat-option value=\"700,000\">700,000</mat-option>\n                             <mat-option value=\"725,000\">725,000</mat-option>\n                             <mat-option value=\"750,000\">750,000</mat-option>\n                             <mat-option value=\"775,000\">775,000</mat-option>\n                             <mat-option value=\"800,000\">800,000</mat-option>\n                             <mat-option value=\"825,000\">825,000</mat-option>\n                             <mat-option value=\"850,000\">850,000</mat-option>\n                             <mat-option value=\"875,000\">875,000</mat-option>\n                             <mat-option value=\"900,000\">900,000</mat-option>\n                             <mat-option value=\"925,000\">925,000</mat-option>\n                             <mat-option value=\"950,000\">950,000</mat-option>\n                             <mat-option value=\"975,000\">975,000</mat-option>\n                             <mat-option value=\"1000,000\">1000,000</mat-option>\n                             <mat-option value=\"1250,000\">1250,000</mat-option>\n                             <mat-option value=\"1500,000\">1500,000</mat-option>\n                             <mat-option value=\"1750,000\">1750,000</mat-option>\n                             <mat-option value=\"2000,000\">2000,000</mat-option>\n                             <mat-option value=\"2250,000\">2250,000</mat-option>\n                             <mat-option value=\"2500,000\">2500,000</mat-option>\n                             <mat-option value=\"3000,000\">3000,000</mat-option>\n                             <mat-option value=\"4000,000\">4000,000</mat-option>\n                             <mat-option value=\"5000,000\">5000,000</mat-option>\n                             <mat-option value=\"6000,000\">6000,000</mat-option>\n                             <mat-option value=\"7000,000\">7000,000</mat-option>\n                             <mat-option value=\"8000,000\">8000,000</mat-option>\n                             <mat-option value=\"10000,000\">10000,000</mat-option>\n                             <mat-option value=\"15000,000\">15000,000</mat-option>\n                             <mat-option value=\"20000,000\">20000,000</mat-option>\n                           </mat-select>\n                         </mat-form-field>\n                   \n                       </div> \n             <!--Old Value End-->\n             </div>\n             \n             \n             \n             \n             \n             \n             \n             \n             \n             \n             \n             \n                       <!--Offer validity Group-->\n             \n                  <mat-radio-group aria-label=\"Select an option\" name=\"Validity\"  [(ngModel)]=\"listingBuyer.Validity\"\n                         value=\"Validity\" >\n                         <label class=\"new-heading-nestimate \"><span id=\"val\">How long should your Nestimate be active?</span></label><br>\n                         <div class=\"radio-button-align\"   >\n                           <mat-radio-button value=\"1\" class=\"mr-2\">1 Month</mat-radio-button>\n                           <mat-radio-button value=\"3\">3 Months</mat-radio-button>\n                           <mat-radio-button value=\"6\">6 Months</mat-radio-button>\n                           <mat-radio-button value=\"Indefinite\">Indefinite\n                           </mat-radio-button>\n                         </div>\n                       </mat-radio-group>\n                           <!--  <p class=\"Label-notes new-heading-nestimate\">*Note:Your Nestimate will remain active for the selected time\n                         period above</p> -->\n                       <!--Offer validity Group End-->\n             \n             \n             \n             \n             \n             \n             \n                       </div>\n               </div>\n       \n               <div class=\"mat-cards-container\">\n                   <div class=\"profile-heading-two\">\n                       Optional Details\n                   </div>\n       \n                   <label class=\"new-heading-nestimate\">No of Bathrooms</label>\n                   <div class=\"price-selection\" >\n                     <mat-form-field class=\"full-width\" id=\"minBathroom\" appearance=\"outline\">\n                       <mat-label class=\"fixed-Label\">Min</mat-label>\n                       <mat-select [(value)]=\"Minbathroom\" name=\"Minbathroom\"  [(ngModel)]=\"listingBuyer.Minbathroom\">\n                         <mat-option value=\"any\">Any</mat-option>\n                         <mat-option value=\"1\">1</mat-option>\n                         <mat-option value=\"2\">2</mat-option>\n                         <mat-option value=\"3\">3 or more</mat-option>\n                       </mat-select>\n                     </mat-form-field>\n                \n                     <mat-form-field class=\"full-width\" id=\"maxBathroom\" appearance=\"outline\">\n                       <mat-label class=\"fixed-Label\">Max</mat-label>\n                       <mat-select [(value)]=\"Maxbathroom\" name=\"Maxbathroom\"  [(ngModel)]=\"listingBuyer.Maxbathroom\">\n                         <mat-option value=\"any\">Any</mat-option>\n                         <mat-option value=\"1\">1</mat-option>\n                         <mat-option value=\"2\">2</mat-option>\n                         <mat-option value=\"3\">3 or more</mat-option>\n                       </mat-select>\n                     </mat-form-field>\n                  \n                   </div>\n         \n         \n         \n         \n                   <!--No of reception-->\n                   <label class=\"new-heading-nestimate\">No of Reception Rooms</label>\n                   <div class=\"price-selection\">\n                     <mat-form-field class=\"full-width\" id=\"Minreception\" appearance=\"outline\">\n                       <mat-label class=\"fixed-Label\">Min</mat-label>\n         \n                       <mat-select [(value)]=\"Minreception\" name=\"Minreception\"  [(ngModel)]=\"listingBuyer.Minreception\">\n                         <mat-option value=\"any\">Any</mat-option>\n                         <mat-option value=\"1\">1</mat-option>\n                         <mat-option value=\"2\">2</mat-option>\n                         <mat-option value=\"3\">3 or more</mat-option>\n                       </mat-select>\n                     </mat-form-field>\n                     <mat-form-field class=\"full-width\" id=\"MaxReception\" appearance=\"outline\">\n                       <mat-label class=\"fixed-Label\">Max</mat-label>\n            \n                       <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\"  [(ngModel)]=\"listingBuyer.Maxreception\">\n                         <mat-option value=\"any\">Any</mat-option>\n                         <mat-option value=\"1\">1</mat-option>\n                         <mat-option value=\"2\">2</mat-option>\n                         <mat-option value=\"3\">3 or more</mat-option>\n                       </mat-select>\n                     </mat-form-field>\n                   </div>\n         \n              \n                   <div class=\"extra-field-two\" id=\"condition\">\n                   <mat-form-field class=\"full-width\" appearance=\"outline\">\n                     <mat-label class=\"fixed-Label\">Property Condition</mat-label>\n         \n                     <mat-select [(value)]=\"Conditions\" name=\"Conditions\"  [(ngModel)]=\"listingBuyer.Conditions\">\n                       <mat-option value=\"any\">Any</mat-option>\n                       <mat-option value=\"New Build\">New Build</mat-option>\n                       <mat-option value=\"Needs Modernisation\">Needs Modernisation</mat-option>\n                     </mat-select>\n                   </mat-form-field>\n                   </div>\n         \n                   <div class=\"extra-field-two\" id=\"ownership\" *ngIf=\"!rentOption\">\n                   <mat-form-field class=\"full-width\" appearance=\"outline\">\n                     <mat-label class=\"fixed-Label\">Ownership</mat-label>\n         \n                     <mat-select name=\"Ownership\"  [(ngModel)]=\"listingBuyer.Ownership\" value=\"Ownership\"\n                       class=\"full-width\">\n                       <mat-option value=\"any\">Any</mat-option>\n                       <mat-option value=\"Leasehold\">Leasehold</mat-option>\n                       <mat-option value=\"Freehold\">Freehold</mat-option>\n                       <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n                     </mat-select>\n                   </mat-form-field>\n                   </div>\n                   <div class=\"extra-field-two\" id=\"features\">\n                   <mat-form-field class=\"full-width\" appearance=\"outline\">\n                     <mat-label class=\"fixed-Label\">Property Features</mat-label>\n                     <mat-select [formControl]=\"Condition\" multiple  [(ngModel)]=\"listingBuyer.features\" #sl\n                       class=\"mat-select-edit mat-check\">\n                       <div class=\"select-constion\">\n                         <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n                       </div>\n                       <mat-option *ngFor=\"let Conditions of ConditionsList\" [value]=\"Conditions\" class=\"mat-check\">\n                         {{Conditions}}</mat-option>\n                     </mat-select>\n                   </mat-form-field>\n               \n         \n         \n               </div>\n            </div>\n       \n       \n       \n               </div>\n       \n\n               <div class=\"update-button\" (click)=\"updateUser()\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n            </div>\n\n        </mat-card>\n\n    </div>\n\n\n\n\n\n\n\n    </div>\n\n\n\n   \n\n\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.html":
+  /*!***********************************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.html ***!
+    \***********************************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminPanelEditSellerUserDetailsEditSellerUserDetailsComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating User Details...</p>\n  </div>\n\n</div>\n<div class=\"user-agent-tab-main-container\">\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n\n      <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n        <div class=\"aarow-left-container\"> &#8592;</div>\n        <div class=\"right-text-left-container\">Back to Users</div>\n      </div>\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n\n  <div class=\"profile-info-card\">\n\n    <div class=\"mat-card-top-area\"> {{listingSeller.PropertyType}} at {{listingSeller.Lookingpostcode}}</div>\n    <div class=\"main-mat-card-container\">\n      <mat-card class=\"mat-card-edit\">\n\n        <div class=\"mat-wrapper-card\">\n\n          <div class=\"top-card-area\">\n\n            <div class=\"right-side-area\">\n              <div class=\"sub-heading-user-type\"> </div>\n              <div class=\"profile-heading\">\n                User Type\n              </div>\n              <div class=\"sub-heading-user-type\">\n                Owner\n              </div>\n\n              <div class=\"profile-heading\">\n                User Address\n              </div>\n\n              <div class=\"field-one\">\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Postcode</span></mat-label>\n                  <input type=\"text\" aria-label=\"Post Code\" matInput name=\"Currentpostcode\"\n                    [(ngModel)]=\"listingSeller.Currentpostcode\" #postcodes>\n                </mat-form-field>\n              </div>\n\n            </div>\n\n            <div class=\"middle-side-area\">\n\n              <div class=\"sub-heading-user-type\">\n\n              </div>\n\n              <div class=\"sub-heading-user-type\">\n\n              </div>\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">Address</mat-label>\n                <input matInput name=\"CurrentAddress\" [(ngModel)]=\"listingSeller.CurrentAddress\">\n              </mat-form-field>\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Town/City</span></mat-label>\n                <input type=\"text\" matInput name=\"CurrentTown\" [(ngModel)]=\"listingSeller.CurrentTown\" #postcodes>\n              </mat-form-field>\n            </div>\n\n\n\n            <div class=\"middle-side-area\">\n\n\n              <div class=\"sub-heading-user-type\">\n\n              </div>\n\n              <div class=\"sub-heading-user-type\">\n\n              </div>\n\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">County</mat-label>\n                <input type=\"text\" name=\"Currentstate\" [(ngModel)]=\"listingSeller.Currentstate\" matInput>\n              </mat-form-field>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">Country</mat-label>\n                <input type=\"text\" name=\"Currentcountry\" [(ngModel)]=\"listingSeller.Currentcountry\" matInput>\n              </mat-form-field>\n            </div>\n\n          </div>\n\n        </div>\n\n        <div class=\"main-container-area\">\n          <!--Card One-->\n          <div class=\"mat-cards-container\">\n\n            <div class=\"profile-heading\">\n              Looking to\n            </div>\n\n            <div class=\"radio-button\">\n              <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\"\n                [(ngModel)]=\"listingSeller.PropertyFor\" id=\"propfor\" (change)=\"radioChange($event)\">\n                <mat-radio-button value=\"buy\">Sell</mat-radio-button>\n                <mat-radio-button value=\"rent\">Let</mat-radio-button>\n              </mat-radio-group>\n\n            </div>\n\n            <div class=\"profile-heading-two\">\n              Property Address\n            </div>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Postcode</span></mat-label>\n              <input type=\"text\" matInput name=\"Lookingpostcode\" [(ngModel)]=\"listingSeller.Lookingpostcode\" #postcodes>\n            </mat-form-field>\n\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Address</span></mat-label>\n              <input type=\"text\" matInput name=\"LookingStreetname\" [(ngModel)]=\"listingSeller.LookingAddress\"\n                #postcodes>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Town/City</span></mat-label>\n              <input type=\"text\" matInput name=\"LookingTown\" [(ngModel)]=\"listingSeller.LookingTown\" #postcodes>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">County</span></mat-label>\n              <input type=\"text\" matInput name=\"Lookingstate\" [(ngModel)]=\"listingSeller.Lookingstate\" #postcodes>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Postcode\">Country</span></mat-label>\n              <input type=\"text\" matInput name=\"Country\" [(ngModel)]=\"listingSeller.Country\" #postcodes>\n            </mat-form-field>\n\n\n          </div>\n\n          <div class=\"mat-cards-container\">\n            <div class=\"profile-heading-two\">\n              Property Details\n            </div>\n\n            <div class=\"card-margin background-new-form\">\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n              <div>\n\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Property-type\">Property Type</span></mat-label>\n\n                  <mat-select name=\"Propertytype\" [(ngModel)]=\"listingSeller.PropertyType\" value=\"Propertytype\"\n                    class=\"full-width\">\n                    <mat-option value=\"Flat\">Flat</mat-option>\n                    <mat-option value=\"Studio\">Studio</mat-option>\n                    <mat-option value=\"Terracedhouse\">Terraced house</mat-option>\n                    <mat-option class=\"margin\" value=\"Maisonette\">Maisonette</mat-option>\n                    <mat-option value=\"Semi-detached\">Semi-detached house</mat-option>\n                    <mat-option value=\"Bungalow\">Bungalow</mat-option>\n                    <mat-option value=\"Detachedhouse\">Detached house</mat-option>\n                    <mat-option value=\"Cottage\">Cottage</mat-option>\n                    <mat-option value=\"Townhouse\">Town house</mat-option>\n                    <mat-option value=\"Countryhouse\">Country house</mat-option>\n                    <mat-option value=\"Barnconversion\">Barn conversion</mat-option>\n                    <mat-option value=\"Farm\">Farm</mat-option>\n                    <mat-option value=\"Houseboat\">Houseboat</mat-option>\n                    <mat-option value=\"Lodge\">Lodge</mat-option>\n                  </mat-select>\n                </mat-form-field>\n              </div>\n\n\n              <!--Min Max Amount-->\n\n              <!-- <label class=\"new-heading-nestimate\">Number of Rooms</label> -->\n\n              <div class=\"price-selection\">\n                <div class=\"extra-field-two\" id=\"bedroom\">\n                  <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\">No of Bedrooms</mat-label>\n                    <mat-select [(value)]=\"Maxrooms\" name=\"Maxrooms\" [(ngModel)]=\"listingSeller.Maxrooms\">\n                      <mat-option value=\"Studio\">Studio</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3</mat-option>\n                      <mat-option value=\"4\">4</mat-option>\n                      <mat-option value=\"5\">5 or More</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </div>\n              </div>\n              <!--Max-No of Rooms-->\n              <div class=\"max-amounts\" *ngIf=\"maxamounts\">\n                <!--Min Max Rooms End-->\n                <div class=\"price-selection\" *ngIf=\"letOption\">\n                  <div class=\"extra-field-two\" id=\"maxamount\">\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\">Desired Rent</mat-label>\n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\"\n                        placeholder=\"Desired Rent\">\n                        <mat-option value=\"100\">100 pcm</mat-option>\n                        <mat-option value=\"200\">200 pcm</mat-option>\n                        <mat-option value=\"300\">300 pcm</mat-option>\n                        <mat-option value=\"400\">400 pcm</mat-option>\n                        <mat-option value=\"500\">500 pcm</mat-option>\n                        <mat-option value=\"600\">600 pcm</mat-option>\n                        <mat-option value=\"700\">700 pcm</mat-option>\n                        <mat-option value=\"800\">800 pcm</mat-option>\n                        <mat-option value=\"900\">900 pcm</mat-option>\n                        <mat-option value=\"100\">1000 pcm</mat-option>\n                        <mat-option value=\"1250\">1250 pcm</mat-option>\n                        <mat-option value=\"1500\">1500 pcm</mat-option>\n                        <mat-option value=\"1750\">1750 pcm</mat-option>\n                        <mat-option value=\"2000\">2000 pcm</mat-option>\n                        <mat-option value=\"2250\">2250 pcm</mat-option>\n                        <mat-option value=\"2500\">2500 pcm</mat-option>\n                        <mat-option value=\"2750\">2750 pcm</mat-option>\n                        <mat-option value=\"3000\">3000 pcm</mat-option>\n                        <mat-option value=\"3250\">3250 pcm</mat-option>\n                        <mat-option value=\"3500\">3500 pcm</mat-option>\n                        <mat-option value=\"3750\">3750 pcm</mat-option>\n                        <mat-option value=\"4000\">4000 pcm</mat-option>\n                        <mat-option value=\"4250\">4250 pcm</mat-option>\n                        <mat-option value=\"4500\">4500 pcm</mat-option>\n                        <mat-option value=\"5000\">5000 pcm</mat-option>\n                        <mat-option value=\"5500\">5500 pcm</mat-option>\n                        <mat-option value=\"6000\">6000 pcm</mat-option>\n                        <mat-option value=\"6500\">6500 pcm</mat-option>\n                        <mat-option value=\"7000\">7000 pcm</mat-option>\n                        <mat-option value=\"7500\">7500 pcm</mat-option>\n                        <mat-option value=\"8000\">8500 pcm</mat-option>\n                        <mat-option value=\"9000\">9000 pcm</mat-option>\n                        <mat-option value=\"9500\">9500 pcm</mat-option>\n                        <mat-option value=\"10000\">10000 pcm</mat-option>\n                        <mat-option value=\"12500\">125000 pcm</mat-option>\n                        <mat-option value=\"15000\">15000 pcm</mat-option>\n                        <mat-option value=\"17500\">17500 pcm</mat-option>\n                        <mat-option value=\"20000\">20000 pcm</mat-option>\n                        <mat-option value=\"25000\">25000 pcm</mat-option>\n                      </mat-select>\n                    </mat-form-field>\n                  </div>\n                </div>\n\n                <!--Min Max Amount-->\n                <div class=\"price-selection\" *ngIf=\"sellOption\">\n                  <div class=\"extra-field-two\" id=\"maxamount\">\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\">Desired Price</mat-label>\n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\">\n                        <mat-option value=\"50,000\">50,000</mat-option>\n                        <mat-option value=\"60,000\">60,000</mat-option>\n                        <mat-option value=\"70,000\">70,000</mat-option>\n                        <mat-option value=\"80,000\">80,000</mat-option>\n                        <mat-option value=\"90,000\">90,000</mat-option>\n                        <mat-option value=\"100,000\">100,000</mat-option>\n                        <mat-option value=\"110,000\">110,000</mat-option>\n                        <mat-option value=\"120,000\">120,000</mat-option>\n                        <mat-option value=\"125,000\">125,000</mat-option>\n                        <mat-option value=\"130,000\">130,000</mat-option>\n                        <mat-option value=\"140,000\">140,000</mat-option>\n                        <mat-option value=\"150,000\">150,000</mat-option>\n                        <mat-option value=\"160,000\">160,000</mat-option>\n                        <mat-option value=\"170,000\">170,000</mat-option>\n                        <mat-option value=\"175,000\">175,000</mat-option>\n                        <mat-option value=\"180,000\">180,000</mat-option>\n                        <mat-option value=\"190,000\">190,000</mat-option>\n                        <mat-option value=\"200,000\">200,000</mat-option>\n                        <mat-option value=\"210,000\">210,000</mat-option>\n                        <mat-option value=\"220,000\">220,000</mat-option>\n                        <mat-option value=\"230,000\">230,000</mat-option>\n                        <mat-option value=\"240,000\">240,000</mat-option>\n                        <mat-option value=\"250,000\">250,000</mat-option>\n                        <mat-option value=\"260,000\">260,000</mat-option>\n                        <mat-option value=\"270,000\">270,000</mat-option>\n                        <mat-option value=\"280,000\">280,000</mat-option>\n                        <mat-option value=\"290,000\">290,000</mat-option>\n                        <mat-option value=\"300,000\">300,000</mat-option>\n                        <mat-option value=\"325,000\">325,000</mat-option>\n                        <mat-option value=\"350,000\">350,000</mat-option>\n                        <mat-option value=\"375000\">375,000</mat-option>\n                        <mat-option value=\"400,000\">400,000</mat-option>\n                        <mat-option value=\"425,000\">425,000</mat-option>\n                        <mat-option value=\"450,000\">450,000</mat-option>\n                        <mat-option value=\"475,000\">475,000</mat-option>\n                        <mat-option value=\"500,000\">500,000</mat-option>\n                        <mat-option value=\"525,000\">525,000</mat-option>\n                        <mat-option value=\"550,000\">550,000</mat-option>\n                        <mat-option value=\"575,000\">575,000</mat-option>\n                        <mat-option value=\"600,000\">600,000</mat-option>\n                        <mat-option value=\"625,000\">625,000</mat-option>\n                        <mat-option value=\"650,000\">650,000</mat-option>\n                        <mat-option value=\"675,000\">675,000</mat-option>\n                        <mat-option value=\"700,000\">700,000</mat-option>\n                        <mat-option value=\"725,000\">725,000</mat-option>\n                        <mat-option value=\"750,000\">750,000</mat-option>\n                        <mat-option value=\"775,000\">775,000</mat-option>\n                        <mat-option value=\"800,000\">800,000</mat-option>\n                        <mat-option value=\"825,000\">825,000</mat-option>\n                        <mat-option value=\"850,000\">850,000</mat-option>\n                        <mat-option value=\"875,000\">875,000</mat-option>\n                        <mat-option value=\"900,000\">900,000</mat-option>\n                        <mat-option value=\"925,000\">925,000</mat-option>\n                        <mat-option value=\"950,000\">950,000</mat-option>\n                        <mat-option value=\"975,000\">975,000</mat-option>\n                        <mat-option value=\"1000,000\">1000,000</mat-option>\n                        <mat-option value=\"1250,000\">1250,000</mat-option>\n                        <mat-option value=\"1500,000\">1500,000</mat-option>\n                        <mat-option value=\"1750,000\">1750,000</mat-option>\n                        <mat-option value=\"2000,000\">2000,000</mat-option>\n                        <mat-option value=\"2250,000\">2250,000</mat-option>\n                        <mat-option value=\"2500,000\">2500,000</mat-option>\n                        <mat-option value=\"3000,000\">3000,000</mat-option>\n                        <mat-option value=\"4000,000\">4000,000</mat-option>\n                        <mat-option value=\"5000,000\">5000,000</mat-option>\n                        <mat-option value=\"6000,000\">6000,000</mat-option>\n                        <mat-option value=\"7000,000\">7000,000</mat-option>\n                        <mat-option value=\"8000,000\">8000,000</mat-option>\n                        <mat-option value=\"10000,000\">10000,000</mat-option>\n                        <mat-option value=\"15000,000\">15000,000</mat-option>\n                        <mat-option value=\"20000,000\">20000,000</mat-option>\n                      </mat-select>\n                    </mat-form-field>\n                  </div>\n                </div>\n                <!--Min Max Amount End-->\n\n              </div>\n\n\n\n\n\n\n\n\n\n              <div class=\"owner-ship\" *ngIf=\"sellOption\">\n                <!--Ownership Field-->\n                <div class=\"extra-field-two\" id=\"owner\">\n                  <mat-form-field class=\"example-full-width\" style=\"width: 100%;\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\">Ownership</mat-label>\n                    <mat-select [(ngModel)]=\"listingSeller.ownership\" value=\"ownership\" name=\"ownership\">\n                      <mat-option value=\"Leasehold\">Leasehold</mat-option>\n                      <mat-option value=\"Freehold\">Freehold</mat-option>\n                      <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </div>\n                <!--Ownership Field End-->\n              </div>\n\n\n\n\n\n\n\n            </div>\n          </div>\n\n          <div class=\"mat-cards-container\">\n            <div class=\"profile-heading-two\">\n              Optional Details\n            </div>\n\n            <div class=\"price-selection\">\n              <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">No of Bathrooms</mat-label>\n                <mat-select [(value)]=\"Maxbathrooms\" name=\"Maxbathrooms\" [(ngModel)]=\"listingSeller.Maxbathrooms\">\n                  <mat-option value=\"any\">Any</mat-option>\n                  <mat-option value=\"1\">1</mat-option>\n                  <mat-option value=\"2\">2</mat-option>\n                  <mat-option value=\"3\">3 or more</mat-option>\n                </mat-select>\n              </mat-form-field>\n            </div>\n\n\n\n\n            <div class=\"price-selection\">\n\n              <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">No of Reception</mat-label>\n                <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingSeller.Maxreception\">\n                  <mat-option value=\"any\">Any</mat-option>\n                  <mat-option value=\"1\">1</mat-option>\n                  <mat-option value=\"2\">2</mat-option>\n                  <mat-option value=\"3\">3 or more</mat-option>\n                </mat-select>\n              </mat-form-field>\n            </div>\n\n\n            <mat-form-field class=\"example-full-width\" style=\"width: 100%;\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Property Condition</mat-label>\n              <mat-select name=\"PropertyCondition\" [(ngModel)]=\"listingSeller.PropertyCondition\"\n                [(value)]=\"PropertyCondition\">\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"Refurbished\">Refurbished</mat-option>\n                <mat-option value=\"NewBuild\">New Build</mat-option>\n                <mat-option value=\"Needsmodernisation\">Needs modernisation</mat-option>\n              </mat-select>\n            </mat-form-field>\n\n\n\n            <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Property Features</mat-label>\n              <mat-select multiple [(ngModel)]=\"listingSeller.features\" name=\"features\" #sl>\n                <div class=\"select-constion\">\n                  <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n                </div>\n                <mat-option *ngFor=\"let features of applicable\" [value]=\"features\" class=\"select-check mat-check\">\n                  {{features}}</mat-option>\n              </mat-select>\n            </mat-form-field>\n          </div>\n\n\n\n        </div>\n\n\n\n        <mat-card class=\"image-card\">\n          <div class=\"image-contatiner-top\">\n            <div class=\"profile-heading\">Images</div>\n            <div class=\"add-more-area\" (click)=\"addMoreImages()\"><img src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Add More</div>\n          </div>\n\n\n          <div class=\"image-show\" >\n            <div *ngFor=\"let FirstImage of FirstImage\"   (click)=\"deleteField(FirstImage)\">\n              <img src=\"{{FirstImage}}\" class=\"image-eight\">\n              <!-- <img src=\"../../../../assets/Images/cross.png\" class=\"button-image-cross\"> -->\n\n            </div>\n          </div>\n\n          <div class=\"upload-images-area\" *ngIf=\"uploadImage\">\n          <h2>UPLOADING IMAGES</h2>\n          <div *ngFor=\"let upload of uploads\">\n            <h3>Upload of {{upload.fileName}}</h3>\n          </div>\n          <input type=\"file\" multiple=true (change)=\"importImages($event)\">\n        </div>\n        </mat-card>\n\n\n\n\n\n\n\n        <div class=\"update-button\" (click)=\"updateSellerDetails()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n\n      </mat-card>\n\n    </div>\n\n\n\n\n\n\n\n  </div>\n\n\n\n</div>";
+    /***/
+  },
+
+  /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html":
+  /*!*******************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html ***!
+    \*******************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminPanelUielementsUielementsComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n\n</div>\n\n<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n\n      <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n        <div class=\"aarow-left-container\"> &#8592;</div>\n        <div class=\"right-text-left-container\">Back to Users</div>\n      </div>\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"main-container-uielements\">\n\n    <div class=\"mat-card-ui-elelment\">\n      <div class=\"top-tab-bar\">\n        <div class=\"tab-text\" (click)=\"homePages()\" id=\"home\">Home Page</div>\n        <div class=\"tab-text\" (click)=\"Notifications()\" id=\"notification\">Blue Notification</div>\n        <div class=\"tab-text\" id=\"seller\" (click)=\"SellerDetail()\">Seller Details</div>\n        <div class=\"tab-text\" id=\"buyer\" (click)=\"BuyerDetail()\">Buyer Details</div>\n        <div class=\"tab-text\" id=\"privacy\" (click)=\"privacy()\">Privacy Policy</div>\n        <div class=\"tab-text\" id=\"terms\" (click)=\"terms()\">Terms & Conditon</div>\n\n      </div>\n\n\n      <div class=\"mat-home-page-card\" *ngIf=\"homePage\">\n\n\n\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading\">\n            Banner Photo\n          </div>\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{bannerUrl}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uploadTopBannerImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n\n\n\n                <img src=\"{{bannerUrl}}\" class=\"image-agent\" *ngIf=\"bannerUpload\">\n\n                <div class=\"file-upload\" *ngIf=\"!bannerUpload\">\n                  <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"topimage\"\n                    [(ngModel)]=\"topimage\">\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n\n\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{SecondBannerImage}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uplodSecondImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n                <img src=\"{{SecondBannerImage}}\" class=\"image-agent\" *ngIf=\"BannerTwo\">\n                <div class=\"file-upload\" *ngIf=\"!BannerTwo\">\n                  <form #form class=\"upload-form\">\n                    <input type=\"file\" (change)=\"LoweBanner($event)\" accept=\".png,.jpg\" >\n                  </form>\n\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n        </mat-card>\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Start Your Home Journey Now\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step1UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step1Image}}\" class=\"image-agent\" *ngIf=\"step1NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step1NotUpload\">\n\n                    <input type=\"file\" (change)=\"step1upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"Step1ImageText\" [(ngModel)]=\"Step1ImageText \">\n          </textarea>\n\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step2UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step2Image}}\" class=\"image-agent\" *ngIf=\"step2NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step2NotUpload\">\n\n                    <input type=\"file\" (change)=\"step2upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Review Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"Step2ImageText\" [(ngModel)]=\"Step2ImageText\">\n                </textarea>\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step3UploadImag()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step3Image}}\" class=\"image-agent\" *ngIf=\"step3NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step3NotUpload\">\n\n                    <input type=\"file\" (change)=\"step3upload($event)\" accept=\".png,.jpg\" name=\"step3ImageNew\"\n                      [(ngModel)]=\"step3ImageNew\">\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"Step3ImageText\" [(ngModel)]=\"Step3ImageText\">\n                </textarea>\n            </div>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Blogs\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngFor=\"let allBlogs of allBlogs\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\"\n                        class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{allBlogs.BlogImage}}\" class=\"image-agent\" *ngIf=\"imageUplaod\">\n\n                  <div class=\"file-upload\" *ngIf=\"!imageUplaod\">\n\n                    <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"image\">\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"allBlogs.TextBlog\">\n          </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"allBlogs.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngIf=\"addNewBlog\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\"></div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <div class=\"file-upload\">\n                    <input type=\"file\" (change)=\"newBlogPicture($event)\" accept=\".png,.jpg\" name=\"BlogImage\"\n                      [(ngModel)]=\"blog.BlogImage\">\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"blog.TextBlog\">\n            </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"blog.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n          </div>\n\n          <div class=\"update-button\" (click)=\"addMoreBlog()\">\n\n            <button mat-button color=\"primary\" class=\"button-color\">Add More</button>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Footer\n          </div>\n\n          <div class=\"main-contianer-journey footer-area\">\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Facebook</span></mat-label>\n              <input matInput name=\"Facebook\" [(ngModel)]=\"footer.Facebook\" #Phone>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Instagram Link</span></mat-label>\n              <input matInput name=\"Instragram\" [(ngModel)]=\"footer.Instragram\" #Phone>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Twitter</span></mat-label>\n              <input matInput name=\"Twitter\" [(ngModel)]=\"footer.Twitter\" #Phone>\n            </mat-form-field>\n          </div>\n        </mat-card>\n\n\n        <div class=\"update-button\" (click)=\"updateDetails()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </div>\n\n\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"Notification\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          MynestimateBuyerDetails\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"MynestimateBuyerDetails\"\n            [(ngModel)]=\"MynestimateBuyerDetails\">\n      </textarea>\n        </div>\n\n\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          SingupFromMenu\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SingupFromMenu\" [(ngModel)]=\"SingupFromMenu\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div class=\"update-button\" (click)=\"updateNotification()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"SellerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{SellerPropertyRightImage}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{SellerPropertyRightImage}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"sellerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"BuyerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{BuyerPropertyRightImages}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{BuyerPropertyRightImages}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"buyerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"PrivacyPolicy\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Privacy Policy\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Privacy\" [(ngModel)]=\"Privacy\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updatePrivacyTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"TermConditon\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Terms & Condition\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Terms\" [(ngModel)]=\"Terms\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n  </div>\n\n\n\n\n\n</div>";
     /***/
   },
 
@@ -105,7 +231,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-header\">\n\n        <div class=\"left-main-container\">\n            <div class=\"top-bar-user-heading\">\n                Users\n            </div>\n            <div class=\"lower-text-heading\">\n                Welcome back, {{name}}\n            </div>\n        </div>\n\n        <div class=\"right-text-container\">\n            <div class=\"add_more_button\">\n                <span class=\"button-size\"> + Add User </span>\n            </div>\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{name}}\n            </div>\n        </div>\n    </div>\n    <!--[color]=\"colorToggle.value\" [backgroundColor]=\"backgroundColorToggle.value\"-->\n\n\n    <!--Tab Area-->\n    <div class=\"Main-tab-area-container\">\n        <div class=\"tab-area\">\n            <div class=\"user-tab\">Users</div>\n            <div class=\"agent-tab\">Agents</div>\n        </div>\n        <div class=\"search-field\">\n            <mat-form-field class=\"example-full-width\">\n                <input matInput>\n            </mat-form-field>\n        </div>\n\n        <div class=\"user-counter\">\n            <div class=\"user-count-heading\">Overview</div>\n\n            <div class=\"user-count-area-main\">\n                <div class=\"user-area-count\">\n                    <div class=\"user-count\">\n                        <div> <img src=\"../../../assets/Images/personnew.png\" class=\"user-image\"></div>\n\n                        <div class=\"user-count-text\">\n                            <span>{{allUser.length}}</span></div>\n\n                    </div>\n                    <div class=\"heading-count-text\">\n                        Users\n                    </div>\n                </div>\n                <span class=\"border-right\"></span>\n                <div class=\"agent-area-count\">\n                    <div class=\"user-count\">\n                        <div> <img src=\"../../../assets/Images/personnew.png\" class=\"user-image\"></div>\n\n                        <div class=\"user-count-text\"> <span>{{allAgent.length}}</span></div>\n\n                    </div>\n                    <div class=\"heading-count-text\">\n                        <span class=\"span-count-text\">Agents</span></div>\n                </div>\n            </div>\n\n\n\n        </div>\n\n\n    </div>\n\n    <!--Content-Area-->\n\n\n    <div class=\"user-content-area\">\n        <div class=\"user-content-top-heading\">\n            <mat-checkbox class=\"example-margin\"></mat-checkbox>\n            <div class=\"text-heading-tab-content\">Id</div>\n            <div class=\"text-heading-tab-content\">Name </div>\n            <div class=\"text-heading-tab-content\">Email </div>\n            <div class=\"text-heading-tab-content\">Action </div>\n        </div>\n    </div>\n\n\n    <div class=\"main-container-result-users\">\n\n        <div class=\"user-content-lower-result\" *ngFor=\"let allUser of allUser\">\n            <mat-checkbox class=\"example-margin\"></mat-checkbox>\n            <div class=\"text-output-tab-content uid-content\"> {{allUser.uid}}</div>\n            <div class=\"text-output-tab-content\">{{allUser.detail.Name}}</div>\n            <div class=\"text-output-tab-content tab-content-email\">{{allUser.detail.email}}</div>\n            <div class=\"text-output-tab-content\">\n\n                <span class=\"cursor-show\">\n                    <img src=\"../../../assets/Images/dustbin.png\" class=\"icon-action\"> Delete </span> |\n\n                <span class=\"cursor-show\" routerLink=\"/UsersEditPage/{{allUser.uid}}\"> <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n\n            </div>\n        </div>\n\n    </div>\n\n</div>";
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-header\">\n\n        <div class=\"left-main-container\">\n            <div class=\"top-bar-user-heading\">\n                Users\n            </div>\n            <div class=\"lower-text-heading\">\n                Welcome back, {{name}}\n            </div>\n        </div>\n\n        <div class=\"right-text-container\">\n            <div class=\"add_more_button\" (click)=\"addUserPopup()\" *ngIf=\"usersTab\">\n                <span class=\"button-size\"> + Add User </span>\n            </div>\n            <div class=\"add_more_button\" *ngIf=\"!usersTab\" routerLink=\"/AddUser\">\n                <span class=\"button-size\"> + Add Agent </span>\n            </div>\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{name}}\n            </div>\n        </div>\n    </div>\n\n    <!--Tab Area-->\n    <div class=\"Main-tab-area-container\">\n        <div class=\"tab-area\">\n            <div class=\"user-tab\" id=\"users-tab\" (click)=\"activeUserTab()\">Users</div>\n            <div class=\"agent-tab\" id=\"agent-tab\" (click)=\"activeUserAgentTab()\">Agents</div>\n        </div>\n        <div class=\"search-field\">\n            <div class=\"search-field-area\">\n                  <form class=\"example-form\" *ngIf=\"usersTab\">\n                    <mat-form-field class=\"example-full-width\" appearance=\"none\" >\n                      <input type=\"text\" placeholder=\"Search Email\" aria-label=\"Number\" matInput [formControl]=\"myControl\" [matAutocomplete]=\"auto\" name=\"searchEmail\"  [(ngModel)]=\"searchEmail\" >\n                      <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\">\n                        <mat-option *ngFor=\"let option of filteredOptions | async\" [value]=\"option\" >\n                          {{option}}\n                        </mat-option>\n                      </mat-autocomplete>\n                    </mat-form-field>\n                  </form>\n\n\n                  <form class=\"example-form\" *ngIf=\"!usersTab\">\n                    <mat-form-field class=\"example-full-width\" appearance=\"none\" >\n                      <input type=\"text\" placeholder=\"Search Email\" aria-label=\"Number\" matInput [formControl]=\"agentFormControl\" [matAutocomplete]=\"auto\" name=\"searchEmail\"  [(ngModel)]=\"searchEmail\" >\n                      <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\">\n                        <mat-option *ngFor=\"let option of agentfilteredOptions | async\" [value]=\"option\" >\n                          {{option}}\n                        </mat-option>\n                      </mat-autocomplete>\n                    </mat-form-field>\n                  </form>\n            </div>\n           <div *ngIf=\"usersTab\">\n            <div class=\"search-icon\" (click)=\"getSearchValue()\" *ngIf=\"!crossSearch\">\n                <img src=\"../../../assets/Images/loupe.png\" class=\"serach-icon-image\" >\n            </div>\n        </div>\n        <div *ngIf=\"!usersTab\">\n            <div class=\"search-icon\" (click)=\"getGentSearchValue()\" *ngIf=\"!crossSearch\">\n                <img src=\"../../../assets/Images/loupe.png\" class=\"serach-icon-image\" >\n            </div>\n        </div>\n\n        <div *ngIf=\"usersTab\">\n            <div class=\"search-icon\" (click)=\"removeUserSearch()\" *ngIf=\"crossSearch\">\n                <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image\" >\n            </div>\n        </div>\n\n        <div *ngIf=\"!usersTab\">\n            <div class=\"search-icon\" (click)=\"removeAgentSearch()\" *ngIf=\"crossSearch\">\n                <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image\" >\n            </div>\n        </div>\n            \n        </div>\n\n        <div class=\"user-counter\">\n            <div class=\"user-count-heading\">Overview</div>\n\n            <div class=\"user-count-area-main\">\n                <div class=\"user-area-count\">\n                    <div class=\"user-count\">\n                        <div> <img src=\"../../../assets/Images/personnew.png\" class=\"user-image\"></div>\n\n                        <div class=\"user-count-text\">\n                            <span>{{allUser.length}}</span></div>\n\n                    </div>\n                    <div class=\"heading-count-text\">\n                        Users\n                    </div>\n                </div>\n                <span class=\"border-right\"></span>\n                <div class=\"agent-area-count\">\n                    <div class=\"user-count\">\n                        <div> <img src=\"../../../assets/Images/personnew.png\" class=\"user-image\"></div>\n\n                        <div class=\"user-count-text\"> <span>{{allAgent.length}}</span></div>\n\n                    </div>\n                    <div class=\"heading-count-text\">\n                        <span class=\"span-count-text\">Agents</span></div>\n                </div>\n            </div>\n\n\n\n        </div>\n\n\n    </div>\n\n    <!--Content-Area-->\n\n\n    <div class=\"user-container\" *ngIf=\"usersTab\">\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading\">\n                <div class=\"checkbox-image\">\n                    <mat-checkbox class=\"example-margin\"></mat-checkbox>  \n                    <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\" *ngIf=\"dustbin\" (click)=\"deleteMultiple(value)\"> \n                </div>\n                \n                <div class=\"text-heading-tab-content\">Id<img src=\"../../../assets/Images/back.png\" class=\"down-side-arrow\" (click)=\"ascDesc()\"></div>\n                <div class=\"text-heading-tab-content\">Name </div>\n                <div class=\"text-heading-tab-content\">Email </div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result\" *ngFor=\"let allUser of allUser\">\n                <mat-checkbox class=\"example-margin\" [value]=\"allUser.uid\" (click)=\"getValue(allUser.uid)\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{allUser.uid}}</div>\n                <div class=\"text-output-tab-content\">{{allUser.detail.Name}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{allUser.detail.email}}</div>\n                <div class=\"text-output-tab-content\">\n\n                    <span class=\"cursor-show\"  (click)=\"deleteUser(allUser.uid)\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span>   <span class=\"line-height\"></span>\n\n                    <span class=\"cursor-show\" routerLink=\"/UsersEditPage/{{allUser.uid}}\"> <img\n                            src=\"../../../assets/Images/edit.png\" class=\"icon-action\">Edit </span>\n\n                </div>\n            </div>\n\n        </div>\n\n    </div>\n\n    <div class=\"agent-container\" *ngIf=\"!usersTab\">\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading agent-content-top-heading\">\n                <div class=\"checkbox-image\">\n                    <mat-checkbox class=\"example-margin\"></mat-checkbox>  \n                    <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\" *ngIf=\"dustbin\">\n                </div>\n                <div class=\"text-heading-tab-content\">Id<img src=\"../../../assets/Images/back.png\" class=\"down-side-arrow\" (click)=\"agentascDesc()\"></div>\n                <div class=\"text-heading-tab-content\">Name </div>\n                <div class=\"text-heading-tab-content\">Postcode</div>\n                <div class=\"text-heading-tab-content\">Job Title\n                    <img src=\"../../../assets/Images/back.png\" class=\"down-side-arrow\" (click)=\"overLayJob()\" *ngIf=\"!jobTitleSearch\">\n                    <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image-job-title\" *ngIf=\"jobTitleSearch\" (click)=\"retrieveTutorials()\">\n                </div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n   \n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result agent-content-lower-result\" *ngFor=\"let allAgent of tutorials\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{allAgent.uid}}</div>\n                <div class=\"text-output-tab-content\">{{allAgent.fullname}}</div>\n                <div class=\"text-output-tab-content\">{{allAgent.postcode}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{allAgent.jobtitle}}</div>\n                <div class=\"text-output-tab-content\">\n\n                    <span class=\"cursor-show\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span> \n                        <span class=\"line-height\"></span>\n                    <span class=\"cursor-show\" routerLink=\"/AgentEditPage/{{allAgent.id}}/{{allAgent.uid}}\"> <img\n                            src=\"../../../assets/Images/edit.png\" class=\"icon-action\">Edit </span>\n\n                </div>\n            </div>\n\n        </div>\n\n    </div>\n\n\n\n\n\n\n\n</div>\n<div class=\"add-agent-overlay\" *ngIf=\"addNewUser\">\n\n\n    <div class=\"add-agent-background\">\n\n        <div class=\"wrapper-add-agent\">\n            <div class=\"add-agent-top-headin\">\n                <div class=\"profile-heading\">\n                    Add User\n                </div>\n\n                <div class=\"image-cross\" (click)=\"addUserPopupClose()\">\n                    <img src=\"../../../assets/Images/cross.png\" class=\"image-cross-image\">\n                </div>\n\n            </div>\n            <div class=\"extra-field-two\">\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Number\">Name</span></mat-label>\n                    <input matInput name=\"Name\" [(ngModel)]=\"Name\" #Phone maxlength=\"10\">\n                </mat-form-field>\n            </div>\n\n            <div class=\"extra-field-two\">\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address</span></mat-label>\n                    <input matInput [(ngModel)]=\"email\" name=\"email\" #Emails>\n                </mat-form-field>\n            </div>\n\n            <div class=\"extra-field-two\">\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password</span></mat-label>\n                    <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"password\"\n                        #Passowrd>\n                    <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                        [attr.aria-pressed]=\"hide\">\n                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n                    </button>\n                </mat-form-field>\n            </div>\n\n\n            <div class=\"update-button\" (click)=\"createUser(Name,email,password, Type)\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Create User</button>\n            </div>\n        </div>\n    </div>\n\n</div>\n\n\n<div class=\"add-agent-overlay\" *ngIf=\"overLayJobTitle\">\n    <div class=\"overlay-black-back\">\n        <div class=\"overlay-job\">\n            <div class=\"inner-job-title\">\n                <div class=\"select-job-title-container\">\n\n                    <div class=\"selct-job-title-text\">\n                     Select Job Title\n                    </div>\n                    <div class=\"select-job-title-image-close\" (click)=\"closeroverLayJob()\">\n                <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image-job-title\" >\n                    </div>\n                </div>\n              <div  *ngFor=\"let allAgent of AllAgentJob\">\n                  <div  class=\"job-title-content\" (click)=\"showJobTiltle(allAgent.jobtitle)\">\n               {{allAgent.jobtitle}}\n\n                  </div>\n              </div>\n            </div>\n           </div>\n        </div>\n\n  \n\n</div>\n\n";
     /***/
   },
 
@@ -125,7 +251,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n<div class=\"top-bar-container\">\n\n   <div class=\"left-container\">\n\n    <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n<div class=\"aarow-left-container\">\t&#8592;</div>\n<div class=\"right-text-left-container\">Back to Users</div>\n    </div>\n   </div>\n    <div class=\"right-text-container\">\n        <div class=\"top-bar-user-heading\">\n            <img src=\"{{image}}\" class=\"image-people\">\n        </div>\n        <div class=\"lower-text-heading\">\n            {{name}}\n        </div>\n    </div>\n\n\n\n\n\n\n\n\n</div>\n    <!--Profile Info-->\n\n<div class=\"profile-info-card\">\n    <mat-card>\n<div class=\"profile-heading\">\n    Personal Info\n</div>\n\n<div class=\"fields-profile-info\">\n\n    <div class=\"field-set\">\n    <mat-form-field appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n         <span id=\"title\">Title</span>\n\n         </mat-label>\n \n        <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"title\">\n          <mat-option value=\"Mr\">Mr</mat-option>\n          <mat-option value=\"Ms\">Ms</mat-option>\n          <mat-option value=\"Mrs\">Mrs</mat-option>\n        </mat-select>\n     \n      </mat-form-field>\n      <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n        <span id=\"Name\">Full Name*</span>\n        </mat-label>\n    \n        <input matInput  name=\"username\" class=\"mat-mail-input\"  #Names  [(ngModel)]=\"username\">\n      </mat-form-field>\n      <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n          <span id=\"email\">Email Address*</span></mat-label>\n\n        <input matInput  name=\"email\" class=\"mat-mail-input\" [(ngModel)]=\"email\"\n           #emails>\n      </mat-form-field>\n    </div>\n\n\n    <div class=\"field-set\">\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"dob\">DD/MM/YYYY</span></mat-label>\n            <input matInput [matDatepicker]=\"picker\"  name=\"DOB\" class=\"mat-mail-input\"\n              value=\"DOB\"   #dobs  [(ngModel)]=\"DOB\" >\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n          </mat-form-field>\n\n\n           <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n             <span id=\"tele\">Phone Number*</span>\n            </mat-label>\n\n            <span matPrefix>+44&nbsp;</span>\n            <input matInput name=\"Phone\"    maxlength=\"10\" #tele [(ngModel)]=\"Phone\">\n          </mat-form-field>\n\n\n\n       \n\n\n          <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n            <span id=\"Name\">Postcode</span>\n            </mat-label>\n        \n            <input matInput  name=\"Currentpostcode\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"Currentpostcode\">\n          </mat-form-field>\n        </div>\n    \n        <div class=\"field-set\">\n            <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">\n                <span id=\"Name\">Country*</span>\n                </mat-label>\n                <input matInput  name=\"Currentstate\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"Currentstate\">\n              </mat-form-field>\n\n              <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">\n                <span id=\"Name\">Town/City</span>\n                </mat-label>\n                <input matInput  name=\"CurrentTowncity\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"CurrentTowncity\">\n              </mat-form-field>\n\n              <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                <textarea matInput placeholder=\"Street name\" name=\"Currentaddress\" [(ngModel)]=\"Currentaddress\"></textarea>\n              </mat-form-field>\n\n\n\n            </div>\n\n\n      \n</div>\n\n\n<div class=\"update-button\">\n\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n</div>\n\n    </mat-card>\n\n\n\n\n\n\n    <!--User List MatCard-->\n\n    <mat-card class=\"user-Listing-mat-card\">\n        <div class=\"profile-heading\">\n            Listings\n        </div>\n    </mat-card>\n\n\n\n</div>\n\n\n    \n\n\n\n</div>";
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n<div class=\"top-bar-container\">\n\n   <div class=\"left-container\">\n\n    <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n<div class=\"aarow-left-container\">\t&#8592;</div>\n<div class=\"right-text-left-container\">Back to Users</div>\n    </div>\n   </div>\n    <div class=\"right-text-container\">\n        <div class=\"top-bar-user-heading\">\n            <img src=\"{{image}}\" class=\"image-people\">\n        </div>\n        <div class=\"lower-text-heading\">\n            {{username}}\n        </div>\n    </div>\n\n\n\n\n\n\n\n\n</div>\n    <!--Profile Info-->\n\n<div class=\"profile-info-card\">\n    <mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;\">\n<div class=\"profile-heading\">\n    Personal Info\n</div>\n\n<div class=\"fields-profile-info\">\n\n    <div class=\"field-set\">\n    <mat-form-field appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n         <span id=\"title\">Title</span>\n\n         </mat-label>\n \n        <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"title\">\n          <mat-option value=\"Mr\">Mr</mat-option>\n          <mat-option value=\"Ms\">Ms</mat-option>\n          <mat-option value=\"Mrs\">Mrs</mat-option>\n        </mat-select>\n     \n      </mat-form-field>\n      <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n        <span id=\"Name\">Full Name*</span>\n        </mat-label>\n    \n        <input matInput  name=\"Name\" class=\"mat-mail-input\"    [(ngModel)]=\"Name\">\n      </mat-form-field>\n      <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n          <span id=\"email\">Email Address*</span></mat-label>\n\n        <input matInput  name=\"email\" class=\"mat-mail-input\" [(ngModel)]=\"email\"\n           #emails>\n      </mat-form-field>\n    </div>\n\n\n    <div class=\"field-set\">\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"dob\">DD/MM/YYYY</span></mat-label>\n            <input matInput [matDatepicker]=\"picker\"  name=\"DOB\" class=\"mat-mail-input\"\n              value=\"DOB\"   #dobs  [(ngModel)]=\"DOB\" >\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n          </mat-form-field>\n\n\n           <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n             <span id=\"tele\">Phone Number*</span>\n            </mat-label>\n\n            <span matPrefix>+44&nbsp;</span>\n            <input matInput name=\"Phone\"    maxlength=\"10\" #tele [(ngModel)]=\"Phone\">\n          </mat-form-field>\n\n\n\n       \n\n\n          <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n            <span id=\"Name\">Postcode</span>\n            </mat-label>\n        \n            <input matInput  name=\"Currentpostcode\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"Currentpostcode\">\n          </mat-form-field>\n        </div>\n    \n        <div class=\"field-set\">\n            <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">\n                <span id=\"Name\">Country*</span>\n                </mat-label>\n                <input matInput  name=\"Currentstate\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"Currentstate\">\n              </mat-form-field>\n\n              <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">\n                <span id=\"Name\">Town/City</span>\n                </mat-label>\n                <input matInput  name=\"CurrentTowncity\" class=\"mat-mail-input\"  #Names [(ngModel)]=\"CurrentTowncity\">\n              </mat-form-field>\n\n              <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                <textarea matInput placeholder=\"Street name\" name=\"Currentaddress\" [(ngModel)]=\"Currentaddress\"></textarea>\n              </mat-form-field>\n\n\n\n            </div>\n\n\n      \n</div>\n\n\n<div class=\"update-button\" \n(click)=\"userDetails()\">\n\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n</div>\n\n    </mat-card>\n\n\n\n\n\n\n    <!--User List MatCard-->\n<div class=\"main-listing-container\">\n    <mat-card class=\"user-Listing-mat-card\">\n        <div class=\"profile-heading\">\n            Listings\n        </div>\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-heading-tab-content\">Id</div>\n                <div class=\"text-heading-tab-content\">Property </div>\n                <div class=\"text-heading-tab-content\">Listing Type</div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result\" *ngFor=\"let BuyerUserDetails of BuyerUserDetails\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{BuyerUserDetails.id}}</div> \n                <div class=\"text-output-tab-content\">{{BuyerUserDetails.detail.PropertyType}} at {{BuyerUserDetails.detail.Lookingpostcode}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{BuyerUserDetails.detail.PropertyFor}}</div>\n                <div class=\"text-output-tab-content\">\n    \n                    <span class=\"cursor-show\" (click)=\"deleteBuyer(BuyerUserDetails.detail.UserId,BuyerUserDetails.id)\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span> \n                        \n                        <span class=\"line-height\"></span>\n    \n                    <span class=\"cursor-show\" routerLink=\"/EditBuyerUserDetails/{{BuyerUserDetails.detail.UserId}}/{{BuyerUserDetails.id}}\" > <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n    \n                </div>\n            </div>\n    \n\n            <div class=\"user-content-lower-result\" *ngFor=\"let SellerUserDetail of SellerUserDetails\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{SellerUserDetail.id}}</div> \n                <div class=\"text-output-tab-content\">{{SellerUserDetail.detail.PropertyType}} at {{SellerUserDetail.detail.Lookingpostcode}}</div>\n                <div class=\"text-output-tab-content tab-content-email\" *ngIf=\"SellerUserDetail.detail.PropertyFor == 'buy'\">\n                    Sell\n                \n                </div>\n                <div class=\"text-output-tab-content tab-content-email\" *ngIf=\"SellerUserDetail.detail.PropertyFor == 'rent'\">\n                    Let\n                \n                </div>\n                <div class=\"text-output-tab-content\" (click)=\"deleteSeller(SellerUserDetail.detail.UserId,SellerUserDetail.id)\">\n    \n                    <span class=\"cursor-show\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span> <span class=\"line-height\"></span>\n    \n                    <span class=\"cursor-show\"  routerLink=\"/EditSellerUserDetails/{{SellerUserDetail.detail.UserId}}/{{SellerUserDetail.id}}\"> <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n    \n                </div>\n            </div>\n    \n\n\n\n            \n        </div>\n\n\n\n\n        \n\n    </mat-card>\n</div>\n\n\n</div>\n\n\n    \n\n\n\n</div>";
     /***/
   },
 
@@ -365,7 +491,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n      </div>\n\n</div>\n\n<div *ngIf=\"isRegister\" class=\"register-user-loading-container\">\n  <div class=\"progress-background\">\n    <h2 class=\"loader-text fixed-Label\">{{status}}</h2>\n  <mat-progress-spinner mode=\"indeterminate\" ></mat-progress-spinner>\n  </div>\n</div>\n\n\n\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n\n\n  <div class=\"mat-card-item\">\n    <div class=\"heading-signup heading-nestimate\">Please fill your company details</div>\n  </div>\n\n\n\n  <div class=\"mat-card-item\">\n    <form>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Full Name*</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\"  appearance=\"outline\">\n          <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name*</span></mat-label>\n          <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode*</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n          </mat-form-field>\n        </div>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Address\">Address*</span></mat-label>\n          <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\">\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Job\"> Job title* </span></mat-label>\n          <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number*</span></mat-label>\n          <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address* </span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password*</span></mat-label>\n          <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd>\n          <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n            [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n          </button>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees* </span></mat-label>\n          <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees*</span></mat-label>\n          <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\"  *ngIf=\"!imageUploaded\">\n        <mat-label class=\"fixed-Label\"><span id=\"Image\">Upload Logo*</span></mat-label>\n        <div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n      \n          \n</div>\n        <!-- <form #form class=\"upload-form\">\n          <input type=\"file\" name=\"files\" [(ngModel)]=\"files\" class=\"image-file\" #file >\n          <button mat-raised-button color=\"primary\" (click)=\"UploadImage()\" >Upload</button>\n        </form> -->\n      </div>\n     <div class=\"image-container\" *ngIf=\"imageUploaded\">\n       <div>\n       <p class=\"fixed-Label\">Preview</p>\n       \n      </div>\n      <div class=\"image-and-remove\">\n        <img src=\"http://134.209.93.8{{ImageUrl}}\"  class=\"image-uploaded\"/>\n       <span class=\"fixed-Label remove-button\" (click)=\"RemoveImage()\">Remove</span>\n\n      </div>\n     </div> \n      <div class=\"submit-button\">\n          <button mat-raised-button color=\"primary\"\n          (click)=\"submitForm(displayName.value, agentSignup.email, agentSignup.password,this.type)\">Start\n          My Free 3-Month Trial Now</button>\n          \n      </div>\n\n\n\n    </form>\n  </div>\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n      </div>\n\n</div>\n\n<div *ngIf=\"isRegister\" class=\"register-user-loading-container\">\n  <div class=\"progress-background\">\n    <h2 class=\"loader-text fixed-Label\">{{status}}</h2>\n  <mat-progress-spinner mode=\"indeterminate\" ></mat-progress-spinner>\n  </div>\n</div>\n\n\n\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\">Agent SignUp Form</div>\n\n\n  <div class=\"mat-card-item\">\n    <div class=\"heading-signup heading-nestimate\">Please fill your company details</div>\n  </div>\n\n\n\n  <div class=\"mat-card-item\">\n    <form>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Full Name*</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n        </mat-form-field>\n      </div>\n\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name*</span></mat-label>\n            <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n          </mat-form-field>\n        </div>\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode*</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n          </mat-form-field>\n        </div>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Address\">Address*</span></mat-label>\n          <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\">\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Job\"> Job title* </span></mat-label>\n          <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number*</span></mat-label>\n          <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address* </span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password*</span></mat-label>\n          <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd>\n          <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n            [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n          </button>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees* </span></mat-label>\n          <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees*</span></mat-label>\n          <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\"  *ngIf=\"!imageUploaded\">\n        <mat-label class=\"fixed-Label\"><span id=\"Image\">Upload Logo*</span></mat-label>\n        <div class=\"file-upload\">\n    \n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n      \n          \n</div>\n        <!-- <form #form class=\"upload-form\">\n          <input type=\"file\" name=\"files\" [(ngModel)]=\"files\" class=\"image-file\" #file >\n          <button mat-raised-button color=\"primary\" (click)=\"UploadImage()\" >Upload</button>\n        </form> -->\n      </div>\n     <div class=\"image-container\" *ngIf=\"imageUploaded\">\n       <div>\n       <p class=\"fixed-Label\">Preview</p>\n       \n      </div>\n      <div class=\"image-and-remove\">\n        <img src=\"http://134.209.93.8{{ImageUrl}}\"  class=\"image-uploaded\"/>\n       <span class=\"fixed-Label remove-button\" (click)=\"RemoveImage()\">Remove</span>\n\n      </div>\n     </div> \n      <div class=\"submit-button\">\n          <button mat-raised-button color=\"primary\"\n          (click)=\"submitForm(displayName.value, agentSignup.email, agentSignup.password,this.type)\">Start\n          My Free 3-Month Trial Now</button>\n          \n      </div>\n\n\n\n    </form>\n  </div>\n</div>";
     /***/
   },
 
@@ -1934,6 +2060,182 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/AdminPanel/Admin-common.css":
+  /*!*********************************************!*\
+    !*** ./src/app/AdminPanel/Admin-common.css ***!
+    \*********************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminPanelAdminCommonCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.fixed-Label{\ncolor: #B1A9A9;\n}\n\n.left-container:hover\n{\n    cursor: pointer;\n}\n\n.add_more_button:hover\n{\n    cursor: pointer;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 1em;\n    font-size: 20px;\n    padding-left: 10px;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.sub-heading-user-type\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    margin-top: 5px;\n    font-size: 18px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9BZG1pbi1jb21tb24uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCOztJQUVsQixpQkFBaUI7O0lBRWpCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUNBOztBQUVBLGNBQWM7QUFDZCxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGVBQWU7QUFDZjs7QUFDQTtJQUNJLFdBQVc7SUFDWCxtQkFBbUI7SUFDbkIsa0JBQWtCO0lBQ2xCLGdDQUFnQztBQUNwQzs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix1QkFBdUI7O0lBRXZCLDhCQUE4QjtJQUM5QixrQkFBa0I7SUFDbEIsbUJBQW1COztBQUV2Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZ0JBQWdCO0FBQ3BCOztBQUVBO0FBQ0EsY0FBYztBQUNkOztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQjs7QUFTQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLHdCQUF3QjtJQUN4QixtQkFBbUI7SUFDbkIsMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLGdDQUFnQztJQUNoQyxlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBR0E7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL0FkbWluLWNvbW1vbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcblxuICAgIHBhZGRpbmctdG9wOiAxMHZoO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDExcHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG59XG5pbWcuaW1hZ2UtcGVvcGxlIHtcbiAgICBoZWlnaHQ6IDV2aDtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC10ZXh0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG5zcGFuLmJ1dHRvbi1zaXplIHtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG4ubGVmdC1jb250YWluZXItd3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDAuNWVtIDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuXG59XG4udG9wLWJhci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucmlnaHQtdGV4dC1sZWZ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5hYXJvdy1sZWZ0LWNvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiAxLjllbTtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG4uZml4ZWQtTGFiZWx7XG5jb2xvcjogI0IxQTlBOTtcbn1cbi5sZWZ0LWNvbnRhaW5lcjpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b246aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cblxuXG5cblxuXG5cblxuLnByb2ZpbGUtaGVhZGluZyB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IG1heC1jb250ZW50O1xuICAgIHBhZGRpbmctcmlnaHQ6IDFlbTtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cblxuLnN1Yi1oZWFkaW5nLXVzZXItdHlwZVxue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICBmb250LXNpemU6IDE4cHg7XG59Il19 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/add-user/add-user.component.css":
+  /*!************************************************************!*\
+    !*** ./src/app/AdminPanel/add-user/add-user.component.css ***!
+    \************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminPanelAddUserAddUserComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n    margin-right: 2em;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n\nimg.pen-image {\n    height: 1.5vh;\n    margin-right: 10px;\n}\n\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    padding: 1em;\n}\n\nimg.image-agent {\n    height: 12vh;\n}\n\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n}\n\n.agent-image-upload {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border: 1px solid #707070;\n    margin: 1em 28vw;\n    border-radius: 10px;\n}\n\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\n\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\n\nimg.cross-image {\n    height: 1.5vh;\n}\n\n.add-more-area\n{\n    cursor: pointer;\n}\n\n.file-upload {\n    margin-left: -5em;\n}\n\n.full-width\n{\n    width: 100%;\n}\n\n.update-button {\n    padding: 10px;\n}\n\nbutton.button-color {\n    padding: 0em 1em !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZGQtdXNlci9hZGQtdXNlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCOztJQUVsQixpQkFBaUI7O0lBRWpCLHlCQUF5QjtJQUN6QixpQkFBaUI7QUFDckI7O0FBRUE7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztFQUNuQyxnQkFBZ0I7RUFDaEIsY0FBYztBQUNoQjs7QUFDQTs7QUFFQSxjQUFjO0FBQ2QsaUNBQWlDO0FBQ2pDLGdCQUFnQjtBQUNoQixlQUFlO0FBQ2Y7O0FBQ0E7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0lBQ25CLGtCQUFrQjtJQUNsQixnQ0FBZ0M7QUFDcEM7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtJQUNuQixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0lBQ2pDLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCOztJQUV2Qiw4QkFBOEI7SUFDOUIsa0JBQWtCO0lBQ2xCLG1CQUFtQjs7QUFFdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixjQUFjO0lBQ2QsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtBQUNwQjs7QUFJQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtBQUN2Qjs7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsZUFBZTtBQUNuQjs7QUFFQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFFQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLHdCQUF3QjtJQUN4QixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxlQUFlO0FBQ25COztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixnQ0FBZ0M7SUFDaEMsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtJQUNuQixnQ0FBZ0M7QUFDcEM7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0RBQWtEO0lBQ2xELGVBQWU7SUFDZix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsZ0JBQWdCO0FBQ3BCOztBQWFBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYixrREFBa0Q7SUFDbEQsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix3QkFBd0I7SUFDeEIsdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLHVCQUF1QjtBQUMzQjs7QUFDQTtJQUNJLGFBQWE7SUFDYixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0JBQWtCO0FBQ3RCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixZQUFZO0FBQ2hCOztBQUNBO0lBQ0ksWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsV0FBVztBQUNmOztBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLHlCQUF5QjtJQUN6QixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjs7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixvQkFBb0I7SUFDcEIseUJBQXlCO0FBQzdCOztBQUNBO0lBQ0ksYUFBYTtBQUNqQjs7QUFDQTs7SUFFSSxlQUFlO0FBQ25COztBQUNBO0lBQ0ksaUJBQWlCO0FBQ3JCOztBQUNBOztJQUVJLFdBQVc7QUFDZjs7QUFDQTtJQUNJLGFBQWE7QUFDakI7O0FBQ0E7SUFDSSwyQkFBMkI7QUFDL0IiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL2FkZC11c2VyL2FkZC11c2VyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcblxuICAgIHBhZGRpbmctdG9wOiAxMHZoO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDExcHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG59XG5pbWcuaW1hZ2UtcGVvcGxlIHtcbiAgICBoZWlnaHQ6IDV2aDtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC10ZXh0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG5zcGFuLmJ1dHRvbi1zaXplIHtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG4ubGVmdC1jb250YWluZXItd3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDAuNWVtIDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuXG59XG4udG9wLWJhci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucmlnaHQtdGV4dC1sZWZ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5hYXJvdy1sZWZ0LWNvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiAxLjllbTtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG5cblxuLmZpZWxkLXNldCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmV4YW1wbGUtZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG59XG5cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBwYWRkaW5nOiAwZW0gNWVtO1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbiAgICB3aWR0aDogMTF2dztcbiAgICBmb250LXNpemU6IDIwcHg7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1MaXN0aW5nLW1hdC1jYXJkIHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLm1haW4tbGlzdGluZy1jb250YWluZXIge1xuICAgIHBhZGRpbmc6IDJlbSAwZW07XG59XG5zcGFuLmxpbmUtaGVpZ2h0IHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjQzFCQkJCO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG59XG5cblxuXG5cblxuXG5cblxuXG5cblxuXG4udWlkLWNvbnRlbnQge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5jdXJzb3Itc2hvd1xue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuM2ZyIDFmciAxLjJmciAwLjlmciAwLjZmcjtcbiAgICBtYXJnaW4tbGVmdDogMGVtO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICAvKiBtYXJnaW4tYm90dG9tOiAxZW07ICovXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAganVzdGlmeS1pdGVtczogYmFzZWxpbmU7XG59XG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG4uYWRkLW1vcmUtYXJlYSB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG5pbWcucGVuLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi51cGxvYWQtaW1hZ2UtZmlyc3QtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgd2lkdGg6IDg1JTtcbiAgICBwYWRkaW5nOiAxZW07XG59XG5pbWcuaW1hZ2UtYWdlbnQge1xuICAgIGhlaWdodDogMTJ2aDtcbn1cbi5pbWFnZS11c2VyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLmFnZW50LWltYWdlLXVwbG9hZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyOiAxcHggc29saWQgIzcwNzA3MDtcbiAgICBtYXJnaW46IDFlbSAyOHZ3O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5zcGFuLm5vdGUtYXJlYSB7XG4gICAgY29sb3I6ICNCMUE5QTk7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBtYXJnaW46IDAuN2VtIC0xLjVlbTtcbiAgICAvKiBib3JkZXItcmFkaXVzOiAxN3B4OyAqL1xufVxuaW1nLmNyb3NzLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xufVxuLmFkZC1tb3JlLWFyZWFcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4uZmlsZS11cGxvYWQge1xuICAgIG1hcmdpbi1sZWZ0OiAtNWVtO1xufVxuLmZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvciB7XG4gICAgcGFkZGluZzogMGVtIDFlbSAhaW1wb3J0YW50O1xufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/add-user/add-user.component.ts":
+  /*!***********************************************************!*\
+    !*** ./src/app/AdminPanel/add-user/add-user.component.ts ***!
+    \***********************************************************/
+
+  /*! exports provided: AddUserComponent */
+
+  /***/
+  function srcAppAdminPanelAddUserAddUserComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AddUserComponent", function () {
+      return AddUserComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../admin-panel/admin-panel.service.ts.service */
+    "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _admin_auth_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../admin.auth.service */
+    "./src/app/AdminPanel/admin.auth.service.ts");
+    /* harmony import */
+
+
+    var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../../Model/agentSignup */
+    "./src/app/Model/agentSignup.ts");
+
+    var AddUserComponent = /*#__PURE__*/function () {
+      function AddUserComponent(adminPanelService, _Activatedroute, _location, AdminAuthService) {
+        _classCallCheck(this, AddUserComponent);
+
+        this.adminPanelService = adminPanelService;
+        this._Activatedroute = _Activatedroute;
+        this._location = _location;
+        this.AdminAuthService = AdminAuthService;
+        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_6__["agentSignup"]();
+        this.imageUplaod = true;
+      }
+
+      _createClass(AddUserComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.getUserDetails();
+        }
+      }, {
+        key: "getUserDetails",
+        value: function getUserDetails() {
+          var _this = this;
+
+          if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then(function (element) {
+              _this.username = element.data().Name;
+              _this.image = element.data().Image;
+            });
+          }
+        }
+      }, {
+        key: "backClicked",
+        value: function backClicked() {
+          this._location.back();
+        }
+      }, {
+        key: "createUser",
+        value: function createUser(title, Name, email, password, DOB, postcode, country, Town, streetname) {
+          this.AdminAuthService.adminSignUp(Name, email, password, DOB);
+        }
+      }]);
+
+      return AddUserComponent;
+    }();
+
+    AddUserComponent.ctorParameters = function () {
+      return [{
+        type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+      }, {
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]
+      }, {
+        type: _admin_auth_service__WEBPACK_IMPORTED_MODULE_5__["AdminAuthService"]
+      }];
+    };
+
+    AddUserComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-add-user',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./add-user.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/add-user/add-user.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./add-user.component.css */
+      "./src/app/AdminPanel/add-user/add-user.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
+    })], AddUserComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/AdminPanel/admin-header/admin-header.component.css":
   /*!********************************************************************!*\
     !*** ./src/app/AdminPanel/admin-header/admin-header.component.css ***!
@@ -1949,7 +2251,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".nestimate-admin-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 23px;\n    padding-left: 12px;\n}\n\nimg.nestimate-logo-header {\n    height: 3.6vh;\n}\n\n.admin-heaher-main {\n    display: flex;\n    align-items: center;\n    padding: 10px;\n    background-color: white;\n    position: fixed;\n    z-index: 1;\n    width: 100%;\n\n}\n\n.nestimate-logo-container {\n    border-right: 1px solid black;\n}\n\n.admin-side-bar {\n    background-color: white;\n    width: 9em;\n    height: 94%;\n    box-shadow: 6px 0 5px -2px #888;\n    position: fixed;\n    margin-top: 6vh;\n}\n\nimg.dashboard-icon {\n   \n    height: 5vh;\n\n}\n\n.dashboard-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 15px;\n    padding-right: 0px;\n    padding-left: 0px;\n}\n\n.dashboard-container\n{\n    color: #C1BFBF;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 500;\n}\n\n.sign-out-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    /* position: relative; */\n    /* bottom: 0px; */\n    position: absolute;\n    bottom: 10px;\n    left: 3em;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjtBQUN0Qjs7QUFFQTtJQUNJLGFBQWE7QUFDakI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsZUFBZTtJQUNmLFVBQVU7SUFDVixXQUFXOztBQUVmOztBQUNBO0lBQ0ksNkJBQTZCO0FBQ2pDOztBQUVBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFVBQVU7SUFDVixXQUFXO0lBQ1gsK0JBQStCO0lBQy9CLGVBQWU7SUFDZixlQUFlO0FBQ25COztBQUVBOztJQUVJLFdBQVc7O0FBRWY7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixzQkFBc0I7SUFDdEIsYUFBYTtJQUNiLGtCQUFrQjtJQUNsQixpQkFBaUI7QUFDckI7O0FBRUE7O0lBRUksY0FBYztJQUNkLGlDQUFpQztFQUNuQyxnQkFBZ0I7QUFDbEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsd0JBQXdCO0lBQ3hCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFNBQVM7QUFDYiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvYWRtaW4taGVhZGVyL2FkbWluLWhlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5lc3RpbWF0ZS1hZG1pbi1oZWFkaW5nXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAyM3B4O1xuICAgIHBhZGRpbmctbGVmdDogMTJweDtcbn1cblxuaW1nLm5lc3RpbWF0ZS1sb2dvLWhlYWRlciB7XG4gICAgaGVpZ2h0OiAzLjZ2aDtcbn1cbi5hZG1pbi1oZWFoZXItbWFpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHotaW5kZXg6IDE7XG4gICAgd2lkdGg6IDEwMCU7XG5cbn1cbi5uZXN0aW1hdGUtbG9nby1jb250YWluZXIge1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGJsYWNrO1xufVxuXG4uYWRtaW4tc2lkZS1iYXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHdpZHRoOiA5ZW07XG4gICAgaGVpZ2h0OiA5NCU7XG4gICAgYm94LXNoYWRvdzogNnB4IDAgNXB4IC0ycHggIzg4ODtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgbWFyZ2luLXRvcDogNnZoO1xufVxuXG5pbWcuZGFzaGJvYXJkLWljb24ge1xuICAgXG4gICAgaGVpZ2h0OiA1dmg7XG5cbn1cblxuLmRhc2hib2FyZC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIHBhZGRpbmc6IDE1cHg7XG4gICAgcGFkZGluZy1yaWdodDogMHB4O1xuICAgIHBhZGRpbmctbGVmdDogMHB4O1xufVxuXG4uZGFzaGJvYXJkLWNvbnRhaW5lclxue1xuICAgIGNvbG9yOiAjQzFCRkJGO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cblxuLnNpZ24tb3V0LWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgLyogcG9zaXRpb246IHJlbGF0aXZlOyAqL1xuICAgIC8qIGJvdHRvbTogMHB4OyAqL1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBib3R0b206IDEwcHg7XG4gICAgbGVmdDogM2VtO1xufVxuIl19 */";
+    __webpack_exports__["default"] = ".nestimate-admin-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 23px;\n    padding-left: 12px;\n\n}\n\nimg.nestimate-logo-header {\n    height: 3.8vh;\n}\n\n.admin-heaher-main {\n    display: flex;\n    align-items: center;\n    padding: 10px;\n    background-color: white;\n    position: fixed;\n    z-index: 1;\n    width: 100%;\n    box-shadow: 3px 3px 5px 3px #ccc;\n\n}\n\n.nestimate-logo-container {\n    border-right: 1px solid black;\n}\n\n.admin-side-bar {\n    background-color: white;\n    float: left;\n    height: 94%;\n    box-shadow: 7px 0 5px -2px #00000029;\n    position: fixed;\n    margin-top: 6vh;\n    padding: 0em 1em;\n}\n\nimg.dashboard-icon {\n   \n    height: 5vh;\n\n}\n\n.dashboard-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 1.3em;\n    padding-right: 0px;\n    padding-left: 0px;\n}\n\n.dashboard-container\n{\n    color: #C1BFBF;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 500;\n}\n\n.sign-out-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    /* position: relative; */\n    /* bottom: 0px; */\n    position: absolute;\n    bottom: 10px;\n    left: 3em;\n}\n\n.active-dashboard {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: 8px 8px 5px -1px #00000029;\n\n    padding: 7px;\n    width: 6.5vw;\n}\n\n.dashboard-div:hover\n{\n   cursor: pointer;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGVBQWU7SUFDZixVQUFVO0lBQ1YsV0FBVztJQUNYLGdDQUFnQzs7QUFFcEM7O0FBQ0E7SUFDSSw2QkFBNkI7QUFDakM7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIsV0FBVztJQUNYLFdBQVc7SUFDWCxvQ0FBb0M7SUFDcEMsZUFBZTtJQUNmLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBRUE7O0lBRUksV0FBVzs7QUFFZjs7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0QixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjs7QUFFQTs7SUFFSSxjQUFjO0lBQ2QsaUNBQWlDO0VBQ25DLGdCQUFnQjtBQUNsQjs7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQix3QkFBd0I7SUFDeEIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osU0FBUztBQUNiOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsc0NBQXNDOztJQUV0QyxZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFDQTs7R0FFRyxlQUFlO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmVzdGltYXRlLWFkbWluLWhlYWRpbmdcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXNpemU6IDIzcHg7XG4gICAgcGFkZGluZy1sZWZ0OiAxMnB4O1xuXG59XG5cbmltZy5uZXN0aW1hdGUtbG9nby1oZWFkZXIge1xuICAgIGhlaWdodDogMy44dmg7XG59XG4uYWRtaW4taGVhaGVyLW1haW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB6LWluZGV4OiAxO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuXG59XG4ubmVzdGltYXRlLWxvZ28tY29udGFpbmVyIHtcbiAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCBibGFjaztcbn1cblxuLmFkbWluLXNpZGUtYmFyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmbG9hdDogbGVmdDtcbiAgICBoZWlnaHQ6IDk0JTtcbiAgICBib3gtc2hhZG93OiA3cHggMCA1cHggLTJweCAjMDAwMDAwMjk7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIG1hcmdpbi10b3A6IDZ2aDtcbiAgICBwYWRkaW5nOiAwZW0gMWVtO1xufVxuXG5pbWcuZGFzaGJvYXJkLWljb24ge1xuICAgXG4gICAgaGVpZ2h0OiA1dmg7XG5cbn1cblxuLmRhc2hib2FyZC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIHBhZGRpbmc6IDEuM2VtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDBweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDBweDtcbn1cblxuLmRhc2hib2FyZC1jb250YWluZXJcbntcbiAgICBjb2xvcjogI0MxQkZCRjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG5cbi5zaWduLW91dC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIC8qIHBvc2l0aW9uOiByZWxhdGl2ZTsgKi9cbiAgICAvKiBib3R0b206IDBweDsgKi9cbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgYm90dG9tOiAxMHB4O1xuICAgIGxlZnQ6IDNlbTtcbn1cblxuLmFjdGl2ZS1kYXNoYm9hcmQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJveC1zaGFkb3c6IDhweCA4cHggNXB4IC0xcHggIzAwMDAwMDI5O1xuXG4gICAgcGFkZGluZzogN3B4O1xuICAgIHdpZHRoOiA2LjV2dztcbn1cbi5kYXNoYm9hcmQtZGl2OmhvdmVyXG57XG4gICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbiJdfQ== */";
     /***/
   },
 
@@ -1984,24 +2286,72 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
     /*! @angular/core */
     "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _admin_auth_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../admin.auth.service */
+    "./src/app/AdminPanel/admin.auth.service.ts");
 
     var AdminHeaderComponent = /*#__PURE__*/function () {
-      function AdminHeaderComponent() {
+      function AdminHeaderComponent(_router, route, AdminAuthService) {
         _classCallCheck(this, AdminHeaderComponent);
+
+        this._router = _router;
+        this.route = route;
+        this.AdminAuthService = AdminAuthService;
       }
 
       _createClass(AdminHeaderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          if (this.constructor.name == "AdminHeaderComponent") {
-            document.getElementById("appfooter").style.display = "none";
-            document.getElementById("header-main").style.display = "none";
+          document.getElementById("appfooter").style.display = "none";
+          document.getElementById("header-main").style.display = "none";
+
+          if (this.route.routeConfig.component.name == "AdminPanelComponent") {
+            this.dashboard = true;
+            this.ActiveUser = false;
+            this.UI = false;
           }
+
+          if (this.route.routeConfig.component.name == "UsersAgentTabComponent" || this.route.routeConfig.component.name == "EditSellerUserDetailsComponent" || this.route.routeConfig.component.name == "UsersEditPageComponent" || this.route.routeConfig.component.name == "AgentEditPageComponent" || this.route.routeConfig.component.name == "EditBuyerUserDetailsComponent") {
+            this.ActiveUser = true;
+            this.dashboard = false;
+            this.UI = false;
+          }
+
+          if (this.route.routeConfig.component.name == "UIElementsComponent") {
+            console.log("test");
+            this.dashboard = false;
+            this.ActiveUser = false;
+            this.UI = true;
+          }
+        }
+      }, {
+        key: "signOut",
+        value: function signOut() {
+          this.AdminAuthService.SignOut();
         }
       }]);
 
       return AdminHeaderComponent;
     }();
+
+    AdminHeaderComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+      }, {
+        type: _admin_auth_service__WEBPACK_IMPORTED_MODULE_3__["AdminAuthService"]
+      }];
+    };
 
     AdminHeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: 'app-admin-header',
@@ -2031,7 +2381,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".admin-login {\n  \n    height: 100%;\n\n    background-color: white;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.admin-login-wrapper {\n  \n}\n\nimg.image-nestimate-logo {\n    height: 8vh;\n}\n\n.Login-Text {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 2em;\n    text-align: center;\n    color: #0F3C73;\n    margin: 10px;\n}\n\n.div-content-field {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    justify-content: center;\n    margin: 10px 0px;\n}\n\nbutton.button-align {\n    background-color: #1EAAFA;\n    color: white;\n    width: 25%;\n    border-radius: 50px;\n\n    font-size: 20px;\n\n}\n\n.login-buttons {\n    margin: 12px;\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.forgot-password-text {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\nimg.lock-icon {\n    width: 1em;\n    margin-right: 10px;\n}\n\n.text-forgot-password {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n\n.Checkbox-text\n{\nfont-family: 'Roboto Slab', serif;\nfont-weight: 400;\ncolor: #0F3C73;\n}\n\n.text-forgot-password.back-to-webiste {\n    text-align: center;\n    margin: 10px 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\nimg.back-arrow {\n    width: 1.3em;\n    margin-right: 4px;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLFlBQVk7O0lBRVosdUJBQXVCO0lBQ3ZCLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFFQTs7QUFFQTs7QUFDQTtJQUNJLFdBQVc7QUFDZjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGtCQUFrQjtJQUNsQixjQUFjO0lBQ2QsWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLHVCQUF1QjtJQUN2QixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixtQkFBbUI7O0lBRW5CLGVBQWU7O0FBRW5COztBQUNBO0lBQ0ksWUFBWTtJQUNaLFdBQVc7SUFDWCxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0FBQzNCOztBQUNBO0lBQ0ksVUFBVTtJQUNWLGtCQUFrQjtBQUN0Qjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztBQUNsQjs7QUFDQTs7QUFFQSxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGNBQWM7QUFDZDs7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxZQUFZO0lBQ1osaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFkbWluLWxvZ2luIHtcbiAgXG4gICAgaGVpZ2h0OiAxMDAlO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5hZG1pbi1sb2dpbi13cmFwcGVyIHtcbiAgXG59XG5pbWcuaW1hZ2UtbmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogOHZoO1xufVxuLkxvZ2luLVRleHQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMmVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBtYXJnaW46IDEwcHg7XG59XG4uZGl2LWNvbnRlbnQtZmllbGQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDEwcHggMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1hbGlnbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFFQUFGQTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDI1JTtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuXG4gICAgZm9udC1zaXplOiAyMHB4O1xuXG59XG4ubG9naW4tYnV0dG9ucyB7XG4gICAgbWFyZ2luOiAxMnB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmZvcmdvdC1wYXNzd29yZC10ZXh0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5pbWcubG9jay1pY29uIHtcbiAgICB3aWR0aDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi50ZXh0LWZvcmdvdC1wYXNzd29yZCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG4uQ2hlY2tib3gtdGV4dFxue1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDQwMDtcbmNvbG9yOiAjMEYzQzczO1xufVxuLnRleHQtZm9yZ290LXBhc3N3b3JkLmJhY2stdG8td2ViaXN0ZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIG1hcmdpbjogMTBweCAwcHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuaW1nLmJhY2stYXJyb3cge1xuICAgIHdpZHRoOiAxLjNlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDRweDtcbn1cblxuIl19 */";
+    __webpack_exports__["default"] = ".admin-login {\n    height: 100%;\n    background-color: white;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\nimg.image-nestimate-logo {\n    height: 8vh;\n}\n.Login-Text {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 2em;\n    text-align: center;\n    color: #0F3C73;\n    margin: 10px;\n}\n.div-content-field {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    justify-content: center;\n    margin: 10px 0px;\n}\nbutton.button-align {\n    background-color: #1EAAFA;\n    color: white;\n    width: 25%;\n    border-radius: 50px;\n\n    font-size: 20px;\n\n}\n.login-buttons {\n    margin: 12px;\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.forgot-password-text {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\nimg.lock-icon {\n    width: 1em;\n    margin-right: 10px;\n}\n.text-forgot-password {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n.Checkbox-text\n{\nfont-family: 'Roboto Slab', serif;\nfont-weight: 400;\ncolor: #0F3C73;\n}\n.text-forgot-password.back-to-webiste {\n    text-align: center;\n    margin: 10px 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\nimg.back-arrow {\n    width: 1.3em;\n    margin-right: 4px;\n}\n.top-card {\n    margin-right: 2em;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 9em;\n    margin-top: 3em;\n}\n.total-nestimate {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 100%;\n    align-items: center;\n    padding-bottom: 15px;\n    border-bottom: 1px solid #CBC7C7;\n    margin-bottom: 20px;\n}\nspan.total-netiamte-text {\n    font-size: 1.6em;\n    font-family: 'Roboto', sans-serif;\n    font-weight: 700;\n    color: #787575;\n}\nspan.total-nestimate-number {\n    font-size: 1.6em;\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    display: flex;\n    align-items: center;\n}\n.wrapper-total-nestimate {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    height: 100%;\n}\n.left-nestimate-dashboard {\n    padding: 2em 4em;\n    padding-bottom: 1em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.right-nestimate-dashboard\n{\n    padding: 2em 4em;\n    padding-bottom: 1em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\nimg.person-dashboard {\n    height: 3.5vh;\n    margin-left: -1.5em;\n    padding-right: 10px;\n}\n.second-color-container {\n    background-color: #0F3C73;\n    margin-top: 2em;\n    margin-right: 1.5em;\n    padding: 0.5em;\n    color: white;\n    font-size: 1.5em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    padding-left: 1em;\n}\n.second-part-container{\n  \n    margin-right: 2em;\n\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.profile-heading.dashboard-heading {\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    padding-right: 10px;\n}\nspan.second-part-container-text {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n}\nspan.second-part-container-number {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n\n}\n.top-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n    width: 32vw;\n\n    padding-top: 1em;\n\n\n}\n.lower-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n\n    padding-top: 1em;\n\n\n\n}\n.wrapper-one-second-part-container{\n    margin: 2em 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.right-line\n{\n    border-right: 1px solid lightgray;\n\n    height: 9vh;\n\n}\n.second-part-container-two-sides-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  \n}\n.mat-card-bottom {\n    height: 5vh;\n}\n.third-matcard-align {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.third-mat-card {\n    margin-right: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.total-nestimate.total-postcode {\n\n    padding-bottom: 0px;\n    padding: 7px;\n    padding-bottom: 10px;\n    margin: 1em 3em;\n  \n}\n.fourth-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: baseline;\n}\n.wrapper-one-second-part-container {\n    padding-bottom: 2em;\n    padding: 2em 1em;\n}\n.wrapper-total-nestimate.third-matcard-align {\n    padding: 0em 2em;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLGNBQWM7SUFDZCxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixtQkFBbUI7O0lBRW5CLGVBQWU7O0FBRW5CO0FBQ0E7SUFDSSxZQUFZO0lBQ1osV0FBVztJQUNYLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksVUFBVTtJQUNWLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7O0FBRUEsaUNBQWlDO0FBQ2pDLGdCQUFnQjtBQUNoQixjQUFjO0FBQ2Q7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLFlBQVk7SUFDWixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixXQUFXO0lBQ1gsbUJBQW1CO0lBQ25CLG9CQUFvQjtJQUNwQixnQ0FBZ0M7SUFDaEMsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQztBQUNBOztJQUVJLGdCQUFnQjtJQUNoQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBR0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsY0FBYztJQUNkLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGtDQUFrQztJQUNsQyxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlCQUFpQjs7SUFFakIsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQztBQUNBO0lBQ0kscUNBQTZCO0lBQTdCLGtDQUE2QjtJQUE3Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlOztBQUVuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1COztJQUVuQixrQ0FBa0M7SUFDbEMsb0JBQW9CO0lBQ3BCLFdBQVc7O0lBRVgsZ0JBQWdCOzs7QUFHcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjs7SUFFbkIsa0NBQWtDO0lBQ2xDLG9CQUFvQjs7SUFFcEIsZ0JBQWdCOzs7O0FBSXBCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsZ0NBQWdDO0FBQ3BDO0FBQ0E7O0lBRUksaUNBQWlDOztJQUVqQyxXQUFXOztBQUVmO0FBRUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjs7QUFFdkI7QUFFQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsZ0NBQWdDO0FBQ3BDO0FBQ0E7O0lBRUksbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixvQkFBb0I7SUFDcEIsZUFBZTs7QUFFbkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsNkJBQTZCO0lBQzdCLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFkbWluLWxvZ2luIHtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5pbWcuaW1hZ2UtbmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogOHZoO1xufVxuLkxvZ2luLVRleHQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMmVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBtYXJnaW46IDEwcHg7XG59XG4uZGl2LWNvbnRlbnQtZmllbGQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDEwcHggMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1hbGlnbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFFQUFGQTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDI1JTtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuXG4gICAgZm9udC1zaXplOiAyMHB4O1xuXG59XG4ubG9naW4tYnV0dG9ucyB7XG4gICAgbWFyZ2luOiAxMnB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmZvcmdvdC1wYXNzd29yZC10ZXh0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5pbWcubG9jay1pY29uIHtcbiAgICB3aWR0aDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi50ZXh0LWZvcmdvdC1wYXNzd29yZCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG4uQ2hlY2tib3gtdGV4dFxue1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDQwMDtcbmNvbG9yOiAjMEYzQzczO1xufVxuLnRleHQtZm9yZ290LXBhc3N3b3JkLmJhY2stdG8td2ViaXN0ZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIG1hcmdpbjogMTBweCAwcHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuaW1nLmJhY2stYXJyb3cge1xuICAgIHdpZHRoOiAxLjNlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDRweDtcbn1cbi50b3AtY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XG4gICAgZ3JpZC1nYXA6IDllbTtcbiAgICBtYXJnaW4tdG9wOiAzZW07XG59XG4udG90YWwtbmVzdGltYXRlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZy1ib3R0b206IDE1cHg7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNDQkM3Qzc7XG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cbnNwYW4udG90YWwtbmV0aWFtdGUtdGV4dCB7XG4gICAgZm9udC1zaXplOiAxLjZlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzc4NzU3NTtcbn1cbnNwYW4udG90YWwtbmVzdGltYXRlLW51bWJlciB7XG4gICAgZm9udC1zaXplOiAxLjZlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ud3JhcHBlci10b3RhbC1uZXN0aW1hdGUge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuLmxlZnQtbmVzdGltYXRlLWRhc2hib2FyZCB7XG4gICAgcGFkZGluZzogMmVtIDRlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLnJpZ2h0LW5lc3RpbWF0ZS1kYXNoYm9hcmRcbntcbiAgICBwYWRkaW5nOiAyZW0gNGVtO1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG5cblxuaW1nLnBlcnNvbi1kYXNoYm9hcmQge1xuICAgIGhlaWdodDogMy41dmg7XG4gICAgbWFyZ2luLWxlZnQ6IC0xLjVlbTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuLnNlY29uZC1jb2xvci1jb250YWluZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIG1hcmdpbi1yaWdodDogMS41ZW07XG4gICAgcGFkZGluZzogMC41ZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgcGFkZGluZy1sZWZ0OiAxZW07XG59XG4uc2Vjb25kLXBhcnQtY29udGFpbmVye1xuICBcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcblxuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucHJvZmlsZS1oZWFkaW5nLmRhc2hib2FyZC1oZWFkaW5nIHtcbiAgICB3aWR0aDogZml0LWNvbnRlbnQgIWltcG9ydGFudDtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItdGV4dCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbn1cbnNwYW4uc2Vjb25kLXBhcnQtY29udGFpbmVyLW51bWJlciB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcblxufVxuLnRvcC1zZWNvbmQtcGFydC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gICAgcGFkZGluZy1ib3R0b206IDExcHg7XG4gICAgd2lkdGg6IDMydnc7XG5cbiAgICBwYWRkaW5nLXRvcDogMWVtO1xuXG5cbn1cbi5sb3dlci1zZWNvbmQtcGFydC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gICAgcGFkZGluZy1ib3R0b206IDExcHg7XG5cbiAgICBwYWRkaW5nLXRvcDogMWVtO1xuXG5cblxufVxuLndyYXBwZXItb25lLXNlY29uZC1wYXJ0LWNvbnRhaW5lcntcbiAgICBtYXJnaW46IDJlbSAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucmlnaHQtbGluZVxue1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcblxuICAgIGhlaWdodDogOXZoO1xuXG59XG5cbi5zZWNvbmQtcGFydC1jb250YWluZXItdHdvLXNpZGVzLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgXG59XG5cbi5tYXQtY2FyZC1ib3R0b20ge1xuICAgIGhlaWdodDogNXZoO1xufVxuLnRoaXJkLW1hdGNhcmQtYWxpZ24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi50aGlyZC1tYXQtY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4udG90YWwtbmVzdGltYXRlLnRvdGFsLXBvc3Rjb2RlIHtcblxuICAgIHBhZGRpbmctYm90dG9tOiAwcHg7XG4gICAgcGFkZGluZzogN3B4O1xuICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgIG1hcmdpbjogMWVtIDNlbTtcbiAgXG59XG4uZm91cnRoLXBhcnQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgYWxpZ24taXRlbXM6IGJhc2VsaW5lO1xufVxuLndyYXBwZXItb25lLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbiAgICBwYWRkaW5nOiAyZW0gMWVtO1xufVxuLndyYXBwZXItdG90YWwtbmVzdGltYXRlLnRoaXJkLW1hdGNhcmQtYWxpZ24ge1xuICAgIHBhZGRpbmc6IDBlbSAyZW07XG59XG5cbiJdfQ== */";
     /***/
   },
 
@@ -2096,6 +2446,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ../admin-panel/admin-panel.service.ts.service */
     "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
 
     var AdminPanelComponent = /*#__PURE__*/function () {
       function AdminPanelComponent(AuthService, CMSSERVICE, dialog, adminPanelService) {
@@ -2110,6 +2466,53 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.KnowUser = [];
         this.type = "Admin";
         this.LoggedIn = false;
+        this.CountAllUser = [];
+        this.listingType = [];
+        this.listingTypeBuy = [];
+        this.listingSellerRent = [];
+        this.listingSellerSell = [];
+        this.listingBuyerFlatPropertyType = [];
+        this.lsitingSellerFlatPropertyType = [];
+        this.listingBuyerStudioPropertyType = [];
+        this.listingSellerStudioPropertyType = [];
+        this.listingBuyerTerracedhousePropertyType = [];
+        this.listingSellerTerracedhousePropertyType = [];
+        this.listingBuyerMaisonettePropertyType = [];
+        this.listingSellerMaisonettePropertyType = [];
+        this.listingBuyerSemidetachedPropertyType = [];
+        this.listingSellerSemidetachedPropertyType = [];
+        this.listingBuyerBungalowPropertyType = [];
+        this.listingSellerBungalowPropertyType = [];
+        this.listingBuyerDetachedhousePropertyType = [];
+        this.listingSellerDetachedhousePropertyType = [];
+        this.listingBuyerCottagePropertyType = [];
+        this.listingSellerCottagePropertyType = [];
+        this.listingBuyerTownhousePropertyType = [];
+        this.listingSellerTownhousePropertyType = [];
+        this.listingBuyerCountryhousePropertyType = [];
+        this.listingSellerCountryhousePropertyType = [];
+        this.listingBuyerBarnconversionPropertyType = [];
+        this.listingSellerBarnconversionPropertyType = [];
+        this.listingBuyerFarmPropertyType = [];
+        this.listingSellerFarmPropertyType = [];
+        this.listingBuyerHouseboatPropertyType = [];
+        this.listingSellerHouseboatPropertyType = [];
+        this.listingBuyerLodgePropertyType = [];
+        this.listingSellerLodgePropertyType = [];
+        this.AllAgents = [];
+        this.soleFeesThird = [];
+        this.soleFeesSecond = [];
+        this.soleFeesFirst = [];
+        this.firstSole = 0;
+        this.secondSole = 0;
+        this.thirdSole = 0;
+        this.multipleFeesOne = [];
+        this.multipleFeesTwo = [];
+        this.multipleFeesThree = [];
+        this.multiFirst = 0;
+        this.multiSecond = 0;
+        this.multiThird = 0;
+        this.hide = true;
       }
 
       _createClass(AdminPanelComponent, [{
@@ -2117,6 +2520,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           this.getUser = JSON.parse(localStorage.getItem("user"));
           this.getUserDetails();
+          this.getAdminDetails();
+          this.dashboardDetails();
+          this.getMatches();
+          this.getAllUsers();
+          this.getCountUser();
+          this.getAgentfees();
 
           if (this.constructor.name == "AdminPanelComponent") {
             document.getElementById("appfooter").style.display = "none";
@@ -2124,53 +2533,351 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
         }
       }, {
+        key: "getAgentfees",
+        value: function getAgentfees() {
+          var _this2 = this;
+
+          this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
+            return changes.map(function (c) {
+              return Object.assign({
+                id: c.payload.doc.id
+              }, c.payload.doc.data());
+            });
+          })).subscribe(function (data) {
+            data.forEach(function (fees) {
+              _this2.agentFees = fees;
+
+              if (_this2.agentFees.solefees >= 1 && _this2.agentFees.solefees <= 2) {
+                _this2.soleFeesFirst.push(_this2.agentFees);
+              }
+
+              if (_this2.agentFees.solefees > 2 && _this2.agentFees.solefees <= 3) {
+                _this2.soleFeesSecond.push(_this2.agentFees);
+              }
+
+              if (_this2.agentFees.solefees > 3 && _this2.agentFees.solefees <= 4) {
+                _this2.soleFeesThird.push(_this2.agentFees);
+              }
+
+              if (_this2.agentFees.multiplefees >= 1 && _this2.agentFees.multiplefees <= 2) {
+                _this2.multipleFeesOne.push(_this2.agentFees);
+              }
+
+              if (_this2.agentFees.multiplefees > 2 && _this2.agentFees.multiplefees <= 3) {
+                _this2.multipleFeesTwo.push(_this2.agentFees);
+              }
+
+              if (_this2.agentFees.multiplefees > 3 && _this2.agentFees.multiplefees <= 4) {
+                _this2.multipleFeesThree.push(_this2.agentFees);
+              }
+            });
+            _this2.firstSole = _this2.soleFeesFirst.length;
+            _this2.secondSole = _this2.soleFeesSecond.length;
+            _this2.thirdSole = _this2.soleFeesThird.length;
+            _this2.multiFirst = _this2.multipleFeesOne.length;
+            _this2.multiSecond = _this2.multipleFeesTwo.length;
+            _this2.multiThird = _this2.multipleFeesThree.length;
+          });
+        }
+      }, {
+        key: "getCountUser",
+        value: function getCountUser() {
+          var _this3 = this;
+
+          this.adminPanelService.getAllUser().then(function (element) {
+            element.forEach(function (elements) {
+              if (elements.data().UserType == "Agent") {
+                _this3.AllAgents.push(elements.data());
+
+                _this3.agentLength = _this3.AllAgents.length;
+              }
+            });
+          });
+        }
+      }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this = this;
+          var _this4 = this;
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then(function (element) {
               if (element.data().UserType == "Admin") {
-                _this.LoggedIn = true;
+                _this4.LoggedIn = true;
               } else if (element.data().UserType != "Admin") {
-                var dialogRef = _this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
+                var dialogRef = _this4.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as Admin"
                   }
                 });
 
-                _this.LoggedIn = false;
+                _this4.LoggedIn = false;
               }
             });
           }
+        }
+      }, {
+        key: "getAllUsers",
+        value: function getAllUsers() {
+          var _this5 = this;
+
+          this.adminPanelService.getAllUser().then(function (data) {
+            data.forEach(function (element) {
+              _this5.CountAllUser.push(element.data());
+            });
+            _this5.numberOfUser = _this5.CountAllUser.length;
+          });
+        }
+      }, {
+        key: "getMatches",
+        value: function getMatches() {
+          var _this6 = this;
+
+          this.adminPanelService.getcountExpressInterest().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
+            return changes.map(function (c) {
+              return Object.assign({
+                id: c.payload.doc.id
+              }, c.payload.doc.data());
+            });
+          })).subscribe(function (data) {
+            _this6.ExpressedIneterest = data.length;
+
+            _this6.adminPanelService.getcountExpressMatches().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
+              return changes.map(function (c) {
+                return Object.assign({
+                  id: c.payload.doc.id
+                }, c.payload.doc.data());
+              });
+            })).subscribe(function (seller) {
+              _this6.ConfirmInterest = seller.length;
+            });
+          });
+        }
+      }, {
+        key: "dashboardDetails",
+        value: function dashboardDetails() {
+          var _this7 = this;
+
+          this.adminPanelService.getAllBuyer().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
+            return changes.map(function (c) {
+              return Object.assign({
+                id: c.payload.doc.id
+              }, c.payload.doc.data());
+            });
+          })).subscribe(function (data) {
+            _this7.allBuyer = data;
+            data.forEach(function (element) {
+              if (element.PropertyFor == "buy") {
+                _this7.listingTypeBuy.push(element);
+
+                _this7.countListingTypeBuy = _this7.listingTypeBuy.length;
+              }
+
+              if (element.PropertyFor == "rent") {
+                _this7.listingType.push(element);
+
+                _this7.countListingTypeRent = _this7.listingType.length;
+              }
+
+              if (element.PropertyType == "Flat") {
+                _this7.listingBuyerFlatPropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Studio") {
+                _this7.listingBuyerStudioPropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Terracedhouse") {
+                _this7.listingBuyerTerracedhousePropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Maisonette") {
+                _this7.listingBuyerMaisonettePropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Semi-detached") {
+                _this7.listingBuyerSemidetachedPropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Bungalow") {
+                _this7.listingBuyerBungalowPropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Detachedhouse") {
+                _this7.listingBuyerDetachedhousePropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Cottage") {
+                _this7.listingBuyerCottagePropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Townhouse") {
+                _this7.listingBuyerTownhousePropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Countryhouse") {
+                _this7.listingBuyerCountryhousePropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Barnconversion") {
+                _this7.listingBuyerBarnconversionPropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Farm") {
+                _this7.listingBuyerFarmPropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Houseboat") {
+                _this7.listingBuyerHouseboatPropertyType.push(element);
+              }
+
+              if (element.PropertyType == "Lodge") {
+                _this7.listingBuyerLodgePropertyType.push(element);
+              }
+            });
+
+            _this7.adminPanelService.getAllCountSeller().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
+              return changes.map(function (c) {
+                return Object.assign({
+                  id: c.payload.doc.id
+                }, c.payload.doc.data());
+              });
+            })).subscribe(function (seller) {
+              _this7.allSeller = seller;
+              _this7.NestimateLength = _this7.allBuyer.length + _this7.allSeller.length;
+              seller.forEach(function (sellerData) {
+                if (sellerData.PropertyFor == "rent") {
+                  _this7.listingSellerRent.push(sellerData);
+
+                  _this7.countingSellerTypeRent = _this7.listingSellerRent.length;
+                }
+
+                if (sellerData.PropertyFor == "buy") {
+                  _this7.listingSellerSell.push(sellerData);
+
+                  _this7.countingSellerTypeSell = _this7.listingSellerSell.length;
+                }
+
+                if (sellerData.PropertyType == "Flat") {
+                  _this7.lsitingSellerFlatPropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Studio") {
+                  _this7.listingSellerStudioPropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Terracedhouse") {
+                  _this7.listingSellerTerracedhousePropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Maisonette") {
+                  _this7.listingSellerMaisonettePropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Semi-detached") {
+                  _this7.listingSellerSemidetachedPropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Bungalow") {
+                  _this7.listingSellerBungalowPropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Detachedhouse") {
+                  _this7.listingSellerDetachedhousePropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Cottage") {
+                  _this7.listingSellerCottagePropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Townhouse") {
+                  _this7.listingSellerTownhousePropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Countryhouse") {
+                  _this7.listingSellerCountryhousePropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Barnconversion") {
+                  _this7.listingSellerBarnconversionPropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Farm") {
+                  _this7.listingSellerFarmPropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Houseboat") {
+                  _this7.listingSellerHouseboatPropertyType.push(sellerData);
+                }
+
+                if (sellerData.PropertyType == "Lodge") {
+                  _this7.listingSellerLodgePropertyType.push(sellerData);
+                }
+              });
+            });
+
+            _this7.FlatpropertyType = _this7.listingBuyerFlatPropertyType.length + _this7.lsitingSellerFlatPropertyType.length;
+            _this7.studiopropertyType = _this7.listingSellerStudioPropertyType.length + _this7.listingBuyerStudioPropertyType.length;
+            _this7.TerracedhouseType = _this7.listingBuyerTerracedhousePropertyType.length + _this7.listingSellerTerracedhousePropertyType.length;
+            _this7.MaisonetteType = _this7.listingBuyerMaisonettePropertyType.length + _this7.listingSellerMaisonettePropertyType.length;
+            _this7.SemidetachedType = _this7.listingBuyerSemidetachedPropertyType.length + _this7.listingSellerSemidetachedPropertyType.length;
+            _this7.BungalowType = _this7.listingBuyerBungalowPropertyType.length + _this7.listingSellerBungalowPropertyType.length;
+            _this7.DetachedhousType = _this7.listingBuyerDetachedhousePropertyType.length + _this7.listingSellerDetachedhousePropertyType.length;
+            _this7.CottagePropertyType = _this7.listingBuyerCottagePropertyType.length + _this7.listingSellerCottagePropertyType.length;
+            _this7.TownhouseType = _this7.listingBuyerTownhousePropertyType.length + _this7.listingSellerTownhousePropertyType.length;
+            _this7.CountryhouseType = _this7.listingBuyerCountryhousePropertyType.length + _this7.listingSellerCountryhousePropertyType.length;
+            _this7.BarnconversionType = _this7.listingBuyerBarnconversionPropertyType.length + _this7.listingSellerBarnconversionPropertyType.length;
+            _this7.FarmPropertyType = _this7.listingBuyerFarmPropertyType.length + _this7.listingSellerFarmPropertyType.length;
+            _this7.HouseboaType = _this7.listingBuyerHouseboatPropertyType.length + _this7.listingSellerHouseboatPropertyType.length;
+            _this7.LodgeType = _this7.listingBuyerLodgePropertyType.length + _this7.listingSellerLodgePropertyType.length;
+          });
         } //getUser(uid)
 
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this2 = this;
+          var _this8 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this2.KnowUser.push(element.data());
+              _this8.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "Admin") {
-                var dialogRef = _this2.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
+                var dialogRef = _this8.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as Admin"
                   }
                 });
 
-                _this2.isLoading = false;
+                _this8.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "Admin") {
-                _this2.AuthService.SignIn(email, pass).then(function (data) {
-                  _this2.isLoading = false;
+                _this8.AuthService.SignIn(email, pass).then(function (data) {
+                  _this8.isLoading = false;
                   window.location.reload();
                 });
               }
             });
+          });
+        }
+      }, {
+        key: "getAdminDetails",
+        value: function getAdminDetails() {
+          var _this9 = this;
+
+          if (this.getUser != null) {
+            this.uid = this.getUser.uid;
+            this.adminPanelService.getUser(this.uid).then(function (element) {
+              _this9.username = element.data().Name;
+              _this9.image = element.data().Image;
+            });
+          }
+        }
+      }, {
+        key: "getTotalNestimate",
+        value: function getTotalNestimate() {
+          this.adminPanelService.getAllSeller().snapshotChanges().forEach(function (data) {
+            console.log(data);
           });
         }
       }]);
@@ -2197,7 +2904,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/admin-panel/admin-panel.component.html"))["default"],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./admin-panel.component.css */
-      "./src/app/AdminPanel/admin-panel/admin-panel.component.css"))["default"]]
+      "./src/app/AdminPanel/admin-panel/admin-panel.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
     })], AdminPanelComponent);
     /***/
   },
@@ -2239,24 +2948,250 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! @angular/fire/firestore */
     "./node_modules/@angular/fire/firestore/es2015/index.js");
+    /* harmony import */
+
+
+    var firebase__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! firebase */
+    "./node_modules/firebase/dist/index.cjs.js");
+    /* harmony import */
+
+
+    var firebase__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(firebase__WEBPACK_IMPORTED_MODULE_3__);
 
     var AdminPanelService = /*#__PURE__*/function () {
       function AdminPanelService(db) {
         _classCallCheck(this, AdminPanelService);
 
         this.db = db;
+        this.customersRef = null;
+        this.dbPath = "listingSeller";
         this.userCollection = db.collection("users");
+        this.buyer = db.collection("listingBuyer");
+        this.seller = db.collection("listingSeller");
+        this.sellerUser = db.collectionGroup("properties");
+        this.customersRef = db.collection(this.dbPath);
+        this.Agents = db.collectionGroup("agents");
+        this.agentRef = db.collection("agentSignup");
+        this.agentPrperties = db.collection("agentSeller");
+        this.buyerListing = db.collectionGroup("requirements");
+        this.sellerListing = db.collectionGroup("properties");
+        this.expressMatches = db.collectionGroup("MatchesExpress");
+        this.expressInterest = db.collectionGroup("Express");
       }
 
       _createClass(AdminPanelService, [{
+        key: "deleteImageSeller",
+        value: function deleteImageSeller(uid, docid) {
+          return this.db.collection("listingSeller").doc(uid).collection("properties").doc(docid).set({
+            Images: firebase__WEBPACK_IMPORTED_MODULE_3__["firestore"].FieldValue["delete"]()
+          }, {
+            merge: true
+          });
+        }
+      }, {
+        key: "multipledeleteUser",
+        value: function multipledeleteUser(uid) {
+          return this.db.collection("users").doc(uid)["delete"]();
+        }
+      }, {
+        key: "getcountExpressInterest",
+        value: function getcountExpressInterest() {
+          return this.expressInterest;
+        }
+      }, {
+        key: "getcountExpressMatches",
+        value: function getcountExpressMatches() {
+          return this.expressMatches;
+        }
+      }, {
+        key: "getAllCountSeller",
+        value: function getAllCountSeller() {
+          return this.sellerListing;
+        }
+      }, {
+        key: "getAllBuyer",
+        value: function getAllBuyer() {
+          return this.buyerListing;
+        } //Create Customer ListingBuyer
+
+      }, {
+        key: "updateAgentListing",
+        value: function updateAgentListing(uid, docid, agents) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+            return regeneratorRuntime.wrap(function _callee$(_context) {
+              while (1) {
+                switch (_context.prev = _context.next) {
+                  case 0:
+                    return _context.abrupt("return", this.db.collection("agentSignup").doc(uid).collection("agents").doc(docid).set(Object.assign({}, agents)).then(function (data) {
+                      console.log("agent update!");
+                    }));
+
+                  case 2:
+                  case "end":
+                    return _context.stop();
+                }
+              }
+            }, _callee, this);
+          }));
+        }
+      }, {
+        key: "deleteAgent",
+        value: function deleteAgent(uid) {
+          return this.db.collection("agentSignup").doc(uid)["delete"]();
+        }
+      }, {
+        key: "deleteUser",
+        value: function deleteUser(uid) {
+          return this.db.collection("users").doc(uid)["delete"]();
+        }
+      }, {
+        key: "deleteBuyer",
+        value: function deleteBuyer(uid, docid) {
+          return this.db.collection("listingBuyer").doc(uid).collection("requirements").doc(docid)["delete"]();
+        }
+      }, {
+        key: "deleteSeller",
+        value: function deleteSeller(uid, docid) {
+          return this.db.collection("listingSeller").doc(uid).collection("properties").doc(docid)["delete"]();
+        }
+      }, {
         key: "getUser",
         value: function getUser(uid) {
           return this.userCollection.doc(uid).ref.get();
         }
       }, {
+        key: "getAllAgent",
+        value: function getAllAgent() {
+          return this.Agents;
+        }
+      }, {
         key: "getAllUser",
         value: function getAllUser() {
           return this.userCollection.ref.get();
+        }
+      }, {
+        key: "getSelectedAgent",
+        value: function getSelectedAgent(uid, propertyId) {
+          return this.agentRef.doc(uid).collection("agents").ref.get();
+        }
+      }, {
+        key: "getagentProperties",
+        value: function getagentProperties(uid) {
+          return this.agentPrperties.doc(uid).collection("PropertyDetails").ref.get();
+        }
+      }, {
+        key: "getselectedagentProperties",
+        value: function getselectedagentProperties(uid, propId) {
+          return this.agentPrperties.doc(uid).collection("PropertyDetails").doc(propId).ref.get();
+        }
+      }, {
+        key: "getBuyerEntries",
+        value: function getBuyerEntries(uid) {
+          return this.buyer.doc(uid).collection("requirements").ref.get();
+        }
+      }, {
+        key: "getSellerEntries",
+        value: function getSellerEntries(uid) {
+          return this.seller.doc(uid).collection("properties").ref.get();
+        }
+      }, {
+        key: "getAllSeller",
+        value: function getAllSeller() {
+          return this.seller.collection("properties").ref.get();
+        }
+      }, {
+        key: "getCustomersList",
+        value: function getCustomersList() {
+          return this.customersRef;
+        }
+      }, {
+        key: "userupate",
+        value: function userupate(user) {
+          var userRef = this.db.doc("users/" + user.uid);
+          var userData = {
+            uid: user.uid,
+            email: user.email,
+            Name: user.Name,
+            DOB: user.DOB,
+            Phone: user.Phone,
+            title: user.title,
+            Currentaddress: user.Currentaddress,
+            Currentpostcode: user.Currentpostcode,
+            Currentstate: user.Currentstate,
+            CurrentTowncity: user.CurrentTowncity
+          };
+          return userRef.set(userData, {
+            merge: true
+          });
+        }
+      }, {
+        key: "getBuyerPrpertyDetails",
+        value: function getBuyerPrpertyDetails(uid, propertyId) {
+          return this.buyer.doc(uid).collection("requirements").doc(propertyId).ref.get();
+        } //Create Customer ListingBuyer
+
+      }, {
+        key: "updateBuyerListing",
+        value: function updateBuyerListing(uid, docid, listingBuyer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
+            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+              while (1) {
+                switch (_context2.prev = _context2.next) {
+                  case 0:
+                    return _context2.abrupt("return", this.db.collection("listingBuyer").doc(uid).collection("requirements").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
+                      console.log("Document successfully written!");
+                    }));
+
+                  case 2:
+                  case "end":
+                    return _context2.stop();
+                }
+              }
+            }, _callee2, this);
+          }));
+        } //Get Seller Selected
+
+      }, {
+        key: "getSellerPrpertyDetails",
+        value: function getSellerPrpertyDetails(uid, propertyId) {
+          return this.seller.doc(uid).collection("properties").doc(propertyId).ref.get();
+        } //Create Customer ListingBuyer
+
+      }, {
+        key: "updateSellerListing",
+        value: function updateSellerListing(uid, docid, listingSeller) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
+            return regeneratorRuntime.wrap(function _callee3$(_context3) {
+              while (1) {
+                switch (_context3.prev = _context3.next) {
+                  case 0:
+                    return _context3.abrupt("return", this.db.collection("listingSeller").doc(uid).collection("properties").doc(docid).set(Object.assign({}, listingSeller)).then(function (data) {
+                      console.log("Document successfully written!");
+                    }));
+
+                  case 2:
+                  case "end":
+                    return _context3.stop();
+                }
+              }
+            }, _callee3, this);
+          }));
+        }
+      }, {
+        key: "usersellerupate",
+        value: function usersellerupate(user) {
+          var userRef = this.db.doc("users/" + user.uid);
+          var userData = {
+            Currentaddress: user.Currentaddress,
+            Currentpostcode: user.Currentpostcode,
+            Currentstate: user.Currentstate,
+            CurrentTowncity: user.CurrentTowncity,
+            Currentcountry: user.Currentcountry
+          };
+          return userRef.set(userData, {
+            merge: true
+          });
         }
       }]);
 
@@ -2276,6 +3211,2474 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/AdminPanel/admin.auth.service.ts":
+  /*!**************************************************!*\
+    !*** ./src/app/AdminPanel/admin.auth.service.ts ***!
+    \**************************************************/
+
+  /*! exports provided: AdminAuthService */
+
+  /***/
+  function srcAppAdminPanelAdminAuthServiceTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AdminAuthService", function () {
+      return AdminAuthService;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/fire/auth */
+    "./node_modules/@angular/fire/auth/es2015/index.js");
+    /* harmony import */
+
+
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/fire/firestore */
+    "./node_modules/@angular/fire/firestore/es2015/index.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+
+    var AdminAuthService = /*#__PURE__*/function () {
+      function AdminAuthService(afs, // Inject Firestore service
+      afAuth, // Inject Firebase auth service
+      router, ngZone, // NgZone service to remove outside scope warning
+      _location) {
+        _classCallCheck(this, AdminAuthService);
+
+        this.afs = afs;
+        this.afAuth = afAuth;
+        this.router = router;
+        this.ngZone = ngZone;
+        this._location = _location;
+      } // Admin User Sign up with email/password
+
+
+      _createClass(AdminAuthService, [{
+        key: "adminSignUp",
+        value: function adminSignUp(displayName, email, password, Users) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
+            var result;
+            return regeneratorRuntime.wrap(function _callee4$(_context4) {
+              while (1) {
+                switch (_context4.prev = _context4.next) {
+                  case 0:
+                    _context4.prev = 0;
+                    _context4.next = 3;
+                    return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
+
+                  case 3:
+                    result = _context4.sent;
+                    this.SetUserDatas(result.user, displayName, Users);
+                    _context4.next = 10;
+                    break;
+
+                  case 7:
+                    _context4.prev = 7;
+                    _context4.t0 = _context4["catch"](0);
+                    window.alert(_context4.t0.message);
+
+                  case 10:
+                  case "end":
+                    return _context4.stop();
+                }
+              }
+            }, _callee4, this, [[0, 7]]);
+          }));
+        }
+      }, {
+        key: "SetUserDatas",
+        value: function SetUserDatas(user, displayName, Users) {
+          var userRef = this.afs.doc("users/" + user.uid);
+          var userData = {
+            uid: user.uid,
+            email: user.email,
+            Name: displayName,
+            UserType: Users
+          };
+          return userRef.set(userData, {
+            merge: true
+          });
+        } // Send email verfificaiton when new user sign up
+        // async SendVerificationMail(user,displayName,Users) {
+        //   await this.afAuth.auth.currentUser.sendEmailVerification();
+        //   this.SetUserDatas(user,displayName,Users);
+        // }
+
+      }, {
+        key: "SignOut",
+        value: function SignOut() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
+            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+              while (1) {
+                switch (_context5.prev = _context5.next) {
+                  case 0:
+                    _context5.next = 2;
+                    return this.afAuth.auth.signOut();
+
+                  case 2:
+                    localStorage.removeItem("user");
+                    this.router.navigate(["/AdminPanel"]); //window.location.reload()
+
+                  case 4:
+                  case "end":
+                    return _context5.stop();
+                }
+              }
+            }, _callee5, this);
+          }));
+        }
+      }]);
+
+      return AdminAuthService;
+    }();
+
+    AdminAuthService.ctorParameters = function () {
+      return [{
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_3__["AngularFirestore"]
+      }, {
+        type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_2__["AngularFireAuth"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"]
+      }, {
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgZone"]
+      }, {
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_5__["Location"]
+      }];
+    };
+
+    AdminAuthService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+      providedIn: "root"
+    })], AdminAuthService);
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.css":
+  /*!**************************************************************************!*\
+    !*** ./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.css ***!
+    \**************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminPanelAgentEditPageAgentEditPageComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n\nimg.pen-image {\n    height: 1.5vh;\n    margin-right: 10px;\n}\n\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    padding: 1em;\n}\n\nimg.image-agent {\n    height: 12vh;\n}\n\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n}\n\n.agent-image-upload {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border: 1px solid #707070;\n    margin: 1em 28vw;\n    border-radius: 10px;\n}\n\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\n\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\n\nimg.cross-image {\n    height: 1.5vh;\n}\n\n.add-more-area\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1lZGl0LXBhZ2UvYWdlbnQtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7O0lBRWxCLGlCQUFpQjs7SUFFakIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmOztBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBSUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtEQUFrRDtJQUNsRCxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtBQUNwQjs7QUFhQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0RBQWtEO0lBQ2xELGdCQUFnQjtJQUNoQixlQUFlO0lBQ2Ysd0JBQXdCO0lBQ3hCLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyx1QkFBdUI7QUFDM0I7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtCQUFrQjtBQUN0Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixVQUFVO0lBQ1YsWUFBWTtBQUNoQjs7QUFDQTtJQUNJLFlBQVk7QUFDaEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7QUFDZjs7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQix5QkFBeUI7SUFDekIsZ0JBQWdCO0lBQ2hCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGNBQWM7SUFDZCxhQUFhO0lBQ2IsaUNBQWlDO0FBQ3JDLGdCQUFnQjs7QUFFaEI7O0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsb0JBQW9CO0lBQ3BCLHlCQUF5QjtBQUM3Qjs7QUFDQTtJQUNJLGFBQWE7QUFDakI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvYWdlbnQtZWRpdC1wYWdlL2FnZW50LWVkaXQtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG5cbiAgICBwYWRkaW5nLXRvcDogMTB2aDtcblxuICAgIGJhY2tncm91bmQtY29sb3I6ICNGOUY5Rjk7XG59XG5cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbi50b3AtYmFyLWhlYWRlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4udG9wLWJhci11c2VyLWhlYWRpbmcge1xuICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGNvbG9yOiAjMEYzQzczO1xufVxuLmxvd2VyLXRleHQtaGVhZGluZ1xue1xuY29sb3I6ICMxRUFBRkE7XG5mb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuZm9udC1zaXplOiAyMHB4O1xufVxuaW1nLmltYWdlLXBlb3BsZSB7XG4gICAgaGVpZ2h0OiA1dmg7XG4gICAgYm9yZGVyLXJhZGl1czogNTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDE1cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucmlnaHQtdGV4dC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuc3Bhbi5idXR0b24tc2l6ZSB7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xufVxuLmxlZnQtY29udGFpbmVyLXdyYXBwZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcblxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBwYWRkaW5nOiAwLjVlbSAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxufVxuLnRvcC1iYXItY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnJpZ2h0LXRleHQtbGVmdC1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMmVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4uYWFyb3ctbGVmdC1jb250YWluZXIge1xuICAgIGZvbnQtc2l6ZTogMS45ZW07XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbn1cblxuXG5cbi5maWVsZC1zZXQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5leGFtcGxlLWZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5wcm9maWxlLWluZm8tY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xufVxuXG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgcGFkZGluZzogMGVtIDVlbTtcbn1cblxuLnByb2ZpbGUtaGVhZGluZyB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IDExdnc7XG4gICAgZm9udC1zaXplOiAyMHB4O1xufVxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbn1cbmJ1dHRvbi5idXR0b24tY29sb3J7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIHBhZGRpbmc6IDBlbSAyZW07XG59XG4udXBkYXRlLWJ1dHRvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnVzZXItTGlzdGluZy1tYXQtY2FyZCB7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC4zZnIgMWZyIDEuMmZyIDAuOWZyIDAuNmZyO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4O1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xufVxuLnRleHQtaGVhZGluZy10YWItY29udGVudCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5tYWluLWxpc3RpbmctY29udGFpbmVyIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuc3Bhbi5saW5lLWhlaWdodCB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI0MxQkJCQjtcbiAgICBtYXJnaW46IDBlbSAxMHB4O1xufVxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLnVpZC1jb250ZW50IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuLnRleHQtb3V0cHV0LXRhYi1jb250ZW50e1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4uY3Vyc29yLXNob3dcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubWFpbi1jb250YWluZXItcmVzdWx0LXVzZXJzIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMmVtO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLWxlZnQ6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgLyogbWFyZ2luLWJvdHRvbTogMWVtOyAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGp1c3RpZnktaXRlbXM6IGJhc2VsaW5lO1xufVxuaW1nLmljb24tYWN0aW9uIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xufVxuLmFkZC1tb3JlLWFyZWEge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGNvbG9yOiAjMEYzQzczO1xufVxuaW1nLnBlbi1pbWFnZSB7XG4gICAgaGVpZ2h0OiAxLjV2aDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG4udXBsb2FkLWltYWdlLWZpcnN0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHdpZHRoOiA4NSU7XG4gICAgcGFkZGluZzogMWVtO1xufVxuaW1nLmltYWdlLWFnZW50IHtcbiAgICBoZWlnaHQ6IDEydmg7XG59XG4uaW1hZ2UtdXNlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDFlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICM3MDcwNzA7XG4gICAgbWFyZ2luOiAxZW0gMjh2dztcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuc3Bhbi5ub3RlLWFyZWEge1xuICAgIGNvbG9yOiAjQjFBOUE5O1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcblxufVxuaW1nLmNyb3NzLWltYWdlIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luOiAwLjdlbSAtMS41ZW07XG4gICAgLyogYm9yZGVyLXJhZGl1czogMTdweDsgKi9cbn1cbmltZy5jcm9zcy1pbWFnZSB7XG4gICAgaGVpZ2h0OiAxLjV2aDtcbn1cbi5hZGQtbW9yZS1hcmVhXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts":
+  /*!*************************************************************************!*\
+    !*** ./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts ***!
+    \*************************************************************************/
+
+  /*! exports provided: AgentEditPageComponent */
+
+  /***/
+  function srcAppAdminPanelAgentEditPageAgentEditPageComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AgentEditPageComponent", function () {
+      return AgentEditPageComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../admin-panel/admin-panel.service.ts.service */
+    "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _Model_agentSignup__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../../Model/agentSignup */
+    "./src/app/Model/agentSignup.ts");
+    /* harmony import */
+
+
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/fire/firestore */
+    "./node_modules/@angular/fire/firestore/es2015/index.js");
+    /* harmony import */
+
+
+    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/fire/storage */
+    "./node_modules/@angular/fire/storage/es2015/index.js");
+    /* harmony import */
+
+
+    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! ../../Misc/alertFormdialog/alertFormdialog.component */
+    "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! @angular/material */
+    "./node_modules/@angular/material/esm2015/material.js");
+
+    var AgentEditPageComponent = /*#__PURE__*/function () {
+      function AgentEditPageComponent(adminPanelService, _Activatedroute, _location, afs, afStorage, dialog) {
+        _classCallCheck(this, AgentEditPageComponent);
+
+        this.adminPanelService = adminPanelService;
+        this._Activatedroute = _Activatedroute;
+        this._location = _location;
+        this.afs = afs;
+        this.afStorage = afStorage;
+        this.dialog = dialog;
+        this.agentSignup = new _Model_agentSignup__WEBPACK_IMPORTED_MODULE_5__["agentSignup"]();
+        this.agentProperties = [];
+        this.downloadableURL = null;
+        this.isLoading = false;
+        this.basePath = '/agent';
+        this.imageUplaod = false;
+      }
+
+      _createClass(AgentEditPageComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this10 = this;
+
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
+            _this10.agentPropertyId = params.get("agentPropertyId");
+            _this10.agentUserId = params.get("agentUserId");
+          });
+          this.getUserDetails();
+          this.getAgentDetails();
+          this.getAgentProperties();
+        }
+      }, {
+        key: "updateAgent",
+        value: function updateAgent(uid, docid) {
+          var _this11 = this;
+
+          console.log(this.image);
+
+          if (this.downloadableURL != null) {
+            this.agentSignup.image = this.downloadableURL;
+          } else {
+            this.agentSignup.image;
+          }
+
+          this.agentSignup.uid = this.agentUserId;
+          this.adminPanelService.updateAgentListing(this.agentUserId, this.agentPropertyId, this.agentSignup).then(function (data) {
+            var dialogRef = _this11.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__["AltertFormDialogComponent"], {
+              data: {
+                message: "User detail updated"
+              }
+            });
+          });
+        }
+      }, {
+        key: "editImage",
+        value: function editImage() {
+          this.imageUplaod = true;
+          this.filename = " ";
+        }
+      }, {
+        key: "upload",
+        value: function upload(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
+            var _this12 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+              while (1) {
+                switch (_context6.prev = _context6.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context6.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context6.next = 12;
+                    break;
+
+                  case 6:
+                    if (!file) {
+                      _context6.next = 12;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context6.next = 11;
+                    return this.task;
+
+                  case 11:
+                    _context6.sent.ref.getDownloadURL().then(function (url) {
+                      console.log(url);
+                      _this12.downloadableURL = url;
+                    });
+
+                  case 12:
+                    this.isLoading = false;
+
+                  case 13:
+                  case "end":
+                    return _context6.stop();
+                }
+              }
+            }, _callee6, this);
+          }));
+        }
+      }, {
+        key: "getAgentProperties",
+        value: function getAgentProperties() {
+          var _this13 = this;
+
+          this.adminPanelService.getagentProperties(this.agentUserId).then(function (data) {
+            data.forEach(function (element) {
+              _this13.agentProperties.push({
+                details: element.data(),
+                uid: element.id
+              });
+            });
+          });
+        }
+      }, {
+        key: "getAgentDetails",
+        value: function getAgentDetails() {
+          var _this14 = this;
+
+          this.adminPanelService.getSelectedAgent(this.agentUserId, this.agentPropertyId).then(function (data) {
+            data.forEach(function (element) {
+              _this14.agentSignup.fullname = element.data().fullname;
+              _this14.agentSignup.company = element.data().company;
+              _this14.agentSignup.postcode = element.data().postcode;
+              _this14.agentSignup.address = element.data().address;
+              _this14.agentSignup.jobtitle = element.data().jobtitle;
+              _this14.agentSignup.officephone = element.data().officephone;
+              _this14.agentSignup.phone = element.data().phone;
+              _this14.agentSignup.email = element.data().email;
+              _this14.agentSignup.multiplefees = element.data().multiplefees;
+              _this14.agentSignup.solefees = element.data().solefees;
+              _this14.agentSignup.Status = element.data().Status;
+              _this14.agentSignup.image = element.data().image;
+              _this14.agentSignup.title = element.data().title;
+            });
+          });
+        }
+      }, {
+        key: "backClicked",
+        value: function backClicked() {
+          this._location.back();
+        }
+      }, {
+        key: "getUserDetails",
+        value: function getUserDetails() {
+          var _this15 = this;
+
+          if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then(function (element) {
+              _this15.username = element.data().Name;
+              _this15.image = element.data().Image;
+            });
+          }
+        }
+      }]);
+
+      return AgentEditPageComponent;
+    }();
+
+    AgentEditPageComponent.ctorParameters = function () {
+      return [{
+        type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+      }, {
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]
+      }, {
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__["AngularFirestore"]
+      }, {
+        type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_7__["AngularFireStorage"]
+      }, {
+        type: _angular_material__WEBPACK_IMPORTED_MODULE_9__["MatDialog"]
+      }];
+    };
+
+    AgentEditPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-agent-edit-page',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./agent-edit-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./agent-edit-page.component.css */
+      "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
+    })], AgentEditPageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.css":
+  /*!********************************************************************************************!*\
+    !*** ./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.css ***!
+    \********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminPanelAgentPropertyEditPageAgentPropertyEditPageComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.second-part-container-two-sides-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  \n}\n.top-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n    width: 32vw;\n\n    padding-top: 1em;\n\n\n}\nspan.second-part-container-text {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n}\nspan.second-part-container-number {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n\n}\n.property-for-container {\n    display: flex;\n    justify-content: -3em 2em;\n    width: 15%;\n    margin: 0em 1em;\n    width: 15%;\n    justify-content: space-between;\n    align-items: center;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em 1.5em;\n    border-radius: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1wcm9wZXJ0eS1lZGl0LXBhZ2UvYWdlbnQtcHJvcGVydHktZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUkseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLG9DQUFvQztJQUNwQyxxQ0FBcUM7SUFDckMsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7QUFDQTtJQUNFLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7QUFDM0I7QUFFQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdDQUFnQztJQUNoQyxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7QUFFQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0lBQ2Ysa0JBQWtCOztBQUV0QjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLFlBQVk7SUFDWixtQkFBbUI7O0FBRXZCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjs7QUFFdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjs7SUFFbkIsa0NBQWtDO0lBQ2xDLG9CQUFvQjtJQUNwQixXQUFXOztJQUVYLGdCQUFnQjs7O0FBR3BCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlOztBQUVuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHlCQUF5QjtJQUN6QixVQUFVO0lBQ1YsZUFBZTtJQUNmLFVBQVU7SUFDViw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1wcm9wZXJ0eS1lZGl0LXBhZ2UvYWdlbnQtcHJvcGVydHktZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0LWNhcmQtdG9wLWFyZWFcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDAuN2VtO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIG1hcmdpbi1yaWdodDogMS43ZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4ubWF0LWNhcmQtZWRpdFxue1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4ucmFkaW8tdG9wLWJ1eWVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gIH1cbiAgLnN1Yi1oZWFkaW5nLXVzZXItdHlwZSB7XG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuLnRvcC1jYXJkLWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMWVtIDJlbTtcblxufVxuXG4ubWlkZGxlLXNpZGUtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4ubWF0LXdyYXBwZXItY2FyZFxue1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLm1haW4tY29udGFpbmVyLWFyZWEge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ucHJpY2Utc2VsZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ucmFkaW8tYnV0dG9uLWFsaWduIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nLXR3b1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMnZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG5cbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubmV3LWhlYWRpbmctbmVzdGltYXRlIHtcblxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuLmZpZWxkLW9uZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cbi5yYWRpby1idXR0b24ge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59XG5cbi5zZWNvbmQtcGFydC1jb250YWluZXItdHdvLXNpZGVzLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgXG59XG4udG9wLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTFweDtcbiAgICB3aWR0aDogMzJ2dztcblxuICAgIHBhZGRpbmctdG9wOiAxZW07XG5cblxufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItdGV4dCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbn1cbnNwYW4uc2Vjb25kLXBhcnQtY29udGFpbmVyLW51bWJlciB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcblxufVxuLnByb3BlcnR5LWZvci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiAtM2VtIDJlbTtcbiAgICB3aWR0aDogMTUlO1xuICAgIG1hcmdpbjogMGVtIDFlbTtcbiAgICB3aWR0aDogMTUlO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIHBhZGRpbmc6IDFlbSAxLjVlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufSJdfQ== */";
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts":
+  /*!*******************************************************************************************!*\
+    !*** ./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts ***!
+    \*******************************************************************************************/
+
+  /*! exports provided: AgentPropertyEditPageComponent */
+
+  /***/
+  function srcAppAdminPanelAgentPropertyEditPageAgentPropertyEditPageComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "AgentPropertyEditPageComponent", function () {
+      return AgentPropertyEditPageComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../admin-panel/admin-panel.service.ts.service */
+    "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+
+    var AgentPropertyEditPageComponent = /*#__PURE__*/function () {
+      function AgentPropertyEditPageComponent(adminPanelService, _Activatedroute, _location) {
+        _classCallCheck(this, AgentPropertyEditPageComponent);
+
+        this.adminPanelService = adminPanelService;
+        this._Activatedroute = _Activatedroute;
+        this._location = _location;
+      }
+
+      _createClass(AgentPropertyEditPageComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this16 = this;
+
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
+            _this16.propertyID = params.get("propertyID");
+            _this16.propertyuserId = params.get("propertyuserId");
+          });
+          this.getUserDetails();
+          this.getAgentPropertyDetail();
+        }
+      }, {
+        key: "backClicked",
+        value: function backClicked() {
+          this._location.back();
+        }
+      }, {
+        key: "getAgentPropertyDetail",
+        value: function getAgentPropertyDetail() {
+          var _this17 = this;
+
+          this.adminPanelService.getselectedagentProperties(this.propertyuserId, this.propertyID).then(function (agent) {
+            console.log(agent.data());
+            _this17.propertyFor = agent.data().Buyer.PropertyType;
+            _this17.Lookingpostcode = agent.data().Buyer.Lookingpostcode;
+            _this17.DesiredPrice = agent.data().Seller.MaxAmount;
+            _this17.Postcode = agent.data().Seller.Lookingpostcode;
+            _this17.Maxrooms = agent.data().Seller.Maxrooms;
+            _this17.SellerUserId = agent.data().Seller.UserId;
+            _this17.BuyerMinamount = agent.data().Buyer.MinAmount;
+            _this17.BuyerMaxamount = agent.data().Buyer.MaxAmount;
+            _this17.Buyerpostcode = agent.data().Buyer.Lookingpostcode;
+            _this17.BuyerRoomsmin = agent.data().Buyer.Roommin;
+            _this17.BuyerRoomsmax = agent.data().Buyer.Roomsmax;
+            _this17.BuyerUserId = agent.data().Buyer.UserId;
+
+            _this17.adminPanelService.getUser(_this17.SellerUserId).then(function (agentUser) {
+              _this17.selleraddress = agentUser.data().Currentaddress;
+              _this17.selleremail = agentUser.data().email;
+              _this17.sellerPhone = agentUser.data().Phone;
+            });
+
+            _this17.adminPanelService.getUser(_this17.BuyerUserId).then(function (agentUser) {
+              _this17.buyeraddress = agentUser.data().Currentaddress;
+              _this17.buyeremail = agentUser.data().email;
+              _this17.buyerPhone = agentUser.data().Phone;
+            });
+          }); //getselectedagentProperties(uid,propId)
+        }
+      }, {
+        key: "getUserDetails",
+        value: function getUserDetails() {
+          var _this18 = this;
+
+          if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then(function (element) {
+              _this18.username = element.data().Name;
+              _this18.image = element.data().Image;
+            });
+          }
+        }
+      }]);
+
+      return AgentPropertyEditPageComponent;
+    }();
+
+    AgentPropertyEditPageComponent.ctorParameters = function () {
+      return [{
+        type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"]
+      }, {
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
+      }, {
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]
+      }];
+    };
+
+    AgentPropertyEditPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-agent-property-edit-page',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./agent-property-edit-page.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./agent-property-edit-page.component.css */
+      "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
+    })], AgentPropertyEditPageComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.css":
+  /*!******************************************************************************************!*\
+    !*** ./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.css ***!
+    \******************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminPanelEditBuyerUserDetailsEditBuyerUserDetailsComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9lZGl0LWJ1eWVyLXVzZXItZGV0YWlscy9lZGl0LWJ1eWVyLXVzZXItZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2QsaUNBQWlDO0lBQ2pDLGtDQUFrQztJQUNsQyxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCO0FBQ0E7O0lBRUksbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxvQ0FBb0M7SUFDcEMscUNBQXFDO0lBQ3JDLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixhQUFhO0lBQ2IsZ0JBQWdCO0VBQ2xCO0FBQ0E7SUFDRSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsZUFBZTs7QUFFbkI7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0FBQzNCO0FBRUE7O0lBRUksZ0NBQWdDO0lBQ2hDLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLGtDQUFrQztJQUNsQyxhQUFhO0lBQ2IsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixnQ0FBZ0M7SUFDaEMsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBRUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsd0JBQXdCO0lBQ3hCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixZQUFZO0lBQ1osbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvZWRpdC1idXllci11c2VyLWRldGFpbHMvZWRpdC1idXllci11c2VyLWRldGFpbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXQtY2FyZC10b3AtYXJlYVxue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMC43ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxLjdlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5tYXQtY2FyZC1lZGl0XG57XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi5yYWRpby10b3AtYnV5ZXIge1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgfVxuICAuc3ViLWhlYWRpbmctdXNlci10eXBlIHtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG4udG9wLWNhcmQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxZW0gMmVtO1xuXG59XG5cbi5taWRkbGUtc2lkZS1hcmVhIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5tYXQtd3JhcHBlci1jYXJkXG57XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgbWFyZ2luOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItYXJlYSB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ucHJpY2Utc2VsZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ucmFkaW8tYnV0dG9uLWFsaWduIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nLXR3b1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMnZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG5cbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubmV3LWhlYWRpbmctbmVzdGltYXRlIHtcblxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuLmZpZWxkLW9uZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cbi5yYWRpby1idXR0b24ge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59Il19 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts":
+  /*!*****************************************************************************************!*\
+    !*** ./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts ***!
+    \*****************************************************************************************/
+
+  /*! exports provided: EditBuyerUserDetailsComponent */
+
+  /***/
+  function srcAppAdminPanelEditBuyerUserDetailsEditBuyerUserDetailsComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "EditBuyerUserDetailsComponent", function () {
+      return EditBuyerUserDetailsComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../admin-panel/admin-panel.service.ts.service */
+    "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../../Model/listingBuyer */
+    "./src/app/Model/listingBuyer.ts");
+    /* harmony import */
+
+
+    var _http_service__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../../http.service */
+    "./src/app/http.service.ts");
+    /* harmony import */
+
+
+    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../../Misc/alertFormdialog/alertFormdialog.component */
+    "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @angular/material */
+    "./node_modules/@angular/material/esm2015/material.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+
+    var EditBuyerUserDetailsComponent = /*#__PURE__*/function () {
+      function EditBuyerUserDetailsComponent(_Activatedroute, adminPanelService, postcodeService, dialog, _location) {
+        _classCallCheck(this, EditBuyerUserDetailsComponent);
+
+        this._Activatedroute = _Activatedroute;
+        this.adminPanelService = adminPanelService;
+        this.postcodeService = postcodeService;
+        this.dialog = dialog;
+        this._location = _location;
+        this.BuyerUserDetail = [];
+        this.amounts = false;
+        this.buyOption = false;
+        this.Condition = new _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormControl"]();
+        this.ConditionsList = ["any", "Garden", "Driveway", "Period Features", "Garage", "Gated Community", "Loft Conversion", "Conservatory/Sun room", "Granny Annexe", "Rear Extension"];
+        this.features = [];
+        this.listingBuyer = new _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_5__["listingBuyer"]();
+      }
+
+      _createClass(EditBuyerUserDetailsComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this19 = this;
+
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
+            _this19.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this19.BuyerUserID = params.get("BuyerUserID");
+          });
+          this.getUserDetails();
+          this.getBuyerProperty();
+        }
+      }, {
+        key: "getUserDetails",
+        value: function getUserDetails() {
+          var _this20 = this;
+
+          if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then(function (element) {
+              _this20.username = element.data().Name;
+              _this20.image = element.data().Image;
+            });
+          }
+        }
+      }, {
+        key: "backClicked",
+        value: function backClicked() {
+          this._location.back();
+        }
+      }, {
+        key: "getBuyerProperty",
+        value: function getBuyerProperty() {
+          var _this21 = this;
+
+          this.adminPanelService.getBuyerPrpertyDetails(this.BuyerUserID, this.BuyerPropertyId).then(function (buyer) {
+            _this21.BuyerUserDetail.push(buyer.data());
+
+            _this21.listingBuyer.Currentpostcode = buyer.data().Currentpostcode;
+            _this21.listingBuyer.PropertyFor = buyer.data().PropertyFor;
+            _this21.listingBuyer.CurrentTown = buyer.data().CurrentTown;
+            _this21.listingBuyer.CurrentAddress = buyer.data().CurrentAddress;
+            _this21.listingBuyer.Currentstate = buyer.data().Currentstate;
+            _this21.listingBuyer.Currentcountry = buyer.data().Currentcountry;
+            _this21.listingBuyer.Lookingpostcode = buyer.data().Lookingpostcode;
+            _this21.listingBuyer.LookingStreetname = buyer.data().LookingStreetname;
+            _this21.listingBuyer.LookingTown = buyer.data().LookingTown;
+            _this21.listingBuyer.Lookingstate = buyer.data().Lookingstate;
+            _this21.listingBuyer.Country = buyer.data().Country;
+
+            if (buyer.data().FinancialPosition != null) {
+              _this21.listingBuyer.FinancialPosition = buyer.data().FinancialPosition;
+            }
+
+            _this21.listingBuyer.PropertyType = buyer.data().PropertyType;
+
+            _this21.radio(_this21.listingBuyer.PropertyFor);
+
+            _this21.listingBuyer.Roommin = buyer.data().Roommin;
+            _this21.listingBuyer.Roomsmax = buyer.data().Roomsmax;
+            _this21.listingBuyer.MaxAmount = buyer.data().MaxAmount;
+            _this21.listingBuyer.MinAmount = buyer.data().MinAmount;
+            _this21.listingBuyer.Validity = buyer.data().Validity;
+            _this21.listingBuyer.Maxbathroom = buyer.data().Maxbathroom;
+            _this21.listingBuyer.Minbathroom = buyer.data().Minbathroom;
+            _this21.listingBuyer.Maxreception = buyer.data().Maxreception;
+            _this21.listingBuyer.Minreception = buyer.data().Minreception;
+            _this21.listingBuyer.Conditions = buyer.data().Conditions;
+            _this21.listingBuyer.Ownership = buyer.data().Ownership;
+            _this21.listingBuyer.ChainStatus = buyer.data().ChainStatus; //this.listingBuyer.features = buyer.data().features
+          });
+        }
+      }, {
+        key: "radioChange",
+        value: function radioChange(event) {
+          this.filter = event.value;
+
+          if (this.filter == "buy") {
+            this.amounts = true;
+            this.rentOption = false;
+            this.buyOption = true;
+          }
+
+          if (this.filter == "rent") {
+            this.amounts = true;
+            this.buyOption = false;
+            this.rentOption = true;
+          }
+        }
+      }, {
+        key: "radio",
+        value: function radio(event) {
+          this.filter = event;
+
+          if (this.filter == "buy") {
+            this.amounts = true;
+            this.rentOption = false;
+            this.buyOption = true;
+          }
+
+          if (this.filter == "rent") {
+            this.amounts = true;
+            this.buyOption = false;
+            this.rentOption = true;
+          }
+        }
+      }, {
+        key: "updateUser",
+        value: function updateUser() {
+          var _this22 = this;
+
+          this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
+            _this22.postcodeCoordinates = data;
+            _this22.listingBuyer.longitude = _this22.postcodeCoordinates.result.longitude, _this22.listingBuyer.latitude = _this22.postcodeCoordinates.result.latitude, _this22.listingBuyer.UserId = _this22.BuyerUserID;
+          });
+          this.listingBuyer.UserId = this.BuyerUserID;
+          this.listingBuyer.longitude, this.listingBuyer.latitude, this.adminPanelService.updateBuyerListing(this.BuyerUserID, this.BuyerPropertyId, this.listingBuyer).then(function (data) {
+            var dialogRef = _this22.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+              data: {
+                message: "User Detail Updated"
+              }
+            });
+          });
+        }
+      }]);
+
+      return EditBuyerUserDetailsComponent;
+    }();
+
+    EditBuyerUserDetailsComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+      }, {
+        type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_3__["AdminPanelService"]
+      }, {
+        type: _http_service__WEBPACK_IMPORTED_MODULE_6__["HttpService"]
+      }, {
+        type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialog"]
+      }, {
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_9__["Location"]
+      }];
+    };
+
+    EditBuyerUserDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-edit-buyer-user-details',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./edit-buyer-user-details.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./edit-buyer-user-details.component.css */
+      "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
+    })], EditBuyerUserDetailsComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.css":
+  /*!********************************************************************************************!*\
+    !*** ./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.css ***!
+    \********************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminPanelEditSellerUserDetailsEditSellerUserDetailsComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n    height: -webkit-max-content;\n    height: -moz-max-content;\n    height: max-content;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.image-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin-right: 1em;\n    margin-left: 1em;\n}\n.image-contatiner-top {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\nimg.pen-image {\n    height: 2vh;\n}\nimg.image-eight {\n    width: 70%;\n}\n.image-show {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 2em;\n}\nimg.button-image-cross {\n    position: absolute;\n    height: 1vh;\n    margin-top: 1em;\n}\n.update-button {\n    margin-top: 1em;\n    margin-bottom: 2em;\n}\n.update-button:hover {\n    cursor: pointer;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9lZGl0LXNlbGxlci11c2VyLWRldGFpbHMvZWRpdC1zZWxsZXItdXNlci1kZXRhaWxzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUkseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLG9DQUFvQztJQUNwQyxxQ0FBcUM7SUFDckMsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7QUFDQTtJQUNFLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7QUFDM0I7QUFFQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0NBQWtDO0lBQ2xDLGFBQWE7SUFDYixlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdDQUFnQztJQUNoQyxZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLDJCQUFtQjtJQUFuQix3QkFBbUI7SUFBbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7QUFFQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0lBQ2Ysa0JBQWtCOztBQUV0QjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLFlBQVk7SUFDWixtQkFBbUI7O0FBRXZCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZ0NBQWdDO0lBQ2hDLGlCQUFpQjtJQUNqQixnQkFBZ0I7QUFDcEI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtBQUN2QjtBQUdBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLFVBQVU7QUFDZDtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNDQUFzQztJQUN0QyxhQUFhO0lBQ2IsV0FBVztBQUNmO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsV0FBVztJQUNYLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL2VkaXQtc2VsbGVyLXVzZXItZGV0YWlscy9lZGl0LXNlbGxlci11c2VyLWRldGFpbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXQtY2FyZC10b3AtYXJlYVxue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMC43ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxLjdlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5tYXQtY2FyZC1lZGl0XG57XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi5yYWRpby10b3AtYnV5ZXIge1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgfVxuICAuc3ViLWhlYWRpbmctdXNlci10eXBlIHtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG4udG9wLWNhcmQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxZW0gMmVtO1xuXG59XG5cbi5taWRkbGUtc2lkZS1hcmVhIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5tYXQtd3JhcHBlci1jYXJkXG57XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgbWFyZ2luOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItYXJlYSB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgaGVpZ2h0OiBtYXgtY29udGVudDtcbn1cbi5wcmljZS1zZWxlY3Rpb24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi5yYWRpby1idXR0b24tYWxpZ24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgcGFkZGluZy10b3A6IDEwcHg7XG59XG5cbi5wcm9maWxlLWhlYWRpbmctdHdvXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IDEydnc7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcblxufVxuLmZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5uZXctaGVhZGluZy1uZXN0aW1hdGUge1xuXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGNvbG9yOiBibGFjaztcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuXG59XG4ucHJvZmlsZS1pbmZvLWNhcmQge1xuICAgIHBhZGRpbmc6IDJlbSAwZW07XG59XG4uZmllbGQtb25lIHtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuLnJhZGlvLWJ1dHRvbiB7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcbn1cbi5pbWFnZS1jYXJkXG57XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgbWFyZ2luLXJpZ2h0OiAxZW07XG4gICAgbWFyZ2luLWxlZnQ6IDFlbTtcbn1cblxuLmltYWdlLWNvbnRhdGluZXItdG9wIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cblxuLmFkZC1tb3JlLWFyZWEge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGNvbG9yOiAjMEYzQzczO1xufVxuaW1nLnBlbi1pbWFnZSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG5pbWcuaW1hZ2UtZWlnaHQge1xuICAgIHdpZHRoOiA3MCU7XG59XG5cbi5pbWFnZS1zaG93IHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiAyZW07XG4gICAgbWFyZ2luOiAyZW07XG59XG5pbWcuYnV0dG9uLWltYWdlLWNyb3NzIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgaGVpZ2h0OiAxdmg7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLnVwZGF0ZS1idXR0b24ge1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBtYXJnaW4tYm90dG9tOiAyZW07XG59XG5cbi51cGRhdGUtYnV0dG9uOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4iXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts":
+  /*!*******************************************************************************************!*\
+    !*** ./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts ***!
+    \*******************************************************************************************/
+
+  /*! exports provided: EditSellerUserDetailsComponent */
+
+  /***/
+  function srcAppAdminPanelEditSellerUserDetailsEditSellerUserDetailsComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "EditSellerUserDetailsComponent", function () {
+      return EditSellerUserDetailsComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../admin-panel/admin-panel.service.ts.service */
+    "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+    /* harmony import */
+
+
+    var _Model_listingSeller__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../../Model/listingSeller */
+    "./src/app/Model/listingSeller.ts");
+    /* harmony import */
+
+
+    var _http_service__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../../http.service */
+    "./src/app/http.service.ts");
+    /* harmony import */
+
+
+    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! ../../Misc/alertFormdialog/alertFormdialog.component */
+    "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/material */
+    "./node_modules/@angular/material/esm2015/material.js");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! @angular/fire/storage */
+    "./node_modules/@angular/fire/storage/es2015/index.js");
+
+    var EditSellerUserDetailsComponent = /*#__PURE__*/function () {
+      function EditSellerUserDetailsComponent(_Activatedroute, adminPanelService, postcodeService, dialog, _location, afStorage) {
+        _classCallCheck(this, EditSellerUserDetailsComponent);
+
+        this._Activatedroute = _Activatedroute;
+        this.adminPanelService = adminPanelService;
+        this.postcodeService = postcodeService;
+        this.dialog = dialog;
+        this._location = _location;
+        this.afStorage = afStorage;
+        this.listingSeller = new _Model_listingSeller__WEBPACK_IMPORTED_MODULE_4__["listingSeller"]();
+        this.applicable = ["any", "Garden", "Driveway", "Period Features", "Garage", "Gated Community", "Loft Conversion", "Conservatory/Sun room", "Granny Annexe", "Rear Extension"];
+        this.basePath = '/sellerimages';
+        this.isLoading = false;
+        this.sellerImages = [];
+        this.uploadImage = false;
+      }
+
+      _createClass(EditSellerUserDetailsComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          var _this23 = this;
+
+          this.user = JSON.parse(localStorage.getItem("user"));
+          this.getUserDetails();
+          this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
+            _this23.sellerPropertyId = params.get("sellerPropertyId");
+            _this23.sellerUserId = params.get("sellerUserId");
+          });
+          this.getSellerAllDetails();
+        }
+      }, {
+        key: "addMoreImages",
+        value: function addMoreImages() {
+          this.uploadImage = true;
+        }
+      }, {
+        key: "deleteField",
+        value: function deleteField(FirstImage) {
+          console.log(FirstImage);
+          this.adminPanelService.deleteImageSeller(this.sellerUserId, this.sellerUserId);
+        }
+      }, {
+        key: "importImages",
+        value: function importImages(event) {
+          var _this24 = this;
+
+          this.isLoading = true;
+          this.uploads = [];
+          var filelist = event.target.files;
+          console.log(filelist);
+
+          if (filelist.length > 8) {
+            var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+              data: {
+                message: "Upload Maximum  8 Images"
+              }
+            });
+          } else {
+            var _iterator = _createForOfIteratorHelper(filelist),
+                _step;
+
+            try {
+              for (_iterator.s(); !(_step = _iterator.n()).done;) {
+                var file = _step.value;
+
+                if (file.size > 2000000) {
+                  var _dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+                    data: {
+                      message: "Images Size must be 2MB"
+                    }
+                  });
+
+                  this.isLoading = false;
+                } else {
+                  var path = "files/".concat(file.name);
+                  var ref = this.afStorage.ref(path);
+                  var task = this.afStorage.upload(path, file);
+
+                  var _percentage$ = task.percentageChanges(); // create composed objects with different information. ADAPT THIS ACCORDING to YOUR NEED
+
+
+                  var uploadTrack = {
+                    fileName: file.name
+                  }; // push each upload into the array
+
+                  this.uploads.push(uploadTrack);
+
+                  if (this.uploads > 8) {
+                    var _dialogRef2 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Upload Max 8 Images"
+                      }
+                    });
+
+                    this.isLoading = false;
+                  } else {
+                    // for every upload do whatever you want in firestore with the uploaded file
+                    var _t = task.then(function (f) {
+                      return f.ref.getDownloadURL().then(function (url) {
+                        _this24.sellerImages.push(url); // return this.afs.collection('files').add({
+                        //   name: f.metadata.name,
+                        // });
+
+                      });
+                    });
+                  }
+                }
+              }
+            } catch (err) {
+              _iterator.e(err);
+            } finally {
+              _iterator.f();
+            }
+          }
+
+          this.isLoading = false;
+        }
+      }, {
+        key: "chckImage",
+        value: function chckImage(imageName) {
+          console.log(imageName);
+        }
+      }, {
+        key: "backClicked",
+        value: function backClicked() {
+          this._location.back();
+        }
+      }, {
+        key: "getUserDetails",
+        value: function getUserDetails() {
+          var _this25 = this;
+
+          if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then(function (element) {
+              _this25.username = element.data().Name;
+              _this25.image = element.data().Image;
+            });
+          }
+        }
+      }, {
+        key: "getSellerAllDetails",
+        value: function getSellerAllDetails() {
+          var _this26 = this;
+
+          this.adminPanelService.getSellerPrpertyDetails(this.sellerUserId, this.sellerPropertyId).then(function (elements) {
+            _this26.SellerUserDetail = elements.data();
+            _this26.listingSeller.Currentpostcode = elements.data().Currentpostcode;
+            _this26.listingSeller.CurrentAddress = elements.data().CurrentAddress;
+            _this26.listingSeller.CurrentTown = elements.data().CurrentTown;
+            _this26.listingSeller.Currentstate = elements.data().Currentstate;
+            _this26.listingSeller.PropertyFor = elements.data().PropertyFor;
+            _this26.listingSeller.LookingTown = elements.data().LookingTown;
+            _this26.listingSeller.Lookingstate = elements.data().Lookingstate;
+            _this26.listingSeller.Country = elements.data().Country;
+            _this26.listingSeller.LookingAddress = elements.data().LookingAddress;
+            _this26.listingSeller.PropertyType = elements.data().PropertyType;
+            _this26.listingSeller.Maxrooms = elements.data().Maxrooms;
+            _this26.listingSeller.Lookingpostcode = elements.data().Lookingpostcode;
+            _this26.listingSeller.MaxAmount = elements.data().MaxAmount;
+            _this26.listingSeller.ownership = elements.data().ownership;
+            _this26.listingSeller.Maxbathrooms = elements.data().Maxbathrooms;
+            _this26.listingSeller.Maxreception = elements.data().Maxreception;
+            _this26.listingSeller.PropertyCondition = elements.data().PropertyCondition;
+            _this26.listingSeller.Currentcountry = elements.data().Currentcountry;
+            _this26.FirstImage = elements.data().Images;
+            console.log(elements.data().Images.uid); //this.listingSeller.features = elements.data().features
+          });
+        }
+      }, {
+        key: "radio",
+        value: function radio(event) {
+          this.filter = event;
+
+          if (this.filter == "buy") {
+            this.maxamounts = true;
+            this.letOption = false;
+            this.sellOption = true;
+          }
+
+          if (this.filter == "rent") {
+            this.maxamounts = true;
+            this.sellOption = false;
+            this.letOption = true;
+          }
+        }
+      }, {
+        key: "radioChange",
+        value: function radioChange(event) {
+          this.filter = event.value;
+
+          if (this.filter == "buy") {
+            this.maxamounts = true;
+            this.letOption = false;
+            this.sellOption = true;
+          }
+
+          if (this.filter == "rent") {
+            this.maxamounts = true;
+            this.sellOption = false;
+            this.letOption = true;
+          }
+        }
+      }, {
+        key: "updateSellerDetails",
+        value: function updateSellerDetails() {
+          var _this27 = this;
+
+          this.sellerUSerUpdate();
+          this.postcodeService.getLat(this.listingSeller.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
+            _this27.postcodeCoordinates = data;
+            _this27.listingSeller.longitude = _this27.postcodeCoordinates.result.longitude, _this27.listingSeller.latitude = _this27.postcodeCoordinates.result.latitude, _this27.listingSeller.UserId = _this27.sellerUserId;
+          });
+          this.listingSeller.UserId = this.sellerUserId;
+          this.listingSeller.longitude, this.listingSeller.latitude, this.listingSeller.Images = this.sellerImages;
+          this.adminPanelService.updateSellerListing(this.sellerUserId, this.sellerPropertyId, this.listingSeller).then(function (seller) {
+            _this27.isLoading = false;
+
+            var dialogRef = _this27.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+              data: {
+                message: "User Detail Updated"
+              }
+            });
+          });
+        }
+      }, {
+        key: "sellerUSerUpdate",
+        value: function sellerUSerUpdate() {
+          this.isLoading = true;
+          this.users = {
+            uid: this.sellerUserId,
+            Currentaddress: this.listingSeller.CurrentAddress,
+            Currentpostcode: this.listingSeller.Currentpostcode,
+            Currentstate: this.listingSeller.Currentstate,
+            CurrentTowncity: this.listingSeller.CurrentTown,
+            Currentcountry: this.listingSeller.Currentcountry
+          };
+          this.adminPanelService.usersellerupate(this.users).then(function (seller) {
+            console.log(seller);
+          });
+        }
+      }, {
+        key: "upload",
+        value: function upload(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
+            var _this28 = this;
+
+            var file, filePath;
+            return regeneratorRuntime.wrap(function _callee7$(_context7) {
+              while (1) {
+                switch (_context7.prev = _context7.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!file) {
+                      _context7.next = 8;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context7.next = 7;
+                    return this.task;
+
+                  case 7:
+                    _context7.sent.ref.getDownloadURL().then(function (url) {
+                      console.log(url);
+                      _this28.downloadableURL = url;
+                    });
+
+                  case 8:
+                    this.isLoading = false;
+
+                  case 9:
+                  case "end":
+                    return _context7.stop();
+                }
+              }
+            }, _callee7, this);
+          }));
+        }
+      }]);
+
+      return EditSellerUserDetailsComponent;
+    }();
+
+    EditSellerUserDetailsComponent.ctorParameters = function () {
+      return [{
+        type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"]
+      }, {
+        type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_3__["AdminPanelService"]
+      }, {
+        type: _http_service__WEBPACK_IMPORTED_MODULE_5__["HttpService"]
+      }, {
+        type: _angular_material__WEBPACK_IMPORTED_MODULE_7__["MatDialog"]
+      }, {
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_8__["Location"]
+      }, {
+        type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_9__["AngularFireStorage"]
+      }];
+    };
+
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('file', {
+      "static": false
+    })], EditSellerUserDetailsComponent.prototype, "FileView", void 0);
+    EditSellerUserDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-edit-seller-user-details',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./edit-seller-user-details.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./edit-seller-user-details.component.css */
+      "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
+    })], EditSellerUserDetailsComponent);
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/uielements/uielements.component.css":
+  /*!****************************************************************!*\
+    !*** ./src/app/AdminPanel/uielements/uielements.component.css ***!
+    \****************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminPanelUielementsUielementsComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".top-tab-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\n    text-align: center;\n    align-content: center;\n    /* background-color: #E8E8E8; */\n}\nspan.tab-text {\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    background-color: #E8E8E8;\n    font-size: 18px;\n\n}\n.mat-card-ui-elelment{\n    margin-top: 2em;\n  \n}\nimg.left-image-container {\n    height: 32vh;\n    margin: 1em 0em;\n    border: 1px solid;\n}\nimg.image-agent {\n    height: 18vh;\n}\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n    margin-top: 0em;\n}\n.agent-image-upload {\n\n    border: 1px solid #CBC7C7;;\n    border-radius: 10px;\n\n    padding-bottom: 1em;\n\n}\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\nimg.cross-image {\n    height: 1.5vh;\n}\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    padding: 1em;\n}\n.main-container-banner-image {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    align-items: center;\n}\nimg.pen-image {\n    height: 1.3vh;\n    padding-right: 10px;\n}\n.home-page-banner\n{\n    box-shadow: 3px 3px 5px 3px #ccc;\n    border-radius: 10px;\n}\n.mat-home-page-card {\n    margin: 1em 0em;\n    border-radius: 10px;\n    padding: 0em 1em;\n}\n.profile-heading.profile-heading-two {\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 13px;\n}\n.main-container-banner-image.image-journey-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1em;\n    margin-right: -3px;\n}\n.main-contianer-journey {\n    display: flex;\n    flex-direction: row;\n    margin-top: 1em;\n}\n.agent-image-upload.journey-image-container {\n    border-radius: 0px;\n}\n.main-contianer-journey {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 0em 0em;;\n}\n.agent-image-upload.journey-image-container {\n    width: 25vw;\n    border-radius: 10px;\n}\n.outputText {\n    color: var(--light-blue-color);\n    font-family: 'Roboto-Medium';\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-size: 1.2em;\n    font-weight: 500;\n}\ntextarea#w3review {\n    color: #0F3C73;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1em;\n\n    padding: 1em 6px;\n\n    border-radius: 10px;\n    border-color: #CBC7C7;\n}\n.full-width\n{\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 1em;\n}\n.main-container-uielements {\n    margin-right: 2em;\n    padding-top: 0em;\n    margin-top: 2em;\n    background-color: white;\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n \n}\n.tab-text {\n    padding: 0.5em;\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.1em;\n}\n.tab-text:hover\n{\n    cursor: pointer;\n}\n.highlight {\n    background: #E8E8E8;\n    height: 1vh;\n    /* position: relative; */\n    top: 18vh;\n    /* z-index: 1; */\n    width: 100%;\n}\n.mat-Notification {\n    margin: 0em 1em;\n}\n.text-area {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 1em 0em;\n}\n.notificationCard{\n    margin: 0em 2em;\n}\n.update-button {\n    margin: 2em;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3VpZWxlbWVudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsa0JBQWtCO0lBQ2xCLHFCQUFxQjtJQUNyQiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtJQUN6QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksZUFBZTs7QUFFbkI7QUFDQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCO0FBRUE7SUFDSSxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLG1CQUFtQjs7SUFFbkIsbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLG9CQUFvQjtJQUNwQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixZQUFZO0FBQ2hCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjtBQUdBO0lBQ0ksMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLFdBQVc7SUFDWCxhQUFhO0lBQ2Isa0NBQWtDO0lBQ2xDLGFBQWE7SUFDYixlQUFlO0FBQ25CO0FBRUE7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSw4QkFBOEI7SUFDOUIsNEJBQTRCO0lBQzVCLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYzs7SUFFZCxnQkFBZ0I7O0lBRWhCLG1CQUFtQjtJQUNuQixxQkFBcUI7QUFDekI7QUFDQTs7SUFFSSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQzs7QUFFcEM7QUFDQTtJQUNJLGNBQWM7O0lBRWQsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsV0FBVztJQUNYLHdCQUF3QjtJQUN4QixTQUFTO0lBQ1QsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCO0FBR0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VpZWxlbWVudHMvdWllbGVtZW50cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRvcC10YWItYmFyIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnIgMWZyIDFmciAxZnI7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4OyAqL1xufVxuc3Bhbi50YWItdGV4dCB7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuXG59XG5cbi5tYXQtY2FyZC11aS1lbGVsbWVudHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gIFxufVxuaW1nLmxlZnQtaW1hZ2UtY29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDMydmg7XG4gICAgbWFyZ2luOiAxZW0gMGVtO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkO1xufVxuXG5pbWcuaW1hZ2UtYWdlbnQge1xuICAgIGhlaWdodDogMTh2aDtcbn1cbi5pbWFnZS11c2VyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbjogMWVtO1xuICAgIG1hcmdpbi10b3A6IDBlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQge1xuXG4gICAgYm9yZGVyOiAxcHggc29saWQgI0NCQzdDNzs7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cbnNwYW4ubm90ZS1hcmVhIHtcbiAgICBjb2xvcjogI0IxQTlBOTtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5cbn1cbmltZy5jcm9zcy1pbWFnZSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1hcmdpbjogMC43ZW0gLTEuNWVtO1xuICAgIC8qIGJvcmRlci1yYWRpdXM6IDE3cHg7ICovXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIGhlaWdodDogMS41dmg7XG59XG4udXBsb2FkLWltYWdlLWZpcnN0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cblxuLm1haW4tY29udGFpbmVyLWJhbm5lci1pbWFnZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmltZy5wZW4taW1hZ2Uge1xuICAgIGhlaWdodDogMS4zdmg7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cbi5ob21lLXBhZ2UtYmFubmVyXG57XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbi5tYXQtaG9tZS1wYWdlLWNhcmQge1xuICAgIG1hcmdpbjogMWVtIDBlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIHBhZGRpbmc6IDBlbSAxZW07XG59XG5cblxuLnByb2ZpbGUtaGVhZGluZy5wcm9maWxlLWhlYWRpbmctdHdvIHtcbiAgICB3aWR0aDogbWF4LWNvbnRlbnQ7XG4gICAgcGFkZGluZy1yaWdodDogMTNweDtcbn1cblxuLm1haW4tY29udGFpbmVyLWJhbm5lci1pbWFnZS5pbWFnZS1qb3VybmV5LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogLTNweDtcbn1cbi5tYWluLWNvbnRpYW5lci1qb3VybmV5IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLmFnZW50LWltYWdlLXVwbG9hZC5qb3VybmV5LWltYWdlLWNvbnRhaW5lciB7XG4gICAgYm9yZGVyLXJhZGl1czogMHB4O1xufVxuXG4ubWFpbi1jb250aWFuZXItam91cm5leSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiAyZW07XG4gICAgbWFyZ2luOiAwZW0gMGVtOztcbn1cblxuLmFnZW50LWltYWdlLXVwbG9hZC5qb3VybmV5LWltYWdlLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDI1dnc7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLm91dHB1dFRleHQge1xuICAgIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBmb250LXdlaWdodDogNTAwO1xufVxudGV4dGFyZWEjdzNyZXZpZXcge1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMWVtO1xuXG4gICAgcGFkZGluZzogMWVtIDZweDtcblxuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm9yZGVyLWNvbG9yOiAjQ0JDN0M3O1xufVxuLmZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItdWllbGVtZW50cyB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgcGFkZGluZy10b3A6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiBcbn1cbi50YWItdGV4dCB7XG4gICAgcGFkZGluZzogMC41ZW07XG5cbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMWVtO1xufVxuLnRhYi10ZXh0OmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmhpZ2hsaWdodCB7XG4gICAgYmFja2dyb3VuZDogI0U4RThFODtcbiAgICBoZWlnaHQ6IDF2aDtcbiAgICAvKiBwb3NpdGlvbjogcmVsYXRpdmU7ICovXG4gICAgdG9wOiAxOHZoO1xuICAgIC8qIHotaW5kZXg6IDE7ICovXG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubWF0LU5vdGlmaWNhdGlvbiB7XG4gICAgbWFyZ2luOiAwZW0gMWVtO1xufVxuLnRleHQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG5cblxuLm5vdGlmaWNhdGlvbkNhcmR7XG4gICAgbWFyZ2luOiAwZW0gMmVtO1xufVxuLnVwZGF0ZS1idXR0b24ge1xuICAgIG1hcmdpbjogMmVtO1xufVxuIl19 */";
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/uielements/uielements.component.ts":
+  /*!***************************************************************!*\
+    !*** ./src/app/AdminPanel/uielements/uielements.component.ts ***!
+    \***************************************************************/
+
+  /*! exports provided: UIElementsComponent */
+
+  /***/
+  function srcAppAdminPanelUielementsUielementsComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "UIElementsComponent", function () {
+      return UIElementsComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../admin-panel/admin-panel.service.ts.service */
+    "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+    /* harmony import */
+
+
+    var _cms_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! ../../cms.service */
+    "./src/app/cms.service.ts");
+    /* harmony import */
+
+
+    var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! @angular/common */
+    "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! @angular/fire/storage */
+    "./node_modules/@angular/fire/storage/es2015/index.js");
+    /* harmony import */
+
+
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/fire/firestore */
+    "./node_modules/@angular/fire/firestore/es2015/index.js");
+    /* harmony import */
+
+
+    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../../Misc/alertFormdialog/alertFormdialog.component */
+    "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
+    /*! @angular/material */
+    "./node_modules/@angular/material/esm2015/material.js");
+    /* harmony import */
+
+
+    var _Model_blog__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(
+    /*! ../../Model/blog */
+    "./src/app/Model/blog.ts");
+    /* harmony import */
+
+
+    var _Model_footer__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(
+    /*! ../../Model/footer */
+    "./src/app/Model/footer.ts");
+
+    var UIElementsComponent = /*#__PURE__*/function () {
+      function UIElementsComponent(adminPanelService, CMSSERVICE, _location, afs, afStorage, dialog) {
+        _classCallCheck(this, UIElementsComponent);
+
+        this.adminPanelService = adminPanelService;
+        this.CMSSERVICE = CMSSERVICE;
+        this._location = _location;
+        this.afs = afs;
+        this.afStorage = afStorage;
+        this.dialog = dialog;
+        this.homePage = true;
+        this.Notification = false;
+        this.SellerDetails = false;
+        this.BuyerDetails = false;
+        this.PrivacyPolicy = false;
+        this.TermConditon = false;
+        this.imageUplaod = true;
+        this.Step3Image = null;
+        this.allBlogs = [];
+        this.isLoading = false;
+        this.basePath = '/images';
+        this.bannerUpload = true;
+        this.filename = " ";
+        this.BannerTwo = true;
+        this.topBannerImage = null;
+        this.secondBanner = null;
+        this.step1ImageNew = null;
+        this.step2ImageNew = null;
+        this.step3ImageNew = null;
+        this.step1NotUpload = true;
+        this.step2NotUpload = true;
+        this.step3NotUpload = true;
+        this.newBlogImage = null;
+        this.addNewBlog = false;
+        this.sellerFormRight = false;
+        this.blog = new _Model_blog__WEBPACK_IMPORTED_MODULE_9__["blog"]();
+        this.footer = new _Model_footer__WEBPACK_IMPORTED_MODULE_10__["footer"]();
+        this.seller = null;
+        this.buyer = null;
+      }
+
+      _createClass(UIElementsComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.user = JSON.parse(localStorage.getItem("user"));
+          document.getElementById("home").style.background = "white";
+          document.getElementById("home").style.border = "none";
+          document.getElementById("home").style.borderTop = "3px solid #E8E8E8";
+          document.getElementById("notification").style.border = "1px solid #707070";
+          document.getElementById("seller").style.border = "1px solid #707070";
+          document.getElementById("privacy").style.border = "1px solid #707070";
+          document.getElementById("buyer").style.border = "1px solid #707070";
+          document.getElementById("terms").style.border = "1px solid #707070";
+          document.getElementById("notification").style.background = "#E8E8E8";
+          document.getElementById("seller").style.background = "#E8E8E8";
+          document.getElementById("privacy").style.background = "#E8E8E8";
+          document.getElementById("buyer").style.background = "#E8E8E8";
+          document.getElementById("terms").style.background = "#E8E8E8";
+          this.getUserDetails();
+          this.bannerImages();
+          this.getBlogs();
+          this.getFooter();
+          this.getNotification();
+          this.getFormImage();
+          this.getPrivacyPolicy();
+          this.getTerms();
+        }
+      }, {
+        key: "updateTerms",
+        value: function updateTerms() {
+          this.isLoading = true;
+          this.noti = {
+            Terms: this.Terms
+          };
+          this.CMSSERVICE.updateTerms(this.noti);
+          this.isLoading = false;
+          var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: {
+              message: "User Detail Updated"
+            }
+          });
+        }
+      }, {
+        key: "updatePrivacyTerms",
+        value: function updatePrivacyTerms() {
+          this.isLoading = true;
+          this.noti = {
+            Privacy: this.Privacy
+          };
+          this.CMSSERVICE.updatePrivacy(this.noti);
+          this.isLoading = false;
+          var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: {
+              message: "User Detail Updated"
+            }
+          });
+        }
+      }, {
+        key: "sellerEdit",
+        value: function sellerEdit() {
+          this.sellerFormRight = true;
+        }
+      }, {
+        key: "updateSellerBuyer",
+        value: function updateSellerBuyer() {
+          this.isLoading = true;
+
+          if (this.seller != null) {
+            this.seller;
+          } else {
+            this.seller = this.SellerPropertyRightImage;
+          }
+
+          if (this.buyer != null) {
+            this.buyer;
+          } else {
+            this.buyer = this.BuyerPropertyRightImages;
+          }
+
+          this.noti = {
+            BuyerPropertyRightImages: this.buyer,
+            SellerPropertyRightImage: this.seller
+          };
+          this.CMSSERVICE.updateSellerBuyerImage(this.noti);
+          this.isLoading = false;
+          var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: {
+              message: "User Detail Updated"
+            }
+          });
+        }
+      }, {
+        key: "buyerupload",
+        value: function buyerupload(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
+            var _this29 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee8$(_context8) {
+              while (1) {
+                switch (_context8.prev = _context8.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context8.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context8.next = 12;
+                    break;
+
+                  case 6:
+                    if (!file) {
+                      _context8.next = 12;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context8.next = 11;
+                    return this.task;
+
+                  case 11:
+                    _context8.sent.ref.getDownloadURL().then(function (url) {
+                      _this29.buyer = url;
+                    });
+
+                  case 12:
+                    this.isLoading = false;
+
+                  case 13:
+                  case "end":
+                    return _context8.stop();
+                }
+              }
+            }, _callee8, this);
+          }));
+        }
+      }, {
+        key: "sellerupload",
+        value: function sellerupload(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
+            var _this30 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee9$(_context9) {
+              while (1) {
+                switch (_context9.prev = _context9.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context9.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context9.next = 12;
+                    break;
+
+                  case 6:
+                    if (!file) {
+                      _context9.next = 12;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context9.next = 11;
+                    return this.task;
+
+                  case 11:
+                    _context9.sent.ref.getDownloadURL().then(function (url) {
+                      _this30.seller = url;
+                    });
+
+                  case 12:
+                    this.isLoading = false;
+
+                  case 13:
+                  case "end":
+                    return _context9.stop();
+                }
+              }
+            }, _callee9, this);
+          }));
+        }
+      }, {
+        key: "updateNotification",
+        value: function updateNotification() {
+          this.isLoading = true;
+          this.noti = {
+            SingupFromMenu: this.SingupFromMenu,
+            MynestimateBuyerDetails: this.MynestimateBuyerDetails
+          };
+          this.CMSSERVICE.updateBlueNotifiaction(this.noti);
+          this.isLoading = false;
+          var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: {
+              message: "User Detail Updated"
+            }
+          });
+        }
+      }, {
+        key: "updateDetails",
+        value: function updateDetails() {
+          this.updateHomeBannerImage();
+        }
+      }, {
+        key: "updateHomeBannerImage",
+        value: function updateHomeBannerImage() {
+          this.isLoading = true;
+
+          if (this.topBannerImage != null) {
+            this.topBannerImage;
+          } else {
+            this.topBannerImage = this.bannerUrl;
+          }
+
+          if (this.secondBanner != null) {
+            this.secondBanner;
+          } else {
+            this.secondBanner = this.SecondBannerImage;
+          }
+
+          if (this.step1ImageNew != null) {
+            this.step1ImageNew;
+          } else {
+            this.step1ImageNew = this.Step1Image;
+          }
+
+          if (this.step2ImageNew != null) {
+            this.step2ImageNew;
+          } else {
+            this.step2ImageNew = this.Step2Image;
+          }
+
+          if (this.step3ImageNew != null) {
+            this.step3ImageNew;
+          } else {
+            this.step3ImageNew = this.Step3Image;
+          }
+
+          this.homeupdate = {
+            BannerImageUrl: this.topBannerImage,
+            SecondBannerImage: this.secondBanner,
+            Step1Image: this.step1ImageNew,
+            Step1ImageText: this.Step1ImageText,
+            Step2ImageText: this.Step2ImageText,
+            Step2Image: this.step2ImageNew,
+            Step3Image: this.step3ImageNew,
+            Step3ImageText: this.Step3ImageText
+          };
+          this.CMSSERVICE.updateHomePageImages("1", this.homeupdate);
+          this.addBlog();
+          this.updateFooter();
+          this.isLoading = false;
+          var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            data: {
+              message: "User Detail Updated"
+            }
+          });
+        }
+      }, {
+        key: "updateFooter",
+        value: function updateFooter() {
+          this.footers = {
+            Facebook: this.footer.Facebook,
+            Instragram: this.footer.Instragram,
+            Twitter: this.footer.Twitter
+          };
+          this.CMSSERVICE.updateFooter("1", this.footers);
+        }
+      }, {
+        key: "addMoreBlog",
+        value: function addMoreBlog() {
+          this.addNewBlog = true;
+        }
+      }, {
+        key: "addBlog",
+        value: function addBlog() {
+          if (this.newBlogImage != null) {
+            this.blog.BlogImage = this.newBlogImage;
+            this.CMSSERVICE.createBlog(this.user.uid, this.blog);
+          }
+        }
+      }, {
+        key: "step3UploadImag",
+        value: function step3UploadImag() {
+          this.step3NotUpload = false;
+        }
+      }, {
+        key: "step2UploadImage",
+        value: function step2UploadImage() {
+          this.step2NotUpload = false;
+        }
+      }, {
+        key: "step1UploadImage",
+        value: function step1UploadImage() {
+          this.step1NotUpload = false;
+        }
+      }, {
+        key: "uploadTopBannerImage",
+        value: function uploadTopBannerImage() {
+          this.bannerUpload = false;
+        }
+      }, {
+        key: "uplodSecondImage",
+        value: function uplodSecondImage() {
+          this.BannerTwo = false;
+        }
+      }, {
+        key: "newBlogPicture",
+        value: function newBlogPicture(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
+            var _this31 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee10$(_context10) {
+              while (1) {
+                switch (_context10.prev = _context10.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context10.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context10.next = 12;
+                    break;
+
+                  case 6:
+                    if (!file) {
+                      _context10.next = 12;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context10.next = 11;
+                    return this.task;
+
+                  case 11:
+                    _context10.sent.ref.getDownloadURL().then(function (url) {
+                      console.log(url);
+                      _this31.newBlogImage = url;
+                    });
+
+                  case 12:
+                    this.isLoading = false;
+
+                  case 13:
+                  case "end":
+                    return _context10.stop();
+                }
+              }
+            }, _callee10, this);
+          }));
+        }
+      }, {
+        key: "step3upload",
+        value: function step3upload(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
+            var _this32 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee11$(_context11) {
+              while (1) {
+                switch (_context11.prev = _context11.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context11.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context11.next = 12;
+                    break;
+
+                  case 6:
+                    if (!file) {
+                      _context11.next = 12;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context11.next = 11;
+                    return this.task;
+
+                  case 11:
+                    _context11.sent.ref.getDownloadURL().then(function (url) {
+                      _this32.step3ImageNew = url;
+                    });
+
+                  case 12:
+                    this.isLoading = false;
+
+                  case 13:
+                  case "end":
+                    return _context11.stop();
+                }
+              }
+            }, _callee11, this);
+          }));
+        }
+      }, {
+        key: "step2upload",
+        value: function step2upload(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
+            var _this33 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee12$(_context12) {
+              while (1) {
+                switch (_context12.prev = _context12.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context12.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context12.next = 12;
+                    break;
+
+                  case 6:
+                    if (!file) {
+                      _context12.next = 12;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context12.next = 11;
+                    return this.task;
+
+                  case 11:
+                    _context12.sent.ref.getDownloadURL().then(function (url) {
+                      _this33.step2ImageNew = url;
+                    });
+
+                  case 12:
+                    this.isLoading = false;
+
+                  case 13:
+                  case "end":
+                    return _context12.stop();
+                }
+              }
+            }, _callee12, this);
+          }));
+        }
+      }, {
+        key: "step1upload",
+        value: function step1upload(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
+            var _this34 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee13$(_context13) {
+              while (1) {
+                switch (_context13.prev = _context13.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context13.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context13.next = 12;
+                    break;
+
+                  case 6:
+                    if (!file) {
+                      _context13.next = 12;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context13.next = 11;
+                    return this.task;
+
+                  case 11:
+                    _context13.sent.ref.getDownloadURL().then(function (url) {
+                      _this34.step1ImageNew = url;
+                    });
+
+                  case 12:
+                    this.isLoading = false;
+
+                  case 13:
+                  case "end":
+                    return _context13.stop();
+                }
+              }
+            }, _callee13, this);
+          }));
+        }
+      }, {
+        key: "upload",
+        value: function upload(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
+            var _this35 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee14$(_context14) {
+              while (1) {
+                switch (_context14.prev = _context14.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context14.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context14.next = 12;
+                    break;
+
+                  case 6:
+                    if (!file) {
+                      _context14.next = 12;
+                      break;
+                    }
+
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context14.next = 11;
+                    return this.task;
+
+                  case 11:
+                    _context14.sent.ref.getDownloadURL().then(function (url) {
+                      _this35.topBannerImage = url;
+                    });
+
+                  case 12:
+                    this.isLoading = false;
+
+                  case 13:
+                  case "end":
+                    return _context14.stop();
+                }
+              }
+            }, _callee14, this);
+          }));
+        }
+      }, {
+        key: "LoweBanner",
+        value: function LoweBanner(event) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
+            var _this36 = this;
+
+            var file, dialogRef, filePath;
+            return regeneratorRuntime.wrap(function _callee15$(_context15) {
+              while (1) {
+                switch (_context15.prev = _context15.next) {
+                  case 0:
+                    this.isLoading = true;
+                    file = event.target.files[0];
+
+                    if (!(file.size > 2000000)) {
+                      _context15.next = 6;
+                      break;
+                    }
+
+                    dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                      data: {
+                        message: "Image size must be less than 2mb"
+                      }
+                    });
+                    _context15.next = 11;
+                    break;
+
+                  case 6:
+                    filePath = "".concat(this.basePath, "/").concat(file.name); // path at which image will be stored in the firebase storage
+
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+
+                    _context15.next = 10;
+                    return this.task;
+
+                  case 10:
+                    _context15.sent.ref.getDownloadURL().then(function (url) {
+                      _this36.secondBanner = url;
+                    });
+
+                  case 11:
+                    this.isLoading = false;
+
+                  case 12:
+                  case "end":
+                    return _context15.stop();
+                }
+              }
+            }, _callee15, this);
+          }));
+        }
+      }, {
+        key: "backClicked",
+        value: function backClicked() {
+          this._location.back();
+        }
+      }, {
+        key: "getSelected",
+        value: function getSelected() {
+          var _this37 = this;
+
+          this.CMSSERVICE.getUserBlog(this.user.uid).then(function (data) {
+            data.forEach(function (element) {
+              _this37.allBlogs.push(element.data());
+            });
+          });
+        }
+      }, {
+        key: "getTerms",
+        value: function getTerms() {
+          var _this38 = this;
+
+          this.CMSSERVICE.getTermsCondition().then(function (data) {
+            data.forEach(function (element) {
+              _this38.Terms = element.data().Terms;
+            });
+          });
+        }
+      }, {
+        key: "getPrivacyPolicy",
+        value: function getPrivacyPolicy() {
+          var _this39 = this;
+
+          this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
+            data.forEach(function (element) {
+              _this39.Privacy = element.data().Privacy;
+            });
+          });
+        }
+      }, {
+        key: "getFormImage",
+        value: function getFormImage() {
+          var _this40 = this;
+
+          this.CMSSERVICE.getFormImages().then(function (data) {
+            data.forEach(function (element) {
+              _this40.BuyerPropertyRightImages = element.data().BuyerPropertyRightImages;
+              _this40.SellerPropertyRightImage = element.data().SellerPropertyRightImage;
+            });
+          });
+        }
+      }, {
+        key: "getNotification",
+        value: function getNotification() {
+          var _this41 = this;
+
+          this.CMSSERVICE.getBlueNotification(this.user.uid).then(function (element) {
+            _this41.MynestimateBuyerDetails = element.data().MynestimateBuyerDetails;
+            _this41.SingupFromMenu = element.data().SingupFromMenu;
+          });
+        }
+      }, {
+        key: "getFooter",
+        value: function getFooter() {
+          var _this42 = this;
+
+          this.CMSSERVICE.getFooter().then(function (footer) {
+            footer.forEach(function (element) {
+              _this42.footer.Facebook = element.data().Facebook;
+              _this42.footer.Instragram = element.data().Instragram;
+              _this42.footer.Twitter = element.data().Twitter;
+            });
+          });
+        }
+      }, {
+        key: "getBlogs",
+        value: function getBlogs() {
+          var _this43 = this;
+
+          this.CMSSERVICE.getUserBlog(this.user.uid).then(function (data) {
+            data.forEach(function (element) {
+              _this43.allBlogs.push(element.data());
+            });
+          });
+        }
+      }, {
+        key: "bannerImages",
+        value: function bannerImages() {
+          var _this44 = this;
+
+          this.CMSSERVICE.getHomePage(this.user.uid).then(function (banner) {
+            banner.forEach(function (element) {
+              _this44.homePageData = element.data();
+              _this44.bannerUrl = element.data().BannerImageUrl;
+              _this44.SecondBannerImage = element.data().SecondBannerImage;
+              _this44.Step1Image = element.data().Step1Image;
+              _this44.Step1ImageText = element.data().Step1ImageText;
+              _this44.Step2ImageText = element.data().Step2ImageText;
+              _this44.Step2Image = element.data().Step2Image;
+              _this44.Step3Image = element.data().Step3Image;
+              _this44.Step3ImageText = element.data().Step3ImageText;
+            });
+          });
+        }
+      }, {
+        key: "homePages",
+        value: function homePages() {
+          this.homePage = true;
+          this.Notification = false;
+          this.SellerDetails = false;
+          this.BuyerDetails = false;
+          this.PrivacyPolicy = false;
+          this.TermConditon = false;
+          document.getElementById("home").style.background = "white";
+          document.getElementById("notification").style.background = "#E8E8E8";
+          document.getElementById("seller").style.background = "#E8E8E8";
+          document.getElementById("privacy").style.background = "#E8E8E8";
+          document.getElementById("buyer").style.background = "#E8E8E8";
+          document.getElementById("terms").style.background = "#E8E8E8";
+          document.getElementById("home").style.border = "none";
+          document.getElementById("notification").style.border = "1px solid #707070";
+          document.getElementById("seller").style.border = "1px solid #707070";
+          document.getElementById("privacy").style.border = "1px solid #707070";
+          document.getElementById("buyer").style.border = "1px solid #707070";
+          document.getElementById("terms").style.border = "1px solid #707070";
+          document.getElementById("home").style.borderTop = "3px solid #E8E8E8";
+        }
+      }, {
+        key: "Notifications",
+        value: function Notifications() {
+          this.homePage = false;
+          this.Notification = true;
+          this.SellerDetails = false;
+          this.BuyerDetails = false;
+          this.PrivacyPolicy = false;
+          this.TermConditon = false;
+          document.getElementById("home").style.background = "#E8E8E8";
+          document.getElementById("notification").style.background = "white";
+          document.getElementById("seller").style.background = "#E8E8E8";
+          document.getElementById("buyer").style.background = "#E8E8E8";
+          document.getElementById("privacy").style.background = "#E8E8E8";
+          document.getElementById("terms").style.background = "#E8E8E8";
+          document.getElementById("home").style.border = "1px solid #707070";
+          document.getElementById("notification").style.border = "none";
+          document.getElementById("seller").style.border = "1px solid #707070";
+          document.getElementById("privacy").style.border = "1px solid #707070";
+          document.getElementById("buyer").style.border = "1px solid #707070";
+          document.getElementById("terms").style.border = "1px solid #707070";
+          document.getElementById("notification").style.borderTop = "3px solid #E8E8E8";
+        }
+      }, {
+        key: "SellerDetail",
+        value: function SellerDetail() {
+          this.homePage = false;
+          this.Notification = false;
+          this.SellerDetails = true;
+          this.BuyerDetails = false;
+          this.PrivacyPolicy = false;
+          this.TermConditon = false;
+          document.getElementById("home").style.background = "#E8E8E8";
+          document.getElementById("notification").style.background = "#E8E8E8";
+          document.getElementById("seller").style.background = "white";
+          document.getElementById("buyer").style.background = "#E8E8E8";
+          document.getElementById("privacy").style.background = "#E8E8E8";
+          document.getElementById("terms").style.background = "#E8E8E8";
+          document.getElementById("home").style.border = "1px solid #707070";
+          document.getElementById("notification").style.border = "1px solid #707070";
+          document.getElementById("seller").style.border = "none";
+          document.getElementById("privacy").style.border = "1px solid #707070";
+          document.getElementById("buyer").style.border = "1px solid #707070";
+          document.getElementById("terms").style.border = "1px solid #707070";
+          document.getElementById("seller").style.borderTop = "3px solid #E8E8E8";
+        }
+      }, {
+        key: "BuyerDetail",
+        value: function BuyerDetail() {
+          this.homePage = false;
+          this.Notification = false;
+          this.SellerDetails = false;
+          this.BuyerDetails = true;
+          this.PrivacyPolicy = false;
+          this.TermConditon = false;
+          document.getElementById("home").style.background = "#E8E8E8";
+          document.getElementById("notification").style.background = "#E8E8E8";
+          document.getElementById("seller").style.background = "#E8E8E8";
+          document.getElementById("buyer").style.background = "white";
+          document.getElementById("privacy").style.background = "#E8E8E8";
+          document.getElementById("terms").style.background = "#E8E8E8";
+          document.getElementById("home").style.border = "1px solid #707070";
+          document.getElementById("notification").style.border = "1px solid #707070";
+          document.getElementById("seller").style.border = "1px solid #707070";
+          document.getElementById("privacy").style.border = "1px solid #707070";
+          document.getElementById("buyer").style.border = "none";
+          document.getElementById("terms").style.border = "1px solid #707070";
+          document.getElementById("buyer").style.borderTop = "3px solid #E8E8E8";
+        }
+      }, {
+        key: "privacy",
+        value: function privacy() {
+          this.homePage = false;
+          this.Notification = false;
+          this.SellerDetails = false;
+          this.BuyerDetails = false;
+          this.PrivacyPolicy = true;
+          this.TermConditon = false;
+          document.getElementById("home").style.background = "#E8E8E8";
+          document.getElementById("notification").style.background = "#E8E8E8";
+          document.getElementById("seller").style.background = "#E8E8E8";
+          document.getElementById("buyer").style.background = "#E8E8E8";
+          document.getElementById("privacy").style.background = "white";
+          document.getElementById("terms").style.background = "#E8E8E8";
+          document.getElementById("home").style.border = "1px solid #707070";
+          document.getElementById("notification").style.border = "1px solid #707070";
+          document.getElementById("seller").style.border = "1px solid #707070";
+          document.getElementById("privacy").style.border = "none";
+          document.getElementById("buyer").style.border = "1px solid #707070";
+          document.getElementById("terms").style.border = "1px solid #707070";
+          document.getElementById("privacy").style.borderTop = "3px solid #E8E8E8";
+        }
+      }, {
+        key: "terms",
+        value: function terms() {
+          this.homePage = false;
+          this.Notification = false;
+          this.SellerDetails = false;
+          this.BuyerDetails = false;
+          this.PrivacyPolicy = false;
+          this.TermConditon = true;
+          document.getElementById("home").style.background = "#E8E8E8";
+          document.getElementById("notification").style.background = "#E8E8E8";
+          document.getElementById("seller").style.background = "#E8E8E8";
+          document.getElementById("buyer").style.background = "#E8E8E8";
+          document.getElementById("privacy").style.background = "#E8E8E8";
+          document.getElementById("terms").style.background = "white";
+          document.getElementById("home").style.border = "1px solid #707070";
+          document.getElementById("notification").style.border = "1px solid #707070";
+          document.getElementById("seller").style.border = "1px solid #707070";
+          document.getElementById("privacy").style.border = "1px solid #707070";
+          document.getElementById("buyer").style.border = "1px solid #707070";
+          document.getElementById("terms").style.border = "none";
+          document.getElementById("terms").style.borderTop = "3px solid #E8E8E8";
+        }
+      }, {
+        key: "getUserDetails",
+        value: function getUserDetails() {
+          var _this45 = this;
+
+          if (this.user != null) {
+            this.uid = this.user.uid;
+            document.getElementById("appfooter").style.display = "none";
+            document.getElementById("header-main").style.display = "none";
+            this.adminPanelService.getUser(this.uid).then(function (element) {
+              _this45.username = element.data().Name;
+              _this45.image = element.data().Image;
+            });
+          }
+        }
+      }]);
+
+      return UIElementsComponent;
+    }();
+
+    UIElementsComponent.ctorParameters = function () {
+      return [{
+        type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"]
+      }, {
+        type: _cms_service__WEBPACK_IMPORTED_MODULE_3__["CMSSERVICE"]
+      }, {
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]
+      }, {
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_6__["AngularFirestore"]
+      }, {
+        type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_5__["AngularFireStorage"]
+      }, {
+        type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialog"]
+      }];
+    };
+
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('file', {
+      "static": false
+    })], UIElementsComponent.prototype, "FileView", void 0);
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('form', {
+      "static": false
+    })], UIElementsComponent.prototype, "form", void 0);
+    UIElementsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-uielements',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./uielements.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./uielements.component.css */
+      "./src/app/AdminPanel/uielements/uielements.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
+    })], UIElementsComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.css":
   /*!**************************************************************************!*\
     !*** ./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.css ***!
@@ -2291,7 +5694,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n.user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n}\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\nspan.button-size {\n    font-size: 20px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n.tab-area {\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n\n}\n.search-field\n{\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n}\n.user-tab {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n    border-bottom: 2px solid #000000;\n    padding: 0px 1em;\n}\n.agent-tab{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n   margin-left: 3em;\n    border-bottom: 2px solid #000000;\n    padding: 0px 1em;\n}\nimg.user-image {\n    height: 4vh;\n}\n.user-count {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.user-counter {\n    display: flex;\n    justify-content: space-evenly;\n    padding: 0.5em;\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 3px 3px 5px 6px #ccc;\n    margin-right: 2em;\n    flex-direction: column;\n}\n.user-count-text {\n    text-align: center;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    color: var(--light-blue-color);\n    font-size: 2.7em;\n    padding-left: 10px;\n\n}\n.Main-tab-area-container {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    align-content: center;\n    justify-content: center;\n    margin-top: 2em;\n}\n.heading-count-text {\n    text-align: right;\n    color: #0F3C73;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    padding-left: 2em;\n}\n.user-count-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 1.5em;\n    padding-left: 10px;\n}\n.user-count-area-main {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}\nspan.border-right {\n    border: 1px solid #00000029;\n    height: 3em;\n    margin-bottom: 10px;\n}\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.4fr;\n    margin-right: 2em;\n    margin-top: 2em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n}\n.user-details {\n    display: grid;\n    grid-template-columns: 1.3fr 1fr 1fr 1fr;\n}\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.example-margin {\n    padding-right: 10px;\n}\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n.tab-content-email {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    margin-right: 2em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n.cursor-show\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1hZ2VudC10YWIvdXNlcnMtYWdlbnQtdGFiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCO0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0lBQ25CLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsbUJBQW1COztBQUV2QjtBQUNBOztJQUVJLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZ0NBQWdDO0lBQ2hDLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztHQUNmLGdCQUFnQjtJQUNmLGdDQUFnQztJQUNoQyxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYiw2QkFBNkI7SUFDN0IsY0FBYztJQUNkLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLGlCQUFpQjtJQUNqQixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLDhCQUE4QjtJQUM5QixnQkFBZ0I7SUFDaEIsa0JBQWtCOztBQUV0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLGtDQUFrQztJQUNsQyxxQkFBcUI7SUFDckIsdUJBQXVCO0lBQ3ZCLGVBQWU7QUFDbkI7QUFHQTtJQUNJLGlCQUFpQjtJQUNqQixjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsaUJBQWlCO0FBQ3JCO0FBQ0E7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZ0JBQWdCO0lBQ2hCLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsNkJBQTZCO0FBQ2pDO0FBQ0E7SUFDSSwyQkFBMkI7SUFDM0IsV0FBVztJQUNYLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLDhDQUE4QztJQUM5QyxpQkFBaUI7SUFDakIsZUFBZTtJQUNmLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isd0NBQXdDO0FBQzVDO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLHVCQUF1QjtJQUN2QixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixpQkFBaUI7QUFDckI7QUFFQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix3QkFBd0I7SUFDeEIsdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQztBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvdXNlcnMtYWdlbnQtdGFiL3VzZXJzLWFnZW50LXRhYi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG4udXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcbiAgICBwYWRkaW5nLXRvcDogOHZoO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNGOUY5Rjk7XG59XG4udG9wLWJhci1oZWFkZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuLnRvcC1iYXItdXNlci1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xuICBjb2xvcjogIzBGM0M3Mztcbn1cbi5sb3dlci10ZXh0LWhlYWRpbmdcbntcbmNvbG9yOiAjMUVBQUZBO1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcbmZvbnQtc2l6ZTogMjBweDtcbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi50YWItYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuLnNlYXJjaC1maWVsZFxue1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtZW5kO1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG5cbi51c2VyLXRhYiB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjVlbTtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgIzAwMDAwMDtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xufVxuLmFnZW50LXRhYntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgbWFyZ2luLWxlZnQ6IDNlbTtcbiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgIzAwMDAwMDtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xufVxuaW1nLnVzZXItaW1hZ2Uge1xuICAgIGhlaWdodDogNHZoO1xufVxuLnVzZXItY291bnQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnVzZXItY291bnRlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgICBwYWRkaW5nOiAwLjVlbTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxNnB4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDZweCAjY2NjO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4udXNlci1jb3VudC10ZXh0IHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICAgIGZvbnQtc2l6ZTogMi43ZW07XG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xuXG59XG4uTWFpbi10YWItYXJlYS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAyZnIgMWZyIDFmcjtcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xufVxuXG5cbi5oZWFkaW5nLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtc2l6ZTogMS4zZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG59XG4udXNlci1jb3VudC1oZWFkaW5nXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAxLjVlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG4udXNlci1jb3VudC1hcmVhLW1haW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuc3Bhbi5ib3JkZXItcmlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDAyOTtcbiAgICBoZWlnaHQ6IDNlbTtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuXG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC40ZnI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLnVzZXItZGV0YWlscyB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDEuM2ZyIDFmciAxZnIgMWZyO1xufVxuLnVpZC1jb250ZW50IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuLmV4YW1wbGUtbWFyZ2luIHtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuXG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG5cbi50YWItY29udGVudC1lbWFpbCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi51c2VyLWNvbnRlbnQtbG93ZXItcmVzdWx0IHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC41ZnI7XG4gICAgbWFyZ2luLWxlZnQ6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgLyogbWFyZ2luLWJvdHRvbTogMWVtOyAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLm1haW4tY29udGFpbmVyLXJlc3VsdC11c2VycyB7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbn1cbi50ZXh0LW91dHB1dC10YWItY29udGVudHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLmN1cnNvci1zaG93XG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */";
+    __webpack_exports__["default"] = "\n.user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n\n}\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n}\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\nspan.button-size {\n    font-size: 20px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n.tab-area {\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n\n}\n.search-field\n{\n    display: flex;\n    align-items: center;\n    justify-content: unset;\n    border-bottom: 1px solid black;\n    width: 16vw;\n\n}\n.user-tab {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\n.agent-tab{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n   margin-left: 3em;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\nimg.user-image {\n    height: 4vh;\n}\n.user-count {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.user-counter {\n    display: flex;\n    justify-content: space-evenly;\n    padding: 0.5em;\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 3px 3px 5px 6px #ccc;\n    margin-right: 2em;\n    flex-direction: column;\n}\n.user-count-text {\n    text-align: center;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    color: var(--light-blue-color);\n    font-size: 2.7em;\n    padding-left: 10px;\n\n}\n.Main-tab-area-container {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    align-content: center;\n    justify-content: center;\n    margin-top: 2em;\n    align-items: flex-end;\n}\n.heading-count-text {\n    text-align: right;\n    color: #0F3C73;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    padding-left: 2em;\n}\n.user-count-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 1.5em;\n    padding-left: 10px;\n}\n.user-count-area-main {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}\nspan.border-right {\n    border: 1px solid #00000029;\n    height: 3em;\n    margin-bottom: 10px;\n}\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.4fr;\n    margin-right: 2em;\n    margin-top: 2em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n    display: flex;\n    align-items: center;\n}\n.user-details {\n    display: grid;\n    grid-template-columns: 1.3fr 1fr 1fr 1fr;\n}\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.example-margin {\n    padding-right: 10px;\n}\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n.tab-content-email {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    margin-right: 2em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1em;\n    color: #030303;\n}\n.cursor-show\n{\n    cursor: pointer;\n}\n.user-content-top-heading.agent-content-top-heading {\n    grid-template-columns: 0.5fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr;\n}\n.user-content-lower-result.agent-content-lower-result{\n    grid-template-columns: 0.5fr 0.8fr 0.8fr 1fr 1fr 0.7fr;\n}\n.add-agent-overlay{\n    position: fixed;\n    background-color: #0000008c;\n    width: 100vw;\n    top: 0;\n    height: 100vh;\n}\n.add-agent-background {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.full-width\n{\n    width: 100%;\n}\n.wrapper-add-agent {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n}\nimg.image-cross-image {\n    height: 2vh;\n}\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.add-agent-top-headin {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 1em;\n}\n.add_more_button{\n    padding: 0.7em !important;\n}\nimg.serach-icon-image {\n    height: 2vh;\n}\n.search-icon {\n    margin-left: 2em;\n    margin-top: 10px;\n}\n.agent-tab:hover\n{\n    cursor: pointer;\n}\n.user-tab:hover{\n    cursor: pointer;\n}\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\nimg.down-side-arrow {\n    /* height: 1.5vh; */\n    margin-left: 10px;\n    width: 1em;\n}\n.checkbox-image {\n    display: flex;\n    align-items: center;\n}\nform.example-form {\n    margin-bottom: -1em;\n}\n.search-icon:hover\n{\n    cursor:pointer;\n}\n.inner-job-title {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n    width: 200px;\n    height: 200px;\n    overflow: overlay;\n}\n.job-title-content {\n    text-align: center;\n    font-size: 1.2em;\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n}\n.overlay-black-back {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.select-job-title-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n}\nimg.serach-icon-image-job-title {\n    height: 2vh;\n}\n.selct-job-title-text\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n    font-size: 16px;\n}\n.text-heading-tab-content:hover\n{\n    cursor:pointer;\n}\n.select-job-title-image-close:hover\n{\n    cursor:pointer;\n}\n.job-title-content:hover\n{\n    cursor:pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1hZ2VudC10YWIvdXNlcnMtYWdlbnQtdGFiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCO0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTs7QUFFZjtBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLG1CQUFtQjs7QUFFdkI7QUFDQTs7SUFFSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsV0FBVzs7QUFFZjtBQUVBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7R0FDZixnQkFBZ0I7SUFDZixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLGNBQWM7SUFDZCx1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxpQkFBaUI7SUFDakIsc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQiw4QkFBOEI7SUFDOUIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixrQ0FBa0M7SUFDbEMscUJBQXFCO0lBQ3JCLHVCQUF1QjtJQUN2QixlQUFlO0lBQ2YscUJBQXFCO0FBQ3pCO0FBR0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYix3Q0FBd0M7QUFDNUM7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhDQUE4QztJQUM5QyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHdCQUF3QjtJQUN4Qix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSx3REFBd0Q7QUFDNUQ7QUFDQTtJQUNJLHNEQUFzRDtBQUMxRDtBQUNBO0lBQ0ksZUFBZTtJQUNmLDJCQUEyQjtJQUMzQixZQUFZO0lBQ1osTUFBTTtJQUNOLGFBQWE7QUFDakI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxXQUFXO0FBQ2Y7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSx5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUVBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsVUFBVTtBQUNkO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBSUE7SUFDSSx1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZUFBZTtJQUNmLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksY0FBYztBQUNsQjtBQUNBOztJQUVJLGNBQWM7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VzZXJzLWFnZW50LXRhYi91c2Vycy1hZ2VudC10YWIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG4gICAgcGFkZGluZy10b3A6IDh2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG5cbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi50YWItYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuLnNlYXJjaC1maWVsZFxue1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2V0O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICB3aWR0aDogMTZ2dztcblxufVxuXG4udXNlci10YWIge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgcGFkZGluZzogMHB4IDFlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogN3B4O1xufVxuLmFnZW50LXRhYntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgbWFyZ2luLWxlZnQ6IDNlbTtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xuICAgIHBhZGRpbmctYm90dG9tOiA3cHg7XG59XG5pbWcudXNlci1pbWFnZSB7XG4gICAgaGVpZ2h0OiA0dmg7XG59XG4udXNlci1jb3VudCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1jb3VudGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIHBhZGRpbmc6IDAuNWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggNnB4ICNjY2M7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi51c2VyLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgZm9udC1zaXplOiAyLjdlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG5cbn1cbi5NYWluLXRhYi1hcmVhLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDJmciAxZnIgMWZyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtZW5kO1xufVxuXG5cbi5oZWFkaW5nLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtc2l6ZTogMS4zZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG59XG4udXNlci1jb3VudC1oZWFkaW5nXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAxLjVlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG4udXNlci1jb3VudC1hcmVhLW1haW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuc3Bhbi5ib3JkZXItcmlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDAyOTtcbiAgICBoZWlnaHQ6IDNlbTtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuXG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC40ZnI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi51c2VyLWRldGFpbHMge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxLjNmciAxZnIgMWZyIDFmcjtcbn1cbi51aWQtY29udGVudCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi5leGFtcGxlLW1hcmdpbiB7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cblxuaW1nLmljb24tYWN0aW9uIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xufVxuXG4udGFiLWNvbnRlbnQtZW1haWwge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuNWZyIDFmciAxZnIgMWZyIDAuNWZyO1xuICAgIG1hcmdpbi1sZWZ0OiAwZW07XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIC8qIG1hcmdpbi1ib3R0b206IDFlbTsgKi9cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTNweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4uY3Vyc29yLXNob3dcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nLmFnZW50LWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMC43ZnIgMC44ZnIgMWZyIDEuMmZyIDAuNGZyO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQuYWdlbnQtY29udGVudC1sb3dlci1yZXN1bHR7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjVmciAwLjhmciAwLjhmciAxZnIgMWZyIDAuN2ZyO1xufVxuLmFkZC1hZ2VudC1vdmVybGF5e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwOGM7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIHRvcDogMDtcbiAgICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uYWRkLWFnZW50LWJhY2tncm91bmQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4uZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLndyYXBwZXItYWRkLWFnZW50IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuaW1nLmltYWdlLWNyb3NzLWltYWdlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cblxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uYWRkLWFnZW50LXRvcC1oZWFkaW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG5cbi5hZGRfbW9yZV9idXR0b257XG4gICAgcGFkZGluZzogMC43ZW0gIWltcG9ydGFudDtcbn1cbmltZy5zZXJhY2gtaWNvbi1pbWFnZSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG4uc2VhcmNoLWljb24ge1xuICAgIG1hcmdpbi1sZWZ0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cblxuLmFnZW50LXRhYjpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi51c2VyLXRhYjpob3ZlcntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5zcGFuLmxpbmUtaGVpZ2h0IHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjQzFCQkJCO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG59XG5pbWcuZG93bi1zaWRlLWFycm93IHtcbiAgICAvKiBoZWlnaHQ6IDEuNXZoOyAqL1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgIHdpZHRoOiAxZW07XG59XG4uY2hlY2tib3gtaW1hZ2Uge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmZvcm0uZXhhbXBsZS1mb3JtIHtcbiAgICBtYXJnaW4tYm90dG9tOiAtMWVtO1xufVxuLnNlYXJjaC1pY29uOmhvdmVyXG57XG4gICAgY3Vyc29yOnBvaW50ZXI7XG59XG5cblxuXG4uaW5uZXItam9iLXRpdGxlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICB3aWR0aDogMjAwcHg7XG4gICAgaGVpZ2h0OiAyMDBweDtcbiAgICBvdmVyZmxvdzogb3ZlcmxheTtcbn1cbi5qb2ItdGl0bGUtY29udGVudCB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDo1MDA7XG59XG4ub3ZlcmxheS1ibGFjay1iYWNrIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuLnNlbGVjdC1qb2ItdGl0bGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuaW1nLnNlcmFjaC1pY29uLWltYWdlLWpvYi10aXRsZSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG4uc2VsY3Qtam9iLXRpdGxlLXRleHRcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6NTAwO1xuICAgIGZvbnQtc2l6ZTogMTZweDtcbn1cbi50ZXh0LWhlYWRpbmctdGFiLWNvbnRlbnQ6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn1cbi5zZWxlY3Qtam9iLXRpdGxlLWltYWdlLWNsb3NlOmhvdmVyXG57XG4gICAgY3Vyc29yOnBvaW50ZXI7XG59XG4uam9iLXRpdGxlLWNvbnRlbnQ6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn0iXX0= */";
     /***/
   },
 
@@ -2332,54 +5735,286 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
     /*! ../admin-panel/admin-panel.service.ts.service */
     "./src/app/AdminPanel/admin-panel/admin-panel.service.ts.service.ts");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var _admin_auth_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
+    /*! ../admin.auth.service */
+    "./src/app/AdminPanel/admin.auth.service.ts");
+    /* harmony import */
+
+
+    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../../Misc/alertFormdialog/alertFormdialog.component */
+    "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/material */
+    "./node_modules/@angular/material/esm2015/material.js");
+    /* harmony import */
+
+
+    var _angular_forms__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/forms */
+    "./node_modules/@angular/forms/fesm2015/forms.js");
 
     var UsersAgentTabComponent = /*#__PURE__*/function () {
-      function UsersAgentTabComponent(adminPanelService) {
+      function UsersAgentTabComponent(adminPanelService, AdminAuthService, dialog) {
         _classCallCheck(this, UsersAgentTabComponent);
 
         this.adminPanelService = adminPanelService;
+        this.AdminAuthService = AdminAuthService;
+        this.dialog = dialog;
         this.allUser = [];
         this.allAgent = [];
         this.allUserDetails = [];
+        this.usersTab = true;
+        this.addNewUser = false;
+        this.hide = true;
+        this.Type = "User";
+        this.dustbin = false;
+        this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
+        this.options = [];
+        this.agentFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
+        this.agentOptions = [];
+        this.crossSearch = false;
+        this.overLayJobTitle = false;
+        this.jobTitleSearch = false;
+        this.asc = [];
       }
 
       _createClass(UsersAgentTabComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
+          var _this46 = this;
+
           this.getUser = JSON.parse(localStorage.getItem("user"));
+          document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
           this.getUserDetails();
           this.getCountUser();
           this.getAllUsers();
+          this.retrieveTutorials();
+          this.filteredOptions = this.myControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (value) {
+            return _this46._filter(value);
+          }));
+          this.agentfilteredOptions = this.agentFormControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (value) {
+            return _this46._agent(value);
+          }));
+        }
+      }, {
+        key: "_filter",
+        value: function _filter(value) {
+          var filterValue = value;
+          return this.options.filter(function (option) {
+            return option.indexOf(filterValue) === 0;
+          });
+        }
+      }, {
+        key: "_agent",
+        value: function _agent(value) {
+          var filterValue = value;
+          return this.agentOptions.filter(function (option) {
+            return option.indexOf(filterValue) === 0;
+          });
+        }
+      }, {
+        key: "deleteMultiple",
+        value: function deleteMultiple(value) {
+          console.log(value);
+          this.adminPanelService.multipledeleteUser(value);
+        }
+      }, {
+        key: "getValue",
+        value: function getValue(value) {
+          this.dustbin = true;
+          this.deleteMultiple(value);
+        }
+      }, {
+        key: "showJobTiltle",
+        value: function showJobTiltle(item) {
+          var _this47 = this;
+
+          this.jobTitleSearch = true;
+          this.overLayJobTitle = false;
+          this.tutorials = [];
+          this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
+            return changes.map(function (c) {
+              return Object.assign({
+                id: c.payload.doc.id
+              }, c.payload.doc.data());
+            });
+          })).subscribe(function (data) {
+            _this47.AllAgentJob = data;
+            data.forEach(function (element) {
+              if (element.jobtitle == item) {
+                _this47.tutorials.push(element);
+              }
+            });
+          });
+        }
+      }, {
+        key: "overLayJob",
+        value: function overLayJob() {
+          this.overLayJobTitle = true;
+        }
+      }, {
+        key: "closeroverLayJob",
+        value: function closeroverLayJob() {
+          this.overLayJobTitle = false;
+        }
+      }, {
+        key: "removeAgentSearch",
+        value: function removeAgentSearch() {
+          this.searchEmail = null;
+          this.crossSearch = false;
+          this.retrieveTutorials();
+          this.getCountUser();
+        }
+      }, {
+        key: "removeUserSearch",
+        value: function removeUserSearch() {
+          this.searchEmail = null;
+          this.crossSearch = false;
+          this.retrieveTutorials();
+          this.getCountUser();
+        }
+      }, {
+        key: "getGentSearchValue",
+        value: function getGentSearchValue() {
+          var _this48 = this;
+
+          this.crossSearch = true;
+          this.tutorials = [];
+          this.allAgent = [];
+          this.adminPanelService.getAllUser().then(function (element) {
+            element.forEach(function (elements) {
+              if (elements.data().UserType == "Agent" && elements.data().email == _this48.searchEmail) {
+                _this48.allAgent.push(elements.data());
+              }
+            });
+          });
+          this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
+            return changes.map(function (c) {
+              return Object.assign({
+                id: c.payload.doc.id
+              }, c.payload.doc.data());
+            });
+          })).subscribe(function (data) {
+            data.forEach(function (element) {
+              if (element.email == _this48.searchEmail) {
+                _this48.tutorials.push(element);
+              }
+            });
+          });
+        }
+      }, {
+        key: "getSearchValue",
+        value: function getSearchValue() {
+          var _this49 = this;
+
+          this.crossSearch = true;
+          this.allUser = [];
+          this.adminPanelService.getAllUser().then(function (element) {
+            element.forEach(function (elements) {
+              if (elements.data().UserType != "Agent" && elements.data().email == _this49.searchEmail) {
+                _this49.allUser.push({
+                  detail: elements.data(),
+                  uid: elements.data().uid
+                });
+              }
+            });
+          });
+        }
+      }, {
+        key: "agentascDesc",
+        value: function agentascDesc() {
+          this.tutorials.sort(function (a, b) {
+            return 0 - (a.fullname > b.fullname ? -1 : 1);
+          });
+        }
+      }, {
+        key: "ascDesc",
+        value: function ascDesc() {
+          this.allUser.sort(function (a, b) {
+            return 0 - (a.detail.uid > b.detail.Name ? -1 : 1);
+          });
+        }
+      }, {
+        key: "deleteUser",
+        value: function deleteUser(uid) {
+          var _this50 = this;
+
+          this.adminPanelService.deleteUser(uid).then(function (data) {
+            var dialogRef = _this50.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+              data: {
+                message: "User Deleted"
+              }
+            });
+          });
+          this.allUser = [];
+          this.getCountUser();
+        }
+      }, {
+        key: "deleteAgent",
+        value: function deleteAgent(uid) {
+          var _this51 = this;
+
+          this.adminPanelService.deleteAgent(uid).then(function (data) {
+            _this51.deleteUser(uid);
+          });
+        }
+      }, {
+        key: "addUserPopup",
+        value: function addUserPopup() {
+          this.addNewUser = true;
+        }
+      }, {
+        key: "addUserPopupClose",
+        value: function addUserPopupClose() {
+          this.addNewUser = false;
         }
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this3 = this;
+          var _this52 = this;
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this3.name = element.data().Name;
-              _this3.image = element.data().Image;
+              _this52.name = element.data().Name;
+              _this52.image = element.data().Image;
             });
           }
         }
       }, {
         key: "getCountUser",
         value: function getCountUser() {
-          var _this4 = this;
+          var _this53 = this;
 
-          this.adminPanelService.getAllUser().then(function (element) {
-            element.forEach(function (elements) {
+          this.allUser = [];
+          this.allAgent = [];
+          this.crossSearch = false;
+          this.adminPanelService.getAllUser().then(function (data) {
+            data.forEach(function (elements) {
               if (elements.data().UserType != "Agent") {
-                _this4.allUser.push({
+                _this53.allUser.push({
                   detail: elements.data(),
                   uid: elements.data().uid
                 });
+
+                _this53.options.push(elements.data().email);
               }
 
               if (elements.data().UserType == "Agent") {
-                _this4.allAgent.push(elements.data());
+                _this53.allAgent.push(elements.data());
               }
             });
           });
@@ -2387,11 +6022,59 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllUsers",
         value: function getAllUsers() {
-          var _this5 = this;
+          var _this54 = this;
 
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
-              _this5.allUserDetails.push(elements.data());
+              _this54.allUserDetails.push(elements.data());
+            });
+          });
+        }
+      }, {
+        key: "retrieveTutorials",
+        value: function retrieveTutorials() {
+          var _this55 = this;
+
+          this.jobTitleSearch = false;
+          this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
+            return changes.map(function (c) {
+              return Object.assign({
+                id: c.payload.doc.id
+              }, c.payload.doc.data());
+            });
+          })).subscribe(function (data) {
+            _this55.tutorials = data;
+            _this55.AllAgentJob = data;
+            data.forEach(function (element) {
+              _this55.agentOptions.push(element.email);
+            });
+          });
+        }
+      }, {
+        key: "activeUserAgentTab",
+        value: function activeUserAgentTab() {
+          this.usersTab = false;
+          document.getElementById("agent-tab").style.borderBottom = "2px solid #000000";
+          document.getElementById("users-tab").style.borderBottom = "none";
+        }
+      }, {
+        key: "activeUserTab",
+        value: function activeUserTab() {
+          this.usersTab = true;
+          document.getElementById("agent-tab").style.borderBottom = "none";
+          document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
+        }
+      }, {
+        key: "createUser",
+        value: function createUser(Name, email, password, Type) {
+          var _this56 = this;
+
+          console.log(Name, email, password, Type);
+          this.AdminAuthService.adminSignUp(Name, email, password, Type).then(function (data) {
+            var dialogRef = _this56.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+              data: {
+                message: "Account Created and Verification Email send"
+              }
             });
           });
         }
@@ -2403,6 +6086,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     UsersAgentTabComponent.ctorParameters = function () {
       return [{
         type: _admin_panel_admin_panel_service_ts_service__WEBPACK_IMPORTED_MODULE_2__["AdminPanelService"]
+      }, {
+        type: _admin_auth_service__WEBPACK_IMPORTED_MODULE_4__["AdminAuthService"]
+      }, {
+        type: _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatDialog"]
       }];
     };
 
@@ -2413,7 +6100,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.html"))["default"],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./users-agent-tab.component.css */
-      "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.css"))["default"]]
+      "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
     })], UsersAgentTabComponent);
     /***/
   },
@@ -2434,7 +6123,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1lZGl0LXBhZ2UvdXNlcnMtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7SUFDbEIsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUNBOztBQUVBLGNBQWM7QUFDZCxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGVBQWU7QUFDZjs7QUFDQTtJQUNJLFdBQVc7SUFDWCxtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsV0FBVztJQUNYLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxlQUFlO0FBQ25COztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixnQ0FBZ0M7SUFDaEMsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvdXNlcnMtZWRpdC1wYWdlL3VzZXJzLWVkaXQtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG4gICAgcGFkZGluZy10b3A6IDh2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuXG4uYWRkX21vcmVfYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm9yZGVyLXJhZGl1czogMTFweDtcbiAgICBmb250LXNpemU6IDE1cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxZW07XG59XG4udG9wLWJhci1oZWFkZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuLnRvcC1iYXItdXNlci1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xuICBjb2xvcjogIzBGM0M3Mztcbn1cbi5sb3dlci10ZXh0LWhlYWRpbmdcbntcbmNvbG9yOiAjMUVBQUZBO1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcbmZvbnQtc2l6ZTogMjBweDtcbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi5sZWZ0LWNvbnRhaW5lci13cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG5cbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgcGFkZGluZzogMC41ZW0gMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG5cbn1cbi50b3AtYmFyLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5yaWdodC10ZXh0LWxlZnQtY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDJlbTtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xufVxuLmFhcm93LWxlZnQtY29udGFpbmVyIHtcbiAgICBmb250LXNpemU6IDEuOWVtO1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG59XG4uZmllbGQtc2V0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZXhhbXBsZS1mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ucHJvZmlsZS1pbmZvLWNhcmQge1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbn1cblxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIHBhZGRpbmc6IDBlbSA1ZW07XG59XG5cbi5wcm9maWxlLWhlYWRpbmcge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICB3aWR0aDogMTF2dztcbiAgICBmb250LXNpemU6IDIwcHg7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1MaXN0aW5nLW1hdC1jYXJkIHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG59Il19 */";
+    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1lZGl0LXBhZ2UvdXNlcnMtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7O0lBRWxCLGlCQUFpQjs7SUFFakIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmOztBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBSUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtEQUFrRDtJQUNsRCxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtBQUNwQjs7QUFhQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0RBQWtEO0lBQ2xELGdCQUFnQjtJQUNoQixlQUFlO0lBQ2Ysd0JBQXdCO0lBQ3hCLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyx1QkFBdUI7QUFDM0I7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsaUJBQWlCO0FBQ3JCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1lZGl0LXBhZ2UvdXNlcnMtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcblxuICAgIHBhZGRpbmctdG9wOiAxMHZoO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDExcHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG59XG5pbWcuaW1hZ2UtcGVvcGxlIHtcbiAgICBoZWlnaHQ6IDV2aDtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC10ZXh0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG5zcGFuLmJ1dHRvbi1zaXplIHtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG4ubGVmdC1jb250YWluZXItd3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDAuNWVtIDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuXG59XG4udG9wLWJhci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucmlnaHQtdGV4dC1sZWZ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5hYXJvdy1sZWZ0LWNvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiAxLjllbTtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG5cblxuLmZpZWxkLXNldCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmV4YW1wbGUtZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG59XG5cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBwYWRkaW5nOiAwZW0gNWVtO1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbiAgICB3aWR0aDogMTF2dztcbiAgICBmb250LXNpemU6IDIwcHg7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1MaXN0aW5nLW1hdC1jYXJkIHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLm1haW4tbGlzdGluZy1jb250YWluZXIge1xuICAgIHBhZGRpbmc6IDJlbSAwZW07XG59XG5zcGFuLmxpbmUtaGVpZ2h0IHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjQzFCQkJCO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG59XG5cblxuXG5cblxuXG5cblxuXG5cblxuXG4udWlkLWNvbnRlbnQge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5jdXJzb3Itc2hvd1xue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuM2ZyIDFmciAxLjJmciAwLjlmciAwLjZmcjtcbiAgICBtYXJnaW4tbGVmdDogMGVtO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICAvKiBtYXJnaW4tYm90dG9tOiAxZW07ICovXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAganVzdGlmeS1pdGVtczogYmFzZWxpbmU7XG59XG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG4iXX0= */";
     /***/
   },
 
@@ -2487,40 +6176,87 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/fesm2015/common.js");
+    /* harmony import */
+
+
+    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    /*! ../../Misc/alertFormdialog/alertFormdialog.component */
+    "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
+    /* harmony import */
+
+
+    var _angular_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    /*! @angular/material */
+    "./node_modules/@angular/material/esm2015/material.js");
 
     var UsersEditPageComponent = /*#__PURE__*/function () {
-      function UsersEditPageComponent(adminPanelService, _Activatedroute, _location) {
+      function UsersEditPageComponent(adminPanelService, _Activatedroute, _location, dialog) {
         _classCallCheck(this, UsersEditPageComponent);
 
         this.adminPanelService = adminPanelService;
         this._Activatedroute = _Activatedroute;
         this._location = _location;
+        this.dialog = dialog;
+        this.BuyerUserDetails = [];
+        this.SellerUserDetails = [];
       }
 
       _createClass(UsersEditPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this6 = this;
+          var _this57 = this;
 
-          this.getUser = JSON.parse(localStorage.getItem("user"));
+          this.user = JSON.parse(localStorage.getItem("user"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this6.UserUid = params.get("uid");
+            _this57.UserUid = params.get("uid");
           });
           this.getUserDetails();
           this.getSelectedUserDetail();
+          this.getBuyerEntries();
+          this.getSellerEnteries();
+        }
+      }, {
+        key: "deleteBuyer",
+        value: function deleteBuyer(uid, docid) {
+          var _this58 = this;
+
+          this.adminPanelService.deleteBuyer(uid, docid).then(function (data) {
+            var dialogRef = _this58.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+              data: {
+                message: "User Deleted"
+              }
+            });
+          });
+          this.BuyerUserDetails = [];
+          this.getBuyerEntries();
+        }
+      }, {
+        key: "deleteSeller",
+        value: function deleteSeller(uid, docid) {
+          var _this59 = this;
+
+          this.adminPanelService.deleteSeller(uid, docid).then(function (data) {
+            var dialogRef = _this59.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+              data: {
+                message: "User Deleted"
+              }
+            });
+          });
+          this.SellerUserDetails = [];
+          this.getSellerEnteries();
         }
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this7 = this;
+          var _this60 = this;
 
-          if (this.getUser != null) {
-            this.uid = this.getUser.uid;
+          if (this.user != null) {
+            this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this7.name = element.data().Name;
-              _this7.image = element.data().Image;
+              _this60.username = element.data().Name;
+              _this60.image = element.data().Image;
             });
           }
         }
@@ -2532,40 +6268,127 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSelectedUserDetail",
         value: function getSelectedUserDetail() {
-          var _this8 = this;
+          var _this61 = this;
 
           this.adminPanelService.getUser(this.UserUid).then(function (user) {
-            _this8.username = user.data().Name;
-            _this8.email = user.data().email;
+            _this61.Name = user.data().Name;
+            _this61.email = user.data().email;
 
             if (user.data().title != null) {
-              _this8.title = user.data().title;
+              _this61.title = user.data().title;
             }
 
             if (user.data().DOB != null) {
-              _this8.DOB = user.data().DOB.toDate();
+              _this61.DOB = user.data().DOB.toDate();
             }
 
             if (user.data().Phone != null) {
-              _this8.Phone = user.data().Phone;
+              _this61.Phone = user.data().Phone;
             }
 
             if (user.data().Currentpostcode != null) {
-              _this8.Currentpostcode = user.data().Currentpostcode;
+              _this61.Currentpostcode = user.data().Currentpostcode;
             }
 
             if (user.data().Currentstate != null) {
-              _this8.Currentstate = user.data().Currentstate;
+              _this61.Currentstate = user.data().Currentstate;
             }
 
             if (user.data().CurrentTowncity != null) {
-              _this8.CurrentTowncity = user.data().CurrentTowncity;
+              _this61.CurrentTowncity = user.data().CurrentTowncity;
             }
 
             if (user.data().Currentaddress != null) {
-              _this8.Currentaddress = user.data().Currentaddress;
+              _this61.Currentaddress = user.data().Currentaddress;
             }
           });
+        }
+      }, {
+        key: "getBuyerEntries",
+        value: function getBuyerEntries() {
+          var _this62 = this;
+
+          this.adminPanelService.getBuyerEntries(this.UserUid).then(function (user) {
+            user.forEach(function (UserDetail) {
+              _this62.BuyerUserDetails.push({
+                detail: UserDetail.data(),
+                id: UserDetail.id
+              });
+            });
+          });
+        }
+      }, {
+        key: "getSellerEnteries",
+        value: function getSellerEnteries() {
+          var _this63 = this;
+
+          this.adminPanelService.getSellerEntries(this.UserUid).then(function (user) {
+            user.forEach(function (UserDetail) {
+              _this63.SellerUserDetails.push({
+                detail: UserDetail.data(),
+                id: UserDetail.id
+              });
+            });
+          });
+        }
+      }, {
+        key: "userDetails",
+        value: function userDetails() {
+          this.user.uid = this.UserUid;
+          this.user.Name = this.Name;
+          this.user.email = this.email;
+
+          if (this.title != undefined) {
+            this.user.title = this.title;
+          } else {
+            this.user.title = null;
+          }
+
+          if (this.DOB != undefined) {
+            this.user.DOB = this.DOB;
+          } else {
+            this.user.DOB = null;
+          }
+
+          if (this.Phone != undefined) {
+            this.user.Phone = this.Phone;
+          } else {
+            this.user.Phone = null;
+          }
+
+          if (this.title != undefined) {
+            this.user.title = this.title;
+          } else {
+            this.user.title = null;
+          }
+
+          if (this.Currentaddress != undefined) {
+            this.user.Currentaddress = this.Currentaddress;
+          } else {
+            this.user.Currentaddress = null;
+          }
+
+          if (this.Currentpostcode != undefined) {
+            this.user.Currentpostcode = this.Currentpostcode;
+          } else {
+            this.user.Currentpostcode = null;
+          }
+
+          console.log(this.Currentstate);
+
+          if (this.Currentstate != undefined) {
+            this.user.Currentstate = this.Currentstate;
+          } else {
+            this.user.Currentstate = null;
+          }
+
+          if (this.CurrentTowncity != undefined) {
+            this.user.CurrentTowncity = this.CurrentTowncity;
+          } else {
+            this.user.CurrentTowncity = null;
+          }
+
+          this["return"] = this.adminPanelService.userupate(this.user).then(function (data) {});
         }
       }]);
 
@@ -2579,6 +6402,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]
       }, {
         type: _angular_common__WEBPACK_IMPORTED_MODULE_4__["Location"]
+      }, {
+        type: _angular_material__WEBPACK_IMPORTED_MODULE_6__["MatDialog"]
       }];
     };
 
@@ -2589,7 +6414,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/users-edit-page/users-edit-page.component.html"))["default"],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./users-edit-page.component.css */
-      "./src/app/AdminPanel/users-edit-page/users-edit-page.component.css"))["default"]]
+      "./src/app/AdminPanel/users-edit-page/users-edit-page.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
     })], UsersEditPageComponent);
     /***/
   },
@@ -2853,30 +6680,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this9 = this;
+          var _this64 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this9.imageUrl = element.data().BannerImageUrl;
-              _this9.secondImageUrl = element.data().SecondBannerImage;
-              _this9.SecondImageText = element.data().SecondBannerText;
-              _this9.Step1Image = element.data().Step1Image;
-              _this9.Step2Image = element.data().Step2Image;
-              _this9.step3Image = element.data().Step3Image;
-              _this9.Step1TExt = element.data().Step1ImageText;
-              _this9.Step2Text = element.data().Step2ImageText;
-              _this9.step3Text = element.data().Step3ImageText;
+              _this64.imageUrl = element.data().BannerImageUrl;
+              _this64.secondImageUrl = element.data().SecondBannerImage;
+              _this64.SecondImageText = element.data().SecondBannerText;
+              _this64.Step1Image = element.data().Step1Image;
+              _this64.Step2Image = element.data().Step2Image;
+              _this64.step3Image = element.data().Step3Image;
+              _this64.Step1TExt = element.data().Step1ImageText;
+              _this64.Step2Text = element.data().Step2ImageText;
+              _this64.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this10 = this;
+          var _this65 = this;
 
           this.HomeService.getBlogs(1).then(function (res) {
             res.forEach(function (element) {
-              _this10.homePageBlogs.push(element.data());
+              _this65.homePageBlogs.push(element.data());
             });
           });
         }
@@ -2894,33 +6721,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this11 = this;
+          var _this66 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this11.isLoading = false;
+            _this66.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this12 = this;
+          var _this67 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this12.isLoading = false;
-            _this12.isLoggedIn = true;
+            _this67.isLoading = false;
+            _this67.isLoggedIn = true;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this13 = this;
+          var _this68 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this13.isLoading = false;
-            _this13.isLoggedIn = true;
+            _this68.isLoading = false;
+            _this68.isLoggedIn = true;
           });
         }
       }, {
@@ -2943,24 +6770,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this14 = this;
+          var _this69 = this;
 
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this14.listingBuyers.push(element.data());
+              _this69.listingBuyers.push(element.data());
             });
 
-            _this14.HomeService.getlistingseller(_this14.uid).then(function (res) {
+            _this69.HomeService.getlistingseller(_this69.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this14.listingSeller.push(elements.data());
+                _this69.listingSeller.push(elements.data());
               });
-              _this14.checkNumberNestimates = _this14.listingBuyers.length + _this14.listingSeller.length;
+              _this69.checkNumberNestimates = _this69.listingBuyers.length + _this69.listingSeller.length;
 
-              if (_this14.checkNumberNestimates > 0) {
-                _this14.appMatches = true;
-                _this14.isLoggedIn = true;
+              if (_this69.checkNumberNestimates > 0) {
+                _this69.appMatches = true;
+                _this69.isLoggedIn = true;
               } else {
-                _this14.isLoggedIn = false;
+                _this69.isLoggedIn = false;
               }
             });
           });
@@ -3088,34 +6915,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this15 = this;
+          var _this70 = this;
 
           this.route.params.subscribe(function (params) {
-            _this15.useCase = params["use"];
+            _this70.useCase = params["use"];
 
-            if (_this15.useCase == "buy") {
-              _this15.activeTab = 0;
-              _this15.buy = true;
-              _this15.sell = false;
-            } else if (_this15.useCase == "sell") {
-              _this15.activeTab = 1;
-              _this15.buy = false;
-              _this15.sell = true;
+            if (_this70.useCase == "buy") {
+              _this70.activeTab = 0;
+              _this70.buy = true;
+              _this70.sell = false;
+            } else if (_this70.useCase == "sell") {
+              _this70.activeTab = 1;
+              _this70.buy = false;
+              _this70.sell = true;
             }
 
-            console.log(_this15.useCase);
+            console.log(_this70.useCase);
           });
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this15.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this15.userData));
+              _this70.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this70.userData));
 
-              _this15.LoggedIn();
+              _this70.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this15.LoggedOut();
+              _this70.LoggedOut();
             }
           });
         }
@@ -3388,36 +7215,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerMatcheListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this71 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getHomeMatchesPageImage().subscribe(function (data) {
-            _this16.homePageImage = data;
-            _this16.imageUrl = _this16.homePageImage[0].BuyerSellerTopImage.url;
+            _this71.homePageImage = data;
+            _this71.imageUrl = _this71.homePageImage[0].BuyerSellerTopImage.url;
           });
           this.HttpService.getTextalreadyexpressed().subscribe(function (expressed) {
-            _this16.alreadyExpressed = expressed[0].ExpressedMatches;
+            _this71.alreadyExpressed = expressed[0].ExpressedMatches;
           });
           this.buyerEntry = JSON.parse(localStorage.getItem('buyerUserDetails'));
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this16.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "").trim();
-            _this16.Property_Type = params.get("PropertyType").trim();
-            _this16.Looking_Town = params.get("LookingTown").trim();
-            _this16.Min_Amount = params.get("MinAmount").replace(/,/g, "").trim();
-            _this16.Max_Amount = params.get("MaxAmount").replace(/,/g, "").trim();
-            _this16.New_latitude = params.get("latitude").trim();
-            _this16.New_longitude = params.get("longitude").trim();
-            _this16.newUser = params.get("newUser").trim();
-            _this16.Property_For = params.get("PropertyFor").trim();
-            _this16.LookingStreetname = params.get("LookingStreetname").trim();
-            _this16.Conditions = params.get("Conditions").trim();
-            _this16.FinancialPosition = params.get("FinancialPosition").trim();
-            _this16.Validity = params.get("Validity").trim();
-            _this16.Position = params.get("Position").trim();
-            _this16.UserId = params.get("UserId").trim();
-            _this16.ChainStatus = params.get("ChainStatus").trim();
-            _this16.New_id = params.get("id");
+            _this71.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "").trim();
+            _this71.Property_Type = params.get("PropertyType").trim();
+            _this71.Looking_Town = params.get("LookingTown").trim();
+            _this71.Min_Amount = params.get("MinAmount").replace(/,/g, "").trim();
+            _this71.Max_Amount = params.get("MaxAmount").replace(/,/g, "").trim();
+            _this71.New_latitude = params.get("latitude").trim();
+            _this71.New_longitude = params.get("longitude").trim();
+            _this71.newUser = params.get("newUser").trim();
+            _this71.Property_For = params.get("PropertyFor").trim();
+            _this71.LookingStreetname = params.get("LookingStreetname").trim();
+            _this71.Conditions = params.get("Conditions").trim();
+            _this71.FinancialPosition = params.get("FinancialPosition").trim();
+            _this71.Validity = params.get("Validity").trim();
+            _this71.Position = params.get("Position").trim();
+            _this71.UserId = params.get("UserId").trim();
+            _this71.ChainStatus = params.get("ChainStatus").trim();
+            _this71.New_id = params.get("id");
           });
 
           if (this.newUser == "false") {
@@ -3466,76 +7293,76 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this16.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this16.maxAmount);
-              _this16.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this16.less);
-              _this16.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this16.more); //Remove Postcode Spaces
+              _this71.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this71.maxAmount);
+              _this71.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this71.less);
+              _this71.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this71.more); //Remove Postcode Spaces
 
-              _this16.removespace = item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5);
-              _this16.listing = _this16.Look_postcodes;
-              _this16.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this71.removespace = item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5);
+              _this71.listing = _this71.Look_postcodes;
+              _this71.amount = item.data().MaxAmount.replace(/,/g, "");
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this16.Look_postcodes && item.data().PropertyFor == _this16.Look_PropertyFor && item.data().PropertyType == _this16.Look_propertytype && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this16.distanceInKm = _this16.getDistanceFromLatLonInKm(_this16.Look_latitude, _this16.Look_longitude, item.latitude, item.longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().PropertyType == _this71.Look_propertytype && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.latitude, item.longitude);
 
-                _this16.matchedProperties.push({
+                _this71.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this16.distanceInKm * 1 / 1.609344
+                  distance: _this71.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this16.Look_postcodes && item.data().PropertyFor == _this16.Look_PropertyFor && item.data().PropertyType == _this16.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this16.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this16.distanceInKm = _this16.getDistanceFromLatLonInKm(_this16.Look_latitude, _this16.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().PropertyType == _this71.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this71.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this16.unmatchedProperties.push({
+                _this71.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this16.distanceInKm * 1 / 1.609344
+                  distance: _this71.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this16.Look_postcodes && item.data().PropertyFor == _this16.Look_PropertyFor && item.data().PropertyType == _this16.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this16.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this16.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this16.distanceInKm = _this16.getDistanceFromLatLonInKm(_this16.Look_latitude, _this16.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().PropertyType == _this71.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this71.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this71.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this16.unmatchedPriceLogic.push({
+                _this71.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this16.distanceInKm * 1 / 1.609344
+                  distance: _this71.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this16.Look_postcodes && item.data().PropertyFor == _this16.Look_PropertyFor && item.data().PropertyType != _this16.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this16.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this16.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this16.distanceInKm = _this16.getDistanceFromLatLonInKm(_this16.Look_latitude, _this16.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().PropertyType != _this71.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this71.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this71.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this16.unmatchedallProperty.push({
+                _this71.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this16.distanceInKm * 1 / 1.609344
+                  distance: _this71.distanceInKm * 1 / 1.609344
                 });
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this16.Look_postcodes && item.data().PropertyFor == _this16.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this16.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this16.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this16.distanceInKm = _this16.getDistanceFromLatLonInKm(_this16.Look_latitude, _this16.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this71.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this71.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this16.lookTown.push({
+                _this71.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this16.distanceInKm * 1 / 1.609344
+                  distance: _this71.distanceInKm * 1 / 1.609344
                 });
               }
 
-              _this16.sbuyerLookTown = _this16.lookTown;
-              _this16.buyerLookTown = _this16.sbuyerLookTown.detail;
+              _this71.sbuyerLookTown = _this71.lookTown;
+              _this71.buyerLookTown = _this71.sbuyerLookTown.detail;
             });
 
-            _this16.unmatchedProperties.sort(_this16.compare);
+            _this71.unmatchedProperties.sort(_this71.compare);
           });
           this.getPropertyIds();
           this.getExpressedListingIds();
@@ -3691,12 +7518,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this17 = this;
+          var _this72 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this17.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this17.distinctExpressedUid.push(item.data().propertyId);
+              if (_this72.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this72.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -3957,56 +7784,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerSelectedPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this18 = this;
+          var _this73 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this18.Lookingpostcode = params.get("Lookingpostcode");
-            _this18.Lookingstate = params.get("Lookingstate");
-            _this18.LookingTown = params.get("LookingTown");
-            _this18.norooms = params.get("norooms");
-            _this18.PropertyCondition = params.get("PropertyCondition");
-            _this18.MaxAmount = params.get("MaxAmount");
-            _this18.LookingAddress = params.get("LookingAddress");
-            _this18.ownership = params.get("ownership");
-            _this18.PropertyType = params.get("PropertyType").replace(/\s/g, "");
-            _this18.features = params.get("features");
-            _this18.UserId = params.get("UserId").replace(/\s/g, "");
-            _this18.MinAmount = params.get("MinAmount");
-            _this18.Maxbathrooms = params.get("Maxbathrooms");
-            _this18.Maxrooms = params.get("Maxrooms");
-            _this18.Maxreception = params.get("Maxreception");
-            _this18.propertyId = params.get("propertyId").trim();
-            _this18.expressed = params.get("expressed");
-            _this18.propertyFor = params.get("PropertyFor"); //Buyer Params
+            _this73.Lookingpostcode = params.get("Lookingpostcode");
+            _this73.Lookingstate = params.get("Lookingstate");
+            _this73.LookingTown = params.get("LookingTown");
+            _this73.norooms = params.get("norooms");
+            _this73.PropertyCondition = params.get("PropertyCondition");
+            _this73.MaxAmount = params.get("MaxAmount");
+            _this73.LookingAddress = params.get("LookingAddress");
+            _this73.ownership = params.get("ownership");
+            _this73.PropertyType = params.get("PropertyType").replace(/\s/g, "");
+            _this73.features = params.get("features");
+            _this73.UserId = params.get("UserId").replace(/\s/g, "");
+            _this73.MinAmount = params.get("MinAmount");
+            _this73.Maxbathrooms = params.get("Maxbathrooms");
+            _this73.Maxrooms = params.get("Maxrooms");
+            _this73.Maxreception = params.get("Maxreception");
+            _this73.propertyId = params.get("propertyId").trim();
+            _this73.expressed = params.get("expressed");
+            _this73.propertyFor = params.get("PropertyFor"); //Buyer Params
 
-            _this18.Look_postcodes = params.get("Look_postcodes");
-            _this18.Look_streetName = params.get("Look_Streetname");
-            _this18.Look_condition = params.get("Look_condition");
-            _this18.Look_ChaonStatus = params.get("Look_chainstatus");
-            _this18.Look_Position = params.get("Look_FinancialPosition");
-            _this18.Look_Minamount = params.get("Look_minamount");
-            _this18.Look_Maxamount = params.get("Look_maxamount");
-            _this18.Look_Validity = params.get("Look_Validity");
-            _this18.Look_PropertyType = params.get("Look_propertytype");
-            _this18.Look_Position = params.get("Look_Position");
-            _this18.Look_UserId = params.get("Look_UserId");
-            _this18.Look_PropertyFor = params.get("Look_PropertyFor");
-            _this18.Look_id = params.get("New_id");
+            _this73.Look_postcodes = params.get("Look_postcodes");
+            _this73.Look_streetName = params.get("Look_Streetname");
+            _this73.Look_condition = params.get("Look_condition");
+            _this73.Look_ChaonStatus = params.get("Look_chainstatus");
+            _this73.Look_Position = params.get("Look_FinancialPosition");
+            _this73.Look_Minamount = params.get("Look_minamount");
+            _this73.Look_Maxamount = params.get("Look_maxamount");
+            _this73.Look_Validity = params.get("Look_Validity");
+            _this73.Look_PropertyType = params.get("Look_propertytype");
+            _this73.Look_Position = params.get("Look_Position");
+            _this73.Look_UserId = params.get("Look_UserId");
+            _this73.Look_PropertyFor = params.get("Look_PropertyFor");
+            _this73.Look_id = params.get("New_id");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this18.notificationOverlay = data;
-            _this18.notificationContent = _this18.notificationOverlay[0].BuyerMatchesExpressInterestNotifcation;
+            _this73.notificationOverlay = data;
+            _this73.notificationContent = _this73.notificationOverlay[0].BuyerMatchesExpressInterestNotifcation;
           });
         } //Create Database BuyerMatches
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this19 = this;
+          var _this74 = this;
 
           this.matchesBuyer = {
             SellerDetail: this.sellerDetails,
@@ -4020,8 +7847,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isBuyerSelected = true;
           this["return"] = this.Selected_propertydetail_Service.matchesBuyerCreate(this.uid, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this19.isBuyerSelected = false;
-              _this19.overlay = false;
+              _this74.isBuyerSelected = false;
+              _this74.overlay = false;
             }
           });
           this.matchesSeller = {
@@ -4037,11 +7864,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isBuyerSelected = true;
           this["return"] = this.Selected_propertydetail_Service.matchesSellerCreate(this.UserId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this19.isBuyerSelected = false;
-              _this19.datastored = true;
-              _this19.express = false;
+              _this74.isBuyerSelected = false;
+              _this74.datastored = true;
+              _this74.express = false;
 
-              _this19.createSellerNotification();
+              _this74.createSellerNotification();
             }
           });
           this.isBuyerSelected = true;
@@ -4050,15 +7877,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this20 = this;
+          var _this75 = this;
 
           this["return"] = this.Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this20.isBuyerSelected = false;
-              _this20.datastored = true;
-              _this20.express = false;
+              _this75.isBuyerSelected = false;
+              _this75.datastored = true;
+              _this75.express = false;
 
-              _this20.backClicked();
+              _this75.backClicked();
             }
           });
         }
@@ -4093,30 +7920,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this21 = this;
+          var _this76 = this;
 
           this.Selected_propertydetail_Service.getSeller(this.UserId, this.propertyId).then(function (res) {
-            _this21.sellerDetails = res.data();
-            _this21.userName = res.data().username;
-            _this21.usertitle = res.data().usertitle;
-            _this21.PropertyFor = res.data().PropertyFor;
-            _this21.price = res.data().MaxAmount;
-            _this21.postcode = res.data().Lookingpostcode;
-            _this21.Streetname = res.data().LookingStreetname;
-            _this21.PropertyTypes = res.data().PropertyType;
-            _this21.Maxroom = res.data().Maxrooms;
-            _this21.ownerships = res.data().ownership;
-            _this21.Bathrooms = res.data().Maxbathrooms;
-            _this21.Reception = res.data().Maxreception;
+            _this76.sellerDetails = res.data();
+            _this76.userName = res.data().username;
+            _this76.usertitle = res.data().usertitle;
+            _this76.PropertyFor = res.data().PropertyFor;
+            _this76.price = res.data().MaxAmount;
+            _this76.postcode = res.data().Lookingpostcode;
+            _this76.Streetname = res.data().LookingStreetname;
+            _this76.PropertyTypes = res.data().PropertyType;
+            _this76.Maxroom = res.data().Maxrooms;
+            _this76.ownerships = res.data().ownership;
+            _this76.Bathrooms = res.data().Maxbathrooms;
+            _this76.Reception = res.data().Maxreception;
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this22 = this;
+          var _this77 = this;
 
           this.Selected_propertydetail_Service.getBuyerRequirement(this.uid, this.Look_id).then(function (res) {
-            _this22.buyerDetails = res.data();
+            _this77.buyerDetails = res.data();
           });
         }
       }]);
@@ -4233,62 +8060,62 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectedpropertydetailService, [{
         key: "matchesBuyerCreate",
         value: function matchesBuyerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
-            return regeneratorRuntime.wrap(function _callee$(_context) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
+            return regeneratorRuntime.wrap(function _callee16$(_context16) {
               while (1) {
-                switch (_context.prev = _context.next) {
+                switch (_context16.prev = _context16.next) {
                   case 0:
-                    _context.next = 2;
+                    _context16.next = 2;
                     return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context.sent;
-                    return _context.abrupt("return", true);
+                    this["return"] = _context16.sent;
+                    return _context16.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context.stop();
+                    return _context16.stop();
                 }
               }
-            }, _callee, this);
+            }, _callee16, this);
           }));
         }
       }, {
         key: "matchesSellerCreate",
         value: function matchesSellerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
-            return regeneratorRuntime.wrap(function _callee2$(_context2) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee17() {
+            return regeneratorRuntime.wrap(function _callee17$(_context17) {
               while (1) {
-                switch (_context2.prev = _context2.next) {
+                switch (_context17.prev = _context17.next) {
                   case 0:
-                    _context2.next = 2;
+                    _context17.next = 2;
                     return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document seller successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context2.sent;
-                    return _context2.abrupt("return", true);
+                    this["return"] = _context17.sent;
+                    return _context17.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context2.stop();
+                    return _context17.stop();
                 }
               }
-            }, _callee2, this);
+            }, _callee17, this);
           }));
         }
       }, {
         key: "ExpressInterest",
         value: function ExpressInterest(uid, propertyId) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee3() {
-            return regeneratorRuntime.wrap(function _callee3$(_context3) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee18() {
+            return regeneratorRuntime.wrap(function _callee18$(_context18) {
               while (1) {
-                switch (_context3.prev = _context3.next) {
+                switch (_context18.prev = _context18.next) {
                   case 0:
-                    _context3.next = 2;
+                    _context18.next = 2;
                     return this.db.collection("expressInterest").doc(uid).collection("Express").add({
                       propertyId: propertyId
                     }).then(function (data) {
@@ -4296,15 +8123,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     });
 
                   case 2:
-                    this["return"] = _context3.sent;
-                    return _context3.abrupt("return", true);
+                    this["return"] = _context18.sent;
+                    return _context18.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context3.stop();
+                    return _context18.stop();
                 }
               }
-            }, _callee3, this);
+            }, _callee18, this);
           }));
         }
       }, {
@@ -4325,26 +8152,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createNotification",
         value: function createNotification(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee4() {
-            return regeneratorRuntime.wrap(function _callee4$(_context4) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee19() {
+            return regeneratorRuntime.wrap(function _callee19$(_context19) {
               while (1) {
-                switch (_context4.prev = _context4.next) {
+                switch (_context19.prev = _context19.next) {
                   case 0:
-                    _context4.next = 2;
+                    _context19.next = 2;
                     return this.notificationRef.doc(key).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Notifiaction Expressed!");
                     });
 
                   case 2:
-                    this["return"] = _context4.sent;
-                    return _context4.abrupt("return", true);
+                    this["return"] = _context19.sent;
+                    return _context19.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context4.stop();
+                    return _context19.stop();
                 }
               }
-            }, _callee4, this);
+            }, _callee19, this);
           }));
         }
       }, {
@@ -4627,7 +8454,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this23 = this;
+          var _this78 = this;
 
           this.getUser = JSON.parse(localStorage.getItem("user"));
 
@@ -4641,16 +8468,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this23.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this23.userData));
+              _this78.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this78.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this23.LoggedIn();
+              _this78.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this23.LoggedOut();
+              _this78.LoggedOut();
             }
           }); // this.postcodeService.getBlueNotificationContent().subscribe((data) => {
           //   this.notificationOverlay = data
@@ -4669,11 +8496,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this23.lookup(_this23.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this23.data = data;
+              _this78.lookup(_this78.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this78.data = data;
               });
 
-              return _this23.lookup(_this23.listingBuyer.Lookingpostcode);
+              return _this78.lookup(_this78.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -4683,39 +8510,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this23.lookup(_this23.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this23.data = data;
+              _this78.lookup(_this78.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this78.data = data;
               });
 
-              return _this23.lookup(_this23.listingBuyer.Currentpostcode);
+              return _this78.lookup(_this78.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
           }));
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this23.Cpostcode = params.get("Currentpostcode");
-            _this23.Ctown = params.get("CurrentTown");
-            _this23.Cstate = params.get("Currentstate");
-            _this23.Ccountry = params.get("Currentcountry");
-            _this23.Lpostcode = params.get("Lookingpostcode");
-            _this23.Lstreetname = params.get("LookingStreetname");
-            _this23.Ltown = params.get("LookingTown");
-            _this23.Lstate = params.get("Lookingstate");
-            _this23.Lcountry = params.get("Country");
-            _this23.Financial = params.get("FinancialPosition"); //this.Type = params.get("PropertyType");
+            _this78.Cpostcode = params.get("Currentpostcode");
+            _this78.Ctown = params.get("CurrentTown");
+            _this78.Cstate = params.get("Currentstate");
+            _this78.Ccountry = params.get("Currentcountry");
+            _this78.Lpostcode = params.get("Lookingpostcode");
+            _this78.Lstreetname = params.get("LookingStreetname");
+            _this78.Ltown = params.get("LookingTown");
+            _this78.Lstate = params.get("Lookingstate");
+            _this78.Lcountry = params.get("Country");
+            _this78.Financial = params.get("FinancialPosition"); //this.Type = params.get("PropertyType");
 
-            _this23.Minroom = params.get("Roommin");
-            _this23.Maxroom = params.get("Roomsmax");
-            _this23.AmountMin = params.get("MinAmount");
-            _this23.amountmax = params.get("MaxAmount");
-            _this23.offer = params.get("Validity");
-            _this23.bathroommin = params.get("Minbathroom");
-            _this23.bathroommax = params.get("Maxbathroom");
-            _this23.receptionmin = params.get("Minreception");
-            _this23.receptionmax = params.get("Maxreception");
-            _this23.condition = params.get("Conditions");
-            _this23.ownership = params.get("Ownership");
-            _this23.Caddress = params.get("CurrentAddress");
+            _this78.Minroom = params.get("Roommin");
+            _this78.Maxroom = params.get("Roomsmax");
+            _this78.AmountMin = params.get("MinAmount");
+            _this78.amountmax = params.get("MaxAmount");
+            _this78.offer = params.get("Validity");
+            _this78.bathroommin = params.get("Minbathroom");
+            _this78.bathroommax = params.get("Maxbathroom");
+            _this78.receptionmin = params.get("Minreception");
+            _this78.receptionmax = params.get("Maxreception");
+            _this78.condition = params.get("Conditions");
+            _this78.ownership = params.get("Ownership");
+            _this78.Caddress = params.get("CurrentAddress");
           });
 
           if (this.Cpostcode != ":Currentpostcode") {
@@ -4788,7 +8615,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this24 = this;
+          var _this79 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -4796,25 +8623,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this24.uid) {
-                _this24.user.Name = element.data().Name;
-                _this24.user.email = element.data().email;
+              if (element.data().uid == _this79.uid) {
+                _this79.user.Name = element.data().Name;
+                _this79.user.email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this24.user.DOB = element.data().DOB.toDate();
+                  _this79.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this24.user.Phone = element.data().Phone;
-                _this24.user.title = element.data().title;
+                _this79.user.Phone = element.data().Phone;
+                _this79.user.title = element.data().title;
               }
             });
           });
           this.postcodeService.getSignupUpTerms().subscribe(function (data) {
-            _this24.topLine = data[0].TopLine;
-            _this24.secondLine = data[0].SecondSignup;
+            _this79.topLine = data[0].TopLine;
+            _this79.secondLine = data[0].SecondSignup;
           });
           this.postcodeService.getValidityError().subscribe(function (validity) {
-            _this24.validity = validity[0].SigininValidityError;
+            _this79.validity = validity[0].SigininValidityError;
           });
         }
       }, {
@@ -4867,7 +8694,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.titleView.focus();
               document.getElementById("title").style.color = "red";
             } else if (this.user.Name == null) {
-              var _dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef3 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid fulll name"
                 }
@@ -4877,7 +8704,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Name").style.color = "red";
             } else if (this.user.email == null) {
-              var _dialogRef2 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef4 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
@@ -4888,7 +8715,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("email").style.color = "red";
             } else if (this.user.DOB == null) {
-              var _dialogRef3 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef5 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age is required"
                 }
@@ -4900,7 +8727,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("dob").style.color = "red";
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef4 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef6 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age Must be 18+"
                 }
@@ -4912,7 +8739,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("dob").style.color = "red";
             } else if (this.user.Phone == null) {
-              var _dialogRef5 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef7 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid phone number"
                 }
@@ -4925,7 +8752,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("tele").style.color = "red";
             } else if (this.listingBuyer.Currentpostcode == null) {
-              var _dialogRef6 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef8 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Postcode"
                 }
@@ -4939,7 +8766,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Cpost").style.color = "red";
             } else if (postcodeLength.length < 5) {
-              var _dialogRef7 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef9 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Postcode must be atleast 5 characters long"
                 }
@@ -4953,7 +8780,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Cpost").style.color = "red";
             } else if (this.listingBuyer.CurrentTown == null && this.listingBuyer.Currentpostcode != null) {
-              var _dialogRef8 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef10 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Town"
                 }
@@ -4968,7 +8795,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Ctown").style.color = "red";
               document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
             } else if (this.listingBuyer.CurrentAddress == null && this.listingBuyer.CurrentTown != null) {
-              var _dialogRef9 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef11 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Address"
                 }
@@ -4984,7 +8811,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("caddress").style.color = "red";
             } else if (this.listingBuyer.Currentstate == null && this.listingBuyer.CurrentAddress != null) {
-              var _dialogRef10 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef12 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Sate"
                 }
@@ -5001,7 +8828,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("caddress").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("cState").style.color = "red";
             } else if (this.listingBuyer.Currentcountry == null && this.listingBuyer.Currentstate != null) {
-              var _dialogRef11 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef13 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Country"
                 }
@@ -5031,7 +8858,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }
 
               if (this.amounts == false && this.listingBuyer.Currentcountry != null) {
-                var _dialogRef12 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef14 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select propertyFor "
                   }
@@ -5039,7 +8866,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                 document.getElementById("propfor").style.color = "red";
               } else if (this.listingBuyer.Lookingpostcode == null) {
-                var _dialogRef13 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef15 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Postcode"
                   }
@@ -5049,7 +8876,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lookpost").style.color = "red";
               } else if (lookingPostcodeLength.length < 5) {
-                var _dialogRef14 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef16 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Postcode must be atleast 5 characters long"
                   }
@@ -5059,7 +8886,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lookpost").style.color = "red";
               } else if (this.listingBuyer.LookingStreetname == null) {
-                var _dialogRef15 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef17 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Streetname"
                   }
@@ -5070,7 +8897,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lsrname").style.color = "red";
               } else if (this.listingBuyer.LookingTown == null) {
-                var _dialogRef16 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef18 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Town"
                   }
@@ -5082,7 +8909,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lsrname").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("looktow").style.color = "red";
               } else if (this.listingBuyer.Lookingstate == null) {
-                var _dialogRef17 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef19 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter State"
                   }
@@ -5095,7 +8922,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("looktow").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Lookstate").style.color = "red";
               } else if (this.listingBuyer.Country == null) {
-                var _dialogRef18 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef20 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter country"
                   }
@@ -5109,7 +8936,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Lookstate").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lCountry").style.color = "red";
               } else if (this.listingBuyer.ChainStatus == null) {
-                var _dialogRef19 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef21 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select chainstatus"
                   }
@@ -5124,7 +8951,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lCountry").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("chain").style.color = "red";
               } else if (this.listingBuyer.FinancialPosition == null && this.listingBuyer.PropertyFor == "buy") {
-                var _dialogRef20 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef22 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select Financial Position"
                   }
@@ -5140,7 +8967,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("chain").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("finanacial").style.color = "red";
               } else if (this.listingBuyer.PropertyType == null) {
-                var _dialogRef21 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef23 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select Property Type"
                   }
@@ -5157,7 +8984,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("finanacial").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Property-type").style.color = "red";
               } else if (this.listingBuyer.Roommin == null) {
-                var _dialogRef22 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef24 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select No of Rooms"
                   }
@@ -5175,7 +9002,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Property-type").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMin").style.color = "red";
               } else if (this.listingBuyer.Roomsmax == null) {
-                var _dialogRef23 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef25 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select No of Rooms"
                   }
@@ -5194,7 +9021,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMin").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMax").style.color = "red";
               } else if (this.listingBuyer.Roommin != 'Studio' && this.listingBuyer.Roomsmax != 'Studio' && this.listingBuyer.Roommin > this.listingBuyer.Roomsmax) {
-                var _dialogRef24 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef26 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Minimum room must be more than maximum rooms"
                   }
@@ -5212,7 +9039,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMax").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMin").style.color = "red";
               } else if (this.listingBuyer.Roommin != 'Studio' && this.listingBuyer.Roomsmax != 'Studio' && this.listingBuyer.Roomsmax < this.listingBuyer.Roommin) {
-                var _dialogRef25 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef27 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Maximum room must more than minimum rooms"
                   }
@@ -5231,7 +9058,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMin").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMax").style.color = "red";
               } else if (this.listingBuyer.MinAmount == null) {
-                var _dialogRef26 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef28 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MinAmount"
                   }
@@ -5251,7 +9078,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMax").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MinAmount").style.color = "red";
               } else if (this.listingBuyer.MaxAmount == null) {
-                var _dialogRef27 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef29 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select MaxAmount"
                   }
@@ -5274,7 +9101,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MaxAmount").style.color = "red";
               } else if (Min > Max) {
-                var _dialogRef28 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef30 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Minimum amount must be less than maximum amount"
                   }
@@ -5296,7 +9123,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MaxAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MinAmount").style.color = "red";
               } else if (Max < Min) {
-                var _dialogRef29 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef31 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Maximum amount must be more than minimum amount"
                   }
@@ -5318,7 +9145,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MaxAmount").style.color = "red";
               } else if (this.listingBuyer.Validity == null) {
-                var _dialogRef30 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef32 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Validity"
                   }
@@ -5342,7 +9169,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("val").style.color = "red";
               } else if (this.listingBuyer.Minbathroom > this.listingBuyer.Maxbathroom) {
-                var _dialogRef31 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef33 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Minimum number of bathroom must be less than maximum bathroom"
                   }
@@ -5366,7 +9193,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("val").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("minBathroom").style.color = "red";
               } else if (this.listingBuyer.Maxbathroom < this.listingBuyer.Minbathroom) {
-                var _dialogRef32 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef34 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Maximum number of bathroom must be more than minimum bathroom"
                   }
@@ -5391,7 +9218,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("minBathroom").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("maxBathroom").style.color = "red";
               } else if (this.listingBuyer.Minreception > this.listingBuyer.Maxreception) {
-                var _dialogRef33 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef35 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Minimum number of reception must be less than maximum reception"
                   }
@@ -5417,7 +9244,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("maxBathroom").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Minreception").style.color = "red";
               } else if (this.listingBuyer.Maxreception < this.listingBuyer.Minreception) {
-                var _dialogRef34 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef36 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Maximum number of reception must be more than minimum reception"
                   }
@@ -5543,30 +9370,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this25 = this;
+          var _this80 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.postcodeService.getAllUsers(email).subscribe(function (data) {
-              _this25.emailData = data;
+              _this80.emailData = data;
 
-              if (_this25.emailData.length == 1) {
-                _this25.emailField = true;
-                _this25.notValidEmail = false;
+              if (_this80.emailData.length == 1) {
+                _this80.emailField = true;
+                _this80.notValidEmail = false;
 
-                if (_this25.emailData[0].AgentType != null) {
-                  _this25.emailField = false;
-                  _this25.notValidEmail = true;
+                if (_this80.emailData[0].AgentType != null) {
+                  _this80.emailField = false;
+                  _this80.notValidEmail = true;
 
-                  var dialogRef = _this25.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                  var dialogRef = _this80.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as User"
                     }
                   });
                 }
               } else {
-                _this25.notValidEmail = true;
+                _this80.notValidEmail = true;
               }
             });
           } else {
@@ -5588,28 +9415,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "submitBuyer",
         value: function submitBuyer() {
-          var _this26 = this;
+          var _this81 = this;
 
           this.isLoading = true; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this26.postcodeCoordinates = data;
-            _this26.listingBuyer.longitude = _this26.postcodeCoordinates.result.longitude, _this26.listingBuyer.latitude = _this26.postcodeCoordinates.result.latitude, _this26.listingBuyer.UserId = _this26.userData.uid;
-            _this26.isLoading = true;
-            _this26.listingBuyer.username = _this26.user.Name;
-            _this26.listingBuyer.usertitle = _this26.user.title;
-            _this26.listingBuyer.longitude;
-            _this26.listingBuyer.latitude;
-            _this26["return"] = _this26.fillFormsService.createCustomer(_this26.userData.uid, _this26.listingBuyer).then(function (element) {
+            _this81.postcodeCoordinates = data;
+            _this81.listingBuyer.longitude = _this81.postcodeCoordinates.result.longitude, _this81.listingBuyer.latitude = _this81.postcodeCoordinates.result.latitude, _this81.listingBuyer.UserId = _this81.userData.uid;
+            _this81.isLoading = true;
+            _this81.listingBuyer.username = _this81.user.Name;
+            _this81.listingBuyer.usertitle = _this81.user.title;
+            _this81.listingBuyer.longitude;
+            _this81.listingBuyer.latitude;
+            _this81["return"] = _this81.fillFormsService.createCustomer(_this81.userData.uid, _this81.listingBuyer).then(function (element) {
               if (element == true) {
-                localStorage.setItem("buyerUserDetails", JSON.stringify(_this26.listingBuyer));
-                _this26.isLoading = false;
-                _this26.register = false;
+                localStorage.setItem("buyerUserDetails", JSON.stringify(_this81.listingBuyer));
+                _this81.isLoading = false;
+                _this81.register = false;
 
-                var dialogRef = _this26.dialog.open(_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
+                var dialogRef = _this81.dialog.open(_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
                   data: {
                     message: "HelloWorld",
-                    id: _this26.uid,
+                    id: _this81.uid,
                     buttonText: {
                       cancel: "Done"
                     }
@@ -5622,13 +9449,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this27 = this;
+          var _this82 = this;
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.trim()).subscribe(function (data) {
-            _this27.register = true;
+            _this82.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this27.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var dialogRef = _this82.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid postcode"
                 }
@@ -5645,26 +9472,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this28 = this;
+          var _this83 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this28.KnowUser.push(element.data());
+              _this83.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this28.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                var dialogRef = _this83.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this28.isLoading = false;
+                _this83.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this28.authService.SignIn(email, pass).then(function (data) {
-                  _this28.isLoading = false;
+                _this83.authService.SignIn(email, pass).then(function (data) {
+                  _this83.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -5674,11 +9501,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this29 = this;
+          var _this84 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this29.isLoading = false;
+            _this84.isLoading = false;
           });
         } //SignIn Google
 
@@ -5885,53 +9712,53 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FormsService, [{
         key: "notificationCustomer",
         value: function notificationCustomer(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee5() {
-            return regeneratorRuntime.wrap(function _callee5$(_context5) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee20() {
+            return regeneratorRuntime.wrap(function _callee20$(_context20) {
               while (1) {
-                switch (_context5.prev = _context5.next) {
+                switch (_context20.prev = _context20.next) {
                   case 0:
-                    _context5.next = 2;
+                    _context20.next = 2;
                     return this.notificationref.doc(key).collection("").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context5.sent;
-                    return _context5.abrupt("return", true);
+                    this["return"] = _context20.sent;
+                    return _context20.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context5.stop();
+                    return _context20.stop();
                 }
               }
-            }, _callee5, this);
+            }, _callee20, this);
           }));
         } //Create Customer ListingBuyer
 
       }, {
         key: "createCustomer",
         value: function createCustomer(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
-            return regeneratorRuntime.wrap(function _callee6$(_context6) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee21() {
+            return regeneratorRuntime.wrap(function _callee21$(_context21) {
               while (1) {
-                switch (_context6.prev = _context6.next) {
+                switch (_context21.prev = _context21.next) {
                   case 0:
-                    _context6.next = 2;
+                    _context21.next = 2;
                     return this.customersRef.doc(key).collection("requirements").add(Object.assign({}, customer)).then(function (element) {
                       localStorage.setItem("elementId", element.id);
                       console.log(element.id); //console.log(element.data())
                     });
 
                   case 2:
-                    this["return"] = _context6.sent;
-                    return _context6.abrupt("return", true);
+                    this["return"] = _context21.sent;
+                    return _context21.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context6.stop();
+                    return _context21.stop();
                 }
               }
-            }, _callee6, this);
+            }, _callee21, this);
           }));
         }
       }, {
@@ -6223,40 +10050,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this30 = this;
+          var _this85 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sellerDetails = JSON.parse(localStorage.getItem('sellerUserDetails'));
           this.HttpService.getHomeMatchesPageImage().subscribe(function (data) {
-            _this30.homePageImage = data;
-            _this30.imageUrl = _this30.homePageImage[0].BuyerSellerTopImage.url;
+            _this85.homePageImage = data;
+            _this85.imageUrl = _this85.homePageImage[0].BuyerSellerTopImage.url;
           });
           this.HttpService.getTextalreadyexpressed().subscribe(function (expressed) {
-            _this30.alreadyExpressed = expressed[0].ExpressedMatches;
+            _this85.alreadyExpressed = expressed[0].ExpressedMatches;
           });
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this30.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
-            _this30.Property_Type = params.get("PropertyType");
-            _this30.Looking_Town = params.get("LookingTown");
-            _this30.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
-            _this30.New_latitude = params.get("latitude");
-            _this30.New_longitude = params.get("longitude");
-            _this30.newUser = params.get("newUser");
-            _this30.Property_For = params.get("PropertyFor"); //Seller Params
+            _this85.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
+            _this85.Property_Type = params.get("PropertyType");
+            _this85.Looking_Town = params.get("LookingTown");
+            _this85.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
+            _this85.New_latitude = params.get("latitude");
+            _this85.New_longitude = params.get("longitude");
+            _this85.newUser = params.get("newUser");
+            _this85.Property_For = params.get("PropertyFor"); //Seller Params
 
-            _this30.New_state = params.get("Lookingstate");
-            _this30.New_rooms = params.get("Maxrooms");
-            _this30.New_Propertycondition = params.get("PropertyCondition");
-            _this30.New_Address = params.get("LookingAddress");
-            _this30.New_ownership = params.get("ownership");
-            _this30.New_features = params.get("features");
-            _this30.New_userId = params.get("UserId");
-            _this30.New_Maxbathrooms = params.get("Maxbathrooms");
-            _this30.New_Maxreception = params.get("Maxreception");
-            _this30.New_ownership = params.get("ownership");
-            _this30.New_Maxrooms = params.get("Maxrooms");
-            _this30.Look_id = params.get("id");
+            _this85.New_state = params.get("Lookingstate");
+            _this85.New_rooms = params.get("Maxrooms");
+            _this85.New_Propertycondition = params.get("PropertyCondition");
+            _this85.New_Address = params.get("LookingAddress");
+            _this85.New_ownership = params.get("ownership");
+            _this85.New_features = params.get("features");
+            _this85.New_userId = params.get("UserId");
+            _this85.New_Maxbathrooms = params.get("Maxbathrooms");
+            _this85.New_Maxreception = params.get("Maxreception");
+            _this85.New_ownership = params.get("ownership");
+            _this85.New_Maxrooms = params.get("Maxrooms");
+            _this85.Look_id = params.get("id");
           });
 
           if (this.newUser == "false") {
@@ -6306,73 +10133,73 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
               //Min-MAx Amount Removed Comas and Formula
-              _this30.maxAmount = _this30.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this30.maxAmount);
-              _this30.Look_minamount = element.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this30.Look_minamount);
-              _this30.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this30.Look_maxamount);
-              _this30.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this30.less);
-              _this30.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this30.more); //Remove Postcode Spaces
+              _this85.maxAmount = _this85.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this85.maxAmount);
+              _this85.Look_minamount = element.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this85.Look_minamount);
+              _this85.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this85.Look_maxamount);
+              _this85.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this85.less);
+              _this85.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this85.more); //Remove Postcode Spaces
 
-              _this30.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
-              _this30.listing = _this30.Look_postcode; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this85.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
+              _this85.listing = _this85.Look_postcode; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this30.Look_postcode && element.data().PropertyFor == _this30.Look_PropertyFor && element.data().PropertyType == _this30.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this30.sellermatchedProperties.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this85.Look_postcode && element.data().PropertyFor == _this85.Look_PropertyFor && element.data().PropertyType == _this85.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this85.sellermatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this30.Look_postcode && _this30.Look_PropertyFor == element.PropertyFor && element.data().PropertyType == _this30.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this30.removespace.substring(0, 5) == _this30.listing.substring(0, 5) && element.latitude && element.longitude) {
-                _this30.distanceInKm = _this30.getDistanceFromLatLonInKm(_this30.Look_latitude, _this30.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this85.Look_postcode && _this85.Look_PropertyFor == element.PropertyFor && element.data().PropertyType == _this85.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this85.removespace.substring(0, 5) == _this85.listing.substring(0, 5) && element.latitude && element.longitude) {
+                _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.Look_latitude, _this85.Look_longitude, element.latitude, element.longitude);
 
-                _this30.sellerunmatchedProperties.push({
+                _this85.sellerunmatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this30.distanceInKm * 0.6214
+                  distance: _this85.distanceInKm * 0.6214
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this30.Look_postcode && element.data().PropertyType == _this30.Look_PropertyType && element.data().PropertyFor == _this30.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this30.removespace.substring(0, 5) != _this30.listing.substring(0, 5) && _this30.removespace.substring(0, 3) == _this30.listing.substring(0, 3)) {
-                _this30.sellerunmatchedPropertiesFirst.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this85.Look_postcode && element.data().PropertyType == _this85.Look_PropertyType && element.data().PropertyFor == _this85.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this85.removespace.substring(0, 5) != _this85.listing.substring(0, 5) && _this85.removespace.substring(0, 3) == _this85.listing.substring(0, 3)) {
+                _this85.sellerunmatchedPropertiesFirst.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this30.Look_postcode && element.data().PropertyType != _this30.Look_PropertyType && element.data().PropertyFor == _this30.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this30.removespace.substring(0, 5) != _this30.listing.substring(0, 5) && _this30.removespace.substring(0, 3) == _this30.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this30.distanceInKm = _this30.getDistanceFromLatLonInKm(_this30.Look_latitude, _this30.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this85.Look_postcode && element.data().PropertyType != _this85.Look_PropertyType && element.data().PropertyFor == _this85.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this85.removespace.substring(0, 5) != _this85.listing.substring(0, 5) && _this85.removespace.substring(0, 3) == _this85.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.Look_latitude, _this85.Look_longitude, element.latitude, element.longitude);
 
-                _this30.sellerunmatchedPriceLogic.push({
+                _this85.sellerunmatchedPriceLogic.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this30.distanceInKm * 0.6214
+                  distance: _this85.distanceInKm * 0.6214
                 });
               } //All other properties - Nationwide
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this30.Look_postcode && element.data().PropertyFor == _this30.Look_PropertyFor && _this30.removespace.substring(0, 5) != _this30.listing.substring(0, 5) && _this30.removespace.substring(0, 3) != _this30.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this30.distanceInKm = _this30.getDistanceFromLatLonInKm(_this30.Look_latitude, _this30.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this85.Look_postcode && element.data().PropertyFor == _this85.Look_PropertyFor && _this85.removespace.substring(0, 5) != _this85.listing.substring(0, 5) && _this85.removespace.substring(0, 3) != _this85.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.Look_latitude, _this85.Look_longitude, element.latitude, element.longitude);
 
-                _this30.sellerlookTown.push({
+                _this85.sellerlookTown.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this30.distanceInKm * 0.6214
+                  distance: _this85.distanceInKm * 0.6214
                 });
               }
             });
 
-            _this30.sellerunmatchedProperties.sort(_this30.compare);
+            _this85.sellerunmatchedProperties.sort(_this85.compare);
 
-            _this30.noOfMatches = _this30.sellermatchedProperties.length;
-            _this30.noOfUnmatched = _this30.sellerunmatchedProperties.length;
+            _this85.noOfMatches = _this85.sellermatchedProperties.length;
+            _this85.noOfUnmatched = _this85.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -6551,12 +10378,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this31 = this;
+          var _this86 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this31.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this31.distinctExpressedUid.push(item.data().propertyId);
+              if (_this86.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this86.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -6817,79 +10644,79 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this32 = this;
+          var _this87 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this32.PriceRange = params.get("MaxAmount");
-            _this32.MinAmount = params.get("MinAmount");
-            _this32.Lookingpostcode = params.get("Lookingpostcode");
-            _this32.LookingStreetname = params.get("LookingStreetname");
-            _this32.Position = params.get("Position");
-            _this32.PropertyType = params.get("PropertyType");
-            _this32.Roomsmax = params.get("Roomsmax");
-            _this32.ownership = params.get("Ownership");
-            _this32.Conditions = params.get("Conditions");
-            _this32.Maxbathroom = params.get("Maxbathroom");
-            _this32.Maxreception = params.get("Maxreception");
-            _this32.features = params.get("features");
-            _this32.UserId = params.get("UserId").replace(/\s/g, "");
-            _this32.FinancialPosition = params.get("FinancialPosition");
-            _this32.ChainStatus = params.get("ChainStatus"); // this.FinancialPosition = params.get("FinancialPosition");
+            _this87.PriceRange = params.get("MaxAmount");
+            _this87.MinAmount = params.get("MinAmount");
+            _this87.Lookingpostcode = params.get("Lookingpostcode");
+            _this87.LookingStreetname = params.get("LookingStreetname");
+            _this87.Position = params.get("Position");
+            _this87.PropertyType = params.get("PropertyType");
+            _this87.Roomsmax = params.get("Roomsmax");
+            _this87.ownership = params.get("Ownership");
+            _this87.Conditions = params.get("Conditions");
+            _this87.Maxbathroom = params.get("Maxbathroom");
+            _this87.Maxreception = params.get("Maxreception");
+            _this87.features = params.get("features");
+            _this87.UserId = params.get("UserId").replace(/\s/g, "");
+            _this87.FinancialPosition = params.get("FinancialPosition");
+            _this87.ChainStatus = params.get("ChainStatus"); // this.FinancialPosition = params.get("FinancialPosition");
             // this.PriceRange = params.get("PriceRange");
             // this.Validity = params.get("Validity");
             // this.Type = params.get("Type");
             // this.Position = params.get("Position");
 
-            _this32.propertyId = params.get("propertyId");
-            _this32.expressed = params.get("expressed");
-            _this32.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
+            _this87.propertyId = params.get("propertyId");
+            _this87.expressed = params.get("expressed");
+            _this87.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
 
-            _this32.Look_State = params.get("Look_state");
-            _this32.Look_rooms = params.get("Look_rooms");
-            _this32.Look_Propertycondition = params.get("Look_Propertycondition");
-            _this32.Look_Address = params.get("Look_Address");
-            _this32.Look_ownership = params.get("Look_ownership");
-            _this32.Look_features = params.get("Look_features");
-            _this32.Look_userId = params.get("Look_userId");
-            _this32.Look_postcode = params.get("Look_postcode");
-            _this32.Look_PropertyType = params.get("Look_PropertyType");
-            _this32.Look_maxAmount = params.get("Look_maxAmount");
-            _this32.Look_Town = params.get("Look_Town");
-            _this32.Look_Address = params.get("Look_Address");
-            _this32.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
-            _this32.Look_Maxreceptions = params.get("Look_Maxreceptions");
-            _this32.Look_ownership = params.get("Look_ownership");
-            _this32.Look_Maxrooms = params.get("Look_Maxrooms");
-            _this32.Look_Propertyfor = params.get("Look_PropertyFor");
-            _this32.look_id = params.get("Look_id");
+            _this87.Look_State = params.get("Look_state");
+            _this87.Look_rooms = params.get("Look_rooms");
+            _this87.Look_Propertycondition = params.get("Look_Propertycondition");
+            _this87.Look_Address = params.get("Look_Address");
+            _this87.Look_ownership = params.get("Look_ownership");
+            _this87.Look_features = params.get("Look_features");
+            _this87.Look_userId = params.get("Look_userId");
+            _this87.Look_postcode = params.get("Look_postcode");
+            _this87.Look_PropertyType = params.get("Look_PropertyType");
+            _this87.Look_maxAmount = params.get("Look_maxAmount");
+            _this87.Look_Town = params.get("Look_Town");
+            _this87.Look_Address = params.get("Look_Address");
+            _this87.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
+            _this87.Look_Maxreceptions = params.get("Look_Maxreceptions");
+            _this87.Look_ownership = params.get("Look_ownership");
+            _this87.Look_Maxrooms = params.get("Look_Maxrooms");
+            _this87.Look_Propertyfor = params.get("Look_PropertyFor");
+            _this87.look_id = params.get("Look_id");
           });
           this.getBuyerDetails();
           this.getSellerDetails();
           this.HttpService.getBuyerAllData(this.propertyId).subscribe(function (data) {
             data.forEach(function (element) {
-              _this32.buyingPosition = element.Position;
-              _this32.buyerFinancialPosition = element.FinancialPosition;
-              _this32.BuyerPropertyType = element.PropertyType;
-              _this32.BuyerLookingpostcode = element.Lookingpostcode;
-              _this32.BuyerRoommin = element.Roommin;
-              _this32.BuyerRoomsmax = element.Roomsmax;
-              _this32.username = element.username;
-              _this32.usertitle = element.usertitle;
-              _this32.buyerPropertyFor = element.PropertyFor;
+              _this87.buyingPosition = element.Position;
+              _this87.buyerFinancialPosition = element.FinancialPosition;
+              _this87.BuyerPropertyType = element.PropertyType;
+              _this87.BuyerLookingpostcode = element.Lookingpostcode;
+              _this87.BuyerRoommin = element.Roommin;
+              _this87.BuyerRoomsmax = element.Roomsmax;
+              _this87.username = element.username;
+              _this87.usertitle = element.usertitle;
+              _this87.buyerPropertyFor = element.PropertyFor;
             });
           });
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this32.notificationOverlay = data;
-            _this32.notificationContent = _this32.notificationOverlay[0].SellerMatchesExpressInterestNotifcation;
+            _this87.notificationOverlay = data;
+            _this87.notificationContent = _this87.notificationOverlay[0].SellerMatchesExpressInterestNotifcation;
           });
         } //Create Database match Seller
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this33 = this;
+          var _this88 = this;
 
           this.isSellerSelected = true;
           this.matchesSeller = {
@@ -6904,8 +10731,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this33.isSellerSelected = false;
-              _this33.overlay = false;
+              _this88.isSellerSelected = false;
+              _this88.overlay = false;
             }
           });
           this.matchesBuyer = {
@@ -6920,13 +10747,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this33.isSellerSelected = false;
-              _this33.datastored = true;
-              _this33.express = false;
+              _this88.isSellerSelected = false;
+              _this88.datastored = true;
+              _this88.express = false;
 
-              _this33.createSellerNotification();
+              _this88.createSellerNotification();
 
-              _this33.addToExpressCollection();
+              _this88.addToExpressCollection();
             }
           });
         }
@@ -6948,15 +10775,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this34 = this;
+          var _this89 = this;
 
           this["return"] = this.seller_Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this34.isSellerSelected = false;
-              _this34.datastored = true;
-              _this34.express = false;
+              _this89.isSellerSelected = false;
+              _this89.datastored = true;
+              _this89.express = false;
 
-              _this34.backClicked();
+              _this89.backClicked();
             }
           });
         }
@@ -6976,28 +10803,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this35 = this;
+          var _this90 = this;
 
           this.seller_Selected_propertydetail_Service.getBuyerRequirement(this.UserId, this.propertyId).then(function (res) {
-            _this35.buyerDetails = res.data();
-            _this35.buyingPosition = res.data().Position;
-            _this35.buyerFinancialPosition = res.data().FinancialPosition;
-            _this35.BuyerPropertyType = res.data().PropertyType;
-            _this35.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this35.BuyerRoommin = res.data().Roommin;
-            _this35.BuyerRoomsmax = res.data().Roomsmax;
-            _this35.username = res.data().username;
-            _this35.usertitle = res.data().usertitle;
-            _this35.buyerPropertyFor = res.data().PropertyFor;
+            _this90.buyerDetails = res.data();
+            _this90.buyingPosition = res.data().Position;
+            _this90.buyerFinancialPosition = res.data().FinancialPosition;
+            _this90.BuyerPropertyType = res.data().PropertyType;
+            _this90.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this90.BuyerRoommin = res.data().Roommin;
+            _this90.BuyerRoomsmax = res.data().Roomsmax;
+            _this90.username = res.data().username;
+            _this90.usertitle = res.data().usertitle;
+            _this90.buyerPropertyFor = res.data().PropertyFor;
           });
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this36 = this;
+          var _this91 = this;
 
           this.seller_Selected_propertydetail_Service.getSeller(this.uid, this.look_id).then(function (res) {
-            _this36.sellerDetails = res.data();
+            _this91.sellerDetails = res.data();
           });
         }
       }]);
@@ -7101,72 +10928,72 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerSelectedPropertyDetailService, [{
         key: "matchesSellerCreate",
         value: function matchesSellerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
-            return regeneratorRuntime.wrap(function _callee7$(_context7) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee22() {
+            return regeneratorRuntime.wrap(function _callee22$(_context22) {
               while (1) {
-                switch (_context7.prev = _context7.next) {
+                switch (_context22.prev = _context22.next) {
                   case 0:
-                    _context7.next = 2;
+                    _context22.next = 2;
                     return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {});
 
                   case 2:
-                    this["return"] = _context7.sent;
-                    return _context7.abrupt("return", true);
+                    this["return"] = _context22.sent;
+                    return _context22.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context7.stop();
+                    return _context22.stop();
                 }
               }
-            }, _callee7, this);
+            }, _callee22, this);
           }));
         }
       }, {
         key: "matchesBuyerCreate",
         value: function matchesBuyerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
-            return regeneratorRuntime.wrap(function _callee8$(_context8) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee23() {
+            return regeneratorRuntime.wrap(function _callee23$(_context23) {
               while (1) {
-                switch (_context8.prev = _context8.next) {
+                switch (_context23.prev = _context23.next) {
                   case 0:
-                    _context8.next = 2;
+                    _context23.next = 2;
                     return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {});
 
                   case 2:
-                    this["return"] = _context8.sent;
-                    return _context8.abrupt("return", true);
+                    this["return"] = _context23.sent;
+                    return _context23.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context8.stop();
+                    return _context23.stop();
                 }
               }
-            }, _callee8, this);
+            }, _callee23, this);
           }));
         }
       }, {
         key: "ExpressInterest",
         value: function ExpressInterest(uid, propertyId) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
-            return regeneratorRuntime.wrap(function _callee9$(_context9) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee24() {
+            return regeneratorRuntime.wrap(function _callee24$(_context24) {
               while (1) {
-                switch (_context9.prev = _context9.next) {
+                switch (_context24.prev = _context24.next) {
                   case 0:
-                    _context9.next = 2;
+                    _context24.next = 2;
                     return this.db.collection("expressInterest").doc(uid).collection("Express").add({
                       propertyId: propertyId
                     }).then(function (data) {});
 
                   case 2:
-                    this["return"] = _context9.sent;
-                    return _context9.abrupt("return", true);
+                    this["return"] = _context24.sent;
+                    return _context24.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context9.stop();
+                    return _context24.stop();
                 }
               }
-            }, _callee9, this);
+            }, _callee24, this);
           }));
         }
       }, {
@@ -7182,26 +11009,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createNotification",
         value: function createNotification(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
-            return regeneratorRuntime.wrap(function _callee10$(_context10) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee25() {
+            return regeneratorRuntime.wrap(function _callee25$(_context25) {
               while (1) {
-                switch (_context10.prev = _context10.next) {
+                switch (_context25.prev = _context25.next) {
                   case 0:
-                    _context10.next = 2;
+                    _context25.next = 2;
                     return this.notificationRef.doc(key).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Notifiaction Expressed!");
                     });
 
                   case 2:
-                    this["return"] = _context10.sent;
-                    return _context10.abrupt("return", true);
+                    this["return"] = _context25.sent;
+                    return _context25.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context10.stop();
+                    return _context25.stop();
                 }
               }
-            }, _callee10, this);
+            }, _callee25, this);
           }));
         }
       }, {
@@ -7381,59 +11208,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var axios__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
-    /*! axios */
-    "./node_modules/axios/index.js");
-    /* harmony import */
-
-
-    var axios__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_18__);
-    /* harmony import */
-
-
-    var _strapi_auth_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _strapi_auth_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! ../../../strapi-auth.service */
     "./src/app/strapi-auth.service.ts");
     /* harmony import */
 
 
-    var _Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
-    /*! ../../../Misc/alert-login/alert-login.component */
-    "./src/app/Misc/alert-login/alert-login.component.ts");
-    /* harmony import */
-
-
-    var _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    var _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! ../../../Misc/alert-user-type/alert-user-type.component */
     "./src/app/Misc/alert-user-type/alert-user-type.component.ts");
     /* harmony import */
 
 
-    var _confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
+    var _confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! ./confirmSellerDetail/alertDialogSellerDataSubmission.component */
     "./src/app/Home/Property/fillFormSeller/confirmSellerDetail/alertDialogSellerDataSubmission.component.ts");
     /* harmony import */
 
 
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(
+    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(
     /*! @angular/fire/storage */
     "./node_modules/@angular/fire/storage/es2015/index.js");
     /* harmony import */
 
 
-    var _cms_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(
+    var _cms_service__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(
     /*! ../../../cms.service */
     "./src/app/cms.service.ts");
 
@@ -7519,20 +11330,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this37 = this;
+          var _this92 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this37.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this37.userData));
+              _this92.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this92.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this37.LoggedIn();
+              _this92.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this37.LoggedOut();
+              _this92.LoggedOut();
             }
           }); // this.sellerService.getBlueNotificationContent().subscribe((data) => {
           //   this.notificationOverlay = data
@@ -7548,11 +11359,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this37.lookup(_this37.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this37.data = data;
+              _this92.lookup(_this92.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this92.data = data;
               });
 
-              return _this37.lookup(_this37.listingSeller.Lookingpostcode);
+              return _this92.lookup(_this92.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -7562,30 +11373,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this37.lookup(_this37.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this37.data = data;
+              _this92.lookup(_this92.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this92.data = data;
               });
 
-              return _this37.lookup(_this37.listingSeller.Currentpostcode);
+              return _this92.lookup(_this92.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this37.Lookpostcode = params.get("Lookingpostcode");
-            _this37.Lookaddress = params.get("LookingAddress");
-            _this37.LookTown = params.get("LookingTown");
-            _this37.Lookstate = params.get("Lookingstate");
-            _this37.Country = params.get("Country");
-            _this37.Property = params.get("PropertyType");
-            _this37.Rooms = params.get("Maxrooms");
-            _this37.Amount = params.get("MaxAmount");
-            _this37.Ownership = params.get("ownership");
-            _this37.Bathrooms = params.get("Maxbathrooms");
-            _this37.Reception = params.get("Maxreception");
-            _this37.Condition = params.get("PropertyCondition");
-            _this37.Features = params.get("features");
-            _this37.country = params.get("Country");
+            _this92.Lookpostcode = params.get("Lookingpostcode");
+            _this92.Lookaddress = params.get("LookingAddress");
+            _this92.LookTown = params.get("LookingTown");
+            _this92.Lookstate = params.get("Lookingstate");
+            _this92.Country = params.get("Country");
+            _this92.Property = params.get("PropertyType");
+            _this92.Rooms = params.get("Maxrooms");
+            _this92.Amount = params.get("MaxAmount");
+            _this92.Ownership = params.get("ownership");
+            _this92.Bathrooms = params.get("Maxbathrooms");
+            _this92.Reception = params.get("Maxreception");
+            _this92.Condition = params.get("PropertyCondition");
+            _this92.Features = params.get("features");
+            _this92.country = params.get("Country");
           });
 
           if (this.Lookpostcode != ":Lookingpostcode") {
@@ -7638,26 +11449,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this38 = this;
+          var _this93 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this38.uid) {
-                _this38.user.Name = element.data().Name;
-                _this38.user.Email = element.data().email;
+              if (element.data().uid == _this93.uid) {
+                _this93.user.Name = element.data().Name;
+                _this93.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this38.user.DOB = element.data().DOB.toDate();
+                  _this93.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this38.user.Phone = element.data().Phone;
-                _this38.user.title = element.data().title;
-                _this38.user.Currentpostcode = element.data().Currentpostcode;
-                _this38.user.CurrentAddress = element.data().Currentaddress;
-                _this38.user.CurrentTown = element.data().CurrentTowncity;
-                _this38.user.Currentstate = element.data().Currentstate;
+                _this93.user.Phone = element.data().Phone;
+                _this93.user.title = element.data().title;
+                _this93.user.Currentpostcode = element.data().Currentpostcode;
+                _this93.user.CurrentAddress = element.data().Currentaddress;
+                _this93.user.CurrentTown = element.data().CurrentTowncity;
+                _this93.user.Currentstate = element.data().Currentstate;
               }
             });
           });
@@ -7702,7 +11513,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.titleView.focus();
               document.getElementById("title").style.border = "5px solid red";
             } else if (this.user.Name == null) {
-              var _dialogRef35 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef37 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid fulll name"
                 }
@@ -7712,7 +11523,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("title").style.border = "None";
               document.getElementById("Name").style.border = "5px solid red";
             } else if (this.user.email == null) {
-              var _dialogRef36 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef38 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
@@ -7723,7 +11534,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Name").style.border = "None";
               document.getElementById("email").style.border = "5px solid red";
             } else if (this.user.DOB == null) {
-              var _dialogRef37 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef39 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age is required"
                 }
@@ -7735,7 +11546,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.border = "None";
               document.getElementById("dob").style.border = "5px solid red";
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef38 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef40 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age Must be 18+"
                 }
@@ -7747,7 +11558,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.border = "None";
               document.getElementById("dob").style.border = "5px solid red";
             } else if (this.user.Phone == null) {
-              var _dialogRef39 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef41 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid phone number"
                 }
@@ -7762,7 +11573,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Currentpostcode == null) {
               this.nameField.nativeElement.focus();
 
-              var _dialogRef40 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Current Postcode"
                 }
@@ -7777,7 +11588,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (currentposcodelength.length < 5) {
               this.nameField.nativeElement.focus();
 
-              var _dialogRef41 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef43 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Postcode must be atleast 5 characters long"
                 }
@@ -7792,7 +11603,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.CurrentAddress == null) {
               this.currentAddressView.nativeElement.focus();
 
-              var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef44 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current Address"
                 }
@@ -7808,7 +11619,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.CurrentTown == null) {
               this.currenttownView.nativeElement.focus();
 
-              var _dialogRef43 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef45 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current State"
                 }
@@ -7825,7 +11636,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Currentstate == null) {
               this.currentstateView.nativeElement.focus();
 
-              var _dialogRef44 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef46 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current State"
                 }
@@ -7850,7 +11661,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               if (this.maxamounts == false) {
                 this.propertyForView.nativeElement.focus();
 
-                var _dialogRef45 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef47 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select property"
                   }
@@ -7860,7 +11671,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Lookingpostcode == null) {
                 this.LookingpostcodeView.nativeElement.focus();
 
-                var _dialogRef46 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef48 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Postcodes"
                   }
@@ -7871,7 +11682,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (lookinpostcodelength.length < 5) {
                 this.LookingpostcodeView.nativeElement.focus();
 
-                var _dialogRef47 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef49 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Postcode must be atleast 5 characters long"
                   }
@@ -7882,7 +11693,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.LookingAddress == null) {
                 this.LookingAddressView.nativeElement.focus();
 
-                var _dialogRef48 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef50 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Address"
                   }
@@ -7894,7 +11705,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.LookingTown == null) {
                 this.LookingTownView.nativeElement.focus();
 
-                var _dialogRef49 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef51 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Town"
                   }
@@ -7907,7 +11718,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Lookingstate == null) {
                 this.LookingStateView.nativeElement.focus();
 
-                var _dialogRef50 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef52 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking State"
                   }
@@ -7921,7 +11732,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Country == null) {
                 this.countryView.nativeElement.focus();
 
-                var _dialogRef51 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef53 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Country"
                   }
@@ -7934,7 +11745,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Lookstate").style.border = "none";
                 document.getElementById("lCountry").style.border = "5px solid red";
               } else if (this.listingSeller.PropertyType == null) {
-                var _dialogRef52 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef54 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Property Type"
                   }
@@ -7949,7 +11760,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lCountry").style.border = "none";
                 document.getElementById("protype").style.border = "5px solid red";
               } else if (this.listingSeller.Maxrooms == null) {
-                var _dialogRef53 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef55 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum of Rooms"
                   }
@@ -7965,7 +11776,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("protype").style.border = "none";
                 document.getElementById("bedroom").style.border = "5px solid red";
               } else if (this.listingSeller.MaxAmount == null) {
-                var _dialogRef54 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef56 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum Amount"
                   }
@@ -7982,7 +11793,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("bedroom").style.border = "none";
                 document.getElementById("maxamount").style.border = "5px solid red";
               } else if (this.listingSeller.ownership == null) {
-                var _dialogRef55 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef57 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Ownership"
                   }
@@ -8037,11 +11848,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this39 = this;
+          var _this94 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this39.isLoading = false;
+            _this94.isLoading = false;
             console.log(data);
           });
         } //Login Form
@@ -8049,11 +11860,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this40 = this;
+          var _this95 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this40.isLoading = false;
+            _this95.isLoading = false;
           });
         } //SignIn Google
         //Signup Google
@@ -8061,7 +11872,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this41 = this;
+          var _this96 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
@@ -8069,7 +11880,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             // this.return = this.fillFormsService.createUserTime(this.user)
             //   .then(data => {
             //   });
-            _this41.isLoading = false;
+            _this96.isLoading = false;
           });
         }
       }, {
@@ -8144,58 +11955,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.selectedIndex += 1;
         }
       }, {
-        key: "newUsers",
-        value: function newUsers(displayName, email, pass) {
-          var _this42 = this;
-
-          axios__WEBPACK_IMPORTED_MODULE_18___default.a.post('http://134.209.93.8/auth/local/register', {
-            username: displayName,
-            email: email,
-            password: pass
-          }).then(function (response) {
-            _this42.loginNew(email, pass);
-          })["catch"](function (error) {
-            // Handle error.
-            var dialogRef = _this42.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_20__["AlertLoginComponent"], {
-              data: {
-                message: error.response.data.message[0].messages[0].message
-              }
-            });
-          });
-        }
-      }, {
-        key: "login",
-        value: function login(username, password) {
-          var _this43 = this;
-
-          // stop here if form is invalid
-          // if (this.loginForm.invalid) {
-          //     return;
-          // }
-          this.StrapiAuthService.login(username, password).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["first"])()).subscribe(function (data) {
-            location.reload();
-
-            _this43.LoggedIn();
-          }, function (error) {
-            if (error && error.error && error.error.message && error.error.message.length > 0) {
-              alert(error.error.message[0].messages[0].message);
-            } else {
-              alert('error');
-            } //this.alertService.error(error);
-
-          });
-        }
-      }, {
         key: "loginNew",
         value: function loginNew(username, password) {
-          var _this44 = this;
+          var _this97 = this;
 
           // stop here if form is invalid
           // if (this.loginForm.invalid) {
           //     return;
           // }
           this.StrapiAuthService.login(username, password).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["first"])()).subscribe(function (data) {
-            _this44.overlay = true;
+            _this97.overlay = true;
           }, function (error) {
             if (error && error.error && error.error.message && error.error.message.length > 0) {
               alert(error.error.message[0].messages[0].message);
@@ -8213,31 +11982,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this45 = this;
+          var _this98 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.sellerService.getAllUsers(email).subscribe(function (data) {
               console.log(data);
-              _this45.emailData = data;
+              _this98.emailData = data;
 
-              if (_this45.emailData.length == 1) {
-                _this45.emailField = true;
-                _this45.notValidEmail = false;
+              if (_this98.emailData.length == 1) {
+                _this98.emailField = true;
+                _this98.notValidEmail = false;
 
-                if (_this45.emailData[0].AgentType != null) {
-                  _this45.emailField = false;
-                  _this45.notValidEmail = true;
+                if (_this98.emailData[0].AgentType != null) {
+                  _this98.emailField = false;
+                  _this98.notValidEmail = true;
 
-                  var dialogRef = _this45.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                  var dialogRef = _this98.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as User"
                     }
                   });
                 }
               } else {
-                _this45.notValidEmail = true;
+                _this98.notValidEmail = true;
               }
             });
           } else {
@@ -8258,13 +12027,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "UploadImage",
         value: function UploadImage() {
-          var _this46 = this;
+          var _this99 = this;
 
           var formElement = this.forms.nativeElement;
           formElement.addEventListener('submit', function (e) {
             e.preventDefault();
             var request = new XMLHttpRequest();
-            _this46.requests = request;
+            _this99.requests = request;
             request.open('post', 'http://134.209.93.8/upload');
             request.send(new FormData(formElement));
           });
@@ -8274,7 +12043,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "setTimer",
         value: function setTimer() {
-          var _this47 = this;
+          var _this100 = this;
 
           // set showloader to true to show loading div on view
           this.isLoading = true;
@@ -8282,12 +12051,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.subscription = this.timer.subscribe(function () {
             // set showloader to false to hide loading div from view after 5 seconds
-            _this47.isLoading = false;
-            _this47.responseStrapi = JSON.parse(_this47.requests.response);
-            _this47.ImageUrl = _this47.responseStrapi;
-            _this47.imageUploaded = true;
-            _this47.pictureUrls = _this47.requests.response;
-            localStorage.setItem('uploadedImage', JSON.stringify(_this47.requests.response));
+            _this100.isLoading = false;
+            _this100.responseStrapi = JSON.parse(_this100.requests.response);
+            _this100.ImageUrl = _this100.responseStrapi;
+            _this100.imageUploaded = true;
+            _this100.pictureUrls = _this100.requests.response;
+            localStorage.setItem('uploadedImage', JSON.stringify(_this100.requests.response));
           });
         }
       }, {
@@ -8299,38 +12068,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this48 = this;
+          var _this101 = this;
 
           this.sellerPicture = JSON.parse(localStorage.getItem('uploadedImage'));
           this.isLoading = true;
           this.register = false;
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this48.postcodeCoordinates = data;
+            _this101.postcodeCoordinates = data;
 
-            if (_this48.postcodeCoordinates.result.longitude == null && _this48.postcodeCoordinates.result.latitude == null) {
-              var dialogRef = _this48.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+            if (_this101.postcodeCoordinates.result.longitude == null && _this101.postcodeCoordinates.result.latitude == null) {
+              var dialogRef = _this101.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter valid Postcode"
                 }
               });
 
-              _this48.isLoading = false;
-              _this48.register = false;
+              _this101.isLoading = false;
+              _this101.register = false;
             } else {
-              _this48.listingSeller.longitude = _this48.postcodeCoordinates.result.longitude, _this48.listingSeller.latitude = _this48.postcodeCoordinates.result.latitude, _this48.listingSeller.username = _this48.user.Name;
-              _this48.listingSeller.usertitle = _this48.user.title;
-              _this48.listingSeller.UserId = _this48.uid;
-              _this48["return"] = _this48.SellerformService.createCustomer(_this48.userData.uid, _this48.listingSeller).then(function (data) {
+              _this101.listingSeller.longitude = _this101.postcodeCoordinates.result.longitude, _this101.listingSeller.latitude = _this101.postcodeCoordinates.result.latitude, _this101.listingSeller.username = _this101.user.Name;
+              _this101.listingSeller.usertitle = _this101.user.title;
+              _this101.listingSeller.UserId = _this101.uid;
+              _this101.listingSeller.Currentpostcode = _this101.user.Currentpostcode;
+              _this101.listingSeller.CurrentAddress = _this101.user.CurrentAddress;
+              _this101.listingSeller.CurrentTown = _this101.user.CurrentTown;
+              _this101.listingSeller.Currentstate = _this101.user.Currentstate;
+              _this101["return"] = _this101.SellerformService.createCustomer(_this101.userData.uid, _this101.listingSeller).then(function (data) {
                 console.log(data);
 
                 if (data == true) {
-                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this48.listingSeller));
-                  _this48.isLoading = false;
+                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this101.listingSeller));
+                  _this101.isLoading = false;
 
-                  var _dialogRef56 = _this48.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_22__["AlertDialogComponent"], {
+                  var _dialogRef58 = _this101.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__["AlertDialogComponent"], {
                     data: {
                       message: "HelloWorld",
-                      id: _this48.uid,
+                      id: _this101.uid,
                       buttonText: {
                         cancel: "Done"
                       }
@@ -8344,13 +12117,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this49 = this;
+          var _this102 = this;
 
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this49.register = true;
+            _this102.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this49.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var dialogRef = _this102.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Valid Postcode"
                 }
@@ -8376,26 +12149,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this50 = this;
+          var _this103 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this50.KnowUser.push(element.data());
+              _this103.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this50.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                var dialogRef = _this103.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this50.isLoading = false;
+                _this103.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this50.authService.SignIn(email, pass).then(function (data) {
-                  _this50.isLoading = false;
+                _this103.authService.SignIn(email, pass).then(function (data) {
+                  _this103.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -8413,12 +12186,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this51 = this;
+          var _this104 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this51.isLoading = false;
-            _this51.overlay = true;
+            _this104.isLoading = false;
+            _this104.overlay = true;
           });
         }
       }]);
@@ -8450,15 +12223,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_10__["Router"]
       }, {
-        type: _strapi_auth_service__WEBPACK_IMPORTED_MODULE_19__["StrapiAuthService"]
+        type: _strapi_auth_service__WEBPACK_IMPORTED_MODULE_18__["StrapiAuthService"]
       }, {
-        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_23__["HttpClient"]
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_21__["HttpClient"]
       }, {
-        type: _angular_common__WEBPACK_IMPORTED_MODULE_24__["Location"]
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_22__["Location"]
       }, {
-        type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_25__["AngularFireStorage"]
+        type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_23__["AngularFireStorage"]
       }, {
-        type: _cms_service__WEBPACK_IMPORTED_MODULE_26__["CMSSERVICE"]
+        type: _cms_service__WEBPACK_IMPORTED_MODULE_24__["CMSSERVICE"]
       }];
     };
 
@@ -8600,51 +12373,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerformService, [{
         key: "notificationCustomer",
         value: function notificationCustomer(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
-            return regeneratorRuntime.wrap(function _callee11$(_context11) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee26() {
+            return regeneratorRuntime.wrap(function _callee26$(_context26) {
               while (1) {
-                switch (_context11.prev = _context11.next) {
+                switch (_context26.prev = _context26.next) {
                   case 0:
-                    _context11.next = 2;
+                    _context26.next = 2;
                     return this.notificationref.doc(key).collection("seller").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context11.sent;
-                    return _context11.abrupt("return", true);
+                    this["return"] = _context26.sent;
+                    return _context26.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context11.stop();
+                    return _context26.stop();
                 }
               }
-            }, _callee11, this);
+            }, _callee26, this);
           }));
         }
       }, {
         key: "createCustomer",
         value: function createCustomer(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
-            return regeneratorRuntime.wrap(function _callee12$(_context12) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee27() {
+            return regeneratorRuntime.wrap(function _callee27$(_context27) {
               while (1) {
-                switch (_context12.prev = _context12.next) {
+                switch (_context27.prev = _context27.next) {
                   case 0:
-                    _context12.next = 2;
+                    _context27.next = 2;
                     return this.customersRef.doc(key).collection("properties").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context12.sent;
-                    return _context12.abrupt("return", true);
+                    this["return"] = _context27.sent;
+                    return _context27.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context12.stop();
+                    return _context27.stop();
                 }
               }
-            }, _callee12, this);
+            }, _callee27, this);
           }));
         }
       }, {
@@ -8834,26 +12607,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this52 = this;
+          var _this105 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this52.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this52.userData));
+              _this105.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this105.userData));
 
-              _this52.LoggedIn();
+              _this105.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this52.LoggedOut();
+              _this105.LoggedOut();
             }
           });
           this.HttpService.getAgentsingupLogin().subscribe(function (data) {
             console.log(data);
-            _this52.image = data[0].BodyImage.url;
-            _this52.bodyText = data[0].BodyText;
-            _this52.finalImage = 'http://134.209.93.8' + _this52.image;
-            console.log(_this52.finalImage);
+            _this105.image = data[0].BodyImage.url;
+            _this105.bodyText = data[0].BodyText;
+            _this105.finalImage = 'http://134.209.93.8' + _this105.image;
+            console.log(_this105.finalImage);
           });
         }
       }, {
@@ -8950,27 +12723,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentSignupService, [{
         key: "createAgentCustomer",
         value: function createAgentCustomer(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
-            return regeneratorRuntime.wrap(function _callee13$(_context13) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee28() {
+            return regeneratorRuntime.wrap(function _callee28$(_context28) {
               while (1) {
-                switch (_context13.prev = _context13.next) {
+                switch (_context28.prev = _context28.next) {
                   case 0:
                     console.log(key);
-                    _context13.next = 3;
+                    _context28.next = 3;
                     return this.customersRef.doc(key).collection("agents").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Agents Written Successfully");
                     });
 
                   case 3:
-                    this["return"] = _context13.sent;
-                    return _context13.abrupt("return", true);
+                    this["return"] = _context28.sent;
+                    return _context28.abrupt("return", true);
 
                   case 5:
                   case "end":
-                    return _context13.stop();
+                    return _context28.stop();
                 }
               }
-            }, _callee13, this);
+            }, _callee28, this);
           }));
         }
       }]);
@@ -9270,12 +13043,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentsignupformComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this53 = this;
+          var _this106 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this53.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this53.userData));
+              _this106.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this106.userData));
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
@@ -9294,7 +13067,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.NameView.nativeElement.focus();
             document.getElementById("FullName").style.color = "red";
           } else if (this.company == null) {
-            var _dialogRef57 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef59 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Company Name"
               }
@@ -9304,7 +13077,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("CompanyName").style.color = "red";
           } else if (this.postcode == null) {
-            var _dialogRef58 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef60 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Postcode"
               }
@@ -9315,7 +13088,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("CompanyName").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Postcode").style.color = "red";
           } else if (this.address == null) {
-            var _dialogRef59 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef61 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Address"
               }
@@ -9327,7 +13100,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Postcode").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Address").style.color = "red";
           } else if (this.jobtitle == null) {
-            var _dialogRef60 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef62 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Job Titile"
               }
@@ -9340,7 +13113,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Address").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Job").style.color = "red";
           } else if (this.phone == null) {
-            var _dialogRef61 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef63 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Phone Number"
               }
@@ -9354,7 +13127,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Job").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Number").style.color = "red";
           } else if (this.email == null) {
-            var _dialogRef62 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef64 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Email"
               }
@@ -9369,7 +13142,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Number").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Email").style.color = "red";
           } else if (this.password == null) {
-            var _dialogRef63 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef65 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Password"
               }
@@ -9385,7 +13158,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Email").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Password").style.color = "red";
           } else if (this.solefees == null) {
-            var _dialogRef64 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef66 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Sole Agency Fees"
               }
@@ -9402,7 +13175,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Password").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Soleagency").style.color = "red";
           } else if (this.multiplefees == null) {
-            var _dialogRef65 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef67 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Multiple Agency Fees"
               }
@@ -9420,7 +13193,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Soleagency").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Multiagency").style.color = "red";
           } else if (this.files == null) {
-            var _dialogRef66 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef68 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Upload Image"
               }
@@ -9459,19 +13232,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "upload",
         value: function upload(event) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
-            var _this54 = this;
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee29() {
+            var _this107 = this;
 
             var file, filePath;
-            return regeneratorRuntime.wrap(function _callee14$(_context14) {
+            return regeneratorRuntime.wrap(function _callee29$(_context29) {
               while (1) {
-                switch (_context14.prev = _context14.next) {
+                switch (_context29.prev = _context29.next) {
                   case 0:
                     this.isLoading = true;
                     file = event.target.files[0];
 
                     if (!file) {
-                      _context14.next = 8;
+                      _context29.next = 8;
                       break;
                     }
 
@@ -9480,12 +13253,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     this.task = this.afStorage.upload(filePath, file); // upload task
                     // this.progress = this.snapTask.percentageChanges();
 
-                    _context14.next = 7;
+                    _context29.next = 7;
                     return this.task;
 
                   case 7:
-                    _context14.sent.ref.getDownloadURL().then(function (url) {
-                      _this54.downloadableURL = url;
+                    _context29.sent.ref.getDownloadURL().then(function (url) {
+                      _this107.downloadableURL = url;
                     });
 
                   case 8:
@@ -9493,10 +13266,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 9:
                   case "end":
-                    return _context14.stop();
+                    return _context29.stop();
                 }
               }
-            }, _callee14, this);
+            }, _callee29, this);
           }));
         }
       }, {
@@ -9508,24 +13281,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this55 = this;
+          var _this108 = this;
 
           this.isLoading = true;
           this.afAuth.auth.createUserWithEmailAndPassword(email, pass).then(function (res) {
-            _this55.timer = Object(rxjs__WEBPACK_IMPORTED_MODULE_10__["timer"])(5000); // 5000 millisecond means 5 seconds
+            _this108.timer = Object(rxjs__WEBPACK_IMPORTED_MODULE_10__["timer"])(5000); // 5000 millisecond means 5 seconds
 
-            _this55.subscription = _this55.timer.subscribe(function () {
+            _this108.subscription = _this108.timer.subscribe(function () {
               if (res != null) {
-                _this55.SetUserDatas(res.user.uid, displayName, User, email); // set showloader to false to hide loading div from view after 5 seconds
+                _this108.SetUserDatas(res.user.uid, displayName, User, email); // set showloader to false to hide loading div from view after 5 seconds
 
 
-                _this55.stateService.agentSignup = _this55.agentSignup;
-                _this55.agentSignup.image = _this55.downloadableURL;
-                _this55.agentSignup.uid = res.user.uid;
-                _this55.agentSignup.Status = false;
-                _this55["return"] = _this55.AgentSignupService.createAgentCustomer(res.user.uid, _this55.agentSignup).then(function (data) {
+                _this108.stateService.agentSignup = _this108.agentSignup;
+                _this108.agentSignup.image = _this108.downloadableURL;
+                _this108.agentSignup.uid = res.user.uid;
+                _this108.agentSignup.Status = false;
+                _this108["return"] = _this108.AgentSignupService.createAgentCustomer(res.user.uid, _this108.agentSignup).then(function (data) {
                   if (data == true) {
-                    var dialogRef = _this55.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
+                    var dialogRef = _this108.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
                       data: {
                         message: "HelloWorld",
                         buttonText: {
@@ -9560,7 +13333,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "setTimer",
         value: function setTimer() {
-          var _this56 = this;
+          var _this109 = this;
 
           // set showloader to true to show loading div on view
           this.isLoading = true;
@@ -9568,10 +13341,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.subscription = this.timer.subscribe(function () {
             // set showloader to false to hide loading div from view after 5 seconds
-            _this56.isLoading = false;
-            _this56.responseStrapi = JSON.parse(_this56.requests.response);
-            _this56.ImageUrl = _this56.responseStrapi[0].url;
-            _this56.imageUploaded = true;
+            _this109.isLoading = false;
+            _this109.responseStrapi = JSON.parse(_this109.requests.response);
+            _this109.ImageUrl = _this109.responseStrapi[0].url;
+            _this109.imageUploaded = true;
           });
         }
       }]);
@@ -9869,7 +13642,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ClickhomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this57 = this;
+          var _this110 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -9885,16 +13658,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this57.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this57.userData));
-              _this57.isLoggedIn = true;
+              _this110.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this110.userData));
+              _this110.isLoggedIn = true;
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this57.LoggedOut();
+              _this110.LoggedOut();
 
-              _this57.isLoggedIn = false;
+              _this110.isLoggedIn = false;
             }
           });
           this.HomepageImagesText();
@@ -9903,30 +13676,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this58 = this;
+          var _this111 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this58.imageUrl = element.data().BannerImageUrl;
-              _this58.secondImageUrl = element.data().SecondBannerImage;
-              _this58.SecondImageText = element.data().SecondBannerText;
-              _this58.Step1Image = element.data().Step1Image;
-              _this58.Step2Image = element.data().Step2Image;
-              _this58.step3Image = element.data().Step3Image;
-              _this58.Step1TExt = element.data().Step1ImageText;
-              _this58.Step2Text = element.data().Step2ImageText;
-              _this58.step3Text = element.data().Step3ImageText;
+              _this111.imageUrl = element.data().BannerImageUrl;
+              _this111.secondImageUrl = element.data().SecondBannerImage;
+              _this111.SecondImageText = element.data().SecondBannerText;
+              _this111.Step1Image = element.data().Step1Image;
+              _this111.Step2Image = element.data().Step2Image;
+              _this111.step3Image = element.data().Step3Image;
+              _this111.Step1TExt = element.data().Step1ImageText;
+              _this111.Step2Text = element.data().Step2ImageText;
+              _this111.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this59 = this;
+          var _this112 = this;
 
           this.HomeService.getBlogs(1).then(function (res) {
             res.forEach(function (element) {
-              _this59.homePageBlogs.push(element.data());
+              _this112.homePageBlogs.push(element.data());
             });
           });
         }
@@ -9944,33 +13717,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this60 = this;
+          var _this113 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this60.isLoading = false;
+            _this113.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this61 = this;
+          var _this114 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this61.isLoading = false;
-            _this61.isLoggedIn = true;
+            _this114.isLoading = false;
+            _this114.isLoggedIn = true;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this62 = this;
+          var _this115 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this62.isLoading = false;
-            _this62.isLoggedIn = true;
+            _this115.isLoading = false;
+            _this115.isLoggedIn = true;
           });
         }
       }, {
@@ -10177,12 +13950,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onloadContent",
         value: function onloadContent() {
-          var _this63 = this;
+          var _this116 = this;
 
           this.SellermatchesService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this63.imageUrl = element.data().HomeMatchesPage;
-              _this63.OtherResult = element.data().OtherResult;
+              _this116.imageUrl = element.data().HomeMatchesPage;
+              _this116.OtherResult = element.data().OtherResult;
             });
           }); // this.HttpService.getMatchesHeading().subscribe((headings) =>{
           //   this.HeadingResults = headings
@@ -10193,7 +13966,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id) {
-          var _this64 = this;
+          var _this117 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -10208,103 +13981,103 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this64.buyer = true;
-              _this64.seller = false;
-              _this64.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this64.Look_PropertyFor = PropertyFor;
-              _this64.Look_propertytype = PropertyType;
-              _this64.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this64.Look_minamount);
-              _this64.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this64.Look_maxamount);
-              _this64.LookingTown = LookingTown;
-              _this64.Look_latitude = latitude;
-              _this64.Look_longitude = longitude;
-              _this64.Look_Streetname = Streetname;
-              _this64.Look_condition = condition;
-              _this64.Look_chainstatus = ChainStatus;
-              _this64.Look_FinancialPosition = FinancialPosition;
-              _this64.Look_Validity = Validity;
-              _this64.Look_Position = Position;
-              _this64.Look_UserId = UserId;
-              _this64.new_id = new_id; //Price Formula
+              _this117.buyer = true;
+              _this117.seller = false;
+              _this117.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this117.Look_PropertyFor = PropertyFor;
+              _this117.Look_propertytype = PropertyType;
+              _this117.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this117.Look_minamount);
+              _this117.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this117.Look_maxamount);
+              _this117.LookingTown = LookingTown;
+              _this117.Look_latitude = latitude;
+              _this117.Look_longitude = longitude;
+              _this117.Look_Streetname = Streetname;
+              _this117.Look_condition = condition;
+              _this117.Look_chainstatus = ChainStatus;
+              _this117.Look_FinancialPosition = FinancialPosition;
+              _this117.Look_Validity = Validity;
+              _this117.Look_Position = Position;
+              _this117.Look_UserId = UserId;
+              _this117.new_id = new_id; //Price Formula
 
-              _this64.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this64.maxAmount);
-              _this64.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this64.less);
-              _this64.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this64.more); //Remove Postcode Spaces
+              _this117.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this117.maxAmount);
+              _this117.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this117.less);
+              _this117.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this117.more); //Remove Postcode Spaces
 
-              _this64.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this64.listing = _this64.Look_postcodes;
-              _this64.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this64.isLoading = false;
-              _this64.buyer = true;
+              _this117.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this117.listing = _this117.Look_postcodes;
+              _this117.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this117.isLoading = false;
+              _this117.buyer = true;
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this64.Look_postcodes && item.data().PropertyFor == _this64.Look_PropertyFor && item.data().PropertyType == _this64.Look_propertytype && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this64.distanceInKm = _this64.getDistanceFromLatLonInKm(_this64.Look_latitude, _this64.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().PropertyType == _this117.Look_propertytype && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this64.matchedProperties.push({
+                _this117.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this64.distanceInKm * 1 / 1.609344
+                  distance: _this117.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this64.Look_postcodes && item.data().PropertyFor == _this64.Look_PropertyFor && item.data().PropertyType == _this64.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this64.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this64.distanceInKm = _this64.getDistanceFromLatLonInKm(_this64.Look_latitude, _this64.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().PropertyType == _this117.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this117.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this64.unmatchedProperties.push({
+                _this117.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this64.distanceInKm * 1 / 1.609344
+                  distance: _this117.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this64.Look_postcodes && item.data().PropertyFor == _this64.Look_PropertyFor && item.data().PropertyType == _this64.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this64.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this64.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this64.distanceInKm = _this64.getDistanceFromLatLonInKm(_this64.Look_latitude, _this64.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().PropertyType == _this117.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this117.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this117.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this64.unmatchedPriceLogic.push({
+                _this117.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this64.distanceInKm * 1 / 1.609344
+                  distance: _this117.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this64.Look_postcodes && item.data().PropertyFor == _this64.Look_PropertyFor && item.data().PropertyType != _this64.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this64.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this64.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this64.distanceInKm = _this64.getDistanceFromLatLonInKm(_this64.Look_latitude, _this64.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().PropertyType != _this117.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this117.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this117.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this64.unmatchedallProperty.push({
+                _this117.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this64.distanceInKm * 1 / 1.609344
+                  distance: _this117.distanceInKm * 1 / 1.609344
                 });
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this64.Look_postcodes && item.data().PropertyFor == _this64.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this64.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this64.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this64.distanceInKm = _this64.getDistanceFromLatLonInKm(_this64.Look_latitude, _this64.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this117.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this117.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this64.lookTown.push({
+                _this117.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this64.distanceInKm * 1 / 1.609344
+                  distance: _this117.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this64.unmatchedProperties.sort(_this64.compare);
+            _this117.unmatchedProperties.sort(_this117.compare);
           });
           this.getExpressedListingIds();
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude, new_id) {
-          var _this65 = this;
+          var _this118 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -10336,23 +14109,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this65.maxAmount = _this65.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this65.maxAmount);
-              _this65.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this65.Look_minamount);
-              _this65.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this65.Look_maxamount);
-              _this65.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this65.less);
-              _this65.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this65.more); //Remove Postcode Spaces
+              _this118.maxAmount = _this118.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this118.maxAmount);
+              _this118.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this118.Look_minamount);
+              _this118.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this118.Look_maxamount);
+              _this118.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this118.less);
+              _this118.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this118.more); //Remove Postcode Spaces
 
-              _this65.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this65.listing = _this65.Look_postcode;
-              _this65.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this118.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this118.listing = _this118.Look_postcode;
+              _this118.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this65.Look_postcode && Mean.data().PropertyFor == _this65.Look_PropertyFor && Mean.data().PropertyType == _this65.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this65.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this118.Look_postcode && Mean.data().PropertyFor == _this118.Look_PropertyFor && Mean.data().PropertyType == _this118.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this118.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
@@ -10360,51 +14133,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this65.Look_postcode && Mean.data().PropertyType == _this65.Look_PropertyType && Mean.data().PropertyFor == _this65.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this65.removespace.substring(0, 5) == _this65.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
-                _this65.distanceInKm = _this65.getDistanceFromLatLonInKm(_this65.Look_latitude, _this65.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcode && Mean.data().PropertyType == _this118.Look_PropertyType && Mean.data().PropertyFor == _this118.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this118.removespace.substring(0, 5) == _this118.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this65.sellerunmatchedProperties.push({
+                _this118.sellerunmatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this65.distanceInKm * 1 / 1.609344
+                  distance: _this118.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this65.Look_postcode && Mean.data().PropertyType == _this65.Look_PropertyType && Mean.data().PropertyFor == _this65.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this65.removespace.substring(0, 5) != _this65.listing.substring(0, 5) && _this65.removespace.substring(0, 3) == _this65.listing.substring(0, 3)) {
-                _this65.sellerunmatchedPropertiesFirst.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcode && Mean.data().PropertyType == _this118.Look_PropertyType && Mean.data().PropertyFor == _this118.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this118.removespace.substring(0, 5) != _this118.listing.substring(0, 5) && _this118.removespace.substring(0, 3) == _this118.listing.substring(0, 3)) {
+                _this118.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this65.Look_postcode && Mean.data().PropertyType != _this65.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this65.removespace.substring(0, 5) != _this65.listing.substring(0, 5) && _this65.removespace.substring(0, 3) == _this65.listing.substring(0, 3) && Mean.data().PropertyFor == _this65.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
-                _this65.distanceInKm = _this65.getDistanceFromLatLonInKm(_this65.Look_latitude, _this65.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcode && Mean.data().PropertyType != _this118.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this118.removespace.substring(0, 5) != _this118.listing.substring(0, 5) && _this118.removespace.substring(0, 3) == _this118.listing.substring(0, 3) && Mean.data().PropertyFor == _this118.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
+                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this65.sellerunmatchedPriceLogic.push({
+                _this118.sellerunmatchedPriceLogic.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this65.distanceInKm * 1 / 1.609344
+                  distance: _this118.distanceInKm * 1 / 1.609344
                 });
               } //All other properties - Nationwide
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this65.Look_postcode && Mean.data().PropertyFor == _this65.Look_PropertyFor && _this65.removespace.substring(0, 5) != _this65.listing.substring(0, 5) && _this65.removespace.substring(0, 3) != _this65.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
-                _this65.distanceInKm = _this65.getDistanceFromLatLonInKm(_this65.Look_latitude, _this65.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcode && Mean.data().PropertyFor == _this118.Look_PropertyFor && _this118.removespace.substring(0, 5) != _this118.listing.substring(0, 5) && _this118.removespace.substring(0, 3) != _this118.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
+                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this65.sellerlookTown.push({
+                _this118.sellerlookTown.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this65.distanceInKm * 1 / 1.609344
+                  distance: _this118.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this65.unmatchedProperties.sort(_this65.compare);
+            _this118.unmatchedProperties.sort(_this118.compare);
 
-            _this65.noOfMatches = _this65.sellermatchedProperties.length;
-            _this65.noOfUnmatched = _this65.sellerunmatchedProperties.length;
+            _this118.noOfMatches = _this118.sellermatchedProperties.length;
+            _this118.noOfUnmatched = _this118.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -10668,12 +14441,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this66 = this;
+          var _this119 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this66.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this66.distinctExpressedUid.push(item.data().propertyId);
+              if (_this119.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this119.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -10692,122 +14465,122 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this67 = this;
+          var _this120 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this67.propertyRequirementDetails.push({
+              _this120.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
 
-            _this67.myrequirement_service.getSellerProperties(_this67.uid).then(function (res) {
+            _this120.myrequirement_service.getSellerProperties(_this120.uid).then(function (res) {
               res.forEach(function (element) {
                 // this.docid = element.id
-                _this67.propertyDetails.push({
+                _this120.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
               });
-              _this67.MatchesItem = _this67.propertyRequirementDetails.length + _this67.propertyDetails.length;
+              _this120.MatchesItem = _this120.propertyRequirementDetails.length + _this120.propertyDetails.length;
 
-              if (_this67.MatchesItem < 2) {
-                if (_this67.propertyRequirementDetails.length > _this67.propertyDetails.length) {
-                  _this67.buyer = true;
-                  _this67.seller = false;
-                  _this67.buyerItems = true;
-                  _this67.buyerVal = _this67.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var Lookingpostcode = _this67.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var MinAmount = _this67.propertyRequirementDetails[0].data.MinAmount;
-                  var MaxAmount = _this67.propertyRequirementDetails[0].data.MaxAmount;
-                  var PropertyFor = _this67.propertyRequirementDetails[0].data.PropertyFor;
-                  var PropertyType = _this67.propertyRequirementDetails[0].data.PropertyType;
-                  var LookingTown = _this67.propertyRequirementDetails[0].data.LookingTown;
-                  var latitude = _this67.propertyRequirementDetails[0].data.latitude;
-                  var longitude = _this67.propertyRequirementDetails[0].data.longitude;
-                  var Streetname = _this67.propertyRequirementDetails[0].data.LookingStreetname;
-                  var condition = _this67.propertyRequirementDetails[0].data.Conditions;
-                  var ChainStatus = _this67.propertyRequirementDetails[0].data.ChainStatus;
-                  var FinancialPosition = _this67.propertyRequirementDetails[0].data.FinancialPosition;
-                  var Validity = _this67.propertyRequirementDetails[0].data.Validity;
-                  var Position = _this67.propertyRequirementDetails[0].data.Position;
-                  var UserId = _this67.propertyRequirementDetails[0].data.UserId;
-                  var new_id = _this67.propertyRequirementDetails[0].id;
+              if (_this120.MatchesItem < 2) {
+                if (_this120.propertyRequirementDetails.length > _this120.propertyDetails.length) {
+                  _this120.buyer = true;
+                  _this120.seller = false;
+                  _this120.buyerItems = true;
+                  _this120.buyerVal = _this120.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var Lookingpostcode = _this120.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var MinAmount = _this120.propertyRequirementDetails[0].data.MinAmount;
+                  var MaxAmount = _this120.propertyRequirementDetails[0].data.MaxAmount;
+                  var PropertyFor = _this120.propertyRequirementDetails[0].data.PropertyFor;
+                  var PropertyType = _this120.propertyRequirementDetails[0].data.PropertyType;
+                  var LookingTown = _this120.propertyRequirementDetails[0].data.LookingTown;
+                  var latitude = _this120.propertyRequirementDetails[0].data.latitude;
+                  var longitude = _this120.propertyRequirementDetails[0].data.longitude;
+                  var Streetname = _this120.propertyRequirementDetails[0].data.LookingStreetname;
+                  var condition = _this120.propertyRequirementDetails[0].data.Conditions;
+                  var ChainStatus = _this120.propertyRequirementDetails[0].data.ChainStatus;
+                  var FinancialPosition = _this120.propertyRequirementDetails[0].data.FinancialPosition;
+                  var Validity = _this120.propertyRequirementDetails[0].data.Validity;
+                  var Position = _this120.propertyRequirementDetails[0].data.Position;
+                  var UserId = _this120.propertyRequirementDetails[0].data.UserId;
+                  var new_id = _this120.propertyRequirementDetails[0].id;
 
-                  _this67.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
+                  _this120.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
                 } else {
-                  _this67.seller = true;
-                  _this67.buyer = false;
-                  _this67.sellerItem = true;
-                  _this67.sellerVal = _this67.propertyDetails[0].seller.Lookingpostcode;
-                  var _Lookingpostcode = _this67.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor = _this67.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType = _this67.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount = _this67.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown = _this67.propertyDetails[0].seller.LookingTown;
-                  var Lookingstate = _this67.propertyDetails[0].seller.Lookingstate;
-                  var Maxbathrooms = _this67.propertyDetails[0].seller.Maxbathrooms;
-                  var PropertyCondition = _this67.propertyDetails[0].seller.PropertyCondition;
-                  var LookingAddress = _this67.propertyDetails[0].seller.LookingAddress;
-                  var ownership = _this67.propertyDetails[0].seller.ownership;
-                  var features = _this67.propertyDetails[0].seller.features;
-                  var _UserId = _this67.propertyDetails[0].seller.UserId;
-                  var Maxreception = _this67.propertyDetails[0].seller.Maxreception;
-                  var Maxrooms = _this67.propertyDetails[0].seller.Maxrooms;
-                  var _latitude = _this67.propertyDetails[0].seller.latitude;
-                  var _longitude = _this67.propertyDetails[0].seller.longitude;
-                  var _new_id = _this67.propertyDetails[0].sellerId;
+                  _this120.seller = true;
+                  _this120.buyer = false;
+                  _this120.sellerItem = true;
+                  _this120.sellerVal = _this120.propertyDetails[0].seller.Lookingpostcode;
+                  var _Lookingpostcode = _this120.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor = _this120.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType = _this120.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount = _this120.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown = _this120.propertyDetails[0].seller.LookingTown;
+                  var Lookingstate = _this120.propertyDetails[0].seller.Lookingstate;
+                  var Maxbathrooms = _this120.propertyDetails[0].seller.Maxbathrooms;
+                  var PropertyCondition = _this120.propertyDetails[0].seller.PropertyCondition;
+                  var LookingAddress = _this120.propertyDetails[0].seller.LookingAddress;
+                  var ownership = _this120.propertyDetails[0].seller.ownership;
+                  var features = _this120.propertyDetails[0].seller.features;
+                  var _UserId = _this120.propertyDetails[0].seller.UserId;
+                  var Maxreception = _this120.propertyDetails[0].seller.Maxreception;
+                  var Maxrooms = _this120.propertyDetails[0].seller.Maxrooms;
+                  var _latitude = _this120.propertyDetails[0].seller.latitude;
+                  var _longitude = _this120.propertyDetails[0].seller.longitude;
+                  var _new_id = _this120.propertyDetails[0].sellerId;
 
-                  _this67.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
+                  _this120.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
                 }
-              } else if (_this67.MatchesItem > 1) {
-                if (_this67.propertyRequirementDetails.length > _this67.propertyDetails.length) {
-                  _this67.buyer = true;
-                  _this67.buyerVal = _this67.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this67.test = _this67.buyerVal;
-                  var _Lookingpostcode2 = _this67.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var _MinAmount = _this67.propertyRequirementDetails[0].data.MinAmount;
-                  var _MaxAmount2 = _this67.propertyRequirementDetails[0].data.MaxAmount;
-                  var _PropertyFor2 = _this67.propertyRequirementDetails[0].data.PropertyFor;
-                  var _PropertyType2 = _this67.propertyRequirementDetails[0].data.PropertyType;
-                  var _LookingTown2 = _this67.propertyRequirementDetails[0].data.LookingTown;
-                  var _latitude2 = _this67.propertyRequirementDetails[0].data.latitude;
-                  var _longitude2 = _this67.propertyRequirementDetails[0].data.longitude;
-                  var _Streetname = _this67.propertyRequirementDetails[0].data.LookingStreetname;
-                  var _condition = _this67.propertyRequirementDetails[0].data.Conditions;
-                  var _ChainStatus = _this67.propertyRequirementDetails[0].data.ChainStatus;
-                  var _FinancialPosition = _this67.propertyRequirementDetails[0].data.FinancialPosition;
-                  var _Validity = _this67.propertyRequirementDetails[0].data.Validity;
-                  var _Position = _this67.propertyRequirementDetails[0].data.Position;
-                  var _UserId2 = _this67.propertyRequirementDetails[0].data.UserId;
-                  var _new_id2 = _this67.propertyRequirementDetails[0].id;
+              } else if (_this120.MatchesItem > 1) {
+                if (_this120.propertyRequirementDetails.length > _this120.propertyDetails.length) {
+                  _this120.buyer = true;
+                  _this120.buyerVal = _this120.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this120.test = _this120.buyerVal;
+                  var _Lookingpostcode2 = _this120.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var _MinAmount = _this120.propertyRequirementDetails[0].data.MinAmount;
+                  var _MaxAmount2 = _this120.propertyRequirementDetails[0].data.MaxAmount;
+                  var _PropertyFor2 = _this120.propertyRequirementDetails[0].data.PropertyFor;
+                  var _PropertyType2 = _this120.propertyRequirementDetails[0].data.PropertyType;
+                  var _LookingTown2 = _this120.propertyRequirementDetails[0].data.LookingTown;
+                  var _latitude2 = _this120.propertyRequirementDetails[0].data.latitude;
+                  var _longitude2 = _this120.propertyRequirementDetails[0].data.longitude;
+                  var _Streetname = _this120.propertyRequirementDetails[0].data.LookingStreetname;
+                  var _condition = _this120.propertyRequirementDetails[0].data.Conditions;
+                  var _ChainStatus = _this120.propertyRequirementDetails[0].data.ChainStatus;
+                  var _FinancialPosition = _this120.propertyRequirementDetails[0].data.FinancialPosition;
+                  var _Validity = _this120.propertyRequirementDetails[0].data.Validity;
+                  var _Position = _this120.propertyRequirementDetails[0].data.Position;
+                  var _UserId2 = _this120.propertyRequirementDetails[0].data.UserId;
+                  var _new_id2 = _this120.propertyRequirementDetails[0].id;
 
-                  _this67.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
+                  _this120.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
                 } else {
-                  _this67.seller = true;
-                  _this67.sellerVal = _this67.propertyDetails[0].seller.Lookingpostcode;
-                  _this67.test = _this67.sellerVal;
-                  var _Lookingpostcode3 = _this67.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor3 = _this67.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType3 = _this67.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount3 = _this67.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown3 = _this67.propertyDetails[0].seller.LookingTown;
-                  var _Lookingstate = _this67.propertyDetails[0].seller.Lookingstate;
-                  var _Maxbathrooms = _this67.propertyDetails[0].seller.Maxbathrooms;
-                  var _PropertyCondition = _this67.propertyDetails[0].seller.PropertyCondition;
-                  var _LookingAddress = _this67.propertyDetails[0].seller.LookingAddress;
-                  var _ownership = _this67.propertyDetails[0].seller.ownership;
-                  var _features = _this67.propertyDetails[0].seller.features;
-                  var _UserId3 = _this67.propertyDetails[0].seller.UserId;
-                  var _Maxreception = _this67.propertyDetails[0].seller.Maxreception;
-                  var _Maxrooms = _this67.propertyDetails[0].seller.Maxrooms;
-                  var _latitude3 = _this67.propertyDetails[0].seller.latitude;
-                  var _longitude3 = _this67.propertyDetails[0].seller.longitude;
-                  var _new_id3 = _this67.propertyDetails[0].sellerId;
+                  _this120.seller = true;
+                  _this120.sellerVal = _this120.propertyDetails[0].seller.Lookingpostcode;
+                  _this120.test = _this120.sellerVal;
+                  var _Lookingpostcode3 = _this120.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor3 = _this120.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType3 = _this120.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount3 = _this120.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown3 = _this120.propertyDetails[0].seller.LookingTown;
+                  var _Lookingstate = _this120.propertyDetails[0].seller.Lookingstate;
+                  var _Maxbathrooms = _this120.propertyDetails[0].seller.Maxbathrooms;
+                  var _PropertyCondition = _this120.propertyDetails[0].seller.PropertyCondition;
+                  var _LookingAddress = _this120.propertyDetails[0].seller.LookingAddress;
+                  var _ownership = _this120.propertyDetails[0].seller.ownership;
+                  var _features = _this120.propertyDetails[0].seller.features;
+                  var _UserId3 = _this120.propertyDetails[0].seller.UserId;
+                  var _Maxreception = _this120.propertyDetails[0].seller.Maxreception;
+                  var _Maxrooms = _this120.propertyDetails[0].seller.Maxrooms;
+                  var _latitude3 = _this120.propertyDetails[0].seller.latitude;
+                  var _longitude3 = _this120.propertyDetails[0].seller.longitude;
+                  var _new_id3 = _this120.propertyDetails[0].sellerId;
 
-                  _this67.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
+                  _this120.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
                 }
               }
             });
@@ -10816,26 +14589,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitem",
         value: function getallitem() {
-          var _this68 = this;
+          var _this121 = this;
 
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this68.uid) {
-                _this68.propertyRequirementDetails.push({
+              if (element.UserId == _this121.uid) {
+                _this121.propertyRequirementDetails.push({
                   data: element,
                   id: element.id
                 });
 
-                _this68.buyer = true;
-                _this68.seller = false;
-                _this68.buyerItems = true;
+                _this121.buyer = true;
+                _this121.seller = false;
+                _this121.buyerItems = true;
               }
             });
           });
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this68.uid) {
-                _this68.propertyDetails.push({
+              if (element.UserId == _this121.uid) {
+                _this121.propertyDetails.push({
                   seller: element,
                   sellerId: element.id
                 });
@@ -11151,12 +14924,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this69 = this;
+          var _this122 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this69.propertyRequirementDetails.push({
+              _this122.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -11165,7 +14938,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this69.propertyDetails.push({
+              _this122.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -11760,40 +15533,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this70 = this;
+          var _this123 = this;
 
           this.getUser = JSON.parse(sessionStorage.getItem('currentUser'));
           this.uid = this.getUser.id;
           this.LoggedIn();
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this70.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
-            _this70.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
-            _this70.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
-            _this70.listingBuyer.Currentstate = params.get("Currentstate").trim();
-            _this70.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
-            _this70.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this70.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            _this70.listingBuyer.LookingTown = params.get("LookingTown").trim();
-            _this70.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
-            _this70.listingBuyer.Country = params.get("Country").trim();
-            _this70.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
-            _this70.listingBuyer.PropertyType = params.get("PropertyType").trim();
-            _this70.listingBuyer.Roommin = params.get("Roommin").trim();
-            _this70.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
-            _this70.listingBuyer.MinAmount = params.get("MinAmount").trim();
-            _this70.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
-            _this70.listingBuyer.Validity = params.get("Validity").trim();
-            _this70.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
-            _this70.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
-            _this70.listingBuyer.Minreception = params.get("Minreception").trim();
-            _this70.listingBuyer.Maxreception = params.get("Maxreception").trim();
-            _this70.listingBuyer.Conditions = params.get("Conditions").trim();
-            _this70.listingBuyer.Ownership = params.get("Ownership").trim();
-            _this70.listingBuyer.features = params.get("features").trim();
-            _this70.docid = params.get("docid");
-            _this70.listingBuyer.PropertyFor = params.get("PropertyFor");
-            _this70.listingBuyer.ChainStatus = params.get("ChainStatus");
-            console.log(_this70.listingBuyer.FinancialPosition);
+            _this123.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
+            _this123.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
+            _this123.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
+            _this123.listingBuyer.Currentstate = params.get("Currentstate").trim();
+            _this123.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
+            _this123.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this123.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
+            _this123.listingBuyer.LookingTown = params.get("LookingTown").trim();
+            _this123.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
+            _this123.listingBuyer.Country = params.get("Country").trim();
+            _this123.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
+            _this123.listingBuyer.PropertyType = params.get("PropertyType").trim();
+            _this123.listingBuyer.Roommin = params.get("Roommin").trim();
+            _this123.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
+            _this123.listingBuyer.MinAmount = params.get("MinAmount").trim();
+            _this123.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
+            _this123.listingBuyer.Validity = params.get("Validity").trim();
+            _this123.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
+            _this123.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
+            _this123.listingBuyer.Minreception = params.get("Minreception").trim();
+            _this123.listingBuyer.Maxreception = params.get("Maxreception").trim();
+            _this123.listingBuyer.Conditions = params.get("Conditions").trim();
+            _this123.listingBuyer.Ownership = params.get("Ownership").trim();
+            _this123.listingBuyer.features = params.get("features").trim();
+            _this123.docid = params.get("docid");
+            _this123.listingBuyer.PropertyFor = params.get("PropertyFor");
+            _this123.listingBuyer.ChainStatus = params.get("ChainStatus");
+            console.log(_this123.listingBuyer.FinancialPosition);
           });
 
           if (this.listingBuyer.PropertyFor == 'buy') {
@@ -11809,11 +15582,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this70.lookup(_this70.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this70.data = data;
+              _this123.lookup(_this123.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this123.data = data;
               });
 
-              return _this70.lookup(_this70.listingBuyer.Lookingpostcode);
+              return _this123.lookup(_this123.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -11823,11 +15596,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this70.lookup(_this70.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this70.data = data;
+              _this123.lookup(_this123.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this123.data = data;
               });
 
-              return _this70.lookup(_this70.listingBuyer.Currentpostcode);
+              return _this123.lookup(_this123.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -11836,18 +15609,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this71 = this;
+          var _this124 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
           this.postcodeService.getUsers(this.getUser.id).subscribe(function (data) {
-            _this71.dataItem = data;
-            _this71.Name = _this71.dataItem.username, _this71.email = _this71.dataItem.email;
-            _this71.Phone = _this71.dataItem.Phone;
-            _this71.DOB = _this71.dataItem.dob;
-            _this71.Currentaddress = _this71.dataItem.Address;
-            _this71.prefrence = _this71.dataItem.prefrences;
-            _this71.title = _this71.dataItem.title;
+            _this124.dataItem = data;
+            _this124.Name = _this124.dataItem.username, _this124.email = _this124.dataItem.email;
+            _this124.Phone = _this124.dataItem.Phone;
+            _this124.DOB = _this124.dataItem.dob;
+            _this124.Currentaddress = _this124.dataItem.Address;
+            _this124.prefrence = _this124.dataItem.prefrences;
+            _this124.title = _this124.dataItem.title;
           });
         }
       }, {
@@ -11890,43 +15663,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 }
               });
             } else if (this.email == null) {
-              var _dialogRef67 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef69 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
               });
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef68 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef70 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age Must be 18+"
                 }
               });
             } else if (this.Phone == null) {
-              var _dialogRef69 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef71 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid phone number"
                 }
               });
             } else if (this.listingBuyer.Currentpostcode == null) {
-              var _dialogRef70 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef72 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Postcode"
                 }
               });
             } else if (this.listingBuyer.CurrentAddress == null) {
-              var _dialogRef71 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef73 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Address"
                 }
               });
             } else if (this.listingBuyer.Currentstate == null) {
-              var _dialogRef72 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef74 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Sate"
                 }
               });
             } else if (this.listingBuyer.CurrentTown == null) {
-              var _dialogRef73 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef75 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Town"
                 }
@@ -11938,67 +15711,67 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           } else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
               if (this.amounts == false) {
-                var _dialogRef74 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef76 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select property for "
                   }
                 });
               } else if (this.listingBuyer.Lookingpostcode == null) {
-                var _dialogRef75 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef77 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill LookingPostcode"
                   }
                 });
               } else if (this.listingBuyer.LookingStreetname == null) {
-                var _dialogRef76 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef78 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill LookingStreetname"
                   }
                 });
               } else if (this.listingBuyer.LookingTown == null) {
-                var _dialogRef77 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef79 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill LookingTown"
                   }
                 });
               } else if (this.listingBuyer.Lookingstate == null) {
-                var _dialogRef78 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef80 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Looking State"
                   }
                 });
               } else if (this.listingBuyer.FinancialPosition == null) {
-                var _dialogRef79 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef81 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Financial Position"
                   }
                 });
               } else if (this.listingBuyer.ChainStatus == null) {
-                var _dialogRef80 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef82 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Listing Buyer"
                   }
                 });
               } else if (this.listingBuyer.PropertyType == null) {
-                var _dialogRef81 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef83 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Property Type"
                   }
                 });
               } else if (this.listingBuyer.MinAmount == null) {
-                var _dialogRef82 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef84 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MinAmount"
                   }
                 });
               } else if (this.listingBuyer.MaxAmount == null) {
-                var _dialogRef83 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef85 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MaxAmount"
                   }
                 });
               } else if (this.listingBuyer.Validity == null) {
-                var _dialogRef84 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef86 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Validity"
                   }
@@ -12012,12 +15785,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this72 = this;
+          var _this125 = this;
 
           this.isLoading = true;
           this.postcodeService.addUsersDetails(this.uid, this.Name, this.email, this.Phone, this.DOB, this.title).subscribe(function (data) {
             localStorage.setItem('updatedUser', JSON.stringify(data));
-            _this72.isLoading = false;
+            _this125.isLoading = false;
           });
         }
       }, {
@@ -12085,48 +15858,48 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerEditing",
         value: function buyerEditing() {
-          var _this73 = this;
+          var _this126 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this73.postcodeCoordinates = data;
-            _this73.listingBuyer.longitude = _this73.postcodeCoordinates.result.longitude, _this73.listingBuyer.latitude = _this73.postcodeCoordinates.result.latitude, _this73.HttpClient.put("http://134.209.93.8/listing-buyers/" + _this73.docid, {
-              usertitle: _this73.title,
-              username: _this73.Name,
-              longitude: _this73.listingBuyer.longitude,
-              latitude: _this73.listingBuyer.longitude,
+            _this126.postcodeCoordinates = data;
+            _this126.listingBuyer.longitude = _this126.postcodeCoordinates.result.longitude, _this126.listingBuyer.latitude = _this126.postcodeCoordinates.result.latitude, _this126.HttpClient.put("http://134.209.93.8/listing-buyers/" + _this126.docid, {
+              usertitle: _this126.title,
+              username: _this126.Name,
+              longitude: _this126.listingBuyer.longitude,
+              latitude: _this126.listingBuyer.longitude,
               //features:this.listingBuyer.features,
-              Validity: _this73.listingBuyer.Validity,
-              UserId: _this73.uid,
-              Roomsmax: _this73.listingBuyer.Roomsmax,
-              Roommin: _this73.listingBuyer.Roommin,
-              PropertyType: _this73.listingBuyer.PropertyType,
-              PropertyFor: _this73.listingBuyer.PropertyFor,
-              Position: _this73.listingBuyer.Position,
-              Ownership: _this73.listingBuyer.Ownership,
-              Minreception: _this73.listingBuyer.Minreception,
-              Minbathroom: _this73.listingBuyer.Minbathroom,
-              MinAmount: _this73.listingBuyer.MinAmount,
-              Maxreception: _this73.listingBuyer.Maxreception,
-              Maxbathroom: _this73.listingBuyer.Maxbathroom,
-              MaxAmount: _this73.listingBuyer.MaxAmount,
-              Lookingstate: _this73.listingBuyer.Lookingstate,
-              Lookingpostcode: _this73.listingBuyer.Lookingpostcode,
-              LookingTown: _this73.listingBuyer.LookingTown,
-              LookingStreetname: _this73.listingBuyer.LookingStreetname,
-              FinancialPosition: _this73.listingBuyer.FinancialPosition,
-              Currentstate: _this73.listingBuyer.Currentstate,
-              Currentpostcode: _this73.listingBuyer.Currentpostcode,
-              Currentcountry: _this73.listingBuyer.Currentcountry,
-              CurrentAddress: _this73.listingBuyer.CurrentAddress,
-              Country: _this73.listingBuyer.Country,
-              Conditions: _this73.listingBuyer.Conditions,
-              ChainStatus: _this73.listingBuyer.ChainStatus,
-              CurrentTown: _this73.listingBuyer.CurrentTown
+              Validity: _this126.listingBuyer.Validity,
+              UserId: _this126.uid,
+              Roomsmax: _this126.listingBuyer.Roomsmax,
+              Roommin: _this126.listingBuyer.Roommin,
+              PropertyType: _this126.listingBuyer.PropertyType,
+              PropertyFor: _this126.listingBuyer.PropertyFor,
+              Position: _this126.listingBuyer.Position,
+              Ownership: _this126.listingBuyer.Ownership,
+              Minreception: _this126.listingBuyer.Minreception,
+              Minbathroom: _this126.listingBuyer.Minbathroom,
+              MinAmount: _this126.listingBuyer.MinAmount,
+              Maxreception: _this126.listingBuyer.Maxreception,
+              Maxbathroom: _this126.listingBuyer.Maxbathroom,
+              MaxAmount: _this126.listingBuyer.MaxAmount,
+              Lookingstate: _this126.listingBuyer.Lookingstate,
+              Lookingpostcode: _this126.listingBuyer.Lookingpostcode,
+              LookingTown: _this126.listingBuyer.LookingTown,
+              LookingStreetname: _this126.listingBuyer.LookingStreetname,
+              FinancialPosition: _this126.listingBuyer.FinancialPosition,
+              Currentstate: _this126.listingBuyer.Currentstate,
+              Currentpostcode: _this126.listingBuyer.Currentpostcode,
+              Currentcountry: _this126.listingBuyer.Currentcountry,
+              CurrentAddress: _this126.listingBuyer.CurrentAddress,
+              Country: _this126.listingBuyer.Country,
+              Conditions: _this126.listingBuyer.Conditions,
+              ChainStatus: _this126.listingBuyer.ChainStatus,
+              CurrentTown: _this126.listingBuyer.CurrentTown
             }).subscribe(function (data) {
-              _this73.isLoading = false;
+              _this126.isLoading = false;
 
-              var dialogRef = _this73.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+              var dialogRef = _this126.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
             });
           });
         }
@@ -12245,47 +16018,47 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingBuyerService, [{
         key: "notificationCustomer",
         value: function notificationCustomer(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
-            return regeneratorRuntime.wrap(function _callee15$(_context15) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee30() {
+            return regeneratorRuntime.wrap(function _callee30$(_context30) {
               while (1) {
-                switch (_context15.prev = _context15.next) {
+                switch (_context30.prev = _context30.next) {
                   case 0:
-                    _context15.next = 2;
+                    _context30.next = 2;
                     return this.notificationref.doc(key).collection("").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context15.sent;
-                    return _context15.abrupt("return", true);
+                    this["return"] = _context30.sent;
+                    return _context30.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context15.stop();
+                    return _context30.stop();
                 }
               }
-            }, _callee15, this);
+            }, _callee30, this);
           }));
         } //Create Customer ListingBuyer
 
       }, {
         key: "createCustomer",
         value: function createCustomer(uid, docid, listingBuyer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
-            return regeneratorRuntime.wrap(function _callee16$(_context16) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee31() {
+            return regeneratorRuntime.wrap(function _callee31$(_context31) {
               while (1) {
-                switch (_context16.prev = _context16.next) {
+                switch (_context31.prev = _context31.next) {
                   case 0:
-                    return _context16.abrupt("return", this.db.collection("listingBuyer").doc(uid).collection("requirements").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
+                    return _context31.abrupt("return", this.db.collection("listingBuyer").doc(uid).collection("requirements").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
                       console.log("Document successfully written!");
                     }));
 
                   case 2:
                   case "end":
-                    return _context16.stop();
+                    return _context31.stop();
                 }
               }
-            }, _callee16, this);
+            }, _callee31, this);
           }));
         }
       }, {
@@ -12693,7 +16466,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this74 = this;
+          var _this127 = this;
 
           this.getUser = JSON.parse(sessionStorage.getItem('currentUser'));
           this.uid = this.getUser.id;
@@ -12703,11 +16476,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this74.lookup(_this74.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this74.data = data;
+              _this127.lookup(_this127.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this127.data = data;
               });
 
-              return _this74.lookup(_this74.listingSeller.Lookingpostcode);
+              return _this127.lookup(_this127.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -12717,32 +16490,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this74.lookup(_this74.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this74.data = data;
+              _this127.lookup(_this127.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this127.data = data;
               });
 
-              return _this74.lookup(_this74.listingSeller.Currentpostcode);
+              return _this127.lookup(_this127.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this74.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
-            _this74.listingSeller.LookingAddress = params.get("LookingAddress");
-            _this74.listingSeller.LookingTown = params.get("LookingTown");
-            _this74.listingSeller.Lookingstate = params.get("Lookingstate");
-            _this74.listingSeller.Country = params.get("Country");
-            _this74.listingSeller.PropertyType = params.get("PropertyType");
-            _this74.listingSeller.Maxrooms = params.get("Maxrooms");
-            _this74.listingSeller.MaxAmount = params.get("MaxAmount");
-            _this74.listingSeller.ownership = params.get("ownership");
-            _this74.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
-            _this74.listingSeller.Maxreception = params.get("Maxreception");
-            _this74.listingSeller.PropertyCondition = params.get("PropertyCondition");
-            _this74.Features = params.get("features");
-            _this74.listingSeller.Country = params.get("Country");
-            _this74.docid = params.get("sellerId");
-            _this74.listingSeller.PropertyFor = params.get("PropertyFor");
+            _this127.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
+            _this127.listingSeller.LookingAddress = params.get("LookingAddress");
+            _this127.listingSeller.LookingTown = params.get("LookingTown");
+            _this127.listingSeller.Lookingstate = params.get("Lookingstate");
+            _this127.listingSeller.Country = params.get("Country");
+            _this127.listingSeller.PropertyType = params.get("PropertyType");
+            _this127.listingSeller.Maxrooms = params.get("Maxrooms");
+            _this127.listingSeller.MaxAmount = params.get("MaxAmount");
+            _this127.listingSeller.ownership = params.get("ownership");
+            _this127.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
+            _this127.listingSeller.Maxreception = params.get("Maxreception");
+            _this127.listingSeller.PropertyCondition = params.get("PropertyCondition");
+            _this127.Features = params.get("features");
+            _this127.listingSeller.Country = params.get("Country");
+            _this127.docid = params.get("sellerId");
+            _this127.listingSeller.PropertyFor = params.get("PropertyFor");
           });
 
           if (this.listingSeller.PropertyFor == "buy") {
@@ -12757,22 +16530,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this75 = this;
+          var _this128 = this;
 
           //Pre - populate the email field
           this.sellerService.getUsers(this.getUser.id).subscribe(function (data) {
-            _this75.dataItem = data;
-            _this75.Name = _this75.dataItem.username, _this75.email = _this75.dataItem.email;
-            _this75.Phone = _this75.dataItem.Phone;
-            _this75.DOB = _this75.dataItem.dob;
-            _this75.Currentaddress = _this75.dataItem.Address;
-            _this75.prefrence = _this75.dataItem.prefrences;
-            _this75.title = _this75.dataItem.title;
-            _this75.Currentpostcode = _this75.dataItem.Currentpostcode;
-            _this75.CurrentAddress = _this75.dataItem.CurrentAddress;
-            _this75.CurrentTown = _this75.dataItem.CurrentTown;
-            _this75.Currentstate = _this75.dataItem.Currentstate;
-            _this75.isLoggedIn = true;
+            _this128.dataItem = data;
+            _this128.Name = _this128.dataItem.username, _this128.email = _this128.dataItem.email;
+            _this128.Phone = _this128.dataItem.Phone;
+            _this128.DOB = _this128.dataItem.dob;
+            _this128.Currentaddress = _this128.dataItem.Address;
+            _this128.prefrence = _this128.dataItem.prefrences;
+            _this128.title = _this128.dataItem.title;
+            _this128.Currentpostcode = _this128.dataItem.Currentpostcode;
+            _this128.CurrentAddress = _this128.dataItem.CurrentAddress;
+            _this128.CurrentTown = _this128.dataItem.CurrentTown;
+            _this128.Currentstate = _this128.dataItem.Currentstate;
+            _this128.isLoggedIn = true;
           });
           this.isLoggedIn = true;
         }
@@ -12803,19 +16576,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 }
               });
             } else if (this.email == null) {
-              var _dialogRef85 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef87 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Email"
                 }
               });
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef86 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef88 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "You need to be over 18 to register on this website"
                 }
               });
             } else if (this.Phone == null) {
-              var _dialogRef87 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef89 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter Phone number"
                 }
@@ -12823,25 +16596,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }
 
             if (this.Currentpostcode == null) {
-              var _dialogRef88 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef90 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Current Postcode"
                 }
               });
             } else if (this.CurrentAddress == null) {
-              var _dialogRef89 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef91 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current Address"
                 }
               });
             } else if (this.CurrentTown == null) {
-              var _dialogRef90 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef92 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current Town"
                 }
               });
             } else if (this.Currentstate == null) {
-              var _dialogRef91 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef93 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current State"
                 }
@@ -12853,61 +16626,61 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           } else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
               if (this.maxamounts == false) {
-                var _dialogRef92 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef94 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select property"
                   }
                 });
               } else if (this.listingSeller.Lookingpostcode == null) {
-                var _dialogRef93 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef95 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Postcodes"
                   }
                 });
               } else if (this.listingSeller.LookingAddress == null) {
-                var _dialogRef94 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef96 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Address"
                   }
                 });
               } else if (this.listingSeller.LookingTown == null) {
-                var _dialogRef95 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef97 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Town"
                   }
                 });
               } else if (this.listingSeller.Lookingstate == null) {
-                var _dialogRef96 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef98 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking State"
                   }
                 });
               } else if (this.listingSeller.Country == null) {
-                var _dialogRef97 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef99 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Country"
                   }
                 });
               } else if (this.listingSeller.PropertyType == null) {
-                var _dialogRef98 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef100 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Property Type"
                   }
                 });
               } else if (this.listingSeller.Maxrooms == null) {
-                var _dialogRef99 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef101 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum of Rooms"
                   }
                 });
               } else if (this.listingSeller.MaxAmount == null) {
-                var _dialogRef100 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef102 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum Amount"
                   }
                 });
               } else if (this.listingSeller.ownership == null) {
-                var _dialogRef101 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef103 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Ownership"
                   }
@@ -12951,11 +16724,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this76 = this;
+          var _this129 = this;
 
           this.isLoading = true;
           this.sellerService.addUsersSellerDetails(this.uid, this.Name, this.email, this.Phone, this.DOB, this.title, this.Currentpostcode, this.CurrentAddress, this.CurrentTown, this.Currentstate).subscribe(function (data) {
-            _this76.isLoading = false;
+            _this129.isLoading = false;
           });
         }
       }, {
@@ -12978,43 +16751,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this77 = this;
+          var _this130 = this;
 
           this.isLoading = true;
           console.log(this.listingSeller.ownership); //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this77.postcodeCoordinates = data;
-            _this77.listingSeller.longitude = _this77.postcodeCoordinates.result.longitude, _this77.listingSeller.latitude = _this77.postcodeCoordinates.result.latitude, _this77.HttpClient.put("http://134.209.93.8/listing-sellers/" + _this77.docid, {
-              Country: _this77.listingSeller.Country,
-              LookingAddress: _this77.listingSeller.LookingAddress,
-              LookingStreetname: _this77.listingSeller.LookingTown,
-              LookingTown: _this77.listingSeller.LookingTown,
-              Lookingpostcode: _this77.listingSeller.Lookingpostcode,
-              Lookingstate: _this77.listingSeller.Lookingstate,
-              MaxAmount: _this77.listingSeller.MaxAmount,
-              Maxbathrooms: _this77.listingSeller.Maxbathrooms,
-              Maxreception: _this77.listingSeller.Maxreception,
-              PropertyCondition: _this77.listingSeller.PropertyCondition,
-              PropertyFor: _this77.listingSeller.PropertyFor,
-              PropertyType: _this77.listingSeller.PropertyType,
-              features: _this77.listingSeller.features,
-              latitude: _this77.listingSeller.latitude,
-              longitude: _this77.listingSeller.longitude,
-              ownership: _this77.listingSeller.ownership,
-              username: _this77.Name,
-              usertitle: _this77.title,
-              UserId: _this77.uid,
-              Maxrooms: _this77.listingSeller.Maxrooms,
-              Currentpostcode: _this77.Currentpostcode,
-              Currentstate: _this77.Currentstate,
-              CurrentTowncity: _this77.CurrentTown,
-              Currentaddress: _this77.CurrentAddress
+            _this130.postcodeCoordinates = data;
+            _this130.listingSeller.longitude = _this130.postcodeCoordinates.result.longitude, _this130.listingSeller.latitude = _this130.postcodeCoordinates.result.latitude, _this130.HttpClient.put("http://134.209.93.8/listing-sellers/" + _this130.docid, {
+              Country: _this130.listingSeller.Country,
+              LookingAddress: _this130.listingSeller.LookingAddress,
+              LookingStreetname: _this130.listingSeller.LookingTown,
+              LookingTown: _this130.listingSeller.LookingTown,
+              Lookingpostcode: _this130.listingSeller.Lookingpostcode,
+              Lookingstate: _this130.listingSeller.Lookingstate,
+              MaxAmount: _this130.listingSeller.MaxAmount,
+              Maxbathrooms: _this130.listingSeller.Maxbathrooms,
+              Maxreception: _this130.listingSeller.Maxreception,
+              PropertyCondition: _this130.listingSeller.PropertyCondition,
+              PropertyFor: _this130.listingSeller.PropertyFor,
+              PropertyType: _this130.listingSeller.PropertyType,
+              features: _this130.listingSeller.features,
+              latitude: _this130.listingSeller.latitude,
+              longitude: _this130.listingSeller.longitude,
+              ownership: _this130.listingSeller.ownership,
+              username: _this130.Name,
+              usertitle: _this130.title,
+              UserId: _this130.uid,
+              Maxrooms: _this130.listingSeller.Maxrooms,
+              Currentpostcode: _this130.Currentpostcode,
+              Currentstate: _this130.Currentstate,
+              CurrentTowncity: _this130.CurrentTown,
+              Currentaddress: _this130.CurrentAddress
             }).subscribe(function (data) {
               console.log(data);
-              _this77.isLoading = false;
+              _this130.isLoading = false;
 
-              var dialogRef = _this77.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+              var dialogRef = _this130.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -13133,26 +16906,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingSellerService, [{
         key: "notificationCustomer",
         value: function notificationCustomer(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee17() {
-            return regeneratorRuntime.wrap(function _callee17$(_context17) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee32() {
+            return regeneratorRuntime.wrap(function _callee32$(_context32) {
               while (1) {
-                switch (_context17.prev = _context17.next) {
+                switch (_context32.prev = _context32.next) {
                   case 0:
-                    _context17.next = 2;
+                    _context32.next = 2;
                     return this.notificationref.doc(key).collection("seller").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context17.sent;
-                    return _context17.abrupt("return", true);
+                    this["return"] = _context32.sent;
+                    return _context32.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context17.stop();
+                    return _context32.stop();
                 }
               }
-            }, _callee17, this);
+            }, _callee32, this);
           }));
         }
       }, {
@@ -13210,21 +16983,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createCustomer",
         value: function createCustomer(uid, docid, listingBuyer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee18() {
-            return regeneratorRuntime.wrap(function _callee18$(_context18) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee33() {
+            return regeneratorRuntime.wrap(function _callee33$(_context33) {
               while (1) {
-                switch (_context18.prev = _context18.next) {
+                switch (_context33.prev = _context33.next) {
                   case 0:
-                    return _context18.abrupt("return", this.db.collection("listingSeller").doc(uid).collection("properties").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
+                    return _context33.abrupt("return", this.db.collection("listingSeller").doc(uid).collection("properties").doc(docid).set(Object.assign({}, listingBuyer)).then(function (data) {
                       console.log("Document successfully written!");
                     }));
 
                   case 2:
                   case "end":
-                    return _context18.stop();
+                    return _context33.stop();
                 }
               }
-            }, _callee18, this);
+            }, _callee33, this);
           }));
         }
       }]);
@@ -13424,19 +17197,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this78 = this;
+          var _this131 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this78.Lookingpostcode = params.get("Lookingpostcode");
-            _this78.ChainStatus = params.get("ChainStatus");
-            _this78.FinancialPosition = params.get("FinancialPosition");
-            _this78.Type = params.get("PropertyType");
-            _this78.Position = params.get("Position");
-            _this78.MaxAmount = params.get("MaxAmount");
-            _this78.MinAmount = params.get("MinAmount");
-            _this78.propertyId = params.get("id");
+            _this131.Lookingpostcode = params.get("Lookingpostcode");
+            _this131.ChainStatus = params.get("ChainStatus");
+            _this131.FinancialPosition = params.get("FinancialPosition");
+            _this131.Type = params.get("PropertyType");
+            _this131.Position = params.get("Position");
+            _this131.MaxAmount = params.get("MaxAmount");
+            _this131.MinAmount = params.get("MinAmount");
+            _this131.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -13449,24 +17222,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this79 = this;
+          var _this132 = this;
 
           this.SellerListingDetails.getBuyerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this79.buyingPosition = res.data().Position;
-            _this79.buyerFinancialPosition = res.data().FinancialPosition;
-            _this79.BuyerPropertyType = res.data().PropertyType;
-            _this79.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this79.BuyerRoommin = res.data().Roommin;
-            _this79.BuyerRoomsmax = res.data().Roomsmax;
-            _this79.username = res.data().username;
-            _this79.usertitle = res.data().usertitle;
-            _this79.buyerPropertyFor = res.data().PropertyFor;
-            _this79.PropertyType = res.data().PropertyType;
-            _this79.Ownership = res.data().Ownership;
-            _this79.LookingStreetname = res.data().LookingStreetname;
-            _this79.Conditions = res.data().Conditions;
-            _this79.Maxbathroom = res.data().Maxbathroom;
-            _this79.Maxreception = res.data().Maxreception;
+            _this132.buyingPosition = res.data().Position;
+            _this132.buyerFinancialPosition = res.data().FinancialPosition;
+            _this132.BuyerPropertyType = res.data().PropertyType;
+            _this132.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this132.BuyerRoommin = res.data().Roommin;
+            _this132.BuyerRoomsmax = res.data().Roomsmax;
+            _this132.username = res.data().username;
+            _this132.usertitle = res.data().usertitle;
+            _this132.buyerPropertyFor = res.data().PropertyFor;
+            _this132.PropertyType = res.data().PropertyType;
+            _this132.Ownership = res.data().Ownership;
+            _this132.LookingStreetname = res.data().LookingStreetname;
+            _this132.Conditions = res.data().Conditions;
+            _this132.Maxbathroom = res.data().Maxbathroom;
+            _this132.Maxreception = res.data().Maxreception;
           });
         }
       }]);
@@ -13659,19 +17432,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this80 = this;
+          var _this133 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this80.Lookingpostcode = params.get("Lookingpostcode");
-            _this80.Type = params.get("PropertyType");
-            _this80.MaxAmount = params.get("MaxAmount");
-            _this80.Maxrooms = params.get("Maxrooms");
-            _this80.Maxreception = params.get("Maxreception");
-            _this80.PropertyCondition = params.get("PropertyCondition");
-            _this80.Maxbathrooms = params.get("Maxbathrooms");
-            _this80.propertyId = params.get("id");
+            _this133.Lookingpostcode = params.get("Lookingpostcode");
+            _this133.Type = params.get("PropertyType");
+            _this133.MaxAmount = params.get("MaxAmount");
+            _this133.Maxrooms = params.get("Maxrooms");
+            _this133.Maxreception = params.get("Maxreception");
+            _this133.PropertyCondition = params.get("PropertyCondition");
+            _this133.Maxbathrooms = params.get("Maxbathrooms");
+            _this133.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -13684,21 +17457,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this81 = this;
+          var _this134 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this81.userName = res.data().username;
-            _this81.usertitle = res.data().usertitle;
-            _this81.PropertyFor = res.data().PropertyFor;
-            _this81.price = res.data().MaxAmount;
-            _this81.postcode = res.data().Lookingpostcode;
-            _this81.Streetname = res.data().LookingStreetname;
-            _this81.PropertyTypes = res.data().PropertyType;
-            _this81.Maxroom = res.data().Maxrooms;
-            _this81.ownerships = res.data().ownership;
-            _this81.Bathrooms = res.data().Maxbathrooms;
-            _this81.Reception = res.data().Maxreception;
-            _this81.features = res.data().features;
+            _this134.userName = res.data().username;
+            _this134.usertitle = res.data().usertitle;
+            _this134.PropertyFor = res.data().PropertyFor;
+            _this134.price = res.data().MaxAmount;
+            _this134.postcode = res.data().Lookingpostcode;
+            _this134.Streetname = res.data().LookingStreetname;
+            _this134.PropertyTypes = res.data().PropertyType;
+            _this134.Maxroom = res.data().Maxrooms;
+            _this134.ownerships = res.data().ownership;
+            _this134.Bathrooms = res.data().Maxbathrooms;
+            _this134.Reception = res.data().Maxreception;
+            _this134.features = res.data().features;
           });
         }
       }]);
@@ -13915,12 +17688,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this82 = this;
+          var _this135 = this;
 
           // Buyer Property Fetch details 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this82.propertyRequirementDetails.push({
+              _this135.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -13929,7 +17702,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this82.propertyDetails.push({
+              _this135.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -14130,7 +17903,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerAwaitingDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this83 = this;
+          var _this136 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -14139,21 +17912,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this83.Lookingpostcode = params.get("Lookingpostcode");
-            _this83.Lookingstate = params.get("Lookingstate");
-            _this83.LookingAddress = params.get("LookingAddress");
-            _this83.norooms = params.get("Roomsmax");
-            _this83.PropertyCondition = params.get("PropertyCondition");
-            _this83.MaxAmount = params.get("MaxAmount");
-            _this83.PropertyType = params.get("PropertyType");
-            _this83.ownership = params.get("ownership");
-            _this83.features = params.get("features");
-            _this83.matchStatus = params.get("matchStatus");
-            _this83.expressed = params.get("expressed");
-            _this83.BuyerUserId = params.get("BuyerUserId");
-            _this83.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this83.SellerPropertyId = params.get("SellerPropertyId");
-            _this83.SellerUSerId = params.get("SellerUSerId");
+            _this136.Lookingpostcode = params.get("Lookingpostcode");
+            _this136.Lookingstate = params.get("Lookingstate");
+            _this136.LookingAddress = params.get("LookingAddress");
+            _this136.norooms = params.get("Roomsmax");
+            _this136.PropertyCondition = params.get("PropertyCondition");
+            _this136.MaxAmount = params.get("MaxAmount");
+            _this136.PropertyType = params.get("PropertyType");
+            _this136.ownership = params.get("ownership");
+            _this136.features = params.get("features");
+            _this136.matchStatus = params.get("matchStatus");
+            _this136.expressed = params.get("expressed");
+            _this136.BuyerUserId = params.get("BuyerUserId");
+            _this136.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this136.SellerPropertyId = params.get("SellerPropertyId");
+            _this136.SellerUSerId = params.get("SellerUSerId");
           });
         }
       }, {
@@ -14283,7 +18056,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this84 = this;
+          var _this137 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -14292,31 +18065,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this84.Lookingpostcode = params.get("Lookingpostcode");
-            _this84.Lookingstate = params.get("Lookingstate");
-            _this84.LookingAddress = params.get("LookingAddress");
-            _this84.norooms = params.get("Roomsmax");
-            _this84.PropertyCondition = params.get("PropertyCondition");
-            _this84.MaxAmount = params.get("MaxAmount");
-            _this84.PropertyType = params.get("PropertyType");
-            _this84.ownership = params.get("ownership");
-            _this84.features = params.get("features");
-            _this84.matchStatus = params.get("matchStatus");
-            _this84.propertyId = params.get("propertyId");
-            _this84.expressed = params.get("expressed");
-            _this84.userId = params.get("UserId");
-            _this84.sellerId = params.get("sellerId");
-            _this84.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this84.BuyerUserId = params.get("BuyerUserId");
-            _this84.SellerPropertyId = params.get("SellerPropertyId");
-            _this84.SellerUserId = params.get("SellerUserId");
+            _this137.Lookingpostcode = params.get("Lookingpostcode");
+            _this137.Lookingstate = params.get("Lookingstate");
+            _this137.LookingAddress = params.get("LookingAddress");
+            _this137.norooms = params.get("Roomsmax");
+            _this137.PropertyCondition = params.get("PropertyCondition");
+            _this137.MaxAmount = params.get("MaxAmount");
+            _this137.PropertyType = params.get("PropertyType");
+            _this137.ownership = params.get("ownership");
+            _this137.features = params.get("features");
+            _this137.matchStatus = params.get("matchStatus");
+            _this137.propertyId = params.get("propertyId");
+            _this137.expressed = params.get("expressed");
+            _this137.userId = params.get("UserId");
+            _this137.sellerId = params.get("sellerId");
+            _this137.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this137.BuyerUserId = params.get("BuyerUserId");
+            _this137.SellerPropertyId = params.get("SellerPropertyId");
+            _this137.SellerUserId = params.get("SellerUserId");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.HttpService.getMatchesSeller().subscribe(function (sellerData) {
             sellerData.forEach(function (element) {
-              if (element.myId == _this84.userId && element.matchStatus == "pending") {
-                _this84.buyerProperty = {
+              if (element.myId == _this137.userId && element.matchStatus == "pending") {
+                _this137.buyerProperty = {
                   detail: element,
                   propertyId: element.id
                 };
@@ -14325,26 +18098,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
           this.HttpService.getPropertyIdMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this84.uid && element.propertyId == _this84.propertyId && element.Type == "BuyerSelected") {
-                _this84.expressed = "true";
+              if (element.UserId == _this137.uid && element.propertyId == _this137.propertyId && element.Type == "BuyerSelected") {
+                _this137.expressed = "true";
               }
             });
           });
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this84.notificationOverlay = data;
-            _this84.notificationContent = _this84.notificationOverlay[0].BuyerMatchesConfirmInterestNotification;
+            _this137.notificationOverlay = data;
+            _this137.notificationContent = _this137.notificationOverlay[0].BuyerMatchesConfirmInterestNotification;
           });
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this85 = this;
+          var _this138 = this;
 
           this["return"] = this.MatchesBuyerService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this85.createSellerNotification();
+              _this138.createSellerNotification();
 
-              _this85.backClicked();
+              _this138.backClicked();
             }
           });
         }
@@ -14369,7 +18142,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createOther",
         value: function createOther() {
-          var _this86 = this;
+          var _this139 = this;
 
           this.matchesSeller = {
             BuyerDetails: this.buyerDetails,
@@ -14381,7 +18154,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           };
           this["return"] = this.MatchesBuyerService.matchesBuyerCreate(this.userId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this86.addToExpressCollection();
+              _this139.addToExpressCollection();
             }
           });
         }
@@ -14398,30 +18171,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this87 = this;
+          var _this140 = this;
 
           this.MatchesBuyerService.getSeller(this.SellerUserId, this.SellerPropertyId).then(function (res) {
-            _this87.userName = res.data().username;
-            _this87.usertitle = res.data().usertitle;
-            _this87.PropertyFor = res.data().PropertyFor;
-            _this87.price = res.data().MaxAmount;
-            _this87.postcode = res.data().Lookingpostcode;
-            _this87.Streetname = res.data().LookingStreetname;
-            _this87.PropertyTypes = res.data().PropertyType;
-            _this87.Maxroom = res.data().Maxrooms;
-            _this87.ownerships = res.data().ownership;
-            _this87.Bathrooms = res.data().Maxbathrooms;
-            _this87.Reception = res.data().Maxreception;
+            _this140.userName = res.data().username;
+            _this140.usertitle = res.data().usertitle;
+            _this140.PropertyFor = res.data().PropertyFor;
+            _this140.price = res.data().MaxAmount;
+            _this140.postcode = res.data().Lookingpostcode;
+            _this140.Streetname = res.data().LookingStreetname;
+            _this140.PropertyTypes = res.data().PropertyType;
+            _this140.Maxroom = res.data().Maxrooms;
+            _this140.ownerships = res.data().ownership;
+            _this140.Bathrooms = res.data().Maxbathrooms;
+            _this140.Reception = res.data().Maxreception;
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this88 = this;
+          var _this141 = this;
 
           console.log(this.BuyerUserId, this.BuyerPropertyId);
           this.MatchesBuyerService.getBuyer(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this88.buyerDetails = res.data();
+            _this141.buyerDetails = res.data();
           });
         }
       }]);
@@ -14511,12 +18284,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MatchesBuyerService, [{
         key: "ExpressInterest",
         value: function ExpressInterest(uid, propertyId) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee19() {
-            return regeneratorRuntime.wrap(function _callee19$(_context19) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee34() {
+            return regeneratorRuntime.wrap(function _callee34$(_context34) {
               while (1) {
-                switch (_context19.prev = _context19.next) {
+                switch (_context34.prev = _context34.next) {
                   case 0:
-                    _context19.next = 2;
+                    _context34.next = 2;
                     return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
                       propertyId: propertyId
                     }).then(function (data) {
@@ -14524,40 +18297,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     });
 
                   case 2:
-                    this["return"] = _context19.sent;
-                    return _context19.abrupt("return", true);
+                    this["return"] = _context34.sent;
+                    return _context34.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context19.stop();
+                    return _context34.stop();
                 }
               }
-            }, _callee19, this);
+            }, _callee34, this);
           }));
         }
       }, {
         key: "createNotification",
         value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee20() {
-            return regeneratorRuntime.wrap(function _callee20$(_context20) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee35() {
+            return regeneratorRuntime.wrap(function _callee35$(_context35) {
               while (1) {
-                switch (_context20.prev = _context20.next) {
+                switch (_context35.prev = _context35.next) {
                   case 0:
-                    _context20.next = 2;
+                    _context35.next = 2;
                     return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context20.sent;
-                    return _context20.abrupt("return", true);
+                    this["return"] = _context35.sent;
+                    return _context35.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context20.stop();
+                    return _context35.stop();
                 }
               }
-            }, _callee20, this);
+            }, _callee35, this);
           }));
         }
       }, {
@@ -14568,26 +18341,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "matchesBuyerCreate",
         value: function matchesBuyerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee21() {
-            return regeneratorRuntime.wrap(function _callee21$(_context21) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee36() {
+            return regeneratorRuntime.wrap(function _callee36$(_context36) {
               while (1) {
-                switch (_context21.prev = _context21.next) {
+                switch (_context36.prev = _context36.next) {
                   case 0:
-                    _context21.next = 2;
+                    _context36.next = 2;
                     return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("matchesBuyer successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context21.sent;
-                    return _context21.abrupt("return", true);
+                    this["return"] = _context36.sent;
+                    return _context36.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context21.stop();
+                    return _context36.stop();
                 }
               }
-            }, _callee21, this);
+            }, _callee36, this);
           }));
         }
       }, {
@@ -14671,12 +18444,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectedMyMatchesService, [{
         key: "ExpressInterest",
         value: function ExpressInterest(uid, propertyId) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee22() {
-            return regeneratorRuntime.wrap(function _callee22$(_context22) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee37() {
+            return regeneratorRuntime.wrap(function _callee37$(_context37) {
               while (1) {
-                switch (_context22.prev = _context22.next) {
+                switch (_context37.prev = _context37.next) {
                   case 0:
-                    _context22.next = 2;
+                    _context37.next = 2;
                     return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
                       propertyId: propertyId
                     }).then(function (data) {
@@ -14684,40 +18457,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     });
 
                   case 2:
-                    this["return"] = _context22.sent;
-                    return _context22.abrupt("return", true);
+                    this["return"] = _context37.sent;
+                    return _context37.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context22.stop();
+                    return _context37.stop();
                 }
               }
-            }, _callee22, this);
+            }, _callee37, this);
           }));
         }
       }, {
         key: "createNotification",
         value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee23() {
-            return regeneratorRuntime.wrap(function _callee23$(_context23) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee38() {
+            return regeneratorRuntime.wrap(function _callee38$(_context38) {
               while (1) {
-                switch (_context23.prev = _context23.next) {
+                switch (_context38.prev = _context38.next) {
                   case 0:
-                    _context23.next = 2;
+                    _context38.next = 2;
                     return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context23.sent;
-                    return _context23.abrupt("return", true);
+                    this["return"] = _context38.sent;
+                    return _context38.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context23.stop();
+                    return _context38.stop();
                 }
               }
-            }, _callee23, this);
+            }, _callee38, this);
           }));
         }
       }]);
@@ -14787,37 +18560,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MatchesSellerPending, [{
         key: "matchesSellerCreate",
         value: function matchesSellerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee24() {
-            return regeneratorRuntime.wrap(function _callee24$(_context24) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee39() {
+            return regeneratorRuntime.wrap(function _callee39$(_context39) {
               while (1) {
-                switch (_context24.prev = _context24.next) {
+                switch (_context39.prev = _context39.next) {
                   case 0:
-                    _context24.next = 2;
+                    _context39.next = 2;
                     return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context24.sent;
-                    return _context24.abrupt("return", true);
+                    this["return"] = _context39.sent;
+                    return _context39.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context24.stop();
+                    return _context39.stop();
                 }
               }
-            }, _callee24, this);
+            }, _callee39, this);
           }));
         }
       }, {
         key: "ExpressInterest",
         value: function ExpressInterest(uid, propertyId) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee25() {
-            return regeneratorRuntime.wrap(function _callee25$(_context25) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee40() {
+            return regeneratorRuntime.wrap(function _callee40$(_context40) {
               while (1) {
-                switch (_context25.prev = _context25.next) {
+                switch (_context40.prev = _context40.next) {
                   case 0:
-                    _context25.next = 2;
+                    _context40.next = 2;
                     return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
                       propertyId: propertyId
                     }).then(function (data) {
@@ -14825,40 +18598,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     });
 
                   case 2:
-                    this["return"] = _context25.sent;
-                    return _context25.abrupt("return", true);
+                    this["return"] = _context40.sent;
+                    return _context40.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context25.stop();
+                    return _context40.stop();
                 }
               }
-            }, _callee25, this);
+            }, _callee40, this);
           }));
         }
       }, {
         key: "createNotification",
         value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee26() {
-            return regeneratorRuntime.wrap(function _callee26$(_context26) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee41() {
+            return regeneratorRuntime.wrap(function _callee41$(_context41) {
               while (1) {
-                switch (_context26.prev = _context26.next) {
+                switch (_context41.prev = _context41.next) {
                   case 0:
-                    _context26.next = 2;
+                    _context41.next = 2;
                     return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context26.sent;
-                    return _context26.abrupt("return", true);
+                    this["return"] = _context41.sent;
+                    return _context41.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context26.stop();
+                    return _context41.stop();
                 }
               }
-            }, _callee26, this);
+            }, _callee41, this);
           }));
         }
       }, {
@@ -14978,7 +18751,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this89 = this;
+          var _this142 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -14987,18 +18760,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this89.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
+            _this142.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
 
-            _this89.FinancialPosition = params.get("FinancialPosition");
-            _this89.Type = params.get("PropertyType");
-            _this89.Position = params.get("Position");
-            _this89.matchStatus = params.get("matchStatus");
-            _this89.propertyId = params.get("PropBuyerId");
-            _this89.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this89.BuyerUserId = params.get("BuyerUserId");
-            console.log(_this89.BuyerPropertyId);
-            console.log(_this89.BuyerUserId);
-            console.log(_this89.propertyId);
+            _this142.FinancialPosition = params.get("FinancialPosition");
+            _this142.Type = params.get("PropertyType");
+            _this142.Position = params.get("Position");
+            _this142.matchStatus = params.get("matchStatus");
+            _this142.propertyId = params.get("PropBuyerId");
+            _this142.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this142.BuyerUserId = params.get("BuyerUserId");
+            console.log(_this142.BuyerPropertyId);
+            console.log(_this142.BuyerUserId);
+            console.log(_this142.propertyId);
           });
           this.getBuyerData();
         }
@@ -15010,26 +18783,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this90 = this;
+          var _this143 = this;
 
           this.MatchesSellerPendingService.getBuyerRequirement(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this90.buyingPosition = res.data().Position;
-            _this90.buyerFinancialPosition = res.data().FinancialPosition;
-            _this90.BuyerPropertyType = res.data().PropertyType;
-            _this90.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this90.BuyerRoommin = res.data().Roommin;
-            _this90.BuyerRoomsmax = res.data().Roomsmax;
-            _this90.username = res.data().username;
-            _this90.usertitle = res.data().usertitle;
-            _this90.buyerPropertyFor = res.data().PropertyFor;
-            _this90.PropertyType = res.data().PropertyType;
-            _this90.Ownership = res.data().Ownership;
-            _this90.LookingStreetname = res.data().LookingStreetname;
-            _this90.Conditions = res.data().Conditions;
-            _this90.Maxbathroom = res.data().Maxbathroom;
-            _this90.Maxreception = res.data().Maxreception;
-            _this90.MinAmount = res.data().MinAmount;
-            _this90.MaxAmount = res.data().MaxAmount;
+            _this143.buyingPosition = res.data().Position;
+            _this143.buyerFinancialPosition = res.data().FinancialPosition;
+            _this143.BuyerPropertyType = res.data().PropertyType;
+            _this143.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this143.BuyerRoommin = res.data().Roommin;
+            _this143.BuyerRoomsmax = res.data().Roomsmax;
+            _this143.username = res.data().username;
+            _this143.usertitle = res.data().usertitle;
+            _this143.buyerPropertyFor = res.data().PropertyFor;
+            _this143.PropertyType = res.data().PropertyType;
+            _this143.Ownership = res.data().Ownership;
+            _this143.LookingStreetname = res.data().LookingStreetname;
+            _this143.Conditions = res.data().Conditions;
+            _this143.Maxbathroom = res.data().Maxbathroom;
+            _this143.Maxreception = res.data().Maxreception;
+            _this143.MinAmount = res.data().MinAmount;
+            _this143.MaxAmount = res.data().MaxAmount;
           });
         }
       }]);
@@ -15159,7 +18932,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this91 = this;
+          var _this144 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -15170,39 +18943,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this91.sellerProperty.push({
+              _this144.sellerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this91.propertyLength = _this91.sellerProperty.length;
+              _this144.propertyLength = _this144.sellerProperty.length;
             });
 
-            _this91.getExpressedListingIds();
+            _this144.getExpressedListingIds();
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this91.buyerProperty.push({
+              _this144.buyerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this91.sellerLength = _this91.buyerProperty.length;
+              _this144.sellerLength = _this144.buyerProperty.length;
 
-              _this91.getExpressedListingIds();
+              _this144.getExpressedListingIds();
             });
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this92 = this;
+          var _this145 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this92.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this92.distinctExpressedUid.push(item.data().propertyId);
+              if (_this145.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this145.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -15315,26 +19088,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createNotification",
         value: function createNotification(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee27() {
-            return regeneratorRuntime.wrap(function _callee27$(_context27) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee42() {
+            return regeneratorRuntime.wrap(function _callee42$(_context42) {
               while (1) {
-                switch (_context27.prev = _context27.next) {
+                switch (_context42.prev = _context42.next) {
                   case 0:
-                    _context27.next = 2;
+                    _context42.next = 2;
                     return this.customersRef.doc(key).collection("notification").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context27.sent;
-                    return _context27.abrupt("return", true);
+                    this["return"] = _context42.sent;
+                    return _context42.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context27.stop();
+                    return _context42.stop();
                 }
               }
-            }, _callee27, this);
+            }, _callee42, this);
           }));
         }
       }, {
@@ -15472,7 +19245,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this93 = this;
+          var _this146 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -15482,29 +19255,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             console.log(params);
-            _this93.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this93.ChainStatus = params.get("ChainStatus");
-            _this93.norooms = params.get("Roomsmax");
-            _this93.PropertyCondition = params.get("PropertyCondition");
-            _this93.Conditions = params.get("Conditions");
-            _this93.MinAmount = params.get("MinAmount");
-            _this93.Type = params.get("Type");
-            _this93.MaxAmount = params.get("MaxAmount");
-            _this93.id = params.get("id");
-            _this93.propertyId = params.get("CurrentpropertyId");
-            _this93.PropertyFor = params.get("PropertyFor");
-            _this93.BuyerUserId = params.get("buyerId");
-            _this93.BuyerPropertyId = params.get("propertyId");
-            _this93.SellerPropertyId = params.get("UserId");
+            _this146.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this146.ChainStatus = params.get("ChainStatus");
+            _this146.norooms = params.get("Roomsmax");
+            _this146.PropertyCondition = params.get("PropertyCondition");
+            _this146.Conditions = params.get("Conditions");
+            _this146.MinAmount = params.get("MinAmount");
+            _this146.Type = params.get("Type");
+            _this146.MaxAmount = params.get("MaxAmount");
+            _this146.id = params.get("id");
+            _this146.propertyId = params.get("CurrentpropertyId");
+            _this146.PropertyFor = params.get("PropertyFor");
+            _this146.BuyerUserId = params.get("buyerId");
+            _this146.BuyerPropertyId = params.get("propertyId");
+            _this146.SellerPropertyId = params.get("UserId");
           });
           this.AgentService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this93.agents.push({
+              _this146.agents.push({
                 Detail: elements.data(),
                 uid: elements.data().uid
               });
 
-              _this93.testagents.push(elements.data().uid);
+              _this146.testagents.push(elements.data().uid);
             });
           }); // this.HttpService.getAgents().subscribe((agent) => {
           //   agent.forEach(elements => {
@@ -15542,7 +19315,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
-          var _this94 = this;
+          var _this147 = this;
 
           this.notification = {
             time: this.now,
@@ -15553,7 +19326,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             Lastseen: null
           };
           this["return"] = this.AgentService.createNotification(this.BuyerUserId, this.notification).then(function (data) {
-            _this94._router.navigate(["/mymatches"]);
+            _this147._router.navigate(["/mymatches"]);
           });
         }
       }, {
@@ -15569,19 +19342,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "agentDetailEntry",
         value: function agentDetailEntry(agentuid) {
-          var _this95 = this;
+          var _this148 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this95.sellerDetails = rest.data();
+            _this148.sellerDetails = rest.data();
 
-            _this95.AgentService.getBuyerrDetails(_this95.BuyerUserId, _this95.BuyerPropertyId).then(function (rest) {
-              _this95.BuyerDetails = rest.data();
-              _this95.details = {
-                Seller: _this95.sellerDetails,
-                Buyer: _this95.BuyerDetails,
+            _this148.AgentService.getBuyerrDetails(_this148.BuyerUserId, _this148.BuyerPropertyId).then(function (rest) {
+              _this148.BuyerDetails = rest.data();
+              _this148.details = {
+                Seller: _this148.sellerDetails,
+                Buyer: _this148.BuyerDetails,
                 UserId: agentuid
               };
-              _this95["return"] = _this95.AgentService.matchesAgentSellerCreate(agentuid, _this95.details).then(function (data) {});
+              _this148["return"] = _this148.AgentService.matchesAgentSellerCreate(agentuid, _this148.details).then(function (data) {});
             });
           });
           this.BuyerDetails = {
@@ -15613,20 +19386,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this96 = this;
+          var _this149 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this96.sellerDetails = rest.data();
+            _this149.sellerDetails = rest.data();
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this97 = this;
+          var _this150 = this;
 
           console.log(this.BuyerUserId, this.BuyerPropertyId);
           this.AgentService.getBuyerrDetails(this.BuyerUserId, this.BuyerPropertyId).then(function (rest) {
-            _this97.BuyerDetails = rest.data();
+            _this150.BuyerDetails = rest.data();
           });
         }
       }]);
@@ -15726,12 +19499,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "ExpressInterest",
         value: function ExpressInterest(uid, propertyId) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee28() {
-            return regeneratorRuntime.wrap(function _callee28$(_context28) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee43() {
+            return regeneratorRuntime.wrap(function _callee43$(_context43) {
               while (1) {
-                switch (_context28.prev = _context28.next) {
+                switch (_context43.prev = _context43.next) {
                   case 0:
-                    _context28.next = 2;
+                    _context43.next = 2;
                     return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
                       propertyId: propertyId
                     }).then(function (data) {
@@ -15739,66 +19512,66 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     });
 
                   case 2:
-                    this["return"] = _context28.sent;
-                    return _context28.abrupt("return", true);
+                    this["return"] = _context43.sent;
+                    return _context43.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context28.stop();
+                    return _context43.stop();
                 }
               }
-            }, _callee28, this);
+            }, _callee43, this);
           }));
         }
       }, {
         key: "createNotification",
         value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee29() {
-            return regeneratorRuntime.wrap(function _callee29$(_context29) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee44() {
+            return regeneratorRuntime.wrap(function _callee44$(_context44) {
               while (1) {
-                switch (_context29.prev = _context29.next) {
+                switch (_context44.prev = _context44.next) {
                   case 0:
-                    _context29.next = 2;
+                    _context44.next = 2;
                     return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context29.sent;
-                    return _context29.abrupt("return", true);
+                    this["return"] = _context44.sent;
+                    return _context44.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context29.stop();
+                    return _context44.stop();
                 }
               }
-            }, _callee29, this);
+            }, _callee44, this);
           }));
         } //create Database Buyer Matches
 
       }, {
         key: "matchesSellerCreate",
         value: function matchesSellerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee30() {
-            return regeneratorRuntime.wrap(function _callee30$(_context30) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee45() {
+            return regeneratorRuntime.wrap(function _callee45$(_context45) {
               while (1) {
-                switch (_context30.prev = _context30.next) {
+                switch (_context45.prev = _context45.next) {
                   case 0:
-                    _context30.next = 2;
+                    _context45.next = 2;
                     return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context30.sent;
-                    return _context30.abrupt("return", true);
+                    this["return"] = _context45.sent;
+                    return _context45.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context30.stop();
+                    return _context45.stop();
                 }
               }
-            }, _callee30, this);
+            }, _callee45, this);
           }));
         }
       }, {
@@ -15819,76 +19592,76 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "matchesBuyerCreate",
         value: function matchesBuyerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee31() {
-            return regeneratorRuntime.wrap(function _callee31$(_context31) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee46() {
+            return regeneratorRuntime.wrap(function _callee46$(_context46) {
               while (1) {
-                switch (_context31.prev = _context31.next) {
+                switch (_context46.prev = _context46.next) {
                   case 0:
-                    _context31.next = 2;
+                    _context46.next = 2;
                     return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("matchesBuyer successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context31.sent;
-                    return _context31.abrupt("return", true);
+                    this["return"] = _context46.sent;
+                    return _context46.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context31.stop();
+                    return _context46.stop();
                 }
               }
-            }, _callee31, this);
+            }, _callee46, this);
           }));
         }
       }, {
         key: "matchesAgentBuyerCreate",
         value: function matchesAgentBuyerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee32() {
-            return regeneratorRuntime.wrap(function _callee32$(_context32) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee47() {
+            return regeneratorRuntime.wrap(function _callee47$(_context47) {
               while (1) {
-                switch (_context32.prev = _context32.next) {
+                switch (_context47.prev = _context47.next) {
                   case 0:
-                    _context32.next = 2;
+                    _context47.next = 2;
                     return this.db.collection("agentBuyer").doc(key).collection("agentBuyer").add(Object.assign({}, customer)).then(function (data) {
                       console.log("agentbuyer successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context32.sent;
-                    return _context32.abrupt("return", true);
+                    this["return"] = _context47.sent;
+                    return _context47.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context32.stop();
+                    return _context47.stop();
                 }
               }
-            }, _callee32, this);
+            }, _callee47, this);
           }));
         }
       }, {
         key: "matchesAgentSellerCreate",
         value: function matchesAgentSellerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee33() {
-            return regeneratorRuntime.wrap(function _callee33$(_context33) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee48() {
+            return regeneratorRuntime.wrap(function _callee48$(_context48) {
               while (1) {
-                switch (_context33.prev = _context33.next) {
+                switch (_context48.prev = _context48.next) {
                   case 0:
-                    _context33.next = 2;
+                    _context48.next = 2;
                     return this.db.collection("agentSeller").doc(key).collection("PropertyDetails").add(Object.assign({}, customer)).then(function (data) {
                       console.log("agentSeller successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context33.sent;
-                    return _context33.abrupt("return", true);
+                    this["return"] = _context48.sent;
+                    return _context48.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context33.stop();
+                    return _context48.stop();
                 }
               }
-            }, _callee33, this);
+            }, _callee48, this);
           }));
         }
       }]);
@@ -16015,7 +19788,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this98 = this;
+          var _this151 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -16024,24 +19797,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this98.Lookingpostcode = params.get("Lookingpostcode");
-            _this98.ChainStatus = params.get("ChainStatus");
-            _this98.Conditions = params.get("Conditions");
-            _this98.Position = params.get("Position");
-            _this98.MinAmount = params.get("MinAmount");
-            _this98.MaxAmount = params.get("MaxAmount");
-            _this98.Type = params.get("PropertyType");
-            _this98.matchStatus = params.get("matchStatus");
-            _this98.propertyId = params.get("propertyId").trim();
-            _this98.expressed = params.get("expressed");
-            _this98.PropertyFor = params.get("PropertyFor");
-            _this98.buyerPropertyId = params.get("id");
-            _this98.buyerUserId = params.get("UserId");
-            _this98.SellerPropertyID = params.get("buyerId");
+            _this151.Lookingpostcode = params.get("Lookingpostcode");
+            _this151.ChainStatus = params.get("ChainStatus");
+            _this151.Conditions = params.get("Conditions");
+            _this151.Position = params.get("Position");
+            _this151.MinAmount = params.get("MinAmount");
+            _this151.MaxAmount = params.get("MaxAmount");
+            _this151.Type = params.get("PropertyType");
+            _this151.matchStatus = params.get("matchStatus");
+            _this151.propertyId = params.get("propertyId").trim();
+            _this151.expressed = params.get("expressed");
+            _this151.PropertyFor = params.get("PropertyFor");
+            _this151.buyerPropertyId = params.get("id");
+            _this151.buyerUserId = params.get("UserId");
+            _this151.SellerPropertyID = params.get("buyerId");
           });
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this98.notificationContent = element.data().MynestimateBuyerDetails;
+              _this151.notificationContent = element.data().MynestimateBuyerDetails;
             });
           });
           this.getBuyerData();
@@ -16064,17 +19837,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "check",
         value: function check() {
-          var _this99 = this;
+          var _this152 = this;
 
           this.HttpService.getPropertyIdMatches().subscribe(function (data) {
             console.log(data.length);
             data.forEach(function (elements) {
-              if (elements.Type == "Agent_confirmed" && elements.UserId == _this99.uid && elements.PropertyId == _this99.propertyId) {
-                _this99.expressed = "true";
+              if (elements.Type == "Agent_confirmed" && elements.UserId == _this152.uid && elements.PropertyId == _this152.propertyId) {
+                _this152.expressed = "true";
               }
 
-              if (elements.Type != "Agent_confirmed" && elements.UserId != _this99.uid && elements.PropertyId != _this99.propertyId) {
-                _this99.expressed = "false";
+              if (elements.Type != "Agent_confirmed" && elements.UserId != _this152.uid && elements.PropertyId != _this152.propertyId) {
+                _this152.expressed = "false";
               }
             });
           });
@@ -16082,25 +19855,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this100 = this;
+          var _this153 = this;
 
           this.SelectedMyMatchesService.getBuyerRequirement(this.buyerUserId, this.buyerPropertyId).then(function (res) {
-            _this100.buyerDetails = res.data();
-            _this100.buyingPosition = res.data().Position;
-            _this100.buyerFinancialPosition = res.data().FinancialPosition;
-            _this100.BuyerPropertyType = res.data().PropertyType;
-            _this100.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this100.BuyerRoommin = res.data().Roommin;
-            _this100.BuyerRoomsmax = res.data().Roomsmax;
-            _this100.username = res.data().username;
-            _this100.usertitle = res.data().usertitle;
-            _this100.buyerPropertyFor = res.data().PropertyFor;
-            _this100.PropertyType = res.data().PropertyType;
-            _this100.Ownership = res.data().Ownership;
-            _this100.LookingStreetname = res.data().LookingStreetname;
-            _this100.Conditions = res.data().Conditions;
-            _this100.Maxbathroom = res.data().Maxbathroom;
-            _this100.Maxreception = res.data().Maxreception;
+            _this153.buyerDetails = res.data();
+            _this153.buyingPosition = res.data().Position;
+            _this153.buyerFinancialPosition = res.data().FinancialPosition;
+            _this153.BuyerPropertyType = res.data().PropertyType;
+            _this153.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this153.BuyerRoommin = res.data().Roommin;
+            _this153.BuyerRoomsmax = res.data().Roomsmax;
+            _this153.username = res.data().username;
+            _this153.usertitle = res.data().usertitle;
+            _this153.buyerPropertyFor = res.data().PropertyFor;
+            _this153.PropertyType = res.data().PropertyType;
+            _this153.Ownership = res.data().Ownership;
+            _this153.LookingStreetname = res.data().LookingStreetname;
+            _this153.Conditions = res.data().Conditions;
+            _this153.Maxbathroom = res.data().Maxbathroom;
+            _this153.Maxreception = res.data().Maxreception;
           });
         }
       }]);
@@ -16188,37 +19961,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchesService, [{
         key: "matchesSellerCreate",
         value: function matchesSellerCreate(key, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee34() {
-            return regeneratorRuntime.wrap(function _callee34$(_context34) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee49() {
+            return regeneratorRuntime.wrap(function _callee49$(_context49) {
               while (1) {
-                switch (_context34.prev = _context34.next) {
+                switch (_context49.prev = _context49.next) {
                   case 0:
-                    _context34.next = 2;
+                    _context49.next = 2;
                     return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context34.sent;
-                    return _context34.abrupt("return", true);
+                    this["return"] = _context49.sent;
+                    return _context49.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context34.stop();
+                    return _context49.stop();
                 }
               }
-            }, _callee34, this);
+            }, _callee49, this);
           }));
         }
       }, {
         key: "ExpressInterest",
         value: function ExpressInterest(uid, propertyId) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee35() {
-            return regeneratorRuntime.wrap(function _callee35$(_context35) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee50() {
+            return regeneratorRuntime.wrap(function _callee50$(_context50) {
               while (1) {
-                switch (_context35.prev = _context35.next) {
+                switch (_context50.prev = _context50.next) {
                   case 0:
-                    _context35.next = 2;
+                    _context50.next = 2;
                     return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").add({
                       propertyId: propertyId
                     }).then(function (data) {
@@ -16226,40 +19999,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     });
 
                   case 2:
-                    this["return"] = _context35.sent;
-                    return _context35.abrupt("return", true);
+                    this["return"] = _context50.sent;
+                    return _context50.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context35.stop();
+                    return _context50.stop();
                 }
               }
-            }, _callee35, this);
+            }, _callee50, this);
           }));
         }
       }, {
         key: "createNotification",
         value: function createNotification(UserId, customer) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee36() {
-            return regeneratorRuntime.wrap(function _callee36$(_context36) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee51() {
+            return regeneratorRuntime.wrap(function _callee51$(_context51) {
               while (1) {
-                switch (_context36.prev = _context36.next) {
+                switch (_context51.prev = _context51.next) {
                   case 0:
-                    _context36.next = 2;
+                    _context51.next = 2;
                     return this.db.collection("notification").doc(UserId).collection("Received").add(Object.assign({}, customer)).then(function (data) {
                       console.log("Document successfully written!");
                     });
 
                   case 2:
-                    this["return"] = _context36.sent;
-                    return _context36.abrupt("return", true);
+                    this["return"] = _context51.sent;
+                    return _context51.abrupt("return", true);
 
                   case 4:
                   case "end":
-                    return _context36.stop();
+                    return _context51.stop();
                 }
               }
-            }, _callee36, this);
+            }, _callee51, this);
           }));
         }
       }, {
@@ -16593,30 +20366,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this101 = this;
+          var _this154 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this101.uid) {
-                _this101.user.Name = element.data().Name;
-                _this101.user.Email = element.data().email;
+              if (element.data().uid == _this154.uid) {
+                _this154.user.Name = element.data().Name;
+                _this154.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this101.user.DOB = element.data().DOB.toDate();
+                  _this154.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this101.user.Phone = element.data().Phone;
+                  _this154.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this101.user.Currentaddress = element.data().Currentaddress;
+                  _this154.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this101.user.prefrence = element.data().prefrence;
+                  _this154.user.prefrence = element.data().prefrence;
                 }
               }
             });
@@ -16634,7 +20407,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.NameView.nativeElement.focus();
             document.getElementById("name").style.border = "5px solid red";
           } else if (email == null) {
-            var _dialogRef102 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef104 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Please fill email id"
               }
@@ -16642,7 +20415,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
             document.getElementById("name").style.border = "5px solid red";
           } else if (Phone == null || Phone.length == 0) {
-            var _dialogRef103 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef105 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Please fill phone number"
               }
@@ -16652,7 +20425,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("name").style.border = "none";
             document.getElementById("phone").style.border = "5px solid red";
           } else if (DOB == null || DOB.length == 0) {
-            var _dialogRef104 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef106 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Plaese fill date of birth"
               }
@@ -16663,7 +20436,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("phone").style.border = "none";
             document.getElementById("dob").style.border = "5px solid red";
           } else if (Math.floor(Math.abs(Date.now() - new Date(DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-            var _dialogRef105 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef107 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Age must be 18+"
               }
@@ -16673,7 +20446,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("phone").style.border = "none";
             document.getElementById("dob").style.border = "5px solid red";
           } else if (Address == null || Address.length == 0) {
-            var _dialogRef106 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef108 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Please fill current address"
               }
@@ -16685,7 +20458,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("dob").style.border = "none";
             document.getElementById("address").style.border = "5px solid red";
           } else if (prefrence == null) {
-            var _dialogRef107 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef109 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Please choose your prefrences"
               }
@@ -16709,13 +20482,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
-          var _this102 = this;
+          var _this155 = this;
 
           this.isLoading = true;
           this["return"] = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this102.isLoading = false;
+            _this155.isLoading = false;
 
-            _this102.alert();
+            _this155.alert();
           });
         }
       }, {
@@ -16977,31 +20750,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this103 = this;
+          var _this156 = this;
 
           this.initProfile();
           new Date().getTime() / 1000;
           document.getElementById("custom").style.overflowY = "overlay";
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this103.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this103.userData));
+              _this156.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this156.userData));
 
-              _this103.LoggedIn(); //Notification Show
+              _this156.LoggedIn(); //Notification Show
 
 
-              _this103.NavigationService.Notification(_this103.uid).subscribe(function (notification) {
+              _this156.NavigationService.Notification(_this156.uid).subscribe(function (notification) {
                 notification.forEach(function (element) {
-                  _this103.bellShow = true;
-                  _this103.belliconone = false;
-                  _this103.bellicontwo = false;
+                  _this156.bellShow = true;
+                  _this156.belliconone = false;
+                  _this156.bellicontwo = false;
                 });
               });
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this103.LoggedOut();
+              _this156.LoggedOut();
             }
           }); // this.userData = JSON.parse(sessionStorage.getItem('currentUser'));
           // if (this.userData != null) {
@@ -17024,8 +20797,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this103.topLine = element.data().topLine;
-              _this103.secondLine = element.data().SecondLine;
+              _this156.topLine = element.data().topLine;
+              _this156.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -17047,46 +20820,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this104 = this;
+          var _this157 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this104.sellerProperty.push(element.data());
+                _this157.sellerProperty.push(element.data());
               }
             });
-            _this104.noSellerOfMatche = _this104.sellerProperty.length;
-            _this104.matches = _this104.buyerProperty.length + _this104.sellerProperty.length;
+            _this157.noSellerOfMatche = _this157.sellerProperty.length;
+            _this157.matches = _this157.buyerProperty.length + _this157.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this104.buyerProperty.push(element.data());
+              _this157.buyerProperty.push(element.data());
             });
-            _this104.noBuyerMatches = _this104.buyerProperty.length;
-            _this104.matches = _this104.buyerProperty.length + _this104.sellerProperty.length;
+            _this157.noBuyerMatches = _this157.buyerProperty.length;
+            _this157.matches = _this157.buyerProperty.length + _this157.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this105 = this;
+          var _this158 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this105.bellicon.push(item.data());
+              _this158.bellicon.push(item.data());
 
-              if (_this105.bellicon.length > 0) {
-                _this105.belliconone = false;
+              if (_this158.bellicon.length > 0) {
+                _this158.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this105.confirmInterest.push(item.data());
+                _this158.confirmInterest.push(item.data());
 
-                _this105.notifications = _this105.confirmInterest.length;
+                _this158.notifications = _this158.confirmInterest.length;
               } else {
-                _this105.notifications = 0;
+                _this158.notifications = 0;
               }
             });
           });
@@ -17146,24 +20919,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this106 = this;
+          var _this159 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this106.isLoading = false;
+            _this159.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this107 = this;
+          var _this160 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this107.user.Lastseen = _this107.now;
-            _this107["return"] = _this107.FormsService.createUserTime(_this107.user).then(function (data) {});
-            _this107.isLoading = false;
+            _this160.user.Lastseen = _this160.now;
+            _this160["return"] = _this160.FormsService.createUserTime(_this160.user).then(function (data) {});
+            _this160.isLoading = false;
             window.location.reload();
           });
         } //Signup Google
@@ -17171,15 +20944,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this108 = this;
+          var _this161 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this108.user.Lastseen = _this108.now;
-            _this108["return"] = _this108.FormsService.createUserTime(_this108.user).then(function (data) {});
-            _this108.isLoading = false;
+            _this161.user.Lastseen = _this161.now;
+            _this161["return"] = _this161.FormsService.createUserTime(_this161.user).then(function (data) {});
+            _this161.isLoading = false;
 
-            _this108.initProfile();
+            _this161.initProfile();
 
             window.location.reload();
           });
@@ -17187,28 +20960,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this109 = this;
+          var _this162 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this109.KnowUser.push(element.data());
+              _this162.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this109.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var dialogRef = _this162.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this109.isLoading = false;
+                _this162.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this109.authService.SignIn(email, pass).then(function (data) {
-                  _this109.isLoading = false;
+                _this162.authService.SignIn(email, pass).then(function (data) {
+                  _this162.isLoading = false;
 
-                  _this109.initProfile();
+                  _this162.initProfile();
 
                   window.location.reload();
                 });
@@ -17236,12 +21009,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this110 = this;
+          var _this163 = this;
 
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this110.isLoading = false;
+            _this163.isLoading = false;
 
-            _this110.initProfile();
+            _this163.initProfile();
           });
         }
       }, {
@@ -17272,14 +21045,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this111 = this;
+          var _this164 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this111.confirmInterests.push({
+                _this164.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -17329,13 +21102,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this112 = this;
+          var _this165 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this112.confirmInterests.push({
+              _this165.confirmInterests.push({
                 Detail: item.data(),
                 id: item.id
               });
@@ -17345,22 +21118,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this113 = this;
+          var _this166 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.confirmInterests = [];
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              _this113.confirmInterests.push({
+              _this166.confirmInterests.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              if (_this113.confirmInterests.length > 0) {
+              if (_this166.confirmInterests.length > 0) {
                 document.getElementById("custom").style.overflowY = "hidden";
-                _this113.notificationoverlay = true;
-                _this113.bellicontwo = true;
+                _this166.notificationoverlay = true;
+                _this166.bellicontwo = true;
               }
             });
           });
@@ -17368,7 +21141,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this114 = this;
+          var _this167 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -17376,9 +21149,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this114.uid) {
+              if (element.UserId == _this167.uid) {
                 document.getElementById("custom").style.overflowY = "overlay";
-                _this114.confirmInterests = null;
+                _this167.confirmInterests = null;
               }
             });
           });
@@ -17642,19 +21415,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this115 = this;
+          var _this168 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this115.confirmInterest.push({
+              _this168.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this115.confirmInterest);
+            console.log(_this168.confirmInterest);
           });
         }
       }, {
@@ -17754,21 +21527,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createDateCustomer",
         value: function createDateCustomer(uid, docid, notification) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee37() {
-            return regeneratorRuntime.wrap(function _callee37$(_context37) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee52() {
+            return regeneratorRuntime.wrap(function _callee52$(_context52) {
               while (1) {
-                switch (_context37.prev = _context37.next) {
+                switch (_context52.prev = _context52.next) {
                   case 0:
-                    return _context37.abrupt("return", this.db.collection("notification").doc(uid).collection("Received").doc(docid).set(Object.assign({}, notification)).then(function (data) {
+                    return _context52.abrupt("return", this.db.collection("notification").doc(uid).collection("Received").doc(docid).set(Object.assign({}, notification)).then(function (data) {
                       console.log("Document successfully written!");
                     }));
 
                   case 2:
                   case "end":
-                    return _context37.stop();
+                    return _context52.stop();
                 }
               }
-            }, _callee37, this);
+            }, _callee52, this);
           }));
         }
       }]);
@@ -17945,13 +21718,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this116 = this;
+          var _this169 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this116.facebook = element.data().Facebook;
-              _this116.Instagram = element.data().Instragram;
-              _this116.Twitter = element.data().Twitter;
+              _this169.facebook = element.data().Facebook;
+              _this169.Instagram = element.data().Instragram;
+              _this169.Twitter = element.data().Twitter;
             });
           });
         }
@@ -18932,14 +22705,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this117 = this;
+          var _this170 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this117.idToken = params['id_token'];
-            _this117.accessToken = params['access_token'];
+            _this170.idToken = params['id_token'];
+            _this170.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this117._router.navigate(['/']).then(function () {
+            _this170._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -19095,10 +22868,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this118 = this;
+          var _this171 = this;
 
           this.HttpService.getPrivacy().subscribe(function (data) {
-            _this118.privacyPolicy = data[0].PrivacyPolicy;
+            _this171.privacyPolicy = data[0].PrivacyPolicy;
           });
         }
       }]);
@@ -19255,6 +23028,72 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/Model/blog.ts":
+  /*!*******************************!*\
+    !*** ./src/app/Model/blog.ts ***!
+    \*******************************/
+
+  /*! exports provided: blog */
+
+  /***/
+  function srcAppModelBlogTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "blog", function () {
+      return blog;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+
+    var blog = function blog() {
+      _classCallCheck(this, blog);
+    };
+    /***/
+
+  },
+
+  /***/
+  "./src/app/Model/footer.ts":
+  /*!*********************************!*\
+    !*** ./src/app/Model/footer.ts ***!
+    \*********************************/
+
+  /*! exports provided: footer */
+
+  /***/
+  function srcAppModelFooterTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "footer", function () {
+      return footer;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+
+    var footer = function footer() {
+      _classCallCheck(this, footer);
+    };
+    /***/
+
+  },
+
+  /***/
   "./src/app/Model/listingBuyer.ts":
   /*!***************************************!*\
     !*** ./src/app/Model/listingBuyer.ts ***!
@@ -19293,7 +23132,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       this.Maxbathroom = "any";
       this.Minreception = "any";
       this.Maxreception = "any";
-      this.features = "any";
+      this.features = ["any"];
     };
     /***/
 
@@ -19332,10 +23171,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       this.PropertyCondition = "any";
       this.ownership = "Freehold";
       this.active = true;
-      this.features = "any";
+      this.features = ["any"];
       this.Maxbathrooms = "any";
       this.Minreception = "any";
       this.Maxreception = "any";
+      this.Images = [];
     };
     /***/
 
@@ -19667,41 +23507,41 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this119 = this;
+          var _this172 = this;
 
           this.authService.GoogleAuth().then(function (data) {
-            _this119.loggedIn = true;
+            _this172.loggedIn = true;
 
-            _this119.userLogged();
+            _this172.userLogged();
 
-            _this119.items();
+            _this172.items();
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this120 = this;
+          var _this173 = this;
 
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this120.loggedIn = true;
+            _this173.loggedIn = true;
 
-            _this120.items();
+            _this173.items();
 
-            _this120.userLogged();
+            _this173.userLogged();
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this121 = this;
+          var _this174 = this;
 
           this.authService.SignIn(email, pass).then(function (data) {
             window.location.reload();
 
-            _this121.items();
+            _this174.items();
 
-            _this121.userLogged();
+            _this174.userLogged();
           });
         }
       }, {
@@ -19714,84 +23554,84 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this122 = this;
+          var _this175 = this;
 
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this122.BuyerDetail.push(element.data());
+              _this175.BuyerDetail.push(element.data());
             });
-            localStorage.setItem("AllUserDetail", JSON.stringify(_this122.BuyerDetail));
-            _this122.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
+            localStorage.setItem("AllUserDetail", JSON.stringify(_this175.BuyerDetail));
+            _this175.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
           });
         }
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this123 = this;
+          var _this176 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this123.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this123.userData));
+              _this176.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this176.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this123.loggedIn = true;
+              _this176.loggedIn = true;
 
-              _this123.agentItem();
+              _this176.agentItem();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this123.loggedIn = false;
+              _this176.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this124 = this;
+          var _this177 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this124.Companyname = element.data().company;
-              _this124.Address = element.data().address;
-              _this124.Postcode = element.data().postcode;
-              _this124.Phonenumber = element.data().phone;
-              _this124.Jobtitle = element.data().jobtitle;
-              _this124.SinglePercentage = element.data().solefees;
-              _this124.Multipercentage = element.data().multiplefees;
-              _this124.Image = element.data().image;
-              _this124.Fullname = element.data().fullname;
-              _this124.PropertyId = element.id;
-              _this124.UserId = _this124.user.uid;
+              _this177.Companyname = element.data().company;
+              _this177.Address = element.data().address;
+              _this177.Postcode = element.data().postcode;
+              _this177.Phonenumber = element.data().phone;
+              _this177.Jobtitle = element.data().jobtitle;
+              _this177.SinglePercentage = element.data().solefees;
+              _this177.Multipercentage = element.data().multiplefees;
+              _this177.Image = element.data().image;
+              _this177.Fullname = element.data().fullname;
+              _this177.PropertyId = element.id;
+              _this177.UserId = _this177.user.uid;
             });
           });
         }
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this125 = this;
+          var _this178 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.HttpService.getAllUsers(email).subscribe(function (data) {
-              _this125.emailData = data;
+              _this178.emailData = data;
 
-              if (_this125.emailData.length == 1) {
-                _this125.emailField = true;
-                _this125.notValidEmail = false;
+              if (_this178.emailData.length == 1) {
+                _this178.emailField = true;
+                _this178.notValidEmail = false;
 
-                if (_this125.emailData[0].AgentType == null) {
-                  _this125.emailField = false;
-                  _this125.notValidEmail = true;
+                if (_this178.emailData[0].AgentType == null) {
+                  _this178.emailField = false;
+                  _this178.notValidEmail = true;
 
-                  var dialogRef = _this125.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_10__["AlertUserTypeComponent"], {
+                  var dialogRef = _this178.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_10__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as Agent"
                     }
                   });
                 }
               } else {
-                _this125.notValidEmail = true;
+                _this178.notValidEmail = true;
               }
             });
           } else {
@@ -19892,21 +23732,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createCustomer",
         value: function createCustomer(uid, docid, agentSignup) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee38() {
-            return regeneratorRuntime.wrap(function _callee38$(_context38) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee53() {
+            return regeneratorRuntime.wrap(function _callee53$(_context53) {
               while (1) {
-                switch (_context38.prev = _context38.next) {
+                switch (_context53.prev = _context53.next) {
                   case 0:
-                    return _context38.abrupt("return", this.db.collection("agentSignup").doc(uid).collection("agents").doc(docid).set(Object.assign({}, agentSignup)).then(function (data) {
+                    return _context53.abrupt("return", this.db.collection("agentSignup").doc(uid).collection("agents").doc(docid).set(Object.assign({}, agentSignup)).then(function (data) {
                       console.log("Document successfully written!");
                     }));
 
                   case 2:
                   case "end":
-                    return _context38.stop();
+                    return _context53.stop();
                 }
               }
-            }, _callee38, this);
+            }, _callee53, this);
           }));
         }
       }, {
@@ -20022,7 +23862,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this126 = this;
+          var _this179 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -20031,30 +23871,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this126.id = params.get("id");
+            _this179.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this126.agents = data;
+            _this179.agents = data;
           });
           this.getAgentDetails();
         }
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage) {
-          var _this127 = this;
+          var _this180 = this;
 
           this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-            _this127.Router.navigate(["/Agenthome"]);
+            _this180.Router.navigate(["/Agenthome"]);
           });
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this128 = this;
+          var _this181 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this128.agents = element.data();
+              _this181.agents = element.data();
             });
           });
         }
@@ -20183,7 +24023,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelecteddetailareaComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this129 = this;
+          var _this182 = this;
 
           this.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
           this.Minamount = this.UserDetails[0].Buyer.MinAmount;
@@ -20193,20 +24033,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.ChainStatus = this.UserDetails[0].Buyer.Position;
           this.FormsService.getUser(this.UserDetails[0].Buyer.UserId).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this129.UserDetails[0].Buyer.UserId) {
-                _this129.username = element.data().Name;
-                _this129.email = element.data().email;
-                _this129.Phone = element.data().Phone;
+              if (element.data().uid == _this182.UserDetails[0].Buyer.UserId) {
+                _this182.username = element.data().Name;
+                _this182.email = element.data().email;
+                _this182.Phone = element.data().Phone;
               }
             });
           });
           this.FormsService.getUser(this.UserDetails[0].Seller.UserId).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this129.UserDetails[0].Seller.UserId) {
-                _this129.sellerusername = element.data().Name;
-                _this129.selleremail = element.data().email;
-                _this129.sellerPhone = element.data().Phone;
-                _this129.selleraddress = element.data().Currentaddress;
+              if (element.data().uid == _this182.UserDetails[0].Seller.UserId) {
+                _this182.sellerusername = element.data().Name;
+                _this182.selleremail = element.data().email;
+                _this182.sellerPhone = element.data().Phone;
+                _this182.selleraddress = element.data().Currentaddress;
               }
             });
           });
@@ -20371,28 +24211,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelecteddetailsellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this130 = this;
+          var _this183 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this130.LookingAddress = params.get("LookingAddress");
-            _this130.LookingTown = params.get("LookingTown");
-            _this130.Lookingpostcode = params.get("Lookingpostcode");
-            _this130.Lookingstate = params.get("Lookingstate");
-            _this130.MaxAmount = params.get("MaxAmount");
-            _this130.Maxbathroom = params.get("Maxbathrooms");
-            _this130.Maxreception = params.get("Maxreception");
-            _this130.PropertyCondition = params.get("PropertyCondition");
-            _this130.PropertyType = params.get("PropertyType");
-            _this130.Roomsmax = params.get("Roomsmax");
-            _this130.ownership = params.get("ownership");
-            _this130.UserId = params.get("UserId");
+            _this183.LookingAddress = params.get("LookingAddress");
+            _this183.LookingTown = params.get("LookingTown");
+            _this183.Lookingpostcode = params.get("Lookingpostcode");
+            _this183.Lookingstate = params.get("Lookingstate");
+            _this183.MaxAmount = params.get("MaxAmount");
+            _this183.Maxbathroom = params.get("Maxbathrooms");
+            _this183.Maxreception = params.get("Maxreception");
+            _this183.PropertyCondition = params.get("PropertyCondition");
+            _this183.PropertyType = params.get("PropertyType");
+            _this183.Roomsmax = params.get("Roomsmax");
+            _this183.ownership = params.get("ownership");
+            _this183.UserId = params.get("UserId");
           });
           this.HttpService.getUsers(this.UserId).subscribe(function (data) {
-            _this130.userDetail = data;
-            _this130.username = _this130.userDetail.username;
-            _this130.email = _this130.userDetail.email;
-            _this130.Phone = _this130.userDetail.Phone;
-            _this130.address = _this130.userDetail.CurrentAddress;
+            _this183.userDetail = data;
+            _this183.username = _this183.userDetail.username;
+            _this183.email = _this183.userDetail.email;
+            _this183.Phone = _this183.userDetail.Phone;
+            _this183.address = _this183.userDetail.CurrentAddress;
           });
         }
       }, {
@@ -20770,6 +24610,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(
     /*! ./AdminPanel/users-edit-page/users-edit-page.component */
     "./src/app/AdminPanel/users-edit-page/users-edit-page.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(
+    /*! ./AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component */
+    "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(
+    /*! ./AdminPanel/add-user/add-user.component */
+    "./src/app/AdminPanel/add-user/add-user.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(
+    /*! ./AdminPanel/edit-seller-user-details/edit-seller-user-details.component */
+    "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(
+    /*! ./AdminPanel/agent-edit-page/agent-edit-page.component */
+    "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(
+    /*! ./AdminPanel/agent-property-edit-page/agent-property-edit-page.component */
+    "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(
+    /*! ./AdminPanel/uielements/uielements.component */
+    "./src/app/AdminPanel/uielements/uielements.component.ts");
 
     var CALLBACK_PATH = 'auth/google/callback';
     var CAllBack_Facebook = 'auth/facebook/callback';
@@ -20923,6 +24799,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     }, {
       path: "UsersEditPage/:uid",
       component: _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_53__["UsersEditPageComponent"]
+    }, {
+      path: "EditBuyerUserDetails/:BuyerUserID/:BuyerPropertyId",
+      component: _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_54__["EditBuyerUserDetailsComponent"]
+    }, {
+      path: "AddUser",
+      component: _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_55__["AddUserComponent"]
+    }, {
+      path: "EditSellerUserDetails/:sellerUserId/:sellerPropertyId",
+      component: _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_56__["EditSellerUserDetailsComponent"]
+    }, {
+      path: "AgentEditPage/:agentPropertyId/:agentUserId",
+      component: _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_57__["AgentEditPageComponent"]
+    }, {
+      path: "AgentPropertyEditPage/:propertyuserId/:propertyID",
+      component: _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_58__["AgentPropertyEditPageComponent"]
+    }, {
+      path: "UIElements",
+      component: _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_59__["UIElementsComponent"]
     }];
 
     var AppRoutingModule = function AppRoutingModule() {
@@ -21765,7 +25659,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_121__ = __webpack_require__(
     /*! ./AdminPanel/users-edit-page/users-edit-page.component */
-    "./src/app/AdminPanel/users-edit-page/users-edit-page.component.ts"); // Firebase modules
+    "./src/app/AdminPanel/users-edit-page/users-edit-page.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_122__ = __webpack_require__(
+    /*! ./AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component */
+    "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_123__ = __webpack_require__(
+    /*! ./AdminPanel/add-user/add-user.component */
+    "./src/app/AdminPanel/add-user/add-user.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_124__ = __webpack_require__(
+    /*! ./AdminPanel/edit-seller-user-details/edit-seller-user-details.component */
+    "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_125__ = __webpack_require__(
+    /*! ./AdminPanel/agent-edit-page/agent-edit-page.component */
+    "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_126__ = __webpack_require__(
+    /*! ./AdminPanel/agent-property-edit-page/agent-property-edit-page.component */
+    "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_127__ = __webpack_require__(
+    /*! ./AdminPanel/uielements/uielements.component */
+    "./src/app/AdminPanel/uielements/uielements.component.ts"); // Firebase modules
 
 
     var AppModule = function AppModule() {
@@ -21773,7 +25703,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_12__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_13__["SellerMatchListingComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_15__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_14__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_16__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_17__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_93__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_18__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_19__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_27__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_29__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_30__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_74__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_90__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_78__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_79__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_80__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_102__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_81__["AgentSignupComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_82__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_83__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_84__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_85__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_86__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_87__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_88__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_89__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_91__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_92__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_94__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_95__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_96__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_97__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_98__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_99__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_104__["DeleteDataComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_100__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_101__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_103__["NestimatesHomeComponent"], _Home_home_matches_home_matches_component__WEBPACK_IMPORTED_MODULE_105__["HomeMatchesComponent"], _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_106__["PriceMatchesComponent"], _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_107__["AgenthomeComponent"], _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_108__["SelecteddetailareaComponent"], _agenthome_edit_details_edit_details_component__WEBPACK_IMPORTED_MODULE_109__["EditDetailsComponent"], _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_110__["SelecteddetailsellerComponent"], _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_111__["ClickhomeComponent"], _Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_113__["AlertLoginComponent"], _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_114__["AlertUserTypeComponent"], _reset_password_reset_password_component__WEBPACK_IMPORTED_MODULE_115__["ResetPasswordComponent"], _Misc_google_login_check_google_login_check_component__WEBPACK_IMPORTED_MODULE_116__["GoogleLoginCheckComponent"], _Misc_facebook_login_check_facebook_login_check_component__WEBPACK_IMPORTED_MODULE_117__["FacebookLoginCheckComponent"], _AdminPanel_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_118__["AdminPanelComponent"], _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_119__["AdminHeaderComponent"], _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_120__["UsersAgentTabComponent"], _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_121__["UsersEditPageComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_12__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_13__["SellerMatchListingComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_15__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_14__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_16__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_17__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_93__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_18__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_19__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_27__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_29__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_30__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_74__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_90__["AlertDialogAgentComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_78__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_79__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_80__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_102__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_81__["AgentSignupComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_82__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_83__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_84__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_85__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_86__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_87__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_88__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_89__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_91__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_92__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_94__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_95__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_96__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_97__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_98__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_99__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_104__["DeleteDataComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_100__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_101__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_103__["NestimatesHomeComponent"], _Home_home_matches_home_matches_component__WEBPACK_IMPORTED_MODULE_105__["HomeMatchesComponent"], _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_106__["PriceMatchesComponent"], _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_107__["AgenthomeComponent"], _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_108__["SelecteddetailareaComponent"], _agenthome_edit_details_edit_details_component__WEBPACK_IMPORTED_MODULE_109__["EditDetailsComponent"], _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_110__["SelecteddetailsellerComponent"], _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_111__["ClickhomeComponent"], _Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_113__["AlertLoginComponent"], _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_114__["AlertUserTypeComponent"], _reset_password_reset_password_component__WEBPACK_IMPORTED_MODULE_115__["ResetPasswordComponent"], _Misc_google_login_check_google_login_check_component__WEBPACK_IMPORTED_MODULE_116__["GoogleLoginCheckComponent"], _Misc_facebook_login_check_facebook_login_check_component__WEBPACK_IMPORTED_MODULE_117__["FacebookLoginCheckComponent"], _AdminPanel_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_118__["AdminPanelComponent"], _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_119__["AdminHeaderComponent"], _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_120__["UsersAgentTabComponent"], _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_121__["UsersEditPageComponent"], _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_122__["EditBuyerUserDetailsComponent"], _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_123__["AddUserComponent"], _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_124__["EditSellerUserDetailsComponent"], _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_125__["AgentEditPageComponent"], _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_126__["AgentPropertyEditPageComponent"], _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_127__["UIElementsComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _angular_fire__WEBPACK_IMPORTED_MODULE_22__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_26__["environment"].firebaseConfig, "street"), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_23__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_25__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_24__["AngularFireStorageModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_21__["AngularFireDatabaseModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_31__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_31__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_32__["BrowserAnimationsModule"], _Misc_material__WEBPACK_IMPORTED_MODULE_75__["MaterialModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_70__["MatTabsModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_33__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_37__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_38__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_39__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_34__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_40__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_41__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_42__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_43__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_44__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_45__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_46__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_47__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_48__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_49__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_50__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_51__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_52__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_53__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_54__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_55__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_56__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_57__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_58__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_59__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_60__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_61__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_62__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_58__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_63__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_64__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_65__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_66__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_67__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_68__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_69__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_70__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_71__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_72__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_73__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_35__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_36__["ScrollingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_77__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_31__["ReactiveFormsModule"]],
       entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_74__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_78__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_80__["AltertFormDialogComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_90__["AlertDialogAgentComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_93__["EdiProfileComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_98__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_99__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_104__["DeleteDataComponent"], _Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_113__["AlertLoginComponent"], _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_114__["AlertUserTypeComponent"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"], {
@@ -21859,7 +25789,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this131 = this;
+        var _this184 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -21873,8 +25803,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this131.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this131.userData));
+            _this184.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this184.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -21890,67 +25820,67 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "SignIn",
         value: function SignIn(email, password) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee39() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee54() {
             var result;
-            return regeneratorRuntime.wrap(function _callee39$(_context39) {
+            return regeneratorRuntime.wrap(function _callee54$(_context54) {
               while (1) {
-                switch (_context39.prev = _context39.next) {
+                switch (_context54.prev = _context54.next) {
                   case 0:
-                    _context39.prev = 0;
-                    _context39.next = 3;
+                    _context54.prev = 0;
+                    _context54.next = 3;
                     return this.afAuth.auth.signInWithEmailAndPassword(email, password);
 
                   case 3:
-                    result = _context39.sent;
+                    result = _context54.sent;
                     this.ngZone.run(function () {}); // this.SetUserData(result.user);
 
-                    _context39.next = 10;
+                    _context54.next = 10;
                     break;
 
                   case 7:
-                    _context39.prev = 7;
-                    _context39.t0 = _context39["catch"](0);
-                    window.alert(_context39.t0);
+                    _context54.prev = 7;
+                    _context54.t0 = _context54["catch"](0);
+                    window.alert(_context54.t0);
 
                   case 10:
                   case "end":
-                    return _context39.stop();
+                    return _context54.stop();
                 }
               }
-            }, _callee39, this, [[0, 7]]);
+            }, _callee54, this, [[0, 7]]);
           }));
         } // Sign up with email/password
 
       }, {
         key: "SignUp",
         value: function SignUp(email, password, displayName, Users) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee40() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee55() {
             var result;
-            return regeneratorRuntime.wrap(function _callee40$(_context40) {
+            return regeneratorRuntime.wrap(function _callee55$(_context55) {
               while (1) {
-                switch (_context40.prev = _context40.next) {
+                switch (_context55.prev = _context55.next) {
                   case 0:
-                    _context40.prev = 0;
-                    _context40.next = 3;
+                    _context55.prev = 0;
+                    _context55.next = 3;
                     return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
 
                   case 3:
-                    result = _context40.sent;
+                    result = _context55.sent;
                     this.SetUserDatas(result.user, displayName, Users);
-                    _context40.next = 10;
+                    _context55.next = 10;
                     break;
 
                   case 7:
-                    _context40.prev = 7;
-                    _context40.t0 = _context40["catch"](0);
-                    window.alert(_context40.t0.message);
+                    _context55.prev = 7;
+                    _context55.t0 = _context55["catch"](0);
+                    window.alert(_context55.t0.message);
 
                   case 10:
                   case "end":
-                    return _context40.stop();
+                    return _context55.stop();
                 }
               }
-            }, _callee40, this, [[0, 7]]);
+            }, _callee55, this, [[0, 7]]);
           }));
         } // Send email verfificaiton when new user sign up
         // async SendVerificationMail() {
@@ -21962,31 +25892,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "ForgotPassword",
         value: function ForgotPassword(passwordResetEmail) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee41() {
-            return regeneratorRuntime.wrap(function _callee41$(_context41) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee56() {
+            return regeneratorRuntime.wrap(function _callee56$(_context56) {
               while (1) {
-                switch (_context41.prev = _context41.next) {
+                switch (_context56.prev = _context56.next) {
                   case 0:
-                    _context41.prev = 0;
-                    _context41.next = 3;
+                    _context56.prev = 0;
+                    _context56.next = 3;
                     return this.afAuth.auth.sendPasswordResetEmail(passwordResetEmail);
 
                   case 3:
                     window.alert("Password reset email sent, check your inbox.");
-                    _context41.next = 9;
+                    _context56.next = 9;
                     break;
 
                   case 6:
-                    _context41.prev = 6;
-                    _context41.t0 = _context41["catch"](0);
-                    window.alert(_context41.t0);
+                    _context56.prev = 6;
+                    _context56.t0 = _context56["catch"](0);
+                    window.alert(_context56.t0);
 
                   case 9:
                   case "end":
-                    return _context41.stop();
+                    return _context56.stop();
                 }
               }
-            }, _callee41, this, [[0, 6]]);
+            }, _callee56, this, [[0, 6]]);
           }));
         } // Returns true when user is looged in and email is verified
 
@@ -22012,71 +25942,71 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "AuthLogin",
         value: function AuthLogin(provider) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee42() {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee57() {
             var result;
-            return regeneratorRuntime.wrap(function _callee42$(_context42) {
+            return regeneratorRuntime.wrap(function _callee57$(_context57) {
               while (1) {
-                switch (_context42.prev = _context42.next) {
+                switch (_context57.prev = _context57.next) {
                   case 0:
-                    _context42.prev = 0;
-                    _context42.next = 3;
+                    _context57.prev = 0;
+                    _context57.next = 3;
                     return this.afAuth.auth.signInWithPopup(provider);
 
                   case 3:
-                    result = _context42.sent;
+                    result = _context57.sent;
                     this.ngZone.run(function () {});
-                    _context42.next = 10;
+                    _context57.next = 10;
                     break;
 
                   case 7:
-                    _context42.prev = 7;
-                    _context42.t0 = _context42["catch"](0);
-                    window.alert(_context42.t0);
+                    _context57.prev = 7;
+                    _context57.t0 = _context57["catch"](0);
+                    window.alert(_context57.t0);
 
                   case 10:
                   case "end":
-                    return _context42.stop();
+                    return _context57.stop();
                 }
               }
-            }, _callee42, this, [[0, 7]]);
+            }, _callee57, this, [[0, 7]]);
           }));
         }
       }, {
         key: "AuthSignup",
         value: function AuthSignup(provider) {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee43() {
-            var _this132 = this;
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee58() {
+            var _this185 = this;
 
             var result;
-            return regeneratorRuntime.wrap(function _callee43$(_context43) {
+            return regeneratorRuntime.wrap(function _callee58$(_context58) {
               while (1) {
-                switch (_context43.prev = _context43.next) {
+                switch (_context58.prev = _context58.next) {
                   case 0:
-                    _context43.prev = 0;
-                    _context43.next = 3;
+                    _context58.prev = 0;
+                    _context58.next = 3;
                     return this.afAuth.auth.signInWithPopup(provider);
 
                   case 3:
-                    result = _context43.sent;
+                    result = _context58.sent;
                     this.ngZone.run(function () {
                       console.log(result.user);
 
-                      _this132.SetUserData(result.user);
+                      _this185.SetUserData(result.user);
                     });
-                    _context43.next = 10;
+                    _context58.next = 10;
                     break;
 
                   case 7:
-                    _context43.prev = 7;
-                    _context43.t0 = _context43["catch"](0);
+                    _context58.prev = 7;
+                    _context58.t0 = _context58["catch"](0);
                     window.alert(" incorrect username/password needs to change");
 
                   case 10:
                   case "end":
-                    return _context43.stop();
+                    return _context58.stop();
                 }
               }
-            }, _callee43, this, [[0, 7]]);
+            }, _callee58, this, [[0, 7]]);
           }));
         }
         /* Setting up user data when sign in with username/password,
@@ -22116,12 +26046,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "SignOut",
         value: function SignOut() {
-          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee44() {
-            return regeneratorRuntime.wrap(function _callee44$(_context44) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee59() {
+            return regeneratorRuntime.wrap(function _callee59$(_context59) {
               while (1) {
-                switch (_context44.prev = _context44.next) {
+                switch (_context59.prev = _context59.next) {
                   case 0:
-                    _context44.next = 2;
+                    _context59.next = 2;
                     return this.afAuth.auth.signOut();
 
                   case 2:
@@ -22131,10 +26061,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 5:
                   case "end":
-                    return _context44.stop();
+                    return _context59.stop();
                 }
               }
-            }, _callee44, this);
+            }, _callee59, this);
           }));
         }
       }, {
@@ -22219,12 +26149,102 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.BlueNotification = db.collection("BlueNotification");
         this.SignupTerms = db.collection("SingupTerms");
         this.allUser = db.collection("users");
+        this.FormIamge = db.collection("UserFormImages");
+        this.privacyPolicy = db.collection("PrivacyPolicy");
+        this.TermsCondition = db.collection("TermsCondition");
       }
 
       _createClass(CMSSERVICE, [{
+        key: "updateTerms",
+        value: function updateTerms(noti) {
+          return this.db.collection("TermsCondition").doc("Yok0I3mxCYGJ9fb6pPnM").set(Object.assign({}, noti)).then(function (data) {
+            console.log("privacy");
+          });
+        }
+      }, {
+        key: "updatePrivacy",
+        value: function updatePrivacy(noti) {
+          return this.db.collection("PrivacyPolicy").doc("1Li6cufv2AmieDVQBbnV").set(Object.assign({}, noti)).then(function (data) {
+            console.log("privacy");
+          });
+        }
+      }, {
+        key: "updateSellerBuyerImage",
+        value: function updateSellerBuyerImage(noti) {
+          return this.db.collection("UserFormImages").doc("Ejqjv3kJ7j1P1FR1vf1o").set(Object.assign({}, noti)).then(function (data) {
+            console.log("sellerBuyer");
+          });
+        }
+      }, {
+        key: "updateBlueNotifiaction",
+        value: function updateBlueNotifiaction(noti) {
+          return this.db.collection("BlueNotification").doc("1").set(Object.assign({}, noti)).then(function (data) {
+            console.log("Notification");
+          });
+        }
+      }, {
+        key: "updateFooter",
+        value: function updateFooter(uid, footer) {
+          return this.db.collection("Footer").doc(uid).set(Object.assign({}, footer)).then(function (data) {
+            console.log("Document successfully written!");
+          });
+          return true;
+        }
+      }, {
+        key: "createBlog",
+        value: function createBlog(uid, customer) {
+          return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee60() {
+            return regeneratorRuntime.wrap(function _callee60$(_context60) {
+              while (1) {
+                switch (_context60.prev = _context60.next) {
+                  case 0:
+                    _context60.next = 2;
+                    return this.blogRef.doc(uid).collection("AllBlogs").add(Object.assign({}, customer)).then(function (element) {});
+
+                  case 2:
+                    this["return"] = _context60.sent;
+                    return _context60.abrupt("return", true);
+
+                  case 4:
+                  case "end":
+                    return _context60.stop();
+                }
+              }
+            }, _callee60, this);
+          }));
+        }
+      }, {
+        key: "updateHomePageImages",
+        value: function updateHomePageImages(uid, home) {
+          return this.db.collection("HomepageImages").doc(uid).set(Object.assign({}, home)).then(function (data) {
+            console.log("Document successfully written!");
+          });
+          return true;
+        }
+      }, {
+        key: "getUserBlog",
+        value: function getUserBlog(uid) {
+          return this.blogRef.doc(uid).collection("AllBlogs").ref.get();
+        }
+      }, {
+        key: "getTermsCondition",
+        value: function getTermsCondition() {
+          return this.TermsCondition.ref.get();
+        }
+      }, {
+        key: "getPrivacyPolicy",
+        value: function getPrivacyPolicy() {
+          return this.privacyPolicy.ref.get();
+        }
+      }, {
+        key: "getFormImages",
+        value: function getFormImages() {
+          return this.FormIamge.ref.get();
+        }
+      }, {
         key: "getBlueNotification",
         value: function getBlueNotification(uid) {
-          return this.BlueNotification.ref.get();
+          return this.BlueNotification.doc("1").ref.get();
         }
       }, {
         key: "getsignUpTerms",
@@ -22245,6 +26265,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "getBlogs",
         value: function getBlogs(uid) {
           return this.blogRef.ref.get();
+        }
+      }, {
+        key: "getFooter",
+        value: function getFooter() {
+          return this.FooterRef.ref.get();
         }
       }, {
         key: "getlistingBuyer",
@@ -23112,7 +27137,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this133 = this;
+          var _this186 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
@@ -23124,10 +27149,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this133.userData = response.user;
-              _this133.authToken = sessionStorage.getItem('currentJwt');
+              _this186.userData = response.user;
+              _this186.authToken = sessionStorage.getItem('currentJwt');
 
-              _this133.currentUserSubject.next(response.user);
+              _this186.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -23136,7 +27161,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Googlelogin",
         value: function Googlelogin(token, accessToken) {
-          var _this134 = this;
+          var _this187 = this;
 
           return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
@@ -23145,10 +27170,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this134.userData = response.user;
-              _this134.authToken = sessionStorage.getItem('currentJwt');
+              _this187.userData = response.user;
+              _this187.authToken = sessionStorage.getItem('currentJwt');
 
-              _this134.currentUserSubject.next(response.user);
+              _this187.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -23157,7 +27182,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Facebooklogin",
         value: function Facebooklogin() {
-          var _this135 = this;
+          var _this188 = this;
 
           return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             console.log(response); // login successful if there's a jwt token in the response
@@ -23167,10 +27192,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this135.userData = response.user;
-              _this135.authToken = sessionStorage.getItem('currentJwt');
+              _this188.userData = response.user;
+              _this188.authToken = sessionStorage.getItem('currentJwt');
 
-              _this135.currentUserSubject.next(response.user);
+              _this188.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -23179,7 +27204,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "logout",
         value: function logout() {
-          var _this136 = this;
+          var _this189 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -23187,7 +27212,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this136.router.navigate(["/homenew"]);
+            _this189.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -23404,19 +27429,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this137 = this;
+          var _this190 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this137.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this137.userData));
+              _this190.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this190.userData));
 
-              _this137.LoggedIn();
+              _this190.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this137.LoggedOut();
+              _this190.LoggedOut();
             }
           });
           this.getNotificationContent();
@@ -23437,58 +27462,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this138 = this;
+          var _this191 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this138.isLoading = false;
+            _this191.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this139 = this;
+          var _this192 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this139.isLoading = false;
+            _this192.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this140 = this;
+          var _this193 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this140.isLoading = false;
+            _this193.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this141 = this;
+          var _this194 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this141.KnowUser.push(element.data());
+              _this194.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this141.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this194.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this141.isLoading = false;
+                _this194.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this141.authService.SignIn(email, pass).then(function (data) {
-                  _this141.isLoading = false;
+                _this194.authService.SignIn(email, pass).then(function (data) {
+                  _this194.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -23548,23 +27573,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this142 = this;
+          var _this195 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this142.notificationContent = element.data().SingupFromMenu;
+              _this195.notificationContent = element.data().SingupFromMenu;
             });
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this143 = this;
+          var _this196 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this143.topLine = element.data().topLine;
-              _this143.secondLine = element.data().SecondLine;
+              _this196.topLine = element.data().topLine;
+              _this196.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -23675,10 +27700,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this144 = this;
+          var _this197 = this;
 
           this.HttpService.getTerms().subscribe(function (data) {
-            _this144.termsCondition = data[0].Terms;
+            _this197.termsCondition = data[0].Terms;
           });
         }
       }]);
