@@ -2530,6 +2530,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.emails = localStorage.getItem("email");
           this.password = localStorage.getItem("password");
+
+          if (this.emails != null) {
+            this.checked = true;
+          }
+
           this.getUserDetails();
           this.getAdminDetails();
           this.dashboardDetails();
