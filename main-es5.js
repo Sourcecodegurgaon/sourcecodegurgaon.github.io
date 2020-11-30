@@ -111,7 +111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"admin-login\" *ngIf=\"!LoggedIn\">\n\n  <div class=\"admin-login-wrapper\">\n\n    <img src=\"../../assets/Images/Nestimatelogo.png\" class=\"image-nestimate-logo\">\n    <div class=\"Login-Text\">Log In</div>\n    <div class=\"div-content-field\">\n      <mat-form-field class=\"example-full-width\">\n        <mat-label>Username</mat-label>\n        <input matInput placeholder=\"Enter Email\" name=\"emails\" [(ngModel)]=\"emails\">\n      </mat-form-field>\n\n\n      <mat-form-field>\n        <mat-label>Enter your password</mat-label>\n        <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"password\">\n        <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n          [attr.aria-pressed]=\"hide\">\n          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n        </button>\n      </mat-form-field>\n    </div>\n\n\n    <div class=\"remmber-me\">\n      <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\"><span class=\"Checkbox-text\">Remember Me</span>\n      </mat-checkbox>\n    </div>\n\n\n\n  </div>\n\n  <div class=\"login-buttons\" (click)=\"signIn(emails, password)\">\n    <button mat-button class=\"button-align\">Log In</button>\n  </div>\n  <div class=\"forgot-password\">\n    <div class=\"forgot-password-text\">\n      <div>\n        <img src=\"../../assets/Images/lock-open.svg\" class=\"lock-icon\"></div>\n      <div class=\"text-forgot-password\">\n        Forgot your Password?\n      </div>\n\n\n    </div>\n    <div class=\"text-forgot-password back-to-webiste\" routerLink=\"/\">\n      <div>\n        <img src=\"../../assets/Images/arrow-back.svg\" class=\"back-arrow\">\n      </div>\n      <div>Back To The Website</div>\n    </div>\n  </div>\n</div>\n\n<div *ngIf=\"LoggedIn\">\n  <app-admin-header></app-admin-header>\n</div>\n\n<div class=\"user-agent-tab-main-container\" *ngIf=\"LoggedIn\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n\n      <div class=\"top-bar-user-heading\">\n        Dashboard\n      </div>\n      <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n      </div>\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n\n\n\n  <div class=\"top-card\">\n    <mat-card class=\"left-nestimate-dashboard\">\n      <div class=\"wrapper-total-nestimate\">\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{NestimateLength}}</span>\n          <span class=\"total-netiamte-text\"> Total Nestimates</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">\n            <img src=\"../../../assets/Images/person.svg\" class=\"person-dashboard\">\n            {{numberOfUser}}</span>\n          <span class=\"total-netiamte-text\"> Total No. of Users</span>\n        </div>\n      </div>\n    </mat-card>\n    <mat-card class=\"right-nestimate-dashboard\">\n      <div class=\"wrapper-total-nestimate\">\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">2,300</span>\n          <span class=\"total-netiamte-text\">Total Matches</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{ExpressedIneterest}}</span>\n          <span class=\"total-netiamte-text\"> Total Express Interest</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{ConfirmInterest}}</span>\n          <span class=\"total-netiamte-text\">Total Confirm Interest</span>\n        </div>\n      </div>\n    </mat-card>\n  </div>\n\n\n\n  <div class=\"second-color-container\">\n    Users\n  </div>\n  <mat-card class=\"second-part-container\">\n\n\n\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Nestimate by Listing Type</div>\n\n\n\n\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Sell</span>\n            <span class=\"second-part-container-number\">{{countingSellerTypeSell}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Let</span>\n            <span class=\"second-part-container-number\">{{countingSellerTypeRent}}</span>\n          </div>\n\n        </div>\n\n        <div class=\"right-line\"></div>\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Buy</span>\n            <span class=\"second-part-container-number\">{{countListingTypeBuy}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Rent</span>\n            <span class=\"second-part-container-number\">{{countListingTypeRent}}</span>\n\n          </div>\n\n        </div>\n\n\n\n      </div>\n\n\n\n\n\n    </mat-card>\n\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\"> Nestimate by Property Type</div>\n\n\n \n  \n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Flat</span>\n            <span class=\"second-part-container-number\">{{FlatpropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Studio</span>\n            <span class=\"second-part-container-number\">{{studiopropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Terraced house</span>\n            <span class=\"second-part-container-number\">{{TerracedhouseType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Maisonette</span>\n            <span class=\"second-part-container-number\">{{MaisonetteType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Semi-detached house</span>\n            <span class=\"second-part-container-number\">{{SemidetachedType}}</span>\n          </div>\n\n            <div class=\"top-second-part-container\">\n              <span class=\"second-part-container-text\">Bungalow</span>\n              <span class=\"second-part-container-number\">{{BungalowType}}</span>\n  \n            </div>\n  \n            <div class=\"lower-second-part-container\">\n              <span class=\"second-part-container-text\">Detached house</span>\n              <span class=\"second-part-container-number\">{{DetachedhousType}}</span>\n            </div>\n\n        </div>\n\n        <div class=\"right-line\"></div>\n\n        <div class=\"right-side-second-part-container\">\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Cottage</span>\n            <span class=\"second-part-container-number\">{{CottagePropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Town House</span>\n            <span class=\"second-part-container-number\">{{TownhouseType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Country house</span>\n            <span class=\"second-part-container-number\">{{CountryhouseType}}</span>\n          </div>\n\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Barn conversion</span>\n            <span class=\"second-part-container-number\">{{BarnconversionType}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Farm</span>\n            <span class=\"second-part-container-number\">{{FarmPropertyType}}</span>\n          </div>\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Houseboat</span>\n            <span class=\"second-part-container-number\">{{HouseboaType}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Lodge</span>\n            <span class=\"second-part-container-number\">{{LodgeType}}</span>\n          </div>\n        \n\n        </div>\n\n\n\n      </div>\n\n\n\n    </mat-card>\n  </mat-card>\n\n  <div class=\"mat-card-bottom\"></div>\n\n\n  <mat-card class=\"third-mat-card\">\n    <div class=\"wrapper-total-nestimate third-matcard-align\">\n\n      <div class=\"total-nestimate total-postcode\">\n        <span class=\"total-nestimate-number\">\n          <img src=\"../../../assets/Images/person.svg\" class=\"person-dashboard\">\n          {{agentLength}}</span>\n        <span class=\"total-netiamte-text\"> Total No. of Agents</span>\n      </div>\n      <div class=\"right-line\"></div>\n      <div class=\"total-nestimate total-postcode\">\n        <span class=\"total-nestimate-number\">2,344</span>\n        <span class=\"total-netiamte-text\"> Total No. of Postcodes</span>\n      </div>\n     \n    </div>\n\n  </mat-card>\n\n\n  <div class=\"second-color-container\">\n    Agents\n  </div>\n  <mat-card class=\"second-part-container\">\n\n\n\n    <div class=\"fourth-part-container\">\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Agents by Sole Agency Fees</div>\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">1% to 2%</span>\n            <span class=\"second-part-container-number\">{{firstSole}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">2% to 3%</span>\n            <span class=\"second-part-container-number\">{{secondSole}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">3% to 4%</span>\n            <span class=\"second-part-container-number\">{{thirdSole}}</span>\n          </div>\n\n        </div>\n      </div>\n    </mat-card>\n   \n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Agents by Multiple Agency Fees</div>\n\n\n\n\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">1% to 2%</span>\n            <span class=\"second-part-container-number\">{{multiFirst}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">2% to 3%</span>\n            <span class=\"second-part-container-number\">{{multiSecond}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">3% to 4%</span>\n            <span class=\"second-part-container-number\">{{multiThird}}</span>\n          </div>\n        </div>\n      </div>\n\n\n\n    </mat-card>\n  </div>\n  </mat-card>\n  <div class=\"mat-card-bottom\"></div>\n\n\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <mat-progress-spinner mode=\"indeterminate\"></mat-progress-spinner>\n</div>\n\n<div class=\"admin-login\" *ngIf=\"!LoggedIn\">\n\n  <div class=\"admin-login-wrapper\">\n\n    <img src=\"../../assets/Images/Nestimatelogo.png\" class=\"image-nestimate-logo\">\n    <div class=\"Login-Text\">Log In</div>\n    <div class=\"div-content-field\">\n      <mat-form-field class=\"example-full-width\">\n        <mat-label>Username</mat-label>\n        <input matInput placeholder=\"Enter Email\" name=\"emails\" [(ngModel)]=\"emails\">\n      </mat-form-field>\n\n\n      <mat-form-field>\n        <mat-label>Enter your password</mat-label>\n        <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"password\">\n        <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n          [attr.aria-pressed]=\"hide\">\n          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n        </button>\n      </mat-form-field>\n\n      <div class=\"remmber-me\">\n        <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [value]=\"true\" (click)=\"check(emails,password)\" ><span class=\"Checkbox-text\">Remember Me</span>\n        </mat-checkbox>\n      </div>\n      <div class=\"login-buttons\" (click)=\"signIn(emails, password)\">\n        <button mat-button class=\"button-align\">Log In</button>\n      </div>\n    </div>\n\n\n    \n\n\n\n  </div>\n\n\n  <div class=\"forgot-password\">\n    <div class=\"forgot-password-text\" (click)=\"forgotOverlay()\">\n      <div>\n        <img src=\"../../assets/Images/lock-open.svg\" class=\"lock-icon\"></div>\n      <div class=\"text-forgot-password\">\n        Forgot your Password?\n      </div>\n\n\n    </div>\n    <div class=\"text-forgot-password back-to-webiste\" routerLink=\"/\">\n      <div>\n        <img src=\"../../assets/Images/arrow-back.svg\" class=\"back-arrow\">\n      </div>\n      <div>Back To The Website</div>\n    </div>\n  </div>\n</div>\n\n<div *ngIf=\"LoggedIn\">\n  <app-admin-header></app-admin-header>\n</div>\n\n<div class=\"user-agent-tab-main-container\" *ngIf=\"LoggedIn\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n\n      <div class=\"top-bar-user-heading\">\n        Dashboard\n      </div>\n      <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n      </div>\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n\n\n\n  <div class=\"top-card\">\n    <mat-card class=\"left-nestimate-dashboard\">\n      <div class=\"wrapper-total-nestimate\">\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{NestimateLength}}</span>\n          <span class=\"total-netiamte-text\"> Total Nestimates</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">\n            <img src=\"../../../assets/Images/person.svg\" class=\"person-dashboard\">\n            {{numberOfUser}}</span>\n          <span class=\"total-netiamte-text\"> Total No. of Users</span>\n        </div>\n      </div>\n    </mat-card>\n    <mat-card class=\"right-nestimate-dashboard\">\n      <div class=\"wrapper-total-nestimate\">\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">2,300</span>\n          <span class=\"total-netiamte-text\">Total Matches</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{ExpressedIneterest}}</span>\n          <span class=\"total-netiamte-text\"> Total Express Interest</span>\n        </div>\n        <div class=\"total-nestimate\">\n          <span class=\"total-nestimate-number\">{{ConfirmInterest}}</span>\n          <span class=\"total-netiamte-text\">Total Confirm Interest</span>\n        </div>\n      </div>\n    </mat-card>\n  </div>\n\n\n\n  <div class=\"second-color-container\">\n    Users\n  </div>\n  <mat-card class=\"second-part-container\">\n\n\n\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Nestimate by Listing Type</div>\n\n\n\n\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Sell</span>\n            <span class=\"second-part-container-number\">{{countingSellerTypeSell}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Let</span>\n            <span class=\"second-part-container-number\">{{countingSellerTypeRent}}</span>\n          </div>\n\n        </div>\n\n        <div class=\"right-line\"></div>\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Buy</span>\n            <span class=\"second-part-container-number\">{{countListingTypeBuy}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Rent</span>\n            <span class=\"second-part-container-number\">{{countListingTypeRent}}</span>\n\n          </div>\n\n        </div>\n\n\n\n      </div>\n\n\n\n\n\n    </mat-card>\n\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\"> Nestimate by Property Type</div>\n\n\n \n  \n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Flat</span>\n            <span class=\"second-part-container-number\">{{FlatpropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Studio</span>\n            <span class=\"second-part-container-number\">{{studiopropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Terraced house</span>\n            <span class=\"second-part-container-number\">{{TerracedhouseType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Maisonette</span>\n            <span class=\"second-part-container-number\">{{MaisonetteType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Semi-detached house</span>\n            <span class=\"second-part-container-number\">{{SemidetachedType}}</span>\n          </div>\n\n            <div class=\"top-second-part-container\">\n              <span class=\"second-part-container-text\">Bungalow</span>\n              <span class=\"second-part-container-number\">{{BungalowType}}</span>\n  \n            </div>\n  \n            <div class=\"lower-second-part-container\">\n              <span class=\"second-part-container-text\">Detached house</span>\n              <span class=\"second-part-container-number\">{{DetachedhousType}}</span>\n            </div>\n\n        </div>\n\n        <div class=\"right-line\"></div>\n\n        <div class=\"right-side-second-part-container\">\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Cottage</span>\n            <span class=\"second-part-container-number\">{{CottagePropertyType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Town House</span>\n            <span class=\"second-part-container-number\">{{TownhouseType}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Country house</span>\n            <span class=\"second-part-container-number\">{{CountryhouseType}}</span>\n          </div>\n\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Barn conversion</span>\n            <span class=\"second-part-container-number\">{{BarnconversionType}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Farm</span>\n            <span class=\"second-part-container-number\">{{FarmPropertyType}}</span>\n          </div>\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">Houseboat</span>\n            <span class=\"second-part-container-number\">{{HouseboaType}}</span>\n\n          </div>\n\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">Lodge</span>\n            <span class=\"second-part-container-number\">{{LodgeType}}</span>\n          </div>\n        \n\n        </div>\n\n\n\n      </div>\n\n\n\n    </mat-card>\n  </mat-card>\n\n  <div class=\"mat-card-bottom\"></div>\n\n\n  <mat-card class=\"third-mat-card\">\n    <div class=\"wrapper-total-nestimate third-matcard-align\">\n\n      <div class=\"total-nestimate total-postcode\">\n        <span class=\"total-nestimate-number\">\n          <img src=\"../../../assets/Images/person.svg\" class=\"person-dashboard\">\n          {{agentLength}}</span>\n        <span class=\"total-netiamte-text\"> Total No. of Agents</span>\n      </div>\n      <div class=\"right-line\"></div>\n      <div class=\"total-nestimate total-postcode\">\n        <span class=\"total-nestimate-number\">2,344</span>\n        <span class=\"total-netiamte-text\"> Total No. of Postcodes</span>\n      </div>\n     \n    </div>\n\n  </mat-card>\n\n\n  <div class=\"second-color-container\">\n    Agents\n  </div>\n  <mat-card class=\"second-part-container\">\n\n\n\n    <div class=\"fourth-part-container\">\n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Agents by Sole Agency Fees</div>\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">1% to 2%</span>\n            <span class=\"second-part-container-number\">{{firstSole}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">2% to 3%</span>\n            <span class=\"second-part-container-number\">{{secondSole}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">3% to 4%</span>\n            <span class=\"second-part-container-number\">{{thirdSole}}</span>\n          </div>\n\n        </div>\n      </div>\n    </mat-card>\n   \n    <mat-card class=\"wrapper-one-second-part-container\">\n      <div class=\"profile-heading dashboard-heading\">Agents by Multiple Agency Fees</div>\n\n\n\n\n      <div class=\"second-part-container-two-sides-container\">\n\n        <div class=\"right-side-second-part-container\">\n          <div class=\"top-second-part-container\">\n            <span class=\"second-part-container-text\">1% to 2%</span>\n            <span class=\"second-part-container-number\">{{multiFirst}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">2% to 3%</span>\n            <span class=\"second-part-container-number\">{{multiSecond}}</span>\n          </div>\n          <div class=\"lower-second-part-container\">\n            <span class=\"second-part-container-text\">3% to 4%</span>\n            <span class=\"second-part-container-number\">{{multiThird}}</span>\n          </div>\n        </div>\n      </div>\n\n\n\n    </mat-card>\n  </div>\n  </mat-card>\n  <div class=\"mat-card-bottom\"></div>\n\n\n</div>\n\n\n\n<div class=\"add-agent-overlay\" *ngIf=\"forGotPassword\">\n  <div class=\"overlay-black-back\">\n    <div class=\"overlay-job\">\n        <div class=\"inner-job-title\">\n            <div class=\"select-job-title-container\">\n              <div class=\"selct-job-title-text\">\n                Forgot Password\n               </div>\n                <div class=\"select-job-title-image-close\" (click)=\"hideforgotOverlay()\">\n            <img src=\"../../../assets/Images/close-outline.png\" class=\"serach-icon-image-job-title\" >\n                </div>\n            </div>\n          <div >\n              <div  class=\"job-title-content\" (click)=\"showJobTiltle(allAgent.jobtitle)\">\n                <mat-form-field class=\"example-full-width\">\n                  <mat-label> Enter Email</mat-label>\n                  <input matInput placeholder=\"Enter Email\" name=\"email\" [(ngModel)]=\"email\">\n                </mat-form-field>\n\n                <div class=\"login-buttons\" (click)=\"forgotEmail(email)\">\n                  <button mat-button class=\"button-align\">Confirm</button>\n                </div>\n\n              </div>\n          </div>\n        </div>\n       </div>\n\n\n\n</div>";
     /***/
   },
 
@@ -271,7 +271,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n<img src=\"../../assets/Images/sidelogo.png\" class=\"image-loader\">\n<p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n</div>\n\n<app-home-matches *ngIf=\"appMatches\"></app-home-matches>  \n\n\n<div class=\"home_content_container\" *ngIf=\"!isLoggedIn\">\n  <div class=\"slider\">\n    <img src=\"{{imageUrl}}\" alt=\"\"  class=\"slider-image\">\n     <div class=\"text-over-image\">{{TopImageText}}</div>\n    </div>\n  \n\n<div class=\"radio-cn\" >\n  <div class=\"custom-buttons\">\n    <p class=\"i-am heading-nestimate\">Please select if you are:</p>\n    <div class=\"upper-custom-button\">\n    \n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home owner\n        <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    </div>\n  \n    </div>\n\n  <div class=\"upper-custom-button mt-2\">\n\n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home seeker\n        <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home2\">\n        <span class=\"checkmark\"></span>\n      </label>\n    \n    </div>\n  </div>\n      <div class=\"large-button mt-3\">\n      \n        <div class=\"create-nestimate\" (click)=\"homeradio()\">\n          <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\" >\n          <span class=\"text-create-nestimate mr-1\">Create your Nestimate</span>\n          <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n\n        </div>\n      </div>\n  </div>\n</div>\n\n<div *ngIf=\"!isLoggedIn\">\n <div class=\"image-over\">\n\n   <img  src=\"{{secondImageUrl}}\" class=\"buyer-jpg\">\n   <p class=\"text-over-image-second\">{{SecondImageText}}</p>\n </div>\n\n\n</div>\n  \n\n\n\n\n  <div class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n    <div class=\"title heading-nestimate heading-nestimate-font\">{{how}}</div>\n\n      <div class=\"steps-container\">\n\n           <div class=\"step\">\n            <img src=\"{{Step1Image }}\" class=\"step-mage\">\n        \n            <p class=\"step-text \"><b class=\"outputText\">Create your Nestimate</b><br> \n            </p>\n              \n              <div class=\"slider-text\">{{Step1TExt}}</div>\n              <hr class=\"line-below\">\n           </div>\n         \n           <div class=\"step\">\n            <img src=\"{{Step2Image}}\" class=\"step-mage\">\n         \n            <p class=\"step-text\">\n              <b class=\"outputText\">Review Nestimate</b>\n            </p>\n         \n              <div class=\"slider-text\">{{Step2Text}}</div>\n        \n              <hr class=\"line-below\">\n      </div>\n\n\n           <div class=\"step\">\n            <img src=\"{{step3Image}}\" class=\"step-mage\">\n        \n            <p class=\"step-text\">\n              <b class=\"outputText\">Express Interest</b>\n              \n            </p>\n              \n              <div class=\"slider-text\">\n                                 {{step3Text}}</div>\n                                 <hr class=\"line-below\">\n           \n            </div>\n      </div>\n    </div>\n\n\n\n\n</div>\n\n<div class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n  <div class=\"title heading-nestimate heading-nestimate-font\">Blogs</div>\n   \n  <div class=\"heading-nestimate blog-top-heading\">Keep up to date with the latest property news</div>\n\n  <div class=\"blog-grid\">\n  <div *ngFor= \"let blog of homePageBlogs\"  >\n     <div class=\"grid-image\">\n      <img src=\"{{blog.BlogImage}}\" alt=\"\"  class=\"blog-image\">\n     </div>\n    \n     <div class=\"grid-text\">\n \n        <a href=\"{{blog.BlogLink}}\" class=\"blog-link-decoration\">\n\n          {{blog.TextBlog}}\n        </a>\n     </div>\n    </div>\n  </div>\n\n  <div class=\"heading-nestimate blog-top-heading\">All property news \t&gt;</div>\n</div>\n\n\n\n<div class=\"cookies-policy\" *ngIf=\"cookie\"> \n \n<div class=\"cookies-policy-text\">\n\n\n  <div class=\"policy-content outputText\">\n    <div class=\"policy-content-layout\">\n      <div class=\"heading-cookies-content\">\n    <span class=\"policy-heading \">Cookie Policy</span>\n  </div>\n  <div class=\"cookies-content\">\n    <span class=\"policy-content\">We use cookies to provide you with a better service.Continue browsing if you are happy with this, otherwise you can find out how to manage cookies here.</span> \n</div>\n\n  </div>\n  </div>\n\n  <div class=\"cookies-button\">\n \n    <div class=\"top-button-cookies\" routerLink=\"/cookies\" style=\"color:#81C2FD\">Manage Settings</div>\n\n    <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\">Allow all Cookies</div>\n\n  </div>\n</div>\n\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n<img src=\"../../assets/Images/sidelogo.png\" class=\"image-loader\">\n<p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n</div>\n\n<app-home-matches *ngIf=\"appMatches\"></app-home-matches>  \n\n\n<div class=\"home_content_container\" *ngIf=\"!isLoggedIn\">\n  <div class=\"slider\">\n    <img src=\"{{imageUrl}}\" alt=\"\"  class=\"slider-image\">\n     <div class=\"text-over-image\">{{TopImageText}}</div>\n    </div>\n  \n\n<div class=\"radio-cn\" >\n  <div class=\"custom-buttons\">\n    <p class=\"i-am heading-nestimate\">Please select if you are:</p>\n    <div class=\"upper-custom-button\">\n    \n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home owner\n        <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    </div>\n  \n    </div>\n\n  <div class=\"upper-custom-button mt-2\">\n\n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home seeker\n        <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home2\">\n        <span class=\"checkmark\"></span>\n      </label>\n    \n    </div>\n  </div>\n      <div class=\"large-button mt-3\">\n      \n        <div class=\"create-nestimate\" (click)=\"homeradio()\">\n          <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\" >\n          <span class=\"text-create-nestimate mr-1\">Create your Nestimate</span>\n          <span class=\"greater-than-arrow paragraph-color mr-1\">&rarr;</span>\n\n        </div>\n      </div>\n  </div>\n</div>\n\n<div *ngIf=\"!isLoggedIn\">\n <div class=\"image-over\">\n\n   <img  src=\"{{secondImageUrl}}\" class=\"buyer-jpg\">\n   <p class=\"text-over-image-second\">{{SecondImageText}}</p>\n </div>\n\n\n</div>\n  \n\n\n\n\n  <div class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n    <div class=\"title heading-nestimate heading-nestimate-font\">{{how}}</div>\n\n      <div class=\"steps-container\">\n\n           <div class=\"step\">\n            <img src=\"{{Step1Image }}\" class=\"step-mage\">\n        \n            <p class=\"step-text \"><b class=\"outputText\">Create your Nestimate</b><br> \n            </p>\n              \n              <div class=\"slider-text\">{{Step1TExt}}</div>\n              <hr class=\"line-below\">\n           </div>\n         \n           <div class=\"step\">\n            <img src=\"{{Step2Image}}\" class=\"step-mage\">\n         \n            <p class=\"step-text\">\n              <b class=\"outputText\">Review Nestimate</b>\n            </p>\n         \n              <div class=\"slider-text\">{{Step2Text}}</div>\n        \n              <hr class=\"line-below\">\n      </div>\n\n\n           <div class=\"step\">\n            <img src=\"{{step3Image}}\" class=\"step-mage\">\n        \n            <p class=\"step-text\">\n              <b class=\"outputText\">Express Interest</b>\n              \n            </p>\n              \n              <div class=\"slider-text\">\n                                 {{step3Text}}</div>\n                                 <hr class=\"line-below\">\n           \n            </div>\n      </div>\n    </div>\n\n\n\n\n</div>\n\n<div class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n  <div class=\"title heading-nestimate heading-nestimate-font\">Blogs</div>\n   \n  <div class=\"heading-nestimate blog-top-heading\">Keep up to date with the latest property news</div>\n\n  <div class=\"blog-grid\">\n  <div *ngFor= \"let blog of homePageBlogs\"  >\n     <div class=\"grid-image\">\n      <img src=\"{{blog.BlogImage}}\" alt=\"\"  class=\"blog-image\">\n     </div>\n    \n     <div class=\"grid-text\">\n \n        <a href=\"{{blog.BlogLink}}\" class=\"blog-link-decoration\">\n\n          {{blog.TextBlog}}\n        </a>\n     </div>\n    </div>\n  </div>\n\n  <div class=\"heading-nestimate blog-top-heading\">All property news \t&gt;</div>\n</div>\n\n\n\n<div class=\"cookies-policy\" *ngIf=\"cookie\"> \n \n<div class=\"cookies-policy-text\">\n\n\n  <div class=\"policy-content outputText\">\n    <div class=\"policy-content-layout\">\n      <div class=\"heading-cookies-content\">\n    <span class=\"policy-heading \">Cookie Policy</span>\n  </div>\n  <div class=\"cookies-content\">\n    <span class=\"policy-content\">We use cookies to provide you with a better service.Continue browsing if you are happy with this, otherwise you can find out how to manage cookies here.</span> \n</div>\n\n  </div>\n  </div>\n\n  <div class=\"cookies-button\">\n \n    <div class=\"top-button-cookies\" routerLink=\"/cookies\" style=\"color:#81C2FD\">Manage Settings</div>\n\n    <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\">Allow all Cookies</div>\n\n  </div>\n</div>\n\n</div>";
     /***/
   },
 
@@ -2251,7 +2251,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".nestimate-admin-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 23px;\n    padding-left: 12px;\n\n}\n\nimg.nestimate-logo-header {\n    height: 3.8vh;\n}\n\n.admin-heaher-main {\n    display: flex;\n    align-items: center;\n    padding: 10px;\n    background-color: white;\n    position: fixed;\n    z-index: 1;\n    width: 100%;\n    box-shadow: 3px 3px 5px 3px #ccc;\n\n}\n\n.nestimate-logo-container {\n    border-right: 1px solid black;\n}\n\n.admin-side-bar {\n    background-color: white;\n    float: left;\n    height: 94%;\n    box-shadow: 7px 0 5px -2px #00000029;\n    position: fixed;\n    margin-top: 6vh;\n    padding: 0em 1em;\n}\n\nimg.dashboard-icon {\n   \n    height: 5vh;\n\n}\n\n.dashboard-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 1.3em;\n    padding-right: 0px;\n    padding-left: 0px;\n}\n\n.dashboard-container\n{\n    color: #C1BFBF;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 500;\n}\n\n.sign-out-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    /* position: relative; */\n    /* bottom: 0px; */\n    position: absolute;\n    bottom: 10px;\n    left: 3em;\n}\n\n.active-dashboard {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: 8px 8px 5px -1px #00000029;\n\n    padding: 7px;\n    width: 6.5vw;\n}\n\n.dashboard-div:hover\n{\n   cursor: pointer;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGVBQWU7SUFDZixVQUFVO0lBQ1YsV0FBVztJQUNYLGdDQUFnQzs7QUFFcEM7O0FBQ0E7SUFDSSw2QkFBNkI7QUFDakM7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIsV0FBVztJQUNYLFdBQVc7SUFDWCxvQ0FBb0M7SUFDcEMsZUFBZTtJQUNmLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBRUE7O0lBRUksV0FBVzs7QUFFZjs7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0QixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjs7QUFFQTs7SUFFSSxjQUFjO0lBQ2QsaUNBQWlDO0VBQ25DLGdCQUFnQjtBQUNsQjs7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQix3QkFBd0I7SUFDeEIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osU0FBUztBQUNiOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsc0NBQXNDOztJQUV0QyxZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFDQTs7R0FFRyxlQUFlO0FBQ2xCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubmVzdGltYXRlLWFkbWluLWhlYWRpbmdcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXNpemU6IDIzcHg7XG4gICAgcGFkZGluZy1sZWZ0OiAxMnB4O1xuXG59XG5cbmltZy5uZXN0aW1hdGUtbG9nby1oZWFkZXIge1xuICAgIGhlaWdodDogMy44dmg7XG59XG4uYWRtaW4taGVhaGVyLW1haW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB6LWluZGV4OiAxO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuXG59XG4ubmVzdGltYXRlLWxvZ28tY29udGFpbmVyIHtcbiAgICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCBibGFjaztcbn1cblxuLmFkbWluLXNpZGUtYmFyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmbG9hdDogbGVmdDtcbiAgICBoZWlnaHQ6IDk0JTtcbiAgICBib3gtc2hhZG93OiA3cHggMCA1cHggLTJweCAjMDAwMDAwMjk7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIG1hcmdpbi10b3A6IDZ2aDtcbiAgICBwYWRkaW5nOiAwZW0gMWVtO1xufVxuXG5pbWcuZGFzaGJvYXJkLWljb24ge1xuICAgXG4gICAgaGVpZ2h0OiA1dmg7XG5cbn1cblxuLmRhc2hib2FyZC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIHBhZGRpbmc6IDEuM2VtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDBweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDBweDtcbn1cblxuLmRhc2hib2FyZC1jb250YWluZXJcbntcbiAgICBjb2xvcjogI0MxQkZCRjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG5cbi5zaWduLW91dC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIC8qIHBvc2l0aW9uOiByZWxhdGl2ZTsgKi9cbiAgICAvKiBib3R0b206IDBweDsgKi9cbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgYm90dG9tOiAxMHB4O1xuICAgIGxlZnQ6IDNlbTtcbn1cblxuLmFjdGl2ZS1kYXNoYm9hcmQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJveC1zaGFkb3c6IDhweCA4cHggNXB4IC0xcHggIzAwMDAwMDI5O1xuXG4gICAgcGFkZGluZzogN3B4O1xuICAgIHdpZHRoOiA2LjV2dztcbn1cbi5kYXNoYm9hcmQtZGl2OmhvdmVyXG57XG4gICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbiJdfQ== */";
+    __webpack_exports__["default"] = ".nestimate-admin-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 23px;\n    padding-left: 12px;\n\n}\n\nimg.nestimate-logo-header {\n    height: 3.8vh;\n}\n\n.admin-heaher-main {\n    display: flex;\n    align-items: center;\n    padding: 10px;\n    background-color: white;\n    position: fixed;\n    z-index: 1;\n    width: 100%;\n    box-shadow: 3px 3px 5px 3px #ccc;\n\n}\n\n.nestimate-logo-container {\n    border-right: 1px solid black;\n}\n\n.admin-side-bar {\n    background-color: white;\n    float: left;\n    height: 94%;\n    box-shadow: 7px 0 5px -2px #00000029;\n    position: fixed;\n    margin-top: 6vh;\n    padding: 0em 1em;\n}\n\nimg.dashboard-icon {\n   \n    height: 5vh;\n\n}\n\n.dashboard-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 1.3em;\n    padding-right: 0px;\n    padding-left: 0px;\n}\n\n.dashboard-container\n{\n    color: #C1BFBF;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 500;\n}\n\n.sign-out-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    /* position: relative; */\n    /* bottom: 0px; */\n    position: absolute;\n    bottom: 10px;\n    left: 3em;\n}\n\n.active-dashboard {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: 8px 8px 5px -1px #00000029;\n\n    padding: 7px;\n    width: 6.5vw;\n}\n\n.dashboard-div:hover\n{\n   cursor: pointer;\n}\n\n.sign-out-dashboard:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7O0FBRUE7SUFDSSxhQUFhO0FBQ2pCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGVBQWU7SUFDZixVQUFVO0lBQ1YsV0FBVztJQUNYLGdDQUFnQzs7QUFFcEM7O0FBQ0E7SUFDSSw2QkFBNkI7QUFDakM7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIsV0FBVztJQUNYLFdBQVc7SUFDWCxvQ0FBb0M7SUFDcEMsZUFBZTtJQUNmLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBRUE7O0lBRUksV0FBVzs7QUFFZjs7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0QixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLGlCQUFpQjtBQUNyQjs7QUFFQTs7SUFFSSxjQUFjO0lBQ2QsaUNBQWlDO0VBQ25DLGdCQUFnQjtBQUNsQjs7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQix3QkFBd0I7SUFDeEIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osU0FBUztBQUNiOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsc0NBQXNDOztJQUV0QyxZQUFZO0lBQ1osWUFBWTtBQUNoQjs7QUFDQTs7R0FFRyxlQUFlO0FBQ2xCOztBQUVBOztJQUVJLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL2FkbWluLWhlYWRlci9hZG1pbi1oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uZXN0aW1hdGUtYWRtaW4taGVhZGluZ1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtc2l6ZTogMjNweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDEycHg7XG5cbn1cblxuaW1nLm5lc3RpbWF0ZS1sb2dvLWhlYWRlciB7XG4gICAgaGVpZ2h0OiAzLjh2aDtcbn1cbi5hZG1pbi1oZWFoZXItbWFpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHotaW5kZXg6IDE7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG5cbn1cbi5uZXN0aW1hdGUtbG9nby1jb250YWluZXIge1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGJsYWNrO1xufVxuXG4uYWRtaW4tc2lkZS1iYXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZsb2F0OiBsZWZ0O1xuICAgIGhlaWdodDogOTQlO1xuICAgIGJveC1zaGFkb3c6IDdweCAwIDVweCAtMnB4ICMwMDAwMDAyOTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgbWFyZ2luLXRvcDogNnZoO1xuICAgIHBhZGRpbmc6IDBlbSAxZW07XG59XG5cbmltZy5kYXNoYm9hcmQtaWNvbiB7XG4gICBcbiAgICBoZWlnaHQ6IDV2aDtcblxufVxuXG4uZGFzaGJvYXJkLWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgcGFkZGluZzogMS4zZW07XG4gICAgcGFkZGluZy1yaWdodDogMHB4O1xuICAgIHBhZGRpbmctbGVmdDogMHB4O1xufVxuXG4uZGFzaGJvYXJkLWNvbnRhaW5lclxue1xuICAgIGNvbG9yOiAjQzFCRkJGO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cblxuLnNpZ24tb3V0LWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgLyogcG9zaXRpb246IHJlbGF0aXZlOyAqL1xuICAgIC8qIGJvdHRvbTogMHB4OyAqL1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBib3R0b206IDEwcHg7XG4gICAgbGVmdDogM2VtO1xufVxuXG4uYWN0aXZlLWRhc2hib2FyZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm94LXNoYWRvdzogOHB4IDhweCA1cHggLTFweCAjMDAwMDAwMjk7XG5cbiAgICBwYWRkaW5nOiA3cHg7XG4gICAgd2lkdGg6IDYuNXZ3O1xufVxuLmRhc2hib2FyZC1kaXY6aG92ZXJcbntcbiAgIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLnNpZ24tb3V0LWRhc2hib2FyZDpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn0iXX0= */";
     /***/
   },
 
@@ -2337,6 +2337,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "signOut",
         value: function signOut() {
           this.AdminAuthService.SignOut();
+          window.location.reload();
         }
       }]);
 
@@ -2381,7 +2382,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".admin-login {\n    height: 100%;\n    background-color: white;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\nimg.image-nestimate-logo {\n    height: 8vh;\n}\n.Login-Text {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 2em;\n    text-align: center;\n    color: #0F3C73;\n    margin: 10px;\n}\n.div-content-field {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    justify-content: center;\n    margin: 10px 0px;\n}\nbutton.button-align {\n    background-color: #1EAAFA;\n    color: white;\n    width: 25%;\n    border-radius: 50px;\n\n    font-size: 20px;\n\n}\n.login-buttons {\n    margin: 12px;\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.forgot-password-text {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\nimg.lock-icon {\n    width: 1em;\n    margin-right: 10px;\n}\n.text-forgot-password {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n.Checkbox-text\n{\nfont-family: 'Roboto Slab', serif;\nfont-weight: 400;\ncolor: #0F3C73;\n}\n.text-forgot-password.back-to-webiste {\n    text-align: center;\n    margin: 10px 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\nimg.back-arrow {\n    width: 1.3em;\n    margin-right: 4px;\n}\n.top-card {\n    margin-right: 2em;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 9em;\n    margin-top: 3em;\n}\n.total-nestimate {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 100%;\n    align-items: center;\n    padding-bottom: 15px;\n    border-bottom: 1px solid #CBC7C7;\n    margin-bottom: 20px;\n}\nspan.total-netiamte-text {\n    font-size: 1.6em;\n    font-family: 'Roboto', sans-serif;\n    font-weight: 700;\n    color: #787575;\n}\nspan.total-nestimate-number {\n    font-size: 1.6em;\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    display: flex;\n    align-items: center;\n}\n.wrapper-total-nestimate {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    height: 100%;\n}\n.left-nestimate-dashboard {\n    padding: 2em 4em;\n    padding-bottom: 1em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.right-nestimate-dashboard\n{\n    padding: 2em 4em;\n    padding-bottom: 1em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\nimg.person-dashboard {\n    height: 3.5vh;\n    margin-left: -1.5em;\n    padding-right: 10px;\n}\n.second-color-container {\n    background-color: #0F3C73;\n    margin-top: 2em;\n    margin-right: 1.5em;\n    padding: 0.5em;\n    color: white;\n    font-size: 1.5em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    padding-left: 1em;\n}\n.second-part-container{\n  \n    margin-right: 2em;\n\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.profile-heading.dashboard-heading {\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    padding-right: 10px;\n}\nspan.second-part-container-text {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n}\nspan.second-part-container-number {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n\n}\n.top-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n    width: 32vw;\n\n    padding-top: 1em;\n\n\n}\n.lower-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n\n    padding-top: 1em;\n\n\n\n}\n.wrapper-one-second-part-container{\n    margin: 2em 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.right-line\n{\n    border-right: 1px solid lightgray;\n\n    height: 9vh;\n\n}\n.second-part-container-two-sides-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  \n}\n.mat-card-bottom {\n    height: 5vh;\n}\n.third-matcard-align {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.third-mat-card {\n    margin-right: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.total-nestimate.total-postcode {\n\n    padding-bottom: 0px;\n    padding: 7px;\n    padding-bottom: 10px;\n    margin: 1em 3em;\n  \n}\n.fourth-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: baseline;\n}\n.wrapper-one-second-part-container {\n    padding-bottom: 2em;\n    padding: 2em 1em;\n}\n.wrapper-total-nestimate.third-matcard-align {\n    padding: 0em 2em;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsa0JBQWtCO0lBQ2xCLGNBQWM7SUFDZCxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFVBQVU7SUFDVixtQkFBbUI7O0lBRW5CLGVBQWU7O0FBRW5CO0FBQ0E7SUFDSSxZQUFZO0lBQ1osV0FBVztJQUNYLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1QjtBQUMzQjtBQUNBO0lBQ0ksVUFBVTtJQUNWLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7O0FBRUEsaUNBQWlDO0FBQ2pDLGdCQUFnQjtBQUNoQixjQUFjO0FBQ2Q7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLFlBQVk7SUFDWixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixXQUFXO0lBQ1gsbUJBQW1CO0lBQ25CLG9CQUFvQjtJQUNwQixnQ0FBZ0M7SUFDaEMsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQztBQUNBOztJQUVJLGdCQUFnQjtJQUNoQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBR0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsY0FBYztJQUNkLFlBQVk7SUFDWixnQkFBZ0I7SUFDaEIsaUNBQWlDO0lBQ2pDLGtDQUFrQztJQUNsQyxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlCQUFpQjs7SUFFakIsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQztBQUNBO0lBQ0kscUNBQTZCO0lBQTdCLGtDQUE2QjtJQUE3Qiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlOztBQUVuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1COztJQUVuQixrQ0FBa0M7SUFDbEMsb0JBQW9CO0lBQ3BCLFdBQVc7O0lBRVgsZ0JBQWdCOzs7QUFHcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjs7SUFFbkIsa0NBQWtDO0lBQ2xDLG9CQUFvQjs7SUFFcEIsZ0JBQWdCOzs7O0FBSXBCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsZ0NBQWdDO0FBQ3BDO0FBQ0E7O0lBRUksaUNBQWlDOztJQUVqQyxXQUFXOztBQUVmO0FBRUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjs7QUFFdkI7QUFFQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsZ0NBQWdDO0FBQ3BDO0FBQ0E7O0lBRUksbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixvQkFBb0I7SUFDcEIsZUFBZTs7QUFFbkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsNkJBQTZCO0lBQzdCLHFCQUFxQjtBQUN6QjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFkbWluLWxvZ2luIHtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5pbWcuaW1hZ2UtbmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogOHZoO1xufVxuLkxvZ2luLVRleHQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMmVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBtYXJnaW46IDEwcHg7XG59XG4uZGl2LWNvbnRlbnQtZmllbGQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDEwcHggMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1hbGlnbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFFQUFGQTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgd2lkdGg6IDI1JTtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuXG4gICAgZm9udC1zaXplOiAyMHB4O1xuXG59XG4ubG9naW4tYnV0dG9ucyB7XG4gICAgbWFyZ2luOiAxMnB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmZvcmdvdC1wYXNzd29yZC10ZXh0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5pbWcubG9jay1pY29uIHtcbiAgICB3aWR0aDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi50ZXh0LWZvcmdvdC1wYXNzd29yZCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG4uQ2hlY2tib3gtdGV4dFxue1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDQwMDtcbmNvbG9yOiAjMEYzQzczO1xufVxuLnRleHQtZm9yZ290LXBhc3N3b3JkLmJhY2stdG8td2ViaXN0ZSB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIG1hcmdpbjogMTBweCAwcHg7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuaW1nLmJhY2stYXJyb3cge1xuICAgIHdpZHRoOiAxLjNlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDRweDtcbn1cbi50b3AtY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XG4gICAgZ3JpZC1nYXA6IDllbTtcbiAgICBtYXJnaW4tdG9wOiAzZW07XG59XG4udG90YWwtbmVzdGltYXRlIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZy1ib3R0b206IDE1cHg7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNDQkM3Qzc7XG4gICAgbWFyZ2luLWJvdHRvbTogMjBweDtcbn1cbnNwYW4udG90YWwtbmV0aWFtdGUtdGV4dCB7XG4gICAgZm9udC1zaXplOiAxLjZlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzc4NzU3NTtcbn1cbnNwYW4udG90YWwtbmVzdGltYXRlLW51bWJlciB7XG4gICAgZm9udC1zaXplOiAxLjZlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ud3JhcHBlci10b3RhbC1uZXN0aW1hdGUge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuLmxlZnQtbmVzdGltYXRlLWRhc2hib2FyZCB7XG4gICAgcGFkZGluZzogMmVtIDRlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLnJpZ2h0LW5lc3RpbWF0ZS1kYXNoYm9hcmRcbntcbiAgICBwYWRkaW5nOiAyZW0gNGVtO1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG5cblxuaW1nLnBlcnNvbi1kYXNoYm9hcmQge1xuICAgIGhlaWdodDogMy41dmg7XG4gICAgbWFyZ2luLWxlZnQ6IC0xLjVlbTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuLnNlY29uZC1jb2xvci1jb250YWluZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIG1hcmdpbi1yaWdodDogMS41ZW07XG4gICAgcGFkZGluZzogMC41ZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgcGFkZGluZy1sZWZ0OiAxZW07XG59XG4uc2Vjb25kLXBhcnQtY29udGFpbmVye1xuICBcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcblxuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucHJvZmlsZS1oZWFkaW5nLmRhc2hib2FyZC1oZWFkaW5nIHtcbiAgICB3aWR0aDogZml0LWNvbnRlbnQgIWltcG9ydGFudDtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItdGV4dCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbn1cbnNwYW4uc2Vjb25kLXBhcnQtY29udGFpbmVyLW51bWJlciB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcblxufVxuLnRvcC1zZWNvbmQtcGFydC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gICAgcGFkZGluZy1ib3R0b206IDExcHg7XG4gICAgd2lkdGg6IDMydnc7XG5cbiAgICBwYWRkaW5nLXRvcDogMWVtO1xuXG5cbn1cbi5sb3dlci1zZWNvbmQtcGFydC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcblxuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBsaWdodGdyYXk7XG4gICAgcGFkZGluZy1ib3R0b206IDExcHg7XG5cbiAgICBwYWRkaW5nLXRvcDogMWVtO1xuXG5cblxufVxuLndyYXBwZXItb25lLXNlY29uZC1wYXJ0LWNvbnRhaW5lcntcbiAgICBtYXJnaW46IDJlbSAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucmlnaHQtbGluZVxue1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcblxuICAgIGhlaWdodDogOXZoO1xuXG59XG5cbi5zZWNvbmQtcGFydC1jb250YWluZXItdHdvLXNpZGVzLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgXG59XG5cbi5tYXQtY2FyZC1ib3R0b20ge1xuICAgIGhlaWdodDogNXZoO1xufVxuLnRoaXJkLW1hdGNhcmQtYWxpZ24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi50aGlyZC1tYXQtY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4udG90YWwtbmVzdGltYXRlLnRvdGFsLXBvc3Rjb2RlIHtcblxuICAgIHBhZGRpbmctYm90dG9tOiAwcHg7XG4gICAgcGFkZGluZzogN3B4O1xuICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgIG1hcmdpbjogMWVtIDNlbTtcbiAgXG59XG4uZm91cnRoLXBhcnQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gICAgYWxpZ24taXRlbXM6IGJhc2VsaW5lO1xufVxuLndyYXBwZXItb25lLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbiAgICBwYWRkaW5nOiAyZW0gMWVtO1xufVxuLndyYXBwZXItdG90YWwtbmVzdGltYXRlLnRoaXJkLW1hdGNhcmQtYWxpZ24ge1xuICAgIHBhZGRpbmc6IDBlbSAyZW07XG59XG5cbiJdfQ== */";
+    __webpack_exports__["default"] = ".admin-login {\n    height: 100%;\n    background-color: white;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\nimg.image-nestimate-logo {\n    height: 8vh;\n}\n.Login-Text {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.5em;\n    text-align: center;\n    color: #0F3C73;\n    margin: 10px;\n}\n.div-content-field {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    justify-content: center;\n    margin: 10px 0px;\n}\nbutton.button-align {\n    background-color: #1EAAFA;\n    color: white;\n    width: 100%;\n    border-radius: 50px;\n\n    font-size: 20px;\n\n}\n.login-buttons {\n    width: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.forgot-password-text {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\nimg.lock-icon {\n    width: 1em;\n    margin-right: 10px;\n}\n.text-forgot-password {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n.Checkbox-text\n{\nfont-family: 'Roboto Slab', serif;\nfont-weight: 400;\ncolor: #0F3C73;\n}\n.text-forgot-password.back-to-webiste {\n    text-align: center;\n    margin: 14px 0px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\nimg.back-arrow {\n    width: 1.3em;\n    margin-right: 4px;\n}\n.top-card {\n    margin-right: 2em;\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 9em;\n    margin-top: 3em;\n}\n.total-nestimate {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    width: 100%;\n    align-items: center;\n    padding-bottom: 15px;\n    border-bottom: 1px solid #CBC7C7;\n    margin-bottom: 20px;\n}\nspan.total-netiamte-text {\n    font-size: 1.6em;\n    font-family: 'Roboto', sans-serif;\n    font-weight: 700;\n    color: #787575;\n}\nspan.total-nestimate-number {\n    font-size: 1.6em;\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    display: flex;\n    align-items: center;\n}\n.wrapper-total-nestimate {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    height: 100%;\n}\n.left-nestimate-dashboard {\n    padding: 2em 4em;\n    padding-bottom: 1em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.right-nestimate-dashboard\n{\n    padding: 2em 4em;\n    padding-bottom: 1em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\nimg.person-dashboard {\n    height: 3.5vh;\n    margin-left: -1.5em;\n    padding-right: 10px;\n}\n.second-color-container {\n    background-color: #0F3C73;\n    margin-top: 2em;\n    margin-right: 1.5em;\n    padding: 0.5em;\n    color: white;\n    font-size: 1.5em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    padding-left: 1em;\n}\n.second-part-container{\n  \n    margin-right: 2em;\n\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.profile-heading.dashboard-heading {\n    width: -webkit-fit-content !important;\n    width: -moz-fit-content !important;\n    width: fit-content !important;\n    padding-right: 10px;\n}\nspan.second-part-container-text {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n}\nspan.second-part-container-number {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n\n}\n.top-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n    width: 32vw;\n\n    padding-top: 1em;\n\n\n}\n.lower-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n\n    padding-top: 1em;\n\n\n\n}\n.wrapper-one-second-part-container{\n    margin: 2em 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.right-line\n{\n    border-right: 1px solid lightgray;\n\n    height: 9vh;\n\n}\n.second-part-container-two-sides-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  \n}\n.mat-card-bottom {\n    height: 5vh;\n}\n.third-matcard-align {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.third-mat-card {\n    margin-right: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.total-nestimate.total-postcode {\n\n    padding-bottom: 0px;\n    padding: 7px;\n    padding-bottom: 10px;\n    margin: 1em 3em;\n  \n}\n.fourth-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-evenly;\n    align-items: baseline;\n}\n.wrapper-one-second-part-container {\n    padding-bottom: 2em;\n    padding: 2em 1em;\n}\n.wrapper-total-nestimate.third-matcard-align {\n    padding: 0em 2em;\n}\n.forgot-password-text:hover\n{\n    cursor: pointer;\n}\n.text-forgot-password.back-to-webiste:hover\n{\n    cursor: pointer;\n}\n.remmber-me {\n    padding-bottom: 10px;\n}\n.add-agent-overlay{\n    position: fixed;\n    background-color: #0000008c;\n    width: 100vw;\n    top: 0;\n    height: 100vh;\n}\n.add-agent-background {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.full-width\n{\n    width: 100%;\n}\n.wrapper-add-agent {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n}\nimg.serach-icon-image-job-title {\n    height: 3vh;\n}\n.inner-job-title {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n    width: 100%;\n    overflow: overlay;\n}\n.job-title-content {\n    text-align: center;\n    font-size: 1.2em;\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n    margin: 20px 0px;\n}\n.overlay-black-back {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.select-job-title-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.example-full-width{\n    width: 100%;\n}\n.select-job-title-image-close:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksWUFBWTtJQUNaLHVCQUF1QjtJQUN2QixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsa0JBQWtCO0lBQ2xCLGNBQWM7SUFDZCxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2Qix1QkFBdUI7SUFDdkIsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLFdBQVc7SUFDWCxtQkFBbUI7O0lBRW5CLGVBQWU7O0FBRW5CO0FBQ0E7SUFDSSxXQUFXO0lBQ1gsYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0FBQzNCO0FBQ0E7SUFDSSxVQUFVO0lBQ1Ysa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7QUFDQTs7QUFFQSxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGNBQWM7QUFDZDtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksWUFBWTtJQUNaLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsYUFBYTtJQUNiLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLFdBQVc7SUFDWCxtQkFBbUI7SUFDbkIsb0JBQW9CO0lBQ3BCLGdDQUFnQztJQUNoQyxtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsOEJBQThCO0lBQzlCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBQ0E7O0lBRUksZ0JBQWdCO0lBQ2hCLG1CQUFtQjtJQUNuQixnQ0FBZ0M7QUFDcEM7QUFHQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsZUFBZTtJQUNmLG1CQUFtQjtJQUNuQixjQUFjO0lBQ2QsWUFBWTtJQUNaLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsaUJBQWlCO0FBQ3JCO0FBQ0E7O0lBRUksaUJBQWlCOztJQUVqQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBQ0E7SUFDSSxxQ0FBNkI7SUFBN0Isa0NBQTZCO0lBQTdCLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsWUFBWTtJQUNaLGVBQWU7O0FBRW5CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7O0lBRW5CLGtDQUFrQztJQUNsQyxvQkFBb0I7SUFDcEIsV0FBVzs7SUFFWCxnQkFBZ0I7OztBQUdwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1COztJQUVuQixrQ0FBa0M7SUFDbEMsb0JBQW9COztJQUVwQixnQkFBZ0I7Ozs7QUFJcEI7QUFDQTtJQUNJLGVBQWU7SUFDZixnQ0FBZ0M7QUFDcEM7QUFDQTs7SUFFSSxpQ0FBaUM7O0lBRWpDLFdBQVc7O0FBRWY7QUFFQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsbUJBQW1COztBQUV2QjtBQUVBO0lBQ0ksV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixnQ0FBZ0M7QUFDcEM7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLG9CQUFvQjtJQUNwQixlQUFlOztBQUVuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw2QkFBNkI7SUFDN0IscUJBQXFCO0FBQ3pCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFFQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7O0lBRUksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksb0JBQW9CO0FBQ3hCO0FBS0E7SUFDSSxlQUFlO0lBQ2YsMkJBQTJCO0lBQzNCLFlBQVk7SUFDWixNQUFNO0lBQ04sYUFBYTtBQUNqQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsWUFBWTtBQUNoQjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxXQUFXO0FBQ2Y7QUFFQTs7SUFFSSxlQUFlO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1wYW5lbC9hZG1pbi1wYW5lbC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmFkbWluLWxvZ2luIHtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5pbWcuaW1hZ2UtbmVzdGltYXRlLWxvZ28ge1xuICAgIGhlaWdodDogOHZoO1xufVxuLkxvZ2luLVRleHQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIG1hcmdpbjogMTBweDtcbn1cbi5kaXYtY29udGVudC1maWVsZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbjogMTBweCAwcHg7XG59XG5idXR0b24uYnV0dG9uLWFsaWduIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMUVBQUZBO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuXG4gICAgZm9udC1zaXplOiAyMHB4O1xuXG59XG4ubG9naW4tYnV0dG9ucyB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uZm9yZ290LXBhc3N3b3JkLXRleHQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbmltZy5sb2NrLWljb24ge1xuICAgIHdpZHRoOiAxZW07XG4gICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xufVxuLnRleHQtZm9yZ290LXBhc3N3b3JkIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBjb2xvcjogIzBGM0M3Mztcbn1cbi5DaGVja2JveC10ZXh0XG57XG5mb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNDAwO1xuY29sb3I6ICMwRjNDNzM7XG59XG4udGV4dC1mb3Jnb3QtcGFzc3dvcmQuYmFjay10by13ZWJpc3RlIHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgbWFyZ2luOiAxNHB4IDBweDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5pbWcuYmFjay1hcnJvdyB7XG4gICAgd2lkdGg6IDEuM2VtO1xuICAgIG1hcmdpbi1yaWdodDogNHB4O1xufVxuLnRvcC1jYXJkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmcjtcbiAgICBncmlkLWdhcDogOWVtO1xuICAgIG1hcmdpbi10b3A6IDNlbTtcbn1cbi50b3RhbC1uZXN0aW1hdGUge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTVweDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgI0NCQzdDNztcbiAgICBtYXJnaW4tYm90dG9tOiAyMHB4O1xufVxuc3Bhbi50b3RhbC1uZXRpYW10ZS10ZXh0IHtcbiAgICBmb250LXNpemU6IDEuNmVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJywgc2Fucy1zZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjNzg3NTc1O1xufVxuc3Bhbi50b3RhbC1uZXN0aW1hdGUtbnVtYmVyIHtcbiAgICBmb250LXNpemU6IDEuNmVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJywgc2Fucy1zZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi53cmFwcGVyLXRvdGFsLW5lc3RpbWF0ZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4ubGVmdC1uZXN0aW1hdGUtZGFzaGJvYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gNGVtO1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucmlnaHQtbmVzdGltYXRlLWRhc2hib2FyZFxue1xuICAgIHBhZGRpbmc6IDJlbSA0ZW07XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cblxuXG5pbWcucGVyc29uLWRhc2hib2FyZCB7XG4gICAgaGVpZ2h0OiAzLjV2aDtcbiAgICBtYXJnaW4tbGVmdDogLTEuNWVtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDEwcHg7XG59XG4uc2Vjb25kLWNvbG9yLWNvbnRhaW5lciB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgbWFyZ2luLXJpZ2h0OiAxLjVlbTtcbiAgICBwYWRkaW5nOiAwLjVlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1zaXplOiAxLjVlbTtcbiAgICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBwYWRkaW5nLWxlZnQ6IDFlbTtcbn1cbi5zZWNvbmQtcGFydC1jb250YWluZXJ7XG4gIFxuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuXG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5wcm9maWxlLWhlYWRpbmcuZGFzaGJvYXJkLWhlYWRpbmcge1xuICAgIHdpZHRoOiBmaXQtY29udGVudCAhaW1wb3J0YW50O1xuICAgIHBhZGRpbmctcmlnaHQ6IDEwcHg7XG59XG5zcGFuLnNlY29uZC1wYXJ0LWNvbnRhaW5lci10ZXh0IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgZm9udC1zaXplOiAyMHB4O1xufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItbnVtYmVyIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuXG59XG4udG9wLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTFweDtcbiAgICB3aWR0aDogMzJ2dztcblxuICAgIHBhZGRpbmctdG9wOiAxZW07XG5cblxufVxuLmxvd2VyLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTFweDtcblxuICAgIHBhZGRpbmctdG9wOiAxZW07XG5cblxuXG59XG4ud3JhcHBlci1vbmUtc2Vjb25kLXBhcnQtY29udGFpbmVye1xuICAgIG1hcmdpbjogMmVtIDJlbTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC1saW5lXG57XG4gICAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgbGlnaHRncmF5O1xuXG4gICAgaGVpZ2h0OiA5dmg7XG5cbn1cblxuLnNlY29uZC1wYXJ0LWNvbnRhaW5lci10d28tc2lkZXMtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBcbn1cblxuLm1hdC1jYXJkLWJvdHRvbSB7XG4gICAgaGVpZ2h0OiA1dmg7XG59XG4udGhpcmQtbWF0Y2FyZC1hbGlnbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnRoaXJkLW1hdC1jYXJkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi50b3RhbC1uZXN0aW1hdGUudG90YWwtcG9zdGNvZGUge1xuXG4gICAgcGFkZGluZy1ib3R0b206IDBweDtcbiAgICBwYWRkaW5nOiA3cHg7XG4gICAgcGFkZGluZy1ib3R0b206IDEwcHg7XG4gICAgbWFyZ2luOiAxZW0gM2VtO1xuICBcbn1cbi5mb3VydGgtcGFydC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgICBhbGlnbi1pdGVtczogYmFzZWxpbmU7XG59XG4ud3JhcHBlci1vbmUtc2Vjb25kLXBhcnQtY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMmVtO1xuICAgIHBhZGRpbmc6IDJlbSAxZW07XG59XG4ud3JhcHBlci10b3RhbC1uZXN0aW1hdGUudGhpcmQtbWF0Y2FyZC1hbGlnbiB7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cblxuLmZvcmdvdC1wYXNzd29yZC10ZXh0OmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLnRleHQtZm9yZ290LXBhc3N3b3JkLmJhY2stdG8td2ViaXN0ZTpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5yZW1tYmVyLW1lIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTBweDtcbn1cblxuXG5cblxuLmFkZC1hZ2VudC1vdmVybGF5e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwOGM7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIHRvcDogMDtcbiAgICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uYWRkLWFnZW50LWJhY2tncm91bmQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4uZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLndyYXBwZXItYWRkLWFnZW50IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbmltZy5zZXJhY2gtaWNvbi1pbWFnZS1qb2ItdGl0bGUge1xuICAgIGhlaWdodDogM3ZoO1xufVxuLmlubmVyLWpvYi10aXRsZSB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgb3ZlcmZsb3c6IG92ZXJsYXk7XG59XG4uam9iLXRpdGxlLWNvbnRlbnQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDo1MDA7XG4gICAgbWFyZ2luOiAyMHB4IDBweDtcbn1cbi5vdmVybGF5LWJsYWNrLWJhY2sge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4uc2VsZWN0LWpvYi10aXRsZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLmV4YW1wbGUtZnVsbC13aWR0aHtcbiAgICB3aWR0aDogMTAwJTtcbn1cblxuLnNlbGVjdC1qb2ItdGl0bGUtaW1hZ2UtY2xvc2U6aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */";
     /***/
   },
 
@@ -2499,6 +2500,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.listingSellerHouseboatPropertyType = [];
         this.listingBuyerLodgePropertyType = [];
         this.listingSellerLodgePropertyType = [];
+        this.forGotPassword = false;
         this.AllAgents = [];
         this.soleFeesThird = [];
         this.soleFeesSecond = [];
@@ -2533,9 +2535,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
         }
       }, {
+        key: "forgotEmail",
+        value: function forgotEmail(email) {
+          var _this2 = this;
+
+          this.AuthService.ForgotPassword(email).then(function (data) {
+            _this2.forGotPassword = false;
+          });
+        }
+      }, {
+        key: "hideforgotOverlay",
+        value: function hideforgotOverlay() {
+          this.forGotPassword = false;
+        }
+      }, {
+        key: "forgotOverlay",
+        value: function forgotOverlay() {
+          this.forGotPassword = true;
+        }
+      }, {
+        key: "check",
+        value: function check(email, password) {
+          localStorage.setItem('email', email);
+          localStorage.setItem('password', password);
+        }
+      }, {
         key: "getAgentfees",
         value: function getAgentfees() {
-          var _this2 = this;
+          var _this3 = this;
 
           this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
             return changes.map(function (c) {
@@ -2545,51 +2572,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           })).subscribe(function (data) {
             data.forEach(function (fees) {
-              _this2.agentFees = fees;
+              _this3.agentFees = fees;
 
-              if (_this2.agentFees.solefees >= 1 && _this2.agentFees.solefees <= 2) {
-                _this2.soleFeesFirst.push(_this2.agentFees);
+              if (_this3.agentFees.solefees >= 1 && _this3.agentFees.solefees <= 2) {
+                _this3.soleFeesFirst.push(_this3.agentFees);
               }
 
-              if (_this2.agentFees.solefees > 2 && _this2.agentFees.solefees <= 3) {
-                _this2.soleFeesSecond.push(_this2.agentFees);
+              if (_this3.agentFees.solefees > 2 && _this3.agentFees.solefees <= 3) {
+                _this3.soleFeesSecond.push(_this3.agentFees);
               }
 
-              if (_this2.agentFees.solefees > 3 && _this2.agentFees.solefees <= 4) {
-                _this2.soleFeesThird.push(_this2.agentFees);
+              if (_this3.agentFees.solefees > 3 && _this3.agentFees.solefees <= 4) {
+                _this3.soleFeesThird.push(_this3.agentFees);
               }
 
-              if (_this2.agentFees.multiplefees >= 1 && _this2.agentFees.multiplefees <= 2) {
-                _this2.multipleFeesOne.push(_this2.agentFees);
+              if (_this3.agentFees.multiplefees >= 1 && _this3.agentFees.multiplefees <= 2) {
+                _this3.multipleFeesOne.push(_this3.agentFees);
               }
 
-              if (_this2.agentFees.multiplefees > 2 && _this2.agentFees.multiplefees <= 3) {
-                _this2.multipleFeesTwo.push(_this2.agentFees);
+              if (_this3.agentFees.multiplefees > 2 && _this3.agentFees.multiplefees <= 3) {
+                _this3.multipleFeesTwo.push(_this3.agentFees);
               }
 
-              if (_this2.agentFees.multiplefees > 3 && _this2.agentFees.multiplefees <= 4) {
-                _this2.multipleFeesThree.push(_this2.agentFees);
+              if (_this3.agentFees.multiplefees > 3 && _this3.agentFees.multiplefees <= 4) {
+                _this3.multipleFeesThree.push(_this3.agentFees);
               }
             });
-            _this2.firstSole = _this2.soleFeesFirst.length;
-            _this2.secondSole = _this2.soleFeesSecond.length;
-            _this2.thirdSole = _this2.soleFeesThird.length;
-            _this2.multiFirst = _this2.multipleFeesOne.length;
-            _this2.multiSecond = _this2.multipleFeesTwo.length;
-            _this2.multiThird = _this2.multipleFeesThree.length;
+            _this3.firstSole = _this3.soleFeesFirst.length;
+            _this3.secondSole = _this3.soleFeesSecond.length;
+            _this3.thirdSole = _this3.soleFeesThird.length;
+            _this3.multiFirst = _this3.multipleFeesOne.length;
+            _this3.multiSecond = _this3.multipleFeesTwo.length;
+            _this3.multiThird = _this3.multipleFeesThree.length;
           });
         }
       }, {
         key: "getCountUser",
         value: function getCountUser() {
-          var _this3 = this;
+          var _this4 = this;
 
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
               if (elements.data().UserType == "Agent") {
-                _this3.AllAgents.push(elements.data());
+                _this4.AllAgents.push(elements.data());
 
-                _this3.agentLength = _this3.AllAgents.length;
+                _this4.agentLength = _this4.AllAgents.length;
               }
             });
           });
@@ -2597,21 +2624,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this4 = this;
+          var _this5 = this;
+
+          this.getUser = JSON.parse(localStorage.getItem("user"));
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then(function (element) {
               if (element.data().UserType == "Admin") {
-                _this4.LoggedIn = true;
+                _this5.LoggedIn = true;
               } else if (element.data().UserType != "Admin") {
-                var dialogRef = _this4.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
+                var dialogRef = _this5.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as Admin"
                   }
                 });
 
-                _this4.LoggedIn = false;
+                _this5.LoggedIn = false;
               }
             });
           }
@@ -2619,19 +2648,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllUsers",
         value: function getAllUsers() {
-          var _this5 = this;
+          var _this6 = this;
 
           this.adminPanelService.getAllUser().then(function (data) {
             data.forEach(function (element) {
-              _this5.CountAllUser.push(element.data());
+              _this6.CountAllUser.push(element.data());
             });
-            _this5.numberOfUser = _this5.CountAllUser.length;
+            _this6.numberOfUser = _this6.CountAllUser.length;
           });
         }
       }, {
         key: "getMatches",
         value: function getMatches() {
-          var _this6 = this;
+          var _this7 = this;
 
           this.adminPanelService.getcountExpressInterest().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
             return changes.map(function (c) {
@@ -2640,23 +2669,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (data) {
-            _this6.ExpressedIneterest = data.length;
+            _this7.ExpressedIneterest = data.length;
 
-            _this6.adminPanelService.getcountExpressMatches().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
+            _this7.adminPanelService.getcountExpressMatches().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
               return changes.map(function (c) {
                 return Object.assign({
                   id: c.payload.doc.id
                 }, c.payload.doc.data());
               });
             })).subscribe(function (seller) {
-              _this6.ConfirmInterest = seller.length;
+              _this7.ConfirmInterest = seller.length;
             });
           });
         }
       }, {
         key: "dashboardDetails",
         value: function dashboardDetails() {
-          var _this7 = this;
+          var _this8 = this;
 
           this.adminPanelService.getAllBuyer().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
             return changes.map(function (c) {
@@ -2665,195 +2694,198 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (data) {
-            _this7.allBuyer = data;
+            _this8.allBuyer = data;
             data.forEach(function (element) {
               if (element.PropertyFor == "buy") {
-                _this7.listingTypeBuy.push(element);
+                _this8.listingTypeBuy.push(element);
 
-                _this7.countListingTypeBuy = _this7.listingTypeBuy.length;
+                _this8.countListingTypeBuy = _this8.listingTypeBuy.length;
               }
 
               if (element.PropertyFor == "rent") {
-                _this7.listingType.push(element);
+                _this8.listingType.push(element);
 
-                _this7.countListingTypeRent = _this7.listingType.length;
+                _this8.countListingTypeRent = _this8.listingType.length;
               }
 
               if (element.PropertyType == "Flat") {
-                _this7.listingBuyerFlatPropertyType.push(element);
+                _this8.listingBuyerFlatPropertyType.push(element);
               }
 
               if (element.PropertyType == "Studio") {
-                _this7.listingBuyerStudioPropertyType.push(element);
+                _this8.listingBuyerStudioPropertyType.push(element);
               }
 
               if (element.PropertyType == "Terracedhouse") {
-                _this7.listingBuyerTerracedhousePropertyType.push(element);
+                _this8.listingBuyerTerracedhousePropertyType.push(element);
               }
 
               if (element.PropertyType == "Maisonette") {
-                _this7.listingBuyerMaisonettePropertyType.push(element);
+                _this8.listingBuyerMaisonettePropertyType.push(element);
               }
 
               if (element.PropertyType == "Semi-detached") {
-                _this7.listingBuyerSemidetachedPropertyType.push(element);
+                _this8.listingBuyerSemidetachedPropertyType.push(element);
               }
 
               if (element.PropertyType == "Bungalow") {
-                _this7.listingBuyerBungalowPropertyType.push(element);
+                _this8.listingBuyerBungalowPropertyType.push(element);
               }
 
               if (element.PropertyType == "Detachedhouse") {
-                _this7.listingBuyerDetachedhousePropertyType.push(element);
+                _this8.listingBuyerDetachedhousePropertyType.push(element);
               }
 
               if (element.PropertyType == "Cottage") {
-                _this7.listingBuyerCottagePropertyType.push(element);
+                _this8.listingBuyerCottagePropertyType.push(element);
               }
 
               if (element.PropertyType == "Townhouse") {
-                _this7.listingBuyerTownhousePropertyType.push(element);
+                _this8.listingBuyerTownhousePropertyType.push(element);
               }
 
               if (element.PropertyType == "Countryhouse") {
-                _this7.listingBuyerCountryhousePropertyType.push(element);
+                _this8.listingBuyerCountryhousePropertyType.push(element);
               }
 
               if (element.PropertyType == "Barnconversion") {
-                _this7.listingBuyerBarnconversionPropertyType.push(element);
+                _this8.listingBuyerBarnconversionPropertyType.push(element);
               }
 
               if (element.PropertyType == "Farm") {
-                _this7.listingBuyerFarmPropertyType.push(element);
+                _this8.listingBuyerFarmPropertyType.push(element);
               }
 
               if (element.PropertyType == "Houseboat") {
-                _this7.listingBuyerHouseboatPropertyType.push(element);
+                _this8.listingBuyerHouseboatPropertyType.push(element);
               }
 
               if (element.PropertyType == "Lodge") {
-                _this7.listingBuyerLodgePropertyType.push(element);
+                _this8.listingBuyerLodgePropertyType.push(element);
               }
             });
 
-            _this7.adminPanelService.getAllCountSeller().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
+            _this8.adminPanelService.getAllCountSeller().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(function (changes) {
               return changes.map(function (c) {
                 return Object.assign({
                   id: c.payload.doc.id
                 }, c.payload.doc.data());
               });
             })).subscribe(function (seller) {
-              _this7.allSeller = seller;
-              _this7.NestimateLength = _this7.allBuyer.length + _this7.allSeller.length;
+              _this8.allSeller = seller;
+              _this8.NestimateLength = _this8.allBuyer.length + _this8.allSeller.length;
               seller.forEach(function (sellerData) {
                 if (sellerData.PropertyFor == "rent") {
-                  _this7.listingSellerRent.push(sellerData);
+                  _this8.listingSellerRent.push(sellerData);
 
-                  _this7.countingSellerTypeRent = _this7.listingSellerRent.length;
+                  _this8.countingSellerTypeRent = _this8.listingSellerRent.length;
                 }
 
                 if (sellerData.PropertyFor == "buy") {
-                  _this7.listingSellerSell.push(sellerData);
+                  _this8.listingSellerSell.push(sellerData);
 
-                  _this7.countingSellerTypeSell = _this7.listingSellerSell.length;
+                  _this8.countingSellerTypeSell = _this8.listingSellerSell.length;
                 }
 
                 if (sellerData.PropertyType == "Flat") {
-                  _this7.lsitingSellerFlatPropertyType.push(sellerData);
+                  _this8.lsitingSellerFlatPropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Studio") {
-                  _this7.listingSellerStudioPropertyType.push(sellerData);
+                  _this8.listingSellerStudioPropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Terracedhouse") {
-                  _this7.listingSellerTerracedhousePropertyType.push(sellerData);
+                  _this8.listingSellerTerracedhousePropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Maisonette") {
-                  _this7.listingSellerMaisonettePropertyType.push(sellerData);
+                  _this8.listingSellerMaisonettePropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Semi-detached") {
-                  _this7.listingSellerSemidetachedPropertyType.push(sellerData);
+                  _this8.listingSellerSemidetachedPropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Bungalow") {
-                  _this7.listingSellerBungalowPropertyType.push(sellerData);
+                  _this8.listingSellerBungalowPropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Detachedhouse") {
-                  _this7.listingSellerDetachedhousePropertyType.push(sellerData);
+                  _this8.listingSellerDetachedhousePropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Cottage") {
-                  _this7.listingSellerCottagePropertyType.push(sellerData);
+                  _this8.listingSellerCottagePropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Townhouse") {
-                  _this7.listingSellerTownhousePropertyType.push(sellerData);
+                  _this8.listingSellerTownhousePropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Countryhouse") {
-                  _this7.listingSellerCountryhousePropertyType.push(sellerData);
+                  _this8.listingSellerCountryhousePropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Barnconversion") {
-                  _this7.listingSellerBarnconversionPropertyType.push(sellerData);
+                  _this8.listingSellerBarnconversionPropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Farm") {
-                  _this7.listingSellerFarmPropertyType.push(sellerData);
+                  _this8.listingSellerFarmPropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Houseboat") {
-                  _this7.listingSellerHouseboatPropertyType.push(sellerData);
+                  _this8.listingSellerHouseboatPropertyType.push(sellerData);
                 }
 
                 if (sellerData.PropertyType == "Lodge") {
-                  _this7.listingSellerLodgePropertyType.push(sellerData);
+                  _this8.listingSellerLodgePropertyType.push(sellerData);
                 }
               });
             });
 
-            _this7.FlatpropertyType = _this7.listingBuyerFlatPropertyType.length + _this7.lsitingSellerFlatPropertyType.length;
-            _this7.studiopropertyType = _this7.listingSellerStudioPropertyType.length + _this7.listingBuyerStudioPropertyType.length;
-            _this7.TerracedhouseType = _this7.listingBuyerTerracedhousePropertyType.length + _this7.listingSellerTerracedhousePropertyType.length;
-            _this7.MaisonetteType = _this7.listingBuyerMaisonettePropertyType.length + _this7.listingSellerMaisonettePropertyType.length;
-            _this7.SemidetachedType = _this7.listingBuyerSemidetachedPropertyType.length + _this7.listingSellerSemidetachedPropertyType.length;
-            _this7.BungalowType = _this7.listingBuyerBungalowPropertyType.length + _this7.listingSellerBungalowPropertyType.length;
-            _this7.DetachedhousType = _this7.listingBuyerDetachedhousePropertyType.length + _this7.listingSellerDetachedhousePropertyType.length;
-            _this7.CottagePropertyType = _this7.listingBuyerCottagePropertyType.length + _this7.listingSellerCottagePropertyType.length;
-            _this7.TownhouseType = _this7.listingBuyerTownhousePropertyType.length + _this7.listingSellerTownhousePropertyType.length;
-            _this7.CountryhouseType = _this7.listingBuyerCountryhousePropertyType.length + _this7.listingSellerCountryhousePropertyType.length;
-            _this7.BarnconversionType = _this7.listingBuyerBarnconversionPropertyType.length + _this7.listingSellerBarnconversionPropertyType.length;
-            _this7.FarmPropertyType = _this7.listingBuyerFarmPropertyType.length + _this7.listingSellerFarmPropertyType.length;
-            _this7.HouseboaType = _this7.listingBuyerHouseboatPropertyType.length + _this7.listingSellerHouseboatPropertyType.length;
-            _this7.LodgeType = _this7.listingBuyerLodgePropertyType.length + _this7.listingSellerLodgePropertyType.length;
+            _this8.FlatpropertyType = _this8.listingBuyerFlatPropertyType.length + _this8.lsitingSellerFlatPropertyType.length;
+            _this8.studiopropertyType = _this8.listingSellerStudioPropertyType.length + _this8.listingBuyerStudioPropertyType.length;
+            _this8.TerracedhouseType = _this8.listingBuyerTerracedhousePropertyType.length + _this8.listingSellerTerracedhousePropertyType.length;
+            _this8.MaisonetteType = _this8.listingBuyerMaisonettePropertyType.length + _this8.listingSellerMaisonettePropertyType.length;
+            _this8.SemidetachedType = _this8.listingBuyerSemidetachedPropertyType.length + _this8.listingSellerSemidetachedPropertyType.length;
+            _this8.BungalowType = _this8.listingBuyerBungalowPropertyType.length + _this8.listingSellerBungalowPropertyType.length;
+            _this8.DetachedhousType = _this8.listingBuyerDetachedhousePropertyType.length + _this8.listingSellerDetachedhousePropertyType.length;
+            _this8.CottagePropertyType = _this8.listingBuyerCottagePropertyType.length + _this8.listingSellerCottagePropertyType.length;
+            _this8.TownhouseType = _this8.listingBuyerTownhousePropertyType.length + _this8.listingSellerTownhousePropertyType.length;
+            _this8.CountryhouseType = _this8.listingBuyerCountryhousePropertyType.length + _this8.listingSellerCountryhousePropertyType.length;
+            _this8.BarnconversionType = _this8.listingBuyerBarnconversionPropertyType.length + _this8.listingSellerBarnconversionPropertyType.length;
+            _this8.FarmPropertyType = _this8.listingBuyerFarmPropertyType.length + _this8.listingSellerFarmPropertyType.length;
+            _this8.HouseboaType = _this8.listingBuyerHouseboatPropertyType.length + _this8.listingSellerHouseboatPropertyType.length;
+            _this8.LodgeType = _this8.listingBuyerLodgePropertyType.length + _this8.listingSellerLodgePropertyType.length;
           });
         } //getUser(uid)
 
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this8 = this;
+          var _this9 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this8.KnowUser.push(element.data());
+              _this9.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "Admin") {
-                var dialogRef = _this8.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
+                var dialogRef = _this9.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as Admin"
                   }
                 });
 
-                _this8.isLoading = false;
+                _this9.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "Admin") {
-                _this8.AuthService.SignIn(email, pass).then(function (data) {
-                  _this8.isLoading = false;
+                console.log(email, pass);
+
+                _this9.AuthService.SignIn(email, pass).then(function (data) {
+                  _this9.isLoading = false;
+                  _this9.LoggedIn = true;
                   window.location.reload();
                 });
               }
@@ -2863,13 +2895,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAdminDetails",
         value: function getAdminDetails() {
-          var _this9 = this;
+          var _this10 = this;
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this9.username = element.data().Name;
-              _this9.image = element.data().Image;
+              _this10.username = element.data().Name;
+              _this10.image = element.data().Image;
             });
           }
         }
@@ -3501,12 +3533,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentEditPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this10 = this;
+          var _this11 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this10.agentPropertyId = params.get("agentPropertyId");
-            _this10.agentUserId = params.get("agentUserId");
+            _this11.agentPropertyId = params.get("agentPropertyId");
+            _this11.agentUserId = params.get("agentUserId");
           });
           this.getUserDetails();
           this.getAgentDetails();
@@ -3515,7 +3547,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateAgent",
         value: function updateAgent(uid, docid) {
-          var _this11 = this;
+          var _this12 = this;
 
           console.log(this.image);
 
@@ -3527,7 +3559,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.agentSignup.uid = this.agentUserId;
           this.adminPanelService.updateAgentListing(this.agentUserId, this.agentPropertyId, this.agentSignup).then(function (data) {
-            var dialogRef = _this11.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__["AltertFormDialogComponent"], {
+            var dialogRef = _this12.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__["AltertFormDialogComponent"], {
               data: {
                 message: "User detail updated"
               }
@@ -3544,7 +3576,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee6() {
-            var _this12 = this;
+            var _this13 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee6$(_context6) {
@@ -3584,7 +3616,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 11:
                     _context6.sent.ref.getDownloadURL().then(function (url) {
                       console.log(url);
-                      _this12.downloadableURL = url;
+                      _this13.downloadableURL = url;
                     });
 
                   case 12:
@@ -3601,11 +3633,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentProperties",
         value: function getAgentProperties() {
-          var _this13 = this;
+          var _this14 = this;
 
           this.adminPanelService.getagentProperties(this.agentUserId).then(function (data) {
             data.forEach(function (element) {
-              _this13.agentProperties.push({
+              _this14.agentProperties.push({
                 details: element.data(),
                 uid: element.id
               });
@@ -3615,23 +3647,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this14 = this;
+          var _this15 = this;
 
           this.adminPanelService.getSelectedAgent(this.agentUserId, this.agentPropertyId).then(function (data) {
             data.forEach(function (element) {
-              _this14.agentSignup.fullname = element.data().fullname;
-              _this14.agentSignup.company = element.data().company;
-              _this14.agentSignup.postcode = element.data().postcode;
-              _this14.agentSignup.address = element.data().address;
-              _this14.agentSignup.jobtitle = element.data().jobtitle;
-              _this14.agentSignup.officephone = element.data().officephone;
-              _this14.agentSignup.phone = element.data().phone;
-              _this14.agentSignup.email = element.data().email;
-              _this14.agentSignup.multiplefees = element.data().multiplefees;
-              _this14.agentSignup.solefees = element.data().solefees;
-              _this14.agentSignup.Status = element.data().Status;
-              _this14.agentSignup.image = element.data().image;
-              _this14.agentSignup.title = element.data().title;
+              _this15.agentSignup.fullname = element.data().fullname;
+              _this15.agentSignup.company = element.data().company;
+              _this15.agentSignup.postcode = element.data().postcode;
+              _this15.agentSignup.address = element.data().address;
+              _this15.agentSignup.jobtitle = element.data().jobtitle;
+              _this15.agentSignup.officephone = element.data().officephone;
+              _this15.agentSignup.phone = element.data().phone;
+              _this15.agentSignup.email = element.data().email;
+              _this15.agentSignup.multiplefees = element.data().multiplefees;
+              _this15.agentSignup.solefees = element.data().solefees;
+              _this15.agentSignup.Status = element.data().Status;
+              _this15.agentSignup.image = element.data().image;
+              _this15.agentSignup.title = element.data().title;
             });
           });
         }
@@ -3643,15 +3675,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this15 = this;
+          var _this16 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this15.username = element.data().Name;
-              _this15.image = element.data().Image;
+              _this16.username = element.data().Name;
+              _this16.image = element.data().Image;
             });
           }
         }
@@ -3772,12 +3804,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentPropertyEditPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this16 = this;
+          var _this17 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this16.propertyID = params.get("propertyID");
-            _this16.propertyuserId = params.get("propertyuserId");
+            _this17.propertyID = params.get("propertyID");
+            _this17.propertyuserId = params.get("propertyuserId");
           });
           this.getUserDetails();
           this.getAgentPropertyDetail();
@@ -3790,48 +3822,48 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentPropertyDetail",
         value: function getAgentPropertyDetail() {
-          var _this17 = this;
+          var _this18 = this;
 
           this.adminPanelService.getselectedagentProperties(this.propertyuserId, this.propertyID).then(function (agent) {
             console.log(agent.data());
-            _this17.propertyFor = agent.data().Buyer.PropertyType;
-            _this17.Lookingpostcode = agent.data().Buyer.Lookingpostcode;
-            _this17.DesiredPrice = agent.data().Seller.MaxAmount;
-            _this17.Postcode = agent.data().Seller.Lookingpostcode;
-            _this17.Maxrooms = agent.data().Seller.Maxrooms;
-            _this17.SellerUserId = agent.data().Seller.UserId;
-            _this17.BuyerMinamount = agent.data().Buyer.MinAmount;
-            _this17.BuyerMaxamount = agent.data().Buyer.MaxAmount;
-            _this17.Buyerpostcode = agent.data().Buyer.Lookingpostcode;
-            _this17.BuyerRoomsmin = agent.data().Buyer.Roommin;
-            _this17.BuyerRoomsmax = agent.data().Buyer.Roomsmax;
-            _this17.BuyerUserId = agent.data().Buyer.UserId;
+            _this18.propertyFor = agent.data().Buyer.PropertyType;
+            _this18.Lookingpostcode = agent.data().Buyer.Lookingpostcode;
+            _this18.DesiredPrice = agent.data().Seller.MaxAmount;
+            _this18.Postcode = agent.data().Seller.Lookingpostcode;
+            _this18.Maxrooms = agent.data().Seller.Maxrooms;
+            _this18.SellerUserId = agent.data().Seller.UserId;
+            _this18.BuyerMinamount = agent.data().Buyer.MinAmount;
+            _this18.BuyerMaxamount = agent.data().Buyer.MaxAmount;
+            _this18.Buyerpostcode = agent.data().Buyer.Lookingpostcode;
+            _this18.BuyerRoomsmin = agent.data().Buyer.Roommin;
+            _this18.BuyerRoomsmax = agent.data().Buyer.Roomsmax;
+            _this18.BuyerUserId = agent.data().Buyer.UserId;
 
-            _this17.adminPanelService.getUser(_this17.SellerUserId).then(function (agentUser) {
-              _this17.selleraddress = agentUser.data().Currentaddress;
-              _this17.selleremail = agentUser.data().email;
-              _this17.sellerPhone = agentUser.data().Phone;
+            _this18.adminPanelService.getUser(_this18.SellerUserId).then(function (agentUser) {
+              _this18.selleraddress = agentUser.data().Currentaddress;
+              _this18.selleremail = agentUser.data().email;
+              _this18.sellerPhone = agentUser.data().Phone;
             });
 
-            _this17.adminPanelService.getUser(_this17.BuyerUserId).then(function (agentUser) {
-              _this17.buyeraddress = agentUser.data().Currentaddress;
-              _this17.buyeremail = agentUser.data().email;
-              _this17.buyerPhone = agentUser.data().Phone;
+            _this18.adminPanelService.getUser(_this18.BuyerUserId).then(function (agentUser) {
+              _this18.buyeraddress = agentUser.data().Currentaddress;
+              _this18.buyeremail = agentUser.data().email;
+              _this18.buyerPhone = agentUser.data().Phone;
             });
           }); //getselectedagentProperties(uid,propId)
         }
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this18 = this;
+          var _this19 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this18.username = element.data().Name;
-              _this18.image = element.data().Image;
+              _this19.username = element.data().Name;
+              _this19.image = element.data().Image;
             });
           }
         }
@@ -3985,12 +4017,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditBuyerUserDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this19 = this;
+          var _this20 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this19.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this19.BuyerUserID = params.get("BuyerUserID");
+            _this20.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this20.BuyerUserID = params.get("BuyerUserID");
           });
           this.getUserDetails();
           this.getBuyerProperty();
@@ -3998,15 +4030,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this20 = this;
+          var _this21 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this20.username = element.data().Name;
-              _this20.image = element.data().Image;
+              _this21.username = element.data().Name;
+              _this21.image = element.data().Image;
             });
           }
         }
@@ -4018,43 +4050,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerProperty",
         value: function getBuyerProperty() {
-          var _this21 = this;
+          var _this22 = this;
 
           this.adminPanelService.getBuyerPrpertyDetails(this.BuyerUserID, this.BuyerPropertyId).then(function (buyer) {
-            _this21.BuyerUserDetail.push(buyer.data());
+            _this22.BuyerUserDetail.push(buyer.data());
 
-            _this21.listingBuyer.Currentpostcode = buyer.data().Currentpostcode;
-            _this21.listingBuyer.PropertyFor = buyer.data().PropertyFor;
-            _this21.listingBuyer.CurrentTown = buyer.data().CurrentTown;
-            _this21.listingBuyer.CurrentAddress = buyer.data().CurrentAddress;
-            _this21.listingBuyer.Currentstate = buyer.data().Currentstate;
-            _this21.listingBuyer.Currentcountry = buyer.data().Currentcountry;
-            _this21.listingBuyer.Lookingpostcode = buyer.data().Lookingpostcode;
-            _this21.listingBuyer.LookingStreetname = buyer.data().LookingStreetname;
-            _this21.listingBuyer.LookingTown = buyer.data().LookingTown;
-            _this21.listingBuyer.Lookingstate = buyer.data().Lookingstate;
-            _this21.listingBuyer.Country = buyer.data().Country;
+            _this22.listingBuyer.Currentpostcode = buyer.data().Currentpostcode;
+            _this22.listingBuyer.PropertyFor = buyer.data().PropertyFor;
+            _this22.listingBuyer.CurrentTown = buyer.data().CurrentTown;
+            _this22.listingBuyer.CurrentAddress = buyer.data().CurrentAddress;
+            _this22.listingBuyer.Currentstate = buyer.data().Currentstate;
+            _this22.listingBuyer.Currentcountry = buyer.data().Currentcountry;
+            _this22.listingBuyer.Lookingpostcode = buyer.data().Lookingpostcode;
+            _this22.listingBuyer.LookingStreetname = buyer.data().LookingStreetname;
+            _this22.listingBuyer.LookingTown = buyer.data().LookingTown;
+            _this22.listingBuyer.Lookingstate = buyer.data().Lookingstate;
+            _this22.listingBuyer.Country = buyer.data().Country;
 
             if (buyer.data().FinancialPosition != null) {
-              _this21.listingBuyer.FinancialPosition = buyer.data().FinancialPosition;
+              _this22.listingBuyer.FinancialPosition = buyer.data().FinancialPosition;
             }
 
-            _this21.listingBuyer.PropertyType = buyer.data().PropertyType;
+            _this22.listingBuyer.PropertyType = buyer.data().PropertyType;
 
-            _this21.radio(_this21.listingBuyer.PropertyFor);
+            _this22.radio(_this22.listingBuyer.PropertyFor);
 
-            _this21.listingBuyer.Roommin = buyer.data().Roommin;
-            _this21.listingBuyer.Roomsmax = buyer.data().Roomsmax;
-            _this21.listingBuyer.MaxAmount = buyer.data().MaxAmount;
-            _this21.listingBuyer.MinAmount = buyer.data().MinAmount;
-            _this21.listingBuyer.Validity = buyer.data().Validity;
-            _this21.listingBuyer.Maxbathroom = buyer.data().Maxbathroom;
-            _this21.listingBuyer.Minbathroom = buyer.data().Minbathroom;
-            _this21.listingBuyer.Maxreception = buyer.data().Maxreception;
-            _this21.listingBuyer.Minreception = buyer.data().Minreception;
-            _this21.listingBuyer.Conditions = buyer.data().Conditions;
-            _this21.listingBuyer.Ownership = buyer.data().Ownership;
-            _this21.listingBuyer.ChainStatus = buyer.data().ChainStatus; //this.listingBuyer.features = buyer.data().features
+            _this22.listingBuyer.Roommin = buyer.data().Roommin;
+            _this22.listingBuyer.Roomsmax = buyer.data().Roomsmax;
+            _this22.listingBuyer.MaxAmount = buyer.data().MaxAmount;
+            _this22.listingBuyer.MinAmount = buyer.data().MinAmount;
+            _this22.listingBuyer.Validity = buyer.data().Validity;
+            _this22.listingBuyer.Maxbathroom = buyer.data().Maxbathroom;
+            _this22.listingBuyer.Minbathroom = buyer.data().Minbathroom;
+            _this22.listingBuyer.Maxreception = buyer.data().Maxreception;
+            _this22.listingBuyer.Minreception = buyer.data().Minreception;
+            _this22.listingBuyer.Conditions = buyer.data().Conditions;
+            _this22.listingBuyer.Ownership = buyer.data().Ownership;
+            _this22.listingBuyer.ChainStatus = buyer.data().ChainStatus; //this.listingBuyer.features = buyer.data().features
           });
         }
       }, {
@@ -4094,15 +4126,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateUser",
         value: function updateUser() {
-          var _this22 = this;
+          var _this23 = this;
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this22.postcodeCoordinates = data;
-            _this22.listingBuyer.longitude = _this22.postcodeCoordinates.result.longitude, _this22.listingBuyer.latitude = _this22.postcodeCoordinates.result.latitude, _this22.listingBuyer.UserId = _this22.BuyerUserID;
+            _this23.postcodeCoordinates = data;
+            _this23.listingBuyer.longitude = _this23.postcodeCoordinates.result.longitude, _this23.listingBuyer.latitude = _this23.postcodeCoordinates.result.latitude, _this23.listingBuyer.UserId = _this23.BuyerUserID;
           });
           this.listingBuyer.UserId = this.BuyerUserID;
           this.listingBuyer.longitude, this.listingBuyer.latitude, this.adminPanelService.updateBuyerListing(this.BuyerUserID, this.BuyerPropertyId, this.listingBuyer).then(function (data) {
-            var dialogRef = _this22.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            var dialogRef = _this23.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
               data: {
                 message: "User Detail Updated"
               }
@@ -4263,13 +4295,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditSellerUserDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this23 = this;
+          var _this24 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.getUserDetails();
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this23.sellerPropertyId = params.get("sellerPropertyId");
-            _this23.sellerUserId = params.get("sellerUserId");
+            _this24.sellerPropertyId = params.get("sellerPropertyId");
+            _this24.sellerUserId = params.get("sellerUserId");
           });
           this.getSellerAllDetails();
         }
@@ -4287,7 +4319,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "importImages",
         value: function importImages(event) {
-          var _this24 = this;
+          var _this25 = this;
 
           this.isLoading = true;
           this.uploads = [];
@@ -4342,7 +4374,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     // for every upload do whatever you want in firestore with the uploaded file
                     var _t = task.then(function (f) {
                       return f.ref.getDownloadURL().then(function (url) {
-                        _this24.sellerImages.push(url); // return this.afs.collection('files').add({
+                        _this25.sellerImages.push(url); // return this.afs.collection('files').add({
                         //   name: f.metadata.name,
                         // });
 
@@ -4373,44 +4405,44 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this25 = this;
+          var _this26 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this25.username = element.data().Name;
-              _this25.image = element.data().Image;
+              _this26.username = element.data().Name;
+              _this26.image = element.data().Image;
             });
           }
         }
       }, {
         key: "getSellerAllDetails",
         value: function getSellerAllDetails() {
-          var _this26 = this;
+          var _this27 = this;
 
           this.adminPanelService.getSellerPrpertyDetails(this.sellerUserId, this.sellerPropertyId).then(function (elements) {
-            _this26.SellerUserDetail = elements.data();
-            _this26.listingSeller.Currentpostcode = elements.data().Currentpostcode;
-            _this26.listingSeller.CurrentAddress = elements.data().CurrentAddress;
-            _this26.listingSeller.CurrentTown = elements.data().CurrentTown;
-            _this26.listingSeller.Currentstate = elements.data().Currentstate;
-            _this26.listingSeller.PropertyFor = elements.data().PropertyFor;
-            _this26.listingSeller.LookingTown = elements.data().LookingTown;
-            _this26.listingSeller.Lookingstate = elements.data().Lookingstate;
-            _this26.listingSeller.Country = elements.data().Country;
-            _this26.listingSeller.LookingAddress = elements.data().LookingAddress;
-            _this26.listingSeller.PropertyType = elements.data().PropertyType;
-            _this26.listingSeller.Maxrooms = elements.data().Maxrooms;
-            _this26.listingSeller.Lookingpostcode = elements.data().Lookingpostcode;
-            _this26.listingSeller.MaxAmount = elements.data().MaxAmount;
-            _this26.listingSeller.ownership = elements.data().ownership;
-            _this26.listingSeller.Maxbathrooms = elements.data().Maxbathrooms;
-            _this26.listingSeller.Maxreception = elements.data().Maxreception;
-            _this26.listingSeller.PropertyCondition = elements.data().PropertyCondition;
-            _this26.listingSeller.Currentcountry = elements.data().Currentcountry;
-            _this26.FirstImage = elements.data().Images;
+            _this27.SellerUserDetail = elements.data();
+            _this27.listingSeller.Currentpostcode = elements.data().Currentpostcode;
+            _this27.listingSeller.CurrentAddress = elements.data().CurrentAddress;
+            _this27.listingSeller.CurrentTown = elements.data().CurrentTown;
+            _this27.listingSeller.Currentstate = elements.data().Currentstate;
+            _this27.listingSeller.PropertyFor = elements.data().PropertyFor;
+            _this27.listingSeller.LookingTown = elements.data().LookingTown;
+            _this27.listingSeller.Lookingstate = elements.data().Lookingstate;
+            _this27.listingSeller.Country = elements.data().Country;
+            _this27.listingSeller.LookingAddress = elements.data().LookingAddress;
+            _this27.listingSeller.PropertyType = elements.data().PropertyType;
+            _this27.listingSeller.Maxrooms = elements.data().Maxrooms;
+            _this27.listingSeller.Lookingpostcode = elements.data().Lookingpostcode;
+            _this27.listingSeller.MaxAmount = elements.data().MaxAmount;
+            _this27.listingSeller.ownership = elements.data().ownership;
+            _this27.listingSeller.Maxbathrooms = elements.data().Maxbathrooms;
+            _this27.listingSeller.Maxreception = elements.data().Maxreception;
+            _this27.listingSeller.PropertyCondition = elements.data().PropertyCondition;
+            _this27.listingSeller.Currentcountry = elements.data().Currentcountry;
+            _this27.FirstImage = elements.data().Images;
             console.log(elements.data().Images.uid); //this.listingSeller.features = elements.data().features
           });
         }
@@ -4451,19 +4483,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateSellerDetails",
         value: function updateSellerDetails() {
-          var _this27 = this;
+          var _this28 = this;
 
           this.sellerUSerUpdate();
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this27.postcodeCoordinates = data;
-            _this27.listingSeller.longitude = _this27.postcodeCoordinates.result.longitude, _this27.listingSeller.latitude = _this27.postcodeCoordinates.result.latitude, _this27.listingSeller.UserId = _this27.sellerUserId;
+            _this28.postcodeCoordinates = data;
+            _this28.listingSeller.longitude = _this28.postcodeCoordinates.result.longitude, _this28.listingSeller.latitude = _this28.postcodeCoordinates.result.latitude, _this28.listingSeller.UserId = _this28.sellerUserId;
           });
           this.listingSeller.UserId = this.sellerUserId;
           this.listingSeller.longitude, this.listingSeller.latitude, this.listingSeller.Images = this.sellerImages;
           this.adminPanelService.updateSellerListing(this.sellerUserId, this.sellerPropertyId, this.listingSeller).then(function (seller) {
-            _this27.isLoading = false;
+            _this28.isLoading = false;
 
-            var dialogRef = _this27.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+            var dialogRef = _this28.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
               data: {
                 message: "User Detail Updated"
               }
@@ -4490,7 +4522,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee7() {
-            var _this28 = this;
+            var _this29 = this;
 
             var file, filePath;
             return regeneratorRuntime.wrap(function _callee7$(_context7) {
@@ -4516,7 +4548,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 7:
                     _context7.sent.ref.getDownloadURL().then(function (url) {
                       console.log(url);
-                      _this28.downloadableURL = url;
+                      _this29.downloadableURL = url;
                     });
 
                   case 8:
@@ -4809,7 +4841,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "buyerupload",
         value: function buyerupload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
-            var _this29 = this;
+            var _this30 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee8$(_context8) {
@@ -4848,7 +4880,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context8.sent.ref.getDownloadURL().then(function (url) {
-                      _this29.buyer = url;
+                      _this30.buyer = url;
                     });
 
                   case 12:
@@ -4866,7 +4898,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "sellerupload",
         value: function sellerupload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
-            var _this30 = this;
+            var _this31 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee9$(_context9) {
@@ -4905,7 +4937,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context9.sent.ref.getDownloadURL().then(function (url) {
-                      _this30.seller = url;
+                      _this31.seller = url;
                     });
 
                   case 12:
@@ -5047,7 +5079,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "newBlogPicture",
         value: function newBlogPicture(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
-            var _this31 = this;
+            var _this32 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee10$(_context10) {
@@ -5087,7 +5119,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 11:
                     _context10.sent.ref.getDownloadURL().then(function (url) {
                       console.log(url);
-                      _this31.newBlogImage = url;
+                      _this32.newBlogImage = url;
                     });
 
                   case 12:
@@ -5105,7 +5137,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step3upload",
         value: function step3upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
-            var _this32 = this;
+            var _this33 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee11$(_context11) {
@@ -5144,7 +5176,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context11.sent.ref.getDownloadURL().then(function (url) {
-                      _this32.step3ImageNew = url;
+                      _this33.step3ImageNew = url;
                     });
 
                   case 12:
@@ -5162,7 +5194,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step2upload",
         value: function step2upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
-            var _this33 = this;
+            var _this34 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee12$(_context12) {
@@ -5201,7 +5233,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context12.sent.ref.getDownloadURL().then(function (url) {
-                      _this33.step2ImageNew = url;
+                      _this34.step2ImageNew = url;
                     });
 
                   case 12:
@@ -5219,7 +5251,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step1upload",
         value: function step1upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
-            var _this34 = this;
+            var _this35 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee13$(_context13) {
@@ -5258,7 +5290,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context13.sent.ref.getDownloadURL().then(function (url) {
-                      _this34.step1ImageNew = url;
+                      _this35.step1ImageNew = url;
                     });
 
                   case 12:
@@ -5276,7 +5308,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
-            var _this35 = this;
+            var _this36 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee14$(_context14) {
@@ -5315,7 +5347,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context14.sent.ref.getDownloadURL().then(function (url) {
-                      _this35.topBannerImage = url;
+                      _this36.topBannerImage = url;
                     });
 
                   case 12:
@@ -5333,7 +5365,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "LoweBanner",
         value: function LoweBanner(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
-            var _this36 = this;
+            var _this37 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee15$(_context15) {
@@ -5367,7 +5399,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 10:
                     _context15.sent.ref.getDownloadURL().then(function (url) {
-                      _this36.secondBanner = url;
+                      _this37.secondBanner = url;
                     });
 
                   case 11:
@@ -5389,98 +5421,98 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSelected",
         value: function getSelected() {
-          var _this37 = this;
+          var _this38 = this;
 
           this.CMSSERVICE.getUserBlog(this.user.uid).then(function (data) {
             data.forEach(function (element) {
-              _this37.allBlogs.push(element.data());
+              _this38.allBlogs.push(element.data());
             });
           });
         }
       }, {
         key: "getTerms",
         value: function getTerms() {
-          var _this38 = this;
+          var _this39 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (data) {
             data.forEach(function (element) {
-              _this38.Terms = element.data().Terms;
+              _this39.Terms = element.data().Terms;
             });
           });
         }
       }, {
         key: "getPrivacyPolicy",
         value: function getPrivacyPolicy() {
-          var _this39 = this;
+          var _this40 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this39.Privacy = element.data().Privacy;
+              _this40.Privacy = element.data().Privacy;
             });
           });
         }
       }, {
         key: "getFormImage",
         value: function getFormImage() {
-          var _this40 = this;
+          var _this41 = this;
 
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this40.BuyerPropertyRightImages = element.data().BuyerPropertyRightImages;
-              _this40.SellerPropertyRightImage = element.data().SellerPropertyRightImage;
+              _this41.BuyerPropertyRightImages = element.data().BuyerPropertyRightImages;
+              _this41.SellerPropertyRightImage = element.data().SellerPropertyRightImage;
             });
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this41 = this;
+          var _this42 = this;
 
           this.CMSSERVICE.getBlueNotification(this.user.uid).then(function (element) {
-            _this41.MynestimateBuyerDetails = element.data().MynestimateBuyerDetails;
-            _this41.SingupFromMenu = element.data().SingupFromMenu;
+            _this42.MynestimateBuyerDetails = element.data().MynestimateBuyerDetails;
+            _this42.SingupFromMenu = element.data().SingupFromMenu;
           });
         }
       }, {
         key: "getFooter",
         value: function getFooter() {
-          var _this42 = this;
+          var _this43 = this;
 
           this.CMSSERVICE.getFooter().then(function (footer) {
             footer.forEach(function (element) {
-              _this42.footer.Facebook = element.data().Facebook;
-              _this42.footer.Instragram = element.data().Instragram;
-              _this42.footer.Twitter = element.data().Twitter;
+              _this43.footer.Facebook = element.data().Facebook;
+              _this43.footer.Instragram = element.data().Instragram;
+              _this43.footer.Twitter = element.data().Twitter;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this43 = this;
+          var _this44 = this;
 
           this.CMSSERVICE.getUserBlog(this.user.uid).then(function (data) {
             data.forEach(function (element) {
-              _this43.allBlogs.push(element.data());
+              _this44.allBlogs.push(element.data());
             });
           });
         }
       }, {
         key: "bannerImages",
         value: function bannerImages() {
-          var _this44 = this;
+          var _this45 = this;
 
           this.CMSSERVICE.getHomePage(this.user.uid).then(function (banner) {
             banner.forEach(function (element) {
-              _this44.homePageData = element.data();
-              _this44.bannerUrl = element.data().BannerImageUrl;
-              _this44.SecondBannerImage = element.data().SecondBannerImage;
-              _this44.Step1Image = element.data().Step1Image;
-              _this44.Step1ImageText = element.data().Step1ImageText;
-              _this44.Step2ImageText = element.data().Step2ImageText;
-              _this44.Step2Image = element.data().Step2Image;
-              _this44.Step3Image = element.data().Step3Image;
-              _this44.Step3ImageText = element.data().Step3ImageText;
+              _this45.homePageData = element.data();
+              _this45.bannerUrl = element.data().BannerImageUrl;
+              _this45.SecondBannerImage = element.data().SecondBannerImage;
+              _this45.Step1Image = element.data().Step1Image;
+              _this45.Step1ImageText = element.data().Step1ImageText;
+              _this45.Step2ImageText = element.data().Step2ImageText;
+              _this45.Step2Image = element.data().Step2Image;
+              _this45.Step3Image = element.data().Step3Image;
+              _this45.Step3ImageText = element.data().Step3ImageText;
             });
           });
         }
@@ -5625,15 +5657,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this45 = this;
+          var _this46 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this45.username = element.data().Name;
-              _this45.image = element.data().Image;
+              _this46.username = element.data().Name;
+              _this46.image = element.data().Image;
             });
           }
         }
@@ -5794,7 +5826,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersAgentTabComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this46 = this;
+          var _this47 = this;
 
           this.getUser = JSON.parse(localStorage.getItem("user"));
           document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
@@ -5803,10 +5835,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getAllUsers();
           this.retrieveTutorials();
           this.filteredOptions = this.myControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (value) {
-            return _this46._filter(value);
+            return _this47._filter(value);
           }));
           this.agentfilteredOptions = this.agentFormControl.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["startWith"])(''), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (value) {
-            return _this46._agent(value);
+            return _this47._agent(value);
           }));
         }
       }, {
@@ -5840,7 +5872,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "showJobTiltle",
         value: function showJobTiltle(item) {
-          var _this47 = this;
+          var _this48 = this;
 
           this.jobTitleSearch = true;
           this.overLayJobTitle = false;
@@ -5852,10 +5884,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (data) {
-            _this47.AllAgentJob = data;
+            _this48.AllAgentJob = data;
             data.forEach(function (element) {
               if (element.jobtitle == item) {
-                _this47.tutorials.push(element);
+                _this48.tutorials.push(element);
               }
             });
           });
@@ -5889,15 +5921,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getGentSearchValue",
         value: function getGentSearchValue() {
-          var _this48 = this;
+          var _this49 = this;
 
           this.crossSearch = true;
           this.tutorials = [];
           this.allAgent = [];
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
-              if (elements.data().UserType == "Agent" && elements.data().email == _this48.searchEmail) {
-                _this48.allAgent.push(elements.data());
+              if (elements.data().UserType == "Agent" && elements.data().email == _this49.searchEmail) {
+                _this49.allAgent.push(elements.data());
               }
             });
           });
@@ -5909,8 +5941,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           })).subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.email == _this48.searchEmail) {
-                _this48.tutorials.push(element);
+              if (element.email == _this49.searchEmail) {
+                _this49.tutorials.push(element);
               }
             });
           });
@@ -5918,14 +5950,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSearchValue",
         value: function getSearchValue() {
-          var _this49 = this;
+          var _this50 = this;
 
           this.crossSearch = true;
           this.allUser = [];
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
-              if (elements.data().UserType != "Agent" && elements.data().email == _this49.searchEmail) {
-                _this49.allUser.push({
+              if (elements.data().UserType != "Agent" && elements.data().email == _this50.searchEmail) {
+                _this50.allUser.push({
                   detail: elements.data(),
                   uid: elements.data().uid
                 });
@@ -5950,10 +5982,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteUser",
         value: function deleteUser(uid) {
-          var _this50 = this;
+          var _this51 = this;
 
           this.adminPanelService.deleteUser(uid).then(function (data) {
-            var dialogRef = _this50.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this51.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "User Deleted"
               }
@@ -5965,10 +5997,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteAgent",
         value: function deleteAgent(uid) {
-          var _this51 = this;
+          var _this52 = this;
 
           this.adminPanelService.deleteAgent(uid).then(function (data) {
-            _this51.deleteUser(uid);
+            _this52.deleteUser(uid);
           });
         }
       }, {
@@ -5984,37 +6016,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this52 = this;
+          var _this53 = this;
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this52.name = element.data().Name;
-              _this52.image = element.data().Image;
+              _this53.name = element.data().Name;
+              _this53.image = element.data().Image;
             });
           }
         }
       }, {
         key: "getCountUser",
         value: function getCountUser() {
-          var _this53 = this;
+          var _this54 = this;
 
           this.allUser = [];
           this.allAgent = [];
           this.crossSearch = false;
           this.adminPanelService.getAllUser().then(function (data) {
             data.forEach(function (elements) {
-              if (elements.data().UserType != "Agent") {
-                _this53.allUser.push({
+              if (elements.data().UserType != "Agent" && elements.data().UserType != "Admin") {
+                _this54.allUser.push({
                   detail: elements.data(),
                   uid: elements.data().uid
                 });
 
-                _this53.options.push(elements.data().email);
+                _this54.options.push(elements.data().email);
               }
 
               if (elements.data().UserType == "Agent") {
-                _this53.allAgent.push(elements.data());
+                _this54.allAgent.push(elements.data());
               }
             });
           });
@@ -6022,18 +6054,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllUsers",
         value: function getAllUsers() {
-          var _this54 = this;
+          var _this55 = this;
 
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
-              _this54.allUserDetails.push(elements.data());
+              _this55.allUserDetails.push(elements.data());
             });
           });
         }
       }, {
         key: "retrieveTutorials",
         value: function retrieveTutorials() {
-          var _this55 = this;
+          var _this56 = this;
 
           this.jobTitleSearch = false;
           this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
@@ -6043,10 +6075,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (data) {
-            _this55.tutorials = data;
-            _this55.AllAgentJob = data;
+            _this56.tutorials = data;
+            _this56.AllAgentJob = data;
             data.forEach(function (element) {
-              _this55.agentOptions.push(element.email);
+              _this56.agentOptions.push(element.email);
             });
           });
         }
@@ -6067,11 +6099,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createUser",
         value: function createUser(Name, email, password, Type) {
-          var _this56 = this;
+          var _this57 = this;
 
           console.log(Name, email, password, Type);
           this.AdminAuthService.adminSignUp(Name, email, password, Type).then(function (data) {
-            var dialogRef = _this56.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this57.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "Account Created and Verification Email send"
               }
@@ -6204,11 +6236,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersEditPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this57 = this;
+          var _this58 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this57.UserUid = params.get("uid");
+            _this58.UserUid = params.get("uid");
           });
           this.getUserDetails();
           this.getSelectedUserDetail();
@@ -6218,10 +6250,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteBuyer",
         value: function deleteBuyer(uid, docid) {
-          var _this58 = this;
+          var _this59 = this;
 
           this.adminPanelService.deleteBuyer(uid, docid).then(function (data) {
-            var dialogRef = _this58.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this59.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "User Deleted"
               }
@@ -6233,10 +6265,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(uid, docid) {
-          var _this59 = this;
+          var _this60 = this;
 
           this.adminPanelService.deleteSeller(uid, docid).then(function (data) {
-            var dialogRef = _this59.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this60.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "User Deleted"
               }
@@ -6248,15 +6280,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this60 = this;
+          var _this61 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this60.username = element.data().Name;
-              _this60.image = element.data().Image;
+              _this61.username = element.data().Name;
+              _this61.image = element.data().Image;
             });
           }
         }
@@ -6268,49 +6300,49 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSelectedUserDetail",
         value: function getSelectedUserDetail() {
-          var _this61 = this;
+          var _this62 = this;
 
           this.adminPanelService.getUser(this.UserUid).then(function (user) {
-            _this61.Name = user.data().Name;
-            _this61.email = user.data().email;
+            _this62.Name = user.data().Name;
+            _this62.email = user.data().email;
 
             if (user.data().title != null) {
-              _this61.title = user.data().title;
+              _this62.title = user.data().title;
             }
 
             if (user.data().DOB != null) {
-              _this61.DOB = user.data().DOB.toDate();
+              _this62.DOB = user.data().DOB.toDate();
             }
 
             if (user.data().Phone != null) {
-              _this61.Phone = user.data().Phone;
+              _this62.Phone = user.data().Phone;
             }
 
             if (user.data().Currentpostcode != null) {
-              _this61.Currentpostcode = user.data().Currentpostcode;
+              _this62.Currentpostcode = user.data().Currentpostcode;
             }
 
             if (user.data().Currentstate != null) {
-              _this61.Currentstate = user.data().Currentstate;
+              _this62.Currentstate = user.data().Currentstate;
             }
 
             if (user.data().CurrentTowncity != null) {
-              _this61.CurrentTowncity = user.data().CurrentTowncity;
+              _this62.CurrentTowncity = user.data().CurrentTowncity;
             }
 
             if (user.data().Currentaddress != null) {
-              _this61.Currentaddress = user.data().Currentaddress;
+              _this62.Currentaddress = user.data().Currentaddress;
             }
           });
         }
       }, {
         key: "getBuyerEntries",
         value: function getBuyerEntries() {
-          var _this62 = this;
+          var _this63 = this;
 
           this.adminPanelService.getBuyerEntries(this.UserUid).then(function (user) {
             user.forEach(function (UserDetail) {
-              _this62.BuyerUserDetails.push({
+              _this63.BuyerUserDetails.push({
                 detail: UserDetail.data(),
                 id: UserDetail.id
               });
@@ -6320,11 +6352,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerEnteries",
         value: function getSellerEnteries() {
-          var _this63 = this;
+          var _this64 = this;
 
           this.adminPanelService.getSellerEntries(this.UserUid).then(function (user) {
             user.forEach(function (UserDetail) {
-              _this63.SellerUserDetails.push({
+              _this64.SellerUserDetails.push({
                 detail: UserDetail.data(),
                 id: UserDetail.id
               });
@@ -6555,7 +6587,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".back {\n  background-image: url(/assets/Images/home.jpeg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n}\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n  position: relative;\n  top: -145px;\n}\n.home-button {\n  background-color:var(--light-blue-color);\n  color: white;\n  width: 35%;\n}\n.home-button-SELL\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  width: 35%;\n}\n.home-text-font {\n \n\n  margin-bottom: 0.5rem;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background:white;\n\n}\n.how_does_it_work_steps {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n}\nimg.step-mage {\n  width: 33%;\n  margin: 14px;\n}\np.step-text {\n  text-align: center;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Medium';\n}\n.steps-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin: 0em 1em;\n}\n.step {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n\n}\n@media only screen and (min-width:768px)\n{\n  .icon-size\n  {\n    width: 50% !important;\n  }\n}\n.cookies-policy {\n  background-color: white;\nposition: absolute;\n  padding: 3px;\n  position: fixed;\nbottom: 0px;\nz-index: 1;\nbox-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n}\n.policy-heading {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 13px;\n}\np\n{\n  margin-bottom: 0px;\n}\nimg.button-cross {\n  width: 17px;\n}\n.custom-button-first {\n\n  padding: 8px;\n  border-radius: 5px;\n  width: 50%;\n  flex-direction: inherit;\n    display: flex;\n    justify-content: space-around;\n   \n}\n.blue-circle {\n  padding: 5px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n  width: 17%;\n}\n.custom-text {\n  font-size: 16px;\n  font-family: 'Roboto-Bold';\n}\n.upper-custom-button {\n  display: flex;\n  justify-content: center;\n}\n.create-nestimate {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  justify-content: center;\n  background-color:var(--DARK-BLUE-COLOR);\nmargin-top: 1em;\n\n\n}\nimg.button-image {\nheight: 7vh;\n}\n.text-create-nestimate\n{\n  color: white;\n  font-size: 1.3em;\n  padding: 0em 1em;\n  font-family: 'Roboto-Medium';\n}\n.large-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\np.i-am {\n  /* text-align: center; */\n  font-size: 1.3em;\n  text-align: center;\n  margin-bottom: 5px;\n  font-family: 'Roboto-Bold';\n}\n.custom-button-first:hover\n{\n  cursor: pointer;\n}\n.radio-container {\n  display: block;\n  position: relative;\n  padding-left: 35px;\n  cursor: pointer;\n  font-size: 15px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  padding-top: 0.3em;\n}\n/* Hide the browser's default radio button */\n.radio-container input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n}\n/* Create a custom radio button */\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n}\n/* On mouse-over, add a grey background color */\n.radio-container:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n/* When the radio button is checked, add a blue background */\n.radio-container input:checked ~ .checkmark {\n  background-color: var(--DARK-BLUE-COLOR);\n}\n/* Create the indicator (the dot/circle - hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n/* Show the indicator (dot/circle) when checked */\n.radio-container input:checked ~ .checkmark:after {\n  display: block;\n}\n/* Style the indicator (dot/circle) */\n.radio-container .checkmark:after {\n \ttop: 9px;\n\tleft: 9px;\n\twidth: 8px;\n\theight: 8px;\n  border-radius: 50%;\n}\nlabel\n{\n  margin-bottom: 0px !important;\n}\n.slider-image\n{\n  width: 100%;\n  height: 250px;\n}\n@media screen and (min-width:701px)\n{\n  .slider-image\n{\n\n  height: 40vh;\n}\n.radio-cn {\n  position: absolute;\n  top:13vh;\n  left: 2vw;\n}\n.second-card.mat-card {\n  display: none;\n}\n.steps-container {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-gap: 5em;\n}\n\nimg.step-mage {\n  width: 30%;\n  margin: 14px;\n}\n.cookies-policy {\n\n  margin: 2em 4em;\n}\n.cookies-policy-text {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n.cookies-button {\n  /* display: contents; */\n  display: flex;\n  flex-direction: row;\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n  /* margin: 13px 18px; */\n  width: 63vw;\n  display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    align-items: center;\n    margin-top: 10px;\n    margin-bottom: 5px;\n    color: var(--DARK-BLUE-COLOR);\n    font-family: \"Roboto-Light\";\n}\n.policy-heading {\n\n  display: inline;\n  margin-left: 13px;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n\n}\n.text-over-image {\n  /* position: absolute; */\n  position: relative;\n  /* bottom: 50vh; */\n  top: -8vh;\n  /* bottom: 50vh; */\n  text-align: center;\n  z-index: 1;\n  font-size: 1.5em;\n  font-family: 'Roboto-Bold';\n  color: white;\n}\n.radio-cn.mat-card {\n\n  background-color: var(--BAckground-dark-color);\n}\np.text-over-image-second {\n  position: absolute;\n  /* top: 2vh; */\n  bottom: -15vh;\n  color: white;\n  font-size: 1.4em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n\n}\n.second-card\n{\n  background-color: var(--BAckground-dark-color); \n}\np.slider-text.heading-nestimate {\n  text-align: center;\n  margin-top: 4px;\n}\n.heading-nestimate-font{\n  font-size: 22px;\n  padding: 2em;\n  text-align: center;\n\n}\n.top-button-cookies {\n  text-align: center;\n  /* height: 7vh; */\n  color: white;\n  border: 4px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 1em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n  font-family: 'Roboto-Bold';\n}\n.top-button-cookies:hover\n{\n  cursor: pointer;\n}\n.lower-button\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  border: none;\n  color: white;\n}\n.agent-form {\n  display: flex;\n  /* width: 100%; */\n  justify-content: center;\n  margin: 1em;\n}\n.listing-heading {\n  margin: 1em;\n}\n.to-buy {\n  margin: 0em 0.5em;\n}\nspan.greater-than-arrow.paragraph-color.mr-1 {\n  font-size: 1.7em;\n  padding-right: 0.1em;\n  padding-right: 0.5em;\n}\n.image-over {\n  margin-top: 2em;\n}\nimg.buyer-jpg {\n  height: 36vh;\n  width: 100%;\n}\n.custom-buttons {\n  padding: 1em 0em;\n}\n.card-steps {\n  background-color: white;\n  padding-bottom: 2em;\n}\n.slider-text {\n\n  text-align: center;\n  width: 100%;\n  color:var(--DARK-BLUE-COLOR);\n}\n@media screen and (min-width:701px)\n{\n  \nhr\n{\n display: none;\n}\n.custom-buttons {\n  padding: 1em 0em;\n  background-color: white;\n  padding: 2em;\n  border-radius: 10px;\n  margin: 1em;\n}\n.slider-text {\n\n  font-size: 1.2em;\n}\n.outputText {\n\n  font-size: 1.1em;\n}\n.heading-nestimate-font {\n  font-size: 2em;\n}\nimg.buyer-jpg {\n\n  display: none;\n}\n.text-over-image {\n\n  font-size: 1.7em;\n \n}\n.top-button-cookies {\n  text-align: center;\n\n  border: 2px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 0.6em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n}\n.policy-content-layout {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  height: 100%;\n}\n}\n@media screen and (max-width:700px)\n{\n  .top-button-cookies\n  {\n    padding: 0.7em;\n    margin: 1.3em;\n    border: none;\n    background-color: var(--DARK-BLUE-COLOR);\n    color: white !important;\n\n  }\n  .policy-heading {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 4px;\n    margin-left: 0px !important;\n\n}\n.policy-content {\nmargin: 0px;\nmargin: 0px;\ncolor: black;\nfont-family: \"Roboto-Light\";\n}\n.policy-content-layout {\n  margin: 20px;\n}\n.cookies-policy{\n  background-color: #ffffd5;\n  width: 100vw;\n}\nimg.blog-image {\n  width: 100% !important;\n}\n.policy-heading {\n\n\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  margin: 2em;\n  grid-gap: 2em;\n}\nimg.blog-image {\n  width: 30vw;\n}\n.heading-nestimate.blog-top-heading {\n  margin-left: 1.7em;\n  font-size: 1.3em;\n}\n.grid-text{\n font-family: \"Roboto-Light\";\n margin: 10px 5px;\n}\n@media screen and (max-width:700px)\n{\n  .blog-grid {\n    display: grid;\n    grid-template-columns: 1fr;\n    margin: 2em;\n    grid-gap: 3em;\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 0em 1em;\n}\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n}\n@media screen and (min-width:701px)\n{\n  .image-over\n  {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQ0FBK0M7RUFDL0MsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBRUE7RUFDRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLHdDQUF3QztFQUN4QyxZQUFZO0VBQ1osVUFBVTtBQUNaO0FBRUE7OztFQUdFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQztBQUNBO0VBQ0UsVUFBVTtFQUNWLFlBQVk7QUFDZDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLDZCQUE2QjtFQUM3Qiw0QkFBNEI7QUFDOUI7QUFHQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7O0FBRXJCO0FBQ0E7O0VBRUU7O0lBRUUscUJBQXFCO0VBQ3ZCO0FBQ0Y7QUFDQTtFQUNFLHVCQUF1QjtBQUN6QixrQkFBa0I7RUFDaEIsWUFBWTtFQUNaLGVBQWU7QUFDakIsV0FBVztBQUNYLFVBQVU7QUFDVixtT0FBbU87QUFDbk87QUFDQTtFQUNFLFlBQVk7RUFDWixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsbUJBQW1CO0VBQ25CLFlBQVk7QUFDZDtBQUNBOztFQUVFLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7O0VBRUUsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixVQUFVO0VBQ1YsdUJBQXVCO0lBQ3JCLGFBQWE7SUFDYiw2QkFBNkI7O0FBRWpDO0FBQ0E7RUFDRSxZQUFZO0VBQ1oseUNBQXlDO0VBQ3pDLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7QUFDQTtFQUNFLGVBQWU7RUFDZiwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7QUFDekI7QUFDQTtFQUNFLGFBQWE7RUFDYixtQkFBbUI7RUFDbkIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2Qix1QkFBdUI7RUFDdkIsdUNBQXVDO0FBQ3pDLGVBQWU7OztBQUdmO0FBQ0E7QUFDQSxXQUFXO0FBQ1g7QUFDQTs7RUFFRSxZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQiw0QkFBNEI7QUFDOUI7QUFDQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSx3QkFBd0I7RUFDeEIsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsMEJBQTBCO0FBQzVCO0FBQ0E7O0VBRUUsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLGVBQWU7RUFDZix5QkFBeUI7RUFDekIsc0JBQXNCO0VBQ3RCLHFCQUFxQjtFQUNyQixpQkFBaUI7RUFDakIsa0JBQWtCO0FBQ3BCO0FBRUEsNENBQTRDO0FBQzVDO0VBQ0Usa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVixlQUFlO0FBQ2pCO0FBRUEsaUNBQWlDO0FBQ2pDO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsWUFBWTtFQUNaLFdBQVc7RUFDWCx5Q0FBeUM7RUFDekMsa0JBQWtCO0FBQ3BCO0FBRUEsK0NBQStDO0FBQy9DO0VBQ0Usc0JBQXNCO0FBQ3hCO0FBRUEsNERBQTREO0FBQzVEO0VBQ0Usd0NBQXdDO0FBQzFDO0FBRUEsb0VBQW9FO0FBQ3BFO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixhQUFhO0FBQ2Y7QUFFQSxpREFBaUQ7QUFDakQ7RUFDRSxjQUFjO0FBQ2hCO0FBRUEscUNBQXFDO0FBQ3JDO0VBQ0UsUUFBUTtDQUNULFNBQVM7Q0FDVCxVQUFVO0NBQ1YsV0FBVztFQUNWLGtCQUFrQjtBQUNwQjtBQUNBOztFQUVFLDZCQUE2QjtBQUMvQjtBQUNBOztFQUVFLFdBQVc7RUFDWCxhQUFhO0FBQ2Y7QUFFQTs7RUFFRTs7O0VBR0EsWUFBWTtBQUNkO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsUUFBUTtFQUNSLFNBQVM7QUFDWDtBQUNBO0VBQ0UsYUFBYTtBQUNmO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isa0NBQWtDO0VBQ2xDLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFVBQVU7RUFDVixZQUFZO0FBQ2Q7QUFDQTs7RUFFRSxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLFdBQVc7RUFDWCxhQUFhO0lBQ1gsbUJBQW1CO0lBQ25CLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsNkJBQTZCO0lBQzdCLDJCQUEyQjtBQUMvQjtBQUNBOztFQUVFLGVBQWU7RUFDZixpQkFBaUI7RUFDakIsNkJBQTZCO0VBQzdCLDBCQUEwQjtBQUM1Qjs7QUFFQTtBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsU0FBUztFQUNULGtCQUFrQjtFQUNsQixrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLGdCQUFnQjtFQUNoQiwwQkFBMEI7RUFDMUIsWUFBWTtBQUNkO0FBQ0E7O0VBRUUsOENBQThDO0FBQ2hEO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsY0FBYztFQUNkLGFBQWE7RUFDYixZQUFZO0VBQ1osZ0JBQWdCO0VBQ2hCLDBCQUEwQjtFQUMxQixrQkFBa0I7RUFDbEIsV0FBVzs7QUFFYjtBQUNBOztFQUVFLDhDQUE4QztBQUNoRDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGVBQWU7QUFDakI7QUFFRTtFQUNBLGVBQWU7RUFDZixZQUFZO0VBQ1osa0JBQWtCOztBQUVwQjtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1oseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLDBCQUEwQjtBQUM1QjtBQUVBOztFQUVFLGVBQWU7QUFDakI7QUFDQTs7RUFFRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFlBQVk7QUFDZDtBQUNBO0VBQ0UsYUFBYTtFQUNiLGlCQUFpQjtFQUNqQix1QkFBdUI7RUFDdkIsV0FBVztBQUNiO0FBQ0E7RUFDRSxXQUFXO0FBQ2I7QUFDQTtFQUNFLGlCQUFpQjtBQUNuQjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLG9CQUFvQjtFQUNwQixvQkFBb0I7QUFDdEI7QUFDQTtFQUNFLGVBQWU7QUFDakI7QUFFQTtFQUNFLFlBQVk7RUFDWixXQUFXO0FBQ2I7QUFDQTtFQUNFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjtBQUVBOztFQUVFLGtCQUFrQjtFQUNsQixXQUFXO0VBQ1gsNEJBQTRCO0FBQzlCO0FBQ0E7OztBQUdBOztDQUVDLGFBQWE7QUFDZDtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLHVCQUF1QjtFQUN2QixZQUFZO0VBQ1osbUJBQW1CO0VBQ25CLFdBQVc7QUFDYjtBQUNBOztFQUVFLGdCQUFnQjtBQUNsQjtBQUNBOztFQUVFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsY0FBYztBQUNoQjtBQUNBOztFQUVFLGFBQWE7QUFDZjtBQUNBOztFQUVFLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLGtCQUFrQjs7RUFFbEIseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsY0FBYztFQUNkLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixZQUFZO0FBQ2Q7QUFDQTtBQUNBOztFQUVFOztJQUVFLGNBQWM7SUFDZCxhQUFhO0lBQ2IsWUFBWTtJQUNaLHdDQUF3QztJQUN4Qyx1QkFBdUI7O0VBRXpCO0VBQ0E7SUFDRSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsMkJBQTJCOztBQUUvQjtBQUNBO0FBQ0EsV0FBVztBQUNYLFdBQVc7QUFDWCxZQUFZO0FBQ1osMkJBQTJCO0FBQzNCO0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0FBQ2Q7QUFDQTtFQUNFLHNCQUFzQjtBQUN4QjtBQUNBOzs7RUFHRSw2QkFBNkI7RUFDN0IsMEJBQTBCO0FBQzVCO0FBQ0E7QUFFQTtFQUNFLGFBQWE7RUFDYixrQ0FBa0M7RUFDbEMsV0FBVztFQUNYLGFBQWE7QUFDZjtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCO0FBQ0E7Q0FDQywyQkFBMkI7Q0FDM0IsZ0JBQWdCO0FBQ2pCO0FBRUE7O0VBRUU7SUFDRSxhQUFhO0lBQ2IsMEJBQTBCO0lBQzFCLFdBQVc7SUFDWCxhQUFhO0FBQ2pCO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjtBQUNBO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsWUFBWTtBQUNkO0FBRUE7O0VBRUU7O0lBRUUsYUFBYTtFQUNmO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9Ib21lL0hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvSW1hZ2VzL2hvbWUuanBlZyk7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4udXBwZXItYmFjayB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgb3BhY2l0eTogMC41O1xufVxuLnVwcGVyLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gIHotaW5kZXg6IDEwMDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xNDVweDtcbn1cblxuLmhvbWUtYnV0dG9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuLmhvbWUtYnV0dG9uLVNFTExcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuXG4uaG9tZS10ZXh0LWZvbnQge1xuIFxuXG4gIG1hcmdpbi1ib3R0b206IDAuNXJlbTtcbn1cbi5leGFtcGxlLWZvcm0ge1xuICBtaW4td2lkdGg6IDE1MHB4O1xuICBtYXgtd2lkdGg6IDUwMHB4O1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwcHg7XG4gIGxlZnQ6IDBweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHotaW5kZXg6IDk7XG4gIGJhY2tncm91bmQ6d2hpdGU7XG5cbn1cbi5ob3dfZG9lc19pdF93b3JrX3N0ZXBzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuaW1nLnN0ZXAtbWFnZSB7XG4gIHdpZHRoOiAzMyU7XG4gIG1hcmdpbjogMTRweDtcbn1cbnAuc3RlcC10ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbn1cblxuXG4uc3RlcHMtY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMGVtIDFlbTtcbn1cbi5zdGVwIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cbn1cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3NjhweClcbntcbiAgLmljb24tc2l6ZVxuICB7XG4gICAgd2lkdGg6IDUwJSAhaW1wb3J0YW50O1xuICB9XG59XG4uY29va2llcy1wb2xpY3kge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbnBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcGFkZGluZzogM3B4O1xuICBwb3NpdGlvbjogZml4ZWQ7XG5ib3R0b206IDBweDtcbnotaW5kZXg6IDE7XG5ib3gtc2hhZG93OiAwIDIuOHB4IDIuMnB4IHJnYmEoMCwgMCwgMCwgMC4wMzQpLCAwIDYuN3B4IDUuM3B4IHJnYmEoMCwgMCwgMCwgMC4wNDgpLCAwIDEyLjVweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC4wNiksIDAgMjIuM3B4IDE3LjlweCByZ2JhKDAsIDAsIDAsIDAuMDcyKSwgMCA0MS44cHggMzMuNHB4IHJnYmEoMCwgMCwgMCwgMC4wODYpLCAwIDEwMHB4IDgwcHggcmdiYSgwLCAwLCAwLCAwLjEyKTtcbn1cbi5wb2xpY3ktY29udGVudCB7XG4gIG1hcmdpbjogMTNweDtcbiAgdGV4dC1hbGlnbjoganVzdGlmeTtcbn1cbi5wb2xpY3ktaGVhZGluZyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luOiAxM3B4O1xufVxucFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHg7XG59XG5pbWcuYnV0dG9uLWNyb3NzIHtcbiAgd2lkdGg6IDE3cHg7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdCB7XG5cbiAgcGFkZGluZzogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIHdpZHRoOiA1MCU7XG4gIGZsZXgtZGlyZWN0aW9uOiBpbmhlcml0O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICBcbn1cbi5ibHVlLWNpcmNsZSB7XG4gIHBhZGRpbmc6IDVweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgd2lkdGg6IDE3JTtcbn1cbi5jdXN0b20tdGV4dCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG4udXBwZXItY3VzdG9tLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuLmNyZWF0ZS1uZXN0aW1hdGUge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6dmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbm1hcmdpbi10b3A6IDFlbTtcblxuXG59XG5pbWcuYnV0dG9uLWltYWdlIHtcbmhlaWdodDogN3ZoO1xufVxuLnRleHQtY3JlYXRlLW5lc3RpbWF0ZVxue1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIHBhZGRpbmc6IDBlbSAxZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG59XG4ubGFyZ2UtYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5wLmktYW0ge1xuICAvKiB0ZXh0LWFsaWduOiBjZW50ZXI7ICovXG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbn1cbi5jdXN0b20tYnV0dG9uLWZpcnN0OmhvdmVyXG57XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5yYWRpby1jb250YWluZXIge1xuICBkaXNwbGF5OiBibG9jaztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLWxlZnQ6IDM1cHg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZm9udC1zaXplOiAxNXB4O1xuICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lO1xuICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICBwYWRkaW5nLXRvcDogMC4zZW07XG59XG5cbi8qIEhpZGUgdGhlIGJyb3dzZXIncyBkZWZhdWx0IHJhZGlvIGJ1dHRvbiAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgb3BhY2l0eTogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4vKiBDcmVhdGUgYSBjdXN0b20gcmFkaW8gYnV0dG9uICovXG4uY2hlY2ttYXJrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIGhlaWdodDogMjVweDtcbiAgd2lkdGg6IDI1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5cbi8qIE9uIG1vdXNlLW92ZXIsIGFkZCBhIGdyZXkgYmFja2dyb3VuZCBjb2xvciAqL1xuLnJhZGlvLWNvbnRhaW5lcjpob3ZlciBpbnB1dCB+IC5jaGVja21hcmsge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjY2NjO1xufVxuXG4vKiBXaGVuIHRoZSByYWRpbyBidXR0b24gaXMgY2hlY2tlZCwgYWRkIGEgYmx1ZSBiYWNrZ3JvdW5kICovXG4ucmFkaW8tY29udGFpbmVyIGlucHV0OmNoZWNrZWQgfiAuY2hlY2ttYXJrIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbn1cblxuLyogQ3JlYXRlIHRoZSBpbmRpY2F0b3IgKHRoZSBkb3QvY2lyY2xlIC0gaGlkZGVuIHdoZW4gbm90IGNoZWNrZWQpICovXG4uY2hlY2ttYXJrOmFmdGVyIHtcbiAgY29udGVudDogXCJcIjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4vKiBTaG93IHRoZSBpbmRpY2F0b3IgKGRvdC9jaXJjbGUpIHdoZW4gY2hlY2tlZCAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dDpjaGVja2VkIH4gLmNoZWNrbWFyazphZnRlciB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKiBTdHlsZSB0aGUgaW5kaWNhdG9yIChkb3QvY2lyY2xlKSAqL1xuLnJhZGlvLWNvbnRhaW5lciAuY2hlY2ttYXJrOmFmdGVyIHtcbiBcdHRvcDogOXB4O1xuXHRsZWZ0OiA5cHg7XG5cdHdpZHRoOiA4cHg7XG5cdGhlaWdodDogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5sYWJlbFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcbn1cbi5zbGlkZXItaW1hZ2VcbntcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMjUwcHg7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzAxcHgpXG57XG4gIC5zbGlkZXItaW1hZ2VcbntcblxuICBoZWlnaHQ6IDQwdmg7XG59XG4ucmFkaW8tY24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDoxM3ZoO1xuICBsZWZ0OiAydnc7XG59XG4uc2Vjb25kLWNhcmQubWF0LWNhcmQge1xuICBkaXNwbGF5OiBub25lO1xufVxuLnN0ZXBzLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XG4gIGdyaWQtZ2FwOiA1ZW07XG59XG5cbmltZy5zdGVwLW1hZ2Uge1xuICB3aWR0aDogMzAlO1xuICBtYXJnaW46IDE0cHg7XG59XG4uY29va2llcy1wb2xpY3kge1xuXG4gIG1hcmdpbjogMmVtIDRlbTtcbn1cbi5jb29raWVzLXBvbGljeS10ZXh0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5jb29raWVzLWJ1dHRvbiB7XG4gIC8qIGRpc3BsYXk6IGNvbnRlbnRzOyAqL1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xufVxuLnBvbGljeS1jb250ZW50IHtcbiAgbWFyZ2luOiAxM3B4O1xuICB0ZXh0LWFsaWduOiBqdXN0aWZ5O1xuICAvKiBtYXJnaW46IDEzcHggMThweDsgKi9cbiAgd2lkdGg6IDYzdnc7XG4gIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICBtYXJnaW4tYm90dG9tOiA1cHg7XG4gICAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gICAgZm9udC1mYW1pbHk6IFwiUm9ib3RvLUxpZ2h0XCI7XG59XG4ucG9saWN5LWhlYWRpbmcge1xuXG4gIGRpc3BsYXk6IGlubGluZTtcbiAgbWFyZ2luLWxlZnQ6IDEzcHg7XG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBmb250LWZhbWlseTogXCJSb2JvdG8tQm9sZFwiO1xufVxuXG59XG5cbi50ZXh0LW92ZXItaW1hZ2Uge1xuICAvKiBwb3NpdGlvbjogYWJzb2x1dGU7ICovXG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgLyogYm90dG9tOiA1MHZoOyAqL1xuICB0b3A6IC04dmg7XG4gIC8qIGJvdHRvbTogNTB2aDsgKi9cbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB6LWluZGV4OiAxO1xuICBmb250LXNpemU6IDEuNWVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgY29sb3I6IHdoaXRlO1xufVxuLnJhZGlvLWNuLm1hdC1jYXJkIHtcblxuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1CQWNrZ3JvdW5kLWRhcmstY29sb3IpO1xufVxucC50ZXh0LW92ZXItaW1hZ2Utc2Vjb25kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICAvKiB0b3A6IDJ2aDsgKi9cbiAgYm90dG9tOiAtMTV2aDtcbiAgY29sb3I6IHdoaXRlO1xuICBmb250LXNpemU6IDEuNGVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcblxufVxuLnNlY29uZC1jYXJkXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7IFxufVxucC5zbGlkZXItdGV4dC5oZWFkaW5nLW5lc3RpbWF0ZSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbWFyZ2luLXRvcDogNHB4O1xufVxuXG4gIC5oZWFkaW5nLW5lc3RpbWF0ZS1mb250e1xuICBmb250LXNpemU6IDIycHg7XG4gIHBhZGRpbmc6IDJlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuXG59XG4udG9wLWJ1dHRvbi1jb29raWVzIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAvKiBoZWlnaHQ6IDd2aDsgKi9cbiAgY29sb3I6IHdoaXRlO1xuICBib3JkZXI6IDRweCBzb2xpZCAjODFDMkZEO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgcGFkZGluZzogMWVtO1xuICBtYXJnaW46IDFlbTtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbn1cblxuLnRvcC1idXR0b24tY29va2llczpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubG93ZXItYnV0dG9uXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGJvcmRlcjogbm9uZTtcbiAgY29sb3I6IHdoaXRlO1xufVxuLmFnZW50LWZvcm0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICAvKiB3aWR0aDogMTAwJTsgKi9cbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMWVtO1xufVxuLmxpc3RpbmctaGVhZGluZyB7XG4gIG1hcmdpbjogMWVtO1xufVxuLnRvLWJ1eSB7XG4gIG1hcmdpbjogMGVtIDAuNWVtO1xufVxuc3Bhbi5ncmVhdGVyLXRoYW4tYXJyb3cucGFyYWdyYXBoLWNvbG9yLm1yLTEge1xuICBmb250LXNpemU6IDEuN2VtO1xuICBwYWRkaW5nLXJpZ2h0OiAwLjFlbTtcbiAgcGFkZGluZy1yaWdodDogMC41ZW07XG59XG4uaW1hZ2Utb3ZlciB7XG4gIG1hcmdpbi10b3A6IDJlbTtcbn1cblxuaW1nLmJ1eWVyLWpwZyB7XG4gIGhlaWdodDogMzZ2aDtcbiAgd2lkdGg6IDEwMCU7XG59XG4uY3VzdG9tLWJ1dHRvbnMge1xuICBwYWRkaW5nOiAxZW0gMGVtO1xufVxuLmNhcmQtc3RlcHMge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZy1ib3R0b206IDJlbTtcbn1cblxuLnNsaWRlci10ZXh0IHtcblxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBjb2xvcjp2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgXG5oclxue1xuIGRpc3BsYXk6IG5vbmU7XG59XG4uY3VzdG9tLWJ1dHRvbnMge1xuICBwYWRkaW5nOiAxZW0gMGVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZzogMmVtO1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICBtYXJnaW46IDFlbTtcbn1cbi5zbGlkZXItdGV4dCB7XG5cbiAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5vdXRwdXRUZXh0IHtcblxuICBmb250LXNpemU6IDEuMWVtO1xufVxuLmhlYWRpbmctbmVzdGltYXRlLWZvbnQge1xuICBmb250LXNpemU6IDJlbTtcbn1cbmltZy5idXllci1qcGcge1xuXG4gIGRpc3BsYXk6IG5vbmU7XG59XG4udGV4dC1vdmVyLWltYWdlIHtcblxuICBmb250LXNpemU6IDEuN2VtO1xuIFxufVxuLnRvcC1idXR0b24tY29va2llcyB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcblxuICBib3JkZXI6IDJweCBzb2xpZCAjODFDMkZEO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgcGFkZGluZzogMC42ZW07XG4gIG1hcmdpbjogMWVtO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucG9saWN5LWNvbnRlbnQtbGF5b3V0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGhlaWdodDogMTAwJTtcbn1cbn1cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIC50b3AtYnV0dG9uLWNvb2tpZXNcbiAge1xuICAgIHBhZGRpbmc6IDAuN2VtO1xuICAgIG1hcmdpbjogMS4zZW07XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gICAgY29sb3I6IHdoaXRlICFpbXBvcnRhbnQ7XG5cbiAgfVxuICAucG9saWN5LWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luOiA0cHg7XG4gICAgbWFyZ2luLWxlZnQ6IDBweCAhaW1wb3J0YW50O1xuXG59XG4ucG9saWN5LWNvbnRlbnQge1xubWFyZ2luOiAwcHg7XG5tYXJnaW46IDBweDtcbmNvbG9yOiBibGFjaztcbmZvbnQtZmFtaWx5OiBcIlJvYm90by1MaWdodFwiO1xufVxuLnBvbGljeS1jb250ZW50LWxheW91dCB7XG4gIG1hcmdpbjogMjBweDtcbn1cbi5jb29raWVzLXBvbGljeXtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZkNTtcbiAgd2lkdGg6IDEwMHZ3O1xufVxuaW1nLmJsb2ctaW1hZ2Uge1xuICB3aWR0aDogMTAwJSAhaW1wb3J0YW50O1xufVxuLnBvbGljeS1oZWFkaW5nIHtcblxuXG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBmb250LWZhbWlseTogXCJSb2JvdG8tQm9sZFwiO1xufVxufVxuXG4uYmxvZy1ncmlkIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmcjtcbiAgbWFyZ2luOiAyZW07XG4gIGdyaWQtZ2FwOiAyZW07XG59XG5pbWcuYmxvZy1pbWFnZSB7XG4gIHdpZHRoOiAzMHZ3O1xufVxuLmhlYWRpbmctbmVzdGltYXRlLmJsb2ctdG9wLWhlYWRpbmcge1xuICBtYXJnaW4tbGVmdDogMS43ZW07XG4gIGZvbnQtc2l6ZTogMS4zZW07XG59XG4uZ3JpZC10ZXh0e1xuIGZvbnQtZmFtaWx5OiBcIlJvYm90by1MaWdodFwiO1xuIG1hcmdpbjogMTBweCA1cHg7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIC5ibG9nLWdyaWQge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7XG4gICAgbWFyZ2luOiAyZW07XG4gICAgZ3JpZC1nYXA6IDNlbTtcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS5ibG9nLXRvcC1oZWFkaW5nIHtcbiAgZm9udC1zaXplOiAxLjNlbTtcbiAgbWFyZ2luOiAwZW0gMWVtO1xufVxufVxuLmJsb2ctbGluay1kZWNvcmF0aW9ue1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGNvbG9yOiBibGFjaztcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgLmltYWdlLW92ZXJcbiAge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cbn0iXX0= */";
+    __webpack_exports__["default"] = ".back {\n  background-image: url(/assets/Images/home.jpeg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n}\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n  position: relative;\n  top: -145px;\n}\n.home-button {\n  background-color:var(--light-blue-color);\n  color: white;\n  width: 35%;\n}\n.home-button-SELL\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  width: 35%;\n}\n.home-text-font {\n \n\n  margin-bottom: 0.5rem;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background:white;\n\n}\n.how_does_it_work_steps {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n}\nimg.step-mage {\n  width: 33%;\n  margin: 14px;\n}\np.step-text {\n  text-align: center;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Medium';\n}\n.steps-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin: 0em 1em;\n}\n.step {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n\n}\n@media only screen and (min-width:768px)\n{\n  .icon-size\n  {\n    width: 50% !important;\n  }\n}\n.cookies-policy {\n  background-color: white;\nposition: absolute;\n  padding: 3px;\n  position: fixed;\nbottom: 0px;\nz-index: 1;\nbox-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n}\n.policy-heading {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 13px;\n}\np\n{\n  margin-bottom: 0px;\n}\nimg.button-cross {\n  width: 17px;\n}\n.custom-button-first {\n\n  padding: 8px;\n  border-radius: 5px;\n  align-items: center;\n  flex-direction: inherit;\n    display: flex;\n    justify-content: space-around;\n   \n}\n.blue-circle {\n  padding: 5px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n  width: 17%;\n}\n.custom-text {\n  font-size: 16px;\n  font-family: 'Roboto-Bold';\n}\n.upper-custom-button {\n  display: flex;\n  justify-content: center;\n  margin: 1em 0em;\n}\n.create-nestimate {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  justify-content: center;\n  background-color:var(--DARK-BLUE-COLOR);\nmargin-top: 1em;\nmargin-bottom: 1em;\n\nbox-shadow: 5px 5px 6px #00000066;\n\n}\nimg.button-image {\nheight: 6vh;\n}\n.text-create-nestimate\n{\n  color: white;\n  font-size: 1.3em;\n  padding: 0em 1em;\n  font-family: 'Segoe UI Bold';\n}\n.large-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\np.i-am {\n  /* text-align: center; */\n  font-size: 1.5em;\n  text-align: center;\n  margin-bottom: 1em;\n  font-family: 'Segoe UI Bold';\n}\n.custom-button-first:hover\n{\n  cursor: pointer;\n}\n.radio-container {\n  display: block;\n  position: relative;\n  padding-left: 2em;\n  cursor: pointer;\n  font-size: 23px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: 'Segoe UI SemiBold';\n  color: #0F3C73;\n  padding-top: 0em;\n}\n/* Hide the browser's default radio button */\n.radio-container input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n}\n/* Create a custom radio button */\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n/* On mouse-over, add a grey background color */\n.radio-container:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n/* When the radio button is checked, add a blue background */\n.radio-container input:checked ~ .checkmark {\n  background-color: var(--light-blue-color);\n}\n/* Create the indicator (the dot/circle - hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n/* Show the indicator (dot/circle) when checked */\n.radio-container input:checked ~ .checkmark:after {\n  display: block;\n}\n/* Style the indicator (dot/circle) */\n.radio-container .checkmark:after {\n \ttop: 9px;\n\tleft: 9px;\n\twidth: 8px;\n\theight: 8px;\n  border-radius: 50%;\n}\nlabel\n{\n  margin-bottom: 0px !important;\n}\n.slider-image\n{\n  width: 100%;\n}\n@media screen and (min-width:701px)\n{\n\n.radio-cn {\n  position: absolute;\n  bottom: 50vh;\n  top: 50vh;\n  left: 2vw;\n}\n.second-card.mat-card {\n  display: none;\n}\n.steps-container {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-gap: 5em;\n}\n\nimg.step-mage {\n  width: 30%;\n  margin: 14px;\n}\n.cookies-policy {\n\n  margin: 2em 4em;\n}\n.cookies-policy-text {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n.cookies-button {\n  /* display: contents; */\n  display: flex;\n  flex-direction: row;\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n  /* margin: 13px 18px; */\n  width: 63vw;\n  display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    align-items: center;\n    margin-top: 10px;\n    margin-bottom: 5px;\n    color: var(--DARK-BLUE-COLOR);\n    font-family: \"Segoe UI Regular\";\n\n}\n.policy-heading {\n\n  display: inline;\n  margin-left: 13px;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n\n}\n.text-over-image {\n  /* position: absolute; */\n  position: relative;\n  /* bottom: 50vh; */\n  top: -8vh;\n  /* bottom: 50vh; */\n  text-align: center;\n  z-index: 1;\n  font-size: 1.5em;\n  font-family: 'Roboto-Bold';\n  color: white;\n}\n.radio-cn.mat-card {\n\n  background-color: var(--BAckground-dark-color);\n}\np.text-over-image-second {\n  position: absolute;\n  /* top: 2vh; */\n  bottom: -15vh;\n  color: white;\n  font-size: 1.4em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n\n}\n.second-card\n{\n  background-color: var(--BAckground-dark-color); \n}\np.slider-text.heading-nestimate {\n  text-align: center;\n  margin-top: 4px;\n}\n.heading-nestimate-font{\n  font-size: 22px;\n  padding: 2em;\n  text-align: center;\n\n}\n.top-button-cookies {\n  text-align: center;\n  /* height: 7vh; */\n  color: white;\n  border: 4px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 1em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n  font-family: 'Roboto-Bold';\n}\n.top-button-cookies:hover\n{\n  cursor: pointer;\n}\n.lower-button\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  border: none;\n  color: white;\n}\n.agent-form {\n  display: flex;\n  /* width: 100%; */\n  justify-content: center;\n  margin: 1em;\n}\n.listing-heading {\n  margin: 1em;\n}\n.to-buy {\n  margin: 0em 0.5em;\n}\nspan.greater-than-arrow.paragraph-color.mr-1 {\n  font-size: 2em;\n  padding-right: 0.1em;\n  padding-right: 0.5em;\n  font-family: 'Segoe UI Bold';\n}\n.image-over {\n  margin-top: 2em;\n}\nimg.buyer-jpg {\n  height: 36vh;\n  width: 100%;\n}\n.custom-buttons {\n  padding: 1em 0em;\n}\n.card-steps {\n  background-color: white;\n  padding-bottom: 2em;\n}\n.slider-text {\n\n  text-align: center;\n  width: 100%;\n  color:var(--DARK-BLUE-COLOR);\n}\n@media screen and (min-width:701px)\n{\n  \nhr\n{\n display: none;\n}\n.custom-buttons {\n  padding: 1em 0em;\n  background-color: white;\n  padding: 1em 1em;\n  border-radius: 10px;\n  margin: 1em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.slider-text {\n\n  font-size: 1.2em;\n}\n.outputText {\n\n  font-size: 1.1em;\n}\n.heading-nestimate-font {\n  font-size: 2em;\n}\nimg.buyer-jpg {\n\n  display: none;\n}\n.text-over-image {\n\n  font-size: 1.7em;\n \n}\n.top-button-cookies {\n  text-align: center;\n\n  border: 2px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 0.6em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n}\n.policy-content-layout {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  height: 100%;\n}\n}\n@media screen and (max-width:700px)\n{\n  .top-button-cookies\n  {\n    padding: 0.7em;\n    margin: 1.3em;\n    border: none;\n    background-color: var(--DARK-BLUE-COLOR);\n    color: white !important;\n\n  }\n  .policy-heading {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 4px;\n    margin-left: 0px !important;\n\n}\n.policy-content {\nmargin: 0px;\nmargin: 0px;\ncolor: black;\nfont-family: \"Segoe UI Regular\";\n}\n.policy-content-layout {\n  margin: 20px;\n}\n.cookies-policy{\n  background-color: #ffffd5;\n  width: 100vw;\n}\nimg.blog-image {\n  width: 100% !important;\n}\n.policy-heading {\n\n\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  margin: 2em;\n  grid-gap: 2em;\n}\nimg.blog-image {\n  width: 30vw;\n}\n.heading-nestimate.blog-top-heading {\n  margin-left: 1.7em;\n  font-size: 1.3em;\n}\n.grid-text{\n font-family: \"Roboto-Light\";\n margin: 10px 5px;\n}\n@media screen and (max-width:700px)\n{\n  .blog-grid {\n    display: grid;\n    grid-template-columns: 1fr;\n    margin: 2em;\n    grid-gap: 3em;\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 0em 1em;\n}\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n}\n@media screen and (min-width:701px)\n{\n  .image-over\n  {\n    display: none;\n  }\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQ0FBK0M7RUFDL0MsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBRUE7RUFDRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLHdDQUF3QztFQUN4QyxZQUFZO0VBQ1osVUFBVTtBQUNaO0FBRUE7OztFQUdFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQztBQUNBO0VBQ0UsVUFBVTtFQUNWLFlBQVk7QUFDZDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLDZCQUE2QjtFQUM3Qiw0QkFBNEI7QUFDOUI7QUFHQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7O0FBRXJCO0FBQ0E7O0VBRUU7O0lBRUUscUJBQXFCO0VBQ3ZCO0FBQ0Y7QUFDQTtFQUNFLHVCQUF1QjtBQUN6QixrQkFBa0I7RUFDaEIsWUFBWTtFQUNaLGVBQWU7QUFDakIsV0FBVztBQUNYLFVBQVU7QUFDVixtT0FBbU87QUFDbk87QUFDQTtFQUNFLFlBQVk7RUFDWixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLGFBQWE7RUFDYiw4QkFBOEI7RUFDOUIsbUJBQW1CO0VBQ25CLFlBQVk7QUFDZDtBQUNBOztFQUVFLGtCQUFrQjtBQUNwQjtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7O0VBRUUsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsdUJBQXVCO0lBQ3JCLGFBQWE7SUFDYiw2QkFBNkI7O0FBRWpDO0FBQ0E7RUFDRSxZQUFZO0VBQ1oseUNBQXlDO0VBQ3pDLGtCQUFrQjtFQUNsQixVQUFVO0FBQ1o7QUFDQTtFQUNFLGVBQWU7RUFDZiwwQkFBMEI7QUFDNUI7QUFDQTtFQUNFLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsZUFBZTtBQUNqQjtBQUNBO0VBQ0UsYUFBYTtFQUNiLG1CQUFtQjtFQUNuQixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLHVCQUF1QjtFQUN2Qix1Q0FBdUM7QUFDekMsZUFBZTtBQUNmLGtCQUFrQjs7QUFFbEIsaUNBQWlDOztBQUVqQztBQUNBO0FBQ0EsV0FBVztBQUNYO0FBQ0E7O0VBRUUsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsNEJBQTRCO0FBQzlCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0Usd0JBQXdCO0VBQ3hCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLDRCQUE0QjtBQUM5QjtBQUNBOztFQUVFLGVBQWU7QUFDakI7QUFDQTtFQUNFLGNBQWM7RUFDZCxrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixlQUFlO0VBQ2YseUJBQXlCO0VBQ3pCLHNCQUFzQjtFQUN0QixxQkFBcUI7RUFDckIsaUJBQWlCO0VBQ2pCLGdDQUFnQztFQUNoQyxjQUFjO0VBQ2QsZ0JBQWdCO0FBQ2xCO0FBRUEsNENBQTRDO0FBQzVDO0VBQ0Usa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVixlQUFlO0FBQ2pCO0FBRUEsaUNBQWlDO0FBQ2pDO0VBQ0Usa0JBQWtCO0VBQ2xCLE1BQU07RUFDTixPQUFPO0VBQ1AsWUFBWTtFQUNaLFdBQVc7RUFDWCx3Q0FBd0M7RUFDeEMsa0JBQWtCO0FBQ3BCO0FBRUEsK0NBQStDO0FBQy9DO0VBQ0Usc0JBQXNCO0FBQ3hCO0FBRUEsNERBQTREO0FBQzVEO0VBQ0UseUNBQXlDO0FBQzNDO0FBRUEsb0VBQW9FO0FBQ3BFO0VBQ0UsV0FBVztFQUNYLGtCQUFrQjtFQUNsQixhQUFhO0FBQ2Y7QUFFQSxpREFBaUQ7QUFDakQ7RUFDRSxjQUFjO0FBQ2hCO0FBRUEscUNBQXFDO0FBQ3JDO0VBQ0UsUUFBUTtDQUNULFNBQVM7Q0FDVCxVQUFVO0NBQ1YsV0FBVztFQUNWLGtCQUFrQjtBQUNwQjtBQUNBOztFQUVFLDZCQUE2QjtBQUMvQjtBQUNBOztFQUVFLFdBQVc7QUFDYjtBQUVBOzs7QUFHQTtFQUNFLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osU0FBUztFQUNULFNBQVM7QUFDWDtBQUNBO0VBQ0UsYUFBYTtBQUNmO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isa0NBQWtDO0VBQ2xDLGFBQWE7QUFDZjs7QUFFQTtFQUNFLFVBQVU7RUFDVixZQUFZO0FBQ2Q7QUFDQTs7RUFFRSxlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2IsbUJBQW1CO0VBQ25CLG1CQUFtQjtBQUNyQjtBQUNBO0VBQ0UsdUJBQXVCO0VBQ3ZCLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7QUFDQTtFQUNFLFlBQVk7RUFDWixtQkFBbUI7RUFDbkIsdUJBQXVCO0VBQ3ZCLFdBQVc7RUFDWCxhQUFhO0lBQ1gsbUJBQW1CO0lBQ25CLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQixrQkFBa0I7SUFDbEIsNkJBQTZCO0lBQzdCLCtCQUErQjs7QUFFbkM7QUFDQTs7RUFFRSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLDZCQUE2QjtFQUM3QiwwQkFBMEI7QUFDNUI7O0FBRUE7QUFFQTtFQUNFLHdCQUF3QjtFQUN4QixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVixnQkFBZ0I7RUFDaEIsMEJBQTBCO0VBQzFCLFlBQVk7QUFDZDtBQUNBOztFQUVFLDhDQUE4QztBQUNoRDtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxhQUFhO0VBQ2IsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQiwwQkFBMEI7RUFDMUIsa0JBQWtCO0VBQ2xCLFdBQVc7O0FBRWI7QUFDQTs7RUFFRSw4Q0FBOEM7QUFDaEQ7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixlQUFlO0FBQ2pCO0FBRUU7RUFDQSxlQUFlO0VBQ2YsWUFBWTtFQUNaLGtCQUFrQjs7QUFFcEI7QUFDQTtFQUNFLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsWUFBWTtFQUNaLHlCQUF5QjtFQUN6QixhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQiwwQkFBMEI7QUFDNUI7QUFFQTs7RUFFRSxlQUFlO0FBQ2pCO0FBQ0E7O0VBRUUsd0NBQXdDO0VBQ3hDLFlBQVk7RUFDWixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYixpQkFBaUI7RUFDakIsdUJBQXVCO0VBQ3ZCLFdBQVc7QUFDYjtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxpQkFBaUI7QUFDbkI7QUFDQTtFQUNFLGNBQWM7RUFDZCxvQkFBb0I7RUFDcEIsb0JBQW9CO0VBQ3BCLDRCQUE0QjtBQUM5QjtBQUNBO0VBQ0UsZUFBZTtBQUNqQjtBQUVBO0VBQ0UsWUFBWTtFQUNaLFdBQVc7QUFDYjtBQUNBO0VBQ0UsZ0JBQWdCO0FBQ2xCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsbUJBQW1CO0FBQ3JCO0FBRUE7O0VBRUUsa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCw0QkFBNEI7QUFDOUI7QUFDQTs7O0FBR0E7O0NBRUMsYUFBYTtBQUNkO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsdUJBQXVCO0VBQ3ZCLGdCQUFnQjtFQUNoQixtQkFBbUI7RUFDbkIsV0FBVztFQUNYLGlDQUFpQztBQUNuQztBQUNBOztFQUVFLGdCQUFnQjtBQUNsQjtBQUNBOztFQUVFLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsY0FBYztBQUNoQjtBQUNBOztFQUVFLGFBQWE7QUFDZjtBQUNBOztFQUVFLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLGtCQUFrQjs7RUFFbEIseUJBQXlCO0VBQ3pCLGFBQWE7RUFDYix1QkFBdUI7RUFDdkIsY0FBYztFQUNkLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsbUJBQW1CO0FBQ3JCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixZQUFZO0FBQ2Q7QUFDQTtBQUNBOztFQUVFOztJQUVFLGNBQWM7SUFDZCxhQUFhO0lBQ2IsWUFBWTtJQUNaLHdDQUF3QztJQUN4Qyx1QkFBdUI7O0VBRXpCO0VBQ0E7SUFDRSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsMkJBQTJCOztBQUUvQjtBQUNBO0FBQ0EsV0FBVztBQUNYLFdBQVc7QUFDWCxZQUFZO0FBQ1osK0JBQStCO0FBQy9CO0FBQ0E7RUFDRSxZQUFZO0FBQ2Q7QUFDQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0FBQ2Q7QUFDQTtFQUNFLHNCQUFzQjtBQUN4QjtBQUNBOzs7RUFHRSw2QkFBNkI7RUFDN0IsMEJBQTBCO0FBQzVCO0FBQ0E7QUFFQTtFQUNFLGFBQWE7RUFDYixrQ0FBa0M7RUFDbEMsV0FBVztFQUNYLGFBQWE7QUFDZjtBQUNBO0VBQ0UsV0FBVztBQUNiO0FBQ0E7RUFDRSxrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCO0FBQ0E7Q0FDQywyQkFBMkI7Q0FDM0IsZ0JBQWdCO0FBQ2pCO0FBRUE7O0VBRUU7SUFDRSxhQUFhO0lBQ2IsMEJBQTBCO0lBQzFCLFdBQVc7SUFDWCxhQUFhO0FBQ2pCO0FBQ0E7RUFDRSxnQkFBZ0I7RUFDaEIsZUFBZTtBQUNqQjtBQUNBO0FBQ0E7RUFDRSxxQkFBcUI7RUFDckIsWUFBWTtBQUNkO0FBRUE7O0VBRUU7O0lBRUUsYUFBYTtFQUNmO0FBQ0YiLCJmaWxlIjoic3JjL2FwcC9Ib21lL0hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvSW1hZ2VzL2hvbWUuanBlZyk7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4udXBwZXItYmFjayB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgb3BhY2l0eTogMC41O1xufVxuLnVwcGVyLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gIHotaW5kZXg6IDEwMDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xNDVweDtcbn1cblxuLmhvbWUtYnV0dG9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuLmhvbWUtYnV0dG9uLVNFTExcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuXG4uaG9tZS10ZXh0LWZvbnQge1xuIFxuXG4gIG1hcmdpbi1ib3R0b206IDAuNXJlbTtcbn1cbi5leGFtcGxlLWZvcm0ge1xuICBtaW4td2lkdGg6IDE1MHB4O1xuICBtYXgtd2lkdGg6IDUwMHB4O1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwcHg7XG4gIGxlZnQ6IDBweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHotaW5kZXg6IDk7XG4gIGJhY2tncm91bmQ6d2hpdGU7XG5cbn1cbi5ob3dfZG9lc19pdF93b3JrX3N0ZXBzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuaW1nLnN0ZXAtbWFnZSB7XG4gIHdpZHRoOiAzMyU7XG4gIG1hcmdpbjogMTRweDtcbn1cbnAuc3RlcC10ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbn1cblxuXG4uc3RlcHMtY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMGVtIDFlbTtcbn1cbi5zdGVwIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cbn1cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3NjhweClcbntcbiAgLmljb24tc2l6ZVxuICB7XG4gICAgd2lkdGg6IDUwJSAhaW1wb3J0YW50O1xuICB9XG59XG4uY29va2llcy1wb2xpY3kge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbnBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcGFkZGluZzogM3B4O1xuICBwb3NpdGlvbjogZml4ZWQ7XG5ib3R0b206IDBweDtcbnotaW5kZXg6IDE7XG5ib3gtc2hhZG93OiAwIDIuOHB4IDIuMnB4IHJnYmEoMCwgMCwgMCwgMC4wMzQpLCAwIDYuN3B4IDUuM3B4IHJnYmEoMCwgMCwgMCwgMC4wNDgpLCAwIDEyLjVweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC4wNiksIDAgMjIuM3B4IDE3LjlweCByZ2JhKDAsIDAsIDAsIDAuMDcyKSwgMCA0MS44cHggMzMuNHB4IHJnYmEoMCwgMCwgMCwgMC4wODYpLCAwIDEwMHB4IDgwcHggcmdiYSgwLCAwLCAwLCAwLjEyKTtcbn1cbi5wb2xpY3ktY29udGVudCB7XG4gIG1hcmdpbjogMTNweDtcbiAgdGV4dC1hbGlnbjoganVzdGlmeTtcbn1cbi5wb2xpY3ktaGVhZGluZyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luOiAxM3B4O1xufVxucFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHg7XG59XG5pbWcuYnV0dG9uLWNyb3NzIHtcbiAgd2lkdGg6IDE3cHg7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdCB7XG5cbiAgcGFkZGluZzogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZsZXgtZGlyZWN0aW9uOiBpbmhlcml0O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICBcbn1cbi5ibHVlLWNpcmNsZSB7XG4gIHBhZGRpbmc6IDVweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgd2lkdGg6IDE3JTtcbn1cbi5jdXN0b20tdGV4dCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG4udXBwZXItY3VzdG9tLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW46IDFlbSAwZW07XG59XG4uY3JlYXRlLW5lc3RpbWF0ZSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xubWFyZ2luLXRvcDogMWVtO1xubWFyZ2luLWJvdHRvbTogMWVtO1xuXG5ib3gtc2hhZG93OiA1cHggNXB4IDZweCAjMDAwMDAwNjY7XG5cbn1cbmltZy5idXR0b24taW1hZ2Uge1xuaGVpZ2h0OiA2dmg7XG59XG4udGV4dC1jcmVhdGUtbmVzdGltYXRlXG57XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAxLjNlbTtcbiAgcGFkZGluZzogMGVtIDFlbTtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbn1cbi5sYXJnZS1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbnAuaS1hbSB7XG4gIC8qIHRleHQtYWxpZ246IGNlbnRlcjsgKi9cbiAgZm9udC1zaXplOiAxLjVlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAxZW07XG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgQm9sZCc7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdDpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ucmFkaW8tY29udGFpbmVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAyZW07XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZm9udC1zaXplOiAyM3B4O1xuICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lO1xuICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFNlbWlCb2xkJztcbiAgY29sb3I6ICMwRjNDNzM7XG4gIHBhZGRpbmctdG9wOiAwZW07XG59XG5cbi8qIEhpZGUgdGhlIGJyb3dzZXIncyBkZWZhdWx0IHJhZGlvIGJ1dHRvbiAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgb3BhY2l0eTogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4vKiBDcmVhdGUgYSBjdXN0b20gcmFkaW8gYnV0dG9uICovXG4uY2hlY2ttYXJrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIGhlaWdodDogMjVweDtcbiAgd2lkdGg6IDI1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cblxuLyogT24gbW91c2Utb3ZlciwgYWRkIGEgZ3JleSBiYWNrZ3JvdW5kIGNvbG9yICovXG4ucmFkaW8tY29udGFpbmVyOmhvdmVyIGlucHV0IH4gLmNoZWNrbWFyayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNjY2M7XG59XG5cbi8qIFdoZW4gdGhlIHJhZGlvIGJ1dHRvbiBpcyBjaGVja2VkLCBhZGQgYSBibHVlIGJhY2tncm91bmQgKi9cbi5yYWRpby1jb250YWluZXIgaW5wdXQ6Y2hlY2tlZCB+IC5jaGVja21hcmsge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbn1cblxuLyogQ3JlYXRlIHRoZSBpbmRpY2F0b3IgKHRoZSBkb3QvY2lyY2xlIC0gaGlkZGVuIHdoZW4gbm90IGNoZWNrZWQpICovXG4uY2hlY2ttYXJrOmFmdGVyIHtcbiAgY29udGVudDogXCJcIjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4vKiBTaG93IHRoZSBpbmRpY2F0b3IgKGRvdC9jaXJjbGUpIHdoZW4gY2hlY2tlZCAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dDpjaGVja2VkIH4gLmNoZWNrbWFyazphZnRlciB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKiBTdHlsZSB0aGUgaW5kaWNhdG9yIChkb3QvY2lyY2xlKSAqL1xuLnJhZGlvLWNvbnRhaW5lciAuY2hlY2ttYXJrOmFmdGVyIHtcbiBcdHRvcDogOXB4O1xuXHRsZWZ0OiA5cHg7XG5cdHdpZHRoOiA4cHg7XG5cdGhlaWdodDogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5sYWJlbFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcbn1cbi5zbGlkZXItaW1hZ2VcbntcbiAgd2lkdGg6IDEwMCU7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzAxcHgpXG57XG5cbi5yYWRpby1jbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgYm90dG9tOiA1MHZoO1xuICB0b3A6IDUwdmg7XG4gIGxlZnQ6IDJ2dztcbn1cbi5zZWNvbmQtY2FyZC5tYXQtY2FyZCB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG4uc3RlcHMtY29udGFpbmVyIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmcjtcbiAgZ3JpZC1nYXA6IDVlbTtcbn1cblxuaW1nLnN0ZXAtbWFnZSB7XG4gIHdpZHRoOiAzMCU7XG4gIG1hcmdpbjogMTRweDtcbn1cbi5jb29raWVzLXBvbGljeSB7XG5cbiAgbWFyZ2luOiAyZW0gNGVtO1xufVxuLmNvb2tpZXMtcG9saWN5LXRleHQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmNvb2tpZXMtYnV0dG9uIHtcbiAgLyogZGlzcGxheTogY29udGVudHM7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG4ucG9saWN5LWNvbnRlbnQge1xuICBtYXJnaW46IDEzcHg7XG4gIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gIC8qIG1hcmdpbjogMTNweCAxOHB4OyAqL1xuICB3aWR0aDogNjN2dztcbiAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDVweDtcbiAgICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgICBmb250LWZhbWlseTogXCJTZWdvZSBVSSBSZWd1bGFyXCI7XG5cbn1cbi5wb2xpY3ktaGVhZGluZyB7XG5cbiAgZGlzcGxheTogaW5saW5lO1xuICBtYXJnaW4tbGVmdDogMTNweDtcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGZvbnQtZmFtaWx5OiBcIlJvYm90by1Cb2xkXCI7XG59XG5cbn1cblxuLnRleHQtb3Zlci1pbWFnZSB7XG4gIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAvKiBib3R0b206IDUwdmg7ICovXG4gIHRvcDogLTh2aDtcbiAgLyogYm90dG9tOiA1MHZoOyAqL1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHotaW5kZXg6IDE7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICBjb2xvcjogd2hpdGU7XG59XG4ucmFkaW8tY24ubWF0LWNhcmQge1xuXG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7XG59XG5wLnRleHQtb3Zlci1pbWFnZS1zZWNvbmQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIC8qIHRvcDogMnZoOyAqL1xuICBib3R0b206IC0xNXZoO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMS40ZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuXG59XG4uc2Vjb25kLWNhcmRcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tQkFja2dyb3VuZC1kYXJrLWNvbG9yKTsgXG59XG5wLnNsaWRlci10ZXh0LmhlYWRpbmctbmVzdGltYXRlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tdG9wOiA0cHg7XG59XG5cbiAgLmhlYWRpbmctbmVzdGltYXRlLWZvbnR7XG4gIGZvbnQtc2l6ZTogMjJweDtcbiAgcGFkZGluZzogMmVtO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG5cbn1cbi50b3AtYnV0dG9uLWNvb2tpZXMge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIC8qIGhlaWdodDogN3ZoOyAqL1xuICBjb2xvcjogd2hpdGU7XG4gIGJvcmRlcjogNHB4IHNvbGlkICM4MUMyRkQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBwYWRkaW5nOiAxZW07XG4gIG1hcmdpbjogMWVtO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xufVxuXG4udG9wLWJ1dHRvbi1jb29raWVzOmhvdmVyXG57XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5sb3dlci1idXR0b25cbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgYm9yZGVyOiBub25lO1xuICBjb2xvcjogd2hpdGU7XG59XG4uYWdlbnQtZm9ybSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC8qIHdpZHRoOiAxMDAlOyAqL1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgbWFyZ2luOiAxZW07XG59XG4ubGlzdGluZy1oZWFkaW5nIHtcbiAgbWFyZ2luOiAxZW07XG59XG4udG8tYnV5IHtcbiAgbWFyZ2luOiAwZW0gMC41ZW07XG59XG5zcGFuLmdyZWF0ZXItdGhhbi1hcnJvdy5wYXJhZ3JhcGgtY29sb3IubXItMSB7XG4gIGZvbnQtc2l6ZTogMmVtO1xuICBwYWRkaW5nLXJpZ2h0OiAwLjFlbTtcbiAgcGFkZGluZy1yaWdodDogMC41ZW07XG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgQm9sZCc7XG59XG4uaW1hZ2Utb3ZlciB7XG4gIG1hcmdpbi10b3A6IDJlbTtcbn1cblxuaW1nLmJ1eWVyLWpwZyB7XG4gIGhlaWdodDogMzZ2aDtcbiAgd2lkdGg6IDEwMCU7XG59XG4uY3VzdG9tLWJ1dHRvbnMge1xuICBwYWRkaW5nOiAxZW0gMGVtO1xufVxuLmNhcmQtc3RlcHMge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZy1ib3R0b206IDJlbTtcbn1cblxuLnNsaWRlci10ZXh0IHtcblxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBjb2xvcjp2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgXG5oclxue1xuIGRpc3BsYXk6IG5vbmU7XG59XG4uY3VzdG9tLWJ1dHRvbnMge1xuICBwYWRkaW5nOiAxZW0gMGVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZzogMWVtIDFlbTtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgbWFyZ2luOiAxZW07XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA2Njtcbn1cbi5zbGlkZXItdGV4dCB7XG5cbiAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5vdXRwdXRUZXh0IHtcblxuICBmb250LXNpemU6IDEuMWVtO1xufVxuLmhlYWRpbmctbmVzdGltYXRlLWZvbnQge1xuICBmb250LXNpemU6IDJlbTtcbn1cbmltZy5idXllci1qcGcge1xuXG4gIGRpc3BsYXk6IG5vbmU7XG59XG4udGV4dC1vdmVyLWltYWdlIHtcblxuICBmb250LXNpemU6IDEuN2VtO1xuIFxufVxuLnRvcC1idXR0b24tY29va2llcyB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcblxuICBib3JkZXI6IDJweCBzb2xpZCAjODFDMkZEO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgcGFkZGluZzogMC42ZW07XG4gIG1hcmdpbjogMWVtO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucG9saWN5LWNvbnRlbnQtbGF5b3V0IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGhlaWdodDogMTAwJTtcbn1cbn1cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIC50b3AtYnV0dG9uLWNvb2tpZXNcbiAge1xuICAgIHBhZGRpbmc6IDAuN2VtO1xuICAgIG1hcmdpbjogMS4zZW07XG4gICAgYm9yZGVyOiBub25lO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gICAgY29sb3I6IHdoaXRlICFpbXBvcnRhbnQ7XG5cbiAgfVxuICAucG9saWN5LWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luOiA0cHg7XG4gICAgbWFyZ2luLWxlZnQ6IDBweCAhaW1wb3J0YW50O1xuXG59XG4ucG9saWN5LWNvbnRlbnQge1xubWFyZ2luOiAwcHg7XG5tYXJnaW46IDBweDtcbmNvbG9yOiBibGFjaztcbmZvbnQtZmFtaWx5OiBcIlNlZ29lIFVJIFJlZ3VsYXJcIjtcbn1cbi5wb2xpY3ktY29udGVudC1sYXlvdXQge1xuICBtYXJnaW46IDIwcHg7XG59XG4uY29va2llcy1wb2xpY3l7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZDU7XG4gIHdpZHRoOiAxMDB2dztcbn1cbmltZy5ibG9nLWltYWdlIHtcbiAgd2lkdGg6IDEwMCUgIWltcG9ydGFudDtcbn1cbi5wb2xpY3ktaGVhZGluZyB7XG5cblxuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgZm9udC1mYW1pbHk6IFwiUm9ib3RvLUJvbGRcIjtcbn1cbn1cblxuLmJsb2ctZ3JpZCB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XG4gIG1hcmdpbjogMmVtO1xuICBncmlkLWdhcDogMmVtO1xufVxuaW1nLmJsb2ctaW1hZ2Uge1xuICB3aWR0aDogMzB2dztcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS5ibG9nLXRvcC1oZWFkaW5nIHtcbiAgbWFyZ2luLWxlZnQ6IDEuN2VtO1xuICBmb250LXNpemU6IDEuM2VtO1xufVxuLmdyaWQtdGV4dHtcbiBmb250LWZhbWlseTogXCJSb2JvdG8tTGlnaHRcIjtcbiBtYXJnaW46IDEwcHggNXB4O1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjcwMHB4KVxue1xuICAuYmxvZy1ncmlkIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xuICAgIG1hcmdpbjogMmVtO1xuICAgIGdyaWQtZ2FwOiAzZW07XG59XG4uaGVhZGluZy1uZXN0aW1hdGUuYmxvZy10b3AtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIG1hcmdpbjogMGVtIDFlbTtcbn1cbn1cbi5ibG9nLWxpbmstZGVjb3JhdGlvbntcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjb2xvcjogYmxhY2s7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzAxcHgpXG57XG4gIC5pbWFnZS1vdmVyXG4gIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59Il19 */";
     /***/
   },
 
@@ -6680,30 +6712,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this64 = this;
+          var _this65 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this64.imageUrl = element.data().BannerImageUrl;
-              _this64.secondImageUrl = element.data().SecondBannerImage;
-              _this64.SecondImageText = element.data().SecondBannerText;
-              _this64.Step1Image = element.data().Step1Image;
-              _this64.Step2Image = element.data().Step2Image;
-              _this64.step3Image = element.data().Step3Image;
-              _this64.Step1TExt = element.data().Step1ImageText;
-              _this64.Step2Text = element.data().Step2ImageText;
-              _this64.step3Text = element.data().Step3ImageText;
+              _this65.imageUrl = element.data().BannerImageUrl;
+              _this65.secondImageUrl = element.data().SecondBannerImage;
+              _this65.SecondImageText = element.data().SecondBannerText;
+              _this65.Step1Image = element.data().Step1Image;
+              _this65.Step2Image = element.data().Step2Image;
+              _this65.step3Image = element.data().Step3Image;
+              _this65.Step1TExt = element.data().Step1ImageText;
+              _this65.Step2Text = element.data().Step2ImageText;
+              _this65.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this65 = this;
+          var _this66 = this;
 
           this.HomeService.getBlogs(1).then(function (res) {
             res.forEach(function (element) {
-              _this65.homePageBlogs.push(element.data());
+              _this66.homePageBlogs.push(element.data());
             });
           });
         }
@@ -6721,33 +6753,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this66 = this;
+          var _this67 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this66.isLoading = false;
+            _this67.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this67 = this;
+          var _this68 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this67.isLoading = false;
-            _this67.isLoggedIn = true;
+            _this68.isLoading = false;
+            _this68.isLoggedIn = true;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this68 = this;
+          var _this69 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this68.isLoading = false;
-            _this68.isLoggedIn = true;
+            _this69.isLoading = false;
+            _this69.isLoggedIn = true;
           });
         }
       }, {
@@ -6770,24 +6802,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this69 = this;
+          var _this70 = this;
 
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this69.listingBuyers.push(element.data());
+              _this70.listingBuyers.push(element.data());
             });
 
-            _this69.HomeService.getlistingseller(_this69.uid).then(function (res) {
+            _this70.HomeService.getlistingseller(_this70.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this69.listingSeller.push(elements.data());
+                _this70.listingSeller.push(elements.data());
               });
-              _this69.checkNumberNestimates = _this69.listingBuyers.length + _this69.listingSeller.length;
+              _this70.checkNumberNestimates = _this70.listingBuyers.length + _this70.listingSeller.length;
 
-              if (_this69.checkNumberNestimates > 0) {
-                _this69.appMatches = true;
-                _this69.isLoggedIn = true;
+              if (_this70.checkNumberNestimates > 0) {
+                _this70.appMatches = true;
+                _this70.isLoggedIn = true;
               } else {
-                _this69.isLoggedIn = false;
+                _this70.isLoggedIn = false;
               }
             });
           });
@@ -6915,34 +6947,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this70 = this;
+          var _this71 = this;
 
           this.route.params.subscribe(function (params) {
-            _this70.useCase = params["use"];
+            _this71.useCase = params["use"];
 
-            if (_this70.useCase == "buy") {
-              _this70.activeTab = 0;
-              _this70.buy = true;
-              _this70.sell = false;
-            } else if (_this70.useCase == "sell") {
-              _this70.activeTab = 1;
-              _this70.buy = false;
-              _this70.sell = true;
+            if (_this71.useCase == "buy") {
+              _this71.activeTab = 0;
+              _this71.buy = true;
+              _this71.sell = false;
+            } else if (_this71.useCase == "sell") {
+              _this71.activeTab = 1;
+              _this71.buy = false;
+              _this71.sell = true;
             }
 
-            console.log(_this70.useCase);
+            console.log(_this71.useCase);
           });
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this70.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this70.userData));
+              _this71.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this71.userData));
 
-              _this70.LoggedIn();
+              _this71.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this70.LoggedOut();
+              _this71.LoggedOut();
             }
           });
         }
@@ -7215,36 +7247,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerMatcheListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this71 = this;
+          var _this72 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getHomeMatchesPageImage().subscribe(function (data) {
-            _this71.homePageImage = data;
-            _this71.imageUrl = _this71.homePageImage[0].BuyerSellerTopImage.url;
+            _this72.homePageImage = data;
+            _this72.imageUrl = _this72.homePageImage[0].BuyerSellerTopImage.url;
           });
           this.HttpService.getTextalreadyexpressed().subscribe(function (expressed) {
-            _this71.alreadyExpressed = expressed[0].ExpressedMatches;
+            _this72.alreadyExpressed = expressed[0].ExpressedMatches;
           });
           this.buyerEntry = JSON.parse(localStorage.getItem('buyerUserDetails'));
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this71.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "").trim();
-            _this71.Property_Type = params.get("PropertyType").trim();
-            _this71.Looking_Town = params.get("LookingTown").trim();
-            _this71.Min_Amount = params.get("MinAmount").replace(/,/g, "").trim();
-            _this71.Max_Amount = params.get("MaxAmount").replace(/,/g, "").trim();
-            _this71.New_latitude = params.get("latitude").trim();
-            _this71.New_longitude = params.get("longitude").trim();
-            _this71.newUser = params.get("newUser").trim();
-            _this71.Property_For = params.get("PropertyFor").trim();
-            _this71.LookingStreetname = params.get("LookingStreetname").trim();
-            _this71.Conditions = params.get("Conditions").trim();
-            _this71.FinancialPosition = params.get("FinancialPosition").trim();
-            _this71.Validity = params.get("Validity").trim();
-            _this71.Position = params.get("Position").trim();
-            _this71.UserId = params.get("UserId").trim();
-            _this71.ChainStatus = params.get("ChainStatus").trim();
-            _this71.New_id = params.get("id");
+            _this72.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "").trim();
+            _this72.Property_Type = params.get("PropertyType").trim();
+            _this72.Looking_Town = params.get("LookingTown").trim();
+            _this72.Min_Amount = params.get("MinAmount").replace(/,/g, "").trim();
+            _this72.Max_Amount = params.get("MaxAmount").replace(/,/g, "").trim();
+            _this72.New_latitude = params.get("latitude").trim();
+            _this72.New_longitude = params.get("longitude").trim();
+            _this72.newUser = params.get("newUser").trim();
+            _this72.Property_For = params.get("PropertyFor").trim();
+            _this72.LookingStreetname = params.get("LookingStreetname").trim();
+            _this72.Conditions = params.get("Conditions").trim();
+            _this72.FinancialPosition = params.get("FinancialPosition").trim();
+            _this72.Validity = params.get("Validity").trim();
+            _this72.Position = params.get("Position").trim();
+            _this72.UserId = params.get("UserId").trim();
+            _this72.ChainStatus = params.get("ChainStatus").trim();
+            _this72.New_id = params.get("id");
           });
 
           if (this.newUser == "false") {
@@ -7293,76 +7325,76 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this71.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this71.maxAmount);
-              _this71.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this71.less);
-              _this71.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this71.more); //Remove Postcode Spaces
+              _this72.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this72.maxAmount);
+              _this72.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this72.less);
+              _this72.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this72.more); //Remove Postcode Spaces
 
-              _this71.removespace = item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5);
-              _this71.listing = _this71.Look_postcodes;
-              _this71.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this72.removespace = item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5);
+              _this72.listing = _this72.Look_postcodes;
+              _this72.amount = item.data().MaxAmount.replace(/,/g, "");
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().PropertyType == _this71.Look_propertytype && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.latitude, item.longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().PropertyType == _this72.Look_propertytype && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.latitude, item.longitude);
 
-                _this71.matchedProperties.push({
+                _this72.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this71.distanceInKm * 1 / 1.609344
+                  distance: _this72.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().PropertyType == _this71.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this71.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().PropertyType == _this72.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this72.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this71.unmatchedProperties.push({
+                _this72.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this71.distanceInKm * 1 / 1.609344
+                  distance: _this72.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().PropertyType == _this71.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this71.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this71.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().PropertyType == _this72.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this72.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this72.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this71.unmatchedPriceLogic.push({
+                _this72.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this71.distanceInKm * 1 / 1.609344
+                  distance: _this72.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().PropertyType != _this71.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this71.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this71.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().PropertyType != _this72.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this72.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this72.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this71.unmatchedallProperty.push({
+                _this72.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this71.distanceInKm * 1 / 1.609344
+                  distance: _this72.distanceInKm * 1 / 1.609344
                 });
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this71.Look_postcodes && item.data().PropertyFor == _this71.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this71.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this71.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this71.distanceInKm = _this71.getDistanceFromLatLonInKm(_this71.Look_latitude, _this71.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this72.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this72.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this71.lookTown.push({
+                _this72.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this71.distanceInKm * 1 / 1.609344
+                  distance: _this72.distanceInKm * 1 / 1.609344
                 });
               }
 
-              _this71.sbuyerLookTown = _this71.lookTown;
-              _this71.buyerLookTown = _this71.sbuyerLookTown.detail;
+              _this72.sbuyerLookTown = _this72.lookTown;
+              _this72.buyerLookTown = _this72.sbuyerLookTown.detail;
             });
 
-            _this71.unmatchedProperties.sort(_this71.compare);
+            _this72.unmatchedProperties.sort(_this72.compare);
           });
           this.getPropertyIds();
           this.getExpressedListingIds();
@@ -7518,12 +7550,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this72 = this;
+          var _this73 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this72.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this72.distinctExpressedUid.push(item.data().propertyId);
+              if (_this73.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this73.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -7784,56 +7816,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerSelectedPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this73 = this;
+          var _this74 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this73.Lookingpostcode = params.get("Lookingpostcode");
-            _this73.Lookingstate = params.get("Lookingstate");
-            _this73.LookingTown = params.get("LookingTown");
-            _this73.norooms = params.get("norooms");
-            _this73.PropertyCondition = params.get("PropertyCondition");
-            _this73.MaxAmount = params.get("MaxAmount");
-            _this73.LookingAddress = params.get("LookingAddress");
-            _this73.ownership = params.get("ownership");
-            _this73.PropertyType = params.get("PropertyType").replace(/\s/g, "");
-            _this73.features = params.get("features");
-            _this73.UserId = params.get("UserId").replace(/\s/g, "");
-            _this73.MinAmount = params.get("MinAmount");
-            _this73.Maxbathrooms = params.get("Maxbathrooms");
-            _this73.Maxrooms = params.get("Maxrooms");
-            _this73.Maxreception = params.get("Maxreception");
-            _this73.propertyId = params.get("propertyId").trim();
-            _this73.expressed = params.get("expressed");
-            _this73.propertyFor = params.get("PropertyFor"); //Buyer Params
+            _this74.Lookingpostcode = params.get("Lookingpostcode");
+            _this74.Lookingstate = params.get("Lookingstate");
+            _this74.LookingTown = params.get("LookingTown");
+            _this74.norooms = params.get("norooms");
+            _this74.PropertyCondition = params.get("PropertyCondition");
+            _this74.MaxAmount = params.get("MaxAmount");
+            _this74.LookingAddress = params.get("LookingAddress");
+            _this74.ownership = params.get("ownership");
+            _this74.PropertyType = params.get("PropertyType").replace(/\s/g, "");
+            _this74.features = params.get("features");
+            _this74.UserId = params.get("UserId").replace(/\s/g, "");
+            _this74.MinAmount = params.get("MinAmount");
+            _this74.Maxbathrooms = params.get("Maxbathrooms");
+            _this74.Maxrooms = params.get("Maxrooms");
+            _this74.Maxreception = params.get("Maxreception");
+            _this74.propertyId = params.get("propertyId").trim();
+            _this74.expressed = params.get("expressed");
+            _this74.propertyFor = params.get("PropertyFor"); //Buyer Params
 
-            _this73.Look_postcodes = params.get("Look_postcodes");
-            _this73.Look_streetName = params.get("Look_Streetname");
-            _this73.Look_condition = params.get("Look_condition");
-            _this73.Look_ChaonStatus = params.get("Look_chainstatus");
-            _this73.Look_Position = params.get("Look_FinancialPosition");
-            _this73.Look_Minamount = params.get("Look_minamount");
-            _this73.Look_Maxamount = params.get("Look_maxamount");
-            _this73.Look_Validity = params.get("Look_Validity");
-            _this73.Look_PropertyType = params.get("Look_propertytype");
-            _this73.Look_Position = params.get("Look_Position");
-            _this73.Look_UserId = params.get("Look_UserId");
-            _this73.Look_PropertyFor = params.get("Look_PropertyFor");
-            _this73.Look_id = params.get("New_id");
+            _this74.Look_postcodes = params.get("Look_postcodes");
+            _this74.Look_streetName = params.get("Look_Streetname");
+            _this74.Look_condition = params.get("Look_condition");
+            _this74.Look_ChaonStatus = params.get("Look_chainstatus");
+            _this74.Look_Position = params.get("Look_FinancialPosition");
+            _this74.Look_Minamount = params.get("Look_minamount");
+            _this74.Look_Maxamount = params.get("Look_maxamount");
+            _this74.Look_Validity = params.get("Look_Validity");
+            _this74.Look_PropertyType = params.get("Look_propertytype");
+            _this74.Look_Position = params.get("Look_Position");
+            _this74.Look_UserId = params.get("Look_UserId");
+            _this74.Look_PropertyFor = params.get("Look_PropertyFor");
+            _this74.Look_id = params.get("New_id");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this73.notificationOverlay = data;
-            _this73.notificationContent = _this73.notificationOverlay[0].BuyerMatchesExpressInterestNotifcation;
+            _this74.notificationOverlay = data;
+            _this74.notificationContent = _this74.notificationOverlay[0].BuyerMatchesExpressInterestNotifcation;
           });
         } //Create Database BuyerMatches
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this74 = this;
+          var _this75 = this;
 
           this.matchesBuyer = {
             SellerDetail: this.sellerDetails,
@@ -7847,8 +7879,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isBuyerSelected = true;
           this["return"] = this.Selected_propertydetail_Service.matchesBuyerCreate(this.uid, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this74.isBuyerSelected = false;
-              _this74.overlay = false;
+              _this75.isBuyerSelected = false;
+              _this75.overlay = false;
             }
           });
           this.matchesSeller = {
@@ -7864,11 +7896,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isBuyerSelected = true;
           this["return"] = this.Selected_propertydetail_Service.matchesSellerCreate(this.UserId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this74.isBuyerSelected = false;
-              _this74.datastored = true;
-              _this74.express = false;
+              _this75.isBuyerSelected = false;
+              _this75.datastored = true;
+              _this75.express = false;
 
-              _this74.createSellerNotification();
+              _this75.createSellerNotification();
             }
           });
           this.isBuyerSelected = true;
@@ -7877,15 +7909,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this75 = this;
+          var _this76 = this;
 
           this["return"] = this.Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this75.isBuyerSelected = false;
-              _this75.datastored = true;
-              _this75.express = false;
+              _this76.isBuyerSelected = false;
+              _this76.datastored = true;
+              _this76.express = false;
 
-              _this75.backClicked();
+              _this76.backClicked();
             }
           });
         }
@@ -7920,30 +7952,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this76 = this;
+          var _this77 = this;
 
           this.Selected_propertydetail_Service.getSeller(this.UserId, this.propertyId).then(function (res) {
-            _this76.sellerDetails = res.data();
-            _this76.userName = res.data().username;
-            _this76.usertitle = res.data().usertitle;
-            _this76.PropertyFor = res.data().PropertyFor;
-            _this76.price = res.data().MaxAmount;
-            _this76.postcode = res.data().Lookingpostcode;
-            _this76.Streetname = res.data().LookingStreetname;
-            _this76.PropertyTypes = res.data().PropertyType;
-            _this76.Maxroom = res.data().Maxrooms;
-            _this76.ownerships = res.data().ownership;
-            _this76.Bathrooms = res.data().Maxbathrooms;
-            _this76.Reception = res.data().Maxreception;
+            _this77.sellerDetails = res.data();
+            _this77.userName = res.data().username;
+            _this77.usertitle = res.data().usertitle;
+            _this77.PropertyFor = res.data().PropertyFor;
+            _this77.price = res.data().MaxAmount;
+            _this77.postcode = res.data().Lookingpostcode;
+            _this77.Streetname = res.data().LookingStreetname;
+            _this77.PropertyTypes = res.data().PropertyType;
+            _this77.Maxroom = res.data().Maxrooms;
+            _this77.ownerships = res.data().ownership;
+            _this77.Bathrooms = res.data().Maxbathrooms;
+            _this77.Reception = res.data().Maxreception;
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this77 = this;
+          var _this78 = this;
 
           this.Selected_propertydetail_Service.getBuyerRequirement(this.uid, this.Look_id).then(function (res) {
-            _this77.buyerDetails = res.data();
+            _this78.buyerDetails = res.data();
           });
         }
       }]);
@@ -8454,7 +8486,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this78 = this;
+          var _this79 = this;
 
           this.getUser = JSON.parse(localStorage.getItem("user"));
 
@@ -8468,16 +8500,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this78.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this78.userData));
+              _this79.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this79.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this78.LoggedIn();
+              _this79.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this78.LoggedOut();
+              _this79.LoggedOut();
             }
           }); // this.postcodeService.getBlueNotificationContent().subscribe((data) => {
           //   this.notificationOverlay = data
@@ -8496,11 +8528,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this78.lookup(_this78.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this78.data = data;
+              _this79.lookup(_this79.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this79.data = data;
               });
 
-              return _this78.lookup(_this78.listingBuyer.Lookingpostcode);
+              return _this79.lookup(_this79.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -8510,39 +8542,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this78.lookup(_this78.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this78.data = data;
+              _this79.lookup(_this79.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this79.data = data;
               });
 
-              return _this78.lookup(_this78.listingBuyer.Currentpostcode);
+              return _this79.lookup(_this79.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
           }));
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this78.Cpostcode = params.get("Currentpostcode");
-            _this78.Ctown = params.get("CurrentTown");
-            _this78.Cstate = params.get("Currentstate");
-            _this78.Ccountry = params.get("Currentcountry");
-            _this78.Lpostcode = params.get("Lookingpostcode");
-            _this78.Lstreetname = params.get("LookingStreetname");
-            _this78.Ltown = params.get("LookingTown");
-            _this78.Lstate = params.get("Lookingstate");
-            _this78.Lcountry = params.get("Country");
-            _this78.Financial = params.get("FinancialPosition"); //this.Type = params.get("PropertyType");
+            _this79.Cpostcode = params.get("Currentpostcode");
+            _this79.Ctown = params.get("CurrentTown");
+            _this79.Cstate = params.get("Currentstate");
+            _this79.Ccountry = params.get("Currentcountry");
+            _this79.Lpostcode = params.get("Lookingpostcode");
+            _this79.Lstreetname = params.get("LookingStreetname");
+            _this79.Ltown = params.get("LookingTown");
+            _this79.Lstate = params.get("Lookingstate");
+            _this79.Lcountry = params.get("Country");
+            _this79.Financial = params.get("FinancialPosition"); //this.Type = params.get("PropertyType");
 
-            _this78.Minroom = params.get("Roommin");
-            _this78.Maxroom = params.get("Roomsmax");
-            _this78.AmountMin = params.get("MinAmount");
-            _this78.amountmax = params.get("MaxAmount");
-            _this78.offer = params.get("Validity");
-            _this78.bathroommin = params.get("Minbathroom");
-            _this78.bathroommax = params.get("Maxbathroom");
-            _this78.receptionmin = params.get("Minreception");
-            _this78.receptionmax = params.get("Maxreception");
-            _this78.condition = params.get("Conditions");
-            _this78.ownership = params.get("Ownership");
-            _this78.Caddress = params.get("CurrentAddress");
+            _this79.Minroom = params.get("Roommin");
+            _this79.Maxroom = params.get("Roomsmax");
+            _this79.AmountMin = params.get("MinAmount");
+            _this79.amountmax = params.get("MaxAmount");
+            _this79.offer = params.get("Validity");
+            _this79.bathroommin = params.get("Minbathroom");
+            _this79.bathroommax = params.get("Maxbathroom");
+            _this79.receptionmin = params.get("Minreception");
+            _this79.receptionmax = params.get("Maxreception");
+            _this79.condition = params.get("Conditions");
+            _this79.ownership = params.get("Ownership");
+            _this79.Caddress = params.get("CurrentAddress");
           });
 
           if (this.Cpostcode != ":Currentpostcode") {
@@ -8615,7 +8647,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this79 = this;
+          var _this80 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -8623,25 +8655,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this79.uid) {
-                _this79.user.Name = element.data().Name;
-                _this79.user.email = element.data().email;
+              if (element.data().uid == _this80.uid) {
+                _this80.user.Name = element.data().Name;
+                _this80.user.email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this79.user.DOB = element.data().DOB.toDate();
+                  _this80.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this79.user.Phone = element.data().Phone;
-                _this79.user.title = element.data().title;
+                _this80.user.Phone = element.data().Phone;
+                _this80.user.title = element.data().title;
               }
             });
           });
           this.postcodeService.getSignupUpTerms().subscribe(function (data) {
-            _this79.topLine = data[0].TopLine;
-            _this79.secondLine = data[0].SecondSignup;
+            _this80.topLine = data[0].TopLine;
+            _this80.secondLine = data[0].SecondSignup;
           });
           this.postcodeService.getValidityError().subscribe(function (validity) {
-            _this79.validity = validity[0].SigininValidityError;
+            _this80.validity = validity[0].SigininValidityError;
           });
         }
       }, {
@@ -9370,30 +9402,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this80 = this;
+          var _this81 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.postcodeService.getAllUsers(email).subscribe(function (data) {
-              _this80.emailData = data;
+              _this81.emailData = data;
 
-              if (_this80.emailData.length == 1) {
-                _this80.emailField = true;
-                _this80.notValidEmail = false;
+              if (_this81.emailData.length == 1) {
+                _this81.emailField = true;
+                _this81.notValidEmail = false;
 
-                if (_this80.emailData[0].AgentType != null) {
-                  _this80.emailField = false;
-                  _this80.notValidEmail = true;
+                if (_this81.emailData[0].AgentType != null) {
+                  _this81.emailField = false;
+                  _this81.notValidEmail = true;
 
-                  var dialogRef = _this80.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                  var dialogRef = _this81.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as User"
                     }
                   });
                 }
               } else {
-                _this80.notValidEmail = true;
+                _this81.notValidEmail = true;
               }
             });
           } else {
@@ -9415,28 +9447,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "submitBuyer",
         value: function submitBuyer() {
-          var _this81 = this;
+          var _this82 = this;
 
           this.isLoading = true; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this81.postcodeCoordinates = data;
-            _this81.listingBuyer.longitude = _this81.postcodeCoordinates.result.longitude, _this81.listingBuyer.latitude = _this81.postcodeCoordinates.result.latitude, _this81.listingBuyer.UserId = _this81.userData.uid;
-            _this81.isLoading = true;
-            _this81.listingBuyer.username = _this81.user.Name;
-            _this81.listingBuyer.usertitle = _this81.user.title;
-            _this81.listingBuyer.longitude;
-            _this81.listingBuyer.latitude;
-            _this81["return"] = _this81.fillFormsService.createCustomer(_this81.userData.uid, _this81.listingBuyer).then(function (element) {
+            _this82.postcodeCoordinates = data;
+            _this82.listingBuyer.longitude = _this82.postcodeCoordinates.result.longitude, _this82.listingBuyer.latitude = _this82.postcodeCoordinates.result.latitude, _this82.listingBuyer.UserId = _this82.userData.uid;
+            _this82.isLoading = true;
+            _this82.listingBuyer.username = _this82.user.Name;
+            _this82.listingBuyer.usertitle = _this82.user.title;
+            _this82.listingBuyer.longitude;
+            _this82.listingBuyer.latitude;
+            _this82["return"] = _this82.fillFormsService.createCustomer(_this82.userData.uid, _this82.listingBuyer).then(function (element) {
               if (element == true) {
-                localStorage.setItem("buyerUserDetails", JSON.stringify(_this81.listingBuyer));
-                _this81.isLoading = false;
-                _this81.register = false;
+                localStorage.setItem("buyerUserDetails", JSON.stringify(_this82.listingBuyer));
+                _this82.isLoading = false;
+                _this82.register = false;
 
-                var dialogRef = _this81.dialog.open(_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
+                var dialogRef = _this82.dialog.open(_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
                   data: {
                     message: "HelloWorld",
-                    id: _this81.uid,
+                    id: _this82.uid,
                     buttonText: {
                       cancel: "Done"
                     }
@@ -9449,13 +9481,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this82 = this;
+          var _this83 = this;
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.trim()).subscribe(function (data) {
-            _this82.register = true;
+            _this83.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this82.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var dialogRef = _this83.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid postcode"
                 }
@@ -9472,26 +9504,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this83 = this;
+          var _this84 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this83.KnowUser.push(element.data());
+              _this84.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this83.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                var dialogRef = _this84.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this83.isLoading = false;
+                _this84.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this83.authService.SignIn(email, pass).then(function (data) {
-                  _this83.isLoading = false;
+                _this84.authService.SignIn(email, pass).then(function (data) {
+                  _this84.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -9501,11 +9533,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this84 = this;
+          var _this85 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this84.isLoading = false;
+            _this85.isLoading = false;
           });
         } //SignIn Google
 
@@ -10050,40 +10082,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this85 = this;
+          var _this86 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sellerDetails = JSON.parse(localStorage.getItem('sellerUserDetails'));
           this.HttpService.getHomeMatchesPageImage().subscribe(function (data) {
-            _this85.homePageImage = data;
-            _this85.imageUrl = _this85.homePageImage[0].BuyerSellerTopImage.url;
+            _this86.homePageImage = data;
+            _this86.imageUrl = _this86.homePageImage[0].BuyerSellerTopImage.url;
           });
           this.HttpService.getTextalreadyexpressed().subscribe(function (expressed) {
-            _this85.alreadyExpressed = expressed[0].ExpressedMatches;
+            _this86.alreadyExpressed = expressed[0].ExpressedMatches;
           });
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this85.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
-            _this85.Property_Type = params.get("PropertyType");
-            _this85.Looking_Town = params.get("LookingTown");
-            _this85.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
-            _this85.New_latitude = params.get("latitude");
-            _this85.New_longitude = params.get("longitude");
-            _this85.newUser = params.get("newUser");
-            _this85.Property_For = params.get("PropertyFor"); //Seller Params
+            _this86.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
+            _this86.Property_Type = params.get("PropertyType");
+            _this86.Looking_Town = params.get("LookingTown");
+            _this86.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
+            _this86.New_latitude = params.get("latitude");
+            _this86.New_longitude = params.get("longitude");
+            _this86.newUser = params.get("newUser");
+            _this86.Property_For = params.get("PropertyFor"); //Seller Params
 
-            _this85.New_state = params.get("Lookingstate");
-            _this85.New_rooms = params.get("Maxrooms");
-            _this85.New_Propertycondition = params.get("PropertyCondition");
-            _this85.New_Address = params.get("LookingAddress");
-            _this85.New_ownership = params.get("ownership");
-            _this85.New_features = params.get("features");
-            _this85.New_userId = params.get("UserId");
-            _this85.New_Maxbathrooms = params.get("Maxbathrooms");
-            _this85.New_Maxreception = params.get("Maxreception");
-            _this85.New_ownership = params.get("ownership");
-            _this85.New_Maxrooms = params.get("Maxrooms");
-            _this85.Look_id = params.get("id");
+            _this86.New_state = params.get("Lookingstate");
+            _this86.New_rooms = params.get("Maxrooms");
+            _this86.New_Propertycondition = params.get("PropertyCondition");
+            _this86.New_Address = params.get("LookingAddress");
+            _this86.New_ownership = params.get("ownership");
+            _this86.New_features = params.get("features");
+            _this86.New_userId = params.get("UserId");
+            _this86.New_Maxbathrooms = params.get("Maxbathrooms");
+            _this86.New_Maxreception = params.get("Maxreception");
+            _this86.New_ownership = params.get("ownership");
+            _this86.New_Maxrooms = params.get("Maxrooms");
+            _this86.Look_id = params.get("id");
           });
 
           if (this.newUser == "false") {
@@ -10133,73 +10165,73 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
               //Min-MAx Amount Removed Comas and Formula
-              _this85.maxAmount = _this85.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this85.maxAmount);
-              _this85.Look_minamount = element.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this85.Look_minamount);
-              _this85.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this85.Look_maxamount);
-              _this85.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this85.less);
-              _this85.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this85.more); //Remove Postcode Spaces
+              _this86.maxAmount = _this86.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this86.maxAmount);
+              _this86.Look_minamount = element.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this86.Look_minamount);
+              _this86.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this86.Look_maxamount);
+              _this86.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this86.less);
+              _this86.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this86.more); //Remove Postcode Spaces
 
-              _this85.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
-              _this85.listing = _this85.Look_postcode; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this86.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
+              _this86.listing = _this86.Look_postcode; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this85.Look_postcode && element.data().PropertyFor == _this85.Look_PropertyFor && element.data().PropertyType == _this85.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this85.sellermatchedProperties.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this86.Look_postcode && element.data().PropertyFor == _this86.Look_PropertyFor && element.data().PropertyType == _this86.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this86.sellermatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this85.Look_postcode && _this85.Look_PropertyFor == element.PropertyFor && element.data().PropertyType == _this85.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this85.removespace.substring(0, 5) == _this85.listing.substring(0, 5) && element.latitude && element.longitude) {
-                _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.Look_latitude, _this85.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this86.Look_postcode && _this86.Look_PropertyFor == element.PropertyFor && element.data().PropertyType == _this86.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this86.removespace.substring(0, 5) == _this86.listing.substring(0, 5) && element.latitude && element.longitude) {
+                _this86.distanceInKm = _this86.getDistanceFromLatLonInKm(_this86.Look_latitude, _this86.Look_longitude, element.latitude, element.longitude);
 
-                _this85.sellerunmatchedProperties.push({
+                _this86.sellerunmatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this85.distanceInKm * 0.6214
+                  distance: _this86.distanceInKm * 0.6214
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this85.Look_postcode && element.data().PropertyType == _this85.Look_PropertyType && element.data().PropertyFor == _this85.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this85.removespace.substring(0, 5) != _this85.listing.substring(0, 5) && _this85.removespace.substring(0, 3) == _this85.listing.substring(0, 3)) {
-                _this85.sellerunmatchedPropertiesFirst.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this86.Look_postcode && element.data().PropertyType == _this86.Look_PropertyType && element.data().PropertyFor == _this86.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this86.removespace.substring(0, 5) != _this86.listing.substring(0, 5) && _this86.removespace.substring(0, 3) == _this86.listing.substring(0, 3)) {
+                _this86.sellerunmatchedPropertiesFirst.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this85.Look_postcode && element.data().PropertyType != _this85.Look_PropertyType && element.data().PropertyFor == _this85.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this85.removespace.substring(0, 5) != _this85.listing.substring(0, 5) && _this85.removespace.substring(0, 3) == _this85.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.Look_latitude, _this85.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this86.Look_postcode && element.data().PropertyType != _this86.Look_PropertyType && element.data().PropertyFor == _this86.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this86.removespace.substring(0, 5) != _this86.listing.substring(0, 5) && _this86.removespace.substring(0, 3) == _this86.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this86.distanceInKm = _this86.getDistanceFromLatLonInKm(_this86.Look_latitude, _this86.Look_longitude, element.latitude, element.longitude);
 
-                _this85.sellerunmatchedPriceLogic.push({
+                _this86.sellerunmatchedPriceLogic.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this85.distanceInKm * 0.6214
+                  distance: _this86.distanceInKm * 0.6214
                 });
               } //All other properties - Nationwide
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this85.Look_postcode && element.data().PropertyFor == _this85.Look_PropertyFor && _this85.removespace.substring(0, 5) != _this85.listing.substring(0, 5) && _this85.removespace.substring(0, 3) != _this85.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this85.distanceInKm = _this85.getDistanceFromLatLonInKm(_this85.Look_latitude, _this85.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this86.Look_postcode && element.data().PropertyFor == _this86.Look_PropertyFor && _this86.removespace.substring(0, 5) != _this86.listing.substring(0, 5) && _this86.removespace.substring(0, 3) != _this86.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this86.distanceInKm = _this86.getDistanceFromLatLonInKm(_this86.Look_latitude, _this86.Look_longitude, element.latitude, element.longitude);
 
-                _this85.sellerlookTown.push({
+                _this86.sellerlookTown.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this85.distanceInKm * 0.6214
+                  distance: _this86.distanceInKm * 0.6214
                 });
               }
             });
 
-            _this85.sellerunmatchedProperties.sort(_this85.compare);
+            _this86.sellerunmatchedProperties.sort(_this86.compare);
 
-            _this85.noOfMatches = _this85.sellermatchedProperties.length;
-            _this85.noOfUnmatched = _this85.sellerunmatchedProperties.length;
+            _this86.noOfMatches = _this86.sellermatchedProperties.length;
+            _this86.noOfUnmatched = _this86.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -10378,12 +10410,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this86 = this;
+          var _this87 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this86.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this86.distinctExpressedUid.push(item.data().propertyId);
+              if (_this87.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this87.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -10644,79 +10676,79 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this87 = this;
+          var _this88 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this87.PriceRange = params.get("MaxAmount");
-            _this87.MinAmount = params.get("MinAmount");
-            _this87.Lookingpostcode = params.get("Lookingpostcode");
-            _this87.LookingStreetname = params.get("LookingStreetname");
-            _this87.Position = params.get("Position");
-            _this87.PropertyType = params.get("PropertyType");
-            _this87.Roomsmax = params.get("Roomsmax");
-            _this87.ownership = params.get("Ownership");
-            _this87.Conditions = params.get("Conditions");
-            _this87.Maxbathroom = params.get("Maxbathroom");
-            _this87.Maxreception = params.get("Maxreception");
-            _this87.features = params.get("features");
-            _this87.UserId = params.get("UserId").replace(/\s/g, "");
-            _this87.FinancialPosition = params.get("FinancialPosition");
-            _this87.ChainStatus = params.get("ChainStatus"); // this.FinancialPosition = params.get("FinancialPosition");
+            _this88.PriceRange = params.get("MaxAmount");
+            _this88.MinAmount = params.get("MinAmount");
+            _this88.Lookingpostcode = params.get("Lookingpostcode");
+            _this88.LookingStreetname = params.get("LookingStreetname");
+            _this88.Position = params.get("Position");
+            _this88.PropertyType = params.get("PropertyType");
+            _this88.Roomsmax = params.get("Roomsmax");
+            _this88.ownership = params.get("Ownership");
+            _this88.Conditions = params.get("Conditions");
+            _this88.Maxbathroom = params.get("Maxbathroom");
+            _this88.Maxreception = params.get("Maxreception");
+            _this88.features = params.get("features");
+            _this88.UserId = params.get("UserId").replace(/\s/g, "");
+            _this88.FinancialPosition = params.get("FinancialPosition");
+            _this88.ChainStatus = params.get("ChainStatus"); // this.FinancialPosition = params.get("FinancialPosition");
             // this.PriceRange = params.get("PriceRange");
             // this.Validity = params.get("Validity");
             // this.Type = params.get("Type");
             // this.Position = params.get("Position");
 
-            _this87.propertyId = params.get("propertyId");
-            _this87.expressed = params.get("expressed");
-            _this87.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
+            _this88.propertyId = params.get("propertyId");
+            _this88.expressed = params.get("expressed");
+            _this88.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
 
-            _this87.Look_State = params.get("Look_state");
-            _this87.Look_rooms = params.get("Look_rooms");
-            _this87.Look_Propertycondition = params.get("Look_Propertycondition");
-            _this87.Look_Address = params.get("Look_Address");
-            _this87.Look_ownership = params.get("Look_ownership");
-            _this87.Look_features = params.get("Look_features");
-            _this87.Look_userId = params.get("Look_userId");
-            _this87.Look_postcode = params.get("Look_postcode");
-            _this87.Look_PropertyType = params.get("Look_PropertyType");
-            _this87.Look_maxAmount = params.get("Look_maxAmount");
-            _this87.Look_Town = params.get("Look_Town");
-            _this87.Look_Address = params.get("Look_Address");
-            _this87.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
-            _this87.Look_Maxreceptions = params.get("Look_Maxreceptions");
-            _this87.Look_ownership = params.get("Look_ownership");
-            _this87.Look_Maxrooms = params.get("Look_Maxrooms");
-            _this87.Look_Propertyfor = params.get("Look_PropertyFor");
-            _this87.look_id = params.get("Look_id");
+            _this88.Look_State = params.get("Look_state");
+            _this88.Look_rooms = params.get("Look_rooms");
+            _this88.Look_Propertycondition = params.get("Look_Propertycondition");
+            _this88.Look_Address = params.get("Look_Address");
+            _this88.Look_ownership = params.get("Look_ownership");
+            _this88.Look_features = params.get("Look_features");
+            _this88.Look_userId = params.get("Look_userId");
+            _this88.Look_postcode = params.get("Look_postcode");
+            _this88.Look_PropertyType = params.get("Look_PropertyType");
+            _this88.Look_maxAmount = params.get("Look_maxAmount");
+            _this88.Look_Town = params.get("Look_Town");
+            _this88.Look_Address = params.get("Look_Address");
+            _this88.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
+            _this88.Look_Maxreceptions = params.get("Look_Maxreceptions");
+            _this88.Look_ownership = params.get("Look_ownership");
+            _this88.Look_Maxrooms = params.get("Look_Maxrooms");
+            _this88.Look_Propertyfor = params.get("Look_PropertyFor");
+            _this88.look_id = params.get("Look_id");
           });
           this.getBuyerDetails();
           this.getSellerDetails();
           this.HttpService.getBuyerAllData(this.propertyId).subscribe(function (data) {
             data.forEach(function (element) {
-              _this87.buyingPosition = element.Position;
-              _this87.buyerFinancialPosition = element.FinancialPosition;
-              _this87.BuyerPropertyType = element.PropertyType;
-              _this87.BuyerLookingpostcode = element.Lookingpostcode;
-              _this87.BuyerRoommin = element.Roommin;
-              _this87.BuyerRoomsmax = element.Roomsmax;
-              _this87.username = element.username;
-              _this87.usertitle = element.usertitle;
-              _this87.buyerPropertyFor = element.PropertyFor;
+              _this88.buyingPosition = element.Position;
+              _this88.buyerFinancialPosition = element.FinancialPosition;
+              _this88.BuyerPropertyType = element.PropertyType;
+              _this88.BuyerLookingpostcode = element.Lookingpostcode;
+              _this88.BuyerRoommin = element.Roommin;
+              _this88.BuyerRoomsmax = element.Roomsmax;
+              _this88.username = element.username;
+              _this88.usertitle = element.usertitle;
+              _this88.buyerPropertyFor = element.PropertyFor;
             });
           });
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this87.notificationOverlay = data;
-            _this87.notificationContent = _this87.notificationOverlay[0].SellerMatchesExpressInterestNotifcation;
+            _this88.notificationOverlay = data;
+            _this88.notificationContent = _this88.notificationOverlay[0].SellerMatchesExpressInterestNotifcation;
           });
         } //Create Database match Seller
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this88 = this;
+          var _this89 = this;
 
           this.isSellerSelected = true;
           this.matchesSeller = {
@@ -10731,8 +10763,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this88.isSellerSelected = false;
-              _this88.overlay = false;
+              _this89.isSellerSelected = false;
+              _this89.overlay = false;
             }
           });
           this.matchesBuyer = {
@@ -10747,13 +10779,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this88.isSellerSelected = false;
-              _this88.datastored = true;
-              _this88.express = false;
+              _this89.isSellerSelected = false;
+              _this89.datastored = true;
+              _this89.express = false;
 
-              _this88.createSellerNotification();
+              _this89.createSellerNotification();
 
-              _this88.addToExpressCollection();
+              _this89.addToExpressCollection();
             }
           });
         }
@@ -10775,15 +10807,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this89 = this;
+          var _this90 = this;
 
           this["return"] = this.seller_Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this89.isSellerSelected = false;
-              _this89.datastored = true;
-              _this89.express = false;
+              _this90.isSellerSelected = false;
+              _this90.datastored = true;
+              _this90.express = false;
 
-              _this89.backClicked();
+              _this90.backClicked();
             }
           });
         }
@@ -10803,28 +10835,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this90 = this;
+          var _this91 = this;
 
           this.seller_Selected_propertydetail_Service.getBuyerRequirement(this.UserId, this.propertyId).then(function (res) {
-            _this90.buyerDetails = res.data();
-            _this90.buyingPosition = res.data().Position;
-            _this90.buyerFinancialPosition = res.data().FinancialPosition;
-            _this90.BuyerPropertyType = res.data().PropertyType;
-            _this90.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this90.BuyerRoommin = res.data().Roommin;
-            _this90.BuyerRoomsmax = res.data().Roomsmax;
-            _this90.username = res.data().username;
-            _this90.usertitle = res.data().usertitle;
-            _this90.buyerPropertyFor = res.data().PropertyFor;
+            _this91.buyerDetails = res.data();
+            _this91.buyingPosition = res.data().Position;
+            _this91.buyerFinancialPosition = res.data().FinancialPosition;
+            _this91.BuyerPropertyType = res.data().PropertyType;
+            _this91.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this91.BuyerRoommin = res.data().Roommin;
+            _this91.BuyerRoomsmax = res.data().Roomsmax;
+            _this91.username = res.data().username;
+            _this91.usertitle = res.data().usertitle;
+            _this91.buyerPropertyFor = res.data().PropertyFor;
           });
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this91 = this;
+          var _this92 = this;
 
           this.seller_Selected_propertydetail_Service.getSeller(this.uid, this.look_id).then(function (res) {
-            _this91.sellerDetails = res.data();
+            _this92.sellerDetails = res.data();
           });
         }
       }]);
@@ -11330,20 +11362,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this92 = this;
+          var _this93 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this92.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this92.userData));
+              _this93.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this93.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this92.LoggedIn();
+              _this93.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this92.LoggedOut();
+              _this93.LoggedOut();
             }
           }); // this.sellerService.getBlueNotificationContent().subscribe((data) => {
           //   this.notificationOverlay = data
@@ -11359,11 +11391,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this92.lookup(_this92.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this92.data = data;
+              _this93.lookup(_this93.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this93.data = data;
               });
 
-              return _this92.lookup(_this92.listingSeller.Lookingpostcode);
+              return _this93.lookup(_this93.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -11373,30 +11405,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this92.lookup(_this92.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this92.data = data;
+              _this93.lookup(_this93.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this93.data = data;
               });
 
-              return _this92.lookup(_this92.listingSeller.Currentpostcode);
+              return _this93.lookup(_this93.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this92.Lookpostcode = params.get("Lookingpostcode");
-            _this92.Lookaddress = params.get("LookingAddress");
-            _this92.LookTown = params.get("LookingTown");
-            _this92.Lookstate = params.get("Lookingstate");
-            _this92.Country = params.get("Country");
-            _this92.Property = params.get("PropertyType");
-            _this92.Rooms = params.get("Maxrooms");
-            _this92.Amount = params.get("MaxAmount");
-            _this92.Ownership = params.get("ownership");
-            _this92.Bathrooms = params.get("Maxbathrooms");
-            _this92.Reception = params.get("Maxreception");
-            _this92.Condition = params.get("PropertyCondition");
-            _this92.Features = params.get("features");
-            _this92.country = params.get("Country");
+            _this93.Lookpostcode = params.get("Lookingpostcode");
+            _this93.Lookaddress = params.get("LookingAddress");
+            _this93.LookTown = params.get("LookingTown");
+            _this93.Lookstate = params.get("Lookingstate");
+            _this93.Country = params.get("Country");
+            _this93.Property = params.get("PropertyType");
+            _this93.Rooms = params.get("Maxrooms");
+            _this93.Amount = params.get("MaxAmount");
+            _this93.Ownership = params.get("ownership");
+            _this93.Bathrooms = params.get("Maxbathrooms");
+            _this93.Reception = params.get("Maxreception");
+            _this93.Condition = params.get("PropertyCondition");
+            _this93.Features = params.get("features");
+            _this93.country = params.get("Country");
           });
 
           if (this.Lookpostcode != ":Lookingpostcode") {
@@ -11449,26 +11481,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this93 = this;
+          var _this94 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this93.uid) {
-                _this93.user.Name = element.data().Name;
-                _this93.user.Email = element.data().email;
+              if (element.data().uid == _this94.uid) {
+                _this94.user.Name = element.data().Name;
+                _this94.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this93.user.DOB = element.data().DOB.toDate();
+                  _this94.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this93.user.Phone = element.data().Phone;
-                _this93.user.title = element.data().title;
-                _this93.user.Currentpostcode = element.data().Currentpostcode;
-                _this93.user.CurrentAddress = element.data().Currentaddress;
-                _this93.user.CurrentTown = element.data().CurrentTowncity;
-                _this93.user.Currentstate = element.data().Currentstate;
+                _this94.user.Phone = element.data().Phone;
+                _this94.user.title = element.data().title;
+                _this94.user.Currentpostcode = element.data().Currentpostcode;
+                _this94.user.CurrentAddress = element.data().Currentaddress;
+                _this94.user.CurrentTown = element.data().CurrentTowncity;
+                _this94.user.Currentstate = element.data().Currentstate;
               }
             });
           });
@@ -11848,11 +11880,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this94 = this;
+          var _this95 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this94.isLoading = false;
+            _this95.isLoading = false;
             console.log(data);
           });
         } //Login Form
@@ -11860,11 +11892,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this95 = this;
+          var _this96 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this95.isLoading = false;
+            _this96.isLoading = false;
           });
         } //SignIn Google
         //Signup Google
@@ -11872,7 +11904,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this96 = this;
+          var _this97 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
@@ -11880,7 +11912,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             // this.return = this.fillFormsService.createUserTime(this.user)
             //   .then(data => {
             //   });
-            _this96.isLoading = false;
+            _this97.isLoading = false;
           });
         }
       }, {
@@ -11957,14 +11989,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "loginNew",
         value: function loginNew(username, password) {
-          var _this97 = this;
+          var _this98 = this;
 
           // stop here if form is invalid
           // if (this.loginForm.invalid) {
           //     return;
           // }
           this.StrapiAuthService.login(username, password).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["first"])()).subscribe(function (data) {
-            _this97.overlay = true;
+            _this98.overlay = true;
           }, function (error) {
             if (error && error.error && error.error.message && error.error.message.length > 0) {
               alert(error.error.message[0].messages[0].message);
@@ -11982,31 +12014,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this98 = this;
+          var _this99 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.sellerService.getAllUsers(email).subscribe(function (data) {
               console.log(data);
-              _this98.emailData = data;
+              _this99.emailData = data;
 
-              if (_this98.emailData.length == 1) {
-                _this98.emailField = true;
-                _this98.notValidEmail = false;
+              if (_this99.emailData.length == 1) {
+                _this99.emailField = true;
+                _this99.notValidEmail = false;
 
-                if (_this98.emailData[0].AgentType != null) {
-                  _this98.emailField = false;
-                  _this98.notValidEmail = true;
+                if (_this99.emailData[0].AgentType != null) {
+                  _this99.emailField = false;
+                  _this99.notValidEmail = true;
 
-                  var dialogRef = _this98.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
+                  var dialogRef = _this99.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as User"
                     }
                   });
                 }
               } else {
-                _this98.notValidEmail = true;
+                _this99.notValidEmail = true;
               }
             });
           } else {
@@ -12027,13 +12059,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "UploadImage",
         value: function UploadImage() {
-          var _this99 = this;
+          var _this100 = this;
 
           var formElement = this.forms.nativeElement;
           formElement.addEventListener('submit', function (e) {
             e.preventDefault();
             var request = new XMLHttpRequest();
-            _this99.requests = request;
+            _this100.requests = request;
             request.open('post', 'http://134.209.93.8/upload');
             request.send(new FormData(formElement));
           });
@@ -12043,7 +12075,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "setTimer",
         value: function setTimer() {
-          var _this100 = this;
+          var _this101 = this;
 
           // set showloader to true to show loading div on view
           this.isLoading = true;
@@ -12051,12 +12083,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.subscription = this.timer.subscribe(function () {
             // set showloader to false to hide loading div from view after 5 seconds
-            _this100.isLoading = false;
-            _this100.responseStrapi = JSON.parse(_this100.requests.response);
-            _this100.ImageUrl = _this100.responseStrapi;
-            _this100.imageUploaded = true;
-            _this100.pictureUrls = _this100.requests.response;
-            localStorage.setItem('uploadedImage', JSON.stringify(_this100.requests.response));
+            _this101.isLoading = false;
+            _this101.responseStrapi = JSON.parse(_this101.requests.response);
+            _this101.ImageUrl = _this101.responseStrapi;
+            _this101.imageUploaded = true;
+            _this101.pictureUrls = _this101.requests.response;
+            localStorage.setItem('uploadedImage', JSON.stringify(_this101.requests.response));
           });
         }
       }, {
@@ -12068,42 +12100,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this101 = this;
+          var _this102 = this;
 
           this.sellerPicture = JSON.parse(localStorage.getItem('uploadedImage'));
           this.isLoading = true;
           this.register = false;
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this101.postcodeCoordinates = data;
+            _this102.postcodeCoordinates = data;
 
-            if (_this101.postcodeCoordinates.result.longitude == null && _this101.postcodeCoordinates.result.latitude == null) {
-              var dialogRef = _this101.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+            if (_this102.postcodeCoordinates.result.longitude == null && _this102.postcodeCoordinates.result.latitude == null) {
+              var dialogRef = _this102.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter valid Postcode"
                 }
               });
 
-              _this101.isLoading = false;
-              _this101.register = false;
+              _this102.isLoading = false;
+              _this102.register = false;
             } else {
-              _this101.listingSeller.longitude = _this101.postcodeCoordinates.result.longitude, _this101.listingSeller.latitude = _this101.postcodeCoordinates.result.latitude, _this101.listingSeller.username = _this101.user.Name;
-              _this101.listingSeller.usertitle = _this101.user.title;
-              _this101.listingSeller.UserId = _this101.uid;
-              _this101.listingSeller.Currentpostcode = _this101.user.Currentpostcode;
-              _this101.listingSeller.CurrentAddress = _this101.user.CurrentAddress;
-              _this101.listingSeller.CurrentTown = _this101.user.CurrentTown;
-              _this101.listingSeller.Currentstate = _this101.user.Currentstate;
-              _this101["return"] = _this101.SellerformService.createCustomer(_this101.userData.uid, _this101.listingSeller).then(function (data) {
+              _this102.listingSeller.longitude = _this102.postcodeCoordinates.result.longitude, _this102.listingSeller.latitude = _this102.postcodeCoordinates.result.latitude, _this102.listingSeller.username = _this102.user.Name;
+              _this102.listingSeller.usertitle = _this102.user.title;
+              _this102.listingSeller.UserId = _this102.uid;
+              _this102.listingSeller.Currentpostcode = _this102.user.Currentpostcode;
+              _this102.listingSeller.CurrentAddress = _this102.user.CurrentAddress;
+              _this102.listingSeller.CurrentTown = _this102.user.CurrentTown;
+              _this102.listingSeller.Currentstate = _this102.user.Currentstate;
+              _this102["return"] = _this102.SellerformService.createCustomer(_this102.userData.uid, _this102.listingSeller).then(function (data) {
                 console.log(data);
 
                 if (data == true) {
-                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this101.listingSeller));
-                  _this101.isLoading = false;
+                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this102.listingSeller));
+                  _this102.isLoading = false;
 
-                  var _dialogRef58 = _this101.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__["AlertDialogComponent"], {
+                  var _dialogRef58 = _this102.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__["AlertDialogComponent"], {
                     data: {
                       message: "HelloWorld",
-                      id: _this101.uid,
+                      id: _this102.uid,
                       buttonText: {
                         cancel: "Done"
                       }
@@ -12117,13 +12149,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this102 = this;
+          var _this103 = this;
 
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this102.register = true;
+            _this103.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this102.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var dialogRef = _this103.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Valid Postcode"
                 }
@@ -12149,26 +12181,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this103 = this;
+          var _this104 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this103.KnowUser.push(element.data());
+              _this104.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this103.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
+                var dialogRef = _this104.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this103.isLoading = false;
+                _this104.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this103.authService.SignIn(email, pass).then(function (data) {
-                  _this103.isLoading = false;
+                _this104.authService.SignIn(email, pass).then(function (data) {
+                  _this104.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -12186,12 +12218,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this104 = this;
+          var _this105 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this104.isLoading = false;
-            _this104.overlay = true;
+            _this105.isLoading = false;
+            _this105.overlay = true;
           });
         }
       }]);
@@ -12607,26 +12639,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this105 = this;
+          var _this106 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this105.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this105.userData));
+              _this106.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this106.userData));
 
-              _this105.LoggedIn();
+              _this106.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this105.LoggedOut();
+              _this106.LoggedOut();
             }
           });
           this.HttpService.getAgentsingupLogin().subscribe(function (data) {
             console.log(data);
-            _this105.image = data[0].BodyImage.url;
-            _this105.bodyText = data[0].BodyText;
-            _this105.finalImage = 'http://134.209.93.8' + _this105.image;
-            console.log(_this105.finalImage);
+            _this106.image = data[0].BodyImage.url;
+            _this106.bodyText = data[0].BodyText;
+            _this106.finalImage = 'http://134.209.93.8' + _this106.image;
+            console.log(_this106.finalImage);
           });
         }
       }, {
@@ -13043,12 +13075,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentsignupformComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this106 = this;
+          var _this107 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this106.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this106.userData));
+              _this107.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this107.userData));
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
@@ -13233,7 +13265,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee29() {
-            var _this107 = this;
+            var _this108 = this;
 
             var file, filePath;
             return regeneratorRuntime.wrap(function _callee29$(_context29) {
@@ -13258,7 +13290,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 7:
                     _context29.sent.ref.getDownloadURL().then(function (url) {
-                      _this107.downloadableURL = url;
+                      _this108.downloadableURL = url;
                     });
 
                   case 8:
@@ -13281,24 +13313,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this108 = this;
+          var _this109 = this;
 
           this.isLoading = true;
           this.afAuth.auth.createUserWithEmailAndPassword(email, pass).then(function (res) {
-            _this108.timer = Object(rxjs__WEBPACK_IMPORTED_MODULE_10__["timer"])(5000); // 5000 millisecond means 5 seconds
+            _this109.timer = Object(rxjs__WEBPACK_IMPORTED_MODULE_10__["timer"])(5000); // 5000 millisecond means 5 seconds
 
-            _this108.subscription = _this108.timer.subscribe(function () {
+            _this109.subscription = _this109.timer.subscribe(function () {
               if (res != null) {
-                _this108.SetUserDatas(res.user.uid, displayName, User, email); // set showloader to false to hide loading div from view after 5 seconds
+                _this109.SetUserDatas(res.user.uid, displayName, User, email); // set showloader to false to hide loading div from view after 5 seconds
 
 
-                _this108.stateService.agentSignup = _this108.agentSignup;
-                _this108.agentSignup.image = _this108.downloadableURL;
-                _this108.agentSignup.uid = res.user.uid;
-                _this108.agentSignup.Status = false;
-                _this108["return"] = _this108.AgentSignupService.createAgentCustomer(res.user.uid, _this108.agentSignup).then(function (data) {
+                _this109.stateService.agentSignup = _this109.agentSignup;
+                _this109.agentSignup.image = _this109.downloadableURL;
+                _this109.agentSignup.uid = res.user.uid;
+                _this109.agentSignup.Status = false;
+                _this109["return"] = _this109.AgentSignupService.createAgentCustomer(res.user.uid, _this109.agentSignup).then(function (data) {
                   if (data == true) {
-                    var dialogRef = _this108.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
+                    var dialogRef = _this109.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
                       data: {
                         message: "HelloWorld",
                         buttonText: {
@@ -13333,7 +13365,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "setTimer",
         value: function setTimer() {
-          var _this109 = this;
+          var _this110 = this;
 
           // set showloader to true to show loading div on view
           this.isLoading = true;
@@ -13341,10 +13373,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.subscription = this.timer.subscribe(function () {
             // set showloader to false to hide loading div from view after 5 seconds
-            _this109.isLoading = false;
-            _this109.responseStrapi = JSON.parse(_this109.requests.response);
-            _this109.ImageUrl = _this109.responseStrapi[0].url;
-            _this109.imageUploaded = true;
+            _this110.isLoading = false;
+            _this110.responseStrapi = JSON.parse(_this110.requests.response);
+            _this110.ImageUrl = _this110.responseStrapi[0].url;
+            _this110.imageUploaded = true;
           });
         }
       }]);
@@ -13642,7 +13674,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ClickhomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this110 = this;
+          var _this111 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -13658,16 +13690,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this110.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this110.userData));
-              _this110.isLoggedIn = true;
+              _this111.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this111.userData));
+              _this111.isLoggedIn = true;
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this110.LoggedOut();
+              _this111.LoggedOut();
 
-              _this110.isLoggedIn = false;
+              _this111.isLoggedIn = false;
             }
           });
           this.HomepageImagesText();
@@ -13676,30 +13708,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this111 = this;
+          var _this112 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this111.imageUrl = element.data().BannerImageUrl;
-              _this111.secondImageUrl = element.data().SecondBannerImage;
-              _this111.SecondImageText = element.data().SecondBannerText;
-              _this111.Step1Image = element.data().Step1Image;
-              _this111.Step2Image = element.data().Step2Image;
-              _this111.step3Image = element.data().Step3Image;
-              _this111.Step1TExt = element.data().Step1ImageText;
-              _this111.Step2Text = element.data().Step2ImageText;
-              _this111.step3Text = element.data().Step3ImageText;
+              _this112.imageUrl = element.data().BannerImageUrl;
+              _this112.secondImageUrl = element.data().SecondBannerImage;
+              _this112.SecondImageText = element.data().SecondBannerText;
+              _this112.Step1Image = element.data().Step1Image;
+              _this112.Step2Image = element.data().Step2Image;
+              _this112.step3Image = element.data().Step3Image;
+              _this112.Step1TExt = element.data().Step1ImageText;
+              _this112.Step2Text = element.data().Step2ImageText;
+              _this112.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this112 = this;
+          var _this113 = this;
 
           this.HomeService.getBlogs(1).then(function (res) {
             res.forEach(function (element) {
-              _this112.homePageBlogs.push(element.data());
+              _this113.homePageBlogs.push(element.data());
             });
           });
         }
@@ -13717,33 +13749,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this113 = this;
+          var _this114 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this113.isLoading = false;
+            _this114.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this114 = this;
+          var _this115 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this114.isLoading = false;
-            _this114.isLoggedIn = true;
+            _this115.isLoading = false;
+            _this115.isLoggedIn = true;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this115 = this;
+          var _this116 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this115.isLoading = false;
-            _this115.isLoggedIn = true;
+            _this116.isLoading = false;
+            _this116.isLoggedIn = true;
           });
         }
       }, {
@@ -13950,12 +13982,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onloadContent",
         value: function onloadContent() {
-          var _this116 = this;
+          var _this117 = this;
 
           this.SellermatchesService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this116.imageUrl = element.data().HomeMatchesPage;
-              _this116.OtherResult = element.data().OtherResult;
+              _this117.imageUrl = element.data().HomeMatchesPage;
+              _this117.OtherResult = element.data().OtherResult;
             });
           }); // this.HttpService.getMatchesHeading().subscribe((headings) =>{
           //   this.HeadingResults = headings
@@ -13966,7 +13998,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id) {
-          var _this117 = this;
+          var _this118 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -13981,103 +14013,103 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this117.buyer = true;
-              _this117.seller = false;
-              _this117.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this117.Look_PropertyFor = PropertyFor;
-              _this117.Look_propertytype = PropertyType;
-              _this117.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this117.Look_minamount);
-              _this117.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this117.Look_maxamount);
-              _this117.LookingTown = LookingTown;
-              _this117.Look_latitude = latitude;
-              _this117.Look_longitude = longitude;
-              _this117.Look_Streetname = Streetname;
-              _this117.Look_condition = condition;
-              _this117.Look_chainstatus = ChainStatus;
-              _this117.Look_FinancialPosition = FinancialPosition;
-              _this117.Look_Validity = Validity;
-              _this117.Look_Position = Position;
-              _this117.Look_UserId = UserId;
-              _this117.new_id = new_id; //Price Formula
+              _this118.buyer = true;
+              _this118.seller = false;
+              _this118.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this118.Look_PropertyFor = PropertyFor;
+              _this118.Look_propertytype = PropertyType;
+              _this118.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this118.Look_minamount);
+              _this118.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this118.Look_maxamount);
+              _this118.LookingTown = LookingTown;
+              _this118.Look_latitude = latitude;
+              _this118.Look_longitude = longitude;
+              _this118.Look_Streetname = Streetname;
+              _this118.Look_condition = condition;
+              _this118.Look_chainstatus = ChainStatus;
+              _this118.Look_FinancialPosition = FinancialPosition;
+              _this118.Look_Validity = Validity;
+              _this118.Look_Position = Position;
+              _this118.Look_UserId = UserId;
+              _this118.new_id = new_id; //Price Formula
 
-              _this117.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this117.maxAmount);
-              _this117.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this117.less);
-              _this117.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this117.more); //Remove Postcode Spaces
+              _this118.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this118.maxAmount);
+              _this118.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this118.less);
+              _this118.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this118.more); //Remove Postcode Spaces
 
-              _this117.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this117.listing = _this117.Look_postcodes;
-              _this117.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this117.isLoading = false;
-              _this117.buyer = true;
+              _this118.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this118.listing = _this118.Look_postcodes;
+              _this118.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this118.isLoading = false;
+              _this118.buyer = true;
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().PropertyType == _this117.Look_propertytype && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().PropertyType == _this118.Look_propertytype && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this117.matchedProperties.push({
+                _this118.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this117.distanceInKm * 1 / 1.609344
+                  distance: _this118.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().PropertyType == _this117.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this117.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().PropertyType == _this118.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this118.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this117.unmatchedProperties.push({
+                _this118.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this117.distanceInKm * 1 / 1.609344
+                  distance: _this118.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().PropertyType == _this117.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this117.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this117.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().PropertyType == _this118.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this118.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this118.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this117.unmatchedPriceLogic.push({
+                _this118.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this117.distanceInKm * 1 / 1.609344
+                  distance: _this118.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().PropertyType != _this117.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this117.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this117.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().PropertyType != _this118.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this118.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this118.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this117.unmatchedallProperty.push({
+                _this118.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this117.distanceInKm * 1 / 1.609344
+                  distance: _this118.distanceInKm * 1 / 1.609344
                 });
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this117.Look_postcodes && item.data().PropertyFor == _this117.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this117.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this117.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this117.distanceInKm = _this117.getDistanceFromLatLonInKm(_this117.Look_latitude, _this117.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this118.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this118.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this117.lookTown.push({
+                _this118.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this117.distanceInKm * 1 / 1.609344
+                  distance: _this118.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this117.unmatchedProperties.sort(_this117.compare);
+            _this118.unmatchedProperties.sort(_this118.compare);
           });
           this.getExpressedListingIds();
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude, new_id) {
-          var _this118 = this;
+          var _this119 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -14109,23 +14141,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this118.maxAmount = _this118.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this118.maxAmount);
-              _this118.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this118.Look_minamount);
-              _this118.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this118.Look_maxamount);
-              _this118.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this118.less);
-              _this118.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this118.more); //Remove Postcode Spaces
+              _this119.maxAmount = _this119.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this119.maxAmount);
+              _this119.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this119.Look_minamount);
+              _this119.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this119.Look_maxamount);
+              _this119.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this119.less);
+              _this119.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this119.more); //Remove Postcode Spaces
 
-              _this118.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this118.listing = _this118.Look_postcode;
-              _this118.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this119.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this119.listing = _this119.Look_postcode;
+              _this119.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this118.Look_postcode && Mean.data().PropertyFor == _this118.Look_PropertyFor && Mean.data().PropertyType == _this118.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this118.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this119.Look_postcode && Mean.data().PropertyFor == _this119.Look_PropertyFor && Mean.data().PropertyType == _this119.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this119.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
@@ -14133,51 +14165,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcode && Mean.data().PropertyType == _this118.Look_PropertyType && Mean.data().PropertyFor == _this118.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this118.removespace.substring(0, 5) == _this118.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
-                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this119.Look_postcode && Mean.data().PropertyType == _this119.Look_PropertyType && Mean.data().PropertyFor == _this119.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this119.removespace.substring(0, 5) == _this119.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+                _this119.distanceInKm = _this119.getDistanceFromLatLonInKm(_this119.Look_latitude, _this119.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this118.sellerunmatchedProperties.push({
+                _this119.sellerunmatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this118.distanceInKm * 1 / 1.609344
+                  distance: _this119.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcode && Mean.data().PropertyType == _this118.Look_PropertyType && Mean.data().PropertyFor == _this118.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this118.removespace.substring(0, 5) != _this118.listing.substring(0, 5) && _this118.removespace.substring(0, 3) == _this118.listing.substring(0, 3)) {
-                _this118.sellerunmatchedPropertiesFirst.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this119.Look_postcode && Mean.data().PropertyType == _this119.Look_PropertyType && Mean.data().PropertyFor == _this119.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this119.removespace.substring(0, 5) != _this119.listing.substring(0, 5) && _this119.removespace.substring(0, 3) == _this119.listing.substring(0, 3)) {
+                _this119.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcode && Mean.data().PropertyType != _this118.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this118.removespace.substring(0, 5) != _this118.listing.substring(0, 5) && _this118.removespace.substring(0, 3) == _this118.listing.substring(0, 3) && Mean.data().PropertyFor == _this118.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
-                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this119.Look_postcode && Mean.data().PropertyType != _this119.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this119.removespace.substring(0, 5) != _this119.listing.substring(0, 5) && _this119.removespace.substring(0, 3) == _this119.listing.substring(0, 3) && Mean.data().PropertyFor == _this119.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
+                _this119.distanceInKm = _this119.getDistanceFromLatLonInKm(_this119.Look_latitude, _this119.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this118.sellerunmatchedPriceLogic.push({
+                _this119.sellerunmatchedPriceLogic.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this118.distanceInKm * 1 / 1.609344
+                  distance: _this119.distanceInKm * 1 / 1.609344
                 });
               } //All other properties - Nationwide
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcode && Mean.data().PropertyFor == _this118.Look_PropertyFor && _this118.removespace.substring(0, 5) != _this118.listing.substring(0, 5) && _this118.removespace.substring(0, 3) != _this118.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
-                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this119.Look_postcode && Mean.data().PropertyFor == _this119.Look_PropertyFor && _this119.removespace.substring(0, 5) != _this119.listing.substring(0, 5) && _this119.removespace.substring(0, 3) != _this119.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
+                _this119.distanceInKm = _this119.getDistanceFromLatLonInKm(_this119.Look_latitude, _this119.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this118.sellerlookTown.push({
+                _this119.sellerlookTown.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this118.distanceInKm * 1 / 1.609344
+                  distance: _this119.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this118.unmatchedProperties.sort(_this118.compare);
+            _this119.unmatchedProperties.sort(_this119.compare);
 
-            _this118.noOfMatches = _this118.sellermatchedProperties.length;
-            _this118.noOfUnmatched = _this118.sellerunmatchedProperties.length;
+            _this119.noOfMatches = _this119.sellermatchedProperties.length;
+            _this119.noOfUnmatched = _this119.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -14441,12 +14473,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this119 = this;
+          var _this120 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this119.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this119.distinctExpressedUid.push(item.data().propertyId);
+              if (_this120.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this120.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -14465,122 +14497,122 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this120 = this;
+          var _this121 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this120.propertyRequirementDetails.push({
+              _this121.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
 
-            _this120.myrequirement_service.getSellerProperties(_this120.uid).then(function (res) {
+            _this121.myrequirement_service.getSellerProperties(_this121.uid).then(function (res) {
               res.forEach(function (element) {
                 // this.docid = element.id
-                _this120.propertyDetails.push({
+                _this121.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
               });
-              _this120.MatchesItem = _this120.propertyRequirementDetails.length + _this120.propertyDetails.length;
+              _this121.MatchesItem = _this121.propertyRequirementDetails.length + _this121.propertyDetails.length;
 
-              if (_this120.MatchesItem < 2) {
-                if (_this120.propertyRequirementDetails.length > _this120.propertyDetails.length) {
-                  _this120.buyer = true;
-                  _this120.seller = false;
-                  _this120.buyerItems = true;
-                  _this120.buyerVal = _this120.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var Lookingpostcode = _this120.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var MinAmount = _this120.propertyRequirementDetails[0].data.MinAmount;
-                  var MaxAmount = _this120.propertyRequirementDetails[0].data.MaxAmount;
-                  var PropertyFor = _this120.propertyRequirementDetails[0].data.PropertyFor;
-                  var PropertyType = _this120.propertyRequirementDetails[0].data.PropertyType;
-                  var LookingTown = _this120.propertyRequirementDetails[0].data.LookingTown;
-                  var latitude = _this120.propertyRequirementDetails[0].data.latitude;
-                  var longitude = _this120.propertyRequirementDetails[0].data.longitude;
-                  var Streetname = _this120.propertyRequirementDetails[0].data.LookingStreetname;
-                  var condition = _this120.propertyRequirementDetails[0].data.Conditions;
-                  var ChainStatus = _this120.propertyRequirementDetails[0].data.ChainStatus;
-                  var FinancialPosition = _this120.propertyRequirementDetails[0].data.FinancialPosition;
-                  var Validity = _this120.propertyRequirementDetails[0].data.Validity;
-                  var Position = _this120.propertyRequirementDetails[0].data.Position;
-                  var UserId = _this120.propertyRequirementDetails[0].data.UserId;
-                  var new_id = _this120.propertyRequirementDetails[0].id;
+              if (_this121.MatchesItem < 2) {
+                if (_this121.propertyRequirementDetails.length > _this121.propertyDetails.length) {
+                  _this121.buyer = true;
+                  _this121.seller = false;
+                  _this121.buyerItems = true;
+                  _this121.buyerVal = _this121.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var Lookingpostcode = _this121.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var MinAmount = _this121.propertyRequirementDetails[0].data.MinAmount;
+                  var MaxAmount = _this121.propertyRequirementDetails[0].data.MaxAmount;
+                  var PropertyFor = _this121.propertyRequirementDetails[0].data.PropertyFor;
+                  var PropertyType = _this121.propertyRequirementDetails[0].data.PropertyType;
+                  var LookingTown = _this121.propertyRequirementDetails[0].data.LookingTown;
+                  var latitude = _this121.propertyRequirementDetails[0].data.latitude;
+                  var longitude = _this121.propertyRequirementDetails[0].data.longitude;
+                  var Streetname = _this121.propertyRequirementDetails[0].data.LookingStreetname;
+                  var condition = _this121.propertyRequirementDetails[0].data.Conditions;
+                  var ChainStatus = _this121.propertyRequirementDetails[0].data.ChainStatus;
+                  var FinancialPosition = _this121.propertyRequirementDetails[0].data.FinancialPosition;
+                  var Validity = _this121.propertyRequirementDetails[0].data.Validity;
+                  var Position = _this121.propertyRequirementDetails[0].data.Position;
+                  var UserId = _this121.propertyRequirementDetails[0].data.UserId;
+                  var new_id = _this121.propertyRequirementDetails[0].id;
 
-                  _this120.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
+                  _this121.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
                 } else {
-                  _this120.seller = true;
-                  _this120.buyer = false;
-                  _this120.sellerItem = true;
-                  _this120.sellerVal = _this120.propertyDetails[0].seller.Lookingpostcode;
-                  var _Lookingpostcode = _this120.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor = _this120.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType = _this120.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount = _this120.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown = _this120.propertyDetails[0].seller.LookingTown;
-                  var Lookingstate = _this120.propertyDetails[0].seller.Lookingstate;
-                  var Maxbathrooms = _this120.propertyDetails[0].seller.Maxbathrooms;
-                  var PropertyCondition = _this120.propertyDetails[0].seller.PropertyCondition;
-                  var LookingAddress = _this120.propertyDetails[0].seller.LookingAddress;
-                  var ownership = _this120.propertyDetails[0].seller.ownership;
-                  var features = _this120.propertyDetails[0].seller.features;
-                  var _UserId = _this120.propertyDetails[0].seller.UserId;
-                  var Maxreception = _this120.propertyDetails[0].seller.Maxreception;
-                  var Maxrooms = _this120.propertyDetails[0].seller.Maxrooms;
-                  var _latitude = _this120.propertyDetails[0].seller.latitude;
-                  var _longitude = _this120.propertyDetails[0].seller.longitude;
-                  var _new_id = _this120.propertyDetails[0].sellerId;
+                  _this121.seller = true;
+                  _this121.buyer = false;
+                  _this121.sellerItem = true;
+                  _this121.sellerVal = _this121.propertyDetails[0].seller.Lookingpostcode;
+                  var _Lookingpostcode = _this121.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor = _this121.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType = _this121.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount = _this121.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown = _this121.propertyDetails[0].seller.LookingTown;
+                  var Lookingstate = _this121.propertyDetails[0].seller.Lookingstate;
+                  var Maxbathrooms = _this121.propertyDetails[0].seller.Maxbathrooms;
+                  var PropertyCondition = _this121.propertyDetails[0].seller.PropertyCondition;
+                  var LookingAddress = _this121.propertyDetails[0].seller.LookingAddress;
+                  var ownership = _this121.propertyDetails[0].seller.ownership;
+                  var features = _this121.propertyDetails[0].seller.features;
+                  var _UserId = _this121.propertyDetails[0].seller.UserId;
+                  var Maxreception = _this121.propertyDetails[0].seller.Maxreception;
+                  var Maxrooms = _this121.propertyDetails[0].seller.Maxrooms;
+                  var _latitude = _this121.propertyDetails[0].seller.latitude;
+                  var _longitude = _this121.propertyDetails[0].seller.longitude;
+                  var _new_id = _this121.propertyDetails[0].sellerId;
 
-                  _this120.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
+                  _this121.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
                 }
-              } else if (_this120.MatchesItem > 1) {
-                if (_this120.propertyRequirementDetails.length > _this120.propertyDetails.length) {
-                  _this120.buyer = true;
-                  _this120.buyerVal = _this120.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this120.test = _this120.buyerVal;
-                  var _Lookingpostcode2 = _this120.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var _MinAmount = _this120.propertyRequirementDetails[0].data.MinAmount;
-                  var _MaxAmount2 = _this120.propertyRequirementDetails[0].data.MaxAmount;
-                  var _PropertyFor2 = _this120.propertyRequirementDetails[0].data.PropertyFor;
-                  var _PropertyType2 = _this120.propertyRequirementDetails[0].data.PropertyType;
-                  var _LookingTown2 = _this120.propertyRequirementDetails[0].data.LookingTown;
-                  var _latitude2 = _this120.propertyRequirementDetails[0].data.latitude;
-                  var _longitude2 = _this120.propertyRequirementDetails[0].data.longitude;
-                  var _Streetname = _this120.propertyRequirementDetails[0].data.LookingStreetname;
-                  var _condition = _this120.propertyRequirementDetails[0].data.Conditions;
-                  var _ChainStatus = _this120.propertyRequirementDetails[0].data.ChainStatus;
-                  var _FinancialPosition = _this120.propertyRequirementDetails[0].data.FinancialPosition;
-                  var _Validity = _this120.propertyRequirementDetails[0].data.Validity;
-                  var _Position = _this120.propertyRequirementDetails[0].data.Position;
-                  var _UserId2 = _this120.propertyRequirementDetails[0].data.UserId;
-                  var _new_id2 = _this120.propertyRequirementDetails[0].id;
+              } else if (_this121.MatchesItem > 1) {
+                if (_this121.propertyRequirementDetails.length > _this121.propertyDetails.length) {
+                  _this121.buyer = true;
+                  _this121.buyerVal = _this121.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this121.test = _this121.buyerVal;
+                  var _Lookingpostcode2 = _this121.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var _MinAmount = _this121.propertyRequirementDetails[0].data.MinAmount;
+                  var _MaxAmount2 = _this121.propertyRequirementDetails[0].data.MaxAmount;
+                  var _PropertyFor2 = _this121.propertyRequirementDetails[0].data.PropertyFor;
+                  var _PropertyType2 = _this121.propertyRequirementDetails[0].data.PropertyType;
+                  var _LookingTown2 = _this121.propertyRequirementDetails[0].data.LookingTown;
+                  var _latitude2 = _this121.propertyRequirementDetails[0].data.latitude;
+                  var _longitude2 = _this121.propertyRequirementDetails[0].data.longitude;
+                  var _Streetname = _this121.propertyRequirementDetails[0].data.LookingStreetname;
+                  var _condition = _this121.propertyRequirementDetails[0].data.Conditions;
+                  var _ChainStatus = _this121.propertyRequirementDetails[0].data.ChainStatus;
+                  var _FinancialPosition = _this121.propertyRequirementDetails[0].data.FinancialPosition;
+                  var _Validity = _this121.propertyRequirementDetails[0].data.Validity;
+                  var _Position = _this121.propertyRequirementDetails[0].data.Position;
+                  var _UserId2 = _this121.propertyRequirementDetails[0].data.UserId;
+                  var _new_id2 = _this121.propertyRequirementDetails[0].id;
 
-                  _this120.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
+                  _this121.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
                 } else {
-                  _this120.seller = true;
-                  _this120.sellerVal = _this120.propertyDetails[0].seller.Lookingpostcode;
-                  _this120.test = _this120.sellerVal;
-                  var _Lookingpostcode3 = _this120.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor3 = _this120.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType3 = _this120.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount3 = _this120.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown3 = _this120.propertyDetails[0].seller.LookingTown;
-                  var _Lookingstate = _this120.propertyDetails[0].seller.Lookingstate;
-                  var _Maxbathrooms = _this120.propertyDetails[0].seller.Maxbathrooms;
-                  var _PropertyCondition = _this120.propertyDetails[0].seller.PropertyCondition;
-                  var _LookingAddress = _this120.propertyDetails[0].seller.LookingAddress;
-                  var _ownership = _this120.propertyDetails[0].seller.ownership;
-                  var _features = _this120.propertyDetails[0].seller.features;
-                  var _UserId3 = _this120.propertyDetails[0].seller.UserId;
-                  var _Maxreception = _this120.propertyDetails[0].seller.Maxreception;
-                  var _Maxrooms = _this120.propertyDetails[0].seller.Maxrooms;
-                  var _latitude3 = _this120.propertyDetails[0].seller.latitude;
-                  var _longitude3 = _this120.propertyDetails[0].seller.longitude;
-                  var _new_id3 = _this120.propertyDetails[0].sellerId;
+                  _this121.seller = true;
+                  _this121.sellerVal = _this121.propertyDetails[0].seller.Lookingpostcode;
+                  _this121.test = _this121.sellerVal;
+                  var _Lookingpostcode3 = _this121.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor3 = _this121.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType3 = _this121.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount3 = _this121.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown3 = _this121.propertyDetails[0].seller.LookingTown;
+                  var _Lookingstate = _this121.propertyDetails[0].seller.Lookingstate;
+                  var _Maxbathrooms = _this121.propertyDetails[0].seller.Maxbathrooms;
+                  var _PropertyCondition = _this121.propertyDetails[0].seller.PropertyCondition;
+                  var _LookingAddress = _this121.propertyDetails[0].seller.LookingAddress;
+                  var _ownership = _this121.propertyDetails[0].seller.ownership;
+                  var _features = _this121.propertyDetails[0].seller.features;
+                  var _UserId3 = _this121.propertyDetails[0].seller.UserId;
+                  var _Maxreception = _this121.propertyDetails[0].seller.Maxreception;
+                  var _Maxrooms = _this121.propertyDetails[0].seller.Maxrooms;
+                  var _latitude3 = _this121.propertyDetails[0].seller.latitude;
+                  var _longitude3 = _this121.propertyDetails[0].seller.longitude;
+                  var _new_id3 = _this121.propertyDetails[0].sellerId;
 
-                  _this120.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
+                  _this121.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
                 }
               }
             });
@@ -14589,26 +14621,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitem",
         value: function getallitem() {
-          var _this121 = this;
+          var _this122 = this;
 
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this121.uid) {
-                _this121.propertyRequirementDetails.push({
+              if (element.UserId == _this122.uid) {
+                _this122.propertyRequirementDetails.push({
                   data: element,
                   id: element.id
                 });
 
-                _this121.buyer = true;
-                _this121.seller = false;
-                _this121.buyerItems = true;
+                _this122.buyer = true;
+                _this122.seller = false;
+                _this122.buyerItems = true;
               }
             });
           });
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this121.uid) {
-                _this121.propertyDetails.push({
+              if (element.UserId == _this122.uid) {
+                _this122.propertyDetails.push({
                   seller: element,
                   sellerId: element.id
                 });
@@ -14924,12 +14956,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this122 = this;
+          var _this123 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this122.propertyRequirementDetails.push({
+              _this123.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -14938,7 +14970,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this122.propertyDetails.push({
+              _this123.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -15533,40 +15565,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this123 = this;
+          var _this124 = this;
 
           this.getUser = JSON.parse(sessionStorage.getItem('currentUser'));
           this.uid = this.getUser.id;
           this.LoggedIn();
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this123.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
-            _this123.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
-            _this123.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
-            _this123.listingBuyer.Currentstate = params.get("Currentstate").trim();
-            _this123.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
-            _this123.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this123.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            _this123.listingBuyer.LookingTown = params.get("LookingTown").trim();
-            _this123.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
-            _this123.listingBuyer.Country = params.get("Country").trim();
-            _this123.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
-            _this123.listingBuyer.PropertyType = params.get("PropertyType").trim();
-            _this123.listingBuyer.Roommin = params.get("Roommin").trim();
-            _this123.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
-            _this123.listingBuyer.MinAmount = params.get("MinAmount").trim();
-            _this123.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
-            _this123.listingBuyer.Validity = params.get("Validity").trim();
-            _this123.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
-            _this123.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
-            _this123.listingBuyer.Minreception = params.get("Minreception").trim();
-            _this123.listingBuyer.Maxreception = params.get("Maxreception").trim();
-            _this123.listingBuyer.Conditions = params.get("Conditions").trim();
-            _this123.listingBuyer.Ownership = params.get("Ownership").trim();
-            _this123.listingBuyer.features = params.get("features").trim();
-            _this123.docid = params.get("docid");
-            _this123.listingBuyer.PropertyFor = params.get("PropertyFor");
-            _this123.listingBuyer.ChainStatus = params.get("ChainStatus");
-            console.log(_this123.listingBuyer.FinancialPosition);
+            _this124.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
+            _this124.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
+            _this124.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
+            _this124.listingBuyer.Currentstate = params.get("Currentstate").trim();
+            _this124.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
+            _this124.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this124.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
+            _this124.listingBuyer.LookingTown = params.get("LookingTown").trim();
+            _this124.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
+            _this124.listingBuyer.Country = params.get("Country").trim();
+            _this124.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
+            _this124.listingBuyer.PropertyType = params.get("PropertyType").trim();
+            _this124.listingBuyer.Roommin = params.get("Roommin").trim();
+            _this124.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
+            _this124.listingBuyer.MinAmount = params.get("MinAmount").trim();
+            _this124.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
+            _this124.listingBuyer.Validity = params.get("Validity").trim();
+            _this124.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
+            _this124.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
+            _this124.listingBuyer.Minreception = params.get("Minreception").trim();
+            _this124.listingBuyer.Maxreception = params.get("Maxreception").trim();
+            _this124.listingBuyer.Conditions = params.get("Conditions").trim();
+            _this124.listingBuyer.Ownership = params.get("Ownership").trim();
+            _this124.listingBuyer.features = params.get("features").trim();
+            _this124.docid = params.get("docid");
+            _this124.listingBuyer.PropertyFor = params.get("PropertyFor");
+            _this124.listingBuyer.ChainStatus = params.get("ChainStatus");
+            console.log(_this124.listingBuyer.FinancialPosition);
           });
 
           if (this.listingBuyer.PropertyFor == 'buy') {
@@ -15582,11 +15614,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this123.lookup(_this123.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this123.data = data;
+              _this124.lookup(_this124.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this124.data = data;
               });
 
-              return _this123.lookup(_this123.listingBuyer.Lookingpostcode);
+              return _this124.lookup(_this124.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -15596,11 +15628,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this123.lookup(_this123.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this123.data = data;
+              _this124.lookup(_this124.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this124.data = data;
               });
 
-              return _this123.lookup(_this123.listingBuyer.Currentpostcode);
+              return _this124.lookup(_this124.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -15609,18 +15641,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this124 = this;
+          var _this125 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
           this.postcodeService.getUsers(this.getUser.id).subscribe(function (data) {
-            _this124.dataItem = data;
-            _this124.Name = _this124.dataItem.username, _this124.email = _this124.dataItem.email;
-            _this124.Phone = _this124.dataItem.Phone;
-            _this124.DOB = _this124.dataItem.dob;
-            _this124.Currentaddress = _this124.dataItem.Address;
-            _this124.prefrence = _this124.dataItem.prefrences;
-            _this124.title = _this124.dataItem.title;
+            _this125.dataItem = data;
+            _this125.Name = _this125.dataItem.username, _this125.email = _this125.dataItem.email;
+            _this125.Phone = _this125.dataItem.Phone;
+            _this125.DOB = _this125.dataItem.dob;
+            _this125.Currentaddress = _this125.dataItem.Address;
+            _this125.prefrence = _this125.dataItem.prefrences;
+            _this125.title = _this125.dataItem.title;
           });
         }
       }, {
@@ -15785,12 +15817,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this125 = this;
+          var _this126 = this;
 
           this.isLoading = true;
           this.postcodeService.addUsersDetails(this.uid, this.Name, this.email, this.Phone, this.DOB, this.title).subscribe(function (data) {
             localStorage.setItem('updatedUser', JSON.stringify(data));
-            _this125.isLoading = false;
+            _this126.isLoading = false;
           });
         }
       }, {
@@ -15858,48 +15890,48 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerEditing",
         value: function buyerEditing() {
-          var _this126 = this;
+          var _this127 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this126.postcodeCoordinates = data;
-            _this126.listingBuyer.longitude = _this126.postcodeCoordinates.result.longitude, _this126.listingBuyer.latitude = _this126.postcodeCoordinates.result.latitude, _this126.HttpClient.put("http://134.209.93.8/listing-buyers/" + _this126.docid, {
-              usertitle: _this126.title,
-              username: _this126.Name,
-              longitude: _this126.listingBuyer.longitude,
-              latitude: _this126.listingBuyer.longitude,
+            _this127.postcodeCoordinates = data;
+            _this127.listingBuyer.longitude = _this127.postcodeCoordinates.result.longitude, _this127.listingBuyer.latitude = _this127.postcodeCoordinates.result.latitude, _this127.HttpClient.put("http://134.209.93.8/listing-buyers/" + _this127.docid, {
+              usertitle: _this127.title,
+              username: _this127.Name,
+              longitude: _this127.listingBuyer.longitude,
+              latitude: _this127.listingBuyer.longitude,
               //features:this.listingBuyer.features,
-              Validity: _this126.listingBuyer.Validity,
-              UserId: _this126.uid,
-              Roomsmax: _this126.listingBuyer.Roomsmax,
-              Roommin: _this126.listingBuyer.Roommin,
-              PropertyType: _this126.listingBuyer.PropertyType,
-              PropertyFor: _this126.listingBuyer.PropertyFor,
-              Position: _this126.listingBuyer.Position,
-              Ownership: _this126.listingBuyer.Ownership,
-              Minreception: _this126.listingBuyer.Minreception,
-              Minbathroom: _this126.listingBuyer.Minbathroom,
-              MinAmount: _this126.listingBuyer.MinAmount,
-              Maxreception: _this126.listingBuyer.Maxreception,
-              Maxbathroom: _this126.listingBuyer.Maxbathroom,
-              MaxAmount: _this126.listingBuyer.MaxAmount,
-              Lookingstate: _this126.listingBuyer.Lookingstate,
-              Lookingpostcode: _this126.listingBuyer.Lookingpostcode,
-              LookingTown: _this126.listingBuyer.LookingTown,
-              LookingStreetname: _this126.listingBuyer.LookingStreetname,
-              FinancialPosition: _this126.listingBuyer.FinancialPosition,
-              Currentstate: _this126.listingBuyer.Currentstate,
-              Currentpostcode: _this126.listingBuyer.Currentpostcode,
-              Currentcountry: _this126.listingBuyer.Currentcountry,
-              CurrentAddress: _this126.listingBuyer.CurrentAddress,
-              Country: _this126.listingBuyer.Country,
-              Conditions: _this126.listingBuyer.Conditions,
-              ChainStatus: _this126.listingBuyer.ChainStatus,
-              CurrentTown: _this126.listingBuyer.CurrentTown
+              Validity: _this127.listingBuyer.Validity,
+              UserId: _this127.uid,
+              Roomsmax: _this127.listingBuyer.Roomsmax,
+              Roommin: _this127.listingBuyer.Roommin,
+              PropertyType: _this127.listingBuyer.PropertyType,
+              PropertyFor: _this127.listingBuyer.PropertyFor,
+              Position: _this127.listingBuyer.Position,
+              Ownership: _this127.listingBuyer.Ownership,
+              Minreception: _this127.listingBuyer.Minreception,
+              Minbathroom: _this127.listingBuyer.Minbathroom,
+              MinAmount: _this127.listingBuyer.MinAmount,
+              Maxreception: _this127.listingBuyer.Maxreception,
+              Maxbathroom: _this127.listingBuyer.Maxbathroom,
+              MaxAmount: _this127.listingBuyer.MaxAmount,
+              Lookingstate: _this127.listingBuyer.Lookingstate,
+              Lookingpostcode: _this127.listingBuyer.Lookingpostcode,
+              LookingTown: _this127.listingBuyer.LookingTown,
+              LookingStreetname: _this127.listingBuyer.LookingStreetname,
+              FinancialPosition: _this127.listingBuyer.FinancialPosition,
+              Currentstate: _this127.listingBuyer.Currentstate,
+              Currentpostcode: _this127.listingBuyer.Currentpostcode,
+              Currentcountry: _this127.listingBuyer.Currentcountry,
+              CurrentAddress: _this127.listingBuyer.CurrentAddress,
+              Country: _this127.listingBuyer.Country,
+              Conditions: _this127.listingBuyer.Conditions,
+              ChainStatus: _this127.listingBuyer.ChainStatus,
+              CurrentTown: _this127.listingBuyer.CurrentTown
             }).subscribe(function (data) {
-              _this126.isLoading = false;
+              _this127.isLoading = false;
 
-              var dialogRef = _this126.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+              var dialogRef = _this127.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
             });
           });
         }
@@ -16466,7 +16498,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this127 = this;
+          var _this128 = this;
 
           this.getUser = JSON.parse(sessionStorage.getItem('currentUser'));
           this.uid = this.getUser.id;
@@ -16476,11 +16508,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this127.lookup(_this127.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this127.data = data;
+              _this128.lookup(_this128.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this128.data = data;
               });
 
-              return _this127.lookup(_this127.listingSeller.Lookingpostcode);
+              return _this128.lookup(_this128.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -16490,32 +16522,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this127.lookup(_this127.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this127.data = data;
+              _this128.lookup(_this128.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this128.data = data;
               });
 
-              return _this127.lookup(_this127.listingSeller.Currentpostcode);
+              return _this128.lookup(_this128.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this127.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
-            _this127.listingSeller.LookingAddress = params.get("LookingAddress");
-            _this127.listingSeller.LookingTown = params.get("LookingTown");
-            _this127.listingSeller.Lookingstate = params.get("Lookingstate");
-            _this127.listingSeller.Country = params.get("Country");
-            _this127.listingSeller.PropertyType = params.get("PropertyType");
-            _this127.listingSeller.Maxrooms = params.get("Maxrooms");
-            _this127.listingSeller.MaxAmount = params.get("MaxAmount");
-            _this127.listingSeller.ownership = params.get("ownership");
-            _this127.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
-            _this127.listingSeller.Maxreception = params.get("Maxreception");
-            _this127.listingSeller.PropertyCondition = params.get("PropertyCondition");
-            _this127.Features = params.get("features");
-            _this127.listingSeller.Country = params.get("Country");
-            _this127.docid = params.get("sellerId");
-            _this127.listingSeller.PropertyFor = params.get("PropertyFor");
+            _this128.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
+            _this128.listingSeller.LookingAddress = params.get("LookingAddress");
+            _this128.listingSeller.LookingTown = params.get("LookingTown");
+            _this128.listingSeller.Lookingstate = params.get("Lookingstate");
+            _this128.listingSeller.Country = params.get("Country");
+            _this128.listingSeller.PropertyType = params.get("PropertyType");
+            _this128.listingSeller.Maxrooms = params.get("Maxrooms");
+            _this128.listingSeller.MaxAmount = params.get("MaxAmount");
+            _this128.listingSeller.ownership = params.get("ownership");
+            _this128.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
+            _this128.listingSeller.Maxreception = params.get("Maxreception");
+            _this128.listingSeller.PropertyCondition = params.get("PropertyCondition");
+            _this128.Features = params.get("features");
+            _this128.listingSeller.Country = params.get("Country");
+            _this128.docid = params.get("sellerId");
+            _this128.listingSeller.PropertyFor = params.get("PropertyFor");
           });
 
           if (this.listingSeller.PropertyFor == "buy") {
@@ -16530,22 +16562,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this128 = this;
+          var _this129 = this;
 
           //Pre - populate the email field
           this.sellerService.getUsers(this.getUser.id).subscribe(function (data) {
-            _this128.dataItem = data;
-            _this128.Name = _this128.dataItem.username, _this128.email = _this128.dataItem.email;
-            _this128.Phone = _this128.dataItem.Phone;
-            _this128.DOB = _this128.dataItem.dob;
-            _this128.Currentaddress = _this128.dataItem.Address;
-            _this128.prefrence = _this128.dataItem.prefrences;
-            _this128.title = _this128.dataItem.title;
-            _this128.Currentpostcode = _this128.dataItem.Currentpostcode;
-            _this128.CurrentAddress = _this128.dataItem.CurrentAddress;
-            _this128.CurrentTown = _this128.dataItem.CurrentTown;
-            _this128.Currentstate = _this128.dataItem.Currentstate;
-            _this128.isLoggedIn = true;
+            _this129.dataItem = data;
+            _this129.Name = _this129.dataItem.username, _this129.email = _this129.dataItem.email;
+            _this129.Phone = _this129.dataItem.Phone;
+            _this129.DOB = _this129.dataItem.dob;
+            _this129.Currentaddress = _this129.dataItem.Address;
+            _this129.prefrence = _this129.dataItem.prefrences;
+            _this129.title = _this129.dataItem.title;
+            _this129.Currentpostcode = _this129.dataItem.Currentpostcode;
+            _this129.CurrentAddress = _this129.dataItem.CurrentAddress;
+            _this129.CurrentTown = _this129.dataItem.CurrentTown;
+            _this129.Currentstate = _this129.dataItem.Currentstate;
+            _this129.isLoggedIn = true;
           });
           this.isLoggedIn = true;
         }
@@ -16724,11 +16756,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this129 = this;
+          var _this130 = this;
 
           this.isLoading = true;
           this.sellerService.addUsersSellerDetails(this.uid, this.Name, this.email, this.Phone, this.DOB, this.title, this.Currentpostcode, this.CurrentAddress, this.CurrentTown, this.Currentstate).subscribe(function (data) {
-            _this129.isLoading = false;
+            _this130.isLoading = false;
           });
         }
       }, {
@@ -16751,43 +16783,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this130 = this;
+          var _this131 = this;
 
           this.isLoading = true;
           console.log(this.listingSeller.ownership); //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this130.postcodeCoordinates = data;
-            _this130.listingSeller.longitude = _this130.postcodeCoordinates.result.longitude, _this130.listingSeller.latitude = _this130.postcodeCoordinates.result.latitude, _this130.HttpClient.put("http://134.209.93.8/listing-sellers/" + _this130.docid, {
-              Country: _this130.listingSeller.Country,
-              LookingAddress: _this130.listingSeller.LookingAddress,
-              LookingStreetname: _this130.listingSeller.LookingTown,
-              LookingTown: _this130.listingSeller.LookingTown,
-              Lookingpostcode: _this130.listingSeller.Lookingpostcode,
-              Lookingstate: _this130.listingSeller.Lookingstate,
-              MaxAmount: _this130.listingSeller.MaxAmount,
-              Maxbathrooms: _this130.listingSeller.Maxbathrooms,
-              Maxreception: _this130.listingSeller.Maxreception,
-              PropertyCondition: _this130.listingSeller.PropertyCondition,
-              PropertyFor: _this130.listingSeller.PropertyFor,
-              PropertyType: _this130.listingSeller.PropertyType,
-              features: _this130.listingSeller.features,
-              latitude: _this130.listingSeller.latitude,
-              longitude: _this130.listingSeller.longitude,
-              ownership: _this130.listingSeller.ownership,
-              username: _this130.Name,
-              usertitle: _this130.title,
-              UserId: _this130.uid,
-              Maxrooms: _this130.listingSeller.Maxrooms,
-              Currentpostcode: _this130.Currentpostcode,
-              Currentstate: _this130.Currentstate,
-              CurrentTowncity: _this130.CurrentTown,
-              Currentaddress: _this130.CurrentAddress
+            _this131.postcodeCoordinates = data;
+            _this131.listingSeller.longitude = _this131.postcodeCoordinates.result.longitude, _this131.listingSeller.latitude = _this131.postcodeCoordinates.result.latitude, _this131.HttpClient.put("http://134.209.93.8/listing-sellers/" + _this131.docid, {
+              Country: _this131.listingSeller.Country,
+              LookingAddress: _this131.listingSeller.LookingAddress,
+              LookingStreetname: _this131.listingSeller.LookingTown,
+              LookingTown: _this131.listingSeller.LookingTown,
+              Lookingpostcode: _this131.listingSeller.Lookingpostcode,
+              Lookingstate: _this131.listingSeller.Lookingstate,
+              MaxAmount: _this131.listingSeller.MaxAmount,
+              Maxbathrooms: _this131.listingSeller.Maxbathrooms,
+              Maxreception: _this131.listingSeller.Maxreception,
+              PropertyCondition: _this131.listingSeller.PropertyCondition,
+              PropertyFor: _this131.listingSeller.PropertyFor,
+              PropertyType: _this131.listingSeller.PropertyType,
+              features: _this131.listingSeller.features,
+              latitude: _this131.listingSeller.latitude,
+              longitude: _this131.listingSeller.longitude,
+              ownership: _this131.listingSeller.ownership,
+              username: _this131.Name,
+              usertitle: _this131.title,
+              UserId: _this131.uid,
+              Maxrooms: _this131.listingSeller.Maxrooms,
+              Currentpostcode: _this131.Currentpostcode,
+              Currentstate: _this131.Currentstate,
+              CurrentTowncity: _this131.CurrentTown,
+              Currentaddress: _this131.CurrentAddress
             }).subscribe(function (data) {
               console.log(data);
-              _this130.isLoading = false;
+              _this131.isLoading = false;
 
-              var dialogRef = _this130.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+              var dialogRef = _this131.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -17197,19 +17229,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this131 = this;
+          var _this132 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this131.Lookingpostcode = params.get("Lookingpostcode");
-            _this131.ChainStatus = params.get("ChainStatus");
-            _this131.FinancialPosition = params.get("FinancialPosition");
-            _this131.Type = params.get("PropertyType");
-            _this131.Position = params.get("Position");
-            _this131.MaxAmount = params.get("MaxAmount");
-            _this131.MinAmount = params.get("MinAmount");
-            _this131.propertyId = params.get("id");
+            _this132.Lookingpostcode = params.get("Lookingpostcode");
+            _this132.ChainStatus = params.get("ChainStatus");
+            _this132.FinancialPosition = params.get("FinancialPosition");
+            _this132.Type = params.get("PropertyType");
+            _this132.Position = params.get("Position");
+            _this132.MaxAmount = params.get("MaxAmount");
+            _this132.MinAmount = params.get("MinAmount");
+            _this132.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -17222,24 +17254,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this132 = this;
+          var _this133 = this;
 
           this.SellerListingDetails.getBuyerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this132.buyingPosition = res.data().Position;
-            _this132.buyerFinancialPosition = res.data().FinancialPosition;
-            _this132.BuyerPropertyType = res.data().PropertyType;
-            _this132.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this132.BuyerRoommin = res.data().Roommin;
-            _this132.BuyerRoomsmax = res.data().Roomsmax;
-            _this132.username = res.data().username;
-            _this132.usertitle = res.data().usertitle;
-            _this132.buyerPropertyFor = res.data().PropertyFor;
-            _this132.PropertyType = res.data().PropertyType;
-            _this132.Ownership = res.data().Ownership;
-            _this132.LookingStreetname = res.data().LookingStreetname;
-            _this132.Conditions = res.data().Conditions;
-            _this132.Maxbathroom = res.data().Maxbathroom;
-            _this132.Maxreception = res.data().Maxreception;
+            _this133.buyingPosition = res.data().Position;
+            _this133.buyerFinancialPosition = res.data().FinancialPosition;
+            _this133.BuyerPropertyType = res.data().PropertyType;
+            _this133.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this133.BuyerRoommin = res.data().Roommin;
+            _this133.BuyerRoomsmax = res.data().Roomsmax;
+            _this133.username = res.data().username;
+            _this133.usertitle = res.data().usertitle;
+            _this133.buyerPropertyFor = res.data().PropertyFor;
+            _this133.PropertyType = res.data().PropertyType;
+            _this133.Ownership = res.data().Ownership;
+            _this133.LookingStreetname = res.data().LookingStreetname;
+            _this133.Conditions = res.data().Conditions;
+            _this133.Maxbathroom = res.data().Maxbathroom;
+            _this133.Maxreception = res.data().Maxreception;
           });
         }
       }]);
@@ -17432,19 +17464,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this133 = this;
+          var _this134 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this133.Lookingpostcode = params.get("Lookingpostcode");
-            _this133.Type = params.get("PropertyType");
-            _this133.MaxAmount = params.get("MaxAmount");
-            _this133.Maxrooms = params.get("Maxrooms");
-            _this133.Maxreception = params.get("Maxreception");
-            _this133.PropertyCondition = params.get("PropertyCondition");
-            _this133.Maxbathrooms = params.get("Maxbathrooms");
-            _this133.propertyId = params.get("id");
+            _this134.Lookingpostcode = params.get("Lookingpostcode");
+            _this134.Type = params.get("PropertyType");
+            _this134.MaxAmount = params.get("MaxAmount");
+            _this134.Maxrooms = params.get("Maxrooms");
+            _this134.Maxreception = params.get("Maxreception");
+            _this134.PropertyCondition = params.get("PropertyCondition");
+            _this134.Maxbathrooms = params.get("Maxbathrooms");
+            _this134.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -17457,21 +17489,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this134 = this;
+          var _this135 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this134.userName = res.data().username;
-            _this134.usertitle = res.data().usertitle;
-            _this134.PropertyFor = res.data().PropertyFor;
-            _this134.price = res.data().MaxAmount;
-            _this134.postcode = res.data().Lookingpostcode;
-            _this134.Streetname = res.data().LookingStreetname;
-            _this134.PropertyTypes = res.data().PropertyType;
-            _this134.Maxroom = res.data().Maxrooms;
-            _this134.ownerships = res.data().ownership;
-            _this134.Bathrooms = res.data().Maxbathrooms;
-            _this134.Reception = res.data().Maxreception;
-            _this134.features = res.data().features;
+            _this135.userName = res.data().username;
+            _this135.usertitle = res.data().usertitle;
+            _this135.PropertyFor = res.data().PropertyFor;
+            _this135.price = res.data().MaxAmount;
+            _this135.postcode = res.data().Lookingpostcode;
+            _this135.Streetname = res.data().LookingStreetname;
+            _this135.PropertyTypes = res.data().PropertyType;
+            _this135.Maxroom = res.data().Maxrooms;
+            _this135.ownerships = res.data().ownership;
+            _this135.Bathrooms = res.data().Maxbathrooms;
+            _this135.Reception = res.data().Maxreception;
+            _this135.features = res.data().features;
           });
         }
       }]);
@@ -17688,12 +17720,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this135 = this;
+          var _this136 = this;
 
           // Buyer Property Fetch details 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this135.propertyRequirementDetails.push({
+              _this136.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -17702,7 +17734,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this135.propertyDetails.push({
+              _this136.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -17903,7 +17935,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerAwaitingDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this136 = this;
+          var _this137 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -17912,21 +17944,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this136.Lookingpostcode = params.get("Lookingpostcode");
-            _this136.Lookingstate = params.get("Lookingstate");
-            _this136.LookingAddress = params.get("LookingAddress");
-            _this136.norooms = params.get("Roomsmax");
-            _this136.PropertyCondition = params.get("PropertyCondition");
-            _this136.MaxAmount = params.get("MaxAmount");
-            _this136.PropertyType = params.get("PropertyType");
-            _this136.ownership = params.get("ownership");
-            _this136.features = params.get("features");
-            _this136.matchStatus = params.get("matchStatus");
-            _this136.expressed = params.get("expressed");
-            _this136.BuyerUserId = params.get("BuyerUserId");
-            _this136.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this136.SellerPropertyId = params.get("SellerPropertyId");
-            _this136.SellerUSerId = params.get("SellerUSerId");
+            _this137.Lookingpostcode = params.get("Lookingpostcode");
+            _this137.Lookingstate = params.get("Lookingstate");
+            _this137.LookingAddress = params.get("LookingAddress");
+            _this137.norooms = params.get("Roomsmax");
+            _this137.PropertyCondition = params.get("PropertyCondition");
+            _this137.MaxAmount = params.get("MaxAmount");
+            _this137.PropertyType = params.get("PropertyType");
+            _this137.ownership = params.get("ownership");
+            _this137.features = params.get("features");
+            _this137.matchStatus = params.get("matchStatus");
+            _this137.expressed = params.get("expressed");
+            _this137.BuyerUserId = params.get("BuyerUserId");
+            _this137.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this137.SellerPropertyId = params.get("SellerPropertyId");
+            _this137.SellerUSerId = params.get("SellerUSerId");
           });
         }
       }, {
@@ -18056,7 +18088,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this137 = this;
+          var _this138 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -18065,31 +18097,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this137.Lookingpostcode = params.get("Lookingpostcode");
-            _this137.Lookingstate = params.get("Lookingstate");
-            _this137.LookingAddress = params.get("LookingAddress");
-            _this137.norooms = params.get("Roomsmax");
-            _this137.PropertyCondition = params.get("PropertyCondition");
-            _this137.MaxAmount = params.get("MaxAmount");
-            _this137.PropertyType = params.get("PropertyType");
-            _this137.ownership = params.get("ownership");
-            _this137.features = params.get("features");
-            _this137.matchStatus = params.get("matchStatus");
-            _this137.propertyId = params.get("propertyId");
-            _this137.expressed = params.get("expressed");
-            _this137.userId = params.get("UserId");
-            _this137.sellerId = params.get("sellerId");
-            _this137.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this137.BuyerUserId = params.get("BuyerUserId");
-            _this137.SellerPropertyId = params.get("SellerPropertyId");
-            _this137.SellerUserId = params.get("SellerUserId");
+            _this138.Lookingpostcode = params.get("Lookingpostcode");
+            _this138.Lookingstate = params.get("Lookingstate");
+            _this138.LookingAddress = params.get("LookingAddress");
+            _this138.norooms = params.get("Roomsmax");
+            _this138.PropertyCondition = params.get("PropertyCondition");
+            _this138.MaxAmount = params.get("MaxAmount");
+            _this138.PropertyType = params.get("PropertyType");
+            _this138.ownership = params.get("ownership");
+            _this138.features = params.get("features");
+            _this138.matchStatus = params.get("matchStatus");
+            _this138.propertyId = params.get("propertyId");
+            _this138.expressed = params.get("expressed");
+            _this138.userId = params.get("UserId");
+            _this138.sellerId = params.get("sellerId");
+            _this138.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this138.BuyerUserId = params.get("BuyerUserId");
+            _this138.SellerPropertyId = params.get("SellerPropertyId");
+            _this138.SellerUserId = params.get("SellerUserId");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.HttpService.getMatchesSeller().subscribe(function (sellerData) {
             sellerData.forEach(function (element) {
-              if (element.myId == _this137.userId && element.matchStatus == "pending") {
-                _this137.buyerProperty = {
+              if (element.myId == _this138.userId && element.matchStatus == "pending") {
+                _this138.buyerProperty = {
                   detail: element,
                   propertyId: element.id
                 };
@@ -18098,26 +18130,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
           this.HttpService.getPropertyIdMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this137.uid && element.propertyId == _this137.propertyId && element.Type == "BuyerSelected") {
-                _this137.expressed = "true";
+              if (element.UserId == _this138.uid && element.propertyId == _this138.propertyId && element.Type == "BuyerSelected") {
+                _this138.expressed = "true";
               }
             });
           });
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this137.notificationOverlay = data;
-            _this137.notificationContent = _this137.notificationOverlay[0].BuyerMatchesConfirmInterestNotification;
+            _this138.notificationOverlay = data;
+            _this138.notificationContent = _this138.notificationOverlay[0].BuyerMatchesConfirmInterestNotification;
           });
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this138 = this;
+          var _this139 = this;
 
           this["return"] = this.MatchesBuyerService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this138.createSellerNotification();
+              _this139.createSellerNotification();
 
-              _this138.backClicked();
+              _this139.backClicked();
             }
           });
         }
@@ -18142,7 +18174,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createOther",
         value: function createOther() {
-          var _this139 = this;
+          var _this140 = this;
 
           this.matchesSeller = {
             BuyerDetails: this.buyerDetails,
@@ -18154,7 +18186,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           };
           this["return"] = this.MatchesBuyerService.matchesBuyerCreate(this.userId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this139.addToExpressCollection();
+              _this140.addToExpressCollection();
             }
           });
         }
@@ -18171,30 +18203,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this140 = this;
+          var _this141 = this;
 
           this.MatchesBuyerService.getSeller(this.SellerUserId, this.SellerPropertyId).then(function (res) {
-            _this140.userName = res.data().username;
-            _this140.usertitle = res.data().usertitle;
-            _this140.PropertyFor = res.data().PropertyFor;
-            _this140.price = res.data().MaxAmount;
-            _this140.postcode = res.data().Lookingpostcode;
-            _this140.Streetname = res.data().LookingStreetname;
-            _this140.PropertyTypes = res.data().PropertyType;
-            _this140.Maxroom = res.data().Maxrooms;
-            _this140.ownerships = res.data().ownership;
-            _this140.Bathrooms = res.data().Maxbathrooms;
-            _this140.Reception = res.data().Maxreception;
+            _this141.userName = res.data().username;
+            _this141.usertitle = res.data().usertitle;
+            _this141.PropertyFor = res.data().PropertyFor;
+            _this141.price = res.data().MaxAmount;
+            _this141.postcode = res.data().Lookingpostcode;
+            _this141.Streetname = res.data().LookingStreetname;
+            _this141.PropertyTypes = res.data().PropertyType;
+            _this141.Maxroom = res.data().Maxrooms;
+            _this141.ownerships = res.data().ownership;
+            _this141.Bathrooms = res.data().Maxbathrooms;
+            _this141.Reception = res.data().Maxreception;
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this141 = this;
+          var _this142 = this;
 
           console.log(this.BuyerUserId, this.BuyerPropertyId);
           this.MatchesBuyerService.getBuyer(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this141.buyerDetails = res.data();
+            _this142.buyerDetails = res.data();
           });
         }
       }]);
@@ -18751,7 +18783,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this142 = this;
+          var _this143 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -18760,18 +18792,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this142.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
+            _this143.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
 
-            _this142.FinancialPosition = params.get("FinancialPosition");
-            _this142.Type = params.get("PropertyType");
-            _this142.Position = params.get("Position");
-            _this142.matchStatus = params.get("matchStatus");
-            _this142.propertyId = params.get("PropBuyerId");
-            _this142.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this142.BuyerUserId = params.get("BuyerUserId");
-            console.log(_this142.BuyerPropertyId);
-            console.log(_this142.BuyerUserId);
-            console.log(_this142.propertyId);
+            _this143.FinancialPosition = params.get("FinancialPosition");
+            _this143.Type = params.get("PropertyType");
+            _this143.Position = params.get("Position");
+            _this143.matchStatus = params.get("matchStatus");
+            _this143.propertyId = params.get("PropBuyerId");
+            _this143.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this143.BuyerUserId = params.get("BuyerUserId");
+            console.log(_this143.BuyerPropertyId);
+            console.log(_this143.BuyerUserId);
+            console.log(_this143.propertyId);
           });
           this.getBuyerData();
         }
@@ -18783,26 +18815,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this143 = this;
+          var _this144 = this;
 
           this.MatchesSellerPendingService.getBuyerRequirement(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this143.buyingPosition = res.data().Position;
-            _this143.buyerFinancialPosition = res.data().FinancialPosition;
-            _this143.BuyerPropertyType = res.data().PropertyType;
-            _this143.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this143.BuyerRoommin = res.data().Roommin;
-            _this143.BuyerRoomsmax = res.data().Roomsmax;
-            _this143.username = res.data().username;
-            _this143.usertitle = res.data().usertitle;
-            _this143.buyerPropertyFor = res.data().PropertyFor;
-            _this143.PropertyType = res.data().PropertyType;
-            _this143.Ownership = res.data().Ownership;
-            _this143.LookingStreetname = res.data().LookingStreetname;
-            _this143.Conditions = res.data().Conditions;
-            _this143.Maxbathroom = res.data().Maxbathroom;
-            _this143.Maxreception = res.data().Maxreception;
-            _this143.MinAmount = res.data().MinAmount;
-            _this143.MaxAmount = res.data().MaxAmount;
+            _this144.buyingPosition = res.data().Position;
+            _this144.buyerFinancialPosition = res.data().FinancialPosition;
+            _this144.BuyerPropertyType = res.data().PropertyType;
+            _this144.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this144.BuyerRoommin = res.data().Roommin;
+            _this144.BuyerRoomsmax = res.data().Roomsmax;
+            _this144.username = res.data().username;
+            _this144.usertitle = res.data().usertitle;
+            _this144.buyerPropertyFor = res.data().PropertyFor;
+            _this144.PropertyType = res.data().PropertyType;
+            _this144.Ownership = res.data().Ownership;
+            _this144.LookingStreetname = res.data().LookingStreetname;
+            _this144.Conditions = res.data().Conditions;
+            _this144.Maxbathroom = res.data().Maxbathroom;
+            _this144.Maxreception = res.data().Maxreception;
+            _this144.MinAmount = res.data().MinAmount;
+            _this144.MaxAmount = res.data().MaxAmount;
           });
         }
       }]);
@@ -18932,7 +18964,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this144 = this;
+          var _this145 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -18943,39 +18975,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this144.sellerProperty.push({
+              _this145.sellerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this144.propertyLength = _this144.sellerProperty.length;
+              _this145.propertyLength = _this145.sellerProperty.length;
             });
 
-            _this144.getExpressedListingIds();
+            _this145.getExpressedListingIds();
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this144.buyerProperty.push({
+              _this145.buyerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this144.sellerLength = _this144.buyerProperty.length;
+              _this145.sellerLength = _this145.buyerProperty.length;
 
-              _this144.getExpressedListingIds();
+              _this145.getExpressedListingIds();
             });
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this145 = this;
+          var _this146 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this145.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this145.distinctExpressedUid.push(item.data().propertyId);
+              if (_this146.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this146.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -19245,7 +19277,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this146 = this;
+          var _this147 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -19255,29 +19287,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             console.log(params);
-            _this146.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this146.ChainStatus = params.get("ChainStatus");
-            _this146.norooms = params.get("Roomsmax");
-            _this146.PropertyCondition = params.get("PropertyCondition");
-            _this146.Conditions = params.get("Conditions");
-            _this146.MinAmount = params.get("MinAmount");
-            _this146.Type = params.get("Type");
-            _this146.MaxAmount = params.get("MaxAmount");
-            _this146.id = params.get("id");
-            _this146.propertyId = params.get("CurrentpropertyId");
-            _this146.PropertyFor = params.get("PropertyFor");
-            _this146.BuyerUserId = params.get("buyerId");
-            _this146.BuyerPropertyId = params.get("propertyId");
-            _this146.SellerPropertyId = params.get("UserId");
+            _this147.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this147.ChainStatus = params.get("ChainStatus");
+            _this147.norooms = params.get("Roomsmax");
+            _this147.PropertyCondition = params.get("PropertyCondition");
+            _this147.Conditions = params.get("Conditions");
+            _this147.MinAmount = params.get("MinAmount");
+            _this147.Type = params.get("Type");
+            _this147.MaxAmount = params.get("MaxAmount");
+            _this147.id = params.get("id");
+            _this147.propertyId = params.get("CurrentpropertyId");
+            _this147.PropertyFor = params.get("PropertyFor");
+            _this147.BuyerUserId = params.get("buyerId");
+            _this147.BuyerPropertyId = params.get("propertyId");
+            _this147.SellerPropertyId = params.get("UserId");
           });
           this.AgentService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this146.agents.push({
+              _this147.agents.push({
                 Detail: elements.data(),
                 uid: elements.data().uid
               });
 
-              _this146.testagents.push(elements.data().uid);
+              _this147.testagents.push(elements.data().uid);
             });
           }); // this.HttpService.getAgents().subscribe((agent) => {
           //   agent.forEach(elements => {
@@ -19315,7 +19347,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
-          var _this147 = this;
+          var _this148 = this;
 
           this.notification = {
             time: this.now,
@@ -19326,7 +19358,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             Lastseen: null
           };
           this["return"] = this.AgentService.createNotification(this.BuyerUserId, this.notification).then(function (data) {
-            _this147._router.navigate(["/mymatches"]);
+            _this148._router.navigate(["/mymatches"]);
           });
         }
       }, {
@@ -19342,19 +19374,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "agentDetailEntry",
         value: function agentDetailEntry(agentuid) {
-          var _this148 = this;
+          var _this149 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this148.sellerDetails = rest.data();
+            _this149.sellerDetails = rest.data();
 
-            _this148.AgentService.getBuyerrDetails(_this148.BuyerUserId, _this148.BuyerPropertyId).then(function (rest) {
-              _this148.BuyerDetails = rest.data();
-              _this148.details = {
-                Seller: _this148.sellerDetails,
-                Buyer: _this148.BuyerDetails,
+            _this149.AgentService.getBuyerrDetails(_this149.BuyerUserId, _this149.BuyerPropertyId).then(function (rest) {
+              _this149.BuyerDetails = rest.data();
+              _this149.details = {
+                Seller: _this149.sellerDetails,
+                Buyer: _this149.BuyerDetails,
                 UserId: agentuid
               };
-              _this148["return"] = _this148.AgentService.matchesAgentSellerCreate(agentuid, _this148.details).then(function (data) {});
+              _this149["return"] = _this149.AgentService.matchesAgentSellerCreate(agentuid, _this149.details).then(function (data) {});
             });
           });
           this.BuyerDetails = {
@@ -19386,20 +19418,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this149 = this;
+          var _this150 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this149.sellerDetails = rest.data();
+            _this150.sellerDetails = rest.data();
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this150 = this;
+          var _this151 = this;
 
           console.log(this.BuyerUserId, this.BuyerPropertyId);
           this.AgentService.getBuyerrDetails(this.BuyerUserId, this.BuyerPropertyId).then(function (rest) {
-            _this150.BuyerDetails = rest.data();
+            _this151.BuyerDetails = rest.data();
           });
         }
       }]);
@@ -19788,7 +19820,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this151 = this;
+          var _this152 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -19797,24 +19829,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this151.Lookingpostcode = params.get("Lookingpostcode");
-            _this151.ChainStatus = params.get("ChainStatus");
-            _this151.Conditions = params.get("Conditions");
-            _this151.Position = params.get("Position");
-            _this151.MinAmount = params.get("MinAmount");
-            _this151.MaxAmount = params.get("MaxAmount");
-            _this151.Type = params.get("PropertyType");
-            _this151.matchStatus = params.get("matchStatus");
-            _this151.propertyId = params.get("propertyId").trim();
-            _this151.expressed = params.get("expressed");
-            _this151.PropertyFor = params.get("PropertyFor");
-            _this151.buyerPropertyId = params.get("id");
-            _this151.buyerUserId = params.get("UserId");
-            _this151.SellerPropertyID = params.get("buyerId");
+            _this152.Lookingpostcode = params.get("Lookingpostcode");
+            _this152.ChainStatus = params.get("ChainStatus");
+            _this152.Conditions = params.get("Conditions");
+            _this152.Position = params.get("Position");
+            _this152.MinAmount = params.get("MinAmount");
+            _this152.MaxAmount = params.get("MaxAmount");
+            _this152.Type = params.get("PropertyType");
+            _this152.matchStatus = params.get("matchStatus");
+            _this152.propertyId = params.get("propertyId").trim();
+            _this152.expressed = params.get("expressed");
+            _this152.PropertyFor = params.get("PropertyFor");
+            _this152.buyerPropertyId = params.get("id");
+            _this152.buyerUserId = params.get("UserId");
+            _this152.SellerPropertyID = params.get("buyerId");
           });
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this151.notificationContent = element.data().MynestimateBuyerDetails;
+              _this152.notificationContent = element.data().MynestimateBuyerDetails;
             });
           });
           this.getBuyerData();
@@ -19837,17 +19869,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "check",
         value: function check() {
-          var _this152 = this;
+          var _this153 = this;
 
           this.HttpService.getPropertyIdMatches().subscribe(function (data) {
             console.log(data.length);
             data.forEach(function (elements) {
-              if (elements.Type == "Agent_confirmed" && elements.UserId == _this152.uid && elements.PropertyId == _this152.propertyId) {
-                _this152.expressed = "true";
+              if (elements.Type == "Agent_confirmed" && elements.UserId == _this153.uid && elements.PropertyId == _this153.propertyId) {
+                _this153.expressed = "true";
               }
 
-              if (elements.Type != "Agent_confirmed" && elements.UserId != _this152.uid && elements.PropertyId != _this152.propertyId) {
-                _this152.expressed = "false";
+              if (elements.Type != "Agent_confirmed" && elements.UserId != _this153.uid && elements.PropertyId != _this153.propertyId) {
+                _this153.expressed = "false";
               }
             });
           });
@@ -19855,25 +19887,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this153 = this;
+          var _this154 = this;
 
           this.SelectedMyMatchesService.getBuyerRequirement(this.buyerUserId, this.buyerPropertyId).then(function (res) {
-            _this153.buyerDetails = res.data();
-            _this153.buyingPosition = res.data().Position;
-            _this153.buyerFinancialPosition = res.data().FinancialPosition;
-            _this153.BuyerPropertyType = res.data().PropertyType;
-            _this153.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this153.BuyerRoommin = res.data().Roommin;
-            _this153.BuyerRoomsmax = res.data().Roomsmax;
-            _this153.username = res.data().username;
-            _this153.usertitle = res.data().usertitle;
-            _this153.buyerPropertyFor = res.data().PropertyFor;
-            _this153.PropertyType = res.data().PropertyType;
-            _this153.Ownership = res.data().Ownership;
-            _this153.LookingStreetname = res.data().LookingStreetname;
-            _this153.Conditions = res.data().Conditions;
-            _this153.Maxbathroom = res.data().Maxbathroom;
-            _this153.Maxreception = res.data().Maxreception;
+            _this154.buyerDetails = res.data();
+            _this154.buyingPosition = res.data().Position;
+            _this154.buyerFinancialPosition = res.data().FinancialPosition;
+            _this154.BuyerPropertyType = res.data().PropertyType;
+            _this154.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this154.BuyerRoommin = res.data().Roommin;
+            _this154.BuyerRoomsmax = res.data().Roomsmax;
+            _this154.username = res.data().username;
+            _this154.usertitle = res.data().usertitle;
+            _this154.buyerPropertyFor = res.data().PropertyFor;
+            _this154.PropertyType = res.data().PropertyType;
+            _this154.Ownership = res.data().Ownership;
+            _this154.LookingStreetname = res.data().LookingStreetname;
+            _this154.Conditions = res.data().Conditions;
+            _this154.Maxbathroom = res.data().Maxbathroom;
+            _this154.Maxreception = res.data().Maxreception;
           });
         }
       }]);
@@ -20366,30 +20398,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this154 = this;
+          var _this155 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this154.uid) {
-                _this154.user.Name = element.data().Name;
-                _this154.user.Email = element.data().email;
+              if (element.data().uid == _this155.uid) {
+                _this155.user.Name = element.data().Name;
+                _this155.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this154.user.DOB = element.data().DOB.toDate();
+                  _this155.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this154.user.Phone = element.data().Phone;
+                  _this155.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this154.user.Currentaddress = element.data().Currentaddress;
+                  _this155.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this154.user.prefrence = element.data().prefrence;
+                  _this155.user.prefrence = element.data().prefrence;
                 }
               }
             });
@@ -20482,13 +20514,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
-          var _this155 = this;
+          var _this156 = this;
 
           this.isLoading = true;
           this["return"] = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this155.isLoading = false;
+            _this156.isLoading = false;
 
-            _this155.alert();
+            _this156.alert();
           });
         }
       }, {
@@ -20750,31 +20782,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this156 = this;
+          var _this157 = this;
 
           this.initProfile();
           new Date().getTime() / 1000;
           document.getElementById("custom").style.overflowY = "overlay";
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this156.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this156.userData));
+              _this157.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this157.userData));
 
-              _this156.LoggedIn(); //Notification Show
+              _this157.LoggedIn(); //Notification Show
 
 
-              _this156.NavigationService.Notification(_this156.uid).subscribe(function (notification) {
+              _this157.NavigationService.Notification(_this157.uid).subscribe(function (notification) {
                 notification.forEach(function (element) {
-                  _this156.bellShow = true;
-                  _this156.belliconone = false;
-                  _this156.bellicontwo = false;
+                  _this157.bellShow = true;
+                  _this157.belliconone = false;
+                  _this157.bellicontwo = false;
                 });
               });
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this156.LoggedOut();
+              _this157.LoggedOut();
             }
           }); // this.userData = JSON.parse(sessionStorage.getItem('currentUser'));
           // if (this.userData != null) {
@@ -20797,8 +20829,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this156.topLine = element.data().topLine;
-              _this156.secondLine = element.data().SecondLine;
+              _this157.topLine = element.data().topLine;
+              _this157.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -20820,46 +20852,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this157 = this;
+          var _this158 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this157.sellerProperty.push(element.data());
+                _this158.sellerProperty.push(element.data());
               }
             });
-            _this157.noSellerOfMatche = _this157.sellerProperty.length;
-            _this157.matches = _this157.buyerProperty.length + _this157.sellerProperty.length;
+            _this158.noSellerOfMatche = _this158.sellerProperty.length;
+            _this158.matches = _this158.buyerProperty.length + _this158.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this157.buyerProperty.push(element.data());
+              _this158.buyerProperty.push(element.data());
             });
-            _this157.noBuyerMatches = _this157.buyerProperty.length;
-            _this157.matches = _this157.buyerProperty.length + _this157.sellerProperty.length;
+            _this158.noBuyerMatches = _this158.buyerProperty.length;
+            _this158.matches = _this158.buyerProperty.length + _this158.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this158 = this;
+          var _this159 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this158.bellicon.push(item.data());
+              _this159.bellicon.push(item.data());
 
-              if (_this158.bellicon.length > 0) {
-                _this158.belliconone = false;
+              if (_this159.bellicon.length > 0) {
+                _this159.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this158.confirmInterest.push(item.data());
+                _this159.confirmInterest.push(item.data());
 
-                _this158.notifications = _this158.confirmInterest.length;
+                _this159.notifications = _this159.confirmInterest.length;
               } else {
-                _this158.notifications = 0;
+                _this159.notifications = 0;
               }
             });
           });
@@ -20919,24 +20951,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this159 = this;
+          var _this160 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this159.isLoading = false;
+            _this160.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this160 = this;
+          var _this161 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this160.user.Lastseen = _this160.now;
-            _this160["return"] = _this160.FormsService.createUserTime(_this160.user).then(function (data) {});
-            _this160.isLoading = false;
+            _this161.user.Lastseen = _this161.now;
+            _this161["return"] = _this161.FormsService.createUserTime(_this161.user).then(function (data) {});
+            _this161.isLoading = false;
             window.location.reload();
           });
         } //Signup Google
@@ -20944,15 +20976,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this161 = this;
+          var _this162 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this161.user.Lastseen = _this161.now;
-            _this161["return"] = _this161.FormsService.createUserTime(_this161.user).then(function (data) {});
-            _this161.isLoading = false;
+            _this162.user.Lastseen = _this162.now;
+            _this162["return"] = _this162.FormsService.createUserTime(_this162.user).then(function (data) {});
+            _this162.isLoading = false;
 
-            _this161.initProfile();
+            _this162.initProfile();
 
             window.location.reload();
           });
@@ -20960,28 +20992,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this162 = this;
+          var _this163 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this162.KnowUser.push(element.data());
+              _this163.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this162.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var dialogRef = _this163.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this162.isLoading = false;
+                _this163.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this162.authService.SignIn(email, pass).then(function (data) {
-                  _this162.isLoading = false;
+                _this163.authService.SignIn(email, pass).then(function (data) {
+                  _this163.isLoading = false;
 
-                  _this162.initProfile();
+                  _this163.initProfile();
 
                   window.location.reload();
                 });
@@ -21009,12 +21041,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this163 = this;
+          var _this164 = this;
 
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this163.isLoading = false;
+            _this164.isLoading = false;
 
-            _this163.initProfile();
+            _this164.initProfile();
           });
         }
       }, {
@@ -21045,14 +21077,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this164 = this;
+          var _this165 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this164.confirmInterests.push({
+                _this165.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -21102,13 +21134,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this165 = this;
+          var _this166 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this165.confirmInterests.push({
+              _this166.confirmInterests.push({
                 Detail: item.data(),
                 id: item.id
               });
@@ -21118,22 +21150,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this166 = this;
+          var _this167 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.confirmInterests = [];
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              _this166.confirmInterests.push({
+              _this167.confirmInterests.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              if (_this166.confirmInterests.length > 0) {
+              if (_this167.confirmInterests.length > 0) {
                 document.getElementById("custom").style.overflowY = "hidden";
-                _this166.notificationoverlay = true;
-                _this166.bellicontwo = true;
+                _this167.notificationoverlay = true;
+                _this167.bellicontwo = true;
               }
             });
           });
@@ -21141,7 +21173,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this167 = this;
+          var _this168 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -21149,9 +21181,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this167.uid) {
+              if (element.UserId == _this168.uid) {
                 document.getElementById("custom").style.overflowY = "overlay";
-                _this167.confirmInterests = null;
+                _this168.confirmInterests = null;
               }
             });
           });
@@ -21415,19 +21447,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this168 = this;
+          var _this169 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this168.confirmInterest.push({
+              _this169.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this168.confirmInterest);
+            console.log(_this169.confirmInterest);
           });
         }
       }, {
@@ -21718,13 +21750,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this169 = this;
+          var _this170 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this169.facebook = element.data().Facebook;
-              _this169.Instagram = element.data().Instragram;
-              _this169.Twitter = element.data().Twitter;
+              _this170.facebook = element.data().Facebook;
+              _this170.Instagram = element.data().Instragram;
+              _this170.Twitter = element.data().Twitter;
             });
           });
         }
@@ -22705,14 +22737,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this170 = this;
+          var _this171 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this170.idToken = params['id_token'];
-            _this170.accessToken = params['access_token'];
+            _this171.idToken = params['id_token'];
+            _this171.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this170._router.navigate(['/']).then(function () {
+            _this171._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -22868,10 +22900,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this171 = this;
+          var _this172 = this;
 
           this.HttpService.getPrivacy().subscribe(function (data) {
-            _this171.privacyPolicy = data[0].PrivacyPolicy;
+            _this172.privacyPolicy = data[0].PrivacyPolicy;
           });
         }
       }]);
@@ -23507,41 +23539,41 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this172 = this;
+          var _this173 = this;
 
           this.authService.GoogleAuth().then(function (data) {
-            _this172.loggedIn = true;
+            _this173.loggedIn = true;
 
-            _this172.userLogged();
+            _this173.userLogged();
 
-            _this172.items();
+            _this173.items();
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this173 = this;
+          var _this174 = this;
 
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this173.loggedIn = true;
+            _this174.loggedIn = true;
 
-            _this173.items();
+            _this174.items();
 
-            _this173.userLogged();
+            _this174.userLogged();
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this174 = this;
+          var _this175 = this;
 
           this.authService.SignIn(email, pass).then(function (data) {
             window.location.reload();
 
-            _this174.items();
+            _this175.items();
 
-            _this174.userLogged();
+            _this175.userLogged();
           });
         }
       }, {
@@ -23554,84 +23586,84 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this175 = this;
+          var _this176 = this;
 
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this175.BuyerDetail.push(element.data());
+              _this176.BuyerDetail.push(element.data());
             });
-            localStorage.setItem("AllUserDetail", JSON.stringify(_this175.BuyerDetail));
-            _this175.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
+            localStorage.setItem("AllUserDetail", JSON.stringify(_this176.BuyerDetail));
+            _this176.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
           });
         }
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this176 = this;
+          var _this177 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this176.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this176.userData));
+              _this177.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this177.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this176.loggedIn = true;
+              _this177.loggedIn = true;
 
-              _this176.agentItem();
+              _this177.agentItem();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this176.loggedIn = false;
+              _this177.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this177 = this;
+          var _this178 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this177.Companyname = element.data().company;
-              _this177.Address = element.data().address;
-              _this177.Postcode = element.data().postcode;
-              _this177.Phonenumber = element.data().phone;
-              _this177.Jobtitle = element.data().jobtitle;
-              _this177.SinglePercentage = element.data().solefees;
-              _this177.Multipercentage = element.data().multiplefees;
-              _this177.Image = element.data().image;
-              _this177.Fullname = element.data().fullname;
-              _this177.PropertyId = element.id;
-              _this177.UserId = _this177.user.uid;
+              _this178.Companyname = element.data().company;
+              _this178.Address = element.data().address;
+              _this178.Postcode = element.data().postcode;
+              _this178.Phonenumber = element.data().phone;
+              _this178.Jobtitle = element.data().jobtitle;
+              _this178.SinglePercentage = element.data().solefees;
+              _this178.Multipercentage = element.data().multiplefees;
+              _this178.Image = element.data().image;
+              _this178.Fullname = element.data().fullname;
+              _this178.PropertyId = element.id;
+              _this178.UserId = _this178.user.uid;
             });
           });
         }
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this178 = this;
+          var _this179 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.HttpService.getAllUsers(email).subscribe(function (data) {
-              _this178.emailData = data;
+              _this179.emailData = data;
 
-              if (_this178.emailData.length == 1) {
-                _this178.emailField = true;
-                _this178.notValidEmail = false;
+              if (_this179.emailData.length == 1) {
+                _this179.emailField = true;
+                _this179.notValidEmail = false;
 
-                if (_this178.emailData[0].AgentType == null) {
-                  _this178.emailField = false;
-                  _this178.notValidEmail = true;
+                if (_this179.emailData[0].AgentType == null) {
+                  _this179.emailField = false;
+                  _this179.notValidEmail = true;
 
-                  var dialogRef = _this178.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_10__["AlertUserTypeComponent"], {
+                  var dialogRef = _this179.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_10__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as Agent"
                     }
                   });
                 }
               } else {
-                _this178.notValidEmail = true;
+                _this179.notValidEmail = true;
               }
             });
           } else {
@@ -23862,7 +23894,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this179 = this;
+          var _this180 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -23871,30 +23903,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this179.id = params.get("id");
+            _this180.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this179.agents = data;
+            _this180.agents = data;
           });
           this.getAgentDetails();
         }
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage) {
-          var _this180 = this;
+          var _this181 = this;
 
           this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-            _this180.Router.navigate(["/Agenthome"]);
+            _this181.Router.navigate(["/Agenthome"]);
           });
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this181 = this;
+          var _this182 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this181.agents = element.data();
+              _this182.agents = element.data();
             });
           });
         }
@@ -24023,7 +24055,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelecteddetailareaComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this182 = this;
+          var _this183 = this;
 
           this.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
           this.Minamount = this.UserDetails[0].Buyer.MinAmount;
@@ -24033,20 +24065,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.ChainStatus = this.UserDetails[0].Buyer.Position;
           this.FormsService.getUser(this.UserDetails[0].Buyer.UserId).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this182.UserDetails[0].Buyer.UserId) {
-                _this182.username = element.data().Name;
-                _this182.email = element.data().email;
-                _this182.Phone = element.data().Phone;
+              if (element.data().uid == _this183.UserDetails[0].Buyer.UserId) {
+                _this183.username = element.data().Name;
+                _this183.email = element.data().email;
+                _this183.Phone = element.data().Phone;
               }
             });
           });
           this.FormsService.getUser(this.UserDetails[0].Seller.UserId).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this182.UserDetails[0].Seller.UserId) {
-                _this182.sellerusername = element.data().Name;
-                _this182.selleremail = element.data().email;
-                _this182.sellerPhone = element.data().Phone;
-                _this182.selleraddress = element.data().Currentaddress;
+              if (element.data().uid == _this183.UserDetails[0].Seller.UserId) {
+                _this183.sellerusername = element.data().Name;
+                _this183.selleremail = element.data().email;
+                _this183.sellerPhone = element.data().Phone;
+                _this183.selleraddress = element.data().Currentaddress;
               }
             });
           });
@@ -24211,28 +24243,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelecteddetailsellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this183 = this;
+          var _this184 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this183.LookingAddress = params.get("LookingAddress");
-            _this183.LookingTown = params.get("LookingTown");
-            _this183.Lookingpostcode = params.get("Lookingpostcode");
-            _this183.Lookingstate = params.get("Lookingstate");
-            _this183.MaxAmount = params.get("MaxAmount");
-            _this183.Maxbathroom = params.get("Maxbathrooms");
-            _this183.Maxreception = params.get("Maxreception");
-            _this183.PropertyCondition = params.get("PropertyCondition");
-            _this183.PropertyType = params.get("PropertyType");
-            _this183.Roomsmax = params.get("Roomsmax");
-            _this183.ownership = params.get("ownership");
-            _this183.UserId = params.get("UserId");
+            _this184.LookingAddress = params.get("LookingAddress");
+            _this184.LookingTown = params.get("LookingTown");
+            _this184.Lookingpostcode = params.get("Lookingpostcode");
+            _this184.Lookingstate = params.get("Lookingstate");
+            _this184.MaxAmount = params.get("MaxAmount");
+            _this184.Maxbathroom = params.get("Maxbathrooms");
+            _this184.Maxreception = params.get("Maxreception");
+            _this184.PropertyCondition = params.get("PropertyCondition");
+            _this184.PropertyType = params.get("PropertyType");
+            _this184.Roomsmax = params.get("Roomsmax");
+            _this184.ownership = params.get("ownership");
+            _this184.UserId = params.get("UserId");
           });
           this.HttpService.getUsers(this.UserId).subscribe(function (data) {
-            _this183.userDetail = data;
-            _this183.username = _this183.userDetail.username;
-            _this183.email = _this183.userDetail.email;
-            _this183.Phone = _this183.userDetail.Phone;
-            _this183.address = _this183.userDetail.CurrentAddress;
+            _this184.userDetail = data;
+            _this184.username = _this184.userDetail.username;
+            _this184.email = _this184.userDetail.email;
+            _this184.Phone = _this184.userDetail.Phone;
+            _this184.address = _this184.userDetail.CurrentAddress;
           });
         }
       }, {
@@ -25789,7 +25821,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this184 = this;
+        var _this185 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -25803,8 +25835,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this184.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this184.userData));
+            _this185.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this185.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -25832,7 +25864,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 3:
                     result = _context54.sent;
-                    this.ngZone.run(function () {}); // this.SetUserData(result.user);
+                    this.ngZone.run(function () {
+                      console.log(result);
+                      window.location.reload();
+                    }); // this.SetUserData(result.user);
 
                     _context54.next = 10;
                     break;
@@ -25954,7 +25989,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 3:
                     result = _context57.sent;
-                    this.ngZone.run(function () {});
+                    this.ngZone.run(function () {
+                      window.location.reload();
+                    });
                     _context57.next = 10;
                     break;
 
@@ -25975,7 +26012,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthSignup",
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee58() {
-            var _this185 = this;
+            var _this186 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee58$(_context58) {
@@ -25991,7 +26028,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     this.ngZone.run(function () {
                       console.log(result.user);
 
-                      _this185.SetUserData(result.user);
+                      _this186.SetUserData(result.user);
                     });
                     _context58.next = 10;
                     break;
@@ -27137,33 +27174,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this186 = this;
+          var _this187 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
             password: password
           }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            // login successful if there's a jwt token in the response
-            if (response.jwt && response.user) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem('updatedUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentJwt', response.jwt);
-              _this186.userData = response.user;
-              _this186.authToken = sessionStorage.getItem('currentJwt');
-
-              _this186.currentUserSubject.next(response.user);
-            }
-
-            return response.user;
-          }));
-        }
-      }, {
-        key: "Googlelogin",
-        value: function Googlelogin(token, accessToken) {
-          var _this187 = this;
-
-          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
@@ -27180,13 +27196,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
-        key: "Facebooklogin",
-        value: function Facebooklogin() {
+        key: "Googlelogin",
+        value: function Googlelogin(token, accessToken) {
           var _this188 = this;
 
-          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            console.log(response); // login successful if there's a jwt token in the response
-
+          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
@@ -27202,9 +27217,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
+        key: "Facebooklogin",
+        value: function Facebooklogin() {
+          var _this189 = this;
+
+          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            console.log(response); // login successful if there's a jwt token in the response
+
+            if (response.jwt && response.user) {
+              // store user details and jwt token in local storage to keep user logged in between page refreshes
+              localStorage.setItem('updatedUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentJwt', response.jwt);
+              _this189.userData = response.user;
+              _this189.authToken = sessionStorage.getItem('currentJwt');
+
+              _this189.currentUserSubject.next(response.user);
+            }
+
+            return response.user;
+          }));
+        }
+      }, {
         key: "logout",
         value: function logout() {
-          var _this189 = this;
+          var _this190 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -27212,7 +27249,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this189.router.navigate(["/homenew"]);
+            _this190.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -27429,19 +27466,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this190 = this;
+          var _this191 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this190.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this190.userData));
+              _this191.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this191.userData));
 
-              _this190.LoggedIn();
+              _this191.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this190.LoggedOut();
+              _this191.LoggedOut();
             }
           });
           this.getNotificationContent();
@@ -27462,58 +27499,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this191 = this;
+          var _this192 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this191.isLoading = false;
+            _this192.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this192 = this;
+          var _this193 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this192.isLoading = false;
+            _this193.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this193 = this;
+          var _this194 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this193.isLoading = false;
+            _this194.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this194 = this;
+          var _this195 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this194.KnowUser.push(element.data());
+              _this195.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this194.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this195.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this194.isLoading = false;
+                _this195.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this194.authService.SignIn(email, pass).then(function (data) {
-                  _this194.isLoading = false;
+                _this195.authService.SignIn(email, pass).then(function (data) {
+                  _this195.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -27573,23 +27610,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this195 = this;
+          var _this196 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this195.notificationContent = element.data().SingupFromMenu;
+              _this196.notificationContent = element.data().SingupFromMenu;
             });
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this196 = this;
+          var _this197 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this196.topLine = element.data().topLine;
-              _this196.secondLine = element.data().SecondLine;
+              _this197.topLine = element.data().topLine;
+              _this197.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -27700,10 +27737,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this197 = this;
+          var _this198 = this;
 
           this.HttpService.getTerms().subscribe(function (data) {
-            _this197.termsCondition = data[0].Terms;
+            _this198.termsCondition = data[0].Terms;
           });
         }
       }]);
