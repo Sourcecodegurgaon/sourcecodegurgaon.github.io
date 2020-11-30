@@ -2463,7 +2463,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.dialog = dialog;
         this.adminPanelService = adminPanelService;
         this.checked = false;
-        this.isLoading = false;
         this.KnowUser = [];
         this.type = "Admin";
         this.LoggedIn = false;
@@ -2515,12 +2514,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.multiSecond = 0;
         this.multiThird = 0;
         this.hide = true;
+        this.adminId = "ritinnijhawan@source-code.in";
       }
 
       _createClass(AdminPanelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
           this.getUser = JSON.parse(localStorage.getItem("user"));
+
+          if (this.getUser != null) {
+            this.LoggedIn = true;
+          } else {
+            this.LoggedIn = false;
+          }
+
           this.getUserDetails();
           this.getAdminDetails();
           this.dashboardDetails();
@@ -2634,12 +2641,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               if (element.data().UserType == "Admin") {
                 _this5.LoggedIn = true;
               } else if (element.data().UserType != "Admin") {
-                var dialogRef = _this5.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
-                  data: {
-                    message: "Please Login as Admin"
-                  }
-                });
-
+                _this5.isLoading = false;
                 _this5.LoggedIn = false;
               }
             });
@@ -2867,30 +2869,48 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function signIn(email, pass) {
           var _this9 = this;
 
-          this.isLoading = true;
-          this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
-            data.forEach(function (element) {
-              _this9.KnowUser.push(element.data());
+          var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-              if (element.data().email == email && element.data().UserType != "Admin") {
-                var dialogRef = _this9.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
-                  data: {
-                    message: "Please Login as Admin"
-                  }
-                });
+          if (re.test(String(email).toLowerCase()) == true) {
+            this.isLoading = true;
 
+            if (this.adminId == email) {
+              this.AuthService.SignIn(email, pass).then(function (data) {
                 _this9.isLoading = false;
-              } else if (element.data().email == email && element.data().UserType == "Admin") {
-                console.log(email, pass);
+                _this9.LoggedIn = true;
+                window.location.reload();
+              });
+            } else {
+              this.LoggedIn = false;
+              this.isLoading = false;
+              var dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
+                data: {
+                  message: "Only users with role 'Administrator' are allowed access to this panel"
+                }
+              });
+              this.isLoading = false;
+            }
+          } else {
+            this.LoggedIn = false;
+            this.isLoading = false;
 
-                _this9.AuthService.SignIn(email, pass).then(function (data) {
-                  _this9.isLoading = false;
-                  _this9.LoggedIn = true;
-                  window.location.reload();
-                });
+            var _dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_4__["AlertUserTypeComponent"], {
+              data: {
+                message: "Enter valid email Address"
               }
             });
-          });
+
+            this.isLoading = false;
+          } // if(element.data().email != email)
+          //   {
+          //     this.LoggedIn = false
+          //       this.isLoading = false;
+          //       const dialogRef = this.dialog.open(AlertUserTypeComponent, {
+          //         data: { message: "Enter Valid Email" }
+          //       });
+          //   }
+          //if(element.data().email == email  && element.data().UserType == "Admin")
+
         }
       }, {
         key: "getAdminDetails",
@@ -4341,7 +4361,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 var file = _step.value;
 
                 if (file.size > 2000000) {
-                  var _dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+                  var _dialogRef2 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
                     data: {
                       message: "Images Size must be 2MB"
                     }
@@ -4363,7 +4383,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   this.uploads.push(uploadTrack);
 
                   if (this.uploads > 8) {
-                    var _dialogRef2 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
+                    var _dialogRef3 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_6__["AltertFormDialogComponent"], {
                       data: {
                         message: "Upload Max 8 Images"
                       }
@@ -5726,7 +5746,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n.user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n\n}\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n}\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\nspan.button-size {\n    font-size: 20px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n.tab-area {\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n\n}\n.search-field\n{\n    display: flex;\n    align-items: center;\n    justify-content: unset;\n    border-bottom: 1px solid black;\n    width: 16vw;\n\n}\n.user-tab {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\n.agent-tab{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n   margin-left: 3em;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\nimg.user-image {\n    height: 4vh;\n}\n.user-count {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.user-counter {\n    display: flex;\n    justify-content: space-evenly;\n    padding: 0.5em;\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 3px 3px 5px 6px #ccc;\n    margin-right: 2em;\n    flex-direction: column;\n}\n.user-count-text {\n    text-align: center;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    color: var(--light-blue-color);\n    font-size: 2.7em;\n    padding-left: 10px;\n\n}\n.Main-tab-area-container {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    align-content: center;\n    justify-content: center;\n    margin-top: 2em;\n    align-items: flex-end;\n}\n.heading-count-text {\n    text-align: right;\n    color: #0F3C73;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    padding-left: 2em;\n}\n.user-count-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 1.5em;\n    padding-left: 10px;\n}\n.user-count-area-main {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}\nspan.border-right {\n    border: 1px solid #00000029;\n    height: 3em;\n    margin-bottom: 10px;\n}\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.4fr;\n    margin-right: 2em;\n    margin-top: 2em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n    display: flex;\n    align-items: center;\n}\n.user-details {\n    display: grid;\n    grid-template-columns: 1.3fr 1fr 1fr 1fr;\n}\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.example-margin {\n    padding-right: 10px;\n}\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n.tab-content-email {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    margin-right: 2em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1em;\n    color: #030303;\n}\n.cursor-show\n{\n    cursor: pointer;\n}\n.user-content-top-heading.agent-content-top-heading {\n    grid-template-columns: 0.5fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr;\n}\n.user-content-lower-result.agent-content-lower-result{\n    grid-template-columns: 0.5fr 0.8fr 0.8fr 1fr 1fr 0.7fr;\n}\n.add-agent-overlay{\n    position: fixed;\n    background-color: #0000008c;\n    width: 100vw;\n    top: 0;\n    height: 100vh;\n}\n.add-agent-background {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.full-width\n{\n    width: 100%;\n}\n.wrapper-add-agent {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n}\nimg.image-cross-image {\n    height: 2vh;\n}\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.add-agent-top-headin {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 1em;\n}\n.add_more_button{\n    padding: 0.7em !important;\n}\nimg.serach-icon-image {\n    height: 2vh;\n}\n.search-icon {\n    margin-left: 2em;\n    margin-top: 10px;\n}\n.agent-tab:hover\n{\n    cursor: pointer;\n}\n.user-tab:hover{\n    cursor: pointer;\n}\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\nimg.down-side-arrow {\n    /* height: 1.5vh; */\n    margin-left: 10px;\n    width: 1em;\n}\n.checkbox-image {\n    display: flex;\n    align-items: center;\n}\nform.example-form {\n    margin-bottom: -1em;\n}\n.search-icon:hover\n{\n    cursor:pointer;\n}\n.inner-job-title {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n    width: 200px;\n    height: 200px;\n    overflow: overlay;\n}\n.job-title-content {\n    text-align: center;\n    font-size: 1.2em;\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n}\n.overlay-black-back {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.select-job-title-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n}\nimg.serach-icon-image-job-title {\n    height: 2vh;\n}\n.selct-job-title-text\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n    font-size: 16px;\n}\n.text-heading-tab-content:hover\n{\n    cursor:pointer;\n}\n.select-job-title-image-close:hover\n{\n    cursor:pointer;\n}\n.job-title-content:hover\n{\n    cursor:pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1hZ2VudC10YWIvdXNlcnMtYWdlbnQtdGFiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCO0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTs7QUFFZjtBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLG1CQUFtQjs7QUFFdkI7QUFDQTs7SUFFSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsV0FBVzs7QUFFZjtBQUVBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7R0FDZixnQkFBZ0I7SUFDZixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLGNBQWM7SUFDZCx1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxpQkFBaUI7SUFDakIsc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQiw4QkFBOEI7SUFDOUIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixrQ0FBa0M7SUFDbEMscUJBQXFCO0lBQ3JCLHVCQUF1QjtJQUN2QixlQUFlO0lBQ2YscUJBQXFCO0FBQ3pCO0FBR0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYix3Q0FBd0M7QUFDNUM7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhDQUE4QztJQUM5QyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHdCQUF3QjtJQUN4Qix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSx3REFBd0Q7QUFDNUQ7QUFDQTtJQUNJLHNEQUFzRDtBQUMxRDtBQUNBO0lBQ0ksZUFBZTtJQUNmLDJCQUEyQjtJQUMzQixZQUFZO0lBQ1osTUFBTTtJQUNOLGFBQWE7QUFDakI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxXQUFXO0FBQ2Y7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSx5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUVBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsVUFBVTtBQUNkO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBSUE7SUFDSSx1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZUFBZTtJQUNmLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksY0FBYztBQUNsQjtBQUNBOztJQUVJLGNBQWM7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VzZXJzLWFnZW50LXRhYi91c2Vycy1hZ2VudC10YWIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG4gICAgcGFkZGluZy10b3A6IDh2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG5cbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi50YWItYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuLnNlYXJjaC1maWVsZFxue1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2V0O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICB3aWR0aDogMTZ2dztcblxufVxuXG4udXNlci10YWIge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgcGFkZGluZzogMHB4IDFlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogN3B4O1xufVxuLmFnZW50LXRhYntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgbWFyZ2luLWxlZnQ6IDNlbTtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xuICAgIHBhZGRpbmctYm90dG9tOiA3cHg7XG59XG5pbWcudXNlci1pbWFnZSB7XG4gICAgaGVpZ2h0OiA0dmg7XG59XG4udXNlci1jb3VudCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1jb3VudGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIHBhZGRpbmc6IDAuNWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggNnB4ICNjY2M7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi51c2VyLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgZm9udC1zaXplOiAyLjdlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG5cbn1cbi5NYWluLXRhYi1hcmVhLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDJmciAxZnIgMWZyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYWxpZ24taXRlbXM6IGZsZXgtZW5kO1xufVxuXG5cbi5oZWFkaW5nLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IHJpZ2h0O1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtc2l6ZTogMS4zZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG59XG4udXNlci1jb3VudC1oZWFkaW5nXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAxLjVlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG4udXNlci1jb3VudC1hcmVhLW1haW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xufVxuc3Bhbi5ib3JkZXItcmlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICMwMDAwMDAyOTtcbiAgICBoZWlnaHQ6IDNlbTtcbiAgICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuXG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC40ZnI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi51c2VyLWRldGFpbHMge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxLjNmciAxZnIgMWZyIDFmcjtcbn1cbi51aWQtY29udGVudCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi5leGFtcGxlLW1hcmdpbiB7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cblxuaW1nLmljb24tYWN0aW9uIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xufVxuXG4udGFiLWNvbnRlbnQtZW1haWwge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuNWZyIDFmciAxZnIgMWZyIDAuNWZyO1xuICAgIG1hcmdpbi1sZWZ0OiAwZW07XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIC8qIG1hcmdpbi1ib3R0b206IDFlbTsgKi9cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTNweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4uY3Vyc29yLXNob3dcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nLmFnZW50LWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMC43ZnIgMC44ZnIgMWZyIDEuMmZyIDAuNGZyO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQuYWdlbnQtY29udGVudC1sb3dlci1yZXN1bHR7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjVmciAwLjhmciAwLjhmciAxZnIgMWZyIDAuN2ZyO1xufVxuLmFkZC1hZ2VudC1vdmVybGF5e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDAwMDAwOGM7XG4gICAgd2lkdGg6IDEwMHZ3O1xuICAgIHRvcDogMDtcbiAgICBoZWlnaHQ6IDEwMHZoO1xufVxuXG4uYWRkLWFnZW50LWJhY2tncm91bmQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4uZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLndyYXBwZXItYWRkLWFnZW50IHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuaW1nLmltYWdlLWNyb3NzLWltYWdlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cblxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uYWRkLWFnZW50LXRvcC1oZWFkaW4ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG5cbi5hZGRfbW9yZV9idXR0b257XG4gICAgcGFkZGluZzogMC43ZW0gIWltcG9ydGFudDtcbn1cbmltZy5zZXJhY2gtaWNvbi1pbWFnZSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG4uc2VhcmNoLWljb24ge1xuICAgIG1hcmdpbi1sZWZ0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cblxuLmFnZW50LXRhYjpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi51c2VyLXRhYjpob3ZlcntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5zcGFuLmxpbmUtaGVpZ2h0IHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjQzFCQkJCO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG59XG5pbWcuZG93bi1zaWRlLWFycm93IHtcbiAgICAvKiBoZWlnaHQ6IDEuNXZoOyAqL1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICAgIHdpZHRoOiAxZW07XG59XG4uY2hlY2tib3gtaW1hZ2Uge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmZvcm0uZXhhbXBsZS1mb3JtIHtcbiAgICBtYXJnaW4tYm90dG9tOiAtMWVtO1xufVxuLnNlYXJjaC1pY29uOmhvdmVyXG57XG4gICAgY3Vyc29yOnBvaW50ZXI7XG59XG5cblxuXG4uaW5uZXItam9iLXRpdGxlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICB3aWR0aDogMjAwcHg7XG4gICAgaGVpZ2h0OiAyMDBweDtcbiAgICBvdmVyZmxvdzogb3ZlcmxheTtcbn1cbi5qb2ItdGl0bGUtY29udGVudCB7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDo1MDA7XG59XG4ub3ZlcmxheS1ibGFjay1iYWNrIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgaGVpZ2h0OiAxMDAlO1xufVxuLnNlbGVjdC1qb2ItdGl0bGUtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuaW1nLnNlcmFjaC1pY29uLWltYWdlLWpvYi10aXRsZSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG4uc2VsY3Qtam9iLXRpdGxlLXRleHRcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6NTAwO1xuICAgIGZvbnQtc2l6ZTogMTZweDtcbn1cbi50ZXh0LWhlYWRpbmctdGFiLWNvbnRlbnQ6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn1cbi5zZWxlY3Qtam9iLXRpdGxlLWltYWdlLWNsb3NlOmhvdmVyXG57XG4gICAgY3Vyc29yOnBvaW50ZXI7XG59XG4uam9iLXRpdGxlLWNvbnRlbnQ6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn0iXX0= */";
+    __webpack_exports__["default"] = "\n.user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n\n}\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n}\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\nspan.button-size {\n    font-size: 20px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n.tab-area {\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n\n}\n.search-field\n{\n    display: flex;\n    align-items: center;\n    justify-content: unset;\n    border-bottom: 1px solid black;\n    width: 16vw;\n\n}\n.user-tab {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\n.agent-tab{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n   margin-left: 3em;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\nimg.user-image {\n    height: 4vh;\n}\n.user-count {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.user-counter {\n    display: flex;\n    justify-content: space-evenly;\n    padding: 0.5em;\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 3px 3px 5px 6px #ccc;\n    margin-right: 2em;\n    flex-direction: column;\n}\n.user-count-text {\n    text-align: center;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    color: var(--light-blue-color);\n    font-size: 2.7em;\n    padding-left: 10px;\n\n}\n.Main-tab-area-container {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1.1fr 0.1fr;\n    align-content: center;\n    justify-content: center;\n    margin-top: 2em;\n    align-items: flex-end;\n}\n.heading-count-text {\n    text-align: right;\n    color: #0F3C73;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    padding-left: 2em;\n}\n.user-count-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 1.3em;\n    padding-left: 10px;\n}\n.user-count-area-main {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}\nspan.border-right {\n    border: 1px solid #00000029;\n    height: 3em;\n    margin-bottom: 10px;\n}\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.4fr;\n    margin-right: 2em;\n    margin-top: 2em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n    display: flex;\n    align-items: center;\n}\n.user-details {\n    display: grid;\n    grid-template-columns: 1.3fr 1fr 1fr 1fr;\n}\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.example-margin {\n    padding-right: 10px;\n}\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n.tab-content-email {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    margin-right: 2em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1em;\n    color: #030303;\n}\n.cursor-show\n{\n    cursor: pointer;\n}\n.user-content-top-heading.agent-content-top-heading {\n    grid-template-columns: 0.5fr 0.7fr 0.8fr 1fr 1.2fr 0.4fr;\n}\n.user-content-lower-result.agent-content-lower-result{\n    grid-template-columns: 0.5fr 0.8fr 0.8fr 1fr 1fr 0.7fr;\n}\n.add-agent-overlay{\n    position: fixed;\n    background-color: #0000008c;\n    width: 100vw;\n    top: 0;\n    height: 100vh;\n}\n.add-agent-background {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.full-width\n{\n    width: 100%;\n}\n.wrapper-add-agent {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n}\nimg.image-cross-image {\n    height: 2vh;\n}\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.add-agent-top-headin {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 1em;\n}\n.add_more_button{\n    padding: 0.7em !important;\n}\nimg.serach-icon-image {\n    height: 2vh;\n}\n.search-icon {\n    margin-left: 2em;\n    margin-top: 10px;\n}\n.agent-tab:hover\n{\n    cursor: pointer;\n}\n.user-tab:hover{\n    cursor: pointer;\n}\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\nimg.down-side-arrow {\n    /* height: 1.5vh; */\n    margin-left: 10px;\n    width: 1em;\n}\n.checkbox-image {\n    display: flex;\n    align-items: center;\n}\nform.example-form {\n    margin-bottom: -1em;\n}\n.search-icon:hover\n{\n    cursor:pointer;\n}\n.inner-job-title {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n    width: 200px;\n    height: 200px;\n    overflow: overlay;\n}\n.job-title-content {\n    text-align: center;\n    font-size: 1.2em;\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n}\n.overlay-black-back {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.select-job-title-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n}\nimg.serach-icon-image-job-title {\n    height: 2vh;\n}\n.selct-job-title-text\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n    font-size: 16px;\n}\n.text-heading-tab-content:hover\n{\n    cursor:pointer;\n}\n.select-job-title-image-close:hover\n{\n    cursor:pointer;\n}\n.job-title-content:hover\n{\n    cursor:pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1hZ2VudC10YWIvdXNlcnMtYWdlbnQtdGFiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCO0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTs7QUFFZjtBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLG1CQUFtQjs7QUFFdkI7QUFDQTs7SUFFSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsV0FBVzs7QUFFZjtBQUVBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7R0FDZixnQkFBZ0I7SUFDZixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLGNBQWM7SUFDZCx1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxpQkFBaUI7SUFDakIsc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQiw4QkFBOEI7SUFDOUIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiwwQ0FBMEM7SUFDMUMscUJBQXFCO0lBQ3JCLHVCQUF1QjtJQUN2QixlQUFlO0lBQ2YscUJBQXFCO0FBQ3pCO0FBR0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYix3Q0FBd0M7QUFDNUM7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhDQUE4QztJQUM5QyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHdCQUF3QjtJQUN4Qix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSx3REFBd0Q7QUFDNUQ7QUFDQTtJQUNJLHNEQUFzRDtBQUMxRDtBQUNBO0lBQ0ksZUFBZTtJQUNmLDJCQUEyQjtJQUMzQixZQUFZO0lBQ1osTUFBTTtJQUNOLGFBQWE7QUFDakI7QUFFQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxXQUFXO0FBQ2Y7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSx5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUVBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixpQkFBaUI7SUFDakIsVUFBVTtBQUNkO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBSUE7SUFDSSx1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0FBQ2xDO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZUFBZTtJQUNmLGVBQWU7QUFDbkI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksY0FBYztBQUNsQjtBQUNBOztJQUVJLGNBQWM7QUFDbEIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VzZXJzLWFnZW50LXRhYi91c2Vycy1hZ2VudC10YWIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG4gICAgcGFkZGluZy10b3A6IDh2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG5cbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi50YWItYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuLnNlYXJjaC1maWVsZFxue1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2V0O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICB3aWR0aDogMTZ2dztcblxufVxuXG4udXNlci10YWIge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgcGFkZGluZzogMHB4IDFlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogN3B4O1xufVxuLmFnZW50LXRhYntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgbWFyZ2luLWxlZnQ6IDNlbTtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xuICAgIHBhZGRpbmctYm90dG9tOiA3cHg7XG59XG5pbWcudXNlci1pbWFnZSB7XG4gICAgaGVpZ2h0OiA0dmg7XG59XG4udXNlci1jb3VudCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1jb3VudGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIHBhZGRpbmc6IDAuNWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggNnB4ICNjY2M7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi51c2VyLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgZm9udC1zaXplOiAyLjdlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG5cbn1cbi5NYWluLXRhYi1hcmVhLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDJmciAxZnIgMS4xZnIgMC4xZnI7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG59XG5cblxuLmhlYWRpbmctY291bnQtdGV4dCB7XG4gICAgdGV4dC1hbGlnbjogcmlnaHQ7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAxLjNlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBwYWRkaW5nLWxlZnQ6IDJlbTtcbn1cbi51c2VyLWNvdW50LWhlYWRpbmdcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXNpemU6IDEuM2VtO1xuICAgIHBhZGRpbmctbGVmdDogMTBweDtcbn1cbi51c2VyLWNvdW50LWFyZWEtbWFpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5zcGFuLmJvcmRlci1yaWdodCB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgIzAwMDAwMDI5O1xuICAgIGhlaWdodDogM2VtO1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjVmciAxZnIgMWZyIDFmciAwLjRmcjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0U4RThFODtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTNweDtcbn1cbi50ZXh0LWhlYWRpbmctdGFiLWNvbnRlbnQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnVzZXItZGV0YWlscyB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDEuM2ZyIDFmciAxZnIgMWZyO1xufVxuLnVpZC1jb250ZW50IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuLmV4YW1wbGUtbWFyZ2luIHtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuXG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG5cbi50YWItY29udGVudC1lbWFpbCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi51c2VyLWNvbnRlbnQtbG93ZXItcmVzdWx0IHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC41ZnI7XG4gICAgbWFyZ2luLWxlZnQ6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgLyogbWFyZ2luLWJvdHRvbTogMWVtOyAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLm1haW4tY29udGFpbmVyLXJlc3VsdC11c2VycyB7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbn1cbi50ZXh0LW91dHB1dC10YWItY29udGVudHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBmb250LXNpemU6IDFlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5jdXJzb3Itc2hvd1xue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcuYWdlbnQtY29udGVudC10b3AtaGVhZGluZyB7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjVmciAwLjdmciAwLjhmciAxZnIgMS4yZnIgMC40ZnI7XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdC5hZ2VudC1jb250ZW50LWxvd2VyLXJlc3VsdHtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuNWZyIDAuOGZyIDAuOGZyIDFmciAxZnIgMC43ZnI7XG59XG4uYWRkLWFnZW50LW92ZXJsYXl7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDAwMDA4YztcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgdG9wOiAwO1xuICAgIGhlaWdodDogMTAwdmg7XG59XG5cbi5hZGQtYWdlbnQtYmFja2dyb3VuZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGhlaWdodDogMTAwJTtcbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ud3JhcHBlci1hZGQtYWdlbnQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuXG5pbWcuaW1hZ2UtY3Jvc3MtaW1hZ2Uge1xuICAgIGhlaWdodDogMnZoO1xufVxuXG5idXR0b24uYnV0dG9uLWNvbG9ye1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBwYWRkaW5nOiAwZW0gMmVtO1xufVxuLnVwZGF0ZS1idXR0b24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGQtYWdlbnQtdG9wLWhlYWRpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbntcbiAgICBwYWRkaW5nOiAwLjdlbSAhaW1wb3J0YW50O1xufVxuaW1nLnNlcmFjaC1pY29uLWltYWdlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cbi5zZWFyY2gtaWNvbiB7XG4gICAgbWFyZ2luLWxlZnQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuXG4uYWdlbnQtdGFiOmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLnVzZXItdGFiOmhvdmVye1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbnNwYW4ubGluZS1oZWlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDMUJCQkI7XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbn1cbmltZy5kb3duLXNpZGUtYXJyb3cge1xuICAgIC8qIGhlaWdodDogMS41dmg7ICovXG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gICAgd2lkdGg6IDFlbTtcbn1cbi5jaGVja2JveC1pbWFnZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuZm9ybS5leGFtcGxlLWZvcm0ge1xuICAgIG1hcmdpbi1ib3R0b206IC0xZW07XG59XG4uc2VhcmNoLWljb246aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn1cblxuXG5cbi5pbm5lci1qb2ItdGl0bGUge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIHdpZHRoOiAyMDBweDtcbiAgICBoZWlnaHQ6IDIwMHB4O1xuICAgIG92ZXJmbG93OiBvdmVybGF5O1xufVxuLmpvYi10aXRsZS1jb250ZW50IHtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OjUwMDtcbn1cbi5vdmVybGF5LWJsYWNrLWJhY2sge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4uc2VsZWN0LWpvYi10aXRsZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5pbWcuc2VyYWNoLWljb24taW1hZ2Utam9iLXRpdGxlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cbi5zZWxjdC1qb2ItdGl0bGUtdGV4dFxue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDo1MDA7XG4gICAgZm9udC1zaXplOiAxNnB4O1xufVxuLnRleHQtaGVhZGluZy10YWItY29udGVudDpob3Zlclxue1xuICAgIGN1cnNvcjpwb2ludGVyO1xufVxuLnNlbGVjdC1qb2ItdGl0bGUtaW1hZ2UtY2xvc2U6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn1cbi5qb2ItdGl0bGUtY29udGVudDpob3Zlclxue1xuICAgIGN1cnNvcjpwb2ludGVyO1xufSJdfQ== */";
     /***/
   },
 
@@ -8726,7 +8746,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.titleView.focus();
               document.getElementById("title").style.color = "red";
             } else if (this.user.Name == null) {
-              var _dialogRef3 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef4 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid fulll name"
                 }
@@ -8736,7 +8756,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Name").style.color = "red";
             } else if (this.user.email == null) {
-              var _dialogRef4 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef5 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
@@ -8747,7 +8767,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("email").style.color = "red";
             } else if (this.user.DOB == null) {
-              var _dialogRef5 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef6 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age is required"
                 }
@@ -8759,7 +8779,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("dob").style.color = "red";
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef6 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef7 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age Must be 18+"
                 }
@@ -8771,7 +8791,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("dob").style.color = "red";
             } else if (this.user.Phone == null) {
-              var _dialogRef7 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef8 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid phone number"
                 }
@@ -8784,7 +8804,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("tele").style.color = "red";
             } else if (this.listingBuyer.Currentpostcode == null) {
-              var _dialogRef8 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef9 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Postcode"
                 }
@@ -8798,7 +8818,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Cpost").style.color = "red";
             } else if (postcodeLength.length < 5) {
-              var _dialogRef9 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef10 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Postcode must be atleast 5 characters long"
                 }
@@ -8812,7 +8832,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Cpost").style.color = "red";
             } else if (this.listingBuyer.CurrentTown == null && this.listingBuyer.Currentpostcode != null) {
-              var _dialogRef10 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef11 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Town"
                 }
@@ -8827,7 +8847,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Ctown").style.color = "red";
               document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
             } else if (this.listingBuyer.CurrentAddress == null && this.listingBuyer.CurrentTown != null) {
-              var _dialogRef11 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef12 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Address"
                 }
@@ -8843,7 +8863,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("caddress").style.color = "red";
             } else if (this.listingBuyer.Currentstate == null && this.listingBuyer.CurrentAddress != null) {
-              var _dialogRef12 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef13 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Sate"
                 }
@@ -8860,7 +8880,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("caddress").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("cState").style.color = "red";
             } else if (this.listingBuyer.Currentcountry == null && this.listingBuyer.Currentstate != null) {
-              var _dialogRef13 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var _dialogRef14 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Country"
                 }
@@ -8890,7 +8910,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }
 
               if (this.amounts == false && this.listingBuyer.Currentcountry != null) {
-                var _dialogRef14 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef15 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select propertyFor "
                   }
@@ -8898,7 +8918,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                 document.getElementById("propfor").style.color = "red";
               } else if (this.listingBuyer.Lookingpostcode == null) {
-                var _dialogRef15 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef16 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Postcode"
                   }
@@ -8908,7 +8928,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lookpost").style.color = "red";
               } else if (lookingPostcodeLength.length < 5) {
-                var _dialogRef16 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef17 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Postcode must be atleast 5 characters long"
                   }
@@ -8918,7 +8938,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lookpost").style.color = "red";
               } else if (this.listingBuyer.LookingStreetname == null) {
-                var _dialogRef17 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef18 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Streetname"
                   }
@@ -8929,7 +8949,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lsrname").style.color = "red";
               } else if (this.listingBuyer.LookingTown == null) {
-                var _dialogRef18 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef19 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Town"
                   }
@@ -8941,7 +8961,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lsrname").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("looktow").style.color = "red";
               } else if (this.listingBuyer.Lookingstate == null) {
-                var _dialogRef19 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef20 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter State"
                   }
@@ -8954,7 +8974,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("looktow").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Lookstate").style.color = "red";
               } else if (this.listingBuyer.Country == null) {
-                var _dialogRef20 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef21 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter country"
                   }
@@ -8968,7 +8988,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Lookstate").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lCountry").style.color = "red";
               } else if (this.listingBuyer.ChainStatus == null) {
-                var _dialogRef21 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef22 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select chainstatus"
                   }
@@ -8983,7 +9003,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lCountry").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("chain").style.color = "red";
               } else if (this.listingBuyer.FinancialPosition == null && this.listingBuyer.PropertyFor == "buy") {
-                var _dialogRef22 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef23 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select Financial Position"
                   }
@@ -8999,7 +9019,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("chain").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("finanacial").style.color = "red";
               } else if (this.listingBuyer.PropertyType == null) {
-                var _dialogRef23 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef24 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select Property Type"
                   }
@@ -9016,7 +9036,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("finanacial").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Property-type").style.color = "red";
               } else if (this.listingBuyer.Roommin == null) {
-                var _dialogRef24 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef25 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select No of Rooms"
                   }
@@ -9034,7 +9054,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Property-type").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMin").style.color = "red";
               } else if (this.listingBuyer.Roomsmax == null) {
-                var _dialogRef25 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef26 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select No of Rooms"
                   }
@@ -9053,7 +9073,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMin").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMax").style.color = "red";
               } else if (this.listingBuyer.Roommin != 'Studio' && this.listingBuyer.Roomsmax != 'Studio' && this.listingBuyer.Roommin > this.listingBuyer.Roomsmax) {
-                var _dialogRef26 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef27 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Minimum room must be more than maximum rooms"
                   }
@@ -9071,7 +9091,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMax").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMin").style.color = "red";
               } else if (this.listingBuyer.Roommin != 'Studio' && this.listingBuyer.Roomsmax != 'Studio' && this.listingBuyer.Roomsmax < this.listingBuyer.Roommin) {
-                var _dialogRef27 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef28 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Maximum room must more than minimum rooms"
                   }
@@ -9090,7 +9110,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMin").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMax").style.color = "red";
               } else if (this.listingBuyer.MinAmount == null) {
-                var _dialogRef28 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef29 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MinAmount"
                   }
@@ -9110,7 +9130,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMax").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MinAmount").style.color = "red";
               } else if (this.listingBuyer.MaxAmount == null) {
-                var _dialogRef29 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef30 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Select MaxAmount"
                   }
@@ -9133,7 +9153,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MaxAmount").style.color = "red";
               } else if (Min > Max) {
-                var _dialogRef30 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef31 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Minimum amount must be less than maximum amount"
                   }
@@ -9155,7 +9175,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MaxAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MinAmount").style.color = "red";
               } else if (Max < Min) {
-                var _dialogRef31 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef32 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Maximum amount must be more than minimum amount"
                   }
@@ -9177,7 +9197,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MaxAmount").style.color = "red";
               } else if (this.listingBuyer.Validity == null) {
-                var _dialogRef32 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef33 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Validity"
                   }
@@ -9201,7 +9221,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("val").style.color = "red";
               } else if (this.listingBuyer.Minbathroom > this.listingBuyer.Maxbathroom) {
-                var _dialogRef33 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef34 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Minimum number of bathroom must be less than maximum bathroom"
                   }
@@ -9225,7 +9245,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("val").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("minBathroom").style.color = "red";
               } else if (this.listingBuyer.Maxbathroom < this.listingBuyer.Minbathroom) {
-                var _dialogRef34 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef35 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Maximum number of bathroom must be more than minimum bathroom"
                   }
@@ -9250,7 +9270,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("minBathroom").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("maxBathroom").style.color = "red";
               } else if (this.listingBuyer.Minreception > this.listingBuyer.Maxreception) {
-                var _dialogRef35 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef36 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Minimum number of reception must be less than maximum reception"
                   }
@@ -9276,7 +9296,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("maxBathroom").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Minreception").style.color = "red";
               } else if (this.listingBuyer.Maxreception < this.listingBuyer.Minreception) {
-                var _dialogRef36 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+                var _dialogRef37 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: "Maximum number of reception must be more than minimum reception"
                   }
@@ -11545,7 +11565,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.titleView.focus();
               document.getElementById("title").style.border = "5px solid red";
             } else if (this.user.Name == null) {
-              var _dialogRef37 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef38 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid fulll name"
                 }
@@ -11555,7 +11575,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("title").style.border = "None";
               document.getElementById("Name").style.border = "5px solid red";
             } else if (this.user.email == null) {
-              var _dialogRef38 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef39 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
@@ -11566,7 +11586,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Name").style.border = "None";
               document.getElementById("email").style.border = "5px solid red";
             } else if (this.user.DOB == null) {
-              var _dialogRef39 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef40 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age is required"
                 }
@@ -11578,7 +11598,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.border = "None";
               document.getElementById("dob").style.border = "5px solid red";
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef40 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef41 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age Must be 18+"
                 }
@@ -11590,7 +11610,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.border = "None";
               document.getElementById("dob").style.border = "5px solid red";
             } else if (this.user.Phone == null) {
-              var _dialogRef41 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid phone number"
                 }
@@ -11605,7 +11625,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Currentpostcode == null) {
               this.nameField.nativeElement.focus();
 
-              var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef43 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Current Postcode"
                 }
@@ -11620,7 +11640,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (currentposcodelength.length < 5) {
               this.nameField.nativeElement.focus();
 
-              var _dialogRef43 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef44 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Postcode must be atleast 5 characters long"
                 }
@@ -11635,7 +11655,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.CurrentAddress == null) {
               this.currentAddressView.nativeElement.focus();
 
-              var _dialogRef44 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef45 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current Address"
                 }
@@ -11651,7 +11671,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.CurrentTown == null) {
               this.currenttownView.nativeElement.focus();
 
-              var _dialogRef45 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef46 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current State"
                 }
@@ -11668,7 +11688,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Currentstate == null) {
               this.currentstateView.nativeElement.focus();
 
-              var _dialogRef46 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var _dialogRef47 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current State"
                 }
@@ -11693,7 +11713,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               if (this.maxamounts == false) {
                 this.propertyForView.nativeElement.focus();
 
-                var _dialogRef47 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef48 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select property"
                   }
@@ -11703,7 +11723,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Lookingpostcode == null) {
                 this.LookingpostcodeView.nativeElement.focus();
 
-                var _dialogRef48 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef49 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Postcodes"
                   }
@@ -11714,7 +11734,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (lookinpostcodelength.length < 5) {
                 this.LookingpostcodeView.nativeElement.focus();
 
-                var _dialogRef49 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef50 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Postcode must be atleast 5 characters long"
                   }
@@ -11725,7 +11745,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.LookingAddress == null) {
                 this.LookingAddressView.nativeElement.focus();
 
-                var _dialogRef50 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef51 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Address"
                   }
@@ -11737,7 +11757,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.LookingTown == null) {
                 this.LookingTownView.nativeElement.focus();
 
-                var _dialogRef51 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef52 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Town"
                   }
@@ -11750,7 +11770,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Lookingstate == null) {
                 this.LookingStateView.nativeElement.focus();
 
-                var _dialogRef52 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef53 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking State"
                   }
@@ -11764,7 +11784,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Country == null) {
                 this.countryView.nativeElement.focus();
 
-                var _dialogRef53 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef54 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Country"
                   }
@@ -11777,7 +11797,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Lookstate").style.border = "none";
                 document.getElementById("lCountry").style.border = "5px solid red";
               } else if (this.listingSeller.PropertyType == null) {
-                var _dialogRef54 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef55 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Property Type"
                   }
@@ -11792,7 +11812,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lCountry").style.border = "none";
                 document.getElementById("protype").style.border = "5px solid red";
               } else if (this.listingSeller.Maxrooms == null) {
-                var _dialogRef55 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef56 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum of Rooms"
                   }
@@ -11808,7 +11828,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("protype").style.border = "none";
                 document.getElementById("bedroom").style.border = "5px solid red";
               } else if (this.listingSeller.MaxAmount == null) {
-                var _dialogRef56 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef57 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum Amount"
                   }
@@ -11825,7 +11845,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("bedroom").style.border = "none";
                 document.getElementById("maxamount").style.border = "5px solid red";
               } else if (this.listingSeller.ownership == null) {
-                var _dialogRef57 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+                var _dialogRef58 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Ownership"
                   }
@@ -12132,7 +12152,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   localStorage.setItem("sellerUserDetails", JSON.stringify(_this102.listingSeller));
                   _this102.isLoading = false;
 
-                  var _dialogRef58 = _this102.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__["AlertDialogComponent"], {
+                  var _dialogRef59 = _this102.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__["AlertDialogComponent"], {
                     data: {
                       message: "HelloWorld",
                       id: _this102.uid,
@@ -13099,7 +13119,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.NameView.nativeElement.focus();
             document.getElementById("FullName").style.color = "red";
           } else if (this.company == null) {
-            var _dialogRef59 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef60 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Company Name"
               }
@@ -13109,7 +13129,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("CompanyName").style.color = "red";
           } else if (this.postcode == null) {
-            var _dialogRef60 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef61 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Postcode"
               }
@@ -13120,7 +13140,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("CompanyName").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Postcode").style.color = "red";
           } else if (this.address == null) {
-            var _dialogRef61 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef62 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Address"
               }
@@ -13132,7 +13152,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Postcode").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Address").style.color = "red";
           } else if (this.jobtitle == null) {
-            var _dialogRef62 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef63 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Job Titile"
               }
@@ -13145,7 +13165,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Address").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Job").style.color = "red";
           } else if (this.phone == null) {
-            var _dialogRef63 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef64 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Phone Number"
               }
@@ -13159,7 +13179,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Job").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Number").style.color = "red";
           } else if (this.email == null) {
-            var _dialogRef64 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef65 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Email"
               }
@@ -13174,7 +13194,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Number").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Email").style.color = "red";
           } else if (this.password == null) {
-            var _dialogRef65 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef66 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Password"
               }
@@ -13190,7 +13210,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Email").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Password").style.color = "red";
           } else if (this.solefees == null) {
-            var _dialogRef66 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef67 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Sole Agency Fees"
               }
@@ -13207,7 +13227,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Password").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Soleagency").style.color = "red";
           } else if (this.multiplefees == null) {
-            var _dialogRef67 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef68 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Enter Multiple Agency Fees"
               }
@@ -13225,7 +13245,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("Soleagency").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("Multiagency").style.color = "red";
           } else if (this.files == null) {
-            var _dialogRef68 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
+            var _dialogRef69 = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_11__["AlertLoginComponent"], {
               data: {
                 message: "Upload Image"
               }
@@ -15695,43 +15715,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 }
               });
             } else if (this.email == null) {
-              var _dialogRef69 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef70 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
               });
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef70 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef71 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Age Must be 18+"
                 }
               });
             } else if (this.Phone == null) {
-              var _dialogRef71 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef72 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid phone number"
                 }
               });
             } else if (this.listingBuyer.Currentpostcode == null) {
-              var _dialogRef72 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef73 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Postcode"
                 }
               });
             } else if (this.listingBuyer.CurrentAddress == null) {
-              var _dialogRef73 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef74 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Address"
                 }
               });
             } else if (this.listingBuyer.Currentstate == null) {
-              var _dialogRef74 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef75 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Sate"
                 }
               });
             } else if (this.listingBuyer.CurrentTown == null) {
-              var _dialogRef75 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+              var _dialogRef76 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please fill Current Town"
                 }
@@ -15743,67 +15763,67 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           } else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
               if (this.amounts == false) {
-                var _dialogRef76 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef77 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select property for "
                   }
                 });
               } else if (this.listingBuyer.Lookingpostcode == null) {
-                var _dialogRef77 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef78 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill LookingPostcode"
                   }
                 });
               } else if (this.listingBuyer.LookingStreetname == null) {
-                var _dialogRef78 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef79 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill LookingStreetname"
                   }
                 });
               } else if (this.listingBuyer.LookingTown == null) {
-                var _dialogRef79 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef80 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill LookingTown"
                   }
                 });
               } else if (this.listingBuyer.Lookingstate == null) {
-                var _dialogRef80 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef81 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Looking State"
                   }
                 });
               } else if (this.listingBuyer.FinancialPosition == null) {
-                var _dialogRef81 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef82 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Financial Position"
                   }
                 });
               } else if (this.listingBuyer.ChainStatus == null) {
-                var _dialogRef82 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef83 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please fill Listing Buyer"
                   }
                 });
               } else if (this.listingBuyer.PropertyType == null) {
-                var _dialogRef83 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef84 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Property Type"
                   }
                 });
               } else if (this.listingBuyer.MinAmount == null) {
-                var _dialogRef84 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef85 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MinAmount"
                   }
                 });
               } else if (this.listingBuyer.MaxAmount == null) {
-                var _dialogRef85 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef86 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select MaxAmount"
                   }
                 });
               } else if (this.listingBuyer.Validity == null) {
-                var _dialogRef86 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
+                var _dialogRef87 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_17__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Validity"
                   }
@@ -16608,19 +16628,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 }
               });
             } else if (this.email == null) {
-              var _dialogRef87 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef88 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Email"
                 }
               });
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef88 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef89 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "You need to be over 18 to register on this website"
                 }
               });
             } else if (this.Phone == null) {
-              var _dialogRef89 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef90 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter Phone number"
                 }
@@ -16628,25 +16648,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             }
 
             if (this.Currentpostcode == null) {
-              var _dialogRef90 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef91 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Current Postcode"
                 }
               });
             } else if (this.CurrentAddress == null) {
-              var _dialogRef91 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef92 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current Address"
                 }
               });
             } else if (this.CurrentTown == null) {
-              var _dialogRef92 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef93 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current Town"
                 }
               });
             } else if (this.Currentstate == null) {
-              var _dialogRef93 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef94 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Your Current State"
                 }
@@ -16658,61 +16678,61 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           } else if (presentIndex == 1) {
             if (nextIndex > presentIndex) {
               if (this.maxamounts == false) {
-                var _dialogRef94 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef95 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please select property"
                   }
                 });
               } else if (this.listingSeller.Lookingpostcode == null) {
-                var _dialogRef95 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef96 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Postcodes"
                   }
                 });
               } else if (this.listingSeller.LookingAddress == null) {
-                var _dialogRef96 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef97 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Address"
                   }
                 });
               } else if (this.listingSeller.LookingTown == null) {
-                var _dialogRef97 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef98 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking Town"
                   }
                 });
               } else if (this.listingSeller.Lookingstate == null) {
-                var _dialogRef98 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef99 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Looking State"
                   }
                 });
               } else if (this.listingSeller.Country == null) {
-                var _dialogRef99 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef100 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Country"
                   }
                 });
               } else if (this.listingSeller.PropertyType == null) {
-                var _dialogRef100 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef101 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Enter Your Property Type"
                   }
                 });
               } else if (this.listingSeller.Maxrooms == null) {
-                var _dialogRef101 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef102 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum of Rooms"
                   }
                 });
               } else if (this.listingSeller.MaxAmount == null) {
-                var _dialogRef102 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef103 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Maximum Amount"
                   }
                 });
               } else if (this.listingSeller.ownership == null) {
-                var _dialogRef103 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef104 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                   data: {
                     message: "Please Select Ownership"
                   }
@@ -20439,7 +20459,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.NameView.nativeElement.focus();
             document.getElementById("name").style.border = "5px solid red";
           } else if (email == null) {
-            var _dialogRef104 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef105 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Please fill email id"
               }
@@ -20447,7 +20467,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
             document.getElementById("name").style.border = "5px solid red";
           } else if (Phone == null || Phone.length == 0) {
-            var _dialogRef105 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef106 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Please fill phone number"
               }
@@ -20457,7 +20477,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("name").style.border = "none";
             document.getElementById("phone").style.border = "5px solid red";
           } else if (DOB == null || DOB.length == 0) {
-            var _dialogRef106 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef107 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Plaese fill date of birth"
               }
@@ -20468,7 +20488,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("phone").style.border = "none";
             document.getElementById("dob").style.border = "5px solid red";
           } else if (Math.floor(Math.abs(Date.now() - new Date(DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-            var _dialogRef107 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef108 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Age must be 18+"
               }
@@ -20478,7 +20498,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("phone").style.border = "none";
             document.getElementById("dob").style.border = "5px solid red";
           } else if (Address == null || Address.length == 0) {
-            var _dialogRef108 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef109 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Please fill current address"
               }
@@ -20490,7 +20510,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             document.getElementById("dob").style.border = "none";
             document.getElementById("address").style.border = "5px solid red";
           } else if (prefrence == null) {
-            var _dialogRef109 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
+            var _dialogRef110 = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
               data: {
                 message: "Please choose your prefrences"
               }
@@ -21905,7 +21925,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".fa-events-icons-ready .cdk-global-scrollblock {\n   \n    width: 100%;\n    overflow-y: scroll;\n    position: inherit !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWlzYy9hbGVydC11c2VyLXR5cGUvYWxlcnQtdXNlci10eXBlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksV0FBVztJQUNYLGtCQUFrQjtJQUNsQiw0QkFBNEI7QUFDaEMiLCJmaWxlIjoic3JjL2FwcC9NaXNjL2FsZXJ0LXVzZXItdHlwZS9hbGVydC11c2VyLXR5cGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mYS1ldmVudHMtaWNvbnMtcmVhZHkgLmNkay1nbG9iYWwtc2Nyb2xsYmxvY2sge1xuICAgXG4gICAgd2lkdGg6IDEwMCU7XG4gICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xuICAgIHBvc2l0aW9uOiBpbmhlcml0ICFpbXBvcnRhbnQ7XG59Il19 */";
+    __webpack_exports__["default"] = ".fa-events-icons-ready .cdk-global-scrollblock {\n   \n    width: 100%;\n    overflow-y: scroll;\n    position: inherit !important;\n}\n.fixed{\n    display: flex;\n    justify-content: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWlzYy9hbGVydC11c2VyLXR5cGUvYWxlcnQtdXNlci10eXBlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksV0FBVztJQUNYLGtCQUFrQjtJQUNsQiw0QkFBNEI7QUFDaEM7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC9NaXNjL2FsZXJ0LXVzZXItdHlwZS9hbGVydC11c2VyLXR5cGUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mYS1ldmVudHMtaWNvbnMtcmVhZHkgLmNkay1nbG9iYWwtc2Nyb2xsYmxvY2sge1xuICAgXG4gICAgd2lkdGg6IDEwMCU7XG4gICAgb3ZlcmZsb3cteTogc2Nyb2xsO1xuICAgIHBvc2l0aW9uOiBpbmhlcml0ICFpbXBvcnRhbnQ7XG59XG4uZml4ZWR7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn0iXX0= */";
     /***/
   },
 
@@ -25865,7 +25885,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 3:
                     result = _context54.sent;
                     this.ngZone.run(function () {
-                      console.log(result);
                       window.location.reload();
                     }); // this.SetUserData(result.user);
 
