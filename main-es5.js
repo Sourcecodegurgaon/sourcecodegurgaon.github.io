@@ -91,7 +91,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"admin-heaher-main\">\n    <div class=\"nestimate-logo-container\">\n        <img src=\"../../../assets/Images/Nestimatelogo1.png\" class=\"nestimate-logo-header\">\n\n\n\n\n    </div>\n    <div class=\"nestimate-admin-heading\">\n        Administrator\n    </div>\n\n</div>\n\n<div class=\"admin-side-bar\">\n\n\n    <div class=\"dashboard-div\" *ngIf=\"!dashboard\" routerLink=\"/AdminPanel\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/dashboard.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Dashboard\n        </div>\n    </div>\n    <div class=\"dashboard-div\" *ngIf=\"dashboard\">\n        <div class=\"active-dashboard\">\n            <div class=\"icon-dashboard\">\n                <img src=\"../../../assets/Images/Activedashboard.png\" class=\"dashboard-icon\">\n            </div>\n            <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n                Dashboard\n            </div>\n        </div>\n    </div>\n\n\n\n\n\n\n\n    <div class=\"dashboard-div\" *ngIf=\"!ActiveUser\" routerLink=\"/UsersAgentTab/true/false\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/user.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            User\n        </div>\n    </div>\n\n    <div class=\"dashboard-div\" *ngIf=\"ActiveUser\">\n        <div class=\"active-dashboard user-active\">\n            <div class=\"icon-dashboard\">\n                <img src=\"../../../assets/Images/activeuser.png\" class=\"dashboard-icon\">\n            </div>\n            <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n                User\n            </div>\n\n        </div>\n    </div>\n    <div class=\"dashboard-div\" routerLink=\"/UIElements\" *ngIf=\"!UI\">\n\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/palette.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            UI Elements\n        </div>\n    </div>\n\n    <div class=\"dashboard-div\" *ngIf=\"UI\">\n        <div class=\"active-dashboard\">\n            <div class=\"icon-dashboard\">\n                <img src=\"../../../assets/Images/activepalette.png\" class=\"dashboard-icon\">\n            </div>\n            <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n                UI Elements\n            </div>\n        </div>\n\n\n\n    </div>\n\n    <div class=\"sign-out-div\" (click)=\"signOut()\">\n        <div class=\"sign-out-dashboard\">\n            <img src=\"../../../assets/Images/signout.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Log Out\n        </div>\n\n    </div>";
+    __webpack_exports__["default"] = "<div class=\"admin-heaher-main\">\n    <div class=\"nestimate-logo-container\">\n        <img src=\"../../../assets/Images/Nestimatelogo1.png\" class=\"nestimate-logo-header\">\n\n\n\n\n    </div>\n    <div class=\"nestimate-admin-heading\">\n        Administrator\n    </div>\n\n</div>\n\n<div class=\"admin-side-bar\">\n\n\n    <div class=\"dashboard-div\" *ngIf=\"!dashboard\" routerLink=\"/AdminPanel\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/dashboard.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Dashboard\n        </div>\n    </div>\n    <div class=\"dashboard-div\" *ngIf=\"dashboard\" routerLink=\"/AdminPanel\">\n        <div class=\"active-dashboard\">\n            <div class=\"icon-dashboard\">\n                <img src=\"../../../assets/Images/Activedashboard.png\" class=\"dashboard-icon\">\n            </div>\n            <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n                Dashboard\n            </div>\n        </div>\n    </div>\n\n\n\n\n\n\n\n    <div class=\"dashboard-div\" *ngIf=\"!ActiveUser\" routerLink=\"/UsersAgentTab/true/false\">\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/user.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            User\n        </div>\n    </div>\n\n    <div class=\"dashboard-div\" *ngIf=\"ActiveUser\" routerLink=\"/UsersAgentTab/true/false\">\n        <div class=\"active-dashboard user-active\">\n            <div class=\"icon-dashboard\">\n                <img src=\"../../../assets/Images/activeuser.png\" class=\"dashboard-icon\">\n            </div>\n            <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n                User\n            </div>\n\n        </div>\n    </div>\n    <div class=\"dashboard-div\" routerLink=\"/UIElements\" *ngIf=\"!UI\">\n\n        <div class=\"icon-dashboard\">\n            <img src=\"../../../assets/Images/palette.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            UI Elements\n        </div>\n    </div>\n\n    <div class=\"dashboard-div\" *ngIf=\"UI\" routerLink=\"/UIElements\">\n        <div class=\"active-dashboard\">\n            <div class=\"icon-dashboard\">\n                <img src=\"../../../assets/Images/activepalette.png\" class=\"dashboard-icon\">\n            </div>\n            <div class=\"dashboard-container\" style=\"color:  var(--DARK-BLUE-COLOR)\">\n                UI Elements\n            </div>\n        </div>\n\n\n\n    </div>\n\n    <div class=\"sign-out-div\" (click)=\"signOut()\">\n        <div class=\"sign-out-dashboard\">\n            <img src=\"../../../assets/Images/signout.png\" class=\"dashboard-icon\">\n        </div>\n        <div class=\"dashboard-container\">\n            Log Out\n        </div>\n\n    </div>";
     /***/
   },
 
@@ -131,7 +131,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n      </div>\n\n</div>\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"BackAgent()\">\n                <div class=\"aarow-left-container\"> &#x21e6;</div>\n                <div class=\"right-text-left-container\">Back to Agent</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n\n\n\n\n<div class=\"profile-info-card\">\n    <mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;\">\n<div class=\"profile-heading\">\n    Personal Info\n</div>\n\n<div class=\"fields-profile-info\">\n\n    <div class=\"field-set\">\n      <mat-form-field appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n         <span id=\"title\">Title</span>\n\n         </mat-label>\n \n        <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.title\">\n          <mat-option value=\"Mr\">Mr</mat-option>\n          <mat-option value=\"Ms\">Ms</mat-option>\n          <mat-option value=\"Mrs\">Mrs</mat-option>\n        </mat-select>\n     \n      </mat-form-field>\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Name</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email</span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n        </mat-form-field>\n      </div>\n\n       \n\n   \n\n    </div>\n\n\n    <div class=\"field-set\">\n\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Postcode</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n          </mat-form-field>\n        </div>\n      </div>\n   \n\n        <div class=\"extra-field-two\">\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Job\">Job title</span></mat-label>\n              <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n            </mat-form-field>\n          </div>\n\n       \n          \n          <div class=\"extra-field-two\" >\n            <mat-form-field class=\"full-width\"  appearance=\"outline\">\n              <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n              <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n            </mat-form-field>\n          </div>\n          \n\n\n        \n    \n         \n        </div>\n    \n        <div class=\"field-set\">\n\n       \n        \n          <div class=\"extra-field-two\" >\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Office Phone Number</span></mat-label>\n              <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.officephone\" #Phone   maxlength=\"10\">\n            </mat-form-field>\n          </div>\n    \n            <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number</span></mat-label>\n                  <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n                </mat-form-field>\n              </div>\n           \n              <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n                  <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n                </mat-form-field>\n              </div>\n         \n          \n\n            </div>\n\n            <div class=\"field-set\">\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">Status</mat-label>\n                <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.Status\">\n                  <mat-option [value]=\"true\">Verified</mat-option>\n                  <mat-option [value]=\"false\">Not Verfied</mat-option>\n                </mat-select>\n             \n              </mat-form-field>\n              <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n                  <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n                </mat-form-field>\n              </div>\n                <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n                      <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n                    </mat-form-field>\n                  </div>\n                \n\n\n\n\n\n\n            </div>\n\n      \n</div>\n\n\n<div class=\"agent-image-upload\">\n\n  <div class=\"upload-image-first-container\">\n  <div class=\"profile-heading\">\n    Images\n</div>\n<div class=\"edit-image-part\" >\n  <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n</div>\n\n\n\n</div>\n<div class=\"image-user\" >\n  <img src=\"{{agentSignup.image}}\" class=\"image-agent\" *ngIf=\"!imageUplaod\">\n  <div class=\"file-upload\" *ngIf=\"imageUplaod\">\n    <input type=\"file\"  (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n</div>\n</div>\n\n<span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n</div>\n\n<div class=\"update-button\"  (click)=\"updateAgent()\">\n\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n</div>\n\n    </mat-card>\n\n\n\n\n\n\n    <!--User List MatCard-->\n<div class=\"main-listing-container\">\n    <mat-card class=\"user-Listing-mat-card\">\n        <div class=\"profile-heading\">\n            Listings\n        </div>\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-heading-tab-content\">Id</div>\n                <div class=\"text-heading-tab-content\">Property </div>\n                <div class=\"text-heading-tab-content\">Postcode</div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result\" *ngFor=\"let agentProperties of agentProperties\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{agentProperties.uid}}</div> \n                <div class=\"text-output-tab-content\">{{agentProperties.details.Buyer.PropertyType}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{agentProperties.details.Buyer.Lookingpostcode}}</div>\n                <div class=\"text-output-tab-content\">\n    \n                    <span class=\"cursor-show\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span> \n                        \n                        <span class=\"line-height\"></span>\n                    <span class=\"cursor-show\" routerLink=\"/AgentPropertyEditPage/{{agentProperties.details.UserId}}/{{agentProperties.uid}}\"  > <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n    \n                </div>\n            </div>\n    \n\n    \n\n\n\n            \n        </div>\n\n\n\n\n        \n\n    </mat-card>\n</div>\n\n\n</div>\n\n\n\n\n    </div>\n";
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n      </div>\n\n</div>\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"BackAgent()\">\n                <div class=\"aarow-left-container\"> &#x21e6;</div>\n                <div class=\"right-text-left-container\">Back to Agent</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n\n\n\n\n<div class=\"profile-info-card\">\n    <mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;\">\n<div class=\"profile-heading\">\n    Personal Info\n</div>\n\n<div class=\"fields-profile-info\">\n\n    <div class=\"field-set\">\n      <mat-form-field appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">\n         <span id=\"title\">Title</span>\n\n         </mat-label>\n \n        <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.title\">\n          <mat-option value=\"Mr\">Mr</mat-option>\n          <mat-option value=\"Ms\">Ms</mat-option>\n          <mat-option value=\"Mrs\">Mrs</mat-option>\n        </mat-select>\n     \n      </mat-form-field>\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Name</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email</span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" #Emails>\n        </mat-form-field>\n      </div>\n\n       \n\n   \n\n    </div>\n\n\n    <div class=\"field-set\">\n\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Postcode</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes>\n          </mat-form-field>\n        </div>\n      </div>\n   \n\n        <div class=\"extra-field-two\">\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Job\">Job title</span></mat-label>\n              <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs>\n            </mat-form-field>\n          </div>\n\n       \n          \n          <div class=\"extra-field-two\" >\n            <mat-form-field class=\"full-width\"  appearance=\"outline\">\n              <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n              <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company>\n            </mat-form-field>\n          </div>\n          \n\n\n        \n    \n         \n        </div>\n    \n        <div class=\"field-set\">\n\n       \n        \n          <div class=\"extra-field-two\" >\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Office Phone Number</span></mat-label>\n              <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.officephone\" #Phone   maxlength=\"10\">\n            </mat-form-field>\n          </div>\n    \n            <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Number\">Phone Number</span></mat-label>\n                  <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\">\n                </mat-form-field>\n              </div>\n           \n              <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n                  <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address>\n                </mat-form-field>\n              </div>\n         \n          \n\n            </div>\n\n            <div class=\"field-set\">\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\">Status</mat-label>\n                <mat-select name=\"title\"  class=\"drop-down-list\" #titles  [(ngModel)]=\"agentSignup.Status\">\n                  <mat-option [value]=\"true\">Verified</mat-option>\n                  <mat-option [value]=\"false\">Not Verfied</mat-option>\n                </mat-select>\n             \n              </mat-form-field>\n              <div class=\"extra-field-two\" >\n                <mat-form-field class=\"full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n                  <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole>\n                </mat-form-field>\n              </div>\n                <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"full-width\" appearance=\"outline\">\n                      <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n                      <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees>\n                    </mat-form-field>\n                  </div>\n                \n\n\n\n\n\n\n            </div>\n\n      \n</div>\n\n\n<div class=\"agent-image-upload\">\n\n  <div class=\"upload-image-first-container\">\n  <div class=\"profile-heading\">\n    Images\n</div>\n<div class=\"edit-image-part\" >\n  <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n</div>\n\n\n\n</div>\n<div class=\"image-user\" >\n  <img src=\"{{agentSignup.image}}\" class=\"image-agent\" *ngIf=\"!imageUplaod\">\n  <div class=\"file-upload\" *ngIf=\"imageUplaod\">\n    <input type=\"file\"  (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\"  [(ngModel)]=\"image\">\n</div>\n</div>\n\n<span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n</div>\n\n<div class=\"update-button\"  (click)=\"updateAgent()\">\n\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n</div>\n\n    </mat-card>\n\n\n\n\n\n\n    <!--User List MatCard-->\n<div class=\"main-listing-container\">\n    <mat-card class=\"user-Listing-mat-card\">\n        <div class=\"profile-heading\">\n            Listings\n        </div>\n\n        <div class=\"user-content-area\">\n            <div class=\"user-content-top-heading\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-heading-tab-content\">Id</div>\n                <div class=\"text-heading-tab-content\">Property </div>\n                <div class=\"text-heading-tab-content\">Postcode</div>\n                <div class=\"text-heading-tab-content\">Action </div>\n            </div>\n        </div>\n\n\n        <div class=\"main-container-result-users\">\n\n            <div class=\"user-content-lower-result\" *ngFor=\"let agentProperties of agentProperties\" routerLink=\"/AgentPropertyEditPage/{{agentProperties.details.UserId}}/{{agentProperties.uid}}\">\n                <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                <div class=\"text-output-tab-content uid-content\"> {{agentProperties.uid}}</div> \n                <div class=\"text-output-tab-content\">{{agentProperties.details.Buyer.PropertyType}}</div>\n                <div class=\"text-output-tab-content tab-content-email\">{{agentProperties.details.Buyer.Lookingpostcode}}</div>\n                <div class=\"text-output-tab-content\">\n    \n                    <span class=\"cursor-show\">\n                        <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span> \n                        \n                        <span class=\"line-height\"></span>\n                    <span class=\"cursor-show\" routerLink=\"/AgentPropertyEditPage/{{agentProperties.details.UserId}}/{{agentProperties.uid}}\"  > <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\" >Edit </span>\n    \n                </div>\n            </div>\n    \n\n    \n\n\n\n            \n        </div>\n\n\n\n\n        \n\n    </mat-card>\n</div>\n\n\n</div>\n\n\n\n\n    </div>\n";
     /***/
   },
 
@@ -151,7 +151,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#x21e6;</div>\n                <div class=\"right-text-left-container\">Back to Agent</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n\n\n    <div class=\"profile-info-card\" >\n\n        <div class=\"mat-card-top-area\"> {{propertyFor}} at {{Lookingpostcode}}</div>\n        <div class=\"main-mat-card-container\">\n\n\n        <mat-card class=\"mat-card-edit\">\n          <div class=\"profile-heading\">\n            Looking to\n        </div>\n        <span class=\"second-part-container-number\">{{propertyFor}}</span>\n\n          \n\n            <div class=\"main-container-area\">\n                <!--Card One-->\n                <div class=\"mat-cards-container\">\n\n                   <div class=\"profile-heading-two\">\n                    Seller Details\n                   </div>\n       \n                   <div class=\"second-part-container-two-sides-container\">\n\n                    <div class=\"right-side-second-part-container\">\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Desired Price</span>\n                        <span class=\"second-part-container-number\">&pound; {{DesiredPrice}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Postcode</span>\n                        <span class=\"second-part-container-number\">{{Postcode}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">No of Rooms</span>\n                        <span class=\"second-part-container-number\">{{Maxrooms}}</span>\n                      </div>\n\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Email</span>\n                        <span class=\"second-part-container-number\">{{selleremail}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Phone Number</span>\n                        <span class=\"second-part-container-number\">{{sellerPhone}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Address</span>\n                        <span class=\"second-part-container-number\">{{selleraddress}}</span>\n                      </div>\n\n                    </div>\n                  </div>\n       \n                </div>\n       \n                <div class=\"mat-cards-container\">\n                   <div class=\"profile-heading-two\">\n                       Property Details\n                   </div>\n       \n                   <div class=\"second-part-container-two-sides-container\">\n\n                    <div class=\"right-side-second-part-container\">\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Price Range</span>\n                        <span class=\"second-part-container-number\">&pound; {{BuyerMinamount}} - &pound; {{BuyerMaxamount}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Postcode</span>\n                        <span class=\"second-part-container-number\">{{Buyerpostcode}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">No of Rooms</span>\n                        <span class=\"second-part-container-number\">{{BuyerRoomsmin}}-{{BuyerRoomsmax}}</span>\n                      </div>\n\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Email</span>\n                        <span class=\"second-part-container-number\">{{buyeremail}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Phone Number</span>\n                        <span class=\"second-part-container-number\">{{buyerPhone}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Address</span>\n                        <span class=\"second-part-container-number\">{{buyeraddress}}</span>\n                      </div>\n\n                    </div>\n                  </div>\n               </div>\n       \n            \n       \n       \n               </div>\n\n            \n       \n\n               <div class=\"update-button\" (click)=\"backClicked()\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Back</button>\n            </div>\n\n        </mat-card>\n\n    </div>\n\n\n\n\n\n\n\n    </div>\n\n\n\n\n\n\n    </div>\n";
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#x21e6;</div>\n                <div class=\"right-text-left-container\">Back to Agent</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n    </div>\n\n\n    <div class=\"profile-info-card\" >\n\n        <div class=\"mat-card-top-area\"> {{propertyFor}} at {{Lookingpostcode}}</div>\n        <div class=\"main-mat-card-container\">\n\n\n        <mat-card class=\"mat-card-edit\">\n          <div class=\"main-container-agent-heading\">\n          <div class=\"profile-heading\">\n            Looking to\n        </div>\n        <span class=\"second-part-container-number\">{{propertyFor}}</span>\n      </div>\n          \n\n            <div class=\"main-container-area\">\n                <!--Card One-->\n                <div class=\"mat-cards-container\">\n\n                   <div class=\"profile-heading-two\">\n                    Seller Details\n                   </div>\n       \n                   <div class=\"second-part-container-two-sides-container\">\n\n                    <div class=\"right-side-second-part-container\">\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Desired Price</span>\n                        <span class=\"second-part-container-number\">&pound; {{DesiredPrice}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Postcode</span>\n                        <span class=\"second-part-container-number\">{{Postcode}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">No of Rooms</span>\n                        <span class=\"second-part-container-number\">{{Maxrooms}}</span>\n                      </div>\n\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Email</span>\n                        <span class=\"second-part-container-number\">{{selleremail}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Phone Number</span>\n                        <span class=\"second-part-container-number\">{{sellerPhone}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Address</span>\n                        <span class=\"second-part-container-number\">{{selleraddress}}</span>\n                      </div>\n\n                    </div>\n                  </div>\n       \n                </div>\n       \n                <div class=\"mat-cards-container\">\n                   <div class=\"profile-heading-two\">\n                       Property Details\n                   </div>\n       \n                   <div class=\"second-part-container-two-sides-container\">\n\n                    <div class=\"right-side-second-part-container\">\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Price Range</span>\n                        <span class=\"second-part-container-number\">&pound; {{BuyerMinamount}} - &pound; {{BuyerMaxamount}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Postcode</span>\n                        <span class=\"second-part-container-number\">{{Buyerpostcode}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">No of Rooms</span>\n                        <span class=\"second-part-container-number\">{{BuyerRoomsmin}}-{{BuyerRoomsmax}}</span>\n                      </div>\n\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Email</span>\n                        <span class=\"second-part-container-number\">{{buyeremail}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Phone Number</span>\n                        <span class=\"second-part-container-number\">{{buyerPhone}}</span>\n                      </div>\n                      <div class=\"top-second-part-container\">\n                        <span class=\"second-part-container-text\">Address</span>\n                        <span class=\"second-part-container-number\">{{buyeraddress}}</span>\n                      </div>\n\n                    </div>\n                  </div>\n               </div>\n       \n            \n       \n       \n               </div>\n\n            \n       \n\n               <div class=\"update-button\" (click)=\"backClicked()\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Back</button>\n            </div>\n\n        </mat-card>\n\n    </div>\n\n\n\n\n\n\n\n    </div>\n\n\n\n\n\n\n    </div>\n";
     /***/
   },
 
@@ -211,7 +211,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n\n</div>\n\n<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n      <div class=\"top-bar-user-heading\">\n        UI Elements\n    </div>\n    <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n    </div>\n    \n      \n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"main-container-uielements\">\n\n    <div class=\"mat-card-ui-elelment\">\n      <div class=\"top-tab-bar\">\n        <div class=\"tab-text\" (click)=\"homePages()\" id=\"home\">Home Page</div>\n        <div class=\"tab-text\" (click)=\"Notifications()\" id=\"notification\">Blue Notification</div>\n        <div class=\"tab-text\" id=\"seller\" (click)=\"SellerDetail()\">Seller Details</div>\n        <div class=\"tab-text\" id=\"buyer\" (click)=\"BuyerDetail()\">Buyer Details</div>\n        <div class=\"tab-text\" id=\"privacy\" (click)=\"privacy()\">Privacy Policy</div>\n        <div class=\"tab-text\" id=\"terms\" (click)=\"terms()\">Terms & Conditon</div>\n\n      </div>\n\n\n      <div class=\"mat-home-page-card\" *ngIf=\"homePage\">\n\n\n\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading\">\n            Banner Photo\n          </div>\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{bannerUrl}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uploadTopBannerImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n\n\n\n                <img src=\"{{bannerUrl}}\" class=\"image-agent\" *ngIf=\"bannerUpload\">\n\n                <div class=\"file-upload\" *ngIf=\"!bannerUpload\">\n                  <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"topimage\"\n                    [(ngModel)]=\"topimage\">\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n\n\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{SecondBannerImage}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uplodSecondImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n                <img src=\"{{SecondBannerImage}}\" class=\"image-agent\" *ngIf=\"BannerTwo\">\n                <div class=\"file-upload\" *ngIf=\"!BannerTwo\">\n                  <form #form class=\"upload-form\">\n                    <input type=\"file\" (change)=\"LoweBanner($event)\" accept=\".png,.jpg\" >\n                  </form>\n\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n        </mat-card>\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Start Your Home Journey Now\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step1UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step1Image}}\" class=\"image-agent\" *ngIf=\"step1NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step1NotUpload\">\n\n                    <input type=\"file\" (change)=\"step1upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step1ImageText\" [(ngModel)]=\"Step1ImageText \">\n          </textarea>\n\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step2UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step2Image}}\" class=\"image-agent\" *ngIf=\"step2NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step2NotUpload\">\n\n                    <input type=\"file\" (change)=\"step2upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Review Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step2ImageText\" [(ngModel)]=\"Step2ImageText\">\n                </textarea>\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step3UploadImag()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step3Image}}\" class=\"image-agent\" *ngIf=\"step3NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step3NotUpload\">\n\n                    <input type=\"file\" (change)=\"step3upload($event)\" accept=\".png,.jpg\" name=\"step3ImageNew\"\n                      [(ngModel)]=\"step3ImageNew\">\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step3ImageText\" [(ngModel)]=\"Step3ImageText\">\n                </textarea>\n            </div>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Blogs\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngFor=\"let allBlogs of allBlogs\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"editImage()\"><img src=\"../../../assets//Images/edit (1).png\"\n                        class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{allBlogs.BlogImage}}\" class=\"image-agent\" *ngIf=\"imageUplaod\">\n\n                  <div class=\"file-upload\" *ngIf=\"!imageUplaod\">\n\n                    <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"image\">\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"allBlogs.TextBlog\">\n          </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"allBlogs.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngIf=\"addNewBlog\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\"></div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <div class=\"file-upload\">\n                    <input type=\"file\" (change)=\"newBlogPicture($event)\" accept=\".png,.jpg\" name=\"BlogImage\"\n                      [(ngModel)]=\"blog.BlogImage\">\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"blog.TextBlog\">\n            </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"blog.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n          </div>\n\n          <div class=\"update-button\" (click)=\"addMoreBlog()\">\n\n            <button mat-button color=\"primary\" class=\"button-color\">Add More</button>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Footer\n          </div>\n\n          <div class=\"main-contianer-journey footer-area\">\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Facebook</span></mat-label>\n              <input matInput name=\"Facebook\" [(ngModel)]=\"footer.Facebook\" #Phone>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Instagram Link</span></mat-label>\n              <input matInput name=\"Instragram\" [(ngModel)]=\"footer.Instragram\" #Phone>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Twitter</span></mat-label>\n              <input matInput name=\"Twitter\" [(ngModel)]=\"footer.Twitter\" #Phone>\n            </mat-form-field>\n          </div>\n        </mat-card>\n\n\n        <div class=\"update-button\" (click)=\"updateDetails()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </div>\n\n\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"Notification\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          My Nestimate Buyer Details\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"MynestimateBuyerDetails\"\n            [(ngModel)]=\"MynestimateBuyerDetails\">\n      </textarea>\n        </div>\n\n\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Singup From Menu\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SingupFromMenu\" [(ngModel)]=\"SingupFromMenu\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div class=\"update-button\" (click)=\"updateNotification()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"SellerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{SellerPropertyRightImage}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{SellerPropertyRightImage}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"sellerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"BuyerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{BuyerPropertyRightImages}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{BuyerPropertyRightImages}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"buyerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"PrivacyPolicy\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Privacy Policy\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Privacy\" [(ngModel)]=\"Privacy\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updatePrivacyTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"TermConditon\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Terms & Condition\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Terms\" [(ngModel)]=\"Terms\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n  </div>\n\n\n\n\n\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n\n</div>\n\n<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n      <div class=\"top-bar-user-heading\">\n        UI Elements\n    </div>\n    <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n    </div>\n    \n      \n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"main-container-uielements\">\n\n    <div class=\"mat-card-ui-elelment\">\n      <div class=\"top-tab-bar\">\n        <div class=\"tab-text\" (click)=\"homePages()\" id=\"home\">Home Page</div>\n        <div class=\"tab-text\" (click)=\"Notifications()\" id=\"notification\">Blue Notification</div>\n        <div class=\"tab-text\" id=\"seller\" (click)=\"SellerDetail()\">Seller Details</div>\n        <div class=\"tab-text\" id=\"buyer\" (click)=\"BuyerDetail()\">Buyer Details</div>\n        <div class=\"tab-text\" id=\"privacy\" (click)=\"privacy()\">Privacy Policy</div>\n        <div class=\"tab-text\" id=\"terms\" (click)=\"terms()\">Terms & Conditon</div>\n\n      </div>\n\n\n      <div class=\"mat-home-page-card\" *ngIf=\"homePage\">\n\n\n\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading\">\n            Banner Photo\n          </div>\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{bannerUrl}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uploadTopBannerImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n\n\n\n                <img src=\"{{bannerUrl}}\" class=\"image-agent\" *ngIf=\"bannerUpload\">\n\n                <div class=\"file-upload\" *ngIf=\"!bannerUpload\">\n                  <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"topimage\"\n                    [(ngModel)]=\"topimage\">\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n\n\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{SecondBannerImage}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uplodSecondImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n                <img src=\"{{SecondBannerImage}}\" class=\"image-agent\" *ngIf=\"BannerTwo\">\n                <div class=\"file-upload\" *ngIf=\"!BannerTwo\">\n                  <form #form class=\"upload-form\">\n                    <input type=\"file\" (change)=\"LoweBanner($event)\" accept=\".png,.jpg\" >\n                  </form>\n\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n        </mat-card>\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Start Your Home Journey Now\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step1UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step1Image}}\" class=\"image-agent\" *ngIf=\"step1NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step1NotUpload\">\n\n                    <input type=\"file\" (change)=\"step1upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step1ImageText\" [(ngModel)]=\"Step1ImageText \">\n          </textarea>\n\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step2UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step2Image}}\" class=\"image-agent\" *ngIf=\"step2NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step2NotUpload\">\n\n                    <input type=\"file\" (change)=\"step2upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Review Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step2ImageText\" [(ngModel)]=\"Step2ImageText\">\n                </textarea>\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step3UploadImag()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step3Image}}\" class=\"image-agent\" *ngIf=\"step3NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step3NotUpload\">\n\n                    <input type=\"file\" (change)=\"step3upload($event)\" accept=\".png,.jpg\" name=\"step3ImageNew\"\n                      [(ngModel)]=\"step3ImageNew\">\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step3ImageText\" [(ngModel)]=\"Step3ImageText\">\n                </textarea>\n            </div>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Blogs\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngFor=\"let allBlogs of allBlogs\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" ><img src=\"../../../assets//Images/edit (1).png\"\n                        class=\"pen-image\" (click)=\"uploadBlogImage()\" >Edit</div>\n                        <div class=\"remove-option\">\n                       <span class=\"line\"> | </span> <span (click)=\"removeBlog(allBlogs.Id)\">Remove</span> \n\n                      </div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{allBlogs.Detail.BlogImage}}\" class=\"image-agent\" *ngIf=\"!blogUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"blogUpload\">\n\n                    <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"image\">\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"allBlogs.Detail.TextBlog\">\n          </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"allBlogs.Detail.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngIf=\"addNewBlog\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\"></div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <div class=\"file-upload\">\n                    <input type=\"file\" (change)=\"newBlogPicture($event)\" accept=\".png,.jpg\" name=\"BlogImage\"\n                      [(ngModel)]=\"blog.BlogImage\">\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"blog.TextBlog\">\n            </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"blog.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n          </div>\n\n          <div class=\"update-button update-add-more\" (click)=\"addMoreBlog()\">\n\n            <button mat-button color=\"primary\" class=\"button-color\">Add More</button>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Footer\n          </div>\n\n          <div class=\"main-contianer-journey footer-area\">\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Facebook</span></mat-label>\n              <input matInput name=\"Facebook\" [(ngModel)]=\"footer.Facebook\" #Phone>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Instagram Link</span></mat-label>\n              <input matInput name=\"Instragram\" [(ngModel)]=\"footer.Instragram\" #Phone>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Twitter</span></mat-label>\n              <input matInput name=\"Twitter\" [(ngModel)]=\"footer.Twitter\" #Phone>\n            </mat-form-field>\n          </div>\n\n          \n        </mat-card>\n\n        <div class=\"update-button\" (click)=\"updateDetails()\">\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </div>\n\n\n      \n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"Notification\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          My Nestimate Buyer Details\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"MynestimateBuyerDetails\"\n            [(ngModel)]=\"MynestimateBuyerDetails\">\n      </textarea>\n        </div>\n\n\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Singup From Menu\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SingupFromMenu\" [(ngModel)]=\"SingupFromMenu\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div class=\"update-button\" (click)=\"updateNotification()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"SellerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{SellerPropertyRightImage}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{SellerPropertyRightImage}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"sellerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"BuyerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{BuyerPropertyRightImages}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{BuyerPropertyRightImages}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"buyerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"PrivacyPolicy\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Privacy Policy\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Privacy\" [(ngModel)]=\"Privacy\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updatePrivacyTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"TermConditon\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Terms & Condition\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Terms\" [(ngModel)]=\"Terms\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n  </div>\n\n\n\n\n\n</div>";
     /***/
   },
 
@@ -251,7 +251,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#x21e6;</div>\n                <div class=\"right-text-left-container\">Back to Users</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n\n\n\n\n\n\n\n\n    </div>\n    <!--Profile Info-->\n\n    <div class=\"profile-info-card\">\n        <mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;\">\n            <div class=\"profile-heading\">\n                Personal Info\n            </div>\n\n            <div class=\"fields-profile-info\">\n\n                <div class=\"field-set\">\n                    <mat-form-field appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"title\">Title</span>\n\n                        </mat-label>\n\n                        <mat-select name=\"title\" class=\"drop-down-list\" #titles [(ngModel)]=\"title\">\n                            <mat-option value=\"Mr\">Mr</mat-option>\n                            <mat-option value=\"Ms\">Ms</mat-option>\n                            <mat-option value=\"Mrs\">Mrs</mat-option>\n                        </mat-select>\n\n                    </mat-form-field>\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"Name\">Name</span>\n                        </mat-label>\n\n                        <input matInput name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"Name\">\n                    </mat-form-field>\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"email\">Email</span></mat-label>\n\n                        <input matInput name=\"email\" class=\"mat-mail-input\" [(ngModel)]=\"email\" #emails>\n                    </mat-form-field>\n                </div>\n\n\n                <div class=\"field-set\">\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\"><span id=\"dob\">Date of Birth</span></mat-label>\n                        <input matInput [matDatepicker]=\"picker\" name=\"DOB\" class=\"mat-mail-input\" value=\"DOB\" #dobs\n                            [(ngModel)]=\"DOB\">\n                        <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n                        <mat-datepicker #picker></mat-datepicker>\n                    </mat-form-field>\n\n\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"tele\">Phone Number</span>\n                        </mat-label>\n                        <input matInput name=\"Phone\" maxlength=\"10\" #tele [(ngModel)]=\"Phone\">\n                        <span matPrefix class=\"prefix-number\">+44 &nbsp;</span>\n                    </mat-form-field>\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"Name\">Address</span>\n                        </mat-label>\n                        <textarea matInput placeholder=\"Address\" name=\"Currentaddress\"\n                            [(ngModel)]=\"Currentaddress\"></textarea>\n                    </mat-form-field>\n\n                </div>\n                <div class=\"field-set field-set-last\">\n                    <div class=\"prefrence-text\">Notification Prefrences</div>\n                    <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"prefrence\"\n                        [(ngModel)]=\"prefrence\">\n                        <mat-radio-button value=\"1\">Email for every match</mat-radio-button><br>\n                        <mat-radio-button value=\"2\">Email me once a week with all the matches<br>\n                            that I have</mat-radio-button>\n                    </mat-radio-group>\n\n\n                    <div>\n\n                    </div>\n                    <div></div>\n                </div>\n\n\n\n            </div>\n\n\n            <div class=\"update-button\" (click)=\"userDetails()\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n            </div>\n\n        </mat-card>\n\n\n\n\n\n\n        <!--User List MatCard-->\n        <div class=\"main-listing-container\">\n            <mat-card class=\"user-Listing-mat-card\">\n                <div class=\"profile-heading\">\n                    Listings\n                </div>\n\n                <div class=\"user-content-area\">\n                    <div class=\"user-content-top-heading\">\n                        <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                        <div class=\"text-heading-tab-content\">Id</div>\n                        <div class=\"text-heading-tab-content\">Property </div>\n                        <div class=\"text-heading-tab-content\">Listing Type</div>\n                        <div class=\"text-heading-tab-content\">Action </div>\n                    </div>\n                </div>\n\n\n                <div class=\"main-container-result-users\">\n\n                    <div class=\"user-content-lower-result\" *ngFor=\"let BuyerUserDetails of BuyerUserDetails\">\n                        <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                        <div class=\"text-output-tab-content uid-content\"> {{BuyerUserDetails.id}}</div>\n                        <div class=\"text-output-tab-content\">{{BuyerUserDetails.detail.PropertyType}} at\n                            {{BuyerUserDetails.detail.Lookingpostcode}}</div>\n                        <div class=\"text-output-tab-content tab-content-email\">{{BuyerUserDetails.detail.PropertyFor}}\n                        </div>\n                        <div class=\"text-output-tab-content\">\n\n                            <span class=\"cursor-show\"\n                                (click)=\"deleteBuyer(BuyerUserDetails.detail.UserId,BuyerUserDetails.id)\">\n                                <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span>\n\n                            <span class=\"line-height\"></span>\n\n                            <span class=\"cursor-show\"\n                                routerLink=\"/EditBuyerUserDetails/{{BuyerUserDetails.detail.UserId}}/{{BuyerUserDetails.id}}\">\n                                <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\">Edit </span>\n\n                        </div>\n                    </div>\n\n\n                    <div class=\"user-content-lower-result\" *ngFor=\"let SellerUserDetail of SellerUserDetails\">\n                        <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                        <div class=\"text-output-tab-content uid-content\"> {{SellerUserDetail.id}}</div>\n                        <div class=\"text-output-tab-content\">{{SellerUserDetail.detail.PropertyType}} at\n                            {{SellerUserDetail.detail.Lookingpostcode}}</div>\n                        <div class=\"text-output-tab-content tab-content-email\"\n                            *ngIf=\"SellerUserDetail.detail.PropertyFor == 'buy'\">\n                            Sell\n\n                        </div>\n                        <div class=\"text-output-tab-content tab-content-email\"\n                            *ngIf=\"SellerUserDetail.detail.PropertyFor == 'rent'\">\n                            Let\n\n                        </div>\n                        <div class=\"text-output-tab-content\"\n                            (click)=\"deleteSeller(SellerUserDetail.detail.UserId,SellerUserDetail.id)\">\n\n                            <span class=\"cursor-show\">\n                                <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span>\n                            <span class=\"line-height\"></span>\n\n                            <span class=\"cursor-show\"\n                                routerLink=\"/EditSellerUserDetails/{{SellerUserDetail.detail.UserId}}/{{SellerUserDetail.id}}\">\n                                <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\">Edit </span>\n\n                        </div>\n                    </div>\n\n\n\n\n\n                </div>\n\n\n\n\n\n\n            </mat-card>\n        </div>\n\n\n    </div>\n\n\n\n\n\n\n</div>";
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n    <div class=\"top-bar-container\">\n\n        <div class=\"left-container\">\n\n            <div class=\"left-container-wrapper\" (click)=\"backClicked()\">\n                <div class=\"aarow-left-container\"> &#x21e6;</div>\n                <div class=\"right-text-left-container\">Back to Users</div>\n            </div>\n        </div>\n        <div class=\"right-text-container\">\n            <div class=\"top-bar-user-heading\">\n                <img src=\"{{image}}\" class=\"image-people\">\n            </div>\n            <div class=\"lower-text-heading\">\n                {{username}}\n            </div>\n        </div>\n\n\n\n\n\n\n\n\n    </div>\n    <!--Profile Info-->\n\n    <div class=\"profile-info-card\">\n        <mat-card style=\"    border-radius: 10px; box-shadow: 3px 3px 5px 3px #ccc;\">\n            <div class=\"profile-heading\">\n                Personal Info\n            </div>\n\n            <div class=\"fields-profile-info\">\n\n                <div class=\"field-set\">\n                    <mat-form-field appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"title\">Title</span>\n\n                        </mat-label>\n\n                        <mat-select name=\"title\" class=\"drop-down-list\" #titles [(ngModel)]=\"title\">\n                            <mat-option value=\"Mr\">Mr</mat-option>\n                            <mat-option value=\"Ms\">Ms</mat-option>\n                            <mat-option value=\"Mrs\">Mrs</mat-option>\n                        </mat-select>\n\n                    </mat-form-field>\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"Name\">Name</span>\n                        </mat-label>\n\n                        <input matInput name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"Name\">\n                    </mat-form-field>\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"email\">Email</span></mat-label>\n\n                        <input matInput name=\"email\" class=\"mat-mail-input\" [(ngModel)]=\"email\" #emails>\n                    </mat-form-field>\n                </div>\n\n\n                <div class=\"field-set\">\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\"><span id=\"dob\">Date of Birth</span></mat-label>\n                        <input matInput [matDatepicker]=\"picker\" name=\"DOB\" class=\"mat-mail-input\" value=\"DOB\" #dobs\n                            [(ngModel)]=\"DOB\">\n                        <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n                        <mat-datepicker #picker></mat-datepicker>\n                    </mat-form-field>\n\n\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"tele\">Phone Number</span>\n                        </mat-label>\n                        <input matInput name=\"Phone\" maxlength=\"10\" #tele [(ngModel)]=\"Phone\">\n                        <span matPrefix class=\"prefix-number\">+44 &nbsp;</span>\n                    </mat-form-field>\n                    <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                        <mat-label class=\"fixed-Label\">\n                            <span id=\"Name\">Address</span>\n                        </mat-label>\n                        <textarea matInput placeholder=\"Address\" name=\"Currentaddress\"\n                            [(ngModel)]=\"Currentaddress\"></textarea>\n                    </mat-form-field>\n\n                </div>\n                <div class=\"field-set field-set-last\">\n                    <div class=\"prefrence-text\">Notification Prefrences</div>\n                    <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"prefrence\"\n                        [(ngModel)]=\"prefrence\">\n                        <mat-radio-button value=\"1\">Email for every match</mat-radio-button><br>\n                        <mat-radio-button value=\"2\">Email me once a week with all the matches<br>\n                            that I have</mat-radio-button>\n                    </mat-radio-group>\n\n\n                    <div>\n\n                    </div>\n                    <div></div>\n                </div>\n\n\n\n            </div>\n\n\n            <div class=\"update-button\" (click)=\"userDetails()\">\n\n                <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n            </div>\n\n        </mat-card>\n\n\n\n\n\n\n        <!--User List MatCard-->\n        <div class=\"main-listing-container\">\n            <mat-card class=\"user-Listing-mat-card\">\n                <div class=\"profile-heading\">\n                    Listings\n                </div>\n\n                <div class=\"user-content-area\">\n                    <div class=\"user-content-top-heading\">\n                        <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                        <div class=\"text-heading-tab-content\">Id</div>\n                        <div class=\"text-heading-tab-content\">Property </div>\n                        <div class=\"text-heading-tab-content\">Listing Type</div>\n                        <div class=\"text-heading-tab-content\">Action </div>\n                    </div>\n                </div>\n\n\n                <div class=\"main-container-result-users\">\n\n                    <div class=\"user-content-lower-result\" *ngFor=\"let BuyerUserDetails of BuyerUserDetails\" routerLink=\"/EditBuyerUserDetails/{{BuyerUserDetails.detail.UserId}}/{{BuyerUserDetails.id}}\">\n                        <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                        <div class=\"text-output-tab-content uid-content\"> {{BuyerUserDetails.id}}</div>\n                        <div class=\"text-output-tab-content\">{{BuyerUserDetails.detail.PropertyType}} at\n                            {{BuyerUserDetails.detail.Lookingpostcode}}</div>\n                        <div class=\"text-output-tab-content tab-content-email\">{{BuyerUserDetails.detail.PropertyFor}}\n                        </div>\n                        <div class=\"text-output-tab-content\">\n\n                            <span class=\"cursor-show\"\n                                (click)=\"deleteBuyer(BuyerUserDetails.detail.UserId,BuyerUserDetails.id)\">\n                                <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span>\n\n                            <span class=\"line-height\"></span>\n\n                            <span class=\"cursor-show\"\n                                routerLink=\"/EditBuyerUserDetails/{{BuyerUserDetails.detail.UserId}}/{{BuyerUserDetails.id}}\">\n                                <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\">Edit </span>\n\n                        </div>\n                    </div>\n\n\n                    <div class=\"user-content-lower-result\" *ngFor=\"let SellerUserDetail of SellerUserDetails\" routerLink=\"/EditSellerUserDetails/{{SellerUserDetail.detail.UserId}}/{{SellerUserDetail.id}}\">\n                        <mat-checkbox class=\"example-margin\"></mat-checkbox>\n                        <div class=\"text-output-tab-content uid-content\"> {{SellerUserDetail.id}}</div>\n                        <div class=\"text-output-tab-content\">{{SellerUserDetail.detail.PropertyType}} at\n                            {{SellerUserDetail.detail.Lookingpostcode}}</div>\n                        <div class=\"text-output-tab-content tab-content-email\"\n                            *ngIf=\"SellerUserDetail.detail.PropertyFor == 'buy'\">\n                            Sell\n\n                        </div>\n                        <div class=\"text-output-tab-content tab-content-email\"\n                            *ngIf=\"SellerUserDetail.detail.PropertyFor == 'rent'\">\n                            Let\n\n                        </div>\n                        <div class=\"text-output-tab-content\"\n                            (click)=\"deleteSeller(SellerUserDetail.detail.UserId,SellerUserDetail.id)\">\n\n                            <span class=\"cursor-show\">\n                                <img src=\"../../../assets/Images/dustbin (1).png\" class=\"icon-action\"> Delete </span>\n                            <span class=\"line-height\"></span>\n\n                            <span class=\"cursor-show\"\n                                routerLink=\"/EditSellerUserDetails/{{SellerUserDetail.detail.UserId}}/{{SellerUserDetail.id}}\">\n                                <img src=\"../../../assets/Images/edit.png\" class=\"icon-action\">Edit </span>\n\n                        </div>\n                    </div>\n\n\n\n\n\n                </div>\n\n\n\n\n\n\n            </mat-card>\n        </div>\n\n\n    </div>\n\n\n\n\n\n\n</div>";
     /***/
   },
 
@@ -2075,7 +2075,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 6vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 2px solid var(--DARK-BLUE-COLOR);\n    justify-content: space-between;\n    padding: 0em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.fixed-Label{\ncolor: #B1A9A9;\n}\n\n.left-container:hover\n{\n    cursor: pointer;\n}\n\n.add_more_button:hover\n{\n    cursor: pointer;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 1em;\n    font-size: 20px;\n    padding-left: 10px;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 2px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.sub-heading-user-type\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    margin-top: 5px;\n    font-size: 18px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9BZG1pbi1jb21tb24uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCOztJQUVsQixpQkFBaUI7O0lBRWpCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUNBOztBQUVBLGNBQWM7QUFDZCxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGVBQWU7QUFDZjs7QUFDQTtJQUNJLFdBQVc7SUFDWCxtQkFBbUI7SUFDbkIsa0JBQWtCO0lBQ2xCLGdDQUFnQztBQUNwQzs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix3Q0FBd0M7SUFDeEMsOEJBQThCO0lBQzlCLGdCQUFnQjtJQUNoQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBRUE7QUFDQSxjQUFjO0FBQ2Q7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQjs7QUFDQTs7SUFFSSxlQUFlO0FBQ25COztBQVNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsd0JBQXdCO0lBQ3hCLG1CQUFtQjtJQUNuQiwwQkFBa0I7SUFBbEIsdUJBQWtCO0lBQWxCLGtCQUFrQjtJQUNsQixrQkFBa0I7SUFDbEIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0Qjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFHQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxlQUFlO0lBQ2YsZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvQWRtaW4tY29tbW9uLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi51c2VyLWFnZW50LXRhYi1tYWluLWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAxMWVtO1xuXG4gICAgcGFkZGluZy10b3A6IDEwdmg7XG5cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuXG4uYWRkX21vcmVfYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm9yZGVyLXJhZGl1czogMTFweDtcbiAgICBmb250LXNpemU6IDE1cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxZW07XG59XG4udG9wLWJhci1oZWFkZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuLnRvcC1iYXItdXNlci1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xuICBjb2xvcjogIzBGM0M3Mztcbn1cbi5sb3dlci10ZXh0LWhlYWRpbmdcbntcbmNvbG9yOiAjMUVBQUZBO1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcbmZvbnQtc2l6ZTogMjBweDtcbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogNnZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi5sZWZ0LWNvbnRhaW5lci13cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgcGFkZGluZzogMGVtIDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuXG59XG4udG9wLWJhci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucmlnaHQtdGV4dC1sZWZ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5hYXJvdy1sZWZ0LWNvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiAxLjllbTtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG4uZml4ZWQtTGFiZWx7XG5jb2xvcjogI0IxQTlBOTtcbn1cbi5sZWZ0LWNvbnRhaW5lcjpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b246aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cblxuXG5cblxuXG5cblxuLnByb2ZpbGUtaGVhZGluZyB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IG1heC1jb250ZW50O1xuICAgIHBhZGRpbmctcmlnaHQ6IDFlbTtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAycHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cblxuLnN1Yi1oZWFkaW5nLXVzZXItdHlwZVxue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICBmb250LXNpemU6IDE4cHg7XG59Il19 */";
+    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 6vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 2px solid var(--DARK-BLUE-COLOR);\n    justify-content: space-between;\n    padding: 0em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.fixed-Label{\ncolor: #B1A9A9;\n}\n\n.add_more_button:hover\n{\n    cursor: pointer;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 1em;\n    font-size: 20px;\n    padding-left: 10px;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 2px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.sub-heading-user-type\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    margin-top: 5px;\n    font-size: 18px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9BZG1pbi1jb21tb24uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksa0JBQWtCOztJQUVsQixpQkFBaUI7O0lBRWpCLHlCQUF5QjtBQUM3Qjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCOztBQUNBOztBQUVBLGNBQWM7QUFDZCxpQ0FBaUM7QUFDakMsZ0JBQWdCO0FBQ2hCLGVBQWU7QUFDZjs7QUFDQTtJQUNJLFdBQVc7SUFDWCxtQkFBbUI7SUFDbkIsa0JBQWtCO0lBQ2xCLGdDQUFnQztBQUNwQzs7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQix3Q0FBd0M7SUFDeEMsOEJBQThCO0lBQzlCLGdCQUFnQjtJQUNoQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBRUE7QUFDQSxjQUFjO0FBQ2Q7O0FBRUE7O0lBRUksZUFBZTtBQUNuQjs7QUFTQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLHdCQUF3QjtJQUN4QixtQkFBbUI7SUFDbkIsMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsa0JBQWtCO0lBQ2xCLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLGdDQUFnQztJQUNoQyxlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBR0E7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL0FkbWluLWNvbW1vbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcblxuICAgIHBhZGRpbmctdG9wOiAxMHZoO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDExcHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG59XG5pbWcuaW1hZ2UtcGVvcGxlIHtcbiAgICBoZWlnaHQ6IDZ2aDtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC10ZXh0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG5zcGFuLmJ1dHRvbi1zaXplIHtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG4ubGVmdC1jb250YWluZXItd3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDBlbSAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxufVxuLnRvcC1iYXItY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnJpZ2h0LXRleHQtbGVmdC1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMmVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4uYWFyb3ctbGVmdC1jb250YWluZXIge1xuICAgIGZvbnQtc2l6ZTogMS45ZW07XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbn1cblxuLmZpeGVkLUxhYmVse1xuY29sb3I6ICNCMUE5QTk7XG59XG5cbi5hZGRfbW9yZV9idXR0b246aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cblxuXG5cblxuXG5cblxuLnByb2ZpbGUtaGVhZGluZyB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IG1heC1jb250ZW50O1xuICAgIHBhZGRpbmctcmlnaHQ6IDFlbTtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAycHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cblxuLnN1Yi1oZWFkaW5nLXVzZXItdHlwZVxue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIG1hcmdpbi10b3A6IDVweDtcbiAgICBmb250LXNpemU6IDE4cHg7XG59Il19 */";
     /***/
   },
 
@@ -2251,7 +2251,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".nestimate-admin-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 23px;\n    padding-left: 1rem;\n\n}\n\nimg.nestimate-logo-header {\n    height: 4vh;\n}\n\n.admin-heaher-main {\n    display: grid;\n    grid-template-columns: 1fr 9.2fr;\n    align-items: center;\n    padding: 10px;\n    background-color: white;\n    position: fixed;\n    z-index: 1;\n    width: 100%;\n    box-shadow: 0 11px 6px -6px #ccc;\n\n\n}\n\n.admin-side-bar {\n    background-color: white;\n    float: left;\n    height: 92%;\n    box-shadow: 7px 0 5px -2px #00000029;\n    position: fixed;\n    margin-top: 0vh;\n    padding: 0em 1em;\n    width: 8vw;\n    z-index: 1;\n    margin-top: 7vh;\n}\n\nimg.dashboard-icon {\n   \n    height: 5vh;\n\n}\n\n.dashboard-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 1.3em;\n    padding-right: 0px;\n    padding-left: 0px;\n   \n\n}\n\n.dashboard-container\n{\n    color: #C1BFBF;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 500;\n}\n\n.sign-out-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    /* position: relative; */\n    /* bottom: 0px; */\n    position: absolute;\n    bottom: 10px;\n    left: 3em;\n}\n\n.active-dashboard {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: 8px 8px 5px -1px #00000029;\n\n    padding: 7px;\n   \n}\n\n.dashboard-div:hover\n{\n   cursor: pointer;\n}\n\n.sign-out-dashboard:hover\n{\n    cursor: pointer;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.nestimate-logo-container {\n    border-right: 1px solid;\n}\n\n.active-dashboard.user-active {\n    width: 7vw;\n}\n\n@media only screen and (min-width:1440px)\n{\n    img.nestimate-logo-header {\n        height: 3.8vh;\n    }\n    .admin-side-bar {\n        background-color: white;\n        float: left;\n        height: 92%;\n        box-shadow: 7px 0 5px -2px #00000029;\n        position: fixed;\n        margin-top: 0vh;\n        padding: 0em 1em;\n        width: 8vw;\n        z-index: 1;\n        margin-top: 7vh;\n    }\n    \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsZ0NBQWdDO0lBQ2hDLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGVBQWU7SUFDZixVQUFVO0lBQ1YsV0FBVztJQUNYLGdDQUFnQzs7O0FBR3BDOztBQUdBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxXQUFXO0lBQ1gsb0NBQW9DO0lBQ3BDLGVBQWU7SUFDZixlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLFVBQVU7SUFDVixVQUFVO0lBQ1YsZUFBZTtBQUNuQjs7QUFHQTs7SUFFSSxXQUFXOztBQUVmOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsc0JBQXNCO0lBQ3RCLGNBQWM7SUFDZCxrQkFBa0I7SUFDbEIsaUJBQWlCOzs7QUFHckI7O0FBRUE7O0lBRUksY0FBYztJQUNkLGlDQUFpQztFQUNuQyxnQkFBZ0I7QUFDbEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsd0JBQXdCO0lBQ3hCLGlCQUFpQjtJQUNqQixrQkFBa0I7SUFDbEIsWUFBWTtJQUNaLFNBQVM7QUFDYjs7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLHNDQUFzQzs7SUFFdEMsWUFBWTs7QUFFaEI7O0FBQ0E7O0dBRUcsZUFBZTtBQUNsQjs7QUFFQTs7SUFFSSxlQUFlO0FBQ25COztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLHVCQUF1QjtBQUMzQjs7QUFDQTtJQUNJLFVBQVU7QUFDZDs7QUFHQTs7SUFFSTtRQUNJLGFBQWE7SUFDakI7SUFDQTtRQUNJLHVCQUF1QjtRQUN2QixXQUFXO1FBQ1gsV0FBVztRQUNYLG9DQUFvQztRQUNwQyxlQUFlO1FBQ2YsZUFBZTtRQUNmLGdCQUFnQjtRQUNoQixVQUFVO1FBQ1YsVUFBVTtRQUNWLGVBQWU7SUFDbkI7O0FBRUoiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL2FkbWluLWhlYWRlci9hZG1pbi1oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5uZXN0aW1hdGUtYWRtaW4taGVhZGluZ1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtc2l6ZTogMjNweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDFyZW07XG5cbn1cblxuaW1nLm5lc3RpbWF0ZS1sb2dvLWhlYWRlciB7XG4gICAgaGVpZ2h0OiA0dmg7XG59XG4uYWRtaW4taGVhaGVyLW1haW4ge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgOS4yZnI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB6LWluZGV4OiAxO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJveC1zaGFkb3c6IDAgMTFweCA2cHggLTZweCAjY2NjO1xuXG5cbn1cblxuXG4uYWRtaW4tc2lkZS1iYXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGZsb2F0OiBsZWZ0O1xuICAgIGhlaWdodDogOTIlO1xuICAgIGJveC1zaGFkb3c6IDdweCAwIDVweCAtMnB4ICMwMDAwMDAyOTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgbWFyZ2luLXRvcDogMHZoO1xuICAgIHBhZGRpbmc6IDBlbSAxZW07XG4gICAgd2lkdGg6IDh2dztcbiAgICB6LWluZGV4OiAxO1xuICAgIG1hcmdpbi10b3A6IDd2aDtcbn1cblxuXG5pbWcuZGFzaGJvYXJkLWljb24ge1xuICAgXG4gICAgaGVpZ2h0OiA1dmg7XG5cbn1cblxuLmRhc2hib2FyZC1kaXYge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIHBhZGRpbmc6IDEuM2VtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDBweDtcbiAgICBwYWRkaW5nLWxlZnQ6IDBweDtcbiAgIFxuXG59XG5cbi5kYXNoYm9hcmQtY29udGFpbmVyXG57XG4gICAgY29sb3I6ICNDMUJGQkY7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICBmb250LXdlaWdodDogNTAwO1xufVxuXG4uc2lnbi1vdXQtZGl2IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAvKiBwb3NpdGlvbjogcmVsYXRpdmU7ICovXG4gICAgLyogYm90dG9tOiAwcHg7ICovXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGJvdHRvbTogMTBweDtcbiAgICBsZWZ0OiAzZW07XG59XG5cbi5hY3RpdmUtZGFzaGJvYXJkIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBib3gtc2hhZG93OiA4cHggOHB4IDVweCAtMXB4ICMwMDAwMDAyOTtcblxuICAgIHBhZGRpbmc6IDdweDtcbiAgIFxufVxuLmRhc2hib2FyZC1kaXY6aG92ZXJcbntcbiAgIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLnNpZ24tb3V0LWRhc2hib2FyZDpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbnNwYW4ubGluZS1oZWlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDMUJCQkI7XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbn1cbi5uZXN0aW1hdGUtbG9nby1jb250YWluZXIge1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkO1xufVxuLmFjdGl2ZS1kYXNoYm9hcmQudXNlci1hY3RpdmUge1xuICAgIHdpZHRoOiA3dnc7XG59XG5cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOjE0NDBweClcbntcbiAgICBpbWcubmVzdGltYXRlLWxvZ28taGVhZGVyIHtcbiAgICAgICAgaGVpZ2h0OiAzLjh2aDtcbiAgICB9XG4gICAgLmFkbWluLXNpZGUtYmFyIHtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgIGZsb2F0OiBsZWZ0O1xuICAgICAgICBoZWlnaHQ6IDkyJTtcbiAgICAgICAgYm94LXNoYWRvdzogN3B4IDAgNXB4IC0ycHggIzAwMDAwMDI5O1xuICAgICAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgICAgIG1hcmdpbi10b3A6IDB2aDtcbiAgICAgICAgcGFkZGluZzogMGVtIDFlbTtcbiAgICAgICAgd2lkdGg6IDh2dztcbiAgICAgICAgei1pbmRleDogMTtcbiAgICAgICAgbWFyZ2luLXRvcDogN3ZoO1xuICAgIH1cbiAgICBcbn0iXX0= */";
+    __webpack_exports__["default"] = ".nestimate-admin-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 23px;\n    padding-left: 2rem;\n\n}\n\nimg.nestimate-logo-header {\n    height: 4vh;\n}\n\n.admin-heaher-main {\n    display: grid;\n    grid-template-columns: 1fr 9.2fr;\n    align-items: center;\n    padding: 10px;\n    background-color: white;\n    position: fixed;\n    z-index: 1;\n    width: 100%;\n    box-shadow: 0 11px 6px -6px #ccc;\n\n\n}\n\n.admin-side-bar {\n    background-color: white;\n    float: left;\n    height: 92%;\n    box-shadow: 7px 0 5px -2px #00000029;\n    position: fixed;\n    margin-top: 0vh;\n    padding: 0em 1em;\n    width: 8vw;\n    z-index: 1;\n    margin-top: 7.5vh;\n}\n\nimg.dashboard-icon {\n   \n    height: 5vh;\n\n}\n\n.dashboard-div {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-direction: column;\n    padding: 1.3em;\n    padding-right: 0px;\n    padding-left: 0px;\n   \n\n}\n\n.dashboard-container\n{\n    color: #C1BFBF;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 500;\n}\n\n.sign-out-div {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    /* position: relative; */\n    /* bottom: 0px; */\n    position: absolute;\n    bottom: 10px;\n    left: 3em;\n}\n\n.active-dashboard {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    box-shadow: 8px 8px 5px -1px #00000029;\n    border: 1px solid lightgrey;\n    padding: 7px;\n   \n}\n\n.dashboard-div:hover\n{\n   cursor: pointer;\n}\n\n.sign-out-dashboard:hover\n{\n    cursor: pointer;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.nestimate-logo-container {\n    border-right: 1px solid;\n}\n\n.active-dashboard.user-active {\n    width: 7vw;\n}\n\n@media only screen and (min-width:1440px)\n{\n    img.nestimate-logo-header {\n        height: 3.8vh;\n    }\n    .admin-side-bar {\n        background-color: white;\n        float: left;\n        height: 92%;\n        box-shadow: 7px 0 5px -2px #00000029;\n        position: fixed;\n        margin-top: 0vh;\n        padding: 0em 1em;\n        width: 8vw;\n        z-index: 1;\n        margin-top: 7vh;\n    }\n    \n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZG1pbi1oZWFkZXIvYWRtaW4taGVhZGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7O0FBRUE7SUFDSSxXQUFXO0FBQ2Y7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsZ0NBQWdDO0lBQ2hDLG1CQUFtQjtJQUNuQixhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLGVBQWU7SUFDZixVQUFVO0lBQ1YsV0FBVztJQUNYLGdDQUFnQzs7O0FBR3BDOztBQUdBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxXQUFXO0lBQ1gsb0NBQW9DO0lBQ3BDLGVBQWU7SUFDZixlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLFVBQVU7SUFDVixVQUFVO0lBQ1YsaUJBQWlCO0FBQ3JCOztBQUdBOztJQUVJLFdBQVc7O0FBRWY7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixzQkFBc0I7SUFDdEIsY0FBYztJQUNkLGtCQUFrQjtJQUNsQixpQkFBaUI7OztBQUdyQjs7QUFFQTs7SUFFSSxjQUFjO0lBQ2QsaUNBQWlDO0VBQ25DLGdCQUFnQjtBQUNsQjs7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQix3QkFBd0I7SUFDeEIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixZQUFZO0lBQ1osU0FBUztBQUNiOztBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixtQkFBbUI7SUFDbkIsc0NBQXNDO0lBQ3RDLDJCQUEyQjtJQUMzQixZQUFZOztBQUVoQjs7QUFDQTs7R0FFRyxlQUFlO0FBQ2xCOztBQUVBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksdUJBQXVCO0FBQzNCOztBQUNBO0lBQ0ksVUFBVTtBQUNkOztBQUdBOztJQUVJO1FBQ0ksYUFBYTtJQUNqQjtJQUNBO1FBQ0ksdUJBQXVCO1FBQ3ZCLFdBQVc7UUFDWCxXQUFXO1FBQ1gsb0NBQW9DO1FBQ3BDLGVBQWU7UUFDZixlQUFlO1FBQ2YsZ0JBQWdCO1FBQ2hCLFVBQVU7UUFDVixVQUFVO1FBQ1YsZUFBZTtJQUNuQjs7QUFFSiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvYWRtaW4taGVhZGVyL2FkbWluLWhlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm5lc3RpbWF0ZS1hZG1pbi1oZWFkaW5nXG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAyM3B4O1xuICAgIHBhZGRpbmctbGVmdDogMnJlbTtcblxufVxuXG5pbWcubmVzdGltYXRlLWxvZ28taGVhZGVyIHtcbiAgICBoZWlnaHQ6IDR2aDtcbn1cbi5hZG1pbi1oZWFoZXItbWFpbiB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciA5LjJmcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHotaW5kZXg6IDE7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYm94LXNoYWRvdzogMCAxMXB4IDZweCAtNnB4ICNjY2M7XG5cblxufVxuXG5cbi5hZG1pbi1zaWRlLWJhciB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZmxvYXQ6IGxlZnQ7XG4gICAgaGVpZ2h0OiA5MiU7XG4gICAgYm94LXNoYWRvdzogN3B4IDAgNXB4IC0ycHggIzAwMDAwMDI5O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBtYXJnaW4tdG9wOiAwdmg7XG4gICAgcGFkZGluZzogMGVtIDFlbTtcbiAgICB3aWR0aDogOHZ3O1xuICAgIHotaW5kZXg6IDE7XG4gICAgbWFyZ2luLXRvcDogNy41dmg7XG59XG5cblxuaW1nLmRhc2hib2FyZC1pY29uIHtcbiAgIFxuICAgIGhlaWdodDogNXZoO1xuXG59XG5cbi5kYXNoYm9hcmQtZGl2IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBwYWRkaW5nOiAxLjNlbTtcbiAgICBwYWRkaW5nLXJpZ2h0OiAwcHg7XG4gICAgcGFkZGluZy1sZWZ0OiAwcHg7XG4gICBcblxufVxuXG4uZGFzaGJvYXJkLWNvbnRhaW5lclxue1xuICAgIGNvbG9yOiAjQzFCRkJGO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cblxuLnNpZ24tb3V0LWRpdiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgLyogcG9zaXRpb246IHJlbGF0aXZlOyAqL1xuICAgIC8qIGJvdHRvbTogMHB4OyAqL1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBib3R0b206IDEwcHg7XG4gICAgbGVmdDogM2VtO1xufVxuXG4uYWN0aXZlLWRhc2hib2FyZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm94LXNoYWRvdzogOHB4IDhweCA1cHggLTFweCAjMDAwMDAwMjk7XG4gICAgYm9yZGVyOiAxcHggc29saWQgbGlnaHRncmV5O1xuICAgIHBhZGRpbmc6IDdweDtcbiAgIFxufVxuLmRhc2hib2FyZC1kaXY6aG92ZXJcbntcbiAgIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuLnNpZ24tb3V0LWRhc2hib2FyZDpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbnNwYW4ubGluZS1oZWlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDMUJCQkI7XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbn1cbi5uZXN0aW1hdGUtbG9nby1jb250YWluZXIge1xuICAgIGJvcmRlci1yaWdodDogMXB4IHNvbGlkO1xufVxuLmFjdGl2ZS1kYXNoYm9hcmQudXNlci1hY3RpdmUge1xuICAgIHdpZHRoOiA3dnc7XG59XG5cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoOjE0NDBweClcbntcbiAgICBpbWcubmVzdGltYXRlLWxvZ28taGVhZGVyIHtcbiAgICAgICAgaGVpZ2h0OiAzLjh2aDtcbiAgICB9XG4gICAgLmFkbWluLXNpZGUtYmFyIHtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgICAgIGZsb2F0OiBsZWZ0O1xuICAgICAgICBoZWlnaHQ6IDkyJTtcbiAgICAgICAgYm94LXNoYWRvdzogN3B4IDAgNXB4IC0ycHggIzAwMDAwMDI5O1xuICAgICAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgICAgIG1hcmdpbi10b3A6IDB2aDtcbiAgICAgICAgcGFkZGluZzogMGVtIDFlbTtcbiAgICAgICAgd2lkdGg6IDh2dztcbiAgICAgICAgei1pbmRleDogMTtcbiAgICAgICAgbWFyZ2luLXRvcDogN3ZoO1xuICAgIH1cbiAgICBcbn0iXX0= */";
     /***/
   },
 
@@ -3086,6 +3086,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
+        key: "deleteBlog",
+        value: function deleteBlog(uid, propertyId) {
+          return this.db.collection("Blogs").doc(uid).collection("AllBlogs").doc(propertyId)["delete"]();
+        }
+      }, {
         key: "deleteAgent",
         value: function deleteAgent(uid) {
           return this.db.collection("agentSignup").doc(uid)["delete"]();
@@ -3446,7 +3451,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.sub-heading-user-type {\n\n    padding-left: 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n\nimg.pen-image {\n    height: 1.5vh;\n    margin-right: 10px;\n}\n\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    padding: 1em;\n}\n\nimg.image-agent {\n    height: 12vh;\n}\n\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n}\n\n.agent-image-upload {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border: 1px solid #707070;\n    margin: 1em 28vw;\n    border-radius: 10px;\n}\n\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\n\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\n\nimg.cross-image {\n    height: 1.5vh;\n}\n\n.add-more-area\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1lZGl0LXBhZ2UvYWdlbnQtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7O0lBRWxCLGlCQUFpQjs7SUFFakIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmOztBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBSUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtEQUFrRDtJQUNsRCxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCOztJQUVoQixnQkFBZ0I7SUFDaEIsY0FBYztBQUNsQjs7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixnQkFBZ0I7QUFDcEI7O0FBQ0E7O0lBRUksa0JBQWtCO0FBQ3RCOztBQVdBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYixrREFBa0Q7SUFDbEQsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix3QkFBd0I7SUFDeEIsdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLHVCQUF1QjtBQUMzQjs7QUFDQTtJQUNJLGFBQWE7SUFDYixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0JBQWtCO0FBQ3RCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixZQUFZO0FBQ2hCOztBQUNBO0lBQ0ksWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsV0FBVztBQUNmOztBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLHlCQUF5QjtJQUN6QixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjs7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixvQkFBb0I7SUFDcEIseUJBQXlCO0FBQzdCOztBQUNBO0lBQ0ksYUFBYTtBQUNqQjs7QUFDQTs7SUFFSSxlQUFlO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1lZGl0LXBhZ2UvYWdlbnQtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudXNlci1hZ2VudC10YWItbWFpbi1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMTFlbTtcblxuICAgIHBhZGRpbmctdG9wOiAxMHZoO1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDExcHg7XG4gICAgZm9udC1zaXplOiAxNXB4O1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG59XG5pbWcuaW1hZ2UtcGVvcGxlIHtcbiAgICBoZWlnaHQ6IDV2aDtcbiAgICBib3JkZXItcmFkaXVzOiA1MHB4O1xuICAgIG1hcmdpbi1yaWdodDogMTVweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5yaWdodC10ZXh0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG5zcGFuLmJ1dHRvbi1zaXplIHtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG59XG4ubGVmdC1jb250YWluZXItd3JhcHBlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkIGJsYWNrO1xuXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmc6IDAuNWVtIDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuXG59XG4udG9wLWJhci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4ucmlnaHQtdGV4dC1sZWZ0LWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAyZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5hYXJvdy1sZWZ0LWNvbnRhaW5lciB7XG4gICAgZm9udC1zaXplOiAxLjllbTtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXdlaWdodDogNzAwO1xufVxuXG5cblxuLmZpZWxkLXNldCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmV4YW1wbGUtZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG59XG5cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBwYWRkaW5nOiAwZW0gNWVtO1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbiAgICB3aWR0aDogMTF2dztcbiAgICBmb250LXNpemU6IDIwcHg7XG59XG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuYnV0dG9uLmJ1dHRvbi1jb2xvcntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgcGFkZGluZzogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1MaXN0aW5nLW1hdC1jYXJkIHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG59XG4udGV4dC1oZWFkaW5nLXRhYi1jb250ZW50IHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcblxuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4ubWFpbi1saXN0aW5nLWNvbnRhaW5lciB7XG4gICAgcGFkZGluZzogMmVtIDBlbTtcbn1cbnNwYW4ubGluZS1oZWlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDMUJCQkI7XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbn1cbi5zdWItaGVhZGluZy11c2VyLXR5cGUge1xuXG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuXG5cblxuXG5cblxuXG5cblxuXG4udWlkLWNvbnRlbnQge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5jdXJzb3Itc2hvd1xue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuM2ZyIDFmciAxLjJmciAwLjlmciAwLjZmcjtcbiAgICBtYXJnaW4tbGVmdDogMGVtO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICAvKiBtYXJnaW4tYm90dG9tOiAxZW07ICovXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEzcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAganVzdGlmeS1pdGVtczogYmFzZWxpbmU7XG59XG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG4uYWRkLW1vcmUtYXJlYSB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG5pbWcucGVuLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogMTBweDtcbn1cbi51cGxvYWQtaW1hZ2UtZmlyc3QtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgd2lkdGg6IDg1JTtcbiAgICBwYWRkaW5nOiAxZW07XG59XG5pbWcuaW1hZ2UtYWdlbnQge1xuICAgIGhlaWdodDogMTJ2aDtcbn1cbi5pbWFnZS11c2VyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLmFnZW50LWltYWdlLXVwbG9hZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyOiAxcHggc29saWQgIzcwNzA3MDtcbiAgICBtYXJnaW46IDFlbSAyOHZ3O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5zcGFuLm5vdGUtYXJlYSB7XG4gICAgY29sb3I6ICNCMUE5QTk7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBtYXJnaW46IDAuN2VtIC0xLjVlbTtcbiAgICAvKiBib3JkZXItcmFkaXVzOiAxN3B4OyAqL1xufVxuaW1nLmNyb3NzLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xufVxuLmFkZC1tb3JlLWFyZWFcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */";
+    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.sub-heading-user-type {\n\n    padding-left: 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\n\nimg.pen-image {\n    height: 1.5vh;\n    margin-right: 10px;\n}\n\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    width: 85%;\n    padding: 1em;\n}\n\nimg.image-agent {\n    height: 12vh;\n}\n\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n}\n\n.agent-image-upload {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    border: 1px solid #707070;\n    margin: 1em 28vw;\n    border-radius: 10px;\n}\n\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\n\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\n\nimg.cross-image {\n    height: 1.5vh;\n}\n\n.add-more-area\n{\n    cursor: pointer;\n}\n\n.user-content-lower-result:hover\n{\n    cursor: pointer;\n}\n\n.left-container:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1lZGl0LXBhZ2UvYWdlbnQtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7O0lBRWxCLGlCQUFpQjs7SUFFakIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmOztBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBSUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtEQUFrRDtJQUNsRCxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCOztJQUVoQixnQkFBZ0I7SUFDaEIsY0FBYztBQUNsQjs7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixnQkFBZ0I7QUFDcEI7O0FBQ0E7O0lBRUksa0JBQWtCO0FBQ3RCOztBQVdBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGFBQWE7SUFDYixrREFBa0Q7SUFDbEQsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix3QkFBd0I7SUFDeEIsdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLHVCQUF1QjtBQUMzQjs7QUFDQTtJQUNJLGFBQWE7SUFDYixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0JBQWtCO0FBQ3RCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLFVBQVU7SUFDVixZQUFZO0FBQ2hCOztBQUNBO0lBQ0ksWUFBWTtBQUNoQjs7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsV0FBVztBQUNmOztBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLHlCQUF5QjtJQUN6QixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjs7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixvQkFBb0I7SUFDcEIseUJBQXlCO0FBQzdCOztBQUNBO0lBQ0ksYUFBYTtBQUNqQjs7QUFDQTs7SUFFSSxlQUFlO0FBQ25COztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvYWdlbnQtZWRpdC1wYWdlL2FnZW50LWVkaXQtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG5cbiAgICBwYWRkaW5nLXRvcDogMTB2aDtcblxuICAgIGJhY2tncm91bmQtY29sb3I6ICNGOUY5Rjk7XG59XG5cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbi50b3AtYmFyLWhlYWRlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4udG9wLWJhci11c2VyLWhlYWRpbmcge1xuICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGNvbG9yOiAjMEYzQzczO1xufVxuLmxvd2VyLXRleHQtaGVhZGluZ1xue1xuY29sb3I6ICMxRUFBRkE7XG5mb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuZm9udC1zaXplOiAyMHB4O1xufVxuaW1nLmltYWdlLXBlb3BsZSB7XG4gICAgaGVpZ2h0OiA1dmg7XG4gICAgYm9yZGVyLXJhZGl1czogNTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDE1cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucmlnaHQtdGV4dC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuc3Bhbi5idXR0b24tc2l6ZSB7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xufVxuLmxlZnQtY29udGFpbmVyLXdyYXBwZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcblxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBwYWRkaW5nOiAwLjVlbSAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxufVxuLnRvcC1iYXItY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnJpZ2h0LXRleHQtbGVmdC1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMmVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4uYWFyb3ctbGVmdC1jb250YWluZXIge1xuICAgIGZvbnQtc2l6ZTogMS45ZW07XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbn1cblxuXG5cbi5maWVsZC1zZXQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5leGFtcGxlLWZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5wcm9maWxlLWluZm8tY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xufVxuXG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgcGFkZGluZzogMGVtIDVlbTtcbn1cblxuLnByb2ZpbGUtaGVhZGluZyB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IDExdnc7XG4gICAgZm9udC1zaXplOiAyMHB4O1xufVxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbn1cbmJ1dHRvbi5idXR0b24tY29sb3J7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIHBhZGRpbmc6IDBlbSAyZW07XG59XG4udXBkYXRlLWJ1dHRvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnVzZXItTGlzdGluZy1tYXQtY2FyZCB7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC4zZnIgMWZyIDEuMmZyIDAuOWZyIDAuNmZyO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4O1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xufVxuLnRleHQtaGVhZGluZy10YWItY29udGVudCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG5cbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLm1haW4tbGlzdGluZy1jb250YWluZXIge1xuICAgIHBhZGRpbmc6IDJlbSAwZW07XG59XG5zcGFuLmxpbmUtaGVpZ2h0IHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjQzFCQkJCO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG59XG4uc3ViLWhlYWRpbmctdXNlci10eXBlIHtcblxuICAgIHBhZGRpbmctbGVmdDogMTBweDtcbn1cblxuXG5cblxuXG5cblxuXG5cblxuLnVpZC1jb250ZW50IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuLnRleHQtb3V0cHV0LXRhYi1jb250ZW50e1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4uY3Vyc29yLXNob3dcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubWFpbi1jb250YWluZXItcmVzdWx0LXVzZXJzIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMmVtO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLWxlZnQ6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgLyogbWFyZ2luLWJvdHRvbTogMWVtOyAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGp1c3RpZnktaXRlbXM6IGJhc2VsaW5lO1xufVxuaW1nLmljb24tYWN0aW9uIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xufVxuLmFkZC1tb3JlLWFyZWEge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGNvbG9yOiAjMEYzQzczO1xufVxuaW1nLnBlbi1pbWFnZSB7XG4gICAgaGVpZ2h0OiAxLjV2aDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG59XG4udXBsb2FkLWltYWdlLWZpcnN0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHdpZHRoOiA4NSU7XG4gICAgcGFkZGluZzogMWVtO1xufVxuaW1nLmltYWdlLWFnZW50IHtcbiAgICBoZWlnaHQ6IDEydmg7XG59XG4uaW1hZ2UtdXNlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDFlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICM3MDcwNzA7XG4gICAgbWFyZ2luOiAxZW0gMjh2dztcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuc3Bhbi5ub3RlLWFyZWEge1xuICAgIGNvbG9yOiAjQjFBOUE5O1xuICAgIHBhZGRpbmc6IDEwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcblxufVxuaW1nLmNyb3NzLWltYWdlIHtcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgbWFyZ2luOiAwLjdlbSAtMS41ZW07XG4gICAgLyogYm9yZGVyLXJhZGl1czogMTdweDsgKi9cbn1cbmltZy5jcm9zcy1pbWFnZSB7XG4gICAgaGVpZ2h0OiAxLjV2aDtcbn1cbi5hZGQtbW9yZS1hcmVhXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQ6aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubGVmdC1jb250YWluZXI6aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */";
     /***/
   },
 
@@ -3580,7 +3585,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.adminPanelService.updateAgentListing(this.agentUserId, this.agentPropertyId, this.agentSignup).then(function (data) {
             var dialogRef = _this12.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_8__["AltertFormDialogComponent"], {
               data: {
-                message: "User detail updated"
+                message: "Agent detail updated"
               }
             });
           });
@@ -3764,7 +3769,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.second-part-container-two-sides-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  \n}\n.top-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n    width: 32vw;\n\n    padding-top: 1em;\n\n\n}\nspan.second-part-container-text {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n\n}\nspan.second-part-container-number {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n    padding-left: 10px;\n}\n.property-for-container {\n    display: flex;\n    justify-content: -3em 2em;\n    width: 15%;\n    margin: 0em 1em;\n    width: 15%;\n    justify-content: space-between;\n    align-items: center;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em 1.5em;\n    border-radius: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1wcm9wZXJ0eS1lZGl0LXBhZ2UvYWdlbnQtcHJvcGVydHktZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUkseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLG9DQUFvQztJQUNwQyxxQ0FBcUM7SUFDckMsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7QUFDQTtJQUNFLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7QUFDM0I7QUFFQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdDQUFnQztJQUNoQyxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7QUFFQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0lBQ2Ysa0JBQWtCOztBQUV0QjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLFlBQVk7SUFDWixtQkFBbUI7O0FBRXZCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjs7QUFFdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjs7SUFFbkIsa0NBQWtDO0lBQ2xDLG9CQUFvQjtJQUNwQixXQUFXOztJQUVYLGdCQUFnQjs7O0FBR3BCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlOztBQUVuQjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHlCQUF5QjtJQUN6QixVQUFVO0lBQ1YsZUFBZTtJQUNmLFVBQVU7SUFDViw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1wcm9wZXJ0eS1lZGl0LXBhZ2UvYWdlbnQtcHJvcGVydHktZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0LWNhcmQtdG9wLWFyZWFcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDAuN2VtO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIG1hcmdpbi1yaWdodDogMS43ZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4ubWF0LWNhcmQtZWRpdFxue1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4ucmFkaW8tdG9wLWJ1eWVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gIH1cbiAgLnN1Yi1oZWFkaW5nLXVzZXItdHlwZSB7XG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuLnRvcC1jYXJkLWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMWVtIDJlbTtcblxufVxuXG4ubWlkZGxlLXNpZGUtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4ubWF0LXdyYXBwZXItY2FyZFxue1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLm1haW4tY29udGFpbmVyLWFyZWEge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ucHJpY2Utc2VsZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ucmFkaW8tYnV0dG9uLWFsaWduIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nLXR3b1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMnZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG5cbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubmV3LWhlYWRpbmctbmVzdGltYXRlIHtcblxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuLmZpZWxkLW9uZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cbi5yYWRpby1idXR0b24ge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59XG5cbi5zZWNvbmQtcGFydC1jb250YWluZXItdHdvLXNpZGVzLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgXG59XG4udG9wLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTFweDtcbiAgICB3aWR0aDogMzJ2dztcblxuICAgIHBhZGRpbmctdG9wOiAxZW07XG5cblxufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItdGV4dCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcblxufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItbnVtYmVyIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIHBhZGRpbmctbGVmdDogMTBweDtcbn1cbi5wcm9wZXJ0eS1mb3ItY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogLTNlbSAyZW07XG4gICAgd2lkdGg6IDE1JTtcbiAgICBtYXJnaW46IDBlbSAxZW07XG4gICAgd2lkdGg6IDE1JTtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBwYWRkaW5nOiAxZW0gMS41ZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn0iXX0= */";
+    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.second-part-container-two-sides-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n  \n}\n.top-second-part-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n    border-bottom: 1px solid lightgray;\n    padding-bottom: 11px;\n    width: 32vw;\n\n    padding-top: 1em;\n\n\n}\nspan.second-part-container-text {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n\n}\nspan.second-part-container-number {\n    font-family: 'Roboto', sans-serif;\n    font-weight: 500;\n    color: black;\n    font-size: 20px;\n    padding-left: 10px;\n}\n.property-for-container {\n    display: flex;\n    justify-content: -3em 2em;\n    width: 15%;\n    margin: 0em 1em;\n    width: 15%;\n    justify-content: space-between;\n    align-items: center;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em 1.5em;\n    border-radius: 10px;\n}\n.main-container-agent-heading {\n    padding-left: 2em;\n}\n.left-container:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1wcm9wZXJ0eS1lZGl0LXBhZ2UvYWdlbnQtcHJvcGVydHktZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUkseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLG9DQUFvQztJQUNwQyxxQ0FBcUM7SUFDckMsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixnQkFBZ0I7RUFDbEI7QUFDQTtJQUNFLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7QUFDM0I7QUFFQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsV0FBVztBQUNmO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGFBQWE7SUFDYixlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLGdDQUFnQztJQUNoQyxZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLDhCQUE4QjtJQUM5QixpQkFBaUI7QUFDckI7QUFFQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0lBQ2Ysa0JBQWtCOztBQUV0QjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLFlBQVk7SUFDWixtQkFBbUI7O0FBRXZCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLG1CQUFtQjs7QUFFdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjs7SUFFbkIsa0NBQWtDO0lBQ2xDLG9CQUFvQjtJQUNwQixXQUFXOztJQUVYLGdCQUFnQjs7O0FBR3BCO0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLFlBQVk7SUFDWixlQUFlOztBQUVuQjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHlCQUF5QjtJQUN6QixVQUFVO0lBQ1YsZUFBZTtJQUNmLFVBQVU7SUFDViw4QkFBOEI7SUFDOUIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxpQkFBaUI7QUFDckI7QUFFQTs7SUFFSSxlQUFlO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC9hZ2VudC1wcm9wZXJ0eS1lZGl0LXBhZ2UvYWdlbnQtcHJvcGVydHktZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0LWNhcmQtdG9wLWFyZWFcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDAuN2VtO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIG1hcmdpbi1yaWdodDogMS43ZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4ubWF0LWNhcmQtZWRpdFxue1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4ucmFkaW8tdG9wLWJ1eWVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gIH1cbiAgLnN1Yi1oZWFkaW5nLXVzZXItdHlwZSB7XG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuLnRvcC1jYXJkLWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMWVtIDJlbTtcblxufVxuXG4ubWlkZGxlLXNpZGUtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4ubWF0LXdyYXBwZXItY2FyZFxue1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLm1haW4tY29udGFpbmVyLWFyZWEge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ucHJpY2Utc2VsZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ucmFkaW8tYnV0dG9uLWFsaWduIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nLXR3b1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMnZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG5cbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubmV3LWhlYWRpbmctbmVzdGltYXRlIHtcblxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuLmZpZWxkLW9uZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cbi5yYWRpby1idXR0b24ge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59XG5cbi5zZWNvbmQtcGFydC1jb250YWluZXItdHdvLXNpZGVzLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgXG59XG4udG9wLXNlY29uZC1wYXJ0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIGxpZ2h0Z3JheTtcbiAgICBwYWRkaW5nLWJvdHRvbTogMTFweDtcbiAgICB3aWR0aDogMzJ2dztcblxuICAgIHBhZGRpbmctdG9wOiAxZW07XG5cblxufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItdGV4dCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIGZvbnQtc2l6ZTogMjBweDtcblxufVxuc3Bhbi5zZWNvbmQtcGFydC1jb250YWluZXItbnVtYmVyIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgZm9udC1zaXplOiAyMHB4O1xuICAgIHBhZGRpbmctbGVmdDogMTBweDtcbn1cbi5wcm9wZXJ0eS1mb3ItY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogLTNlbSAyZW07XG4gICAgd2lkdGg6IDE1JTtcbiAgICBtYXJnaW46IDBlbSAxZW07XG4gICAgd2lkdGg6IDE1JTtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBwYWRkaW5nOiAxZW0gMS41ZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbi5tYWluLWNvbnRhaW5lci1hZ2VudC1oZWFkaW5nIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDJlbTtcbn1cblxuLmxlZnQtY29udGFpbmVyOmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */";
     /***/
   },
 
@@ -3938,7 +3943,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9lZGl0LWJ1eWVyLXVzZXItZGV0YWlscy9lZGl0LWJ1eWVyLXVzZXItZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2QsaUNBQWlDO0lBQ2pDLGtDQUFrQztJQUNsQyxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCO0FBQ0E7O0lBRUksbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxvQ0FBb0M7SUFDcEMscUNBQXFDO0lBQ3JDLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixhQUFhO0lBQ2IsZ0JBQWdCO0VBQ2xCO0FBQ0E7SUFDRSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsZUFBZTs7QUFFbkI7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0FBQzNCO0FBRUE7O0lBRUksZ0NBQWdDO0lBQ2hDLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLGtDQUFrQztJQUNsQyxhQUFhO0lBQ2IsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixnQ0FBZ0M7SUFDaEMsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBRUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsd0JBQXdCO0lBQ3hCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixZQUFZO0lBQ1osbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvZWRpdC1idXllci11c2VyLWRldGFpbHMvZWRpdC1idXllci11c2VyLWRldGFpbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXQtY2FyZC10b3AtYXJlYVxue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMC43ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxLjdlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5tYXQtY2FyZC1lZGl0XG57XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi5yYWRpby10b3AtYnV5ZXIge1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbiAgfVxuICAuc3ViLWhlYWRpbmctdXNlci10eXBlIHtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG59XG4udG9wLWNhcmQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luOiAxZW0gMmVtO1xuXG59XG5cbi5taWRkbGUtc2lkZS1hcmVhIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5tYXQtd3JhcHBlci1jYXJkXG57XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgbWFyZ2luOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItYXJlYSB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiA2ZW07XG4gICAgbWFyZ2luOiAxZW0gMWVtO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG4ubWF0LWNhcmRzLWNvbnRhaW5lcntcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ucHJpY2Utc2VsZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ucmFkaW8tYnV0dG9uLWFsaWduIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nLXR3b1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMnZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG5cbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubmV3LWhlYWRpbmctbmVzdGltYXRlIHtcblxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuLmZpZWxkLW9uZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cbi5yYWRpby1idXR0b24ge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59Il19 */";
+    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.left-container:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9lZGl0LWJ1eWVyLXVzZXItZGV0YWlscy9lZGl0LWJ1eWVyLXVzZXItZGV0YWlscy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLHlCQUF5QjtJQUN6QixjQUFjO0lBQ2QsaUNBQWlDO0lBQ2pDLGtDQUFrQztJQUNsQyxtQkFBbUI7SUFDbkIsWUFBWTtJQUNaLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCO0FBQ0E7O0lBRUksbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxvQ0FBb0M7SUFDcEMscUNBQXFDO0lBQ3JDLGlCQUFpQjtBQUNyQjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixhQUFhO0lBQ2IsZ0JBQWdCO0VBQ2xCO0FBQ0E7SUFDRSxrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsZUFBZTs7QUFFbkI7QUFFQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0FBQzNCO0FBRUE7O0lBRUksZ0NBQWdDO0lBQ2hDLFdBQVc7QUFDZjtBQUNBO0lBQ0ksYUFBYTtJQUNiLGtDQUFrQztJQUNsQyxhQUFhO0lBQ2IsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0QixnQ0FBZ0M7SUFDaEMsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtBQUMxQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBRUE7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsd0JBQXdCO0lBQ3hCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsZUFBZTtJQUNmLGtCQUFrQjs7QUFFdEI7QUFDQTs7SUFFSSxXQUFXO0FBQ2Y7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixZQUFZO0lBQ1osbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL2VkaXQtYnV5ZXItdXNlci1kZXRhaWxzL2VkaXQtYnV5ZXItdXNlci1kZXRhaWxzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubWF0LWNhcmQtdG9wLWFyZWFcbntcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDAuN2VtO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIG1hcmdpbi1yaWdodDogMS43ZW07XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4ubWF0LWNhcmQtZWRpdFxue1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogMHB4IDFweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLWJvdHRvbS1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci1ib3R0b20tcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4ucmFkaW8tdG9wLWJ1eWVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gIH1cbiAgLnN1Yi1oZWFkaW5nLXVzZXItdHlwZSB7XG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuLnRvcC1jYXJkLWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMWVtIDJlbTtcblxufVxuXG4ubWlkZGxlLXNpZGUtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4ubWF0LXdyYXBwZXItY2FyZFxue1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLm1haW4tY29udGFpbmVyLWFyZWEge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmcjtcbiAgICBncmlkLWdhcDogNmVtO1xuICAgIG1hcmdpbjogMWVtIDFlbTtcbiAgICBwYWRkaW5nOiAxZW0gMGVtO1xufVxuLm1hdC1jYXJkcy1jb250YWluZXJ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuLnByaWNlLXNlbGVjdGlvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuLnJhZGlvLWJ1dHRvbi1hbGlnbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBwYWRkaW5nLXRvcDogMTBweDtcbn1cblxuLnByb2ZpbGUtaGVhZGluZy10d29cbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbiAgICB3aWR0aDogMTJ2dztcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xuXG59XG4uZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLm5ldy1oZWFkaW5nLW5lc3RpbWF0ZSB7XG5cbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cbi5wcm9maWxlLWluZm8tY2FyZCB7XG4gICAgcGFkZGluZzogMmVtIDBlbTtcbn1cbi5maWVsZC1vbmUge1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG59XG4ucmFkaW8tYnV0dG9uIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xufVxuLmxlZnQtY29udGFpbmVyOmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */";
     /***/
   },
 
@@ -4216,7 +4221,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n    border-top-left-radius: 0px 0px;\n    border-top-right-radius: 0px 0px;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n    height: -webkit-max-content;\n    height: -moz-max-content;\n    height: max-content;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 12vw;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.image-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin-right: 1em;\n    margin-left: 1em;\n}\n.image-contatiner-top {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\nimg.pen-image {\n    height: 2vh;\n}\nimg.image-eight {\n    width: 70%;\n}\n.image-show {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 2em;\n}\nimg.button-image-cross {\n    position: absolute;\n    height: 1vh;\n    margin-top: 1em;\n}\n.update-button {\n    margin-top: 1em;\n    margin-bottom: 2em;\n}\n.update-button:hover {\n    cursor: pointer;\n}\n.sub-heading-user-type {\n\n    padding-left: 10px;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9lZGl0LXNlbGxlci11c2VyLWRldGFpbHMvZWRpdC1zZWxsZXItdXNlci1kZXRhaWxzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUkseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLG9DQUFvQztJQUNwQyxxQ0FBcUM7SUFDckMsaUJBQWlCO0lBQ2pCLCtCQUErQjtJQUMvQixnQ0FBZ0M7QUFDcEM7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsYUFBYTtJQUNiLGdCQUFnQjtFQUNsQjtBQUNBO0lBQ0Usa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGVBQWU7O0FBRW5CO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtBQUMzQjtBQUVBOztJQUVJLGdDQUFnQztJQUNoQyxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixrQ0FBa0M7SUFDbEMsYUFBYTtJQUNiLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsZ0NBQWdDO0lBQ2hDLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsMkJBQW1CO0lBQW5CLHdCQUFtQjtJQUFuQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjtBQUVBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLHdCQUF3QjtJQUN4QixtQkFBbUI7SUFDbkIsV0FBVztJQUNYLGVBQWU7SUFDZixrQkFBa0I7O0FBRXRCO0FBQ0E7O0lBRUksV0FBVztBQUNmO0FBQ0E7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsWUFBWTtJQUNaLG1CQUFtQjs7QUFFdkI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsaUJBQWlCO0lBQ2pCLGdCQUFnQjtBQUNwQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCO0FBR0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0NBQXNDO0lBQ3RDLGFBQWE7SUFDYixXQUFXO0FBQ2Y7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUVBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBOztJQUVJLGtCQUFrQjtBQUN0QiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvZWRpdC1zZWxsZXItdXNlci1kZXRhaWxzL2VkaXQtc2VsbGVyLXVzZXItZGV0YWlscy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm1hdC1jYXJkLXRvcC1hcmVhXG57XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBwYWRkaW5nOiAwLjdlbTtcbiAgICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDEuN2VtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xufVxuLm1hdC1jYXJkLWVkaXRcbntcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIGJvcmRlci1ib3R0b20tbGVmdC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBib3JkZXItYm90dG9tLXJpZ2h0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIGJvcmRlci10b3AtbGVmdC1yYWRpdXM6IDBweCAwcHg7XG4gICAgYm9yZGVyLXRvcC1yaWdodC1yYWRpdXM6IDBweCAwcHg7XG59XG4ucmFkaW8tdG9wLWJ1eWVyIHtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gIH1cbiAgLnN1Yi1oZWFkaW5nLXVzZXItdHlwZSB7XG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xufVxuLnRvcC1jYXJkLWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbjogMWVtIDJlbTtcblxufVxuXG4ubWlkZGxlLXNpZGUtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xufVxuXG4ubWF0LXdyYXBwZXItY2FyZFxue1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIG1hcmdpbjogMWVtO1xufVxuLm1haW4tY29udGFpbmVyLWFyZWEge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmcjtcbiAgICBncmlkLWdhcDogNmVtO1xuICAgIG1hcmdpbjogMWVtIDFlbTtcbiAgICBwYWRkaW5nOiAxZW0gMGVtO1xufVxuLm1hdC1jYXJkcy1jb250YWluZXJ7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIGhlaWdodDogbWF4LWNvbnRlbnQ7XG59XG4ucHJpY2Utc2VsZWN0aW9uIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG59XG4ucmFkaW8tYnV0dG9uLWFsaWduIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIHBhZGRpbmctdG9wOiAxMHB4O1xufVxuXG4ucHJvZmlsZS1oZWFkaW5nLXR3b1xue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMnZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG5cbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubmV3LWhlYWRpbmctbmVzdGltYXRlIHtcblxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcblxufVxuLnByb2ZpbGUtaW5mby1jYXJkIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuLmZpZWxkLW9uZSB7XG4gICAgbWFyZ2luLXRvcDogMTBweDtcbn1cbi5yYWRpby1idXR0b24ge1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG59XG4uaW1hZ2UtY2FyZFxue1xuICAgIGJveC1zaGFkb3c6IDBweCAxcHggNXB4IDNweCAjY2NjO1xuICAgIG1hcmdpbi1yaWdodDogMWVtO1xuICAgIG1hcmdpbi1sZWZ0OiAxZW07XG59XG5cbi5pbWFnZS1jb250YXRpbmVyLXRvcCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG5cbi5hZGQtbW9yZS1hcmVhIHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBjb2xvcjogIzBGM0M3Mztcbn1cbmltZy5wZW4taW1hZ2Uge1xuICAgIGhlaWdodDogMnZoO1xufVxuaW1nLmltYWdlLWVpZ2h0IHtcbiAgICB3aWR0aDogNzAlO1xufVxuXG4uaW1hZ2Utc2hvdyB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyIDFmcjtcbiAgICBncmlkLWdhcDogMmVtO1xuICAgIG1hcmdpbjogMmVtO1xufVxuaW1nLmJ1dHRvbi1pbWFnZS1jcm9zcyB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIGhlaWdodDogMXZoO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luLWJvdHRvbTogMmVtO1xufVxuXG4udXBkYXRlLWJ1dHRvbjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLnN1Yi1oZWFkaW5nLXVzZXItdHlwZSB7XG5cbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG59XG4iXX0= */";
+    __webpack_exports__["default"] = ".mat-card-top-area\n{\n    background-color: #0F3C73;\n    padding: 0.7em;\n    border-top-left-radius: 10px 10px;\n    border-top-right-radius: 10px 10px;\n    margin-right: 1.7em;\n    color: white;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n}\n.mat-card-edit\n{\n    border-radius: 10px;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    border-bottom-left-radius: 10px 10px;\n    border-bottom-right-radius: 10px 10px;\n    margin-right: 2em;\n    border-top-left-radius: 0px 0px;\n    border-top-right-radius: 0px 0px;\n}\n.radio-top-buyer {\n    flex-direction: row;\n    justify-content: space-between;\n    display: flex;\n    margin-top: 10px;\n  }\n.sub-heading-user-type {\n    margin-bottom: 1em;\n}\n.top-card-area {\n    display: flex;\n    justify-content: space-between;\n    margin: 1em 2em;\n\n}\n.middle-side-area {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n}\n.mat-wrapper-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin: 1em;\n}\n.main-container-area {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 6em;\n    margin: 1em 1em;\n    padding: 1em 0em;\n}\n.mat-cards-container{\n    display: flex;\n    flex-direction: column;\n    box-shadow: 0px 1px 5px 3px #ccc;\n    padding: 1em;\n    border-radius: 10px;\n    height: -webkit-max-content;\n    height: -moz-max-content;\n    height: max-content;\n}\n.price-selection {\n    display: flex;\n    flex-direction: column;\n}\n.radio-button-align {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    padding-top: 10px;\n}\n.profile-heading-two\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 10px;\n    font-size: 20px;\n    margin-bottom: 1em;\n\n}\n.full-width\n{\n    width: 100%;\n}\n.new-heading-nestimate {\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 18px;\n    color: black;\n    padding-bottom: 1em;\n\n}\n.profile-info-card {\n    padding: 2em 0em;\n}\n.field-one {\n    margin-top: 10px;\n}\n.radio-button {\n    padding-bottom: 1em;\n}\n.image-card\n{\n    box-shadow: 0px 1px 5px 3px #ccc;\n    margin-right: 1em;\n    margin-left: 1em;\n}\n.image-contatiner-top {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n.add-more-area {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    color: #0F3C73;\n}\nimg.pen-image {\n    height: 2vh;\n}\nimg.image-eight {\n    width: 70%;\n}\n.image-show {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 2em;\n}\nimg.button-image-cross {\n    position: absolute;\n    height: 1vh;\n    margin-top: 1em;\n}\n.update-button {\n    margin-top: 1em;\n    margin-bottom: 2em;\n}\n.update-button:hover {\n    cursor: pointer;\n}\n.sub-heading-user-type {\n\n    padding-left: 10px;\n}\n.left-container:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC9lZGl0LXNlbGxlci11c2VyLWRldGFpbHMvZWRpdC1zZWxsZXItdXNlci1kZXRhaWxzLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0lBRUkseUJBQXlCO0lBQ3pCLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsa0NBQWtDO0lBQ2xDLG1CQUFtQjtJQUNuQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLG9DQUFvQztJQUNwQyxxQ0FBcUM7SUFDckMsaUJBQWlCO0lBQ2pCLCtCQUErQjtJQUMvQixnQ0FBZ0M7QUFDcEM7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsYUFBYTtJQUNiLGdCQUFnQjtFQUNsQjtBQUNBO0lBQ0Usa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGVBQWU7O0FBRW5CO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtBQUMzQjtBQUVBOztJQUVJLGdDQUFnQztJQUNoQyxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixrQ0FBa0M7SUFDbEMsYUFBYTtJQUNiLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsZ0NBQWdDO0lBQ2hDLFlBQVk7SUFDWixtQkFBbUI7SUFDbkIsMkJBQW1CO0lBQW5CLHdCQUFtQjtJQUFuQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7QUFDMUI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjtBQUVBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLHdCQUF3QjtJQUN4QixtQkFBbUI7SUFDbkIsMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixrQkFBa0I7O0FBRXRCO0FBQ0E7O0lBRUksV0FBVztBQUNmO0FBQ0E7O0lBRUksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsWUFBWTtJQUNaLG1CQUFtQjs7QUFFdkI7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsaUJBQWlCO0lBQ2pCLGdCQUFnQjtBQUNwQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1CO0FBQ3ZCO0FBR0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7QUFDbEI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksVUFBVTtBQUNkO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0NBQXNDO0lBQ3RDLGFBQWE7SUFDYixXQUFXO0FBQ2Y7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixXQUFXO0lBQ1gsZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUVBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBOztJQUVJLGtCQUFrQjtBQUN0QjtBQUNBOztJQUVJLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL2VkaXQtc2VsbGVyLXVzZXItZGV0YWlscy9lZGl0LXNlbGxlci11c2VyLWRldGFpbHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXQtY2FyZC10b3AtYXJlYVxue1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMC43ZW07XG4gICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAxMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxLjdlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbn1cbi5tYXQtY2FyZC1lZGl0XG57XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBib3JkZXItYm90dG9tLWxlZnQtcmFkaXVzOiAxMHB4IDEwcHg7XG4gICAgYm9yZGVyLWJvdHRvbS1yaWdodC1yYWRpdXM6IDEwcHggMTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBib3JkZXItdG9wLWxlZnQtcmFkaXVzOiAwcHggMHB4O1xuICAgIGJvcmRlci10b3AtcmlnaHQtcmFkaXVzOiAwcHggMHB4O1xufVxuLnJhZGlvLXRvcC1idXllciB7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICB9XG4gIC5zdWItaGVhZGluZy11c2VyLXR5cGUge1xuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcbn1cbi50b3AtY2FyZC1hcmVhIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW46IDFlbSAyZW07XG5cbn1cblxuLm1pZGRsZS1zaWRlLWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cblxuLm1hdC13cmFwcGVyLWNhcmRcbntcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBtYXJnaW46IDFlbTtcbn1cbi5tYWluLWNvbnRhaW5lci1hcmVhIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XG4gICAgZ3JpZC1nYXA6IDZlbTtcbiAgICBtYXJnaW46IDFlbSAxZW07XG4gICAgcGFkZGluZzogMWVtIDBlbTtcbn1cbi5tYXQtY2FyZHMtY29udGFpbmVye1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBoZWlnaHQ6IG1heC1jb250ZW50O1xufVxuLnByaWNlLXNlbGVjdGlvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xufVxuLnJhZGlvLWJ1dHRvbi1hbGlnbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBwYWRkaW5nLXRvcDogMTBweDtcbn1cblxuLnByb2ZpbGUtaGVhZGluZy10d29cbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQ7XG4gICAgcGFkZGluZy1ib3R0b206IDVweDtcbiAgICB3aWR0aDogbWF4LWNvbnRlbnQ7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbiAgICBmb250LXNpemU6IDIwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogMWVtO1xuXG59XG4uZnVsbC13aWR0aFxue1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLm5ldy1oZWFkaW5nLW5lc3RpbWF0ZSB7XG5cbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cbi5wcm9maWxlLWluZm8tY2FyZCB7XG4gICAgcGFkZGluZzogMmVtIDBlbTtcbn1cbi5maWVsZC1vbmUge1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG59XG4ucmFkaW8tYnV0dG9uIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xufVxuLmltYWdlLWNhcmRcbntcbiAgICBib3gtc2hhZG93OiAwcHggMXB4IDVweCAzcHggI2NjYztcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbiAgICBtYXJnaW4tbGVmdDogMWVtO1xufVxuXG4uaW1hZ2UtY29udGF0aW5lci10b3Age1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuXG4uYWRkLW1vcmUtYXJlYSB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgY29sb3I6ICMwRjNDNzM7XG59XG5pbWcucGVuLWltYWdlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cbmltZy5pbWFnZS1laWdodCB7XG4gICAgd2lkdGg6IDcwJTtcbn1cblxuLmltYWdlLXNob3cge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmciAxZnI7XG4gICAgZ3JpZC1nYXA6IDJlbTtcbiAgICBtYXJnaW46IDJlbTtcbn1cbmltZy5idXR0b24taW1hZ2UtY3Jvc3Mge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBoZWlnaHQ6IDF2aDtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG59XG4udXBkYXRlLWJ1dHRvbiB7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIG1hcmdpbi1ib3R0b206IDJlbTtcbn1cblxuLnVwZGF0ZS1idXR0b246aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5zdWItaGVhZGluZy11c2VyLXR5cGUge1xuXG4gICAgcGFkZGluZy1sZWZ0OiAxMHB4O1xufVxuLmxlZnQtY29udGFpbmVyOmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */";
     /***/
   },
 
@@ -4650,7 +4655,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".top-tab-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\n    text-align: center;\n    align-content: center;\n    /* background-color: #E8E8E8; */\n}\nspan.tab-text {\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    background-color: #E8E8E8;\n    font-size: 18px;\n\n}\n.mat-card-ui-elelment{\n    margin-top: 2em;\n  \n}\nimg.left-image-container {\n    height: 32vh;\n    margin: 1em 0em;\n    border: 1px solid;\n}\nimg.image-agent {\n    height: 18vh;\n}\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n    margin-top: 0em;\n}\n.agent-image-upload {\n\n    border: 1px solid #CBC7C7;;\n    border-radius: 10px;\n\n    padding-bottom: 1em;\n\n}\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\nimg.cross-image {\n    height: 1.5vh;\n}\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    padding: 1em;\n}\n.main-container-banner-image {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    align-items: center;\n}\nimg.pen-image {\n    height: 1.3vh;\n    padding-right: 10px;\n}\n.home-page-banner\n{\n    box-shadow: 3px 3px 5px 3px #ccc;\n    border-radius: 10px;\n}\n.mat-home-page-card {\n    margin: 1em 0em;\n    border-radius: 10px;\n    padding: 0em 1em;\n}\n.profile-heading.profile-heading-two {\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 13px;\n}\n.main-container-banner-image.image-journey-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1em;\n    margin-right: -3px;\n}\n.main-contianer-journey {\n    display: flex;\n    flex-direction: row;\n    margin-top: 1em;\n}\n.agent-image-upload.journey-image-container {\n    border-radius: 0px;\n}\n.main-contianer-journey {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 0em 0em;;\n}\n.agent-image-upload.journey-image-container {\n    width: 100%;\n    border-radius: 10px;\n}\n.outputText {\n    color: var(--light-blue-color);\n    font-family: 'Roboto-Medium';\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-size: 1.2em;\n    font-weight: 500;\n}\ntextarea#w3review {\n    color: #0F3C73;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1em;\n\n  \n    padding: 0em 4px;\n\n\n    border-radius: 10px;\n    border-color: #CBC7C7;\n}\n.full-width\n{\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 1em;\n}\n.main-container-uielements {\n    margin-right: 2em;\n    padding-top: 0em;\n    margin-top: 2em;\n    background-color: white;\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n \n}\n.tab-text {\n    padding: 0.5em;\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.1em;\n}\n.tab-text:hover\n{\n    cursor: pointer;\n}\n.highlight {\n    background: #E8E8E8;\n    height: 1vh;\n    /* position: relative; */\n    top: 18vh;\n    /* z-index: 1; */\n    width: 100%;\n}\n.mat-Notification {\n    margin: 0em 1em;\n}\n.text-area {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 1em 0em;\n}\n.notificationCard{\n    margin: 0em 2em;\n}\n.update-button {\n    margin: 2em;\n}\ntextarea#w3review {\n    width: 100%;\n}\n.add-more-area:hover {\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3VpZWxlbWVudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsa0JBQWtCO0lBQ2xCLHFCQUFxQjtJQUNyQiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtJQUN6QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksZUFBZTs7QUFFbkI7QUFDQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCO0FBRUE7SUFDSSxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLG1CQUFtQjs7SUFFbkIsbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLG9CQUFvQjtJQUNwQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixZQUFZO0FBQ2hCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjtBQUdBO0lBQ0ksMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLFdBQVc7SUFDWCxhQUFhO0lBQ2Isa0NBQWtDO0lBQ2xDLGFBQWE7SUFDYixlQUFlO0FBQ25CO0FBRUE7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSw4QkFBOEI7SUFDOUIsNEJBQTRCO0lBQzVCLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYzs7O0lBR2QsZ0JBQWdCOzs7SUFHaEIsbUJBQW1CO0lBQ25CLHFCQUFxQjtBQUN6QjtBQUNBOztJQUVJLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0NBQWdDOztBQUVwQztBQUNBO0lBQ0ksY0FBYzs7SUFFZCxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUNBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsd0JBQXdCO0lBQ3hCLFNBQVM7SUFDVCxnQkFBZ0I7SUFDaEIsV0FBVztBQUNmO0FBQ0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7QUFHQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksV0FBVztBQUNmO0FBQ0E7SUFDSSxlQUFlO0FBQ25CIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3VpZWxlbWVudHMuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi50b3AtdGFiLWJhciB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyIDFmciAxZnIgMWZyO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gICAgLyogYmFja2dyb3VuZC1jb2xvcjogI0U4RThFODsgKi9cbn1cbnNwYW4udGFiLXRleHQge1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4O1xuICAgIGZvbnQtc2l6ZTogMThweDtcblxufVxuXG4ubWF0LWNhcmQtdWktZWxlbG1lbnR7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICBcbn1cbmltZy5sZWZ0LWltYWdlLWNvbnRhaW5lciB7XG4gICAgaGVpZ2h0OiAzMnZoO1xuICAgIG1hcmdpbjogMWVtIDBlbTtcbiAgICBib3JkZXI6IDFweCBzb2xpZDtcbn1cblxuaW1nLmltYWdlLWFnZW50IHtcbiAgICBoZWlnaHQ6IDE4dmg7XG59XG4uaW1hZ2UtdXNlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDFlbTtcbiAgICBtYXJnaW4tdG9wOiAwZW07XG59XG4uYWdlbnQtaW1hZ2UtdXBsb2FkIHtcblxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDQkM3Qzc7O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG5cbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuXG59XG5zcGFuLm5vdGUtYXJlYSB7XG4gICAgY29sb3I6ICNCMUE5QTk7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBtYXJnaW46IDAuN2VtIC0xLjVlbTtcbiAgICAvKiBib3JkZXItcmFkaXVzOiAxN3B4OyAqL1xufVxuaW1nLmNyb3NzLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xufVxuLnVwbG9hZC1pbWFnZS1maXJzdC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW07XG59XG5cbi5tYWluLWNvbnRhaW5lci1iYW5uZXItaW1hZ2Uge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG5pbWcucGVuLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuM3ZoO1xuICAgIHBhZGRpbmctcmlnaHQ6IDEwcHg7XG59XG4uaG9tZS1wYWdlLWJhbm5lclxue1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ubWF0LWhvbWUtcGFnZS1jYXJkIHtcbiAgICBtYXJnaW46IDFlbSAwZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBwYWRkaW5nOiAwZW0gMWVtO1xufVxuXG5cbi5wcm9maWxlLWhlYWRpbmcucHJvZmlsZS1oZWFkaW5nLXR3byB7XG4gICAgd2lkdGg6IG1heC1jb250ZW50O1xuICAgIHBhZGRpbmctcmlnaHQ6IDEzcHg7XG59XG5cbi5tYWluLWNvbnRhaW5lci1iYW5uZXItaW1hZ2UuaW1hZ2Utam91cm5leS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IC0zcHg7XG59XG4ubWFpbi1jb250aWFuZXItam91cm5leSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQuam91cm5leS1pbWFnZS1jb250YWluZXIge1xuICAgIGJvcmRlci1yYWRpdXM6IDBweDtcbn1cblxuLm1haW4tY29udGlhbmVyLWpvdXJuZXkge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmcjtcbiAgICBncmlkLWdhcDogMmVtO1xuICAgIG1hcmdpbjogMGVtIDBlbTs7XG59XG5cbi5hZ2VudC1pbWFnZS11cGxvYWQuam91cm5leS1pbWFnZS1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5cbi5vdXRwdXRUZXh0IHtcbiAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbnRleHRhcmVhI3czcmV2aWV3IHtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBmb250LXNpemU6IDFlbTtcblxuICBcbiAgICBwYWRkaW5nOiAwZW0gNHB4O1xuXG5cbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIGJvcmRlci1jb2xvcjogI0NCQzdDNztcbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLm1haW4tY29udGFpbmVyLXVpZWxlbWVudHMge1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIHBhZGRpbmctdG9wOiAwZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gXG59XG4udGFiLXRleHQge1xuICAgIHBhZGRpbmc6IDAuNWVtO1xuXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjFlbTtcbn1cbi50YWItdGV4dDpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5oaWdobGlnaHQge1xuICAgIGJhY2tncm91bmQ6ICNFOEU4RTg7XG4gICAgaGVpZ2h0OiAxdmg7XG4gICAgLyogcG9zaXRpb246IHJlbGF0aXZlOyAqL1xuICAgIHRvcDogMTh2aDtcbiAgICAvKiB6LWluZGV4OiAxOyAqL1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLm1hdC1Ob3RpZmljYXRpb24ge1xuICAgIG1hcmdpbjogMGVtIDFlbTtcbn1cbi50ZXh0LWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW0gMGVtO1xufVxuXG5cbi5ub3RpZmljYXRpb25DYXJke1xuICAgIG1hcmdpbjogMGVtIDJlbTtcbn1cbi51cGRhdGUtYnV0dG9uIHtcbiAgICBtYXJnaW46IDJlbTtcbn1cbnRleHRhcmVhI3czcmV2aWV3IHtcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5hZGQtbW9yZS1hcmVhOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */";
+    __webpack_exports__["default"] = ".top-tab-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\n    text-align: center;\n    align-content: center;\n    /* background-color: #E8E8E8; */\n}\nspan.tab-text {\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    background-color: #E8E8E8;\n    font-size: 18px;\n\n}\n.mat-card-ui-elelment{\n    margin-top: 2em;\n  \n}\nimg.left-image-container {\n    height: 32vh;\n    margin: 1em 0em;\n    border: 1px solid;\n}\nimg.image-agent {\n    height: 18vh;\n}\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n    margin-top: 0em;\n}\n.agent-image-upload {\n\n    border: 1px solid #CBC7C7;;\n    border-radius: 10px;\n\n    padding-bottom: 1em;\n\n}\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\nimg.cross-image {\n    height: 1.5vh;\n}\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    padding: 1em;\n}\n.main-container-banner-image {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    align-items: center;\n}\nimg.pen-image {\n    height: 1.3vh;\n    padding-right: 10px;\n}\n.home-page-banner\n{\n    box-shadow: 3px 3px 5px 3px #ccc;\n    border-radius: 10px;\n}\n.mat-home-page-card {\n    margin: 1em 0em;\n    border-radius: 10px;\n    padding: 0em 1em;\n}\n.profile-heading.profile-heading-two {\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 13px;\n}\n.main-container-banner-image.image-journey-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1em;\n    margin-right: -3px;\n}\n.main-contianer-journey {\n    display: flex;\n    flex-direction: row;\n    margin-top: 1em;\n}\n.agent-image-upload.journey-image-container {\n    border-radius: 0px;\n}\n.main-contianer-journey {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 0em 0em;;\n}\n.agent-image-upload.journey-image-container {\n    width: 100%;\n    border-radius: 10px;\n}\n.outputText {\n    color: var(--light-blue-color);\n    font-family: 'Roboto-Medium';\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-size: 1.2em;\n    font-weight: 500;\n}\ntextarea#w3review {\n    color: #0F3C73;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1em;\n\n  \n    padding: 0em 4px;\n\n\n    border-radius: 10px;\n    border-color: #CBC7C7;\n}\n.full-width\n{\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 1em;\n}\n.main-container-uielements {\n    margin-right: 2em;\n    padding-top: 0em;\n    margin-top: 2em;\n    background-color: white;\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n \n}\n.tab-text {\n    padding: 0.5em;\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.1em;\n}\n.tab-text:hover\n{\n    cursor: pointer;\n}\n.highlight {\n    background: #E8E8E8;\n    height: 1vh;\n    /* position: relative; */\n    top: 18vh;\n    /* z-index: 1; */\n    width: 100%;\n}\n.mat-Notification {\n    margin: 0em 1em;\n}\n.text-area {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 1em 0em;\n}\n.notificationCard{\n    margin: 0em 2em;\n}\ntextarea#w3review {\n    width: 100%;\n}\n.add-more-area:hover {\n    cursor: pointer;\n}\n.edit-image-part {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\nspan.line {\n    padding: 10px;\n}\n.remove-option:hover\n{\n    cursor: pointer;\n}\n.update-button {\n    padding-top: 2em;\n}\n.update-add-more\n{\n    padding: 0;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3VpZWxlbWVudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsa0JBQWtCO0lBQ2xCLHFCQUFxQjtJQUNyQiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtJQUN6QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksZUFBZTs7QUFFbkI7QUFDQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCO0FBRUE7SUFDSSxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLG1CQUFtQjs7SUFFbkIsbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLG9CQUFvQjtJQUNwQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixZQUFZO0FBQ2hCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjtBQUdBO0lBQ0ksMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLFdBQVc7SUFDWCxhQUFhO0lBQ2Isa0NBQWtDO0lBQ2xDLGFBQWE7SUFDYixlQUFlO0FBQ25CO0FBRUE7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSw4QkFBOEI7SUFDOUIsNEJBQTRCO0lBQzVCLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYzs7O0lBR2QsZ0JBQWdCOzs7SUFHaEIsbUJBQW1CO0lBQ25CLHFCQUFxQjtBQUN6QjtBQUNBOztJQUVJLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0NBQWdDOztBQUVwQztBQUNBO0lBQ0ksY0FBYzs7SUFFZCxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUNBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsd0JBQXdCO0lBQ3hCLFNBQVM7SUFDVCxnQkFBZ0I7SUFDaEIsV0FBVztBQUNmO0FBQ0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7QUFHQTtJQUNJLGVBQWU7QUFDbkI7QUFFQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBR0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxVQUFVO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VpZWxlbWVudHMvdWllbGVtZW50cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRvcC10YWItYmFyIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnIgMWZyIDFmciAxZnI7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4OyAqL1xufVxuc3Bhbi50YWItdGV4dCB7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuXG59XG5cbi5tYXQtY2FyZC11aS1lbGVsbWVudHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gIFxufVxuaW1nLmxlZnQtaW1hZ2UtY29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDMydmg7XG4gICAgbWFyZ2luOiAxZW0gMGVtO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkO1xufVxuXG5pbWcuaW1hZ2UtYWdlbnQge1xuICAgIGhlaWdodDogMTh2aDtcbn1cbi5pbWFnZS11c2VyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbjogMWVtO1xuICAgIG1hcmdpbi10b3A6IDBlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQge1xuXG4gICAgYm9yZGVyOiAxcHggc29saWQgI0NCQzdDNzs7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cbnNwYW4ubm90ZS1hcmVhIHtcbiAgICBjb2xvcjogI0IxQTlBOTtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5cbn1cbmltZy5jcm9zcy1pbWFnZSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1hcmdpbjogMC43ZW0gLTEuNWVtO1xuICAgIC8qIGJvcmRlci1yYWRpdXM6IDE3cHg7ICovXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIGhlaWdodDogMS41dmg7XG59XG4udXBsb2FkLWltYWdlLWZpcnN0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cblxuLm1haW4tY29udGFpbmVyLWJhbm5lci1pbWFnZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmltZy5wZW4taW1hZ2Uge1xuICAgIGhlaWdodDogMS4zdmg7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cbi5ob21lLXBhZ2UtYmFubmVyXG57XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbi5tYXQtaG9tZS1wYWdlLWNhcmQge1xuICAgIG1hcmdpbjogMWVtIDBlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIHBhZGRpbmc6IDBlbSAxZW07XG59XG5cblxuLnByb2ZpbGUtaGVhZGluZy5wcm9maWxlLWhlYWRpbmctdHdvIHtcbiAgICB3aWR0aDogbWF4LWNvbnRlbnQ7XG4gICAgcGFkZGluZy1yaWdodDogMTNweDtcbn1cblxuLm1haW4tY29udGFpbmVyLWJhbm5lci1pbWFnZS5pbWFnZS1qb3VybmV5LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogLTNweDtcbn1cbi5tYWluLWNvbnRpYW5lci1qb3VybmV5IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLmFnZW50LWltYWdlLXVwbG9hZC5qb3VybmV5LWltYWdlLWNvbnRhaW5lciB7XG4gICAgYm9yZGVyLXJhZGl1czogMHB4O1xufVxuXG4ubWFpbi1jb250aWFuZXItam91cm5leSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiAyZW07XG4gICAgbWFyZ2luOiAwZW0gMGVtOztcbn1cblxuLmFnZW50LWltYWdlLXVwbG9hZC5qb3VybmV5LWltYWdlLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLm91dHB1dFRleHQge1xuICAgIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBmb250LXdlaWdodDogNTAwO1xufVxudGV4dGFyZWEjdzNyZXZpZXcge1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMWVtO1xuXG4gIFxuICAgIHBhZGRpbmc6IDBlbSA0cHg7XG5cblxuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm9yZGVyLWNvbG9yOiAjQ0JDN0M3O1xufVxuLmZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItdWllbGVtZW50cyB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgcGFkZGluZy10b3A6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiBcbn1cbi50YWItdGV4dCB7XG4gICAgcGFkZGluZzogMC41ZW07XG5cbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMWVtO1xufVxuLnRhYi10ZXh0OmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmhpZ2hsaWdodCB7XG4gICAgYmFja2dyb3VuZDogI0U4RThFODtcbiAgICBoZWlnaHQ6IDF2aDtcbiAgICAvKiBwb3NpdGlvbjogcmVsYXRpdmU7ICovXG4gICAgdG9wOiAxOHZoO1xuICAgIC8qIHotaW5kZXg6IDE7ICovXG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubWF0LU5vdGlmaWNhdGlvbiB7XG4gICAgbWFyZ2luOiAwZW0gMWVtO1xufVxuLnRleHQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG5cblxuLm5vdGlmaWNhdGlvbkNhcmR7XG4gICAgbWFyZ2luOiAwZW0gMmVtO1xufVxuXG50ZXh0YXJlYSN3M3JldmlldyB7XG4gICAgd2lkdGg6IDEwMCU7XG59XG4uYWRkLW1vcmUtYXJlYTpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmVkaXQtaW1hZ2UtcGFydCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5zcGFuLmxpbmUge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG4ucmVtb3ZlLW9wdGlvbjpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuXG4udXBkYXRlLWJ1dHRvbiB7XG4gICAgcGFkZGluZy10b3A6IDJlbTtcbn1cbi51cGRhdGUtYWRkLW1vcmVcbntcbiAgICBwYWRkaW5nOiAwO1xufSJdfQ== */";
     /***/
   },
 
@@ -4779,6 +4784,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.footer = new _Model_footer__WEBPACK_IMPORTED_MODULE_10__["footer"]();
         this.seller = null;
         this.buyer = null;
+        this.blogUpload = false;
       }
 
       _createClass(UIElementsComponent, [{
@@ -4808,6 +4814,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getTerms();
         }
       }, {
+        key: "removeBlog",
+        value: function removeBlog(propertyId) {
+          var _this30 = this;
+
+          this.adminPanelService.deleteBlog(this.user.uid, propertyId).then(function (data) {
+            _this30.getBlogs();
+          });
+        }
+      }, {
+        key: "uploadBlogImage",
+        value: function uploadBlogImage() {
+          this.blogUpload = true;
+        }
+      }, {
         key: "updateTerms",
         value: function updateTerms() {
           this.isLoading = true;
@@ -4818,7 +4838,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isLoading = false;
           var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
             data: {
-              message: "User Detail Updated"
+              message: "UI Element Updated"
             }
           });
         }
@@ -4833,7 +4853,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isLoading = false;
           var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
             data: {
-              message: "User Detail Updated"
+              message: "UI Element Updated"
             }
           });
         }
@@ -4867,7 +4887,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isLoading = false;
           var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
             data: {
-              message: "User Detail Updated"
+              message: "UI Element Updated"
             }
           });
         }
@@ -4875,7 +4895,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "buyerupload",
         value: function buyerupload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
-            var _this30 = this;
+            var _this31 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee8$(_context8) {
@@ -4914,7 +4934,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context8.sent.ref.getDownloadURL().then(function (url) {
-                      _this30.buyer = url;
+                      _this31.buyer = url;
                     });
 
                   case 12:
@@ -4932,7 +4952,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "sellerupload",
         value: function sellerupload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
-            var _this31 = this;
+            var _this32 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee9$(_context9) {
@@ -4971,7 +4991,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context9.sent.ref.getDownloadURL().then(function (url) {
-                      _this31.seller = url;
+                      _this32.seller = url;
                     });
 
                   case 12:
@@ -4997,7 +5017,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isLoading = false;
           var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
             data: {
-              message: "User Detail Updated"
+              message: "UI Element Updated"
             }
           });
         }
@@ -5057,9 +5077,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isLoading = false;
           var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
             data: {
-              message: "User Detail Updated"
+              message: "UI Element Updated"
             }
           });
+          this.bannerImages();
+          this.getBlogs();
+          this.getFooter();
         }
       }, {
         key: "updateFooter",
@@ -5113,7 +5136,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "newBlogPicture",
         value: function newBlogPicture(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
-            var _this32 = this;
+            var _this33 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee10$(_context10) {
@@ -5153,7 +5176,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 11:
                     _context10.sent.ref.getDownloadURL().then(function (url) {
                       console.log(url);
-                      _this32.newBlogImage = url;
+                      _this33.newBlogImage = url;
                     });
 
                   case 12:
@@ -5171,7 +5194,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step3upload",
         value: function step3upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
-            var _this33 = this;
+            var _this34 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee11$(_context11) {
@@ -5210,7 +5233,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context11.sent.ref.getDownloadURL().then(function (url) {
-                      _this33.step3ImageNew = url;
+                      _this34.step3ImageNew = url;
                     });
 
                   case 12:
@@ -5228,7 +5251,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step2upload",
         value: function step2upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
-            var _this34 = this;
+            var _this35 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee12$(_context12) {
@@ -5267,7 +5290,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context12.sent.ref.getDownloadURL().then(function (url) {
-                      _this34.step2ImageNew = url;
+                      _this35.step2ImageNew = url;
                     });
 
                   case 12:
@@ -5285,7 +5308,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step1upload",
         value: function step1upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
-            var _this35 = this;
+            var _this36 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee13$(_context13) {
@@ -5324,7 +5347,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context13.sent.ref.getDownloadURL().then(function (url) {
-                      _this35.step1ImageNew = url;
+                      _this36.step1ImageNew = url;
                     });
 
                   case 12:
@@ -5342,7 +5365,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
-            var _this36 = this;
+            var _this37 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee14$(_context14) {
@@ -5381,7 +5404,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context14.sent.ref.getDownloadURL().then(function (url) {
-                      _this36.topBannerImage = url;
+                      _this37.topBannerImage = url;
                     });
 
                   case 12:
@@ -5399,7 +5422,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "LoweBanner",
         value: function LoweBanner(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
-            var _this37 = this;
+            var _this38 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee15$(_context15) {
@@ -5433,7 +5456,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 10:
                     _context15.sent.ref.getDownloadURL().then(function (url) {
-                      _this37.secondBanner = url;
+                      _this38.secondBanner = url;
                     });
 
                   case 11:
@@ -5455,98 +5478,104 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSelected",
         value: function getSelected() {
-          var _this38 = this;
+          var _this39 = this;
 
           this.CMSSERVICE.getUserBlog(this.user.uid).then(function (data) {
             data.forEach(function (element) {
-              _this38.allBlogs.push(element.data());
+              _this39.allBlogs.push(element.data());
+
+              console.log(element.data());
             });
           });
         }
       }, {
         key: "getTerms",
         value: function getTerms() {
-          var _this39 = this;
+          var _this40 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (data) {
             data.forEach(function (element) {
-              _this39.Terms = element.data().Terms;
+              _this40.Terms = element.data().Terms;
             });
           });
         }
       }, {
         key: "getPrivacyPolicy",
         value: function getPrivacyPolicy() {
-          var _this40 = this;
+          var _this41 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this40.Privacy = element.data().Privacy;
+              _this41.Privacy = element.data().Privacy;
             });
           });
         }
       }, {
         key: "getFormImage",
         value: function getFormImage() {
-          var _this41 = this;
+          var _this42 = this;
 
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this41.BuyerPropertyRightImages = element.data().BuyerPropertyRightImages;
-              _this41.SellerPropertyRightImage = element.data().SellerPropertyRightImage;
+              _this42.BuyerPropertyRightImages = element.data().BuyerPropertyRightImages;
+              _this42.SellerPropertyRightImage = element.data().SellerPropertyRightImage;
             });
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this42 = this;
+          var _this43 = this;
 
           this.CMSSERVICE.getBlueNotification(this.user.uid).then(function (element) {
-            _this42.MynestimateBuyerDetails = element.data().MynestimateBuyerDetails;
-            _this42.SingupFromMenu = element.data().SingupFromMenu;
+            _this43.MynestimateBuyerDetails = element.data().MynestimateBuyerDetails;
+            _this43.SingupFromMenu = element.data().SingupFromMenu;
           });
         }
       }, {
         key: "getFooter",
         value: function getFooter() {
-          var _this43 = this;
+          var _this44 = this;
 
           this.CMSSERVICE.getFooter().then(function (footer) {
             footer.forEach(function (element) {
-              _this43.footer.Facebook = element.data().Facebook;
-              _this43.footer.Instragram = element.data().Instragram;
-              _this43.footer.Twitter = element.data().Twitter;
+              _this44.footer.Facebook = element.data().Facebook;
+              _this44.footer.Instragram = element.data().Instragram;
+              _this44.footer.Twitter = element.data().Twitter;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this44 = this;
+          var _this45 = this;
 
+          this.allBlogs = [];
           this.CMSSERVICE.getUserBlog(this.user.uid).then(function (data) {
             data.forEach(function (element) {
-              _this44.allBlogs.push(element.data());
+              _this45.allBlogs.push({
+                Detail: element.data(),
+                Id: element.id
+              });
             });
           });
         }
       }, {
         key: "bannerImages",
         value: function bannerImages() {
-          var _this45 = this;
+          var _this46 = this;
 
           this.CMSSERVICE.getHomePage(this.user.uid).then(function (banner) {
             banner.forEach(function (element) {
-              _this45.homePageData = element.data();
-              _this45.bannerUrl = element.data().BannerImageUrl;
-              _this45.SecondBannerImage = element.data().SecondBannerImage;
-              _this45.Step1Image = element.data().Step1Image;
-              _this45.Step1ImageText = element.data().Step1ImageText;
-              _this45.Step2ImageText = element.data().Step2ImageText;
-              _this45.Step2Image = element.data().Step2Image;
-              _this45.Step3Image = element.data().Step3Image;
-              _this45.Step3ImageText = element.data().Step3ImageText;
+              _this46.homePageData = element.data();
+              _this46.bannerUrl = element.data().BannerImageUrl;
+              _this46.SecondBannerImage = element.data().SecondBannerImage;
+              _this46.Step1Image = element.data().Step1Image;
+              _this46.Step1ImageText = element.data().Step1ImageText;
+              _this46.Step2ImageText = element.data().Step2ImageText;
+              _this46.Step2Image = element.data().Step2Image;
+              _this46.Step3Image = element.data().Step3Image;
+              _this46.Step3ImageText = element.data().Step3ImageText;
             });
           });
         }
@@ -5691,15 +5720,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this46 = this;
+          var _this47 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this46.username = element.data().Name;
-              _this46.image = element.data().Image;
+              _this47.username = element.data().Name;
+              _this47.image = element.data().Image;
             });
           }
         }
@@ -5760,7 +5789,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n.user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n\n}\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n}\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\nspan.button-size {\n    font-size: 20px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n.tab-area {\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n\n}\n.search-field\n{\n    display: flex;\n    align-items: center;\n    justify-content: unset;\n    border-bottom: 1px solid black;\n    width: 16vw;\n\n}\n.user-tab {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\n.agent-tab{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n   margin-left: 3em;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\nimg.user-image {\n    height: 4vh;\n}\n.user-count {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.user-counter {\n    display: flex;\n    justify-content: space-evenly;\n    padding: 0.5em;\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 3px 3px 5px 6px #ccc;\n    margin-right: 2em;\n    flex-direction: column;\n}\n.user-count-text {\n    text-align: center;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    color: var(--light-blue-color);\n    font-size: 2.7em;\n    padding-left: 10px;\n\n}\n.Main-tab-area-container {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1.1fr 0.1fr;\n    align-content: center;\n    justify-content: center;\n    margin-top: 2em;\n    align-items: flex-end;\n}\n.heading-count-text {\n    text-align: right;\n    color: #0F3C73;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    padding-left: 2em;\n}\n.user-count-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 1.3em;\n    padding-left: 10px;\n}\n.user-count-area-main {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}\nspan.border-right {\n    border: 1px solid #00000029;\n    height: 3em;\n    margin-bottom: 10px;\n}\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.4fr;\n    margin-right: 2em;\n    margin-top: 2em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 5700;\n    font-size: 1.2em;\n    color: #030303;\n    display: flex;\n    align-items: center;\n}\n.user-details {\n    display: grid;\n    grid-template-columns: 1.3fr 1fr 1fr 1fr;\n}\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.example-margin {\n    padding-right: 10px;\n}\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n.tab-content-email {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    margin-right: 2em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1em;\n    color: #030303;\n}\n.cursor-show\n{\n    cursor: pointer;\n}\n.user-content-top-heading.agent-content-top-heading {\n    grid-template-columns: 0.4fr 0.9fr 1fr 1.1fr 1.1fr 0.6fr;\n}\n.user-content-lower-result.agent-content-lower-result{\n    grid-template-columns: 0.2fr 1fr 1fr 1.1fr 1fr 0.6fr;\n}\n.add-agent-overlay{\n    position: fixed;\n    width: 100vw;\n    top: 0;\n    height: 100vh;\n}\n.add-agent-background {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.full-width\n{\n    width: 100%;\n}\n.wrapper-add-agent {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n}\nimg.image-cross-image {\n    height: 2vh;\n}\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.add-agent-top-headin {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 1em;\n}\n.add_more_button{\n    padding: 0.7em !important;\n}\nimg.serach-icon-image {\n    height: 2vh;\n}\n.search-icon {\n    margin-left: 2em;\n    margin-top: 10px;\n}\n.agent-tab:hover\n{\n    cursor: pointer;\n}\n.user-tab:hover{\n    cursor: pointer;\n}\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\nimg.down-side-arrow {\n    /* height: 1.5vh; */\n    margin-left: 10px;\n    width: 15px;\n}\n.checkbox-image {\n    display: flex;\n    align-items: center;\n}\nform.example-form {\n    margin-bottom: -1em;\n}\n.search-icon:hover\n{\n    cursor:pointer;\n}\n.inner-job-title {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n    width: 200px;\n    overflow: overlay;\n    overflow: overlay;\n    position: absolute;\n    top: 48vh;\n    left: 65vw;\n\n}\n.job-title-content {\n    text-align: center;\n    font-size: 1.2em;\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n}\n.overlay-black-back {\n    display: flex;\n    justify-content: center;\n    height: 100%;\n}\n.select-job-title-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n}\nimg.serach-icon-image-job-title {\n    height: 2vh;\n}\n.selct-job-title-text\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n    font-size: 16px;\n}\n.text-heading-tab-content:hover\n{\n    cursor:pointer;\n}\n.select-job-title-image-close:hover\n{\n    cursor:pointer;\n}\n.job-title-content:hover\n{\n    cursor:pointer;\n}\n.user-content-lower-result:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1hZ2VudC10YWIvdXNlcnMtYWdlbnQtdGFiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCO0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTs7QUFFZjtBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLG1CQUFtQjs7QUFFdkI7QUFDQTs7SUFFSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsV0FBVzs7QUFFZjtBQUVBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7R0FDZixnQkFBZ0I7SUFDZixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLGNBQWM7SUFDZCx1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxpQkFBaUI7SUFDakIsc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQiw4QkFBOEI7SUFDOUIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiwwQ0FBMEM7SUFDMUMscUJBQXFCO0lBQ3JCLHVCQUF1QjtJQUN2QixlQUFlO0lBQ2YscUJBQXFCO0FBQ3pCO0FBR0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGlCQUFpQjtJQUNqQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYix3Q0FBd0M7QUFDNUM7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhDQUE4QztJQUM5QyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHdCQUF3QjtJQUN4Qix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSx3REFBd0Q7QUFDNUQ7QUFFQTtJQUNJLG9EQUFvRDtBQUN4RDtBQUNBO0lBQ0ksZUFBZTtJQUNmLFlBQVk7SUFDWixNQUFNO0lBQ04sYUFBYTtBQUNqQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsWUFBWTtBQUNoQjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixnQ0FBZ0M7SUFDaEMsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLHlCQUF5QjtBQUM3QjtBQUNBO0lBQ0ksV0FBVztBQUNmO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCO0FBRUE7O0lBRUksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLGNBQWM7QUFDbEI7QUFJQTtJQUNJLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixTQUFTO0lBQ1QsVUFBVTs7QUFFZDtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7QUFDbEM7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxlQUFlO0lBQ2YsZUFBZTtBQUNuQjtBQUNBOztJQUVJLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksY0FBYztBQUNsQjtBQUNBOztJQUVJLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VzZXJzLWFnZW50LXRhYi91c2Vycy1hZ2VudC10YWIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG4gICAgcGFkZGluZy10b3A6IDh2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG5cbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi50YWItYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuLnNlYXJjaC1maWVsZFxue1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2V0O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICB3aWR0aDogMTZ2dztcblxufVxuXG4udXNlci10YWIge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgcGFkZGluZzogMHB4IDFlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogN3B4O1xufVxuLmFnZW50LXRhYntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgbWFyZ2luLWxlZnQ6IDNlbTtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xuICAgIHBhZGRpbmctYm90dG9tOiA3cHg7XG59XG5pbWcudXNlci1pbWFnZSB7XG4gICAgaGVpZ2h0OiA0dmg7XG59XG4udXNlci1jb3VudCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1jb3VudGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIHBhZGRpbmc6IDAuNWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggNnB4ICNjY2M7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi51c2VyLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgZm9udC1zaXplOiAyLjdlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG5cbn1cbi5NYWluLXRhYi1hcmVhLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDJmciAxZnIgMS4xZnIgMC4xZnI7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG59XG5cblxuLmhlYWRpbmctY291bnQtdGV4dCB7XG4gICAgdGV4dC1hbGlnbjogcmlnaHQ7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAxLjNlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBwYWRkaW5nLWxlZnQ6IDJlbTtcbn1cbi51c2VyLWNvdW50LWhlYWRpbmdcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXNpemU6IDEuM2VtO1xuICAgIHBhZGRpbmctbGVmdDogMTBweDtcbn1cbi51c2VyLWNvdW50LWFyZWEtbWFpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5zcGFuLmJvcmRlci1yaWdodCB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgIzAwMDAwMDI5O1xuICAgIGhlaWdodDogM2VtO1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjVmciAxZnIgMWZyIDFmciAwLjRmcjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0U4RThFODtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTNweDtcbn1cbi50ZXh0LWhlYWRpbmctdGFiLWNvbnRlbnQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTcwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi51c2VyLWRldGFpbHMge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxLjNmciAxZnIgMWZyIDFmcjtcbn1cbi51aWQtY29udGVudCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi5leGFtcGxlLW1hcmdpbiB7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cblxuaW1nLmljb24tYWN0aW9uIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xufVxuXG4udGFiLWNvbnRlbnQtZW1haWwge1xuICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICB0ZXh0LW92ZXJmbG93OiBlbGxpcHNpcztcbiAgICB3aWR0aDogMTUwcHg7XG59XG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuNWZyIDFmciAxZnIgMWZyIDAuNWZyO1xuICAgIG1hcmdpbi1sZWZ0OiAwZW07XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIC8qIG1hcmdpbi1ib3R0b206IDFlbTsgKi9cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTNweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbn1cbi5tYWluLWNvbnRhaW5lci1yZXN1bHQtdXNlcnMge1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG4udGV4dC1vdXRwdXQtdGFiLWNvbnRlbnR7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAxZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4uY3Vyc29yLXNob3dcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nLmFnZW50LWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC40ZnIgMC45ZnIgMWZyIDEuMWZyIDEuMWZyIDAuNmZyO1xufVxuXG4udXNlci1jb250ZW50LWxvd2VyLXJlc3VsdC5hZ2VudC1jb250ZW50LWxvd2VyLXJlc3VsdHtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuMmZyIDFmciAxZnIgMS4xZnIgMWZyIDAuNmZyO1xufVxuLmFkZC1hZ2VudC1vdmVybGF5e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgdG9wOiAwO1xuICAgIGhlaWdodDogMTAwdmg7XG59XG5cbi5hZGQtYWdlbnQtYmFja2dyb3VuZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGhlaWdodDogMTAwJTtcbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ud3JhcHBlci1hZGQtYWdlbnQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuXG5pbWcuaW1hZ2UtY3Jvc3MtaW1hZ2Uge1xuICAgIGhlaWdodDogMnZoO1xufVxuXG5idXR0b24uYnV0dG9uLWNvbG9ye1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBwYWRkaW5nOiAwZW0gMmVtO1xufVxuLnVwZGF0ZS1idXR0b24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGQtYWdlbnQtdG9wLWhlYWRpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbntcbiAgICBwYWRkaW5nOiAwLjdlbSAhaW1wb3J0YW50O1xufVxuaW1nLnNlcmFjaC1pY29uLWltYWdlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cbi5zZWFyY2gtaWNvbiB7XG4gICAgbWFyZ2luLWxlZnQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuXG4uYWdlbnQtdGFiOmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLnVzZXItdGFiOmhvdmVye1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbnNwYW4ubGluZS1oZWlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDMUJCQkI7XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbn1cbmltZy5kb3duLXNpZGUtYXJyb3cge1xuICAgIC8qIGhlaWdodDogMS41dmg7ICovXG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gICAgd2lkdGg6IDE1cHg7XG59XG4uY2hlY2tib3gtaW1hZ2Uge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmZvcm0uZXhhbXBsZS1mb3JtIHtcbiAgICBtYXJnaW4tYm90dG9tOiAtMWVtO1xufVxuLnNlYXJjaC1pY29uOmhvdmVyXG57XG4gICAgY3Vyc29yOnBvaW50ZXI7XG59XG5cblxuXG4uaW5uZXItam9iLXRpdGxlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICB3aWR0aDogMjAwcHg7XG4gICAgb3ZlcmZsb3c6IG92ZXJsYXk7XG4gICAgb3ZlcmZsb3c6IG92ZXJsYXk7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogNDh2aDtcbiAgICBsZWZ0OiA2NXZ3O1xuXG59XG4uam9iLXRpdGxlLWNvbnRlbnQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6NTAwO1xufVxuLm92ZXJsYXktYmxhY2stYmFjayB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4uc2VsZWN0LWpvYi10aXRsZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5pbWcuc2VyYWNoLWljb24taW1hZ2Utam9iLXRpdGxlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cbi5zZWxjdC1qb2ItdGl0bGUtdGV4dFxue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDo1MDA7XG4gICAgZm9udC1zaXplOiAxNnB4O1xufVxuLnRleHQtaGVhZGluZy10YWItY29udGVudDpob3Zlclxue1xuICAgIGN1cnNvcjpwb2ludGVyO1xufVxuLnNlbGVjdC1qb2ItdGl0bGUtaW1hZ2UtY2xvc2U6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn1cbi5qb2ItdGl0bGUtY29udGVudDpob3Zlclxue1xuICAgIGN1cnNvcjpwb2ludGVyO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQ6aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */";
+    __webpack_exports__["default"] = "\n.user-agent-tab-main-container {\n    padding-left: 11em;\n    padding-top: 8vh;\n    background-color: #F9F9F9;\n}\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n\n}\nimg.image-people {\n    height: 7vh;\n    border-radius: 50px;\n    margin-right: 15px;\n}\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n}\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\nspan.button-size {\n    font-size: 20px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n.tab-area {\n    display: flex;\n    align-items: flex-end;\n    flex-direction: row;\n\n}\n.search-field\n{\n    display: flex;\n    align-items: center;\n    justify-content: unset;\n    border-bottom: 1px solid black;\n    width: 16vw;\n\n}\n.user-tab {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\n.agent-tab{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.5em;\n    color: #000000;\n   margin-left: 3em;\n    padding: 0px 1em;\n    padding-bottom: 7px;\n}\nimg.user-image {\n    height: 4vh;\n}\n.user-count {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\n.user-counter {\n    display: flex;\n    justify-content: space-evenly;\n    padding: 0.5em;\n    background-color: white;\n    border-radius: 16px;\n    box-shadow: 3px 3px 5px 6px #ccc;\n    margin-right: 2em;\n    flex-direction: column;\n}\n.user-count-text {\n    text-align: center;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    color: var(--light-blue-color);\n    font-size: 2.7em;\n    padding-left: 10px;\n\n}\n.Main-tab-area-container {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1.1fr 0.1fr;\n    align-content: center;\n    justify-content: center;\n    margin-top: 2em;\n    align-items: flex-end;\n}\n.heading-count-text {\n    text-align: right;\n    color: #0F3C73;\n    font-size: 1.3em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    padding-left: 2em;\n}\n.user-count-heading\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #0F3C73;\n    font-size: 1.3em;\n    padding-left: 10px;\n}\n.user-count-area-main {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    justify-content: space-around;\n}\nspan.border-right {\n    border: 1px solid #00000029;\n    height: 3em;\n    margin-bottom: 10px;\n}\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.5fr 0.9fr 1fr 1fr 0.4fr;\n    margin-right: 2em;\n    margin-top: 2em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 5700;\n    font-size: 1.2em;\n    color: #030303;\n    display: flex;\n    align-items: center;\n}\n.user-details {\n    display: grid;\n    grid-template-columns: 1.3fr 1fr 1fr 1fr;\n}\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.example-margin {\n    padding-right: 10px;\n}\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n.tab-content-email {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    margin-right: 2em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1em;\n    color: #030303;\n    margin-left: -8px;\n}\n.cursor-show\n{\n    cursor: pointer;\n}\n.user-content-top-heading.agent-content-top-heading {\n    grid-template-columns: 0.3fr 0.9fr 1fr 1.1fr 1.1fr 0.6fr;\n}\n.user-content-lower-result.agent-content-lower-result{\n    grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.6fr;\n}\n.add-agent-overlay{\n    position: fixed;\n    width: 100vw;\n    top: 0;\n    height: 100vh;\n}\n.add-agent-background {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n}\n.full-width\n{\n    width: 100%;\n}\n.wrapper-add-agent {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n}\nimg.image-cross-image {\n    height: 2vh;\n}\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.add-agent-top-headin {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    margin-bottom: 1em;\n}\n.add_more_button{\n    padding: 0.7em !important;\n}\nimg.serach-icon-image {\n    height: 2vh;\n}\n.search-icon {\n    margin-left: 2em;\n    margin-top: 10px;\n}\n.agent-tab:hover\n{\n    cursor: pointer;\n}\n.user-tab:hover{\n    cursor: pointer;\n}\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\nimg.down-side-arrow {\n    /* height: 1.5vh; */\n    margin-left: 10px;\n    width: 15px;\n}\n.checkbox-image {\n    display: flex;\n    align-items: center;\n}\nform.example-form {\n    margin-bottom: -1em;\n}\n.search-icon:hover\n{\n    cursor:pointer;\n}\n.inner-job-title {\n    background-color: white;\n    padding: 1em;\n    border-radius: 10px;\n    width: 200px;\n    overflow: overlay;\n    overflow: overlay;\n    position: absolute;\n    top: 48vh;\n    left: 65vw;\n\n}\n.job-title-content {\n    text-align: center;\n    font-size: 1.2em;\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n}\n.overlay-black-back {\n    display: flex;\n    justify-content: center;\n    height: 100%;\n}\n.select-job-title-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n}\nimg.serach-icon-image-job-title {\n    height: 2vh;\n}\n.selct-job-title-text\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight:500;\n    font-size: 16px;\n}\n.text-heading-tab-content:hover\n{\n    cursor:pointer;\n}\n.select-job-title-image-close:hover\n{\n    cursor:pointer;\n}\n.job-title-content:hover\n{\n    cursor:pointer;\n}\n.user-content-lower-result:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1hZ2VudC10YWIvdXNlcnMtYWdlbnQtdGFiLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7SUFDYiw4QkFBOEI7SUFDOUIsaUJBQWlCO0FBQ3JCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsaUNBQWlDO0VBQ25DLGdCQUFnQjtFQUNoQixjQUFjO0FBQ2hCO0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTs7QUFFZjtBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7SUFDakMsZ0JBQWdCO0FBQ3BCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IscUJBQXFCO0lBQ3JCLG1CQUFtQjs7QUFFdkI7QUFDQTs7SUFFSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHNCQUFzQjtJQUN0Qiw4QkFBOEI7SUFDOUIsV0FBVzs7QUFFZjtBQUVBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7R0FDZixnQkFBZ0I7SUFDZixnQkFBZ0I7SUFDaEIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLGNBQWM7SUFDZCx1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyxpQkFBaUI7SUFDakIsc0JBQXNCO0FBQzFCO0FBQ0E7SUFDSSxrQkFBa0I7SUFDbEIsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQiw4QkFBOEI7SUFDOUIsZ0JBQWdCO0lBQ2hCLGtCQUFrQjs7QUFFdEI7QUFDQTtJQUNJLGFBQWE7SUFDYiwwQ0FBMEM7SUFDMUMscUJBQXFCO0lBQ3JCLHVCQUF1QjtJQUN2QixlQUFlO0lBQ2YscUJBQXFCO0FBQ3pCO0FBR0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGlCQUFpQjtBQUNyQjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0lBQ25CLDZCQUE2QjtBQUNqQztBQUNBO0lBQ0ksMkJBQTJCO0lBQzNCLFdBQVc7SUFDWCxtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixnREFBZ0Q7SUFDaEQsaUJBQWlCO0lBQ2pCLGVBQWU7SUFDZix5QkFBeUI7SUFDekIsWUFBWTtJQUNaLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGlCQUFpQjtJQUNqQixnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYix3Q0FBd0M7QUFDNUM7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjtBQUVBO0lBQ0ksbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLDhDQUE4QztJQUM5QyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHdCQUF3QjtJQUN4Qix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLGlCQUFpQjtJQUNqQixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDO0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYztJQUNkLGNBQWM7SUFDZCxpQkFBaUI7QUFDckI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSx3REFBd0Q7QUFDNUQ7QUFFQTtJQUNJLGtEQUFrRDtBQUN0RDtBQUNBO0lBQ0ksZUFBZTtJQUNmLFlBQVk7SUFDWixNQUFNO0lBQ04sYUFBYTtBQUNqQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsWUFBWTtBQUNoQjtBQUNBOztJQUVJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksdUJBQXVCO0lBQ3ZCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLFdBQVc7QUFDZjtBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixnQ0FBZ0M7SUFDaEMsZUFBZTtJQUNmLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLHlCQUF5QjtBQUM3QjtBQUNBO0lBQ0ksV0FBVztBQUNmO0FBQ0E7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCO0FBRUE7O0lBRUksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksbUJBQW1CO0lBQ25CLGlCQUFpQjtJQUNqQixXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLG1CQUFtQjtBQUN2QjtBQUNBOztJQUVJLGNBQWM7QUFDbEI7QUFJQTtJQUNJLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixpQkFBaUI7SUFDakIsaUJBQWlCO0lBQ2pCLGtCQUFrQjtJQUNsQixTQUFTO0lBQ1QsVUFBVTs7QUFFZDtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLGdCQUFnQjtJQUNoQixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsWUFBWTtBQUNoQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7QUFDbEM7QUFDQTtJQUNJLFdBQVc7QUFDZjtBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxlQUFlO0lBQ2YsZUFBZTtBQUNuQjtBQUNBOztJQUVJLGNBQWM7QUFDbEI7QUFDQTs7SUFFSSxjQUFjO0FBQ2xCO0FBQ0E7O0lBRUksY0FBYztBQUNsQjtBQUNBOztJQUVJLGVBQWU7QUFDbkIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VzZXJzLWFnZW50LXRhYi91c2Vycy1hZ2VudC10YWIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG4gICAgcGFkZGluZy10b3A6IDh2aDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuLnRvcC1iYXItaGVhZGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbi50b3AtYmFyLXVzZXItaGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6ICMwRjNDNzM7XG59XG4ubG93ZXItdGV4dC1oZWFkaW5nXG57XG5jb2xvcjogIzFFQUFGQTtcbmZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5mb250LXNpemU6IDIwcHg7XG5cbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogN3ZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi50YWItYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcblxufVxuLnNlYXJjaC1maWVsZFxue1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHVuc2V0O1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICB3aWR0aDogMTZ2dztcblxufVxuXG4udXNlci10YWIge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgcGFkZGluZzogMHB4IDFlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogN3B4O1xufVxuLmFnZW50LXRhYntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgbWFyZ2luLWxlZnQ6IDNlbTtcbiAgICBwYWRkaW5nOiAwcHggMWVtO1xuICAgIHBhZGRpbmctYm90dG9tOiA3cHg7XG59XG5pbWcudXNlci1pbWFnZSB7XG4gICAgaGVpZ2h0OiA0dmg7XG59XG4udXNlci1jb3VudCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4udXNlci1jb3VudGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtZXZlbmx5O1xuICAgIHBhZGRpbmc6IDAuNWVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDE2cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggNnB4ICNjY2M7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbn1cbi51c2VyLWNvdW50LXRleHQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgZm9udC1zaXplOiAyLjdlbTtcbiAgICBwYWRkaW5nLWxlZnQ6IDEwcHg7XG5cbn1cbi5NYWluLXRhYi1hcmVhLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDJmciAxZnIgMS4xZnIgMC4xZnI7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbiAgICBhbGlnbi1pdGVtczogZmxleC1lbmQ7XG59XG5cblxuLmhlYWRpbmctY291bnQtdGV4dCB7XG4gICAgdGV4dC1hbGlnbjogcmlnaHQ7XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC1zaXplOiAxLjNlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBwYWRkaW5nLWxlZnQ6IDJlbTtcbn1cbi51c2VyLWNvdW50LWhlYWRpbmdcbntcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LXNpemU6IDEuM2VtO1xuICAgIHBhZGRpbmctbGVmdDogMTBweDtcbn1cbi51c2VyLWNvdW50LWFyZWEtbWFpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG59XG5zcGFuLmJvcmRlci1yaWdodCB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgIzAwMDAwMDI5O1xuICAgIGhlaWdodDogM2VtO1xuICAgIG1hcmdpbi1ib3R0b206IDEwcHg7XG59XG5cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjVmciAwLjlmciAxZnIgMWZyIDAuNGZyO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4O1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xufVxuLnRleHQtaGVhZGluZy10YWItY29udGVudCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1NzAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnVzZXItZGV0YWlscyB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDEuM2ZyIDFmciAxZnIgMWZyO1xufVxuLnVpZC1jb250ZW50IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuLmV4YW1wbGUtbWFyZ2luIHtcbiAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xufVxuXG5pbWcuaWNvbi1hY3Rpb24ge1xuICAgIGhlaWdodDogMS41dmg7XG4gICAgbWFyZ2luLXJpZ2h0OiA1cHg7XG59XG5cbi50YWItY29udGVudC1lbWFpbCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi51c2VyLWNvbnRlbnQtbG93ZXItcmVzdWx0IHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC41ZnIgMWZyIDFmciAxZnIgMC41ZnI7XG4gICAgbWFyZ2luLWxlZnQ6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgLyogbWFyZ2luLWJvdHRvbTogMWVtOyAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLm1haW4tY29udGFpbmVyLXJlc3VsdC11c2VycyB7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbn1cbi50ZXh0LW91dHB1dC10YWItY29udGVudHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBmb250LXNpemU6IDFlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbiAgICBtYXJnaW4tbGVmdDogLThweDtcbn1cbi5jdXJzb3Itc2hvd1xue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi51c2VyLWNvbnRlbnQtdG9wLWhlYWRpbmcuYWdlbnQtY29udGVudC10b3AtaGVhZGluZyB7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAwLjlmciAxZnIgMS4xZnIgMS4xZnIgMC42ZnI7XG59XG5cbi51c2VyLWNvbnRlbnQtbG93ZXItcmVzdWx0LmFnZW50LWNvbnRlbnQtbG93ZXItcmVzdWx0e1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC4yZnIgMWZyIDFmciAxZnIgMWZyIDAuNmZyO1xufVxuLmFkZC1hZ2VudC1vdmVybGF5e1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB3aWR0aDogMTAwdnc7XG4gICAgdG9wOiAwO1xuICAgIGhlaWdodDogMTAwdmg7XG59XG5cbi5hZGQtYWdlbnQtYmFja2dyb3VuZCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGhlaWdodDogMTAwJTtcbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ud3JhcHBlci1hZGQtYWdlbnQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuXG5pbWcuaW1hZ2UtY3Jvc3MtaW1hZ2Uge1xuICAgIGhlaWdodDogMnZoO1xufVxuXG5idXR0b24uYnV0dG9uLWNvbG9ye1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBwYWRkaW5nOiAwZW0gMmVtO1xufVxuLnVwZGF0ZS1idXR0b24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5hZGQtYWdlbnQtdG9wLWhlYWRpbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcbn1cblxuLmFkZF9tb3JlX2J1dHRvbntcbiAgICBwYWRkaW5nOiAwLjdlbSAhaW1wb3J0YW50O1xufVxuaW1nLnNlcmFjaC1pY29uLWltYWdlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cbi5zZWFyY2gtaWNvbiB7XG4gICAgbWFyZ2luLWxlZnQ6IDJlbTtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xufVxuXG4uYWdlbnQtdGFiOmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLnVzZXItdGFiOmhvdmVye1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbnNwYW4ubGluZS1oZWlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDMUJCQkI7XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbn1cbmltZy5kb3duLXNpZGUtYXJyb3cge1xuICAgIC8qIGhlaWdodDogMS41dmg7ICovXG4gICAgbWFyZ2luLWxlZnQ6IDEwcHg7XG4gICAgd2lkdGg6IDE1cHg7XG59XG4uY2hlY2tib3gtaW1hZ2Uge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmZvcm0uZXhhbXBsZS1mb3JtIHtcbiAgICBtYXJnaW4tYm90dG9tOiAtMWVtO1xufVxuLnNlYXJjaC1pY29uOmhvdmVyXG57XG4gICAgY3Vyc29yOnBvaW50ZXI7XG59XG5cblxuXG4uaW5uZXItam9iLXRpdGxlIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICB3aWR0aDogMjAwcHg7XG4gICAgb3ZlcmZsb3c6IG92ZXJsYXk7XG4gICAgb3ZlcmZsb3c6IG92ZXJsYXk7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIHRvcDogNDh2aDtcbiAgICBsZWZ0OiA2NXZ3O1xuXG59XG4uam9iLXRpdGxlLWNvbnRlbnQge1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6NTAwO1xufVxuLm92ZXJsYXktYmxhY2stYmFjayB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDEwMCU7XG59XG4uc2VsZWN0LWpvYi10aXRsZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5pbWcuc2VyYWNoLWljb24taW1hZ2Utam9iLXRpdGxlIHtcbiAgICBoZWlnaHQ6IDJ2aDtcbn1cbi5zZWxjdC1qb2ItdGl0bGUtdGV4dFxue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDo1MDA7XG4gICAgZm9udC1zaXplOiAxNnB4O1xufVxuLnRleHQtaGVhZGluZy10YWItY29udGVudDpob3Zlclxue1xuICAgIGN1cnNvcjpwb2ludGVyO1xufVxuLnNlbGVjdC1qb2ItdGl0bGUtaW1hZ2UtY2xvc2U6aG92ZXJcbntcbiAgICBjdXJzb3I6cG9pbnRlcjtcbn1cbi5qb2ItdGl0bGUtY29udGVudDpob3Zlclxue1xuICAgIGN1cnNvcjpwb2ludGVyO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQ6aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */";
     /***/
   },
 
@@ -5866,13 +5895,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersAgentTabComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this47 = this;
+          var _this48 = this;
 
           this.getUser = JSON.parse(localStorage.getItem("user"));
           document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this47.agemtTab = params.get("agemtTab");
-            _this47.userTabs = params.get("userTab");
+            _this48.agemtTab = params.get("agemtTab");
+            _this48.userTabs = params.get("userTab");
           });
 
           if (this.userTabs == "false") {
@@ -5904,7 +5933,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "showJobTiltle",
         value: function showJobTiltle(item) {
-          var _this48 = this;
+          var _this49 = this;
 
           this.jobTitleSearch = true;
           this.overLayJobTitle = false;
@@ -5916,10 +5945,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (data) {
-            _this48.AllAgentJob = data;
+            _this49.AllAgentJob = data;
             data.forEach(function (element) {
               if (element.jobtitle == item) {
-                _this48.tutorials.push(element);
+                _this49.tutorials.push(element);
               }
             });
           });
@@ -5953,7 +5982,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getGentSearchValue",
         value: function getGentSearchValue() {
-          var _this49 = this;
+          var _this50 = this;
 
           this.crossSearch = true;
           this.tutorials = [];
@@ -5961,7 +5990,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
               if (elements.data().UserType == "Agent") {
-                _this49.allAgent.push(elements.data());
+                _this50.allAgent.push(elements.data());
               }
             });
           });
@@ -5973,8 +6002,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           })).subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.email.toLowerCase().replace(/\s/g, "").substring(0, 3) == _this49.searchEmail.toLowerCase().replace(/\s/g, "").substring(0, 3) || element.fullname.toLowerCase().replace(/\s/g, "").substring(0, 3) == _this49.searchEmail.toLowerCase().replace(/\s/g, "").substring(0, 3) || element.postcode.toLowerCase().replace(/\s/g, "").substring(0, 3) == _this49.searchEmail.toLowerCase().replace(/\s/g, "").substring(0, 3)) {
-                _this49.tutorials.push(element);
+              if (element.email.toLowerCase() == _this50.searchEmail.toLowerCase() || element.fullname.toLowerCase() == _this50.searchEmail.toLowerCase() || element.postcode.toLowerCase() == _this50.searchEmail.toLowerCase()) {
+                _this50.tutorials.push(element);
               }
             });
           });
@@ -5982,15 +6011,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSearchValue",
         value: function getSearchValue() {
-          var _this50 = this;
+          var _this51 = this;
 
           this.crossSearch = true;
           this.allUser = [];
           console.log(this.searchEmail);
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
-              if (elements.data().UserType != "Agent" && element.data().email.toLowerCase().replace(/\s/g, "").substring(0, 3) == _this50.searchEmail.toLowerCase().replace(/\s/g, "").substring(0, 3) || element.data().Name.toLowerCase().replace(/\s/g, "").substring(0, 3) == _this50.searchEmail.toLowerCase().replace(/\s/g, "").substring(0, 3)) {
-                _this50.allUser.push({
+              if (elements.data().UserType != "Agent" && elements.data().email.toLowerCase() == _this51.searchEmail.toLowerCase() || elements.data().Name.toLowerCase() == _this51.searchEmail.toLowerCase()) {
+                _this51.allUser.push({
                   detail: elements.data(),
                   uid: elements.data().uid
                 });
@@ -6015,10 +6044,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteUser",
         value: function deleteUser(uid) {
-          var _this51 = this;
+          var _this52 = this;
 
           this.adminPanelService.deleteUser(uid).then(function (data) {
-            var dialogRef = _this51.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this52.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "User Deleted"
               }
@@ -6030,10 +6059,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteAgent",
         value: function deleteAgent(uid) {
-          var _this52 = this;
+          var _this53 = this;
 
           this.adminPanelService.deleteAgent(uid).then(function (data) {
-            _this52.deleteUser(uid);
+            _this53.deleteUser(uid);
           });
         }
       }, {
@@ -6049,20 +6078,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this53 = this;
+          var _this54 = this;
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this53.name = element.data().Name;
-              _this53.image = element.data().Image;
+              _this54.name = element.data().Name;
+              _this54.image = element.data().Image;
             });
           }
         }
       }, {
         key: "getCountUser",
         value: function getCountUser() {
-          var _this54 = this;
+          var _this55 = this;
 
           this.allUser = [];
           this.allAgent = [];
@@ -6070,16 +6099,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.adminPanelService.getAllUser().then(function (data) {
             data.forEach(function (elements) {
               if (elements.data().UserType != "Agent" && elements.data().UserType != "Admin") {
-                _this54.allUser.push({
+                _this55.allUser.push({
                   detail: elements.data(),
                   uid: elements.data().uid
                 });
 
-                _this54.options.push(elements.data().email);
+                _this55.options.push(elements.data().email);
               }
 
               if (elements.data().UserType == "Agent") {
-                _this54.allAgent.push(elements.data());
+                _this55.allAgent.push(elements.data());
               }
             });
           });
@@ -6087,18 +6116,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllUsers",
         value: function getAllUsers() {
-          var _this55 = this;
+          var _this56 = this;
 
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
-              _this55.allUserDetails.push(elements.data());
+              _this56.allUserDetails.push(elements.data());
             });
           });
         }
       }, {
         key: "retrieveTutorials",
         value: function retrieveTutorials() {
-          var _this56 = this;
+          var _this57 = this;
 
           this.jobTitleSearch = false;
           this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
@@ -6108,10 +6137,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (data) {
-            _this56.tutorials = data;
-            _this56.AllAgentJob = data;
+            _this57.tutorials = data;
+            _this57.AllAgentJob = data;
             data.forEach(function (element) {
-              _this56.agentOptions.push(element.email);
+              _this57.agentOptions.push(element.email);
             });
           });
         }
@@ -6132,11 +6161,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createUser",
         value: function createUser(Name, email, password, Type) {
-          var _this57 = this;
+          var _this58 = this;
 
           console.log(Name, email, password, Type);
           this.AdminAuthService.adminSignUp(Name, email, password, Type).then(function (data) {
-            var dialogRef = _this57.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this58.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "Account Created and Verification Email send"
               }
@@ -6190,7 +6219,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n.prefrence-text\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n    width: 100%;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1lZGl0LXBhZ2UvdXNlcnMtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7O0lBRWxCLGlCQUFpQjs7SUFFakIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmOztBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBSUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7O0lBRUksV0FBVztBQUNmOztBQUNBO0lBQ0ksaUJBQWlCO0lBQ2pCLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCx3QkFBd0I7SUFDeEIsbUJBQW1CO0lBQ25CLFdBQVc7SUFDWCxlQUFlO0FBQ25COztBQUNBO0lBQ0ksZUFBZTtBQUNuQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osZ0NBQWdDO0lBQ2hDLGVBQWU7SUFDZixnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtBQUN2Qjs7QUFDQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtEQUFrRDtJQUNsRCxlQUFlO0lBQ2YseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0kseUJBQXlCO0lBQ3pCLGdCQUFnQjtBQUNwQjs7QUFhQTtJQUNJLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsdUJBQXVCO0lBQ3ZCLFlBQVk7QUFDaEI7O0FBQ0E7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0FBQ2xCOztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSxtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0RBQWtEO0lBQ2xELGdCQUFnQjtJQUNoQixlQUFlO0lBQ2Ysd0JBQXdCO0lBQ3hCLHVCQUF1QjtJQUN2QixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGdDQUFnQztJQUNoQyx1QkFBdUI7QUFDM0I7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsaUJBQWlCO0FBQ3JCOztBQUNBOztJQUVJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxXQUFXO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VzZXJzLWVkaXQtcGFnZS91c2Vycy1lZGl0LXBhZ2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi51c2VyLWFnZW50LXRhYi1tYWluLWNvbnRhaW5lciB7XG4gICAgcGFkZGluZy1sZWZ0OiAxMWVtO1xuXG4gICAgcGFkZGluZy10b3A6IDEwdmg7XG5cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjlGOUY5O1xufVxuXG4uYWRkX21vcmVfYnV0dG9uIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEYzQzczO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm9yZGVyLXJhZGl1czogMTFweDtcbiAgICBmb250LXNpemU6IDE1cHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxZW07XG59XG4udG9wLWJhci1oZWFkZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuLnRvcC1iYXItdXNlci1oZWFkaW5nIHtcbiAgICBmb250LXNpemU6IDMwcHg7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICBmb250LXdlaWdodDogNzAwO1xuICBjb2xvcjogIzBGM0M3Mztcbn1cbi5sb3dlci10ZXh0LWhlYWRpbmdcbntcbmNvbG9yOiAjMUVBQUZBO1xuZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuZm9udC13ZWlnaHQ6IDUwMDtcbmZvbnQtc2l6ZTogMjBweDtcbn1cbmltZy5pbWFnZS1wZW9wbGUge1xuICAgIGhlaWdodDogNXZoO1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAxNXB4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLnJpZ2h0LXRleHQtY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tcmlnaHQ6IDJlbTtcbn1cbnNwYW4uYnV0dG9uLXNpemUge1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbi5sZWZ0LWNvbnRhaW5lci13cmFwcGVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG5cbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgcGFkZGluZzogMC41ZW0gMWVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG5cbn1cbi50b3AtYmFyLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5yaWdodC10ZXh0LWxlZnQtY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDJlbTtcbiAgICBjb2xvcjogIzAwMDAwMDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xufVxuLmFhcm93LWxlZnQtY29udGFpbmVyIHtcbiAgICBmb250LXNpemU6IDEuOWVtO1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG59XG5cblxuXG4uZmllbGQtc2V0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uZXhhbXBsZS1mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG59XG4ucHJvZmlsZS1pbmZvLWNhcmQge1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbn1cblxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIHBhZGRpbmc6IDBlbSA1ZW07XG59XG5cbi5wcm9maWxlLWhlYWRpbmcge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZDtcbiAgICBwYWRkaW5nLWJvdHRvbTogNXB4O1xuICAgIHdpZHRoOiAxMXZ3O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbn1cbi5maWVsZHMtcHJvZmlsZS1pbmZvIHtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG59XG5idXR0b24uYnV0dG9uLWNvbG9ye1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgY29sb3I6IHdoaXRlO1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICBwYWRkaW5nOiAwZW0gMmVtO1xufVxuLnVwZGF0ZS1idXR0b24ge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi51c2VyLUxpc3RpbmctbWF0LWNhcmQge1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xufVxuLnVzZXItY29udGVudC10b3AtaGVhZGluZyB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDAuM2ZyIDFmciAxLjJmciAwLjlmciAwLjZmcjtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0U4RThFODtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTNweDtcbn1cbi50ZXh0LWhlYWRpbmctdGFiLWNvbnRlbnQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4ubWFpbi1saXN0aW5nLWNvbnRhaW5lciB7XG4gICAgcGFkZGluZzogMmVtIDBlbTtcbn1cbnNwYW4ubGluZS1oZWlnaHQge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDMUJCQkI7XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbn1cblxuXG5cblxuXG5cblxuXG5cblxuXG5cbi51aWQtY29udGVudCB7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgIHRleHQtb3ZlcmZsb3c6IGVsbGlwc2lzO1xuICAgIHdpZHRoOiAxNTBweDtcbn1cbi50ZXh0LW91dHB1dC10YWItY29udGVudHtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBmb250LXNpemU6IDEuMmVtO1xuICAgIGNvbG9yOiAjMDMwMzAzO1xufVxuLmN1cnNvci1zaG93XG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLm1haW4tY29udGFpbmVyLXJlc3VsdC11c2VycyB7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbn1cbi51c2VyLWNvbnRlbnQtbG93ZXItcmVzdWx0IHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC4zZnIgMWZyIDEuMmZyIDAuOWZyIDAuNmZyO1xuICAgIG1hcmdpbi1sZWZ0OiAwZW07XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIC8qIG1hcmdpbi1ib3R0b206IDFlbTsgKi9cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTNweDtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiAgICBqdXN0aWZ5LWl0ZW1zOiBiYXNlbGluZTtcbn1cbmltZy5pY29uLWFjdGlvbiB7XG4gICAgaGVpZ2h0OiAxLjV2aDtcbiAgICBtYXJnaW4tcmlnaHQ6IDVweDtcbn1cbi5wcmVmcmVuY2UtdGV4dFxue1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG4gICAgd2lkdGg6IDEwMCU7XG59XG4iXX0= */";
+    __webpack_exports__["default"] = ".user-agent-tab-main-container {\n    padding-left: 11em;\n\n    padding-top: 10vh;\n\n    background-color: #F9F9F9;\n}\n\n.add_more_button {\n    background-color: #0F3C73;\n    padding: 1em;\n    color: white;\n    border-radius: 11px;\n    font-size: 15px;\n    margin-right: 1em;\n}\n\n.top-bar-header {\n    display: flex;\n    justify-content: space-between;\n    margin-right: 2em;\n}\n\n.top-bar-user-heading {\n    font-size: 30px;\n    font-family: 'Roboto Slab', serif;\n  font-weight: 700;\n  color: #0F3C73;\n}\n\n.lower-text-heading\n{\ncolor: #1EAAFA;\nfont-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 20px;\n}\n\nimg.image-people {\n    height: 5vh;\n    border-radius: 50px;\n    margin-right: 15px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.right-text-container {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n    margin-right: 2em;\n}\n\nspan.button-size {\n    font-size: 18px;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n}\n\n.left-container-wrapper {\n    display: flex;\n    align-items: center;\n    border: 1px solid black;\n\n    justify-content: space-between;\n    padding: 0.5em 1em;\n    border-radius: 10px;\n\n}\n\n.top-bar-container {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n}\n\n.right-text-left-container {\n    padding-left: 2em;\n    color: #000000;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n}\n\n.aarow-left-container {\n    font-size: 1.9em;\n    color: #0F3C73;\n    font-weight: 700;\n}\n\n.field-set {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n}\n\n.fields-profile-info {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 5em;\n    align-items: baseline;\n    justify-content: center;\n}\n\n.example-full-width\n{\n    width: 100%;\n}\n\n.profile-info-card {\n    margin-right: 2em;\n    margin-top: 2em;\n}\n\n.fields-profile-info {\n    padding: 0em 5em;\n}\n\n.profile-heading {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    color: #000000;\n    border-bottom: 1px solid;\n    padding-bottom: 5px;\n    width: 11vw;\n    font-size: 20px;\n}\n\n.fields-profile-info {\n    margin-top: 1em;\n}\n\nbutton.button-color{\n    background-color: #0F3C73;\n    color: white;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    font-size: 18px;\n    padding: 0em 2em;\n}\n\n.update-button {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.user-Listing-mat-card {\n    margin-top: 2em;\n    border-radius: 10px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n}\n\n.user-content-top-heading {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-top: 1em;\n    background-color: #E8E8E8;\n    padding: 1em;\n    border-radius: 13px;\n}\n\n.text-heading-tab-content {\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.main-listing-container {\n    padding: 2em 0em;\n}\n\nspan.line-height {\n    border: 1px solid #C1BBBB;\n    margin: 0em 10px;\n}\n\n.uid-content {\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    width: 150px;\n}\n\n.text-output-tab-content{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 400;\n    font-size: 1.2em;\n    color: #030303;\n}\n\n.cursor-show\n{\n    cursor: pointer;\n}\n\n.main-container-result-users {\n    padding-bottom: 2em;\n}\n\n.user-content-lower-result {\n    display: grid;\n    grid-template-columns: 0.3fr 1fr 1.2fr 0.9fr 0.6fr;\n    margin-left: 0em;\n    margin-top: 1em;\n    /* margin-bottom: 1em; */\n    background-color: white;\n    padding: 1em;\n    border-radius: 13px;\n    box-shadow: 3px 3px 5px 3px #ccc;\n    justify-items: baseline;\n}\n\nimg.icon-action {\n    height: 1.5vh;\n    margin-right: 5px;\n}\n\n.prefrence-text\n{\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.2em;\n    color: #030303;\n    width: 100%;\n}\n\n.user-content-lower-result:hover\n{\n    cursor: pointer;\n}\n\n.left-container:hover\n{\n    cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91c2Vycy1lZGl0LXBhZ2UvdXNlcnMtZWRpdC1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxrQkFBa0I7O0lBRWxCLGlCQUFpQjs7SUFFakIseUJBQXlCO0FBQzdCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7SUFDWixZQUFZO0lBQ1osbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixpQkFBaUI7QUFDckI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsOEJBQThCO0lBQzlCLGlCQUFpQjtBQUNyQjs7QUFDQTtJQUNJLGVBQWU7SUFDZixpQ0FBaUM7RUFDbkMsZ0JBQWdCO0VBQ2hCLGNBQWM7QUFDaEI7O0FBQ0E7O0FBRUEsY0FBYztBQUNkLGlDQUFpQztBQUNqQyxnQkFBZ0I7QUFDaEIsZUFBZTtBQUNmOztBQUNBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtJQUNuQixrQkFBa0I7SUFDbEIsZ0NBQWdDO0FBQ3BDOztBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7SUFDbkIsaUJBQWlCO0FBQ3JCOztBQUNBO0lBQ0ksZUFBZTtJQUNmLGlDQUFpQztJQUNqQyxnQkFBZ0I7QUFDcEI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1Qjs7SUFFdkIsOEJBQThCO0lBQzlCLGtCQUFrQjtJQUNsQixtQkFBbUI7O0FBRXZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLDhCQUE4QjtJQUM5QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGNBQWM7SUFDZCxnQkFBZ0I7QUFDcEI7O0FBSUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxhQUFhO0lBQ2Isa0NBQWtDO0lBQ2xDLGFBQWE7SUFDYixxQkFBcUI7SUFDckIsdUJBQXVCO0FBQzNCOztBQUNBOztJQUVJLFdBQVc7QUFDZjs7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixlQUFlO0FBQ25COztBQUVBO0lBQ0ksZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2Qsd0JBQXdCO0lBQ3hCLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsZUFBZTtBQUNuQjs7QUFDQTtJQUNJLGVBQWU7QUFDbkI7O0FBQ0E7SUFDSSx5QkFBeUI7SUFDekIsWUFBWTtJQUNaLGdDQUFnQztJQUNoQyxlQUFlO0lBQ2YsZ0JBQWdCO0FBQ3BCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7QUFDdkI7O0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLGdDQUFnQztBQUNwQzs7QUFDQTtJQUNJLGFBQWE7SUFDYixrREFBa0Q7SUFDbEQsZUFBZTtJQUNmLHlCQUF5QjtJQUN6QixZQUFZO0lBQ1osbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztBQUNsQjs7QUFDQTtJQUNJLGdCQUFnQjtBQUNwQjs7QUFDQTtJQUNJLHlCQUF5QjtJQUN6QixnQkFBZ0I7QUFDcEI7O0FBYUE7SUFDSSxtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLHVCQUF1QjtJQUN2QixZQUFZO0FBQ2hCOztBQUNBO0lBQ0ksaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7SUFDaEIsY0FBYztBQUNsQjs7QUFDQTs7SUFFSSxlQUFlO0FBQ25COztBQUNBO0lBQ0ksbUJBQW1CO0FBQ3ZCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGtEQUFrRDtJQUNsRCxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHdCQUF3QjtJQUN4Qix1QkFBdUI7SUFDdkIsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixnQ0FBZ0M7SUFDaEMsdUJBQXVCO0FBQzNCOztBQUNBO0lBQ0ksYUFBYTtJQUNiLGlCQUFpQjtBQUNyQjs7QUFDQTs7SUFFSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsV0FBVztBQUNmOztBQUNBOztJQUVJLGVBQWU7QUFDbkI7O0FBQ0E7O0lBRUksZUFBZTtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvdXNlcnMtZWRpdC1wYWdlL3VzZXJzLWVkaXQtcGFnZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnVzZXItYWdlbnQtdGFiLW1haW4tY29udGFpbmVyIHtcbiAgICBwYWRkaW5nLWxlZnQ6IDExZW07XG5cbiAgICBwYWRkaW5nLXRvcDogMTB2aDtcblxuICAgIGJhY2tncm91bmQtY29sb3I6ICNGOUY5Rjk7XG59XG5cbi5hZGRfbW9yZV9idXR0b24ge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwRjNDNzM7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGNvbG9yOiB3aGl0ZTtcbiAgICBib3JkZXItcmFkaXVzOiAxMXB4O1xuICAgIGZvbnQtc2l6ZTogMTVweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcbn1cbi50b3AtYmFyLWhlYWRlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG59XG4udG9wLWJhci11c2VyLWhlYWRpbmcge1xuICAgIGZvbnQtc2l6ZTogMzBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGNvbG9yOiAjMEYzQzczO1xufVxuLmxvd2VyLXRleHQtaGVhZGluZ1xue1xuY29sb3I6ICMxRUFBRkE7XG5mb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuZm9udC1zaXplOiAyMHB4O1xufVxuaW1nLmltYWdlLXBlb3BsZSB7XG4gICAgaGVpZ2h0OiA1dmg7XG4gICAgYm9yZGVyLXJhZGl1czogNTBweDtcbiAgICBtYXJnaW4tcmlnaHQ6IDE1cHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4ucmlnaHQtdGV4dC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xufVxuc3Bhbi5idXR0b24tc2l6ZSB7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xufVxuLmxlZnQtY29udGFpbmVyLXdyYXBwZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcblxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBwYWRkaW5nOiAwLjVlbSAxZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxufVxuLnRvcC1iYXItY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnJpZ2h0LXRleHQtbGVmdC1jb250YWluZXIge1xuICAgIHBhZGRpbmctbGVmdDogMmVtO1xuICAgIGNvbG9yOiAjMDAwMDAwO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG59XG4uYWFyb3ctbGVmdC1jb250YWluZXIge1xuICAgIGZvbnQtc2l6ZTogMS45ZW07XG4gICAgY29sb3I6ICMwRjNDNzM7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbn1cblxuXG5cbi5maWVsZC1zZXQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmcjtcbiAgICBncmlkLWdhcDogNWVtO1xuICAgIGFsaWduLWl0ZW1zOiBiYXNlbGluZTtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5leGFtcGxlLWZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbn1cbi5wcm9maWxlLWluZm8tY2FyZCB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xufVxuXG4uZmllbGRzLXByb2ZpbGUtaW5mbyB7XG4gICAgcGFkZGluZzogMGVtIDVlbTtcbn1cblxuLnByb2ZpbGUtaGVhZGluZyB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgY29sb3I6ICMwMDAwMDA7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkO1xuICAgIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gICAgd2lkdGg6IDExdnc7XG4gICAgZm9udC1zaXplOiAyMHB4O1xufVxuLmZpZWxkcy1wcm9maWxlLWluZm8ge1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbn1cbmJ1dHRvbi5idXR0b24tY29sb3J7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzBGM0M3MztcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuICAgIHBhZGRpbmc6IDBlbSAyZW07XG59XG4udXBkYXRlLWJ1dHRvbiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnVzZXItTGlzdGluZy1tYXQtY2FyZCB7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG59XG4udXNlci1jb250ZW50LXRvcC1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMC4zZnIgMWZyIDEuMmZyIDAuOWZyIDAuNmZyO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4O1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xufVxuLnRleHQtaGVhZGluZy10YWItY29udGVudCB7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbn1cbi5tYWluLWxpc3RpbmctY29udGFpbmVyIHtcbiAgICBwYWRkaW5nOiAyZW0gMGVtO1xufVxuc3Bhbi5saW5lLWhlaWdodCB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI0MxQkJCQjtcbiAgICBtYXJnaW46IDBlbSAxMHB4O1xufVxuXG5cblxuXG5cblxuXG5cblxuXG5cblxuLnVpZC1jb250ZW50IHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgd2lkdGg6IDE1MHB4O1xufVxuLnRleHQtb3V0cHV0LXRhYi1jb250ZW50e1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNDAwO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgY29sb3I6ICMwMzAzMDM7XG59XG4uY3Vyc29yLXNob3dcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubWFpbi1jb250YWluZXItcmVzdWx0LXVzZXJzIHtcbiAgICBwYWRkaW5nLWJvdHRvbTogMmVtO1xufVxuLnVzZXItY29udGVudC1sb3dlci1yZXN1bHQge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAwLjNmciAxZnIgMS4yZnIgMC45ZnIgMC42ZnI7XG4gICAgbWFyZ2luLWxlZnQ6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgLyogbWFyZ2luLWJvdHRvbTogMWVtOyAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxM3B4O1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGp1c3RpZnktaXRlbXM6IGJhc2VsaW5lO1xufVxuaW1nLmljb24tYWN0aW9uIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xuICAgIG1hcmdpbi1yaWdodDogNXB4O1xufVxuLnByZWZyZW5jZS10ZXh0XG57XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBjb2xvcjogIzAzMDMwMztcbiAgICB3aWR0aDogMTAwJTtcbn1cbi51c2VyLWNvbnRlbnQtbG93ZXItcmVzdWx0OmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmxlZnQtY29udGFpbmVyOmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufSJdfQ== */";
     /***/
   },
 
@@ -6271,11 +6300,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersEditPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this58 = this;
+          var _this59 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this58.UserUid = params.get("uid");
+            _this59.UserUid = params.get("uid");
           });
           this.getUserDetails();
           this.getSelectedUserDetail();
@@ -6285,12 +6314,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteBuyer",
         value: function deleteBuyer(uid, docid) {
-          var _this59 = this;
+          var _this60 = this;
 
           this.adminPanelService.deleteBuyer(uid, docid).then(function (data) {
-            var dialogRef = _this59.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this60.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
-                message: "User Deleted"
+                message: "Nestimate Deleted"
               }
             });
           });
@@ -6300,12 +6329,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(uid, docid) {
-          var _this60 = this;
+          var _this61 = this;
 
           this.adminPanelService.deleteSeller(uid, docid).then(function (data) {
-            var dialogRef = _this60.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this61.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
-                message: "User Deleted"
+                message: "Nestimate Deleted"
               }
             });
           });
@@ -6315,15 +6344,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this61 = this;
+          var _this62 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this61.username = element.data().Name;
-              _this61.image = element.data().Image;
+              _this62.username = element.data().Name;
+              _this62.image = element.data().Image;
             });
           }
         }
@@ -6335,53 +6364,53 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSelectedUserDetail",
         value: function getSelectedUserDetail() {
-          var _this62 = this;
+          var _this63 = this;
 
           this.adminPanelService.getUser(this.UserUid).then(function (user) {
-            _this62.Name = user.data().Name;
-            _this62.email = user.data().email;
+            _this63.Name = user.data().Name;
+            _this63.email = user.data().email;
 
             if (user.data().title != null) {
-              _this62.title = user.data().title;
+              _this63.title = user.data().title;
             }
 
             if (user.data().DOB != null) {
-              _this62.DOB = user.data().DOB.toDate();
+              _this63.DOB = user.data().DOB.toDate();
             }
 
             if (user.data().Phone != null) {
-              _this62.Phone = user.data().Phone;
+              _this63.Phone = user.data().Phone;
             }
 
             if (user.data().Currentpostcode != null) {
-              _this62.Currentpostcode = user.data().Currentpostcode;
+              _this63.Currentpostcode = user.data().Currentpostcode;
             }
 
             if (user.data().Currentstate != null) {
-              _this62.Currentstate = user.data().Currentstate;
+              _this63.Currentstate = user.data().Currentstate;
             }
 
             if (user.data().CurrentTowncity != null) {
-              _this62.CurrentTowncity = user.data().CurrentTowncity;
+              _this63.CurrentTowncity = user.data().CurrentTowncity;
             }
 
             if (user.data().Currentaddress != null) {
-              _this62.Currentaddress = user.data().Currentaddress;
+              _this63.Currentaddress = user.data().Currentaddress;
             }
 
             if (user.data().prefrence != null) {
-              _this62.prefrence = user.data().prefrence;
+              _this63.prefrence = user.data().prefrence;
             }
           });
         }
       }, {
         key: "getBuyerEntries",
         value: function getBuyerEntries() {
-          var _this63 = this;
+          var _this64 = this;
 
           this.adminPanelService.getBuyerEntries(this.UserUid).then(function (user) {
             user.forEach(function (UserDetail) {
-              _this63.BuyerUserDetails.push({
+              _this64.BuyerUserDetails.push({
                 detail: UserDetail.data(),
                 id: UserDetail.id
               });
@@ -6391,11 +6420,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerEnteries",
         value: function getSellerEnteries() {
-          var _this64 = this;
+          var _this65 = this;
 
           this.adminPanelService.getSellerEntries(this.UserUid).then(function (user) {
             user.forEach(function (UserDetail) {
-              _this64.SellerUserDetails.push({
+              _this65.SellerUserDetails.push({
                 detail: UserDetail.data(),
                 id: UserDetail.id
               });
@@ -6405,6 +6434,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
+          var _this66 = this;
+
           this.user.uid = this.UserUid;
           this.user.Name = this.Name;
           this.user.email = this.email;
@@ -6457,13 +6488,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.user.CurrentTowncity = null;
           }
 
-          if (this.prefrence != null) {
+          if (this.prefrence != undefined) {
             this.user.prefrence = this.prefrence;
           } else {
             this.user.prefrence = null;
           }
 
-          this["return"] = this.adminPanelService.userupate(this.user).then(function (data) {});
+          this["return"] = this.adminPanelService.userupate(this.user).then(function (data) {
+            console.log(data);
+
+            var dialogRef = _this66.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+              data: {
+                message: "User Detail Updated"
+              }
+            }); //window.location.reload()
+
+          });
         }
       }]);
 
@@ -6755,30 +6795,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this65 = this;
+          var _this67 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this65.imageUrl = element.data().BannerImageUrl;
-              _this65.secondImageUrl = element.data().SecondBannerImage;
-              _this65.SecondImageText = element.data().SecondBannerText;
-              _this65.Step1Image = element.data().Step1Image;
-              _this65.Step2Image = element.data().Step2Image;
-              _this65.step3Image = element.data().Step3Image;
-              _this65.Step1TExt = element.data().Step1ImageText;
-              _this65.Step2Text = element.data().Step2ImageText;
-              _this65.step3Text = element.data().Step3ImageText;
+              _this67.imageUrl = element.data().BannerImageUrl;
+              _this67.secondImageUrl = element.data().SecondBannerImage;
+              _this67.SecondImageText = element.data().SecondBannerText;
+              _this67.Step1Image = element.data().Step1Image;
+              _this67.Step2Image = element.data().Step2Image;
+              _this67.step3Image = element.data().Step3Image;
+              _this67.Step1TExt = element.data().Step1ImageText;
+              _this67.Step2Text = element.data().Step2ImageText;
+              _this67.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this66 = this;
+          var _this68 = this;
 
           this.HomeService.getBlogs(1).then(function (res) {
             res.forEach(function (element) {
-              _this66.homePageBlogs.push(element.data());
+              _this68.homePageBlogs.push(element.data());
             });
           });
         }
@@ -6796,33 +6836,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this67 = this;
+          var _this69 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this67.isLoading = false;
+            _this69.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this68 = this;
+          var _this70 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this68.isLoading = false;
-            _this68.isLoggedIn = true;
+            _this70.isLoading = false;
+            _this70.isLoggedIn = true;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this69 = this;
+          var _this71 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this69.isLoading = false;
-            _this69.isLoggedIn = true;
+            _this71.isLoading = false;
+            _this71.isLoggedIn = true;
           });
         }
       }, {
@@ -6845,24 +6885,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this70 = this;
+          var _this72 = this;
 
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this70.listingBuyers.push(element.data());
+              _this72.listingBuyers.push(element.data());
             });
 
-            _this70.HomeService.getlistingseller(_this70.uid).then(function (res) {
+            _this72.HomeService.getlistingseller(_this72.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this70.listingSeller.push(elements.data());
+                _this72.listingSeller.push(elements.data());
               });
-              _this70.checkNumberNestimates = _this70.listingBuyers.length + _this70.listingSeller.length;
+              _this72.checkNumberNestimates = _this72.listingBuyers.length + _this72.listingSeller.length;
 
-              if (_this70.checkNumberNestimates > 0) {
-                _this70.appMatches = true;
-                _this70.isLoggedIn = true;
+              if (_this72.checkNumberNestimates > 0) {
+                _this72.appMatches = true;
+                _this72.isLoggedIn = true;
               } else {
-                _this70.isLoggedIn = false;
+                _this72.isLoggedIn = false;
               }
             });
           });
@@ -6990,34 +7030,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this71 = this;
+          var _this73 = this;
 
           this.route.params.subscribe(function (params) {
-            _this71.useCase = params["use"];
+            _this73.useCase = params["use"];
 
-            if (_this71.useCase == "buy") {
-              _this71.activeTab = 0;
-              _this71.buy = true;
-              _this71.sell = false;
-            } else if (_this71.useCase == "sell") {
-              _this71.activeTab = 1;
-              _this71.buy = false;
-              _this71.sell = true;
+            if (_this73.useCase == "buy") {
+              _this73.activeTab = 0;
+              _this73.buy = true;
+              _this73.sell = false;
+            } else if (_this73.useCase == "sell") {
+              _this73.activeTab = 1;
+              _this73.buy = false;
+              _this73.sell = true;
             }
 
-            console.log(_this71.useCase);
+            console.log(_this73.useCase);
           });
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this71.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this71.userData));
+              _this73.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this73.userData));
 
-              _this71.LoggedIn();
+              _this73.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this71.LoggedOut();
+              _this73.LoggedOut();
             }
           });
         }
@@ -7290,36 +7330,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerMatcheListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this72 = this;
+          var _this74 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getHomeMatchesPageImage().subscribe(function (data) {
-            _this72.homePageImage = data;
-            _this72.imageUrl = _this72.homePageImage[0].BuyerSellerTopImage.url;
+            _this74.homePageImage = data;
+            _this74.imageUrl = _this74.homePageImage[0].BuyerSellerTopImage.url;
           });
           this.HttpService.getTextalreadyexpressed().subscribe(function (expressed) {
-            _this72.alreadyExpressed = expressed[0].ExpressedMatches;
+            _this74.alreadyExpressed = expressed[0].ExpressedMatches;
           });
           this.buyerEntry = JSON.parse(localStorage.getItem('buyerUserDetails'));
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this72.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "").trim();
-            _this72.Property_Type = params.get("PropertyType").trim();
-            _this72.Looking_Town = params.get("LookingTown").trim();
-            _this72.Min_Amount = params.get("MinAmount").replace(/,/g, "").trim();
-            _this72.Max_Amount = params.get("MaxAmount").replace(/,/g, "").trim();
-            _this72.New_latitude = params.get("latitude").trim();
-            _this72.New_longitude = params.get("longitude").trim();
-            _this72.newUser = params.get("newUser").trim();
-            _this72.Property_For = params.get("PropertyFor").trim();
-            _this72.LookingStreetname = params.get("LookingStreetname").trim();
-            _this72.Conditions = params.get("Conditions").trim();
-            _this72.FinancialPosition = params.get("FinancialPosition").trim();
-            _this72.Validity = params.get("Validity").trim();
-            _this72.Position = params.get("Position").trim();
-            _this72.UserId = params.get("UserId").trim();
-            _this72.ChainStatus = params.get("ChainStatus").trim();
-            _this72.New_id = params.get("id");
+            _this74.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "").trim();
+            _this74.Property_Type = params.get("PropertyType").trim();
+            _this74.Looking_Town = params.get("LookingTown").trim();
+            _this74.Min_Amount = params.get("MinAmount").replace(/,/g, "").trim();
+            _this74.Max_Amount = params.get("MaxAmount").replace(/,/g, "").trim();
+            _this74.New_latitude = params.get("latitude").trim();
+            _this74.New_longitude = params.get("longitude").trim();
+            _this74.newUser = params.get("newUser").trim();
+            _this74.Property_For = params.get("PropertyFor").trim();
+            _this74.LookingStreetname = params.get("LookingStreetname").trim();
+            _this74.Conditions = params.get("Conditions").trim();
+            _this74.FinancialPosition = params.get("FinancialPosition").trim();
+            _this74.Validity = params.get("Validity").trim();
+            _this74.Position = params.get("Position").trim();
+            _this74.UserId = params.get("UserId").trim();
+            _this74.ChainStatus = params.get("ChainStatus").trim();
+            _this74.New_id = params.get("id");
           });
 
           if (this.newUser == "false") {
@@ -7368,76 +7408,76 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this72.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this72.maxAmount);
-              _this72.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this72.less);
-              _this72.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this72.more); //Remove Postcode Spaces
+              _this74.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this74.maxAmount);
+              _this74.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this74.less);
+              _this74.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this74.more); //Remove Postcode Spaces
 
-              _this72.removespace = item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5);
-              _this72.listing = _this72.Look_postcodes;
-              _this72.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this74.removespace = item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5);
+              _this74.listing = _this74.Look_postcodes;
+              _this74.amount = item.data().MaxAmount.replace(/,/g, "");
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().PropertyType == _this72.Look_propertytype && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.latitude, item.longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this74.Look_postcodes && item.data().PropertyFor == _this74.Look_PropertyFor && item.data().PropertyType == _this74.Look_propertytype && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this74.distanceInKm = _this74.getDistanceFromLatLonInKm(_this74.Look_latitude, _this74.Look_longitude, item.latitude, item.longitude);
 
-                _this72.matchedProperties.push({
+                _this74.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this72.distanceInKm * 1 / 1.609344
+                  distance: _this74.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().PropertyType == _this72.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this72.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this74.Look_postcodes && item.data().PropertyFor == _this74.Look_PropertyFor && item.data().PropertyType == _this74.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this74.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this74.distanceInKm = _this74.getDistanceFromLatLonInKm(_this74.Look_latitude, _this74.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this72.unmatchedProperties.push({
+                _this74.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this72.distanceInKm * 1 / 1.609344
+                  distance: _this74.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().PropertyType == _this72.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this72.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this72.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this74.Look_postcodes && item.data().PropertyFor == _this74.Look_PropertyFor && item.data().PropertyType == _this74.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this74.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this74.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this74.distanceInKm = _this74.getDistanceFromLatLonInKm(_this74.Look_latitude, _this74.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this72.unmatchedPriceLogic.push({
+                _this74.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this72.distanceInKm * 1 / 1.609344
+                  distance: _this74.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().PropertyType != _this72.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this72.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this72.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this74.Look_postcodes && item.data().PropertyFor == _this74.Look_PropertyFor && item.data().PropertyType != _this74.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this74.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this74.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this74.distanceInKm = _this74.getDistanceFromLatLonInKm(_this74.Look_latitude, _this74.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this72.unmatchedallProperty.push({
+                _this74.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this72.distanceInKm * 1 / 1.609344
+                  distance: _this74.distanceInKm * 1 / 1.609344
                 });
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this72.Look_postcodes && item.data().PropertyFor == _this72.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this72.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this72.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this72.distanceInKm = _this72.getDistanceFromLatLonInKm(_this72.Look_latitude, _this72.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this74.Look_postcodes && item.data().PropertyFor == _this74.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this74.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this74.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this74.distanceInKm = _this74.getDistanceFromLatLonInKm(_this74.Look_latitude, _this74.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this72.lookTown.push({
+                _this74.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this72.distanceInKm * 1 / 1.609344
+                  distance: _this74.distanceInKm * 1 / 1.609344
                 });
               }
 
-              _this72.sbuyerLookTown = _this72.lookTown;
-              _this72.buyerLookTown = _this72.sbuyerLookTown.detail;
+              _this74.sbuyerLookTown = _this74.lookTown;
+              _this74.buyerLookTown = _this74.sbuyerLookTown.detail;
             });
 
-            _this72.unmatchedProperties.sort(_this72.compare);
+            _this74.unmatchedProperties.sort(_this74.compare);
           });
           this.getPropertyIds();
           this.getExpressedListingIds();
@@ -7593,12 +7633,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this73 = this;
+          var _this75 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this73.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this73.distinctExpressedUid.push(item.data().propertyId);
+              if (_this75.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this75.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -7859,56 +7899,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerSelectedPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this74 = this;
+          var _this76 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this74.Lookingpostcode = params.get("Lookingpostcode");
-            _this74.Lookingstate = params.get("Lookingstate");
-            _this74.LookingTown = params.get("LookingTown");
-            _this74.norooms = params.get("norooms");
-            _this74.PropertyCondition = params.get("PropertyCondition");
-            _this74.MaxAmount = params.get("MaxAmount");
-            _this74.LookingAddress = params.get("LookingAddress");
-            _this74.ownership = params.get("ownership");
-            _this74.PropertyType = params.get("PropertyType").replace(/\s/g, "");
-            _this74.features = params.get("features");
-            _this74.UserId = params.get("UserId").replace(/\s/g, "");
-            _this74.MinAmount = params.get("MinAmount");
-            _this74.Maxbathrooms = params.get("Maxbathrooms");
-            _this74.Maxrooms = params.get("Maxrooms");
-            _this74.Maxreception = params.get("Maxreception");
-            _this74.propertyId = params.get("propertyId").trim();
-            _this74.expressed = params.get("expressed");
-            _this74.propertyFor = params.get("PropertyFor"); //Buyer Params
+            _this76.Lookingpostcode = params.get("Lookingpostcode");
+            _this76.Lookingstate = params.get("Lookingstate");
+            _this76.LookingTown = params.get("LookingTown");
+            _this76.norooms = params.get("norooms");
+            _this76.PropertyCondition = params.get("PropertyCondition");
+            _this76.MaxAmount = params.get("MaxAmount");
+            _this76.LookingAddress = params.get("LookingAddress");
+            _this76.ownership = params.get("ownership");
+            _this76.PropertyType = params.get("PropertyType").replace(/\s/g, "");
+            _this76.features = params.get("features");
+            _this76.UserId = params.get("UserId").replace(/\s/g, "");
+            _this76.MinAmount = params.get("MinAmount");
+            _this76.Maxbathrooms = params.get("Maxbathrooms");
+            _this76.Maxrooms = params.get("Maxrooms");
+            _this76.Maxreception = params.get("Maxreception");
+            _this76.propertyId = params.get("propertyId").trim();
+            _this76.expressed = params.get("expressed");
+            _this76.propertyFor = params.get("PropertyFor"); //Buyer Params
 
-            _this74.Look_postcodes = params.get("Look_postcodes");
-            _this74.Look_streetName = params.get("Look_Streetname");
-            _this74.Look_condition = params.get("Look_condition");
-            _this74.Look_ChaonStatus = params.get("Look_chainstatus");
-            _this74.Look_Position = params.get("Look_FinancialPosition");
-            _this74.Look_Minamount = params.get("Look_minamount");
-            _this74.Look_Maxamount = params.get("Look_maxamount");
-            _this74.Look_Validity = params.get("Look_Validity");
-            _this74.Look_PropertyType = params.get("Look_propertytype");
-            _this74.Look_Position = params.get("Look_Position");
-            _this74.Look_UserId = params.get("Look_UserId");
-            _this74.Look_PropertyFor = params.get("Look_PropertyFor");
-            _this74.Look_id = params.get("New_id");
+            _this76.Look_postcodes = params.get("Look_postcodes");
+            _this76.Look_streetName = params.get("Look_Streetname");
+            _this76.Look_condition = params.get("Look_condition");
+            _this76.Look_ChaonStatus = params.get("Look_chainstatus");
+            _this76.Look_Position = params.get("Look_FinancialPosition");
+            _this76.Look_Minamount = params.get("Look_minamount");
+            _this76.Look_Maxamount = params.get("Look_maxamount");
+            _this76.Look_Validity = params.get("Look_Validity");
+            _this76.Look_PropertyType = params.get("Look_propertytype");
+            _this76.Look_Position = params.get("Look_Position");
+            _this76.Look_UserId = params.get("Look_UserId");
+            _this76.Look_PropertyFor = params.get("Look_PropertyFor");
+            _this76.Look_id = params.get("New_id");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this74.notificationOverlay = data;
-            _this74.notificationContent = _this74.notificationOverlay[0].BuyerMatchesExpressInterestNotifcation;
+            _this76.notificationOverlay = data;
+            _this76.notificationContent = _this76.notificationOverlay[0].BuyerMatchesExpressInterestNotifcation;
           });
         } //Create Database BuyerMatches
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this75 = this;
+          var _this77 = this;
 
           this.matchesBuyer = {
             SellerDetail: this.sellerDetails,
@@ -7922,8 +7962,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isBuyerSelected = true;
           this["return"] = this.Selected_propertydetail_Service.matchesBuyerCreate(this.uid, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this75.isBuyerSelected = false;
-              _this75.overlay = false;
+              _this77.isBuyerSelected = false;
+              _this77.overlay = false;
             }
           });
           this.matchesSeller = {
@@ -7939,11 +7979,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isBuyerSelected = true;
           this["return"] = this.Selected_propertydetail_Service.matchesSellerCreate(this.UserId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this75.isBuyerSelected = false;
-              _this75.datastored = true;
-              _this75.express = false;
+              _this77.isBuyerSelected = false;
+              _this77.datastored = true;
+              _this77.express = false;
 
-              _this75.createSellerNotification();
+              _this77.createSellerNotification();
             }
           });
           this.isBuyerSelected = true;
@@ -7952,15 +7992,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this76 = this;
+          var _this78 = this;
 
           this["return"] = this.Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this76.isBuyerSelected = false;
-              _this76.datastored = true;
-              _this76.express = false;
+              _this78.isBuyerSelected = false;
+              _this78.datastored = true;
+              _this78.express = false;
 
-              _this76.backClicked();
+              _this78.backClicked();
             }
           });
         }
@@ -7995,30 +8035,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this77 = this;
+          var _this79 = this;
 
           this.Selected_propertydetail_Service.getSeller(this.UserId, this.propertyId).then(function (res) {
-            _this77.sellerDetails = res.data();
-            _this77.userName = res.data().username;
-            _this77.usertitle = res.data().usertitle;
-            _this77.PropertyFor = res.data().PropertyFor;
-            _this77.price = res.data().MaxAmount;
-            _this77.postcode = res.data().Lookingpostcode;
-            _this77.Streetname = res.data().LookingStreetname;
-            _this77.PropertyTypes = res.data().PropertyType;
-            _this77.Maxroom = res.data().Maxrooms;
-            _this77.ownerships = res.data().ownership;
-            _this77.Bathrooms = res.data().Maxbathrooms;
-            _this77.Reception = res.data().Maxreception;
+            _this79.sellerDetails = res.data();
+            _this79.userName = res.data().username;
+            _this79.usertitle = res.data().usertitle;
+            _this79.PropertyFor = res.data().PropertyFor;
+            _this79.price = res.data().MaxAmount;
+            _this79.postcode = res.data().Lookingpostcode;
+            _this79.Streetname = res.data().LookingStreetname;
+            _this79.PropertyTypes = res.data().PropertyType;
+            _this79.Maxroom = res.data().Maxrooms;
+            _this79.ownerships = res.data().ownership;
+            _this79.Bathrooms = res.data().Maxbathrooms;
+            _this79.Reception = res.data().Maxreception;
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this78 = this;
+          var _this80 = this;
 
           this.Selected_propertydetail_Service.getBuyerRequirement(this.uid, this.Look_id).then(function (res) {
-            _this78.buyerDetails = res.data();
+            _this80.buyerDetails = res.data();
           });
         }
       }]);
@@ -8529,7 +8569,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this79 = this;
+          var _this81 = this;
 
           this.getUser = JSON.parse(localStorage.getItem("user"));
 
@@ -8543,16 +8583,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this79.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this79.userData));
+              _this81.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this81.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this79.LoggedIn();
+              _this81.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this79.LoggedOut();
+              _this81.LoggedOut();
             }
           }); // this.postcodeService.getBlueNotificationContent().subscribe((data) => {
           //   this.notificationOverlay = data
@@ -8571,11 +8611,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this79.lookup(_this79.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this79.data = data;
+              _this81.lookup(_this81.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this81.data = data;
               });
 
-              return _this79.lookup(_this79.listingBuyer.Lookingpostcode);
+              return _this81.lookup(_this81.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -8585,39 +8625,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this79.lookup(_this79.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this79.data = data;
+              _this81.lookup(_this81.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this81.data = data;
               });
 
-              return _this79.lookup(_this79.listingBuyer.Currentpostcode);
+              return _this81.lookup(_this81.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
           }));
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this79.Cpostcode = params.get("Currentpostcode");
-            _this79.Ctown = params.get("CurrentTown");
-            _this79.Cstate = params.get("Currentstate");
-            _this79.Ccountry = params.get("Currentcountry");
-            _this79.Lpostcode = params.get("Lookingpostcode");
-            _this79.Lstreetname = params.get("LookingStreetname");
-            _this79.Ltown = params.get("LookingTown");
-            _this79.Lstate = params.get("Lookingstate");
-            _this79.Lcountry = params.get("Country");
-            _this79.Financial = params.get("FinancialPosition"); //this.Type = params.get("PropertyType");
+            _this81.Cpostcode = params.get("Currentpostcode");
+            _this81.Ctown = params.get("CurrentTown");
+            _this81.Cstate = params.get("Currentstate");
+            _this81.Ccountry = params.get("Currentcountry");
+            _this81.Lpostcode = params.get("Lookingpostcode");
+            _this81.Lstreetname = params.get("LookingStreetname");
+            _this81.Ltown = params.get("LookingTown");
+            _this81.Lstate = params.get("Lookingstate");
+            _this81.Lcountry = params.get("Country");
+            _this81.Financial = params.get("FinancialPosition"); //this.Type = params.get("PropertyType");
 
-            _this79.Minroom = params.get("Roommin");
-            _this79.Maxroom = params.get("Roomsmax");
-            _this79.AmountMin = params.get("MinAmount");
-            _this79.amountmax = params.get("MaxAmount");
-            _this79.offer = params.get("Validity");
-            _this79.bathroommin = params.get("Minbathroom");
-            _this79.bathroommax = params.get("Maxbathroom");
-            _this79.receptionmin = params.get("Minreception");
-            _this79.receptionmax = params.get("Maxreception");
-            _this79.condition = params.get("Conditions");
-            _this79.ownership = params.get("Ownership");
-            _this79.Caddress = params.get("CurrentAddress");
+            _this81.Minroom = params.get("Roommin");
+            _this81.Maxroom = params.get("Roomsmax");
+            _this81.AmountMin = params.get("MinAmount");
+            _this81.amountmax = params.get("MaxAmount");
+            _this81.offer = params.get("Validity");
+            _this81.bathroommin = params.get("Minbathroom");
+            _this81.bathroommax = params.get("Maxbathroom");
+            _this81.receptionmin = params.get("Minreception");
+            _this81.receptionmax = params.get("Maxreception");
+            _this81.condition = params.get("Conditions");
+            _this81.ownership = params.get("Ownership");
+            _this81.Caddress = params.get("CurrentAddress");
           });
 
           if (this.Cpostcode != ":Currentpostcode") {
@@ -8690,7 +8730,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this80 = this;
+          var _this82 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -8698,25 +8738,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this80.uid) {
-                _this80.user.Name = element.data().Name;
-                _this80.user.email = element.data().email;
+              if (element.data().uid == _this82.uid) {
+                _this82.user.Name = element.data().Name;
+                _this82.user.email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this80.user.DOB = element.data().DOB.toDate();
+                  _this82.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this80.user.Phone = element.data().Phone;
-                _this80.user.title = element.data().title;
+                _this82.user.Phone = element.data().Phone;
+                _this82.user.title = element.data().title;
               }
             });
           });
           this.postcodeService.getSignupUpTerms().subscribe(function (data) {
-            _this80.topLine = data[0].TopLine;
-            _this80.secondLine = data[0].SecondSignup;
+            _this82.topLine = data[0].TopLine;
+            _this82.secondLine = data[0].SecondSignup;
           });
           this.postcodeService.getValidityError().subscribe(function (validity) {
-            _this80.validity = validity[0].SigininValidityError;
+            _this82.validity = validity[0].SigininValidityError;
           });
         }
       }, {
@@ -9445,30 +9485,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this81 = this;
+          var _this83 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.postcodeService.getAllUsers(email).subscribe(function (data) {
-              _this81.emailData = data;
+              _this83.emailData = data;
 
-              if (_this81.emailData.length == 1) {
-                _this81.emailField = true;
-                _this81.notValidEmail = false;
+              if (_this83.emailData.length == 1) {
+                _this83.emailField = true;
+                _this83.notValidEmail = false;
 
-                if (_this81.emailData[0].AgentType != null) {
-                  _this81.emailField = false;
-                  _this81.notValidEmail = true;
+                if (_this83.emailData[0].AgentType != null) {
+                  _this83.emailField = false;
+                  _this83.notValidEmail = true;
 
-                  var dialogRef = _this81.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                  var dialogRef = _this83.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as User"
                     }
                   });
                 }
               } else {
-                _this81.notValidEmail = true;
+                _this83.notValidEmail = true;
               }
             });
           } else {
@@ -9490,28 +9530,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "submitBuyer",
         value: function submitBuyer() {
-          var _this82 = this;
+          var _this84 = this;
 
           this.isLoading = true; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this82.postcodeCoordinates = data;
-            _this82.listingBuyer.longitude = _this82.postcodeCoordinates.result.longitude, _this82.listingBuyer.latitude = _this82.postcodeCoordinates.result.latitude, _this82.listingBuyer.UserId = _this82.userData.uid;
-            _this82.isLoading = true;
-            _this82.listingBuyer.username = _this82.user.Name;
-            _this82.listingBuyer.usertitle = _this82.user.title;
-            _this82.listingBuyer.longitude;
-            _this82.listingBuyer.latitude;
-            _this82["return"] = _this82.fillFormsService.createCustomer(_this82.userData.uid, _this82.listingBuyer).then(function (element) {
+            _this84.postcodeCoordinates = data;
+            _this84.listingBuyer.longitude = _this84.postcodeCoordinates.result.longitude, _this84.listingBuyer.latitude = _this84.postcodeCoordinates.result.latitude, _this84.listingBuyer.UserId = _this84.userData.uid;
+            _this84.isLoading = true;
+            _this84.listingBuyer.username = _this84.user.Name;
+            _this84.listingBuyer.usertitle = _this84.user.title;
+            _this84.listingBuyer.longitude;
+            _this84.listingBuyer.latitude;
+            _this84["return"] = _this84.fillFormsService.createCustomer(_this84.userData.uid, _this84.listingBuyer).then(function (element) {
               if (element == true) {
-                localStorage.setItem("buyerUserDetails", JSON.stringify(_this82.listingBuyer));
-                _this82.isLoading = false;
-                _this82.register = false;
+                localStorage.setItem("buyerUserDetails", JSON.stringify(_this84.listingBuyer));
+                _this84.isLoading = false;
+                _this84.register = false;
 
-                var dialogRef = _this82.dialog.open(_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
+                var dialogRef = _this84.dialog.open(_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_17__["AlertDialogBuyerDataSubmissionComponent"], {
                   data: {
                     message: "HelloWorld",
-                    id: _this82.uid,
+                    id: _this84.uid,
                     buttonText: {
                       cancel: "Done"
                     }
@@ -9524,13 +9564,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this83 = this;
+          var _this85 = this;
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.trim()).subscribe(function (data) {
-            _this83.register = true;
+            _this85.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this83.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var dialogRef = _this85.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid postcode"
                 }
@@ -9547,26 +9587,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this84 = this;
+          var _this86 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this84.KnowUser.push(element.data());
+              _this86.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this84.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
+                var dialogRef = _this86.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_21__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this84.isLoading = false;
+                _this86.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this84.authService.SignIn(email, pass).then(function (data) {
-                  _this84.isLoading = false;
+                _this86.authService.SignIn(email, pass).then(function (data) {
+                  _this86.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -9576,11 +9616,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this85 = this;
+          var _this87 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this85.isLoading = false;
+            _this87.isLoading = false;
           });
         } //SignIn Google
 
@@ -10125,40 +10165,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this86 = this;
+          var _this88 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sellerDetails = JSON.parse(localStorage.getItem('sellerUserDetails'));
           this.HttpService.getHomeMatchesPageImage().subscribe(function (data) {
-            _this86.homePageImage = data;
-            _this86.imageUrl = _this86.homePageImage[0].BuyerSellerTopImage.url;
+            _this88.homePageImage = data;
+            _this88.imageUrl = _this88.homePageImage[0].BuyerSellerTopImage.url;
           });
           this.HttpService.getTextalreadyexpressed().subscribe(function (expressed) {
-            _this86.alreadyExpressed = expressed[0].ExpressedMatches;
+            _this88.alreadyExpressed = expressed[0].ExpressedMatches;
           });
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this86.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
-            _this86.Property_Type = params.get("PropertyType");
-            _this86.Looking_Town = params.get("LookingTown");
-            _this86.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
-            _this86.New_latitude = params.get("latitude");
-            _this86.New_longitude = params.get("longitude");
-            _this86.newUser = params.get("newUser");
-            _this86.Property_For = params.get("PropertyFor"); //Seller Params
+            _this88.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
+            _this88.Property_Type = params.get("PropertyType");
+            _this88.Looking_Town = params.get("LookingTown");
+            _this88.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
+            _this88.New_latitude = params.get("latitude");
+            _this88.New_longitude = params.get("longitude");
+            _this88.newUser = params.get("newUser");
+            _this88.Property_For = params.get("PropertyFor"); //Seller Params
 
-            _this86.New_state = params.get("Lookingstate");
-            _this86.New_rooms = params.get("Maxrooms");
-            _this86.New_Propertycondition = params.get("PropertyCondition");
-            _this86.New_Address = params.get("LookingAddress");
-            _this86.New_ownership = params.get("ownership");
-            _this86.New_features = params.get("features");
-            _this86.New_userId = params.get("UserId");
-            _this86.New_Maxbathrooms = params.get("Maxbathrooms");
-            _this86.New_Maxreception = params.get("Maxreception");
-            _this86.New_ownership = params.get("ownership");
-            _this86.New_Maxrooms = params.get("Maxrooms");
-            _this86.Look_id = params.get("id");
+            _this88.New_state = params.get("Lookingstate");
+            _this88.New_rooms = params.get("Maxrooms");
+            _this88.New_Propertycondition = params.get("PropertyCondition");
+            _this88.New_Address = params.get("LookingAddress");
+            _this88.New_ownership = params.get("ownership");
+            _this88.New_features = params.get("features");
+            _this88.New_userId = params.get("UserId");
+            _this88.New_Maxbathrooms = params.get("Maxbathrooms");
+            _this88.New_Maxreception = params.get("Maxreception");
+            _this88.New_ownership = params.get("ownership");
+            _this88.New_Maxrooms = params.get("Maxrooms");
+            _this88.Look_id = params.get("id");
           });
 
           if (this.newUser == "false") {
@@ -10208,73 +10248,73 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
               //Min-MAx Amount Removed Comas and Formula
-              _this86.maxAmount = _this86.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this86.maxAmount);
-              _this86.Look_minamount = element.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this86.Look_minamount);
-              _this86.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this86.Look_maxamount);
-              _this86.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this86.less);
-              _this86.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this86.more); //Remove Postcode Spaces
+              _this88.maxAmount = _this88.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this88.maxAmount);
+              _this88.Look_minamount = element.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this88.Look_minamount);
+              _this88.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this88.Look_maxamount);
+              _this88.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this88.less);
+              _this88.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this88.more); //Remove Postcode Spaces
 
-              _this86.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
-              _this86.listing = _this86.Look_postcode; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this88.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
+              _this88.listing = _this88.Look_postcode; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this86.Look_postcode && element.data().PropertyFor == _this86.Look_PropertyFor && element.data().PropertyType == _this86.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this86.sellermatchedProperties.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this88.Look_postcode && element.data().PropertyFor == _this88.Look_PropertyFor && element.data().PropertyType == _this88.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this88.sellermatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this86.Look_postcode && _this86.Look_PropertyFor == element.PropertyFor && element.data().PropertyType == _this86.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this86.removespace.substring(0, 5) == _this86.listing.substring(0, 5) && element.latitude && element.longitude) {
-                _this86.distanceInKm = _this86.getDistanceFromLatLonInKm(_this86.Look_latitude, _this86.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this88.Look_postcode && _this88.Look_PropertyFor == element.PropertyFor && element.data().PropertyType == _this88.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this88.removespace.substring(0, 5) == _this88.listing.substring(0, 5) && element.latitude && element.longitude) {
+                _this88.distanceInKm = _this88.getDistanceFromLatLonInKm(_this88.Look_latitude, _this88.Look_longitude, element.latitude, element.longitude);
 
-                _this86.sellerunmatchedProperties.push({
+                _this88.sellerunmatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this86.distanceInKm * 0.6214
+                  distance: _this88.distanceInKm * 0.6214
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this86.Look_postcode && element.data().PropertyType == _this86.Look_PropertyType && element.data().PropertyFor == _this86.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this86.removespace.substring(0, 5) != _this86.listing.substring(0, 5) && _this86.removespace.substring(0, 3) == _this86.listing.substring(0, 3)) {
-                _this86.sellerunmatchedPropertiesFirst.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this88.Look_postcode && element.data().PropertyType == _this88.Look_PropertyType && element.data().PropertyFor == _this88.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this88.removespace.substring(0, 5) != _this88.listing.substring(0, 5) && _this88.removespace.substring(0, 3) == _this88.listing.substring(0, 3)) {
+                _this88.sellerunmatchedPropertiesFirst.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this86.Look_postcode && element.data().PropertyType != _this86.Look_PropertyType && element.data().PropertyFor == _this86.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this86.removespace.substring(0, 5) != _this86.listing.substring(0, 5) && _this86.removespace.substring(0, 3) == _this86.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this86.distanceInKm = _this86.getDistanceFromLatLonInKm(_this86.Look_latitude, _this86.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this88.Look_postcode && element.data().PropertyType != _this88.Look_PropertyType && element.data().PropertyFor == _this88.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this88.removespace.substring(0, 5) != _this88.listing.substring(0, 5) && _this88.removespace.substring(0, 3) == _this88.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this88.distanceInKm = _this88.getDistanceFromLatLonInKm(_this88.Look_latitude, _this88.Look_longitude, element.latitude, element.longitude);
 
-                _this86.sellerunmatchedPriceLogic.push({
+                _this88.sellerunmatchedPriceLogic.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this86.distanceInKm * 0.6214
+                  distance: _this88.distanceInKm * 0.6214
                 });
               } //All other properties - Nationwide
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this86.Look_postcode && element.data().PropertyFor == _this86.Look_PropertyFor && _this86.removespace.substring(0, 5) != _this86.listing.substring(0, 5) && _this86.removespace.substring(0, 3) != _this86.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this86.distanceInKm = _this86.getDistanceFromLatLonInKm(_this86.Look_latitude, _this86.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this88.Look_postcode && element.data().PropertyFor == _this88.Look_PropertyFor && _this88.removespace.substring(0, 5) != _this88.listing.substring(0, 5) && _this88.removespace.substring(0, 3) != _this88.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this88.distanceInKm = _this88.getDistanceFromLatLonInKm(_this88.Look_latitude, _this88.Look_longitude, element.latitude, element.longitude);
 
-                _this86.sellerlookTown.push({
+                _this88.sellerlookTown.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this86.distanceInKm * 0.6214
+                  distance: _this88.distanceInKm * 0.6214
                 });
               }
             });
 
-            _this86.sellerunmatchedProperties.sort(_this86.compare);
+            _this88.sellerunmatchedProperties.sort(_this88.compare);
 
-            _this86.noOfMatches = _this86.sellermatchedProperties.length;
-            _this86.noOfUnmatched = _this86.sellerunmatchedProperties.length;
+            _this88.noOfMatches = _this88.sellermatchedProperties.length;
+            _this88.noOfUnmatched = _this88.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -10453,12 +10493,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this87 = this;
+          var _this89 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this87.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this87.distinctExpressedUid.push(item.data().propertyId);
+              if (_this89.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this89.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -10719,79 +10759,79 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this88 = this;
+          var _this90 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this88.PriceRange = params.get("MaxAmount");
-            _this88.MinAmount = params.get("MinAmount");
-            _this88.Lookingpostcode = params.get("Lookingpostcode");
-            _this88.LookingStreetname = params.get("LookingStreetname");
-            _this88.Position = params.get("Position");
-            _this88.PropertyType = params.get("PropertyType");
-            _this88.Roomsmax = params.get("Roomsmax");
-            _this88.ownership = params.get("Ownership");
-            _this88.Conditions = params.get("Conditions");
-            _this88.Maxbathroom = params.get("Maxbathroom");
-            _this88.Maxreception = params.get("Maxreception");
-            _this88.features = params.get("features");
-            _this88.UserId = params.get("UserId").replace(/\s/g, "");
-            _this88.FinancialPosition = params.get("FinancialPosition");
-            _this88.ChainStatus = params.get("ChainStatus"); // this.FinancialPosition = params.get("FinancialPosition");
+            _this90.PriceRange = params.get("MaxAmount");
+            _this90.MinAmount = params.get("MinAmount");
+            _this90.Lookingpostcode = params.get("Lookingpostcode");
+            _this90.LookingStreetname = params.get("LookingStreetname");
+            _this90.Position = params.get("Position");
+            _this90.PropertyType = params.get("PropertyType");
+            _this90.Roomsmax = params.get("Roomsmax");
+            _this90.ownership = params.get("Ownership");
+            _this90.Conditions = params.get("Conditions");
+            _this90.Maxbathroom = params.get("Maxbathroom");
+            _this90.Maxreception = params.get("Maxreception");
+            _this90.features = params.get("features");
+            _this90.UserId = params.get("UserId").replace(/\s/g, "");
+            _this90.FinancialPosition = params.get("FinancialPosition");
+            _this90.ChainStatus = params.get("ChainStatus"); // this.FinancialPosition = params.get("FinancialPosition");
             // this.PriceRange = params.get("PriceRange");
             // this.Validity = params.get("Validity");
             // this.Type = params.get("Type");
             // this.Position = params.get("Position");
 
-            _this88.propertyId = params.get("propertyId");
-            _this88.expressed = params.get("expressed");
-            _this88.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
+            _this90.propertyId = params.get("propertyId");
+            _this90.expressed = params.get("expressed");
+            _this90.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
 
-            _this88.Look_State = params.get("Look_state");
-            _this88.Look_rooms = params.get("Look_rooms");
-            _this88.Look_Propertycondition = params.get("Look_Propertycondition");
-            _this88.Look_Address = params.get("Look_Address");
-            _this88.Look_ownership = params.get("Look_ownership");
-            _this88.Look_features = params.get("Look_features");
-            _this88.Look_userId = params.get("Look_userId");
-            _this88.Look_postcode = params.get("Look_postcode");
-            _this88.Look_PropertyType = params.get("Look_PropertyType");
-            _this88.Look_maxAmount = params.get("Look_maxAmount");
-            _this88.Look_Town = params.get("Look_Town");
-            _this88.Look_Address = params.get("Look_Address");
-            _this88.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
-            _this88.Look_Maxreceptions = params.get("Look_Maxreceptions");
-            _this88.Look_ownership = params.get("Look_ownership");
-            _this88.Look_Maxrooms = params.get("Look_Maxrooms");
-            _this88.Look_Propertyfor = params.get("Look_PropertyFor");
-            _this88.look_id = params.get("Look_id");
+            _this90.Look_State = params.get("Look_state");
+            _this90.Look_rooms = params.get("Look_rooms");
+            _this90.Look_Propertycondition = params.get("Look_Propertycondition");
+            _this90.Look_Address = params.get("Look_Address");
+            _this90.Look_ownership = params.get("Look_ownership");
+            _this90.Look_features = params.get("Look_features");
+            _this90.Look_userId = params.get("Look_userId");
+            _this90.Look_postcode = params.get("Look_postcode");
+            _this90.Look_PropertyType = params.get("Look_PropertyType");
+            _this90.Look_maxAmount = params.get("Look_maxAmount");
+            _this90.Look_Town = params.get("Look_Town");
+            _this90.Look_Address = params.get("Look_Address");
+            _this90.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
+            _this90.Look_Maxreceptions = params.get("Look_Maxreceptions");
+            _this90.Look_ownership = params.get("Look_ownership");
+            _this90.Look_Maxrooms = params.get("Look_Maxrooms");
+            _this90.Look_Propertyfor = params.get("Look_PropertyFor");
+            _this90.look_id = params.get("Look_id");
           });
           this.getBuyerDetails();
           this.getSellerDetails();
           this.HttpService.getBuyerAllData(this.propertyId).subscribe(function (data) {
             data.forEach(function (element) {
-              _this88.buyingPosition = element.Position;
-              _this88.buyerFinancialPosition = element.FinancialPosition;
-              _this88.BuyerPropertyType = element.PropertyType;
-              _this88.BuyerLookingpostcode = element.Lookingpostcode;
-              _this88.BuyerRoommin = element.Roommin;
-              _this88.BuyerRoomsmax = element.Roomsmax;
-              _this88.username = element.username;
-              _this88.usertitle = element.usertitle;
-              _this88.buyerPropertyFor = element.PropertyFor;
+              _this90.buyingPosition = element.Position;
+              _this90.buyerFinancialPosition = element.FinancialPosition;
+              _this90.BuyerPropertyType = element.PropertyType;
+              _this90.BuyerLookingpostcode = element.Lookingpostcode;
+              _this90.BuyerRoommin = element.Roommin;
+              _this90.BuyerRoomsmax = element.Roomsmax;
+              _this90.username = element.username;
+              _this90.usertitle = element.usertitle;
+              _this90.buyerPropertyFor = element.PropertyFor;
             });
           });
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this88.notificationOverlay = data;
-            _this88.notificationContent = _this88.notificationOverlay[0].SellerMatchesExpressInterestNotifcation;
+            _this90.notificationOverlay = data;
+            _this90.notificationContent = _this90.notificationOverlay[0].SellerMatchesExpressInterestNotifcation;
           });
         } //Create Database match Seller
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this89 = this;
+          var _this91 = this;
 
           this.isSellerSelected = true;
           this.matchesSeller = {
@@ -10806,8 +10846,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this89.isSellerSelected = false;
-              _this89.overlay = false;
+              _this91.isSellerSelected = false;
+              _this91.overlay = false;
             }
           });
           this.matchesBuyer = {
@@ -10822,13 +10862,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this89.isSellerSelected = false;
-              _this89.datastored = true;
-              _this89.express = false;
+              _this91.isSellerSelected = false;
+              _this91.datastored = true;
+              _this91.express = false;
 
-              _this89.createSellerNotification();
+              _this91.createSellerNotification();
 
-              _this89.addToExpressCollection();
+              _this91.addToExpressCollection();
             }
           });
         }
@@ -10850,15 +10890,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this90 = this;
+          var _this92 = this;
 
           this["return"] = this.seller_Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this90.isSellerSelected = false;
-              _this90.datastored = true;
-              _this90.express = false;
+              _this92.isSellerSelected = false;
+              _this92.datastored = true;
+              _this92.express = false;
 
-              _this90.backClicked();
+              _this92.backClicked();
             }
           });
         }
@@ -10878,28 +10918,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this91 = this;
+          var _this93 = this;
 
           this.seller_Selected_propertydetail_Service.getBuyerRequirement(this.UserId, this.propertyId).then(function (res) {
-            _this91.buyerDetails = res.data();
-            _this91.buyingPosition = res.data().Position;
-            _this91.buyerFinancialPosition = res.data().FinancialPosition;
-            _this91.BuyerPropertyType = res.data().PropertyType;
-            _this91.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this91.BuyerRoommin = res.data().Roommin;
-            _this91.BuyerRoomsmax = res.data().Roomsmax;
-            _this91.username = res.data().username;
-            _this91.usertitle = res.data().usertitle;
-            _this91.buyerPropertyFor = res.data().PropertyFor;
+            _this93.buyerDetails = res.data();
+            _this93.buyingPosition = res.data().Position;
+            _this93.buyerFinancialPosition = res.data().FinancialPosition;
+            _this93.BuyerPropertyType = res.data().PropertyType;
+            _this93.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this93.BuyerRoommin = res.data().Roommin;
+            _this93.BuyerRoomsmax = res.data().Roomsmax;
+            _this93.username = res.data().username;
+            _this93.usertitle = res.data().usertitle;
+            _this93.buyerPropertyFor = res.data().PropertyFor;
           });
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this92 = this;
+          var _this94 = this;
 
           this.seller_Selected_propertydetail_Service.getSeller(this.uid, this.look_id).then(function (res) {
-            _this92.sellerDetails = res.data();
+            _this94.sellerDetails = res.data();
           });
         }
       }]);
@@ -11405,20 +11445,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this93 = this;
+          var _this95 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this93.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this93.userData));
+              _this95.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this95.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this93.LoggedIn();
+              _this95.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this93.LoggedOut();
+              _this95.LoggedOut();
             }
           }); // this.sellerService.getBlueNotificationContent().subscribe((data) => {
           //   this.notificationOverlay = data
@@ -11434,11 +11474,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this93.lookup(_this93.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this93.data = data;
+              _this95.lookup(_this95.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this95.data = data;
               });
 
-              return _this93.lookup(_this93.listingSeller.Lookingpostcode);
+              return _this95.lookup(_this95.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -11448,30 +11488,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this93.lookup(_this93.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this93.data = data;
+              _this95.lookup(_this95.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this95.data = data;
               });
 
-              return _this93.lookup(_this93.listingSeller.Currentpostcode);
+              return _this95.lookup(_this95.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this93.Lookpostcode = params.get("Lookingpostcode");
-            _this93.Lookaddress = params.get("LookingAddress");
-            _this93.LookTown = params.get("LookingTown");
-            _this93.Lookstate = params.get("Lookingstate");
-            _this93.Country = params.get("Country");
-            _this93.Property = params.get("PropertyType");
-            _this93.Rooms = params.get("Maxrooms");
-            _this93.Amount = params.get("MaxAmount");
-            _this93.Ownership = params.get("ownership");
-            _this93.Bathrooms = params.get("Maxbathrooms");
-            _this93.Reception = params.get("Maxreception");
-            _this93.Condition = params.get("PropertyCondition");
-            _this93.Features = params.get("features");
-            _this93.country = params.get("Country");
+            _this95.Lookpostcode = params.get("Lookingpostcode");
+            _this95.Lookaddress = params.get("LookingAddress");
+            _this95.LookTown = params.get("LookingTown");
+            _this95.Lookstate = params.get("Lookingstate");
+            _this95.Country = params.get("Country");
+            _this95.Property = params.get("PropertyType");
+            _this95.Rooms = params.get("Maxrooms");
+            _this95.Amount = params.get("MaxAmount");
+            _this95.Ownership = params.get("ownership");
+            _this95.Bathrooms = params.get("Maxbathrooms");
+            _this95.Reception = params.get("Maxreception");
+            _this95.Condition = params.get("PropertyCondition");
+            _this95.Features = params.get("features");
+            _this95.country = params.get("Country");
           });
 
           if (this.Lookpostcode != ":Lookingpostcode") {
@@ -11524,26 +11564,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this94 = this;
+          var _this96 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this94.uid) {
-                _this94.user.Name = element.data().Name;
-                _this94.user.Email = element.data().email;
+              if (element.data().uid == _this96.uid) {
+                _this96.user.Name = element.data().Name;
+                _this96.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this94.user.DOB = element.data().DOB.toDate();
+                  _this96.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this94.user.Phone = element.data().Phone;
-                _this94.user.title = element.data().title;
-                _this94.user.Currentpostcode = element.data().Currentpostcode;
-                _this94.user.CurrentAddress = element.data().Currentaddress;
-                _this94.user.CurrentTown = element.data().CurrentTowncity;
-                _this94.user.Currentstate = element.data().Currentstate;
+                _this96.user.Phone = element.data().Phone;
+                _this96.user.title = element.data().title;
+                _this96.user.Currentpostcode = element.data().Currentpostcode;
+                _this96.user.CurrentAddress = element.data().Currentaddress;
+                _this96.user.CurrentTown = element.data().CurrentTowncity;
+                _this96.user.Currentstate = element.data().Currentstate;
               }
             });
           });
@@ -11923,11 +11963,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this95 = this;
+          var _this97 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this95.isLoading = false;
+            _this97.isLoading = false;
             console.log(data);
           });
         } //Login Form
@@ -11935,11 +11975,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this96 = this;
+          var _this98 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this96.isLoading = false;
+            _this98.isLoading = false;
           });
         } //SignIn Google
         //Signup Google
@@ -11947,7 +11987,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this97 = this;
+          var _this99 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
@@ -11955,7 +11995,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             // this.return = this.fillFormsService.createUserTime(this.user)
             //   .then(data => {
             //   });
-            _this97.isLoading = false;
+            _this99.isLoading = false;
           });
         }
       }, {
@@ -12032,14 +12072,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "loginNew",
         value: function loginNew(username, password) {
-          var _this98 = this;
+          var _this100 = this;
 
           // stop here if form is invalid
           // if (this.loginForm.invalid) {
           //     return;
           // }
           this.StrapiAuthService.login(username, password).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["first"])()).subscribe(function (data) {
-            _this98.overlay = true;
+            _this100.overlay = true;
           }, function (error) {
             if (error && error.error && error.error.message && error.error.message.length > 0) {
               alert(error.error.message[0].messages[0].message);
@@ -12057,31 +12097,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this99 = this;
+          var _this101 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.sellerService.getAllUsers(email).subscribe(function (data) {
               console.log(data);
-              _this99.emailData = data;
+              _this101.emailData = data;
 
-              if (_this99.emailData.length == 1) {
-                _this99.emailField = true;
-                _this99.notValidEmail = false;
+              if (_this101.emailData.length == 1) {
+                _this101.emailField = true;
+                _this101.notValidEmail = false;
 
-                if (_this99.emailData[0].AgentType != null) {
-                  _this99.emailField = false;
-                  _this99.notValidEmail = true;
+                if (_this101.emailData[0].AgentType != null) {
+                  _this101.emailField = false;
+                  _this101.notValidEmail = true;
 
-                  var dialogRef = _this99.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
+                  var dialogRef = _this101.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as User"
                     }
                   });
                 }
               } else {
-                _this99.notValidEmail = true;
+                _this101.notValidEmail = true;
               }
             });
           } else {
@@ -12102,13 +12142,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "UploadImage",
         value: function UploadImage() {
-          var _this100 = this;
+          var _this102 = this;
 
           var formElement = this.forms.nativeElement;
           formElement.addEventListener('submit', function (e) {
             e.preventDefault();
             var request = new XMLHttpRequest();
-            _this100.requests = request;
+            _this102.requests = request;
             request.open('post', 'http://134.209.93.8/upload');
             request.send(new FormData(formElement));
           });
@@ -12118,7 +12158,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "setTimer",
         value: function setTimer() {
-          var _this101 = this;
+          var _this103 = this;
 
           // set showloader to true to show loading div on view
           this.isLoading = true;
@@ -12126,12 +12166,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.subscription = this.timer.subscribe(function () {
             // set showloader to false to hide loading div from view after 5 seconds
-            _this101.isLoading = false;
-            _this101.responseStrapi = JSON.parse(_this101.requests.response);
-            _this101.ImageUrl = _this101.responseStrapi;
-            _this101.imageUploaded = true;
-            _this101.pictureUrls = _this101.requests.response;
-            localStorage.setItem('uploadedImage', JSON.stringify(_this101.requests.response));
+            _this103.isLoading = false;
+            _this103.responseStrapi = JSON.parse(_this103.requests.response);
+            _this103.ImageUrl = _this103.responseStrapi;
+            _this103.imageUploaded = true;
+            _this103.pictureUrls = _this103.requests.response;
+            localStorage.setItem('uploadedImage', JSON.stringify(_this103.requests.response));
           });
         }
       }, {
@@ -12143,42 +12183,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this102 = this;
+          var _this104 = this;
 
           this.sellerPicture = JSON.parse(localStorage.getItem('uploadedImage'));
           this.isLoading = true;
           this.register = false;
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this102.postcodeCoordinates = data;
+            _this104.postcodeCoordinates = data;
 
-            if (_this102.postcodeCoordinates.result.longitude == null && _this102.postcodeCoordinates.result.latitude == null) {
-              var dialogRef = _this102.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+            if (_this104.postcodeCoordinates.result.longitude == null && _this104.postcodeCoordinates.result.latitude == null) {
+              var dialogRef = _this104.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter valid Postcode"
                 }
               });
 
-              _this102.isLoading = false;
-              _this102.register = false;
+              _this104.isLoading = false;
+              _this104.register = false;
             } else {
-              _this102.listingSeller.longitude = _this102.postcodeCoordinates.result.longitude, _this102.listingSeller.latitude = _this102.postcodeCoordinates.result.latitude, _this102.listingSeller.username = _this102.user.Name;
-              _this102.listingSeller.usertitle = _this102.user.title;
-              _this102.listingSeller.UserId = _this102.uid;
-              _this102.listingSeller.Currentpostcode = _this102.user.Currentpostcode;
-              _this102.listingSeller.CurrentAddress = _this102.user.CurrentAddress;
-              _this102.listingSeller.CurrentTown = _this102.user.CurrentTown;
-              _this102.listingSeller.Currentstate = _this102.user.Currentstate;
-              _this102["return"] = _this102.SellerformService.createCustomer(_this102.userData.uid, _this102.listingSeller).then(function (data) {
+              _this104.listingSeller.longitude = _this104.postcodeCoordinates.result.longitude, _this104.listingSeller.latitude = _this104.postcodeCoordinates.result.latitude, _this104.listingSeller.username = _this104.user.Name;
+              _this104.listingSeller.usertitle = _this104.user.title;
+              _this104.listingSeller.UserId = _this104.uid;
+              _this104.listingSeller.Currentpostcode = _this104.user.Currentpostcode;
+              _this104.listingSeller.CurrentAddress = _this104.user.CurrentAddress;
+              _this104.listingSeller.CurrentTown = _this104.user.CurrentTown;
+              _this104.listingSeller.Currentstate = _this104.user.Currentstate;
+              _this104["return"] = _this104.SellerformService.createCustomer(_this104.userData.uid, _this104.listingSeller).then(function (data) {
                 console.log(data);
 
                 if (data == true) {
-                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this102.listingSeller));
-                  _this102.isLoading = false;
+                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this104.listingSeller));
+                  _this104.isLoading = false;
 
-                  var _dialogRef59 = _this102.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__["AlertDialogComponent"], {
+                  var _dialogRef59 = _this104.dialog.open(_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_20__["AlertDialogComponent"], {
                     data: {
                       message: "HelloWorld",
-                      id: _this102.uid,
+                      id: _this104.uid,
                       buttonText: {
                         cancel: "Done"
                       }
@@ -12192,13 +12232,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this103 = this;
+          var _this105 = this;
 
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this103.register = true;
+            _this105.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this103.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var dialogRef = _this105.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Valid Postcode"
                 }
@@ -12224,26 +12264,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this104 = this;
+          var _this106 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this104.KnowUser.push(element.data());
+              _this106.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this104.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
+                var dialogRef = _this106.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_19__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this104.isLoading = false;
+                _this106.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this104.authService.SignIn(email, pass).then(function (data) {
-                  _this104.isLoading = false;
+                _this106.authService.SignIn(email, pass).then(function (data) {
+                  _this106.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -12261,12 +12301,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this105 = this;
+          var _this107 = this;
 
           this.isLoading = true;
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this105.isLoading = false;
-            _this105.overlay = true;
+            _this107.isLoading = false;
+            _this107.overlay = true;
           });
         }
       }]);
@@ -12682,26 +12722,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this106 = this;
+          var _this108 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this106.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this106.userData));
+              _this108.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this108.userData));
 
-              _this106.LoggedIn();
+              _this108.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this106.LoggedOut();
+              _this108.LoggedOut();
             }
           });
           this.HttpService.getAgentsingupLogin().subscribe(function (data) {
             console.log(data);
-            _this106.image = data[0].BodyImage.url;
-            _this106.bodyText = data[0].BodyText;
-            _this106.finalImage = 'http://134.209.93.8' + _this106.image;
-            console.log(_this106.finalImage);
+            _this108.image = data[0].BodyImage.url;
+            _this108.bodyText = data[0].BodyText;
+            _this108.finalImage = 'http://134.209.93.8' + _this108.image;
+            console.log(_this108.finalImage);
           });
         }
       }, {
@@ -13118,12 +13158,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentsignupformComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this107 = this;
+          var _this109 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this107.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this107.userData));
+              _this109.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this109.userData));
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
@@ -13308,7 +13348,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee29() {
-            var _this108 = this;
+            var _this110 = this;
 
             var file, filePath;
             return regeneratorRuntime.wrap(function _callee29$(_context29) {
@@ -13333,7 +13373,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 7:
                     _context29.sent.ref.getDownloadURL().then(function (url) {
-                      _this108.downloadableURL = url;
+                      _this110.downloadableURL = url;
                     });
 
                   case 8:
@@ -13356,24 +13396,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this109 = this;
+          var _this111 = this;
 
           this.isLoading = true;
           this.afAuth.auth.createUserWithEmailAndPassword(email, pass).then(function (res) {
-            _this109.timer = Object(rxjs__WEBPACK_IMPORTED_MODULE_10__["timer"])(5000); // 5000 millisecond means 5 seconds
+            _this111.timer = Object(rxjs__WEBPACK_IMPORTED_MODULE_10__["timer"])(5000); // 5000 millisecond means 5 seconds
 
-            _this109.subscription = _this109.timer.subscribe(function () {
+            _this111.subscription = _this111.timer.subscribe(function () {
               if (res != null) {
-                _this109.SetUserDatas(res.user.uid, displayName, User, email); // set showloader to false to hide loading div from view after 5 seconds
+                _this111.SetUserDatas(res.user.uid, displayName, User, email); // set showloader to false to hide loading div from view after 5 seconds
 
 
-                _this109.stateService.agentSignup = _this109.agentSignup;
-                _this109.agentSignup.image = _this109.downloadableURL;
-                _this109.agentSignup.uid = res.user.uid;
-                _this109.agentSignup.Status = false;
-                _this109["return"] = _this109.AgentSignupService.createAgentCustomer(res.user.uid, _this109.agentSignup).then(function (data) {
+                _this111.stateService.agentSignup = _this111.agentSignup;
+                _this111.agentSignup.image = _this111.downloadableURL;
+                _this111.agentSignup.uid = res.user.uid;
+                _this111.agentSignup.Status = false;
+                _this111["return"] = _this111.AgentSignupService.createAgentCustomer(res.user.uid, _this111.agentSignup).then(function (data) {
                   if (data == true) {
-                    var dialogRef = _this109.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
+                    var dialogRef = _this111.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
                       data: {
                         message: "HelloWorld",
                         buttonText: {
@@ -13408,7 +13448,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "setTimer",
         value: function setTimer() {
-          var _this110 = this;
+          var _this112 = this;
 
           // set showloader to true to show loading div on view
           this.isLoading = true;
@@ -13416,10 +13456,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.subscription = this.timer.subscribe(function () {
             // set showloader to false to hide loading div from view after 5 seconds
-            _this110.isLoading = false;
-            _this110.responseStrapi = JSON.parse(_this110.requests.response);
-            _this110.ImageUrl = _this110.responseStrapi[0].url;
-            _this110.imageUploaded = true;
+            _this112.isLoading = false;
+            _this112.responseStrapi = JSON.parse(_this112.requests.response);
+            _this112.ImageUrl = _this112.responseStrapi[0].url;
+            _this112.imageUploaded = true;
           });
         }
       }]);
@@ -13717,7 +13757,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ClickhomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this111 = this;
+          var _this113 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -13733,16 +13773,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this111.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this111.userData));
-              _this111.isLoggedIn = true;
+              _this113.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this113.userData));
+              _this113.isLoggedIn = true;
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this111.LoggedOut();
+              _this113.LoggedOut();
 
-              _this111.isLoggedIn = false;
+              _this113.isLoggedIn = false;
             }
           });
           this.HomepageImagesText();
@@ -13751,30 +13791,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this112 = this;
+          var _this114 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this112.imageUrl = element.data().BannerImageUrl;
-              _this112.secondImageUrl = element.data().SecondBannerImage;
-              _this112.SecondImageText = element.data().SecondBannerText;
-              _this112.Step1Image = element.data().Step1Image;
-              _this112.Step2Image = element.data().Step2Image;
-              _this112.step3Image = element.data().Step3Image;
-              _this112.Step1TExt = element.data().Step1ImageText;
-              _this112.Step2Text = element.data().Step2ImageText;
-              _this112.step3Text = element.data().Step3ImageText;
+              _this114.imageUrl = element.data().BannerImageUrl;
+              _this114.secondImageUrl = element.data().SecondBannerImage;
+              _this114.SecondImageText = element.data().SecondBannerText;
+              _this114.Step1Image = element.data().Step1Image;
+              _this114.Step2Image = element.data().Step2Image;
+              _this114.step3Image = element.data().Step3Image;
+              _this114.Step1TExt = element.data().Step1ImageText;
+              _this114.Step2Text = element.data().Step2ImageText;
+              _this114.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this113 = this;
+          var _this115 = this;
 
           this.HomeService.getBlogs(1).then(function (res) {
             res.forEach(function (element) {
-              _this113.homePageBlogs.push(element.data());
+              _this115.homePageBlogs.push(element.data());
             });
           });
         }
@@ -13792,33 +13832,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this114 = this;
+          var _this116 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this114.isLoading = false;
+            _this116.isLoading = false;
           });
         }
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this115 = this;
+          var _this117 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this115.isLoading = false;
-            _this115.isLoggedIn = true;
+            _this117.isLoading = false;
+            _this117.isLoggedIn = true;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this116 = this;
+          var _this118 = this;
 
           this.isLoading = true;
           this.authService.SignIn(email, pass).then(function (data) {
-            _this116.isLoading = false;
-            _this116.isLoggedIn = true;
+            _this118.isLoading = false;
+            _this118.isLoggedIn = true;
           });
         }
       }, {
@@ -14025,12 +14065,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onloadContent",
         value: function onloadContent() {
-          var _this117 = this;
+          var _this119 = this;
 
           this.SellermatchesService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this117.imageUrl = element.data().HomeMatchesPage;
-              _this117.OtherResult = element.data().OtherResult;
+              _this119.imageUrl = element.data().HomeMatchesPage;
+              _this119.OtherResult = element.data().OtherResult;
             });
           }); // this.HttpService.getMatchesHeading().subscribe((headings) =>{
           //   this.HeadingResults = headings
@@ -14041,7 +14081,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id) {
-          var _this118 = this;
+          var _this120 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -14056,103 +14096,103 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this118.buyer = true;
-              _this118.seller = false;
-              _this118.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this118.Look_PropertyFor = PropertyFor;
-              _this118.Look_propertytype = PropertyType;
-              _this118.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this118.Look_minamount);
-              _this118.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this118.Look_maxamount);
-              _this118.LookingTown = LookingTown;
-              _this118.Look_latitude = latitude;
-              _this118.Look_longitude = longitude;
-              _this118.Look_Streetname = Streetname;
-              _this118.Look_condition = condition;
-              _this118.Look_chainstatus = ChainStatus;
-              _this118.Look_FinancialPosition = FinancialPosition;
-              _this118.Look_Validity = Validity;
-              _this118.Look_Position = Position;
-              _this118.Look_UserId = UserId;
-              _this118.new_id = new_id; //Price Formula
+              _this120.buyer = true;
+              _this120.seller = false;
+              _this120.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this120.Look_PropertyFor = PropertyFor;
+              _this120.Look_propertytype = PropertyType;
+              _this120.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this120.Look_minamount);
+              _this120.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this120.Look_maxamount);
+              _this120.LookingTown = LookingTown;
+              _this120.Look_latitude = latitude;
+              _this120.Look_longitude = longitude;
+              _this120.Look_Streetname = Streetname;
+              _this120.Look_condition = condition;
+              _this120.Look_chainstatus = ChainStatus;
+              _this120.Look_FinancialPosition = FinancialPosition;
+              _this120.Look_Validity = Validity;
+              _this120.Look_Position = Position;
+              _this120.Look_UserId = UserId;
+              _this120.new_id = new_id; //Price Formula
 
-              _this118.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this118.maxAmount);
-              _this118.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this118.less);
-              _this118.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this118.more); //Remove Postcode Spaces
+              _this120.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this120.maxAmount);
+              _this120.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this120.less);
+              _this120.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this120.more); //Remove Postcode Spaces
 
-              _this118.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this118.listing = _this118.Look_postcodes;
-              _this118.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this118.isLoading = false;
-              _this118.buyer = true;
+              _this120.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this120.listing = _this120.Look_postcodes;
+              _this120.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this120.isLoading = false;
+              _this120.buyer = true;
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().PropertyType == _this118.Look_propertytype && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this120.Look_postcodes && item.data().PropertyFor == _this120.Look_PropertyFor && item.data().PropertyType == _this120.Look_propertytype && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this120.distanceInKm = _this120.getDistanceFromLatLonInKm(_this120.Look_latitude, _this120.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this118.matchedProperties.push({
+                _this120.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this118.distanceInKm * 1 / 1.609344
+                  distance: _this120.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().PropertyType == _this118.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this118.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this120.Look_postcodes && item.data().PropertyFor == _this120.Look_PropertyFor && item.data().PropertyType == _this120.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this120.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this120.distanceInKm = _this120.getDistanceFromLatLonInKm(_this120.Look_latitude, _this120.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this118.unmatchedProperties.push({
+                _this120.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this118.distanceInKm * 1 / 1.609344
+                  distance: _this120.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().PropertyType == _this118.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this118.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this118.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this120.Look_postcodes && item.data().PropertyFor == _this120.Look_PropertyFor && item.data().PropertyType == _this120.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this120.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this120.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this120.distanceInKm = _this120.getDistanceFromLatLonInKm(_this120.Look_latitude, _this120.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this118.unmatchedPriceLogic.push({
+                _this120.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this118.distanceInKm * 1 / 1.609344
+                  distance: _this120.distanceInKm * 1 / 1.609344
                 });
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().PropertyType != _this118.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this118.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this118.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this120.Look_postcodes && item.data().PropertyFor == _this120.Look_PropertyFor && item.data().PropertyType != _this120.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this120.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this120.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this120.distanceInKm = _this120.getDistanceFromLatLonInKm(_this120.Look_latitude, _this120.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this118.unmatchedallProperty.push({
+                _this120.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this118.distanceInKm * 1 / 1.609344
+                  distance: _this120.distanceInKm * 1 / 1.609344
                 });
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this118.Look_postcodes && item.data().PropertyFor == _this118.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this118.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this118.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this118.distanceInKm = _this118.getDistanceFromLatLonInKm(_this118.Look_latitude, _this118.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this120.Look_postcodes && item.data().PropertyFor == _this120.Look_PropertyFor && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this120.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this120.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this120.distanceInKm = _this120.getDistanceFromLatLonInKm(_this120.Look_latitude, _this120.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this118.lookTown.push({
+                _this120.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this118.distanceInKm * 1 / 1.609344
+                  distance: _this120.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this118.unmatchedProperties.sort(_this118.compare);
+            _this120.unmatchedProperties.sort(_this120.compare);
           });
           this.getExpressedListingIds();
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude, new_id) {
-          var _this119 = this;
+          var _this121 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -14184,23 +14224,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this119.maxAmount = _this119.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this119.maxAmount);
-              _this119.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this119.Look_minamount);
-              _this119.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this119.Look_maxamount);
-              _this119.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this119.less);
-              _this119.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this119.more); //Remove Postcode Spaces
+              _this121.maxAmount = _this121.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this121.maxAmount);
+              _this121.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this121.Look_minamount);
+              _this121.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this121.Look_maxamount);
+              _this121.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this121.less);
+              _this121.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this121.more); //Remove Postcode Spaces
 
-              _this119.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this119.listing = _this119.Look_postcode;
-              _this119.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this121.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this121.listing = _this121.Look_postcode;
+              _this121.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this119.Look_postcode && Mean.data().PropertyFor == _this119.Look_PropertyFor && Mean.data().PropertyType == _this119.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this119.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this121.Look_postcode && Mean.data().PropertyFor == _this121.Look_PropertyFor && Mean.data().PropertyType == _this121.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this121.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
@@ -14208,51 +14248,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this119.Look_postcode && Mean.data().PropertyType == _this119.Look_PropertyType && Mean.data().PropertyFor == _this119.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this119.removespace.substring(0, 5) == _this119.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
-                _this119.distanceInKm = _this119.getDistanceFromLatLonInKm(_this119.Look_latitude, _this119.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this121.Look_postcode && Mean.data().PropertyType == _this121.Look_PropertyType && Mean.data().PropertyFor == _this121.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this121.removespace.substring(0, 5) == _this121.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+                _this121.distanceInKm = _this121.getDistanceFromLatLonInKm(_this121.Look_latitude, _this121.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this119.sellerunmatchedProperties.push({
+                _this121.sellerunmatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this119.distanceInKm * 1 / 1.609344
+                  distance: _this121.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this119.Look_postcode && Mean.data().PropertyType == _this119.Look_PropertyType && Mean.data().PropertyFor == _this119.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this119.removespace.substring(0, 5) != _this119.listing.substring(0, 5) && _this119.removespace.substring(0, 3) == _this119.listing.substring(0, 3)) {
-                _this119.sellerunmatchedPropertiesFirst.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this121.Look_postcode && Mean.data().PropertyType == _this121.Look_PropertyType && Mean.data().PropertyFor == _this121.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this121.removespace.substring(0, 5) != _this121.listing.substring(0, 5) && _this121.removespace.substring(0, 3) == _this121.listing.substring(0, 3)) {
+                _this121.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this119.Look_postcode && Mean.data().PropertyType != _this119.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this119.removespace.substring(0, 5) != _this119.listing.substring(0, 5) && _this119.removespace.substring(0, 3) == _this119.listing.substring(0, 3) && Mean.data().PropertyFor == _this119.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
-                _this119.distanceInKm = _this119.getDistanceFromLatLonInKm(_this119.Look_latitude, _this119.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this121.Look_postcode && Mean.data().PropertyType != _this121.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this121.removespace.substring(0, 5) != _this121.listing.substring(0, 5) && _this121.removespace.substring(0, 3) == _this121.listing.substring(0, 3) && Mean.data().PropertyFor == _this121.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
+                _this121.distanceInKm = _this121.getDistanceFromLatLonInKm(_this121.Look_latitude, _this121.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this119.sellerunmatchedPriceLogic.push({
+                _this121.sellerunmatchedPriceLogic.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this119.distanceInKm * 1 / 1.609344
+                  distance: _this121.distanceInKm * 1 / 1.609344
                 });
               } //All other properties - Nationwide
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this119.Look_postcode && Mean.data().PropertyFor == _this119.Look_PropertyFor && _this119.removespace.substring(0, 5) != _this119.listing.substring(0, 5) && _this119.removespace.substring(0, 3) != _this119.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
-                _this119.distanceInKm = _this119.getDistanceFromLatLonInKm(_this119.Look_latitude, _this119.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this121.Look_postcode && Mean.data().PropertyFor == _this121.Look_PropertyFor && _this121.removespace.substring(0, 5) != _this121.listing.substring(0, 5) && _this121.removespace.substring(0, 3) != _this121.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
+                _this121.distanceInKm = _this121.getDistanceFromLatLonInKm(_this121.Look_latitude, _this121.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this119.sellerlookTown.push({
+                _this121.sellerlookTown.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this119.distanceInKm * 1 / 1.609344
+                  distance: _this121.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this119.unmatchedProperties.sort(_this119.compare);
+            _this121.unmatchedProperties.sort(_this121.compare);
 
-            _this119.noOfMatches = _this119.sellermatchedProperties.length;
-            _this119.noOfUnmatched = _this119.sellerunmatchedProperties.length;
+            _this121.noOfMatches = _this121.sellermatchedProperties.length;
+            _this121.noOfUnmatched = _this121.sellerunmatchedProperties.length;
           });
           this.getExpressedListingIds();
         }
@@ -14516,12 +14556,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this120 = this;
+          var _this122 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this120.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this120.distinctExpressedUid.push(item.data().propertyId);
+              if (_this122.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this122.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -14540,122 +14580,122 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this121 = this;
+          var _this123 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this121.propertyRequirementDetails.push({
+              _this123.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
 
-            _this121.myrequirement_service.getSellerProperties(_this121.uid).then(function (res) {
+            _this123.myrequirement_service.getSellerProperties(_this123.uid).then(function (res) {
               res.forEach(function (element) {
                 // this.docid = element.id
-                _this121.propertyDetails.push({
+                _this123.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
               });
-              _this121.MatchesItem = _this121.propertyRequirementDetails.length + _this121.propertyDetails.length;
+              _this123.MatchesItem = _this123.propertyRequirementDetails.length + _this123.propertyDetails.length;
 
-              if (_this121.MatchesItem < 2) {
-                if (_this121.propertyRequirementDetails.length > _this121.propertyDetails.length) {
-                  _this121.buyer = true;
-                  _this121.seller = false;
-                  _this121.buyerItems = true;
-                  _this121.buyerVal = _this121.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var Lookingpostcode = _this121.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var MinAmount = _this121.propertyRequirementDetails[0].data.MinAmount;
-                  var MaxAmount = _this121.propertyRequirementDetails[0].data.MaxAmount;
-                  var PropertyFor = _this121.propertyRequirementDetails[0].data.PropertyFor;
-                  var PropertyType = _this121.propertyRequirementDetails[0].data.PropertyType;
-                  var LookingTown = _this121.propertyRequirementDetails[0].data.LookingTown;
-                  var latitude = _this121.propertyRequirementDetails[0].data.latitude;
-                  var longitude = _this121.propertyRequirementDetails[0].data.longitude;
-                  var Streetname = _this121.propertyRequirementDetails[0].data.LookingStreetname;
-                  var condition = _this121.propertyRequirementDetails[0].data.Conditions;
-                  var ChainStatus = _this121.propertyRequirementDetails[0].data.ChainStatus;
-                  var FinancialPosition = _this121.propertyRequirementDetails[0].data.FinancialPosition;
-                  var Validity = _this121.propertyRequirementDetails[0].data.Validity;
-                  var Position = _this121.propertyRequirementDetails[0].data.Position;
-                  var UserId = _this121.propertyRequirementDetails[0].data.UserId;
-                  var new_id = _this121.propertyRequirementDetails[0].id;
+              if (_this123.MatchesItem < 2) {
+                if (_this123.propertyRequirementDetails.length > _this123.propertyDetails.length) {
+                  _this123.buyer = true;
+                  _this123.seller = false;
+                  _this123.buyerItems = true;
+                  _this123.buyerVal = _this123.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var Lookingpostcode = _this123.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var MinAmount = _this123.propertyRequirementDetails[0].data.MinAmount;
+                  var MaxAmount = _this123.propertyRequirementDetails[0].data.MaxAmount;
+                  var PropertyFor = _this123.propertyRequirementDetails[0].data.PropertyFor;
+                  var PropertyType = _this123.propertyRequirementDetails[0].data.PropertyType;
+                  var LookingTown = _this123.propertyRequirementDetails[0].data.LookingTown;
+                  var latitude = _this123.propertyRequirementDetails[0].data.latitude;
+                  var longitude = _this123.propertyRequirementDetails[0].data.longitude;
+                  var Streetname = _this123.propertyRequirementDetails[0].data.LookingStreetname;
+                  var condition = _this123.propertyRequirementDetails[0].data.Conditions;
+                  var ChainStatus = _this123.propertyRequirementDetails[0].data.ChainStatus;
+                  var FinancialPosition = _this123.propertyRequirementDetails[0].data.FinancialPosition;
+                  var Validity = _this123.propertyRequirementDetails[0].data.Validity;
+                  var Position = _this123.propertyRequirementDetails[0].data.Position;
+                  var UserId = _this123.propertyRequirementDetails[0].data.UserId;
+                  var new_id = _this123.propertyRequirementDetails[0].id;
 
-                  _this121.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
+                  _this123.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
                 } else {
-                  _this121.seller = true;
-                  _this121.buyer = false;
-                  _this121.sellerItem = true;
-                  _this121.sellerVal = _this121.propertyDetails[0].seller.Lookingpostcode;
-                  var _Lookingpostcode = _this121.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor = _this121.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType = _this121.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount = _this121.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown = _this121.propertyDetails[0].seller.LookingTown;
-                  var Lookingstate = _this121.propertyDetails[0].seller.Lookingstate;
-                  var Maxbathrooms = _this121.propertyDetails[0].seller.Maxbathrooms;
-                  var PropertyCondition = _this121.propertyDetails[0].seller.PropertyCondition;
-                  var LookingAddress = _this121.propertyDetails[0].seller.LookingAddress;
-                  var ownership = _this121.propertyDetails[0].seller.ownership;
-                  var features = _this121.propertyDetails[0].seller.features;
-                  var _UserId = _this121.propertyDetails[0].seller.UserId;
-                  var Maxreception = _this121.propertyDetails[0].seller.Maxreception;
-                  var Maxrooms = _this121.propertyDetails[0].seller.Maxrooms;
-                  var _latitude = _this121.propertyDetails[0].seller.latitude;
-                  var _longitude = _this121.propertyDetails[0].seller.longitude;
-                  var _new_id = _this121.propertyDetails[0].sellerId;
+                  _this123.seller = true;
+                  _this123.buyer = false;
+                  _this123.sellerItem = true;
+                  _this123.sellerVal = _this123.propertyDetails[0].seller.Lookingpostcode;
+                  var _Lookingpostcode = _this123.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor = _this123.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType = _this123.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount = _this123.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown = _this123.propertyDetails[0].seller.LookingTown;
+                  var Lookingstate = _this123.propertyDetails[0].seller.Lookingstate;
+                  var Maxbathrooms = _this123.propertyDetails[0].seller.Maxbathrooms;
+                  var PropertyCondition = _this123.propertyDetails[0].seller.PropertyCondition;
+                  var LookingAddress = _this123.propertyDetails[0].seller.LookingAddress;
+                  var ownership = _this123.propertyDetails[0].seller.ownership;
+                  var features = _this123.propertyDetails[0].seller.features;
+                  var _UserId = _this123.propertyDetails[0].seller.UserId;
+                  var Maxreception = _this123.propertyDetails[0].seller.Maxreception;
+                  var Maxrooms = _this123.propertyDetails[0].seller.Maxrooms;
+                  var _latitude = _this123.propertyDetails[0].seller.latitude;
+                  var _longitude = _this123.propertyDetails[0].seller.longitude;
+                  var _new_id = _this123.propertyDetails[0].sellerId;
 
-                  _this121.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
+                  _this123.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
                 }
-              } else if (_this121.MatchesItem > 1) {
-                if (_this121.propertyRequirementDetails.length > _this121.propertyDetails.length) {
-                  _this121.buyer = true;
-                  _this121.buyerVal = _this121.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this121.test = _this121.buyerVal;
-                  var _Lookingpostcode2 = _this121.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var _MinAmount = _this121.propertyRequirementDetails[0].data.MinAmount;
-                  var _MaxAmount2 = _this121.propertyRequirementDetails[0].data.MaxAmount;
-                  var _PropertyFor2 = _this121.propertyRequirementDetails[0].data.PropertyFor;
-                  var _PropertyType2 = _this121.propertyRequirementDetails[0].data.PropertyType;
-                  var _LookingTown2 = _this121.propertyRequirementDetails[0].data.LookingTown;
-                  var _latitude2 = _this121.propertyRequirementDetails[0].data.latitude;
-                  var _longitude2 = _this121.propertyRequirementDetails[0].data.longitude;
-                  var _Streetname = _this121.propertyRequirementDetails[0].data.LookingStreetname;
-                  var _condition = _this121.propertyRequirementDetails[0].data.Conditions;
-                  var _ChainStatus = _this121.propertyRequirementDetails[0].data.ChainStatus;
-                  var _FinancialPosition = _this121.propertyRequirementDetails[0].data.FinancialPosition;
-                  var _Validity = _this121.propertyRequirementDetails[0].data.Validity;
-                  var _Position = _this121.propertyRequirementDetails[0].data.Position;
-                  var _UserId2 = _this121.propertyRequirementDetails[0].data.UserId;
-                  var _new_id2 = _this121.propertyRequirementDetails[0].id;
+              } else if (_this123.MatchesItem > 1) {
+                if (_this123.propertyRequirementDetails.length > _this123.propertyDetails.length) {
+                  _this123.buyer = true;
+                  _this123.buyerVal = _this123.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this123.test = _this123.buyerVal;
+                  var _Lookingpostcode2 = _this123.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var _MinAmount = _this123.propertyRequirementDetails[0].data.MinAmount;
+                  var _MaxAmount2 = _this123.propertyRequirementDetails[0].data.MaxAmount;
+                  var _PropertyFor2 = _this123.propertyRequirementDetails[0].data.PropertyFor;
+                  var _PropertyType2 = _this123.propertyRequirementDetails[0].data.PropertyType;
+                  var _LookingTown2 = _this123.propertyRequirementDetails[0].data.LookingTown;
+                  var _latitude2 = _this123.propertyRequirementDetails[0].data.latitude;
+                  var _longitude2 = _this123.propertyRequirementDetails[0].data.longitude;
+                  var _Streetname = _this123.propertyRequirementDetails[0].data.LookingStreetname;
+                  var _condition = _this123.propertyRequirementDetails[0].data.Conditions;
+                  var _ChainStatus = _this123.propertyRequirementDetails[0].data.ChainStatus;
+                  var _FinancialPosition = _this123.propertyRequirementDetails[0].data.FinancialPosition;
+                  var _Validity = _this123.propertyRequirementDetails[0].data.Validity;
+                  var _Position = _this123.propertyRequirementDetails[0].data.Position;
+                  var _UserId2 = _this123.propertyRequirementDetails[0].data.UserId;
+                  var _new_id2 = _this123.propertyRequirementDetails[0].id;
 
-                  _this121.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
+                  _this123.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
                 } else {
-                  _this121.seller = true;
-                  _this121.sellerVal = _this121.propertyDetails[0].seller.Lookingpostcode;
-                  _this121.test = _this121.sellerVal;
-                  var _Lookingpostcode3 = _this121.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor3 = _this121.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType3 = _this121.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount3 = _this121.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown3 = _this121.propertyDetails[0].seller.LookingTown;
-                  var _Lookingstate = _this121.propertyDetails[0].seller.Lookingstate;
-                  var _Maxbathrooms = _this121.propertyDetails[0].seller.Maxbathrooms;
-                  var _PropertyCondition = _this121.propertyDetails[0].seller.PropertyCondition;
-                  var _LookingAddress = _this121.propertyDetails[0].seller.LookingAddress;
-                  var _ownership = _this121.propertyDetails[0].seller.ownership;
-                  var _features = _this121.propertyDetails[0].seller.features;
-                  var _UserId3 = _this121.propertyDetails[0].seller.UserId;
-                  var _Maxreception = _this121.propertyDetails[0].seller.Maxreception;
-                  var _Maxrooms = _this121.propertyDetails[0].seller.Maxrooms;
-                  var _latitude3 = _this121.propertyDetails[0].seller.latitude;
-                  var _longitude3 = _this121.propertyDetails[0].seller.longitude;
-                  var _new_id3 = _this121.propertyDetails[0].sellerId;
+                  _this123.seller = true;
+                  _this123.sellerVal = _this123.propertyDetails[0].seller.Lookingpostcode;
+                  _this123.test = _this123.sellerVal;
+                  var _Lookingpostcode3 = _this123.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor3 = _this123.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType3 = _this123.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount3 = _this123.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown3 = _this123.propertyDetails[0].seller.LookingTown;
+                  var _Lookingstate = _this123.propertyDetails[0].seller.Lookingstate;
+                  var _Maxbathrooms = _this123.propertyDetails[0].seller.Maxbathrooms;
+                  var _PropertyCondition = _this123.propertyDetails[0].seller.PropertyCondition;
+                  var _LookingAddress = _this123.propertyDetails[0].seller.LookingAddress;
+                  var _ownership = _this123.propertyDetails[0].seller.ownership;
+                  var _features = _this123.propertyDetails[0].seller.features;
+                  var _UserId3 = _this123.propertyDetails[0].seller.UserId;
+                  var _Maxreception = _this123.propertyDetails[0].seller.Maxreception;
+                  var _Maxrooms = _this123.propertyDetails[0].seller.Maxrooms;
+                  var _latitude3 = _this123.propertyDetails[0].seller.latitude;
+                  var _longitude3 = _this123.propertyDetails[0].seller.longitude;
+                  var _new_id3 = _this123.propertyDetails[0].sellerId;
 
-                  _this121.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
+                  _this123.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
                 }
               }
             });
@@ -14664,26 +14704,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitem",
         value: function getallitem() {
-          var _this122 = this;
+          var _this124 = this;
 
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this122.uid) {
-                _this122.propertyRequirementDetails.push({
+              if (element.UserId == _this124.uid) {
+                _this124.propertyRequirementDetails.push({
                   data: element,
                   id: element.id
                 });
 
-                _this122.buyer = true;
-                _this122.seller = false;
-                _this122.buyerItems = true;
+                _this124.buyer = true;
+                _this124.seller = false;
+                _this124.buyerItems = true;
               }
             });
           });
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this122.uid) {
-                _this122.propertyDetails.push({
+              if (element.UserId == _this124.uid) {
+                _this124.propertyDetails.push({
                   seller: element,
                   sellerId: element.id
                 });
@@ -14999,12 +15039,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this123 = this;
+          var _this125 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this123.propertyRequirementDetails.push({
+              _this125.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -15013,7 +15053,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this123.propertyDetails.push({
+              _this125.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -15608,40 +15648,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this124 = this;
+          var _this126 = this;
 
           this.getUser = JSON.parse(sessionStorage.getItem('currentUser'));
           this.uid = this.getUser.id;
           this.LoggedIn();
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this124.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
-            _this124.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
-            _this124.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
-            _this124.listingBuyer.Currentstate = params.get("Currentstate").trim();
-            _this124.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
-            _this124.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this124.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
-            _this124.listingBuyer.LookingTown = params.get("LookingTown").trim();
-            _this124.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
-            _this124.listingBuyer.Country = params.get("Country").trim();
-            _this124.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
-            _this124.listingBuyer.PropertyType = params.get("PropertyType").trim();
-            _this124.listingBuyer.Roommin = params.get("Roommin").trim();
-            _this124.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
-            _this124.listingBuyer.MinAmount = params.get("MinAmount").trim();
-            _this124.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
-            _this124.listingBuyer.Validity = params.get("Validity").trim();
-            _this124.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
-            _this124.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
-            _this124.listingBuyer.Minreception = params.get("Minreception").trim();
-            _this124.listingBuyer.Maxreception = params.get("Maxreception").trim();
-            _this124.listingBuyer.Conditions = params.get("Conditions").trim();
-            _this124.listingBuyer.Ownership = params.get("Ownership").trim();
-            _this124.listingBuyer.features = params.get("features").trim();
-            _this124.docid = params.get("docid");
-            _this124.listingBuyer.PropertyFor = params.get("PropertyFor");
-            _this124.listingBuyer.ChainStatus = params.get("ChainStatus");
-            console.log(_this124.listingBuyer.FinancialPosition);
+            _this126.listingBuyer.Currentpostcode = params.get("Currentpostcode").trim();
+            _this126.listingBuyer.CurrentTown = params.get("CurrentTown").trim();
+            _this126.listingBuyer.CurrentAddress = params.get("CurrentAddress").trim();
+            _this126.listingBuyer.Currentstate = params.get("Currentstate").trim();
+            _this126.listingBuyer.Currentcountry = params.get("Currentcountry").trim();
+            _this126.listingBuyer.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this126.listingBuyer.LookingStreetname = params.get("LookingStreetname").trim();
+            _this126.listingBuyer.LookingTown = params.get("LookingTown").trim();
+            _this126.listingBuyer.Lookingstate = params.get("Lookingstate").trim();
+            _this126.listingBuyer.Country = params.get("Country").trim();
+            _this126.listingBuyer.FinancialPosition = params.get("FinancialPosition").trim();
+            _this126.listingBuyer.PropertyType = params.get("PropertyType").trim();
+            _this126.listingBuyer.Roommin = params.get("Roommin").trim();
+            _this126.listingBuyer.Roomsmax = params.get("Roomsmax").trim();
+            _this126.listingBuyer.MinAmount = params.get("MinAmount").trim();
+            _this126.listingBuyer.MaxAmount = params.get("MaxAmount").trim();
+            _this126.listingBuyer.Validity = params.get("Validity").trim();
+            _this126.listingBuyer.Minbathroom = params.get("Minbathroom").trim();
+            _this126.listingBuyer.Maxbathroom = params.get("Maxbathroom").trim();
+            _this126.listingBuyer.Minreception = params.get("Minreception").trim();
+            _this126.listingBuyer.Maxreception = params.get("Maxreception").trim();
+            _this126.listingBuyer.Conditions = params.get("Conditions").trim();
+            _this126.listingBuyer.Ownership = params.get("Ownership").trim();
+            _this126.listingBuyer.features = params.get("features").trim();
+            _this126.docid = params.get("docid");
+            _this126.listingBuyer.PropertyFor = params.get("PropertyFor");
+            _this126.listingBuyer.ChainStatus = params.get("ChainStatus");
+            console.log(_this126.listingBuyer.FinancialPosition);
           });
 
           if (this.listingBuyer.PropertyFor == 'buy') {
@@ -15657,11 +15697,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this124.lookup(_this124.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this124.data = data;
+              _this126.lookup(_this126.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this126.data = data;
               });
 
-              return _this124.lookup(_this124.listingBuyer.Lookingpostcode);
+              return _this126.lookup(_this126.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -15671,11 +15711,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this124.lookup(_this124.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this124.data = data;
+              _this126.lookup(_this126.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this126.data = data;
               });
 
-              return _this124.lookup(_this124.listingBuyer.Currentpostcode);
+              return _this126.lookup(_this126.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -15684,18 +15724,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this125 = this;
+          var _this127 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
           this.postcodeService.getUsers(this.getUser.id).subscribe(function (data) {
-            _this125.dataItem = data;
-            _this125.Name = _this125.dataItem.username, _this125.email = _this125.dataItem.email;
-            _this125.Phone = _this125.dataItem.Phone;
-            _this125.DOB = _this125.dataItem.dob;
-            _this125.Currentaddress = _this125.dataItem.Address;
-            _this125.prefrence = _this125.dataItem.prefrences;
-            _this125.title = _this125.dataItem.title;
+            _this127.dataItem = data;
+            _this127.Name = _this127.dataItem.username, _this127.email = _this127.dataItem.email;
+            _this127.Phone = _this127.dataItem.Phone;
+            _this127.DOB = _this127.dataItem.dob;
+            _this127.Currentaddress = _this127.dataItem.Address;
+            _this127.prefrence = _this127.dataItem.prefrences;
+            _this127.title = _this127.dataItem.title;
           });
         }
       }, {
@@ -15860,12 +15900,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this126 = this;
+          var _this128 = this;
 
           this.isLoading = true;
           this.postcodeService.addUsersDetails(this.uid, this.Name, this.email, this.Phone, this.DOB, this.title).subscribe(function (data) {
             localStorage.setItem('updatedUser', JSON.stringify(data));
-            _this126.isLoading = false;
+            _this128.isLoading = false;
           });
         }
       }, {
@@ -15933,48 +15973,48 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerEditing",
         value: function buyerEditing() {
-          var _this127 = this;
+          var _this129 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this127.postcodeCoordinates = data;
-            _this127.listingBuyer.longitude = _this127.postcodeCoordinates.result.longitude, _this127.listingBuyer.latitude = _this127.postcodeCoordinates.result.latitude, _this127.HttpClient.put("http://134.209.93.8/listing-buyers/" + _this127.docid, {
-              usertitle: _this127.title,
-              username: _this127.Name,
-              longitude: _this127.listingBuyer.longitude,
-              latitude: _this127.listingBuyer.longitude,
+            _this129.postcodeCoordinates = data;
+            _this129.listingBuyer.longitude = _this129.postcodeCoordinates.result.longitude, _this129.listingBuyer.latitude = _this129.postcodeCoordinates.result.latitude, _this129.HttpClient.put("http://134.209.93.8/listing-buyers/" + _this129.docid, {
+              usertitle: _this129.title,
+              username: _this129.Name,
+              longitude: _this129.listingBuyer.longitude,
+              latitude: _this129.listingBuyer.longitude,
               //features:this.listingBuyer.features,
-              Validity: _this127.listingBuyer.Validity,
-              UserId: _this127.uid,
-              Roomsmax: _this127.listingBuyer.Roomsmax,
-              Roommin: _this127.listingBuyer.Roommin,
-              PropertyType: _this127.listingBuyer.PropertyType,
-              PropertyFor: _this127.listingBuyer.PropertyFor,
-              Position: _this127.listingBuyer.Position,
-              Ownership: _this127.listingBuyer.Ownership,
-              Minreception: _this127.listingBuyer.Minreception,
-              Minbathroom: _this127.listingBuyer.Minbathroom,
-              MinAmount: _this127.listingBuyer.MinAmount,
-              Maxreception: _this127.listingBuyer.Maxreception,
-              Maxbathroom: _this127.listingBuyer.Maxbathroom,
-              MaxAmount: _this127.listingBuyer.MaxAmount,
-              Lookingstate: _this127.listingBuyer.Lookingstate,
-              Lookingpostcode: _this127.listingBuyer.Lookingpostcode,
-              LookingTown: _this127.listingBuyer.LookingTown,
-              LookingStreetname: _this127.listingBuyer.LookingStreetname,
-              FinancialPosition: _this127.listingBuyer.FinancialPosition,
-              Currentstate: _this127.listingBuyer.Currentstate,
-              Currentpostcode: _this127.listingBuyer.Currentpostcode,
-              Currentcountry: _this127.listingBuyer.Currentcountry,
-              CurrentAddress: _this127.listingBuyer.CurrentAddress,
-              Country: _this127.listingBuyer.Country,
-              Conditions: _this127.listingBuyer.Conditions,
-              ChainStatus: _this127.listingBuyer.ChainStatus,
-              CurrentTown: _this127.listingBuyer.CurrentTown
+              Validity: _this129.listingBuyer.Validity,
+              UserId: _this129.uid,
+              Roomsmax: _this129.listingBuyer.Roomsmax,
+              Roommin: _this129.listingBuyer.Roommin,
+              PropertyType: _this129.listingBuyer.PropertyType,
+              PropertyFor: _this129.listingBuyer.PropertyFor,
+              Position: _this129.listingBuyer.Position,
+              Ownership: _this129.listingBuyer.Ownership,
+              Minreception: _this129.listingBuyer.Minreception,
+              Minbathroom: _this129.listingBuyer.Minbathroom,
+              MinAmount: _this129.listingBuyer.MinAmount,
+              Maxreception: _this129.listingBuyer.Maxreception,
+              Maxbathroom: _this129.listingBuyer.Maxbathroom,
+              MaxAmount: _this129.listingBuyer.MaxAmount,
+              Lookingstate: _this129.listingBuyer.Lookingstate,
+              Lookingpostcode: _this129.listingBuyer.Lookingpostcode,
+              LookingTown: _this129.listingBuyer.LookingTown,
+              LookingStreetname: _this129.listingBuyer.LookingStreetname,
+              FinancialPosition: _this129.listingBuyer.FinancialPosition,
+              Currentstate: _this129.listingBuyer.Currentstate,
+              Currentpostcode: _this129.listingBuyer.Currentpostcode,
+              Currentcountry: _this129.listingBuyer.Currentcountry,
+              CurrentAddress: _this129.listingBuyer.CurrentAddress,
+              Country: _this129.listingBuyer.Country,
+              Conditions: _this129.listingBuyer.Conditions,
+              ChainStatus: _this129.listingBuyer.ChainStatus,
+              CurrentTown: _this129.listingBuyer.CurrentTown
             }).subscribe(function (data) {
-              _this127.isLoading = false;
+              _this129.isLoading = false;
 
-              var dialogRef = _this127.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+              var dialogRef = _this129.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
             });
           });
         }
@@ -16541,7 +16581,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this128 = this;
+          var _this130 = this;
 
           this.getUser = JSON.parse(sessionStorage.getItem('currentUser'));
           this.uid = this.getUser.id;
@@ -16551,11 +16591,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this128.lookup(_this128.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this128.data = data;
+              _this130.lookup(_this130.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this130.data = data;
               });
 
-              return _this128.lookup(_this128.listingSeller.Lookingpostcode);
+              return _this130.lookup(_this130.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -16565,32 +16605,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this128.lookup(_this128.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this128.data = data;
+              _this130.lookup(_this130.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this130.data = data;
               });
 
-              return _this128.lookup(_this128.listingSeller.Currentpostcode);
+              return _this130.lookup(_this130.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
           }));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this128.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
-            _this128.listingSeller.LookingAddress = params.get("LookingAddress");
-            _this128.listingSeller.LookingTown = params.get("LookingTown");
-            _this128.listingSeller.Lookingstate = params.get("Lookingstate");
-            _this128.listingSeller.Country = params.get("Country");
-            _this128.listingSeller.PropertyType = params.get("PropertyType");
-            _this128.listingSeller.Maxrooms = params.get("Maxrooms");
-            _this128.listingSeller.MaxAmount = params.get("MaxAmount");
-            _this128.listingSeller.ownership = params.get("ownership");
-            _this128.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
-            _this128.listingSeller.Maxreception = params.get("Maxreception");
-            _this128.listingSeller.PropertyCondition = params.get("PropertyCondition");
-            _this128.Features = params.get("features");
-            _this128.listingSeller.Country = params.get("Country");
-            _this128.docid = params.get("sellerId");
-            _this128.listingSeller.PropertyFor = params.get("PropertyFor");
+            _this130.listingSeller.Lookingpostcode = params.get("Lookingpostcode");
+            _this130.listingSeller.LookingAddress = params.get("LookingAddress");
+            _this130.listingSeller.LookingTown = params.get("LookingTown");
+            _this130.listingSeller.Lookingstate = params.get("Lookingstate");
+            _this130.listingSeller.Country = params.get("Country");
+            _this130.listingSeller.PropertyType = params.get("PropertyType");
+            _this130.listingSeller.Maxrooms = params.get("Maxrooms");
+            _this130.listingSeller.MaxAmount = params.get("MaxAmount");
+            _this130.listingSeller.ownership = params.get("ownership");
+            _this130.listingSeller.Maxbathrooms = params.get("Maxbathrooms");
+            _this130.listingSeller.Maxreception = params.get("Maxreception");
+            _this130.listingSeller.PropertyCondition = params.get("PropertyCondition");
+            _this130.Features = params.get("features");
+            _this130.listingSeller.Country = params.get("Country");
+            _this130.docid = params.get("sellerId");
+            _this130.listingSeller.PropertyFor = params.get("PropertyFor");
           });
 
           if (this.listingSeller.PropertyFor == "buy") {
@@ -16605,22 +16645,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this129 = this;
+          var _this131 = this;
 
           //Pre - populate the email field
           this.sellerService.getUsers(this.getUser.id).subscribe(function (data) {
-            _this129.dataItem = data;
-            _this129.Name = _this129.dataItem.username, _this129.email = _this129.dataItem.email;
-            _this129.Phone = _this129.dataItem.Phone;
-            _this129.DOB = _this129.dataItem.dob;
-            _this129.Currentaddress = _this129.dataItem.Address;
-            _this129.prefrence = _this129.dataItem.prefrences;
-            _this129.title = _this129.dataItem.title;
-            _this129.Currentpostcode = _this129.dataItem.Currentpostcode;
-            _this129.CurrentAddress = _this129.dataItem.CurrentAddress;
-            _this129.CurrentTown = _this129.dataItem.CurrentTown;
-            _this129.Currentstate = _this129.dataItem.Currentstate;
-            _this129.isLoggedIn = true;
+            _this131.dataItem = data;
+            _this131.Name = _this131.dataItem.username, _this131.email = _this131.dataItem.email;
+            _this131.Phone = _this131.dataItem.Phone;
+            _this131.DOB = _this131.dataItem.dob;
+            _this131.Currentaddress = _this131.dataItem.Address;
+            _this131.prefrence = _this131.dataItem.prefrences;
+            _this131.title = _this131.dataItem.title;
+            _this131.Currentpostcode = _this131.dataItem.Currentpostcode;
+            _this131.CurrentAddress = _this131.dataItem.CurrentAddress;
+            _this131.CurrentTown = _this131.dataItem.CurrentTown;
+            _this131.Currentstate = _this131.dataItem.Currentstate;
+            _this131.isLoggedIn = true;
           });
           this.isLoggedIn = true;
         }
@@ -16799,11 +16839,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this130 = this;
+          var _this132 = this;
 
           this.isLoading = true;
           this.sellerService.addUsersSellerDetails(this.uid, this.Name, this.email, this.Phone, this.DOB, this.title, this.Currentpostcode, this.CurrentAddress, this.CurrentTown, this.Currentstate).subscribe(function (data) {
-            _this130.isLoading = false;
+            _this132.isLoading = false;
           });
         }
       }, {
@@ -16826,43 +16866,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this131 = this;
+          var _this133 = this;
 
           this.isLoading = true;
           console.log(this.listingSeller.ownership); //For Seller
 
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this131.postcodeCoordinates = data;
-            _this131.listingSeller.longitude = _this131.postcodeCoordinates.result.longitude, _this131.listingSeller.latitude = _this131.postcodeCoordinates.result.latitude, _this131.HttpClient.put("http://134.209.93.8/listing-sellers/" + _this131.docid, {
-              Country: _this131.listingSeller.Country,
-              LookingAddress: _this131.listingSeller.LookingAddress,
-              LookingStreetname: _this131.listingSeller.LookingTown,
-              LookingTown: _this131.listingSeller.LookingTown,
-              Lookingpostcode: _this131.listingSeller.Lookingpostcode,
-              Lookingstate: _this131.listingSeller.Lookingstate,
-              MaxAmount: _this131.listingSeller.MaxAmount,
-              Maxbathrooms: _this131.listingSeller.Maxbathrooms,
-              Maxreception: _this131.listingSeller.Maxreception,
-              PropertyCondition: _this131.listingSeller.PropertyCondition,
-              PropertyFor: _this131.listingSeller.PropertyFor,
-              PropertyType: _this131.listingSeller.PropertyType,
-              features: _this131.listingSeller.features,
-              latitude: _this131.listingSeller.latitude,
-              longitude: _this131.listingSeller.longitude,
-              ownership: _this131.listingSeller.ownership,
-              username: _this131.Name,
-              usertitle: _this131.title,
-              UserId: _this131.uid,
-              Maxrooms: _this131.listingSeller.Maxrooms,
-              Currentpostcode: _this131.Currentpostcode,
-              Currentstate: _this131.Currentstate,
-              CurrentTowncity: _this131.CurrentTown,
-              Currentaddress: _this131.CurrentAddress
+            _this133.postcodeCoordinates = data;
+            _this133.listingSeller.longitude = _this133.postcodeCoordinates.result.longitude, _this133.listingSeller.latitude = _this133.postcodeCoordinates.result.latitude, _this133.HttpClient.put("http://134.209.93.8/listing-sellers/" + _this133.docid, {
+              Country: _this133.listingSeller.Country,
+              LookingAddress: _this133.listingSeller.LookingAddress,
+              LookingStreetname: _this133.listingSeller.LookingTown,
+              LookingTown: _this133.listingSeller.LookingTown,
+              Lookingpostcode: _this133.listingSeller.Lookingpostcode,
+              Lookingstate: _this133.listingSeller.Lookingstate,
+              MaxAmount: _this133.listingSeller.MaxAmount,
+              Maxbathrooms: _this133.listingSeller.Maxbathrooms,
+              Maxreception: _this133.listingSeller.Maxreception,
+              PropertyCondition: _this133.listingSeller.PropertyCondition,
+              PropertyFor: _this133.listingSeller.PropertyFor,
+              PropertyType: _this133.listingSeller.PropertyType,
+              features: _this133.listingSeller.features,
+              latitude: _this133.listingSeller.latitude,
+              longitude: _this133.listingSeller.longitude,
+              ownership: _this133.listingSeller.ownership,
+              username: _this133.Name,
+              usertitle: _this133.title,
+              UserId: _this133.uid,
+              Maxrooms: _this133.listingSeller.Maxrooms,
+              Currentpostcode: _this133.Currentpostcode,
+              Currentstate: _this133.Currentstate,
+              CurrentTowncity: _this133.CurrentTown,
+              Currentaddress: _this133.CurrentAddress
             }).subscribe(function (data) {
               console.log(data);
-              _this131.isLoading = false;
+              _this133.isLoading = false;
 
-              var dialogRef = _this131.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+              var dialogRef = _this133.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
                 data: {
                   message: "HelloWorld",
                   buttonText: {
@@ -17272,19 +17312,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this132 = this;
+          var _this134 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this132.Lookingpostcode = params.get("Lookingpostcode");
-            _this132.ChainStatus = params.get("ChainStatus");
-            _this132.FinancialPosition = params.get("FinancialPosition");
-            _this132.Type = params.get("PropertyType");
-            _this132.Position = params.get("Position");
-            _this132.MaxAmount = params.get("MaxAmount");
-            _this132.MinAmount = params.get("MinAmount");
-            _this132.propertyId = params.get("id");
+            _this134.Lookingpostcode = params.get("Lookingpostcode");
+            _this134.ChainStatus = params.get("ChainStatus");
+            _this134.FinancialPosition = params.get("FinancialPosition");
+            _this134.Type = params.get("PropertyType");
+            _this134.Position = params.get("Position");
+            _this134.MaxAmount = params.get("MaxAmount");
+            _this134.MinAmount = params.get("MinAmount");
+            _this134.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -17297,24 +17337,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this133 = this;
+          var _this135 = this;
 
           this.SellerListingDetails.getBuyerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this133.buyingPosition = res.data().Position;
-            _this133.buyerFinancialPosition = res.data().FinancialPosition;
-            _this133.BuyerPropertyType = res.data().PropertyType;
-            _this133.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this133.BuyerRoommin = res.data().Roommin;
-            _this133.BuyerRoomsmax = res.data().Roomsmax;
-            _this133.username = res.data().username;
-            _this133.usertitle = res.data().usertitle;
-            _this133.buyerPropertyFor = res.data().PropertyFor;
-            _this133.PropertyType = res.data().PropertyType;
-            _this133.Ownership = res.data().Ownership;
-            _this133.LookingStreetname = res.data().LookingStreetname;
-            _this133.Conditions = res.data().Conditions;
-            _this133.Maxbathroom = res.data().Maxbathroom;
-            _this133.Maxreception = res.data().Maxreception;
+            _this135.buyingPosition = res.data().Position;
+            _this135.buyerFinancialPosition = res.data().FinancialPosition;
+            _this135.BuyerPropertyType = res.data().PropertyType;
+            _this135.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this135.BuyerRoommin = res.data().Roommin;
+            _this135.BuyerRoomsmax = res.data().Roomsmax;
+            _this135.username = res.data().username;
+            _this135.usertitle = res.data().usertitle;
+            _this135.buyerPropertyFor = res.data().PropertyFor;
+            _this135.PropertyType = res.data().PropertyType;
+            _this135.Ownership = res.data().Ownership;
+            _this135.LookingStreetname = res.data().LookingStreetname;
+            _this135.Conditions = res.data().Conditions;
+            _this135.Maxbathroom = res.data().Maxbathroom;
+            _this135.Maxreception = res.data().Maxreception;
           });
         }
       }]);
@@ -17507,19 +17547,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this134 = this;
+          var _this136 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this134.Lookingpostcode = params.get("Lookingpostcode");
-            _this134.Type = params.get("PropertyType");
-            _this134.MaxAmount = params.get("MaxAmount");
-            _this134.Maxrooms = params.get("Maxrooms");
-            _this134.Maxreception = params.get("Maxreception");
-            _this134.PropertyCondition = params.get("PropertyCondition");
-            _this134.Maxbathrooms = params.get("Maxbathrooms");
-            _this134.propertyId = params.get("id");
+            _this136.Lookingpostcode = params.get("Lookingpostcode");
+            _this136.Type = params.get("PropertyType");
+            _this136.MaxAmount = params.get("MaxAmount");
+            _this136.Maxrooms = params.get("Maxrooms");
+            _this136.Maxreception = params.get("Maxreception");
+            _this136.PropertyCondition = params.get("PropertyCondition");
+            _this136.Maxbathrooms = params.get("Maxbathrooms");
+            _this136.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -17532,21 +17572,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this135 = this;
+          var _this137 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this135.userName = res.data().username;
-            _this135.usertitle = res.data().usertitle;
-            _this135.PropertyFor = res.data().PropertyFor;
-            _this135.price = res.data().MaxAmount;
-            _this135.postcode = res.data().Lookingpostcode;
-            _this135.Streetname = res.data().LookingStreetname;
-            _this135.PropertyTypes = res.data().PropertyType;
-            _this135.Maxroom = res.data().Maxrooms;
-            _this135.ownerships = res.data().ownership;
-            _this135.Bathrooms = res.data().Maxbathrooms;
-            _this135.Reception = res.data().Maxreception;
-            _this135.features = res.data().features;
+            _this137.userName = res.data().username;
+            _this137.usertitle = res.data().usertitle;
+            _this137.PropertyFor = res.data().PropertyFor;
+            _this137.price = res.data().MaxAmount;
+            _this137.postcode = res.data().Lookingpostcode;
+            _this137.Streetname = res.data().LookingStreetname;
+            _this137.PropertyTypes = res.data().PropertyType;
+            _this137.Maxroom = res.data().Maxrooms;
+            _this137.ownerships = res.data().ownership;
+            _this137.Bathrooms = res.data().Maxbathrooms;
+            _this137.Reception = res.data().Maxreception;
+            _this137.features = res.data().features;
           });
         }
       }]);
@@ -17763,12 +17803,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this136 = this;
+          var _this138 = this;
 
           // Buyer Property Fetch details 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this136.propertyRequirementDetails.push({
+              _this138.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -17777,7 +17817,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this136.propertyDetails.push({
+              _this138.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -17978,7 +18018,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerAwaitingDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this137 = this;
+          var _this139 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -17987,21 +18027,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this137.Lookingpostcode = params.get("Lookingpostcode");
-            _this137.Lookingstate = params.get("Lookingstate");
-            _this137.LookingAddress = params.get("LookingAddress");
-            _this137.norooms = params.get("Roomsmax");
-            _this137.PropertyCondition = params.get("PropertyCondition");
-            _this137.MaxAmount = params.get("MaxAmount");
-            _this137.PropertyType = params.get("PropertyType");
-            _this137.ownership = params.get("ownership");
-            _this137.features = params.get("features");
-            _this137.matchStatus = params.get("matchStatus");
-            _this137.expressed = params.get("expressed");
-            _this137.BuyerUserId = params.get("BuyerUserId");
-            _this137.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this137.SellerPropertyId = params.get("SellerPropertyId");
-            _this137.SellerUSerId = params.get("SellerUSerId");
+            _this139.Lookingpostcode = params.get("Lookingpostcode");
+            _this139.Lookingstate = params.get("Lookingstate");
+            _this139.LookingAddress = params.get("LookingAddress");
+            _this139.norooms = params.get("Roomsmax");
+            _this139.PropertyCondition = params.get("PropertyCondition");
+            _this139.MaxAmount = params.get("MaxAmount");
+            _this139.PropertyType = params.get("PropertyType");
+            _this139.ownership = params.get("ownership");
+            _this139.features = params.get("features");
+            _this139.matchStatus = params.get("matchStatus");
+            _this139.expressed = params.get("expressed");
+            _this139.BuyerUserId = params.get("BuyerUserId");
+            _this139.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this139.SellerPropertyId = params.get("SellerPropertyId");
+            _this139.SellerUSerId = params.get("SellerUSerId");
           });
         }
       }, {
@@ -18131,7 +18171,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this138 = this;
+          var _this140 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -18140,31 +18180,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this138.Lookingpostcode = params.get("Lookingpostcode");
-            _this138.Lookingstate = params.get("Lookingstate");
-            _this138.LookingAddress = params.get("LookingAddress");
-            _this138.norooms = params.get("Roomsmax");
-            _this138.PropertyCondition = params.get("PropertyCondition");
-            _this138.MaxAmount = params.get("MaxAmount");
-            _this138.PropertyType = params.get("PropertyType");
-            _this138.ownership = params.get("ownership");
-            _this138.features = params.get("features");
-            _this138.matchStatus = params.get("matchStatus");
-            _this138.propertyId = params.get("propertyId");
-            _this138.expressed = params.get("expressed");
-            _this138.userId = params.get("UserId");
-            _this138.sellerId = params.get("sellerId");
-            _this138.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this138.BuyerUserId = params.get("BuyerUserId");
-            _this138.SellerPropertyId = params.get("SellerPropertyId");
-            _this138.SellerUserId = params.get("SellerUserId");
+            _this140.Lookingpostcode = params.get("Lookingpostcode");
+            _this140.Lookingstate = params.get("Lookingstate");
+            _this140.LookingAddress = params.get("LookingAddress");
+            _this140.norooms = params.get("Roomsmax");
+            _this140.PropertyCondition = params.get("PropertyCondition");
+            _this140.MaxAmount = params.get("MaxAmount");
+            _this140.PropertyType = params.get("PropertyType");
+            _this140.ownership = params.get("ownership");
+            _this140.features = params.get("features");
+            _this140.matchStatus = params.get("matchStatus");
+            _this140.propertyId = params.get("propertyId");
+            _this140.expressed = params.get("expressed");
+            _this140.userId = params.get("UserId");
+            _this140.sellerId = params.get("sellerId");
+            _this140.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this140.BuyerUserId = params.get("BuyerUserId");
+            _this140.SellerPropertyId = params.get("SellerPropertyId");
+            _this140.SellerUserId = params.get("SellerUserId");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.HttpService.getMatchesSeller().subscribe(function (sellerData) {
             sellerData.forEach(function (element) {
-              if (element.myId == _this138.userId && element.matchStatus == "pending") {
-                _this138.buyerProperty = {
+              if (element.myId == _this140.userId && element.matchStatus == "pending") {
+                _this140.buyerProperty = {
                   detail: element,
                   propertyId: element.id
                 };
@@ -18173,26 +18213,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
           this.HttpService.getPropertyIdMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this138.uid && element.propertyId == _this138.propertyId && element.Type == "BuyerSelected") {
-                _this138.expressed = "true";
+              if (element.UserId == _this140.uid && element.propertyId == _this140.propertyId && element.Type == "BuyerSelected") {
+                _this140.expressed = "true";
               }
             });
           });
           this.HttpService.getBlueNotificationContent().subscribe(function (data) {
-            _this138.notificationOverlay = data;
-            _this138.notificationContent = _this138.notificationOverlay[0].BuyerMatchesConfirmInterestNotification;
+            _this140.notificationOverlay = data;
+            _this140.notificationContent = _this140.notificationOverlay[0].BuyerMatchesConfirmInterestNotification;
           });
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this139 = this;
+          var _this141 = this;
 
           this["return"] = this.MatchesBuyerService.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this139.createSellerNotification();
+              _this141.createSellerNotification();
 
-              _this139.backClicked();
+              _this141.backClicked();
             }
           });
         }
@@ -18217,7 +18257,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createOther",
         value: function createOther() {
-          var _this140 = this;
+          var _this142 = this;
 
           this.matchesSeller = {
             BuyerDetails: this.buyerDetails,
@@ -18229,7 +18269,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           };
           this["return"] = this.MatchesBuyerService.matchesBuyerCreate(this.userId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this140.addToExpressCollection();
+              _this142.addToExpressCollection();
             }
           });
         }
@@ -18246,30 +18286,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this141 = this;
+          var _this143 = this;
 
           this.MatchesBuyerService.getSeller(this.SellerUserId, this.SellerPropertyId).then(function (res) {
-            _this141.userName = res.data().username;
-            _this141.usertitle = res.data().usertitle;
-            _this141.PropertyFor = res.data().PropertyFor;
-            _this141.price = res.data().MaxAmount;
-            _this141.postcode = res.data().Lookingpostcode;
-            _this141.Streetname = res.data().LookingStreetname;
-            _this141.PropertyTypes = res.data().PropertyType;
-            _this141.Maxroom = res.data().Maxrooms;
-            _this141.ownerships = res.data().ownership;
-            _this141.Bathrooms = res.data().Maxbathrooms;
-            _this141.Reception = res.data().Maxreception;
+            _this143.userName = res.data().username;
+            _this143.usertitle = res.data().usertitle;
+            _this143.PropertyFor = res.data().PropertyFor;
+            _this143.price = res.data().MaxAmount;
+            _this143.postcode = res.data().Lookingpostcode;
+            _this143.Streetname = res.data().LookingStreetname;
+            _this143.PropertyTypes = res.data().PropertyType;
+            _this143.Maxroom = res.data().Maxrooms;
+            _this143.ownerships = res.data().ownership;
+            _this143.Bathrooms = res.data().Maxbathrooms;
+            _this143.Reception = res.data().Maxreception;
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this142 = this;
+          var _this144 = this;
 
           console.log(this.BuyerUserId, this.BuyerPropertyId);
           this.MatchesBuyerService.getBuyer(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this142.buyerDetails = res.data();
+            _this144.buyerDetails = res.data();
           });
         }
       }]);
@@ -18826,7 +18866,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesToSellSelectedDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this143 = this;
+          var _this145 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -18835,18 +18875,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this143.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
+            _this145.Lookingpostcode = params.get("Lookingpostcode"); // this.ChainStatus = params.get("ChainStatus");
 
-            _this143.FinancialPosition = params.get("FinancialPosition");
-            _this143.Type = params.get("PropertyType");
-            _this143.Position = params.get("Position");
-            _this143.matchStatus = params.get("matchStatus");
-            _this143.propertyId = params.get("PropBuyerId");
-            _this143.BuyerPropertyId = params.get("BuyerPropertyId");
-            _this143.BuyerUserId = params.get("BuyerUserId");
-            console.log(_this143.BuyerPropertyId);
-            console.log(_this143.BuyerUserId);
-            console.log(_this143.propertyId);
+            _this145.FinancialPosition = params.get("FinancialPosition");
+            _this145.Type = params.get("PropertyType");
+            _this145.Position = params.get("Position");
+            _this145.matchStatus = params.get("matchStatus");
+            _this145.propertyId = params.get("PropBuyerId");
+            _this145.BuyerPropertyId = params.get("BuyerPropertyId");
+            _this145.BuyerUserId = params.get("BuyerUserId");
+            console.log(_this145.BuyerPropertyId);
+            console.log(_this145.BuyerUserId);
+            console.log(_this145.propertyId);
           });
           this.getBuyerData();
         }
@@ -18858,26 +18898,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this144 = this;
+          var _this146 = this;
 
           this.MatchesSellerPendingService.getBuyerRequirement(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this144.buyingPosition = res.data().Position;
-            _this144.buyerFinancialPosition = res.data().FinancialPosition;
-            _this144.BuyerPropertyType = res.data().PropertyType;
-            _this144.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this144.BuyerRoommin = res.data().Roommin;
-            _this144.BuyerRoomsmax = res.data().Roomsmax;
-            _this144.username = res.data().username;
-            _this144.usertitle = res.data().usertitle;
-            _this144.buyerPropertyFor = res.data().PropertyFor;
-            _this144.PropertyType = res.data().PropertyType;
-            _this144.Ownership = res.data().Ownership;
-            _this144.LookingStreetname = res.data().LookingStreetname;
-            _this144.Conditions = res.data().Conditions;
-            _this144.Maxbathroom = res.data().Maxbathroom;
-            _this144.Maxreception = res.data().Maxreception;
-            _this144.MinAmount = res.data().MinAmount;
-            _this144.MaxAmount = res.data().MaxAmount;
+            _this146.buyingPosition = res.data().Position;
+            _this146.buyerFinancialPosition = res.data().FinancialPosition;
+            _this146.BuyerPropertyType = res.data().PropertyType;
+            _this146.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this146.BuyerRoommin = res.data().Roommin;
+            _this146.BuyerRoomsmax = res.data().Roomsmax;
+            _this146.username = res.data().username;
+            _this146.usertitle = res.data().usertitle;
+            _this146.buyerPropertyFor = res.data().PropertyFor;
+            _this146.PropertyType = res.data().PropertyType;
+            _this146.Ownership = res.data().Ownership;
+            _this146.LookingStreetname = res.data().LookingStreetname;
+            _this146.Conditions = res.data().Conditions;
+            _this146.Maxbathroom = res.data().Maxbathroom;
+            _this146.Maxreception = res.data().Maxreception;
+            _this146.MinAmount = res.data().MinAmount;
+            _this146.MaxAmount = res.data().MaxAmount;
           });
         }
       }]);
@@ -19007,7 +19047,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this145 = this;
+          var _this147 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -19018,39 +19058,39 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this145.sellerProperty.push({
+              _this147.sellerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this145.propertyLength = _this145.sellerProperty.length;
+              _this147.propertyLength = _this147.sellerProperty.length;
             });
 
-            _this145.getExpressedListingIds();
+            _this147.getExpressedListingIds();
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this145.buyerProperty.push({
+              _this147.buyerProperty.push({
                 detail: element.data(),
                 propertyId: element.id
               });
 
-              _this145.sellerLength = _this145.buyerProperty.length;
+              _this147.sellerLength = _this147.buyerProperty.length;
 
-              _this145.getExpressedListingIds();
+              _this147.getExpressedListingIds();
             });
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this146 = this;
+          var _this148 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this146.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this146.distinctExpressedUid.push(item.data().propertyId);
+              if (_this148.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this148.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -19320,7 +19360,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this147 = this;
+          var _this149 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -19330,29 +19370,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             console.log(params);
-            _this147.Lookingpostcode = params.get("Lookingpostcode").trim();
-            _this147.ChainStatus = params.get("ChainStatus");
-            _this147.norooms = params.get("Roomsmax");
-            _this147.PropertyCondition = params.get("PropertyCondition");
-            _this147.Conditions = params.get("Conditions");
-            _this147.MinAmount = params.get("MinAmount");
-            _this147.Type = params.get("Type");
-            _this147.MaxAmount = params.get("MaxAmount");
-            _this147.id = params.get("id");
-            _this147.propertyId = params.get("CurrentpropertyId");
-            _this147.PropertyFor = params.get("PropertyFor");
-            _this147.BuyerUserId = params.get("buyerId");
-            _this147.BuyerPropertyId = params.get("propertyId");
-            _this147.SellerPropertyId = params.get("UserId");
+            _this149.Lookingpostcode = params.get("Lookingpostcode").trim();
+            _this149.ChainStatus = params.get("ChainStatus");
+            _this149.norooms = params.get("Roomsmax");
+            _this149.PropertyCondition = params.get("PropertyCondition");
+            _this149.Conditions = params.get("Conditions");
+            _this149.MinAmount = params.get("MinAmount");
+            _this149.Type = params.get("Type");
+            _this149.MaxAmount = params.get("MaxAmount");
+            _this149.id = params.get("id");
+            _this149.propertyId = params.get("CurrentpropertyId");
+            _this149.PropertyFor = params.get("PropertyFor");
+            _this149.BuyerUserId = params.get("buyerId");
+            _this149.BuyerPropertyId = params.get("propertyId");
+            _this149.SellerPropertyId = params.get("UserId");
           });
           this.AgentService.getAgent(this.uid).subscribe(function (ref) {
             ref.forEach(function (elements) {
-              _this147.agents.push({
+              _this149.agents.push({
                 Detail: elements.data(),
                 uid: elements.data().uid
               });
 
-              _this147.testagents.push(elements.data().uid);
+              _this149.testagents.push(elements.data().uid);
             });
           }); // this.HttpService.getAgents().subscribe((agent) => {
           //   agent.forEach(elements => {
@@ -19390,7 +19430,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
-          var _this148 = this;
+          var _this150 = this;
 
           this.notification = {
             time: this.now,
@@ -19401,7 +19441,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             Lastseen: null
           };
           this["return"] = this.AgentService.createNotification(this.BuyerUserId, this.notification).then(function (data) {
-            _this148._router.navigate(["/mymatches"]);
+            _this150._router.navigate(["/mymatches"]);
           });
         }
       }, {
@@ -19417,19 +19457,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "agentDetailEntry",
         value: function agentDetailEntry(agentuid) {
-          var _this149 = this;
+          var _this151 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this149.sellerDetails = rest.data();
+            _this151.sellerDetails = rest.data();
 
-            _this149.AgentService.getBuyerrDetails(_this149.BuyerUserId, _this149.BuyerPropertyId).then(function (rest) {
-              _this149.BuyerDetails = rest.data();
-              _this149.details = {
-                Seller: _this149.sellerDetails,
-                Buyer: _this149.BuyerDetails,
+            _this151.AgentService.getBuyerrDetails(_this151.BuyerUserId, _this151.BuyerPropertyId).then(function (rest) {
+              _this151.BuyerDetails = rest.data();
+              _this151.details = {
+                Seller: _this151.sellerDetails,
+                Buyer: _this151.BuyerDetails,
                 UserId: agentuid
               };
-              _this149["return"] = _this149.AgentService.matchesAgentSellerCreate(agentuid, _this149.details).then(function (data) {});
+              _this151["return"] = _this151.AgentService.matchesAgentSellerCreate(agentuid, _this151.details).then(function (data) {});
             });
           });
           this.BuyerDetails = {
@@ -19461,20 +19501,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this150 = this;
+          var _this152 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this150.sellerDetails = rest.data();
+            _this152.sellerDetails = rest.data();
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this151 = this;
+          var _this153 = this;
 
           console.log(this.BuyerUserId, this.BuyerPropertyId);
           this.AgentService.getBuyerrDetails(this.BuyerUserId, this.BuyerPropertyId).then(function (rest) {
-            _this151.BuyerDetails = rest.data();
+            _this153.BuyerDetails = rest.data();
           });
         }
       }]);
@@ -19863,7 +19903,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this152 = this;
+          var _this154 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -19872,24 +19912,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this152.Lookingpostcode = params.get("Lookingpostcode");
-            _this152.ChainStatus = params.get("ChainStatus");
-            _this152.Conditions = params.get("Conditions");
-            _this152.Position = params.get("Position");
-            _this152.MinAmount = params.get("MinAmount");
-            _this152.MaxAmount = params.get("MaxAmount");
-            _this152.Type = params.get("PropertyType");
-            _this152.matchStatus = params.get("matchStatus");
-            _this152.propertyId = params.get("propertyId").trim();
-            _this152.expressed = params.get("expressed");
-            _this152.PropertyFor = params.get("PropertyFor");
-            _this152.buyerPropertyId = params.get("id");
-            _this152.buyerUserId = params.get("UserId");
-            _this152.SellerPropertyID = params.get("buyerId");
+            _this154.Lookingpostcode = params.get("Lookingpostcode");
+            _this154.ChainStatus = params.get("ChainStatus");
+            _this154.Conditions = params.get("Conditions");
+            _this154.Position = params.get("Position");
+            _this154.MinAmount = params.get("MinAmount");
+            _this154.MaxAmount = params.get("MaxAmount");
+            _this154.Type = params.get("PropertyType");
+            _this154.matchStatus = params.get("matchStatus");
+            _this154.propertyId = params.get("propertyId").trim();
+            _this154.expressed = params.get("expressed");
+            _this154.PropertyFor = params.get("PropertyFor");
+            _this154.buyerPropertyId = params.get("id");
+            _this154.buyerUserId = params.get("UserId");
+            _this154.SellerPropertyID = params.get("buyerId");
           });
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this152.notificationContent = element.data().MynestimateBuyerDetails;
+              _this154.notificationContent = element.data().MynestimateBuyerDetails;
             });
           });
           this.getBuyerData();
@@ -19912,17 +19952,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "check",
         value: function check() {
-          var _this153 = this;
+          var _this155 = this;
 
           this.HttpService.getPropertyIdMatches().subscribe(function (data) {
             console.log(data.length);
             data.forEach(function (elements) {
-              if (elements.Type == "Agent_confirmed" && elements.UserId == _this153.uid && elements.PropertyId == _this153.propertyId) {
-                _this153.expressed = "true";
+              if (elements.Type == "Agent_confirmed" && elements.UserId == _this155.uid && elements.PropertyId == _this155.propertyId) {
+                _this155.expressed = "true";
               }
 
-              if (elements.Type != "Agent_confirmed" && elements.UserId != _this153.uid && elements.PropertyId != _this153.propertyId) {
-                _this153.expressed = "false";
+              if (elements.Type != "Agent_confirmed" && elements.UserId != _this155.uid && elements.PropertyId != _this155.propertyId) {
+                _this155.expressed = "false";
               }
             });
           });
@@ -19930,25 +19970,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this154 = this;
+          var _this156 = this;
 
           this.SelectedMyMatchesService.getBuyerRequirement(this.buyerUserId, this.buyerPropertyId).then(function (res) {
-            _this154.buyerDetails = res.data();
-            _this154.buyingPosition = res.data().Position;
-            _this154.buyerFinancialPosition = res.data().FinancialPosition;
-            _this154.BuyerPropertyType = res.data().PropertyType;
-            _this154.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this154.BuyerRoommin = res.data().Roommin;
-            _this154.BuyerRoomsmax = res.data().Roomsmax;
-            _this154.username = res.data().username;
-            _this154.usertitle = res.data().usertitle;
-            _this154.buyerPropertyFor = res.data().PropertyFor;
-            _this154.PropertyType = res.data().PropertyType;
-            _this154.Ownership = res.data().Ownership;
-            _this154.LookingStreetname = res.data().LookingStreetname;
-            _this154.Conditions = res.data().Conditions;
-            _this154.Maxbathroom = res.data().Maxbathroom;
-            _this154.Maxreception = res.data().Maxreception;
+            _this156.buyerDetails = res.data();
+            _this156.buyingPosition = res.data().Position;
+            _this156.buyerFinancialPosition = res.data().FinancialPosition;
+            _this156.BuyerPropertyType = res.data().PropertyType;
+            _this156.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this156.BuyerRoommin = res.data().Roommin;
+            _this156.BuyerRoomsmax = res.data().Roomsmax;
+            _this156.username = res.data().username;
+            _this156.usertitle = res.data().usertitle;
+            _this156.buyerPropertyFor = res.data().PropertyFor;
+            _this156.PropertyType = res.data().PropertyType;
+            _this156.Ownership = res.data().Ownership;
+            _this156.LookingStreetname = res.data().LookingStreetname;
+            _this156.Conditions = res.data().Conditions;
+            _this156.Maxbathroom = res.data().Maxbathroom;
+            _this156.Maxreception = res.data().Maxreception;
           });
         }
       }]);
@@ -20441,30 +20481,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this155 = this;
+          var _this157 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this155.uid) {
-                _this155.user.Name = element.data().Name;
-                _this155.user.Email = element.data().email;
+              if (element.data().uid == _this157.uid) {
+                _this157.user.Name = element.data().Name;
+                _this157.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this155.user.DOB = element.data().DOB.toDate();
+                  _this157.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this155.user.Phone = element.data().Phone;
+                  _this157.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this155.user.Currentaddress = element.data().Currentaddress;
+                  _this157.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this155.user.prefrence = element.data().prefrence;
+                  _this157.user.prefrence = element.data().prefrence;
                 }
               }
             });
@@ -20557,13 +20597,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
-          var _this156 = this;
+          var _this158 = this;
 
           this.isLoading = true;
           this["return"] = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this156.isLoading = false;
+            _this158.isLoading = false;
 
-            _this156.alert();
+            _this158.alert();
           });
         }
       }, {
@@ -20825,31 +20865,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this157 = this;
+          var _this159 = this;
 
           this.initProfile();
           new Date().getTime() / 1000;
           document.getElementById("custom").style.overflowY = "overlay";
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this157.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this157.userData));
+              _this159.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this159.userData));
 
-              _this157.LoggedIn(); //Notification Show
+              _this159.LoggedIn(); //Notification Show
 
 
-              _this157.NavigationService.Notification(_this157.uid).subscribe(function (notification) {
+              _this159.NavigationService.Notification(_this159.uid).subscribe(function (notification) {
                 notification.forEach(function (element) {
-                  _this157.bellShow = true;
-                  _this157.belliconone = false;
-                  _this157.bellicontwo = false;
+                  _this159.bellShow = true;
+                  _this159.belliconone = false;
+                  _this159.bellicontwo = false;
                 });
               });
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this157.LoggedOut();
+              _this159.LoggedOut();
             }
           }); // this.userData = JSON.parse(sessionStorage.getItem('currentUser'));
           // if (this.userData != null) {
@@ -20872,8 +20912,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this157.topLine = element.data().topLine;
-              _this157.secondLine = element.data().SecondLine;
+              _this159.topLine = element.data().topLine;
+              _this159.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -20895,46 +20935,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this158 = this;
+          var _this160 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this158.sellerProperty.push(element.data());
+                _this160.sellerProperty.push(element.data());
               }
             });
-            _this158.noSellerOfMatche = _this158.sellerProperty.length;
-            _this158.matches = _this158.buyerProperty.length + _this158.sellerProperty.length;
+            _this160.noSellerOfMatche = _this160.sellerProperty.length;
+            _this160.matches = _this160.buyerProperty.length + _this160.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this158.buyerProperty.push(element.data());
+              _this160.buyerProperty.push(element.data());
             });
-            _this158.noBuyerMatches = _this158.buyerProperty.length;
-            _this158.matches = _this158.buyerProperty.length + _this158.sellerProperty.length;
+            _this160.noBuyerMatches = _this160.buyerProperty.length;
+            _this160.matches = _this160.buyerProperty.length + _this160.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this159 = this;
+          var _this161 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this159.bellicon.push(item.data());
+              _this161.bellicon.push(item.data());
 
-              if (_this159.bellicon.length > 0) {
-                _this159.belliconone = false;
+              if (_this161.bellicon.length > 0) {
+                _this161.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this159.confirmInterest.push(item.data());
+                _this161.confirmInterest.push(item.data());
 
-                _this159.notifications = _this159.confirmInterest.length;
+                _this161.notifications = _this161.confirmInterest.length;
               } else {
-                _this159.notifications = 0;
+                _this161.notifications = 0;
               }
             });
           });
@@ -20994,24 +21034,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this160 = this;
+          var _this162 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this160.isLoading = false;
+            _this162.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this161 = this;
+          var _this163 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this161.user.Lastseen = _this161.now;
-            _this161["return"] = _this161.FormsService.createUserTime(_this161.user).then(function (data) {});
-            _this161.isLoading = false;
+            _this163.user.Lastseen = _this163.now;
+            _this163["return"] = _this163.FormsService.createUserTime(_this163.user).then(function (data) {});
+            _this163.isLoading = false;
             window.location.reload();
           });
         } //Signup Google
@@ -21019,15 +21059,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this162 = this;
+          var _this164 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this162.user.Lastseen = _this162.now;
-            _this162["return"] = _this162.FormsService.createUserTime(_this162.user).then(function (data) {});
-            _this162.isLoading = false;
+            _this164.user.Lastseen = _this164.now;
+            _this164["return"] = _this164.FormsService.createUserTime(_this164.user).then(function (data) {});
+            _this164.isLoading = false;
 
-            _this162.initProfile();
+            _this164.initProfile();
 
             window.location.reload();
           });
@@ -21035,28 +21075,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this163 = this;
+          var _this165 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this163.KnowUser.push(element.data());
+              _this165.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this163.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var dialogRef = _this165.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this163.isLoading = false;
+                _this165.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this163.authService.SignIn(email, pass).then(function (data) {
-                  _this163.isLoading = false;
+                _this165.authService.SignIn(email, pass).then(function (data) {
+                  _this165.isLoading = false;
 
-                  _this163.initProfile();
+                  _this165.initProfile();
 
                   window.location.reload();
                 });
@@ -21084,12 +21124,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
-          var _this164 = this;
+          var _this166 = this;
 
           this.authService.SignUp(email, pass, displayName, User).then(function (data) {
-            _this164.isLoading = false;
+            _this166.isLoading = false;
 
-            _this164.initProfile();
+            _this166.initProfile();
           });
         }
       }, {
@@ -21120,14 +21160,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this165 = this;
+          var _this167 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this165.confirmInterests.push({
+                _this167.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -21177,13 +21217,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this166 = this;
+          var _this168 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this166.confirmInterests.push({
+              _this168.confirmInterests.push({
                 Detail: item.data(),
                 id: item.id
               });
@@ -21193,22 +21233,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this167 = this;
+          var _this169 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.confirmInterests = [];
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              _this167.confirmInterests.push({
+              _this169.confirmInterests.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              if (_this167.confirmInterests.length > 0) {
+              if (_this169.confirmInterests.length > 0) {
                 document.getElementById("custom").style.overflowY = "hidden";
-                _this167.notificationoverlay = true;
-                _this167.bellicontwo = true;
+                _this169.notificationoverlay = true;
+                _this169.bellicontwo = true;
               }
             });
           });
@@ -21216,7 +21256,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this168 = this;
+          var _this170 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -21224,9 +21264,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this168.uid) {
+              if (element.UserId == _this170.uid) {
                 document.getElementById("custom").style.overflowY = "overlay";
-                _this168.confirmInterests = null;
+                _this170.confirmInterests = null;
               }
             });
           });
@@ -21490,19 +21530,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this169 = this;
+          var _this171 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this169.confirmInterest.push({
+              _this171.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this169.confirmInterest);
+            console.log(_this171.confirmInterest);
           });
         }
       }, {
@@ -21793,13 +21833,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this170 = this;
+          var _this172 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this170.facebook = element.data().Facebook;
-              _this170.Instagram = element.data().Instragram;
-              _this170.Twitter = element.data().Twitter;
+              _this172.facebook = element.data().Facebook;
+              _this172.Instagram = element.data().Instragram;
+              _this172.Twitter = element.data().Twitter;
             });
           });
         }
@@ -22066,7 +22106,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "\n\n\n  .fa-events-icons-ready .cdk-global-scrollblock {\n   \n    width: 100%;\n    overflow-y: scroll;\n    position: inherit !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWlzYy9hbGVydEZvcm1kaWFsb2cvYWxlcnRGb3JtZGlhbG9nLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0VBR0U7O0lBRUUsV0FBVztJQUNYLGtCQUFrQjtJQUNsQiw0QkFBNEI7QUFDaEMiLCJmaWxlIjoic3JjL2FwcC9NaXNjL2FsZXJ0Rm9ybWRpYWxvZy9hbGVydEZvcm1kaWFsb2cuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuXG5cbiAgLmZhLWV2ZW50cy1pY29ucy1yZWFkeSAuY2RrLWdsb2JhbC1zY3JvbGxibG9jayB7XG4gICBcbiAgICB3aWR0aDogMTAwJTtcbiAgICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gICAgcG9zaXRpb246IGluaGVyaXQgIWltcG9ydGFudDtcbn0iXX0= */";
+    __webpack_exports__["default"] = "\n\n\n  .fa-events-icons-ready .cdk-global-scrollblock {\n   \n    width: 100%;\n    overflow-y: scroll;\n    position: inherit !important;\n}\n.fixed\n{\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWlzYy9hbGVydEZvcm1kaWFsb2cvYWxlcnRGb3JtZGlhbG9nLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0VBR0U7O0lBRUUsV0FBVztJQUNYLGtCQUFrQjtJQUNsQiw0QkFBNEI7QUFDaEM7QUFDQTs7RUFFRSxhQUFhO0VBQ2IsdUJBQXVCO0VBQ3ZCLG1CQUFtQjtBQUNyQiIsImZpbGUiOiJzcmMvYXBwL01pc2MvYWxlcnRGb3JtZGlhbG9nL2FsZXJ0Rm9ybWRpYWxvZy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG5cblxuICAuZmEtZXZlbnRzLWljb25zLXJlYWR5IC5jZGstZ2xvYmFsLXNjcm9sbGJsb2NrIHtcbiAgIFxuICAgIHdpZHRoOiAxMDAlO1xuICAgIG92ZXJmbG93LXk6IHNjcm9sbDtcbiAgICBwb3NpdGlvbjogaW5oZXJpdCAhaW1wb3J0YW50O1xufVxuLmZpeGVkXG57XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufSJdfQ== */";
     /***/
   },
 
@@ -22780,14 +22820,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this171 = this;
+          var _this173 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this171.idToken = params['id_token'];
-            _this171.accessToken = params['access_token'];
+            _this173.idToken = params['id_token'];
+            _this173.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this171._router.navigate(['/']).then(function () {
+            _this173._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -22943,10 +22983,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this172 = this;
+          var _this174 = this;
 
           this.HttpService.getPrivacy().subscribe(function (data) {
-            _this172.privacyPolicy = data[0].PrivacyPolicy;
+            _this174.privacyPolicy = data[0].PrivacyPolicy;
           });
         }
       }]);
@@ -23582,41 +23622,41 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this173 = this;
+          var _this175 = this;
 
           this.authService.GoogleAuth().then(function (data) {
-            _this173.loggedIn = true;
+            _this175.loggedIn = true;
 
-            _this173.userLogged();
+            _this175.userLogged();
 
-            _this173.items();
+            _this175.items();
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this174 = this;
+          var _this176 = this;
 
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this174.loggedIn = true;
+            _this176.loggedIn = true;
 
-            _this174.items();
+            _this176.items();
 
-            _this174.userLogged();
+            _this176.userLogged();
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this175 = this;
+          var _this177 = this;
 
           this.authService.SignIn(email, pass).then(function (data) {
             window.location.reload();
 
-            _this175.items();
+            _this177.items();
 
-            _this175.userLogged();
+            _this177.userLogged();
           });
         }
       }, {
@@ -23629,84 +23669,84 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this176 = this;
+          var _this178 = this;
 
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this176.BuyerDetail.push(element.data());
+              _this178.BuyerDetail.push(element.data());
             });
-            localStorage.setItem("AllUserDetail", JSON.stringify(_this176.BuyerDetail));
-            _this176.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
+            localStorage.setItem("AllUserDetail", JSON.stringify(_this178.BuyerDetail));
+            _this178.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
           });
         }
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this177 = this;
+          var _this179 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this177.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this177.userData));
+              _this179.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this179.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this177.loggedIn = true;
+              _this179.loggedIn = true;
 
-              _this177.agentItem();
+              _this179.agentItem();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this177.loggedIn = false;
+              _this179.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this178 = this;
+          var _this180 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this178.Companyname = element.data().company;
-              _this178.Address = element.data().address;
-              _this178.Postcode = element.data().postcode;
-              _this178.Phonenumber = element.data().phone;
-              _this178.Jobtitle = element.data().jobtitle;
-              _this178.SinglePercentage = element.data().solefees;
-              _this178.Multipercentage = element.data().multiplefees;
-              _this178.Image = element.data().image;
-              _this178.Fullname = element.data().fullname;
-              _this178.PropertyId = element.id;
-              _this178.UserId = _this178.user.uid;
+              _this180.Companyname = element.data().company;
+              _this180.Address = element.data().address;
+              _this180.Postcode = element.data().postcode;
+              _this180.Phonenumber = element.data().phone;
+              _this180.Jobtitle = element.data().jobtitle;
+              _this180.SinglePercentage = element.data().solefees;
+              _this180.Multipercentage = element.data().multiplefees;
+              _this180.Image = element.data().image;
+              _this180.Fullname = element.data().fullname;
+              _this180.PropertyId = element.id;
+              _this180.UserId = _this180.user.uid;
             });
           });
         }
       }, {
         key: "validateEmail",
         value: function validateEmail(email) {
-          var _this179 = this;
+          var _this181 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
           if (re.test(String(email).toLowerCase()) == true) {
             this.HttpService.getAllUsers(email).subscribe(function (data) {
-              _this179.emailData = data;
+              _this181.emailData = data;
 
-              if (_this179.emailData.length == 1) {
-                _this179.emailField = true;
-                _this179.notValidEmail = false;
+              if (_this181.emailData.length == 1) {
+                _this181.emailField = true;
+                _this181.notValidEmail = false;
 
-                if (_this179.emailData[0].AgentType == null) {
-                  _this179.emailField = false;
-                  _this179.notValidEmail = true;
+                if (_this181.emailData[0].AgentType == null) {
+                  _this181.emailField = false;
+                  _this181.notValidEmail = true;
 
-                  var dialogRef = _this179.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_10__["AlertUserTypeComponent"], {
+                  var dialogRef = _this181.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_10__["AlertUserTypeComponent"], {
                     data: {
                       message: "Please Login as Agent"
                     }
                   });
                 }
               } else {
-                _this179.notValidEmail = true;
+                _this181.notValidEmail = true;
               }
             });
           } else {
@@ -23937,7 +23977,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this180 = this;
+          var _this182 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -23946,30 +23986,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this180.id = params.get("id");
+            _this182.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this180.agents = data;
+            _this182.agents = data;
           });
           this.getAgentDetails();
         }
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage) {
-          var _this181 = this;
+          var _this183 = this;
 
           this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-            _this181.Router.navigate(["/Agenthome"]);
+            _this183.Router.navigate(["/Agenthome"]);
           });
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this182 = this;
+          var _this184 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this182.agents = element.data();
+              _this184.agents = element.data();
             });
           });
         }
@@ -24098,7 +24138,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelecteddetailareaComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this183 = this;
+          var _this185 = this;
 
           this.UserDetails = JSON.parse(localStorage.getItem("AllUserDetail"));
           this.Minamount = this.UserDetails[0].Buyer.MinAmount;
@@ -24108,20 +24148,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.ChainStatus = this.UserDetails[0].Buyer.Position;
           this.FormsService.getUser(this.UserDetails[0].Buyer.UserId).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this183.UserDetails[0].Buyer.UserId) {
-                _this183.username = element.data().Name;
-                _this183.email = element.data().email;
-                _this183.Phone = element.data().Phone;
+              if (element.data().uid == _this185.UserDetails[0].Buyer.UserId) {
+                _this185.username = element.data().Name;
+                _this185.email = element.data().email;
+                _this185.Phone = element.data().Phone;
               }
             });
           });
           this.FormsService.getUser(this.UserDetails[0].Seller.UserId).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this183.UserDetails[0].Seller.UserId) {
-                _this183.sellerusername = element.data().Name;
-                _this183.selleremail = element.data().email;
-                _this183.sellerPhone = element.data().Phone;
-                _this183.selleraddress = element.data().Currentaddress;
+              if (element.data().uid == _this185.UserDetails[0].Seller.UserId) {
+                _this185.sellerusername = element.data().Name;
+                _this185.selleremail = element.data().email;
+                _this185.sellerPhone = element.data().Phone;
+                _this185.selleraddress = element.data().Currentaddress;
               }
             });
           });
@@ -24286,28 +24326,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelecteddetailsellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this184 = this;
+          var _this186 = this;
 
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this184.LookingAddress = params.get("LookingAddress");
-            _this184.LookingTown = params.get("LookingTown");
-            _this184.Lookingpostcode = params.get("Lookingpostcode");
-            _this184.Lookingstate = params.get("Lookingstate");
-            _this184.MaxAmount = params.get("MaxAmount");
-            _this184.Maxbathroom = params.get("Maxbathrooms");
-            _this184.Maxreception = params.get("Maxreception");
-            _this184.PropertyCondition = params.get("PropertyCondition");
-            _this184.PropertyType = params.get("PropertyType");
-            _this184.Roomsmax = params.get("Roomsmax");
-            _this184.ownership = params.get("ownership");
-            _this184.UserId = params.get("UserId");
+            _this186.LookingAddress = params.get("LookingAddress");
+            _this186.LookingTown = params.get("LookingTown");
+            _this186.Lookingpostcode = params.get("Lookingpostcode");
+            _this186.Lookingstate = params.get("Lookingstate");
+            _this186.MaxAmount = params.get("MaxAmount");
+            _this186.Maxbathroom = params.get("Maxbathrooms");
+            _this186.Maxreception = params.get("Maxreception");
+            _this186.PropertyCondition = params.get("PropertyCondition");
+            _this186.PropertyType = params.get("PropertyType");
+            _this186.Roomsmax = params.get("Roomsmax");
+            _this186.ownership = params.get("ownership");
+            _this186.UserId = params.get("UserId");
           });
           this.HttpService.getUsers(this.UserId).subscribe(function (data) {
-            _this184.userDetail = data;
-            _this184.username = _this184.userDetail.username;
-            _this184.email = _this184.userDetail.email;
-            _this184.Phone = _this184.userDetail.Phone;
-            _this184.address = _this184.userDetail.CurrentAddress;
+            _this186.userDetail = data;
+            _this186.username = _this186.userDetail.username;
+            _this186.email = _this186.userDetail.email;
+            _this186.Phone = _this186.userDetail.Phone;
+            _this186.address = _this186.userDetail.CurrentAddress;
           });
         }
       }, {
@@ -25864,7 +25904,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location) {
-        var _this185 = this;
+        var _this187 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -25878,8 +25918,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this185.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this185.userData));
+            _this187.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this187.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -26054,7 +26094,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthSignup",
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee58() {
-            var _this186 = this;
+            var _this188 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee58$(_context58) {
@@ -26070,7 +26110,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     this.ngZone.run(function () {
                       console.log(result.user);
 
-                      _this186.SetUserData(result.user);
+                      _this188.SetUserData(result.user);
                     });
                     _context58.next = 10;
                     break;
@@ -27216,56 +27256,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this187 = this;
+          var _this189 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
             password: password
           }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
-            if (response.jwt && response.user) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem('updatedUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentJwt', response.jwt);
-              _this187.userData = response.user;
-              _this187.authToken = sessionStorage.getItem('currentJwt');
-
-              _this187.currentUserSubject.next(response.user);
-            }
-
-            return response.user;
-          }));
-        }
-      }, {
-        key: "Googlelogin",
-        value: function Googlelogin(token, accessToken) {
-          var _this188 = this;
-
-          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            // login successful if there's a jwt token in the response
-            if (response.jwt && response.user) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem('updatedUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentJwt', response.jwt);
-              _this188.userData = response.user;
-              _this188.authToken = sessionStorage.getItem('currentJwt');
-
-              _this188.currentUserSubject.next(response.user);
-            }
-
-            return response.user;
-          }));
-        }
-      }, {
-        key: "Facebooklogin",
-        value: function Facebooklogin() {
-          var _this189 = this;
-
-          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            console.log(response); // login successful if there's a jwt token in the response
-
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
@@ -27281,9 +27278,52 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
+        key: "Googlelogin",
+        value: function Googlelogin(token, accessToken) {
+          var _this190 = this;
+
+          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            // login successful if there's a jwt token in the response
+            if (response.jwt && response.user) {
+              // store user details and jwt token in local storage to keep user logged in between page refreshes
+              localStorage.setItem('updatedUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentJwt', response.jwt);
+              _this190.userData = response.user;
+              _this190.authToken = sessionStorage.getItem('currentJwt');
+
+              _this190.currentUserSubject.next(response.user);
+            }
+
+            return response.user;
+          }));
+        }
+      }, {
+        key: "Facebooklogin",
+        value: function Facebooklogin() {
+          var _this191 = this;
+
+          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            console.log(response); // login successful if there's a jwt token in the response
+
+            if (response.jwt && response.user) {
+              // store user details and jwt token in local storage to keep user logged in between page refreshes
+              localStorage.setItem('updatedUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentJwt', response.jwt);
+              _this191.userData = response.user;
+              _this191.authToken = sessionStorage.getItem('currentJwt');
+
+              _this191.currentUserSubject.next(response.user);
+            }
+
+            return response.user;
+          }));
+        }
+      }, {
         key: "logout",
         value: function logout() {
-          var _this190 = this;
+          var _this192 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -27291,7 +27331,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this190.router.navigate(["/homenew"]);
+            _this192.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -27508,19 +27548,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this191 = this;
+          var _this193 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this191.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this191.userData));
+              _this193.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this193.userData));
 
-              _this191.LoggedIn();
+              _this193.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this191.LoggedOut();
+              _this193.LoggedOut();
             }
           });
           this.getNotificationContent();
@@ -27541,58 +27581,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this192 = this;
+          var _this194 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this192.isLoading = false;
+            _this194.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this193 = this;
+          var _this195 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this193.isLoading = false;
+            _this195.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this194 = this;
+          var _this196 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this194.isLoading = false;
+            _this196.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this195 = this;
+          var _this197 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this195.KnowUser.push(element.data());
+              _this197.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this195.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this197.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this195.isLoading = false;
+                _this197.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this195.authService.SignIn(email, pass).then(function (data) {
-                  _this195.isLoading = false;
+                _this197.authService.SignIn(email, pass).then(function (data) {
+                  _this197.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -27652,23 +27692,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this196 = this;
+          var _this198 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this196.notificationContent = element.data().SingupFromMenu;
+              _this198.notificationContent = element.data().SingupFromMenu;
             });
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this197 = this;
+          var _this199 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this197.topLine = element.data().topLine;
-              _this197.secondLine = element.data().SecondLine;
+              _this199.topLine = element.data().topLine;
+              _this199.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -27779,10 +27819,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this198 = this;
+          var _this200 = this;
 
           this.HttpService.getTerms().subscribe(function (data) {
-            _this198.termsCondition = data[0].Terms;
+            _this200.termsCondition = data[0].Terms;
           });
         }
       }]);
