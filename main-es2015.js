@@ -114,6 +114,71 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.html":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.html ***!
+  \**************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n    <div class=\"custom-loader\">\n      <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n      <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n    </div>\n  \n  </div>\n\n<mat-card class=\"home-page-banner\">\n    <div class=\"profile-heading profile-heading-buyer\">\n        Sign Up Form Errors\n    </div>\n\n    <div class=\"fields-error-form\">\n\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Full Name</mat-label>\n            <input matInput name=\"fullname\" [(ngModel)]=\"FullName\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Email\">Company Name</span></mat-label>\n            <input matInput name=\"CompanyName\" [(ngModel)]=\"CompanyName\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Postcode</mat-label>\n            <input matInput name=\"Postcode\" [(ngModel)]=\"Postcode\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Address</mat-label>\n            <input matInput name=\"Address\" [(ngModel)]=\"Address\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Job Title</mat-label>\n            <input matInput name=\"JobTitle\" [(ngModel)]=\"JobTitle\">\n        </mat-form-field>\n\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Email Address</mat-label>\n            <input matInput name=\"EmailAddress\" [(ngModel)]=\"EmailAddress\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Email Validation</mat-label>\n            <input matInput name=\"emailvalidation\" [(ngModel)]=\"emailvalidation\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Password</mat-label>\n            <input matInput name=\"Password\" [(ngModel)]=\"Password\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Office phone</mat-label>\n            <input matInput name=\"officephone\" [(ngModel)]=\"officephone\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Office Phone Validation</mat-label>\n            <input matInput name=\"officephonevalidation\" [(ngModel)]=\"officephonevalidation\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Office Phone Length</mat-label>\n            <input matInput name=\"officephonelength\" [(ngModel)]=\"officephonelength\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Mobile</mat-label>\n            <input matInput name=\"mobile\" [(ngModel)]=\"mobile\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Mobile Validity</mat-label>\n            <input matInput name=\"mobilevalidity\" [(ngModel)]=\"mobilevalidity\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Mobile Length</mat-label>\n            <input matInput name=\"mobilelength\" [(ngModel)]=\"mobilelength\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Sole Fees</mat-label>\n            <input matInput name=\"solefees\" [(ngModel)]=\"solefees\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Sole Fees More Than</mat-label>\n            <input matInput name=\"solefeesmore\" [(ngModel)]=\"solefeesmore\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Sole Fees Less Than</mat-label>\n            <input matInput name=\"solefeesless\" [(ngModel)]=\"solefeesless\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Multiple Fees</mat-label>\n            <input matInput name=\"multiplefees\" [(ngModel)]=\"multiplefees\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Multiple Fees More than</mat-label>\n            <input matInput name=\"multiplefeesmore\" [(ngModel)]=\"multiplefeesmore\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Multiple Fees Less Than than</mat-label>\n            <input matInput name=\"multiplefeesless\" [(ngModel)]=\"multiplefeesless\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Image</mat-label>\n            <input matInput name=\"Image\" [(ngModel)]=\"Image\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Imagesize</mat-label>\n            <input matInput name=\"Imagesize\" [(ngModel)]=\"Imagesize\">\n        </mat-form-field>\n\n\n\n    </div>\n    <div class=\"update-button\" (click)=\"updateOwnerPersonalDetailError()\">\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n    </div>\n</mat-card>");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.html":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.html ***!
+  \**************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n    <div class=\"custom-loader\">\n      <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n      <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n    </div>\n  \n  </div>\n\n<mat-card class=\"home-page-banner\">\n    <div class=\"profile-heading profile-heading-buyer\">\n        Owner/Seeker/Agent My Details Form\n    </div>\n\n    <div class=\"fields-error-form\">\n\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Full Name</mat-label>\n            <input matInput name=\"FullName\" [(ngModel)]=\"FullName\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Email\">Email</span></mat-label>\n            <input matInput name=\"Email\" [(ngModel)]=\"Email\">\n        </mat-form-field>\n\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Phone</mat-label>\n            <input matInput name=\"Phone\" [(ngModel)]=\"Phone\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Date of Birth</mat-label>\n            <input matInput name=\"DOB\" [(ngModel)]=\"DOB\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Validate Date of Birth</mat-label>\n            <input matInput name=\"ValidateDob\" [(ngModel)]=\"ValidateDob\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Address</mat-label>\n            <input matInput name=\"Address\" [(ngModel)]=\"Address\">\n        </mat-form-field>\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Prefrence</mat-label>\n            <input matInput name=\"Prefrence\" [(ngModel)]=\"Prefrence\">\n        </mat-form-field>\n        \n        \n    </div>\n    <div class=\"update-button\" (click)=\"updateMyDetailError()\">\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n    </div>\n</mat-card>\n\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/othererror/othererror.component.html":
+/*!******************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/othererror/othererror.component.html ***!
+  \******************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n    <div class=\"custom-loader\">\n      <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n      <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n    </div>\n  \n  </div>\n\n<mat-card class=\"home-page-banner\">\n    <div class=\"profile-heading profile-heading-buyer\">\n        Other Errors\n    </div>\n\n    <div class=\"fields-error-form\">\n\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Agent SignIn</mat-label>\n            <input matInput name=\"AgentSignIn\" [(ngModel)]=\"AgentSignIn\">\n        </mat-form-field>\n\n\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Email\">User SignIn</span></mat-label>\n            <input matInput name=\"UserSignIn\" [(ngModel)]=\"UserSignIn\">\n        </mat-form-field>\n        <!-- <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Wrong Password</mat-label>\n            <input matInput name=\"WrongPassword\" [(ngModel)]=\"WrongPassword\">\n        </mat-form-field>\n        -->\n\n\n\n    </div>\n    <div class=\"update-button\" (click)=\"updateOtherError()\">\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n    </div>\n</mat-card>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.html":
+/*!**************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.html ***!
+  \**************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n  </div>\n\n</div>\n\n<mat-card class=\"home-page-banner\">\n    <div class=\"profile-heading profile-heading-buyer\">\n      Personal Details/Property Details\n    </div>\n  \n    <div class=\"fields-error-form\">\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\"><span id=\"Email\">Title</span></mat-label>\n        <input matInput name=\"title\" [(ngModel)]=\"Title\" #Emails>\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Full Name</mat-label>\n        <input matInput name=\"fullname\" [(ngModel)]=\"FullName\">\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Date of Birth</mat-label>\n        <input matInput name=\"DateofBirth\" [(ngModel)]=\"DateofBirth\">\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Date of Birth Validate</mat-label>\n        <input matInput name=\"DateofBirthValidate\" [(ngModel)]=\"DateofBirthValidate\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Phone Number Empty</mat-label>\n        <input matInput name=\"PhoneEmpty\" [(ngModel)]=\"PhoneEmpty\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Phone Validation</mat-label>\n        <input matInput name=\"PhoneValidation\" [(ngModel)]=\"PhoneValidation\">\n      </mat-form-field>\n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Phone Length</mat-label>\n        <input matInput name=\"PhoneLength\" [(ngModel)]=\"PhoneLength\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Current Postcode</mat-label>\n        <input matInput name=\"CurrentPostcode\" [(ngModel)]=\"CurrentPostcode\">\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Postcode Length</mat-label>\n        <input matInput name=\"PostcodeLength\" [(ngModel)]=\"PostcodeLength\">\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Current Aaddress</mat-label>\n        <input matInput name=\"CurrentAaddress\" [(ngModel)]=\"CurrentAaddress\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Current Town</mat-label>\n        <input matInput name=\"CurrentTown\" [(ngModel)]=\"CurrentTown\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Current County</mat-label>\n        <input matInput name=\"CurrentCounty\" [(ngModel)]=\"CurrentCounty\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Current Country</mat-label>\n        <input matInput name=\"CurrentCountry\" [(ngModel)]=\"CurrentCountry\">\n      </mat-form-field>\n  \n  \n    </div>\n    <div class=\"update-button\" (click)=\"updateOwnerPersonalDetailError()\">\n      <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n    </div>\n  </mat-card>\n  \n  \n  \n  \n  \n  \n  <div style=\"height: 5vh;\"></div>\n  <mat-card class=\"home-page-banner\">\n    <div class=\"profile-heading profile-heading-buyer\">\n      Property Details Form Errors\n    </div>\n  \n    <div class=\"fields-error-form\">\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\"><span id=\"Email\">Sell/Let</span></mat-label>\n        <input matInput name=\"Buy\" [(ngModel)]=\"Buy\" >\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Looking Postcode</mat-label>\n        <input matInput name=\"LPostcode\" [(ngModel)]=\"LPostcode\">\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Looking Postcode Length</mat-label>\n        <input matInput name=\"LPostcodeLength\" [(ngModel)]=\"LPostcodeLength\">\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Looking Address</mat-label>\n        <input matInput name=\"LAddress\" [(ngModel)]=\"LAddress\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Looking Town</mat-label>\n        <input matInput name=\"LTown\" [(ngModel)]=\"LTown\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Looking County</mat-label>\n        <input matInput name=\"LCounty\" [(ngModel)]=\"LCounty\">\n      </mat-form-field>\n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Looking Country</mat-label>\n        <input matInput name=\"LCountry\" [(ngModel)]=\"LCountry\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Property Type</mat-label>\n        <input matInput name=\"PropertyType\" [(ngModel)]=\"PropertyType\">\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">BedRooms</mat-label>\n        <input matInput name=\"Roommin\" [(ngModel)]=\"Roomsmax\">\n      </mat-form-field>\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Amount</mat-label>\n        <input matInput name=\"MaxAmount\" [(ngModel)]=\"MaxAmount\">\n      </mat-form-field>\n  \n\n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Ownership</mat-label>\n        <input matInput name=\"ownership\" [(ngModel)]=\"ownership\">\n      </mat-form-field>\n  \n  \n     \n    </div>\n    <div class=\"update-button\" (click)=\"updateSeekerPropertyDetailError()\">\n      <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n    </div>\n  </mat-card>\n  \n  \n  \n\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.html":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.html ***!
+  \****************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n  </div>\n\n</div>\n\n\n<mat-card class=\"home-page-banner\">\n  <div class=\"profile-heading profile-heading-buyer\">\n    Personal Details/Property Details\n  </div>\n\n  <div class=\"fields-error-form\">\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\"><span id=\"Email\">Title</span></mat-label>\n      <input matInput name=\"title\" [(ngModel)]=\"Title\" #Emails>\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Full Name</mat-label>\n      <input matInput name=\"fullname\" [(ngModel)]=\"FullName\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Date of Birth</mat-label>\n      <input matInput name=\"DateofBirth\" [(ngModel)]=\"DateofBirth\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Date of Birth Validate</mat-label>\n      <input matInput name=\"DateofBirthValidate\" [(ngModel)]=\"DateofBirthValidate\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Phone Number Empty</mat-label>\n      <input matInput name=\"PhoneEmpty\" [(ngModel)]=\"PhoneEmpty\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Phone Validation</mat-label>\n      <input matInput name=\"PhoneValidation\" [(ngModel)]=\"PhoneValidation\">\n    </mat-form-field>\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Phone Length</mat-label>\n      <input matInput name=\"PhoneLength\" [(ngModel)]=\"PhoneLength\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Current Postcode</mat-label>\n      <input matInput name=\"CurrentPostcode\" [(ngModel)]=\"CurrentPostcode\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Postcode Length</mat-label>\n      <input matInput name=\"PostcodeLength\" [(ngModel)]=\"PostcodeLength\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Current Aaddress</mat-label>\n      <input matInput name=\"CurrentAaddress\" [(ngModel)]=\"CurrentAaddress\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Current Town</mat-label>\n      <input matInput name=\"CurrentTown\" [(ngModel)]=\"CurrentTown\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Current County</mat-label>\n      <input matInput name=\"CurrentCounty\" [(ngModel)]=\"CurrentCounty\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Current Country</mat-label>\n      <input matInput name=\"CurrentCountry\" [(ngModel)]=\"CurrentCountry\">\n    </mat-form-field>\n\n\n  </div>\n  <div class=\"update-button\" (click)=\"updateSeekerPersonalDetailError()\">\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n  </div>\n</mat-card>\n\n\n\n\n\n\n<div style=\"height: 5vh;\"></div>\n<mat-card class=\"home-page-banner\">\n  <div class=\"profile-heading profile-heading-buyer\">\n    Property Details Form Errors\n  </div>\n\n  <div class=\"fields-error-form\">\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\"><span id=\"Email\">Buy/Rent</span></mat-label>\n      <input matInput name=\"Buy\" [(ngModel)]=\"Buy\" >\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Looking Postcode</mat-label>\n      <input matInput name=\"LPostcode\" [(ngModel)]=\"LPostcode\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Looking Postcode Length</mat-label>\n      <input matInput name=\"LPostcodeLength\" [(ngModel)]=\"LPostcodeLength\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Looking Streetname</mat-label>\n      <input matInput name=\"LStreetname\" [(ngModel)]=\"LStreetname\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Looking Town</mat-label>\n      <input matInput name=\"LTown\" [(ngModel)]=\"LTown\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Looking County</mat-label>\n      <input matInput name=\"LCounty\" [(ngModel)]=\"LCounty\">\n    </mat-form-field>\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Looking Country</mat-label>\n      <input matInput name=\"LCountry\" [(ngModel)]=\"LCountry\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Property Type</mat-label>\n      <input matInput name=\"PropertyType\" [(ngModel)]=\"PropertyType\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Minimum Rooms</mat-label>\n      <input matInput name=\"Roommin\" [(ngModel)]=\"Roommin\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Maximum Rooms </mat-label>\n      <input matInput name=\"Roomsmax\" [(ngModel)]=\"Roomsmax\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Minimum Room Validation</mat-label>\n      <input matInput name=\"MinimumRoomValidation\" [(ngModel)]=\"MinimumRoomValidation\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Maximum Room Validation</mat-label>\n      <input matInput name=\"MaximumRoomValidation\" [(ngModel)]=\"MaximumRoomValidation\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Financial/Renting</mat-label>\n      <input matInput name=\"FinancialRenting\" [(ngModel)]=\"FinancialRenting\">\n    </mat-form-field>\n   \n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Financial Position</mat-label>\n      <input matInput name=\"FinancialPosition\" [(ngModel)]=\"FinancialPosition\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Minimum Amount</mat-label>\n      <input matInput name=\"MinAmount\" [(ngModel)]=\"MinAmount\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Maximum Amount</mat-label>\n      <input matInput name=\"MaxAmount\" [(ngModel)]=\"MaxAmount\">\n    </mat-form-field>\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Minimum Amount Validation</mat-label>\n      <input matInput name=\"Min\" [(ngModel)]=\"Min\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Maximum Amount Validation</mat-label>\n      <input matInput name=\"Max\" [(ngModel)]=\"Max\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Validity</mat-label>\n      <input matInput name=\"Validity\" [(ngModel)]=\"Validity\">\n    </mat-form-field>\n\n\n   \n  </div>\n  <div class=\"update-button\" (click)=\"updateSeekerPropertyDetailError()\">\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n  </div>\n</mat-card>\n\n\n\n<div style=\"height: 5vh;\"></div>\n<mat-card class=\"home-page-banner\">\n  <div class=\"profile-heading profile-heading-buyer\">\n    Optional Details Form Errors\n  </div>\n\n  <div class=\"fields-error-form\">\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\"><span id=\"Email\">Minimum Bathroom</span></mat-label>\n      <input matInput name=\"MinimumBathroom\" [(ngModel)]=\"MinimumBathroom\" >\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Maximum Bathroom</mat-label>\n      <input matInput name=\"MaximumBathroom\" [(ngModel)]=\"MaximumBathroom\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Minimum Reception</mat-label>\n      <input matInput name=\"MinimumReception\" [(ngModel)]=\"MinimumReception\">\n    </mat-form-field>\n\n\n    <mat-form-field class=\"full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Maximum Reception</mat-label>\n      <input matInput name=\"MaximumReception\" [(ngModel)]=\"MaximumReception\">\n    </mat-form-field>\n\n\n   \n  </div>\n  <div class=\"update-button\" (click)=\"updateSeekerOptionalDetailError()\">\n    <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n  </div>\n</mat-card>");
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html":
 /*!*******************************************************************************************************!*\
   !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html ***!
@@ -123,7 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n  </div>\n\n</div>\n\n<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n      <div class=\"top-bar-user-heading\">\n        UI Elements\n    </div>\n    <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n    </div>\n    \n      \n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"main-container-uielements\">\n\n    <div class=\"mat-card-ui-elelment\">\n      <div class=\"top-tab-bar\">\n        <div class=\"tab-text\" (click)=\"homePages()\" id=\"home\">Home Page</div>\n        <div class=\"tab-text\" (click)=\"Notifications()\" id=\"notification\">Blue Notification</div>\n        <div class=\"tab-text\" id=\"seller\" (click)=\"SellerDetail()\">Seller Details</div>\n        <div class=\"tab-text\" id=\"buyer\" (click)=\"BuyerDetail()\">Buyer Details</div>\n        <div class=\"tab-text\" id=\"privacy\" (click)=\"privacy()\">Privacy Policy</div>\n        <div class=\"tab-text\" id=\"terms\" (click)=\"terms()\">Terms & Conditon</div>\n\n      </div>\n\n\n      <div class=\"mat-home-page-card\" *ngIf=\"homePage\">\n\n\n\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading\">\n            Banner Photo\n          </div>\n\n          <div class=\"main-container-banner-image \">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{bannerUrl}}\" class=\"left-image-container top-image\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uploadTopBannerImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n\n\n\n                <img src=\"{{bannerUrl}}\" class=\"image-agent top-image\" *ngIf=\"bannerUpload\">\n\n                <div class=\"file-upload\" *ngIf=\"!bannerUpload\">\n                  <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"topimage\"\n                    [(ngModel)]=\"topimage\">\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n\n\n\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{SecondBannerImage}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uplodSecondImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n                <img src=\"{{SecondBannerImage}}\" class=\"image-agent\" *ngIf=\"BannerTwo\">\n                <div class=\"file-upload\" *ngIf=\"!BannerTwo\">\n                  <form #form class=\"upload-form\">\n                    <input type=\"file\" (change)=\"LoweBanner($event)\" accept=\".png,.jpg\" >\n                  </form>\n\n                </div>\n              </div>\n\n              <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n            </div>\n          </div>\n        </mat-card>\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Start Your Home Journey Now\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step1UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step1Image}}\" class=\"image-agent\" *ngIf=\"step1NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step1NotUpload\">\n\n                    <input type=\"file\" (change)=\"step1upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step1ImageText\" [(ngModel)]=\"Step1ImageText \">\n          </textarea>\n\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step2UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step2Image}}\" class=\"image-agent\" *ngIf=\"step2NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step2NotUpload\">\n\n                    <input type=\"file\" (change)=\"step2upload($event)\" accept=\".png,.jpg\" >\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Review Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step2ImageText\" [(ngModel)]=\"Step2ImageText\">\n                </textarea>\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step3UploadImag()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step3Image}}\" class=\"image-agent\" *ngIf=\"step3NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step3NotUpload\">\n\n                    <input type=\"file\" (change)=\"step3upload($event)\" accept=\".png,.jpg\" name=\"step3ImageNew\"\n                      [(ngModel)]=\"step3ImageNew\">\n\n                  </div>\n\n\n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step3ImageText\" [(ngModel)]=\"Step3ImageText\">\n                </textarea>\n            </div>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Blogs\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngFor=\"let allBlogs of allBlogs\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" ><img src=\"../../../assets//Images/edit (1).png\"\n                        class=\"pen-image\" (click)=\"uploadBlogImage()\" >Edit</div>\n                        <div class=\"remove-option\">\n                       <span class=\"line\"> | </span> <span (click)=\"removeBlog(allBlogs.Id)\">Remove</span> \n\n                      </div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{allBlogs.Detail.BlogImage}}\" class=\"image-agent\" *ngIf=\"!blogUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"blogUpload\">\n\n                    <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"image\">\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"allBlogs.Detail.TextBlog\">\n          </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"allBlogs.Detail.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngIf=\"addNewBlog\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\"></div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <div class=\"file-upload\">\n                    <input type=\"file\" (change)=\"newBlogPicture($event)\" accept=\".png,.jpg\" name=\"BlogImage\"\n                      [(ngModel)]=\"blog.BlogImage\">\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"blog.TextBlog\">\n            </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"blog.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n          </div>\n\n          <div class=\"update-button update-add-more\" (click)=\"addMoreBlog()\">\n\n            <button mat-button color=\"primary\" class=\"button-color\">Add More</button>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Footer\n          </div>\n\n          <div class=\"main-contianer-journey footer-area\">\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Facebook</span></mat-label>\n              <input matInput name=\"Facebook\" [(ngModel)]=\"footer.Facebook\" #Phone>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Instagram Link</span></mat-label>\n              <input matInput name=\"Instragram\" [(ngModel)]=\"footer.Instragram\" #Phone>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Twitter</span></mat-label>\n              <input matInput name=\"Twitter\" [(ngModel)]=\"footer.Twitter\" #Phone>\n            </mat-form-field>\n          </div>\n\n          \n        </mat-card>\n\n        <div class=\"update-button\" (click)=\"updateDetails()\">\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </div>\n\n\n      \n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"Notification\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          My Nestimate Buyer Details\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"MynestimateBuyerDetails\"\n            [(ngModel)]=\"MynestimateBuyerDetails\">\n      </textarea>\n        </div>\n\n\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Singup From Menu\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SingupFromMenu\" [(ngModel)]=\"SingupFromMenu\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Action Needed\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerActionNeeded\" [(ngModel)]=\"BuyerActionNeeded\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Matches ExpressInterest Notifcation\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerMatchesExpressInterestNotifcation\" [(ngModel)]=\"BuyerMatchesExpressInterestNotifcation\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Signup Notification\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerSignupNotification\" [(ngModel)]=\"BuyerSignupNotification\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Seller Form Singup Notification\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SellerFormSingupNotification\" [(ngModel)]=\"SellerFormSingupNotification\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Seller Matches Express Interest Notifcation\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SellerMatchesExpressInterestNotifcation\" [(ngModel)]=\"SellerMatchesExpressInterestNotifcation\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      \n      <div class=\"update-button\" (click)=\"updateNotification()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"SellerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{SellerPropertyRightImage}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{SellerPropertyRightImage}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"sellerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"BuyerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Personal Details/Property Details\n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{BuyerPropertyRightImages}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{BuyerPropertyRightImages}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"buyerupload($event)\" accept=\".png,.jpg\" >\n\n              </div>\n            </div>\n\n            <span class=\"note-area\">*Note - Image size must be less than 2 MB.</span>\n          </div>\n        </div>\n      </mat-card>\n      <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"PrivacyPolicy\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Privacy Policy\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Privacy\" [(ngModel)]=\"Privacy\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updatePrivacyTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"TermConditon\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Terms & Condition\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Terms\" [(ngModel)]=\"Terms\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n  </div>\n\n\n\n\n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n  </div>\n\n</div>\n\n<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n      <div class=\"top-bar-user-heading\">\n        UI Elements\n      </div>\n      <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n      </div>\n\n\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"main-container-uielements\">\n\n    <div class=\"mat-card-ui-elelment\">\n      <div class=\"top-tab-bar\">\n        <div class=\"tab-text\" (click)=\"homePages()\" id=\"home\">Home Page</div>\n        <div class=\"tab-text\" (click)=\"Notifications()\" id=\"notification\">Blue Notification</div>\n        <div class=\"tab-text\" id=\"seller\" (click)=\"SellerDetail()\">Forms Image</div>\n        <div class=\"tab-text\" id=\"buyer\" (click)=\"BuyerDetail()\">Pop Up Messages</div>\n        <div class=\"tab-text\" id=\"privacy\" (click)=\"privacy()\">Privacy Policy</div>\n        <div class=\"tab-text\" id=\"terms\" (click)=\"terms()\">Terms & Conditon</div>\n\n      </div>\n\n\n      <div class=\"mat-home-page-card\" *ngIf=\"homePage\">\n\n\n\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading\">\n            Banner Photo\n          </div>\n\n          <div class=\"main-container-banner-image \">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{bannerUrl}}\" class=\"left-image-container top-image\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uploadTopBannerImage()\" ><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n\n\n\n                <img src=\"{{bannerUrl}}\" class=\"image-agent top-image\" *ngIf=\"bannerUpload\">\n\n                <div class=\"file-upload\" *ngIf=\"!bannerUpload\">\n                  <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"topimage\">\n                </div>\n              </div>\n             <div class=\"note-container\">\n               <div class=\"note-wrapper-contaoner\">\n              <span class=\"note-area\">*Note - </span>\n            </div>\n            <div class=\"note-ouput-contaoner\">\n              <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n              <span class=\"note-area\"> Image dimension must be 783x522.</span>\n            </div>\n\n             </div>\n              \n            </div>\n          </div>\n\n\n<div style=\"height:3vh\"></div>\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{SecondBannerImage}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uplodSecondImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n                <img src=\"{{SecondBannerImage}}\" class=\"image-agent\" *ngIf=\"BannerTwo\">\n                <div class=\"file-upload\" *ngIf=\"!BannerTwo\">\n                  <form #form class=\"upload-form\">\n                    <input type=\"file\" (change)=\"LoweBanner($event)\" accept=\".png,.jpg\">\n                  </form>\n\n                </div>\n              </div>\n\n              <div class=\"note-container\">\n                <div class=\"note-wrapper-contaoner\">\n               <span class=\"note-area\">*Note - </span>\n             </div>\n             <div class=\"note-ouput-contaoner\">\n               <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n               <span class=\"note-area\"> Image Dimension must be 2250x1500.</span>\n             </div>\n \n              </div>\n              \n            </div>\n          </div>\n        </mat-card>\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Start Your Home Journey Now\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step1UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step1Image}}\" class=\"image-agent\" *ngIf=\"step1NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step1NotUpload\">\n\n                    <input type=\"file\" (change)=\"step1upload($event)\" accept=\".png,.jpg\"><br>\n                  \n                  </div>\n                 \n\n                </div>\n\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n             \n              </div>\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step1ImageText\" [(ngModel)]=\"Step1ImageText \">\n          </textarea>\n\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step2UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step2Image}}\" class=\"image-agent\" *ngIf=\"step2NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step2NotUpload\">\n\n                    <input type=\"file\" (change)=\"step2upload($event)\" accept=\".png,.jpg\">\n\n                  </div>\n\n\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Review Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step2ImageText\" [(ngModel)]=\"Step2ImageText\">\n                </textarea>\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step3UploadImag()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step3Image}}\" class=\"image-agent\" *ngIf=\"step3NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step3NotUpload\">\n\n                    <input type=\"file\" (change)=\"step3upload($event)\" accept=\".png,.jpg\" name=\"step3ImageNew\"\n                      [(ngModel)]=\"step3ImageNew\">\n\n                  </div>\n\n\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step3ImageText\" [(ngModel)]=\"Step3ImageText\">\n                </textarea>\n            </div>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Blogs\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngFor=\"let allBlogs of allBlogs\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"uploadBlogImage(allBlogs.Id)\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                    <div class=\"remove-option\">\n                      <span class=\"line\"> | </span> <span (click)=\"removeBlog(allBlogs.Id)\">Remove</span>\n\n                    </div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{allBlogs.Detail.BlogImage}}\" class=\"image-agent\" *ngIf=\"!blogUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"blogUpload\">\n\n                    <input type=\"file\" (change)=\"uploadBlog($event)\" accept=\".png,.jpg\" name=\"image\">\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"allBlogs.Detail.TextBlog\">\n              </textarea>\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\"  [(ngModel)]=\"allBlogs.Detail.BlogLink\">\n              </mat-form-field>\n         \n           \n            </div>\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngIf=\"addNewBlog\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\"></div>\n                  </div>\n\n\n                  <div class=\"close-edit-blog\" (click)=\"closeaddNewBlog()\"><img src=\"../../../assets/Images/cross.png\" class=\"cross-image-ui\"></div>\n                </div>\n                <div class=\"image-user\">\n                  <div class=\"file-upload\">\n                    <input type=\"file\" (change)=\"newBlogPicture($event)\" accept=\".png,.jpg\" name=\"BlogImage\">\n                  </div>\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 550 × 340.</span>\n               </div>\n   \n                </div>\n               \n              </div>\n           \n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"blog.TextBlog\">\n            </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"blog.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n\n          </div>\n\n          <div class=\"update-button update-add-more\" (click)=\"addMoreBlog()\">\n\n            <button mat-button color=\"primary\" class=\"button-color\">Add More</button>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Footer\n          </div>\n\n          <div class=\"main-contianer-journey footer-area\">\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Facebook</span></mat-label>\n              <input matInput name=\"Facebook\" [(ngModel)]=\"footer.Facebook\" #Phone>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Instagram Link</span></mat-label>\n              <input matInput name=\"Instragram\" [(ngModel)]=\"footer.Instragram\" #Phone>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Twitter</span></mat-label>\n              <input matInput name=\"Twitter\" [(ngModel)]=\"footer.Twitter\" #Phone>\n            </mat-form-field>\n          </div>\n\n\n        </mat-card>\n\n        <div class=\"update-button\" (click)=\"updateDetails()\">\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </div>\n\n\n      <div class=\"edit-blog-container\" *ngIf=\"editSingleBlogs\">\n        <div class=\"sub-container-edit-popup\">\n          <div class=\"close-edit-blog\" (click)=\"closeUpdateBlog()\"><img src=\"../../../assets/Images/cross.png\" class=\"cross-image-ui\"></div>\n          <div class=\"agent-image-upload journey-image-container \">\n            <div class=\"image-user\">\n              <div class=\"file-upload edit-blog-container-image\">\n                <input type=\"file\" (change)=\"uploadBlog($event)\" accept=\".png,.jpg\" name=\"image\">\n              </div>\n\n            </div>\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image Dimension must be 550 × 340.</span>\n           </div>\n\n            </div>\n           \n          </div>\n          <div class=\"outputText\"></div>\n          <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"editTextBlog\"> </textarea>\n          <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n            <input matInput name=\"BlogLink\" [(ngModel)]=\"EditBlogLink\">\n          </mat-form-field>\n          <div class=\"update-button update-add-more\" (click)=\"updateOpenedBlog(singleBlogId)\">\n            <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n          </div>\n        </div>\n\n      </div>\n\n\n\n\n\n\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"Notification\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          My Nestimate Buyer Details\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"MynestimateBuyerDetails\"\n            [(ngModel)]=\"MynestimateBuyerDetails\">\n      </textarea>\n        </div>\n\n\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Sing Up From Menu\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SingupFromMenu\" [(ngModel)]=\"SingupFromMenu\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Action Needed\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerActionNeeded\" [(ngModel)]=\"BuyerActionNeeded\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Matches Express Interest Notifcation\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerMatchesExpressInterestNotifcation\"\n            [(ngModel)]=\"BuyerMatchesExpressInterestNotifcation\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Sign Up Notification\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerSignupNotification\"\n            [(ngModel)]=\"BuyerSignupNotification\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Seller Form Sing Up Notification\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SellerFormSingupNotification\"\n            [(ngModel)]=\"SellerFormSingupNotification\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Seller Matches Express Interest Notifcation\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SellerMatchesExpressInterestNotifcation\"\n            [(ngModel)]=\"SellerMatchesExpressInterestNotifcation\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n\n      <div class=\"update-button\" (click)=\"updateNotification()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"SellerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Owner Personal Details/Property Details \n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{SellerPropertyRightImage}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{SellerPropertyRightImage}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"sellerupload($event)\" accept=\".png,.jpg\">\n\n              </div>\n            </div>\n\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image dimension must be 783x522.</span>\n           </div>\n\n            </div>\n          </div>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </mat-card>\n\n\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Seeker Personal Details/Property Details \n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{BuyerPropertyRightImages}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{BuyerPropertyRightImages}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"buyerupload($event)\" accept=\".png,.jpg\">\n\n              </div>\n            </div>\n\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image dimension must be 783x522.</span>\n           </div>\n\n            </div>\n          </div>\n        </div>\n        <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </mat-card>\n\n    </div>\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"BuyerDetails\">\n\n      <div class=\"drop-down-error\">\n        <mat-form-field appearance=\"outline\">\n          <mat-label>Pop Up Messages</mat-label>\n          <mat-select name=\"formType\" [(ngModel)]=\"formType\">\n            <mat-option value=\"seeker\" (click)=\"showSeekerForm()\">Seekers Form</mat-option>\n            <mat-option value=\"owner\" (click)=\"showOwnerForm()\">Owner Form</mat-option>\n            <mat-option value=\"agent\" (click)=\"showAgentForm()\">Agent Form</mat-option>\n            <mat-option value=\"details\" (click)=\"showMyDetailForm()\">My Details</mat-option>\n            <mat-option value=\"other\" (click)=\"showOtherForm()\">Other</mat-option>\n          </mat-select>\n        </mat-form-field>\n      </div>\n\n\n      <div style=\"height: 1vh;\"></div>\n      <app-seekerformerror *ngIf=\"seekerErrorForm\"></app-seekerformerror>\n      <app-ownerformerror *ngIf=\"ownerErrorForm\"></app-ownerformerror>\n      <app-agentformerror *ngIf=\"agentErrorForm\"></app-agentformerror>\n      <app-othererror *ngIf=\"otherErrorForm\"></app-othererror>\n      <app-mydetailserror *ngIf=\"mydetailErrorForm\"></app-mydetailserror>\n\n\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"PrivacyPolicy\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Privacy Policy\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Privacy\" [(ngModel)]=\"Privacy\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updatePrivacyTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"TermConditon\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Terms & Condition\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Terms\" [(ngModel)]=\"Terms\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n  </div>\n\n\n\n\n\n</div>");
 
 /***/ }),
 
@@ -708,7 +773,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n</div>\n\n<div class=\"container profile-main-container\" *ngIf=\"!edit\">\n  <div class=\"top-edit-bar\">\n    <div class=\"top-edit-bar-text\" (click)=\"editUser()\">\n      <div class=\"edit-image-container\">\n        <img src=\"../../../assets/Images/edit (1).png\" class=\"edit-image\">\n      </div>\n      <div class=\"edit-text\">Edit</div>\n    </div>\n  </div>\n  <app-profile></app-profile>\n</div>\n\n\n\n\n\n<div class=\"container profile-main-container\" *ngIf=\"edit\">\n\n  <div class=\"profile-name-field-option\">\n    <div class=\"grid-container\">\n      <div>\n        <div class=\"extra-field-two\" id=\"name\">\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\" >\n          <mat-label class=\"fixed-Label\">\n            Name\n          </mat-label>\n     <input matInput  name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\"  #Names> \n        </mat-form-field>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"grid-container\">\n      <div>\n\n      </div>\n      <div>\n         <!--Phone Number field-->\n         <div class=\"extra-field-two\" id=\"phone\">\n         <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\">\n            Phone Number\n          </mat-label>\n\n          <input matInput  name=\"phonenumber\" class=\"mat-mail-input\"   [(ngModel)]=\"user.Phone\" type=”tel” [formControl]=\"phoneFormControl\" #phone>\n          <span matPrefix class=\"prefix-number\">+44 &nbsp;</span>\n        </mat-form-field>\n        </div>\n       \n        <!--Phone Number field-->\n      </div>\n    </div>\n    <div class=\"grid-container\">\n      <div>\n      </div>\n      <div>\n        <div class=\"extra-field-two\" id=\"email\">\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\">\n            Email\n          </mat-label>\n          <input matInput  name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.email\"\n          [formControl]=\"emailFormControl\">\n          <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\n            Please enter a valid email address\n          </mat-error>\n          <mat-error *ngIf=\"emailFormControl.hasError('required')\">\n            Email is <strong>required</strong>\n          </mat-error>\n        </mat-form-field>\n</div>\n\n      </div>\n    </div>\n    <div class=\"grid-container\">\n      <div>\n      \n      </div>\n      <div>\n\n          <!--Date Of Birth Field-->\n          <div class=\"extra-field-two\" id=\"dob\">\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n              Date of Birth\n            </mat-label>\n            <input matInput [matDatepicker]=\"picker\" name=\"DOB\" class=\"mat-mail-input\" value=\"DOB\"\n              [(ngModel)]=\"user.DOB\"  #dateofbirth>\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n          \n          </mat-form-field>\n          </div>\n          <!--Date Of Birth Field End-->\n\n\n        \n      </div>\n    </div>\n\n    <div class=\"grid-container\">\n      <div>\n      </div>\n      <div>\n        <div class=\"extra-field-address\" id=\"address\">\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\">\n            Address\n          </mat-label>\n          <input matInput  name=\"Address\" class=\"mat-mail-input\"  [(ngModel)]=\"user.Currentaddress\" [formControl]=\"addressFormControl\"  #addressed>\n          <mat-error *ngIf=\"addressFormControl.hasError('Address') && !addressFormControl.hasError('required')\">\n            Please enter a valid address\n          </mat-error>\n          <mat-error *ngIf=\"addressFormControl.hasError('required')\">\n           address is <strong>required</strong>\n          </mat-error>\n        </mat-form-field>\n  </div>\n      </div>\n    </div>\n\n\n  </div>\n\n  <div   style=\"background-color: white;\">\n    <div class=\"prefrence-notification\" style=\"  background-color: white;\">\n      <h5 class=\"text-center notification-heading heading-nestimate\">Notification Prefrences</h5>\n      <div class=\"prefrence-radio\">\n\n\n \n   <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\"\n   [(ngModel)]=\"user.prefrence\"  >\n            <mat-radio-button value=\"1\" >Email for every match</mat-radio-button><br>\n            <mat-radio-button value=\"2\" ><span >Email me once a week with all the matches<br class=\"mobile-version\">\n              that I have</span></mat-radio-button>\n          </mat-radio-group>\n\n \n  </div> \n  \n  \n  </div>\n  \n  \n</div>\n\n\n\n  <div class=\"edit-profile-submitbutton\">\n    <ul class=\"submit-button\" (click)=\"NotEdit()\">\n      <div class=\"xd-submit-button previous-button\" >\n        <a  class=\"text-next-button \" id=\"boldText\">Back</a>\n      </div>\n    </ul>\n\n    <ul class=\"submit-button\" (click)=\"userDetail(user.Name,user.email,user.Phone,user.DOB,user.Currentaddress,user.prefrence)\">\n      <div class=\"xd-submit-button previous-button\" >\n        <a  class=\"text-next-button \" id=\"boldText\">Save</a>\n      </div>\n    </ul>\n \n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n</div>\n\n<div class=\"container profile-main-container\" *ngIf=\"!edit\">\n  <div class=\"top-edit-bar\">\n    <div class=\"top-edit-bar-text\" (click)=\"editUser()\">\n      <div class=\"edit-image-container\">\n        <img src=\"../../../assets/Images/edit (1).png\" class=\"edit-image\">\n      </div>\n      <div class=\"edit-text\">Edit</div>\n    </div>\n  </div>\n  <app-profile></app-profile>\n</div>\n\n\n\n\n\n<div class=\"container profile-main-container\" *ngIf=\"edit\">\n\n  <div class=\"profile-name-field-option\">\n    <div class=\"grid-container\">\n      <div>\n        <div class=\"extra-field-two\" >\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\" >\n          <mat-label class=\"fixed-Label\" id=\"name\">\n            Name\n          </mat-label>\n     <input matInput  name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\"  #Names> \n        </mat-form-field>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"grid-container\">\n      <div>\n\n      </div>\n      <div>\n         <!--Phone Number field-->\n         <div class=\"extra-field-two\" >\n         <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\" id=\"phone\">\n            Phone Number\n          </mat-label>\n\n          <input matInput  name=\"phonenumber\" class=\"mat-mail-input\"   [(ngModel)]=\"user.Phone\" type=”tel” [formControl]=\"phoneFormControl\" #phone>\n          <span matPrefix class=\"prefix-number\">+44 &nbsp;</span>\n        </mat-form-field>\n        </div>\n       \n        <!--Phone Number field-->\n      </div>\n    </div>\n    <div class=\"grid-container\">\n      <div>\n      </div>\n      <div>\n        <div class=\"extra-field-two\" >\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\" id=\"email\">\n            Email\n          </mat-label>\n          <input matInput  name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.email\"\n          [formControl]=\"emailFormControl\">\n          <mat-error *ngIf=\"emailFormControl.hasError('email') && !emailFormControl.hasError('required')\">\n            Please enter a valid email address\n          </mat-error>\n          <mat-error *ngIf=\"emailFormControl.hasError('required')\">\n            Email is <strong>required</strong>\n          </mat-error>\n        </mat-form-field>\n</div>\n\n      </div>\n    </div>\n    <div class=\"grid-container\">\n      <div>\n      \n      </div>\n      <div>\n\n          <!--Date Of Birth Field-->\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" id=\"dob\">\n              Date of Birth\n            </mat-label>\n            <input matInput [matDatepicker]=\"picker\" name=\"DOB\" class=\"mat-mail-input\" value=\"DOB\"\n              [(ngModel)]=\"user.DOB\"  #dateofbirth>\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n          \n          </mat-form-field>\n          </div>\n          <!--Date Of Birth Field End-->\n\n\n        \n      </div>\n    </div>\n\n    <div class=\"grid-container\">\n      <div>\n      </div>\n      <div>\n        <div class=\"extra-field-address\" >\n        <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\" id=\"address\">\n            Address\n          </mat-label>\n          <input matInput  name=\"Address\" class=\"mat-mail-input\"  [(ngModel)]=\"user.Currentaddress\" [formControl]=\"addressFormControl\"  #addressed>\n          <mat-error *ngIf=\"addressFormControl.hasError('Address') && !addressFormControl.hasError('required')\">\n            Please enter a valid address\n          </mat-error>\n          <mat-error *ngIf=\"addressFormControl.hasError('required')\">\n           address is <strong>required</strong>\n          </mat-error>\n        </mat-form-field>\n  </div>\n      </div>\n    </div>\n\n\n  </div>\n\n  <div   style=\"background-color: white;\">\n    <div class=\"prefrence-notification\" style=\"  background-color: white;\">\n      <h5 class=\"text-center notification-heading heading-nestimate\" id=\"prefrence\">Notification Prefrences</h5>\n      <div class=\"prefrence-radio\">\n\n\n \n   <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\"\n   [(ngModel)]=\"user.prefrence\"  >\n            <mat-radio-button value=\"1\" >Email for every match</mat-radio-button><br>\n            <mat-radio-button value=\"2\" ><span >Email me once a week with all the matches<br class=\"mobile-version\">\n              that I have</span></mat-radio-button>\n          </mat-radio-group>\n\n \n  </div> \n  \n  \n  </div>\n  \n  \n</div>\n\n\n\n  <div class=\"edit-profile-submitbutton\">\n    <ul class=\"submit-button\" (click)=\"NotEdit()\">\n      <div class=\"xd-submit-button previous-button\" >\n        <a  class=\"text-next-button \" id=\"boldText\">Back</a>\n      </div>\n    </ul>\n\n    <ul class=\"submit-button\" (click)=\"userDetail(user.Name,user.email,user.Phone,user.DOB,user.Currentaddress,user.prefrence)\">\n      <div class=\"xd-submit-button previous-button\" >\n        <a  class=\"text-next-button \" id=\"boldText\">Save</a>\n      </div>\n    </ul>\n \n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>");
 
 /***/ }),
 
@@ -3049,6 +3114,565 @@ EditSellerUserDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"
 
 /***/ }),
 
+/***/ "./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.css":
+/*!***********************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.css ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".full-width {\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 0em !important;\n} \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL2FnZW50Zm9ybWVycm9yL2FnZW50Zm9ybWVycm9yLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQiwwQkFBMEI7QUFDOUIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VpZWxlbWVudHMvYWdlbnRmb3JtZXJyb3IvYWdlbnRmb3JtZXJyb3IuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mdWxsLXdpZHRoIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbiAgICBtYXJnaW4tdG9wOiAwZW0gIWltcG9ydGFudDtcbn0gIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.ts":
+/*!**********************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.ts ***!
+  \**********************************************************************************/
+/*! exports provided: AgentformerrorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AgentformerrorComponent", function() { return AgentformerrorComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../cms.service */ "./src/app/cms.service.ts");
+
+
+
+let AgentformerrorComponent = class AgentformerrorComponent {
+    constructor(CMSSERVICE) {
+        this.CMSSERVICE = CMSSERVICE;
+        this.PersonalDetail = "PersonalDetail";
+        this.PropertyDetail = "PropertyDetail";
+        this.OptionalDetail = "OptionalDetail";
+        this.AgentError = "AgentError";
+        this.isLoading = false;
+    }
+    ngOnInit() {
+        this.getAgentForm();
+    }
+    getAgentForm() {
+        this.CMSSERVICE.getAgentError(this.AgentError).then((element) => {
+            this.FullName = element.data().FullName;
+            this.CompanyName = element.data().CompanyName;
+            this.Postcode = element.data().Postcode;
+            this.Address = element.data().Address;
+            this.JobTitle = element.data().JobTitle;
+            this.EmailAddress = element.data().EmailAddress;
+            this.emailvalidation = element.data().emailvalidation;
+            this.Password = element.data().Password;
+            this.officephone = element.data().officephone;
+            this.officephonevalidation = element.data().officephonevalidation;
+            this.officephonelength = element.data().officephonelength;
+            this.mobile = element.data().mobile;
+            this.mobilevalidity = element.data().mobilevalidity;
+            this.mobilelength = element.data().mobilelength;
+            this.solefees = element.data().solefees;
+            this.solefeesmore = element.data().solefeesmore;
+            this.solefeesless = element.data().solefeesless;
+            this.multiplefees = element.data().multiplefees;
+            this.multiplefeesmore = element.data().multiplefeesmore;
+            this.multiplefeesless = element.data().multiplefeesless;
+            this.Image = element.data().Image;
+            this.Imagesize = element.data().Imagesize;
+            this.isLoading = false;
+        });
+    }
+    updateOwnerPersonalDetailError() {
+        this.isLoading = true;
+        this.personaldetails = {
+            FullName: this.FullName,
+            CompanyName: this.CompanyName,
+            Postcode: this.Postcode,
+            Address: this.Address,
+            JobTitle: this.JobTitle,
+            EmailAddress: this.EmailAddress,
+            emailvalidation: this.emailvalidation,
+            Password: this.Password,
+            officephone: this.officephone,
+            officephonevalidation: this.officephonevalidation,
+            officephonelength: this.officephonelength,
+            mobile: this.mobile,
+            mobilevalidity: this.mobilevalidity,
+            mobilelength: this.mobilelength,
+            solefees: this.solefees,
+            solefeesmore: this.solefeesmore,
+            solefeesless: this.solefeesless,
+            multiplefees: this.multiplefees,
+            multiplefeesmore: this.multiplefeesmore,
+            multiplefeesless: this.multiplefeesless,
+            Image: this.Image,
+            Imagesize: this.Imagesize
+        };
+        this.CMSSERVICE.updateAgentError(this.AgentError, this.personaldetails);
+        this.getAgentForm();
+    }
+};
+AgentformerrorComponent.ctorParameters = () => [
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_2__["CMSSERVICE"] }
+];
+AgentformerrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-agentformerror',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./agentformerror.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./agentformerror.component.css */ "./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../uielements.component.css */ "./src/app/AdminPanel/uielements/uielements.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], AgentformerrorComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.css":
+/*!***********************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.css ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".full-width {\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 0em !important;\n} \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL215ZGV0YWlsc2Vycm9yL215ZGV0YWlsc2Vycm9yLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQiwwQkFBMEI7QUFDOUIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VpZWxlbWVudHMvbXlkZXRhaWxzZXJyb3IvbXlkZXRhaWxzZXJyb3IuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mdWxsLXdpZHRoIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbiAgICBtYXJnaW4tdG9wOiAwZW0gIWltcG9ydGFudDtcbn0gIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.ts":
+/*!**********************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.ts ***!
+  \**********************************************************************************/
+/*! exports provided: MydetailserrorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MydetailserrorComponent", function() { return MydetailserrorComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../cms.service */ "./src/app/cms.service.ts");
+
+
+
+let MydetailserrorComponent = class MydetailserrorComponent {
+    constructor(CMSSERVICE) {
+        this.CMSSERVICE = CMSSERVICE;
+        this.isLoading = false;
+        this.MyDetail = "MyDetails";
+    }
+    ngOnInit() {
+        this.getOtherForm();
+    }
+    getOtherForm() {
+        this.CMSSERVICE.getMyDetailError(this.MyDetail).then((element) => {
+            this.FullName = element.data().FullName;
+            this.Email = element.data().Email;
+            this.Phone = element.data().Phone;
+            this.DOB = element.data().DOB;
+            this.ValidateDob = element.data().ValidateDob;
+            this.Address = element.data().Address;
+            this.Prefrence = element.data().Prefrence;
+            this.isLoading = false;
+        });
+    }
+    updateMyDetailError() {
+        this.isLoading = true;
+        this.MyDetails = {
+            FullName: this.FullName,
+            Email: this.Email,
+            Phone: this.Phone,
+            DOB: this.DOB,
+            ValidateDob: this.ValidateDob,
+            Address: this.Address,
+            Prefrence: this.Prefrence
+        };
+        this.CMSSERVICE.updateMyDetailError(this.MyDetail, this.MyDetails);
+        this.getOtherForm();
+    }
+};
+MydetailserrorComponent.ctorParameters = () => [
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_2__["CMSSERVICE"] }
+];
+MydetailserrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-mydetailserror',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./mydetailserror.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./mydetailserror.component.css */ "./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../uielements.component.css */ "./src/app/AdminPanel/uielements/uielements.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], MydetailserrorComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/othererror/othererror.component.css":
+/*!***************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/othererror/othererror.component.css ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".full-width {\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 0em !important;\n} \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL290aGVyZXJyb3Ivb3RoZXJlcnJvci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLGVBQWU7SUFDZixnQkFBZ0I7SUFDaEIsMEJBQTBCO0FBQzlCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL290aGVyZXJyb3Ivb3RoZXJlcnJvci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZ1bGwtd2lkdGgge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBtYXJnaW46IDBlbSAxMHB4O1xuICAgIG1hcmdpbi10b3A6IDBlbSAhaW1wb3J0YW50O1xufSAiXX0= */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/othererror/othererror.component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/othererror/othererror.component.ts ***!
+  \**************************************************************************/
+/*! exports provided: OthererrorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OthererrorComponent", function() { return OthererrorComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../cms.service */ "./src/app/cms.service.ts");
+
+
+
+let OthererrorComponent = class OthererrorComponent {
+    constructor(CMSSERVICE) {
+        this.CMSSERVICE = CMSSERVICE;
+        this.OtherError = "Other";
+        this.isLoading = false;
+    }
+    ngOnInit() {
+        this.getOtherForm();
+    }
+    getOtherForm() {
+        this.CMSSERVICE.getOtherError(this.OtherError).then((element) => {
+            this.AgentSignIn = element.data().AgentSignIn;
+            this.UserSignIn = element.data().UserSignIn;
+            this.WrongPassword = element.data().WrongPassword;
+            this.isLoading = false;
+        });
+    }
+    updateOtherError() {
+        this.isLoading = true;
+        this.OtherErrors = {
+            AgentSignIn: this.AgentSignIn,
+            UserSignIn: this.UserSignIn,
+        };
+        this.CMSSERVICE.updateOtherError(this.OtherError, this.OtherErrors);
+        this.getOtherForm();
+    }
+};
+OthererrorComponent.ctorParameters = () => [
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_2__["CMSSERVICE"] }
+];
+OthererrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-othererror',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./othererror.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/othererror/othererror.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./othererror.component.css */ "./src/app/AdminPanel/uielements/othererror/othererror.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../uielements.component.css */ "./src/app/AdminPanel/uielements/uielements.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], OthererrorComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.css":
+/*!***********************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.css ***!
+  \***********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".full-width {\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 0em !important;\n} \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL293bmVyZm9ybWVycm9yL293bmVyZm9ybWVycm9yLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQiwwQkFBMEI7QUFDOUIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VpZWxlbWVudHMvb3duZXJmb3JtZXJyb3Ivb3duZXJmb3JtZXJyb3IuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5mdWxsLXdpZHRoIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbiAgICBtYXJnaW4tdG9wOiAwZW0gIWltcG9ydGFudDtcbn0gIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.ts":
+/*!**********************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.ts ***!
+  \**********************************************************************************/
+/*! exports provided: OwnerformerrorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OwnerformerrorComponent", function() { return OwnerformerrorComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../cms.service */ "./src/app/cms.service.ts");
+
+
+
+let OwnerformerrorComponent = class OwnerformerrorComponent {
+    constructor(CMSSERVICE) {
+        this.CMSSERVICE = CMSSERVICE;
+        this.PersonalDetail = "PersonalDetail";
+        this.PropertyDetail = "PropertyDetail";
+        this.OptionalDetail = "OptionalDetail";
+        this.isLoading = false;
+    }
+    ngOnInit() {
+        this.getSeekerPersonalDetailForm();
+        this.getSeekerPropertyDetailForm();
+    }
+    getSeekerPersonalDetailForm() {
+        this.CMSSERVICE.getOwnerlError(this.PersonalDetail).then((element) => {
+            this.Title = element.data().Title;
+            this.FullName = element.data().FullName;
+            this.DateofBirth = element.data().DateofBirth;
+            this.DateofBirthValidate = element.data().DateofBirthValidate;
+            this.PhoneEmpty = element.data().PhoneEmpty;
+            this.PhoneValidation = element.data().PhoneValidation;
+            this.PhoneLength = element.data().PhoneLength;
+            this.CurrentPostcode = element.data().CurrentPostcode;
+            this.PostcodeLength = element.data().PostcodeLength;
+            this.CurrentAaddress = element.data().CurrentAaddress;
+            this.CurrentTown = element.data().CurrentTown;
+            this.CurrentCounty = element.data().CurrentCounty;
+            this.CurrentCountry = element.data().CurrentCountry;
+            this.isLoading = false;
+        });
+    }
+    getSeekerPropertyDetailForm() {
+        this.CMSSERVICE.getOwnerlError(this.PropertyDetail).then((element) => {
+            this.Buy = element.data().Buy;
+            this.LPostcode = element.data().LPostcode;
+            this.LPostcodeLength = element.data().LPostcodeLength;
+            this.LAddress = element.data().LAddress;
+            this.LTown = element.data().LTown;
+            this.LCounty = element.data().LCounty;
+            this.LCountry = element.data().LCountry;
+            this.PropertyType = element.data().PropertyType;
+            this.Roomsmax = element.data().Roomsmax;
+            this.MaxAmount = element.data().MaxAmount;
+            this.ownership = element.data().ownership;
+            this.isLoading = false;
+        });
+    }
+    updateOwnerPersonalDetailError() {
+        this.isLoading = true;
+        this.personaldetails = {
+            Title: this.Title,
+            FullName: this.FullName,
+            DateofBirth: this.DateofBirth,
+            DateofBirthValidate: this.DateofBirthValidate,
+            PhoneEmpty: this.PhoneEmpty,
+            PhoneValidation: this.PhoneValidation,
+            PhoneLength: this.PhoneLength,
+            CurrentPostcode: this.CurrentPostcode,
+            PostcodeLength: this.PostcodeLength,
+            CurrentAaddress: this.CurrentAaddress,
+            CurrentTown: this.CurrentTown,
+            CurrentCounty: this.CurrentCounty,
+            CurrentCountry: this.CurrentCountry
+        };
+        this.CMSSERVICE.updateOwnerError(this.PersonalDetail, this.personaldetails);
+        this.getSeekerPersonalDetailForm();
+    }
+    updateSeekerPropertyDetailError() {
+        this.isLoading = true;
+        this.propertydetails = {
+            Buy: this.Buy,
+            LPostcode: this.LPostcode,
+            LPostcodeLength: this.LPostcodeLength,
+            LAddress: this.LAddress,
+            LTown: this.LTown,
+            LCounty: this.LCounty,
+            LCountry: this.LCountry,
+            PropertyType: this.PropertyType,
+            Roomsmax: this.Roomsmax,
+            MaxAmount: this.MaxAmount,
+            ownership: this.ownership
+        };
+        this.CMSSERVICE.updateOwnerError(this.PropertyDetail, this.propertydetails);
+        this.getSeekerPropertyDetailForm();
+    }
+};
+OwnerformerrorComponent.ctorParameters = () => [
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_2__["CMSSERVICE"] }
+];
+OwnerformerrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-ownerformerror',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./ownerformerror.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./ownerformerror.component.css */ "./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../uielements.component.css */ "./src/app/AdminPanel/uielements/uielements.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default]
+    })
+], OwnerformerrorComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.css":
+/*!*************************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.css ***!
+  \*************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".full-width {\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 0em !important;\n} \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3NlZWtlcmZvcm1lcnJvci9zZWVrZXJmb3JtZXJyb3IuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLDBCQUEwQjtBQUM5QiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvdWllbGVtZW50cy9zZWVrZXJmb3JtZXJyb3Ivc2Vla2VyZm9ybWVycm9yLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZnVsbC13aWR0aCB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG4gICAgbWFyZ2luLXRvcDogMGVtICFpbXBvcnRhbnQ7XG59ICJdfQ== */");
+
+/***/ }),
+
+/***/ "./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.ts":
+/*!************************************************************************************!*\
+  !*** ./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.ts ***!
+  \************************************************************************************/
+/*! exports provided: SeekerformerrorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SeekerformerrorComponent", function() { return SeekerformerrorComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../cms.service */ "./src/app/cms.service.ts");
+
+
+
+let SeekerformerrorComponent = class SeekerformerrorComponent {
+    constructor(CMSSERVICE) {
+        this.CMSSERVICE = CMSSERVICE;
+        this.PersonalDetail = "PersonalDetail";
+        this.PropertyDetail = "PropertyDetail";
+        this.OptionalDetail = "OptionalDetail";
+        this.isLoading = false;
+    }
+    ngOnInit() {
+        this.getSeekerPersonalDetailForm();
+        this.getSeekerPropertyDetailForm();
+        this.getSeekerOptionalDetailForm();
+    }
+    getSeekerPersonalDetailForm() {
+        this.CMSSERVICE.getSeekerPersonalError(this.PersonalDetail).then((element) => {
+            this.Title = element.data().Title;
+            this.FullName = element.data().FullName;
+            this.DateofBirth = element.data().DateofBirth;
+            this.DateofBirthValidate = element.data().DateofBirthValidate;
+            this.PhoneEmpty = element.data().PhoneEmpty;
+            this.PhoneValidation = element.data().PhoneValidation;
+            this.PhoneLength = element.data().PhoneLength;
+            this.CurrentPostcode = element.data().CurrentPostcode;
+            this.PostcodeLength = element.data().PostcodeLength;
+            this.CurrentAaddress = element.data().CurrentAaddress;
+            this.CurrentTown = element.data().CurrentTown;
+            this.CurrentCounty = element.data().CurrentCounty;
+            this.CurrentCountry = element.data().CurrentCountry;
+            this.isLoading = false;
+        });
+    }
+    getSeekerPropertyDetailForm() {
+        this.CMSSERVICE.getSeekerPersonalError(this.PropertyDetail).then((element) => {
+            this.Buy = element.data().Buy;
+            this.LPostcode = element.data().LPostcode;
+            this.LPostcodeLength = element.data().LPostcodeLength;
+            this.LStreetname = element.data().LStreetname;
+            this.LTown = element.data().LTown;
+            this.LCounty = element.data().LCounty;
+            this.LCountry = element.data().LCountry;
+            this.PropertyType = element.data().PropertyType;
+            this.Roommin = element.data().Roommin;
+            this.Roomsmax = element.data().Roomsmax;
+            this.MinimumRoomValidation = element.data().MinimumRoomValidation;
+            this.MaximumRoomValidation = element.data().MaximumRoomValidation;
+            this.FinancialRenting = element.data().FinancialRenting;
+            this.FinancialPosition = element.data().FinancialPosition;
+            this.MinAmount = element.data().MinAmount;
+            this.MaxAmount = element.data().MaxAmount;
+            this.Min = element.data().Min;
+            this.Max = element.data().Max;
+            this.Validity = element.data().Validity;
+            this.isLoading = false;
+        });
+    }
+    getSeekerOptionalDetailForm() {
+        this.CMSSERVICE.getSeekerPersonalError(this.OptionalDetail).then((element) => {
+            this.MinimumBathroom = element.data().MinimumBathroom;
+            this.MaximumBathroom = element.data().MaximumBathroom;
+            this.MinimumReception = element.data().MinimumReception;
+            this.MaximumReception = element.data().MaximumReception;
+            this.isLoading = false;
+        });
+    }
+    updateSeekerPersonalDetailError() {
+        this.isLoading = true;
+        this.personaldetails = {
+            Title: this.Title,
+            FullName: this.FullName,
+            DateofBirth: this.DateofBirth,
+            DateofBirthValidate: this.DateofBirthValidate,
+            PhoneEmpty: this.PhoneEmpty,
+            PhoneValidation: this.PhoneValidation,
+            PhoneLength: this.PhoneLength,
+            CurrentPostcode: this.CurrentPostcode,
+            PostcodeLength: this.PostcodeLength,
+            CurrentAaddress: this.CurrentAaddress,
+            CurrentTown: this.CurrentTown,
+            CurrentCounty: this.CurrentCounty,
+            CurrentCountry: this.CurrentCountry
+        };
+        this.CMSSERVICE.updateSeekerPersonalError(this.PersonalDetail, this.personaldetails);
+        this.getSeekerPersonalDetailForm();
+    }
+    updateSeekerPropertyDetailError() {
+        this.isLoading = true;
+        this.propertydetails = {
+            Buy: this.Buy,
+            LPostcode: this.LPostcode,
+            LPostcodeLength: this.LPostcodeLength,
+            LStreetname: this.LStreetname,
+            LTown: this.LTown,
+            LCounty: this.LCounty,
+            LCountry: this.LCountry,
+            PropertyType: this.PropertyType,
+            Roommin: this.Roommin,
+            Roomsmax: this.Roomsmax,
+            MinimumRoomValidation: this.MinimumRoomValidation,
+            MaximumRoomValidation: this.MaximumRoomValidation,
+            FinancialRenting: this.FinancialRenting,
+            FinancialPosition: this.FinancialPosition,
+            MinAmount: this.MinAmount,
+            MaxAmount: this.MaxAmount,
+            Min: this.Min,
+            Max: this.Max,
+            Validity: this.Validity
+        };
+        this.CMSSERVICE.updateSeekerPersonalError(this.PropertyDetail, this.propertydetails);
+        this.getSeekerPropertyDetailForm();
+    }
+    updateSeekerOptionalDetailError() {
+        this.isLoading = true;
+        this.optionaldetails = {
+            MinimumBathroom: this.MinimumBathroom,
+            MaximumBathroom: this.MaximumBathroom,
+            MinimumReception: this.MinimumReception,
+            MaximumReception: this.MaximumReception
+        };
+        this.CMSSERVICE.updateSeekerPersonalError(this.OptionalDetail, this.optionaldetails);
+        this.getSeekerOptionalDetailForm();
+    }
+};
+SeekerformerrorComponent.ctorParameters = () => [
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_2__["CMSSERVICE"] }
+];
+SeekerformerrorComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-seekerformerror',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./seekerformerror.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../uielements.component.css */ "./src/app/AdminPanel/uielements/uielements.component.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ../../Admin-common.css */ "./src/app/AdminPanel/Admin-common.css")).default, tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./seekerformerror.component.css */ "./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.css")).default]
+    })
+], SeekerformerrorComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/AdminPanel/uielements/uielements.component.css":
 /*!****************************************************************!*\
   !*** ./src/app/AdminPanel/uielements/uielements.component.css ***!
@@ -3058,7 +3682,7 @@ EditSellerUserDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".top-tab-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\n    text-align: center;\n    align-content: center;\n    /* background-color: #E8E8E8; */\n}\nspan.tab-text {\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    background-color: #E8E8E8;\n    font-size: 18px;\n\n}\n.mat-card-ui-elelment{\n    margin-top: 2em;\n  \n}\nimg.left-image-container {\n    height: 32vh;\n    margin: 1em 0em;\n    border: 1px solid;\n}\nimg.image-agent {\n    height: 17vh;\n}\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n    margin-top: 0em;\n}\n.agent-image-upload {\n\n    border: 1px solid #CBC7C7;;\n    border-radius: 10px;\n\n    padding-bottom: 1em;\n\n}\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\n\n}\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\nimg.cross-image {\n    height: 1.5vh;\n}\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    padding: 1em;\n}\n.main-container-banner-image {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    align-items: center;\n}\nimg.pen-image {\n    height: 1.3vh;\n    padding-right: 10px;\n}\n.home-page-banner\n{\n    box-shadow: 3px 3px 5px 3px #ccc;\n    border-radius: 10px;\n}\n.mat-home-page-card {\n    margin: 1em 0em;\n    border-radius: 10px;\n    padding: 0em 1em;\n}\n.profile-heading.profile-heading-two {\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 13px;\n}\n.main-container-banner-image.image-journey-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1em;\n    margin-right: -3px;\n}\n.main-contianer-journey {\n    display: flex;\n    flex-direction: row;\n    margin-top: 1em;\n}\n.agent-image-upload.journey-image-container {\n    border-radius: 0px;\n}\n.main-contianer-journey {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 0em 0em;;\n}\n.agent-image-upload.journey-image-container {\n    width: 100%;\n    border-radius: 10px;\n}\n.outputText {\n    color: var(--light-blue-color);\n    font-family: 'Roboto-Medium';\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-size: 1.2em;\n    font-weight: 500;\n}\ntextarea#w3review {\n    color: #0F3C73;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1em;\n\n  \n    padding: 0em 4px;\n\n\n    border-radius: 10px;\n    border-color: #CBC7C7;\n}\n.full-width\n{\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 1em;\n}\n.main-container-uielements {\n    margin-right: 2em;\n    padding-top: 0em;\n    margin-top: 2em;\n    background-color: white;\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n \n}\n.tab-text {\n    padding: 0.5em;\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.1em;\n}\n.tab-text:hover\n{\n    cursor: pointer;\n}\n.highlight {\n    background: #E8E8E8;\n    height: 1vh;\n    /* position: relative; */\n    top: 18vh;\n    /* z-index: 1; */\n    width: 100%;\n}\n.mat-Notification {\n    margin: 0em 1em;\n}\n.text-area {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 1em 0em;\n}\n.notificationCard{\n    margin: 0em 2em;\n}\ntextarea#w3review {\n    width: 100%;\n}\n.add-more-area:hover {\n    cursor: pointer;\n}\n.edit-image-part {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\nspan.line {\n    padding: 10px;\n}\n.remove-option:hover\n{\n    cursor: pointer;\n}\n.update-button {\n    padding-top: 2em;\n}\n.update-add-more\n{\n    padding: 0;\n}\nimg.left-image-container.top-image {\n    height: 12vw;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3VpZWxlbWVudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsa0JBQWtCO0lBQ2xCLHFCQUFxQjtJQUNyQiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtJQUN6QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksZUFBZTs7QUFFbkI7QUFDQTtJQUNJLFlBQVk7SUFDWixlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCO0FBRUE7SUFDSSxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLG1CQUFtQjs7SUFFbkIsbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCOztBQUVoQjtBQUNBO0lBQ0ksa0JBQWtCO0lBQ2xCLG9CQUFvQjtJQUNwQix5QkFBeUI7QUFDN0I7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixZQUFZO0FBQ2hCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDZCQUE2QjtJQUM3QixtQkFBbUI7QUFDdkI7QUFFQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxnQ0FBZ0M7SUFDaEMsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxlQUFlO0lBQ2YsbUJBQW1CO0lBQ25CLGdCQUFnQjtBQUNwQjtBQUdBO0lBQ0ksMEJBQWtCO0lBQWxCLHVCQUFrQjtJQUFsQixrQkFBa0I7SUFDbEIsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZUFBZTtJQUNmLGtCQUFrQjtBQUN0QjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLFdBQVc7SUFDWCxhQUFhO0lBQ2Isa0NBQWtDO0lBQ2xDLGFBQWE7SUFDYixlQUFlO0FBQ25CO0FBRUE7SUFDSSxXQUFXO0lBQ1gsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSw4QkFBOEI7SUFDOUIsNEJBQTRCO0lBQzVCLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUNBO0lBQ0ksY0FBYztJQUNkLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsY0FBYzs7O0lBR2QsZ0JBQWdCOzs7SUFHaEIsbUJBQW1CO0lBQ25CLHFCQUFxQjtBQUN6QjtBQUNBOztJQUVJLFdBQVc7SUFDWCxlQUFlO0lBQ2YsZ0JBQWdCO0lBQ2hCLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGlCQUFpQjtJQUNqQixnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0NBQWdDOztBQUVwQztBQUNBO0lBQ0ksY0FBYzs7SUFFZCxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGdCQUFnQjtBQUNwQjtBQUNBOztJQUVJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLG1CQUFtQjtJQUNuQixXQUFXO0lBQ1gsd0JBQXdCO0lBQ3hCLFNBQVM7SUFDVCxnQkFBZ0I7SUFDaEIsV0FBVztBQUNmO0FBQ0E7SUFDSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7QUFHQTtJQUNJLGVBQWU7QUFDbkI7QUFFQTtJQUNJLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixtQkFBbUI7QUFDdkI7QUFDQTtJQUNJLGFBQWE7QUFDakI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBR0E7SUFDSSxnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxVQUFVO0FBQ2Q7QUFFQTtJQUNJLFlBQVk7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9BZG1pblBhbmVsL3VpZWxlbWVudHMvdWllbGVtZW50cy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnRvcC10YWItYmFyIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnIgMWZyIDFmciAxZnI7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAvKiBiYWNrZ3JvdW5kLWNvbG9yOiAjRThFOEU4OyAqL1xufVxuc3Bhbi50YWItdGV4dCB7XG4gICAgcGFkZGluZzogMWVtO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNTAwO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7XG4gICAgZm9udC1zaXplOiAxOHB4O1xuXG59XG5cbi5tYXQtY2FyZC11aS1lbGVsbWVudHtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gIFxufVxuaW1nLmxlZnQtaW1hZ2UtY29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDMydmg7XG4gICAgbWFyZ2luOiAxZW0gMGVtO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkO1xufVxuXG5pbWcuaW1hZ2UtYWdlbnQge1xuICAgIGhlaWdodDogMTd2aDtcbn1cbi5pbWFnZS11c2VyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIG1hcmdpbjogMWVtO1xuICAgIG1hcmdpbi10b3A6IDBlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQge1xuXG4gICAgYm9yZGVyOiAxcHggc29saWQgI0NCQzdDNzs7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcblxuICAgIHBhZGRpbmctYm90dG9tOiAxZW07XG5cbn1cbnNwYW4ubm90ZS1hcmVhIHtcbiAgICBjb2xvcjogI0IxQTlBOTtcbiAgICBwYWRkaW5nOiAxMHB4O1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbmZvbnQtd2VpZ2h0OiA1MDA7XG5cbn1cbmltZy5jcm9zcy1pbWFnZSB7XG4gICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIG1hcmdpbjogMC43ZW0gLTEuNWVtO1xuICAgIC8qIGJvcmRlci1yYWRpdXM6IDE3cHg7ICovXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIGhlaWdodDogMS41dmg7XG59XG4udXBsb2FkLWltYWdlLWZpcnN0LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbTtcbn1cblxuLm1haW4tY29udGFpbmVyLWJhbm5lci1pbWFnZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbmltZy5wZW4taW1hZ2Uge1xuICAgIGhlaWdodDogMS4zdmg7XG4gICAgcGFkZGluZy1yaWdodDogMTBweDtcbn1cbi5ob21lLXBhZ2UtYmFubmVyXG57XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbi5tYXQtaG9tZS1wYWdlLWNhcmQge1xuICAgIG1hcmdpbjogMWVtIDBlbTtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIHBhZGRpbmc6IDBlbSAxZW07XG59XG5cblxuLnByb2ZpbGUtaGVhZGluZy5wcm9maWxlLWhlYWRpbmctdHdvIHtcbiAgICB3aWR0aDogbWF4LWNvbnRlbnQ7XG4gICAgcGFkZGluZy1yaWdodDogMTNweDtcbn1cblxuLm1haW4tY29udGFpbmVyLWJhbm5lci1pbWFnZS5pbWFnZS1qb3VybmV5LWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIG1hcmdpbi1yaWdodDogLTNweDtcbn1cbi5tYWluLWNvbnRpYW5lci1qb3VybmV5IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLmFnZW50LWltYWdlLXVwbG9hZC5qb3VybmV5LWltYWdlLWNvbnRhaW5lciB7XG4gICAgYm9yZGVyLXJhZGl1czogMHB4O1xufVxuXG4ubWFpbi1jb250aWFuZXItam91cm5leSB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICAgIGdyaWQtZ2FwOiAyZW07XG4gICAgbWFyZ2luOiAwZW0gMGVtOztcbn1cblxuLmFnZW50LWltYWdlLXVwbG9hZC5qb3VybmV5LWltYWdlLWNvbnRhaW5lciB7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cblxuLm91dHB1dFRleHQge1xuICAgIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90by1NZWRpdW0nO1xuICAgIHBhZGRpbmc6IDFlbTtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC1zaXplOiAxLjJlbTtcbiAgICBmb250LXdlaWdodDogNTAwO1xufVxudGV4dGFyZWEjdzNyZXZpZXcge1xuICAgIGNvbG9yOiAjMEYzQzczO1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvIFNsYWInLCBzZXJpZjtcbiAgICBmb250LXdlaWdodDogNzAwO1xuICAgIGZvbnQtc2l6ZTogMWVtO1xuXG4gIFxuICAgIHBhZGRpbmc6IDBlbSA0cHg7XG5cblxuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYm9yZGVyLWNvbG9yOiAjQ0JDN0M3O1xufVxuLmZ1bGwtd2lkdGhcbntcbiAgICB3aWR0aDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG4gICAgbWFyZ2luOiAwZW0gMTBweDtcbiAgICBtYXJnaW4tdG9wOiAxZW07XG59XG4ubWFpbi1jb250YWluZXItdWllbGVtZW50cyB7XG4gICAgbWFyZ2luLXJpZ2h0OiAyZW07XG4gICAgcGFkZGluZy10b3A6IDBlbTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgcGFkZGluZy1ib3R0b206IDJlbTtcbiAgICBib3gtc2hhZG93OiAzcHggM3B4IDVweCAzcHggI2NjYztcbiBcbn1cbi50YWItdGV4dCB7XG4gICAgcGFkZGluZzogMC41ZW07XG5cbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEuMWVtO1xufVxuLnRhYi10ZXh0OmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmhpZ2hsaWdodCB7XG4gICAgYmFja2dyb3VuZDogI0U4RThFODtcbiAgICBoZWlnaHQ6IDF2aDtcbiAgICAvKiBwb3NpdGlvbjogcmVsYXRpdmU7ICovXG4gICAgdG9wOiAxOHZoO1xuICAgIC8qIHotaW5kZXg6IDE7ICovXG4gICAgd2lkdGg6IDEwMCU7XG59XG4ubWF0LU5vdGlmaWNhdGlvbiB7XG4gICAgbWFyZ2luOiAwZW0gMWVtO1xufVxuLnRleHQtYXJlYSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBhZGRpbmc6IDFlbSAwZW07XG59XG5cblxuLm5vdGlmaWNhdGlvbkNhcmR7XG4gICAgbWFyZ2luOiAwZW0gMmVtO1xufVxuXG50ZXh0YXJlYSN3M3JldmlldyB7XG4gICAgd2lkdGg6IDEwMCU7XG59XG4uYWRkLW1vcmUtYXJlYTpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmVkaXQtaW1hZ2UtcGFydCB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5zcGFuLmxpbmUge1xuICAgIHBhZGRpbmc6IDEwcHg7XG59XG4ucmVtb3ZlLW9wdGlvbjpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cblxuXG4udXBkYXRlLWJ1dHRvbiB7XG4gICAgcGFkZGluZy10b3A6IDJlbTtcbn1cbi51cGRhdGUtYWRkLW1vcmVcbntcbiAgICBwYWRkaW5nOiAwO1xufVxuXG5pbWcubGVmdC1pbWFnZS1jb250YWluZXIudG9wLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEydnc7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".top-tab-bar {\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;\n    text-align: center;\n    align-content: center;\n    /* background-color: #E8E8E8; */\n}\nspan.tab-text {\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    background-color: #E8E8E8;\n    font-size: 18px;\n\n}\n.mat-card-ui-elelment{\n    margin-top: 2em;\n  \n}\nimg.left-image-container {\n    height: 22.5vh;\n    margin: 1em 0em;\n    border: 1px solid;\n}\nimg.image-agent {\n    height: 17vh;\n}\n.image-user {\n    display: flex;\n    justify-content: center;\n    margin: 1em;\n    margin-top: 0em;\n}\n.agent-image-upload {\n\n    border: 1px solid #CBC7C7;;\n    border-radius: 10px;\n\n    padding-bottom: 1em;\n\n}\nspan.note-area {\n    color: #B1A9A9;\n    padding: 10px;\n    font-family: 'Roboto Slab', serif;\nfont-weight: 500;\nfont-size: 15px;\n\n}\nimg.cross-image {\n    position: absolute;\n    margin: 0.7em -1.5em;\n    /* border-radius: 17px; */\n}\nimg.cross-image {\n    height: 1.5vh;\n}\n.upload-image-first-container {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n    padding: 1em;\n}\n.main-container-banner-image {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-around;\n    align-items: center;\n}\nimg.pen-image {\n    height: 1.3vh;\n    padding-right: 10px;\n}\n.home-page-banner\n{\n    box-shadow: 3px 3px 5px 3px #ccc;\n    border-radius: 10px;\n}\n.mat-home-page-card {\n    margin: 1em 0em;\n    border-radius: 10px;\n    padding: 0em 1em;\n}\n.profile-heading.profile-heading-two {\n    width: -webkit-max-content;\n    width: -moz-max-content;\n    width: max-content;\n    padding-right: 13px;\n}\n.main-container-banner-image.image-journey-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1em;\n    margin-right: -3px;\n}\n.main-contianer-journey {\n    display: flex;\n    flex-direction: row;\n    margin-top: 1em;\n}\n.agent-image-upload.journey-image-container {\n    border-radius: 0px;\n}\n.main-contianer-journey {\n    width: 100%;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-gap: 2em;\n    margin: 0em 0em;;\n}\n.agent-image-upload.journey-image-container {\n    width: 100%;\n    border-radius: 10px;\n}\n.outputText {\n    color: var(--light-blue-color);\n    font-family: 'Roboto-Medium';\n    padding: 1em;\n    font-family: 'Roboto Slab', serif;\n    font-size: 1.2em;\n    font-weight: 500;\n}\ntextarea#w3review {\n    color: #0F3C73;\n    font-family: 'Roboto Slab', serif;\n    font-weight: 700;\n    font-size: 1em;\n\n  \n    padding: 0em 4px;\n\n\n    border-radius: 10px;\n    border-color: #CBC7C7;\n}\n.full-width\n{\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 1em;\n}\n.main-container-uielements {\n    margin-right: 2em;\n    padding-top: 0em;\n    margin-top: 2em;\n    background-color: white;\n    padding-bottom: 2em;\n    box-shadow: 3px 3px 5px 3px #ccc;\n \n}\n.tab-text {\n    padding: 0.5em;\n\n    font-family: 'Roboto Slab', serif;\n    font-weight: 500;\n    font-size: 1.1em;\n}\n.tab-text:hover\n{\n    cursor: pointer;\n}\n.highlight {\n    background: #E8E8E8;\n    height: 1vh;\n    /* position: relative; */\n    top: 18vh;\n    /* z-index: 1; */\n    width: 100%;\n}\n.mat-Notification {\n    margin: 0em 1em;\n}\n.text-area {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 1em 0em;\n}\n.notificationCard{\n    margin: 0em 2em;\n}\ntextarea#w3review {\n    width: 100%;\n}\n.add-more-area:hover {\n    cursor: pointer;\n}\n.edit-image-part {\n    display: flex;\n    flex-direction: row;\n    align-items: center;\n}\nspan.line {\n    padding: 10px;\n}\n.remove-option:hover\n{\n    cursor: pointer;\n}\n.update-button {\n    padding-top: 2em;\n}\n.update-add-more\n{\n    padding: 0;\n}\nimg.left-image-container.top-image {\n    height: 12vw;\n}\n.drop-down-error {\n    display: flex;\n    justify-content: flex-end;\n    margin-top: 2em;\n}\n.fields-error-form {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin-right: 1em;\n\n    margin-top: 1em;\n}\n.edit-blog-container {\n    background-color: #000000bf;\n    height: 100vh;\n    width: 100vw;\n    position: fixed;\n    top: 0;\n    z-index: 1;\n    left: 0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.sub-container-edit-popup {\n    background-color: white;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 2em;\n}\n.close-edit-blog {\n    width: 100%;\n    display: flex;\n    justify-content: flex-end;\n    padding-bottom: 1em;\n    align-items: center;\n}\n.close-edit-blog:hover\n{\n    cursor: pointer;\n}\nimg.cross-image-ui {\n    height: 2vh;\n}\n.file-upload.edit-blog-container-image {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    margin-top: 2em;\n}\n.note-container {\n    display: flex;\n    flex-direction: row;\n    align-items: baseline;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3VpZWxlbWVudHMuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYiw4Q0FBOEM7SUFDOUMsa0JBQWtCO0lBQ2xCLHFCQUFxQjtJQUNyQiwrQkFBK0I7QUFDbkM7QUFDQTtJQUNJLFlBQVk7SUFDWixpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLHlCQUF5QjtJQUN6QixlQUFlOztBQUVuQjtBQUVBO0lBQ0ksZUFBZTs7QUFFbkI7QUFDQTtJQUNJLGNBQWM7SUFDZCxlQUFlO0lBQ2YsaUJBQWlCO0FBQ3JCO0FBRUE7SUFDSSxZQUFZO0FBQ2hCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsdUJBQXVCO0lBQ3ZCLFdBQVc7SUFDWCxlQUFlO0FBQ25CO0FBQ0E7O0lBRUkseUJBQXlCO0lBQ3pCLG1CQUFtQjs7SUFFbkIsbUJBQW1COztBQUV2QjtBQUNBO0lBQ0ksY0FBYztJQUNkLGFBQWE7SUFDYixpQ0FBaUM7QUFDckMsZ0JBQWdCO0FBQ2hCLGVBQWU7O0FBRWY7QUFDQTtJQUNJLGtCQUFrQjtJQUNsQixvQkFBb0I7SUFDcEIseUJBQXlCO0FBQzdCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsWUFBWTtBQUNoQjtBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw2QkFBNkI7SUFDN0IsbUJBQW1CO0FBQ3ZCO0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0FBQ3ZCO0FBQ0E7O0lBRUksZ0NBQWdDO0lBQ2hDLG1CQUFtQjtBQUN2QjtBQUNBO0lBQ0ksZUFBZTtJQUNmLG1CQUFtQjtJQUNuQixnQkFBZ0I7QUFDcEI7QUFHQTtJQUNJLDBCQUFrQjtJQUFsQix1QkFBa0I7SUFBbEIsa0JBQWtCO0lBQ2xCLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGVBQWU7SUFDZixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsZUFBZTtBQUNuQjtBQUNBO0lBQ0ksa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSxXQUFXO0lBQ1gsYUFBYTtJQUNiLGtDQUFrQztJQUNsQyxhQUFhO0lBQ2IsZUFBZTtBQUNuQjtBQUVBO0lBQ0ksV0FBVztJQUNYLG1CQUFtQjtBQUN2QjtBQUVBO0lBQ0ksOEJBQThCO0lBQzlCLDRCQUE0QjtJQUM1QixZQUFZO0lBQ1osaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTtJQUNJLGNBQWM7SUFDZCxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGNBQWM7OztJQUdkLGdCQUFnQjs7O0lBR2hCLG1CQUFtQjtJQUNuQixxQkFBcUI7QUFDekI7QUFDQTs7SUFFSSxXQUFXO0lBQ1gsZUFBZTtJQUNmLGdCQUFnQjtJQUNoQixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxpQkFBaUI7SUFDakIsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLGdDQUFnQzs7QUFFcEM7QUFDQTtJQUNJLGNBQWM7O0lBRWQsaUNBQWlDO0lBQ2pDLGdCQUFnQjtJQUNoQixnQkFBZ0I7QUFDcEI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxtQkFBbUI7SUFDbkIsV0FBVztJQUNYLHdCQUF3QjtJQUN4QixTQUFTO0lBQ1QsZ0JBQWdCO0lBQ2hCLFdBQVc7QUFDZjtBQUNBO0lBQ0ksZUFBZTtBQUNuQjtBQUNBO0lBQ0ksYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCO0FBR0E7SUFDSSxlQUFlO0FBQ25CO0FBRUE7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSxhQUFhO0FBQ2pCO0FBQ0E7O0lBRUksZUFBZTtBQUNuQjtBQUdBO0lBQ0ksZ0JBQWdCO0FBQ3BCO0FBQ0E7O0lBRUksVUFBVTtBQUNkO0FBRUE7SUFDSSxZQUFZO0FBQ2hCO0FBRUE7SUFDSSxhQUFhO0lBQ2IseUJBQXlCO0lBQ3pCLGVBQWU7QUFDbkI7QUFDQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsbUJBQW1CO0lBQ25CLGlCQUFpQjs7SUFFakIsZUFBZTtBQUNuQjtBQUVBO0lBQ0ksMkJBQTJCO0lBQzNCLGFBQWE7SUFDYixZQUFZO0lBQ1osZUFBZTtJQUNmLE1BQU07SUFDTixVQUFVO0lBQ1YsT0FBTztJQUNQLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0FBQ3ZCO0FBQ0E7SUFDSSx1QkFBdUI7SUFDdkIsYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7QUFDaEI7QUFDQTtJQUNJLFdBQVc7SUFDWCxhQUFhO0lBQ2IseUJBQXlCO0lBQ3pCLG1CQUFtQjtJQUNuQixtQkFBbUI7QUFDdkI7QUFDQTs7SUFFSSxlQUFlO0FBQ25CO0FBQ0E7SUFDSSxXQUFXO0FBQ2Y7QUFDQTtJQUNJLGFBQWE7SUFDYix1QkFBdUI7SUFDdkIsbUJBQW1CO0lBQ25CLFlBQVk7SUFDWixlQUFlO0FBQ25CO0FBQ0E7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHFCQUFxQjtBQUN6QiIsImZpbGUiOiJzcmMvYXBwL0FkbWluUGFuZWwvdWllbGVtZW50cy91aWVsZW1lbnRzLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIudG9wLXRhYi1iYXIge1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmciAxZnIgMWZyIDFmcjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgYWxpZ24tY29udGVudDogY2VudGVyO1xuICAgIC8qIGJhY2tncm91bmQtY29sb3I6ICNFOEU4RTg7ICovXG59XG5zcGFuLnRhYi10ZXh0IHtcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0U4RThFODtcbiAgICBmb250LXNpemU6IDE4cHg7XG5cbn1cblxuLm1hdC1jYXJkLXVpLWVsZWxtZW50e1xuICAgIG1hcmdpbi10b3A6IDJlbTtcbiAgXG59XG5pbWcubGVmdC1pbWFnZS1jb250YWluZXIge1xuICAgIGhlaWdodDogMjIuNXZoO1xuICAgIG1hcmdpbjogMWVtIDBlbTtcbiAgICBib3JkZXI6IDFweCBzb2xpZDtcbn1cblxuaW1nLmltYWdlLWFnZW50IHtcbiAgICBoZWlnaHQ6IDE3dmg7XG59XG4uaW1hZ2UtdXNlciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBtYXJnaW46IDFlbTtcbiAgICBtYXJnaW4tdG9wOiAwZW07XG59XG4uYWdlbnQtaW1hZ2UtdXBsb2FkIHtcblxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNDQkM3Qzc7O1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG5cbiAgICBwYWRkaW5nLWJvdHRvbTogMWVtO1xuXG59XG5zcGFuLm5vdGUtYXJlYSB7XG4gICAgY29sb3I6ICNCMUE5QTk7XG4gICAgcGFkZGluZzogMTBweDtcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG5mb250LXdlaWdodDogNTAwO1xuZm9udC1zaXplOiAxNXB4O1xuXG59XG5pbWcuY3Jvc3MtaW1hZ2Uge1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICBtYXJnaW46IDAuN2VtIC0xLjVlbTtcbiAgICAvKiBib3JkZXItcmFkaXVzOiAxN3B4OyAqL1xufVxuaW1nLmNyb3NzLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuNXZoO1xufVxuLnVwbG9hZC1pbWFnZS1maXJzdC1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW07XG59XG5cbi5tYWluLWNvbnRhaW5lci1iYW5uZXItaW1hZ2Uge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG5pbWcucGVuLWltYWdlIHtcbiAgICBoZWlnaHQ6IDEuM3ZoO1xuICAgIHBhZGRpbmctcmlnaHQ6IDEwcHg7XG59XG4uaG9tZS1wYWdlLWJhbm5lclxue1xuICAgIGJveC1zaGFkb3c6IDNweCAzcHggNXB4IDNweCAjY2NjO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG4ubWF0LWhvbWUtcGFnZS1jYXJkIHtcbiAgICBtYXJnaW46IDFlbSAwZW07XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBwYWRkaW5nOiAwZW0gMWVtO1xufVxuXG5cbi5wcm9maWxlLWhlYWRpbmcucHJvZmlsZS1oZWFkaW5nLXR3byB7XG4gICAgd2lkdGg6IG1heC1jb250ZW50O1xuICAgIHBhZGRpbmctcmlnaHQ6IDEzcHg7XG59XG5cbi5tYWluLWNvbnRhaW5lci1iYW5uZXItaW1hZ2UuaW1hZ2Utam91cm5leS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBtYXJnaW4tcmlnaHQ6IC0zcHg7XG59XG4ubWFpbi1jb250aWFuZXItam91cm5leSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbn1cbi5hZ2VudC1pbWFnZS11cGxvYWQuam91cm5leS1pbWFnZS1jb250YWluZXIge1xuICAgIGJvcmRlci1yYWRpdXM6IDBweDtcbn1cblxuLm1haW4tY29udGlhbmVyLWpvdXJuZXkge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGRpc3BsYXk6IGdyaWQ7XG4gICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnIgMWZyIDFmcjtcbiAgICBncmlkLWdhcDogMmVtO1xuICAgIG1hcmdpbjogMGVtIDBlbTs7XG59XG5cbi5hZ2VudC1pbWFnZS11cGxvYWQuam91cm5leS1pbWFnZS1jb250YWluZXIge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG59XG5cbi5vdXRwdXRUZXh0IHtcbiAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbiAgICBwYWRkaW5nOiAxZW07XG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtc2l6ZTogMS4yZW07XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbn1cbnRleHRhcmVhI3czcmV2aWV3IHtcbiAgICBjb2xvcjogIzBGM0M3MztcbiAgICBmb250LWZhbWlseTogJ1JvYm90byBTbGFiJywgc2VyaWY7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBmb250LXNpemU6IDFlbTtcblxuICBcbiAgICBwYWRkaW5nOiAwZW0gNHB4O1xuXG5cbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIGJvcmRlci1jb2xvcjogI0NCQzdDNztcbn1cbi5mdWxsLXdpZHRoXG57XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xuICAgIG1hcmdpbjogMGVtIDEwcHg7XG4gICAgbWFyZ2luLXRvcDogMWVtO1xufVxuLm1haW4tY29udGFpbmVyLXVpZWxlbWVudHMge1xuICAgIG1hcmdpbi1yaWdodDogMmVtO1xuICAgIHBhZGRpbmctdG9wOiAwZW07XG4gICAgbWFyZ2luLXRvcDogMmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICAgIHBhZGRpbmctYm90dG9tOiAyZW07XG4gICAgYm94LXNoYWRvdzogM3B4IDNweCA1cHggM3B4ICNjY2M7XG4gXG59XG4udGFiLXRleHQge1xuICAgIHBhZGRpbmc6IDAuNWVtO1xuXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8gU2xhYicsIHNlcmlmO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxLjFlbTtcbn1cbi50YWItdGV4dDpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5oaWdobGlnaHQge1xuICAgIGJhY2tncm91bmQ6ICNFOEU4RTg7XG4gICAgaGVpZ2h0OiAxdmg7XG4gICAgLyogcG9zaXRpb246IHJlbGF0aXZlOyAqL1xuICAgIHRvcDogMTh2aDtcbiAgICAvKiB6LWluZGV4OiAxOyAqL1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLm1hdC1Ob3RpZmljYXRpb24ge1xuICAgIG1hcmdpbjogMGVtIDFlbTtcbn1cbi50ZXh0LWFyZWEge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAxZW0gMGVtO1xufVxuXG5cbi5ub3RpZmljYXRpb25DYXJke1xuICAgIG1hcmdpbjogMGVtIDJlbTtcbn1cblxudGV4dGFyZWEjdzNyZXZpZXcge1xuICAgIHdpZHRoOiAxMDAlO1xufVxuLmFkZC1tb3JlLWFyZWE6aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5lZGl0LWltYWdlLXBhcnQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuc3Bhbi5saW5lIHtcbiAgICBwYWRkaW5nOiAxMHB4O1xufVxuLnJlbW92ZS1vcHRpb246aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cblxuLnVwZGF0ZS1idXR0b24ge1xuICAgIHBhZGRpbmctdG9wOiAyZW07XG59XG4udXBkYXRlLWFkZC1tb3JlXG57XG4gICAgcGFkZGluZzogMDtcbn1cblxuaW1nLmxlZnQtaW1hZ2UtY29udGFpbmVyLnRvcC1pbWFnZSB7XG4gICAgaGVpZ2h0OiAxMnZ3O1xufVxuXG4uZHJvcC1kb3duLWVycm9yIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogZmxleC1lbmQ7XG4gICAgbWFyZ2luLXRvcDogMmVtO1xufVxuLmZpZWxkcy1lcnJvci1mb3JtIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tcmlnaHQ6IDFlbTtcblxuICAgIG1hcmdpbi10b3A6IDFlbTtcbn1cblxuLmVkaXQtYmxvZy1jb250YWluZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMwMDAwMDBiZjtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHdpZHRoOiAxMDB2dztcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwO1xuICAgIHotaW5kZXg6IDE7XG4gICAgbGVmdDogMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uc3ViLWNvbnRhaW5lci1lZGl0LXBvcHVwIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBwYWRkaW5nOiAyZW07XG59XG4uY2xvc2UtZWRpdC1ibG9nIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogZmxleC1lbmQ7XG4gICAgcGFkZGluZy1ib3R0b206IDFlbTtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmNsb3NlLWVkaXQtYmxvZzpob3Zlclxue1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbn1cbmltZy5jcm9zcy1pbWFnZS11aSB7XG4gICAgaGVpZ2h0OiAydmg7XG59XG4uZmlsZS11cGxvYWQuZWRpdC1ibG9nLWNvbnRhaW5lci1pbWFnZSB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBtYXJnaW4tdG9wOiAyZW07XG59XG4ubm90ZS1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICBhbGlnbi1pdGVtczogYmFzZWxpbmU7XG59XG5cbiJdfQ== */");
 
 /***/ }),
 
@@ -3132,6 +3756,12 @@ let UIElementsComponent = class UIElementsComponent {
         this.seller = null;
         this.buyer = null;
         this.blogUpload = false;
+        this.ownerErrorForm = true;
+        this.seekerErrorForm = false;
+        this.agentErrorForm = false;
+        this.otherErrorForm = false;
+        this.mydetailErrorForm = false;
+        this.editSingleBlogs = false;
     }
     ngOnInit() {
         this.user = JSON.parse(localStorage.getItem("user"));
@@ -3162,8 +3792,34 @@ let UIElementsComponent = class UIElementsComponent {
             this.getBlogs();
         });
     }
-    uploadBlogImage() {
-        this.blogUpload = true;
+    closeUpdateBlog() {
+        this.editSingleBlogs = false;
+    }
+    updateOpenedBlog(id) {
+        if (this.blogImageUrl != undefined) {
+            this.blogImageUrl;
+        }
+        else {
+            this.blogImageUrl = this.editimageUrl;
+        }
+        this.updateSingleBlogContent =
+            {
+                BlogImage: this.blogImageUrl,
+                BlogLink: this.EditBlogLink,
+                TextBlog: this.editTextBlog
+            };
+        this.CMSSERVICE.updateBlog(this.uid, id, this.updateSingleBlogContent);
+        this.getBlogs();
+        this.editSingleBlogs = false;
+    }
+    uploadBlogImage(id) {
+        this.CMSSERVICE.getBlogSingle(this.uid, id).then((elements) => {
+            this.singleBlogId = id;
+            this.editimageUrl = elements.data().BlogImage;
+            this.EditBlogLink = elements.data().BlogLink;
+            this.editTextBlog = elements.data().TextBlog;
+        });
+        this.editSingleBlogs = true;
     }
     updateTerms() {
         this.isLoading = true;
@@ -3215,6 +3871,7 @@ let UIElementsComponent = class UIElementsComponent {
             const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
                 data: { message: "UI Element Updated" }
             });
+            this.getFormImage();
         });
     }
     buyerupload(event) {
@@ -3233,6 +3890,7 @@ let UIElementsComponent = class UIElementsComponent {
                     // this.progress = this.snapTask.percentageChanges();
                     (yield this.task).ref.getDownloadURL().then(url => {
                         this.buyer = url;
+                        this.getPropertyMeta(url);
                     }); // <<< url is found here
                 }
             }
@@ -3255,11 +3913,22 @@ let UIElementsComponent = class UIElementsComponent {
                     // this.progress = this.snapTask.percentageChanges();
                     (yield this.task).ref.getDownloadURL().then(url => {
                         this.seller = url;
+                        this.getPropertyMeta(url);
                     }); // <<< url is found here
                 }
             }
             this.isLoading = false;
         });
+    }
+    getPropertyMeta(url) {
+        var img = new Image();
+        img.addEventListener("load", function () {
+            let imageUrl = "false";
+            if (this.naturalWidth != 783 && this.naturalHeight != 522) {
+                alert("Image Dimension must be 783 × 522");
+            }
+        });
+        img.src = url;
     }
     updateNotification() {
         this.isLoading = true;
@@ -3334,6 +4003,7 @@ let UIElementsComponent = class UIElementsComponent {
             this.bannerImages();
             this.getBlogs();
             this.getFooter();
+            this.closeaddNewBlog();
             this.bannerUpload = true;
         });
     }
@@ -3388,11 +4058,22 @@ let UIElementsComponent = class UIElementsComponent {
                     (yield this.task).ref.getDownloadURL().then(url => {
                         console.log(url);
                         this.newBlogImage = url;
+                        this.getBlogMeta(url);
                     }); // <<< url is found here
                 }
             }
             this.isLoading = false;
         });
+    }
+    getBlogMeta(url) {
+        var img = new Image();
+        img.addEventListener("load", function () {
+            let imageUrl = "false";
+            if (this.naturalWidth != 550 && this.naturalHeight != 340) {
+                alert("Image Dimension must be 550 × 340");
+            }
+        });
+        img.src = url;
     }
     step3upload(event) {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
@@ -3410,6 +4091,7 @@ let UIElementsComponent = class UIElementsComponent {
                     // this.progress = this.snapTask.percentageChanges();
                     (yield this.task).ref.getDownloadURL().then(url => {
                         this.step3ImageNew = url;
+                        this.getStepsMeta(url);
                     }); // <<< url is found here
                 }
             }
@@ -3432,6 +4114,7 @@ let UIElementsComponent = class UIElementsComponent {
                     // this.progress = this.snapTask.percentageChanges();
                     (yield this.task).ref.getDownloadURL().then(url => {
                         this.step2ImageNew = url;
+                        this.getStepsMeta(url);
                     }); // <<< url is found here
                 }
             }
@@ -3454,11 +4137,55 @@ let UIElementsComponent = class UIElementsComponent {
                     // this.progress = this.snapTask.percentageChanges();
                     (yield this.task).ref.getDownloadURL().then(url => {
                         this.step1ImageNew = url;
+                        this.getStepsMeta(url);
                     }); // <<< url is found here
                 }
             }
             this.isLoading = false;
         });
+    }
+    getStepsMeta(url) {
+        var img = new Image();
+        img.addEventListener("load", function () {
+            let imageUrl = "false";
+            if (this.naturalWidth != 472 && this.naturalHeight != 475) {
+                alert("Image Dimension must be 472x475");
+            }
+        });
+        img.src = url;
+    }
+    uploadBlog(event) {
+        return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
+            this.isLoading = true;
+            const file = event.target.files[0];
+            if (file.size > 2000000) {
+                const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+                    data: { message: "Image size must be less than 2mb" }
+                });
+            }
+            else {
+                if (file) {
+                    const filePath = `${this.basePath}/${file.name}`; // path at which image will be stored in the firebase storage
+                    this.task = this.afStorage.upload(filePath, file); // upload task
+                    // this.progress = this.snapTask.percentageChanges();
+                    (yield this.task).ref.getDownloadURL().then(url => {
+                        this.blogImageUrl = url;
+                        this.getUpdateBlogMeta(url);
+                    }); // <<< url is found here
+                }
+            }
+            this.isLoading = false;
+        });
+    }
+    getUpdateBlogMeta(url) {
+        var img = new Image();
+        img.addEventListener("load", function () {
+            let imageUrl = "false";
+            if (this.naturalWidth != 550 && this.naturalHeight != 340) {
+                alert("Image Dimension must be 550 × 340");
+            }
+        });
+        img.src = url;
     }
     upload(event) {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
@@ -3475,12 +4202,23 @@ let UIElementsComponent = class UIElementsComponent {
                     this.task = this.afStorage.upload(filePath, file); // upload task
                     // this.progress = this.snapTask.percentageChanges();
                     (yield this.task).ref.getDownloadURL().then(url => {
+                        this.getMeta(url);
                         this.topBannerImage = url;
                     }); // <<< url is found here
                 }
             }
             this.isLoading = false;
         });
+    }
+    getMeta(url) {
+        var img = new Image();
+        img.addEventListener("load", function () {
+            let imageUrl = "false";
+            if (this.naturalWidth != 783 && this.naturalHeight != 522) {
+                alert("Image Dimension must be 783x522");
+            }
+        });
+        img.src = url;
     }
     LoweBanner(event) {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
@@ -3497,10 +4235,21 @@ let UIElementsComponent = class UIElementsComponent {
                 // this.progress = this.snapTask.percentageChanges();
                 (yield this.task).ref.getDownloadURL().then(url => {
                     this.secondBanner = url;
+                    this.getLoweBanneMeta(url);
                 }); // <<< url is found here
             }
             this.isLoading = false;
         });
+    }
+    getLoweBanneMeta(url) {
+        var img = new Image();
+        img.addEventListener("load", function () {
+            let imageUrl = "false";
+            if (this.naturalWidth != 2250 && this.naturalHeight != 1500) {
+                alert("Image Dimension must be 2250x1500");
+            }
+        });
+        img.src = url;
     }
     backClicked() {
         this._location.back();
@@ -3648,6 +4397,11 @@ let UIElementsComponent = class UIElementsComponent {
         this.BuyerDetails = true;
         this.PrivacyPolicy = false;
         this.TermConditon = false;
+        //Forms Error
+        this.seekerErrorForm = true;
+        this.ownerErrorForm = false;
+        this.agentErrorForm = false;
+        this.formType = "seeker";
         document.getElementById("home").style.background = "#E8E8E8";
         document.getElementById("notification").style.background = "#E8E8E8";
         document.getElementById("seller").style.background = "#E8E8E8";
@@ -3714,6 +4468,49 @@ let UIElementsComponent = class UIElementsComponent {
                 this.image = element.data().Image;
             });
         }
+    }
+    showSeekerForm() {
+        this.seekerErrorForm = true;
+        this.ownerErrorForm = false;
+        this.agentErrorForm = false;
+        this.otherErrorForm = false;
+        this.mydetailErrorForm = false;
+        this.formType = "seeker";
+    }
+    showOwnerForm() {
+        this.seekerErrorForm = false;
+        this.ownerErrorForm = true;
+        this.agentErrorForm = false;
+        this.otherErrorForm = false;
+        this.mydetailErrorForm = false;
+        this.formType = "owner";
+    }
+    showAgentForm() {
+        this.seekerErrorForm = false;
+        this.ownerErrorForm = false;
+        this.agentErrorForm = true;
+        this.otherErrorForm = false;
+        this.mydetailErrorForm = false;
+        this.formType = "agent";
+    }
+    showOtherForm() {
+        this.seekerErrorForm = false;
+        this.ownerErrorForm = false;
+        this.agentErrorForm = false;
+        this.otherErrorForm = true;
+        this.mydetailErrorForm = false;
+        this.formType = "other";
+    }
+    showMyDetailForm() {
+        this.seekerErrorForm = false;
+        this.ownerErrorForm = false;
+        this.agentErrorForm = false;
+        this.otherErrorForm = false;
+        this.mydetailErrorForm = true;
+        this.formType = "details";
+    }
+    closeaddNewBlog() {
+        this.addNewBlog = false;
     }
 };
 UIElementsComponent.ctorParameters = () => [
@@ -4349,7 +5146,7 @@ const APP_DATE_FORMATS = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".back {\n  background-image: url(/assets/Images/home.jpeg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n}\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n  position: relative;\n  top: -145px;\n}\n.home-button {\n  background-color:var(--light-blue-color);\n  color: white;\n  width: 35%;\n}\n.home-button-SELL\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  width: 35%;\n}\n.home-text-font {\n \n\n  margin-bottom: 0.5rem;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background:white;\n\n}\n.how_does_it_work_steps {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n}\np.step-text {\n  text-align: center;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Medium';\n}\n.steps-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin: 0em 1em;\n}\n.step {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n\n}\n@media only screen and (min-width:768px)\n{\n  .icon-size\n  {\n    width: 50% !important;\n  }\n}\n.cookies-policy {\n  background-color: white;\nposition: absolute;\n  padding: 3px;\n  position: fixed;\nbottom: 0px;\nz-index: 1;\nbox-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n}\n.policy-heading {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 13px;\n}\np\n{\n  margin-bottom: 0px;\n}\nimg.button-cross {\n  width: 17px;\n}\n.custom-button-first {\n\n  padding: 8px;\n  border-radius: 5px;\n  align-items: center;\n  flex-direction: inherit;\n    display: flex;\n    justify-content: space-around;\n   \n}\n.blue-circle {\n  padding: 5px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n  width: 17%;\n}\n.custom-text {\n  font-size: 16px;\n  font-family: 'Roboto-Bold';\n}\n.upper-custom-button {\n  display: flex;\n  justify-content: center;\n  margin: 1em 0em;\n}\n.create-nestimate {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  justify-content: center;\n  background-color:var(--DARK-BLUE-COLOR);\nmargin-top: 1em;\nmargin-bottom: 1em;\n\nbox-shadow: 5px 5px 6px #00000066;\n\n}\nimg.button-image {\nheight: 6vh;\n}\n.text-create-nestimate\n{\n  color: white;\n  font-size: 1.3em;\n  padding: 0em 0.5em;\n  font-family: 'Segoe UI Bold';\n  display: flex;\n}\n.large-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\np.i-am {\n  /* text-align: center; */\n  font-size: 1.5em;\n  text-align: center;\n  margin-bottom: 1em;\n  font-family: 'Segoe UI Bold';\n}\n.custom-button-first:hover\n{\n  cursor: pointer;\n}\n.radio-container {\n  display: block;\n  position: relative;\n  padding-left: 2em;\n  cursor: pointer;\n  font-size: 23px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: 'Segoe UI SemiBold';\n  color: #0F3C73;\n  padding-top: 0em;\n}\n/* Hide the browser's default radio button */\n.radio-container input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n}\n/* Create a custom radio button */\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n/* On mouse-over, add a grey background color */\n.radio-container:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n/* When the radio button is checked, add a blue background */\n.radio-container input:checked ~ .checkmark {\n  background-color: var(--light-blue-color);\n}\n/* Create the indicator (the dot/circle - hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n/* Show the indicator (dot/circle) when checked */\n.radio-container input:checked ~ .checkmark:after {\n  display: block;\n}\n/* Style the indicator (dot/circle) */\n.radio-container .checkmark:after {\n \ttop: 9px;\n\tleft: 9px;\n\twidth: 8px;\n\theight: 8px;\n  border-radius: 50%;\n}\nlabel\n{\n  margin-bottom: 0px !important;\n}\n.slider-image\n{\n  width: 100%;\n}\n@media screen and (min-width:701px)\n{\n\n\n.second-card.mat-card {\n  display: none;\n}\n.steps-container {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-gap: 5em;\n}\n\n\n.cookies-policy {\n\n  margin: 2em 4em;\n}\n.cookies-policy-text {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n.cookies-button {\n  /* display: contents; */\n  display: flex;\n  flex-direction: row;\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n  /* margin: 13px 18px; */\n  width: 63vw;\n  display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    align-items: center;\n    margin-top: 10px;\n    margin-bottom: 5px;\n    color: var(--DARK-BLUE-COLOR);\n    font-family: \"Segoe UI Regular\";\n    font-size: 1em;\n\n}\n.policy-heading {\n\n  display: inline;\n  margin-left: 13px;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n\n}\n.text-over-image {\n  /* position: absolute; */\n  position: relative;\n  /* bottom: 50vh; */\n  top: -8vh;\n  /* bottom: 50vh; */\n  text-align: center;\n  z-index: 1;\n  font-size: 1.5em;\n  font-family: 'Roboto-Bold';\n  color: white;\n}\n.radio-cn.mat-card {\n\n  background-color: var(--BAckground-dark-color);\n}\n.text-over-image-second {\n  position: absolute;\n \n  bottom: -15vh;\n  color: white;\n  font-size: 1.4em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n\n}\n.second-card\n{\n  background-color: var(--BAckground-dark-color); \n}\n.heading-nestimate-font{\n  font-size: 22px;\n  padding: 2em;\n  text-align: center;\n\n}\n.top-button-cookies {\n  text-align: center;\n  /* height: 7vh; */\n  color: white;\n  border: 4px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 1em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n  font-size: 1.2em;\n\n}\n.top-button-cookies:hover\n{\n  cursor: pointer;\n}\n.lower-button\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  border: none;\n  color: white;\n}\n.agent-form {\n  display: flex;\n  /* width: 100%; */\n  justify-content: center;\n  margin: 1em;\n}\n.listing-heading {\n  margin: 1em;\n}\n.to-buy {\n  margin: 0em 0.5em;\n}\nspan.greater-than-arrow.paragraph-color.mr-1 {\n  font-size: 2em;\n  padding-right: 0.1em;\n  padding-right: 0.5em;\n  font-family: 'Segoe UI Bold';\n}\n.image-over {\n  margin-top: 2em;\n}\nimg.buyer-jpg {\n  height: 36vh;\n  width: 100%;\n}\n.custom-buttons {\n  padding: 1em 0em;\n}\n.card-steps {\n  background-color: white;\n  padding-bottom: 2em;\n}\n@media screen and (min-width:701px)\n{\n  \nhr\n{\n display: none;\n}\n\n\n.outputText {\n\n  font-size: 1.1em;\n}\n.heading-nestimate-font {\n  font-size: 2em;\n}\nimg.buyer-jpg {\n\n  display: none;\n}\n.text-over-image {\n\n  font-size: 1.7em;\n \n}\n.top-button-cookies {\n  text-align: center;\n\n  border: 2px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 0.6em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n}\n.policy-content-layout {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  height: 100%;\n}\n}\n@media screen and (max-width:700px)\n{\n\n    .top-button-cookies{\n      padding: 0.3em;\n      margin: 1.3em;\n      font-size: 1em;\n      border: 2px solid #81C2FD;\n  \n\n  }\n  .policy-heading {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 4px;\n    margin-left: 0px !important;\n\n}\n.policy-content {\nmargin: 0px;\nmargin: 0px;\ncolor: #0F3C73;\nfont-family: \"Segoe UI Regular\";\n}\n.policy-content-layout {\n  margin: 20px;\n}\n.cookies-policy{\n  background-color: #ffffd5;\n  width: 100vw;\n}\n\n.policy-heading {\n\n\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n}\n@media screen and (max-width:700px)\n{\n  .blog-grid {\n    display: grid;\n    grid-template-columns: 1fr;\n    margin: 2em;\n    grid-gap: 3em;\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 0em 1em;\n}\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n}\n@media screen and (min-width:701px)\n{\n  .image-over\n  {\n    display: none;\n  }\n}\n/*New Xd */\n.radio-cn {\n  position: absolute;\n  bottom: 50vh;\n  top: 22vh;\n  left: 8vw;\n}\n.custom-buttons {\n  padding: 1em 0em;\n  background-color: white;\n  padding: 1em 1em;\n  border-radius: 20px;\n  margin: 0em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.heading-nestimate-font\n{\n  color: var(--DARK-BLUE-COLOR);\n  padding-bottom: 20px;\n  padding-top: 20px;\n}\n.steps-container{\n  margin: 0em 5em;\n}\nimg.step-mage{\n  width: 40%;\n  margin: 14px;\n}\n.steps-main-heading\n{\n  font-size: 1.4em;\n  color: var(--light-blue-color);\n}\n.slider-text {\n\n  text-align: center;\n  width: 100%;\n  color:var(--DARK-BLUE-COLOR);\n  margin-top: 10px;\n      font-size: 1.1em;\n}\nimg.blog-image {\n  width: 100% !important;\n  box-shadow: 5px 5px 6px #0000004f;\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  margin: 1em 5em;\n  grid-gap: 6em;\n\n  margin-bottom: 0em;\n\n}\n.grid-text{\n  margin: 1em 5px;\n  text-align: center;\n    font-size: 18px;\n }\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 1em 5rem;\n  display: flex;\n  align-items: center;\n}\n.text-with-right-arrw {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n}\nimg.color-right-arrow {\n  margin-left: 11px;\n}\n.button-take-Matches {\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  padding: 0.8em 1em;\n  display: flex;\n  flex-direction: row;\n  /* justify-content: space-between; */\n  justify-content: space-evenly;\n  width: 100%;\n  align-items: center;\n}\n.Login-from-top {\n  position: fixed;\n  z-index: 2;\n  background-color: #00000091;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  top: 0;\n}\n@media screen and (max-width:700px)\n{\n  p.i-am{\n    font-size: 1.1em;\n    text-align: center;\n    margin-bottom: 1em;\n    font-family: 'Segoe UI Bold';\n}\n.radio-cn{\n  position: absolute;\n  top: 30vh;\n  left: 10vw;\n  right: 10vw;\n}\n.radio-container {\n  font-size: 17px;\n}\n.text-create-nestimate {\n  color: white;\n  font-size: 0.9em;\n  padding: 0em 0.5em;\n  font-family: 'Segoe UI Bold';\n  display: flex;\n  align-items: center;\n}\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 20px;\n  width: 20px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n.upper-custom-button{\n  margin: 0em 0em;\n}\n.custom-buttons{\n  padding: 1em 0em;\n  background-color: white;\n  padding: 0.5em 0em;\n  border-radius: 20px;\n  margin: 0em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.image-over {\n  margin-top: 28vh;\n}\n.text-over-image-second{\n  position: absolute;\n  top: 44em;\n  bottom: -3vh;\n  color: white;\n  font-size: 1em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n}\n.heading-nestimate-font {\n  font-size: 20px;\n  padding: 1em;\n  text-align: center;\n}\n.steps-container{\n  margin: 0em 1em;\n}\n.steps-main-heading {\n  font-size: 1.1em;\n  color: var(--light-blue-color);\n}\n.slider-text {\n  text-align: center;\n  width: 100%;\n  color: var(--DARK-BLUE-COLOR);\n  margin-top: 10px;\n  font-size: 15px;\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 1em 2em;\n  grid-gap: 0em;\n  margin-bottom: 0em;\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n  font-size: 16px;\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;  \n  overflow: hidden\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1em;\n  margin: 1em 1rem;\n  display: flex;\n  align-items: center;\n  padding-left: 1em;\n}\n}\nimg.slider-image {\n  height: 522px;\n  height: 5;\n}\n@media screen and (max-width:700px)\n{\n  img.slider-image{\n    height: 199px;\n    height: 5;\n}\n\n.text-over-image-second {\n  position: absolute;\n  bottom: 3vh;\n  top: 37em;\n  color: white;\n  font-size: 1em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n}\n.cookies-policy {\nbackground-color: white; \n  width: 100vw;\n}\nimg.step-mage{\n  width: 35%;\n  margin: 14px;\n}\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQ0FBK0M7RUFDL0MsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBRUE7RUFDRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLHdDQUF3QztFQUN4QyxZQUFZO0VBQ1osVUFBVTtBQUNaO0FBRUE7OztFQUdFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLDZCQUE2QjtFQUM3Qiw0QkFBNEI7QUFDOUI7QUFHQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7O0FBRXJCO0FBQ0E7O0VBRUU7O0lBRUUscUJBQXFCO0VBQ3ZCO0FBQ0Y7QUFDQTtFQUNFLHVCQUF1QjtBQUN6QixrQkFBa0I7RUFDaEIs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LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvSW1hZ2VzL2hvbWUuanBlZyk7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4udXBwZXItYmFjayB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgb3BhY2l0eTogMC41O1xufVxuLnVwcGVyLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gIHotaW5kZXg6IDEwMDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xNDVweDtcbn1cblxuLmhvbWUtYnV0dG9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuLmhvbWUtYnV0dG9uLVNFTExcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuXG4uaG9tZS10ZXh0LWZvbnQge1xuIFxuXG4gIG1hcmdpbi1ib3R0b206IDAuNXJlbTtcbn1cbi5leGFtcGxlLWZvcm0ge1xuICBtaW4td2lkdGg6IDE1MHB4O1xuICBtYXgtd2lkdGg6IDUwMHB4O1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwcHg7XG4gIGxlZnQ6IDBweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHotaW5kZXg6IDk7XG4gIGJhY2tncm91bmQ6d2hpdGU7XG5cbn1cbi5ob3dfZG9lc19pdF93b3JrX3N0ZXBzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuXG5wLnN0ZXAtdGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG59XG5cblxuLnN0ZXBzLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW46IDBlbSAxZW07XG59XG4uc3RlcCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzY4cHgpXG57XG4gIC5pY29uLXNpemVcbiAge1xuICAgIHdpZHRoOiA1MCUgIWltcG9ydGFudDtcbiAgfVxufVxuLmNvb2tpZXMtcG9saWN5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG5wb3NpdGlvbjogYWJzb2x1dGU7XG4gIHBhZGRpbmc6IDNweDtcbiAgcG9zaXRpb246IGZpeGVkO1xuYm90dG9tOiAwcHg7XG56LWluZGV4OiAxO1xuYm94LXNoYWRvdzogMCAyLjhweCAyLjJweCByZ2JhKDAsIDAsIDAsIDAuMDM0KSwgMCA2LjdweCA1LjNweCByZ2JhKDAsIDAsIDAsIDAuMDQ4KSwgMCAxMi41cHggMTBweCByZ2JhKDAsIDAsIDAsIDAuMDYpLCAwIDIyLjNweCAxNy45cHggcmdiYSgwLCAwLCAwLCAwLjA3MiksIDAgNDEuOHB4IDMzLjRweCByZ2JhKDAsIDAsIDAsIDAuMDg2KSwgMCAxMDBweCA4MHB4IHJnYmEoMCwgMCwgMCwgMC4xMik7XG59XG4ucG9saWN5LWNvbnRlbnQge1xuICBtYXJnaW46IDEzcHg7XG4gIHRleHQtYWxpZ246IGp1c3RpZnk7XG59XG4ucG9saWN5LWhlYWRpbmcge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG1hcmdpbjogMTNweDtcbn1cbnBcbntcbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xufVxuaW1nLmJ1dHRvbi1jcm9zcyB7XG4gIHdpZHRoOiAxN3B4O1xufVxuLmN1c3RvbS1idXR0b24tZmlyc3Qge1xuXG4gIHBhZGRpbmc6IDhweDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBmbGV4LWRpcmVjdGlvbjogaW5oZXJpdDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgXG59XG4uYmx1ZS1jaXJjbGUge1xuICBwYWRkaW5nOiA1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIHdpZHRoOiAxNyU7XG59XG4uY3VzdG9tLXRleHQge1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xufVxuLnVwcGVyLWN1c3RvbS1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgbWFyZ2luOiAxZW0gMGVtO1xufVxuLmNyZWF0ZS1uZXN0aW1hdGUge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6dmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbm1hcmdpbi10b3A6IDFlbTtcbm1hcmdpbi1ib3R0b206IDFlbTtcblxuYm94LXNoYWRvdzogNXB4IDVweCA2cHggIzAwMDAwMDY2O1xuXG59XG5pbWcuYnV0dG9uLWltYWdlIHtcbmhlaWdodDogNnZoO1xufVxuLnRleHQtY3JlYXRlLW5lc3RpbWF0ZVxue1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIHBhZGRpbmc6IDBlbSAwLjVlbTtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbiAgZGlzcGxheTogZmxleDtcbn1cbi5sYXJnZS1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbnAuaS1hbSB7XG4gIC8qIHRleHQtYWxpZ246IGNlbnRlcjsgKi9cbiAgZm9udC1zaXplOiAxLjVlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAxZW07XG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgQm9sZCc7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdDpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ucmFkaW8tY29udGFpbmVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAyZW07XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZm9udC1zaXplOiAyM3B4O1xuICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lO1xuICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFNlbWlCb2xkJztcbiAgY29sb3I6ICMwRjNDNzM7XG4gIHBhZGRpbmctdG9wOiAwZW07XG59XG5cbi8qIEhpZGUgdGhlIGJyb3dzZXIncyBkZWZhdWx0IHJhZGlvIGJ1dHRvbiAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgb3BhY2l0eTogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4vKiBDcmVhdGUgYSBjdXN0b20gcmFkaW8gYnV0dG9uICovXG4uY2hlY2ttYXJrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIGhlaWdodDogMjVweDtcbiAgd2lkdGg6IDI1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cblxuLyogT24gbW91c2Utb3ZlciwgYWRkIGEgZ3JleSBiYWNrZ3JvdW5kIGNvbG9yICovXG4ucmFkaW8tY29udGFpbmVyOmhvdmVyIGlucHV0IH4gLmNoZWNrbWFyayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNjY2M7XG59XG5cbi8qIFdoZW4gdGhlIHJhZGlvIGJ1dHRvbiBpcyBjaGVja2VkLCBhZGQgYSBibHVlIGJhY2tncm91bmQgKi9cbi5yYWRpby1jb250YWluZXIgaW5wdXQ6Y2hlY2tlZCB+IC5jaGVja21hcmsge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbn1cblxuLyogQ3JlYXRlIHRoZSBpbmRpY2F0b3IgKHRoZSBkb3QvY2lyY2xlIC0gaGlkZGVuIHdoZW4gbm90IGNoZWNrZWQpICovXG4uY2hlY2ttYXJrOmFmdGVyIHtcbiAgY29udGVudDogXCJcIjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4vKiBTaG93IHRoZSBpbmRpY2F0b3IgKGRvdC9jaXJjbGUpIHdoZW4gY2hlY2tlZCAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dDpjaGVja2VkIH4gLmNoZWNrbWFyazphZnRlciB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKiBTdHlsZSB0aGUgaW5kaWNhdG9yIChkb3QvY2lyY2xlKSAqL1xuLnJhZGlvLWNvbnRhaW5lciAuY2hlY2ttYXJrOmFmdGVyIHtcbiBcdHRvcDogOXB4O1xuXHRsZWZ0OiA5cHg7XG5cdHdpZHRoOiA4cHg7XG5cdGhlaWdodDogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5sYWJlbFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcbn1cbi5zbGlkZXItaW1hZ2VcbntcbiAgd2lkdGg6IDEwMCU7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzAxcHgpXG57XG5cblxuLnNlY29uZC1jYXJkLm1hdC1jYXJkIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbi5zdGVwcy1jb250YWluZXIge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICBncmlkLWdhcDogNWVtO1xufVxuXG5cbi5jb29raWVzLXBvbGljeSB7XG5cbiAgbWFyZ2luOiAyZW0gNGVtO1xufVxuLmNvb2tpZXMtcG9saWN5LXRleHQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmNvb2tpZXMtYnV0dG9uIHtcbiAgLyogZGlzcGxheTogY29udGVudHM7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG4ucG9saWN5LWNvbnRlbnQge1xuICBtYXJnaW46IDEzcHg7XG4gIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gIC8qIG1hcmdpbjogMTNweCAxOHB4OyAqL1xuICB3aWR0aDogNjN2dztcbiAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDVweDtcbiAgICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgICBmb250LWZhbWlseTogXCJTZWdvZSBVSSBSZWd1bGFyXCI7XG4gICAgZm9udC1zaXplOiAxZW07XG5cbn1cbi5wb2xpY3ktaGVhZGluZyB7XG5cbiAgZGlzcGxheTogaW5saW5lO1xuICBtYXJnaW4tbGVmdDogMTNweDtcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGZvbnQtZmFtaWx5OiBcIlJvYm90by1Cb2xkXCI7XG59XG5cbn1cblxuLnRleHQtb3Zlci1pbWFnZSB7XG4gIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAvKiBib3R0b206IDUwdmg7ICovXG4gIHRvcDogLTh2aDtcbiAgLyogYm90dG9tOiA1MHZoOyAqL1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHotaW5kZXg6IDE7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICBjb2xvcjogd2hpdGU7XG59XG4ucmFkaW8tY24ubWF0LWNhcmQge1xuXG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7XG59XG4udGV4dC1vdmVyLWltYWdlLXNlY29uZCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiBcbiAgYm90dG9tOiAtMTV2aDtcbiAgY29sb3I6IHdoaXRlO1xuICBmb250LXNpemU6IDEuNGVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcblxufVxuLnNlY29uZC1jYXJkXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7IFxufVxuXG5cbiAgLmhlYWRpbmctbmVzdGltYXRlLWZvbnR7XG4gIGZvbnQtc2l6ZTogMjJweDtcbiAgcGFkZGluZzogMmVtO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG5cbn1cbi50b3AtYnV0dG9uLWNvb2tpZXMge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIC8qIGhlaWdodDogN3ZoOyAqL1xuICBjb2xvcjogd2hpdGU7XG4gIGJvcmRlcjogNHB4IHNvbGlkICM4MUMyRkQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBwYWRkaW5nOiAxZW07XG4gIG1hcmdpbjogMWVtO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMS4yZW07XG5cbn1cblxuLnRvcC1idXR0b24tY29va2llczpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubG93ZXItYnV0dG9uXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGJvcmRlcjogbm9uZTtcbiAgY29sb3I6IHdoaXRlO1xufVxuLmFnZW50LWZvcm0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICAvKiB3aWR0aDogMTAwJTsgKi9cbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMWVtO1xufVxuLmxpc3RpbmctaGVhZGluZyB7XG4gIG1hcmdpbjogMWVtO1xufVxuLnRvLWJ1eSB7XG4gIG1hcmdpbjogMGVtIDAuNWVtO1xufVxuc3Bhbi5ncmVhdGVyLXRoYW4tYXJyb3cucGFyYWdyYXBoLWNvbG9yLm1yLTEge1xuICBmb250LXNpemU6IDJlbTtcbiAgcGFkZGluZy1yaWdodDogMC4xZW07XG4gIHBhZGRpbmctcmlnaHQ6IDAuNWVtO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIEJvbGQnO1xufVxuLmltYWdlLW92ZXIge1xuICBtYXJnaW4tdG9wOiAyZW07XG59XG5cbmltZy5idXllci1qcGcge1xuICBoZWlnaHQ6IDM2dmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmN1c3RvbS1idXR0b25zIHtcbiAgcGFkZGluZzogMWVtIDBlbTtcbn1cbi5jYXJkLXN0ZXBzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgXG5oclxue1xuIGRpc3BsYXk6IG5vbmU7XG59XG5cblxuLm91dHB1dFRleHQge1xuXG4gIGZvbnQtc2l6ZTogMS4xZW07XG59XG4uaGVhZGluZy1uZXN0aW1hdGUtZm9udCB7XG4gIGZvbnQtc2l6ZTogMmVtO1xufVxuaW1nLmJ1eWVyLWpwZyB7XG5cbiAgZGlzcGxheTogbm9uZTtcbn1cbi50ZXh0LW92ZXItaW1hZ2Uge1xuXG4gIGZvbnQtc2l6ZTogMS43ZW07XG4gXG59XG4udG9wLWJ1dHRvbi1jb29raWVzIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuXG4gIGJvcmRlcjogMnB4IHNvbGlkICM4MUMyRkQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBwYWRkaW5nOiAwLjZlbTtcbiAgbWFyZ2luOiAxZW07XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5wb2xpY3ktY29udGVudC1sYXlvdXQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgaGVpZ2h0OiAxMDAlO1xufVxufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3MDBweClcbntcblxuICAgIC50b3AtYnV0dG9uLWNvb2tpZXN7XG4gICAgICBwYWRkaW5nOiAwLjNlbTtcbiAgICAgIG1hcmdpbjogMS4zZW07XG4gICAgICBmb250LXNpemU6IDFlbTtcbiAgICAgIGJvcmRlcjogMnB4IHNvbGlkICM4MUMyRkQ7XG4gIFxuXG4gIH1cbiAgLnBvbGljeS1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbjogNHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAwcHggIWltcG9ydGFudDtcblxufVxuLnBvbGljeS1jb250ZW50IHtcbm1hcmdpbjogMHB4O1xubWFyZ2luOiAwcHg7XG5jb2xvcjogIzBGM0M3MztcbmZvbnQtZmFtaWx5OiBcIlNlZ29lIFVJIFJlZ3VsYXJcIjtcbn1cbi5wb2xpY3ktY29udGVudC1sYXlvdXQge1xuICBtYXJnaW46IDIwcHg7XG59XG4uY29va2llcy1wb2xpY3l7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZDU7XG4gIHdpZHRoOiAxMDB2dztcbn1cblxuLnBvbGljeS1oZWFkaW5nIHtcblxuXG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBmb250LWZhbWlseTogXCJSb2JvdG8tQm9sZFwiO1xufVxufVxuXG5cblxuXG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3MDBweClcbntcbiAgLmJsb2ctZ3JpZCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmcjtcbiAgICBtYXJnaW46IDJlbTtcbiAgICBncmlkLWdhcDogM2VtO1xufVxuLmhlYWRpbmctbmVzdGltYXRlLmJsb2ctdG9wLWhlYWRpbmcge1xuICBmb250LXNpemU6IDEuM2VtO1xuICBtYXJnaW46IDBlbSAxZW07XG59XG59XG4uYmxvZy1saW5rLWRlY29yYXRpb257XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOjcwMXB4KVxue1xuICAuaW1hZ2Utb3ZlclxuICB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxufVxuXG5cblxuXG5cbi8qTmV3IFhkICovXG4ucmFkaW8tY24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJvdHRvbTogNTB2aDtcbiAgdG9wOiAyMnZoO1xuICBsZWZ0OiA4dnc7XG59XG4uY3VzdG9tLWJ1dHRvbnMge1xuICBwYWRkaW5nOiAxZW0gMGVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZzogMWVtIDFlbTtcbiAgYm9yZGVyLXJhZGl1czogMjBweDtcbiAgbWFyZ2luOiAwZW07XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA2Njtcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS1mb250XG57XG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBwYWRkaW5nLWJvdHRvbTogMjBweDtcbiAgcGFkZGluZy10b3A6IDIwcHg7XG59XG4uc3RlcHMtY29udGFpbmVye1xuICBtYXJnaW46IDBlbSA1ZW07XG59XG5pbWcuc3RlcC1tYWdle1xuICB3aWR0aDogNDAlO1xuICBtYXJnaW46IDE0cHg7XG59XG4uc3RlcHMtbWFpbi1oZWFkaW5nXG57XG4gIGZvbnQtc2l6ZTogMS40ZW07XG4gIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbn1cbi5zbGlkZXItdGV4dCB7XG5cbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgY29sb3I6dmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgICAgIGZvbnQtc2l6ZTogMS4xZW07XG59XG5pbWcuYmxvZy1pbWFnZSB7XG4gIHdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA0Zjtcbn1cbi5ibG9nLWdyaWQge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICBtYXJnaW46IDFlbSA1ZW07XG4gIGdyaWQtZ2FwOiA2ZW07XG5cbiAgbWFyZ2luLWJvdHRvbTogMGVtO1xuXG59XG4uZ3JpZC10ZXh0e1xuICBtYXJnaW46IDFlbSA1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gfVxuXG4uaGVhZGluZy1uZXN0aW1hdGUuYmxvZy10b3AtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIG1hcmdpbjogMWVtIDVyZW07XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi50ZXh0LXdpdGgtcmlnaHQtYXJydyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmltZy5jb2xvci1yaWdodC1hcnJvdyB7XG4gIG1hcmdpbi1sZWZ0OiAxMXB4O1xufVxuXG5cbi5idXR0b24tdGFrZS1NYXRjaGVzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICBwYWRkaW5nOiAwLjhlbSAxZW07XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIC8qIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjsgKi9cbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gIHdpZHRoOiAxMDAlO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uTG9naW4tZnJvbS10b3Age1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHotaW5kZXg6IDI7XG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDAwMDA5MTtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHRvcDogMDtcbn1cblxuXG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIHAuaS1hbXtcbiAgICBmb250LXNpemU6IDEuMWVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG4gICAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbn1cbi5yYWRpby1jbntcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDMwdmg7XG4gIGxlZnQ6IDEwdnc7XG4gIHJpZ2h0OiAxMHZ3O1xufVxuLnJhZGlvLWNvbnRhaW5lciB7XG4gIGZvbnQtc2l6ZTogMTdweDtcbn1cbi50ZXh0LWNyZWF0ZS1uZXN0aW1hdGUge1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMC45ZW07XG4gIHBhZGRpbmc6IDBlbSAwLjVlbTtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5jaGVja21hcmsge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgaGVpZ2h0OiAyMHB4O1xuICB3aWR0aDogMjBweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xufVxuLnVwcGVyLWN1c3RvbS1idXR0b257XG4gIG1hcmdpbjogMGVtIDBlbTtcbn1cbi5jdXN0b20tYnV0dG9uc3tcbiAgcGFkZGluZzogMWVtIDBlbTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBhZGRpbmc6IDAuNWVtIDBlbTtcbiAgYm9yZGVyLXJhZGl1czogMjBweDtcbiAgbWFyZ2luOiAwZW07XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA2Njtcbn1cbi5pbWFnZS1vdmVyIHtcbiAgbWFyZ2luLXRvcDogMjh2aDtcbn1cbi50ZXh0LW92ZXItaW1hZ2Utc2Vjb25ke1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDRlbTtcbiAgYm90dG9tOiAtM3ZoO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS1mb250IHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBwYWRkaW5nOiAxZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5zdGVwcy1jb250YWluZXJ7XG4gIG1hcmdpbjogMGVtIDFlbTtcbn1cbi5zdGVwcy1tYWluLWhlYWRpbmcge1xuICBmb250LXNpemU6IDEuMWVtO1xuICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG59XG4uc2xpZGVyLXRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgZm9udC1zaXplOiAxNXB4O1xufVxuLmJsb2ctZ3JpZCB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xuICBtYXJnaW46IDFlbSAyZW07XG4gIGdyaWQtZ2FwOiAwZW07XG4gIG1hcmdpbi1ib3R0b206IDBlbTtcbn1cbi5ibG9nLWxpbmstZGVjb3JhdGlvbntcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjb2xvcjogYmxhY2s7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIC13ZWJraXQtbGluZS1jbGFtcDogMztcbiAgLXdlYmtpdC1ib3gtb3JpZW50OiB2ZXJ0aWNhbDsgIFxuICBvdmVyZmxvdzogaGlkZGVuXG59XG4uaGVhZGluZy1uZXN0aW1hdGUuYmxvZy10b3AtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBtYXJnaW46IDFlbSAxcmVtO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBwYWRkaW5nLWxlZnQ6IDFlbTtcbn1cbn1cblxuaW1nLnNsaWRlci1pbWFnZSB7XG4gIGhlaWdodDogNTIycHg7XG4gIGhlaWdodDogNTtcbn1cblxuXG5cblxuXG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIGltZy5zbGlkZXItaW1hZ2V7XG4gICAgaGVpZ2h0OiAxOTlweDtcbiAgICBoZWlnaHQ6IDU7XG59XG5cbi50ZXh0LW92ZXItaW1hZ2Utc2Vjb25kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IDN2aDtcbiAgdG9wOiAzN2VtO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbn1cbi5jb29raWVzLXBvbGljeSB7XG5iYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsgXG4gIHdpZHRoOiAxMDB2dztcbn1cbmltZy5zdGVwLW1hZ2V7XG4gIHdpZHRoOiAzNSU7XG4gIG1hcmdpbjogMTRweDtcbn1cbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".back {\n  background-image: url(/assets/Images/home.jpeg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n}\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n  position: relative;\n  top: -145px;\n}\n.home-button {\n  background-color:var(--light-blue-color);\n  color: white;\n  width: 35%;\n}\n.home-button-SELL\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  width: 35%;\n}\n.home-text-font {\n \n\n  margin-bottom: 0.5rem;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background:white;\n\n}\n.how_does_it_work_steps {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n}\np.step-text {\n  text-align: center;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Medium';\n}\n.steps-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin: 0em 1em;\n}\n.step {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n\n}\n@media only screen and (min-width:768px)\n{\n  .icon-size\n  {\n    width: 50% !important;\n  }\n}\n.cookies-policy {\n  background-color: white;\nposition: absolute;\n  padding: 3px;\n  position: fixed;\nbottom: 0px;\nz-index: 1;\nbox-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n}\n.policy-heading {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 13px;\n}\np\n{\n  margin-bottom: 0px;\n}\nimg.button-cross {\n  width: 17px;\n}\n.custom-button-first {\n\n  padding: 8px;\n  border-radius: 5px;\n  align-items: center;\n  flex-direction: inherit;\n    display: flex;\n    justify-content: space-around;\n   \n}\n.blue-circle {\n  padding: 5px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n  width: 17%;\n}\n.custom-text {\n  font-size: 16px;\n  font-family: 'Roboto-Bold';\n}\n.upper-custom-button {\n  display: flex;\n  justify-content: center;\n  margin: 1em 0em;\n}\n.create-nestimate {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  justify-content: center;\n  background-color:var(--DARK-BLUE-COLOR);\nmargin-top: 1em;\nmargin-bottom: 1em;\n\nbox-shadow: 5px 5px 6px #00000066;\n\n}\nimg.button-image {\nheight: 6vh;\n}\n.text-create-nestimate\n{\n  color: white;\n  font-size: 1.3em;\n  padding: 0em 0.5em;\n  font-family: 'Segoe UI Bold';\n  display: flex;\n}\n.large-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\np.i-am {\n  /* text-align: center; */\n  font-size: 1.5em;\n  text-align: center;\n  margin-bottom: 1em;\n  font-family: 'Segoe UI Bold';\n}\n.custom-button-first:hover\n{\n  cursor: pointer;\n}\n.radio-container {\n  display: block;\n  position: relative;\n  padding-left: 2em;\n  cursor: pointer;\n  font-size: 23px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: 'Segoe UI SemiBold';\n  color: #0F3C73;\n  padding-top: 0em;\n}\n/* Hide the browser's default radio button */\n.radio-container input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n}\n/* Create a custom radio button */\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n/* On mouse-over, add a grey background color */\n.radio-container:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n/* When the radio button is checked, add a blue background */\n.radio-container input:checked ~ .checkmark {\n  background-color: var(--light-blue-color);\n}\n/* Create the indicator (the dot/circle - hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n/* Show the indicator (dot/circle) when checked */\n.radio-container input:checked ~ .checkmark:after {\n  display: block;\n}\n/* Style the indicator (dot/circle) */\n.radio-container .checkmark:after {\n \ttop: 9px;\n\tleft: 9px;\n\twidth: 8px;\n\theight: 8px;\n  border-radius: 50%;\n}\nlabel\n{\n  margin-bottom: 0px !important;\n}\n.slider-image\n{\n  width: 100%;\n}\n@media screen and (min-width:701px)\n{\n\n\n.second-card.mat-card {\n  display: none;\n}\n.steps-container {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-gap: 5em;\n}\n\n\n.cookies-policy {\n\n  margin: 2em 4em;\n}\n.cookies-policy-text {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n.cookies-button {\n  /* display: contents; */\n  display: flex;\n  flex-direction: row;\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n  /* margin: 13px 18px; */\n  width: 63vw;\n  display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    align-items: center;\n    margin-top: 10px;\n    margin-bottom: 5px;\n    color: var(--DARK-BLUE-COLOR);\n    font-family: \"Segoe UI Regular\";\n    font-size: 1em;\n\n}\n.policy-heading {\n\n  display: inline;\n  margin-left: 13px;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n\n}\n.text-over-image {\n  /* position: absolute; */\n  position: relative;\n  /* bottom: 50vh; */\n  top: -8vh;\n  /* bottom: 50vh; */\n  text-align: center;\n  z-index: 1;\n  font-size: 1.5em;\n  font-family: 'Roboto-Bold';\n  color: white;\n}\n.radio-cn.mat-card {\n\n  background-color: var(--BAckground-dark-color);\n}\n.text-over-image-second {\n  position: absolute;\n \n  bottom: -15vh;\n  color: white;\n  font-size: 1.4em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n\n}\n.second-card\n{\n  background-color: var(--BAckground-dark-color); \n}\n.heading-nestimate-font{\n  font-size: 22px;\n  padding: 2em;\n  text-align: center;\n\n}\n.top-button-cookies {\n  text-align: center;\n  /* height: 7vh; */\n  color: white;\n  border: 4px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 1em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n  font-size: 1.2em;\n\n}\n.top-button-cookies:hover\n{\n  cursor: pointer;\n}\n.lower-button\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  border: none;\n  color: white;\n}\n.agent-form {\n  display: flex;\n  /* width: 100%; */\n  justify-content: center;\n  margin: 1em;\n}\n.listing-heading {\n  margin: 1em;\n}\n.to-buy {\n  margin: 0em 0.5em;\n}\nspan.greater-than-arrow.paragraph-color.mr-1 {\n  font-size: 2em;\n  padding-right: 0.1em;\n  padding-right: 0.5em;\n  font-family: 'Segoe UI Bold';\n}\n.image-over {\n  margin-top: 2em;\n}\nimg.buyer-jpg {\n  height: 36vh;\n  width: 100%;\n}\n.custom-buttons {\n  padding: 1em 0em;\n}\n.card-steps {\n  background-color: white;\n  padding-bottom: 2em;\n}\n@media screen and (min-width:701px)\n{\n  \nhr\n{\n display: none;\n}\n\n\n.outputText {\n\n  font-size: 1.1em;\n}\n.heading-nestimate-font {\n  font-size: 2em;\n}\nimg.buyer-jpg {\n\n  display: none;\n}\n.text-over-image {\n\n  font-size: 1.7em;\n \n}\n.top-button-cookies {\n  text-align: center;\n\n  border: 2px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 0.6em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n}\n.policy-content-layout {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  height: 100%;\n}\n}\n@media screen and (max-width:700px)\n{\n\n    .top-button-cookies{\n      padding: 0.3em;\n      margin: 1.3em;\n      font-size: 1em;\n      border: 2px solid #81C2FD;\n  \n\n  }\n  .policy-heading {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 4px;\n    margin-left: 0px !important;\n\n}\n.policy-content {\nmargin: 0px;\nmargin: 0px;\ncolor: #0F3C73;\nfont-family: \"Segoe UI Regular\";\n}\n.policy-content-layout {\n  margin: 20px;\n}\n.cookies-policy{\n  background-color: #ffffd5;\n  width: 100vw;\n}\n\n.policy-heading {\n\n\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n}\n@media screen and (max-width:700px)\n{\n  .blog-grid {\n    display: grid;\n    grid-template-columns: 1fr;\n    margin: 2em;\n    grid-gap: 3em;\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 0em 1em;\n}\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n}\n@media screen and (min-width:701px)\n{\n  .image-over\n  {\n    display: none;\n  }\n}\n/*New Xd */\n.radio-cn {\n  position: absolute;\n  bottom: 50vh;\n  top: 22vh;\n  left: 8vw;\n}\n.custom-buttons {\n  padding: 1em 0em;\n  background-color: white;\n  padding: 1em 1em;\n  border-radius: 20px;\n  margin: 0em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.heading-nestimate-font\n{\n  color: var(--DARK-BLUE-COLOR);\n  padding-bottom: 20px;\n  padding-top: 20px;\n}\n.steps-container{\n  margin: 0em 5em;\n}\nimg.step-mage{\n  width: 40%;\n  margin: 14px;\n}\n.steps-main-heading\n{\n  font-size: 1.4em;\n  color: var(--light-blue-color);\n}\n.slider-text {\n\n  text-align: center;\n  width: 100%;\n  color:var(--DARK-BLUE-COLOR);\n  margin-top: 10px;\n      font-size: 1.1em;\n}\nimg.blog-image {\n  width: 100% !important;\n  box-shadow: 5px 5px 6px #0000004f;\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  margin: 1em 5em;\n  grid-gap: 6em;\n\n  margin-bottom: 0em;\n\n}\n.grid-text{\n  margin: 1em 5px;\n  text-align: center;\n    font-size: 18px;\n }\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 1em 5rem;\n  display: flex;\n  align-items: center;\n}\n.text-with-right-arrw {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n}\nimg.color-right-arrow {\n  margin-left: 11px;\n}\n.button-take-Matches {\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  padding: 0.8em 1em;\n  display: flex;\n  flex-direction: row;\n  /* justify-content: space-between; */\n  justify-content: space-evenly;\n  width: 100%;\n  align-items: center;\n}\n.Login-from-top {\n  position: fixed;\n  z-index: 2;\n  background-color: #00000091;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  top: 0;\n}\n@media screen and (max-width:700px)\n{\n  p.i-am{\n    font-size: 1.1em;\n    text-align: center;\n    margin-bottom: 1em;\n    font-family: 'Segoe UI Bold';\n}\n.radio-cn{\n  position: absolute;\n  top: 30vh;\n  left: 10vw;\n  right: 10vw;\n}\n.radio-container {\n  font-size: 17px;\n}\n.text-create-nestimate {\n  color: white;\n  font-size: 0.9em;\n  padding: 0em 0.5em;\n  font-family: 'Segoe UI Bold';\n  display: flex;\n  align-items: center;\n}\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 20px;\n  width: 20px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n.upper-custom-button{\n  margin: 0em 0em;\n}\n.custom-buttons{\n  padding: 1em 0em;\n  background-color: white;\n  padding: 0.5em 0em;\n  border-radius: 20px;\n  margin: 0em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.image-over {\n  margin-top: 28vh;\n}\n.text-over-image-second{\n  position: absolute;\n  top: 44em;\n  bottom: -3vh;\n  color: white;\n  font-size: 1em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n}\n.heading-nestimate-font {\n  font-size: 20px;\n  padding: 1em;\n  text-align: center;\n}\n.steps-container{\n  margin: 0em 1em;\n}\n.steps-main-heading {\n  font-size: 1.1em;\n  color: var(--light-blue-color);\n}\n.slider-text {\n  text-align: center;\n  width: 100%;\n  color: var(--DARK-BLUE-COLOR);\n  margin-top: 10px;\n  font-size: 15px;\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 1em 2em;\n  grid-gap: 0em;\n  margin-bottom: 0em;\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n  font-size: 16px;\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;  \n  overflow: hidden\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1em;\n  margin: 1em 1rem;\n  display: flex;\n  align-items: center;\n  padding-left: 1em;\n}\n}\nimg.slider-image {\n  height: 522px;\n  height: 5;\n}\n@media screen and (max-width:700px)\n{\n  img.slider-image{\n    height: 199px;\n    height: 5;\n}\n\n.text-over-image-second {\n  position: absolute;\n  bottom: 3vh;\n  top: 37em;\n  color: white;\n  font-size: 1em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n}\n.cookies-policy {\nbackground-color: white; \n  width: 100vw;\n}\nimg.step-mage{\n  width: 35%;\n  margin: 14px;\n}\n}\n@media screen and (min-width:701px)\n{\n  .text-over-image-second {\n    display: none;\n}\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9Ib21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQ0FBK0M7RUFDL0MsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBRUE7RUFDRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLHdDQUF3QztFQUN4QyxZQUFZO0VBQ1osVUFBVTtBQUNaO0FBRUE7OztFQUdFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLDZCQUE2QjtFQUM3Qiw0QkFBNEI7QUFDOUI7QUFHQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7O0FBRXJCO0FBQ0E7O0VBRUU7O0lBRUUscUJBQXFCO0VBQ3ZCO0FBQ0Y7QUFDQTtFQUNFLHVCQUF1QjtBQUN6QixrQkFBa0I7RUFDaEIs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bGUiOiJzcmMvYXBwL0hvbWUvSG9tZS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmJhY2sge1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoL2Fzc2V0cy9JbWFnZXMvaG9tZS5qcGVnKTtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogYXV0bztcbiAgYmFja2dyb3VuZC1yZXBlYXQ6IG5vLXJlcGVhdDtcbiAgYmFja2dyb3VuZC1zaXplOiBjb3Zlcjtcbn1cbi51cHBlci1iYWNrIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDI1MHB4O1xuICBvcGFjaXR5OiAwLjU7XG59XG4udXBwZXItYnV0dG9uIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIGFsaWduLWNvbnRlbnQ6IGNlbnRlcjtcbiAgei1pbmRleDogMTAwO1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRvcDogLTE0NXB4O1xufVxuXG4uaG9tZS1idXR0b24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOnZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICBjb2xvcjogd2hpdGU7XG4gIHdpZHRoOiAzNSU7XG59XG4uaG9tZS1idXR0b24tU0VMTFxue1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBjb2xvcjogd2hpdGU7XG4gIHdpZHRoOiAzNSU7XG59XG5cbi5ob21lLXRleHQtZm9udCB7XG4gXG5cbiAgbWFyZ2luLWJvdHRvbTogMC41cmVtO1xufVxuLmV4YW1wbGUtZm9ybSB7XG4gIG1pbi13aWR0aDogMTUwcHg7XG4gIG1heC13aWR0aDogNTAwcHg7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4uZXhhbXBsZS1mdWxsLXdpZHRoIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGJvcmRlcjogbm9uZTtcbn1cblxuLmxvYWRpbmctY29udGFpbmVyIHtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgcG9zaXRpb246IGZpeGVkO1xuICB0b3A6IDBweDtcbiAgbGVmdDogMHB4O1xuICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgZGlzcGxheTogZmxleDtcbiAgLXdlYmtpdC1ib3gtcGFjazogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgLXdlYmtpdC1ib3gtYWxpZ246IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgei1pbmRleDogOTtcbiAgYmFja2dyb3VuZDp3aGl0ZTtcblxufVxuLmhvd19kb2VzX2l0X3dvcmtfc3RlcHMge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG59XG5cbnAuc3RlcC10ZXh0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tTWVkaXVtJztcbn1cblxuXG4uc3RlcHMtY29udGFpbmVyIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMGVtIDFlbTtcbn1cbi5zdGVwIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG5cbn1cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3NjhweClcbntcbiAgLmljb24tc2l6ZVxuICB7XG4gICAgd2lkdGg6IDUwJSAhaW1wb3J0YW50O1xuICB9XG59XG4uY29va2llcy1wb2xpY3kge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbnBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcGFkZGluZzogM3B4O1xuICBwb3NpdGlvbjogZml4ZWQ7XG5ib3R0b206IDBweDtcbnotaW5kZXg6IDE7XG5ib3gtc2hhZG93OiAwIDIuOHB4IDIuMnB4IHJnYmEoMCwgMCwgMCwgMC4wMzQpLCAwIDYuN3B4IDUuM3B4IHJnYmEoMCwgMCwgMCwgMC4wNDgpLCAwIDEyLjVweCAxMHB4IHJnYmEoMCwgMCwgMCwgMC4wNiksIDAgMjIuM3B4IDE3LjlweCByZ2JhKDAsIDAsIDAsIDAuMDcyKSwgMCA0MS44cHggMzMuNHB4IHJnYmEoMCwgMCwgMCwgMC4wODYpLCAwIDEwMHB4IDgwcHggcmdiYSgwLCAwLCAwLCAwLjEyKTtcbn1cbi5wb2xpY3ktY29udGVudCB7XG4gIG1hcmdpbjogMTNweDtcbiAgdGV4dC1hbGlnbjoganVzdGlmeTtcbn1cbi5wb2xpY3ktaGVhZGluZyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgbWFyZ2luOiAxM3B4O1xufVxucFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHg7XG59XG5pbWcuYnV0dG9uLWNyb3NzIHtcbiAgd2lkdGg6IDE3cHg7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdCB7XG5cbiAgcGFkZGluZzogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZsZXgtZGlyZWN0aW9uOiBpbmhlcml0O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gICBcbn1cbi5ibHVlLWNpcmNsZSB7XG4gIHBhZGRpbmc6IDVweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgd2lkdGg6IDE3JTtcbn1cbi5jdXN0b20tdGV4dCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG59XG4udXBwZXItY3VzdG9tLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW46IDFlbSAwZW07XG59XG4uY3JlYXRlLW5lc3RpbWF0ZSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xubWFyZ2luLXRvcDogMWVtO1xubWFyZ2luLWJvdHRvbTogMWVtO1xuXG5ib3gtc2hhZG93OiA1cHggNXB4IDZweCAjMDAwMDAwNjY7XG5cbn1cbmltZy5idXR0b24taW1hZ2Uge1xuaGVpZ2h0OiA2dmg7XG59XG4udGV4dC1jcmVhdGUtbmVzdGltYXRlXG57XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAxLjNlbTtcbiAgcGFkZGluZzogMGVtIDAuNWVtO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIEJvbGQnO1xuICBkaXNwbGF5OiBmbGV4O1xufVxuLmxhcmdlLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxucC5pLWFtIHtcbiAgLyogdGV4dC1hbGlnbjogY2VudGVyOyAqL1xuICBmb250LXNpemU6IDEuNWVtO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi1ib3R0b206IDFlbTtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbn1cbi5jdXN0b20tYnV0dG9uLWZpcnN0OmhvdmVyXG57XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5yYWRpby1jb250YWluZXIge1xuICBkaXNwbGF5OiBibG9jaztcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBwYWRkaW5nLWxlZnQ6IDJlbTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBmb250LXNpemU6IDIzcHg7XG4gIC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7XG4gIC1tcy11c2VyLXNlbGVjdDogbm9uZTtcbiAgdXNlci1zZWxlY3Q6IG5vbmU7XG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgU2VtaUJvbGQnO1xuICBjb2xvcjogIzBGM0M3MztcbiAgcGFkZGluZy10b3A6IDBlbTtcbn1cblxuLyogSGlkZSB0aGUgYnJvd3NlcidzIGRlZmF1bHQgcmFkaW8gYnV0dG9uICovXG4ucmFkaW8tY29udGFpbmVyIGlucHV0IHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBvcGFjaXR5OiAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi8qIENyZWF0ZSBhIGN1c3RvbSByYWRpbyBidXR0b24gKi9cbi5jaGVja21hcmsge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgaGVpZ2h0OiAyNXB4O1xuICB3aWR0aDogMjVweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xufVxuXG4vKiBPbiBtb3VzZS1vdmVyLCBhZGQgYSBncmV5IGJhY2tncm91bmQgY29sb3IgKi9cbi5yYWRpby1jb250YWluZXI6aG92ZXIgaW5wdXQgfiAuY2hlY2ttYXJrIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2NjYztcbn1cblxuLyogV2hlbiB0aGUgcmFkaW8gYnV0dG9uIGlzIGNoZWNrZWQsIGFkZCBhIGJsdWUgYmFja2dyb3VuZCAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dDpjaGVja2VkIH4gLmNoZWNrbWFyayB7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xufVxuXG4vKiBDcmVhdGUgdGhlIGluZGljYXRvciAodGhlIGRvdC9jaXJjbGUgLSBoaWRkZW4gd2hlbiBub3QgY2hlY2tlZCkgKi9cbi5jaGVja21hcms6YWZ0ZXIge1xuICBjb250ZW50OiBcIlwiO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbi8qIFNob3cgdGhlIGluZGljYXRvciAoZG90L2NpcmNsZSkgd2hlbiBjaGVja2VkICovXG4ucmFkaW8tY29udGFpbmVyIGlucHV0OmNoZWNrZWQgfiAuY2hlY2ttYXJrOmFmdGVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG59XG5cbi8qIFN0eWxlIHRoZSBpbmRpY2F0b3IgKGRvdC9jaXJjbGUpICovXG4ucmFkaW8tY29udGFpbmVyIC5jaGVja21hcms6YWZ0ZXIge1xuIFx0dG9wOiA5cHg7XG5cdGxlZnQ6IDlweDtcblx0d2lkdGg6IDhweDtcblx0aGVpZ2h0OiA4cHg7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cbmxhYmVsXG57XG4gIG1hcmdpbi1ib3R0b206IDBweCAhaW1wb3J0YW50O1xufVxuLnNsaWRlci1pbWFnZVxue1xuICB3aWR0aDogMTAwJTtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcblxuXG4uc2Vjb25kLWNhcmQubWF0LWNhcmQge1xuICBkaXNwbGF5OiBub25lO1xufVxuLnN0ZXBzLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XG4gIGdyaWQtZ2FwOiA1ZW07XG59XG5cblxuLmNvb2tpZXMtcG9saWN5IHtcblxuICBtYXJnaW46IDJlbSA0ZW07XG59XG4uY29va2llcy1wb2xpY3ktdGV4dCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG4uY29va2llcy1idXR0b24ge1xuICAvKiBkaXNwbGF5OiBjb250ZW50czsgKi9cbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbn1cbi5wb2xpY3ktY29udGVudCB7XG4gIG1hcmdpbjogMTNweDtcbiAgdGV4dC1hbGlnbjoganVzdGlmeTtcbiAgLyogbWFyZ2luOiAxM3B4IDE4cHg7ICovXG4gIHdpZHRoOiA2M3Z3O1xuICBkaXNwbGF5OiBmbGV4O1xuICAgIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbi10b3A6IDEwcHg7XG4gICAgbWFyZ2luLWJvdHRvbTogNXB4O1xuICAgIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICAgIGZvbnQtZmFtaWx5OiBcIlNlZ29lIFVJIFJlZ3VsYXJcIjtcbiAgICBmb250LXNpemU6IDFlbTtcblxufVxuLnBvbGljeS1oZWFkaW5nIHtcblxuICBkaXNwbGF5OiBpbmxpbmU7XG4gIG1hcmdpbi1sZWZ0OiAxM3B4O1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgZm9udC1mYW1pbHk6IFwiUm9ib3RvLUJvbGRcIjtcbn1cblxufVxuXG4udGV4dC1vdmVyLWltYWdlIHtcbiAgLyogcG9zaXRpb246IGFic29sdXRlOyAqL1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIC8qIGJvdHRvbTogNTB2aDsgKi9cbiAgdG9wOiAtOHZoO1xuICAvKiBib3R0b206IDUwdmg7ICovXG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgei1pbmRleDogMTtcbiAgZm9udC1zaXplOiAxLjVlbTtcbiAgZm9udC1mYW1pbHk6ICdSb2JvdG8tQm9sZCc7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cbi5yYWRpby1jbi5tYXQtY2FyZCB7XG5cbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tQkFja2dyb3VuZC1kYXJrLWNvbG9yKTtcbn1cbi50ZXh0LW92ZXItaW1hZ2Utc2Vjb25kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuIFxuICBib3R0b206IC0xNXZoO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMS40ZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuXG59XG4uc2Vjb25kLWNhcmRcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tQkFja2dyb3VuZC1kYXJrLWNvbG9yKTsgXG59XG5cblxuICAuaGVhZGluZy1uZXN0aW1hdGUtZm9udHtcbiAgZm9udC1zaXplOiAyMnB4O1xuICBwYWRkaW5nOiAyZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcblxufVxuLnRvcC1idXR0b24tY29va2llcyB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgLyogaGVpZ2h0OiA3dmg7ICovXG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyOiA0cHggc29saWQgIzgxQzJGRDtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHBhZGRpbmc6IDFlbTtcbiAgbWFyZ2luOiAxZW07XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgZm9udC1zaXplOiAxLjJlbTtcblxufVxuXG4udG9wLWJ1dHRvbi1jb29raWVzOmhvdmVyXG57XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5sb3dlci1idXR0b25cbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgYm9yZGVyOiBub25lO1xuICBjb2xvcjogd2hpdGU7XG59XG4uYWdlbnQtZm9ybSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC8qIHdpZHRoOiAxMDAlOyAqL1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgbWFyZ2luOiAxZW07XG59XG4ubGlzdGluZy1oZWFkaW5nIHtcbiAgbWFyZ2luOiAxZW07XG59XG4udG8tYnV5IHtcbiAgbWFyZ2luOiAwZW0gMC41ZW07XG59XG5zcGFuLmdyZWF0ZXItdGhhbi1hcnJvdy5wYXJhZ3JhcGgtY29sb3IubXItMSB7XG4gIGZvbnQtc2l6ZTogMmVtO1xuICBwYWRkaW5nLXJpZ2h0OiAwLjFlbTtcbiAgcGFkZGluZy1yaWdodDogMC41ZW07XG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgQm9sZCc7XG59XG4uaW1hZ2Utb3ZlciB7XG4gIG1hcmdpbi10b3A6IDJlbTtcbn1cblxuaW1nLmJ1eWVyLWpwZyB7XG4gIGhlaWdodDogMzZ2aDtcbiAgd2lkdGg6IDEwMCU7XG59XG4uY3VzdG9tLWJ1dHRvbnMge1xuICBwYWRkaW5nOiAxZW0gMGVtO1xufVxuLmNhcmQtc3RlcHMge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZy1ib3R0b206IDJlbTtcbn1cblxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOjcwMXB4KVxue1xuICBcbmhyXG57XG4gZGlzcGxheTogbm9uZTtcbn1cblxuXG4ub3V0cHV0VGV4dCB7XG5cbiAgZm9udC1zaXplOiAxLjFlbTtcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS1mb250IHtcbiAgZm9udC1zaXplOiAyZW07XG59XG5pbWcuYnV5ZXItanBnIHtcblxuICBkaXNwbGF5OiBub25lO1xufVxuLnRleHQtb3Zlci1pbWFnZSB7XG5cbiAgZm9udC1zaXplOiAxLjdlbTtcbiBcbn1cbi50b3AtYnV0dG9uLWNvb2tpZXMge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG5cbiAgYm9yZGVyOiAycHggc29saWQgIzgxQzJGRDtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIHBhZGRpbmc6IDAuNmVtO1xuICBtYXJnaW46IDFlbTtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLnBvbGljeS1jb250ZW50LWxheW91dCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBoZWlnaHQ6IDEwMCU7XG59XG59XG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjcwMHB4KVxue1xuXG4gICAgLnRvcC1idXR0b24tY29va2llc3tcbiAgICAgIHBhZGRpbmc6IDAuM2VtO1xuICAgICAgbWFyZ2luOiAxLjNlbTtcbiAgICAgIGZvbnQtc2l6ZTogMWVtO1xuICAgICAgYm9yZGVyOiAycHggc29saWQgIzgxQzJGRDtcbiAgXG5cbiAgfVxuICAucG9saWN5LWhlYWRpbmcge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luOiA0cHg7XG4gICAgbWFyZ2luLWxlZnQ6IDBweCAhaW1wb3J0YW50O1xuXG59XG4ucG9saWN5LWNvbnRlbnQge1xubWFyZ2luOiAwcHg7XG5tYXJnaW46IDBweDtcbmNvbG9yOiAjMEYzQzczO1xuZm9udC1mYW1pbHk6IFwiU2Vnb2UgVUkgUmVndWxhclwiO1xufVxuLnBvbGljeS1jb250ZW50LWxheW91dCB7XG4gIG1hcmdpbjogMjBweDtcbn1cbi5jb29raWVzLXBvbGljeXtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZkNTtcbiAgd2lkdGg6IDEwMHZ3O1xufVxuXG4ucG9saWN5LWhlYWRpbmcge1xuXG5cbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGZvbnQtZmFtaWx5OiBcIlJvYm90by1Cb2xkXCI7XG59XG59XG5cblxuXG5cblxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjcwMHB4KVxue1xuICAuYmxvZy1ncmlkIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xuICAgIG1hcmdpbjogMmVtO1xuICAgIGdyaWQtZ2FwOiAzZW07XG59XG4uaGVhZGluZy1uZXN0aW1hdGUuYmxvZy10b3AtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIG1hcmdpbjogMGVtIDFlbTtcbn1cbn1cbi5ibG9nLWxpbmstZGVjb3JhdGlvbntcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjb2xvcjogYmxhY2s7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzAxcHgpXG57XG4gIC5pbWFnZS1vdmVyXG4gIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG59XG5cblxuXG5cblxuLypOZXcgWGQgKi9cbi5yYWRpby1jbiB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgYm90dG9tOiA1MHZoO1xuICB0b3A6IDIydmg7XG4gIGxlZnQ6IDh2dztcbn1cbi5jdXN0b20tYnV0dG9ucyB7XG4gIHBhZGRpbmc6IDFlbSAwZW07XG4gIGJhY2tncm91bmQtY29sb3I6IHdoaXRlO1xuICBwYWRkaW5nOiAxZW0gMWVtO1xuICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICBtYXJnaW46IDBlbTtcbiAgYm94LXNoYWRvdzogNXB4IDVweCA2cHggIzAwMDAwMDY2O1xufVxuLmhlYWRpbmctbmVzdGltYXRlLWZvbnRcbntcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIHBhZGRpbmctYm90dG9tOiAyMHB4O1xuICBwYWRkaW5nLXRvcDogMjBweDtcbn1cbi5zdGVwcy1jb250YWluZXJ7XG4gIG1hcmdpbjogMGVtIDVlbTtcbn1cbmltZy5zdGVwLW1hZ2V7XG4gIHdpZHRoOiA0MCU7XG4gIG1hcmdpbjogMTRweDtcbn1cbi5zdGVwcy1tYWluLWhlYWRpbmdcbntcbiAgZm9udC1zaXplOiAxLjRlbTtcbiAgY29sb3I6IHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xufVxuLnNsaWRlci10ZXh0IHtcblxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBjb2xvcjp2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgICAgZm9udC1zaXplOiAxLjFlbTtcbn1cbmltZy5ibG9nLWltYWdlIHtcbiAgd2lkdGg6IDEwMCUgIWltcG9ydGFudDtcbiAgYm94LXNoYWRvdzogNXB4IDVweCA2cHggIzAwMDAwMDRmO1xufVxuLmJsb2ctZ3JpZCB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnI7XG4gIG1hcmdpbjogMWVtIDVlbTtcbiAgZ3JpZC1nYXA6IDZlbTtcblxuICBtYXJnaW4tYm90dG9tOiAwZW07XG5cbn1cbi5ncmlkLXRleHR7XG4gIG1hcmdpbjogMWVtIDVweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIGZvbnQtc2l6ZTogMThweDtcbiB9XG5cbi5oZWFkaW5nLW5lc3RpbWF0ZS5ibG9nLXRvcC1oZWFkaW5nIHtcbiAgZm9udC1zaXplOiAxLjNlbTtcbiAgbWFyZ2luOiAxZW0gNXJlbTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cblxuLnRleHQtd2l0aC1yaWdodC1hcnJ3IHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAganVzdGlmeS1jb250ZW50OiBmbGV4LXN0YXJ0O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuaW1nLmNvbG9yLXJpZ2h0LWFycm93IHtcbiAgbWFyZ2luLWxlZnQ6IDExcHg7XG59XG5cblxuLmJ1dHRvbi10YWtlLU1hdGNoZXMge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBjb2xvcjogd2hpdGU7XG4gIHBhZGRpbmc6IDAuOGVtIDFlbTtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgLyoganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuOyAqL1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWV2ZW5seTtcbiAgd2lkdGg6IDEwMCU7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi5Mb2dpbi1mcm9tLXRvcCB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgei1pbmRleDogMjtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwMDAwMDkxO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgdG9wOiAwO1xufVxuXG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3MDBweClcbntcbiAgcC5pLWFte1xuICAgIGZvbnQtc2l6ZTogMS4xZW07XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIG1hcmdpbi1ib3R0b206IDFlbTtcbiAgICBmb250LWZhbWlseTogJ1NlZ29lIFVJIEJvbGQnO1xufVxuLnJhZGlvLWNue1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMzB2aDtcbiAgbGVmdDogMTB2dztcbiAgcmlnaHQ6IDEwdnc7XG59XG4ucmFkaW8tY29udGFpbmVyIHtcbiAgZm9udC1zaXplOiAxN3B4O1xufVxuLnRleHQtY3JlYXRlLW5lc3RpbWF0ZSB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAwLjllbTtcbiAgcGFkZGluZzogMGVtIDAuNWVtO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIEJvbGQnO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmNoZWNrbWFyayB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAwO1xuICBsZWZ0OiAwO1xuICBoZWlnaHQ6IDIwcHg7XG4gIHdpZHRoOiAyMHB4O1xuICBib3JkZXI6IDJweCBzb2xpZCB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG4udXBwZXItY3VzdG9tLWJ1dHRvbntcbiAgbWFyZ2luOiAwZW0gMGVtO1xufVxuLmN1c3RvbS1idXR0b25ze1xuICBwYWRkaW5nOiAxZW0gMGVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZzogMC41ZW0gMGVtO1xuICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICBtYXJnaW46IDBlbTtcbiAgYm94LXNoYWRvdzogNXB4IDVweCA2cHggIzAwMDAwMDY2O1xufVxuLmltYWdlLW92ZXIge1xuICBtYXJnaW4tdG9wOiAyOHZoO1xufVxuLnRleHQtb3Zlci1pbWFnZS1zZWNvbmR7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiA0NGVtO1xuICBib3R0b206IC0zdmg7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAxZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmhlYWRpbmctbmVzdGltYXRlLWZvbnQge1xuICBmb250LXNpemU6IDIwcHg7XG4gIHBhZGRpbmc6IDFlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuLnN0ZXBzLWNvbnRhaW5lcntcbiAgbWFyZ2luOiAwZW0gMWVtO1xufVxuLnN0ZXBzLW1haW4taGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMS4xZW07XG4gIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbn1cbi5zbGlkZXItdGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBtYXJnaW4tdG9wOiAxMHB4O1xuICBmb250LXNpemU6IDE1cHg7XG59XG4uYmxvZy1ncmlkIHtcbiAgZGlzcGxheTogZ3JpZDtcbiAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7XG4gIG1hcmdpbjogMWVtIDJlbTtcbiAgZ3JpZC1nYXA6IDBlbTtcbiAgbWFyZ2luLWJvdHRvbTogMGVtO1xufVxuLmJsb2ctbGluay1kZWNvcmF0aW9ue1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGNvbG9yOiBibGFjaztcbiAgZm9udC1zaXplOiAxNnB4O1xuICBkaXNwbGF5OiAtd2Via2l0LWJveDtcbiAgLXdlYmtpdC1saW5lLWNsYW1wOiAzO1xuICAtd2Via2l0LWJveC1vcmllbnQ6IHZlcnRpY2FsOyAgXG4gIG92ZXJmbG93OiBoaWRkZW5cbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS5ibG9nLXRvcC1oZWFkaW5nIHtcbiAgZm9udC1zaXplOiAxZW07XG4gIG1hcmdpbjogMWVtIDFyZW07XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHBhZGRpbmctbGVmdDogMWVtO1xufVxufVxuXG5pbWcuc2xpZGVyLWltYWdlIHtcbiAgaGVpZ2h0OiA1MjJweDtcbiAgaGVpZ2h0OiA1O1xufVxuXG5cblxuXG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3MDBweClcbntcbiAgaW1nLnNsaWRlci1pbWFnZXtcbiAgICBoZWlnaHQ6IDE5OXB4O1xuICAgIGhlaWdodDogNTtcbn1cblxuLnRleHQtb3Zlci1pbWFnZS1zZWNvbmQge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJvdHRvbTogM3ZoO1xuICB0b3A6IDM3ZW07XG4gIGNvbG9yOiB3aGl0ZTtcbiAgZm9udC1zaXplOiAxZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmNvb2tpZXMtcG9saWN5IHtcbmJhY2tncm91bmQtY29sb3I6IHdoaXRlOyBcbiAgd2lkdGg6IDEwMHZ3O1xufVxuaW1nLnN0ZXAtbWFnZXtcbiAgd2lkdGg6IDM1JTtcbiAgbWFyZ2luOiAxNHB4O1xufVxufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOjcwMXB4KVxue1xuICAudGV4dC1vdmVyLWltYWdlLXNlY29uZCB7XG4gICAgZGlzcGxheTogbm9uZTtcbn1cbn0iXX0= */");
 
 /***/ }),
 
@@ -4418,6 +5215,7 @@ let HomeComponent = class HomeComponent {
         this.loginTop = false;
         this.SignUp = false;
         this.hide = true;
+        this.OtherError = "Other";
     }
     ngOnInit() {
         this.user = JSON.parse(localStorage.getItem("user"));
@@ -4433,6 +5231,7 @@ let HomeComponent = class HomeComponent {
             this.emails = localStorage.getItem("email");
             this.passs = localStorage.getItem("password");
         }
+        this.getOtherForm();
         this.getNotificationContent();
         this.HomepageImagesText();
         this.getBlogs();
@@ -4535,7 +5334,7 @@ let HomeComponent = class HomeComponent {
                 this.KnowUser.push(element.data());
                 if (element.data().email == email && element.data().UserType != "User") {
                     const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
-                        data: { message: "Please Login as User" }
+                        data: { message: this.UserSignIn }
                     });
                     this.isLoading = false;
                 }
@@ -4626,6 +5425,13 @@ let HomeComponent = class HomeComponent {
     googleLogin() {
         this.isLoading = true;
         this.authService.GoogleAuth().then((data) => {
+            this.isLoading = false;
+        });
+    }
+    getOtherForm() {
+        this.CMSSERVICE.getOtherError(this.OtherError).then((element) => {
+            this.AgentSignIn = element.data().AgentSignIn;
+            this.UserSignIn = element.data().UserSignIn;
             this.isLoading = false;
         });
     }
@@ -5865,6 +6671,9 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
         this.hide = true;
         this.KnowUser = [];
         this.type = "User";
+        this.PersonalDetail = "PersonalDetail";
+        this.PropertyDetail = "PropertyDetail";
+        this.OptionalDetail = "OptionalDetail";
         this.autoCompleteControlLooking = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
             _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
         ]);
@@ -5895,16 +6704,11 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 this.LoggedOut();
             }
         });
-        // this.postcodeService.getBlueNotificationContent().subscribe((data) => {
-        //   this.notificationOverlay = data
-        //   this.notificationContent = this.notificationOverlay[0].BuyerSignUpNotification
-        // })
-        // this.postcodeService.getRightFormImages().subscribe((RightImage)=>{
-        //   this.buyerRightImage = RightImage
-        //   this.buyerRightImageUrl = this.buyerRightImage.BuyerFormRightImage.url
-        // })
         this.getSignupTerms();
         this.getNotificationContent();
+        this.getSeekerPersonalDetailForm();
+        this.getSeekerPropertyDetailForm();
+        this.getSeekerOptionalDetailForm();
         this.CMSSERVICE.getFormImages().then((data) => {
             data.forEach(element => {
                 this.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
@@ -5946,81 +6750,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
         }));
         this.sub = this.route.paramMap.subscribe((params) => {
-            this.Cpostcode = params.get("Currentpostcode");
-            this.Ctown = params.get("CurrentTown");
-            this.Cstate = params.get("Currentstate");
-            this.Ccountry = params.get("Currentcountry");
-            this.Lpostcode = params.get("Lookingpostcode");
-            this.Lstreetname = params.get("LookingStreetname");
-            this.Ltown = params.get("LookingTown");
-            this.Lstate = params.get("Lookingstate");
-            this.Lcountry = params.get("Country");
-            this.Financial = params.get("FinancialPosition");
-            //this.Type = params.get("PropertyType");
-            this.Minroom = params.get("Roommin");
-            this.Maxroom = params.get("Roomsmax");
-            this.AmountMin = params.get("MinAmount");
-            this.amountmax = params.get("MaxAmount");
-            this.offer = params.get("Validity");
-            this.bathroommin = params.get("Minbathroom");
-            this.bathroommax = params.get("Maxbathroom");
-            this.receptionmin = params.get("Minreception");
-            this.receptionmax = params.get("Maxreception");
-            this.condition = params.get("Conditions");
-            this.ownership = params.get("Ownership");
-            this.Caddress = params.get("CurrentAddress");
         });
-        if (this.Cpostcode != ":Currentpostcode") {
-            this.listingBuyer.Currentpostcode = this.Cpostcode;
-        }
-        if (this.Ctown != ":CurrentTown") {
-            this.listingBuyer.CurrentTown = this.Ctown;
-        }
-        if (this.Cstate != ":Currentstate") {
-            this.listingBuyer.Currentstate = this.Cstate;
-        }
-        if (this.Ccountry != ":Currentcountry") {
-            this.listingBuyer.Currentcountry = this.Ccountry;
-        }
-        if (this.Lpostcode != ":Lookingpostcode") {
-            this.listingBuyer.Lookingpostcode = this.Lpostcode;
-        }
-        if (this.Lstreetname != ":LookingStreetname") {
-            this.listingBuyer.LookingStreetname = this.Lstreetname;
-        }
-        if (this.Ltown != ":LookingTown") {
-            this.listingBuyer.LookingTown = this.Ltown;
-        }
-        if (this.Lstate != ":Lookingstate") {
-            this.listingBuyer.Lookingstate = this.Lstate;
-        }
-        if (this.Lcountry != ":Country") {
-            this.listingBuyer.Country = this.Lcountry;
-        }
-        if (this.Financial != ":FinancialPosition") {
-            this.listingBuyer.FinancialPosition = this.Financial;
-        }
-        // if (this.Type != ":PropertyType") {
-        //   this.listingBuyer.PropertyType = this.Type
-        // }
-        if (this.Minroom != ":Roommin") {
-            this.listingBuyer.Roommin = this.Minroom;
-        }
-        if (this.Maxroom != ":Roomsmax") {
-            this.listingBuyer.Roomsmax = this.Maxroom;
-        }
-        if (this.AmountMin != ":MinAmount") {
-            this.listingBuyer.MinAmount = this.AmountMin;
-        }
-        if (this.amountmax != ":MaxAmount") {
-            this.listingBuyer.MaxAmount = this.amountmax;
-        }
-        if (this.offer != ":Validity") {
-            this.listingBuyer.Validity = this.offer;
-        }
-        if (this.Caddress != ":CurrentAddress") {
-            this.listingBuyer.CurrentAddress = this.Caddress;
-        }
     }
     LoggedIn() {
         this.isLoggedIn = true;
@@ -6074,14 +6804,14 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
         if (presentIndex == 0) {
             if (this.user.title == null) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please select title" }
+                    data: { message: this.Title }
                 });
                 this.titleView.focus();
                 document.getElementById("title").style.color = "red";
             }
             else if (this.user.Name == null || this.user.Name.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please enter valid fulll name" }
+                    data: { message: this.FullName }
                 });
                 this.NameView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6098,7 +6828,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (this.user.DOB == null) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Age is required" }
+                    data: { message: this.DateofBirth }
                 });
                 this.dobView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6109,7 +6839,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25)
                 < 18) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Age Must be 18+" }
+                    data: { message: this.DateofBirthValidate }
                 });
                 this.dobView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6119,7 +6849,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (this.user.Phone == null || this.user.Phone.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please enter valid phone number" }
+                    data: { message: this.PhoneEmpty }
                 });
                 this.teleView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6130,7 +6860,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (Mobile != this.user.Phone) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please enter valid phone number" }
+                    data: { message: this.PhoneValidation }
                 });
                 this.teleView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6141,7 +6871,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (this.user.Phone.length < 10 || this.user.Phone.length > 10) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Phone number must be 10 digit" }
+                    data: { message: this.PhoneLength }
                 });
                 this.teleView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6152,7 +6882,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (this.listingBuyer.Currentpostcode == null || this.listingBuyer.Currentpostcode.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please fill Current Postcode" }
+                    data: { message: this.CurrentPostcode }
                 });
                 this.CurrentpostcodeView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6164,7 +6894,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (postcodeLength.length < 5) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Postcode must be atleast 5 characters long" }
+                    data: { message: this.PostcodeLength }
                 });
                 this.CurrentpostcodeView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6176,7 +6906,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (this.listingBuyer.CurrentAddress == null || this.listingBuyer.CurrentAddress.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please fill Current Address" }
+                    data: { message: this.CurrentAaddress }
                 });
                 this.CurrentAddressView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6190,7 +6920,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (this.listingBuyer.CurrentTown == null || this.listingBuyer.CurrentTown.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please fill Current Town" }
+                    data: { message: this.CurrentTown }
                 });
                 this.CurrentTownView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6203,7 +6933,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (this.listingBuyer.Currentstate == null || this.listingBuyer.Currentstate.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please fill Current County" }
+                    data: { message: this.CurrentCounty }
                 });
                 this.CurrentstateView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6218,7 +6948,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
             }
             else if (this.listingBuyer.Currentcountry == null || this.listingBuyer.Currentcountry.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                    data: { message: "Please fill Current Country" }
+                    data: { message: this.CurrentCountry }
                 });
                 this.CurrentcountryView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6246,13 +6976,13 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 if (this.amounts == false && this.listingBuyer.Currentcountry != null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Please select propertyFor " }
+                        data: { message: this.Buy }
                     });
                     document.getElementById("propfor").style.color = "red";
                 }
                 else if (this.listingBuyer.Lookingpostcode == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Postcode" }
+                        data: { message: this.LPostcode }
                     });
                     this.LookingpostcodeView.nativeElement.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6260,7 +6990,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (lookingPostcodeLength.length < 5) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Postcode must be atleast 5 characters long" }
+                        data: { message: this.LPostcodeLength }
                     });
                     this.LookingpostcodeView.nativeElement.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6268,7 +6998,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.LookingStreetname == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Streetname" }
+                        data: { message: this.LStreetname }
                     });
                     this.LookingStreetnameView.nativeElement.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6277,7 +7007,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.LookingTown == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Town" }
+                        data: { message: this.LTown }
                     });
                     this.LookingTownView.nativeElement.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6287,7 +7017,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Lookingstate == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter State" }
+                        data: { message: this.LCounty }
                     });
                     this.LookingstateView.nativeElement.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6298,7 +7028,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Country == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter country" }
+                        data: { message: this.LCountry }
                     });
                     this.CountryView.nativeElement.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6310,7 +7040,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.PropertyType == null || this.listingBuyer.PropertyType.length == 0) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Select Property Type" }
+                        data: { message: this.PropertyType }
                     });
                     this.PropertyTypeView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6325,7 +7055,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Roommin == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Select No of Rooms" }
+                        data: { message: this.Roommin }
                     });
                     this.RoomminView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6341,7 +7071,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Roomsmax == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Select No of Rooms" }
+                        data: { message: this.Roomsmax }
                     });
                     this.RoomsmaxView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6358,7 +7088,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Roommin != 'Studio' && this.listingBuyer.Roomsmax != 'Studio' && this.listingBuyer.Roommin > this.listingBuyer.Roomsmax) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Minimum room must be more than maximum rooms" }
+                        data: { message: this.MinimumRoomValidation }
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6374,7 +7104,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Roommin != 'Studio' && this.listingBuyer.Roomsmax != 'Studio' && this.listingBuyer.Roomsmax < this.listingBuyer.Roommin) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Maximum room must more than minimum rooms" }
+                        data: { message: this.MaximumRoomValidation }
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6391,7 +7121,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.ChainStatus == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Select chainstatus" }
+                        data: { message: this.FinancialRenting }
                     });
                     this.ChainStatusView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6404,7 +7134,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.FinancialPosition == null && this.listingBuyer.PropertyFor == "buy") {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Select Financial Position" }
+                        data: { message: this.FinancialPosition }
                     });
                     this.FinancialPositionView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6418,7 +7148,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.MinAmount == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Please Select MinAmount" }
+                        data: { message: this.MinAmount }
                     });
                     this.MinAmountView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6436,7 +7166,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.MaxAmount == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Select MaxAmount" }
+                        data: { message: this.MaxAmount }
                     });
                     this.MaxAmountView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6457,7 +7187,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (Min > Max) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Minimum amount must be less than maximum amount" }
+                        data: { message: this.Min }
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6477,7 +7207,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (Max < Min) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Maximum amount must be more than minimum amount" }
+                        data: { message: this.Max }
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6497,7 +7227,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Validity == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Please Select Validity" }
+                        data: { message: this.Validity }
                     });
                     this.ValidityView.nativeElement.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6519,7 +7249,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Minbathroom > this.listingBuyer.Maxbathroom) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Minimum number of bathroom must be less than maximum bathroom" }
+                        data: { message: this.MinimumBathroom }
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6541,7 +7271,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Maxbathroom < this.listingBuyer.Minbathroom) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Maximum number of bathroom must be more than minimum bathroom" }
+                        data: { message: this.MaximumBathroom }
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6564,7 +7294,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Minreception > this.listingBuyer.Maxreception) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Minimum number of reception must be less than maximum reception" }
+                        data: { message: this.MinimumReception }
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6588,7 +7318,7 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 }
                 else if (this.listingBuyer.Maxreception < this.listingBuyer.Minreception) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
-                        data: { message: "Maximum number of reception must be more than minimum reception" }
+                        data: { message: this.MaximumReception }
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -6747,6 +7477,57 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
                 this.topLine = element.data().topLine;
                 this.secondLine = element.data().SecondLine;
             });
+        });
+    }
+    getSeekerPersonalDetailForm() {
+        this.CMSSERVICE.getSeekerPersonalError(this.PersonalDetail).then((element) => {
+            this.Title = element.data().Title;
+            this.FullName = element.data().FullName;
+            this.DateofBirth = element.data().DateofBirth;
+            this.DateofBirthValidate = element.data().DateofBirthValidate;
+            this.PhoneEmpty = element.data().PhoneEmpty;
+            this.PhoneValidation = element.data().PhoneValidation;
+            this.PhoneLength = element.data().PhoneLength;
+            this.CurrentPostcode = element.data().CurrentPostcode;
+            this.PostcodeLength = element.data().PostcodeLength;
+            this.CurrentAaddress = element.data().CurrentAaddress;
+            this.CurrentTown = element.data().CurrentTown;
+            this.CurrentCounty = element.data().CurrentCounty;
+            this.CurrentCountry = element.data().CurrentCountry;
+            this.isLoading = false;
+        });
+    }
+    getSeekerPropertyDetailForm() {
+        this.CMSSERVICE.getSeekerPersonalError(this.PropertyDetail).then((element) => {
+            this.Buy = element.data().Buy;
+            this.LPostcode = element.data().LPostcode;
+            this.LPostcodeLength = element.data().LPostcodeLength;
+            this.LStreetname = element.data().LStreetname;
+            this.LTown = element.data().LTown;
+            this.LCounty = element.data().LCounty;
+            this.LCountry = element.data().LCountry;
+            this.PropertyType = element.data().PropertyType;
+            this.Roommin = element.data().Roommin;
+            this.Roomsmax = element.data().Roomsmax;
+            this.MinimumRoomValidation = element.data().MinimumRoomValidation;
+            this.MaximumRoomValidation = element.data().MaximumRoomValidation;
+            this.FinancialRenting = element.data().FinancialRenting;
+            this.FinancialPosition = element.data().FinancialPosition;
+            this.MinAmount = element.data().MinAmount;
+            this.MaxAmount = element.data().MaxAmount;
+            this.Min = element.data().Min;
+            this.Max = element.data().Max;
+            this.Validity = element.data().Validity;
+            this.isLoading = false;
+        });
+    }
+    getSeekerOptionalDetailForm() {
+        this.CMSSERVICE.getSeekerPersonalError(this.OptionalDetail).then((element) => {
+            this.MinimumBathroom = element.data().MinimumBathroom;
+            this.MaximumBathroom = element.data().MaximumBathroom;
+            this.MinimumReception = element.data().MinimumReception;
+            this.MaximumReception = element.data().MaximumReception;
+            this.isLoading = false;
         });
     }
 };
@@ -8105,6 +8886,9 @@ let FillFormSellerComponent = class FillFormSellerComponent {
         this.KnowUser = [];
         this.type = "User";
         this.sellerImages = [];
+        this.PersonalDetail = "PersonalDetail";
+        this.PropertyDetail = "PropertyDetail";
+        this.OptionalDetail = "OptionalDetail";
         this.emailFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [
             _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required,
             _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].email,
@@ -8186,6 +8970,8 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 this.LoggedOut();
             }
         });
+        this.getSeekerPersonalDetailForm();
+        this.getSeekerPropertyDetailForm();
         this.CMSSERVICE.getFormImages().then((data) => {
             data.forEach(element => {
                 this.sellerRightImageUrl = element.data().SellerPropertyRightImage;
@@ -8298,14 +9084,14 @@ let FillFormSellerComponent = class FillFormSellerComponent {
         if (presentIndex == 0) {
             if (this.user.title == null) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please select title" }
+                    data: { message: this.Title }
                 });
                 this.titleView.focus();
                 document.getElementById("title").style.color = "red";
             }
             else if (this.user.Name == null || this.user.Name.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please enter valid fulll name" }
+                    data: { message: this.FullName }
                 });
                 this.NameView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8322,7 +9108,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             }
             else if (this.user.DOB == null) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Age is required" }
+                    data: { message: this.DateofBirth }
                 });
                 this.dobView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8333,7 +9119,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25)
                 < 18) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Age Must be 18+" }
+                    data: { message: this.DateofBirthValidate }
                 });
                 this.dobView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8343,7 +9129,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             }
             else if (this.user.Phone == null) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please enter valid phone number" }
+                    data: { message: this.PhoneEmpty }
                 });
                 this.teleView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8354,7 +9140,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             }
             else if (Mobile != this.user.Phone) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please enter valid phone number" }
+                    data: { message: this.PhoneValidation }
                 });
                 this.teleView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8365,7 +9151,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             }
             else if (this.user.Phone.length < 10 || this.user.Phone.length > 10) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Phone number must be 10 digit" }
+                    data: { message: this.PhoneLength }
                 });
                 this.teleView.nativeElement.focus();
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8377,7 +9163,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             else if (this.user.Currentpostcode == null || this.user.Currentpostcode.length == 0) {
                 this.nameField.nativeElement.focus();
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please Enter Current Postcode" },
+                    data: { message: this.CurrentPostcode },
                 });
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8389,7 +9175,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             else if (currentposcodelength.length < 5) {
                 this.nameField.nativeElement.focus();
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Postcode must be atleast 5 characters long" },
+                    data: { message: this.PostcodeLength },
                 });
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8401,7 +9187,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             else if (this.user.CurrentAddress == null || this.user.CurrentAddress.length == 0) {
                 this.currentAddressView.nativeElement.focus();
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please Enter Your Current Address" },
+                    data: { message: this.CurrentAaddress },
                 });
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8414,7 +9200,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             else if (this.user.CurrentTown == null || this.user.CurrentTown.length == 0) {
                 this.currenttownView.nativeElement.focus();
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please Enter Your Current Town" },
+                    data: { message: this.CurrentTown },
                 });
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8428,7 +9214,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             else if (this.user.Currentstate == null || this.user.Currentstate.length == 0) {
                 this.currentstateView.nativeElement.focus();
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please Enter Your Current County" },
+                    data: { message: this.CurrentCounty },
                 });
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8442,7 +9228,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             }
             else if (this.user.CurrentCountry == null || this.user.CurrentCountry.length == 0) {
                 const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                    data: { message: "Please Enter Your Current Country" },
+                    data: { message: this.CurrentCountry },
                 });
                 document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8466,14 +9252,14 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 if (this.maxamounts == false) {
                     this.propertyForView.nativeElement.focus();
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please select property" },
+                        data: { message: this.Buy },
                     });
                     document.getElementById("propfor").style.color = "red";
                 }
                 else if (this.listingSeller.Lookingpostcode == null || this.listingSeller.Lookingpostcode.length == 0) {
                     this.LookingpostcodeView.nativeElement.focus();
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Your Looking Postcodes" },
+                        data: { message: this.LPostcode },
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "red";
@@ -8481,7 +9267,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 else if (lookinpostcodelength.length < 5) {
                     this.LookingpostcodeView.nativeElement.focus();
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Postcode must be atleast 5 characters long" },
+                        data: { message: this.LPostcodeLength },
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "red";
@@ -8489,7 +9275,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 else if (this.listingSeller.LookingAddress == null || this.listingSeller.LookingAddress.length == 0) {
                     this.LookingAddressView.nativeElement.focus();
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Your Looking Address" },
+                        data: { message: this.LAddress },
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8498,7 +9284,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 else if (this.listingSeller.LookingTown == null || this.listingSeller.LookingTown.length == 0) {
                     this.LookingTownView.nativeElement.focus();
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Your Looking Town" },
+                        data: { message: this.LTown },
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8508,7 +9294,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 else if (this.listingSeller.Lookingstate == null || this.listingSeller.Lookingstate.length == 0) {
                     this.LookingStateView.nativeElement.focus();
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Your Looking State" },
+                        data: { message: this.LCounty },
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8519,7 +9305,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 else if (this.listingSeller.Country == null || this.listingSeller.Country.length == 0) {
                     this.countryView.nativeElement.focus();
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Your Country" },
+                        data: { message: this.LCountry },
                     });
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                     document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8530,7 +9316,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 }
                 else if (this.listingSeller.PropertyType == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Enter Your Property Type" },
+                        data: { message: this.PropertyType },
                     });
                     this.PropertytypeView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8543,7 +9329,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 }
                 else if (this.listingSeller.Maxrooms == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Select Maximum of Rooms" },
+                        data: { message: this.Roomsmax },
                     });
                     this.maxroomsView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8557,7 +9343,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 }
                 else if (this.listingSeller.MaxAmount == null) {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Select Maximum Amount" },
+                        data: { message: this.MaxAmount },
                     });
                     this.MaxAmountView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8572,7 +9358,7 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 }
                 else if (this.listingSeller.ownership == null && this.listingSeller.PropertyFor == "buy") {
                     const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
-                        data: { message: "Please Select Ownership" },
+                        data: { message: this.ownership },
                     });
                     this.onwershipView.focus();
                     document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
@@ -8816,6 +9602,40 @@ let FillFormSellerComponent = class FillFormSellerComponent {
             }
         }
         this.isLoading = false;
+    }
+    getSeekerPersonalDetailForm() {
+        this.CMSSERVICE.getOwnerlError(this.PersonalDetail).then((element) => {
+            this.Title = element.data().Title;
+            this.FullName = element.data().FullName;
+            this.DateofBirth = element.data().DateofBirth;
+            this.DateofBirthValidate = element.data().DateofBirthValidate;
+            this.PhoneEmpty = element.data().PhoneEmpty;
+            this.PhoneValidation = element.data().PhoneValidation;
+            this.PhoneLength = element.data().PhoneLength;
+            this.CurrentPostcode = element.data().CurrentPostcode;
+            this.PostcodeLength = element.data().PostcodeLength;
+            this.CurrentAaddress = element.data().CurrentAaddress;
+            this.CurrentTown = element.data().CurrentTown;
+            this.CurrentCounty = element.data().CurrentCounty;
+            this.CurrentCountry = element.data().CurrentCountry;
+            this.isLoading = false;
+        });
+    }
+    getSeekerPropertyDetailForm() {
+        this.CMSSERVICE.getOwnerlError(this.PropertyDetail).then((element) => {
+            this.Buy = element.data().Buy;
+            this.LPostcode = element.data().LPostcode;
+            this.LPostcodeLength = element.data().LPostcodeLength;
+            this.LAddress = element.data().LAddress;
+            this.LTown = element.data().LTown;
+            this.LCounty = element.data().LCounty;
+            this.LCountry = element.data().LCountry;
+            this.PropertyType = element.data().PropertyType;
+            this.Roomsmax = element.data().Roomsmax;
+            this.MaxAmount = element.data().MaxAmount;
+            this.ownership = element.data().ownership;
+            this.isLoading = false;
+        });
     }
 };
 FillFormSellerComponent.ctorParameters = () => [
@@ -9261,6 +10081,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_auth__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/fire/auth */ "./node_modules/@angular/fire/auth/es2015/index.js");
 /* harmony import */ var _state_service_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./../../state-service.service */ "./src/app/state-service.service.ts");
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../cms.service */ "./src/app/cms.service.ts");
+
 
 
 
@@ -9280,7 +10102,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let AgentsignupformComponent = class AgentsignupformComponent {
-    constructor(authService, dialog, http, router, StrapiAuthService, HttpService, AgenthttpService, afStorage, AgentSignupService, FormService, afAuth, stateService, afs) {
+    constructor(authService, dialog, http, router, StrapiAuthService, HttpService, AgenthttpService, afStorage, AgentSignupService, FormService, afAuth, stateService, afs, // Inject Firestore service
+    CMSSERVICE) {
         this.authService = authService;
         this.dialog = dialog;
         this.http = http;
@@ -9294,6 +10117,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         this.afAuth = afAuth;
         this.stateService = stateService;
         this.afs = afs;
+        this.CMSSERVICE = CMSSERVICE;
         this.loggedIn = true;
         this.isLoading = false;
         this.isRegister = false;
@@ -9308,8 +10132,10 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         this.SignUp = false;
         this.imageUploaded = false;
         this.type = "Agent";
+        this.AgentError = "AgentError";
     }
     ngOnInit() {
+        this.getAgentForm();
         this.Users = JSON.parse(localStorage.getItem("user"));
         if (this.Users != null) {
             const dialogRef = this.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
@@ -9343,14 +10169,14 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         if (this.agentSignup.fullname == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Full Name" }
+                data: { message: this.FullName }
             });
             this.NameView.nativeElement.focus();
             document.getElementById("FullName").style.color = "red";
         }
         else if (this.agentSignup.company == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Company Name" }
+                data: { message: this.CompanyName }
             });
             this.CompanyView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9358,7 +10184,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.postcode == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Postcode" }
+                data: { message: this.Postcode }
             });
             this.PostcodeView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9367,7 +10193,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.address == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Address" }
+                data: { message: this.Address }
             });
             this.AddressView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9377,7 +10203,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.jobtitle == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Job Titile" }
+                data: { message: this.JobTitle }
             });
             this.JobView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9388,7 +10214,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.officephone == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Office Phone Number" }
+                data: { message: this.officephone }
             });
             this.OfficePhoneView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9398,7 +10224,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (Office != this.agentSignup.officephone) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Valid Office Phone Number" }
+                data: { message: this.officephonevalidation }
             });
             this.OfficePhoneView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9408,7 +10234,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.officephone.length < 10 || this.agentSignup.officephone.length > 10) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Office Phone Mumber Must be of 10 Digit" }
+                data: { message: this.officephonelength }
             });
             this.OfficePhoneView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9418,7 +10244,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.phone == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Phone Number" }
+                data: { message: this.mobile }
             });
             this.PhoneView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9431,7 +10257,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (Mobile != this.agentSignup.phone) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Valid Phone Number" }
+                data: { message: this.mobilevalidity }
             });
             this.PhoneView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9444,7 +10270,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.phone.length < 10 || this.agentSignup.phone.length > 10) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Phone Mumber Must be of 10 Digit" }
+                data: { message: this.mobilelength }
             });
             this.PhoneView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9457,7 +10283,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.email == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Email" }
+                data: { message: this.EmailAddress }
             });
             this.EmailView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9471,7 +10297,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (Emails == false) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Valid Email" }
+                data: { message: this.emailvalidation }
             });
             this.EmailView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9485,7 +10311,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.password == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Password" }
+                data: { message: this.Password }
             });
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("CompanyName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9499,7 +10325,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.solefees == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Sole Agency Fees" }
+                data: { message: this.solefeess }
             });
             this.SoleView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9515,7 +10341,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.solefees < 1.5) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Sole Agency Fees Range Between 1.5% to 4.0%" }
+                data: { message: this.solefeesmore }
             });
             this.SoleView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9531,7 +10357,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.solefees > 4) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Sole Agency Fees Range Between 1.5% to 4.0%" }
+                data: { message: this.solefeesless }
             });
             this.SoleView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9547,7 +10373,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.multiplefees == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Enter Multiple Agency Fees" }
+                data: { message: this.multiplefeess }
             });
             this.MultiFeesView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9564,7 +10390,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.multiplefees < 1.5) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Multiple Agency Fees Range Between 1.5% to 4.0%" }
+                data: { message: this.multiplefeesmore }
             });
             this.MultiFeesView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9581,7 +10407,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.agentSignup.multiplefees > 4) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Multiple Agency Fees Range Between 1.5% to 4.0%" }
+                data: { message: this.multiplefeesless }
             });
             this.MultiFeesView.nativeElement.focus();
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9598,7 +10424,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         }
         else if (this.downloadableURL == null) {
             const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                data: { message: "Image Not Uploaded" }
+                data: { message: this.Image }
             });
             document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
             document.getElementById("CompanyName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -9635,7 +10461,7 @@ let AgentsignupformComponent = class AgentsignupformComponent {
             const file = event.target.files[0];
             if (file.size > 2000000) {
                 const dialogRef = this.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
-                    data: { message: "Image size must be less than 2mb" }
+                    data: { message: this.Imagesize }
                 });
             }
             else {
@@ -9712,6 +10538,33 @@ let AgentsignupformComponent = class AgentsignupformComponent {
             });
         });
     }
+    getAgentForm() {
+        this.CMSSERVICE.getAgentError(this.AgentError).then((element) => {
+            this.FullName = element.data().FullName;
+            this.CompanyName = element.data().CompanyName;
+            this.Postcode = element.data().Postcode;
+            this.Address = element.data().Address;
+            this.JobTitle = element.data().JobTitle;
+            this.EmailAddress = element.data().EmailAddress;
+            this.emailvalidation = element.data().emailvalidation;
+            this.Password = element.data().Password;
+            this.officephone = element.data().officephone;
+            this.officephonevalidation = element.data().officephonevalidation;
+            this.officephonelength = element.data().officephonelength;
+            this.mobile = element.data().mobile;
+            this.mobilevalidity = element.data().mobilevalidity;
+            this.mobilelength = element.data().mobilelength;
+            this.solefeess = element.data().solefees;
+            this.solefeesmore = element.data().solefeesmore;
+            this.solefeesless = element.data().solefeesless;
+            this.multiplefeess = element.data().multiplefees;
+            this.multiplefeesmore = element.data().multiplefeesmore;
+            this.multiplefeesless = element.data().multiplefeesless;
+            this.Image = element.data().Image;
+            this.Imagesize = element.data().Imagesize;
+            this.isLoading = false;
+        });
+    }
 };
 AgentsignupformComponent.ctorParameters = () => [
     { type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"] },
@@ -9726,7 +10579,8 @@ AgentsignupformComponent.ctorParameters = () => [
     { type: _Home_Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_14__["FormsService"] },
     { type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_15__["AngularFireAuth"] },
     { type: _state_service_service__WEBPACK_IMPORTED_MODULE_16__["StateServiceService"] },
-    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_17__["AngularFirestore"] }
+    { type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_17__["AngularFirestore"] },
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_18__["CMSSERVICE"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('form', { static: false })
@@ -9850,7 +10704,7 @@ AlertDialogAgentComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".back {\n  background-image: url(/assets/Images/home.jpeg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n}\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n  position: relative;\n  top: -145px;\n}\n.home-button {\n  background-color:var(--light-blue-color);\n  color: white;\n  width: 35%;\n}\n.home-button-SELL\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  width: 35%;\n}\n.home-text-font {\n \n\n  margin-bottom: 0.5rem;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background:white;\n\n}\n.how_does_it_work_steps {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n}\np.step-text {\n  text-align: center;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Medium';\n}\n.steps-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin: 0em 1em;\n}\n.step {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n\n}\n@media only screen and (min-width:768px)\n{\n  .icon-size\n  {\n    width: 50% !important;\n  }\n}\n.cookies-policy {\n  background-color: white;\nposition: absolute;\n  padding: 3px;\n  position: fixed;\nbottom: 0px;\nz-index: 1;\nbox-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n}\n.policy-heading {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 13px;\n}\np\n{\n  margin-bottom: 0px;\n}\nimg.button-cross {\n  width: 17px;\n}\n.custom-button-first {\n\n  padding: 8px;\n  border-radius: 5px;\n  align-items: center;\n  flex-direction: inherit;\n    display: flex;\n    justify-content: space-around;\n   \n}\n.blue-circle {\n  padding: 5px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n  width: 17%;\n}\n.custom-text {\n  font-size: 16px;\n  font-family: 'Roboto-Bold';\n}\n.upper-custom-button {\n  display: flex;\n  justify-content: center;\n  margin: 1em 0em;\n}\n.create-nestimate {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  justify-content: center;\n  background-color:var(--DARK-BLUE-COLOR);\nmargin-top: 1em;\nmargin-bottom: 1em;\n\nbox-shadow: 5px 5px 6px #00000066;\n\n}\nimg.button-image {\nheight: 6vh;\n}\n.text-create-nestimate\n{\n  color: white;\n  font-size: 1.3em;\n  padding: 0em 0.5em;\n  font-family: 'Segoe UI Bold';\n  display: flex;\n}\n.large-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\np.i-am {\n  /* text-align: center; */\n  font-size: 1.5em;\n  text-align: center;\n  margin-bottom: 1em;\n  font-family: 'Segoe UI Bold';\n}\n.custom-button-first:hover\n{\n  cursor: pointer;\n}\n.radio-container {\n  display: block;\n  position: relative;\n  padding-left: 2em;\n  cursor: pointer;\n  font-size: 23px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: 'Segoe UI SemiBold';\n  color: #0F3C73;\n  padding-top: 0em;\n}\n/* Hide the browser's default radio button */\n.radio-container input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n}\n/* Create a custom radio button */\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n/* On mouse-over, add a grey background color */\n.radio-container:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n/* When the radio button is checked, add a blue background */\n.radio-container input:checked ~ .checkmark {\n  background-color: var(--light-blue-color);\n}\n/* Create the indicator (the dot/circle - hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n/* Show the indicator (dot/circle) when checked */\n.radio-container input:checked ~ .checkmark:after {\n  display: block;\n}\n/* Style the indicator (dot/circle) */\n.radio-container .checkmark:after {\n \ttop: 9px;\n\tleft: 9px;\n\twidth: 8px;\n\theight: 8px;\n  border-radius: 50%;\n}\nlabel\n{\n  margin-bottom: 0px !important;\n}\n.slider-image\n{\n  width: 100%;\n}\n@media screen and (min-width:701px)\n{\n\n\n.second-card.mat-card {\n  display: none;\n}\n.steps-container {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-gap: 5em;\n}\n\n\n.cookies-policy {\n\n  margin: 2em 4em;\n}\n.cookies-policy-text {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n.cookies-button {\n  /* display: contents; */\n  display: flex;\n  flex-direction: row;\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n  /* margin: 13px 18px; */\n  width: 63vw;\n  display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    align-items: center;\n    margin-top: 10px;\n    margin-bottom: 5px;\n    color: var(--DARK-BLUE-COLOR);\n    font-family: \"Segoe UI Regular\";\n    font-size: 1em;\n\n}\n.policy-heading {\n\n  display: inline;\n  margin-left: 13px;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n\n}\n.text-over-image {\n  /* position: absolute; */\n  position: relative;\n  /* bottom: 50vh; */\n  top: -8vh;\n  /* bottom: 50vh; */\n  text-align: center;\n  z-index: 1;\n  font-size: 1.5em;\n  font-family: 'Roboto-Bold';\n  color: white;\n}\n.radio-cn.mat-card {\n\n  background-color: var(--BAckground-dark-color);\n}\n.text-over-image-second {\n  position: absolute;\n \n  bottom: -15vh;\n  color: white;\n  font-size: 1.4em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n\n}\n.second-card\n{\n  background-color: var(--BAckground-dark-color); \n}\n.heading-nestimate-font{\n  font-size: 22px;\n  padding: 2em;\n  text-align: center;\n\n}\n.top-button-cookies {\n  text-align: center;\n  /* height: 7vh; */\n  color: white;\n  border: 4px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 1em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n  font-size: 1.2em;\n\n}\n.top-button-cookies:hover\n{\n  cursor: pointer;\n}\n.lower-button\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  border: none;\n  color: white;\n}\n.agent-form {\n  display: flex;\n  /* width: 100%; */\n  justify-content: center;\n  margin: 1em;\n}\n.listing-heading {\n  margin: 1em;\n}\n.to-buy {\n  margin: 0em 0.5em;\n}\nspan.greater-than-arrow.paragraph-color.mr-1 {\n  font-size: 2em;\n  padding-right: 0.1em;\n  padding-right: 0.5em;\n  font-family: 'Segoe UI Bold';\n}\n.image-over {\n  margin-top: 2em;\n}\nimg.buyer-jpg {\n  height: 36vh;\n  width: 100%;\n}\n.custom-buttons {\n  padding: 1em 0em;\n}\n.card-steps {\n  background-color: white;\n  padding-bottom: 2em;\n}\n@media screen and (min-width:701px)\n{\n  \nhr\n{\n display: none;\n}\n\n\n.outputText {\n\n  font-size: 1.1em;\n}\n.heading-nestimate-font {\n  font-size: 2em;\n}\nimg.buyer-jpg {\n\n  display: none;\n}\n.text-over-image {\n\n  font-size: 1.7em;\n \n}\n.top-button-cookies {\n  text-align: center;\n\n  border: 2px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 0.6em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n}\n.policy-content-layout {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  height: 100%;\n}\n}\n@media screen and (max-width:700px)\n{\n\n    .top-button-cookies{\n      padding: 0.3em;\n      margin: 1.3em;\n      font-size: 1em;\n      border: 2px solid #81C2FD;\n  \n\n  }\n  .policy-heading {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 4px;\n    margin-left: 0px !important;\n\n}\n.policy-content {\nmargin: 0px;\nmargin: 0px;\ncolor: #0F3C73;\nfont-family: \"Segoe UI Regular\";\n}\n.policy-content-layout {\n  margin: 20px;\n}\n.cookies-policy{\n  background-color: #ffffd5;\n  width: 100vw;\n}\n\n.policy-heading {\n\n\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n}\n@media screen and (max-width:700px)\n{\n  .blog-grid {\n    display: grid;\n    grid-template-columns: 1fr;\n    margin: 2em;\n    grid-gap: 3em;\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 0em 1em;\n}\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n}\n@media screen and (min-width:701px)\n{\n  .image-over\n  {\n    display: none;\n  }\n}\n/*New Xd */\n.radio-cn {\n  position: absolute;\n  bottom: 50vh;\n  top: 22vh;\n  left: 8vw;\n}\n.custom-buttons {\n  padding: 1em 0em;\n  background-color: white;\n  padding: 1em 1em;\n  border-radius: 20px;\n  margin: 0em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.heading-nestimate-font\n{\n  color: var(--DARK-BLUE-COLOR);\n  padding-bottom: 20px;\n  padding-top: 20px;\n}\n.steps-container{\n  margin: 0em 5em;\n}\nimg.step-mage{\n  width: 40%;\n  margin: 14px;\n}\n.steps-main-heading\n{\n  font-size: 1.4em;\n  color: var(--light-blue-color);\n}\n.slider-text {\n\n  text-align: center;\n  width: 100%;\n  color:var(--DARK-BLUE-COLOR);\n  margin-top: 10px;\n      font-size: 1.1em;\n}\nimg.blog-image {\n  width: 100% !important;\n  box-shadow: 5px 5px 6px #0000004f;\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  margin: 1em 5em;\n  grid-gap: 6em;\n\n  margin-bottom: 0em;\n\n}\n.grid-text{\n  margin: 1em 5px;\n  text-align: center;\n    font-size: 18px;\n }\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 1em 5rem;\n  display: flex;\n  align-items: center;\n}\n.text-with-right-arrw {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n}\nimg.color-right-arrow {\n  margin-left: 11px;\n}\n.button-take-Matches {\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  padding: 0.8em 1em;\n  display: flex;\n  flex-direction: row;\n  /* justify-content: space-between; */\n  justify-content: space-evenly;\n  width: 100%;\n  align-items: center;\n}\n.Login-from-top {\n  position: fixed;\n  z-index: 2;\n  background-color: #00000091;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  top: 0;\n}\n@media screen and (max-width:700px)\n{\n  p.i-am{\n    font-size: 1.1em;\n    text-align: center;\n    margin-bottom: 1em;\n    font-family: 'Segoe UI Bold';\n}\n.radio-cn{\n  position: absolute;\n  top: 30vh;\n  left: 10vw;\n  right: 10vw;\n}\n.radio-container {\n  font-size: 17px;\n}\n.text-create-nestimate {\n  color: white;\n  font-size: 0.9em;\n  padding: 0em 0.5em;\n  font-family: 'Segoe UI Bold';\n  display: flex;\n  align-items: center;\n}\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 20px;\n  width: 20px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n.upper-custom-button{\n  margin: 0em 0em;\n}\n.custom-buttons{\n  padding: 1em 0em;\n  background-color: white;\n  padding: 0.5em 0em;\n  border-radius: 20px;\n  margin: 0em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.image-over {\n  margin-top: 28vh;\n}\n.text-over-image-second{\n  position: absolute;\n  top: 44em;\n  bottom: -3vh;\n  color: white;\n  font-size: 1em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n}\n.heading-nestimate-font {\n  font-size: 20px;\n  padding: 1em;\n  text-align: center;\n}\n.steps-container{\n  margin: 0em 1em;\n}\n.steps-main-heading {\n  font-size: 1.1em;\n  color: var(--light-blue-color);\n}\n.slider-text {\n  text-align: center;\n  width: 100%;\n  color: var(--DARK-BLUE-COLOR);\n  margin-top: 10px;\n  font-size: 15px;\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 1em 2em;\n  grid-gap: 0em;\n  margin-bottom: 0em;\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n  font-size: 16px;\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;  \n  overflow: hidden\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1em;\n  margin: 1em 1rem;\n  display: flex;\n  align-items: center;\n  padding-left: 1em;\n}\n}\nimg.slider-image {\n  height: 522px;\n  height: 5;\n}\n@media screen and (max-width:700px)\n{\n  img.slider-image{\n    height: 199px;\n    height: 5;\n}\n\n.text-over-image-second {\n  position: absolute;\n  bottom: 3vh;\n  top: 37em;\n  color: white;\n  font-size: 1em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n}\n.cookies-policy {\nbackground-color: white; \n  width: 100vw;\n}\nimg.step-mage{\n  width: 35%;\n  margin: 14px;\n}\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9jbGlja2hvbWUvY2xpY2tob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQ0FBK0M7RUFDL0MsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBRUE7RUFDRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLHdDQUF3QztFQUN4QyxZQUFZO0VBQ1osVUFBVTtBQUNaO0FBRUE7OztFQUdFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLDZCQUE2QjtFQUM3Qiw0QkFBNEI7QUFDOUI7QUFHQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7O0FBRXJCO0FBQ0E7O0VBRUU7O0lBRUUscUJBQXFCO0VBQ3ZCO0FBQ0Y7QUFDQTtFQUNFLHVCQUF1QjtBQUN6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L2NsaWNraG9tZS9jbGlja2hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvSW1hZ2VzL2hvbWUuanBlZyk7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4udXBwZXItYmFjayB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgb3BhY2l0eTogMC41O1xufVxuLnVwcGVyLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gIHotaW5kZXg6IDEwMDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xNDVweDtcbn1cblxuLmhvbWUtYnV0dG9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuLmhvbWUtYnV0dG9uLVNFTExcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuXG4uaG9tZS10ZXh0LWZvbnQge1xuIFxuXG4gIG1hcmdpbi1ib3R0b206IDAuNXJlbTtcbn1cbi5leGFtcGxlLWZvcm0ge1xuICBtaW4td2lkdGg6IDE1MHB4O1xuICBtYXgtd2lkdGg6IDUwMHB4O1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwcHg7XG4gIGxlZnQ6IDBweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHotaW5kZXg6IDk7XG4gIGJhY2tncm91bmQ6d2hpdGU7XG5cbn1cbi5ob3dfZG9lc19pdF93b3JrX3N0ZXBzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuXG5wLnN0ZXAtdGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG59XG5cblxuLnN0ZXBzLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW46IDBlbSAxZW07XG59XG4uc3RlcCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzY4cHgpXG57XG4gIC5pY29uLXNpemVcbiAge1xuICAgIHdpZHRoOiA1MCUgIWltcG9ydGFudDtcbiAgfVxufVxuLmNvb2tpZXMtcG9saWN5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG5wb3NpdGlvbjogYWJzb2x1dGU7XG4gIHBhZGRpbmc6IDNweDtcbiAgcG9zaXRpb246IGZpeGVkO1xuYm90dG9tOiAwcHg7XG56LWluZGV4OiAxO1xuYm94LXNoYWRvdzogMCAyLjhweCAyLjJweCByZ2JhKDAsIDAsIDAsIDAuMDM0KSwgMCA2LjdweCA1LjNweCByZ2JhKDAsIDAsIDAsIDAuMDQ4KSwgMCAxMi41cHggMTBweCByZ2JhKDAsIDAsIDAsIDAuMDYpLCAwIDIyLjNweCAxNy45cHggcmdiYSgwLCAwLCAwLCAwLjA3MiksIDAgNDEuOHB4IDMzLjRweCByZ2JhKDAsIDAsIDAsIDAuMDg2KSwgMCAxMDBweCA4MHB4IHJnYmEoMCwgMCwgMCwgMC4xMik7XG59XG4ucG9saWN5LWNvbnRlbnQge1xuICBtYXJnaW46IDEzcHg7XG4gIHRleHQtYWxpZ246IGp1c3RpZnk7XG59XG4ucG9saWN5LWhlYWRpbmcge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG1hcmdpbjogMTNweDtcbn1cbnBcbntcbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xufVxuaW1nLmJ1dHRvbi1jcm9zcyB7XG4gIHdpZHRoOiAxN3B4O1xufVxuLmN1c3RvbS1idXR0b24tZmlyc3Qge1xuXG4gIHBhZGRpbmc6IDhweDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBmbGV4LWRpcmVjdGlvbjogaW5oZXJpdDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgXG59XG4uYmx1ZS1jaXJjbGUge1xuICBwYWRkaW5nOiA1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIHdpZHRoOiAxNyU7XG59XG4uY3VzdG9tLXRleHQge1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xufVxuLnVwcGVyLWN1c3RvbS1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgbWFyZ2luOiAxZW0gMGVtO1xufVxuLmNyZWF0ZS1uZXN0aW1hdGUge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6dmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbm1hcmdpbi10b3A6IDFlbTtcbm1hcmdpbi1ib3R0b206IDFlbTtcblxuYm94LXNoYWRvdzogNXB4IDVweCA2cHggIzAwMDAwMDY2O1xuXG59XG5pbWcuYnV0dG9uLWltYWdlIHtcbmhlaWdodDogNnZoO1xufVxuLnRleHQtY3JlYXRlLW5lc3RpbWF0ZVxue1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIHBhZGRpbmc6IDBlbSAwLjVlbTtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbiAgZGlzcGxheTogZmxleDtcbn1cbi5sYXJnZS1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbnAuaS1hbSB7XG4gIC8qIHRleHQtYWxpZ246IGNlbnRlcjsgKi9cbiAgZm9udC1zaXplOiAxLjVlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAxZW07XG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgQm9sZCc7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdDpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ucmFkaW8tY29udGFpbmVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAyZW07XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZm9udC1zaXplOiAyM3B4O1xuICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lO1xuICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFNlbWlCb2xkJztcbiAgY29sb3I6ICMwRjNDNzM7XG4gIHBhZGRpbmctdG9wOiAwZW07XG59XG5cbi8qIEhpZGUgdGhlIGJyb3dzZXIncyBkZWZhdWx0IHJhZGlvIGJ1dHRvbiAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgb3BhY2l0eTogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4vKiBDcmVhdGUgYSBjdXN0b20gcmFkaW8gYnV0dG9uICovXG4uY2hlY2ttYXJrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIGhlaWdodDogMjVweDtcbiAgd2lkdGg6IDI1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cblxuLyogT24gbW91c2Utb3ZlciwgYWRkIGEgZ3JleSBiYWNrZ3JvdW5kIGNvbG9yICovXG4ucmFkaW8tY29udGFpbmVyOmhvdmVyIGlucHV0IH4gLmNoZWNrbWFyayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNjY2M7XG59XG5cbi8qIFdoZW4gdGhlIHJhZGlvIGJ1dHRvbiBpcyBjaGVja2VkLCBhZGQgYSBibHVlIGJhY2tncm91bmQgKi9cbi5yYWRpby1jb250YWluZXIgaW5wdXQ6Y2hlY2tlZCB+IC5jaGVja21hcmsge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbn1cblxuLyogQ3JlYXRlIHRoZSBpbmRpY2F0b3IgKHRoZSBkb3QvY2lyY2xlIC0gaGlkZGVuIHdoZW4gbm90IGNoZWNrZWQpICovXG4uY2hlY2ttYXJrOmFmdGVyIHtcbiAgY29udGVudDogXCJcIjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4vKiBTaG93IHRoZSBpbmRpY2F0b3IgKGRvdC9jaXJjbGUpIHdoZW4gY2hlY2tlZCAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dDpjaGVja2VkIH4gLmNoZWNrbWFyazphZnRlciB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKiBTdHlsZSB0aGUgaW5kaWNhdG9yIChkb3QvY2lyY2xlKSAqL1xuLnJhZGlvLWNvbnRhaW5lciAuY2hlY2ttYXJrOmFmdGVyIHtcbiBcdHRvcDogOXB4O1xuXHRsZWZ0OiA5cHg7XG5cdHdpZHRoOiA4cHg7XG5cdGhlaWdodDogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5sYWJlbFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcbn1cbi5zbGlkZXItaW1hZ2VcbntcbiAgd2lkdGg6IDEwMCU7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzAxcHgpXG57XG5cblxuLnNlY29uZC1jYXJkLm1hdC1jYXJkIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbi5zdGVwcy1jb250YWluZXIge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICBncmlkLWdhcDogNWVtO1xufVxuXG5cbi5jb29raWVzLXBvbGljeSB7XG5cbiAgbWFyZ2luOiAyZW0gNGVtO1xufVxuLmNvb2tpZXMtcG9saWN5LXRleHQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmNvb2tpZXMtYnV0dG9uIHtcbiAgLyogZGlzcGxheTogY29udGVudHM7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG4ucG9saWN5LWNvbnRlbnQge1xuICBtYXJnaW46IDEzcHg7XG4gIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gIC8qIG1hcmdpbjogMTNweCAxOHB4OyAqL1xuICB3aWR0aDogNjN2dztcbiAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDVweDtcbiAgICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgICBmb250LWZhbWlseTogXCJTZWdvZSBVSSBSZWd1bGFyXCI7XG4gICAgZm9udC1zaXplOiAxZW07XG5cbn1cbi5wb2xpY3ktaGVhZGluZyB7XG5cbiAgZGlzcGxheTogaW5saW5lO1xuICBtYXJnaW4tbGVmdDogMTNweDtcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGZvbnQtZmFtaWx5OiBcIlJvYm90by1Cb2xkXCI7XG59XG5cbn1cblxuLnRleHQtb3Zlci1pbWFnZSB7XG4gIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAvKiBib3R0b206IDUwdmg7ICovXG4gIHRvcDogLTh2aDtcbiAgLyogYm90dG9tOiA1MHZoOyAqL1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHotaW5kZXg6IDE7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICBjb2xvcjogd2hpdGU7XG59XG4ucmFkaW8tY24ubWF0LWNhcmQge1xuXG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7XG59XG4udGV4dC1vdmVyLWltYWdlLXNlY29uZCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiBcbiAgYm90dG9tOiAtMTV2aDtcbiAgY29sb3I6IHdoaXRlO1xuICBmb250LXNpemU6IDEuNGVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcblxufVxuLnNlY29uZC1jYXJkXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7IFxufVxuXG5cbiAgLmhlYWRpbmctbmVzdGltYXRlLWZvbnR7XG4gIGZvbnQtc2l6ZTogMjJweDtcbiAgcGFkZGluZzogMmVtO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG5cbn1cbi50b3AtYnV0dG9uLWNvb2tpZXMge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIC8qIGhlaWdodDogN3ZoOyAqL1xuICBjb2xvcjogd2hpdGU7XG4gIGJvcmRlcjogNHB4IHNvbGlkICM4MUMyRkQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBwYWRkaW5nOiAxZW07XG4gIG1hcmdpbjogMWVtO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMS4yZW07XG5cbn1cblxuLnRvcC1idXR0b24tY29va2llczpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubG93ZXItYnV0dG9uXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGJvcmRlcjogbm9uZTtcbiAgY29sb3I6IHdoaXRlO1xufVxuLmFnZW50LWZvcm0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICAvKiB3aWR0aDogMTAwJTsgKi9cbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMWVtO1xufVxuLmxpc3RpbmctaGVhZGluZyB7XG4gIG1hcmdpbjogMWVtO1xufVxuLnRvLWJ1eSB7XG4gIG1hcmdpbjogMGVtIDAuNWVtO1xufVxuc3Bhbi5ncmVhdGVyLXRoYW4tYXJyb3cucGFyYWdyYXBoLWNvbG9yLm1yLTEge1xuICBmb250LXNpemU6IDJlbTtcbiAgcGFkZGluZy1yaWdodDogMC4xZW07XG4gIHBhZGRpbmctcmlnaHQ6IDAuNWVtO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIEJvbGQnO1xufVxuLmltYWdlLW92ZXIge1xuICBtYXJnaW4tdG9wOiAyZW07XG59XG5cbmltZy5idXllci1qcGcge1xuICBoZWlnaHQ6IDM2dmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmN1c3RvbS1idXR0b25zIHtcbiAgcGFkZGluZzogMWVtIDBlbTtcbn1cbi5jYXJkLXN0ZXBzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgXG5oclxue1xuIGRpc3BsYXk6IG5vbmU7XG59XG5cblxuLm91dHB1dFRleHQge1xuXG4gIGZvbnQtc2l6ZTogMS4xZW07XG59XG4uaGVhZGluZy1uZXN0aW1hdGUtZm9udCB7XG4gIGZvbnQtc2l6ZTogMmVtO1xufVxuaW1nLmJ1eWVyLWpwZyB7XG5cbiAgZGlzcGxheTogbm9uZTtcbn1cbi50ZXh0LW92ZXItaW1hZ2Uge1xuXG4gIGZvbnQtc2l6ZTogMS43ZW07XG4gXG59XG4udG9wLWJ1dHRvbi1jb29raWVzIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuXG4gIGJvcmRlcjogMnB4IHNvbGlkICM4MUMyRkQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBwYWRkaW5nOiAwLjZlbTtcbiAgbWFyZ2luOiAxZW07XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5wb2xpY3ktY29udGVudC1sYXlvdXQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgaGVpZ2h0OiAxMDAlO1xufVxufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3MDBweClcbntcblxuICAgIC50b3AtYnV0dG9uLWNvb2tpZXN7XG4gICAgICBwYWRkaW5nOiAwLjNlbTtcbiAgICAgIG1hcmdpbjogMS4zZW07XG4gICAgICBmb250LXNpemU6IDFlbTtcbiAgICAgIGJvcmRlcjogMnB4IHNvbGlkICM4MUMyRkQ7XG4gIFxuXG4gIH1cbiAgLnBvbGljeS1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbjogNHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAwcHggIWltcG9ydGFudDtcblxufVxuLnBvbGljeS1jb250ZW50IHtcbm1hcmdpbjogMHB4O1xubWFyZ2luOiAwcHg7XG5jb2xvcjogIzBGM0M3MztcbmZvbnQtZmFtaWx5OiBcIlNlZ29lIFVJIFJlZ3VsYXJcIjtcbn1cbi5wb2xpY3ktY29udGVudC1sYXlvdXQge1xuICBtYXJnaW46IDIwcHg7XG59XG4uY29va2llcy1wb2xpY3l7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZDU7XG4gIHdpZHRoOiAxMDB2dztcbn1cblxuLnBvbGljeS1oZWFkaW5nIHtcblxuXG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBmb250LWZhbWlseTogXCJSb2JvdG8tQm9sZFwiO1xufVxufVxuXG5cblxuXG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3MDBweClcbntcbiAgLmJsb2ctZ3JpZCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmcjtcbiAgICBtYXJnaW46IDJlbTtcbiAgICBncmlkLWdhcDogM2VtO1xufVxuLmhlYWRpbmctbmVzdGltYXRlLmJsb2ctdG9wLWhlYWRpbmcge1xuICBmb250LXNpemU6IDEuM2VtO1xuICBtYXJnaW46IDBlbSAxZW07XG59XG59XG4uYmxvZy1saW5rLWRlY29yYXRpb257XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOjcwMXB4KVxue1xuICAuaW1hZ2Utb3ZlclxuICB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxufVxuXG5cblxuXG5cbi8qTmV3IFhkICovXG4ucmFkaW8tY24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJvdHRvbTogNTB2aDtcbiAgdG9wOiAyMnZoO1xuICBsZWZ0OiA4dnc7XG59XG4uY3VzdG9tLWJ1dHRvbnMge1xuICBwYWRkaW5nOiAxZW0gMGVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZzogMWVtIDFlbTtcbiAgYm9yZGVyLXJhZGl1czogMjBweDtcbiAgbWFyZ2luOiAwZW07XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA2Njtcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS1mb250XG57XG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBwYWRkaW5nLWJvdHRvbTogMjBweDtcbiAgcGFkZGluZy10b3A6IDIwcHg7XG59XG4uc3RlcHMtY29udGFpbmVye1xuICBtYXJnaW46IDBlbSA1ZW07XG59XG5pbWcuc3RlcC1tYWdle1xuICB3aWR0aDogNDAlO1xuICBtYXJnaW46IDE0cHg7XG59XG4uc3RlcHMtbWFpbi1oZWFkaW5nXG57XG4gIGZvbnQtc2l6ZTogMS40ZW07XG4gIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbn1cbi5zbGlkZXItdGV4dCB7XG5cbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgY29sb3I6dmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgICAgIGZvbnQtc2l6ZTogMS4xZW07XG59XG5pbWcuYmxvZy1pbWFnZSB7XG4gIHdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA0Zjtcbn1cbi5ibG9nLWdyaWQge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICBtYXJnaW46IDFlbSA1ZW07XG4gIGdyaWQtZ2FwOiA2ZW07XG5cbiAgbWFyZ2luLWJvdHRvbTogMGVtO1xuXG59XG4uZ3JpZC10ZXh0e1xuICBtYXJnaW46IDFlbSA1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gfVxuXG4uaGVhZGluZy1uZXN0aW1hdGUuYmxvZy10b3AtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIG1hcmdpbjogMWVtIDVyZW07XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi50ZXh0LXdpdGgtcmlnaHQtYXJydyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmltZy5jb2xvci1yaWdodC1hcnJvdyB7XG4gIG1hcmdpbi1sZWZ0OiAxMXB4O1xufVxuXG5cbi5idXR0b24tdGFrZS1NYXRjaGVzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICBwYWRkaW5nOiAwLjhlbSAxZW07XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIC8qIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjsgKi9cbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gIHdpZHRoOiAxMDAlO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uTG9naW4tZnJvbS10b3Age1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHotaW5kZXg6IDI7XG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDAwMDA5MTtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHRvcDogMDtcbn1cblxuXG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIHAuaS1hbXtcbiAgICBmb250LXNpemU6IDEuMWVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG4gICAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbn1cbi5yYWRpby1jbntcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDMwdmg7XG4gIGxlZnQ6IDEwdnc7XG4gIHJpZ2h0OiAxMHZ3O1xufVxuLnJhZGlvLWNvbnRhaW5lciB7XG4gIGZvbnQtc2l6ZTogMTdweDtcbn1cbi50ZXh0LWNyZWF0ZS1uZXN0aW1hdGUge1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMC45ZW07XG4gIHBhZGRpbmc6IDBlbSAwLjVlbTtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5jaGVja21hcmsge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgaGVpZ2h0OiAyMHB4O1xuICB3aWR0aDogMjBweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xufVxuLnVwcGVyLWN1c3RvbS1idXR0b257XG4gIG1hcmdpbjogMGVtIDBlbTtcbn1cbi5jdXN0b20tYnV0dG9uc3tcbiAgcGFkZGluZzogMWVtIDBlbTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBhZGRpbmc6IDAuNWVtIDBlbTtcbiAgYm9yZGVyLXJhZGl1czogMjBweDtcbiAgbWFyZ2luOiAwZW07XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA2Njtcbn1cbi5pbWFnZS1vdmVyIHtcbiAgbWFyZ2luLXRvcDogMjh2aDtcbn1cbi50ZXh0LW92ZXItaW1hZ2Utc2Vjb25ke1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDRlbTtcbiAgYm90dG9tOiAtM3ZoO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS1mb250IHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBwYWRkaW5nOiAxZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5zdGVwcy1jb250YWluZXJ7XG4gIG1hcmdpbjogMGVtIDFlbTtcbn1cbi5zdGVwcy1tYWluLWhlYWRpbmcge1xuICBmb250LXNpemU6IDEuMWVtO1xuICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG59XG4uc2xpZGVyLXRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgZm9udC1zaXplOiAxNXB4O1xufVxuLmJsb2ctZ3JpZCB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xuICBtYXJnaW46IDFlbSAyZW07XG4gIGdyaWQtZ2FwOiAwZW07XG4gIG1hcmdpbi1ib3R0b206IDBlbTtcbn1cbi5ibG9nLWxpbmstZGVjb3JhdGlvbntcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjb2xvcjogYmxhY2s7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIC13ZWJraXQtbGluZS1jbGFtcDogMztcbiAgLXdlYmtpdC1ib3gtb3JpZW50OiB2ZXJ0aWNhbDsgIFxuICBvdmVyZmxvdzogaGlkZGVuXG59XG4uaGVhZGluZy1uZXN0aW1hdGUuYmxvZy10b3AtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBtYXJnaW46IDFlbSAxcmVtO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBwYWRkaW5nLWxlZnQ6IDFlbTtcbn1cbn1cblxuaW1nLnNsaWRlci1pbWFnZSB7XG4gIGhlaWdodDogNTIycHg7XG4gIGhlaWdodDogNTtcbn1cblxuXG5cblxuXG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIGltZy5zbGlkZXItaW1hZ2V7XG4gICAgaGVpZ2h0OiAxOTlweDtcbiAgICBoZWlnaHQ6IDU7XG59XG5cbi50ZXh0LW92ZXItaW1hZ2Utc2Vjb25kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IDN2aDtcbiAgdG9wOiAzN2VtO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbn1cbi5jb29raWVzLXBvbGljeSB7XG5iYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsgXG4gIHdpZHRoOiAxMDB2dztcbn1cbmltZy5zdGVwLW1hZ2V7XG4gIHdpZHRoOiAzNSU7XG4gIG1hcmdpbjogMTRweDtcbn1cbn0iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".back {\n  background-image: url(/assets/Images/home.jpeg);\n  width: 100%;\n  height: auto;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n.upper-back {\n  background-color: black;\n  width: 100%;\n  height: 250px;\n  opacity: 0.5;\n}\n.upper-button {\n  display: flex;\n  justify-content: space-around;\n  align-content: center;\n  z-index: 100;\n  position: relative;\n  top: -145px;\n}\n.home-button {\n  background-color:var(--light-blue-color);\n  color: white;\n  width: 35%;\n}\n.home-button-SELL\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  width: 35%;\n}\n.home-text-font {\n \n\n  margin-bottom: 0.5rem;\n}\n.example-form {\n  min-width: 150px;\n  max-width: 500px;\n  width: 100%;\n}\n.example-full-width {\n  width: 100%;\n  border: none;\n}\n.loading-container {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  z-index: 9;\n  background:white;\n\n}\n.how_does_it_work_steps {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n}\np.step-text {\n  text-align: center;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: 'Roboto-Medium';\n}\n.steps-container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  margin: 0em 1em;\n}\n.step {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n\n}\n@media only screen and (min-width:768px)\n{\n  .icon-size\n  {\n    width: 50% !important;\n  }\n}\n.cookies-policy {\n  background-color: white;\nposition: absolute;\n  padding: 3px;\n  position: fixed;\nbottom: 0px;\nz-index: 1;\nbox-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n}\n.policy-heading {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin: 13px;\n}\np\n{\n  margin-bottom: 0px;\n}\nimg.button-cross {\n  width: 17px;\n}\n.custom-button-first {\n\n  padding: 8px;\n  border-radius: 5px;\n  align-items: center;\n  flex-direction: inherit;\n    display: flex;\n    justify-content: space-around;\n   \n}\n.blue-circle {\n  padding: 5px;\n  border: 2px solid var(--light-blue-color);\n  border-radius: 50%;\n  width: 17%;\n}\n.custom-text {\n  font-size: 16px;\n  font-family: 'Roboto-Bold';\n}\n.upper-custom-button {\n  display: flex;\n  justify-content: center;\n  margin: 1em 0em;\n}\n.create-nestimate {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  justify-content: center;\n  background-color:var(--DARK-BLUE-COLOR);\nmargin-top: 1em;\nmargin-bottom: 1em;\n\nbox-shadow: 5px 5px 6px #00000066;\n\n}\nimg.button-image {\nheight: 6vh;\n}\n.text-create-nestimate\n{\n  color: white;\n  font-size: 1.3em;\n  padding: 0em 0.5em;\n  font-family: 'Segoe UI Bold';\n  display: flex;\n}\n.large-button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\np.i-am {\n  /* text-align: center; */\n  font-size: 1.5em;\n  text-align: center;\n  margin-bottom: 1em;\n  font-family: 'Segoe UI Bold';\n}\n.custom-button-first:hover\n{\n  cursor: pointer;\n}\n.radio-container {\n  display: block;\n  position: relative;\n  padding-left: 2em;\n  cursor: pointer;\n  font-size: 23px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  font-family: 'Segoe UI SemiBold';\n  color: #0F3C73;\n  padding-top: 0em;\n}\n/* Hide the browser's default radio button */\n.radio-container input {\n  position: absolute;\n  opacity: 0;\n  cursor: pointer;\n}\n/* Create a custom radio button */\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 25px;\n  width: 25px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n/* On mouse-over, add a grey background color */\n.radio-container:hover input ~ .checkmark {\n  background-color: #ccc;\n}\n/* When the radio button is checked, add a blue background */\n.radio-container input:checked ~ .checkmark {\n  background-color: var(--light-blue-color);\n}\n/* Create the indicator (the dot/circle - hidden when not checked) */\n.checkmark:after {\n  content: \"\";\n  position: absolute;\n  display: none;\n}\n/* Show the indicator (dot/circle) when checked */\n.radio-container input:checked ~ .checkmark:after {\n  display: block;\n}\n/* Style the indicator (dot/circle) */\n.radio-container .checkmark:after {\n \ttop: 9px;\n\tleft: 9px;\n\twidth: 8px;\n\theight: 8px;\n  border-radius: 50%;\n}\nlabel\n{\n  margin-bottom: 0px !important;\n}\n.slider-image\n{\n  width: 100%;\n}\n@media screen and (min-width:701px)\n{\n\n\n.second-card.mat-card {\n  display: none;\n}\n.steps-container {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  grid-gap: 5em;\n}\n\n\n.cookies-policy {\n\n  margin: 2em 4em;\n}\n.cookies-policy-text {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n}\n.cookies-button {\n  /* display: contents; */\n  display: flex;\n  flex-direction: row;\n}\n.policy-content {\n  margin: 13px;\n  text-align: justify;\n  /* margin: 13px 18px; */\n  width: 63vw;\n  display: flex;\n    flex-direction: row;\n    justify-content: center;\n    align-items: center;\n    align-items: center;\n    margin-top: 10px;\n    margin-bottom: 5px;\n    color: var(--DARK-BLUE-COLOR);\n    font-family: \"Segoe UI Regular\";\n    font-size: 1em;\n\n}\n.policy-heading {\n\n  display: inline;\n  margin-left: 13px;\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n\n}\n.text-over-image {\n  /* position: absolute; */\n  position: relative;\n  /* bottom: 50vh; */\n  top: -8vh;\n  /* bottom: 50vh; */\n  text-align: center;\n  z-index: 1;\n  font-size: 1.5em;\n  font-family: 'Roboto-Bold';\n  color: white;\n}\n.radio-cn.mat-card {\n\n  background-color: var(--BAckground-dark-color);\n}\n.text-over-image-second {\n  position: absolute;\n \n  bottom: -15vh;\n  color: white;\n  font-size: 1.4em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n\n}\n.second-card\n{\n  background-color: var(--BAckground-dark-color); \n}\n.heading-nestimate-font{\n  font-size: 22px;\n  padding: 2em;\n  text-align: center;\n\n}\n.top-button-cookies {\n  text-align: center;\n  /* height: 7vh; */\n  color: white;\n  border: 4px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 1em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n  font-size: 1.2em;\n\n}\n.top-button-cookies:hover\n{\n  cursor: pointer;\n}\n.lower-button\n{\n  background-color: var(--DARK-BLUE-COLOR);\n  border: none;\n  color: white;\n}\n.agent-form {\n  display: flex;\n  /* width: 100%; */\n  justify-content: center;\n  margin: 1em;\n}\n.listing-heading {\n  margin: 1em;\n}\n.to-buy {\n  margin: 0em 0.5em;\n}\nspan.greater-than-arrow.paragraph-color.mr-1 {\n  font-size: 2em;\n  padding-right: 0.1em;\n  padding-right: 0.5em;\n  font-family: 'Segoe UI Bold';\n}\n.image-over {\n  margin-top: 2em;\n}\nimg.buyer-jpg {\n  height: 36vh;\n  width: 100%;\n}\n.custom-buttons {\n  padding: 1em 0em;\n}\n.card-steps {\n  background-color: white;\n  padding-bottom: 2em;\n}\n@media screen and (min-width:701px)\n{\n  \nhr\n{\n display: none;\n}\n\n\n.outputText {\n\n  font-size: 1.1em;\n}\n.heading-nestimate-font {\n  font-size: 2em;\n}\nimg.buyer-jpg {\n\n  display: none;\n}\n.text-over-image {\n\n  font-size: 1.7em;\n \n}\n.top-button-cookies {\n  text-align: center;\n\n  border: 2px solid #81C2FD;\n  display: flex;\n  justify-content: center;\n  padding: 0.6em;\n  margin: 1em;\n  border-radius: 5px;\n  align-items: center;\n}\n.policy-content-layout {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  height: 100%;\n}\n}\n@media screen and (max-width:700px)\n{\n\n    .top-button-cookies{\n      padding: 0.3em;\n      margin: 1.3em;\n      font-size: 1em;\n      border: 2px solid #81C2FD;\n  \n\n  }\n  .policy-heading {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    margin: 4px;\n    margin-left: 0px !important;\n\n}\n.policy-content {\nmargin: 0px;\nmargin: 0px;\ncolor: #0F3C73;\nfont-family: \"Segoe UI Regular\";\n}\n.policy-content-layout {\n  margin: 20px;\n}\n.cookies-policy{\n  background-color: #ffffd5;\n  width: 100vw;\n}\n\n.policy-heading {\n\n\n  color: var(--DARK-BLUE-COLOR);\n  font-family: \"Roboto-Bold\";\n}\n}\n@media screen and (max-width:700px)\n{\n  .blog-grid {\n    display: grid;\n    grid-template-columns: 1fr;\n    margin: 2em;\n    grid-gap: 3em;\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 0em 1em;\n}\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n}\n@media screen and (min-width:701px)\n{\n  .image-over\n  {\n    display: none;\n  }\n}\n/*New Xd */\n.radio-cn {\n  position: absolute;\n  bottom: 50vh;\n  top: 22vh;\n  left: 8vw;\n}\n.custom-buttons {\n  padding: 1em 0em;\n  background-color: white;\n  padding: 1em 1em;\n  border-radius: 20px;\n  margin: 0em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.heading-nestimate-font\n{\n  color: var(--DARK-BLUE-COLOR);\n  padding-bottom: 20px;\n  padding-top: 20px;\n}\n.steps-container{\n  margin: 0em 5em;\n}\nimg.step-mage{\n  width: 40%;\n  margin: 14px;\n}\n.steps-main-heading\n{\n  font-size: 1.4em;\n  color: var(--light-blue-color);\n}\n.slider-text {\n\n  text-align: center;\n  width: 100%;\n  color:var(--DARK-BLUE-COLOR);\n  margin-top: 10px;\n      font-size: 1.1em;\n}\nimg.blog-image {\n  width: 100% !important;\n  box-shadow: 5px 5px 6px #0000004f;\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr;\n  margin: 1em 5em;\n  grid-gap: 6em;\n\n  margin-bottom: 0em;\n\n}\n.grid-text{\n  margin: 1em 5px;\n  text-align: center;\n    font-size: 18px;\n }\n.heading-nestimate.blog-top-heading {\n  font-size: 1.3em;\n  margin: 1em 5rem;\n  display: flex;\n  align-items: center;\n}\n.text-with-right-arrw {\n  display: flex;\n  flex-direction: row;\n  justify-content: flex-start;\n  align-items: center;\n}\nimg.color-right-arrow {\n  margin-left: 11px;\n}\n.button-take-Matches {\n  background-color: var(--DARK-BLUE-COLOR);\n  color: white;\n  padding: 0.8em 1em;\n  display: flex;\n  flex-direction: row;\n  /* justify-content: space-between; */\n  justify-content: space-evenly;\n  width: 100%;\n  align-items: center;\n}\n.Login-from-top {\n  position: fixed;\n  z-index: 2;\n  background-color: #00000091;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  top: 0;\n}\n@media screen and (max-width:700px)\n{\n  p.i-am{\n    font-size: 1.1em;\n    text-align: center;\n    margin-bottom: 1em;\n    font-family: 'Segoe UI Bold';\n}\n.radio-cn{\n  position: absolute;\n  top: 30vh;\n  left: 10vw;\n  right: 10vw;\n}\n.radio-container {\n  font-size: 17px;\n}\n.text-create-nestimate {\n  color: white;\n  font-size: 0.9em;\n  padding: 0em 0.5em;\n  font-family: 'Segoe UI Bold';\n  display: flex;\n  align-items: center;\n}\n.checkmark {\n  position: absolute;\n  top: 0;\n  left: 0;\n  height: 20px;\n  width: 20px;\n  border: 2px solid var(--DARK-BLUE-COLOR);\n  border-radius: 50%;\n}\n.upper-custom-button{\n  margin: 0em 0em;\n}\n.custom-buttons{\n  padding: 1em 0em;\n  background-color: white;\n  padding: 0.5em 0em;\n  border-radius: 20px;\n  margin: 0em;\n  box-shadow: 5px 5px 6px #00000066;\n}\n.image-over {\n  margin-top: 28vh;\n}\n.text-over-image-second{\n  position: absolute;\n  top: 44em;\n  bottom: -3vh;\n  color: white;\n  font-size: 1em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n}\n.heading-nestimate-font {\n  font-size: 20px;\n  padding: 1em;\n  text-align: center;\n}\n.steps-container{\n  margin: 0em 1em;\n}\n.steps-main-heading {\n  font-size: 1.1em;\n  color: var(--light-blue-color);\n}\n.slider-text {\n  text-align: center;\n  width: 100%;\n  color: var(--DARK-BLUE-COLOR);\n  margin-top: 10px;\n  font-size: 15px;\n}\n.blog-grid {\n  display: grid;\n  grid-template-columns: 1fr;\n  margin: 1em 2em;\n  grid-gap: 0em;\n  margin-bottom: 0em;\n}\n.blog-link-decoration{\n  text-decoration: none;\n  color: black;\n  font-size: 16px;\n  display: -webkit-box;\n  -webkit-line-clamp: 3;\n  -webkit-box-orient: vertical;  \n  overflow: hidden\n}\n.heading-nestimate.blog-top-heading {\n  font-size: 1em;\n  margin: 1em 1rem;\n  display: flex;\n  align-items: center;\n  padding-left: 1em;\n}\n}\nimg.slider-image {\n  height: 522px;\n  height: 5;\n}\n@media screen and (max-width:700px)\n{\n  img.slider-image{\n    height: 199px;\n    height: 5;\n}\n\n.text-over-image-second {\n  position: absolute;\n  bottom: 3vh;\n  top: 37em;\n  color: white;\n  font-size: 1em;\n  font-family: 'Roboto-Bold';\n  text-align: center;\n  width: 100%;\n}\n.cookies-policy {\nbackground-color: white; \n  width: 100vw;\n}\nimg.step-mage{\n  width: 35%;\n  margin: 14px;\n}\n}\n@media screen and (min-width:701px)\n{\n  .text-over-image-second {\n\n    display: none;\n}\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvSG9tZS9jbGlja2hvbWUvY2xpY2tob21lLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwrQ0FBK0M7RUFDL0MsV0FBVztFQUNYLFlBQVk7RUFDWiw0QkFBNEI7RUFDNUIsc0JBQXNCO0FBQ3hCO0FBQ0E7RUFDRSx1QkFBdUI7RUFDdkIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZO0FBQ2Q7QUFDQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IscUJBQXFCO0VBQ3JCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsV0FBVztBQUNiO0FBRUE7RUFDRSx3Q0FBd0M7RUFDeEMsWUFBWTtFQUNaLFVBQVU7QUFDWjtBQUNBOztFQUVFLHdDQUF3QztFQUN4QyxZQUFZO0VBQ1osVUFBVTtBQUNaO0FBRUE7OztFQUdFLHFCQUFxQjtBQUN2QjtBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0FBQ2I7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0FBQ2Q7QUFFQTtFQUNFLFdBQVc7RUFDWCxZQUFZO0VBQ1osZUFBZTtFQUNmLFFBQVE7RUFDUixTQUFTO0VBRVQsYUFBYTtFQUViLHVCQUF1QjtFQUV2QixtQkFBbUI7RUFDbkIsVUFBVTtFQUNWLGdCQUFnQjs7QUFFbEI7QUFDQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLDhCQUE4QjtBQUNoQztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLDZCQUE2QjtFQUM3Qiw0QkFBNEI7QUFDOUI7QUFHQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLHVCQUF1QjtFQUN2QixlQUFlO0FBQ2pCO0FBQ0E7RUFDRSxhQUFhO0VBQ2Isc0JBQXNCO0VBQ3RCLHVCQUF1QjtFQUN2QixtQkFBbUI7O0FBRXJCO0FBQ0E7O0VBRUU7O0lBRUUscUJBQXFCO0VBQ3ZCO0FBQ0Y7QUFDQTtFQUNFLHVCQUF1QjtBQUN6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O0FBQ2pCO0FBQ0EiLCJmaWxlIjoic3JjL2FwcC9Ib21lL2NsaWNraG9tZS9jbGlja2hvbWUuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5iYWNrIHtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvSW1hZ2VzL2hvbWUuanBlZyk7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4udXBwZXItYmFjayB7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAyNTBweDtcbiAgb3BhY2l0eTogMC41O1xufVxuLnVwcGVyLWJ1dHRvbiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBhbGlnbi1jb250ZW50OiBjZW50ZXI7XG4gIHotaW5kZXg6IDEwMDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICB0b3A6IC0xNDVweDtcbn1cblxuLmhvbWUtYnV0dG9uIHtcbiAgYmFja2dyb3VuZC1jb2xvcjp2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuLmhvbWUtYnV0dG9uLVNFTExcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICB3aWR0aDogMzUlO1xufVxuXG4uaG9tZS10ZXh0LWZvbnQge1xuIFxuXG4gIG1hcmdpbi1ib3R0b206IDAuNXJlbTtcbn1cbi5leGFtcGxlLWZvcm0ge1xuICBtaW4td2lkdGg6IDE1MHB4O1xuICBtYXgtd2lkdGg6IDUwMHB4O1xuICB3aWR0aDogMTAwJTtcbn1cblxuLmV4YW1wbGUtZnVsbC13aWR0aCB7XG4gIHdpZHRoOiAxMDAlO1xuICBib3JkZXI6IG5vbmU7XG59XG5cbi5sb2FkaW5nLWNvbnRhaW5lciB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAwcHg7XG4gIGxlZnQ6IDBweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIC13ZWJraXQtYm94LXBhY2s6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIC13ZWJraXQtYm94LWFsaWduOiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHotaW5kZXg6IDk7XG4gIGJhY2tncm91bmQ6d2hpdGU7XG5cbn1cbi5ob3dfZG9lc19pdF93b3JrX3N0ZXBzIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xufVxuXG5wLnN0ZXAtdGV4dCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLU1lZGl1bSc7XG59XG5cblxuLnN0ZXBzLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBtYXJnaW46IDBlbSAxZW07XG59XG4uc3RlcCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuXG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzY4cHgpXG57XG4gIC5pY29uLXNpemVcbiAge1xuICAgIHdpZHRoOiA1MCUgIWltcG9ydGFudDtcbiAgfVxufVxuLmNvb2tpZXMtcG9saWN5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG5wb3NpdGlvbjogYWJzb2x1dGU7XG4gIHBhZGRpbmc6IDNweDtcbiAgcG9zaXRpb246IGZpeGVkO1xuYm90dG9tOiAwcHg7XG56LWluZGV4OiAxO1xuYm94LXNoYWRvdzogMCAyLjhweCAyLjJweCByZ2JhKDAsIDAsIDAsIDAuMDM0KSwgMCA2LjdweCA1LjNweCByZ2JhKDAsIDAsIDAsIDAuMDQ4KSwgMCAxMi41cHggMTBweCByZ2JhKDAsIDAsIDAsIDAuMDYpLCAwIDIyLjNweCAxNy45cHggcmdiYSgwLCAwLCAwLCAwLjA3MiksIDAgNDEuOHB4IDMzLjRweCByZ2JhKDAsIDAsIDAsIDAuMDg2KSwgMCAxMDBweCA4MHB4IHJnYmEoMCwgMCwgMCwgMC4xMik7XG59XG4ucG9saWN5LWNvbnRlbnQge1xuICBtYXJnaW46IDEzcHg7XG4gIHRleHQtYWxpZ246IGp1c3RpZnk7XG59XG4ucG9saWN5LWhlYWRpbmcge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG1hcmdpbjogMTNweDtcbn1cbnBcbntcbiAgbWFyZ2luLWJvdHRvbTogMHB4O1xufVxuaW1nLmJ1dHRvbi1jcm9zcyB7XG4gIHdpZHRoOiAxN3B4O1xufVxuLmN1c3RvbS1idXR0b24tZmlyc3Qge1xuXG4gIHBhZGRpbmc6IDhweDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBmbGV4LWRpcmVjdGlvbjogaW5oZXJpdDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgXG59XG4uYmx1ZS1jaXJjbGUge1xuICBwYWRkaW5nOiA1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLWxpZ2h0LWJsdWUtY29sb3IpO1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIHdpZHRoOiAxNyU7XG59XG4uY3VzdG9tLXRleHQge1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xufVxuLnVwcGVyLWN1c3RvbS1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgbWFyZ2luOiAxZW0gMGVtO1xufVxuLmNyZWF0ZS1uZXN0aW1hdGUge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6dmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbm1hcmdpbi10b3A6IDFlbTtcbm1hcmdpbi1ib3R0b206IDFlbTtcblxuYm94LXNoYWRvdzogNXB4IDVweCA2cHggIzAwMDAwMDY2O1xuXG59XG5pbWcuYnV0dG9uLWltYWdlIHtcbmhlaWdodDogNnZoO1xufVxuLnRleHQtY3JlYXRlLW5lc3RpbWF0ZVxue1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIHBhZGRpbmc6IDBlbSAwLjVlbTtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbiAgZGlzcGxheTogZmxleDtcbn1cbi5sYXJnZS1idXR0b24ge1xuICBkaXNwbGF5OiBmbGV4O1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbnAuaS1hbSB7XG4gIC8qIHRleHQtYWxpZ246IGNlbnRlcjsgKi9cbiAgZm9udC1zaXplOiAxLjVlbTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW4tYm90dG9tOiAxZW07XG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgQm9sZCc7XG59XG4uY3VzdG9tLWJ1dHRvbi1maXJzdDpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ucmFkaW8tY29udGFpbmVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgcGFkZGluZy1sZWZ0OiAyZW07XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgZm9udC1zaXplOiAyM3B4O1xuICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lO1xuICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIFNlbWlCb2xkJztcbiAgY29sb3I6ICMwRjNDNzM7XG4gIHBhZGRpbmctdG9wOiAwZW07XG59XG5cbi8qIEhpZGUgdGhlIGJyb3dzZXIncyBkZWZhdWx0IHJhZGlvIGJ1dHRvbiAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgb3BhY2l0eTogMDtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4vKiBDcmVhdGUgYSBjdXN0b20gcmFkaW8gYnV0dG9uICovXG4uY2hlY2ttYXJrIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDA7XG4gIGhlaWdodDogMjVweDtcbiAgd2lkdGg6IDI1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cblxuLyogT24gbW91c2Utb3ZlciwgYWRkIGEgZ3JleSBiYWNrZ3JvdW5kIGNvbG9yICovXG4ucmFkaW8tY29udGFpbmVyOmhvdmVyIGlucHV0IH4gLmNoZWNrbWFyayB7XG4gIGJhY2tncm91bmQtY29sb3I6ICNjY2M7XG59XG5cbi8qIFdoZW4gdGhlIHJhZGlvIGJ1dHRvbiBpcyBjaGVja2VkLCBhZGQgYSBibHVlIGJhY2tncm91bmQgKi9cbi5yYWRpby1jb250YWluZXIgaW5wdXQ6Y2hlY2tlZCB+IC5jaGVja21hcmsge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbn1cblxuLyogQ3JlYXRlIHRoZSBpbmRpY2F0b3IgKHRoZSBkb3QvY2lyY2xlIC0gaGlkZGVuIHdoZW4gbm90IGNoZWNrZWQpICovXG4uY2hlY2ttYXJrOmFmdGVyIHtcbiAgY29udGVudDogXCJcIjtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBub25lO1xufVxuXG4vKiBTaG93IHRoZSBpbmRpY2F0b3IgKGRvdC9jaXJjbGUpIHdoZW4gY2hlY2tlZCAqL1xuLnJhZGlvLWNvbnRhaW5lciBpbnB1dDpjaGVja2VkIH4gLmNoZWNrbWFyazphZnRlciB7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4vKiBTdHlsZSB0aGUgaW5kaWNhdG9yIChkb3QvY2lyY2xlKSAqL1xuLnJhZGlvLWNvbnRhaW5lciAuY2hlY2ttYXJrOmFmdGVyIHtcbiBcdHRvcDogOXB4O1xuXHRsZWZ0OiA5cHg7XG5cdHdpZHRoOiA4cHg7XG5cdGhlaWdodDogOHB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG59XG5sYWJlbFxue1xuICBtYXJnaW4tYm90dG9tOiAwcHggIWltcG9ydGFudDtcbn1cbi5zbGlkZXItaW1hZ2VcbntcbiAgd2lkdGg6IDEwMCU7XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtaW4td2lkdGg6NzAxcHgpXG57XG5cblxuLnNlY29uZC1jYXJkLm1hdC1jYXJkIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbi5zdGVwcy1jb250YWluZXIge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICBncmlkLWdhcDogNWVtO1xufVxuXG5cbi5jb29raWVzLXBvbGljeSB7XG5cbiAgbWFyZ2luOiAyZW0gNGVtO1xufVxuLmNvb2tpZXMtcG9saWN5LXRleHQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuLmNvb2tpZXMtYnV0dG9uIHtcbiAgLyogZGlzcGxheTogY29udGVudHM7ICovXG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG59XG4ucG9saWN5LWNvbnRlbnQge1xuICBtYXJnaW46IDEzcHg7XG4gIHRleHQtYWxpZ246IGp1c3RpZnk7XG4gIC8qIG1hcmdpbjogMTNweCAxOHB4OyAqL1xuICB3aWR0aDogNjN2dztcbiAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXJnaW4tdG9wOiAxMHB4O1xuICAgIG1hcmdpbi1ib3R0b206IDVweDtcbiAgICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgICBmb250LWZhbWlseTogXCJTZWdvZSBVSSBSZWd1bGFyXCI7XG4gICAgZm9udC1zaXplOiAxZW07XG5cbn1cbi5wb2xpY3ktaGVhZGluZyB7XG5cbiAgZGlzcGxheTogaW5saW5lO1xuICBtYXJnaW4tbGVmdDogMTNweDtcbiAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGZvbnQtZmFtaWx5OiBcIlJvYm90by1Cb2xkXCI7XG59XG5cbn1cblxuLnRleHQtb3Zlci1pbWFnZSB7XG4gIC8qIHBvc2l0aW9uOiBhYnNvbHV0ZTsgKi9cbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAvKiBib3R0b206IDUwdmg7ICovXG4gIHRvcDogLTh2aDtcbiAgLyogYm90dG9tOiA1MHZoOyAqL1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHotaW5kZXg6IDE7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG4gIGZvbnQtZmFtaWx5OiAnUm9ib3RvLUJvbGQnO1xuICBjb2xvcjogd2hpdGU7XG59XG4ucmFkaW8tY24ubWF0LWNhcmQge1xuXG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7XG59XG4udGV4dC1vdmVyLWltYWdlLXNlY29uZCB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiBcbiAgYm90dG9tOiAtMTV2aDtcbiAgY29sb3I6IHdoaXRlO1xuICBmb250LXNpemU6IDEuNGVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcblxufVxuLnNlY29uZC1jYXJkXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLUJBY2tncm91bmQtZGFyay1jb2xvcik7IFxufVxuXG5cbiAgLmhlYWRpbmctbmVzdGltYXRlLWZvbnR7XG4gIGZvbnQtc2l6ZTogMjJweDtcbiAgcGFkZGluZzogMmVtO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG5cbn1cbi50b3AtYnV0dG9uLWNvb2tpZXMge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIC8qIGhlaWdodDogN3ZoOyAqL1xuICBjb2xvcjogd2hpdGU7XG4gIGJvcmRlcjogNHB4IHNvbGlkICM4MUMyRkQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBwYWRkaW5nOiAxZW07XG4gIG1hcmdpbjogMWVtO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZvbnQtc2l6ZTogMS4yZW07XG5cbn1cblxuLnRvcC1idXR0b24tY29va2llczpob3Zlclxue1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG4ubG93ZXItYnV0dG9uXG57XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIGJvcmRlcjogbm9uZTtcbiAgY29sb3I6IHdoaXRlO1xufVxuLmFnZW50LWZvcm0ge1xuICBkaXNwbGF5OiBmbGV4O1xuICAvKiB3aWR0aDogMTAwJTsgKi9cbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIG1hcmdpbjogMWVtO1xufVxuLmxpc3RpbmctaGVhZGluZyB7XG4gIG1hcmdpbjogMWVtO1xufVxuLnRvLWJ1eSB7XG4gIG1hcmdpbjogMGVtIDAuNWVtO1xufVxuc3Bhbi5ncmVhdGVyLXRoYW4tYXJyb3cucGFyYWdyYXBoLWNvbG9yLm1yLTEge1xuICBmb250LXNpemU6IDJlbTtcbiAgcGFkZGluZy1yaWdodDogMC4xZW07XG4gIHBhZGRpbmctcmlnaHQ6IDAuNWVtO1xuICBmb250LWZhbWlseTogJ1NlZ29lIFVJIEJvbGQnO1xufVxuLmltYWdlLW92ZXIge1xuICBtYXJnaW4tdG9wOiAyZW07XG59XG5cbmltZy5idXllci1qcGcge1xuICBoZWlnaHQ6IDM2dmg7XG4gIHdpZHRoOiAxMDAlO1xufVxuLmN1c3RvbS1idXR0b25zIHtcbiAgcGFkZGluZzogMWVtIDBlbTtcbn1cbi5jYXJkLXN0ZXBzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBhZGRpbmctYm90dG9tOiAyZW07XG59XG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgXG5oclxue1xuIGRpc3BsYXk6IG5vbmU7XG59XG5cblxuLm91dHB1dFRleHQge1xuXG4gIGZvbnQtc2l6ZTogMS4xZW07XG59XG4uaGVhZGluZy1uZXN0aW1hdGUtZm9udCB7XG4gIGZvbnQtc2l6ZTogMmVtO1xufVxuaW1nLmJ1eWVyLWpwZyB7XG5cbiAgZGlzcGxheTogbm9uZTtcbn1cbi50ZXh0LW92ZXItaW1hZ2Uge1xuXG4gIGZvbnQtc2l6ZTogMS43ZW07XG4gXG59XG4udG9wLWJ1dHRvbi1jb29raWVzIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuXG4gIGJvcmRlcjogMnB4IHNvbGlkICM4MUMyRkQ7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBwYWRkaW5nOiAwLjZlbTtcbiAgbWFyZ2luOiAxZW07XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5wb2xpY3ktY29udGVudC1sYXlvdXQge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgaGVpZ2h0OiAxMDAlO1xufVxufVxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3MDBweClcbntcblxuICAgIC50b3AtYnV0dG9uLWNvb2tpZXN7XG4gICAgICBwYWRkaW5nOiAwLjNlbTtcbiAgICAgIG1hcmdpbjogMS4zZW07XG4gICAgICBmb250LXNpemU6IDFlbTtcbiAgICAgIGJvcmRlcjogMnB4IHNvbGlkICM4MUMyRkQ7XG4gIFxuXG4gIH1cbiAgLnBvbGljeS1oZWFkaW5nIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbjogNHB4O1xuICAgIG1hcmdpbi1sZWZ0OiAwcHggIWltcG9ydGFudDtcblxufVxuLnBvbGljeS1jb250ZW50IHtcbm1hcmdpbjogMHB4O1xubWFyZ2luOiAwcHg7XG5jb2xvcjogIzBGM0M3MztcbmZvbnQtZmFtaWx5OiBcIlNlZ29lIFVJIFJlZ3VsYXJcIjtcbn1cbi5wb2xpY3ktY29udGVudC1sYXlvdXQge1xuICBtYXJnaW46IDIwcHg7XG59XG4uY29va2llcy1wb2xpY3l7XG4gIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZDU7XG4gIHdpZHRoOiAxMDB2dztcbn1cblxuLnBvbGljeS1oZWFkaW5nIHtcblxuXG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBmb250LWZhbWlseTogXCJSb2JvdG8tQm9sZFwiO1xufVxufVxuXG5cblxuXG5cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3MDBweClcbntcbiAgLmJsb2ctZ3JpZCB7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmcjtcbiAgICBtYXJnaW46IDJlbTtcbiAgICBncmlkLWdhcDogM2VtO1xufVxuLmhlYWRpbmctbmVzdGltYXRlLmJsb2ctdG9wLWhlYWRpbmcge1xuICBmb250LXNpemU6IDEuM2VtO1xuICBtYXJnaW46IDBlbSAxZW07XG59XG59XG4uYmxvZy1saW5rLWRlY29yYXRpb257XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWluLXdpZHRoOjcwMXB4KVxue1xuICAuaW1hZ2Utb3ZlclxuICB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxufVxuXG5cblxuXG5cbi8qTmV3IFhkICovXG4ucmFkaW8tY24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGJvdHRvbTogNTB2aDtcbiAgdG9wOiAyMnZoO1xuICBsZWZ0OiA4dnc7XG59XG4uY3VzdG9tLWJ1dHRvbnMge1xuICBwYWRkaW5nOiAxZW0gMGVtO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgcGFkZGluZzogMWVtIDFlbTtcbiAgYm9yZGVyLXJhZGl1czogMjBweDtcbiAgbWFyZ2luOiAwZW07XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA2Njtcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS1mb250XG57XG4gIGNvbG9yOiB2YXIoLS1EQVJLLUJMVUUtQ09MT1IpO1xuICBwYWRkaW5nLWJvdHRvbTogMjBweDtcbiAgcGFkZGluZy10b3A6IDIwcHg7XG59XG4uc3RlcHMtY29udGFpbmVye1xuICBtYXJnaW46IDBlbSA1ZW07XG59XG5pbWcuc3RlcC1tYWdle1xuICB3aWR0aDogNDAlO1xuICBtYXJnaW46IDE0cHg7XG59XG4uc3RlcHMtbWFpbi1oZWFkaW5nXG57XG4gIGZvbnQtc2l6ZTogMS40ZW07XG4gIGNvbG9yOiB2YXIoLS1saWdodC1ibHVlLWNvbG9yKTtcbn1cbi5zbGlkZXItdGV4dCB7XG5cbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgY29sb3I6dmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgICAgIGZvbnQtc2l6ZTogMS4xZW07XG59XG5pbWcuYmxvZy1pbWFnZSB7XG4gIHdpZHRoOiAxMDAlICFpbXBvcnRhbnQ7XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA0Zjtcbn1cbi5ibG9nLWdyaWQge1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyO1xuICBtYXJnaW46IDFlbSA1ZW07XG4gIGdyaWQtZ2FwOiA2ZW07XG5cbiAgbWFyZ2luLWJvdHRvbTogMGVtO1xuXG59XG4uZ3JpZC10ZXh0e1xuICBtYXJnaW46IDFlbSA1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBmb250LXNpemU6IDE4cHg7XG4gfVxuXG4uaGVhZGluZy1uZXN0aW1hdGUuYmxvZy10b3AtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMS4zZW07XG4gIG1hcmdpbjogMWVtIDVyZW07XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG59XG5cbi50ZXh0LXdpdGgtcmlnaHQtYXJydyB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbmltZy5jb2xvci1yaWdodC1hcnJvdyB7XG4gIG1hcmdpbi1sZWZ0OiAxMXB4O1xufVxuXG5cbi5idXR0b24tdGFrZS1NYXRjaGVzIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgY29sb3I6IHdoaXRlO1xuICBwYWRkaW5nOiAwLjhlbSAxZW07XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtZGlyZWN0aW9uOiByb3c7XG4gIC8qIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjsgKi9cbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1ldmVubHk7XG4gIHdpZHRoOiAxMDAlO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xufVxuXG4uTG9naW4tZnJvbS10b3Age1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHotaW5kZXg6IDI7XG4gIGJhY2tncm91bmQtY29sb3I6ICMwMDAwMDA5MTtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIHRvcDogMDtcbn1cblxuXG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIHAuaS1hbXtcbiAgICBmb250LXNpemU6IDEuMWVtO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBtYXJnaW4tYm90dG9tOiAxZW07XG4gICAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbn1cbi5yYWRpby1jbntcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDMwdmg7XG4gIGxlZnQ6IDEwdnc7XG4gIHJpZ2h0OiAxMHZ3O1xufVxuLnJhZGlvLWNvbnRhaW5lciB7XG4gIGZvbnQtc2l6ZTogMTdweDtcbn1cbi50ZXh0LWNyZWF0ZS1uZXN0aW1hdGUge1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMC45ZW07XG4gIHBhZGRpbmc6IDBlbSAwLjVlbTtcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbn1cbi5jaGVja21hcmsge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMDtcbiAgbGVmdDogMDtcbiAgaGVpZ2h0OiAyMHB4O1xuICB3aWR0aDogMjBweDtcbiAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgYm9yZGVyLXJhZGl1czogNTAlO1xufVxuLnVwcGVyLWN1c3RvbS1idXR0b257XG4gIG1hcmdpbjogMGVtIDBlbTtcbn1cbi5jdXN0b20tYnV0dG9uc3tcbiAgcGFkZGluZzogMWVtIDBlbTtcbiAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gIHBhZGRpbmc6IDAuNWVtIDBlbTtcbiAgYm9yZGVyLXJhZGl1czogMjBweDtcbiAgbWFyZ2luOiAwZW07XG4gIGJveC1zaGFkb3c6IDVweCA1cHggNnB4ICMwMDAwMDA2Njtcbn1cbi5pbWFnZS1vdmVyIHtcbiAgbWFyZ2luLXRvcDogMjh2aDtcbn1cbi50ZXh0LW92ZXItaW1hZ2Utc2Vjb25ke1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogNDRlbTtcbiAgYm90dG9tOiAtM3ZoO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbn1cbi5oZWFkaW5nLW5lc3RpbWF0ZS1mb250IHtcbiAgZm9udC1zaXplOiAyMHB4O1xuICBwYWRkaW5nOiAxZW07XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cbi5zdGVwcy1jb250YWluZXJ7XG4gIG1hcmdpbjogMGVtIDFlbTtcbn1cbi5zdGVwcy1tYWluLWhlYWRpbmcge1xuICBmb250LXNpemU6IDEuMWVtO1xuICBjb2xvcjogdmFyKC0tbGlnaHQtYmx1ZS1jb2xvcik7XG59XG4uc2xpZGVyLXRleHQge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgbWFyZ2luLXRvcDogMTBweDtcbiAgZm9udC1zaXplOiAxNXB4O1xufVxuLmJsb2ctZ3JpZCB7XG4gIGRpc3BsYXk6IGdyaWQ7XG4gIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyO1xuICBtYXJnaW46IDFlbSAyZW07XG4gIGdyaWQtZ2FwOiAwZW07XG4gIG1hcmdpbi1ib3R0b206IDBlbTtcbn1cbi5ibG9nLWxpbmstZGVjb3JhdGlvbntcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjb2xvcjogYmxhY2s7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZGlzcGxheTogLXdlYmtpdC1ib3g7XG4gIC13ZWJraXQtbGluZS1jbGFtcDogMztcbiAgLXdlYmtpdC1ib3gtb3JpZW50OiB2ZXJ0aWNhbDsgIFxuICBvdmVyZmxvdzogaGlkZGVuXG59XG4uaGVhZGluZy1uZXN0aW1hdGUuYmxvZy10b3AtaGVhZGluZyB7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBtYXJnaW46IDFlbSAxcmVtO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBwYWRkaW5nLWxlZnQ6IDFlbTtcbn1cbn1cblxuaW1nLnNsaWRlci1pbWFnZSB7XG4gIGhlaWdodDogNTIycHg7XG4gIGhlaWdodDogNTtcbn1cblxuXG5cblxuXG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzAwcHgpXG57XG4gIGltZy5zbGlkZXItaW1hZ2V7XG4gICAgaGVpZ2h0OiAxOTlweDtcbiAgICBoZWlnaHQ6IDU7XG59XG5cbi50ZXh0LW92ZXItaW1hZ2Utc2Vjb25kIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBib3R0b206IDN2aDtcbiAgdG9wOiAzN2VtO1xuICBjb2xvcjogd2hpdGU7XG4gIGZvbnQtc2l6ZTogMWVtO1xuICBmb250LWZhbWlseTogJ1JvYm90by1Cb2xkJztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbn1cbi5jb29raWVzLXBvbGljeSB7XG5iYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTsgXG4gIHdpZHRoOiAxMDB2dztcbn1cbmltZy5zdGVwLW1hZ2V7XG4gIHdpZHRoOiAzNSU7XG4gIG1hcmdpbjogMTRweDtcbn1cbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDo3MDFweClcbntcbiAgLnRleHQtb3Zlci1pbWFnZS1zZWNvbmQge1xuXG4gICAgZGlzcGxheTogbm9uZTtcbn1cbn0iXX0= */");
 
 /***/ }),
 
@@ -9915,6 +10769,7 @@ let ClickhomeComponent = class ClickhomeComponent {
         this.type = "User";
         this.sellerOverlay = false;
         this.hide = true;
+        this.OtherError = "Other";
     }
     get user() {
         return this._user;
@@ -10027,7 +10882,7 @@ let ClickhomeComponent = class ClickhomeComponent {
                 this.KnowUser.push(element.data());
                 if (element.data().email == email && element.data().UserType != "User") {
                     const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
-                        data: { message: "Please Login as User" }
+                        data: { message: this.UserSignIn }
                     });
                     this.isLoading = false;
                 }
@@ -10107,6 +10962,13 @@ let ClickhomeComponent = class ClickhomeComponent {
     }
     SignupFilter(val) {
         this.signUp(this.name, this.emails, this.passs, this.type);
+    }
+    getOtherForm() {
+        this.CMSSERVICE.getOtherError(this.OtherError).then((element) => {
+            this.AgentSignIn = element.data().AgentSignIn;
+            this.UserSignIn = element.data().UserSignIn;
+            this.isLoading = false;
+        });
     }
 };
 ClickhomeComponent.ctorParameters = () => [
@@ -16471,6 +17333,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _http_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../http.service */ "./src/app/http.service.ts");
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm2015/common.js");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../cms.service */ "./src/app/cms.service.ts");
+
 
 
 
@@ -16481,14 +17345,16 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let EditProfileComponent = class EditProfileComponent {
-    constructor(fillFormsService, router, dialog, HttpService, _location) {
+    constructor(fillFormsService, router, dialog, HttpService, _location, CMSSERVICE) {
         this.fillFormsService = fillFormsService;
         this.router = router;
         this.dialog = dialog;
         this.HttpService = HttpService;
         this._location = _location;
+        this.CMSSERVICE = CMSSERVICE;
         this.isLoading = false;
         this.edit = false;
+        this.MyDetail = "MyDetails";
         this.emailFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormControl"]("", [
             _angular_forms__WEBPACK_IMPORTED_MODULE_6__["Validators"].required,
         ]);
@@ -16507,6 +17373,7 @@ let EditProfileComponent = class EditProfileComponent {
     ngOnInit() {
         this.user = JSON.parse(localStorage.getItem("user"));
         this.uid = this.user.uid;
+        this.getOtherForm();
         this.fillFormsService.getUser(this.uid).subscribe((ref) => {
             ref.forEach((element) => {
                 if (element.data().uid == this.uid) {
@@ -16531,70 +17398,70 @@ let EditProfileComponent = class EditProfileComponent {
     userDetail(Name, email, Phone, DOB, Address, prefrence) {
         if (Name == null || Name.length == 0) {
             const dialogRef = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
-                data: { message: "Please fill username" }
+                data: { message: this.FullName }
             });
             this.NameView.nativeElement.focus();
-            document.getElementById("name").style.border = "5px solid red";
+            document.getElementById("name").style.color = "red";
         }
         else if (email == null) {
             const dialogRef = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
-                data: { message: "Please fill email id" }
+                data: { message: this.Emails }
             });
-            document.getElementById("name").style.border = "5px solid red";
+            document.getElementById("name").style.color = "red";
         }
         else if (Phone == null || Phone.length == 0) {
             const dialogRef = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
-                data: { message: "Please fill phone number" }
+                data: { message: this.Phones }
             });
             this.phoneView.nativeElement.focus();
-            document.getElementById("name").style.border = "none";
-            document.getElementById("phone").style.border = "5px solid red";
+            document.getElementById("name").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("phone").style.color = "red";
         }
         else if (DOB == null || DOB.length == 0) {
             const dialogRef = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
-                data: { message: "Plaese fill date of birth" }
+                data: { message: this.DOBs }
             });
             this.dateofbirthView.nativeElement.focus();
-            document.getElementById("name").style.border = "none";
-            document.getElementById("phone").style.border = "none";
-            document.getElementById("dob").style.border = "5px solid red";
+            document.getElementById("name").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("phone").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("dob").style.color = "red";
         }
         else if (Math.floor(Math.abs(Date.now() - new Date(DOB).getTime()) / (1000 * 3600 * 24) / 365.25)
             < 18) {
             const dialogRef = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
-                data: { message: "Age must be 18+" }
+                data: { message: this.ValidateDob }
             });
-            document.getElementById("name").style.border = "none";
-            document.getElementById("phone").style.border = "none";
-            document.getElementById("dob").style.border = "5px solid red";
+            document.getElementById("name").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("phone").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("dob").style.color = "red";
         }
         else if (Address == null || Address.length == 0) {
             const dialogRef = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
-                data: { message: "Please fill current address" }
+                data: { message: this.Address }
             });
             this.addressView.nativeElement.focus();
-            document.getElementById("name").style.border = "none";
-            document.getElementById("phone").style.border = "none";
-            document.getElementById("dob").style.border = "none";
-            document.getElementById("address").style.border = "5px solid red";
+            document.getElementById("name").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("phone").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("address").style.color = "red";
         }
         else if (prefrence == null) {
             const dialogRef = this.dialog.open(_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_4__["EdiProfileComponent"], {
-                data: { message: "Please choose your prefrences" }
+                data: { message: this.Prefrence }
             });
-            document.getElementById("name").style.border = "none";
-            document.getElementById("phone").style.border = "none";
-            document.getElementById("dob").style.border = "none";
-            document.getElementById("address").style.border = "none";
-            document.getElementById("prefrence").style.border = "5px solid red";
+            document.getElementById("name").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("phone").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("address").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("prefrence").style.color = "red";
         }
         else {
             this.isLoading = true;
-            document.getElementById("name").style.border = "none";
-            document.getElementById("phone").style.border = "none";
-            document.getElementById("dob").style.border = "none";
-            document.getElementById("address").style.border = "none";
-            //document.getElementById("prefrence").style.border = "none"
+            document.getElementById("name").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("phone").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
+            document.getElementById("address").style.color = "var(--DARK-BLUE-COLOR)";
+            //document.getElementById("prefrence").style.color ="var(--DARK-BLUE-COLOR)"
             this.userDetails();
         }
     }
@@ -16621,13 +17488,26 @@ let EditProfileComponent = class EditProfileComponent {
     NotEdit() {
         this.edit = false;
     }
+    getOtherForm() {
+        this.CMSSERVICE.getMyDetailError(this.MyDetail).then((element) => {
+            this.FullName = element.data().FullName;
+            this.Emails = element.data().Email;
+            this.Phones = element.data().Phone;
+            this.DOBs = element.data().DOB;
+            this.ValidateDob = element.data().ValidateDob;
+            this.Address = element.data().Address;
+            this.Prefrence = element.data().Prefrence;
+            this.isLoading = false;
+        });
+    }
 };
 EditProfileComponent.ctorParameters = () => [
     { type: _Home_Property_fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_2__["FormsService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
     { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
     { type: _http_service__WEBPACK_IMPORTED_MODULE_7__["HttpService"] },
-    { type: _angular_common__WEBPACK_IMPORTED_MODULE_8__["Location"] }
+    { type: _angular_common__WEBPACK_IMPORTED_MODULE_8__["Location"] },
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_9__["CMSSERVICE"] }
 ];
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('Names', { static: false })
@@ -16766,6 +17646,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.MobileOpenMenu = false;
         this.hideRegister = false;
         this.confirmNotitfication = [];
+        this.OtherError = "Other";
         this.formVar = this.fb.group({
             Name: '',
             email: '',
@@ -16782,6 +17663,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         if (window.location.href == this.origin + "Agenthome/leads" || window.location.href == this.origin + "agentSignup" || window.location.href == this.origin + "Agentsignupform" || window.location.href == this.origin + "Agenthome/profile" || window.location.href == this.origin + "Agenthome/archieve" || window.location.href == this.origin + "selectedAgentbuyerdetail") {
             this.hideRegister = true;
         }
+        this.getOtherForm();
         this.initProfile();
         new Date().getTime() / 1000;
         document.getElementById("custom").style.overflowY = "overlay";
@@ -16805,24 +17687,6 @@ let NavigationBarComponent = class NavigationBarComponent {
                 this.LoggedOut();
             }
         });
-        // this.userData = JSON.parse(sessionStorage.getItem('currentUser'));
-        // if (this.userData != null) {
-        //   this.uid = this.userData.id
-        //   this.isLoggedIn = true;
-        //   this.LoggedIn()
-        //   this.HttpService.getUsers(this.uid).subscribe((data) => {
-        //     this.CheckUserType = data
-        //     if (this.CheckUserType.AgentType == "True") {
-        //       this.agent = true
-        //     }
-        //     else {
-        //       this.agent = false
-        //     }
-        //   })
-        // }
-        // else {
-        //   this.isLoggedIn = false;
-        // }
         this.getNotificationContent();
         this.CMSSERVICE.getsignUpTerms().then((res) => {
             res.forEach(element => {
@@ -16924,11 +17788,6 @@ let NavigationBarComponent = class NavigationBarComponent {
         this.newUser = false;
         this.navLogin = false;
     }
-    // keyDownFunction(event) {
-    //   if (event.keyCode == 13) {
-    //     this.signUp(this.name, this.email, this.password);
-    //   }
-    // }
     keyDownSign(events) {
         if (events.keyCode == 13) {
         }
@@ -17092,12 +17951,11 @@ let NavigationBarComponent = class NavigationBarComponent {
                 this.KnowUser.push(element.data());
                 if (element.data().email == email && element.data().UserType != "User") {
                     const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
-                        data: { message: "Please Login as User" }
+                        data: { message: this.UserSignIn }
                     });
                     this.isLoading = false;
                 }
                 else if (element.data().email == email && element.data().UserType == "User") {
-                    console.log(element.data());
                     this.authService.SignIn(email, pass).then((data) => {
                         this.isLoading = false;
                         window.location.reload();
@@ -17244,6 +18102,14 @@ let NavigationBarComponent = class NavigationBarComponent {
     terms() {
         this.loginTop = false;
         this._router.navigate(["/terms"]);
+    }
+    getOtherForm() {
+        this.CMSSERVICE.getOtherError(this.OtherError).then((element) => {
+            this.AgentSignIn = element.data().AgentSignIn;
+            this.UserSignIn = element.data().UserSignIn;
+            //this.WrongPassword = element.data().WrongPassword
+            this.isLoading = false;
+        });
     }
 };
 NavigationBarComponent.ctorParameters = () => [
@@ -18722,6 +19588,8 @@ let AgenthomeComponent = class AgenthomeComponent {
         this.archieveUser = [];
         this.type = "Agent";
         this.hide = true;
+        this.OtherError = "Other";
+        this.isLoading = false;
     }
     ngOnInit() {
         this.user = JSON.parse(localStorage.getItem("user"));
@@ -18733,15 +19601,15 @@ let AgenthomeComponent = class AgenthomeComponent {
             this.sub = this.ActivatedRoute.paramMap.subscribe((params) => {
                 this.type = params.get("type");
             });
+            this.getOtherForm();
         }
     }
     signIn(email, pass) {
-        console.log(email, pass);
         this.CMSSERVICE.CheckUser(email, this.type).then((data) => {
             data.forEach(element => {
                 if (element.data().email == email && element.data().UserType == "User") {
                     const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
-                        data: { message: "Please Login as Agent" }
+                        data: { message: this.AgentSignIn }
                     });
                 }
                 if (element.data().email == email && element.data().UserType == this.type) {
@@ -18913,6 +19781,14 @@ let AgenthomeComponent = class AgenthomeComponent {
         this.router.navigate(['/Agenthome/archieve'])
             .then(() => {
             window.location.reload();
+        });
+    }
+    getOtherForm() {
+        this.CMSSERVICE.getOtherError(this.OtherError).then((element) => {
+            this.AgentSignIn = element.data().AgentSignIn;
+            this.UserSignIn = element.data().UserSignIn;
+            this.WrongPassword = element.data().WrongPassword;
+            this.isLoading = false;
         });
     }
 };
@@ -19127,6 +20003,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm2015/material.js");
 /* harmony import */ var _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../Misc/alert-user-type/alert-user-type.component */ "./src/app/Misc/alert-user-type/alert-user-type.component.ts");
+/* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../cms.service */ "./src/app/cms.service.ts");
+
 
 
 
@@ -19135,15 +20013,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let EditDetailsComponent = class EditDetailsComponent {
-    constructor(AgenthomeService, HttpService, ActivatedRoute, Router, dialog) {
+    constructor(AgenthomeService, HttpService, ActivatedRoute, Router, dialog, CMSSERVICE) {
         this.AgenthomeService = AgenthomeService;
         this.HttpService = HttpService;
         this.ActivatedRoute = ActivatedRoute;
         this.Router = Router;
         this.dialog = dialog;
+        this.CMSSERVICE = CMSSERVICE;
         this.loggedIn = false;
         this.agentSignup = {};
         this.edit = false;
+        this.AgentError = "AgentError";
     }
     ngOnInit() {
         this.user = JSON.parse(localStorage.getItem("user"));
@@ -19157,26 +20037,90 @@ let EditDetailsComponent = class EditDetailsComponent {
             this.agents = data;
         });
         this.getAgentDetails();
+        this.getAgentForm();
     }
     editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage, office) {
-        if (this.agents.officephone.length < 10 || this.agents.officephone.length > 10) {
+        if (this.agents.officephone != null || this.agents.phone != null) {
+            var Office = parseInt(this.agents.officephone);
+            var Mobile = parseInt(this.agents.phone);
+        }
+        if (this.agents.email != null) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            var Emails = re.test(String(this.agents.email).toLowerCase());
+        }
+        if (this.agents.fullname == null || this.agents.fullname.length == 0) {
             const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
-                data: { message: "Office Phone Number must be 10 Digit" }
+                data: { message: this.FullName }
+            });
+        }
+        else if (this.agents.address == null || this.agents.address.length == 0) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.Address }
+            });
+        }
+        else if (Emails == false || this.agents.email.length == 0) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.emailvalidation }
+            });
+        }
+        else if (this.agents.phone == null) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.mobile }
+            });
+        }
+        else if (Mobile != this.agents.phone) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.mobilevalidity }
             });
         }
         else if (this.agents.phone.length < 10 || this.agents.phone.length > 10) {
             const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
-                data: { message: "Phone Number must be 10 Digit" }
+                data: { message: this.mobilelength }
             });
         }
-        else if (this.agents.solefees > 4 || this.agents.solefees < 1.5) {
+        else if (this.agents.officephone == null) {
             const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
-                data: { message: "Sole agency fees must range between 1.5% to 4%" }
+                data: { message: this.officephone }
             });
         }
-        else if (this.agents.multiplefees > 4 || this.agents.multiplefees < 1.5) {
+        else if (Office != this.agents.officephone) {
             const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
-                data: { message: "Multiple agency fees must range between 1.5% to 4%" }
+                data: { message: this.officephonevalidation }
+            });
+        }
+        else if (this.agents.officephone.length < 10 || this.agents.officephone.length > 10) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.officephonelength }
+            });
+        }
+        else if (this.agents.solefees.length == 0) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.solefees }
+            });
+        }
+        else if (this.agents.solefees > 4) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.solefeesmore }
+            });
+        }
+        else if (this.agents.solefees < 1.5) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.solefeesless }
+            });
+        }
+        else if (this.agents.multiplefees.length == 0) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.multiplefees }
+            });
+        }
+        else if (this.agents.multiplefees > 4) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.multiplefeesmore }
+            });
+        }
+        else if (this.agents.multiplefees < 1.5) {
+            const dialogRef = this.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+                data: { message: this.multiplefeesless }
             });
         }
         else {
@@ -19203,13 +20147,41 @@ let EditDetailsComponent = class EditDetailsComponent {
     cancelEdit() {
         this.edit = false;
     }
+    getAgentForm() {
+        this.CMSSERVICE.getAgentError(this.AgentError).then((element) => {
+            this.FullName = element.data().FullName;
+            this.CompanyName = element.data().CompanyName;
+            this.Postcode = element.data().Postcode;
+            this.Address = element.data().Address;
+            this.JobTitle = element.data().JobTitle;
+            this.EmailAddress = element.data().EmailAddress;
+            this.emailvalidation = element.data().emailvalidation;
+            this.Password = element.data().Password;
+            this.officephone = element.data().officephone;
+            this.officephonevalidation = element.data().officephonevalidation;
+            this.officephonelength = element.data().officephonelength;
+            this.mobile = element.data().mobile;
+            this.mobilevalidity = element.data().mobilevalidity;
+            this.mobilelength = element.data().mobilelength;
+            this.solefees = element.data().solefees;
+            this.solefeesmore = element.data().solefeesmore;
+            this.solefeesless = element.data().solefeesless;
+            this.multiplefees = element.data().multiplefees;
+            this.multiplefeesmore = element.data().multiplefeesmore;
+            this.multiplefeesless = element.data().multiplefeesless;
+            this.Image = element.data().Image;
+            this.Imagesize = element.data().Imagesize;
+            this.isLoading = false;
+        });
+    }
 };
 EditDetailsComponent.ctorParameters = () => [
     { type: _agenthome_service__WEBPACK_IMPORTED_MODULE_2__["AgenthomeService"] },
     { type: _http_service__WEBPACK_IMPORTED_MODULE_3__["HttpService"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["ActivatedRoute"] },
     { type: _angular_router__WEBPACK_IMPORTED_MODULE_4__["Router"] },
-    { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] }
+    { type: _angular_material__WEBPACK_IMPORTED_MODULE_5__["MatDialog"] },
+    { type: _cms_service__WEBPACK_IMPORTED_MODULE_7__["CMSSERVICE"] }
 ];
 EditDetailsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -19909,6 +20881,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Menu_myListings_recentlyitems_sellerrecentpropertydeatil_sellerrecentpropertydeatil_component__WEBPACK_IMPORTED_MODULE_136__ = __webpack_require__(/*! ./Menu/myListings/recentlyitems/sellerrecentpropertydeatil/sellerrecentpropertydeatil.component */ "./src/app/Menu/myListings/recentlyitems/sellerrecentpropertydeatil/sellerrecentpropertydeatil.component.ts");
 /* harmony import */ var _Menu_myMatches_select_agent_agentSubmission_component__WEBPACK_IMPORTED_MODULE_137__ = __webpack_require__(/*! ./Menu/myMatches/select-agent/agentSubmission.component */ "./src/app/Menu/myMatches/select-agent/agentSubmission.component.ts");
 /* harmony import */ var _Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_138__ = __webpack_require__(/*! ./Misc/alert-selected-property/alert-selected-property.component */ "./src/app/Misc/alert-selected-property/alert-selected-property.component.ts");
+/* harmony import */ var _AdminPanel_uielements_seekerformerror_seekerformerror_component__WEBPACK_IMPORTED_MODULE_139__ = __webpack_require__(/*! ./AdminPanel/uielements/seekerformerror/seekerformerror.component */ "./src/app/AdminPanel/uielements/seekerformerror/seekerformerror.component.ts");
+/* harmony import */ var _AdminPanel_uielements_ownerformerror_ownerformerror_component__WEBPACK_IMPORTED_MODULE_140__ = __webpack_require__(/*! ./AdminPanel/uielements/ownerformerror/ownerformerror.component */ "./src/app/AdminPanel/uielements/ownerformerror/ownerformerror.component.ts");
+/* harmony import */ var _AdminPanel_uielements_agentformerror_agentformerror_component__WEBPACK_IMPORTED_MODULE_141__ = __webpack_require__(/*! ./AdminPanel/uielements/agentformerror/agentformerror.component */ "./src/app/AdminPanel/uielements/agentformerror/agentformerror.component.ts");
+/* harmony import */ var _AdminPanel_uielements_othererror_othererror_component__WEBPACK_IMPORTED_MODULE_142__ = __webpack_require__(/*! ./AdminPanel/uielements/othererror/othererror.component */ "./src/app/AdminPanel/uielements/othererror/othererror.component.ts");
+/* harmony import */ var _AdminPanel_uielements_mydetailserror_mydetailserror_component__WEBPACK_IMPORTED_MODULE_143__ = __webpack_require__(/*! ./AdminPanel/uielements/mydetailserror/mydetailserror.component */ "./src/app/AdminPanel/uielements/mydetailserror/mydetailserror.component.ts");
 
 
 
@@ -19932,6 +20909,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // Firebase modules
+
+
+
+
+
 
 
 
@@ -20136,7 +21118,12 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _Menu_myListings_recentlyitems_recentlyitems_component__WEBPACK_IMPORTED_MODULE_134__["RecentlyitemsComponent"],
             _Menu_myListings_recentlyitems_buyerrecentlydetail_buyerrecentlydetail_component__WEBPACK_IMPORTED_MODULE_135__["BuyerrecentlydetailComponent"],
             _Menu_myListings_recentlyitems_sellerrecentpropertydeatil_sellerrecentpropertydeatil_component__WEBPACK_IMPORTED_MODULE_136__["SellerrecentpropertydeatilComponent"],
-            _Menu_myMatches_select_agent_agentSubmission_component__WEBPACK_IMPORTED_MODULE_137__["AgentSubmissionComponent"]
+            _Menu_myMatches_select_agent_agentSubmission_component__WEBPACK_IMPORTED_MODULE_137__["AgentSubmissionComponent"],
+            _AdminPanel_uielements_seekerformerror_seekerformerror_component__WEBPACK_IMPORTED_MODULE_139__["SeekerformerrorComponent"],
+            _AdminPanel_uielements_ownerformerror_ownerformerror_component__WEBPACK_IMPORTED_MODULE_140__["OwnerformerrorComponent"],
+            _AdminPanel_uielements_agentformerror_agentformerror_component__WEBPACK_IMPORTED_MODULE_141__["AgentformerrorComponent"],
+            _AdminPanel_uielements_othererror_othererror_component__WEBPACK_IMPORTED_MODULE_142__["OthererrorComponent"],
+            _AdminPanel_uielements_mydetailserror_mydetailserror_component__WEBPACK_IMPORTED_MODULE_143__["MydetailserrorComponent"]
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -20451,6 +21438,89 @@ let CMSSERVICE = class CMSSERVICE {
         this.privacyPolicy = db.collection("PrivacyPolicy");
         this.TermsCondition = db.collection("TermsCondition");
     }
+    getSeekerPersonalError(formtype) {
+        return this.db
+            .collection("SeekerFormError")
+            .doc(formtype)
+            .ref.get();
+    }
+    updateSeekerPersonalError(formtype, formerror) {
+        return this.db
+            .collection("SeekerFormError")
+            .doc(formtype)
+            .set(Object.assign({}, formerror))
+            .then(function (data) {
+            console.log("privacy");
+        });
+    }
+    getOwnerlError(formtype) {
+        return this.db
+            .collection("OwnerFormError")
+            .doc(formtype)
+            .ref.get();
+    }
+    updateOwnerError(formtype, formerror) {
+        return this.db
+            .collection("OwnerFormError")
+            .doc(formtype)
+            .set(Object.assign({}, formerror))
+            .then(function (data) {
+            console.log("privacy");
+        });
+    }
+    getAgentError(formtype) {
+        return this.db
+            .collection("AgentFormError")
+            .doc(formtype)
+            .ref.get();
+    }
+    updateAgentError(formtype, formerror) {
+        return this.db
+            .collection("AgentFormError")
+            .doc(formtype)
+            .set(Object.assign({}, formerror))
+            .then(function (data) {
+            console.log("privacy");
+        });
+    }
+    getOtherError(formtype) {
+        return this.db
+            .collection("OtherError")
+            .doc(formtype)
+            .ref.get();
+    }
+    updateOtherError(formtype, formerror) {
+        return this.db
+            .collection("OtherError")
+            .doc(formtype)
+            .set(Object.assign({}, formerror))
+            .then(function (data) {
+            console.log("privacy");
+        });
+    }
+    getMyDetailError(formtype) {
+        return this.db
+            .collection("MyDetailsError")
+            .doc(formtype)
+            .ref.get();
+    }
+    updateMyDetailError(formtype, formerror) {
+        return this.db
+            .collection("MyDetailsError")
+            .doc(formtype)
+            .set(Object.assign({}, formerror))
+            .then(function (data) {
+            console.log("privacy");
+        });
+    }
+    getBlogSingle(uid, docid) {
+        return this.db
+            .collection("Blogs")
+            .doc(uid)
+            .collection("AllBlogs")
+            .doc(docid)
+            .ref.get();
+    }
     getSignupImages() {
         return this.db
             .collection("AgentSignUpImage")
@@ -20492,6 +21562,18 @@ let CMSSERVICE = class CMSSERVICE {
             .then(function (data) {
             console.log("Notification");
         });
+    }
+    updateBlog(uid, id, blog) {
+        return this.db
+            .collection("Blogs")
+            .doc(uid)
+            .collection("AllBlogs")
+            .doc(id)
+            .set(Object.assign({}, blog))
+            .then(function (data) {
+            console.log("Document successfully written!");
+        });
+        //return true;
     }
     updateFooter(uid, footer) {
         return this.db
