@@ -371,7 +371,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n  </div>\n</div>\n\n<app-home-matches *ngIf=\"appMatches\"></app-home-matches>\n\n<div class=\"slider slider-top\" *ngIf=\"!isLoggedIn\">\n  <img src=\"{{imageUrl}}\" alt=\"\" class=\"slider-image\">\n</div>\n\n<div class=\"home_content_container\" *ngIf=\"!isLoggedIn\">\n\n\n  <div class=\"radio-cn\">\n    <div class=\"custom-buttons\">\n      <p class=\"i-am heading-nestimate\">Please select if you are:</p>\n      <div class=\"upper-custom-button\">\n\n        <div class=\"custom-button-first\">\n          <label class=\"radio-container custom-text\">a home owner\n            <input type=\"radio\" name=\"home\" value=\"owner\" #owner [(ngModel)]=\"home\">\n            <span class=\"checkmark\"></span>\n          </label>\n        </div>\n\n      </div>\n\n      <div class=\"upper-custom-button mt-2\">\n\n        <div class=\"custom-button-first\">\n          <label class=\"radio-container custom-text\">a home seeker\n            <input type=\"radio\" name=\"home\" value=\"seeker\" #seeker [(ngModel)]=\"home\">\n            <span class=\"checkmark\"></span>\n          </label>\n\n        </div>\n      </div>\n      <div class=\"large-button mt-3\">\n\n        <div class=\"create-nestimate\" (click)=\"homeradio()\">\n          <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\">\n          <span class=\"text-create-nestimate mr-1\">Create your Nestimate\n\n            <img src=\"../../assets/Images/left-arrow.png\" class=\"color-right-arrow\">\n          </span>\n\n\n          <!-- <span class=\"greater-than-arrow paragraph-color mr-1\">&rarr;</span> -->\n\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div *ngIf=\"!isLoggedIn\">\n    <div class=\"image-over\">\n\n      <img src=\"{{secondImageUrl}}\" class=\"buyer-jpg\">\n    </div>\n    <div class=\"text-over-image-second\" id=\"boldText\">Introducing : a unique property platform</div>\n\n\n  </div>\n\n\n\n\n\n  <div class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n    <div class=\"title heading-nestimate-font\" id=\"boldText\">Start Your Home Journey Now</div>\n\n    <div class=\"steps-container\">\n\n      <div class=\"step\">\n        <img src=\"{{Step1Image }}\" class=\"step-mage\">\n\n        <p class=\"step-text \"><b class=\"steps-main-heading\" id=\"semiboldText\">Create your Nestimate</b><br>\n        </p>\n\n        <div class=\"slider-text\" id=\"semiboldText\">{{Step1TExt}}</div>\n        <hr class=\"line-below\">\n      </div>\n\n      <div class=\"step\">\n        <img src=\"{{Step2Image}}\" class=\"step-mage\">\n\n        <p class=\"step-text\">\n          <b class=\"steps-main-heading\" id=\"semiboldText\">Review Nestimate</b>\n        </p>\n\n        <div class=\"slider-text\" id=\"semiboldText\">{{Step2Text}}</div>\n\n        <hr class=\"line-below\">\n      </div>\n\n\n      <div class=\"step\">\n        <img src=\"{{step3Image}}\" class=\"step-mage\">\n\n        <p class=\"step-text\">\n          <b class=\"steps-main-heading\" id=\"semiboldText\">Express Interest</b>\n\n        </p>\n\n        <div class=\"slider-text\" id=\"semiboldText\">\n          {{step3Text}}</div>\n        <hr class=\"line-below\">\n\n      </div>\n    </div>\n  </div>\n\n\n\n\n</div>\n<div class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n\n  <div class=\"title heading-nestimate heading-nestimate-font\" id=\"boldTextColor\">Blogs</div>\n\n  <div class=\"heading-nestimate blog-top-heading\" id=\"boldTextColor\">Keep up to date with the latest property news</div>\n\n  <div class=\"blog-grid\">\n    <div *ngFor=\"let blog of homePageBlogs\">\n      <div class=\"grid-image\">\n        <img src=\"{{blog.BlogImage}}\" alt=\"\" class=\"blog-image\">\n      </div>\n\n      <div class=\"grid-text\">\n\n        <a href=\"{{blog.BlogLink}}\" class=\"blog-link-decoration\" id=\"semiboldTextColor\">\n\n          {{blog.TextBlog}}\n        </a>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"text-with-right-arrw\">\n    <div class=\"heading-nestimate blog-top-heading\">All property news\n      <img src=\"../../assets/Images/left-arrow.png\" class=\"color-right-arrow\">\n    </div>\n    <div class=\"image-right-arrow-container\">\n    </div>\n\n  </div>\n</div>\n\n\n<div class=\"cookies-policy\" *ngIf=\"cookie\">\n\n  <div class=\"cookies-policy-text\">\n\n\n    <div class=\"policy-content outputText\">\n      <div class=\"policy-content-layout\">\n        <div class=\"heading-cookies-content\">\n          <span class=\"policy-heading \">Cookie Policy</span>\n        </div>\n        <div class=\"cookies-content\">\n          <span class=\"policy-content\">We use cookies to provide you with a better service. Continue browsing if you are\n            happy with this, otherwise you can find out how to manage cookies here.</span>\n        </div>\n\n      </div>\n    </div>\n\n    <div class=\"cookies-button\">\n\n      <div class=\"top-button-cookies\" routerLink=\"/cookies\" style=\"color:var(--light-blue-color)\" id=\"boldText\">Manage\n        Settings</div>\n\n      <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\" id=\"boldText\">Allow all Cookies</div>\n\n    </div>\n  </div>\n\n</div>\n<!--Login Area-->\n<div class=\"Login-from-top\" *ngIf=\"loginTop\">\n  <div class=\"Login-area\" *ngIf=\"!SignUp\">\n    <div class=\"top-cross-button\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area\" id=\"boldText\">Login</h1>\n      </div>\n\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"  (keydown.enter)=\"applyFilter(userEmailLogin.value)\">\n          </mat-form-field>\n\n\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"applyFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section Remember-me-inline-text\">\n\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\" (click)=\"check(emails, passs)\">\n                Remember me\n              </mat-checkbox>\n\n              <span routerLink=\"/forgot-password\" id=\"boldText\" class=\"dark-color\" routerLink=\"/forgot-password\">Forgot Password ?</span>\n            </section>\n\n\n            <!-- id=\"boldText\" -->\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\" id=\"boldText\">Login</button>\n          </div>\n\n\n\n\n          <div id=\"semiboldText\" class=\"a-row a-spacing-top-medium a-size-small dark-color\">\n            By signing-in you agree to Nestimates's <a href=\"/#/terms\">Conditions of Use & Sale</a>. Please see our <a\n              href=\"/#/PrivacyPolicy\">Privacy Notice</a>.\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n                <hr class=\"lower-Line-login-logout-mobile\">\n                <span class=\"heading-nestimate signin-singup-text\">Log In</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n\n            <div class=\"dont-have-account\" > \n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n  <div class=\"Login-area signup-area\" *ngIf=\"SignUp\">\n    <div class=\"top-cross-button small-phone\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area dark-color\" id=\"boldText\">Sign Up</h1>\n      </div>\n      <div class=\"login-area-wrap\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Name</mat-label>\n            <input matInput placeholder=\"Name\" name=\"name\" [(ngModel)]=\"name\" #displayName (keydown.enter)=\"SignupFilter(displayName.value)\">\n          </mat-form-field>\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\" (keydown.enter)=\"SignupFilter(userEmailLogin.value)\">\n          </mat-form-field>\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"SignupFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n          <section class=\"example-section property-con-form dark-color\">\n            <mat-checkbox class=\"example-margin\" value=\"Email\" id=\"boldText\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"SMS\" id=\"boldText\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"Post\" id=\"boldText\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"All\" id=\"boldText\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n          </section>\n          <!-- <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">{{topLine}}</div>\n          <div for=\"text\" class=\"policy\" id=\"semiboldText\" class=\"dark-color\">{{secondLine}} </div> -->\n          <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">By clicking below to register, you confirm that you agree to our <a routerLink=\"/terms\">Terms & Conditions </a> and you have read and understood our <a routerLink=\"/PrivacyPolicy\">Privacy Policy </a></div>\n\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signUp(displayName.value,userEmailLogin.value,userPasswordLogin.value,type)\"\n              id=\"boldText\">Sign Up</button>\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              \n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n                <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n<div class=\"continue-form\" *ngIf=\"sellerOverlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/thumbsup.png\" class=\"nestimate-logo\">\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\">Thanks for registering!</p>\n    <p class=\"overlay-text\">{{notificationContent}}\n    </p>\n  </div>\n\n\n  <div class=\"continue-button\" (click)=\"getUserKnow()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n      Continue\n\n      <span class=\"arrow-text\"> &gt;</span>\n    </div>\n\n  </div>\n  </div>\n\n  <div class=\"password-pop\" *ngIf=\"passwordpop\">\n    <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n  </div>\n  \n  <div class=\"email-pop\" *ngIf=\"emailpop\">\n  \n    <app-email-pop (click)=\"emailpopclose()\"></app-email-pop>\n  </div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n  </div>\n</div>\n\n<app-home-matches *ngIf=\"appMatches\"></app-home-matches>\n\n<div class=\"slider slider-top\" *ngIf=\"!isLoggedIn\">\n  <img src=\"{{imageUrl}}\" alt=\"\" class=\"slider-image\">\n</div>\n\n<div class=\"home_content_container\" *ngIf=\"!isLoggedIn\">\n\n\n  <div class=\"radio-cn\">\n    <div class=\"custom-buttons\">\n      <p class=\"i-am heading-nestimate\">Please select if you are:</p>\n      <div class=\"upper-custom-button\">\n\n        <div class=\"custom-button-first\">\n          <label class=\"radio-container custom-text\">a home owner\n            <input type=\"radio\" name=\"home\" value=\"owner\" #owner [(ngModel)]=\"home\">\n            <span class=\"checkmark\"></span>\n          </label>\n        </div>\n\n      </div>\n\n      <div class=\"upper-custom-button mt-2\">\n\n        <div class=\"custom-button-first\">\n          <label class=\"radio-container custom-text\">a home seeker\n            <input type=\"radio\" name=\"home\" value=\"seeker\" #seeker [(ngModel)]=\"home\">\n            <span class=\"checkmark\"></span>\n          </label>\n\n        </div>\n      </div>\n      <div class=\"large-button mt-3\">\n\n        <div class=\"create-nestimate\" (click)=\"homeradio()\">\n          <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\">\n          <span class=\"text-create-nestimate mr-1\">Create your Nestimate\n\n            <img src=\"../../assets/Images/left-arrow.png\" class=\"color-right-arrow\">\n          </span>\n\n\n          <!-- <span class=\"greater-than-arrow paragraph-color mr-1\">&rarr;</span> -->\n\n        </div>\n      </div>\n    </div>\n  </div>\n\n  <div *ngIf=\"!isLoggedIn\">\n    <div class=\"image-over\">\n\n      <img src=\"{{secondImageUrl}}\" class=\"buyer-jpg\">\n    </div>\n    <div class=\"text-over-image-second\" id=\"boldText\">Introducing : a unique property platform</div>\n\n\n  </div>\n\n\n\n\n\n  <div class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n    <div class=\"title heading-nestimate-font\" id=\"boldText\">Start Your Home Journey Now</div>\n\n    <div class=\"steps-container\">\n\n      <div class=\"step\">\n        <img src=\"{{Step1Image }}\" class=\"step-mage\">\n\n        <p class=\"step-text \"><b class=\"steps-main-heading\" id=\"semiboldText\">Create your Nestimate</b><br>\n        </p>\n\n        <div class=\"slider-text\" id=\"semiboldText\">{{Step1TExt}}</div>\n        <hr class=\"line-below\">\n      </div>\n\n      <div class=\"step\">\n        <img src=\"{{Step2Image}}\" class=\"step-mage\">\n\n        <p class=\"step-text\">\n          <b class=\"steps-main-heading\" id=\"semiboldText\">Review Nestimate</b>\n        </p>\n\n        <div class=\"slider-text\" id=\"semiboldText\">{{Step2Text}}</div>\n\n        <hr class=\"line-below\">\n      </div>\n\n\n      <div class=\"step\">\n        <img src=\"{{step3Image}}\" class=\"step-mage\">\n\n        <p class=\"step-text\">\n          <b class=\"steps-main-heading\" id=\"semiboldText\">Express Interest</b>\n\n        </p>\n\n        <div class=\"slider-text\" id=\"semiboldText\">\n          {{step3Text}}</div>\n        <hr class=\"line-below\">\n\n      </div>\n    </div>\n  </div>\n\n\n\n\n</div>\n<div class=\"card-steps\" *ngIf=\"!isLoggedIn\">\n\n <div class=\"title heading-nestimate heading-nestimate-font\" id=\"boldTextColor\"></div> \n\n  <div class=\"heading-nestimate blog-top-heading\" id=\"boldTextColor\">Keep up to date with the latest property news</div>\n\n  <div class=\"blog-grid\">\n    <div *ngFor=\"let blog of homePageBlogs\">\n      <div class=\"grid-image\">\n        <img src=\"{{blog.BlogImage}}\" alt=\"\" class=\"blog-image\">\n      </div>\n\n      <div class=\"grid-text\">\n\n        <a href=\"{{blog.BlogLink}}\" class=\"blog-link-decoration\" id=\"semiboldTextColor\">\n\n          {{blog.TextBlog}}\n        </a>\n      </div>\n    </div>\n  </div>\n\n  <div class=\"text-with-right-arrw\">\n    <div class=\"heading-nestimate blog-top-heading\">All property news\n      <img src=\"../../assets/Images/left-arrow.png\" class=\"color-right-arrow\">\n    </div>\n    <div class=\"image-right-arrow-container\">\n    </div>\n\n  </div>\n</div>\n\n\n<div class=\"cookies-policy\" *ngIf=\"cookie\">\n\n  <div class=\"cookies-policy-text\">\n\n\n    <div class=\"policy-content outputText\">\n      <div class=\"policy-content-layout\">\n        <div class=\"heading-cookies-content\">\n          <span class=\"policy-heading \">Cookie Policy</span>\n        </div>\n        <div class=\"cookies-content\">\n          <span class=\"policy-content\">We use cookies to provide you with a better service. Continue browsing if you are\n            happy with this, otherwise you can find out how to manage cookies here.</span>\n        </div>\n\n      </div>\n    </div>\n\n    <div class=\"cookies-button\">\n\n      <div class=\"top-button-cookies\" routerLink=\"/cookies\" style=\"color:var(--light-blue-color)\" id=\"boldText\">Manage\n        Settings</div>\n\n      <div class=\"top-button-cookies lower-button\" (click)=\"closeCookie()\" id=\"boldText\">Allow all Cookies</div>\n\n    </div>\n  </div>\n\n</div>\n<!--Login Area-->\n<div class=\"Login-from-top\" *ngIf=\"loginTop\">\n  <div class=\"Login-area\" *ngIf=\"!SignUp\">\n    <div class=\"top-cross-button\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area\" id=\"boldText\">Login</h1>\n      </div>\n\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"  (keydown.enter)=\"applyFilter(userEmailLogin.value)\">\n          </mat-form-field>\n\n\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"applyFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section Remember-me-inline-text\">\n\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\" (click)=\"check(emails, passs)\">\n                Remember me\n              </mat-checkbox>\n\n              <span routerLink=\"/forgot-password\" id=\"boldText\" class=\"dark-color\" routerLink=\"/forgot-password\">Forgot Password ?</span>\n            </section>\n\n\n            <!-- id=\"boldText\" -->\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\" id=\"boldText\">Login</button>\n          </div>\n\n\n\n\n          <div id=\"semiboldText\" class=\"a-row a-spacing-top-medium a-size-small dark-color\">\n            By signing-in you agree to Nestimates's <a href=\"/#/terms\">Conditions of Use & Sale</a>. Please see our <a\n              href=\"/#/PrivacyPolicy\">Privacy Notice</a>.\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n                <hr class=\"lower-Line-login-logout-mobile\">\n                <span class=\"heading-nestimate signin-singup-text\">Log In</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n\n            <div class=\"dont-have-account\" > \n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n  <div class=\"Login-area signup-area\" *ngIf=\"SignUp\">\n    <div class=\"top-cross-button small-phone\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area dark-color\" id=\"boldText\">Sign Up</h1>\n      </div>\n      <div class=\"login-area-wrap\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Name</mat-label>\n            <input matInput placeholder=\"Name\" name=\"name\" [(ngModel)]=\"name\" #displayName (keydown.enter)=\"SignupFilter(displayName.value)\">\n          </mat-form-field>\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\" (keydown.enter)=\"SignupFilter(userEmailLogin.value)\">\n          </mat-form-field>\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"SignupFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n          <section class=\"example-section property-con-form dark-color\">\n            <mat-checkbox class=\"example-margin\" value=\"Email\" id=\"boldText\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"SMS\" id=\"boldText\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"Post\" id=\"boldText\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"All\" id=\"boldText\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n          </section>\n          <!-- <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">{{topLine}}</div>\n          <div for=\"text\" class=\"policy\" id=\"semiboldText\" class=\"dark-color\">{{secondLine}} </div> -->\n          <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">By clicking below to register, you confirm that you agree to our <a routerLink=\"/terms\">Terms & Conditions </a> and you have read and understood our <a routerLink=\"/PrivacyPolicy\">Privacy Policy </a></div>\n\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signUp(displayName.value,userEmailLogin.value,userPasswordLogin.value,type)\"\n              id=\"boldText\">Sign Up</button>\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              \n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n                <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n<div class=\"continue-form\" *ngIf=\"sellerOverlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/thumbsup.png\" class=\"nestimate-logo\">\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\">Thanks for registering!</p>\n    <p class=\"overlay-text\">{{notificationContent}}\n    </p>\n  </div>\n\n\n  <div class=\"continue-button\" (click)=\"getUserKnow()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n      Continue\n\n      <span class=\"arrow-text\"> &gt;</span>\n    </div>\n\n  </div>\n  </div>\n\n  <div class=\"password-pop\" *ngIf=\"passwordpop\">\n    <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n  </div>\n  \n  <div class=\"email-pop\" *ngIf=\"emailpop\">\n  \n    <app-email-pop (click)=\"emailpopclose()\"></app-email-pop>\n  </div>";
     /***/
   },
 
@@ -631,7 +631,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n      </div>\n</div>\n\n \n\n\n<div class=\"home_content_container\" >\n\n\n  <div class=\"slider\">\n    <img src=\"{{imageUrl}}\" alt=\"\"  class=\"slider-image\">\n     <div class=\"text-over-image\">{{TopImageText}}</div>\n    </div>\n\n\n<div class=\"radio-cn\" >\n  <div class=\"custom-buttons\">\n    <p class=\"i-am heading-nestimate\">Please select if you are:</p>\n    <div class=\"upper-custom-button\">\n    \n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home owner\n        <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    </div>\n  \n    </div>\n\n  <div class=\"upper-custom-button mt-2\">\n\n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home seeker\n        <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    \n    </div>\n  </div>\n      <div class=\"large-button mt-3\">\n      \n        <div class=\"create-nestimate\" (click)=\"homeradio(value)\">\n          <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\" >\n          <span class=\"text-create-nestimate mr-1\">Create your Nestimate\n          <img src=\"../../assets/Images/left-arrow.png\" class=\"color-right-arrow\">\n        </span>\n\n        </div>\n      </div>\n  </div>\n</div>\n\n<div >\n <div class=\"image-over\">\n\n   <img  src=\"{{secondImageUrl}}\" class=\"buyer-jpg\">\n </div>\n <div class=\"text-over-image-second\" id=\"boldText\">Introducing : a unique property platform</div>\n\n\n</div>\n  \n\n\n\n\n<div class=\"card-steps\" >\n  <div class=\"title heading-nestimate-font\" id=\"boldText\">Start Your Home Journey Now</div>\n\n    <div class=\"steps-container\">\n\n         <div class=\"step\">\n          <img src=\"{{Step1Image }}\" class=\"step-mage\">\n      \n          <p class=\"step-text \"><b class=\"steps-main-heading\" id=\"semiboldText\">Create your Nestimate</b><br> \n          </p>\n            \n            <div class=\"slider-text\" id=\"semiboldText\">{{Step1TExt}}</div>\n            <hr class=\"line-below\">\n         </div>\n       \n         <div class=\"step\">\n          <img src=\"{{Step2Image}}\" class=\"step-mage\">\n       \n          <p class=\"step-text\">\n            <b class=\"steps-main-heading\" id=\"semiboldText\">Review Nestimate</b>\n          </p>\n       \n            <div class=\"slider-text\" id=\"semiboldText\">{{Step2Text}}</div>\n      \n            <hr class=\"line-below\">\n    </div>\n\n\n         <div class=\"step\">\n          <img src=\"{{step3Image}}\" class=\"step-mage\">\n      \n          <p class=\"step-text\">\n            <b class=\"steps-main-heading\" id=\"semiboldText\">Express Interest</b>\n            \n          </p>\n            \n            <div class=\"slider-text\" id=\"semiboldText\">\n                               {{step3Text}}</div>\n                               <hr class=\"line-below\">\n         \n          </div>\n    </div>\n  </div>\n\n\n   \n  <div class=\"card-steps\" >\n\n    <div class=\"title heading-nestimate heading-nestimate-font\" id=\"boldTextColor\">Blogs</div>\n     \n    <div class=\"heading-nestimate blog-top-heading\" id=\"boldTextColor\">Keep up to date with the latest property news</div>\n  \n    <div class=\"blog-grid\">\n    <div *ngFor= \"let blog of homePageBlogs\"  >\n       <div class=\"grid-image\">\n        <img src=\"{{blog.BlogImage}}\" alt=\"\"  class=\"blog-image\">\n       </div>\n      \n       <div class=\"grid-text\">\n   \n          <a href=\"{{blog.BlogLink}}\" class=\"blog-link-decoration\" id=\"semiboldTextColor\">\n  \n            {{blog.TextBlog}}\n          </a>\n       </div>\n      </div>\n    </div>\n  \n    <div class=\"text-with-right-arrw\">\n      <div class=\"heading-nestimate blog-top-heading\">All property news\n        <img src=\"../../assets/Images/left-arrow.png\" class=\"color-right-arrow\">\n      </div>\n      <div class=\"image-right-arrow-container\">\n      </div>\n      \n      </div>\n  </div>\n\n<!--Login Area-->\n<div class=\"Login-from-top\" *ngIf=\"loginTop\">\n  <div class=\"Login-area\" *ngIf=\"!SignUp\">\n    <div class=\"top-cross-button\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area\" id=\"boldText\">Log In</h1>\n      </div>\n\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"  (keydown.enter)=\"applyFilter(userEmailLogin.value)\">\n          </mat-form-field>\n\n\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"applyFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section Remember-me-inline-text\">\n\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\" (click)=\"check(emails, passs)\">\n                Remember me\n              </mat-checkbox>\n\n              <span routerLink=\"/forgot-password\" id=\"boldText\" class=\"dark-color\" routerLink=\"/forgot-password\">Forgot Password ?</span>\n            </section>\n\n\n            <!-- id=\"boldText\" -->\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\" id=\"boldText\">Login</button>\n          </div>\n\n\n\n\n          <div id=\"semiboldText\" class=\"a-row a-spacing-top-medium a-size-small dark-color\">\n            By signing-in you agree to Nestimates's <a href=\"/#/terms\">Terms and condition of Use & Sale</a>. Please see our <a\n              href=\"/#/PrivacyPolicy\">Privacy Notice</a>.\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n                <hr class=\"lower-Line-login-logout-mobile\">\n                <span class=\"heading-nestimate signin-singup-text\">Log In</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n  <div class=\"Login-area signup-area\" *ngIf=\"SignUp\">\n    <div class=\"top-cross-button small-phone\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area dark-color\" id=\"boldText\">Sign Up</h1>\n      </div>\n      <div class=\"login-area-wrap\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Name</mat-label>\n            <input matInput placeholder=\"Name\" name=\"name\" [(ngModel)]=\"name\" #displayName (keydown.enter)=\"SignupFilter(displayName.value)\">\n          </mat-form-field>\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\" (keydown.enter)=\"SignupFilter(userEmailLogin.value)\">\n          </mat-form-field>\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"SignupFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n          <section class=\"example-section property-con-form dark-color\">\n            <mat-checkbox class=\"example-margin\" value=\"Email\" id=\"boldText\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"SMS\" id=\"boldText\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"Post\" id=\"boldText\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"All\" id=\"boldText\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n          </section>\n          <!-- <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">{{topLine}}</div>\n          <div for=\"text\" class=\"policy\" id=\"semiboldText\" class=\"dark-color\">{{secondLine}} </div> -->\n          <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">By clicking below to register, you confirm that you agree to our <a routerLink=\"/terms\">Terms & Conditions </a> and you have read and understood our <a routerLink=\"/PrivacyPolicy\">Privacy Policy </a></div>\n\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signUp(displayName.value,userEmailLogin.value,userPasswordLogin.value,type)\"\n              id=\"boldText\">Sign Up</button>\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n                <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Sign In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n<div class=\"continue-form\" *ngIf=\"sellerOverlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../assets/Images/thumbsup.png\" class=\"nestimate-logo\">\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\">Thanks for registering!</p>\n    <p class=\"overlay-text\">{{notificationContent}}\n    </p>\n  </div>\n\n\n  <div class=\"continue-button\" (click)=\"getUserKnow()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n      Continue\n\n      <span class=\"arrow-text\"> &gt;</span>\n    </div>\n\n  </div>\n  </div>\n\n\n  <div class=\"password-pop\" *ngIf=\"passwordpop\">\n    <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n  </div>\n  \n  <div class=\"email-pop\" *ngIf=\"emailpop\">\n  \n    <app-email-pop (click)=\"emailpopclose()\"></app-email-pop>\n  </div>\n\n\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n      </div>\n</div>\n\n \n\n\n<div class=\"home_content_container\" >\n\n\n  <div class=\"slider\">\n    <img src=\"{{imageUrl}}\" alt=\"\"  class=\"slider-image\">\n     <div class=\"text-over-image\">{{TopImageText}}</div>\n    </div>\n\n\n<div class=\"radio-cn\" >\n  <div class=\"custom-buttons\">\n    <p class=\"i-am heading-nestimate\">Please select if you are:</p>\n    <div class=\"upper-custom-button\">\n    \n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home owner\n        <input type=\"radio\" name=\"home\"    value=\"owner\" #owner [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    </div>\n  \n    </div>\n\n  <div class=\"upper-custom-button mt-2\">\n\n    <div class=\"custom-button-first\" >\n      <label class=\"radio-container custom-text\">a home seeker\n        <input type=\"radio\" name=\"home\"  value=\"seeker\" #seeker [(ngModel)]=\"home\">\n        <span class=\"checkmark\"></span>\n      </label>\n    \n    </div>\n  </div>\n      <div class=\"large-button mt-3\">\n      \n        <div class=\"create-nestimate\" (click)=\"homeradio(value)\">\n          <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\" >\n          <span class=\"text-create-nestimate mr-1\">Create your Nestimate\n          <img src=\"../../assets/Images/left-arrow.png\" class=\"color-right-arrow\">\n        </span>\n\n        </div>\n      </div>\n  </div>\n</div>\n\n<div >\n <div class=\"image-over\">\n\n   <img  src=\"{{secondImageUrl}}\" class=\"buyer-jpg\">\n </div>\n <div class=\"text-over-image-second\" id=\"boldText\">Introducing : a unique property platform</div>\n\n\n</div>\n  \n\n\n\n\n<div class=\"card-steps\" >\n  <div class=\"title heading-nestimate-font\" id=\"boldText\">Start Your Home Journey Now</div>\n\n    <div class=\"steps-container\">\n\n         <div class=\"step\">\n          <img src=\"{{Step1Image }}\" class=\"step-mage\">\n      \n          <p class=\"step-text \"><b class=\"steps-main-heading\" id=\"semiboldText\">Create your Nestimate</b><br> \n          </p>\n            \n            <div class=\"slider-text\" id=\"semiboldText\">{{Step1TExt}}</div>\n            <hr class=\"line-below\">\n         </div>\n       \n         <div class=\"step\">\n          <img src=\"{{Step2Image}}\" class=\"step-mage\">\n       \n          <p class=\"step-text\">\n            <b class=\"steps-main-heading\" id=\"semiboldText\">Review Nestimate</b>\n          </p>\n       \n            <div class=\"slider-text\" id=\"semiboldText\">{{Step2Text}}</div>\n      \n            <hr class=\"line-below\">\n    </div>\n\n\n         <div class=\"step\">\n          <img src=\"{{step3Image}}\" class=\"step-mage\">\n      \n          <p class=\"step-text\">\n            <b class=\"steps-main-heading\" id=\"semiboldText\">Express Interest</b>\n            \n          </p>\n            \n            <div class=\"slider-text\" id=\"semiboldText\">\n                               {{step3Text}}</div>\n                               <hr class=\"line-below\">\n         \n          </div>\n    </div>\n  </div>\n\n\n   \n  <div class=\"card-steps\" >\n\n  <div class=\"title heading-nestimate heading-nestimate-font\" id=\"boldTextColor\"></div>\n     \n    <div class=\"heading-nestimate blog-top-heading\" id=\"boldTextColor\">Keep up to date with the latest property news</div>\n  \n    <div class=\"blog-grid\">\n    <div *ngFor= \"let blog of homePageBlogs\"  >\n       <div class=\"grid-image\">\n        <img src=\"{{blog.BlogImage}}\" alt=\"\"  class=\"blog-image\">\n       </div>\n      \n       <div class=\"grid-text\">\n   \n          <a href=\"{{blog.BlogLink}}\" class=\"blog-link-decoration\" id=\"semiboldTextColor\">\n  \n            {{blog.TextBlog}}\n          </a>\n       </div>\n      </div>\n    </div>\n  \n    <div class=\"text-with-right-arrw\">\n      <div class=\"heading-nestimate blog-top-heading\">All property news\n        <img src=\"../../assets/Images/left-arrow.png\" class=\"color-right-arrow\">\n      </div>\n      <div class=\"image-right-arrow-container\">\n      </div>\n      \n      </div>\n  </div>\n\n<!--Login Area-->\n<div class=\"Login-from-top\" *ngIf=\"loginTop\">\n  <div class=\"Login-area\" *ngIf=\"!SignUp\">\n    <div class=\"top-cross-button\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area\" id=\"boldText\">Log In</h1>\n      </div>\n\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"  (keydown.enter)=\"applyFilter(userEmailLogin.value)\">\n          </mat-form-field>\n\n\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"applyFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section Remember-me-inline-text\">\n\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\" (click)=\"check(emails, passs)\">\n                Remember me\n              </mat-checkbox>\n\n              <span routerLink=\"/forgot-password\" id=\"boldText\" class=\"dark-color\" routerLink=\"/forgot-password\">Forgot Password ?</span>\n            </section>\n\n\n            <!-- id=\"boldText\" -->\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\" id=\"boldText\">Login</button>\n          </div>\n\n\n\n\n          <div id=\"semiboldText\" class=\"a-row a-spacing-top-medium a-size-small dark-color\">\n            By signing-in you agree to Nestimates's <a href=\"/#/terms\">Terms and condition of Use & Sale</a>. Please see our <a\n              href=\"/#/PrivacyPolicy\">Privacy Notice</a>.\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n                <hr class=\"lower-Line-login-logout-mobile\">\n                <span class=\"heading-nestimate signin-singup-text\">Log In</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n  <div class=\"Login-area signup-area\" *ngIf=\"SignUp\">\n    <div class=\"top-cross-button small-phone\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area dark-color\" id=\"boldText\">Sign Up</h1>\n      </div>\n      <div class=\"login-area-wrap\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Name</mat-label>\n            <input matInput placeholder=\"Name\" name=\"name\" [(ngModel)]=\"name\" #displayName (keydown.enter)=\"SignupFilter(displayName.value)\">\n          </mat-form-field>\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\" (keydown.enter)=\"SignupFilter(userEmailLogin.value)\">\n          </mat-form-field>\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"SignupFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n          <section class=\"example-section property-con-form dark-color\">\n            <mat-checkbox class=\"example-margin\" value=\"Email\" id=\"boldText\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"SMS\" id=\"boldText\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"Post\" id=\"boldText\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"All\" id=\"boldText\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n          </section>\n          <!-- <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">{{topLine}}</div>\n          <div for=\"text\" class=\"policy\" id=\"semiboldText\" class=\"dark-color\">{{secondLine}} </div> -->\n          <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">By clicking below to register, you confirm that you agree to our <a routerLink=\"/terms\">Terms & Conditions </a> and you have read and understood our <a routerLink=\"/PrivacyPolicy\">Privacy Policy </a></div>\n\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signUp(displayName.value,userEmailLogin.value,userPasswordLogin.value,type)\"\n              id=\"boldText\">Sign Up</button>\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n                <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Sign In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n<div class=\"continue-form\" *ngIf=\"sellerOverlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../assets/Images/thumbsup.png\" class=\"nestimate-logo\">\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\">Thanks for registering!</p>\n    <p class=\"overlay-text\">{{notificationContent}}\n    </p>\n  </div>\n\n\n  <div class=\"continue-button\" (click)=\"getUserKnow()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n      Continue\n\n      <span class=\"arrow-text\"> &gt;</span>\n    </div>\n\n  </div>\n  </div>\n\n\n  <div class=\"password-pop\" *ngIf=\"passwordpop\">\n    <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n  </div>\n  \n  <div class=\"email-pop\" *ngIf=\"emailpop\">\n  \n    <app-email-pop (click)=\"emailpopclose()\"></app-email-pop>\n  </div>\n\n\n";
     /***/
   },
 
@@ -1091,7 +1091,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n  </div>\n</div>\n\n\n\n\n<div class=\"main-my-nestimate-container\">\n  <div class=\"no-property-Found\"  *ngIf=\"buyerProperty.length == '0'  && sellerConfirmed.length == '0'\" id=\"boldText\">\n    No Action Needed\n   </div>\n\n  <!--Seller Requirement-->\n  <!-- Seller Matches  with Property Buyer-->\n  <div class=\"result-nestimate-contianer\" *ngFor=\"let property of buyerProperty\">\n    <!--Expressed Buyer Properties-->\n\n  \n    <div class=\"check-condition\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <div class=\"check-confirm\" *ngIf=\"property.detail.matchStatus == 'confirm_interest'\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.BuyerDetails.PropertyType}} at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue expressed\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.BuyerDetails.MinAmount}} -\n                  &pound;{{property.detail.BuyerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button expressed-matches\" >\n            <div class=\"blue-button\" (click)=\"sellerValue(property,property.propertyId,true)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n         \n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n\n    <!--Not Expressed Buyer Properties-->\n    <div class=\"check-condition\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <div class=\"check-confirm\" *ngIf=\"property.detail.matchStatus == 'confirm_interest'\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.BuyerDetails.PropertyType}} at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.BuyerDetails.MinAmount}}-\n                  &pound;{{property.detail.BuyerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n            <div class=\"blue-button\" (click)=\"sellerValue(property,property.propertyId,expressed)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n\n\n\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n  <!--Buyer Matches-->\n\n\n  <div class=\"result-nestimate-contianer\" *ngFor=\"let property of sellerConfirmed\">\n\n    <div class=\"check-condition\" *ngIf=\"checkExpressForValue(property.propertyId) && property.detail.matchStatus == 'confirm_interest'\">\n      <div class=\"check-confirm\" >\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.SellerDetails.PropertyType}} at\n            {{property.detail.SellerDetails.Lookingpostcode}}\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue expressed\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\" >Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n      \n         \n          </div>\n          <div class=\"right-side-button expressed expressed-matches\">\n            <div class=\"blue-button\"  (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n        </div>\n        </div>\n      </div>\n\n    </div>\n\n\n    <div class=\"check-condition\" *ngIf=\"property.detail.matchStatus == 'confirmed'\">\n      <div class=\"check-confirm\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.SellerDetails.PropertyType}} at\n            {{property.detail.SellerDetails.Lookingpostcode}} confirmed\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} test3\n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n     \n    <div class=\"blue-button\" (click)=\"printvlaue(property)\" (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n            \n          </div>\n        </div>\n      </div>\n  \n    </div>\n\n    <div class=\"check-condition\" *ngIf=\"!checkExpressForValue(property.propertyId) && property.detail.matchStatus == 'confirm_interest'\">\n      <div class=\"check-confirm\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.SellerDetails.PropertyType}} at\n            {{property.detail.SellerDetails.Lookingpostcode}} \n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Desired Price:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Desired Rent:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\"  (click)=\"printvlaue(property.detail.SellerPropetyId)\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n            <div class=\"blue-button\"  (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n          </div>\n        </div>\n      </div>\n  \n    </div>\n  </div>\n\n\n  \n<!-- \n  <div class=\"result-nestimate-contianer test1\" *ngFor=\"let property of sellerProperty\">\n   \n  </div>\n\n  <div class=\"result-nestimate-contianer test2\" *ngFor=\"let property of sellerConfirmed\">\n  \n  </div>  -->\n\n\n\n\n\n  </div>\n\n\n\n\n\n\n\n  ";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n  </div>\n</div>\n\n\n\n\n<div class=\"main-my-nestimate-container\">\n  <div class=\"no-property-Found\"  *ngIf=\"buyerProperty.length == '0'  && sellerConfirmed.length == '0'\" id=\"boldText\">\n    No Action Needed\n   </div>\n\n  <!--Seller Requirement-->\n  <!-- Seller Matches  with Property Buyer-->\n  <div class=\"result-nestimate-contianer\" *ngFor=\"let property of buyerProperty\">\n    <!--Expressed Buyer Properties-->\n\n  \n    <div class=\"check-condition\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <div class=\"check-confirm\" *ngIf=\"property.detail.matchStatus == 'confirm_interest'\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.BuyerDetails.PropertyType}} at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue expressed\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.BuyerDetails.MinAmount}} -\n                  &pound;{{property.detail.BuyerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button expressed-matches\" >\n            <div class=\"blue-button\" (click)=\"sellerValue(property,property.propertyId,true)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n         \n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n\n    <!--Not Expressed Buyer Properties-->\n    <div class=\"check-condition\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <div class=\"check-confirm\" *ngIf=\"property.detail.matchStatus == 'confirm_interest'\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.BuyerDetails.PropertyType}} at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.BuyerDetails.MinAmount}}-\n                  &pound;{{property.detail.BuyerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n            <div class=\"blue-button\" (click)=\"sellerValue(property,property.propertyId,expressed)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n\n\n\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n  <!--Buyer Matches-->\n\n\n  <div class=\"result-nestimate-contianer\" *ngFor=\"let property of sellerConfirmed\">\n\n    <div class=\"check-condition\" *ngIf=\"checkExpressForValue(property.propertyId) && property.detail.matchStatus == 'confirm_interest'\">\n      <div class=\"check-confirm\" >\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.SellerDetails.PropertyType}} at\n            {{property.detail.SellerDetails.Lookingpostcode}}\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue expressed\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\" >Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n      \n         \n          </div>\n          <div class=\"right-side-button expressed expressed-matches\">\n            <div class=\"blue-button\"  (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n        </div>\n        </div>\n      </div>\n\n    </div>\n\n\n    <div class=\"check-condition\" *ngIf=\"property.detail.matchStatus == 'confirmed'\">\n      <div class=\"check-confirm\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.SellerDetails.PropertyType}} at\n            {{property.detail.SellerDetails.Lookingpostcode}} confirmed\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n     \n    <div class=\"blue-button\" (click)=\"printvlaue(property)\" (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n            \n          </div>\n        </div>\n      </div>\n  \n    </div>\n\n    <div class=\"check-condition\" *ngIf=\"!checkExpressForValue(property.propertyId) && property.detail.matchStatus == 'confirm_interest'\">\n      <div class=\"check-confirm\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">{{property.detail.SellerDetails.PropertyType}} at\n            {{property.detail.SellerDetails.Lookingpostcode}} \n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Desired Price:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Desired Rent:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\"  (click)=\"printvlaue(property.detail.SellerPropetyId)\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n            <div class=\"blue-button\"  (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n          </div>\n        </div>\n      </div>\n  \n    </div>\n  </div>\n\n\n  \n<!-- \n  <div class=\"result-nestimate-contianer test1\" *ngFor=\"let property of sellerProperty\">\n   \n  </div>\n\n  <div class=\"result-nestimate-contianer test2\" *ngFor=\"let property of sellerConfirmed\">\n  \n  </div>  -->\n\n\n\n\n\n  </div>\n\n\n\n\n\n\n\n  ";
     /***/
   },
 
@@ -1231,7 +1231,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n      </div>\n</div>\n\n\n\n\n<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\n  <div class=\"login-button-main\">\n    <p class=\"Login-buton-text\">Log In</p>\n  </div>\n</div>\n\n\n<div class=\"mobile-wrapper desktop-menu\">\n  <div class=\"mobile-container\" id=\"header-main\">\n    <div class=\"content\">\n      <nav *ngIf=\"!agentCustomer\" class=\"Desktop-menu\">\n        <div class=\"main-navigation-bar\">\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" (click)=\"navigateHome()\" />\n          </div>\n          <div class=\"register-free-text\" id=\"boldText\" *ngIf=\"!isLoggedIn &&   !hideRegister\">Register Free!</div>\n          <div class=\"register-free-text\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\"> </div>\n          <div class=\"welcome-text\" id=\"boldText\" *ngIf=\"isLoggedIn\">Hello, {{userName}}\n            <img src=\"../../../assets/Images/left-arrow (1).png\" class=\"down-arrow\" (click)=\"openMenu()\" *ngIf=\"open\">\n            <img src=\"../../../assets/Images/left-arrow (1).png\" class=\"down-arrow\" *ngIf=\"!open\" (click)=\"closeMenu()\">\n            <div class=\"notification-upper\" *ngIf=\"isLoggedIn && bellShow\">\n              <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size new\" *ngIf=\"!bellicontwo\"\n                (click)=\"bellone()\">\n              <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size\" *ngIf=\"bellicontwo\"\n                (click)=\"belltwo()\">\n              <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\">{{notifications}}</span>\n            </div>\n          </div>\n          <div class=\"plus-icon\" *ngIf=\"isLoggedIn && !formPage\">\n            <img src=\"../../../assets/Images/home.png\" class=\"icon-size\" (click)=\"navigateHome()\">\n          </div>\n          <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && !hideRegister\" (click)=\"showLoginPopup()\">\n            Login</div>\n          <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">\n            Login as Agent</div>\n          <div class=\"create-nestimate\" id=\"boldText\" *ngIf=\"isLoggedIn && formPage\" routerLink=\"/homenew\">Create New\n            Netimate</div>\n        </div>\n      </nav>\n      <nav *ngIf=\"agentCustomer\" class=\"Desktop-menu\">\n        <div class=\"main-navigation-bar agent-navigation-bar\">\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n          </div>\n          <div id=\"boldText\" *ngIf=\"isLoggedIn\" class=\"logout-text\" (click)=\"authService.SignOut()\">Logout</div>\n          <img src=\"../../../assets/Images/menu.png\" class=\"menu-image\" *ngIf=\"MobileOpenMenu\"\n            (click)=\"closeMobileMenu()\">\n          <img src=\"../../../assets/Images/menu.png\" class=\"menu-image\" *ngIf=\"!MobileOpenMenu\"\n            (click)=\"OpenMobileMenu()\">\n        </div>\n      </nav>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n\n<div class=\"menu-items\" *ngIf=\"menuItem\">\n  <div class=\"menu-items-content\" (click)=\"manageMyNestimate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/documents.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Manage My Nestimates\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"profileNestimate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/identity-card.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Details\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"favorate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/star.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Favourites\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"recently()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/time-outline.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Recently Viewed\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"authService.SignOut()\" (click)=\"Itemmenu()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/log-out.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Logout\n    </div>\n  </div>\n</div>\n\n\n<div class=\"menu-items Mobile-menu\" *ngIf=\"MobileOpenMenu\">\n  <div class=\"menu-items-content\" (click)=\"leads()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/documents.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Leads\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"Profile()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/identity-card.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Details\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"Archieve()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/archive.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Archive\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"authService.SignOut()\" (click)=\"Itemmenu()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/log-out.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Logout\n    </div>\n  </div>\n</div>\n\n\n\n\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\n</div>\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\n\n  <div class=\"Login-area\" *ngIf=\"signin\">\n    <div class=\"main-area-field\">\n      <div class=\"login-heading-cross\">\n        <div class=\"wrap-Login-area\">\n          <h1 class=\"heading-login-area\">Login</h1>\n        </div>\n        <div class=\"close-popup\">\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross-Login\" (click)=\"newclose()\">\n        </div>\n      </div>\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n          </div>\n\n          <div class=\"password-field-container\">\n\n            <input matInput [type]=\"hide ? 'password' : 'text'\" class=\"form-control custom-field\" name=\"passs\"\n              #userPasswordLogin [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n\n          </div>\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section\">\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\">\n                Remember me\n              </mat-checkbox>\n\n\n\n            </section>\n\n            <section class=\"example-section\">\n              <div class=\"show-password heading-nestimate\" (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">Show Password?</div>\n            </section>\n\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          \n          <button mat-raised-button color=\"primary\" class=\"login-button\" (click)=\"UserLogin(emails,passs)\" *ngIf=\"UserCanLogin\">Login</button>\n          <button mat-raised-button color=\"primary\" class=\"login-button\" (click)=\"signIn(emails,passs)\" *ngIf=\"!UserCanLogin\">Login</button>\n\n\n          <div class=\"forgot-passwords heading-nestimate\">\n            Forgot Password ?\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <span class=\"heading-nestimate\">Log In</span>\n            </div>\n            <div class=\"google-login\" (click)=\"Googlelogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"facebook-login\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\">Don't have an account? <span class=\"sign-up-link\" (click)=\"userSignup()\">Sign\n                  Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n  <div class=\"Login-area signup-area\" *ngIf=\"!signin\">\n    <div class=\"main-area-field\">\n      <div class=\"login-heading-cross\">\n        <div class=\"wrap-Login-area\">\n          <h1 class=\"heading-login-area\">Sign Up</h1>\n        </div>\n        <div class=\"close-popup\">\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross-Login\" (click)=\"newclose()\">\n        </div>\n      </div>\n      <div class=\"login-area-wrap\">\n        <div class=\"fields-container\">\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\" [(ngModel)]=\"name\"\n              #displayName>\n          </div>\n\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n\n          </div>\n\n\n          <div class=\"password-field-container\">\n\n            <input matInput [type]=\"hide ? 'password' : 'text'\" class=\"form-control custom-field\" name=\"passs\"\n              #userPasswordLogin [(ngModel)]=\"passs\" placeholder=\"Enter Password\" pattern='(?=^.{8,}$)((?=.*\\d)|(?=.*\\W+))(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$'>\n            <section class=\"example-section\" style=\"margin-top: 10px;\">\n              <div class=\"show-password heading-nestimate\" (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">Show Password?</div>\n            </section>\n          </div>\n\n\n          <button mat-raised-button color=\"primary\" class=\"login-button\"\n            (click)=\"signUp(name,emails,passs,type)\">Signup</button>\n\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <span class=\"heading-nestimate\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"Googlelogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"facebook-login\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"userLogin()\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n\n\n\n<div *ngIf=\"notificationoverlay\" class=\"notification-overlay-main\">\n  <div class=\"main-grid-notifucation\">\n\n    <div class=\"heading-notofication\" id=\"boldText\" *ngIf=\"confirmInterests.length > 0\">New</div>\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterests\">\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n\n\n\n\n      </div>\n\n\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n\n\n\n\n      </div>\n\n\n\n\n\n\n\n\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A seller expressed interest on your Nestimate.<br>Click to Review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Select_Agent' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed as a Agent.<br>Click to review<br></div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n\n\n      <!--Earlier-->\n\n\n\n\n    </div>\n\n\n    <div class=\"heading-notofication\" id=\"boldText\" *ngIf=\"confirmNotitfication.length > 0\">Earlier</div>\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmNotitfication\">\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded()\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n\n\n\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded()\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed'  &&  confirmInterest.Detail.viewed != null\"\n        (click)=\"actionNeeded()\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity'  &&  confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded()\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded()\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\"> A seller expressed interest on your Nestimate.<br>Click to Review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Select_Agent'  &&  confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded()\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed as a Agent.<br>Click to review<br> </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n</div>\n\n\n\n\n\n\n<!--Login Area-->\n<div class=\"Login-from-top\" *ngIf=\"loginTop\">\n  <div class=\"Login-area\" *ngIf=\"!SignUp\">\n    <div class=\"top-cross-button\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area\" id=\"boldText\">Login</h1>\n      </div>\n\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" name=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"\n              (keydown.enter)=\"applyFilter(emails.value)\">\n          </mat-form-field>\n\n\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"applyFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}\n            </mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section Remember-me-inline-text\">\n\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\" (click)=\"check(emails, passs)\">\n                Remember me\n              </mat-checkbox>\n\n              <span routerLink=\"/forgot-password\" id=\"boldText\" class=\"dark-color\" (click)=\"forgot()\">Forgot Password\n                ?</span>\n            </section>\n\n\n            <!-- id=\"boldText\" -->\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\" id=\"boldText\">Login</button>\n          </div>\n\n\n\n\n          <div id=\"semiboldText\" class=\"a-row a-spacing-top-medium a-size-small dark-color\">\n            By signing-in you agree to Nestimates's <a (click)=\"terms()\">Terms and condition of Use & Sale</a>. Please see our <a\n              (click)=\"privacy()\">Privacy Notice</a>.\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n              <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Log In</span>\n\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n  <div class=\"Login-area signup-area\" *ngIf=\"SignUp\">\n    <div class=\"top-cross-button small-phone\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area dark-color\" id=\"boldText\">Sign Up</h1>\n      </div>\n\n\n      <div class=\"login-area-wrap\">\n\n        <div class=\"fields-container\">\n\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Name</mat-label>\n            <input matInput placeholder=\"Name\" name=\"name\" [(ngModel)]=\"name\" #displayName\n              (keydown.enter)=\"SignupFilter(displayName .value)\">\n          </mat-form-field>\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"\n              (keydown.enter)=\"SignupFilter(userEmailLogin.value)\">\n          </mat-form-field>\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"SignupFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}\n            </mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n          <section class=\"example-section property-con-form dark-color\">\n\n            <mat-checkbox class=\"example-margin\" value=\"Email\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"SMS\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"Post\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"All\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n\n          </section>\n          <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">By clicking below to register, you confirm that you agree\n            to our <a (click)=\"terms()\">Terms & Conditions </a> and you have read and understood our <a\n              (click)=\"privacy()\">Privacy Policy </a></div>\n          <!-- <div for=\"text\" class=\"policy\" id=\"semiboldText\" class=\"dark-color\">{{secondLine}} </div> -->\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signUp(displayName.value,userEmailLogin.value,userPasswordLogin.value,type)\" id=\"boldText\">Sign\n              Up</button>\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n              <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n\n    </div>\n  </div>\n</div>\n\n\n\n<!--OverLay-->\n<div class=\"continue-form\" *ngIf=\"overlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\" id=\"boldText\">Thanks for registering!</p>\n    <p class=\"overlay-text\" id=\"boldText\">{{notificationContent}}</p>\n  </div>\n  <div class=\"continue-button\" (click)=\"continueClose()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n      Continue\n\n      <span class=\"arrow-text\"> &gt;</span>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n\n\n<!--User Menu Bar-->\n<div class=\"mobile-Menu\" id=\"not-login-mobile-menu\" *ngIf=\"!hideRegister\">\n\n  <div class=\"menu-bar-icon\">\n    <!--Agent Menu -->\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image\"\n      *ngIf=\"MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"closeMobileMenu()\">\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"!MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"OpenMobileMenu()\">\n    <!--User Menu -->\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image\" *ngIf=\"isLoggedIn && open &&  !hideRegister\"\n      (click)=\"openMenu()\">\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"isLoggedIn && !open &&  !hideRegister\" (click)=\"closeMenu()\">\n  </div>\n\n  <!--User Home Click-->\n  <div class=\"menu-bar-icon\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"../../../assets/Images/home.png\" class=\"icon-size\" routerLink=\"/homenew\" *ngIf=\"isLoggedIn\">\n  </div>\n  <!--User Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"!isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav not-loggen-in\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n  <!--User Notification Icon-->\n  <div class=\"notification-upper\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <div *ngIf=\"isLoggedIn && bellShow\">\n      <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size new\" *ngIf=\"!bellicontwo\"\n        (click)=\"bellone()\">\n      <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size\" *ngIf=\"bellicontwo\" (click)=\"belltwo()\">\n      <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\" (click)=\"bellone()\">{{notifications}}</span>\n    </div>\n  </div>\n  <!--User Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" (click)=\"showLoginPopup()\" *ngIf=\"!isLoggedIn && !hideRegister\">Login</div>\n  <!--Agent Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">Login\n  </div>\n\n  <!--Logout-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn\">\n    <img src=\"../../../assets/Images/log-out.png\" class=\"log-out-logo\" (click)=\"authService.SignOut()\" />\n  </div>\n\n\n\n\n\n</div>\n\n\n\n\n<!--Agent Menu Bar-->\n<div class=\"mobile-Menu agent-menu\" id=\"not-login-mobile-menu\" *ngIf=\"hideRegister\">\n\n  <div class=\"menu-bar-icon\">\n    <!--Agent Menu -->\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image\"\n      *ngIf=\"MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"closeMobileMenu()\">\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"!MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"OpenMobileMenu()\">\n    <!--User Menu -->\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image\" *ngIf=\"isLoggedIn && open &&  !hideRegister\"\n      (click)=\"openMenu()\">\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"isLoggedIn && !open &&  !hideRegister\" (click)=\"closeMenu()\">\n  </div>\n\n\n  <!--User Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"!isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav not-loggen-in\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" (click)=\"showLoginPopup()\" *ngIf=\"!isLoggedIn && !hideRegister\">Login</div>\n  <!--Agent Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">Login\n  </div>\n\n  <!--Logout-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn\">\n    <img src=\"../../../assets/Images/log-out.png\" class=\"log-out-logo\" (click)=\"authService.SignOut()\" />\n  </div>\n\n\n\n\n\n</div>\n\n\n\n\n<div class=\"password-pop\" *ngIf=\"passwordpop\">\n  <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n</div>\n\n<div class=\"email-pop\" *ngIf=\"emailpop\">\n\n  <app-email-pop (click)=\"emailpopclose()\"></app-email-pop>\n</div>\n\n\n<div class=\"outside-click\" *ngIf=\"outside\" (click)=\"closealloutside()\"></div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n      </div>\n</div>\n\n\n\n\n<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\n  <div class=\"login-button-main\">\n    <p class=\"Login-buton-text\">Log In</p>\n  </div>\n</div>\n\n\n<div class=\"mobile-wrapper desktop-menu\">\n  <div class=\"mobile-container\" id=\"header-main\">\n    <div class=\"content\">\n      <nav *ngIf=\"!agentCustomer\" class=\"Desktop-menu\">\n        <div class=\"main-navigation-bar\">\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" (click)=\"navigateHome()\" />\n          </div>\n          <div class=\"register-free-text\" id=\"boldText\" *ngIf=\"!isLoggedIn &&   !hideRegister\">Register Free!</div>\n          <div class=\"register-free-text\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\"> </div>\n          <div class=\"welcome-text\" id=\"boldText\" *ngIf=\"isLoggedIn\">Hello, {{userName}}\n            <img src=\"../../../assets/Images/left-arrow (1).png\" class=\"down-arrow\" (click)=\"openMenu()\" *ngIf=\"open\">\n            <img src=\"../../../assets/Images/left-arrow (1).png\" class=\"down-arrow\" *ngIf=\"!open\" (click)=\"closeMenu()\">\n            <div class=\"notification-upper\" *ngIf=\"isLoggedIn && bellShow\">\n              <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size new\" *ngIf=\"!bellicontwo\"\n                (click)=\"bellone()\">\n              <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size\" *ngIf=\"bellicontwo\"\n                (click)=\"belltwo()\">\n              <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\">{{notifications}}</span>\n            </div>\n          </div>\n          <div class=\"plus-icon\" *ngIf=\"isLoggedIn && !formPage\">\n            <img src=\"../../../assets/Images/home.png\" class=\"icon-size\" (click)=\"navigateHome()\">\n          </div>\n          <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && !hideRegister\" (click)=\"showLoginPopup()\">\n            Login</div>\n          <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">\n            Login as Agent</div>\n          <div class=\"create-nestimate\" id=\"boldText\" *ngIf=\"isLoggedIn && formPage\" routerLink=\"/homenew\">Create New\n            Netimate</div>\n        </div>\n      </nav>\n      <nav *ngIf=\"agentCustomer\" class=\"Desktop-menu\">\n        <div class=\"main-navigation-bar agent-navigation-bar\">\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n          </div>\n          <div id=\"boldText\" *ngIf=\"isLoggedIn\" class=\"logout-text\" (click)=\"authService.SignOut()\">Logout</div>\n          <img src=\"../../../assets/Images/menu.png\" class=\"menu-image\" *ngIf=\"MobileOpenMenu\"\n            (click)=\"closeMobileMenu()\">\n          <img src=\"../../../assets/Images/menu.png\" class=\"menu-image\" *ngIf=\"!MobileOpenMenu\"\n            (click)=\"OpenMobileMenu()\">\n        </div>\n      </nav>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n\n<div class=\"menu-items\" *ngIf=\"menuItem\">\n  <div class=\"menu-items-content\" (click)=\"manageMyNestimate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/documents.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Manage My Nestimates\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"profileNestimate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/identity-card.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Details\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"favorate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/star.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Favourites\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"recently()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/time-outline.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Recently Viewed\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"authService.SignOut()\" (click)=\"Itemmenu()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/log-out.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Logout\n    </div>\n  </div>\n</div>\n\n\n<div class=\"menu-items Mobile-menu\" *ngIf=\"MobileOpenMenu\">\n  <div class=\"menu-items-content\" (click)=\"leads()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/documents.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Leads\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"Profile()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/identity-card.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Details\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"Archieve()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/archive.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Archive\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"authService.SignOut()\" (click)=\"Itemmenu()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/log-out.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Logout\n    </div>\n  </div>\n</div>\n\n\n\n\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\n</div>\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\n\n  <div class=\"Login-area\" *ngIf=\"signin\">\n    <div class=\"main-area-field\">\n      <div class=\"login-heading-cross\">\n        <div class=\"wrap-Login-area\">\n          <h1 class=\"heading-login-area\">Login</h1>\n        </div>\n        <div class=\"close-popup\">\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross-Login\" (click)=\"newclose()\">\n        </div>\n      </div>\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n          </div>\n\n          <div class=\"password-field-container\">\n\n            <input matInput [type]=\"hide ? 'password' : 'text'\" class=\"form-control custom-field\" name=\"passs\"\n              #userPasswordLogin [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n\n          </div>\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section\">\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\">\n                Remember me\n              </mat-checkbox>\n\n\n\n            </section>\n\n            <section class=\"example-section\">\n              <div class=\"show-password heading-nestimate\" (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">Show Password?</div>\n            </section>\n\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          \n          <button mat-raised-button color=\"primary\" class=\"login-button\" (click)=\"UserLogin(emails,passs)\" *ngIf=\"UserCanLogin\">Login</button>\n          <button mat-raised-button color=\"primary\" class=\"login-button\" (click)=\"signIn(emails,passs)\" *ngIf=\"!UserCanLogin\">Login</button>\n\n\n          <div class=\"forgot-passwords heading-nestimate\">\n            Forgot Password ?\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <span class=\"heading-nestimate\">Log In</span>\n            </div>\n            <div class=\"google-login\" (click)=\"Googlelogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"facebook-login\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\">Don't have an account? <span class=\"sign-up-link\" (click)=\"userSignup()\">Sign\n                  Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n  <div class=\"Login-area signup-area\" *ngIf=\"!signin\">\n    <div class=\"main-area-field\">\n      <div class=\"login-heading-cross\">\n        <div class=\"wrap-Login-area\">\n          <h1 class=\"heading-login-area\">Sign Up</h1>\n        </div>\n        <div class=\"close-popup\">\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross-Login\" (click)=\"newclose()\">\n        </div>\n      </div>\n      <div class=\"login-area-wrap\">\n        <div class=\"fields-container\">\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\" [(ngModel)]=\"name\"\n              #displayName>\n          </div>\n\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n\n          </div>\n\n\n          <div class=\"password-field-container\">\n\n            <input matInput [type]=\"hide ? 'password' : 'text'\" class=\"form-control custom-field\" name=\"passs\"\n              #userPasswordLogin [(ngModel)]=\"passs\" placeholder=\"Enter Password\" pattern='(?=^.{8,}$)((?=.*\\d)|(?=.*\\W+))(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$'>\n            <section class=\"example-section\" style=\"margin-top: 10px;\">\n              <div class=\"show-password heading-nestimate\" (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">Show Password?</div>\n            </section>\n          </div>\n\n\n          <button mat-raised-button color=\"primary\" class=\"login-button\"\n            (click)=\"signUp(name,emails,passs,type)\">Signup</button>\n\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <span class=\"heading-nestimate\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"Googlelogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"facebook-login\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"userLogin()\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n\n\n\n<div *ngIf=\"notificationoverlay\" class=\"notification-overlay-main\">\n  <div class=\"main-grid-notifucation\">\n\n    <div class=\"heading-notofication\" id=\"boldText\" *ngIf=\"confirmInterests.length > 0\">New</div>\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterests\">\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n\n\n\n\n      </div>\n\n\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n\n\n\n\n      </div>\n\n\n\n\n\n\n\n\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A seller expressed interest on your Nestimate.<br>Click to Review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Select_Agent' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed as a Agent.<br>Click to review<br></div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n\n\n      <!--Earlier-->\n\n\n\n\n    </div>\n\n\n    <div class=\"heading-notofication\" id=\"boldText\" *ngIf=\"confirmNotitfication.length > 0\">Earlier</div>\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmNotitfication\">\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n\n\n\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed {{confirmInterest.Detail.propertyId}}</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed {{confirmInterest.Detail.propertyId}}</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed'  &&  confirmInterest.Detail.viewed != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed {{confirmInterest.Detail.propertyId}}</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity'  &&  confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed {{confirmInterest.Detail.propertyId}}</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed {{confirmInterest.Detail.propertyId}}</div>\n          <div class=\"ouput-expresssed-interest\"> A seller expressed interest on your Nestimate.<br>Click to Review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Select_Agent'  &&  confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed {{confirmInterest.Detail.propertyId}}</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed as a Agent.<br>Click to review<br> </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n</div>\n\n\n\n\n\n\n<!--Login Area-->\n<div class=\"Login-from-top\" *ngIf=\"loginTop\">\n  <div class=\"Login-area\" *ngIf=\"!SignUp\">\n    <div class=\"top-cross-button\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area\" id=\"boldText\">Login</h1>\n      </div>\n\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" name=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"\n              (keydown.enter)=\"applyFilter(emails.value)\">\n          </mat-form-field>\n\n\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"applyFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}\n            </mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section Remember-me-inline-text\">\n\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\" (click)=\"check(emails, passs)\">\n                Remember me\n              </mat-checkbox>\n\n              <span routerLink=\"/forgot-password\" id=\"boldText\" class=\"dark-color\" (click)=\"forgot()\">Forgot Password\n                ?</span>\n            </section>\n\n\n            <!-- id=\"boldText\" -->\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\" id=\"boldText\">Login</button>\n          </div>\n\n\n\n\n          <div id=\"semiboldText\" class=\"a-row a-spacing-top-medium a-size-small dark-color\">\n            By signing-in you agree to Nestimates's <a (click)=\"terms()\">Terms and condition of Use & Sale</a>. Please see our <a\n              (click)=\"privacy()\">Privacy Notice</a>.\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n              <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Log In</span>\n\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n  <div class=\"Login-area signup-area\" *ngIf=\"SignUp\">\n    <div class=\"top-cross-button small-phone\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area dark-color\" id=\"boldText\">Sign Up</h1>\n      </div>\n\n\n      <div class=\"login-area-wrap\">\n\n        <div class=\"fields-container\">\n\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Name</mat-label>\n            <input matInput placeholder=\"Name\" name=\"name\" [(ngModel)]=\"name\" #displayName\n              (keydown.enter)=\"SignupFilter(displayName .value)\">\n          </mat-form-field>\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"\n              (keydown.enter)=\"SignupFilter(userEmailLogin.value)\">\n          </mat-form-field>\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"SignupFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}\n            </mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n          <section class=\"example-section property-con-form dark-color\">\n\n            <mat-checkbox class=\"example-margin\" value=\"Email\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"SMS\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"Post\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"All\">Email,SMS and Post from acrefully\n              selected<br> third port\n            </mat-checkbox>\n\n          </section>\n          <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">By clicking below to register, you confirm that you agree\n            to our <a (click)=\"terms()\">Terms & Conditions </a> and you have read and understood our <a\n              (click)=\"privacy()\">Privacy Policy </a></div>\n          <!-- <div for=\"text\" class=\"policy\" id=\"semiboldText\" class=\"dark-color\">{{secondLine}} </div> -->\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signUp(displayName.value,userEmailLogin.value,userPasswordLogin.value,type)\" id=\"boldText\">Sign\n              Up</button>\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n              <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n\n    </div>\n  </div>\n</div>\n\n\n\n<!--OverLay-->\n<div class=\"continue-form\" *ngIf=\"overlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\" id=\"boldText\">Thanks for registering!</p>\n    <p class=\"overlay-text\" id=\"boldText\">{{notificationContent}}</p>\n  </div>\n  <div class=\"continue-button\" (click)=\"continueClose()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n      Continue\n\n      <span class=\"arrow-text\"> &gt;</span>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n\n\n<!--User Menu Bar-->\n<div class=\"mobile-Menu\" id=\"not-login-mobile-menu\" *ngIf=\"!hideRegister\">\n\n  <div class=\"menu-bar-icon\">\n    <!--Agent Menu -->\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image\"\n      *ngIf=\"MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"closeMobileMenu()\">\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"!MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"OpenMobileMenu()\">\n    <!--User Menu -->\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image\" *ngIf=\"isLoggedIn && open &&  !hideRegister\"\n      (click)=\"openMenu()\">\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"isLoggedIn && !open &&  !hideRegister\" (click)=\"closeMenu()\">\n  </div>\n\n  <!--User Home Click-->\n  <div class=\"menu-bar-icon\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"../../../assets/Images/home.png\" class=\"icon-size\" routerLink=\"/homenew\" *ngIf=\"isLoggedIn\">\n  </div>\n  <!--User Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"!isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav not-loggen-in\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n  <!--User Notification Icon-->\n  <div class=\"notification-upper\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <div *ngIf=\"isLoggedIn && bellShow\">\n      <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size new\" *ngIf=\"!bellicontwo\"\n        (click)=\"bellone()\">\n      <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size\" *ngIf=\"bellicontwo\" (click)=\"belltwo()\">\n      <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\" (click)=\"bellone()\">{{notifications}}</span>\n    </div>\n  </div>\n  <!--User Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" (click)=\"showLoginPopup()\" *ngIf=\"!isLoggedIn && !hideRegister\">Login</div>\n  <!--Agent Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">Login\n  </div>\n\n  <!--Logout-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn\">\n    <img src=\"../../../assets/Images/log-out.png\" class=\"log-out-logo\" (click)=\"authService.SignOut()\" />\n  </div>\n\n\n\n\n\n</div>\n\n\n\n\n<!--Agent Menu Bar-->\n<div class=\"mobile-Menu agent-menu\" id=\"not-login-mobile-menu\" *ngIf=\"hideRegister\">\n\n  <div class=\"menu-bar-icon\">\n    <!--Agent Menu -->\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image\"\n      *ngIf=\"MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"closeMobileMenu()\">\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"!MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"OpenMobileMenu()\">\n    <!--User Menu -->\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image\" *ngIf=\"isLoggedIn && open &&  !hideRegister\"\n      (click)=\"openMenu()\">\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"isLoggedIn && !open &&  !hideRegister\" (click)=\"closeMenu()\">\n  </div>\n\n\n  <!--User Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"!isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav not-loggen-in\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" (click)=\"showLoginPopup()\" *ngIf=\"!isLoggedIn && !hideRegister\">Login</div>\n  <!--Agent Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">Login\n  </div>\n\n  <!--Logout-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn\">\n    <img src=\"../../../assets/Images/log-out.png\" class=\"log-out-logo\" (click)=\"authService.SignOut()\" />\n  </div>\n\n\n\n\n\n</div>\n\n\n\n\n<div class=\"password-pop\" *ngIf=\"passwordpop\">\n  <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n</div>\n\n<div class=\"email-pop\" *ngIf=\"emailpop\">\n\n  <app-email-pop (click)=\"emailpopclose()\"></app-email-pop>\n</div>\n\n\n<div class=\"outside-click\" *ngIf=\"outside\" (click)=\"closealloutside()\"></div>";
     /***/
   },
 
@@ -26667,10 +26667,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
               _this212.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this212.userData));
-
-              _this212.LoggedIn(); //Notification Show
-
+              localStorage.setItem("user", JSON.stringify(_this212.userData)); //Notification Show
 
               _this212.NavigationService.Notification(_this212.uid).subscribe(function (notification) {
                 notification.forEach(function (element) {
@@ -26679,6 +26676,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   _this212.bellicontwo = false;
                 });
               });
+
+              _this212.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
@@ -26697,9 +26696,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          this.isLoggedIn = true;
-          this.navLogin = false;
-          this._router.navigate["/"];
+          var _this213 = this;
+
+          var Admin = JSON.parse(localStorage.getItem("user"));
+          this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
+            if (element.data().UserType == "Admin") {
+              console.log("test");
+              window.location.replace(_this213.origin + "AdminPanel");
+            } else {
+              _this213.isLoggedIn = true;
+              _this213.navLogin = false;
+              _this213._router.navigate["/"];
+            }
+          });
         }
       }, {
         key: "LoggedOut",
@@ -26712,46 +26721,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this213 = this;
+          var _this214 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this213.sellerProperty.push(element.data());
+                _this214.sellerProperty.push(element.data());
               }
             });
-            _this213.noSellerOfMatche = _this213.sellerProperty.length;
-            _this213.matches = _this213.buyerProperty.length + _this213.sellerProperty.length;
+            _this214.noSellerOfMatche = _this214.sellerProperty.length;
+            _this214.matches = _this214.buyerProperty.length + _this214.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this213.buyerProperty.push(element.data());
+              _this214.buyerProperty.push(element.data());
             });
-            _this213.noBuyerMatches = _this213.buyerProperty.length;
-            _this213.matches = _this213.buyerProperty.length + _this213.sellerProperty.length;
+            _this214.noBuyerMatches = _this214.buyerProperty.length;
+            _this214.matches = _this214.buyerProperty.length + _this214.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this214 = this;
+          var _this215 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this214.bellicon.push(item.data());
+              _this215.bellicon.push(item.data());
 
-              if (_this214.bellicon.length > 0) {
-                _this214.belliconone = false;
+              if (_this215.bellicon.length > 0) {
+                _this215.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this214.confirmInterest.push(item.data());
+                _this215.confirmInterest.push(item.data());
 
-                _this214.notifications = _this214.confirmInterest.length;
+                _this215.notifications = _this215.confirmInterest.length;
               } else {
-                _this214.notifications = 0;
+                _this215.notifications = 0;
               }
             });
           });
@@ -26827,14 +26836,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this215 = this;
+          var _this216 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this215.confirmInterests.push({
+                _this216.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -26853,20 +26862,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "initProfile",
         value: function initProfile() {
-          var _this216 = this;
+          var _this217 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
           if (this.user != null) {
             this.NavigationService.getAllUser(this.user.uid).then(function (element) {
               if (element.data().UserType == "Agent") {
-                _this216.agentCustomer = true;
+                _this217.agentCustomer = true;
               } else {
-                _this216.agentCustomer = false;
-                _this216.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
+                _this217.agentCustomer = false;
+                _this217.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
 
-                if (_this216.userName.length == 0) {
-                  _this216.userName = element.data().Name;
+                if (_this217.userName.length == 0) {
+                  _this217.userName = element.data().Name;
                 }
               }
             });
@@ -26878,7 +26887,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDocid",
         value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
-          var _this217 = this;
+          var _this218 = this;
 
           this.notificationoverlay = false;
           this.getNotification();
@@ -26893,8 +26902,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.Notification.Lastseen = this.now;
           this["return"] = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(function (data) {
-            _this217._router.navigate(["/myListing/myNestimate/action"]).then(function () {
-              _this217.notificationoverlay = false;
+            _this218._router.navigate(["/myListing/myNestimate/action"]).then(function () {
+              _this218.notificationoverlay = false;
               window.location.reload();
             });
           });
@@ -26902,19 +26911,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this218 = this;
+          var _this219 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               if (item.data().Lastseen == null) {
-                _this218.confirmInterests.push({
+                _this219.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
               } else {
-                _this218.confirmNotitfication.push({
+                _this219.confirmNotitfication.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -26925,7 +26934,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this219 = this;
+          var _this220 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -26934,25 +26943,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
               if (element.data().Lastseen == null) {
-                _this219.confirmInterests.push({
+                _this220.confirmInterests.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this219.confirmInterests.length > 0) {
-                  _this219.notificationoverlay = true;
-                  _this219.bellicontwo = true;
+                if (_this220.confirmInterests.length > 0) {
+                  _this220.notificationoverlay = true;
+                  _this220.bellicontwo = true;
                 }
               } else {
-                _this219.confirmNotitfication.push({
+                _this220.confirmNotitfication.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this219.confirmNotitfication.length > 0) {
-                  _this219.outside = true;
-                  _this219.notificationoverlay = true;
-                  _this219.bellicontwo = true;
+                if (_this220.confirmNotitfication.length > 0) {
+                  _this220.outside = true;
+                  _this220.notificationoverlay = true;
+                  _this220.bellicontwo = true;
                 }
               }
             });
@@ -26961,7 +26970,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this220 = this;
+          var _this221 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -26969,8 +26978,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this220.uid) {
-                _this220.confirmInterests = null;
+              if (element.UserId == _this221.uid) {
+                _this221.confirmInterests = null;
               }
             });
           });
@@ -27022,17 +27031,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this221 = this;
+          var _this222 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this221.isLoading = false;
+            _this222.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this222 = this;
+          var _this223 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -27043,22 +27052,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this222.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                  var dialogRef = _this223.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this222.UserSignIn
+                      message: _this223.UserSignIn
                     }
                   });
 
-                  _this222.isLoading = false;
+                  _this223.isLoading = false;
                 } else {
-                  _this222.authService.SignIn(email, pass).then(function (data) {
-                    _this222.isLoading = false;
+                  _this223.authService.SignIn(email, pass).then(function (data) {
+                    _this223.isLoading = false;
                   });
                 }
               } else {
-                _this222.isLoading = false;
+                _this223.isLoading = false;
 
-                var _dialogRef154 = _this222.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var _dialogRef154 = _this223.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -27150,10 +27159,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this223 = this;
+          var _this224 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this223.notificationContent = res.data().SingupFromMenu;
+            _this224.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
@@ -27182,10 +27191,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "leads",
         value: function leads() {
-          var _this224 = this;
+          var _this225 = this;
 
           this._router.navigate(['/Agenthome/leads']).then(function () {
-            _this224.Itemmenu();
+            _this225.Itemmenu();
 
             window.location.reload();
           });
@@ -27193,10 +27202,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Profile",
         value: function Profile() {
-          var _this225 = this;
+          var _this226 = this;
 
           this._router.navigate(['/Agenthome/profile']).then(function () {
-            _this225.Itemmenu();
+            _this226.Itemmenu();
 
             window.location.reload();
           });
@@ -27204,10 +27213,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Archieve",
         value: function Archieve() {
-          var _this226 = this;
+          var _this227 = this;
 
           this._router.navigate(['/Agenthome/archieve']).then(function () {
-            _this226.Itemmenu();
+            _this227.Itemmenu();
 
             window.location.reload();
           });
@@ -27215,10 +27224,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "manageMyNestimate",
         value: function manageMyNestimate() {
-          var _this227 = this;
+          var _this228 = this;
 
           this._router.navigate(['/myListing/myNestimate/tabdrop']).then(function () {
-            _this227.Itemmenu();
+            _this228.Itemmenu();
 
             window.location.reload();
           });
@@ -27226,10 +27235,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "profileNestimate",
         value: function profileNestimate() {
-          var _this228 = this;
+          var _this229 = this;
 
           this._router.navigate(['/myListing/profile/tabdrop']).then(function () {
-            _this228.Itemmenu();
+            _this229.Itemmenu();
 
             window.location.reload();
           });
@@ -27237,10 +27246,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "favorate",
         value: function favorate() {
-          var _this229 = this;
+          var _this230 = this;
 
           this._router.navigate(['/myListing/fav/tabdrop']).then(function () {
-            _this229.Itemmenu();
+            _this230.Itemmenu();
 
             window.location.reload();
           });
@@ -27248,21 +27257,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "recently",
         value: function recently() {
-          var _this230 = this;
+          var _this231 = this;
 
           this._router.navigate(['/myListing/recent/tabdrop']).then(function () {
-            _this230.Itemmenu();
+            _this231.Itemmenu();
 
             window.location.reload();
           });
         }
       }, {
         key: "actionNeeded",
-        value: function actionNeeded() {
-          var _this231 = this;
+        value: function actionNeeded(id) {
+          var _this232 = this;
 
-          this._router.navigate(["/myListing/myNestimate/action"]).then(function () {
-            _this231.notificationoverlay = false;
+          this._router.navigate(["/myListing/myNestimate/action/id"]).then(function () {
+            _this232.notificationoverlay = false;
             window.location.reload();
           });
         }
@@ -27286,24 +27295,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this232 = this;
+          var _this233 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this232.user.Lastseen = _this232.now;
-            _this232.isLoading = false;
+            _this233.user.Lastseen = _this233.now;
+            _this233.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this233 = this;
+          var _this234 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this233.user.Lastseen = _this233.now;
-            _this233.isLoading = false;
+            _this234.user.Lastseen = _this234.now;
+            _this234.isLoading = false;
           });
         }
       }, {
@@ -27330,13 +27339,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this234 = this;
+          var _this235 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this234.AgentSignIn = element.data().AgentSignIn;
-            _this234.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
+            _this235.AgentSignIn = element.data().AgentSignIn;
+            _this235.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
 
-            _this234.isLoading = false;
+            _this235.isLoading = false;
           });
         }
       }, {
@@ -27359,12 +27368,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onScroll",
         value: function onScroll(e) {
-          console.log('window', e);
-          this.closealloutside();
-        }
-      }, {
-        key: "onDocumentMousewheelEvent",
-        value: function onDocumentMousewheelEvent(event) {
           this.closealloutside();
         }
       }]);
@@ -27411,7 +27414,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["ViewChild"])('userPasswordLogin', {
       "static": false
     })], NavigationBarComponent.prototype, "Pass", void 0);
-    tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('document:mousewheel', ['$event'])], NavigationBarComponent.prototype, "onDocumentMousewheelEvent", null);
     NavigationBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
       selector: "app-nav",
       template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
@@ -27599,19 +27601,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this235 = this;
+          var _this236 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this235.confirmInterest.push({
+              _this236.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this235.confirmInterest);
+            console.log(_this236.confirmInterest);
           });
         }
       }, {
@@ -28009,13 +28011,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this236 = this;
+          var _this237 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this236.facebook = element.data().Facebook;
-              _this236.Instagram = element.data().Instragram;
-              _this236.Twitter = element.data().Twitter;
+              _this237.facebook = element.data().Facebook;
+              _this237.Instagram = element.data().Instragram;
+              _this237.Twitter = element.data().Twitter;
             });
           });
         }
@@ -29293,14 +29295,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this237 = this;
+          var _this238 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this237.idToken = params['id_token'];
-            _this237.accessToken = params['access_token'];
+            _this238.idToken = params['id_token'];
+            _this238.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this237._router.navigate(['/']).then(function () {
+            _this238._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -29540,11 +29542,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this238 = this;
+          var _this239 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this238.privacyPolicy = element.data().Privacy;
+              _this239.privacyPolicy = element.data().Privacy;
             });
           });
         }
@@ -30182,7 +30184,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this239 = this;
+          var _this240 = this;
 
           this.getOtherForm();
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -30193,36 +30195,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.userLogged();
             this.items();
             this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-              _this239.type = params.get("type");
+              _this240.type = params.get("type");
             });
           }
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this240 = this;
+          var _this241 = this;
 
           this.CMSSERVICE.getuserType(email).then(function (element) {
             if (element.data() != undefined) {
               if (element.data().UserType != "Agent") {
-                var dialogRef = _this240.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var dialogRef = _this241.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
-                    message: _this240.AgentSignIn
+                    message: _this241.AgentSignIn
                   }
                 });
               } else {
-                _this240.authService.SignIn(email, pass).then(function (data) {
-                  _this240.items();
+                _this241.authService.SignIn(email, pass).then(function (data) {
+                  _this241.items();
 
-                  _this240.userLogged();
+                  _this241.userLogged();
 
                   window.location.reload();
                 });
               }
             } else {
-              _this240.isLoading = false;
+              _this241.isLoading = false;
 
-              var _dialogRef155 = _this240.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+              var _dialogRef155 = _this241.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                 data: {
                   message: "User Does not exist"
                 }
@@ -30251,19 +30253,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this241 = this;
+          var _this242 = this;
 
           this.BuyerDetail = [];
           this.archieveUser = [];
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
               if (element.data().Archived == false) {
-                _this241.BuyerDetail.push({
+                _this242.BuyerDetail.push({
                   Detail: element.data(),
                   id: element.id
                 });
               } else {
-                _this241.archieveUser.push({
+                _this242.archieveUser.push({
                   Detail: element.data(),
                   id: element.id
                 });
@@ -30274,43 +30276,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this242 = this;
+          var _this243 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this242.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this242.userData));
+              _this243.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this243.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this242.loggedIn = true;
+              _this243.loggedIn = true;
 
-              _this242.agentItem();
+              _this243.agentItem();
 
-              _this242.checkUrl();
+              _this243.checkUrl();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this242.loggedIn = false;
+              _this243.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this243 = this;
+          var _this244 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this243.Companyname = element.data().company;
-              _this243.Address = element.data().address;
-              _this243.Postcode = element.data().postcode;
-              _this243.Phonenumber = element.data().phone;
-              _this243.Jobtitle = element.data().jobtitle;
-              _this243.SinglePercentage = element.data().solefees;
-              _this243.Multipercentage = element.data().multiplefees;
-              _this243.Image = element.data().image;
-              _this243.Fullname = element.data().fullname;
-              _this243.PropertyId = element.id;
-              _this243.UserId = _this243.user.uid;
+              _this244.Companyname = element.data().company;
+              _this244.Address = element.data().address;
+              _this244.Postcode = element.data().postcode;
+              _this244.Phonenumber = element.data().phone;
+              _this244.Jobtitle = element.data().jobtitle;
+              _this244.SinglePercentage = element.data().solefees;
+              _this244.Multipercentage = element.data().multiplefees;
+              _this244.Image = element.data().image;
+              _this244.Fullname = element.data().fullname;
+              _this244.PropertyId = element.id;
+              _this244.UserId = _this244.user.uid;
             });
           });
         }
@@ -30381,30 +30383,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "update",
         value: function update(docid, property) {
-          var _this244 = this;
-
-          property.Archived = true;
-          this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this244.items();
-          });
-        }
-      }, {
-        key: "restore",
-        value: function restore(docid, property) {
           var _this245 = this;
 
-          property.Archived = false;
+          property.Archived = true;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
             _this245.items();
           });
         }
       }, {
-        key: "delete",
-        value: function _delete(docid) {
+        key: "restore",
+        value: function restore(docid, property) {
           var _this246 = this;
 
-          this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
+          property.Archived = false;
+          this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
             _this246.items();
+          });
+        }
+      }, {
+        key: "delete",
+        value: function _delete(docid) {
+          var _this247 = this;
+
+          this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
+            _this247.items();
           });
         }
       }, {
@@ -30446,13 +30448,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this247 = this;
+          var _this248 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this247.AgentSignIn = element.data().AgentSignIn;
-            _this247.UserSignIn = element.data().UserSignIn;
-            _this247.WrongPassword = element.data().WrongPassword;
-            _this247.isLoading = false;
+            _this248.AgentSignIn = element.data().AgentSignIn;
+            _this248.UserSignIn = element.data().UserSignIn;
+            _this248.WrongPassword = element.data().WrongPassword;
+            _this248.isLoading = false;
           });
         }
       }]);
@@ -30848,7 +30850,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this248 = this;
+          var _this249 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -30857,10 +30859,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this248.id = params.get("id");
+            _this249.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this248.agents = data;
+            _this249.agents = data;
           });
           this.getAgentDetails();
           this.getAgentForm();
@@ -30868,7 +30870,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage, office) {
-          var _this249 = this;
+          var _this250 = this;
 
           if (this.agents.officephone != null || this.agents.phone != null) {
             var Office = parseInt(this.agents.officephone);
@@ -30972,25 +30974,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           } else {
             this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-              var dialogRef = _this249.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+              var dialogRef = _this250.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
                 data: {
                   message: "Profile Updated"
                 }
               });
 
-              _this249.edit = false;
+              _this250.edit = false;
             });
           }
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this250 = this;
+          var _this251 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this250.agents = element.data();
-              _this250.id = element.id;
+              _this251.agents = element.data();
+              _this251.id = element.id;
             });
           });
         }
@@ -31007,32 +31009,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this251 = this;
+          var _this252 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this251.FullName = element.data().FullName;
-            _this251.CompanyName = element.data().CompanyName;
-            _this251.Postcode = element.data().Postcode;
-            _this251.Address = element.data().Address;
-            _this251.JobTitle = element.data().JobTitle;
-            _this251.EmailAddress = element.data().EmailAddress;
-            _this251.emailvalidation = element.data().emailvalidation;
-            _this251.Password = element.data().Password;
-            _this251.officephone = element.data().officephone;
-            _this251.officephonevalidation = element.data().officephonevalidation;
-            _this251.officephonelength = element.data().officephonelength;
-            _this251.mobile = element.data().mobile;
-            _this251.mobilevalidity = element.data().mobilevalidity;
-            _this251.mobilelength = element.data().mobilelength;
-            _this251.solefees = element.data().solefees;
-            _this251.solefeesmore = element.data().solefeesmore;
-            _this251.solefeesless = element.data().solefeesless;
-            _this251.multiplefees = element.data().multiplefees;
-            _this251.multiplefeesmore = element.data().multiplefeesmore;
-            _this251.multiplefeesless = element.data().multiplefeesless;
-            _this251.Image = element.data().Image;
-            _this251.Imagesize = element.data().Imagesize;
-            _this251.isLoading = false;
+            _this252.FullName = element.data().FullName;
+            _this252.CompanyName = element.data().CompanyName;
+            _this252.Postcode = element.data().Postcode;
+            _this252.Address = element.data().Address;
+            _this252.JobTitle = element.data().JobTitle;
+            _this252.EmailAddress = element.data().EmailAddress;
+            _this252.emailvalidation = element.data().emailvalidation;
+            _this252.Password = element.data().Password;
+            _this252.officephone = element.data().officephone;
+            _this252.officephonevalidation = element.data().officephonevalidation;
+            _this252.officephonelength = element.data().officephonelength;
+            _this252.mobile = element.data().mobile;
+            _this252.mobilevalidity = element.data().mobilevalidity;
+            _this252.mobilelength = element.data().mobilelength;
+            _this252.solefees = element.data().solefees;
+            _this252.solefeesmore = element.data().solefeesmore;
+            _this252.solefeesless = element.data().solefeesless;
+            _this252.multiplefees = element.data().multiplefees;
+            _this252.multiplefeesmore = element.data().multiplefeesmore;
+            _this252.multiplefeesless = element.data().multiplefeesless;
+            _this252.Image = element.data().Image;
+            _this252.Imagesize = element.data().Imagesize;
+            _this252.isLoading = false;
           });
         }
       }]);
@@ -31470,19 +31472,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this252 = this;
+          var _this253 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this252.agents = element.data();
-              _this252.fullname = _this252.agents.fullname;
-              _this252.address = _this252.agents.address;
-              _this252.postcode = _this252.agents.postcode;
-              _this252.email = _this252.agents.email;
-              _this252.phone = _this252.agents.phone;
-              _this252.officephone = _this252.agents.officephone;
-              _this252.sole = _this252.agents.solefees;
-              _this252.multi = _this252.agents.multiplefees;
+              _this253.agents = element.data();
+              _this253.fullname = _this253.agents.fullname;
+              _this253.address = _this253.agents.address;
+              _this253.postcode = _this253.agents.postcode;
+              _this253.email = _this253.agents.email;
+              _this253.phone = _this253.agents.phone;
+              _this253.officephone = _this253.agents.officephone;
+              _this253.sole = _this253.agents.solefees;
+              _this253.multi = _this253.agents.multiplefees;
             });
           });
         }
@@ -33222,7 +33224,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location, dialog) {
-        var _this253 = this;
+        var _this254 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -33237,8 +33239,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this253.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this253.userData));
+            _this254.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this254.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -33392,7 +33394,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthLogin",
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee68() {
-            var _this254 = this;
+            var _this255 = this;
 
             var result, User;
             return regeneratorRuntime.wrap(function _callee68$(_context68) {
@@ -33407,9 +33409,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     result = _context68.sent;
                     User = "User";
                     this.ngZone.run(function () {
-                      _this254.SetUserData(result.user);
+                      _this255.SetUserData(result.user);
 
-                      _this254.createUserChecker(result.user, User); //window.location.reload()
+                      _this255.createUserChecker(result.user, User); //window.location.reload()
 
                     });
                     _context68.next = 11;
@@ -33432,7 +33434,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthSignup",
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee69() {
-            var _this255 = this;
+            var _this256 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee69$(_context69) {
@@ -33446,7 +33448,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 3:
                     result = _context69.sent;
                     this.ngZone.run(function () {
-                      _this255.SetUserData(result.user);
+                      _this256.SetUserData(result.user);
                     });
                     _context69.next = 10;
                     break;
@@ -34688,33 +34690,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this256 = this;
+          var _this257 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
             password: password
           }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            // login successful if there's a jwt token in the response
-            if (response.jwt && response.user) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem('updatedUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentJwt', response.jwt);
-              _this256.userData = response.user;
-              _this256.authToken = sessionStorage.getItem('currentJwt');
-
-              _this256.currentUserSubject.next(response.user);
-            }
-
-            return response.user;
-          }));
-        }
-      }, {
-        key: "Googlelogin",
-        value: function Googlelogin(token, accessToken) {
-          var _this257 = this;
-
-          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
@@ -34731,13 +34712,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
-        key: "Facebooklogin",
-        value: function Facebooklogin() {
+        key: "Googlelogin",
+        value: function Googlelogin(token, accessToken) {
           var _this258 = this;
 
-          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            console.log(response); // login successful if there's a jwt token in the response
-
+          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
@@ -34753,9 +34733,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
+        key: "Facebooklogin",
+        value: function Facebooklogin() {
+          var _this259 = this;
+
+          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            console.log(response); // login successful if there's a jwt token in the response
+
+            if (response.jwt && response.user) {
+              // store user details and jwt token in local storage to keep user logged in between page refreshes
+              localStorage.setItem('updatedUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentJwt', response.jwt);
+              _this259.userData = response.user;
+              _this259.authToken = sessionStorage.getItem('currentJwt');
+
+              _this259.currentUserSubject.next(response.user);
+            }
+
+            return response.user;
+          }));
+        }
+      }, {
         key: "logout",
         value: function logout() {
-          var _this259 = this;
+          var _this260 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -34763,7 +34765,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this259.router.navigate(["/homenew"]);
+            _this260.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -34990,21 +34992,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this260 = this;
+          var _this261 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           console.log(this.user);
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this260.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this260.userData));
+              _this261.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this261.userData));
 
-              _this260.LoggedIn();
+              _this261.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this260.LoggedOut();
+              _this261.LoggedOut();
             }
           });
           console.log(this.activatedRoute.routeConfig);
@@ -35037,58 +35039,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this261 = this;
+          var _this262 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this261.isLoading = false;
+            _this262.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this262 = this;
+          var _this263 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this262.isLoading = false;
+            _this263.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this263 = this;
+          var _this264 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this263.isLoading = false;
+            _this264.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this264 = this;
+          var _this265 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this264.KnowUser.push(element.data());
+              _this265.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this264.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this265.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this264.isLoading = false;
+                _this265.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this264.authService.SignIn(email, pass).then(function (data) {
-                  _this264.isLoading = false;
+                _this265.authService.SignIn(email, pass).then(function (data) {
+                  _this265.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -35172,21 +35174,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this265 = this;
+          var _this266 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this265.notificationContent = res.data().SingupFromMenu;
+            _this266.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this266 = this;
+          var _this267 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this266.topLine = element.data().topLine;
-              _this266.secondLine = element.data().SecondLine;
+              _this267.topLine = element.data().topLine;
+              _this267.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -35317,11 +35319,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this267 = this;
+          var _this268 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (element) {
             element.forEach(function (element) {
-              _this267.termsCondition = element.data().Terms;
+              _this268.termsCondition = element.data().Terms;
             });
           });
         }
