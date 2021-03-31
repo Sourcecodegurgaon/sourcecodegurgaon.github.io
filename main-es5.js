@@ -17151,7 +17151,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 });
 
                 _this158.bmatchesstartPage = 0;
-                _this158.bmatchespaginationLimit = 2;
+                _this158.bmatchespaginationLimit = 6;
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
@@ -17165,7 +17165,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 });
 
                 _this158.startPage = 0;
-                _this158.paginationLimit = 2;
+                _this158.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
@@ -17179,7 +17179,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 });
 
                 _this158.startPage = 0;
-                _this158.paginationLimit = 2;
+                _this158.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
@@ -17193,7 +17193,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 });
 
                 _this158.startPage = 0;
-                _this158.paginationLimit = 2;
+                _this158.paginationLimit = 6;
               } //- All other properties - Nationwide
 
 
@@ -17207,7 +17207,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 });
 
                 _this158.startPage = 0;
-                _this158.paginationLimit = 2;
+                _this158.paginationLimit = 6;
               }
             });
 
@@ -17322,7 +17322,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this159.noOfUnmatched = _this159.sellerunmatchedProperties.length;
           });
           this.startPage = 0;
-          this.paginationLimit = 2;
+          this.paginationLimit = 6;
           this.getSellerFavoarte();
           this.getExpressedListingIds();
         }

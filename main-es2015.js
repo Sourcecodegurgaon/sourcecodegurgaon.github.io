@@ -11491,7 +11491,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                         distance: this.distanceInKm * 1 / 1.609344,
                     });
                     this.bmatchesstartPage = 0;
-                    this.bmatchespaginationLimit = 2;
+                    this.bmatchespaginationLimit = 6;
                 }
                 // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
                 if (item.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcodes &&
@@ -11510,7 +11510,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                         distance: this.distanceInKm * 1 / 1.609344,
                     });
                     this.startPage = 0;
-                    this.paginationLimit = 2;
+                    this.paginationLimit = 6;
                 }
                 //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
                 if (item.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcodes &&
@@ -11530,7 +11530,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                         distance: this.distanceInKm * 1 / 1.609344,
                     });
                     this.startPage = 0;
-                    this.paginationLimit = 2;
+                    this.paginationLimit = 6;
                 }
                 //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
                 if (item.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcodes &&
@@ -11550,7 +11550,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                         distance: this.distanceInKm * 1 / 1.609344,
                     });
                     this.startPage = 0;
-                    this.paginationLimit = 2;
+                    this.paginationLimit = 6;
                 }
                 //- All other properties - Nationwide
                 if (item.data().Lookingpostcode.replace(/\s/g, "") != this.Look_postcodes &&
@@ -11567,7 +11567,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
                         distance: this.distanceInKm * 1 / 1.609344,
                     });
                     this.startPage = 0;
-                    this.paginationLimit = 2;
+                    this.paginationLimit = 6;
                 }
             });
             this.unmatchedProperties.sort(this.compare);
@@ -11703,7 +11703,7 @@ let HomeMatchesComponent = class HomeMatchesComponent {
             this.noOfUnmatched = this.sellerunmatchedProperties.length;
         });
         this.startPage = 0;
-        this.paginationLimit = 2;
+        this.paginationLimit = 6;
         this.getSellerFavoarte();
         this.getExpressedListingIds();
     }
