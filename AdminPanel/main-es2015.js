@@ -1698,7 +1698,7 @@ let AdminPanelComponent = class AdminPanelComponent {
         this.checked = false;
         this.KnowUser = [];
         this.type = "Admin";
-        this.LoggedIn = false;
+        this.LoggedIn = true;
         this.CountAllUser = [];
         this.listingType = [];
         this.listingTypeBuy = [];
@@ -2002,15 +2002,15 @@ let AdminPanelComponent = class AdminPanelComponent {
     }
     //getUser(uid)
     signIn(email, pass) {
+        console.log("Alert1");
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         if (re.test(String(email).toLowerCase()) == true) {
             this.isLoading = true;
             if (this.adminId == email) {
                 this.AuthService.SignIn(email, pass).then((data) => {
-                    this.isLoading = false;
-                    this.LoggedIn = true;
                     window.location.reload();
                 });
+                //window.location.reload()
             }
             else {
                 this.LoggedIn = false;
@@ -22180,9 +22180,9 @@ let AuthService = class AuthService {
         this.dialog = dialog;
         /* Saving user data in localstorage when
         logged in and setting up null when logged out */
-        this.afAuth.authState.subscribe(user => {
-            if (user) {
-                this.userData = user;
+        this.afAuth.authState.subscribe(adminuser => {
+            if (adminuser) {
+                this.userData = adminuser;
                 localStorage.setItem("admindata", JSON.stringify(this.userData));
             }
             else {
@@ -22273,9 +22273,18 @@ let AuthService = class AuthService {
                 const result = yield this.afAuth.auth.signInWithPopup(provider);
                 const User = "User";
                 this.ngZone.run(() => {
-                    this.SetUserData(result.user);
-                    this.createUserChecker(result.user, User);
+                    // this.SetUserData(result.user);
+                    // this.createUserChecker(result.user,User)
                     //window.location.reload()
+                    this.afAuth.authState.subscribe(adminuser => {
+                        if (adminuser) {
+                            this.userData = adminuser;
+                            localStorage.setItem("admindata", JSON.stringify(this.userData));
+                        }
+                        else {
+                            localStorage.setItem("admindata", null);
+                        }
+                    });
                 });
             }
             catch (error) {
@@ -22292,7 +22301,7 @@ let AuthService = class AuthService {
             try {
                 const result = yield this.afAuth.auth.signInWithPopup(provider);
                 this.ngZone.run(() => {
-                    this.SetUserData(result.user);
+                    // this.SetUserData(result.user);
                 });
             }
             catch (error) {
