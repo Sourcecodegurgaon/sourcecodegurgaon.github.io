@@ -18343,11 +18343,13 @@ let NavigationBarComponent = class NavigationBarComponent {
     }
     LoggedIn() {
         const Admin = JSON.parse(localStorage.getItem("user"));
-        this.CMSSERVICE.getuserType(Admin.email).then((element) => {
-            if (element.data().UserType == "Admin") {
-                this.LoggedOut();
-            }
-        });
+        if (Admin != null) {
+            this.CMSSERVICE.getuserType(Admin.email).then((element) => {
+                if (element.data().UserType == "Admin") {
+                    this.LoggedOut();
+                }
+            });
+        }
     }
     LoggedOut() {
         this.isLoggedIn = false;

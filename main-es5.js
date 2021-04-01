@@ -27095,11 +27095,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this217 = this;
 
           var Admin = JSON.parse(localStorage.getItem("user"));
-          this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
-            if (element.data().UserType == "Admin") {
-              _this217.LoggedOut();
-            }
-          });
+
+          if (Admin != null) {
+            this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
+              if (element.data().UserType == "Admin") {
+                _this217.LoggedOut();
+              }
+            });
+          }
         }
       }, {
         key: "LoggedOut",
