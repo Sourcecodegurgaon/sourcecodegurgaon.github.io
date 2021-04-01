@@ -21381,20 +21381,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reset_password_reset_password_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./reset-password/reset-password.component */ "./src/app/reset-password/reset-password.component.ts");
 /* harmony import */ var _Misc_google_login_check_google_login_check_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./Misc/google-login-check/google-login-check.component */ "./src/app/Misc/google-login-check/google-login-check.component.ts");
 /* harmony import */ var _Misc_facebook_login_check_facebook_login_check_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./Misc/facebook-login-check/facebook-login-check.component */ "./src/app/Misc/facebook-login-check/facebook-login-check.component.ts");
-/* harmony import */ var _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./AdminPanel/users-agent-tab/users-agent-tab.component */ "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.ts");
-/* harmony import */ var _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./AdminPanel/users-edit-page/users-edit-page.component */ "./src/app/AdminPanel/users-edit-page/users-edit-page.component.ts");
-/* harmony import */ var _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component */ "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts");
-/* harmony import */ var _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./AdminPanel/add-user/add-user.component */ "./src/app/AdminPanel/add-user/add-user.component.ts");
-/* harmony import */ var _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./AdminPanel/edit-seller-user-details/edit-seller-user-details.component */ "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts");
-/* harmony import */ var _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./AdminPanel/agent-edit-page/agent-edit-page.component */ "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts");
-/* harmony import */ var _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./AdminPanel/agent-property-edit-page/agent-property-edit-page.component */ "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts");
-/* harmony import */ var _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./AdminPanel/uielements/uielements.component */ "./src/app/AdminPanel/uielements/uielements.component.ts");
-/* harmony import */ var _Menu_myListings_favorates_seller_listing_detail_seller_listing_detail_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./Menu/myListings/favorates/seller-listing-detail/seller-listing-detail.component */ "./src/app/Menu/myListings/favorates/seller-listing-detail/seller-listing-detail.component.ts");
-/* harmony import */ var _Menu_myListings_favorates_buyer_listing_detail_buyer_listing_detail_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./Menu/myListings/favorates/buyer-listing-detail/buyer-listing-detail.component */ "./src/app/Menu/myListings/favorates/buyer-listing-detail/buyer-listing-detail.component.ts");
-/* harmony import */ var _agenthome_buyer_details_agent_buyer_details_agent_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./agenthome/buyer-details-agent/buyer-details-agent.component */ "./src/app/agenthome/buyer-details-agent/buyer-details-agent.component.ts");
-/* harmony import */ var _Menu_myListings_recentlyitems_buyerrecentlydetail_buyerrecentlydetail_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./Menu/myListings/recentlyitems/buyerrecentlydetail/buyerrecentlydetail.component */ "./src/app/Menu/myListings/recentlyitems/buyerrecentlydetail/buyerrecentlydetail.component.ts");
-/* harmony import */ var _Menu_myListings_recentlyitems_sellerrecentpropertydeatil_sellerrecentpropertydeatil_component__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./Menu/myListings/recentlyitems/sellerrecentpropertydeatil/sellerrecentpropertydeatil.component */ "./src/app/Menu/myListings/recentlyitems/sellerrecentpropertydeatil/sellerrecentpropertydeatil.component.ts");
-/* harmony import */ var _home_check_home_check_component__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./home-check/home-check.component */ "./src/app/home-check/home-check.component.ts");
+/* harmony import */ var _AdminPanel_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./AdminPanel/admin-panel/admin-panel.component */ "./src/app/AdminPanel/admin-panel/admin-panel.component.ts");
+/* harmony import */ var _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./AdminPanel/admin-header/admin-header.component */ "./src/app/AdminPanel/admin-header/admin-header.component.ts");
+/* harmony import */ var _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./AdminPanel/users-agent-tab/users-agent-tab.component */ "./src/app/AdminPanel/users-agent-tab/users-agent-tab.component.ts");
+/* harmony import */ var _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./AdminPanel/users-edit-page/users-edit-page.component */ "./src/app/AdminPanel/users-edit-page/users-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component */ "./src/app/AdminPanel/edit-buyer-user-details/edit-buyer-user-details.component.ts");
+/* harmony import */ var _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./AdminPanel/add-user/add-user.component */ "./src/app/AdminPanel/add-user/add-user.component.ts");
+/* harmony import */ var _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./AdminPanel/edit-seller-user-details/edit-seller-user-details.component */ "./src/app/AdminPanel/edit-seller-user-details/edit-seller-user-details.component.ts");
+/* harmony import */ var _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./AdminPanel/agent-edit-page/agent-edit-page.component */ "./src/app/AdminPanel/agent-edit-page/agent-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./AdminPanel/agent-property-edit-page/agent-property-edit-page.component */ "./src/app/AdminPanel/agent-property-edit-page/agent-property-edit-page.component.ts");
+/* harmony import */ var _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./AdminPanel/uielements/uielements.component */ "./src/app/AdminPanel/uielements/uielements.component.ts");
+/* harmony import */ var _Menu_myListings_favorates_seller_listing_detail_seller_listing_detail_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./Menu/myListings/favorates/seller-listing-detail/seller-listing-detail.component */ "./src/app/Menu/myListings/favorates/seller-listing-detail/seller-listing-detail.component.ts");
+/* harmony import */ var _Menu_myListings_favorates_buyer_listing_detail_buyer_listing_detail_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./Menu/myListings/favorates/buyer-listing-detail/buyer-listing-detail.component */ "./src/app/Menu/myListings/favorates/buyer-listing-detail/buyer-listing-detail.component.ts");
+/* harmony import */ var _agenthome_buyer_details_agent_buyer_details_agent_component__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./agenthome/buyer-details-agent/buyer-details-agent.component */ "./src/app/agenthome/buyer-details-agent/buyer-details-agent.component.ts");
+/* harmony import */ var _Menu_myListings_recentlyitems_buyerrecentlydetail_buyerrecentlydetail_component__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(/*! ./Menu/myListings/recentlyitems/buyerrecentlydetail/buyerrecentlydetail.component */ "./src/app/Menu/myListings/recentlyitems/buyerrecentlydetail/buyerrecentlydetail.component.ts");
+/* harmony import */ var _Menu_myListings_recentlyitems_sellerrecentpropertydeatil_sellerrecentpropertydeatil_component__WEBPACK_IMPORTED_MODULE_63__ = __webpack_require__(/*! ./Menu/myListings/recentlyitems/sellerrecentpropertydeatil/sellerrecentpropertydeatil.component */ "./src/app/Menu/myListings/recentlyitems/sellerrecentpropertydeatil/sellerrecentpropertydeatil.component.ts");
+/* harmony import */ var _home_check_home_check_component__WEBPACK_IMPORTED_MODULE_64__ = __webpack_require__(/*! ./home-check/home-check.component */ "./src/app/home-check/home-check.component.ts");
+
+
 
 
 
@@ -21464,7 +21468,7 @@ const routes = [
     { path: "Property/:use", component: _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_3__["PropertyComponent"] },
     { path: CALLBACK_PATH, component: _Misc_google_login_check_google_login_check_component__WEBPACK_IMPORTED_MODULE_47__["GoogleLoginCheckComponent"] },
     { path: CAllBack_Facebook, component: _Misc_facebook_login_check_facebook_login_check_component__WEBPACK_IMPORTED_MODULE_48__["FacebookLoginCheckComponent"] },
-    { path: "", component: _home_check_home_check_component__WEBPACK_IMPORTED_MODULE_62__["HomeCheckComponent"] },
+    { path: "", component: _home_check_home_check_component__WEBPACK_IMPORTED_MODULE_64__["HomeCheckComponent"] },
     // { path: "", component: HomeComponent },
     {
         path: "fillFormBuyer/:Currentpostcode/:CurrentTown/:Currentstate/:Currentcountry/:Lookingpostcode/:LookingStreetname/:LookingTown/:Lookingstate/:Country/:FinancialPosition/:PropertyType/:Roommin/:Roomsmax/:MinAmount/:MaxAmount/:Validity/:Minbathroom/:Maxbathroom/:Minreception/:Maxreception/:Conditions/:Ownership/:CurrentAddress",
@@ -21523,21 +21527,21 @@ const routes = [
     { path: "homenew", component: _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_44__["ClickhomeComponent"] },
     { path: "navbar", component: _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_45__["NavigationBarComponent"] },
     { path: "Reset", component: _reset_password_reset_password_component__WEBPACK_IMPORTED_MODULE_46__["ResetPasswordComponent"] },
-    // {path:"AdminPanel",component:AdminPanelComponent},
-    // {path:"AdminHeader",component:AdminHeaderComponent },
-    { path: "UsersAgentTab/:userTab/:agemtTab", component: _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_49__["UsersAgentTabComponent"] },
-    { path: "UsersEditPage/:uid", component: _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_50__["UsersEditPageComponent"] },
-    { path: "EditBuyerUserDetails/:BuyerUserID/:BuyerPropertyId", component: _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_51__["EditBuyerUserDetailsComponent"] },
-    { path: "AddUser", component: _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_52__["AddUserComponent"] },
-    { path: "EditSellerUserDetails/:sellerUserId/:sellerPropertyId", component: _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_53__["EditSellerUserDetailsComponent"] },
-    { path: "AgentEditPage/:agentPropertyId/:agentUserId", component: _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_54__["AgentEditPageComponent"] },
-    { path: "AgentPropertyEditPage/:propertyuserId/:propertyID", component: _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_55__["AgentPropertyEditPageComponent"] },
-    { path: "UIElements", component: _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_56__["UIElementsComponent"] },
-    { path: "SellerListingDetail", component: _Menu_myListings_favorates_seller_listing_detail_seller_listing_detail_component__WEBPACK_IMPORTED_MODULE_57__["SellerListingDetailComponent"] },
-    { path: "BuyerListingDetail", component: _Menu_myListings_favorates_buyer_listing_detail_buyer_listing_detail_component__WEBPACK_IMPORTED_MODULE_58__["BuyerListingDetailComponent"] },
-    { path: "BuyerDetailsAgent", component: _agenthome_buyer_details_agent_buyer_details_agent_component__WEBPACK_IMPORTED_MODULE_59__["BuyerDetailsAgentComponent"] },
-    { path: "Buyerrecentlydetail", component: _Menu_myListings_recentlyitems_buyerrecentlydetail_buyerrecentlydetail_component__WEBPACK_IMPORTED_MODULE_60__["BuyerrecentlydetailComponent"] },
-    { path: "Sellerrecentproperty", component: _Menu_myListings_recentlyitems_sellerrecentpropertydeatil_sellerrecentpropertydeatil_component__WEBPACK_IMPORTED_MODULE_61__["SellerrecentpropertydeatilComponent"] },
+    { path: "AdminPanel", component: _AdminPanel_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_49__["AdminPanelComponent"] },
+    { path: "AdminHeader", component: _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_50__["AdminHeaderComponent"] },
+    { path: "UsersAgentTab/:userTab/:agemtTab", component: _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_51__["UsersAgentTabComponent"] },
+    { path: "UsersEditPage/:uid", component: _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_52__["UsersEditPageComponent"] },
+    { path: "EditBuyerUserDetails/:BuyerUserID/:BuyerPropertyId", component: _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_53__["EditBuyerUserDetailsComponent"] },
+    { path: "AddUser", component: _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_54__["AddUserComponent"] },
+    { path: "EditSellerUserDetails/:sellerUserId/:sellerPropertyId", component: _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_55__["EditSellerUserDetailsComponent"] },
+    { path: "AgentEditPage/:agentPropertyId/:agentUserId", component: _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_56__["AgentEditPageComponent"] },
+    { path: "AgentPropertyEditPage/:propertyuserId/:propertyID", component: _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_57__["AgentPropertyEditPageComponent"] },
+    { path: "UIElements", component: _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_58__["UIElementsComponent"] },
+    { path: "SellerListingDetail", component: _Menu_myListings_favorates_seller_listing_detail_seller_listing_detail_component__WEBPACK_IMPORTED_MODULE_59__["SellerListingDetailComponent"] },
+    { path: "BuyerListingDetail", component: _Menu_myListings_favorates_buyer_listing_detail_buyer_listing_detail_component__WEBPACK_IMPORTED_MODULE_60__["BuyerListingDetailComponent"] },
+    { path: "BuyerDetailsAgent", component: _agenthome_buyer_details_agent_buyer_details_agent_component__WEBPACK_IMPORTED_MODULE_61__["BuyerDetailsAgentComponent"] },
+    { path: "Buyerrecentlydetail", component: _Menu_myListings_recentlyitems_buyerrecentlydetail_buyerrecentlydetail_component__WEBPACK_IMPORTED_MODULE_62__["BuyerrecentlydetailComponent"] },
+    { path: "Sellerrecentproperty", component: _Menu_myListings_recentlyitems_sellerrecentpropertydeatil_sellerrecentpropertydeatil_component__WEBPACK_IMPORTED_MODULE_63__["SellerrecentpropertydeatilComponent"] },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
