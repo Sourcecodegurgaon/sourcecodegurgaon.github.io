@@ -3084,7 +3084,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function getUserDetails() {
           var _this5 = this;
 
-          this.getUser = JSON.parse(localStorage.getItem("user"));
+          this.getUser = JSON.parse(localStorage.getItem("users"));
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
@@ -34052,7 +34052,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "isLoggedIn",
         get: function get() {
-          var user = JSON.parse(localStorage.getItem("user"));
+          var user = JSON.parse(localStorage.getItem("users"));
           return user !== null && user.emailVerified !== false ? true : false;
         }
       }]);

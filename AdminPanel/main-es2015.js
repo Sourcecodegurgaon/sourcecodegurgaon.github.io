@@ -1833,7 +1833,7 @@ let AdminPanelComponent = class AdminPanelComponent {
         this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(agent => { this.agentLength = agent.length; });
     }
     getUserDetails() {
-        this.getUser = JSON.parse(localStorage.getItem("user"));
+        this.getUser = JSON.parse(localStorage.getItem("users"));
         if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then((element) => {
@@ -22251,7 +22251,7 @@ let AuthService = class AuthService {
     }
     // Returns true when user is looged in and email is verified
     get isLoggedIn() {
-        const user = JSON.parse(localStorage.getItem("user"));
+        const user = JSON.parse(localStorage.getItem("users"));
         return user !== null && user.emailVerified !== false ? true : false;
     }
     // Sign in with Google
