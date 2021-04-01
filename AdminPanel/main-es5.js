@@ -2616,7 +2616,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AddUserComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.user = JSON.parse(localStorage.getItem("users"));
+          this.user = JSON.parse(localStorage.getItem("admindata"));
           this.getUserDetails();
         }
       }, {
@@ -2965,7 +2965,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AdminPanelComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.getUser = JSON.parse(localStorage.getItem("users"));
+          this.getUser = JSON.parse(localStorage.getItem("admindata"));
 
           if (this.getUser != null) {
             this.LoggedIn = true;
@@ -3084,7 +3084,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function getUserDetails() {
           var _this5 = this;
 
-          this.getUser = JSON.parse(localStorage.getItem("users"));
+          this.getUser = JSON.parse(localStorage.getItem("admindata"));
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
@@ -4043,7 +4043,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this11 = this;
 
-          this.user = JSON.parse(localStorage.getItem("users"));
+          this.user = JSON.parse(localStorage.getItem("admindata"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             _this11.agentPropertyId = params.get("agentPropertyId");
             _this11.agentUserId = params.get("agentUserId");
@@ -4324,7 +4324,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this17 = this;
 
-          this.user = JSON.parse(localStorage.getItem("users"));
+          this.user = JSON.parse(localStorage.getItem("admindata"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             _this17.propertyID = params.get("propertyID");
             _this17.propertyuserId = params.get("propertyuserId");
@@ -4538,7 +4538,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this20 = this;
 
-          this.user = JSON.parse(localStorage.getItem("users"));
+          this.user = JSON.parse(localStorage.getItem("admindata"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             _this20.BuyerPropertyId = params.get("BuyerPropertyId");
             _this20.BuyerUserID = params.get("BuyerUserID");
@@ -4819,7 +4819,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this24 = this;
 
-          this.user = JSON.parse(localStorage.getItem("users"));
+          this.user = JSON.parse(localStorage.getItem("admindata"));
           this.getUserDetails();
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             _this24.sellerPropertyId = params.get("sellerPropertyId");
@@ -6135,7 +6135,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UIElementsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          this.user = JSON.parse(localStorage.getItem("users"));
+          this.user = JSON.parse(localStorage.getItem("admindata"));
           document.getElementById("home").style.background = "white";
           document.getElementById("home").style.border = "none";
           document.getElementById("home").style.borderTop = "3px solid #E8E8E8";
@@ -7530,7 +7530,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this64 = this;
 
-          this.getUser = JSON.parse(localStorage.getItem("users"));
+          this.getUser = JSON.parse(localStorage.getItem("admindata"));
           document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             _this64.agemtTab = params.get("agemtTab");
@@ -7950,7 +7950,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this75 = this;
 
-          this.user = JSON.parse(localStorage.getItem("users"));
+          this.user = JSON.parse(localStorage.getItem("admindata"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
             _this75.UserUid = params.get("uid");
           });
@@ -33746,9 +33746,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
             _this257.userData = user;
-            localStorage.setItem("users", JSON.stringify(_this257.userData));
+            localStorage.setItem("admindata", JSON.stringify(_this257.userData));
           } else {
-            localStorage.setItem("users", null);
+            localStorage.setItem("admindata", null);
           }
         });
       }
@@ -34035,7 +34035,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     return this.afAuth.auth.signOut();
 
                   case 2:
-                    localStorage.removeItem("users");
+                    localStorage.removeItem("admindata");
                     window.location.reload();
                     this.router.navigate(['/']).then(function () {
                       window.location.reload();
@@ -34052,7 +34052,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "isLoggedIn",
         get: function get() {
-          var user = JSON.parse(localStorage.getItem("users"));
+          var user = JSON.parse(localStorage.getItem("admindata"));
           return user !== null && user.emailVerified !== false ? true : false;
         }
       }]);

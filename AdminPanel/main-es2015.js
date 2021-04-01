@@ -1533,7 +1533,7 @@ let AddUserComponent = class AddUserComponent {
         this.imageUplaod = true;
     }
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem("users"));
+        this.user = JSON.parse(localStorage.getItem("admindata"));
         this.getUserDetails();
     }
     getUserDetails() {
@@ -1758,7 +1758,7 @@ let AdminPanelComponent = class AdminPanelComponent {
         this.adminId = "ritinnijhawan@source-code.in";
     }
     ngOnInit() {
-        this.getUser = JSON.parse(localStorage.getItem("users"));
+        this.getUser = JSON.parse(localStorage.getItem("admindata"));
         if (this.getUser != null) {
             this.LoggedIn = true;
         }
@@ -1833,7 +1833,7 @@ let AdminPanelComponent = class AdminPanelComponent {
         this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_7__["map"])(changes => changes.map(c => (Object.assign({ id: c.payload.doc.id }, c.payload.doc.data()))))).subscribe(agent => { this.agentLength = agent.length; });
     }
     getUserDetails() {
-        this.getUser = JSON.parse(localStorage.getItem("users"));
+        this.getUser = JSON.parse(localStorage.getItem("admindata"));
         if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then((element) => {
@@ -2506,7 +2506,7 @@ let AgentEditPageComponent = class AgentEditPageComponent {
         this.imageUplaod = false;
     }
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem("users"));
+        this.user = JSON.parse(localStorage.getItem("admindata"));
         this.sub = this._Activatedroute.paramMap.subscribe((params) => {
             this.agentPropertyId = params.get("agentPropertyId");
             this.agentUserId = params.get("agentUserId");
@@ -2664,7 +2664,7 @@ let AgentPropertyEditPageComponent = class AgentPropertyEditPageComponent {
         this._location = _location;
     }
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem("users"));
+        this.user = JSON.parse(localStorage.getItem("admindata"));
         this.sub = this._Activatedroute.paramMap.subscribe((params) => {
             this.propertyID = params.get("propertyID");
             this.propertyuserId = params.get("propertyuserId");
@@ -2792,7 +2792,7 @@ let EditBuyerUserDetailsComponent = class EditBuyerUserDetailsComponent {
         this.isLoading = false;
     }
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem("users"));
+        this.user = JSON.parse(localStorage.getItem("admindata"));
         this.sub = this._Activatedroute.paramMap.subscribe((params) => {
             this.BuyerPropertyId = params.get("BuyerPropertyId");
             this.BuyerUserID = params.get("BuyerUserID");
@@ -2982,7 +2982,7 @@ let EditSellerUserDetailsComponent = class EditSellerUserDetailsComponent {
         this.uploadImage = false;
     }
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem("users"));
+        this.user = JSON.parse(localStorage.getItem("admindata"));
         this.getUserDetails();
         this.sub = this._Activatedroute.paramMap.subscribe((params) => {
             this.sellerPropertyId = params.get("sellerPropertyId");
@@ -3856,7 +3856,7 @@ let UIElementsComponent = class UIElementsComponent {
         this.editSingleBlogs = false;
     }
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem("users"));
+        this.user = JSON.parse(localStorage.getItem("admindata"));
         document.getElementById("home").style.background = "white";
         document.getElementById("home").style.border = "none";
         document.getElementById("home").style.borderTop = "3px solid #E8E8E8";
@@ -4695,7 +4695,7 @@ let UsersAgentTabComponent = class UsersAgentTabComponent {
         this.asc = [];
     }
     ngOnInit() {
-        this.getUser = JSON.parse(localStorage.getItem("users"));
+        this.getUser = JSON.parse(localStorage.getItem("admindata"));
         document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
         this.sub = this._Activatedroute.paramMap.subscribe((params) => {
             this.agemtTab = params.get("agemtTab");
@@ -4942,7 +4942,7 @@ let UsersEditPageComponent = class UsersEditPageComponent {
         this.sellerExpressedInterest = [];
     }
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem("users"));
+        this.user = JSON.parse(localStorage.getItem("admindata"));
         this.sub = this._Activatedroute.paramMap.subscribe((params) => {
             this.UserUid = params.get("uid");
         });
@@ -22183,10 +22183,10 @@ let AuthService = class AuthService {
         this.afAuth.authState.subscribe(user => {
             if (user) {
                 this.userData = user;
-                localStorage.setItem("users", JSON.stringify(this.userData));
+                localStorage.setItem("admindata", JSON.stringify(this.userData));
             }
             else {
-                localStorage.setItem("users", null);
+                localStorage.setItem("admindata", null);
             }
         });
     }
@@ -22251,7 +22251,7 @@ let AuthService = class AuthService {
     }
     // Returns true when user is looged in and email is verified
     get isLoggedIn() {
-        const user = JSON.parse(localStorage.getItem("users"));
+        const user = JSON.parse(localStorage.getItem("admindata"));
         return user !== null && user.emailVerified !== false ? true : false;
     }
     // Sign in with Google
@@ -22343,7 +22343,7 @@ let AuthService = class AuthService {
     SignOut() {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function* () {
             yield this.afAuth.auth.signOut();
-            localStorage.removeItem("users");
+            localStorage.removeItem("admindata");
             window.location.reload();
             this.router.navigate(['/'])
                 .then(() => {
