@@ -18343,18 +18343,16 @@ let NavigationBarComponent = class NavigationBarComponent {
     LoggedIn() {
         const Admin = JSON.parse(localStorage.getItem("user"));
         console.log(Admin);
-        // this.CMSSERVICE.getuserType(Admin.email).then((element) => {
-        //   if(element.data().UserType == "Admin")
-        //   {
-        //     window.location.replace(this.origin  + "AdminPanel");
-        //   }
-        //   else
-        //   {
-        //     this.isLoggedIn = true;
-        //     this.navLogin = false;
-        //     this._router.navigate["/"]
-        //   }
-        // })
+        this.CMSSERVICE.getuserType(Admin.email).then((element) => {
+            if (element.data().UserType == "Admin") {
+                this.authService.SignOut();
+            }
+            else {
+                this.isLoggedIn = true;
+                this.navLogin = false;
+                this._router.navigate["/"];
+            }
+        });
     }
     LoggedOut() {
         this.isLoggedIn = false;
