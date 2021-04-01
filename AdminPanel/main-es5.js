@@ -1791,7 +1791,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-nav></app-nav>\n\n<router-outlet (activate)=\"onActivate()\"></router-outlet>\n<app-Footer id=\"appfooter\"></app-Footer>\n\n";
+    __webpack_exports__["default"] = "<app-admin-header></app-admin-header>\n\n<router-outlet (activate)=\"onActivate()\"></router-outlet>\n\n\n";
     /***/
   },
 
@@ -2751,9 +2751,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AdminHeaderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          document.getElementById("appfooter").style.display = "none";
-          document.getElementById("header-main").style.display = "none";
-
+          // document.getElementById("appfooter").style.display = "none"
+          // document.getElementById("header-main").style.display = "none"
           if (this.route.routeConfig.component.name == "AdminPanelComponent") {
             this.dashboard = true;
             this.ActiveUser = false;
@@ -2767,7 +2766,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           if (this.route.routeConfig.component.name == "UIElementsComponent") {
-            console.log("test");
             this.dashboard = false;
             this.ActiveUser = false;
             this.UI = true;
@@ -2989,12 +2987,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getMatches();
           this.getAllUsers();
           this.getCountUser();
-          this.getAgentfees();
-
-          if (this.constructor.name == "AdminPanelComponent") {
-            document.getElementById("appfooter").style.display = "none";
-            document.getElementById("header-main").style.display = "none";
-          }
+          this.getAgentfees(); // if (this.constructor.name == "AdminPanelComponent") {
+          //   document.getElementById("appfooter").style.display = "none"
+          //   document.getElementById("header-main").style.display = "none"
+          // }
         }
       }, {
         key: "forgotEmail",
@@ -27092,19 +27088,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this217 = this;
-
-          var Admin = JSON.parse(localStorage.getItem("user"));
-          this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
-            if (element.data().UserType == "Admin") {
-              console.log("test");
-              window.location.replace(_this217.origin + "AdminPanel");
-            } else {
-              _this217.isLoggedIn = true;
-              _this217.navLogin = false;
-              _this217._router.navigate["/"];
-            }
-          });
+          var Admin = JSON.parse(localStorage.getItem("user")); // this.CMSSERVICE.getuserType(Admin.email).then((element) => {
+          //   if(element.data().UserType == "Admin")
+          //   {
+          //     console.log("test")
+          //     window.location.replace(this.origin  + "AdminPanel");
+          //   }
+          //   else
+          //   {
+          //     this.isLoggedIn = true;
+          //     this.navLogin = false;
+          //     this._router.navigate["/"]
+          //   }
+          // })
         }
       }, {
         key: "LoggedOut",
@@ -27117,46 +27113,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this218 = this;
+          var _this217 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this218.sellerProperty.push(element.data());
+                _this217.sellerProperty.push(element.data());
               }
             });
-            _this218.noSellerOfMatche = _this218.sellerProperty.length;
-            _this218.matches = _this218.buyerProperty.length + _this218.sellerProperty.length;
+            _this217.noSellerOfMatche = _this217.sellerProperty.length;
+            _this217.matches = _this217.buyerProperty.length + _this217.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this218.buyerProperty.push(element.data());
+              _this217.buyerProperty.push(element.data());
             });
-            _this218.noBuyerMatches = _this218.buyerProperty.length;
-            _this218.matches = _this218.buyerProperty.length + _this218.sellerProperty.length;
+            _this217.noBuyerMatches = _this217.buyerProperty.length;
+            _this217.matches = _this217.buyerProperty.length + _this217.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this219 = this;
+          var _this218 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this219.bellicon.push(item.data());
+              _this218.bellicon.push(item.data());
 
-              if (_this219.bellicon.length > 0) {
-                _this219.belliconone = false;
+              if (_this218.bellicon.length > 0) {
+                _this218.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this219.confirmInterest.push(item.data());
+                _this218.confirmInterest.push(item.data());
 
-                _this219.notifications = _this219.confirmInterest.length;
+                _this218.notifications = _this218.confirmInterest.length;
               } else {
-                _this219.notifications = 0;
+                _this218.notifications = 0;
               }
             });
           });
@@ -27232,14 +27228,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this220 = this;
+          var _this219 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this220.confirmInterests.push({
+                _this219.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -27258,20 +27254,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "initProfile",
         value: function initProfile() {
-          var _this221 = this;
+          var _this220 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
           if (this.user != null) {
             this.NavigationService.getAllUser(this.user.uid).then(function (element) {
               if (element.data().UserType == "Agent") {
-                _this221.agentCustomer = true;
+                _this220.agentCustomer = true;
               } else {
-                _this221.agentCustomer = false;
-                _this221.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
+                _this220.agentCustomer = false;
+                _this220.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
 
-                if (_this221.userName.length == 0) {
-                  _this221.userName = element.data().Name;
+                if (_this220.userName.length == 0) {
+                  _this220.userName = element.data().Name;
                 }
               }
             });
@@ -27283,7 +27279,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDocid",
         value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
-          var _this222 = this;
+          var _this221 = this;
 
           this.notificationoverlay = false;
           this.getNotification();
@@ -27298,8 +27294,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.Notification.Lastseen = this.now;
           this["return"] = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(function (data) {
-            _this222._router.navigate(["/myListing/myNestimate/action"]).then(function () {
-              _this222.notificationoverlay = false;
+            _this221._router.navigate(["/myListing/myNestimate/action"]).then(function () {
+              _this221.notificationoverlay = false;
               window.location.reload();
             });
           });
@@ -27307,19 +27303,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this223 = this;
+          var _this222 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               if (item.data().Lastseen == null) {
-                _this223.confirmInterests.push({
+                _this222.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
               } else {
-                _this223.confirmNotitfication.push({
+                _this222.confirmNotitfication.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -27330,7 +27326,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this224 = this;
+          var _this223 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -27339,25 +27335,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
               if (element.data().Lastseen == null) {
-                _this224.confirmInterests.push({
+                _this223.confirmInterests.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this224.confirmInterests.length > 0) {
-                  _this224.notificationoverlay = true;
-                  _this224.bellicontwo = true;
+                if (_this223.confirmInterests.length > 0) {
+                  _this223.notificationoverlay = true;
+                  _this223.bellicontwo = true;
                 }
               } else {
-                _this224.confirmNotitfication.push({
+                _this223.confirmNotitfication.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this224.confirmNotitfication.length > 0) {
-                  _this224.outside = true;
-                  _this224.notificationoverlay = true;
-                  _this224.bellicontwo = true;
+                if (_this223.confirmNotitfication.length > 0) {
+                  _this223.outside = true;
+                  _this223.notificationoverlay = true;
+                  _this223.bellicontwo = true;
                 }
               }
             });
@@ -27366,7 +27362,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this225 = this;
+          var _this224 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -27374,8 +27370,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this225.uid) {
-                _this225.confirmInterests = null;
+              if (element.UserId == _this224.uid) {
+                _this224.confirmInterests = null;
               }
             });
           });
@@ -27427,17 +27423,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this226 = this;
+          var _this225 = this;
 
           this.isLoading = false;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this226.isLoading = false;
+            _this225.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this227 = this;
+          var _this226 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -27448,24 +27444,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this227.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                  var dialogRef = _this226.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this227.UserSignIn
+                      message: _this226.UserSignIn
                     }
                   });
 
-                  _this227.isLoading = false;
+                  _this226.isLoading = false;
                 } else {
-                  _this227.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
+                  _this226.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
                   //   console.log(data)
                   //   this.isLoading = false;
                   // });
 
                 }
               } else {
-                _this227.isLoading = false;
+                _this226.isLoading = false;
 
-                var _dialogRef154 = _this227.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var _dialogRef154 = _this226.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -27597,10 +27593,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this228 = this;
+          var _this227 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this228.notificationContent = res.data().SingupFromMenu;
+            _this227.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
@@ -27629,10 +27625,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "leads",
         value: function leads() {
-          var _this229 = this;
+          var _this228 = this;
 
           this._router.navigate(['/Agenthome/leads']).then(function () {
-            _this229.Itemmenu();
+            _this228.Itemmenu();
 
             window.location.reload();
           });
@@ -27640,10 +27636,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Profile",
         value: function Profile() {
-          var _this230 = this;
+          var _this229 = this;
 
           this._router.navigate(['/Agenthome/profile']).then(function () {
-            _this230.Itemmenu();
+            _this229.Itemmenu();
 
             window.location.reload();
           });
@@ -27651,10 +27647,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Archieve",
         value: function Archieve() {
-          var _this231 = this;
+          var _this230 = this;
 
           this._router.navigate(['/Agenthome/archieve']).then(function () {
-            _this231.Itemmenu();
+            _this230.Itemmenu();
 
             window.location.reload();
           });
@@ -27662,10 +27658,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "manageMyNestimate",
         value: function manageMyNestimate() {
-          var _this232 = this;
+          var _this231 = this;
 
           this._router.navigate(['/myListing/myNestimate/tabdrop']).then(function () {
-            _this232.Itemmenu();
+            _this231.Itemmenu();
 
             window.location.reload();
           });
@@ -27673,10 +27669,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "profileNestimate",
         value: function profileNestimate() {
-          var _this233 = this;
+          var _this232 = this;
 
           this._router.navigate(['/myListing/profile/tabdrop']).then(function () {
-            _this233.Itemmenu();
+            _this232.Itemmenu();
 
             window.location.reload();
           });
@@ -27684,10 +27680,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "favorate",
         value: function favorate() {
-          var _this234 = this;
+          var _this233 = this;
 
           this._router.navigate(['/myListing/fav/tabdrop']).then(function () {
-            _this234.Itemmenu();
+            _this233.Itemmenu();
 
             window.location.reload();
           });
@@ -27695,10 +27691,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "recently",
         value: function recently() {
-          var _this235 = this;
+          var _this234 = this;
 
           this._router.navigate(['/myListing/recent/tabdrop']).then(function () {
-            _this235.Itemmenu();
+            _this234.Itemmenu();
 
             window.location.reload();
           });
@@ -27706,10 +27702,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "actionNeeded",
         value: function actionNeeded(id) {
-          var _this236 = this;
+          var _this235 = this;
 
           this._router.navigate(["/myListing/myNestimate/action/id"]).then(function () {
-            _this236.notificationoverlay = false;
+            _this235.notificationoverlay = false;
             window.location.reload();
           });
         }
@@ -27733,23 +27729,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this237 = this;
+          var _this236 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this237.user.Lastseen = _this237.now;
-            _this237.isLoading = false;
+            _this236.user.Lastseen = _this236.now;
+            _this236.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this238 = this;
+          var _this237 = this;
 
           this.isLoading = false;
           this.authService.GoogleAuth().then(function (data) {
-            _this238.isLoading = false;
+            _this237.isLoading = false;
           });
         }
       }, {
@@ -27776,13 +27772,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this239 = this;
+          var _this238 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this239.AgentSignIn = element.data().AgentSignIn;
-            _this239.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
+            _this238.AgentSignIn = element.data().AgentSignIn;
+            _this238.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
 
-            _this239.isLoading = false;
+            _this238.isLoading = false;
           });
         }
       }, {
@@ -28040,19 +28036,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this240 = this;
+          var _this239 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this240.confirmInterest.push({
+              _this239.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this240.confirmInterest);
+            console.log(_this239.confirmInterest);
           });
         }
       }, {
@@ -28470,13 +28466,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this241 = this;
+          var _this240 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this241.facebook = element.data().Facebook;
-              _this241.Instagram = element.data().Instragram;
-              _this241.Twitter = element.data().Twitter;
+              _this240.facebook = element.data().Facebook;
+              _this240.Instagram = element.data().Instragram;
+              _this240.Twitter = element.data().Twitter;
             });
           });
         }
@@ -29754,14 +29750,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this242 = this;
+          var _this241 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this242.idToken = params['id_token'];
-            _this242.accessToken = params['access_token'];
+            _this241.idToken = params['id_token'];
+            _this241.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this242._router.navigate(['/']).then(function () {
+            _this241._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -30001,11 +29997,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this243 = this;
+          var _this242 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this243.privacyPolicy = element.data().Privacy;
+              _this242.privacyPolicy = element.data().Privacy;
             });
           });
         }
@@ -30643,7 +30639,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this244 = this;
+          var _this243 = this;
 
           this.getOtherForm();
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -30654,36 +30650,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.userLogged();
             this.items();
             this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-              _this244.type = params.get("type");
+              _this243.type = params.get("type");
             });
           }
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this245 = this;
+          var _this244 = this;
 
           this.CMSSERVICE.getuserType(email).then(function (element) {
             if (element.data() != undefined) {
               if (element.data().UserType != "Agent") {
-                var dialogRef = _this245.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var dialogRef = _this244.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
-                    message: _this245.AgentSignIn
+                    message: _this244.AgentSignIn
                   }
                 });
               } else {
-                _this245.authService.SignIn(email, pass).then(function (data) {
-                  _this245.items();
+                _this244.authService.SignIn(email, pass).then(function (data) {
+                  _this244.items();
 
-                  _this245.userLogged();
+                  _this244.userLogged();
 
                   window.location.reload();
                 });
               }
             } else {
-              _this245.isLoading = false;
+              _this244.isLoading = false;
 
-              var _dialogRef155 = _this245.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+              var _dialogRef155 = _this244.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                 data: {
                   message: "User Does not exist"
                 }
@@ -30712,19 +30708,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this246 = this;
+          var _this245 = this;
 
           this.BuyerDetail = [];
           this.archieveUser = [];
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
               if (element.data().Archived == false) {
-                _this246.BuyerDetail.push({
+                _this245.BuyerDetail.push({
                   Detail: element.data(),
                   id: element.id
                 });
               } else {
-                _this246.archieveUser.push({
+                _this245.archieveUser.push({
                   Detail: element.data(),
                   id: element.id
                 });
@@ -30735,43 +30731,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this247 = this;
+          var _this246 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this247.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this247.userData));
+              _this246.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this246.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this247.loggedIn = true;
+              _this246.loggedIn = true;
 
-              _this247.agentItem();
+              _this246.agentItem();
 
-              _this247.checkUrl();
+              _this246.checkUrl();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this247.loggedIn = false;
+              _this246.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this248 = this;
+          var _this247 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this248.Companyname = element.data().company;
-              _this248.Address = element.data().address;
-              _this248.Postcode = element.data().postcode;
-              _this248.Phonenumber = element.data().phone;
-              _this248.Jobtitle = element.data().jobtitle;
-              _this248.SinglePercentage = element.data().solefees;
-              _this248.Multipercentage = element.data().multiplefees;
-              _this248.Image = element.data().image;
-              _this248.Fullname = element.data().fullname;
-              _this248.PropertyId = element.id;
-              _this248.UserId = _this248.user.uid;
+              _this247.Companyname = element.data().company;
+              _this247.Address = element.data().address;
+              _this247.Postcode = element.data().postcode;
+              _this247.Phonenumber = element.data().phone;
+              _this247.Jobtitle = element.data().jobtitle;
+              _this247.SinglePercentage = element.data().solefees;
+              _this247.Multipercentage = element.data().multiplefees;
+              _this247.Image = element.data().image;
+              _this247.Fullname = element.data().fullname;
+              _this247.PropertyId = element.id;
+              _this247.UserId = _this247.user.uid;
             });
           });
         }
@@ -30842,30 +30838,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "update",
         value: function update(docid, property) {
-          var _this249 = this;
+          var _this248 = this;
 
           property.Archived = true;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this249.items();
+            _this248.items();
           });
         }
       }, {
         key: "restore",
         value: function restore(docid, property) {
-          var _this250 = this;
+          var _this249 = this;
 
           property.Archived = false;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this250.items();
+            _this249.items();
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this251 = this;
+          var _this250 = this;
 
           this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
-            _this251.items();
+            _this250.items();
           });
         }
       }, {
@@ -30907,13 +30903,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this252 = this;
+          var _this251 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this252.AgentSignIn = element.data().AgentSignIn;
-            _this252.UserSignIn = element.data().UserSignIn;
-            _this252.WrongPassword = element.data().WrongPassword;
-            _this252.isLoading = false;
+            _this251.AgentSignIn = element.data().AgentSignIn;
+            _this251.UserSignIn = element.data().UserSignIn;
+            _this251.WrongPassword = element.data().WrongPassword;
+            _this251.isLoading = false;
           });
         }
       }]);
@@ -31309,7 +31305,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this253 = this;
+          var _this252 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -31318,10 +31314,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this253.id = params.get("id");
+            _this252.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this253.agents = data;
+            _this252.agents = data;
           });
           this.getAgentDetails();
           this.getAgentForm();
@@ -31329,7 +31325,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage, office) {
-          var _this254 = this;
+          var _this253 = this;
 
           if (this.agents.officephone != null || this.agents.phone != null) {
             var Office = parseInt(this.agents.officephone);
@@ -31433,25 +31429,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           } else {
             this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-              var dialogRef = _this254.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+              var dialogRef = _this253.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
                 data: {
                   message: "Profile Updated"
                 }
               });
 
-              _this254.edit = false;
+              _this253.edit = false;
             });
           }
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this255 = this;
+          var _this254 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this255.agents = element.data();
-              _this255.id = element.id;
+              _this254.agents = element.data();
+              _this254.id = element.id;
             });
           });
         }
@@ -31468,32 +31464,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this256 = this;
+          var _this255 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this256.FullName = element.data().FullName;
-            _this256.CompanyName = element.data().CompanyName;
-            _this256.Postcode = element.data().Postcode;
-            _this256.Address = element.data().Address;
-            _this256.JobTitle = element.data().JobTitle;
-            _this256.EmailAddress = element.data().EmailAddress;
-            _this256.emailvalidation = element.data().emailvalidation;
-            _this256.Password = element.data().Password;
-            _this256.officephone = element.data().officephone;
-            _this256.officephonevalidation = element.data().officephonevalidation;
-            _this256.officephonelength = element.data().officephonelength;
-            _this256.mobile = element.data().mobile;
-            _this256.mobilevalidity = element.data().mobilevalidity;
-            _this256.mobilelength = element.data().mobilelength;
-            _this256.solefees = element.data().solefees;
-            _this256.solefeesmore = element.data().solefeesmore;
-            _this256.solefeesless = element.data().solefeesless;
-            _this256.multiplefees = element.data().multiplefees;
-            _this256.multiplefeesmore = element.data().multiplefeesmore;
-            _this256.multiplefeesless = element.data().multiplefeesless;
-            _this256.Image = element.data().Image;
-            _this256.Imagesize = element.data().Imagesize;
-            _this256.isLoading = false;
+            _this255.FullName = element.data().FullName;
+            _this255.CompanyName = element.data().CompanyName;
+            _this255.Postcode = element.data().Postcode;
+            _this255.Address = element.data().Address;
+            _this255.JobTitle = element.data().JobTitle;
+            _this255.EmailAddress = element.data().EmailAddress;
+            _this255.emailvalidation = element.data().emailvalidation;
+            _this255.Password = element.data().Password;
+            _this255.officephone = element.data().officephone;
+            _this255.officephonevalidation = element.data().officephonevalidation;
+            _this255.officephonelength = element.data().officephonelength;
+            _this255.mobile = element.data().mobile;
+            _this255.mobilevalidity = element.data().mobilevalidity;
+            _this255.mobilelength = element.data().mobilelength;
+            _this255.solefees = element.data().solefees;
+            _this255.solefeesmore = element.data().solefeesmore;
+            _this255.solefeesless = element.data().solefeesless;
+            _this255.multiplefees = element.data().multiplefees;
+            _this255.multiplefeesmore = element.data().multiplefeesmore;
+            _this255.multiplefeesless = element.data().multiplefeesless;
+            _this255.Image = element.data().Image;
+            _this255.Imagesize = element.data().Imagesize;
+            _this255.isLoading = false;
           });
         }
       }]);
@@ -31931,19 +31927,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this257 = this;
+          var _this256 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this257.agents = element.data();
-              _this257.fullname = _this257.agents.fullname;
-              _this257.address = _this257.agents.address;
-              _this257.postcode = _this257.agents.postcode;
-              _this257.email = _this257.agents.email;
-              _this257.phone = _this257.agents.phone;
-              _this257.officephone = _this257.agents.officephone;
-              _this257.sole = _this257.agents.solefees;
-              _this257.multi = _this257.agents.multiplefees;
+              _this256.agents = element.data();
+              _this256.fullname = _this256.agents.fullname;
+              _this256.address = _this256.agents.address;
+              _this256.postcode = _this256.agents.postcode;
+              _this256.email = _this256.agents.email;
+              _this256.phone = _this256.agents.phone;
+              _this256.officephone = _this256.agents.officephone;
+              _this256.sole = _this256.agents.solefees;
+              _this256.multi = _this256.agents.multiplefees;
             });
           });
         }
@@ -33734,7 +33730,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location, dialog) {
-        var _this258 = this;
+        var _this257 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -33749,8 +33745,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this258.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this258.userData));
+            _this257.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this257.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -33904,7 +33900,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthLogin",
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee70() {
-            var _this259 = this;
+            var _this258 = this;
 
             var result, User, dialogRef;
             return regeneratorRuntime.wrap(function _callee70$(_context70) {
@@ -33919,9 +33915,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     result = _context70.sent;
                     User = "User";
                     this.ngZone.run(function () {
-                      _this259.SetUserData(result.user);
+                      _this258.SetUserData(result.user);
 
-                      _this259.createUserChecker(result.user, User); //window.location.reload()
+                      _this258.createUserChecker(result.user, User); //window.location.reload()
 
                     });
                     _context70.next = 11;
@@ -33948,7 +33944,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthSignup",
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee71() {
-            var _this260 = this;
+            var _this259 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee71$(_context71) {
@@ -33963,7 +33959,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 4:
                     result = _context71.sent;
                     this.ngZone.run(function () {
-                      _this260.SetUserData(result.user);
+                      _this259.SetUserData(result.user);
                     });
                     _context71.next = 11;
                     break;
@@ -34498,37 +34494,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this261 = this;
+          var _this260 = this;
 
           this.isLoading = true;
           this.viewResult = true;
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this261.isLoading = true;
+              _this260.isLoading = true;
 
-              _this261.listingBuyers.push(element.data());
+              _this260.listingBuyers.push(element.data());
             });
 
-            _this261.HomeService.getlistingseller(_this261.uid).then(function (res) {
+            _this260.HomeService.getlistingseller(_this260.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this261.isLoading = true;
+                _this260.isLoading = true;
 
-                _this261.listingSeller.push(elements.data());
+                _this260.listingSeller.push(elements.data());
               });
-              _this261.isLoading = true;
-              _this261.checkNumberNestimates = _this261.listingBuyers.length + _this261.listingSeller.length;
-              _this261.isLoading = true;
+              _this260.isLoading = true;
+              _this260.checkNumberNestimates = _this260.listingBuyers.length + _this260.listingSeller.length;
+              _this260.isLoading = true;
 
-              if (_this261.checkNumberNestimates > 0) {
-                _this261.isLoading = true;
-                _this261.appMatches = true;
-                _this261.interval = setInterval(function () {
-                  _this261.isLoading = false;
+              if (_this260.checkNumberNestimates > 0) {
+                _this260.isLoading = true;
+                _this260.appMatches = true;
+                _this260.interval = setInterval(function () {
+                  _this260.isLoading = false;
                 }, 3000);
               } else {
-                _this261.isLoading = true;
-                _this261.viewResult = false;
-                _this261.isLoading = false;
+                _this260.isLoading = true;
+                _this260.viewResult = false;
+                _this260.isLoading = false;
               }
             });
           });
@@ -35200,11 +35196,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MiddleSliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this262 = this;
+          var _this261 = this;
 
           this.ActivatedRoutes.paramMap.subscribe(function (element) {});
           this.SellerNestimateDetails.getSellerRequirement(this.userID, this.child).then(function (element) {
-            _this262.AllImages = element.data().Images;
+            _this261.AllImages = element.data().Images;
           });
         }
       }]);
@@ -35486,12 +35482,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this263 = this;
+          var _this262 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
             password: password
           }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            // login successful if there's a jwt token in the response
+            if (response.jwt && response.user) {
+              // store user details and jwt token in local storage to keep user logged in between page refreshes
+              localStorage.setItem('updatedUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentJwt', response.jwt);
+              _this262.userData = response.user;
+              _this262.authToken = sessionStorage.getItem('currentJwt');
+
+              _this262.currentUserSubject.next(response.user);
+            }
+
+            return response.user;
+          }));
+        }
+      }, {
+        key: "Googlelogin",
+        value: function Googlelogin(token, accessToken) {
+          var _this263 = this;
+
+          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
@@ -35508,12 +35525,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
-        key: "Googlelogin",
-        value: function Googlelogin(token, accessToken) {
+        key: "Facebooklogin",
+        value: function Facebooklogin() {
           var _this264 = this;
 
-          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            // login successful if there's a jwt token in the response
+          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            console.log(response); // login successful if there's a jwt token in the response
+
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
@@ -35529,31 +35547,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
-        key: "Facebooklogin",
-        value: function Facebooklogin() {
-          var _this265 = this;
-
-          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            console.log(response); // login successful if there's a jwt token in the response
-
-            if (response.jwt && response.user) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem('updatedUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentJwt', response.jwt);
-              _this265.userData = response.user;
-              _this265.authToken = sessionStorage.getItem('currentJwt');
-
-              _this265.currentUserSubject.next(response.user);
-            }
-
-            return response.user;
-          }));
-        }
-      }, {
         key: "logout",
         value: function logout() {
-          var _this266 = this;
+          var _this265 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -35561,7 +35557,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this266.router.navigate(["/homenew"]);
+            _this265.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -35788,21 +35784,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this267 = this;
+          var _this266 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           console.log(this.user);
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this267.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this267.userData));
+              _this266.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this266.userData));
 
-              _this267.LoggedIn();
+              _this266.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this267.LoggedOut();
+              _this266.LoggedOut();
             }
           });
 
@@ -35834,58 +35830,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this268 = this;
+          var _this267 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this268.isLoading = false;
+            _this267.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this269 = this;
+          var _this268 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this269.isLoading = false;
+            _this268.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this270 = this;
+          var _this269 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this270.isLoading = false;
+            _this269.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this271 = this;
+          var _this270 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this271.KnowUser.push(element.data());
+              _this270.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this271.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this270.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this271.isLoading = false;
+                _this270.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this271.authService.SignIn(email, pass).then(function (data) {
-                  _this271.isLoading = false;
+                _this270.authService.SignIn(email, pass).then(function (data) {
+                  _this270.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -35969,21 +35965,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this272 = this;
+          var _this271 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this272.notificationContent = res.data().SingupFromMenu;
+            _this271.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this273 = this;
+          var _this272 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this273.topLine = element.data().topLine;
-              _this273.secondLine = element.data().SecondLine;
+              _this272.topLine = element.data().topLine;
+              _this272.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -36114,11 +36110,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this274 = this;
+          var _this273 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (element) {
             element.forEach(function (element) {
-              _this274.termsCondition = element.data().Terms;
+              _this273.termsCondition = element.data().Terms;
             });
           });
         }

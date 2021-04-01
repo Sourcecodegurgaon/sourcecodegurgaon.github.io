@@ -1150,7 +1150,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-nav></app-nav>\n\n<router-outlet (activate)=\"onActivate()\"></router-outlet>\n<app-Footer id=\"appfooter\"></app-Footer>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-admin-header></app-admin-header>\n\n<router-outlet (activate)=\"onActivate()\"></router-outlet>\n\n\n");
 
 /***/ }),
 
@@ -1610,8 +1610,8 @@ let AdminHeaderComponent = class AdminHeaderComponent {
         this.AdminAuthService = AdminAuthService;
     }
     ngOnInit() {
-        document.getElementById("appfooter").style.display = "none";
-        document.getElementById("header-main").style.display = "none";
+        // document.getElementById("appfooter").style.display = "none"
+        // document.getElementById("header-main").style.display = "none"
         if (this.route.routeConfig.component.name == "AdminPanelComponent") {
             this.dashboard = true;
             this.ActiveUser = false;
@@ -1624,7 +1624,6 @@ let AdminHeaderComponent = class AdminHeaderComponent {
             this.UI = false;
         }
         if (this.route.routeConfig.component.name == "UIElementsComponent") {
-            console.log("test");
             this.dashboard = false;
             this.ActiveUser = false;
             this.UI = true;
@@ -1779,10 +1778,10 @@ let AdminPanelComponent = class AdminPanelComponent {
         this.getAllUsers();
         this.getCountUser();
         this.getAgentfees();
-        if (this.constructor.name == "AdminPanelComponent") {
-            document.getElementById("appfooter").style.display = "none";
-            document.getElementById("header-main").style.display = "none";
-        }
+        // if (this.constructor.name == "AdminPanelComponent") {
+        //   document.getElementById("appfooter").style.display = "none"
+        //   document.getElementById("header-main").style.display = "none"
+        // }
     }
     forgotEmail(email) {
         this.AuthService.ForgotPassword(email).then((data) => {
@@ -18342,17 +18341,19 @@ let NavigationBarComponent = class NavigationBarComponent {
     }
     LoggedIn() {
         const Admin = JSON.parse(localStorage.getItem("user"));
-        this.CMSSERVICE.getuserType(Admin.email).then((element) => {
-            if (element.data().UserType == "Admin") {
-                console.log("test");
-                window.location.replace(this.origin + "AdminPanel");
-            }
-            else {
-                this.isLoggedIn = true;
-                this.navLogin = false;
-                this._router.navigate["/"];
-            }
-        });
+        // this.CMSSERVICE.getuserType(Admin.email).then((element) => {
+        //   if(element.data().UserType == "Admin")
+        //   {
+        //     console.log("test")
+        //     window.location.replace(this.origin  + "AdminPanel");
+        //   }
+        //   else
+        //   {
+        //     this.isLoggedIn = true;
+        //     this.navLogin = false;
+        //     this._router.navigate["/"]
+        //   }
+        // })
     }
     LoggedOut() {
         this.isLoggedIn = false;
