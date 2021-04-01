@@ -27056,6 +27056,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.hideRegister = true;
           }
 
+          this.LoggedIn();
           this.getOtherForm();
           this.initProfile();
           new Date().getTime() / 1000;
@@ -27095,7 +27096,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var _this217 = this;
 
           var Admin = JSON.parse(localStorage.getItem("user"));
-          console.log(Admin);
           this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
             if (element.data().UserType == "Admin") {
               _this217.authService.SignOut();

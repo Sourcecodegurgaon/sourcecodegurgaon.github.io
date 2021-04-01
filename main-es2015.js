@@ -18308,6 +18308,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         if (window.location.href == this.origin + "Agenthome/leads" || window.location.href == this.origin + "agentSignup" || window.location.href == this.origin + "Agentsignupform" || window.location.href == this.origin + "Agenthome/profile" || window.location.href == this.origin + "Agenthome/archieve" || window.location.href == this.origin + "selectedAgentbuyerdetail") {
             this.hideRegister = true;
         }
+        this.LoggedIn();
         this.getOtherForm();
         this.initProfile();
         new Date().getTime() / 1000;
@@ -18342,7 +18343,6 @@ let NavigationBarComponent = class NavigationBarComponent {
     }
     LoggedIn() {
         const Admin = JSON.parse(localStorage.getItem("user"));
-        console.log(Admin);
         this.CMSSERVICE.getuserType(Admin.email).then((element) => {
             if (element.data().UserType == "Admin") {
                 this.authService.SignOut();
