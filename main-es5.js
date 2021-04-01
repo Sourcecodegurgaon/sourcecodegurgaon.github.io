@@ -27045,6 +27045,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function ngOnInit() {
           var _this216 = this;
 
+          this.LoggedIn();
           this.origin = window.location.origin + "/#/";
           var currentURL = window.location; // console.log(currentURL);
 
@@ -27056,7 +27057,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.hideRegister = true;
           }
 
-          this.LoggedIn();
           this.getOtherForm();
           this.initProfile();
           new Date().getTime() / 1000;
@@ -27072,9 +27072,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   _this216.belliconone = false;
                   _this216.bellicontwo = false;
                 });
-              });
+              }); //this.LoggedIn();
 
-              _this216.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
@@ -27098,11 +27097,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var Admin = JSON.parse(localStorage.getItem("user"));
           this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
             if (element.data().UserType == "Admin") {
-              _this217.authService.SignOut();
-            } else {
-              _this217.isLoggedIn = true;
-              _this217.navLogin = false;
-              _this217._router.navigate["/"];
+              _this217.LoggedOut();
             }
           });
         }

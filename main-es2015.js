@@ -18299,6 +18299,7 @@ let NavigationBarComponent = class NavigationBarComponent {
     //     this.Itemmenu()
     //  }
     ngOnInit() {
+        this.LoggedIn();
         this.origin = window.location.origin + "/#/";
         var currentURL = window.location;
         // console.log(currentURL);
@@ -18308,7 +18309,6 @@ let NavigationBarComponent = class NavigationBarComponent {
         if (window.location.href == this.origin + "Agenthome/leads" || window.location.href == this.origin + "agentSignup" || window.location.href == this.origin + "Agentsignupform" || window.location.href == this.origin + "Agenthome/profile" || window.location.href == this.origin + "Agenthome/archieve" || window.location.href == this.origin + "selectedAgentbuyerdetail") {
             this.hideRegister = true;
         }
-        this.LoggedIn();
         this.getOtherForm();
         this.initProfile();
         new Date().getTime() / 1000;
@@ -18325,7 +18325,7 @@ let NavigationBarComponent = class NavigationBarComponent {
                         this.bellicontwo = false;
                     });
                 });
-                this.LoggedIn();
+                //this.LoggedIn();
             }
             else {
                 localStorage.setItem("user", null);
@@ -18345,12 +18345,7 @@ let NavigationBarComponent = class NavigationBarComponent {
         const Admin = JSON.parse(localStorage.getItem("user"));
         this.CMSSERVICE.getuserType(Admin.email).then((element) => {
             if (element.data().UserType == "Admin") {
-                this.authService.SignOut();
-            }
-            else {
-                this.isLoggedIn = true;
-                this.navLogin = false;
-                this._router.navigate["/"];
+                this.LoggedOut();
             }
         });
     }
