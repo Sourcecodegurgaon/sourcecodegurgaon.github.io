@@ -316,6 +316,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/tooltip/tooltip.component.html":
+  /*!************************************************************************************************************!*\
+    !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/tooltip/tooltip.component.html ***!
+    \************************************************************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function node_modulesRawLoaderDistCjsJsSrcAppAdminPanelUielementsTooltipTooltipComponentHtml(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = "\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n    <div class=\"custom-loader\">\n      <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n      <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n    </div>\n  \n  </div>\n\n\n<mat-card class=\"home-page-banner\">\n    <div class=\"profile-heading profile-heading-buyer\">\n      Tooltip\n    </div>\n  \n    <div class=\"fields-error-form\">\n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\"><span id=\"Email\">My Nestimate Tooltip</span></mat-label>\n        <input matInput name=\"nestimate\" [(ngModel)]=\"nestimate\" #Emails>\n      </mat-form-field>\n  \n  \n      <mat-form-field class=\"full-width\" appearance=\"outline\">\n        <mat-label class=\"fixed-Label\">Express Interest Tooltip</mat-label>\n        <input matInput name=\"express\" [(ngModel)]=\"express\">\n      </mat-form-field>\n\n  \n    </div>\n    <div class=\"update-button\" (click)=\"updateMyDetailError()\">\n      <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n    </div>\n  </mat-card>\n";
+    /***/
+  },
+
+  /***/
   "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html":
   /*!*******************************************************************************************************!*\
     !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/uielements.component.html ***!
@@ -331,7 +351,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n  </div>\n\n</div>\n\n<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n      <div class=\"top-bar-user-heading\">\n        UI Elements\n      </div>\n      <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n      </div>\n\n\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"main-container-uielements\">\n\n    <div class=\"mat-card-ui-elelment\">\n      <div class=\"top-tab-bar\">\n        <div class=\"tab-text\" (click)=\"homePages()\" id=\"home\">Home Page</div>\n        <div class=\"tab-text\" (click)=\"Notifications()\" id=\"notification\">Blue Notification</div>\n        <div class=\"tab-text\" id=\"seller\" (click)=\"SellerDetail()\">Forms Image</div>\n        <div class=\"tab-text\" id=\"buyer\" (click)=\"BuyerDetail()\">Pop Up Messages</div>\n        <div class=\"tab-text\" id=\"privacy\" (click)=\"privacy()\">Privacy Policy</div>\n        <div class=\"tab-text\" id=\"terms\" (click)=\"terms()\">Terms & Conditon</div>\n        <!-- <div class=\"tab-text\" id=\"adve\" (click)=\"terms()\">Advertisement</div> -->\n      </div>\n\n\n      <div class=\"mat-home-page-card\" *ngIf=\"homePage\">\n\n\n\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading\">\n            Banner Photo\n          </div>\n\n          <div class=\"main-container-banner-image \">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{bannerUrl}}\" class=\"left-image-container top-image\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uploadTopBannerImage()\" ><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n\n\n\n                <img src=\"{{bannerUrl}}\" class=\"image-agent top-image\" *ngIf=\"bannerUpload\">\n\n                <div class=\"file-upload\" *ngIf=\"!bannerUpload\">\n                  <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"topimage\">\n                </div>\n              </div>\n             <div class=\"note-container\">\n               <div class=\"note-wrapper-contaoner\">\n              <span class=\"note-area\">*Note - </span>\n            </div>\n            <div class=\"note-ouput-contaoner\">\n              <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n              <span class=\"note-area\"> Image dimension must be 783x522.</span>\n            </div>\n\n             </div>\n              \n            </div>\n          </div>\n\n\n<div style=\"height:3vh\"></div>\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{SecondBannerImage}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uplodSecondImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n                <img src=\"{{SecondBannerImage}}\" class=\"image-agent\" *ngIf=\"BannerTwo\">\n                <div class=\"file-upload\" *ngIf=\"!BannerTwo\">\n                  <form #form class=\"upload-form\">\n                    <input type=\"file\" (change)=\"LoweBanner($event)\" accept=\".png,.jpg\">\n                  </form>\n\n                </div>\n              </div>\n\n              <div class=\"note-container\">\n                <div class=\"note-wrapper-contaoner\">\n               <span class=\"note-area\">*Note - </span>\n             </div>\n             <div class=\"note-ouput-contaoner\">\n               <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n               <span class=\"note-area\"> Image Dimension must be 2250x1500.</span>\n             </div>\n \n              </div>\n              \n            </div>\n          </div>\n        </mat-card>\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Start Your Home Journey Now\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step1UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step1Image}}\" class=\"image-agent\" *ngIf=\"step1NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step1NotUpload\">\n\n                    <input type=\"file\" (change)=\"step1upload($event)\" accept=\".png,.jpg\"><br>\n                  \n                  </div>\n                 \n\n                </div>\n\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n             \n              </div>\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step1ImageText\" [(ngModel)]=\"Step1ImageText \">\n          </textarea>\n\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step2UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step2Image}}\" class=\"image-agent\" *ngIf=\"step2NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step2NotUpload\">\n\n                    <input type=\"file\" (change)=\"step2upload($event)\" accept=\".png,.jpg\">\n\n                  </div>\n\n\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Review Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step2ImageText\" [(ngModel)]=\"Step2ImageText\">\n                </textarea>\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step3UploadImag()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step3Image}}\" class=\"image-agent\" *ngIf=\"step3NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step3NotUpload\">\n\n                    <input type=\"file\" (change)=\"step3upload($event)\" accept=\".png,.jpg\" name=\"step3ImageNew\"\n                      [(ngModel)]=\"step3ImageNew\">\n\n                  </div>\n\n\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step3ImageText\" [(ngModel)]=\"Step3ImageText\">\n                </textarea>\n            </div>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Blogs\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngFor=\"let allBlogs of allBlogs\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"uploadBlogImage(allBlogs.Id)\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                    <div class=\"remove-option\">\n                      <span class=\"line\"> | </span> <span (click)=\"removeBlog(allBlogs.Id)\">Remove</span>\n\n                    </div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{allBlogs.Detail.BlogImage}}\" class=\"image-agent\" *ngIf=\"!blogUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"blogUpload\">\n\n                    <input type=\"file\" (change)=\"uploadBlog($event)\" accept=\".png,.jpg\" name=\"image\">\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"allBlogs.Detail.TextBlog\">\n              </textarea>\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\"  [(ngModel)]=\"allBlogs.Detail.BlogLink\">\n              </mat-form-field>\n         \n           \n            </div>\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngIf=\"addNewBlog\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\"></div>\n                  </div>\n\n\n                  <div class=\"close-edit-blog\" (click)=\"closeaddNewBlog()\"><img src=\"../../../assets/Images/cross.png\" class=\"cross-image-ui\"></div>\n                </div>\n                <div class=\"image-user\">\n                  <div class=\"file-upload\">\n                    <input type=\"file\" (change)=\"newBlogPicture($event)\" accept=\".png,.jpg\" name=\"BlogImage\">\n                  </div>\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 550 × 340.</span>\n               </div>\n   \n                </div>\n               \n              </div>\n           \n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"blog.TextBlog\">\n            </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"blog.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n\n          </div>\n\n          <div class=\"update-button update-add-more\" (click)=\"addMoreBlog()\">\n\n            <button mat-button color=\"primary\" class=\"button-color\">Add More</button>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Footer\n          </div>\n\n          <div class=\"main-contianer-journey footer-area\">\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Facebook</span></mat-label>\n              <input matInput name=\"Facebook\" [(ngModel)]=\"footer.Facebook\" #Phone>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Instagram Link</span></mat-label>\n              <input matInput name=\"Instragram\" [(ngModel)]=\"footer.Instragram\" #Phone>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Twitter</span></mat-label>\n              <input matInput name=\"Twitter\" [(ngModel)]=\"footer.Twitter\" #Phone>\n            </mat-form-field>\n          </div>\n\n\n        </mat-card>\n\n        <div class=\"update-button\" (click)=\"updateDetails()\">\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </div>\n\n\n      <div class=\"edit-blog-container\" *ngIf=\"editSingleBlogs\">\n        <div class=\"sub-container-edit-popup\">\n          <div class=\"close-edit-blog\" (click)=\"closeUpdateBlog()\"><img src=\"../../../assets/Images/cross.png\" class=\"cross-image-ui\"></div>\n          <div class=\"agent-image-upload journey-image-container \">\n            <div class=\"image-user\">\n              <div class=\"file-upload edit-blog-container-image\">\n                <input type=\"file\" (change)=\"uploadBlog($event)\" accept=\".png,.jpg\" name=\"image\">\n              </div>\n\n            </div>\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image Dimension must be 550 × 340.</span>\n           </div>\n\n            </div>\n           \n          </div>\n          <div class=\"outputText\"></div>\n          <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"editTextBlog\"> </textarea>\n          <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n            <input matInput name=\"BlogLink\" [(ngModel)]=\"EditBlogLink\">\n          </mat-form-field>\n          <div class=\"update-button update-add-more\" (click)=\"updateOpenedBlog(singleBlogId)\">\n            <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n          </div>\n        </div>\n\n      </div>\n\n\n\n\n\n\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"Notification\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          My Nestimate Buyer Details\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"MynestimateBuyerDetails\"\n            [(ngModel)]=\"MynestimateBuyerDetails\">\n      </textarea>\n        </div>\n\n\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Sing Up From Menu\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SingupFromMenu\" [(ngModel)]=\"SingupFromMenu\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Action Needed\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerActionNeeded\" [(ngModel)]=\"BuyerActionNeeded\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Matches Express Interest Notifcation\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerMatchesExpressInterestNotifcation\"\n            [(ngModel)]=\"BuyerMatchesExpressInterestNotifcation\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Sign Up Notification\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerSignupNotification\"\n            [(ngModel)]=\"BuyerSignupNotification\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Seller Form Sing Up Notification\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SellerFormSingupNotification\"\n            [(ngModel)]=\"SellerFormSingupNotification\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Seller Matches Express Interest Notifcation\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SellerMatchesExpressInterestNotifcation\"\n            [(ngModel)]=\"SellerMatchesExpressInterestNotifcation\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n\n      <div class=\"update-button\" (click)=\"updateNotification()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"SellerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Owner Personal Details/Property Details \n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{SellerPropertyRightImage}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{SellerPropertyRightImage}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"sellerupload($event)\" accept=\".png,.jpg\">\n\n              </div>\n            </div>\n\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image dimension must be 783x522.</span>\n           </div>\n\n            </div>\n          </div>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </mat-card>\n\n\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Seeker Personal Details/Property Details \n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{BuyerPropertyRightImages}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{BuyerPropertyRightImages}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"buyerupload($event)\" accept=\".png,.jpg\">\n\n              </div>\n            </div>\n\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image dimension must be 783x522.</span>\n           </div>\n\n            </div>\n          </div>\n        </div>\n        <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </mat-card>\n\n    </div>\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"BuyerDetails\">\n\n      <div class=\"drop-down-error\">\n        <mat-form-field appearance=\"outline\">\n          <mat-label>Pop Up Messages</mat-label>\n          <mat-select name=\"formType\" [(ngModel)]=\"formType\">\n            <mat-option value=\"seeker\" (click)=\"showSeekerForm()\">Seekers Form</mat-option>\n            <mat-option value=\"owner\" (click)=\"showOwnerForm()\">Owner Form</mat-option>\n            <mat-option value=\"agent\" (click)=\"showAgentForm()\">Agent Form</mat-option>\n            <mat-option value=\"details\" (click)=\"showMyDetailForm()\">My Details</mat-option>\n            <mat-option value=\"other\" (click)=\"showOtherForm()\">Other</mat-option>\n          </mat-select>\n        </mat-form-field>\n      </div>\n\n\n      <div style=\"height: 1vh;\"></div>\n      <app-seekerformerror *ngIf=\"seekerErrorForm\"></app-seekerformerror>\n      <app-ownerformerror *ngIf=\"ownerErrorForm\"></app-ownerformerror>\n      <app-agentformerror *ngIf=\"agentErrorForm\"></app-agentformerror>\n      <app-othererror *ngIf=\"otherErrorForm\"></app-othererror>\n      <app-mydetailserror *ngIf=\"mydetailErrorForm\"></app-mydetailserror>\n\n\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"PrivacyPolicy\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Privacy Policy\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Privacy\" [(ngModel)]=\"Privacy\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updatePrivacyTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"TermConditon\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Terms & Condition\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Terms\" [(ngModel)]=\"Terms\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n\n    <div class=\"mat-advertisemment\" *ngIf=\"advertise\">\n\n      <app-advertisement></app-advertisement>\n    </div>\n  </div>\n\n\n\n\n\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Updating...</p>\n  </div>\n\n</div>\n\n<app-admin-header></app-admin-header>\n\n<div class=\"user-agent-tab-main-container\">\n\n  <div class=\"top-bar-container\">\n\n    <div class=\"left-container\">\n      <div class=\"top-bar-user-heading\">\n        UI Elements\n      </div>\n      <div class=\"lower-text-heading\">\n        Welcome back, {{username}}\n      </div>\n\n\n    </div>\n    <div class=\"right-text-container\">\n      <div class=\"top-bar-user-heading\">\n        <img src=\"{{image}}\" class=\"image-people\">\n      </div>\n      <div class=\"lower-text-heading\">\n        {{username}}\n      </div>\n    </div>\n  </div>\n\n\n  <div class=\"main-container-uielements\">\n\n    <div class=\"mat-card-ui-elelment\">\n      <div class=\"top-tab-bar\">\n        <div class=\"tab-text\" (click)=\"homePages()\" id=\"home\">Home Page</div>\n        <div class=\"tab-text\" (click)=\"Notifications()\" id=\"notification\">Blue Notification</div>\n        <div class=\"tab-text\" id=\"seller\" (click)=\"SellerDetail()\">Forms Image</div>\n        <div class=\"tab-text\" id=\"buyer\" (click)=\"BuyerDetail()\">Pop Up Messages</div>\n        <div class=\"tab-text\" id=\"privacy\" (click)=\"privacy()\">Privacy Policy</div>\n        <div class=\"tab-text\" id=\"terms\" (click)=\"terms()\">Terms & Conditon</div>\n        <!-- <div class=\"tab-text\" id=\"adve\" (click)=\"terms()\">Advertisement</div> -->\n      </div>\n\n\n      <div class=\"mat-home-page-card\" *ngIf=\"homePage\">\n\n\n\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading\">\n            Banner Photo\n          </div>\n\n          <div class=\"main-container-banner-image \">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{bannerUrl}}\" class=\"left-image-container top-image\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uploadTopBannerImage()\" ><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n\n\n\n                <img src=\"{{bannerUrl}}\" class=\"image-agent top-image\" *ngIf=\"bannerUpload\">\n\n                <div class=\"file-upload\" *ngIf=\"!bannerUpload\">\n                  <input type=\"file\" (change)=\"upload($event)\" accept=\".png,.jpg\" name=\"topimage\">\n                </div>\n              </div>\n             <div class=\"note-container\">\n               <div class=\"note-wrapper-contaoner\">\n              <span class=\"note-area\">*Note - </span>\n            </div>\n            <div class=\"note-ouput-contaoner\">\n              <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n              <span class=\"note-area\"> Image dimension must be 783x522.</span>\n            </div>\n\n             </div>\n              \n            </div>\n          </div>\n\n\n<div style=\"height:3vh\"></div>\n          <div class=\"main-container-banner-image\">\n\n            <div class=\"top-banner-image\">\n              <img src=\"{{SecondBannerImage}}\" class=\"left-image-container\">\n\n            </div>\n\n            <div class=\"agent-image-upload\">\n\n              <div class=\"upload-image-first-container\">\n                <div>\n\n                </div>\n                <div class=\"edit-image-part\">\n                  <div class=\"add-more-area\" (click)=\"uplodSecondImage()\"><img\n                      src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                </div>\n\n\n\n              </div>\n              <div class=\"image-user\">\n                <img src=\"{{SecondBannerImage}}\" class=\"image-agent\" *ngIf=\"BannerTwo\">\n                <div class=\"file-upload\" *ngIf=\"!BannerTwo\">\n                  <form #form class=\"upload-form\">\n                    <input type=\"file\" (change)=\"LoweBanner($event)\" accept=\".png,.jpg\">\n                  </form>\n\n                </div>\n              </div>\n\n              <div class=\"note-container\">\n                <div class=\"note-wrapper-contaoner\">\n               <span class=\"note-area\">*Note - </span>\n             </div>\n             <div class=\"note-ouput-contaoner\">\n               <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n               <span class=\"note-area\"> Image Dimension must be 2250x1500.</span>\n             </div>\n \n              </div>\n              \n            </div>\n          </div>\n        </mat-card>\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Start Your Home Journey Now\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step1UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step1Image}}\" class=\"image-agent\" *ngIf=\"step1NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step1NotUpload\">\n\n                    <input type=\"file\" (change)=\"step1upload($event)\" accept=\".png,.jpg\"><br>\n                  \n                  </div>\n                 \n\n                </div>\n\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n             \n              </div>\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step1ImageText\" [(ngModel)]=\"Step1ImageText \">\n          </textarea>\n\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step2UploadImage()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step2Image}}\" class=\"image-agent\" *ngIf=\"step2NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step2NotUpload\">\n\n                    <input type=\"file\" (change)=\"step2upload($event)\" accept=\".png,.jpg\">\n\n                  </div>\n\n\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Review Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step2ImageText\" [(ngModel)]=\"Step2ImageText\">\n                </textarea>\n            </div>\n\n\n\n            <div class=\"main-container-banner-image image-journey-container\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"step3UploadImag()\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{Step3Image}}\" class=\"image-agent\" *ngIf=\"step3NotUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"!step3NotUpload\">\n\n                    <input type=\"file\" (change)=\"step3upload($event)\" accept=\".png,.jpg\" name=\"step3ImageNew\"\n                      [(ngModel)]=\"step3ImageNew\">\n\n                  </div>\n\n\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 472 × 475.</span>\n               </div>\n   \n                </div>\n              </div>\n\n\n              <div class=\"outputText\">Create your Nestimate</div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"20\" name=\"Step3ImageText\" [(ngModel)]=\"Step3ImageText\">\n                </textarea>\n            </div>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Blogs\n          </div>\n\n          <div class=\"main-contianer-journey\">\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngFor=\"let allBlogs of allBlogs\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\" (click)=\"uploadBlogImage(allBlogs.Id)\"><img\n                        src=\"../../../assets//Images/edit (1).png\" class=\"pen-image\">Edit</div>\n                    <div class=\"remove-option\">\n                      <span class=\"line\"> | </span> <span (click)=\"removeBlog(allBlogs.Id)\">Remove</span>\n\n                    </div>\n                  </div>\n\n\n\n                </div>\n                <div class=\"image-user\">\n                  <img src=\"{{allBlogs.Detail.BlogImage}}\" class=\"image-agent\" *ngIf=\"!blogUpload\">\n\n                  <div class=\"file-upload\" *ngIf=\"blogUpload\">\n\n                    <input type=\"file\" (change)=\"uploadBlog($event)\" accept=\".png,.jpg\" name=\"image\">\n\n                  </div>\n                </div>\n              </div>\n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"allBlogs.Detail.TextBlog\">\n              </textarea>\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\"  [(ngModel)]=\"allBlogs.Detail.BlogLink\">\n              </mat-form-field>\n         \n           \n            </div>\n\n            <div class=\"main-container-banner-image image-journey-container\" *ngIf=\"addNewBlog\">\n\n              <div class=\"agent-image-upload journey-image-container\">\n\n                <div class=\"upload-image-first-container upload-image-journey\">\n                  <div>\n\n                  </div>\n                  <div class=\"edit-image-part\">\n                    <div class=\"add-more-area\"></div>\n                  </div>\n\n\n                  <div class=\"close-edit-blog\" (click)=\"closeaddNewBlog()\"><img src=\"../../../assets/Images/cross.png\" class=\"cross-image-ui\"></div>\n                </div>\n                <div class=\"image-user\">\n                  <div class=\"file-upload\">\n                    <input type=\"file\" (change)=\"newBlogPicture($event)\" accept=\".png,.jpg\" name=\"BlogImage\">\n                  </div>\n                </div>\n                <div class=\"note-container\">\n                  <div class=\"note-wrapper-contaoner\">\n                 <span class=\"note-area\">*Note - </span>\n               </div>\n               <div class=\"note-ouput-contaoner\">\n                 <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n                 <span class=\"note-area\"> Image Dimension must be 550 × 340.</span>\n               </div>\n   \n                </div>\n               \n              </div>\n           \n              <div class=\"outputText\"></div>\n              <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"blog.TextBlog\">\n            </textarea>\n\n              <mat-form-field class=\"full-width\" appearance=\"outline\">\n                <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n                <input matInput name=\"BlogLink\" [(ngModel)]=\"blog.BlogLink\" #Phone>\n              </mat-form-field>\n\n            </div>\n\n\n          </div>\n\n          <div class=\"update-button update-add-more\" (click)=\"addMoreBlog()\">\n\n            <button mat-button color=\"primary\" class=\"button-color\">Add More</button>\n          </div>\n        </mat-card>\n\n\n        <div style=\"height: 5vh;\"></div>\n        <mat-card class=\"home-page-banner\">\n          <div class=\"profile-heading profile-heading-two\">\n            Footer\n          </div>\n\n          <div class=\"main-contianer-journey footer-area\">\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Facebook</span></mat-label>\n              <input matInput name=\"Facebook\" [(ngModel)]=\"footer.Facebook\" #Phone>\n            </mat-form-field>\n\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Instagram Link</span></mat-label>\n              <input matInput name=\"Instragram\" [(ngModel)]=\"footer.Instragram\" #Phone>\n            </mat-form-field>\n            <mat-form-field class=\"full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Number\">Twitter</span></mat-label>\n              <input matInput name=\"Twitter\" [(ngModel)]=\"footer.Twitter\" #Phone>\n            </mat-form-field>\n          </div>\n\n\n        </mat-card>\n\n        <div class=\"update-button\" (click)=\"updateDetails()\">\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </div>\n\n\n      <div class=\"edit-blog-container\" *ngIf=\"editSingleBlogs\">\n        <div class=\"sub-container-edit-popup\">\n          <div class=\"close-edit-blog\" (click)=\"closeUpdateBlog()\"><img src=\"../../../assets/Images/cross.png\" class=\"cross-image-ui\"></div>\n          <div class=\"agent-image-upload journey-image-container \">\n            <div class=\"image-user\">\n              <div class=\"file-upload edit-blog-container-image\">\n                <input type=\"file\" (change)=\"uploadBlog($event)\" accept=\".png,.jpg\" name=\"image\">\n              </div>\n\n            </div>\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image Dimension must be 550 × 340.</span>\n           </div>\n\n            </div>\n           \n          </div>\n          <div class=\"outputText\"></div>\n          <textarea id=\"w3review\" rows=\"5\" cols=\"35\" name=\"TextBlog\" [(ngModel)]=\"editTextBlog\"> </textarea>\n          <mat-form-field class=\"full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Number\">Link</span></mat-label>\n            <input matInput name=\"BlogLink\" [(ngModel)]=\"EditBlogLink\">\n          </mat-form-field>\n          <div class=\"update-button update-add-more\" (click)=\"updateOpenedBlog(singleBlogId)\">\n            <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n          </div>\n        </div>\n\n      </div>\n\n\n\n\n\n\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"Notification\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          My Nestimate Buyer Details\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"MynestimateBuyerDetails\"\n            [(ngModel)]=\"MynestimateBuyerDetails\">\n      </textarea>\n        </div>\n\n\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Sing Up From Menu\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SingupFromMenu\" [(ngModel)]=\"SingupFromMenu\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Action Needed\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerActionNeeded\" [(ngModel)]=\"BuyerActionNeeded\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Matches Express Interest Notifcation\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerMatchesExpressInterestNotifcation\"\n            [(ngModel)]=\"BuyerMatchesExpressInterestNotifcation\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Buyer Sign Up Notification\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"BuyerSignupNotification\"\n            [(ngModel)]=\"BuyerSignupNotification\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Seller Form Sing Up Notification\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SellerFormSingupNotification\"\n            [(ngModel)]=\"SellerFormSingupNotification\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Seller Matches Express Interest Notifcation\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"10\" cols=\"100\" name=\"SellerMatchesExpressInterestNotifcation\"\n            [(ngModel)]=\"SellerMatchesExpressInterestNotifcation\">\n    </textarea>\n        </div>\n\n      </mat-card>\n\n\n      <div class=\"update-button\" (click)=\"updateNotification()\">\n\n        <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n      </div>\n    </div>\n\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"SellerDetails\">\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Owner Personal Details/Property Details \n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{SellerPropertyRightImage}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{SellerPropertyRightImage}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"sellerupload($event)\" accept=\".png,.jpg\">\n\n              </div>\n            </div>\n\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image dimension must be 783x522.</span>\n           </div>\n\n            </div>\n          </div>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </mat-card>\n\n\n      <div style=\"height: 5vh;\"></div>\n      <mat-card class=\"home-page-banner\">\n        <div class=\"profile-heading profile-heading-buyer\">\n          Seeker Personal Details/Property Details \n        </div>\n\n        <div class=\"main-container-banner-image\">\n\n          <div class=\"top-banner-image\">\n            <img src=\"{{BuyerPropertyRightImages}}\" class=\"left-image-container\">\n\n          </div>\n\n          <div class=\"agent-image-upload\">\n\n            <div class=\"upload-image-first-container\">\n              <div>\n\n              </div>\n              <div class=\"edit-image-part\">\n                <div class=\"add-more-area\" (click)=\"sellerEdit()\"><img src=\"../../../assets//Images/edit (1).png\"\n                    class=\"pen-image\">Edit</div>\n              </div>\n\n\n\n            </div>\n            <div class=\"image-user\">\n              <img src=\"{{BuyerPropertyRightImages}}\" class=\"image-agent\" *ngIf=\"!sellerFormRight\">\n\n              <div class=\"file-upload\" *ngIf=\"sellerFormRight\">\n\n                <input type=\"file\" (change)=\"buyerupload($event)\" accept=\".png,.jpg\">\n\n              </div>\n            </div>\n\n            <div class=\"note-container\">\n              <div class=\"note-wrapper-contaoner\">\n             <span class=\"note-area\">*Note - </span>\n           </div>\n           <div class=\"note-ouput-contaoner\">\n             <span class=\"note-area\"> Image size must be less than 2 MB.</span><br>\n             <span class=\"note-area\"> Image dimension must be 783x522.</span>\n           </div>\n\n            </div>\n          </div>\n        </div>\n        <div class=\"update-button\" (click)=\"updateSellerBuyer()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n      </mat-card>\n\n    </div>\n\n\n\n    <div class=\"mat-Notification\" *ngIf=\"BuyerDetails\">\n\n      <div class=\"drop-down-error\">\n        <mat-form-field appearance=\"outline\">\n          <mat-label>Pop Up Messages</mat-label>\n          <mat-select name=\"formType\" [(ngModel)]=\"formType\">\n            <mat-option value=\"seeker\" (click)=\"showSeekerForm()\">Seekers Form</mat-option>\n            <mat-option value=\"owner\" (click)=\"showOwnerForm()\">Owner Form</mat-option>\n            <mat-option value=\"agent\" (click)=\"showAgentForm()\">Agent Form</mat-option>\n            <mat-option value=\"details\" (click)=\"showMyDetailForm()\">My Details</mat-option>\n            <mat-option value=\"Tool\" (click)=\"tooUpen()\">Tooltip</mat-option>\n            <mat-option value=\"other\" (click)=\"showOtherForm()\">Other</mat-option>\n\n          </mat-select>\n        </mat-form-field>\n      </div>\n\n\n      <div style=\"height: 1vh;\"></div>\n      <app-seekerformerror *ngIf=\"seekerErrorForm\"></app-seekerformerror>\n      <app-ownerformerror *ngIf=\"ownerErrorForm\"></app-ownerformerror>\n      <app-agentformerror *ngIf=\"agentErrorForm\"></app-agentformerror>\n      <app-othererror *ngIf=\"otherErrorForm\"></app-othererror>\n      <app-mydetailserror *ngIf=\"mydetailErrorForm\"></app-mydetailserror>\n<app-tooltip *ngIf=\"tool\"></app-tooltip>\n\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"PrivacyPolicy\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Privacy Policy\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Privacy\" [(ngModel)]=\"Privacy\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updatePrivacyTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n    <div class=\"mat-Notification\" *ngIf=\"TermConditon\">\n      <div style=\"height: 4vh;\"></div>\n      <mat-card class=\"home-page-banner notificationCard\">\n        <div class=\"profile-heading\">\n          Terms & Condition\n        </div>\n\n        <div class=\"text-area\">\n          <textarea id=\"w3review\" rows=\"20\" cols=\"100\" name=\"Terms\" [(ngModel)]=\"Terms\">\n      </textarea>\n        </div>\n\n        <div class=\"update-button\" (click)=\"updateTerms()\">\n\n          <button mat-button color=\"primary\" class=\"button-color\">Save</button>\n        </div>\n\n      </mat-card>\n    </div>\n\n\n\n    <div class=\"mat-advertisemment\" *ngIf=\"advertise\">\n\n      <app-advertisement></app-advertisement>\n    </div>\n\n\n  </div>\n\n\n\n\n\n</div>";
     /***/
   },
 
@@ -971,7 +991,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading Nestimate...</p>\n      </div>\n</div>\n\n<div class=\"new-nestimate-layout\">\n\n\n\n\n  <div class=\"main-header-bar\">\n    <div class=\"header-content-my-nestimate\" id=\"one\" (click)=\"manageMyNestimate()\">\n      <div class=\"top-bar-content-icon\">\n        <img src=\"../../../assets/Images/documents (1).svg\" class=\"icon-document\">\n      </div>\n      <div class=\"top-bar-content-icon\">\n        Manage My Nestimates\n      </div>\n    </div>\n    <div class=\"header-content-my-nestimate\" id=\"two\" (click)=\"profileNestimate()\">\n      <div class=\"top-bar-content-icon\">\n        <img src=\"../../../assets/Images/identity-cardblack.png\" class=\"icon-document\">\n      </div>\n      <div class=\"top-bar-content-icon\">\n        My Details\n      </div>\n    </div>\n    <div class=\"header-content-my-nestimate\" id=\"three\" (click)=\"favorat()\">\n      <div class=\"top-bar-content-icon\">\n        <img src=\"../../../assets/Images/starblack.svg\" class=\"icon-document\">\n      </div>\n      <div class=\"top-bar-content-icon\">\n        Favorites\n      </div>\n    </div>\n\n    <div class=\"header-content-my-nestimate\" id=\"four\" (click)=\"recently()\">\n      <div class=\"top-bar-content-icon\">\n        <img src=\"../../../assets/Images/time-outline (1).svg\" class=\"icon-document\">\n      </div>\n      <div class=\"top-bar-content-icon\">\n        Recently Viewed\n      </div>\n    </div>\n\n  </div>\n\n</div>\n\n<div class=\"mobile-header-bar-card\">\n\n<div class=\"nestima-header-container\" id=\"boldText\" *ngIf=\"myNestimate\"> Manage My Nestimates</div>\n<div class=\"nestima-header-container\" id=\"boldText\" *ngIf=\"editProfile\">My Details</div>\n\n<div class=\"nestima-header-container\" id=\"boldText\" *ngIf=\"favorates\">Favorite</div>\n<div class=\"nestima-header-container\" id=\"boldText\" *ngIf=\"Recently\">Recently Viewed</div>\n\n\n\n\n</div>\n\n <div class=\"Main-container-neatimate\" *ngIf=\"myNestimate\">\n\n  <div class=\"drop-down\" style=\"height: 3em;\">\n    <!-- <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Manage Nestimate</mat-label>\n      <mat-select name=\"FinancialPosition\" value=\"FinancialPosition\" class=\"example-full-width\" [(ngModel)]=\"nestimate\"\n        #FinancialPosition disableOptionCentering panelClass=\"testClass\">\n        <mat-option value=\"Seeker Nestimate\" name=\"Seeker Nestimate\" (click)=\"SeekerNestimate()\">Seeker Nestimate\n        </mat-option>\n        <mat-option value=\"Owner Nestimate\" name=\"Owner Nestimate\" (click)=\"OwnerNestimate()\">Owner Nestimate\n        </mat-option>\n        <mat-option value=\"Action Needed\" name=\"Action Needed\" (click)=\"ActionNeed()\">Action Needed</mat-option>\n        <mat-option value=\"Waiting Response\" name=\"Waiting Response\"(click)=\"waitingresponse()\">Awaiting Response</mat-option>\n      </mat-select>\n    </mat-form-field> -->\n  </div>\n\n  <div class=\"manage-nestimate-lower-tab\" *ngIf=\"myNestimateHeader\">\n\n    <div  class=\"manganage-nestimate-lower-tab-wrapper right-line tooltip\"   (click)=\"MyNestimateChnages()\" matTooltip=\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\">\n    <span  class=\"header-content-my-nestimate\" id=\"mynestimate\" (click)=\"MyNestimateChnages()\"  >My Nestimates</span>\n    </div>\n    <div class=\"manganage-nestimate-lower-tab-wrapper tooltip\" (click)=\"MyActionChnages()\"   matTooltip=\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\">\n\n    <span id=\"boldText\" class=\"header-content-my-nestimate\">Expressed Interest</span>\n    </div>\n\n\n  </div>\n  \n  <div class=\"manage-nestimate-lower-tab\" *ngIf=\"myNestimateHeaderExpress\">\n\n    <div  class=\"manganage-nestimate-lower-tab-wrapper right-line tooltip\"  (click)=\"MyNestimateChnages()\" matTooltip=\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\">\n\n\n    <span  class=\"header-content-my-nestimate\"  id=\"boldText\">My Nestimates</span>\n    </div>\n\n    <div class=\"manganage-nestimate-lower-tab-wrapper tooltip\"  (click)=\"MyActionChnages()\" matTooltip=\"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s\">\n\n    <span id=\"boldText\" class=\"header-content-my-nestimate  \" id=\"mynestimate\">Expressed Interest</span>\n    </div>\n\n\n  </div>\n\n\n  <div class=\"drop-down\" style=\"height: 2em;\"></div>\n\n\n  <div class=\"main-my-nestimate-container\" *ngIf=\"myNestimateHeader\">\n    <div class=\"no-property-Found\"  *ngIf=\"propertyRequirementDetails.length == 0 && propertyDetails.length == 0\" id=\"boldText\">\n     No Nestimate Created\n    </div>\n    <!--Buyer Requirement *ngIf=\"seekerNestimate\"-->\n    <div class=\"result-nestimate-contianer\" *ngFor=\"let requirement of propertyRequirementDetails\">\n    \n      <div class=\"blue-top-nestimate-border\">\n        <div class=\"top-area-my-nestimate\">\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Terracedhouse'\">\n          Terraced House at\n          {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Countryhouse'\">\n          Country House at\n          {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Barnconversion'\">\n          Barn Conversion at\n          {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Townhouse'\">\n          Town House at\n          {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Detachedhouse'\">\n          Detached House at {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType != 'Detachedhouse' && requirement.data.PropertyType != 'Townhouse' && requirement.data.PropertyType != 'Barnconversion' && requirement.data.PropertyType != 'Countryhouse' && requirement.data.PropertyType != 'Terracedhouse'\">\n          {{requirement.data.PropertyType}}   at {{requirement.data.Lookingpostcode}}\n        </div> \n\n      </div>\n\n      <div class=\"property-for\">\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyFor == 'buy'\">\n          Buy\n        </div> \n\n  <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyFor == 'rent'\">\n          Rent\n        </div>  \n      </div>\n      </div>\n  \n      <div class=\"lower-box-netaimate\">\n\n        <div class=\"container-light-blue\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"dust_price\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate heading-cards\" id=\"boldText\">Price Range: </span> <span\n                    class=\"heading-nestimate\" *ngIf=\"requirement.PropertyFor=='rent'\">Rent Range: </span>\n                </div>\n              </div>\n              <div class=\"price-laign price-font\" id=\"semiboldText\">\n                &pound;{{requirement.data.MinAmount}} - &pound;{{requirement.data.MaxAmount}}\n               </div>\n              <div class=\"other-text\">\n                <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property For:<span class=\"outputText\"\n                    style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{requirement.data.PropertyFor}}</span></div>\n                <div class=\"heading-nestimate heading-cards\" id=\"boldText\">No of Rooms:<span class=\"outputText\"\n                    style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{requirement.data.Roommin}}-{{requirement.data.Roomsmax}}</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n\n        <div class=\"right-side-button\">\n          <div class=\"blue-button\" routerLink=\"/nestimatebuyerpropertydetail/{{requirement.id}}\">\n            <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n          <div class=\"blue-button\">\n            <div class=\"button-text\" id=\"semiboldText\" routerLink=\"/buyerMatchlisting/{{requirement.data.Lookingpostcode}}/\n          {{requirement.data.PropertyType}}\n          /{{requirement.data.LookingTown}}\n          /{{requirement.data.MinAmount}}\n          /{{requirement.data.MaxAmount}}\n          /{{requirement.data.latitude}}\n          /{{requirement.data.longitude}}\n          /{{newUser}}\n          /{{requirement.data.PropertyFor}}\n          /{{requirement.data.LookingStreetname}}\n          /{{requirement.data.Conditions}}\n          /{{requirement.data.FinancialPosition}}\n          /{{requirement.data.Validity}}\n          /{{requirement.data.Position}}\n          /{{requirement.data.UserId}}\n          /{{requirement.data.ChainStatus}}/{{requirement.id}}\">View Matches</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n          <div class=\"blue-button\" (click)=\"deletdeleteBuyer(requirement.id)\">\n            <div class=\"button-text\" id=\"semiboldText\">Delete</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n        </div>\n      </div>\n\n\n\n    </div>\n  </div>\n\n\n\n\n\n  <div class=\"main-my-nestimate-container\" *ngIf=\"myNestimateHeader\">\n\n   \n    <!--Seller Requirement  *ngIf=\"ownerNestimate\"-->\n    <div class=\"result-nestimate-contianer\" *ngFor=\"let property of propertyDetails\">\n      <div class=\"blue-top-nestimate-border\">\n        <div class=\"top-area-my-nestimate\">\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Terracedhouse'\">\n          Terraced House at\n          {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Countryhouse'\">\n          Country House at\n          {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Barnconversion'\">\n          Barn Conversion at\n          {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Townhouse'\">\n          Town House at\n          {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Detachedhouse'\">\n          Detached House at {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType != 'Detachedhouse' && property.seller.PropertyType != 'Townhouse' && property.seller.PropertyType != 'Barnconversion' && property.seller.PropertyType != 'Countryhouse' && property.seller.PropertyType != 'Terracedhouse'\">\n          {{property.seller.PropertyType}}   at {{property.seller.Lookingpostcode}}\n        </div> \n        </div>\n        <div class=\"property-for\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyFor == 'buy'\">\n           Sell\n          </div> \n  \n    <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyFor == 'rent'\">\n            Let\n          </div>  \n        </div>\n      </div>\n\n      <div class=\"lower-box-netaimate\">\n\n        <div class=\"container-light-blue\">\n          <div class=\"mat-card-content-new-content\">\n             <div class=\"mobile-top-padding\"></div>\n            <div class=\"seller-nestimate\" *ngIf=\"property.seller.Images.length > 0\">\n             <app-images-slider userID='{{property.seller.UserId}}' child='{{property.sellerId}}'></app-images-slider>\n             <div style=\"height: 1em;\"></div>\n            </div>\n            <div class=\"mat-card-content-image\"*ngIf=\"property.seller.Images.length == 0\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-container\">\n                <span class=\"outputText price-font\" id=\"boldText\">\n                  \n                  <span class=\"heading-nestimate heading-cards\" id=\"boldText\" *ngIf=\"property.seller.PropertyFor=='buy'\">Price Range: </span>\n                   <span\n                    class=\"heading-nestimate heading-cards\" *ngIf=\"property.seller.PropertyFor=='rent'\">Rent Range: </span>\n\n                 \n                 </span>\n              </div>\n              <div class=\"price-laign price-font\" id=\"semiboldText\">\n                &pound;{{property.seller.MaxAmount}}\n               </div>\n              <div class=\"other-text\">\n                <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                    style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.seller.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate heading-cards\" id=\"boldText\">No of Rooms:<span class=\"outputText\"\n                    style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.seller.Maxrooms}}</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n\n        <div class=\"right-side-button\" >\n          <div class=\"blue-button\" routerLink=\"/nestimatesellerpropertydetail/{{property.sellerId}}\">\n            <div class=\"button-text\" id=\"semiboldText\">See Details</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n          <div class=\"blue-button\">\n            <div class=\"button-text\" id=\"semiboldText\" routerLink=\"/sellerMatchlisting/{{property.seller.Lookingpostcode}}/{{property.seller.PropertyType}}/{{property.seller.LookingTown}}/{{property.seller.MaxAmount}}/{{property.seller.latitude}}/{{property.seller.longitude}}/{{newUser}}/{{property.seller.PropertyFor}}/{{property.seller.Lookingstate}}/{{property.seller.Maxrooms}}/{{property.seller.PropertyCondition}}/{{property.seller.LookingAddress}}/{{property.seller.ownership}}/{{property.seller.features}}/{{property.seller.UserId}}/{{property.seller.Maxbathrooms}}/{{property.seller.Maxreception}}/{{property.seller.ownership}}/{{property.seller.Maxrooms}}/{{property.sellerId}}\"\n            >View Matches</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n          <div class=\"blue-button\" (click)=\"deleteOrder(property.sellerId)\">\n            <div class=\"button-text\" id=\"semiboldText\">Delete</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n        </div>\n      </div>\n\n\n\n    </div>\n  </div>\n\n\n\n\n\n\n  <div class=\"Action-needed\" *ngIf=\"ActionNeeded\">\n    <app-myMatches></app-myMatches>\n  </div>\n\n\n  <div class=\"waiting-response\"  *ngIf=\"waiting\">\n    <app-awaitingresponse></app-awaitingresponse>\n  </div>\n\n\n\n \n\n\n\n</div>\n\n<div class=\"Main-container-neatimate\" *ngIf=\"editProfile\">\n  <app-editProfile></app-editProfile>\n</div>\n\n\n<div class=\"Favourites-container\" *ngIf=\"favorates\">\n<app-favorates></app-favorates>\n</div>\n\n\n<div class=\"recently-view\" *ngIf=\"Recently\">\n  <app-recentlyitems></app-recentlyitems>\n</div>\n\n";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading Nestimate...</p>\n      </div>\n</div>\n\n<div class=\"new-nestimate-layout\">\n\n\n\n\n  <div class=\"main-header-bar\">\n    <div class=\"header-content-my-nestimate\" id=\"one\" (click)=\"manageMyNestimate()\">\n      <div class=\"top-bar-content-icon\">\n        <img src=\"../../../assets/Images/documents (1).svg\" class=\"icon-document\">\n      </div>\n      <div class=\"top-bar-content-icon\">\n        Manage My Nestimates\n      </div>\n    </div>\n    <div class=\"header-content-my-nestimate\" id=\"two\" (click)=\"profileNestimate()\">\n      <div class=\"top-bar-content-icon\">\n        <img src=\"../../../assets/Images/identity-cardblack.png\" class=\"icon-document\">\n      </div>\n      <div class=\"top-bar-content-icon\">\n        My Details\n      </div>\n    </div>\n    <div class=\"header-content-my-nestimate\" id=\"three\" (click)=\"favorat()\">\n      <div class=\"top-bar-content-icon\">\n        <img src=\"../../../assets/Images/starblack.svg\" class=\"icon-document\">\n      </div>\n      <div class=\"top-bar-content-icon\">\n        Favorites\n      </div>\n    </div>\n\n    <div class=\"header-content-my-nestimate\" id=\"four\" (click)=\"recently()\">\n      <div class=\"top-bar-content-icon\">\n        <img src=\"../../../assets/Images/time-outline (1).svg\" class=\"icon-document\">\n      </div>\n      <div class=\"top-bar-content-icon\">\n        Recently Viewed\n      </div>\n    </div>\n\n  </div>\n\n</div>\n\n<div class=\"mobile-header-bar-card\">\n\n<div class=\"nestima-header-container\" id=\"boldText\" *ngIf=\"myNestimate\"> Manage My Nestimates</div>\n<div class=\"nestima-header-container\" id=\"boldText\" *ngIf=\"editProfile\">My Details</div>\n\n<div class=\"nestima-header-container\" id=\"boldText\" *ngIf=\"favorates\">Favorite</div>\n<div class=\"nestima-header-container\" id=\"boldText\" *ngIf=\"Recently\">Recently Viewed</div>\n\n\n\n\n</div>\n\n <div class=\"Main-container-neatimate\" *ngIf=\"myNestimate\">\n\n  <div class=\"drop-down\" style=\"height: 3em;\">\n    <!-- <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n      <mat-label class=\"fixed-Label\">Manage Nestimate</mat-label>\n      <mat-select name=\"FinancialPosition\" value=\"FinancialPosition\" class=\"example-full-width\" [(ngModel)]=\"nestimate\"\n        #FinancialPosition disableOptionCentering panelClass=\"testClass\">\n        <mat-option value=\"Seeker Nestimate\" name=\"Seeker Nestimate\" (click)=\"SeekerNestimate()\">Seeker Nestimate\n        </mat-option>\n        <mat-option value=\"Owner Nestimate\" name=\"Owner Nestimate\" (click)=\"OwnerNestimate()\">Owner Nestimate\n        </mat-option>\n        <mat-option value=\"Action Needed\" name=\"Action Needed\" (click)=\"ActionNeed()\">Action Needed</mat-option>\n        <mat-option value=\"Waiting Response\" name=\"Waiting Response\"(click)=\"waitingresponse()\">Awaiting Response</mat-option>\n      </mat-select>\n    </mat-form-field> -->\n  </div>\n\n  <div class=\"manage-nestimate-lower-tab\" *ngIf=\"myNestimateHeader\" >\n\n    <div  class=\"manganage-nestimate-lower-tab-wrapper right-line \"  style=\"border-bottom: 2px solid #0F3C73;\"(click)=\"MyNestimateChnages()\" matTooltip=\"{{nestimateTool}}\">\n    <span  class=\"header-content-my-nestimate\" (click)=\"MyNestimateChnages()\"  id=\"mynestimate\"  >My Nestimates</span>\n    </div>\n    <div class=\"manganage-nestimate-lower-tab-wrapper \" (click)=\"MyActionChnages()\"   matTooltip=\"{{expressTool}}\">\n\n    <span id=\"boldText\" class=\"header-content-my-nestimate\">Expressed Interest</span>\n    </div>\n\n\n  </div>\n  \n  <div class=\"manage-nestimate-lower-tab\" *ngIf=\"myNestimateHeaderExpress\">\n\n    <div  class=\"manganage-nestimate-lower-tab-wrapper right-line \"  (click)=\"MyNestimateChnages()\" matTooltip=\"{{nestimateTool}}\">\n\n\n    <span  class=\"header-content-my-nestimate\"  id=\"boldText\">My Nestimates</span>\n    </div>\n\n    <div class=\"manganage-nestimate-lower-tab-wrapper \"  id=\"mynestimate\"  (click)=\"MyActionChnages()\" matTooltip=\"{{expressTool}}\" style=\"border-bottom: 2px solid #0F3C73;\">\n\n    <span id=\"boldText\" class=\"header-content-my-nestimate  \" >Expressed Interest</span>\n    </div>\n\n\n  </div>\n\n\n  <div class=\"drop-down\" style=\"height: 2em;\"></div>\n\n\n  <div class=\"main-my-nestimate-container\" *ngIf=\"myNestimateHeader\">\n    <div class=\"no-property-Found\"  *ngIf=\"propertyRequirementDetails.length == 0 && propertyDetails.length == 0\" id=\"boldText\">\n     No Nestimate Created\n    </div>\n    <!--Buyer Requirement *ngIf=\"seekerNestimate\"-->\n    <div class=\"result-nestimate-contianer\" *ngFor=\"let requirement of propertyRequirementDetails\">\n    \n      <div class=\"blue-top-nestimate-border\">\n        <div class=\"top-area-my-nestimate\">\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Terracedhouse'\">\n          Terraced House at\n          {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Countryhouse'\">\n          Country House at\n          {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Barnconversion'\">\n          Barn Conversion at\n          {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Townhouse'\">\n          Town House at\n          {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType == 'Detachedhouse'\">\n          Detached House at {{requirement.data.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyType != 'Detachedhouse' && requirement.data.PropertyType != 'Townhouse' && requirement.data.PropertyType != 'Barnconversion' && requirement.data.PropertyType != 'Countryhouse' && requirement.data.PropertyType != 'Terracedhouse'\">\n          {{requirement.data.PropertyType}}   at {{requirement.data.Lookingpostcode}}\n        </div> \n\n      </div>\n\n      <div class=\"property-for\">\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyFor == 'buy'\">\n          Buy\n        </div> \n\n  <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"requirement.data.PropertyFor == 'rent'\">\n          Rent\n        </div>  \n      </div>\n      </div>\n  \n      <div class=\"lower-box-netaimate\">\n\n        <div class=\"container-light-blue\">\n          <div class=\"mat-card-content-new-content\">\n            <div class=\"mat-card-content-image\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"dust_price\">\n                <div class=\"price-range\">\n                  <span class=\"heading-nestimate heading-cards\" id=\"boldText\">Price Range: </span> <span\n                    class=\"heading-nestimate\" *ngIf=\"requirement.PropertyFor=='rent'\">Rent Range: </span>\n                </div>\n              </div>\n              <div class=\"price-laign price-font\" id=\"semiboldText\">\n                &pound;{{requirement.data.MinAmount}} - &pound;{{requirement.data.MaxAmount}}\n               </div>\n              <div class=\"other-text\">\n                <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property For:<span class=\"outputText\"\n                    style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{requirement.data.PropertyFor}}</span></div>\n                <div class=\"heading-nestimate heading-cards\" id=\"boldText\">No of Rooms:<span class=\"outputText\"\n                    style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{requirement.data.Roommin}}-{{requirement.data.Roomsmax}}</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n\n        <div class=\"right-side-button\">\n          <div class=\"blue-button\" routerLink=\"/nestimatebuyerpropertydetail/{{requirement.id}}\">\n            <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n          <div class=\"blue-button\">\n            <div class=\"button-text\" id=\"semiboldText\" routerLink=\"/buyerMatchlisting/{{requirement.data.Lookingpostcode}}/\n          {{requirement.data.PropertyType}}\n          /{{requirement.data.LookingTown}}\n          /{{requirement.data.MinAmount}}\n          /{{requirement.data.MaxAmount}}\n          /{{requirement.data.latitude}}\n          /{{requirement.data.longitude}}\n          /{{newUser}}\n          /{{requirement.data.PropertyFor}}\n          /{{requirement.data.LookingStreetname}}\n          /{{requirement.data.Conditions}}\n          /{{requirement.data.FinancialPosition}}\n          /{{requirement.data.Validity}}\n          /{{requirement.data.Position}}\n          /{{requirement.data.UserId}}\n          /{{requirement.data.ChainStatus}}/{{requirement.id}}\">View Matches</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n          <div class=\"blue-button\" (click)=\"deletdeleteBuyer(requirement.id)\">\n            <div class=\"button-text\" id=\"semiboldText\">Delete</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n        </div>\n      </div>\n\n\n\n    </div>\n  </div>\n\n\n\n\n\n  <div class=\"main-my-nestimate-container\" *ngIf=\"myNestimateHeader\">\n\n   \n    <!--Seller Requirement  *ngIf=\"ownerNestimate\"-->\n    <div class=\"result-nestimate-contianer\" *ngFor=\"let property of propertyDetails\">\n      <div class=\"blue-top-nestimate-border\">\n        <div class=\"top-area-my-nestimate\">\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Terracedhouse'\">\n          Terraced House at\n          {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Countryhouse'\">\n          Country House at\n          {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Barnconversion'\">\n          Barn Conversion at\n          {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Townhouse'\">\n          Town House at\n          {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType == 'Detachedhouse'\">\n          Detached House at {{property.seller.Lookingpostcode}}\n        </div>\n        <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyType != 'Detachedhouse' && property.seller.PropertyType != 'Townhouse' && property.seller.PropertyType != 'Barnconversion' && property.seller.PropertyType != 'Countryhouse' && property.seller.PropertyType != 'Terracedhouse'\">\n          {{property.seller.PropertyType}}   at {{property.seller.Lookingpostcode}}\n        </div> \n        </div>\n        <div class=\"property-for\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyFor == 'buy'\">\n           Sell\n          </div> \n  \n    <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.seller.PropertyFor == 'rent'\">\n            Let\n          </div>  \n        </div>\n      </div>\n\n      <div class=\"lower-box-netaimate\">\n\n        <div class=\"container-light-blue\">\n          <div class=\"mat-card-content-new-content\">\n             <div class=\"mobile-top-padding\"></div>\n            <div class=\"seller-nestimate\" *ngIf=\"property.seller.Images.length > 0\">\n             <app-images-slider userID='{{property.seller.UserId}}' child='{{property.sellerId}}'></app-images-slider>\n             <div style=\"height: 1em;\"></div>\n            </div>\n            <div class=\"mat-card-content-image\"*ngIf=\"property.seller.Images.length == 0\">\n              <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n            </div>\n            <div class=\"mat-card-content-text\">\n              <div class=\"price-container\">\n                <span class=\"outputText price-font\" id=\"boldText\">\n                  \n                  <span class=\"heading-nestimate heading-cards\" id=\"boldText\" *ngIf=\"property.seller.PropertyFor=='buy'\">Price Range: </span>\n                   <span\n                    class=\"heading-nestimate heading-cards\" *ngIf=\"property.seller.PropertyFor=='rent'\">Rent Range: </span>\n\n                 \n                 </span>\n              </div>\n              <div class=\"price-laign price-font\" id=\"semiboldText\">\n                &pound;{{property.seller.MaxAmount}}\n               </div>\n              <div class=\"other-text\">\n                <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                    style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.seller.Lookingpostcode}}</span></div>\n                <div class=\"heading-nestimate heading-cards\" id=\"boldText\">No of Rooms:<span class=\"outputText\"\n                    style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.seller.Maxrooms}}</span></div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n\n        <div class=\"right-side-button\" >\n          <div class=\"blue-button\" routerLink=\"/nestimatesellerpropertydetail/{{property.sellerId}}\">\n            <div class=\"button-text\" id=\"semiboldText\">See Details</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n          <div class=\"blue-button\">\n            <div class=\"button-text\" id=\"semiboldText\" routerLink=\"/sellerMatchlisting/{{property.seller.Lookingpostcode}}/{{property.seller.PropertyType}}/{{property.seller.LookingTown}}/{{property.seller.MaxAmount}}/{{property.seller.latitude}}/{{property.seller.longitude}}/{{newUser}}/{{property.seller.PropertyFor}}/{{property.seller.Lookingstate}}/{{property.seller.Maxrooms}}/{{property.seller.PropertyCondition}}/{{property.seller.LookingAddress}}/{{property.seller.ownership}}/{{property.seller.features}}/{{property.seller.UserId}}/{{property.seller.Maxbathrooms}}/{{property.seller.Maxreception}}/{{property.seller.ownership}}/{{property.seller.Maxrooms}}/{{property.sellerId}}\"\n            >View Matches</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n          <div class=\"blue-button\" (click)=\"deleteOrder(property.sellerId)\">\n            <div class=\"button-text\" id=\"semiboldText\">Delete</div>\n            <div class=\"button-icon\">&gt;</div>\n          </div>\n        </div>\n      </div>\n\n\n\n    </div>\n  </div>\n\n\n\n\n\n\n  <div class=\"Action-needed\" *ngIf=\"ActionNeeded\">\n    <app-myMatches></app-myMatches>\n  </div>\n\n\n  <div class=\"waiting-response\"  *ngIf=\"waiting\">\n    <app-awaitingresponse></app-awaitingresponse>\n  </div>\n\n\n\n \n\n\n\n</div>\n\n<div class=\"Main-container-neatimate\" *ngIf=\"editProfile\">\n  <app-editProfile></app-editProfile>\n</div>\n\n\n<div class=\"Favourites-container\" *ngIf=\"favorates\">\n<app-favorates></app-favorates>\n</div>\n\n\n<div class=\"recently-view\" *ngIf=\"Recently\">\n  <app-recentlyitems></app-recentlyitems>\n</div>\n\n";
     /***/
   },
 
@@ -6082,6 +6102,127 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
   },
 
   /***/
+  "./src/app/AdminPanel/uielements/tooltip/tooltip.component.css":
+  /*!*********************************************************************!*\
+    !*** ./src/app/AdminPanel/uielements/tooltip/tooltip.component.css ***!
+    \*********************************************************************/
+
+  /*! exports provided: default */
+
+  /***/
+  function srcAppAdminPanelUielementsTooltipTooltipComponentCss(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony default export */
+
+
+    __webpack_exports__["default"] = ".full-width {\n    width: 100%;\n    margin-top: 1em;\n    margin: 0em 10px;\n    margin-top: 0em !important;\n} \n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3Rvb2x0aXAvdG9vbHRpcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksV0FBVztJQUNYLGVBQWU7SUFDZixnQkFBZ0I7SUFDaEIsMEJBQTBCO0FBQzlCIiwiZmlsZSI6InNyYy9hcHAvQWRtaW5QYW5lbC91aWVsZW1lbnRzL3Rvb2x0aXAvdG9vbHRpcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZ1bGwtd2lkdGgge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIG1hcmdpbi10b3A6IDFlbTtcbiAgICBtYXJnaW46IDBlbSAxMHB4O1xuICAgIG1hcmdpbi10b3A6IDBlbSAhaW1wb3J0YW50O1xufSAiXX0= */";
+    /***/
+  },
+
+  /***/
+  "./src/app/AdminPanel/uielements/tooltip/tooltip.component.ts":
+  /*!********************************************************************!*\
+    !*** ./src/app/AdminPanel/uielements/tooltip/tooltip.component.ts ***!
+    \********************************************************************/
+
+  /*! exports provided: TooltipComponent */
+
+  /***/
+  function srcAppAdminPanelUielementsTooltipTooltipComponentTs(module, __webpack_exports__, __webpack_require__) {
+    "use strict";
+
+    __webpack_require__.r(__webpack_exports__);
+    /* harmony export (binding) */
+
+
+    __webpack_require__.d(__webpack_exports__, "TooltipComponent", function () {
+      return TooltipComponent;
+    });
+    /* harmony import */
+
+
+    var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! tslib */
+    "./node_modules/tslib/tslib.es6.js");
+    /* harmony import */
+
+
+    var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! @angular/core */
+    "./node_modules/@angular/core/fesm2015/core.js");
+    /* harmony import */
+
+
+    var _cms_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ../../../cms.service */
+    "./src/app/cms.service.ts");
+
+    var TooltipComponent = /*#__PURE__*/function () {
+      function TooltipComponent(CMSSERVICE) {
+        _classCallCheck(this, TooltipComponent);
+
+        this.CMSSERVICE = CMSSERVICE;
+        this.isLoading = false;
+      }
+
+      _createClass(TooltipComponent, [{
+        key: "ngOnInit",
+        value: function ngOnInit() {
+          this.getTooltip();
+        }
+      }, {
+        key: "getTooltip",
+        value: function getTooltip() {
+          var _this39 = this;
+
+          this.isLoading = true;
+          this.CMSSERVICE.getToolTip().then(function (ref) {
+            _this39.nestimate = ref.data().MyNestimate;
+            _this39.express = ref.data().ExpressedInterest;
+            _this39.isLoading = false;
+          });
+        }
+      }, {
+        key: "updateMyDetailError",
+        value: function updateMyDetailError() {
+          this.isLoading = true;
+          this.MyDetails = {
+            ExpressedInterest: this.express,
+            MyNestimate: this.nestimate
+          };
+          this.CMSSERVICE.updateToolTip(this.MyDetails);
+          this.getTooltip();
+        }
+      }]);
+
+      return TooltipComponent;
+    }();
+
+    TooltipComponent.ctorParameters = function () {
+      return [{
+        type: _cms_service__WEBPACK_IMPORTED_MODULE_2__["CMSSERVICE"]
+      }];
+    };
+
+    TooltipComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+      selector: 'app-tooltip',
+      template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! raw-loader!./tooltip.component.html */
+      "./node_modules/raw-loader/dist/cjs.js!./src/app/AdminPanel/uielements/tooltip/tooltip.component.html"))["default"],
+      styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ./tooltip.component.css */
+      "./src/app/AdminPanel/uielements/tooltip/tooltip.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../uielements.component.css */
+      "./src/app/AdminPanel/uielements/uielements.component.css"))["default"], tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
+      /*! ../../Admin-common.css */
+      "./src/app/AdminPanel/Admin-common.css"))["default"]]
+    })], TooltipComponent);
+    /***/
+  },
+
+  /***/
   "./src/app/AdminPanel/uielements/uielements.component.css":
   /*!****************************************************************!*\
     !*** ./src/app/AdminPanel/uielements/uielements.component.css ***!
@@ -6235,6 +6376,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.editSingleBlogs = false;
         this.advertise = true;
         this.adve = false;
+        this.tool = false;
       }
 
       _createClass(UIElementsComponent, [{
@@ -6266,10 +6408,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "removeBlog",
         value: function removeBlog(propertyId) {
-          var _this39 = this;
+          var _this40 = this;
 
           this.adminPanelService.deleteBlog(this.user.uid, propertyId).then(function (data) {
-            _this39.getBlogs();
+            _this40.getBlogs();
           });
         }
       }, {
@@ -6298,29 +6440,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "uploadBlogImage",
         value: function uploadBlogImage(id) {
-          var _this40 = this;
+          var _this41 = this;
 
           this.CMSSERVICE.getBlogSingle(this.uid, id).then(function (elements) {
-            _this40.singleBlogId = id;
-            _this40.editimageUrl = elements.data().BlogImage;
-            _this40.EditBlogLink = elements.data().BlogLink;
-            _this40.editTextBlog = elements.data().TextBlog;
+            _this41.singleBlogId = id;
+            _this41.editimageUrl = elements.data().BlogImage;
+            _this41.EditBlogLink = elements.data().BlogLink;
+            _this41.editTextBlog = elements.data().TextBlog;
           });
           this.editSingleBlogs = true;
         }
       }, {
         key: "updateTerms",
         value: function updateTerms() {
-          var _this41 = this;
+          var _this42 = this;
 
           this.isLoading = true;
           this.noti = {
             Terms: this.Terms
           };
           this.CMSSERVICE.updateTerms(this.noti).then(function (data) {
-            _this41.isLoading = false;
+            _this42.isLoading = false;
 
-            var dialogRef = _this41.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            var dialogRef = _this42.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
               data: {
                 message: "UI Element Updated"
               }
@@ -6330,16 +6472,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updatePrivacyTerms",
         value: function updatePrivacyTerms() {
-          var _this42 = this;
+          var _this43 = this;
 
           this.isLoading = true;
           this.noti = {
             Privacy: this.Privacy
           };
           this.CMSSERVICE.updatePrivacy(this.noti).then(function (data) {
-            _this42.isLoading = false;
+            _this43.isLoading = false;
 
-            var dialogRef = _this42.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            var dialogRef = _this43.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
               data: {
                 message: "UI Element Updated"
               }
@@ -6354,7 +6496,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateSellerBuyer",
         value: function updateSellerBuyer() {
-          var _this43 = this;
+          var _this44 = this;
 
           this.isLoading = true;
 
@@ -6375,22 +6517,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             SellerPropertyRightImage: this.seller
           };
           this.CMSSERVICE.updateSellerBuyerImage(this.noti).then(function (data) {
-            _this43.isLoading = false;
+            _this44.isLoading = false;
 
-            var dialogRef = _this43.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            var dialogRef = _this44.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
               data: {
                 message: "UI Element Updated"
               }
             });
 
-            _this43.getFormImage();
+            _this44.getFormImage();
           });
         }
       }, {
         key: "buyerupload",
         value: function buyerupload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee8() {
-            var _this44 = this;
+            var _this45 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee8$(_context8) {
@@ -6429,9 +6571,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context8.sent.ref.getDownloadURL().then(function (url) {
-                      _this44.buyer = url;
+                      _this45.buyer = url;
 
-                      _this44.getPropertyMeta(url);
+                      _this45.getPropertyMeta(url);
                     });
 
                   case 12:
@@ -6449,7 +6591,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "sellerupload",
         value: function sellerupload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee9() {
-            var _this45 = this;
+            var _this46 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee9$(_context9) {
@@ -6488,9 +6630,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context9.sent.ref.getDownloadURL().then(function (url) {
-                      _this45.seller = url;
+                      _this46.seller = url;
 
-                      _this45.getPropertyMeta(url);
+                      _this46.getPropertyMeta(url);
                     });
 
                   case 12:
@@ -6520,7 +6662,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateNotification",
         value: function updateNotification() {
-          var _this46 = this;
+          var _this47 = this;
 
           this.isLoading = true;
           this.noti = {
@@ -6533,9 +6675,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             SellerMatchesExpressInterestNotifcation: this.SellerMatchesExpressInterestNotifcation
           };
           this.CMSSERVICE.updateBlueNotifiaction(this.noti).then(function (data) {
-            _this46.isLoading = false;
+            _this47.isLoading = false;
 
-            var dialogRef = _this46.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            var dialogRef = _this47.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
               data: {
                 message: "UI Element Updated"
               }
@@ -6550,7 +6692,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateHomeBannerImage",
         value: function updateHomeBannerImage() {
-          var _this47 = this;
+          var _this48 = this;
 
           this.isLoading = true;
 
@@ -6595,27 +6737,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             Step3ImageText: this.Step3ImageText
           };
           this.CMSSERVICE.updateHomePageImages("1", this.homeupdate).then(function (data) {
-            _this47.addBlog();
+            _this48.addBlog();
 
-            _this47.updateFooter();
+            _this48.updateFooter();
 
-            _this47.isLoading = false;
+            _this48.isLoading = false;
 
-            var dialogRef = _this47.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
+            var dialogRef = _this48.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_7__["AltertFormDialogComponent"], {
               data: {
                 message: "UI Element Updated"
               }
             });
 
-            _this47.bannerImages();
+            _this48.bannerImages();
 
-            _this47.getBlogs();
+            _this48.getBlogs();
 
-            _this47.getFooter();
+            _this48.getFooter();
 
-            _this47.closeaddNewBlog();
+            _this48.closeaddNewBlog();
 
-            _this47.bannerUpload = true;
+            _this48.bannerUpload = true;
           });
         }
       }, {
@@ -6673,7 +6815,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "newBlogPicture",
         value: function newBlogPicture(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee10() {
-            var _this48 = this;
+            var _this49 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee10$(_context10) {
@@ -6713,9 +6855,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 11:
                     _context10.sent.ref.getDownloadURL().then(function (url) {
                       console.log(url);
-                      _this48.newBlogImage = url;
+                      _this49.newBlogImage = url;
 
-                      _this48.getBlogMeta(url);
+                      _this49.getBlogMeta(url);
                     });
 
                   case 12:
@@ -6746,7 +6888,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step3upload",
         value: function step3upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee11() {
-            var _this49 = this;
+            var _this50 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee11$(_context11) {
@@ -6785,9 +6927,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context11.sent.ref.getDownloadURL().then(function (url) {
-                      _this49.step3ImageNew = url;
+                      _this50.step3ImageNew = url;
 
-                      _this49.getStepsMeta(url);
+                      _this50.getStepsMeta(url);
                     });
 
                   case 12:
@@ -6805,7 +6947,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step2upload",
         value: function step2upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee12() {
-            var _this50 = this;
+            var _this51 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee12$(_context12) {
@@ -6844,9 +6986,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context12.sent.ref.getDownloadURL().then(function (url) {
-                      _this50.step2ImageNew = url;
+                      _this51.step2ImageNew = url;
 
-                      _this50.getStepsMeta(url);
+                      _this51.getStepsMeta(url);
                     });
 
                   case 12:
@@ -6864,7 +7006,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "step1upload",
         value: function step1upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee13() {
-            var _this51 = this;
+            var _this52 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee13$(_context13) {
@@ -6903,9 +7045,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context13.sent.ref.getDownloadURL().then(function (url) {
-                      _this51.step1ImageNew = url;
+                      _this52.step1ImageNew = url;
 
-                      _this51.getStepsMeta(url);
+                      _this52.getStepsMeta(url);
                     });
 
                   case 12:
@@ -6936,7 +7078,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "uploadBlog",
         value: function uploadBlog(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee14() {
-            var _this52 = this;
+            var _this53 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee14$(_context14) {
@@ -6975,9 +7117,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context14.sent.ref.getDownloadURL().then(function (url) {
-                      _this52.blogImageUrl = url;
+                      _this53.blogImageUrl = url;
 
-                      _this52.getUpdateBlogMeta(url);
+                      _this53.getUpdateBlogMeta(url);
                     });
 
                   case 12:
@@ -7008,7 +7150,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee15() {
-            var _this53 = this;
+            var _this54 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee15$(_context15) {
@@ -7047,9 +7189,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 11:
                     _context15.sent.ref.getDownloadURL().then(function (url) {
-                      _this53.getMeta(url);
+                      _this54.getMeta(url);
 
-                      _this53.topBannerImage = url;
+                      _this54.topBannerImage = url;
                     });
 
                   case 12:
@@ -7080,7 +7222,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "LoweBanner",
         value: function LoweBanner(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee16() {
-            var _this54 = this;
+            var _this55 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee16$(_context16) {
@@ -7114,9 +7256,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 10:
                     _context16.sent.ref.getDownloadURL().then(function (url) {
-                      _this54.secondBanner = url;
+                      _this55.secondBanner = url;
 
-                      _this54.getLoweBanneMeta(url);
+                      _this55.getLoweBanneMeta(url);
                     });
 
                   case 11:
@@ -7151,11 +7293,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSelected",
         value: function getSelected() {
-          var _this55 = this;
+          var _this56 = this;
 
           this.CMSSERVICE.getUserBlog(this.user.uid).then(function (data) {
             data.forEach(function (element) {
-              _this55.allBlogs.push(element.data());
+              _this56.allBlogs.push(element.data());
 
               console.log(element.data());
             });
@@ -7164,74 +7306,74 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getTerms",
         value: function getTerms() {
-          var _this56 = this;
+          var _this57 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (data) {
             data.forEach(function (element) {
-              _this56.Terms = element.data().Terms;
+              _this57.Terms = element.data().Terms;
             });
           });
         }
       }, {
         key: "getPrivacyPolicy",
         value: function getPrivacyPolicy() {
-          var _this57 = this;
+          var _this58 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this57.Privacy = element.data().Privacy;
+              _this58.Privacy = element.data().Privacy;
             });
           });
         }
       }, {
         key: "getFormImage",
         value: function getFormImage() {
-          var _this58 = this;
+          var _this59 = this;
 
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this58.BuyerPropertyRightImages = element.data().BuyerPropertyRightImages;
-              _this58.SellerPropertyRightImage = element.data().SellerPropertyRightImage;
+              _this59.BuyerPropertyRightImages = element.data().BuyerPropertyRightImages;
+              _this59.SellerPropertyRightImage = element.data().SellerPropertyRightImage;
             });
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this59 = this;
+          var _this60 = this;
 
           this.CMSSERVICE.getBlueNotification(this.user.uid).then(function (element) {
-            _this59.SellerMatchesExpressInterestNotifcation = element.data().SellerMatchesExpressInterestNotifcation;
-            _this59.SellerFormSingupNotification = element.data().SellerFormSingupNotification;
-            _this59.BuyerSignupNotification = element.data().BuyerSignupNotification;
-            _this59.BuyerMatchesExpressInterestNotifcation = element.data().BuyerMatchesExpressInterestNotifcation;
-            _this59.BuyerActionNeeded = element.data().BuyerActionNeeded;
-            _this59.MynestimateBuyerDetails = element.data().MynestimateBuyerDetails;
-            _this59.SingupFromMenu = element.data().SingupFromMenu;
+            _this60.SellerMatchesExpressInterestNotifcation = element.data().SellerMatchesExpressInterestNotifcation;
+            _this60.SellerFormSingupNotification = element.data().SellerFormSingupNotification;
+            _this60.BuyerSignupNotification = element.data().BuyerSignupNotification;
+            _this60.BuyerMatchesExpressInterestNotifcation = element.data().BuyerMatchesExpressInterestNotifcation;
+            _this60.BuyerActionNeeded = element.data().BuyerActionNeeded;
+            _this60.MynestimateBuyerDetails = element.data().MynestimateBuyerDetails;
+            _this60.SingupFromMenu = element.data().SingupFromMenu;
           });
         }
       }, {
         key: "getFooter",
         value: function getFooter() {
-          var _this60 = this;
+          var _this61 = this;
 
           this.CMSSERVICE.getFooter().then(function (footer) {
             footer.forEach(function (element) {
-              _this60.footer.Facebook = element.data().Facebook;
-              _this60.footer.Instragram = element.data().Instragram;
-              _this60.footer.Twitter = element.data().Twitter;
+              _this61.footer.Facebook = element.data().Facebook;
+              _this61.footer.Instragram = element.data().Instragram;
+              _this61.footer.Twitter = element.data().Twitter;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this61 = this;
+          var _this62 = this;
 
           this.allBlogs = [];
           this.CMSSERVICE.getUserBlog(this.user.uid).then(function (data) {
             data.forEach(function (element) {
-              _this61.allBlogs.push({
+              _this62.allBlogs.push({
                 Detail: element.data(),
                 Id: element.id
               });
@@ -7241,19 +7383,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bannerImages",
         value: function bannerImages() {
-          var _this62 = this;
+          var _this63 = this;
 
           this.CMSSERVICE.getHomePage(this.user.uid).then(function (banner) {
             banner.forEach(function (element) {
-              _this62.homePageData = element.data();
-              _this62.bannerUrl = element.data().BannerImageUrl;
-              _this62.SecondBannerImage = element.data().SecondBannerImage;
-              _this62.Step1Image = element.data().Step1Image;
-              _this62.Step1ImageText = element.data().Step1ImageText;
-              _this62.Step2ImageText = element.data().Step2ImageText;
-              _this62.Step2Image = element.data().Step2Image;
-              _this62.Step3Image = element.data().Step3Image;
-              _this62.Step3ImageText = element.data().Step3ImageText;
+              _this63.homePageData = element.data();
+              _this63.bannerUrl = element.data().BannerImageUrl;
+              _this63.SecondBannerImage = element.data().SecondBannerImage;
+              _this63.Step1Image = element.data().Step1Image;
+              _this63.Step1ImageText = element.data().Step1ImageText;
+              _this63.Step2ImageText = element.data().Step2ImageText;
+              _this63.Step2Image = element.data().Step2Image;
+              _this63.Step3Image = element.data().Step3Image;
+              _this63.Step3ImageText = element.data().Step3ImageText;
             });
           });
         }
@@ -7403,15 +7545,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this63 = this;
+          var _this64 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this63.username = element.data().Name;
-              _this63.image = element.data().Image;
+              _this64.username = element.data().Name;
+              _this64.image = element.data().Image;
             });
           }
         }
@@ -7423,6 +7565,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.agentErrorForm = false;
           this.otherErrorForm = false;
           this.mydetailErrorForm = false;
+          this.tool = false;
           this.formType = "seeker";
         }
       }, {
@@ -7433,6 +7576,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.agentErrorForm = false;
           this.otherErrorForm = false;
           this.mydetailErrorForm = false;
+          this.tool = false;
           this.formType = "owner";
         }
       }, {
@@ -7443,6 +7587,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.agentErrorForm = true;
           this.otherErrorForm = false;
           this.mydetailErrorForm = false;
+          this.tool = false;
           this.formType = "agent";
         }
       }, {
@@ -7453,6 +7598,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.agentErrorForm = false;
           this.otherErrorForm = true;
           this.mydetailErrorForm = false;
+          this.tool = false;
           this.formType = "other";
         }
       }, {
@@ -7463,7 +7609,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.agentErrorForm = false;
           this.otherErrorForm = false;
           this.mydetailErrorForm = true;
+          this.tool = false;
           this.formType = "details";
+        }
+      }, {
+        key: "tooUpen",
+        value: function tooUpen() {
+          this.tool = true;
+          this.seekerErrorForm = false;
+          this.ownerErrorForm = false;
+          this.agentErrorForm = false;
+          this.otherErrorForm = false;
+          this.mydetailErrorForm = false;
+          this.formType = "Tool";
         }
       }, {
         key: "closeaddNewBlog",
@@ -7633,13 +7791,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersAgentTabComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this64 = this;
+          var _this65 = this;
 
           this.getUser = JSON.parse(localStorage.getItem("user"));
           document.getElementById("users-tab").style.borderBottom = "2px solid #000000";
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this64.agemtTab = params.get("agemtTab");
-            _this64.userTabs = params.get("userTab");
+            _this65.agemtTab = params.get("agemtTab");
+            _this65.userTabs = params.get("userTab");
           });
 
           if (this.userTabs == "false") {
@@ -7671,7 +7829,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "showJobTiltle",
         value: function showJobTiltle(item) {
-          var _this65 = this;
+          var _this66 = this;
 
           this.jobTitleSearch = true;
           this.overLayJobTitle = false;
@@ -7683,10 +7841,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (data) {
-            _this65.AllAgentJob = data;
+            _this66.AllAgentJob = data;
             data.forEach(function (element) {
               if (element.jobtitle == item) {
-                _this65.tutorials.push(element);
+                _this66.tutorials.push(element);
               }
             });
           });
@@ -7720,7 +7878,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getGentSearchValue",
         value: function getGentSearchValue() {
-          var _this66 = this;
+          var _this67 = this;
 
           this.crossSearch = true;
           this.tutorials = [];
@@ -7732,7 +7890,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (agent) {
-            _this66.allAgent = agent.length;
+            _this67.allAgent = agent.length;
           });
           this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
             return changes.map(function (c) {
@@ -7742,10 +7900,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           })).subscribe(function (data) {
             data.forEach(function (element) {
-              console.log(element.email.toLowerCase().includes(_this66.searchEmail.toLowerCase()));
+              console.log(element.email.toLowerCase().includes(_this67.searchEmail.toLowerCase()));
 
-              if (element.email.toLowerCase().includes(_this66.searchEmail.toLowerCase()) || element.fullname.toLowerCase().includes(_this66.searchEmail.toLowerCase()) || element.postcode.toLowerCase().includes(_this66.searchEmail.toLowerCase())) {
-                _this66.tutorials.push(element);
+              if (element.email.toLowerCase().includes(_this67.searchEmail.toLowerCase()) || element.fullname.toLowerCase().includes(_this67.searchEmail.toLowerCase()) || element.postcode.toLowerCase().includes(_this67.searchEmail.toLowerCase())) {
+                _this67.tutorials.push(element);
               }
             });
           });
@@ -7753,15 +7911,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSearchValue",
         value: function getSearchValue() {
-          var _this67 = this;
+          var _this68 = this;
 
           this.crossSearch = true;
           this.allUser = [];
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
               if (elements.data().UserType == "User") {
-                if (elements.data().email.toLowerCase().includes(_this67.searchEmail.toLowerCase()) || elements.data().Name.toLowerCase().includes(_this67.searchEmail.toLowerCase())) {
-                  _this67.allUser.push({
+                if (elements.data().email.toLowerCase().includes(_this68.searchEmail.toLowerCase()) || elements.data().Name.toLowerCase().includes(_this68.searchEmail.toLowerCase())) {
+                  _this68.allUser.push({
                     detail: elements.data(),
                     uid: elements.data().uid
                   });
@@ -7787,10 +7945,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteUser",
         value: function deleteUser(uid) {
-          var _this68 = this;
+          var _this69 = this;
 
           this.adminPanelService.deleteUser(uid).then(function (data) {
-            var dialogRef = _this68.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this69.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "User Deleted"
               }
@@ -7802,10 +7960,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteAgent",
         value: function deleteAgent(uid) {
-          var _this69 = this;
+          var _this70 = this;
 
           this.adminPanelService.deleteAgent(uid).then(function (data) {
-            _this69.deleteUser(uid);
+            _this70.deleteUser(uid);
           });
         }
       }, {
@@ -7821,20 +7979,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this70 = this;
+          var _this71 = this;
 
           if (this.getUser != null) {
             this.uid = this.getUser.uid;
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this70.name = element.data().Name;
-              _this70.image = element.data().Image;
+              _this71.name = element.data().Name;
+              _this71.image = element.data().Image;
             });
           }
         }
       }, {
         key: "getCountUser",
         value: function getCountUser() {
-          var _this71 = this;
+          var _this72 = this;
 
           this.allUser = [];
           this.allAgent = 0;
@@ -7846,17 +8004,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (agent) {
-            _this71.allAgent = agent.length;
+            _this72.allAgent = agent.length;
           });
           this.adminPanelService.getAllUser().then(function (data) {
             data.forEach(function (elements) {
               if (elements.data().UserType != "Agent" && elements.data().UserType != "Admin") {
-                _this71.allUser.push({
+                _this72.allUser.push({
                   detail: elements.data(),
                   uid: elements.data().uid
                 });
 
-                _this71.options.push(elements.data().email);
+                _this72.options.push(elements.data().email);
               }
             });
           });
@@ -7864,18 +8022,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllUsers",
         value: function getAllUsers() {
-          var _this72 = this;
+          var _this73 = this;
 
           this.adminPanelService.getAllUser().then(function (element) {
             element.forEach(function (elements) {
-              _this72.allUserDetails.push(elements.data());
+              _this73.allUserDetails.push(elements.data());
             });
           });
         }
       }, {
         key: "retrieveTutorials",
         value: function retrieveTutorials() {
-          var _this73 = this;
+          var _this74 = this;
 
           this.jobTitleSearch = false;
           this.adminPanelService.getAllAgent().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (changes) {
@@ -7885,10 +8043,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (data) {
-            _this73.tutorials = data;
-            _this73.AllAgentJob = data;
+            _this74.tutorials = data;
+            _this74.AllAgentJob = data;
             data.forEach(function (element) {
-              _this73.agentOptions.push(element.email);
+              _this74.agentOptions.push(element.email);
             });
           });
         }
@@ -7909,11 +8067,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createUser",
         value: function createUser(Name, email, password, Type) {
-          var _this74 = this;
+          var _this75 = this;
 
           console.log(Name, email, password, Type);
           this.AdminAuthService.adminSignUp(Name, email, password, Type).then(function (data) {
-            var dialogRef = _this74.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this75.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "Account Created and Verification Email send"
               }
@@ -8053,11 +8211,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(UsersEditPageComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this75 = this;
+          var _this76 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this75.UserUid = params.get("uid");
+            _this76.UserUid = params.get("uid");
           });
           this.getUserDetails();
           this.getSelectedUserDetail();
@@ -8068,13 +8226,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deletesellerconfirmedInterest",
         value: function deletesellerconfirmedInterest(propid) {
-          var _this76 = this;
+          var _this77 = this;
 
           this.isLoading = true;
           this.adminPanelService.deleteSellerConFirmInterestBuyer(this.UserUid, propid).then(function (data) {
-            _this76.isLoading = false;
+            _this77.isLoading = false;
 
-            var dialogRef = _this76.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this77.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "Expressed Interest  Deleted"
               }
@@ -8084,13 +8242,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteconfirmedInterest",
         value: function deleteconfirmedInterest(uid, propid) {
-          var _this77 = this;
+          var _this78 = this;
 
           this.isLoading = true;
           this.adminPanelService.deleteConFirmInterestBuyer(this.UserUid, propid).then(function (data) {
-            _this77.isLoading = false;
+            _this78.isLoading = false;
 
-            var dialogRef = _this77.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this78.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "Confirmed Interest  Deleted"
               }
@@ -8100,13 +8258,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteExpressedInterest",
         value: function deleteExpressedInterest(uid, propid) {
-          var _this78 = this;
+          var _this79 = this;
 
           this.isLoading = true;
           this.adminPanelService.deleteConFirmInterestBuyer(uid, propid).then(function (data) {
-            _this78.isLoading = false;
+            _this79.isLoading = false;
 
-            var dialogRef = _this78.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this79.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "Expressed Interest  Deleted"
               }
@@ -8116,19 +8274,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getConfirmedInterest",
         value: function getConfirmedInterest() {
-          var _this79 = this;
+          var _this80 = this;
 
           this.adminPanelService.getConFirmInterestBuyer(this.UserUid).then(function (element) {
             element.forEach(function (element) {
               if (element.data().matchStatus == "confirmed") {
-                _this79.confirmedInterest.push({
+                _this80.confirmedInterest.push({
                   Detail: element.data(),
                   id: element.id
                 });
               }
 
               if (element.data().matchStatus == "pending") {
-                _this79.ExpressedInterest.push({
+                _this80.ExpressedInterest.push({
                   Detail: element.data(),
                   id: element.id
                 });
@@ -8138,13 +8296,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.adminPanelService.getSellerConFirmInterestBuyer(this.UserUid).then(function (seller) {
             seller.forEach(function (sellerElemnt) {
               if (sellerElemnt.data().matchStatus == "pending") {
-                _this79.sellerExpressedInterest.push({
+                _this80.sellerExpressedInterest.push({
                   Detail: sellerElemnt.data(),
                   id: sellerElemnt.id
                 });
               }
 
-              console.log(_this79.sellerExpressedInterest); // if(sellerElemnt.data().matchStatus == "pending")
+              console.log(_this80.sellerExpressedInterest); // if(sellerElemnt.data().matchStatus == "pending")
               // {
               //   this.sellerExpressedInterest.push({Detail:sellerElemnt.data(),id:sellerElemnt.id})
               // }
@@ -8154,10 +8312,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteBuyer",
         value: function deleteBuyer(uid, docid) {
-          var _this80 = this;
+          var _this81 = this;
 
           this.adminPanelService.deleteBuyer(uid, docid).then(function (data) {
-            var dialogRef = _this80.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this81.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "Nestimate Deleted"
               }
@@ -8169,10 +8327,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(uid, docid) {
-          var _this81 = this;
+          var _this82 = this;
 
           this.adminPanelService.deleteSeller(uid, docid).then(function (data) {
-            var dialogRef = _this81.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this82.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "Nestimate Deleted"
               }
@@ -8184,15 +8342,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getUserDetails",
         value: function getUserDetails() {
-          var _this82 = this;
+          var _this83 = this;
 
           if (this.user != null) {
             this.uid = this.user.uid;
             document.getElementById("appfooter").style.display = "none";
             document.getElementById("header-main").style.display = "none";
             this.adminPanelService.getUser(this.uid).then(function (element) {
-              _this82.username = element.data().Name;
-              _this82.image = element.data().Image;
+              _this83.username = element.data().Name;
+              _this83.image = element.data().Image;
             });
           }
         }
@@ -8204,53 +8362,53 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSelectedUserDetail",
         value: function getSelectedUserDetail() {
-          var _this83 = this;
+          var _this84 = this;
 
           this.adminPanelService.getUser(this.UserUid).then(function (user) {
-            _this83.Name = user.data().Name;
-            _this83.email = user.data().email;
+            _this84.Name = user.data().Name;
+            _this84.email = user.data().email;
 
             if (user.data().title != null) {
-              _this83.title = user.data().title;
+              _this84.title = user.data().title;
             }
 
             if (user.data().DOB != null) {
-              _this83.DOB = user.data().DOB.toDate();
+              _this84.DOB = user.data().DOB.toDate();
             }
 
             if (user.data().Phone != null) {
-              _this83.Phone = user.data().Phone;
+              _this84.Phone = user.data().Phone;
             }
 
             if (user.data().Currentpostcode != null) {
-              _this83.Currentpostcode = user.data().Currentpostcode;
+              _this84.Currentpostcode = user.data().Currentpostcode;
             }
 
             if (user.data().Currentstate != null) {
-              _this83.Currentstate = user.data().Currentstate;
+              _this84.Currentstate = user.data().Currentstate;
             }
 
             if (user.data().CurrentTowncity != null) {
-              _this83.CurrentTowncity = user.data().CurrentTowncity;
+              _this84.CurrentTowncity = user.data().CurrentTowncity;
             }
 
             if (user.data().Currentaddress != null) {
-              _this83.Currentaddress = user.data().Currentaddress;
+              _this84.Currentaddress = user.data().Currentaddress;
             }
 
             if (user.data().prefrence != null) {
-              _this83.prefrence = user.data().prefrence;
+              _this84.prefrence = user.data().prefrence;
             }
           });
         }
       }, {
         key: "getBuyerEntries",
         value: function getBuyerEntries() {
-          var _this84 = this;
+          var _this85 = this;
 
           this.adminPanelService.getBuyerEntries(this.UserUid).then(function (user) {
             user.forEach(function (UserDetail) {
-              _this84.BuyerUserDetails.push({
+              _this85.BuyerUserDetails.push({
                 detail: UserDetail.data(),
                 id: UserDetail.id
               });
@@ -8260,11 +8418,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerEnteries",
         value: function getSellerEnteries() {
-          var _this85 = this;
+          var _this86 = this;
 
           this.adminPanelService.getSellerEntries(this.UserUid).then(function (user) {
             user.forEach(function (UserDetail) {
-              _this85.SellerUserDetails.push({
+              _this86.SellerUserDetails.push({
                 detail: UserDetail.data(),
                 id: UserDetail.id
               });
@@ -8274,7 +8432,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
-          var _this86 = this;
+          var _this87 = this;
 
           this.isLoading = true;
           this.user.uid = this.UserUid;
@@ -8336,9 +8494,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this["return"] = this.adminPanelService.userupate(this.user).then(function (data) {
-            _this86.isLoading = false;
+            _this87.isLoading = false;
 
-            var dialogRef = _this86.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
+            var dialogRef = _this87.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_5__["AltertFormDialogComponent"], {
               data: {
                 message: "User Detail Updated"
               }
@@ -8659,7 +8817,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(HomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this87 = this;
+          var _this88 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -8685,34 +8843,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getBlogs();
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this87.topLine = element.data().topLine;
-              _this87.secondLine = element.data().SecondLine;
+              _this88.topLine = element.data().topLine;
+              _this88.secondLine = element.data().SecondLine;
             });
           });
         }
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this88 = this;
+          var _this89 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this88.imageUrl = element.data().BannerImageUrl;
-              _this88.secondImageUrl = element.data().SecondBannerImage;
-              _this88.SecondImageText = element.data().SecondBannerText;
-              _this88.Step1Image = element.data().Step1Image;
-              _this88.Step2Image = element.data().Step2Image;
-              _this88.step3Image = element.data().Step3Image;
-              _this88.Step1TExt = element.data().Step1ImageText;
-              _this88.Step2Text = element.data().Step2ImageText;
-              _this88.step3Text = element.data().Step3ImageText;
+              _this89.imageUrl = element.data().BannerImageUrl;
+              _this89.secondImageUrl = element.data().SecondBannerImage;
+              _this89.SecondImageText = element.data().SecondBannerText;
+              _this89.Step1Image = element.data().Step1Image;
+              _this89.Step2Image = element.data().Step2Image;
+              _this89.step3Image = element.data().Step3Image;
+              _this89.Step1TExt = element.data().Step1ImageText;
+              _this89.Step2Text = element.data().Step2ImageText;
+              _this89.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this89 = this;
+          var _this90 = this;
 
           this.HomeService.getBlogs().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["map"])(function (changes) {
             return changes.map(function (c) {
@@ -8721,7 +8879,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (agent) {
-            _this89.homePageBlogs = agent;
+            _this90.homePageBlogs = agent;
           });
         }
       }, {
@@ -8744,12 +8902,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "homeradio",
         value: function homeradio(value) {
-          var _this90 = this;
+          var _this91 = this;
 
           if (this.home == "seeker") {
             if (this.user == null) {
               this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-                _this90.notificationContent = res.data().BuyerSignupNotification;
+                _this91.notificationContent = res.data().BuyerSignupNotification;
               });
               this.formType = "buyer";
               this.loginTop = true;
@@ -8761,7 +8919,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           if (this.home == "owner") {
             if (this.user == null) {
               this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-                _this90.notificationContent = res.data().SellerFormSingupNotification;
+                _this91.notificationContent = res.data().SellerFormSingupNotification;
               });
               this.formType = "Seller";
               this.loginTop = true;
@@ -8773,37 +8931,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this91 = this;
+          var _this92 = this;
 
           this.isLoading = true;
           this.viewResult = true;
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this91.isLoading = true;
+              _this92.isLoading = true;
 
-              _this91.listingBuyers.push(element.data());
+              _this92.listingBuyers.push(element.data());
             });
 
-            _this91.HomeService.getlistingseller(_this91.uid).then(function (res) {
+            _this92.HomeService.getlistingseller(_this92.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this91.isLoading = true;
+                _this92.isLoading = true;
 
-                _this91.listingSeller.push(elements.data());
+                _this92.listingSeller.push(elements.data());
               });
-              _this91.isLoading = true;
-              _this91.checkNumberNestimates = _this91.listingBuyers.length + _this91.listingSeller.length;
-              _this91.isLoading = true;
+              _this92.isLoading = true;
+              _this92.checkNumberNestimates = _this92.listingBuyers.length + _this92.listingSeller.length;
+              _this92.isLoading = true;
 
-              if (_this91.checkNumberNestimates > 0) {
-                _this91.isLoading = true;
-                _this91.appMatches = true;
-                _this91.interval = setInterval(function () {
-                  _this91.isLoading = false;
+              if (_this92.checkNumberNestimates > 0) {
+                _this92.isLoading = true;
+                _this92.appMatches = true;
+                _this92.interval = setInterval(function () {
+                  _this92.isLoading = false;
                 }, 3000);
               } else {
-                _this91.isLoading = true;
-                _this91.viewResult = false;
-                _this91.isLoading = false;
+                _this92.isLoading = true;
+                _this92.viewResult = false;
+                _this92.isLoading = false;
               }
             });
           });
@@ -8811,17 +8969,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this92 = this;
+          var _this93 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this92.isLoading = false;
+            _this93.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this93 = this;
+          var _this94 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -8832,23 +8990,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this93.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                  var dialogRef = _this94.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this93.UserSignIn
+                      message: _this94.UserSignIn
                     }
                   });
 
-                  _this93.isLoading = false;
+                  _this94.isLoading = false;
                 } else {
-                  _this93.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
+                  _this94.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
                   //   this.isLoading = false;
                   // });
 
                 }
               } else {
-                _this93.isLoading = false;
+                _this94.isLoading = false;
 
-                var _dialogRef4 = _this93.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var _dialogRef4 = _this94.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -8931,10 +9089,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this94 = this;
+          var _this95 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this94.notificationContent = res.data().SingupFromMenu; //.BuyerSignupNotification
+            _this95.notificationContent = res.data().SingupFromMenu; //.BuyerSignupNotification
           });
         }
       }, {
@@ -8997,33 +9155,33 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this95 = this;
+          var _this96 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this95.isLoading = false;
+            _this96.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this96 = this;
+          var _this97 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this96.isLoading = false;
+            _this97.isLoading = false;
           });
         }
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this97 = this;
+          var _this98 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this97.AgentSignIn = element.data().AgentSignIn;
-            _this97.UserSignIn = element.data().UserSignIn;
-            _this97.isLoading = false;
+            _this98.AgentSignIn = element.data().AgentSignIn;
+            _this98.UserSignIn = element.data().UserSignIn;
+            _this98.isLoading = false;
           });
         }
       }, {
@@ -9040,7 +9198,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "Login",
         value: function Login(email, pass) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee18() {
-            var _this98 = this;
+            var _this99 = this;
 
             var result, dialogRef;
             return regeneratorRuntime.wrap(function _callee18$(_context18) {
@@ -9054,7 +9212,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 3:
                     result = _context18.sent;
                     this.ngZone.run(function () {
-                      _this98.getUserKnow();
+                      _this99.getUserKnow();
                     }); // this.SetUserData(result.user);
 
                     _context18.next = 11;
@@ -9209,34 +9367,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this99 = this;
+          var _this100 = this;
 
           this.route.params.subscribe(function (params) {
-            _this99.useCase = params["use"];
+            _this100.useCase = params["use"];
 
-            if (_this99.useCase == "buy") {
-              _this99.activeTab = 0;
-              _this99.buy = true;
-              _this99.sell = false;
-            } else if (_this99.useCase == "sell") {
-              _this99.activeTab = 1;
-              _this99.buy = false;
-              _this99.sell = true;
+            if (_this100.useCase == "buy") {
+              _this100.activeTab = 0;
+              _this100.buy = true;
+              _this100.sell = false;
+            } else if (_this100.useCase == "sell") {
+              _this100.activeTab = 1;
+              _this100.buy = false;
+              _this100.sell = true;
             }
 
-            console.log(_this99.useCase);
+            console.log(_this100.useCase);
           });
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this99.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this99.userData));
+              _this100.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this100.userData));
 
-              _this99.LoggedIn();
+              _this100.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this99.LoggedOut();
+              _this100.LoggedOut();
             }
           });
         }
@@ -9519,34 +9677,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerMatcheListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this100 = this;
+          var _this101 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerMatchListingService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this100.imageUrl = element.data().SellerBuyerMatchesPageImage;
+              _this101.imageUrl = element.data().SellerBuyerMatchesPageImage;
             });
           });
           this.buyerEntry = JSON.parse(localStorage.getItem('buyerUserDetails'));
           this.sub = this.route.paramMap.subscribe(function (param) {
-            _this100.Looking_postcode = param.get("Lookingpostcode").replace(/\s/g, "").trim();
-            _this100.Property_Type = param.get("PropertyType").trim();
-            _this100.Looking_Town = param.get("LookingTown").trim();
-            _this100.Min_Amount = param.get("MinAmount").replace(/,/g, "").trim();
-            _this100.Max_Amount = param.get("MaxAmount").replace(/,/g, "").trim();
-            _this100.New_latitude = param.get("latitude").trim();
-            _this100.New_longitude = param.get("longitude").trim();
-            _this100.newUser = param.get("newUser").trim();
-            _this100.Property_For = param.get("PropertyFor").trim();
-            _this100.LookingStreetname = param.get("LookingStreetname").trim();
-            _this100.Conditions = param.get("Conditions").trim();
-            _this100.FinancialPosition = param.get("FinancialPosition").trim();
-            _this100.Validity = param.get("Validity").trim();
-            _this100.Position = param.get("Position").trim();
-            _this100.UserId = param.get("UserId").trim();
-            _this100.ChainStatus = param.get("ChainStatus").trim();
-            _this100.New_id = param.get("id");
+            _this101.Looking_postcode = param.get("Lookingpostcode").replace(/\s/g, "").trim();
+            _this101.Property_Type = param.get("PropertyType").trim();
+            _this101.Looking_Town = param.get("LookingTown").trim();
+            _this101.Min_Amount = param.get("MinAmount").replace(/,/g, "").trim();
+            _this101.Max_Amount = param.get("MaxAmount").replace(/,/g, "").trim();
+            _this101.New_latitude = param.get("latitude").trim();
+            _this101.New_longitude = param.get("longitude").trim();
+            _this101.newUser = param.get("newUser").trim();
+            _this101.Property_For = param.get("PropertyFor").trim();
+            _this101.LookingStreetname = param.get("LookingStreetname").trim();
+            _this101.Conditions = param.get("Conditions").trim();
+            _this101.FinancialPosition = param.get("FinancialPosition").trim();
+            _this101.Validity = param.get("Validity").trim();
+            _this101.Position = param.get("Position").trim();
+            _this101.UserId = param.get("UserId").trim();
+            _this101.ChainStatus = param.get("ChainStatus").trim();
+            _this101.New_id = param.get("id");
           });
 
           if (this.newUser == "false") {
@@ -9601,89 +9759,89 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               //Price Formula
-              _this100.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this100.maxAmount);
-              _this100.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this100.less);
-              _this100.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this100.more); //Remove Postcode Spaces
+              _this101.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this101.maxAmount);
+              _this101.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this101.less);
+              _this101.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this101.more); //Remove Postcode Spaces
 
-              _this100.removespace = item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5);
-              _this100.listing = _this100.Look_postcodes;
-              _this100.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this101.removespace = item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5);
+              _this101.listing = _this101.Look_postcodes;
+              _this101.amount = item.data().MaxAmount.replace(/,/g, "");
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this100.Look_postcodes && item.data().PropertyFor == _this100.Look_PropertyFor && item.data().PropertyType == _this100.Look_propertytype && _this100.uid != item.data().UserId && less <= maxAmount || more >= maxAmount && item.latitude && item.longitude) {
-                _this100.distanceInKm = _this100.getDistanceFromLatLonInKm(_this100.Look_latitude, _this100.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this101.Look_postcodes && item.data().PropertyFor == _this101.Look_PropertyFor && item.data().PropertyType == _this101.Look_propertytype && _this101.uid != item.data().UserId && less <= maxAmount || more >= maxAmount && item.latitude && item.longitude) {
+                _this101.distanceInKm = _this101.getDistanceFromLatLonInKm(_this101.Look_latitude, _this101.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this100.matchedProperties.push({
+                _this101.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this100.distanceInKm * 1 / 1.609344,
+                  distance: _this101.distanceInKm * 1 / 1.609344,
                   Images: item.data().Images
                 });
 
-                _this100.matchedstartPage = 0;
-                _this100.matchedpaginationLimit = 6;
+                _this101.matchedstartPage = 0;
+                _this101.matchedpaginationLimit = 6;
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this100.Look_postcodes && item.data().PropertyFor == _this100.Look_PropertyFor && item.data().PropertyType == _this100.Look_propertytype && _this100.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this100.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
-                _this100.distanceInKm = _this100.getDistanceFromLatLonInKm(_this100.Look_latitude, _this100.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this101.Look_postcodes && item.data().PropertyFor == _this101.Look_PropertyFor && item.data().PropertyType == _this101.Look_propertytype && _this101.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this101.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.latitude && item.longitude) {
+                _this101.distanceInKm = _this101.getDistanceFromLatLonInKm(_this101.Look_latitude, _this101.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this100.unmatchedProperties.push({
+                _this101.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this100.distanceInKm * 1 / 1.609344
+                  distance: _this101.distanceInKm * 1 / 1.609344
                 });
 
-                _this100.startPage = 0;
-                _this100.paginationLimit = 6;
+                _this101.startPage = 0;
+                _this101.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this100.Look_postcodes && item.data().PropertyFor == _this100.Look_PropertyFor && item.data().PropertyType == _this100.Look_propertytype && _this100.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this100.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this100.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this100.distanceInKm = _this100.getDistanceFromLatLonInKm(_this100.Look_latitude, _this100.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this101.Look_postcodes && item.data().PropertyFor == _this101.Look_PropertyFor && item.data().PropertyType == _this101.Look_propertytype && _this101.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this101.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this101.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this101.distanceInKm = _this101.getDistanceFromLatLonInKm(_this101.Look_latitude, _this101.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this100.unmatchedPriceLogic.push({
+                _this101.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this100.distanceInKm * 1 / 1.609344
+                  distance: _this101.distanceInKm * 1 / 1.609344
                 });
 
-                _this100.startPage = 0;
-                _this100.paginationLimit = 6;
+                _this101.startPage = 0;
+                _this101.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this100.Look_postcodes && item.data().PropertyFor == _this100.Look_PropertyFor && item.data().PropertyType != _this100.Look_propertytype && _this100.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this100.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this100.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this100.distanceInKm = _this100.getDistanceFromLatLonInKm(_this100.Look_latitude, _this100.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this101.Look_postcodes && item.data().PropertyFor == _this101.Look_PropertyFor && item.data().PropertyType != _this101.Look_propertytype && _this101.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this101.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this101.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this101.distanceInKm = _this101.getDistanceFromLatLonInKm(_this101.Look_latitude, _this101.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this100.unmatchedallProperty.push({
+                _this101.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this100.distanceInKm * 1 / 1.609344
+                  distance: _this101.distanceInKm * 1 / 1.609344
                 });
 
-                _this100.startPage = 0;
-                _this100.paginationLimit = 6;
+                _this101.startPage = 0;
+                _this101.paginationLimit = 6;
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this100.Look_postcodes && item.data().PropertyFor == _this100.Look_PropertyFor && _this100.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this100.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this100.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this100.distanceInKm = _this100.getDistanceFromLatLonInKm(_this100.Look_latitude, _this100.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this101.Look_postcodes && item.data().PropertyFor == _this101.Look_PropertyFor && _this101.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this101.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this101.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this101.distanceInKm = _this101.getDistanceFromLatLonInKm(_this101.Look_latitude, _this101.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this100.lookTown.push({
+                _this101.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this100.distanceInKm * 1 / 1.609344
+                  distance: _this101.distanceInKm * 1 / 1.609344
                 });
               }
 
-              _this100.startPage = 0;
-              _this100.paginationLimit = 6;
+              _this101.startPage = 0;
+              _this101.paginationLimit = 6;
             });
 
-            _this100.unmatchedProperties.sort(_this100.compare);
+            _this101.unmatchedProperties.sort(_this101.compare);
           });
           this.getFavoarte();
           this.getExpressedListingIds();
@@ -9839,12 +9997,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this101 = this;
+          var _this102 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this101.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this101.distinctExpressedUid.push(item.data().propertyId);
+              if (_this102.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this102.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -9863,28 +10021,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addtoFavorate",
         value: function addtoFavorate(uid, property, id) {
-          var _this102 = this;
+          var _this103 = this;
 
           this.UserProperty = {
             PropertyDetail: property,
             proppertyId: id
           };
           this.MatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this102.getFavoarte();
+            _this103.getFavoarte();
 
-            _this102.checkFavorateValue(id);
+            _this103.checkFavorateValue(id);
           });
         }
       }, {
         key: "getFavoarte",
         value: function getFavoarte() {
-          var _this103 = this;
+          var _this104 = this;
 
           this.favorateProperty = [];
           this.MatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this103.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this103.favorateProperty.push(item.data().proppertyId);
+              if (_this104.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this104.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -9903,10 +10061,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteFavorate",
         value: function deleteFavorate(docid) {
-          var _this104 = this;
+          var _this105 = this;
 
           this.MatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this104.getFavoarte();
+            _this105.getFavoarte();
           });
         }
       }, {
@@ -10225,60 +10383,60 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(BuyerSelectedPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this105 = this;
+          var _this106 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this105.Lookingpostcode = params.get("Lookingpostcode");
-            _this105.Lookingstate = params.get("Lookingstate");
-            _this105.LookingTown = params.get("LookingTown");
-            _this105.norooms = params.get("norooms");
-            _this105.PropertyCondition = params.get("PropertyCondition");
-            _this105.MaxAmount = params.get("MaxAmount");
-            _this105.LookingAddress = params.get("LookingAddress");
-            _this105.ownership = params.get("ownership");
-            _this105.PropertyType = params.get("PropertyType").replace(/\s/g, "");
-            _this105.features = params.get("features");
-            _this105.UserId = params.get("UserId").replace(/\s/g, "");
-            _this105.MinAmount = params.get("MinAmount");
-            _this105.Maxbathrooms = params.get("Maxbathrooms");
-            _this105.Maxrooms = params.get("Maxrooms");
-            _this105.Maxreception = params.get("Maxreception");
-            _this105.propertyId = params.get("propertyId").trim();
-            _this105.expressed = params.get("expressed");
-            _this105.propertyFor = params.get("PropertyFor"); //  console.log(this.propertyId)
+            _this106.Lookingpostcode = params.get("Lookingpostcode");
+            _this106.Lookingstate = params.get("Lookingstate");
+            _this106.LookingTown = params.get("LookingTown");
+            _this106.norooms = params.get("norooms");
+            _this106.PropertyCondition = params.get("PropertyCondition");
+            _this106.MaxAmount = params.get("MaxAmount");
+            _this106.LookingAddress = params.get("LookingAddress");
+            _this106.ownership = params.get("ownership");
+            _this106.PropertyType = params.get("PropertyType").replace(/\s/g, "");
+            _this106.features = params.get("features");
+            _this106.UserId = params.get("UserId").replace(/\s/g, "");
+            _this106.MinAmount = params.get("MinAmount");
+            _this106.Maxbathrooms = params.get("Maxbathrooms");
+            _this106.Maxrooms = params.get("Maxrooms");
+            _this106.Maxreception = params.get("Maxreception");
+            _this106.propertyId = params.get("propertyId").trim();
+            _this106.expressed = params.get("expressed");
+            _this106.propertyFor = params.get("PropertyFor"); //  console.log(this.propertyId)
             //  console.log(this.UserId)
             //Buyer Params
 
-            _this105.Look_postcodes = params.get("Look_postcodes");
-            _this105.Look_streetName = params.get("Look_Streetname");
-            _this105.Look_condition = params.get("Look_condition");
-            _this105.Look_ChaonStatus = params.get("Look_chainstatus");
-            _this105.Look_Position = params.get("Look_FinancialPosition");
-            _this105.Look_Minamount = params.get("Look_minamount");
-            _this105.Look_Maxamount = params.get("Look_maxamount");
-            _this105.Look_Validity = params.get("Look_Validity");
-            _this105.Look_PropertyType = params.get("Look_propertytype");
-            _this105.Look_Position = params.get("Look_Position");
-            _this105.Look_UserId = params.get("Look_UserId");
-            _this105.Look_PropertyFor = params.get("Look_PropertyFor");
-            _this105.Look_id = params.get("New_id");
+            _this106.Look_postcodes = params.get("Look_postcodes");
+            _this106.Look_streetName = params.get("Look_Streetname");
+            _this106.Look_condition = params.get("Look_condition");
+            _this106.Look_ChaonStatus = params.get("Look_chainstatus");
+            _this106.Look_Position = params.get("Look_FinancialPosition");
+            _this106.Look_Minamount = params.get("Look_minamount");
+            _this106.Look_Maxamount = params.get("Look_maxamount");
+            _this106.Look_Validity = params.get("Look_Validity");
+            _this106.Look_PropertyType = params.get("Look_propertytype");
+            _this106.Look_Position = params.get("Look_Position");
+            _this106.Look_UserId = params.get("Look_UserId");
+            _this106.Look_PropertyFor = params.get("Look_PropertyFor");
+            _this106.Look_id = params.get("New_id");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.CMSSERVICE.getBlueNotification(1).then(function (data) {
-            _this105.notificationContent = data.data().BuyerMatchesExpressInterestNotifcation;
+            _this106.notificationContent = data.data().BuyerMatchesExpressInterestNotifcation;
           });
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this105.ExpressedNestimate = element.data().ExpressedNestimate;
+            _this106.ExpressedNestimate = element.data().ExpressedNestimate;
           });
         } //Create Database BuyerMatches
 
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this106 = this;
+          var _this107 = this;
 
           this.matchesBuyer = {
             SellerDetails: this.sellerDetails,
@@ -10292,8 +10450,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isBuyerSelected = true;
           this["return"] = this.Selected_propertydetail_Service.matchesBuyerCreate(this.uid, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this106.isBuyerSelected = false;
-              _this106.overlay = false;
+              _this107.isBuyerSelected = false;
+              _this107.overlay = false;
             }
           });
           this.matchesSeller = {
@@ -10309,11 +10467,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isBuyerSelected = true;
           this["return"] = this.Selected_propertydetail_Service.matchesSellerCreate(this.UserId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this106.isBuyerSelected = false;
-              _this106.datastored = true;
-              _this106.express = false;
+              _this107.isBuyerSelected = false;
+              _this107.datastored = true;
+              _this107.express = false;
 
-              _this106.createSellerNotification();
+              _this107.createSellerNotification();
             }
           });
           this.isBuyerSelected = true;
@@ -10322,17 +10480,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this107 = this;
+          var _this108 = this;
 
           this["return"] = this.Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this107.isBuyerSelected = false;
-              _this107.datastored = true;
-              _this107.express = false;
+              _this108.isBuyerSelected = false;
+              _this108.datastored = true;
+              _this108.express = false;
 
-              var dialogRef = _this107.dialog.open(_Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_10__["AlertSelectedPropertyComponent"], {
+              var dialogRef = _this108.dialog.open(_Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_10__["AlertSelectedPropertyComponent"], {
                 data: {
-                  message: _this107.ExpressedNestimate
+                  message: _this108.ExpressedNestimate
                 }
               });
             }
@@ -10369,51 +10527,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this108 = this;
+          var _this109 = this;
 
           this.Selected_propertydetail_Service.getSeller(this.UserId, this.propertyId).then(function (res) {
-            _this108.sellerDetails = res.data();
-            _this108.userName = res.data().username;
-            _this108.usertitle = res.data().usertitle;
-            _this108.PropertyFor = res.data().PropertyFor;
-            _this108.price = res.data().MaxAmount;
-            _this108.postcode = res.data().Lookingpostcode;
-            _this108.Streetname = res.data().Lookingstate;
-            _this108.PropertyTypes = res.data().PropertyType;
-            _this108.Maxroom = res.data().Maxrooms;
-            _this108.ownerships = res.data().ownership;
-            _this108.Bathrooms = res.data().Maxbathrooms;
-            _this108.Reception = res.data().Maxreception;
-            _this108.PropertyCondition = res.data().PropertyCondition;
-            _this108.Maxbathrooms = res.data().Maxbathrooms;
-            _this108.Maxreception = res.data().Maxreception;
-            _this108.LookingAddress = res.data().LookingAddress;
-            _this108.LookingTown = res.data().LookingTown;
-            _this108.allImages = res.data().Images;
+            _this109.sellerDetails = res.data();
+            _this109.userName = res.data().username;
+            _this109.usertitle = res.data().usertitle;
+            _this109.PropertyFor = res.data().PropertyFor;
+            _this109.price = res.data().MaxAmount;
+            _this109.postcode = res.data().Lookingpostcode;
+            _this109.Streetname = res.data().Lookingstate;
+            _this109.PropertyTypes = res.data().PropertyType;
+            _this109.Maxroom = res.data().Maxrooms;
+            _this109.ownerships = res.data().ownership;
+            _this109.Bathrooms = res.data().Maxbathrooms;
+            _this109.Reception = res.data().Maxreception;
+            _this109.PropertyCondition = res.data().PropertyCondition;
+            _this109.Maxbathrooms = res.data().Maxbathrooms;
+            _this109.Maxreception = res.data().Maxreception;
+            _this109.LookingAddress = res.data().LookingAddress;
+            _this109.LookingTown = res.data().LookingTown;
+            _this109.allImages = res.data().Images;
 
-            _this108.Recentlyviewed();
+            _this109.Recentlyviewed();
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this109 = this;
+          var _this110 = this;
 
           this.Selected_propertydetail_Service.getBuyerRequirement(this.uid, this.Look_id).then(function (res) {
-            _this109.buyerDetails = res.data();
+            _this110.buyerDetails = res.data();
           });
         }
       }, {
         key: "Recentlyviewed",
         value: function Recentlyviewed() {
-          var _this110 = this;
+          var _this111 = this;
 
           this.Selected_propertydetail_Service.getRecentlyItems(this.uid, this.propertyId).then(function (getData) {
             // console.log(element.data().time * 1000)
             if (getData.data() == undefined) {
-              _this110.sellerDetails.time = _this110.now;
+              _this111.sellerDetails.time = _this111.now;
 
-              _this110.Selected_propertydetail_Service.RecentlyView(_this110.uid, _this110.sellerDetails, _this110.propertyId).then(function (res) {});
+              _this111.Selected_propertydetail_Service.RecentlyView(_this111.uid, _this111.sellerDetails, _this111.propertyId).then(function (res) {});
             }
           });
         }
@@ -10953,7 +11111,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this111 = this;
+          var _this112 = this;
 
           this.getUser = JSON.parse(localStorage.getItem("user"));
 
@@ -10967,26 +11125,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this111.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this111.userData));
+              _this112.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this112.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this111.LoggedIn();
+              _this112.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this111.LoggedOut();
+              _this112.LoggedOut();
             }
           });
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this111.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
+              _this112.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
             });
 
-            if (_this111.passs != null) {
-              _this111.emails = localStorage.getItem("email");
-              _this111.passs = localStorage.getItem("password");
+            if (_this112.passs != null) {
+              _this112.emails = localStorage.getItem("email");
+              _this112.passs = localStorage.getItem("password");
             }
           }); // this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(
           // startWith(""),
@@ -11032,7 +11190,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this112 = this;
+          var _this113 = this;
 
           this.isLoggedIn = true; //Pre - populate the email field
 
@@ -11040,16 +11198,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this112.uid) {
-                _this112.user.Name = element.data().Name;
-                _this112.user.email = element.data().email;
+              if (element.data().uid == _this113.uid) {
+                _this113.user.Name = element.data().Name;
+                _this113.user.email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this112.user.DOB = element.data().DOB.toDate();
+                  _this113.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this112.user.Phone = element.data().Phone;
-                _this112.user.title = element.data().title;
+                _this113.user.Phone = element.data().Phone;
+                _this113.user.title = element.data().title;
               }
             });
           });
@@ -11716,22 +11874,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this113 = this;
+          var _this114 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Currentpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this113.postcodeCoordinates = data;
-            _this113.user.Currentpostcode = _this113.listingBuyer.Currentpostcode.toUpperCase();
-            _this113.user.CurrentAddress = _this113.listingBuyer.CurrentAddress;
-            _this113.user.CurrentTown = _this113.listingBuyer.CurrentTown;
-            _this113.user.Currentstate = _this113.listingBuyer.Currentstate;
-            _this113["return"] = _this113.fillFormsService.createBuyerUserCustomer(_this113.user).then(function (data) {
-              _this113.isLoading = false;
+            _this114.postcodeCoordinates = data;
+            _this114.user.Currentpostcode = _this114.listingBuyer.Currentpostcode.toUpperCase();
+            _this114.user.CurrentAddress = _this114.listingBuyer.CurrentAddress;
+            _this114.user.CurrentTown = _this114.listingBuyer.CurrentTown;
+            _this114.user.Currentstate = _this114.listingBuyer.Currentstate;
+            _this114["return"] = _this114.fillFormsService.createBuyerUserCustomer(_this114.user).then(function (data) {
+              _this114.isLoading = false;
 
-              _this113.nextStep();
+              _this114.nextStep();
             });
           }, function (error) {
-            var dialogRef = _this113.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+            var dialogRef = _this114.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
               data: {
                 message: "Enter Valid Postcode"
               }
@@ -11825,30 +11983,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "submitBuyer",
         value: function submitBuyer() {
-          var _this114 = this;
+          var _this115 = this;
 
           this.isLoading = true; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this114.postcodeCoordinates = data;
-            _this114.listingBuyer.longitude = _this114.postcodeCoordinates.result.longitude, _this114.listingBuyer.latitude = _this114.postcodeCoordinates.result.latitude, _this114.listingBuyer.UserId = _this114.userData.uid;
-            _this114.isLoading = true;
-            _this114.listingBuyer.UserId = _this114.uid;
-            _this114.listingBuyer.longitude, _this114.listingBuyer.latitude, _this114.listingBuyer.username = _this114.user.Name;
-            _this114.listingBuyer.Email = _this114.user.email;
-            _this114.listingBuyer.phonenumber = _this114.user.Phone;
-            _this114.listingBuyer.title = _this114.user.title;
-            _this114.listingBuyer.DOB = _this114.user.DOB;
-            _this114.listingBuyer.Lookingpostcode = _this114.listingBuyer.Lookingpostcode.toUpperCase();
-            _this114.listingBuyer.Currentpostcode = _this114.listingBuyer.Currentpostcode.toUpperCase();
-            _this114.newUser = true;
-            _this114["return"] = _this114.fillFormsService.createCustomer(_this114.userData.uid, _this114.listingBuyer).then(function (element) {
+            _this115.postcodeCoordinates = data;
+            _this115.listingBuyer.longitude = _this115.postcodeCoordinates.result.longitude, _this115.listingBuyer.latitude = _this115.postcodeCoordinates.result.latitude, _this115.listingBuyer.UserId = _this115.userData.uid;
+            _this115.isLoading = true;
+            _this115.listingBuyer.UserId = _this115.uid;
+            _this115.listingBuyer.longitude, _this115.listingBuyer.latitude, _this115.listingBuyer.username = _this115.user.Name;
+            _this115.listingBuyer.Email = _this115.user.email;
+            _this115.listingBuyer.phonenumber = _this115.user.Phone;
+            _this115.listingBuyer.title = _this115.user.title;
+            _this115.listingBuyer.DOB = _this115.user.DOB;
+            _this115.listingBuyer.Lookingpostcode = _this115.listingBuyer.Lookingpostcode.toUpperCase();
+            _this115.listingBuyer.Currentpostcode = _this115.listingBuyer.Currentpostcode.toUpperCase();
+            _this115.newUser = true;
+            _this115["return"] = _this115.fillFormsService.createCustomer(_this115.userData.uid, _this115.listingBuyer).then(function (element) {
               if (element == true) {
-                localStorage.setItem("buyerUserDetails", JSON.stringify(_this114.listingBuyer));
-                _this114.isLoading = false;
-                _this114.register = false;
+                localStorage.setItem("buyerUserDetails", JSON.stringify(_this115.listingBuyer));
+                _this115.isLoading = false;
+                _this115.register = false;
 
-                _this114.router.navigate(["/buyerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MinAmount/MaxAmount/latitude/longitude/" + _this114.newUser + "/PropertyFor/LookingStreetname/Conditions/FinancialPosition/Validity/Position/UserId/ChainStatus/" + _this114.uid]);
+                _this115.router.navigate(["/buyerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MinAmount/MaxAmount/latitude/longitude/" + _this115.newUser + "/PropertyFor/LookingStreetname/Conditions/FinancialPosition/Validity/Position/UserId/ChainStatus/" + _this115.uid]);
               }
             });
           });
@@ -11856,13 +12014,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this115 = this;
+          var _this116 = this;
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.trim()).subscribe(function (data) {
-            _this115.register = true;
+            _this116.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this115.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var dialogRef = _this116.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid postcode"
                 }
@@ -11889,88 +12047,88 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this116 = this;
+          var _this117 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this116.notificationContent = res.data().BuyerSignupNotification;
+            _this117.notificationContent = res.data().BuyerSignupNotification;
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this117 = this;
+          var _this118 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this117.topLine = element.data().topLine;
-              _this117.secondLine = element.data().SecondLine;
+              _this118.topLine = element.data().topLine;
+              _this118.secondLine = element.data().SecondLine;
             });
           });
         }
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this118 = this;
+          var _this119 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.PersonalDetail).then(function (element) {
-            _this118.Title = element.data().Title;
-            _this118.FullName = element.data().FullName;
-            _this118.DateofBirth = element.data().DateofBirth;
-            _this118.DateofBirthValidate = element.data().DateofBirthValidate;
-            _this118.PhoneEmpty = element.data().PhoneEmpty;
-            _this118.PhoneValidation = element.data().PhoneValidation;
-            _this118.PhoneLength = element.data().PhoneLength;
-            _this118.CurrentPostcode = element.data().CurrentPostcode;
-            _this118.PostcodeLength = element.data().PostcodeLength;
-            _this118.CurrentAaddress = element.data().CurrentAaddress;
-            _this118.CurrentTown = element.data().CurrentTown;
-            _this118.CurrentCounty = element.data().CurrentCounty;
-            _this118.CurrentCountry = element.data().CurrentCountry;
-            _this118.isLoading = false;
+            _this119.Title = element.data().Title;
+            _this119.FullName = element.data().FullName;
+            _this119.DateofBirth = element.data().DateofBirth;
+            _this119.DateofBirthValidate = element.data().DateofBirthValidate;
+            _this119.PhoneEmpty = element.data().PhoneEmpty;
+            _this119.PhoneValidation = element.data().PhoneValidation;
+            _this119.PhoneLength = element.data().PhoneLength;
+            _this119.CurrentPostcode = element.data().CurrentPostcode;
+            _this119.PostcodeLength = element.data().PostcodeLength;
+            _this119.CurrentAaddress = element.data().CurrentAaddress;
+            _this119.CurrentTown = element.data().CurrentTown;
+            _this119.CurrentCounty = element.data().CurrentCounty;
+            _this119.CurrentCountry = element.data().CurrentCountry;
+            _this119.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPropertyDetailForm",
         value: function getSeekerPropertyDetailForm() {
-          var _this119 = this;
+          var _this120 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.PropertyDetail).then(function (element) {
-            _this119.Buy = element.data().Buy;
-            _this119.LPostcode = element.data().LPostcode;
-            _this119.LPostcodeLength = element.data().LPostcodeLength;
-            _this119.LStreetname = element.data().LStreetname;
-            _this119.LTown = element.data().LTown;
-            _this119.LCounty = element.data().LCounty;
-            _this119.LCountry = element.data().LCountry;
-            _this119.PropertyType = element.data().PropertyType;
-            _this119.proptype = element.data().PropertyType;
-            _this119.Roommin = element.data().Roommin;
-            _this119.Roomsmax = element.data().Roomsmax;
-            _this119.MinimumRoomValidation = element.data().MinimumRoomValidation;
-            _this119.MaximumRoomValidation = element.data().MaximumRoomValidation;
-            _this119.FinancialRenting = element.data().FinancialRenting;
-            _this119.finType = element.data().FinancialPosition;
-            _this119.FinancialPosition = element.data().FinancialPosition;
-            _this119.MinAmount = element.data().MinAmount;
-            _this119.MaxAmount = element.data().MaxAmount;
-            _this119.Min = element.data().Min;
-            _this119.Max = element.data().Max;
-            _this119.Validity = element.data().Validity;
-            _this119.isLoading = false;
-            console.log(_this119.PropertyType);
+            _this120.Buy = element.data().Buy;
+            _this120.LPostcode = element.data().LPostcode;
+            _this120.LPostcodeLength = element.data().LPostcodeLength;
+            _this120.LStreetname = element.data().LStreetname;
+            _this120.LTown = element.data().LTown;
+            _this120.LCounty = element.data().LCounty;
+            _this120.LCountry = element.data().LCountry;
+            _this120.PropertyType = element.data().PropertyType;
+            _this120.proptype = element.data().PropertyType;
+            _this120.Roommin = element.data().Roommin;
+            _this120.Roomsmax = element.data().Roomsmax;
+            _this120.MinimumRoomValidation = element.data().MinimumRoomValidation;
+            _this120.MaximumRoomValidation = element.data().MaximumRoomValidation;
+            _this120.FinancialRenting = element.data().FinancialRenting;
+            _this120.finType = element.data().FinancialPosition;
+            _this120.FinancialPosition = element.data().FinancialPosition;
+            _this120.MinAmount = element.data().MinAmount;
+            _this120.MaxAmount = element.data().MaxAmount;
+            _this120.Min = element.data().Min;
+            _this120.Max = element.data().Max;
+            _this120.Validity = element.data().Validity;
+            _this120.isLoading = false;
+            console.log(_this120.PropertyType);
           });
         }
       }, {
         key: "getSeekerOptionalDetailForm",
         value: function getSeekerOptionalDetailForm() {
-          var _this120 = this;
+          var _this121 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.OptionalDetail).then(function (element) {
-            _this120.MinimumBathroom = element.data().MinimumBathroom;
-            _this120.MaximumBathroom = element.data().MaximumBathroom;
-            _this120.MinimumReception = element.data().MinimumReception;
-            _this120.MaximumReception = element.data().MaximumReception;
-            _this120.isLoading = false;
+            _this121.MinimumBathroom = element.data().MinimumBathroom;
+            _this121.MaximumBathroom = element.data().MaximumBathroom;
+            _this121.MinimumReception = element.data().MinimumReception;
+            _this121.MaximumReception = element.data().MaximumReception;
+            _this121.isLoading = false;
           });
         }
       }, {
@@ -12558,7 +12716,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this121 = this;
+          var _this122 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -12574,31 +12732,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.SellermatchesService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this121.imageUrl = element.data().SellerBuyerMatchesPageImage;
+              _this122.imageUrl = element.data().SellerBuyerMatchesPageImage;
             });
           });
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this121.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
-            _this121.Property_Type = params.get("PropertyType");
-            _this121.Looking_Town = params.get("LookingTown");
-            _this121.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
-            _this121.New_latitude = params.get("latitude");
-            _this121.New_longitude = params.get("longitude");
-            _this121.newUser = params.get("newUser");
-            _this121.Property_For = params.get("PropertyFor"); //Seller Params
+            _this122.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
+            _this122.Property_Type = params.get("PropertyType");
+            _this122.Looking_Town = params.get("LookingTown");
+            _this122.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
+            _this122.New_latitude = params.get("latitude");
+            _this122.New_longitude = params.get("longitude");
+            _this122.newUser = params.get("newUser");
+            _this122.Property_For = params.get("PropertyFor"); //Seller Params
 
-            _this121.New_state = params.get("Lookingstate");
-            _this121.New_rooms = params.get("Maxrooms");
-            _this121.New_Propertycondition = params.get("PropertyCondition");
-            _this121.New_Address = params.get("LookingAddress");
-            _this121.New_ownership = params.get("ownership");
-            _this121.New_features = params.get("features");
-            _this121.New_userId = params.get("UserId");
-            _this121.New_Maxbathrooms = params.get("Maxbathrooms");
-            _this121.New_Maxreception = params.get("Maxreception");
-            _this121.New_ownership = params.get("ownership");
-            _this121.New_Maxrooms = params.get("Maxrooms");
-            _this121.Look_id = params.get("id");
+            _this122.New_state = params.get("Lookingstate");
+            _this122.New_rooms = params.get("Maxrooms");
+            _this122.New_Propertycondition = params.get("PropertyCondition");
+            _this122.New_Address = params.get("LookingAddress");
+            _this122.New_ownership = params.get("ownership");
+            _this122.New_features = params.get("features");
+            _this122.New_userId = params.get("UserId");
+            _this122.New_Maxbathrooms = params.get("Maxbathrooms");
+            _this122.New_Maxreception = params.get("Maxreception");
+            _this122.New_ownership = params.get("ownership");
+            _this122.New_Maxrooms = params.get("Maxrooms");
+            _this122.Look_id = params.get("id");
           });
 
           if (this.newUser == "false") {
@@ -12650,86 +12808,86 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
               //Min-MAx Amount Removed Comas and Formula
-              _this121.maxAmount = _this121.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this121.maxAmount);
-              _this121.Look_minamount = element.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this121.Look_minamount);
-              _this121.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this121.Look_maxamount);
-              _this121.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this121.less);
-              _this121.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this121.more); //Remove Postcode Spaces
+              _this122.maxAmount = _this122.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this122.maxAmount);
+              _this122.Look_minamount = element.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this122.Look_minamount);
+              _this122.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this122.Look_maxamount);
+              _this122.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this122.less);
+              _this122.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this122.more); //Remove Postcode Spaces
 
-              _this121.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
-              _this121.listing = _this121.Look_postcode;
+              _this122.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
+              _this122.listing = _this122.Look_postcode;
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this121.Look_postcode && element.data().PropertyFor == _this121.Look_PropertyFor && element.data().PropertyType == _this121.Look_PropertyType && _this121.uid != element.data().UserId && less <= maxAmount && more >= maxAmount) {
-                _this121.sellermatchedProperties.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this122.Look_postcode && element.data().PropertyFor == _this122.Look_PropertyFor && element.data().PropertyType == _this122.Look_PropertyType && _this122.uid != element.data().UserId && less <= maxAmount && more >= maxAmount) {
+                _this122.sellermatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
 
-                _this121.matchedstartPage = 0;
-                _this121.matchedpaginationLimit = 6;
+                _this122.matchedstartPage = 0;
+                _this122.matchedpaginationLimit = 6;
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this121.Look_postcode && _this121.Look_PropertyFor == element.PropertyFor && _this121.uid != element.data().UserId && element.data().PropertyType == _this121.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this121.removespace.substring(0, 5) == _this121.listing.substring(0, 5) && element.latitude && element.longitude) {
-                _this121.distanceInKm = _this121.getDistanceFromLatLonInKm(_this121.Look_latitude, _this121.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this122.Look_postcode && _this122.Look_PropertyFor == element.PropertyFor && _this122.uid != element.data().UserId && element.data().PropertyType == _this122.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this122.removespace.substring(0, 5) == _this122.listing.substring(0, 5) && element.latitude && element.longitude) {
+                _this122.distanceInKm = _this122.getDistanceFromLatLonInKm(_this122.Look_latitude, _this122.Look_longitude, element.latitude, element.longitude);
 
-                _this121.sellerunmatchedProperties.push({
+                _this122.sellerunmatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this121.distanceInKm * 0.6214
+                  distance: _this122.distanceInKm * 0.6214
                 });
 
-                _this121.startPage = 0;
-                _this121.paginationLimit = 6;
+                _this122.startPage = 0;
+                _this122.paginationLimit = 6;
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this121.Look_postcode && element.data().PropertyType == _this121.Look_PropertyType && _this121.uid != element.data().UserId && element.data().PropertyFor == _this121.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this121.removespace.substring(0, 5) != _this121.listing.substring(0, 5) && _this121.removespace.substring(0, 3) == _this121.listing.substring(0, 3)) {
-                _this121.sellerunmatchedPropertiesFirst.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this122.Look_postcode && element.data().PropertyType == _this122.Look_PropertyType && _this122.uid != element.data().UserId && element.data().PropertyFor == _this122.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this122.removespace.substring(0, 5) != _this122.listing.substring(0, 5) && _this122.removespace.substring(0, 3) == _this122.listing.substring(0, 3)) {
+                _this122.sellerunmatchedPropertiesFirst.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this121.Look_postcode && element.data().PropertyType != _this121.Look_PropertyType && _this121.uid != element.data().UserId && element.data().PropertyFor == _this121.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this121.removespace.substring(0, 5) != _this121.listing.substring(0, 5) && _this121.removespace.substring(0, 3) == _this121.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this121.distanceInKm = _this121.getDistanceFromLatLonInKm(_this121.Look_latitude, _this121.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this122.Look_postcode && element.data().PropertyType != _this122.Look_PropertyType && _this122.uid != element.data().UserId && element.data().PropertyFor == _this122.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this122.removespace.substring(0, 5) != _this122.listing.substring(0, 5) && _this122.removespace.substring(0, 3) == _this122.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this122.distanceInKm = _this122.getDistanceFromLatLonInKm(_this122.Look_latitude, _this122.Look_longitude, element.latitude, element.longitude);
 
-                _this121.sellerunmatchedPriceLogic.push({
+                _this122.sellerunmatchedPriceLogic.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this121.distanceInKm * 0.6214
+                  distance: _this122.distanceInKm * 0.6214
                 });
 
-                _this121.startPage = 0;
-                _this121.paginationLimit = 6;
+                _this122.startPage = 0;
+                _this122.paginationLimit = 6;
               } //Done
               //All other properties - Nationwide
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this121.Look_postcode && element.data().PropertyFor == _this121.Look_PropertyFor && _this121.uid != element.data().UserId && _this121.removespace.substring(0, 5) != _this121.listing.substring(0, 5) && _this121.removespace.substring(0, 3) != _this121.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this121.distanceInKm = _this121.getDistanceFromLatLonInKm(_this121.Look_latitude, _this121.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this122.Look_postcode && element.data().PropertyFor == _this122.Look_PropertyFor && _this122.uid != element.data().UserId && _this122.removespace.substring(0, 5) != _this122.listing.substring(0, 5) && _this122.removespace.substring(0, 3) != _this122.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this122.distanceInKm = _this122.getDistanceFromLatLonInKm(_this122.Look_latitude, _this122.Look_longitude, element.latitude, element.longitude);
 
-                _this121.sellerlookTown.push({
+                _this122.sellerlookTown.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this121.distanceInKm * 0.6214
+                  distance: _this122.distanceInKm * 0.6214
                 });
 
-                _this121.startPage = 0;
-                _this121.paginationLimit = 6;
+                _this122.startPage = 0;
+                _this122.paginationLimit = 6;
               }
             });
 
-            _this121.sellerunmatchedProperties.sort(_this121.compare);
+            _this122.sellerunmatchedProperties.sort(_this122.compare);
 
-            _this121.noOfMatches = _this121.sellermatchedProperties.length;
-            _this121.noOfUnmatched = _this121.sellerunmatchedProperties.length;
+            _this122.noOfMatches = _this122.sellermatchedProperties.length;
+            _this122.noOfUnmatched = _this122.sellerunmatchedProperties.length;
           });
           this.getFavoarte();
           this.getExpressedListingIds();
@@ -12909,12 +13067,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this122 = this;
+          var _this123 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this122.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this122.distinctExpressedUid.push(item.data().propertyId);
+              if (_this123.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this123.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -12933,28 +13091,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addtoFavorate",
         value: function addtoFavorate(uid, property, id) {
-          var _this123 = this;
+          var _this124 = this;
 
           this.UserProperty = {
             PropertyDetail: property,
             proppertyId: id
           };
           this.SellermatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this123.getFavoarte();
+            _this124.getFavoarte();
 
-            _this123.checkFavorateValue(id);
+            _this124.checkFavorateValue(id);
           });
         }
       }, {
         key: "getFavoarte",
         value: function getFavoarte() {
-          var _this124 = this;
+          var _this125 = this;
 
           this.favorateProperty = [];
           this.SellermatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this124.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this124.favorateProperty.push(item.data().proppertyId);
+              if (_this125.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this125.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -12973,10 +13131,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteFavorate",
         value: function deleteFavorate(docid) {
-          var _this125 = this;
+          var _this126 = this;
 
           this.SellermatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this125.getFavoarte();
+            _this126.getFavoarte();
           });
         }
       }, {
@@ -13286,56 +13444,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this126 = this;
+          var _this127 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this126.PriceRange = params.get("MaxAmount");
-            _this126.MinAmount = params.get("MinAmount");
-            _this126.Lookingpostcode = params.get("Lookingpostcode");
-            _this126.LookingStreetname = params.get("LookingStreetname");
-            _this126.Position = params.get("Position");
-            _this126.PropertyType = params.get("PropertyType");
-            _this126.Roomsmax = params.get("Roomsmax");
-            _this126.ownership = params.get("Ownership");
-            _this126.Conditions = params.get("Conditions");
-            _this126.Maxbathroom = params.get("Maxbathroom");
-            _this126.Maxreception = params.get("Maxreception");
-            _this126.features = params.get("features");
-            _this126.UserId = params.get("UserId").replace(/\s/g, "");
-            _this126.FinancialPosition = params.get("FinancialPosition");
-            _this126.ChainStatus = params.get("ChainStatus");
-            _this126.propertyId = params.get("propertyId");
-            _this126.expressed = params.get("expressed");
-            _this126.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
+            _this127.PriceRange = params.get("MaxAmount");
+            _this127.MinAmount = params.get("MinAmount");
+            _this127.Lookingpostcode = params.get("Lookingpostcode");
+            _this127.LookingStreetname = params.get("LookingStreetname");
+            _this127.Position = params.get("Position");
+            _this127.PropertyType = params.get("PropertyType");
+            _this127.Roomsmax = params.get("Roomsmax");
+            _this127.ownership = params.get("Ownership");
+            _this127.Conditions = params.get("Conditions");
+            _this127.Maxbathroom = params.get("Maxbathroom");
+            _this127.Maxreception = params.get("Maxreception");
+            _this127.features = params.get("features");
+            _this127.UserId = params.get("UserId").replace(/\s/g, "");
+            _this127.FinancialPosition = params.get("FinancialPosition");
+            _this127.ChainStatus = params.get("ChainStatus");
+            _this127.propertyId = params.get("propertyId");
+            _this127.expressed = params.get("expressed");
+            _this127.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
 
-            _this126.Look_State = params.get("Look_state");
-            _this126.Look_rooms = params.get("Look_rooms");
-            _this126.Look_Propertycondition = params.get("Look_Propertycondition");
-            _this126.Look_Address = params.get("Look_Address");
-            _this126.Look_ownership = params.get("Look_ownership");
-            _this126.Look_features = params.get("Look_features");
-            _this126.Look_userId = params.get("Look_userId");
-            _this126.Look_postcode = params.get("Look_postcode");
-            _this126.Look_PropertyType = params.get("Look_PropertyType");
-            _this126.Look_maxAmount = params.get("Look_maxAmount");
-            _this126.Look_Town = params.get("Look_Town");
-            _this126.Look_Address = params.get("Look_Address");
-            _this126.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
-            _this126.Look_Maxreceptions = params.get("Look_Maxreceptions");
-            _this126.Look_ownership = params.get("Look_ownership");
-            _this126.Look_Maxrooms = params.get("Look_Maxrooms");
-            _this126.Look_Propertyfor = params.get("Look_PropertyFor");
-            _this126.look_id = params.get("Look_id");
+            _this127.Look_State = params.get("Look_state");
+            _this127.Look_rooms = params.get("Look_rooms");
+            _this127.Look_Propertycondition = params.get("Look_Propertycondition");
+            _this127.Look_Address = params.get("Look_Address");
+            _this127.Look_ownership = params.get("Look_ownership");
+            _this127.Look_features = params.get("Look_features");
+            _this127.Look_userId = params.get("Look_userId");
+            _this127.Look_postcode = params.get("Look_postcode");
+            _this127.Look_PropertyType = params.get("Look_PropertyType");
+            _this127.Look_maxAmount = params.get("Look_maxAmount");
+            _this127.Look_Town = params.get("Look_Town");
+            _this127.Look_Address = params.get("Look_Address");
+            _this127.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
+            _this127.Look_Maxreceptions = params.get("Look_Maxreceptions");
+            _this127.Look_ownership = params.get("Look_ownership");
+            _this127.Look_Maxrooms = params.get("Look_Maxrooms");
+            _this127.Look_Propertyfor = params.get("Look_PropertyFor");
+            _this127.look_id = params.get("Look_id");
           });
           this.getBuyerDetails();
           this.getSellerDetails();
           this.CMSSERVICE.getBlueNotification(1).then(function (data) {
-            _this126.notificationContent = data.data().SellerMatchesExpressInterestNotifcation;
+            _this127.notificationContent = data.data().SellerMatchesExpressInterestNotifcation;
           });
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this126.ExpressedNestimate = element.data().ExpressedNestimate;
+            _this127.ExpressedNestimate = element.data().ExpressedNestimate;
           });
 
           this._router.events.subscribe(function (evt) {
@@ -13350,7 +13508,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this127 = this;
+          var _this128 = this;
 
           this.isSellerSelected = true;
           this.matchesSeller = {
@@ -13365,8 +13523,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this127.isSellerSelected = false;
-              _this127.overlay = false;
+              _this128.isSellerSelected = false;
+              _this128.overlay = false;
             }
           });
           this.matchesBuyer = {
@@ -13381,13 +13539,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this127.isSellerSelected = false;
-              _this127.datastored = true;
-              _this127.express = false;
+              _this128.isSellerSelected = false;
+              _this128.datastored = true;
+              _this128.express = false;
 
-              _this127.createSellerNotification();
+              _this128.createSellerNotification();
 
-              _this127.addToExpressCollection();
+              _this128.addToExpressCollection();
             }
           });
         }
@@ -13409,17 +13567,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this128 = this;
+          var _this129 = this;
 
           this["return"] = this.seller_Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this128.isSellerSelected = false;
-              _this128.datastored = true;
-              _this128.express = false;
+              _this129.isSellerSelected = false;
+              _this129.datastored = true;
+              _this129.express = false;
 
-              var dialogRef = _this128.dialog.open(_Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_11__["AlertSelectedPropertyComponent"], {
+              var dialogRef = _this129.dialog.open(_Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_11__["AlertSelectedPropertyComponent"], {
                 data: {
-                  message: _this128.ExpressedNestimate
+                  message: _this129.ExpressedNestimate
                 }
               });
             }
@@ -13441,51 +13599,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this129 = this;
+          var _this130 = this;
 
           this.seller_Selected_propertydetail_Service.getBuyerRequirement(this.UserId, this.propertyId).then(function (res) {
-            _this129.buyerDetails = res.data();
-            _this129.buyingPosition = res.data().Position;
-            _this129.buyerFinancialPosition = res.data().FinancialPosition;
-            _this129.BuyerPropertyType = res.data().PropertyType;
-            _this129.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this129.BuyerRoommin = res.data().Roommin;
-            _this129.BuyerRoomsmax = res.data().Roomsmax;
-            _this129.username = res.data().username;
-            _this129.usertitle = res.data().usertitle;
-            _this129.buyerPropertyFor = res.data().PropertyFor;
-            _this129.ChainStatus = res.data().ChainStatus;
-            _this129.Conditions = res.data().Conditions;
-            _this129.LookingTown = res.data().LookingTown;
-            _this129.Maxreception = res.data().Maxreception;
-            _this129.Minreception = res.data().Minreception;
-            _this129.Ownership = res.data().Ownership;
-            _this129.Maxbathroom = res.data().Maxbathroom;
-            _this129.Minbathroom = res.data().Minbathroom;
-            _this129.BuyerUserId = res.data().UserId;
+            _this130.buyerDetails = res.data();
+            _this130.buyingPosition = res.data().Position;
+            _this130.buyerFinancialPosition = res.data().FinancialPosition;
+            _this130.BuyerPropertyType = res.data().PropertyType;
+            _this130.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this130.BuyerRoommin = res.data().Roommin;
+            _this130.BuyerRoomsmax = res.data().Roomsmax;
+            _this130.username = res.data().username;
+            _this130.usertitle = res.data().usertitle;
+            _this130.buyerPropertyFor = res.data().PropertyFor;
+            _this130.ChainStatus = res.data().ChainStatus;
+            _this130.Conditions = res.data().Conditions;
+            _this130.LookingTown = res.data().LookingTown;
+            _this130.Maxreception = res.data().Maxreception;
+            _this130.Minreception = res.data().Minreception;
+            _this130.Ownership = res.data().Ownership;
+            _this130.Maxbathroom = res.data().Maxbathroom;
+            _this130.Minbathroom = res.data().Minbathroom;
+            _this130.BuyerUserId = res.data().UserId;
 
-            _this129.Recentlyviewed();
+            _this130.Recentlyviewed();
           });
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this130 = this;
+          var _this131 = this;
 
           this.seller_Selected_propertydetail_Service.getSeller(this.uid, this.look_id).then(function (res) {
-            _this130.sellerDetails = res.data();
+            _this131.sellerDetails = res.data();
           });
         }
       }, {
         key: "Recentlyviewed",
         value: function Recentlyviewed() {
-          var _this131 = this;
+          var _this132 = this;
 
           this.seller_Selected_propertydetail_Service.getSellerRecentlyItems(this.uid, this.propertyId).then(function (getData) {
             if (getData.data() == undefined) {
-              _this131.buyerDetails.time = _this131.now;
+              _this132.buyerDetails.time = _this132.now;
 
-              _this131.seller_Selected_propertydetail_Service.RecentlyView(_this131.uid, _this131.buyerDetails, _this131.propertyId).then(function (res) {});
+              _this132.seller_Selected_propertydetail_Service.RecentlyView(_this132.uid, _this132.buyerDetails, _this132.propertyId).then(function (res) {});
             }
           });
         }
@@ -14025,7 +14183,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this132 = this;
+          var _this133 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -14035,80 +14193,80 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this132.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this132.userData));
+              _this133.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this133.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this132.LoggedIn();
+              _this133.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this132.LoggedOut();
+              _this133.LoggedOut();
             }
           });
           this.getSeekerPersonalDetailForm();
           this.getSeekerPropertyDetailForm();
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this132.sellerRightImageUrl = element.data().SellerPropertyRightImage;
+              _this133.sellerRightImageUrl = element.data().SellerPropertyRightImage;
             });
           }); // End method
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this132.Lookaddress = params.get("LookingAddress");
-            _this132.LookTown = params.get("LookingTown");
-            _this132.Lookstate = params.get("Lookingstate");
-            _this132.Country = params.get("Country");
-            _this132.Property = params.get("PropertyType");
-            _this132.Rooms = params.get("Maxrooms");
-            _this132.Amount = params.get("MaxAmount");
-            _this132.Ownership = params.get("ownership");
-            _this132.Bathrooms = params.get("Maxbathrooms");
-            _this132.Reception = params.get("Maxreception");
-            _this132.Condition = params.get("PropertyCondition");
-            _this132.Features = params.get("features");
-            _this132.country = params.get("Country");
+            _this133.Lookaddress = params.get("LookingAddress");
+            _this133.LookTown = params.get("LookingTown");
+            _this133.Lookstate = params.get("Lookingstate");
+            _this133.Country = params.get("Country");
+            _this133.Property = params.get("PropertyType");
+            _this133.Rooms = params.get("Maxrooms");
+            _this133.Amount = params.get("MaxAmount");
+            _this133.Ownership = params.get("ownership");
+            _this133.Bathrooms = params.get("Maxbathrooms");
+            _this133.Reception = params.get("Maxreception");
+            _this133.Condition = params.get("PropertyCondition");
+            _this133.Features = params.get("features");
+            _this133.country = params.get("Country");
           });
           this.getSignupTerms();
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this133 = this;
+          var _this134 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this133.topLine = element.data().topLine;
-              _this133.secondLine = element.data().SecondLine;
+              _this134.topLine = element.data().topLine;
+              _this134.secondLine = element.data().SecondLine;
             });
           });
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this134 = this;
+          var _this135 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this134.uid) {
+              if (element.data().uid == _this135.uid) {
                 console.log(element.data());
-                _this134.user.Name = element.data().Name;
-                _this134.user.Email = element.data().email;
+                _this135.user.Name = element.data().Name;
+                _this135.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this134.user.DOB = element.data().DOB.toDate();
+                  _this135.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this134.user.Phone = element.data().Phone;
-                _this134.user.title = "Mr";
-                _this134.user.Currentpostcode = element.data().Currentpostcode;
-                _this134.user.CurrentAddress = element.data().Currentaddress;
-                _this134.user.CurrentTown = element.data().CurrentTowncity;
-                _this134.user.Currentstate = element.data().Currentstate;
-                _this134.user.CurrentCountry = element.data().CurrentCountry;
+                _this135.user.Phone = element.data().Phone;
+                _this135.user.title = "Mr";
+                _this135.user.Currentpostcode = element.data().Currentpostcode;
+                _this135.user.CurrentAddress = element.data().Currentaddress;
+                _this135.user.CurrentTown = element.data().CurrentTowncity;
+                _this135.user.Currentstate = element.data().Currentstate;
+                _this135.user.CurrentCountry = element.data().CurrentCountry;
               } // this.addressianAutoCompleteCurrent$ = this.autoCompleteControlCurrent.valueChanges.pipe(
               //   startWith(""),
               //   // delay emits
@@ -14582,11 +14740,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this135 = this;
+          var _this136 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this135.isLoading = false;
+            _this136.isLoading = false;
             console.log(data);
           });
         } //Login Form
@@ -14594,11 +14752,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this136 = this;
+          var _this137 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this136.isLoading = false;
+            _this137.isLoading = false;
           });
         } //SignIn Google
 
@@ -14690,50 +14848,50 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this137 = this;
+          var _this138 = this;
 
           this.sellerPicture = JSON.parse(localStorage.getItem('uploadedImage'));
           this.isLoading = true;
           this.register = false;
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this137.postcodeCoordinates = data;
+            _this138.postcodeCoordinates = data;
 
-            if (_this137.postcodeCoordinates.result.longitude == null && _this137.postcodeCoordinates.result.latitude == null) {
+            if (_this138.postcodeCoordinates.result.longitude == null && _this138.postcodeCoordinates.result.latitude == null) {
               //document.getElementById("lookpost").style.color = "red"
               console.log("hello");
 
-              var dialogRef = _this137.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var dialogRef = _this138.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter valid Postcode"
                 }
               });
 
-              _this137.isLoading = false;
-              _this137.register = false;
+              _this138.isLoading = false;
+              _this138.register = false;
             } else {
-              if (_this137.listingSeller.ownership == undefined) {
-                _this137.listingSeller.ownership = "any";
+              if (_this138.listingSeller.ownership == undefined) {
+                _this138.listingSeller.ownership = "any";
               }
 
-              _this137.listingSeller.longitude = _this137.postcodeCoordinates.result.longitude, _this137.listingSeller.latitude = _this137.postcodeCoordinates.result.latitude, _this137.listingSeller.username = _this137.user.Name, _this137.listingSeller.usertitle = _this137.user.title;
-              _this137.listingSeller.username = _this137.user.Name;
-              _this137.listingSeller.Email = _this137.user.email;
-              _this137.listingSeller.phonenumber = _this137.user.Phone;
-              _this137.listingSeller.DOB = _this137.user.DOB;
-              _this137.listingSeller.UserId = _this137.uid;
-              _this137.listingSeller.Currentpostcode = _this137.user.Currentpostcode.toUpperCase();
-              _this137.listingSeller.CurrentAddress = _this137.user.CurrentAddress;
-              _this137.listingSeller.CurrentTown = _this137.user.CurrentTown;
-              _this137.listingSeller.Currentstate = _this137.user.Currentstate;
-              _this137.listingSeller.Images = _this137.sellerImages;
-              _this137.newUser = true;
-              _this137.listingSeller.Lookingpostcode = _this137.listingSeller.Lookingpostcode.toUpperCase();
-              _this137["return"] = _this137.SellerformService.createCustomer(_this137.userData.uid, _this137.listingSeller).then(function (data) {
+              _this138.listingSeller.longitude = _this138.postcodeCoordinates.result.longitude, _this138.listingSeller.latitude = _this138.postcodeCoordinates.result.latitude, _this138.listingSeller.username = _this138.user.Name, _this138.listingSeller.usertitle = _this138.user.title;
+              _this138.listingSeller.username = _this138.user.Name;
+              _this138.listingSeller.Email = _this138.user.email;
+              _this138.listingSeller.phonenumber = _this138.user.Phone;
+              _this138.listingSeller.DOB = _this138.user.DOB;
+              _this138.listingSeller.UserId = _this138.uid;
+              _this138.listingSeller.Currentpostcode = _this138.user.Currentpostcode.toUpperCase();
+              _this138.listingSeller.CurrentAddress = _this138.user.CurrentAddress;
+              _this138.listingSeller.CurrentTown = _this138.user.CurrentTown;
+              _this138.listingSeller.Currentstate = _this138.user.Currentstate;
+              _this138.listingSeller.Images = _this138.sellerImages;
+              _this138.newUser = true;
+              _this138.listingSeller.Lookingpostcode = _this138.listingSeller.Lookingpostcode.toUpperCase();
+              _this138["return"] = _this138.SellerformService.createCustomer(_this138.userData.uid, _this138.listingSeller).then(function (data) {
                 if (data == true) {
-                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this137.listingSeller));
-                  _this137.isLoading = false;
+                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this138.listingSeller));
+                  _this138.isLoading = false;
 
-                  _this137.router.navigate(["/sellerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MaxAmount/latitude/longitude/" + _this137.newUser + "/PropertyFor/Lookingstate/Maxrooms/PropertyCondition/LookingAddress/ownership/features/UserId/Maxbathrooms/Maxreception/ownership/Maxrooms/" + _this137.uid]);
+                  _this138.router.navigate(["/sellerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MaxAmount/latitude/longitude/" + _this138.newUser + "/PropertyFor/Lookingstate/Maxrooms/PropertyCondition/LookingAddress/ownership/features/UserId/Maxbathrooms/Maxreception/ownership/Maxrooms/" + _this138.uid]);
                 }
               });
             }
@@ -14742,15 +14900,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this138 = this;
+          var _this139 = this;
 
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this138.register = true;
+            _this139.register = true;
           }, function (error) {
             if (error.status) {
               document.getElementById("lookpost").style.color = "red";
 
-              var dialogRef = _this138.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var dialogRef = _this139.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Valid Postcode"
                 }
@@ -14777,7 +14935,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "importImages",
         value: function importImages(event) {
-          var _this139 = this;
+          var _this140 = this;
 
           this.isLoading = true;
           this.uploads = [];
@@ -14832,7 +14990,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     // for every upload do whatever you want in firestore with the uploaded file
                     var _t = task.then(function (f) {
                       return f.ref.getDownloadURL().then(function (url) {
-                        _this139.sellerImages.push(url); // return this.afs.collection('files').add({
+                        _this140.sellerImages.push(url); // return this.afs.collection('files').add({
                         //   name: f.metadata.name,
                         // });
 
@@ -14853,46 +15011,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this140 = this;
+          var _this141 = this;
 
           this.CMSSERVICE.getOwnerlError(this.PersonalDetail).then(function (element) {
-            _this140.Title = element.data().Title;
-            _this140.FullName = element.data().FullName;
-            _this140.DateofBirth = element.data().DateofBirth;
-            _this140.DateofBirthValidate = element.data().DateofBirthValidate;
-            _this140.PhoneEmpty = element.data().PhoneEmpty;
-            _this140.PhoneValidation = element.data().PhoneValidation;
-            _this140.PhoneLength = element.data().PhoneLength;
-            _this140.CurrentPostcode = element.data().CurrentPostcode;
-            _this140.PostcodeLength = element.data().PostcodeLength;
-            _this140.CurrentAaddress = element.data().CurrentAaddress;
-            _this140.CurrentTown = element.data().CurrentTown;
-            _this140.CurrentCounty = element.data().CurrentCounty;
-            _this140.CurrentCountry = element.data().CurrentCountry;
-            _this140.currCountry = element.data().CurrentCountry;
-            _this140.isLoading = false;
+            _this141.Title = element.data().Title;
+            _this141.FullName = element.data().FullName;
+            _this141.DateofBirth = element.data().DateofBirth;
+            _this141.DateofBirthValidate = element.data().DateofBirthValidate;
+            _this141.PhoneEmpty = element.data().PhoneEmpty;
+            _this141.PhoneValidation = element.data().PhoneValidation;
+            _this141.PhoneLength = element.data().PhoneLength;
+            _this141.CurrentPostcode = element.data().CurrentPostcode;
+            _this141.PostcodeLength = element.data().PostcodeLength;
+            _this141.CurrentAaddress = element.data().CurrentAaddress;
+            _this141.CurrentTown = element.data().CurrentTown;
+            _this141.CurrentCounty = element.data().CurrentCounty;
+            _this141.CurrentCountry = element.data().CurrentCountry;
+            _this141.currCountry = element.data().CurrentCountry;
+            _this141.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPropertyDetailForm",
         value: function getSeekerPropertyDetailForm() {
-          var _this141 = this;
+          var _this142 = this;
 
           this.CMSSERVICE.getOwnerlError(this.PropertyDetail).then(function (element) {
-            _this141.Buy = element.data().Buy;
-            _this141.LPostcode = element.data().LPostcode;
-            _this141.LPostcodeLength = element.data().LPostcodeLength;
-            _this141.LAddress = element.data().LAddress;
-            _this141.LTown = element.data().LTown;
-            _this141.LCounty = element.data().LCounty;
-            _this141.LCountry = element.data().LCountry;
-            _this141.PropertyType = element.data().PropertyType;
-            _this141.Roomsmax = element.data().Roomsmax;
-            _this141.MaxAmount = element.data().MaxAmount;
-            _this141.ownership = element.data().ownership;
-            _this141.propType = element.data().PropertyType;
-            _this141.dPrice = element.data().MaxAmount;
-            _this141.isLoading = false;
+            _this142.Buy = element.data().Buy;
+            _this142.LPostcode = element.data().LPostcode;
+            _this142.LPostcodeLength = element.data().LPostcodeLength;
+            _this142.LAddress = element.data().LAddress;
+            _this142.LTown = element.data().LTown;
+            _this142.LCounty = element.data().LCounty;
+            _this142.LCountry = element.data().LCountry;
+            _this142.PropertyType = element.data().PropertyType;
+            _this142.Roomsmax = element.data().Roomsmax;
+            _this142.MaxAmount = element.data().MaxAmount;
+            _this142.ownership = element.data().ownership;
+            _this142.propType = element.data().PropertyType;
+            _this142.dPrice = element.data().MaxAmount;
+            _this142.isLoading = false;
           });
         }
       }, {
@@ -15331,24 +15489,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this142 = this;
+          var _this143 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this142.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this142.userData));
+              _this143.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this143.userData));
 
-              _this142.LoggedIn();
+              _this143.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this142.LoggedOut();
+              _this143.LoggedOut();
             }
           });
           this.CMSSERVICE.getSignupImages().then(function (data) {
-            _this142.image = data.data().Images;
-            _this142.bodyText = data.data().TextArea;
-            console.log(_this142.image);
+            _this143.image = data.data().Images;
+            _this143.bodyText = data.data().TextArea;
+            console.log(_this143.image);
           });
         }
       }, {
@@ -15738,7 +15896,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentsignupformComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this143 = this;
+          var _this144 = this;
 
           this.getAgentForm();
           this.Users = JSON.parse(localStorage.getItem("user"));
@@ -15756,8 +15914,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this143.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this143.userData));
+              _this144.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this144.userData));
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
@@ -16124,7 +16282,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee36() {
-            var _this144 = this;
+            var _this145 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee36$(_context36) {
@@ -16164,7 +16322,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 12:
                     _context36.sent.ref.getDownloadURL().then(function (url) {
-                      _this144.downloadableURL = url;
+                      _this145.downloadableURL = url;
                     });
 
                   case 13:
@@ -16188,7 +16346,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "submitForm",
         value: function submitForm(displayName, email, pass, User) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee37() {
-            var _this145 = this;
+            var _this146 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee37$(_context37) {
@@ -16209,10 +16367,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     this.agentSignup.uid = result.user.uid;
                     this.agentSignup.Status = false;
                     this["return"] = this.AgentSignupService.createAgentCustomer(this.agentSignup.uid, this.agentSignup).then(function (data) {
-                      _this145.isLoading = false;
+                      _this146.isLoading = false;
 
                       if (data == true) {
-                        var dialogRef = _this145.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
+                        var dialogRef = _this146.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
                           data: {
                             message: "Thanks! Your details has been submitted",
                             buttonText: {
@@ -16244,27 +16402,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee38() {
-            var _this146 = this;
+            var _this147 = this;
 
             return regeneratorRuntime.wrap(function _callee38$(_context38) {
               while (1) {
                 switch (_context38.prev = _context38.next) {
                   case 0:
                     this.HttpService.getLat(this.agentSignup.postcode.replace(/\s/g, "")).subscribe(function (data) {
-                      _this146.DataMessage = data;
+                      _this147.DataMessage = data;
 
-                      _this146.submitForm(displayName, email, pass, User);
+                      _this147.submitForm(displayName, email, pass, User);
                     }, function (error) {
-                      _this146.errorMesage = error.status;
+                      _this147.errorMesage = error.status;
 
-                      if (_this146.errorMesage == 404) {
-                        var dialogRef = _this146.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
+                      if (_this147.errorMesage == 404) {
+                        var dialogRef = _this147.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
                           data: {
                             message: "Enter Valid Postcode"
                           }
                         });
 
-                        _this146.PostcodeView.nativeElement.focus();
+                        _this147.PostcodeView.nativeElement.focus();
 
                         document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
                         document.getElementById("CompanyName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -16285,32 +16443,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this147 = this;
+          var _this148 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this147.FullName = element.data().FullName;
-            _this147.CompanyName = element.data().CompanyName;
-            _this147.Postcode = element.data().Postcode;
-            _this147.Address = element.data().Address;
-            _this147.JobTitle = element.data().JobTitle;
-            _this147.EmailAddress = element.data().EmailAddress;
-            _this147.emailvalidation = element.data().emailvalidation;
-            _this147.Password = element.data().Password;
-            _this147.officephone = element.data().officephone;
-            _this147.officephonevalidation = element.data().officephonevalidation;
-            _this147.officephonelength = element.data().officephonelength;
-            _this147.mobile = element.data().mobile;
-            _this147.mobilevalidity = element.data().mobilevalidity;
-            _this147.mobilelength = element.data().mobilelength;
-            _this147.solefeess = element.data().solefees;
-            _this147.solefeesmore = element.data().solefeesmore;
-            _this147.solefeesless = element.data().solefeesless;
-            _this147.multiplefeess = element.data().multiplefees;
-            _this147.multiplefeesmore = element.data().multiplefeesmore;
-            _this147.multiplefeesless = element.data().multiplefeesless;
-            _this147.Image = element.data().Image;
-            _this147.Imagesize = element.data().Imagesize;
-            _this147.isLoading = false;
+            _this148.FullName = element.data().FullName;
+            _this148.CompanyName = element.data().CompanyName;
+            _this148.Postcode = element.data().Postcode;
+            _this148.Address = element.data().Address;
+            _this148.JobTitle = element.data().JobTitle;
+            _this148.EmailAddress = element.data().EmailAddress;
+            _this148.emailvalidation = element.data().emailvalidation;
+            _this148.Password = element.data().Password;
+            _this148.officephone = element.data().officephone;
+            _this148.officephonevalidation = element.data().officephonevalidation;
+            _this148.officephonelength = element.data().officephonelength;
+            _this148.mobile = element.data().mobile;
+            _this148.mobilevalidity = element.data().mobilevalidity;
+            _this148.mobilelength = element.data().mobilelength;
+            _this148.solefeess = element.data().solefees;
+            _this148.solefeesmore = element.data().solefeesmore;
+            _this148.solefeesless = element.data().solefeesless;
+            _this148.multiplefeess = element.data().multiplefees;
+            _this148.multiplefeesmore = element.data().multiplefeesmore;
+            _this148.multiplefeesless = element.data().multiplefeesless;
+            _this148.Image = element.data().Image;
+            _this148.Imagesize = element.data().Imagesize;
+            _this148.isLoading = false;
           });
         }
       }, {
@@ -16667,7 +16825,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ClickhomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this148 = this;
+          var _this149 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -16683,22 +16841,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this148.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this148.userData));
-              _this148.isLoggedIn = true;
+              _this149.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this149.userData));
+              _this149.isLoggedIn = true;
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this148.LoggedOut();
+              _this149.LoggedOut();
 
-              _this148.isLoggedIn = false;
+              _this149.isLoggedIn = false;
             }
           });
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this148.topLine = element.data().topLine;
-              _this148.secondLine = element.data().SecondLine;
+              _this149.topLine = element.data().topLine;
+              _this149.secondLine = element.data().SecondLine;
             });
           });
           this.HomepageImagesText();
@@ -16707,26 +16865,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this149 = this;
+          var _this150 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this149.imageUrl = element.data().BannerImageUrl;
-              _this149.secondImageUrl = element.data().SecondBannerImage;
-              _this149.SecondImageText = element.data().SecondBannerText;
-              _this149.Step1Image = element.data().Step1Image;
-              _this149.Step2Image = element.data().Step2Image;
-              _this149.step3Image = element.data().Step3Image;
-              _this149.Step1TExt = element.data().Step1ImageText;
-              _this149.Step2Text = element.data().Step2ImageText;
-              _this149.step3Text = element.data().Step3ImageText;
+              _this150.imageUrl = element.data().BannerImageUrl;
+              _this150.secondImageUrl = element.data().SecondBannerImage;
+              _this150.SecondImageText = element.data().SecondBannerText;
+              _this150.Step1Image = element.data().Step1Image;
+              _this150.Step2Image = element.data().Step2Image;
+              _this150.step3Image = element.data().Step3Image;
+              _this150.Step1TExt = element.data().Step1ImageText;
+              _this150.Step2Text = element.data().Step2ImageText;
+              _this150.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this150 = this;
+          var _this151 = this;
 
           this.HomeService.getBlogs().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["map"])(function (changes) {
             return changes.map(function (c) {
@@ -16735,7 +16893,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (agent) {
-            _this150.homePageBlogs = agent;
+            _this151.homePageBlogs = agent;
           });
         }
       }, {
@@ -16752,12 +16910,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "homeradio",
         value: function homeradio(value) {
-          var _this151 = this;
+          var _this152 = this;
 
           if (this.home == "seeker") {
             if (this.user == null) {
               this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-                _this151.notificationContent = res.data().BuyerSignupNotification;
+                _this152.notificationContent = res.data().BuyerSignupNotification;
               });
               this.home = undefined;
               this.formType = "buyer";
@@ -16770,7 +16928,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           if (this.home == "owner") {
             if (this.user == null) {
               this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-                _this151.notificationContent = res.data().SellerFormSingupNotification;
+                _this152.notificationContent = res.data().SellerFormSingupNotification;
               });
               this.formType = "Seller";
               this.loginTop = true;
@@ -16784,28 +16942,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this152 = this;
+          var _this153 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this152.isLoading = false;
+            _this153.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this153 = this;
+          var _this154 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this153.isLoading = false;
+            _this154.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this154 = this;
+          var _this155 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -16816,22 +16974,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this154.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                  var dialogRef = _this155.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this154.UserSignIn
+                      message: _this155.UserSignIn
                     }
                   });
 
-                  _this154.isLoading = false;
+                  _this155.isLoading = false;
                 } else {
-                  _this154.authService.SignIn(email, pass).then(function (data) {
-                    _this154.isLoading = false;
+                  _this155.authService.SignIn(email, pass).then(function (data) {
+                    _this155.isLoading = false;
 
-                    _this154.getUserKnow();
+                    _this155.getUserKnow();
                   });
                 }
               } else {
-                var _dialogRef87 = _this154.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var _dialogRef87 = _this155.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -16914,10 +17072,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this155 = this;
+          var _this156 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this155.notificationContent = res.data().SingupFromMenu; //.BuyerSignupNotification
+            _this156.notificationContent = res.data().SingupFromMenu; //.BuyerSignupNotification
           });
         }
       }, {
@@ -16980,12 +17138,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this156 = this;
+          var _this157 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this156.AgentSignIn = element.data().AgentSignIn;
-            _this156.UserSignIn = element.data().UserSignIn;
-            _this156.isLoading = false;
+            _this157.AgentSignIn = element.data().AgentSignIn;
+            _this157.UserSignIn = element.data().UserSignIn;
+            _this157.isLoading = false;
           });
         }
       }, {
@@ -17214,19 +17372,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onloadContent",
         value: function onloadContent() {
-          var _this157 = this;
+          var _this158 = this;
 
           this.SellermatchesService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this157.imageUrl = element.data().HomeMatchesPage;
-              _this157.OtherResult = element.data().OtherResult;
+              _this158.imageUrl = element.data().HomeMatchesPage;
+              _this158.OtherResult = element.data().OtherResult;
             });
           });
         }
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id) {
-          var _this158 = this;
+          var _this159 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -17241,111 +17399,111 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this158.buyer = true;
-              _this158.seller = false;
-              _this158.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this158.Look_PropertyFor = PropertyFor;
-              _this158.Look_propertytype = PropertyType;
-              _this158.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this158.Look_minamount);
-              _this158.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this158.Look_maxamount);
-              _this158.LookingTown = LookingTown;
-              _this158.Look_latitude = latitude;
-              _this158.Look_longitude = longitude;
-              _this158.Look_Streetname = Streetname;
-              _this158.Look_condition = condition;
-              _this158.Look_chainstatus = ChainStatus;
-              _this158.Look_FinancialPosition = FinancialPosition;
-              _this158.Look_Validity = Validity;
-              _this158.Look_Position = Position;
-              _this158.Look_UserId = UserId;
-              _this158.new_id = new_id; //Price Formula
+              _this159.buyer = true;
+              _this159.seller = false;
+              _this159.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this159.Look_PropertyFor = PropertyFor;
+              _this159.Look_propertytype = PropertyType;
+              _this159.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this159.Look_minamount);
+              _this159.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this159.Look_maxamount);
+              _this159.LookingTown = LookingTown;
+              _this159.Look_latitude = latitude;
+              _this159.Look_longitude = longitude;
+              _this159.Look_Streetname = Streetname;
+              _this159.Look_condition = condition;
+              _this159.Look_chainstatus = ChainStatus;
+              _this159.Look_FinancialPosition = FinancialPosition;
+              _this159.Look_Validity = Validity;
+              _this159.Look_Position = Position;
+              _this159.Look_UserId = UserId;
+              _this159.new_id = new_id; //Price Formula
 
-              _this158.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this158.maxAmount);
-              _this158.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this158.less);
-              _this158.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this158.more); //Remove Postcode Spaces
+              _this159.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this159.maxAmount);
+              _this159.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this159.less);
+              _this159.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this159.more); //Remove Postcode Spaces
 
-              _this158.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this158.listing = _this158.Look_postcodes;
-              _this158.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this158.isLoading = false;
-              _this158.buyer = true;
+              _this159.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this159.listing = _this159.Look_postcodes;
+              _this159.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this159.isLoading = false;
+              _this159.buyer = true;
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this158.Look_postcodes && item.data().PropertyFor == _this158.Look_PropertyFor && item.data().PropertyType == _this158.Look_propertytype && _this158.uid != item.data().UserId && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this158.distanceInKm = _this158.getDistanceFromLatLonInKm(_this158.Look_latitude, _this158.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && item.data().PropertyType == _this159.Look_propertytype && _this159.uid != item.data().UserId && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this158.matchedProperties.push({
+                _this159.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this158.distanceInKm * 1 / 1.609344
+                  distance: _this159.distanceInKm * 1 / 1.609344
                 });
 
-                _this158.bmatchesstartPage = 0;
-                _this158.bmatchespaginationLimit = 6;
+                _this159.bmatchesstartPage = 0;
+                _this159.bmatchespaginationLimit = 6;
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this158.Look_postcodes && item.data().PropertyFor == _this158.Look_PropertyFor && _this158.uid != item.data().UserId && item.data().PropertyType == _this158.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this158.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this158.distanceInKm = _this158.getDistanceFromLatLonInKm(_this158.Look_latitude, _this158.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != item.data().UserId && item.data().PropertyType == _this159.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this159.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this158.unmatchedProperties.push({
+                _this159.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this158.distanceInKm * 1 / 1.609344
+                  distance: _this159.distanceInKm * 1 / 1.609344
                 });
 
-                _this158.startPage = 0;
-                _this158.paginationLimit = 6;
+                _this159.startPage = 0;
+                _this159.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this158.Look_postcodes && item.data().PropertyFor == _this158.Look_PropertyFor && _this158.uid != item.data().UserId && item.data().PropertyType == _this158.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this158.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this158.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this158.distanceInKm = _this158.getDistanceFromLatLonInKm(_this158.Look_latitude, _this158.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != item.data().UserId && item.data().PropertyType == _this159.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this159.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this159.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this158.unmatchedPriceLogic.push({
+                _this159.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this158.distanceInKm * 1 / 1.609344
+                  distance: _this159.distanceInKm * 1 / 1.609344
                 });
 
-                _this158.startPage = 0;
-                _this158.paginationLimit = 6;
+                _this159.startPage = 0;
+                _this159.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this158.Look_postcodes && item.data().PropertyFor == _this158.Look_PropertyFor && _this158.uid != item.data().UserId && item.data().PropertyType != _this158.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this158.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this158.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this158.distanceInKm = _this158.getDistanceFromLatLonInKm(_this158.Look_latitude, _this158.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != item.data().UserId && item.data().PropertyType != _this159.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this159.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this159.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this158.unmatchedallProperty.push({
+                _this159.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this158.distanceInKm * 1 / 1.609344
+                  distance: _this159.distanceInKm * 1 / 1.609344
                 });
 
-                _this158.startPage = 0;
-                _this158.paginationLimit = 6;
+                _this159.startPage = 0;
+                _this159.paginationLimit = 6;
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this158.Look_postcodes && item.data().PropertyFor == _this158.Look_PropertyFor && _this158.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this158.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this158.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this158.distanceInKm = _this158.getDistanceFromLatLonInKm(_this158.Look_latitude, _this158.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this159.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this159.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this158.lookTown.push({
+                _this159.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this158.distanceInKm * 1 / 1.609344
+                  distance: _this159.distanceInKm * 1 / 1.609344
                 });
 
-                _this158.startPage = 0;
-                _this158.paginationLimit = 6;
+                _this159.startPage = 0;
+                _this159.paginationLimit = 6;
               }
             });
 
-            _this158.unmatchedProperties.sort(_this158.compare);
+            _this159.unmatchedProperties.sort(_this159.compare);
           });
           this.getFavoarte();
           this.getExpressedListingIds();
@@ -17353,7 +17511,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude, new_id) {
-          var _this159 = this;
+          var _this160 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -17385,23 +17543,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this159.maxAmount = _this159.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this159.maxAmount);
-              _this159.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this159.Look_minamount);
-              _this159.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this159.Look_maxamount);
-              _this159.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this159.less);
-              _this159.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this159.more); //Remove Postcode Spaces
+              _this160.maxAmount = _this160.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this160.maxAmount);
+              _this160.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this160.Look_minamount);
+              _this160.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this160.Look_maxamount);
+              _this160.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this160.less);
+              _this160.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this160.more); //Remove Postcode Spaces
 
-              _this159.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this159.listing = _this159.Look_postcode;
-              _this159.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this160.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this160.listing = _this160.Look_postcode;
+              _this160.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this159.Look_postcode && Mean.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != Mean.data().UserId && Mean.data().PropertyType == _this159.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this159.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this160.Look_postcode && Mean.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != Mean.data().UserId && Mean.data().PropertyType == _this160.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this160.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
@@ -17409,51 +17567,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcode && Mean.data().PropertyType == _this159.Look_PropertyType && _this159.uid != Mean.data().UserId && Mean.data().PropertyFor == _this159.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this159.removespace.substring(0, 5) == _this159.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
-                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcode && Mean.data().PropertyType == _this160.Look_PropertyType && _this160.uid != Mean.data().UserId && Mean.data().PropertyFor == _this160.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this160.removespace.substring(0, 5) == _this160.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this159.sellerunmatchedProperties.push({
+                _this160.sellerunmatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this159.distanceInKm * 1 / 1.609344
+                  distance: _this160.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcode && Mean.data().PropertyType == _this159.Look_PropertyType && _this159.uid != Mean.data().UserId && Mean.data().PropertyFor == _this159.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this159.removespace.substring(0, 5) != _this159.listing.substring(0, 5) && _this159.removespace.substring(0, 3) == _this159.listing.substring(0, 3)) {
-                _this159.sellerunmatchedPropertiesFirst.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcode && Mean.data().PropertyType == _this160.Look_PropertyType && _this160.uid != Mean.data().UserId && Mean.data().PropertyFor == _this160.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this160.removespace.substring(0, 5) != _this160.listing.substring(0, 5) && _this160.removespace.substring(0, 3) == _this160.listing.substring(0, 3)) {
+                _this160.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcode && Mean.data().PropertyType != _this159.Look_PropertyType && _this159.uid != Mean.data().UserId && less <= maxAmount && more >= maxAmount && _this159.removespace.substring(0, 5) != _this159.listing.substring(0, 5) && _this159.removespace.substring(0, 3) == _this159.listing.substring(0, 3) && Mean.data().PropertyFor == _this159.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
-                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcode && Mean.data().PropertyType != _this160.Look_PropertyType && _this160.uid != Mean.data().UserId && less <= maxAmount && more >= maxAmount && _this160.removespace.substring(0, 5) != _this160.listing.substring(0, 5) && _this160.removespace.substring(0, 3) == _this160.listing.substring(0, 3) && Mean.data().PropertyFor == _this160.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
+                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this159.sellerunmatchedPriceLogic.push({
+                _this160.sellerunmatchedPriceLogic.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this159.distanceInKm * 1 / 1.609344
+                  distance: _this160.distanceInKm * 1 / 1.609344
                 });
               } //All other properties - Nationwide
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcode && Mean.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != Mean.data().UserId && _this159.removespace.substring(0, 5) != _this159.listing.substring(0, 5) && _this159.removespace.substring(0, 3) != _this159.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
-                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcode && Mean.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != Mean.data().UserId && _this160.removespace.substring(0, 5) != _this160.listing.substring(0, 5) && _this160.removespace.substring(0, 3) != _this160.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
+                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this159.sellerlookTown.push({
+                _this160.sellerlookTown.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this159.distanceInKm * 1 / 1.609344
+                  distance: _this160.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this159.unmatchedProperties.sort(_this159.compare);
+            _this160.unmatchedProperties.sort(_this160.compare);
 
-            _this159.noOfMatches = _this159.sellermatchedProperties.length;
-            _this159.noOfUnmatched = _this159.sellerunmatchedProperties.length;
+            _this160.noOfMatches = _this160.sellermatchedProperties.length;
+            _this160.noOfUnmatched = _this160.sellerunmatchedProperties.length;
           });
           this.startPage = 0;
           this.paginationLimit = 6;
@@ -17720,12 +17878,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this160 = this;
+          var _this161 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this160.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this160.distinctExpressedUid.push(item.data().propertyId);
+              if (_this161.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this161.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -17744,123 +17902,123 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this161 = this;
+          var _this162 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this161.propertyRequirementDetails.push({
+              _this162.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
 
-            _this161.myrequirement_service.getSellerProperties(_this161.uid).then(function (res) {
+            _this162.myrequirement_service.getSellerProperties(_this162.uid).then(function (res) {
               res.forEach(function (element) {
                 // this.docid = element.id
-                _this161.propertyDetails.push({
+                _this162.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
               });
-              _this161.MatchesItem = _this161.propertyRequirementDetails.length + _this161.propertyDetails.length;
+              _this162.MatchesItem = _this162.propertyRequirementDetails.length + _this162.propertyDetails.length;
 
-              if (_this161.MatchesItem < 2) {
-                if (_this161.propertyRequirementDetails.length > _this161.propertyDetails.length) {
-                  _this161.buyer = true;
-                  _this161.seller = false;
-                  _this161.buyerItems = true;
-                  _this161.buyerVal = _this161.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this161.test = _this161.buyerVal;
-                  var Lookingpostcode = _this161.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var MinAmount = _this161.propertyRequirementDetails[0].data.MinAmount;
-                  var MaxAmount = _this161.propertyRequirementDetails[0].data.MaxAmount;
-                  var PropertyFor = _this161.propertyRequirementDetails[0].data.PropertyFor;
-                  var PropertyType = _this161.propertyRequirementDetails[0].data.PropertyType;
-                  var LookingTown = _this161.propertyRequirementDetails[0].data.LookingTown;
-                  var latitude = _this161.propertyRequirementDetails[0].data.latitude;
-                  var longitude = _this161.propertyRequirementDetails[0].data.longitude;
-                  var Streetname = _this161.propertyRequirementDetails[0].data.LookingStreetname;
-                  var condition = _this161.propertyRequirementDetails[0].data.Conditions;
-                  var ChainStatus = _this161.propertyRequirementDetails[0].data.ChainStatus;
-                  var FinancialPosition = _this161.propertyRequirementDetails[0].data.FinancialPosition;
-                  var Validity = _this161.propertyRequirementDetails[0].data.Validity;
-                  var Position = _this161.propertyRequirementDetails[0].data.Position;
-                  var UserId = _this161.propertyRequirementDetails[0].data.UserId;
-                  var new_id = _this161.propertyRequirementDetails[0].id;
+              if (_this162.MatchesItem < 2) {
+                if (_this162.propertyRequirementDetails.length > _this162.propertyDetails.length) {
+                  _this162.buyer = true;
+                  _this162.seller = false;
+                  _this162.buyerItems = true;
+                  _this162.buyerVal = _this162.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this162.test = _this162.buyerVal;
+                  var Lookingpostcode = _this162.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var MinAmount = _this162.propertyRequirementDetails[0].data.MinAmount;
+                  var MaxAmount = _this162.propertyRequirementDetails[0].data.MaxAmount;
+                  var PropertyFor = _this162.propertyRequirementDetails[0].data.PropertyFor;
+                  var PropertyType = _this162.propertyRequirementDetails[0].data.PropertyType;
+                  var LookingTown = _this162.propertyRequirementDetails[0].data.LookingTown;
+                  var latitude = _this162.propertyRequirementDetails[0].data.latitude;
+                  var longitude = _this162.propertyRequirementDetails[0].data.longitude;
+                  var Streetname = _this162.propertyRequirementDetails[0].data.LookingStreetname;
+                  var condition = _this162.propertyRequirementDetails[0].data.Conditions;
+                  var ChainStatus = _this162.propertyRequirementDetails[0].data.ChainStatus;
+                  var FinancialPosition = _this162.propertyRequirementDetails[0].data.FinancialPosition;
+                  var Validity = _this162.propertyRequirementDetails[0].data.Validity;
+                  var Position = _this162.propertyRequirementDetails[0].data.Position;
+                  var UserId = _this162.propertyRequirementDetails[0].data.UserId;
+                  var new_id = _this162.propertyRequirementDetails[0].id;
 
-                  _this161.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
+                  _this162.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
                 } else {
-                  _this161.seller = true;
-                  _this161.buyer = false;
-                  _this161.sellerItem = true;
-                  _this161.sellerVal = _this161.propertyDetails[0].seller.Lookingpostcode;
-                  var _Lookingpostcode = _this161.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor = _this161.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType = _this161.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount = _this161.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown = _this161.propertyDetails[0].seller.LookingTown;
-                  var Lookingstate = _this161.propertyDetails[0].seller.Lookingstate;
-                  var Maxbathrooms = _this161.propertyDetails[0].seller.Maxbathrooms;
-                  var PropertyCondition = _this161.propertyDetails[0].seller.PropertyCondition;
-                  var LookingAddress = _this161.propertyDetails[0].seller.LookingAddress;
-                  var ownership = _this161.propertyDetails[0].seller.ownership;
-                  var features = _this161.propertyDetails[0].seller.features;
-                  var _UserId = _this161.propertyDetails[0].seller.UserId;
-                  var Maxreception = _this161.propertyDetails[0].seller.Maxreception;
-                  var Maxrooms = _this161.propertyDetails[0].seller.Maxrooms;
-                  var _latitude = _this161.propertyDetails[0].seller.latitude;
-                  var _longitude = _this161.propertyDetails[0].seller.longitude;
-                  var _new_id = _this161.propertyDetails[0].sellerId;
+                  _this162.seller = true;
+                  _this162.buyer = false;
+                  _this162.sellerItem = true;
+                  _this162.sellerVal = _this162.propertyDetails[0].seller.Lookingpostcode;
+                  var _Lookingpostcode = _this162.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor = _this162.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType = _this162.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount = _this162.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown = _this162.propertyDetails[0].seller.LookingTown;
+                  var Lookingstate = _this162.propertyDetails[0].seller.Lookingstate;
+                  var Maxbathrooms = _this162.propertyDetails[0].seller.Maxbathrooms;
+                  var PropertyCondition = _this162.propertyDetails[0].seller.PropertyCondition;
+                  var LookingAddress = _this162.propertyDetails[0].seller.LookingAddress;
+                  var ownership = _this162.propertyDetails[0].seller.ownership;
+                  var features = _this162.propertyDetails[0].seller.features;
+                  var _UserId = _this162.propertyDetails[0].seller.UserId;
+                  var Maxreception = _this162.propertyDetails[0].seller.Maxreception;
+                  var Maxrooms = _this162.propertyDetails[0].seller.Maxrooms;
+                  var _latitude = _this162.propertyDetails[0].seller.latitude;
+                  var _longitude = _this162.propertyDetails[0].seller.longitude;
+                  var _new_id = _this162.propertyDetails[0].sellerId;
 
-                  _this161.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
+                  _this162.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
                 }
-              } else if (_this161.MatchesItem > 1) {
-                if (_this161.propertyRequirementDetails.length > _this161.propertyDetails.length) {
-                  _this161.buyer = true;
-                  _this161.buyerVal = _this161.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this161.test = _this161.buyerVal;
-                  var _Lookingpostcode2 = _this161.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var _MinAmount = _this161.propertyRequirementDetails[0].data.MinAmount;
-                  var _MaxAmount2 = _this161.propertyRequirementDetails[0].data.MaxAmount;
-                  var _PropertyFor2 = _this161.propertyRequirementDetails[0].data.PropertyFor;
-                  var _PropertyType2 = _this161.propertyRequirementDetails[0].data.PropertyType;
-                  var _LookingTown2 = _this161.propertyRequirementDetails[0].data.LookingTown;
-                  var _latitude2 = _this161.propertyRequirementDetails[0].data.latitude;
-                  var _longitude2 = _this161.propertyRequirementDetails[0].data.longitude;
-                  var _Streetname = _this161.propertyRequirementDetails[0].data.LookingStreetname;
-                  var _condition = _this161.propertyRequirementDetails[0].data.Conditions;
-                  var _ChainStatus = _this161.propertyRequirementDetails[0].data.ChainStatus;
-                  var _FinancialPosition = _this161.propertyRequirementDetails[0].data.FinancialPosition;
-                  var _Validity = _this161.propertyRequirementDetails[0].data.Validity;
-                  var _Position = _this161.propertyRequirementDetails[0].data.Position;
-                  var _UserId2 = _this161.propertyRequirementDetails[0].data.UserId;
-                  var _new_id2 = _this161.propertyRequirementDetails[0].id;
+              } else if (_this162.MatchesItem > 1) {
+                if (_this162.propertyRequirementDetails.length > _this162.propertyDetails.length) {
+                  _this162.buyer = true;
+                  _this162.buyerVal = _this162.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this162.test = _this162.buyerVal;
+                  var _Lookingpostcode2 = _this162.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var _MinAmount = _this162.propertyRequirementDetails[0].data.MinAmount;
+                  var _MaxAmount2 = _this162.propertyRequirementDetails[0].data.MaxAmount;
+                  var _PropertyFor2 = _this162.propertyRequirementDetails[0].data.PropertyFor;
+                  var _PropertyType2 = _this162.propertyRequirementDetails[0].data.PropertyType;
+                  var _LookingTown2 = _this162.propertyRequirementDetails[0].data.LookingTown;
+                  var _latitude2 = _this162.propertyRequirementDetails[0].data.latitude;
+                  var _longitude2 = _this162.propertyRequirementDetails[0].data.longitude;
+                  var _Streetname = _this162.propertyRequirementDetails[0].data.LookingStreetname;
+                  var _condition = _this162.propertyRequirementDetails[0].data.Conditions;
+                  var _ChainStatus = _this162.propertyRequirementDetails[0].data.ChainStatus;
+                  var _FinancialPosition = _this162.propertyRequirementDetails[0].data.FinancialPosition;
+                  var _Validity = _this162.propertyRequirementDetails[0].data.Validity;
+                  var _Position = _this162.propertyRequirementDetails[0].data.Position;
+                  var _UserId2 = _this162.propertyRequirementDetails[0].data.UserId;
+                  var _new_id2 = _this162.propertyRequirementDetails[0].id;
 
-                  _this161.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
+                  _this162.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
                 } else {
-                  _this161.seller = true;
-                  _this161.sellerVal = _this161.propertyDetails[0].seller.Lookingpostcode;
-                  _this161.test = _this161.sellerVal;
-                  var _Lookingpostcode3 = _this161.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor3 = _this161.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType3 = _this161.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount3 = _this161.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown3 = _this161.propertyDetails[0].seller.LookingTown;
-                  var _Lookingstate = _this161.propertyDetails[0].seller.Lookingstate;
-                  var _Maxbathrooms = _this161.propertyDetails[0].seller.Maxbathrooms;
-                  var _PropertyCondition = _this161.propertyDetails[0].seller.PropertyCondition;
-                  var _LookingAddress = _this161.propertyDetails[0].seller.LookingAddress;
-                  var _ownership = _this161.propertyDetails[0].seller.ownership;
-                  var _features = _this161.propertyDetails[0].seller.features;
-                  var _UserId3 = _this161.propertyDetails[0].seller.UserId;
-                  var _Maxreception = _this161.propertyDetails[0].seller.Maxreception;
-                  var _Maxrooms = _this161.propertyDetails[0].seller.Maxrooms;
-                  var _latitude3 = _this161.propertyDetails[0].seller.latitude;
-                  var _longitude3 = _this161.propertyDetails[0].seller.longitude;
-                  var _new_id3 = _this161.propertyDetails[0].sellerId;
+                  _this162.seller = true;
+                  _this162.sellerVal = _this162.propertyDetails[0].seller.Lookingpostcode;
+                  _this162.test = _this162.sellerVal;
+                  var _Lookingpostcode3 = _this162.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor3 = _this162.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType3 = _this162.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount3 = _this162.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown3 = _this162.propertyDetails[0].seller.LookingTown;
+                  var _Lookingstate = _this162.propertyDetails[0].seller.Lookingstate;
+                  var _Maxbathrooms = _this162.propertyDetails[0].seller.Maxbathrooms;
+                  var _PropertyCondition = _this162.propertyDetails[0].seller.PropertyCondition;
+                  var _LookingAddress = _this162.propertyDetails[0].seller.LookingAddress;
+                  var _ownership = _this162.propertyDetails[0].seller.ownership;
+                  var _features = _this162.propertyDetails[0].seller.features;
+                  var _UserId3 = _this162.propertyDetails[0].seller.UserId;
+                  var _Maxreception = _this162.propertyDetails[0].seller.Maxreception;
+                  var _Maxrooms = _this162.propertyDetails[0].seller.Maxrooms;
+                  var _latitude3 = _this162.propertyDetails[0].seller.latitude;
+                  var _longitude3 = _this162.propertyDetails[0].seller.longitude;
+                  var _new_id3 = _this162.propertyDetails[0].sellerId;
 
-                  _this161.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
+                  _this162.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
                 }
               }
             });
@@ -17869,26 +18027,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitem",
         value: function getallitem() {
-          var _this162 = this;
+          var _this163 = this;
 
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this162.uid) {
-                _this162.propertyRequirementDetails.push({
+              if (element.UserId == _this163.uid) {
+                _this163.propertyRequirementDetails.push({
                   data: element,
                   id: element.id
                 });
 
-                _this162.buyer = true;
-                _this162.seller = false;
-                _this162.buyerItems = true;
+                _this163.buyer = true;
+                _this163.seller = false;
+                _this163.buyerItems = true;
               }
             });
           });
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this162.uid) {
-                _this162.propertyDetails.push({
+              if (element.UserId == _this163.uid) {
+                _this163.propertyDetails.push({
                   seller: element,
                   sellerId: element.id
                 });
@@ -17899,13 +18057,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getFavoarte",
         value: function getFavoarte() {
-          var _this163 = this;
+          var _this164 = this;
 
           this.favorateProperty = [];
           this.MatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this163.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this163.favorateProperty.push(item.data().proppertyId);
+              if (_this164.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this164.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -17924,52 +18082,52 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteFavorate",
         value: function deleteFavorate(docid) {
-          var _this164 = this;
+          var _this165 = this;
 
           this.MatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this164.getFavoarte();
+            _this165.getFavoarte();
           });
         }
       }, {
         key: "addtoFavorate",
         value: function addtoFavorate(uid, property, id) {
-          var _this165 = this;
-
-          this.UserProperty = {
-            PropertyDetail: property,
-            proppertyId: id
-          };
-          this.MatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this165.getFavoarte();
-
-            _this165.checkFavorateValue(id);
-          });
-        }
-      }, {
-        key: "addtoSellerFavorate",
-        value: function addtoSellerFavorate(uid, property, id) {
           var _this166 = this;
 
           this.UserProperty = {
             PropertyDetail: property,
             proppertyId: id
           };
-          this.SellermatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this166.getSellerFavoarte();
+          this.MatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
+            _this166.getFavoarte();
 
             _this166.checkFavorateValue(id);
           });
         }
       }, {
+        key: "addtoSellerFavorate",
+        value: function addtoSellerFavorate(uid, property, id) {
+          var _this167 = this;
+
+          this.UserProperty = {
+            PropertyDetail: property,
+            proppertyId: id
+          };
+          this.SellermatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
+            _this167.getSellerFavoarte();
+
+            _this167.checkFavorateValue(id);
+          });
+        }
+      }, {
         key: "getSellerFavoarte",
         value: function getSellerFavoarte() {
-          var _this167 = this;
+          var _this168 = this;
 
           this.favorateProperty = [];
           this.SellermatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this167.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this167.favorateProperty.push(item.data().proppertyId);
+              if (_this168.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this168.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -17988,10 +18146,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSellerFavorate",
         value: function deleteSellerFavorate(docid) {
-          var _this168 = this;
+          var _this169 = this;
 
           this.SellermatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this168.getSellerFavoarte();
+            _this169.getSellerFavoarte();
           });
         }
       }, {
@@ -18291,11 +18449,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ImagesSliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this169 = this;
+          var _this170 = this;
 
           this.ActivatedRoutes.paramMap.subscribe(function (element) {});
           this.SellerNestimateDetails.getSellerRequirement(this.userID, this.child).then(function (element) {
-            _this169.AllImages = element.data().Images;
+            _this170.AllImages = element.data().Images;
           });
         }
       }]);
@@ -18434,12 +18592,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this170 = this;
+          var _this171 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this170.propertyRequirementDetails.push({
+              _this171.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -18448,7 +18606,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this170.propertyDetails.push({
+              _this171.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -19057,18 +19215,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this171 = this;
+          var _this172 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this171.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
+              _this172.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
             });
           });
           this.LoggedIn();
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this171.docid = params.get("docid");
+            _this172.docid = params.get("docid");
           });
           this.getPropertyFilled();
         }
@@ -19086,42 +19244,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userPrefilledDetails",
         value: function userPrefilledDetails() {
-          var _this172 = this;
+          var _this173 = this;
 
           //Pre - populate the email field
           this.EditListingBuyerService.getUserDetail(this.uid).then(function (data) {
-            _this172.dataItem = data.data();
-            _this172.user.Name = _this172.dataItem.Name;
-            _this172.user.email = _this172.dataItem.email;
-            _this172.user.title = _this172.dataItem.title;
+            _this173.dataItem = data.data();
+            _this173.user.Name = _this173.dataItem.Name;
+            _this173.user.email = _this173.dataItem.email;
+            _this173.user.title = _this173.dataItem.title;
 
-            if (_this172.dataItem.DOB != null) {
-              _this172.user.DOB = _this172.dataItem.DOB.toDate();
+            if (_this173.dataItem.DOB != null) {
+              _this173.user.DOB = _this173.dataItem.DOB.toDate();
             }
 
-            _this172.user.Phone = _this172.dataItem.Phone;
+            _this173.user.Phone = _this173.dataItem.Phone;
           });
         }
       }, {
         key: "getPropertyFilled",
         value: function getPropertyFilled() {
-          var _this173 = this;
+          var _this174 = this;
 
           this.EditListingBuyerService.getPropertyDetail(this.uid, this.docid).then(function (data) {
-            _this173.listingBuyer = data.data();
-            _this173.propertyPrefilled = data.data();
-            _this173.listingBuyer.Currentpostcode = _this173.propertyPrefilled.Currentpostcode;
-            _this173.listingBuyer.CurrentAddress = _this173.propertyPrefilled.CurrentAddress;
+            _this174.listingBuyer = data.data();
+            _this174.propertyPrefilled = data.data();
+            _this174.listingBuyer.Currentpostcode = _this174.propertyPrefilled.Currentpostcode;
+            _this174.listingBuyer.CurrentAddress = _this174.propertyPrefilled.CurrentAddress;
 
-            _this173.postcodeField();
+            _this174.postcodeField();
 
-            if (_this173.listingBuyer.PropertyFor == 'buy') {
-              _this173.amounts = true;
-              _this173.buyOption = true;
+            if (_this174.listingBuyer.PropertyFor == 'buy') {
+              _this174.amounts = true;
+              _this174.buyOption = true;
             } else {
-              _this173.amounts = true;
-              _this173.buyOption = false;
-              _this173.rentOption = true;
+              _this174.amounts = true;
+              _this174.buyOption = false;
+              _this174.rentOption = true;
             }
           });
         }
@@ -19133,17 +19291,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "postcodeField",
         value: function postcodeField() {
-          var _this174 = this;
+          var _this175 = this;
 
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value != "") {
-              _this174.lookup(_this174.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this174.data = data;
+              _this175.lookup(_this175.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this175.data = data;
               });
 
-              return _this174.lookup(_this174.listingBuyer.Lookingpostcode);
+              return _this175.lookup(_this175.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -19153,11 +19311,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this174.lookup(_this174.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this174.data = data;
+              _this175.lookup(_this175.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this175.data = data;
               });
 
-              return _this174.lookup(_this174.listingBuyer.Currentpostcode);
+              return _this175.lookup(_this175.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -19854,12 +20012,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerEditing",
         value: function buyerEditing() {
-          var _this175 = this;
+          var _this176 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this175.postcodeCoordinates = data;
-            _this175.listingBuyer.longitude = _this175.postcodeCoordinates.result.longitude, _this175.listingBuyer.latitude = _this175.postcodeCoordinates.result.latitude, _this175.listingBuyer.UserId = _this175.uid;
+            _this176.postcodeCoordinates = data;
+            _this176.listingBuyer.longitude = _this176.postcodeCoordinates.result.longitude, _this176.listingBuyer.latitude = _this176.postcodeCoordinates.result.latitude, _this176.listingBuyer.UserId = _this176.uid;
           });
           this.listingBuyer.UserId = this.uid;
           this.listingBuyer.longitude, this.listingBuyer.latitude, this.listingBuyer.username = this.user.Name;
@@ -19869,9 +20027,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.listingBuyer.DOB = this.user.DOB;
           this["return"] = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(function (data) {
             ;
-            _this175.isLoading = false;
+            _this176.isLoading = false;
 
-            var dialogRef = _this175.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+            var dialogRef = _this176.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
           });
         }
       }]);
@@ -20533,16 +20691,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this176 = this;
+          var _this177 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this176.docid = params.get("sellerId");
+            _this177.docid = params.get("sellerId");
           });
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this176.sellerRightImageUrl = element.data().SellerPropertyRightImage;
+              _this177.sellerRightImageUrl = element.data().SellerPropertyRightImage;
             });
           });
           this.LoggedIn();
@@ -20550,36 +20708,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this177 = this;
+          var _this178 = this;
 
           //Pre - populate the email field
           this.SellerformService.getsellerDetails(this.uid, this.docid).then(function (element) {
-            _this177.listingSeller = element.data();
+            _this178.listingSeller = element.data();
 
-            _this177.dropdown();
+            _this178.dropdown();
 
-            if (_this177.listingSeller.PropertyFor == "buy") {
-              _this177.maxamounts = true;
-              _this177.sellOption = true;
+            if (_this178.listingSeller.PropertyFor == "buy") {
+              _this178.maxamounts = true;
+              _this178.sellOption = true;
             } else {
-              _this177.maxamounts = true;
-              _this177.sellOption = false;
-              _this177.letOption = true;
+              _this178.maxamounts = true;
+              _this178.sellOption = false;
+              _this178.letOption = true;
             }
 
-            _this177.Images = _this177.listingSeller.Images;
+            _this178.Images = _this178.listingSeller.Images;
 
-            if (_this177.listingSeller.Images.length > 0) {
-              _this177.uploadedImages = true;
+            if (_this178.listingSeller.Images.length > 0) {
+              _this178.uploadedImages = true;
             } else {
-              _this177.uploadedImages = false;
+              _this178.uploadedImages = false;
             }
           });
           this.SellerformService.getUSerDetail(this.uid).then(function (user) {
-            _this177.user = user.data();
-            _this177.user.DOB = user.data().DOB.toDate();
-            _this177.user.CurrentTown = user.data().CurrentTowncity;
-            _this177.user.CurrentAddress = user.data().Currentaddress;
+            _this178.user = user.data();
+            _this178.user.DOB = user.data().DOB.toDate();
+            _this178.user.CurrentTown = user.data().CurrentTowncity;
+            _this178.user.CurrentAddress = user.data().Currentaddress;
           });
           this.isLoggedIn = true;
         }
@@ -20945,11 +21103,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this178 = this;
+          var _this179 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this178.isLoading = false;
+            _this179.isLoading = false;
           });
         }
       }, {
@@ -20982,12 +21140,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this179 = this;
+          var _this180 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this179.postcodeCoordinates = data;
-            _this179.listingSeller.longitude = _this179.postcodeCoordinates.result.longitude, _this179.listingSeller.latitude = _this179.postcodeCoordinates.result.latitude, _this179.listingSeller.UserId = _this179.uid;
+            _this180.postcodeCoordinates = data;
+            _this180.listingSeller.longitude = _this180.postcodeCoordinates.result.longitude, _this180.listingSeller.latitude = _this180.postcodeCoordinates.result.latitude, _this180.listingSeller.UserId = _this180.uid;
           });
           this.listingSeller.UserId = this.uid;
           this.isLoading = true;
@@ -20998,9 +21156,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.listingSeller.DOB = this.user.DOB;
           this.listingSeller.Images = this.sellerImages;
           this["return"] = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(function (data) {
-            _this179.isLoading = false;
+            _this180.isLoading = false;
 
-            var dialogRef = _this179.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+            var dialogRef = _this180.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -21013,18 +21171,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "dropdown",
         value: function dropdown() {
-          var _this180 = this;
+          var _this181 = this;
 
           // The auto population of github method
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this180.lookup(_this180.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this180.data = data;
+              _this181.lookup(_this181.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this181.data = data;
               });
 
-              return _this180.lookup(_this180.listingSeller.Lookingpostcode);
+              return _this181.lookup(_this181.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -21034,11 +21192,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this180.lookup(_this180.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this180.data = data;
+              _this181.lookup(_this181.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this181.data = data;
               });
 
-              return _this180.lookup(_this180.listingSeller.Currentpostcode);
+              return _this181.lookup(_this181.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -21047,7 +21205,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "importImages",
         value: function importImages(event) {
-          var _this181 = this;
+          var _this182 = this;
 
           this.isLoading = true;
           this.uploads = [];
@@ -21102,7 +21260,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     // for every upload do whatever you want in firestore with the uploaded file
                     var _t = task.then(function (f) {
                       return f.ref.getDownloadURL().then(function (url) {
-                        _this181.sellerImages.push(url); // return this.afs.collection('files').add({
+                        _this182.sellerImages.push(url); // return this.afs.collection('files').add({
                         //   name: f.metadata.name,
                         // });
 
@@ -21709,46 +21867,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getFavorate",
         value: function getFavorate() {
-          var _this182 = this;
+          var _this183 = this;
 
           this.getFavorates = [];
           this.sellerFavorate = [];
           this.isLoading = true;
           this.MyListingService.getFavorate(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this182.getFavorates.push({
+              _this183.getFavorates.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              _this182.isLoading = false;
+              _this183.isLoading = false;
             });
 
-            _this182.MyListingService.sellerFavorates(_this182.uid).then(function (data) {
+            _this183.MyListingService.sellerFavorates(_this183.uid).then(function (data) {
               data.forEach(function (element) {
-                _this182.sellerFavorate.push({
+                _this183.sellerFavorate.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                _this182.isLoading = false;
+                _this183.isLoading = false;
               });
 
-              if (_this182.getFavorates.length > _this182.sellerFavorate.length) {
-                _this182.buyerProperty = true;
-                _this182.sellerProperty = false;
-                _this182.nestimate = "Owner Nestimate";
-                _this182.isLoading = false;
+              if (_this183.getFavorates.length > _this183.sellerFavorate.length) {
+                _this183.buyerProperty = true;
+                _this183.sellerProperty = false;
+                _this183.nestimate = "Owner Nestimate";
+                _this183.isLoading = false;
               } else {
-                _this182.sellerProperty = true;
-                _this182.buyerProperty = false;
-                _this182.nestimate = "Seeker Nestimate";
-                _this182.isLoading = false;
+                _this183.sellerProperty = true;
+                _this183.buyerProperty = false;
+                _this183.nestimate = "Seeker Nestimate";
+                _this183.isLoading = false;
               }
 
-              _this182.isLoading = false;
-              _this182.startPage = 0;
-              _this182.paginationLimit = 6;
+              _this183.isLoading = false;
+              _this183.startPage = 0;
+              _this183.paginationLimit = 6;
             });
           });
         }
@@ -21760,31 +21918,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteBuyerFavorate",
         value: function deleteBuyerFavorate() {
-          var _this183 = this;
+          var _this184 = this;
 
           this.MyListingService.getFavorate(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this183.getFavorates.push({
+              _this184.getFavorates.push({
                 Detail: element.data(),
                 id: element.id
               });
             });
-            alert(_this183.getFavorates.length);
+            alert(_this184.getFavorates.length);
 
-            if (_this183.getFavorates.length > 0) {
-              _this183.buyerProperty = true;
+            if (_this184.getFavorates.length > 0) {
+              _this184.buyerProperty = true;
             } else {
-              _this183.buyerProperty = false;
+              _this184.buyerProperty = false;
             }
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this184 = this;
+          var _this185 = this;
 
           this.MyListingService.deletefavorate(this.uid, docid).then(function (data) {
-            _this184.getFavorate();
+            _this185.getFavorate();
           });
         }
       }, {
@@ -21797,10 +21955,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(docid) {
-          var _this185 = this;
+          var _this186 = this;
 
           this.MyListingService.sellerdeletefavorate(this.uid, docid).then(function (data) {
-            _this185.getFavorate();
+            _this186.getFavorate();
           });
         }
       }, {
@@ -22124,12 +22282,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this186 = this;
+          var _this187 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this186.propertyId = params.get("id");
+            _this187.propertyId = params.get("id");
           });
 
           this._router.events.subscribe(function (evt) {
@@ -22152,26 +22310,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this187 = this;
+          var _this188 = this;
 
           this.SellerListingDetails.getBuyerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this187.buyingPosition = res.data().Position;
-            _this187.buyerFinancialPosition = res.data().FinancialPosition;
-            _this187.BuyerPropertyType = res.data().PropertyType;
-            _this187.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this187.BuyerRoommin = res.data().Roommin;
-            _this187.BuyerRoomsmax = res.data().Roomsmax;
-            _this187.username = res.data().username;
-            _this187.usertitle = res.data().usertitle;
-            _this187.buyerPropertyFor = res.data().PropertyFor;
-            _this187.PropertyType = res.data().PropertyType;
-            _this187.Ownership = res.data().Ownership;
-            _this187.LookingStreetname = res.data().LookingStreetname;
-            _this187.Conditions = res.data().Conditions;
-            _this187.Maxbathroom = res.data().Maxbathroom;
-            _this187.Maxreception = res.data().Maxreception;
-            _this187.MinAmount = res.data().MinAmount;
-            _this187.MaxAmount = res.data().MaxAmount;
+            _this188.buyingPosition = res.data().Position;
+            _this188.buyerFinancialPosition = res.data().FinancialPosition;
+            _this188.BuyerPropertyType = res.data().PropertyType;
+            _this188.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this188.BuyerRoommin = res.data().Roommin;
+            _this188.BuyerRoomsmax = res.data().Roomsmax;
+            _this188.username = res.data().username;
+            _this188.usertitle = res.data().usertitle;
+            _this188.buyerPropertyFor = res.data().PropertyFor;
+            _this188.PropertyType = res.data().PropertyType;
+            _this188.Ownership = res.data().Ownership;
+            _this188.LookingStreetname = res.data().LookingStreetname;
+            _this188.Conditions = res.data().Conditions;
+            _this188.Maxbathroom = res.data().Maxbathroom;
+            _this188.Maxreception = res.data().Maxreception;
+            _this188.MinAmount = res.data().MinAmount;
+            _this188.MaxAmount = res.data().MaxAmount;
           });
         }
       }]);
@@ -22368,12 +22526,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this188 = this;
+          var _this189 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this188.propertyId = params.get("id");
+            _this189.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -22386,26 +22544,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this189 = this;
+          var _this190 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this189.userName = res.data().username;
-            _this189.usertitle = res.data().usertitle;
-            _this189.PropertyFor = res.data().PropertyFor;
-            _this189.price = res.data().MaxAmount;
-            _this189.postcode = res.data().Lookingpostcode;
-            _this189.Streetname = res.data().Lookingstate;
-            _this189.PropertyTypes = res.data().PropertyType;
-            _this189.Maxroom = res.data().Maxrooms;
-            _this189.ownerships = res.data().ownership;
-            _this189.Bathrooms = res.data().Maxbathrooms;
-            _this189.Reception = res.data().Maxreception;
-            _this189.features = res.data().features;
-            _this189.MaxAmount = res.data().MaxAmount;
-            _this189.PropertyCondition = res.data().PropertyCondition;
-            _this189.allImages = res.data().Images;
+            _this190.userName = res.data().username;
+            _this190.usertitle = res.data().usertitle;
+            _this190.PropertyFor = res.data().PropertyFor;
+            _this190.price = res.data().MaxAmount;
+            _this190.postcode = res.data().Lookingpostcode;
+            _this190.Streetname = res.data().Lookingstate;
+            _this190.PropertyTypes = res.data().PropertyType;
+            _this190.Maxroom = res.data().Maxrooms;
+            _this190.ownerships = res.data().ownership;
+            _this190.Bathrooms = res.data().Maxbathrooms;
+            _this190.Reception = res.data().Maxreception;
+            _this190.features = res.data().features;
+            _this190.MaxAmount = res.data().MaxAmount;
+            _this190.PropertyCondition = res.data().PropertyCondition;
+            _this190.allImages = res.data().Images;
 
-            _this189.toTop();
+            _this190.toTop();
           });
         }
       }, {
@@ -22547,7 +22705,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = ".header-content-my-nestimate:hover\n{\n    cursor: pointer;\n}\n\n.no-property-Found {\n    height: 50vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: white;\n    font-size: 2em;\n    color: var(--DARK-BLUE-COLOR);\n  }\n\n.outputText {\n\n    text-transform: capitalize !important;\n}\n\n.seller-nestimate\n{        width: 50%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: normal;\n    padding: 0em 7em;\n}\n\n.blue-top-nestimate-border {\n  background-color: var(--DARK-BLUE-COLOR);\n  padding: 0.5em 22em;\n  padding-right: 0em !important;\n  display: flex !important;\n  justify-content: space-between !important;\n}\n\n.property-for {\n  padding-right: 4em;\n}\n\n@media screen and (max-width:768px)\n{\n  .mobile-top-padding\n  {\n    height: 1em;\n  }\n}\n\n.manage-nestimate-lower-tab {\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0em 6em;\n\n}\n\n.manganage-nestimate-lower-tab-wrapper\n{\n  background-color: #ECECEC;\n\n  width: 100%;\n    text-align: center;\n\n}\n\nspan#mynestimate {\n  border-bottom: 4px solid #0F3C73;\n  font-family: 'Segoe UI Bold';\n}\n\n.manganage-nestimate-lower-tab-wrapper.right-line {\n  border-right: 1px solid #A4A4A4;\n}\n\n@media screen and (max-width:768px){\n  .manage-nestimate-lower-tab {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0em 0em;\n}\n}\n\n.tooltip {\n  position: relative;\n  display: inline-block;\n  border-bottom: 1px dotted black;\n}\n\n.tooltip .tooltiptext {\n  visibility: hidden;\n /* // width: 120px; */\n  background-color: #555;\n  color: #fff;\n  text-align: center;\n  border-radius: 6px;\n  padding: 5px 5px;\n  position: absolute;\n  z-index: 1;\n  bottom: 125%;\n  left: 50%;\n  margin-left: -60px;\n  opacity: 0;\n  transition: opacity 0.3s;\n}\n\n.tooltip .tooltiptext::after {\n  content: \"\";\n  position: absolute;\n  top: 100%;\n  left: 50%;\n  margin-left: -5px;\n  border-width: 5px;\n  border-style: solid;\n  border-color: #555 transparent transparent transparent;\n}\n\n.tooltip:hover .tooltiptext {\n  visibility: visible;\n  opacity: 1;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teUxpc3RpbmdzL215TGlzdGluZy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGNBQWM7SUFDZCw2QkFBNkI7RUFDL0I7O0FBQ0E7O0lBRUUscUNBQXFDO0FBQ3pDOztBQUVBO1NBQ1MsVUFBVTtJQUNmLFlBQVk7SUFDWixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCOztBQUNBO0VBQ0Usd0NBQXdDO0VBQ3hDLG1CQUFtQjtFQUNuQiw2QkFBNkI7RUFDN0Isd0JBQXdCO0VBQ3hCLHlDQUF5QztBQUMzQzs7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFHQTs7RUFFRTs7SUFFRSxXQUFXO0VBQ2I7QUFDRjs7QUFHQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IsbUJBQW1CO0VBQ25CLGVBQWU7O0FBRWpCOztBQUNBOztFQUVFLHlCQUF5Qjs7RUFFekIsV0FBVztJQUNULGtCQUFrQjs7QUFFdEI7O0FBQ0E7RUFDRSxnQ0FBZ0M7RUFDaEMsNEJBQTRCO0FBQzlCOztBQUNBO0VBQ0UsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0U7SUFDRSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtJQUNuQixlQUFlO0FBQ25CO0FBQ0E7O0FBR0E7RUFDRSxrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLCtCQUErQjtBQUNqQzs7QUFFQTtFQUNFLGtCQUFrQjtDQUNuQixxQkFBcUI7RUFDcEIsc0JBQXNCO0VBQ3RCLFdBQVc7RUFDWCxrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLFlBQVk7RUFDWixTQUFTO0VBQ1Qsa0JBQWtCO0VBQ2xCLFVBQVU7RUFDVix3QkFBd0I7QUFDMUI7O0FBRUE7RUFDRSxXQUFXO0VBQ1gsa0JBQWtCO0VBQ2xCLFNBQVM7RUFDVCxTQUFTO0VBQ1QsaUJBQWlCO0VBQ2pCLGlCQUFpQjtFQUNqQixtQkFBbUI7RUFDbkIsc0RBQXNEO0FBQ3hEOztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLFVBQVU7QUFDWiIsImZpbGUiOiJzcmMvYXBwL01lbnUvbXlMaXN0aW5ncy9teUxpc3RpbmcuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5oZWFkZXItY29udGVudC1teS1uZXN0aW1hdGU6aG92ZXJcbntcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbi5uby1wcm9wZXJ0eS1Gb3VuZCB7XG4gICAgaGVpZ2h0OiA1MHZoO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICBmb250LXNpemU6IDJlbTtcbiAgICBjb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgfVxuICAub3V0cHV0VGV4dCB7XG5cbiAgICB0ZXh0LXRyYW5zZm9ybTogY2FwaXRhbGl6ZSAhaW1wb3J0YW50O1xufVxuXG4uc2VsbGVyLW5lc3RpbWF0ZVxueyAgICAgICAgd2lkdGg6IDUwJTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBub3JtYWw7XG4gICAgcGFkZGluZzogMGVtIDdlbTtcbn1cbi5ibHVlLXRvcC1uZXN0aW1hdGUtYm9yZGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tREFSSy1CTFVFLUNPTE9SKTtcbiAgcGFkZGluZzogMC41ZW0gMjJlbTtcbiAgcGFkZGluZy1yaWdodDogMGVtICFpbXBvcnRhbnQ7XG4gIGRpc3BsYXk6IGZsZXggIWltcG9ydGFudDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuICFpbXBvcnRhbnQ7XG59XG4ucHJvcGVydHktZm9yIHtcbiAgcGFkZGluZy1yaWdodDogNGVtO1xufVxuXG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6NzY4cHgpXG57XG4gIC5tb2JpbGUtdG9wLXBhZGRpbmdcbiAge1xuICAgIGhlaWdodDogMWVtO1xuICB9XG59XG5cblxuLm1hbmFnZS1uZXN0aW1hdGUtbG93ZXItdGFiIHtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG1hcmdpbjogMGVtIDZlbTtcblxufVxuLm1hbmdhbmFnZS1uZXN0aW1hdGUtbG93ZXItdGFiLXdyYXBwZXJcbntcbiAgYmFja2dyb3VuZC1jb2xvcjogI0VDRUNFQztcblxuICB3aWR0aDogMTAwJTtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG5cbn1cbnNwYW4jbXluZXN0aW1hdGUge1xuICBib3JkZXItYm90dG9tOiA0cHggc29saWQgIzBGM0M3MztcbiAgZm9udC1mYW1pbHk6ICdTZWdvZSBVSSBCb2xkJztcbn1cbi5tYW5nYW5hZ2UtbmVzdGltYXRlLWxvd2VyLXRhYi13cmFwcGVyLnJpZ2h0LWxpbmUge1xuICBib3JkZXItcmlnaHQ6IDFweCBzb2xpZCAjQTRBNEE0O1xufVxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjc2OHB4KXtcbiAgLm1hbmFnZS1uZXN0aW1hdGUtbG93ZXItdGFiIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgbWFyZ2luOiAwZW0gMGVtO1xufVxufVxuXG5cbi50b29sdGlwIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJvcmRlci1ib3R0b206IDFweCBkb3R0ZWQgYmxhY2s7XG59XG5cbi50b29sdGlwIC50b29sdGlwdGV4dCB7XG4gIHZpc2liaWxpdHk6IGhpZGRlbjtcbiAvKiAvLyB3aWR0aDogMTIwcHg7ICovXG4gIGJhY2tncm91bmQtY29sb3I6ICM1NTU7XG4gIGNvbG9yOiAjZmZmO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgcGFkZGluZzogNXB4IDVweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB6LWluZGV4OiAxO1xuICBib3R0b206IDEyNSU7XG4gIGxlZnQ6IDUwJTtcbiAgbWFyZ2luLWxlZnQ6IC02MHB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiBvcGFjaXR5IDAuM3M7XG59XG5cbi50b29sdGlwIC50b29sdGlwdGV4dDo6YWZ0ZXIge1xuICBjb250ZW50OiBcIlwiO1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRvcDogMTAwJTtcbiAgbGVmdDogNTAlO1xuICBtYXJnaW4tbGVmdDogLTVweDtcbiAgYm9yZGVyLXdpZHRoOiA1cHg7XG4gIGJvcmRlci1zdHlsZTogc29saWQ7XG4gIGJvcmRlci1jb2xvcjogIzU1NSB0cmFuc3BhcmVudCB0cmFuc3BhcmVudCB0cmFuc3BhcmVudDtcbn1cblxuLnRvb2x0aXA6aG92ZXIgLnRvb2x0aXB0ZXh0IHtcbiAgdmlzaWJpbGl0eTogdmlzaWJsZTtcbiAgb3BhY2l0eTogMTtcbn0iXX0= */";
+    __webpack_exports__["default"] = ".header-content-my-nestimate:hover\n{\n    cursor: pointer;\n}\n\n.no-property-Found {\n    height: 50vh;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: white;\n    font-size: 2em;\n    color: var(--DARK-BLUE-COLOR);\n  }\n\n.outputText {\n\n    text-transform: capitalize !important;\n}\n\n.seller-nestimate\n{        width: 50%;\n    height: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: normal;\n    padding: 0em 7em;\n}\n\n.blue-top-nestimate-border {\n  background-color: var(--DARK-BLUE-COLOR);\n  padding: 0.5em 22em;\n  padding-right: 0em !important;\n  display: flex !important;\n  justify-content: space-between !important;\n}\n\n.property-for {\n  padding-right: 4em;\n}\n\n@media screen and (max-width:768px)\n{\n  .mobile-top-padding\n  {\n    height: 1em;\n  }\n}\n\n.manage-nestimate-lower-tab {\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  margin: 0em 6em;\n\n}\n\n.manganage-nestimate-lower-tab-wrapper\n{\n  background-color: #ECECEC;\n\n  width: 100%;\n    text-align: center;\n\n}\n\nspan#mynestimate {\n  /* border-bottom: 4px solid #0F3C73; */\n  font-family: 'Segoe UI Bold';\n}\n\n.manganage-nestimate-lower-tab-wrapper.right-line {\n  border-right: 1px solid #A4A4A4;\n}\n\n@media screen and (max-width:768px){\n  .manage-nestimate-lower-tab {\n    display: flex;\n    justify-content: space-around;\n    align-items: center;\n    margin: 0em 0em;\n}\n}\n\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvTWVudS9teUxpc3RpbmdzL215TGlzdGluZy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztJQUVJLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osYUFBYTtJQUNiLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLGNBQWM7SUFDZCw2QkFBNkI7RUFDL0I7O0FBQ0E7O0lBRUUscUNBQXFDO0FBQ3pDOztBQUVBO1NBQ1MsVUFBVTtJQUNmLFlBQVk7SUFDWixhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsZ0JBQWdCO0FBQ3BCOztBQUNBO0VBQ0Usd0NBQXdDO0VBQ3hDLG1CQUFtQjtFQUNuQiw2QkFBNkI7RUFDN0Isd0JBQXdCO0VBQ3hCLHlDQUF5QztBQUMzQzs7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFHQTs7RUFFRTs7SUFFRSxXQUFXO0VBQ2I7QUFDRjs7QUFHQTtFQUNFLGFBQWE7RUFDYiw2QkFBNkI7RUFDN0IsbUJBQW1CO0VBQ25CLGVBQWU7O0FBRWpCOztBQUNBOztFQUVFLHlCQUF5Qjs7RUFFekIsV0FBVztJQUNULGtCQUFrQjs7QUFFdEI7O0FBQ0E7RUFDRSxzQ0FBc0M7RUFDdEMsNEJBQTRCO0FBQzlCOztBQUNBO0VBQ0UsK0JBQStCO0FBQ2pDOztBQUVBO0VBQ0U7SUFDRSxhQUFhO0lBQ2IsNkJBQTZCO0lBQzdCLG1CQUFtQjtJQUNuQixlQUFlO0FBQ25CO0FBQ0EiLCJmaWxlIjoic3JjL2FwcC9NZW51L215TGlzdGluZ3MvbXlMaXN0aW5nLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLWNvbnRlbnQtbXktbmVzdGltYXRlOmhvdmVyXG57XG4gICAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG4ubm8tcHJvcGVydHktRm91bmQge1xuICAgIGhlaWdodDogNTB2aDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG4gICAgZm9udC1zaXplOiAyZW07XG4gICAgY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIH1cbiAgLm91dHB1dFRleHQge1xuXG4gICAgdGV4dC10cmFuc2Zvcm06IGNhcGl0YWxpemUgIWltcG9ydGFudDtcbn1cblxuLnNlbGxlci1uZXN0aW1hdGVcbnsgICAgICAgIHdpZHRoOiA1MCU7XG4gICAgaGVpZ2h0OiAxMDAlO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICBhbGlnbi1pdGVtczogbm9ybWFsO1xuICAgIHBhZGRpbmc6IDBlbSA3ZW07XG59XG4uYmx1ZS10b3AtbmVzdGltYXRlLWJvcmRlciB7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLURBUkstQkxVRS1DT0xPUik7XG4gIHBhZGRpbmc6IDAuNWVtIDIyZW07XG4gIHBhZGRpbmctcmlnaHQ6IDBlbSAhaW1wb3J0YW50O1xuICBkaXNwbGF5OiBmbGV4ICFpbXBvcnRhbnQ7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbiAhaW1wb3J0YW50O1xufVxuLnByb3BlcnR5LWZvciB7XG4gIHBhZGRpbmctcmlnaHQ6IDRlbTtcbn1cblxuXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOjc2OHB4KVxue1xuICAubW9iaWxlLXRvcC1wYWRkaW5nXG4gIHtcbiAgICBoZWlnaHQ6IDFlbTtcbiAgfVxufVxuXG5cbi5tYW5hZ2UtbmVzdGltYXRlLWxvd2VyLXRhYiB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBtYXJnaW46IDBlbSA2ZW07XG5cbn1cbi5tYW5nYW5hZ2UtbmVzdGltYXRlLWxvd2VyLXRhYi13cmFwcGVyXG57XG4gIGJhY2tncm91bmQtY29sb3I6ICNFQ0VDRUM7XG5cbiAgd2lkdGg6IDEwMCU7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuXG59XG5zcGFuI215bmVzdGltYXRlIHtcbiAgLyogYm9yZGVyLWJvdHRvbTogNHB4IHNvbGlkICMwRjNDNzM7ICovXG4gIGZvbnQtZmFtaWx5OiAnU2Vnb2UgVUkgQm9sZCc7XG59XG4ubWFuZ2FuYWdlLW5lc3RpbWF0ZS1sb3dlci10YWItd3JhcHBlci5yaWdodC1saW5lIHtcbiAgYm9yZGVyLXJpZ2h0OiAxcHggc29saWQgI0E0QTRBNDtcbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDo3NjhweCl7XG4gIC5tYW5hZ2UtbmVzdGltYXRlLWxvd2VyLXRhYiB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIG1hcmdpbjogMGVtIDBlbTtcbn1cbn1cblxuXG4iXX0= */";
     /***/
   },
 
@@ -22612,9 +22770,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_router__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! @angular/router */
     "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
+    var _cms_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! ../../cms.service */
+    "./src/app/cms.service.ts");
 
     var MyListingComponent = /*#__PURE__*/function () {
-      function MyListingComponent(myrequirement_service, dialog, HttpService, _Activatedroute, _router) {
+      function MyListingComponent(myrequirement_service, dialog, HttpService, _Activatedroute, _router, CMSSERVICE) {
         _classCallCheck(this, MyListingComponent);
 
         this.myrequirement_service = myrequirement_service;
@@ -22622,6 +22786,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.HttpService = HttpService;
         this._Activatedroute = _Activatedroute;
         this._router = _router;
+        this.CMSSERVICE = CMSSERVICE;
         this.propertyDetails = [];
         this.propertyRequirementDetails = [];
         this.newUser = false;
@@ -22642,13 +22807,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this190 = this;
+          var _this191 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this190.type = params.get("type");
-            _this190.tabdrop = params.get("tabdrop");
+            _this191.type = params.get("type");
+            _this191.tabdrop = params.get("tabdrop");
+          });
+          this.CMSSERVICE.getToolTip().then(function (ref) {
+            _this191.nestimateTool = ref.data().MyNestimate;
+            _this191.expressTool = ref.data().ExpressedInterest;
           });
           this.getallitems();
           this.CheckUrl();
@@ -22671,7 +22840,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this191 = this;
+          var _this192 = this;
 
           this.propertyDetails = [];
           this.propertyRequirementDetails = [];
@@ -22679,34 +22848,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this191.propertyRequirementDetails.push({
+              _this192.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
 
-              _this191.isLoading = false;
+              _this192.isLoading = false;
             }); //Seller Property Fetch Details
 
-            _this191.myrequirement_service.getSellerProperties(_this191.uid).then(function (res) {
+            _this192.myrequirement_service.getSellerProperties(_this192.uid).then(function (res) {
               res.forEach(function (element) {
-                _this191.propertyDetails.push({
+                _this192.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
 
-                _this191.isLoading = false;
+                _this192.isLoading = false;
               });
 
-              if (_this191.type == "myNestimate" && _this191.tabdrop == "tabdrop") {
-                if (_this191.propertyRequirementDetails.length > _this191.propertyDetails.length) {
-                  _this191.seekerNestimate = true;
-                  _this191.nestimate = "Seeker Nestimate";
+              if (_this192.type == "myNestimate" && _this192.tabdrop == "tabdrop") {
+                if (_this192.propertyRequirementDetails.length > _this192.propertyDetails.length) {
+                  _this192.seekerNestimate = true;
+                  _this192.nestimate = "Seeker Nestimate";
                 } else {
-                  _this191.ownerNestimate = true;
-                  _this191.nestimate = "Owner Nestimate";
+                  _this192.ownerNestimate = true;
+                  _this192.nestimate = "Owner Nestimate";
                 }
 
-                _this191.isLoading = false;
+                _this192.isLoading = false;
               }
             });
           });
@@ -23027,6 +23196,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["ActivatedRoute"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_6__["Router"]
+      }, {
+        type: _cms_service__WEBPACK_IMPORTED_MODULE_7__["CMSSERVICE"]
       }];
     };
 
@@ -23371,7 +23542,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllListing",
         value: function getAllListing() {
-          var _this192 = this;
+          var _this193 = this;
 
           this.recentItems = [];
           this.sellerrecentItems = [];
@@ -23379,37 +23550,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MyListingService.getRecentlyItems(this.uid).then(function (data) {
             data.forEach(function (element) {
               // console.log(element.data().time * 1000)
-              _this192.recentItems.push({
+              _this193.recentItems.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              _this192.isLoading = false;
+              _this193.isLoading = false;
             });
 
-            _this192.MyListingService.getSellerRecentlyItems(_this192.uid).then(function (data) {
+            _this193.MyListingService.getSellerRecentlyItems(_this193.uid).then(function (data) {
               data.forEach(function (element) {
-                _this192.sellerrecentItems.push({
+                _this193.sellerrecentItems.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                _this192.isLoading = false;
+                _this193.isLoading = false;
               });
 
-              if (_this192.recentItems.length > _this192.sellerrecentItems.length) {
-                _this192.sellerProperty = true;
-                _this192.buyerProperty = false;
-                _this192.nestimate = "Seeker Nestimate";
+              if (_this193.recentItems.length > _this193.sellerrecentItems.length) {
+                _this193.sellerProperty = true;
+                _this193.buyerProperty = false;
+                _this193.nestimate = "Seeker Nestimate";
               } else {
-                _this192.buyerProperty = true;
-                _this192.sellerProperty = false;
-                _this192.nestimate = "Owner Nestimate";
+                _this193.buyerProperty = true;
+                _this193.sellerProperty = false;
+                _this193.nestimate = "Owner Nestimate";
               }
 
-              _this192.isLoading = false;
-              _this192.startPage = 0;
-              _this192.paginationLimit = 6;
+              _this193.isLoading = false;
+              _this193.startPage = 0;
+              _this193.paginationLimit = 6;
             });
           });
         }
@@ -23447,19 +23618,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(docid) {
-          var _this193 = this;
+          var _this194 = this;
 
           this.MyListingService.recentlySellerDelete(this.uid, docid).then(function (data) {
-            _this193.getAllListing();
+            _this194.getAllListing();
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this194 = this;
+          var _this195 = this;
 
           this.MyListingService.recentlyBuyerDelete(this.uid, docid).then(function (data) {
-            _this194.getAllListing();
+            _this195.getAllListing();
           });
         } //For Seller MatchListing
 
@@ -23747,7 +23918,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AwaitingresponseComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this195 = this;
+          var _this196 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -23759,7 +23930,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == "pending") {
-                _this195.sellerProperty.push({
+                _this196.sellerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
@@ -23770,24 +23941,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == "pending") {
-                _this195.buyerProperty.push({
+                _this196.buyerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               }
             });
-            _this195.isLoading = false;
+            _this196.isLoading = false;
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this196 = this;
+          var _this197 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this196.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this196.distinctExpressedUid.push(item.data().propertyId);
+              if (_this197.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this197.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -23979,11 +24150,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllSeller",
         value: function getAllSeller() {
-          var _this197 = this;
+          var _this198 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this197.PropertyCondition = res.data().PropertyCondition;
-            _this197.allImages = res.data().Images;
+            _this198.PropertyCondition = res.data().PropertyCondition;
+            _this198.allImages = res.data().Images;
           }); //this.allImages = res.data().Images
         }
       }, {
@@ -24133,7 +24304,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this198 = this;
+          var _this199 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -24151,25 +24322,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var details = JSON.parse(localStorage.getItem("buyermatchespropertydetail"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this198.expressed = params.get("expressed");
-            _this198.propid = params.get("propId");
+            _this199.expressed = params.get("expressed");
+            _this199.propid = params.get("propId");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.CMSSERVICE.getBlueNotification(1).then(function (data) {
-            _this198.notificationContent = data.data().BuyerActionNeeded;
+            _this199.notificationContent = data.data().BuyerActionNeeded;
           });
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this199 = this;
+          var _this200 = this;
 
           this["return"] = this.MatchesBuyerService.ExpressInterest(this.uid, this.propid).then(function (data) {
             if (data == true) {
-              _this199.createSellerNotification();
+              _this200.createSellerNotification();
 
-              _this199.backClicked();
+              _this200.backClicked();
             }
           });
         }
@@ -24196,7 +24367,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createOther",
         value: function createOther() {
-          var _this200 = this;
+          var _this201 = this;
 
           this.matchesSeller = {
             BuyerDetails: this.buyerDetails,
@@ -24209,7 +24380,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           };
           this["return"] = this.MatchesBuyerService.matchesBuyerCreate(this.SellerUserId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this200.addToExpressCollection();
+              _this201.addToExpressCollection();
             }
           });
         }
@@ -24249,10 +24420,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this201 = this;
+          var _this202 = this;
 
           this.MatchesBuyerService.getBuyer(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this201.buyerDetails = res.data();
+            _this202.buyerDetails = res.data();
           });
         }
       }, {
@@ -24857,27 +25028,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this202 = this;
+          var _this203 = this;
 
           this.MatchesSellerPendingService.getBuyerRequirement(this.userDetails.detail.BuyerUserId, this.userDetails.detail.BuyerPropertyId).then(function (res) {
-            _this202.buyingPosition = res.data().Position;
-            _this202.buyerFinancialPosition = res.data().FinancialPosition;
-            _this202.BuyerPropertyType = res.data().PropertyType;
-            _this202.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this202.BuyerRoommin = res.data().Roommin;
-            _this202.BuyerRoomsmax = res.data().Roomsmax;
-            _this202.username = res.data().username;
-            _this202.usertitle = res.data().usertitle;
-            _this202.buyerPropertyFor = res.data().PropertyFor;
-            _this202.PropertyType = res.data().PropertyType;
-            _this202.Ownership = res.data().Ownership;
-            _this202.LookingStreetname = res.data().LookingStreetname;
-            _this202.Conditions = res.data().Conditions;
-            _this202.Maxbathroom = res.data().Maxbathroom;
-            _this202.Maxreception = res.data().Maxreception;
-            _this202.MinAmount = res.data().MinAmount;
-            _this202.MaxAmount = res.data().MaxAmount;
-            _this202.Ownership = res.data().Ownership;
+            _this203.buyingPosition = res.data().Position;
+            _this203.buyerFinancialPosition = res.data().FinancialPosition;
+            _this203.BuyerPropertyType = res.data().PropertyType;
+            _this203.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this203.BuyerRoommin = res.data().Roommin;
+            _this203.BuyerRoomsmax = res.data().Roomsmax;
+            _this203.username = res.data().username;
+            _this203.usertitle = res.data().usertitle;
+            _this203.buyerPropertyFor = res.data().PropertyFor;
+            _this203.PropertyType = res.data().PropertyType;
+            _this203.Ownership = res.data().Ownership;
+            _this203.LookingStreetname = res.data().LookingStreetname;
+            _this203.Conditions = res.data().Conditions;
+            _this203.Maxbathroom = res.data().Maxbathroom;
+            _this203.Maxreception = res.data().Maxreception;
+            _this203.MinAmount = res.data().MinAmount;
+            _this203.MaxAmount = res.data().MaxAmount;
+            _this203.Ownership = res.data().Ownership;
           });
         }
       }, {
@@ -25020,7 +25191,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this203 = this;
+          var _this204 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -25032,21 +25203,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus != "pending") {
-                _this203.sellerConfirmed.push({
+                _this204.sellerConfirmed.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               }
             });
-            _this203.isLoading = false;
+            _this204.isLoading = false;
 
-            _this203.getExpressedListingIds();
+            _this204.getExpressedListingIds();
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus != "pending") {
-                _this203.buyerProperty.push({
+                _this204.buyerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
@@ -25058,12 +25229,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this204 = this;
+          var _this205 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this204.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this204.distinctExpressedUid.push(item.data().propertyId);
+              if (_this205.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this205.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -25462,7 +25633,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this205 = this;
+          var _this206 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -25480,7 +25651,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this205.propertyId = params.get("propertyId");
+            _this206.propertyId = params.get("propertyId");
           });
         }
       }, {
@@ -25534,20 +25705,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "agentDetailEntry",
         value: function agentDetailEntry(agentuid) {
-          var _this206 = this;
+          var _this207 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this206.sellerDetails = rest.data();
+            _this207.sellerDetails = rest.data();
 
-            _this206.AgentService.getBuyerrDetails(_this206.BuyerUserId, _this206.BuyerPropertyId).then(function (rest) {
-              _this206.BuyerDetails = rest.data();
-              _this206.details = {
-                SellerDetails: _this206.sellerDetails,
-                BuyerDetails: _this206.BuyerDetails,
+            _this207.AgentService.getBuyerrDetails(_this207.BuyerUserId, _this207.BuyerPropertyId).then(function (rest) {
+              _this207.BuyerDetails = rest.data();
+              _this207.details = {
+                SellerDetails: _this207.sellerDetails,
+                BuyerDetails: _this207.BuyerDetails,
                 UserId: agentuid,
                 Archived: false
               };
-              _this206["return"] = _this206.AgentService.matchesAgentSellerCreate(agentuid, _this206.details).then(function (data) {});
+              _this207["return"] = _this207.AgentService.matchesAgentSellerCreate(agentuid, _this207.details).then(function (data) {});
             });
           });
           this.BuyerDetails = {
@@ -25577,7 +25748,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDetailUser",
         value: function getDetailUser() {
-          var _this207 = this;
+          var _this208 = this;
 
           var details = JSON.parse(localStorage.getItem("matchesSeller"));
           this.userDetail = details.detail;
@@ -25592,13 +25763,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             ref.forEach(function (elements) {
               // this.agents.push({ Detail: elements.data(), uid: elements.data().uid })
               // this.testagents.push(elements.data().uid)
-              if (elements.data().postcode.substring(0, 3) == _this207.Lookingpostcode.substring(0, 3)) {
-                _this207.agents.push({
+              if (elements.data().postcode.substring(0, 3) == _this208.Lookingpostcode.substring(0, 3)) {
+                _this208.agents.push({
                   Detail: elements.data(),
                   uid: elements.data().uid
                 });
 
-                _this207.testagents.push(elements.data().uid);
+                _this208.testagents.push(elements.data().uid);
               }
             });
           });
@@ -25606,19 +25777,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this208 = this;
+          var _this209 = this;
 
           this.AgentService.getDellerDetails(this.SellerUSerId, this.SellerPropertyId).then(function (rest) {
-            _this208.sellerDetails = rest.data();
+            _this209.sellerDetails = rest.data();
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this209 = this;
+          var _this210 = this;
 
           this.AgentService.getBuyerrDetails(this.BuyerUserId, this.BuyerPropertyId).then(function (rest) {
-            _this209.BuyerDetails = rest.data();
+            _this210.BuyerDetails = rest.data();
           });
         }
       }]);
@@ -26011,7 +26182,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this210 = this;
+          var _this211 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -26029,12 +26200,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var details = JSON.parse(localStorage.getItem("matchesSeller"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this210.expressed = params.get("expressed");
-            _this210.propertyId = params.get("propertyId");
+            _this211.expressed = params.get("expressed");
+            _this211.propertyId = params.get("propertyId");
           });
           this.getBuyerDetails();
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (element) {
-            _this210.notificationContent = element.data().MynestimateBuyerDetails;
+            _this211.notificationContent = element.data().MynestimateBuyerDetails;
           });
         }
       }, {
@@ -26357,32 +26528,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this211 = this;
+          var _this212 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this211.uid) {
-                _this211.user.Name = element.data().Name;
-                _this211.user.Email = element.data().email;
+              if (element.data().uid == _this212.uid) {
+                _this212.user.Name = element.data().Name;
+                _this212.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this211.user.DOB = element.data().DOB.toDate();
+                  _this212.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this211.user.Phone = element.data().Phone;
+                  _this212.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this211.user.Currentaddress = element.data().Currentaddress;
+                  _this212.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this211.user.prefrence = element.data().prefrence;
+                  _this212.user.prefrence = element.data().prefrence;
                 } else {
-                  _this211.user.prefrence = "Not Selected";
+                  _this212.user.prefrence = "Not Selected";
                 }
               }
             });
@@ -26680,7 +26851,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this212 = this;
+          var _this213 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -26688,24 +26859,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getSeekerPersonalDetailForm();
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this212.uid) {
-                _this212.user.Name = element.data().Name;
-                _this212.user.Email = element.data().email;
+              if (element.data().uid == _this213.uid) {
+                _this213.user.Name = element.data().Name;
+                _this213.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this212.user.DOB = element.data().DOB.toDate();
+                  _this213.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this212.user.Phone = element.data().Phone;
+                  _this213.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this212.user.Currentaddress = element.data().Currentaddress;
+                  _this213.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this212.user.prefrence = element.data().prefrence;
+                  _this213.user.prefrence = element.data().prefrence;
                 }
               }
             });
@@ -26822,14 +26993,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
-          var _this213 = this;
+          var _this214 = this;
 
           this.isLoading = true;
           this["return"] = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this213.isLoading = false;
-            _this213.edit = false;
+            _this214.isLoading = false;
+            _this214.edit = false;
 
-            _this213.alert();
+            _this214.alert();
           });
         }
       }, {
@@ -26859,28 +27030,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this214 = this;
+          var _this215 = this;
 
           this.CMSSERVICE.getMyDetailError(this.MyDetail).then(function (element) {
-            _this214.FullName = element.data().FullName;
-            _this214.Emails = element.data().Email;
-            _this214.Phones = element.data().Phone;
-            _this214.DOBs = element.data().DOB;
-            _this214.ValidateDob = element.data().ValidateDob;
-            _this214.Address = element.data().Address;
-            _this214.Prefrence = element.data().Prefrence;
-            _this214.isLoading = false;
+            _this215.FullName = element.data().FullName;
+            _this215.Emails = element.data().Email;
+            _this215.Phones = element.data().Phone;
+            _this215.DOBs = element.data().DOB;
+            _this215.ValidateDob = element.data().ValidateDob;
+            _this215.Address = element.data().Address;
+            _this215.Prefrence = element.data().Prefrence;
+            _this215.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this215 = this;
+          var _this216 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.PersonalDetail).then(function (element) {
-            _this215.PhoneValidation = element.data().PhoneValidation;
-            _this215.PhoneLength = element.data().PhoneLength;
-            _this215.isLoading = false;
+            _this216.PhoneValidation = element.data().PhoneValidation;
+            _this216.PhoneLength = element.data().PhoneLength;
+            _this216.isLoading = false;
           });
         }
       }, {
@@ -27162,7 +27333,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this216 = this;
+          var _this217 = this;
 
           this.LoggedIn();
           this.origin = window.location.origin + "/#/";
@@ -27182,14 +27353,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this216.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this216.userData)); //Notification Show
+              _this217.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this217.userData)); //Notification Show
 
-              _this216.NavigationService.Notification(_this216.uid).subscribe(function (notification) {
+              _this217.NavigationService.Notification(_this217.uid).subscribe(function (notification) {
                 notification.forEach(function (element) {
-                  _this216.bellShow = true;
-                  _this216.belliconone = false;
-                  _this216.bellicontwo = false;
+                  _this217.bellShow = true;
+                  _this217.belliconone = false;
+                  _this217.bellicontwo = false;
                 });
               }); //this.LoggedIn();
 
@@ -27197,28 +27368,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this216.LoggedOut();
+              _this217.LoggedOut();
             }
           });
           this.getNotificationContent();
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this216.topLine = element.data().topLine;
-              _this216.secondLine = element.data().SecondLine.replace(/<(.|\n)*?>/, '').replace(/<\/(.|\n)*?>/, '');
+              _this217.topLine = element.data().topLine;
+              _this217.secondLine = element.data().SecondLine.replace(/<(.|\n)*?>/, '').replace(/<\/(.|\n)*?>/, '');
             });
           });
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this217 = this;
+          var _this218 = this;
 
           var Admin = JSON.parse(localStorage.getItem("user"));
 
           if (Admin != null) {
             this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
               if (element.data().UserType == "Admin") {
-                _this217.LoggedOut();
+                _this218.LoggedOut();
               }
             });
           }
@@ -27234,46 +27405,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this218 = this;
+          var _this219 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this218.sellerProperty.push(element.data());
+                _this219.sellerProperty.push(element.data());
               }
             });
-            _this218.noSellerOfMatche = _this218.sellerProperty.length;
-            _this218.matches = _this218.buyerProperty.length + _this218.sellerProperty.length;
+            _this219.noSellerOfMatche = _this219.sellerProperty.length;
+            _this219.matches = _this219.buyerProperty.length + _this219.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this218.buyerProperty.push(element.data());
+              _this219.buyerProperty.push(element.data());
             });
-            _this218.noBuyerMatches = _this218.buyerProperty.length;
-            _this218.matches = _this218.buyerProperty.length + _this218.sellerProperty.length;
+            _this219.noBuyerMatches = _this219.buyerProperty.length;
+            _this219.matches = _this219.buyerProperty.length + _this219.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this219 = this;
+          var _this220 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this219.bellicon.push(item.data());
+              _this220.bellicon.push(item.data());
 
-              if (_this219.bellicon.length > 0) {
-                _this219.belliconone = false;
+              if (_this220.bellicon.length > 0) {
+                _this220.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this219.confirmInterest.push(item.data());
+                _this220.confirmInterest.push(item.data());
 
-                _this219.notifications = _this219.confirmInterest.length;
+                _this220.notifications = _this220.confirmInterest.length;
               } else {
-                _this219.notifications = 0;
+                _this220.notifications = 0;
               }
             });
           });
@@ -27349,14 +27520,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this220 = this;
+          var _this221 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this220.confirmInterests.push({
+                _this221.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -27375,20 +27546,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "initProfile",
         value: function initProfile() {
-          var _this221 = this;
+          var _this222 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
           if (this.user != null) {
             this.NavigationService.getAllUser(this.user.uid).then(function (element) {
               if (element.data().UserType == "Agent") {
-                _this221.agentCustomer = true;
+                _this222.agentCustomer = true;
               } else {
-                _this221.agentCustomer = false;
-                _this221.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
+                _this222.agentCustomer = false;
+                _this222.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
 
-                if (_this221.userName.length == 0) {
-                  _this221.userName = element.data().Name;
+                if (_this222.userName.length == 0) {
+                  _this222.userName = element.data().Name;
                 }
               }
             });
@@ -27400,7 +27571,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDocid",
         value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
-          var _this222 = this;
+          var _this223 = this;
 
           this.notificationoverlay = false;
           this.getNotification();
@@ -27415,8 +27586,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.Notification.Lastseen = this.now;
           this["return"] = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(function (data) {
-            _this222._router.navigate(["/myListing/myNestimate/action"]).then(function () {
-              _this222.notificationoverlay = false;
+            _this223._router.navigate(["/myListing/myNestimate/action"]).then(function () {
+              _this223.notificationoverlay = false;
               window.location.reload();
             });
           });
@@ -27424,19 +27595,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this223 = this;
+          var _this224 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               if (item.data().Lastseen == null) {
-                _this223.confirmInterests.push({
+                _this224.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
               } else {
-                _this223.confirmNotitfication.push({
+                _this224.confirmNotitfication.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -27447,7 +27618,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this224 = this;
+          var _this225 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -27456,25 +27627,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
               if (element.data().Lastseen == null) {
-                _this224.confirmInterests.push({
+                _this225.confirmInterests.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this224.confirmInterests.length > 0) {
-                  _this224.notificationoverlay = true;
-                  _this224.bellicontwo = true;
+                if (_this225.confirmInterests.length > 0) {
+                  _this225.notificationoverlay = true;
+                  _this225.bellicontwo = true;
                 }
               } else {
-                _this224.confirmNotitfication.push({
+                _this225.confirmNotitfication.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this224.confirmNotitfication.length > 0) {
-                  _this224.outside = true;
-                  _this224.notificationoverlay = true;
-                  _this224.bellicontwo = true;
+                if (_this225.confirmNotitfication.length > 0) {
+                  _this225.outside = true;
+                  _this225.notificationoverlay = true;
+                  _this225.bellicontwo = true;
                 }
               }
             });
@@ -27483,7 +27654,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this225 = this;
+          var _this226 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -27491,8 +27662,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this225.uid) {
-                _this225.confirmInterests = null;
+              if (element.UserId == _this226.uid) {
+                _this226.confirmInterests = null;
               }
             });
           });
@@ -27544,17 +27715,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this226 = this;
+          var _this227 = this;
 
           this.isLoading = false;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this226.isLoading = false;
+            _this227.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this227 = this;
+          var _this228 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -27565,24 +27736,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this227.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                  var dialogRef = _this228.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this227.UserSignIn
+                      message: _this228.UserSignIn
                     }
                   });
 
-                  _this227.isLoading = false;
+                  _this228.isLoading = false;
                 } else {
-                  _this227.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
+                  _this228.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
                   //   console.log(data)
                   //   this.isLoading = false;
                   // });
 
                 }
               } else {
-                _this227.isLoading = false;
+                _this228.isLoading = false;
 
-                var _dialogRef154 = _this227.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var _dialogRef154 = _this228.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -27714,10 +27885,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this228 = this;
+          var _this229 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this228.notificationContent = res.data().SingupFromMenu;
+            _this229.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
@@ -27746,10 +27917,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "leads",
         value: function leads() {
-          var _this229 = this;
+          var _this230 = this;
 
           this._router.navigate(['/Agenthome/leads']).then(function () {
-            _this229.Itemmenu();
+            _this230.Itemmenu();
 
             window.location.reload();
           });
@@ -27757,10 +27928,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Profile",
         value: function Profile() {
-          var _this230 = this;
+          var _this231 = this;
 
           this._router.navigate(['/Agenthome/profile']).then(function () {
-            _this230.Itemmenu();
+            _this231.Itemmenu();
 
             window.location.reload();
           });
@@ -27768,10 +27939,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Archieve",
         value: function Archieve() {
-          var _this231 = this;
+          var _this232 = this;
 
           this._router.navigate(['/Agenthome/archieve']).then(function () {
-            _this231.Itemmenu();
+            _this232.Itemmenu();
 
             window.location.reload();
           });
@@ -27779,10 +27950,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "manageMyNestimate",
         value: function manageMyNestimate() {
-          var _this232 = this;
+          var _this233 = this;
 
           this._router.navigate(['/myListing/myNestimate/tabdrop']).then(function () {
-            _this232.Itemmenu();
+            _this233.Itemmenu();
 
             window.location.reload();
           });
@@ -27790,10 +27961,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "profileNestimate",
         value: function profileNestimate() {
-          var _this233 = this;
+          var _this234 = this;
 
           this._router.navigate(['/myListing/profile/tabdrop']).then(function () {
-            _this233.Itemmenu();
+            _this234.Itemmenu();
 
             window.location.reload();
           });
@@ -27801,10 +27972,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "favorate",
         value: function favorate() {
-          var _this234 = this;
+          var _this235 = this;
 
           this._router.navigate(['/myListing/fav/tabdrop']).then(function () {
-            _this234.Itemmenu();
+            _this235.Itemmenu();
 
             window.location.reload();
           });
@@ -27812,10 +27983,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "recently",
         value: function recently() {
-          var _this235 = this;
+          var _this236 = this;
 
           this._router.navigate(['/myListing/recent/tabdrop']).then(function () {
-            _this235.Itemmenu();
+            _this236.Itemmenu();
 
             window.location.reload();
           });
@@ -27823,10 +27994,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "actionNeeded",
         value: function actionNeeded(id) {
-          var _this236 = this;
+          var _this237 = this;
 
           this._router.navigate(["/myListing/myNestimate/action/id"]).then(function () {
-            _this236.notificationoverlay = false;
+            _this237.notificationoverlay = false;
             window.location.reload();
           });
         }
@@ -27850,23 +28021,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this237 = this;
+          var _this238 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this237.user.Lastseen = _this237.now;
-            _this237.isLoading = false;
+            _this238.user.Lastseen = _this238.now;
+            _this238.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this238 = this;
+          var _this239 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this238.isLoading = false;
+            _this239.isLoading = false;
           });
         }
       }, {
@@ -27893,13 +28064,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this239 = this;
+          var _this240 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this239.AgentSignIn = element.data().AgentSignIn;
-            _this239.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
+            _this240.AgentSignIn = element.data().AgentSignIn;
+            _this240.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
 
-            _this239.isLoading = false;
+            _this240.isLoading = false;
           });
         }
       }, {
@@ -28157,19 +28328,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this240 = this;
+          var _this241 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this240.confirmInterest.push({
+              _this241.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this240.confirmInterest);
+            console.log(_this241.confirmInterest);
           });
         }
       }, {
@@ -28587,13 +28758,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this241 = this;
+          var _this242 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this241.facebook = element.data().Facebook;
-              _this241.Instagram = element.data().Instragram;
-              _this241.Twitter = element.data().Twitter;
+              _this242.facebook = element.data().Facebook;
+              _this242.Instagram = element.data().Instragram;
+              _this242.Twitter = element.data().Twitter;
             });
           });
         }
@@ -29871,14 +30042,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this242 = this;
+          var _this243 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this242.idToken = params['id_token'];
-            _this242.accessToken = params['access_token'];
+            _this243.idToken = params['id_token'];
+            _this243.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this242._router.navigate(['/']).then(function () {
+            _this243._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -30118,11 +30289,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this243 = this;
+          var _this244 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this243.privacyPolicy = element.data().Privacy;
+              _this244.privacyPolicy = element.data().Privacy;
             });
           });
         }
@@ -30760,7 +30931,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this244 = this;
+          var _this245 = this;
 
           this.getOtherForm();
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -30771,36 +30942,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.userLogged();
             this.items();
             this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-              _this244.type = params.get("type");
+              _this245.type = params.get("type");
             });
           }
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this245 = this;
+          var _this246 = this;
 
           this.CMSSERVICE.getuserType(email).then(function (element) {
             if (element.data() != undefined) {
               if (element.data().UserType != "Agent") {
-                var dialogRef = _this245.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var dialogRef = _this246.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
-                    message: _this245.AgentSignIn
+                    message: _this246.AgentSignIn
                   }
                 });
               } else {
-                _this245.authService.SignIn(email, pass).then(function (data) {
-                  _this245.items();
+                _this246.authService.SignIn(email, pass).then(function (data) {
+                  _this246.items();
 
-                  _this245.userLogged();
+                  _this246.userLogged();
 
                   window.location.reload();
                 });
               }
             } else {
-              _this245.isLoading = false;
+              _this246.isLoading = false;
 
-              var _dialogRef155 = _this245.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+              var _dialogRef155 = _this246.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                 data: {
                   message: "User Does not exist"
                 }
@@ -30829,19 +31000,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this246 = this;
+          var _this247 = this;
 
           this.BuyerDetail = [];
           this.archieveUser = [];
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
               if (element.data().Archived == false) {
-                _this246.BuyerDetail.push({
+                _this247.BuyerDetail.push({
                   Detail: element.data(),
                   id: element.id
                 });
               } else {
-                _this246.archieveUser.push({
+                _this247.archieveUser.push({
                   Detail: element.data(),
                   id: element.id
                 });
@@ -30852,43 +31023,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this247 = this;
+          var _this248 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this247.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this247.userData));
+              _this248.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this248.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this247.loggedIn = true;
+              _this248.loggedIn = true;
 
-              _this247.agentItem();
+              _this248.agentItem();
 
-              _this247.checkUrl();
+              _this248.checkUrl();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this247.loggedIn = false;
+              _this248.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this248 = this;
+          var _this249 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this248.Companyname = element.data().company;
-              _this248.Address = element.data().address;
-              _this248.Postcode = element.data().postcode;
-              _this248.Phonenumber = element.data().phone;
-              _this248.Jobtitle = element.data().jobtitle;
-              _this248.SinglePercentage = element.data().solefees;
-              _this248.Multipercentage = element.data().multiplefees;
-              _this248.Image = element.data().image;
-              _this248.Fullname = element.data().fullname;
-              _this248.PropertyId = element.id;
-              _this248.UserId = _this248.user.uid;
+              _this249.Companyname = element.data().company;
+              _this249.Address = element.data().address;
+              _this249.Postcode = element.data().postcode;
+              _this249.Phonenumber = element.data().phone;
+              _this249.Jobtitle = element.data().jobtitle;
+              _this249.SinglePercentage = element.data().solefees;
+              _this249.Multipercentage = element.data().multiplefees;
+              _this249.Image = element.data().image;
+              _this249.Fullname = element.data().fullname;
+              _this249.PropertyId = element.id;
+              _this249.UserId = _this249.user.uid;
             });
           });
         }
@@ -30959,30 +31130,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "update",
         value: function update(docid, property) {
-          var _this249 = this;
-
-          property.Archived = true;
-          this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this249.items();
-          });
-        }
-      }, {
-        key: "restore",
-        value: function restore(docid, property) {
           var _this250 = this;
 
-          property.Archived = false;
+          property.Archived = true;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
             _this250.items();
           });
         }
       }, {
-        key: "delete",
-        value: function _delete(docid) {
+        key: "restore",
+        value: function restore(docid, property) {
           var _this251 = this;
 
-          this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
+          property.Archived = false;
+          this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
             _this251.items();
+          });
+        }
+      }, {
+        key: "delete",
+        value: function _delete(docid) {
+          var _this252 = this;
+
+          this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
+            _this252.items();
           });
         }
       }, {
@@ -31024,13 +31195,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this252 = this;
+          var _this253 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this252.AgentSignIn = element.data().AgentSignIn;
-            _this252.UserSignIn = element.data().UserSignIn;
-            _this252.WrongPassword = element.data().WrongPassword;
-            _this252.isLoading = false;
+            _this253.AgentSignIn = element.data().AgentSignIn;
+            _this253.UserSignIn = element.data().UserSignIn;
+            _this253.WrongPassword = element.data().WrongPassword;
+            _this253.isLoading = false;
           });
         }
       }]);
@@ -31426,7 +31597,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this253 = this;
+          var _this254 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -31435,10 +31606,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this253.id = params.get("id");
+            _this254.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this253.agents = data;
+            _this254.agents = data;
           });
           this.getAgentDetails();
           this.getAgentForm();
@@ -31446,7 +31617,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage, office) {
-          var _this254 = this;
+          var _this255 = this;
 
           if (this.agents.officephone != null || this.agents.phone != null) {
             var Office = parseInt(this.agents.officephone);
@@ -31550,25 +31721,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           } else {
             this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-              var dialogRef = _this254.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+              var dialogRef = _this255.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
                 data: {
                   message: "Profile Updated"
                 }
               });
 
-              _this254.edit = false;
+              _this255.edit = false;
             });
           }
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this255 = this;
+          var _this256 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this255.agents = element.data();
-              _this255.id = element.id;
+              _this256.agents = element.data();
+              _this256.id = element.id;
             });
           });
         }
@@ -31585,32 +31756,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this256 = this;
+          var _this257 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this256.FullName = element.data().FullName;
-            _this256.CompanyName = element.data().CompanyName;
-            _this256.Postcode = element.data().Postcode;
-            _this256.Address = element.data().Address;
-            _this256.JobTitle = element.data().JobTitle;
-            _this256.EmailAddress = element.data().EmailAddress;
-            _this256.emailvalidation = element.data().emailvalidation;
-            _this256.Password = element.data().Password;
-            _this256.officephone = element.data().officephone;
-            _this256.officephonevalidation = element.data().officephonevalidation;
-            _this256.officephonelength = element.data().officephonelength;
-            _this256.mobile = element.data().mobile;
-            _this256.mobilevalidity = element.data().mobilevalidity;
-            _this256.mobilelength = element.data().mobilelength;
-            _this256.solefees = element.data().solefees;
-            _this256.solefeesmore = element.data().solefeesmore;
-            _this256.solefeesless = element.data().solefeesless;
-            _this256.multiplefees = element.data().multiplefees;
-            _this256.multiplefeesmore = element.data().multiplefeesmore;
-            _this256.multiplefeesless = element.data().multiplefeesless;
-            _this256.Image = element.data().Image;
-            _this256.Imagesize = element.data().Imagesize;
-            _this256.isLoading = false;
+            _this257.FullName = element.data().FullName;
+            _this257.CompanyName = element.data().CompanyName;
+            _this257.Postcode = element.data().Postcode;
+            _this257.Address = element.data().Address;
+            _this257.JobTitle = element.data().JobTitle;
+            _this257.EmailAddress = element.data().EmailAddress;
+            _this257.emailvalidation = element.data().emailvalidation;
+            _this257.Password = element.data().Password;
+            _this257.officephone = element.data().officephone;
+            _this257.officephonevalidation = element.data().officephonevalidation;
+            _this257.officephonelength = element.data().officephonelength;
+            _this257.mobile = element.data().mobile;
+            _this257.mobilevalidity = element.data().mobilevalidity;
+            _this257.mobilelength = element.data().mobilelength;
+            _this257.solefees = element.data().solefees;
+            _this257.solefeesmore = element.data().solefeesmore;
+            _this257.solefeesless = element.data().solefeesless;
+            _this257.multiplefees = element.data().multiplefees;
+            _this257.multiplefeesmore = element.data().multiplefeesmore;
+            _this257.multiplefeesless = element.data().multiplefeesless;
+            _this257.Image = element.data().Image;
+            _this257.Imagesize = element.data().Imagesize;
+            _this257.isLoading = false;
           });
         }
       }]);
@@ -32048,19 +32219,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this257 = this;
+          var _this258 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this257.agents = element.data();
-              _this257.fullname = _this257.agents.fullname;
-              _this257.address = _this257.agents.address;
-              _this257.postcode = _this257.agents.postcode;
-              _this257.email = _this257.agents.email;
-              _this257.phone = _this257.agents.phone;
-              _this257.officephone = _this257.agents.officephone;
-              _this257.sole = _this257.agents.solefees;
-              _this257.multi = _this257.agents.multiplefees;
+              _this258.agents = element.data();
+              _this258.fullname = _this258.agents.fullname;
+              _this258.address = _this258.agents.address;
+              _this258.postcode = _this258.agents.postcode;
+              _this258.email = _this258.agents.email;
+              _this258.phone = _this258.agents.phone;
+              _this258.officephone = _this258.agents.officephone;
+              _this258.sole = _this258.agents.solefees;
+              _this258.multi = _this258.agents.multiplefees;
             });
           });
         }
@@ -33757,7 +33928,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var _AdminPanel_uielements_advertisement_advertisement_component__WEBPACK_IMPORTED_MODULE_154__ = __webpack_require__(
     /*! ./AdminPanel/uielements/advertisement/advertisement.component */
-    "./src/app/AdminPanel/uielements/advertisement/advertisement.component.ts"); // Firebase modules
+    "./src/app/AdminPanel/uielements/advertisement/advertisement.component.ts");
+    /* harmony import */
+
+
+    var _AdminPanel_uielements_tooltip_tooltip_component__WEBPACK_IMPORTED_MODULE_155__ = __webpack_require__(
+    /*! ./AdminPanel/uielements/tooltip/tooltip.component */
+    "./src/app/AdminPanel/uielements/tooltip/tooltip.component.ts"); // Firebase modules
 
 
     var AppModule = function AppModule() {
@@ -33765,7 +33942,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_12__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_13__["SellerMatchListingComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_15__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_14__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_16__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_17__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_93__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_18__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_19__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_27__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_29__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_30__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_74__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_90__["AlertDialogAgentComponent"], _Misc_LoginUserError_LoginUserError_component__WEBPACK_IMPORTED_MODULE_148__["LoginUserErrorComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_78__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_79__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_80__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_102__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_81__["AgentSignupComponent"], _Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_138__["AlertSelectedPropertyComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_82__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_83__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_84__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_85__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_86__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_87__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_88__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_89__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_91__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_92__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_94__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_95__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_96__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_97__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_98__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_99__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_104__["DeleteDataComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_100__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_101__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_103__["NestimatesHomeComponent"], _Home_home_matches_home_matches_component__WEBPACK_IMPORTED_MODULE_105__["HomeMatchesComponent"], _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_106__["PriceMatchesComponent"], _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_107__["AgenthomeComponent"], _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_108__["SelecteddetailareaComponent"], _agenthome_edit_details_edit_details_component__WEBPACK_IMPORTED_MODULE_109__["EditDetailsComponent"], _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_110__["SelecteddetailsellerComponent"], _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_111__["ClickhomeComponent"], _Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_113__["AlertLoginComponent"], _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_114__["AlertUserTypeComponent"], _reset_password_reset_password_component__WEBPACK_IMPORTED_MODULE_115__["ResetPasswordComponent"], _Misc_google_login_check_google_login_check_component__WEBPACK_IMPORTED_MODULE_116__["GoogleLoginCheckComponent"], _Misc_facebook_login_check_facebook_login_check_component__WEBPACK_IMPORTED_MODULE_117__["FacebookLoginCheckComponent"], _AdminPanel_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_118__["AdminPanelComponent"], _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_119__["AdminHeaderComponent"], _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_120__["UsersAgentTabComponent"], _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_121__["UsersEditPageComponent"], _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_122__["EditBuyerUserDetailsComponent"], _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_123__["AddUserComponent"], _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_124__["EditSellerUserDetailsComponent"], _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_125__["AgentEditPageComponent"], _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_126__["AgentPropertyEditPageComponent"], _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_127__["UIElementsComponent"], _Menu_myMatches_awaitingresponse_awaitingresponse_component__WEBPACK_IMPORTED_MODULE_128__["AwaitingresponseComponent"], _agenthome_showdetails_showdetails_component__WEBPACK_IMPORTED_MODULE_129__["ShowdetailsComponent"], _Menu_myListings_favorates_favorates_component__WEBPACK_IMPORTED_MODULE_130__["FavoratesComponent"], _Menu_myListings_favorates_seller_listing_detail_seller_listing_detail_component__WEBPACK_IMPORTED_MODULE_131__["SellerListingDetailComponent"], _Menu_myListings_favorates_buyer_listing_detail_buyer_listing_detail_component__WEBPACK_IMPORTED_MODULE_132__["BuyerListingDetailComponent"], _agenthome_buyer_details_agent_buyer_details_agent_component__WEBPACK_IMPORTED_MODULE_133__["BuyerDetailsAgentComponent"], _Menu_myListings_recentlyitems_recentlyitems_component__WEBPACK_IMPORTED_MODULE_134__["RecentlyitemsComponent"], _Menu_myListings_recentlyitems_buyerrecentlydetail_buyerrecentlydetail_component__WEBPACK_IMPORTED_MODULE_135__["BuyerrecentlydetailComponent"], _Menu_myListings_recentlyitems_sellerrecentpropertydeatil_sellerrecentpropertydeatil_component__WEBPACK_IMPORTED_MODULE_136__["SellerrecentpropertydeatilComponent"], _Menu_myMatches_select_agent_agentSubmission_component__WEBPACK_IMPORTED_MODULE_137__["AgentSubmissionComponent"], _AdminPanel_uielements_seekerformerror_seekerformerror_component__WEBPACK_IMPORTED_MODULE_139__["SeekerformerrorComponent"], _AdminPanel_uielements_ownerformerror_ownerformerror_component__WEBPACK_IMPORTED_MODULE_140__["OwnerformerrorComponent"], _AdminPanel_uielements_agentformerror_agentformerror_component__WEBPACK_IMPORTED_MODULE_141__["AgentformerrorComponent"], _AdminPanel_uielements_othererror_othererror_component__WEBPACK_IMPORTED_MODULE_142__["OthererrorComponent"], _AdminPanel_uielements_mydetailserror_mydetailserror_component__WEBPACK_IMPORTED_MODULE_143__["MydetailserrorComponent"], _Misc_password_pop_password_pop_component__WEBPACK_IMPORTED_MODULE_146__["PasswordPopComponent"], _Misc_email_pop_email_pop_component__WEBPACK_IMPORTED_MODULE_147__["EmailPopComponent"], _Home_images_slider_images_slider_component__WEBPACK_IMPORTED_MODULE_150__["ImagesSliderComponent"], _home_check_home_check_component__WEBPACK_IMPORTED_MODULE_151__["HomeCheckComponent"], _middle_slider_middle_slider_component__WEBPACK_IMPORTED_MODULE_152__["MiddleSliderComponent"], _AdminPanel_uielements_advertisement_advertisement_component__WEBPACK_IMPORTED_MODULE_154__["AdvertisementComponent"]],
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"], _Menu_navigationBar_navigationBar_component__WEBPACK_IMPORTED_MODULE_5__["NavigationBarComponent"], _Misc_Footer_Footer_component__WEBPACK_IMPORTED_MODULE_6__["FooterComponent"], _Home_Home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"], _Home_Property_Property_component__WEBPACK_IMPORTED_MODULE_8__["PropertyComponent"], _Home_Property_fillFormBuyer_fillFormBuyer_component__WEBPACK_IMPORTED_MODULE_9__["FillFormBuyerComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerMatchListing_component__WEBPACK_IMPORTED_MODULE_10__["BuyerMatcheListingComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerSelectedPropertyDetail_sellerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_11__["SellerSelectedPropertyComponent"], _Home_Property_fillFormSeller_fillFormSeller_component__WEBPACK_IMPORTED_MODULE_12__["FillFormSellerComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_sellerMatchListing_sellerMatchListing_component__WEBPACK_IMPORTED_MODULE_13__["SellerMatchListingComponent"], _Menu_myProfile_editProfile_editProfile_component__WEBPACK_IMPORTED_MODULE_15__["EditProfileComponent"], _Menu_myProfile_Profile_component__WEBPACK_IMPORTED_MODULE_14__["MyProfileComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_buyerMatchListing_buyerSelectedPropertyDetail_buyerSelectedPropertyDetail_component__WEBPACK_IMPORTED_MODULE_16__["BuyerSelectedPropertyDetailComponent"], _Menu_myListings_myListing_component__WEBPACK_IMPORTED_MODULE_17__["MyListingComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_93__["EdiProfileComponent"], _Menu_Prefrences_Prefrences_component__WEBPACK_IMPORTED_MODULE_18__["PrefrencesComponent"], _Menu_Chats_chats_component__WEBPACK_IMPORTED_MODULE_19__["ChatsComponent"], _Misc_components_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_27__["DashboardComponent"], _Misc_components_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_28__["SignInComponent"], _Misc_components_forgot_password_forgot_password_component__WEBPACK_IMPORTED_MODULE_29__["ForgotPasswordComponent"], _Misc_components_verify_email_verify_email_component__WEBPACK_IMPORTED_MODULE_30__["VerifyEmailComponent"], _Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_74__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogBuyerDataSubmissionComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_90__["AlertDialogAgentComponent"], _Misc_LoginUserError_LoginUserError_component__WEBPACK_IMPORTED_MODULE_148__["LoginUserErrorComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_78__["SelectedPropertyDialogComponent"], _Menu_myMatches_myMatches_component__WEBPACK_IMPORTED_MODULE_79__["MyMatchesComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_80__["AltertFormDialogComponent"], _Menu_myMatches_my_matches_to_sell_selected_detail_my_matches_to_sell_selected_detail_component__WEBPACK_IMPORTED_MODULE_102__["MyMatchesToSellSelectedDetailComponent"], _Home_agent_signup_agent_signup_component__WEBPACK_IMPORTED_MODULE_81__["AgentSignupComponent"], _Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_138__["AlertSelectedPropertyComponent"], _template_template_component__WEBPACK_IMPORTED_MODULE_82__["TemplateComponent"], _Misc_privacy_policy_privacy_policy_component__WEBPACK_IMPORTED_MODULE_83__["PrivacyPolicyComponent"], _Menu_notification_notification_component__WEBPACK_IMPORTED_MODULE_84__["NotificationComponent"], _Menu_plus_plus_component__WEBPACK_IMPORTED_MODULE_85__["PlusComponent"], _short_name_pipe__WEBPACK_IMPORTED_MODULE_86__["ShortNamePipe"], _terms_condition_terms_condition_component__WEBPACK_IMPORTED_MODULE_87__["TermsConditionComponent"], _Menu_myMatches_select_agent_select_agent_component__WEBPACK_IMPORTED_MODULE_88__["SelectAgentComponent"], _Home_agentsignupform_agentsignupform_component__WEBPACK_IMPORTED_MODULE_89__["AgentsignupformComponent"], _Menu_myListings_listing_property_detail_listing_property_detail_component__WEBPACK_IMPORTED_MODULE_91__["ListingPropertyDetailComponent"], _Menu_myListings_listing_selling_property_detail_listing_selling_property_detail_component__WEBPACK_IMPORTED_MODULE_92__["ListingSellingPropertyDetailComponent"], _Misc_cookies_cookies_component__WEBPACK_IMPORTED_MODULE_94__["CookiesComponent"], _Menu_myMatches_buyerAwaitingDetail_buyerAwaitingDetail_component__WEBPACK_IMPORTED_MODULE_95__["BuyerAwaitingDetailComponent"], _Menu_myListings_edit_listing_buyer_edit_listing_buyer_component__WEBPACK_IMPORTED_MODULE_96__["EditListingBuyerComponent"], _Menu_myListings_edit_listing_seller_edit_listing_seller_component__WEBPACK_IMPORTED_MODULE_97__["EditListingSellerComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_98__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_99__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_104__["DeleteDataComponent"], _Menu_myMatches_matches_buyer_matches_buyer_component__WEBPACK_IMPORTED_MODULE_100__["MatchesBuyerComponent"], _Menu_myMatches_seller_matches_seller_matches_component__WEBPACK_IMPORTED_MODULE_101__["SellerMatchesComponent"], _Home_nestimates_home_nestimates_home_component__WEBPACK_IMPORTED_MODULE_103__["NestimatesHomeComponent"], _Home_home_matches_home_matches_component__WEBPACK_IMPORTED_MODULE_105__["HomeMatchesComponent"], _Potential_price_matches_price_matches_component__WEBPACK_IMPORTED_MODULE_106__["PriceMatchesComponent"], _agenthome_agenthome_component__WEBPACK_IMPORTED_MODULE_107__["AgenthomeComponent"], _agenthome_selecteddetailarea_selecteddetailarea_component__WEBPACK_IMPORTED_MODULE_108__["SelecteddetailareaComponent"], _agenthome_edit_details_edit_details_component__WEBPACK_IMPORTED_MODULE_109__["EditDetailsComponent"], _agenthome_selecteddetailseller_selecteddetailseller_component__WEBPACK_IMPORTED_MODULE_110__["SelecteddetailsellerComponent"], _Home_clickhome_clickhome_component__WEBPACK_IMPORTED_MODULE_111__["ClickhomeComponent"], _Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_113__["AlertLoginComponent"], _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_114__["AlertUserTypeComponent"], _reset_password_reset_password_component__WEBPACK_IMPORTED_MODULE_115__["ResetPasswordComponent"], _Misc_google_login_check_google_login_check_component__WEBPACK_IMPORTED_MODULE_116__["GoogleLoginCheckComponent"], _Misc_facebook_login_check_facebook_login_check_component__WEBPACK_IMPORTED_MODULE_117__["FacebookLoginCheckComponent"], _AdminPanel_admin_panel_admin_panel_component__WEBPACK_IMPORTED_MODULE_118__["AdminPanelComponent"], _AdminPanel_admin_header_admin_header_component__WEBPACK_IMPORTED_MODULE_119__["AdminHeaderComponent"], _AdminPanel_users_agent_tab_users_agent_tab_component__WEBPACK_IMPORTED_MODULE_120__["UsersAgentTabComponent"], _AdminPanel_users_edit_page_users_edit_page_component__WEBPACK_IMPORTED_MODULE_121__["UsersEditPageComponent"], _AdminPanel_edit_buyer_user_details_edit_buyer_user_details_component__WEBPACK_IMPORTED_MODULE_122__["EditBuyerUserDetailsComponent"], _AdminPanel_add_user_add_user_component__WEBPACK_IMPORTED_MODULE_123__["AddUserComponent"], _AdminPanel_edit_seller_user_details_edit_seller_user_details_component__WEBPACK_IMPORTED_MODULE_124__["EditSellerUserDetailsComponent"], _AdminPanel_agent_edit_page_agent_edit_page_component__WEBPACK_IMPORTED_MODULE_125__["AgentEditPageComponent"], _AdminPanel_agent_property_edit_page_agent_property_edit_page_component__WEBPACK_IMPORTED_MODULE_126__["AgentPropertyEditPageComponent"], _AdminPanel_uielements_uielements_component__WEBPACK_IMPORTED_MODULE_127__["UIElementsComponent"], _Menu_myMatches_awaitingresponse_awaitingresponse_component__WEBPACK_IMPORTED_MODULE_128__["AwaitingresponseComponent"], _agenthome_showdetails_showdetails_component__WEBPACK_IMPORTED_MODULE_129__["ShowdetailsComponent"], _Menu_myListings_favorates_favorates_component__WEBPACK_IMPORTED_MODULE_130__["FavoratesComponent"], _Menu_myListings_favorates_seller_listing_detail_seller_listing_detail_component__WEBPACK_IMPORTED_MODULE_131__["SellerListingDetailComponent"], _Menu_myListings_favorates_buyer_listing_detail_buyer_listing_detail_component__WEBPACK_IMPORTED_MODULE_132__["BuyerListingDetailComponent"], _agenthome_buyer_details_agent_buyer_details_agent_component__WEBPACK_IMPORTED_MODULE_133__["BuyerDetailsAgentComponent"], _Menu_myListings_recentlyitems_recentlyitems_component__WEBPACK_IMPORTED_MODULE_134__["RecentlyitemsComponent"], _Menu_myListings_recentlyitems_buyerrecentlydetail_buyerrecentlydetail_component__WEBPACK_IMPORTED_MODULE_135__["BuyerrecentlydetailComponent"], _Menu_myListings_recentlyitems_sellerrecentpropertydeatil_sellerrecentpropertydeatil_component__WEBPACK_IMPORTED_MODULE_136__["SellerrecentpropertydeatilComponent"], _Menu_myMatches_select_agent_agentSubmission_component__WEBPACK_IMPORTED_MODULE_137__["AgentSubmissionComponent"], _AdminPanel_uielements_seekerformerror_seekerformerror_component__WEBPACK_IMPORTED_MODULE_139__["SeekerformerrorComponent"], _AdminPanel_uielements_ownerformerror_ownerformerror_component__WEBPACK_IMPORTED_MODULE_140__["OwnerformerrorComponent"], _AdminPanel_uielements_agentformerror_agentformerror_component__WEBPACK_IMPORTED_MODULE_141__["AgentformerrorComponent"], _AdminPanel_uielements_othererror_othererror_component__WEBPACK_IMPORTED_MODULE_142__["OthererrorComponent"], _AdminPanel_uielements_mydetailserror_mydetailserror_component__WEBPACK_IMPORTED_MODULE_143__["MydetailserrorComponent"], _Misc_password_pop_password_pop_component__WEBPACK_IMPORTED_MODULE_146__["PasswordPopComponent"], _Misc_email_pop_email_pop_component__WEBPACK_IMPORTED_MODULE_147__["EmailPopComponent"], _Home_images_slider_images_slider_component__WEBPACK_IMPORTED_MODULE_150__["ImagesSliderComponent"], _home_check_home_check_component__WEBPACK_IMPORTED_MODULE_151__["HomeCheckComponent"], _middle_slider_middle_slider_component__WEBPACK_IMPORTED_MODULE_152__["MiddleSliderComponent"], _AdminPanel_uielements_advertisement_advertisement_component__WEBPACK_IMPORTED_MODULE_154__["AdvertisementComponent"], _AdminPanel_uielements_tooltip_tooltip_component__WEBPACK_IMPORTED_MODULE_155__["TooltipComponent"]],
       imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_3__["AppRoutingModule"], _ngmodule_material_carousel__WEBPACK_IMPORTED_MODULE_149__["MatCarouselModule"].forRoot(), _angular_fire__WEBPACK_IMPORTED_MODULE_22__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_26__["environment"].firebaseConfig, "street"), _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_23__["AngularFirestoreModule"], _angular_fire_auth__WEBPACK_IMPORTED_MODULE_25__["AngularFireAuthModule"], _angular_fire_storage__WEBPACK_IMPORTED_MODULE_24__["AngularFireStorageModule"], _angular_fire_database__WEBPACK_IMPORTED_MODULE_21__["AngularFireDatabaseModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_31__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_31__["ReactiveFormsModule"], _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_32__["BrowserAnimationsModule"], _Misc_material__WEBPACK_IMPORTED_MODULE_75__["MaterialModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_70__["MatTabsModule"], _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_33__["A11yModule"], _angular_cdk_stepper__WEBPACK_IMPORTED_MODULE_37__["CdkStepperModule"], _angular_cdk_table__WEBPACK_IMPORTED_MODULE_38__["CdkTableModule"], _angular_cdk_tree__WEBPACK_IMPORTED_MODULE_39__["CdkTreeModule"], _angular_cdk_drag_drop__WEBPACK_IMPORTED_MODULE_34__["DragDropModule"], _angular_material_autocomplete__WEBPACK_IMPORTED_MODULE_40__["MatAutocompleteModule"], _angular_material_badge__WEBPACK_IMPORTED_MODULE_41__["MatBadgeModule"], _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_42__["MatBottomSheetModule"], _angular_material_button__WEBPACK_IMPORTED_MODULE_43__["MatButtonModule"], _angular_material_button_toggle__WEBPACK_IMPORTED_MODULE_44__["MatButtonToggleModule"], _angular_material_card__WEBPACK_IMPORTED_MODULE_45__["MatCardModule"], _angular_material_checkbox__WEBPACK_IMPORTED_MODULE_46__["MatCheckboxModule"], _angular_material_chips__WEBPACK_IMPORTED_MODULE_47__["MatChipsModule"], _angular_material_stepper__WEBPACK_IMPORTED_MODULE_48__["MatStepperModule"], _angular_material_datepicker__WEBPACK_IMPORTED_MODULE_49__["MatDatepickerModule"], _angular_material_dialog__WEBPACK_IMPORTED_MODULE_50__["MatDialogModule"], _angular_material_divider__WEBPACK_IMPORTED_MODULE_51__["MatDividerModule"], _angular_material_expansion__WEBPACK_IMPORTED_MODULE_52__["MatExpansionModule"], _angular_material_grid_list__WEBPACK_IMPORTED_MODULE_53__["MatGridListModule"], _angular_material_icon__WEBPACK_IMPORTED_MODULE_54__["MatIconModule"], _angular_material_input__WEBPACK_IMPORTED_MODULE_55__["MatInputModule"], _angular_material_list__WEBPACK_IMPORTED_MODULE_56__["MatListModule"], _angular_material_menu__WEBPACK_IMPORTED_MODULE_57__["MatMenuModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_58__["MatNativeDateModule"], _angular_material_paginator__WEBPACK_IMPORTED_MODULE_59__["MatPaginatorModule"], _angular_material_progress_bar__WEBPACK_IMPORTED_MODULE_60__["MatProgressBarModule"], _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_61__["MatProgressSpinnerModule"], _angular_material_radio__WEBPACK_IMPORTED_MODULE_62__["MatRadioModule"], _angular_material_core__WEBPACK_IMPORTED_MODULE_58__["MatRippleModule"], _angular_material_select__WEBPACK_IMPORTED_MODULE_63__["MatSelectModule"], _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_64__["MatSidenavModule"], _angular_material_slider__WEBPACK_IMPORTED_MODULE_65__["MatSliderModule"], _angular_material_slide_toggle__WEBPACK_IMPORTED_MODULE_66__["MatSlideToggleModule"], _angular_material_snack_bar__WEBPACK_IMPORTED_MODULE_67__["MatSnackBarModule"], _angular_material_sort__WEBPACK_IMPORTED_MODULE_68__["MatSortModule"], _angular_material_table__WEBPACK_IMPORTED_MODULE_69__["MatTableModule"], _angular_material_tabs__WEBPACK_IMPORTED_MODULE_70__["MatTabsModule"], _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_71__["MatToolbarModule"], _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_72__["MatTooltipModule"], _angular_material_tree__WEBPACK_IMPORTED_MODULE_73__["MatTreeModule"], _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_35__["PortalModule"], _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_36__["ScrollingModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_77__["HttpClientModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_31__["ReactiveFormsModule"], ngx_pagination__WEBPACK_IMPORTED_MODULE_144__["NgxPaginationModule"], ngx_select_pagination__WEBPACK_IMPORTED_MODULE_145__["SelectPaginationModule"], angular_image_slider__WEBPACK_IMPORTED_MODULE_153__["SliderModule"]],
       entryComponents: [_Home_Property_fillFormSeller_confirmSellerDetail_alertDialogSellerDataSubmission_component__WEBPACK_IMPORTED_MODULE_74__["AlertDialogComponent"], _Home_Property_fillFormBuyer_confirmBuyerDetail_alertDialogBuyerDataSubmission_component__WEBPACK_IMPORTED_MODULE_76__["AlertDialogBuyerDataSubmissionComponent"], _Misc_selectedPropertyDialog_selectedPropertyDialog_component__WEBPACK_IMPORTED_MODULE_78__["SelectedPropertyDialogComponent"], _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_80__["AltertFormDialogComponent"], _Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_138__["AlertSelectedPropertyComponent"], _Home_agentsignupform_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_90__["AlertDialogAgentComponent"], _Misc_LoginUserError_LoginUserError_component__WEBPACK_IMPORTED_MODULE_148__["LoginUserErrorComponent"], _Menu_myProfile_editProfile_ediProfileSubmission_component__WEBPACK_IMPORTED_MODULE_93__["EdiProfileComponent"], _Menu_myListings_edit_listing_buyer_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_98__["EditDataSubmissionComponent"], _Menu_myListings_edit_listing_seller_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_99__["EditSellerSubmissionComponent"], _Menu_myListings_deleteData_component__WEBPACK_IMPORTED_MODULE_104__["DeleteDataComponent"], _Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_113__["AlertLoginComponent"], _Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_114__["AlertUserTypeComponent"], _Menu_myMatches_select_agent_agentSubmission_component__WEBPACK_IMPORTED_MODULE_137__["AgentSubmissionComponent"]],
       providers: [_auth_service__WEBPACK_IMPORTED_MODULE_20__["AuthService"], {
@@ -33863,7 +34040,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location, dialog) {
-        var _this258 = this;
+        var _this259 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -33878,8 +34055,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this258.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this258.userData));
+            _this259.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this259.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -34033,7 +34210,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthLogin",
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee70() {
-            var _this259 = this;
+            var _this260 = this;
 
             var result, User, dialogRef;
             return regeneratorRuntime.wrap(function _callee70$(_context70) {
@@ -34048,9 +34225,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     result = _context70.sent;
                     User = "User";
                     this.ngZone.run(function () {
-                      _this259.SetUserData(result.user);
+                      _this260.SetUserData(result.user);
 
-                      _this259.createUserChecker(result.user, User);
+                      _this260.createUserChecker(result.user, User);
 
                       window.location.reload();
                     });
@@ -34078,7 +34255,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthSignup",
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee71() {
-            var _this260 = this;
+            var _this261 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee71$(_context71) {
@@ -34093,7 +34270,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 4:
                     result = _context71.sent;
                     this.ngZone.run(function () {
-                      _this260.SetUserData(result.user);
+                      _this261.SetUserData(result.user);
                     });
                     _context71.next = 11;
                     break;
@@ -34488,6 +34665,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "getlistingseller",
         value: function getlistingseller(uid) {
           return this.sellerRef.doc(uid).collection("properties").ref.get();
+        } //ToolTip
+
+      }, {
+        key: "getToolTip",
+        value: function getToolTip() {
+          return this.db.collection("ToolTip").doc("Tool").ref.get();
+        }
+      }, {
+        key: "updateToolTip",
+        value: function updateToolTip(home) {
+          return this.db.collection("ToolTip").doc("Tool").update(home);
         }
       }]);
 
@@ -34628,37 +34816,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this261 = this;
+          var _this262 = this;
 
           this.isLoading = true;
           this.viewResult = true;
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this261.isLoading = true;
+              _this262.isLoading = true;
 
-              _this261.listingBuyers.push(element.data());
+              _this262.listingBuyers.push(element.data());
             });
 
-            _this261.HomeService.getlistingseller(_this261.uid).then(function (res) {
+            _this262.HomeService.getlistingseller(_this262.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this261.isLoading = true;
+                _this262.isLoading = true;
 
-                _this261.listingSeller.push(elements.data());
+                _this262.listingSeller.push(elements.data());
               });
-              _this261.isLoading = true;
-              _this261.checkNumberNestimates = _this261.listingBuyers.length + _this261.listingSeller.length;
-              _this261.isLoading = true;
+              _this262.isLoading = true;
+              _this262.checkNumberNestimates = _this262.listingBuyers.length + _this262.listingSeller.length;
+              _this262.isLoading = true;
 
-              if (_this261.checkNumberNestimates > 0) {
-                _this261.isLoading = true;
-                _this261.appMatches = true;
-                _this261.interval = setInterval(function () {
-                  _this261.isLoading = false;
+              if (_this262.checkNumberNestimates > 0) {
+                _this262.isLoading = true;
+                _this262.appMatches = true;
+                _this262.interval = setInterval(function () {
+                  _this262.isLoading = false;
                 }, 3000);
               } else {
-                _this261.isLoading = true;
-                _this261.viewResult = false;
-                _this261.isLoading = false;
+                _this262.isLoading = true;
+                _this262.viewResult = false;
+                _this262.isLoading = false;
               }
             });
           });
@@ -35330,11 +35518,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MiddleSliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this262 = this;
+          var _this263 = this;
 
           this.ActivatedRoutes.paramMap.subscribe(function (element) {});
           this.SellerNestimateDetails.getSellerRequirement(this.userID, this.child).then(function (element) {
-            _this262.AllImages = element.data().Images;
+            _this263.AllImages = element.data().Images;
           });
         }
       }]);
@@ -35616,33 +35804,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this263 = this;
+          var _this264 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
             password: password
           }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            // login successful if there's a jwt token in the response
-            if (response.jwt && response.user) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem('updatedUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentJwt', response.jwt);
-              _this263.userData = response.user;
-              _this263.authToken = sessionStorage.getItem('currentJwt');
-
-              _this263.currentUserSubject.next(response.user);
-            }
-
-            return response.user;
-          }));
-        }
-      }, {
-        key: "Googlelogin",
-        value: function Googlelogin(token, accessToken) {
-          var _this264 = this;
-
-          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
@@ -35659,13 +35826,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
-        key: "Facebooklogin",
-        value: function Facebooklogin() {
+        key: "Googlelogin",
+        value: function Googlelogin(token, accessToken) {
           var _this265 = this;
 
-          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            console.log(response); // login successful if there's a jwt token in the response
-
+          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
@@ -35681,9 +35847,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
+        key: "Facebooklogin",
+        value: function Facebooklogin() {
+          var _this266 = this;
+
+          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            console.log(response); // login successful if there's a jwt token in the response
+
+            if (response.jwt && response.user) {
+              // store user details and jwt token in local storage to keep user logged in between page refreshes
+              localStorage.setItem('updatedUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentJwt', response.jwt);
+              _this266.userData = response.user;
+              _this266.authToken = sessionStorage.getItem('currentJwt');
+
+              _this266.currentUserSubject.next(response.user);
+            }
+
+            return response.user;
+          }));
+        }
+      }, {
         key: "logout",
         value: function logout() {
-          var _this266 = this;
+          var _this267 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -35691,7 +35879,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this266.router.navigate(["/homenew"]);
+            _this267.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -35918,21 +36106,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this267 = this;
+          var _this268 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           console.log(this.user);
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this267.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this267.userData));
+              _this268.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this268.userData));
 
-              _this267.LoggedIn();
+              _this268.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this267.LoggedOut();
+              _this268.LoggedOut();
             }
           });
 
@@ -35964,58 +36152,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this268 = this;
+          var _this269 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this268.isLoading = false;
+            _this269.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this269 = this;
+          var _this270 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this269.isLoading = false;
+            _this270.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this270 = this;
+          var _this271 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this270.isLoading = false;
+            _this271.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this271 = this;
+          var _this272 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this271.KnowUser.push(element.data());
+              _this272.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this271.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this272.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this271.isLoading = false;
+                _this272.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this271.authService.SignIn(email, pass).then(function (data) {
-                  _this271.isLoading = false;
+                _this272.authService.SignIn(email, pass).then(function (data) {
+                  _this272.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -36099,21 +36287,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this272 = this;
+          var _this273 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this272.notificationContent = res.data().SingupFromMenu;
+            _this273.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this273 = this;
+          var _this274 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this273.topLine = element.data().topLine;
-              _this273.secondLine = element.data().SecondLine;
+              _this274.topLine = element.data().topLine;
+              _this274.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -36244,11 +36432,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this274 = this;
+          var _this275 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (element) {
             element.forEach(function (element) {
-              _this274.termsCondition = element.data().Terms;
+              _this275.termsCondition = element.data().Terms;
             });
           });
         }
