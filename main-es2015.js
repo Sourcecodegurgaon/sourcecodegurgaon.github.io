@@ -14935,8 +14935,8 @@ let EditListingSellerComponent = class EditListingSellerComponent {
         this.isLoading = true;
         this.uploads = [];
         const filelist = event.target.files;
-        console.log(filelist);
-        if (filelist.length > 20) {
+        const TotalImages = filelist.length + this.sellerImages;
+        if (filelist.length > 20 || TotalImages > 20) {
             const dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: { message: "Upload Maximum  20 Images" }
             });
