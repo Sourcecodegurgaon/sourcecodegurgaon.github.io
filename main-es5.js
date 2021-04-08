@@ -12192,8 +12192,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.NameView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "red";
             } else if (this.user.email == null || this.user.email.length == 0) {
               var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
                 data: {
@@ -12202,9 +12200,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.emailView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "red";
             } else if (this.user.DOB == null) {
               this.previousStep();
 
@@ -12215,10 +12210,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.dobView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "red";
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
               this.previousStep();
 
@@ -12229,10 +12220,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.dobView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "red";
             } else if (this.user.Phone == null || this.user.Phone.length == 0) {
               this.previousStep();
 
@@ -12243,11 +12230,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.teleView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "red";
             } else if (Mobile != this.user.Phone) {
               this.previousStep();
 
@@ -12258,11 +12240,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.teleView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "red";
             } else if (this.user.Phone.length < 10 || this.user.Phone.length > 10) {
               this.previousStep();
 
@@ -12273,11 +12250,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.teleView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "red";
             } else if (this.listingBuyer.Currentpostcode == null || this.listingBuyer.Currentpostcode.length == 0) {
               this.previousStep();
 
@@ -12288,12 +12260,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.CurrentpostcodeView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "red";
             } else if (postcodeLength.length < 5) {
               this.previousStep();
 
@@ -12304,12 +12270,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.CurrentpostcodeView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "red";
             } else if (this.listingBuyer.CurrentAddress == null || this.listingBuyer.CurrentAddress.length == 0) {
               this.previousStep();
 
@@ -12320,14 +12280,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.CurrentAddressView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Ctown").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("caddress").style.color = "red";
             } else if (this.listingBuyer.CurrentTown == null || this.listingBuyer.CurrentTown.length == 0) {
               this.previousStep();
 
@@ -12338,13 +12290,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.CurrentTownView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Ctown").style.color = "red";
-              document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
             } else if (this.listingBuyer.Currentstate == null || this.listingBuyer.Currentstate.length == 0) {
               this.previousStep();
 
@@ -12355,15 +12300,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.CurrentstateView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Ctown").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("caddress").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("cState").style.color = "red";
             } else if (this.listingBuyer.Currentcountry == null || this.listingBuyer.Currentcountry.length == 0) {
               this.previousStep();
 
@@ -12374,16 +12310,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.CurrentcountryView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Ctown").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("caddress").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("cState").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("ccountry").style.color = "red";
             } else {
               this.userDetail();
               this.selectedIndex = 1;
@@ -14498,7 +14424,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
               if (element.data().uid == _this135.uid) {
-                console.log(element.data());
                 _this135.user.Name = element.data().Name;
                 _this135.user.Email = element.data().email;
 
@@ -15336,7 +15261,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 }
               });
               this.titleView.focus();
-              document.getElementById("title").style.color = "red";
             } else if (this.user.Name == null || this.user.Name.length == 0) {
               this.previousStep();
 
@@ -15347,8 +15271,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.NameView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "red";
             } else if (this.user.email == null || this.user.email.length == 0) {
               this.previousStep();
 
@@ -15359,9 +15281,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.emailView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "red";
             } else if (this.user.DOB == null) {
               this.previousStep();
 
@@ -15372,10 +15291,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.dobView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "red";
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
               this.previousStep();
 
@@ -15386,10 +15301,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.dobView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "red";
             } else if (this.user.Phone == null) {
               this.previousStep();
 
@@ -15400,11 +15311,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.teleView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "red";
             } else if (Mobile != this.user.Phone) {
               this.previousStep();
 
@@ -15415,11 +15321,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.teleView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "red";
             } else if (this.user.Phone.length < 10 || this.user.Phone.length > 10) {
               this.previousStep();
 
@@ -15430,11 +15331,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
               this.teleView.nativeElement.focus();
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "red";
             } else if (this.user.Currentpostcode == null || this.user.Currentpostcode.length == 0) {
               this.previousStep();
               this.nameField.nativeElement.focus();
@@ -15444,13 +15340,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   message: this.CurrentPostcode
                 }
               });
-
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "red";
             } else if (currentposcodelength.length < 5) {
               this.previousStep();
               this.nameField.nativeElement.focus();
@@ -15460,13 +15349,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   message: this.PostcodeLength
                 }
               });
-
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "red";
             } else if (this.user.CurrentAddress == null || this.user.CurrentAddress.length == 0) {
               this.previousStep();
               this.currentAddressView.nativeElement.focus();
@@ -15476,14 +15358,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   message: this.CurrentAaddress
                 }
               });
-
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("caddress").style.color = "red";
             } else if (this.user.CurrentTown == null || this.user.CurrentTown.length == 0) {
               this.previousStep();
               this.currenttownView.nativeElement.focus();
@@ -15493,15 +15367,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   message: this.CurrentTown
                 }
               });
-
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("caddress").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Ctown").style.color = "red";
             } else if (this.user.Currentstate == null || this.user.Currentstate.length == 0) {
               this.previousStep();
               this.currentstateView.nativeElement.focus();
@@ -15511,16 +15376,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   message: this.CurrentCounty
                 }
               });
-
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("caddress").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Ctown").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("cState").style.color = "red";
             } else if (this.user.CurrentCountry == null || this.user.CurrentCountry.length == 0) {
               this.previousStep();
 
@@ -15529,17 +15384,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   message: this.CurrentCountry
                 }
               });
-
-              document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("caddress").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("Ctown").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("cState").style.color = "var(--DARK-BLUE-COLOR)";
-              document.getElementById("currentCountry").style.color = "red";
             } else {
               this.userDetail();
               this.selectedIndex = 1;
