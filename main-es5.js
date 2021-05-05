@@ -491,7 +491,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n</div>\n\n\n<div class=\"main-background\">\n\n  <!--Header-->\n  <div class=\"header-bar-details\">\n    <div class=\"header-bar-content\">\n      <div class=\"left-side-content\" id=\"boldText\">\n        <span> {{postcode}}</span>\n        <span>{{Streetname}}</span>\n      </div>\n      <div class=\"right-side-content with-both-button \">\n        <ul class=\"submit-button\" (click)=\"backClicked()\">\n          <div class=\"xd-submit-button previous-button\">\n            <a class=\"text-next-button \" id=\"boldText\">Back</a>\n          </div>\n        </ul>\n        <div class=\"large-button mt-3\">\n          <div class=\"create-nestimate mobile-nestimate\" (click)=\"Overlayopen()\" *ngIf=\"expressed=='false'\">\n            <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\">\n            <span class=\"text-create-nestimate mr-1\" id=\"boldText\">Express Interest</span>\n            <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n          </div>\n        </div>\n        <div class=\"expressed-container-button\" *ngIf=\"expressed=='true'\"></div>\n\n        <!-- <div class=\"large-button mt-3\" *ngIf=\"expressed=='true'\">\n          <div class=\"create-nestimate\">\n            <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\">\n            <span class=\"text-create-nestimate mr-1\" id=\"boldText\">Already Expressed</span>\n            <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n          </div>\n        </div> -->\n      </div>\n    </div>\n  </div>\n\n\n  <!--Content-->\n\n  <!-- <div class=\"images-seller-container\">\n    <div class=\"main-image-container\" *ngIf=\"allImages.length > 3\">\n      <div class=\"images-container\" >\n        <img src=\"{{allImages[0]}}\">\n\n      </div>\n      <div class=\"images-container\" >\n        <img src=\"{{allImages[1]}}\">\n\n      </div>\n      <div class=\"images-container\">\n        <img src=\"../../../../assets/Images/red.png\">\n        <div class=\"View-all-container\" id=\"boldText\" (click)=\"OpenImage()\">\n          View All\n        </div>\n      </div>\n    </div>\n\n    <div class=\"main-image-container\" *ngIf=\"allImages.length <= 2\">\n      <div class=\"images-container\" *ngFor=\"let allImages of allImages\" (click)=\"OpenImage()\">\n        <img src=\"{{allImages}}\">\n\n      </div>\n    </div>\n\n  </div> -->\n  <div class=\"result-content\">\n\n    <div class=\"left-side-content-result-buyer\">\n      <div style=\"height: 1em;background-color: white;\" *ngIf=\"allImages.length > 0\"></div>\n      <div style=\"background-color: white;\" *ngIf=\"allImages.length > 0\" >\n    <app-middle-slider userID='{{UserId}}' child='{{propertyId}}' ></app-middle-slider>\n    </div>\n<div class=\"top-areaselected\">\n      <!--Colored Item-->\n   \n      <div class=\"colored-text\">\n        <div class=\"left-colored\">\n          <div class=\"details-p-headings heading-nestimate\" *ngIf=\"PropertyFor=='buy'\" id=\"boldText\">Seller Desired\n            Price</div>\n          <div class=\"details-p-headings heading-nestimate\" *ngIf=\"PropertyFor=='rent'\" id=\"boldText\">Seller Desired\n            Rent</div>\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          &pound;{{price}}\n        </div>\n      </div>\n\n      <!--Colored Item-->\n      <div class=\"colored-text\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Postcode\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{postcode}}\n        </div>\n      </div>\n\n\n\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Street name\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{Streetname}}\n        </div>\n      </div>\n\n\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Property Type\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Terracedhouse'\">\n          Terraced House\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Countryhouse'\">\n          Country House\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Barnconversion'\">\n          Barn Conversion\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Townhouse'\">\n          Town House\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Detachedhouse'\">\n          Detached House\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes != 'Detachedhouse' && PropertyTypes != 'Townhouse' && PropertyTypes != 'Barnconversion' && PropertyTypes != 'Countryhouse' && PropertyTypes != 'Terracedhouse'\">\n          {{PropertyTypes}}\n        </div>\n      </div>\n\n\n      <!--Colored Item-->\n      <div class=\"colored-text\">\n        <div class=\"left-colored\" id=\"boldText\">\n          No of Bedrooms\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{Maxroom}}\n        </div>\n      </div>\n\n      <!--Colored Item-->\n      <div class=\"colored-text\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Ownership\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{ownerships}}\n        </div>\n      </div>\n\n\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Address\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{LookingAddress}}\n        </div>\n      </div>\n\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Town/City\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{LookingTown}}\n        </div>\n\n      </div>\n\n      <!--Colored Item-->\n      <div class=\"colored-text\" *ngIf=\"Maxbathrooms != 'any'\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Bathrooms\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"Maxbathrooms != 'any'\">\n          {{Maxbathrooms }}\n        </div>\n      </div>\n\n\n      <!--Colored Item-->\n      <div class=\"colored-text\" *ngIf=\"Maxreception != 'any'\">>\n        <div class=\"left-colored\" id=\"boldText\">\n          Reception\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"Maxreception != 'any'\">\n          {{Maxreception}}\n        </div>\n      </div>\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\" *ngIf=\"PropertyCondition != 'any'\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Property Condition\n        </div>\n\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyCondition != 'any'\">\n          {{PropertyCondition}}\n        </div>\n\n      </div>\n\n    </div>\n\n    <div class=\"lower-slected-area\">\n      <!-- <div *ngIf=\"PropertyCondition == 'any' || Maxreception == 'any' || Maxbathrooms == 'any'\"></div> -->\n      <!-- <div class=\"images-seller-container\">\n        <div class=\"main-image-container\" *ngIf=\"allImages.length > 3\">\n          <div class=\"images-container\" >\n            <img src=\"{{allImages[0]}}\">\n\n          </div>\n          <div class=\"images-container\" >\n            <img src=\"{{allImages[1]}}\">\n\n          </div>\n          <div class=\"images-container\">\n            <img src=\"../../../../assets/Images/red.png\">\n            <div class=\"View-all-container\" id=\"boldText\" (click)=\"OpenImage()\">\n              View All\n            </div>\n          </div>\n        </div>\n\n        <div class=\"main-image-container\" *ngIf=\"allImages.length <= 2\">\n          <div class=\"images-container\" *ngFor=\"let allImages of allImages\" (click)=\"OpenImage()\">\n            <img src=\"{{allImages}}\">\n\n          </div>\n        </div>\n\n      </div> -->\n\n    </div>\n      <div class=\"image-slide-main-container\" *ngIf=\"ImagesOpen\">\n\n        <div class=\"sub-container-image\">\n          <div class=\"image-slide-close-arrow\" (click)=\"closeImage()\">\n            <img src=\"../../../../assets/Images/cross.png\">\n          </div>\n          <div class=\"wrapper-sub-container-image\">\n            <mat-carousel timings=\"200ms ease-in\" [autoplay]=\"false\" interval=\"6000\" color=\"white\"\n              timings=\"250ms ease-in\" color=\"blue\" maxWidth=\"30\" proportion=\"50\" slides=\"20\" [loop]=\"true\"\n              [hideArrows]=\"false\" [hideIndicators]=\"false\" [useKeyboard]=\"true\" [useMouseWheel]=\"false\"\n              orientation=\"ltr\">\n              <mat-carousel-slide *ngFor=\"let AllImages of allImages;\" [image]=\"AllImages\" overlayColor=\"#ffffff\"\n                [hideOverlay]=\"true\">\n\n              </mat-carousel-slide>\n            </mat-carousel>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n    <div class=\"right-side-content-add\">\n      <div class=\"add-container\">\n        <img src=\"../../../../assets/Images/dummyadd.png\" class=\"add-image\">\n      </div>\n      <div class=\"add-container\">\n        <img src=\"../../../../assets/Images/dummyadd.png\" class=\"add-image\">\n      </div>\n    </div>\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div class=\"continue-form\" *ngIf=\"overlay\">\n\n  <div class=\"continue-form-data\">\n    <div class=\"nestimate-logo\">\n      <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n\n    </div>\n    <div class=\"continue-text\">\n      <p class=\"overlay-text\" id=\"boldText\">Thank you for expressing</p>\n\n      <p class=\"overlay-text-third\" id=\"boldText\">{{notificationContent}}</p>\n    </div>\n\n\n    <div class=\"button-alignment\">\n      <div class=\"continue-button\" (click)=\"continueClose()\">\n        <div class=\"continue-button-container\" id=\"boldText\">\n          Cancel\n\n          <span class=\"arrow-text\"> &gt;</span>\n        </div>\n        <div class=\"continue-button\" (click)=\"submitForm()\">\n          <div class=\"continue-button-container\" id=\"boldText\">\n            Continue\n\n            <span class=\"arrow-text\"> &gt;</span>\n          </div>\n        </div>\n      </div>\n\n    </div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isBuyerSelected\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n  </div>\n</div>\n\n\n<div class=\"main-background\">\n\n  <!--Header-->\n  <div class=\"header-bar-details\">\n    <div class=\"header-bar-content\">\n      <div class=\"left-side-content\" id=\"boldText\">\n        <span> {{postcode}}</span>\n        <span>{{Streetname}}</span>\n      </div>\n      <div class=\"right-side-content with-both-button \">\n        <ul class=\"submit-button\" (click)=\"backClicked()\">\n          <div class=\"xd-submit-button previous-button\">\n            <a class=\"text-next-button \" id=\"boldText\">Back</a>\n          </div>\n        </ul>\n        <div class=\"large-button mt-3\">\n          <div class=\"create-nestimate mobile-nestimate\" (click)=\"Overlayopen()\" *ngIf=\"expressed=='false'\">\n            <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\">\n            <span class=\"text-create-nestimate mr-1\" id=\"boldText\">Express Interest</span>\n            <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n          </div>\n        </div>\n        <div class=\"expressed-container-button\" *ngIf=\"expressed=='true'\"></div>\n\n        <!-- <div class=\"large-button mt-3\" *ngIf=\"expressed=='true'\">\n          <div class=\"create-nestimate\">\n            <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\">\n            <span class=\"text-create-nestimate mr-1\" id=\"boldText\">Already Expressed</span>\n            <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n          </div>\n        </div> -->\n      </div>\n    </div>\n  </div>\n\n\n  <!--Content-->\n\n  <!-- <div class=\"images-seller-container\">\n    <div class=\"main-image-container\" *ngIf=\"allImages.length > 3\">\n      <div class=\"images-container\" >\n        <img src=\"{{allImages[0]}}\">\n\n      </div>\n      <div class=\"images-container\" >\n        <img src=\"{{allImages[1]}}\">\n\n      </div>\n      <div class=\"images-container\">\n        <img src=\"../../../../assets/Images/red.png\">\n        <div class=\"View-all-container\" id=\"boldText\" (click)=\"OpenImage()\">\n          View All\n        </div>\n      </div>\n    </div>\n\n    <div class=\"main-image-container\" *ngIf=\"allImages.length <= 2\">\n      <div class=\"images-container\" *ngFor=\"let allImages of allImages\" (click)=\"OpenImage()\">\n        <img src=\"{{allImages}}\">\n\n      </div>\n    </div>\n\n  </div> -->\n  <div class=\"result-content\">\n\n    <div class=\"left-side-content-result-buyer\">\n      <div style=\"height: 1em;background-color: white;\" *ngIf=\"allImages.length > 0\"></div>\n      <div style=\"background-color: white;\" *ngIf=\"allImages.length > 0\" >\n    <app-middle-slider userID='{{UserId}}' child='{{propertyId}}' ></app-middle-slider>\n    </div>\n<div class=\"top-areaselected\">\n      <!--Colored Item-->\n   \n      <div class=\"colored-text\">\n        <div class=\"left-colored\">\n          <div class=\"details-p-headings heading-nestimate\" *ngIf=\"PropertyFor=='buy'\" id=\"boldText\">Seller Desired\n            Price</div>\n          <div class=\"details-p-headings heading-nestimate\" *ngIf=\"PropertyFor=='rent'\" id=\"boldText\">Seller Desired\n            Rent</div>\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          &pound;{{price}}\n        </div>\n      </div>\n\n      <!--Colored Item-->\n      <div class=\"colored-text\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Postcode\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{postcode}}\n        </div>\n      </div>\n\n\n\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Street name\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{Streetname}}\n        </div>\n      </div>\n\n\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Property Type\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Terracedhouse'\">\n          Terraced House\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Countryhouse'\">\n          Country House\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Barnconversion'\">\n          Barn Conversion\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Townhouse'\">\n          Town House\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes == 'Detachedhouse'\">\n          Detached House\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyTypes != 'Detachedhouse' && PropertyTypes != 'Townhouse' && PropertyTypes != 'Barnconversion' && PropertyTypes != 'Countryhouse' && PropertyTypes != 'Terracedhouse'\">\n          {{PropertyTypes}}\n        </div>\n      </div>\n\n\n      <!--Colored Item-->\n      <div class=\"colored-text\">\n        <div class=\"left-colored\" id=\"boldText\">\n          No of Bedrooms\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{Maxroom}}\n        </div>\n      </div>\n\n      <!--Colored Item-->\n      <div class=\"colored-text\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Ownership\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{ownerships}}\n        </div>\n      </div>\n\n\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Address\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{LookingAddress}}\n        </div>\n      </div>\n\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Town/City\n        </div>\n        <div class=\"right-colored\" id=\"boldText\">\n          {{LookingTown}}\n        </div>\n\n      </div>\n\n      <!--Colored Item-->\n      <div class=\"colored-text\" *ngIf=\"Maxbathrooms != 'any'\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Bathrooms\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"Maxbathrooms != 'any'\">\n          {{Maxbathrooms }}\n        </div>\n      </div>\n\n\n      <!--Colored Item-->\n      <div class=\"colored-text\" *ngIf=\"Maxreception != 'any'\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Reception\n        </div>\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"Maxreception != 'any'\">\n          {{Maxreception}}\n        </div>\n      </div>\n      <!--withoutColored Item-->\n      <div class=\"colored-text without-color\" *ngIf=\"PropertyCondition != 'any'\">\n        <div class=\"left-colored\" id=\"boldText\">\n          Property Condition\n        </div>\n\n        <div class=\"right-colored\" id=\"boldText\" *ngIf=\"PropertyCondition != 'any'\">\n          {{PropertyCondition}}\n        </div>\n\n      </div>\n\n    </div>\n\n    <div class=\"lower-slected-area\">\n      <!-- <div *ngIf=\"PropertyCondition == 'any' || Maxreception == 'any' || Maxbathrooms == 'any'\"></div> -->\n      <!-- <div class=\"images-seller-container\">\n        <div class=\"main-image-container\" *ngIf=\"allImages.length > 3\">\n          <div class=\"images-container\" >\n            <img src=\"{{allImages[0]}}\">\n\n          </div>\n          <div class=\"images-container\" >\n            <img src=\"{{allImages[1]}}\">\n\n          </div>\n          <div class=\"images-container\">\n            <img src=\"../../../../assets/Images/red.png\">\n            <div class=\"View-all-container\" id=\"boldText\" (click)=\"OpenImage()\">\n              View All\n            </div>\n          </div>\n        </div>\n\n        <div class=\"main-image-container\" *ngIf=\"allImages.length <= 2\">\n          <div class=\"images-container\" *ngFor=\"let allImages of allImages\" (click)=\"OpenImage()\">\n            <img src=\"{{allImages}}\">\n\n          </div>\n        </div>\n\n      </div> -->\n\n    </div>\n      <div class=\"image-slide-main-container\" *ngIf=\"ImagesOpen\">\n\n        <div class=\"sub-container-image\">\n          <div class=\"image-slide-close-arrow\" (click)=\"closeImage()\">\n            <img src=\"../../../../assets/Images/cross.png\">\n          </div>\n          <div class=\"wrapper-sub-container-image\">\n            <mat-carousel timings=\"200ms ease-in\" [autoplay]=\"false\" interval=\"6000\" color=\"white\"\n              timings=\"250ms ease-in\" color=\"blue\" maxWidth=\"30\" proportion=\"50\" slides=\"20\" [loop]=\"true\"\n              [hideArrows]=\"false\" [hideIndicators]=\"false\" [useKeyboard]=\"true\" [useMouseWheel]=\"false\"\n              orientation=\"ltr\">\n              <mat-carousel-slide *ngFor=\"let AllImages of allImages;\" [image]=\"AllImages\" overlayColor=\"#ffffff\"\n                [hideOverlay]=\"true\">\n\n              </mat-carousel-slide>\n            </mat-carousel>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n    <div class=\"right-side-content-add\">\n      <div class=\"add-container\">\n        <img src=\"../../../../assets/Images/dummyadd.png\" class=\"add-image\">\n      </div>\n      <div class=\"add-container\">\n        <img src=\"../../../../assets/Images/dummyadd.png\" class=\"add-image\">\n      </div>\n    </div>\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<div class=\"continue-form\" *ngIf=\"overlay\">\n\n  <div class=\"continue-form-data\">\n    <div class=\"nestimate-logo\">\n      <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n\n    </div>\n    <div class=\"continue-text\">\n      <p class=\"overlay-text\" id=\"boldText\">Thank you for expressing</p>\n\n      <p class=\"overlay-text-third\" id=\"boldText\">{{notificationContent}}</p>\n    </div>\n\n\n    <div class=\"button-alignment\">\n      <div class=\"continue-button\" (click)=\"continueClose()\">\n        <div class=\"continue-button-container\" id=\"boldText\">\n          Cancel\n\n          <span class=\"arrow-text\"> &gt;</span>\n        </div>\n        <div class=\"continue-button\" (click)=\"submitForm()\">\n          <div class=\"continue-button-container\" id=\"boldText\">\n            Continue\n\n            <span class=\"arrow-text\"> &gt;</span>\n          </div>\n        </div>\n      </div>\n\n    </div>";
     /***/
   },
 
@@ -1151,7 +1151,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n  </div>\n</div>\n\n\n\n\n<div class=\"main-my-nestimate-container\">\n  <div class=\"no-property-Found\"  *ngIf=\"buyerProperty.length == '0'  && sellerConfirmed.length == '0'\" id=\"boldText\">\n    No Action Needed\n   </div>\n\n  <!--Seller Requirement-->\n  <!-- Seller Matches  with Property Buyer-->\n  <div class=\"result-nestimate-contianer\" *ngFor=\"let property of buyerProperty\">\n    <!--Expressed Buyer Properties-->\n\n  \n    <div class=\"check-condition\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <div class=\"check-confirm\" *ngIf=\"property.detail.matchStatus == 'confirm_interest'\">\n\n          \n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"wrapper-top-nestimate\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Terracedhouse'\">\n            Terraced House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Countryhouse'\">\n            Country House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Barnconversion'\">\n            Barn Conversion at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Townhouse'\">\n            Town House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Detachedhouse'\">\n            Detached House at {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType != 'Detachedhouse' && property.detail.BuyerDetails.PropertyType != 'Townhouse' && property.detail.BuyerDetails.PropertyType != 'Barnconversion' && property.detail.BuyerDetails.PropertyType != 'Countryhouse' && property.detail.BuyerDetails.PropertyType != 'Terracedhouse'\">\n            {{property.detail.BuyerDetails.PropertyType}}   at {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div> \n          </div>\n          <div class=\"wrapper-lower-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\">Confirmed</div>\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue expressed\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.BuyerDetails.MinAmount}} -\n                  &pound;{{property.detail.BuyerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button expressed-matches\" >\n            <div class=\"blue-button\" (click)=\"sellerValue(property,property.propertyId,true)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n         \n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n\n    <!--Not Expressed Buyer Properties-->\n    <div class=\"check-condition\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <div class=\"check-confirm\" *ngIf=\"property.detail.matchStatus == 'confirm_interest'\">\n\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"wrapper-top-nestimate\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Terracedhouse'\">\n            Terraced House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Countryhouse'\">\n            Country House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Barnconversion'\">\n            Barn Conversion at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Townhouse'\">\n            Town House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Detachedhouse'\">\n            Detached House at {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType != 'Detachedhouse' && property.detail.BuyerDetails.PropertyType != 'Townhouse' && property.detail.BuyerDetails.PropertyType != 'Barnconversion' && property.detail.BuyerDetails.PropertyType != 'Countryhouse' && property.detail.BuyerDetails.PropertyType != 'Terracedhouse'\">\n            {{property.detail.BuyerDetails.PropertyType}}   at {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div> \n          </div>\n          <div class=\"wrapper-lower-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\">Action Needed</div>\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.BuyerDetails.MinAmount}}-\n                  &pound;{{property.detail.BuyerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n            <div class=\"blue-button\" (click)=\"sellerValue(property,property.propertyId,expressed)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n\n\n\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n  <!--Buyer Matches-->\n\n\n  <div class=\"result-nestimate-contianer\" *ngFor=\"let property of sellerConfirmed\">\n\n    <div class=\"check-condition\" *ngIf=\"checkExpressForValue(property.propertyId) && property.detail.matchStatus == 'confirm_interest'\">\n      <div class=\"check-confirm\" >\n        <div class=\"blue-top-nestimate-border\">\n\n          <div class=\"wrapper-top-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Terracedhouse'\">\n              Terraced House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Countryhouse'\">\n              Country House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Barnconversion'\">\n              Barn Conversion at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Townhouse'\">\n              Town House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Detachedhouse'\">\n              Detached House at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType != 'Detachedhouse' && property.detail.SellerDetails.PropertyType != 'Townhouse' && property.detail.SellerDetails.PropertyType != 'Barnconversion' && property.detail.SellerDetails.PropertyType != 'Countryhouse' && property.detail.SellerDetails.PropertyType != 'Terracedhouse'\">\n              {{property.detail.SellerDetails.PropertyType}}   at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div> \n        \n\n        </div>\n        <div class=\"wrapper-lower-nestimate\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">Action Taken</div>\n        </div>\n\n\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue expressed\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"seller-nestimate\" *ngIf=\"property.detail.SellerDetails.Images.length > 0\">\n                <app-images-slider userID='{{property.detail.SellerUserId}}' child='{{property.detail.SellerPropertyId}}'></app-images-slider>\n                <div style=\"height: 1em;\"></div>\n               </div>\n       <div class=\"mat-card-content-image\" *ngIf=\"property.detail.SellerDetails.Images.length == 0\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\" >Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n      \n         \n          </div>\n          <div class=\"right-side-button expressed expressed-matches\">\n            <div class=\"blue-button\"  (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n        </div>\n        </div>\n      </div>\n\n    </div>\n\n\n    <div class=\"check-condition\" *ngIf=\"property.detail.matchStatus == 'confirmed'\">\n      <div class=\"check-confirm\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"wrapper-top-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Terracedhouse'\">\n              Terraced House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Countryhouse'\">\n              Country House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Barnconversion'\">\n              Barn Conversion at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Townhouse'\">\n              Town House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Detachedhouse'\">\n              Detached House at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType != 'Detachedhouse' && property.detail.SellerDetails.PropertyType != 'Townhouse' && property.detail.SellerDetails.PropertyType != 'Barnconversion' && property.detail.SellerDetails.PropertyType != 'Countryhouse' && property.detail.SellerDetails.PropertyType != 'Terracedhouse'\">\n              {{property.detail.SellerDetails.PropertyType}}   at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div> \n          \n\n          </div>\n          <div class=\"wrapper-lower-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\">Confirmed</div>\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"seller-nestimate\" *ngIf=\"property.detail.SellerDetails.Images.length > 0\">\n                <app-images-slider userID='{{property.detail.SellerUserId}}' child='{{property.detail.SellerPropertyId}}'></app-images-slider>\n                <div style=\"height: 1em;\"></div>\n               </div>\n       <div class=\"mat-card-content-image\" *ngIf=\"property.detail.SellerDetails.Images.length == 0\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n     \n    <div class=\"blue-button\" (click)=\"printvlaue(property)\" (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n            \n          </div>\n        </div>\n      </div>\n  \n    </div>\n\n    <div class=\"check-condition\" *ngIf=\"!checkExpressForValue(property.propertyId) && property.detail.matchStatus == 'confirm_interest'\">\n      <div class=\"check-confirm\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"wrapper-top-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Terracedhouse'\">\n              Terraced House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Countryhouse'\">\n              Country House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Barnconversion'\">\n              Barn Conversion at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Townhouse'\">\n              Town House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Detachedhouse'\">\n              Detached House at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType != 'Detachedhouse' && property.detail.SellerDetails.PropertyType != 'Townhouse' && property.detail.SellerDetails.PropertyType != 'Barnconversion' && property.detail.SellerDetails.PropertyType != 'Countryhouse' && property.detail.SellerDetails.PropertyType != 'Terracedhouse'\">\n              {{property.detail.SellerDetails.PropertyType}}   at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div> \n           \n\n\n            \n          </div>\n          <div class=\"wrapper-lower-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\">Action Needed</div>\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"seller-nestimate\" *ngIf=\"property.detail.SellerDetails.Images.length > 0\">\n                <app-images-slider userID='{{property.detail.SellerUserId}}' child='{{property.detail.SellerPropertyId}}'></app-images-slider>\n                <div style=\"height: 1em;\"></div>\n               </div>\n       <div class=\"mat-card-content-image\" *ngIf=\"property.detail.SellerDetails.Images.length == 0\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Desired Price:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Desired Rent:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\"  (click)=\"printvlaue(property.detail.SellerPropetyId)\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n            <div class=\"blue-button\"  (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n          </div>\n        </div>\n      </div>\n  \n    </div>\n  </div>\n\n\n  \n<!-- \n  <div class=\"result-nestimate-contianer test1\" *ngFor=\"let property of sellerProperty\">\n   \n  </div>\n\n  <div class=\"result-nestimate-contianer test2\" *ngFor=\"let property of sellerConfirmed\">\n  \n  </div>  -->\n\n\n\n\n\n  </div>\n\n\n\n\n\n\n\n  ";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n  </div>\n</div>\n\n\n\n\n<div class=\"main-my-nestimate-container\">\n  <div class=\"no-property-Found\"  *ngIf=\"buyerProperty.length == '0'  && sellerConfirmed.length == '0'\" id=\"boldText\">\n    No Action Needed\n   </div>\n\n  <!--Seller Requirement-->\n  <!-- Seller Matches  with Property Buyer-->\n  <div class=\"result-nestimate-contianer\" *ngFor=\"let property of buyerProperty\">\n    <!--Expressed Buyer Properties-->\n\n  \n    <div class=\"check-condition\" *ngIf=\"checkExpressForValue(property.propertyId)\">\n      <div class=\"check-confirm\" *ngIf=\"property.detail.matchStatus == 'confirm_interest'\">\n\n          \n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"wrapper-top-nestimate\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Terracedhouse'\">\n            Terraced House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Countryhouse'\">\n            Country House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Barnconversion'\">\n            Barn Conversion at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Townhouse'\">\n            Town House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Detachedhouse'\">\n            Detached House at {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType != 'Detachedhouse' && property.detail.BuyerDetails.PropertyType != 'Townhouse' && property.detail.BuyerDetails.PropertyType != 'Barnconversion' && property.detail.BuyerDetails.PropertyType != 'Countryhouse' && property.detail.BuyerDetails.PropertyType != 'Terracedhouse'\">\n            {{property.detail.BuyerDetails.PropertyType}}   at {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div> \n          </div>\n          <div class=\"wrapper-lower-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\">Confirmed</div>\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue expressed\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.BuyerDetails.MinAmount}} -\n                  &pound;{{property.detail.BuyerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button expressed-matches\" >\n            <div class=\"blue-button\" (click)=\"sellerValue(property,property.propertyId,true)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n         \n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n\n    <!--Not Expressed Buyer Properties-->\n    <div class=\"check-condition\" *ngIf=\"!checkExpressForValue(property.propertyId)\">\n      <div class=\"check-confirm\" *ngIf=\"property.detail.matchStatus == 'confirm_interest'\">\n\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"wrapper-top-nestimate\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Terracedhouse'\">\n            Terraced House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Countryhouse'\">\n            Country House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Barnconversion'\">\n            Barn Conversion at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Townhouse'\">\n            Town House at\n            {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType == 'Detachedhouse'\">\n            Detached House at {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div>\n          <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.BuyerDetails.PropertyType != 'Detachedhouse' && property.detail.BuyerDetails.PropertyType != 'Townhouse' && property.detail.BuyerDetails.PropertyType != 'Barnconversion' && property.detail.BuyerDetails.PropertyType != 'Countryhouse' && property.detail.BuyerDetails.PropertyType != 'Terracedhouse'\">\n            {{property.detail.BuyerDetails.PropertyType}}   at {{property.detail.BuyerDetails.Lookingpostcode}}\n          </div> \n          </div>\n          <div class=\"wrapper-lower-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\">Action Needed</div>\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"mat-card-content-image\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.BuyerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.BuyerDetails.MinAmount}}-\n                  &pound;{{property.detail.BuyerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.BuyerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n            <div class=\"blue-button\" (click)=\"sellerValue(property,property.propertyId,expressed)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n\n\n\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n  <!--Buyer Matches-->\n\n\n  <div class=\"result-nestimate-contianer\" *ngFor=\"let property of sellerConfirmed\">\n\n    <div class=\"check-condition\" *ngIf=\"checkExpressForValue(property.propertyId) && property.detail.matchStatus == 'confirm_interest'\">\n      <div class=\"check-confirm\" >\n        <div class=\"blue-top-nestimate-border\">\n\n          <div class=\"wrapper-top-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Terracedhouse'\">\n              Terraced House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Countryhouse'\">\n              Country House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Barnconversion'\">\n              Barn Conversion at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Townhouse'\">\n              Town House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Detachedhouse'\">\n              Detached House at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType != 'Detachedhouse' && property.detail.SellerDetails.PropertyType != 'Townhouse' && property.detail.SellerDetails.PropertyType != 'Barnconversion' && property.detail.SellerDetails.PropertyType != 'Countryhouse' && property.detail.SellerDetails.PropertyType != 'Terracedhouse'\">\n              {{property.detail.SellerDetails.PropertyType}}   at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div> \n        \n\n        </div>\n        <div class=\"wrapper-lower-nestimate\">\n          <div class=\"blue-nestimate-text\" id=\"boldText\">Action Taken</div>\n        </div>\n\n\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue expressed\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"seller-nestimate\" *ngIf=\"property.detail.SellerDetails.Images.length > 0\">\n                <app-images-slider userID='{{property.detail.SellerUserId}}' child='{{property.detail.SellerPropertyId}}'></app-images-slider>\n                <div style=\"height: 1em;\"></div>\n               </div>\n       <div class=\"mat-card-content-image\" *ngIf=\"property.detail.SellerDetails.Images.length == 0\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\" >Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n            \n      \n         \n          </div>\n          <div class=\"right-side-button expressed expressed-matches\">\n            <div class=\"blue-button\"  (click)=\"printvlaue(property,true,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n        </div>\n        </div>\n      </div>\n\n    </div>\n\n\n    <div class=\"check-condition\" *ngIf=\"property.detail.matchStatus == 'confirmed'\">\n      <div class=\"check-confirm\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"wrapper-top-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Terracedhouse'\">\n              Terraced House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Countryhouse'\">\n              Country House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Barnconversion'\">\n              Barn Conversion at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Townhouse'\">\n              Town House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Detachedhouse'\">\n              Detached House at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType != 'Detachedhouse' && property.detail.SellerDetails.PropertyType != 'Townhouse' && property.detail.SellerDetails.PropertyType != 'Barnconversion' && property.detail.SellerDetails.PropertyType != 'Countryhouse' && property.detail.SellerDetails.PropertyType != 'Terracedhouse'\">\n              {{property.detail.SellerDetails.PropertyType}}   at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div> \n          \n\n          </div>\n          <div class=\"wrapper-lower-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\">Confirmed</div>\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"seller-nestimate\" *ngIf=\"property.detail.SellerDetails.Images.length > 0\">\n                <app-images-slider userID='{{property.detail.SellerUserId}}' child='{{property.detail.SellerPropertyId}}'></app-images-slider>\n                <div style=\"height: 1em;\"></div>\n               </div>\n       <div class=\"mat-card-content-image\" *ngIf=\"property.detail.SellerDetails.Images.length == 0\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Price Range:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Rent Range:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n     \n    <div class=\"blue-button\" (click)=\"printvlaue(property)\" (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n            \n          </div>\n        </div>\n      </div>\n  \n    </div>\n\n    <div class=\"check-condition\" *ngIf=\"!checkExpressForValue(property.propertyId) && property.detail.matchStatus == 'confirm_interest'\">\n      <div class=\"check-confirm\">\n        <div class=\"blue-top-nestimate-border\">\n          <div class=\"wrapper-top-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Terracedhouse'\">\n              Terraced House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Countryhouse'\">\n              Country House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Barnconversion'\">\n              Barn Conversion at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Townhouse'\">\n              Town House at\n              {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType == 'Detachedhouse'\">\n              Detached House at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div>\n            <div class=\"blue-nestimate-text\" id=\"boldText\" *ngIf=\"property.detail.SellerDetails.PropertyType != 'Detachedhouse' && property.detail.SellerDetails.PropertyType != 'Townhouse' && property.detail.SellerDetails.PropertyType != 'Barnconversion' && property.detail.SellerDetails.PropertyType != 'Countryhouse' && property.detail.SellerDetails.PropertyType != 'Terracedhouse'\">\n              {{property.detail.SellerDetails.PropertyType}}   at {{property.detail.SellerDetails.Lookingpostcode}}\n            </div> \n           \n\n\n            \n          </div>\n          <div class=\"wrapper-lower-nestimate\">\n            <div class=\"blue-nestimate-text\" id=\"boldText\">Action Needed</div>\n          </div>\n        </div>\n        <div class=\"lower-box-netaimate\">\n          <div class=\"container-light-blue\">\n            <div class=\"mat-card-content-new-content\">\n              <div class=\"seller-nestimate\" *ngIf=\"property.detail.SellerDetails.Images.length > 0\">\n                <app-images-slider userID='{{property.detail.SellerUserId}}' child='{{property.detail.SellerPropertyId}}'></app-images-slider>\n                <div style=\"height: 1em;\"></div>\n               </div>\n       <div class=\"mat-card-content-image\" *ngIf=\"property.detail.SellerDetails.Images.length == 0\">\n                <img src=\"../../../../../../assets/Images/sidelogo.png\" class=\"match-images\">\n              </div>\n              <div class=\"mat-card-content-text\">\n                <div class=\"price-container\">\n                  <span class=\"outputText price-font\" id=\"boldText\">\n                    <span class=\"heading-nestimate heading-cards\" id=\"boldText\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='buy'\">Desired Price:</span>\n                    <span class=\"heading-nestimate heading-cards\"\n                      *ngIf=\"property.detail.SellerDetails.PropertyFor=='rent'\">Desired Rent:</span>\n                  </span>\n                </div>\n                <div class=\"price-laign price-font\" id=\"semiboldText\">\n                  &pound;{{property.detail.SellerDetails.MaxAmount}} \n                </div>\n                <div class=\"other-text\">\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\">Postcode:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.Lookingpostcode}}</span>\n                  </div>\n                  <div class=\"heading-nestimate heading-cards\" id=\"boldText\"  (click)=\"printvlaue(property.detail.SellerPropetyId)\">Property Type:<span class=\"outputText\"\n                      style=\"padding-left: 0.5em;\" id=\"semiboldText\">{{property.detail.SellerDetails.PropertyType}}</span>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"right-side-button\">\n            <div class=\"blue-button\"  (click)=\"printvlaue(property,expressed,property.propertyId)\">\n              <div class=\"button-text\" id=\"semiboldText\" >See Details</div>\n              <div class=\"button-icon\">&gt;</div>\n            </div>\n          </div>\n        </div>\n      </div>\n  \n    </div>\n  </div>\n\n\n  \n\n\n\n\n\n  </div>\n\n\n\n\n\n\n\n  ";
     /***/
   },
 
@@ -1291,7 +1291,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n      </div>\n</div>\n\n\n\n\n<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\n  <div class=\"login-button-main\">\n    <p class=\"Login-buton-text\">Log In</p>\n  </div>\n</div>\n\n\n<div class=\"mobile-wrapper desktop-menu\">\n  <div class=\"mobile-container\" id=\"header-main\">\n    <div class=\"content\">\n      <nav *ngIf=\"!agentCustomer\" class=\"Desktop-menu\">\n        <div class=\"main-navigation-bar\">\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" (click)=\"navigateHome()\" />\n          </div>\n          <div class=\"register-free-text\" id=\"boldText\" *ngIf=\"!isLoggedIn &&   !hideRegister\">Register Free!</div>\n          <div class=\"register-free-text\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\"> </div>\n          <div class=\"welcome-text\" id=\"boldText\" *ngIf=\"isLoggedIn\">Hello, {{userName}}\n            <img src=\"../../../assets/Images/left-arrow (1).png\" class=\"down-arrow\" (click)=\"openMenu()\" *ngIf=\"open\">\n            <img src=\"../../../assets/Images/left-arrow (1).png\" class=\"down-arrow\" *ngIf=\"!open\" (click)=\"closeMenu()\">\n            <div class=\"notification-upper\" *ngIf=\"isLoggedIn && bellShow\">\n              <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size new\" *ngIf=\"!bellicontwo\"\n                (click)=\"bellone()\">\n              <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size\" *ngIf=\"bellicontwo\"\n                (click)=\"belltwo()\">\n              <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\">{{notifications}}</span>\n            </div>\n          </div>\n          <div class=\"plus-icon\" *ngIf=\"isLoggedIn && !formPage\">\n            <img src=\"../../../assets/Images/home.png\" class=\"icon-size\" routerLink=\"/homenew\">\n          </div>\n          <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && !hideRegister\" (click)=\"showLoginPopup()\">\n            Login</div>\n          <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">\n            Login as Agent</div>\n          <div class=\"create-nestimate\" id=\"boldText\" *ngIf=\"isLoggedIn && formPage\" routerLink=\"/homenew\">Create New\n            Nestimate</div>\n        </div>\n      </nav>\n      <nav *ngIf=\"agentCustomer\" class=\"Desktop-menu\">\n        <div class=\"main-navigation-bar agent-navigation-bar\">\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n          </div>\n          <div id=\"boldText\" *ngIf=\"isLoggedIn\" class=\"logout-text\" (click)=\"SignOut()\">Logout</div>\n          <img src=\"../../../assets/Images/menu.png\" class=\"menu-image\" *ngIf=\"MobileOpenMenu\"\n            (click)=\"closeMobileMenu()\">\n          <img src=\"../../../assets/Images/menu.png\" class=\"menu-image\" *ngIf=\"!MobileOpenMenu\"\n            (click)=\"OpenMobileMenu()\">\n        </div>\n      </nav>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n\n<div class=\"menu-items\" *ngIf=\"menuItem\">\n  <div class=\"menu-items-content\" (click)=\"manageMyNestimate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/documents.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Manage My Nestimates\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"profileNestimate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/identity-card.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Details\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"favorate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/star.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Favourites\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"recently()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/time-outline.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Recently Viewed\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"SignOut()\" (click)=\"Itemmenu()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/log-out.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Logout\n    </div>\n  </div>\n</div>\n\n\n<div class=\"menu-items Mobile-menu\" *ngIf=\"MobileOpenMenu\">\n  <div class=\"menu-items-content\" (click)=\"leads()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/documents.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Leads\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"Profile()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/identity-card.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Details\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"Archieve()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/archive.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Archive\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"SignOut()\" (click)=\"Itemmenu()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/log-out.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Logout\n    </div>\n  </div>\n</div>\n\n\n\n\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\n</div>\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\n\n  <div class=\"Login-area\" *ngIf=\"signin\">\n    <div class=\"main-area-field\">\n      <div class=\"login-heading-cross\">\n        <div class=\"wrap-Login-area\">\n          <h1 class=\"heading-login-area\">Login</h1>\n        </div>\n        <div class=\"close-popup\">\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross-Login\" (click)=\"newclose()\">\n        </div>\n      </div>\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n          </div>\n\n          <div class=\"password-field-container\">\n\n            <input matInput [type]=\"hide ? 'password' : 'text'\" class=\"form-control custom-field\" name=\"passs\"\n              #userPasswordLogin [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n\n          </div>\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section\">\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\">\n                Remember me\n              </mat-checkbox>\n\n\n\n            </section>\n\n            <section class=\"example-section\">\n              <div class=\"show-password heading-nestimate\" (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">Show Password?</div>\n            </section>\n\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          \n          <button mat-raised-button color=\"primary\" class=\"login-button\" (click)=\"UserLogin(emails,passs)\" *ngIf=\"UserCanLogin\">Login</button>\n          <button mat-raised-button color=\"primary\" class=\"login-button\" (click)=\"signIn(emails,passs)\" *ngIf=\"!UserCanLogin\">Login</button>\n\n\n          <div class=\"forgot-passwords heading-nestimate\">\n            Forgot Password ?\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <span class=\"heading-nestimate\">Log In</span>\n            </div>\n            <div class=\"google-login\" (click)=\"Googlelogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"facebook-login\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\">Don't have an account? <span class=\"sign-up-link\" (click)=\"userSignup()\">Sign\n                  Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n  <div class=\"Login-area signup-area\" *ngIf=\"!signin\">\n    <div class=\"main-area-field\">\n      <div class=\"login-heading-cross\">\n        <div class=\"wrap-Login-area\">\n          <h1 class=\"heading-login-area\">Sign Up</h1>\n        </div>\n        <div class=\"close-popup\">\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross-Login\" (click)=\"newclose()\">\n        </div>\n      </div>\n      <div class=\"login-area-wrap\">\n        <div class=\"fields-container\">\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\" [(ngModel)]=\"name\"\n              #displayName>\n          </div>\n\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n\n          </div>\n\n\n          <div class=\"password-field-container\">\n\n            <input matInput [type]=\"hide ? 'password' : 'text'\" class=\"form-control custom-field\" name=\"passs\"\n              #userPasswordLogin [(ngModel)]=\"passs\" placeholder=\"Enter Password\" pattern='(?=^.{8,}$)((?=.*\\d)|(?=.*\\W+))(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$'>\n            <section class=\"example-section\" style=\"margin-top: 10px;\">\n              <div class=\"show-password heading-nestimate\" (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">Show Password?</div>\n            </section>\n          </div>\n\n\n          <button mat-raised-button color=\"primary\" class=\"login-button\"\n            (click)=\"signUp(name,emails,passs,type)\">Signup</button>\n\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <span class=\"heading-nestimate\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"Googlelogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"facebook-login\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"userLogin()\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div> \n\n\n\n\n<div *ngIf=\"notificationoverlay\" class=\"notification-overlay-main\">\n  <div class=\"main-grid-notifucation\">\n\n    <div class=\"heading-notofication\" id=\"boldText\" *ngIf=\"confirmInterests.length > 0\">New</div>\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterests\">\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n\n\n\n\n      </div>\n\n\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n\n\n\n\n      </div>\n\n\n\n\n\n\n\n\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A seller expressed interest on your Nestimate.<br>Click to Review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Select_Agent' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed as a Agent.<br>Click to review<br></div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n\n\n      <!--Earlier-->\n\n\n\n\n    </div>\n\n\n    <div class=\"heading-notofication\" id=\"boldText\" *ngIf=\"confirmNotitfication.length > 0\">Earlier</div>\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmNotitfication\">\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n\n\n\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\"> A Buyer expressed insterest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed'  &&  confirmInterest.Detail.viewed != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed </div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity'  &&  confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed </div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\"> A seller expressed interest on your Nestimate.<br>Click to Review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Select_Agent'  &&  confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed </div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed as a Agent.<br>Click to review<br> </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n</div>\n\n\n\n\n\n\n<!--Login Area-->\n<div class=\"Login-from-top\" *ngIf=\"loginTop\">\n  <div class=\"Login-area\" *ngIf=\"!SignUp\">\n    <div class=\"top-cross-button\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area\" id=\"boldText\">Login</h1>\n      </div>\n\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" name=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"\n              (keydown.enter)=\"applyFilter(emails.value)\">\n          </mat-form-field>\n\n\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"applyFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}\n            </mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section Remember-me-inline-text\">\n\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\" (click)=\"check(emails, passs)\">\n                Remember me\n              </mat-checkbox>\n\n              <span routerLink=\"/forgot-password\" id=\"boldText\" class=\"dark-color\" (click)=\"forgot()\">Forgot Password\n                ?</span>\n            </section>\n\n\n            <!-- id=\"boldText\" -->\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\" id=\"boldText\">Login</button>\n          </div>\n\n\n\n\n          <div id=\"semiboldText\" class=\"a-row a-spacing-top-medium a-size-small dark-color\">\n            By signing-in you agree to Nestimates's <a (click)=\"terms()\">Terms and condition of Use & Sale</a>. Please see our <a\n              (click)=\"privacy()\">Privacy Notice</a>.\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n              <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Log In</span>\n\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n  <div class=\"Login-area signup-area\" *ngIf=\"SignUp\">\n    <div class=\"top-cross-button small-phone\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area dark-color\" id=\"boldText\">Sign Up</h1>\n      </div>\n\n\n      <div class=\"login-area-wrap\">\n\n        <div class=\"fields-container\">\n\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Name</mat-label>\n            <input matInput placeholder=\"Name\" name=\"name\" [(ngModel)]=\"name\" #displayName\n              (keydown.enter)=\"SignupFilter(displayName .value)\">\n          </mat-form-field>\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"\n              (keydown.enter)=\"SignupFilter(userEmailLogin.value)\">\n          </mat-form-field>\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"SignupFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}\n            </mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n          <!-- <section class=\"example-section property-con-form dark-color\">\n\n            <mat-checkbox class=\"example-margin\" value=\"Email\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"SMS\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"Post\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"All\">Email,SMS and Post from acrefully\n              selected third port\n            </mat-checkbox>\n\n          </section> -->\n          <app-password-pop (click)=\"passwordpopclose()\"  *ngIf=\"passwordpop\"></app-password-pop>\n          <!-- <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">By clicking below to register, you confirm that you agree\n            to our <a (click)=\"terms()\">Terms & Conditions </a> and you have read and understood our <a\n              (click)=\"privacy()\">Privacy Policy </a></div> -->\n          <div for=\"text\" class=\"policy\" id=\"semiboldText\" class=\"dark-color\">{{secondLine}} </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signUp(displayName.value,userEmailLogin.value,userPasswordLogin.value,type)\" id=\"boldText\">Sign\n              Up</button>\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n              <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n\n    </div>\n  </div>\n</div>\n\n\n\n<!--OverLay-->\n<div class=\"continue-form\" *ngIf=\"overlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\" id=\"boldText\">Thanks for registering!</p>\n    <p class=\"overlay-text\" id=\"boldText\">{{notificationContent}}</p>\n  </div>\n  <div class=\"continue-button\" (click)=\"continueClose()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n      Continue\n\n      <span class=\"arrow-text\"> &gt;</span>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n\n\n<!--User Menu Bar-->\n<div class=\"mobile-Menu\" id=\"not-login-mobile-menu\" *ngIf=\"!hideRegister\">\n\n  <div class=\"menu-bar-icon\">\n    <!--Agent Menu -->\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image\"\n      *ngIf=\"MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"closeMobileMenu()\">\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"!MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"OpenMobileMenu()\">\n    <!--User Menu -->\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image\" *ngIf=\"isLoggedIn && open &&  !hideRegister\"\n      (click)=\"openMenu()\">\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"isLoggedIn && !open &&  !hideRegister\" (click)=\"closeMenu()\">\n  </div>\n\n  <!--User Home Click-->\n  <div class=\"menu-bar-icon\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"../../../assets/Images/home.png\" class=\"icon-size\" routerLink=\"/homenew\" *ngIf=\"isLoggedIn\">\n  </div>\n  <!--User Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"!isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav not-loggen-in\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n  <!--User Notification Icon-->\n  <div class=\"notification-upper\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <div *ngIf=\"isLoggedIn && bellShow\">\n      <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size new\" *ngIf=\"!bellicontwo\"\n        (click)=\"bellone()\">\n      <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size\" *ngIf=\"bellicontwo\" (click)=\"belltwo()\">\n      <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\" (click)=\"bellone()\">{{notifications}}</span>\n    </div>\n  </div>\n  <!--User Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" (click)=\"showLoginPopup()\" *ngIf=\"!isLoggedIn && !hideRegister\">Login</div>\n  <!--Agent Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">Login\n  </div>\n\n  <!--Logout-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn\">\n    <img src=\"../../../assets/Images/log-out.png\" class=\"log-out-logo\" (click)=\"SignOut()\" />\n  </div>\n\n\n\n\n\n</div>\n\n\n\n\n<!--Agent Menu Bar-->\n<div class=\"mobile-Menu agent-menu\" id=\"not-login-mobile-menu\" *ngIf=\"hideRegister\">\n\n  <div class=\"menu-bar-icon\">\n    <!--Agent Menu -->\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image\"\n      *ngIf=\"MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"closeMobileMenu()\">\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"!MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"OpenMobileMenu()\">\n    <!--User Menu -->\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image\" *ngIf=\"isLoggedIn && open &&  !hideRegister\"\n      (click)=\"openMenu()\">\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"isLoggedIn && !open &&  !hideRegister\" (click)=\"closeMenu()\">\n  </div>\n\n\n  <!--User Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"!isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav not-loggen-in\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" (click)=\"showLoginPopup()\" *ngIf=\"!isLoggedIn && !hideRegister\">Login</div>\n  <!--Agent Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">Login\n  </div>\n\n  <!--Logout-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn\">\n    <img src=\"../../../assets/Images/log-out.png\" class=\"log-out-logo\" (click)=\"SignOut()\" />\n  </div>\n\n\n\n\n\n</div>\n\n\n\n\n<!-- <div class=\"password-pop\" *ngIf=\"passwordpop\">\n  <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n</div> -->\n\n<div class=\"email-pop\" *ngIf=\"emailpop\">\n\n  <app-email-pop (click)=\"emailpopclose()\"></app-email-pop>\n</div>\n\n\n<div class=\"outside-click\" *ngIf=\"outside\" (click)=\"closealloutside()\"></div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/Nestimatelogo.png\" class=\"image-loader-nestimate\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading</p>\n      </div>\n</div>\n\n\n\n\n<div class=\"login-desktop-button\" (click)=\" openLogIn()\">\n  <div class=\"login-button-main\">\n    <p class=\"Login-buton-text\">Log In</p>\n  </div>\n</div>\n\n\n<div class=\"mobile-wrapper desktop-menu\">\n  <div class=\"mobile-container\" id=\"header-main\">\n    <div class=\"content\">\n      <nav *ngIf=\"!agentCustomer\" class=\"Desktop-menu\">\n        <div class=\"main-navigation-bar\">\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" (click)=\"navigateHome()\" />\n          </div>\n          <div class=\"register-free-text\" id=\"boldText\" *ngIf=\"!isLoggedIn &&   !hideRegister\">Register Free!</div>\n          <div class=\"register-free-text\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\"> </div>\n          <div class=\"welcome-text\" id=\"boldText\" *ngIf=\"isLoggedIn\">Hello, {{userName}}\n            <img src=\"../../../assets/Images/left-arrow (1).png\" class=\"down-arrow\" (click)=\"openMenu()\" *ngIf=\"open\">\n            <img src=\"../../../assets/Images/left-arrow (1).png\" class=\"down-arrow\" *ngIf=\"!open\" (click)=\"closeMenu()\">\n            <div class=\"notification-upper\" *ngIf=\"isLoggedIn && bellShow\">\n              <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size new\" *ngIf=\"!bellicontwo\"\n                (click)=\"bellone()\">\n              <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size\" *ngIf=\"bellicontwo\"\n                (click)=\"belltwo()\">\n              <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\">{{notifications}}</span>\n            </div>\n          </div>\n          <div class=\"plus-icon\" *ngIf=\"isLoggedIn && !formPage\">\n            <img src=\"../../../assets/Images/home.png\" class=\"icon-size\" routerLink=\"/homenew\">\n          </div>\n          <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && !hideRegister\" (click)=\"showLoginPopup()\">\n            Login</div>\n          <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">\n            Login as Agent</div>\n          <div class=\"create-nestimate\" id=\"boldText\" *ngIf=\"isLoggedIn && formPage\" routerLink=\"/homenew\">Create New\n            Nestimate</div>\n        </div>\n      </nav>\n      <nav *ngIf=\"agentCustomer\" class=\"Desktop-menu\">\n        <div class=\"main-navigation-bar agent-navigation-bar\">\n          <div class=\"imge-logo-header\">\n            <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n          </div>\n          <div id=\"boldText\" *ngIf=\"isLoggedIn\" class=\"logout-text\" (click)=\"SignOut()\">Logout</div>\n          <img src=\"../../../assets/Images/menu.png\" class=\"menu-image\" *ngIf=\"MobileOpenMenu\"\n            (click)=\"closeMobileMenu()\">\n          <img src=\"../../../assets/Images/menu.png\" class=\"menu-image\" *ngIf=\"!MobileOpenMenu\"\n            (click)=\"OpenMobileMenu()\">\n        </div>\n      </nav>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n\n<div class=\"menu-items\" *ngIf=\"menuItem\">\n  <div class=\"menu-items-content\" (click)=\"manageMyNestimate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/documents.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Manage My Nestimates\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"profileNestimate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/identity-card.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Details\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"favorate()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/star.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Favourites\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"recently()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/time-outline.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Recently Viewed\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"SignOut()\" (click)=\"Itemmenu()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/log-out.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Logout\n    </div>\n  </div>\n</div>\n\n\n<div class=\"menu-items Mobile-menu\" *ngIf=\"MobileOpenMenu\">\n  <div class=\"menu-items-content\" (click)=\"leads()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/documents.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Leads\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"Profile()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/identity-card.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      My Details\n    </div>\n  </div>\n  <div class=\"menu-items-content\" (click)=\"Archieve()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/archive.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Archive\n    </div>\n  </div>\n\n  <div class=\"menu-items-content\" (click)=\"SignOut()\" (click)=\"Itemmenu()\">\n    <div class=\"image-menu-item\">\n      <img src=\"../../../assets/Images/log-out.png\" class=\"document-image\">\n    </div>\n    <div class=\"name-menu-item\" id=\"boldText\">\n      Logout\n    </div>\n  </div>\n</div>\n\n\n\n\n<div class=\"plus=menu-item\" *ngIf=\"plusMenu\">\n  <app-plus (click)=\"plusMenuContainer()\"></app-plus>\n</div>\n<div class=\"main-background-login\" *ngIf=\"navLogin\">\n\n  <div class=\"Login-area\" *ngIf=\"signin\">\n    <div class=\"main-area-field\">\n      <div class=\"login-heading-cross\">\n        <div class=\"wrap-Login-area\">\n          <h1 class=\"heading-login-area\">Login</h1>\n        </div>\n        <div class=\"close-popup\">\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross-Login\" (click)=\"newclose()\">\n        </div>\n      </div>\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n          </div>\n\n          <div class=\"password-field-container\">\n\n            <input matInput [type]=\"hide ? 'password' : 'text'\" class=\"form-control custom-field\" name=\"passs\"\n              #userPasswordLogin [(ngModel)]=\"passs\" placeholder=\"Enter Password\">\n\n          </div>\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section\">\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\">\n                Remember me\n              </mat-checkbox>\n\n\n\n            </section>\n\n            <section class=\"example-section\">\n              <div class=\"show-password heading-nestimate\" (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">Show Password?</div>\n            </section>\n\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          \n          <button mat-raised-button color=\"primary\" class=\"login-button\" (click)=\"UserLogin(emails,passs)\" *ngIf=\"UserCanLogin\">Login</button>\n          <button mat-raised-button color=\"primary\" class=\"login-button\" (click)=\"signIn(emails,passs)\" *ngIf=\"!UserCanLogin\">Login</button>\n\n\n          <div class=\"forgot-passwords heading-nestimate\">\n            Forgot Password ?\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <span class=\"heading-nestimate\">Log In</span>\n            </div>\n            <div class=\"google-login\" (click)=\"Googlelogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"facebook-login\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\">Don't have an account? <span class=\"sign-up-link\" (click)=\"userSignup()\">Sign\n                  Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n  <div class=\"Login-area signup-area\" *ngIf=\"!signin\">\n    <div class=\"main-area-field\">\n      <div class=\"login-heading-cross\">\n        <div class=\"wrap-Login-area\">\n          <h1 class=\"heading-login-area\">Sign Up</h1>\n        </div>\n        <div class=\"close-popup\">\n          <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross-Login\" (click)=\"newclose()\">\n        </div>\n      </div>\n      <div class=\"login-area-wrap\">\n        <div class=\"fields-container\">\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" placeholder=\"Full Name\" name=\"name\" [(ngModel)]=\"name\"\n              #displayName>\n          </div>\n\n\n          <div class=\"email-field-container\">\n            <input type=\"text\" class=\"form-control custom-field\" type=\"email\" name=\"emails\" #userEmailLogin\n              [(ngModel)]=\"emails\" placeholder=\"Enter Email\">\n\n          </div>\n\n\n          <div class=\"password-field-container\">\n\n            <input matInput [type]=\"hide ? 'password' : 'text'\" class=\"form-control custom-field\" name=\"passs\"\n              #userPasswordLogin [(ngModel)]=\"passs\" placeholder=\"Enter Password\" pattern='(?=^.{8,}$)((?=.*\\d)|(?=.*\\W+))(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$'>\n            <section class=\"example-section\" style=\"margin-top: 10px;\">\n              <div class=\"show-password heading-nestimate\" (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n                [attr.aria-pressed]=\"hide\">Show Password?</div>\n            </section>\n          </div>\n\n\n          <button mat-raised-button color=\"primary\" class=\"login-button\"\n            (click)=\"signUp(name,emails,passs,type)\">Signup</button>\n\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <span class=\"heading-nestimate\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"Googlelogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"facebook-login\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\">Continue with Google\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"userLogin()\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n</div> \n\n\n\n\n<div *ngIf=\"notificationoverlay\" class=\"notification-overlay-main\">\n  <div class=\"main-grid-notifucation\">\n\n    <div class=\"heading-notofication\" id=\"boldText\" *ngIf=\"confirmInterests.length > 0\">New</div>\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmInterests\">\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\"  (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"  (click)=\"MatchesSeller(confirmInterest.Detail.BuyerExpressed)\"> A Buyer expressed interest on your Nestimate.<br>Click to review<br></div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n\n\n\n\n      </div>\n\n\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen == null\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\" (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n          <div class=\"heading-nestimate\" >Action Needed</div>\n          <div class=\"ouput-expresssed-interest\" (click)=\"MatchesSeller(confirmInterest.Detail.BuyerExpressed)\"> A Buyer expressed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n\n\n\n\n      </div>\n\n\n\n\n\n\n\n\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\" >\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\" (click)=\"MatchesBuyer(confirmInterest.Detail.sellerExpressed)\"> A seller expressed interest on your Nestimate.<br>Click to Review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n\n          <div class=\"ouput-expresssed-interest\" (click)=\"MatchesBuyer(confirmInterest.Detail.matchesBuyerexpressed)\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n        \n          <div class=\"ouput-expresssed-interest\" (click)=\"MatchesBuyer(confirmInterest.Detail.matchesBuyerexpressed)\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n\n\n\n      <div class=\"notification read-notfication\"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Select_Agent' &&  confirmInterest.Detail.Lastseen == null\"\n        (click)=\"getDocid(confirmInterest.id,confirmInterest.Detail.propertyId,confirmInterest.Detail.time,confirmInterest.Detail.userId,confirmInterest.Detail.viewed,now,confirmInterest.Detail.Type)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Needed</div>\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed as a Agent.<br>Click to review<br></div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n\n\n      <!--Earlier-->\n\n\n\n\n    </div>\n\n\n    <div class=\"heading-notofication\" id=\"boldText\" *ngIf=\"confirmNotitfication.length > 0\">Earlier</div>\n    <div class=\"grid-item\" *ngFor=\"let confirmInterest of confirmNotitfication\">\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"\n       >\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n\n\n\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\" (click)=\"MatchesSeller(confirmInterest.Detail.BuyerExpressed)\"> A Buyer expressed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Buyer_Confirmed_my_activity' && confirmInterest.Detail.Lastseen != null\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\" (click)=\"MatchesSeller(confirmInterest.Detail.BuyerExpressed)\"> A Buyer expressed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n      </div>\n\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Agent_Matches_Confirmed'  &&  confirmInterest.Detail.viewed != null\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed </div>\n\n          <div class=\"ouput-expresssed-interest\" (click)=\"MatchesBuyer(confirmInterest.Detail.matchesBuyerexpressed)\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_activity'  &&  confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed </div>\n      \n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed interest on your Nestimate.<br>Click to review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n      </div>\n\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Confirmed_my_nestimate' && confirmInterest.Detail.Lastseen != null\"\n        >\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/file.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\" (click)=\"MatchesBuyer(confirmInterest.Detail.sellerExpressed)\">\n          <div class=\"heading-nestimate\">Action Performed</div>\n          <div class=\"ouput-expresssed-interest\"> A seller expressed interest on your Nestimate.<br>Click to Review<br>\n          </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n\n        </div>\n\n\n      </div>\n      <div class=\"notification \"\n        *ngIf=\"confirmInterest.Detail.Type == 'Seller_Select_Agent'  &&  confirmInterest.Detail.Lastseen != null\"\n        (click)=\"actionNeeded(confirmInterest.Detail.propertyId)\">\n        <div class=\"notification-icon\">\n          <img src=\"../../../assets/Images/delete.png\" class=\"icon\">\n        </div>\n        <div class=\"text action-needed\">\n          <div class=\"heading-nestimate\">Action Performed </div>\n\n          <div class=\"ouput-expresssed-interest\"> A Seller confirmed as a Agent.<br>Click to review<br> </div>\n          <span class=\"timing-in-hours\"> {{confirmInterest.Detail.time * 1000 | date:'d MMM'}}</span>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n</div>\n\n\n\n\n\n\n<!--Login Area-->\n<div class=\"Login-from-top\" *ngIf=\"loginTop\">\n  <div class=\"Login-area\" *ngIf=\"!SignUp\">\n    <div class=\"top-cross-button\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area\" id=\"boldText\">Login</h1>\n      </div>\n\n      <div class=\"login-area-wrap\" id=\"userLoginArea\">\n        <div class=\"fields-container\">\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" name=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"\n              (keydown.enter)=\"applyFilter(emails.value)\">\n          </mat-form-field>\n\n\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"applyFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}\n            </mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n\n\n          <div class=\"lowe-Field-area\">\n            <section class=\"example-section Remember-me-inline-text\">\n\n              <mat-checkbox class=\"example-margin\" [(ngModel)]=\"checked\" [(indeterminate)]=\"indeterminate\"\n                [labelPosition]=\"labelPosition\" [disabled]=\"disabled\" (click)=\"check(emails, passs)\">\n                Remember me\n              </mat-checkbox>\n\n              <span routerLink=\"/forgot-password\" id=\"boldText\" class=\"dark-color\" (click)=\"forgot()\">Forgot Password\n                ?</span>\n            </section>\n\n\n            <!-- id=\"boldText\" -->\n          </div>\n\n          <div class=\"recatcha-area\">\n            <img src=\"../../../assets/Images/recaptcha.png\" class=\"recaptcha-image\">\n          </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signIn(userEmailLogin.value, userPasswordLogin.value)\" id=\"boldText\">Login</button>\n          </div>\n\n\n\n\n          <div id=\"semiboldText\" class=\"a-row a-spacing-top-medium a-size-small dark-color\">\n            By signing-in you agree to Nestimates's <a (click)=\"terms()\">Terms and condition of Use & Sale</a>. Please see our <a\n              (click)=\"privacy()\">Privacy Notice</a>.\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n\n\n          <div class=\"socila-button-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n              <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Log In</span>\n\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n\n\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Don't have an account? <span class=\"sign-up-link\"\n                  (click)=\"newCustomeer()\" id=\"boldText\">Sign Up</span></p>\n            </div>\n\n          </div>\n        </div>\n      </div>\n\n    </div>\n\n\n\n  </div>\n  <div class=\"Login-area signup-area\" *ngIf=\"SignUp\">\n    <div class=\"top-cross-button small-phone\" (click)=\"closePopup()\">\n      <img src=\"../../assets/Images/cross.png\" class=\"cross-button-signup-login\">\n    </div>\n    <div class=\"main-area-field\">\n      <div class=\"wrap-Login-area\">\n        <h1 class=\"heading-login-area dark-color\" id=\"boldText\">Sign Up</h1>\n      </div>\n\n\n      <div class=\"login-area-wrap\">\n\n        <div class=\"fields-container\">\n\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Name</mat-label>\n            <input matInput placeholder=\"Name\" name=\"name\" [(ngModel)]=\"name\" #displayName\n              (keydown.enter)=\"SignupFilter(displayName .value)\">\n          </mat-form-field>\n          <mat-form-field class=\"full-width-field\" appearance=\"outline\">\n            <mat-label>Email</mat-label>\n            <input matInput placeholder=\"Enter Email\" type=\"email\" ame=\"emails\" #userEmailLogin [(ngModel)]=\"emails\"\n              (keydown.enter)=\"SignupFilter(userEmailLogin.value)\">\n          </mat-form-field>\n          <mat-form-field appearance=\"outline\" class=\"full-width-field\">\n            <mat-label>Password</mat-label>\n            <input matInput placeholder=\"Password\" [type]=\"hide ? 'password' : 'text'\" name=\"passs\" #userPasswordLogin\n              [(ngModel)]=\"passs\" (keydown.enter)=\"SignupFilter(userPasswordLogin.value)\">\n            <mat-icon matSuffix (click)=\"hide = !hide\" class=\"icon-eye\">{{hide ? 'visibility_off' : 'visibility'}}\n            </mat-icon>\n            <!-- <mat-hint *ngIf=\"!passwordInput.value\">Enter your password</mat-hint> -->\n          </mat-form-field>\n\n          <!-- <section class=\"example-section property-con-form dark-color\">\n\n            <mat-checkbox class=\"example-margin\" value=\"Email\">Email</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"SMS\">SMS</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"Post\">Post</mat-checkbox>\n            <mat-checkbox class=\"example-margin\" value=\"All\">Email,SMS and Post from acrefully\n              selected third port\n            </mat-checkbox>\n\n          </section> -->\n          <app-password-pop (click)=\"passwordpopclose()\"  *ngIf=\"passwordpop\"></app-password-pop>\n          <!-- <div for=\"text\" id=\"semiboldText\" class=\"dark-color\">By clicking below to register, you confirm that you agree\n            to our <a (click)=\"terms()\">Terms & Conditions </a> and you have read and understood our <a\n              (click)=\"privacy()\">Privacy Policy </a></div> -->\n          <div for=\"text\" class=\"policy\" id=\"semiboldText\" class=\"dark-color\">{{secondLine}} </div>\n          <div class=\"button-signup\">\n            <button mat-raised-button color=\"primary\" class=\"login-button\"\n              (click)=\"signUp(displayName.value,userEmailLogin.value,userPasswordLogin.value,type)\" id=\"boldText\">Sign\n              Up</button>\n          </div>\n        </div>\n\n\n        <div class=\"social-login-area\">\n          <div class=\"socila-button-container signup-container\">\n            <div class=\"mobile-heading\">\n              <p class=\"heading-nestimate dark-color\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n              <hr class=\"lower-Line-login-logout-mobile\">\n              <span class=\"heading-nestimate signin-singup-text\">Sign Up</span>\n            </div>\n            <div class=\"google-login\" (click)=\"googleLogin()\">\n              <img src=\"../../../assets/Images/googlesearch.svg\" class=\"google-images-icon\" id=\"boldText\">Continue with\n              Google\n            </div>\n            <div class=\"facebook-login\" (click)=\"facebookLogin()\">\n              <img src=\"../../../assets/Images/facebook (2).png\" class=\"facebook-images-icon\" id=\"boldText\">Continue\n              with Facebook\n            </div>\n            <div class=\"dont-have-account\">\n              <p class=\"heading-nestimate\" id=\"boldText\">Already have an account? <span class=\"sign-up-link\"\n                  (click)=\"alreadyUser()\" id=\"boldText\">Log In</span></p>\n            </div>\n          </div>\n        </div>\n      </div>\n\n\n    </div>\n  </div>\n</div>\n\n\n\n<!--OverLay-->\n<div class=\"continue-form\" *ngIf=\"overlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\" id=\"boldText\">Thanks for registering!</p>\n    <p class=\"overlay-text\" id=\"boldText\">{{notificationContent}}</p>\n  </div>\n  <div class=\"continue-button\" (click)=\"continueClose()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n      Continue\n\n      <span class=\"arrow-text\"> &gt;</span>\n    </div>\n  </div>\n</div>\n\n\n\n\n\n\n\n\n<!--User Menu Bar-->\n<div class=\"mobile-Menu\" id=\"not-login-mobile-menu\" *ngIf=\"!hideRegister\">\n\n  <div class=\"menu-bar-icon\">\n    <!--Agent Menu -->\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image\"\n      *ngIf=\"MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"closeMobileMenu()\">\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"!MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"OpenMobileMenu()\">\n    <!--User Menu -->\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image\" *ngIf=\"isLoggedIn && open &&  !hideRegister\"\n      (click)=\"openMenu()\">\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"isLoggedIn && !open &&  !hideRegister\" (click)=\"closeMenu()\">\n  </div>\n\n  <!--User Home Click-->\n  <div class=\"menu-bar-icon\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"../../../assets/Images/home.png\" class=\"icon-size\" routerLink=\"/homenew\" *ngIf=\"isLoggedIn\">\n  </div>\n  <!--User Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"!isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav not-loggen-in\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n  <!--User Notification Icon-->\n  <div class=\"notification-upper\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <div *ngIf=\"isLoggedIn && bellShow\">\n      <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size new\" *ngIf=\"!bellicontwo\"\n        (click)=\"bellone()\">\n      <img src=\"../../../assets/Images/notifications.png\" class=\"icon-size\" *ngIf=\"bellicontwo\" (click)=\"belltwo()\">\n      <span class=\"log-out-text red-text\" *ngIf=\"notifications>0\" (click)=\"bellone()\">{{notifications}}</span>\n    </div>\n  </div>\n  <!--User Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" (click)=\"showLoginPopup()\" *ngIf=\"!isLoggedIn && !hideRegister\">Login</div>\n  <!--Agent Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">Login\n  </div>\n\n  <!--Logout-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn\">\n    <img src=\"../../../assets/Images/log-out.png\" class=\"log-out-logo\" (click)=\"SignOut()\" />\n  </div>\n\n\n\n\n\n</div>\n\n\n\n\n<!--Agent Menu Bar-->\n<div class=\"mobile-Menu agent-menu\" id=\"not-login-mobile-menu\" *ngIf=\"hideRegister\">\n\n  <div class=\"menu-bar-icon\">\n    <!--Agent Menu -->\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image\"\n      *ngIf=\"MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"closeMobileMenu()\">\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"!MobileOpenMenu && isLoggedIn && hideRegister\" (click)=\"OpenMobileMenu()\">\n    <!--User Menu -->\n    <img src=\"../../../assets/Images/menu.png\" class=\"menu-bar-image\" *ngIf=\"isLoggedIn && open &&  !hideRegister\"\n      (click)=\"openMenu()\">\n    <img src=\"../../../assets/Images/menuclosing.png\" class=\"menu-bar-image cancel-menu\"\n      *ngIf=\"isLoggedIn && !open &&  !hideRegister\" (click)=\"closeMenu()\">\n  </div>\n\n\n  <!--User Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && !hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"!isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav not-loggen-in\" routerLink=\"/\" />\n  </div>\n\n  <!--User Not Logged In Logo-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn && hideRegister\">\n    <img src=\"assets/Images/Nestimatelogo1.png\" class=\"logo-nav\" routerLink=\"/\" />\n  </div>\n\n  <!--User Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" (click)=\"showLoginPopup()\" *ngIf=\"!isLoggedIn && !hideRegister\">Login</div>\n  <!--Agent Login-->\n  <div class=\"login-button-xd\" id=\"boldText\" *ngIf=\"!isLoggedIn && hideRegister\" routerLink=\"/Agenthome/leads\">Login\n  </div>\n\n  <!--Logout-->\n  <div class=\"imge-logo-header\" *ngIf=\"isLoggedIn\">\n    <img src=\"../../../assets/Images/log-out.png\" class=\"log-out-logo\" (click)=\"SignOut()\" />\n  </div>\n\n\n\n\n\n</div>\n\n\n\n\n<!-- <div class=\"password-pop\" *ngIf=\"passwordpop\">\n  <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n</div> -->\n\n<div class=\"email-pop\" *ngIf=\"emailpop\">\n\n  <app-email-pop (click)=\"emailpopclose()\"></app-email-pop>\n</div>\n\n\n<div class=\"outside-click\" *ngIf=\"outside\" (click)=\"closealloutside()\"></div>";
     /***/
   },
 
@@ -10519,13 +10519,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
+          this.BuyerExpressed = localStorage.getItem("buyerexpressed");
           this.notification = {
             time: this.now,
             viewed: "Confirmed",
             userId: this.uid,
             Type: "Buyer_Confirmed_my_nestimate",
             propertyId: this.propertyId.trim(),
-            Lastseen: null
+            Lastseen: null,
+            BuyerExpressed: this.BuyerExpressed
           };
           this["return"] = this.Selected_propertydetail_Service.createNotification(this.UserId, this.notification).then(function (data) {});
         }
@@ -10768,7 +10770,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 0:
                     _context22.next = 2;
                     return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("Document seller successfully written!");
+                      localStorage.setItem("buyerexpressed", data.id); // console.log("Document seller successfully written!");
                     });
 
                   case 2:
@@ -13687,6 +13689,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function submitForm() {
           var _this128 = this;
 
+          this.sellerExpressed = localStorage.getItem("sellerexpressed");
           this.isSellerSelected = true;
           this.matchesSeller = {
             BuyerDetails: this.buyerDetails,
@@ -13695,7 +13698,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             SellerUserId: this.uid,
             SellerPropertyId: this.look_id,
             matchStatus: "pending",
-            Entry: "Seller"
+            Entry: "Seller",
+            sellerExpressed: this.sellerExpressed
           };
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
@@ -13763,13 +13767,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
+          this.sellerExpressed = localStorage.getItem("sellerexpressed");
           this.notification = {
             time: this.now,
             viewed: "Confirmed",
             userId: this.uid,
             Type: "Seller_Confirmed_my_nestimate",
             propertyId: this.propertyId.trim(),
-            Lastseen: null
+            Lastseen: null,
+            sellerExpressed: this.sellerExpressed
           };
           this["return"] = this.seller_Selected_propertydetail_Service.createNotification(this.UserId, this.notification).then(function (data) {});
         }
@@ -13958,7 +13964,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 switch (_context29.prev = _context29.next) {
                   case 0:
                     _context29.next = 2;
-                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {});
+                    return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
+                      localStorage.setItem("sellerexpressed", data.id);
+                    });
 
                   case 2:
                     this["return"] = _context29.sent;
@@ -23349,6 +23357,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.ownerNestimate = false;
             this.waiting = false;
             this.ActionNeeded = true;
+            this.MyActionChnages();
             document.getElementById("one").style.background = "white";
             document.getElementById("one").style.border = "none";
             document.getElementById("one").style.borderTop = "3px solid #E8E8E8";
@@ -24663,6 +24672,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.overLay = false;
         this.allImages = [];
         this.ImagesOpen = false;
+        this.matchesProperties = [];
       }
 
       _createClass(MatchesBuyerComponent, [{
@@ -24694,6 +24704,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.CMSSERVICE.getBlueNotification(1).then(function (data) {
             _this199.notificationContent = data.data().BuyerActionNeeded;
           });
+          this.buyerMtachesStatus();
         }
       }, {
         key: "addToExpressCollection",
@@ -24711,19 +24722,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
+          console.log(localStorage.getItem("buyerconfirmed"));
+          var userdetailbuyer = localStorage.getItem("buyerconfirmed");
           this.notification = {
             time: this.now,
             viewed: "Confirmed",
             userId: this.uid,
             Type: "Buyer_Confirmed_my_activity",
             propertyId: this.SellerPropertyId,
-            Lastseen: null
+            Lastseen: null,
+            BuyerExpressed: userdetailbuyer
           };
           this["return"] = this.MatchesBuyerService.createNotification(this.SellerUserId, this.notification).then(function (data) {});
         }
       }, {
         key: "backClicked",
         value: function backClicked() {
+          localStorage.removeItem("buyermatchespropertydetail");
+
           this._router.navigate(["/myListing/myNestimate/action"]).then(function () {
             window.location.reload();
           });
@@ -24799,6 +24815,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "closeImage",
         value: function closeImage() {
           this.ImagesOpen = false;
+        }
+      }, {
+        key: "buyerMtachesStatus",
+        value: function buyerMtachesStatus() {
+          var _this203 = this;
+
+          this.MatchesBuyerService.ExpressInterests(this.uid).subscribe(function (element) {
+            element.forEach(function (eledata) {
+              _this203.matchesProperties.push(eledata.data());
+            });
+
+            var _iterator4 = _createForOfIteratorHelper(_this203.matchesProperties),
+                _step4;
+
+            try {
+              for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+                var val = _step4.value;
+
+                if (val.propertyId == _this203.propid) {
+                  _this203.expressed = 'true';
+                }
+              }
+            } catch (err) {
+              _iterator4.e(err);
+            } finally {
+              _iterator4.f();
+            }
+          });
         }
       }]);
 
@@ -24959,7 +25003,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 0:
                     _context46.next = 2;
                     return this.db.collection("matchesSeller").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("matchesBuyer successfully written!");
+                      var DataId = data.id;
+                      localStorage.setItem("buyerconfirmed", DataId);
                     });
 
                   case 2:
@@ -24983,6 +25028,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "getBuyer",
         value: function getBuyer(uid, docid) {
           return this.buyerrRef.doc(uid).collection("requirements").doc(docid).ref.get();
+        }
+      }, {
+        key: "ExpressInterests",
+        value: function ExpressInterests(uid) {
+          return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").get();
         }
       }]);
 
@@ -25392,27 +25442,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this203 = this;
+          var _this204 = this;
 
           this.MatchesSellerPendingService.getBuyerRequirement(this.userDetails.detail.BuyerUserId, this.userDetails.detail.BuyerPropertyId).then(function (res) {
-            _this203.buyingPosition = res.data().Position;
-            _this203.buyerFinancialPosition = res.data().FinancialPosition;
-            _this203.BuyerPropertyType = res.data().PropertyType;
-            _this203.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this203.BuyerRoommin = res.data().Roommin;
-            _this203.BuyerRoomsmax = res.data().Roomsmax;
-            _this203.username = res.data().username;
-            _this203.usertitle = res.data().usertitle;
-            _this203.buyerPropertyFor = res.data().PropertyFor;
-            _this203.PropertyType = res.data().PropertyType;
-            _this203.Ownership = res.data().Ownership;
-            _this203.LookingStreetname = res.data().LookingStreetname;
-            _this203.Conditions = res.data().Conditions;
-            _this203.Maxbathroom = res.data().Maxbathroom;
-            _this203.Maxreception = res.data().Maxreception;
-            _this203.MinAmount = res.data().MinAmount;
-            _this203.MaxAmount = res.data().MaxAmount;
-            _this203.Ownership = res.data().Ownership;
+            _this204.buyingPosition = res.data().Position;
+            _this204.buyerFinancialPosition = res.data().FinancialPosition;
+            _this204.BuyerPropertyType = res.data().PropertyType;
+            _this204.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this204.BuyerRoommin = res.data().Roommin;
+            _this204.BuyerRoomsmax = res.data().Roomsmax;
+            _this204.username = res.data().username;
+            _this204.usertitle = res.data().usertitle;
+            _this204.buyerPropertyFor = res.data().PropertyFor;
+            _this204.PropertyType = res.data().PropertyType;
+            _this204.Ownership = res.data().Ownership;
+            _this204.LookingStreetname = res.data().LookingStreetname;
+            _this204.Conditions = res.data().Conditions;
+            _this204.Maxbathroom = res.data().Maxbathroom;
+            _this204.Maxreception = res.data().Maxreception;
+            _this204.MinAmount = res.data().MinAmount;
+            _this204.MaxAmount = res.data().MaxAmount;
+            _this204.Ownership = res.data().Ownership;
           });
         }
       }, {
@@ -25555,7 +25605,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this204 = this;
+          var _this205 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -25567,21 +25617,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus != "pending") {
-                _this204.sellerConfirmed.push({
+                _this205.sellerConfirmed.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               }
             });
-            _this204.isLoading = false;
+            _this205.isLoading = false;
 
-            _this204.getExpressedListingIds();
+            _this205.getExpressedListingIds();
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus != "pending") {
-                _this204.buyerProperty.push({
+                _this205.buyerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
@@ -25593,12 +25643,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this205 = this;
+          var _this206 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this205.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this205.distinctExpressedUid.push(item.data().propertyId);
+              if (_this206.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this206.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -25839,6 +25889,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentSubmissionComponent, [{
         key: "onConfirmClick",
         value: function onConfirmClick() {
+          localStorage.removeItem("matchesBuyerexpressed");
+
           this._router.navigate(["/myListing/myNestimate/action"]).then(function () {
             window.location.reload();
           });
@@ -26005,7 +26057,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this206 = this;
+          var _this207 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -26023,10 +26075,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this206.propertyId = params.get("propertyId");
+            _this207.propertyId = params.get("propertyId");
           });
           this.CMSSERVICE.getBlueNotification("1").then(function (element) {
-            _this206.AgentBlue = element.data().AgentBlue;
+            _this207.AgentBlue = element.data().AgentBlue;
           });
         }
       }, {
@@ -26044,7 +26096,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          this["return"] = this.AgentService.ExpressInterest(this.uid, this.propertyId).then(function (data) {});
+          var _this208 = this;
+
+          this["return"] = this.AgentService.ExpressInterest(this.uid, this.propertyId).then(function (data) {
+            _this208.createSellerNotification();
+
+            var dialogRef = _this208.dialog.open(_agentSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AgentSubmissionComponent"], {
+              data: {
+                message: "Postcode must be atleast 5 characters long"
+              }
+            });
+          });
         }
       }, {
         key: "backClicked",
@@ -26054,46 +26116,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createSellerNotification",
         value: function createSellerNotification() {
+          var matchesBuyerexpressed = localStorage.getItem("matchesBuyerexpressed");
           this.notification = {
             time: this.now,
             viewed: "Confirmed",
             userId: this.uid,
             Type: "Agent_Matches_Confirmed",
             propertyId: this.propertyId,
-            Lastseen: null
+            Lastseen: null,
+            matchesBuyerexpressed: matchesBuyerexpressed
           };
+          console.log(this.notification);
           this["return"] = this.AgentService.createNotification(this.BuyerUserId, this.notification).then(function (data) {});
         }
       }, {
         key: "createBuyerEntry",
         value: function createBuyerEntry(agentuid) {
-          this.createSellerNotification();
-          this.createAgentNotification(agentuid);
+          this.agentDetailEntry(agentuid); //this.createAgentNotification(agentuid)
+
           this.addToExpressCollection();
-          this.agentDetailEntry(agentuid);
-          var dialogRef = this.dialog.open(_agentSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AgentSubmissionComponent"], {
-            data: {
-              message: "Postcode must be atleast 5 characters long"
-            }
-          });
         }
       }, {
         key: "agentDetailEntry",
         value: function agentDetailEntry(agentuid) {
-          var _this207 = this;
+          var _this209 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this207.sellerDetails = rest.data();
+            _this209.sellerDetails = rest.data();
 
-            _this207.AgentService.getBuyerrDetails(_this207.BuyerUserId, _this207.BuyerPropertyId).then(function (rest) {
-              _this207.BuyerDetails = rest.data();
-              _this207.details = {
-                SellerDetails: _this207.sellerDetails,
-                BuyerDetails: _this207.BuyerDetails,
+            _this209.AgentService.getBuyerrDetails(_this209.BuyerUserId, _this209.BuyerPropertyId).then(function (rest) {
+              _this209.BuyerDetails = rest.data();
+              _this209.details = {
+                SellerDetails: _this209.sellerDetails,
+                BuyerDetails: _this209.BuyerDetails,
                 UserId: agentuid,
                 Archived: false
               };
-              _this207["return"] = _this207.AgentService.matchesAgentSellerCreate(agentuid, _this207.details).then(function (data) {});
+              _this209["return"] = _this209.AgentService.matchesAgentSellerCreate(agentuid, _this209.details).then(function (data) {});
             });
           });
           this.BuyerDetails = {
@@ -26101,7 +26160,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             BuyerDetails: this.BuyerDetails,
             BuyerUserId: this.BuyerUserId,
             BuyerPropertyId: this.BuyerPropertyId,
-            SellerPropetyId: this.SellerPropertyId,
+            SellerPropertyId: this.SellerPropertyId,
             SellerUserId: this.uid,
             matchStatus: "confirmed"
           };
@@ -26110,20 +26169,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createAgentNotification",
         value: function createAgentNotification(agentuid) {
+          var matchesBuyerexpressed = localStorage.getItem("matchesBuyerexpressed");
           this.notification = {
             time: this.now,
             viewed: "Confirmed",
             userId: this.uid,
             Type: "Seller_Select_Agent",
             propertyId: this.propertyId,
-            Lastseen: null
-          };
-          this["return"] = this.AgentService.createNotification(agentuid, this.notification).then(function (data) {});
+            Lastseen: null,
+            matchesBuyerexpressed: matchesBuyerexpressed
+          }; // this.return = this.AgentService
+          //   .createNotification(agentuid, this.notification)
+          //   .then(data => {
+          //   });
         }
       }, {
         key: "getDetailUser",
         value: function getDetailUser() {
-          var _this208 = this;
+          var _this210 = this;
 
           var details = JSON.parse(localStorage.getItem("matchesSeller"));
           this.userDetail = details.detail;
@@ -26138,13 +26201,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             ref.forEach(function (elements) {
               // this.agents.push({ Detail: elements.data(), uid: elements.data().uid })
               // this.testagents.push(elements.data().uid)
-              if (elements.data().postcode.substring(0, 3) == _this208.Lookingpostcode.substring(0, 3)) {
-                _this208.agents.push({
+              if (elements.data().postcode.substring(0, 3) == _this210.Lookingpostcode.substring(0, 3)) {
+                _this210.agents.push({
                   Detail: elements.data(),
                   uid: elements.data().uid
                 });
 
-                _this208.testagents.push(elements.data().uid);
+                _this210.testagents.push(elements.data().uid);
               }
             });
           });
@@ -26152,19 +26215,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this209 = this;
+          var _this211 = this;
 
           this.AgentService.getDellerDetails(this.SellerUSerId, this.SellerPropertyId).then(function (rest) {
-            _this209.sellerDetails = rest.data();
+            _this211.sellerDetails = rest.data();
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this210 = this;
+          var _this212 = this;
 
           this.AgentService.getBuyerrDetails(this.BuyerUserId, this.BuyerPropertyId).then(function (rest) {
-            _this210.BuyerDetails = rest.data();
+            _this212.BuyerDetails = rest.data();
           });
         }
       }, {
@@ -26383,7 +26446,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 0:
                     _context56.next = 2;
                     return this.db.collection("matchesBuyer").doc(key).collection("matches").add(Object.assign({}, customer)).then(function (data) {
-                      console.log("matchesBuyer successfully written!");
+                      var DataDetail = data.id;
+                      localStorage.setItem("matchesBuyerexpressed", DataDetail);
                     });
 
                   case 2:
@@ -26567,12 +26631,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.now = new Date();
         this.sellerProperty = [];
         this.overLay = false;
+        this.matchesProperties = [];
       }
 
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this211 = this;
+          var _this213 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -26590,12 +26655,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var details = JSON.parse(localStorage.getItem("matchesSeller"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this211.expressed = params.get("expressed");
-            _this211.propertyId = params.get("propertyId");
+            _this213.expressed = params.get("expressed");
+            _this213.propertyId = params.get("propertyId");
           });
           this.getBuyerDetails();
+          this.buyerMtachesStatus();
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (element) {
-            _this211.notificationContent = element.data().MynestimateBuyerDetails;
+            _this213.notificationContent = element.data().MynestimateBuyerDetails;
           });
         }
       }, {
@@ -26630,6 +26696,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.Roommin = this.UserDetails.BuyerDetails.Roommin;
           this.Roomsmax = this.UserDetails.BuyerDetails.Roomsmax;
           this.Conditions = this.UserDetails.BuyerDetails.Conditions;
+        }
+      }, {
+        key: "buyerMtachesStatus",
+        value: function buyerMtachesStatus() {
+          var _this214 = this;
+
+          this.SelectedMyMatchesService.ExpressInterests(this.uid).subscribe(function (element) {
+            element.forEach(function (eledata) {
+              _this214.matchesProperties.push(eledata.data());
+            });
+
+            var _iterator5 = _createForOfIteratorHelper(_this214.matchesProperties),
+                _step5;
+
+            try {
+              for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+                var val = _step5.value;
+
+                if (val.propertyId == _this214.propertyId) {
+                  _this214.expressed = 'true';
+                }
+              }
+            } catch (err) {
+              _iterator5.e(err);
+            } finally {
+              _iterator5.f();
+            }
+          });
         }
       }]);
 
@@ -26802,6 +26896,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function getBuyerRequirement(uid, docid) {
           return this.buyerRef.doc(uid).collection("requirements").doc(docid).ref.get();
         }
+      }, {
+        key: "ExpressInterests",
+        value: function ExpressInterests(uid) {
+          return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").get();
+        }
       }]);
 
       return SellerMatchesService;
@@ -26918,32 +27017,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this212 = this;
+          var _this215 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this212.uid) {
-                _this212.user.Name = element.data().Name;
-                _this212.user.Email = element.data().email;
+              if (element.data().uid == _this215.uid) {
+                _this215.user.Name = element.data().Name;
+                _this215.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this212.user.DOB = element.data().DOB.toDate();
+                  _this215.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this212.user.Phone = element.data().Phone;
+                  _this215.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this212.user.Currentaddress = element.data().Currentaddress;
+                  _this215.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this212.user.prefrence = element.data().prefrence;
+                  _this215.user.prefrence = element.data().prefrence;
                 } else {
-                  _this212.user.prefrence = "Not Selected";
+                  _this215.user.prefrence = "Not Selected";
                 }
               }
             });
@@ -27241,7 +27340,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this213 = this;
+          var _this216 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -27249,24 +27348,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getSeekerPersonalDetailForm();
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this213.uid) {
-                _this213.user.Name = element.data().Name;
-                _this213.user.Email = element.data().email;
+              if (element.data().uid == _this216.uid) {
+                _this216.user.Name = element.data().Name;
+                _this216.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this213.user.DOB = element.data().DOB.toDate();
+                  _this216.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this213.user.Phone = element.data().Phone;
+                  _this216.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this213.user.Currentaddress = element.data().Currentaddress;
+                  _this216.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this213.user.prefrence = element.data().prefrence;
+                  _this216.user.prefrence = element.data().prefrence;
                 }
               }
             });
@@ -27383,14 +27482,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
-          var _this214 = this;
+          var _this217 = this;
 
           this.isLoading = true;
           this["return"] = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this214.isLoading = false;
-            _this214.edit = false;
+            _this217.isLoading = false;
+            _this217.edit = false;
 
-            _this214.alert();
+            _this217.alert();
           });
         }
       }, {
@@ -27420,28 +27519,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this215 = this;
+          var _this218 = this;
 
           this.CMSSERVICE.getMyDetailError(this.MyDetail).then(function (element) {
-            _this215.FullName = element.data().FullName;
-            _this215.Emails = element.data().Email;
-            _this215.Phones = element.data().Phone;
-            _this215.DOBs = element.data().DOB;
-            _this215.ValidateDob = element.data().ValidateDob;
-            _this215.Address = element.data().Address;
-            _this215.Prefrence = element.data().Prefrence;
-            _this215.isLoading = false;
+            _this218.FullName = element.data().FullName;
+            _this218.Emails = element.data().Email;
+            _this218.Phones = element.data().Phone;
+            _this218.DOBs = element.data().DOB;
+            _this218.ValidateDob = element.data().ValidateDob;
+            _this218.Address = element.data().Address;
+            _this218.Prefrence = element.data().Prefrence;
+            _this218.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this216 = this;
+          var _this219 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.PersonalDetail).then(function (element) {
-            _this216.PhoneValidation = element.data().PhoneValidation;
-            _this216.PhoneLength = element.data().PhoneLength;
-            _this216.isLoading = false;
+            _this219.PhoneValidation = element.data().PhoneValidation;
+            _this219.PhoneLength = element.data().PhoneLength;
+            _this219.isLoading = false;
           });
         }
       }, {
@@ -27723,7 +27822,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this217 = this;
+          var _this220 = this;
 
           this.LoggedIn();
           this.origin = window.location.origin + "/#/";
@@ -27743,14 +27842,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this217.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this217.userData)); //Notification Show
+              _this220.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this220.userData)); //Notification Show
 
-              _this217.NavigationService.Notification(_this217.uid).subscribe(function (notification) {
+              _this220.NavigationService.Notification(_this220.uid).subscribe(function (notification) {
                 notification.forEach(function (element) {
-                  _this217.bellShow = true;
-                  _this217.belliconone = false;
-                  _this217.bellicontwo = false;
+                  _this220.bellShow = true;
+                  _this220.belliconone = false;
+                  _this220.bellicontwo = false;
                 });
               }); //this.LoggedIn();
 
@@ -27758,28 +27857,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this217.LoggedOut();
+              _this220.LoggedOut();
             }
           });
           this.getNotificationContent();
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this217.topLine = element.data().topLine;
-              _this217.secondLine = element.data().SecondLine.replace(/<(.|\n)*?>/, '').replace(/<\/(.|\n)*?>/, '');
+              _this220.topLine = element.data().topLine;
+              _this220.secondLine = element.data().SecondLine.replace(/<(.|\n)*?>/, '').replace(/<\/(.|\n)*?>/, '');
             });
           });
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this218 = this;
+          var _this221 = this;
 
           var Admin = JSON.parse(localStorage.getItem("user"));
 
           if (Admin != null) {
             this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
               if (element.data().UserType == "Admin") {
-                _this218.LoggedOut();
+                _this221.LoggedOut();
               }
             });
           }
@@ -27795,46 +27894,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this219 = this;
+          var _this222 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this219.sellerProperty.push(element.data());
+                _this222.sellerProperty.push(element.data());
               }
             });
-            _this219.noSellerOfMatche = _this219.sellerProperty.length;
-            _this219.matches = _this219.buyerProperty.length + _this219.sellerProperty.length;
+            _this222.noSellerOfMatche = _this222.sellerProperty.length;
+            _this222.matches = _this222.buyerProperty.length + _this222.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this219.buyerProperty.push(element.data());
+              _this222.buyerProperty.push(element.data());
             });
-            _this219.noBuyerMatches = _this219.buyerProperty.length;
-            _this219.matches = _this219.buyerProperty.length + _this219.sellerProperty.length;
+            _this222.noBuyerMatches = _this222.buyerProperty.length;
+            _this222.matches = _this222.buyerProperty.length + _this222.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this220 = this;
+          var _this223 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this220.bellicon.push(item.data());
+              _this223.bellicon.push(item.data());
 
-              if (_this220.bellicon.length > 0) {
-                _this220.belliconone = false;
+              if (_this223.bellicon.length > 0) {
+                _this223.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this220.confirmInterest.push(item.data());
+                _this223.confirmInterest.push(item.data());
 
-                _this220.notifications = _this220.confirmInterest.length;
+                _this223.notifications = _this223.confirmInterest.length;
               } else {
-                _this220.notifications = 0;
+                _this223.notifications = 0;
               }
             });
           });
@@ -27910,14 +28009,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this221 = this;
+          var _this224 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this221.confirmInterests.push({
+                _this224.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -27936,20 +28035,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "initProfile",
         value: function initProfile() {
-          var _this222 = this;
+          var _this225 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
           if (this.user != null) {
             this.NavigationService.getAllUser(this.user.uid).then(function (element) {
               if (element.data().UserType == "Agent") {
-                _this222.agentCustomer = true;
+                _this225.agentCustomer = true;
               } else {
-                _this222.agentCustomer = false;
-                _this222.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
+                _this225.agentCustomer = false;
+                _this225.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
 
-                if (_this222.userName.length == 0) {
-                  _this222.userName = element.data().Name;
+                if (_this225.userName.length == 0) {
+                  _this225.userName = element.data().Name;
                 }
               }
             });
@@ -27961,7 +28060,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDocid",
         value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
-          var _this223 = this;
+          var _this226 = this;
 
           this.notificationoverlay = false;
           this.getNotification();
@@ -27976,28 +28075,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.Notification.Lastseen = this.now;
           this["return"] = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(function (data) {
-            _this223._router.navigate(["/myListing/myNestimate/action"]).then(function () {
-              _this223.notificationoverlay = false;
-              window.location.reload();
-            });
+            _this226.notificationoverlay = false; // this._router.navigate(["/myListing/myNestimate/action"]).then(()=>{
+            //   window.location.reload();
+            // });
           });
         }
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this224 = this;
+          var _this227 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               if (item.data().Lastseen == null) {
-                _this224.confirmInterests.push({
+                _this227.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
               } else {
-                _this224.confirmNotitfication.push({
+                _this227.confirmNotitfication.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -28008,7 +28106,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this225 = this;
+          var _this228 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -28017,25 +28115,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
               if (element.data().Lastseen == null) {
-                _this225.confirmInterests.push({
+                _this228.confirmInterests.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this225.confirmInterests.length > 0) {
-                  _this225.notificationoverlay = true;
-                  _this225.bellicontwo = true;
+                if (_this228.confirmInterests.length > 0) {
+                  _this228.notificationoverlay = true;
+                  _this228.bellicontwo = true;
                 }
               } else {
-                _this225.confirmNotitfication.push({
+                _this228.confirmNotitfication.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this225.confirmNotitfication.length > 0) {
-                  _this225.outside = true;
-                  _this225.notificationoverlay = true;
-                  _this225.bellicontwo = true;
+                if (_this228.confirmNotitfication.length > 0) {
+                  _this228.outside = true;
+                  _this228.notificationoverlay = true;
+                  _this228.bellicontwo = true;
                 }
               }
             });
@@ -28044,7 +28142,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this226 = this;
+          var _this229 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -28052,8 +28150,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this226.uid) {
-                _this226.confirmInterests = null;
+              if (element.UserId == _this229.uid) {
+                _this229.confirmInterests = null;
               }
             });
           });
@@ -28105,17 +28203,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this227 = this;
+          var _this230 = this;
 
           this.isLoading = false;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this227.isLoading = false;
+            _this230.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this228 = this;
+          var _this231 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -28126,24 +28224,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this228.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                  var dialogRef = _this231.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this228.UserSignIn
+                      message: _this231.UserSignIn
                     }
                   });
 
-                  _this228.isLoading = false;
+                  _this231.isLoading = false;
                 } else {
-                  _this228.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
+                  _this231.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
                   //   console.log(data)
                   //   this.isLoading = false;
                   // });
 
                 }
               } else {
-                _this228.isLoading = false;
+                _this231.isLoading = false;
 
-                var _dialogRef179 = _this228.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var _dialogRef179 = _this231.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -28275,10 +28373,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this229 = this;
+          var _this232 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this229.notificationContent = res.data().SingupFromMenu;
+            _this232.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
@@ -28307,10 +28405,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "leads",
         value: function leads() {
-          var _this230 = this;
+          var _this233 = this;
 
           this._router.navigate(['/Agenthome/leads']).then(function () {
-            _this230.Itemmenu();
+            _this233.Itemmenu();
 
             window.location.reload();
           });
@@ -28318,10 +28416,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Profile",
         value: function Profile() {
-          var _this231 = this;
+          var _this234 = this;
 
           this._router.navigate(['/Agenthome/profile']).then(function () {
-            _this231.Itemmenu();
+            _this234.Itemmenu();
 
             window.location.reload();
           });
@@ -28329,10 +28427,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Archieve",
         value: function Archieve() {
-          var _this232 = this;
+          var _this235 = this;
 
           this._router.navigate(['/Agenthome/archieve']).then(function () {
-            _this232.Itemmenu();
+            _this235.Itemmenu();
 
             window.location.reload();
           });
@@ -28340,10 +28438,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "manageMyNestimate",
         value: function manageMyNestimate() {
-          var _this233 = this;
+          var _this236 = this;
 
           this._router.navigate(['/myListing/myNestimate/tabdrop']).then(function () {
-            _this233.Itemmenu();
+            _this236.Itemmenu();
 
             window.location.reload();
           });
@@ -28351,10 +28449,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "profileNestimate",
         value: function profileNestimate() {
-          var _this234 = this;
+          var _this237 = this;
 
           this._router.navigate(['/myListing/profile/tabdrop']).then(function () {
-            _this234.Itemmenu();
+            _this237.Itemmenu();
 
             window.location.reload();
           });
@@ -28362,10 +28460,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "favorate",
         value: function favorate() {
-          var _this235 = this;
+          var _this238 = this;
 
           this._router.navigate(['/myListing/fav/tabdrop']).then(function () {
-            _this235.Itemmenu();
+            _this238.Itemmenu();
 
             window.location.reload();
           });
@@ -28373,10 +28471,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "recently",
         value: function recently() {
-          var _this236 = this;
+          var _this239 = this;
 
           this._router.navigate(['/myListing/recent/tabdrop']).then(function () {
-            _this236.Itemmenu();
+            _this239.Itemmenu();
 
             window.location.reload();
           });
@@ -28384,10 +28482,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "actionNeeded",
         value: function actionNeeded(id) {
-          var _this237 = this;
+          var _this240 = this;
 
           this._router.navigate(["/myListing/myNestimate/action/id"]).then(function () {
-            _this237.notificationoverlay = false;
+            _this240.notificationoverlay = false;
             window.location.reload();
           });
         }
@@ -28411,26 +28509,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this238 = this;
+          var _this241 = this;
 
           this.isLoading = true;
           this.loginTop = false;
           this.authService.FacebookAuth().then(function (data) {
             // this.user.Lastseen = this.now
-            _this238.isLoading = false;
+            _this241.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this239 = this;
+          var _this242 = this;
 
           this.loginTop = false;
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
             // window.location.reload()
-            _this239.isLoading = false;
+            _this242.isLoading = false;
           });
         }
       }, {
@@ -28457,13 +28555,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this240 = this;
+          var _this243 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this240.AgentSignIn = element.data().AgentSignIn;
-            _this240.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
+            _this243.AgentSignIn = element.data().AgentSignIn;
+            _this243.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
 
-            _this240.isLoading = false;
+            _this243.isLoading = false;
           });
         }
       }, {
@@ -28487,16 +28585,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "onScroll",
         value: function onScroll(e) {
           this.closealloutside();
-        } // @HostListener('document:mousewheel', ['$event'])
-        // onDocumentMousewheelEvent(event) {
-        //   this.closealloutside()
-        // }
-
+        }
       }, {
         key: "SignOut",
         value: function SignOut() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee64() {
-            var _this241 = this;
+            var _this244 = this;
 
             return regeneratorRuntime.wrap(function _callee64$(_context64) {
               while (1) {
@@ -28511,7 +28605,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     window.location.reload();
 
                     this._router.navigate(['/']).then(function () {
-                      _this241.isLoading = false;
+                      _this244.isLoading = false;
                       window.location.reload();
                     });
 
@@ -28522,6 +28616,49 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }
             }, _callee64, this);
           }));
+        }
+      }, {
+        key: "MatchesSeller",
+        value: function MatchesSeller(propid) {
+          var _this245 = this;
+
+          this.NavigationService.getMatchesBuyerProperties(this.uid, propid).then(function (data) {
+            _this245.buyerExpressedData = data.data();
+
+            _this245.NavigationService.ExpressInterest(_this245.uid).subscribe(function (element) {
+              element.forEach(function (eledata) {
+                if (eledata.data().propertyId == propid) {
+                  var expressed = "true";
+                }
+              });
+              localStorage.setItem("matchesSeller", JSON.stringify({
+                detail: data.data()
+              }));
+              setTimeout(function () {
+                _this245._router.navigate(["/matchesSeller/" + propid + "/" + "false"]).then(function () {
+                  _this245.notificationoverlay = false;
+                  window.location.reload();
+                });
+              }, 2000); //this._router.navigate(["/matchesSeller/" +  propid + "/" +  "false"])
+            });
+          });
+        }
+      }, {
+        key: "MatchesBuyer",
+        value: function MatchesBuyer(propid) {
+          var _this246 = this;
+
+          this.NavigationService.getMatchesSellerProperties(this.uid, propid).then(function (element) {
+            localStorage.setItem("buyermatchespropertydetail", JSON.stringify({
+              detail: element.data()
+            }));
+            setTimeout(function () {
+              _this246._router.navigate(["/myMtachesBuyer/" + "false" + "/" + propid]).then(function () {
+                _this246.notificationoverlay = false;
+                window.location.reload();
+              });
+            }, 2000); // this._router.navigate(["/myMtachesBuyer/" + "false" + "/" +propid])
+          });
         }
       }]);
 
@@ -28655,6 +28792,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function Notification(uid) {
           return this.customersRef.doc(uid).collection("Received").get();
         }
+      }, {
+        key: "getMatchesBuyerProperties",
+        value: function getMatchesBuyerProperties(uid, propertyId) {
+          return this.db.collection("matchesSeller").doc(uid).collection("matches").doc(propertyId).ref.get();
+        }
+      }, {
+        key: "ExpressInterest",
+        value: function ExpressInterest(uid) {
+          return this.db.collection("expressMatches").doc(uid).collection("MatchesExpress").get();
+        }
+      }, {
+        key: "getMatchesSellerProperties",
+        value: function getMatchesSellerProperties(uid, propertyId) {
+          return this.db.collection("matchesBuyer").doc(uid).collection("matches").doc(propertyId).ref.get();
+        }
       }]);
 
       return NavigationService;
@@ -28756,19 +28908,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this242 = this;
+          var _this247 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this242.confirmInterest.push({
+              _this247.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this242.confirmInterest);
+            console.log(_this247.confirmInterest);
           });
         }
       }, {
@@ -28873,7 +29025,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               while (1) {
                 switch (_context65.prev = _context65.next) {
                   case 0:
-                    return _context65.abrupt("return", this.db.collection("notification").doc(uid).collection("Received").doc(docid).set(Object.assign({}, notification)).then(function (data) {
+                    return _context65.abrupt("return", this.db.collection("notification").doc(uid).collection("Received").doc(docid).update(notification).then(function (data) {
                       console.log("Document successfully written!");
                     }));
 
@@ -29186,13 +29338,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this243 = this;
+          var _this248 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this243.facebook = element.data().Facebook;
-              _this243.Instagram = element.data().Instragram;
-              _this243.Twitter = element.data().Twitter;
+              _this248.facebook = element.data().Facebook;
+              _this248.Instagram = element.data().Instragram;
+              _this248.Twitter = element.data().Twitter;
             });
           });
         }
@@ -30470,14 +30622,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this244 = this;
+          var _this249 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this244.idToken = params['id_token'];
-            _this244.accessToken = params['access_token'];
+            _this249.idToken = params['id_token'];
+            _this249.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this244._router.navigate(['/']).then(function () {
+            _this249._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -30717,11 +30869,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this245 = this;
+          var _this250 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this245.privacyPolicy = element.data().Privacy;
+              _this250.privacyPolicy = element.data().Privacy;
             });
           });
         }
@@ -31359,7 +31511,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this246 = this;
+          var _this251 = this;
 
           this.getOtherForm();
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -31370,36 +31522,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.userLogged();
             this.items();
             this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-              _this246.type = params.get("type");
+              _this251.type = params.get("type");
             });
           }
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this247 = this;
+          var _this252 = this;
 
           this.CMSSERVICE.getuserType(email).then(function (element) {
             if (element.data() != undefined) {
               if (element.data().UserType != "Agent") {
-                var dialogRef = _this247.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var dialogRef = _this252.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
-                    message: _this247.AgentSignIn
+                    message: _this252.AgentSignIn
                   }
                 });
               } else {
-                _this247.authService.SignIn(email, pass).then(function (data) {
-                  _this247.items();
+                _this252.authService.SignIn(email, pass).then(function (data) {
+                  _this252.items();
 
-                  _this247.userLogged();
+                  _this252.userLogged();
 
                   window.location.reload();
                 });
               }
             } else {
-              _this247.isLoading = false;
+              _this252.isLoading = false;
 
-              var _dialogRef180 = _this247.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+              var _dialogRef180 = _this252.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                 data: {
                   message: "User Does not exist"
                 }
@@ -31428,19 +31580,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this248 = this;
+          var _this253 = this;
 
           this.BuyerDetail = [];
           this.archieveUser = [];
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
               if (element.data().Archived == false) {
-                _this248.BuyerDetail.push({
+                _this253.BuyerDetail.push({
                   Detail: element.data(),
                   id: element.id
                 });
               } else {
-                _this248.archieveUser.push({
+                _this253.archieveUser.push({
                   Detail: element.data(),
                   id: element.id
                 });
@@ -31451,43 +31603,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this249 = this;
+          var _this254 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this249.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this249.userData));
+              _this254.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this254.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this249.loggedIn = true;
+              _this254.loggedIn = true;
 
-              _this249.agentItem();
+              _this254.agentItem();
 
-              _this249.checkUrl();
+              _this254.checkUrl();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this249.loggedIn = false;
+              _this254.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this250 = this;
+          var _this255 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this250.Companyname = element.data().company;
-              _this250.Address = element.data().address;
-              _this250.Postcode = element.data().postcode;
-              _this250.Phonenumber = element.data().phone;
-              _this250.Jobtitle = element.data().jobtitle;
-              _this250.SinglePercentage = element.data().solefees;
-              _this250.Multipercentage = element.data().multiplefees;
-              _this250.Image = element.data().image;
-              _this250.Fullname = element.data().fullname;
-              _this250.PropertyId = element.id;
-              _this250.UserId = _this250.user.uid;
+              _this255.Companyname = element.data().company;
+              _this255.Address = element.data().address;
+              _this255.Postcode = element.data().postcode;
+              _this255.Phonenumber = element.data().phone;
+              _this255.Jobtitle = element.data().jobtitle;
+              _this255.SinglePercentage = element.data().solefees;
+              _this255.Multipercentage = element.data().multiplefees;
+              _this255.Image = element.data().image;
+              _this255.Fullname = element.data().fullname;
+              _this255.PropertyId = element.id;
+              _this255.UserId = _this255.user.uid;
             });
           });
         }
@@ -31558,30 +31710,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "update",
         value: function update(docid, property) {
-          var _this251 = this;
+          var _this256 = this;
 
           property.Archived = true;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this251.items();
+            _this256.items();
           });
         }
       }, {
         key: "restore",
         value: function restore(docid, property) {
-          var _this252 = this;
+          var _this257 = this;
 
           property.Archived = false;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this252.items();
+            _this257.items();
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this253 = this;
+          var _this258 = this;
 
           this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
-            _this253.items();
+            _this258.items();
           });
         }
       }, {
@@ -31623,13 +31775,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this254 = this;
+          var _this259 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this254.AgentSignIn = element.data().AgentSignIn;
-            _this254.UserSignIn = element.data().UserSignIn;
-            _this254.WrongPassword = element.data().WrongPassword;
-            _this254.isLoading = false;
+            _this259.AgentSignIn = element.data().AgentSignIn;
+            _this259.UserSignIn = element.data().UserSignIn;
+            _this259.WrongPassword = element.data().WrongPassword;
+            _this259.isLoading = false;
           });
         }
       }]);
@@ -32025,7 +32177,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this255 = this;
+          var _this260 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -32034,10 +32186,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this255.id = params.get("id");
+            _this260.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this255.agents = data;
+            _this260.agents = data;
           });
           this.getAgentDetails();
           this.getAgentForm();
@@ -32045,7 +32197,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage, office) {
-          var _this256 = this;
+          var _this261 = this;
 
           if (this.agents.officephone != null || this.agents.phone != null) {
             var Office = parseInt(this.agents.officephone);
@@ -32149,25 +32301,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           } else {
             this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-              var dialogRef = _this256.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+              var dialogRef = _this261.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
                 data: {
                   message: "Profile Updated"
                 }
               });
 
-              _this256.edit = false;
+              _this261.edit = false;
             });
           }
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this257 = this;
+          var _this262 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this257.agents = element.data();
-              _this257.id = element.id;
+              _this262.agents = element.data();
+              _this262.id = element.id;
             });
           });
         }
@@ -32184,32 +32336,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this258 = this;
+          var _this263 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this258.FullName = element.data().FullName;
-            _this258.CompanyName = element.data().CompanyName;
-            _this258.Postcode = element.data().Postcode;
-            _this258.Address = element.data().Address;
-            _this258.JobTitle = element.data().JobTitle;
-            _this258.EmailAddress = element.data().EmailAddress;
-            _this258.emailvalidation = element.data().emailvalidation;
-            _this258.Password = element.data().Password;
-            _this258.officephone = element.data().officephone;
-            _this258.officephonevalidation = element.data().officephonevalidation;
-            _this258.officephonelength = element.data().officephonelength;
-            _this258.mobile = element.data().mobile;
-            _this258.mobilevalidity = element.data().mobilevalidity;
-            _this258.mobilelength = element.data().mobilelength;
-            _this258.solefees = element.data().solefees;
-            _this258.solefeesmore = element.data().solefeesmore;
-            _this258.solefeesless = element.data().solefeesless;
-            _this258.multiplefees = element.data().multiplefees;
-            _this258.multiplefeesmore = element.data().multiplefeesmore;
-            _this258.multiplefeesless = element.data().multiplefeesless;
-            _this258.Image = element.data().Image;
-            _this258.Imagesize = element.data().Imagesize;
-            _this258.isLoading = false;
+            _this263.FullName = element.data().FullName;
+            _this263.CompanyName = element.data().CompanyName;
+            _this263.Postcode = element.data().Postcode;
+            _this263.Address = element.data().Address;
+            _this263.JobTitle = element.data().JobTitle;
+            _this263.EmailAddress = element.data().EmailAddress;
+            _this263.emailvalidation = element.data().emailvalidation;
+            _this263.Password = element.data().Password;
+            _this263.officephone = element.data().officephone;
+            _this263.officephonevalidation = element.data().officephonevalidation;
+            _this263.officephonelength = element.data().officephonelength;
+            _this263.mobile = element.data().mobile;
+            _this263.mobilevalidity = element.data().mobilevalidity;
+            _this263.mobilelength = element.data().mobilelength;
+            _this263.solefees = element.data().solefees;
+            _this263.solefeesmore = element.data().solefeesmore;
+            _this263.solefeesless = element.data().solefeesless;
+            _this263.multiplefees = element.data().multiplefees;
+            _this263.multiplefeesmore = element.data().multiplefeesmore;
+            _this263.multiplefeesless = element.data().multiplefeesless;
+            _this263.Image = element.data().Image;
+            _this263.Imagesize = element.data().Imagesize;
+            _this263.isLoading = false;
           });
         }
       }]);
@@ -32647,19 +32799,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this259 = this;
+          var _this264 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this259.agents = element.data();
-              _this259.fullname = _this259.agents.fullname;
-              _this259.address = _this259.agents.address;
-              _this259.postcode = _this259.agents.postcode;
-              _this259.email = _this259.agents.email;
-              _this259.phone = _this259.agents.phone;
-              _this259.officephone = _this259.agents.officephone;
-              _this259.sole = _this259.agents.solefees;
-              _this259.multi = _this259.agents.multiplefees;
+              _this264.agents = element.data();
+              _this264.fullname = _this264.agents.fullname;
+              _this264.address = _this264.agents.address;
+              _this264.postcode = _this264.agents.postcode;
+              _this264.email = _this264.agents.email;
+              _this264.phone = _this264.agents.phone;
+              _this264.officephone = _this264.agents.officephone;
+              _this264.sole = _this264.agents.solefees;
+              _this264.multi = _this264.agents.multiplefees;
             });
           });
         }
@@ -34468,7 +34620,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location, dialog) {
-        var _this260 = this;
+        var _this265 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -34483,8 +34635,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this260.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this260.userData));
+            _this265.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this265.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -34638,7 +34790,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthLogin",
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee71() {
-            var _this261 = this;
+            var _this266 = this;
 
             var result, User, dialogRef;
             return regeneratorRuntime.wrap(function _callee71$(_context71) {
@@ -34654,9 +34806,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     User = "User";
                     this.ngZone.run(function () {
                       // console.log(result.user)
-                      _this261.SetUserData(result.user);
+                      _this266.SetUserData(result.user);
 
-                      _this261.createUserChecker(result.user, User);
+                      _this266.createUserChecker(result.user, User);
 
                       setTimeout(location.reload.bind(location), 2000);
                     });
@@ -34684,7 +34836,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthSignup",
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee72() {
-            var _this262 = this;
+            var _this267 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee72$(_context72) {
@@ -34698,7 +34850,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 3:
                     result = _context72.sent;
                     this.ngZone.run(function () {
-                      _this262.SetUserData(result.user);
+                      _this267.SetUserData(result.user);
                     });
                     _context72.next = 10;
                     break;
@@ -35250,37 +35402,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this263 = this;
+          var _this268 = this;
 
           this.isLoading = true;
           this.viewResult = true;
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this263.isLoading = true;
+              _this268.isLoading = true;
 
-              _this263.listingBuyers.push(element.data());
+              _this268.listingBuyers.push(element.data());
             });
 
-            _this263.HomeService.getlistingseller(_this263.uid).then(function (res) {
+            _this268.HomeService.getlistingseller(_this268.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this263.isLoading = true;
+                _this268.isLoading = true;
 
-                _this263.listingSeller.push(elements.data());
+                _this268.listingSeller.push(elements.data());
               });
-              _this263.isLoading = true;
-              _this263.checkNumberNestimates = _this263.listingBuyers.length + _this263.listingSeller.length;
-              _this263.isLoading = true;
+              _this268.isLoading = true;
+              _this268.checkNumberNestimates = _this268.listingBuyers.length + _this268.listingSeller.length;
+              _this268.isLoading = true;
 
-              if (_this263.checkNumberNestimates > 0) {
-                _this263.isLoading = true;
-                _this263.appMatches = true;
-                _this263.interval = setInterval(function () {
-                  _this263.isLoading = false;
+              if (_this268.checkNumberNestimates > 0) {
+                _this268.isLoading = true;
+                _this268.appMatches = true;
+                _this268.interval = setInterval(function () {
+                  _this268.isLoading = false;
                 }, 3000);
               } else {
-                _this263.isLoading = true;
-                _this263.viewResult = false;
-                _this263.isLoading = false;
+                _this268.isLoading = true;
+                _this268.viewResult = false;
+                _this268.isLoading = false;
               }
             });
           });
@@ -35952,11 +36104,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MiddleSliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this264 = this;
+          var _this269 = this;
 
           this.ActivatedRoutes.paramMap.subscribe(function (element) {});
           this.SellerNestimateDetails.getSellerRequirement(this.userID, this.child).then(function (element) {
-            _this264.AllImages = element.data().Images;
+            _this269.AllImages = element.data().Images;
           });
         }
       }]);
@@ -36238,7 +36390,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this265 = this;
+          var _this270 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
@@ -36250,10 +36402,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this265.userData = response.user;
-              _this265.authToken = sessionStorage.getItem('currentJwt');
+              _this270.userData = response.user;
+              _this270.authToken = sessionStorage.getItem('currentJwt');
 
-              _this265.currentUserSubject.next(response.user);
+              _this270.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -36262,7 +36414,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Googlelogin",
         value: function Googlelogin(token, accessToken) {
-          var _this266 = this;
+          var _this271 = this;
 
           return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
@@ -36271,10 +36423,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this266.userData = response.user;
-              _this266.authToken = sessionStorage.getItem('currentJwt');
+              _this271.userData = response.user;
+              _this271.authToken = sessionStorage.getItem('currentJwt');
 
-              _this266.currentUserSubject.next(response.user);
+              _this271.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -36283,7 +36435,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Facebooklogin",
         value: function Facebooklogin() {
-          var _this267 = this;
+          var _this272 = this;
 
           return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             console.log(response); // login successful if there's a jwt token in the response
@@ -36293,10 +36445,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this267.userData = response.user;
-              _this267.authToken = sessionStorage.getItem('currentJwt');
+              _this272.userData = response.user;
+              _this272.authToken = sessionStorage.getItem('currentJwt');
 
-              _this267.currentUserSubject.next(response.user);
+              _this272.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -36305,7 +36457,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "logout",
         value: function logout() {
-          var _this268 = this;
+          var _this273 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -36313,7 +36465,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this268.router.navigate(["/homenew"]);
+            _this273.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -36540,21 +36692,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this269 = this;
+          var _this274 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           console.log(this.user);
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this269.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this269.userData));
+              _this274.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this274.userData));
 
-              _this269.LoggedIn();
+              _this274.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this269.LoggedOut();
+              _this274.LoggedOut();
             }
           });
 
@@ -36586,58 +36738,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this270 = this;
+          var _this275 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this270.isLoading = false;
+            _this275.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this271 = this;
+          var _this276 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this271.isLoading = false;
+            _this276.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this272 = this;
+          var _this277 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this272.isLoading = false;
+            _this277.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this273 = this;
+          var _this278 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this273.KnowUser.push(element.data());
+              _this278.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this273.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this278.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this273.isLoading = false;
+                _this278.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this273.authService.SignIn(email, pass).then(function (data) {
-                  _this273.isLoading = false;
+                _this278.authService.SignIn(email, pass).then(function (data) {
+                  _this278.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -36721,21 +36873,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this274 = this;
+          var _this279 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this274.notificationContent = res.data().SingupFromMenu;
+            _this279.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this275 = this;
+          var _this280 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this275.topLine = element.data().topLine;
-              _this275.secondLine = element.data().SecondLine;
+              _this280.topLine = element.data().topLine;
+              _this280.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -36866,11 +37018,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this276 = this;
+          var _this281 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (element) {
             element.forEach(function (element) {
-              _this276.termsCondition = element.data().Terms;
+              _this281.termsCondition = element.data().Terms;
             });
           });
         }
