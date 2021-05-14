@@ -511,7 +511,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- Loading spinner -->\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading Nestimate...</p>\n      </div>\n</div>\n\n\n<!--Login-Form  *-->\n\n<div class=\"continue-form\" *ngIf=\"overlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\" id=\"boldText\">Thanks for registering!</p>\n    <p class=\"overlay-text\" id=\"boldText\">{{notificationContent }}\n    </p>\n\n  \n  </div>\n  <div class=\"continue-button\" (click)=\"continueClose()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n  Continue\n      \n      <span class=\"arrow-text\">\t&gt;</span>\n    </div>\n   \n  </div>\n  \n\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!--Login-form-end-->\n\n<div class=\"main-container-buyer\">\n<form *ngIf=\"isLoggedIn\">\n  <mat-tab-group #matgroup class=\"form-tab-conatiner\" [selectedIndex]=\"selectedIndex\" (selectedTabChange)=\"onTabChange($event)\">\n    <mat-tab label=\"Personal Details \" class=\"tabs-align-padding\" >\n      <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\n        <div class=\"card-margin background-new-form\">\n      \n       \n          <div class=\"extra-field\" >\n          <mat-form-field appearance=\"outline\" class=\"drop-box\" [hideRequiredMarker]=\"hideRequired\" >\n            <!-- <mat-label class=\"fixed-Label\">\n             <span id=\"title\"> Tittle</span>\n             </mat-label> -->\n     \n           \n            <mat-select name=\"title\" [(ngModel)]=\"user.title\" class=\"drop-down-list\" #titles  placeholder=\"Title\" disableOptionCentering  panelClass=\"testClass\" required>\n              <mat-option value=\"Mr\">Mr</mat-option>\n              <mat-option value=\"Ms\">Ms</mat-option>\n              <mat-option value=\"Mrs\">Mrs</mat-option>\n              <mat-option value=\"Miss\">Miss</mat-option>\n              <mat-option value=\"Mx\">Mx</mat-option>\n              <mat-option value=\"Dr\">Dr</mat-option>\n            </mat-select>\n\n \n            <mat-error>{{Title}}</mat-error> \n          </mat-form-field>\n\n          \n        </div>\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\"  appearance=\"outline\" [hideRequiredMarker]=\"hideRequired\" >\n            <mat-label class=\"fixed-Label\">\n            <span id=\"Name\">Full Name</span>\n            </mat-label>\n        \n            <input matInput  name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\" #Names  required>\n    <mat-error>{{FullName}}</mat-error> \n          </mat-form-field>\n        </div>\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n              <span id=\"email\">Email Address</span></mat-label>\n    \n            <input matInput  name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.email\"\n               #emails  pattern=\"[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}\" required>\n               <mat-error>Please enter valid email</mat-error>\n          </mat-form-field>\n</div>\n\n\n\n          <!--Date Of Birth Field-->\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"dob\">Date of Birth</span></mat-label>\n            <input matInput [matDatepicker]=\"picker\"  name=\"DOB\" class=\"mat-mail-input\"\n              value=\"DOB\" [(ngModel)]=\"user.DOB\"  #dobs  required>\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n            <mat-error>{{DateofBirth}}</mat-error>\n          </mat-form-field>\n          </div>\n          <!--Date Of Birth Field End-->\n\n\n          <!--Phone Number field-->\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n             <span id=\"tele\">Phone Number</span>\n            </mat-label>\n\n            <span matPrefix>+44&nbsp;</span>\n            <input matInput name=\"phonenumber\"  [(ngModel)]=\"user.Phone\"   minlength=\"10\"  [formControl]=\"phoneFormControl\"  #tele required>\n  \n                  \n                      <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n                     {{PhoneValidation}}\n                    </mat-error>\n                    <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n                      {{PhoneValidation}}\n                    </mat-error>\n                    <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n                      {{PhoneLength}}\n                    </mat-error>\n          </mat-form-field>\n</div>\n          <!--Phone Number field-->\n\n  \n\n\n          <mat-form-field class=\"example-full-width\" *ngIf=\"other\">\n            <input matInput placeholder=\"other\" name=\"other\" class=\"mat-mail-input\" >\n          </mat-form-field>\n\n        </div>\n\n\n        <div class=\"card-margin background-new-form\">\n\n          <label class=\"new-heading-nestimate h1Styles\" id=\"boldText\">Your Address</label>\n          <p class=\"new-heading-nestimate\" id=\"boldText\"><span id=\"Cpost\">Area - Search by Postcode</span></p>\n    \n          <mat-option class=\"postcode-background\" style=\"border:1px solid #d2d2d2;border-radius: 3px;\" id=\"Cpost\">\n            <div class=\"extra-field-three\" >\n            <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" \n              aria-label=\"Post-Code\" placeholder=\"Enter Postcode\" matInput [matAutocomplete]=\"auto\" [(ngModel)]=\"listingBuyer.Currentpostcode\" minlength=\"5\" #Currentpostcode id=\"up\"  required>\n            <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\"\n              (optionSelected)='getPost($event.option.value)'>\n              <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\" [value]=\"item\">\n                <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                </span> | <span>{{ item.citytown | titlecase}}</span>\n              </mat-option>\n            </mat-autocomplete>\n          </div>\n          </mat-option>\n         \n     \n          <p class=\"new-heading-nestimate\" id=\"boldText\"><span id=\"Cpost\">Area - Search by Address</span></p>\n          <div class=\"extra-field-two\" >\n            <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"caddress\">Address</span></mat-label>\n             \n              <input matInput   name=\"CurrentAddress\"\n                class=\"mat-mail-input\" [(ngModel)]=\"listingBuyer.CurrentAddress\" #CurrentAddress required>\n                <mat-error>{{CurrentAaddress}}</mat-error>\n              \n            </mat-form-field>\n  </div>\n\n  <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\"><span id=\"Ctown\">Town/City</span></mat-label>\n            <input matInput  [(ngModel)]=\"listingBuyer.CurrentTown\" name=\"CurrentTowncity\"\n              class=\"mat-mail-input\"   #currentTown required>\n              <mat-error>{{CurrentTown}}</mat-error>\n          </mat-form-field>\n</div>\n\n\n<div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"cState\">County</span></mat-label>\n        \n            <input matInput  [(ngModel)]=\"listingBuyer.Currentstate\" name=\"Currentstate\"\n              class=\"mat-mail-input\" #Currentstate required>\n              <mat-error>{{CurrentCounty}}</mat-error>\n          </mat-form-field>\n</div>\n\n<div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"ccountry\">Country</span></mat-label>\n        \n            <input matInput   name=\"state\" class=\"mat-mail-input\"\n              [(ngModel)]=\"listingBuyer.Currentcountry\" name=\"Currentcountry\" #Currentcountry required>\n              <mat-error>{{CurrentCountry}}</mat-error>\n\n          </mat-form-field>\n</div>\n</div>\n<ul class=\"submit-button\">\n  <div class=\"xd-submit-button\">\n    <a (click)=\"selectTab(1, 0)\" class=\"text-next-button\" id=\"boldText\">Next</a>\n  </div>\n  </ul>\n       \n\n      </div>\n \n    </mat-tab>\n\n    <mat-tab label=\"Property Details\" class=\"tabs-align-padding\"   >\n      <div class=\"tabs-align-padding\">\n\n\n\n        <div class=\"card-margin background-new-form\">\n          <mat-card-title class=\"mat_card_title new-heading-nestimate\" id=\"boldText\" ><span id=\"propfor\">are you looking to</span></mat-card-title>\n     \n          <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\"\n            [(ngModel)]=\"listingBuyer.PropertyFor\" (click)=\"check()\" (change)=\"radioChange($event)\"  >\n            <mat-radio-button value=\"buy\" >Buy</mat-radio-button>\n            <mat-radio-button value=\"rent\">Rent</mat-radio-button>\n          </mat-radio-group>\n      <br>\n          <mat-card-title class=\"mat_card_title new-heading-nestimate\" id=\"boldText\">Please fill in the details of your desired\n            property</mat-card-title>\n          <p class=\"mt-4 new-heading-nestimate\"><span id=\"lookpost\">Area - Search by Postcode</span></p>\n          <mat-option style=\"border: 1px solid #d2d2d2;border-radius: 3px;\" >       \n            <input [formControl]=\"autoCompleteControlLooking\" type=\"text\" \n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\" [(ngModel)]=\"listingBuyer.Lookingpostcode\"\n              name=\"Lookingpostcode\" minlength=\"5\"   #Lookingpostcode placeholder=\"Enter Postcode\" id=\"up\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\"\n              (optionSelected)='getPosts($event.option.value)'>\n              <mat-option *ngFor=\"let item of addressianAutoCompleteLooking$ | async; let index=index\" [value]=\"item\">\n                <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                </span> | <span>{{ item.citytown | titlecase}}</span>\n              </mat-option>\n            </mat-autocomplete>\n    \n          </mat-option>\n\n\n\n          <p class=\"mt-4\" class=\"new-heading-nestimate\" id=\"boldText\">Area - Search by Address</p>\n          <div class=\"extra-field-two\"  >\n          <mat-form-field class=\"example-full-width mb-3\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"lsrname\">Street Name</span></mat-label>\n            <input matInput  class=\"mat-mail-input\" [(ngModel)]=\"listingBuyer.LookingStreetname\" name=\"LookingStreetname\"  #LookingStreetname required>\n            <mat-error>{{LStreetname}}</mat-error>\n          </mat-form-field>\n\n</div>\n<div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width mb-3\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"looktow\">Town/City</span></mat-label>\n            <input matInput  [(ngModel)]=\"listingBuyer.LookingTown\" name=\"LookingTown\"\n              class=\"mat-mail-input\"  #LookingTown required>\n              <mat-error>{{LTown}}</mat-error>\n          </mat-form-field>\n</div>\n<div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Lookstate\">County</span></mat-label>\n            <input matInput  \n              [(ngModel)]=\"listingBuyer.Lookingstate\" name=\"Lookingstate\" class=\"mat-mail-input\"  #Lookingstate required>\n              <mat-error>{{LCounty}}</mat-error>\n          </mat-form-field>\n          </div>\n\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\"><span id=\"lCountry\">Country</span></mat-label>\n            <input matInput  \n              [(ngModel)]=\"listingBuyer.Country\" name=\"Country\" class=\"mat-mail-input\"  #Country required>\n              <mat-error>{{LCountry}}</mat-error>\n          </mat-form-field>\n          </div>\n        </div> \n\n\n\n\n        <label class=\"new-heading-nestimate heading-optional\" id=\"boldText\"> Property Details</label>\n        <div class=\"card-margin background-new-form\">\n       \n\n\n\n          <div id=\"property-type\" class=\"extra-field-two\">\n            <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Property-type\">Property Type</span></mat-label>\n     \n              <mat-select name=\"Propertytype\" [(ngModel)]=\"listingBuyer.PropertyType\" value=\"Propertytype\"\n                class=\"example-full-width\"  #PropertyType disableOptionCentering panelClass=\"testClass\"  required>\n                <mat-option value=\"Flat\" (click)=\"undisabledField()\">Flat</mat-option>\n                <mat-option value=\"Studio\" (click)=\"disabledField()\">Studio</mat-option>\n                <mat-option value=\"Terracedhouse\" (click)=\"undisabledField()\">Terraced House</mat-option>\n                <mat-option class=\"example-margin\" value=\"Maisonette\" (click)=\"undisabledField()\">Maisonette</mat-option>\n                <mat-option value=\"Semi-detached\" (click)=\"undisabledField()\">Semi-detached House</mat-option>\n                <mat-option value=\"Bungalow\" (click)=\"undisabledField()\">Bungalow</mat-option>\n                <mat-option value=\"Detachedhouse\" (click)=\"undisabledField()\">Detached House</mat-option>\n                <mat-option value=\"Cottage\" (click)=\"undisabledField()\">Cottage</mat-option>\n                <mat-option value=\"Townhouse\" (click)=\"undisabledField()\">Town House</mat-option>\n                <mat-option value=\"Countryhouse\" (click)=\"undisabledField()\">Country House</mat-option>\n                <mat-option value=\"Barnconversion\" (click)=\"undisabledField()\">Barn conversion</mat-option>\n                <mat-option value=\"Farm\" (click)=\"undisabledField()\">Farm</mat-option>\n                <mat-option value=\"Houseboat\" (click)=\"undisabledField()\">Houseboat</mat-option>\n                <mat-option value=\"Lodge\" (click)=\"undisabledField()\">Lodge</mat-option>\n              </mat-select>\n              <mat-error>{{proptype}}</mat-error>\n            </mat-form-field>\n          </div> \n       \n       \n\n\n\n\n          <!--Min Max Amount-->\n          <label class=\"new-heading-nestimate\" id=\"boldText\">Number of Rooms</label>\n          <div class=\"extra-field-two\" >\n          <div class=\"price-selection\" *ngIf=\"isDisabled \">\n            <mat-form-field class=\"filed-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"roomMin\">Min</span></mat-label>     \n              <mat-select [(value)]=\"Roommin\" name=\"Roommin\" [(ngModel)]=\"listingBuyer.Roommin\"  #Roommins disabled>\n                <mat-option value=\"Studio\">Studio</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3</mat-option>\n                <mat-option value=\"4\">4</mat-option>\n                <mat-option value=\"5\">5</mat-option>\n              </mat-select>\n              \n            </mat-form-field>\n        \n        \n            <mat-form-field class=\"filed-width\"  appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"roomMax\">Max</span></mat-label>\n              <mat-select [(value)]=\"Roomsmax\" name=\"Roomsmax\" [(ngModel)]=\"listingBuyer.Roomsmax\"  #Roomsmaxs disabled>\n                <mat-option value=\"Studio\">Studio</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3</mat-option>\n                <mat-option value=\"4\">4</mat-option>\n                <mat-option value=\"5\">5</mat-option>\n              </mat-select>\n            </mat-form-field>\n            \n          </div> \n          <div class=\"price-selection\" *ngIf=\"!isDisabled \">\n            <mat-form-field class=\"filed-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"roomMin\">Min</span></mat-label>     \n              <mat-select [(value)]=\"Roommin\" name=\"Roommin\" [(ngModel)]=\"listingBuyer.Roommin\"  #Roommins disableOptionCentering panelClass=\"testClass\" required>\n                <mat-option value=\"Studio\">Studio</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3</mat-option>\n                <mat-option value=\"4\">4</mat-option>\n                <mat-option value=\"5\">5</mat-option>\n              </mat-select>\n              <mat-error>{{Roommin}}</mat-error>\n            </mat-form-field>\n        \n        \n            <mat-form-field class=\"filed-width\"  appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"roomMax\">Max</span></mat-label>\n              <mat-select [(value)]=\"Roomsmax\" name=\"Roomsmax\" [(ngModel)]=\"listingBuyer.Roomsmax\"  #Roomsmaxs disableOptionCentering panelClass=\"testClass\" required>\n                <mat-option value=\"Studio\">Studio</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3</mat-option>\n                <mat-option value=\"4\">4</mat-option>\n                <mat-option value=\"5\">5</mat-option>\n              </mat-select>\n              <mat-error>{{Roomsmax}}</mat-error>\n            </mat-form-field>\n            \n          </div> \n        </div>\n\n          <div class=\"extra-field-two\"  *ngIf=\"rentOption\">\n            <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n             <mat-label class=\"fixed-Label\"><span id=\"chain\">Your Renting Position</span></mat-label>\n \n             <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n               class=\"example-full-width\"   #ChainStatus disableOptionCentering panelClass=\"testClass\"  required>\n               <mat-option value=\"Ready to move in now\" (click)=\"otherOption()\">Ready to move in now</mat-option>\n               <mat-option value=\"Looking to move in short-term\" (click)=\"otherOption()\">Looking to move in short-term</mat-option>\n             </mat-select>\n   \n             <mat-error>{{FinancialRenting}}</mat-error>\n           </mat-form-field>\n           </div>\n \n \n           <div class=\"extra-field-two\"  *ngIf=\"buyOption\">\n             <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n               <mat-label class=\"fixed-Label\"><span id=\"chain\">Your Buying Position</span></mat-label>\n \n               <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n                 class=\"example-full-width\"  #ChainStatus disableOptionCentering panelClass=\"testClass\"  required>\n                 <mat-option value=\"First Time Buyer\" (click)=\"otherOption()\">First Time Buyer</mat-option>\n                 <mat-option value=\"In Chain\" (click)=\"otherOption()\">In Chain</mat-option>\n                 <mat-option value=\"Cash Buyer\" (click)=\"otherOption()\">Cash Buyer</mat-option>\n                 <mat-option value=\"Other (Please specify)\" (click)=\"otherChain()\">Other (Please specify)</mat-option>\n               </mat-select>\n               <mat-error>{{FinancialRenting}}</mat-error>\n             </mat-form-field> \n           </div>\n \n \n  <div  *ngIf=\"!rentOption\" >\n        \n             <div class=\"extra-field-two\" >\n             <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n               <mat-label class=\"fixed-Label\"><span id=\"finanacial\">Financial Position</span></mat-label>\n \n               <mat-select name=\"FinancialPosition\" [(ngModel)]=\"listingBuyer.FinancialPosition\"\n         value=\"FinancialPosition\" class=\"example-full-width\"  #FinancialPosition disableOptionCentering panelClass=\"testClass\"  required>\n                 <mat-option value=\"any\" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">\n                 </mat-option>\n                 <mat-option value=\"Mortgate to be arranged\" name=\"Mortgate to be arranged\"\n                   (click)=\"removefinancialPostion()\">Mortgate to be arranged</mat-option>\n                 <mat-option value=\"Mortgage arranged \" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">\n                   Mortgage arranged </mat-option>\n                 <mat-option value=\"Cash Buyer\" name=\"Cash Buyer\" (click)=\"removefinancialPostion()\">Cash Buyer\n                 </mat-option>\n                 <mat-option value=\"Please specify\" name=\"Please specify\" (click)=\"financialPostion()\">Other</mat-option>\n               </mat-select>\n               <mat-error>{{finType}}</mat-error>\n             </mat-form-field>\n             </div>\n           </div> \n          <!--Max-No of Rooms-->\n          <label class=\"new-heading-nestimate\" *ngIf=\"buyOption\">Price Range</label>\n          <label class=\"new-heading-nestimate\" *ngIf=\"rentOption\">Rent Range</label>\n<div class=\"amounts extra-field-two\" *ngIf=\"amounts\" >\n          <!--New Values-->\n          <!--Min Max Amount-->\n   \n          <div class=\"price-selection\" *ngIf=\"rentOption\">\n       \n            <mat-form-field class=\"filed-width\" appearance=\"outline\" >\n              <mat-label class=\"fixed-Label\"><span id=\"MinAmount\">Min</span></mat-label>\n\n              <mat-select [(value)]=\"min\" name=\"MinAmount\" [(ngModel)]=\"listingBuyer.MinAmount\"  #MinAmount disableOptionCentering panelClass=\"testClass\" required>\n                <mat-option value=\"100\">100 pcm</mat-option>\n                <mat-option value=\"200\">200 pcm</mat-option>\n                <mat-option value=\"300\">300 pcm</mat-option>\n                <mat-option value=\"400\">400 pcm</mat-option>\n                <mat-option value=\"500\">500 pcm</mat-option>\n                <mat-option value=\"600\">600 pcm</mat-option>\n                <mat-option value=\"700\">700 pcm</mat-option>\n                <mat-option value=\"800\">800 pcm</mat-option>\n                <mat-option value=\"900\">900 pcm</mat-option>\n                <mat-option value=\"1000\">1000 pcm</mat-option>\n                <mat-option value=\"1250\">1250 pcm</mat-option>\n                <mat-option value=\"1500\">1500 pcm</mat-option>\n                <mat-option value=\"1750\">1750 pcm</mat-option>\n                <mat-option value=\"2000\">2000 pcm</mat-option>\n                <mat-option value=\"2250\">2250 pcm</mat-option>\n                <mat-option value=\"2500\">2500 pcm</mat-option>\n                <mat-option value=\"2750\">2750 pcm</mat-option>\n                <mat-option value=\"3000\">3000 pcm</mat-option>\n                <mat-option value=\"3250\">3250 pcm</mat-option>\n                <mat-option value=\"3500\">3500 pcm</mat-option>\n                <mat-option value=\"3750\">3750 pcm</mat-option>\n                <mat-option value=\"4000\">4000 pcm</mat-option>\n                <mat-option value=\"4250\">4250 pcm</mat-option>\n                <mat-option value=\"4500\">4500 pcm</mat-option>\n                <mat-option value=\"5000\">5000 pcm</mat-option>\n                <mat-option value=\"5500\">5500 pcm</mat-option>\n                <mat-option value=\"6000\">6000 pcm</mat-option>\n                <mat-option value=\"6500\">6500 pcm</mat-option>\n                <mat-option value=\"7000\">7000 pcm</mat-option>\n                <mat-option value=\"7500\">7500 pcm</mat-option>\n                <mat-option value=\"8000\">8500 pcm</mat-option>\n                <mat-option value=\"9000\">9000 pcm</mat-option>\n                <mat-option value=\"9500\">9500 pcm</mat-option>\n                <mat-option value=\"10000\">10000 pcm</mat-option>\n                <mat-option value=\"12500\">125000 pcm</mat-option>\n                <mat-option value=\"15000\">15000 pcm</mat-option>\n                <mat-option value=\"17500\">17500 pcm</mat-option>\n                <mat-option value=\"20000\">20000 pcm</mat-option>\n                <mat-option value=\"25000\">25000 pcm</mat-option>\n\n\n\n              </mat-select>\n              <mat-error>{{Min}}</mat-error>\n\n            </mat-form-field>\n            \n       \n             <mat-form-field class=\"filed-width\"   appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"MaxAmount\">Max</span></mat-label>\n\n              <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingBuyer.MaxAmount\"  #MaxAmount disableOptionCentering panelClass=\"testClass\"  required>\n                <mat-option value=\"100\">100 pcm</mat-option>\n                <mat-option value=\"200\">200 pcm</mat-option>\n                <mat-option value=\"300\">300 pcm</mat-option>\n                <mat-option value=\"400\">400 pcm</mat-option>\n                <mat-option value=\"500\">500 pcm</mat-option>\n                <mat-option value=\"600\">600 pcm</mat-option>\n                <mat-option value=\"700\">700 pcm</mat-option>\n                <mat-option value=\"800\">800 pcm</mat-option>\n                <mat-option value=\"900\">900 pcm</mat-option>\n                <mat-option value=\"1000\">1000 pcm</mat-option>\n                <mat-option value=\"1250\">1250 pcm</mat-option>\n                <mat-option value=\"1500\">1500 pcm</mat-option>\n                <mat-option value=\"1750\">1750 pcm</mat-option>\n                <mat-option value=\"2000\">2000 pcm</mat-option>\n                <mat-option value=\"2250\">2250 pcm</mat-option>\n                <mat-option value=\"2500\">2500 pcm</mat-option>\n                <mat-option value=\"2750\">2750 pcm</mat-option>\n                <mat-option value=\"3000\">3000 pcm</mat-option>\n                <mat-option value=\"3250\">3250 pcm</mat-option>\n                <mat-option value=\"3500\">3500 pcm</mat-option>\n                <mat-option value=\"3750\">3750 pcm</mat-option>\n                <mat-option value=\"4000\">4000 pcm</mat-option>\n                <mat-option value=\"4250\">4250 pcm</mat-option>\n                <mat-option value=\"4500\">4500 pcm</mat-option>\n                <mat-option value=\"5000\">5000 pcm</mat-option>\n                <mat-option value=\"5500\">5500 pcm</mat-option>\n                <mat-option value=\"6000\">6000 pcm</mat-option>\n                <mat-option value=\"6500\">6500 pcm</mat-option>\n                <mat-option value=\"7000\">7000 pcm</mat-option>\n                <mat-option value=\"7500\">7500 pcm</mat-option>\n                <mat-option value=\"8000\">8500 pcm</mat-option>\n                <mat-option value=\"9000\">9000 pcm</mat-option>\n                <mat-option value=\"9500\">9500 pcm</mat-option>\n                <mat-option value=\"10000\">10000 pcm</mat-option>\n                <mat-option value=\"12500\">125000 pcm</mat-option>\n                <mat-option value=\"15000\">15000 pcm</mat-option>\n                <mat-option value=\"17500\">17500 pcm</mat-option>\n                <mat-option value=\"20000\">20000 pcm</mat-option>\n                <mat-option value=\"25000\">25000 pcm</mat-option>\n              </mat-select>\n              <mat-error>{{Max}}</mat-error>\n              \n            </mat-form-field>\n          \n          </div> \n          <!--New Values Ended-->\n\n<!--Old Value-->\n          <!--Min Max Amount-->\n     <div class=\"price-selection\" *ngIf=\"buyOption\">\n  \n            <mat-form-field class=\"filed-width\" appearance=\"outline\" >\n              <mat-label class=\"fixed-Label\"><span id=\"MinAmount\">Min</span></mat-label>\n\n              <mat-select [(value)]=\"min\" name=\"MinAmount\" [(ngModel)]=\"listingBuyer.MinAmount\"  #MinAmount disableOptionCentering panelClass=\"testClass\" required>\n                <mat-option value=\"50,000\">50,000</mat-option>\n                <mat-option value=\"60,000\">60,000</mat-option>\n                <mat-option value=\"70,000\">70,000</mat-option>\n                <mat-option value=\"80,000\">80,000</mat-option>\n                <mat-option value=\"90,000\">90,000</mat-option>\n                <mat-option value=\"100,000\">100,000</mat-option>\n                <mat-option value=\"110,000\">110,000</mat-option>\n                <mat-option value=\"120,000\">120,000</mat-option>\n                <mat-option value=\"125,000\">125,000</mat-option>\n                <mat-option value=\"130,000\">130,000</mat-option>\n                <mat-option value=\"140,000\">140,000</mat-option>\n                <mat-option value=\"150,000\">150,000</mat-option>\n                <mat-option value=\"160,000\">160,000</mat-option>\n                <mat-option value=\"170,000\">170,000</mat-option>\n                <mat-option value=\"175,000\">175,000</mat-option>\n                <mat-option value=\"180,000\">180,000</mat-option>\n                <mat-option value=\"190,000\">190,000</mat-option>\n                <mat-option value=\"200,000\">200,000</mat-option>\n                <mat-option value=\"210,000\">210,000</mat-option>\n                <mat-option value=\"220,000\">220,000</mat-option>\n                <mat-option value=\"230,000\">230,000</mat-option>\n                <mat-option value=\"240,000\">240,000</mat-option>\n                <mat-option value=\"250,000\">250,000</mat-option>\n                <mat-option value=\"260,000\">260,000</mat-option>\n                <mat-option value=\"270,000\">270,000</mat-option>\n                <mat-option value=\"280,000\">280,000</mat-option>\n                <mat-option value=\"290,000\">290,000</mat-option>\n                <mat-option value=\"300,000\">300,000</mat-option>\n                <mat-option value=\"325,000\">325,000</mat-option>\n                <mat-option value=\"350,000\">350,000</mat-option>\n                <mat-option value=\"375000\">375,000</mat-option>\n                <mat-option value=\"400,000\">400,000</mat-option>\n                <mat-option value=\"425,000\">425,000</mat-option>\n                <mat-option value=\"450,000\">450,000</mat-option>\n                <mat-option value=\"475,000\">475,000</mat-option>\n                <mat-option value=\"500,000\">500,000</mat-option>\n                <mat-option value=\"525,000\">525,000</mat-option>\n                <mat-option value=\"550,000\">550,000</mat-option>\n                <mat-option value=\"575,000\">575,000</mat-option>\n                <mat-option value=\"600,000\">600,000</mat-option>\n                <mat-option value=\"625,000\">625,000</mat-option>\n                <mat-option value=\"650,000\">650,000</mat-option>\n                <mat-option value=\"675,000\">675,000</mat-option>\n                <mat-option value=\"700,000\">700,000</mat-option>\n                <mat-option value=\"725,000\">725,000</mat-option>\n                <mat-option value=\"750,000\">750,000</mat-option>\n                <mat-option value=\"775,000\">775,000</mat-option>\n                <mat-option value=\"800,000\">800,000</mat-option>\n                <mat-option value=\"825,000\">825,000</mat-option>\n                <mat-option value=\"850,000\">850,000</mat-option>\n                <mat-option value=\"875,000\">875,000</mat-option>\n                <mat-option value=\"900,000\">900,000</mat-option>\n                <mat-option value=\"925,000\">925,000</mat-option>\n                <mat-option value=\"950,000\">950,000</mat-option>\n                <mat-option value=\"975,000\">975,000</mat-option>\n                <mat-option value=\"1000,000\">1000,000</mat-option>\n                <mat-option value=\"1250,000\">1250,000</mat-option>\n                <mat-option value=\"1500,000\">1500,000</mat-option>\n                <mat-option value=\"1750,000\">1750,000</mat-option>\n                <mat-option value=\"2000,000\">2000,000</mat-option>\n                <mat-option value=\"2250,000\">2250,000</mat-option>\n                <mat-option value=\"2500,000\">2500,000</mat-option>\n                <mat-option value=\"3000,000\">3000,000</mat-option>\n                <mat-option value=\"4000,000\">4000,000</mat-option>\n                <mat-option value=\"5000,000\">5000,000</mat-option>\n                <mat-option value=\"6000,000\">6000,000</mat-option>\n                <mat-option value=\"7000,000\">7000,000</mat-option>\n                <mat-option value=\"8000,000\">8000,000</mat-option>\n                <mat-option value=\"10000,000\">10000,000</mat-option>\n                <mat-option value=\"15000,000\">15000,000</mat-option>\n                <mat-option value=\"20000,000\">20000,000</mat-option>\n              </mat-select>\n              <mat-error>{{Min}}</mat-error>\n\n            </mat-form-field>\n          \n\n            <mat-form-field class=\"filed-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"MaxAmount\">Max</span></mat-label>\n\n              <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingBuyer.MaxAmount\"  #MaxAmount disableOptionCentering panelClass=\"testClass\"  required>\n                <mat-option value=\"50,000\">50,000</mat-option>\n                <mat-option value=\"60,000\">60,000</mat-option>\n                <mat-option value=\"70,000\">70,000</mat-option>\n                <mat-option value=\"80,000\">80,000</mat-option>\n                <mat-option value=\"90,000\">90,000</mat-option>\n                <mat-option value=\"100,000\">100,000</mat-option>\n                <mat-option value=\"110,000\">110,000</mat-option>\n                <mat-option value=\"120,000\">120,000</mat-option>\n                <mat-option value=\"125,000\">125,000</mat-option>\n                <mat-option value=\"130,000\">130,000</mat-option>\n                <mat-option value=\"140,000\">140,000</mat-option>\n                <mat-option value=\"150,000\">150,000</mat-option>\n                <mat-option value=\"160,000\">160,000</mat-option>\n                <mat-option value=\"170,000\">170,000</mat-option>\n                <mat-option value=\"175,000\">175,000</mat-option>\n                <mat-option value=\"180,000\">180,000</mat-option>\n                <mat-option value=\"190,000\">190,000</mat-option>\n                <mat-option value=\"200,000\">200,000</mat-option>\n                <mat-option value=\"210,000\">210,000</mat-option>\n                <mat-option value=\"220,000\">220,000</mat-option>\n                <mat-option value=\"230,000\">230,000</mat-option>\n                <mat-option value=\"240,000\">240,000</mat-option>\n                <mat-option value=\"250,000\">250,000</mat-option>\n                <mat-option value=\"260,000\">260,000</mat-option>\n                <mat-option value=\"270,000\">270,000</mat-option>\n                <mat-option value=\"280,000\">280,000</mat-option>\n                <mat-option value=\"290,000\">290,000</mat-option>\n                <mat-option value=\"300,000\">300,000</mat-option>\n                <mat-option value=\"325,000\">325,000</mat-option>\n                <mat-option value=\"350,000\">350,000</mat-option>\n                <mat-option value=\"375000\">375,000</mat-option>\n                <mat-option value=\"400,000\">400,000</mat-option>\n                <mat-option value=\"425,000\">425,000</mat-option>\n                <mat-option value=\"450,000\">450,000</mat-option>\n                <mat-option value=\"475,000\">475,000</mat-option>\n                <mat-option value=\"500,000\">500,000</mat-option>\n                <mat-option value=\"525,000\">525,000</mat-option>\n                <mat-option value=\"550,000\">550,000</mat-option>\n                <mat-option value=\"575,000\">575,000</mat-option>\n                <mat-option value=\"600,000\">600,000</mat-option>\n                <mat-option value=\"625,000\">625,000</mat-option>\n                <mat-option value=\"650,000\">650,000</mat-option>\n                <mat-option value=\"675,000\">675,000</mat-option>\n                <mat-option value=\"700,000\">700,000</mat-option>\n                <mat-option value=\"725,000\">725,000</mat-option>\n                <mat-option value=\"750,000\">750,000</mat-option>\n                <mat-option value=\"775,000\">775,000</mat-option>\n                <mat-option value=\"800,000\">800,000</mat-option>\n                <mat-option value=\"825,000\">825,000</mat-option>\n                <mat-option value=\"850,000\">850,000</mat-option>\n                <mat-option value=\"875,000\">875,000</mat-option>\n                <mat-option value=\"900,000\">900,000</mat-option>\n                <mat-option value=\"925,000\">925,000</mat-option>\n                <mat-option value=\"950,000\">950,000</mat-option>\n                <mat-option value=\"975,000\">975,000</mat-option>\n                <mat-option value=\"1000,000\">1000,000</mat-option>\n                <mat-option value=\"1250,000\">1250,000</mat-option>\n                <mat-option value=\"1500,000\">1500,000</mat-option>\n                <mat-option value=\"1750,000\">1750,000</mat-option>\n                <mat-option value=\"2000,000\">2000,000</mat-option>\n                <mat-option value=\"2250,000\">2250,000</mat-option>\n                <mat-option value=\"2500,000\">2500,000</mat-option>\n                <mat-option value=\"3000,000\">3000,000</mat-option>\n                <mat-option value=\"4000,000\">4000,000</mat-option>\n                <mat-option value=\"5000,000\">5000,000</mat-option>\n                <mat-option value=\"6000,000\">6000,000</mat-option>\n                <mat-option value=\"7000,000\">7000,000</mat-option>\n                <mat-option value=\"8000,000\">8000,000</mat-option>\n                <mat-option value=\"10000,000\">10000,000</mat-option>\n                <mat-option value=\"15000,000\">15000,000</mat-option>\n                <mat-option value=\"20000,000\">20000,000</mat-option>\n              </mat-select>\n              <mat-error>{{Max}}</mat-error>\n\n            </mat-form-field>\n      \n          </div> \n<!--Old Value End-->\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n          <!--Offer validity Group-->\n\n          <mat-radio-group aria-label=\"Select an option\" name=\"Validity\" [(ngModel)]=\"listingBuyer.Validity\"\n            value=\"Validity\"  #Validity>\n            <label class=\"new-heading-nestimate\"><span id=\"boldText\">How long should your Nestimate be active?</span></label><br>\n            <div class=\"radio-button-align\"   >\n              <mat-radio-button value=\"1\" class=\"mr-2\">1 Month</mat-radio-button>\n              <mat-radio-button value=\"3\">3 Months</mat-radio-button>\n              <mat-radio-button value=\"6\">6 Months</mat-radio-button>\n              <mat-radio-button value=\"Indefinite\">Indefinite\n              </mat-radio-button>\n            </div>\n          </mat-radio-group>\n\n          <p class=\"Label-notes new-heading-nestimate\" id=\"semiboldText\">*Note:Your Nestimate will remain active for the selected time\n            period above</p>\n        \n          <!--Offer validity Group End-->\n\n\n\n\n\n\n\n          </div>\n          <label class=\"new-heading-nestimate heading-optional\" id=\"boldText\">Optional Details</label>\n        <div class=\"card-margin background-new-form\">\n          <!--No of Bathrooms-->\n          <label class=\"new-heading-nestimate\" id=\"boldText\">No of Bathrooms</label>\n          <div class=\"price-selection\" >\n            <mat-form-field class=\"filed-width\" id=\"minBathroom\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Min</mat-label>\n              <mat-select [(value)]=\"Minbathroom\" name=\"Minbathroom\" [(ngModel)]=\"listingBuyer.Minbathroom\" disableOptionCentering panelClass=\"testClass\" >\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3 or more</mat-option>\n              </mat-select>\n            </mat-form-field>\n       \n            <mat-form-field class=\"filed-width\" id=\"maxBathroom\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Max</mat-label>\n              <mat-select [(value)]=\"Maxbathroom\" name=\"Maxbathroom\" [(ngModel)]=\"listingBuyer.Maxbathroom\" disableOptionCentering panelClass=\"testClass\">\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3 or more</mat-option>\n              </mat-select>\n            </mat-form-field>\n         \n          </div>\n\n\n\n\n          <!--No of reception-->\n          <label class=\"new-heading-nestimate\" id=\"boldText\">No of Reception Rooms</label>\n          <div class=\"price-selection\">\n            <mat-form-field class=\"filed-width\" id=\"Minreception\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Min</mat-label>\n\n              <mat-select [(value)]=\"Minreception\" name=\"Minreception\" [(ngModel)]=\"listingBuyer.Minreception\" disableOptionCentering panelClass=\"testClass\">\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3 or more</mat-option>\n              </mat-select>\n            </mat-form-field>\n            <mat-form-field class=\"filed-width\" id=\"MaxReception\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Max</mat-label>\n   \n              <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingBuyer.Maxreception\" disableOptionCentering panelClass=\"testClass\">\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3 or more</mat-option>\n              </mat-select>\n            </mat-form-field>\n          </div>\n\n     \n          <div class=\"extra-field-two\" id=\"condition\">\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Property Condition</mat-label>\n\n            <mat-select [(value)]=\"Conditions\" name=\"Conditions\" [(ngModel)]=\"listingBuyer.Conditions\" disableOptionCentering panelClass=\"testClass\">\n              <mat-option value=\"any\">Any</mat-option>\n              <mat-option value=\"New Build\">New Build</mat-option>\n              <mat-option value=\"Needs Modernisation\">Needs Modernisation</mat-option>\n            </mat-select>\n          </mat-form-field>\n          </div>\n\n          <div class=\"extra-field-two\" id=\"ownership\" *ngIf=\"!rentOption\">\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Ownership</mat-label>\n\n            <mat-select name=\"Ownership\" [(ngModel)]=\"listingBuyer.Ownership\" value=\"Ownership\"\n              class=\"example-full-width\" disableOptionCentering panelClass=\"testClass\">\n              <mat-option value=\"any\">Any</mat-option>\n              <mat-option value=\"Leasehold\">Leasehold</mat-option>\n              <mat-option value=\"Freehold\">Freehold</mat-option>\n              <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n            </mat-select>\n          </mat-form-field>\n          </div>\n          <div class=\"extra-field-two\" id=\"features\">\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Property Features</mat-label>\n            <mat-select [formControl]=\"Condition\" multiple [(ngModel)]=\"listingBuyer.features\" #sl\n              class=\"mat-select-edit mat-check\" disableOptionCentering panelClass=\"testClass\">\n              <div class=\"select-constion\">\n                <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n              </div>\n              <mat-option *ngFor=\"let Conditions of ConditionsList\" [value]=\"Conditions\" class=\"mat-check\">\n                {{Conditions}}</mat-option>\n            </mat-select>\n          </mat-form-field>\n      \n\n\n      </div>\n\n    </div>\n    <div class=\"last-form-buttons\">\n      <ul class=\"submit-button\">\n        <div class=\"xd-submit-button previous-button\">\n          <a (click)=\"prevStep()\"class=\"text-next-button \" id=\"boldText\" >Previous</a>\n        </div>\n        </ul>\n    \n\n\n      <div class=\"large-button mt-3\">\n\n        <div class=\"create-nestimate\" (click)=\"selectTab(2, 1)\">\n          <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\" >\n          <span class=\"text-create-nestimate mr-1\" id=\"boldText\">Create your Nestimate</span>\n          <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n        </div>\n      </div>\n\n    </div>\n\n\n\n      </div>\n    </mat-tab>\n\n  </mat-tab-group>\n</form>\n\n\n<div class=\"right-side-Image-buyer\">\n  <img src=\"{{buyerRightImageUrl}}\" class=\"right-form-image\">\n</div>\n\n</div>\n\n\n\n<div class=\"overlay-conform-buyer\" *ngIf=\"register\">\n  <div class=\"confirm-image-main\">\n\n<div class=\"overlay-image\">\n<img src=\"../../../../../assets/Images/thumbsup.png\" class=\"thumbs-up-image\">\n</div>\n\n<div class=\"thank-you-text\">\n\nThanks for\nregistering !\n</div>\n\n<div class=\"continue-button\" (click)=\"submitBuyer()\">\n  <div class=\"continue-button-container\" id=\"boldText\">\nContinue\n    \n    <span class=\"arrow-text\">\t&gt;</span>\n  </div>\n \n</div>\n\n\n\n\n</div>\n</div>\n\n";
+    __webpack_exports__["default"] = "<!-- Loading spinner -->\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\" id=\"boldText\">Loading Nestimate...</p>\n      </div>\n</div>\n\n\n<!--Login-Form  *-->\n\n<div class=\"continue-form\" *ngIf=\"overlay\">\n  <div class=\"nestimate-logo\">\n    <img src=\"../../../../assets/Images/single-nestimate.jpg\" class=\"nestimate-logo\">\n\n  </div>\n  <div class=\"continue-text\">\n    <p class=\"overlay-text\" id=\"boldText\">Thanks for registering!</p>\n    <p class=\"overlay-text\" id=\"boldText\">{{notificationContent }}\n    </p>\n\n  \n  </div>\n  <div class=\"continue-button\" (click)=\"continueClose()\">\n    <div class=\"continue-button-container\" id=\"boldText\">\n  Continue\n      \n      <span class=\"arrow-text\">\t&gt;</span>\n    </div>\n   \n  </div>\n  \n\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n\n<!--Login-form-end-->\n\n<div class=\"main-container-buyer\">\n<form *ngIf=\"isLoggedIn\">\n  <mat-tab-group #matgroup class=\"form-tab-conatiner\" [selectedIndex]=\"selectedIndex\" (selectedTabChange)=\"onTabChange($event)\">\n    <mat-tab label=\"Personal Details \" class=\"tabs-align-padding\" >\n      <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\n        <div class=\"card-margin background-new-form\">\n      \n       \n          <div class=\"extra-field\" >\n          <mat-form-field appearance=\"outline\" class=\"drop-box\" [hideRequiredMarker]=\"hideRequired\" >\n            <!-- <mat-label class=\"fixed-Label\">\n             <span id=\"title\"> Tittle</span>\n             </mat-label> -->\n     \n           \n            <mat-select name=\"title\" [(ngModel)]=\"user.title\" class=\"drop-down-list\" #titles  placeholder=\"Title\" disableOptionCentering  panelClass=\"testClass\" required>\n              <mat-option value=\"Mr\">Mr</mat-option>\n              <mat-option value=\"Ms\">Ms</mat-option>\n              <mat-option value=\"Mrs\">Mrs</mat-option>\n              <mat-option value=\"Miss\">Miss</mat-option>\n              <mat-option value=\"Mx\">Mx</mat-option>\n              <mat-option value=\"Dr\">Dr</mat-option>\n            </mat-select>\n\n \n            <mat-error>{{Title}}</mat-error> \n          </mat-form-field>\n\n          \n        </div>\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\"  appearance=\"outline\" [hideRequiredMarker]=\"hideRequired\" >\n            <mat-label class=\"fixed-Label\">\n            <span id=\"Name\">Full Name</span>\n            </mat-label>\n        \n            <input matInput  name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\" #Names  required>\n    <mat-error>{{FullName}}</mat-error> \n          </mat-form-field>\n        </div>\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n              <span id=\"email\">Email Address</span></mat-label>\n    \n            <input matInput  name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.email\"\n               #emails  pattern=\"[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}\" required>\n               <mat-error>Please enter valid email</mat-error>\n          </mat-form-field>\n</div>\n\n\n\n          <!--Date Of Birth Field-->\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"dob\">Date of Birth</span></mat-label>\n            <input matInput [matDatepicker]=\"picker\"  name=\"DOB\" class=\"mat-mail-input\"\n              value=\"DOB\" [(ngModel)]=\"user.DOB\"  #dobs  required>\n            <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n            <mat-datepicker #picker></mat-datepicker>\n            <mat-error>{{DateofBirth}}</mat-error>\n          </mat-form-field>\n          </div>\n          <!--Date Of Birth Field End-->\n\n\n          <!--Phone Number field-->\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">\n             <span id=\"tele\">Phone Number</span>\n            </mat-label>\n\n            <span matPrefix>+44&nbsp;</span>\n            <input matInput name=\"phonenumber\"  [(ngModel)]=\"user.Phone\"   minlength=\"10\"  [formControl]=\"phoneFormControl\"  #tele required>\n  \n                  \n                      <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n                     {{PhoneValidation}}\n                    </mat-error>\n                    <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n                      {{PhoneValidation}}\n                    </mat-error>\n                    <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n                      {{PhoneLength}}\n                    </mat-error>\n          </mat-form-field>\n</div>\n          <!--Phone Number field-->\n\n  \n\n\n          <mat-form-field class=\"example-full-width\" *ngIf=\"other\">\n            <input matInput placeholder=\"other\" name=\"other\" class=\"mat-mail-input\" >\n          </mat-form-field>\n\n        </div>\n\n\n        <div class=\"card-margin background-new-form\">\n\n          <label class=\"new-heading-nestimate h1Styles\" id=\"boldText\">Your Address</label>\n          <p class=\"new-heading-nestimate\" id=\"boldText\"><span id=\"Cpost\">Area - Search by Postcode</span></p>\n    \n          <mat-option class=\"postcode-background\" style=\"border:1px solid #d2d2d2;border-radius: 3px;\" id=\"Cpost\">\n            <div class=\"extra-field-three\" >\n            <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" \n              aria-label=\"Post-Code\" placeholder=\"Enter Postcode\" matInput [matAutocomplete]=\"auto\" [(ngModel)]=\"listingBuyer.Currentpostcode\" minlength=\"5\" #Currentpostcode   required>\n            <mat-autocomplete autoActiveFirstOption #auto=\"matAutocomplete\"  (optionSelected)='getPost($event.option.value)'>\n              <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\" [value]=\"item\">\n                <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                </span> | <span>{{ item.citytown | titlecase}}</span>\n              </mat-option>\n            </mat-autocomplete>\n          </div>\n          </mat-option>\n         \n     \n          <p class=\"new-heading-nestimate\" id=\"boldText\"><span id=\"Cpost\">Area - Search by Address</span></p>\n          <div class=\"extra-field-two\" >\n            <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"caddress\">Address</span></mat-label>\n             \n              <input matInput   name=\"CurrentAddress\"\n                class=\"mat-mail-input\" [(ngModel)]=\"listingBuyer.CurrentAddress\" #CurrentAddress required>\n                <mat-error>{{CurrentAaddress}}</mat-error>\n              \n            </mat-form-field>\n  </div>\n\n  <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\"><span id=\"Ctown\">Town/City</span></mat-label>\n            <input matInput  [(ngModel)]=\"listingBuyer.CurrentTown\" name=\"CurrentTowncity\"\n              class=\"mat-mail-input\"   #currentTown required>\n              <mat-error>{{CurrentTown}}</mat-error>\n          </mat-form-field>\n</div>\n\n\n<div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"cState\">County</span></mat-label>\n        \n            <input matInput  [(ngModel)]=\"listingBuyer.Currentstate\" name=\"Currentstate\"\n              class=\"mat-mail-input\" #Currentstate required>\n              <mat-error>{{CurrentCounty}}</mat-error>\n          </mat-form-field>\n</div>\n\n<div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"ccountry\">Country</span></mat-label>\n        \n            <input matInput   name=\"state\" class=\"mat-mail-input\"\n              [(ngModel)]=\"listingBuyer.Currentcountry\" name=\"Currentcountry\" #Currentcountry required>\n              <mat-error>{{CurrentCountry}}</mat-error>\n\n          </mat-form-field>\n</div>\n</div>\n<ul class=\"submit-button\">\n  <div class=\"xd-submit-button\">\n    <a (click)=\"selectTab(1, 0)\" class=\"text-next-button\" id=\"boldText\">Next</a>\n  </div>\n  </ul>\n       \n\n      </div>\n \n    </mat-tab>\n\n    <mat-tab label=\"Property Details\" class=\"tabs-align-padding\"   >\n      <div class=\"tabs-align-padding\">\n\n\n\n        <div class=\"card-margin background-new-form\">\n          <mat-card-title class=\"mat_card_title new-heading-nestimate\" id=\"boldText\" ><span id=\"propfor\">are you looking to</span></mat-card-title>\n     \n          <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\"\n            [(ngModel)]=\"listingBuyer.PropertyFor\" (click)=\"check()\" (change)=\"radioChange($event)\"  >\n            <mat-radio-button value=\"buy\" >Buy</mat-radio-button>\n            <mat-radio-button value=\"rent\">Rent</mat-radio-button>\n          </mat-radio-group>\n      <br>\n          <mat-card-title class=\"mat_card_title new-heading-nestimate\" id=\"boldText\">Please fill in the details of your desired\n            property</mat-card-title>\n          <p class=\"mt-4 new-heading-nestimate\"><span id=\"lookpost\">Area - Search by Postcode</span></p>\n          <mat-option style=\"border: 1px solid #d2d2d2;border-radius: 3px;\" >       \n            <input [formControl]=\"autoCompleteControlLooking\" type=\"text\" \n              aria-label=\"Post Code\" matInput [matAutocomplete]=\"autolooking\" [(ngModel)]=\"listingBuyer.Lookingpostcode\"\n              name=\"Lookingpostcode\" minlength=\"5\"   #Lookingpostcode placeholder=\"Enter Postcode\" id=\"up\">\n            <mat-autocomplete autoActivesecondOption #autolooking=\"matAutocomplete\"\n              (optionSelected)='getPosts($event.option.value)'>\n              <mat-option *ngFor=\"let item of addressianAutoCompleteLooking$ | async; let index=index\" [value]=\"item\">\n                <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                </span> | <span>{{ item.citytown | titlecase}}</span>\n              </mat-option>\n            </mat-autocomplete>\n    \n          </mat-option>\n\n\n\n          <p class=\"mt-4\" class=\"new-heading-nestimate\" id=\"boldText\">Area - Search by Address</p>\n          <div class=\"extra-field-two\"  >\n          <mat-form-field class=\"example-full-width mb-3\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"lsrname\">Street Name</span></mat-label>\n            <input matInput  class=\"mat-mail-input\" [(ngModel)]=\"listingBuyer.LookingStreetname\" name=\"LookingStreetname\"  #LookingStreetname required>\n            <mat-error>{{LStreetname}}</mat-error>\n          </mat-form-field>\n\n</div>\n<div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width mb-3\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"looktow\">Town/City</span></mat-label>\n            <input matInput  [(ngModel)]=\"listingBuyer.LookingTown\" name=\"LookingTown\"\n              class=\"mat-mail-input\"  #LookingTown required>\n              <mat-error>{{LTown}}</mat-error>\n          </mat-form-field>\n</div>\n<div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\"><span id=\"Lookstate\">County</span></mat-label>\n            <input matInput  \n              [(ngModel)]=\"listingBuyer.Lookingstate\" name=\"Lookingstate\" class=\"mat-mail-input\"  #Lookingstate required>\n              <mat-error>{{LCounty}}</mat-error>\n          </mat-form-field>\n          </div>\n\n          <div class=\"extra-field-two\" >\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\"><span id=\"lCountry\">Country</span></mat-label>\n            <input matInput  \n              [(ngModel)]=\"listingBuyer.Country\" name=\"Country\" class=\"mat-mail-input\"  #Country required>\n              <mat-error>{{LCountry}}</mat-error>\n          </mat-form-field>\n          </div>\n        </div> \n\n\n\n\n        <label class=\"new-heading-nestimate heading-optional\" id=\"boldText\"> Property Details</label>\n        <div class=\"card-margin background-new-form\">\n       \n\n\n\n          <div id=\"property-type\" class=\"extra-field-two\">\n            <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"Property-type\">Property Type</span></mat-label>\n     \n              <mat-select name=\"Propertytype\" [(ngModel)]=\"listingBuyer.PropertyType\" value=\"Propertytype\"\n                class=\"example-full-width\"  #PropertyType disableOptionCentering panelClass=\"testClass\"  required>\n                <mat-option value=\"Flat\" (click)=\"undisabledField()\">Flat</mat-option>\n                <mat-option value=\"Studio\" (click)=\"disabledField()\">Studio</mat-option>\n                <mat-option value=\"Terracedhouse\" (click)=\"undisabledField()\">Terraced House</mat-option>\n                <mat-option class=\"example-margin\" value=\"Maisonette\" (click)=\"undisabledField()\">Maisonette</mat-option>\n                <mat-option value=\"Semi-detached\" (click)=\"undisabledField()\">Semi-detached House</mat-option>\n                <mat-option value=\"Bungalow\" (click)=\"undisabledField()\">Bungalow</mat-option>\n                <mat-option value=\"Detachedhouse\" (click)=\"undisabledField()\">Detached House</mat-option>\n                <mat-option value=\"Cottage\" (click)=\"undisabledField()\">Cottage</mat-option>\n                <mat-option value=\"Townhouse\" (click)=\"undisabledField()\">Town House</mat-option>\n                <mat-option value=\"Countryhouse\" (click)=\"undisabledField()\">Country House</mat-option>\n                <mat-option value=\"Barnconversion\" (click)=\"undisabledField()\">Barn conversion</mat-option>\n                <mat-option value=\"Farm\" (click)=\"undisabledField()\">Farm</mat-option>\n                <mat-option value=\"Houseboat\" (click)=\"undisabledField()\">Houseboat</mat-option>\n                <mat-option value=\"Lodge\" (click)=\"undisabledField()\">Lodge</mat-option>\n              </mat-select>\n              <mat-error>{{proptype}}</mat-error>\n            </mat-form-field>\n          </div> \n       \n       \n\n\n\n\n          <!--Min Max Amount-->\n          <label class=\"new-heading-nestimate\" id=\"boldText\">Number of Rooms</label>\n          <div class=\"extra-field-two\" >\n          <div class=\"price-selection\" *ngIf=\"isDisabled \">\n            <mat-form-field class=\"filed-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"roomMin\">Min</span></mat-label>     \n              <mat-select [(value)]=\"Roommin\" name=\"Roommin\" [(ngModel)]=\"listingBuyer.Roommin\"  #Roommins disabled>\n                <mat-option value=\"Studio\">Studio</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3</mat-option>\n                <mat-option value=\"4\">4</mat-option>\n                <mat-option value=\"5\">5</mat-option>\n              </mat-select>\n              \n            </mat-form-field>\n        \n        \n            <mat-form-field class=\"filed-width\"  appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"roomMax\">Max</span></mat-label>\n              <mat-select [(value)]=\"Roomsmax\" name=\"Roomsmax\" [(ngModel)]=\"listingBuyer.Roomsmax\"  #Roomsmaxs disabled>\n                <mat-option value=\"Studio\">Studio</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3</mat-option>\n                <mat-option value=\"4\">4</mat-option>\n                <mat-option value=\"5\">5</mat-option>\n              </mat-select>\n            </mat-form-field>\n            \n          </div> \n          <div class=\"price-selection\" *ngIf=\"!isDisabled \">\n            <mat-form-field class=\"filed-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"roomMin\">Min</span></mat-label>     \n              <mat-select [(value)]=\"Roommin\" name=\"Roommin\" [(ngModel)]=\"listingBuyer.Roommin\"  #Roommins disableOptionCentering panelClass=\"testClass\" required>\n                <mat-option value=\"Studio\">Studio</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3</mat-option>\n                <mat-option value=\"4\">4</mat-option>\n                <mat-option value=\"5\">5</mat-option>\n              </mat-select>\n              <mat-error>{{Roommin}}</mat-error>\n            </mat-form-field>\n        \n        \n            <mat-form-field class=\"filed-width\"  appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"roomMax\">Max</span></mat-label>\n              <mat-select [(value)]=\"Roomsmax\" name=\"Roomsmax\" [(ngModel)]=\"listingBuyer.Roomsmax\"  #Roomsmaxs disableOptionCentering panelClass=\"testClass\" required>\n                <mat-option value=\"Studio\">Studio</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3</mat-option>\n                <mat-option value=\"4\">4</mat-option>\n                <mat-option value=\"5\">5</mat-option>\n              </mat-select>\n              <mat-error>{{Roomsmax}}</mat-error>\n            </mat-form-field>\n            \n          </div> \n        </div>\n\n          <div class=\"extra-field-two\"  *ngIf=\"rentOption\">\n            <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n             <mat-label class=\"fixed-Label\"><span id=\"chain\">Your Renting Position</span></mat-label>\n \n             <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n               class=\"example-full-width\"   #ChainStatus disableOptionCentering panelClass=\"testClass\"  required>\n               <mat-option value=\"Ready to move in now\" (click)=\"otherOption()\">Ready to move in now</mat-option>\n               <mat-option value=\"Looking to move in short-term\" (click)=\"otherOption()\">Looking to move in short-term</mat-option>\n             </mat-select>\n   \n             <mat-error>{{FinancialRenting}}</mat-error>\n           </mat-form-field>\n           </div>\n \n \n           <div class=\"extra-field-two\"  *ngIf=\"buyOption\">\n             <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n               <mat-label class=\"fixed-Label\"><span id=\"chain\">Your Buying Position</span></mat-label>\n \n               <mat-select name=\"ChainStatus\" [(ngModel)]=\"listingBuyer.ChainStatus\" value=\"ChainStatus\"\n                 class=\"example-full-width\"  #ChainStatus disableOptionCentering panelClass=\"testClass\"  required>\n                 <mat-option value=\"First Time Buyer\" (click)=\"otherOption()\">First Time Buyer</mat-option>\n                 <mat-option value=\"In Chain\" (click)=\"otherOption()\">In Chain</mat-option>\n                 <mat-option value=\"Cash Buyer\" (click)=\"otherOption()\">Cash Buyer</mat-option>\n                 <mat-option value=\"Other (Please specify)\" (click)=\"otherChain()\">Other (Please specify)</mat-option>\n               </mat-select>\n               <mat-error>{{FinancialRenting}}</mat-error>\n             </mat-form-field> \n           </div>\n \n \n  <div  *ngIf=\"!rentOption\" >\n        \n             <div class=\"extra-field-two\" >\n             <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n               <mat-label class=\"fixed-Label\"><span id=\"finanacial\">Financial Position</span></mat-label>\n \n               <mat-select name=\"FinancialPosition\" [(ngModel)]=\"listingBuyer.FinancialPosition\"\n         value=\"FinancialPosition\" class=\"example-full-width\"  #FinancialPosition disableOptionCentering panelClass=\"testClass\"  required>\n                 <mat-option value=\"any\" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">\n                 </mat-option>\n                 <mat-option value=\"Mortgate to be arranged\" name=\"Mortgate to be arranged\"\n                   (click)=\"removefinancialPostion()\">Mortgate to be arranged</mat-option>\n                 <mat-option value=\"Mortgage arranged \" name=\"Mortgage arranged \" (click)=\"removefinancialPostion()\">\n                   Mortgage arranged </mat-option>\n                 <mat-option value=\"Cash Buyer\" name=\"Cash Buyer\" (click)=\"removefinancialPostion()\">Cash Buyer\n                 </mat-option>\n                 <mat-option value=\"Please specify\" name=\"Please specify\" (click)=\"financialPostion()\">Other</mat-option>\n               </mat-select>\n               <mat-error>{{finType}}</mat-error>\n             </mat-form-field>\n             </div>\n           </div> \n          <!--Max-No of Rooms-->\n          <label class=\"new-heading-nestimate\" *ngIf=\"buyOption\">Price Range</label>\n          <label class=\"new-heading-nestimate\" *ngIf=\"rentOption\">Rent Range</label>\n<div class=\"amounts extra-field-two\" *ngIf=\"amounts\" >\n          <!--New Values-->\n          <!--Min Max Amount-->\n   \n          <div class=\"price-selection\" *ngIf=\"rentOption\">\n       \n            <mat-form-field class=\"filed-width\" appearance=\"outline\" >\n              <mat-label class=\"fixed-Label\"><span id=\"MinAmount\">Min</span></mat-label>\n\n              <mat-select [(value)]=\"min\" name=\"MinAmount\" [(ngModel)]=\"listingBuyer.MinAmount\"  #MinAmount disableOptionCentering panelClass=\"testClass\" required>\n                <mat-option value=\"100\">100 pcm</mat-option>\n                <mat-option value=\"200\">200 pcm</mat-option>\n                <mat-option value=\"300\">300 pcm</mat-option>\n                <mat-option value=\"400\">400 pcm</mat-option>\n                <mat-option value=\"500\">500 pcm</mat-option>\n                <mat-option value=\"600\">600 pcm</mat-option>\n                <mat-option value=\"700\">700 pcm</mat-option>\n                <mat-option value=\"800\">800 pcm</mat-option>\n                <mat-option value=\"900\">900 pcm</mat-option>\n                <mat-option value=\"1000\">1000 pcm</mat-option>\n                <mat-option value=\"1250\">1250 pcm</mat-option>\n                <mat-option value=\"1500\">1500 pcm</mat-option>\n                <mat-option value=\"1750\">1750 pcm</mat-option>\n                <mat-option value=\"2000\">2000 pcm</mat-option>\n                <mat-option value=\"2250\">2250 pcm</mat-option>\n                <mat-option value=\"2500\">2500 pcm</mat-option>\n                <mat-option value=\"2750\">2750 pcm</mat-option>\n                <mat-option value=\"3000\">3000 pcm</mat-option>\n                <mat-option value=\"3250\">3250 pcm</mat-option>\n                <mat-option value=\"3500\">3500 pcm</mat-option>\n                <mat-option value=\"3750\">3750 pcm</mat-option>\n                <mat-option value=\"4000\">4000 pcm</mat-option>\n                <mat-option value=\"4250\">4250 pcm</mat-option>\n                <mat-option value=\"4500\">4500 pcm</mat-option>\n                <mat-option value=\"5000\">5000 pcm</mat-option>\n                <mat-option value=\"5500\">5500 pcm</mat-option>\n                <mat-option value=\"6000\">6000 pcm</mat-option>\n                <mat-option value=\"6500\">6500 pcm</mat-option>\n                <mat-option value=\"7000\">7000 pcm</mat-option>\n                <mat-option value=\"7500\">7500 pcm</mat-option>\n                <mat-option value=\"8000\">8500 pcm</mat-option>\n                <mat-option value=\"9000\">9000 pcm</mat-option>\n                <mat-option value=\"9500\">9500 pcm</mat-option>\n                <mat-option value=\"10000\">10000 pcm</mat-option>\n                <mat-option value=\"12500\">125000 pcm</mat-option>\n                <mat-option value=\"15000\">15000 pcm</mat-option>\n                <mat-option value=\"17500\">17500 pcm</mat-option>\n                <mat-option value=\"20000\">20000 pcm</mat-option>\n                <mat-option value=\"25000\">25000 pcm</mat-option>\n\n\n\n              </mat-select>\n              <mat-error>{{Min}}</mat-error>\n\n            </mat-form-field>\n            \n       \n             <mat-form-field class=\"filed-width\"   appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"MaxAmount\">Max</span></mat-label>\n\n              <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingBuyer.MaxAmount\"  #MaxAmount disableOptionCentering panelClass=\"testClass\"  required>\n                <mat-option value=\"100\">100 pcm</mat-option>\n                <mat-option value=\"200\">200 pcm</mat-option>\n                <mat-option value=\"300\">300 pcm</mat-option>\n                <mat-option value=\"400\">400 pcm</mat-option>\n                <mat-option value=\"500\">500 pcm</mat-option>\n                <mat-option value=\"600\">600 pcm</mat-option>\n                <mat-option value=\"700\">700 pcm</mat-option>\n                <mat-option value=\"800\">800 pcm</mat-option>\n                <mat-option value=\"900\">900 pcm</mat-option>\n                <mat-option value=\"1000\">1000 pcm</mat-option>\n                <mat-option value=\"1250\">1250 pcm</mat-option>\n                <mat-option value=\"1500\">1500 pcm</mat-option>\n                <mat-option value=\"1750\">1750 pcm</mat-option>\n                <mat-option value=\"2000\">2000 pcm</mat-option>\n                <mat-option value=\"2250\">2250 pcm</mat-option>\n                <mat-option value=\"2500\">2500 pcm</mat-option>\n                <mat-option value=\"2750\">2750 pcm</mat-option>\n                <mat-option value=\"3000\">3000 pcm</mat-option>\n                <mat-option value=\"3250\">3250 pcm</mat-option>\n                <mat-option value=\"3500\">3500 pcm</mat-option>\n                <mat-option value=\"3750\">3750 pcm</mat-option>\n                <mat-option value=\"4000\">4000 pcm</mat-option>\n                <mat-option value=\"4250\">4250 pcm</mat-option>\n                <mat-option value=\"4500\">4500 pcm</mat-option>\n                <mat-option value=\"5000\">5000 pcm</mat-option>\n                <mat-option value=\"5500\">5500 pcm</mat-option>\n                <mat-option value=\"6000\">6000 pcm</mat-option>\n                <mat-option value=\"6500\">6500 pcm</mat-option>\n                <mat-option value=\"7000\">7000 pcm</mat-option>\n                <mat-option value=\"7500\">7500 pcm</mat-option>\n                <mat-option value=\"8000\">8500 pcm</mat-option>\n                <mat-option value=\"9000\">9000 pcm</mat-option>\n                <mat-option value=\"9500\">9500 pcm</mat-option>\n                <mat-option value=\"10000\">10000 pcm</mat-option>\n                <mat-option value=\"12500\">125000 pcm</mat-option>\n                <mat-option value=\"15000\">15000 pcm</mat-option>\n                <mat-option value=\"17500\">17500 pcm</mat-option>\n                <mat-option value=\"20000\">20000 pcm</mat-option>\n                <mat-option value=\"25000\">25000 pcm</mat-option>\n              </mat-select>\n              <mat-error>{{Max}}</mat-error>\n              \n            </mat-form-field>\n          \n          </div> \n          <!--New Values Ended-->\n\n<!--Old Value-->\n          <!--Min Max Amount-->\n     <div class=\"price-selection\" *ngIf=\"buyOption\">\n  \n            <mat-form-field class=\"filed-width\" appearance=\"outline\" >\n              <mat-label class=\"fixed-Label\"><span id=\"MinAmount\">Min</span></mat-label>\n\n              <mat-select [(value)]=\"min\" name=\"MinAmount\" [(ngModel)]=\"listingBuyer.MinAmount\"  #MinAmount disableOptionCentering panelClass=\"testClass\" required>\n                <mat-option value=\"50,000\">50,000</mat-option>\n                <mat-option value=\"60,000\">60,000</mat-option>\n                <mat-option value=\"70,000\">70,000</mat-option>\n                <mat-option value=\"80,000\">80,000</mat-option>\n                <mat-option value=\"90,000\">90,000</mat-option>\n                <mat-option value=\"100,000\">100,000</mat-option>\n                <mat-option value=\"110,000\">110,000</mat-option>\n                <mat-option value=\"120,000\">120,000</mat-option>\n                <mat-option value=\"125,000\">125,000</mat-option>\n                <mat-option value=\"130,000\">130,000</mat-option>\n                <mat-option value=\"140,000\">140,000</mat-option>\n                <mat-option value=\"150,000\">150,000</mat-option>\n                <mat-option value=\"160,000\">160,000</mat-option>\n                <mat-option value=\"170,000\">170,000</mat-option>\n                <mat-option value=\"175,000\">175,000</mat-option>\n                <mat-option value=\"180,000\">180,000</mat-option>\n                <mat-option value=\"190,000\">190,000</mat-option>\n                <mat-option value=\"200,000\">200,000</mat-option>\n                <mat-option value=\"210,000\">210,000</mat-option>\n                <mat-option value=\"220,000\">220,000</mat-option>\n                <mat-option value=\"230,000\">230,000</mat-option>\n                <mat-option value=\"240,000\">240,000</mat-option>\n                <mat-option value=\"250,000\">250,000</mat-option>\n                <mat-option value=\"260,000\">260,000</mat-option>\n                <mat-option value=\"270,000\">270,000</mat-option>\n                <mat-option value=\"280,000\">280,000</mat-option>\n                <mat-option value=\"290,000\">290,000</mat-option>\n                <mat-option value=\"300,000\">300,000</mat-option>\n                <mat-option value=\"325,000\">325,000</mat-option>\n                <mat-option value=\"350,000\">350,000</mat-option>\n                <mat-option value=\"375000\">375,000</mat-option>\n                <mat-option value=\"400,000\">400,000</mat-option>\n                <mat-option value=\"425,000\">425,000</mat-option>\n                <mat-option value=\"450,000\">450,000</mat-option>\n                <mat-option value=\"475,000\">475,000</mat-option>\n                <mat-option value=\"500,000\">500,000</mat-option>\n                <mat-option value=\"525,000\">525,000</mat-option>\n                <mat-option value=\"550,000\">550,000</mat-option>\n                <mat-option value=\"575,000\">575,000</mat-option>\n                <mat-option value=\"600,000\">600,000</mat-option>\n                <mat-option value=\"625,000\">625,000</mat-option>\n                <mat-option value=\"650,000\">650,000</mat-option>\n                <mat-option value=\"675,000\">675,000</mat-option>\n                <mat-option value=\"700,000\">700,000</mat-option>\n                <mat-option value=\"725,000\">725,000</mat-option>\n                <mat-option value=\"750,000\">750,000</mat-option>\n                <mat-option value=\"775,000\">775,000</mat-option>\n                <mat-option value=\"800,000\">800,000</mat-option>\n                <mat-option value=\"825,000\">825,000</mat-option>\n                <mat-option value=\"850,000\">850,000</mat-option>\n                <mat-option value=\"875,000\">875,000</mat-option>\n                <mat-option value=\"900,000\">900,000</mat-option>\n                <mat-option value=\"925,000\">925,000</mat-option>\n                <mat-option value=\"950,000\">950,000</mat-option>\n                <mat-option value=\"975,000\">975,000</mat-option>\n                <mat-option value=\"1000,000\">1000,000</mat-option>\n                <mat-option value=\"1250,000\">1250,000</mat-option>\n                <mat-option value=\"1500,000\">1500,000</mat-option>\n                <mat-option value=\"1750,000\">1750,000</mat-option>\n                <mat-option value=\"2000,000\">2000,000</mat-option>\n                <mat-option value=\"2250,000\">2250,000</mat-option>\n                <mat-option value=\"2500,000\">2500,000</mat-option>\n                <mat-option value=\"3000,000\">3000,000</mat-option>\n                <mat-option value=\"4000,000\">4000,000</mat-option>\n                <mat-option value=\"5000,000\">5000,000</mat-option>\n                <mat-option value=\"6000,000\">6000,000</mat-option>\n                <mat-option value=\"7000,000\">7000,000</mat-option>\n                <mat-option value=\"8000,000\">8000,000</mat-option>\n                <mat-option value=\"10000,000\">10000,000</mat-option>\n                <mat-option value=\"15000,000\">15000,000</mat-option>\n                <mat-option value=\"20000,000\">20000,000</mat-option>\n              </mat-select>\n              <mat-error>{{Min}}</mat-error>\n\n            </mat-form-field>\n          \n\n            <mat-form-field class=\"filed-width\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\"><span id=\"MaxAmount\">Max</span></mat-label>\n\n              <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingBuyer.MaxAmount\"  #MaxAmount disableOptionCentering panelClass=\"testClass\"  required>\n                <mat-option value=\"50,000\">50,000</mat-option>\n                <mat-option value=\"60,000\">60,000</mat-option>\n                <mat-option value=\"70,000\">70,000</mat-option>\n                <mat-option value=\"80,000\">80,000</mat-option>\n                <mat-option value=\"90,000\">90,000</mat-option>\n                <mat-option value=\"100,000\">100,000</mat-option>\n                <mat-option value=\"110,000\">110,000</mat-option>\n                <mat-option value=\"120,000\">120,000</mat-option>\n                <mat-option value=\"125,000\">125,000</mat-option>\n                <mat-option value=\"130,000\">130,000</mat-option>\n                <mat-option value=\"140,000\">140,000</mat-option>\n                <mat-option value=\"150,000\">150,000</mat-option>\n                <mat-option value=\"160,000\">160,000</mat-option>\n                <mat-option value=\"170,000\">170,000</mat-option>\n                <mat-option value=\"175,000\">175,000</mat-option>\n                <mat-option value=\"180,000\">180,000</mat-option>\n                <mat-option value=\"190,000\">190,000</mat-option>\n                <mat-option value=\"200,000\">200,000</mat-option>\n                <mat-option value=\"210,000\">210,000</mat-option>\n                <mat-option value=\"220,000\">220,000</mat-option>\n                <mat-option value=\"230,000\">230,000</mat-option>\n                <mat-option value=\"240,000\">240,000</mat-option>\n                <mat-option value=\"250,000\">250,000</mat-option>\n                <mat-option value=\"260,000\">260,000</mat-option>\n                <mat-option value=\"270,000\">270,000</mat-option>\n                <mat-option value=\"280,000\">280,000</mat-option>\n                <mat-option value=\"290,000\">290,000</mat-option>\n                <mat-option value=\"300,000\">300,000</mat-option>\n                <mat-option value=\"325,000\">325,000</mat-option>\n                <mat-option value=\"350,000\">350,000</mat-option>\n                <mat-option value=\"375000\">375,000</mat-option>\n                <mat-option value=\"400,000\">400,000</mat-option>\n                <mat-option value=\"425,000\">425,000</mat-option>\n                <mat-option value=\"450,000\">450,000</mat-option>\n                <mat-option value=\"475,000\">475,000</mat-option>\n                <mat-option value=\"500,000\">500,000</mat-option>\n                <mat-option value=\"525,000\">525,000</mat-option>\n                <mat-option value=\"550,000\">550,000</mat-option>\n                <mat-option value=\"575,000\">575,000</mat-option>\n                <mat-option value=\"600,000\">600,000</mat-option>\n                <mat-option value=\"625,000\">625,000</mat-option>\n                <mat-option value=\"650,000\">650,000</mat-option>\n                <mat-option value=\"675,000\">675,000</mat-option>\n                <mat-option value=\"700,000\">700,000</mat-option>\n                <mat-option value=\"725,000\">725,000</mat-option>\n                <mat-option value=\"750,000\">750,000</mat-option>\n                <mat-option value=\"775,000\">775,000</mat-option>\n                <mat-option value=\"800,000\">800,000</mat-option>\n                <mat-option value=\"825,000\">825,000</mat-option>\n                <mat-option value=\"850,000\">850,000</mat-option>\n                <mat-option value=\"875,000\">875,000</mat-option>\n                <mat-option value=\"900,000\">900,000</mat-option>\n                <mat-option value=\"925,000\">925,000</mat-option>\n                <mat-option value=\"950,000\">950,000</mat-option>\n                <mat-option value=\"975,000\">975,000</mat-option>\n                <mat-option value=\"1000,000\">1000,000</mat-option>\n                <mat-option value=\"1250,000\">1250,000</mat-option>\n                <mat-option value=\"1500,000\">1500,000</mat-option>\n                <mat-option value=\"1750,000\">1750,000</mat-option>\n                <mat-option value=\"2000,000\">2000,000</mat-option>\n                <mat-option value=\"2250,000\">2250,000</mat-option>\n                <mat-option value=\"2500,000\">2500,000</mat-option>\n                <mat-option value=\"3000,000\">3000,000</mat-option>\n                <mat-option value=\"4000,000\">4000,000</mat-option>\n                <mat-option value=\"5000,000\">5000,000</mat-option>\n                <mat-option value=\"6000,000\">6000,000</mat-option>\n                <mat-option value=\"7000,000\">7000,000</mat-option>\n                <mat-option value=\"8000,000\">8000,000</mat-option>\n                <mat-option value=\"10000,000\">10000,000</mat-option>\n                <mat-option value=\"15000,000\">15000,000</mat-option>\n                <mat-option value=\"20000,000\">20000,000</mat-option>\n              </mat-select>\n              <mat-error>{{Max}}</mat-error>\n\n            </mat-form-field>\n      \n          </div> \n<!--Old Value End-->\n</div>\n\n\n\n\n\n\n\n\n\n\n\n\n          <!--Offer validity Group-->\n\n          <mat-radio-group aria-label=\"Select an option\" name=\"Validity\" [(ngModel)]=\"listingBuyer.Validity\"\n            value=\"Validity\"  #Validity>\n            <label class=\"new-heading-nestimate\"><span id=\"boldText\">How long should your Nestimate be active?</span></label><br>\n            <div class=\"radio-button-align\"   >\n              <mat-radio-button value=\"1\" class=\"mr-2\">1 Month</mat-radio-button>\n              <mat-radio-button value=\"3\">3 Months</mat-radio-button>\n              <mat-radio-button value=\"6\">6 Months</mat-radio-button>\n              <mat-radio-button value=\"Indefinite\">Indefinite\n              </mat-radio-button>\n            </div>\n          </mat-radio-group>\n\n          <p class=\"Label-notes new-heading-nestimate\" id=\"semiboldText\">*Note:Your Nestimate will remain active for the selected time\n            period above</p>\n        \n          <!--Offer validity Group End-->\n\n\n\n\n\n\n\n          </div>\n          <label class=\"new-heading-nestimate heading-optional\" id=\"boldText\">Optional Details</label>\n        <div class=\"card-margin background-new-form\">\n          <!--No of Bathrooms-->\n          <label class=\"new-heading-nestimate\" id=\"boldText\">No of Bathrooms</label>\n          <div class=\"price-selection\" >\n            <mat-form-field class=\"filed-width\" id=\"minBathroom\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Min</mat-label>\n              <mat-select [(value)]=\"Minbathroom\" name=\"Minbathroom\" [(ngModel)]=\"listingBuyer.Minbathroom\" disableOptionCentering panelClass=\"testClass\" >\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3 or more</mat-option>\n              </mat-select>\n            </mat-form-field>\n       \n            <mat-form-field class=\"filed-width\" id=\"maxBathroom\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Max</mat-label>\n              <mat-select [(value)]=\"Maxbathroom\" name=\"Maxbathroom\" [(ngModel)]=\"listingBuyer.Maxbathroom\" disableOptionCentering panelClass=\"testClass\">\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3 or more</mat-option>\n              </mat-select>\n            </mat-form-field>\n         \n          </div>\n\n\n\n\n          <!--No of reception-->\n          <label class=\"new-heading-nestimate\" id=\"boldText\">No of Reception Rooms</label>\n          <div class=\"price-selection\">\n            <mat-form-field class=\"filed-width\" id=\"Minreception\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Min</mat-label>\n\n              <mat-select [(value)]=\"Minreception\" name=\"Minreception\" [(ngModel)]=\"listingBuyer.Minreception\" disableOptionCentering panelClass=\"testClass\">\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3 or more</mat-option>\n              </mat-select>\n            </mat-form-field>\n            <mat-form-field class=\"filed-width\" id=\"MaxReception\" appearance=\"outline\">\n              <mat-label class=\"fixed-Label\">Max</mat-label>\n   \n              <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingBuyer.Maxreception\" disableOptionCentering panelClass=\"testClass\">\n                <mat-option value=\"any\">Any</mat-option>\n                <mat-option value=\"1\">1</mat-option>\n                <mat-option value=\"2\">2</mat-option>\n                <mat-option value=\"3\">3 or more</mat-option>\n              </mat-select>\n            </mat-form-field>\n          </div>\n\n     \n          <div class=\"extra-field-two\" id=\"condition\">\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Property Condition</mat-label>\n\n            <mat-select [(value)]=\"Conditions\" name=\"Conditions\" [(ngModel)]=\"listingBuyer.Conditions\" disableOptionCentering panelClass=\"testClass\">\n              <mat-option value=\"any\">Any</mat-option>\n              <mat-option value=\"New Build\">New Build</mat-option>\n              <mat-option value=\"Needs Modernisation\">Needs Modernisation</mat-option>\n            </mat-select>\n          </mat-form-field>\n          </div>\n\n          <div class=\"extra-field-two\" id=\"ownership\" *ngIf=\"!rentOption\">\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Ownership</mat-label>\n\n            <mat-select name=\"Ownership\" [(ngModel)]=\"listingBuyer.Ownership\" value=\"Ownership\"\n              class=\"example-full-width\" disableOptionCentering panelClass=\"testClass\">\n              <mat-option value=\"any\">Any</mat-option>\n              <mat-option value=\"Leasehold\">Leasehold</mat-option>\n              <mat-option value=\"Freehold\">Freehold</mat-option>\n              <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n            </mat-select>\n          </mat-form-field>\n          </div>\n          <div class=\"extra-field-two\" id=\"features\">\n          <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n            <mat-label class=\"fixed-Label\">Property Features</mat-label>\n            <mat-select [formControl]=\"Condition\" multiple [(ngModel)]=\"listingBuyer.features\" #sl\n              class=\"mat-select-edit mat-check\" disableOptionCentering panelClass=\"testClass\">\n              <div class=\"select-constion\">\n                <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n              </div>\n              <mat-option *ngFor=\"let Conditions of ConditionsList\" [value]=\"Conditions\" class=\"mat-check\">\n                {{Conditions}}</mat-option>\n            </mat-select>\n          </mat-form-field>\n      \n\n\n      </div>\n\n    </div>\n    <div class=\"last-form-buttons\">\n      <ul class=\"submit-button\">\n        <div class=\"xd-submit-button previous-button\">\n          <a (click)=\"prevStep()\"class=\"text-next-button \" id=\"boldText\" >Previous</a>\n        </div>\n        </ul>\n    \n\n\n      <div class=\"large-button mt-3\">\n\n        <div class=\"create-nestimate\" (click)=\"selectTab(2, 1)\">\n          <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\" >\n          <span class=\"text-create-nestimate mr-1\" id=\"boldText\">Create your Nestimate</span>\n          <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n        </div>\n      </div>\n\n    </div>\n\n\n\n      </div>\n    </mat-tab>\n\n  </mat-tab-group>\n</form>\n\n\n<div class=\"right-side-Image-buyer\">\n  <img src=\"{{buyerRightImageUrl}}\" class=\"right-form-image\">\n</div>\n\n</div>\n\n\n\n<div class=\"overlay-conform-buyer\" *ngIf=\"register\">\n  <div class=\"confirm-image-main\">\n\n<div class=\"overlay-image\">\n<img src=\"../../../../../assets/Images/thumbsup.png\" class=\"thumbs-up-image\">\n</div>\n\n<div class=\"thank-you-text\">\n\nThanks for\nregistering !\n</div>\n\n<div class=\"continue-button\" (click)=\"submitBuyer()\">\n  <div class=\"continue-button-container\" id=\"boldText\">\nContinue\n    \n    <span class=\"arrow-text\">\t&gt;</span>\n  </div>\n \n</div>\n\n\n\n\n</div>\n</div>\n\n";
     /***/
   },
 
@@ -591,7 +591,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<!-- Loading spinner -->\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n      </div>\n</div>\n\n\n\n<div class=\"main-container-buyer\" >\n<div class=\"container forms-container\" >\n  <div class=\"row\">\n    <section class=\"col\">\n      <form role=\"form\"  class=\"form-main-background\">\n        <mat-tab-group #matgroup class=\"form-tab-conatiner\" mat-align-tabs=\"center\" [selectedIndex]=\"selectedIndex\" (selectedTabChange)=\"onTabChange($event)\">\n          <mat-tab label=\"Personal Details\" (click)=\"previousStep()\" >\n            <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\n              <div class=\"card-margin background-new-form\">\n              \n              </div>\n              <div class=\"card-margin background-new-form\">\n\n\n                <div class=\"extra-field\" >\n                  <mat-form-field  appearance=\"outline\" class=\"drop-box\">\n                    <!-- <mat-label class=\"fixed-Label\" id=\"title\">Tittle</mat-label> -->\n\n                    <mat-select name=\"title\" [(ngModel)]=\"user.title\" class=\"drop-down-list\" #titles  [formControl]=\"TitleFormControl\" disableOptionCentering panelClass=\"testClass\" placeholder=\"Title\" required>\n                      <mat-option value=\"Mr\">Mr</mat-option>\n                      <mat-option value=\"Ms\">Ms</mat-option>\n                      <mat-option value=\"Mrs\">Mrs</mat-option>\n                      <mat-option value=\"Miss\">Miss</mat-option>\n              <mat-option value=\"Mx\">Mx</mat-option>\n              <mat-option value=\"Dr\">Dr</mat-option>\n                    </mat-select>\n                    <mat-error>{{Title}}</mat-error>\n                  </mat-form-field>\n                </div>\n                <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width\"   appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\" id=\"Name\">Name</mat-label>\n                 <input matInput name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\" #Names [formControl]=\"NameFormControl\" required>\n                 <mat-error>{{FullName}}</mat-error>\n                  </mat-form-field>\n                </div>\n                  <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\" id=\"email\">Email Address</mat-label>\n                    <input matInput  name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.email\" #emails pattern=\"[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}\" required>\n                 \n                    <mat-error>Please enter valid email</mat-error>\n\n                  </mat-form-field>\n        </div>\n        \n   \n        \n                  <!--Date Of Birth Field-->\n                  <div class=\"extra-field-two\" >\n                  \n                  <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\" id=\"dob\">Date of Birth</mat-label>\n   \n                    <input matInput [matDatepicker]=\"picker\"  name=\"DOB\" class=\"mat-mail-input\"\n                      value=\"DOB\" [(ngModel)]=\"user.DOB\"  #dobs  [formControl]=\"dobFormControl\"  required>\n                    <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n                    <mat-datepicker #picker></mat-datepicker>\n                    <mat-error>{{DateofBirth}}</mat-error>\n\n                  </mat-form-field>\n                  </div>\n                  <!--Date Of Birth Field End-->\n        \n        \n                  <!--Phone Number field-->\n                  <div class=\"extra-field-two\">\n                   \n                  <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"  id=\"tele\">\n                      Phone Number\n                    </mat-label>\n                    <span matPrefix>+44&nbsp;</span>\n                    <input matInput name=\"phonenumber\"  [(ngModel)]=\"user.Phone\" type=”tel” minlength=\"10\" #tele [formControl]=\"phoneFormControl\"  required>\n                  \n           \n\n\n                <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n                  {{PhoneValidation}}\n                 </mat-error>\n                 <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n                   {{PhoneValidation}}\n                 </mat-error>\n                 <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n                   {{PhoneLength}}\n                 </mat-error>\n                  </mat-form-field>\n        </div>\n                  <!--Phone Number field-->\n\n\n\n      </div>\n\n\n\n              <!--Current Living-->\n              <div class=\"card-margin background-new-form\">\n                <mat-card-title class=\"mat_card_title\">\n                  <p class=\"forms-heading new-heading-nestimate\" id=\"boldText\">Your Address</p>\n                </mat-card-title>\n                <p class=\"paragraph-color new-heading-nestimate\" id=\"boldText \"><span id=\"Cpost\">Area - Search by Postcode</span></p>\n      \n                <mat-option style=\"border: 1px solid #d2d2d2;border-radius: 3px;\"  appearance=\"outline\">\n             \n                  <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" \n                    aria-label=\"Post Code\" matInput [matAutocomplete]=\"autoCurrent\" [(ngModel)]=\"user.Currentpostcode\" minlength=\"5\" #currentPostcode placeholder=\"Enter Postcode\" id=\"up\">\n               \n                  <mat-autocomplete autoActiveFirstOption #autoCurrent=\"matAutocomplete\"\n                    (optionSelected)='getPosts($event.option.value)'>\n                    <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\"\n                      [value]=\"item\" class=\"mat-option-line\">\n                      <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                      </span> | <span>{{ item.citytown | titlecase}}</span>\n                    </mat-option>\n                  </mat-autocomplete>\n                </mat-option>\n           \n                <p class=\"paragraph-color new-heading-nestimate\" id=\"boldText\">Area - Search by Address</p>\n             \n             \n                <div class=\"extra-field-address\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"caddress\">Address</span></mat-label>\n                  <input matInput  [formControl]=\"AddressFormControl\" name=\"CurrentAddress\"\n                  class=\"mat-mail-input\" [(ngModel)]=\"user.CurrentAddress\" #currentAddress required>\n\n              \n                  <mat-error>{{CurrentAaddress}}</mat-error>\n                </mat-form-field>\n              </div>\n              <div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" id=\"Ctown\">Town/City</mat-label>\n                  <input matInput  [formControl]=\"TownFormControl\" [(ngModel)]=\"user.CurrentTown\"\n                    name=\"CurrentTown\" class=\"mat-mail-input\" #currenttown required>\n                    <mat-error>{{CurrentTown}}</mat-error>\n\n                </mat-form-field>\n                </div>\n\n                <div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" ><span  id=\"cState\">County</span></mat-label>\n                  <input matInput \n                    [(ngModel)]=\"user.Currentstate\" name=\"Currentstate\" class=\"mat-mail-input\" #currentstate required>\n                    <mat-error>{{CurrentCounty}}</mat-error>\n\n                </mat-form-field>\n              </div>\n              \n              <div class=\"extra-field-two\">\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"currentCountry\">Country</span></mat-label>\n                  <input matInput \n                    [(ngModel)]=\"user.CurrentCountry\" name=\"CurrentCountry\" class=\"mat-mail-input\" #currentCountry required>\n                    <mat-error>{{currCountry}}</mat-error>\n                </mat-form-field>\n              </div>\n\n            </div>\n              <!--Current Living  End-->\n              <ul class=\"submit-button\">\n              <div class=\"xd-submit-button\">\n                <a (click)=\"selectTab(1, 0)\" class=\"text-next-button\" id=\"boldText\">Next</a>\n              </div>\n              </ul>\n   \n</div>\n          </mat-tab>\n\n          <mat-tab label=\"Property Details\" >\n            <div class=\"tab-pane tabs-align-padding\" role=\"tabpanel\" id=\"step2\">\n              <!--Where Are Looking for property-->\n              <div class=\"card-margin background-new-form\">\n                <mat-card-title class=\"mat_card_title new-heading-nestimate\" id=\"boldText\"><span id=\"propfor\">are you looking to</span></mat-card-title>\n                <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\" [formControl]=\"PopertyForFormControl\"\n                  [(ngModel)]=\"listingSeller.PropertyFor\"  (change)=\"radioChange($event)\" #propertyFor>\n                  <mat-radio-button value=\"buy\">Sell</mat-radio-button>\n                  <mat-radio-button value=\"rent\">Let</mat-radio-button>\n                </mat-radio-group>\n                <p class=\"forms-heading new-heading-nestimate pb-2\" id=\"boldText\">Please fill in details of the <span id=\"boldText\" class=\"special-text\">property for sale</span></p>\n              \n                <mat-card-title class=\"mat_card_title\">\n                  <p class=\"forms-heading new-heading-nestimate\" id=\"boldText\">Address of property for sale</p>\n                </mat-card-title>\n                <mat-checkbox (change)='getSame(Seller)' class=\"new-heading-nestimate\" style=\"color:white\" value=\"true\"><span\n                  class=\"new-heading-nestimate\" id=\"semiboldText\">Same as residential address</span></mat-checkbox>\n                <p class=\"mt-4 new-heading-nestimate\" id=\"boldText\"><span id=\"lookpost\"> Area - Search by Postcode</span></p>\n\n                <mat-option style=\"border: 1px solid #d2d2d2;border-radius: 3px;\"  >\n                  <input [formControl]=\"autoCompleteControlLooking\" type=\"text\" \n                    aria-label=\"Post-Code\" matInput [matAutocomplete]=\"autoLooking\"\n                    [(ngModel)]=\"listingSeller.Lookingpostcode\"  [formControl]=\"LookingPostcodeFormControl\" #Lookingpostcode placeholder=\" Enter Postcode\" id=\"up\" >\n                  <mat-autocomplete autoActiveSecondOption #autoLooking=\"matAutocomplete\"\n                    (optionSelected)='getPost($event.option.value)'>\n                    <mat-option *ngFor=\"let item of addressianAutoCompleteLooking$ | async; let index=index\"\n                      [value]=\"item\">\n                      <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                      </span> | <span>{{ item.citytown | titlecase}}</span>\n                    </mat-option>\n                  </mat-autocomplete>\n                </mat-option>\n\n         \n\n                <p class=\"mt-4 new-heading-nestimate\">Area - Search by Address</p>\n                <div class=\"extra-field-address\" >\n                <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" id=\"lsrname\">Address</mat-label>\n\n                  <input matInput  name=\"LookingAddress\" class=\"mat-mail-input\"\n                    [(ngModel)]=\"listingSeller.LookingAddress\" [formControl]=\"LookingAddressFormControl\" #LookingAddress required>\n                    <mat-error>{{LAddress}}</mat-error>\n                </mat-form-field>\n                </div>\n                <div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" id=\"looktow\">\n                    Town/City\n                  </mat-label>\n                  <input matInput  [(ngModel)]=\"listingSeller.LookingTown\" name=\"LookingTowncity\"\n                    class=\"mat-mail-input\" [formControl]=\"LookingTownFormControl\" #LookingTown required>\n                    <mat-error>{{LTown}}</mat-error>\n\n                </mat-form-field>\n</div>\n<div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\" >\n                  <mat-label class=\"fixed-Label\" id=\"Lookstate\">County</mat-label>\n                  <input matInput [(ngModel)]=\"listingSeller.Lookingstate\"\n                    name=\"Lookingstate\" class=\"mat-mail-input\"  #LookingState required> \n                    <mat-error>{{LCounty}}</mat-error>\n                </mat-form-field>\n</div>\n<div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width \" appearance=\"outline\" >\n                  <mat-label class=\"fixed-Label\" id=\"lCountry\">Country</mat-label>\n                  <input matInput  [(ngModel)]=\"listingSeller.Country\" name=\"Country\"\n                    class=\"mat-mail-input\" [formControl]=\"CountryFormControl\" #country required>\n                    <mat-error>{{LCountry}}</mat-error>\n                </mat-form-field>\n              </div>\n            </div>\n              <!--Where Are Looking for property End-->\n\n\n\n              <div class=\"card-margin background-new-form\">\n                <p class=\"forms-heading new-heading-nestimate pb-2\">Property Details</p>\n\n   \n                <div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                  <mat-label class=\"fixed-Label\" id=\"protype\">Property Type</mat-label>\n                  <mat-select [(ngModel)]=\"listingSeller.PropertyType\" value=\"PropertyType\" name=\"PropertyType\"   #PropertyType [formControl]=\"PropertyTypeFormControl\"  disableOptionCentering panelClass=\"testClass\" required>\n                    <mat-option value=\"Flat\"  (click)=\"undiabledisableStudio()\">Flat</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Studio\" (click)=\"disableStudio()\">Studio</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Terracedhouse\"  (click)=\"undiabledisableStudio()\">Terraced House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Maisonette\" (click)=\" undiabledisableStudio()\">Maisonette</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Semi-detached\" (click)=\" undiabledisableStudio()\">Semi-detached House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Bungalow\" (click)=\" undiabledisableStudio()\">Bungalow</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Detachedhouse\" (click)=\" undiabledisableStudio()\">Detached House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Town house\" (click)=\" undiabledisableStudio()\">Town House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Country house\" (click)=\" undiabledisableStudio()\">Country House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Barn conversion\" (click)=\" undiabledisableStudio()\">Barn conversion</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Farm\" (click)=\" undiabledisableStudio()\">Farm</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Houseboat\" (click)=\" undiabledisableStudio()\">Houseboat</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Lodge\" (click)=\" undiabledisableStudio()\">Lodge</mat-option>\n\n                  </mat-select>\n                  <mat-error>{{propType}}</mat-error>\n                </mat-form-field>\n                </div>\n\n\n\n\n\n\n\n                <div class=\"price-selection\" *ngIf=\"isDisabled\">\n                  <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                    <mat-label class=\"fixed-Label\" id=\"bedroom\">No of Bedrooms</mat-label>\n                    <mat-select [(value)]=\"Maxrooms\" name=\"Maxrooms\" [(ngModel)]=\"listingSeller.Maxrooms\" #maxrooms [formControl]=\"maxRoomFormControl\" disabled disableOptionCentering panelClass=\"testClass\" required>\n                      <mat-option value=\"Studio\">Studio</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3</mat-option>\n                      <mat-option value=\"4\">4</mat-option>\n                      <mat-option value=\"5\">5 or More</mat-option>\n                    </mat-select>\n                    <mat-error>{{Roomsmax}}</mat-error>\n                  </mat-form-field>\n                  </div>\n                </div>\n\n     \n\n                <div class=\"price-selection\" *ngIf=\"!isDisabled\">\n                  <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                    <mat-label class=\"fixed-Label\" id=\"bedroom\">No of Bedrooms</mat-label>\n                    <mat-select [(value)]=\"Maxrooms\" name=\"Maxrooms\" [(ngModel)]=\"listingSeller.Maxrooms\" #maxrooms [formControl]=\"maxRoomFormControl\"  disableOptionCentering panelClass=\"testClass\" required>\n                      <mat-option value=\"Studio\">Studio</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3</mat-option>\n                      <mat-option value=\"4\">4</mat-option>\n                      <mat-option value=\"5\">5 or More</mat-option>\n                    </mat-select>\n                    <mat-error>{{Roomsmax}}</mat-error>\n                  </mat-form-field>\n                  </div>\n                </div>\n\n                <div class=\"max-amounts\" *ngIf=\"maxamounts\">\n                  <!--Min Max Rooms End-->\n                  <div class=\"price-selection\" *ngIf=\"letOption\" >\n                    <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                      <mat-label class=\"fixed-Label\" id=\"maxamount\">Desired Rent</mat-label>\n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\" #MaxAmount [formControl]=\"amountformControl\" placeholder=\"Desired Rent\" disableOptionCentering panelClass=\"testClass\" required>\n                        <mat-option value=\"100\">100 pcm</mat-option>\n                        <mat-option value=\"200\">200 pcm</mat-option>\n                        <mat-option value=\"300\">300 pcm</mat-option>\n                        <mat-option value=\"400\">400 pcm</mat-option>\n                        <mat-option value=\"500\">500 pcm</mat-option>\n                        <mat-option value=\"600\">600 pcm</mat-option>\n                        <mat-option value=\"700\">700 pcm</mat-option>\n                        <mat-option value=\"800\">800 pcm</mat-option>\n                        <mat-option value=\"900\">900 pcm</mat-option>\n                        <mat-option value=\"100\">1000 pcm</mat-option>\n                        <mat-option value=\"1250\">1250 pcm</mat-option>\n                        <mat-option value=\"1500\">1500 pcm</mat-option>\n                        <mat-option value=\"1750\">1750 pcm</mat-option>\n                        <mat-option value=\"2000\">2000 pcm</mat-option>\n                        <mat-option value=\"2250\">2250 pcm</mat-option>\n                        <mat-option value=\"2500\">2500 pcm</mat-option>\n                        <mat-option value=\"2750\">2750 pcm</mat-option>\n                        <mat-option value=\"3000\">3000 pcm</mat-option>\n                        <mat-option value=\"3250\">3250 pcm</mat-option>\n                        <mat-option value=\"3500\">3500 pcm</mat-option>\n                        <mat-option value=\"3750\">3750 pcm</mat-option>\n                        <mat-option value=\"4000\">4000 pcm</mat-option>\n                        <mat-option value=\"4250\">4250 pcm</mat-option>\n                        <mat-option value=\"4500\">4500 pcm</mat-option>\n                        <mat-option value=\"5000\">5000 pcm</mat-option>\n                        <mat-option value=\"5500\">5500 pcm</mat-option>\n                        <mat-option value=\"6000\">6000 pcm</mat-option>\n                        <mat-option value=\"6500\">6500 pcm</mat-option>\n                        <mat-option value=\"7000\">7000 pcm</mat-option>\n                        <mat-option value=\"7500\">7500 pcm</mat-option>\n                        <mat-option value=\"8000\">8500 pcm</mat-option>\n                        <mat-option value=\"9000\">9000 pcm</mat-option>\n                        <mat-option value=\"9500\">9500 pcm</mat-option>\n                        <mat-option value=\"10000\">10000 pcm</mat-option>\n                        <mat-option value=\"12500\">125000 pcm</mat-option>\n                        <mat-option value=\"15000\">15000 pcm</mat-option>\n                        <mat-option value=\"17500\">17500 pcm</mat-option>\n                        <mat-option value=\"20000\">20000 pcm</mat-option>\n                        <mat-option value=\"25000\">25000 pcm</mat-option>\n                      </mat-select>\n                      <mat-error>{{dPrice}}</mat-error>\n                    </mat-form-field>\n                    </div>\n                  </div>\n\n                  <!--Min Max Amount-->\n                  <div class=\"price-selection\" *ngIf=\"sellOption\">\n                    <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                      <mat-label class=\"fixed-Label\" id=\"maxamount\">Desired Price</mat-label>\n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\" #MaxAmount [formControl]=\"amountformControl\"  disableOptionCentering panelClass=\"testClass\" required>\n                        <mat-option value=\"50,000\">50,000</mat-option>\n                        <mat-option value=\"60,000\">60,000</mat-option>\n                        <mat-option value=\"70,000\">70,000</mat-option>\n                        <mat-option value=\"80,000\">80,000</mat-option>\n                        <mat-option value=\"90,000\">90,000</mat-option>\n                        <mat-option value=\"100,000\">100,000</mat-option>\n                        <mat-option value=\"110,000\">110,000</mat-option>\n                        <mat-option value=\"120,000\">120,000</mat-option>\n                        <mat-option value=\"125,000\">125,000</mat-option>\n                        <mat-option value=\"130,000\">130,000</mat-option>\n                        <mat-option value=\"140,000\">140,000</mat-option>\n                        <mat-option value=\"150,000\">150,000</mat-option>\n                        <mat-option value=\"160,000\">160,000</mat-option>\n                        <mat-option value=\"170,000\">170,000</mat-option>\n                        <mat-option value=\"175,000\">175,000</mat-option>\n                        <mat-option value=\"180,000\">180,000</mat-option>\n                        <mat-option value=\"190,000\">190,000</mat-option>\n                        <mat-option value=\"200,000\">200,000</mat-option>\n                        <mat-option value=\"210,000\">210,000</mat-option>\n                        <mat-option value=\"220,000\">220,000</mat-option>\n                        <mat-option value=\"230,000\">230,000</mat-option>\n                        <mat-option value=\"240,000\">240,000</mat-option>\n                        <mat-option value=\"250,000\">250,000</mat-option>\n                        <mat-option value=\"260,000\">260,000</mat-option>\n                        <mat-option value=\"270,000\">270,000</mat-option>\n                        <mat-option value=\"280,000\">280,000</mat-option>\n                        <mat-option value=\"290,000\">290,000</mat-option>\n                        <mat-option value=\"300,000\">300,000</mat-option>\n                        <mat-option value=\"325,000\">325,000</mat-option>\n                        <mat-option value=\"350,000\">350,000</mat-option>\n                        <mat-option value=\"375000\">375,000</mat-option>\n                        <mat-option value=\"400,000\">400,000</mat-option>\n                        <mat-option value=\"425,000\">425,000</mat-option>\n                        <mat-option value=\"450,000\">450,000</mat-option>\n                        <mat-option value=\"475,000\">475,000</mat-option>\n                        <mat-option value=\"500,000\">500,000</mat-option>\n                        <mat-option value=\"525,000\">525,000</mat-option>\n                        <mat-option value=\"550,000\">550,000</mat-option>\n                        <mat-option value=\"575,000\">575,000</mat-option>\n                        <mat-option value=\"600,000\">600,000</mat-option>\n                        <mat-option value=\"625,000\">625,000</mat-option>\n                        <mat-option value=\"650,000\">650,000</mat-option>\n                        <mat-option value=\"675,000\">675,000</mat-option>\n                        <mat-option value=\"700,000\">700,000</mat-option>\n                        <mat-option value=\"725,000\">725,000</mat-option>\n                        <mat-option value=\"750,000\">750,000</mat-option>\n                        <mat-option value=\"775,000\">775,000</mat-option>\n                        <mat-option value=\"800,000\">800,000</mat-option>\n                        <mat-option value=\"825,000\">825,000</mat-option>\n                        <mat-option value=\"850,000\">850,000</mat-option>\n                        <mat-option value=\"875,000\">875,000</mat-option>\n                        <mat-option value=\"900,000\">900,000</mat-option>\n                        <mat-option value=\"925,000\">925,000</mat-option>\n                        <mat-option value=\"950,000\">950,000</mat-option>\n                        <mat-option value=\"975,000\">975,000</mat-option>\n                        <mat-option value=\"1000,000\">1000,000</mat-option>\n                        <mat-option value=\"1250,000\">1250,000</mat-option>\n                        <mat-option value=\"1500,000\">1500,000</mat-option>\n                        <mat-option value=\"1750,000\">1750,000</mat-option>\n                        <mat-option value=\"2000,000\">2000,000</mat-option>\n                        <mat-option value=\"2250,000\">2250,000</mat-option>\n                        <mat-option value=\"2500,000\">2500,000</mat-option>\n                        <mat-option value=\"3000,000\">3000,000</mat-option>\n                        <mat-option value=\"4000,000\">4000,000</mat-option>\n                        <mat-option value=\"5000,000\">5000,000</mat-option>\n                        <mat-option value=\"6000,000\">6000,000</mat-option>\n                        <mat-option value=\"7000,000\">7000,000</mat-option>\n                        <mat-option value=\"8000,000\">8000,000</mat-option>\n                        <mat-option value=\"10000,000\">10000,000</mat-option>\n                        <mat-option value=\"15000,000\">15000,000</mat-option>\n                        <mat-option value=\"20000,000\">20000,000</mat-option>\n                      </mat-select>\n                      <mat-error>{{dPrice}}</mat-error>\n\n                    </mat-form-field>\n                    </div>\n                  </div>\n                  <!--Min Max Amount End-->\n\n                </div>\n                <div class=\"owner-ship\" *ngIf=\"sellOption\">\n                  <!--Ownership Field-->\n                  <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width drop-box\" style=\"width: 100%;\"  appearance=\"outline\" >\n                    <mat-label class=\"fixed-Label\" id=\"owner\">Ownership</mat-label>\n                    <mat-select  [(ngModel)]=\"listingSeller.ownership\" value=\"ownership\"\n                      name=\"ownership\" #onwership  [formControl]=\"ownershipformControl\"  disableOptionCentering panelClass=\"testClass\" required>\n                      <mat-option value=\"Leasehold\">Leasehold</mat-option>\n                      <mat-option value=\"Freehold\">Freehold</mat-option>\n                      <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n                    </mat-select>\n                    <mat-error>{{ownership}}</mat-error>\n                  </mat-form-field></div>\n                  <!--Ownership Field End-->\n                </div>\n\n\n              </div>\n\n              <div class=\"card-margin background-new-form\">\n\n                <p class=\"forms-heading new-heading-nestimate pb-2\">Optional Details</p>\n\n                <!--Min Max No of Bathrooms-->\n                <div class=\"price-selection\">\n                  <mat-form-field class=\"example-full-width drop-box\"  appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\">No of Bathrooms</mat-label>\n                    <mat-select [(value)]=\"Maxbathrooms\" name=\"Maxbathrooms\" [(ngModel)]=\"listingSeller.Maxbathrooms\" disableOptionCentering panelClass=\"testClass\">\n                      <mat-option value=\"any\">Any</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3 or more</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </div>\n                <!--Min Max No of Bathrooms End-->\n                <!--Min Max No of Reception Rooms-->\n                <div class=\"price-selection\">\n\n                  <mat-form-field class=\"example-full-width drop-box\"  appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\">No of Reception</mat-label>\n                    <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingSeller.Maxreception\" disableOptionCentering panelClass=\"testClass\">\n                      <mat-option value=\"any\">Any</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3 or more</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </div>\n                <!--Min Max No of Reception Rooms End-->\n\n                <!--PropertyCondition Field-->\n                <mat-form-field class=\"example-full-width drop-box\" style=\"width: 100%;\"  appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\">Property Condition</mat-label>\n                  <mat-select name=\"PropertyCondition\" [(ngModel)]=\"listingSeller.PropertyCondition\" [(value)]=\"PropertyCondition\" disableOptionCentering panelClass=\"testClass\"\n                    >\n                    <mat-option value=\"any\">Any</mat-option>\n                    <mat-option value=\"Refurbished\">Refurbished</mat-option>\n                    <mat-option value=\"NewBuild\" >New Build</mat-option>\n                    <mat-option value=\"Needsmodernisation\" >Needs modernisation</mat-option>\n                  </mat-select>\n                </mat-form-field>\n                <!--PropertyCondition Field End-->\n                <!--Aplicable Features-->\n               \n                <mat-form-field class=\"example-full-width drop-box\"  appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\">Property Features</mat-label>\n                  <mat-select [formControl]=\"features\" multiple [(ngModel)]=\"listingSeller.features\"  #sl disableOptionCentering panelClass=\"testClass\">\n                    <div class=\"select-constion\">\n                      <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n                    </div>\n                    <mat-option *ngFor=\"let features of applicable\" [value]=\"features\" class=\"select-check mat-check\">\n                      {{features}}</mat-option>\n                  </mat-select>\n                </mat-form-field>\n                <!--Aplicable Feature End-->\n\n              </div>\n\n              \n              <div class=\"upload-images-area\" >\n                <h2  class=\"upload-text\">Upload Images</h2>\n\n                <div class=\"images-container\">\n                <div *ngFor=\"let upload of sellerImages\" >\n         <img class=\"close-image\" src=\"../../../../assets/Images/cross.png\" (click)=\"deleteMsg(upload)\">\n                  <img src=\"{{upload}}\" class=\"images-photo\">\n                  <!-- <h3 class=\"image-discription-size\">Upload of {{upload}}</h3> -->\n                </div>\n              </div>\n              <label for=\"files\" class=\"btn\" id=\"boldText\" *ngIf=\"sellerImages.length == 0\">\n                <div class=\"image-upload-button\">\n                    <div class=\"image-upload-icon\">\n                      <img src=\"../../../../assets/Images/picture.png\" class=\"upload-icon-picture\">\n                    </div>\n                     <div class=\"uplaod-icon-text\"  id=\"boldText\">\n                      Choose Image\n                     </div>\n\n\n                </div>\n\n              </label>\n              \n              <label for=\"files\" class=\"btn\" id=\"boldText\" *ngIf=\"sellerImages.length > 0 && sellerImages.length <= 20\">   <div class=\"image-upload-button\">\n                <div class=\"image-upload-icon\">\n                  <img src=\"../../../../assets/Images/picture.png\" class=\"upload-icon-picture\">\n                </div>\n                 <div class=\"uplaod-icon-text\"  id=\"boldText\">\n                  Add More\n                 </div>\n\n\n            </div></label>\n                <input type=\"file\" multiple=true style=\"visibility:hidden;\" (change)=\"importImages($event)\" id=\"files\">\n              </div>\n            \n        \n          \n\n\n\n              <div class=\"last-form-buttons\">\n              <ul class=\"submit-button\">\n                <div class=\"xd-submit-button previous-button\">\n                  <a (click)=\"previousStep()\"class=\"text-next-button \" id=\"boldText\" >Previous</a>\n                </div>\n                </ul>\n            \n\n\n              <div class=\"large-button mt-3\">\n      \n                <div class=\"create-nestimate\" (click)=\"selectTab(2, 1)\">\n                  <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\" >\n                  <span class=\"text-create-nestimate mr-1\" id=\"boldText\">Create your Nestimate</span>\n                  <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n                </div>\n              </div>\n\n            </div>\n            </div>\n\n\n          </mat-tab>\n\n\n        </mat-tab-group>\n      </form>\n    </section>\n  </div>\n</div>\n\n\n<div class=\"right-side-Image-buyer\">\n  <img src=\"{{sellerRightImageUrl}}\" class=\"right-form-image\">\n</div>\n\n</div>\n\n<div class=\"overlay-conform-buyer\" *ngIf=\"register\">\n  <div class=\"confirm-image-main\">\n<div class=\"overlay-image\">\n<img src=\"../../../../../assets/Images/thumbsup.png\" class=\"thumbs-up-image\">\n</div>\n<div class=\"thank-you-text\" id=\"boldText\">\n\nThanks for\nregistering !\n</div>\n<div class=\"continue-button\" (click)=\"sellerForm()\">\n  <div class=\"continue-button-container\" id=\"boldText\">\nContinue\n    \n    <span class=\"arrow-text\">\t&gt;</span>\n  </div>\n\n</div>\n</div>\n</div>";
+    __webpack_exports__["default"] = "<!-- Loading spinner -->\n<div *ngIf=\"isLoading\" class=\"loading-container\">\n  <div class=\"custom-loader\">\n    <img src=\"../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">Loading Nestimate...</p>\n      </div>\n</div>\n\n\n\n<div class=\"main-container-buyer\" >\n<div class=\"container forms-container\" >\n  <div class=\"row\">\n    <section class=\"col\">\n      <form role=\"form\"  class=\"form-main-background\">\n        <mat-tab-group #matgroup class=\"form-tab-conatiner\" mat-align-tabs=\"center\" [selectedIndex]=\"selectedIndex\" (selectedTabChange)=\"onTabChange($event)\">\n          <mat-tab label=\"Personal Details\" (click)=\"previousStep()\" >\n            <div class=\"tab-pane active tabs-align-padding\" role=\"tabpanel\" id=\"step1\">\n              <div class=\"card-margin background-new-form\">\n              \n              </div>\n              <div class=\"card-margin background-new-form\">\n\n\n                <div class=\"extra-field\" >\n                  <mat-form-field  appearance=\"outline\" class=\"drop-box\">\n                    <!-- <mat-label class=\"fixed-Label\" id=\"title\">Tittle</mat-label> -->\n\n                    <mat-select name=\"title\" [(ngModel)]=\"user.title\" class=\"drop-down-list\" #titles  [formControl]=\"TitleFormControl\" disableOptionCentering panelClass=\"testClass\" placeholder=\"Title\" required>\n                      <mat-option value=\"Mr\">Mr</mat-option>\n                      <mat-option value=\"Ms\">Ms</mat-option>\n                      <mat-option value=\"Mrs\">Mrs</mat-option>\n                      <mat-option value=\"Miss\">Miss</mat-option>\n              <mat-option value=\"Mx\">Mx</mat-option>\n              <mat-option value=\"Dr\">Dr</mat-option>\n                    </mat-select>\n                    <mat-error>{{Title}}</mat-error>\n                  </mat-form-field>\n                </div>\n                <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width\"   appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\" id=\"Name\">Name</mat-label>\n                 <input matInput name=\"Name\" class=\"mat-mail-input\" [(ngModel)]=\"user.Name\" #Names [formControl]=\"NameFormControl\" required>\n                 <mat-error>{{FullName}}</mat-error>\n                  </mat-form-field>\n                </div>\n                  <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\" id=\"email\">Email Address</mat-label>\n                    <input matInput  name=\"Email\" class=\"mat-mail-input\" [(ngModel)]=\"user.email\" #emails pattern=\"[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}\" required>\n                 \n                    <mat-error>Please enter valid email</mat-error>\n\n                  </mat-form-field>\n        </div>\n        \n   \n        \n                  <!--Date Of Birth Field-->\n                  <div class=\"extra-field-two\" >\n                  \n                  <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\" id=\"dob\">Date of Birth</mat-label>\n   \n                    <input matInput [matDatepicker]=\"picker\"  name=\"DOB\" class=\"mat-mail-input\"\n                      value=\"DOB\" [(ngModel)]=\"user.DOB\"  #dobs  [formControl]=\"dobFormControl\"  required>\n                    <mat-datepicker-toggle matSuffix [for]=\"picker\"></mat-datepicker-toggle>\n                    <mat-datepicker #picker></mat-datepicker>\n                    <mat-error>{{DateofBirth}}</mat-error>\n\n                  </mat-form-field>\n                  </div>\n                  <!--Date Of Birth Field End-->\n        \n        \n                  <!--Phone Number field-->\n                  <div class=\"extra-field-two\">\n                   \n                  <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\"  id=\"tele\">\n                      Phone Number\n                    </mat-label>\n                    <span matPrefix>+44&nbsp;</span>\n                    <input matInput name=\"phonenumber\"  [(ngModel)]=\"user.Phone\" type=”tel” minlength=\"10\" #tele [formControl]=\"phoneFormControl\"  required>\n                  \n           \n\n\n                <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n                  {{PhoneValidation}}\n                 </mat-error>\n                 <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n                   {{PhoneValidation}}\n                 </mat-error>\n                 <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n                   {{PhoneLength}}\n                 </mat-error>\n                  </mat-form-field>\n        </div>\n                  <!--Phone Number field-->\n\n\n\n      </div>\n\n\n\n              <!--Current Living-->\n              <div class=\"card-margin background-new-form\">\n                <mat-card-title class=\"mat_card_title\">\n                  <p class=\"forms-heading new-heading-nestimate\" id=\"boldText\">Your Address</p>\n                </mat-card-title>\n                <p class=\"paragraph-color new-heading-nestimate\" id=\"boldText \"><span id=\"Cpost\">Area - Search by Postcode</span></p>\n      \n                <mat-option style=\"border: 1px solid #d2d2d2;border-radius: 3px;\"  appearance=\"outline\">\n             \n                  <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" \n                    aria-label=\"Post Code\" matInput [matAutocomplete]=\"autoCurrent\" [(ngModel)]=\"user.Currentpostcode\" minlength=\"5\" #currentPostcode placeholder=\"Enter Postcode\" id=\"up\">\n               \n                  <mat-autocomplete autoActiveFirstOption #autoCurrent=\"matAutocomplete\"\n                    (optionSelected)='getPosts($event.option.value)'>\n                    <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\"\n                      [value]=\"item\" class=\"mat-option-line\">\n                      <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                      </span> | <span>{{ item.citytown | titlecase}}</span>\n                    </mat-option>\n                  </mat-autocomplete>\n                </mat-option>\n           \n                <p class=\"paragraph-color new-heading-nestimate\" id=\"boldText\">Area - Search by Address</p>\n             \n             \n                <div class=\"extra-field-address\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"caddress\">Address</span></mat-label>\n                  <input matInput  [formControl]=\"AddressFormControl\" name=\"CurrentAddress\"\n                  class=\"mat-mail-input\" [(ngModel)]=\"user.CurrentAddress\" #currentAddress required>\n\n              \n                  <mat-error>{{CurrentAaddress}}</mat-error>\n                </mat-form-field>\n              </div>\n              <div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" id=\"Ctown\">Town/City</mat-label>\n                  <input matInput  [formControl]=\"TownFormControl\" [(ngModel)]=\"user.CurrentTown\"\n                    name=\"CurrentTown\" class=\"mat-mail-input\" #currenttown required>\n                    <mat-error>{{CurrentTown}}</mat-error>\n\n                </mat-form-field>\n                </div>\n\n                <div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" ><span  id=\"cState\">County</span></mat-label>\n                  <input matInput \n                    [(ngModel)]=\"user.Currentstate\" name=\"Currentstate\" class=\"mat-mail-input\" #currentstate required>\n                    <mat-error>{{CurrentCounty}}</mat-error>\n\n                </mat-form-field>\n              </div>\n              \n              <div class=\"extra-field-two\">\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\"><span id=\"currentCountry\">Country</span></mat-label>\n                  <input matInput \n                    [(ngModel)]=\"user.CurrentCountry\" name=\"CurrentCountry\" class=\"mat-mail-input\" #currentCountry required>\n                    <mat-error>{{currCountry}}</mat-error>\n                </mat-form-field>\n              </div>\n\n            </div>\n              <!--Current Living  End-->\n              <ul class=\"submit-button\">\n              <div class=\"xd-submit-button\">\n                <a (click)=\"selectTab(1, 0)\" class=\"text-next-button\" id=\"boldText\">Next</a>\n              </div>\n              </ul>\n   \n</div>\n          </mat-tab>\n\n          <mat-tab label=\"Property Details\" >\n            <div class=\"tab-pane tabs-align-padding\" role=\"tabpanel\" id=\"step2\">\n              <!--Where Are Looking for property-->\n              <div class=\"card-margin background-new-form\">\n                <mat-card-title class=\"mat_card_title new-heading-nestimate\" id=\"boldText\"><span id=\"propfor\">are you looking to</span></mat-card-title>\n                <mat-radio-group aria-label=\"Select an option\" class=\"radio-top-buyer\" name=\"PropertyFor\" [formControl]=\"PopertyForFormControl\"\n                  [(ngModel)]=\"listingSeller.PropertyFor\"  (change)=\"radioChange($event)\" #propertyFor>\n                  <mat-radio-button value=\"buy\">Sell</mat-radio-button>\n                  <mat-radio-button value=\"rent\">Let</mat-radio-button>\n                </mat-radio-group>\n                <p class=\"forms-heading new-heading-nestimate pb-2\" id=\"boldText\">Please fill in details of the <span id=\"boldText\" class=\"special-text\">property for sale</span></p>\n              \n                <mat-card-title class=\"mat_card_title\">\n                  <p class=\"forms-heading new-heading-nestimate\" id=\"boldText\">Address of property for sale</p>\n                </mat-card-title>\n                <mat-checkbox (change)='getSame(Seller)' class=\"new-heading-nestimate\" style=\"color:white\" value=\"true\"><span\n                  class=\"new-heading-nestimate\" id=\"semiboldText\">Same as residential address</span></mat-checkbox>\n                <p class=\"mt-4 new-heading-nestimate\" id=\"boldText\"><span id=\"lookpost\"> Area - Search by Postcode</span></p>\n\n                <mat-option style=\"border: 1px solid #d2d2d2;border-radius: 3px;\"  >\n                  <input [formControl]=\"autoCompleteControlLooking\" type=\"text\" \n                    aria-label=\"Post-Code\" matInput [matAutocomplete]=\"auto\" \n                    [(ngModel)]=\"listingSeller.Lookingpostcode\"  [formControl]=\"LookingPostcodeFormControl\" #Lookingpostcode placeholder=\" Enter Postcode\" id=\"up\" >\n                  <mat-autocomplete autoActiveSecondOption #auto=\"matAutocomplete\"  (optionSelected)='getPost($event.option.value)'>\n           \n        \n                    <mat-option *ngFor=\"let item of addressianAutoCompleteLooking$ | async; let index=index\" [value]=\"item\">\n                  \n                      <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n                      </span> | <span>{{ item.county | titlecase}}</span>\n                    </mat-option>\n                  </mat-autocomplete>\n                </mat-option>\n\n         \n\n                <p class=\"mt-4 new-heading-nestimate\">Area - Search by Address</p>\n                <div class=\"extra-field-address\" >\n                <mat-form-field class=\"example-full-width\"  appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" id=\"lsrname\">Address</mat-label>\n\n                  <input matInput  name=\"LookingAddress\" class=\"mat-mail-input\"\n                    [(ngModel)]=\"listingSeller.LookingAddress\" [formControl]=\"LookingAddressFormControl\" #LookingAddress required>\n                    <mat-error>{{LAddress}}</mat-error>\n                </mat-form-field>\n                </div>\n                <div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\" id=\"looktow\">\n                    Town/City\n                  </mat-label>\n                  <input matInput  [(ngModel)]=\"listingSeller.LookingTown\" name=\"LookingTowncity\"\n                    class=\"mat-mail-input\" [formControl]=\"LookingTownFormControl\" #LookingTown required>\n                    <mat-error>{{LTown}}</mat-error>\n\n                </mat-form-field>\n</div>\n<div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width\" appearance=\"outline\" >\n                  <mat-label class=\"fixed-Label\" id=\"Lookstate\">County</mat-label>\n                  <input matInput [(ngModel)]=\"listingSeller.Lookingstate\"\n                    name=\"Lookingstate\" class=\"mat-mail-input\"  #LookingState required> \n                    <mat-error>{{LCounty}}</mat-error>\n                </mat-form-field>\n</div>\n<div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width \" appearance=\"outline\" >\n                  <mat-label class=\"fixed-Label\" id=\"lCountry\">Country</mat-label>\n                  <input matInput  [(ngModel)]=\"listingSeller.Country\" name=\"Country\"\n                    class=\"mat-mail-input\" [formControl]=\"CountryFormControl\" #country required>\n                    <mat-error>{{LCountry}}</mat-error>\n                </mat-form-field>\n              </div>\n            </div>\n              <!--Where Are Looking for property End-->\n\n\n\n              <div class=\"card-margin background-new-form\">\n                <p class=\"forms-heading new-heading-nestimate pb-2\">Property Details</p>\n\n   \n                <div class=\"extra-field-two\" >\n                <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                  <mat-label class=\"fixed-Label\" id=\"protype\">Property Type</mat-label>\n                  <mat-select [(ngModel)]=\"listingSeller.PropertyType\" value=\"PropertyType\" name=\"PropertyType\"   #PropertyType [formControl]=\"PropertyTypeFormControl\"  disableOptionCentering panelClass=\"testClass\" required>\n                    <mat-option value=\"Flat\"  (click)=\"undiabledisableStudio()\">Flat</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Studio\" (click)=\"disableStudio()\">Studio</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Terracedhouse\"  (click)=\"undiabledisableStudio()\">Terraced House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Maisonette\" (click)=\" undiabledisableStudio()\">Maisonette</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Semi-detached\" (click)=\" undiabledisableStudio()\">Semi-detached House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Bungalow\" (click)=\" undiabledisableStudio()\">Bungalow</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Detachedhouse\" (click)=\" undiabledisableStudio()\">Detached House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Town house\" (click)=\" undiabledisableStudio()\">Town House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Country house\" (click)=\" undiabledisableStudio()\">Country House</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Barn conversion\" (click)=\" undiabledisableStudio()\">Barn conversion</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Farm\" (click)=\" undiabledisableStudio()\">Farm</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Houseboat\" (click)=\" undiabledisableStudio()\">Houseboat</mat-option>\n                    <mat-option class=\"example-margin\" value=\"Lodge\" (click)=\" undiabledisableStudio()\">Lodge</mat-option>\n\n                  </mat-select>\n                  <mat-error>{{propType}}</mat-error>\n                </mat-form-field>\n                </div>\n\n\n\n\n\n\n\n                <div class=\"price-selection\" *ngIf=\"isDisabled\">\n                  <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                    <mat-label class=\"fixed-Label\" id=\"bedroom\">No of Bedrooms</mat-label>\n                    <mat-select [(value)]=\"Maxrooms\" name=\"Maxrooms\" [(ngModel)]=\"listingSeller.Maxrooms\" #maxrooms [formControl]=\"maxRoomFormControl\" disabled disableOptionCentering panelClass=\"testClass\" required>\n                      <mat-option value=\"Studio\">Studio</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3</mat-option>\n                      <mat-option value=\"4\">4</mat-option>\n                      <mat-option value=\"5\">5 or More</mat-option>\n                    </mat-select>\n                    <mat-error>{{Roomsmax}}</mat-error>\n                  </mat-form-field>\n                  </div>\n                </div>\n\n     \n\n                <div class=\"price-selection\" *ngIf=\"!isDisabled\">\n                  <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                    <mat-label class=\"fixed-Label\" id=\"bedroom\">No of Bedrooms</mat-label>\n                    <mat-select [(value)]=\"Maxrooms\" name=\"Maxrooms\" [(ngModel)]=\"listingSeller.Maxrooms\" #maxrooms [formControl]=\"maxRoomFormControl\"  disableOptionCentering panelClass=\"testClass\" required>\n                      <mat-option value=\"Studio\">Studio</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3</mat-option>\n                      <mat-option value=\"4\">4</mat-option>\n                      <mat-option value=\"5\">5 or More</mat-option>\n                    </mat-select>\n                    <mat-error>{{Roomsmax}}</mat-error>\n                  </mat-form-field>\n                  </div>\n                </div>\n\n                <div class=\"max-amounts\" *ngIf=\"maxamounts\">\n                  <!--Min Max Rooms End-->\n                  <div class=\"price-selection\" *ngIf=\"letOption\" >\n                    <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                      <mat-label class=\"fixed-Label\" id=\"maxamount\">Desired Rent</mat-label>\n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\" #MaxAmount [formControl]=\"amountformControl\" placeholder=\"Desired Rent\" disableOptionCentering panelClass=\"testClass\" required>\n                        <mat-option value=\"100\">100 pcm</mat-option>\n                        <mat-option value=\"200\">200 pcm</mat-option>\n                        <mat-option value=\"300\">300 pcm</mat-option>\n                        <mat-option value=\"400\">400 pcm</mat-option>\n                        <mat-option value=\"500\">500 pcm</mat-option>\n                        <mat-option value=\"600\">600 pcm</mat-option>\n                        <mat-option value=\"700\">700 pcm</mat-option>\n                        <mat-option value=\"800\">800 pcm</mat-option>\n                        <mat-option value=\"900\">900 pcm</mat-option>\n                        <mat-option value=\"100\">1000 pcm</mat-option>\n                        <mat-option value=\"1250\">1250 pcm</mat-option>\n                        <mat-option value=\"1500\">1500 pcm</mat-option>\n                        <mat-option value=\"1750\">1750 pcm</mat-option>\n                        <mat-option value=\"2000\">2000 pcm</mat-option>\n                        <mat-option value=\"2250\">2250 pcm</mat-option>\n                        <mat-option value=\"2500\">2500 pcm</mat-option>\n                        <mat-option value=\"2750\">2750 pcm</mat-option>\n                        <mat-option value=\"3000\">3000 pcm</mat-option>\n                        <mat-option value=\"3250\">3250 pcm</mat-option>\n                        <mat-option value=\"3500\">3500 pcm</mat-option>\n                        <mat-option value=\"3750\">3750 pcm</mat-option>\n                        <mat-option value=\"4000\">4000 pcm</mat-option>\n                        <mat-option value=\"4250\">4250 pcm</mat-option>\n                        <mat-option value=\"4500\">4500 pcm</mat-option>\n                        <mat-option value=\"5000\">5000 pcm</mat-option>\n                        <mat-option value=\"5500\">5500 pcm</mat-option>\n                        <mat-option value=\"6000\">6000 pcm</mat-option>\n                        <mat-option value=\"6500\">6500 pcm</mat-option>\n                        <mat-option value=\"7000\">7000 pcm</mat-option>\n                        <mat-option value=\"7500\">7500 pcm</mat-option>\n                        <mat-option value=\"8000\">8500 pcm</mat-option>\n                        <mat-option value=\"9000\">9000 pcm</mat-option>\n                        <mat-option value=\"9500\">9500 pcm</mat-option>\n                        <mat-option value=\"10000\">10000 pcm</mat-option>\n                        <mat-option value=\"12500\">125000 pcm</mat-option>\n                        <mat-option value=\"15000\">15000 pcm</mat-option>\n                        <mat-option value=\"17500\">17500 pcm</mat-option>\n                        <mat-option value=\"20000\">20000 pcm</mat-option>\n                        <mat-option value=\"25000\">25000 pcm</mat-option>\n                      </mat-select>\n                      <mat-error>{{dPrice}}</mat-error>\n                    </mat-form-field>\n                    </div>\n                  </div>\n\n                  <!--Min Max Amount-->\n                  <div class=\"price-selection\" *ngIf=\"sellOption\">\n                    <div class=\"extra-field-two\" >\n                    <mat-form-field class=\"example-full-width drop-box\" appearance=\"outline\" >\n                      <mat-label class=\"fixed-Label\" id=\"maxamount\">Desired Price</mat-label>\n                      <mat-select [(value)]=\"max\" name=\"MaxAmount\" [(ngModel)]=\"listingSeller.MaxAmount\" #MaxAmount [formControl]=\"amountformControl\"  disableOptionCentering panelClass=\"testClass\" required>\n                        <mat-option value=\"50,000\">50,000</mat-option>\n                        <mat-option value=\"60,000\">60,000</mat-option>\n                        <mat-option value=\"70,000\">70,000</mat-option>\n                        <mat-option value=\"80,000\">80,000</mat-option>\n                        <mat-option value=\"90,000\">90,000</mat-option>\n                        <mat-option value=\"100,000\">100,000</mat-option>\n                        <mat-option value=\"110,000\">110,000</mat-option>\n                        <mat-option value=\"120,000\">120,000</mat-option>\n                        <mat-option value=\"125,000\">125,000</mat-option>\n                        <mat-option value=\"130,000\">130,000</mat-option>\n                        <mat-option value=\"140,000\">140,000</mat-option>\n                        <mat-option value=\"150,000\">150,000</mat-option>\n                        <mat-option value=\"160,000\">160,000</mat-option>\n                        <mat-option value=\"170,000\">170,000</mat-option>\n                        <mat-option value=\"175,000\">175,000</mat-option>\n                        <mat-option value=\"180,000\">180,000</mat-option>\n                        <mat-option value=\"190,000\">190,000</mat-option>\n                        <mat-option value=\"200,000\">200,000</mat-option>\n                        <mat-option value=\"210,000\">210,000</mat-option>\n                        <mat-option value=\"220,000\">220,000</mat-option>\n                        <mat-option value=\"230,000\">230,000</mat-option>\n                        <mat-option value=\"240,000\">240,000</mat-option>\n                        <mat-option value=\"250,000\">250,000</mat-option>\n                        <mat-option value=\"260,000\">260,000</mat-option>\n                        <mat-option value=\"270,000\">270,000</mat-option>\n                        <mat-option value=\"280,000\">280,000</mat-option>\n                        <mat-option value=\"290,000\">290,000</mat-option>\n                        <mat-option value=\"300,000\">300,000</mat-option>\n                        <mat-option value=\"325,000\">325,000</mat-option>\n                        <mat-option value=\"350,000\">350,000</mat-option>\n                        <mat-option value=\"375000\">375,000</mat-option>\n                        <mat-option value=\"400,000\">400,000</mat-option>\n                        <mat-option value=\"425,000\">425,000</mat-option>\n                        <mat-option value=\"450,000\">450,000</mat-option>\n                        <mat-option value=\"475,000\">475,000</mat-option>\n                        <mat-option value=\"500,000\">500,000</mat-option>\n                        <mat-option value=\"525,000\">525,000</mat-option>\n                        <mat-option value=\"550,000\">550,000</mat-option>\n                        <mat-option value=\"575,000\">575,000</mat-option>\n                        <mat-option value=\"600,000\">600,000</mat-option>\n                        <mat-option value=\"625,000\">625,000</mat-option>\n                        <mat-option value=\"650,000\">650,000</mat-option>\n                        <mat-option value=\"675,000\">675,000</mat-option>\n                        <mat-option value=\"700,000\">700,000</mat-option>\n                        <mat-option value=\"725,000\">725,000</mat-option>\n                        <mat-option value=\"750,000\">750,000</mat-option>\n                        <mat-option value=\"775,000\">775,000</mat-option>\n                        <mat-option value=\"800,000\">800,000</mat-option>\n                        <mat-option value=\"825,000\">825,000</mat-option>\n                        <mat-option value=\"850,000\">850,000</mat-option>\n                        <mat-option value=\"875,000\">875,000</mat-option>\n                        <mat-option value=\"900,000\">900,000</mat-option>\n                        <mat-option value=\"925,000\">925,000</mat-option>\n                        <mat-option value=\"950,000\">950,000</mat-option>\n                        <mat-option value=\"975,000\">975,000</mat-option>\n                        <mat-option value=\"1000,000\">1000,000</mat-option>\n                        <mat-option value=\"1250,000\">1250,000</mat-option>\n                        <mat-option value=\"1500,000\">1500,000</mat-option>\n                        <mat-option value=\"1750,000\">1750,000</mat-option>\n                        <mat-option value=\"2000,000\">2000,000</mat-option>\n                        <mat-option value=\"2250,000\">2250,000</mat-option>\n                        <mat-option value=\"2500,000\">2500,000</mat-option>\n                        <mat-option value=\"3000,000\">3000,000</mat-option>\n                        <mat-option value=\"4000,000\">4000,000</mat-option>\n                        <mat-option value=\"5000,000\">5000,000</mat-option>\n                        <mat-option value=\"6000,000\">6000,000</mat-option>\n                        <mat-option value=\"7000,000\">7000,000</mat-option>\n                        <mat-option value=\"8000,000\">8000,000</mat-option>\n                        <mat-option value=\"10000,000\">10000,000</mat-option>\n                        <mat-option value=\"15000,000\">15000,000</mat-option>\n                        <mat-option value=\"20000,000\">20000,000</mat-option>\n                      </mat-select>\n                      <mat-error>{{dPrice}}</mat-error>\n\n                    </mat-form-field>\n                    </div>\n                  </div>\n                  <!--Min Max Amount End-->\n\n                </div>\n                <div class=\"owner-ship\" *ngIf=\"sellOption\">\n                  <!--Ownership Field-->\n                  <div class=\"extra-field-two\" >\n                  <mat-form-field class=\"example-full-width drop-box\" style=\"width: 100%;\"  appearance=\"outline\" >\n                    <mat-label class=\"fixed-Label\" id=\"owner\">Ownership</mat-label>\n                    <mat-select  [(ngModel)]=\"listingSeller.ownership\" value=\"ownership\"\n                      name=\"ownership\" #onwership  [formControl]=\"ownershipformControl\"  disableOptionCentering panelClass=\"testClass\" required>\n                      <mat-option value=\"Leasehold\">Leasehold</mat-option>\n                      <mat-option value=\"Freehold\">Freehold</mat-option>\n                      <mat-option value=\"Share of Freehold\">Share of Freehold</mat-option>\n                    </mat-select>\n                    <mat-error>{{ownership}}</mat-error>\n                  </mat-form-field></div>\n                  <!--Ownership Field End-->\n                </div>\n\n\n              </div>\n\n              <div class=\"card-margin background-new-form\">\n\n                <p class=\"forms-heading new-heading-nestimate pb-2\">Optional Details</p>\n\n                <!--Min Max No of Bathrooms-->\n                <div class=\"price-selection\">\n                  <mat-form-field class=\"example-full-width drop-box\"  appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\">No of Bathrooms</mat-label>\n                    <mat-select [(value)]=\"Maxbathrooms\" name=\"Maxbathrooms\" [(ngModel)]=\"listingSeller.Maxbathrooms\" disableOptionCentering panelClass=\"testClass\">\n                      <mat-option value=\"any\">Any</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3 or more</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </div>\n                <!--Min Max No of Bathrooms End-->\n                <!--Min Max No of Reception Rooms-->\n                <div class=\"price-selection\">\n\n                  <mat-form-field class=\"example-full-width drop-box\"  appearance=\"outline\">\n                    <mat-label class=\"fixed-Label\">No of Reception</mat-label>\n                    <mat-select [(value)]=\"Maxreception\" name=\"Maxreception\" [(ngModel)]=\"listingSeller.Maxreception\" disableOptionCentering panelClass=\"testClass\">\n                      <mat-option value=\"any\">Any</mat-option>\n                      <mat-option value=\"1\">1</mat-option>\n                      <mat-option value=\"2\">2</mat-option>\n                      <mat-option value=\"3\">3 or more</mat-option>\n                    </mat-select>\n                  </mat-form-field>\n                </div>\n                <!--Min Max No of Reception Rooms End-->\n\n                <!--PropertyCondition Field-->\n                <mat-form-field class=\"example-full-width drop-box\" style=\"width: 100%;\"  appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\">Property Condition</mat-label>\n                  <mat-select name=\"PropertyCondition\" [(ngModel)]=\"listingSeller.PropertyCondition\" [(value)]=\"PropertyCondition\" disableOptionCentering panelClass=\"testClass\"\n                    >\n                    <mat-option value=\"any\">Any</mat-option>\n                    <mat-option value=\"Refurbished\">Refurbished</mat-option>\n                    <mat-option value=\"NewBuild\" >New Build</mat-option>\n                    <mat-option value=\"Needsmodernisation\" >Needs modernisation</mat-option>\n                  </mat-select>\n                </mat-form-field>\n                <!--PropertyCondition Field End-->\n                <!--Aplicable Features-->\n               \n                <mat-form-field class=\"example-full-width drop-box\"  appearance=\"outline\">\n                  <mat-label class=\"fixed-Label\">Property Features</mat-label>\n                  <mat-select [formControl]=\"features\" multiple [(ngModel)]=\"listingSeller.features\"  #sl disableOptionCentering panelClass=\"testClass\">\n                    <div class=\"select-constion\">\n                      <img src=\"../../../../assets/Images/cross.png\" class=\"button-cross\" (click)=\"sl.close()\">\n                    </div>\n                    <mat-option *ngFor=\"let features of applicable\" [value]=\"features\" class=\"select-check mat-check\">\n                      {{features}}</mat-option>\n                  </mat-select>\n                </mat-form-field>\n                <!--Aplicable Feature End-->\n\n              </div>\n\n              \n              <div class=\"upload-images-area\" >\n                <h2  class=\"upload-text\">Upload Images</h2>\n\n                <div class=\"images-container\">\n                <div *ngFor=\"let upload of sellerImages\" >\n         <img class=\"close-image\" src=\"../../../../assets/Images/cross.png\" (click)=\"deleteMsg(upload)\">\n                  <img src=\"{{upload}}\" class=\"images-photo\">\n                  <!-- <h3 class=\"image-discription-size\">Upload of {{upload}}</h3> -->\n                </div>\n              </div>\n              <label for=\"files\" class=\"btn\" id=\"boldText\" *ngIf=\"sellerImages.length == 0\">\n                <div class=\"image-upload-button\">\n                    <div class=\"image-upload-icon\">\n                      <img src=\"../../../../assets/Images/picture.png\" class=\"upload-icon-picture\">\n                    </div>\n                     <div class=\"uplaod-icon-text\"  id=\"boldText\">\n                      Choose Image\n                     </div>\n\n\n                </div>\n\n              </label>\n              \n              <label for=\"files\" class=\"btn\" id=\"boldText\" *ngIf=\"sellerImages.length > 0 && sellerImages.length <= 20\">   <div class=\"image-upload-button\">\n                <div class=\"image-upload-icon\">\n                  <img src=\"../../../../assets/Images/picture.png\" class=\"upload-icon-picture\">\n                </div>\n                 <div class=\"uplaod-icon-text\"  id=\"boldText\">\n                  Add More\n                 </div>\n\n\n            </div></label>\n                <input type=\"file\" multiple=true style=\"visibility:hidden;\" (change)=\"importImages($event)\" id=\"files\">\n              </div>\n            \n        \n          \n\n\n\n              <div class=\"last-form-buttons\">\n              <ul class=\"submit-button\">\n                <div class=\"xd-submit-button previous-button\">\n                  <a (click)=\"previousStep()\"class=\"text-next-button \" id=\"boldText\" >Previous</a>\n                </div>\n                </ul>\n            \n\n\n              <div class=\"large-button mt-3\">\n      \n                <div class=\"create-nestimate\" (click)=\"selectTab(2, 1)\">\n                  <img src=\"../../assets/Images/singleHomeLogo.png\" class=\"button-image\" >\n                  <span class=\"text-create-nestimate mr-1\" id=\"boldText\">Create your Nestimate</span>\n                  <span class=\"greater-than-arrow paragraph-color mr-1\">&gt;</span>\n                </div>\n              </div>\n\n            </div>\n            </div>\n\n\n          </mat-tab>\n\n\n        </mat-tab-group>\n      </form>\n    </section>\n  </div>\n</div>\n\n\n<div class=\"right-side-Image-buyer\">\n  <img src=\"{{sellerRightImageUrl}}\" class=\"right-form-image\">\n</div>\n\n</div>\n\n<div class=\"overlay-conform-buyer\" *ngIf=\"register\">\n  <div class=\"confirm-image-main\">\n<div class=\"overlay-image\">\n<img src=\"../../../../../assets/Images/thumbsup.png\" class=\"thumbs-up-image\">\n</div>\n<div class=\"thank-you-text\" id=\"boldText\">\n\nThanks for\nregistering !\n</div>\n<div class=\"continue-button\" (click)=\"sellerForm()\">\n  <div class=\"continue-button-container\" id=\"boldText\">\nContinue\n    \n    <span class=\"arrow-text\">\t&gt;</span>\n  </div>\n\n</div>\n</div>\n</div>";
     /***/
   },
 
@@ -10996,55 +10996,67 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! @angular/fire/firestore */
     "./node_modules/@angular/fire/firestore/es2015/index.js");
     /* harmony import */
 
 
-    var _http_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var _http_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
     /*! ../../../http.service */
     "./src/app/http.service.ts");
     /* harmony import */
 
 
-    var _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var rxjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+    /* harmony import */
+
+
+    var _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ./../../../Helper/date.adapter */
     "./src/app/Helper/date.adapter.ts");
     /* harmony import */
 
 
-    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ../../../Misc/alertFormdialog/alertFormdialog.component */
     "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
     /* harmony import */
 
 
-    var _Model_notification__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _Model_notification__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ../../../Model/notification */
     "./src/app/Model/notification.ts");
     /* harmony import */
 
 
-    var _strapi_auth_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _strapi_auth_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! ../../../strapi-auth.service */
     "./src/app/strapi-auth.service.ts");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
     /* harmony import */
 
 
-    var _cms_service__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _cms_service__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! ../../../cms.service */
     "./src/app/cms.service.ts");
 
@@ -11072,10 +11084,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.CMSSERVICE = CMSSERVICE;
         this.eRef = eRef;
         this.addressianAutoCompleteLooking$ = null;
+        this.autoCompleteControlLooking = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
         this.addressianAutoCompleteCurrent$ = null;
+        this.autoCompleteControlCurrent = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
         this.isLoggedIn = false;
         this.listingBuyer = new _Model_listingBuyer__WEBPACK_IMPORTED_MODULE_3__["listingBuyer"]();
-        this.notification = new _Model_notification__WEBPACK_IMPORTED_MODULE_15__["notification"]();
+        this.notification = new _Model_notification__WEBPACK_IMPORTED_MODULE_17__["notification"]();
         this.buyerUser = new _Model_user__WEBPACK_IMPORTED_MODULE_4__["user"]();
         this.submitted = false;
         this.links = ["First", "Second", "Third"];
@@ -11111,9 +11125,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.PropertyDetail = "PropertyDetail";
         this.OptionalDetail = "OptionalDetail";
         this.isDisabled = false;
-        this.tabDis = "false";
-        this.autoCompleteControlLooking = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required]);
-        this.autoCompleteControlCurrent = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required]);
+        this.tabDis = "false"; // autoCompleteControlLooking = new FormControl("", [
+        //   Validators.required,
+        // ]);
+        // autoCompleteControlCurrent = new FormControl("", [
+        //   Validators.required]);
+
         this.phoneFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].maxLength(10), _angular_forms__WEBPACK_IMPORTED_MODULE_7__["Validators"].pattern("^((\\+91-?)|0)?[0-9]{10}$")]);
       }
 
@@ -11155,46 +11172,41 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               _this112.emails = localStorage.getItem("email");
               _this112.passs = localStorage.getItem("password");
             }
-          }); // this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(
-          // startWith(""),
-          // delay emits
-          // debounceTime(1000),
-          // use switch map so as to cancel previous subscribed events, before creating new once
-          //   switchMap((value) => {
-          //     if (value !== "") {
-          //       this.lookup(this.listingBuyer.Lookingpostcode).subscribe((data) => {
-          //         this.data = data;
-          //       });
-          //       return this.lookup(this.listingBuyer.Lookingpostcode);
-          //     } else {
-          //       return of(null);
-          //     }
-          //   })
-          // );
-          // The auto population of github method
-          // this.addressianAutoCompleteCurrent$ = this.autoCompleteControlCurrent.valueChanges.pipe(
-          //   startWith(""),
-          //   // delay emits
-          //   debounceTime(1000),
-          //   // use switch map so as to cancel previous subscribed events, before creating new once
-          //   switchMap((value) => {
-          //     if (value !== "") {
-          //       this.lookup(this.listingBuyer.Currentpostcode).subscribe((data) => {
-          //         this.data = data;
-          //       });
-          //       return this.lookup(this.listingBuyer.Currentpostcode);
-          //     } else {
-          //       return of(null);
-          //     }
-          //   })
-          // );
-
-          this.sub = this.route.paramMap.subscribe(function (params) {});
+          });
           this.getSignupTerms();
           this.getNotificationContent();
           this.getSeekerPersonalDetailForm();
           this.getSeekerPropertyDetailForm();
           this.getSeekerOptionalDetailForm();
+          this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
+          //debounceTime(1000),
+          // use switch map so as to cancel previous subscribed events, before creating new once
+          Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
+            if (value !== "") {
+              _this112.lookup(_this112.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this112.data = data;
+              });
+
+              return _this112.lookup(_this112.listingBuyer.Lookingpostcode);
+            } else {
+              return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
+            }
+          })); // The auto population of github method
+
+          this.addressianAutoCompleteCurrent$ = this.autoCompleteControlCurrent.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
+          //debounceTime(1000),
+          // use switch map so as to cancel previous subscribed events, before creating new once
+          Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
+            if (value.length !== 0) {
+              _this112.lookup(value).subscribe(function (data) {
+                _this112.data = data;
+              });
+
+              return _this112.lookup(_this112.listingBuyer.Currentpostcode);
+            } else {
+              return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
+            }
+          }));
         }
       }, {
         key: "LoggedIn",
@@ -11248,7 +11260,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getPosts",
         value: function getPosts(value) {
-          //this.listingBuyer.LookingTown = value.citytown;
+          this.listingBuyer.LookingTown = value.citytown;
           this.listingBuyer.Lookingstate = value.county;
           this.listingBuyer.Lookingpostcode = value.postcode;
           this.listingBuyer.LookingStreetname = value.address[2];
@@ -11263,11 +11275,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             var Mobile = parseInt(this.user.Phone);
           }
 
-          console.log(presentIndex);
-
           if (presentIndex == 0) {
             if (this.user.title == null) {
-              var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.Title
                 }
@@ -11275,7 +11285,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.titleView.focus();
               document.getElementById("title").style.color = "red";
             } else if (this.user.Name == null || this.user.Name.length == 0) {
-              var _dialogRef5 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef5 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.FullName
                 }
@@ -11285,7 +11295,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Name").style.color = "red";
             } else if (this.user.email == null || this.user.email.length == 0) {
-              var _dialogRef6 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef6 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
@@ -11296,7 +11306,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("email").style.color = "red";
             } else if (this.user.DOB == null) {
-              var _dialogRef7 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef7 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.DateofBirth
                 }
@@ -11308,7 +11318,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("dob").style.color = "red";
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef8 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef8 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.DateofBirthValidate
                 }
@@ -11320,7 +11330,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("dob").style.color = "red";
             } else if (this.user.Phone == null || this.user.Phone.length == 0) {
-              var _dialogRef9 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef9 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneEmpty
                 }
@@ -11333,7 +11343,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("tele").style.color = "red";
             } else if (Mobile != this.user.Phone) {
-              var _dialogRef10 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef10 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneValidation
                 }
@@ -11346,7 +11356,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("tele").style.color = "red";
             } else if (this.user.Phone.length < 10 || this.user.Phone.length > 10) {
-              var _dialogRef11 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef11 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneLength
                 }
@@ -11359,7 +11369,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("tele").style.color = "red";
             } else if (this.listingBuyer.Currentpostcode == null || this.listingBuyer.Currentpostcode.length == 0) {
-              var _dialogRef12 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef12 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentPostcode
                 }
@@ -11373,7 +11383,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Cpost").style.color = "red";
             } else if (postcodeLength.length < 5) {
-              var _dialogRef13 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef13 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PostcodeLength
                 }
@@ -11387,7 +11397,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("tele").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Cpost").style.color = "red";
             } else if (this.listingBuyer.CurrentAddress == null || this.listingBuyer.CurrentAddress.length == 0) {
-              var _dialogRef14 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef14 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentAaddress
                 }
@@ -11403,7 +11413,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("caddress").style.color = "red";
             } else if (this.listingBuyer.CurrentTown == null || this.listingBuyer.CurrentTown.length == 0) {
-              var _dialogRef15 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef15 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentTown
                 }
@@ -11418,7 +11428,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Ctown").style.color = "red";
               document.getElementById("Cpost").style.color = "var(--DARK-BLUE-COLOR)";
             } else if (this.listingBuyer.Currentstate == null || this.listingBuyer.Currentstate.length == 0) {
-              var _dialogRef16 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef16 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentCounty
                 }
@@ -11435,7 +11445,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("caddress").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("cState").style.color = "red";
             } else if (this.listingBuyer.Currentcountry == null || this.listingBuyer.Currentcountry.length == 0) {
-              var _dialogRef17 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef17 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentCountry
                 }
@@ -11465,7 +11475,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }
 
               if (this.amounts == false && this.listingBuyer.Currentcountry != null) {
-                var _dialogRef18 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef18 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.Buy
                   }
@@ -11473,7 +11483,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                 document.getElementById("propfor").style.color = "red";
               } else if (this.listingBuyer.Lookingpostcode == null) {
-                var _dialogRef19 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef19 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LPostcode
                   }
@@ -11483,7 +11493,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lookpost").style.color = "red";
               } else if (lookingPostcodeLength.length < 5) {
-                var _dialogRef20 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef20 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LPostcodeLength
                   }
@@ -11493,7 +11503,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("propfor").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lookpost").style.color = "red";
               } else if (this.listingBuyer.LookingStreetname == null) {
-                var _dialogRef21 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef21 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LStreetname
                   }
@@ -11504,7 +11514,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lookpost").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lsrname").style.color = "red";
               } else if (this.listingBuyer.LookingTown == null) {
-                var _dialogRef22 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef22 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LTown
                   }
@@ -11516,7 +11526,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lsrname").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("looktow").style.color = "red";
               } else if (this.listingBuyer.Lookingstate == null) {
-                var _dialogRef23 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef23 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LCounty
                   }
@@ -11529,7 +11539,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("looktow").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Lookstate").style.color = "red";
               } else if (this.listingBuyer.Country == null) {
-                var _dialogRef24 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef24 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LCountry
                   }
@@ -11543,7 +11553,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Lookstate").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lCountry").style.color = "red";
               } else if (this.listingBuyer.PropertyType == null || this.listingBuyer.PropertyType.length == 0) {
-                var _dialogRef25 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef25 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.PropertyType
                   }
@@ -11560,7 +11570,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("finanacial").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Property-type").style.color = "red";
               } else if (this.listingBuyer.Roommin == null) {
-                var _dialogRef26 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef26 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.Roommin
                   }
@@ -11578,7 +11588,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Property-type").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMin").style.color = "red";
               } else if (this.listingBuyer.Roomsmax == null) {
-                var _dialogRef27 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef27 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.Roomsmax
                   }
@@ -11597,7 +11607,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMin").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMax").style.color = "red";
               } else if (this.listingBuyer.Roommin != 'Studio' && this.listingBuyer.Roomsmax != 'Studio' && this.listingBuyer.Roommin > this.listingBuyer.Roomsmax) {
-                var _dialogRef28 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef28 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MinimumRoomValidation
                   }
@@ -11615,7 +11625,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMax").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMin").style.color = "red";
               } else if (this.listingBuyer.Roommin != 'Studio' && this.listingBuyer.Roomsmax != 'Studio' && this.listingBuyer.Roomsmax < this.listingBuyer.Roommin) {
-                var _dialogRef29 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef29 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MaximumRoomValidation
                   }
@@ -11634,7 +11644,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMin").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("roomMax").style.color = "red";
               } else if (this.listingBuyer.ChainStatus == null) {
-                var _dialogRef30 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef30 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.FinancialRenting
                   }
@@ -11649,7 +11659,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lCountry").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("chain").style.color = "red";
               } else if (this.listingBuyer.FinancialPosition == null && this.listingBuyer.PropertyFor == "buy") {
-                var _dialogRef31 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef31 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.FinancialPosition
                   }
@@ -11665,7 +11675,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("chain").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("finanacial").style.color = "red";
               } else if (this.listingBuyer.MinAmount == null) {
-                var _dialogRef32 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef32 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MinAmount
                   }
@@ -11685,7 +11695,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("roomMax").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MinAmount").style.color = "red";
               } else if (this.listingBuyer.MaxAmount == null) {
-                var _dialogRef33 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef33 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MaxAmount
                   }
@@ -11708,7 +11718,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MaxAmount").style.color = "red";
               } else if (Min > Max) {
-                var _dialogRef34 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef34 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.Min
                   }
@@ -11730,7 +11740,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MaxAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MinAmount").style.color = "red";
               } else if (Max < Min) {
-                var _dialogRef35 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef35 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.Max
                   }
@@ -11752,7 +11762,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("MaxAmount").style.color = "red";
               } else if (this.listingBuyer.Validity == null) {
-                var _dialogRef36 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef36 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.Validity
                   }
@@ -11776,7 +11786,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("MinAmount").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("val").style.color = "red";
               } else if (this.listingBuyer.Minbathroom > this.listingBuyer.Maxbathroom) {
-                var _dialogRef37 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef37 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MinimumBathroom
                   }
@@ -11800,7 +11810,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("val").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("minBathroom").style.color = "red";
               } else if (this.listingBuyer.Maxbathroom < this.listingBuyer.Minbathroom) {
-                var _dialogRef38 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef38 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MaximumBathroom
                   }
@@ -11825,7 +11835,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("minBathroom").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("maxBathroom").style.color = "red";
               } else if (this.listingBuyer.Minreception > this.listingBuyer.Maxreception) {
-                var _dialogRef39 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef39 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MinimumReception
                   }
@@ -11851,7 +11861,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("maxBathroom").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("Minreception").style.color = "red";
               } else if (this.listingBuyer.Maxreception < this.listingBuyer.Minreception) {
-                var _dialogRef40 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+                var _dialogRef40 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MaximumReception
                   }
@@ -11901,7 +11911,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               _this114.nextStep();
             });
           }, function (error) {
-            var dialogRef = _this114.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+            var dialogRef = _this114.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
               data: {
                 message: "Enter Valid Postcode"
               }
@@ -12037,7 +12047,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this116.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this116.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var dialogRef = _this116.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid postcode"
                 }
@@ -12132,7 +12142,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this120.Max = element.data().Max;
             _this120.Validity = element.data().Validity;
             _this120.isLoading = false;
-            console.log(_this120.PropertyType);
           });
         }
       }, {
@@ -12183,7 +12192,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             if (this.user.title == null) {
               this.selectedIndex = 0;
               this.previousStep();
-              var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.Title
                 }
@@ -12193,7 +12202,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Name == null || this.user.Name.length == 0) {
               this.previousStep();
 
-              var _dialogRef41 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef41 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.FullName
                 }
@@ -12201,7 +12210,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
               this.NameView.nativeElement.focus();
             } else if (this.user.email == null || this.user.email.length == 0) {
-              var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef42 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
@@ -12211,7 +12220,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.DOB == null) {
               this.previousStep();
 
-              var _dialogRef43 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef43 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.DateofBirth
                 }
@@ -12221,7 +12230,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
               this.previousStep();
 
-              var _dialogRef44 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef44 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.DateofBirthValidate
                 }
@@ -12231,7 +12240,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Phone == null || this.user.Phone.length == 0) {
               this.previousStep();
 
-              var _dialogRef45 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef45 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneEmpty
                 }
@@ -12241,7 +12250,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (Mobile != this.user.Phone) {
               this.previousStep();
 
-              var _dialogRef46 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef46 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneValidation
                 }
@@ -12251,7 +12260,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Phone.length < 10 || this.user.Phone.length > 10) {
               this.previousStep();
 
-              var _dialogRef47 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef47 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneLength
                 }
@@ -12261,7 +12270,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.listingBuyer.Currentpostcode == null || this.listingBuyer.Currentpostcode.length == 0) {
               this.previousStep();
 
-              var _dialogRef48 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef48 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentPostcode
                 }
@@ -12271,7 +12280,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (postcodeLength.length < 5) {
               this.previousStep();
 
-              var _dialogRef49 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef49 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PostcodeLength
                 }
@@ -12281,7 +12290,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.listingBuyer.CurrentAddress == null || this.listingBuyer.CurrentAddress.length == 0) {
               this.previousStep();
 
-              var _dialogRef50 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef50 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentAaddress
                 }
@@ -12291,7 +12300,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.listingBuyer.CurrentTown == null || this.listingBuyer.CurrentTown.length == 0) {
               this.previousStep();
 
-              var _dialogRef51 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef51 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentTown
                 }
@@ -12301,7 +12310,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.listingBuyer.Currentstate == null || this.listingBuyer.Currentstate.length == 0) {
               this.previousStep();
 
-              var _dialogRef52 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef52 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentCounty
                 }
@@ -12311,7 +12320,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.listingBuyer.Currentcountry == null || this.listingBuyer.Currentcountry.length == 0) {
               this.previousStep();
 
-              var _dialogRef53 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_14__["AltertFormDialogComponent"], {
+              var _dialogRef53 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentCountry
                 }
@@ -12333,15 +12342,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       return [{
         type: _auth_service__WEBPACK_IMPORTED_MODULE_2__["AuthService"]
       }, {
-        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_11__["AngularFirestore"]
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_12__["AngularFirestore"]
       }, {
         type: _fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_5__["FormsService"]
       }, {
-        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_11__["AngularFirestore"]
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_12__["AngularFirestore"]
       }, {
         type: _angular_fire_auth__WEBPACK_IMPORTED_MODULE_6__["AngularFireAuth"]
       }, {
-        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_11__["AngularFirestore"]
+        type: _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_12__["AngularFirestore"]
       }, {
         type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialog"]
       }, {
@@ -12353,19 +12362,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         type: _state_service_service__WEBPACK_IMPORTED_MODULE_10__["StateServiceService"]
       }, {
-        type: _http_service__WEBPACK_IMPORTED_MODULE_12__["HttpService"]
+        type: _http_service__WEBPACK_IMPORTED_MODULE_13__["HttpService"]
       }, {
         type: _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormBuilder"]
       }, {
         type: _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormBuilder"]
       }, {
-        type: _strapi_auth_service__WEBPACK_IMPORTED_MODULE_16__["StrapiAuthService"]
+        type: _strapi_auth_service__WEBPACK_IMPORTED_MODULE_18__["StrapiAuthService"]
       }, {
-        type: _angular_common__WEBPACK_IMPORTED_MODULE_17__["Location"]
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_19__["Location"]
       }, {
-        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_18__["HttpClient"]
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_20__["HttpClient"]
       }, {
-        type: _cms_service__WEBPACK_IMPORTED_MODULE_19__["CMSSERVICE"]
+        type: _cms_service__WEBPACK_IMPORTED_MODULE_21__["CMSSERVICE"]
       }, {
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["ElementRef"]
       }];
@@ -12448,10 +12457,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       "./node_modules/raw-loader/dist/cjs.js!./src/app/Home/Property/fillFormBuyer/fillFormBuyer.component.html"))["default"],
       providers: [{
         provide: _angular_material__WEBPACK_IMPORTED_MODULE_8__["DateAdapter"],
-        useClass: _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_13__["AppDateAdapter"]
+        useClass: _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_15__["AppDateAdapter"]
       }, {
         provide: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MAT_DATE_FORMATS"],
-        useValue: _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_13__["APP_DATE_FORMATS"]
+        useValue: _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_15__["APP_DATE_FORMATS"]
       }],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./fillFormBuyer.component.css */
@@ -14218,61 +14227,73 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _http_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var _http_service__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
     /*! ./../../../http.service */
     "./src/app/http.service.ts");
     /* harmony import */
 
 
-    var _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(
+    var rxjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
+    /* harmony import */
+
+
+    var _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
     /*! ./../../../Helper/date.adapter */
     "./src/app/Helper/date.adapter.ts");
     /* harmony import */
 
 
-    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(
+    var _Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
     /*! ../../../Misc/alertFormdialog/alertFormdialog.component */
     "./src/app/Misc/alertFormdialog/alertFormdialog.component.ts");
     /* harmony import */
 
 
-    var _fillFormSeller_service__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(
+    var _fillFormSeller_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
     /*! ./fillFormSeller.service */
     "./src/app/Home/Property/fillFormSeller/fillFormSeller.service.ts");
     /* harmony import */
 
 
-    var _fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(
+    var _fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
     /*! ../fillFormBuyer/fillFormBuyer.service */
     "./src/app/Home/Property/fillFormBuyer/fillFormBuyer.service.ts");
     /* harmony import */
 
 
-    var _strapi_auth_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(
+    var _strapi_auth_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
     /*! ../../../strapi-auth.service */
     "./src/app/strapi-auth.service.ts");
     /* harmony import */
 
 
-    var _angular_common_http__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(
+    var _angular_common_http__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! @angular/common/http */
     "./node_modules/@angular/common/fesm2015/http.js");
     /* harmony import */
 
 
-    var _angular_common__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(
+    var _angular_common__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
     /*! @angular/common */
     "./node_modules/@angular/common/fesm2015/common.js");
     /* harmony import */
 
 
-    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
+    var _angular_fire_storage__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
     /*! @angular/fire/storage */
     "./node_modules/@angular/fire/storage/es2015/index.js");
     /* harmony import */
 
 
-    var _cms_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    var _cms_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(
     /*! ../../../cms.service */
     "./src/app/cms.service.ts");
 
@@ -14297,7 +14318,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this._location = _location;
         this.afStorage = afStorage;
         this.CMSSERVICE = CMSSERVICE;
-        this.addressianAutoCompleteLooking$ = null;
         this.autoCompleteControlLooking = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
         this.addressianAutoCompleteCurrent$ = null;
         this.autoCompleteControlCurrent = new _angular_forms__WEBPACK_IMPORTED_MODULE_7__["FormControl"]();
@@ -14414,81 +14434,88 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             _this133.Features = params.get("features");
             _this133.country = params.get("Country");
           });
-          this.getSignupTerms();
+          this.getSignupTerms(); // The auto population of github method
+
+          this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(''), // delay emits
+          Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
+          Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
+            if (value != null) {
+              _this133.lookup(_this133.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this133.data = data;
+              });
+
+              return _this133.lookup(_this133.listingSeller.Lookingpostcode);
+            } else {
+              return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
+            }
+          }));
+        }
+      }, {
+        key: "_filter",
+        value: function _filter(value) {
+          var _this134 = this;
+
+          var filterValue = value;
+
+          if (filterValue.length != 0) {
+            this.sellerService.search(filterValue).subscribe(function (data) {
+              _this134.options = data;
+            }); // return  this.options.filter(option => option.toLowerCase().indexOf(filterValue) === 0);
+          }
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this134 = this;
+          var _this135 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this134.topLine = element.data().topLine;
-              _this134.secondLine = element.data().SecondLine;
+              _this135.topLine = element.data().topLine;
+              _this135.secondLine = element.data().SecondLine;
             });
           });
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this135 = this;
+          var _this136 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this135.uid) {
-                _this135.user.Name = element.data().Name;
-                _this135.user.Email = element.data().email;
+              if (element.data().uid == _this136.uid) {
+                _this136.user.Name = element.data().Name;
+                _this136.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this135.user.DOB = element.data().DOB.toDate();
+                  _this136.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this135.user.Phone = element.data().Phone;
-                _this135.user.title = "Mr";
-                _this135.user.Currentpostcode = element.data().Currentpostcode;
-                _this135.user.CurrentAddress = element.data().Currentaddress;
-                _this135.user.CurrentTown = element.data().CurrentTowncity;
-                _this135.user.Currentstate = element.data().Currentstate;
-                _this135.user.CurrentCountry = element.data().CurrentCountry;
-              } // this.addressianAutoCompleteCurrent$ = this.autoCompleteControlCurrent.valueChanges.pipe(
-              //   startWith(""),
-              //   // delay emits
-              //   debounceTime(1000),
-              //   // use switch map so as to cancel previous subscribed events, before creating new once
-              //   switchMap((value) => {
-              //     if (value !== "") {
-              //       console.log(this.listingSeller.Currentpostcode)
-              //       this.lookup(this.user.Currentpostcode).subscribe((data) => {
-              //         this.data = data;
-              //         console.log( this.data)
-              //       });
-              //       return this.lookup(this.user.Currentpostcode);
-              //     } else {
-              //       return of(null);
-              //     }
-              //   })
-              // );
-              // The auto population of github method
-              // this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(
-              //   startWith(""),
-              //   // delay emits
-              //   debounceTime(1000),
-              //   // use switch map so as to cancel previous subscribed events, before creating new once
-              //   switchMap((value) => {
-              //     if (value !== "") {
-              //       this.lookup(this.listingSeller.Lookingpostcode).subscribe((data) => {
-              //         this.data = data;
-              //         console.log( this.data)
-              //       });
-              //       return this.lookup(this.listingSeller.Lookingpostcode);
-              //     } else {
-              //       return of(null);
-              //     }
-              //   })
-              // );
+                _this136.user.Phone = element.data().Phone;
+                _this136.user.title = "Mr";
+                _this136.user.Currentpostcode = element.data().Currentpostcode;
+                _this136.user.CurrentAddress = element.data().Currentaddress;
+                _this136.user.CurrentTown = element.data().CurrentTowncity;
+                _this136.user.Currentstate = element.data().Currentstate;
+                _this136.user.CurrentCountry = element.data().CurrentCountry;
+              }
 
+              _this136.addressianAutoCompleteCurrent$ = _this136.autoCompleteControlCurrent.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
+              Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
+              Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
+                if (value !== "") {
+                  console.log(_this136.listingSeller.Currentpostcode);
+
+                  _this136.lookup(_this136.user.Currentpostcode).subscribe(function (data) {
+                    _this136.data = data;
+                  });
+
+                  return _this136.lookup(_this136.user.Currentpostcode);
+                } else {
+                  return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
+                }
+              }));
             });
           });
           this.isLoggedIn = true;
@@ -14528,7 +14555,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           if (presentIndex == 0) {
             if (this.user.title == null) {
-              var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.Title
                 }
@@ -14536,7 +14563,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.titleView.focus();
               document.getElementById("title").style.color = "red";
             } else if (this.user.Name == null || this.user.Name.length == 0) {
-              var _dialogRef54 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef54 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.FullName
                 }
@@ -14546,7 +14573,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("title").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("Name").style.color = "red";
             } else if (this.user.email == null || this.user.email.length == 0) {
-              var _dialogRef55 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef55 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
@@ -14557,7 +14584,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Name").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("email").style.color = "red";
             } else if (this.user.DOB == null) {
-              var _dialogRef56 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef56 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.DateofBirth
                 }
@@ -14569,7 +14596,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("dob").style.color = "red";
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
-              var _dialogRef57 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef57 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.DateofBirthValidate
                 }
@@ -14581,7 +14608,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("email").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("dob").style.color = "red";
             } else if (this.user.Phone == null) {
-              var _dialogRef58 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef58 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneEmpty
                 }
@@ -14594,7 +14621,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("tele").style.color = "red";
             } else if (Mobile != this.user.Phone) {
-              var _dialogRef59 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef59 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneValidation
                 }
@@ -14607,7 +14634,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("dob").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("tele").style.color = "red";
             } else if (this.user.Phone.length < 10 || this.user.Phone.length > 10) {
-              var _dialogRef60 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef60 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneLength
                 }
@@ -14622,7 +14649,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Currentpostcode == null || this.user.Currentpostcode.length == 0) {
               this.nameField.nativeElement.focus();
 
-              var _dialogRef61 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef61 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentPostcode
                 }
@@ -14637,7 +14664,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (currentposcodelength.length < 5) {
               this.nameField.nativeElement.focus();
 
-              var _dialogRef62 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef62 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PostcodeLength
                 }
@@ -14652,7 +14679,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.CurrentAddress == null || this.user.CurrentAddress.length == 0) {
               this.currentAddressView.nativeElement.focus();
 
-              var _dialogRef63 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef63 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentAaddress
                 }
@@ -14668,7 +14695,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.CurrentTown == null || this.user.CurrentTown.length == 0) {
               this.currenttownView.nativeElement.focus();
 
-              var _dialogRef64 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef64 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentTown
                 }
@@ -14685,7 +14712,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Currentstate == null || this.user.Currentstate.length == 0) {
               this.currentstateView.nativeElement.focus();
 
-              var _dialogRef65 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef65 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentCounty
                 }
@@ -14701,7 +14728,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               document.getElementById("Ctown").style.color = "var(--DARK-BLUE-COLOR)";
               document.getElementById("cState").style.color = "red";
             } else if (this.user.CurrentCountry == null || this.user.CurrentCountry.length == 0) {
-              var _dialogRef66 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef66 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentCountry
                 }
@@ -14727,7 +14754,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               if (this.maxamounts == false) {
                 this.propertyForView.nativeElement.focus();
 
-                var _dialogRef67 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef67 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.Buy
                   }
@@ -14737,7 +14764,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Lookingpostcode == null || this.listingSeller.Lookingpostcode.length == 0) {
                 this.LookingpostcodeView.nativeElement.focus();
 
-                var _dialogRef68 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef68 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LPostcode
                   }
@@ -14748,7 +14775,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (lookinpostcodelength.length < 5) {
                 this.LookingpostcodeView.nativeElement.focus();
 
-                var _dialogRef69 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef69 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LPostcodeLength
                   }
@@ -14759,7 +14786,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.LookingAddress == null || this.listingSeller.LookingAddress.length == 0) {
                 this.LookingAddressView.nativeElement.focus();
 
-                var _dialogRef70 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef70 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LAddress
                   }
@@ -14771,7 +14798,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.LookingTown == null || this.listingSeller.LookingTown.length == 0) {
                 this.LookingTownView.nativeElement.focus();
 
-                var _dialogRef71 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef71 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LTown
                   }
@@ -14784,7 +14811,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Lookingstate == null || this.listingSeller.Lookingstate.length == 0) {
                 this.LookingStateView.nativeElement.focus();
 
-                var _dialogRef72 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef72 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LCounty
                   }
@@ -14798,7 +14825,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               } else if (this.listingSeller.Country == null || this.listingSeller.Country.length == 0) {
                 this.countryView.nativeElement.focus();
 
-                var _dialogRef73 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef73 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.LCountry
                   }
@@ -14811,7 +14838,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("Lookstate").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("lCountry").style.color = "red";
               } else if (this.listingSeller.PropertyType == null) {
-                var _dialogRef74 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef74 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.PropertyType
                   }
@@ -14826,7 +14853,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("lCountry").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("protype").style.color = "red";
               } else if (this.listingSeller.Maxrooms == null) {
-                var _dialogRef75 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef75 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.Roomsmax
                   }
@@ -14842,7 +14869,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("protype").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("bedroom").style.color = "red";
               } else if (this.listingSeller.MaxAmount == null) {
-                var _dialogRef76 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef76 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.MaxAmount
                   }
@@ -14859,7 +14886,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 document.getElementById("bedroom").style.color = "var(--DARK-BLUE-COLOR)";
                 document.getElementById("maxamount").style.color = "red";
               } else if (this.listingSeller.ownership == null && this.listingSeller.PropertyFor == "buy") {
-                var _dialogRef77 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                var _dialogRef77 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                   data: {
                     message: this.ownership
                   }
@@ -14885,11 +14912,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getPost",
         value: function getPost(value) {
-          console.log(value);
           this.listingSeller.LookingTown = value.citytown;
           this.listingSeller.Lookingstate = value.county;
           this.listingSeller.Lookingpostcode = value.postcode;
           this.listingSeller.LookingAddress = value.address;
+          this.listingSeller.Country = value.country;
+        }
+      }, {
+        key: "getPosts",
+        value: function getPosts(value) {
+          this.user.CurrentAddress = value.address;
+          this.user.CurrentTown = value.citytown;
+          this.user.Currentstate = value.county;
+          this.user.Currentpostcode = value.postcode;
         }
       }, {
         key: "getSame",
@@ -14913,7 +14948,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "openAlertDialog",
         value: function openAlertDialog() {
-          var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+          var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
             data: {
               message: "HelloWorld",
               buttonText: {
@@ -14925,11 +14960,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this136 = this;
+          var _this137 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this136.isLoading = false;
+            _this137.isLoading = false;
             console.log(data);
           });
         } //Login Form
@@ -14937,11 +14972,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this137 = this;
+          var _this138 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this137.isLoading = false;
+            _this138.isLoading = false;
           });
         } //SignIn Google
 
@@ -15033,50 +15068,50 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this138 = this;
+          var _this139 = this;
 
           this.sellerPicture = JSON.parse(localStorage.getItem('uploadedImage'));
           this.isLoading = true;
           this.register = false;
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this138.postcodeCoordinates = data;
+            _this139.postcodeCoordinates = data;
 
-            if (_this138.postcodeCoordinates.result.longitude == null && _this138.postcodeCoordinates.result.latitude == null) {
+            if (_this139.postcodeCoordinates.result.longitude == null && _this139.postcodeCoordinates.result.latitude == null) {
               //document.getElementById("lookpost").style.color = "red"
               console.log("hello");
 
-              var dialogRef = _this138.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var dialogRef = _this139.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter valid Postcode"
                 }
               });
 
-              _this138.isLoading = false;
-              _this138.register = false;
+              _this139.isLoading = false;
+              _this139.register = false;
             } else {
-              if (_this138.listingSeller.ownership == undefined) {
-                _this138.listingSeller.ownership = "any";
+              if (_this139.listingSeller.ownership == undefined) {
+                _this139.listingSeller.ownership = "any";
               }
 
-              _this138.listingSeller.longitude = _this138.postcodeCoordinates.result.longitude, _this138.listingSeller.latitude = _this138.postcodeCoordinates.result.latitude, _this138.listingSeller.username = _this138.user.Name, _this138.listingSeller.usertitle = _this138.user.title;
-              _this138.listingSeller.username = _this138.user.Name;
-              _this138.listingSeller.Email = _this138.user.email;
-              _this138.listingSeller.phonenumber = _this138.user.Phone;
-              _this138.listingSeller.DOB = _this138.user.DOB;
-              _this138.listingSeller.UserId = _this138.uid;
-              _this138.listingSeller.Currentpostcode = _this138.user.Currentpostcode.toUpperCase();
-              _this138.listingSeller.CurrentAddress = _this138.user.CurrentAddress;
-              _this138.listingSeller.CurrentTown = _this138.user.CurrentTown;
-              _this138.listingSeller.Currentstate = _this138.user.Currentstate;
-              _this138.listingSeller.Images = _this138.sellerImages;
-              _this138.newUser = true;
-              _this138.listingSeller.Lookingpostcode = _this138.listingSeller.Lookingpostcode.toUpperCase();
-              _this138["return"] = _this138.SellerformService.createCustomer(_this138.userData.uid, _this138.listingSeller).then(function (data) {
+              _this139.listingSeller.longitude = _this139.postcodeCoordinates.result.longitude, _this139.listingSeller.latitude = _this139.postcodeCoordinates.result.latitude, _this139.listingSeller.username = _this139.user.Name, _this139.listingSeller.usertitle = _this139.user.title;
+              _this139.listingSeller.username = _this139.user.Name;
+              _this139.listingSeller.Email = _this139.user.email;
+              _this139.listingSeller.phonenumber = _this139.user.Phone;
+              _this139.listingSeller.DOB = _this139.user.DOB;
+              _this139.listingSeller.UserId = _this139.uid;
+              _this139.listingSeller.Currentpostcode = _this139.user.Currentpostcode.toUpperCase();
+              _this139.listingSeller.CurrentAddress = _this139.user.CurrentAddress;
+              _this139.listingSeller.CurrentTown = _this139.user.CurrentTown;
+              _this139.listingSeller.Currentstate = _this139.user.Currentstate;
+              _this139.listingSeller.Images = _this139.sellerImages;
+              _this139.newUser = true;
+              _this139.listingSeller.Lookingpostcode = _this139.listingSeller.Lookingpostcode.toUpperCase();
+              _this139["return"] = _this139.SellerformService.createCustomer(_this139.userData.uid, _this139.listingSeller).then(function (data) {
                 if (data == true) {
-                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this138.listingSeller));
-                  _this138.isLoading = false;
+                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this139.listingSeller));
+                  _this139.isLoading = false;
 
-                  _this138.router.navigate(["/sellerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MaxAmount/latitude/longitude/" + _this138.newUser + "/PropertyFor/Lookingstate/Maxrooms/PropertyCondition/LookingAddress/ownership/features/UserId/Maxbathrooms/Maxreception/ownership/Maxrooms/" + _this138.uid]);
+                  _this139.router.navigate(["/sellerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MaxAmount/latitude/longitude/" + _this139.newUser + "/PropertyFor/Lookingstate/Maxrooms/PropertyCondition/LookingAddress/ownership/features/UserId/Maxbathrooms/Maxreception/ownership/Maxrooms/" + _this139.uid]);
                 }
               });
             }
@@ -15085,15 +15120,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this139 = this;
+          var _this140 = this;
 
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this139.register = true;
+            _this140.register = true;
           }, function (error) {
             if (error.status) {
               document.getElementById("lookpost").style.color = "red";
 
-              var dialogRef = _this139.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var dialogRef = _this140.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Valid Postcode"
                 }
@@ -15120,7 +15155,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "importImages",
         value: function importImages(event) {
-          var _this140 = this;
+          var _this141 = this;
 
           this.isLoading = true;
           this.uploads = [];
@@ -15128,7 +15163,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var totalImages = filelist.length + this.sellerImages.length;
 
           if (filelist.length > 20 || totalImages > 20) {
-            var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+            var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
               data: {
                 message: "Upload Maximum  20 Images"
               }
@@ -15142,7 +15177,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 var file = _step2.value;
 
                 if (file.size > 2000000) {
-                  var _dialogRef78 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                  var _dialogRef78 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                     data: {
                       message: "Images Size must be 2MB"
                     }
@@ -15164,7 +15199,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   this.uploads.push(uploadTrack);
 
                   if (this.uploads > 8) {
-                    var _dialogRef79 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+                    var _dialogRef79 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                       data: {
                         message: "Upload Max 8 Images"
                       }
@@ -15177,9 +15212,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       return f.ref.getDownloadURL().then(function (url) {
                         // this.uploadImage.push(url)
                         // console.log(this.sellerImages.length)
-                        console.log(_this140.sellerImages);
+                        console.log(_this141.sellerImages);
 
-                        _this140.sellerImages.push(url); // return this.afs.collection('files').add({
+                        _this141.sellerImages.push(url); // return this.afs.collection('files').add({
                         //   name: f.metadata.name,
                         // });
 
@@ -15200,46 +15235,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this141 = this;
+          var _this142 = this;
 
           this.CMSSERVICE.getOwnerlError(this.PersonalDetail).then(function (element) {
-            _this141.Title = element.data().Title;
-            _this141.FullName = element.data().FullName;
-            _this141.DateofBirth = element.data().DateofBirth;
-            _this141.DateofBirthValidate = element.data().DateofBirthValidate;
-            _this141.PhoneEmpty = element.data().PhoneEmpty;
-            _this141.PhoneValidation = element.data().PhoneValidation;
-            _this141.PhoneLength = element.data().PhoneLength;
-            _this141.CurrentPostcode = element.data().CurrentPostcode;
-            _this141.PostcodeLength = element.data().PostcodeLength;
-            _this141.CurrentAaddress = element.data().CurrentAaddress;
-            _this141.CurrentTown = element.data().CurrentTown;
-            _this141.CurrentCounty = element.data().CurrentCounty;
-            _this141.CurrentCountry = element.data().CurrentCountry;
-            _this141.currCountry = element.data().CurrentCountry;
-            _this141.isLoading = false;
+            _this142.Title = element.data().Title;
+            _this142.FullName = element.data().FullName;
+            _this142.DateofBirth = element.data().DateofBirth;
+            _this142.DateofBirthValidate = element.data().DateofBirthValidate;
+            _this142.PhoneEmpty = element.data().PhoneEmpty;
+            _this142.PhoneValidation = element.data().PhoneValidation;
+            _this142.PhoneLength = element.data().PhoneLength;
+            _this142.CurrentPostcode = element.data().CurrentPostcode;
+            _this142.PostcodeLength = element.data().PostcodeLength;
+            _this142.CurrentAaddress = element.data().CurrentAaddress;
+            _this142.CurrentTown = element.data().CurrentTown;
+            _this142.CurrentCounty = element.data().CurrentCounty;
+            _this142.CurrentCountry = element.data().CurrentCountry;
+            _this142.currCountry = element.data().CurrentCountry;
+            _this142.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPropertyDetailForm",
         value: function getSeekerPropertyDetailForm() {
-          var _this142 = this;
+          var _this143 = this;
 
           this.CMSSERVICE.getOwnerlError(this.PropertyDetail).then(function (element) {
-            _this142.Buy = element.data().Buy;
-            _this142.LPostcode = element.data().LPostcode;
-            _this142.LPostcodeLength = element.data().LPostcodeLength;
-            _this142.LAddress = element.data().LAddress;
-            _this142.LTown = element.data().LTown;
-            _this142.LCounty = element.data().LCounty;
-            _this142.LCountry = element.data().LCountry;
-            _this142.PropertyType = element.data().PropertyType;
-            _this142.Roomsmax = element.data().Roomsmax;
-            _this142.MaxAmount = element.data().MaxAmount;
-            _this142.ownership = element.data().ownership;
-            _this142.propType = element.data().PropertyType;
-            _this142.dPrice = element.data().MaxAmount;
-            _this142.isLoading = false;
+            _this143.Buy = element.data().Buy;
+            _this143.LPostcode = element.data().LPostcode;
+            _this143.LPostcodeLength = element.data().LPostcodeLength;
+            _this143.LAddress = element.data().LAddress;
+            _this143.LTown = element.data().LTown;
+            _this143.LCounty = element.data().LCounty;
+            _this143.LCountry = element.data().LCountry;
+            _this143.PropertyType = element.data().PropertyType;
+            _this143.Roomsmax = element.data().Roomsmax;
+            _this143.MaxAmount = element.data().MaxAmount;
+            _this143.ownership = element.data().ownership;
+            _this143.propType = element.data().PropertyType;
+            _this143.dPrice = element.data().MaxAmount;
+            _this143.isLoading = false;
           });
         }
       }, {
@@ -15269,7 +15304,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.previousStep();
 
             if (this.user.title == null) {
-              var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var dialogRef = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.Title
                 }
@@ -15278,7 +15313,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Name == null || this.user.Name.length == 0) {
               this.previousStep();
 
-              var _dialogRef80 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef80 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.FullName
                 }
@@ -15288,7 +15323,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.email == null || this.user.email.length == 0) {
               this.previousStep();
 
-              var _dialogRef81 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef81 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid email"
                 }
@@ -15298,7 +15333,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.DOB == null) {
               this.previousStep();
 
-              var _dialogRef82 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef82 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.DateofBirth
                 }
@@ -15308,7 +15343,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (Math.floor(Math.abs(Date.now() - new Date(this.user.DOB).getTime()) / (1000 * 3600 * 24) / 365.25) < 18) {
               this.previousStep();
 
-              var _dialogRef83 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef83 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.DateofBirthValidate
                 }
@@ -15318,7 +15353,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Phone == null) {
               this.previousStep();
 
-              var _dialogRef84 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef84 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneEmpty
                 }
@@ -15328,7 +15363,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (Mobile != this.user.Phone) {
               this.previousStep();
 
-              var _dialogRef85 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef85 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneValidation
                 }
@@ -15338,7 +15373,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.Phone.length < 10 || this.user.Phone.length > 10) {
               this.previousStep();
 
-              var _dialogRef86 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef86 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PhoneLength
                 }
@@ -15349,7 +15384,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.previousStep();
               this.nameField.nativeElement.focus();
 
-              var _dialogRef87 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef87 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentPostcode
                 }
@@ -15358,7 +15393,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.previousStep();
               this.nameField.nativeElement.focus();
 
-              var _dialogRef88 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef88 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.PostcodeLength
                 }
@@ -15367,7 +15402,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.previousStep();
               this.currentAddressView.nativeElement.focus();
 
-              var _dialogRef89 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef89 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentAaddress
                 }
@@ -15376,7 +15411,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.previousStep();
               this.currenttownView.nativeElement.focus();
 
-              var _dialogRef90 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef90 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentTown
                 }
@@ -15385,7 +15420,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               this.previousStep();
               this.currentstateView.nativeElement.focus();
 
-              var _dialogRef91 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef91 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentCounty
                 }
@@ -15393,7 +15428,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             } else if (this.user.CurrentCountry == null || this.user.CurrentCountry.length == 0) {
               this.previousStep();
 
-              var _dialogRef92 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_13__["AltertFormDialogComponent"], {
+              var _dialogRef92 = this.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: this.CurrentCountry
                 }
@@ -15430,27 +15465,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         type: _state_service_service__WEBPACK_IMPORTED_MODULE_9__["StateServiceService"]
       }, {
-        type: _http_service__WEBPACK_IMPORTED_MODULE_11__["HttpService"]
+        type: _http_service__WEBPACK_IMPORTED_MODULE_12__["HttpService"]
       }, {
         type: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatDialog"]
       }, {
-        type: _fillFormSeller_service__WEBPACK_IMPORTED_MODULE_14__["SellerformService"]
+        type: _fillFormSeller_service__WEBPACK_IMPORTED_MODULE_16__["SellerformService"]
       }, {
-        type: _fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_15__["FormsService"]
+        type: _fillFormBuyer_fillFormBuyer_service__WEBPACK_IMPORTED_MODULE_17__["FormsService"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_10__["ActivatedRoute"]
       }, {
         type: _angular_router__WEBPACK_IMPORTED_MODULE_10__["Router"]
       }, {
-        type: _strapi_auth_service__WEBPACK_IMPORTED_MODULE_16__["StrapiAuthService"]
+        type: _strapi_auth_service__WEBPACK_IMPORTED_MODULE_18__["StrapiAuthService"]
       }, {
-        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_17__["HttpClient"]
+        type: _angular_common_http__WEBPACK_IMPORTED_MODULE_19__["HttpClient"]
       }, {
-        type: _angular_common__WEBPACK_IMPORTED_MODULE_18__["Location"]
+        type: _angular_common__WEBPACK_IMPORTED_MODULE_20__["Location"]
       }, {
-        type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_19__["AngularFireStorage"]
+        type: _angular_fire_storage__WEBPACK_IMPORTED_MODULE_21__["AngularFireStorage"]
       }, {
-        type: _cms_service__WEBPACK_IMPORTED_MODULE_20__["CMSSERVICE"]
+        type: _cms_service__WEBPACK_IMPORTED_MODULE_22__["CMSSERVICE"]
       }];
     };
 
@@ -15521,10 +15556,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       "./node_modules/raw-loader/dist/cjs.js!./src/app/Home/Property/fillFormSeller/fillFormSeller.component.html"))["default"],
       providers: [{
         provide: _angular_material__WEBPACK_IMPORTED_MODULE_8__["DateAdapter"],
-        useClass: _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_12__["AppDateAdapter"]
+        useClass: _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_14__["AppDateAdapter"]
       }, {
         provide: _angular_material__WEBPACK_IMPORTED_MODULE_8__["MAT_DATE_FORMATS"],
-        useValue: _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_12__["APP_DATE_FORMATS"]
+        useValue: _Helper_date_adapter__WEBPACK_IMPORTED_MODULE_14__["APP_DATE_FORMATS"]
       }],
       styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(
       /*! ./fillFormSeller.component.css */
@@ -15836,25 +15871,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this143 = this;
+          var _this144 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this143.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this143.userData));
+              _this144.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this144.userData));
 
-              _this143.LoggedIn();
+              _this144.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this143.LoggedOut();
+              _this144.LoggedOut();
             }
           });
           this.isAgentSelected = true;
           this.CMSSERVICE.getSignupImages().then(function (data) {
-            _this143.image = data.data().Images;
-            _this143.bodyText = data.data().TextArea;
-            _this143.isAgentSelected = false;
+            _this144.image = data.data().Images;
+            _this144.bodyText = data.data().TextArea;
+            _this144.isAgentSelected = false;
           });
         }
       }, {
@@ -16253,7 +16288,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentsignupformComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this144 = this;
+          var _this145 = this;
 
           this.getAgentForm();
           this.Users = JSON.parse(localStorage.getItem("user"));
@@ -16271,8 +16306,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this144.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this144.userData));
+              _this145.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this145.userData));
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
@@ -16637,7 +16672,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee36() {
-            var _this145 = this;
+            var _this146 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee36$(_context36) {
@@ -16677,7 +16712,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 12:
                     _context36.sent.ref.getDownloadURL().then(function (url) {
-                      _this145.downloadableURL = url;
+                      _this146.downloadableURL = url;
                     });
 
                   case 13:
@@ -16701,7 +16736,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "submitForm",
         value: function submitForm(displayName, email, pass, User) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee37() {
-            var _this146 = this;
+            var _this147 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee37$(_context37) {
@@ -16727,10 +16762,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     this.agentSignup.uid = result.user.uid;
                     this.agentSignup.Status = false;
                     this["return"] = this.AgentSignupService.createAgentCustomer(this.agentSignup.uid, this.agentSignup).then(function (data) {
-                      _this146.isLoading = false;
+                      _this147.isLoading = false;
 
                       if (data == true) {
-                        var dialogRef = _this146.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
+                        var dialogRef = _this147.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
                           data: {
                             message: "Thanks! Your details has been submitted",
                             buttonText: {
@@ -16762,27 +16797,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee38() {
-            var _this147 = this;
+            var _this148 = this;
 
             return regeneratorRuntime.wrap(function _callee38$(_context38) {
               while (1) {
                 switch (_context38.prev = _context38.next) {
                   case 0:
                     this.HttpService.getLat(this.agentSignup.postcode.replace(/\s/g, "")).subscribe(function (data) {
-                      _this147.DataMessage = data;
+                      _this148.DataMessage = data;
 
-                      _this147.submitForm(displayName, email, pass, User);
+                      _this148.submitForm(displayName, email, pass, User);
                     }, function (error) {
-                      _this147.errorMesage = error.status;
+                      _this148.errorMesage = error.status;
 
-                      if (_this147.errorMesage == 404) {
-                        var dialogRef = _this147.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
+                      if (_this148.errorMesage == 404) {
+                        var dialogRef = _this148.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
                           data: {
                             message: "Enter Valid Postcode"
                           }
                         });
 
-                        _this147.PostcodeView.nativeElement.focus();
+                        _this148.PostcodeView.nativeElement.focus();
 
                         document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
                         document.getElementById("CompanyName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -16803,32 +16838,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this148 = this;
+          var _this149 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this148.FullName = element.data().FullName;
-            _this148.CompanyName = element.data().CompanyName;
-            _this148.Postcode = element.data().Postcode;
-            _this148.Address = element.data().Address;
-            _this148.JobTitle = element.data().JobTitle;
-            _this148.EmailAddress = element.data().EmailAddress;
-            _this148.emailvalidation = element.data().emailvalidation;
-            _this148.Password = element.data().Password;
-            _this148.officephone = element.data().officephone;
-            _this148.officephonevalidation = element.data().officephonevalidation;
-            _this148.officephonelength = element.data().officephonelength;
-            _this148.mobile = element.data().mobile;
-            _this148.mobilevalidity = element.data().mobilevalidity;
-            _this148.mobilelength = element.data().mobilelength;
-            _this148.solefeess = element.data().solefees;
-            _this148.solefeesmore = element.data().solefeesmore;
-            _this148.solefeesless = element.data().solefeesless;
-            _this148.multiplefeess = element.data().multiplefees;
-            _this148.multiplefeesmore = element.data().multiplefeesmore;
-            _this148.multiplefeesless = element.data().multiplefeesless;
-            _this148.Image = element.data().Image;
-            _this148.Imagesize = element.data().Imagesize;
-            _this148.isLoading = false;
+            _this149.FullName = element.data().FullName;
+            _this149.CompanyName = element.data().CompanyName;
+            _this149.Postcode = element.data().Postcode;
+            _this149.Address = element.data().Address;
+            _this149.JobTitle = element.data().JobTitle;
+            _this149.EmailAddress = element.data().EmailAddress;
+            _this149.emailvalidation = element.data().emailvalidation;
+            _this149.Password = element.data().Password;
+            _this149.officephone = element.data().officephone;
+            _this149.officephonevalidation = element.data().officephonevalidation;
+            _this149.officephonelength = element.data().officephonelength;
+            _this149.mobile = element.data().mobile;
+            _this149.mobilevalidity = element.data().mobilevalidity;
+            _this149.mobilelength = element.data().mobilelength;
+            _this149.solefeess = element.data().solefees;
+            _this149.solefeesmore = element.data().solefeesmore;
+            _this149.solefeesless = element.data().solefeesless;
+            _this149.multiplefeess = element.data().multiplefees;
+            _this149.multiplefeesmore = element.data().multiplefeesmore;
+            _this149.multiplefeesless = element.data().multiplefeesless;
+            _this149.Image = element.data().Image;
+            _this149.Imagesize = element.data().Imagesize;
+            _this149.isLoading = false;
           });
         }
       }, {
@@ -17185,7 +17220,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ClickhomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this149 = this;
+          var _this150 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -17201,22 +17236,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this149.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this149.userData));
-              _this149.isLoggedIn = true;
+              _this150.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this150.userData));
+              _this150.isLoggedIn = true;
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this149.LoggedOut();
+              _this150.LoggedOut();
 
-              _this149.isLoggedIn = false;
+              _this150.isLoggedIn = false;
             }
           });
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this149.topLine = element.data().topLine;
-              _this149.secondLine = element.data().SecondLine;
+              _this150.topLine = element.data().topLine;
+              _this150.secondLine = element.data().SecondLine;
             });
           });
           this.HomepageImagesText();
@@ -17225,26 +17260,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this150 = this;
+          var _this151 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this150.imageUrl = element.data().BannerImageUrl;
-              _this150.secondImageUrl = element.data().SecondBannerImage;
-              _this150.SecondImageText = element.data().SecondBannerText;
-              _this150.Step1Image = element.data().Step1Image;
-              _this150.Step2Image = element.data().Step2Image;
-              _this150.step3Image = element.data().Step3Image;
-              _this150.Step1TExt = element.data().Step1ImageText;
-              _this150.Step2Text = element.data().Step2ImageText;
-              _this150.step3Text = element.data().Step3ImageText;
+              _this151.imageUrl = element.data().BannerImageUrl;
+              _this151.secondImageUrl = element.data().SecondBannerImage;
+              _this151.SecondImageText = element.data().SecondBannerText;
+              _this151.Step1Image = element.data().Step1Image;
+              _this151.Step2Image = element.data().Step2Image;
+              _this151.step3Image = element.data().Step3Image;
+              _this151.Step1TExt = element.data().Step1ImageText;
+              _this151.Step2Text = element.data().Step2ImageText;
+              _this151.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this151 = this;
+          var _this152 = this;
 
           this.HomeService.getBlogs().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["map"])(function (changes) {
             return changes.map(function (c) {
@@ -17253,7 +17288,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (agent) {
-            _this151.homePageBlogs = agent;
+            _this152.homePageBlogs = agent;
           });
         }
       }, {
@@ -17270,12 +17305,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "homeradio",
         value: function homeradio(value) {
-          var _this152 = this;
+          var _this153 = this;
 
           if (this.home == "seeker") {
             if (this.user == null) {
               this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-                _this152.notificationContent = res.data().BuyerSignupNotification;
+                _this153.notificationContent = res.data().BuyerSignupNotification;
               });
               this.home = undefined;
               this.formType = "buyer";
@@ -17288,7 +17323,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           if (this.home == "owner") {
             if (this.user == null) {
               this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-                _this152.notificationContent = res.data().SellerFormSingupNotification;
+                _this153.notificationContent = res.data().SellerFormSingupNotification;
               });
               this.formType = "Seller";
               this.loginTop = true;
@@ -17302,30 +17337,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this153 = this;
+          var _this154 = this;
 
           this.loginTop = false;
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this153.isLoading = false;
+            _this154.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this154 = this;
+          var _this155 = this;
 
           this.loginTop = false;
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this154.isLoading = false;
+            _this155.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this155 = this;
+          var _this156 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -17336,22 +17371,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this155.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                  var dialogRef = _this156.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this155.UserSignIn
+                      message: _this156.UserSignIn
                     }
                   });
 
-                  _this155.isLoading = false;
+                  _this156.isLoading = false;
                 } else {
-                  _this155.authService.SignIn(email, pass).then(function (data) {
-                    _this155.isLoading = false;
+                  _this156.authService.SignIn(email, pass).then(function (data) {
+                    _this156.isLoading = false;
 
-                    _this155.getUserKnow();
+                    _this156.getUserKnow();
                   });
                 }
               } else {
-                var _dialogRef112 = _this155.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var _dialogRef112 = _this156.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -17434,10 +17469,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this156 = this;
+          var _this157 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this156.notificationContent = res.data().SingupFromMenu; //.BuyerSignupNotification
+            _this157.notificationContent = res.data().SingupFromMenu; //.BuyerSignupNotification
           });
         }
       }, {
@@ -17500,12 +17535,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this157 = this;
+          var _this158 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this157.AgentSignIn = element.data().AgentSignIn;
-            _this157.UserSignIn = element.data().UserSignIn;
-            _this157.isLoading = false;
+            _this158.AgentSignIn = element.data().AgentSignIn;
+            _this158.UserSignIn = element.data().UserSignIn;
+            _this158.isLoading = false;
           });
         }
       }, {
@@ -17734,19 +17769,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onloadContent",
         value: function onloadContent() {
-          var _this158 = this;
+          var _this159 = this;
 
           this.SellermatchesService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this158.imageUrl = element.data().HomeMatchesPage;
-              _this158.OtherResult = element.data().OtherResult;
+              _this159.imageUrl = element.data().HomeMatchesPage;
+              _this159.OtherResult = element.data().OtherResult;
             });
           });
         }
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id) {
-          var _this159 = this;
+          var _this160 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -17761,111 +17796,111 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this159.buyer = true;
-              _this159.seller = false;
-              _this159.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this159.Look_PropertyFor = PropertyFor;
-              _this159.Look_propertytype = PropertyType;
-              _this159.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this159.Look_minamount);
-              _this159.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this159.Look_maxamount);
-              _this159.LookingTown = LookingTown;
-              _this159.Look_latitude = latitude;
-              _this159.Look_longitude = longitude;
-              _this159.Look_Streetname = Streetname;
-              _this159.Look_condition = condition;
-              _this159.Look_chainstatus = ChainStatus;
-              _this159.Look_FinancialPosition = FinancialPosition;
-              _this159.Look_Validity = Validity;
-              _this159.Look_Position = Position;
-              _this159.Look_UserId = UserId;
-              _this159.new_id = new_id; //Price Formula
+              _this160.buyer = true;
+              _this160.seller = false;
+              _this160.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this160.Look_PropertyFor = PropertyFor;
+              _this160.Look_propertytype = PropertyType;
+              _this160.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this160.Look_minamount);
+              _this160.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this160.Look_maxamount);
+              _this160.LookingTown = LookingTown;
+              _this160.Look_latitude = latitude;
+              _this160.Look_longitude = longitude;
+              _this160.Look_Streetname = Streetname;
+              _this160.Look_condition = condition;
+              _this160.Look_chainstatus = ChainStatus;
+              _this160.Look_FinancialPosition = FinancialPosition;
+              _this160.Look_Validity = Validity;
+              _this160.Look_Position = Position;
+              _this160.Look_UserId = UserId;
+              _this160.new_id = new_id; //Price Formula
 
-              _this159.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this159.maxAmount);
-              _this159.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this159.less);
-              _this159.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this159.more); //Remove Postcode Spaces
+              _this160.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this160.maxAmount);
+              _this160.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this160.less);
+              _this160.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this160.more); //Remove Postcode Spaces
 
-              _this159.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this159.listing = _this159.Look_postcodes;
-              _this159.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this159.isLoading = false;
-              _this159.buyer = true;
+              _this160.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this160.listing = _this160.Look_postcodes;
+              _this160.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this160.isLoading = false;
+              _this160.buyer = true;
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && item.data().PropertyType == _this159.Look_propertytype && _this159.uid != item.data().UserId && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && item.data().PropertyType == _this160.Look_propertytype && _this160.uid != item.data().UserId && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this159.matchedProperties.push({
+                _this160.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this159.distanceInKm * 1 / 1.609344
+                  distance: _this160.distanceInKm * 1 / 1.609344
                 });
 
-                _this159.bmatchesstartPage = 0;
-                _this159.bmatchespaginationLimit = 6;
+                _this160.bmatchesstartPage = 0;
+                _this160.bmatchespaginationLimit = 6;
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != item.data().UserId && item.data().PropertyType == _this159.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this159.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != item.data().UserId && item.data().PropertyType == _this160.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this160.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this159.unmatchedProperties.push({
+                _this160.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this159.distanceInKm * 1 / 1.609344
+                  distance: _this160.distanceInKm * 1 / 1.609344
                 });
 
-                _this159.startPage = 0;
-                _this159.paginationLimit = 6;
+                _this160.startPage = 0;
+                _this160.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != item.data().UserId && item.data().PropertyType == _this159.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this159.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this159.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != item.data().UserId && item.data().PropertyType == _this160.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this160.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this160.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this159.unmatchedPriceLogic.push({
+                _this160.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this159.distanceInKm * 1 / 1.609344
+                  distance: _this160.distanceInKm * 1 / 1.609344
                 });
 
-                _this159.startPage = 0;
-                _this159.paginationLimit = 6;
+                _this160.startPage = 0;
+                _this160.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != item.data().UserId && item.data().PropertyType != _this159.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this159.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this159.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != item.data().UserId && item.data().PropertyType != _this160.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this160.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this160.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this159.unmatchedallProperty.push({
+                _this160.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this159.distanceInKm * 1 / 1.609344
+                  distance: _this160.distanceInKm * 1 / 1.609344
                 });
 
-                _this159.startPage = 0;
-                _this159.paginationLimit = 6;
+                _this160.startPage = 0;
+                _this160.paginationLimit = 6;
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this159.Look_postcodes && item.data().PropertyFor == _this159.Look_PropertyFor && _this159.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this159.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this159.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this159.distanceInKm = _this159.getDistanceFromLatLonInKm(_this159.Look_latitude, _this159.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this160.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this160.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this159.lookTown.push({
+                _this160.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this159.distanceInKm * 1 / 1.609344
+                  distance: _this160.distanceInKm * 1 / 1.609344
                 });
 
-                _this159.startPage = 0;
-                _this159.paginationLimit = 6;
+                _this160.startPage = 0;
+                _this160.paginationLimit = 6;
               }
             });
 
-            _this159.unmatchedProperties.sort(_this159.compare);
+            _this160.unmatchedProperties.sort(_this160.compare);
           });
           this.getFavoarte();
           this.getExpressedListingIds();
@@ -17873,7 +17908,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude, new_id) {
-          var _this160 = this;
+          var _this161 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -17905,23 +17940,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this160.maxAmount = _this160.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this160.maxAmount);
-              _this160.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this160.Look_minamount);
-              _this160.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this160.Look_maxamount);
-              _this160.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this160.less);
-              _this160.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this160.more); //Remove Postcode Spaces
+              _this161.maxAmount = _this161.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this161.maxAmount);
+              _this161.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this161.Look_minamount);
+              _this161.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this161.Look_maxamount);
+              _this161.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this161.less);
+              _this161.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this161.more); //Remove Postcode Spaces
 
-              _this160.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this160.listing = _this160.Look_postcode;
-              _this160.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this161.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this161.listing = _this161.Look_postcode;
+              _this161.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this160.Look_postcode && Mean.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != Mean.data().UserId && Mean.data().PropertyType == _this160.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this160.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this161.Look_postcode && Mean.data().PropertyFor == _this161.Look_PropertyFor && _this161.uid != Mean.data().UserId && Mean.data().PropertyType == _this161.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this161.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
@@ -17929,51 +17964,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcode && Mean.data().PropertyType == _this160.Look_PropertyType && _this160.uid != Mean.data().UserId && Mean.data().PropertyFor == _this160.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this160.removespace.substring(0, 5) == _this160.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
-                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this161.Look_postcode && Mean.data().PropertyType == _this161.Look_PropertyType && _this161.uid != Mean.data().UserId && Mean.data().PropertyFor == _this161.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this161.removespace.substring(0, 5) == _this161.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+                _this161.distanceInKm = _this161.getDistanceFromLatLonInKm(_this161.Look_latitude, _this161.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this160.sellerunmatchedProperties.push({
+                _this161.sellerunmatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this160.distanceInKm * 1 / 1.609344
+                  distance: _this161.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcode && Mean.data().PropertyType == _this160.Look_PropertyType && _this160.uid != Mean.data().UserId && Mean.data().PropertyFor == _this160.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this160.removespace.substring(0, 5) != _this160.listing.substring(0, 5) && _this160.removespace.substring(0, 3) == _this160.listing.substring(0, 3)) {
-                _this160.sellerunmatchedPropertiesFirst.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this161.Look_postcode && Mean.data().PropertyType == _this161.Look_PropertyType && _this161.uid != Mean.data().UserId && Mean.data().PropertyFor == _this161.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this161.removespace.substring(0, 5) != _this161.listing.substring(0, 5) && _this161.removespace.substring(0, 3) == _this161.listing.substring(0, 3)) {
+                _this161.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcode && Mean.data().PropertyType != _this160.Look_PropertyType && _this160.uid != Mean.data().UserId && less <= maxAmount && more >= maxAmount && _this160.removespace.substring(0, 5) != _this160.listing.substring(0, 5) && _this160.removespace.substring(0, 3) == _this160.listing.substring(0, 3) && Mean.data().PropertyFor == _this160.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
-                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this161.Look_postcode && Mean.data().PropertyType != _this161.Look_PropertyType && _this161.uid != Mean.data().UserId && less <= maxAmount && more >= maxAmount && _this161.removespace.substring(0, 5) != _this161.listing.substring(0, 5) && _this161.removespace.substring(0, 3) == _this161.listing.substring(0, 3) && Mean.data().PropertyFor == _this161.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
+                _this161.distanceInKm = _this161.getDistanceFromLatLonInKm(_this161.Look_latitude, _this161.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this160.sellerunmatchedPriceLogic.push({
+                _this161.sellerunmatchedPriceLogic.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this160.distanceInKm * 1 / 1.609344
+                  distance: _this161.distanceInKm * 1 / 1.609344
                 });
               } //All other properties - Nationwide
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcode && Mean.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != Mean.data().UserId && _this160.removespace.substring(0, 5) != _this160.listing.substring(0, 5) && _this160.removespace.substring(0, 3) != _this160.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
-                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this161.Look_postcode && Mean.data().PropertyFor == _this161.Look_PropertyFor && _this161.uid != Mean.data().UserId && _this161.removespace.substring(0, 5) != _this161.listing.substring(0, 5) && _this161.removespace.substring(0, 3) != _this161.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
+                _this161.distanceInKm = _this161.getDistanceFromLatLonInKm(_this161.Look_latitude, _this161.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this160.sellerlookTown.push({
+                _this161.sellerlookTown.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this160.distanceInKm * 1 / 1.609344
+                  distance: _this161.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this160.unmatchedProperties.sort(_this160.compare);
+            _this161.unmatchedProperties.sort(_this161.compare);
 
-            _this160.noOfMatches = _this160.sellermatchedProperties.length;
-            _this160.noOfUnmatched = _this160.sellerunmatchedProperties.length;
+            _this161.noOfMatches = _this161.sellermatchedProperties.length;
+            _this161.noOfUnmatched = _this161.sellerunmatchedProperties.length;
           });
           this.startPage = 0;
           this.paginationLimit = 6;
@@ -18240,12 +18275,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this161 = this;
+          var _this162 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this161.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this161.distinctExpressedUid.push(item.data().propertyId);
+              if (_this162.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this162.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -18264,123 +18299,123 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this162 = this;
+          var _this163 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this162.propertyRequirementDetails.push({
+              _this163.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
 
-            _this162.myrequirement_service.getSellerProperties(_this162.uid).then(function (res) {
+            _this163.myrequirement_service.getSellerProperties(_this163.uid).then(function (res) {
               res.forEach(function (element) {
                 // this.docid = element.id
-                _this162.propertyDetails.push({
+                _this163.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
               });
-              _this162.MatchesItem = _this162.propertyRequirementDetails.length + _this162.propertyDetails.length;
+              _this163.MatchesItem = _this163.propertyRequirementDetails.length + _this163.propertyDetails.length;
 
-              if (_this162.MatchesItem < 2) {
-                if (_this162.propertyRequirementDetails.length > _this162.propertyDetails.length) {
-                  _this162.buyer = true;
-                  _this162.seller = false;
-                  _this162.buyerItems = true;
-                  _this162.buyerVal = _this162.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this162.test = _this162.buyerVal;
-                  var Lookingpostcode = _this162.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var MinAmount = _this162.propertyRequirementDetails[0].data.MinAmount;
-                  var MaxAmount = _this162.propertyRequirementDetails[0].data.MaxAmount;
-                  var PropertyFor = _this162.propertyRequirementDetails[0].data.PropertyFor;
-                  var PropertyType = _this162.propertyRequirementDetails[0].data.PropertyType;
-                  var LookingTown = _this162.propertyRequirementDetails[0].data.LookingTown;
-                  var latitude = _this162.propertyRequirementDetails[0].data.latitude;
-                  var longitude = _this162.propertyRequirementDetails[0].data.longitude;
-                  var Streetname = _this162.propertyRequirementDetails[0].data.LookingStreetname;
-                  var condition = _this162.propertyRequirementDetails[0].data.Conditions;
-                  var ChainStatus = _this162.propertyRequirementDetails[0].data.ChainStatus;
-                  var FinancialPosition = _this162.propertyRequirementDetails[0].data.FinancialPosition;
-                  var Validity = _this162.propertyRequirementDetails[0].data.Validity;
-                  var Position = _this162.propertyRequirementDetails[0].data.Position;
-                  var UserId = _this162.propertyRequirementDetails[0].data.UserId;
-                  var new_id = _this162.propertyRequirementDetails[0].id;
+              if (_this163.MatchesItem < 2) {
+                if (_this163.propertyRequirementDetails.length > _this163.propertyDetails.length) {
+                  _this163.buyer = true;
+                  _this163.seller = false;
+                  _this163.buyerItems = true;
+                  _this163.buyerVal = _this163.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this163.test = _this163.buyerVal;
+                  var Lookingpostcode = _this163.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var MinAmount = _this163.propertyRequirementDetails[0].data.MinAmount;
+                  var MaxAmount = _this163.propertyRequirementDetails[0].data.MaxAmount;
+                  var PropertyFor = _this163.propertyRequirementDetails[0].data.PropertyFor;
+                  var PropertyType = _this163.propertyRequirementDetails[0].data.PropertyType;
+                  var LookingTown = _this163.propertyRequirementDetails[0].data.LookingTown;
+                  var latitude = _this163.propertyRequirementDetails[0].data.latitude;
+                  var longitude = _this163.propertyRequirementDetails[0].data.longitude;
+                  var Streetname = _this163.propertyRequirementDetails[0].data.LookingStreetname;
+                  var condition = _this163.propertyRequirementDetails[0].data.Conditions;
+                  var ChainStatus = _this163.propertyRequirementDetails[0].data.ChainStatus;
+                  var FinancialPosition = _this163.propertyRequirementDetails[0].data.FinancialPosition;
+                  var Validity = _this163.propertyRequirementDetails[0].data.Validity;
+                  var Position = _this163.propertyRequirementDetails[0].data.Position;
+                  var UserId = _this163.propertyRequirementDetails[0].data.UserId;
+                  var new_id = _this163.propertyRequirementDetails[0].id;
 
-                  _this162.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
+                  _this163.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
                 } else {
-                  _this162.seller = true;
-                  _this162.buyer = false;
-                  _this162.sellerItem = true;
-                  _this162.sellerVal = _this162.propertyDetails[0].seller.Lookingpostcode;
-                  var _Lookingpostcode = _this162.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor = _this162.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType = _this162.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount = _this162.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown = _this162.propertyDetails[0].seller.LookingTown;
-                  var Lookingstate = _this162.propertyDetails[0].seller.Lookingstate;
-                  var Maxbathrooms = _this162.propertyDetails[0].seller.Maxbathrooms;
-                  var PropertyCondition = _this162.propertyDetails[0].seller.PropertyCondition;
-                  var LookingAddress = _this162.propertyDetails[0].seller.LookingAddress;
-                  var ownership = _this162.propertyDetails[0].seller.ownership;
-                  var features = _this162.propertyDetails[0].seller.features;
-                  var _UserId = _this162.propertyDetails[0].seller.UserId;
-                  var Maxreception = _this162.propertyDetails[0].seller.Maxreception;
-                  var Maxrooms = _this162.propertyDetails[0].seller.Maxrooms;
-                  var _latitude = _this162.propertyDetails[0].seller.latitude;
-                  var _longitude = _this162.propertyDetails[0].seller.longitude;
-                  var _new_id = _this162.propertyDetails[0].sellerId;
+                  _this163.seller = true;
+                  _this163.buyer = false;
+                  _this163.sellerItem = true;
+                  _this163.sellerVal = _this163.propertyDetails[0].seller.Lookingpostcode;
+                  var _Lookingpostcode = _this163.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor = _this163.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType = _this163.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount = _this163.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown = _this163.propertyDetails[0].seller.LookingTown;
+                  var Lookingstate = _this163.propertyDetails[0].seller.Lookingstate;
+                  var Maxbathrooms = _this163.propertyDetails[0].seller.Maxbathrooms;
+                  var PropertyCondition = _this163.propertyDetails[0].seller.PropertyCondition;
+                  var LookingAddress = _this163.propertyDetails[0].seller.LookingAddress;
+                  var ownership = _this163.propertyDetails[0].seller.ownership;
+                  var features = _this163.propertyDetails[0].seller.features;
+                  var _UserId = _this163.propertyDetails[0].seller.UserId;
+                  var Maxreception = _this163.propertyDetails[0].seller.Maxreception;
+                  var Maxrooms = _this163.propertyDetails[0].seller.Maxrooms;
+                  var _latitude = _this163.propertyDetails[0].seller.latitude;
+                  var _longitude = _this163.propertyDetails[0].seller.longitude;
+                  var _new_id = _this163.propertyDetails[0].sellerId;
 
-                  _this162.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
+                  _this163.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
                 }
-              } else if (_this162.MatchesItem > 1) {
-                if (_this162.propertyRequirementDetails.length > _this162.propertyDetails.length) {
-                  _this162.buyer = true;
-                  _this162.buyerVal = _this162.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this162.test = _this162.buyerVal;
-                  var _Lookingpostcode2 = _this162.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var _MinAmount = _this162.propertyRequirementDetails[0].data.MinAmount;
-                  var _MaxAmount2 = _this162.propertyRequirementDetails[0].data.MaxAmount;
-                  var _PropertyFor2 = _this162.propertyRequirementDetails[0].data.PropertyFor;
-                  var _PropertyType2 = _this162.propertyRequirementDetails[0].data.PropertyType;
-                  var _LookingTown2 = _this162.propertyRequirementDetails[0].data.LookingTown;
-                  var _latitude2 = _this162.propertyRequirementDetails[0].data.latitude;
-                  var _longitude2 = _this162.propertyRequirementDetails[0].data.longitude;
-                  var _Streetname = _this162.propertyRequirementDetails[0].data.LookingStreetname;
-                  var _condition = _this162.propertyRequirementDetails[0].data.Conditions;
-                  var _ChainStatus = _this162.propertyRequirementDetails[0].data.ChainStatus;
-                  var _FinancialPosition = _this162.propertyRequirementDetails[0].data.FinancialPosition;
-                  var _Validity = _this162.propertyRequirementDetails[0].data.Validity;
-                  var _Position = _this162.propertyRequirementDetails[0].data.Position;
-                  var _UserId2 = _this162.propertyRequirementDetails[0].data.UserId;
-                  var _new_id2 = _this162.propertyRequirementDetails[0].id;
+              } else if (_this163.MatchesItem > 1) {
+                if (_this163.propertyRequirementDetails.length > _this163.propertyDetails.length) {
+                  _this163.buyer = true;
+                  _this163.buyerVal = _this163.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this163.test = _this163.buyerVal;
+                  var _Lookingpostcode2 = _this163.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var _MinAmount = _this163.propertyRequirementDetails[0].data.MinAmount;
+                  var _MaxAmount2 = _this163.propertyRequirementDetails[0].data.MaxAmount;
+                  var _PropertyFor2 = _this163.propertyRequirementDetails[0].data.PropertyFor;
+                  var _PropertyType2 = _this163.propertyRequirementDetails[0].data.PropertyType;
+                  var _LookingTown2 = _this163.propertyRequirementDetails[0].data.LookingTown;
+                  var _latitude2 = _this163.propertyRequirementDetails[0].data.latitude;
+                  var _longitude2 = _this163.propertyRequirementDetails[0].data.longitude;
+                  var _Streetname = _this163.propertyRequirementDetails[0].data.LookingStreetname;
+                  var _condition = _this163.propertyRequirementDetails[0].data.Conditions;
+                  var _ChainStatus = _this163.propertyRequirementDetails[0].data.ChainStatus;
+                  var _FinancialPosition = _this163.propertyRequirementDetails[0].data.FinancialPosition;
+                  var _Validity = _this163.propertyRequirementDetails[0].data.Validity;
+                  var _Position = _this163.propertyRequirementDetails[0].data.Position;
+                  var _UserId2 = _this163.propertyRequirementDetails[0].data.UserId;
+                  var _new_id2 = _this163.propertyRequirementDetails[0].id;
 
-                  _this162.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
+                  _this163.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
                 } else {
-                  _this162.seller = true;
-                  _this162.sellerVal = _this162.propertyDetails[0].seller.Lookingpostcode;
-                  _this162.test = _this162.sellerVal;
-                  var _Lookingpostcode3 = _this162.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor3 = _this162.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType3 = _this162.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount3 = _this162.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown3 = _this162.propertyDetails[0].seller.LookingTown;
-                  var _Lookingstate = _this162.propertyDetails[0].seller.Lookingstate;
-                  var _Maxbathrooms = _this162.propertyDetails[0].seller.Maxbathrooms;
-                  var _PropertyCondition = _this162.propertyDetails[0].seller.PropertyCondition;
-                  var _LookingAddress = _this162.propertyDetails[0].seller.LookingAddress;
-                  var _ownership = _this162.propertyDetails[0].seller.ownership;
-                  var _features = _this162.propertyDetails[0].seller.features;
-                  var _UserId3 = _this162.propertyDetails[0].seller.UserId;
-                  var _Maxreception = _this162.propertyDetails[0].seller.Maxreception;
-                  var _Maxrooms = _this162.propertyDetails[0].seller.Maxrooms;
-                  var _latitude3 = _this162.propertyDetails[0].seller.latitude;
-                  var _longitude3 = _this162.propertyDetails[0].seller.longitude;
-                  var _new_id3 = _this162.propertyDetails[0].sellerId;
+                  _this163.seller = true;
+                  _this163.sellerVal = _this163.propertyDetails[0].seller.Lookingpostcode;
+                  _this163.test = _this163.sellerVal;
+                  var _Lookingpostcode3 = _this163.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor3 = _this163.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType3 = _this163.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount3 = _this163.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown3 = _this163.propertyDetails[0].seller.LookingTown;
+                  var _Lookingstate = _this163.propertyDetails[0].seller.Lookingstate;
+                  var _Maxbathrooms = _this163.propertyDetails[0].seller.Maxbathrooms;
+                  var _PropertyCondition = _this163.propertyDetails[0].seller.PropertyCondition;
+                  var _LookingAddress = _this163.propertyDetails[0].seller.LookingAddress;
+                  var _ownership = _this163.propertyDetails[0].seller.ownership;
+                  var _features = _this163.propertyDetails[0].seller.features;
+                  var _UserId3 = _this163.propertyDetails[0].seller.UserId;
+                  var _Maxreception = _this163.propertyDetails[0].seller.Maxreception;
+                  var _Maxrooms = _this163.propertyDetails[0].seller.Maxrooms;
+                  var _latitude3 = _this163.propertyDetails[0].seller.latitude;
+                  var _longitude3 = _this163.propertyDetails[0].seller.longitude;
+                  var _new_id3 = _this163.propertyDetails[0].sellerId;
 
-                  _this162.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
+                  _this163.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
                 }
               }
             });
@@ -18389,26 +18424,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitem",
         value: function getallitem() {
-          var _this163 = this;
+          var _this164 = this;
 
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this163.uid) {
-                _this163.propertyRequirementDetails.push({
+              if (element.UserId == _this164.uid) {
+                _this164.propertyRequirementDetails.push({
                   data: element,
                   id: element.id
                 });
 
-                _this163.buyer = true;
-                _this163.seller = false;
-                _this163.buyerItems = true;
+                _this164.buyer = true;
+                _this164.seller = false;
+                _this164.buyerItems = true;
               }
             });
           });
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this163.uid) {
-                _this163.propertyDetails.push({
+              if (element.UserId == _this164.uid) {
+                _this164.propertyDetails.push({
                   seller: element,
                   sellerId: element.id
                 });
@@ -18419,13 +18454,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getFavoarte",
         value: function getFavoarte() {
-          var _this164 = this;
+          var _this165 = this;
 
           this.favorateProperty = [];
           this.MatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this164.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this164.favorateProperty.push(item.data().proppertyId);
+              if (_this165.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this165.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -18444,52 +18479,52 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteFavorate",
         value: function deleteFavorate(docid) {
-          var _this165 = this;
+          var _this166 = this;
 
           this.MatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this165.getFavoarte();
+            _this166.getFavoarte();
           });
         }
       }, {
         key: "addtoFavorate",
         value: function addtoFavorate(uid, property, id) {
-          var _this166 = this;
-
-          this.UserProperty = {
-            PropertyDetail: property,
-            proppertyId: id
-          };
-          this.MatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this166.getFavoarte();
-
-            _this166.checkFavorateValue(id);
-          });
-        }
-      }, {
-        key: "addtoSellerFavorate",
-        value: function addtoSellerFavorate(uid, property, id) {
           var _this167 = this;
 
           this.UserProperty = {
             PropertyDetail: property,
             proppertyId: id
           };
-          this.SellermatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this167.getSellerFavoarte();
+          this.MatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
+            _this167.getFavoarte();
 
             _this167.checkFavorateValue(id);
           });
         }
       }, {
+        key: "addtoSellerFavorate",
+        value: function addtoSellerFavorate(uid, property, id) {
+          var _this168 = this;
+
+          this.UserProperty = {
+            PropertyDetail: property,
+            proppertyId: id
+          };
+          this.SellermatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
+            _this168.getSellerFavoarte();
+
+            _this168.checkFavorateValue(id);
+          });
+        }
+      }, {
         key: "getSellerFavoarte",
         value: function getSellerFavoarte() {
-          var _this168 = this;
+          var _this169 = this;
 
           this.favorateProperty = [];
           this.SellermatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this168.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this168.favorateProperty.push(item.data().proppertyId);
+              if (_this169.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this169.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -18508,10 +18543,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSellerFavorate",
         value: function deleteSellerFavorate(docid) {
-          var _this169 = this;
+          var _this170 = this;
 
           this.SellermatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this169.getSellerFavoarte();
+            _this170.getSellerFavoarte();
           });
         }
       }, {
@@ -18811,11 +18846,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ImagesSliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this170 = this;
+          var _this171 = this;
 
           this.ActivatedRoutes.paramMap.subscribe(function (element) {});
           this.SellerNestimateDetails.getSellerRequirement(this.userID, this.child).then(function (element) {
-            _this170.AllImages = element.data().Images;
+            _this171.AllImages = element.data().Images;
           });
         }
       }]);
@@ -18954,12 +18989,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this171 = this;
+          var _this172 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this171.propertyRequirementDetails.push({
+              _this172.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -18968,7 +19003,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this171.propertyDetails.push({
+              _this172.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -19577,18 +19612,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this172 = this;
+          var _this173 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this172.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
+              _this173.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
             });
           });
           this.LoggedIn();
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this172.docid = params.get("docid");
+            _this173.docid = params.get("docid");
           });
           this.getPropertyFilled();
         }
@@ -19606,42 +19641,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userPrefilledDetails",
         value: function userPrefilledDetails() {
-          var _this173 = this;
+          var _this174 = this;
 
           //Pre - populate the email field
           this.EditListingBuyerService.getUserDetail(this.uid).then(function (data) {
-            _this173.dataItem = data.data();
-            _this173.user.Name = _this173.dataItem.Name;
-            _this173.user.email = _this173.dataItem.email;
-            _this173.user.title = _this173.dataItem.title;
+            _this174.dataItem = data.data();
+            _this174.user.Name = _this174.dataItem.Name;
+            _this174.user.email = _this174.dataItem.email;
+            _this174.user.title = _this174.dataItem.title;
 
-            if (_this173.dataItem.DOB != null) {
-              _this173.user.DOB = _this173.dataItem.DOB.toDate();
+            if (_this174.dataItem.DOB != null) {
+              _this174.user.DOB = _this174.dataItem.DOB.toDate();
             }
 
-            _this173.user.Phone = _this173.dataItem.Phone;
+            _this174.user.Phone = _this174.dataItem.Phone;
           });
         }
       }, {
         key: "getPropertyFilled",
         value: function getPropertyFilled() {
-          var _this174 = this;
+          var _this175 = this;
 
           this.EditListingBuyerService.getPropertyDetail(this.uid, this.docid).then(function (data) {
-            _this174.listingBuyer = data.data();
-            _this174.propertyPrefilled = data.data();
-            _this174.listingBuyer.Currentpostcode = _this174.propertyPrefilled.Currentpostcode;
-            _this174.listingBuyer.CurrentAddress = _this174.propertyPrefilled.CurrentAddress;
+            _this175.listingBuyer = data.data();
+            _this175.propertyPrefilled = data.data();
+            _this175.listingBuyer.Currentpostcode = _this175.propertyPrefilled.Currentpostcode;
+            _this175.listingBuyer.CurrentAddress = _this175.propertyPrefilled.CurrentAddress;
 
-            _this174.postcodeField();
+            _this175.postcodeField();
 
-            if (_this174.listingBuyer.PropertyFor == 'buy') {
-              _this174.amounts = true;
-              _this174.buyOption = true;
+            if (_this175.listingBuyer.PropertyFor == 'buy') {
+              _this175.amounts = true;
+              _this175.buyOption = true;
             } else {
-              _this174.amounts = true;
-              _this174.buyOption = false;
-              _this174.rentOption = true;
+              _this175.amounts = true;
+              _this175.buyOption = false;
+              _this175.rentOption = true;
             }
           });
         }
@@ -19653,17 +19688,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "postcodeField",
         value: function postcodeField() {
-          var _this175 = this;
+          var _this176 = this;
 
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value != "") {
-              _this175.lookup(_this175.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this175.data = data;
+              _this176.lookup(_this176.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this176.data = data;
               });
 
-              return _this175.lookup(_this175.listingBuyer.Lookingpostcode);
+              return _this176.lookup(_this176.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -19673,11 +19708,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this175.lookup(_this175.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this175.data = data;
+              _this176.lookup(_this176.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this176.data = data;
               });
 
-              return _this175.lookup(_this175.listingBuyer.Currentpostcode);
+              return _this176.lookup(_this176.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -20374,12 +20409,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerEditing",
         value: function buyerEditing() {
-          var _this176 = this;
+          var _this177 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this176.postcodeCoordinates = data;
-            _this176.listingBuyer.longitude = _this176.postcodeCoordinates.result.longitude, _this176.listingBuyer.latitude = _this176.postcodeCoordinates.result.latitude, _this176.listingBuyer.UserId = _this176.uid;
+            _this177.postcodeCoordinates = data;
+            _this177.listingBuyer.longitude = _this177.postcodeCoordinates.result.longitude, _this177.listingBuyer.latitude = _this177.postcodeCoordinates.result.latitude, _this177.listingBuyer.UserId = _this177.uid;
           });
           this.listingBuyer.UserId = this.uid;
           this.listingBuyer.longitude, this.listingBuyer.latitude, this.listingBuyer.username = this.user.Name;
@@ -20389,9 +20424,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.listingBuyer.DOB = this.user.DOB;
           this["return"] = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(function (data) {
             ;
-            _this176.isLoading = false;
+            _this177.isLoading = false;
 
-            var dialogRef = _this176.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+            var dialogRef = _this177.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
           });
         }
       }]);
@@ -21053,16 +21088,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this177 = this;
+          var _this178 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this177.docid = params.get("sellerId");
+            _this178.docid = params.get("sellerId");
           });
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this177.sellerRightImageUrl = element.data().SellerPropertyRightImage;
+              _this178.sellerRightImageUrl = element.data().SellerPropertyRightImage;
             });
           });
           this.LoggedIn();
@@ -21070,24 +21105,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this178 = this;
+          var _this179 = this;
 
           //Pre - populate the email field
           this.SellerformService.getsellerDetails(this.uid, this.docid).then(function (element) {
-            _this178.listingSeller = element.data();
+            _this179.listingSeller = element.data();
 
-            _this178.dropdown();
+            _this179.dropdown();
 
-            if (_this178.listingSeller.PropertyFor == "buy") {
-              _this178.maxamounts = true;
-              _this178.sellOption = true;
+            if (_this179.listingSeller.PropertyFor == "buy") {
+              _this179.maxamounts = true;
+              _this179.sellOption = true;
             } else {
-              _this178.maxamounts = true;
-              _this178.sellOption = false;
-              _this178.letOption = true;
+              _this179.maxamounts = true;
+              _this179.sellOption = false;
+              _this179.letOption = true;
             }
 
-            _this178.sellerImages = _this178.listingSeller.Images; //   if(this.listingSeller.Images.length > 0)
+            _this179.sellerImages = _this179.listingSeller.Images; //   if(this.listingSeller.Images.length > 0)
             //   {
             //  this.uploadedImages = true
             //   }
@@ -21097,10 +21132,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             //   }
           });
           this.SellerformService.getUSerDetail(this.uid).then(function (user) {
-            _this178.user = user.data();
-            _this178.user.DOB = user.data().DOB.toDate();
-            _this178.user.CurrentTown = user.data().CurrentTowncity;
-            _this178.user.CurrentAddress = user.data().Currentaddress;
+            _this179.user = user.data();
+            _this179.user.DOB = user.data().DOB.toDate();
+            _this179.user.CurrentTown = user.data().CurrentTowncity;
+            _this179.user.CurrentAddress = user.data().Currentaddress;
           });
           this.isLoggedIn = true;
         }
@@ -21466,11 +21501,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this179 = this;
+          var _this180 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this179.isLoading = false;
+            _this180.isLoading = false;
           });
         }
       }, {
@@ -21503,12 +21538,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this180 = this;
+          var _this181 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this180.postcodeCoordinates = data;
-            _this180.listingSeller.longitude = _this180.postcodeCoordinates.result.longitude, _this180.listingSeller.latitude = _this180.postcodeCoordinates.result.latitude, _this180.listingSeller.UserId = _this180.uid;
+            _this181.postcodeCoordinates = data;
+            _this181.listingSeller.longitude = _this181.postcodeCoordinates.result.longitude, _this181.listingSeller.latitude = _this181.postcodeCoordinates.result.latitude, _this181.listingSeller.UserId = _this181.uid;
           });
           this.listingSeller.UserId = this.uid;
           this.isLoading = true;
@@ -21519,9 +21554,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.listingSeller.DOB = this.user.DOB;
           this.listingSeller.Images = this.sellerImages;
           this["return"] = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(function (data) {
-            _this180.isLoading = false;
+            _this181.isLoading = false;
 
-            var dialogRef = _this180.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+            var dialogRef = _this181.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -21534,18 +21569,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "dropdown",
         value: function dropdown() {
-          var _this181 = this;
+          var _this182 = this;
 
           // The auto population of github method
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this181.lookup(_this181.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this181.data = data;
+              _this182.lookup(_this182.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this182.data = data;
               });
 
-              return _this181.lookup(_this181.listingSeller.Lookingpostcode);
+              return _this182.lookup(_this182.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -21555,11 +21590,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this181.lookup(_this181.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this181.data = data;
+              _this182.lookup(_this182.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this182.data = data;
               });
 
-              return _this181.lookup(_this181.listingSeller.Currentpostcode);
+              return _this182.lookup(_this182.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -21568,7 +21603,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "importImages",
         value: function importImages(event) {
-          var _this182 = this;
+          var _this183 = this;
 
           this.isLoading = true;
           this.uploads = [];
@@ -21623,7 +21658,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     // for every upload do whatever you want in firestore with the uploaded file
                     var _t = task.then(function (f) {
                       return f.ref.getDownloadURL().then(function (url) {
-                        _this182.sellerImages.push(url); // return this.afs.collection('files').add({
+                        _this183.sellerImages.push(url); // return this.afs.collection('files').add({
                         //   name: f.metadata.name,
                         // });
 
@@ -22239,46 +22274,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getFavorate",
         value: function getFavorate() {
-          var _this183 = this;
+          var _this184 = this;
 
           this.getFavorates = [];
           this.sellerFavorate = [];
           this.isLoading = true;
           this.MyListingService.getFavorate(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this183.getFavorates.push({
+              _this184.getFavorates.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              _this183.isLoading = false;
+              _this184.isLoading = false;
             });
 
-            _this183.MyListingService.sellerFavorates(_this183.uid).then(function (data) {
+            _this184.MyListingService.sellerFavorates(_this184.uid).then(function (data) {
               data.forEach(function (element) {
-                _this183.sellerFavorate.push({
+                _this184.sellerFavorate.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                _this183.isLoading = false;
+                _this184.isLoading = false;
               });
 
-              if (_this183.getFavorates.length > _this183.sellerFavorate.length) {
-                _this183.buyerProperty = true;
-                _this183.sellerProperty = false;
-                _this183.nestimate = "Owner Nestimate";
-                _this183.isLoading = false;
+              if (_this184.getFavorates.length > _this184.sellerFavorate.length) {
+                _this184.buyerProperty = true;
+                _this184.sellerProperty = false;
+                _this184.nestimate = "Owner Nestimate";
+                _this184.isLoading = false;
               } else {
-                _this183.sellerProperty = true;
-                _this183.buyerProperty = false;
-                _this183.nestimate = "Seeker Nestimate";
-                _this183.isLoading = false;
+                _this184.sellerProperty = true;
+                _this184.buyerProperty = false;
+                _this184.nestimate = "Seeker Nestimate";
+                _this184.isLoading = false;
               }
 
-              _this183.isLoading = false;
-              _this183.startPage = 0;
-              _this183.paginationLimit = 6;
+              _this184.isLoading = false;
+              _this184.startPage = 0;
+              _this184.paginationLimit = 6;
             });
           });
         }
@@ -22290,31 +22325,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteBuyerFavorate",
         value: function deleteBuyerFavorate() {
-          var _this184 = this;
+          var _this185 = this;
 
           this.MyListingService.getFavorate(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this184.getFavorates.push({
+              _this185.getFavorates.push({
                 Detail: element.data(),
                 id: element.id
               });
             });
-            alert(_this184.getFavorates.length);
+            alert(_this185.getFavorates.length);
 
-            if (_this184.getFavorates.length > 0) {
-              _this184.buyerProperty = true;
+            if (_this185.getFavorates.length > 0) {
+              _this185.buyerProperty = true;
             } else {
-              _this184.buyerProperty = false;
+              _this185.buyerProperty = false;
             }
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this185 = this;
+          var _this186 = this;
 
           this.MyListingService.deletefavorate(this.uid, docid).then(function (data) {
-            _this185.getFavorate();
+            _this186.getFavorate();
           });
         }
       }, {
@@ -22327,10 +22362,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(docid) {
-          var _this186 = this;
+          var _this187 = this;
 
           this.MyListingService.sellerdeletefavorate(this.uid, docid).then(function (data) {
-            _this186.getFavorate();
+            _this187.getFavorate();
           });
         }
       }, {
@@ -22654,12 +22689,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this187 = this;
+          var _this188 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this187.propertyId = params.get("id");
+            _this188.propertyId = params.get("id");
           });
 
           this._router.events.subscribe(function (evt) {
@@ -22682,26 +22717,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this188 = this;
+          var _this189 = this;
 
           this.SellerListingDetails.getBuyerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this188.buyingPosition = res.data().Position;
-            _this188.buyerFinancialPosition = res.data().FinancialPosition;
-            _this188.BuyerPropertyType = res.data().PropertyType;
-            _this188.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this188.BuyerRoommin = res.data().Roommin;
-            _this188.BuyerRoomsmax = res.data().Roomsmax;
-            _this188.username = res.data().username;
-            _this188.usertitle = res.data().usertitle;
-            _this188.buyerPropertyFor = res.data().PropertyFor;
-            _this188.PropertyType = res.data().PropertyType;
-            _this188.Ownership = res.data().Ownership;
-            _this188.LookingStreetname = res.data().LookingStreetname;
-            _this188.Conditions = res.data().Conditions;
-            _this188.Maxbathroom = res.data().Maxbathroom;
-            _this188.Maxreception = res.data().Maxreception;
-            _this188.MinAmount = res.data().MinAmount;
-            _this188.MaxAmount = res.data().MaxAmount;
+            _this189.buyingPosition = res.data().Position;
+            _this189.buyerFinancialPosition = res.data().FinancialPosition;
+            _this189.BuyerPropertyType = res.data().PropertyType;
+            _this189.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this189.BuyerRoommin = res.data().Roommin;
+            _this189.BuyerRoomsmax = res.data().Roomsmax;
+            _this189.username = res.data().username;
+            _this189.usertitle = res.data().usertitle;
+            _this189.buyerPropertyFor = res.data().PropertyFor;
+            _this189.PropertyType = res.data().PropertyType;
+            _this189.Ownership = res.data().Ownership;
+            _this189.LookingStreetname = res.data().LookingStreetname;
+            _this189.Conditions = res.data().Conditions;
+            _this189.Maxbathroom = res.data().Maxbathroom;
+            _this189.Maxreception = res.data().Maxreception;
+            _this189.MinAmount = res.data().MinAmount;
+            _this189.MaxAmount = res.data().MaxAmount;
           });
         }
       }]);
@@ -22898,12 +22933,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this189 = this;
+          var _this190 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this189.propertyId = params.get("id");
+            _this190.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -22916,26 +22951,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this190 = this;
+          var _this191 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this190.userName = res.data().username;
-            _this190.usertitle = res.data().usertitle;
-            _this190.PropertyFor = res.data().PropertyFor;
-            _this190.price = res.data().MaxAmount;
-            _this190.postcode = res.data().Lookingpostcode;
-            _this190.Streetname = res.data().Lookingstate;
-            _this190.PropertyTypes = res.data().PropertyType;
-            _this190.Maxroom = res.data().Maxrooms;
-            _this190.ownerships = res.data().ownership;
-            _this190.Bathrooms = res.data().Maxbathrooms;
-            _this190.Reception = res.data().Maxreception;
-            _this190.features = res.data().features;
-            _this190.MaxAmount = res.data().MaxAmount;
-            _this190.PropertyCondition = res.data().PropertyCondition;
-            _this190.allImages = res.data().Images;
+            _this191.userName = res.data().username;
+            _this191.usertitle = res.data().usertitle;
+            _this191.PropertyFor = res.data().PropertyFor;
+            _this191.price = res.data().MaxAmount;
+            _this191.postcode = res.data().Lookingpostcode;
+            _this191.Streetname = res.data().Lookingstate;
+            _this191.PropertyTypes = res.data().PropertyType;
+            _this191.Maxroom = res.data().Maxrooms;
+            _this191.ownerships = res.data().ownership;
+            _this191.Bathrooms = res.data().Maxbathrooms;
+            _this191.Reception = res.data().Maxreception;
+            _this191.features = res.data().features;
+            _this191.MaxAmount = res.data().MaxAmount;
+            _this191.PropertyCondition = res.data().PropertyCondition;
+            _this191.allImages = res.data().Images;
 
-            _this190.toTop();
+            _this191.toTop();
           });
         }
       }, {
@@ -23179,17 +23214,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this191 = this;
+          var _this192 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this191.type = params.get("type");
-            _this191.tabdrop = params.get("tabdrop");
+            _this192.type = params.get("type");
+            _this192.tabdrop = params.get("tabdrop");
           });
           this.CMSSERVICE.getToolTip().then(function (ref) {
-            _this191.nestimateTool = ref.data().MyNestimate;
-            _this191.expressTool = ref.data().ExpressedInterest;
+            _this192.nestimateTool = ref.data().MyNestimate;
+            _this192.expressTool = ref.data().ExpressedInterest;
           });
           this.getallitems();
           this.CheckUrl();
@@ -23212,7 +23247,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this192 = this;
+          var _this193 = this;
 
           this.propertyDetails = [];
           this.propertyRequirementDetails = [];
@@ -23220,34 +23255,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this192.propertyRequirementDetails.push({
+              _this193.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
 
-              _this192.isLoading = false;
+              _this193.isLoading = false;
             }); //Seller Property Fetch Details
 
-            _this192.myrequirement_service.getSellerProperties(_this192.uid).then(function (res) {
+            _this193.myrequirement_service.getSellerProperties(_this193.uid).then(function (res) {
               res.forEach(function (element) {
-                _this192.propertyDetails.push({
+                _this193.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
 
-                _this192.isLoading = false;
+                _this193.isLoading = false;
               });
 
-              if (_this192.type == "myNestimate" && _this192.tabdrop == "tabdrop") {
-                if (_this192.propertyRequirementDetails.length > _this192.propertyDetails.length) {
-                  _this192.seekerNestimate = true;
-                  _this192.nestimate = "Seeker Nestimate";
+              if (_this193.type == "myNestimate" && _this193.tabdrop == "tabdrop") {
+                if (_this193.propertyRequirementDetails.length > _this193.propertyDetails.length) {
+                  _this193.seekerNestimate = true;
+                  _this193.nestimate = "Seeker Nestimate";
                 } else {
-                  _this192.ownerNestimate = true;
-                  _this192.nestimate = "Owner Nestimate";
+                  _this193.ownerNestimate = true;
+                  _this193.nestimate = "Owner Nestimate";
                 }
 
-                _this192.isLoading = false;
+                _this193.isLoading = false;
               }
             });
           });
@@ -23915,7 +23950,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllListing",
         value: function getAllListing() {
-          var _this193 = this;
+          var _this194 = this;
 
           this.recentItems = [];
           this.sellerrecentItems = [];
@@ -23923,37 +23958,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MyListingService.getRecentlyItems(this.uid).then(function (data) {
             data.forEach(function (element) {
               // console.log(element.data().time * 1000)
-              _this193.recentItems.push({
+              _this194.recentItems.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              _this193.isLoading = false;
+              _this194.isLoading = false;
             });
 
-            _this193.MyListingService.getSellerRecentlyItems(_this193.uid).then(function (data) {
+            _this194.MyListingService.getSellerRecentlyItems(_this194.uid).then(function (data) {
               data.forEach(function (element) {
-                _this193.sellerrecentItems.push({
+                _this194.sellerrecentItems.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                _this193.isLoading = false;
+                _this194.isLoading = false;
               });
 
-              if (_this193.recentItems.length > _this193.sellerrecentItems.length) {
-                _this193.sellerProperty = true;
-                _this193.buyerProperty = false;
-                _this193.nestimate = "Seeker Nestimate";
+              if (_this194.recentItems.length > _this194.sellerrecentItems.length) {
+                _this194.sellerProperty = true;
+                _this194.buyerProperty = false;
+                _this194.nestimate = "Seeker Nestimate";
               } else {
-                _this193.buyerProperty = true;
-                _this193.sellerProperty = false;
-                _this193.nestimate = "Owner Nestimate";
+                _this194.buyerProperty = true;
+                _this194.sellerProperty = false;
+                _this194.nestimate = "Owner Nestimate";
               }
 
-              _this193.isLoading = false;
-              _this193.startPage = 0;
-              _this193.paginationLimit = 6;
+              _this194.isLoading = false;
+              _this194.startPage = 0;
+              _this194.paginationLimit = 6;
             });
           });
         }
@@ -23991,19 +24026,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(docid) {
-          var _this194 = this;
+          var _this195 = this;
 
           this.MyListingService.recentlySellerDelete(this.uid, docid).then(function (data) {
-            _this194.getAllListing();
+            _this195.getAllListing();
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this195 = this;
+          var _this196 = this;
 
           this.MyListingService.recentlyBuyerDelete(this.uid, docid).then(function (data) {
-            _this195.getAllListing();
+            _this196.getAllListing();
           });
         } //For Seller MatchListing
 
@@ -24291,7 +24326,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AwaitingresponseComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this196 = this;
+          var _this197 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -24303,7 +24338,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == "pending") {
-                _this196.sellerProperty.push({
+                _this197.sellerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
@@ -24314,24 +24349,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == "pending") {
-                _this196.buyerProperty.push({
+                _this197.buyerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               }
             });
-            _this196.isLoading = false;
+            _this197.isLoading = false;
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this197 = this;
+          var _this198 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this197.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this197.distinctExpressedUid.push(item.data().propertyId);
+              if (_this198.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this198.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -24523,11 +24558,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllSeller",
         value: function getAllSeller() {
-          var _this198 = this;
+          var _this199 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this198.PropertyCondition = res.data().PropertyCondition;
-            _this198.allImages = res.data().Images;
+            _this199.PropertyCondition = res.data().PropertyCondition;
+            _this199.allImages = res.data().Images;
           }); //this.allImages = res.data().Images
         }
       }, {
@@ -24678,7 +24713,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this199 = this;
+          var _this200 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -24696,26 +24731,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var details = JSON.parse(localStorage.getItem("buyermatchespropertydetail"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this199.expressed = params.get("expressed");
-            _this199.propid = params.get("propId");
+            _this200.expressed = params.get("expressed");
+            _this200.propid = params.get("propId");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.CMSSERVICE.getBlueNotification(1).then(function (data) {
-            _this199.notificationContent = data.data().BuyerActionNeeded;
+            _this200.notificationContent = data.data().BuyerActionNeeded;
           });
           this.buyerMtachesStatus();
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this200 = this;
+          var _this201 = this;
 
           this["return"] = this.MatchesBuyerService.ExpressInterest(this.uid, this.propid).then(function (data) {
             if (data == true) {
-              _this200.createSellerNotification();
+              _this201.createSellerNotification();
 
-              _this200.backClicked();
+              _this201.backClicked();
             }
           });
         }
@@ -24747,7 +24782,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createOther",
         value: function createOther() {
-          var _this201 = this;
+          var _this202 = this;
 
           this.matchesSeller = {
             BuyerDetails: this.buyerDetails,
@@ -24760,7 +24795,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           };
           this["return"] = this.MatchesBuyerService.matchesBuyerCreate(this.SellerUserId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this201.addToExpressCollection();
+              _this202.addToExpressCollection();
             }
           });
         }
@@ -24800,10 +24835,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this202 = this;
+          var _this203 = this;
 
           this.MatchesBuyerService.getBuyer(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this202.buyerDetails = res.data();
+            _this203.buyerDetails = res.data();
           });
         }
       }, {
@@ -24819,22 +24854,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerMtachesStatus",
         value: function buyerMtachesStatus() {
-          var _this203 = this;
+          var _this204 = this;
 
           this.MatchesBuyerService.ExpressInterests(this.uid).subscribe(function (element) {
             element.forEach(function (eledata) {
-              _this203.matchesProperties.push(eledata.data());
+              _this204.matchesProperties.push(eledata.data());
             });
 
-            var _iterator4 = _createForOfIteratorHelper(_this203.matchesProperties),
+            var _iterator4 = _createForOfIteratorHelper(_this204.matchesProperties),
                 _step4;
 
             try {
               for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
                 var val = _step4.value;
 
-                if (val.propertyId == _this203.propid) {
-                  _this203.expressed = 'true';
+                if (val.propertyId == _this204.propid) {
+                  _this204.expressed = 'true';
                 }
               }
             } catch (err) {
@@ -25442,27 +25477,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this204 = this;
+          var _this205 = this;
 
           this.MatchesSellerPendingService.getBuyerRequirement(this.userDetails.detail.BuyerUserId, this.userDetails.detail.BuyerPropertyId).then(function (res) {
-            _this204.buyingPosition = res.data().Position;
-            _this204.buyerFinancialPosition = res.data().FinancialPosition;
-            _this204.BuyerPropertyType = res.data().PropertyType;
-            _this204.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this204.BuyerRoommin = res.data().Roommin;
-            _this204.BuyerRoomsmax = res.data().Roomsmax;
-            _this204.username = res.data().username;
-            _this204.usertitle = res.data().usertitle;
-            _this204.buyerPropertyFor = res.data().PropertyFor;
-            _this204.PropertyType = res.data().PropertyType;
-            _this204.Ownership = res.data().Ownership;
-            _this204.LookingStreetname = res.data().LookingStreetname;
-            _this204.Conditions = res.data().Conditions;
-            _this204.Maxbathroom = res.data().Maxbathroom;
-            _this204.Maxreception = res.data().Maxreception;
-            _this204.MinAmount = res.data().MinAmount;
-            _this204.MaxAmount = res.data().MaxAmount;
-            _this204.Ownership = res.data().Ownership;
+            _this205.buyingPosition = res.data().Position;
+            _this205.buyerFinancialPosition = res.data().FinancialPosition;
+            _this205.BuyerPropertyType = res.data().PropertyType;
+            _this205.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this205.BuyerRoommin = res.data().Roommin;
+            _this205.BuyerRoomsmax = res.data().Roomsmax;
+            _this205.username = res.data().username;
+            _this205.usertitle = res.data().usertitle;
+            _this205.buyerPropertyFor = res.data().PropertyFor;
+            _this205.PropertyType = res.data().PropertyType;
+            _this205.Ownership = res.data().Ownership;
+            _this205.LookingStreetname = res.data().LookingStreetname;
+            _this205.Conditions = res.data().Conditions;
+            _this205.Maxbathroom = res.data().Maxbathroom;
+            _this205.Maxreception = res.data().Maxreception;
+            _this205.MinAmount = res.data().MinAmount;
+            _this205.MaxAmount = res.data().MaxAmount;
+            _this205.Ownership = res.data().Ownership;
           });
         }
       }, {
@@ -25605,7 +25640,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this205 = this;
+          var _this206 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -25617,21 +25652,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus != "pending") {
-                _this205.sellerConfirmed.push({
+                _this206.sellerConfirmed.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               }
             });
-            _this205.isLoading = false;
+            _this206.isLoading = false;
 
-            _this205.getExpressedListingIds();
+            _this206.getExpressedListingIds();
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus != "pending") {
-                _this205.buyerProperty.push({
+                _this206.buyerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
@@ -25643,12 +25678,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this206 = this;
+          var _this207 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this206.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this206.distinctExpressedUid.push(item.data().propertyId);
+              if (_this207.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this207.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -26057,7 +26092,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this207 = this;
+          var _this208 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -26075,10 +26110,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this207.propertyId = params.get("propertyId");
+            _this208.propertyId = params.get("propertyId");
           });
           this.CMSSERVICE.getBlueNotification("1").then(function (element) {
-            _this207.AgentBlue = element.data().AgentBlue;
+            _this208.AgentBlue = element.data().AgentBlue;
           });
         }
       }, {
@@ -26096,12 +26131,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this208 = this;
+          var _this209 = this;
 
           this["return"] = this.AgentService.ExpressInterest(this.uid, this.propertyId).then(function (data) {
-            _this208.createSellerNotification();
+            _this209.createSellerNotification();
 
-            var dialogRef = _this208.dialog.open(_agentSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AgentSubmissionComponent"], {
+            var dialogRef = _this209.dialog.open(_agentSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AgentSubmissionComponent"], {
               data: {
                 message: "Postcode must be atleast 5 characters long"
               }
@@ -26139,20 +26174,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "agentDetailEntry",
         value: function agentDetailEntry(agentuid) {
-          var _this209 = this;
+          var _this210 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this209.sellerDetails = rest.data();
+            _this210.sellerDetails = rest.data();
 
-            _this209.AgentService.getBuyerrDetails(_this209.BuyerUserId, _this209.BuyerPropertyId).then(function (rest) {
-              _this209.BuyerDetails = rest.data();
-              _this209.details = {
-                SellerDetails: _this209.sellerDetails,
-                BuyerDetails: _this209.BuyerDetails,
+            _this210.AgentService.getBuyerrDetails(_this210.BuyerUserId, _this210.BuyerPropertyId).then(function (rest) {
+              _this210.BuyerDetails = rest.data();
+              _this210.details = {
+                SellerDetails: _this210.sellerDetails,
+                BuyerDetails: _this210.BuyerDetails,
                 UserId: agentuid,
                 Archived: false
               };
-              _this209["return"] = _this209.AgentService.matchesAgentSellerCreate(agentuid, _this209.details).then(function (data) {});
+              _this210["return"] = _this210.AgentService.matchesAgentSellerCreate(agentuid, _this210.details).then(function (data) {});
             });
           });
           this.BuyerDetails = {
@@ -26186,7 +26221,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDetailUser",
         value: function getDetailUser() {
-          var _this210 = this;
+          var _this211 = this;
 
           var details = JSON.parse(localStorage.getItem("matchesSeller"));
           this.userDetail = details.detail;
@@ -26201,13 +26236,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             ref.forEach(function (elements) {
               // this.agents.push({ Detail: elements.data(), uid: elements.data().uid })
               // this.testagents.push(elements.data().uid)
-              if (elements.data().postcode.substring(0, 3) == _this210.Lookingpostcode.substring(0, 3)) {
-                _this210.agents.push({
+              if (elements.data().postcode.substring(0, 3) == _this211.Lookingpostcode.substring(0, 3)) {
+                _this211.agents.push({
                   Detail: elements.data(),
                   uid: elements.data().uid
                 });
 
-                _this210.testagents.push(elements.data().uid);
+                _this211.testagents.push(elements.data().uid);
               }
             });
           });
@@ -26215,19 +26250,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this211 = this;
+          var _this212 = this;
 
           this.AgentService.getDellerDetails(this.SellerUSerId, this.SellerPropertyId).then(function (rest) {
-            _this211.sellerDetails = rest.data();
+            _this212.sellerDetails = rest.data();
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this212 = this;
+          var _this213 = this;
 
           this.AgentService.getBuyerrDetails(this.BuyerUserId, this.BuyerPropertyId).then(function (rest) {
-            _this212.BuyerDetails = rest.data();
+            _this213.BuyerDetails = rest.data();
           });
         }
       }, {
@@ -26637,7 +26672,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this213 = this;
+          var _this214 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -26655,13 +26690,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var details = JSON.parse(localStorage.getItem("matchesSeller"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this213.expressed = params.get("expressed");
-            _this213.propertyId = params.get("propertyId");
+            _this214.expressed = params.get("expressed");
+            _this214.propertyId = params.get("propertyId");
           });
           this.getBuyerDetails();
           this.buyerMtachesStatus();
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (element) {
-            _this213.notificationContent = element.data().MynestimateBuyerDetails;
+            _this214.notificationContent = element.data().MynestimateBuyerDetails;
           });
         }
       }, {
@@ -26700,22 +26735,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerMtachesStatus",
         value: function buyerMtachesStatus() {
-          var _this214 = this;
+          var _this215 = this;
 
           this.SelectedMyMatchesService.ExpressInterests(this.uid).subscribe(function (element) {
             element.forEach(function (eledata) {
-              _this214.matchesProperties.push(eledata.data());
+              _this215.matchesProperties.push(eledata.data());
             });
 
-            var _iterator5 = _createForOfIteratorHelper(_this214.matchesProperties),
+            var _iterator5 = _createForOfIteratorHelper(_this215.matchesProperties),
                 _step5;
 
             try {
               for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
                 var val = _step5.value;
 
-                if (val.propertyId == _this214.propertyId) {
-                  _this214.expressed = 'true';
+                if (val.propertyId == _this215.propertyId) {
+                  _this215.expressed = 'true';
                 }
               }
             } catch (err) {
@@ -27017,32 +27052,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this215 = this;
+          var _this216 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this215.uid) {
-                _this215.user.Name = element.data().Name;
-                _this215.user.Email = element.data().email;
+              if (element.data().uid == _this216.uid) {
+                _this216.user.Name = element.data().Name;
+                _this216.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this215.user.DOB = element.data().DOB.toDate();
+                  _this216.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this215.user.Phone = element.data().Phone;
+                  _this216.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this215.user.Currentaddress = element.data().Currentaddress;
+                  _this216.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this215.user.prefrence = element.data().prefrence;
+                  _this216.user.prefrence = element.data().prefrence;
                 } else {
-                  _this215.user.prefrence = "Not Selected";
+                  _this216.user.prefrence = "Not Selected";
                 }
               }
             });
@@ -27340,7 +27375,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this216 = this;
+          var _this217 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -27348,24 +27383,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getSeekerPersonalDetailForm();
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this216.uid) {
-                _this216.user.Name = element.data().Name;
-                _this216.user.Email = element.data().email;
+              if (element.data().uid == _this217.uid) {
+                _this217.user.Name = element.data().Name;
+                _this217.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this216.user.DOB = element.data().DOB.toDate();
+                  _this217.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this216.user.Phone = element.data().Phone;
+                  _this217.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this216.user.Currentaddress = element.data().Currentaddress;
+                  _this217.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this216.user.prefrence = element.data().prefrence;
+                  _this217.user.prefrence = element.data().prefrence;
                 }
               }
             });
@@ -27482,14 +27517,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
-          var _this217 = this;
+          var _this218 = this;
 
           this.isLoading = true;
           this["return"] = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this217.isLoading = false;
-            _this217.edit = false;
+            _this218.isLoading = false;
+            _this218.edit = false;
 
-            _this217.alert();
+            _this218.alert();
           });
         }
       }, {
@@ -27519,28 +27554,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this218 = this;
+          var _this219 = this;
 
           this.CMSSERVICE.getMyDetailError(this.MyDetail).then(function (element) {
-            _this218.FullName = element.data().FullName;
-            _this218.Emails = element.data().Email;
-            _this218.Phones = element.data().Phone;
-            _this218.DOBs = element.data().DOB;
-            _this218.ValidateDob = element.data().ValidateDob;
-            _this218.Address = element.data().Address;
-            _this218.Prefrence = element.data().Prefrence;
-            _this218.isLoading = false;
+            _this219.FullName = element.data().FullName;
+            _this219.Emails = element.data().Email;
+            _this219.Phones = element.data().Phone;
+            _this219.DOBs = element.data().DOB;
+            _this219.ValidateDob = element.data().ValidateDob;
+            _this219.Address = element.data().Address;
+            _this219.Prefrence = element.data().Prefrence;
+            _this219.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this219 = this;
+          var _this220 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.PersonalDetail).then(function (element) {
-            _this219.PhoneValidation = element.data().PhoneValidation;
-            _this219.PhoneLength = element.data().PhoneLength;
-            _this219.isLoading = false;
+            _this220.PhoneValidation = element.data().PhoneValidation;
+            _this220.PhoneLength = element.data().PhoneLength;
+            _this220.isLoading = false;
           });
         }
       }, {
@@ -27822,7 +27857,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this220 = this;
+          var _this221 = this;
 
           this.LoggedIn();
           this.origin = window.location.origin + "/#/";
@@ -27842,14 +27877,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this220.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this220.userData)); //Notification Show
+              _this221.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this221.userData)); //Notification Show
 
-              _this220.NavigationService.Notification(_this220.uid).subscribe(function (notification) {
+              _this221.NavigationService.Notification(_this221.uid).subscribe(function (notification) {
                 notification.forEach(function (element) {
-                  _this220.bellShow = true;
-                  _this220.belliconone = false;
-                  _this220.bellicontwo = false;
+                  _this221.bellShow = true;
+                  _this221.belliconone = false;
+                  _this221.bellicontwo = false;
                 });
               }); //this.LoggedIn();
 
@@ -27857,28 +27892,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this220.LoggedOut();
+              _this221.LoggedOut();
             }
           });
           this.getNotificationContent();
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this220.topLine = element.data().topLine;
-              _this220.secondLine = element.data().SecondLine.replace(/<(.|\n)*?>/, '').replace(/<\/(.|\n)*?>/, '');
+              _this221.topLine = element.data().topLine;
+              _this221.secondLine = element.data().SecondLine.replace(/<(.|\n)*?>/, '').replace(/<\/(.|\n)*?>/, '');
             });
           });
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this221 = this;
+          var _this222 = this;
 
           var Admin = JSON.parse(localStorage.getItem("user"));
 
           if (Admin != null) {
             this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
               if (element.data().UserType == "Admin") {
-                _this221.LoggedOut();
+                _this222.LoggedOut();
               }
             });
           }
@@ -27894,46 +27929,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this222 = this;
+          var _this223 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this222.sellerProperty.push(element.data());
+                _this223.sellerProperty.push(element.data());
               }
             });
-            _this222.noSellerOfMatche = _this222.sellerProperty.length;
-            _this222.matches = _this222.buyerProperty.length + _this222.sellerProperty.length;
+            _this223.noSellerOfMatche = _this223.sellerProperty.length;
+            _this223.matches = _this223.buyerProperty.length + _this223.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this222.buyerProperty.push(element.data());
+              _this223.buyerProperty.push(element.data());
             });
-            _this222.noBuyerMatches = _this222.buyerProperty.length;
-            _this222.matches = _this222.buyerProperty.length + _this222.sellerProperty.length;
+            _this223.noBuyerMatches = _this223.buyerProperty.length;
+            _this223.matches = _this223.buyerProperty.length + _this223.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this223 = this;
+          var _this224 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this223.bellicon.push(item.data());
+              _this224.bellicon.push(item.data());
 
-              if (_this223.bellicon.length > 0) {
-                _this223.belliconone = false;
+              if (_this224.bellicon.length > 0) {
+                _this224.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this223.confirmInterest.push(item.data());
+                _this224.confirmInterest.push(item.data());
 
-                _this223.notifications = _this223.confirmInterest.length;
+                _this224.notifications = _this224.confirmInterest.length;
               } else {
-                _this223.notifications = 0;
+                _this224.notifications = 0;
               }
             });
           });
@@ -28009,14 +28044,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this224 = this;
+          var _this225 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this224.confirmInterests.push({
+                _this225.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -28035,20 +28070,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "initProfile",
         value: function initProfile() {
-          var _this225 = this;
+          var _this226 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
           if (this.user != null) {
             this.NavigationService.getAllUser(this.user.uid).then(function (element) {
               if (element.data().UserType == "Agent") {
-                _this225.agentCustomer = true;
+                _this226.agentCustomer = true;
               } else {
-                _this225.agentCustomer = false;
-                _this225.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
+                _this226.agentCustomer = false;
+                _this226.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
 
-                if (_this225.userName.length == 0) {
-                  _this225.userName = element.data().Name;
+                if (_this226.userName.length == 0) {
+                  _this226.userName = element.data().Name;
                 }
               }
             });
@@ -28060,7 +28095,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDocid",
         value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
-          var _this226 = this;
+          var _this227 = this;
 
           this.notificationoverlay = false;
           this.getNotification();
@@ -28075,7 +28110,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.Notification.Lastseen = this.now;
           this["return"] = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(function (data) {
-            _this226.notificationoverlay = false; // this._router.navigate(["/myListing/myNestimate/action"]).then(()=>{
+            _this227.notificationoverlay = false; // this._router.navigate(["/myListing/myNestimate/action"]).then(()=>{
             //   window.location.reload();
             // });
           });
@@ -28083,19 +28118,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this227 = this;
+          var _this228 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               if (item.data().Lastseen == null) {
-                _this227.confirmInterests.push({
+                _this228.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
               } else {
-                _this227.confirmNotitfication.push({
+                _this228.confirmNotitfication.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -28106,7 +28141,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this228 = this;
+          var _this229 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -28115,25 +28150,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
               if (element.data().Lastseen == null) {
-                _this228.confirmInterests.push({
+                _this229.confirmInterests.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this228.confirmInterests.length > 0) {
-                  _this228.notificationoverlay = true;
-                  _this228.bellicontwo = true;
+                if (_this229.confirmInterests.length > 0) {
+                  _this229.notificationoverlay = true;
+                  _this229.bellicontwo = true;
                 }
               } else {
-                _this228.confirmNotitfication.push({
+                _this229.confirmNotitfication.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this228.confirmNotitfication.length > 0) {
-                  _this228.outside = true;
-                  _this228.notificationoverlay = true;
-                  _this228.bellicontwo = true;
+                if (_this229.confirmNotitfication.length > 0) {
+                  _this229.outside = true;
+                  _this229.notificationoverlay = true;
+                  _this229.bellicontwo = true;
                 }
               }
             });
@@ -28142,7 +28177,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this229 = this;
+          var _this230 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -28150,8 +28185,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this229.uid) {
-                _this229.confirmInterests = null;
+              if (element.UserId == _this230.uid) {
+                _this230.confirmInterests = null;
               }
             });
           });
@@ -28203,17 +28238,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this230 = this;
+          var _this231 = this;
 
           this.isLoading = false;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this230.isLoading = false;
+            _this231.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this231 = this;
+          var _this232 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -28224,24 +28259,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this231.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                  var dialogRef = _this232.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this231.UserSignIn
+                      message: _this232.UserSignIn
                     }
                   });
 
-                  _this231.isLoading = false;
+                  _this232.isLoading = false;
                 } else {
-                  _this231.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
+                  _this232.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
                   //   console.log(data)
                   //   this.isLoading = false;
                   // });
 
                 }
               } else {
-                _this231.isLoading = false;
+                _this232.isLoading = false;
 
-                var _dialogRef179 = _this231.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var _dialogRef179 = _this232.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -28373,10 +28408,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this232 = this;
+          var _this233 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this232.notificationContent = res.data().SingupFromMenu;
+            _this233.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
@@ -28405,10 +28440,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "leads",
         value: function leads() {
-          var _this233 = this;
+          var _this234 = this;
 
           this._router.navigate(['/Agenthome/leads']).then(function () {
-            _this233.Itemmenu();
+            _this234.Itemmenu();
 
             window.location.reload();
           });
@@ -28416,10 +28451,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Profile",
         value: function Profile() {
-          var _this234 = this;
+          var _this235 = this;
 
           this._router.navigate(['/Agenthome/profile']).then(function () {
-            _this234.Itemmenu();
+            _this235.Itemmenu();
 
             window.location.reload();
           });
@@ -28427,10 +28462,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Archieve",
         value: function Archieve() {
-          var _this235 = this;
+          var _this236 = this;
 
           this._router.navigate(['/Agenthome/archieve']).then(function () {
-            _this235.Itemmenu();
+            _this236.Itemmenu();
 
             window.location.reload();
           });
@@ -28438,10 +28473,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "manageMyNestimate",
         value: function manageMyNestimate() {
-          var _this236 = this;
+          var _this237 = this;
 
           this._router.navigate(['/myListing/myNestimate/tabdrop']).then(function () {
-            _this236.Itemmenu();
+            _this237.Itemmenu();
 
             window.location.reload();
           });
@@ -28449,10 +28484,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "profileNestimate",
         value: function profileNestimate() {
-          var _this237 = this;
+          var _this238 = this;
 
           this._router.navigate(['/myListing/profile/tabdrop']).then(function () {
-            _this237.Itemmenu();
+            _this238.Itemmenu();
 
             window.location.reload();
           });
@@ -28460,10 +28495,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "favorate",
         value: function favorate() {
-          var _this238 = this;
+          var _this239 = this;
 
           this._router.navigate(['/myListing/fav/tabdrop']).then(function () {
-            _this238.Itemmenu();
+            _this239.Itemmenu();
 
             window.location.reload();
           });
@@ -28471,10 +28506,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "recently",
         value: function recently() {
-          var _this239 = this;
+          var _this240 = this;
 
           this._router.navigate(['/myListing/recent/tabdrop']).then(function () {
-            _this239.Itemmenu();
+            _this240.Itemmenu();
 
             window.location.reload();
           });
@@ -28482,10 +28517,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "actionNeeded",
         value: function actionNeeded(id) {
-          var _this240 = this;
+          var _this241 = this;
 
           this._router.navigate(["/myListing/myNestimate/action/id"]).then(function () {
-            _this240.notificationoverlay = false;
+            _this241.notificationoverlay = false;
             window.location.reload();
           });
         }
@@ -28509,26 +28544,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this241 = this;
+          var _this242 = this;
 
           this.isLoading = true;
           this.loginTop = false;
           this.authService.FacebookAuth().then(function (data) {
             // this.user.Lastseen = this.now
-            _this241.isLoading = false;
+            _this242.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this242 = this;
+          var _this243 = this;
 
           this.loginTop = false;
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
             // window.location.reload()
-            _this242.isLoading = false;
+            _this243.isLoading = false;
           });
         }
       }, {
@@ -28555,13 +28590,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this243 = this;
+          var _this244 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this243.AgentSignIn = element.data().AgentSignIn;
-            _this243.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
+            _this244.AgentSignIn = element.data().AgentSignIn;
+            _this244.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
 
-            _this243.isLoading = false;
+            _this244.isLoading = false;
           });
         }
       }, {
@@ -28590,7 +28625,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "SignOut",
         value: function SignOut() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee64() {
-            var _this244 = this;
+            var _this245 = this;
 
             return regeneratorRuntime.wrap(function _callee64$(_context64) {
               while (1) {
@@ -28605,7 +28640,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     window.location.reload();
 
                     this._router.navigate(['/']).then(function () {
-                      _this244.isLoading = false;
+                      _this245.isLoading = false;
                       window.location.reload();
                     });
 
@@ -28620,12 +28655,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "MatchesSeller",
         value: function MatchesSeller(propid) {
-          var _this245 = this;
+          var _this246 = this;
 
           this.NavigationService.getMatchesBuyerProperties(this.uid, propid).then(function (data) {
-            _this245.buyerExpressedData = data.data();
+            _this246.buyerExpressedData = data.data();
 
-            _this245.NavigationService.ExpressInterest(_this245.uid).subscribe(function (element) {
+            _this246.NavigationService.ExpressInterest(_this246.uid).subscribe(function (element) {
               element.forEach(function (eledata) {
                 if (eledata.data().propertyId == propid) {
                   var expressed = "true";
@@ -28635,8 +28670,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 detail: data.data()
               }));
               setTimeout(function () {
-                _this245._router.navigate(["/matchesSeller/" + propid + "/" + "false"]).then(function () {
-                  _this245.notificationoverlay = false;
+                _this246._router.navigate(["/matchesSeller/" + propid + "/" + "false"]).then(function () {
+                  _this246.notificationoverlay = false;
                   window.location.reload();
                 });
               }, 2000); //this._router.navigate(["/matchesSeller/" +  propid + "/" +  "false"])
@@ -28646,15 +28681,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "MatchesBuyer",
         value: function MatchesBuyer(propid) {
-          var _this246 = this;
+          var _this247 = this;
 
           this.NavigationService.getMatchesSellerProperties(this.uid, propid).then(function (element) {
             localStorage.setItem("buyermatchespropertydetail", JSON.stringify({
               detail: element.data()
             }));
             setTimeout(function () {
-              _this246._router.navigate(["/myMtachesBuyer/" + "false" + "/" + propid]).then(function () {
-                _this246.notificationoverlay = false;
+              _this247._router.navigate(["/myMtachesBuyer/" + "false" + "/" + propid]).then(function () {
+                _this247.notificationoverlay = false;
                 window.location.reload();
               });
             }, 2000); // this._router.navigate(["/myMtachesBuyer/" + "false" + "/" +propid])
@@ -28908,19 +28943,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this247 = this;
+          var _this248 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this247.confirmInterest.push({
+              _this248.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this247.confirmInterest);
+            console.log(_this248.confirmInterest);
           });
         }
       }, {
@@ -29338,13 +29373,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this248 = this;
+          var _this249 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this248.facebook = element.data().Facebook;
-              _this248.Instagram = element.data().Instragram;
-              _this248.Twitter = element.data().Twitter;
+              _this249.facebook = element.data().Facebook;
+              _this249.Instagram = element.data().Instragram;
+              _this249.Twitter = element.data().Twitter;
             });
           });
         }
@@ -30622,14 +30657,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this249 = this;
+          var _this250 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this249.idToken = params['id_token'];
-            _this249.accessToken = params['access_token'];
+            _this250.idToken = params['id_token'];
+            _this250.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this249._router.navigate(['/']).then(function () {
+            _this250._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -30869,11 +30904,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this250 = this;
+          var _this251 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this250.privacyPolicy = element.data().Privacy;
+              _this251.privacyPolicy = element.data().Privacy;
             });
           });
         }
@@ -31511,7 +31546,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this251 = this;
+          var _this252 = this;
 
           this.getOtherForm();
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -31522,36 +31557,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.userLogged();
             this.items();
             this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-              _this251.type = params.get("type");
+              _this252.type = params.get("type");
             });
           }
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this252 = this;
+          var _this253 = this;
 
           this.CMSSERVICE.getuserType(email).then(function (element) {
             if (element.data() != undefined) {
               if (element.data().UserType != "Agent") {
-                var dialogRef = _this252.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var dialogRef = _this253.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
-                    message: _this252.AgentSignIn
+                    message: _this253.AgentSignIn
                   }
                 });
               } else {
-                _this252.authService.SignIn(email, pass).then(function (data) {
-                  _this252.items();
+                _this253.authService.SignIn(email, pass).then(function (data) {
+                  _this253.items();
 
-                  _this252.userLogged();
+                  _this253.userLogged();
 
                   window.location.reload();
                 });
               }
             } else {
-              _this252.isLoading = false;
+              _this253.isLoading = false;
 
-              var _dialogRef180 = _this252.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+              var _dialogRef180 = _this253.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                 data: {
                   message: "User Does not exist"
                 }
@@ -31580,19 +31615,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this253 = this;
+          var _this254 = this;
 
           this.BuyerDetail = [];
           this.archieveUser = [];
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
               if (element.data().Archived == false) {
-                _this253.BuyerDetail.push({
+                _this254.BuyerDetail.push({
                   Detail: element.data(),
                   id: element.id
                 });
               } else {
-                _this253.archieveUser.push({
+                _this254.archieveUser.push({
                   Detail: element.data(),
                   id: element.id
                 });
@@ -31603,43 +31638,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this254 = this;
+          var _this255 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this254.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this254.userData));
+              _this255.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this255.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this254.loggedIn = true;
+              _this255.loggedIn = true;
 
-              _this254.agentItem();
+              _this255.agentItem();
 
-              _this254.checkUrl();
+              _this255.checkUrl();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this254.loggedIn = false;
+              _this255.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this255 = this;
+          var _this256 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this255.Companyname = element.data().company;
-              _this255.Address = element.data().address;
-              _this255.Postcode = element.data().postcode;
-              _this255.Phonenumber = element.data().phone;
-              _this255.Jobtitle = element.data().jobtitle;
-              _this255.SinglePercentage = element.data().solefees;
-              _this255.Multipercentage = element.data().multiplefees;
-              _this255.Image = element.data().image;
-              _this255.Fullname = element.data().fullname;
-              _this255.PropertyId = element.id;
-              _this255.UserId = _this255.user.uid;
+              _this256.Companyname = element.data().company;
+              _this256.Address = element.data().address;
+              _this256.Postcode = element.data().postcode;
+              _this256.Phonenumber = element.data().phone;
+              _this256.Jobtitle = element.data().jobtitle;
+              _this256.SinglePercentage = element.data().solefees;
+              _this256.Multipercentage = element.data().multiplefees;
+              _this256.Image = element.data().image;
+              _this256.Fullname = element.data().fullname;
+              _this256.PropertyId = element.id;
+              _this256.UserId = _this256.user.uid;
             });
           });
         }
@@ -31710,30 +31745,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "update",
         value: function update(docid, property) {
-          var _this256 = this;
-
-          property.Archived = true;
-          this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this256.items();
-          });
-        }
-      }, {
-        key: "restore",
-        value: function restore(docid, property) {
           var _this257 = this;
 
-          property.Archived = false;
+          property.Archived = true;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
             _this257.items();
           });
         }
       }, {
-        key: "delete",
-        value: function _delete(docid) {
+        key: "restore",
+        value: function restore(docid, property) {
           var _this258 = this;
 
-          this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
+          property.Archived = false;
+          this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
             _this258.items();
+          });
+        }
+      }, {
+        key: "delete",
+        value: function _delete(docid) {
+          var _this259 = this;
+
+          this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
+            _this259.items();
           });
         }
       }, {
@@ -31775,13 +31810,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this259 = this;
+          var _this260 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this259.AgentSignIn = element.data().AgentSignIn;
-            _this259.UserSignIn = element.data().UserSignIn;
-            _this259.WrongPassword = element.data().WrongPassword;
-            _this259.isLoading = false;
+            _this260.AgentSignIn = element.data().AgentSignIn;
+            _this260.UserSignIn = element.data().UserSignIn;
+            _this260.WrongPassword = element.data().WrongPassword;
+            _this260.isLoading = false;
           });
         }
       }]);
@@ -32177,7 +32212,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this260 = this;
+          var _this261 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -32186,10 +32221,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this260.id = params.get("id");
+            _this261.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this260.agents = data;
+            _this261.agents = data;
           });
           this.getAgentDetails();
           this.getAgentForm();
@@ -32197,7 +32232,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage, office) {
-          var _this261 = this;
+          var _this262 = this;
 
           if (this.agents.officephone != null || this.agents.phone != null) {
             var Office = parseInt(this.agents.officephone);
@@ -32301,25 +32336,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           } else {
             this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-              var dialogRef = _this261.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+              var dialogRef = _this262.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
                 data: {
                   message: "Profile Updated"
                 }
               });
 
-              _this261.edit = false;
+              _this262.edit = false;
             });
           }
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this262 = this;
+          var _this263 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this262.agents = element.data();
-              _this262.id = element.id;
+              _this263.agents = element.data();
+              _this263.id = element.id;
             });
           });
         }
@@ -32336,32 +32371,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this263 = this;
+          var _this264 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this263.FullName = element.data().FullName;
-            _this263.CompanyName = element.data().CompanyName;
-            _this263.Postcode = element.data().Postcode;
-            _this263.Address = element.data().Address;
-            _this263.JobTitle = element.data().JobTitle;
-            _this263.EmailAddress = element.data().EmailAddress;
-            _this263.emailvalidation = element.data().emailvalidation;
-            _this263.Password = element.data().Password;
-            _this263.officephone = element.data().officephone;
-            _this263.officephonevalidation = element.data().officephonevalidation;
-            _this263.officephonelength = element.data().officephonelength;
-            _this263.mobile = element.data().mobile;
-            _this263.mobilevalidity = element.data().mobilevalidity;
-            _this263.mobilelength = element.data().mobilelength;
-            _this263.solefees = element.data().solefees;
-            _this263.solefeesmore = element.data().solefeesmore;
-            _this263.solefeesless = element.data().solefeesless;
-            _this263.multiplefees = element.data().multiplefees;
-            _this263.multiplefeesmore = element.data().multiplefeesmore;
-            _this263.multiplefeesless = element.data().multiplefeesless;
-            _this263.Image = element.data().Image;
-            _this263.Imagesize = element.data().Imagesize;
-            _this263.isLoading = false;
+            _this264.FullName = element.data().FullName;
+            _this264.CompanyName = element.data().CompanyName;
+            _this264.Postcode = element.data().Postcode;
+            _this264.Address = element.data().Address;
+            _this264.JobTitle = element.data().JobTitle;
+            _this264.EmailAddress = element.data().EmailAddress;
+            _this264.emailvalidation = element.data().emailvalidation;
+            _this264.Password = element.data().Password;
+            _this264.officephone = element.data().officephone;
+            _this264.officephonevalidation = element.data().officephonevalidation;
+            _this264.officephonelength = element.data().officephonelength;
+            _this264.mobile = element.data().mobile;
+            _this264.mobilevalidity = element.data().mobilevalidity;
+            _this264.mobilelength = element.data().mobilelength;
+            _this264.solefees = element.data().solefees;
+            _this264.solefeesmore = element.data().solefeesmore;
+            _this264.solefeesless = element.data().solefeesless;
+            _this264.multiplefees = element.data().multiplefees;
+            _this264.multiplefeesmore = element.data().multiplefeesmore;
+            _this264.multiplefeesless = element.data().multiplefeesless;
+            _this264.Image = element.data().Image;
+            _this264.Imagesize = element.data().Imagesize;
+            _this264.isLoading = false;
           });
         }
       }]);
@@ -32799,19 +32834,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this264 = this;
+          var _this265 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this264.agents = element.data();
-              _this264.fullname = _this264.agents.fullname;
-              _this264.address = _this264.agents.address;
-              _this264.postcode = _this264.agents.postcode;
-              _this264.email = _this264.agents.email;
-              _this264.phone = _this264.agents.phone;
-              _this264.officephone = _this264.agents.officephone;
-              _this264.sole = _this264.agents.solefees;
-              _this264.multi = _this264.agents.multiplefees;
+              _this265.agents = element.data();
+              _this265.fullname = _this265.agents.fullname;
+              _this265.address = _this265.agents.address;
+              _this265.postcode = _this265.agents.postcode;
+              _this265.email = _this265.agents.email;
+              _this265.phone = _this265.agents.phone;
+              _this265.officephone = _this265.agents.officephone;
+              _this265.sole = _this265.agents.solefees;
+              _this265.multi = _this265.agents.multiplefees;
             });
           });
         }
@@ -34620,7 +34655,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location, dialog) {
-        var _this265 = this;
+        var _this266 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -34635,8 +34670,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this265.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this265.userData));
+            _this266.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this266.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -34790,7 +34825,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthLogin",
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee71() {
-            var _this266 = this;
+            var _this267 = this;
 
             var result, User, dialogRef;
             return regeneratorRuntime.wrap(function _callee71$(_context71) {
@@ -34806,9 +34841,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     User = "User";
                     this.ngZone.run(function () {
                       // console.log(result.user)
-                      _this266.SetUserData(result.user);
+                      _this267.SetUserData(result.user);
 
-                      _this266.createUserChecker(result.user, User);
+                      _this267.createUserChecker(result.user, User);
 
                       setTimeout(location.reload.bind(location), 2000);
                     });
@@ -34836,7 +34871,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthSignup",
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee72() {
-            var _this267 = this;
+            var _this268 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee72$(_context72) {
@@ -34850,7 +34885,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 3:
                     result = _context72.sent;
                     this.ngZone.run(function () {
-                      _this267.SetUserData(result.user);
+                      _this268.SetUserData(result.user);
                     });
                     _context72.next = 10;
                     break;
@@ -35402,37 +35437,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this268 = this;
+          var _this269 = this;
 
           this.isLoading = true;
           this.viewResult = true;
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this268.isLoading = true;
+              _this269.isLoading = true;
 
-              _this268.listingBuyers.push(element.data());
+              _this269.listingBuyers.push(element.data());
             });
 
-            _this268.HomeService.getlistingseller(_this268.uid).then(function (res) {
+            _this269.HomeService.getlistingseller(_this269.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this268.isLoading = true;
+                _this269.isLoading = true;
 
-                _this268.listingSeller.push(elements.data());
+                _this269.listingSeller.push(elements.data());
               });
-              _this268.isLoading = true;
-              _this268.checkNumberNestimates = _this268.listingBuyers.length + _this268.listingSeller.length;
-              _this268.isLoading = true;
+              _this269.isLoading = true;
+              _this269.checkNumberNestimates = _this269.listingBuyers.length + _this269.listingSeller.length;
+              _this269.isLoading = true;
 
-              if (_this268.checkNumberNestimates > 0) {
-                _this268.isLoading = true;
-                _this268.appMatches = true;
-                _this268.interval = setInterval(function () {
-                  _this268.isLoading = false;
+              if (_this269.checkNumberNestimates > 0) {
+                _this269.isLoading = true;
+                _this269.appMatches = true;
+                _this269.interval = setInterval(function () {
+                  _this269.isLoading = false;
                 }, 3000);
               } else {
-                _this268.isLoading = true;
-                _this268.viewResult = false;
-                _this268.isLoading = false;
+                _this269.isLoading = true;
+                _this269.viewResult = false;
+                _this269.isLoading = false;
               }
             });
           });
@@ -35512,9 +35547,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "search",
         value: function search(query) {
           var headerDict = {
-            "x-api-key": "bX81QSSnOt9UTwSmk32IC77dWsww9CW88YLi4vik"
+            "x-api-key": "zbRWJP7XVy3TdlagsusnDRWb4rZPJeF4y8sxli26"
           };
-          var url = "https://api-full.addressian.co.uk/postcode/";
+          var url = "https://api.addressian.co.uk/v1/autocomplete/";
+          return this.http.get(url + query, {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"](headerDict)
+          });
+        }
+      }, {
+        key: "search2",
+        value: function search2(query) {
+          var headerDict = {
+            "x-api-key": "8Wxx71FbAR2NjyosVIZw89WEiUPOCiP01nev9Lbx"
+          };
+          var url = "https://api.addressian.co.uk/v2/autocomplete/";
           return this.http.get(url + query, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"](headerDict)
           });
@@ -36104,11 +36150,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MiddleSliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this269 = this;
+          var _this270 = this;
 
           this.ActivatedRoutes.paramMap.subscribe(function (element) {});
           this.SellerNestimateDetails.getSellerRequirement(this.userID, this.child).then(function (element) {
-            _this269.AllImages = element.data().Images;
+            _this270.AllImages = element.data().Images;
           });
         }
       }]);
@@ -36390,33 +36436,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this270 = this;
+          var _this271 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
             password: password
           }).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            // login successful if there's a jwt token in the response
-            if (response.jwt && response.user) {
-              // store user details and jwt token in local storage to keep user logged in between page refreshes
-              localStorage.setItem('updatedUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
-              sessionStorage.setItem('currentJwt', response.jwt);
-              _this270.userData = response.user;
-              _this270.authToken = sessionStorage.getItem('currentJwt');
-
-              _this270.currentUserSubject.next(response.user);
-            }
-
-            return response.user;
-          }));
-        }
-      }, {
-        key: "Googlelogin",
-        value: function Googlelogin(token, accessToken) {
-          var _this271 = this;
-
-          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
@@ -36433,13 +36458,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
-        key: "Facebooklogin",
-        value: function Facebooklogin() {
+        key: "Googlelogin",
+        value: function Googlelogin(token, accessToken) {
           var _this272 = this;
 
-          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
-            console.log(response); // login successful if there's a jwt token in the response
-
+          return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            // login successful if there's a jwt token in the response
             if (response.jwt && response.user) {
               // store user details and jwt token in local storage to keep user logged in between page refreshes
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
@@ -36455,9 +36479,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }));
         }
       }, {
+        key: "Facebooklogin",
+        value: function Facebooklogin() {
+          var _this273 = this;
+
+          return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
+            console.log(response); // login successful if there's a jwt token in the response
+
+            if (response.jwt && response.user) {
+              // store user details and jwt token in local storage to keep user logged in between page refreshes
+              localStorage.setItem('updatedUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentUser', JSON.stringify(response.user));
+              sessionStorage.setItem('currentJwt', response.jwt);
+              _this273.userData = response.user;
+              _this273.authToken = sessionStorage.getItem('currentJwt');
+
+              _this273.currentUserSubject.next(response.user);
+            }
+
+            return response.user;
+          }));
+        }
+      }, {
         key: "logout",
         value: function logout() {
-          var _this273 = this;
+          var _this274 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -36465,7 +36511,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this273.router.navigate(["/homenew"]);
+            _this274.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -36692,21 +36738,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this274 = this;
+          var _this275 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           console.log(this.user);
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this274.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this274.userData));
+              _this275.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this275.userData));
 
-              _this274.LoggedIn();
+              _this275.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this274.LoggedOut();
+              _this275.LoggedOut();
             }
           });
 
@@ -36738,58 +36784,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this275 = this;
+          var _this276 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this275.isLoading = false;
+            _this276.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this276 = this;
+          var _this277 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this276.isLoading = false;
+            _this277.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this277 = this;
+          var _this278 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this277.isLoading = false;
+            _this278.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this278 = this;
+          var _this279 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this278.KnowUser.push(element.data());
+              _this279.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this278.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this279.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this278.isLoading = false;
+                _this279.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this278.authService.SignIn(email, pass).then(function (data) {
-                  _this278.isLoading = false;
+                _this279.authService.SignIn(email, pass).then(function (data) {
+                  _this279.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -36873,21 +36919,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this279 = this;
+          var _this280 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this279.notificationContent = res.data().SingupFromMenu;
+            _this280.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this280 = this;
+          var _this281 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this280.topLine = element.data().topLine;
-              _this280.secondLine = element.data().SecondLine;
+              _this281.topLine = element.data().topLine;
+              _this281.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -37018,11 +37064,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this281 = this;
+          var _this282 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (element) {
             element.forEach(function (element) {
-              _this281.termsCondition = element.data().Terms;
+              _this282.termsCondition = element.data().Terms;
             });
           });
         }
