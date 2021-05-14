@@ -631,7 +631,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">{{popupMessage}}...</p>\n      </div>\n\n</div>\n\n<div *ngIf=\"isRegister\" class=\"register-user-loading-container\">\n  <div class=\"progress-background\">\n    <h2 class=\"loader-text fixed-Label\">{{status}}</h2>\n  <mat-progress-spinner mode=\"indeterminate\" ></mat-progress-spinner>\n  </div>\n</div>\n\n\n\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\" id=\"boldText\">Agent SignUp Form</div>\n\n\n  <div class=\"mat-card-item\">\n    <div class=\"heading-signup heading-nestimate\" id=\"semiboldText\">Please fill your company details</div>\n  </div>\n\n\n\n  <div class=\"mat-card-item\">\n    <form>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Full Name</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName required>\n          <mat-error>{{FullName}}</mat-error>\n        </mat-form-field>\n      </div>\n\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n            <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company required>\n            <mat-error>{{CompanyName}}</mat-error>\n\n          </mat-form-field>\n        </div>\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes required>\n            <mat-error>{{Postcode}}</mat-error>\n          </mat-form-field>\n   \n        </div>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n          <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address required>\n          <mat-error>{{Address}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\">\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Job\"> Job title</span></mat-label>\n          <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs required>\n          <mat-error>{{JobTitle}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"OffNumber\">Office Phone Number</span></mat-label>\n          <input matInput  name=\"officephone\" [(ngModel)]=\"agentSignup.officephone\" #OfficePhone   minlength=\"10\"  [formControl]=\"phoneFormControl\"  required>\n          <span matPrefix>+44&nbsp;</span>\n          <!-- <mat-error>{{officephone}}</mat-error> -->\n          <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n            {{officephone}}\n           </mat-error>\n           <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n             {{officephone}}\n           </mat-error>\n           <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n             {{officephonevalidation}}\n           </mat-error>\n        </mat-form-field>\n      </div>\n\n\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Number\">Mobile Number</span></mat-label>\n          <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\"  [formControl]=\"mobileFormControl\"  required>\n          <span matPrefix>+44&nbsp;</span>\n\n          <mat-error *ngIf=\"mobileFormControl.hasError('mobilenumber') && !mobileFormControl.hasError('required')\">\n            {{mobile}}\n           </mat-error>\n           <mat-error *ngIf=\"mobileFormControl.hasError('required')\">\n            {{mobile}}\n           </mat-error>\n           <mat-error *ngIf=\"mobileFormControl.hasError('pattern')\">\n             {{mobilelength}}\n           </mat-error>\n  \n        </mat-form-field>\n      </div>\n\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address</span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" pattern=\"[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}\" #Emails required>\n          <mat-error>{{EmailAddress}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password</span></mat-label>\n          <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd required>\n          <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n            [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n          </button>\n          <mat-error>{{Password}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n      \n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n          <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole required>\n          <mat-error>{{solefeess}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n          <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees required>\n          <mat-error>{{multiplefeess}}</mat-error>\n        </mat-form-field>\n      </div>\n      <div class=\"agency-fees\" id=\"boldText\">Note: Sole and Multiple agency range between 1.5% to 4.0%</div>\n\n      <div class=\"Image-container\"  *ngIf=\"!imageUploaded\">\n        <mat-label class=\"fixed-Label\" id=\"boldText\"><span id=\"Image\" >Upload Logo</span></mat-label>\n        <div class=\"file-upload\">\n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\" >\n          </div>\n          <div class=\"agency-fees\" id=\"boldText\">Upload Max 2MB of Image</div>\n\n      </div>\n    \n\n      <ul class=\"submit-button\" (click)=\"Validation(agentSignup.fullname, agentSignup.email, agentSignup.password,this.type)\">\n        <div class=\"xd-submit-button previous-button\" >\n          <a  class=\"text-next-button \" id=\"boldText\">Start\n            My Free 3-Month Trial Now</a>\n        </div>\n      </ul>\n    \n\n\n    </form>\n  </div>\n</div>\n\n\n\n<div class=\"password-pop\" *ngIf=\"passwordpop\">\n  <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n</div>";
+    __webpack_exports__["default"] = "<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">{{popupMessage}}...</p>\n      </div>\n\n</div>\n\n<div *ngIf=\"isRegister\" class=\"register-user-loading-container\">\n  <div class=\"progress-background\">\n    <h2 class=\"loader-text fixed-Label\">{{status}}</h2>\n  <mat-progress-spinner mode=\"indeterminate\" ></mat-progress-spinner>\n  </div>\n</div>\n\n\n\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\" id=\"boldText\">Agent SignUp Form</div>\n\n\n  <div class=\"mat-card-item\">\n    <div class=\"heading-signup heading-nestimate\" id=\"semiboldText\">Please fill your company details</div>\n  </div>\n\n\n\n  <div class=\"mat-card-item\">\n    <form>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Full Name</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName required>\n          <mat-error>{{FullName}}</mat-error>\n        </mat-form-field>\n      </div>\n\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n            <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company required>\n            <mat-error>{{CompanyName}}</mat-error>\n\n          </mat-form-field>\n        </div>\n\n      <!-- <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes required>\n            <mat-error>{{Postcode}}</mat-error>\n          </mat-form-field>\n   \n        </div>\n      </div> -->\n\n      <div class=\"extra-field-two\" style=\"margin-bottom: 1.8em;\" >\n        <div class=\"full-width \" >\n      <mat-option style=\"border: 1px solid #50505a;border-radius: 3px;\"  appearance=\"outline\">\n    \n        <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" \n          aria-label=\"Post Code\" matInput [matAutocomplete]=\"autoCurrent\" [(ngModel)]=\"agentSignup.postcode\" minlength=\"5\" #postcodes  placeholder=\"Enter Postcode\" id=\"up\" required>\n     \n        <mat-autocomplete autoActiveFirstOption #autoCurrent=\"matAutocomplete\"\n          (optionSelected)='getPosts($event.option.value)'>\n          <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\"\n            [value]=\"item\" class=\"mat-option-line\">\n            <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n            </span> | <span>{{ item.citytown | titlecase}}</span>\n          </mat-option>\n        </mat-autocomplete>\n      </mat-option>\n    </div>\n  </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n          <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address required>\n          <mat-error>{{Address}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\">\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Job\"> Job title</span></mat-label>\n          <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs required>\n          <mat-error>{{JobTitle}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"OffNumber\">Office Phone Number</span></mat-label>\n          <input matInput  name=\"officephone\" [(ngModel)]=\"agentSignup.officephone\" #OfficePhone   minlength=\"10\"  [formControl]=\"phoneFormControl\"  required>\n          <span matPrefix>+44&nbsp;</span>\n          <!-- <mat-error>{{officephone}}</mat-error> -->\n          <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n            {{officephone}}\n           </mat-error>\n           <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n             {{officephone}}\n           </mat-error>\n           <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n             {{officephonevalidation}}\n           </mat-error>\n        </mat-form-field>\n      </div>\n\n\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Number\">Mobile Number</span></mat-label>\n          <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\"  [formControl]=\"mobileFormControl\"  required>\n          <span matPrefix>+44&nbsp;</span>\n\n          <mat-error *ngIf=\"mobileFormControl.hasError('mobilenumber') && !mobileFormControl.hasError('required')\">\n            {{mobile}}\n           </mat-error>\n           <mat-error *ngIf=\"mobileFormControl.hasError('required')\">\n            {{mobile}}\n           </mat-error>\n           <mat-error *ngIf=\"mobileFormControl.hasError('pattern')\">\n             {{mobilelength}}\n           </mat-error>\n  \n        </mat-form-field>\n      </div>\n\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address</span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" pattern=\"[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}\" #Emails required>\n          <mat-error>{{EmailAddress}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password</span></mat-label>\n          <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd required>\n          <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n            [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n          </button>\n          <mat-error>{{Password}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n      \n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n          <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole required>\n          <mat-error>{{solefeess}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n          <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees required>\n          <mat-error>{{multiplefeess}}</mat-error>\n        </mat-form-field>\n      </div>\n      <div class=\"agency-fees\" id=\"boldText\">Note: Sole and Multiple agency range between 1.5% to 4.0%</div>\n\n      <div class=\"Image-container\"  *ngIf=\"!imageUploaded\">\n        <mat-label class=\"fixed-Label\" id=\"boldText\"><span id=\"Image\" >Upload Logo</span></mat-label>\n        <div class=\"file-upload\">\n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\" >\n          </div>\n          <div class=\"agency-fees\" id=\"boldText\">Upload Max 2MB of Image</div>\n\n      </div>\n    \n\n      <ul class=\"submit-button\" (click)=\"Validation(agentSignup.fullname, agentSignup.email, agentSignup.password,this.type)\">\n        <div class=\"xd-submit-button previous-button\" >\n          <a  class=\"text-next-button \" id=\"boldText\">Start\n            My Free 3-Month Trial Now</a>\n        </div>\n      </ul>\n    \n\n\n    </form>\n  </div>\n</div>\n\n\n\n<div class=\"password-pop\" *ngIf=\"passwordpop\">\n  <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n</div>";
     /***/
   },
 
@@ -11252,18 +11252,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getPost",
         value: function getPost(value) {
+          var _this114 = this;
+
           this.listingBuyer.CurrentAddress = value.address;
           this.listingBuyer.CurrentTown = value.citytown;
           this.listingBuyer.Currentstate = value.county;
           this.listingBuyer.Currentpostcode = value.postcode;
+          this.postcodeService.searchPost(value.postcode).subscribe(function (data) {
+            _this114.listingBuyer.Currentcountry = data.country;
+          });
         }
       }, {
         key: "getPosts",
         value: function getPosts(value) {
+          var _this115 = this;
+
           this.listingBuyer.LookingTown = value.citytown;
           this.listingBuyer.Lookingstate = value.county;
           this.listingBuyer.Lookingpostcode = value.postcode;
           this.listingBuyer.LookingStreetname = value.address[2];
+          this.postcodeService.searchPost(value.postcode).subscribe(function (data) {
+            _this115.listingBuyer.Country = data.country;
+          });
         }
       }, {
         key: "selectTab",
@@ -11896,22 +11906,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this114 = this;
+          var _this116 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Currentpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this114.postcodeCoordinates = data;
-            _this114.user.Currentpostcode = _this114.listingBuyer.Currentpostcode.toUpperCase();
-            _this114.user.CurrentAddress = _this114.listingBuyer.CurrentAddress;
-            _this114.user.CurrentTown = _this114.listingBuyer.CurrentTown;
-            _this114.user.Currentstate = _this114.listingBuyer.Currentstate;
-            _this114["return"] = _this114.fillFormsService.createBuyerUserCustomer(_this114.user).then(function (data) {
-              _this114.isLoading = false;
+            _this116.postcodeCoordinates = data;
+            _this116.user.Currentpostcode = _this116.listingBuyer.Currentpostcode.toUpperCase();
+            _this116.user.CurrentAddress = _this116.listingBuyer.CurrentAddress;
+            _this116.user.CurrentTown = _this116.listingBuyer.CurrentTown;
+            _this116.user.Currentstate = _this116.listingBuyer.Currentstate;
+            _this116["return"] = _this116.fillFormsService.createBuyerUserCustomer(_this116.user).then(function (data) {
+              _this116.isLoading = false;
 
-              _this114.nextStep();
+              _this116.nextStep();
             });
           }, function (error) {
-            var dialogRef = _this114.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+            var dialogRef = _this116.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
               data: {
                 message: "Enter Valid Postcode"
               }
@@ -12010,30 +12020,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "submitBuyer",
         value: function submitBuyer() {
-          var _this115 = this;
+          var _this117 = this;
 
           this.isLoading = true; //Lookup Declared Function
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this115.postcodeCoordinates = data;
-            _this115.listingBuyer.longitude = _this115.postcodeCoordinates.result.longitude, _this115.listingBuyer.latitude = _this115.postcodeCoordinates.result.latitude, _this115.listingBuyer.UserId = _this115.userData.uid;
-            _this115.isLoading = true;
-            _this115.listingBuyer.UserId = _this115.uid;
-            _this115.listingBuyer.longitude, _this115.listingBuyer.latitude, _this115.listingBuyer.username = _this115.user.Name;
-            _this115.listingBuyer.Email = _this115.user.email;
-            _this115.listingBuyer.phonenumber = _this115.user.Phone;
-            _this115.listingBuyer.title = _this115.user.title;
-            _this115.listingBuyer.DOB = _this115.user.DOB;
-            _this115.listingBuyer.Lookingpostcode = _this115.listingBuyer.Lookingpostcode.toUpperCase();
-            _this115.listingBuyer.Currentpostcode = _this115.listingBuyer.Currentpostcode.toUpperCase();
-            _this115.newUser = true;
-            _this115["return"] = _this115.fillFormsService.createCustomer(_this115.userData.uid, _this115.listingBuyer).then(function (element) {
+            _this117.postcodeCoordinates = data;
+            _this117.listingBuyer.longitude = _this117.postcodeCoordinates.result.longitude, _this117.listingBuyer.latitude = _this117.postcodeCoordinates.result.latitude, _this117.listingBuyer.UserId = _this117.userData.uid;
+            _this117.isLoading = true;
+            _this117.listingBuyer.UserId = _this117.uid;
+            _this117.listingBuyer.longitude, _this117.listingBuyer.latitude, _this117.listingBuyer.username = _this117.user.Name;
+            _this117.listingBuyer.Email = _this117.user.email;
+            _this117.listingBuyer.phonenumber = _this117.user.Phone;
+            _this117.listingBuyer.title = _this117.user.title;
+            _this117.listingBuyer.DOB = _this117.user.DOB;
+            _this117.listingBuyer.Lookingpostcode = _this117.listingBuyer.Lookingpostcode.toUpperCase();
+            _this117.listingBuyer.Currentpostcode = _this117.listingBuyer.Currentpostcode.toUpperCase();
+            _this117.newUser = true;
+            _this117["return"] = _this117.fillFormsService.createCustomer(_this117.userData.uid, _this117.listingBuyer).then(function (element) {
               if (element == true) {
-                localStorage.setItem("buyerUserDetails", JSON.stringify(_this115.listingBuyer));
-                _this115.isLoading = false;
-                _this115.register = false;
+                localStorage.setItem("buyerUserDetails", JSON.stringify(_this117.listingBuyer));
+                _this117.isLoading = false;
+                _this117.register = false;
 
-                _this115.router.navigate(["/buyerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MinAmount/MaxAmount/latitude/longitude/" + _this115.newUser + "/PropertyFor/LookingStreetname/Conditions/FinancialPosition/Validity/Position/UserId/ChainStatus/" + _this115.uid]);
+                _this117.router.navigate(["/buyerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MinAmount/MaxAmount/latitude/longitude/" + _this117.newUser + "/PropertyFor/LookingStreetname/Conditions/FinancialPosition/Validity/Position/UserId/ChainStatus/" + _this117.uid]);
               }
             });
           });
@@ -12041,13 +12051,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this116 = this;
+          var _this118 = this;
 
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.trim()).subscribe(function (data) {
-            _this116.register = true;
+            _this118.register = true;
           }, function (error) {
             if (error.status) {
-              var dialogRef = _this116.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
+              var dialogRef = _this118.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_16__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please enter valid postcode"
                 }
@@ -12074,87 +12084,87 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this117 = this;
+          var _this119 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this117.notificationContent = res.data().BuyerSignupNotification;
+            _this119.notificationContent = res.data().BuyerSignupNotification;
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this118 = this;
+          var _this120 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this118.topLine = element.data().topLine;
-              _this118.secondLine = element.data().SecondLine;
+              _this120.topLine = element.data().topLine;
+              _this120.secondLine = element.data().SecondLine;
             });
           });
         }
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this119 = this;
+          var _this121 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.PersonalDetail).then(function (element) {
-            _this119.Title = element.data().Title;
-            _this119.FullName = element.data().FullName;
-            _this119.DateofBirth = element.data().DateofBirth;
-            _this119.DateofBirthValidate = element.data().DateofBirthValidate;
-            _this119.PhoneEmpty = element.data().PhoneEmpty;
-            _this119.PhoneValidation = element.data().PhoneValidation;
-            _this119.PhoneLength = element.data().PhoneLength;
-            _this119.CurrentPostcode = element.data().CurrentPostcode;
-            _this119.PostcodeLength = element.data().PostcodeLength;
-            _this119.CurrentAaddress = element.data().CurrentAaddress;
-            _this119.CurrentTown = element.data().CurrentTown;
-            _this119.CurrentCounty = element.data().CurrentCounty;
-            _this119.CurrentCountry = element.data().CurrentCountry;
-            _this119.isLoading = false;
+            _this121.Title = element.data().Title;
+            _this121.FullName = element.data().FullName;
+            _this121.DateofBirth = element.data().DateofBirth;
+            _this121.DateofBirthValidate = element.data().DateofBirthValidate;
+            _this121.PhoneEmpty = element.data().PhoneEmpty;
+            _this121.PhoneValidation = element.data().PhoneValidation;
+            _this121.PhoneLength = element.data().PhoneLength;
+            _this121.CurrentPostcode = element.data().CurrentPostcode;
+            _this121.PostcodeLength = element.data().PostcodeLength;
+            _this121.CurrentAaddress = element.data().CurrentAaddress;
+            _this121.CurrentTown = element.data().CurrentTown;
+            _this121.CurrentCounty = element.data().CurrentCounty;
+            _this121.CurrentCountry = element.data().CurrentCountry;
+            _this121.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPropertyDetailForm",
         value: function getSeekerPropertyDetailForm() {
-          var _this120 = this;
+          var _this122 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.PropertyDetail).then(function (element) {
-            _this120.Buy = element.data().Buy;
-            _this120.LPostcode = element.data().LPostcode;
-            _this120.LPostcodeLength = element.data().LPostcodeLength;
-            _this120.LStreetname = element.data().LStreetname;
-            _this120.LTown = element.data().LTown;
-            _this120.LCounty = element.data().LCounty;
-            _this120.LCountry = element.data().LCountry;
-            _this120.PropertyType = element.data().PropertyType;
-            _this120.proptype = element.data().PropertyType;
-            _this120.Roommin = element.data().Roommin;
-            _this120.Roomsmax = element.data().Roomsmax;
-            _this120.MinimumRoomValidation = element.data().MinimumRoomValidation;
-            _this120.MaximumRoomValidation = element.data().MaximumRoomValidation;
-            _this120.FinancialRenting = element.data().FinancialRenting;
-            _this120.finType = element.data().FinancialPosition;
-            _this120.FinancialPosition = element.data().FinancialPosition;
-            _this120.MinAmount = element.data().MinAmount;
-            _this120.MaxAmount = element.data().MaxAmount;
-            _this120.Min = element.data().Min;
-            _this120.Max = element.data().Max;
-            _this120.Validity = element.data().Validity;
-            _this120.isLoading = false;
+            _this122.Buy = element.data().Buy;
+            _this122.LPostcode = element.data().LPostcode;
+            _this122.LPostcodeLength = element.data().LPostcodeLength;
+            _this122.LStreetname = element.data().LStreetname;
+            _this122.LTown = element.data().LTown;
+            _this122.LCounty = element.data().LCounty;
+            _this122.LCountry = element.data().LCountry;
+            _this122.PropertyType = element.data().PropertyType;
+            _this122.proptype = element.data().PropertyType;
+            _this122.Roommin = element.data().Roommin;
+            _this122.Roomsmax = element.data().Roomsmax;
+            _this122.MinimumRoomValidation = element.data().MinimumRoomValidation;
+            _this122.MaximumRoomValidation = element.data().MaximumRoomValidation;
+            _this122.FinancialRenting = element.data().FinancialRenting;
+            _this122.finType = element.data().FinancialPosition;
+            _this122.FinancialPosition = element.data().FinancialPosition;
+            _this122.MinAmount = element.data().MinAmount;
+            _this122.MaxAmount = element.data().MaxAmount;
+            _this122.Min = element.data().Min;
+            _this122.Max = element.data().Max;
+            _this122.Validity = element.data().Validity;
+            _this122.isLoading = false;
           });
         }
       }, {
         key: "getSeekerOptionalDetailForm",
         value: function getSeekerOptionalDetailForm() {
-          var _this121 = this;
+          var _this123 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.OptionalDetail).then(function (element) {
-            _this121.MinimumBathroom = element.data().MinimumBathroom;
-            _this121.MaximumBathroom = element.data().MaximumBathroom;
-            _this121.MinimumReception = element.data().MinimumReception;
-            _this121.MaximumReception = element.data().MaximumReception;
-            _this121.isLoading = false;
+            _this123.MinimumBathroom = element.data().MinimumBathroom;
+            _this123.MaximumBathroom = element.data().MaximumBathroom;
+            _this123.MinimumReception = element.data().MinimumReception;
+            _this123.MaximumReception = element.data().MaximumReception;
+            _this123.isLoading = false;
           });
         }
       }, {
@@ -12904,7 +12914,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this122 = this;
+          var _this124 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -12920,31 +12930,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.SellermatchesService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this122.imageUrl = element.data().SellerBuyerMatchesPageImage;
+              _this124.imageUrl = element.data().SellerBuyerMatchesPageImage;
             });
           });
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this122.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
-            _this122.Property_Type = params.get("PropertyType");
-            _this122.Looking_Town = params.get("LookingTown");
-            _this122.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
-            _this122.New_latitude = params.get("latitude");
-            _this122.New_longitude = params.get("longitude");
-            _this122.newUser = params.get("newUser");
-            _this122.Property_For = params.get("PropertyFor"); //Seller Params
+            _this124.Looking_postcode = params.get("Lookingpostcode").replace(/\s/g, "");
+            _this124.Property_Type = params.get("PropertyType");
+            _this124.Looking_Town = params.get("LookingTown");
+            _this124.Max_Amount = params.get("MaxAmount").replace(/,/g, "");
+            _this124.New_latitude = params.get("latitude");
+            _this124.New_longitude = params.get("longitude");
+            _this124.newUser = params.get("newUser");
+            _this124.Property_For = params.get("PropertyFor"); //Seller Params
 
-            _this122.New_state = params.get("Lookingstate");
-            _this122.New_rooms = params.get("Maxrooms");
-            _this122.New_Propertycondition = params.get("PropertyCondition");
-            _this122.New_Address = params.get("LookingAddress");
-            _this122.New_ownership = params.get("ownership");
-            _this122.New_features = params.get("features");
-            _this122.New_userId = params.get("UserId");
-            _this122.New_Maxbathrooms = params.get("Maxbathrooms");
-            _this122.New_Maxreception = params.get("Maxreception");
-            _this122.New_ownership = params.get("ownership");
-            _this122.New_Maxrooms = params.get("Maxrooms");
-            _this122.Look_id = params.get("id");
+            _this124.New_state = params.get("Lookingstate");
+            _this124.New_rooms = params.get("Maxrooms");
+            _this124.New_Propertycondition = params.get("PropertyCondition");
+            _this124.New_Address = params.get("LookingAddress");
+            _this124.New_ownership = params.get("ownership");
+            _this124.New_features = params.get("features");
+            _this124.New_userId = params.get("UserId");
+            _this124.New_Maxbathrooms = params.get("Maxbathrooms");
+            _this124.New_Maxreception = params.get("Maxreception");
+            _this124.New_ownership = params.get("ownership");
+            _this124.New_Maxrooms = params.get("Maxrooms");
+            _this124.Look_id = params.get("id");
           });
 
           if (this.newUser == "false") {
@@ -12996,86 +13006,86 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
               //Min-MAx Amount Removed Comas and Formula
-              _this122.maxAmount = _this122.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this122.maxAmount);
-              _this122.Look_minamount = element.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this122.Look_minamount);
-              _this122.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this122.Look_maxamount);
-              _this122.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this122.less);
-              _this122.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this122.more); //Remove Postcode Spaces
+              _this124.maxAmount = _this124.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this124.maxAmount);
+              _this124.Look_minamount = element.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this124.Look_minamount);
+              _this124.Look_maxamount = element.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this124.Look_maxamount);
+              _this124.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this124.less);
+              _this124.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this124.more); //Remove Postcode Spaces
 
-              _this122.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
-              _this122.listing = _this122.Look_postcode;
+              _this124.removespace = element.data().Lookingpostcode.replace(/\s/g, "");
+              _this124.listing = _this124.Look_postcode;
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this122.Look_postcode && element.data().PropertyFor == _this122.Look_PropertyFor && element.data().PropertyType == _this122.Look_PropertyType && _this122.uid != element.data().UserId && less <= maxAmount && more >= maxAmount) {
-                _this122.sellermatchedProperties.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") == _this124.Look_postcode && element.data().PropertyFor == _this124.Look_PropertyFor && element.data().PropertyType == _this124.Look_PropertyType && _this124.uid != element.data().UserId && less <= maxAmount && more >= maxAmount) {
+                _this124.sellermatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
 
-                _this122.matchedstartPage = 0;
-                _this122.matchedpaginationLimit = 6;
+                _this124.matchedstartPage = 0;
+                _this124.matchedpaginationLimit = 6;
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this122.Look_postcode && _this122.Look_PropertyFor == element.PropertyFor && _this122.uid != element.data().UserId && element.data().PropertyType == _this122.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this122.removespace.substring(0, 5) == _this122.listing.substring(0, 5) && element.latitude && element.longitude) {
-                _this122.distanceInKm = _this122.getDistanceFromLatLonInKm(_this122.Look_latitude, _this122.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this124.Look_postcode && _this124.Look_PropertyFor == element.PropertyFor && _this124.uid != element.data().UserId && element.data().PropertyType == _this124.Look_PropertyType && less <= maxAmount && more >= maxAmount && _this124.removespace.substring(0, 5) == _this124.listing.substring(0, 5) && element.latitude && element.longitude) {
+                _this124.distanceInKm = _this124.getDistanceFromLatLonInKm(_this124.Look_latitude, _this124.Look_longitude, element.latitude, element.longitude);
 
-                _this122.sellerunmatchedProperties.push({
+                _this124.sellerunmatchedProperties.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this122.distanceInKm * 0.6214
+                  distance: _this124.distanceInKm * 0.6214
                 });
 
-                _this122.startPage = 0;
-                _this122.paginationLimit = 6;
+                _this124.startPage = 0;
+                _this124.paginationLimit = 6;
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this122.Look_postcode && element.data().PropertyType == _this122.Look_PropertyType && _this122.uid != element.data().UserId && element.data().PropertyFor == _this122.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this122.removespace.substring(0, 5) != _this122.listing.substring(0, 5) && _this122.removespace.substring(0, 3) == _this122.listing.substring(0, 3)) {
-                _this122.sellerunmatchedPropertiesFirst.push({
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this124.Look_postcode && element.data().PropertyType == _this124.Look_PropertyType && _this124.uid != element.data().UserId && element.data().PropertyFor == _this124.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this124.removespace.substring(0, 5) != _this124.listing.substring(0, 5) && _this124.removespace.substring(0, 3) == _this124.listing.substring(0, 3)) {
+                _this124.sellerunmatchedPropertiesFirst.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this122.Look_postcode && element.data().PropertyType != _this122.Look_PropertyType && _this122.uid != element.data().UserId && element.data().PropertyFor == _this122.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this122.removespace.substring(0, 5) != _this122.listing.substring(0, 5) && _this122.removespace.substring(0, 3) == _this122.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this122.distanceInKm = _this122.getDistanceFromLatLonInKm(_this122.Look_latitude, _this122.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this124.Look_postcode && element.data().PropertyType != _this124.Look_PropertyType && _this124.uid != element.data().UserId && element.data().PropertyFor == _this124.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this124.removespace.substring(0, 5) != _this124.listing.substring(0, 5) && _this124.removespace.substring(0, 3) == _this124.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this124.distanceInKm = _this124.getDistanceFromLatLonInKm(_this124.Look_latitude, _this124.Look_longitude, element.latitude, element.longitude);
 
-                _this122.sellerunmatchedPriceLogic.push({
+                _this124.sellerunmatchedPriceLogic.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this122.distanceInKm * 0.6214
+                  distance: _this124.distanceInKm * 0.6214
                 });
 
-                _this122.startPage = 0;
-                _this122.paginationLimit = 6;
+                _this124.startPage = 0;
+                _this124.paginationLimit = 6;
               } //Done
               //All other properties - Nationwide
 
 
-              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this122.Look_postcode && element.data().PropertyFor == _this122.Look_PropertyFor && _this122.uid != element.data().UserId && _this122.removespace.substring(0, 5) != _this122.listing.substring(0, 5) && _this122.removespace.substring(0, 3) != _this122.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
-                _this122.distanceInKm = _this122.getDistanceFromLatLonInKm(_this122.Look_latitude, _this122.Look_longitude, element.latitude, element.longitude);
+              if (element.data().Lookingpostcode.replace(/\s/g, "") != _this124.Look_postcode && element.data().PropertyFor == _this124.Look_PropertyFor && _this124.uid != element.data().UserId && _this124.removespace.substring(0, 5) != _this124.listing.substring(0, 5) && _this124.removespace.substring(0, 3) != _this124.listing.substring(0, 3) && element.data().latitude && element.data().longitude) {
+                _this124.distanceInKm = _this124.getDistanceFromLatLonInKm(_this124.Look_latitude, _this124.Look_longitude, element.latitude, element.longitude);
 
-                _this122.sellerlookTown.push({
+                _this124.sellerlookTown.push({
                   detail: element.data(),
                   propertyId: element.id,
-                  distance: _this122.distanceInKm * 0.6214
+                  distance: _this124.distanceInKm * 0.6214
                 });
 
-                _this122.startPage = 0;
-                _this122.paginationLimit = 6;
+                _this124.startPage = 0;
+                _this124.paginationLimit = 6;
               }
             });
 
-            _this122.sellerunmatchedProperties.sort(_this122.compare);
+            _this124.sellerunmatchedProperties.sort(_this124.compare);
 
-            _this122.noOfMatches = _this122.sellermatchedProperties.length;
-            _this122.noOfUnmatched = _this122.sellerunmatchedProperties.length;
+            _this124.noOfMatches = _this124.sellermatchedProperties.length;
+            _this124.noOfUnmatched = _this124.sellerunmatchedProperties.length;
           });
           this.getFavoarte();
           this.getExpressedListingIds();
@@ -13255,12 +13265,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this123 = this;
+          var _this125 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this123.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this123.distinctExpressedUid.push(item.data().propertyId);
+              if (_this125.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this125.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -13279,28 +13289,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addtoFavorate",
         value: function addtoFavorate(uid, property, id) {
-          var _this124 = this;
+          var _this126 = this;
 
           this.UserProperty = {
             PropertyDetail: property,
             proppertyId: id
           };
           this.SellermatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this124.getFavoarte();
+            _this126.getFavoarte();
 
-            _this124.checkFavorateValue(id);
+            _this126.checkFavorateValue(id);
           });
         }
       }, {
         key: "getFavoarte",
         value: function getFavoarte() {
-          var _this125 = this;
+          var _this127 = this;
 
           this.favorateProperty = [];
           this.SellermatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this125.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this125.favorateProperty.push(item.data().proppertyId);
+              if (_this127.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this127.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -13319,10 +13329,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteFavorate",
         value: function deleteFavorate(docid) {
-          var _this126 = this;
+          var _this128 = this;
 
           this.SellermatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this126.getFavoarte();
+            _this128.getFavoarte();
           });
         }
       }, {
@@ -13632,56 +13642,56 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerSelectedPropertyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this127 = this;
+          var _this129 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this127.PriceRange = params.get("MaxAmount");
-            _this127.MinAmount = params.get("MinAmount");
-            _this127.Lookingpostcode = params.get("Lookingpostcode");
-            _this127.LookingStreetname = params.get("LookingStreetname");
-            _this127.Position = params.get("Position");
-            _this127.PropertyType = params.get("PropertyType");
-            _this127.Roomsmax = params.get("Roomsmax");
-            _this127.ownership = params.get("Ownership");
-            _this127.Conditions = params.get("Conditions");
-            _this127.Maxbathroom = params.get("Maxbathroom");
-            _this127.Maxreception = params.get("Maxreception");
-            _this127.features = params.get("features");
-            _this127.UserId = params.get("UserId").replace(/\s/g, "");
-            _this127.FinancialPosition = params.get("FinancialPosition");
-            _this127.ChainStatus = params.get("ChainStatus");
-            _this127.propertyId = params.get("propertyId");
-            _this127.expressed = params.get("expressed");
-            _this127.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
+            _this129.PriceRange = params.get("MaxAmount");
+            _this129.MinAmount = params.get("MinAmount");
+            _this129.Lookingpostcode = params.get("Lookingpostcode");
+            _this129.LookingStreetname = params.get("LookingStreetname");
+            _this129.Position = params.get("Position");
+            _this129.PropertyType = params.get("PropertyType");
+            _this129.Roomsmax = params.get("Roomsmax");
+            _this129.ownership = params.get("Ownership");
+            _this129.Conditions = params.get("Conditions");
+            _this129.Maxbathroom = params.get("Maxbathroom");
+            _this129.Maxreception = params.get("Maxreception");
+            _this129.features = params.get("features");
+            _this129.UserId = params.get("UserId").replace(/\s/g, "");
+            _this129.FinancialPosition = params.get("FinancialPosition");
+            _this129.ChainStatus = params.get("ChainStatus");
+            _this129.propertyId = params.get("propertyId");
+            _this129.expressed = params.get("expressed");
+            _this129.PropertyFor = params.get("PropertyFor"); //SelectedSeller Params
 
-            _this127.Look_State = params.get("Look_state");
-            _this127.Look_rooms = params.get("Look_rooms");
-            _this127.Look_Propertycondition = params.get("Look_Propertycondition");
-            _this127.Look_Address = params.get("Look_Address");
-            _this127.Look_ownership = params.get("Look_ownership");
-            _this127.Look_features = params.get("Look_features");
-            _this127.Look_userId = params.get("Look_userId");
-            _this127.Look_postcode = params.get("Look_postcode");
-            _this127.Look_PropertyType = params.get("Look_PropertyType");
-            _this127.Look_maxAmount = params.get("Look_maxAmount");
-            _this127.Look_Town = params.get("Look_Town");
-            _this127.Look_Address = params.get("Look_Address");
-            _this127.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
-            _this127.Look_Maxreceptions = params.get("Look_Maxreceptions");
-            _this127.Look_ownership = params.get("Look_ownership");
-            _this127.Look_Maxrooms = params.get("Look_Maxrooms");
-            _this127.Look_Propertyfor = params.get("Look_PropertyFor");
-            _this127.look_id = params.get("Look_id");
+            _this129.Look_State = params.get("Look_state");
+            _this129.Look_rooms = params.get("Look_rooms");
+            _this129.Look_Propertycondition = params.get("Look_Propertycondition");
+            _this129.Look_Address = params.get("Look_Address");
+            _this129.Look_ownership = params.get("Look_ownership");
+            _this129.Look_features = params.get("Look_features");
+            _this129.Look_userId = params.get("Look_userId");
+            _this129.Look_postcode = params.get("Look_postcode");
+            _this129.Look_PropertyType = params.get("Look_PropertyType");
+            _this129.Look_maxAmount = params.get("Look_maxAmount");
+            _this129.Look_Town = params.get("Look_Town");
+            _this129.Look_Address = params.get("Look_Address");
+            _this129.Look_Maxbathrooms = params.get("Look_Maxbathrooms");
+            _this129.Look_Maxreceptions = params.get("Look_Maxreceptions");
+            _this129.Look_ownership = params.get("Look_ownership");
+            _this129.Look_Maxrooms = params.get("Look_Maxrooms");
+            _this129.Look_Propertyfor = params.get("Look_PropertyFor");
+            _this129.look_id = params.get("Look_id");
           });
           this.getBuyerDetails();
           this.getSellerDetails();
           this.CMSSERVICE.getBlueNotification(1).then(function (data) {
-            _this127.notificationContent = data.data().SellerMatchesExpressInterestNotifcation;
+            _this129.notificationContent = data.data().SellerMatchesExpressInterestNotifcation;
           });
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this127.ExpressedNestimate = element.data().ExpressedNestimate;
+            _this129.ExpressedNestimate = element.data().ExpressedNestimate;
           });
 
           this._router.events.subscribe(function (evt) {
@@ -13696,7 +13706,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "submitForm",
         value: function submitForm() {
-          var _this128 = this;
+          var _this130 = this;
 
           this.sellerExpressed = localStorage.getItem("sellerexpressed");
           this.isSellerSelected = true;
@@ -13713,8 +13723,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesSellerCreate(this.uid, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this128.isSellerSelected = false;
-              _this128.overlay = false;
+              _this130.isSellerSelected = false;
+              _this130.overlay = false;
             }
           });
           this.matchesBuyer = {
@@ -13729,13 +13739,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.isSellerSelected = true;
           this["return"] = this.seller_Selected_propertydetail_Service.matchesBuyerCreate(this.UserId, this.matchesBuyer).then(function (data) {
             if (data == true) {
-              _this128.isSellerSelected = false;
-              _this128.datastored = true;
-              _this128.express = false;
+              _this130.isSellerSelected = false;
+              _this130.datastored = true;
+              _this130.express = false;
 
-              _this128.createSellerNotification();
+              _this130.createSellerNotification();
 
-              _this128.addToExpressCollection();
+              _this130.addToExpressCollection();
             }
           });
         }
@@ -13757,17 +13767,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this129 = this;
+          var _this131 = this;
 
           this["return"] = this.seller_Selected_propertydetail_Service.ExpressInterest(this.uid, this.propertyId.trim()).then(function (data) {
             if (data == true) {
-              _this129.isSellerSelected = false;
-              _this129.datastored = true;
-              _this129.express = false;
+              _this131.isSellerSelected = false;
+              _this131.datastored = true;
+              _this131.express = false;
 
-              var dialogRef = _this129.dialog.open(_Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_11__["AlertSelectedPropertyComponent"], {
+              var dialogRef = _this131.dialog.open(_Misc_alert_selected_property_alert_selected_property_component__WEBPACK_IMPORTED_MODULE_11__["AlertSelectedPropertyComponent"], {
                 data: {
-                  message: _this129.ExpressedNestimate
+                  message: _this131.ExpressedNestimate
                 }
               });
             }
@@ -13791,51 +13801,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this130 = this;
+          var _this132 = this;
 
           this.seller_Selected_propertydetail_Service.getBuyerRequirement(this.UserId, this.propertyId).then(function (res) {
-            _this130.buyerDetails = res.data();
-            _this130.buyingPosition = res.data().Position;
-            _this130.buyerFinancialPosition = res.data().FinancialPosition;
-            _this130.BuyerPropertyType = res.data().PropertyType;
-            _this130.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this130.BuyerRoommin = res.data().Roommin;
-            _this130.BuyerRoomsmax = res.data().Roomsmax;
-            _this130.username = res.data().username;
-            _this130.usertitle = res.data().usertitle;
-            _this130.buyerPropertyFor = res.data().PropertyFor;
-            _this130.ChainStatus = res.data().ChainStatus;
-            _this130.Conditions = res.data().Conditions;
-            _this130.LookingTown = res.data().LookingTown;
-            _this130.Maxreception = res.data().Maxreception;
-            _this130.Minreception = res.data().Minreception;
-            _this130.Ownership = res.data().Ownership;
-            _this130.Maxbathroom = res.data().Maxbathroom;
-            _this130.Minbathroom = res.data().Minbathroom;
-            _this130.BuyerUserId = res.data().UserId;
+            _this132.buyerDetails = res.data();
+            _this132.buyingPosition = res.data().Position;
+            _this132.buyerFinancialPosition = res.data().FinancialPosition;
+            _this132.BuyerPropertyType = res.data().PropertyType;
+            _this132.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this132.BuyerRoommin = res.data().Roommin;
+            _this132.BuyerRoomsmax = res.data().Roomsmax;
+            _this132.username = res.data().username;
+            _this132.usertitle = res.data().usertitle;
+            _this132.buyerPropertyFor = res.data().PropertyFor;
+            _this132.ChainStatus = res.data().ChainStatus;
+            _this132.Conditions = res.data().Conditions;
+            _this132.LookingTown = res.data().LookingTown;
+            _this132.Maxreception = res.data().Maxreception;
+            _this132.Minreception = res.data().Minreception;
+            _this132.Ownership = res.data().Ownership;
+            _this132.Maxbathroom = res.data().Maxbathroom;
+            _this132.Minbathroom = res.data().Minbathroom;
+            _this132.BuyerUserId = res.data().UserId;
 
-            _this130.Recentlyviewed();
+            _this132.Recentlyviewed();
           });
         }
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this131 = this;
+          var _this133 = this;
 
           this.seller_Selected_propertydetail_Service.getSeller(this.uid, this.look_id).then(function (res) {
-            _this131.sellerDetails = res.data();
+            _this133.sellerDetails = res.data();
           });
         }
       }, {
         key: "Recentlyviewed",
         value: function Recentlyviewed() {
-          var _this132 = this;
+          var _this134 = this;
 
           this.seller_Selected_propertydetail_Service.getSellerRecentlyItems(this.uid, this.propertyId).then(function (getData) {
             if (getData.data() == undefined) {
-              _this132.buyerDetails.time = _this132.now;
+              _this134.buyerDetails.time = _this134.now;
 
-              _this132.seller_Selected_propertydetail_Service.RecentlyView(_this132.uid, _this132.buyerDetails, _this132.propertyId).then(function (res) {});
+              _this134.seller_Selected_propertydetail_Service.RecentlyView(_this134.uid, _this134.buyerDetails, _this134.propertyId).then(function (res) {});
             }
           });
         }
@@ -14389,7 +14399,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(FillFormSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this133 = this;
+          var _this135 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -14399,40 +14409,40 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this133.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this133.userData));
+              _this135.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this135.userData));
               JSON.parse(localStorage.getItem("user"));
 
-              _this133.LoggedIn();
+              _this135.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this133.LoggedOut();
+              _this135.LoggedOut();
             }
           });
           this.getSeekerPersonalDetailForm();
           this.getSeekerPropertyDetailForm();
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this133.sellerRightImageUrl = element.data().SellerPropertyRightImage;
+              _this135.sellerRightImageUrl = element.data().SellerPropertyRightImage;
             });
           }); // End method
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this133.Lookaddress = params.get("LookingAddress");
-            _this133.LookTown = params.get("LookingTown");
-            _this133.Lookstate = params.get("Lookingstate");
-            _this133.Country = params.get("Country");
-            _this133.Property = params.get("PropertyType");
-            _this133.Rooms = params.get("Maxrooms");
-            _this133.Amount = params.get("MaxAmount");
-            _this133.Ownership = params.get("ownership");
-            _this133.Bathrooms = params.get("Maxbathrooms");
-            _this133.Reception = params.get("Maxreception");
-            _this133.Condition = params.get("PropertyCondition");
-            _this133.Features = params.get("features");
-            _this133.country = params.get("Country");
+            _this135.Lookaddress = params.get("LookingAddress");
+            _this135.LookTown = params.get("LookingTown");
+            _this135.Lookstate = params.get("Lookingstate");
+            _this135.Country = params.get("Country");
+            _this135.Property = params.get("PropertyType");
+            _this135.Rooms = params.get("Maxrooms");
+            _this135.Amount = params.get("MaxAmount");
+            _this135.Ownership = params.get("ownership");
+            _this135.Bathrooms = params.get("Maxbathrooms");
+            _this135.Reception = params.get("Maxreception");
+            _this135.Condition = params.get("PropertyCondition");
+            _this135.Features = params.get("features");
+            _this135.country = params.get("Country");
           });
           this.getSignupTerms(); // The auto population of github method
 
@@ -14440,11 +14450,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value != null) {
-              _this133.lookup(_this133.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this133.data = data;
+              _this135.lookup(_this135.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this135.data = data;
               });
 
-              return _this133.lookup(_this133.listingSeller.Lookingpostcode);
+              return _this135.lookup(_this135.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -14453,65 +14463,63 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "_filter",
         value: function _filter(value) {
-          var _this134 = this;
+          var _this136 = this;
 
           var filterValue = value;
 
           if (filterValue.length != 0) {
             this.sellerService.search(filterValue).subscribe(function (data) {
-              _this134.options = data;
+              _this136.options = data;
             }); // return  this.options.filter(option => option.toLowerCase().indexOf(filterValue) === 0);
           }
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this135 = this;
+          var _this137 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this135.topLine = element.data().topLine;
-              _this135.secondLine = element.data().SecondLine;
+              _this137.topLine = element.data().topLine;
+              _this137.secondLine = element.data().SecondLine;
             });
           });
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this136 = this;
+          var _this138 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.SellerformService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this136.uid) {
-                _this136.user.Name = element.data().Name;
-                _this136.user.Email = element.data().email;
+              if (element.data().uid == _this138.uid) {
+                _this138.user.Name = element.data().Name;
+                _this138.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this136.user.DOB = element.data().DOB.toDate();
+                  _this138.user.DOB = element.data().DOB.toDate();
                 }
 
-                _this136.user.Phone = element.data().Phone;
-                _this136.user.title = "Mr";
-                _this136.user.Currentpostcode = element.data().Currentpostcode;
-                _this136.user.CurrentAddress = element.data().Currentaddress;
-                _this136.user.CurrentTown = element.data().CurrentTowncity;
-                _this136.user.Currentstate = element.data().Currentstate;
-                _this136.user.CurrentCountry = element.data().CurrentCountry;
+                _this138.user.Phone = element.data().Phone;
+                _this138.user.title = "Mr";
+                _this138.user.Currentpostcode = element.data().Currentpostcode;
+                _this138.user.CurrentAddress = element.data().Currentaddress;
+                _this138.user.CurrentTown = element.data().CurrentTowncity;
+                _this138.user.Currentstate = element.data().Currentstate;
+                _this138.user.CurrentCountry = element.data().CurrentCountry;
               }
 
-              _this136.addressianAutoCompleteCurrent$ = _this136.autoCompleteControlCurrent.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
+              _this138.addressianAutoCompleteCurrent$ = _this138.autoCompleteControlCurrent.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
               Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
               Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
                 if (value !== "") {
-                  console.log(_this136.listingSeller.Currentpostcode);
-
-                  _this136.lookup(_this136.user.Currentpostcode).subscribe(function (data) {
-                    _this136.data = data;
+                  _this138.lookup(_this138.user.Currentpostcode).subscribe(function (data) {
+                    _this138.data = data;
                   });
 
-                  return _this136.lookup(_this136.user.Currentpostcode);
+                  return _this138.lookup(_this138.user.Currentpostcode);
                 } else {
                   return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
                 }
@@ -14912,19 +14920,29 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getPost",
         value: function getPost(value) {
+          var _this139 = this;
+
           this.listingSeller.LookingTown = value.citytown;
           this.listingSeller.Lookingstate = value.county;
           this.listingSeller.Lookingpostcode = value.postcode;
           this.listingSeller.LookingAddress = value.address;
           this.listingSeller.Country = value.country;
+          this.sellerService.searchPost(value.postcode).subscribe(function (data) {
+            _this139.listingSeller.Country = data.country;
+          });
         }
       }, {
         key: "getPosts",
         value: function getPosts(value) {
+          var _this140 = this;
+
           this.user.CurrentAddress = value.address;
           this.user.CurrentTown = value.citytown;
           this.user.Currentstate = value.county;
           this.user.Currentpostcode = value.postcode;
+          this.sellerService.searchPost(value.postcode).subscribe(function (data) {
+            _this140.user.CurrentCountry = data.country;
+          });
         }
       }, {
         key: "getSame",
@@ -14960,11 +14978,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this137 = this;
+          var _this141 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this137.isLoading = false;
+            _this141.isLoading = false;
             console.log(data);
           });
         } //Login Form
@@ -14972,11 +14990,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this138 = this;
+          var _this142 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this138.isLoading = false;
+            _this142.isLoading = false;
           });
         } //SignIn Google
 
@@ -15068,50 +15086,50 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this139 = this;
+          var _this143 = this;
 
           this.sellerPicture = JSON.parse(localStorage.getItem('uploadedImage'));
           this.isLoading = true;
           this.register = false;
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this139.postcodeCoordinates = data;
+            _this143.postcodeCoordinates = data;
 
-            if (_this139.postcodeCoordinates.result.longitude == null && _this139.postcodeCoordinates.result.latitude == null) {
+            if (_this143.postcodeCoordinates.result.longitude == null && _this143.postcodeCoordinates.result.latitude == null) {
               //document.getElementById("lookpost").style.color = "red"
               console.log("hello");
 
-              var dialogRef = _this139.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var dialogRef = _this143.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter valid Postcode"
                 }
               });
 
-              _this139.isLoading = false;
-              _this139.register = false;
+              _this143.isLoading = false;
+              _this143.register = false;
             } else {
-              if (_this139.listingSeller.ownership == undefined) {
-                _this139.listingSeller.ownership = "any";
+              if (_this143.listingSeller.ownership == undefined) {
+                _this143.listingSeller.ownership = "any";
               }
 
-              _this139.listingSeller.longitude = _this139.postcodeCoordinates.result.longitude, _this139.listingSeller.latitude = _this139.postcodeCoordinates.result.latitude, _this139.listingSeller.username = _this139.user.Name, _this139.listingSeller.usertitle = _this139.user.title;
-              _this139.listingSeller.username = _this139.user.Name;
-              _this139.listingSeller.Email = _this139.user.email;
-              _this139.listingSeller.phonenumber = _this139.user.Phone;
-              _this139.listingSeller.DOB = _this139.user.DOB;
-              _this139.listingSeller.UserId = _this139.uid;
-              _this139.listingSeller.Currentpostcode = _this139.user.Currentpostcode.toUpperCase();
-              _this139.listingSeller.CurrentAddress = _this139.user.CurrentAddress;
-              _this139.listingSeller.CurrentTown = _this139.user.CurrentTown;
-              _this139.listingSeller.Currentstate = _this139.user.Currentstate;
-              _this139.listingSeller.Images = _this139.sellerImages;
-              _this139.newUser = true;
-              _this139.listingSeller.Lookingpostcode = _this139.listingSeller.Lookingpostcode.toUpperCase();
-              _this139["return"] = _this139.SellerformService.createCustomer(_this139.userData.uid, _this139.listingSeller).then(function (data) {
+              _this143.listingSeller.longitude = _this143.postcodeCoordinates.result.longitude, _this143.listingSeller.latitude = _this143.postcodeCoordinates.result.latitude, _this143.listingSeller.username = _this143.user.Name, _this143.listingSeller.usertitle = _this143.user.title;
+              _this143.listingSeller.username = _this143.user.Name;
+              _this143.listingSeller.Email = _this143.user.email;
+              _this143.listingSeller.phonenumber = _this143.user.Phone;
+              _this143.listingSeller.DOB = _this143.user.DOB;
+              _this143.listingSeller.UserId = _this143.uid;
+              _this143.listingSeller.Currentpostcode = _this143.user.Currentpostcode.toUpperCase();
+              _this143.listingSeller.CurrentAddress = _this143.user.CurrentAddress;
+              _this143.listingSeller.CurrentTown = _this143.user.CurrentTown;
+              _this143.listingSeller.Currentstate = _this143.user.Currentstate;
+              _this143.listingSeller.Images = _this143.sellerImages;
+              _this143.newUser = true;
+              _this143.listingSeller.Lookingpostcode = _this143.listingSeller.Lookingpostcode.toUpperCase();
+              _this143["return"] = _this143.SellerformService.createCustomer(_this143.userData.uid, _this143.listingSeller).then(function (data) {
                 if (data == true) {
-                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this139.listingSeller));
-                  _this139.isLoading = false;
+                  localStorage.setItem("sellerUserDetails", JSON.stringify(_this143.listingSeller));
+                  _this143.isLoading = false;
 
-                  _this139.router.navigate(["/sellerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MaxAmount/latitude/longitude/" + _this139.newUser + "/PropertyFor/Lookingstate/Maxrooms/PropertyCondition/LookingAddress/ownership/features/UserId/Maxbathrooms/Maxreception/ownership/Maxrooms/" + _this139.uid]);
+                  _this143.router.navigate(["/sellerMatchlisting/Lookingpostcode/PropertyType/LookingTown/MaxAmount/latitude/longitude/" + _this143.newUser + "/PropertyFor/Lookingstate/Maxrooms/PropertyCondition/LookingAddress/ownership/features/UserId/Maxbathrooms/Maxreception/ownership/Maxrooms/" + _this143.uid]);
                 }
               });
             }
@@ -15120,15 +15138,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "overLay",
         value: function overLay() {
-          var _this140 = this;
+          var _this144 = this;
 
           this.sellerService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this140.register = true;
+            _this144.register = true;
           }, function (error) {
             if (error.status) {
               document.getElementById("lookpost").style.color = "red";
 
-              var dialogRef = _this140.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
+              var dialogRef = _this144.dialog.open(_Misc_alertFormdialog_alertFormdialog_component__WEBPACK_IMPORTED_MODULE_15__["AltertFormDialogComponent"], {
                 data: {
                   message: "Please Enter Valid Postcode"
                 }
@@ -15155,7 +15173,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "importImages",
         value: function importImages(event) {
-          var _this141 = this;
+          var _this145 = this;
 
           this.isLoading = true;
           this.uploads = [];
@@ -15212,9 +15230,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                       return f.ref.getDownloadURL().then(function (url) {
                         // this.uploadImage.push(url)
                         // console.log(this.sellerImages.length)
-                        console.log(_this141.sellerImages);
+                        console.log(_this145.sellerImages);
 
-                        _this141.sellerImages.push(url); // return this.afs.collection('files').add({
+                        _this145.sellerImages.push(url); // return this.afs.collection('files').add({
                         //   name: f.metadata.name,
                         // });
 
@@ -15235,46 +15253,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this142 = this;
+          var _this146 = this;
 
           this.CMSSERVICE.getOwnerlError(this.PersonalDetail).then(function (element) {
-            _this142.Title = element.data().Title;
-            _this142.FullName = element.data().FullName;
-            _this142.DateofBirth = element.data().DateofBirth;
-            _this142.DateofBirthValidate = element.data().DateofBirthValidate;
-            _this142.PhoneEmpty = element.data().PhoneEmpty;
-            _this142.PhoneValidation = element.data().PhoneValidation;
-            _this142.PhoneLength = element.data().PhoneLength;
-            _this142.CurrentPostcode = element.data().CurrentPostcode;
-            _this142.PostcodeLength = element.data().PostcodeLength;
-            _this142.CurrentAaddress = element.data().CurrentAaddress;
-            _this142.CurrentTown = element.data().CurrentTown;
-            _this142.CurrentCounty = element.data().CurrentCounty;
-            _this142.CurrentCountry = element.data().CurrentCountry;
-            _this142.currCountry = element.data().CurrentCountry;
-            _this142.isLoading = false;
+            _this146.Title = element.data().Title;
+            _this146.FullName = element.data().FullName;
+            _this146.DateofBirth = element.data().DateofBirth;
+            _this146.DateofBirthValidate = element.data().DateofBirthValidate;
+            _this146.PhoneEmpty = element.data().PhoneEmpty;
+            _this146.PhoneValidation = element.data().PhoneValidation;
+            _this146.PhoneLength = element.data().PhoneLength;
+            _this146.CurrentPostcode = element.data().CurrentPostcode;
+            _this146.PostcodeLength = element.data().PostcodeLength;
+            _this146.CurrentAaddress = element.data().CurrentAaddress;
+            _this146.CurrentTown = element.data().CurrentTown;
+            _this146.CurrentCounty = element.data().CurrentCounty;
+            _this146.CurrentCountry = element.data().CurrentCountry;
+            _this146.currCountry = element.data().CurrentCountry;
+            _this146.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPropertyDetailForm",
         value: function getSeekerPropertyDetailForm() {
-          var _this143 = this;
+          var _this147 = this;
 
           this.CMSSERVICE.getOwnerlError(this.PropertyDetail).then(function (element) {
-            _this143.Buy = element.data().Buy;
-            _this143.LPostcode = element.data().LPostcode;
-            _this143.LPostcodeLength = element.data().LPostcodeLength;
-            _this143.LAddress = element.data().LAddress;
-            _this143.LTown = element.data().LTown;
-            _this143.LCounty = element.data().LCounty;
-            _this143.LCountry = element.data().LCountry;
-            _this143.PropertyType = element.data().PropertyType;
-            _this143.Roomsmax = element.data().Roomsmax;
-            _this143.MaxAmount = element.data().MaxAmount;
-            _this143.ownership = element.data().ownership;
-            _this143.propType = element.data().PropertyType;
-            _this143.dPrice = element.data().MaxAmount;
-            _this143.isLoading = false;
+            _this147.Buy = element.data().Buy;
+            _this147.LPostcode = element.data().LPostcode;
+            _this147.LPostcodeLength = element.data().LPostcodeLength;
+            _this147.LAddress = element.data().LAddress;
+            _this147.LTown = element.data().LTown;
+            _this147.LCounty = element.data().LCounty;
+            _this147.LCountry = element.data().LCountry;
+            _this147.PropertyType = element.data().PropertyType;
+            _this147.Roomsmax = element.data().Roomsmax;
+            _this147.MaxAmount = element.data().MaxAmount;
+            _this147.ownership = element.data().ownership;
+            _this147.propType = element.data().PropertyType;
+            _this147.dPrice = element.data().MaxAmount;
+            _this147.isLoading = false;
           });
         }
       }, {
@@ -15871,25 +15889,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentSignupComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this144 = this;
+          var _this148 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this144.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this144.userData));
+              _this148.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this148.userData));
 
-              _this144.LoggedIn();
+              _this148.LoggedIn();
             } else {
               localStorage.setItem("user", null);
 
-              _this144.LoggedOut();
+              _this148.LoggedOut();
             }
           });
           this.isAgentSelected = true;
           this.CMSSERVICE.getSignupImages().then(function (data) {
-            _this144.image = data.data().Images;
-            _this144.bodyText = data.data().TextArea;
-            _this144.isAgentSelected = false;
+            _this148.image = data.data().Images;
+            _this148.bodyText = data.data().TextArea;
+            _this148.isAgentSelected = false;
           });
         }
       }, {
@@ -16243,6 +16261,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     var _angular_forms__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(
     /*! @angular/forms */
     "./node_modules/@angular/forms/fesm2015/forms.js");
+    /* harmony import */
+
+
+    var rxjs_operators__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(
+    /*! rxjs/operators */
+    "./node_modules/rxjs/_esm2015/operators/index.js");
+    /* harmony import */
+
+
+    var rxjs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(
+    /*! rxjs */
+    "./node_modules/rxjs/_esm2015/index.js");
 
     var AgentsignupformComponent = /*#__PURE__*/function () {
       function AgentsignupformComponent(authService, dialog, http, router, StrapiAuthService, HttpService, AgenthttpService, afStorage, AgentSignupService, FormService, afAuth, stateService, afs, // Inject Firestore service
@@ -16281,6 +16311,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         this.type = "Agent";
         this.AgentError = "AgentError";
         this.passwordpop = false;
+        this.autoCompleteControlLooking = new _angular_forms__WEBPACK_IMPORTED_MODULE_19__["FormControl"]();
+        this.addressianAutoCompleteCurrent$ = null;
+        this.autoCompleteControlCurrent = new _angular_forms__WEBPACK_IMPORTED_MODULE_19__["FormControl"]();
         this.phoneFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_19__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_19__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_19__["Validators"].maxLength(10), _angular_forms__WEBPACK_IMPORTED_MODULE_19__["Validators"].pattern("^((\\+91-?)|0)?[0-9]{10}$")]);
         this.mobileFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_19__["FormControl"]("", [_angular_forms__WEBPACK_IMPORTED_MODULE_19__["Validators"].required, _angular_forms__WEBPACK_IMPORTED_MODULE_19__["Validators"].maxLength(10), _angular_forms__WEBPACK_IMPORTED_MODULE_19__["Validators"].pattern("^((\\+91-?)|0)?[0-9]{10}$")]);
       }
@@ -16288,7 +16321,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgentsignupformComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this145 = this;
+          var _this149 = this;
 
           this.getAgentForm();
           this.Users = JSON.parse(localStorage.getItem("user"));
@@ -16306,13 +16339,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this145.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this145.userData));
+              _this149.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this149.userData));
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
             }
           });
+          this.addressianAutoCompleteCurrent$ = this.autoCompleteControlCurrent.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(""), // delay emits
+          Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
+          Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])(function (value) {
+            if (value !== "") {
+              _this149.lookup(_this149.agentSignup.postcode).subscribe(function (data) {
+                _this149.data = data;
+              });
+
+              return _this149.lookup(_this149.agentSignup.postcode);
+            } else {
+              return Object(rxjs__WEBPACK_IMPORTED_MODULE_21__["of"])(null);
+            }
+          }));
+        }
+      }, {
+        key: "getPosts",
+        value: function getPosts(value) {
+          this.agentSignup.address = value.address;
+          this.agentSignup.postcode = value.postcode;
+        }
+      }, {
+        key: "lookup",
+        value: function lookup(value) {
+          return this.HttpService.search(value);
         }
       }, {
         key: "Validation",
@@ -16672,7 +16729,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "upload",
         value: function upload(event) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee36() {
-            var _this146 = this;
+            var _this150 = this;
 
             var file, dialogRef, filePath;
             return regeneratorRuntime.wrap(function _callee36$(_context36) {
@@ -16712,7 +16769,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
                   case 12:
                     _context36.sent.ref.getDownloadURL().then(function (url) {
-                      _this146.downloadableURL = url;
+                      _this150.downloadableURL = url;
                     });
 
                   case 13:
@@ -16736,7 +16793,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "submitForm",
         value: function submitForm(displayName, email, pass, User) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee37() {
-            var _this147 = this;
+            var _this151 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee37$(_context37) {
@@ -16762,10 +16819,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     this.agentSignup.uid = result.user.uid;
                     this.agentSignup.Status = false;
                     this["return"] = this.AgentSignupService.createAgentCustomer(this.agentSignup.uid, this.agentSignup).then(function (data) {
-                      _this147.isLoading = false;
+                      _this151.isLoading = false;
 
                       if (data == true) {
-                        var dialogRef = _this147.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
+                        var dialogRef = _this151.dialog.open(_alertDialogagent_component__WEBPACK_IMPORTED_MODULE_4__["AlertDialogAgentComponent"], {
                           data: {
                             message: "Thanks! Your details has been submitted",
                             buttonText: {
@@ -16797,27 +16854,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "signUp",
         value: function signUp(displayName, email, pass, User) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee38() {
-            var _this148 = this;
+            var _this152 = this;
 
             return regeneratorRuntime.wrap(function _callee38$(_context38) {
               while (1) {
                 switch (_context38.prev = _context38.next) {
                   case 0:
                     this.HttpService.getLat(this.agentSignup.postcode.replace(/\s/g, "")).subscribe(function (data) {
-                      _this148.DataMessage = data;
+                      _this152.DataMessage = data;
 
-                      _this148.submitForm(displayName, email, pass, User);
+                      _this152.submitForm(displayName, email, pass, User);
                     }, function (error) {
-                      _this148.errorMesage = error.status;
+                      _this152.errorMesage = error.status;
 
-                      if (_this148.errorMesage == 404) {
-                        var dialogRef = _this148.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
+                      if (_this152.errorMesage == 404) {
+                        var dialogRef = _this152.dialog.open(_Misc_alert_login_alert_login_component__WEBPACK_IMPORTED_MODULE_10__["AlertLoginComponent"], {
                           data: {
                             message: "Enter Valid Postcode"
                           }
                         });
 
-                        _this148.PostcodeView.nativeElement.focus();
+                        _this152.PostcodeView.nativeElement.focus();
 
                         document.getElementById("FullName").style.color = "var(--DARK-BLUE-COLOR)";
                         document.getElementById("CompanyName").style.color = "var(--DARK-BLUE-COLOR)";
@@ -16838,32 +16895,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this149 = this;
+          var _this153 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this149.FullName = element.data().FullName;
-            _this149.CompanyName = element.data().CompanyName;
-            _this149.Postcode = element.data().Postcode;
-            _this149.Address = element.data().Address;
-            _this149.JobTitle = element.data().JobTitle;
-            _this149.EmailAddress = element.data().EmailAddress;
-            _this149.emailvalidation = element.data().emailvalidation;
-            _this149.Password = element.data().Password;
-            _this149.officephone = element.data().officephone;
-            _this149.officephonevalidation = element.data().officephonevalidation;
-            _this149.officephonelength = element.data().officephonelength;
-            _this149.mobile = element.data().mobile;
-            _this149.mobilevalidity = element.data().mobilevalidity;
-            _this149.mobilelength = element.data().mobilelength;
-            _this149.solefeess = element.data().solefees;
-            _this149.solefeesmore = element.data().solefeesmore;
-            _this149.solefeesless = element.data().solefeesless;
-            _this149.multiplefeess = element.data().multiplefees;
-            _this149.multiplefeesmore = element.data().multiplefeesmore;
-            _this149.multiplefeesless = element.data().multiplefeesless;
-            _this149.Image = element.data().Image;
-            _this149.Imagesize = element.data().Imagesize;
-            _this149.isLoading = false;
+            _this153.FullName = element.data().FullName;
+            _this153.CompanyName = element.data().CompanyName;
+            _this153.Postcode = element.data().Postcode;
+            _this153.Address = element.data().Address;
+            _this153.JobTitle = element.data().JobTitle;
+            _this153.EmailAddress = element.data().EmailAddress;
+            _this153.emailvalidation = element.data().emailvalidation;
+            _this153.Password = element.data().Password;
+            _this153.officephone = element.data().officephone;
+            _this153.officephonevalidation = element.data().officephonevalidation;
+            _this153.officephonelength = element.data().officephonelength;
+            _this153.mobile = element.data().mobile;
+            _this153.mobilevalidity = element.data().mobilevalidity;
+            _this153.mobilelength = element.data().mobilelength;
+            _this153.solefeess = element.data().solefees;
+            _this153.solefeesmore = element.data().solefeesmore;
+            _this153.solefeesless = element.data().solefeesless;
+            _this153.multiplefeess = element.data().multiplefees;
+            _this153.multiplefeesmore = element.data().multiplefeesmore;
+            _this153.multiplefeesless = element.data().multiplefeesless;
+            _this153.Image = element.data().Image;
+            _this153.Imagesize = element.data().Imagesize;
+            _this153.isLoading = false;
           });
         }
       }, {
@@ -17220,7 +17277,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ClickhomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this150 = this;
+          var _this154 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -17236,22 +17293,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this150.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this150.userData));
-              _this150.isLoggedIn = true;
+              _this154.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this154.userData));
+              _this154.isLoggedIn = true;
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this150.LoggedOut();
+              _this154.LoggedOut();
 
-              _this150.isLoggedIn = false;
+              _this154.isLoggedIn = false;
             }
           });
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this150.topLine = element.data().topLine;
-              _this150.secondLine = element.data().SecondLine;
+              _this154.topLine = element.data().topLine;
+              _this154.secondLine = element.data().SecondLine;
             });
           });
           this.HomepageImagesText();
@@ -17260,26 +17317,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "HomepageImagesText",
         value: function HomepageImagesText() {
-          var _this151 = this;
+          var _this155 = this;
 
           this.HomeService.getHomePage(1).then(function (res) {
             res.forEach(function (element) {
-              _this151.imageUrl = element.data().BannerImageUrl;
-              _this151.secondImageUrl = element.data().SecondBannerImage;
-              _this151.SecondImageText = element.data().SecondBannerText;
-              _this151.Step1Image = element.data().Step1Image;
-              _this151.Step2Image = element.data().Step2Image;
-              _this151.step3Image = element.data().Step3Image;
-              _this151.Step1TExt = element.data().Step1ImageText;
-              _this151.Step2Text = element.data().Step2ImageText;
-              _this151.step3Text = element.data().Step3ImageText;
+              _this155.imageUrl = element.data().BannerImageUrl;
+              _this155.secondImageUrl = element.data().SecondBannerImage;
+              _this155.SecondImageText = element.data().SecondBannerText;
+              _this155.Step1Image = element.data().Step1Image;
+              _this155.Step2Image = element.data().Step2Image;
+              _this155.step3Image = element.data().Step3Image;
+              _this155.Step1TExt = element.data().Step1ImageText;
+              _this155.Step2Text = element.data().Step2ImageText;
+              _this155.step3Text = element.data().Step3ImageText;
             });
           });
         }
       }, {
         key: "getBlogs",
         value: function getBlogs() {
-          var _this152 = this;
+          var _this156 = this;
 
           this.HomeService.getBlogs().snapshotChanges().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_9__["map"])(function (changes) {
             return changes.map(function (c) {
@@ -17288,7 +17345,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               }, c.payload.doc.data());
             });
           })).subscribe(function (agent) {
-            _this152.homePageBlogs = agent;
+            _this156.homePageBlogs = agent;
           });
         }
       }, {
@@ -17305,12 +17362,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "homeradio",
         value: function homeradio(value) {
-          var _this153 = this;
+          var _this157 = this;
 
           if (this.home == "seeker") {
             if (this.user == null) {
               this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-                _this153.notificationContent = res.data().BuyerSignupNotification;
+                _this157.notificationContent = res.data().BuyerSignupNotification;
               });
               this.home = undefined;
               this.formType = "buyer";
@@ -17323,7 +17380,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           if (this.home == "owner") {
             if (this.user == null) {
               this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-                _this153.notificationContent = res.data().SellerFormSingupNotification;
+                _this157.notificationContent = res.data().SellerFormSingupNotification;
               });
               this.formType = "Seller";
               this.loginTop = true;
@@ -17337,30 +17394,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this154 = this;
+          var _this158 = this;
 
           this.loginTop = false;
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this154.isLoading = false;
+            _this158.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this155 = this;
+          var _this159 = this;
 
           this.loginTop = false;
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this155.isLoading = false;
+            _this159.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this156 = this;
+          var _this160 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -17371,22 +17428,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this156.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                  var dialogRef = _this160.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this156.UserSignIn
+                      message: _this160.UserSignIn
                     }
                   });
 
-                  _this156.isLoading = false;
+                  _this160.isLoading = false;
                 } else {
-                  _this156.authService.SignIn(email, pass).then(function (data) {
-                    _this156.isLoading = false;
+                  _this160.authService.SignIn(email, pass).then(function (data) {
+                    _this160.isLoading = false;
 
-                    _this156.getUserKnow();
+                    _this160.getUserKnow();
                   });
                 }
               } else {
-                var _dialogRef112 = _this156.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var _dialogRef112 = _this160.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -17469,10 +17526,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this157 = this;
+          var _this161 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this157.notificationContent = res.data().SingupFromMenu; //.BuyerSignupNotification
+            _this161.notificationContent = res.data().SingupFromMenu; //.BuyerSignupNotification
           });
         }
       }, {
@@ -17535,12 +17592,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this158 = this;
+          var _this162 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this158.AgentSignIn = element.data().AgentSignIn;
-            _this158.UserSignIn = element.data().UserSignIn;
-            _this158.isLoading = false;
+            _this162.AgentSignIn = element.data().AgentSignIn;
+            _this162.UserSignIn = element.data().UserSignIn;
+            _this162.isLoading = false;
           });
         }
       }, {
@@ -17769,19 +17826,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "onloadContent",
         value: function onloadContent() {
-          var _this159 = this;
+          var _this163 = this;
 
           this.SellermatchesService.getMatchPageImages(1).then(function (res) {
             res.forEach(function (element) {
-              _this159.imageUrl = element.data().HomeMatchesPage;
-              _this159.OtherResult = element.data().OtherResult;
+              _this163.imageUrl = element.data().HomeMatchesPage;
+              _this163.OtherResult = element.data().OtherResult;
             });
           });
         }
       }, {
         key: "getDetails",
         value: function getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id) {
-          var _this160 = this;
+          var _this164 = this;
 
           this.buyer = true;
           this.seller = false;
@@ -17796,111 +17853,111 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.MatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this160.buyer = true;
-              _this160.seller = false;
-              _this160.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
-              _this160.Look_PropertyFor = PropertyFor;
-              _this160.Look_propertytype = PropertyType;
-              _this160.Look_minamount = MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this160.Look_minamount);
-              _this160.Look_maxamount = MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this160.Look_maxamount);
-              _this160.LookingTown = LookingTown;
-              _this160.Look_latitude = latitude;
-              _this160.Look_longitude = longitude;
-              _this160.Look_Streetname = Streetname;
-              _this160.Look_condition = condition;
-              _this160.Look_chainstatus = ChainStatus;
-              _this160.Look_FinancialPosition = FinancialPosition;
-              _this160.Look_Validity = Validity;
-              _this160.Look_Position = Position;
-              _this160.Look_UserId = UserId;
-              _this160.new_id = new_id; //Price Formula
+              _this164.buyer = true;
+              _this164.seller = false;
+              _this164.Look_postcodes = Lookingpostcode.replace(/\s/g, "");
+              _this164.Look_PropertyFor = PropertyFor;
+              _this164.Look_propertytype = PropertyType;
+              _this164.Look_minamount = MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this164.Look_minamount);
+              _this164.Look_maxamount = MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this164.Look_maxamount);
+              _this164.LookingTown = LookingTown;
+              _this164.Look_latitude = latitude;
+              _this164.Look_longitude = longitude;
+              _this164.Look_Streetname = Streetname;
+              _this164.Look_condition = condition;
+              _this164.Look_chainstatus = ChainStatus;
+              _this164.Look_FinancialPosition = FinancialPosition;
+              _this164.Look_Validity = Validity;
+              _this164.Look_Position = Position;
+              _this164.Look_UserId = UserId;
+              _this164.new_id = new_id; //Price Formula
 
-              _this160.maxAmount = item.data().MaxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this160.maxAmount);
-              _this160.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this160.less);
-              _this160.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this160.more); //Remove Postcode Spaces
+              _this164.maxAmount = item.data().MaxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this164.maxAmount);
+              _this164.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this164.less);
+              _this164.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this164.more); //Remove Postcode Spaces
 
-              _this160.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
-              _this160.listing = _this160.Look_postcodes;
-              _this160.amount = item.data().MaxAmount.replace(/,/g, "");
-              _this160.isLoading = false;
-              _this160.buyer = true;
+              _this164.removespace = item.data().Lookingpostcode.replace(/\s/g, "");
+              _this164.listing = _this164.Look_postcodes;
+              _this164.amount = item.data().MaxAmount.replace(/,/g, "");
+              _this164.isLoading = false;
+              _this164.buyer = true;
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && item.data().PropertyType == _this160.Look_propertytype && _this160.uid != item.data().UserId && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") == _this164.Look_postcodes && item.data().PropertyFor == _this164.Look_PropertyFor && item.data().PropertyType == _this164.Look_propertytype && _this164.uid != item.data().UserId && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this164.distanceInKm = _this164.getDistanceFromLatLonInKm(_this164.Look_latitude, _this164.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this160.matchedProperties.push({
+                _this164.matchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this160.distanceInKm * 1 / 1.609344
+                  distance: _this164.distanceInKm * 1 / 1.609344
                 });
 
-                _this160.bmatchesstartPage = 0;
-                _this160.bmatchespaginationLimit = 6;
+                _this164.bmatchesstartPage = 0;
+                _this164.bmatchespaginationLimit = 6;
               } // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != item.data().UserId && item.data().PropertyType == _this160.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this160.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this164.Look_postcodes && item.data().PropertyFor == _this164.Look_PropertyFor && _this164.uid != item.data().UserId && item.data().PropertyType == _this164.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) == _this164.listing.substring(0, 5) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this164.distanceInKm = _this164.getDistanceFromLatLonInKm(_this164.Look_latitude, _this164.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this160.unmatchedProperties.push({
+                _this164.unmatchedProperties.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this160.distanceInKm * 1 / 1.609344
+                  distance: _this164.distanceInKm * 1 / 1.609344
                 });
 
-                _this160.startPage = 0;
-                _this160.paginationLimit = 6;
+                _this164.startPage = 0;
+                _this164.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)-Same property type
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != item.data().UserId && item.data().PropertyType == _this160.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this160.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this160.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
-                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this164.Look_postcodes && item.data().PropertyFor == _this164.Look_PropertyFor && _this164.uid != item.data().UserId && item.data().PropertyType == _this164.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this164.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this164.listing.substring(0, 3) && maxAmount >= less && maxAmount <= more && item.data().latitude && item.data().longitude) {
+                _this164.distanceInKm = _this164.getDistanceFromLatLonInKm(_this164.Look_latitude, _this164.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this160.unmatchedPriceLogic.push({
+                _this164.unmatchedPriceLogic.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this160.distanceInKm * 1 / 1.609344
+                  distance: _this164.distanceInKm * 1 / 1.609344
                 });
 
-                _this160.startPage = 0;
-                _this160.paginationLimit = 6;
+                _this164.startPage = 0;
+                _this164.paginationLimit = 6;
               } //POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != item.data().UserId && item.data().PropertyType != _this160.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this160.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this160.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
-                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this164.Look_postcodes && item.data().PropertyFor == _this164.Look_PropertyFor && _this164.uid != item.data().UserId && item.data().PropertyType != _this164.Look_propertytype && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this164.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) == _this164.listing.substring(0, 3) && less <= maxAmount && more >= maxAmount && item.data().latitude && item.data().longitude) {
+                _this164.distanceInKm = _this164.getDistanceFromLatLonInKm(_this164.Look_latitude, _this164.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this160.unmatchedallProperty.push({
+                _this164.unmatchedallProperty.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this160.distanceInKm * 1 / 1.609344
+                  distance: _this164.distanceInKm * 1 / 1.609344
                 });
 
-                _this160.startPage = 0;
-                _this160.paginationLimit = 6;
+                _this164.startPage = 0;
+                _this164.paginationLimit = 6;
               } //- All other properties - Nationwide
 
 
-              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this160.Look_postcodes && item.data().PropertyFor == _this160.Look_PropertyFor && _this160.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this160.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this160.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
-                _this160.distanceInKm = _this160.getDistanceFromLatLonInKm(_this160.Look_latitude, _this160.Look_longitude, item.data().latitude, item.data().longitude);
+              if (item.data().Lookingpostcode.replace(/\s/g, "") != _this164.Look_postcodes && item.data().PropertyFor == _this164.Look_PropertyFor && _this164.uid != item.data().UserId && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 5) != _this164.listing.substring(0, 5) && item.data().Lookingpostcode.replace(/\s/g, "").substring(0, 3) != _this164.listing.substring(0, 3) && item.data().latitude && item.data().longitude) {
+                _this164.distanceInKm = _this164.getDistanceFromLatLonInKm(_this164.Look_latitude, _this164.Look_longitude, item.data().latitude, item.data().longitude);
 
-                _this160.lookTown.push({
+                _this164.lookTown.push({
                   detail: item.data(),
                   propertyId: item.id,
-                  distance: _this160.distanceInKm * 1 / 1.609344
+                  distance: _this164.distanceInKm * 1 / 1.609344
                 });
 
-                _this160.startPage = 0;
-                _this160.paginationLimit = 6;
+                _this164.startPage = 0;
+                _this164.paginationLimit = 6;
               }
             });
 
-            _this160.unmatchedProperties.sort(_this160.compare);
+            _this164.unmatchedProperties.sort(_this164.compare);
           });
           this.getFavoarte();
           this.getExpressedListingIds();
@@ -17908,7 +17965,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails(Lookingpostcode, PropertyFor, PropertyType, MaxAmount, LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, UserId, Maxreception, Maxrooms, latitude, longitude, new_id) {
-          var _this161 = this;
+          var _this165 = this;
 
           this.buyer = false;
           this.seller = true;
@@ -17940,23 +17997,23 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.SellermatchesService.getSellerProperties(this.uid).subscribe(function (ref) {
             ref.forEach(function (Mean) {
               //Min-MAx Amount Removed Comas and Formula
-              _this161.maxAmount = _this161.Look_maxAmount.replace(/,/g, "");
-              var maxAmount = parseInt(_this161.maxAmount);
-              _this161.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
-              var Look_minamount = parseInt(_this161.Look_minamount);
-              _this161.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
-              var Look_maxamount = parseInt(_this161.Look_maxamount);
-              _this161.less = Look_minamount - Look_minamount * 10 / 100;
-              var less = parseInt(_this161.less);
-              _this161.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
-              var more = parseInt(_this161.more); //Remove Postcode Spaces
+              _this165.maxAmount = _this165.Look_maxAmount.replace(/,/g, "");
+              var maxAmount = parseInt(_this165.maxAmount);
+              _this165.Look_minamount = Mean.data().MinAmount.replace(/,/g, "");
+              var Look_minamount = parseInt(_this165.Look_minamount);
+              _this165.Look_maxamount = Mean.data().MaxAmount.replace(/,/g, "");
+              var Look_maxamount = parseInt(_this165.Look_maxamount);
+              _this165.less = Look_minamount - Look_minamount * 10 / 100;
+              var less = parseInt(_this165.less);
+              _this165.more = Look_maxamount * 1 + Look_maxamount * 3 / 100 * 1;
+              var more = parseInt(_this165.more); //Remove Postcode Spaces
 
-              _this161.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
-              _this161.listing = _this161.Look_postcode;
-              _this161.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
+              _this165.removespace = Mean.data().Lookingpostcode.replace(/\s/g, "");
+              _this165.listing = _this165.Look_postcode;
+              _this165.isLoading = false; //- Same postcode only- Matches price criteria (min reduce 3% max +10%)- Same property type
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this161.Look_postcode && Mean.data().PropertyFor == _this161.Look_PropertyFor && _this161.uid != Mean.data().UserId && Mean.data().PropertyType == _this161.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
-                _this161.sellermatchedProperties.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") == _this165.Look_postcode && Mean.data().PropertyFor == _this165.Look_PropertyFor && _this165.uid != Mean.data().UserId && Mean.data().PropertyType == _this165.Look_PropertyType && less <= maxAmount && more >= maxAmount) {
+                _this165.sellermatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
@@ -17964,51 +18021,51 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               // POSTCODE MATCH - FIRST 5 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this161.Look_postcode && Mean.data().PropertyType == _this161.Look_PropertyType && _this161.uid != Mean.data().UserId && Mean.data().PropertyFor == _this161.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this161.removespace.substring(0, 5) == _this161.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
-                _this161.distanceInKm = _this161.getDistanceFromLatLonInKm(_this161.Look_latitude, _this161.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this165.Look_postcode && Mean.data().PropertyType == _this165.Look_PropertyType && _this165.uid != Mean.data().UserId && Mean.data().PropertyFor == _this165.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this165.removespace.substring(0, 5) == _this165.listing.substring(0, 5) && Mean.data().latitude && Mean.data().longitude) {
+                _this165.distanceInKm = _this165.getDistanceFromLatLonInKm(_this165.Look_latitude, _this165.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this161.sellerunmatchedProperties.push({
+                _this165.sellerunmatchedProperties.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this161.distanceInKm * 1 / 1.609344
+                  distance: _this165.distanceInKm * 1 / 1.609344
                 });
               } // POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- Same property type
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this161.Look_postcode && Mean.data().PropertyType == _this161.Look_PropertyType && _this161.uid != Mean.data().UserId && Mean.data().PropertyFor == _this161.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this161.removespace.substring(0, 5) != _this161.listing.substring(0, 5) && _this161.removespace.substring(0, 3) == _this161.listing.substring(0, 3)) {
-                _this161.sellerunmatchedPropertiesFirst.push({
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this165.Look_postcode && Mean.data().PropertyType == _this165.Look_PropertyType && _this165.uid != Mean.data().UserId && Mean.data().PropertyFor == _this165.Look_PropertyFor && less <= maxAmount && more >= maxAmount && _this165.removespace.substring(0, 5) != _this165.listing.substring(0, 5) && _this165.removespace.substring(0, 3) == _this165.listing.substring(0, 3)) {
+                _this165.sellerunmatchedPropertiesFirst.push({
                   detail: Mean.data(),
                   propertyId: Mean.id
                 });
               } //- POSTCODE MATCH - FIRST 3 LETTERS ONLY- Matches price criteria (min reduce 3% max +10%)- ALL property types
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this161.Look_postcode && Mean.data().PropertyType != _this161.Look_PropertyType && _this161.uid != Mean.data().UserId && less <= maxAmount && more >= maxAmount && _this161.removespace.substring(0, 5) != _this161.listing.substring(0, 5) && _this161.removespace.substring(0, 3) == _this161.listing.substring(0, 3) && Mean.data().PropertyFor == _this161.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
-                _this161.distanceInKm = _this161.getDistanceFromLatLonInKm(_this161.Look_latitude, _this161.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this165.Look_postcode && Mean.data().PropertyType != _this165.Look_PropertyType && _this165.uid != Mean.data().UserId && less <= maxAmount && more >= maxAmount && _this165.removespace.substring(0, 5) != _this165.listing.substring(0, 5) && _this165.removespace.substring(0, 3) == _this165.listing.substring(0, 3) && Mean.data().PropertyFor == _this165.Look_PropertyFor && Mean.data().latitude && Mean.data().longitude) {
+                _this165.distanceInKm = _this165.getDistanceFromLatLonInKm(_this165.Look_latitude, _this165.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this161.sellerunmatchedPriceLogic.push({
+                _this165.sellerunmatchedPriceLogic.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this161.distanceInKm * 1 / 1.609344
+                  distance: _this165.distanceInKm * 1 / 1.609344
                 });
               } //All other properties - Nationwide
 
 
-              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this161.Look_postcode && Mean.data().PropertyFor == _this161.Look_PropertyFor && _this161.uid != Mean.data().UserId && _this161.removespace.substring(0, 5) != _this161.listing.substring(0, 5) && _this161.removespace.substring(0, 3) != _this161.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
-                _this161.distanceInKm = _this161.getDistanceFromLatLonInKm(_this161.Look_latitude, _this161.Look_longitude, Mean.data().latitude, Mean.data().longitude);
+              if (Mean.data().Lookingpostcode.replace(/\s/g, "") != _this165.Look_postcode && Mean.data().PropertyFor == _this165.Look_PropertyFor && _this165.uid != Mean.data().UserId && _this165.removespace.substring(0, 5) != _this165.listing.substring(0, 5) && _this165.removespace.substring(0, 3) != _this165.listing.substring(0, 3) && Mean.data().latitude && Mean.data().longitude) {
+                _this165.distanceInKm = _this165.getDistanceFromLatLonInKm(_this165.Look_latitude, _this165.Look_longitude, Mean.data().latitude, Mean.data().longitude);
 
-                _this161.sellerlookTown.push({
+                _this165.sellerlookTown.push({
                   detail: Mean.data(),
                   propertyId: Mean.id,
-                  distance: _this161.distanceInKm * 1 / 1.609344
+                  distance: _this165.distanceInKm * 1 / 1.609344
                 });
               }
             });
 
-            _this161.unmatchedProperties.sort(_this161.compare);
+            _this165.unmatchedProperties.sort(_this165.compare);
 
-            _this161.noOfMatches = _this161.sellermatchedProperties.length;
-            _this161.noOfUnmatched = _this161.sellerunmatchedProperties.length;
+            _this165.noOfMatches = _this165.sellermatchedProperties.length;
+            _this165.noOfUnmatched = _this165.sellerunmatchedProperties.length;
           });
           this.startPage = 0;
           this.paginationLimit = 6;
@@ -18275,12 +18332,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this162 = this;
+          var _this166 = this;
 
           this.SellermatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this162.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this162.distinctExpressedUid.push(item.data().propertyId);
+              if (_this166.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this166.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -18299,123 +18356,123 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this163 = this;
+          var _this167 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this163.propertyRequirementDetails.push({
+              _this167.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
             });
 
-            _this163.myrequirement_service.getSellerProperties(_this163.uid).then(function (res) {
+            _this167.myrequirement_service.getSellerProperties(_this167.uid).then(function (res) {
               res.forEach(function (element) {
                 // this.docid = element.id
-                _this163.propertyDetails.push({
+                _this167.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
               });
-              _this163.MatchesItem = _this163.propertyRequirementDetails.length + _this163.propertyDetails.length;
+              _this167.MatchesItem = _this167.propertyRequirementDetails.length + _this167.propertyDetails.length;
 
-              if (_this163.MatchesItem < 2) {
-                if (_this163.propertyRequirementDetails.length > _this163.propertyDetails.length) {
-                  _this163.buyer = true;
-                  _this163.seller = false;
-                  _this163.buyerItems = true;
-                  _this163.buyerVal = _this163.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this163.test = _this163.buyerVal;
-                  var Lookingpostcode = _this163.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var MinAmount = _this163.propertyRequirementDetails[0].data.MinAmount;
-                  var MaxAmount = _this163.propertyRequirementDetails[0].data.MaxAmount;
-                  var PropertyFor = _this163.propertyRequirementDetails[0].data.PropertyFor;
-                  var PropertyType = _this163.propertyRequirementDetails[0].data.PropertyType;
-                  var LookingTown = _this163.propertyRequirementDetails[0].data.LookingTown;
-                  var latitude = _this163.propertyRequirementDetails[0].data.latitude;
-                  var longitude = _this163.propertyRequirementDetails[0].data.longitude;
-                  var Streetname = _this163.propertyRequirementDetails[0].data.LookingStreetname;
-                  var condition = _this163.propertyRequirementDetails[0].data.Conditions;
-                  var ChainStatus = _this163.propertyRequirementDetails[0].data.ChainStatus;
-                  var FinancialPosition = _this163.propertyRequirementDetails[0].data.FinancialPosition;
-                  var Validity = _this163.propertyRequirementDetails[0].data.Validity;
-                  var Position = _this163.propertyRequirementDetails[0].data.Position;
-                  var UserId = _this163.propertyRequirementDetails[0].data.UserId;
-                  var new_id = _this163.propertyRequirementDetails[0].id;
+              if (_this167.MatchesItem < 2) {
+                if (_this167.propertyRequirementDetails.length > _this167.propertyDetails.length) {
+                  _this167.buyer = true;
+                  _this167.seller = false;
+                  _this167.buyerItems = true;
+                  _this167.buyerVal = _this167.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this167.test = _this167.buyerVal;
+                  var Lookingpostcode = _this167.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var MinAmount = _this167.propertyRequirementDetails[0].data.MinAmount;
+                  var MaxAmount = _this167.propertyRequirementDetails[0].data.MaxAmount;
+                  var PropertyFor = _this167.propertyRequirementDetails[0].data.PropertyFor;
+                  var PropertyType = _this167.propertyRequirementDetails[0].data.PropertyType;
+                  var LookingTown = _this167.propertyRequirementDetails[0].data.LookingTown;
+                  var latitude = _this167.propertyRequirementDetails[0].data.latitude;
+                  var longitude = _this167.propertyRequirementDetails[0].data.longitude;
+                  var Streetname = _this167.propertyRequirementDetails[0].data.LookingStreetname;
+                  var condition = _this167.propertyRequirementDetails[0].data.Conditions;
+                  var ChainStatus = _this167.propertyRequirementDetails[0].data.ChainStatus;
+                  var FinancialPosition = _this167.propertyRequirementDetails[0].data.FinancialPosition;
+                  var Validity = _this167.propertyRequirementDetails[0].data.Validity;
+                  var Position = _this167.propertyRequirementDetails[0].data.Position;
+                  var UserId = _this167.propertyRequirementDetails[0].data.UserId;
+                  var new_id = _this167.propertyRequirementDetails[0].id;
 
-                  _this163.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
+                  _this167.getDetails(Lookingpostcode, PropertyFor, PropertyType, MinAmount, MaxAmount, LookingTown, latitude, longitude, Streetname, condition, ChainStatus, FinancialPosition, Validity, Position, UserId, new_id);
                 } else {
-                  _this163.seller = true;
-                  _this163.buyer = false;
-                  _this163.sellerItem = true;
-                  _this163.sellerVal = _this163.propertyDetails[0].seller.Lookingpostcode;
-                  var _Lookingpostcode = _this163.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor = _this163.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType = _this163.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount = _this163.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown = _this163.propertyDetails[0].seller.LookingTown;
-                  var Lookingstate = _this163.propertyDetails[0].seller.Lookingstate;
-                  var Maxbathrooms = _this163.propertyDetails[0].seller.Maxbathrooms;
-                  var PropertyCondition = _this163.propertyDetails[0].seller.PropertyCondition;
-                  var LookingAddress = _this163.propertyDetails[0].seller.LookingAddress;
-                  var ownership = _this163.propertyDetails[0].seller.ownership;
-                  var features = _this163.propertyDetails[0].seller.features;
-                  var _UserId = _this163.propertyDetails[0].seller.UserId;
-                  var Maxreception = _this163.propertyDetails[0].seller.Maxreception;
-                  var Maxrooms = _this163.propertyDetails[0].seller.Maxrooms;
-                  var _latitude = _this163.propertyDetails[0].seller.latitude;
-                  var _longitude = _this163.propertyDetails[0].seller.longitude;
-                  var _new_id = _this163.propertyDetails[0].sellerId;
+                  _this167.seller = true;
+                  _this167.buyer = false;
+                  _this167.sellerItem = true;
+                  _this167.sellerVal = _this167.propertyDetails[0].seller.Lookingpostcode;
+                  var _Lookingpostcode = _this167.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor = _this167.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType = _this167.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount = _this167.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown = _this167.propertyDetails[0].seller.LookingTown;
+                  var Lookingstate = _this167.propertyDetails[0].seller.Lookingstate;
+                  var Maxbathrooms = _this167.propertyDetails[0].seller.Maxbathrooms;
+                  var PropertyCondition = _this167.propertyDetails[0].seller.PropertyCondition;
+                  var LookingAddress = _this167.propertyDetails[0].seller.LookingAddress;
+                  var ownership = _this167.propertyDetails[0].seller.ownership;
+                  var features = _this167.propertyDetails[0].seller.features;
+                  var _UserId = _this167.propertyDetails[0].seller.UserId;
+                  var Maxreception = _this167.propertyDetails[0].seller.Maxreception;
+                  var Maxrooms = _this167.propertyDetails[0].seller.Maxrooms;
+                  var _latitude = _this167.propertyDetails[0].seller.latitude;
+                  var _longitude = _this167.propertyDetails[0].seller.longitude;
+                  var _new_id = _this167.propertyDetails[0].sellerId;
 
-                  _this163.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
+                  _this167.getSellerDetails(_Lookingpostcode, _PropertyFor, _PropertyType, _MaxAmount, _LookingTown, Lookingstate, Maxbathrooms, PropertyCondition, LookingAddress, ownership, features, _UserId, Maxreception, Maxrooms, _latitude, _longitude, _new_id);
                 }
-              } else if (_this163.MatchesItem > 1) {
-                if (_this163.propertyRequirementDetails.length > _this163.propertyDetails.length) {
-                  _this163.buyer = true;
-                  _this163.buyerVal = _this163.propertyRequirementDetails[0].data.Lookingpostcode;
-                  _this163.test = _this163.buyerVal;
-                  var _Lookingpostcode2 = _this163.propertyRequirementDetails[0].data.Lookingpostcode;
-                  var _MinAmount = _this163.propertyRequirementDetails[0].data.MinAmount;
-                  var _MaxAmount2 = _this163.propertyRequirementDetails[0].data.MaxAmount;
-                  var _PropertyFor2 = _this163.propertyRequirementDetails[0].data.PropertyFor;
-                  var _PropertyType2 = _this163.propertyRequirementDetails[0].data.PropertyType;
-                  var _LookingTown2 = _this163.propertyRequirementDetails[0].data.LookingTown;
-                  var _latitude2 = _this163.propertyRequirementDetails[0].data.latitude;
-                  var _longitude2 = _this163.propertyRequirementDetails[0].data.longitude;
-                  var _Streetname = _this163.propertyRequirementDetails[0].data.LookingStreetname;
-                  var _condition = _this163.propertyRequirementDetails[0].data.Conditions;
-                  var _ChainStatus = _this163.propertyRequirementDetails[0].data.ChainStatus;
-                  var _FinancialPosition = _this163.propertyRequirementDetails[0].data.FinancialPosition;
-                  var _Validity = _this163.propertyRequirementDetails[0].data.Validity;
-                  var _Position = _this163.propertyRequirementDetails[0].data.Position;
-                  var _UserId2 = _this163.propertyRequirementDetails[0].data.UserId;
-                  var _new_id2 = _this163.propertyRequirementDetails[0].id;
+              } else if (_this167.MatchesItem > 1) {
+                if (_this167.propertyRequirementDetails.length > _this167.propertyDetails.length) {
+                  _this167.buyer = true;
+                  _this167.buyerVal = _this167.propertyRequirementDetails[0].data.Lookingpostcode;
+                  _this167.test = _this167.buyerVal;
+                  var _Lookingpostcode2 = _this167.propertyRequirementDetails[0].data.Lookingpostcode;
+                  var _MinAmount = _this167.propertyRequirementDetails[0].data.MinAmount;
+                  var _MaxAmount2 = _this167.propertyRequirementDetails[0].data.MaxAmount;
+                  var _PropertyFor2 = _this167.propertyRequirementDetails[0].data.PropertyFor;
+                  var _PropertyType2 = _this167.propertyRequirementDetails[0].data.PropertyType;
+                  var _LookingTown2 = _this167.propertyRequirementDetails[0].data.LookingTown;
+                  var _latitude2 = _this167.propertyRequirementDetails[0].data.latitude;
+                  var _longitude2 = _this167.propertyRequirementDetails[0].data.longitude;
+                  var _Streetname = _this167.propertyRequirementDetails[0].data.LookingStreetname;
+                  var _condition = _this167.propertyRequirementDetails[0].data.Conditions;
+                  var _ChainStatus = _this167.propertyRequirementDetails[0].data.ChainStatus;
+                  var _FinancialPosition = _this167.propertyRequirementDetails[0].data.FinancialPosition;
+                  var _Validity = _this167.propertyRequirementDetails[0].data.Validity;
+                  var _Position = _this167.propertyRequirementDetails[0].data.Position;
+                  var _UserId2 = _this167.propertyRequirementDetails[0].data.UserId;
+                  var _new_id2 = _this167.propertyRequirementDetails[0].id;
 
-                  _this163.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
+                  _this167.getDetails(_Lookingpostcode2, _PropertyFor2, _PropertyType2, _MinAmount, _MaxAmount2, _LookingTown2, _latitude2, _longitude2, _Streetname, _condition, _ChainStatus, _FinancialPosition, _Validity, _Position, _UserId2, _new_id2);
                 } else {
-                  _this163.seller = true;
-                  _this163.sellerVal = _this163.propertyDetails[0].seller.Lookingpostcode;
-                  _this163.test = _this163.sellerVal;
-                  var _Lookingpostcode3 = _this163.propertyDetails[0].seller.Lookingpostcode;
-                  var _PropertyFor3 = _this163.propertyDetails[0].seller.PropertyFor;
-                  var _PropertyType3 = _this163.propertyDetails[0].seller.PropertyType;
-                  var _MaxAmount3 = _this163.propertyDetails[0].seller.MaxAmount;
-                  var _LookingTown3 = _this163.propertyDetails[0].seller.LookingTown;
-                  var _Lookingstate = _this163.propertyDetails[0].seller.Lookingstate;
-                  var _Maxbathrooms = _this163.propertyDetails[0].seller.Maxbathrooms;
-                  var _PropertyCondition = _this163.propertyDetails[0].seller.PropertyCondition;
-                  var _LookingAddress = _this163.propertyDetails[0].seller.LookingAddress;
-                  var _ownership = _this163.propertyDetails[0].seller.ownership;
-                  var _features = _this163.propertyDetails[0].seller.features;
-                  var _UserId3 = _this163.propertyDetails[0].seller.UserId;
-                  var _Maxreception = _this163.propertyDetails[0].seller.Maxreception;
-                  var _Maxrooms = _this163.propertyDetails[0].seller.Maxrooms;
-                  var _latitude3 = _this163.propertyDetails[0].seller.latitude;
-                  var _longitude3 = _this163.propertyDetails[0].seller.longitude;
-                  var _new_id3 = _this163.propertyDetails[0].sellerId;
+                  _this167.seller = true;
+                  _this167.sellerVal = _this167.propertyDetails[0].seller.Lookingpostcode;
+                  _this167.test = _this167.sellerVal;
+                  var _Lookingpostcode3 = _this167.propertyDetails[0].seller.Lookingpostcode;
+                  var _PropertyFor3 = _this167.propertyDetails[0].seller.PropertyFor;
+                  var _PropertyType3 = _this167.propertyDetails[0].seller.PropertyType;
+                  var _MaxAmount3 = _this167.propertyDetails[0].seller.MaxAmount;
+                  var _LookingTown3 = _this167.propertyDetails[0].seller.LookingTown;
+                  var _Lookingstate = _this167.propertyDetails[0].seller.Lookingstate;
+                  var _Maxbathrooms = _this167.propertyDetails[0].seller.Maxbathrooms;
+                  var _PropertyCondition = _this167.propertyDetails[0].seller.PropertyCondition;
+                  var _LookingAddress = _this167.propertyDetails[0].seller.LookingAddress;
+                  var _ownership = _this167.propertyDetails[0].seller.ownership;
+                  var _features = _this167.propertyDetails[0].seller.features;
+                  var _UserId3 = _this167.propertyDetails[0].seller.UserId;
+                  var _Maxreception = _this167.propertyDetails[0].seller.Maxreception;
+                  var _Maxrooms = _this167.propertyDetails[0].seller.Maxrooms;
+                  var _latitude3 = _this167.propertyDetails[0].seller.latitude;
+                  var _longitude3 = _this167.propertyDetails[0].seller.longitude;
+                  var _new_id3 = _this167.propertyDetails[0].sellerId;
 
-                  _this163.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
+                  _this167.getSellerDetails(_Lookingpostcode3, _PropertyFor3, _PropertyType3, _MaxAmount3, _LookingTown3, _Lookingstate, _Maxbathrooms, _PropertyCondition, _LookingAddress, _ownership, _features, _UserId3, _Maxreception, _Maxrooms, _latitude3, _longitude3, _new_id3);
                 }
               }
             });
@@ -18424,26 +18481,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitem",
         value: function getallitem() {
-          var _this164 = this;
+          var _this168 = this;
 
           this.HttpService.sellerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this164.uid) {
-                _this164.propertyRequirementDetails.push({
+              if (element.UserId == _this168.uid) {
+                _this168.propertyRequirementDetails.push({
                   data: element,
                   id: element.id
                 });
 
-                _this164.buyer = true;
-                _this164.seller = false;
-                _this164.buyerItems = true;
+                _this168.buyer = true;
+                _this168.seller = false;
+                _this168.buyerItems = true;
               }
             });
           });
           this.HttpService.buyerMatches().subscribe(function (data) {
             data.forEach(function (element) {
-              if (element.UserId == _this164.uid) {
-                _this164.propertyDetails.push({
+              if (element.UserId == _this168.uid) {
+                _this168.propertyDetails.push({
                   seller: element,
                   sellerId: element.id
                 });
@@ -18454,13 +18511,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getFavoarte",
         value: function getFavoarte() {
-          var _this165 = this;
+          var _this169 = this;
 
           this.favorateProperty = [];
           this.MatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this165.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this165.favorateProperty.push(item.data().proppertyId);
+              if (_this169.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this169.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -18479,52 +18536,52 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteFavorate",
         value: function deleteFavorate(docid) {
-          var _this166 = this;
+          var _this170 = this;
 
           this.MatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this166.getFavoarte();
+            _this170.getFavoarte();
           });
         }
       }, {
         key: "addtoFavorate",
         value: function addtoFavorate(uid, property, id) {
-          var _this167 = this;
+          var _this171 = this;
 
           this.UserProperty = {
             PropertyDetail: property,
             proppertyId: id
           };
           this.MatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this167.getFavoarte();
+            _this171.getFavoarte();
 
-            _this167.checkFavorateValue(id);
+            _this171.checkFavorateValue(id);
           });
         }
       }, {
         key: "addtoSellerFavorate",
         value: function addtoSellerFavorate(uid, property, id) {
-          var _this168 = this;
+          var _this172 = this;
 
           this.UserProperty = {
             PropertyDetail: property,
             proppertyId: id
           };
           this.SellermatchesService.Favorate(uid, this.UserProperty, id).then(function (data) {
-            _this168.getSellerFavoarte();
+            _this172.getSellerFavoarte();
 
-            _this168.checkFavorateValue(id);
+            _this172.checkFavorateValue(id);
           });
         }
       }, {
         key: "getSellerFavoarte",
         value: function getSellerFavoarte() {
-          var _this169 = this;
+          var _this173 = this;
 
           this.favorateProperty = [];
           this.SellermatchesService.Favorates(this.uid).then(function (data) {
             data.forEach(function (item) {
-              if (_this169.favorateProperty.indexOf(item.data().proppertyId) === -1) {
-                _this169.favorateProperty.push(item.data().proppertyId);
+              if (_this173.favorateProperty.indexOf(item.data().proppertyId) === -1) {
+                _this173.favorateProperty.push(item.data().proppertyId);
               }
             });
           });
@@ -18543,10 +18600,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSellerFavorate",
         value: function deleteSellerFavorate(docid) {
-          var _this170 = this;
+          var _this174 = this;
 
           this.SellermatchesService.deletefavorate(this.uid, docid).then(function (data) {
-            _this170.getSellerFavoarte();
+            _this174.getSellerFavoarte();
           });
         }
       }, {
@@ -18846,11 +18903,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ImagesSliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this171 = this;
+          var _this175 = this;
 
           this.ActivatedRoutes.paramMap.subscribe(function (element) {});
           this.SellerNestimateDetails.getSellerRequirement(this.userID, this.child).then(function (element) {
-            _this171.AllImages = element.data().Images;
+            _this175.AllImages = element.data().Images;
           });
         }
       }]);
@@ -18989,12 +19046,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this172 = this;
+          var _this176 = this;
 
           // Fetch details
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this172.propertyRequirementDetails.push({
+              _this176.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
@@ -19003,7 +19060,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.myrequirement_service.getSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               // this.docid = element.id
-              _this172.propertyDetails.push({
+              _this176.propertyDetails.push({
                 seller: element.data(),
                 sellerId: element.id
               });
@@ -19612,18 +19669,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this173 = this;
+          var _this177 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this173.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
+              _this177.buyerRightImageUrl = element.data().BuyerPropertyRightImages;
             });
           });
           this.LoggedIn();
           this.sub = this.route.paramMap.subscribe(function (params) {
-            _this173.docid = params.get("docid");
+            _this177.docid = params.get("docid");
           });
           this.getPropertyFilled();
         }
@@ -19641,42 +19698,42 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userPrefilledDetails",
         value: function userPrefilledDetails() {
-          var _this174 = this;
+          var _this178 = this;
 
           //Pre - populate the email field
           this.EditListingBuyerService.getUserDetail(this.uid).then(function (data) {
-            _this174.dataItem = data.data();
-            _this174.user.Name = _this174.dataItem.Name;
-            _this174.user.email = _this174.dataItem.email;
-            _this174.user.title = _this174.dataItem.title;
+            _this178.dataItem = data.data();
+            _this178.user.Name = _this178.dataItem.Name;
+            _this178.user.email = _this178.dataItem.email;
+            _this178.user.title = _this178.dataItem.title;
 
-            if (_this174.dataItem.DOB != null) {
-              _this174.user.DOB = _this174.dataItem.DOB.toDate();
+            if (_this178.dataItem.DOB != null) {
+              _this178.user.DOB = _this178.dataItem.DOB.toDate();
             }
 
-            _this174.user.Phone = _this174.dataItem.Phone;
+            _this178.user.Phone = _this178.dataItem.Phone;
           });
         }
       }, {
         key: "getPropertyFilled",
         value: function getPropertyFilled() {
-          var _this175 = this;
+          var _this179 = this;
 
           this.EditListingBuyerService.getPropertyDetail(this.uid, this.docid).then(function (data) {
-            _this175.listingBuyer = data.data();
-            _this175.propertyPrefilled = data.data();
-            _this175.listingBuyer.Currentpostcode = _this175.propertyPrefilled.Currentpostcode;
-            _this175.listingBuyer.CurrentAddress = _this175.propertyPrefilled.CurrentAddress;
+            _this179.listingBuyer = data.data();
+            _this179.propertyPrefilled = data.data();
+            _this179.listingBuyer.Currentpostcode = _this179.propertyPrefilled.Currentpostcode;
+            _this179.listingBuyer.CurrentAddress = _this179.propertyPrefilled.CurrentAddress;
 
-            _this175.postcodeField();
+            _this179.postcodeField();
 
-            if (_this175.listingBuyer.PropertyFor == 'buy') {
-              _this175.amounts = true;
-              _this175.buyOption = true;
+            if (_this179.listingBuyer.PropertyFor == 'buy') {
+              _this179.amounts = true;
+              _this179.buyOption = true;
             } else {
-              _this175.amounts = true;
-              _this175.buyOption = false;
-              _this175.rentOption = true;
+              _this179.amounts = true;
+              _this179.buyOption = false;
+              _this179.rentOption = true;
             }
           });
         }
@@ -19688,17 +19745,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "postcodeField",
         value: function postcodeField() {
-          var _this176 = this;
+          var _this180 = this;
 
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value != "") {
-              _this176.lookup(_this176.listingBuyer.Lookingpostcode).subscribe(function (data) {
-                _this176.data = data;
+              _this180.lookup(_this180.listingBuyer.Lookingpostcode).subscribe(function (data) {
+                _this180.data = data;
               });
 
-              return _this176.lookup(_this176.listingBuyer.Lookingpostcode);
+              return _this180.lookup(_this180.listingBuyer.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -19708,11 +19765,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this176.lookup(_this176.listingBuyer.Currentpostcode).subscribe(function (data) {
-                _this176.data = data;
+              _this180.lookup(_this180.listingBuyer.Currentpostcode).subscribe(function (data) {
+                _this180.data = data;
               });
 
-              return _this176.lookup(_this176.listingBuyer.Currentpostcode);
+              return _this180.lookup(_this180.listingBuyer.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_14__["of"])(null);
             }
@@ -20409,12 +20466,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerEditing",
         value: function buyerEditing() {
-          var _this177 = this;
+          var _this181 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingBuyer.Lookingpostcode.replace(/\s/g, "")).subscribe(function (data) {
-            _this177.postcodeCoordinates = data;
-            _this177.listingBuyer.longitude = _this177.postcodeCoordinates.result.longitude, _this177.listingBuyer.latitude = _this177.postcodeCoordinates.result.latitude, _this177.listingBuyer.UserId = _this177.uid;
+            _this181.postcodeCoordinates = data;
+            _this181.listingBuyer.longitude = _this181.postcodeCoordinates.result.longitude, _this181.listingBuyer.latitude = _this181.postcodeCoordinates.result.latitude, _this181.listingBuyer.UserId = _this181.uid;
           });
           this.listingBuyer.UserId = this.uid;
           this.listingBuyer.longitude, this.listingBuyer.latitude, this.listingBuyer.username = this.user.Name;
@@ -20424,9 +20481,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.listingBuyer.DOB = this.user.DOB;
           this["return"] = this.EditListingBuyerService.createCustomer(this.uid, this.docid, this.listingBuyer).then(function (data) {
             ;
-            _this177.isLoading = false;
+            _this181.isLoading = false;
 
-            var dialogRef = _this177.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
+            var dialogRef = _this181.dialog.open(_editDataSubmission_component__WEBPACK_IMPORTED_MODULE_16__["EditDataSubmissionComponent"]);
           });
         }
       }]);
@@ -21088,16 +21145,16 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditListingSellerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this178 = this;
+          var _this182 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this178.docid = params.get("sellerId");
+            _this182.docid = params.get("sellerId");
           });
           this.CMSSERVICE.getFormImages().then(function (data) {
             data.forEach(function (element) {
-              _this178.sellerRightImageUrl = element.data().SellerPropertyRightImage;
+              _this182.sellerRightImageUrl = element.data().SellerPropertyRightImage;
             });
           });
           this.LoggedIn();
@@ -21105,24 +21162,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this179 = this;
+          var _this183 = this;
 
           //Pre - populate the email field
           this.SellerformService.getsellerDetails(this.uid, this.docid).then(function (element) {
-            _this179.listingSeller = element.data();
+            _this183.listingSeller = element.data();
 
-            _this179.dropdown();
+            _this183.dropdown();
 
-            if (_this179.listingSeller.PropertyFor == "buy") {
-              _this179.maxamounts = true;
-              _this179.sellOption = true;
+            if (_this183.listingSeller.PropertyFor == "buy") {
+              _this183.maxamounts = true;
+              _this183.sellOption = true;
             } else {
-              _this179.maxamounts = true;
-              _this179.sellOption = false;
-              _this179.letOption = true;
+              _this183.maxamounts = true;
+              _this183.sellOption = false;
+              _this183.letOption = true;
             }
 
-            _this179.sellerImages = _this179.listingSeller.Images; //   if(this.listingSeller.Images.length > 0)
+            _this183.sellerImages = _this183.listingSeller.Images; //   if(this.listingSeller.Images.length > 0)
             //   {
             //  this.uploadedImages = true
             //   }
@@ -21132,10 +21189,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             //   }
           });
           this.SellerformService.getUSerDetail(this.uid).then(function (user) {
-            _this179.user = user.data();
-            _this179.user.DOB = user.data().DOB.toDate();
-            _this179.user.CurrentTown = user.data().CurrentTowncity;
-            _this179.user.CurrentAddress = user.data().Currentaddress;
+            _this183.user = user.data();
+            _this183.user.DOB = user.data().DOB.toDate();
+            _this183.user.CurrentTown = user.data().CurrentTowncity;
+            _this183.user.CurrentAddress = user.data().Currentaddress;
           });
           this.isLoggedIn = true;
         }
@@ -21501,11 +21558,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetail",
         value: function userDetail() {
-          var _this180 = this;
+          var _this184 = this;
 
           this.isLoading = true;
           this["return"] = this.SellerformService.createUserCustomer(this.user).then(function (data) {
-            _this180.isLoading = false;
+            _this184.isLoading = false;
           });
         }
       }, {
@@ -21538,12 +21595,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sellerForm",
         value: function sellerForm() {
-          var _this181 = this;
+          var _this185 = this;
 
           this.isLoading = true;
           this.postcodeService.getLat(this.listingSeller.Lookingpostcode.trim()).subscribe(function (data) {
-            _this181.postcodeCoordinates = data;
-            _this181.listingSeller.longitude = _this181.postcodeCoordinates.result.longitude, _this181.listingSeller.latitude = _this181.postcodeCoordinates.result.latitude, _this181.listingSeller.UserId = _this181.uid;
+            _this185.postcodeCoordinates = data;
+            _this185.listingSeller.longitude = _this185.postcodeCoordinates.result.longitude, _this185.listingSeller.latitude = _this185.postcodeCoordinates.result.latitude, _this185.listingSeller.UserId = _this185.uid;
           });
           this.listingSeller.UserId = this.uid;
           this.isLoading = true;
@@ -21554,9 +21611,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.listingSeller.DOB = this.user.DOB;
           this.listingSeller.Images = this.sellerImages;
           this["return"] = this.SellerformService.createCustomer(this.uid, this.docid, this.listingSeller).then(function (data) {
-            _this181.isLoading = false;
+            _this185.isLoading = false;
 
-            var dialogRef = _this181.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
+            var dialogRef = _this185.dialog.open(_editSellerSubmission_component__WEBPACK_IMPORTED_MODULE_17__["EditSellerSubmissionComponent"], {
               data: {
                 message: "HelloWorld",
                 buttonText: {
@@ -21569,18 +21626,18 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "dropdown",
         value: function dropdown() {
-          var _this182 = this;
+          var _this186 = this;
 
           // The auto population of github method
           this.addressianAutoCompleteLooking$ = this.autoCompleteControlLooking.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["startWith"])(""), // delay emits
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this182.lookup(_this182.listingSeller.Lookingpostcode).subscribe(function (data) {
-                _this182.data = data;
+              _this186.lookup(_this186.listingSeller.Lookingpostcode).subscribe(function (data) {
+                _this186.data = data;
               });
 
-              return _this182.lookup(_this182.listingSeller.Lookingpostcode);
+              return _this186.lookup(_this186.listingSeller.Lookingpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -21590,11 +21647,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["debounceTime"])(1000), // use switch map so as to cancel previous subscribed events, before creating new once
           Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])(function (value) {
             if (value !== "") {
-              _this182.lookup(_this182.listingSeller.Currentpostcode).subscribe(function (data) {
-                _this182.data = data;
+              _this186.lookup(_this186.listingSeller.Currentpostcode).subscribe(function (data) {
+                _this186.data = data;
               });
 
-              return _this182.lookup(_this182.listingSeller.Currentpostcode);
+              return _this186.lookup(_this186.listingSeller.Currentpostcode);
             } else {
               return Object(rxjs__WEBPACK_IMPORTED_MODULE_13__["of"])(null);
             }
@@ -21603,7 +21660,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "importImages",
         value: function importImages(event) {
-          var _this183 = this;
+          var _this187 = this;
 
           this.isLoading = true;
           this.uploads = [];
@@ -21658,7 +21715,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     // for every upload do whatever you want in firestore with the uploaded file
                     var _t = task.then(function (f) {
                       return f.ref.getDownloadURL().then(function (url) {
-                        _this183.sellerImages.push(url); // return this.afs.collection('files').add({
+                        _this187.sellerImages.push(url); // return this.afs.collection('files').add({
                         //   name: f.metadata.name,
                         // });
 
@@ -22274,46 +22331,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getFavorate",
         value: function getFavorate() {
-          var _this184 = this;
+          var _this188 = this;
 
           this.getFavorates = [];
           this.sellerFavorate = [];
           this.isLoading = true;
           this.MyListingService.getFavorate(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this184.getFavorates.push({
+              _this188.getFavorates.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              _this184.isLoading = false;
+              _this188.isLoading = false;
             });
 
-            _this184.MyListingService.sellerFavorates(_this184.uid).then(function (data) {
+            _this188.MyListingService.sellerFavorates(_this188.uid).then(function (data) {
               data.forEach(function (element) {
-                _this184.sellerFavorate.push({
+                _this188.sellerFavorate.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                _this184.isLoading = false;
+                _this188.isLoading = false;
               });
 
-              if (_this184.getFavorates.length > _this184.sellerFavorate.length) {
-                _this184.buyerProperty = true;
-                _this184.sellerProperty = false;
-                _this184.nestimate = "Owner Nestimate";
-                _this184.isLoading = false;
+              if (_this188.getFavorates.length > _this188.sellerFavorate.length) {
+                _this188.buyerProperty = true;
+                _this188.sellerProperty = false;
+                _this188.nestimate = "Owner Nestimate";
+                _this188.isLoading = false;
               } else {
-                _this184.sellerProperty = true;
-                _this184.buyerProperty = false;
-                _this184.nestimate = "Seeker Nestimate";
-                _this184.isLoading = false;
+                _this188.sellerProperty = true;
+                _this188.buyerProperty = false;
+                _this188.nestimate = "Seeker Nestimate";
+                _this188.isLoading = false;
               }
 
-              _this184.isLoading = false;
-              _this184.startPage = 0;
-              _this184.paginationLimit = 6;
+              _this188.isLoading = false;
+              _this188.startPage = 0;
+              _this188.paginationLimit = 6;
             });
           });
         }
@@ -22325,31 +22382,31 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteBuyerFavorate",
         value: function deleteBuyerFavorate() {
-          var _this185 = this;
+          var _this189 = this;
 
           this.MyListingService.getFavorate(this.uid).then(function (data) {
             data.forEach(function (element) {
-              _this185.getFavorates.push({
+              _this189.getFavorates.push({
                 Detail: element.data(),
                 id: element.id
               });
             });
-            alert(_this185.getFavorates.length);
+            alert(_this189.getFavorates.length);
 
-            if (_this185.getFavorates.length > 0) {
-              _this185.buyerProperty = true;
+            if (_this189.getFavorates.length > 0) {
+              _this189.buyerProperty = true;
             } else {
-              _this185.buyerProperty = false;
+              _this189.buyerProperty = false;
             }
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this186 = this;
+          var _this190 = this;
 
           this.MyListingService.deletefavorate(this.uid, docid).then(function (data) {
-            _this186.getFavorate();
+            _this190.getFavorate();
           });
         }
       }, {
@@ -22362,10 +22419,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(docid) {
-          var _this187 = this;
+          var _this191 = this;
 
           this.MyListingService.sellerdeletefavorate(this.uid, docid).then(function (data) {
-            _this187.getFavorate();
+            _this191.getFavorate();
           });
         }
       }, {
@@ -22689,12 +22746,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this188 = this;
+          var _this192 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this188.propertyId = params.get("id");
+            _this192.propertyId = params.get("id");
           });
 
           this._router.events.subscribe(function (evt) {
@@ -22717,26 +22774,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this189 = this;
+          var _this193 = this;
 
           this.SellerListingDetails.getBuyerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this189.buyingPosition = res.data().Position;
-            _this189.buyerFinancialPosition = res.data().FinancialPosition;
-            _this189.BuyerPropertyType = res.data().PropertyType;
-            _this189.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this189.BuyerRoommin = res.data().Roommin;
-            _this189.BuyerRoomsmax = res.data().Roomsmax;
-            _this189.username = res.data().username;
-            _this189.usertitle = res.data().usertitle;
-            _this189.buyerPropertyFor = res.data().PropertyFor;
-            _this189.PropertyType = res.data().PropertyType;
-            _this189.Ownership = res.data().Ownership;
-            _this189.LookingStreetname = res.data().LookingStreetname;
-            _this189.Conditions = res.data().Conditions;
-            _this189.Maxbathroom = res.data().Maxbathroom;
-            _this189.Maxreception = res.data().Maxreception;
-            _this189.MinAmount = res.data().MinAmount;
-            _this189.MaxAmount = res.data().MaxAmount;
+            _this193.buyingPosition = res.data().Position;
+            _this193.buyerFinancialPosition = res.data().FinancialPosition;
+            _this193.BuyerPropertyType = res.data().PropertyType;
+            _this193.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this193.BuyerRoommin = res.data().Roommin;
+            _this193.BuyerRoomsmax = res.data().Roomsmax;
+            _this193.username = res.data().username;
+            _this193.usertitle = res.data().usertitle;
+            _this193.buyerPropertyFor = res.data().PropertyFor;
+            _this193.PropertyType = res.data().PropertyType;
+            _this193.Ownership = res.data().Ownership;
+            _this193.LookingStreetname = res.data().LookingStreetname;
+            _this193.Conditions = res.data().Conditions;
+            _this193.Maxbathroom = res.data().Maxbathroom;
+            _this193.Maxreception = res.data().Maxreception;
+            _this193.MinAmount = res.data().MinAmount;
+            _this193.MaxAmount = res.data().MaxAmount;
           });
         }
       }]);
@@ -22933,12 +22990,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(ListingSellingPropertyDetailComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this190 = this;
+          var _this194 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this190.propertyId = params.get("id");
+            _this194.propertyId = params.get("id");
           });
           this.getBuyerPropertyDetails();
         }
@@ -22951,26 +23008,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerPropertyDetails",
         value: function getBuyerPropertyDetails() {
-          var _this191 = this;
+          var _this195 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this191.userName = res.data().username;
-            _this191.usertitle = res.data().usertitle;
-            _this191.PropertyFor = res.data().PropertyFor;
-            _this191.price = res.data().MaxAmount;
-            _this191.postcode = res.data().Lookingpostcode;
-            _this191.Streetname = res.data().Lookingstate;
-            _this191.PropertyTypes = res.data().PropertyType;
-            _this191.Maxroom = res.data().Maxrooms;
-            _this191.ownerships = res.data().ownership;
-            _this191.Bathrooms = res.data().Maxbathrooms;
-            _this191.Reception = res.data().Maxreception;
-            _this191.features = res.data().features;
-            _this191.MaxAmount = res.data().MaxAmount;
-            _this191.PropertyCondition = res.data().PropertyCondition;
-            _this191.allImages = res.data().Images;
+            _this195.userName = res.data().username;
+            _this195.usertitle = res.data().usertitle;
+            _this195.PropertyFor = res.data().PropertyFor;
+            _this195.price = res.data().MaxAmount;
+            _this195.postcode = res.data().Lookingpostcode;
+            _this195.Streetname = res.data().Lookingstate;
+            _this195.PropertyTypes = res.data().PropertyType;
+            _this195.Maxroom = res.data().Maxrooms;
+            _this195.ownerships = res.data().ownership;
+            _this195.Bathrooms = res.data().Maxbathrooms;
+            _this195.Reception = res.data().Maxreception;
+            _this195.features = res.data().features;
+            _this195.MaxAmount = res.data().MaxAmount;
+            _this195.PropertyCondition = res.data().PropertyCondition;
+            _this195.allImages = res.data().Images;
 
-            _this191.toTop();
+            _this195.toTop();
           });
         }
       }, {
@@ -23214,17 +23271,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyListingComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this192 = this;
+          var _this196 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this192.type = params.get("type");
-            _this192.tabdrop = params.get("tabdrop");
+            _this196.type = params.get("type");
+            _this196.tabdrop = params.get("tabdrop");
           });
           this.CMSSERVICE.getToolTip().then(function (ref) {
-            _this192.nestimateTool = ref.data().MyNestimate;
-            _this192.expressTool = ref.data().ExpressedInterest;
+            _this196.nestimateTool = ref.data().MyNestimate;
+            _this196.expressTool = ref.data().ExpressedInterest;
           });
           this.getallitems();
           this.CheckUrl();
@@ -23247,7 +23304,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this193 = this;
+          var _this197 = this;
 
           this.propertyDetails = [];
           this.propertyRequirementDetails = [];
@@ -23255,34 +23312,34 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           this.myrequirement_service.getBuyerRequirement(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this193.propertyRequirementDetails.push({
+              _this197.propertyRequirementDetails.push({
                 data: element.data(),
                 id: element.id
               });
 
-              _this193.isLoading = false;
+              _this197.isLoading = false;
             }); //Seller Property Fetch Details
 
-            _this193.myrequirement_service.getSellerProperties(_this193.uid).then(function (res) {
+            _this197.myrequirement_service.getSellerProperties(_this197.uid).then(function (res) {
               res.forEach(function (element) {
-                _this193.propertyDetails.push({
+                _this197.propertyDetails.push({
                   seller: element.data(),
                   sellerId: element.id
                 });
 
-                _this193.isLoading = false;
+                _this197.isLoading = false;
               });
 
-              if (_this193.type == "myNestimate" && _this193.tabdrop == "tabdrop") {
-                if (_this193.propertyRequirementDetails.length > _this193.propertyDetails.length) {
-                  _this193.seekerNestimate = true;
-                  _this193.nestimate = "Seeker Nestimate";
+              if (_this197.type == "myNestimate" && _this197.tabdrop == "tabdrop") {
+                if (_this197.propertyRequirementDetails.length > _this197.propertyDetails.length) {
+                  _this197.seekerNestimate = true;
+                  _this197.nestimate = "Seeker Nestimate";
                 } else {
-                  _this193.ownerNestimate = true;
-                  _this193.nestimate = "Owner Nestimate";
+                  _this197.ownerNestimate = true;
+                  _this197.nestimate = "Owner Nestimate";
                 }
 
-                _this193.isLoading = false;
+                _this197.isLoading = false;
               }
             });
           });
@@ -23950,7 +24007,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllListing",
         value: function getAllListing() {
-          var _this194 = this;
+          var _this198 = this;
 
           this.recentItems = [];
           this.sellerrecentItems = [];
@@ -23958,37 +24015,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MyListingService.getRecentlyItems(this.uid).then(function (data) {
             data.forEach(function (element) {
               // console.log(element.data().time * 1000)
-              _this194.recentItems.push({
+              _this198.recentItems.push({
                 Detail: element.data(),
                 id: element.id
               });
 
-              _this194.isLoading = false;
+              _this198.isLoading = false;
             });
 
-            _this194.MyListingService.getSellerRecentlyItems(_this194.uid).then(function (data) {
+            _this198.MyListingService.getSellerRecentlyItems(_this198.uid).then(function (data) {
               data.forEach(function (element) {
-                _this194.sellerrecentItems.push({
+                _this198.sellerrecentItems.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                _this194.isLoading = false;
+                _this198.isLoading = false;
               });
 
-              if (_this194.recentItems.length > _this194.sellerrecentItems.length) {
-                _this194.sellerProperty = true;
-                _this194.buyerProperty = false;
-                _this194.nestimate = "Seeker Nestimate";
+              if (_this198.recentItems.length > _this198.sellerrecentItems.length) {
+                _this198.sellerProperty = true;
+                _this198.buyerProperty = false;
+                _this198.nestimate = "Seeker Nestimate";
               } else {
-                _this194.buyerProperty = true;
-                _this194.sellerProperty = false;
-                _this194.nestimate = "Owner Nestimate";
+                _this198.buyerProperty = true;
+                _this198.sellerProperty = false;
+                _this198.nestimate = "Owner Nestimate";
               }
 
-              _this194.isLoading = false;
-              _this194.startPage = 0;
-              _this194.paginationLimit = 6;
+              _this198.isLoading = false;
+              _this198.startPage = 0;
+              _this198.paginationLimit = 6;
             });
           });
         }
@@ -24026,19 +24083,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "deleteSeller",
         value: function deleteSeller(docid) {
-          var _this195 = this;
+          var _this199 = this;
 
           this.MyListingService.recentlySellerDelete(this.uid, docid).then(function (data) {
-            _this195.getAllListing();
+            _this199.getAllListing();
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this196 = this;
+          var _this200 = this;
 
           this.MyListingService.recentlyBuyerDelete(this.uid, docid).then(function (data) {
-            _this196.getAllListing();
+            _this200.getAllListing();
           });
         } //For Seller MatchListing
 
@@ -24326,7 +24383,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AwaitingresponseComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this197 = this;
+          var _this201 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -24338,7 +24395,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == "pending") {
-                _this197.sellerProperty.push({
+                _this201.sellerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
@@ -24349,24 +24406,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == "pending") {
-                _this197.buyerProperty.push({
+                _this201.buyerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               }
             });
-            _this197.isLoading = false;
+            _this201.isLoading = false;
           });
         }
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this198 = this;
+          var _this202 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this198.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this198.distinctExpressedUid.push(item.data().propertyId);
+              if (_this202.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this202.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -24558,11 +24615,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAllSeller",
         value: function getAllSeller() {
-          var _this199 = this;
+          var _this203 = this;
 
           this.SellerNestimateDetails.getSellerRequirement(this.uid, this.propertyId).then(function (res) {
-            _this199.PropertyCondition = res.data().PropertyCondition;
-            _this199.allImages = res.data().Images;
+            _this203.PropertyCondition = res.data().PropertyCondition;
+            _this203.allImages = res.data().Images;
           }); //this.allImages = res.data().Images
         }
       }, {
@@ -24713,7 +24770,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MatchesBuyerComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this200 = this;
+          var _this204 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -24731,26 +24788,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var details = JSON.parse(localStorage.getItem("buyermatchespropertydetail"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this200.expressed = params.get("expressed");
-            _this200.propid = params.get("propId");
+            _this204.expressed = params.get("expressed");
+            _this204.propid = params.get("propId");
           });
           this.getSellerDetails();
           this.getBuyerDetails();
           this.CMSSERVICE.getBlueNotification(1).then(function (data) {
-            _this200.notificationContent = data.data().BuyerActionNeeded;
+            _this204.notificationContent = data.data().BuyerActionNeeded;
           });
           this.buyerMtachesStatus();
         }
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this201 = this;
+          var _this205 = this;
 
           this["return"] = this.MatchesBuyerService.ExpressInterest(this.uid, this.propid).then(function (data) {
             if (data == true) {
-              _this201.createSellerNotification();
+              _this205.createSellerNotification();
 
-              _this201.backClicked();
+              _this205.backClicked();
             }
           });
         }
@@ -24782,7 +24839,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "createOther",
         value: function createOther() {
-          var _this202 = this;
+          var _this206 = this;
 
           this.matchesSeller = {
             BuyerDetails: this.buyerDetails,
@@ -24795,7 +24852,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           };
           this["return"] = this.MatchesBuyerService.matchesBuyerCreate(this.SellerUserId, this.matchesSeller).then(function (data) {
             if (data == true) {
-              _this202.addToExpressCollection();
+              _this206.addToExpressCollection();
             }
           });
         }
@@ -24835,10 +24892,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this203 = this;
+          var _this207 = this;
 
           this.MatchesBuyerService.getBuyer(this.BuyerUserId, this.BuyerPropertyId).then(function (res) {
-            _this203.buyerDetails = res.data();
+            _this207.buyerDetails = res.data();
           });
         }
       }, {
@@ -24854,22 +24911,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerMtachesStatus",
         value: function buyerMtachesStatus() {
-          var _this204 = this;
+          var _this208 = this;
 
           this.MatchesBuyerService.ExpressInterests(this.uid).subscribe(function (element) {
             element.forEach(function (eledata) {
-              _this204.matchesProperties.push(eledata.data());
+              _this208.matchesProperties.push(eledata.data());
             });
 
-            var _iterator4 = _createForOfIteratorHelper(_this204.matchesProperties),
+            var _iterator4 = _createForOfIteratorHelper(_this208.matchesProperties),
                 _step4;
 
             try {
               for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
                 var val = _step4.value;
 
-                if (val.propertyId == _this204.propid) {
-                  _this204.expressed = 'true';
+                if (val.propertyId == _this208.propid) {
+                  _this208.expressed = 'true';
                 }
               }
             } catch (err) {
@@ -25477,27 +25534,27 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getBuyerData",
         value: function getBuyerData() {
-          var _this205 = this;
+          var _this209 = this;
 
           this.MatchesSellerPendingService.getBuyerRequirement(this.userDetails.detail.BuyerUserId, this.userDetails.detail.BuyerPropertyId).then(function (res) {
-            _this205.buyingPosition = res.data().Position;
-            _this205.buyerFinancialPosition = res.data().FinancialPosition;
-            _this205.BuyerPropertyType = res.data().PropertyType;
-            _this205.BuyerLookingpostcode = res.data().Lookingpostcode;
-            _this205.BuyerRoommin = res.data().Roommin;
-            _this205.BuyerRoomsmax = res.data().Roomsmax;
-            _this205.username = res.data().username;
-            _this205.usertitle = res.data().usertitle;
-            _this205.buyerPropertyFor = res.data().PropertyFor;
-            _this205.PropertyType = res.data().PropertyType;
-            _this205.Ownership = res.data().Ownership;
-            _this205.LookingStreetname = res.data().LookingStreetname;
-            _this205.Conditions = res.data().Conditions;
-            _this205.Maxbathroom = res.data().Maxbathroom;
-            _this205.Maxreception = res.data().Maxreception;
-            _this205.MinAmount = res.data().MinAmount;
-            _this205.MaxAmount = res.data().MaxAmount;
-            _this205.Ownership = res.data().Ownership;
+            _this209.buyingPosition = res.data().Position;
+            _this209.buyerFinancialPosition = res.data().FinancialPosition;
+            _this209.BuyerPropertyType = res.data().PropertyType;
+            _this209.BuyerLookingpostcode = res.data().Lookingpostcode;
+            _this209.BuyerRoommin = res.data().Roommin;
+            _this209.BuyerRoomsmax = res.data().Roomsmax;
+            _this209.username = res.data().username;
+            _this209.usertitle = res.data().usertitle;
+            _this209.buyerPropertyFor = res.data().PropertyFor;
+            _this209.PropertyType = res.data().PropertyType;
+            _this209.Ownership = res.data().Ownership;
+            _this209.LookingStreetname = res.data().LookingStreetname;
+            _this209.Conditions = res.data().Conditions;
+            _this209.Maxbathroom = res.data().Maxbathroom;
+            _this209.Maxreception = res.data().Maxreception;
+            _this209.MinAmount = res.data().MinAmount;
+            _this209.MaxAmount = res.data().MaxAmount;
+            _this209.Ownership = res.data().Ownership;
           });
         }
       }, {
@@ -25640,7 +25697,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this206 = this;
+          var _this210 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -25652,21 +25709,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus != "pending") {
-                _this206.sellerConfirmed.push({
+                _this210.sellerConfirmed.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
               }
             });
-            _this206.isLoading = false;
+            _this210.isLoading = false;
 
-            _this206.getExpressedListingIds();
+            _this210.getExpressedListingIds();
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus != "pending") {
-                _this206.buyerProperty.push({
+                _this210.buyerProperty.push({
                   detail: element.data(),
                   propertyId: element.id
                 });
@@ -25678,12 +25735,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getExpressedListingIds",
         value: function getExpressedListingIds() {
-          var _this207 = this;
+          var _this211 = this;
 
           this.MatchesService.ExpressInterest(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              if (_this207.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
-                _this207.distinctExpressedUid.push(item.data().propertyId);
+              if (_this211.distinctExpressedUid.indexOf(item.data().propertyId) === -1) {
+                _this211.distinctExpressedUid.push(item.data().propertyId);
               }
             });
           });
@@ -26092,7 +26149,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SelectAgentComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this208 = this;
+          var _this212 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -26110,10 +26167,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
 
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this208.propertyId = params.get("propertyId");
+            _this212.propertyId = params.get("propertyId");
           });
           this.CMSSERVICE.getBlueNotification("1").then(function (element) {
-            _this208.AgentBlue = element.data().AgentBlue;
+            _this212.AgentBlue = element.data().AgentBlue;
           });
         }
       }, {
@@ -26131,12 +26188,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "addToExpressCollection",
         value: function addToExpressCollection() {
-          var _this209 = this;
+          var _this213 = this;
 
           this["return"] = this.AgentService.ExpressInterest(this.uid, this.propertyId).then(function (data) {
-            _this209.createSellerNotification();
+            _this213.createSellerNotification();
 
-            var dialogRef = _this209.dialog.open(_agentSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AgentSubmissionComponent"], {
+            var dialogRef = _this213.dialog.open(_agentSubmission_component__WEBPACK_IMPORTED_MODULE_8__["AgentSubmissionComponent"], {
               data: {
                 message: "Postcode must be atleast 5 characters long"
               }
@@ -26174,20 +26231,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "agentDetailEntry",
         value: function agentDetailEntry(agentuid) {
-          var _this210 = this;
+          var _this214 = this;
 
           this.AgentService.getDellerDetails(this.uid, this.SellerPropertyId).then(function (rest) {
-            _this210.sellerDetails = rest.data();
+            _this214.sellerDetails = rest.data();
 
-            _this210.AgentService.getBuyerrDetails(_this210.BuyerUserId, _this210.BuyerPropertyId).then(function (rest) {
-              _this210.BuyerDetails = rest.data();
-              _this210.details = {
-                SellerDetails: _this210.sellerDetails,
-                BuyerDetails: _this210.BuyerDetails,
+            _this214.AgentService.getBuyerrDetails(_this214.BuyerUserId, _this214.BuyerPropertyId).then(function (rest) {
+              _this214.BuyerDetails = rest.data();
+              _this214.details = {
+                SellerDetails: _this214.sellerDetails,
+                BuyerDetails: _this214.BuyerDetails,
                 UserId: agentuid,
                 Archived: false
               };
-              _this210["return"] = _this210.AgentService.matchesAgentSellerCreate(agentuid, _this210.details).then(function (data) {});
+              _this214["return"] = _this214.AgentService.matchesAgentSellerCreate(agentuid, _this214.details).then(function (data) {});
             });
           });
           this.BuyerDetails = {
@@ -26221,7 +26278,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDetailUser",
         value: function getDetailUser() {
-          var _this211 = this;
+          var _this215 = this;
 
           var details = JSON.parse(localStorage.getItem("matchesSeller"));
           this.userDetail = details.detail;
@@ -26236,13 +26293,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             ref.forEach(function (elements) {
               // this.agents.push({ Detail: elements.data(), uid: elements.data().uid })
               // this.testagents.push(elements.data().uid)
-              if (elements.data().postcode.substring(0, 3) == _this211.Lookingpostcode.substring(0, 3)) {
-                _this211.agents.push({
+              if (elements.data().postcode.substring(0, 3) == _this215.Lookingpostcode.substring(0, 3)) {
+                _this215.agents.push({
                   Detail: elements.data(),
                   uid: elements.data().uid
                 });
 
-                _this211.testagents.push(elements.data().uid);
+                _this215.testagents.push(elements.data().uid);
               }
             });
           });
@@ -26250,19 +26307,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getSellerDetails",
         value: function getSellerDetails() {
-          var _this212 = this;
+          var _this216 = this;
 
           this.AgentService.getDellerDetails(this.SellerUSerId, this.SellerPropertyId).then(function (rest) {
-            _this212.sellerDetails = rest.data();
+            _this216.sellerDetails = rest.data();
           });
         }
       }, {
         key: "getBuyerDetails",
         value: function getBuyerDetails() {
-          var _this213 = this;
+          var _this217 = this;
 
           this.AgentService.getBuyerrDetails(this.BuyerUserId, this.BuyerPropertyId).then(function (rest) {
-            _this213.BuyerDetails = rest.data();
+            _this217.BuyerDetails = rest.data();
           });
         }
       }, {
@@ -26672,7 +26729,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(SellerMatchesComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this214 = this;
+          var _this218 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -26690,13 +26747,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
           var details = JSON.parse(localStorage.getItem("matchesSeller"));
           this.sub = this._Activatedroute.paramMap.subscribe(function (params) {
-            _this214.expressed = params.get("expressed");
-            _this214.propertyId = params.get("propertyId");
+            _this218.expressed = params.get("expressed");
+            _this218.propertyId = params.get("propertyId");
           });
           this.getBuyerDetails();
           this.buyerMtachesStatus();
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (element) {
-            _this214.notificationContent = element.data().MynestimateBuyerDetails;
+            _this218.notificationContent = element.data().MynestimateBuyerDetails;
           });
         }
       }, {
@@ -26735,22 +26792,22 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "buyerMtachesStatus",
         value: function buyerMtachesStatus() {
-          var _this215 = this;
+          var _this219 = this;
 
           this.SelectedMyMatchesService.ExpressInterests(this.uid).subscribe(function (element) {
             element.forEach(function (eledata) {
-              _this215.matchesProperties.push(eledata.data());
+              _this219.matchesProperties.push(eledata.data());
             });
 
-            var _iterator5 = _createForOfIteratorHelper(_this215.matchesProperties),
+            var _iterator5 = _createForOfIteratorHelper(_this219.matchesProperties),
                 _step5;
 
             try {
               for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
                 var val = _step5.value;
 
-                if (val.propertyId == _this215.propertyId) {
-                  _this215.expressed = 'true';
+                if (val.propertyId == _this219.propertyId) {
+                  _this219.expressed = 'true';
                 }
               }
             } catch (err) {
@@ -27052,32 +27109,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MyProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this216 = this;
+          var _this220 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this216.uid) {
-                _this216.user.Name = element.data().Name;
-                _this216.user.Email = element.data().email;
+              if (element.data().uid == _this220.uid) {
+                _this220.user.Name = element.data().Name;
+                _this220.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this216.user.DOB = element.data().DOB.toDate();
+                  _this220.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this216.user.Phone = element.data().Phone;
+                  _this220.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this216.user.Currentaddress = element.data().Currentaddress;
+                  _this220.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this216.user.prefrence = element.data().prefrence;
+                  _this220.user.prefrence = element.data().prefrence;
                 } else {
-                  _this216.user.prefrence = "Not Selected";
+                  _this220.user.prefrence = "Not Selected";
                 }
               }
             });
@@ -27375,7 +27432,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditProfileComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this217 = this;
+          var _this221 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -27383,24 +27440,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.getSeekerPersonalDetailForm();
           this.fillFormsService.getUser(this.uid).subscribe(function (ref) {
             ref.forEach(function (element) {
-              if (element.data().uid == _this217.uid) {
-                _this217.user.Name = element.data().Name;
-                _this217.user.Email = element.data().email;
+              if (element.data().uid == _this221.uid) {
+                _this221.user.Name = element.data().Name;
+                _this221.user.Email = element.data().email;
 
                 if (element.data().DOB != null) {
-                  _this217.user.DOB = element.data().DOB.toDate();
+                  _this221.user.DOB = element.data().DOB.toDate();
                 }
 
                 if (element.data().Phone != null) {
-                  _this217.user.Phone = element.data().Phone;
+                  _this221.user.Phone = element.data().Phone;
                 }
 
                 if (element.data().Currentaddress != null) {
-                  _this217.user.Currentaddress = element.data().Currentaddress;
+                  _this221.user.Currentaddress = element.data().Currentaddress;
                 }
 
                 if (element.data().prefrence != null) {
-                  _this217.user.prefrence = element.data().prefrence;
+                  _this221.user.prefrence = element.data().prefrence;
                 }
               }
             });
@@ -27517,14 +27574,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userDetails",
         value: function userDetails() {
-          var _this218 = this;
+          var _this222 = this;
 
           this.isLoading = true;
           this["return"] = this.fillFormsService.userupate(this.user).then(function (data) {
-            _this218.isLoading = false;
-            _this218.edit = false;
+            _this222.isLoading = false;
+            _this222.edit = false;
 
-            _this218.alert();
+            _this222.alert();
           });
         }
       }, {
@@ -27554,28 +27611,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this219 = this;
+          var _this223 = this;
 
           this.CMSSERVICE.getMyDetailError(this.MyDetail).then(function (element) {
-            _this219.FullName = element.data().FullName;
-            _this219.Emails = element.data().Email;
-            _this219.Phones = element.data().Phone;
-            _this219.DOBs = element.data().DOB;
-            _this219.ValidateDob = element.data().ValidateDob;
-            _this219.Address = element.data().Address;
-            _this219.Prefrence = element.data().Prefrence;
-            _this219.isLoading = false;
+            _this223.FullName = element.data().FullName;
+            _this223.Emails = element.data().Email;
+            _this223.Phones = element.data().Phone;
+            _this223.DOBs = element.data().DOB;
+            _this223.ValidateDob = element.data().ValidateDob;
+            _this223.Address = element.data().Address;
+            _this223.Prefrence = element.data().Prefrence;
+            _this223.isLoading = false;
           });
         }
       }, {
         key: "getSeekerPersonalDetailForm",
         value: function getSeekerPersonalDetailForm() {
-          var _this220 = this;
+          var _this224 = this;
 
           this.CMSSERVICE.getSeekerPersonalError(this.PersonalDetail).then(function (element) {
-            _this220.PhoneValidation = element.data().PhoneValidation;
-            _this220.PhoneLength = element.data().PhoneLength;
-            _this220.isLoading = false;
+            _this224.PhoneValidation = element.data().PhoneValidation;
+            _this224.PhoneLength = element.data().PhoneLength;
+            _this224.isLoading = false;
           });
         }
       }, {
@@ -27857,7 +27914,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NavigationBarComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this221 = this;
+          var _this225 = this;
 
           this.LoggedIn();
           this.origin = window.location.origin + "/#/";
@@ -27877,14 +27934,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this221.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this221.userData)); //Notification Show
+              _this225.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this225.userData)); //Notification Show
 
-              _this221.NavigationService.Notification(_this221.uid).subscribe(function (notification) {
+              _this225.NavigationService.Notification(_this225.uid).subscribe(function (notification) {
                 notification.forEach(function (element) {
-                  _this221.bellShow = true;
-                  _this221.belliconone = false;
-                  _this221.bellicontwo = false;
+                  _this225.bellShow = true;
+                  _this225.belliconone = false;
+                  _this225.bellicontwo = false;
                 });
               }); //this.LoggedIn();
 
@@ -27892,28 +27949,28 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this221.LoggedOut();
+              _this225.LoggedOut();
             }
           });
           this.getNotificationContent();
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this221.topLine = element.data().topLine;
-              _this221.secondLine = element.data().SecondLine.replace(/<(.|\n)*?>/, '').replace(/<\/(.|\n)*?>/, '');
+              _this225.topLine = element.data().topLine;
+              _this225.secondLine = element.data().SecondLine.replace(/<(.|\n)*?>/, '').replace(/<\/(.|\n)*?>/, '');
             });
           });
         }
       }, {
         key: "LoggedIn",
         value: function LoggedIn() {
-          var _this222 = this;
+          var _this226 = this;
 
           var Admin = JSON.parse(localStorage.getItem("user"));
 
           if (Admin != null) {
             this.CMSSERVICE.getuserType(Admin.email).then(function (element) {
               if (element.data().UserType == "Admin") {
-                _this222.LoggedOut();
+                _this226.LoggedOut();
               }
             });
           }
@@ -27929,46 +27986,46 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getMatchCases",
         value: function getMatchCases() {
-          var _this223 = this;
+          var _this227 = this;
 
           // Fetch details Seller
           this.MatchesService.getMatchesSellerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
               if (element.data().matchStatus == 'confirm_interest') {
-                _this223.sellerProperty.push(element.data());
+                _this227.sellerProperty.push(element.data());
               }
             });
-            _this223.noSellerOfMatche = _this223.sellerProperty.length;
-            _this223.matches = _this223.buyerProperty.length + _this223.sellerProperty.length;
+            _this227.noSellerOfMatche = _this227.sellerProperty.length;
+            _this227.matches = _this227.buyerProperty.length + _this227.sellerProperty.length;
           }); // Fetch details Seller
 
           this.MatchesService.getMatchesBuyerProperties(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this223.buyerProperty.push(element.data());
+              _this227.buyerProperty.push(element.data());
             });
-            _this223.noBuyerMatches = _this223.buyerProperty.length;
-            _this223.matches = _this223.buyerProperty.length + _this223.sellerProperty.length;
+            _this227.noBuyerMatches = _this227.buyerProperty.length;
+            _this227.matches = _this227.buyerProperty.length + _this227.sellerProperty.length;
           });
         }
       }, {
         key: "getNotification",
         value: function getNotification() {
-          var _this224 = this;
+          var _this228 = this;
 
           this.MatchesService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this224.bellicon.push(item.data());
+              _this228.bellicon.push(item.data());
 
-              if (_this224.bellicon.length > 0) {
-                _this224.belliconone = false;
+              if (_this228.bellicon.length > 0) {
+                _this228.belliconone = false;
               }
 
               if (item.data().Lastseen == null) {
-                _this224.confirmInterest.push(item.data());
+                _this228.confirmInterest.push(item.data());
 
-                _this224.notifications = _this224.confirmInterest.length;
+                _this228.notifications = _this228.confirmInterest.length;
               } else {
-                _this224.notifications = 0;
+                _this228.notifications = 0;
               }
             });
           });
@@ -28044,14 +28101,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationoverlayopen",
         value: function notificationoverlayopen() {
-          var _this225 = this;
+          var _this229 = this;
 
           if (this.notificationoverlay == false) {
             this.user = JSON.parse(sessionStorage.getItem("currentUser"));
             this.uid = this.user.uid;
             this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
               ref.forEach(function (item) {
-                _this225.confirmInterests.push({
+                _this229.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -28070,20 +28127,20 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "initProfile",
         value: function initProfile() {
-          var _this226 = this;
+          var _this230 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
           if (this.user != null) {
             this.NavigationService.getAllUser(this.user.uid).then(function (element) {
               if (element.data().UserType == "Agent") {
-                _this226.agentCustomer = true;
+                _this230.agentCustomer = true;
               } else {
-                _this226.agentCustomer = false;
-                _this226.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
+                _this230.agentCustomer = false;
+                _this230.userName = element.data().Name.split(' ').slice(0, -1).join(' ');
 
-                if (_this226.userName.length == 0) {
-                  _this226.userName = element.data().Name;
+                if (_this230.userName.length == 0) {
+                  _this230.userName = element.data().Name;
                 }
               }
             });
@@ -28095,7 +28152,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getDocid",
         value: function getDocid(id, propertyId, time, userId, viewed, now, Type) {
-          var _this227 = this;
+          var _this231 = this;
 
           this.notificationoverlay = false;
           this.getNotification();
@@ -28110,7 +28167,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           document.getElementById("custom").style.overflowY = "overlay";
           this.Notification.Lastseen = this.now;
           this["return"] = this.NotificationService.createDateCustomer(this.uid, id, this.Notification).then(function (data) {
-            _this227.notificationoverlay = false; // this._router.navigate(["/myListing/myNestimate/action"]).then(()=>{
+            _this231.notificationoverlay = false; // this._router.navigate(["/myListing/myNestimate/action"]).then(()=>{
             //   window.location.reload();
             // });
           });
@@ -28118,19 +28175,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "notificationItems",
         value: function notificationItems() {
-          var _this228 = this;
+          var _this232 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.id;
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
               if (item.data().Lastseen == null) {
-                _this228.confirmInterests.push({
+                _this232.confirmInterests.push({
                   Detail: item.data(),
                   id: item.id
                 });
               } else {
-                _this228.confirmNotitfication.push({
+                _this232.confirmNotitfication.push({
                   Detail: item.data(),
                   id: item.id
                 });
@@ -28141,7 +28198,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "bellone",
         value: function bellone() {
-          var _this229 = this;
+          var _this233 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
@@ -28150,25 +28207,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
               if (element.data().Lastseen == null) {
-                _this229.confirmInterests.push({
+                _this233.confirmInterests.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this229.confirmInterests.length > 0) {
-                  _this229.notificationoverlay = true;
-                  _this229.bellicontwo = true;
+                if (_this233.confirmInterests.length > 0) {
+                  _this233.notificationoverlay = true;
+                  _this233.bellicontwo = true;
                 }
               } else {
-                _this229.confirmNotitfication.push({
+                _this233.confirmNotitfication.push({
                   Detail: element.data(),
                   id: element.id
                 });
 
-                if (_this229.confirmNotitfication.length > 0) {
-                  _this229.outside = true;
-                  _this229.notificationoverlay = true;
-                  _this229.bellicontwo = true;
+                if (_this233.confirmNotitfication.length > 0) {
+                  _this233.outside = true;
+                  _this233.notificationoverlay = true;
+                  _this233.bellicontwo = true;
                 }
               }
             });
@@ -28177,7 +28234,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "belltwo",
         value: function belltwo() {
-          var _this230 = this;
+          var _this234 = this;
 
           this.notificationoverlay = false;
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -28185,8 +28242,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.confirmInterests = null;
           this.NavigationService.Notification(this.uid).subscribe(function (notification) {
             notification.forEach(function (element) {
-              if (element.UserId == _this230.uid) {
-                _this230.confirmInterests = null;
+              if (element.UserId == _this234.uid) {
+                _this234.confirmInterests = null;
               }
             });
           });
@@ -28238,17 +28295,17 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this231 = this;
+          var _this235 = this;
 
           this.isLoading = false;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this231.isLoading = false;
+            _this235.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this232 = this;
+          var _this236 = this;
 
           var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -28259,24 +28316,24 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.CMSSERVICE.getuserType(email).then(function (element) {
               if (element.data() != undefined) {
                 if (element.data().UserType == "Agent" || element.data().UserType == "Admin") {
-                  var dialogRef = _this232.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                  var dialogRef = _this236.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                     data: {
-                      message: _this232.UserSignIn
+                      message: _this236.UserSignIn
                     }
                   });
 
-                  _this232.isLoading = false;
+                  _this236.isLoading = false;
                 } else {
-                  _this232.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
+                  _this236.Login(email, pass); // this.authService.SignIn(email, pass).then((data) => {
                   //   console.log(data)
                   //   this.isLoading = false;
                   // });
 
                 }
               } else {
-                _this232.isLoading = false;
+                _this236.isLoading = false;
 
-                var _dialogRef179 = _this232.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
+                var _dialogRef179 = _this236.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_14__["AlertUserTypeComponent"], {
                   data: {
                     message: "User Does not exist"
                   }
@@ -28408,10 +28465,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this233 = this;
+          var _this237 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this233.notificationContent = res.data().SingupFromMenu;
+            _this237.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
@@ -28440,10 +28497,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "leads",
         value: function leads() {
-          var _this234 = this;
+          var _this238 = this;
 
           this._router.navigate(['/Agenthome/leads']).then(function () {
-            _this234.Itemmenu();
+            _this238.Itemmenu();
 
             window.location.reload();
           });
@@ -28451,10 +28508,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Profile",
         value: function Profile() {
-          var _this235 = this;
+          var _this239 = this;
 
           this._router.navigate(['/Agenthome/profile']).then(function () {
-            _this235.Itemmenu();
+            _this239.Itemmenu();
 
             window.location.reload();
           });
@@ -28462,10 +28519,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Archieve",
         value: function Archieve() {
-          var _this236 = this;
+          var _this240 = this;
 
           this._router.navigate(['/Agenthome/archieve']).then(function () {
-            _this236.Itemmenu();
+            _this240.Itemmenu();
 
             window.location.reload();
           });
@@ -28473,10 +28530,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "manageMyNestimate",
         value: function manageMyNestimate() {
-          var _this237 = this;
+          var _this241 = this;
 
           this._router.navigate(['/myListing/myNestimate/tabdrop']).then(function () {
-            _this237.Itemmenu();
+            _this241.Itemmenu();
 
             window.location.reload();
           });
@@ -28484,10 +28541,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "profileNestimate",
         value: function profileNestimate() {
-          var _this238 = this;
+          var _this242 = this;
 
           this._router.navigate(['/myListing/profile/tabdrop']).then(function () {
-            _this238.Itemmenu();
+            _this242.Itemmenu();
 
             window.location.reload();
           });
@@ -28495,10 +28552,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "favorate",
         value: function favorate() {
-          var _this239 = this;
+          var _this243 = this;
 
           this._router.navigate(['/myListing/fav/tabdrop']).then(function () {
-            _this239.Itemmenu();
+            _this243.Itemmenu();
 
             window.location.reload();
           });
@@ -28506,10 +28563,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "recently",
         value: function recently() {
-          var _this240 = this;
+          var _this244 = this;
 
           this._router.navigate(['/myListing/recent/tabdrop']).then(function () {
-            _this240.Itemmenu();
+            _this244.Itemmenu();
 
             window.location.reload();
           });
@@ -28517,10 +28574,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "actionNeeded",
         value: function actionNeeded(id) {
-          var _this241 = this;
+          var _this245 = this;
 
           this._router.navigate(["/myListing/myNestimate/action/id"]).then(function () {
-            _this241.notificationoverlay = false;
+            _this245.notificationoverlay = false;
             window.location.reload();
           });
         }
@@ -28544,26 +28601,26 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this242 = this;
+          var _this246 = this;
 
           this.isLoading = true;
           this.loginTop = false;
           this.authService.FacebookAuth().then(function (data) {
             // this.user.Lastseen = this.now
-            _this242.isLoading = false;
+            _this246.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this243 = this;
+          var _this247 = this;
 
           this.loginTop = false;
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
             // window.location.reload()
-            _this243.isLoading = false;
+            _this247.isLoading = false;
           });
         }
       }, {
@@ -28590,13 +28647,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this244 = this;
+          var _this248 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this244.AgentSignIn = element.data().AgentSignIn;
-            _this244.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
+            _this248.AgentSignIn = element.data().AgentSignIn;
+            _this248.UserSignIn = element.data().UserSignIn; //this.WrongPassword = element.data().WrongPassword
 
-            _this244.isLoading = false;
+            _this248.isLoading = false;
           });
         }
       }, {
@@ -28625,7 +28682,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "SignOut",
         value: function SignOut() {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee64() {
-            var _this245 = this;
+            var _this249 = this;
 
             return regeneratorRuntime.wrap(function _callee64$(_context64) {
               while (1) {
@@ -28640,7 +28697,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     window.location.reload();
 
                     this._router.navigate(['/']).then(function () {
-                      _this245.isLoading = false;
+                      _this249.isLoading = false;
                       window.location.reload();
                     });
 
@@ -28655,12 +28712,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "MatchesSeller",
         value: function MatchesSeller(propid) {
-          var _this246 = this;
+          var _this250 = this;
 
           this.NavigationService.getMatchesBuyerProperties(this.uid, propid).then(function (data) {
-            _this246.buyerExpressedData = data.data();
+            _this250.buyerExpressedData = data.data();
 
-            _this246.NavigationService.ExpressInterest(_this246.uid).subscribe(function (element) {
+            _this250.NavigationService.ExpressInterest(_this250.uid).subscribe(function (element) {
               element.forEach(function (eledata) {
                 if (eledata.data().propertyId == propid) {
                   var expressed = "true";
@@ -28670,8 +28727,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                 detail: data.data()
               }));
               setTimeout(function () {
-                _this246._router.navigate(["/matchesSeller/" + propid + "/" + "false"]).then(function () {
-                  _this246.notificationoverlay = false;
+                _this250._router.navigate(["/matchesSeller/" + propid + "/" + "false"]).then(function () {
+                  _this250.notificationoverlay = false;
                   window.location.reload();
                 });
               }, 2000); //this._router.navigate(["/matchesSeller/" +  propid + "/" +  "false"])
@@ -28681,15 +28738,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "MatchesBuyer",
         value: function MatchesBuyer(propid) {
-          var _this247 = this;
+          var _this251 = this;
 
           this.NavigationService.getMatchesSellerProperties(this.uid, propid).then(function (element) {
             localStorage.setItem("buyermatchespropertydetail", JSON.stringify({
               detail: element.data()
             }));
             setTimeout(function () {
-              _this247._router.navigate(["/myMtachesBuyer/" + "false" + "/" + propid]).then(function () {
-                _this247.notificationoverlay = false;
+              _this251._router.navigate(["/myMtachesBuyer/" + "false" + "/" + propid]).then(function () {
+                _this251.notificationoverlay = false;
                 window.location.reload();
               });
             }, 2000); // this._router.navigate(["/myMtachesBuyer/" + "false" + "/" +propid])
@@ -28943,19 +29000,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(NotificationComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this248 = this;
+          var _this252 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           this.uid = this.user.uid;
           this.HttpService.getNotification().subscribe(function (data) {});
           this.NotificationService.getnotifications(this.uid).subscribe(function (ref) {
             ref.forEach(function (item) {
-              _this248.confirmInterest.push({
+              _this252.confirmInterest.push({
                 Detail: item.data(),
                 id: item.id
               });
             });
-            console.log(_this248.confirmInterest);
+            console.log(_this252.confirmInterest);
           });
         }
       }, {
@@ -29373,13 +29430,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "footerSocial",
         value: function footerSocial() {
-          var _this249 = this;
+          var _this253 = this;
 
           this.HomeService.getFooter(1).then(function (res) {
             res.forEach(function (element) {
-              _this249.facebook = element.data().Facebook;
-              _this249.Instagram = element.data().Instragram;
-              _this249.Twitter = element.data().Twitter;
+              _this253.facebook = element.data().Facebook;
+              _this253.Instagram = element.data().Instragram;
+              _this253.Twitter = element.data().Twitter;
             });
           });
         }
@@ -30657,14 +30714,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(GoogleLoginCheckComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this250 = this;
+          var _this254 = this;
 
           this.activatedRoute.queryParams.subscribe(function (params) {
-            _this250.idToken = params['id_token'];
-            _this250.accessToken = params['access_token'];
+            _this254.idToken = params['id_token'];
+            _this254.accessToken = params['access_token'];
           });
           this.StrapiAuthService.Googlelogin(this.idToken, this.accessToken).pipe().subscribe(function (data) {
-            _this250._router.navigate(['/']).then(function () {
+            _this254._router.navigate(['/']).then(function () {
               window.location.reload();
             });
           }, function (error) {
@@ -30904,11 +30961,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(PrivacyPolicyComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this251 = this;
+          var _this255 = this;
 
           this.CMSSERVICE.getPrivacyPolicy().then(function (data) {
             data.forEach(function (element) {
-              _this251.privacyPolicy = element.data().Privacy;
+              _this255.privacyPolicy = element.data().Privacy;
             });
           });
         }
@@ -31546,7 +31603,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(AgenthomeComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this252 = this;
+          var _this256 = this;
 
           this.getOtherForm();
           this.user = JSON.parse(localStorage.getItem("user"));
@@ -31557,36 +31614,36 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             this.userLogged();
             this.items();
             this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-              _this252.type = params.get("type");
+              _this256.type = params.get("type");
             });
           }
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this253 = this;
+          var _this257 = this;
 
           this.CMSSERVICE.getuserType(email).then(function (element) {
             if (element.data() != undefined) {
               if (element.data().UserType != "Agent") {
-                var dialogRef = _this253.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+                var dialogRef = _this257.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                   data: {
-                    message: _this253.AgentSignIn
+                    message: _this257.AgentSignIn
                   }
                 });
               } else {
-                _this253.authService.SignIn(email, pass).then(function (data) {
-                  _this253.items();
+                _this257.authService.SignIn(email, pass).then(function (data) {
+                  _this257.items();
 
-                  _this253.userLogged();
+                  _this257.userLogged();
 
                   window.location.reload();
                 });
               }
             } else {
-              _this253.isLoading = false;
+              _this257.isLoading = false;
 
-              var _dialogRef180 = _this253.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
+              var _dialogRef180 = _this257.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_11__["AlertUserTypeComponent"], {
                 data: {
                   message: "User Does not exist"
                 }
@@ -31615,19 +31672,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "items",
         value: function items() {
-          var _this254 = this;
+          var _this258 = this;
 
           this.BuyerDetail = [];
           this.archieveUser = [];
           this.AgenthomeService.getAgentSeller(this.uid).then(function (data) {
             data.forEach(function (element) {
               if (element.data().Archived == false) {
-                _this254.BuyerDetail.push({
+                _this258.BuyerDetail.push({
                   Detail: element.data(),
                   id: element.id
                 });
               } else {
-                _this254.archieveUser.push({
+                _this258.archieveUser.push({
                   Detail: element.data(),
                   id: element.id
                 });
@@ -31638,43 +31695,43 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "userLogged",
         value: function userLogged() {
-          var _this255 = this;
+          var _this259 = this;
 
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this255.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this255.userData));
+              _this259.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this259.userData));
               JSON.parse(localStorage.getItem("user"));
-              _this255.loggedIn = true;
+              _this259.loggedIn = true;
 
-              _this255.agentItem();
+              _this259.agentItem();
 
-              _this255.checkUrl();
+              _this259.checkUrl();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
-              _this255.loggedIn = false;
+              _this259.loggedIn = false;
             }
           });
         }
       }, {
         key: "agentItem",
         value: function agentItem() {
-          var _this256 = this;
+          var _this260 = this;
 
           this.AgenthomeService.getAgent(this.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this256.Companyname = element.data().company;
-              _this256.Address = element.data().address;
-              _this256.Postcode = element.data().postcode;
-              _this256.Phonenumber = element.data().phone;
-              _this256.Jobtitle = element.data().jobtitle;
-              _this256.SinglePercentage = element.data().solefees;
-              _this256.Multipercentage = element.data().multiplefees;
-              _this256.Image = element.data().image;
-              _this256.Fullname = element.data().fullname;
-              _this256.PropertyId = element.id;
-              _this256.UserId = _this256.user.uid;
+              _this260.Companyname = element.data().company;
+              _this260.Address = element.data().address;
+              _this260.Postcode = element.data().postcode;
+              _this260.Phonenumber = element.data().phone;
+              _this260.Jobtitle = element.data().jobtitle;
+              _this260.SinglePercentage = element.data().solefees;
+              _this260.Multipercentage = element.data().multiplefees;
+              _this260.Image = element.data().image;
+              _this260.Fullname = element.data().fullname;
+              _this260.PropertyId = element.id;
+              _this260.UserId = _this260.user.uid;
             });
           });
         }
@@ -31745,30 +31802,30 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "update",
         value: function update(docid, property) {
-          var _this257 = this;
+          var _this261 = this;
 
           property.Archived = true;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this257.items();
+            _this261.items();
           });
         }
       }, {
         key: "restore",
         value: function restore(docid, property) {
-          var _this258 = this;
+          var _this262 = this;
 
           property.Archived = false;
           this["return"] = this.AgenthomeService.updateLeads(this.uid, docid, property).then(function (data) {
-            _this258.items();
+            _this262.items();
           });
         }
       }, {
         key: "delete",
         value: function _delete(docid) {
-          var _this259 = this;
+          var _this263 = this;
 
           this.AgenthomeService.deleteProperty(this.uid, docid).then(function (data) {
-            _this259.items();
+            _this263.items();
           });
         }
       }, {
@@ -31810,13 +31867,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getOtherForm",
         value: function getOtherForm() {
-          var _this260 = this;
+          var _this264 = this;
 
           this.CMSSERVICE.getOtherError(this.OtherError).then(function (element) {
-            _this260.AgentSignIn = element.data().AgentSignIn;
-            _this260.UserSignIn = element.data().UserSignIn;
-            _this260.WrongPassword = element.data().WrongPassword;
-            _this260.isLoading = false;
+            _this264.AgentSignIn = element.data().AgentSignIn;
+            _this264.UserSignIn = element.data().UserSignIn;
+            _this264.WrongPassword = element.data().WrongPassword;
+            _this264.isLoading = false;
           });
         }
       }]);
@@ -32212,7 +32269,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(EditDetailsComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this261 = this;
+          var _this265 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
 
@@ -32221,10 +32278,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.sub = this.ActivatedRoute.paramMap.subscribe(function (params) {
-            _this261.id = params.get("id");
+            _this265.id = params.get("id");
           });
           this.HttpService.getagentByid(this.id).subscribe(function (data) {
-            _this261.agents = data;
+            _this265.agents = data;
           });
           this.getAgentDetails();
           this.getAgentForm();
@@ -32232,7 +32289,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "editUserDetail",
         value: function editUserDetail(id, Fullname, Address, Postcode, Phonenumber, Jobtitle, SinglePercentage, Multipercentage, office) {
-          var _this262 = this;
+          var _this266 = this;
 
           if (this.agents.officephone != null || this.agents.phone != null) {
             var Office = parseInt(this.agents.officephone);
@@ -32336,25 +32393,25 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           } else {
             this.AgenthomeService.createCustomer(this.uid, this.id, this.agents).then(function (data) {
-              var dialogRef = _this262.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
+              var dialogRef = _this266.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_6__["AlertUserTypeComponent"], {
                 data: {
                   message: "Profile Updated"
                 }
               });
 
-              _this262.edit = false;
+              _this266.edit = false;
             });
           }
         }
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this263 = this;
+          var _this267 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this263.agents = element.data();
-              _this263.id = element.id;
+              _this267.agents = element.data();
+              _this267.id = element.id;
             });
           });
         }
@@ -32371,32 +32428,32 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentForm",
         value: function getAgentForm() {
-          var _this264 = this;
+          var _this268 = this;
 
           this.CMSSERVICE.getAgentError(this.AgentError).then(function (element) {
-            _this264.FullName = element.data().FullName;
-            _this264.CompanyName = element.data().CompanyName;
-            _this264.Postcode = element.data().Postcode;
-            _this264.Address = element.data().Address;
-            _this264.JobTitle = element.data().JobTitle;
-            _this264.EmailAddress = element.data().EmailAddress;
-            _this264.emailvalidation = element.data().emailvalidation;
-            _this264.Password = element.data().Password;
-            _this264.officephone = element.data().officephone;
-            _this264.officephonevalidation = element.data().officephonevalidation;
-            _this264.officephonelength = element.data().officephonelength;
-            _this264.mobile = element.data().mobile;
-            _this264.mobilevalidity = element.data().mobilevalidity;
-            _this264.mobilelength = element.data().mobilelength;
-            _this264.solefees = element.data().solefees;
-            _this264.solefeesmore = element.data().solefeesmore;
-            _this264.solefeesless = element.data().solefeesless;
-            _this264.multiplefees = element.data().multiplefees;
-            _this264.multiplefeesmore = element.data().multiplefeesmore;
-            _this264.multiplefeesless = element.data().multiplefeesless;
-            _this264.Image = element.data().Image;
-            _this264.Imagesize = element.data().Imagesize;
-            _this264.isLoading = false;
+            _this268.FullName = element.data().FullName;
+            _this268.CompanyName = element.data().CompanyName;
+            _this268.Postcode = element.data().Postcode;
+            _this268.Address = element.data().Address;
+            _this268.JobTitle = element.data().JobTitle;
+            _this268.EmailAddress = element.data().EmailAddress;
+            _this268.emailvalidation = element.data().emailvalidation;
+            _this268.Password = element.data().Password;
+            _this268.officephone = element.data().officephone;
+            _this268.officephonevalidation = element.data().officephonevalidation;
+            _this268.officephonelength = element.data().officephonelength;
+            _this268.mobile = element.data().mobile;
+            _this268.mobilevalidity = element.data().mobilevalidity;
+            _this268.mobilelength = element.data().mobilelength;
+            _this268.solefees = element.data().solefees;
+            _this268.solefeesmore = element.data().solefeesmore;
+            _this268.solefeesless = element.data().solefeesless;
+            _this268.multiplefees = element.data().multiplefees;
+            _this268.multiplefeesmore = element.data().multiplefeesmore;
+            _this268.multiplefeesless = element.data().multiplefeesless;
+            _this268.Image = element.data().Image;
+            _this268.Imagesize = element.data().Imagesize;
+            _this268.isLoading = false;
           });
         }
       }]);
@@ -32834,19 +32891,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getAgentDetails",
         value: function getAgentDetails() {
-          var _this265 = this;
+          var _this269 = this;
 
           this.AgenthomeService.getAgent(this.user.uid).then(function (newData) {
             newData.forEach(function (element) {
-              _this265.agents = element.data();
-              _this265.fullname = _this265.agents.fullname;
-              _this265.address = _this265.agents.address;
-              _this265.postcode = _this265.agents.postcode;
-              _this265.email = _this265.agents.email;
-              _this265.phone = _this265.agents.phone;
-              _this265.officephone = _this265.agents.officephone;
-              _this265.sole = _this265.agents.solefees;
-              _this265.multi = _this265.agents.multiplefees;
+              _this269.agents = element.data();
+              _this269.fullname = _this269.agents.fullname;
+              _this269.address = _this269.agents.address;
+              _this269.postcode = _this269.agents.postcode;
+              _this269.email = _this269.agents.email;
+              _this269.phone = _this269.agents.phone;
+              _this269.officephone = _this269.agents.officephone;
+              _this269.sole = _this269.agents.solefees;
+              _this269.multi = _this269.agents.multiplefees;
             });
           });
         }
@@ -34655,7 +34712,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       afAuth, // Inject Firebase auth service
       router, ngZone, // NgZone service to remove outside scope warning
       _location, dialog) {
-        var _this266 = this;
+        var _this270 = this;
 
         _classCallCheck(this, AuthService);
 
@@ -34670,8 +34727,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.afAuth.authState.subscribe(function (user) {
           if (user) {
-            _this266.userData = user;
-            localStorage.setItem("user", JSON.stringify(_this266.userData));
+            _this270.userData = user;
+            localStorage.setItem("user", JSON.stringify(_this270.userData));
           } else {
             localStorage.setItem("user", null);
           }
@@ -34825,7 +34882,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthLogin",
         value: function AuthLogin(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee71() {
-            var _this267 = this;
+            var _this271 = this;
 
             var result, User, dialogRef;
             return regeneratorRuntime.wrap(function _callee71$(_context71) {
@@ -34841,9 +34898,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                     User = "User";
                     this.ngZone.run(function () {
                       // console.log(result.user)
-                      _this267.SetUserData(result.user);
+                      _this271.SetUserData(result.user);
 
-                      _this267.createUserChecker(result.user, User);
+                      _this271.createUserChecker(result.user, User);
 
                       setTimeout(location.reload.bind(location), 2000);
                     });
@@ -34871,7 +34928,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "AuthSignup",
         value: function AuthSignup(provider) {
           return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, /*#__PURE__*/regeneratorRuntime.mark(function _callee72() {
-            var _this268 = this;
+            var _this272 = this;
 
             var result;
             return regeneratorRuntime.wrap(function _callee72$(_context72) {
@@ -34885,7 +34942,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
                   case 3:
                     result = _context72.sent;
                     this.ngZone.run(function () {
-                      _this268.SetUserData(result.user);
+                      _this272.SetUserData(result.user);
                     });
                     _context72.next = 10;
                     break;
@@ -35437,37 +35494,37 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getallitems",
         value: function getallitems() {
-          var _this269 = this;
+          var _this273 = this;
 
           this.isLoading = true;
           this.viewResult = true;
           this.HomeService.getlistingBuyer(this.uid).then(function (res) {
             res.forEach(function (element) {
-              _this269.isLoading = true;
+              _this273.isLoading = true;
 
-              _this269.listingBuyers.push(element.data());
+              _this273.listingBuyers.push(element.data());
             });
 
-            _this269.HomeService.getlistingseller(_this269.uid).then(function (res) {
+            _this273.HomeService.getlistingseller(_this273.uid).then(function (res) {
               res.forEach(function (elements) {
-                _this269.isLoading = true;
+                _this273.isLoading = true;
 
-                _this269.listingSeller.push(elements.data());
+                _this273.listingSeller.push(elements.data());
               });
-              _this269.isLoading = true;
-              _this269.checkNumberNestimates = _this269.listingBuyers.length + _this269.listingSeller.length;
-              _this269.isLoading = true;
+              _this273.isLoading = true;
+              _this273.checkNumberNestimates = _this273.listingBuyers.length + _this273.listingSeller.length;
+              _this273.isLoading = true;
 
-              if (_this269.checkNumberNestimates > 0) {
-                _this269.isLoading = true;
-                _this269.appMatches = true;
-                _this269.interval = setInterval(function () {
-                  _this269.isLoading = false;
+              if (_this273.checkNumberNestimates > 0) {
+                _this273.isLoading = true;
+                _this273.appMatches = true;
+                _this273.interval = setInterval(function () {
+                  _this273.isLoading = false;
                 }, 3000);
               } else {
-                _this269.isLoading = true;
-                _this269.viewResult = false;
-                _this269.isLoading = false;
+                _this273.isLoading = true;
+                _this273.viewResult = false;
+                _this273.isLoading = false;
               }
             });
           });
@@ -35547,7 +35604,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "search",
         value: function search(query) {
           var headerDict = {
-            "x-api-key": "zbRWJP7XVy3TdlagsusnDRWb4rZPJeF4y8sxli26"
+            "x-api-key": "8Wxx71FbAR2NjyosVIZw89WEiUPOCiP01nev9Lbx"
           };
           var url = "https://api.addressian.co.uk/v1/autocomplete/";
           return this.http.get(url + query, {
@@ -35555,12 +35612,12 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           });
         }
       }, {
-        key: "search2",
-        value: function search2(query) {
+        key: "searchPost",
+        value: function searchPost(query) {
           var headerDict = {
             "x-api-key": "8Wxx71FbAR2NjyosVIZw89WEiUPOCiP01nev9Lbx"
           };
-          var url = "https://api.addressian.co.uk/v2/autocomplete/";
+          var url = "https://api-full.addressian.co.uk/postcode/";
           return this.http.get(url + query, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"](headerDict)
           });
@@ -36150,11 +36207,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(MiddleSliderComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this270 = this;
+          var _this274 = this;
 
           this.ActivatedRoutes.paramMap.subscribe(function (element) {});
           this.SellerNestimateDetails.getSellerRequirement(this.userID, this.child).then(function (element) {
-            _this270.AllImages = element.data().Images;
+            _this274.AllImages = element.data().Images;
           });
         }
       }]);
@@ -36436,7 +36493,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(StrapiAuthService, [{
         key: "login",
         value: function login(username, password) {
-          var _this271 = this;
+          var _this275 = this;
 
           return this.httpClient.post("".concat(this.authApiBase, "/auth/local"), {
             identifier: username,
@@ -36448,10 +36505,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this271.userData = response.user;
-              _this271.authToken = sessionStorage.getItem('currentJwt');
+              _this275.userData = response.user;
+              _this275.authToken = sessionStorage.getItem('currentJwt');
 
-              _this271.currentUserSubject.next(response.user);
+              _this275.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -36460,7 +36517,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Googlelogin",
         value: function Googlelogin(token, accessToken) {
-          var _this272 = this;
+          var _this276 = this;
 
           return this.httpClient.get("http://data.nestimate.co.uk/auth/google/callback/?id_token= " + token + '&access_token=' + accessToken).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             // login successful if there's a jwt token in the response
@@ -36469,10 +36526,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this272.userData = response.user;
-              _this272.authToken = sessionStorage.getItem('currentJwt');
+              _this276.userData = response.user;
+              _this276.authToken = sessionStorage.getItem('currentJwt');
 
-              _this272.currentUserSubject.next(response.user);
+              _this276.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -36481,7 +36538,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "Facebooklogin",
         value: function Facebooklogin() {
-          var _this273 = this;
+          var _this277 = this;
 
           return this.httpClient.get("http://data.nestimate.co.uk/connect/facebook").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (response) {
             console.log(response); // login successful if there's a jwt token in the response
@@ -36491,10 +36548,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               localStorage.setItem('updatedUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentUser', JSON.stringify(response.user));
               sessionStorage.setItem('currentJwt', response.jwt);
-              _this273.userData = response.user;
-              _this273.authToken = sessionStorage.getItem('currentJwt');
+              _this277.userData = response.user;
+              _this277.authToken = sessionStorage.getItem('currentJwt');
 
-              _this273.currentUserSubject.next(response.user);
+              _this277.currentUserSubject.next(response.user);
             }
 
             return response.user;
@@ -36503,7 +36560,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "logout",
         value: function logout() {
-          var _this274 = this;
+          var _this278 = this;
 
           // remove user from local storage to log user out
           console.log("check");
@@ -36511,7 +36568,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           this.router.navigateByUrl('/', {
             skipLocationChange: false
           }).then(function () {
-            _this274.router.navigate(["/homenew"]);
+            _this278.router.navigate(["/homenew"]);
 
             location.reload();
           });
@@ -36738,21 +36795,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TemplateComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this275 = this;
+          var _this279 = this;
 
           this.user = JSON.parse(localStorage.getItem("user"));
           console.log(this.user);
           this.afAuth.authState.subscribe(function (user) {
             if (user) {
-              _this275.userData = user;
-              localStorage.setItem("user", JSON.stringify(_this275.userData));
+              _this279.userData = user;
+              localStorage.setItem("user", JSON.stringify(_this279.userData));
 
-              _this275.LoggedIn();
+              _this279.LoggedIn();
             } else {
               localStorage.setItem("user", null);
               JSON.parse(localStorage.getItem("user"));
 
-              _this275.LoggedOut();
+              _this279.LoggedOut();
             }
           });
 
@@ -36784,58 +36841,58 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "facebookLogin",
         value: function facebookLogin() {
-          var _this276 = this;
+          var _this280 = this;
 
           this.isLoading = true;
           this.authService.FacebookAuth().then(function (data) {
-            _this276.isLoading = false;
+            _this280.isLoading = false;
           });
         } //SignIn Google
 
       }, {
         key: "googleLogin",
         value: function googleLogin() {
-          var _this277 = this;
+          var _this281 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuth().then(function (data) {
-            _this277.isLoading = false;
+            _this281.isLoading = false;
           });
         } //Signup Google
 
       }, {
         key: "googleSignup",
         value: function googleSignup() {
-          var _this278 = this;
+          var _this282 = this;
 
           this.isLoading = true;
           this.authService.GoogleAuthSignup().then(function (data) {
-            _this278.isLoading = false;
+            _this282.isLoading = false;
           });
         }
       }, {
         key: "signIn",
         value: function signIn(email, pass) {
-          var _this279 = this;
+          var _this283 = this;
 
           this.isLoading = true;
           this.CMSSERVICE.CheckUser(email, this.type).then(function (data) {
             data.forEach(function (element) {
-              _this279.KnowUser.push(element.data());
+              _this283.KnowUser.push(element.data());
 
               if (element.data().email == email && element.data().UserType != "User") {
-                var dialogRef = _this279.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
+                var dialogRef = _this283.dialog.open(_Misc_alert_user_type_alert_user_type_component__WEBPACK_IMPORTED_MODULE_7__["AlertUserTypeComponent"], {
                   data: {
                     message: "Please Login as User"
                   }
                 });
 
-                _this279.isLoading = false;
+                _this283.isLoading = false;
               } else if (element.data().email == email && element.data().UserType == "User") {
                 console.log(element.data());
 
-                _this279.authService.SignIn(email, pass).then(function (data) {
-                  _this279.isLoading = false;
+                _this283.authService.SignIn(email, pass).then(function (data) {
+                  _this283.isLoading = false;
                   window.location.reload();
                 });
               }
@@ -36919,21 +36976,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "getNotificationContent",
         value: function getNotificationContent() {
-          var _this280 = this;
+          var _this284 = this;
 
           this.CMSSERVICE.getBlueNotification(this.uid).then(function (res) {
-            _this280.notificationContent = res.data().SingupFromMenu;
+            _this284.notificationContent = res.data().SingupFromMenu;
           });
         }
       }, {
         key: "getSignupTerms",
         value: function getSignupTerms() {
-          var _this281 = this;
+          var _this285 = this;
 
           this.CMSSERVICE.getsignUpTerms().then(function (res) {
             res.forEach(function (element) {
-              _this281.topLine = element.data().topLine;
-              _this281.secondLine = element.data().SecondLine;
+              _this285.topLine = element.data().topLine;
+              _this285.secondLine = element.data().SecondLine;
             });
           });
         }
@@ -37064,11 +37121,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       _createClass(TermsConditionComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {
-          var _this282 = this;
+          var _this286 = this;
 
           this.CMSSERVICE.getTermsCondition().then(function (element) {
             element.forEach(function (element) {
-              _this282.termsCondition = element.data().Terms;
+              _this286.termsCondition = element.data().Terms;
             });
           });
         }

@@ -396,7 +396,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">{{popupMessage}}...</p>\n      </div>\n\n</div>\n\n<div *ngIf=\"isRegister\" class=\"register-user-loading-container\">\n  <div class=\"progress-background\">\n    <h2 class=\"loader-text fixed-Label\">{{status}}</h2>\n  <mat-progress-spinner mode=\"indeterminate\" ></mat-progress-spinner>\n  </div>\n</div>\n\n\n\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\" id=\"boldText\">Agent SignUp Form</div>\n\n\n  <div class=\"mat-card-item\">\n    <div class=\"heading-signup heading-nestimate\" id=\"semiboldText\">Please fill your company details</div>\n  </div>\n\n\n\n  <div class=\"mat-card-item\">\n    <form>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Full Name</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName required>\n          <mat-error>{{FullName}}</mat-error>\n        </mat-form-field>\n      </div>\n\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n            <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company required>\n            <mat-error>{{CompanyName}}</mat-error>\n\n          </mat-form-field>\n        </div>\n\n      <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes required>\n            <mat-error>{{Postcode}}</mat-error>\n          </mat-form-field>\n   \n        </div>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n          <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address required>\n          <mat-error>{{Address}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\">\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Job\"> Job title</span></mat-label>\n          <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs required>\n          <mat-error>{{JobTitle}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"OffNumber\">Office Phone Number</span></mat-label>\n          <input matInput  name=\"officephone\" [(ngModel)]=\"agentSignup.officephone\" #OfficePhone   minlength=\"10\"  [formControl]=\"phoneFormControl\"  required>\n          <span matPrefix>+44&nbsp;</span>\n          <!-- <mat-error>{{officephone}}</mat-error> -->\n          <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n            {{officephone}}\n           </mat-error>\n           <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n             {{officephone}}\n           </mat-error>\n           <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n             {{officephonevalidation}}\n           </mat-error>\n        </mat-form-field>\n      </div>\n\n\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Number\">Mobile Number</span></mat-label>\n          <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\"  [formControl]=\"mobileFormControl\"  required>\n          <span matPrefix>+44&nbsp;</span>\n\n          <mat-error *ngIf=\"mobileFormControl.hasError('mobilenumber') && !mobileFormControl.hasError('required')\">\n            {{mobile}}\n           </mat-error>\n           <mat-error *ngIf=\"mobileFormControl.hasError('required')\">\n            {{mobile}}\n           </mat-error>\n           <mat-error *ngIf=\"mobileFormControl.hasError('pattern')\">\n             {{mobilelength}}\n           </mat-error>\n  \n        </mat-form-field>\n      </div>\n\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address</span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" pattern=\"[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}\" #Emails required>\n          <mat-error>{{EmailAddress}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password</span></mat-label>\n          <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd required>\n          <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n            [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n          </button>\n          <mat-error>{{Password}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n      \n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n          <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole required>\n          <mat-error>{{solefeess}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n          <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees required>\n          <mat-error>{{multiplefeess}}</mat-error>\n        </mat-form-field>\n      </div>\n      <div class=\"agency-fees\" id=\"boldText\">Note: Sole and Multiple agency range between 1.5% to 4.0%</div>\n\n      <div class=\"Image-container\"  *ngIf=\"!imageUploaded\">\n        <mat-label class=\"fixed-Label\" id=\"boldText\"><span id=\"Image\" >Upload Logo</span></mat-label>\n        <div class=\"file-upload\">\n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\" >\n          </div>\n          <div class=\"agency-fees\" id=\"boldText\">Upload Max 2MB of Image</div>\n\n      </div>\n    \n\n      <ul class=\"submit-button\" (click)=\"Validation(agentSignup.fullname, agentSignup.email, agentSignup.password,this.type)\">\n        <div class=\"xd-submit-button previous-button\" >\n          <a  class=\"text-next-button \" id=\"boldText\">Start\n            My Free 3-Month Trial Now</a>\n        </div>\n      </ul>\n    \n\n\n    </form>\n  </div>\n</div>\n\n\n\n<div class=\"password-pop\" *ngIf=\"passwordpop\">\n  <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div *ngIf=\"isLoading\" class=\"loading-container\">\n\n  <div class=\"custom-loader\">\n    <img src=\"../../../assets/Images/sidelogo.png\" class=\"image-loader\">\n    <p class=\"heading-nestimate loader-text-loading\">{{popupMessage}}...</p>\n      </div>\n\n</div>\n\n<div *ngIf=\"isRegister\" class=\"register-user-loading-container\">\n  <div class=\"progress-background\">\n    <h2 class=\"loader-text fixed-Label\">{{status}}</h2>\n  <mat-progress-spinner mode=\"indeterminate\" ></mat-progress-spinner>\n  </div>\n</div>\n\n\n\n<div class=\"agent-form\">\n  <div class=\"agent-form-heading heading-nestimate\" id=\"boldText\">Agent SignUp Form</div>\n\n\n  <div class=\"mat-card-item\">\n    <div class=\"heading-signup heading-nestimate\" id=\"semiboldText\">Please fill your company details</div>\n  </div>\n\n\n\n  <div class=\"mat-card-item\">\n    <form>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label  class=\"fixed-Label\" >\n            <span id=\"FullName\">Full Name</span>\n          </mat-label>\n          <input matInput name=\"fullname\" [(ngModel)]=\"agentSignup.fullname\" #displayName required>\n          <mat-error>{{FullName}}</mat-error>\n        </mat-form-field>\n      </div>\n\n        <div class=\"extra-field-two\" >\n          <mat-form-field class=\"full-width\"  appearance=\"outline\">\n            <mat-label class=\"fixed-Label\" ><span id=\"CompanyName\">Company Name</span></mat-label>\n            <input matInput  name=\"company\" [(ngModel)]=\"agentSignup.company\" #Company required>\n            <mat-error>{{CompanyName}}</mat-error>\n\n          </mat-form-field>\n        </div>\n\n      <!-- <div class=\"extra-field-two\" >\n        <div class=\"full-width \" >\n          <mat-form-field class=\"full-width\" appearance=\"outline\" >\n            <mat-label class=\"fixed-Label\" ><span id=\"Postcode\">Enter Postcode</span></mat-label>\n            <input type=\"text\" aria-label=\"Post Code\" matInput name=\"postcode\" [(ngModel)]=\"agentSignup.postcode\" #postcodes required>\n            <mat-error>{{Postcode}}</mat-error>\n          </mat-form-field>\n   \n        </div>\n      </div> -->\n\n      <div class=\"extra-field-two\" style=\"margin-bottom: 1.8em;\" >\n        <div class=\"full-width \" >\n      <mat-option style=\"border: 1px solid #50505a;border-radius: 3px;\"  appearance=\"outline\">\n    \n        <input [formControl]=\"autoCompleteControlCurrent\" type=\"text\" \n          aria-label=\"Post Code\" matInput [matAutocomplete]=\"autoCurrent\" [(ngModel)]=\"agentSignup.postcode\" minlength=\"5\" #postcodes  placeholder=\"Enter Postcode\" id=\"up\" required>\n     \n        <mat-autocomplete autoActiveFirstOption #autoCurrent=\"matAutocomplete\"\n          (optionSelected)='getPosts($event.option.value)'>\n          <mat-option *ngFor=\"let item of addressianAutoCompleteCurrent$ | async; let index=index\"\n            [value]=\"item\" class=\"mat-option-line\">\n            <span *ngFor=\"let i of item.address\">{{i}} </span> | <span>{{ item.postcode | titlecase}}\n            </span> | <span>{{ item.citytown | titlecase}}</span>\n          </mat-option>\n        </mat-autocomplete>\n      </mat-option>\n    </div>\n  </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Address\">Address</span></mat-label>\n          <input matInput  name=\"address\" [(ngModel)]=\"agentSignup.address\" #Address required>\n          <mat-error>{{Address}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\">\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Job\"> Job title</span></mat-label>\n          <input matInput  name=\"jobtitle\" [(ngModel)]=\"agentSignup.jobtitle\" #Jobs required>\n          <mat-error>{{JobTitle}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"OffNumber\">Office Phone Number</span></mat-label>\n          <input matInput  name=\"officephone\" [(ngModel)]=\"agentSignup.officephone\" #OfficePhone   minlength=\"10\"  [formControl]=\"phoneFormControl\"  required>\n          <span matPrefix>+44&nbsp;</span>\n          <!-- <mat-error>{{officephone}}</mat-error> -->\n          <mat-error *ngIf=\"phoneFormControl.hasError('phonenumber') && !phoneFormControl.hasError('required')\">\n            {{officephone}}\n           </mat-error>\n           <mat-error *ngIf=\"phoneFormControl.hasError('required')\">\n             {{officephone}}\n           </mat-error>\n           <mat-error *ngIf=\"phoneFormControl.hasError('pattern')\">\n             {{officephonevalidation}}\n           </mat-error>\n        </mat-form-field>\n      </div>\n\n\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Number\">Mobile Number</span></mat-label>\n          <input matInput  name=\"phone\" [(ngModel)]=\"agentSignup.phone\" #Phone   maxlength=\"10\"  [formControl]=\"mobileFormControl\"  required>\n          <span matPrefix>+44&nbsp;</span>\n\n          <mat-error *ngIf=\"mobileFormControl.hasError('mobilenumber') && !mobileFormControl.hasError('required')\">\n            {{mobile}}\n           </mat-error>\n           <mat-error *ngIf=\"mobileFormControl.hasError('required')\">\n            {{mobile}}\n           </mat-error>\n           <mat-error *ngIf=\"mobileFormControl.hasError('pattern')\">\n             {{mobilelength}}\n           </mat-error>\n  \n        </mat-form-field>\n      </div>\n\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Email\">Email address</span></mat-label>\n          <input matInput [(ngModel)]=\"agentSignup.email\" name=\"email\" pattern=\"[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}\" #Emails required>\n          <mat-error>{{EmailAddress}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Password\">Enter your password</span></mat-label>\n          <input matInput [type]=\"hide ? 'password' : 'text'\" name=\"password\" [(ngModel)]=\"agentSignup.password\" #Passowrd required>\n          <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\"\n            [attr.aria-pressed]=\"hide\">\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\n          </button>\n          <mat-error>{{Password}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n      \n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Soleagency\">Sole Agency Fees</span></mat-label>\n          <input matInput  name=\"solefees\" [(ngModel)]=\"agentSignup.solefees\" #Sole required>\n          <mat-error>{{solefeess}}</mat-error>\n        </mat-form-field>\n      </div>\n\n      <div class=\"extra-field-two\" >\n        <mat-form-field class=\"full-width\" appearance=\"outline\">\n          <mat-label class=\"fixed-Label\"><span id=\"Multiagency\">Multiple Agency Fees</span></mat-label>\n          <input matInput  name=\"multiplefees\" [(ngModel)]=\"agentSignup.multiplefees\" #MultiFees required>\n          <mat-error>{{multiplefeess}}</mat-error>\n        </mat-form-field>\n      </div>\n      <div class=\"agency-fees\" id=\"boldText\">Note: Sole and Multiple agency range between 1.5% to 4.0%</div>\n\n      <div class=\"Image-container\"  *ngIf=\"!imageUploaded\">\n        <mat-label class=\"fixed-Label\" id=\"boldText\"><span id=\"Image\" >Upload Logo</span></mat-label>\n        <div class=\"file-upload\">\n          <input type=\"file\" name=\"fileToUpload\" id=\"fileToUpload\" (change)=\"upload($event)\" accept=\".png,.jpg\"  name=\"image\" >\n          </div>\n          <div class=\"agency-fees\" id=\"boldText\">Upload Max 2MB of Image</div>\n\n      </div>\n    \n\n      <ul class=\"submit-button\" (click)=\"Validation(agentSignup.fullname, agentSignup.email, agentSignup.password,this.type)\">\n        <div class=\"xd-submit-button previous-button\" >\n          <a  class=\"text-next-button \" id=\"boldText\">Start\n            My Free 3-Month Trial Now</a>\n        </div>\n      </ul>\n    \n\n\n    </form>\n  </div>\n</div>\n\n\n\n<div class=\"password-pop\" *ngIf=\"passwordpop\">\n  <app-password-pop (click)=\"passwordpopclose()\"></app-password-pop>\n</div>");
 
 /***/ }),
 
@@ -7156,12 +7156,18 @@ let FillFormBuyerComponent = class FillFormBuyerComponent {
         this.listingBuyer.CurrentTown = value.citytown;
         this.listingBuyer.Currentstate = value.county;
         this.listingBuyer.Currentpostcode = value.postcode;
+        this.postcodeService.searchPost(value.postcode).subscribe((data) => {
+            this.listingBuyer.Currentcountry = data.country;
+        });
     }
     getPosts(value) {
         this.listingBuyer.LookingTown = value.citytown;
         this.listingBuyer.Lookingstate = value.county;
         this.listingBuyer.Lookingpostcode = value.postcode;
         this.listingBuyer.LookingStreetname = value.address[2];
+        this.postcodeService.searchPost(value.postcode).subscribe((data) => {
+            this.listingBuyer.Country = data.country;
+        });
     }
     selectTab(nextIndex, presentIndex) {
         var postcodeLength = this.listingBuyer.Currentpostcode;
@@ -9643,7 +9649,6 @@ let FillFormSellerComponent = class FillFormSellerComponent {
                 // use switch map so as to cancel previous subscribed events, before creating new once
                 Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_11__["switchMap"])((value) => {
                     if (value !== "") {
-                        console.log(this.listingSeller.Currentpostcode);
                         this.lookup(this.user.Currentpostcode).subscribe((data) => {
                             this.data = data;
                         });
@@ -9982,12 +9987,18 @@ let FillFormSellerComponent = class FillFormSellerComponent {
         this.listingSeller.Lookingpostcode = value.postcode;
         this.listingSeller.LookingAddress = value.address;
         this.listingSeller.Country = value.country;
+        this.sellerService.searchPost(value.postcode).subscribe((data) => {
+            this.listingSeller.Country = data.country;
+        });
     }
     getPosts(value) {
         this.user.CurrentAddress = value.address;
         this.user.CurrentTown = value.citytown;
         this.user.Currentstate = value.county;
         this.user.Currentpostcode = value.postcode;
+        this.sellerService.searchPost(value.postcode).subscribe((data) => {
+            this.user.CurrentCountry = data.country;
+        });
     }
     getSame(Seller) {
         if (this.listingSeller.Lookingpostcode == undefined) {
@@ -10825,6 +10836,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_fire_firestore__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/fire/firestore */ "./node_modules/@angular/fire/firestore/es2015/index.js");
 /* harmony import */ var _cms_service__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../cms.service */ "./src/app/cms.service.ts");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+
+
+
+
 
 
 
@@ -10879,6 +10896,9 @@ let AgentsignupformComponent = class AgentsignupformComponent {
         this.type = "Agent";
         this.AgentError = "AgentError";
         this.passwordpop = false;
+        this.autoCompleteControlLooking = new _angular_forms__WEBPACK_IMPORTED_MODULE_19__["FormControl"]();
+        this.addressianAutoCompleteCurrent$ = null;
+        this.autoCompleteControlCurrent = new _angular_forms__WEBPACK_IMPORTED_MODULE_19__["FormControl"]();
         this.phoneFormControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_19__["FormControl"]("", [
             _angular_forms__WEBPACK_IMPORTED_MODULE_19__["Validators"].required,
             _angular_forms__WEBPACK_IMPORTED_MODULE_19__["Validators"].maxLength(10),
@@ -10913,6 +10933,28 @@ let AgentsignupformComponent = class AgentsignupformComponent {
                 JSON.parse(localStorage.getItem("user"));
             }
         });
+        this.addressianAutoCompleteCurrent$ = this.autoCompleteControlCurrent.valueChanges.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["startWith"])(""), 
+        // delay emits
+        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["debounceTime"])(1000), 
+        // use switch map so as to cancel previous subscribed events, before creating new once
+        Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_20__["switchMap"])((value) => {
+            if (value !== "") {
+                this.lookup(this.agentSignup.postcode).subscribe((data) => {
+                    this.data = data;
+                });
+                return this.lookup(this.agentSignup.postcode);
+            }
+            else {
+                return Object(rxjs__WEBPACK_IMPORTED_MODULE_21__["of"])(null);
+            }
+        }));
+    }
+    getPosts(value) {
+        this.agentSignup.address = value.address;
+        this.agentSignup.postcode = value.postcode;
+    }
+    lookup(value) {
+        return this.HttpService.search(value);
     }
     Validation(displayName, email, pass, User) {
         if (this.agentSignup.officephone != null || this.agentSignup.phone != null) {
@@ -23446,18 +23488,18 @@ let HttpService = class HttpService {
     }
     search(query) {
         const headerDict = {
-            "x-api-key": "zbRWJP7XVy3TdlagsusnDRWb4rZPJeF4y8sxli26"
+            "x-api-key": "8Wxx71FbAR2NjyosVIZw89WEiUPOCiP01nev9Lbx"
         };
         const url = "https://api.addressian.co.uk/v1/autocomplete/";
         return this.http.get(url + query, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"](headerDict)
         });
     }
-    search2(query) {
+    searchPost(query) {
         const headerDict = {
             "x-api-key": "8Wxx71FbAR2NjyosVIZw89WEiUPOCiP01nev9Lbx"
         };
-        const url = "https://api.addressian.co.uk/v2/autocomplete/";
+        const url = "https://api-full.addressian.co.uk/postcode/";
         return this.http.get(url + query, {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"](headerDict)
         });
